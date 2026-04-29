@@ -16,7 +16,7 @@ const chapterNodes = ['Dock', 'Reef', 'Cove', 'Lagoon', 'Jetty', 'Harbor', 'Swam
 const questionTitles = ['Chaos check', 'Constraint dodge', 'Assumption trap', 'Boss puzzle', 'Signal check', 'Debrief duel'] as const
 
 function topicForTrack(track: TrackLike): Topic {
-  if (track.id === 'quant') return 'Game theory'
+  if (track.id === 'quant') return 'Quant Finance'
   if (track.id.startsWith('ap')) return 'AP'
   if (track.id.startsWith('alevel')) return 'A-level'
   if (track.discipline === 'Mathematics') return 'Mathematics'
@@ -222,7 +222,6 @@ function generateTrackQuestions(track: TrackLike, startIndex: number, count: num
 export function buildTrackQuiz(
   track: TrackLike,
   courseQuestionCatalog: QuestionCatalog,
-  fallbackQuestions: Question[],
 ) {
   const base = courseQuestionCatalog[track.id] ?? []
   if (base.length >= QUIZ_LENGTH) {
@@ -808,6 +807,8 @@ export function rewordQuestion(base: Question, mode: number): Question {
       'Story version. Approach it like a first serious seminar or problem set: name the concept, reduce the question to its core model, and eliminate sloppy interpretations.',
     'Career Skills':
       'Story version. Treat this like practical professional training: clarify the real objective, choose the soundest operating principle, and prefer action that scales.',
+    'Quant Finance':
+      'Story version. Treat the market or game like a precise mechanism: state your assumptions, apply the probability or finance model, and find the value that respects the constraints.',
   }
 
   return {

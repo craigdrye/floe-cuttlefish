@@ -79,7 +79,7 @@ export function useQuizData() {
   }, [loadedQuestionCatalogs, selectedTrack, selectedTrackInfo])
 
   const courseQuestions = useMemo(
-    () => (isSelectedCatalogReady ? buildTrackQuiz(selectedTrackInfo, selectedTrackCatalog ?? {}, starterQuestions) : []),
+    () => (isSelectedCatalogReady ? buildTrackQuiz(selectedTrackInfo, selectedTrackCatalog ?? {}) : []),
     [isSelectedCatalogReady, selectedTrackCatalog, selectedTrackInfo]
   )
 
