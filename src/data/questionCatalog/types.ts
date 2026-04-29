@@ -35,6 +35,8 @@ export type Answer = {
   label: string
   correct: boolean
   misconceptions?: Misconception[]
+  showLesson?: boolean
+  setShowLesson?: (show: boolean) => void
 }
 
 export type Question = {
@@ -50,6 +52,7 @@ export type Question = {
   mentorHint: string
   answers: Answer[]
   solution: string
+  lesson?: string
   xp: number
 }
 

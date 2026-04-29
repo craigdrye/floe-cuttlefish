@@ -148,6 +148,7 @@ export interface QuizSlice {
   misconceptionArtifacts: MisconceptionArtifact[]
   flaggedQuestions: number[]
   repeatedQuestions: number[]
+  showLesson: boolean
 
   setSelectedAge: (age: AgeGroup) => void
   setSelectedStageDetail: (detail: StageDetail | null) => void
@@ -155,6 +156,7 @@ export interface QuizSlice {
   setIndex: (index: number | ((current: number) => number)) => void
   setSelectedAnswerId: (id: string | null) => void
   setShowHint: (show: boolean | ((current: boolean) => boolean)) => void
+  setShowLesson: (show: boolean | ((current: boolean) => boolean)) => void
   setRemixSeed: (questionId: number, seed: number | ((current: number) => number)) => void
   setWordingMode: (questionId: number, mode: number | ((current: number) => number)) => void
   incrementAnswerShuffleSeed: () => void

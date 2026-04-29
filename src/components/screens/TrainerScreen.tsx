@@ -37,8 +37,8 @@ export function TrainerScreen() {
     setScreen, setRemixSeed, setWordingMode,
     combo, incrementCombo, resetCombo,
     lastXpGain, setLastXpGain, unlockAchievement, updateReview, setPendingStageCelebration,
-    captureMisconception, clearMisconception, misconceptionArtifacts, recordBossWin, bossWins, focusMode,
     flaggedQuestions, repeatedQuestions, toggleFlagQuestion, toggleRepeatQuestion,
+    showLesson, setShowLesson,
   } = useStore()
 
   const {
@@ -200,6 +200,7 @@ export function TrainerScreen() {
       setSelectedAnswerId(null)
       setArmedAnswerId(null)
       setShowHint(false)
+      setShowLesson(false)
       return
     }
 
@@ -208,6 +209,7 @@ export function TrainerScreen() {
     setSelectedAnswerId(null)
     setArmedAnswerId(null)
     setShowHint(false)
+    setShowLesson(false)
   }
 
   const resetQuestion = () => {
@@ -216,6 +218,7 @@ export function TrainerScreen() {
     setSelectedAnswerId(null)
     setArmedAnswerId(null)
     setShowHint(false)
+    setShowLesson(false)
     setLastXpGain(null)
   }
 
@@ -225,6 +228,7 @@ export function TrainerScreen() {
     setSelectedAnswerId(null)
     setArmedAnswerId(null)
     setShowHint(false)
+    setShowLesson(false)
     setLastXpGain(null)
   }
 
@@ -347,12 +351,34 @@ export function TrainerScreen() {
 
             <div className="actions">
               <button className="secondary" onClick={() => setShowHint(!showHint)}><Sparkles size={15} /> Hint</button>
+              <button className="secondary" onClick={() => setShowLesson(!showLesson)}><BookOpen size={15} /> Teach me</button>
               <button className="secondary" onClick={askDifferently}><ShieldQuestion size={15} /> Ask differently</button>
               <button className="secondary" onClick={resetQuestion}><Repeat2 size={15} /> Reset</button>
               <button className="primary" disabled={!selectedAnswerId} onClick={nextQuestion}>
                 {isCorrect ? 'Next question' : 'Back to map'}
               </button>
             </div>
+
+            <AnimatePresence>
+              {showLesson && (
+                <motion.div className="lesson-box" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }}>
+                  <div className="lesson-content">
+                    <div className="lesson-header">
+                      <BookOpen size={18} />
+                      <h3>Deep Dive Lesson</h3>
+                    </div>
+                    <div className="lesson-text">
+                      {question.lesson ? (
+                        question.lesson.split('\n\n').map((para, i) => <p key={i}>{para}</p>)
+                      ) : (
+                        <p>Floe is still drafting the full lesson for this specific problem. In the meantime, check the hint and worked solution for key concepts!</p>
+                      )}
+                    </div>
+                    <button className="close-lesson" onClick={() => setShowLesson(false)}>Got it</button>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
 
             <AnimatePresence>
               {showHint && (

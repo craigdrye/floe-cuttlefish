@@ -17,6 +17,7 @@ export const createQuizSlice: StateCreator<AppState, [], [], QuizSlice> = (set) 
   misconceptionArtifacts: [],
   flaggedQuestions: [],
   repeatedQuestions: [],
+  showLesson: false,
 
   setSelectedAge: (age) => set({ selectedAge: age }),
   setSelectedStageDetail: (detail) => set({ selectedStageDetail: detail }),
@@ -104,10 +105,16 @@ export const createQuizSlice: StateCreator<AppState, [], [], QuizSlice> = (set) 
         : [...state.repeatedQuestions, questionId],
     })),
 
+  setShowLesson: (show) =>
+    set((state) => ({
+      showLesson: typeof show === 'function' ? show(state.showLesson) : show,
+    })),
+
   resetQuizState: () =>
     set({
       selectedAnswerId: null,
       showHint: false,
+      showLesson: false,
       calculatorInput: '',
     }),
 
@@ -121,5 +128,6 @@ export const createQuizSlice: StateCreator<AppState, [], [], QuizSlice> = (set) 
       screen: 'map',
       selectedAnswerId: null,
       showHint: false,
+      showLesson: false,
     }),
 })
