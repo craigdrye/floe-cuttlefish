@@ -256,6 +256,7 @@ export function makeSimpleQuestion(
   prompt: string,
   correct: string,
   wrong: [string, string, string][],
+  lesson?: string,
 ): Question {
   const scaffold = defaultQuestionScaffold(topic, title, prompt)
   return {
@@ -271,6 +272,7 @@ export function makeSimpleQuestion(
     mentorHint: scaffold.mentorHint,
     answers: answerSet(correct, wrong),
     solution: correct,
+    lesson,
     xp: 10,
   }
 }
@@ -284,6 +286,7 @@ export function makeQuestionBank(
     prompt: string
     correct: string
     wrong: [string, string, string][]
+    lesson?: string
   }>,
 ): Question[] {
   return definitions.map((definition) =>
@@ -295,6 +298,7 @@ export function makeQuestionBank(
       definition.prompt,
       definition.correct,
       definition.wrong,
+      definition.lesson,
     ),
   )
 }

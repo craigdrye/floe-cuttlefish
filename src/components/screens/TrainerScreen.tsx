@@ -37,6 +37,7 @@ export function TrainerScreen() {
     setScreen, setRemixSeed, setWordingMode,
     combo, incrementCombo, resetCombo,
     lastXpGain, setLastXpGain, unlockAchievement, updateReview, setPendingStageCelebration,
+    captureMisconception, clearMisconception, misconceptionArtifacts, recordBossWin, bossWins, focusMode,
     flaggedQuestions, repeatedQuestions, toggleFlagQuestion, toggleRepeatQuestion,
     showLesson, setShowLesson,
   } = useStore()
