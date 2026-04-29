@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="Swamp location">
+  <defs>
+    <linearGradient id="swampSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dbf4d4" />
+      <stop offset="100%" stop-color="#f3ffe9" />
+    </linearGradient>
+    <linearGradient id="swampWater" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#86b66f" />
+      <stop offset="100%" stop-color="#517e42" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="220" rx="20" fill="url(#swampSky)" />
+  <rect y="100" width="320" height="120" fill="url(#swampWater)" />
+  <g stroke="#729d5c" stroke-width="8" stroke-linecap="round">
+    <path d="M46 100V52" />
+    <path d="M88 100V44" />
+    <path d="M244 100V50" />
+    <path d="M278 100V40" />
+  </g>
+  <g fill="#86bd71">
+    <ellipse cx="46" cy="48" rx="20" ry="10" />
+    <ellipse cx="88" cy="40" rx="18" ry="9" />
+    <ellipse cx="244" cy="46" rx="18" ry="9" />
+    <ellipse cx="278" cy="36" rx="20" ry="10" />
+  </g>
+  <ellipse cx="160" cy="134" rx="62" ry="26" fill="#acd68d" />
+  <ellipse cx="160" cy="132" rx="44" ry="18" fill="#8cc574" />
+  <path d="M150 128c8-10 18-11 28 0-4 8-10 11-14 11-6 0-11-2-14-11z" fill="#ffe07f" />
+  <circle cx="158" cy="129" r="2" fill="#2a2a2a" />
+  <circle cx="170" cy="129" r="2" fill="#2a2a2a" />
+  <g fill="none" stroke="#c5efaa" stroke-width="4" opacity="0.45" stroke-linecap="round">
+    <path d="M24 166c20 6 38 6 58 0" />
+    <path d="M110 178c20 6 36 6 56 0" />
+    <path d="M196 166c22 6 40 6 62 0" />
+    <path d="M260 184c18 6 32 6 44 0" />
+  </g>
+</svg>

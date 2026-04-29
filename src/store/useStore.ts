@@ -1,0 +1,43 @@
+import { create } from 'zustand'
+import { persist } from 'zustand/middleware'
+import type { AppState } from './types'
+import { createUISlice } from './uiSlice'
+import { createAuthSlice } from './authSlice'
+import { createProgressSlice } from './progressSlice'
+import { createQuizSlice } from './quizSlice'
+
+// Re-export types so other files can just import from useStore
+export * from './types'
+
+export const useStore = create<AppState>()(
+  persist(
+    (...a) => ({
+      ...createUISlice(...a),
+      ...createAuthSlice(...a),
+      ...createProgressSlice(...a),
+      ...createQuizSlice(...a),
+    }),
+    {
+      name: 'floe-storage-v7',
+      partialize: (state) => ({
+        progress: state.progress,
+        selectedAge: state.selectedAge,
+        selectedStageDetail: state.selectedStageDetail,
+        thoughts: state.thoughts,
+        remixSeeds: state.remixSeeds,
+        wordingModes: state.wordingModes,
+        achievements: state.achievements,
+        misconceptionArtifacts: state.misconceptionArtifacts,
+        petItems: state.petItems,
+        equippedPetItems: state.equippedPetItems,
+        bossWins: state.bossWins,
+        maxCombo: state.maxCombo,
+        mood: state.mood,
+        darkMode: state.darkMode,
+        focusMode: state.focusMode,
+        user: state.user,
+        savedUsers: state.savedUsers,
+      }),
+    }
+  )
+)

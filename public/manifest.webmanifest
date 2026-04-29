@@ -1,0 +1,17 @@
+{
+  "name": "Floe",
+  "short_name": "Floe",
+  "description": "Mobile-first quant finance interview drills with playful cuttlefish misconception feedback.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6fbf6",
+  "theme_color": "#1f7a62",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+/* ═══ WELCOME SCREEN ═══ */
+
+.welcome-shell {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08)),
+    url('/assets/reef/reef-world-scroll.png') center 8vh / 100% auto no-repeat,
+    linear-gradient(180deg, #aedae2 0%, #aedae2 8vh, #c2e0e5 30vh, #a8d6de 60%, #8fcfdd 100%);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.welcome-shell.mounted { opacity: 1; }
+
+.welcome-bubbles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.welcome-bubble {
+  position: absolute;
+  bottom: -20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  animation: bubble-rise 14s linear infinite;
+}
+
+@keyframes bubble-rise {
+  0% { transform: translateY(0) scale(1); opacity: 0.4; }
+  50% { opacity: 0.7; }
+  100% { transform: translateY(-110vh) scale(0.5); opacity: 0; }
+}
+
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 40px 20px 40px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.welcome-eyebrow {
+  margin: 0 0 4px;
+  color: var(--reef-deep);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.welcome-copy h1 {
+  font-size: clamp(36px, 8vw, 56px);
+  font-weight: 900;
+  color: var(--reef-deep);
+  text-shadow: none;
+  margin: 0;
+}
+
+.welcome-h1-accent {
+  background: linear-gradient(135deg, var(--reef-emerald), var(--bio-cyan), var(--reef-emerald));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s ease infinite;
+}
+
+.welcome-art-wrap {
+  width: min(340px, 68vw);
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-items: center;
+  position: relative;
+  animation: float-slow 6s ease-in-out infinite;
+  margin: 8px 0;
+}
+
+.welcome-art {
+  position: absolute;
+  width: 100%;
+  max-height: min(340px, 45vh);
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0, 40, 60, 0.3));
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.welcome-art.welcome-art-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.welcome-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.welcome-line {
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 340px;
+}
+
+.welcome-cta {
+  min-height: 54px;
+  min-width: 180px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 32px;
+  border: 0;
+  border-radius: var(--r-full);
+  background: linear-gradient(135deg, var(--reef-teal), var(--reef-emerald));
+  color: #fff;
+  font-size: 17px;
+  font-weight: 800;
+  box-shadow: 0 12px 32px rgba(31,122,98,0.35);
+  transition: all 0.25s var(--ease-out-expo);
+}
+.welcome-cta:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(31,122,98,0.45);
+}
+.welcome-cta:active {
+  transform: translateY(0) scale(0.98);
+}

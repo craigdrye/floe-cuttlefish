@@ -1,0 +1,43 @@
+/* ═══ FLOATING PARTICLES ═══ */
+
+.floating-particles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.particle-bubble {
+  position: absolute;
+  bottom: -20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  animation: bubble-rise linear infinite;
+}
+
+.particle-ray {
+  position: absolute;
+  top: -10%;
+  width: 2px !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0.15), transparent);
+  border-radius: 0;
+  transform-origin: top center;
+  animation: light-ray ease-in-out infinite;
+}
+
+.particle-fish {
+  position: absolute;
+  top: 30%;
+  border-radius: 50% 50% 50% 20%;
+  background: rgba(46, 196, 182, 0.25);
+  animation: drift-right linear infinite;
+}
+
+.particle-plankton {
+  position: absolute;
+  bottom: 10%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  animation: plankton-drift linear infinite;
+}

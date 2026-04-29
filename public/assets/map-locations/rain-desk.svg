@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="Rain desk location">
+  <defs>
+    <linearGradient id="rainSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d7dde8" />
+      <stop offset="100%" stop-color="#f2f5fb" />
+    </linearGradient>
+    <linearGradient id="rainStone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#475163" />
+      <stop offset="100%" stop-color="#222936" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="220" rx="20" fill="url(#rainSky)" />
+  <rect y="118" width="320" height="102" fill="#9ec4d9" />
+  <g opacity="0.35" stroke="#9aa4b8" stroke-width="8" stroke-linecap="round">
+    <path d="M22 114h12" /><path d="M44 106h12" /><path d="M66 98h12" />
+    <path d="M242 110h12" /><path d="M264 102h12" /><path d="M286 94h12" />
+  </g>
+  <ellipse cx="160" cy="142" rx="118" ry="35" fill="url(#rainStone)" />
+  <rect x="76" y="112" width="168" height="12" rx="3" fill="#2f3947" />
+  <rect x="90" y="86" width="64" height="40" rx="4" fill="#151a23" />
+  <rect x="166" y="86" width="64" height="40" rx="4" fill="#151a23" />
+  <polyline points="98,112 106,104 114,112 122,98 130,112 138,106 146,112" fill="none" stroke="#3dd39a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <polyline points="174,108 182,102 190,112 198,96 206,112 214,106 222,112" fill="none" stroke="#57b3ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="130" y="128" width="28" height="20" rx="6" fill="#3a4657" />
+  <rect x="170" y="128" width="18" height="18" rx="5" fill="#3a4657" />
+  <path d="M236 60c-6-20-26-30-46-24-16 4-28 20-28 37h84c-1-5-4-9-10-13z" fill="#1f2632" />
+  <path d="M170 78v20m20-20v20m20-20v20m20-20v20" stroke="#8bb7d7" stroke-width="3" stroke-linecap="round" opacity="0.55" />
+</svg>

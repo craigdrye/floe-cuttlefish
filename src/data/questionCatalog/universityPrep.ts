@@ -1,0 +1,143 @@
+import type { Question } from './types'
+import { makeSimpleQuestion } from './base'
+
+export function buildUniversityPrepQuestionCatalog(): Record<string, Question[]> {
+  return {
+  ml: [
+    makeSimpleQuestion(2001, 'ML', 'Metrics Reef', 'Precision vs recall',
+      'A fraud model flags transactions for review. Missing fraud is costly, but reviewing extra legitimate transactions is acceptable. Which metric should you prioritize?',
+      'Recall, because you want to catch as many true fraud cases as possible',
+      [
+        ['Precision, because every flagged transaction should be fraud', 'Precision reduces false alarms, but this setup says false alarms are acceptable.', 'When missing positives is costly, prioritize recall.'],
+        ['Accuracy, because it measures total correctness', 'Fraud is usually rare, so accuracy can look high while missing fraud.', 'Use a metric aligned with the business cost.'],
+        ['Mean squared error, because it penalizes large errors', 'MSE is a regression metric, not the main fit for binary fraud triage.', 'Match metric type to task type.'],
+      ]),
+    makeSimpleQuestion(2002, 'ML', 'Validation Cove', 'Train/test leakage',
+      'You normalize a dataset using the mean and standard deviation of the full dataset before splitting into train and test. What is the issue?',
+      'This leaks information from the test set into training preprocessing',
+      [
+        ['It makes the model too slow', 'The main problem is not speed; it is contaminated evaluation.', 'Fit preprocessing only on training data, then apply it to validation/test data.'],
+        ['It guarantees overfitting', 'Leakage can inflate evaluation, but overfitting is a different mechanism.', 'Separate leakage from model capacity issues.'],
+        ['It is always fine for normalization', 'Normalization can leak information when fitted on the full dataset.', 'Treat preprocessing parameters as learned from training data only.'],
+      ]),
+    makeSimpleQuestion(2003, 'ML', 'Experiment Pier', 'A/B testing basics',
+      'An experiment shows a small lift, but the p-value is 0.38. What should you conclude?',
+      'The observed lift is not statistically convincing under the test',
+      [
+        ['Ship it because lift is positive', 'A positive point estimate can be noise.', 'Check uncertainty before acting on small differences.'],
+        ['The treatment definitely has no effect', 'A high p-value does not prove zero effect.', 'It means this experiment did not provide strong evidence.'],
+        ['Increase alpha after seeing the result', 'Changing the threshold after results invalidates the test.', 'Set decision rules before looking.'],
+      ]),
+    makeSimpleQuestion(2004, 'ML', 'Model Cave', 'Overfitting signal',
+      'A model has very low training error but much worse validation error. What is the most likely diagnosis?',
+      'Overfitting: the model learned training-specific patterns that do not generalize',
+      [
+        ['Underfitting', 'Underfitting usually gives poor train and validation performance.', 'Compare both train and validation error.'],
+        ['Perfect generalization', 'Validation error is the evidence against that.', 'Generalization is measured on held-out data.'],
+        ['Data leakage', 'Leakage often makes validation look too good, not much worse.', 'Use the direction of the gap to diagnose.'],
+      ]),
+  ],
+  software: [
+    makeSimpleQuestion(3001, 'Software', 'Array Dock', 'Hash map lookup',
+      'You need to check whether any two numbers in an array sum to a target. What is the usual efficient approach?',
+      'Scan once while storing previously seen complements or values in a hash map/set',
+      [
+        ['Sort and try every pair', 'Sorting can help, but trying every pair is still quadratic.', 'Use a hash structure for constant-time lookup.'],
+        ['Use recursion over all subsets', 'That solves a much larger problem than needed.', 'Keep the state minimal for two-sum.'],
+        ['Always use dynamic programming', 'DP is unnecessary for this simple pair lookup.', 'Pick the simplest data structure that matches the query.'],
+      ]),
+    makeSimpleQuestion(3002, 'Software', 'Debug Swamp', 'Repro first',
+      'A bug appears only sometimes in production. What is the best first engineering move?',
+      'Create a reproducible case or collect enough logs to isolate conditions',
+      [
+        ['Rewrite the whole module', 'That is high-risk without knowing the cause.', 'First reduce uncertainty.'],
+        ['Ignore it until it happens again', 'Intermittent bugs often get worse and need instrumentation.', 'Capture evidence while the system is live.'],
+        ['Patch a guessed fix immediately', 'A guessed fix can mask or worsen the issue.', 'Reproduce, observe, then patch.'],
+      ]),
+    makeSimpleQuestion(3003, 'Software', 'System Design Reef', 'Cache tradeoff',
+      'A cache improves latency but can serve stale data. What is the core design tradeoff?',
+      'Freshness versus speed',
+      [
+        ['CPU versus syntax', 'Syntax is not a system design tradeoff.', 'Name the user-visible and operational tradeoff.'],
+        ['Memory versus indentation', 'Indentation is irrelevant to cache behavior.', 'Cache design often trades memory and freshness for speed.'],
+        ['Security versus comments', 'Comments are not the key cache concern.', 'Focus on data consistency and latency.'],
+      ]),
+    makeSimpleQuestion(3004, 'Software', 'Complexity Lagoon', 'Big O loop',
+      'A loop over n items contains a nested loop over the same n items. What is the usual time complexity?',
+      'O(n^2)',
+      [
+        ['O(n)', 'That would be one pass, not nested passes.', 'Multiply nested independent loops.'],
+        ['O(log n)', 'Logarithmic behavior usually comes from halving/search trees.', 'Nested full scans are quadratic.'],
+        ['O(1)', 'The work grows with n.', 'Constant time means no growth with input size.'],
+      ]),
+  ],
+  research: [
+    makeSimpleQuestion(4001, 'Research', 'Paper Reef', 'Abstract triage',
+      'When reading a new paper quickly, what should you identify first?',
+      'The question, method, main result, and limitation',
+      [
+        ['Every citation in order', 'Citation chasing can wait until you know why the paper matters.', 'First locate the paper’s contribution.'],
+        ['Only the conclusion', 'The conclusion without method can be misleading.', 'Pair claims with evidence.'],
+        ['The prettiest figure', 'Figures help, but they need context.', 'Start with the research question and result.'],
+      ]),
+    makeSimpleQuestion(4002, 'Research', 'Causal Cove', 'Confounding',
+      'A study finds people who drink more coffee work longer hours. Why should you hesitate before saying coffee causes longer hours?',
+      'A third factor, like job type or workload, may affect both coffee intake and hours worked',
+      [
+        ['Correlation always proves causation', 'Correlation alone does not rule out confounding.', 'Ask what else could explain both variables.'],
+        ['The result must be random noise', 'It may be real association without being causal.', 'Separate association from causal interpretation.'],
+        ['Sample size never matters', 'Sample size affects uncertainty.', 'Assess both design and statistical precision.'],
+      ]),
+    makeSimpleQuestion(4003, 'Research', 'Methods Dock', 'Control group',
+      'Why include a control group in an experiment?',
+      'To estimate what would have happened without the treatment',
+      [
+        ['To make the paper longer', 'Length is not the scientific reason.', 'Controls create a comparison baseline.'],
+        ['To guarantee significance', 'Controls do not guarantee any result.', 'They improve interpretability of differences.'],
+        ['To remove all bias automatically', 'Bad design can still be biased.', 'Controls help, but design quality still matters.'],
+      ]),
+    makeSimpleQuestion(4004, 'Research', 'Replication Lagoon', 'Replication',
+      'Why does replication matter?',
+      'It checks whether a finding survives new data, settings, or researchers',
+      [
+        ['It proves a theory forever', 'Replication increases confidence but does not create absolute proof.', 'Science updates confidence with evidence.'],
+        ['It is only needed for failed papers', 'Important findings need replication too.', 'Replication tests robustness.'],
+        ['It replaces theory', 'Replication and theory answer different needs.', 'Use replication to test reliability, not explain mechanisms alone.'],
+      ]),
+  ],
+  uxResearch: [
+    makeSimpleQuestion(11001, 'UX Research', 'Interview Dock', 'Leading questions',
+      'In a user interview, which question is least biased?',
+      '“Can you walk me through the last time you tried to do this?”',
+      [
+        ['“You found this easy, right?”', 'This pushes the participant toward agreement.', 'Ask for behavior and stories, not approval.'],
+        ['“Would you love this feature?”', 'Hypothetical enthusiasm is weak evidence.', 'Probe actual past behavior and needs.'],
+        ['“Why is our design better?”', 'This assumes the design is better.', 'Do not bake the answer into the question.'],
+      ]),
+    makeSimpleQuestion(11002, 'UX Research', 'Usability Reef', 'Think-aloud testing',
+      'During a usability test, a participant struggles with a task. What should the researcher usually do first?',
+      'Observe and ask neutral prompts before rescuing them',
+      [
+        ['Immediately explain the interface', 'Rescuing too early hides the usability problem.', 'Let the struggle reveal where the design fails.'],
+        ['Tell them they are wrong', 'The participant is not the one being tested; the design is.', 'Keep the session psychologically safe.'],
+        ['End the study', 'A struggle is useful data unless the participant is distressed or blocked beyond recovery.', 'Probe neutrally and learn.'],
+      ]),
+    makeSimpleQuestion(11003, 'UX Research', 'Synthesis Swamp', 'Theme building',
+      'After eight interviews, three users mention the same workaround. What is the best interpretation?',
+      'It may be an emerging pattern worth investigating, but not automatic proof for all users',
+      [
+        ['It proves every user has the issue', 'Qualitative samples are not usually population estimates.', 'Treat repeated signals as directional evidence.'],
+        ['Ignore it because only three people said it', 'Repeated workarounds can reveal important unmet needs.', 'Look for patterns and triangulate.'],
+        ['Ship the first solution you think of', 'Insights still need prioritization and design exploration.', 'Move from evidence to hypotheses, not instant certainty.'],
+      ]),
+    makeSimpleQuestion(11004, 'UX Research', 'Stakeholder Lagoon', 'Research pushback',
+      'A stakeholder says, “We already know what users want.” What is a productive research response?',
+      'Turn the assumption into a testable question and propose a small study to reduce risk',
+      [
+        ['Tell them they are definitely wrong', 'That creates defensiveness and does not advance evidence.', 'Convert certainty into a testable assumption.'],
+        ['Cancel research forever', 'Confidence is not the same as evidence.', 'Use lightweight research when risk or uncertainty remains.'],
+        ['Only ask users if they like the stakeholder’s idea', 'Preference questions can be shallow and biased.', 'Study behavior, context, and decision criteria.'],
+      ]),
+  ],
+  }
+}
