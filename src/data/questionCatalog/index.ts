@@ -3,28 +3,28 @@ import type { AgeGroup } from '../ageCatalog'
 export type { Answer, Misconception, Question, QuestionCatalog, QuestionKind, Topic } from './types'
 
 const highMathTrackIds = new Set([
-  'khan-illustrative-mathematics-6th-8th-grade',
-  'khan-class-7-math',
-  'khan-class-8-math',
-  'khan-class-9-math',
-  'khan-class-10-math',
-  'khan-algebra-1-ny-next-gen',
-  'khan-eureka-math-algebra-i',
-  'khan-geometry',
-  'khan-eureka-math-geometry',
-  'khan-algebra-2',
-  'khan-eureka-math-algebra-ii',
-  'khan-precalculus',
-  'khan-high-school-statistics',
-  'khan-trigonometry',
-  'khan-statistics-probability',
+  'col-illustrative-mathematics-6th-8th-grade',
+  'col-class-7-math',
+  'col-class-8-math',
+  'col-class-9-math',
+  'col-class-10-math',
+  'col-algebra-1-ny-next-gen',
+  'col-eureka-math-algebra-i',
+  'col-geometry',
+  'col-eureka-math-geometry',
+  'col-algebra-2',
+  'col-eureka-math-algebra-ii',
+  'col-precalculus',
+  'col-high-school-statistics',
+  'col-trigonometry',
+  'col-statistics-probability',
 ])
 
 const highAdvancedTrackIds = new Set([
-  'khan-high-school-biology-ngss',
-  'khan-high-school-physics-ngss',
-  'khan-world-history-project-origins-to-the-present',
-  'khan-world-history-project-1750-to-the-present',
+  'col-high-school-biology-ngss',
+  'col-high-school-physics-ngss',
+  'col-world-history-project-origins-to-the-present',
+  'col-world-history-project-1750-to-the-present',
   'apCalculus',
   'apBiology',
   'apChemistry',
@@ -52,13 +52,13 @@ const highFunTrackIds = new Set([
 ])
 
 const universityCollegeTrackIds = new Set([
-  'khan-class-11-math',
-  'khan-class-12-math',
-  'khan-eureka-math-precalculus',
-  'khan-ap-college-calculus-ab',
-  'khan-ap-college-statistics',
-  'khan-college-algebra',
-  'khan-ap-college-calculus-bc',
+  'col-class-11-math',
+  'col-class-12-math',
+  'col-eureka-math-precalculus',
+  'col-ap-college-calculus-ab',
+  'col-ap-college-statistics',
+  'col-college-algebra',
+  'col-ap-college-calculus-bc',
   'linearAlgebra',
 ])
 

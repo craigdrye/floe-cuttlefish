@@ -1,4 +1,4 @@
-import type { KhanGroupSeed, TrackSeed } from './types'
+import type { CollectionSeed, TrackSeed } from './types'
 
 export const careerCoreTracks: TrackSeed[] = [
   {
@@ -223,7 +223,7 @@ export const careerCoreTracks: TrackSeed[] = [
   },
 ]
 
-export const careerKhanGroups: KhanGroupSeed[] = [
+export const careerCollectionGroups: CollectionSeed[] = [
   {
     ageGroup: 'career',
     discipline: 'Life Skills',
@@ -231,7 +231,6 @@ export const careerKhanGroups: KhanGroupSeed[] = [
     icon: 'compass',
     skills: ['Practical', 'Adulting', 'Momentum'],
     titles: [
-      'Khanmigo for students',
       'AI for education',
       'Financial literacy',
       'Internet safety',

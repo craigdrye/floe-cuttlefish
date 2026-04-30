@@ -1,7 +1,7 @@
 import type { Question } from './types'
 import { buildCycledMathQuiz } from './base'
 
-export function makeKhanCalculusABQuiz(): Question[] {
+export function makeColCalculusABQuiz(): Question[] {
   return buildCycledMathQuiz(24901,
     'Read the calculus setup carefully, identify the limit, derivative, or integral idea being used, and choose the answer that matches the actual computation or interpretation.',
     [
@@ -170,7 +170,7 @@ export function makeKhanCalculusABQuiz(): Question[] {
     ])
 }
 
-export function makeKhanAPStatisticsQuiz(): Question[] {
+export function makeColAPStatisticsQuiz(): Question[] {
   return buildCycledMathQuiz(25001,
     'Read the data or study description carefully, identify the AP Statistics idea in play, and choose the answer that matches the actual summary, probability, or inference question.',
     [
@@ -411,7 +411,7 @@ export function makeKhanAPStatisticsQuiz(): Question[] {
     ])
 }
 
-export function makeKhanTrigonometryQuiz(): Question[] {
+export function makeColTrigonometryQuiz(): Question[] {
   return buildCycledMathQuiz(25101,
     'Read the triangle or function setup carefully, identify the trigonometric relationship in play, and choose the answer that matches the actual ratio, angle, or graph feature.',
     [
@@ -580,7 +580,7 @@ export function makeKhanTrigonometryQuiz(): Question[] {
     ])
 }
 
-export function makeKhanCollegeAlgebraQuiz(): Question[] {
+export function makeColCollegeAlgebraQuiz(): Question[] {
   return buildCycledMathQuiz(25201,
     'Read the algebra setup carefully, identify the function or equation type being used, and choose the answer that matches the actual manipulation, solution, or graph feature.',
     [
@@ -749,7 +749,7 @@ export function makeKhanCollegeAlgebraQuiz(): Question[] {
     ])
 }
 
-export function makeKhanStatisticsProbabilityQuiz(): Question[] {
+export function makeColStatisticsProbabilityQuiz(): Question[] {
   return buildCycledMathQuiz(25301,
     'Read the data or probability setup carefully, identify which statistics or probability rule applies, and choose the answer that matches the actual count, distribution, or inference idea.',
     [
@@ -1044,7 +1044,7 @@ export function makeKhanStatisticsProbabilityQuiz(): Question[] {
     ])
 }
 
-export function makeKhanCalculusBCQuiz(): Question[] {
+export function makeColCalculusBCQuiz(): Question[] {
   return buildCycledMathQuiz(25401,
     'Read the calculus setup carefully, identify the BC idea in play, and choose the answer that matches the actual limit, derivative, integral, parametric, or series calculation.',
     [

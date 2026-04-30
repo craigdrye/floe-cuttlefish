@@ -1,7 +1,7 @@
 import type { Question } from './types'
 import { buildCycledMathQuiz } from './base'
 
-export function makeKhan3rdGradeMathQuiz(): Question[] {
+export function makeCol3rdGradeMathQuiz(): Question[] {
   return buildCycledMathQuiz(25501,
     'Read the math carefully, use the picture or number pattern in front of you, and choose the answer that matches the actual 3rd grade skill being practiced.',
     [
@@ -260,7 +260,7 @@ export function makeKhan3rdGradeMathQuiz(): Question[] {
     ])
 }
 
-export function makeKhan4thGradeMathQuiz(): Question[] {
+export function makeCol4thGradeMathQuiz(): Question[] {
   return buildCycledMathQuiz(25601,
     'Read the math carefully, decide which 4th grade idea is being tested, and choose the answer that matches the actual place value, fraction, geometry, or measurement work.',
     [
@@ -357,7 +357,7 @@ export function makeKhan4thGradeMathQuiz(): Question[] {
     ])
 }
 
-export function makeKhan5thGradeMathQuiz(): Question[] {
+export function makeCol5thGradeMathQuiz(): Question[] {
   return buildCycledMathQuiz(25701,
     'Read the problem carefully, identify the 5th grade concept in play, and choose the answer that matches the actual fraction, volume, decimal, graph, or measurement work.',
     [
@@ -454,7 +454,7 @@ export function makeKhan5thGradeMathQuiz(): Question[] {
     ])
 }
 
-export function makeKhan6thGradeMathQuiz(): Question[] {
+export function makeCol6thGradeMathQuiz(): Question[] {
   return buildCycledMathQuiz(25801,
     'Read the problem carefully, identify the 6th grade skill in play, and choose the answer that matches the actual ratio, negative number, equation, geometry, or statistics work.',
     [

@@ -1,4 +1,4 @@
-import type { KhanGroupSeed, StageBucketMap, TrackSeed } from './types'
+import type { CollectionSeed, StageBucketMap, TrackSeed } from './types'
 
 export const primaryCoreTracks: TrackSeed[] = [
   {
@@ -35,20 +35,64 @@ export const primaryCoreTracks: TrackSeed[] = [
       icon: 'brain' as const,
       skills: ['Logic', 'Ethics', 'Why'],
     }
-  ])
+  ]),
+  {
+    id: 'elevenPlus',
+    title: '11+ Exam Prep (UK)',
+    subtitle: 'Verbal and non-verbal reasoning, plus advanced English and Maths.',
+    status: 'soon',
+    accent: '#4b78c2',
+    discipline: 'Exam Prep',
+    ageGroup: 'primary',
+    icon: 'graduation-cap',
+    skills: ['Reasoning', 'Verbal', 'Logic'],
+  },
+  {
+    id: 'pslePrep',
+    title: 'PSLE Prep (Singapore)',
+    subtitle: 'Mathematics and Science mastery for the Singapore national exam.',
+    status: 'soon',
+    accent: '#10b981',
+    discipline: 'Exam Prep',
+    ageGroup: 'primary',
+    icon: 'target',
+    skills: ['PSLE', 'Mastery', 'Maths'],
+  },
+  {
+    id: 'naplanYear3',
+    title: 'NAPLAN Prep (Year 3)',
+    subtitle: 'National assessment practice for literacy and numeracy.',
+    status: 'soon',
+    accent: '#9b5d76',
+    discipline: 'Exam Prep',
+    ageGroup: 'primary',
+    icon: 'book',
+    skills: ['Literacy', 'Numeracy', 'Grades'],
+  },
+  {
+    id: 'naplanYear5',
+    title: 'NAPLAN Prep (Year 5)',
+    subtitle: 'Advanced national assessment practice for Year 5.',
+    status: 'soon',
+    accent: '#9b5d76',
+    discipline: 'Exam Prep',
+    ageGroup: 'primary',
+    icon: 'book',
+    skills: ['Literacy', 'Numeracy', 'Grades'],
+  },
 ]
 
-export const primaryKhanGroups: KhanGroupSeed[] = [
+export const primaryCollectionGroups: CollectionSeed[] = [
   {
     ageGroup: 'preschool',
-    discipline: 'Khan Kids (Pre-K - 2nd)',
+    discipline: 'Kids Discovery (Pre-K - 2nd)',
     accent: '#2a8f82',
     icon: 'star',
     skills: ['Fun', 'Stories', 'Play'],
     titles: [
-      'Pre-K through grade 2 (Khan Kids)',
-      'Up to 2nd grade (Khan Kids)',
-      'Social & emotional learning (Khan Kids)',
+      'Pre-K through grade 2 basics',
+      'Up to 2nd grade skills',
+      'Social & emotional learning',
     ],
   },
   {
@@ -131,8 +175,8 @@ export const primaryKhanGroups: KhanGroupSeed[] = [
 export const primaryStageBuckets: StageBucketMap = {
   'primary-early': [
     'Primary Foundations',
-    'Pre-K through grade 2 (Khan Kids)',
-    'Social & emotional learning (Khan Kids)',
+    'Pre-K through grade 2 (Col Kids)',
+    'Social & emotional learning (Col Kids)',
     'Storybook Reading',
     'Nature Lab',
     'Shapes',
@@ -143,7 +187,7 @@ export const primaryStageBuckets: StageBucketMap = {
     'Big Questions: Early Years',
   ],
   'primary-year-1': [
-    'Up to 2nd grade (Khan Kids)',
+    'Up to 2nd grade (Col Kids)',
     'Class 1 Math',
     'Early math review',
     'Word Builders',
@@ -159,6 +203,7 @@ export const primaryStageBuckets: StageBucketMap = {
     'Times Tables',
     'Science Discovery: Year 2',
     'Big Questions: Year 2',
+    'NAPLAN Prep (Year 3)',
   ],
   'primary-year-3': [
     'Class 3 Math',
@@ -181,6 +226,7 @@ export const primaryStageBuckets: StageBucketMap = {
     '4th grade reading and vocab',
     'Science Discovery: Year 4',
     'Big Questions: Year 4',
+    'NAPLAN Prep (Year 5)',
   ],
   'primary-year-5': [
     'Class 5 Math',
@@ -203,5 +249,7 @@ export const primaryStageBuckets: StageBucketMap = {
     '6th grade reading and vocab',
     'Science Discovery: Year 6',
     'Big Questions: Year 6',
+    '11+ Exam Prep (UK)',
+    'PSLE Prep (Singapore)',
   ],
 }

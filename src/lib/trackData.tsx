@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { Brain, BookOpen, Calculator, Code2, Compass, FlaskConical, GraduationCap, Heart, LineChart, Map, Microscope, ShieldQuestion, Sparkles, Star, Swords, Target } from 'lucide-react'
 import { coreTrackSeeds, stageBuckets } from '../data/ageCatalog'
 import type { AgeGroup, StageDetail, IconKey } from '../data/ageCatalog'
-import { materializeTrack, buildKhanStyleTracks } from './trackUtils'
+import { materializeTrack, buildCollectionTracks } from './trackUtils'
 import type { Track } from './trackUtils'
 
 export const iconForKey: Record<IconKey, ReactNode> = {
@@ -24,9 +24,9 @@ export const iconForKey: Record<IconKey, ReactNode> = {
   target: <Target size={24} />,
 }
 
-const khanQuizTracks = buildKhanStyleTracks(iconForKey)
+const collectionTracks = buildCollectionTracks(iconForKey)
 const coreTracks: Track[] = coreTrackSeeds.map(seed => materializeTrack(seed, iconForKey))
-export const allTracks: Track[] = [...coreTracks, ...khanQuizTracks]
+export const allTracks: Track[] = [...coreTracks, ...collectionTracks]
 
 export function trackMatchesStageDetail(track: Track, detail: StageDetail | null) {
   if (!detail) return true

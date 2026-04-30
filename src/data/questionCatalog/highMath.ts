@@ -1,12 +1,12 @@
 import type { Question } from './types'
 import {
-  makeKhanAlgebraNyNextGenQuiz,
-  makeKhanGeometryQuiz,
-  makeKhanAlgebra2Quiz,
-  makeKhanPrecalculusQuiz,
-  makeKhanHighSchoolStatisticsQuiz,
-  makeKhanTrigonometryQuiz,
-  makeKhanStatisticsProbabilityQuiz,
+  makeColAlgebraNyNextGenQuiz,
+  makeColGeometryQuiz,
+  makeColAlgebra2Quiz,
+  makeColPrecalculusQuiz,
+  makeColHighSchoolStatisticsQuiz,
+  makeColTrigonometryQuiz,
+  makeColStatisticsProbabilityQuiz,
 } from './highBuilders'
 import {
   makeIndiaClass7MathQuiz,
@@ -14,24 +14,24 @@ import {
   makeIndiaClass9MathQuiz,
   makeIndiaClass10MathQuiz,
   makeIllustrativeMath678Quiz,
-} from './khanGapBuilders'
+} from './colGapBuilders'
 
 export function buildHighMathQuestionCatalog(): Record<string, Question[]> {
   return {
-  'khan-illustrative-mathematics-6th-8th-grade': makeIllustrativeMath678Quiz(),
-  'khan-class-7-math': makeIndiaClass7MathQuiz(),
-  'khan-class-8-math': makeIndiaClass8MathQuiz(),
-  'khan-class-9-math': makeIndiaClass9MathQuiz(),
-  'khan-class-10-math': makeIndiaClass10MathQuiz(),
-  'khan-algebra-1-ny-next-gen': makeKhanAlgebraNyNextGenQuiz(),
-  'khan-eureka-math-algebra-i': makeKhanAlgebraNyNextGenQuiz(),
-  'khan-geometry': makeKhanGeometryQuiz(),
-  'khan-eureka-math-geometry': makeKhanGeometryQuiz(),
-  'khan-algebra-2': makeKhanAlgebra2Quiz(),
-  'khan-eureka-math-algebra-ii': makeKhanAlgebra2Quiz(),
-  'khan-precalculus': makeKhanPrecalculusQuiz(),
-  'khan-high-school-statistics': makeKhanHighSchoolStatisticsQuiz(),
-  'khan-trigonometry': makeKhanTrigonometryQuiz(),
-  'khan-statistics-probability': makeKhanStatisticsProbabilityQuiz(),
+  'col-illustrative-mathematics-6th-8th-grade': makeIllustrativeMath678Quiz(),
+  'col-class-7-math': makeIndiaClass7MathQuiz(),
+  'col-class-8-math': makeIndiaClass8MathQuiz(),
+  'col-class-9-math': makeIndiaClass9MathQuiz(),
+  'col-class-10-math': makeIndiaClass10MathQuiz(),
+  'col-algebra-1-ny-next-gen': makeColAlgebraNyNextGenQuiz(),
+  'col-eureka-math-algebra-i': makeColAlgebraNyNextGenQuiz(),
+  'col-geometry': makeColGeometryQuiz(),
+  'col-eureka-math-geometry': makeColGeometryQuiz(),
+  'col-algebra-2': makeColAlgebra2Quiz(),
+  'col-eureka-math-algebra-ii': makeColAlgebra2Quiz(),
+  'col-precalculus': makeColPrecalculusQuiz(),
+  'col-high-school-statistics': makeColHighSchoolStatisticsQuiz(),
+  'col-trigonometry': makeColTrigonometryQuiz(),
+  'col-statistics-probability': makeColStatisticsProbabilityQuiz(),
   }
 }

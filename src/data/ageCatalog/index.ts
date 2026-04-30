@@ -1,10 +1,10 @@
-import { careerCoreTracks, careerKhanGroups } from './career'
-import { highCoreTracks, highKhanGroups, highStageBuckets } from './high'
-import { primaryCoreTracks, primaryKhanGroups, primaryStageBuckets } from './primary'
+import { careerCoreTracks, careerCollectionGroups } from './career'
+import { highCoreTracks, highCollectionGroups, highStageBuckets } from './high'
+import { primaryCoreTracks, primaryCollectionGroups, primaryStageBuckets } from './primary'
 import type { AgeGroup, StageDetail, StageBucketMap } from './types'
-import { universityCoreTracks, universityKhanGroups, universityStageBuckets } from './university'
+import { universityCoreTracks, universityCollectionGroups, universityStageBuckets } from './university'
 
-export type { AgeGroup, IconKey, KhanGroupSeed, StageDetail, StageBucketMap, TrackSeed } from './types'
+export type { AgeGroup, IconKey, CollectionSeed, StageDetail, StageBucketMap, TrackSeed } from './types'
 
 export const ageOptions: { id: AgeGroup; label: string }[] = [
   { id: 'preschool', label: 'Pre-school' },
@@ -57,9 +57,9 @@ export const coreTrackSeeds = [
   ...careerCoreTracks,
 ]
 
-export const khanTrackGroups = [
-  ...primaryKhanGroups,
-  ...highKhanGroups,
-  ...universityKhanGroups,
-  ...careerKhanGroups,
+export const collectionGroups = [
+  ...primaryCollectionGroups,
+  ...highCollectionGroups,
+  ...universityCollectionGroups,
+  ...careerCollectionGroups,
 ]

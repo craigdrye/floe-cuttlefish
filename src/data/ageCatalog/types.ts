@@ -50,13 +50,13 @@ export type TrackSeed = {
   skills: string[]
 }
 
-export type KhanGroupSeed = {
-  ageGroup: AgeGroup
-  discipline: string
-  accent: string
-  icon: IconKey
-  skills: string[]
-  titles: string[]
+export type CollectionSeed = {
+  ageGroup: AgeGroup;
+  discipline: string;
+  accent: string;
+  icon: IconKey;
+  skills: string[];
+  titles: string[];
 }
 
 export type StageBucketMap = Partial<Record<Exclude<StageDetail, null>, readonly string[]>>

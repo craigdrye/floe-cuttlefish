@@ -5,14 +5,14 @@ import {
   makeHighSchoolPhysicsNGSSQuiz,
   makeWorldHistoryOriginsQuiz,
   makeWorldHistory1750Quiz,
-} from './khanGapBuilders'
+} from './colGapBuilders'
 
 export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
   return {
-  'khan-high-school-biology-ngss': makeHighSchoolBiologyNGSSQuiz(),
-  'khan-high-school-physics-ngss': makeHighSchoolPhysicsNGSSQuiz(),
-  'khan-world-history-project-origins-to-the-present': makeWorldHistoryOriginsQuiz(),
-  'khan-world-history-project-1750-to-the-present': makeWorldHistory1750Quiz(),
+  'col-high-school-biology-ngss': makeHighSchoolBiologyNGSSQuiz(),
+  'col-high-school-physics-ngss': makeHighSchoolPhysicsNGSSQuiz(),
+  'col-world-history-project-origins-to-the-present': makeWorldHistoryOriginsQuiz(),
+  'col-world-history-project-1750-to-the-present': makeWorldHistory1750Quiz(),
   apCalculus: [
     makeSimpleQuestion(13001, 'AP', 'AP Calculus Pier', 'Derivative intuition',
       'If f(x) = x^2, what is f\'(3)?',

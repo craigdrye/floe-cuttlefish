@@ -4,32 +4,32 @@ import {
   makeQuestionBank,
 } from './base'
 import {
-  makeKhan3rdGradeMathQuiz,
-  makeKhan4thGradeMathQuiz,
-  makeKhan5thGradeMathQuiz,
-  makeKhan6thGradeMathQuiz,
+  makeCol3rdGradeMathQuiz,
+  makeCol4thGradeMathQuiz,
+  makeCol5thGradeMathQuiz,
+  makeCol6thGradeMathQuiz,
 } from './primaryBuilders'
 import {
   makeIndiaClass1MathQuiz,
   makeIndiaClass2MathQuiz,
   makeEurekaMathFoundations38Quiz,
   makeEurekaMath38Quiz,
-} from './khanGapBuilders'
+} from './colGapBuilders'
 
 export function buildPrimaryQuestionCatalog(): Record<string, Question[]> {
   return {
-  'khan-class-1-math': makeIndiaClass1MathQuiz(),
-  'khan-class-2-math': makeIndiaClass2MathQuiz(),
-  'khan-class-3-math': makeKhan3rdGradeMathQuiz(),
-  'khan-class-4-math': makeKhan4thGradeMathQuiz(),
-  'khan-class-5-math': makeKhan5thGradeMathQuiz(),
-  'khan-class-6-math': makeKhan6thGradeMathQuiz(),
-  'khan-3rd-grade-math': makeKhan3rdGradeMathQuiz(),
-  'khan-4th-grade-math': makeKhan4thGradeMathQuiz(),
-  'khan-5th-grade-math': makeKhan5thGradeMathQuiz(),
-  'khan-6th-grade-math': makeKhan6thGradeMathQuiz(),
-  'khan-eureka-math-foundations-3rd-8th-grade': makeEurekaMathFoundations38Quiz(),
-  'khan-eureka-math-3rd-8th-grade': makeEurekaMath38Quiz(),
+  'col-class-1-math': makeIndiaClass1MathQuiz(),
+  'col-class-2-math': makeIndiaClass2MathQuiz(),
+  'col-class-3-math': makeCol3rdGradeMathQuiz(),
+  'col-class-4-math': makeCol4thGradeMathQuiz(),
+  'col-class-5-math': makeCol5thGradeMathQuiz(),
+  'col-class-6-math': makeCol6thGradeMathQuiz(),
+  'col-3rd-grade-math': makeCol3rdGradeMathQuiz(),
+  'col-4th-grade-math': makeCol4thGradeMathQuiz(),
+  'col-5th-grade-math': makeCol5thGradeMathQuiz(),
+  'col-6th-grade-math': makeCol6thGradeMathQuiz(),
+  'col-eureka-math-foundations-3rd-8th-grade': makeEurekaMathFoundations38Quiz(),
+  'col-eureka-math-3rd-8th-grade': makeEurekaMath38Quiz(),
   primary: [
     makeSimpleQuestion(12001, 'Primary', 'Number Reef', 'Friendly fractions',
       'Which fraction is the largest?',

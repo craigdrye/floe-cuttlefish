@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { khanTrackGroups } from '../data/ageCatalog'
+import { collectionGroups } from '../data/ageCatalog'
 import type { AgeGroup, IconKey, TrackSeed } from '../data/ageCatalog'
 
 export type Track = {
@@ -21,7 +21,7 @@ export function slugifyTrackId(value: string) {
     .replace(/^-+|-+$/g, '')
 }
 
-export function subtitleForKhanTrack(title: string) {
+export function subtitleForCollectionTrack(title: string) {
   const lower = title.toLowerCase()
 
   if (lower.includes('illustrative mathematics')) {
@@ -111,27 +111,27 @@ export function subtitleForKhanTrack(title: string) {
   if (lower.includes('sat') || lower.includes('lsat') || lower.includes('mcat')) {
     return 'Timed prep, pattern recognition, and cleaner exam decisions under pressure.'
   }
-  if (lower.includes('khan kids') || lower.includes('early math')) {
+  if (lower.includes('kids') || lower.includes('early math')) {
     return 'Foundational practice for early learners, built around simple wins and repetition.'
   }
 
   return `Quiz pack for ${title.toLowerCase()}.`
 }
 
-export function buildKhanStyleTracks(iconForKey: Record<IconKey, ReactNode>): Track[] {
+export function buildCollectionTracks(iconForKey: Record<IconKey, ReactNode>): Track[] {
   const seen = new Set<string>()
   const tracksFromGroups: Track[] = []
 
-  for (const group of khanTrackGroups) {
+  for (const group of collectionGroups) {
     for (const title of group.titles) {
       const key = title.trim().toLowerCase()
       if (seen.has(key)) continue
       seen.add(key)
 
       tracksFromGroups.push({
-        id: `khan-${slugifyTrackId(title)}`,
+        id: `col-${slugifyTrackId(title)}`,
         title,
-        subtitle: subtitleForKhanTrack(title),
+        subtitle: subtitleForCollectionTrack(title),
         status: 'playable',
         accent: group.accent,
         discipline: group.discipline,

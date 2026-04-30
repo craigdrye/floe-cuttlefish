@@ -1,4 +1,4 @@
-import type { KhanGroupSeed, StageBucketMap, TrackSeed } from './types'
+import type { CollectionSeed, StageBucketMap, TrackSeed } from './types'
 
 export const universityCoreTracks: TrackSeed[] = [
   {
@@ -223,10 +223,10 @@ export const universityCoreTracks: TrackSeed[] = [
   },
 ]
 
-export const universityKhanGroups: KhanGroupSeed[] = [
+export const universityCollectionGroups: CollectionSeed[] = [
   {
     ageGroup: 'university',
-    discipline: 'College',
+    discipline: 'College Foundations',
     accent: '#5f6db9',
     icon: 'microscope',
     skills: ['Depth', 'Rigor', 'Problem solving'],
@@ -234,18 +234,18 @@ export const universityKhanGroups: KhanGroupSeed[] = [
       'Class 11 Math',
       'Class 12 Math',
       'College algebra',
-      'AP®︎/College Calculus AB',
-      'AP®︎/College Calculus BC',
-      'AP®︎/College Statistics',
+      'AP Calculus AB',
+      'AP Calculus BC',
+      'AP Statistics',
       'Multivariable calculus',
       'Differential equations',
       'Linear algebra',
       'Eureka Math Precalculus',
-      'AP®︎/College Biology',
-      'AP®︎/College Chemistry',
-      'AP®︎/College Environmental Science',
-      'AP®︎/College Physics 1',
-      'AP®︎/College Physics 2',
+      'AP Biology',
+      'AP Chemistry',
+      'AP Environmental Science',
+      'AP Physics 1',
+      'AP Physics 2',
       'Organic chemistry',
       'Cosmology and astronomy',
       'Electrical engineering',
@@ -259,8 +259,8 @@ export const universityStageBuckets: StageBucketMap = {
   'university-freshman': [
     'Class 11 Math',
     'College algebra',
-    'AP®︎/College Calculus AB',
-    'AP®︎/College Statistics',
+    'AP Calculus AB',
+    'AP Statistics',
     'Microeconomics',
     'Macroeconomics',
     'Philosophy',
@@ -271,19 +271,19 @@ export const universityStageBuckets: StageBucketMap = {
   'university-sophomore': [
     'Class 12 Math',
     'Eureka Math Precalculus',
-    'AP®︎/College Calculus BC',
+    'AP Calculus BC',
     'Linear Algebra',
-    'AP®︎/College Biology',
-    'AP®︎/College Chemistry',
-    'AP®︎/College Environmental Science',
+    'AP Biology',
+    'AP Chemistry',
+    'AP Environmental Science',
     'Philosophy of Science',
     'Adulting & Life Skills',
   ],
   'university-junior': [
     'Multivariable calculus',
     'Differential equations',
-    'AP®︎/College Physics 1',
-    'AP®︎/College Physics 2',
+    'AP Physics 1',
+    'AP Physics 2',
     'Organic chemistry',
     'Neuroscience',
     'International Relations',

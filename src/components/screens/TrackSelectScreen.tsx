@@ -40,7 +40,7 @@ const disciplineColors: Record<string, string> = {
   'Finance': '#059669',
   'Technology': '#6366f1',
   'Space': '#6d28d9',
-  'Khan School': '#4b7c6f',
+  'Core Curriculum': '#4b7c6f',
 }
 
 function MenuBubbles() {
