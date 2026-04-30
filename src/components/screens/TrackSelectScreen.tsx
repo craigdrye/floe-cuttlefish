@@ -41,6 +41,7 @@ const disciplineColors: Record<string, string> = {
   'Technology': '#6366f1',
   'Space': '#6d28d9',
   'Core Curriculum': '#4b7c6f',
+  'Fun Discovery': '#d97706',
 }
 
 function MenuBubbles() {
