@@ -44,7 +44,6 @@ export function AudienceSelectScreen() {
     { id: 'preschool', label: 'Pre-school', emoji: '🐣' },
     { id: 'primary', label: 'Primary school', emoji: '🌱' },
     { id: 'high', label: 'High school', emoji: '🔬' },
-    { id: 'university', label: 'University', emoji: '🎓' },
   ]
 
   const adultsOptions: { id: AgeGroup; label: string; emoji: string }[] = [
