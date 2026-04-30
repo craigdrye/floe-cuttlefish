@@ -7,11 +7,13 @@ import { universityCoreTracks, universityKhanGroups, universityStageBuckets } fr
 export type { AgeGroup, IconKey, KhanGroupSeed, StageDetail, StageBucketMap, TrackSeed } from './types'
 
 export const ageOptions: { id: AgeGroup; label: string }[] = [
-  { id: 'career', label: 'Career-switching' },
   { id: 'preschool', label: 'Pre-school' },
   { id: 'primary', label: 'Primary' },
   { id: 'high', label: 'High school' },
   { id: 'university', label: 'University' },
+  { id: 'career', label: 'Career' },
+  { id: 'career-hopper', label: 'Career-switching' },
+  { id: 'nerd', label: 'Geek' },
 ]
 
 export const ageDetailOptions: Partial<Record<AgeGroup, Array<{ id: StageDetail; label: string }>>> = {
