@@ -325,25 +325,29 @@ export const highKhanGroups: KhanGroupSeed[] = [
 ]
 
 export const highStageBuckets: StageBucketMap = {
+  'high-year-7': [
+    'Get ready for 7th grade',
+    'Class 7 Math',
+    '7th grade (NY Next Gen)',
+    '7th grade math',
+    '7th grade reading and vocab',
+    'Middle school Earth and space science',
+    'Middle school Big History',
+  ],
+  'high-year-8': [
+    'Get ready for 8th grade',
+    'Class 8 Math',
+    '8th grade (NY Next Gen)',
+    '8th grade math',
+    '8th grade reading and vocab',
+    'Middle school biology',
+  ],
   'high-year-9': [
     'Illustrative Mathematics 6th – 8th grade',
-    'Class 7 Math',
-    'Class 8 Math',
-    '7th grade (NY Next Gen)',
-    '8th grade (NY Next Gen)',
-    'Get ready for 7th grade',
-    'Get ready for 8th grade',
     'Pre-algebra',
     'Algebra basics',
-    '7th grade math',
-    '8th grade math',
-    'Middle school biology',
-    'Middle school Earth and space science',
     'Middle school chemistry',
     'Middle school physics',
-    'Middle school Big History',
-    '7th grade reading and vocab',
-    '8th grade reading and vocab',
     'Grammar',
   ],
   'high-year-10': [

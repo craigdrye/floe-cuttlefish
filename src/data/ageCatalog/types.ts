@@ -2,14 +2,20 @@ export type AgeGroup = 'preschool' | 'primary' | 'high' | 'university' | 'career
 
 export type StageDetail =
   | 'primary-early'
+  | 'primary-year-1'
+  | 'primary-year-2'
   | 'primary-year-3'
   | 'primary-year-4'
   | 'primary-year-5'
   | 'primary-year-6'
+  | 'high-year-7'
+  | 'high-year-8'
   | 'high-year-9'
   | 'high-year-10'
   | 'high-year-11'
   | 'high-year-12'
+  | 'university-freshman'
+  | 'university-sophomore'
   | 'university-junior'
   | 'university-senior'
   | null
