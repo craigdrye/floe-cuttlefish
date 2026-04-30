@@ -37,6 +37,12 @@ export type IconKey =
   | 'star'
   | 'swords'
   | 'target'
+  | 'search'
+  | 'book-open'
+  | 'zap'
+  | 'dollar-sign'
+  | 'edit-3'
+  | 'target'
 
 export type TrackSeed = {
   id: string

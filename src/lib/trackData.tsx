@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { Brain, BookOpen, Calculator, Code2, Compass, FlaskConical, GraduationCap, Heart, LineChart, Map, Microscope, ShieldQuestion, Sparkles, Star, Swords, Target } from 'lucide-react'
+import { Brain, BookOpen, Calculator, Code2, Compass, FlaskConical, GraduationCap, Heart, LineChart, Map, Microscope, ShieldQuestion, Sparkles, Star, Swords, Target, Search, Zap, DollarSign, Edit3 } from 'lucide-react'
 import { coreTrackSeeds, stageBuckets } from '../data/ageCatalog'
 import type { AgeGroup, StageDetail, IconKey } from '../data/ageCatalog'
 import { materializeTrack, buildCollectionTracks } from './trackUtils'
@@ -22,6 +22,11 @@ export const iconForKey: Record<IconKey, ReactNode> = {
   star: <Star size={24} />,
   swords: <Swords size={24} />,
   target: <Target size={24} />,
+  search: <Search size={24} />,
+  'book-open': <BookOpen size={24} />,
+  zap: <Zap size={24} />,
+  'dollar-sign': <DollarSign size={24} />,
+  'edit-3': <Edit3 size={24} />,
 }
 
 const collectionTracks = buildCollectionTracks(iconForKey)
