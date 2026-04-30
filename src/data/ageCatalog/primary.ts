@@ -12,6 +12,30 @@ export const primaryCoreTracks: TrackSeed[] = [
     icon: 'star',
     skills: ['Numbers', 'Reading', 'Logic'],
   },
+  ...['Early Years', 'Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5', 'Year 6'].flatMap(year => [
+    {
+      id: `science${year.replace(' ', '')}`,
+      title: `Science Discovery: ${year}`,
+      subtitle: `Exploring the natural world, biology, and physics basics for ${year}.`,
+      status: 'soon' as const,
+      accent: '#3c8a65',
+      discipline: 'Science',
+      ageGroup: 'primary' as const,
+      icon: 'flask' as const,
+      skills: ['Observation', 'Nature', 'Curiosity'],
+    },
+    {
+      id: `philosophy${year.replace(' ', '')}`,
+      title: `Big Questions: ${year}`,
+      subtitle: `Introduction to logical reasoning, ethics, and "why" questions for ${year}.`,
+      status: 'soon' as const,
+      accent: '#9a6b85',
+      discipline: 'Humanities',
+      ageGroup: 'primary' as const,
+      icon: 'brain' as const,
+      skills: ['Logic', 'Ethics', 'Why'],
+    }
+  ])
 ]
 
 export const primaryKhanGroups: KhanGroupSeed[] = [
@@ -67,6 +91,8 @@ export const primaryStageBuckets: StageBucketMap = {
     'World Explorer',
     'Art Studio',
     'Music Patterns',
+    'Science Discovery: Early Years',
+    'Big Questions: Early Years',
   ],
   'primary-year-1': [
     'Up to 2nd grade (Khan Kids)',
@@ -75,12 +101,16 @@ export const primaryStageBuckets: StageBucketMap = {
     'Word Builders',
     'Coding Basics',
     'Money Basics',
+    'Science Discovery: Year 1',
+    'Big Questions: Year 1',
   ],
   'primary-year-2': [
     'Class 2 Math',
     'Arithmetic',
     'Basic geometry and measurement',
     'Times Tables',
+    'Science Discovery: Year 2',
+    'Big Questions: Year 2',
   ],
   'primary-year-3': [
     'Class 3 Math',
@@ -90,6 +120,8 @@ export const primaryStageBuckets: StageBucketMap = {
     '3rd grade (NY Next Gen)',
     '3rd grade',
     '3rd grade math',
+    'Science Discovery: Year 3',
+    'Big Questions: Year 3',
   ],
   'primary-year-4': [
     'Class 4 Math',
@@ -99,6 +131,8 @@ export const primaryStageBuckets: StageBucketMap = {
     '4th grade (NY Next Gen)',
     '4th grade math',
     '4th grade reading and vocab',
+    'Science Discovery: Year 4',
+    'Big Questions: Year 4',
   ],
   'primary-year-5': [
     'Class 5 Math',
@@ -108,6 +142,8 @@ export const primaryStageBuckets: StageBucketMap = {
     '5th grade (NY Next Gen)',
     '5th grade math',
     '5th grade reading and vocab',
+    'Science Discovery: Year 5',
+    'Big Questions: Year 5',
   ],
   'primary-year-6': [
     'Class 6 Math',
@@ -117,5 +153,7 @@ export const primaryStageBuckets: StageBucketMap = {
     '6th grade (NY Next Gen)',
     '6th grade math',
     '6th grade reading and vocab',
+    'Science Discovery: Year 6',
+    'Big Questions: Year 6',
   ],
 }
