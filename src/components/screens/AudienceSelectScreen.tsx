@@ -47,10 +47,10 @@ export function AudienceSelectScreen() {
   ]
 
   const adultsOptions: { id: AgeGroup; label: string; emoji: string }[] = [
-    { id: 'career-hopper', label: 'Career hopper', emoji: '🦘' },
+    { id: 'career-hopper', label: 'Career-switching', emoji: '🦘' },
     { id: 'career', label: 'Career', emoji: '💼' },
     { id: 'university', label: 'University', emoji: '🎓' },
-    { id: 'nerd', label: 'Nerd', emoji: '🤓' },
+    { id: 'nerd', label: 'Geek', emoji: '🤓' },
   ]
 
   const hasStageDetails = ageDetailOptions[selectedAge] && ageDetailOptions[selectedAge]!.length > 0
