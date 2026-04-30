@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { ArrowLeft, GraduationCap, Briefcase, Sparkles } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useStore } from '../../store/useStore'
 import { ageDetailOptions } from '../../data/ageCatalog'
 import { FloatingParticles } from '../common/FloatingParticles'
@@ -24,6 +25,8 @@ export function AudienceSelectScreen() {
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [error, setError] = useState('')
+  const [hoveredId, setHoveredId] = useState<string | null>(null)
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
 
   useEffect(() => {
     requestAnimationFrame(() => setMounted(true))
@@ -120,6 +123,9 @@ export function AudienceSelectScreen() {
                     key={`${activeGroup}-${option.id}`}
                     className={`panel-option ${selectedAge === option.id ? 'option-active' : ''}`}
                     onClick={() => handleSelect(option.id)}
+                    onMouseEnter={() => setHoveredId(option.id)}
+                    onMouseLeave={() => setHoveredId(null)}
+                    onMouseMove={(e) => setMousePos({ x: e.clientX, y: e.clientY })}
                     type="button"
                   >
                     <span className="option-emoji">{option.emoji}</span>
@@ -127,6 +133,30 @@ export function AudienceSelectScreen() {
                   </button>
                 ))}
               </div>
+
+              <AnimatePresence>
+                {(hoveredId === 'career' || hoveredId === 'career-hopper') && (
+                  <motion.div
+                    className="floating-tooltip"
+                    initial={{ opacity: 0, scale: 0.9, y: 10 }}
+                    animate={{ 
+                      opacity: 1, 
+                      scale: 1, 
+                      y: 0,
+                      left: mousePos.x + 15,
+                      top: mousePos.y + 15
+                    }}
+                    exit={{ opacity: 0, scale: 0.9, y: 5 }}
+                    transition={{ type: 'spring', damping: 20, stiffness: 300, mass: 0.5 }}
+                  >
+                    <span className="tooltip-sub">Includes</span>
+                    <span className="tooltip-text">
+                      {hoveredId === 'career' ? 'Industry exams, sector skills' : 'Interview questions'}
+                    </span>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
               {hasStageDetails && (
                 <div className="panel-substage" style={{ marginTop: '16px', paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
                   {ageDetailOptions[selectedAge]!.map((option) => (
