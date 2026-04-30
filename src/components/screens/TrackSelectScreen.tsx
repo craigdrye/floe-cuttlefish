@@ -123,7 +123,7 @@ export function TrackSelectScreen() {
   useEffect(() => {
     // Default to 'Your courses' if we have some, otherwise first available
     const hasWorked = (progress.workedTrackIds?.length || 0) > 0 || bossWins.length > 0
-    if (selectedDiscipline === 'All' || !finalDisciplines.includes(selectedDiscipline)) {
+    if (selectedDiscipline !== 'All' && !finalDisciplines.includes(selectedDiscipline)) {
       setSelectedDiscipline(hasWorked ? 'Your courses' : finalDisciplines[1] || 'All')
     }
   }, [finalDisciplines, selectedDiscipline, setSelectedDiscipline, progress.workedTrackIds, bossWins.length])
