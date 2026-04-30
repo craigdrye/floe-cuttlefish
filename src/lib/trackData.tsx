@@ -35,9 +35,8 @@ export function trackMatchesStageDetail(track: Track, detail: StageDetail | null
 }
 
 export function getFilteredTracks(age: AgeGroup, detail: StageDetail | null, discipline: string) {
-  const normalizedAge = age === 'career-hopper' ? 'career' : age
   const ageFiltered = allTracks.filter(
-    track => track.ageGroup === normalizedAge && trackMatchesStageDetail(track, detail)
+    track => track.ageGroup === age && trackMatchesStageDetail(track, detail)
   )
   return ageFiltered.filter(track =>
     discipline === 'All' ? true : track.discipline === discipline

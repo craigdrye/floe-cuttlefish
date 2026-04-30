@@ -210,6 +210,17 @@ export const universityCoreTracks: TrackSeed[] = [
     icon: 'target',
     skills: ['Optimization', 'Stochastic', 'Networks'],
   },
+  {
+    id: 'lifeSkillsUni',
+    title: 'Adulting & Life Skills',
+    subtitle: 'Financial independence, career planning, and health/wellness for adults.',
+    status: 'soon',
+    accent: '#8a6a3d',
+    discipline: 'Life Skills',
+    ageGroup: 'university',
+    icon: 'compass',
+    skills: ['Finance', 'Career', 'Wellbeing'],
+  },
 ]
 
 export const universityKhanGroups: KhanGroupSeed[] = [
@@ -255,6 +266,7 @@ export const universityStageBuckets: StageBucketMap = {
     'Philosophy',
     'Art history',
     'University Foundations in Science',
+    'Adulting & Life Skills',
   ],
   'university-sophomore': [
     'Class 12 Math',
@@ -265,6 +277,7 @@ export const universityStageBuckets: StageBucketMap = {
     'AP®︎/College Chemistry',
     'AP®︎/College Environmental Science',
     'Philosophy of Science',
+    'Adulting & Life Skills',
   ],
   'university-junior': [
     'Multivariable calculus',
@@ -277,6 +290,7 @@ export const universityStageBuckets: StageBucketMap = {
     'Marketing',
     'Data Structures',
     'Philosophy of Mind',
+    'Adulting & Life Skills',
   ],
   'university-senior': [
     'Research Methods',
@@ -290,5 +304,6 @@ export const universityStageBuckets: StageBucketMap = {
     'MCAT',
     'Contemporary Ethical Theory',
     'Advanced Mathematical Modeling',
+    'Adulting & Life Skills',
   ],
 }

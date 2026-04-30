@@ -298,6 +298,28 @@ export const highCoreTracks: TrackSeed[] = [
     icon: 'brain',
     skills: ['Utilitarianism', 'Deontology', 'Dilemmas'],
   },
+  {
+    id: 'collegeAdmissions',
+    title: 'College Admissions',
+    subtitle: 'Essays, applications, deadlines, and portfolio building.',
+    status: 'soon',
+    accent: '#3b79ab',
+    discipline: 'College Prep',
+    ageGroup: 'high',
+    icon: 'graduation-cap',
+    skills: ['Essays', 'Applications', 'Deadlines'],
+  },
+  {
+    id: 'lifeSkillsHigh',
+    title: 'Life Skills & Adulting',
+    subtitle: 'Financial literacy, time management, and practical adulting basics.',
+    status: 'soon',
+    accent: '#8a6a3d',
+    discipline: 'Life Skills',
+    ageGroup: 'high',
+    icon: 'compass',
+    skills: ['Finance', 'Planning', 'Self-care'],
+  },
 ]
 
 export const highKhanGroups: KhanGroupSeed[] = [
@@ -472,6 +494,8 @@ export const highStageBuckets: StageBucketMap = {
     'Computer science theory',
     'Pixar in a Box',
     'Existentialism',
+    'College Admissions',
+    'Life Skills & Adulting',
   ],
   'high-year-12': [
     'Get ready for Precalculus',
@@ -506,5 +530,7 @@ export const highStageBuckets: StageBucketMap = {
     'AP®︎/College Macroeconomics',
     'AP®︎/College Microeconomics',
     'Advanced Ethics & Moral Philosophy',
+    'College Admissions',
+    'Life Skills & Adulting',
   ],
 }
