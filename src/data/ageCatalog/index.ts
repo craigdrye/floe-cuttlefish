@@ -8,14 +8,17 @@ export type { AgeGroup, IconKey, KhanGroupSeed, StageDetail, StageBucketMap, Tra
 
 export const ageOptions: { id: AgeGroup; label: string }[] = [
   { id: 'career', label: 'Career hopper' },
+  { id: 'preschool', label: 'Pre-school' },
   { id: 'primary', label: 'Primary' },
   { id: 'high', label: 'High school' },
   { id: 'university', label: 'University' },
 ]
 
 export const ageDetailOptions: Partial<Record<AgeGroup, Array<{ id: StageDetail; label: string }>>> = {
-  primary: [
+  preschool: [
     { id: 'primary-early', label: 'Early years' },
+  ],
+  primary: [
     { id: 'primary-year-3', label: 'Year 3' },
     { id: 'primary-year-4', label: 'Year 4' },
     { id: 'primary-year-5', label: 'Year 5' },
