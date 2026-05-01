@@ -1,5 +1,23 @@
 /* ═══ TRAINER / QUIZ SCREEN ═══ */
 
+.catalog-error {
+  margin: 24px 0;
+  padding: 20px 24px;
+  border-radius: var(--r-md);
+  background: rgba(239,68,68,0.08);
+  border: 1px solid rgba(239,68,68,0.25);
+  color: #7f1d1d;
+}
+.catalog-error h3 {
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+.catalog-error p {
+  font-size: 13px;
+  margin: 0 0 14px;
+  opacity: 0.8;
+}
+
 .trainer {
   position: relative;
 }
@@ -220,21 +238,20 @@
 
 .secret-boss-card .question-heading h2,
 .secret-boss-card .speaker strong,
-.secret-boss-card .question-prompt {
+.secret-boss-card .question-prompt,
+.secret-boss-card .question-setup li {
   color: #fff7d6;
 }
 
 .secret-boss-card .story-card,
 .secret-boss-card .tool-card,
-.secret-boss-card .prompt-box,
-.secret-boss-card .field-note {
+.secret-boss-card .prompt-box {
   background: rgba(255,255,255,0.08);
   border-color: rgba(255,255,255,0.14);
   color: rgba(255,255,255,0.82);
 }
 
 .secret-boss-card .story-card > p,
-.secret-boss-card .field-note,
 .secret-boss-card .tool-card output {
   color: rgba(255,255,255,0.76);
 }
@@ -531,12 +548,13 @@
 }
 
 /* ── Action Buttons ── */
-.actions {
+.actions-toolbar {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
-.actions .secondary {
+.actions-toolbar .secondary {
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -550,10 +568,19 @@
   border: 1px solid rgba(255,255,255,0.3);
   transition: all 0.2s;
 }
-.actions .secondary:hover {
+.actions-toolbar .secondary:hover {
   background: rgba(255,255,255,0.6);
 }
-.actions .primary {
+.actions-toolbar .secondary.active {
+  background: rgba(46,196,182,0.15);
+  border-color: var(--reef-teal);
+  color: var(--reef-teal);
+}
+.actions-primary {
+  display: flex;
+  margin-top: 14px;
+}
+.actions-primary .primary {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -566,13 +593,14 @@
   background: linear-gradient(135deg, var(--reef-teal), var(--reef-emerald));
   box-shadow: 0 4px 16px rgba(31,122,98,0.25);
   transition: all 0.2s;
-  margin-left: auto;
+  width: 100%;
+  justify-content: center;
 }
-.actions .primary:hover:not(:disabled) {
+.actions-primary .primary:hover:not(:disabled) {
   transform: translateY(-1px);
   box-shadow: 0 8px 24px rgba(31,122,98,0.35);
 }
-.actions .primary:disabled {
+.actions-primary .primary:disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }
@@ -683,9 +711,8 @@
   .dive-cockpit-copy h2 { font-size: 18px; }
   .ritual-strip { grid-template-columns: 1fr; }
   .adaptive-strip { align-items: stretch; flex-direction: column; }
-  .question-tools { grid-template-columns: 1fr; }
-  .actions { flex-direction: column; }
-  .actions .primary { margin-left: 0; width: 100%; justify-content: center; }
+  .actions-toolbar { flex-direction: column; }
+  .actions-toolbar .secondary { justify-content: center; }
   .boss-cutscene-card { grid-template-columns: 1fr; text-align: center; }
   .boss-cutscene-card img { justify-self: center; }
 }

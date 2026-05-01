@@ -149,6 +149,8 @@ export interface QuizSlice {
   flaggedQuestions: number[]
   repeatedQuestions: number[]
   showLesson: boolean
+  selectedChapter: string | null
+  chapterShuffleSeed: number
 
   setSelectedAge: (age: AgeGroup) => void
   setSelectedStageDetail: (detail: StageDetail | null) => void
@@ -167,6 +169,7 @@ export interface QuizSlice {
   clearMisconception: (questionId: number) => void
   toggleFlagQuestion: (questionId: number) => void
   toggleRepeatQuestion: (questionId: number) => void
+  setSelectedChapter: (chapter: string | null) => void
   resetQuizState: () => void
   goHome: () => void
 }

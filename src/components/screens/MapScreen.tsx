@@ -28,11 +28,11 @@ export function MapScreen() {
   const {
     progress, mode, setMode, setIndex, setSelectedAnswerId,
     setShowHint, setScreen, setSelectedTrack, pendingStageCelebration, setPendingStageCelebration,
-    misconceptionArtifacts,
+    misconceptionArtifacts, selectedChapter, setSelectedChapter,
   } = useStore()
 
   const {
-    selectedTrackInfo, isSelectedCatalogReady, dailyQuestions,
+    selectedTrackInfo, isSelectedCatalogReady, dailyQuestions, courseQuestions,
     mapNodes, baseQuestion, mapBackground, reviewQuestions
   } = useQuizData()
 
@@ -65,6 +65,15 @@ export function MapScreen() {
     }, 3600)
     return () => window.clearTimeout(timer)
   }, [swimStage, swimState])
+
+  const chapters = useMemo(() => {
+    const seen = new Set<string>()
+    const result: string[] = []
+    for (const q of courseQuestions) {
+      if (!seen.has(q.chapter)) { seen.add(q.chapter); result.push(q.chapter) }
+    }
+    return result
+  }, [courseQuestions])
 
   const completedCount = progress.solved.filter((id) => dailyQuestions.some((q) => q.id === id)).length
 
@@ -175,6 +184,32 @@ export function MapScreen() {
         </article>
       </section>
 
+
+      {chapters.length > 0 && (
+        <section className="chapter-select" aria-label="Chapter filter">
+          <div className="chapter-select-header">
+            <p className="eyebrow">Chapter</p>
+            <h2>Today&apos;s map</h2>
+          </div>
+          <div className="chapter-pills">
+            <button
+              className={`chapter-pill${!selectedChapter ? ' active' : ''}`}
+              onClick={() => { setSelectedChapter(null); setIndex(0); setSelectedAnswerId(null) }}
+            >
+              All
+            </button>
+            {chapters.map((chapter) => (
+              <button
+                key={chapter}
+                className={`chapter-pill${selectedChapter === chapter ? ' active' : ''}`}
+                onClick={() => { setSelectedChapter(chapter); setSelectedAnswerId(null) }}
+              >
+                {chapter}
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
 
       <section className="lesson-path" aria-label={`${selectedTrackInfo.title} lesson path`}>
         <div className="path-header">

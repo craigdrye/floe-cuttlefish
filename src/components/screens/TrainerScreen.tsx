@@ -43,12 +43,14 @@ export function TrainerScreen() {
   } = useStore()
 
   const {
-    selectedTrackInfo, activeSet, baseQuestion, question, visibleAnswers, remixSeed
+    selectedTrackInfo, activeSet, baseQuestion, question, visibleAnswers, remixSeed, catalogError
   } = useQuizData()
 
   const QUESTIONS_PER_STAGE = 4
   const [armedAnswerId, setArmedAnswerId] = useState<string | null>(null)
   const [bossIntroDismissedFor, setBossIntroDismissedFor] = useState<string | number | null>(null)
+  const [showCalculator, setShowCalculator] = useState(false)
+  const [showThoughts, setShowThoughts] = useState(false)
 
   useEffect(() => {
     setCalculatorInput('')
@@ -215,6 +217,7 @@ export function TrainerScreen() {
 
   const resetQuestion = () => {
     setRemixSeed(baseQuestion.id, (c) => c + 1)
+    setWordingMode(baseQuestion.id, (c) => (c + 1) % 3)
     incrementAnswerShuffleSeed()
     setSelectedAnswerId(null)
     setArmedAnswerId(null)
@@ -236,6 +239,14 @@ export function TrainerScreen() {
   return (
     <main className={`app-shell ${isBossBattle ? 'secret-boss-shell' : ''}`}>
       <TopBar title={selectedTrackInfo.title} />
+
+      {catalogError && (
+        <div className="catalog-error">
+          <h3>Questions failed to load</h3>
+          <p>{catalogError}</p>
+          <button className="secondary" onClick={() => setScreen('map')}>Back to map</button>
+        </div>
+      )}
 
       <AnimatePresence>
         {showBossIntro && (
@@ -311,54 +322,29 @@ export function TrainerScreen() {
               </div>
             </div>
 
-            <p className="field-note"><strong>Field note:</strong> {question.fieldNote}</p>
 
-            <div className="question-tools">
-              <div className="tool-card">
-                <label htmlFor="calc-input"><Calculator size={15} /> Calculator</label>
-                <input id="calc-input" value={calculatorInput} onChange={(e) => setCalculatorInput(e.target.value)} placeholder="9 / (9 + 99)" inputMode="decimal" />
-                <output>{calculatorResult || 'Result appears here'}</output>
-              </div>
-              <div className="tool-card">
-                <label htmlFor="thoughts-input"><Brain size={15} /> Thoughts</label>
-                <textarea id="thoughts-input" value={thoughts[thoughtKey] ?? ''} onChange={(e) => setThought(thoughtKey, e.target.value)} placeholder="Write your scratch reasoning here..." rows={3} />
-              </div>
-            </div>
-
-            <div className="answers">
-              <div className="commit-rule">
-                <CheckCircle2 size={14} />
-                <span>Tap once to lock an answer. Tap the lit answer again to submit.</span>
-              </div>
-              {visibleAnswers.map((answer) => (
-                <button
-                  key={answer.id}
-                  className={[
-                    'answer',
-                    armedAnswerId === answer.id ? 'armed' : '',
-                    selectedAnswerId === answer.id ? 'selected' : '',
-                    selectedAnswerId && answer.correct ? 'correct' : '',
-                    selectedAnswerId === answer.id && !answer.correct ? 'wrong' : '',
-                  ].join(' ')}
-                  onClick={() => choose(answer)}
-                >
-                  <span className="answer-label" title={answer.label}>{answer.label}</span>
-                  {armedAnswerId === answer.id && !selectedAnswerId && <span className="commit-hint">Tap again</span>}
-                  {selectedAnswerId && answer.correct && <CheckCircle2 size={17} />}
-                  {selectedAnswerId === answer.id && !answer.correct && <XCircle size={17} />}
-                </button>
-              ))}
-            </div>
-
-            <div className="actions">
+            <div className="actions-toolbar">
+              <button className="secondary" onClick={askDifferently}><ShieldQuestion size={15} /> Ask differently</button>
               <button className="secondary" onClick={() => setShowHint(!showHint)}><Sparkles size={15} /> Hint</button>
               <button className="secondary" onClick={() => setShowLesson(!showLesson)}><BookOpen size={15} /> Teach me</button>
-              <button className="secondary" onClick={askDifferently}><ShieldQuestion size={15} /> Ask differently</button>
+              <button className={`secondary${showCalculator ? ' active' : ''}`} onClick={() => setShowCalculator(v => !v)}><Calculator size={15} /> Calculator</button>
+              <button className={`secondary${showThoughts ? ' active' : ''}`} onClick={() => setShowThoughts(v => !v)}><Brain size={15} /> Note pad</button>
               <button className="secondary" onClick={resetQuestion}><Repeat2 size={15} /> Reset</button>
-              <button className="primary" disabled={!selectedAnswerId} onClick={nextQuestion}>
-                {isCorrect ? 'Next question' : 'Back to map'}
-              </button>
             </div>
+
+            <AnimatePresence>
+              {showHint && (
+                <motion.div className="hint" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }}>
+                  <div className="hint-speaker">
+                    <SpeakerPortrait role="thinker" />
+                    <div>
+                      <strong>Sensei Cuttle says:</strong>
+                      <p>{question.mentorHint}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
 
             <AnimatePresence>
               {showLesson && (
@@ -382,18 +368,52 @@ export function TrainerScreen() {
             </AnimatePresence>
 
             <AnimatePresence>
-              {showHint && (
-                <motion.div className="hint" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }}>
-                  <div className="hint-speaker">
-                    <SpeakerPortrait role="thinker" />
-                    <div>
-                      <strong>Sensei Cuttle says:</strong>
-                      <p>{question.mentorHint}</p>
-                    </div>
-                  </div>
+              {showCalculator && (
+                <motion.div className="tool-card" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }}>
+                  <input id="calc-input" value={calculatorInput} onChange={(e) => setCalculatorInput(e.target.value)} placeholder="9 / (9 + 99)" inputMode="decimal" />
+                  <output>{calculatorResult || 'Result appears here'}</output>
                 </motion.div>
               )}
             </AnimatePresence>
+
+            <AnimatePresence>
+              {showThoughts && (
+                <motion.div className="tool-card" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }}>
+                  <textarea id="thoughts-input" value={thoughts[thoughtKey] ?? ''} onChange={(e) => setThought(thoughtKey, e.target.value)} placeholder="Write your scratch reasoning here..." rows={3} />
+                </motion.div>
+              )}
+            </AnimatePresence>
+
+            <div className="answers">
+              {visibleAnswers.map((answer) => (
+                <button
+                  key={answer.id}
+                  className={[
+                    'answer',
+                    armedAnswerId === answer.id ? 'armed' : '',
+                    selectedAnswerId === answer.id ? 'selected' : '',
+                    selectedAnswerId && answer.correct ? 'correct' : '',
+                    selectedAnswerId === answer.id && !answer.correct ? 'wrong' : '',
+                  ].join(' ')}
+                  onClick={() => choose(answer)}
+                >
+                  <span className="answer-label" title={answer.label}>{answer.label}</span>
+                  {armedAnswerId === answer.id && !selectedAnswerId && <span className="commit-hint">Tap again</span>}
+                  {selectedAnswerId && answer.correct && <CheckCircle2 size={17} />}
+                  {selectedAnswerId === answer.id && !answer.correct && <XCircle size={17} />}
+                </button>
+              ))}
+              <div className="commit-rule">
+                <CheckCircle2 size={14} />
+                <span>Tap once to lock an answer. Tap the lit answer again to submit.</span>
+              </div>
+            </div>
+
+            <div className="actions-primary">
+              <button className="primary" disabled={!selectedAnswerId} onClick={nextQuestion}>
+                {isCorrect ? 'Next question' : 'Back to map'}
+              </button>
+            </div>
 
             <AnimatePresence>
               {selectedAnswer && (

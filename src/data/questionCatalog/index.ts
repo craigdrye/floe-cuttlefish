@@ -97,7 +97,7 @@ export function questionCatalogKeyForTrack(trackId: string, ageGroup: AgeGroup):
   }
 
   if (ageGroup === 'primary') return 'primary'
-  if (ageGroup === 'career') return 'career'
+  if (ageGroup === 'career' || ageGroup === 'career-hopper') return 'career'
 
   return null
 }

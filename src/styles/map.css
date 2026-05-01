@@ -587,6 +587,47 @@
   color: #496b62;
 }
 
+/* ── Chapter Select ── */
+.chapter-select {
+  margin-bottom: 20px;
+}
+.chapter-select-header {
+  margin-bottom: 12px;
+}
+.chapter-select-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--ocean-deep);
+}
+.chapter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chapter-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: var(--r-full);
+  font-size: 13px;
+  font-weight: 700;
+  color: #476159;
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: all 0.18s;
+  cursor: pointer;
+}
+.chapter-pill:hover {
+  background: rgba(255,255,255,0.65);
+}
+.chapter-pill.active {
+  background: var(--reef-teal);
+  border-color: var(--reef-teal);
+  color: #fff;
+}
+
 /* ── Lesson Path ── */
 .lesson-path {
   margin-bottom: 20px;

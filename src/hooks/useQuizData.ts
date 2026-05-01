@@ -7,12 +7,13 @@ import {
   questionCatalogKeyForTrack
 } from '../data/questionCatalog'
 import type { QuestionCatalog } from '../data/questionCatalog'
-import { 
-  buildTrackQuiz, 
-  normalizeQuestionCatalog, 
-  remixQuestion, 
-  rewordQuestion, 
-  shuffledAnswers 
+import {
+  buildTrackQuiz,
+  normalizeQuestionCatalog,
+  remixQuestion,
+  rewordQuestion,
+  shuffledAnswers,
+  shuffledQuestions,
 } from '../lib/quizRuntime'
 
 const MAP_BACKGROUNDS = [
@@ -40,22 +41,28 @@ function hashForAnswerCount(seed: string) {
 }
 
 export function useQuizData() {
-  const { 
-    selectedTrack, 
-    mode, 
-    index, 
-    remixSeeds, 
-    wordingModes, 
+  const {
+    selectedTrack,
+    selectedAge,
+    mode,
+    index,
+    remixSeeds,
+    wordingModes,
     answerShuffleSeed,
     progress,
     mood,
-    user
+    user,
+    selectedChapter,
+    chapterShuffleSeed,
   } = useStore()
   const profileAnswers = user?.questionnaireAnswers ?? {}
   
   const [loadedQuestionCatalogs, setLoadedQuestionCatalogs] = useState<Record<string, QuestionCatalog>>({})
 
-  const selectedTrackInfo = allTracks.find((track) => track.id === selectedTrack) ?? allTracks[0]
+  const selectedTrackInfo =
+    allTracks.find((track) => track.id === selectedTrack && track.ageGroup === selectedAge) ??
+    allTracks.find((track) => track.id === selectedTrack) ??
+    allTracks[0]
   const selectedCatalogKey = questionCatalogKeyForTrack(selectedTrackInfo.id, selectedTrackInfo.ageGroup)
   const selectedTrackCatalog = selectedCatalogKey ? loadedQuestionCatalogs[selectedCatalogKey] ?? null : null
   
@@ -78,13 +85,23 @@ export function useQuizData() {
     return () => { cancelled = true }
   }, [loadedQuestionCatalogs, selectedTrack, selectedTrackInfo])
 
-  const courseQuestions = useMemo(
-    () => (isSelectedCatalogReady ? buildTrackQuiz(selectedTrackInfo, selectedTrackCatalog ?? {}) : []),
-    [isSelectedCatalogReady, selectedTrackCatalog, selectedTrackInfo]
-  )
+  const { courseQuestions, catalogError } = useMemo(() => {
+    if (!isSelectedCatalogReady) return { courseQuestions: [], catalogError: null }
+    try {
+      return { courseQuestions: buildTrackQuiz(selectedTrackInfo, selectedTrackCatalog ?? {}), catalogError: null }
+    } catch (err) {
+      return { courseQuestions: [], catalogError: err instanceof Error ? err.message : String(err) }
+    }
+  }, [isSelectedCatalogReady, selectedTrackCatalog, selectedTrackInfo])
 
   const dailyQuestions = useMemo(() => courseQuestions, [courseQuestions])
-  
+
+  const chapterQuestions = useMemo(() => {
+    if (!selectedChapter) return null
+    const filtered = courseQuestions.filter(q => q.chapter === selectedChapter)
+    return shuffledQuestions(filtered, chapterShuffleSeed)
+  }, [selectedChapter, chapterShuffleSeed, courseQuestions])
+
   const reviewQuestions = useMemo(() => {
     const now = new Date()
     return courseQuestions.filter(q => {
@@ -94,11 +111,12 @@ export function useQuizData() {
     })
   }, [courseQuestions, progress.reviews])
 
-  const activeSet = mode === 'review' && reviewQuestions.length > 0 
-    ? reviewQuestions 
-    : mode === 'daily' 
-      ? dailyQuestions 
-      : courseQuestions
+  const activeSet = chapterQuestions
+    ?? (mode === 'review' && reviewQuestions.length > 0
+      ? reviewQuestions
+      : mode === 'daily'
+        ? dailyQuestions
+        : courseQuestions)
   
   const baseQuestion = (activeSet.length ? activeSet : starterQuestions)[
     index % (activeSet.length ? activeSet.length : starterQuestions.length)
@@ -151,8 +169,10 @@ export function useQuizData() {
   return {
     selectedTrackInfo,
     isSelectedCatalogReady,
+    catalogError,
     courseQuestions,
     dailyQuestions,
+    chapterQuestions,
     mapNodes,
     activeSet,
     baseQuestion,
@@ -161,6 +181,6 @@ export function useQuizData() {
     remixSeed,
     wordingMode,
     mapBackground,
-    reviewQuestions
+    reviewQuestions,
   }
 }

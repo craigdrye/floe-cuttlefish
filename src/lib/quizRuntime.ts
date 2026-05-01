@@ -224,12 +224,10 @@ export function buildTrackQuiz(
   courseQuestionCatalog: QuestionCatalog,
 ) {
   const base = courseQuestionCatalog[track.id] ?? []
-  if (base.length >= QUIZ_LENGTH) {
-    return base.slice(0, QUIZ_LENGTH).map(ensureSixAnswerChoices)
+  if (base.length === 0) {
+    throw new Error(`No questions found for track "${track.id}". Check that the catalog is loaded correctly.`)
   }
-
-  const generated = generateTrackQuestions(track, base.length, QUIZ_LENGTH - base.length)
-  return [...base.map(ensureSixAnswerChoices), ...generated]
+  return base.slice(0, QUIZ_LENGTH).map(ensureSixAnswerChoices)
 }
 
 
@@ -495,6 +493,17 @@ function hashString(value: string) {
     hash = (hash * 31 + value.charCodeAt(index)) >>> 0
   }
   return hash
+}
+
+export function shuffledQuestions<T>(questions: T[], seed: number): T[] {
+  let state = (seed ^ 0xdeadbeef) >>> 0
+  const items = [...questions]
+  for (let i = items.length - 1; i > 0; i--) {
+    state = (state * 1664525 + 1013904223) >>> 0
+    const j = state % (i + 1)
+    ;[items[i], items[j]] = [items[j], items[i]]
+  }
+  return items
 }
 
 export function shuffledAnswers(answers: Answer[], seed: string) {
