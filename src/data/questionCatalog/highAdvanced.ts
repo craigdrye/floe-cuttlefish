@@ -6,6 +6,9 @@ import {
   makeWorldHistoryOriginsQuiz,
   makeWorldHistory1750Quiz,
 } from './colGapBuilders'
+import { buildOpenStaxQuestionCatalog } from './openstax'
+import { buildFCCQuestionCatalog } from './fcc'
+import { buildWikibooksQuestionCatalog } from './wikibooks'
 
 export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
   return {
@@ -116,6 +119,7 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
       ]),
   ],
   apPhysics: [
+    ...makeHighSchoolPhysicsNGSSQuiz(),
     makeSimpleQuestion(13301, 'AP', 'AP Physics Dock', 'Kinematics basics',
       'An object starts from rest and accelerates at 2 m/s^2 for 4 seconds. Final velocity?',
       '8 m/s',
@@ -148,6 +152,8 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
         ['Distance', 'Distance is not part of momentum definition.', 'Use p = mv.'],
         ['Time', 'Time alone is not in the formula.', 'Stay with mass times velocity.'],
       ]),
+    ...(buildOpenStaxQuestionCatalog()['openstax'] || []),
+    ...(buildWikibooksQuestionCatalog()['mathematics_extensions'] || []),
   ],
   apEnglish: [
     makeSimpleQuestion(13401, 'AP', 'AP English Lit Dock', 'Theme reading',
@@ -557,5 +563,8 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
         ['Turning text into sound', 'That is unrelated to control flow.', 'Use the decision-making definition.'],
       ]),
   ],
+    ...buildOpenStaxQuestionCatalog(),
+    ...buildFCCQuestionCatalog(),
+    ...buildWikibooksQuestionCatalog(),
   }
 }

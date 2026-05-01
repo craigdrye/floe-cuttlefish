@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Flame, Star, User, ArrowLeft, Trophy } from 'lucide-react'
 import { useStore } from '../../store/useStore'
 import { getFilteredTracks, allTracks } from '../../lib/trackData'
@@ -109,18 +109,19 @@ export function TrackSelectScreen() {
     return () => clearInterval(interval)
   }, [])
 
-  const ageFilteredTracks = getFilteredTracks(selectedAge, selectedStageDetail, 'All')
-  const ageDisciplines = Array.from(new Set(ageFilteredTracks.map((t) => t.discipline)))
-  ageDisciplines.push('All')
-  
-  const finalDisciplines = ['Your courses', ...ageDisciplines]
-  
+  const finalDisciplines = useMemo(() => {
+    const ageFilteredTracks = getFilteredTracks(selectedAge, selectedStageDetail, 'All')
+    const ageDisciplines = Array.from(new Set(ageFilteredTracks.map((track) => track.discipline)))
+    ageDisciplines.push('All')
+    return ['Your courses', ...ageDisciplines]
+  }, [selectedAge, selectedStageDetail])
+
   let visibleTracks = getFilteredTracks(selectedAge, selectedStageDetail, selectedDiscipline)
   if (selectedDiscipline === 'Your courses') {
-    const workedIds = new Set([...(progress.workedTrackIds || []), ...bossWins.map(b => b.trackId)])
-    visibleTracks = allTracks.filter(t => workedIds.has(t.id))
+    const workedIds = new Set([...(progress.workedTrackIds || []), ...bossWins.map((boss) => boss.trackId)])
+    visibleTracks = allTracks.filter((track) => workedIds.has(track.id))
   }
-  
+
   useEffect(() => {
     // Default to 'Your courses' if we have some, otherwise first available
     const hasWorked = (progress.workedTrackIds?.length || 0) > 0 || bossWins.length > 0
@@ -199,9 +200,9 @@ export function TrackSelectScreen() {
                   if (track.status === 'playable') {
                     // Track that this course has been worked on
                     if (!progress.workedTrackIds?.includes(track.id)) {
-                      setProgress(prev => ({
+                      setProgress((prev) => ({
                         ...prev,
-                        workedTrackIds: [...(prev.workedTrackIds || []), track.id]
+                        workedTrackIds: [...(prev.workedTrackIds || []), track.id],
                       }))
                     }
                     setSelectedTrack(track.id)
@@ -216,11 +217,18 @@ export function TrackSelectScreen() {
                 <span className="track-status">{track.discipline}</span>
                 <strong>{track.title}</strong>
                 <span>{track.subtitle}</span>
-                <span className="skill-tags">
-                  {track.skills.map((skill) => (
-                    <small key={`${track.id}-${skill}`}>{skill}</small>
-                  ))}
-                </span>
+                <div className="track-meta">
+                  <span className="skill-tags">
+                    {track.skills.map((skill) => (
+                      <small key={`${track.id}-${skill}`}>{skill}</small>
+                    ))}
+                  </span>
+                  {track.questionCount && (
+                    <span className="q-count-badge">
+                      <Star size={10} /> {track.questionCount} questions
+                    </span>
+                  )}
+                </div>
               </button>
             ))}
           </div>

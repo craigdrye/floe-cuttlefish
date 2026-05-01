@@ -180,6 +180,10 @@ function genericDistractorPool(question: Question) {
       'Choose the convenient action instead of the defensible professional one',
       'Pick the fastest move and ignore the process risk',
     ],
+    'Extension': [
+      'Skip the rigorous logical steps for a common-sense shortcut',
+      'Assume the standard rule applies without checking the extension constraint',
+    ],
   }
 
   return byTopic[question.topic] ?? [
@@ -614,6 +618,8 @@ export function rewordQuestion(base: Question, mode: number): Question {
       'Story version. Treat this like practical professional training: clarify the real objective, choose the soundest operating principle, and prefer action that scales.',
     'Quant Finance':
       'Story version. Treat the market or game like a precise mechanism: state your assumptions, apply the probability or finance model, and find the value that respects the constraints.',
+    'Extension':
+      'Story version. This is an advanced extension. Work methodically through the logic, avoiding shortcuts, and verify each step against the stated constraints.',
   }
 
   return {

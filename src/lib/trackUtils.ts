@@ -12,6 +12,7 @@ export type Track = {
   ageGroup: AgeGroup
   icon: ReactNode
   skills: string[]
+  questionCount?: number
 }
 
 export function slugifyTrackId(value: string) {
@@ -138,6 +139,7 @@ export function buildCollectionTracks(iconForKey: Record<IconKey, ReactNode>): T
         ageGroup: group.ageGroup,
         icon: iconForKey[group.icon],
         skills: group.skills,
+        questionCount: 0, // Will be populated later or dynamic
       })
     }
   }
@@ -149,5 +151,6 @@ export function materializeTrack(seed: TrackSeed, iconForKey: Record<IconKey, Re
   return {
     ...seed,
     icon: iconForKey[seed.icon],
+    questionCount: seed.questionCount ?? 0,
   }
 }

@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect } from 'react'
 import { Sparkles } from 'lucide-react'
 import { useStore } from '../../store/useStore'
 
@@ -28,17 +28,20 @@ function loadWelcomeLine() {
   return welcomeLines[Math.floor(Math.random() * welcomeLines.length)]
 }
 
+function buildBubbleSpecs() {
+  return Array.from({ length: 14 }, (_, i) => ({
+    id: i,
+    left: `${8 + ((i * 17) % 84)}%`,
+    size: 4 + ((i * 7) % 10),
+    delay: `${(i * 0.6) % 8}s`,
+    duration: `${8 + ((i * 3) % 12)}s`,
+    opacity: 0.15 + ((i * 0.03) % 0.2),
+  }))
+}
+
 // Ambient underwater bubbles
 function Bubbles() {
-  const bubbles = useMemo(() =>
-    Array.from({ length: 14 }, (_, i) => ({
-      id: i,
-      left: `${5 + Math.random() * 90}%`,
-      size: 4 + Math.random() * 10,
-      delay: `${Math.random() * 8}s`,
-      duration: `${8 + Math.random() * 12}s`,
-      opacity: 0.15 + Math.random() * 0.25,
-    })), [])
+  const bubbles = buildBubbleSpecs()
 
   return (
     <div className="welcome-bubbles" aria-hidden="true">

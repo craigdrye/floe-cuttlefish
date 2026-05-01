@@ -15,23 +15,81 @@ import {
   makeEurekaMathFoundations38Quiz,
   makeEurekaMath38Quiz,
 } from './colGapBuilders'
+import { buildKolibriQuestionCatalog } from './kolibri'
 
 export function buildPrimaryQuestionCatalog(): Record<string, Question[]> {
+  const kolibri = buildKolibriQuestionCatalog()
+  const khan = kolibri['khanacademy'] || []
+  const ck12 = kolibri['ck12'] || []
+  
+  // Helper to filter by chapter keyword
+  const filterQs = (qs: Question[], keywords: string[]) => 
+    qs.filter(q => keywords.some(k => q.chapter.toLowerCase().includes(k.toLowerCase())))
+
   return {
-  'col-class-1-math': makeIndiaClass1MathQuiz(),
-  'col-class-2-math': makeIndiaClass2MathQuiz(),
-  'col-class-3-math': makeCol3rdGradeMathQuiz(),
-  'col-class-4-math': makeCol4thGradeMathQuiz(),
-  'col-class-5-math': makeCol5thGradeMathQuiz(),
-  'col-class-6-math': makeCol6thGradeMathQuiz(),
-  'col-3rd-grade-math': makeCol3rdGradeMathQuiz(),
-  'col-4th-grade-math': makeCol4thGradeMathQuiz(),
-  'col-5th-grade-math': makeCol5thGradeMathQuiz(),
-  'col-6th-grade-math': makeCol6thGradeMathQuiz(),
-  'col-eureka-math-foundations-3rd-8th-grade': makeEurekaMathFoundations38Quiz(),
-  'col-eureka-math-3rd-8th-grade': makeEurekaMath38Quiz(),
-  primary: [
-    makeSimpleQuestion(12001, 'Primary', 'Number Reef', 'Friendly fractions',
+    // ── Class 1 Math ────────────────────────────────────────
+    'col-class-1-math': [
+      ...makeIndiaClass1MathQuiz(),
+      ...filterQs(khan, ['counting', 'add within 10', 'subtract within 10', 'shapes', 'small numbers']),
+      ...filterQs(ck12, ['counting', 'shapes', 'identify the value']),
+    ],
+    
+    // ── Class 2 Math ────────────────────────────────────────
+    'col-class-2-math': [
+      ...makeIndiaClass2MathQuiz(),
+      ...filterQs(khan, ['place value', 'add within 100', 'subtract within 100', 'money', 'time']),
+      ...filterQs(ck12, ['place value', 'money', 'time']),
+    ],
+    
+    // ── Class 3 Math ────────────────────────────────────────
+    'col-class-3-math': [
+      ...makeCol3rdGradeMathQuiz(),
+      ...filterQs(khan, ['multiplication', 'division', 'fractions intro', 'area', 'perimeter']),
+      ...filterQs(ck12, ['multiplication', 'division', 'fractions']),
+    ],
+    
+    // ── Class 4 Math ────────────────────────────────────────
+    'col-class-4-math': [
+      ...makeCol4thGradeMathQuiz(),
+      ...filterQs(khan, ['decimals', 'multi-digit', 'factors', 'prime']),
+      ...filterQs(ck12, ['decimals', 'factors']),
+    ],
+
+    // ── Class 5 Math ────────────────────────────────────────
+    'col-class-5-math': [
+      ...makeCol5thGradeMathQuiz(),
+      ...filterQs(khan, ['coordinate plane', 'volume', 'algebraic thinking']),
+      ...filterQs(ck12, ['coordinate plane', 'volume']),
+    ],
+
+    // ── Class 6 Math ────────────────────────────────────────
+    'col-class-6-math': [
+      ...makeCol6thGradeMathQuiz(),
+      ...filterQs(khan, ['ratios', 'rates', 'negative numbers', 'equations', 'inequalities']),
+      ...filterQs(ck12, ['ratios', 'rates', 'integers']),
+    ],
+
+    // ── Science Tracks ──────────────────────────────────────
+    'scienceEarlyYears': filterQs(ck12, ['nature', 'animals', 'plants', 'seasons']),
+    'scienceYear1': filterQs(ck12, ['weather', 'habitat', 'living things']),
+    'scienceYear2': filterQs(ck12, ['matter', 'forces', 'magnets']),
+    'scienceYear3': filterQs(ck12, ['solar system', 'earth', 'rocks']),
+    'scienceYear4': filterQs(ck12, ['ecosystems', 'energy', 'light']),
+    'scienceYear5': filterQs(ck12, ['human body', 'cells', 'genetics']),
+    'scienceYear6': filterQs(ck12, ['chemistry', 'physics', 'electricity']),
+
+    'col-3rd-grade-math': makeCol3rdGradeMathQuiz(),
+    'col-4th-grade-math': makeCol4thGradeMathQuiz(),
+    'col-5th-grade-math': makeCol5thGradeMathQuiz(),
+    'col-6th-grade-math': makeCol6thGradeMathQuiz(),
+    'col-eureka-math-foundations-3rd-8th-grade': makeEurekaMathFoundations38Quiz(),
+    'col-eureka-math-3rd-8th-grade': makeEurekaMath38Quiz(),
+    
+    'khanacademy': khan,
+    'ck12': ck12,
+
+    primary: [
+      makeSimpleQuestion(12001, 'Primary', 'Number Reef', 'Friendly fractions',
       'Which fraction is the largest?',
       '3/4',
       [
@@ -124,5 +182,6 @@ export function buildPrimaryQuestionCatalog(): Record<string, Question[]> {
     { id: 12913, chapter: 'Money Cove', title: 'Need or want', prompt: 'Which is more likely to be a need?', correct: 'Food', wrong: [['A gold crown', 'That is more of a want.', 'Needs are basics for living.'], ['A laser scooter', 'That is not a basic necessity.', 'Choose the essential item.'], ['A pile of glitter', 'That is not a survival need.', 'Needs come before extras.']] },
     { id: 12914, chapter: 'Money Lagoon', title: 'Counting coins', prompt: 'Two dimes are worth:', correct: '20 cents', wrong: [['2 cents', 'A dime is worth 10 cents, not 1.', 'Add 10 + 10.'], ['12 cents', 'That mixes values incorrectly.', 'Use the value of each dime.'], ['50 cents', 'That is too high.', 'Two dimes make twenty cents.']] },
   ]),
+    ...buildKolibriQuestionCatalog(),
   }
 }

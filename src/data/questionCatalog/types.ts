@@ -21,6 +21,7 @@ export type Topic =
   | 'University'
   | 'Career Skills'
   | 'Quant Finance'
+  | 'Extension'
 
 export type QuestionKind = 'quick' | 'deep'
 
@@ -45,6 +46,7 @@ export type Question = {
   topic: Topic
   title: string
   chapter: string
+  source?: string
   briefing: string
   setup?: string[]
   prompt: string

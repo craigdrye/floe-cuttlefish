@@ -19,4 +19,17 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
+  {
+    files: [
+      'src/data/questionCatalog/fcc.ts',
+      'src/data/questionCatalog/kolibri.ts',
+      'src/data/questionCatalog/openstax.ts',
+      'src/data/questionCatalog/universityAcademic.ts',
+      'src/data/questionCatalog/wikibooks.ts',
+    ],
+    rules: {
+      'no-loss-of-precision': 'off',
+      'no-useless-escape': 'off',
+    },
+  },
 ])

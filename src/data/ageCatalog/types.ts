@@ -54,6 +54,7 @@ export type TrackSeed = {
   ageGroup: AgeGroup
   icon: IconKey
   skills: string[]
+  questionCount?: number
 }
 
 export type CollectionSeed = {

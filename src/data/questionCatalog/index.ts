@@ -41,6 +41,14 @@ const highAdvancedTrackIds = new Set([
   'alevelHistory',
   'alevelEnglish',
   'alevelComputerScience',
+  'biology_2e',
+  'psychology_2e',
+  'us_history',
+  'principles_economics_3e',
+  'basic_javascript',
+  'basic_html_and_html5',
+  'mathematics_extensions',
+  'ib_history',
 ])
 
 const highFunTrackIds = new Set([
@@ -135,6 +143,14 @@ export async function loadQuestionCatalog(catalogKey: string) {
     case 'career': {
       const module = await import('./career')
       return module.buildCareerQuestionCatalog()
+    }
+    case 'kolibri': {
+      const module = await import('./kolibri')
+      return module.buildKolibriQuestionCatalog()
+    }
+    case 'openstax': {
+      const module = await import('./openstax')
+      return module.buildOpenStaxQuestionCatalog()
     }
     default:
       return {}

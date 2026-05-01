@@ -224,6 +224,16 @@ export function defaultQuestionScaffold(topic: Topic, title: string, prompt: str
       fieldNote: 'Quant finance questions test both your mathematical rigor and your ability to apply it practically.',
       mentorHint: 'What is the fundamental mathematical or financial principle being tested here?',
     },
+    'Extension': {
+      briefing: 'This is an advanced extension topic. It requires rigorous logical steps or specialized knowledge beyond the core curriculum.',
+      setup: [
+        `You are working on "${title}".`,
+        'Work through the logic one step at a time.',
+        'Do not skip steps or assume common-sense shortcuts; extension topics reward precise reasoning.',
+      ],
+      fieldNote: 'Extension questions build on core skills by adding complexity or removing obvious constraints.',
+      mentorHint: 'Break the problem into its smallest logical parts.',
+    },
   }
 
   return byTopic[topic]
@@ -257,6 +267,7 @@ export function makeSimpleQuestion(
   correct: string,
   wrong: [string, string, string][],
   lesson?: string,
+  source?: string,
 ): Question {
   const scaffold = defaultQuestionScaffold(topic, title, prompt)
   return {
@@ -264,6 +275,7 @@ export function makeSimpleQuestion(
     kind: 'quick',
     topic,
     chapter,
+    source,
     title,
     briefing: scaffold.briefing,
     setup: scaffold.setup,
@@ -287,6 +299,7 @@ export function makeQuestionBank(
     correct: string
     wrong: [string, string, string][]
     lesson?: string
+    source?: string
   }>,
 ): Question[] {
   return definitions.map((definition) =>
@@ -299,6 +312,7 @@ export function makeQuestionBank(
       definition.correct,
       definition.wrong,
       definition.lesson,
+      definition.source,
     ),
   )
 }
@@ -316,6 +330,7 @@ export function buildCycledMathQuiz(
     mentorHint: string
     correct: string
     wrong: [string, string, string][]
+    source?: string
   }>,
 ) {
   return Array.from({ length: 50 }, (_, index) => {
@@ -326,6 +341,7 @@ export function buildCycledMathQuiz(
       kind: index % 10 === 9 ? 'deep' : 'quick',
       topic: 'Mathematics',
       chapter: blueprint.chapter,
+      source: blueprint.source,
       title: `${blueprint.title} #${cycle}`,
       briefing,
       setup: blueprint.setup,
