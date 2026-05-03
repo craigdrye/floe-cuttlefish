@@ -7,7 +7,6 @@ import { universityCoreTracks, universityCollectionGroups, universityStageBucket
 export type { AgeGroup, IconKey, CollectionSeed, StageDetail, StageBucketMap, TrackSeed } from './types'
 
 export const ageOptions: { id: AgeGroup; label: string }[] = [
-  { id: 'preschool', label: 'Pre-school' },
   { id: 'primary', label: 'Primary' },
   { id: 'high', label: 'High school' },
   { id: 'university', label: 'University' },

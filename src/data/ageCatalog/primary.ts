@@ -226,17 +226,6 @@ export const primaryCoreTracks: TrackSeed[] = [
     icon: 'code',
     skills: ['Sequencing', 'Loops', 'Logic'],
   },
-  {
-    id: 'moneyBasics',
-    title: 'Money Basics',
-    subtitle: 'Coins, notes, simple totals, and the concept of saving/spending.',
-    status: 'playable',
-    accent: '#6366f1',
-    discipline: 'Tech & Life',
-    ageGroup: 'primary',
-    icon: 'dollar-sign',
-    skills: ['Currency', 'Totals', 'Saving'],
-  },
   // ── Preschool & Discovery Tracks ─────────────────────────
   {
     id: 'socialEmotionalLearning',
@@ -493,7 +482,6 @@ export const primaryCollectionGroups: CollectionSeed[] = [
     skills: ['Coding', 'Money', 'Skills'],
     titles: [
       'Coding Basics',
-      'Money Basics',
     ],
   },
 ]
@@ -522,7 +510,6 @@ export const primaryStageBuckets: StageBucketMap = {
     'Early math review',
     'Word Builders',
     'Coding Basics',
-    'Money Basics',
     'Science Discovery: Year 1',
     'Big Questions: Year 1',
     'Dinosaur World',

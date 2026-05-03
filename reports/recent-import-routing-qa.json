@@ -1,0 +1,694 @@
+{
+  "generatedAt": "2026-05-03T06:16:13.648Z",
+  "samplingRule": "Every 50th question by generated import order, plus final question in each file when not already sampled.",
+  "totalQuestions": 1325,
+  "totalSampled": 40,
+  "batches": [
+    {
+      "name": "IMS Tutorials",
+      "filePath": "src/data/questionCatalog/imsTutorialsImported.ts",
+      "course": "Statistics",
+      "questionCount": 92,
+      "sampledCount": 3,
+      "sampledFindingCount": 3,
+      "findingCounts": {
+        "missing context: prompt appears to depend on omitted passage/table/scenario": 1,
+        "weak rationale: lesson repeats correct answer instead of explaining": 3
+      },
+      "fullScanFindingCounts": {
+        "missing context: prompt appears to depend on omitted passage/table/scenario": 5,
+        "weak rationale: lesson repeats correct answer instead of explaining": 92,
+        "answer leakage: prompt contains exact correct answer text": 2,
+        "bad distractors: fewer than two wrong choices": 3,
+        "missing context: references external figure/table/code without enough embedded context": 8
+      },
+      "parseError": null
+    },
+    {
+      "name": "OpenSAT",
+      "filePath": "src/data/questionCatalog/openSatImported.ts",
+      "course": "Mathematics",
+      "questionCount": 401,
+      "sampledCount": 9,
+      "sampledFindingCount": 0,
+      "findingCounts": {},
+      "fullScanFindingCounts": {
+        "missing context: references external figure/table/code without enough embedded context": 12
+      },
+      "parseError": null
+    },
+    {
+      "name": "OpenDSA Algorithms",
+      "filePath": "src/data/questionCatalog/openDsaAlgorithmsImported.ts",
+      "course": "Software",
+      "questionCount": 139,
+      "sampledCount": 4,
+      "sampledFindingCount": 4,
+      "findingCounts": {
+        "missing context: references external figure/table/code without enough embedded context": 1,
+        "bad distractors: duplicate answer choices": 1,
+        "weak rationale: lesson repeats correct answer instead of explaining": 4
+      },
+      "fullScanFindingCounts": {
+        "missing context: references external figure/table/code without enough embedded context": 21,
+        "bad distractors: duplicate answer choices": 3,
+        "weak rationale: lesson repeats correct answer instead of explaining": 139,
+        "malformed prompt: missing or very short prompt": 3
+      },
+      "parseError": "Invalid or unexpected token"
+    },
+    {
+      "name": "OpenDSA Software",
+      "filePath": "src/data/questionCatalog/openDsaSoftwareImported.ts",
+      "course": "Software",
+      "questionCount": 42,
+      "sampledCount": 2,
+      "sampledFindingCount": 2,
+      "findingCounts": {
+        "weak rationale: lesson repeats correct answer instead of explaining": 2
+      },
+      "fullScanFindingCounts": {
+        "weak rationale: lesson repeats correct answer instead of explaining": 42,
+        "malformed prompt: missing or very short prompt": 5
+      },
+      "parseError": "Invalid or unexpected token"
+    },
+    {
+      "name": "OpenDSA Formal Languages",
+      "filePath": "src/data/questionCatalog/openDsaFormalLanguagesImported.ts",
+      "course": "Software",
+      "questionCount": 14,
+      "sampledCount": 2,
+      "sampledFindingCount": 2,
+      "findingCounts": {
+        "weak rationale: lesson repeats correct answer instead of explaining": 2
+      },
+      "fullScanFindingCounts": {
+        "weak rationale: lesson repeats correct answer instead of explaining": 14,
+        "stale fact risk: time-sensitive wording": 1,
+        "missing context: references external figure/table/code without enough embedded context": 1
+      },
+      "parseError": "Invalid or unexpected token"
+    },
+    {
+      "name": "OpenDSA Bridge Course",
+      "filePath": "src/data/questionCatalog/openDsaBridgeCourseImported.ts",
+      "course": "Software",
+      "questionCount": 55,
+      "sampledCount": 3,
+      "sampledFindingCount": 3,
+      "findingCounts": {
+        "weak rationale: lesson repeats correct answer instead of explaining": 3
+      },
+      "fullScanFindingCounts": {
+        "weak rationale: lesson repeats correct answer instead of explaining": 55,
+        "missing context: references external figure/table/code without enough embedded context": 1
+      },
+      "parseError": null
+    },
+    {
+      "name": "OpenIntro Stats Slides",
+      "filePath": "src/data/questionCatalog/openIntroStatsSlidesImported.ts",
+      "course": "Statistics",
+      "questionCount": 27,
+      "sampledCount": 2,
+      "sampledFindingCount": 2,
+      "findingCounts": {
+        "weak rationale: lesson repeats correct answer instead of explaining": 2
+      },
+      "fullScanFindingCounts": {
+        "weak rationale: lesson repeats correct answer instead of explaining": 27,
+        "stale fact risk: time-sensitive wording": 1,
+        "missing context: references external figure/table/code without enough embedded context": 3,
+        "answer leakage: prompt contains exact correct answer text": 1
+      },
+      "parseError": null
+    },
+    {
+      "name": "OpenTrivia Brain Teasers",
+      "filePath": "src/data/questionCatalog/openTriviaBrainTeasersImported.ts",
+      "course": "Fun",
+      "questionCount": 203,
+      "sampledCount": 6,
+      "sampledFindingCount": 6,
+      "findingCounts": {
+        "answer leakage: prompt contains exact correct answer text": 2,
+        "weak rationale: lesson repeats correct answer instead of explaining": 6,
+        "routing: OpenTrivia Brain Teasers bank label is not Career, though catalog wiring should target brainBurners": 6
+      },
+      "fullScanFindingCounts": {
+        "answer leakage: prompt contains exact correct answer text": 13,
+        "weak rationale: lesson repeats correct answer instead of explaining": 203,
+        "routing: OpenTrivia Brain Teasers bank label is not Career, though catalog wiring should target brainBurners": 203,
+        "bad distractors: fewer than two wrong choices": 44,
+        "stale fact risk: time-sensitive wording": 7,
+        "missing context: references external figure/table/code without enough embedded context": 1
+      },
+      "parseError": null
+    },
+    {
+      "name": "OpenTrivia Geography",
+      "filePath": "src/data/questionCatalog/openTriviaGeographyImported.ts",
+      "course": "AP",
+      "questionCount": 352,
+      "sampledCount": 9,
+      "sampledFindingCount": 9,
+      "findingCounts": {
+        "weak rationale: lesson repeats correct answer instead of explaining": 9,
+        "routing: Geography trivia is routed to AP rather than a geography/world knowledge track": 9
+      },
+      "fullScanFindingCounts": {
+        "weak rationale: lesson repeats correct answer instead of explaining": 352,
+        "routing: Geography trivia is routed to AP rather than a geography/world knowledge track": 340,
+        "missing context: references external figure/table/code without enough embedded context": 6,
+        "stale fact risk: time-sensitive wording": 2
+      },
+      "parseError": null
+    }
+  ],
+  "findingCounts": {
+    "missing context: prompt appears to depend on omitted passage/table/scenario": 1,
+    "weak rationale: lesson repeats correct answer instead of explaining": 31,
+    "missing context: references external figure/table/code without enough embedded context": 1,
+    "bad distractors: duplicate answer choices": 1,
+    "answer leakage: prompt contains exact correct answer text": 2,
+    "routing: OpenTrivia Brain Teasers bank label is not Career, though catalog wiring should target brainBurners": 6,
+    "routing: Geography trivia is routed to AP rather than a geography/world knowledge track": 9
+  },
+  "fullScanFindingCounts": {
+    "missing context: prompt appears to depend on omitted passage/table/scenario": 5,
+    "weak rationale: lesson repeats correct answer instead of explaining": 924,
+    "answer leakage: prompt contains exact correct answer text": 16,
+    "bad distractors: fewer than two wrong choices": 47,
+    "missing context: references external figure/table/code without enough embedded context": 53,
+    "bad distractors: duplicate answer choices": 3,
+    "malformed prompt: missing or very short prompt": 8,
+    "stale fact risk: time-sensitive wording": 11,
+    "routing: OpenTrivia Brain Teasers bank label is not Career, though catalog wiring should target brainBurners": 203,
+    "routing: Geography trivia is routed to AP rather than a geography/world knowledge track": 340
+  },
+  "sampledFindings": [
+    {
+      "batch": "IMS Tutorials",
+      "filePath": "src/data/questionCatalog/imsTutorialsImported.ts",
+      "course": "Statistics",
+      "sampleIndex": 1,
+      "id": 310001,
+      "chapter": "Data and Study Design",
+      "title": "type of study is this",
+      "prompt": "What type of study is this?",
+      "correct": "Experiment",
+      "wrongCount": 2,
+      "findings": [
+        "missing context: prompt appears to depend on omitted passage/table/scenario",
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "IMS Tutorials",
+      "filePath": "src/data/questionCatalog/imsTutorialsImported.ts",
+      "course": "Statistics",
+      "sampleIndex": 51,
+      "id": 310051,
+      "chapter": "Probability Foundations",
+      "title": "would be a good null hypothesis for the FDA statisticia...",
+      "prompt": "Which would be a good null hypothesis for the FDA statistician examining the drug company's data?",
+      "correct": "Drug A is the same as drug B at treating diabetes.",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "IMS Tutorials",
+      "filePath": "src/data/questionCatalog/imsTutorialsImported.ts",
+      "course": "Statistics",
+      "sampleIndex": 92,
+      "id": 310092,
+      "chapter": "Model-Based Inference",
+      "title": "is the correct interpretation of the coefficient on Ser...",
+      "prompt": "What is the correct interpretation of the coefficient on Service in the linear model which regresses Price on Service, Food, and Decor? ?",
+      "correct": "Given that Food and Decor are in the model, Service is not significant, and we cannot know whether it has effect on modeling Price",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenDSA Algorithms",
+      "filePath": "src/data/questionCatalog/openDsaAlgorithmsImported.ts",
+      "course": "Software",
+      "sampleIndex": 1,
+      "id": 330001,
+      "chapter": "Algorithm Analysis",
+      "title": "Algorithm Analysis Exercise: Multiple choice question 1",
+      "prompt": "Which part of the following code snippet has the highest Big-O notation (O) time complexity?",
+      "correct": "\"a += i;\"",
+      "wrongCount": 2,
+      "findings": [
+        "missing context: references external figure/table/code without enough embedded context",
+        "bad distractors: duplicate answer choices",
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenDSA Algorithms",
+      "filePath": "src/data/questionCatalog/openDsaAlgorithmsImported.ts",
+      "course": "Software",
+      "sampleIndex": 51,
+      "id": 330051,
+      "chapter": "Comparing Algorithms",
+      "title": "pointers: type of copy",
+      "prompt": "This is a still image of the concept map for the term \"pointers\". You can check the actual concept map on the glossary page. When assigning the value of one pointer to another, what type of copy takes place by default?",
+      "correct": "Shallow copy",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenDSA Algorithms",
+      "filePath": "src/data/questionCatalog/openDsaAlgorithmsImported.ts",
+      "course": "Software",
+      "sampleIndex": 101,
+      "id": 330101,
+      "chapter": "Lists and Linked Structures",
+      "title": "OpenDSA List Linked Exercise: Insertion to Current Position",
+      "prompt": "Given a linked list implementation, inserting a new element to the current position takes how long?",
+      "correct": "\\\\Theta(1) time",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenDSA Algorithms",
+      "filePath": "src/data/questionCatalog/openDsaAlgorithmsImported.ts",
+      "course": "Software",
+      "sampleIndex": 139,
+      "id": 330139,
+      "chapter": "Recursion",
+      "title": "Recursion Tracing Exercise: Recursive function nested calls",
+      "prompt": "Consider the following code: public long foo(long x) { if(x == 1 || x == 3) return x; else return x * foo(x-1); } Assuming no possibility of integer overflow, what will be returned by the following call to foo ? foo(foo(3)+foo(4));",
+      "correct": "(15!)/(2!)",
+      "wrongCount": 4,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenDSA Software",
+      "filePath": "src/data/questionCatalog/openDsaSoftwareImported.ts",
+      "course": "Software",
+      "sampleIndex": 1,
+      "id": 331001,
+      "chapter": "Computing Background",
+      "title": "Introduction Question Efficiency",
+      "prompt": "A tool for measuring the efficiency of an algorithm or problem is:",
+      "correct": "Algorithm analysis",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenDSA Software",
+      "filePath": "src/data/questionCatalog/openDsaSoftwareImported.ts",
+      "course": "Software",
+      "sampleIndex": 42,
+      "id": 331042,
+      "chapter": "Intro Software Design",
+      "title": "Arrays",
+      "prompt": "Consider the following array declaration:",
+      "correct": "The array has a length of 4.",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenDSA Formal Languages",
+      "filePath": "src/data/questionCatalog/openDsaFormalLanguagesImported.ts",
+      "course": "Software",
+      "sampleIndex": 1,
+      "id": 333001,
+      "chapter": "Formal Languages and Automata",
+      "title": "Associativity",
+      "prompt": "Consider the following grammars: Grammar 1: E → T | E ^ T T → I | ( E ) Grammar 2: E → T | T ^ E T → I | ( E ) Grammar 3: E → I | E ^ E | ( E) If ^ represents exponentiation, how many of these grammars force 2^3^2 to evaluate to 512?",
+      "correct": "1",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenDSA Formal Languages",
+      "filePath": "src/data/questionCatalog/openDsaFormalLanguagesImported.ts",
+      "course": "Software",
+      "sampleIndex": 14,
+      "id": 333014,
+      "chapter": "Functional Programming and Lambda Calculus",
+      "title": "Using split to sort",
+      "prompt": "Consider the following function definition:",
+      "correct": "Exactly two of lines 6, 7, and 8 have to change.",
+      "wrongCount": 4,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenDSA Bridge Course",
+      "filePath": "src/data/questionCatalog/openDsaBridgeCourseImported.ts",
+      "course": "Software",
+      "sampleIndex": 1,
+      "id": 335001,
+      "chapter": "Software Engineering Bridge",
+      "title": "Checkpoint 1",
+      "prompt": "One of the key features of Object-oriented programming is encapsulation. Because of encapsulation, we generally have _________ instance variables and _____________ methods.",
+      "correct": "private, public",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenDSA Bridge Course",
+      "filePath": "src/data/questionCatalog/openDsaBridgeCourseImported.ts",
+      "course": "Software",
+      "sampleIndex": 51,
+      "id": 335051,
+      "chapter": "Algorithms and Complexity",
+      "title": "Recursion Checkpoint 4",
+      "prompt": "Approximately how many recursive calls would our Towers of Hanoi pseudo code algorithm make given a tower with 11 disks?",
+      "correct": "2^11",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenDSA Bridge Course",
+      "filePath": "src/data/questionCatalog/openDsaBridgeCourseImported.ts",
+      "course": "Software",
+      "sampleIndex": 55,
+      "id": 335055,
+      "chapter": "Core Data Structures",
+      "title": "Checkpoint 3",
+      "prompt": "If the top of the stack is the last element in the array what is the complexity for pop() in big Oh notation?",
+      "correct": "O(1)",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenIntro Stats Slides",
+      "filePath": "src/data/questionCatalog/openIntroStatsSlidesImported.ts",
+      "course": "Statistics",
+      "sampleIndex": 1,
+      "id": 332001,
+      "chapter": "Data Basics and Study Design",
+      "title": "What type of variable is a telephone area code?",
+      "prompt": "What type of variable is a telephone area code?",
+      "correct": "categorical",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenIntro Stats Slides",
+      "filePath": "src/data/questionCatalog/openIntroStatsSlidesImported.ts",
+      "course": "Statistics",
+      "sampleIndex": 27,
+      "id": 332027,
+      "chapter": "Multiple Regression",
+      "title": "The p-value for age is 0.01. What does this indicate?",
+      "prompt": "The p-value for age is 0.01. What does this indicate?",
+      "correct": "If we keep all other variables in the model, there is strong evidence that professor's age is associated with their rating.",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Brain Teasers",
+      "filePath": "src/data/questionCatalog/openTriviaBrainTeasersImported.ts",
+      "course": "Fun",
+      "sampleIndex": 1,
+      "id": 334001,
+      "chapter": "Brain Teasers",
+      "title": "OpenTrivia Brain Teaser 1",
+      "prompt": "A farmer had 12 sheep and 3 cows. All of the animals except 9 sheep died. How many animals did he have left in his farm?",
+      "correct": "9 sheep",
+      "wrongCount": 3,
+      "findings": [
+        "answer leakage: prompt contains exact correct answer text",
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: OpenTrivia Brain Teasers bank label is not Career, though catalog wiring should target brainBurners"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Brain Teasers",
+      "filePath": "src/data/questionCatalog/openTriviaBrainTeasersImported.ts",
+      "course": "Fun",
+      "sampleIndex": 51,
+      "id": 334051,
+      "chapter": "Brain Teasers",
+      "title": "OpenTrivia Brain Teaser 51",
+      "prompt": "Suppose youre taking a multiple-choice quiz. One question has three choices - A, B, C. You do not know the answer and guess A. The instructor then announces that C is incorrect. Should you switch to B before turning in your paper?",
+      "correct": "Yes, this should help",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: OpenTrivia Brain Teasers bank label is not Career, though catalog wiring should target brainBurners"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Brain Teasers",
+      "filePath": "src/data/questionCatalog/openTriviaBrainTeasersImported.ts",
+      "course": "Fun",
+      "sampleIndex": 101,
+      "id": 334101,
+      "chapter": "Brain Teasers",
+      "title": "OpenTrivia Brain Teaser 101",
+      "prompt": "There is a branch with 10 birds on it. I shot 2 of them and then 1 more. How many birds are left on the branch?",
+      "correct": "0",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: OpenTrivia Brain Teasers bank label is not Career, though catalog wiring should target brainBurners"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Brain Teasers",
+      "filePath": "src/data/questionCatalog/openTriviaBrainTeasersImported.ts",
+      "course": "Fun",
+      "sampleIndex": 151,
+      "id": 334151,
+      "chapter": "Brain Teasers",
+      "title": "OpenTrivia Brain Teaser 151",
+      "prompt": "You are on a ship and over the side hangs a rope ladder with one foot rungs. The tide rises a one foot per hour. At the end of five hours, how much of the ladder will remain above the water assuming that 12 rungs were above the water when the tide began to rise?",
+      "correct": "12 rungs",
+      "wrongCount": 3,
+      "findings": [
+        "answer leakage: prompt contains exact correct answer text",
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: OpenTrivia Brain Teasers bank label is not Career, though catalog wiring should target brainBurners"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Brain Teasers",
+      "filePath": "src/data/questionCatalog/openTriviaBrainTeasersImported.ts",
+      "course": "Fun",
+      "sampleIndex": 201,
+      "id": 334201,
+      "chapter": "Brain Teasers",
+      "title": "OpenTrivia Brain Teaser 201",
+      "prompt": "There are two kinds of people who live on a mysterious island. They are the so-called Honestants, who always speak the truth, and the others are the Swindlecants, who always lie.",
+      "correct": "No",
+      "wrongCount": 2,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: OpenTrivia Brain Teasers bank label is not Career, though catalog wiring should target brainBurners"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Brain Teasers",
+      "filePath": "src/data/questionCatalog/openTriviaBrainTeasersImported.ts",
+      "course": "Fun",
+      "sampleIndex": 203,
+      "id": 334203,
+      "chapter": "Brain Teasers",
+      "title": "OpenTrivia Brain Teaser 203",
+      "prompt": "There are these two country farmers milking their cows. While the one farmer is milking, a fly zooms into the cows ear. The cow starts jumping around, shaking its head and mooing. He tries to steady the cow and suddenly it settles down. He looks down and sees the",
+      "correct": "in one ear and out the udder",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: OpenTrivia Brain Teasers bank label is not Career, though catalog wiring should target brainBurners"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Geography",
+      "filePath": "src/data/questionCatalog/openTriviaGeographyImported.ts",
+      "course": "AP",
+      "sampleIndex": 1,
+      "id": 336001,
+      "chapter": "World Capitals",
+      "title": "What is the capital of Afghanistan?",
+      "prompt": "What is the capital of Afghanistan?",
+      "correct": "Kabul",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: Geography trivia is routed to AP rather than a geography/world knowledge track"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Geography",
+      "filePath": "src/data/questionCatalog/openTriviaGeographyImported.ts",
+      "course": "AP",
+      "sampleIndex": 51,
+      "id": 336051,
+      "chapter": "Rivers and Oceans",
+      "title": "OpenTrivia Geography 51",
+      "prompt": "In Greek mythology, this island is the legendary birthplace of the goddess of beauty, love, and passion, the charming Aphrodite, where according to the legend, she emerged from the sea foam.",
+      "correct": "Cyprus",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: Geography trivia is routed to AP rather than a geography/world knowledge track"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Geography",
+      "filePath": "src/data/questionCatalog/openTriviaGeographyImported.ts",
+      "course": "AP",
+      "sampleIndex": 101,
+      "id": 336101,
+      "chapter": "Rivers and Oceans",
+      "title": "Near what sea was the ancient city of Troy located ?",
+      "prompt": "Near what sea was the ancient city of Troy located ?",
+      "correct": "Aegean",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: Geography trivia is routed to AP rather than a geography/world knowledge track"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Geography",
+      "filePath": "src/data/questionCatalog/openTriviaGeographyImported.ts",
+      "course": "AP",
+      "sampleIndex": 151,
+      "id": 336151,
+      "chapter": "Countries and Regions",
+      "title": "OpenTrivia Geography 151",
+      "prompt": "The citizens of which country rejected the idea of joining the EU in 1972 and again in 1994?",
+      "correct": "Norway",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: Geography trivia is routed to AP rather than a geography/world knowledge track"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Geography",
+      "filePath": "src/data/questionCatalog/openTriviaGeographyImported.ts",
+      "course": "AP",
+      "sampleIndex": 201,
+      "id": 336201,
+      "chapter": "Countries and Regions",
+      "title": "OpenTrivia Geography 201",
+      "prompt": "During Roman occupation, this city, popular nowadays as the Heaven of Romance, was called Lutetia.",
+      "correct": "Paris",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: Geography trivia is routed to AP rather than a geography/world knowledge track"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Geography",
+      "filePath": "src/data/questionCatalog/openTriviaGeographyImported.ts",
+      "course": "AP",
+      "sampleIndex": 251,
+      "id": 336251,
+      "chapter": "Physical Geography",
+      "title": "OpenTrivia Geography 251",
+      "prompt": "The Cave of Melissani is among the most popular geological landmarks of which Greek island?",
+      "correct": "Kefallonia",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: Geography trivia is routed to AP rather than a geography/world knowledge track"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Geography",
+      "filePath": "src/data/questionCatalog/openTriviaGeographyImported.ts",
+      "course": "AP",
+      "sampleIndex": 301,
+      "id": 336301,
+      "chapter": "Physical Geography",
+      "title": "OpenTrivia Geography 301",
+      "prompt": "This African desert, famous for its enormous sand dunes, is considered the oldest desert in the world, having endured its current arid conditions for at least 80 million years.",
+      "correct": "Namib Desert",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: Geography trivia is routed to AP rather than a geography/world knowledge track"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Geography",
+      "filePath": "src/data/questionCatalog/openTriviaGeographyImported.ts",
+      "course": "AP",
+      "sampleIndex": 351,
+      "id": 336351,
+      "chapter": "World Capitals",
+      "title": "OpenTrivia Geography 351",
+      "prompt": "What is the name of the largest city and capital of Sweden?",
+      "correct": "Stockholm",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: Geography trivia is routed to AP rather than a geography/world knowledge track"
+      ]
+    },
+    {
+      "batch": "OpenTrivia Geography",
+      "filePath": "src/data/questionCatalog/openTriviaGeographyImported.ts",
+      "course": "AP",
+      "sampleIndex": 352,
+      "id": 336352,
+      "chapter": "Countries and Regions",
+      "title": "OpenTrivia Geography 352",
+      "prompt": "What is the capital city of the Federative Republic of Brazil?",
+      "correct": "Brasilia",
+      "wrongCount": 3,
+      "findings": [
+        "weak rationale: lesson repeats correct answer instead of explaining",
+        "routing: Geography trivia is routed to AP rather than a geography/world knowledge track"
+      ]
+    }
+  ],
+  "parseErrors": [
+    {
+      "batch": "OpenDSA Algorithms",
+      "filePath": "src/data/questionCatalog/openDsaAlgorithmsImported.ts",
+      "error": "Invalid or unexpected token"
+    },
+    {
+      "batch": "OpenDSA Software",
+      "filePath": "src/data/questionCatalog/openDsaSoftwareImported.ts",
+      "error": "Invalid or unexpected token"
+    },
+    {
+      "batch": "OpenDSA Formal Languages",
+      "filePath": "src/data/questionCatalog/openDsaFormalLanguagesImported.ts",
+      "error": "Invalid or unexpected token"
+    }
+  ]
+}

@@ -1,0 +1,1441 @@
+{
+  "source": "Pfizer Pharma Hands-on Exercises",
+  "license": "CC BY 4.0",
+  "repository": "https://github.com/pfizer-opensource/pharma-hands-on-exercises.git",
+  "collectionCount": 9,
+  "questionCount": 72,
+  "items": [
+    {
+      "source_id": "pharma-hands-on::miniproject1::1",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 1,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "The following steps will load the packages tidyverse, rio, skimr and htmlTable. You need to load packages before using the functions and content in them, and it's best to do so at the beginning of a program / script. Run the chunk below by clicking on the green arrow to the right of the code chunk.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 1"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject1::2",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 2,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "There are numerous ways and packages to read in the data in R. For instance, the haven package has a function called read_xpt() that allows you to make an R data object converting from a \\*.xpt file. The readr package provides a fast and friendly way to read rectangular data from delimited files, such as comma-separated values (CSV) and tab-separated values (TSV). The readxl package makes it easy to get data out of Excel and into R. The functions that allow you to read in the data regardless of the package tend to have the first argument to be the data path, however it is always important to read the documentation before using a new package or a function. In our mini-projects we are going to use the rio package to read in the data. rio supports a variety of different file formats for import and export and provides streamlined data import. Specifically, rio uses the file extension of a file name to determine what kind of file it is so the only function you need to remember to read in the data file using rio is import(). Read in the adsl data from the GitHub location (https://github.com/phuse-org/phuse-scripts/raw/master/data/adam/cdisc/adsl.xpt) and assign this to an object in R using the assignment operator <-. Make sure that the URL location is a character string by enclosing it in \" \". Paste your download path location above within the \"\" argument in the code below, then run the chunk using the green arrow.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 2"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject1::3",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 3,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "To view the first 10 rows of the R object adsl, you can just simply type the dataset name. Type in adsl into the chunk below and run using the green arrow: Note that the adsl data object has 254 rows and 48 columns.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 3"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject1::4",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 4,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "Next, we'll use the R function sapply to view the type of each column in the dataset - this will show us whether the columns are character, numeric, integer, double precision, factor etc. The class function tells us the type of an R object. The sapply function applies the same function class to each column of the data and returns the data type in a vector.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 4"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject1::5",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 5,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "If you want to check (or test) the type (or class) of an individual variable you can is the functions is.numeric, is.character, etc. To reference an individual column of a data object, you can use the construct object$variable. [Note that R is case sensitive! When typing names of R objects, variables or datasets, ensure that the capitalisation matches what is shown.]{.smallcaps} So \"AGE\" is not the same as \"age\" or \"Age\". Note that variable names below are capitalised. Let's check whether the AGE variable is numeric and whether RACE is character. As these functions",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 5"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject1::6",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 6,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "There are many R packages that will help us do tasks with R. The skimr package is one of these that quickly displays helpful summary information about a dataset - the number of rows, columns, missing data, column types, distribution of values in data columns. Note: You may see Warning messages as part of the output. If some columns have missing values, you can use these warning messages to check that the data has the correct formats and that columns have been parsed correctly e.g. columns with coded values = 0,1 may be read as numeric. Is this how we want them to remain, or would we want to interpret these as factors?",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 6"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject1::7",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 7,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "Now create a new data object adsl_eff for Efficacy Analysis population. We need to filter the adsl data object where the variable EFFFL has the value Y. To test for equivalence in R we need to use double equals ==. Type in the adsl object below as the first argument (.data=) of the filter function. After filtering out data where EFFFL == 'Y' we now have 234 rows and 48 columns. Again, recall that R is case-sensitive. Most variable names in SAS datasets are uppercase, so we need to ensure that the variable name is UPPERCASE i.e. EFFFL and not Efffl etc. Also, since the value is character, we need to ensure that the case of the equivalent value matches the expected result i.e. Y and not y or Yes and that it is enclosed in quotes \" \".",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 7"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject1::8",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 8,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "Sort the adsl_eff data object by the USUBJID variable. Type in the variable you want to sort by after the first argument. In the tidyverse package in R, there is a pipe operator %>% that allows us to combine a number of steps. The pipe passes the output object from the previous step as the value to be used for the first argument of the next function. So we combine the previous steps into the following data pipeline: When we use the %>% operator, we read this as \"...then...\". So the above pipeline is read as \"(Create an object called) adsl_eff which is assigned by (starting with the object) adsl ...then... filter (where EFFFL is\"Y\") ...then... arrange (by USUBJID).\" The pipe operator allows us to combine steps where the intermediate objects aren't really worth keeping as named objects in R. Notice that when we use the pipe operator, we're no longer explicitly using the .data = argument of the following function. This is because the %>% passes the previous object through as the value of the first argument by default.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 8"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject1::9",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 9,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "Try the following to see a skim summary of adsl_eff that shows that we now have 234 observations where EFFFL=='Y'",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 9"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject1::10",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 10,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "Sort the adsl_eff data by TRT01A, USUBJID variables and create a new dataset adsl_eff_srt You can use the previous code (HINT: arrange( )) to sort the data.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 10"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject1::11",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 11,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "The select function will select out only the specified columns of a data object. Select only the following variables from the adsl_saf_srt data object: USUBJID, AGE, AGEU, SEX, RACE, ETHNIC, TRT01A. Copy and paste this list of variables into the select statement. Now the adsl_eff_srt data object still has 234 rows, but only 7 columns.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 11"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject1::12",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 12,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "Generally, demography listings will not directly use the variable names from the dataset. Hence, add another step to change column names. The names() function assigns names of the nominated object by passing a vector of characters / names. We create a vector using the collection function c( ) and a comma-separated list of names. Use the code below to change the names of the variables in the adsl_saf_srt function to \"Subject ID\",\"Age\",\"AgeUnits\",\"Sex\",\"Race\",\"Ethnicity\",\"Treatment\".",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 12"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject1::13",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 13,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "We can now generate a listing of the data. R has several packages that will allow us to display tables / print listings. In Rmarkdown documents like this one, simply printing the output will create a nice HTML representation of the data. Add in the data object name below to display it in the Rmarkdown document. But to save this output for later use, you'll want to use one of these packages to create an output file with the data listing. Each table package has pros and cons, but for now let's use the htmlTable package to display an HTML listing. Add in the data object name below to show the htmlTable output. The additional arguments here ensure that the table formats nicely. These are beyond the scope of this first project. Try changing the argument align = \"l\" and try options align = \"c\" or align = \"r\" to align the column content to left, centre or right respectively.",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 13"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject1::14",
+      "collection_id": "pharma-hands-on::miniproject1",
+      "project_slug": "miniproject1",
+      "source_file": "MiniProject1.Rmd",
+      "step_number": 14,
+      "title": "Mini-project 1 - Reading and exploring datasets",
+      "prompt_text": "Next, save this .rmd file to your desktop and then click on the \"Knit\" button at the top of the file to render an HTML version of this document.",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 1 - Reading and exploring datasets",
+        "miniproject1",
+        "step 14"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject10::1",
+      "collection_id": "pharma-hands-on::miniproject10",
+      "project_slug": "miniproject10",
+      "source_file": "MiniProject10.Rmd",
+      "step_number": 1,
+      "title": "Mini-project 10 - Debugging",
+      "prompt_text": "Turn it off and turn it on again - clear the environment",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 10 - Debugging",
+        "miniproject10",
+        "step 1"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject10::2",
+      "collection_id": "pharma-hands-on::miniproject10",
+      "project_slug": "miniproject10",
+      "source_file": "MiniProject10.Rmd",
+      "step_number": 2,
+      "title": "Mini-project 10 - Debugging",
+      "prompt_text": "Understand the environment - global and local 1. Looking at things in the Environment",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 10 - Debugging",
+        "miniproject10",
+        "step 2"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject10::3",
+      "collection_id": "pharma-hands-on::miniproject10",
+      "project_slug": "miniproject10",
+      "source_file": "MiniProject10.Rmd",
+      "step_number": 3,
+      "title": "Mini-project 10 - Debugging",
+      "prompt_text": "debugonce() , browser() and RStudio IDE break points.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 10 - Debugging",
+        "miniproject10",
+        "step 3"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject10::4",
+      "collection_id": "pharma-hands-on::miniproject10",
+      "project_slug": "miniproject10",
+      "source_file": "MiniProject10.Rmd",
+      "step_number": 4,
+      "title": "Mini-project 10 - Debugging",
+      "prompt_text": "traceback(), options(error = recover), Review this video if you get stuck:\\ https://www.youtube.com/watch?v=vgYS-F8opgE ## A clean Environment is a good thing Over time your collection of STUFF in R will grow. The problem is that if you don't \"spring clean\" and tidy things out then eventually something in your collection of objects in R will cause a problem with your current work... You may think that you are working just with today's data and a vector that you've created, but if something went wrong then maybe you're picking up a version of that object (with the same name) that existed from a previous session. Which is kind of dangerous. The easiest way to spring clean your R session is to clean out the Environment and restart R. !R Global Environment with four objects: Data called \"adsl\", vectors \"ALTmax\" and \"ALTmin\" and a function called \"uniqueVal\" !R Global Environment with popup dialogue that appears when you click on the \"broom\" icon This will clean out the Environment and start \"fresh\". REMEMBER TO SAVE ANYTHING YOU MIGHT NEED TO KEEP BEFORE YOU DO THIS!! For reasons of reproducibility, it's a good idea to start with a \"clean\" environment whenever you start R or run a script \"start to finish\" to create output. This will ensure that everything you need to run the script is contained within it, and that you're not relying on objects being present in the Environment to make it run. When I start an R session, I like to start with this \"clean page\". If you go to the General tab of the \"Global Options\" in RStudio IDE there's an option which never reloads existing workspaces (Environment) when you start R and never asks if you would like to save the workspace on exit. If you really want to be clean and tidy (and reproducible) then you should uncheck the \"Restore\" option and select \"Never\" for the \"Save\" option. This ensures that every R session is completely clean when you start it. Every time. !Global Options (in RStudio IDE) to neither save nor restore objects in a Workspace ## Turn it off then turn it on again. The \"broom\" button to clear the Environment does a lot of good, but it doesn't actually clear out everything. A few things that aren't removed: - library( ) calls - R options( ) - System environment settings i.e. Sys.setenv( ) - attaching datasets with attach( ) To make sure that your code is reproducible, you need to ensure that all the libraries you use are referenced / called using library() - this is usually done at the top of a script, so that other people can check that the libraries they will need are installed for them. The way to ensure that your script is reproducible is to restart R. In the RStudio IDE you can do this from the \"Session\" menu, or using the shortcut keys CTRL+SHIFT+F10. !Restart R from the RStudio Session menu or shortcut key CTRL+SHIFT+F10 This advice to restart R is also particularly true before you install packages (and after!). Installing packages in the middle of an R session is like changing the tires of a bus when it's travelling down the motorway... If R is behaving \"weird\" then often it's a good to restart the session and try again... ## Understanding Environments The Global Environment (which is the collection of objects you see in the panel marked \"Environment\" in R) is the collection of items that you can look at and use in your R script and R code. But other environments can exist or be created. One place this typically happens is inside a function. Functions have their own environment - so objects you create within a function call (vectors, data) are defined ONLY within the scope of the function. When you write and run a function, it creates an execution environment where new objects can be defined and used. But when the function completes, all of those objects are discarded. The purpose of those objects is only to create the final result to be passed back out of the function. - Typically, you should ONLY pass the final result object out of a function. DO NOT put objects created in functions into the Global Environment. - It is typically bad practice to refer to Global Environment objects within a function UNLESS these are passed in via the function arguments. - You should not rely on the person using your function to have specific items in their environment when they call it. - It is typically bad practice to change options or set the working directory within a function. Let's create a really simple function to illustrate this. Ensure you have cleared the environment using the broom button, or restarted R before you start. Before you run this, what is the result of myFunction(2)? Now try this code. Before you run it, what is the result of myFunction(2)? And what is the value of a now? ## debugonce() How can you \"see\" the value of a within the function? When you run this, something weird happens (in fact it's perfectly normal, it's just that you may never have seen this before...). Look at the Environment now. You'll see that instead of the Global Environment, you're now looking at the environment of the function myFunction(). x has the value 2. The Console now has additional buttons showing \"Next\", \"Continue\" and \"Stop\" and some other buttons. The \"arrow into { }\" means that you want R to step forward INTO the next function. The \"arrow with lines\" means that you want R to complete the rest of the function. The Console prompt now also says \"Browse[2]\". RStudio has also opened the function myFunction code in a separate window and there's a little green arrow showing you approximately where you are in the function.\\ !Showing the RStudio IDE windows that appear when the user runs \\debugonce\\ on the function called \"myFunction\". What you can do from here is to run individual lines in the function, submit commands and create NEW objects (or replace values) in the function Environment.\\ If you step through each line of the function, you'll see that the value assigned to a is 3 within the function Environment. As you step through each line of the function you can see new objects being defined and used from the Environment associated with the function. Within the Environment tab in RStudio you can flip between the function Environment myFunction() and the Global Environment to see how a is different inside and outside the function, and that a is defined in two places... ## Inception - down the rabbit hole If you have a function that calls a function, what does the debug mode show you? Let's define a new function which takes the results of myFunction and then squares the result. When you run the following code, don't forget to specify debugonce(myFunction_add3_and_squareit) at the Console first. Otherwise the code will run all the way through... You will need to use the button in the debug mode of the Console to \"step into\" myFunction from the myFunction_add3_and_squareit function call. This allows you to go deeper down into lower level functions and troubleshoot what is happening at lower levels. VERY useful if you have functions that call functions that call functions. Don't forget: Time goes by much more slowly the deeper you get... ### Don't get trapped in Debug mode! When the debugger opens you'll be in the special \"debug\" mode in the Console. This will help you step through the function line by line, or step into lower level functions if your function calls functions... In the image above you can see what the debug console looks like in the bottom left of the picture. Once you've fixed issues, don't get trapped in the \"debug\" mode! Notice the \"Stop\" button (red square) in the Console view. Click on \"Stop\" to exit \"debug\" mode and return to your regular R session. This is a REALLY simple example, but using debugonce() and then calling your function is a REALLY great way to find out what's going wrong, as R will set up all the function inputs, arguments etc. for you then drop you inside the function where you can test code, find out EXACTLY what is going wrong with minimal fuss. ## Adding stuff into your code to help debug: ### Keep it simple - print() One easy way to troubleshoot without having to dive into debug mode is just to add print() statements to print out objects to the console as the code executes. This allows you to see the contents of an object and check if it makes sense. I would recommend using paste() to identify what is being printed in the Console, i.e. print(paste(\"a:\",a)) Remember to delete the print() statements from your function / code once you're finished otherwise your code will become very \"chatty\"... ### browser() You can insert the browser() function into the code of any function you write to automatically drop into this debugging environment in RStudio. This also works when developing Shiny applications. HOWEVER, you have to change the function code to insert the browser() function call, and the debugging windows will open EVERY TIME you call the function, UNTIL you remove the browser() statement from your function. But it may be useful under certain circumstances where you're trying to debug where there are many levels of functions or complex interactions. Wherever you insert the browser is where R will interrupt the execution and drop into the debugger you see above. So it's possible to skip parts that you know are working OK, and enter debugger around where the error message is... In the function below, I'm simulating having to wait for execution of upstream code by using the Sys.sleep function to wait 15 seconds. THEN the browser statement applies and we open the debugger. Note that when the debugger opens, the next line to run is the one AFTER the Sys.sleep function call. ## But what if I'm not using a function? These debugger methods are really useful for uncovering what is going wrong within a function. If you have issues with code that isn't in a function i.e. you're running a script, then you can still do similar things... From the RStudio IDE, open the file \"MiniProject10_breakpoint_script.R\". On the left-hand side of the Editor, to the left of where the line numbers are, click on line 12. This places a red dot \"breakpoint\" in the code right where you want to pause and inspect the code from that point. You must SOURCE the code to use the breakpoint functionality - it can't be used in an interactive running of a script. ## traceback() When you get an error in R, you will sometimes see an error at the R Console. Notice that RStudio adds a little button that says \"Show Traceback\" in the results of the chunk. (R Console does not). In the console you can type traceback() to see what steps were run before the error occured i.e. WHERE did the error occur. Clicking on the \"Show Traceback\" button in the Rmarkdown chunk output does the same thing. This doesn't help you in the same was as debugonce() does, because in order to get down deep into the function calls, and taking all of your objects with you for debugging is a better way to understand (and fix!) issues, but it's a quick way to figure out at what point the error occured. ### recover() and options(error = recover) Normally when there's an error, R will stop execution, print an error message and (if you're in the RStudio IDE) give you the option of using traceback() to see where things went wrong. But if you specify options(error = recover) then instead of dropping out of the function, R will pause exactly where the error occured, allowing you to troubleshoot in situ. What happens is that you have the option to select where in the traceback() stack you want to start debugging. If you're using the RStudio IDE you're then in the debug mode we saw with debugonce() where you can step through code to find the problem. ## CHALLENGE Where is the source of the error in the adsl_counts function below? ## Extra Credit What would you need to do to fix the code above?",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 10 - Debugging",
+        "miniproject10",
+        "step 4"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject14::4",
+      "collection_id": "pharma-hands-on::miniproject14",
+      "project_slug": "miniproject14",
+      "source_file": "MiniProject14.Rmd",
+      "step_number": 4,
+      "title": "Mini-project 14 - R snippets",
+      "prompt_text": "df for defining data frames",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 14 - R snippets",
+        "miniproject14",
+        "step 4"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject14::5",
+      "collection_id": "pharma-hands-on::miniproject14",
+      "project_slug": "miniproject14",
+      "source_file": "MiniProject14.Rmd",
+      "step_number": 5,
+      "title": "Mini-project 14 - R snippets",
+      "prompt_text": "mat for defining matrices",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 14 - R snippets",
+        "miniproject14",
+        "step 5"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject14::6",
+      "collection_id": "pharma-hands-on::miniproject14",
+      "project_slug": "miniproject14",
+      "source_file": "MiniProject14.Rmd",
+      "step_number": 6,
+      "title": "Mini-project 14 - R snippets",
+      "prompt_text": "if, el, and ei for conditional expressions",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 14 - R snippets",
+        "miniproject14",
+        "step 6"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject14::7",
+      "collection_id": "pharma-hands-on::miniproject14",
+      "project_slug": "miniproject14",
+      "source_file": "MiniProject14.Rmd",
+      "step_number": 7,
+      "title": "Mini-project 14 - R snippets",
+      "prompt_text": "apply, lapply, sapply, etc. for the apply family of functions",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 14 - R snippets",
+        "miniproject14",
+        "step 7"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject14::8",
+      "collection_id": "pharma-hands-on::miniproject14",
+      "project_slug": "miniproject14",
+      "source_file": "MiniProject14.Rmd",
+      "step_number": 8,
+      "title": "Mini-project 14 - R snippets",
+      "prompt_text": "shinyapp for defining a basic shiny app structure ## Customizing Snippets Like in SAS Studio, you can also create your own snippets and save them for future use. You can also edit the built-in snippet definitions to make them more specific to your needs. You can get to the snippets file by using the usethis package from Console, which has a function edit_rstudio_snippet() that will pop open the file for editing. This will open up the snippets for R code, but there are several different types of snippets that you can write. Sub in the snippet type you want to edit the snippets. Here is a list of different code types you can write snippets for: - \"r\" - \"markdown\" - \"c_cpp\" - \"css\" - \"html\" - java\" - \"javascript\" - \"python\", - \"sql\" - \"stan\" - \"tex\" Reminder to see the file through menus, go to Tools -> Global Options -> Code -> Edit Snippets. All Snippets are defined using the snippet keyword. The contents of the snippet should be indented below using the Tab key (as opposed to using spaces). Variables can be defined using the form {1:varname}. Also the $ is used as a special character to denote where the cursor should jump after completing each section of a snippet, in order to insert a literal $ it must be escaped as \\$. To add a new snippet, scroll down to the bottom of the snippet editor to add your snippet. Each snippet starts with the word snippet at the beginning of a line, followed by a space, and then the name of the snippet. You might want to setup a naming convention for user created snippets, so you can tell what are yours and what are the built-in snippets. Ex. Starting snippet names with my_underscore, or with your user name or initials. That way, when you start typing my_ in the script window, all your user created snippets show up in the drop-down list. You can use snippets to create a template for how a program should be setup, to load your frequently used libraries, or for saving code for a plot, with all the colors, labels, titles, and specifications set exactly as you wanted. NOTE: that every line after snippet [snippet name] must start with a single tab. If you use spaces to indent the code, the snippet won\u2019t work. Otherwise, write your code as usual. Click Save and exit the Preferences window. Now, you can use your snippet. In the console, an RMarkdown document, or an R script, type your snippet name and then hit tab. Your code should appear. ## Snippet Examples # Header Template One of the uses for snippets is to create a header template that programmers can use for all of their scripts. Feel free to use this one as a starting point for your own program header. # Library Snippet This snippet will set your working directory, and then also load whatever packages you need or use most often. # Plot Snippet If you spend a fair amount of time setting up and adjusting a graph to be just the way you want it, you want to be able to use it again! Reminder, in Mini Projects 7 and 11 we discussed writing functions for chunks of code that you use again and again. You could also create a function for the above code for reuse. ##References - https://rstudio.github.io/rstudio-extensions/rstudio_snippets.html - https://support.posit.co/hc/en-us/articles/204463668-Code-Snippets - https://dcl-workflow.stanford.edu/rstudio-snippets.html - https://www.infoworld.com/article/3396616/how-to-use-rstudio-code-snippets.html - https://usethis.r-lib.org/ - https://cran.r-project.org/web/packages/usethis/index.html - https://usethis.r-lib.org/reference/edit.html",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 14 - R snippets",
+        "miniproject14",
+        "step 8"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject2::1",
+      "collection_id": "pharma-hands-on::miniproject2",
+      "project_slug": "miniproject2",
+      "source_file": "MiniProject2.Rmd",
+      "step_number": 1,
+      "title": "Mini-project 2 - Summarising continuous and categorical data",
+      "prompt_text": "The following steps will load the packages tidyverse, rio, skimr and htmlTable. You need to load packages before using the functions and content in them, and it's best to do so at the beginning of a program / script. Run the chunk below by clicking on the green arrow to the right of the code chunk.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 2 - Summarising continuous and categorical data",
+        "miniproject2",
+        "step 1"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject2::2",
+      "collection_id": "pharma-hands-on::miniproject2",
+      "project_slug": "miniproject2",
+      "source_file": "MiniProject2.Rmd",
+      "step_number": 2,
+      "title": "Mini-project 2 - Summarising continuous and categorical data",
+      "prompt_text": "Read in the CDISC adsl data from the GitHub location (https://github.com/phuse-org/phuse-scripts/raw/master/data/adam/cdisc/adsl.xpt) and assign this to an object in R using the assignment operator <-. Make sure that the URL location is a character string by enclosing it in \" \". The rio package has a function called import that reads data into R and infers the data type from the file name. The first argument of that function is file. Paste the file path / URL above after the file= argument in the code below, then run the chunk using the green arrow. Note that the adsl data object has 254 rows and 48 columns. Now create a new data object adsl_eff for Efficacy Analysis population. We need to filter the adsl data object where the variable EFFFL has the value Y. Answer the question below and paste the correct answer into the code chunk. ------------------------------------------------------------------------ QUICK QUIZ: Which of the following options will filter the data where the variable EFFFL has the value Y? - filter(.data = adsl, EFFFL = Y) - filter(.data = adsl, EFFFL == \"Y\") - filter(.data = adsl, \"EFFFL\" == \"Y\") - filter(.data = adsl, EFFFL = \"y\") (HINT: We also did this task in MiniProject 1) If you are unsure, try each option by pasting in the filter statement after the assignment <- in the code chunk below. ------------------------------------------------------------------------ After filtering out the data we now have 234 rows and 48 columns. Again, recall that R is case-sensitive. Most variable names in SAS datasets are uppercase, so we need to ensure that the variable name is UPPERCASE i.e. EFFFL and not Efffl etc. Also, since the value is character, we need to ensure that the case of the equivalent value matches the expected result i.e. Y and not y or Yes and that it is enclosed in quotes \" \". DEFENSIVE PROGRAMMING in R: If you're dealing with data where you can't guarantee that the value is upper case or lower case, then it's a good idea to convert the values to uppercase before you compare using the casefold() function wrapped around the variable name i.e. casefold(EFFFL, upper=TRUE) == \"Y\"",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 2 - Summarising continuous and categorical data",
+        "miniproject2",
+        "step 2"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject2::3",
+      "collection_id": "pharma-hands-on::miniproject2",
+      "project_slug": "miniproject2",
+      "source_file": "MiniProject2.Rmd",
+      "step_number": 3,
+      "title": "Mini-project 2 - Summarising continuous and categorical data",
+      "prompt_text": "Calculate the marginal totals (N) - count the number of individuals in each treatment group. Next we need to count and save the marginal totals (big N) to act as the denominator for the calculation of the percentage of observations in each table cell = n/N \\ 100% In the R chunk below, we start with the adsl_eff dataset and count the number of observations in each level of the variables specified in the group_by() function. > R for SAS users: The group_by() function works a lot like a BY ; statement in SAS. Everything you do after a group_by() will be done for each level of the variables within the group_by(). In the next code chunk we want to calculate the number of observations within each level of the treatment variable TRT01A. The {dplyr} package has a function called count() that will do just that. Add the treatment variable TRT01A to the group_by() function in the code below to calculate the number of observations for each treatment group. What happens if you comment out the group_by() statement in the code above? (HINT: Comment out code using # at the start of the line to be commented, or place the cursor on the line / highlight the line and use the shortcut CTRL+SHIFT+C). Whenever you use group_by() R will carry along the grouping variables into the output. In this example, it's useful to have both the numeric value for the treatment in period 1 TRT01AN and* the label TRT01A. This is because we will want to use the numeric value for sorting, and the label for printing in the final table. Notice in this case since there is a 1:1 relationship between TRT01AN and TRT01A we get the same answer as before.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 2 - Summarising continuous and categorical data",
+        "miniproject2",
+        "step 3"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject2::4",
+      "collection_id": "pharma-hands-on::miniproject2",
+      "project_slug": "miniproject2",
+      "source_file": "MiniProject2.Rmd",
+      "step_number": 4,
+      "title": "Mini-project 2 - Summarising continuous and categorical data",
+      "prompt_text": "Next we want to calculate the \"small n\" counts within each category of the SEX variable within each treatment arm. If we add the additional variable into the group_by() then we calculate the count of observations for each unique combination of the levels of those variables. Let's amend the code above to add the variable SEX. Do we get different answers if we use the group_by() variables in a different order? No. But the order of variables in columns in the output is changed.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics"
+      ],
+      "topic_tags": [
+        "Mini-project 2 - Summarising continuous and categorical data",
+        "miniproject2",
+        "step 4"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject2::5",
+      "collection_id": "pharma-hands-on::miniproject2",
+      "project_slug": "miniproject2",
+      "source_file": "MiniProject2.Rmd",
+      "step_number": 5,
+      "title": "Mini-project 2 - Summarising continuous and categorical data",
+      "prompt_text": "Merging \"Big_N\\_cnt\" and \"small_n\\_cnt\" before calculating percentages... The {dplyr} package gives R users \"SQL-like\" functionality to join or filter two datasets / tables using a variety of methods: left_join, right_join, inner_join, full_join, anti_join, semi_join. (See https://dplyr.tidyverse.org/articles/two-table.html for more details). If you know PROC SQL then this will be quite familiar. In the next step we're going to use left_join to combine the left hand dataset - small_n_cnt with the right hand dataset Big_N_cnt. This will ensure that all entries from the left hand dataset are present in the resulting data object. A little bit of care is required to think about which dataset should be on the left, and which on the right... Notice that rows in Big_N_cnt that have matching TRT01A and TRT01AN are matched to rows in small_n_cnt and repeated if necessary. By default the <>_join functions of {dplyr} will try to match on variable names that exist in both datasets. If you need to, you can explicitly define which variables to join by, and identify the joining variables in each dataset: For more information on joining data, see this vignette: https://dplyr.tidyverse.org/articles/two-table.html",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 2 - Summarising continuous and categorical data",
+        "miniproject2",
+        "step 5"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject2::6",
+      "collection_id": "pharma-hands-on::miniproject2",
+      "project_slug": "miniproject2",
+      "source_file": "MiniProject2.Rmd",
+      "step_number": 6,
+      "title": "Mini-project 2 - Summarising continuous and categorical data",
+      "prompt_text": "Calculate percentages for treatment group TRT01A split by SEX. For this step, we want to create a new column in the adsl_mrg_cnt dataset containing the percentage of observations (subjects in the trial) from each SEX within each treatment group given by TRT01A or TRT01AN. The {dplyr} package allows us to add a new variable to an existing dataset and determine its values based on existing columns using a function called mutate(). Note that in calculation of perc we don't need to put quotes around the variables names n and N because within the tidyverse and {dplyr} these variable names are evaluated within the scope of the input data adsl_mrg_cnt.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 2 - Summarising continuous and categorical data",
+        "miniproject2",
+        "step 6"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject2::7",
+      "collection_id": "pharma-hands-on::miniproject2",
+      "project_slug": "miniproject2",
+      "source_file": "MiniProject2.Rmd",
+      "step_number": 7,
+      "title": "Mini-project 2 - Summarising continuous and categorical data",
+      "prompt_text": "Round percentages to one decimal place. Notice that in the data above, the first two percentages have many decimal places. We probably want to round these to one decimal place for use in the table. We can use the R function round() to achieve this. ------------------------------------------------------------------------ NOTE: The round() function in R has different defaults to the round function in SAS. You might find this in several places - that default options are different - leading to differences in results. Please be aware of this and investigate whether R function arguments and settings can be matched to SAS options if it's important to ensure that the results are comparable. To investigate this, let's look at a few example values Notice that R rounds 1.5 and 2.5 to the nearest even values. This follows the IEC 60559 standard (see also 'IEEE 754'). That is, it's not wrong, it's just different to SAS. Be aware of this, check the R help for a function using e.g. ?round and also check SAS documentation to see how each tool calculates values. There are also differences between SAS and R in calculation of percentiles / quantiles and how each handles missing data. ------------------------------------------------------------------------ To round the values for our table, we want to use the round() function within mutate() function that calculates the new variable perc :",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 2 - Summarising continuous and categorical data",
+        "miniproject2",
+        "step 7"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject2::8",
+      "collection_id": "pharma-hands-on::miniproject2",
+      "project_slug": "miniproject2",
+      "source_file": "MiniProject2.Rmd",
+      "step_number": 8,
+      "title": "Mini-project 2 - Summarising continuous and categorical data",
+      "prompt_text": "Formatting numeric values for use in tables. When we use numeric values in tables, we want to ensure that the values in the table will have consistent presentation, so one decimal place is used for both \"20.0\" and \"26.1\" (instead of \"20.0\" becoming \"20\"). We can easily achieve this by applying print formatting and turning the numeric values into character. In R we use the format() function to achieve this. The format() function argument nsmall defines the minimal number of decimal places to be used. So setting nsmall=1 will ensure that all values are formatted to at least 1 decimal place. Notice in this output that the column perc is of type dbl while perc_char is of type char. Anything that is is character type in R will not be further formatted and will display \"as is\" in a table or listing.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 2 - Summarising continuous and categorical data",
+        "miniproject2",
+        "step 8"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject2::9",
+      "collection_id": "pharma-hands-on::miniproject2",
+      "project_slug": "miniproject2",
+      "source_file": "MiniProject2.Rmd",
+      "step_number": 9,
+      "title": "Mini-project 2 - Summarising continuous and categorical data",
+      "prompt_text": "Paste together the count and percentage For presentation in the table, we usually want to show both the count and its associated percentage. Now that we have the perc_char character variable, this is easy using R's paste() and paste0() functions. These two functions work identically in pasting together character strings and variables, but paste() has a default separator of a single space, while paste0() has no separator. ------------------------------------------------------------------------ Can you predict what you'll see for each of the code chunks below? Have a think first then run the code to check whether you're right. ------------------------------------------------------------------------ I think that it's clearer to combine paste with paste0 rather than add additional whitespace to characters (which is easy to overlook) or changing the separator (which is another argument). Note that in the last line of the chunk above, the code has been formatted carefully to make it clear which brackets and parts of the paste() functions go together. This is a style decision, but making your code easy for others to read and understand helps enormously when it comes to code review. You can find a code style guide here https://style.tidyverse.org/.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 2 - Summarising continuous and categorical data",
+        "miniproject2",
+        "step 9"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject2::10",
+      "collection_id": "pharma-hands-on::miniproject2",
+      "project_slug": "miniproject2",
+      "source_file": "MiniProject2.Rmd",
+      "step_number": 10,
+      "title": "Mini-project 2 - Summarising continuous and categorical data",
+      "prompt_text": "Change the SEX labels to something more readable. At the minute we have values in the SEX variable of \"M\" and \"F\". Now, while this is probably fairly obvious to most, it's going to be more interpretable if we change these to \"Male\" and \"Female\". This is a fairly simple recoding exercise. {dplyr} has a few options for recoding, but here we're going to use the recode()function. We need to use this within a mutate() function call. In this case we can reuse the same column name. The recode() function will leave any values not included in the left-hand of the old = newas is. The function case_when() allows you to recode with a \"catch-all\" option (essentially like a sequence of if... elseif... else ... statements) and may be more useful in certain circumstances. In this instance with only two values, it's easier to use recode().",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 2 - Summarising continuous and categorical data",
+        "miniproject2",
+        "step 10"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject2::11",
+      "collection_id": "pharma-hands-on::miniproject2",
+      "project_slug": "miniproject2",
+      "source_file": "MiniProject2.Rmd",
+      "step_number": 11,
+      "title": "Mini-project 2 - Summarising continuous and categorical data",
+      "prompt_text": "Ungroup Notice in the data above is still showing that there are groups defined Groups: TRT01AN, TRT01A, SEX [6]. Before we do the next thing, it's going to be a good idea to \"turn off\" grouping, otherwise R is going to try to do the next action for each value of the grouping variables.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics"
+      ],
+      "topic_tags": [
+        "Mini-project 2 - Summarising continuous and categorical data",
+        "miniproject2",
+        "step 11"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject2::12",
+      "collection_id": "pharma-hands-on::miniproject2",
+      "project_slug": "miniproject2",
+      "source_file": "MiniProject2.Rmd",
+      "step_number": 12,
+      "title": "Mini-project 2 - Summarising continuous and categorical data",
+      "prompt_text": "Using the pipe to chain these steps together. In steps 6, 7, 8 and 9 we have looked at R chunks that merge the data, calculate and format the values for the table. But in each, we're not particularly interested in saving the intermediate datasets or having to name them. So we can use the pipe function to combine these into one pipeline. In the chunk below, copy and paste the steps below in the right order to get the final data ready for presenting in the table. We have included an additional select() to pick out just the variables needed for the table. The first line should assign the output of the pipeline to the data object adsl_mrg_cnt... (HINT: It may help to say the {dplyr} function name of each step to yourself and think of %>% as \"...THEN...\" to describe the sequence of steps you need to do) - mutate(perc = round(n/N*100, digits=1)) %>% - left_join(Big_N_cnt) %>% - mutate(perc_char = format(perc, nsmall=1)) %>% - mutate(npct = paste(n, \"(\", perc_char, \")\" ) ) %>% - select(TRT01A, SEX, npct) - ungroup() %>% - mutate(SEX = recode(SEX, \"M\" = \"Male\", \"F\" = \"Female\")) %>% - small_n_cnt %>%",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 2 - Summarising continuous and categorical data",
+        "miniproject2",
+        "step 12"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject2::13",
+      "collection_id": "pharma-hands-on::miniproject2",
+      "project_slug": "miniproject2",
+      "source_file": "MiniProject2.Rmd",
+      "step_number": 13,
+      "title": "Mini-project 2 - Summarising continuous and categorical data",
+      "prompt_text": "Transpose the data ready for the table This gets us to the point where the data is ready for the table, but we need to arrange the layout to match our expected table format. To do that we need to transpose the data, and to do this we use the {tidyr} package function pivot_wider(). For pivot_wider() you need to tell the function which columns provide names of the new (pivoted) columns - names_from and which columns provide the values for these columns - values_from. ------------------------------------------------------------------------ ## Challenge 1: You need to complete this challenge to be able to create the final demog table. Repeat the steps above, but add an additional grouping variable to the calculation of Big_N\\_cnt and small_n\\_cnt - AGEGRP. Here's the first step: To check that your code is reproducible, you will want to use the \"knit\" button on the RStudio IDE interface to create an HTML file based on your saved .Rmd file. If your code chunks are reproducible then you should get an HTML file as a result. If NOT (if there's an error or if the \"knit\" process fails) then click on the arrow to the right of the \"Run\" button and select \"Restart R and Run All Chunks\". Then troubleshoot which chunk is causing problems. ## Challenge 2: Generate Counts and Percentages of Body Text Term (AEBODSYS) for Safety Population (SAFFL) based on the this CDISC dataset: adae.xpt Save the .RMD file on your desktop and click on the \"Knit\" button at the top of the file to render an HTML version of this document.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 2 - Summarising continuous and categorical data",
+        "miniproject2",
+        "step 13"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject3::1",
+      "collection_id": "pharma-hands-on::miniproject3",
+      "project_slug": "miniproject3",
+      "source_file": "MiniProject3.Rmd",
+      "step_number": 1,
+      "title": "Mini-project 3 - Generating grouped summary statistics",
+      "prompt_text": "The following steps will load the packages tidyverse & rio. You need to load packages before using the functions and content in them, and it's best to do so at the beginning of a program / script. Run the chunk below by clicking on the green arrow to the right of the code chunk. To check what package repository you are using, run .libPaths() at the R Console.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 3 - Generating grouped summary statistics",
+        "miniproject3",
+        "step 1"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject3::2",
+      "collection_id": "pharma-hands-on::miniproject3",
+      "project_slug": "miniproject3",
+      "source_file": "MiniProject3.Rmd",
+      "step_number": 2,
+      "title": "Mini-project 3 - Generating grouped summary statistics",
+      "prompt_text": "Read in the CDISC adsl data from the GitHub location (https://github.com/phuse-org/phuse-scripts/raw/master/data/adam/cdisc/adsl.xpt) and assign this to an object in R using the assignment operator <-. Make sure that the URL location is a character string by enclosing it in \" \". The rio package has a function called import that reads data into R and infers the data type from the file name. The first argument of that function is file. Paste the file path / URL above after the file= argument in the code below, then run the chunk using the green arrow. Next filter the adsl dataset where the EFFFL variable has the value \"Y\" (as we did in previous MiniProjects). Add the appropriate code to the filter function to select only observations where the EFFFL is \"Y\". We will also recode the SEX variable to replace values where it is \"M\" with the value \"Male\" and where \"F\" recoding to \"Female\".",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 3 - Generating grouped summary statistics",
+        "miniproject3",
+        "step 2"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject3::3",
+      "collection_id": "pharma-hands-on::miniproject3",
+      "project_slug": "miniproject3",
+      "source_file": "MiniProject3.Rmd",
+      "step_number": 3,
+      "title": "Mini-project 3 - Generating grouped summary statistics",
+      "prompt_text": "Create a dataframe (age_mean) to hold the mean Age (Grouped by Treatment and Gender) needed for the demog table. Note: Age is a continuous variable. In the R chunk below, we start with the adsl_eff dataset and calculate the mean AGE in each level of the variables specified (TRT01AN, TRT01A, SEX) in the group_by() function. We previously used group_by in exercise 3 from \"MiniProject2.Rmd\". group_by() works very much like the BY . ; statement in SAS - each action is performed within the levels of the grouping variable. group_by() also carries along any grouping variables, so if a variable is used in a group_by() statement it will also appear in the resulting dataset. If you need to \"switch off\" grouping, you should use the ungroup() function. The {dplyr} package has a function called summarize() that will calculate various summary statistics. It is analogous to PROC MEANS in SAS. In the chunk below, we will create a new variable named \"mean\" that will hold the mean AGE at each level of the group_by variables. Add the specified by variables from above to the group_by() function in the code below, run the chunk, and observe the output from the summarize() function. +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ | QUESTION: If there are three treatment groups and two levels of SEX, how many rows will be in the resulting dataset if we group_by() using the variables TRT01AN, TRT01A, SEX? | +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ Notice that there are 5 decimal places outputted in the mean values. We do not often need that many, so we can use the round() function to round to one decimal place. We will also need to format the mean variable to character to match with any specified standards for reporting, and to allow us to append percentages for the final display; Using format() with the nsmall argument will accomplish the transition from numeric to character. See exercises 7-8 from MiniProject2.Rmd for a summary on the round() and format() functions. Run the chunk below to see the new mean variable with the appropriate formatting.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 3 - Generating grouped summary statistics",
+        "miniproject3",
+        "step 3"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject3::4",
+      "collection_id": "pharma-hands-on::miniproject3",
+      "project_slug": "miniproject3",
+      "source_file": "MiniProject3.Rmd",
+      "step_number": 4,
+      "title": "Mini-project 3 - Generating grouped summary statistics",
+      "prompt_text": "Now that we have a good idea of how to generate means, we can now use the summarize() function to generate other summary statistics we need, including standard deviations, medians, ranges, and counts. The functions for each, respectively, are just as you would expect: sd(), median(), min(), max(), and n(). Using the above information, finish the code below by creating a data frame named age_stat starting from the dataset adsl_eff that holds summary statistics. Create a standard deviation variable titled \"sd\", median titled \"med\", min titled \"min\", max titled \"max\", and a count variable titled \"n\" (count for whole dataset). Make sure to convert each variable to character with the format function, and specify 1 decimal place for sd and 0 for the rest.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 3 - Generating grouped summary statistics",
+        "miniproject3",
+        "step 4"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject3::5",
+      "collection_id": "pharma-hands-on::miniproject3",
+      "project_slug": "miniproject3",
+      "source_file": "MiniProject3.Rmd",
+      "step_number": 5,
+      "title": "Mini-project 3 - Generating grouped summary statistics",
+      "prompt_text": "Since our output table includes ranges, we will need to combine the min and max value into a character string (as we did with counts and percentages in Mini Project 2). In the code chunk below, generate a data frame named age_stat2, and combine min and max?? in a new variable to get a Range statistic called range_minmax. Notice that there is a space between the first parentheses and the first digit. Please update the code below to eliminate the space. Refer back to exercise 9 from Mini Project 2.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics"
+      ],
+      "topic_tags": [
+        "Mini-project 3 - Generating grouped summary statistics",
+        "miniproject3",
+        "step 5"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject3::6",
+      "collection_id": "pharma-hands-on::miniproject3",
+      "project_slug": "miniproject3",
+      "source_file": "MiniProject3.Rmd",
+      "step_number": 6,
+      "title": "Mini-project 3 - Generating grouped summary statistics",
+      "prompt_text": "Transpose the summary statistics into a single variable of results. - Now that the group_by variables are no longer needed, we will use the ungroup() function to put the data back into its initial settings. Remember that If we do not ungroup() the data, the select() statement carries forward the assigned grouping variables. Notice the difference in display when we look at age_stat2 compared to the version where we ungroup(). At the minute, the age_stat data has one column for each summary statistic. But in our example table, we want to define columns by the treatment variables and also in this case by the SEX variable. To achieve this reformatting of the data we will pivot the data (i.e. transpose) to create a long-format dataset, with columns for the treatment variables TRT01AN and TRT01A and the grouping variable SEX (as before) but we will convert the columns of summary statistics to one column giving the statistic name and one column for the value of that statistic. We can then pivot (transpose) back into whatever format we wish to display the final table. The pivot_longer() function will pivot (or transpose) the data from a \"wide\" format to a \"long\" format. The function has three key arguments: cols which tells R which columns to pivot (transpose), names_to which tells R the name of the new variable which holds the names of the pivoted variables, and values_to which tells R the name of the new variable which holds the values from the pivoted variables. Using the select() function before pivot_longer will allow us to select just the variables we want to show in our pivoted, transposed data. Most of the time, we aren't going to want to transpose EVERY variable. We can define which columns to pivot (transpose) in three ways: we can name them explicitly, we can identify them by column or variable number, or we can use the -VARIABLE to tell R which variable to exclude from the pivot. If we wish to exclude more than one variable, we use the c() collection function to define a vector of variable names. In the code below, add the list of summary statistics we calculated above to the select function (excluding min and max, but including range). Before we pivot (transpose) the data, we have to ensure that the columns we're about to pivot all have the same type. In the age_stat2 data, the formatted values (mean, sd, range_minmax) are character, but med and n are still numeric. We do this by applying the as.character() function to any variables that meet the condition is.numeric(). Combining mutate() with across() applies the same function to each column variable that meets the condition. -\\> R for SAS users: The select() function works like a keep; statement in SAS.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 3 - Generating grouped summary statistics",
+        "miniproject3",
+        "step 6"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject3::7",
+      "collection_id": "pharma-hands-on::miniproject3",
+      "project_slug": "miniproject3",
+      "source_file": "MiniProject3.Rmd",
+      "step_number": 7,
+      "title": "Mini-project 3 - Generating grouped summary statistics",
+      "prompt_text": "Now we can use the pivot_wider() function to transpose the desc_stat_long data, using the to match the Demographic table below: !Demographic table. Please see Exercise 13 from MiniProject2.Rmd for information on how to use pivot_wider(). (HINT: pivot_wider() and pivot_longer() are similar except that pivot_longer() tells R where column names and values are going to, but pivot_wider() tells R where column names and values are coming from. Try the code below, choosing different variables to use in names_from argument. See how the choices change the look of the resulting dataset, and choose the best representation to match the desired final table. If you need to use more than one variable to define columns you can use the c() function to collect the variables into a vector of variable names.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 3 - Generating grouped summary statistics",
+        "miniproject3",
+        "step 7"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject3::8",
+      "collection_id": "pharma-hands-on::miniproject3",
+      "project_slug": "miniproject3",
+      "source_file": "MiniProject3.Rmd",
+      "step_number": 8,
+      "title": "Mini-project 3 - Generating grouped summary statistics",
+      "prompt_text": "Generate the Final dataframe agestat_cat by renaming the category values to match the expected names within the table. We can use the case_when() function within the mutate() function to vectorize multiple 'if' and 'else if' statements. The arguments contain a sequence of two-sided formulas. The left hand side (LHS) determines which values match this case. The right hand side (RHS) provides the replacement value. -\\> R for SAS users: The case_when() function works like a SQL 'CASE WHEN' statement in SAS. ------------------------------------------------------------------------ ## Challenge 1: Get similar information for weight & Height. To check that your code is reproducible, you will want to use the \"knit\" button on the RStudio IDE interface to create an HTML file based on your saved .Rmd file. If your code chunks are reproducible then you should get an HTML file as a result. If NOT (if there's an error or if the \"knit\" process fails) then click on the arrow to the right of the \"Run\" button and select \"Restart R and Run All Chunks\". Then troubleshoot which chunk is causing problems. Save the .RMD file on your desktop and click on the \"Knit\" button at the top of the file to render an HTML version of this document. ### Extra credit / Top tip: If you need to copy and paste code 3 times or more it's time to write a function. Functions in R are a bit like Macros in SAS. You can quickly convert from code like this: To a function like this: using the \"Extract function\" in RStudio IDE's \"Code\" menu. You can then tidy this code to change the function arguments. You then want to abstract the code so that the user running the code has the ability to change the things that they need to change. This abstraction means that writing the code is a little more complex within the tidyverse - you need to refer to the variable within a dataset, and stop R from trying to find that variable as an object in your environment (top right tab in RStudio IDE). Let's change the input data argument to .data to match what we see in {tidyverse} functions and add an argument that is the name of the variable in the dataset that we want to summarise. For now, let's assume that the function will summarise by TRT01AN, TRT01A, SEX regardless of which variable is being summarised: The problem here is that R is looking for an object called AGE, which doesn't exist in the current Environment. Instead we need to tell R that the \"AGE\" argument that we pass should be interpreted within the scope of the data, rather than looking in the Environment. The secret is to enclose or \"embrace\" the variable in double quotes within the function. It's a bit like using a Macro variable in SAS.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 3 - Generating grouped summary statistics",
+        "miniproject3",
+        "step 8"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject4::1",
+      "collection_id": "pharma-hands-on::miniproject4",
+      "project_slug": "miniproject4",
+      "source_file": "MiniProject4.Rmd",
+      "step_number": 1,
+      "title": "Mini-project 4 - Creating summary table data",
+      "prompt_text": "Setup of ADSL_EFF dataframe",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 4 - Creating summary table data",
+        "miniproject4",
+        "step 1"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject4::2",
+      "collection_id": "pharma-hands-on::miniproject4",
+      "project_slug": "miniproject4",
+      "source_file": "MiniProject4.Rmd",
+      "step_number": 2,
+      "title": "Mini-project 4 - Creating summary table data",
+      "prompt_text": "Calculating our Big N and small n counts, and join dataframes (Project 2) ------------------------------------------------------------------------ ### ASIDE: Handling zero counts There are often cases where there are zero counts within categories. We need to find a way to handle these correctly. BTW - Here we're using the function tribble() to create a little toy dataset. tribble works like the datalines or cards statements in SAS. You define data values (columns, rows) inline. Note that we don't get 6 rows. Comparator + Female (\"F\") is missing, as is Active + Male (\"M\"). You can perform some juggling and arbitrary fixing here and there, but there's another way using complete. First calculate the counts, THEN you need to ungroup THEN you can apply the complete. nesting says \"take the values that appear in the data...\" while things outside nesting in the complete function expand all possible values of SEX with the nested values. The fill = list(n=0) says that for any missing values (where there isn't data) fill the n variable with the value = 0. BTW - the complete function is ACTUALLY a wrapper around expand, left_join, replace_na functions. So yes, you can do the individual steps if you like, OR you can use the function... ------------------------------------------------------------------------",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 4 - Creating summary table data",
+        "miniproject4",
+        "step 2"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject4::3",
+      "collection_id": "pharma-hands-on::miniproject4",
+      "project_slug": "miniproject4",
+      "source_file": "MiniProject4.Rmd",
+      "step_number": 3,
+      "title": "Mini-project 4 - Creating summary table data",
+      "prompt_text": "Calculating counts for Age Groups (Challenge 1) We calculate counts per age group, and merge them together, along with the gender counts that were created in project 2",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics"
+      ],
+      "topic_tags": [
+        "Mini-project 4 - Creating summary table data",
+        "miniproject4",
+        "step 3"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject4::4",
+      "collection_id": "pharma-hands-on::miniproject4",
+      "project_slug": "miniproject4",
+      "source_file": "MiniProject4.Rmd",
+      "step_number": 4,
+      "title": "Mini-project 4 - Creating summary table data",
+      "prompt_text": "Getting percentages for totals by age group",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics"
+      ],
+      "topic_tags": [
+        "Mini-project 4 - Creating summary table data",
+        "miniproject4",
+        "step 4"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject4::5",
+      "collection_id": "pharma-hands-on::miniproject4",
+      "project_slug": "miniproject4",
+      "source_file": "MiniProject4.Rmd",
+      "step_number": 5,
+      "title": "Mini-project 4 - Creating summary table data",
+      "prompt_text": "Transpose and rename columns so that they can be set together ------------------------------------------------------------------------ ASIDE: Use of factors to control data ordering In myData below, if we sort by age then R puts the age category \"\\>=65\" first. This is because R sorts character variables alphanumerically, so \"\\>\" comes before \"1\". (This may or may not occur depending on your version of R. Newer versions will actually sort it correctly!) Factors in R allow you to define discrete levels of a variable and the ordering of those levels. Factors were originally used in R to define the ordering of treatment labels and which treatment to use as the base level for constructing contrasts in statistical comparisons. But they are also useful for the purpose of rearranging elements in a user-defined order. Here we define age categories for age groups from age zero to over 65. Even if the data doesn't have one of those age categories, it will still respect the levels and ordering. This means that, in defensive programming terms, we allow for future age categories that we haven't seen in our data. ------------------------------------------------------------------------",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics"
+      ],
+      "topic_tags": [
+        "Mini-project 4 - Creating summary table data",
+        "miniproject4",
+        "step 5"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject4::6",
+      "collection_id": "pharma-hands-on::miniproject4",
+      "project_slug": "miniproject4",
+      "source_file": "MiniProject4.Rmd",
+      "step_number": 6,
+      "title": "Mini-project 4 - Creating summary table data",
+      "prompt_text": "Generating Summary Statistics (Project 3)",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics"
+      ],
+      "topic_tags": [
+        "Mini-project 4 - Creating summary table data",
+        "miniproject4",
+        "step 6"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject4::7",
+      "collection_id": "pharma-hands-on::miniproject4",
+      "project_slug": "miniproject4",
+      "source_file": "MiniProject4.Rmd",
+      "step_number": 7,
+      "title": "Mini-project 4 - Creating summary table data",
+      "prompt_text": "Ungrouping and transposing",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics"
+      ],
+      "topic_tags": [
+        "Mini-project 4 - Creating summary table data",
+        "miniproject4",
+        "step 7"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject4::8",
+      "collection_id": "pharma-hands-on::miniproject4",
+      "project_slug": "miniproject4",
+      "source_file": "MiniProject4.Rmd",
+      "step_number": 8,
+      "title": "Mini-project 4 - Creating summary table data",
+      "prompt_text": "Project 4 . Now we combine the two output dataframes that we created above. We are going to use the bind_rows function to join together two dataframes (separated by commas). Bind_rows is a lot like a SET statement in SAS, and is used to bind multiple dataframes, a list, or a list of dataframes into one. This will resemble the final demog table when output. age_cat - contains counts and percent for age groups x gender x treatment agestat_cat - contains summary statistics for gender x treatment Note: When row binding, columns must match in variable name. We don't have any missing values, but it we did, those columns would be filled with 'NA' values. ## Challenges: Take the following actions to match with the Demographic table.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 4 - Creating summary table data",
+        "miniproject4",
+        "step 8"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject4::1",
+      "collection_id": "pharma-hands-on::miniproject4",
+      "project_slug": "miniproject4",
+      "source_file": "MiniProject4.Rmd",
+      "step_number": 1,
+      "title": "Mini-project 4 - Creating summary table data",
+      "prompt_text": "Reorder the age variables to be in the correct order (65, 65-80, 80)",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 4 - Creating summary table data",
+        "miniproject4",
+        "step 1"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject4::2",
+      "collection_id": "pharma-hands-on::miniproject4",
+      "project_slug": "miniproject4",
+      "source_file": "MiniProject4.Rmd",
+      "step_number": 2,
+      "title": "Mini-project 4 - Creating summary table data",
+      "prompt_text": "Move N before Age- categories.",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 4 - Creating summary table data",
+        "miniproject4",
+        "step 2"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject4::3",
+      "collection_id": "pharma-hands-on::miniproject4",
+      "project_slug": "miniproject4",
+      "source_file": "MiniProject4.Rmd",
+      "step_number": 3,
+      "title": "Mini-project 4 - Creating summary table data",
+      "prompt_text": "Add Ethnicity and Race. Save the .RMD file on your desktop and click on the \"Knit\" button at the top of the file to render an HTML version of this document.",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 4 - Creating summary table data",
+        "miniproject4",
+        "step 3"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject7::1",
+      "collection_id": "pharma-hands-on::miniproject7",
+      "project_slug": "miniproject7",
+      "source_file": "MiniProject7.Rmd",
+      "step_number": 1,
+      "title": "Mini-project 7 - Getting started writing functions",
+      "prompt_text": "double click on the argument dataFile - note how the IDE finds all instances of dataFile within the function",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 7 - Getting started writing functions",
+        "miniproject7",
+        "step 1"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject7::2",
+      "collection_id": "pharma-hands-on::miniproject7",
+      "project_slug": "miniproject7",
+      "source_file": "MiniProject7.Rmd",
+      "step_number": 2,
+      "title": "Mini-project 7 - Getting started writing functions",
+      "prompt_text": "from the \"Code\" menu, select \"Rename in scope\" - type adsl_File to rename the argument AND instances of this argument within the function. ## 6. Review and refactor. Often. As you learn stuff in R, you'll find new ways of doing things - they might be more efficient / faster, are able to be done in parallel, or where some complex piece of code can be made more simple. It's good practice to come back around to your functions from time to time, to check that they still make sense and if there's anything that can be improved. Good functions should be easy to read, review, and improve. In the code above, the function takes the github path and does everything from reading the xpt dataset to producing the table content. But we might be able to simplify things if the code only produces the summarised counts, rather than reading the data. Reading data over the network is comparatively slow. So we only want to do that once in a session, if we can. As we said earlier, if we're writing functions for use in {tidyverse} data pipelines, we should expect a tibble / dataset as an input and return another tibble / dataset. But here what's expected as an input is a character string file path. That's not ideal. Let's reorganise (we call it refactor) the code so that we take the file reading outside the function, and instead assume that what is being passed in is the \"adsl\" dataset. Amend the function code below to instead calculate based on an input dataset, like the adsl_saf data. You'll need to update code for Big_N_cnt and small_n_cnt to point to the input to the function (the input dataset). Check that the code works by running the chunk. ## 7. Troubleshooting and debugging functions Functions that have only one argument or input are typically easy to debug. In the console, create an object with the same name as the argument, then step through the code body of the function one line at a time, until you identify the issue. But typically, functions have many more arguments and it gets tedious very quickly to assign all these to objects and then step through the code. However, R and the RStudio IDE provide some helpful tools for debugging. See this article: https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-the-RStudio-IDE Jenny Bryan's talk from RStudioConf 2020 was a great exposition of what to do when your code goes wrong: https://www.rstudio.com/resources/rstudioconf-2020/object-of-type-closure-is-not-subsettable/ I STRONGLY RECOMMEND that you go and review the material and video linked here. It'll help you ENORMOUSLY. ## 8. You don't need to specify ALL the arguments - ellipses As you write functions you might find yourself adding more and more and more arguments to handle various options within the function. Typically these are additional arguments to functions used within the main function. But there's an easy way to extend function calls to allow this. If we type ... as an argument to the function we can pass arguments down into lower level functions used within the parent function. We add the same ... to these function calls, like this: In the code above we are allowing the user to pass the digits argument through to the round function. The . ellipses say \"Whatever extra arguments the user gives, pass them through...\". And the . in the round function say \"Whatever extra arguments the user gives, use them here...\". Note that lower level function arguments passed via ellipses must be valid arguments... You just need to be careful if there is more than one function with the same named arguments... Naming things is hard. ## Challenge Convert the code you wrote in the Mini Project 6 challenge into a function that takes an input adlb dataset and produces the graph. For an additional challenge, allow the user to specify the axes labels.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 7 - Getting started writing functions",
+        "miniproject7",
+        "step 2"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject8::1",
+      "collection_id": "pharma-hands-on::miniproject8",
+      "project_slug": "miniproject8",
+      "source_file": "MiniProject8.Rmd",
+      "step_number": 1,
+      "title": "Mini-project 8 - Applying functions through iteration",
+      "prompt_text": "To do so, first we need the names of the columns in the adsl_saf dataset. We get this using the names function. varNames <- names(adsl_saf)",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 8 - Applying functions through iteration",
+        "miniproject8",
+        "step 1"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject8::2",
+      "collection_id": "pharma-hands-on::miniproject8",
+      "project_slug": "miniproject8",
+      "source_file": "MiniProject8.Rmd",
+      "step_number": 2,
+      "title": "Mini-project 8 - Applying functions through iteration",
+      "prompt_text": "Then we set up a vector called counts to contain the calculated values. It's worth preparing the results object with the right length BEFORE you start putting values into it, for efficiency reasons that we'll look at later. The results values are integers, and the vector has the same length as the number of columns in the dataset. counts <- vector(\"integer\", length(varNames))",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics"
+      ],
+      "topic_tags": [
+        "Mini-project 8 - Applying functions through iteration",
+        "miniproject8",
+        "step 2"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject8::3",
+      "collection_id": "pharma-hands-on::miniproject8",
+      "project_slug": "miniproject8",
+      "source_file": "MiniProject8.Rmd",
+      "step_number": 3,
+      "title": "Mini-project 8 - Applying functions through iteration",
+      "prompt_text": "Next we construct the loop. R has a for loop and a while loop. for loops have less tendency to spin into infinite cycles, so I favour them here. Note that instead of giving the upper range of the for loop a specific number, I'm using the length of varNames vector since this will allow us to pass in a dataset with a different number of columns and the code will still work. for(i in 1:length(varNames)){ }",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 8 - Applying functions through iteration",
+        "miniproject8",
+        "step 3"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject8::4",
+      "collection_id": "pharma-hands-on::miniproject8",
+      "project_slug": "miniproject8",
+      "source_file": "MiniProject8.Rmd",
+      "step_number": 4,
+      "title": "Mini-project 8 - Applying functions through iteration",
+      "prompt_text": "Within the { } of the loop we put code that we want to run with each iteration. We assign element i of the counts vector. We point to the i_th element of the varNames vector and use this to pick out th column in adsl_saf that we want to work with using the [[ operator to extract that column. We then use the !is.na logical comparison to check whether the values in the column are missing. This will give a TRUE or FALSE result for each value. Using the sum function effectively treats these as 0 for FALSE and 1 for TRUE so the sum counts the number of non-missing values. Note that !is.na and sum operate over the vector as a whole, in one operation, as we saw earlier. counts[i] <- sum( !is.na( adsl_saf[[varNames[i]]] ) )",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 8 - Applying functions through iteration",
+        "miniproject8",
+        "step 4"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject8::5",
+      "collection_id": "pharma-hands-on::miniproject8",
+      "project_slug": "miniproject8",
+      "source_file": "MiniProject8.Rmd",
+      "step_number": 5,
+      "title": "Mini-project 8 - Applying functions through iteration",
+      "prompt_text": "At the end of the loop, the i values in counts should be filled with the number of non-missing values in each column. Note that (like in a function) if you do not return items OUT of the loop, then they will not be stored for later use.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 8 - Applying functions through iteration",
+        "miniproject8",
+        "step 5"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject8::6",
+      "collection_id": "pharma-hands-on::miniproject8",
+      "project_slug": "miniproject8",
+      "source_file": "MiniProject8.Rmd",
+      "step_number": 6,
+      "title": "Mini-project 8 - Applying functions through iteration",
+      "prompt_text": "We name the elements of the vector using the varNames. names(counts) - varNames Putting all this together we get the code chunk below: While this works, the code is a bit clunky. I see code like this (or variations on it) ALL THE TIME from colleagues who have picked up R after learning SAS and getting used to the \"loop way\" of dealing with iteration. Note that this results in a vector of named elements, rather than a dataset, so it's not so easy to extract the element you might want. Trying the {tidyverse} select statement results in an error. It's not immediately clear from the error above exactly what the problem is. Subsetting by variable name, assuming that counts is a data frame (and so has two dimensions): Again, the error is a little cryptic. And while you might remember that this is a named vector, someone else checking your code is highly likely to miss this. If you have the situation where the length of the loop is not known a priori, then it may be tempting to grow the output with the loop by appending items to the list. DO NOT c(.) items together within a loop to \"grow\" the output object. The problem here is that this way of working has a quadratic order which means that a loop with 3 times as many elements would take 9 times (3-squared) as long. R doesn't know how big the object needs to be in advance and so it copies the object in memory into the loop, effectively creating n versions of the object. To avoid this, it's always best to set up the output object with the right dimensions FIRST then fill it with values. By doing this, R is effectively overwriting an existing value (even if it's zero or NULL) with a new value. ## The apply family In base R, the apply family, takes an input and applies the same function to each element to create an output. The apply function takes an array of values and applies a function across one (or more) MARGINs. Let's play HUNT THE MISSING VALUE... To apply the nonMissing function across rows we specify MARGIN = 1. To apply the nonMissing function across columns we specify MARGIN = 2. If we want to apply (pun intended) this function to the columns of a dataset, we need the analogous function lapply which applies a function to elements of a list (lapply == list apply). Recall that data frames are named lists comprised of vectors of the same length. This is good, but what we get back is a list. If we want to convert this list to a vector, we can use sapply rather than lapply because sapply = simplify apply. If you want to apply the function but within levels of a factor, you can use tapply. But tapply applies to one variable at a time, because tapply applies the function to a vector, and INDEX variable. If you wanted to tapply to every column in adsl_saf you would need to apply the tapply and remember which MARGIN you need to work over and figure out that the FUN function you need to apply needs to be expressed as a function. And then you'd have to figure out how to reference elements of a named array to be able to use the output... Not easy. And yes, there's a whole family of apply functions: apply, lapply, sapply, tapply, mapply, rapply, ... It's hard to remember exactly what each of these does - what it expects as an input, what it is likely to generate as an output, and what the arguments of each function do. ## tidy iteration ### Column-wise operations using across. To solve this, the {tidyverse} has come up with some easier ways to deal with doing the same action across multiple columns or rows of a dataset. It also has an extension to allow us to apply functions and get predictable results back. In the earlier Mini-projects we have relied on the summarise function to get back a summary of the counts per group. summarise also works across columns, but we need to tell the function which columns to apply the function to. To do this we use the across function. This function takes two main arguments: .cols which defines which columns to act on and .fns to define what function to apply to each of the identified columns. Note that what we get back from this operation is another tibble data set. This is handy because we can continue to process this data in {dplyr} data pipelines quite easily. What we're relying on here with the .cols = everything() argument is a nifty set of functions within the {tidyselect} package. This allows you to be quite precise about which columns to summarise. Options for .cols include starts_with, ends_with, contains, all_of, any_of, where(is.numeric), where(is.character), etc. OR you can specify columns by position e.g. 2:9 OR you can simply name the columns you would like it to operate on. In the code chunk below we're using the any_of option that tries to match against the vector of column names, and then applies the function to any columns that match the names given. An alternative might be all_of but then if a column is missing from the set, the operation will stop. The beauty of {tidyselect} is that it uses syntax that is fairly self-explanatory and doesn't rely on positions of columns in the dataset. So it can be configured to be pretty robust for different input data. In the example above, if the ETHNIC variable was missing, the code would still run, but just report back the results for AGE, SEX, RACE. Using where(is.numeric) allows us to process only numeric variables. This can be helpful for printing purposes - for example, you might want to round ALL numeric values to two decimal places. In the example below though, we're returning the median of all numeric columns. You can also incorporate group_by operations: You can also perform similar functions using the mutate verb instead of summarise. So for example, if you wish to ensure that all character columns are presented in upper case: ### row-wise operations using rowwise. Similarly, you can tell R to do things across rows in a dataset using the rowwise operation. rowwise is essentially a special kind of group_by operation. It expects you to identify one line of a dataset using identifier variables. You can then use mutate and summarise as before, operating across columns for each row as defined in rowwise. The analogue of across from the column-wise operations is c_across. Unlike across in column-wise operations which goes on the left of the equal sign and usually has a function associated with it, c_across goes on the right of the equal sign, often within a function operator and only selects columns. Here we have flipped the function to show the number of missing items for each subject's data row. This could be quite helpful in a data review context. ## Make functions {purrr} with map. With column-wise and row-wise operations as illustrated above, you can do quite a lot without having to write loops. But there are occasions where it would be useful to be able to have something like the apply family of functions, but without having to remember all of the different inputs, outputs and argument options. The {purrr} package attempts to get around that using the map family of functions. These all have the same basic structure and arguments. map functions take a LIST as an input and the user must supply a function to operate on each element of the list. But it's quite easy to break data into lists: We can then use the map function to apply any function to that set of data. If you want to apply the function to the list item just for the side-effect e.g. to plot a graph, or write out something to file, there's an equivalent walk function. There are extensions to the map function to specify what type of output object (or what type of column attributes the output should have). There are also extensions to allow you to work through two lists, operating on items in both simultaneously - so perhaps calculating some values using the first element of input 1, and settings using the first element from input 2. ### Speed it up, make it parallel The beauty of working with functions, splitting data into lists defined by some attributes is that you can then use parallel processing to speed up lengthy jobs even further. Using loops works (by default) on one processor. The apply family of functions works on one processor. The {dplyr} verbs work on one processor. BUT there is always a way to make things faster with R. The {multidyplr} package allows you to set up a cluster of processors and then uses {dplyr} verbs across group_by groups. <https://multidplyr.tidyverse.org/articles/multidplyr.html The {furrr} package uses {purrr} like function analogues to split tasks across multiple processors. https://furrr.futureverse.org/ The {foreach} package sets up clusters of processors and splits out tasks using foreach(...) %do% syntax. https://cran.r-project.org/web/packages/foreach/vignettes/foreach.html Using each of these packages is a little out of scope for this Mini-Project, but it's worth knowing that they are available if you need to do large-scale processing of data, and now you know how to split data into list objects and apply functions to each element of that list. ## Challenge Apply the adsl_counts function that you developed in Mini-Project 7 to the adsl_saf data here, to show the counts of SEX by TRT01A for each value of RACE.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript",
+        "medical"
+      ],
+      "topic_tags": [
+        "Mini-project 8 - Applying functions through iteration",
+        "miniproject8",
+        "step 6"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject9::1",
+      "collection_id": "pharma-hands-on::miniproject9",
+      "project_slug": "miniproject9",
+      "source_file": "MiniProject9.Rmd",
+      "step_number": 1,
+      "title": "Mini-project 9 - Reproducible examples and {reprex}",
+      "prompt_text": "The most basic example. To run the reprex, copy all the below code by using Ctrl + C and then running reprex() in your console pane This will create a reprex over in the Viewer pane (most likely bottom right section of your R Studio screen) You will see it packages all your code and outputs into a chunk of code that can be copied and pasted into an email, Teams space, presentation, forum etc. The key thing is that if someone else wants to re-run this code, they can do so without having to change ANYTHING. It ALSO copies the contents of that window back to your clipboard so you can simple PASTE into an email or MS Teams post.",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 9 - Reproducible examples and {reprex}",
+        "miniproject9",
+        "step 1"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject9::2",
+      "collection_id": "pharma-hands-on::miniproject9",
+      "project_slug": "miniproject9",
+      "source_file": "MiniProject9.Rmd",
+      "step_number": 2,
+      "title": "Mini-project 9 - Reproducible examples and {reprex}",
+      "prompt_text": "Now, lets take some code that we used back in the first round of mini projects to recode the variable SEX and look at the reprex for that. So again, copy all code in the following chunk, and then type reprex() into your console at the bottom of you screen. This gives us a nicely rendered HTML preview that will display in RStudio's Viewer. This is preferable to a screenshot because anyone else can copy, paste, and run this immediately. You'll see here, that the error we are getting is that reprex couldn't find the read_xpt function nor identify the pipe \"%\\>%\" function. This is because while we have loaded tidyverse in our R environement, it was not included in the reprex. ## What to include in a Reproducible Example:",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 9 - Reproducible examples and {reprex}",
+        "miniproject9",
+        "step 2"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject9::1",
+      "collection_id": "pharma-hands-on::miniproject9",
+      "project_slug": "miniproject9",
+      "source_file": "MiniProject9.Rmd",
+      "step_number": 1,
+      "title": "Mini-project 9 - Reproducible examples and {reprex}",
+      "prompt_text": "Background information -- what are you trying to do? What have you already done",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 9 - Reproducible examples and {reprex}",
+        "miniproject9",
+        "step 1"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject9::2",
+      "collection_id": "pharma-hands-on::miniproject9",
+      "project_slug": "miniproject9",
+      "source_file": "MiniProject9.Rmd",
+      "step_number": 2,
+      "title": "Mini-project 9 - Reproducible examples and {reprex}",
+      "prompt_text": "Complete set up -- include any library() calls and data needed to reproduce your issue a. (so my code from above is actually not correct because I have my library statements in a different R chunk)",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 9 - Reproducible examples and {reprex}",
+        "miniproject9",
+        "step 2"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject9::3",
+      "collection_id": "pharma-hands-on::miniproject9",
+      "project_slug": "miniproject9",
+      "source_file": "MiniProject9.Rmd",
+      "step_number": 3,
+      "title": "Mini-project 9 - Reproducible examples and {reprex}",
+      "prompt_text": "Keep it simple -- only include the minimal code required to reproduce your error on the data provided",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 9 - Reproducible examples and {reprex}",
+        "miniproject9",
+        "step 3"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject9::4",
+      "collection_id": "pharma-hands-on::miniproject9",
+      "project_slug": "miniproject9",
+      "source_file": "MiniProject9.Rmd",
+      "step_number": 4,
+      "title": "Mini-project 9 - Reproducible examples and {reprex}",
+      "prompt_text": "So a better version of the code above would be: Copy all the code in this chunk and then run reprex() in your console. Here you have everything in one nice neat chunk of code. You'll see here that there may still be some \"Warnings\" coming in, but not the kind of warnings that stop the chunk from working. We are getting Warnings about package versions. This doesn't mean the code won't/doesn't work. Its just letting others know what versions of the packages you have downloaded into your R. However you will see that now the warning about the pipe (%\\>%) is gone.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics"
+      ],
+      "topic_tags": [
+        "Mini-project 9 - Reproducible examples and {reprex}",
+        "miniproject9",
+        "step 4"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject9::4",
+      "collection_id": "pharma-hands-on::miniproject9",
+      "project_slug": "miniproject9",
+      "source_file": "MiniProject9.Rmd",
+      "step_number": 4,
+      "title": "Mini-project 9 - Reproducible examples and {reprex}",
+      "prompt_text": "Now lets look at a slightly more complicated example. This is some code that was originally used in Mini Project 6. Copy all the code in this chunk and then run reprex() in your console. NOTE: It may take a moment for the data to load. Again as long as we have the necessary packages included in the reprex, there's no problems with this code.",
+      "candidate_track_ids": [
+        "software",
+        "introCS"
+      ],
+      "topic_tags": [
+        "Mini-project 9 - Reproducible examples and {reprex}",
+        "miniproject9",
+        "step 4"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject9::5",
+      "collection_id": "pharma-hands-on::miniproject9",
+      "project_slug": "miniproject9",
+      "source_file": "MiniProject9.Rmd",
+      "step_number": 5,
+      "title": "Mini-project 9 - Reproducible examples and {reprex}",
+      "prompt_text": "Looking at reprex including a plot. You'll see reprex doesn't really change even though we are creating a plot here. Over in the Viewer pane, we see the reprex, and then the output graph is shown below it, but its not actually part of the reprex. BUT... these last two examples are not minimally reproducible examples. In order to re-run this, someone helping has to have access to your database and/or the dataset you're referencing. And if that dataset is large or takes a while to read, then it's overhead for the problem solving process, if what you're REALLY asking about is the plot code. So how can we make this problem statement smaller and more \"minimal\"? 5.5 A brief side step into tribbles. For our next example, we're going to use the tribble() function. So what is a tribble? A tribble is a quick and simple way to set up a small data set. It's IDEAL for use in a reprex. To create a tribble, first you need to define your variable names, like you would in datalines or cards in SAS. Here you don't need to specify character or numeric types for the variables. R will be able to determine that for us. Note you also don't need to specify the end of the record for each data row. Simply separate values by columns and the tribble function takes care of the rest for you. To create the variable names, start with a '\\~' character and then the variable name, and then type your values with comma separation. We can see here that myData is a data frame with 4 rows and two columns. Treatment is a character variable and value is a dbl (numeric) variable. Creating something very pared down and simple for reprex can be incredibly helpful because it takes less computing time and narrows down the issue to only the variables that are needed. If you're creating a reprex to ask about a plot, and your code has three steps of data manipulation before this, don't replicate the data manipulation. Jump straight in with a tribble describing the format of the data that goes into the plot. And don't guess what the output of that data manipulation is and specify an \"idealised\" tribble. Inspect the data you have after manipulation and pass only those columns needed in the plot exactly as you see them in the manipulated data. You can use random values for continuous outcomes if you like. The point is often not what the values are necessarily, more it's to do with the structure of the data.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "introDataScience",
+        "apStatistics",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 9 - Reproducible examples and {reprex}",
+        "miniproject9",
+        "step 5"
+      ]
+    },
+    {
+      "source_id": "pharma-hands-on::miniproject9::6",
+      "collection_id": "pharma-hands-on::miniproject9",
+      "project_slug": "miniproject9",
+      "source_file": "MiniProject9.Rmd",
+      "step_number": 6,
+      "title": "Mini-project 9 - Reproducible examples and {reprex}",
+      "prompt_text": "Reprex for a user created function. ## Last minute dos and don'ts. - DON'T start a chuck with rm(list = ls()). You'll wipe out the current environment of the person who is trying to help you. Which they probably won't appreciate. (The workspace is like a SAS working directory and this command would be like executing a SAS kill ).\\ - DON'T start with a setwd(\"C:/Users/yourUsername/Documents/\") because it won't work on someone else's computer. - Call ONLY the packages you need to illustrate the problem. - ONLY include code that illustrates your problem. - Include the smallest dataset that illustrates the problem. - If you are creating files in your reprex package, DO delete them when you're done, again so you're not messing up someone elses workspace. More dos and dont's here: https://reprex.tidyverse.org/articles/reprex-dos-and-donts.html ## Additional resources: \"Help me help you: Creating reproducible examples with reprex\" by Jennifer Bryan: - https://reprex.tidyverse.org/articles/learn-reprex.html - https://posit.co/resources/videos/help-me-help-you-creating-reproducible-examples/ ## Gotchas - Did you forget to include all the required library() calls? - Does the data / tibble you're using have ALL the variables you need? - Did you run reprex::reprex() but then run it again without copying new content into the clipboard? reprex will warn you if you do this, because it copies the results of reprex to the clipboard, if you run reprex again, it will try to run reprex on the output of the previous reprex. ## Final notes: creating a great reprex requires work. You are most likely creating a reprex because you're asking other people to do work for you. It's a partnership. Often times, you will solve your own problem in the course of writing an excellent reprex. And when that doesn't happen, you'll have a reprex that you can easily share with others so that they can help you solve your problem. ## Challenge: What Went wrong here Create a more minimal reprex that will help someone else understand and help you fix the problem.",
+      "candidate_track_ids": [
+        "software",
+        "introCS",
+        "basic_javascript"
+      ],
+      "topic_tags": [
+        "Mini-project 9 - Reproducible examples and {reprex}",
+        "miniproject9",
+        "step 6"
+      ]
+    }
+  ]
+}

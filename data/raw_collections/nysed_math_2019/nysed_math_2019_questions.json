@@ -1,0 +1,3846 @@
+{
+  "source": "NYSED 2019 Grades 3-8 Mathematics Released Questions",
+  "questionCount": 192,
+  "items": [
+    {
+      "source_id": "nysed-math-2019::grade-3::1",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.OA.A.1 Operations and Algebraic Thinking 0.90",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::2",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.OA.D.9 Operations and Algebraic Thinking 0.81",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::3",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.OA.A.2 Operations and Algebraic Thinking 0.81",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::5",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 5,
+      "prompt_text": "minutes to let them cool",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::6",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 6,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.OA.A.3 Operations and Algebraic Thinking 0.70",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::7",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.D.8 Operations and Algebraic Thinking 0.35",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::8",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 8,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.NF.A.3a Number and Operations - Fractions 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::9",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 9,
+      "prompt_text": "minutes to mix the batter",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::10",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 10,
+      "prompt_text": "minutes to frost the cupcakes What time did Suzy \ufb01nish frosting the cupcakes? Show your work. Answer p.m.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::15",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.MD.C.7c Measurement and Data 0.56",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::16",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.OA.B.5 Operations and Algebraic Thinking 0.48",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::18",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 18,
+      "prompt_text": "minutes to bake the cupcakes",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::21",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.OA.A.4 Operations and Algebraic Thinking 0.70",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::22",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 22,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.NBT.A.1 Number and Operations in Base Ten 0.45",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::23",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.D.9 Operations and Algebraic Thinking 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::26",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 26,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.NF.A.3b Number and Operations - Fractions 0.84",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::27",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 27,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.OA.A.3 Operations and Algebraic Thinking 0.77",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::28",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 28,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.MD.C.5b Measurement and Data 0.93",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::29",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 29,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.MD.B.3 Measurement and Data 0.67",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::30",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 30,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.A.2 Operations and Algebraic Thinking 0.69",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::31",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.MD.C.7d Measurement and Data 0.34 Question Type Key THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2019 Mathematics Tests Map to the Standards Grade 3 Released Questions on EngageNY Points Standard Cluster Constructed Response Questions:",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::32",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.OA.B.5 Operations and Algebraic Thinking 0.70",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::33",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.OA.D.8 Operations and Algebraic Thinking 0.48",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::34",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 34,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.3.OA.B.6 Operations and Algebraic Thinking 1.20 0.60",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::35",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 35,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.3.NF.A.3d Number and Operations - Fractions 0.78 0.39",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::36",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 36,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.3.MD.A.1 Measurement and Data 1.06 0.53",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::37",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 37,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.3.NBT.A.3 Number and Operations in Base Ten 0.97 0.49",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::38",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 38,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.3.MD.C.6 Measurement and Data 0.83 0.41",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::39",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 39,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.3.NF.A.1 Number and Operations - Fractions 1.19 0.59",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::40",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 40,
+      "prompt_text": "Constructed Response 3 CCSS.Math.Content.3.OA.A.3 Operations and Algebraic Thinking 2.03 0.68 *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-3::81",
+      "collection_id": "nysed-math-2019::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2019 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf",
+      "question_number": 81,
+      "prompt_text": "shirts are ordered each shipping box holds 9 shirts How many shipping boxes are needed for all of the shirts ordered? A 8 B 9 C 72 D 90",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::1",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.NF.B.4c Number and Operations - Fractions 0.79",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::2",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.OA.B.4 Operations and Algebraic Thinking 0.84",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::3",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.4.NF.A.2 Number and Operations - Fractions 0.68",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::4",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.OA.A.2 Operations and Algebraic Thinking 0.55",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::5",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 5,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.4.G.A.1 Geometry 0.67",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::6",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 6,
+      "prompt_text": "boxes of blue folders with 32 folders in each box Which number is closest to the total number of red and blue folders that the teacher buys? A 275 B 380 C 440 D 550",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::8",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 8,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.NF.A.1 Number and Operations - Fractions 0.6",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::9",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.MD.C.7 Measurement and Data 0.74",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::12",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 12,
+      "prompt_text": "feet long and 7 feet wide. If Ms. Peterson already has 45 one-foot square tiles, how many more one-foot square tiles does she need to completely cover the kitchen \ufb02oor? Show your work. Answer more tiles",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::15",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.NBT.B.5 Number and Operations in Base Ten 0.71",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::16",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.NBT.B.6 Number and Operations in Base Ten 0.7",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::17",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 17,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.OA.A.3 Operations and Algebraic Thinking 0.68",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::20",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 20,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.NBT.A.3 Number and Operations in Base Ten 0.64",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::21",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.MD.A.3 Measurement and Data 0.48",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::27",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 27,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.NF.B.3a Number and Operations - Fractions 0.68",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::28",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 28,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.G.A.3 Geometry 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::29",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 29,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.4.MD.C.5a Measurement and Data 0.41",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::30",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 30,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.OA.A.1 Operations and Algebraic Thinking 0.63",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::31",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.NF.B.4a Number and Operations - Fractions 0.83",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::32",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.OA.A.2 Operations and Algebraic Thinking 0.92",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::33",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.NBT.B.6 Number and Operations in Base Ten 0.76 THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2019 Mathematics Tests Map to the Standards Grade 4 Released Questions on EngageNY Question Type Key Points Constructed Response Questions: Standard Cluster",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::34",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.4.MD.C.5b Measurement and Data 0.63",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::35",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.OA.A.1 Operations and Algebraic Thinking 0.58",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::36",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 36,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.4.MD.C.6 Measurement and Data 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::37",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 37,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.NF.A.1 Number and Operations - Fractions 0.74",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::38",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 38,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.MD.B.4 Measurement and Data 0.58",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::39",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 39,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.4.NF.B.4b Number and Operations - Fractions 1.46 0.73",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::40",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 40,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.4.NBT.A.2 Number and Operations in Base Ten 1.04 0.52",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::41",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.4.G.A.2 Geometry 0.97 0.49",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::42",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.4.NF.B.3d Number and Operations - Fractions 1.22 0.61",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::43",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.4.NBT.A.1 Number and Operations in Base Ten 1.04 0.52",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::44",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.4.MD.A.3 Measurement and Data 1.13 0.57",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-4::45",
+      "collection_id": "nysed-math-2019::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2019 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf",
+      "question_number": 45,
+      "prompt_text": "Constructed Response 3 CCSS.Math.Content.4.NBT.B.5 Number and Operations in Base Ten 1.32 0.44 *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::1",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.MD.C.5b Measurement and Data 0.86",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::2",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.NF.C.5 Number and Operations - Fractions 0.68",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::3",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.5.NF.B.6 Number and Operations - Fractions 0.39",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::4",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.NF.C.6 Number and Operations in Base Ten 0.69",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::9",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 9,
+      "prompt_text": "more equal layers of unit cubes are added on top of the bottom layer What is the total volume, in cubic units, of the completed tower? Show your work. Answer cubic units",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::13",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NF.B.4b Number and Operations - Fractions 0.35",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::18",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 18,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.MD.C.5a Measurement and Data 0.61",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::19",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 19,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.5.NBT.A.4 Number and Operations in Base Ten 0.74",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::20",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 20,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NF.B.7c Number and Operations - Fractions 0.53",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::21",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.5.NF.A.2 Number and Operations - Fractions 0.48",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::26",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 26,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.5.NF.B.7a Number and Operations - Fractions 0.7",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::27",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 27,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.5.NBT.B.7 Number and Operations in Base Ten 0.4",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::28",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 28,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.5.NBT.B.6 Number and Operations in Base Ten 0.77",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::29",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 29,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.MD.B.2 Measurement and Data 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::30",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 30,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.MD.C.5c Measurement and Data 0.71",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::31",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.5.G.B.3 Geometry 0.71",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::32",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NF.A.1 Number and Operations - Fractions 0.74",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::33",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.MD.A.1 Measurement and Data 0.41",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::34",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NF.A.1 Number and Operations - Fractions 0.74 THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2019 Mathematics Tests Map to the Standards Grade 5 Released Questions on EngageNY Constructed Response Questions: ClusterStandardPointsKeyTypeQuestion",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::35",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.5.NBT.B.7 Number and Operations in Base Ten 0.74",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::36",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 36,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NBT.A.3a Number and Operations in Base Ten 0.67",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::37",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 37,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.5.NF.B.6 Number and Operations - Fractions 0.64",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::38",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 38,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NF.B.4a Number and Operations - Fractions 0.49",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::39",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 39,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.5.MD.C.5c Measurement and Data 0.78 0.39",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::40",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 40,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.5.NF.A.2 Number and Operations - Fractions 1.04 0.52",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::41",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.5.NBT.A.1 Number and Operations in Base Ten 1.05 0.52",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::42",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.5.NF.B.7c Number and Operations - Fractions 1.02 0.51",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::43",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.5.MD.A.1 Measurement and Data 0.9 0.45",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::44",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.5.NF.B.5b Number and Operations - Fractions 0.93 0.47",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-5::45",
+      "collection_id": "nysed-math-2019::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2019 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf",
+      "question_number": 45,
+      "prompt_text": "Constructed Response 3 CCSS.Math.Content.5.NBT.B.7 Number and Operations in Base Ten 2.34 0.78 *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::1",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.G.A.3 Geometry 0.76",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::2",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.EE.A.1 Expressions and Equations 0.71",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::3",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.G.A.1 Geometry 0.62",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::4",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.RP.A.3d Ratios and Proportional Relationships 0.64",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::7",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.EE.A.2a Expressions and Equations 0.53",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::10",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.NS.A.1 The Number System 0.72",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::13",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.NS.A.1 The Number System 0.56",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::16",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.NS.B.4 The Number System 0.61",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::17",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 17,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.NS.C.7d The Number System 0.6",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::26",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 26,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.RP.A.3a Ratios and Proportional Relationships 0.7",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::27",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 27,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.EE.A.2c Expressions and Equations 0.42",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::28",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 28,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.NS.A.1 The Number System 0.65",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::29",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 29,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.RP.A.1 Ratios and Proportional Relationships 0.62",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::30",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 30,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.EE.B.7 Expressions and Equations 0.7",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::31",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.EE.A.3 Expressions and Equations 0.61",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::32",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.EE.B.5 Expressions and Equations 0.57",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::33",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.RP.A.3c Ratios and Proportional Relationships 0.72",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::34",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.EE.A.2a Expressions and Equations 0.63",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::35",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.EE.B.5 Expressions and Equations 0.61",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::36",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 36,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.G.A.3 Geometry 0.6",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::37",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 37,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.EE.B.6 Expressions and Equations 0.36",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::38",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 38,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.G.A.4 Geometry 0.51",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::39",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 39,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.6.G.A.1 Geometry 0.68 0.34",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::40",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 40,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.6.NS.B.4 The Number System 1.27 0.63 THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 Question Type Key Points Standard Cluster 2019 Mathematics Tests Map to the Standards Grade 6 Released Questions on EngageNY Constructed Response Questions:",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::41",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.6.RP.A.2 Ratios and Proportional Relationships 0.93 0.46",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::42",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.6.EE.B.7 Expressions and Equations 0.82 0.41",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::43",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.5.OA.B.3 Expressions and Equations 0.7 0.35",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::44",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.6.EE.A.2a Expressions and Equations 0.99 0.49",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::45",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 45,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.6.RP.A.3d Ratios and Proportional Relationships 0.41 0.21",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-6::46",
+      "collection_id": "nysed-math-2019::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2019 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf",
+      "question_number": 46,
+      "prompt_text": "Constructed Response 3 CCSS.Math.Content.6.EE.C.9 Expressions and Equations 1.62 0.54 *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::1",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.EE.B.4a Expressions and Equations 0.81",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::2",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.NS.A.2d The Number System 0.84",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::3",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.RP.A.3 Ratios and Proportional Relationships 0.66",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::4",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.G.B.4 Geometry 0.47",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::5",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 5,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.RP.A.1 Ratios and Proportional Relationships 0.49",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::9",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.RP.A.2b Ratios and Proportional Relationships 0.42",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::10",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.NS.A.1a The Number System 0.72",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::13",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.RP.A.3 Ratios and Proportional Relationships 0.56",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::14",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.EE.A.2 Expressions and Equations 0.36",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::15",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.NS.A.3 The Number System 0.64",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::16",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.RP.A.1 Ratios and Proportional Relationships 0.65",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::19",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 19,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.RP.A.2a Ratios and Proportional Relationships 0.8",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::20",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 20,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.EE.A.1 Expressions and Equations 0.68",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::27",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 27,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.G.A.1 Geometry 0.53",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::28",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 28,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.NS.A.1c The Number System 0.49",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::29",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 29,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.EE.B.4b Expressions and Equations 0.58",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::30",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 30,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.SP.A.1 Statistics and Probability 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::31",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.SP.C.6 Statistics and Probability 0.51",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::32",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.NS.A.1a The Number System 0.57",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::34",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.RP.A.2c Ratios and Proportional Relationships 0.78 2019 Mathematics Tests Map to the Standards Grade 7 Released Questions on EngageNY Constructed Response Questions: Question Type Key Points Standard Cluster THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::35",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.EE.A.1 Expressions and Equations 0.68",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::36",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 36,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.SP.B.5c Statistics and Probability 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::37",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 37,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.SP.C.6 Statistics and Probability 0.63",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::38",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 38,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.EE.B.4b Expressions and Equations 0.64",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::39",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 39,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.NS.A.2c The Number System 0.66",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::40",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 40,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.EE.B.4a Expressions and Equations 0.44",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::41",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.EE.B.3 Expressions and Equations 1.24 0.62",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::42",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.RP.A.3 Ratios and Proportional Relationships 0.8 0.4",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::43",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.RP.A.1 Ratios and Proportional Relationships 1.03 0.52",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::44",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.EE.B.4a Expressions and Equations 1.37 0.69",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::45",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 45,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.SP.A.2 Statistics and Probability 0.91 0.46",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::46",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 46,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.NS.A.3 The Number System 1.23 0.61",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::47",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 47,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.RP.A.2c Ratios and Proportional Relationships 0.72 0.36",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-7::48",
+      "collection_id": "nysed-math-2019::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2019 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "question_number": 48,
+      "prompt_text": "Constructed Response 3 CCSS.Math.Content.7.EE.B.3 Expressions and Equations 1.58 0.53 *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::1",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.F.A.3 Functions 0.61",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::2",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.EE.A.4 Expressions and Equations 0.58",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::3",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.F.B.4 Functions 0.65",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::4",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.G.C.9 Geometry 0.65",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::7",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.F.A.3 Functions 0.56",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::8",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 8,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.EE.B.6 Expressions and Equations 0.56",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::9",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.EE.A.4 Expressions and Equations 0.58",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::11",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.G.A.2 Geometry 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::12",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 12,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.EE.C.8b Expressions and Equations 0.38",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::13",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.EE.C.8b Expressions and Equations 0.44",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::16",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.G.A.4 Geometry 0.56",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::17",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 17,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.G.B.6 Geometry 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::24",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 24,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.SP.A.2 Statistics and Probability 0.51",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::25",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 25,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.EE.B.5 Expressions and Equations 0.47",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::29",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 29,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.EE.A.1 Expressions and Equations 0.51",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::30",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 30,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.F.A.2 Functions 0.43",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::31",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.SP.A.1 Statistics and Probability 0.7",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::32",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.G.A.5 Geometry 0.53 THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2019 Mathematics Tests Map to the Standards Grade 8 Released Questions on EngageNY Constructed Response Questions: ClusterStandardPointsKeyTypeQuestion",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::33",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.F.B.5 Functions 0.5",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::34",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.F.A.1 Functions 0.6",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::35",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.G.C.9 Geometry 0.57",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::36",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 36,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.SP.A.2 Statistics and Probability 0.69",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::37",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 37,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.EE.A.1 Expressions and Equations 0.6",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::38",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 38,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.SP.A.1 Statistics and Probability 0.69",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::39",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 39,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.G.A.3 Geometry 0.48",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::40",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 40,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.F.A.1 Functions 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::41",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.EE.A.4 Expressions and Equations 0.91 0.45",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::42",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.F.A.3 Functions 1.06 0.53",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::43",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.EE.C.8b Expressions and Equations 0.69 0.34",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::44",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.F.B.4 Functions 0.81 0.41",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::45",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 45,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.EE.B.5 Expressions and Equations 0.88 0.44",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::46",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 46,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.G.A.3 Geometry 0.53 0.26",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::47",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 47,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.G.C.9 Geometry 1.07 0.54",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2019::grade-8::48",
+      "collection_id": "nysed-math-2019::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2019 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf",
+      "question_number": 48,
+      "prompt_text": "Constructed Response 3 CCSS.Math.Content.8.F.A.3 Functions 1.31 0.44 *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2019 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2019"
+      ]
+    }
+  ]
+}

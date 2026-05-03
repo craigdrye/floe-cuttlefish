@@ -1,0 +1,3073 @@
+[
+  {
+    "folderName": "opentriviaqa",
+    "sourceName": "OpenTriviaQA",
+    "questionCount": 49716,
+    "collectionCount": 22,
+    "license": "CC BY-SA 4.0",
+    "action": "hold-low-priority",
+    "rationale": "Massive volume, but too broad and off-brand for Floe’s current specialization without aggressive filtering.",
+    "recommendedTracks": [
+      "Brain Burners",
+      "AP U.S. History",
+      "Philosophy"
+    ],
+    "proposedCourses": [
+      "Trivia Sprint",
+      "Culture and Media Quiz"
+    ],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "apHistory",
+        "count": 14598
+      },
+      {
+        "trackId": "ibHistory",
+        "count": 14598
+      },
+      {
+        "trackId": "brainBurners",
+        "count": 4062
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 3497
+      },
+      {
+        "trackId": "genBio1",
+        "count": 2940
+      },
+      {
+        "trackId": "genPhys1",
+        "count": 2940
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "opentriviaqa::music",
+        "count": 5579
+      },
+      {
+        "collectionId": "opentriviaqa::television",
+        "count": 5230
+      },
+      {
+        "collectionId": "opentriviaqa::world",
+        "count": 4875
+      },
+      {
+        "collectionId": "opentriviaqa::movies",
+        "count": 4313
+      },
+      {
+        "collectionId": "opentriviaqa::general",
+        "count": 3290
+      },
+      {
+        "collectionId": "opentriviaqa::celebrities",
+        "count": 3196
+      }
+    ]
+  },
+  {
+    "folderName": "webwork_opl",
+    "sourceName": "WeBWorK Open Problem Library",
+    "questionCount": 22861,
+    "collectionCount": 18,
+    "license": "CC BY-NC-SA 3.0",
+    "action": "split-new-families",
+    "rationale": "Huge math corpus with weak metadata; best used as a depth reservoir after subject cleanup.",
+    "recommendedTracks": [
+      "AP Calculus AB",
+      "AP Calculus BC",
+      "Linear Algebra",
+      "Quant Interview Advanced"
+    ],
+    "proposedCourses": [
+      "Contest Math Drills",
+      "College Algebra Workout"
+    ],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "genMath1",
+        "count": 3617
+      },
+      {
+        "trackId": "apCalculusAB",
+        "count": 3117
+      },
+      {
+        "trackId": "apCalculusBC",
+        "count": 3117
+      },
+      {
+        "trackId": "quantAdvanced",
+        "count": 2786
+      },
+      {
+        "trackId": "linearAlgebra",
+        "count": 1677
+      },
+      {
+        "trackId": "mathExtensions",
+        "count": 698
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "webwork-opl::unknown-subject::unknown-chapter",
+        "count": 22688
+      },
+      {
+        "collectionId": "webwork-opl::webwork::unknown-chapter",
+        "count": 47
+      },
+      {
+        "collectionId": "webwork-opl::zzz-inserted-text::zzz-inserted-text",
+        "count": 32
+      },
+      {
+        "collectionId": "webwork-opl::unknown-subject::groups",
+        "count": 26
+      },
+      {
+        "collectionId": "webwork-opl::webwork::demos",
+        "count": 17
+      },
+      {
+        "collectionId": "webwork-opl::probability::random-variables",
+        "count": 14
+      }
+    ]
+  },
+  {
+    "folderName": "numbas_exams",
+    "sourceName": "Numbas reusable exams",
+    "questionCount": 12063,
+    "collectionCount": 1326,
+    "license": "unspecified",
+    "action": "split-new-families",
+    "rationale": "Assessment-style math bundles that naturally support diagnostics and chaptered challenge tracks.",
+    "recommendedTracks": [
+      "AP Calculus AB",
+      "AP Calculus BC",
+      "Linear Algebra",
+      "General Physics I (Mechanics)"
+    ],
+    "proposedCourses": [
+      "Math Diagnostics",
+      "Mechanics Drill Sets"
+    ],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "apCalculusAB",
+        "count": 1479
+      },
+      {
+        "trackId": "apCalculusBC",
+        "count": 1479
+      },
+      {
+        "trackId": "genMath1",
+        "count": 1479
+      },
+      {
+        "trackId": "high_algebra_2",
+        "count": 1405
+      },
+      {
+        "trackId": "mathExtensions",
+        "count": 1405
+      },
+      {
+        "trackId": "linearAlgebra",
+        "count": 1405
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "numbas-exam::40148",
+        "count": 174
+      },
+      {
+        "collectionId": "numbas-exam::39034",
+        "count": 114
+      },
+      {
+        "collectionId": "numbas-exam::22135",
+        "count": 93
+      },
+      {
+        "collectionId": "numbas-exam::35505",
+        "count": 82
+      },
+      {
+        "collectionId": "numbas-exam::40718",
+        "count": 70
+      },
+      {
+        "collectionId": "numbas-exam::40228",
+        "count": 69
+      }
+    ]
+  },
+  {
+    "folderName": "numbas",
+    "sourceName": "Numbas public database",
+    "questionCount": 9808,
+    "collectionCount": 1,
+    "license": "Mixed open-access licences from reusable public questions",
+    "action": "split-new-families",
+    "rationale": "Large math reservoir with decent candidate tags, but too broad to dump into one existing course.",
+    "recommendedTracks": [
+      "AP Calculus AB",
+      "AP Calculus BC",
+      "AP Statistics",
+      "Linear Algebra"
+    ],
+    "proposedCourses": [
+      "Engineering Mechanics",
+      "Algebra Workout",
+      "Quantitative Methods"
+    ],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "high_algebra_2",
+        "count": 2296
+      },
+      {
+        "trackId": "mathExtensions",
+        "count": 2296
+      },
+      {
+        "trackId": "quantAdvanced",
+        "count": 980
+      },
+      {
+        "trackId": "apCalculusAB",
+        "count": 841
+      },
+      {
+        "trackId": "apCalculusBC",
+        "count": 841
+      },
+      {
+        "trackId": "genMath1",
+        "count": 841
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "numbas::reuse-questions",
+        "count": 9808
+      }
+    ]
+  },
+  {
+    "folderName": "opendsa",
+    "sourceName": "OpenDSA",
+    "questionCount": 1257,
+    "collectionCount": 26,
+    "license": "MIT",
+    "action": "map-and-expand",
+    "rationale": "Strong CS fit and already tagged toward existing computing courses.",
+    "recommendedTracks": [
+      "Introduction to Computer Science (Python)",
+      "Software Engineering Interview Prep",
+      "Data Structures",
+      "Logic & Critical Thinking"
+    ],
+    "proposedCourses": [
+      "Algorithms Drills"
+    ],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "introCS",
+        "count": 1257
+      },
+      {
+        "trackId": "software",
+        "count": 965
+      },
+      {
+        "trackId": "dataStructures",
+        "count": 330
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 212
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "open-dsa::introtosoftwaredesign",
+        "count": 249
+      },
+      {
+        "collectionId": "open-dsa::swdesignanddatastructs",
+        "count": 233
+      },
+      {
+        "collectionId": "open-dsa::mengbridgecourse",
+        "count": 141
+      },
+      {
+        "collectionId": "open-dsa::sorting",
+        "count": 131
+      },
+      {
+        "collectionId": "open-dsa::pl",
+        "count": 121
+      },
+      {
+        "collectionId": "open-dsa::list",
+        "count": 65
+      }
+    ]
+  },
+  {
+    "folderName": "staar_2025_rationales",
+    "sourceName": "Texas STAAR 2025 rationales",
+    "questionCount": 1254,
+    "collectionCount": 27,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Official rationale material, useful after cleanup but still belongs in current school-stage tracks.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "AP U.S. History",
+      "Middle School Earth & Space Science"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "high_algebra_1",
+        "count": 517
+      },
+      {
+        "trackId": "satReadingWriting",
+        "count": 492
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 492
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 455
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 455
+      },
+      {
+        "trackId": "spanish",
+        "count": 299
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "staar-2025-rationale::u-s-history",
+        "count": 65
+      },
+      {
+        "collectionId": "staar-2025-rationale::algebra-i",
+        "count": 62
+      },
+      {
+        "collectionId": "staar-2025-rationale::grade-8-math",
+        "count": 60
+      },
+      {
+        "collectionId": "staar-2025-rationale::grade-7-math",
+        "count": 55
+      },
+      {
+        "collectionId": "staar-2025-rationale::grade-5-spanish-math",
+        "count": 54
+      },
+      {
+        "collectionId": "staar-2025-rationale::english-i",
+        "count": 53
+      }
+    ]
+  },
+  {
+    "folderName": "opensat",
+    "sourceName": "OpenSAT / PineSAT API",
+    "questionCount": 1200,
+    "collectionCount": 2,
+    "license": "See OpenSAT repository and PineSAT public API",
+    "action": "map-existing",
+    "rationale": "Already points cleanly at SAT, reading/writing, and math-prep style tracks.",
+    "recommendedTracks": [
+      "SAT",
+      "Logic & Critical Thinking",
+      "11+ Exam Prep (UK)",
+      "AP Calculus AB"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "sat",
+        "count": 1200
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 799
+      },
+      {
+        "trackId": "satReadingWriting",
+        "count": 625
+      },
+      {
+        "trackId": "high_algebra_2",
+        "count": 425
+      },
+      {
+        "trackId": "elevenPlus",
+        "count": 401
+      },
+      {
+        "trackId": "apCalculusAB",
+        "count": 401
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "opensat::english",
+        "count": 799
+      },
+      {
+        "collectionId": "opensat::math",
+        "count": 401
+      }
+    ]
+  },
+  {
+    "folderName": "staar_2023_redesign",
+    "sourceName": "Texas STAAR 2023 redesign practice tests",
+    "questionCount": 1069,
+    "collectionCount": 26,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Strongest Texas batch for school-stage enrichment because the redesign forms are large and mixed-subject.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "AP U.S. History",
+      "Middle School Earth & Space Science"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 487
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 487
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 367
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 316
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 316
+      },
+      {
+        "trackId": "spanish",
+        "count": 256
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "staar-2023-redesign::grade-8-science",
+        "count": 66
+      },
+      {
+        "collectionId": "staar-2023-redesign::english-i",
+        "count": 52
+      },
+      {
+        "collectionId": "staar-2023-redesign::english-ii",
+        "count": 52
+      },
+      {
+        "collectionId": "staar-2023-redesign::algebra-i",
+        "count": 51
+      },
+      {
+        "collectionId": "staar-2023-redesign::grade-7-rla",
+        "count": 46
+      },
+      {
+        "collectionId": "staar-2023-redesign::biology",
+        "count": 45
+      }
+    ]
+  },
+  {
+    "folderName": "staar_2022",
+    "sourceName": "Texas STAAR 2022 released tests",
+    "questionCount": 952,
+    "collectionCount": 19,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Good enrichment for school-stage reading, math, science, and history tracks we already have.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "AP U.S. History",
+      "Middle School Earth & Space Science"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 413
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 413
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 266
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 203
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 203
+      },
+      {
+        "trackId": "apHistory",
+        "count": 115
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "staar-2022::english-ii",
+        "count": 78
+      },
+      {
+        "collectionId": "staar-2022::grade-8-science",
+        "count": 71
+      },
+      {
+        "collectionId": "staar-2022::u-s-history",
+        "count": 71
+      },
+      {
+        "collectionId": "staar-2022::algebra-i",
+        "count": 63
+      },
+      {
+        "collectionId": "staar-2022::grade-7-rla",
+        "count": 60
+      },
+      {
+        "collectionId": "staar-2022::grade-6-rla",
+        "count": 55
+      }
+    ]
+  },
+  {
+    "folderName": "staar_2021",
+    "sourceName": "Texas STAAR 2021 released tests",
+    "questionCount": 529,
+    "collectionCount": 10,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Good enrichment for school-stage reading, math, science, and history tracks we already have.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "AP U.S. History",
+      "Middle School Earth & Space Science"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 182
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 182
+      },
+      {
+        "trackId": "apHistory",
+        "count": 114
+      },
+      {
+        "trackId": "usHistory",
+        "count": 114
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 113
+      },
+      {
+        "trackId": "middleSchoolEarthSpace",
+        "count": 70
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "staar-2021::science",
+        "count": 70
+      },
+      {
+        "collectionId": "staar-2021::u-s-history",
+        "count": 70
+      },
+      {
+        "collectionId": "staar-2021::math",
+        "count": 59
+      },
+      {
+        "collectionId": "staar-2021::english-i",
+        "count": 56
+      },
+      {
+        "collectionId": "staar-2021::algebra-i",
+        "count": 54
+      },
+      {
+        "collectionId": "staar-2021::english-ii",
+        "count": 52
+      }
+    ]
+  },
+  {
+    "folderName": "staar_2018",
+    "sourceName": "Texas STAAR 2018 released tests",
+    "questionCount": 502,
+    "collectionCount": 10,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Good enrichment for school-stage reading, math, science, and history tracks we already have.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "AP U.S. History",
+      "Middle School Earth & Space Science"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 178
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 178
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 103
+      },
+      {
+        "trackId": "apHistory",
+        "count": 97
+      },
+      {
+        "trackId": "usHistory",
+        "count": 97
+      },
+      {
+        "trackId": "middleSchoolEarthSpace",
+        "count": 70
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "staar-2018::science",
+        "count": 70
+      },
+      {
+        "collectionId": "staar-2018::u-s-history",
+        "count": 62
+      },
+      {
+        "collectionId": "staar-2018::algebra-i",
+        "count": 58
+      },
+      {
+        "collectionId": "staar-2018::biology",
+        "count": 54
+      },
+      {
+        "collectionId": "staar-2018::english-i",
+        "count": 52
+      },
+      {
+        "collectionId": "staar-2018::english-ii",
+        "count": 52
+      }
+    ]
+  },
+  {
+    "folderName": "staar_2019",
+    "sourceName": "Texas STAAR 2019 released tests",
+    "questionCount": 488,
+    "collectionCount": 10,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Good enrichment for school-stage reading, math, science, and history tracks we already have.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "AP U.S. History",
+      "Middle School Earth & Space Science"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 178
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 178
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 103
+      },
+      {
+        "trackId": "apHistory",
+        "count": 85
+      },
+      {
+        "trackId": "usHistory",
+        "count": 85
+      },
+      {
+        "trackId": "middleSchoolEarthSpace",
+        "count": 71
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "staar-2019::science",
+        "count": 71
+      },
+      {
+        "collectionId": "staar-2019::algebra-i",
+        "count": 55
+      },
+      {
+        "collectionId": "staar-2019::u-s-history",
+        "count": 54
+      },
+      {
+        "collectionId": "staar-2019::english-i",
+        "count": 52
+      },
+      {
+        "collectionId": "staar-2019::english-ii",
+        "count": 52
+      },
+      {
+        "collectionId": "staar-2019::biology",
+        "count": 51
+      }
+    ]
+  },
+  {
+    "folderName": "staar_2024_rationales",
+    "sourceName": "Texas STAAR 2024 rationales",
+    "questionCount": 438,
+    "collectionCount": 9,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Official rationale material, useful after cleanup but still belongs in current school-stage tracks.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "AP U.S. History",
+      "Middle School Earth & Space Science"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 189
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 189
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 144
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 86
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 86
+      },
+      {
+        "trackId": "spanish",
+        "count": 84
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "staar-2024-rationale::u-s-history",
+        "count": 66
+      },
+      {
+        "collectionId": "staar-2024-rationale::algebra-i",
+        "count": 58
+      },
+      {
+        "collectionId": "staar-2024-rationale::english-ii",
+        "count": 55
+      },
+      {
+        "collectionId": "staar-2024-rationale::english-i",
+        "count": 52
+      },
+      {
+        "collectionId": "staar-2024-rationale::grade-3-math",
+        "count": 43
+      },
+      {
+        "collectionId": "staar-2024-rationale::grade-3-spanish-math",
+        "count": 43
+      }
+    ]
+  },
+  {
+    "folderName": "open_logic_project",
+    "sourceName": "Open Logic Project",
+    "questionCount": 430,
+    "collectionCount": 17,
+    "license": "CC BY 4.0",
+    "action": "map-and-expand",
+    "rationale": "Excellent philosophy/logic source and one of the cleanest fits with Floe’s specialization.",
+    "recommendedTracks": [
+      "Philosophy",
+      "Logic & Critical Thinking",
+      "Moral Crossroads"
+    ],
+    "proposedCourses": [
+      "Formal Logic",
+      "Set Theory and Proof"
+    ],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "philosophy",
+        "count": 430
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 298
+      },
+      {
+        "trackId": "dataStructures",
+        "count": 72
+      },
+      {
+        "trackId": "software",
+        "count": 72
+      },
+      {
+        "trackId": "philSenior",
+        "count": 66
+      },
+      {
+        "trackId": "linearAlgebra",
+        "count": 39
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "open-logic-project::first-order-logic",
+        "count": 92
+      },
+      {
+        "collectionId": "open-logic-project::sets-functions-relations",
+        "count": 73
+      },
+      {
+        "collectionId": "open-logic-project::normal-modal-logic",
+        "count": 45
+      },
+      {
+        "collectionId": "open-logic-project::lambda-calculus",
+        "count": 27
+      },
+      {
+        "collectionId": "open-logic-project::turing-machines",
+        "count": 27
+      },
+      {
+        "collectionId": "open-logic-project::incompleteness",
+        "count": 23
+      }
+    ]
+  },
+  {
+    "folderName": "staar_2023",
+    "sourceName": "Texas STAAR 2023 paper samplers",
+    "questionCount": 427,
+    "collectionCount": 20,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Good enrichment for school-stage tracks; sampler-sized but still useful.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "AP U.S. History",
+      "Middle School Earth & Space Science"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 216
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 216
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 150
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 136
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 136
+      },
+      {
+        "trackId": "middleSchoolEarthSpace",
+        "count": 33
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "staar-2023::grade-5-rla",
+        "count": 64
+      },
+      {
+        "collectionId": "staar-2023::grade-4-rla",
+        "count": 55
+      },
+      {
+        "collectionId": "staar-2023::grade-7-rla",
+        "count": 42
+      },
+      {
+        "collectionId": "staar-2023::english-i",
+        "count": 36
+      },
+      {
+        "collectionId": "staar-2023::grade-3-rla",
+        "count": 20
+      },
+      {
+        "collectionId": "staar-2023::grade-6-rla",
+        "count": 18
+      }
+    ]
+  },
+  {
+    "folderName": "openintro_ims",
+    "sourceName": "Introduction to Modern Statistics",
+    "questionCount": 368,
+    "collectionCount": 21,
+    "license": "CC BY-SA 3.0",
+    "action": "map-and-expand",
+    "rationale": "Strong statistics/data science fit with some quant and medical overlap.",
+    "recommendedTracks": [
+      "AP Statistics",
+      "Introduction to Data Science",
+      "Quant Interview Core",
+      "Medical Reasoning"
+    ],
+    "proposedCourses": [
+      "Statistics Lab"
+    ],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "apStatistics",
+        "count": 368
+      },
+      {
+        "trackId": "introDataScience",
+        "count": 368
+      },
+      {
+        "trackId": "quant",
+        "count": 184
+      },
+      {
+        "trackId": "medical",
+        "count": 184
+      },
+      {
+        "trackId": "ml",
+        "count": 98
+      },
+      {
+        "trackId": "quantAdvanced",
+        "count": 98
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "openintro-ims::model-slr",
+        "count": 32
+      },
+      {
+        "collectionId": "openintro-ims::data-design",
+        "count": 30
+      },
+      {
+        "collectionId": "openintro-ims::inference-one-prop",
+        "count": 30
+      },
+      {
+        "collectionId": "openintro-ims::explore-numerical",
+        "count": 26
+      },
+      {
+        "collectionId": "openintro-ims::inference-two-props",
+        "count": 22
+      },
+      {
+        "collectionId": "openintro-ims::inference-one-mean",
+        "count": 22
+      }
+    ]
+  },
+  {
+    "folderName": "staar_alt2_2025",
+    "sourceName": "Texas STAAR Alternate 2 2025 released teacher guides",
+    "questionCount": 360,
+    "collectionCount": 18,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Best treated as differentiated primary/high support material inside existing stage-based tracks.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 3)",
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "NAPLAN Prep (Year 9)"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 147
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 78
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 56
+      },
+      {
+        "trackId": "naplanYear9",
+        "count": 54
+      },
+      {
+        "trackId": "scienceDiscovery",
+        "count": 40
+      },
+      {
+        "trackId": "middleSchoolEarthSpace",
+        "count": 40
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "staar-alt2-2025::english-i",
+        "count": 36
+      },
+      {
+        "collectionId": "staar-alt2-2025::grade-4-mathematics-teacher-guide",
+        "count": 20
+      },
+      {
+        "collectionId": "staar-alt2-2025::grade-5-rla-teacher-guide",
+        "count": 20
+      },
+      {
+        "collectionId": "staar-alt2-2025::grade-5-science-teacher-guide",
+        "count": 20
+      },
+      {
+        "collectionId": "staar-alt2-2025::grade-6-mathematics-teacher-guide",
+        "count": 20
+      },
+      {
+        "collectionId": "staar-alt2-2025::grade-6-rla-teacher-guide",
+        "count": 20
+      }
+    ]
+  },
+  {
+    "folderName": "staar_alt2_2023",
+    "sourceName": "Texas STAAR Alternate 2 2023 released teacher guides",
+    "questionCount": 355,
+    "collectionCount": 18,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Best treated as differentiated primary/high support material inside existing stage-based tracks.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 3)",
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "NAPLAN Prep (Year 9)"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 153
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 80
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 60
+      },
+      {
+        "trackId": "naplanYear9",
+        "count": 54
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 40
+      },
+      {
+        "trackId": "usHistory",
+        "count": 40
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "staar-alt2-2023::english-i",
+        "count": 36
+      },
+      {
+        "collectionId": "staar-alt2-2023::grade-3-math-teacher-test",
+        "count": 20
+      },
+      {
+        "collectionId": "staar-alt2-2023::grade-4-math-teacher-test",
+        "count": 20
+      },
+      {
+        "collectionId": "staar-alt2-2023::grade-4-reading-teacher-book",
+        "count": 20
+      },
+      {
+        "collectionId": "staar-alt2-2023::grade-5-math-teacher-book",
+        "count": 20
+      },
+      {
+        "collectionId": "staar-alt2-2023::grade-5-reading-teacher-book",
+        "count": 20
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_math_2017",
+    "sourceName": "NYSED 2017 Grades 3-8 Mathematics Released Questions",
+    "questionCount": 284,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Strong grade-banded math enrichment already aligned to primary/high school math ladders.",
+    "recommendedTracks": [
+      "Class 3 Math",
+      "Class 4 Math",
+      "Class 5 Math",
+      "Class 6 Math",
+      "Class 7 Math",
+      "Class 8 Math"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "naplanYear7",
+        "count": 101
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 89
+      },
+      {
+        "trackId": "col-class-7-math",
+        "count": 53
+      },
+      {
+        "trackId": "col-class-8-math",
+        "count": 49
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 49
+      },
+      {
+        "trackId": "col-class-6-math",
+        "count": 48
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-math-2017::grade-7",
+        "count": 53
+      },
+      {
+        "collectionId": "nysed-math-2017::grade-8",
+        "count": 49
+      },
+      {
+        "collectionId": "nysed-math-2017::grade-6",
+        "count": 48
+      },
+      {
+        "collectionId": "nysed-math-2017::grade-4",
+        "count": 46
+      },
+      {
+        "collectionId": "nysed-math-2017::grade-3",
+        "count": 45
+      },
+      {
+        "collectionId": "nysed-math-2017::grade-5",
+        "count": 43
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_ela_2017",
+    "sourceName": "NYSED 2017 Grades 3-8 English Language Arts Released Questions",
+    "questionCount": 251,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Useful grade-banded reading/vocab enrichment for the school ladder rather than a new course family.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 3)",
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "NAPLAN Prep (Year 9)"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 251
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 90
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 75
+      },
+      {
+        "trackId": "naplanYear9",
+        "count": 45
+      },
+      {
+        "trackId": "naplanYear3",
+        "count": 41
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-ela-2017::grade-7",
+        "count": 46
+      },
+      {
+        "collectionId": "nysed-ela-2017::grade-8",
+        "count": 45
+      },
+      {
+        "collectionId": "nysed-ela-2017::grade-6",
+        "count": 44
+      },
+      {
+        "collectionId": "nysed-ela-2017::grade-3",
+        "count": 41
+      },
+      {
+        "collectionId": "nysed-ela-2017::grade-4",
+        "count": 38
+      },
+      {
+        "collectionId": "nysed-ela-2017::grade-5",
+        "count": 37
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_ela_2023",
+    "sourceName": "NYSED 2023 Grades 3-8 English Language Arts Released Questions",
+    "questionCount": 239,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Useful grade-banded reading/vocab enrichment for the school ladder rather than a new course family.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 3)",
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "NAPLAN Prep (Year 9)"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 239
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 81
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 70
+      },
+      {
+        "trackId": "naplanYear9",
+        "count": 46
+      },
+      {
+        "trackId": "naplanYear3",
+        "count": 42
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-ela-2023::grade-7",
+        "count": 46
+      },
+      {
+        "collectionId": "nysed-ela-2023::grade-8",
+        "count": 46
+      },
+      {
+        "collectionId": "nysed-ela-2023::grade-3",
+        "count": 42
+      },
+      {
+        "collectionId": "nysed-ela-2023::grade-5",
+        "count": 37
+      },
+      {
+        "collectionId": "nysed-ela-2023::grade-6",
+        "count": 35
+      },
+      {
+        "collectionId": "nysed-ela-2023::grade-4",
+        "count": 33
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_ela_2024",
+    "sourceName": "NYSED 2024 Grades 3-8 English Language Arts Released Questions",
+    "questionCount": 237,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Useful grade-banded reading/vocab enrichment for the school ladder rather than a new course family.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 3)",
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "NAPLAN Prep (Year 9)"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 237
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 85
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 72
+      },
+      {
+        "trackId": "naplanYear9",
+        "count": 46
+      },
+      {
+        "trackId": "naplanYear3",
+        "count": 34
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-ela-2024::grade-7",
+        "count": 46
+      },
+      {
+        "collectionId": "nysed-ela-2024::grade-8",
+        "count": 46
+      },
+      {
+        "collectionId": "nysed-ela-2024::grade-6",
+        "count": 39
+      },
+      {
+        "collectionId": "nysed-ela-2024::grade-5",
+        "count": 37
+      },
+      {
+        "collectionId": "nysed-ela-2024::grade-4",
+        "count": 35
+      },
+      {
+        "collectionId": "nysed-ela-2024::grade-3",
+        "count": 34
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_ela_2015",
+    "sourceName": "NYSED 2015 Grades 3-8 English Language Arts Released Questions",
+    "questionCount": 233,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Useful grade-banded reading/vocab enrichment for the school ladder rather than a new course family.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 3)",
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "NAPLAN Prep (Year 9)"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 233
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 78
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 69
+      },
+      {
+        "trackId": "naplanYear3",
+        "count": 43
+      },
+      {
+        "trackId": "naplanYear9",
+        "count": 43
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-ela-2015::grade-3",
+        "count": 43
+      },
+      {
+        "collectionId": "nysed-ela-2015::grade-8",
+        "count": 43
+      },
+      {
+        "collectionId": "nysed-ela-2015::grade-6",
+        "count": 42
+      },
+      {
+        "collectionId": "nysed-ela-2015::grade-4",
+        "count": 36
+      },
+      {
+        "collectionId": "nysed-ela-2015::grade-7",
+        "count": 36
+      },
+      {
+        "collectionId": "nysed-ela-2015::grade-5",
+        "count": 33
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_ela_2025",
+    "sourceName": "NYSED 2025 Grades 3-8 English Language Arts Released Questions",
+    "questionCount": 224,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Useful grade-banded reading/vocab enrichment for the school ladder rather than a new course family.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 3)",
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "NAPLAN Prep (Year 9)"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 224
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 76
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 71
+      },
+      {
+        "trackId": "naplanYear9",
+        "count": 42
+      },
+      {
+        "trackId": "naplanYear3",
+        "count": 35
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-ela-2025::grade-7",
+        "count": 43
+      },
+      {
+        "collectionId": "nysed-ela-2025::grade-8",
+        "count": 42
+      },
+      {
+        "collectionId": "nysed-ela-2025::grade-5",
+        "count": 37
+      },
+      {
+        "collectionId": "nysed-ela-2025::grade-3",
+        "count": 35
+      },
+      {
+        "collectionId": "nysed-ela-2025::grade-4",
+        "count": 34
+      },
+      {
+        "collectionId": "nysed-ela-2025::grade-6",
+        "count": 33
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_ela_2019",
+    "sourceName": "NYSED 2019 Grades 3-8 English Language Arts Released Questions",
+    "questionCount": 211,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Useful grade-banded reading/vocab enrichment for the school ladder rather than a new course family.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 3)",
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "NAPLAN Prep (Year 9)"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 211
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 70
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 67
+      },
+      {
+        "trackId": "naplanYear9",
+        "count": 43
+      },
+      {
+        "trackId": "naplanYear3",
+        "count": 31
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-ela-2019::grade-8",
+        "count": 43
+      },
+      {
+        "collectionId": "nysed-ela-2019::grade-5",
+        "count": 37
+      },
+      {
+        "collectionId": "nysed-ela-2019::grade-7",
+        "count": 37
+      },
+      {
+        "collectionId": "nysed-ela-2019::grade-6",
+        "count": 33
+      },
+      {
+        "collectionId": "nysed-ela-2019::grade-3",
+        "count": 31
+      },
+      {
+        "collectionId": "nysed-ela-2019::grade-4",
+        "count": 30
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_ela_2016",
+    "sourceName": "NYSED 2016 Grades 3-8 English Language Arts Released Questions",
+    "questionCount": 204,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Useful grade-banded reading/vocab enrichment for the school ladder rather than a new course family.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 3)",
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "NAPLAN Prep (Year 9)"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 204
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 74
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 65
+      },
+      {
+        "trackId": "naplanYear9",
+        "count": 37
+      },
+      {
+        "trackId": "naplanYear3",
+        "count": 28
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-ela-2016::grade-5",
+        "count": 37
+      },
+      {
+        "collectionId": "nysed-ela-2016::grade-6",
+        "count": 37
+      },
+      {
+        "collectionId": "nysed-ela-2016::grade-7",
+        "count": 37
+      },
+      {
+        "collectionId": "nysed-ela-2016::grade-8",
+        "count": 37
+      },
+      {
+        "collectionId": "nysed-ela-2016::grade-3",
+        "count": 28
+      },
+      {
+        "collectionId": "nysed-ela-2016::grade-4",
+        "count": 28
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_math_2022",
+    "sourceName": "NYSED 2022 Grades 3-8 Mathematics Released Questions",
+    "questionCount": 204,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Strong grade-banded math enrichment already aligned to primary/high school math ladders.",
+    "recommendedTracks": [
+      "Class 3 Math",
+      "Class 4 Math",
+      "Class 5 Math",
+      "Class 6 Math",
+      "Class 7 Math",
+      "Class 8 Math"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "naplanYear7",
+        "count": 73
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 70
+      },
+      {
+        "trackId": "col-class-7-math",
+        "count": 38
+      },
+      {
+        "trackId": "col-class-4-math",
+        "count": 35
+      },
+      {
+        "trackId": "col-class-5-math",
+        "count": 35
+      },
+      {
+        "trackId": "col-class-6-math",
+        "count": 35
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-math-2022::grade-7",
+        "count": 38
+      },
+      {
+        "collectionId": "nysed-math-2022::grade-4",
+        "count": 35
+      },
+      {
+        "collectionId": "nysed-math-2022::grade-5",
+        "count": 35
+      },
+      {
+        "collectionId": "nysed-math-2022::grade-6",
+        "count": 35
+      },
+      {
+        "collectionId": "nysed-math-2022::grade-8",
+        "count": 33
+      },
+      {
+        "collectionId": "nysed-math-2022::grade-3",
+        "count": 28
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_math_2023",
+    "sourceName": "NYSED 2023 Grades 3-8 Mathematics Released Questions",
+    "questionCount": 197,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Strong grade-banded math enrichment already aligned to primary/high school math ladders.",
+    "recommendedTracks": [
+      "Class 3 Math",
+      "Class 4 Math",
+      "Class 5 Math",
+      "Class 6 Math",
+      "Class 7 Math",
+      "Class 8 Math"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "naplanYear7",
+        "count": 68
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 65
+      },
+      {
+        "trackId": "col-class-8-math",
+        "count": 36
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 36
+      },
+      {
+        "trackId": "col-class-7-math",
+        "count": 35
+      },
+      {
+        "trackId": "col-class-5-math",
+        "count": 33
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-math-2023::grade-8",
+        "count": 36
+      },
+      {
+        "collectionId": "nysed-math-2023::grade-7",
+        "count": 35
+      },
+      {
+        "collectionId": "nysed-math-2023::grade-5",
+        "count": 33
+      },
+      {
+        "collectionId": "nysed-math-2023::grade-6",
+        "count": 33
+      },
+      {
+        "collectionId": "nysed-math-2023::grade-4",
+        "count": 32
+      },
+      {
+        "collectionId": "nysed-math-2023::grade-3",
+        "count": 28
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_math_2019",
+    "sourceName": "NYSED 2019 Grades 3-8 Mathematics Released Questions",
+    "questionCount": 192,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Strong grade-banded math enrichment already aligned to primary/high school math ladders.",
+    "recommendedTracks": [
+      "Class 3 Math",
+      "Class 4 Math",
+      "Class 5 Math",
+      "Class 6 Math",
+      "Class 7 Math",
+      "Class 8 Math"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "naplanYear7",
+        "count": 64
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 63
+      },
+      {
+        "trackId": "col-class-7-math",
+        "count": 34
+      },
+      {
+        "trackId": "col-class-8-math",
+        "count": 34
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 34
+      },
+      {
+        "trackId": "col-class-4-math",
+        "count": 33
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-math-2019::grade-7",
+        "count": 34
+      },
+      {
+        "collectionId": "nysed-math-2019::grade-8",
+        "count": 34
+      },
+      {
+        "collectionId": "nysed-math-2019::grade-4",
+        "count": 33
+      },
+      {
+        "collectionId": "nysed-math-2019::grade-3",
+        "count": 31
+      },
+      {
+        "collectionId": "nysed-math-2019::grade-5",
+        "count": 30
+      },
+      {
+        "collectionId": "nysed-math-2019::grade-6",
+        "count": 30
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_ela_2022",
+    "sourceName": "NYSED 2022 Grades 3-8 English Language Arts Released Questions",
+    "questionCount": 191,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Useful grade-banded reading/vocab enrichment for the school ladder rather than a new course family.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 3)",
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "NAPLAN Prep (Year 9)"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 191
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 68
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 59
+      },
+      {
+        "trackId": "naplanYear9",
+        "count": 39
+      },
+      {
+        "trackId": "naplanYear3",
+        "count": 25
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-ela-2022::grade-8",
+        "count": 39
+      },
+      {
+        "collectionId": "nysed-ela-2022::grade-5",
+        "count": 36
+      },
+      {
+        "collectionId": "nysed-ela-2022::grade-6",
+        "count": 34
+      },
+      {
+        "collectionId": "nysed-ela-2022::grade-7",
+        "count": 34
+      },
+      {
+        "collectionId": "nysed-ela-2022::grade-3",
+        "count": 25
+      },
+      {
+        "collectionId": "nysed-ela-2022::grade-4",
+        "count": 23
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_ela_2018",
+    "sourceName": "NYSED 2018 Grades 3-8 English Language Arts Released Questions",
+    "questionCount": 186,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Useful grade-banded reading/vocab enrichment for the school ladder rather than a new course family.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 3)",
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "NAPLAN Prep (Year 9)"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 186
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 70
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 57
+      },
+      {
+        "trackId": "naplanYear3",
+        "count": 30
+      },
+      {
+        "trackId": "naplanYear9",
+        "count": 29
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-ela-2018::grade-5",
+        "count": 38
+      },
+      {
+        "collectionId": "nysed-ela-2018::grade-6",
+        "count": 36
+      },
+      {
+        "collectionId": "nysed-ela-2018::grade-7",
+        "count": 34
+      },
+      {
+        "collectionId": "nysed-ela-2018::grade-3",
+        "count": 30
+      },
+      {
+        "collectionId": "nysed-ela-2018::grade-8",
+        "count": 29
+      },
+      {
+        "collectionId": "nysed-ela-2018::grade-4",
+        "count": 19
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_math_2018",
+    "sourceName": "NYSED 2018 Grades 3-8 Mathematics Released Questions",
+    "questionCount": 185,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Strong grade-banded math enrichment already aligned to primary/high school math ladders.",
+    "recommendedTracks": [
+      "Class 3 Math",
+      "Class 4 Math",
+      "Class 5 Math",
+      "Class 6 Math",
+      "Class 7 Math",
+      "Class 8 Math"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "naplanYear7",
+        "count": 64
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 60
+      },
+      {
+        "trackId": "col-class-8-math",
+        "count": 35
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 35
+      },
+      {
+        "trackId": "col-class-7-math",
+        "count": 34
+      },
+      {
+        "trackId": "col-class-4-math",
+        "count": 31
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-math-2018::grade-8",
+        "count": 35
+      },
+      {
+        "collectionId": "nysed-math-2018::grade-7",
+        "count": 34
+      },
+      {
+        "collectionId": "nysed-math-2018::grade-4",
+        "count": 31
+      },
+      {
+        "collectionId": "nysed-math-2018::grade-6",
+        "count": 30
+      },
+      {
+        "collectionId": "nysed-math-2018::grade-5",
+        "count": 29
+      },
+      {
+        "collectionId": "nysed-math-2018::grade-3",
+        "count": 26
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_math_2025",
+    "sourceName": "NYSED 2025 Grades 3-8 Mathematics Released Questions",
+    "questionCount": 178,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Strong grade-banded math enrichment already aligned to primary/high school math ladders.",
+    "recommendedTracks": [
+      "Class 3 Math",
+      "Class 4 Math",
+      "Class 5 Math",
+      "Class 6 Math",
+      "Class 7 Math",
+      "Class 8 Math"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "naplanYear7",
+        "count": 64
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 57
+      },
+      {
+        "trackId": "col-class-6-math",
+        "count": 33
+      },
+      {
+        "trackId": "col-class-7-math",
+        "count": 31
+      },
+      {
+        "trackId": "col-class-8-math",
+        "count": 31
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 31
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-math-2025::grade-6",
+        "count": 33
+      },
+      {
+        "collectionId": "nysed-math-2025::grade-7",
+        "count": 31
+      },
+      {
+        "collectionId": "nysed-math-2025::grade-8",
+        "count": 31
+      },
+      {
+        "collectionId": "nysed-math-2025::grade-5",
+        "count": 29
+      },
+      {
+        "collectionId": "nysed-math-2025::grade-4",
+        "count": 28
+      },
+      {
+        "collectionId": "nysed-math-2025::grade-3",
+        "count": 26
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_math_2024",
+    "sourceName": "NYSED 2024 Grades 3-8 Mathematics Released Questions",
+    "questionCount": 170,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Strong grade-banded math enrichment already aligned to primary/high school math ladders.",
+    "recommendedTracks": [
+      "Class 3 Math",
+      "Class 4 Math",
+      "Class 5 Math",
+      "Class 6 Math",
+      "Class 7 Math",
+      "Class 8 Math"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "naplanYear7",
+        "count": 64
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 57
+      },
+      {
+        "trackId": "col-class-7-math",
+        "count": 33
+      },
+      {
+        "trackId": "col-class-6-math",
+        "count": 31
+      },
+      {
+        "trackId": "col-class-5-math",
+        "count": 29
+      },
+      {
+        "trackId": "col-class-4-math",
+        "count": 28
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-math-2024::grade-7",
+        "count": 33
+      },
+      {
+        "collectionId": "nysed-math-2024::grade-6",
+        "count": 31
+      },
+      {
+        "collectionId": "nysed-math-2024::grade-5",
+        "count": 29
+      },
+      {
+        "collectionId": "nysed-math-2024::grade-4",
+        "count": 28
+      },
+      {
+        "collectionId": "nysed-math-2024::grade-8",
+        "count": 25
+      },
+      {
+        "collectionId": "nysed-math-2024::grade-3",
+        "count": 24
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_ela_2021",
+    "sourceName": "NYSED 2021 Grades 3-8 English Language Arts Released Questions",
+    "questionCount": 164,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Useful grade-banded reading/vocab enrichment for the school ladder rather than a new course family.",
+    "recommendedTracks": [
+      "NAPLAN Prep (Year 3)",
+      "NAPLAN Prep (Year 5)",
+      "NAPLAN Prep (Year 7)",
+      "NAPLAN Prep (Year 9)"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "satReadingWriting",
+        "count": 164
+      },
+      {
+        "trackId": "naplanYear7",
+        "count": 56
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 51
+      },
+      {
+        "trackId": "naplanYear3",
+        "count": 29
+      },
+      {
+        "trackId": "naplanYear9",
+        "count": 28
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-ela-2021::grade-3",
+        "count": 29
+      },
+      {
+        "collectionId": "nysed-ela-2021::grade-5",
+        "count": 28
+      },
+      {
+        "collectionId": "nysed-ela-2021::grade-6",
+        "count": 28
+      },
+      {
+        "collectionId": "nysed-ela-2021::grade-7",
+        "count": 28
+      },
+      {
+        "collectionId": "nysed-ela-2021::grade-8",
+        "count": 28
+      },
+      {
+        "collectionId": "nysed-ela-2021::grade-4",
+        "count": 23
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_math_2021",
+    "sourceName": "NYSED 2021 Grades 3-8 Mathematics Released Questions",
+    "questionCount": 143,
+    "collectionCount": 6,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Strong grade-banded math enrichment already aligned to primary/high school math ladders.",
+    "recommendedTracks": [
+      "Class 3 Math",
+      "Class 4 Math",
+      "Class 5 Math",
+      "Class 6 Math",
+      "Class 7 Math",
+      "Class 8 Math"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "naplanYear7",
+        "count": 52
+      },
+      {
+        "trackId": "naplanYear5",
+        "count": 46
+      },
+      {
+        "trackId": "col-class-7-math",
+        "count": 28
+      },
+      {
+        "trackId": "col-class-8-math",
+        "count": 26
+      },
+      {
+        "trackId": "high_algebra_1",
+        "count": 26
+      },
+      {
+        "trackId": "col-class-6-math",
+        "count": 24
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-math-2021::grade-7",
+        "count": 28
+      },
+      {
+        "collectionId": "nysed-math-2021::grade-8",
+        "count": 26
+      },
+      {
+        "collectionId": "nysed-math-2021::grade-6",
+        "count": 24
+      },
+      {
+        "collectionId": "nysed-math-2021::grade-4",
+        "count": 23
+      },
+      {
+        "collectionId": "nysed-math-2021::grade-5",
+        "count": 23
+      },
+      {
+        "collectionId": "nysed-math-2021::grade-3",
+        "count": 19
+      }
+    ]
+  },
+  {
+    "folderName": "openintro_labs_rguroo",
+    "sourceName": "OpenIntro Labs (Rguroo)",
+    "questionCount": 116,
+    "collectionCount": 10,
+    "license": "CC BY-SA 4.0",
+    "action": "hold-for-labs",
+    "rationale": "Applied lab prompts rather than clean question cards.",
+    "recommendedTracks": [
+      "Introduction to Data Science",
+      "AP Statistics"
+    ],
+    "proposedCourses": [
+      "Data Labs"
+    ],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "apStatistics",
+        "count": 116
+      },
+      {
+        "trackId": "introDataScience",
+        "count": 116
+      },
+      {
+        "trackId": "quantAdvanced",
+        "count": 101
+      },
+      {
+        "trackId": "quant",
+        "count": 72
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 63
+      },
+      {
+        "trackId": "ml",
+        "count": 37
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "openintro-labs-rguroo::09_multiple_regression",
+        "count": 19
+      },
+      {
+        "collectionId": "openintro-labs-rguroo::06_inf_for_categorical_data",
+        "count": 15
+      },
+      {
+        "collectionId": "openintro-labs-rguroo::07_inf_for_numerical_data",
+        "count": 14
+      },
+      {
+        "collectionId": "openintro-labs-rguroo::08_simple_regression",
+        "count": 12
+      },
+      {
+        "collectionId": "openintro-labs-rguroo::04_normal_distribution",
+        "count": 11
+      },
+      {
+        "collectionId": "openintro-labs-rguroo::05b_confidence_intervals",
+        "count": 11
+      }
+    ]
+  },
+  {
+    "folderName": "oilabs_stata",
+    "sourceName": "OpenIntro Labs (Stata)",
+    "questionCount": 112,
+    "collectionCount": 10,
+    "license": "CC BY-SA 3.0",
+    "action": "hold-for-labs",
+    "rationale": "Applied lab prompts rather than clean question cards.",
+    "recommendedTracks": [
+      "Introduction to Data Science",
+      "AP Statistics"
+    ],
+    "proposedCourses": [
+      "Data Labs"
+    ],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "apStatistics",
+        "count": 112
+      },
+      {
+        "trackId": "introDataScience",
+        "count": 112
+      },
+      {
+        "trackId": "quantAdvanced",
+        "count": 91
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 64
+      },
+      {
+        "trackId": "quant",
+        "count": 63
+      },
+      {
+        "trackId": "ml",
+        "count": 34
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "oilabs-stata::10_multiple_regression",
+        "count": 19
+      },
+      {
+        "collectionId": "oilabs-stata::08_inf_for_categorical_data",
+        "count": 16
+      },
+      {
+        "collectionId": "oilabs-stata::09_simple_regression",
+        "count": 13
+      },
+      {
+        "collectionId": "oilabs-stata::05_sampling_distributions",
+        "count": 11
+      },
+      {
+        "collectionId": "oilabs-stata::07_inf_for_numerical_data",
+        "count": 11
+      },
+      {
+        "collectionId": "oilabs-stata::02_intro_to_data",
+        "count": 9
+      }
+    ]
+  },
+  {
+    "folderName": "oilabs_jamovi",
+    "sourceName": "OpenIntro Labs (jamovi)",
+    "questionCount": 111,
+    "collectionCount": 10,
+    "license": "CC BY-SA 4.0",
+    "action": "hold-for-labs",
+    "rationale": "Applied lab prompts rather than clean question cards.",
+    "recommendedTracks": [
+      "Introduction to Data Science",
+      "AP Statistics"
+    ],
+    "proposedCourses": [
+      "Data Labs"
+    ],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "apStatistics",
+        "count": 111
+      },
+      {
+        "trackId": "introDataScience",
+        "count": 111
+      },
+      {
+        "trackId": "quantAdvanced",
+        "count": 89
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 63
+      },
+      {
+        "trackId": "quant",
+        "count": 59
+      },
+      {
+        "trackId": "ml",
+        "count": 35
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "oilabs-jamovi::09_multiple_regression",
+        "count": 19
+      },
+      {
+        "collectionId": "oilabs-jamovi::07_inf_for_numerical_data",
+        "count": 13
+      },
+      {
+        "collectionId": "oilabs-jamovi::08_simple_regression",
+        "count": 13
+      },
+      {
+        "collectionId": "oilabs-jamovi::05b_confidence_intervals",
+        "count": 12
+      },
+      {
+        "collectionId": "oilabs-jamovi::06_inf_for_categorical_data",
+        "count": 11
+      },
+      {
+        "collectionId": "oilabs-jamovi::05a_sampling_distributions",
+        "count": 10
+      }
+    ]
+  },
+  {
+    "folderName": "oilabs_jasp",
+    "sourceName": "OpenIntro Labs (JASP)",
+    "questionCount": 110,
+    "collectionCount": 10,
+    "license": "CC BY-SA 4.0",
+    "action": "hold-for-labs",
+    "rationale": "Applied lab prompts rather than clean question cards.",
+    "recommendedTracks": [
+      "Introduction to Data Science",
+      "AP Statistics"
+    ],
+    "proposedCourses": [
+      "Data Labs"
+    ],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "apStatistics",
+        "count": 110
+      },
+      {
+        "trackId": "introDataScience",
+        "count": 110
+      },
+      {
+        "trackId": "quantAdvanced",
+        "count": 90
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 64
+      },
+      {
+        "trackId": "quant",
+        "count": 63
+      },
+      {
+        "trackId": "ml",
+        "count": 32
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "oilabs-jasp::09_multiple_regression",
+        "count": 19
+      },
+      {
+        "collectionId": "oilabs-jasp::07_inf_for_numerical_data",
+        "count": 13
+      },
+      {
+        "collectionId": "oilabs-jasp::05b_confidence_intervals",
+        "count": 12
+      },
+      {
+        "collectionId": "oilabs-jasp::05a_sampling_distributions",
+        "count": 11
+      },
+      {
+        "collectionId": "oilabs-jasp::06_inf_for_categorical_data",
+        "count": 11
+      },
+      {
+        "collectionId": "oilabs-jasp::08_simple_regression",
+        "count": 10
+      }
+    ]
+  },
+  {
+    "folderName": "oilabs_tidy",
+    "sourceName": "OpenIntro Labs (tidyverse)",
+    "questionCount": 109,
+    "collectionCount": 10,
+    "license": "CC BY-SA 4.0",
+    "action": "hold-for-labs",
+    "rationale": "Applied lab prompts, valuable as resources but not app-native quiz cards yet.",
+    "recommendedTracks": [
+      "Introduction to Data Science",
+      "AP Statistics"
+    ],
+    "proposedCourses": [
+      "Data Labs"
+    ],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "apStatistics",
+        "count": 109
+      },
+      {
+        "trackId": "introDataScience",
+        "count": 109
+      },
+      {
+        "trackId": "quantAdvanced",
+        "count": 86
+      },
+      {
+        "trackId": "logicCriticalThinking",
+        "count": 65
+      },
+      {
+        "trackId": "quant",
+        "count": 59
+      },
+      {
+        "trackId": "ml",
+        "count": 31
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "oilabs-tidy::09_multiple_regression",
+        "count": 19
+      },
+      {
+        "collectionId": "oilabs-tidy::07_inf_for_numerical_data",
+        "count": 14
+      },
+      {
+        "collectionId": "oilabs-tidy::05b_confidence_intervals",
+        "count": 12
+      },
+      {
+        "collectionId": "oilabs-tidy::06_inf_for_categorical_data",
+        "count": 11
+      },
+      {
+        "collectionId": "oilabs-tidy::05a_sampling_distributions",
+        "count": 10
+      },
+      {
+        "collectionId": "oilabs-tidy::08_simple_regression",
+        "count": 10
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_science_2024",
+    "sourceName": "NYSED 2024 Grade 5 and Grade 8 Science Released Questions",
+    "questionCount": 98,
+    "collectionCount": 2,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Direct fit for school science tracks that already exist.",
+    "recommendedTracks": [
+      "CK-12 Science & Math",
+      "Khan Academy Foundations",
+      "Middle School Earth & Space Science"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "ck12",
+        "count": 98
+      },
+      {
+        "trackId": "khanacademy",
+        "count": 98
+      },
+      {
+        "trackId": "middleSchoolEarthSpace",
+        "count": 58
+      },
+      {
+        "trackId": "scienceYear5",
+        "count": 40
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-science-2024::grade-8",
+        "count": 58
+      },
+      {
+        "collectionId": "nysed-science-2024::grade-5",
+        "count": 40
+      }
+    ]
+  },
+  {
+    "folderName": "nysed_science_2025",
+    "sourceName": "NYSED 2025 Grade 5 and Grade 8 Science Released Questions",
+    "questionCount": 94,
+    "collectionCount": 2,
+    "license": "unspecified",
+    "action": "map-existing",
+    "rationale": "Direct fit for school science tracks that already exist.",
+    "recommendedTracks": [
+      "CK-12 Science & Math",
+      "Khan Academy Foundations",
+      "Middle School Earth & Space Science"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "ck12",
+        "count": 94
+      },
+      {
+        "trackId": "khanacademy",
+        "count": 94
+      },
+      {
+        "trackId": "middleSchoolEarthSpace",
+        "count": 59
+      },
+      {
+        "trackId": "scienceYear5",
+        "count": 35
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "nysed-science-2025::grade-8",
+        "count": 59
+      },
+      {
+        "collectionId": "nysed-science-2025::grade-5",
+        "count": 35
+      }
+    ]
+  },
+  {
+    "folderName": "ims_tutorials",
+    "sourceName": "IMS Tutorials",
+    "questionCount": 92,
+    "collectionCount": 6,
+    "license": "CC BY-SA 3.0",
+    "action": "map-existing",
+    "rationale": "Small but clean MCQ-style statistics/tutorial source.",
+    "recommendedTracks": [
+      "AP Statistics",
+      "Introduction to Data Science"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "apStatistics",
+        "count": 92
+      },
+      {
+        "trackId": "introDataScience",
+        "count": 92
+      },
+      {
+        "trackId": "quant",
+        "count": 42
+      },
+      {
+        "trackId": "medical",
+        "count": 42
+      },
+      {
+        "trackId": "ml",
+        "count": 36
+      },
+      {
+        "trackId": "quantAdvanced",
+        "count": 36
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "ims-tutorials::03-model",
+        "count": 26
+      },
+      {
+        "collectionId": "ims-tutorials::05-infer",
+        "count": 20
+      },
+      {
+        "collectionId": "ims-tutorials::02-explore",
+        "count": 13
+      },
+      {
+        "collectionId": "ims-tutorials::04-foundations",
+        "count": 12
+      },
+      {
+        "collectionId": "ims-tutorials::01-data",
+        "count": 11
+      },
+      {
+        "collectionId": "ims-tutorials::06-model-infer",
+        "count": 10
+      }
+    ]
+  },
+  {
+    "folderName": "openintro_stats",
+    "sourceName": "OpenIntro Statistics",
+    "questionCount": 89,
+    "collectionCount": 9,
+    "license": "CC BY-SA 3.0",
+    "action": "map-existing",
+    "rationale": "Compact but high-signal statistics collection.",
+    "recommendedTracks": [
+      "AP Statistics",
+      "Introduction to Data Science"
+    ],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "apStatistics",
+        "count": 89
+      },
+      {
+        "trackId": "introDataScience",
+        "count": 89
+      },
+      {
+        "trackId": "quant",
+        "count": 58
+      },
+      {
+        "trackId": "medical",
+        "count": 35
+      },
+      {
+        "trackId": "quantAdvanced",
+        "count": 23
+      },
+      {
+        "trackId": "ml",
+        "count": 13
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "openintro-stats::ch_distributions",
+        "count": 14
+      },
+      {
+        "collectionId": "openintro-stats::ch_inference_for_means",
+        "count": 12
+      },
+      {
+        "collectionId": "openintro-stats::ch_inference_for_props",
+        "count": 12
+      },
+      {
+        "collectionId": "openintro-stats::ch_foundations_for_inf",
+        "count": 11
+      },
+      {
+        "collectionId": "openintro-stats::ch_intro_to_data",
+        "count": 10
+      },
+      {
+        "collectionId": "openintro-stats::ch_probability",
+        "count": 9
+      }
+    ]
+  },
+  {
+    "folderName": "openintro_stats_slides",
+    "sourceName": "OpenIntro Statistics Slides",
+    "questionCount": 85,
+    "collectionCount": 9,
+    "license": "CC BY-SA 3.0",
+    "action": "review-manually",
+    "rationale": "No explicit strategy has been written for this source yet.",
+    "recommendedTracks": [],
+    "proposedCourses": [],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "apStatistics",
+        "count": 85
+      },
+      {
+        "trackId": "introDataScience",
+        "count": 85
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "openintro-stats-slides::chp_7",
+        "count": 16
+      },
+      {
+        "collectionId": "openintro-stats-slides::chp_6",
+        "count": 13
+      },
+      {
+        "collectionId": "openintro-stats-slides::chp_8",
+        "count": 12
+      },
+      {
+        "collectionId": "openintro-stats-slides::chp_4",
+        "count": 11
+      },
+      {
+        "collectionId": "openintro-stats-slides::chp_9",
+        "count": 11
+      },
+      {
+        "collectionId": "openintro-stats-slides::chp_3",
+        "count": 10
+      }
+    ]
+  },
+  {
+    "folderName": "pharma_hands_on",
+    "sourceName": "Pfizer Pharma Hands-on Exercises",
+    "questionCount": 72,
+    "collectionCount": 9,
+    "license": "CC BY 4.0",
+    "action": "hold-for-labs",
+    "rationale": "Useful applied tasks, but needs heavy transformation before becoming learner-facing question cards.",
+    "recommendedTracks": [
+      "Medical Reasoning",
+      "Introduction to Data Science"
+    ],
+    "proposedCourses": [
+      "Clinical Data Labs"
+    ],
+    "topCandidateTrackIds": [
+      {
+        "trackId": "software",
+        "count": 72
+      },
+      {
+        "trackId": "introCS",
+        "count": 72
+      },
+      {
+        "trackId": "basic_javascript",
+        "count": 41
+      },
+      {
+        "trackId": "introDataScience",
+        "count": 37
+      },
+      {
+        "trackId": "apStatistics",
+        "count": 37
+      },
+      {
+        "trackId": "medical",
+        "count": 21
+      }
+    ],
+    "largestSubcollections": [
+      {
+        "collectionId": "pharma-hands-on::miniproject1",
+        "count": 14
+      },
+      {
+        "collectionId": "pharma-hands-on::miniproject2",
+        "count": 13
+      },
+      {
+        "collectionId": "pharma-hands-on::miniproject4",
+        "count": 11
+      },
+      {
+        "collectionId": "pharma-hands-on::miniproject9",
+        "count": 9
+      },
+      {
+        "collectionId": "pharma-hands-on::miniproject3",
+        "count": 8
+      },
+      {
+        "collectionId": "pharma-hands-on::miniproject8",
+        "count": 6
+      }
+    ]
+  }
+]

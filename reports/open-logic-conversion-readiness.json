@@ -1,0 +1,490 @@
+{
+  "source": "Open Logic Project",
+  "license": "CC BY 4.0",
+  "repository": "https://github.com/OpenLogicProject/OpenLogic.git",
+  "question_count": 430,
+  "part_counts": {
+    "first-order-logic": 92,
+    "sets-functions-relations": 73,
+    "normal-modal-logic": 45,
+    "lambda-calculus": 27,
+    "turing-machines": 27,
+    "incompleteness": 23,
+    "many-valued-logic": 22,
+    "set-theory": 22,
+    "proof-theory": 20,
+    "computability": 18,
+    "model-theory": 17,
+    "intuitionistic-logic": 14,
+    "propositional-logic": 11,
+    "methods": 7,
+    "counterfactuals": 6,
+    "second-order-logic": 5,
+    "applied-modal-logic": 1
+  },
+  "classification_counts": {
+    "open_response": 270,
+    "other": 94,
+    "enumerated_subproblems": 59,
+    "enumerated_which_following": 7
+  },
+  "direct_fixed_choice_count": 0,
+  "enumerated_which_following_count": 7,
+  "highest_value_chapters": [
+    {
+      "part": "first-order-logic",
+      "chapter": "first-order-logic/natural-deduction",
+      "problem_count": 12,
+      "source_file_count": 6,
+      "score": 70,
+      "course_fit": "deductive proof rules",
+      "representative_files": [
+        "first-order-logic/natural-deduction/identity.tex",
+        "first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+        "first-order-logic/natural-deduction/provability-consistency.tex",
+        "first-order-logic/natural-deduction/proving-things-quant.tex",
+        "first-order-logic/natural-deduction/proving-things.tex"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "chapter": "first-order-logic/syntax-and-semantics",
+      "problem_count": 21,
+      "source_file_count": 10,
+      "score": 70,
+      "course_fit": "first-order syntax and semantics",
+      "representative_files": [
+        "first-order-logic/syntax-and-semantics/assignments.tex",
+        "first-order-logic/syntax-and-semantics/covered-structures.tex",
+        "first-order-logic/syntax-and-semantics/extensionality.tex",
+        "first-order-logic/syntax-and-semantics/formation-sequences.tex",
+        "first-order-logic/syntax-and-semantics/free-vars-sentences.tex"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "chapter": "first-order-logic/tableaux",
+      "problem_count": 11,
+      "source_file_count": 6,
+      "score": 70,
+      "course_fit": "validity and countermodel practice",
+      "representative_files": [
+        "first-order-logic/tableaux/identity.tex",
+        "first-order-logic/tableaux/proof-theoretic-notions.tex",
+        "first-order-logic/tableaux/provability-consistency.tex",
+        "first-order-logic/tableaux/proving-things-quant.tex",
+        "first-order-logic/tableaux/proving-things.tex"
+      ]
+    },
+    {
+      "part": "propositional-logic",
+      "chapter": "propositional-logic/syntax-and-semantics",
+      "problem_count": 11,
+      "source_file_count": 4,
+      "score": 70,
+      "course_fit": "propositional syntax, truth, validity",
+      "representative_files": [
+        "propositional-logic/syntax-and-semantics/completeness.tex",
+        "propositional-logic/syntax-and-semantics/preliminaries.tex",
+        "propositional-logic/syntax-and-semantics/semantic-notions.tex",
+        "propositional-logic/syntax-and-semantics/valuations-sat.tex"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "chapter": "first-order-logic/models-theories",
+      "problem_count": 4,
+      "source_file_count": 2,
+      "score": 64,
+      "course_fit": "models, theories, definability",
+      "representative_files": [
+        "first-order-logic/models-theories/expressing-relations.tex",
+        "first-order-logic/models-theories/set-theory.tex"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "chapter": "first-order-logic/axiomatic-deduction",
+      "problem_count": 11,
+      "source_file_count": 7,
+      "score": 60,
+      "course_fit": "supporting or advanced topic",
+      "representative_files": [
+        "first-order-logic/axiomatic-deduction/deduction-theorem-quantifiers.tex",
+        "first-order-logic/axiomatic-deduction/deduction-theorem.tex",
+        "first-order-logic/axiomatic-deduction/identity.tex",
+        "first-order-logic/axiomatic-deduction/proof-theoretic-notions.tex",
+        "first-order-logic/axiomatic-deduction/provability-consistency.tex"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "chapter": "first-order-logic/completeness",
+      "problem_count": 23,
+      "source_file_count": 7,
+      "score": 60,
+      "course_fit": "supporting or advanced topic",
+      "representative_files": [
+        "first-order-logic/completeness/compactness-direct.tex",
+        "first-order-logic/completeness/compactness.tex",
+        "first-order-logic/completeness/complete-consistent-sets.tex",
+        "first-order-logic/completeness/completeness-thm.tex",
+        "first-order-logic/completeness/construction-of-model.tex"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "chapter": "first-order-logic/sequent-calculus",
+      "problem_count": 10,
+      "source_file_count": 6,
+      "score": 60,
+      "course_fit": "supporting or advanced topic",
+      "representative_files": [
+        "first-order-logic/sequent-calculus/identity.tex",
+        "first-order-logic/sequent-calculus/proof-theoretic-notions.tex",
+        "first-order-logic/sequent-calculus/provability-consistency.tex",
+        "first-order-logic/sequent-calculus/proving-things-quant.tex",
+        "first-order-logic/sequent-calculus/proving-things.tex"
+      ]
+    },
+    {
+      "part": "sets-functions-relations",
+      "chapter": "sets-functions-relations/sets",
+      "problem_count": 11,
+      "source_file_count": 5,
+      "score": 60,
+      "course_fit": "sets and set operations",
+      "representative_files": [
+        "sets-functions-relations/sets/basics.tex",
+        "sets-functions-relations/sets/pairs-and-products.tex",
+        "sets-functions-relations/sets/proofs-about-sets.tex",
+        "sets-functions-relations/sets/subsets.tex",
+        "sets-functions-relations/sets/unions-and-intersections.tex"
+      ]
+    },
+    {
+      "part": "proof-theory",
+      "chapter": "proof-theory/sequent-calculus",
+      "problem_count": 8,
+      "source_file_count": 4,
+      "score": 58,
+      "course_fit": "formal proof systems",
+      "representative_files": [
+        "proof-theory/sequent-calculus/admissible-derivable.tex",
+        "proof-theory/sequent-calculus/interpretation-rules.tex",
+        "proof-theory/sequent-calculus/invertibility.tex",
+        "proof-theory/sequent-calculus/proof-examples.tex"
+      ]
+    },
+    {
+      "part": "sets-functions-relations",
+      "chapter": "sets-functions-relations/functions",
+      "problem_count": 8,
+      "source_file_count": 3,
+      "score": 58,
+      "course_fit": "functions and mappings",
+      "representative_files": [
+        "sets-functions-relations/functions/composition.tex",
+        "sets-functions-relations/functions/inverses.tex",
+        "sets-functions-relations/functions/partial-functions.tex"
+      ]
+    },
+    {
+      "part": "proof-theory",
+      "chapter": "proof-theory/cut-elimination",
+      "problem_count": 7,
+      "source_file_count": 4,
+      "score": 57,
+      "course_fit": "formal proof systems",
+      "representative_files": [
+        "proof-theory/cut-elimination/ce-largest.tex",
+        "proof-theory/cut-elimination/ce-topmost.tex",
+        "proof-theory/cut-elimination/interpolation.tex",
+        "proof-theory/cut-elimination/midsequent.tex"
+      ]
+    },
+    {
+      "part": "sets-functions-relations",
+      "chapter": "sets-functions-relations/relations",
+      "problem_count": 6,
+      "source_file_count": 6,
+      "score": 56,
+      "course_fit": "relations and logical structure",
+      "representative_files": [
+        "sets-functions-relations/relations/equivalence-relations.tex",
+        "sets-functions-relations/relations/graphs.tex",
+        "sets-functions-relations/relations/operations.tex",
+        "sets-functions-relations/relations/orders.tex",
+        "sets-functions-relations/relations/relations-as-sets.tex"
+      ]
+    },
+    {
+      "part": "proof-theory",
+      "chapter": "proof-theory/normalization",
+      "problem_count": 4,
+      "source_file_count": 2,
+      "score": 54,
+      "course_fit": "formal proof systems",
+      "representative_files": [
+        "proof-theory/normalization/permutations.tex",
+        "proof-theory/normalization/reductions.tex"
+      ]
+    },
+    {
+      "part": "methods",
+      "chapter": "methods/proofs",
+      "problem_count": 3,
+      "source_file_count": 3,
+      "score": 53,
+      "course_fit": "argument/proof habits",
+      "representative_files": [
+        "methods/proofs/proof-by-contradiction.tex",
+        "methods/proofs/reading-proofs.tex",
+        "methods/proofs/using-definitions.tex"
+      ]
+    },
+    {
+      "part": "proof-theory",
+      "chapter": "proof-theory/natural-deduction",
+      "problem_count": 1,
+      "source_file_count": 1,
+      "score": 51,
+      "course_fit": "formal proof systems",
+      "representative_files": [
+        "proof-theory/natural-deduction/quantifiers.tex"
+      ]
+    },
+    {
+      "part": "normal-modal-logic",
+      "chapter": "normal-modal-logic/syntax-and-semantics",
+      "problem_count": 13,
+      "source_file_count": 5,
+      "score": 50,
+      "course_fit": "extension unit after core logic",
+      "representative_files": [
+        "normal-modal-logic/syntax-and-semantics/entailment.tex",
+        "normal-modal-logic/syntax-and-semantics/modal-validity.tex",
+        "normal-modal-logic/syntax-and-semantics/schemas.tex",
+        "normal-modal-logic/syntax-and-semantics/truth-at-w.tex",
+        "normal-modal-logic/syntax-and-semantics/truth-in-model.tex"
+      ]
+    },
+    {
+      "part": "sets-functions-relations",
+      "chapter": "sets-functions-relations/size-of-sets",
+      "problem_count": 39,
+      "source_file_count": 10,
+      "score": 50,
+      "course_fit": "supporting or advanced topic",
+      "representative_files": [
+        "sets-functions-relations/size-of-sets/comparing-size.tex",
+        "sets-functions-relations/size-of-sets/enumerability-alt.tex",
+        "sets-functions-relations/size-of-sets/enumerability.tex",
+        "sets-functions-relations/size-of-sets/equinumerous-sets.tex",
+        "sets-functions-relations/size-of-sets/non-enumerability-alt.tex"
+      ]
+    }
+  ],
+  "highest_value_source_files": [
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/syntax-and-semantics/assignments.tex",
+      "problem_count": 4,
+      "score": 64,
+      "course_fit": "first-order syntax and semantics",
+      "examples": [
+        "Prove [syn][ass] prop:sentence-sat-true",
+        "Prove [syn][ass] prop:sat-quant ."
+      ]
+    },
+    {
+      "part": "propositional-logic",
+      "source_file": "propositional-logic/syntax-and-semantics/preliminaries.tex",
+      "problem_count": 4,
+      "score": 64,
+      "course_fit": "propositional syntax, truth, validity",
+      "examples": [
+        "Prove [syn][pre] prop:balanced",
+        "Prove [syn][pre] prop:noinit"
+      ]
+    },
+    {
+      "part": "propositional-logic",
+      "source_file": "propositional-logic/syntax-and-semantics/semantic-notions.tex",
+      "problem_count": 4,
+      "score": 64,
+      "course_fit": "propositional syntax, truth, validity",
+      "examples": [
+        "For each of the following four formulas determine whether it is (a)~satisfiable, (b)~tautology, and (c)~contingent. - \\( ( p_0 ( p_1 p_0 ) ) \\). - \\( ( ( p_0 p_1 ) ( p_0 p_2 )) ( ( p_2 p_0 ) ( p_0 p_1 )) \\). - \\( ( p_0 p_1 ) ( p_2 p_1 ) \\). - \\( (( p_0 ( p_1 p_2 )) ( p_2 ( p_0 p_1 ))) \\).",
+        "Prove [syn][sem] prop:semanticalfacts"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/models-theories/expressing-relations.tex",
+      "problem_count": 3,
+      "score": 63,
+      "course_fit": "models, theories, definability",
+      "examples": [
+        "Find formulas in $ L_A$ which define the following relations: - $n$ is between $i$ and $j$; - $n$ evenly divides $m$ (i.e., $m$ is a multiple of $n$); - $n$ is a prime number (i.e., no number other than $1$ and $n$ evenly divides~$n$).",
+        "Suppose the formula $!A( v_1, v_2)$ expresses the relation $R M^2$ in structure~$ M$. Find formulas that express the following relations: - the inverse $R^ -1 $ of $R$; - the relative product $R R$; Can you find a way to express $R^+$, the transitive closure of~$R$?"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/natural-deduction/proving-things.tex",
+      "problem_count": 3,
+      "score": 63,
+      "course_fit": "deductive proof rules",
+      "examples": [
+        "Give derivations that show the following: - $!A (!B !C) (!A !B) !C$. - $!A (!B !C) (!A !B) !C$. - $!A (!B !C) !B (!A !C)$. - $!A !A$.",
+        "Give derivations that show the following: - $(!A !B) !C !A !C$. - $(!A !C) (!B !C) (!A !B) !C$. - $ (!A !A)$. - $!B !A !A !B$. - $ (!A !A) !A$. - $ (!A !B) !B$. - $!A !C (!A !C)$. - $!A !C (!A !C)$. - $!A !B, !B !A$. - $ !A !B (!A !B)$. - $ ( !A !B) (!A !B)$. - $ (!A !B) ( !A !B)$."
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/syntax-and-semantics/formation-sequences.tex",
+      "problem_count": 3,
+      "score": 63,
+      "course_fit": "first-order syntax and semantics",
+      "examples": [
+        "Prove [syn][fseq] lem:fseq-init .",
+        "Prove [syn][fseq] prop:fseq-trm-equiv . Hint: use a similar strategy to that used in the proof of [syn][fseq] thm:fseq-frm-equiv ."
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/syntax-and-semantics/satisfaction.tex",
+      "problem_count": 3,
+      "score": 63,
+      "course_fit": "first-order syntax and semantics",
+      "examples": [
+        "Prove [syn][sat] prop:sat-ex",
+        "Prove [syn][sat] prop:sat-all"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/syntax-and-semantics/unique-readability.tex",
+      "problem_count": 3,
+      "score": 63,
+      "course_fit": "first-order syntax and semantics",
+      "examples": [
+        "Prove that for any term~$t$, $l(t) = r(t)$.",
+        "Prove [syn][unq] lem:no-prefix ."
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/tableaux/proving-things.tex",
+      "problem_count": 3,
+      "score": 63,
+      "course_fit": "validity and countermodel practice",
+      "examples": [
+        "Give closed tableaus of the following: - $\\True !A (!B !C) , \\False (!A !B) !C $. - $\\True !A (!B !C) , \\False (!A !B) !C $. - $\\True !A (!B !C) , \\False !B (!A !C) $. - $\\True !A , \\False !A $.",
+        "Give closed tableaus of the following: - $\\True (!A !B) !C , \\False !A !C $. - $\\True (!A !C) (!B !C) , \\False (!A !B) !C $. - $\\False (!A !A) $. - $\\True !B !A , \\False !A !B $. - $\\False (!A !A) !A $. - $\\False (!A !B) !B $. - $\\True !A !C , \\False (!A !C) $. - $\\True !A !C , \\False (!A !C) $. - $\\True !A !B, !B , \\False !A $. - $\\True !A !B , \\False (!A !B) $. - $\\False ( !A !B) (!A !B) $. - $\\False (!A !B) ( !A !B) $."
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/natural-deduction/identity.tex",
+      "problem_count": 2,
+      "score": 62,
+      "course_fit": "deductive proof rules",
+      "examples": [
+        "Prove that $=$ is both symmetric and transitive, i.e., give derivations of $ [ [( [y] [x])]]$ and $ [ [ (( [y] [z]) [z])]]$",
+        "Give derivations of the following formulas: - $ [ [(( [y] !A(x)) !A(y))]]$ - $ [!A(x)] [ [((!A(y) !A(z)) [z])]] [(!A(x) [(!A(y) [x])])]$"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/natural-deduction/proof-theoretic-notions.tex",
+      "problem_count": 2,
+      "score": 62,
+      "course_fit": "deductive proof rules",
+      "examples": [
+        "Prove [ntd][ptn] prop:incons",
+        "Prove [ntd][ptn] prop:incons"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/natural-deduction/proving-things-quant.tex",
+      "problem_count": 2,
+      "score": 62,
+      "course_fit": "deductive proof rules",
+      "examples": [
+        "Give derivations that show the following: - $ ( [!A(x)] [!B(y)]) [(!A(z) !B(z))]$. - $ ( [!A(x)] [!B(y)]) [(!A(z) !B(z))]$. - $ [(!A(x) !B)] [!A(y)] !B$. - $ [ !A(x)] [!A(x)]$. - $ [!A(x)] [ !A(x)]$. - $ [ [((!A(x,y) !A(y,y)) ( !A(y,y) !A(x,y)))]]$.",
+        "Give derivations that show the following: - $ [!A(x)] [ !A(x)]$. - $( [!A(x)] !B) [(!A(y) !B)]$. - $ [(!A(x) [!A(y)])]$. (These all require the $ $~rule.)"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/natural-deduction/soundness.tex",
+      "problem_count": 2,
+      "score": 62,
+      "course_fit": "deductive proof rules",
+      "examples": [
+        "Complete the proof of [ntd][sou] thm:soundness .",
+        "Complete the proof of [ntd][sou] thm:soundness ."
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/syntax-and-semantics/extensionality.tex",
+      "problem_count": 2,
+      "score": 62,
+      "course_fit": "first-order syntax and semantics",
+      "examples": [
+        "Carry out the proof of [syn][ext] prop:extensionality in detail.",
+        "Prove [syn][ext] prop:ext-formulas"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/syntax-and-semantics/subformulas.tex",
+      "problem_count": 2,
+      "score": 62,
+      "course_fit": "first-order syntax and semantics",
+      "examples": [
+        "Prove [syn][sbf] prop:subfrm-trans .",
+        "Prove [syn][sbf] prop:count-subfrms ."
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/tableaux/proof-theoretic-notions.tex",
+      "problem_count": 2,
+      "score": 62,
+      "course_fit": "validity and countermodel practice",
+      "examples": [
+        "Prove [tab][ptn] prop:incons",
+        "Prove [tab][ptn] prop:incons"
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/tableaux/proving-things-quant.tex",
+      "problem_count": 2,
+      "score": 62,
+      "course_fit": "validity and countermodel practice",
+      "examples": [
+        "Give closed tableaus of the following: - $\\False ( [!A(x)] [!B(y)]) [(!A(z) !B(z))] $. - $\\False ( [!A(x)] [!B(y)]) [(!A(z) !B(z))] $. - $\\True [(!A(x) !B)] , \\False [!A(y)] !B $. - $\\True [ !A(x)] , \\False [!A(x)] $. - $\\False [!A(x)] [ !A(x)] $. - $\\False [ [((!A(x,y) !A(y,y)) ( !A(y,y) !A(x,y)))]] $.",
+        "Give closed tableaus of the following: - $\\False [!A(x)] [ !A(x)] $. - $\\True ( [!A(x)] !B) , \\False [(!A(y) !B)] $. - $\\False [(!A(x) [!A(y)])] $."
+      ]
+    },
+    {
+      "part": "first-order-logic",
+      "source_file": "first-order-logic/tableaux/soundness.tex",
+      "problem_count": 2,
+      "score": 62,
+      "course_fit": "validity and countermodel practice",
+      "examples": [
+        "Complete the proof of [tab][sou] thm:tableau-soundness .",
+        "Complete the proof of [tab][sou] thm:tableau-soundness ."
+      ]
+    }
+  ],
+  "sample_transformed_mcq_candidates": [],
+  "conversion_recommendation": "No direct fixed-choice subset was found. Use an authored conversion pipeline with source-grounded item templates and human review."
+}

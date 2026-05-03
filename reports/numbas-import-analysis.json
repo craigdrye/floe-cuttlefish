@@ -1,0 +1,346 @@
+{
+  "total_items": 21871,
+  "classifications": {
+    "requires_parameter_rendering_or_conversion": 21858,
+    "safe_direct_import": 5,
+    "possible_direct_after_answer_refetch": 8
+  },
+  "by_source": {
+    "numbas": {
+      "requires_parameter_rendering_or_conversion": 9800,
+      "safe_direct_import": 3,
+      "possible_direct_after_answer_refetch": 5
+    },
+    "numbas_exams": {
+      "requires_parameter_rendering_or_conversion": 12058,
+      "safe_direct_import": 2,
+      "possible_direct_after_answer_refetch": 3
+    }
+  },
+  "top_part_types": {
+    "gapfill": 28224,
+    "numberentry": 5296,
+    "1_n_2": 3939,
+    "jme": 3662,
+    "m_n_x": 717,
+    "information": 623,
+    "m_n_2": 608,
+    "matrix": 443,
+    "patternmatch": 201,
+    "(none)": 166,
+    "mark-code-3": 107,
+    "extension": 67,
+    "yes-no": 57,
+    "quantity": 48,
+    "true-false": 38,
+    "spreadsheet": 31,
+    "write-a-word-producing-a-given-permutation": 12,
+    "list-of-numbers": 9,
+    "submit-an-answer-on-paper": 3,
+    "differential-equation": 3,
+    "number-entry-modulo": 2,
+    "daniella-s-copy-of-true-or-false": 2,
+    "give-a-numerical-input-for-an-expression": 2,
+    "write-a-permutation-in-cycle-notation": 2,
+    "will-s-copy-of-differential-equation": 1,
+    "have-you-submitted-your-answer-to-canvas": 1
+  },
+  "top_tags": {
+    "checked2015": 2588,
+    "calculus": 2315,
+    "steps": 1713,
+    "taxonomy": 1241,
+    "mas1601": 1064,
+    "rebelmaths": 860,
+    "differentiation": 785,
+    "rebel": 782,
+    "jsxgraph": 668,
+    "integration": 640,
+    "statics": 556,
+    "mechanics": 540,
+    "statistics": 537,
+    "solving equations": 534,
+    "algebraic manipulation": 518,
+    "probability": 492,
+    "fractions": 488,
+    "algebra": 453,
+    "mas1602": 418,
+    "indefinite integration": 377,
+    "mean": 368,
+    "factorisation": 361,
+    "numbas": 318,
+    "constant of integration": 277,
+    "tested1": 272,
+    "integrals": 268,
+    "chain rule": 258,
+    "substitution": 244,
+    "logarithms": 231,
+    "linear equations": 229,
+    "product rule": 224,
+    "integration by substitution": 224,
+    "logs": 219,
+    "matrix": 198,
+    "complex numbers": 198,
+    "vectors": 192,
+    "functions": 192,
+    "matrices": 186,
+    "sc": 181,
+    "data analysis": 177
+  },
+  "top_licences": {
+    "Creative Commons Attribution 4.0 International": 13516,
+    "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International": 5277,
+    "None specified": 1437,
+    "Creative Commons Attribution-NonCommercial 4.0 International": 1012,
+    "Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International": 267,
+    "Creative Commons Attribution-ShareAlike 4.0 International": 256,
+    "All rights reserved": 106
+  },
+  "blocker_counts": {
+    "raw extraction omitted answer/correctness configuration for assessed parts": 21626,
+    "uses answer part types not directly represented in Floe catalog": 21484,
+    "contains variables/placeholders/applets/LaTeX needing Numbas rendering": 20864,
+    "licence requires filtering or manual policy decision": 8099,
+    "no part type captured": 166,
+    "requires full .exam part answer fields": 8
+  },
+  "examples": {
+    "requires_parameter_rendering_or_conversion": [
+      {
+        "source_id": "numbas::202414",
+        "title": "Dump Truck",
+        "source_url": "https://numbas.mathcentre.ac.uk/question/202414/dump-truck/",
+        "part_types": [
+          "gapfill"
+        ],
+        "variable_count": 20,
+        "licence": "Creative Commons Attribution-NonCommercial 4.0 International",
+        "snippet": "The combined weight of the truck bed and its contents is {W} lb with a center of gravity at $G$. Determine: The force acting at on the dump bed at point $B$. The magnitude and direction of the reaction at pin $C$. {apple",
+        "reasons": [
+          "licence requires filtering or manual policy decision",
+          "contains variables/placeholders/applets/LaTeX needing Numbas rendering",
+          "uses answer part types not directly represented in Floe catalog",
+          "raw extraction omitted answer/correctness configuration for assessed parts"
+        ]
+      },
+      {
+        "source_id": "numbas::36904",
+        "title": "Moment of a Force: using Varignon's Theorem",
+        "source_url": "https://numbas.mathcentre.ac.uk/question/36904/moment-of-a-force-using-varignon-s-theorem/",
+        "part_types": [
+          "gapfill",
+          "gapfill"
+        ],
+        "variable_count": 27,
+        "licence": "Creative Commons Attribution-NonCommercial 4.0 International",
+        "snippet": "Force $\\mathbf{F}$, which has a magnitude of {F}, acts along a line passing through points $D$ and $D'$. The grid units are in [ {units[0]} ] and counter-clockwise moments are positive. Determine the moment of the force ",
+        "reasons": [
+          "licence requires filtering or manual policy decision",
+          "contains variables/placeholders/applets/LaTeX needing Numbas rendering",
+          "uses answer part types not directly represented in Floe catalog",
+          "raw extraction omitted answer/correctness configuration for assessed parts"
+        ]
+      },
+      {
+        "source_id": "numbas::37903",
+        "title": "Opposing moments using Varignon's theorem",
+        "source_url": "https://numbas.mathcentre.ac.uk/question/37903/opposing-moments-using-varignon-s-theorem/",
+        "part_types": [
+          "gapfill"
+        ],
+        "variable_count": 22,
+        "licence": "Creative Commons Attribution-NonCommercial 4.0 International",
+        "snippet": "An L shaped bracket is held in equilibrium by a frictionless pin at $A$ and cable $BD$. {applet} When a $\\var{F}$ load $F$ is applied as shown, determine: the magnitude of the moment of force $\\mathbf{F}$ about point $A$",
+        "reasons": [
+          "licence requires filtering or manual policy decision",
+          "contains variables/placeholders/applets/LaTeX needing Numbas rendering",
+          "uses answer part types not directly represented in Floe catalog",
+          "raw extraction omitted answer/correctness configuration for assessed parts"
+        ]
+      },
+      {
+        "source_id": "numbas::140954",
+        "title": "Equivalent Force-couple system: Bracket",
+        "source_url": "https://numbas.mathcentre.ac.uk/question/140954/equivalent-force-couple-system-bracket/",
+        "part_types": [
+          "gapfill",
+          "gapfill"
+        ],
+        "variable_count": 14,
+        "licence": "Creative Commons Attribution-NonCommercial 4.0 International",
+        "snippet": "Two forces act on a bracket as shown. Replace these forces with an equivalent force-couple system acting at point $B$. {applet}",
+        "reasons": [
+          "licence requires filtering or manual policy decision",
+          "contains variables/placeholders/applets/LaTeX needing Numbas rendering",
+          "uses answer part types not directly represented in Floe catalog",
+          "raw extraction omitted answer/correctness configuration for assessed parts"
+        ]
+      },
+      {
+        "source_id": "numbas::37760",
+        "title": "Equilibrium of a rigid body: cantilever beam",
+        "source_url": "https://numbas.mathcentre.ac.uk/question/37760/equilibrium-of-a-rigid-body-cantilever-beam/",
+        "part_types": [
+          "gapfill"
+        ],
+        "variable_count": 20,
+        "licence": "Creative Commons Attribution-NonCommercial 4.0 International",
+        "snippet": "A beam of length $L$ = {L} {units[1]} is supported by a fixed (cantilever) support at $O$, and supports these loads: $A$ = {magA} {units[0]}, $B$ = {abs(M)} {units[0]}-{units[1]} and $C$ = {magC} {units[0]}. {geogebra_ap",
+        "reasons": [
+          "licence requires filtering or manual policy decision",
+          "contains variables/placeholders/applets/LaTeX needing Numbas rendering",
+          "uses answer part types not directly represented in Floe catalog",
+          "raw extraction omitted answer/correctness configuration for assessed parts"
+        ]
+      }
+    ],
+    "safe_direct_import": [
+      {
+        "source_id": "numbas::164541",
+        "title": "Me Q009 - Beam Equilibrium",
+        "source_url": "https://numbas.mathcentre.ac.uk/question/164541/me-q009-beam-equilibrium/",
+        "part_types": [
+          "information",
+          "information",
+          "information",
+          "information",
+          "information",
+          "information",
+          "information"
+        ],
+        "variable_count": 0,
+        "licence": "Creative Commons Attribution 4.0 International",
+        "snippet": "The horizontal beam shown in the diagram is pin supported at A and roller supported at D. The beam carries a vertical point load as shown at B and an inclined point load as shown at C. l 1 = 3m, l 2 = 7m, l 3 = 1.2m, \u03b8=4",
+        "reasons": []
+      },
+      {
+        "source_id": "numbas::93623",
+        "title": "Make yourself comfortable",
+        "source_url": "https://numbas.mathcentre.ac.uk/question/93623/make-yourself-comfortable/",
+        "part_types": [
+          "information",
+          "information",
+          "information"
+        ],
+        "variable_count": 0,
+        "licence": "Creative Commons Attribution 4.0 International",
+        "snippet": "You can adjust Numbas to make it easier for you to use.",
+        "reasons": []
+      },
+      {
+        "source_id": "numbas::93735",
+        "title": "What to do if you have trouble",
+        "source_url": "https://numbas.mathcentre.ac.uk/question/93735/what-to-do-if-you-have-trouble/",
+        "part_types": [
+          "information",
+          "information"
+        ],
+        "variable_count": 0,
+        "licence": "Creative Commons Attribution 4.0 International",
+        "snippet": "If you have any trouble using Numbas, or a query about a test, contact your instructor first. If they can't solve the problem, they'll pass your message on to the Numbas team.",
+        "reasons": []
+      },
+      {
+        "source_id": "numbas-exam::21108::1",
+        "title": "Make yourself comfortable",
+        "source_url": "https://numbas.mathcentre.ac.uk/exam/21108/getting-started/",
+        "part_types": [
+          "information",
+          "information",
+          "information"
+        ],
+        "variable_count": 0,
+        "licence": "Creative Commons Attribution 4.0 International",
+        "snippet": "You can adjust Numbas to make it easier for you to use.",
+        "reasons": []
+      },
+      {
+        "source_id": "numbas-exam::21108::3",
+        "title": "What to do if you have trouble",
+        "source_url": "https://numbas.mathcentre.ac.uk/exam/21108/getting-started/",
+        "part_types": [
+          "information",
+          "information"
+        ],
+        "variable_count": 0,
+        "licence": "Creative Commons Attribution 4.0 International",
+        "snippet": "If you have any trouble using Numbas, or a query about a test, contact your instructor first. If they can't solve the problem, they'll pass your message on to the Numbas team.",
+        "reasons": []
+      }
+    ],
+    "possible_direct_after_answer_refetch": [
+      {
+        "source_id": "numbas::6536",
+        "title": "match text pattern part for MH",
+        "source_url": "https://numbas.mathcentre.ac.uk/question/6536/match-text-pattern-part-for-mh/",
+        "part_types": [
+          "patternmatch",
+          "patternmatch"
+        ],
+        "variable_count": 0,
+        "licence": "Creative Commons Attribution 4.0 International",
+        "snippet": "",
+        "reasons": [
+          "requires full .exam part answer fields"
+        ]
+      },
+      {
+        "source_id": "numbas::82347",
+        "title": " What is your name?",
+        "source_url": "https://numbas.mathcentre.ac.uk/question/82347/what-is-your-name/",
+        "part_types": [
+          "patternmatch"
+        ],
+        "variable_count": 0,
+        "licence": "Creative Commons Attribution 4.0 International",
+        "snippet": "",
+        "reasons": [
+          "requires full .exam part answer fields"
+        ]
+      },
+      {
+        "source_id": "numbas::51387",
+        "title": "Match absolutely any text",
+        "source_url": "https://numbas.mathcentre.ac.uk/question/51387/match-absolutely-any-text/",
+        "part_types": [
+          "patternmatch"
+        ],
+        "variable_count": 0,
+        "licence": "Creative Commons Attribution 4.0 International",
+        "snippet": "",
+        "reasons": [
+          "requires full .exam part answer fields"
+        ]
+      },
+      {
+        "source_id": "numbas::47582",
+        "title": "Chi squ area v rubbish",
+        "source_url": "https://numbas.mathcentre.ac.uk/question/47582/chi-squ-area-v-rubbish/",
+        "part_types": [
+          "yes-no"
+        ],
+        "variable_count": 0,
+        "licence": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "snippet": "",
+        "reasons": [
+          "requires full .exam part answer fields"
+        ]
+      },
+      {
+        "source_id": "numbas::16214",
+        "title": "match text pattern part for MH",
+        "source_url": "https://numbas.mathcentre.ac.uk/question/16214/match-text-pattern-part-for-mh/",
+        "part_types": [
+          "patternmatch",
+          "patternmatch"
+        ],
+        "variable_count": 0,
+        "licence": "Creative Commons Attribution 4.0 International",
+        "snippet": "",
+        "reasons": [
+          "requires full .exam part answer fields"
+        ]
+      }
+    ]
+  }
+}

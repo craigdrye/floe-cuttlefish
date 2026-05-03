@@ -1,0 +1,1798 @@
+{
+  "source": "OpenIntro Statistics Slides",
+  "license": "CC BY-SA 3.0",
+  "repository": "https://github.com/OpenIntroStat/openintro-statistics-slides.git",
+  "collectionCount": 9,
+  "questionCount": 85,
+  "items": [
+    {
+      "source_id": "openintro-stats-slides::chp_1::1",
+      "collection_id": "openintro-stats-slides::chp_1",
+      "chapter_slug": "chp_1",
+      "source_file": "Chp 1/1-2_data_basics/1-2_data_basics.tex",
+      "prompt_text": "What type of variable is a telephone area code?",
+      "choices": [
+        "numerical, continuous",
+        "numerical, discrete",
+        "categorical, ordinal"
+      ],
+      "correct_choice": "categorical",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_1",
+        "What type of variable is a telephone area code?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_1::2",
+      "collection_id": "openintro-stats-slides::chp_1",
+      "chapter_slug": "chp_1",
+      "source_file": "Chp 1/1-2_data_basics/1-2_data_basics.tex",
+      "prompt_text": "Based on the scatterplot on the right, which of the following statements is correct about the head and skull lengths of possums?",
+      "choices": [
+        "There is no relationship between head length and skull width, i.e. the variables are independent.",
+        "Skull width and head length are negatively associated.",
+        "A longer head causes the skull to be wider.",
+        "A wider skull causes the head to be longer."
+      ],
+      "correct_choice": "Head length and skull width are positively associated.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_1",
+        "Based on the scatterplot on the right, which of the following statements is corr"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_1::1",
+      "collection_id": "openintro-stats-slides::chp_1",
+      "chapter_slug": "chp_1",
+      "source_file": "Chp 1/1-3_sampling_principles_strategies/1-3_sampling_principles_strategies.tex",
+      "prompt_text": "A school district is considering whether it will no longer allow high school students to park at school after two recent accidents where students were severely injured. As a first step, they survey parents by mail, asking them whether or not the parents would object to this policy change. Of 6,000 surveys that go out, 1,200 are returned. Of these 1,200 surveys that were completed, 960 agreed with the policy change and 240 disagreed. Which of the following statements are true?",
+      "choices": [
+        "Some of the mailings may have never reached the parents.",
+        "The school district has strong support from parents to move forward with the policy approval.",
+        "It is possible that majority of the parents of high school students disagree with the policy change.",
+        "The survey results are unlikely to be biased because all parents were mailed a survey."
+      ],
+      "correct_choice": "I and III",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_1",
+        "A school district is considering whether it will no longer allow high school stu"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_1::2",
+      "collection_id": "openintro-stats-slides::chp_1",
+      "chapter_slug": "chp_1",
+      "source_file": "Chp 1/1-3_sampling_principles_strategies/1-3_sampling_principles_strategies.tex",
+      "prompt_text": "A city council has requested a household survey be conducted in a suburban area of their city. The area is broken into many distinct and unique neighborhoods, some including large homes, some with only apartments. Which approach would likely be the least effective?",
+      "choices": [
+        "Simple random sampling",
+        "Stratified sampling",
+        "Blocked sampling"
+      ],
+      "correct_choice": "Cluster sampling",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_1",
+        "A city council has requested a household survey be conducted in a suburban area "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_1::1",
+      "collection_id": "openintro-stats-slides::chp_1",
+      "chapter_slug": "chp_1",
+      "source_file": "Chp 1/1-4_experiments/1-4_experiments.tex",
+      "prompt_text": "A study is designed to test the effect of light level and noise level on exam performance of students. The researcher also believes that light and noise levels might have different effects on males and females, so wants to make sure both genders are equally represented in each group. Which of the below is correct?",
+      "choices": [
+        "There are 3 explanatory variables (light, noise, gender) and 1 response variable (exam performance)",
+        "There is 1 explanatory variable (gender) and 3 response variables (light, noise, exam performance)",
+        "There are 2 blocking variables (light and noise), 1 explanatory variable (gender), and 1 response variable (exam performance)"
+      ],
+      "correct_choice": "There are 2 explanatory variables (light and noise), 1 blocking variable (gender), and 1 response variable (exam performance)",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_1",
+        "A study is designed to test the effect of light level and noise level on exam pe"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_1::2",
+      "collection_id": "openintro-stats-slides::chp_1",
+      "chapter_slug": "chp_1",
+      "source_file": "Chp 1/1-4_experiments/1-4_experiments.tex",
+      "prompt_text": "What is the main difference between observational studies and experiments?",
+      "choices": [
+        "Experiments take place in a lab while observational studies do not need to.",
+        "In an observational study we only look at what happened in the past.",
+        "Observational studies are completely useless since no causal inference can be made based on their findings."
+      ],
+      "correct_choice": "Most experiments use random assignment while observational studies do not.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_1",
+        "What is the main difference between observational studies and experiments?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_2::1",
+      "collection_id": "openintro-stats-slides::chp_2",
+      "chapter_slug": "chp_2",
+      "source_file": "Chp 2/2-1_numerical_data/2-1_numerical_data.tex",
+      "prompt_text": "Which of these variables do you expect to be uniformly distributed?",
+      "choices": [
+        "weights of adult females",
+        "salaries of a random sample of people from North Carolina",
+        "house prices"
+      ],
+      "correct_choice": "birthdays of classmates (day of the month)",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_2",
+        "Which of these variables do you expect to be uniformly distributed?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_2::2",
+      "collection_id": "openintro-stats-slides::chp_2",
+      "chapter_slug": "chp_2",
+      "source_file": "Chp 2/2-1_numerical_data/2-1_numerical_data.tex",
+      "prompt_text": "Which is most likely true for the distribution of percentage of time actually spent taking notes in class versus on Facebook, Twitter, etc.?",
+      "choices": [
+        "mean$>$ median",
+        "mean $ $ median",
+        "impossible to tell"
+      ],
+      "correct_choice": "mean $<$ median",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_2",
+        "Which is most likely true for the distribution of percentage of time actually sp"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_2::1",
+      "collection_id": "openintro-stats-slides::chp_2",
+      "chapter_slug": "chp_2",
+      "source_file": "Chp 2/2-3_gender_discrimination/2-3_gender_discrimination.tex",
+      "prompt_text": "Do the results of the simulation you just ran provide convincing evidence of gender discrimination against women, i.e. dependence between gender and promotion decisions?",
+      "choices": [
+        "No, the data do not provide convincing evidence for the alternative hypothesis, therefore we can't reject the null hypothesis of independence between gender and promotion decisions. The observed difference between the two proportions was due to chance."
+      ],
+      "correct_choice": "Yes, the data provide convincing evidence for the alternative hypothesis of gender discrimination against women in promotion decisions. The observed difference between the two proportions was due to a real effect of gender.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_2",
+        "Do the results of the simulation you just ran provide convincing evidence of gen"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_3::1",
+      "collection_id": "openintro-stats-slides::chp_3",
+      "chapter_slug": "chp_3",
+      "source_file": "Chp 3/3-1_define_probability/3-1_define_probability.tex",
+      "prompt_text": "Which of the following events would you be most surprised by?",
+      "choices": [
+        "exactly 3 heads in 10 coin flips",
+        "exactly 3 heads in 100 coin flips"
+      ],
+      "correct_choice": "exactly 3 heads in 1000 coin flips",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_3",
+        "Which of the following events would you be most surprised by?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_3::2",
+      "collection_id": "openintro-stats-slides::chp_3",
+      "chapter_slug": "chp_3",
+      "source_file": "Chp 3/3-1_define_probability/3-1_define_probability.tex",
+      "prompt_text": "What is the probability that a randomly sampled student thinks marijuana should be legalized or they agree with their parents' political views?",
+      "choices": [
+        "$40 + 36 - 78 165 $ 165 $",
+        "$78 165 $",
+        "$78 188 $",
+        "$11 47 $"
+      ],
+      "correct_choice": "$ 114 + 118 - 78",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_3",
+        "What is the probability that a randomly sampled student thinks marijuana should "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_3::3",
+      "collection_id": "openintro-stats-slides::chp_3",
+      "chapter_slug": "chp_3",
+      "source_file": "Chp 3/3-1_define_probability/3-1_define_probability.tex",
+      "prompt_text": "In a survey, 52% of respondents said they are Democrats. What is the probability that a randomly selected respondent from this sample is a Republican?",
+      "choices": [
+        "0.48",
+        "more than 0.48",
+        "less than 0.48"
+      ],
+      "correct_choice": "cannot calculate using only the information given",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_3",
+        "In a survey, 52% of respondents said they are Democrats. What is the probability"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_3::4",
+      "collection_id": "openintro-stats-slides::chp_3",
+      "chapter_slug": "chp_3",
+      "source_file": "Chp 3/3-1_define_probability/3-1_define_probability.tex",
+      "prompt_text": "Between January 9-12, 2013, SurveyUSA interviewed a random sample of 500 NC residents asking them whether they think widespread gun ownership protects law abiding citizens from crime, or makes society more dangerous. 58% of all respondents said it protects citizens. 67% of White respondents, 28% of Black respondents, and 64% of Hispanic respondents shared this view. Which of the below is true?",
+      "choices": [
+        "complementary",
+        "mutually exclusive",
+        "independent",
+        "disjoint"
+      ],
+      "correct_choice": "dependent",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_3",
+        "Between January 9-12, 2013, SurveyUSA interviewed a random sample of 500 NC resi"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_3::5",
+      "collection_id": "openintro-stats-slides::chp_3",
+      "chapter_slug": "chp_3",
+      "source_file": "Chp 3/3-1_define_probability/3-1_define_probability.tex",
+      "prompt_text": "A recent Gallup poll suggests that 25.5% of Texans do not have health insurance as of June 2012. Assuming that the uninsured rate stayed constant, what is the probability that two randomly selected Texans are both uninsured?",
+      "choices": [
+        "$25.5^2$",
+        "$0.255 2$",
+        "$(1 - 0.255)^2$"
+      ],
+      "correct_choice": "$0.255^2$",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_3",
+        "A recent Gallup poll suggests that 25.5% of Texans do not have health insurance "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_3::6",
+      "collection_id": "openintro-stats-slides::chp_3",
+      "chapter_slug": "chp_3",
+      "source_file": "Chp 3/3-1_define_probability/3-1_define_probability.tex",
+      "prompt_text": "Roughly 20% of undergraduates at a university are vegetarian or vegan. What is the probability that, among a random sample of 3 undergraduates, at least one is vegetarian or vegan?",
+      "choices": [
+        "$1 - 0.2 3$",
+        "$1 - 0.2^3$",
+        "$0.8^3$",
+        "$1 - 0.8 3$"
+      ],
+      "correct_choice": "$1 - 0.8^3$",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_3",
+        "Roughly 20% of undergraduates at a university are vegetarian or vegan. What is t"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_3::1",
+      "collection_id": "openintro-stats-slides::chp_3",
+      "chapter_slug": "chp_3",
+      "source_file": "Chp 3/3-2_conditional_probability/3-2_conditional_probability.tex",
+      "prompt_text": "Suppose a woman who gets tested once and obtains a positive result wants to get tested again. In the second test, what should we assume to be the probability of this specific woman having cancer?",
+      "choices": [
+        "0.017",
+        "0.0133",
+        "0.88"
+      ],
+      "correct_choice": "0.12",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_3",
+        "Suppose a woman who gets tested once and obtains a positive result wants to get "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_3::2",
+      "collection_id": "openintro-stats-slides::chp_3",
+      "chapter_slug": "chp_3",
+      "source_file": "Chp 3/3-2_conditional_probability/3-2_conditional_probability.tex",
+      "prompt_text": "What is the probability that this woman has cancer if this second mammogram also yielded a positive result?",
+      "choices": [
+        "0.0936",
+        "0.088",
+        "0.48"
+      ],
+      "correct_choice": "0.52",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_3",
+        "What is the probability that this woman has cancer if this second mammogram also"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_3::1",
+      "collection_id": "openintro-stats-slides::chp_3",
+      "chapter_slug": "chp_3",
+      "source_file": "Chp 3/3-3_sample_from_small_population/3-3_sample_from_small_population.tex",
+      "prompt_text": "In most card games cards are dealt without replacement. What is the probability of being dealt an ace and then a 3? Choose the closest answer.",
+      "choices": [
+        "0.0045",
+        "0.0059",
+        "0.1553"
+      ],
+      "correct_choice": "0.0060",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_3",
+        "In most card games cards are dealt without replacement. What is the probability "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_3::1",
+      "collection_id": "openintro-stats-slides::chp_3",
+      "chapter_slug": "chp_3",
+      "source_file": "Chp 3/3-4_random_variables/3-4_random_variables.tex",
+      "prompt_text": "A casino game costs \\$5 to play. If the first card you draw is red, then you get to draw a second card (without replacement). If the second card is the ace of clubs, you win \\$500. If not, you don't win anything, i.e. lose your \\$5. What is your expected profits/losses from playing this game? Remember: profit/loss = winnings - cost.",
+      "choices": [
+        "A profit of 5",
+        "A loss of 25",
+        "A loss of 30"
+      ],
+      "correct_choice": "A loss of 10",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_3",
+        "A casino game costs \\$5 to play. If the first card you draw is red, then you get"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_4::1",
+      "collection_id": "openintro-stats-slides::chp_4",
+      "chapter_slug": "chp_4",
+      "source_file": "Chp 4/4-1_normal_distribution/4-1_normal_distribution.tex",
+      "prompt_text": "What percent of bottles pass the quality control inspection?",
+      "choices": [
+        "1.82%",
+        "3.44%",
+        "6.88%",
+        "96.56%",
+        "[]"
+      ],
+      "correct_choice": "93.12%",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_4",
+        "What percent of bottles pass the quality control inspection?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_4::2",
+      "collection_id": "openintro-stats-slides::chp_4",
+      "chapter_slug": "chp_4",
+      "source_file": "Chp 4/4-1_normal_distribution/4-1_normal_distribution.tex",
+      "prompt_text": "Body temperatures of healthy humans are distributed nearly normally with mean 98.2$ $F and standard deviation 0.73$ $F. What is the cutoff for the highest 10% of human body temperatures?",
+      "choices": [
+        "97.3$ $F",
+        "99.4$ $F",
+        "99.6$ $F"
+      ],
+      "correct_choice": "99.1$ $F",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_4",
+        "Body temperatures of healthy humans are distributed nearly normally with mean 98"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_4::3",
+      "collection_id": "openintro-stats-slides::chp_4",
+      "chapter_slug": "chp_4",
+      "source_file": "Chp 4/4-1_normal_distribution/4-1_normal_distribution.tex",
+      "prompt_text": "Which of the following is false?",
+      "choices": [
+        "Majority of Z scores in a right skewed distribution are negative.",
+        "For a normal distribution, IQR is less than $2 SD$.",
+        "Z scores are helpful for determining how unusual a data point is compared to the rest of the data in the distribution."
+      ],
+      "correct_choice": "In skewed distributions the Z score of the mean might be different than 0.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_4",
+        "Which of the following is false?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_4::1",
+      "collection_id": "openintro-stats-slides::chp_4",
+      "chapter_slug": "chp_4",
+      "source_file": "Chp 4/4-3_binomial_distribution/4-3_binomial_distribution.tex",
+      "prompt_text": "Which of the following is false?",
+      "choices": [
+        "There are $n$ ways of getting 1 success in $n$ trials, $ n 1 = n$.",
+        "There is only 1 way of getting $n$ successes in $n$ trials, $ n n = 1$.",
+        "There is only 1 way of getting $n$ failures in $n$ trials, $ n 0 = 1$. = n-1$."
+      ],
+      "correct_choice": "There are $n-1$ ways of getting $n-1$ successes in $n$ trials, $ n n-1",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_4",
+        "Which of the following is false?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_4::2",
+      "collection_id": "openintro-stats-slides::chp_4",
+      "chapter_slug": "chp_4",
+      "source_file": "Chp 4/4-3_binomial_distribution/4-3_binomial_distribution.tex",
+      "prompt_text": "Which of the following is not a condition that needs to be met for the binomial distribution to be applicable?",
+      "choices": [
+        "the trials must be independent",
+        "the number of trials, $n$, must be fixed",
+        "each trial outcome must be classified as a success or a failure",
+        "the probability of success, $p$, must be the same for each trial"
+      ],
+      "correct_choice": "the number of desired successes, $k$, must be greater than the number of trials",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_4",
+        "Which of the following is not a condition that needs to be met for the binomial "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_4::3",
+      "collection_id": "openintro-stats-slides::chp_4",
+      "chapter_slug": "chp_4",
+      "source_file": "Chp 4/4-3_binomial_distribution/4-3_binomial_distribution.tex",
+      "prompt_text": "A 2012 Gallup survey suggests that 26.2% of Americans are obese. Among a random sample of 10 Americans, what is the probability that exactly 8 are obese?",
+      "choices": [
+        "pretty high"
+      ],
+      "correct_choice": "pretty low",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_4",
+        "A 2012 Gallup survey suggests that 26.2% of Americans are obese. Among a random "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_4::4",
+      "collection_id": "openintro-stats-slides::chp_4",
+      "chapter_slug": "chp_4",
+      "source_file": "Chp 4/4-3_binomial_distribution/4-3_binomial_distribution.tex",
+      "prompt_text": "A 2012 Gallup survey suggests that 26.2% of Americans are obese. Among a random sample of 10 Americans, what is the probability that exactly 8 are obese?",
+      "choices": [
+        "$0.262^8 0.738^2$",
+        "$ 8 10 0.262^8 0.738^2$ 0.262^8 0.738^2$",
+        "$ 10 8 0.262^2 0.738^8$"
+      ],
+      "correct_choice": "$ 10 8",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_4",
+        "A 2012 Gallup survey suggests that 26.2% of Americans are obese. Among a random "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_4::5",
+      "collection_id": "openintro-stats-slides::chp_4",
+      "chapter_slug": "chp_4",
+      "source_file": "Chp 4/4-3_binomial_distribution/4-3_binomial_distribution.tex",
+      "prompt_text": "An August 2012 Gallup poll suggests that 13% of Americans think home schooling provides an excellent education for children. Would a random sample of 1,000 Americans where only 100 share this opinion be considered unusual?",
+      "choices": [
+        "No"
+      ],
+      "correct_choice": "Yes",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_4",
+        "An August 2012 Gallup poll suggests that 13% of Americans think home schooling p"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_4::6",
+      "collection_id": "openintro-stats-slides::chp_4",
+      "chapter_slug": "chp_4",
+      "source_file": "Chp 4/4-3_binomial_distribution/4-3_binomial_distribution.tex",
+      "prompt_text": "Below are four pairs of Binomial distribution parameters. Which distribution can be approximated by the normal distribution?",
+      "choices": [
+        "$n = 100, p = 0.95$",
+        "$n = 150, p = 0.05$",
+        "$n = 500, p = 0.015$"
+      ],
+      "correct_choice": "$n = 25, p = 0.45$",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_4",
+        "Below are four pairs of Binomial distribution parameters. Which distribution can"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_4::1",
+      "collection_id": "openintro-stats-slides::chp_4",
+      "chapter_slug": "chp_4",
+      "source_file": "Chp 4/4-4_negative_binomial_distribution/4-4_negative_binomial_distribution.tex",
+      "prompt_text": "Which of the following describes a case where we would use the negative binomial distribution to calculate the desired probability?",
+      "choices": [
+        "Probability that a 5 year old boy is taller than 42 inches.",
+        "Probability that 3 out of 10 softball throws are successful.",
+        "Probability of being dealt a straight flush hand in poker.",
+        "Probability of missing 8 shots before the first hit. $ time on the 8$^ th $ try."
+      ],
+      "correct_choice": "Probability of hitting the ball for the 3$ rd",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_4",
+        "Which of the following describes a case where we would use the negative binomial"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_4::1",
+      "collection_id": "openintro-stats-slides::chp_4",
+      "chapter_slug": "chp_4",
+      "source_file": "Chp 4/4-5_poisson_distribution/4-5_poisson_distribution.tex",
+      "prompt_text": "A random variable that follows which of the following distributions can take on values other than positive integers?",
+      "choices": [
+        "Poisson",
+        "Negative binomial",
+        "Binomial",
+        "Geometric"
+      ],
+      "correct_choice": "Normal",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_4",
+        "A random variable that follows which of the following distributions can take on "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_5::1",
+      "collection_id": "openintro-stats-slides::chp_5",
+      "chapter_slug": "chp_5",
+      "source_file": "Chp 5/5-2_ci_prop/5-2_ci_prop.tex",
+      "prompt_text": "Which of the following is the correct interpretation of this confidence interval?",
+      "choices": [
+        "64% to 70% of American Facebook users in this sample think Facebook categorizes their interests accurately.",
+        "there is a 64% to 70% chance that a randomly chosen American Facebook user's interests are categorized accurately.",
+        "there is a 64% to 70% chance that 95% of American Facebook users' interests are categorized accurately."
+      ],
+      "correct_choice": "64% to 70% of all American Facebook users think Facebook categorizes their interests accurately",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_5",
+        "Which of the following is the correct interpretation of this confidence interval"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_5::2",
+      "collection_id": "openintro-stats-slides::chp_5",
+      "chapter_slug": "chp_5",
+      "source_file": "Chp 5/5-2_ci_prop/5-2_ci_prop.tex",
+      "prompt_text": "Which of the below Z scores is the appropriate $z^ $ when calculating a 98% confidence interval?",
+      "choices": [
+        "$Z = 2.05$",
+        "$Z = 1.96$",
+        "$Z = -2.33$",
+        "$Z = -1.65$",
+        "[]"
+      ],
+      "correct_choice": "$Z = 2.33$",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_5",
+        "Which of the below Z scores is the appropriate $z^ $ when calculating a 98% conf"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_5::1",
+      "collection_id": "openintro-stats-slides::chp_5",
+      "chapter_slug": "chp_5",
+      "source_file": "Chp 5/5-3_ht_prop/5-3_ht_prop.tex",
+      "prompt_text": "Which of the following is not a condition that needs to be met to proceed with this hypothesis test?",
+      "choices": [
+        "Respondents in the sample should be independent of each other with respect to whether or not they feel comfortable with their interests being categorized by Facebook.",
+        "Sampling should have been done randomly.",
+        "The sample size should be less than 10% of the population of all American Facebook users.",
+        "There should be at least 10 expected successes and 10 expected failure."
+      ],
+      "correct_choice": "There should be at least 30 respondents in the sample.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_5",
+        "Which of the following is not a condition that needs to be met to proceed with t"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_6::1",
+      "collection_id": "openintro-stats-slides::chp_6",
+      "chapter_slug": "chp_6",
+      "source_file": "Chp 6/6-1_single_prop/6-1_single_prop.tex",
+      "prompt_text": "Two scientists want to know if a certain drug is effective against high blood pressure. The first scientist wants to give the drug to 1000 people with high blood pressure and see how many of them experience lower blood pressure levels. The second scientist wants to give the drug to 500 people with high blood pressure, and not give the drug to another 500 people with high blood pressure, and see how many in both groups experience lower blood pressure levels. Which is the better way to test this drug?",
+      "choices": [
+        "All 1000 get the drug"
+      ],
+      "correct_choice": "500 get the drug, 500 don't",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_6",
+        "Two scientists want to know if a certain drug is effective against high blood pr"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_6::2",
+      "collection_id": "openintro-stats-slides::chp_6",
+      "chapter_slug": "chp_6",
+      "source_file": "Chp 6/6-1_single_prop/6-1_single_prop.tex",
+      "prompt_text": "We are given that $n = 670, p = 0.85$, we also just learned that the standard error of the sample proportion is $SE = p(1-p) n $. Which of the below is the correct calculation of the 95% confidence interval?",
+      "choices": [
+        "$0.85 1.65 0.85 \\times 0.15 670 $",
+        "$0.85 1.96 0.85 \\times 0.15 670 $",
+        "$571 1.96 571 \\times 99 670 $"
+      ],
+      "correct_choice": "$0.85 1.96 0.85 0.15",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_6",
+        "We are given that $n = 670, p = 0.85$, we also just learned that the standard er"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_6::3",
+      "collection_id": "openintro-stats-slides::chp_6",
+      "chapter_slug": "chp_6",
+      "source_file": "Chp 6/6-1_single_prop/6-1_single_prop.tex",
+      "prompt_text": "Based on this confidence interval, does it appear that more than a 80% of Americans have a good intuition on experimental design? %(0.82, 0.88) %",
+      "choices": [
+        "No %",
+        "Cannot tell %"
+      ],
+      "correct_choice": "Yes",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_6",
+        "Based on this confidence interval, does it appear that more than a 80% of Americ"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_6::4",
+      "collection_id": "openintro-stats-slides::chp_6",
+      "chapter_slug": "chp_6",
+      "source_file": "Chp 6/6-1_single_prop/6-1_single_prop.tex",
+      "prompt_text": "11% of 1,001 Americans responding to a 2006 Gallup survey stated that they have objections to celebrating Halloween on religious grounds. At 95% confidence level, the margin of error for this survey is $ 3%$. A news piece on this study's findings states: ``More than 10% of all Americans have objections on religious grounds to celebrating Halloween.\" At 95% confidence level, is this news piece's statement justified?",
+      "choices": [
+        "Yes",
+        "Cannot tell"
+      ],
+      "correct_choice": "No",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_6",
+        "11% of 1,001 Americans responding to a 2006 Gallup survey stated that they have "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_6::1",
+      "collection_id": "openintro-stats-slides::chp_6",
+      "chapter_slug": "chp_6",
+      "source_file": "Chp 6/6-2_two_props/6-2_two_props.tex",
+      "prompt_text": "Which of the following is the correct set of hypotheses for testing if the proportion of all Duke students who would be bothered a great deal by the melting of the northern ice cap differs from the proportion of all Americans who do?",
+      "choices": [
+        "$H_0: p_ Duke = p_ US $ $H_A: p_ Duke p_ US $ - p_ US = 0$ $H_A: p_ Duke - p_ US 0$",
+        "$H_0: p_ Duke = p_ US $ $H_A: p_ Duke < p_ US $"
+      ],
+      "correct_choice": "$H_0: p_ Duke",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_6",
+        "Which of the following is the correct set of hypotheses for testing if the propo"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_6::1",
+      "collection_id": "openintro-stats-slides::chp_6",
+      "chapter_slug": "chp_6",
+      "source_file": "Chp 6/6-3_chisq_gof/6-3_chisq_gof.tex",
+      "prompt_text": "Labby rolled 12 dice 26,306 times. If each side is equally likely to come up, how many 1s, 2s, $ $, 6s would he expect to have observed?",
+      "choices": [
+        "$1 6 $",
+        "$12 6 $",
+        "$26,306 6 $ 6 $"
+      ],
+      "correct_choice": "$ 12 26,306",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_6",
+        "Labby rolled 12 dice 26,306 times. If each side is equally likely to come up, ho"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_6::2",
+      "collection_id": "openintro-stats-slides::chp_6",
+      "chapter_slug": "chp_6",
+      "source_file": "Chp 6/6-3_chisq_gof/6-3_chisq_gof.tex",
+      "prompt_text": "Which of the following is false?",
+      "choices": [
+        "the center of the $ ^2$ distribution increases as well",
+        "the variability of the $ ^2$ distribution increases as well"
+      ],
+      "correct_choice": "the shape of the $ ^2$ distribution becomes more skewed (less like a normal)",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_6",
+        "Which of the following is false?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_6::3",
+      "collection_id": "openintro-stats-slides::chp_6",
+      "chapter_slug": "chp_6",
+      "source_file": "Chp 6/6-3_chisq_gof/6-3_chisq_gof.tex",
+      "prompt_text": "Estimate the shaded area (above the cutoff value of 17) under the $ ^2$ curve with $df = 9$.",
+      "choices": [
+        "0.05",
+        "0.02",
+        "between 0.05 and 0.1",
+        "between 0.01 and 0.02"
+      ],
+      "correct_choice": "between 0.02 and 0.05",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_6",
+        "Estimate the shaded area (above the cutoff value of 17) under the $ ^2$ curve wi"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_6::4",
+      "collection_id": "openintro-stats-slides::chp_6",
+      "chapter_slug": "chp_6",
+      "source_file": "Chp 6/6-3_chisq_gof/6-3_chisq_gof.tex",
+      "prompt_text": "Estimate the shaded area (above 30) under the $ ^2$ curve with $df = 10$.",
+      "choices": [
+        "greater than 0.3",
+        "between 0.005 and 0.001",
+        "greater than 0.001",
+        "cannot tell using this table"
+      ],
+      "correct_choice": "less than 0.001",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_6",
+        "Estimate the shaded area (above 30) under the $ ^2$ curve with $df = 10$."
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_6::5",
+      "collection_id": "openintro-stats-slides::chp_6",
+      "chapter_slug": "chp_6",
+      "source_file": "Chp 6/6-3_chisq_gof/6-3_chisq_gof.tex",
+      "prompt_text": "We calculated a p-value less than 0.001. At 5% significance level, what is the conclusion of the hypothesis test?",
+      "choices": [
+        "Reject $H_0$, the data provide convincing evidence that the dice are fair.",
+        "Fail to reject $H_0$, the data provide convincing evidence that the dice are fair.",
+        "Fail to reject $H_0$, the data provide convincing evidence that the dice are biased."
+      ],
+      "correct_choice": "Reject $H_0$, the data provide convincing evidence that the dice are biased.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_6",
+        "We calculated a p-value less than 0.001. At 5% significance level, what is the c"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_6::6",
+      "collection_id": "openintro-stats-slides::chp_6",
+      "chapter_slug": "chp_6",
+      "source_file": "Chp 6/6-3_chisq_gof/6-3_chisq_gof.tex",
+      "prompt_text": "Based on these calculations what is the conclusion of the hypothesis test?",
+      "choices": [
+        "p-value is high, $H_0$ is not rejected. The observed counts from the poll follow the same distribution as the reported votes.",
+        "p-value is low, $H_0$ is rejected. The observed counts from the poll follow the same distribution as the reported votes",
+        "p-value is low, $H_0$ is not rejected. The observed counts from the poll do not follow the same distribution as the reported votes."
+      ],
+      "correct_choice": "p-value is low, $H_0$ is rejected. The observed counts from the poll do not",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_6",
+        "Based on these calculations what is the conclusion of the hypothesis test?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_6::1",
+      "collection_id": "openintro-stats-slides::chp_6",
+      "chapter_slug": "chp_6",
+      "source_file": "Chp 6/6-4_chisq_indep/6-4_chisq_indep.tex",
+      "prompt_text": "What is the expected count for the highlighted cell?",
+      "choices": [
+        "$119 \\times 141 478 $",
+        "$176 \\times 247 478 $",
+        "$176 \\times 478 478 $"
+      ],
+      "correct_choice": "$ 176 141",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_6",
+        "What is the expected count for the highlighted cell?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_6::2",
+      "collection_id": "openintro-stats-slides::chp_6",
+      "chapter_slug": "chp_6",
+      "source_file": "Chp 6/6-4_chisq_indep/6-4_chisq_indep.tex",
+      "prompt_text": "Which of the following is the correct p-value for this hypothesis test? \\[ ^2 = 1.3121 df = 4 \\]",
+      "choices": [
+        "between 0.3 and 0.2",
+        "between 0.2 and 0.1",
+        "between 0.1 and 0.05",
+        "less than 0.001"
+      ],
+      "correct_choice": "more than 0.3",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_6",
+        "Which of the following is the correct p-value for this hypothesis test? \\[ ^2 = "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::1",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-1_one_t/7-1_one_t.tex",
+      "prompt_text": "What are the hypotheses for testing for a difference between the average traffic flow between Friday 6$^ th $ and 13$^ th $?",
+      "choices": [
+        "H_0: $ _ 6th = _ 13th $ H_A: $ _ 6th _ 13th $",
+        "H_0: $p_ 6th = p_ 13th $ H_A: $p_ 6th p_ 13th $ $ _ diff = 0$ H_A: $ _ diff 0$",
+        "H_0: $x_ diff = 0$ H_A: $x_ diff = 0$"
+      ],
+      "correct_choice": "H_0:",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "What are the hypotheses for testing for a difference between the average traffic"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::2",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-1_one_t/7-1_one_t.tex",
+      "prompt_text": "Which of the following is the correct calculation of a 95% confidence interval for the difference between the traffic flow between Friday 6$^ th $ and 13$^ th $?",
+      "choices": [
+        "$1836 1.96 372$",
+        "$1836 -2.26 372$",
+        "$1836 2.26 1176$"
+      ],
+      "correct_choice": "$1836 2.26 372$",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "Which of the following is the correct calculation of a 95% confidence interval f"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::3",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-1_one_t/7-1_one_t.tex",
+      "prompt_text": "Which of the following is the best interpretation for the confidence interval we just calculated? \\[ _ diff: 6th - 13th = (995, 2677) \\]",
+      "choices": [
+        "the difference between the average number of cars on the road on Friday 6$^ th $ and 13$^ th $ is between 995 and 2,677.",
+        "on Friday 6$^ th $ there are 995 to 2,677 fewer cars on the road than on the Friday 13$^ th $, on average.",
+        "on Friday 6$^ th $ there are 995 fewer to 2,677 more cars on the road than on the Friday 13$^ th $, on average. $ there are 995 to 2,677 fewer cars on the road than on the Friday 6$^ th $, on average."
+      ],
+      "correct_choice": "on Friday 13$^ th",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "Which of the following is the best interpretation for the confidence interval we"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::1",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-2_paired/7-2_paired.tex",
+      "prompt_text": "The same students took a reading and writing test and their scores are shown below. Are the reading and writing scores of each student independent of each other?",
+      "choices": [
+        "Yes"
+      ],
+      "correct_choice": "No",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "The same students took a reading and writing test and their scores are shown bel"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::2",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-2_paired/7-2_paired.tex",
+      "prompt_text": "Which of the following is true?",
+      "choices": [
+        "The distribution of differences is bimodal, therefore we cannot continue with the hypothesis test.",
+        "In order for differences to be random we should have sampled with replacement.",
+        "Since students are sampled randomly and are less than 10% all students, we can assume that the sampling distribution of the average difference will be nearly normal."
+      ],
+      "correct_choice": "Since students are sampled randomly and are less than 10% of all high school students, we can assume that the difference between the reading and writing scores of one student in the sample is independent of another.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "Which of the following is true?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::3",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-2_paired/7-2_paired.tex",
+      "prompt_text": "Which of the following is the correct interpretation of the p-value?",
+      "choices": [
+        "Probability that the average scores on the reading and writing exams are equal.",
+        "Probability that the average scores on the reading and writing exams are different.",
+        "Probability of incorrectly rejecting the null hypothesis if in fact the null hypothesis is true."
+      ],
+      "correct_choice": "Probability of obtaining a random sample of 200 students where the average difference between the reading and writing scores is at least 0.545 (in either direction), if in fact the true average difference between the scores is 0.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "Which of the following is the correct interpretation of the p-value?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::4",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-2_paired/7-2_paired.tex",
+      "prompt_text": "Suppose we were to construct a 95% confidence interval for the average difference between the reading and writing scores. Would you expect this interval to include 0?",
+      "choices": [
+        "no",
+        "cannot tell from the information given"
+      ],
+      "correct_choice": "yes",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "Suppose we were to construct a 95% confidence interval for the average differenc"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::1",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-3_diff_two_mean/7-3_diff_two_mean.tex",
+      "prompt_text": "Which of the following is the correct set of hypotheses for testing if the average point price of 1 carat diamonds ($_ pt100 $) is higher than the average point price of 0.99 carat diamonds ($_ pt99 $)?",
+      "choices": [
+        "H_0: $ _ pt99 = _ pt100 $ H_A: $ _ pt99 _ pt100 $",
+        "H_0: $ _ pt99 = _ pt100 $ H_A: $ _ pt99 > _ pt100 $ $ _ pt99 = _ pt100 $ H_A: $ _ pt99 < _ pt100 $",
+        "H_0: $x_ pt99 = x_ pt100 $ H_A: $x_ pt99 < x_ pt100 $"
+      ],
+      "correct_choice": "H_0:",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "Which of the following is the correct set of hypotheses for testing if the avera"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::2",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-3_diff_two_mean/7-3_diff_two_mean.tex",
+      "prompt_text": "Which of the following does not need to be satisfied in order to conduct this hypothesis test using theoretical methods?",
+      "choices": [
+        "Point price of one 0.99 carat diamond in the sample should be independent of another, and the point price of one 1 carat diamond should independent of another as well.",
+        "Point prices of 0.99 carat and 1 carat diamonds in the sample should be independent.",
+        "Distributions of point prices of 0.99 and 1 carat diamonds should not be extremely skewed."
+      ],
+      "correct_choice": "Both sample sizes should be at least 30.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "Which of the following does not need to be satisfied in order to conduct this hy"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::3",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-3_diff_two_mean/7-3_diff_two_mean.tex",
+      "prompt_text": "Which of the following is the correct $df$ for this hypothesis test?",
+      "choices": [
+        "23",
+        "30",
+        "29",
+        "52"
+      ],
+      "correct_choice": "22",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "Which of the following is the correct $df$ for this hypothesis test?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::4",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-3_diff_two_mean/7-3_diff_two_mean.tex",
+      "prompt_text": "Which of the following is the correct p-value for this hypothesis test?",
+      "choices": [
+        "between 0.005 and 0.01",
+        "between 0.02 and 0.05",
+        "between 0.01 and 0.02"
+      ],
+      "correct_choice": "between 0.01 and 0.025",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "Which of the following is the correct p-value for this hypothesis test?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::5",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-3_diff_two_mean/7-3_diff_two_mean.tex",
+      "prompt_text": "What is the equivalent confidence level for a one-sided hypothesis test at $ = 0.05$?",
+      "choices": [
+        "92.5%",
+        "95%",
+        "97.5%"
+      ],
+      "correct_choice": "90%",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "What is the equivalent confidence level for a one-sided hypothesis test at $ = 0"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::6",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-3_diff_two_mean/7-3_diff_two_mean.tex",
+      "prompt_text": "What is the appropriate $t^ $ for a confidence interval for the average difference between the point prices of 0.99 and 1 carat diamonds?",
+      "choices": [
+        "1.32",
+        "2.07",
+        "2.82"
+      ],
+      "correct_choice": "1.72",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "What is the appropriate $t^ $ for a confidence interval for the average differen"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::1",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-5_anova/7-5_anova.tex",
+      "prompt_text": "What are the correct hypotheses for testing for a difference between the mean aldrin concentrations among the three levels?",
+      "choices": [
+        "$H_0: _B = _M = _S$ $H_A: _B _M _S$",
+        "$H_0: _B _ M _S$ $H_A: _B = _M = _S$",
+        "$H_0: _B = _M = _S = 0$ $H_A:$ At least one mean is different.",
+        "$H_0: _B = _M = _S$ $H_A: _B > _M > _S$"
+      ],
+      "correct_choice": "$H_0: _B = _M = _S$ $H_A:$ At least one mean is different.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "What are the correct hypotheses for testing for a difference between the mean al"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::2",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-5_anova/7-5_anova.tex",
+      "prompt_text": "What is the conclusion of the hypothesis test?",
+      "choices": [
+        "is different for all groups.",
+        "on the surface is lower than the other levels.",
+        "is the same for all groups."
+      ],
+      "correct_choice": "is different for at least one group.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "What is the conclusion of the hypothesis test?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_7::3",
+      "collection_id": "openintro-stats-slides::chp_7",
+      "chapter_slug": "chp_7",
+      "source_file": "Chp 7/7-5_anova/7-5_anova.tex",
+      "prompt_text": "In the aldrin data set depth has 3 levels: bottom, mid-depth, and surface. If $ = 0.05$, what should be the modified significance level for two sample $t$ tests for determining which pairs of groups have significantly different means?",
+      "choices": [
+        "$ ^* = 0.05$",
+        "$ ^* = 0.05 / 2 = 0.025$",
+        "$ ^* = 0.05 / 6 = 0.0083$"
+      ],
+      "correct_choice": "$ ^* = 0.05 / 3 = 0.0167$",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_7",
+        "In the aldrin data set depth has 3 levels: bottom, mid-depth, and surface. If $ "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_8::1",
+      "collection_id": "openintro-stats-slides::chp_8",
+      "chapter_slug": "chp_8",
+      "source_file": "Chp 8/8-1_linefit_res_corr/8-1_linefit_res_corr.tex",
+      "prompt_text": "Which of the following is the best guess for the correlation between % in poverty and % HS grad?",
+      "choices": [
+        "0.6",
+        "-0.1",
+        "0.02",
+        "-1.5"
+      ],
+      "correct_choice": "-0.75",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_8",
+        "Which of the following is the best guess for the correlation between % in povert"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_8::2",
+      "collection_id": "openintro-stats-slides::chp_8",
+      "chapter_slug": "chp_8",
+      "source_file": "Chp 8/8-1_linefit_res_corr/8-1_linefit_res_corr.tex",
+      "prompt_text": "Which of the following is the best guess for the correlation between % in poverty and % female householder, no husband present?",
+      "choices": [
+        "0.1",
+        "-0.6",
+        "-0.4",
+        "0.9"
+      ],
+      "correct_choice": "0.5",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_8",
+        "Which of the following is the best guess for the correlation between % in povert"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_8::1",
+      "collection_id": "openintro-stats-slides::chp_8",
+      "chapter_slug": "chp_8",
+      "source_file": "Chp 8/8-2_least_square_reg/8-2_least_square_reg.tex",
+      "prompt_text": "What condition is this linear model obviously violating?",
+      "choices": [
+        "Constant variability",
+        "Normal residuals",
+        "No extreme outliers"
+      ],
+      "correct_choice": "Linear relationship",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_8",
+        "What condition is this linear model obviously violating?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_8::2",
+      "collection_id": "openintro-stats-slides::chp_8",
+      "chapter_slug": "chp_8",
+      "source_file": "Chp 8/8-2_least_square_reg/8-2_least_square_reg.tex",
+      "prompt_text": "What condition is this linear model obviously violating?",
+      "choices": [
+        "Linear relationship",
+        "Normal residuals",
+        "No extreme outliers"
+      ],
+      "correct_choice": "Constant variability",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_8",
+        "What condition is this linear model obviously violating?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_8::3",
+      "collection_id": "openintro-stats-slides::chp_8",
+      "chapter_slug": "chp_8",
+      "source_file": "Chp 8/8-2_least_square_reg/8-2_least_square_reg.tex",
+      "prompt_text": "Which of the following is the correct interpretation of the intercept?",
+      "choices": [
+        "For each % point increase in HS graduate rate, % living in poverty is expected to increase on average by 64.68%.",
+        "For each % point decrease in HS graduate rate, % living in poverty is expected to increase on average by 64.68%.",
+        "Having no HS graduates leads to 64.68% of residents living below the poverty line.",
+        "In states with no HS graduates % living in poverty is expected to increase on average by 64.68%."
+      ],
+      "correct_choice": "States with no HS graduates are expected on average to have 64.68% of residents living below the poverty line.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_8",
+        "Which of the following is the correct interpretation of the intercept?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_8::4",
+      "collection_id": "openintro-stats-slides::chp_8",
+      "chapter_slug": "chp_8",
+      "source_file": "Chp 8/8-2_least_square_reg/8-2_least_square_reg.tex",
+      "prompt_text": "Which of the below is the correct interpretation of $R = -0.75$, $R^2 = 0.56$?",
+      "choices": [
+        "56% of the variability in the % of HG graduates among the 51 states is explained by the model.",
+        "56% of the time % HS graduates predict % living in poverty correctly.",
+        "75% of the variability in the % of residents living in poverty among the 51 states is explained by the model."
+      ],
+      "correct_choice": "56% of the variability in the % of residents living in poverty among the 51 states is explained by the model.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_8",
+        "Which of the below is the correct interpretation of $R = -0.75$, $R^2 = 0.56$?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_8::1",
+      "collection_id": "openintro-stats-slides::chp_8",
+      "chapter_slug": "chp_8",
+      "source_file": "Chp 8/8-3_outliers/8-3_outliers.tex",
+      "prompt_text": "Which of the below best describes the outlier?",
+      "choices": [
+        "influential",
+        "none of the above",
+        "there are no outliers"
+      ],
+      "correct_choice": "high leverage",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_8",
+        "Which of the below best describes the outlier?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_8::2",
+      "collection_id": "openintro-stats-slides::chp_8",
+      "chapter_slug": "chp_8",
+      "source_file": "Chp 8/8-3_outliers/8-3_outliers.tex",
+      "prompt_text": "Which of following is true?",
+      "choices": [
+        "Influential points always change the intercept of the regression line.",
+        "Influential points always reduce $R^2$.",
+        "It is much more likely for a low leverage point to be influential, than a high leverage point.",
+        "When the data set includes an influential point, the relationship between the explanatory variable and the response variable is always nonlinear."
+      ],
+      "correct_choice": "None of the above.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_8",
+        "Which of following is true?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_8::1",
+      "collection_id": "openintro-stats-slides::chp_8",
+      "chapter_slug": "chp_8",
+      "source_file": "Chp 8/8-4_inf_lin_reg/8-4_inf_lin_reg.tex",
+      "prompt_text": "Which of the following is false?",
+      "choices": [
+        "Additional 10 points in the biological twin's IQ is associated with additional 9 points in the foster twin's IQ, on average.",
+        "The linear model is $fosterIQ = 9.2 + 0.9 bioIQ$.",
+        "Foster twins with IQs higher than average IQs tend to have biological twins with higher than average IQs as well."
+      ],
+      "correct_choice": "Roughly 78% of the foster twins' IQs can be accurately predicted by the model.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_8",
+        "Which of the following is false?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_8::2",
+      "collection_id": "openintro-stats-slides::chp_8",
+      "chapter_slug": "chp_8",
+      "source_file": "Chp 8/8-4_inf_lin_reg/8-4_inf_lin_reg.tex",
+      "prompt_text": "Assuming that these 27 twins comprise a representative sample of all twins separated at birth, we would like to test if these data provide convincing evidence that the IQ of the biological twin is a significant predictor of IQ of the foster twin. What are the appropriate hypotheses?",
+      "choices": [
+        "H_0: $b_0 = 0$; H_A: $b_0 0$",
+        "H_0: $ _0 = 0$; H_A: $ _0 0$",
+        "H_0: $b_1 = 0$; H_A: $b_1 0$ $ _1 = 0$; H_A: $ _1 0$"
+      ],
+      "correct_choice": "H_0:",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_8",
+        "Assuming that these 27 twins comprise a representative sample of all twins separ"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_8::3",
+      "collection_id": "openintro-stats-slides::chp_8",
+      "chapter_slug": "chp_8",
+      "source_file": "Chp 8/8-4_inf_lin_reg/8-4_inf_lin_reg.tex",
+      "prompt_text": "Which of the below is the best interpretation of the slope?",
+      "choices": [
+        "A 1% increase in Hispanic residents in a zip code area in LA is associated with a 75% decrease in % of college grads.",
+        "An additional 1% of Hispanic residents decreases the % of college graduates in a zip code area in LA by 0.75%.",
+        "In zip code areas with no Hispanic residents, % of college graduates is expected to be 75%."
+      ],
+      "correct_choice": "A 1% increase in Hispanic residents in a zip code area in LA is associated with a 0.75% decrease in % of college grads.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_8",
+        "Which of the below is the best interpretation of the slope?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_8::4",
+      "collection_id": "openintro-stats-slides::chp_8",
+      "chapter_slug": "chp_8",
+      "source_file": "Chp 8/8-4_inf_lin_reg/8-4_inf_lin_reg.tex",
+      "prompt_text": "Remember that a confidence interval is calculated as $point estimate ME$ and the degrees of freedom associated with the slope in a simple linear regression is $n - 2$. Which of the below is the correct 95% confidence interval for the slope parameter? Note that the model is based on observations from 27 twins.",
+      "choices": [
+        "$9.2076 1.65 9.2999$",
+        "$0.9014 1.96 0.0963$",
+        "$9.2076 1.96 0.0963$"
+      ],
+      "correct_choice": "$0.9014 2.06 0.0963$",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_8",
+        "Remember that a confidence interval is calculated as $point estimate ME$ and the"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_9::1",
+      "collection_id": "openintro-stats-slides::chp_9",
+      "chapter_slug": "chp_9",
+      "source_file": "Chp 9/9-1_intro_mlr/9-1_intro_mlr.tex",
+      "prompt_text": "Which region (northeast, midwest, west, or south) is the reference level?",
+      "choices": [
+        "midwest",
+        "west",
+        "south",
+        "cannot tell"
+      ],
+      "correct_choice": "northeast",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_9",
+        "Which region (northeast, midwest, west, or south) is the reference level?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_9::2",
+      "collection_id": "openintro-stats-slides::chp_9",
+      "chapter_slug": "chp_9",
+      "source_file": "Chp 9/9-1_intro_mlr/9-1_intro_mlr.tex",
+      "prompt_text": "Which region (northeast, midwest, west, or south) has the lowest poverty percentage?",
+      "choices": [
+        "midwest",
+        "west",
+        "south",
+        "cannot tell"
+      ],
+      "correct_choice": "northeast",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_9",
+        "Which region (northeast, midwest, west, or south) has the lowest poverty percent"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_9::3",
+      "collection_id": "openintro-stats-slides::chp_9",
+      "chapter_slug": "chp_9",
+      "source_file": "Chp 9/9-1_intro_mlr/9-1_intro_mlr.tex",
+      "prompt_text": "The scatterplot shows the relationship between weights and volumes of books as well as the regression output. Which of the below is correct?",
+      "choices": [
+        "Weights of 80% of the books can be predicted accurately using this model. $ over average are expected to weigh 7 g over average.",
+        "The correlation between weight and volume is $R = 0.80^2 = 0.64$.",
+        "The model underestimates the weight of the book with the highest volume."
+      ],
+      "correct_choice": "Books that are 10 cm$^ 3",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_9",
+        "The scatterplot shows the relationship between weights and volumes of books as w"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_9::4",
+      "collection_id": "openintro-stats-slides::chp_9",
+      "chapter_slug": "chp_9",
+      "source_file": "Chp 9/9-1_intro_mlr/9-1_intro_mlr.tex",
+      "prompt_text": "Based on the regression output below, which level of cover is the reference level? Note that pb: paperback.",
+      "choices": [
+        "paperback"
+      ],
+      "correct_choice": "hardcover",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_9",
+        "Based on the regression output below, which level of cover is the reference leve"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_9::5",
+      "collection_id": "openintro-stats-slides::chp_9",
+      "chapter_slug": "chp_9",
+      "source_file": "Chp 9/9-1_intro_mlr/9-1_intro_mlr.tex",
+      "prompt_text": "Which of the below correctly describes the roles of variables in this regression model?",
+      "choices": [
+        "response: weight, explanatory: volume, paperback cover",
+        "response: weight, explanatory: volume, hardcover cover",
+        "response: volume, explanatory: weight, cover type"
+      ],
+      "correct_choice": "response: weight, explanatory: volume, cover type",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_9",
+        "Which of the below correctly describes the roles of variables in this regression"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_9::6",
+      "collection_id": "openintro-stats-slides::chp_9",
+      "chapter_slug": "chp_9",
+      "source_file": "Chp 9/9-1_intro_mlr/9-1_intro_mlr.tex",
+      "prompt_text": "Which of the following is the correct calculation for the predicted weight of a paperback book that is 600 cm$^3$?",
+      "choices": [
+        "184.05 + 0.72 * 600 - 197.96 * 1",
+        "197.96 + 0.72 * 600 - 184.05 * 0",
+        "197.96 + 0.72 * 1 - 184.05 * 600"
+      ],
+      "correct_choice": "197.96 + 0.72 * 600 - 184.05 * 1",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_9",
+        "Which of the following is the correct calculation for the predicted weight of a "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_9::7",
+      "collection_id": "openintro-stats-slides::chp_9",
+      "chapter_slug": "chp_9",
+      "source_file": "Chp 9/9-1_intro_mlr/9-1_intro_mlr.tex",
+      "prompt_text": "What is the correct interpretation of the slope for mom\\_work?",
+      "choices": [
+        "are estimated to score 2.54 points lower"
+      ],
+      "correct_choice": "are estimated to score 2.54 points higher",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_9",
+        "What is the correct interpretation of the slope for mom\\_work?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_9::1",
+      "collection_id": "openintro-stats-slides::chp_9",
+      "chapter_slug": "chp_9",
+      "source_file": "Chp 9/9-2_model_select/9-2_model_select.tex",
+      "prompt_text": "Which of the below is correct based on the model output?",
+      "choices": [
+        "Model predicts 3.36% of professor ratings correctly.",
+        "Beauty is not a significant predictor of professor evaluation.",
+        "3.36% of variability in beauty scores can be explained by professor evaluation.",
+        "The correlation coefficient could be $0.0336 = 0.18$ or $-0.18$, we can't tell which is correct."
+      ],
+      "correct_choice": "Professors who score 1 point above average in their beauty score are tend to also score 0.13 points higher in their evaluation.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_9",
+        "Which of the below is correct based on the model output?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_9::2",
+      "collection_id": "openintro-stats-slides::chp_9",
+      "chapter_slug": "chp_9",
+      "source_file": "Chp 9/9-2_model_select/9-2_model_select.tex",
+      "prompt_text": "For a given beauty score, are male professors evaluated higher, lower, or about the same as female professors?",
+      "choices": [
+        "lower",
+        "about the same"
+      ],
+      "correct_choice": "higher",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_9",
+        "For a given beauty score, are male professors evaluated higher, lower, or about "
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_9::3",
+      "collection_id": "openintro-stats-slides::chp_9",
+      "chapter_slug": "chp_9",
+      "source_file": "Chp 9/9-2_model_select/9-2_model_select.tex",
+      "prompt_text": "The p-value for age is 0.01. What does this indicate?",
+      "choices": [
+        "Since p-value is positive, higher the professor's age, the higher we would expect them to be rated.",
+        "Probability that the true slope parameter for age is 0 is 0.01.",
+        "There is about 1% chance that the true slope parameter for age is -0.0089."
+      ],
+      "correct_choice": "If we keep all other variables in the model, there is strong evidence that professor's age is associated with their rating.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_9",
+        "The p-value for age is 0.01. What does this indicate?"
+      ]
+    },
+    {
+      "source_id": "openintro-stats-slides::chp_9::4",
+      "collection_id": "openintro-stats-slides::chp_9",
+      "chapter_slug": "chp_9",
+      "source_file": "Chp 9/9-2_model_select/9-2_model_select.tex",
+      "prompt_text": "Tenure is a categorical variable with 3 levels: non tenure track, tenure track, tenured. Based on the model output given, which of the below is false?",
+      "choices": [
+        "Reference level is non tenure track.",
+        "All else being equal, tenure track professors are rated, on average, 0.19 points lower than non-tenure track professors.",
+        "All else being equal, tenured professors are rated, on average, 0.16 points lower than non-tenure track professors."
+      ],
+      "correct_choice": "All else being equal, there is a significant difference between the average ratings of tenure track and tenured professors.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "chp_9",
+        "Tenure is a categorical variable with 3 levels: non tenure track, tenure track, "
+      ]
+    }
+  ]
+}

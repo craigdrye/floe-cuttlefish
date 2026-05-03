@@ -30,7 +30,9 @@ export const iconForKey: Record<IconKey, ReactNode> = {
 }
 
 const collectionTracks = buildCollectionTracks(iconForKey)
-const coreTracks: Track[] = coreTrackSeeds.map(seed => materializeTrack(seed, iconForKey))
+const coreTracks: Track[] = coreTrackSeeds
+  .filter(seed => seed.ageGroup !== 'preschool')
+  .map(seed => materializeTrack(seed, iconForKey))
 export const allTracks: Track[] = [...coreTracks, ...collectionTracks]
 
 export function trackMatchesStageDetail(track: Track, detail: StageDetail | null) {

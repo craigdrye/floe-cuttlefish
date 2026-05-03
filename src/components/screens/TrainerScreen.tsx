@@ -5,7 +5,7 @@ import { Brain, BookOpen, Calculator, CheckCircle2, XCircle, Sparkles, ShieldQue
 import { useStore } from '../../store/useStore'
 import { useQuizData } from '../../hooks/useQuizData'
 import { TopBar } from '../layout/TopBar'
-import { SpeakerPortrait } from '../common/SpeakerPortrait'
+import { SpeakerPortrait, type SpeakerRole } from '../common/SpeakerPortrait'
 import { XpPopup } from '../common/XpPopup'
 import { calculateExpression } from '../../lib/mathUtils'
 import { playComboSound, playSuccessSound, playWrongSound } from '../../lib/audio'
@@ -26,6 +26,150 @@ const rarityLabels: Record<string, string> = {
   rare: '🔵 Rare',
   epic: '🟣 Epic',
   legendary: '🟡 Legendary',
+}
+
+const successHeadlines = [
+  'Correct! Tiny arm-flap salute.',
+  'Correct! Small hat toss approved.',
+  'Correct! Polite goblin fist-pump.',
+  'Correct! Mini trumpet of glory.',
+  'Correct! Pocket parade commences.',
+  'Correct! Respectful pigeon victory lap.',
+  'Correct! Little cape flutter achieved.',
+  'Correct! Teacup fanfare activated.',
+  'Correct! One ceremonial jazz hand.',
+  'Correct! Micro-confetti in spirit.',
+] as const
+
+type BriefingSpeaker = {
+  role: SpeakerRole
+  name: string
+  label: string
+  briefing: string
+}
+
+const quickBriefingRoster: Array<{ role: SpeakerRole; name: string; label: string; lines: string[] }> = [
+  {
+    role: 'drill',
+    name: 'Sergeant Ink',
+    label: 'pre-question briefing',
+    lines: [
+      'Spot the rule. Smack the trap.',
+      'Read first. Chaos second.',
+      'Find the trick. Bonk it.',
+      'Eyes up. Ambush the trick.',
+      'Count calmly. Crush nonsense.',
+      'Catch the clue. Move.',
+    ],
+  },
+  {
+    role: 'strongman',
+    name: 'Mister Tides',
+    label: 'chain-rattle briefing',
+    lines: [
+      'Read twice. Flex later.',
+      'Tiny clue. Huge victory.',
+      'No panic. Just pummel patterns.',
+      'Lift the hint, not panic.',
+      'Big vibes. Small careful steps.',
+      'Flex on the fake answer.',
+    ],
+  },
+  {
+    role: 'hulkster',
+    name: 'Bulk Hogan',
+    label: 'ring-rope pep talk',
+    lines: [
+      'Find the pattern, brother.',
+      'Tiny math. Massive splash.',
+      'Clobber the sneaky answer.',
+      'Whatcha gonna solve, brother?',
+      'Snap into the right clue.',
+      'Leg-drop the wrong choice.',
+    ],
+  },
+  {
+    role: 'karate',
+    name: 'Sensei Smack',
+    label: 'dojo warning',
+    lines: [
+      'Use clues. Break nonsense.',
+      'Calm brain. Fast hands.',
+      'One clean move wins.',
+      'Bow. Breathe. Solve cleanly.',
+      'Kick doubt. Keep clues.',
+      'Quiet mind. Loud correctness.',
+    ],
+  },
+  {
+    role: 'captain',
+    name: 'Captain Crank',
+    label: 'cockpit command',
+    lines: [
+      'Check gauges. Then guess nothing.',
+      'Steady hands. Spot turbulence.',
+      'Fly straight through the trick.',
+      'Read the map, hotshot.',
+      'No barrel rolls into distractors.',
+      'Land on the actual rule.',
+    ],
+  },
+  {
+    role: 'professor',
+    name: 'Doctor Boomhair',
+    label: 'lab memo',
+    lines: [
+      'Observe first. Zap later.',
+      'Hypothesis first. Hair second.',
+      'Tiny clue. Huge brain noise.',
+      'Science the heck out of it.',
+      'Do not lick the beaker.',
+      'Test the rule, genius.',
+    ],
+  },
+  {
+    role: 'pirate',
+    name: 'Captain Wrongbeard',
+    label: 'deck warning',
+    lines: [
+      'Find the clue, matey.',
+      'Plunder the pattern only.',
+      'No guessing on this ship.',
+      'Steer past the shiny trap.',
+      'Count the clues, scallywag.',
+      'Arrrithmetic first. Swagger later.',
+    ],
+  },
+  {
+    role: 'mechanic',
+    name: 'Greasefang Joe',
+    label: 'garage note',
+    lines: [
+      'Pop the hood on it.',
+      'Check parts. Then choose.',
+      'Loose bolt? Tight logic.',
+      'Trace the problem, wrenchling.',
+      'Don’t punch it. Diagnose it.',
+      'Find the busted assumption.',
+    ],
+  },
+]
+
+function pickQuickBriefingSpeaker(questionId: number, remixSeed: number): BriefingSpeaker {
+  const rosterIndex = Math.abs(questionId + remixSeed) % quickBriefingRoster.length
+  const persona = quickBriefingRoster[rosterIndex]
+  const lineIndex = Math.abs(questionId * 7 + remixSeed) % persona.lines.length
+
+  return {
+    role: persona.role,
+    name: persona.name,
+    label: persona.label,
+    briefing: persona.lines[lineIndex],
+  }
+}
+
+function pickSuccessHeadline(questionId: number, remixSeed: number) {
+  return successHeadlines[Math.abs(questionId * 11 + remixSeed) % successHeadlines.length]
 }
 
 export function TrainerScreen() {
@@ -69,6 +213,19 @@ export function TrainerScreen() {
   const bossTitle = bossTitleFor(selectedTrackInfo.title, stageNumber)
   const bossAlreadyWon = bossWins.some((win) => win.id === bossId)
   const showBossIntro = isBossBattle && bossIntroDismissedFor !== question.id
+  const briefingSpeaker = useMemo<BriefingSpeaker>(() => {
+    if (question.kind === 'deep') {
+      return {
+        role: 'explorer',
+        name: 'Cuttlebella Jones',
+        label: 'expedition briefing',
+        briefing: question.briefing,
+      }
+    }
+
+    return pickQuickBriefingSpeaker(question.id, remixSeed)
+  }, [question.kind, question.id, question.briefing, remixSeed])
+  const successHeadline = useMemo(() => pickSuccessHeadline(question.id, remixSeed), [question.id, remixSeed])
 
   useEffect(() => {
     if (!showBossIntro) return
@@ -236,6 +393,10 @@ export function TrainerScreen() {
     setLastXpGain(null)
   }
 
+  const appendCalculatorToken = (token: string) => {
+    setCalculatorInput(`${calculatorInput}${token}`)
+  }
+
   return (
     <main className={`app-shell ${isBossBattle ? 'secret-boss-shell' : ''}`}>
       <TopBar title={selectedTrackInfo.title} />
@@ -300,13 +461,13 @@ export function TrainerScreen() {
 
             <div className="story-card">
               <div className="speaker">
-                <SpeakerPortrait role={question.kind === 'deep' ? 'explorer' : 'drill'} />
+                <SpeakerPortrait role={briefingSpeaker.role} />
                 <div>
-                  <strong>{question.kind === 'deep' ? 'Cuttlebella Jones' : 'Sergeant Ink'}</strong>
-                  <span>{question.kind === 'deep' ? 'expedition briefing' : 'pre-question briefing'}</span>
+                  <strong>{briefingSpeaker.name}</strong>
+                  <span>{briefingSpeaker.label}</span>
                 </div>
               </div>
-              <p>{question.briefing}</p>
+              <p>{briefingSpeaker.briefing}</p>
             </div>
 
             <div className="prompt-box">
@@ -324,12 +485,16 @@ export function TrainerScreen() {
 
 
             <div className="actions-toolbar">
-              <button className="secondary" onClick={askDifferently}><ShieldQuestion size={15} /> Ask differently</button>
-              <button className="secondary" onClick={() => setShowHint(!showHint)}><Sparkles size={15} /> Hint</button>
-              <button className="secondary" onClick={() => setShowLesson(!showLesson)}><BookOpen size={15} /> Teach me</button>
-              <button className={`secondary${showCalculator ? ' active' : ''}`} onClick={() => setShowCalculator(v => !v)}><Calculator size={15} /> Calculator</button>
-              <button className={`secondary${showThoughts ? ' active' : ''}`} onClick={() => setShowThoughts(v => !v)}><Brain size={15} /> Note pad</button>
-              <button className="secondary" onClick={resetQuestion}><Repeat2 size={15} /> Reset</button>
+              <div className="actions-toolbar-row">
+                <button className="secondary" onClick={askDifferently}><ShieldQuestion size={15} /> Ask differently</button>
+                <button className="secondary" onClick={() => setShowHint(!showHint)}><Sparkles size={15} /> Hint</button>
+                <button className="secondary" onClick={() => setShowLesson(!showLesson)}><BookOpen size={15} /> Teach me</button>
+              </div>
+              <div className="actions-toolbar-row">
+                <button className={`secondary${showCalculator ? ' active' : ''}`} onClick={() => setShowCalculator(v => !v)}><Calculator size={15} /> Calculator</button>
+                <button className={`secondary${showThoughts ? ' active' : ''}`} onClick={() => setShowThoughts(v => !v)}><Brain size={15} /> Note pad</button>
+                <button className="secondary" onClick={resetQuestion}><Repeat2 size={15} /> Reset Q</button>
+              </div>
             </div>
 
             <AnimatePresence>
@@ -370,7 +535,32 @@ export function TrainerScreen() {
             <AnimatePresence>
               {showCalculator && (
                 <motion.div className="tool-card" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }}>
-                  <input id="calc-input" value={calculatorInput} onChange={(e) => setCalculatorInput(e.target.value)} placeholder="9 / (9 + 99)" inputMode="decimal" />
+                  <input
+                    id="calc-input"
+                    value={calculatorInput}
+                    onChange={(e) => setCalculatorInput(e.target.value)}
+                    placeholder="9 / (9 + 99)^2"
+                    inputMode="decimal"
+                  />
+                  <div className="calculator-keypad" aria-label="Calculator shortcuts">
+                    {[
+                      { label: 'x', token: '×' },
+                      { label: '+', token: '+' },
+                      { label: '-', token: '-' },
+                      { label: '^', token: '^' },
+                      { label: '(', token: '(' },
+                      { label: ')', token: ')' },
+                    ].map((key) => (
+                      <button
+                        key={key.label}
+                        className="calculator-key"
+                        onClick={() => appendCalculatorToken(key.token)}
+                        type="button"
+                      >
+                        {key.label}
+                      </button>
+                    ))}
+                  </div>
                   <output>{calculatorResult || 'Result appears here'}</output>
                 </motion.div>
               )}
@@ -421,7 +611,7 @@ export function TrainerScreen() {
                   <div className="feedback-title">
                     <div>
                       {isCorrect ? <Trophy size={18} /> : <ShieldQuestion size={18} />}
-                      <h3>{isCorrect ? 'Correct! Tiny arm-flap salute.' : 'Not quite — the logic leaks ink.'}</h3>
+                      <h3>{isCorrect ? successHeadline : 'Not quite — the logic leaks ink.'}</h3>
                     </div>
                   </div>
 

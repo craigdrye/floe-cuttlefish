@@ -37,10 +37,48 @@
   animation: bubble-rise 14s linear infinite;
 }
 
+.welcome-saucer {
+  position: fixed;
+  top: -8px;
+  left: -120px;
+  width: 53px;
+  height: 41px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.98;
+  filter: drop-shadow(0 10px 20px rgba(24, 58, 78, 0.22));
+  animation: saucer-cruise 6.4s ease-out forwards;
+  background: url('/assets/generated/UFO easteregg.png') center / contain no-repeat;
+}
+
 @keyframes bubble-rise {
   0% { transform: translateY(0) scale(1); opacity: 0.4; }
   50% { opacity: 0.7; }
   100% { transform: translateY(-110vh) scale(0.5); opacity: 0; }
+}
+
+@keyframes saucer-cruise {
+  0% {
+    transform: translate3d(0, -34px, 0) rotate(-10deg) scale(0.92);
+    opacity: 0;
+  }
+  10% {
+    transform: translate3d(14vw, 2px, 0) rotate(-5deg) scale(1);
+    opacity: 0.96;
+  }
+  32% {
+    transform: translate3d(40vw, 14px, 0) rotate(2deg) scale(1);
+  }
+  56% {
+    transform: translate3d(63vw, 3px, 0) rotate(-1deg) scale(0.98);
+  }
+  82% {
+    transform: translate3d(90vw, 12px, 0) rotate(6deg) scale(0.96);
+  }
+  100% {
+    transform: translate3d(118vw, -18px, 0) rotate(12deg) scale(0.9);
+    opacity: 0;
+  }
 }
 
 .welcome-page {
@@ -116,15 +154,99 @@
   max-width: 400px;
 }
 
+.welcome-line-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+}
+
 .welcome-line {
+  position: relative;
+  z-index: 1;
   color: rgba(255,255,255,0.7);
   font-size: 14px;
   text-align: center;
   line-height: 1.5;
   max-width: 340px;
+  margin: 0;
+}
+
+.welcome-fish-school {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  height: 56px;
+  margin-top: -52px;
+  transform: translateY(-52%);
+  overflow: visible;
+  z-index: 0;
+}
+
+.welcome-line-fish {
+  position: absolute;
+  top: 8px;
+  right: -42px;
+  width: 56px;
+  height: 42px;
+  opacity: 0.92;
+  z-index: 0;
+  pointer-events: none;
+  animation: welcome-line-fish-swim-left 9.5s ease-in-out forwards;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.welcome-line-fish-1 {
+  top: 12px;
+  width: 58px;
+  height: 46px;
+  animation-duration: 10.2s;
+}
+
+.welcome-line-fish-2 {
+  top: 5px;
+  width: 52px;
+  height: 40px;
+  animation-delay: 0.6s;
+  animation-duration: 9.1s;
+}
+
+.welcome-line-fish-3 {
+  top: 16px;
+  width: 54px;
+  height: 42px;
+  animation-delay: 1.2s;
+  animation-duration: 10.8s;
+}
+
+@keyframes welcome-line-fish-swim-left {
+  0% {
+    transform: translate3d(0, -2px, 0) scaleX(1);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.34;
+  }
+  28% {
+    transform: translate3d(-90px, 5px, 0) scaleX(1);
+  }
+  54% {
+    transform: translate3d(-190px, -5px, 0) scaleX(1);
+  }
+  78% {
+    transform: translate3d(-285px, 3px, 0) scaleX(1);
+    opacity: 0.34;
+  }
+  100% {
+    transform: translate3d(-380px, -4px, 0) scaleX(1);
+    opacity: 0;
+  }
 }
 
 .welcome-cta {
+  position: relative;
+  z-index: 1;
   min-height: 54px;
   min-width: 180px;
   display: inline-flex;

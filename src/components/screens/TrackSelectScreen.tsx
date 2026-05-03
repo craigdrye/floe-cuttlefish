@@ -2,6 +2,9 @@ import { useEffect, useMemo, useState } from 'react'
 import { Flame, Star, User, ArrowLeft, Trophy } from 'lucide-react'
 import { useStore } from '../../store/useStore'
 import { getFilteredTracks, allTracks } from '../../lib/trackData'
+import { loadQuestionCatalog, questionCatalogKeyForTrack } from '../../data/questionCatalog'
+import type { QuestionCatalog } from '../../data/questionCatalog'
+import { countPlayableQuestions, normalizeQuestionCatalog } from '../../lib/quizRuntime'
 
 const heroCharacters = [
   '/assets/cuttlefish/cuttlefish-color-flow-01.png',
@@ -81,6 +84,8 @@ export function TrackSelectScreen() {
     selectedAge,
     selectedStageDetail,
     selectedDiscipline,
+    setSelectedAge,
+    setSelectedStageDetail,
     setSelectedDiscipline,
     setSelectedTrack,
     setIndex,
@@ -97,10 +102,17 @@ export function TrackSelectScreen() {
 
   const [mounted, setMounted] = useState(false)
   const [heroIndex, setHeroIndex] = useState(0)
+  const [loadedQuestionCatalogs, setLoadedQuestionCatalogs] = useState<Record<string, QuestionCatalog>>({})
 
   useEffect(() => {
     requestAnimationFrame(() => setMounted(true))
   }, [])
+
+  useEffect(() => {
+    if (selectedAge !== 'preschool') return
+    setSelectedAge('primary')
+    setSelectedStageDetail('primary-year-1')
+  }, [selectedAge, setSelectedAge, setSelectedStageDetail])
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -108,6 +120,10 @@ export function TrackSelectScreen() {
     }, 1200)
     return () => clearInterval(interval)
   }, [])
+
+  const goBack = () => {
+    setShowAudience(true)
+  }
 
   const finalDisciplines = useMemo(() => {
     const ageFilteredTracks = getFilteredTracks(selectedAge, selectedStageDetail, 'All')
@@ -121,6 +137,60 @@ export function TrackSelectScreen() {
     const workedIds = new Set([...(progress.workedTrackIds || []), ...bossWins.map((boss) => boss.trackId)])
     visibleTracks = allTracks.filter((track) => workedIds.has(track.id))
   }
+
+  useEffect(() => {
+    const neededCatalogKeys = Array.from(
+      new Set(
+        visibleTracks
+          .map((track) => questionCatalogKeyForTrack(track.id, track.ageGroup))
+          .filter((catalogKey): catalogKey is string => Boolean(catalogKey)),
+      ),
+    )
+
+    const missingCatalogKeys = neededCatalogKeys.filter((catalogKey) => !loadedQuestionCatalogs[catalogKey])
+    if (missingCatalogKeys.length === 0) return
+
+    let cancelled = false
+
+    Promise.all(
+      missingCatalogKeys.map(async (catalogKey) => [
+        catalogKey,
+        normalizeQuestionCatalog(await loadQuestionCatalog(catalogKey)),
+      ] as const),
+    ).then((entries) => {
+      if (cancelled) return
+      setLoadedQuestionCatalogs((current) => {
+        const next = { ...current }
+        for (const [catalogKey, catalog] of entries) {
+          next[catalogKey] = next[catalogKey] ?? catalog
+        }
+        return next
+      })
+    })
+
+    return () => {
+      cancelled = true
+    }
+  }, [loadedQuestionCatalogs, visibleTracks])
+
+  const visibleTracksWithCounts = useMemo(() => (
+    visibleTracks
+      .map((track) => {
+        const catalogKey = questionCatalogKeyForTrack(track.id, track.ageGroup)
+        const loadedCatalog = catalogKey ? loadedQuestionCatalogs[catalogKey] : null
+        const playableQuestionCount = loadedCatalog?.[track.id]
+          ? countPlayableQuestions(loadedCatalog[track.id])
+          : track.questionCount
+
+        if (loadedCatalog && catalogKey && playableQuestionCount === 0) return null
+
+        return {
+          ...track,
+          questionCount: playableQuestionCount,
+        }
+      })
+      .filter((track): track is NonNullable<typeof track> => track !== null)
+  ), [loadedQuestionCatalogs, visibleTracks])
 
   useEffect(() => {
     // Default to 'Your courses' if we have some, otherwise first available
@@ -187,11 +257,11 @@ export function TrackSelectScreen() {
                 </button>
               ))}
             </div>
-            <span className="track-count">{visibleTracks.length} available</span>
+            <span className="track-count">{visibleTracksWithCounts.length} available</span>
           </div>
 
           <div className="all-courses-grid">
-            {visibleTracks.map((track) => (
+            {visibleTracksWithCounts.map((track) => (
               <button
                 key={`browse-${track.id}`}
                 className={`track-card compact ${track.status === 'soon' ? 'locked' : ''}`}
@@ -233,7 +303,7 @@ export function TrackSelectScreen() {
             ))}
           </div>
 
-          {!visibleTracks.length && (
+          {!visibleTracksWithCounts.length && (
             <div className="no-course-state">
               <img className="no-course-character" src="/assets/fun_characters_transparent/thought.png" alt="" />
               <p>No matching quiz track for this stage yet.</p>
@@ -256,8 +326,8 @@ export function TrackSelectScreen() {
         </div>
       </section>
 
-      <button className="back-btn" onClick={() => { setSelectedTrack(null); setShowAudience(true) }} type="button">
-        <ArrowLeft size={16} /> Back to start
+      <button className="back-btn" onClick={goBack} type="button">
+        <ArrowLeft size={16} /> Back
       </button>
     </main>
   )

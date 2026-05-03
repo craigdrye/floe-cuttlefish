@@ -1,0 +1,2277 @@
+{
+  "source": "OpenIntro Labs (Stata)",
+  "license": "CC BY-SA 3.0",
+  "repository": "https://github.com/OpenIntroStat/oilabs-stata.git",
+  "collectionCount": 10,
+  "questionCount": 112,
+  "items": [
+    {
+      "source_id": "oilabs-stata::01_intro_to_stata::1",
+      "collection_id": "oilabs-stata::01_intro_to_stata",
+      "lab_slug": "01_intro_to_stata",
+      "source_file": "01_intro_to_stata/intro_to_stata.Rmd",
+      "question_number": 1,
+      "title": "intro_to_stata",
+      "prompt_text": "What command would you use to extract just information about boys baptized? Try it! ### Data visualization In Stata, the scatter command gives a simple plot of the number of girls baptized per year. !Scatterplot of girls over time br You will notice that the first variable, girls, appears first in the command, and also appears on the y-axis. The second variable, year, appears second in the command, and appears on the x-axis. We can modify the plot using options in Stata. Options in Stata are frequently specified after the main command and are preceded by a comma. For example, if we wanted to change the color of the plotted points to red, we would type: To read about all the options available for scatterplots, you can access the help files by typing into Stata help scatter.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "intro_to_stata",
+        "01_intro_to_stata",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::01_intro_to_stata::2",
+      "collection_id": "oilabs-stata::01_intro_to_stata",
+      "lab_slug": "01_intro_to_stata",
+      "source_file": "01_intro_to_stata/intro_to_stata.Rmd",
+      "question_number": 2,
+      "title": "intro_to_stata",
+      "prompt_text": "Is there an apparent trend in the number of girls baptized over the years? How would you describe it? (To ensure that your lab report is comprehensive, be sure to include the code needed to make the plot as well as your written interpretation.) ### Stata as a calculator We can also use Stata to compute mathematical expressions, just like a calculator. We only need to precede our mathematical expression with the command display to make Stata do computations. For example, if we want to see the total number of baptisms in 1629, we could type: ### Adding a new variable to the data frame Alternatively, we could create a new variable corresponding to the sum of boys and girls using the generate command: After running the generate command, open up the Data Browser and verify the new variable, total, is added to the dataset. We can make a plot of the total number of baptisms per year with the command: Similarly to how we computed the total number of births, we can compute the ratio of the number of boys to the number of girls baptized in 1629 with or we can add a new variable that contains all the ratios by using the command generate: We can also compute the proportion of newborns that are boys in 1629: or this may also be computed for all years simultaneously and appended to the dataset: Note that we are using the new total variable we created earlier in our calculations.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "intro_to_stata",
+        "01_intro_to_stata",
+        "question 2"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::01_intro_to_stata::3",
+      "collection_id": "oilabs-stata::01_intro_to_stata",
+      "lab_slug": "01_intro_to_stata",
+      "source_file": "01_intro_to_stata/intro_to_stata.Rmd",
+      "question_number": 3,
+      "title": "intro_to_stata",
+      "prompt_text": "Now, generate a plot of the proportion of boys born over time. What do you see? Finally, in addition to simple mathematical operators like subtraction and division, you can ask Stata to make comparisons like greater than, >, less than, <, and equality, ==. For example, we can ask if boys outnumber girls in each year with the expression This command add a new variable to the arbuthnot dataframe containing the values of either 1 if that year had more boys than girls, or 0 if that year did not (the answer may surprise you). * ## More Practice In the previous few pages, you recreated some of the displays and preliminary analysis of Arbuthnot's baptism data. Your assignment involves repeating these steps, but for present day birth records in the United States. First, save the \"present.dta\" dataset to your OpenIntroLabs folder. Then you will need to clear the current dataset from Stata using the command clear. At this stage, you should have saved all your code in a do-file, and you do not need to save your datafile. Load the present day data with the following command. The data are stored in a data frame called present.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "intro_to_stata",
+        "01_intro_to_stata",
+        "question 3"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::01_intro_to_stata::4",
+      "collection_id": "oilabs-stata::01_intro_to_stata",
+      "lab_slug": "01_intro_to_stata",
+      "source_file": "01_intro_to_stata/intro_to_stata.Rmd",
+      "question_number": 4,
+      "title": "intro_to_stata",
+      "prompt_text": "What years are included in this data set? What are the dimensions of the data frame? What are the variable (column) names?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "intro_to_stata",
+        "01_intro_to_stata",
+        "question 4"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::01_intro_to_stata::5",
+      "collection_id": "oilabs-stata::01_intro_to_stata",
+      "lab_slug": "01_intro_to_stata",
+      "source_file": "01_intro_to_stata/intro_to_stata.Rmd",
+      "question_number": 5,
+      "title": "intro_to_stata",
+      "prompt_text": "How do these counts compare to Arbuthnot's? Are they of a similar magnitude?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "intro_to_stata",
+        "01_intro_to_stata",
+        "question 5"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::01_intro_to_stata::6",
+      "collection_id": "oilabs-stata::01_intro_to_stata",
+      "lab_slug": "01_intro_to_stata",
+      "source_file": "01_intro_to_stata/intro_to_stata.Rmd",
+      "question_number": 6,
+      "title": "intro_to_stata",
+      "prompt_text": "Make a plot that displays the proportion of boys born over time. What do you see? Does Arbuthnot's observation about boys being born in greater proportion than girls hold up in the U.S.? Include the plot in your response. Hint: You should be able to reuse your code from Exercise 3 above, just replace the dataframe name.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "intro_to_stata",
+        "01_intro_to_stata",
+        "question 6"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::01_intro_to_stata::7",
+      "collection_id": "oilabs-stata::01_intro_to_stata",
+      "lab_slug": "01_intro_to_stata",
+      "source_file": "01_intro_to_stata/intro_to_stata.Rmd",
+      "question_number": 7,
+      "title": "intro_to_stata",
+      "prompt_text": "In what year did we see the most total number of births in the U.S.? Hint: First calculate the totals and save it as a new variable. Then, sort your dataset in descending order based on the total column. You can do this by running the command sort total. !-- How to do this in Stata? These data come from reports by the Centers for Disease Control. You can learn more about them by bringing up the help file using the command ?present. -- div id=\"license\" This is a product of OpenIntro that is released under a Creative Commons Attribution-ShareAlike 3.0 Unported. This lab was adapted for Stata by Jenna R. Krall and John Muschelli and adapted for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel from a lab written by Mark Hansen of UCLA Statistics. /div * ## Resources for learning Stata This lab is meant to provide you with a brief introduction to Stata. You may find it helpful to use Google to help you find code. In addition, there is a useful list of resources at http://www.stata.com/links/resources-for-learning-stata/.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "intro_to_stata",
+        "01_intro_to_stata",
+        "question 7"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::02_intro_to_data::1",
+      "collection_id": "oilabs-stata::02_intro_to_data",
+      "lab_slug": "02_intro_to_data",
+      "source_file": "02_intro_to_data/intro_to_data_stata.Rmd",
+      "question_number": 1,
+      "title": "intro_to_data_stata",
+      "prompt_text": "Look carefully at these three histograms. How do they compare? Are features revealed in one that are obscured in another? If we want to focus only on departure delays of flights headed to Los Angeles, we can use if in Stata. img src=\"lax.png\" alt=\"Histogram of delays at LAX\" style=\"width: 500px;\"/ The if condition in Stata allows the command to be restricted to only those observations that meet the if criteria. Therefore, by adding if dest == \"LAX\" we are specifying that we only want to apply the command histogram dep_delay only to those observations whose destination is \"LAX\". The double-equal (==) implies equality here. \"LAX\" is in quotation because it is a character string. div id=\"boxedtext\" Logical operators: Restricting plots or analyses to a subset of observations that meet certain conditions can allow us to fully examine the data. To do so we use if and a series of logical operators. The most commonly used logical operators for data analysis are as follows: - == means \"equal to\" - != means \"not equal to\" - > or means \"greater than\" or \"less than\" - = or = means \"greater than or equal to\" or \"less than or equal to\" </div ### Summaries We can also obtain numerical summaries for the departure delays using the summarize command. Just as in histogram, if we want to summarize only one variable, we place it after the summarize command. We can add the Stata option detail to obtain more information: We can also again restrict the summary to only those flights whose destination is LAX. We do this using the same if dest == \"LAX\" as before. We can also use if based on multiple criteria. Suppose we are interested in flights headed to San Francisco (SFO) in February: Notice that the ampersand (&) operator connects two conditions: (1) dest == \"SFO\" and (2) month == 2. This means that the only data are summarized where the destination is \"SFO\" AND the month is 2. If we are interested in either flights headed to SFO OR in February we use the pipe operator (|), which indicates \"or\", instead of the ampersand (&), which indicates \"and\".",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "intro_to_data_stata",
+        "02_intro_to_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::02_intro_to_data::1",
+      "collection_id": "oilabs-stata::02_intro_to_data",
+      "lab_slug": "02_intro_to_data",
+      "source_file": "02_intro_to_data/intro_to_data_stata.Rmd",
+      "question_number": 1,
+      "title": "intro_to_data_stata",
+      "prompt_text": "Summarize departure delays for flights headed to DCA in March. How many flights meet these criteria?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "intro_to_data_stata",
+        "02_intro_to_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::02_intro_to_data::1",
+      "collection_id": "oilabs-stata::02_intro_to_data",
+      "lab_slug": "02_intro_to_data",
+      "source_file": "02_intro_to_data/intro_to_data_stata.Rmd",
+      "question_number": 1,
+      "title": "intro_to_data_stata",
+      "prompt_text": "Describe the distribution of the arrival delays of flights headed to DCA in March using a histogram and appropriate summary statistics. Hint: The summary statistics you use should depend on the shape of the distribution. Another useful technique is quickly calculating summary statistics for various groups in your data frame. For example, we can modify the above command using the bysort prefix to get the same summary stats for each origin airport for flights headed to SFO in February: We use bysort to first sort the data by origin to ensure that all of the same origin flights are grouped together, and then apply summarize by each origin airport.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "intro_to_data_stata",
+        "02_intro_to_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::02_intro_to_data::1",
+      "collection_id": "oilabs-stata::02_intro_to_data",
+      "lab_slug": "02_intro_to_data",
+      "source_file": "02_intro_to_data/intro_to_data_stata.Rmd",
+      "question_number": 1,
+      "title": "intro_to_data_stata",
+      "prompt_text": "Find the minimum and maximum for arr_delay of flights going to SFO in February, grouped by carrier. Which carrier has the most variable arrival delays? ### Departure delays over months Which month would you expect to have the highest average delay departing from an NYC airport? Let's think about how we would answer this question: - First, calculate monthly averages for departure delays. With the new language we are learning, we need to use + bysort to obtain summaries by month and + summarize to obtain averages. - Then, we need to sort the data by delay.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "intro_to_data_stata",
+        "02_intro_to_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::02_intro_to_data::1",
+      "collection_id": "oilabs-stata::02_intro_to_data",
+      "lab_slug": "02_intro_to_data",
+      "source_file": "02_intro_to_data/intro_to_data_stata.Rmd",
+      "question_number": 1,
+      "title": "intro_to_data_stata",
+      "prompt_text": "Suppose you really dislike departure delays, and you want to schedule your travel in a month that minimizes your potential departure delay leaving NYC. One option is to choose the month with the lowest mean departure delay. Another option is to choose the month with the lowest median departure delay (50% percentile). What are the pros and cons of these two choices? !-- Which month has the highest average departure delay from an NYC airport? What about the highest median departure delay? Which of these measures is more reliable for deciding which month(s) to avoid flying if you really dislike delayed flights. -- ### On time departure rate for NYC airports Suppose you will be flying out of NYC and want to know which of the three major NYC airports has the best on time departure rate of departing flights. Suppose also that, for you, a flight that is delayed for less than 5 minutes is basically \"on time\". You consider any flight delayed for 5 minutes or more to be \"delayed\". In order to determine which airport has the best on time departure rate, we need to - first classify each flight as \"on time\" or \"delayed\", - then calculate on time departure rates for each origin airport by origin airport. Let's start with classifying each flight as \"on time\" or \"delayed\" by creating a new variable. First, we generate a new variable as we have seen before that is equal to 1 when dep_delay is less than 5 minutes. Then, we have introduced a new command, replace that replaces values of dep_time. Using replace, dep_time is equal to 0 if dep_delay is greater than or equal to 5 minutes. Then, we wish to calculate on-time departure rates by origin:",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "intro_to_data_stata",
+        "02_intro_to_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::02_intro_to_data::1",
+      "collection_id": "oilabs-stata::02_intro_to_data",
+      "lab_slug": "02_intro_to_data",
+      "source_file": "02_intro_to_data/intro_to_data_stata.Rmd",
+      "question_number": 1,
+      "title": "intro_to_data_stata",
+      "prompt_text": "If you were selecting an airport simply based on \"on time\" departure percentage, which NYC airport would you choose to fly out of? We can also visualize the distribution of on time departure rate across the three airports using a bar plot. How is this plot affected by the number of flights that depart from each of the three airports? img src=\"depbar.png\" alt=\"Barplot of delays by origin, bin = 15\" style=\"width: 500px;\"/ * ## More Practice",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "intro_to_data_stata",
+        "02_intro_to_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::02_intro_to_data::1",
+      "collection_id": "oilabs-stata::02_intro_to_data",
+      "lab_slug": "02_intro_to_data",
+      "source_file": "02_intro_to_data/intro_to_data_stata.Rmd",
+      "question_number": 1,
+      "title": "intro_to_data_stata",
+      "prompt_text": "Generate a new variable for average speed, avg_speed traveled by the plane for each flight (in mph). Hint: Average speed can be calculated as distance divided by number of hours of travel, and note that air_time is given in minutes.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "intro_to_data_stata",
+        "02_intro_to_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::02_intro_to_data::1",
+      "collection_id": "oilabs-stata::02_intro_to_data",
+      "lab_slug": "02_intro_to_data",
+      "source_file": "02_intro_to_data/intro_to_data_stata.Rmd",
+      "question_number": 1,
+      "title": "intro_to_data_stata",
+      "prompt_text": "Make a scatterplot of avg_speed vs. distance. Describe the relationship between average speed and distance.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "intro_to_data_stata",
+        "02_intro_to_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::02_intro_to_data::1",
+      "collection_id": "oilabs-stata::02_intro_to_data",
+      "lab_slug": "02_intro_to_data",
+      "source_file": "02_intro_to_data/intro_to_data_stata.Rmd",
+      "question_number": 1,
+      "title": "intro_to_data_stata",
+      "prompt_text": "Replicate the following plot. Hint: The data frame plotted only contains flights from American Airlines, Delta Airlines, and United Airlines. Once you replicate the plot, determine (roughly) what the cutoff point is for departure delays where you can still expect to get to your destination on time. img src=\"scatterdelay.png\" alt=\"Scatterplot of arrival against departure delays, bin = 15\" style=\"width: 500px;\"/ div id=\"license\" This is a product of OpenIntro that is released under a Creative Commons Attribution-ShareAlike 3.0 Unported. This lab was adapted for Stata by Jenna R. Krall and John Muschelli and adapted for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel. /div",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "intro_to_data_stata",
+        "02_intro_to_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::03_normal_distribution::1",
+      "collection_id": "oilabs-stata::03_normal_distribution",
+      "lab_slug": "03_normal_distribution",
+      "source_file": "03_normal_distribution/normal_distribution_stata.Rmd",
+      "question_number": 1,
+      "title": "normal_distribution_stata",
+      "prompt_text": "Make a plot (or plots) to visualize the distributions of men's and women's heights. How do their centers, shapes, and spreads compare? ## The normal distribution In your description of the distributions, did you use words like bell-shaped or normal? It's tempting to say so when faced with a unimodal symmetric distribution. To see how accurate that description is, we can plot a normal distribution curve on top of a histogram to see how closely the data follow a normal distribution. This normal curve should have the same mean and standard deviation as the data. We'll be working with women's heights, so let's subset our data using the command keep. We can always use the command use \"bdims.dta\" to go back to the original dataset of both females and males. Recall that we can display a histogram of the heights of females using the histogram command: Instead of plotting a frequency histogram, the default in Stata, we can plot a density histogram: ![](hgt.png) The difference between a frequency histogram and a density histogram is that while in a frequency histogram the heights of the bars add up to the total number of observations, in a density histogram the areas of the bars add up to 1. The area of each bar can be calculated as its height times the width of the bar. Using a density histogram allows us to properly overlay a normal distribution curve over the histogram since the curve is a normal probability density function that also has area under the curve of 1. Frequency and density histograms both display the same exact shape; they only differ in their y-axis. You can verify this by comparing the frequency histogram and the density histogram. We can add a normal curve to this histogram by using the option normal.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "normal_distribution_stata",
+        "03_normal_distribution",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::03_normal_distribution::2",
+      "collection_id": "oilabs-stata::03_normal_distribution",
+      "lab_slug": "03_normal_distribution",
+      "source_file": "03_normal_distribution/normal_distribution_stata.Rmd",
+      "question_number": 2,
+      "title": "normal_distribution_stata",
+      "prompt_text": "Based on this plot, does it appear that the data follow a nearly normal distribution? ## Evaluating the normal distribution Eyeballing the shape of the histogram is one way to determine if the data appear to be nearly normally distributed, but it can be frustrating to decide just how close the histogram is to the curve. An alternative approach involves constructing a normal probability plot, also called a normal Q-Q plot for \"quantile-quantile\". ![](qqhgt.png) The x-axis values correspond to the quantiles of a theoretically normal curve with mean and standard deviation equal to the sample mean and standard deviation from the data. The y-axis values correspond to the quantiles of the sample data. A data set that is nearly normal will result in a probability plot where the points closely follow a diagonal line. Any deviations from normality leads to deviations of these points from that line. The plot for female heights shows points that tend to follow the line but with some errant points towards the tails. We're left with the same problem that we encountered with the histogram above: how close is close enough? A useful way to address this question is to rephrase it as: what do probability plots look like for data that I know came from a normal distribution? We can answer this by simulating data from a normal distribution. First, we need to find the mean and standard deviation of our heights: Then, using this mean and standard deviation, we can simulate normal data into a new variable called simnorm using the function rnormal. We can take a look at the shape of our simulated data as well as its normal probability plot.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "normal_distribution_stata",
+        "03_normal_distribution",
+        "question 2"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::03_normal_distribution::3",
+      "collection_id": "oilabs-stata::03_normal_distribution",
+      "lab_slug": "03_normal_distribution",
+      "source_file": "03_normal_distribution/normal_distribution_stata.Rmd",
+      "question_number": 3,
+      "title": "normal_distribution_stata",
+      "prompt_text": "Make a normal probability plot of simnorm. Do all of the points fall on the line? How does this plot compare to the probability plot for the real data?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "normal_distribution_stata",
+        "03_normal_distribution",
+        "question 3"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::03_normal_distribution::4",
+      "collection_id": "oilabs-stata::03_normal_distribution",
+      "lab_slug": "03_normal_distribution",
+      "source_file": "03_normal_distribution/normal_distribution_stata.Rmd",
+      "question_number": 4,
+      "title": "normal_distribution_stata",
+      "prompt_text": "Does the normal probability plot for female heights look similar to the plots created for the simulated data? That is, do the plots provide evidence that the female heights are nearly normal?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "normal_distribution_stata",
+        "03_normal_distribution",
+        "question 4"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::03_normal_distribution::5",
+      "collection_id": "oilabs-stata::03_normal_distribution",
+      "lab_slug": "03_normal_distribution",
+      "source_file": "03_normal_distribution/normal_distribution_stata.Rmd",
+      "question_number": 5,
+      "title": "normal_distribution_stata",
+      "prompt_text": "Using the same technique, determine whether or not female weights appear to come from a normal distribution. ## Normal probabilities Okay, so now you have a slew of tools to judge whether or not a variable is normally distributed. Why should we care? It turns out that statisticians know a lot about the normal distribution. Once we decide that a random variable is approximately normal, we can answer all sorts of questions about that variable related to probability. Take, for example, the question of, \"What is the probability that a randomly chosen young adult female is taller than 6 feet (about 182 cm)?\" (The study that published this data set is clear to point out that the sample was not random and therefore inference to a general population is not suggested. We do so here only as an exercise.) If we assume that female heights are normally distributed (a very close approximation is also okay), we can find this probability by calculating a Z-score and consulting a Z table (also called a normal probability table). In Stata, this is done in two steps. First, we compute the Z-score in the same way discussed in the textbook, using Stata as a calculator. Then, with the function normal(), we can find the left-tail probability, which corresponds to an adult female being smaller than 182 cm: If we want the right-tail probability for an adult female being taller than 182 cm, we take: Assuming a normal distribution has allowed us to calculate a theoretical probability. If we want to calculate the probability empirically, we simply need to determine how many observations fall above 182 then divide this number by the total number of females in the sample. Although the probabilities are not exactly the same, they are reasonably close. The closer that your distribution is to being normal, the more accurate the theoretical probabilities will be.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "normal_distribution_stata",
+        "03_normal_distribution",
+        "question 5"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::03_normal_distribution::6",
+      "collection_id": "oilabs-stata::03_normal_distribution",
+      "lab_slug": "03_normal_distribution",
+      "source_file": "03_normal_distribution/normal_distribution_stata.Rmd",
+      "question_number": 6,
+      "title": "normal_distribution_stata",
+      "prompt_text": "Write out two probability questions that you would like to answer; one regarding female heights and one regarding female weights. Calculate those probabilities using both the theoretical normal distribution as well as the empirical distribution (four probabilities in all). Which variable, height or weight, had a closer agreement between the two methods? * ## More Practice",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "normal_distribution_stata",
+        "03_normal_distribution",
+        "question 6"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::03_normal_distribution::7",
+      "collection_id": "oilabs-stata::03_normal_distribution",
+      "lab_slug": "03_normal_distribution",
+      "source_file": "03_normal_distribution/normal_distribution_stata.Rmd",
+      "question_number": 7,
+      "title": "normal_distribution_stata",
+      "prompt_text": "Now let's consider some of the other variables in the body dimensions data set. Using the figures at the end of the exercises, match the histogram to its normal probability plot. All of the variables have been standardized (first subtract the mean, then divide by the standard deviation), so the units won't be of any help. If you are uncertain based on these figures, generate the plots in Stata to check. a. The histogram for female biiliac (pelvic) diameter (bii_di) belongs to normal probability plot letter ____. b. The histogram for female elbow diameter (elb_di) belongs to normal probability plot letter ____. c. The histogram for general age (age) belongs to normal probability plot letter ____. d. The histogram for female chest depth (che_de) belongs to normal probability plot letter ____.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "normal_distribution_stata",
+        "03_normal_distribution",
+        "question 7"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::03_normal_distribution::8",
+      "collection_id": "oilabs-stata::03_normal_distribution",
+      "lab_slug": "03_normal_distribution",
+      "source_file": "03_normal_distribution/normal_distribution_stata.Rmd",
+      "question_number": 8,
+      "title": "normal_distribution_stata",
+      "prompt_text": "Note that normal probability plots c. and d. have a slight stepwise pattern. Why do you think this is the case?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "normal_distribution_stata",
+        "03_normal_distribution",
+        "question 8"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::03_normal_distribution::9",
+      "collection_id": "oilabs-stata::03_normal_distribution",
+      "lab_slug": "03_normal_distribution",
+      "source_file": "03_normal_distribution/normal_distribution_stata.Rmd",
+      "question_number": 9,
+      "title": "normal_distribution_stata",
+      "prompt_text": "As you can see, normal probability plots can be used both to assess normality and visualize skewness. Make a normal probability plot for female knee diameter (kne_di). Based on this normal probability plot, is this variable left skewed, symmetric, or right skewed? Use a histogram to confirm your findings. ![](more/histbii.png) ![](more/histelb.png) ![](more/histage.png) ![](more/histche.png) ![](more/qqa.png) ![](more/qqb.png) ![](more/qqc.png) ![](more/qqd.png) div id=\"license\" This is a product of OpenIntro that is released under a Creative Commons Attribution-ShareAlike 3.0 Unported. This lab was adapted for Stata by Jenna R. Krall and John Muschelli and adapted for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel from a lab written by Mark Hansen of UCLA Statistics. /div",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "normal_distribution_stata",
+        "03_normal_distribution",
+        "question 9"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::04_probability::1",
+      "collection_id": "oilabs-stata::04_probability",
+      "lab_slug": "04_probability",
+      "source_file": "04_probability/probability_stata.Rmd",
+      "question_number": 1,
+      "title": "probability_stata",
+      "prompt_text": "What does a streak length of 1 mean, i.e. how many hits and misses are in a streak of 1? What about a streak length of 0? Counting streak lengths manually for all 133 shots would get tedious, so we'll use another dataset, kobe_streak.dta to view all the streaks from the kobe_basket dataset. We can then take a look at the distribution of these streak lengths.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "probability_stata",
+        "04_probability",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::04_probability::2",
+      "collection_id": "oilabs-stata::04_probability",
+      "lab_slug": "04_probability",
+      "source_file": "04_probability/probability_stata.Rmd",
+      "question_number": 2,
+      "title": "probability_stata",
+      "prompt_text": "Describe the distribution of Kobe's streak lengths from the 2009 NBA finals. What was his typical streak length? How long was his longest streak of baskets? Make sure to include the accompanying plot in your answer. ## Compared to What? We've shown that Kobe had some long shooting streaks, but are they long enough to support the belief that he had a hot hand? What can we compare them to? To answer these questions, let's return to the idea of independence. Two processes are independent if the outcome of one process doesn't effect the outcome of the second. If each shot that a player takes is an independent process, having made or missed your first shot will not affect the probability that you will make or miss your second shot. A shooter with a hot hand will have shots that are not independent of one another. Specifically, if the shooter makes his first shot, the hot hand model says he will have a higher probability of making his second shot. Let's suppose for a moment that the hot hand model is valid for Kobe. During his career, the percentage of time Kobe makes a basket (i.e. his shooting percentage) is about 45%, or in probability notation, [ P( textrm{shot 1 = H}) = 0.45 ] If he makes the first shot and has a hot hand (not independent shots), then the probability that he makes his second shot would go up to, let's say, 60%, [ P( textrm{shot 2 = H} , | , textrm{shot 1 = H}) = 0.60 ] As a result of these increased probabilites, you'd expect Kobe to have longer streaks. Compare this to the skeptical perspective where Kobe does not have a hot hand, where each shot is independent of the next. If he hit his first shot, the probability that he makes the second is still 0.45. [ P( textrm{shot 2 = H} , | , textrm{shot 1 = H}) = 0.45 ] In other words, making the first shot did nothing to effect the probability that he'd make his second shot. If Kobe's shots are independent, then he'd have the same probability of hitting every shot regardless of his past shots: 45%. Now that we've phrased the situation in terms of independent shots, let's return to the question: how do we tell if Kobe's shooting streaks are long enough to indicate that he has a hot hand? We can compare his streak lengths to someone without a hot hand: an independent shooter. ## Simulations in Stata While we don't have any data from a shooter we know to have independent shots, that sort of data is very easy to simulate in Stata. In a simulation, you set the ground rules of a random process and then the computer uses random numbers to generate an outcome that adheres to those rules. As a simple example, you can simulate flipping a fair coin. We first will clear out the existing data from Stata. We can always read the data back in the future. Then, we set how many samples we want to take, for example 100. If want to sample \"heads\" or \"tails\", we could set \"heads\" as 1 and \"tails\" as 0. This is sampling from a binomial distribution, so we use the rbinomial function. The arugments of the function correspond to having each observation represent a coin flip (1), and that the coin is fair (0.5). The function rbinomial can be thought of as a hat with two slips of paper in it: one slip says heads and the other says tails. The function draws one slip from the hat and tells us if it was a head (1) or a tail (0). Look at the variable sample in the Data Browser. Just like when flipping a coin, sometimes you'll get a heads, sometimes you'll get a tails, but in the long run, you'd expect to get roughly equal numbers of each. To view the results of this simulation, use table to count up the number of heads and tails. Say we're trying to simulate an unfair coin that we know only lands heads 20% of the time. We can adjust for this by changing the second argument in rbinomial. This indicates that for the two options (heads and tails), we want to select the first one, heads, with probability 0.2 and the second one, tails with probability 0.8. Another way of thinking about this is to think of the outcome space as a bag of 10 chips, where 2 chips are labeled \"head\" and 8 chips \"tail\". Therefore at each draw, the probability of drawing a chip that says \"head\"\" is 20%, and \"tail\" is 80%.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "probability_stata",
+        "04_probability",
+        "question 2"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::04_probability::3",
+      "collection_id": "oilabs-stata::04_probability",
+      "lab_slug": "04_probability",
+      "source_file": "04_probability/probability_stata.Rmd",
+      "question_number": 3,
+      "title": "probability_stata",
+      "prompt_text": "In your simulation of flipping the unfair coin 100 times, how many flips came up heads? Include the code for sampling the unfair coin in your response. Since your Stata do-file will generate a new sample each time you run it, you should also \"set a seed\" before you sample. Read more about setting a seed below. div id=\"boxedtext\" A note on setting a seed: Setting a seed will cause Stata to select the same sample each time you run your code. This will make sure your results don't change each time you run your code, and it will also ensure reproducibility of your work (by setting the same seed it will be possible to reproduce your results). You can set a seed like this: The number above is completely arbitraty. If you need inspiration, you can use your ID, birthday, or just a random string of numbers. The important thing is that you use each seed only once. Remember to do this before you sample in the exercise above. /div In a sense, we've shrunken the size of the slip of paper that says \"heads\", making it less likely to be drawn and we've increased the size of the slip of paper saying \"tails\", making it more likely to be drawn. When we simulated the fair coin, both slips of paper were the same size. If you want to learn more about rbinomial or any other function, recall that you can always check out its help file. ## Simulating the Independent Shooter Simulating a basketball player who has independent shots uses the same mechanism that we use to simulate a coin flip. It is still choosing between two options: (\"Miss\", \"Hit\"). To make a valid comparison between Kobe and our simulated independent shooter, we need to align both their shooting percentage and the number of attempted shots. We first need to read in our dataset kobe_basket.dta again. Notice we can apply the option clear to clear our simulated data. Now we need to generate a new variable that is our simulated shots, assuming no hot hand.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "probability_stata",
+        "04_probability",
+        "question 3"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::04_probability::4",
+      "collection_id": "oilabs-stata::04_probability",
+      "lab_slug": "04_probability",
+      "source_file": "04_probability/probability_stata.Rmd",
+      "question_number": 4,
+      "title": "probability_stata",
+      "prompt_text": "What change needs to be made to the rbinomial function so that it reflects a shooting percentage of 45%? Make this adjustment, then run a simulation to sample 133 shots. Note that because we already have a dataset loaded, we do not need to set the observations using set obs. Assign the output of this simulation to a new variable called sim_basket. With the results of the simulation saved as sim_basket, we have the data necessary to compare Kobe to our independent shooter. Both variables, shot and sim_basket represent the results of 133 shot attempts, each with the same shooting percentage of 45%. We know that our simulated data is from a shooter that has independent shots. That is, we know the simulated shooter does not have a hot hand. * ## More Practice ### Comparing Kobe Bryant to the Independent Shooter",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "probability_stata",
+        "04_probability",
+        "question 4"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::04_probability::5",
+      "collection_id": "oilabs-stata::04_probability",
+      "lab_slug": "04_probability",
+      "source_file": "04_probability/probability_stata.Rmd",
+      "question_number": 5,
+      "title": "probability_stata",
+      "prompt_text": "Using the dataset ind_streak.dta, describe the distribution of streak lengths. Make sure to include a plot in your answer.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "probability_stata",
+        "04_probability",
+        "question 5"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::04_probability::6",
+      "collection_id": "oilabs-stata::04_probability",
+      "lab_slug": "04_probability",
+      "source_file": "04_probability/probability_stata.Rmd",
+      "question_number": 6,
+      "title": "probability_stata",
+      "prompt_text": "What is the typical streak length for this simulated independent shooter with a 45% shooting percentage? How long is the player's longest streak of baskets in 133 shots?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "probability_stata",
+        "04_probability",
+        "question 6"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::04_probability::7",
+      "collection_id": "oilabs-stata::04_probability",
+      "lab_slug": "04_probability",
+      "source_file": "04_probability/probability_stata.Rmd",
+      "question_number": 7,
+      "title": "probability_stata",
+      "prompt_text": "If you were to run the simulation of the independent shooter a second time, how would you expect its streak distribution to compare to the distribution from the question above? Exactly the same? Somewhat similar? Totally different? Explain your reasoning.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "probability_stata",
+        "04_probability",
+        "question 7"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::04_probability::8",
+      "collection_id": "oilabs-stata::04_probability",
+      "lab_slug": "04_probability",
+      "source_file": "04_probability/probability_stata.Rmd",
+      "question_number": 8,
+      "title": "probability_stata",
+      "prompt_text": "How does Kobe Bryant's distribution of streak lengths compare to the distribution of streak lengths for the simulated shooter? Using this comparison, do you have evidence that the hot hand model fits Kobe's shooting patterns? Explain. /div div id=\"license\" This is a product of OpenIntro that is released under a Creative Commons Attribution-ShareAlike 3.0 Unported. This lab was adapted for Stata by Jenna R. Krall and John Muschelli and adapted for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel from a lab written by Mark Hansen of UCLA Statistics. /div",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "probability_stata",
+        "04_probability",
+        "question 8"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::05_sampling_distributions::1",
+      "collection_id": "oilabs-stata::05_sampling_distributions",
+      "lab_slug": "05_sampling_distributions",
+      "source_file": "05_sampling_distributions/sampling_distributions_stata.Rmd",
+      "question_number": 1,
+      "title": "sampling_distributions_stata",
+      "prompt_text": "Describe this population distribution using a visualization and these summary statistics. You don't have to use all of the summary statistics in your description, you will need to decide which ones are relevant based on the shape of the distribution. Make sure to include the plot and the summary statistics output in your report along with your narrative. ## The unknown sampling distribution In this lab we have access to the entire population, but this is rarely the case in real life. Gathering information on an entire population is often extremely costly or impossible. Because of this, we often take a sample of the population and use that to understand the properties of the population. Before we do this, we need to discuss the concept of preserve in Stata. In Stata, we can only work with one dataset at a time. We want to work with a sample from the full ames dataset, but we would also like to return to the full dataset later on. Therefore, we will \"preserve\" the full ames dataset before moving forward by using the preserve command. Remember, we can also always read back in the original dataset with the command use \"ames.dta\" if we want to return to the full data. However, the preserve command makes this a bit easier. If we were interested in estimating the mean living area in Ames based on a sample, we can use the sample command to survey the population. This command collects a simple random sample of size 50 from the ames dataset, and discards the remaining data. Sampling is like going into the City Assessor's database and pulling up the files on 50 random home sales. Working with these 50 files would be considerably simpler than working with all 2930 home sales.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "sampling_distributions_stata",
+        "05_sampling_distributions",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::05_sampling_distributions::1",
+      "collection_id": "oilabs-stata::05_sampling_distributions",
+      "lab_slug": "05_sampling_distributions",
+      "source_file": "05_sampling_distributions/sampling_distributions_stata.Rmd",
+      "question_number": 1,
+      "title": "sampling_distributions_stata",
+      "prompt_text": "Describe the distribution of area in this sample. How does it compare to the distribution of the population? Hint: the sample function takes a random sample of observations (i.e. rows) from the dataset, you can still refer to the variables in the dataset with the same names. Code you used in the previous exercise will also be helpful for visualizing and summarizing the sample. If we're interested in estimating the average living area in homes in Ames using the sample, our best single guess is the sample mean. Depending on which 50 homes you selected, your estimate could be a bit above or a bit below the true population mean of 1499.69 square feet. In general, though, the sample mean turns out to be a pretty good estimate of the average living area, and we were able to get it by sampling less than 3 % of the population.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "sampling_distributions_stata",
+        "05_sampling_distributions",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::05_sampling_distributions::1",
+      "collection_id": "oilabs-stata::05_sampling_distributions",
+      "lab_slug": "05_sampling_distributions",
+      "source_file": "05_sampling_distributions/sampling_distributions_stata.Rmd",
+      "question_number": 1,
+      "title": "sampling_distributions_stata",
+      "prompt_text": "Would you expect the mean of your sample to match the mean of another team's sample? Why, or why not? If the answer is no, would you expect the means to just be somewhat different or very different? Ask a neighboring team to confirm your answer.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "sampling_distributions_stata",
+        "05_sampling_distributions",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::05_sampling_distributions::1",
+      "collection_id": "oilabs-stata::05_sampling_distributions",
+      "lab_slug": "05_sampling_distributions",
+      "source_file": "05_sampling_distributions/sampling_distributions_stata.Rmd",
+      "question_number": 1,
+      "title": "sampling_distributions_stata",
+      "prompt_text": "Take a second sample, also of size 50. How does the mean of this new sample compare with the mean of your original sample? Suppose we took two more samples, one of size 100 and one of size 1000. Which would you think would provide a more accurate estimate of the population mean? Hint: Use the restore, preserve command below to return to the original, full dataset before sampling again. Not surprisingly, every time we take another random sample, we get a different sample mean. It's useful to get a sense of just how much variability we should expect when estimating the population mean this way. The distribution of sample means, called the sampling distribution (of the mean), can help us understand this variability. In this lab, because we have access to the population, we can build up the sampling distribution for the sample mean by repeating the above steps many times. Here we will generate 15,000 samples and compute the sample mean of each. Note that we use bootstrap instead of sample to sample with replacement and compute the sample mean of each sample. This is because sampling distributions are constructed by sampling with replacement. Here we use Stata to take 15,000 different samples of size 50 from the population. We know this because the reps specifies 15,000 and the size specifies 50. We then calculate the mean of each sample, and store each result in a dataset called sample.dta. Next, we review how this set of code works.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "sampling_distributions_stata",
+        "05_sampling_distributions",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::05_sampling_distributions::1",
+      "collection_id": "oilabs-stata::05_sampling_distributions",
+      "lab_slug": "05_sampling_distributions",
+      "source_file": "05_sampling_distributions/sampling_distributions_stata.Rmd",
+      "question_number": 1,
+      "title": "sampling_distributions_stata",
+      "prompt_text": "How many elements are there in sample.dta? Describe the sampling distribution, and be sure to specifically note its center. Make sure to include a plot of the distribution in your answer. Hint: Be sure to read in the newly created dataset, sample.dta. ## Interlude: Sampling distributions The idea behind the bootstrap function is repetition. Earlier we took a single sample of size n (50) from the population of all houses in Ames. With this new function we are able to repeat this sampling procedure 15,000 times in order to build a distribution of a series of sample statistics, which is called the sampling distribution. Note that in practice one rarely gets to build true sampling distributions, because we rarely have access to data from the entire population. Without the bootstrap function, this would be painful. We would have to manually run the following code 15,000 times: as well as store the resulting sample means each time in a separate dataset Note that for each of the 15,000 times we computed a mean, we did so from a different sample!",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "sampling_distributions_stata",
+        "05_sampling_distributions",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::05_sampling_distributions::1",
+      "collection_id": "oilabs-stata::05_sampling_distributions",
+      "lab_slug": "05_sampling_distributions",
+      "source_file": "05_sampling_distributions/sampling_distributions_stata.Rmd",
+      "question_number": 1,
+      "title": "sampling_distributions_stata",
+      "prompt_text": "To make sure you understand how sampling distributions are built, and exactly what the bootstrap function does, try modifying the code to create a sampling distribution of 25 sample means from samples of size 10, and put them in a dataset named sample_means_small.dta. Look at the Data Editor. How many observations are there in this dataset called sample_means_small? What does each observation represent? ## Sample size and the sampling distribution Mechanics aside, let's return to the reason we used the bootstrap function: to compute a sampling distribution, specifically, the sampling distribution of the mean home area for samples of 50 houses. The sampling distribution that we computed tells us much about estimating the average living area in homes in Ames. Because the sample mean is an unbiased estimator, the sampling distribution is centered at the true average living area of the population, and the spread of the distribution indicates how much variability is incurred by sampling only 50 home sales. In the remainder of this section we will work on getting a sense of the effect that sample size has on our sampling distribution.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "sampling_distributions_stata",
+        "05_sampling_distributions",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::05_sampling_distributions::1",
+      "collection_id": "oilabs-stata::05_sampling_distributions",
+      "lab_slug": "05_sampling_distributions",
+      "source_file": "05_sampling_distributions/sampling_distributions_stata.Rmd",
+      "question_number": 1,
+      "title": "sampling_distributions_stata",
+      "prompt_text": "Use the app below to create sampling distributions of means of areas from samples of size 10, 50, and 100. Use 5,000 simulations. What does each observation in the sampling distribution represent? How does the mean, standard error, and shape of the sampling distribution change as the sample size increases? How (if at all) do these values change if you increase the number of simulations? (You do not need to include plots in your answer.) * ## More Practice So far, we have only focused on estimating the mean living area in homes in Ames. Now you'll try to estimate the mean home price. You are expected to write the required code and produce the necessary plots and summary statistics. !-- You are welcome to use the app for exploration. --",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "sampling_distributions_stata",
+        "05_sampling_distributions",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::05_sampling_distributions::1",
+      "collection_id": "oilabs-stata::05_sampling_distributions",
+      "lab_slug": "05_sampling_distributions",
+      "source_file": "05_sampling_distributions/sampling_distributions_stata.Rmd",
+      "question_number": 1,
+      "title": "sampling_distributions_stata",
+      "prompt_text": "Take a sample of size 15 from the population and calculate the mean price of the homes in this sample. Using this sample, what is your best point estimate of the population mean of prices of homes?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "sampling_distributions_stata",
+        "05_sampling_distributions",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::05_sampling_distributions::1",
+      "collection_id": "oilabs-stata::05_sampling_distributions",
+      "lab_slug": "05_sampling_distributions",
+      "source_file": "05_sampling_distributions/sampling_distributions_stata.Rmd",
+      "question_number": 1,
+      "title": "sampling_distributions_stata",
+      "prompt_text": "Since you have access to the population, simulate the sampling distribution of $ overline{price}$ for samples of size 15 by taking 2000 samples from the population of size 15 and computing 2000 sample means. Store these means in a dataset called sample_price.dta. Plot the data, then describe the shape of this sampling distribution. Based on this sampling distribution, what would you guess the mean home price of the population to be? Finally, calculate and report the population mean.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "sampling_distributions_stata",
+        "05_sampling_distributions",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::05_sampling_distributions::1",
+      "collection_id": "oilabs-stata::05_sampling_distributions",
+      "lab_slug": "05_sampling_distributions",
+      "source_file": "05_sampling_distributions/sampling_distributions_stata.Rmd",
+      "question_number": 1,
+      "title": "sampling_distributions_stata",
+      "prompt_text": "Change your sample size from 15 to 150, then compute the sampling distribution using the same method as above, and store these means in a new dataset called sample_means150.dta. Describe the shape of this sampling distribution, and compare it to the sampling distribution for a sample size of 15. Based on this sampling distribution, what would you guess to be the mean sale price of homes in Ames?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "sampling_distributions_stata",
+        "05_sampling_distributions",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::05_sampling_distributions::1",
+      "collection_id": "oilabs-stata::05_sampling_distributions",
+      "lab_slug": "05_sampling_distributions",
+      "source_file": "05_sampling_distributions/sampling_distributions_stata.Rmd",
+      "question_number": 1,
+      "title": "sampling_distributions_stata",
+      "prompt_text": "Of the sampling distributions from Exercises 9 and 10, which has a smaller spread? If we're concerned with making estimates that are more often close to the true value, would we prefer a sampling distribution with a large or small spread? div id=\"license\" This is a product of OpenIntro that is released under a Creative Commons Attribution-ShareAlike 3.0 Unported. This lab was adapted for Stata by Jenna R. Krall and written for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel. /div",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "sampling_distributions_stata",
+        "05_sampling_distributions",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::06_confidence_intervals::1",
+      "collection_id": "oilabs-stata::06_confidence_intervals",
+      "lab_slug": "06_confidence_intervals",
+      "source_file": "06_confidence_intervals/confidence_intervals_stata.Rmd",
+      "question_number": 1,
+      "title": "Foundations for statistical inference - Confidence intervals",
+      "prompt_text": "Describe the distribution of house area in your sample. What would you say is the \"typical\" size within your sample? Also state precisely what you interpreted \"typical\" to mean.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "Foundations for statistical inference - Confidence intervals",
+        "06_confidence_intervals",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::06_confidence_intervals::1",
+      "collection_id": "oilabs-stata::06_confidence_intervals",
+      "lab_slug": "06_confidence_intervals",
+      "source_file": "06_confidence_intervals/confidence_intervals_stata.Rmd",
+      "question_number": 1,
+      "title": "Foundations for statistical inference - Confidence intervals",
+      "prompt_text": "Would you expect another student's distribution to be identical to yours? Would you expect it to be similar? Why or why not? ## Confidence intervals Return for a moment to the question that first motivated this lab: based on this sample, what can we infer about the population? Based only on this single sample, the best estimate of the average living area of houses sold in Ames would be the sample mean, usually denoted as $ bar{x}$ (here we're calling it x_bar). That serves as a good point estimate but it would be useful to also communicate how uncertain we are of that estimate. This uncertainty can be quantified using a confidence interval. A confidence interval for a population mean is of the following form [ bar{x} + z^ star frac{s}{ sqrt{n}} ] You should by now be comfortable with calculating the mean and standard deviation of a sample in Stata. And we know that the sample size is 60. So the only remaining building block is finding the appropriate critical value for a given confidence level. We can use the invnormal function for this task, which will give the critical value associated with a given percentile under the normal distribution. Remember that confidence levels and percentiles are not equivalent. For example, a 95% confidence level refers to the middle 95% of the distribution, and the critical value associated with this area will correspond to the 97.5th percentile. We can find the critical value for a 95% confidence interal using which is roughly equal to the value critical value 1.96 that you're likely familiar with by now. Recall that display makes Stata perform as a calculator. Let's finally calculate the confidence interval using the equation above. Use summarize to find the sample size, sample mean, and sample standard deviation. To recap: even though we don't know what the full population looks like, we're 95% confident that the true average size of houses in Ames lies between the lower and upper endpoints of your confidence interval. There are a few conditions that must be met for this interval to be valid.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "Foundations for statistical inference - Confidence intervals",
+        "06_confidence_intervals",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::06_confidence_intervals::1",
+      "collection_id": "oilabs-stata::06_confidence_intervals",
+      "lab_slug": "06_confidence_intervals",
+      "source_file": "06_confidence_intervals/confidence_intervals_stata.Rmd",
+      "question_number": 1,
+      "title": "Foundations for statistical inference - Confidence intervals",
+      "prompt_text": "For the confidence interval to be valid, the sample mean must be normally distributed and have standard error $s / sqrt{n}$. What conditions must be met for this to be true? ## Confidence levels",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "Foundations for statistical inference - Confidence intervals",
+        "06_confidence_intervals",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::06_confidence_intervals::1",
+      "collection_id": "oilabs-stata::06_confidence_intervals",
+      "lab_slug": "06_confidence_intervals",
+      "source_file": "06_confidence_intervals/confidence_intervals_stata.Rmd",
+      "question_number": 1,
+      "title": "Foundations for statistical inference - Confidence intervals",
+      "prompt_text": "What does \"95% confidence\" mean? In this case we have the rare luxury of knowing the true population mean since we have data on the entire population. Let's calculate this value so that we can determine if our confidence intervals actually capture it. Remember to restore the original data before using the summarize command.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "Foundations for statistical inference - Confidence intervals",
+        "06_confidence_intervals",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::06_confidence_intervals::1",
+      "collection_id": "oilabs-stata::06_confidence_intervals",
+      "lab_slug": "06_confidence_intervals",
+      "source_file": "06_confidence_intervals/confidence_intervals_stata.Rmd",
+      "question_number": 1,
+      "title": "Foundations for statistical inference - Confidence intervals",
+      "prompt_text": "Does your confidence interval capture the true average size of houses in Ames? If you are working on this lab in a classroom, does your neighbor's interval capture this value?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "Foundations for statistical inference - Confidence intervals",
+        "06_confidence_intervals",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::06_confidence_intervals::1",
+      "collection_id": "oilabs-stata::06_confidence_intervals",
+      "lab_slug": "06_confidence_intervals",
+      "source_file": "06_confidence_intervals/confidence_intervals_stata.Rmd",
+      "question_number": 1,
+      "title": "Foundations for statistical inference - Confidence intervals",
+      "prompt_text": "Each student should have gotten a slightly different confidence interval. What proportion of those intervals would you expect to capture the true population mean? Why? Using Stata, we're going to collect many samples to learn more about how sample means and confidence intervals vary from one sample to another. First, let's introduce the Stata function mean, which gives the sample mean, standard error, and 95 % confidence interval for the population mean. Here is the rough outline: - Obtain a random sample of 60. - Calculate the sample's mean and standard deviation - Repeat these steps 50 times and save the dataset as confint.dta - Use these means and standard deviations to calculate the lower and upper bounds of the confidence intervals. We can accomplish this using the bootstrap function that we introduced in lab 5 that covered sampling distributions. First, the bootstrap command creates a new dataset, confint.dta that saves the mean and standard deviation from each of 50 samples of size 60. Then, using this dataset of all the means and standard deviations, we compute the standard error as $s / sqrt{n}$. Last, we compute the lower and upper bounds using $ bar{x} pm 1.96 times text{SE}$ Open up the Data Editor to view the first five intervals. Next we'll create a plot similar to Figure 4.8 on page 175 of OpenIntro Statistics, 3rd Edition. The first step will be to create a new variable capturemu that indicates whether the interval does or does not capture the true population mean. Note that capturing this value would mean the lower bound of the confidence interval is below the value and upper bound of the confidence interval is above the value. You'll notice we created the new variable, capturemu in two steps. First, we set capturemu to \"no\" for all observations. Then, we set capturemu = \"yes\" for observations where the lower bound was less than the population mean and the upper bound was greater than the population mean, or observations where the interval contains the population mean. Then, we can plot the mean and 1.96 times the standard error using the serrbar command. Note that we first must create an \"id\" variable to indicate the different samples and different confidence intervals. The \"id\" variable will be on the x-axis in our final plot.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "Foundations for statistical inference - Confidence intervals",
+        "06_confidence_intervals",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::06_confidence_intervals::1",
+      "collection_id": "oilabs-stata::06_confidence_intervals",
+      "lab_slug": "06_confidence_intervals",
+      "source_file": "06_confidence_intervals/confidence_intervals_stata.Rmd",
+      "question_number": 1,
+      "title": "Foundations for statistical inference - Confidence intervals",
+      "prompt_text": "What proportion of your confidence intervals include the true population mean? Is this proportion exactly equal to the confidence level? If not, explain why. Hint: You may wish to answer this question using the command tabulate to explore the variable capturemu. * ## More Practice",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "Foundations for statistical inference - Confidence intervals",
+        "06_confidence_intervals",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::06_confidence_intervals::1",
+      "collection_id": "oilabs-stata::06_confidence_intervals",
+      "lab_slug": "06_confidence_intervals",
+      "source_file": "06_confidence_intervals/confidence_intervals_stata.Rmd",
+      "question_number": 1,
+      "title": "Foundations for statistical inference - Confidence intervals",
+      "prompt_text": "Pick a confidence level of your choosing, provided it is not 95%. What is the appropriate critical value?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "Foundations for statistical inference - Confidence intervals",
+        "06_confidence_intervals",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::06_confidence_intervals::1",
+      "collection_id": "oilabs-stata::06_confidence_intervals",
+      "lab_slug": "06_confidence_intervals",
+      "source_file": "06_confidence_intervals/confidence_intervals_stata.Rmd",
+      "question_number": 1,
+      "title": "Foundations for statistical inference - Confidence intervals",
+      "prompt_text": "Calculate 50 confidence intervals of area at the confidence level you chose in the previous question using samples of size 60. Plot all intervals on one plot, and calculate the proportion of intervals that include the true population mean. How does this percentage compare to the confidence level selected for the intervals? div id=\"license\" This is a product of OpenIntro that is released under a Creative Commons Attribution-ShareAlike 3.0 Unported. This lab was adapted for Stata by Jenna R Krall and written for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel. /div",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "Foundations for statistical inference - Confidence intervals",
+        "06_confidence_intervals",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::07_inf_for_numerical_data::1",
+      "collection_id": "oilabs-stata::07_inf_for_numerical_data",
+      "lab_slug": "07_inf_for_numerical_data",
+      "source_file": "07_inf_for_numerical_data/inf_for_numerical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "Inference for numerical data",
+      "prompt_text": "How many cases are there in our sample? Remember that you can answer this question by viewing the data in the Data Editor or by looking at the bottom right in the Properties window. ## Exploratory data analysis We will first start with analyzing the weight gained by mothers throughout the pregnancy: gained. Using visualization and summary statistics, describe the distribution of weight gained by mothers during pregnancy. The summarize function can be useful.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "Inference for numerical data",
+        "07_inf_for_numerical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::07_inf_for_numerical_data::1",
+      "collection_id": "oilabs-stata::07_inf_for_numerical_data",
+      "lab_slug": "07_inf_for_numerical_data",
+      "source_file": "07_inf_for_numerical_data/inf_for_numerical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "Inference for numerical data",
+      "prompt_text": "How many mothers are we missing weight gain data from? Hint: The codebook command is useful for finding missing values. Next, consider the possible relationship between a mother's smoking habit and the weight of her baby. Plotting the data is a useful first step because it helps us quickly visualize trends, identify strong associations, and develop research questions.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "Inference for numerical data",
+        "07_inf_for_numerical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::07_inf_for_numerical_data::2",
+      "collection_id": "oilabs-stata::07_inf_for_numerical_data",
+      "lab_slug": "07_inf_for_numerical_data",
+      "source_file": "07_inf_for_numerical_data/inf_for_numerical_data_stata.Rmd",
+      "question_number": 2,
+      "title": "Inference for numerical data",
+      "prompt_text": "Make a side-by-side boxplot of habit and weight. What does the plot highlight about the relationship between these two variables? The box plots show how the medians of the two distributions compare, but we can also compare the means of the distributions using the following to first sort the data by the habit variable, and then calculate the mean weight separately for these groups using the summarize function. There is an observed difference, but is this difference statistically significant? In order to answer this question we will conduct a hypothesis test. ## Inference",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "Inference for numerical data",
+        "07_inf_for_numerical_data",
+        "question 2"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::07_inf_for_numerical_data::3",
+      "collection_id": "oilabs-stata::07_inf_for_numerical_data",
+      "lab_slug": "07_inf_for_numerical_data",
+      "source_file": "07_inf_for_numerical_data/inf_for_numerical_data_stata.Rmd",
+      "question_number": 3,
+      "title": "Inference for numerical data",
+      "prompt_text": "Are all conditions necessary for inference satisfied? Comment on each. You can compute the group sizes with the summarize command above.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "Inference for numerical data",
+        "07_inf_for_numerical_data",
+        "question 3"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::07_inf_for_numerical_data::4",
+      "collection_id": "oilabs-stata::07_inf_for_numerical_data",
+      "lab_slug": "07_inf_for_numerical_data",
+      "source_file": "07_inf_for_numerical_data/inf_for_numerical_data_stata.Rmd",
+      "question_number": 4,
+      "title": "Inference for numerical data",
+      "prompt_text": "Write the hypotheses for testing if the average weights of babies born to smoking and non-smoking mothers are different.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "Inference for numerical data",
+        "07_inf_for_numerical_data",
+        "question 4"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::07_inf_for_numerical_data::5",
+      "collection_id": "oilabs-stata::07_inf_for_numerical_data",
+      "lab_slug": "07_inf_for_numerical_data",
+      "source_file": "07_inf_for_numerical_data/inf_for_numerical_data_stata.Rmd",
+      "question_number": 5,
+      "title": "Inference for numerical data",
+      "prompt_text": "Construct and record a confidence interval for the difference between the weights of babies born to nonsmoking and smoking mothers, and interpret this interval in context of the data. Note that by default you'll get a 95% confidence interval. If you want to change the confidence level, add the option (level(X)) where X is a value between 0 and 100. By default the function reports an interval for the difference diff specified as ($ mu_{nonsmoker} - mu_{smoker}$) . We can change this order by creating a new indicator variable, nonsmoker that is 0 for smokers and 1 for non-smokers. Then, we can use ttest with the new indicator variable. * ## More Practice",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "Inference for numerical data",
+        "07_inf_for_numerical_data",
+        "question 5"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::07_inf_for_numerical_data::6",
+      "collection_id": "oilabs-stata::07_inf_for_numerical_data",
+      "lab_slug": "07_inf_for_numerical_data",
+      "source_file": "07_inf_for_numerical_data/inf_for_numerical_data_stata.Rmd",
+      "question_number": 6,
+      "title": "Inference for numerical data",
+      "prompt_text": "Calculate a 95% confidence interval for the average length of pregnancies (weeks) and interpret it in context. Hint: Try using the function mean.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "Inference for numerical data",
+        "07_inf_for_numerical_data",
+        "question 6"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::07_inf_for_numerical_data::7",
+      "collection_id": "oilabs-stata::07_inf_for_numerical_data",
+      "lab_slug": "07_inf_for_numerical_data",
+      "source_file": "07_inf_for_numerical_data/inf_for_numerical_data_stata.Rmd",
+      "question_number": 7,
+      "title": "Inference for numerical data",
+      "prompt_text": "Calculate a new confidence interval for the same parameter at the 90% confidence level. You can change the confidence level using the same level option discussed above. Comment on the width of this interval versus the one obtained in the previous exercise.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "Inference for numerical data",
+        "07_inf_for_numerical_data",
+        "question 7"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::07_inf_for_numerical_data::8",
+      "collection_id": "oilabs-stata::07_inf_for_numerical_data",
+      "lab_slug": "07_inf_for_numerical_data",
+      "source_file": "07_inf_for_numerical_data/inf_for_numerical_data_stata.Rmd",
+      "question_number": 8,
+      "title": "Inference for numerical data",
+      "prompt_text": "Conduct a hypothesis test evaluating whether the average weight gained by younger mothers is different than the average weight gained by mature mothers.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "Inference for numerical data",
+        "07_inf_for_numerical_data",
+        "question 8"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::07_inf_for_numerical_data::9",
+      "collection_id": "oilabs-stata::07_inf_for_numerical_data",
+      "lab_slug": "07_inf_for_numerical_data",
+      "source_file": "07_inf_for_numerical_data/inf_for_numerical_data_stata.Rmd",
+      "question_number": 9,
+      "title": "Inference for numerical data",
+      "prompt_text": "Now, a non-inference task: Determine the age cutoff for younger and mature mothers. Use a method of your choice, and explain how your method works.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "Inference for numerical data",
+        "07_inf_for_numerical_data",
+        "question 9"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::07_inf_for_numerical_data::10",
+      "collection_id": "oilabs-stata::07_inf_for_numerical_data",
+      "lab_slug": "07_inf_for_numerical_data",
+      "source_file": "07_inf_for_numerical_data/inf_for_numerical_data_stata.Rmd",
+      "question_number": 10,
+      "title": "Inference for numerical data",
+      "prompt_text": "Pick a pair of variables: one numerical (response) and one categorical (explanatory). Come up with a research question evaluating the relationship between these variables. Formulate the question in a way that it can be answered using a hypothesis test and/or a confidence interval. Answer your question using Stata, report the statistical results, and also provide an explanation in plain language. Be sure to check all assumptions, state your $ alpha$ level, and conclude in context. div id=\"license\" This is a product of OpenIntro that is released under a Creative Commons Attribution-ShareAlike 3.0 Unported. This lab was adapted for Stata by Jenna R Krall and OpenIntro by Mine &Ccedil;etinkaya-Rundel from a lab written by the faculty and TAs of UCLA Statistics. /div",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "Inference for numerical data",
+        "07_inf_for_numerical_data",
+        "question 10"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "In the first paragraph, several key findings are reported. Do these percentages appear to be sample statistics (derived from the data sample) or population parameters? Explain your reasoning.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "The title of the report is \"Global Index of Religiosity and Atheism\". To generalize the report's findings to the global human population, what must we assume about the sampling method? Does that seem like a reasonable assumption? ### The data Turn your attention to Table 6 (pages 15 and 16), which reports the sample size and response percentages for all 57 countries. While this is a useful format to summarize the data, we will base our analysis on the original data set of individual responses to the survey. Load the atheism.dta data set into Stata.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "What does each row of Table 6 correspond to? What does each row of the atheism data correspond to? To investigate the link between these two ways of organizing this data, take a look at the estimated proportion of atheists in the United States. Towards the bottom of Table 6, we see that this is 5%. We should be able to come to the same number using the atheism data.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "Using the command below, keep only the rows in atheism associated with respondents to the 2012 survey from the United States. Next, calculate the proportion of atheist responses. Does it agree with the percentage in Table 6? If not, why? Note: Recall the preserve command from lab 5. ## Inference on proportions As was hinted earlier, Table 6 provides statistics, that is, calculations made from the sample of 51,927 people. What we'd like, though, is insight into the population parameters. You answer the question, \"What proportion of people in your sample reported being atheists?\" with a statistic; while the question \"What proportion of people on earth would report being atheists\" is answered with an estimate of the parameter. The inferential tools for estimating population proportion are analogous to those used for means in the last chapter: the confidence interval and the hypothesis test.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "Write out the conditions for inference to construct a 95% confidence interval for the proportion of atheists in the United States in 2012. Are you confident all conditions are met? If the conditions for inference are reasonable, we can either calculate the standard error and construct the interval by hand, or use the proportion function in Stata. Stata gives us the interval estimates for both atheist and nonatheist groups. Although formal confidence intervals and hypothesis tests don't show up in the WIN-Gallup International report, suggestions of inference appear at the bottom of page 7: \"In general, the error margin for surveys of this kind is $ pm$ 3--5% at 95% confidence\".",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "Based on the Stata output, what is the margin of error for the estimate of the proportion of the proportion of atheists in US in 2012?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "Using the proportion function, calculate confidence intervals for the proportion of atheists in 2012 in two other countries of your choice, and report the associated margins of error. Be sure to note whether the conditions for inference are met, and interpet the interval in context of the data. ## How does the proportion affect the margin of error? Imagine you've set out to survey 1000 people on two questions: are you female? and are you left-handed? Since both of these sample proportions were calculated from the same sample size, they should have the same margin of error, right? Wrong! While the margin of error does change with sample size, it is also affected by the proportion. Think back to the formula for the standard error: $SE = sqrt{p(1-p)/n}$. This is then used in the formula for the margin of error for a 95% confidence interval: $$ ME = 1.96 times SE = 1.96 times sqrt{p(1-p)/n} ,. $$ Since the population proportion $p$ is in this $ME$ formula, it should make sense that the margin of error is in some way dependent on the population proportion. We can visualize this relationship by creating a plot of $ME$ vs. $p$. Since sample size is irrelevant to this discussion, let's just set it to some value ($n = 1000$) and use this value in the following calculations. The first step is to make a variable p that is a sequence from 0 to 1 with each number incremented by 0.01. We can then create a variable of the margin of error (me) associated with each of these values of p using the familiar approximate formula ($ME = 2 times SE$). Lastly, we plot the two variables against each other to reveal their relationship.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "Describe the relationship between p and me. Include the margin of error vs. population proportion plot you constructed in your answer. For a given sample size, for which value of p is margin of error maximized? ## Success-failure condition We have emphasized that you must always check conditions before making inference. For inference on proportions, the sample proportion can be assumed to be nearly normal if it is based upon a random sample of independent observations and if both $np geq 10$ and $n(1 - p) geq 10$. This rule of thumb is easy enough to follow, but it makes one wonder: what's so special about the number 10? The short answer is: nothing. You could argue that we would be fine with 9 or that we really should be using 11. What is the \"best\" value for such a rule of thumb is, at least to some degree, arbitrary. However, when $np$ and $n(1-p)$ reaches 10 the sampling distribution is sufficiently normal to use confidence intervals and hypothesis tests that are based on that approximation. We can investigate the interplay between $n$ and $p$ and the shape of the sampling distribution by using simulations. Play around with the following app to investigate how the shape, center, and spread of the distribution of $ hat{p}$ changes as $n$ and $p$ changes.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "Describe the sampling distribution of sample proportions at $n = 300$ and $p = 0.1$. Be sure to note the center, spread, and shape.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "Keep $n$ constant and change $p$. How does the shape, center, and spread of the sampling distribution vary as $p$ changes. You might want to adjust min and max for the $x$-axis for a better view of the distribution.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "Now also change $n$. How does $n$ appear to affect the distribution of $ hat{p}$?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "If you refer to Table 6, you'll find that Australia has a sample proportion of 0.1 in a sample size of 1040, and that Ecuador has a sample proportion of 0.02 on 400 subjects. Let's suppose for this exercise that these point estimates are actually the truth. Construct their sampling distributions by using these values as inputs in the app. Do you think it is sensible to proceed with inference and report margin of errors, as the report does? * ## More Practice The question of atheism was asked by WIN-Gallup International in a similar survey that was conducted in 2005. (We assume here that sample sizes have remained the same.) Table 4 on page 13 of the report summarizes survey results from 2005 and 2012 for 39 countries. For some of the exercises below we will conduct inference comparing two proportions. In such cases we have a response variable that is categorical, and an explanatory variable that is also categorical, and we are comparing the proportions of success of the response variable across the levels of the explanatory variable. This means, in the Stata function we need to specify both variables, response as y and explanatory as x. Additionally, we will use a new function, prtest: The function prtest requires that the response variable take on the value \"1\" for a success and \"0\" for a failure. Using Stata, generate a new variable that is 1 for atheists and 0 for non-atheists. Hint: You may want to first use codebook to explore the response variable. While the variable in the Data Editor looks like it takes on the values \"atheist\" and \"nonatheist\", those are only the labels. What are the values of the variable response?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "Is there convincing evidence that Spain has seen a change in its atheism index between 2005 and 2012? As always, write out the hypotheses for any tests you conduct and outline the status of the conditions for inference. If you find a significant difference, also quantify this difference with a confidence interval. Hint: First subset your data for respondents from Spain.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "Is there convincing evidence that the US has seen a change in its atheism index between 2005 and 2012? As always, write out the hypotheses for any tests you conduct and outline the status of the conditions for inference. If you find a significant difference, also quantify this difference with a confidence interval.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "If in fact there has been no change in the atheism index in the countries listed in Table 4, in how many of those countries would you expect to detect a change (at a significance level of 0.05) simply by chance? Hint: Review the definition of the Type 1 error.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::08_inf_for_categorical_data::1",
+      "collection_id": "oilabs-stata::08_inf_for_categorical_data",
+      "lab_slug": "08_inf_for_categorical_data",
+      "source_file": "08_inf_for_categorical_data/inf_for_categorical_data_stata.Rmd",
+      "question_number": 1,
+      "title": "inf_for_categorical_data_stata",
+      "prompt_text": "Suppose you're hired by the local government to estimate the proportion of residents that attend a religious service on a weekly basis. According to the guidelines, the estimate must have a margin of error no greater than 1% with 95% confidence. You have no idea what to expect for $p$. How many people would you have to sample to ensure that you are within the guidelines? Hint: Refer to your plot of the relationship between $p$ and margin of error. This question does not require using the dataset. div id=\"license\" This is a product of OpenIntro that is released under a Creative Commons Attribution-ShareAlike 3.0 Unported. This lab was adapted for Stata by Jenna R Krall and written for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel. /div",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "inf_for_categorical_data_stata",
+        "08_inf_for_categorical_data",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::09_simple_regression::1",
+      "collection_id": "oilabs-stata::09_simple_regression",
+      "lab_slug": "09_simple_regression",
+      "source_file": "09_simple_regression/simple_regression_stata.Rmd",
+      "question_number": 1,
+      "title": "simple_regression_stata",
+      "prompt_text": "What type of plot would you use to display the relationship between runs and one of the other numerical variables? Plot this relationship using the variable at_bats as the predictor. Does the relationship look linear? If you knew a team's at_bats, would you be comfortable using a linear model to predict the number of runs? If the relationship looks linear, we can quantify the strength of the relationship with the correlation coefficient. ## Sum of squared residuals Think back to the way that we described the distribution of a single variable. Recall that we discussed characteristics such as center, spread, and shape. It's also useful to be able to describe the relationship of two numerical variables, such as runs and at_bats above.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "simple_regression_stata",
+        "09_simple_regression",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::09_simple_regression::2",
+      "collection_id": "oilabs-stata::09_simple_regression",
+      "lab_slug": "09_simple_regression",
+      "source_file": "09_simple_regression/simple_regression_stata.Rmd",
+      "question_number": 2,
+      "title": "simple_regression_stata",
+      "prompt_text": "Looking at your plot from the previous exercise, describe the relationship between these two variables. Make sure to discuss the form, direction, and strength of the relationship as well as any unusual observations. Just as we used the mean and standard deviation to summarize a single variable, we can summarize the relationship between these two variables by finding the line that best follows their association. Look at the following plots. Which of the plots do you think does the best job of going through the cloud of points? Plot A ![](more/plot_ss_v1.png) Plot B ![](more/plot_ss_v2.png) Plot C ![](more/plot_ss_v3.png) In each plot, the line specified is shown in black and the residuals in blue. Note that there are 30 residuals, one for each of the 30 observations. Recall that the residuals are the difference between the observed values and the values predicted by the line: [ e_i = y_i - hat{y}_i ] The most common way to do linear regression is to select the line that minimizes the sum of squared residuals. To visualize the squared residuals, look at the plot below: ![](more/plot_ss_v1_ss.png)",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "simple_regression_stata",
+        "09_simple_regression",
+        "question 2"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::09_simple_regression::3",
+      "collection_id": "oilabs-stata::09_simple_regression",
+      "lab_slug": "09_simple_regression",
+      "source_file": "09_simple_regression/simple_regression_stata.Rmd",
+      "question_number": 3,
+      "title": "simple_regression_stata",
+      "prompt_text": "Look at the three plots A-C above. Which do you think will give the smallest sum of squared residuals? ## The linear model It is rather cumbersome to try to get the correct least squares line, i.e. the line that minimizes the sum of squared residuals, through trial and error. Instead we can use the regress function in Stata to fit the linear model (a.k.a. regression line). The first argument in the function regress is the response variable and the second is the predictor variable. The output of regress contains all of the information we need about the linear model that was just fit. Let's consider this output piece by piece. The box in the top left shows the analysis of variance table with the sum of squares. We will focus on the second table, the \"Coefficients\" table. Its first column, labelled \"Coef.\" displays the linear model's coefficient of at_bats and the y-intercept (_cons). With this table, we can write down the least squares regression line for the linear model: [ hat{y} = -2789.243 + 0.631 times at _bats ] One last piece of information we will discuss from the summary output is the R-squared, or more simply, $R^2$. The $R^2$ is shown in the table on the right and its value represents the proportion of variability in the response variable that is explained by the explanatory variable. For this model, 37.3% of the variability in runs is explained by at-bats.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "simple_regression_stata",
+        "09_simple_regression",
+        "question 3"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::09_simple_regression::4",
+      "collection_id": "oilabs-stata::09_simple_regression",
+      "lab_slug": "09_simple_regression",
+      "source_file": "09_simple_regression/simple_regression_stata.Rmd",
+      "question_number": 4,
+      "title": "simple_regression_stata",
+      "prompt_text": "Fit a new model that uses homeruns to predict runs. Using the estimates from the Stata output, write the equation of the regression line. What does the slope tell us in the context of the relationship between success of a team and its home runs? ## Prediction and prediction errors Let's create a scatterplot with the least squares line for the regression of runs on at_bats laid on top. Notice that the legend now includes information about the fitted values from the linear regression model, shown as a red line. The blue points still represent the observed runs. This line can be used to predict $y$ at any value of $x$. When predictions are made for values of $x$ that are beyond the range of the observed data, it is referred to as extrapolation and is not usually recommended. However, predictions made within the range of the data are more reliable. They're also used to compute the residuals.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "simple_regression_stata",
+        "09_simple_regression",
+        "question 4"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::09_simple_regression::5",
+      "collection_id": "oilabs-stata::09_simple_regression",
+      "lab_slug": "09_simple_regression",
+      "source_file": "09_simple_regression/simple_regression_stata.Rmd",
+      "question_number": 5,
+      "title": "simple_regression_stata",
+      "prompt_text": "If a team manager saw the least squares regression line and not the actual data, how many runs would he or she predict for a team with 5,579 at-bats? Is this an overestimate or an underestimate, and by how much? In other words, what is the residual for this prediction? ## Model diagnostics To assess whether the linear model is reliable, we need to check for (1) linearity, (2) nearly normal residuals, and (3) constant variability. Linearity: You already checked if the relationship between runs and at-bats is linear using a scatterplot. We should also verify this condition with a plot of the residuals vs. fitted (predicted) values. After running the regression model in the first line, we use the command rvfplot to plot the residuals against the fitted values. The option yline(0) adds a horizontal dashed line at $y = 0$ (to help us check whether residuals are distributed around 0).",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "simple_regression_stata",
+        "09_simple_regression",
+        "question 5"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::09_simple_regression::6",
+      "collection_id": "oilabs-stata::09_simple_regression",
+      "lab_slug": "09_simple_regression",
+      "source_file": "09_simple_regression/simple_regression_stata.Rmd",
+      "question_number": 6,
+      "title": "simple_regression_stata",
+      "prompt_text": "Is there any apparent pattern in the residuals plot? What does this indicate about the linearity of the relationship between runs and at-bats? /br Nearly normal residuals: To check this condition, we can look at a histogram or a normal probability plot of the residuals. First, we need to compute the residuals. We can do this with the command predict following the regression of runs on at_bats: Now, we have a new variable runresid which are the residuals. We can use this new variable to display a histogram of the residuals: or a normal probability plot of the residuals.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "simple_regression_stata",
+        "09_simple_regression",
+        "question 6"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::09_simple_regression::7",
+      "collection_id": "oilabs-stata::09_simple_regression",
+      "lab_slug": "09_simple_regression",
+      "source_file": "09_simple_regression/simple_regression_stata.Rmd",
+      "question_number": 7,
+      "title": "simple_regression_stata",
+      "prompt_text": "Based on the histogram and the normal probability plot, does the nearly normal residuals condition appear to be met? /br Constant variability:",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "simple_regression_stata",
+        "09_simple_regression",
+        "question 7"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::09_simple_regression::8",
+      "collection_id": "oilabs-stata::09_simple_regression",
+      "lab_slug": "09_simple_regression",
+      "source_file": "09_simple_regression/simple_regression_stata.Rmd",
+      "question_number": 8,
+      "title": "simple_regression_stata",
+      "prompt_text": "Based on the residuals vs. fitted plot, does the constant variability condition appear to be met? * ## More Practice",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "simple_regression_stata",
+        "09_simple_regression",
+        "question 8"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::09_simple_regression::9",
+      "collection_id": "oilabs-stata::09_simple_regression",
+      "lab_slug": "09_simple_regression",
+      "source_file": "09_simple_regression/simple_regression_stata.Rmd",
+      "question_number": 9,
+      "title": "simple_regression_stata",
+      "prompt_text": "Choose another one of the seven traditional variables from mlb11 besides at_bats that you think might be a good predictor of runs. Produce a scatterplot of the two variables and fit a linear model. At a glance, does there seem to be a linear relationship?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "simple_regression_stata",
+        "09_simple_regression",
+        "question 9"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::09_simple_regression::10",
+      "collection_id": "oilabs-stata::09_simple_regression",
+      "lab_slug": "09_simple_regression",
+      "source_file": "09_simple_regression/simple_regression_stata.Rmd",
+      "question_number": 10,
+      "title": "simple_regression_stata",
+      "prompt_text": "How does this relationship compare to the relationship between runs and at_bats? Use the $R^2$ values from the two model summaries to compare. Does your variable seem to predict runs better than at_bats? How can you tell?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "simple_regression_stata",
+        "09_simple_regression",
+        "question 10"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::09_simple_regression::11",
+      "collection_id": "oilabs-stata::09_simple_regression",
+      "lab_slug": "09_simple_regression",
+      "source_file": "09_simple_regression/simple_regression_stata.Rmd",
+      "question_number": 11,
+      "title": "simple_regression_stata",
+      "prompt_text": "Now that you can summarize the linear relationship between two variables, investigate the relationships between runs and each of the other five traditional variables. Which variable best predicts runs? Support your conclusion using the graphical and numerical methods we've discussed (for the sake of conciseness, only include output for the best variable, not all five).",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "simple_regression_stata",
+        "09_simple_regression",
+        "question 11"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::09_simple_regression::12",
+      "collection_id": "oilabs-stata::09_simple_regression",
+      "lab_slug": "09_simple_regression",
+      "source_file": "09_simple_regression/simple_regression_stata.Rmd",
+      "question_number": 12,
+      "title": "simple_regression_stata",
+      "prompt_text": "Now examine the three newer variables. These are the statistics used by the central character in Moneyball to predict a team's success. In general, are they more or less effective at predicting runs that the old variables? Explain using appropriate graphical and numerical evidence. Of all ten variables we've analyzed, which seems to be the best predictor of runs? Using the limited (or not so limited) information you know about these baseball statistics, does your result make sense?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "simple_regression_stata",
+        "09_simple_regression",
+        "question 12"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::09_simple_regression::13",
+      "collection_id": "oilabs-stata::09_simple_regression",
+      "lab_slug": "09_simple_regression",
+      "source_file": "09_simple_regression/simple_regression_stata.Rmd",
+      "question_number": 13,
+      "title": "simple_regression_stata",
+      "prompt_text": "Check the model diagnostics for the regression model with the variable you decided was the best predictor for runs. div id=\"license\" This is a product of OpenIntro that is released under a Creative Commons Attribution-ShareAlike 3.0 Unported. This lab was adapted for Stata by Jenna R Krall and adapted for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel from a lab written by the faculty and TAs of UCLA Statistics. /div",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "simple_regression_stata",
+        "09_simple_regression",
+        "question 13"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::1",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 1,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Is this an observational study or an experiment? The original research question posed in the paper is whether beauty leads directly to the differences in course evaluations. Given the study design, is it possible to answer this question as it is phrased? If not, rephrase the question.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 1"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::2",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 2,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Describe the distribution of score. Is the distribution skewed? What does that tell you about how students rate courses? Is this what you expected to see? Why, or why not?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 2"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::3",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 3,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Excluding score, select two other variables and describe their relationship with each other using an appropriate visualization. ## Simple linear regression The fundamental phenomenon suggested by the study is that better looking teachers are evaluated more favorably. Let's create a scatterplot to see if this appears to be the case. We need the variables score and average beauty rating of the professor, bty_avg. Before we draw conclusions about the trend, compare the number of observations in the data frame with the approximate number of points on the scatterplot. Is anything awry?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 3"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::4",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 4,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Replot the scatterplot, but this time use the option jitter(5). What was misleading about the initial scatterplot?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 4"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::5",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 5,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Let's see if the apparent trend in the plot is something more than natural variation. Fit a linear model to predict average professor score (score) by average beauty rating. Write out the equation for the linear model and interpret the slope. Is average beauty score a statistically significant predictor? Does it appear to be a practically significant predictor? Add the line of the best fit model to your plot using the following: The red line is the model, indicated in the legend as \"Fitted values\".",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 5"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::6",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 6,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Use residual plots to evaluate whether the conditions of least squares regression are reasonable. Provide plots and comments for each one (see the Simple Regression Lab for a reminder of how to make these). ## Multiple linear regression The data set contains several variables on the beauty score of the professor: individual ratings from each of the six students who were asked to score the physical appearance of the professors and the average of these six scores. Let's take a look at the relationship between one of these scores and the average beauty score. As expected the relationship is quite strong---after all, the average score is calculated using the individual scores. We can actually look at the relationships between all beauty variables (columns 13 through 19) using the following command: These variables are collinear (correlated), and adding more than one of these variables to the model would not add much value to the model. In this application and with these highly-correlated predictors, it is reasonable to use the average beauty score as the single representative of these variables. In order to see if beauty is still a significant predictor of professor score after we've accounted for the gender of the professor, we can add the gender term into the model. Note that we use i.gender because gender is a categorical variable.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 6"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::7",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 7,
+      "title": "multiple_regression_stata",
+      "prompt_text": "P-values and parameter estimates should only be trusted if the conditions for the regression are reasonable. Verify that the conditions for this model are reasonable using diagnostic plots.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 7"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::8",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 8,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Is bty_avg still a significant predictor of score? Has the addition of gender to the model changed the parameter estimate for bty_avg? Note that the row in the regression output for gender is now called gender male. You'll see this name change whenever you introduce a categorical variable. The reason is that Stata recodes gender from having the values of female and male to being an indicator variable called gender male that takes a value of $0$ for females and a value of $1$ for males (Such variables are often referred to as \"dummy\" variables.). As a result, for females, the parameter estimate is multiplied by zero, leaving the intercept and slope form familiar from simple regression. [ begin{aligned} widehat{score} &= hat{ beta}_0 + hat{ beta}_1 times bty _avg + hat{ beta}_2 times (0) &= hat{ beta}_0 + hat{ beta}_1 times bty _avg end{aligned} ]",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 8"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::9",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 9,
+      "title": "multiple_regression_stata",
+      "prompt_text": "What is the equation of the line corresponding to males? (Hint: For males, the parameter estimate is multiplied by 1.) For two professors who received the same beauty rating, which gender tends to have the higher course evaluation score? The decision to call the indicator variable gender male instead ofgender female has no deeper meaning. Stata simply codes the category that comes first alphabetically as a $0$. (You can change the reference level of a categorical variable, which is the level that is coded as a 0, using ibX.gender in place of i.gender in the model, where X is the desired reference level. In the case of gender, there are two categories: (1) male and (2) female. Therefore, to change the reference group to females,",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 9"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::10",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 10,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Create a new model with gender removed and rank added in. How does Stata appear to handle categorical variables that have more than two levels? Note that the rank variable has three levels: teaching, tenure track, tenured. The interpretation of the coefficients in multiple regression is slightly different from that of simple regression. The estimate for bty_avg reflects how much higher a group of professors is expected to score if they have a beauty rating that is one point higher while holding all other variables constant. In this case, that translates into considering only professors of the same rank with bty_avg scores that are one point apart. ## The search for the best model We will start with a full model that predicts professor score based on rank, ethnicity, gender, language of the university where they got their degree, age, proportion of students that filled out evaluations, class size, course level, number of professors teaching the course, number of credits, average beauty rating, outfit, and picture color.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 10"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::11",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 11,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Which variable would you expect to have the highest p-value in this model? Why? Hint: Think about which variable would you expect to not have any association with the professor score. Let's run the model:",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 11"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::12",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 12,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Check your suspicions from the previous exercise. Include the model output in your response.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 12"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::13",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 13,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Interpret the coefficient associated with the ethnicity variable.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 13"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::14",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 14,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Drop the variable with the highest p-value and re-fit the model. Did the coefficients and significance of the other explanatory variables change? (One of the things that makes multiple regression interesting is that coefficient estimates depend on the other variables that are included in the model.) If not, what does this say about whether or not the dropped variable was collinear with the other explanatory variables?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 14"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::15",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 15,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Using backward-selection and p-value as the selection criterion, determine the best model. You do not need to show all steps in your answer, just the output for the final model. Also, write out the linear model for predicting score based on the final model you settle on.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 15"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::16",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 16,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Verify that the conditions for this model are reasonable using diagnostic plots.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 16"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::17",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 17,
+      "title": "multiple_regression_stata",
+      "prompt_text": "The original paper describes how these data were gathered by taking a sample of professors from the University of Texas at Austin and including all courses that they have taught. Considering that each row represents a course, could this new information have an impact on any of the conditions of linear regression?",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 17"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::18",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 18,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Based on your final model, describe the characteristics of a professor and course at University of Texas at Austin that would be associated with a high evaluation score.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 18"
+      ]
+    },
+    {
+      "source_id": "oilabs-stata::10_multiple_regression::19",
+      "collection_id": "oilabs-stata::10_multiple_regression",
+      "lab_slug": "10_multiple_regression",
+      "source_file": "10_multiple_regression/multiple_regression_stata.Rmd",
+      "question_number": 19,
+      "title": "multiple_regression_stata",
+      "prompt_text": "Would you be comfortable generalizing your conclusions to apply to professors generally (at any university)? Why or why not? div id=\"license\" This is a product of OpenIntro that is released under a Creative Commons Attribution-ShareAlike 3.0 Unported. This lab was adapted for Stata by Jenna R Krall from a lab written by Mine &Ccedil;etinkaya-Rundel and Andrew Bray. /div",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "multiple_regression_stata",
+        "10_multiple_regression",
+        "question 19"
+      ]
+    }
+  ]
+}

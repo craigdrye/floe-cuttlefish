@@ -31,6 +31,54 @@ export type Misconception = {
   reframe: string
 }
 
+export type QuestionReviewStatus = 'playable' | 'recoverable' | 'quarantined'
+
+export type QuestionReviewFlag =
+  | 'missing-prompt'
+  | 'invalid-correct-answer'
+  | 'insufficient-answer-choices'
+  | 'placeholder-solution'
+  | 'placeholder-answer-choice'
+  | 'answer-leakage'
+  | 'missing-lesson'
+
+export type QuestionReview = {
+  status: QuestionReviewStatus
+  flags: QuestionReviewFlag[]
+  notes: string[]
+}
+
+export type QuestionReviewOverride = {
+  status?: QuestionReviewStatus
+  addFlags?: QuestionReviewFlag[]
+  removeFlags?: QuestionReviewFlag[]
+  addNotes?: string[]
+}
+
+export type QuestionIngestionStage = 'raw' | 'normalized' | 'reviewed' | 'mapped'
+
+export type QuestionSourceLicense =
+  | 'unknown'
+  | 'CC BY 4.0'
+  | 'CC BY-SA 3.0'
+  | 'CC BY-NC-SA 3.0'
+  | 'CC BY-NC-SA 4.0'
+  | 'CC BY-NC 3.0'
+  | 'MIT'
+  | 'platform-mixed'
+
+export type QuestionCollectionMeta = {
+  collectionId: string
+  collectionLabel: string
+  sourceName: string
+  sourceLicense: QuestionSourceLicense
+  sourceTrackId: string
+  sourceChapter?: string
+  ingestionStage: QuestionIngestionStage
+  candidateTrackIds: string[]
+  topicTags: string[]
+}
+
 export type Answer = {
   id: string
   label: string
@@ -56,6 +104,8 @@ export type Question = {
   solution: string
   lesson?: string
   xp: number
+  review?: QuestionReview
+  collection?: QuestionCollectionMeta
 }
 
 export type QuestionCatalog = Record<string, Question[]>

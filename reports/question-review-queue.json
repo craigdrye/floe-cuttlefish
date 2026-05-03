@@ -1,0 +1,1552 @@
+[
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "biology_2e",
+    "total": 0,
+    "playable": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "chemistry_2e",
+    "total": 0,
+    "playable": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "physics_2e",
+    "total": 0,
+    "playable": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "principles_economics_3e",
+    "total": 0,
+    "playable": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "psychology_2e",
+    "total": 0,
+    "playable": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "scienceEarlyYears",
+    "total": 0,
+    "playable": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "scienceYear1",
+    "total": 0,
+    "playable": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "scienceYear2",
+    "total": 0,
+    "playable": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "scienceYear3",
+    "total": 0,
+    "playable": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "scienceYear5",
+    "total": 0,
+    "playable": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "scienceYear6",
+    "total": 0,
+    "playable": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "us_history",
+    "total": 0,
+    "playable": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "ib_history",
+    "total": 1,
+    "playable": 1,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "mathematics_extensions",
+    "total": 2,
+    "playable": 2,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "alevelBiology",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "alevelChemistry",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "alevelComputerScience",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "alevelEconomics",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "alevelEnglish",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "alevelHistory",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "alevelMaths",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "alevelPhysics",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "amlCompliance",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "apBiology",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "apCalculus",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "apChemistry",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "apComputerScience",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "apEconomics",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "apEnglish",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "apHistory",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-fun",
+    "trackId": "chessTactics",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "clinicalResearch",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "consultingCases",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-fun",
+    "trackId": "creativeWriting",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "customsBroker",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "cybersecurity",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-fun",
+    "trackId": "detectiveLogic",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "financialModeling",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-fun",
+    "trackId": "gameDesign",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-college",
+    "trackId": "linearAlgebra",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "medical",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "medicalCodingCpc",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-fun",
+    "trackId": "mythologyMonsters",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "negotiation",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "peopleManagement",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "primary",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "productManagement",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "projectManagement",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "publicSpeaking",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "regulatory",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "salesFundamentals",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "series86",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "supplyChain",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "technicalSales",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "uxDesign",
+    "total": 4,
+    "playable": 4,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        4
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-prep",
+    "trackId": "ml",
+    "total": 10,
+    "playable": 10,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        10
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-prep",
+    "trackId": "research",
+    "total": 10,
+    "playable": 10,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        10
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-prep",
+    "trackId": "software",
+    "total": 10,
+    "playable": 10,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        10
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-prep",
+    "trackId": "uxResearch",
+    "total": 10,
+    "playable": 10,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        10
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-academic",
+    "trackId": "dataStructures",
+    "total": 14,
+    "playable": 14,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        14
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-academic",
+    "trackId": "internationalRelations",
+    "total": 14,
+    "playable": 14,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        14
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-academic",
+    "trackId": "marketing",
+    "total": 14,
+    "playable": 14,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        14
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "basic_html_and_html5",
+    "total": 28,
+    "playable": 28,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-academic",
+    "trackId": "macroeconomics",
+    "total": 34,
+    "playable": 34,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        34
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-academic",
+    "trackId": "microeconomics",
+    "total": 34,
+    "playable": 34,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        34
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-academic",
+    "trackId": "neuroscience",
+    "total": 34,
+    "playable": 34,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        34
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-academic",
+    "trackId": "organicChemistry",
+    "total": 34,
+    "playable": 34,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        34
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-academic",
+    "trackId": "philosophy",
+    "total": 34,
+    "playable": 34,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        34
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-academic",
+    "trackId": "researchMethods",
+    "total": 34,
+    "playable": 34,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        34
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-college",
+    "trackId": "apCalculusAB",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-college",
+    "trackId": "apCalculusBc",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-college",
+    "trackId": "apStatistics",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-college",
+    "trackId": "class11Math",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-college",
+    "trackId": "class12Math",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "col-3rd-grade-math",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "col-4th-grade-math",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "col-5th-grade-math",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "col-6th-grade-math",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-algebra-1-ny-next-gen",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-algebra-2",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-class-10-math",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-college",
+    "trackId": "col-class-11-math",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-college",
+    "trackId": "col-class-12-math",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-class-7-math",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-class-8-math",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-class-9-math",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-college",
+    "trackId": "col-college-algebra",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "col-eureka-math-3rd-8th-grade",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-eureka-math-algebra-i",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-eureka-math-algebra-ii",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "col-eureka-math-foundations-3rd-8th-grade",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-eureka-math-geometry",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-college",
+    "trackId": "col-eureka-math-precalculus",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-geometry",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "col-high-school-biology-ngss",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "col-high-school-physics-ngss",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-high-school-statistics",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-illustrative-mathematics-6th-8th-grade",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-precalculus",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-statistics-probability",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-math",
+    "trackId": "col-trigonometry",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "col-world-history-project-1750-to-the-present",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "col-world-history-project-origins-to-the-present",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "university-college",
+    "trackId": "collegeAlgebra",
+    "total": 50,
+    "playable": 50,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "apPhysics",
+    "total": 56,
+    "playable": 56,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        54
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "quant",
+    "total": 106,
+    "playable": 106,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "high-advanced",
+    "trackId": "basic_javascript",
+    "total": 113,
+    "playable": 113,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "career",
+    "trackId": "quantAdvanced",
+    "total": 137,
+    "playable": 137,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "col-class-1-math",
+    "total": 275,
+    "playable": 275,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "col-class-2-math",
+    "total": 373,
+    "playable": 373,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [
+      [
+        "missing-lesson",
+        50
+      ]
+    ],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "col-class-5-math",
+    "total": 374,
+    "playable": 374,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "col-class-4-math",
+    "total": 488,
+    "playable": 488,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "col-class-6-math",
+    "total": 926,
+    "playable": 926,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "col-class-3-math",
+    "total": 1379,
+    "playable": 1379,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "khanacademy",
+    "total": 2306,
+    "playable": 2306,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "ck12",
+    "total": 17694,
+    "playable": 17694,
+    "recoverable": 0,
+    "quarantined": 0,
+    "topFlags": [],
+    "sampleQuestions": []
+  }
+]

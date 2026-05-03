@@ -9,13 +9,91 @@ import {
 import { buildOpenStaxQuestionCatalog } from './openstax'
 import { buildFCCQuestionCatalog } from './fcc'
 import { buildWikibooksQuestionCatalog } from './wikibooks'
+import { openTriviaGeographyQuestions } from './openTriviaGeographyImported'
+import { openTriviaAnimalBiologyQuestions } from './openTriviaAnimalBiologyImported'
+import { openTriviaMolecularBiologyQuestions } from './openTriviaMolecularBiologyImported'
+import { openTriviaApBiologyScienceBatch2Questions } from './openTriviaApBiologyScienceBatch2Imported'
+import { apBiologyAnimalEcologyBatchQuestions } from './apBiologyAnimalEcologyBatch'
+import { openTriviaChemistryQuestions } from './openTriviaScienceMicroImported'
+import { openTriviaChemistryExtensionQuestions } from './openTriviaChemistryExtensionImported'
+import { openTriviaPhysicsQuestions } from './openTriviaEarthPhysicsMicroImported'
+import { openTriviaPhysicsExtensionQuestions } from './openTriviaPhysicsExtensionImported'
+import { openTriviaLiteratureQuestions } from './openTriviaLiteratureMicroImported'
+import { openTriviaLiteratureCanonQuestions } from './openTriviaLiteratureCanonImported'
+import { openTriviaLiteraryFormsShakespeareQuestions } from './openTriviaLiteraryFormsShakespeareImported'
+import { openTriviaLiteratureModernExtensionQuestions } from './openTriviaLiteratureModernExtensionImported'
+import { openTriviaLiteratureCanonicalOpeningsShakespeareQuestions } from './openTriviaLiteratureCanonicalOpeningsShakespeareImported'
+import { openTriviaLiteraturePoetsAuthorsQuestions } from './openTriviaLiteraturePoetsAuthorsImported'
+import { openTriviaLiteratureShakespeareModernistQuestions } from './openTriviaLiteratureShakespeareModernistImported'
+import { openTriviaLiteraturePoetryIdentityQuestions } from './openTriviaLiteraturePoetryIdentityImported'
+import { openTriviaLiteratureFinalIdentityQuestions } from './openTriviaLiteratureFinalIdentityImported'
+import { openTriviaApcsExtensionQuestions } from './openTriviaApcsExtensionImported'
+import { openTriviaHistoryQuestions } from './openTriviaHistoryMicroImported'
+import { openTriviaWorldHistoryExtensionQuestions } from './openTriviaWorldHistoryExtensionImported'
+import { openTriviaUsHistoryExtensionQuestions } from './openTriviaUsHistoryExtensionImported'
+import { openTriviaHistoryWwiiColdWarQuestions } from './openTriviaHistoryWwiiColdWarImported'
+import { openTriviaWorldHistoryFoundationsQuestions } from './openTriviaWorldHistoryFoundationsImported'
+import { openTriviaModernHistoryColdWarQuestions } from './openTriviaModernHistoryColdWarImported'
+import { openTriviaUsHistoryAnchorQuestions } from './openTriviaUsHistoryAnchorImported'
+import { openTriviaWorldHistoryAnchorQuestions } from './openTriviaWorldHistoryAnchorImported'
+import { openTriviaWorldHistoryFinalTwoQuestions } from './openTriviaWorldHistoryFinalTwoImported'
+import { openSatReadingWritingQuestions } from './openSatImported'
+import { openDsaFormalLanguagesQuestions } from './openDsaFormalLanguagesImported'
+import { openDsaAlgorithmQuestions } from './openDsaAlgorithmsImported'
+import { apBiologyExamBatchQuestions } from './apBiologyExamBatch'
+import { apComputerScienceExamBatchQuestions } from './apComputerScienceExamBatch'
+import { apEconomicsExamBatchQuestions } from './apEconomicsExamBatch'
+import { apEnglishExamBatchQuestions } from './apEnglishExamBatch'
+import { apHistoryExamBatchQuestions } from './apHistoryExamBatch'
+import { apHumanGeographyExamBatchQuestions } from './apHumanGeographyExamBatch'
+import { highSchoolBiologyNgssExamBatchQuestions } from './highSchoolBiologyNgssExamBatch'
+import { highSchoolPhysicsNgssExamBatchQuestions } from './highSchoolPhysicsNgssExamBatch'
+import { apChemistryExamBatchQuestions } from './apChemistryExamBatch'
+import { apPhysicsExamBatchQuestions } from './apPhysicsExamBatch'
+import { apPsychologyExamBatchQuestions } from './apPsychologyExamBatch'
+import { topUpHighAgentGeneratedTrack } from './highAgentGenerated'
+import { topUpHighGeneratedTrack } from './highGenerated'
+import { calculusWorkoutGeneratedQuestions } from './calculusWorkoutGenerated'
+import { apPhysicsWorkoutGeneratedQuestions } from './apPhysicsWorkoutGenerated'
+import { apChemistryWorkoutGeneratedQuestions } from './apChemistryWorkoutGenerated'
+import { apBiologyWorkoutGeneratedQuestions } from './apBiologyWorkoutGenerated'
+import { apEconomicsWorkoutGeneratedQuestions } from './apEconomicsWorkoutGenerated'
+import { apComputerScienceWorkoutGeneratedQuestions } from './apComputerScienceWorkoutGenerated'
+import { apEnglishWorkoutGeneratedQuestions } from './apEnglishWorkoutGenerated'
+import { apPsychologyWorkoutGeneratedQuestions } from './apPsychologyWorkoutGenerated'
+import { apHumanGeographyWorkoutGeneratedQuestions } from './apHumanGeographyWorkoutGenerated'
+import { apHistoryWorkoutGeneratedQuestions } from './apHistoryWorkoutGenerated'
+import { worldHistoryModernExamBatchQuestions } from './worldHistoryModernExamBatch'
+import { worldHistoryOriginsExamBatchQuestions } from './worldHistoryOriginsExamBatch'
 
 export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
-  return {
-  'col-high-school-biology-ngss': makeHighSchoolBiologyNGSSQuiz(),
-  'col-high-school-physics-ngss': makeHighSchoolPhysicsNGSSQuiz(),
-  'col-world-history-project-origins-to-the-present': makeWorldHistoryOriginsQuiz(),
-  'col-world-history-project-1750-to-the-present': makeWorldHistory1750Quiz(),
+  const fcc = buildFCCQuestionCatalog()
+  const basicJavascript = fcc['basic-javascript'] || []
+  const basicHtml = fcc['basic-html-and-html5'] || []
+  const catalog: Record<string, Question[]> = {
+  'col-high-school-biology-ngss': [
+    ...makeHighSchoolBiologyNGSSQuiz(),
+    ...highSchoolBiologyNgssExamBatchQuestions,
+  ],
+  'col-high-school-physics-ngss': [
+    ...makeHighSchoolPhysicsNGSSQuiz(),
+    ...highSchoolPhysicsNgssExamBatchQuestions,
+  ],
+  'col-world-history-project-origins-to-the-present': [
+    ...makeWorldHistoryOriginsQuiz(),
+    ...worldHistoryOriginsExamBatchQuestions,
+  ],
+  'col-world-history-project-1750-to-the-present': [
+    ...makeWorldHistory1750Quiz(),
+    ...worldHistoryModernExamBatchQuestions,
+  ],
+  apHumanGeography: [
+    ...openTriviaGeographyQuestions,
+    ...apHumanGeographyExamBatchQuestions,
+    ...apHumanGeographyWorkoutGeneratedQuestions,
+  ],
+  apPsychology: [...apPsychologyExamBatchQuestions, ...apPsychologyWorkoutGeneratedQuestions],
+  'col-sat-reading-and-writing': openSatReadingWritingQuestions,
   apCalculus: [
     makeSimpleQuestion(13001, 'AP', 'AP Calculus Pier', 'Derivative intuition',
       'If f(x) = x^2, what is f\'(3)?',
@@ -49,6 +127,7 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
         ['Always decreasing', 'Concavity and increasing/decreasing are different ideas.', 'Separate first-derivative behavior from second-derivative behavior.'],
         ['Guaranteed to cross the x-axis', 'Second derivative sign says nothing direct about x-intercepts.', 'Use the derivative test that matches the question.'],
       ]),
+    ...calculusWorkoutGeneratedQuestions,
   ],
   apBiology: [
     makeSimpleQuestion(13101, 'AP', 'AP Biology Reef', 'Cell transport',
@@ -83,6 +162,12 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
         ['To dissolve cell membranes', 'That is not a biological function of DNA.', 'Stay with information storage and inheritance.'],
         ['To act as the main structural protein', 'DNA is a nucleic acid, not the main structural protein.', 'Separate nucleic acids from proteins.'],
       ]),
+    ...openTriviaAnimalBiologyQuestions,
+    ...openTriviaMolecularBiologyQuestions,
+    ...openTriviaApBiologyScienceBatch2Questions,
+    ...apBiologyAnimalEcologyBatchQuestions,
+    ...apBiologyExamBatchQuestions,
+    ...apBiologyWorkoutGeneratedQuestions,
   ],
   apChemistry: [
     makeSimpleQuestion(13201, 'AP', 'AP Chemistry Dock', 'Mole concept',
@@ -116,7 +201,11 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
         ['The same mass number', 'Mass numbers vary.', 'Columns group similar outer-electron structures.'],
         ['Exactly the same number of neutrons', 'Neutron count is not what groups columns.', 'Chemical behavior tracks electron configuration.'],
         ['The same state of matter always', 'Elements in one group can differ in state.', 'The strongest shared pattern is valence behavior.'],
-      ]),
+    ]),
+    ...openTriviaChemistryQuestions,
+    ...openTriviaChemistryExtensionQuestions,
+    ...apChemistryExamBatchQuestions,
+    ...apChemistryWorkoutGeneratedQuestions,
   ],
   apPhysics: [
     ...makeHighSchoolPhysicsNGSSQuiz(),
@@ -152,6 +241,10 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
         ['Distance', 'Distance is not part of momentum definition.', 'Use p = mv.'],
         ['Time', 'Time alone is not in the formula.', 'Stay with mass times velocity.'],
       ]),
+    ...openTriviaPhysicsQuestions,
+    ...openTriviaPhysicsExtensionQuestions,
+    ...apPhysicsExamBatchQuestions,
+    ...apPhysicsWorkoutGeneratedQuestions,
     ...(buildOpenStaxQuestionCatalog()['openstax'] || []),
     ...(buildWikibooksQuestionCatalog()['mathematics_extensions'] || []),
   ],
@@ -188,6 +281,17 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
         ['Uses “like” or “as” directly', 'That is a simile.', 'Metaphor compares more directly.'],
         ['Ends every paragraph with rhyme', 'That is not metaphor.', 'Separate sound devices from comparison devices.'],
       ]),
+    ...openTriviaLiteratureQuestions,
+    ...openTriviaLiteratureCanonQuestions,
+    ...openTriviaLiteraryFormsShakespeareQuestions,
+    ...openTriviaLiteratureModernExtensionQuestions,
+    ...openTriviaLiteratureCanonicalOpeningsShakespeareQuestions,
+    ...openTriviaLiteraturePoetsAuthorsQuestions,
+    ...openTriviaLiteratureShakespeareModernistQuestions,
+    ...openTriviaLiteraturePoetryIdentityQuestions,
+    ...openTriviaLiteratureFinalIdentityQuestions,
+    ...apEnglishExamBatchQuestions,
+    ...apEnglishWorkoutGeneratedQuestions,
   ],
   apHistory: [
     makeSimpleQuestion(13501, 'AP', 'AP U.S. History Dock', 'DBQ structure',
@@ -222,6 +326,17 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
         ['Adding random modern examples', 'Context should stay historically relevant.', 'Connect to the surrounding period and trends.'],
         ['Listing every fact you remember', 'Context is not a fact dump.', 'Select broader developments that illuminate the claim.'],
       ]),
+    ...openTriviaHistoryQuestions,
+    ...openTriviaWorldHistoryExtensionQuestions,
+    ...openTriviaUsHistoryExtensionQuestions,
+    ...openTriviaHistoryWwiiColdWarQuestions,
+    ...openTriviaWorldHistoryFoundationsQuestions,
+    ...openTriviaModernHistoryColdWarQuestions,
+    ...openTriviaUsHistoryAnchorQuestions,
+    ...openTriviaWorldHistoryAnchorQuestions,
+    ...openTriviaWorldHistoryFinalTwoQuestions,
+    ...apHistoryExamBatchQuestions,
+    ...apHistoryWorkoutGeneratedQuestions,
   ],
   apEconomics: [
     makeSimpleQuestion(13601, 'AP', 'AP Economics Dock', 'Elasticity clue',
@@ -256,6 +371,8 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
         ['Only poor countries face limits', 'Scarcity is universal.', 'Every economy must choose among competing uses.'],
         ['Prices are always high', 'High prices can result, but that is not the definition.', 'Start with limited resources versus unlimited wants.'],
       ]),
+    ...apEconomicsExamBatchQuestions,
+    ...apEconomicsWorkoutGeneratedQuestions,
   ],
   apComputerScience: [
     makeSimpleQuestion(13701, 'AP', 'AP CS Dock', 'Loop behavior',
@@ -290,6 +407,11 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
         ['A comment written by the programmer', 'Comments explain code; they are not data structures.', 'Use the data-structure definition.'],
         ['A network connection', 'That belongs to networking, not storage structure.', 'Think ordered collection.'],
       ]),
+    ...openDsaFormalLanguagesQuestions,
+    ...openDsaAlgorithmQuestions,
+    ...openTriviaApcsExtensionQuestions,
+    ...apComputerScienceExamBatchQuestions,
+    ...apComputerScienceWorkoutGeneratedQuestions,
   ],
   alevelMaths: [
     makeSimpleQuestion(14001, 'A-level', 'A-level Maths Dock', 'Quadratic roots',
@@ -563,8 +685,16 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
         ['Turning text into sound', 'That is unrelated to control flow.', 'Use the decision-making definition.'],
       ]),
   ],
+    basic_javascript: basicJavascript,
+    basic_html_and_html5: basicHtml,
     ...buildOpenStaxQuestionCatalog(),
-    ...buildFCCQuestionCatalog(),
     ...buildWikibooksQuestionCatalog(),
   }
+
+  return Object.fromEntries(
+    Object.entries(catalog).map(([trackId, questions]) => [
+      trackId,
+      topUpHighGeneratedTrack(trackId, topUpHighAgentGeneratedTrack(trackId, questions)),
+    ]),
+  )
 }

@@ -336,6 +336,11 @@ export function buildCycledMathQuiz(
   return Array.from({ length: 50 }, (_, index) => {
     const blueprint = unitBlueprints[index % unitBlueprints.length]
     const cycle = Math.floor(index / unitBlueprints.length) + 1
+    const lesson = [
+      blueprint.fieldNote,
+      blueprint.mentorHint,
+      `Correct answer: ${blueprint.correct}.`,
+    ].join(' ')
     const question: Question = {
       id: baseId + index,
       kind: index % 10 === 9 ? 'deep' : 'quick',
@@ -350,6 +355,7 @@ export function buildCycledMathQuiz(
       mentorHint: blueprint.mentorHint,
       answers: answerSet(blueprint.correct, blueprint.wrong),
       solution: blueprint.correct,
+      lesson,
       xp: index % 10 === 9 ? 16 : 10,
     }
     return question

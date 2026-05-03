@@ -1,0 +1,2585 @@
+ID: OpenStax_1 | 1 Conceptual Questions
+Q: 1 .  
+ 
+ Models are particularly useful in relativity and quantum mechanics, where conditions are outside those normally encountered by humans. What is a model?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_2 | 1 Conceptual Questions
+Q: 2 .  
+ 
+ How does a model differ from a theory?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_3 | 1 Conceptual Questions
+Q: 3 .  
+ 
+ If two different theories describe experimental observations equally well, can one be said to be more valid than the other (assuming both use accepted rules of logic)?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_4 | 1 Conceptual Questions
+Q: 4 .  
+ 
+ What determines the validity of a theory?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_5 | 1 Conceptual Questions
+Q: 5 .  
+ 
+ Certain criteria must be satisfied if a measurement or observation is to be believed. Will the criteria necessarily be as strict for an expected result as for an unexpected result?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_6 | 1 Conceptual Questions
+Q: 6 .  
+ 
+ Can the validity of a model be limited, or must it be universally valid? How does this compare to the required validity of a theory or a law?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_7 | 1 Conceptual Questions
+Q: 7 .  
+ 
+ Classical physics is a good approximation to modern physics under certain circumstances. What are they?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_8 | 1 Conceptual Questions
+Q: 8 .  
+ 
+ When is it  necessary  to use relativistic quantum mechanics?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_9 | 1 Conceptual Questions
+Q: 9 .  
+ 
+ Can classical physics be used to accurately describe a satellite moving at a speed of 7500 m/s? Explain why or why not.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_10 | 1 Conceptual Questions
+Q: 10 .  
+ 
+ Identify some advantages of metric units.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_11 | 1 Conceptual Questions
+Q: 11 .  
+ 
+ What is the relationship between the accuracy and uncertainty of a measurement?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_12 | 1 Conceptual Questions
+Q: 12 .  
+ 
+ Prescriptions for vision correction are given in units called  diopters  (D). Determine the meaning of that unit. Obtain information (perhaps by calling an optometrist or performing an internet search) on the minimum uncertainty with which corrections in diopters are determined and the accuracy with which corrective lenses can be produced. Discuss the sources of uncertainties in both the prescription and accuracy in the manufacture of lenses.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_2 | 1 Problems Exercises
+Q: 2 .  
+ 
+ A car is traveling at a speed of  33 m/s 33 m/s . (a) What is its speed in kilometers per hour? (b) Is it exceeding the  90 km/h 90 km/h  speed limit?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_4 | 1 Problems Exercises
+Q: 4 .  
+ 
+ American football is played on a 100-yd-long field, excluding the end zones. How long is the field in meters? (Assume that 1 meter equals 3.281 feet.)
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_6 | 1 Problems Exercises
+Q: 6 .  
+ 
+ What is the height in meters of a person who is 6 ft 1.0 in. tall? (Assume that 1 meter equals 39.37 in.)
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_8 | 1 Problems Exercises
+Q: 8 .  
+ 
+ The speed of sound is measured to be  342 m/s 342 m/s  on a certain day. What is this in km/h?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_10 | 1 Problems Exercises
+Q: 10 .  
+ 
+ (a) Refer to  Table 1.3  to determine the average distance between the Earth and the Sun. Then calculate the average speed of the Earth in its orbit in kilometers per second. (b) What is this in meters per second?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_12 | 1 Problems Exercises
+Q: 12 .  
+ 
+ A good-quality measuring tape can be off by 0.50 cm over a distance of 20 m. What is its percent uncertainty?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_14 | 1 Problems Exercises
+Q: 14 .  
+ 
+ An infant’s pulse rate is measured to be  130 ± 5 130 ± 5  beats/min. What is the percent uncertainty in this measurement?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_16 | 1 Problems Exercises
+Q: 16 .  
+ 
+ A can contains 375 mL of soda. How much is left after 308 mL is removed?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_18 | 1 Problems Exercises
+Q: 18 .  
+ 
+ (a) How many significant figures are in the numbers 99 and 100? (b) If the uncertainty in each number is 1, what is the percent uncertainty in each? (c) Which is a more meaningful way to express the accuracy of these two numbers, significant figures or percent uncertainties?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_20 | 1 Problems Exercises
+Q: 20 .  
+ 
+ (a) A person’s blood pressure is measured to be  120 ± 2 mm Hg 120 ± 2 mm Hg . What is its percent uncertainty? (b) Assuming the same percent uncertainty, what is the uncertainty in a blood pressure measurement of  80 mm Hg 80 mm Hg ?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_22 | 1 Problems Exercises
+Q: 22 .  
+ 
+ What is the area of a circle  3 . 102 cm 3 . 102 cm  in diameter?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_24 | 1 Problems Exercises
+Q: 24 .  
+ 
+ A marathon runner completes a  42 . 188 -km 42 . 188 -km  course in  2 h 2 h , 30 min, and  12 s 12 s . There is an uncertainty of  25 m 25 m  in the distance traveled and an uncertainty of 1 s in the elapsed time. (a) Calculate the percent uncertainty in the distance. (b) Calculate the uncertainty in the elapsed time. (c) What is the average speed in meters per second? (d) What is the uncertainty in the average speed?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_26 | 1 Problems Exercises
+Q: 26 .  
+ 
+ When non-metric units were used in the United Kingdom, a unit of mass called the  pound-mass  (lbm) was employed, where  1 lbm = 0 . 4539 kg 1 lbm = 0 . 4539 kg . (a) If there is an uncertainty of  0 . 0001 kg 0 . 0001 kg  in the pound-mass unit, what is its percent uncertainty? (b) Based on that percent uncertainty, what mass in pound-mass has an uncertainty of 1 kg when converted to kilograms?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_28 | 1 Problems Exercises
+Q: 28 .  
+ 
+ A car engine moves a piston with a circular cross section of  7 . 500 ± 0 . 002 cm 7 . 500 ± 0 . 002 cm  diameter a distance of  3 . 250 ± 0 . 001 cm 3 . 250 ± 0 . 001 cm  to compress the gas in the cylinder. (a) By what amount is the gas decreased in volume in cubic centimeters? (b) Find the uncertainty in this volume.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_30 | 1 Problems Exercises
+Q: 30 .  
+ 
+ A generation is about one-third of a lifetime. Approximately how many generations have passed since the year 0 AD?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_32 | 1 Problems Exercises
+Q: 32 .  
+ 
+ Calculate the approximate number of atoms in a bacterium. Assume that the average mass of an atom in the bacterium is ten times the mass of a hydrogen atom. (Hint: The mass of a hydrogen atom is on the order of  10 − 27  kg 10 − 27  kg  and the mass of a bacterium is on the order of  10 − 15  kg. 10 − 15  kg. )
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_34 | 1 Problems Exercises
+Q: 34 .  
+ 
+ (a) What fraction of Earth’s diameter is the greatest ocean depth? (b) The greatest mountain height?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_36 | 1 Problems Exercises
+Q: 36 .  
+ 
+ Assuming one nerve impulse must end before another can begin, what is the maximum firing rate of a nerve in impulses per second?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_1 | 2 Conceptual Questions
+Q: 1 .  
+ 
+ Give an example in which there are clear distinctions among distance traveled, displacement, and magnitude of displacement. Specifically identify each quantity in your example.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_2 | 2 Conceptual Questions
+Q: 2 .  
+ 
+ Under what circumstances does distance traveled equal magnitude of displacement? What is the only case in which magnitude of displacement and displacement are exactly the same?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_3 | 2 Conceptual Questions
+Q: 3 .  
+ 
+ Bacteria move back and forth by using their flagella (structures that look like little tails). Speeds of up to  50 μm/s  50 × 10 − 6  m/s 50 μm/s  50 × 10 − 6  m/s  have been observed. The total distance traveled by a bacterium is large for its size, while its displacement is small. Why is this?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_4 | 2 Conceptual Questions
+Q: 4 .  
+ 
+ A student writes, “ A bird that is diving for prey has a speed of 
+ 
+ 
+ 
+ 
+ 
+ − 
+ 
+ 10 
+ 
+ 
+ m 
+ / 
+ s 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ − 
+ 
+ 10 
+ 
+ 
+ m 
+ / 
+ s 
+ 
+ 
+ 
+ 
+ .” What is wrong with the student’s statement? What has the student actually described? Explain.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_5 | 2 Conceptual Questions
+Q: 5 .  
+ 
+ What is the speed of the bird in  Exercise 2.4 ?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_6 | 2 Conceptual Questions
+Q: 6 .  
+ 
+ Acceleration is the change in velocity over time. Given this information, is acceleration a vector or a scalar quantity? Explain.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_7 | 2 Conceptual Questions
+Q: 7 .  
+ 
+ A weather forecast states that the temperature is predicted to be  − 5ºC − 5ºC  the following day. Is this temperature a vector or a scalar quantity? Explain.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_8 | 2 Conceptual Questions
+Q: 8 .  
+ 
+ Give an example (but not one from the text) of a device used to measure time and identify what change in that device indicates a change in time.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_9 | 2 Conceptual Questions
+Q: 9 .  
+ 
+ There is a distinction between average speed and the magnitude of average velocity. Give an example that illustrates the difference between these two quantities.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_10 | 2 Conceptual Questions
+Q: 10 .  
+ 
+ Does a car’s odometer measure distance traveled or displacement? Does its speedometer measure speed or velocity?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_11 | 2 Conceptual Questions
+Q: 11 .  
+ 
+ If you divide the total distance traveled on a car trip (as determined by the odometer) by the time for the trip, are you calculating the average speed or the magnitude of the average velocity? Under what circumstances are these two quantities the same?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_12 | 2 Conceptual Questions
+Q: 12 .  
+ 
+ How are instantaneous velocity and instantaneous speed related to one another? How do they differ?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_13 | 2 Conceptual Questions
+Q: 13 .  
+ 
+ Is it possible for speed to be constant while acceleration is not zero? Give an example of such a situation.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_14 | 2 Conceptual Questions
+Q: 14 .  
+ 
+ Is it possible for velocity to be constant while acceleration is not zero? Explain.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_15 | 2 Conceptual Questions
+Q: 15 .  
+ 
+ Give an example in which velocity is zero yet acceleration is not.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_16 | 2 Conceptual Questions
+Q: 16 .  
+ 
+ If a subway train is moving to the left (has a negative velocity) and then comes to a stop, what is the direction of its acceleration? Is the acceleration positive or negative?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_17 | 2 Conceptual Questions
+Q: 17 .  
+ 
+ Plus and minus signs are used in one-dimensional motion to indicate direction. What is the sign of an acceleration that reduces the magnitude of a negative velocity? Of a positive velocity?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_18 | 2 Conceptual Questions
+Q: 18 .  
+ 
+ What information do you need in order to choose which equation or equations to use to solve a problem? Explain.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_19 | 2 Conceptual Questions
+Q: 19 .  
+ 
+ What is the last thing you should do when solving a problem? Explain.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_20 | 2 Conceptual Questions
+Q: 20 .  
+ 
+ What is the acceleration of a rock thrown straight upward on the way up? At the top of its flight? On the way down?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_21 | 2 Conceptual Questions
+Q: 21 .  
+ 
+ An object that is thrown straight up falls back to Earth. This is one-dimensional motion. (a) When is its velocity zero? (b) Does its velocity change direction? (c) Does the acceleration due to gravity have the same sign on the way up as on the way down?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_22 | 2 Conceptual Questions
+Q: 22 .  
+ 
+ Suppose you throw a rock nearly straight up at a coconut in a palm tree, and the rock misses on the way up but hits the coconut on the way down. Neglecting air resistance, how does the speed of the rock when it hits the coconut on the way down compare with what it would have been if it had hit the coconut on the way up? Is it more likely to dislodge the coconut on the way up or down? Explain.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_23 | 2 Conceptual Questions
+Q: 23 .  
+ 
+ If an object is thrown straight up and air resistance is negligible, then its speed when it returns to the starting point is the same as when it was released. If air resistance were not negligible, how would its speed upon return compare with its initial speed? How would the maximum height to which it rises be affected?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_24 | 2 Conceptual Questions
+Q: 24 .  
+ 
+ The severity of a fall depends on your speed when you strike the ground. All factors but the acceleration due to gravity being the same, how many times higher could a safe fall on the Moon be than on Earth (gravitational acceleration on the Moon is about 1/6 that of the Earth)?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_25 | 2 Conceptual Questions
+Q: 25 .  
+ 
+ How many times higher could an astronaut jump on the Moon than on Earth if his takeoff speed is the same in both locations (gravitational acceleration on the Moon is about 1/6 of  g g  on Earth)?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_26 | 2 Conceptual Questions
+Q: 26 .  
+ 
+ (a) Explain how you can use the graph of position versus time in  Figure 2.52  to describe the change in velocity over time. Identify (b) the time ( t a t a ,
+ t b t b ,
+ t c t c ,
+ t d t d , or
+ t e t e ) at which the instantaneous velocity is greatest, (c) the time at which it is zero, and (d) the time at which it is negative. 
+ 
+ 
+ 
+ Figure  
+ 2.52
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_27 | 2 Conceptual Questions
+Q: 27 .  
+ 
+ (a) Sketch a graph of velocity versus time corresponding to the graph of position versus time given in  Figure 2.53 . (b) Identify the time or times ( t a t a ,
+ t b t b ,
+ t c t c , etc.) at which the instantaneous velocity is greatest. (c) At which times is it zero? (d) At which times is it negative? 
+ 
+ 
+ 
+ Figure  
+ 2.53
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_28 | 2 Conceptual Questions
+Q: 28 .  
+ 
+ (a) Explain how you can determine the acceleration over time from a velocity versus time graph such as the one in  Figure 2.54 . (b) Based on the graph, how does acceleration change over time? 
+ 
+ 
+ 
+ Figure  
+ 2.54
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_29 | 2 Conceptual Questions
+Q: 29 .  
+ 
+ (a) Sketch a graph of acceleration versus time corresponding to the graph of velocity versus time given in  Figure 2.55 . (b) Identify the time or times ( t a t a ,
+ t b t b ,
+ t c t c , etc.) at which the acceleration is greatest. (c) At which times is it zero? (d) At which times is it negative? 
+ 
+ 
+ 
+ 
+ Figure  
+ 2.55
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_30 | 2 Conceptual Questions
+Q: 30 .  
+ 
+ Consider the velocity vs. time graph of a person in an elevator shown in  Figure 2.56 . Suppose the elevator is initially at rest. It then accelerates for 3 seconds, maintains that velocity for 15 seconds, then decelerates for 5 seconds until it stops. The acceleration for the entire trip is not constant so we cannot use the equations of motion from  Motion Equations for Constant Acceleration in One Dimension  for the complete trip. (We could, however, use them in the three individual sections where acceleration is a constant.) Sketch graphs of (a) position vs. time and (b) acceleration vs. time for this trip. 
+ 
+ 
+ 
+ Figure  
+ 2.56
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_31 | 2 Conceptual Questions
+Q: 31 .  
+ 
+ A cylinder is given a push and then rolls up an inclined plane. If the origin is the starting point, sketch the position, velocity, and acceleration of the cylinder vs. time as it goes up and then down the plane.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_2 | 2 Problems Exercises
+Q: 2 .  
+   Find the following for path B in  Figure 2.57 : (a) The distance traveled. (b) The magnitude of the displacement from start to finish. (c) The displacement from start to finish.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_4 | 2 Problems Exercises
+Q: 4 .  
+   Find the following for path D in  Figure 2.57 : (a) The distance traveled. (b) The magnitude of the displacement from start to finish. (c) The displacement from start to finish.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_6 | 2 Problems Exercises
+Q: 6 .  
+   A helicopter blade spins at exactly 100 revolutions per minute. Its tip is 5.00 m from the center of rotation. (a) Calculate the average speed of the blade tip in the helicopter’s frame of reference. (b) What is its average velocity over one revolution?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_8 | 2 Problems Exercises
+Q: 8 .  
+   Land west of the San Andreas fault in southern California is moving at an average velocity of about 6 cm/y northwest relative to land east of the fault. Los Angeles is west of the fault and may thus someday be at the same latitude as San Francisco, which is east of the fault. How far in the future will this occur if the displacement to be made is 590 km northwest, assuming the motion remains constant?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_10 | 2 Problems Exercises
+Q: 10 .  
+   Tidal friction is slowing the rotation of the Earth. As a result, the orbit of the Moon is increasing in radius at a rate of approximately 4 cm/year. Assuming this to be a constant rate, how many years will pass before the radius of the Moon’s orbit increases by  3 . 84 × 10 6 m 3 . 84 × 10 6 m  (1%)?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_12 | 2 Problems Exercises
+Q: 12 .  
+   The speed of propagation of the action potential (an electrical signal) in a nerve cell depends (inversely) on the diameter of the axon (nerve fiber). If the nerve cell connecting the spinal cord to your feet is 1.1 m long, and the nerve impulse speed is 18 m/s, how long does it take for the nerve signal to travel this distance?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_14 | 2 Problems Exercises
+Q: 14 .  
+   A football quarterback runs 15.0 m straight down the playing field in 2.50 s. He is then hit and pushed 3.00 m straight backward in 1.75 s. He breaks the tackle and runs straight forward another 21.0 m in 5.20 s. Calculate his average velocity (a) for each of the three intervals and (b) for the entire motion.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_17 | 2 Problems Exercises
+Q: 17 .  
+ 
+ 
+ Professional Application 
+ 
+ Dr. John Paul Stapp was U.S. Air Force officer who studied the effects of extreme deceleration on the human body. On December 10, 1954, Stapp rode a rocket sled, accelerating from rest to a top speed of 282 m/s (1015 km/h) in 5.00 s, and was brought jarringly back to rest in only 1.40 s! Calculate his (a) acceleration and (b) deceleration. Express each in multiples of  g g   ( 9 . 80 m /s 2 ) ( 9 . 80 m /s 2 )  by taking its ratio to the acceleration of gravity.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_19 | 2 Problems Exercises
+Q: 19 .  
+ 
+ Assume that an intercontinental ballistic missile goes from rest to a suborbital speed of 6.50 km/s in 60.0 s (the actual speed and time are classified). What is its average acceleration in  m/s 2 m/s 2  and in multiples of  g g   ( 9 . 80 m /s 2 ) ? ( 9 . 80 m /s 2 ) ?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_22 | 2 Problems Exercises
+Q: 22 .  
+   A bullet in a gun is accelerated from the firing chamber to the end of the barrel at an average rate of  6 .20 × 10 5  m/s 2 6 .20 × 10 5  m/s 2  for  8 . 10 × 10 − 4  s 8 . 10 × 10 − 4  s . What is its muzzle velocity (that is, its final velocity)?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_24 | 2 Problems Exercises
+Q: 24 .  
+   While entering a freeway, a car accelerates from rest at a rate of  2 . 40 m/s 2 2 . 40 m/s 2  for 12.0 s. (a) Draw a sketch of the situation. (b) List the knowns in this problem. (c) How far does the car travel in those 12.0 s? To solve this part, first identify the unknown, and then discuss how you chose the appropriate equation to solve for it. After choosing the equation, show your steps in solving for the unknown, check your units, and discuss whether the answer is reasonable. (d) What is the car’s final velocity? Solve for this unknown in the same manner as in part (c), showing all steps explicitly.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_26 | 2 Problems Exercises
+Q: 26 .  
+ 
+ Professional Application: 
+    Blood is accelerated from rest to 30.0 cm/s in a distance of 1.80 cm by the left ventricle of the heart. (a) Make a sketch of the situation. (b) List the knowns in this problem. (c) How long does the acceleration take? To solve this part, first identify the unknown, and then discuss how you chose the appropriate equation to solve for it. After choosing the equation, show your steps in solving for the unknown, checking your units. (d) Is the answer reasonable when compared with the time for a heartbeat?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_28 | 2 Problems Exercises
+Q: 28 .  
+   A powerful motorcycle can accelerate from rest to 26.8 m/s (100 km/h) in only 3.90 s. (a) What is its average acceleration? (b) How far does it travel in that time?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_30 | 2 Problems Exercises
+Q: 30 .  
+   A fireworks shell is accelerated from rest to a velocity of 65.0 m/s over a distance of 0.250 m. (a) How long did the acceleration last? (b) Calculate the acceleration.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_32 | 2 Problems Exercises
+Q: 32 .  
+   Professional Application:     A woodpecker’s brain is specially protected from large decelerations by tendon-like attachments inside the skull. While pecking on a tree, the woodpecker’s head comes to a stop from an initial velocity of 0.600 m/s in a distance of only 2.00 mm. (a) Find the acceleration in  m/s 2 m/s 2  and in multiples of   g g = 9 . 80  m/s 2 g g = 9 . 80  m/s 2 . (b) Calculate the stopping time. (c) The tendons cradling the brain stretch, making its stopping distance 4.50 mm (greater than the head and, hence, less deceleration of the brain). What is the brain’s deceleration, expressed in multiples of  g g ?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_34 | 2 Problems Exercises
+Q: 34 .  
+   In World War II, there were several reported cases of airmen who jumped from their flaming airplanes with no parachute to escape certain death. Some fell about 20,000 feet (6000 m), and some of them survived, with few life-threatening injuries. For these lucky pilots, the tree branches and snow drifts on the ground allowed their deceleration to be relatively small. If we assume that a pilot’s speed upon impact was 123 mph (54 m/s), then what was his deceleration? Assume that the trees and snow stopped him over a distance of 3.0 m.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_36 | 2 Problems Exercises
+Q: 36 .  
+   An express train passes through a station. It enters with an initial velocity of 22.0 m/s and decelerates at a rate of  0 . 150 m/s 2 0 . 150 m/s 2  as it goes through. The station is 210 m long. (a) How long did the nose of the train stay in the station? (b) How fast is it going when the nose leaves the station? (c) If the train is 130 m long, when does the end of the train leave the station? (d) What is the velocity of the end of the train as it leaves?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_38 | 2 Problems Exercises
+Q: 38 .  
+   A bicycle racer sprints at the end of a race to clinch a victory. The racer has an initial velocity of 11.5 m/s and accelerates at the rate of  0 . 500 m/s 2 0 . 500 m/s 2  for 7.00 s. (a) What is his final velocity? (b) The racer continues at this velocity to the finish line. If he was 300 m from the finish line when he started to accelerate, how much time did he save? (c) One other racer was 5.00 m ahead when the winner started to accelerate, but he was unable to accelerate, and traveled at 11.8 m/s until the finish line. How far ahead of him (in meters and in seconds) did the winner finish?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_42 | 2 Problems Exercises
+Q: 42 .  
+   Calculate the displacement and velocity at times of (a) 0.500, (b) 1.00, (c) 1.50, (d) 2.00, and (e) 2.50 s for a rock thrown straight down with an initial velocity of 14.0 m/s from the Verrazano Narrows Bridge in New York City. The roadway of this bridge is 70.0 m above the water.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_44 | 2 Problems Exercises
+Q: 44 .  
+   A rescue helicopter is hovering over a person whose boat has sunk. One of the rescuers throws a life preserver straight down to the victim with an initial velocity of 1.40 m/s and observes that it takes 1.8 s to reach the water. (a) List the knowns in this problem. (b) How high above the water was the preserver released? Note that the downdraft of the helicopter reduces the effects of air resistance on the falling life preserver, so that an acceleration equal to that of gravity is reasonable.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_46 | 2 Problems Exercises
+Q: 46 .  
+   A swimmer bounces straight up from a diving board and falls feet first into a pool. She starts with a velocity of 4.00 m/s, and her takeoff point is 1.80 m above the pool. (a) How long are her feet in the air? (b) What is her highest point above the board? (c) What is her velocity when her feet hit the water?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_48 | 2 Problems Exercises
+Q: 48 .  
+   A very strong, but inept, shot putter puts the shot straight up vertically with an initial velocity of 11.0 m/s. How long does he have to get out of the way if the shot was released at a height of 2.20 m, and he is 1.80 m tall?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_50 | 2 Problems Exercises
+Q: 50 .  
+   A kangaroo can jump over an object 2.50 m high. (a) Calculate its vertical speed when it leaves the ground. (b) How long is it in the air?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_52 | 2 Problems Exercises
+Q: 52 .  
+   An object is dropped from a height of 75.0 m above ground level. (a) Determine the distance traveled during the first second. (b) Determine the final velocity at which the object hits the ground. (c) Determine the distance traveled during the last second of motion before hitting the ground.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_54 | 2 Problems Exercises
+Q: 54 .  
+   A ball is thrown straight up. It passes a 2.00-m-high window 7.50 m off the ground on its path up and takes 0.312 s to go past the window. What was the ball’s initial velocity? Hint: First consider only the distance along the window, and solve for the ball's velocity at the bottom of the window. Next, consider only the distance from the ground to the bottom of the window, and solve for the initial velocity using the velocity at the bottom of the window as the final velocity.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_56 | 2 Problems Exercises
+Q: 56 .  
+   A steel ball is dropped onto a hard floor from a height of 1.50 m and rebounds to a height of 1.45 m. (a) Calculate its velocity just before it strikes the floor. (b) Calculate its velocity just after it leaves the floor on its way back up. (c) Calculate its acceleration during contact with the floor if that contact lasts 0.0800 ms  ( 8 . 00 × 10 − 5  s ) ( 8 . 00 × 10 − 5  s ) . (d) How much did the ball compress during its collision with the floor, assuming the floor is absolutely rigid?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_58 | 2 Problems Exercises
+Q: 58 .  
+   A soft tennis ball is dropped onto a hard floor from a height of 1.50 m and rebounds to a height of 1.10 m. (a) Calculate its velocity just before it strikes the floor. (b) Calculate its velocity just after it leaves the floor on its way back up. (c) Calculate its acceleration during contact with the floor if that contact lasts 3.50 ms  ( 3 . 50 × 10 − 3  s ) ( 3 . 50 × 10 − 3  s ) . (d) How much did the ball compress during its collision with the floor, assuming the floor is absolutely rigid?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_2.58 | 2 Problems Exercises
+Q: 59 .  
+ (a) By taking the slope of the curve in  Figure 2.58 , verify that the velocity of the jet car is 115 m/s at  t = 20 s t = 20 s . (b) By taking the slope of the curve at any point in  Figure 2.59 , verify that the jet car’s acceleration is  5 . 0 m/s 2 5 . 0 m/s 2 . 
+ 
+ 
+ 
+ Figure  
+ 2.58 
+ 
+ 
+ 
+ 
+ Figure  
+ 2.59
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_60 | 2 Problems Exercises
+Q: 60 .  
+   (a) Using approximate values, calculate the slope of the curve in  Figure 2.60  to verify that the velocity at  t = 10 s t = 10 s  is approximately 0.21 m/s.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_2.60 | 2 Problems Exercises
+Q: 61 .  
+ Using approximate values, calculate the slope of the curve in  Figure 2.60  at  t = 10.0 s t = 10.0 s  and at  t = 30 s t = 30 s  find the velocity at these times. (b) Using your answer to part a, find the approximate acceleration at  t = 20 s t = 20 s . Assume all values are known to 2 significant figures. 
+ 
+ 
+ 
+ Figure  
+ 2.60
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_62 | 2 Problems Exercises
+Q: 62 .  
+   By taking the slope of the curve in  Figure 2.61 , verify that the acceleration is  3 . 2 m /s 2 3 . 2 m /s 2  at  t = 10 s t = 10 s . 
+ 
+ 
+ 
+ Figure  
+ 2.61
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_64 | 2 Problems Exercises
+Q: 64 .  
+ (a) Take the slope of the curve in  Figure 2.62  to find the jogger’s velocity at  t = 2 . 5 s t = 2 . 5 s . (b) Repeat at 7.5 s. These values must be consistent with the graph in  Figure 2.63 .
+
+ 
+ 
+ 
+ 
+ Figure  
+ 2.62 
+ 
+ 
+ 
+ 
+ Figure  
+ 2.63 
+ 
+ 
+ 
+ 
+ Figure  
+ 2.64
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_2.65 | 2 Problems Exercises
+Q: 65 .  
+   A graph of  v t v t  is shown for a world-class track sprinter in a 100-m race. (See   Figure 2.65 ). (a) What is his average velocity for the first 4 s? (b) What is his instantaneous velocity at  t = 5 s t = 5 s ? (c) What is his average acceleration between 0 and 4 s? (d) What is his time for the race? 
+ 
+ 
+ 
+ Figure  
+ 2.65
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_66 | 2 Problems Exercises
+Q: 66 .  
+ Figure 2.66  shows the position graph for a particle for 6 s. (a) Draw the corresponding Velocity vs. Time graph. (b) What is the acceleration between 0 s and 2 s? (c) What happens to the acceleration at exactly 2 s? 
+ 
+ 
+ 
+ Figure  
+ 2.66
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_1 | 3 Conceptual Questions
+Q: 1 .  
+ 
+ Which of the following is a vector: a person’s height, the altitude on Mt. Everest, the age of the Earth, the boiling point of water, the cost of this book, the Earth’s population, the acceleration of gravity?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_2 | 3 Conceptual Questions
+Q: 2 .  
+ 
+ Give a specific example of a vector, stating its magnitude, units, and direction.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_3 | 3 Conceptual Questions
+Q: 3 .  
+ 
+ What do vectors and scalars have in common? How do they differ?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_4 | 3 Conceptual Questions
+Q: 4 .  
+ 
+ Two campers in a national park hike from their cabin to the same spot on a lake, each taking a different path, as illustrated below. The total distance traveled along Path 1 is 7.5 km, and that along Path 2 is 8.2 km. What is the final displacement of each camper? 
+ 
+ 
+ 
+ Figure  
+ 3.47
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_5 | 3 Conceptual Questions
+Q: 5 .  
+ 
+ If an airplane pilot is told to fly 123 km in a straight line to get from San Francisco to Sacramento, explain why he could end up anywhere on the circle shown in  Figure 3.48 . What other information would he need to get to Sacramento? 
+ 
+ 
+ 
+ Figure  
+ 3.48
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_6 | 3 Conceptual Questions
+Q: 6 .  
+ 
+ Suppose you take two steps  A A  and  B B   (that is, two nonzero displacements). Under what circumstances can you end up at your starting point? More generally, under what circumstances can two nonzero vectors add to give zero? Is the maximum distance you can end up from the starting point  A + B A + B  the sum of the lengths of the two steps?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_7 | 3 Conceptual Questions
+Q: 7 .  
+ 
+ Explain why it is not possible to add a scalar to a vector.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_8 | 3 Conceptual Questions
+Q: 8 .  
+ 
+ If you take two steps of different sizes, can you end up at your starting point? More generally, can two vectors with different magnitudes ever add to zero? Can three or more?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_9 | 3 Conceptual Questions
+Q: 9 .  
+ 
+ Suppose you add two vectors  A A  and  B B . What relative direction between them produces the resultant with the greatest magnitude? What is the maximum magnitude? What relative direction between them produces the resultant with the smallest magnitude? What is the minimum magnitude?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_10 | 3 Conceptual Questions
+Q: 10 .  
+ 
+ Give an example of a nonzero vector that has a component of zero.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_11 | 3 Conceptual Questions
+Q: 11 .  
+ 
+ Explain why a vector cannot have a component greater than its own magnitude.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_12 | 3 Conceptual Questions
+Q: 12 .  
+ 
+ If the vectors  A A  and  B B  are perpendicular, what is the component of  A A  along the direction of  B B ? What is the component of  B B  along the direction of  A A ?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_13 | 3 Conceptual Questions
+Q: 13 .  
+ Answer the following questions for projectile motion on level ground assuming negligible air resistance (the initial angle being neither  0º 0º  nor  90º 90º ): (a) Is the velocity ever zero? (b) When is the velocity a minimum? A maximum? (c) Can the velocity ever be the same as the initial velocity at a time other than at  t = 0 t = 0 ? (d) Can the speed ever be the same as the initial speed at a time other than at  t = 0 t = 0 ?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_14 | 3 Conceptual Questions
+Q: 14 .  
+ Answer the following questions for projectile motion on level ground assuming negligible air resistance (the initial angle being neither  0º 0º  nor  90º 90º ): (a) Is the acceleration ever zero? (b) Is the acceleration ever in the same direction as a component of velocity? (c) Is the acceleration ever opposite in direction to a component of velocity?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_15 | 3 Conceptual Questions
+Q: 15 .  
+ For a fixed initial speed, the range of a projectile is determined by the angle at which it is fired. For all but the maximum, there are two angles that give the same range. Considering factors that might affect the ability of an archer to hit a target, such as wind, explain why the smaller angle (closer to the horizontal) is preferable. When would it be necessary for the archer to use the larger angle? Why does the punter in a football game use the higher trajectory?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_16 | 3 Conceptual Questions
+Q: 16 .  
+ During a lecture demonstration, a professor places two coins on the edge of a table. She then flicks one of the coins horizontally off the table, simultaneously nudging the other over the edge. Describe the subsequent motion of the two coins, in particular discussing whether they hit the floor at the same time.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_17 | 3 Conceptual Questions
+Q: 17 .  
+ 
+ What frame or frames of reference do you instinctively use when driving a car? When flying in a commercial jet airplane?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_18 | 3 Conceptual Questions
+Q: 18 .  
+ 
+ A basketball player dribbling down the court usually keeps his eyes fixed on the players around him. He is moving fast. Why doesn’t he need to keep his eyes on the ball?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_19 | 3 Conceptual Questions
+Q: 19 .  
+ 
+ If someone is riding in the back of a pickup truck and throws a softball straight backward, is it possible for the ball to fall straight down as viewed by a person standing at the side of the road? Under what condition would this occur? How would the motion of the ball appear to the person who threw it?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_20 | 3 Conceptual Questions
+Q: 20 .  
+ 
+ The hat of a jogger running at constant velocity falls off the back of his head. Draw a sketch showing the path of the hat in the jogger’s frame of reference. Draw its path as viewed by a stationary observer.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_21 | 3 Conceptual Questions
+Q: 21 .  
+ 
+ A clod of dirt falls from the bed of a moving truck. It strikes the ground directly below the end of the truck. What is the direction of its velocity relative to the truck just before it hits? Is this the same as the direction of its velocity relative to ground just before it hits? Explain your answers.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_3.49 | 3 Problems Exercises
+Q: 1 .  
+ 
+ Find the following for path A in  Figure 3.49 : (a) the total distance traveled, and (b) the magnitude and direction of the displacement from start to finish. 
+ 
+ 
+ 
+ 
+ Figure  
+ 3.49 
+   
+ The various lines represent paths taken by different people walking in a city. All blocks are 120 m on a side.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_2 | 3 Problems Exercises
+Q: 2 .  
+ 
+ Find the following for path B in  Figure 3.49 : (a) the total distance traveled, and (b) the magnitude and direction of the displacement from start to finish.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_4 | 3 Problems Exercises
+Q: 4 .  
+ 
+ Suppose you walk 18.0 m straight west and then 25.0 m straight north. How far are you from your starting point, and what is the compass direction of a line connecting your starting point to your final position? (If you represent the two legs of the walk as vector displacements  A A  and  B B , as in  Figure 3.50 , then this problem asks you to find their sum  R = A + B R = A + B .) 
+ 
+ 
+ 
+ Figure  
+ 3.50 
+   
+ The two displacements  A A  and  B B  add to give a total displacement  R R  having magnitude  R R  and direction  θ θ .
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_3.51 | 3 Problems Exercises
+Q: 5 .  
+ 
+ Suppose you first walk 12.0 m in a direction  20º 20º  west of north and then 20.0 m in a direction  40.0º 40.0º  south of west. How far are you from your starting point, and what is the compass direction of a line connecting your starting point to your final position? (If you represent the two legs of the walk as vector displacements  A A  and  B B , as in  Figure 3.51 , then this problem finds their sum  R = A + B R = A + B .) 
+ 
+ 
+ 
+ Figure  
+ 3.51
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_6 | 3 Problems Exercises
+Q: 6 .  
+ 
+ Repeat the problem above, but reverse the order of the two legs of the walk; show that you get the same final result. That is, you first walk leg  B B , which is 20.0 m in a direction exactly  40º 40º  south of west, and then leg  A A , which is 12.0 m in a direction exactly  20º 20º  west of north. (This problem shows that  A + B = B + A A + B = B + A .)
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_8 | 3 Problems Exercises
+Q: 8 .  
+ 
+ Show that the  order  of addition of three vectors does not affect their sum. Show this property by choosing any three vectors  A A ,  B B , and  C C , all having different lengths and directions. Find the sum  A + B + C A + B + C  then find their sum when added in a different order and show the result is the same. (There are five other orders in which  A A ,  B B , and  C C  can be added; choose only one.)
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_10 | 3 Problems Exercises
+Q: 10 .  
+ 
+ Find the magnitudes of velocities  v A v A  and  v B v B  in  Figure 3.52 
+ 
+ 
+ 
+ Figure  
+ 3.52 
+   
+ The two velocities  v A v A  and  v B v B  add to give a total  v tot v tot .
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_12 | 3 Problems Exercises
+Q: 12 .  
+ 
+ Find the components of  v tot v tot  along a set of perpendicular axes rotated  30º 30º  counterclockwise relative to those in  Figure 3.52 .
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_3.53 | 3 Problems Exercises
+Q: 13 .  
+ 
+ Find the following for path C in  Figure 3.53 : (a) the total distance traveled and (b) the magnitude and direction of the displacement from start to finish. In this part of the problem, explicitly show how you follow the steps of the analytical method of vector addition. 
+ 
+ 
+ 
+ Figure  
+ 3.53 
+   
+ The various lines represent paths taken by different people walking in a city. All blocks are 120 m on a side.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_14 | 3 Problems Exercises
+Q: 14 .  
+ 
+ Find the following for path D in  Figure 3.53 : (a) the total distance traveled and (b) the magnitude and direction of the displacement from start to finish. In this part of the problem, explicitly show how you follow the steps of the analytical method of vector addition.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_3.54 | 3 Problems Exercises
+Q: 15 .  
+ 
+ Find the north and east components of the displacement from San Francisco to Sacramento shown in  Figure 3.54 .
+ 
+ 
+ 
+ 
+ Figure  
+ 3.54
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_16 | 3 Problems Exercises
+Q: 16 .  
+ 
+ Solve the following problem using analytical techniques: Suppose you walk 18.0 m straight west and then 25.0 m straight north. How far are you from your starting point, and what is the compass direction of a line connecting your starting point to your final position? (If you represent the two legs of the walk as vector displacements  A A  and  B B , as in  Figure 3.55 , then this problem asks you to find their sum  R = A + B R = A + B .) 
+ 
+ 
+ 
+ Figure  
+ 3.55 
+   
+ The two displacements  A A  and  B B  add to give a total displacement  R R  having magnitude  R R  and direction  θ θ . 
+ Note that you can also solve this graphically. Discuss why the analytical technique for solving this problem is potentially more accurate than the graphical technique.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_18 | 3 Problems Exercises
+Q: 18 .  
+ 
+ You drive  7 . 50 km 7 . 50 km  in a straight line in a direction
+
+ 15º 15º   east of north. (a) Find the distances you would have to drive straight east and then straight north to arrive at the same point. (This determination is equivalent to find the components of the displacement along the east and north directions.) (b) Show that you still arrive at the same point if the east and north legs are reversed in order.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_20 | 3 Problems Exercises
+Q: 20 .  
+ 
+ A new landowner has a triangular piece of flat land she wishes to fence. Starting at the west corner, she measures the first side to be 80.0 m long and the next to be 105 m. These sides are represented as displacement vectors  A A  from  B B  in  Figure 3.56 . She then correctly calculates the length and orientation of the third side  C C . What is her result?
+
+ 
+ 
+ 
+ 
+ 
+ Figure  
+ 3.56
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_22 | 3 Problems Exercises
+Q: 22 .  
+ 
+ A farmer wants to fence off a four-sided plot of flat land. They measure the first three sides, shown as  
+ 
+ 
+ 
+ A 
+ , 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ A 
+ , 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ B 
+ , 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ B 
+ , 
+ 
+ 
+ 
+  and  
+ 
+ 
+ 
+ C 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ C 
+ 
+ 
+ 
+  in  Figure 3.57 , and then correctly calculate the length and orientation of the fourth side  D D .
+  What is their result? 
+ 
+ 
+ 
+ 
+ 
+ Figure  
+ 3.57
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_24 | 3 Problems Exercises
+Q: 24 .  
+ 
+ Suppose a pilot flies  40 . 0 km 40 . 0 km  in a direction  60º 60º  north of east and then flies  30 . 0 km 30 . 0 km  in a direction  15º 15º  north of east as shown in  Figure 3.58 . Find her total distance  R R  from the starting point and the direction  θ θ  of the straight-line path to the final position. Discuss qualitatively how this flight would be altered by a wind from the north and how the effect of the wind would depend on both wind speed and the speed of the plane relative to the air mass. 
+ 
+ 
+ 
+ 
+ Figure  
+ 3.58
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_26 | 3 Problems Exercises
+Q: 26 .  
+ A ball is kicked with an initial velocity of 16 m/s in the horizontal direction and 12 m/s in the vertical direction. (a) At what speed does the ball hit the ground? (b) For how long does the ball remain in the air? (c)What maximum height is attained by the ball?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_28 | 3 Problems Exercises
+Q: 28 .  
+ (a) A daredevil is attempting to jump his motorcycle over a line of buses parked end to end by driving up a  32º 32º  ramp at a speed of  40 . 0 m/s  ( 144 km/h ) 40 . 0 m/s  ( 144 km/h ) . How many buses can he clear if the top of the takeoff ramp is at the same height as the bus tops and the buses are 20.0 m long? (b) Discuss what your answer implies about the margin of error in this act—that is, consider how much greater the range is than the horizontal distance he must travel to miss the end of the last bus. (Neglect air resistance.)
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_30 | 3 Problems Exercises
+Q: 30 .  
+ A rugby player passes the ball 7.00 m across the field, where it is caught at the same height as it left his hand. (a) At what angle was the ball thrown if its initial speed was 12.0 m/s, assuming that the smaller of the two possible angles was used? (b) What other angle gives the same range, and why would it not be used? (c) How long did this pass take?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_32 | 3 Problems Exercises
+Q: 32 .  
+ Verify the ranges shown for the projectiles in  Figure 3.38 (b) for an initial velocity of 50 m/s at the given initial angles.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_34 | 3 Problems Exercises
+Q: 34 .  
+ An arrow is shot from a height of 1.5 m toward a cliff of height  H H . It is shot with a velocity of 30 m/s at an angle of  60º 60º  above the horizontal. It lands on the top edge of the cliff 4.0 s later. (a) What is the height of the cliff? (b) What is the maximum height reached by the arrow along its trajectory? (c) What is the arrow’s impact speed just before hitting the cliff?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_36 | 3 Problems Exercises
+Q: 36 .  
+ The world long jump record is 8.95 m (Mike Powell, USA, 1991). Treated as a projectile, what is the maximum range obtainable by a person if he has a take-off speed of 9.5 m/s? State your assumptions.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_38 | 3 Problems Exercises
+Q: 38 .  
+ A football quarterback is moving straight backward at a speed of 2.00 m/s when he throws a pass to a player 18.0 m straight downfield. (a) If the ball is thrown at an angle of  25º 25º  relative to the ground and is caught at the same height as it is released, what is its initial speed relative to the ground? (b) How long does it take to get to the receiver? (c) What is its maximum height above its point of release?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_40 | 3 Problems Exercises
+Q: 40 .  
+ An eagle is flying horizontally at a speed of 3.00 m/s when the fish in her talons wiggles loose and falls into the lake 5.00 m below. Calculate the velocity of the fish relative to the water when it hits the water.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_42 | 3 Problems Exercises
+Q: 42 .  
+ Suppose a soccer player kicks the ball from a distance 30 m toward the goal. Find the initial speed of the ball if it just passes over the goal, 2.4 m above the ground, given the initial direction to be  40º 40º  above the horizontal.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_44 | 3 Problems Exercises
+Q: 44 .  
+ The free throw line in basketball is 4.57 m (15 ft) from the basket, which is 3.05 m (10 ft) above the floor. A player standing on the free throw line throws the ball with an initial speed of 8.15 m/s, releasing it at a height of 2.44 m (8 ft) above the floor. At what angle above the horizontal must the ball be thrown to exactly hit the basket? Note that most players will use a large initial angle rather than a flat shot because it allows for a larger margin of error. Explicitly show how you follow the steps involved in solving projectile motion problems.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_46 | 3 Problems Exercises
+Q: 46 .  
+ A basketball player is running at  5 . 00 m/s 5 . 00 m/s  directly toward the basket when he jumps into the air to dunk the ball. He maintains his horizontal velocity. (a) What vertical velocity does he need to rise 0.750 m above the floor? (b) How far from the basket (measured in the horizontal direction) must he start his jump to reach his maximum height at the same time as he reaches the basket?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_48 | 3 Problems Exercises
+Q: 48 .  
+ Prove that the trajectory of a projectile is parabolic, having the form  y = ax + bx 2 y = ax + bx 2 . To obtain this expression, solve the equation
+
+ x = v 0 x t x = v 0 x t  for
+
+ t t  and substitute it into the expression for
+
+ y = v 0 y t – ( 1 / 2 ) gt 2 y = v 0 y t – ( 1 / 2 ) gt 2  (These equations describe the  x x  and  y y  positions of a projectile that starts at the origin.) You should obtain an equation of the form  y = ax + bx 2 y = ax + bx 2  where  a a  and  b b  are constants.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_50 | 3 Problems Exercises
+Q: 50 .  
+ Unreasonable Results  (a) Find the maximum range of a super cannon that has a muzzle velocity of 4.0 km/s. (b) What is unreasonable about the range you found? (c) Is the premise unreasonable or is the available equation inapplicable? Explain your answer. (d) If such a muzzle velocity could be obtained, discuss the effects of air resistance, thinning air with altitude, and the curvature of the Earth on the range of the super cannon.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_51 | 3 Problems Exercises
+Q: 51 .  
+ Construct Your Own Problem   Consider a ball tossed over a fence. Construct a problem in which you calculate the ball’s needed initial velocity to just clear the fence. Among the things to determine are; the height of the fence, the distance to the fence from the point of release of the ball, and the height at which the ball is released. You should also consider whether it is possible to choose the initial speed for the ball and just calculate the angle at which it is thrown. Also examine the possibility of multiple solutions given the distances and heights you have chosen.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_53 | 3 Problems Exercises
+Q: 53 .  
+ 
+ A seagull flies at a velocity of 9.00 m/s straight into the wind. (a) If it takes the bird 20.0 min to travel 6.00 km relative to the Earth, what is the velocity of the wind? (b) If the bird turns around and flies with the wind, how long will he take to return 6.00 km? (c) Discuss how the wind affects the total round-trip time compared to what it would be with no wind.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_55 | 3 Problems Exercises
+Q: 55 .  
+ 
+ Verify that the coin dropped by the airline passenger in the  Example 3.8  travels 144 m horizontally while falling 1.50 m in the frame of reference of the Earth.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_57 | 3 Problems Exercises
+Q: 57 .  
+ 
+ A ship sets sail from Rotterdam, The Netherlands, heading due north at 7.00 m/s relative to the water. The local ocean current is 1.50 m/s in a direction  40.0º 40.0º  north of east. What is the velocity of the ship relative to the Earth?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_59 | 3 Problems Exercises
+Q: 59 .  
+ 
+ (a) In what direction would the ship in  Exercise 3.57  have to travel in order to have a velocity straight north relative to the Earth, assuming its speed relative to the water remains  7 . 00 m/s 7 . 00 m/s ? (b) What would its speed be relative to the Earth?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_61 | 3 Problems Exercises
+Q: 61 .  
+ 
+ A sandal is dropped from the top of a 15.0-m-high mast on a ship moving at 1.75 m/s due south. Calculate the velocity of the sandal when it hits the deck of the ship: (a) relative to the ship and (b) relative to a stationary observer on shore. (c) Discuss how the answers give a consistent result for the position at which the sandal hits the deck.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_63 | 3 Problems Exercises
+Q: 63 .  
+ 
+ The great astronomer Edwin Hubble discovered that all distant galaxies are receding from our Milky Way Galaxy with velocities proportional to their distances. It appears to an observer on the Earth that we are at the center of an expanding universe.  Figure 3.59  illustrates this for five galaxies lying along a straight line, with the Milky Way Galaxy at the center. Using the data from the figure, calculate the velocities: (a) relative to galaxy 2 and (b) relative to galaxy 5. The results mean that observers on all galaxies will see themselves at the center of the expanding universe, and they would likely be aware of relative velocities, concluding that it is not possible to locate the center of expansion with the given information. 
+ 
+ 
+ 
+ 
+ Figure  
+ 3.59 
+   
+ Five galaxies on a straight line, showing their distances and velocities relative to the Milky Way (MW) Galaxy. The distances are in millions of light years (Mly), where a light year is the distance light travels in one year. The velocities are nearly proportional to the distances. The sizes of the galaxies are greatly exaggerated; an average galaxy is about 0.1 Mly across.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_65 | 3 Problems Exercises
+Q: 65 .  
+ 
+ An athlete crosses a 25-m-wide river by swimming perpendicular to the water current at a speed of 0.5 m/s relative to the water. They reach the opposite side at a distance 40 m downstream from the starting point. How fast is the water in the river flowing with respect to the ground? What is the speed of the swimmer with respect to a friend at rest on the ground?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_67 | 3 Problems Exercises
+Q: 67 .  
+ 
+ An ice hockey player is moving at 8.00 m/s when they hit the puck toward the goal. The speed of the puck relative to the player is 29.0 m/s. The line between the center of the goal and the player makes a  90.0º 90.0º  angle relative to their path as shown in  Figure 3.60 . What angle must the puck’s velocity make relative to the player (in their frame of reference) to hit the center of the goal? 
+ 
+ 
+ 
+ Figure  
+ 3.60 
+   
+ An ice hockey player moving across the rink must shoot backward to give the puck a velocity toward the goal.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_68 | 3 Problems Exercises
+Q: 68 .  
+ 
+ Unreasonable Results  Suppose you wish to shoot supplies straight up to astronauts in an orbit 36,000 km above the surface of the Earth. (a) At what velocity must the supplies be launched? (b) What is unreasonable about this velocity? (c) Is there a problem with the relative velocity between the supplies and the astronauts when the supplies reach their maximum height? (d) Is the premise unreasonable or is the available equation inapplicable? Explain your answer.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_69 | 3 Problems Exercises
+Q: 69 .  
+ 
+ Unreasonable Results  A commercial airplane has an air speed of  280 m/s 280 m/s  due east and flies with a strong tailwind. It travels 3000 km in a direction  5º 5º  south of east in 1.50 h. (a) What was the velocity of the plane relative to the ground? (b) Calculate the magnitude and direction of the tailwind’s velocity. (c) What is unreasonable about both of these velocities? (d) Which premise is unreasonable?
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+
+ID: OpenStax_70 | 3 Problems Exercises
+Q: 70 .  
+ 
+ Construct Your Own Problem   Consider an airplane headed for a runway in a cross wind. Construct a problem in which you calculate the angle the airplane must fly relative to the air mass in order to have a velocity parallel to the runway. Among the things to consider are the direction of the runway, the wind speed and direction (its velocity) and the speed of the plane relative to the air mass. Also calculate the speed of the airplane relative to the ground. Discuss any last minute maneuvers the pilot might have to perform in order for the plane to land with its wheels pointing straight down the runway.
+
+  CORRECT: See Solution
+  WRONG:   N/A (Open-ended)
+           Flaw: Incorrect logic.
+           Reframe: Re-read the chapter section.
+
+LESSON:
+No solution provided.
+
+----------------------------------------------------------------------
+

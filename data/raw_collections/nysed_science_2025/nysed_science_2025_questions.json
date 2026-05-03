@@ -1,0 +1,1980 @@
+{
+  "source": "NYSED 2025 Grade 5 and Grade 8 Science Released Questions",
+  "questionCount": 94,
+  "items": [
+    {
+      "source_id": "nysed-science-2025::grade-5::1",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice A 1 3-LS3-1 LS 0.56",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=3-LS3-1",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::2",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 2,
+      "prompt_text": "Constructed Response 1 3-LS3-1 LS 0.24",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::3",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice C 1 3-LS3-2 LS 0.52",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=3-LS3-2",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::4",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice B 1 3-LS1-1 LS 0.71",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=3-LS1-1",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::5",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 5,
+      "prompt_text": "Constructed Response 1 3-LS2-1 LS 0.29",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::6",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 6,
+      "prompt_text": "Constructed Response 1 5-PS1-4 PS 0.25",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::7",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice A 1 5-PS1-2 PS 0.32",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=5-PS1-2",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::8",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 8,
+      "prompt_text": "Constructed Response 1 5-PS1-1 PS 0.08",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::9",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice C 1 5-PS1-3 PS 0.50",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=5-PS1-3",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::10",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 10,
+      "prompt_text": "Constructed Response 1 5-PS1-3 PS 0.12",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::11",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice C 1 4-ESS2-2 ESS 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=4-ESS2-2",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::12",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 12,
+      "prompt_text": "Constructed Response 1 4-ESS2-2 ESS 0.39",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::13",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 13,
+      "prompt_text": "Constructed Response 1 4-ESS2-2 ESS 0.26",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::14",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice B 1 4-ESS2-2 ESS 0.55",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=4-ESS2-2",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::15",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice A 1 3-5-ETS1-2 0.38",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=3-5-ETS1-2",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::17",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 17,
+      "prompt_text": "24",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::18",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 18,
+      "prompt_text": "25",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::19",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 19,
+      "prompt_text": "26",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::20",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 20,
+      "prompt_text": "27 Sun Mon Tue Wed Thu Fri Sat",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::21",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 21,
+      "prompt_text": "Constructed Response 1 5-LS2-1 LS 0.25",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::22",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 22,
+      "prompt_text": "Multiple Choice D 1 5-PS3-1 PS 0.26",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=5-PS3-1",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::23",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice C 1 3-LS1-1 LS 0.43",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=3-LS1-1",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::24",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 24,
+      "prompt_text": "Constructed Response 1 3-LS4-3 LS 0.25",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::25",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 25,
+      "prompt_text": "Multiple Choice A 1 3-LS4-4 LS 0.37",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=3-LS4-4",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::26",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 26,
+      "prompt_text": "Constructed Response 1 5-ESS1-1 ESS 0.08",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::27",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 27,
+      "prompt_text": "Multiple Choice D 1 5-ESS1-2 ESS 0.69",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=5-ESS1-2",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::28",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 28,
+      "prompt_text": "Constructed Response 1 5-ESS1-2 ESS 0.13",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::29",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 29,
+      "prompt_text": "Multiple Choice A 1 5-ESS1-2 ESS 0.30",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=5-ESS1-2",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::30",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 30,
+      "prompt_text": "Multiple Choice D 1 5-ESS1-2 ESS 0.50",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=5-ESS1-2",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::31",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 31,
+      "prompt_text": "Constructed Response 1 3-PS2-1 PS 0.37",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::32",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice A 1 3-PS2-3 PS 0.30",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=3-PS2-3",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::33",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 33,
+      "prompt_text": "Constructed Response 1 3-PS2-3 PS 0.01",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::34",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice D 1 3-PS2-1 PS 0.33",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=3-PS2-1",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::35",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice B 1 3-5-ETS1-3 0.58",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=3-5-ETS1-3",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-5::36",
+      "collection_id": "nysed-science-2025::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2025 Grade 5 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g5.pdf",
+      "question_number": 36,
+      "prompt_text": "Multiple Choice C 1 4-PS3-2 PS 0.49 THE STATE EDUCATION DEPARTMENT * This item map identifies the Performance Expectation with which each test question is aligned. All NYSP-12SLS Performance Expectations are three-dimensional (https://www.nysed.gov/sites/default/files/programs/standards-instruction/p-12-science- learning-standards.pdf). The integration of these three dimensions provides students with a context for the content of science (DCI), the methods by which science knowledge is acquired and understood (SEP), and the ways in which the sciences are connected through concepts that have universal meaning across the disciplines (CCC). Grade 5 Released Questions 2025 Elementary-level Science Test Map to the Standards THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=4-PS3-2",
+      "candidate_track_ids": [
+        "scienceYear5",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 5 Science",
+        "science",
+        "grade-5",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::0",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 0,
+      "prompt_text": "10",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::1",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 1,
+      "prompt_text": "Constructed Response 1 MS-PS1-4 PS 0.34",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::2",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice A 1 MS-PS1-4 PS 0.33",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=MS-PS1-4",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::3",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice B 1 MS-PS1-7 PS 0.49",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=MS-PS1-7",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::4",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice D 1 MS-PS1-3 PS 0.47",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=MS-PS1-3",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::5",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 5,
+      "prompt_text": "Constructed Response 1 MS-PS1-2 PS 0.06",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::6",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 6,
+      "prompt_text": "Multiple Choice B 1 MS-ESS2-4 ESS 0.61",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=MS-ESS2-4",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::7",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice D 1 MS-ESS3-5 ESS 0.38",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=MS-ESS3-5",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::8",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 8,
+      "prompt_text": "Constructed Response 1 MS-ESS2-6 ESS 0.01",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::9",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 9,
+      "prompt_text": "Constructed Response 1 MS-ESS3-2 ESS 0.20",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::10",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice B 1 MS-LS2-2 LS 0.53",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=MS-LS2-2",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::11",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice A 1 MS-LS2-4 LS 0.37",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=MS-LS2-4",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::12",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 12,
+      "prompt_text": "Multiple Choice B 1 MS-ESS3-2 ESS 0.32",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=MS-ESS3-2",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::13",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice D 1 MS-ESS3-4 ESS 0.28",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=MS-ESS3-4",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::14",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice C 1 MS-ESS1-3 ESS 0.31",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=MS-ESS1-3",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::15",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 15,
+      "prompt_text": "Constructed Response 1 MS-ESS1-3 ESS 0.06",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::16",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice D 1 MS-PS2-4 PS 0.24",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=MS-PS2-4",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::17",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 17,
+      "prompt_text": "Constructed Response 1 MS-ESS1-2 ESS 0.09",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::18",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 18,
+      "prompt_text": "Multiple Choice B 1 MS-ETS1-1 0.31",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=MS-ETS1-1",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::19",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 19,
+      "prompt_text": "Multiple Choice D 1 MS-LS1-3 LS 0.28",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=MS-LS1-3",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::20",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 20,
+      "prompt_text": "Constructed Response 1 MS-LS1-8 LS 0.14",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::21",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice A 1 MS-LS1-2 LS 0.30",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=MS-LS1-2",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::22",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 22,
+      "prompt_text": "Constructed Response 1 MS-LS1-7 LS 0.07",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::23",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice C 1 MS-LS1-8 LS 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=MS-LS1-8",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::24",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 24,
+      "prompt_text": "Multiple Choice A 1 MS-PS1-2 PS 0.35",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=MS-PS1-2",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::25",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 25,
+      "prompt_text": "Multiple Choice C 1 MS-PS1-5 PS 0.27",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=MS-PS1-5",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::26",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 26,
+      "prompt_text": "Constructed Response 1 MS-PS1-2 PS 0.10",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::27",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 27,
+      "prompt_text": "Multiple Choice A 1 MS-ETS1-2 0.22",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=MS-ETS1-2",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::28",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 28,
+      "prompt_text": "Constructed Response 1 MS-ESS2-3 ESS 0.07",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::29",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 29,
+      "prompt_text": "Multiple Choice A 1 MS-ESS2-3 ESS 0.47",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=MS-ESS2-3",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::30",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 30,
+      "prompt_text": "Multiple Choice D 1 MS-ESS1-4 ESS 0.29",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=MS-ESS1-4",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::31",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 31,
+      "prompt_text": "Constructed Response 1 MS-ESS2-3 ESS 0.18",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::37",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 37,
+      "prompt_text": "Constructed Response 1 MS-LS3-1 LS 0.22",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::38",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 38,
+      "prompt_text": "Constructed Response 1 MS-LS3-1 LS 0.22",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::39",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 39,
+      "prompt_text": "Multiple Choice B 1 MS-LS3-1 LS 0.31",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=MS-LS3-1",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::40",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 40,
+      "prompt_text": "Constructed Response 1 MS-LS3-2 LS 0.12",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::41",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 41,
+      "prompt_text": "Multiple Choice A 1 MS-LS4-5 LS 0.32",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=MS-LS4-5",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::42",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response 1 MS-PS2-3 PS 0.06",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::43",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response 1 MS-PS2-3 PS 0.08",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::44",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 44,
+      "prompt_text": "Multiple Choice A 1 MS-PS2-5 PS 0.37",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=MS-PS2-5",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::45",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 45,
+      "prompt_text": "Multiple Choice B 1 MS-PS2-2 PS 0.43",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=MS-PS2-2",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::46",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 46,
+      "prompt_text": "Multiple Choice C 1 MS-PS3-5 PS 0.43",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=MS-PS3-5",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::47",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 47,
+      "prompt_text": "Constructed Response 1 MS-LS3-2 LS 0.26",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::48",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 48,
+      "prompt_text": "Multiple Choice A 1 MS-LS4-2 LS 0.50",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=MS-LS4-2",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::49",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 49,
+      "prompt_text": "Constructed Response 1 MS-LS4-6 LS 0.06",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::50",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 50,
+      "prompt_text": "Constructed Response 1 MS-LS2-4 LS 0.09 THE STATE EDUCATION DEPARTMENT Grade 8 Released Questions 2025 Intermediate-level Science Test Map to the Standards THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::51",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 51,
+      "prompt_text": "Multiple Choice D 1 MS-LS2-5 LS 0.30",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=MS-LS2-5",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::52",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 52,
+      "prompt_text": "Multiple Choice C 1 MS-PS3-1 PS 0.27",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=MS-PS3-1",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::53",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 53,
+      "prompt_text": "Multiple Choice B 1 MS-PS3-1 PS 0.25",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=MS-PS3-1",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::54",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 54,
+      "prompt_text": "Constructed Response 1 MS-PS3-5 PS 0.15",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::55",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 55,
+      "prompt_text": "Constructed Response 1 MS-PS3-1 PS 0.14",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::56",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 56,
+      "prompt_text": "Multiple Choice C 1 MS-PS3-2 PS 0.48 * This item map identifies the Performance Expectation with which each test question is aligned. All NYSP-12SLS Performance Expectations are three-dimensional (https://www.nysed.gov/sites/default/files/programs/standards-instruction/p-12-science- learning-standards.pdf). The integration of these three dimensions provides students with a context for the content of science (DCI), the methods by which science knowledge is acquired and understood (SEP), and the ways in which the sciences are connected through concepts that have universal meaning across the disciplines (CCC).",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=MS-PS3-2",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::60",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 60,
+      "prompt_text": "70",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::70",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 70,
+      "prompt_text": "80",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::71",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 71,
+      "prompt_text": "million years ago 5-15 cm/year EURASIAN PLATE INDIAN SUBCONTINENT INDIAN- AUSTRALIAN PLATE N Diagram 2 N Mt. Everest Himalayas INDIAN SUBCONTINENT EURASIAN PLATE PRESENT-DAY GO ONPage 33",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::80",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 80,
+      "prompt_text": "90 100 110 120 130 140 150 160 170 180 190 200 Effect of Speed on Kinetic Energy Speed (m/s) Kinetic Energy (g\u2022m2/s2) 1234 5 STOP",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::81",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 81,
+      "prompt_text": "0 1 2 Maple syrup",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::90",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 90,
+      "prompt_text": "100 110 120 130 140 150 160 170 180 190 200 Effect of Speed on Kinetic Energy Speed (m/s) Kinetic Energy (g\u2022m2/s2) 1234 5 0",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    },
+    {
+      "source_id": "nysed-science-2025::grade-8::92",
+      "collection_id": "nysed-science-2025::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2025 Grade 8 Science",
+      "source_url": "https://www.nysedregents.org/ei/science/2025/2025-released-items-science-g8.pdf",
+      "question_number": 92,
+      "prompt_text": "Model of Guppy Cells During Reproduction",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "middleSchoolEarthSpace",
+        "ck12",
+        "khanacademy"
+      ],
+      "topic_tags": [
+        "NYSED 2025 Grade 8 Science",
+        "science",
+        "grade-8",
+        "nysed-2025"
+      ]
+    }
+  ]
+}

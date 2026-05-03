@@ -1,0 +1,1457 @@
+{
+  "generatedAt": "2026-05-03",
+  "source": "OpenTriviaQA",
+  "sourceFile": "data/raw_collections/opentriviaqa/opentriviaqa_questions.json",
+  "category": "for-kids",
+  "license": "CC BY-SA 4.0",
+  "totalRows": 759,
+  "recommendation": "Do not bulk-import the category. Use only the explicitly mapped rows after normal question-quality review; keep all rejected rows out of app wiring.",
+  "totals": {
+    "mappedRows": 69,
+    "rejectedRows": 690
+  },
+  "mappedCourses": [
+    {
+      "courseId": "col-arithmetic",
+      "courseName": "Arithmetic",
+      "confidence": "high",
+      "reason": "Direct primary arithmetic, patterns, whole-number operations, and simple number reasoning.",
+      "ids": [
+        136,
+        138,
+        139,
+        203,
+        204,
+        271,
+        273,
+        357,
+        359,
+        362,
+        364,
+        365,
+        552,
+        555,
+        557,
+        558
+      ],
+      "rowCount": 16,
+      "sourceIds": [
+        "opentriviaqa::for-kids::136",
+        "opentriviaqa::for-kids::138",
+        "opentriviaqa::for-kids::139",
+        "opentriviaqa::for-kids::203",
+        "opentriviaqa::for-kids::204",
+        "opentriviaqa::for-kids::271",
+        "opentriviaqa::for-kids::273",
+        "opentriviaqa::for-kids::357",
+        "opentriviaqa::for-kids::359",
+        "opentriviaqa::for-kids::362",
+        "opentriviaqa::for-kids::364",
+        "opentriviaqa::for-kids::365",
+        "opentriviaqa::for-kids::552",
+        "opentriviaqa::for-kids::555",
+        "opentriviaqa::for-kids::557",
+        "opentriviaqa::for-kids::558"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::136",
+          "prompt_text": "What would be next in this pattern:  XX, XXXX, XXXXXX, ________?",
+          "correct_answer": "XXXXXXXX"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::138",
+          "prompt_text": "Chad and Jason have a collection of comic books. Chad has 23 books. Together, Chad and Jason have a total of 59 books. How many books does Jason have?",
+          "correct_answer": "36"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::139",
+          "prompt_text": "Leah is making chocolate chip cookies. She has 6 groups of 5 chocolate chips each. If she adds one more group of 5 chocolate chips, how many chocolate chips will she have?",
+          "correct_answer": "35"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::203",
+          "prompt_text": "How much is 1 + 1?",
+          "correct_answer": "2"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::204",
+          "prompt_text": "If I have ten apples and I give them all to another person, how many do I have left?",
+          "correct_answer": "0"
+        }
+      ]
+    },
+    {
+      "courseId": "col-times-tables",
+      "courseName": "Times Tables",
+      "confidence": "high",
+      "reason": "Multiplication facts or multiplication-by-zero reasoning aligned to times-table fluency.",
+      "ids": [
+        202,
+        209
+      ],
+      "rowCount": 2,
+      "sourceIds": [
+        "opentriviaqa::for-kids::202",
+        "opentriviaqa::for-kids::209"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::202",
+          "prompt_text": "Does 10 X 10 give 100?",
+          "correct_answer": "Yes"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::209",
+          "prompt_text": "What is the final result of the following equation: 3 X 6 X 9 X 0 X 12 X 32 X 2 = ?",
+          "correct_answer": "0"
+        }
+      ]
+    },
+    {
+      "courseId": "col-money-basics",
+      "courseName": "Money Basics",
+      "confidence": "high",
+      "reason": "Money word problems involving totals, spending, and change.",
+      "ids": [
+        135,
+        137,
+        140,
+        206,
+        358,
+        360,
+        361,
+        366,
+        551
+      ],
+      "rowCount": 9,
+      "sourceIds": [
+        "opentriviaqa::for-kids::135",
+        "opentriviaqa::for-kids::137",
+        "opentriviaqa::for-kids::140",
+        "opentriviaqa::for-kids::206",
+        "opentriviaqa::for-kids::358",
+        "opentriviaqa::for-kids::360",
+        "opentriviaqa::for-kids::361",
+        "opentriviaqa::for-kids::366",
+        "opentriviaqa::for-kids::551"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::135",
+          "prompt_text": "Casey has 2 ten dollar bills, 3 five dollar bills, and 4 one dollar bills. How much money does Casey have altogether?",
+          "correct_answer": "$39"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::137",
+          "prompt_text": "Reeses Pieces cost $0.60. Nerds cost $0.35. Pepsi costs $0.90. Gum costs $0.45. I have $1.25, and want to spend all of my money. What should I buy?",
+          "correct_answer": "Pepsi and Nerds"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::140",
+          "prompt_text": "Stephanie has $0.85. She gives a quarter to Jennifer. In return, Jennifer gives Stephanie a dime. How much money does Stephanie have now?",
+          "correct_answer": "$0.70"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::206",
+          "prompt_text": "If Joe had $900 dollars in life savings and he bought a refrigerator for $600 dollars, how much money would he have left?",
+          "correct_answer": "$300"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::358",
+          "prompt_text": "If Jane had $3.00 and went to the store and bought a yo yo for $1.00, how much would Jane have left?",
+          "correct_answer": "$2.00"
+        }
+      ]
+    },
+    {
+      "courseId": "col-basic-geometry-and-measurement",
+      "courseName": "Basic Geometry and Measurement",
+      "confidence": "high",
+      "reason": "Time, units, weight comparison, and elementary angle facts.",
+      "ids": [
+        141,
+        205,
+        208,
+        363
+      ],
+      "rowCount": 4,
+      "sourceIds": [
+        "opentriviaqa::for-kids::141",
+        "opentriviaqa::for-kids::205",
+        "opentriviaqa::for-kids::208",
+        "opentriviaqa::for-kids::363"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::141",
+          "prompt_text": "Mike has to be to school at 8:00 a.m. If it takes him 25 minutes to walk to school, what time should he leave?",
+          "correct_answer": "7:35 a.m."
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::205",
+          "prompt_text": "If you put 1 gram of steel on one scale and 1 gram of feathers on another one, which one would weigh more?",
+          "correct_answer": "They would be equal"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::208",
+          "prompt_text": "In mathematics, is a right angle equal to 100 degrees?",
+          "correct_answer": "No"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::363",
+          "prompt_text": "How many inches are there in a foot?",
+          "correct_answer": "12"
+        }
+      ]
+    },
+    {
+      "courseId": "col-class-5-math",
+      "courseName": "Class 5 Math",
+      "confidence": "medium",
+      "reason": "Decimals, fractions, square roots, place value, and divide-by-10 items beyond early arithmetic.",
+      "ids": [
+        210,
+        275,
+        276,
+        409,
+        553,
+        554,
+        556
+      ],
+      "rowCount": 7,
+      "sourceIds": [
+        "opentriviaqa::for-kids::210",
+        "opentriviaqa::for-kids::275",
+        "opentriviaqa::for-kids::276",
+        "opentriviaqa::for-kids::409",
+        "opentriviaqa::for-kids::553",
+        "opentriviaqa::for-kids::554",
+        "opentriviaqa::for-kids::556"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::210",
+          "prompt_text": "100 multiplied by 0.3 gives 3.00.",
+          "correct_answer": "False"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::275",
+          "prompt_text": "The reciprocal of 3/4 is 1 1/3.",
+          "correct_answer": "True"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::276",
+          "prompt_text": "What is the square root of 121?",
+          "correct_answer": "11"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::409",
+          "prompt_text": "What is the square root of 144?",
+          "correct_answer": "12"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::553",
+          "prompt_text": "What do you get when you divide 123 by 10?",
+          "correct_answer": "12.3"
+        }
+      ]
+    },
+    {
+      "courseId": "col-class-6-math",
+      "courseName": "Class 6 Math",
+      "confidence": "medium",
+      "reason": "Upper-primary missing-angle and right-triangle reasoning.",
+      "ids": [
+        278,
+        280
+      ],
+      "rowCount": 2,
+      "sourceIds": [
+        "opentriviaqa::for-kids::278",
+        "opentriviaqa::for-kids::280"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::278",
+          "prompt_text": "One angle in a triangle is 47 degrees and the second angle is 106 degrees. How many degrees are in the third angle?",
+          "correct_answer": "27"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::280",
+          "prompt_text": "You have a right-angled triangle. You know that one leg is 3 cm long and the second leg is 4 cm long. What is the length of the hypotenuse of that triangle?",
+          "correct_answer": "5"
+        }
+      ]
+    },
+    {
+      "courseId": "col-4th-grade-reading-and-vocab",
+      "courseName": "4th Grade Reading and Vocab",
+      "confidence": "high",
+      "reason": "Antonyms, synonym concept, adjective/adverb recognition, hyphen and comma usage.",
+      "ids": [
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        718,
+        720,
+        721,
+        722,
+        723
+      ],
+      "rowCount": 13,
+      "sourceIds": [
+        "opentriviaqa::for-kids::218",
+        "opentriviaqa::for-kids::219",
+        "opentriviaqa::for-kids::220",
+        "opentriviaqa::for-kids::221",
+        "opentriviaqa::for-kids::222",
+        "opentriviaqa::for-kids::223",
+        "opentriviaqa::for-kids::224",
+        "opentriviaqa::for-kids::225",
+        "opentriviaqa::for-kids::718",
+        "opentriviaqa::for-kids::720",
+        "opentriviaqa::for-kids::721",
+        "opentriviaqa::for-kids::722",
+        "opentriviaqa::for-kids::723"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::218",
+          "prompt_text": "What is the opposite of cold?",
+          "correct_answer": "hot"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::219",
+          "prompt_text": "The opposite of open is closed.",
+          "correct_answer": "True"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::220",
+          "prompt_text": "What is the opposite of wrong?",
+          "correct_answer": "right"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::221",
+          "prompt_text": "What is the opposite of happy?",
+          "correct_answer": "sad"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::222",
+          "prompt_text": "Which of the following words is NOT an opposite of big?",
+          "correct_answer": "huge"
+        }
+      ]
+    },
+    {
+      "courseId": "col-5th-grade-reading-and-vocab",
+      "courseName": "5th Grade Reading and Vocab",
+      "confidence": "medium",
+      "reason": "Participle identification is language-conventions aligned but later than Word Builders.",
+      "ids": [
+        719
+      ],
+      "rowCount": 1,
+      "sourceIds": [
+        "opentriviaqa::for-kids::719"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::719",
+          "prompt_text": "What is the participle in the following sentence?  Jane noticed her father walking along the shoreline.",
+          "correct_answer": "walking"
+        }
+      ]
+    },
+    {
+      "courseId": "scienceYear1",
+      "courseName": "Science Discovery: Year 1",
+      "confidence": "high",
+      "reason": "Common animal identification and pet-care observations aligned to animals-including-humans foundations.",
+      "ids": [
+        50,
+        51,
+        53,
+        54,
+        55,
+        56,
+        57,
+        59,
+        715,
+        716,
+        717
+      ],
+      "rowCount": 11,
+      "sourceIds": [
+        "opentriviaqa::for-kids::50",
+        "opentriviaqa::for-kids::51",
+        "opentriviaqa::for-kids::53",
+        "opentriviaqa::for-kids::54",
+        "opentriviaqa::for-kids::55",
+        "opentriviaqa::for-kids::56",
+        "opentriviaqa::for-kids::57",
+        "opentriviaqa::for-kids::59",
+        "opentriviaqa::for-kids::715",
+        "opentriviaqa::for-kids::716",
+        "opentriviaqa::for-kids::717"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::50",
+          "prompt_text": "You can see this animal around ant-hill. It is almost 6 feet long and it likes to eat ants.",
+          "correct_answer": "Anteater"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::51",
+          "prompt_text": "It is a big animal with brown fur and it likes eating fish and honey. It has 42 teeth.",
+          "correct_answer": "Bear"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::53",
+          "prompt_text": "This is a big and grey animal with wide ears and a trunk. It cannot hop.",
+          "correct_answer": "Elephant"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::54",
+          "prompt_text": "This is a fluffy dog. It has a black-black or purple tongue.",
+          "correct_answer": "Chow Chow"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::55",
+          "prompt_text": "This animal lives in Africa. It has a really long neck and eats leaves. It produces almost no sounds.",
+          "correct_answer": "Giraffe"
+        }
+      ]
+    },
+    {
+      "courseId": "oceanPrimary",
+      "courseName": "Ocean Science",
+      "confidence": "high",
+      "reason": "Dolphin item fits marine mammals and breathing adaptations.",
+      "ids": [
+        58
+      ],
+      "rowCount": 1,
+      "sourceIds": [
+        "opentriviaqa::for-kids::58"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::58",
+          "prompt_text": "These animals live in the sea. They are very friendly to humans. Although they resemble fish, they will drown if kept underwater for too long.",
+          "correct_answer": "Dolphins"
+        }
+      ]
+    },
+    {
+      "courseId": "planetsPrimary",
+      "courseName": "Solar System & Beyond",
+      "confidence": "high",
+      "reason": "Earth tilt/seasons and daytime star visibility misconceptions fit primary space science.",
+      "ids": [
+        94,
+        95
+      ],
+      "rowCount": 2,
+      "sourceIds": [
+        "opentriviaqa::for-kids::94",
+        "opentriviaqa::for-kids::95"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::94",
+          "prompt_text": "Seasons change because the Earth is getting closer and further from the sun.",
+          "correct_answer": "False"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::95",
+          "prompt_text": "Stars vanish during the day.",
+          "correct_answer": "False"
+        }
+      ]
+    },
+    {
+      "courseId": "scienceYear3",
+      "courseName": "Science Discovery: Year 3",
+      "confidence": "high",
+      "reason": "Tree-ring age item fits plants/observation in lower KS2 science.",
+      "ids": [
+        92
+      ],
+      "rowCount": 1,
+      "sourceIds": [
+        "opentriviaqa::for-kids::92"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::92",
+          "prompt_text": "What do the rings on a tree tell us?",
+          "correct_answer": "how old the tree is"
+        }
+      ]
+    }
+  ],
+  "rejectedRows": [
+    {
+      "reason": "literature-franchise-recall-without-passage",
+      "rowCount": 304,
+      "sourceIds": [
+        "opentriviaqa::for-kids::2",
+        "opentriviaqa::for-kids::3",
+        "opentriviaqa::for-kids::7",
+        "opentriviaqa::for-kids::9",
+        "opentriviaqa::for-kids::10",
+        "opentriviaqa::for-kids::19",
+        "opentriviaqa::for-kids::20",
+        "opentriviaqa::for-kids::21",
+        "opentriviaqa::for-kids::22",
+        "opentriviaqa::for-kids::23",
+        "opentriviaqa::for-kids::25",
+        "opentriviaqa::for-kids::26",
+        "opentriviaqa::for-kids::31",
+        "opentriviaqa::for-kids::32",
+        "opentriviaqa::for-kids::38",
+        "opentriviaqa::for-kids::40",
+        "opentriviaqa::for-kids::41",
+        "opentriviaqa::for-kids::72",
+        "opentriviaqa::for-kids::73",
+        "opentriviaqa::for-kids::74",
+        "opentriviaqa::for-kids::75",
+        "opentriviaqa::for-kids::76",
+        "opentriviaqa::for-kids::78",
+        "opentriviaqa::for-kids::79",
+        "opentriviaqa::for-kids::80",
+        "opentriviaqa::for-kids::81",
+        "opentriviaqa::for-kids::82",
+        "opentriviaqa::for-kids::83",
+        "opentriviaqa::for-kids::84",
+        "opentriviaqa::for-kids::85",
+        "opentriviaqa::for-kids::86",
+        "opentriviaqa::for-kids::87",
+        "opentriviaqa::for-kids::88",
+        "opentriviaqa::for-kids::89",
+        "opentriviaqa::for-kids::90",
+        "opentriviaqa::for-kids::91",
+        "opentriviaqa::for-kids::107",
+        "opentriviaqa::for-kids::109",
+        "opentriviaqa::for-kids::110",
+        "opentriviaqa::for-kids::111",
+        "opentriviaqa::for-kids::112",
+        "opentriviaqa::for-kids::113",
+        "opentriviaqa::for-kids::115",
+        "opentriviaqa::for-kids::116",
+        "opentriviaqa::for-kids::117",
+        "opentriviaqa::for-kids::118",
+        "opentriviaqa::for-kids::119",
+        "opentriviaqa::for-kids::120",
+        "opentriviaqa::for-kids::122",
+        "opentriviaqa::for-kids::123",
+        "opentriviaqa::for-kids::124",
+        "opentriviaqa::for-kids::125",
+        "opentriviaqa::for-kids::142",
+        "opentriviaqa::for-kids::143",
+        "opentriviaqa::for-kids::144",
+        "opentriviaqa::for-kids::146",
+        "opentriviaqa::for-kids::150",
+        "opentriviaqa::for-kids::151",
+        "opentriviaqa::for-kids::164",
+        "opentriviaqa::for-kids::165",
+        "opentriviaqa::for-kids::168",
+        "opentriviaqa::for-kids::192",
+        "opentriviaqa::for-kids::194",
+        "opentriviaqa::for-kids::195",
+        "opentriviaqa::for-kids::196",
+        "opentriviaqa::for-kids::197",
+        "opentriviaqa::for-kids::198",
+        "opentriviaqa::for-kids::199",
+        "opentriviaqa::for-kids::200",
+        "opentriviaqa::for-kids::201",
+        "opentriviaqa::for-kids::211",
+        "opentriviaqa::for-kids::212",
+        "opentriviaqa::for-kids::213",
+        "opentriviaqa::for-kids::215",
+        "opentriviaqa::for-kids::216",
+        "opentriviaqa::for-kids::226",
+        "opentriviaqa::for-kids::227",
+        "opentriviaqa::for-kids::228",
+        "opentriviaqa::for-kids::229",
+        "opentriviaqa::for-kids::230",
+        "opentriviaqa::for-kids::231",
+        "opentriviaqa::for-kids::232",
+        "opentriviaqa::for-kids::233",
+        "opentriviaqa::for-kids::234",
+        "opentriviaqa::for-kids::238",
+        "opentriviaqa::for-kids::239",
+        "opentriviaqa::for-kids::240",
+        "opentriviaqa::for-kids::241",
+        "opentriviaqa::for-kids::243",
+        "opentriviaqa::for-kids::244",
+        "opentriviaqa::for-kids::245",
+        "opentriviaqa::for-kids::246",
+        "opentriviaqa::for-kids::247",
+        "opentriviaqa::for-kids::248",
+        "opentriviaqa::for-kids::249",
+        "opentriviaqa::for-kids::250",
+        "opentriviaqa::for-kids::251",
+        "opentriviaqa::for-kids::252",
+        "opentriviaqa::for-kids::253",
+        "opentriviaqa::for-kids::254",
+        "opentriviaqa::for-kids::255",
+        "opentriviaqa::for-kids::256",
+        "opentriviaqa::for-kids::257",
+        "opentriviaqa::for-kids::258",
+        "opentriviaqa::for-kids::259",
+        "opentriviaqa::for-kids::261",
+        "opentriviaqa::for-kids::262",
+        "opentriviaqa::for-kids::263",
+        "opentriviaqa::for-kids::265",
+        "opentriviaqa::for-kids::266",
+        "opentriviaqa::for-kids::267",
+        "opentriviaqa::for-kids::268",
+        "opentriviaqa::for-kids::270",
+        "opentriviaqa::for-kids::305",
+        "opentriviaqa::for-kids::306",
+        "opentriviaqa::for-kids::307",
+        "opentriviaqa::for-kids::308",
+        "opentriviaqa::for-kids::310",
+        "opentriviaqa::for-kids::312",
+        "opentriviaqa::for-kids::313",
+        "opentriviaqa::for-kids::315",
+        "opentriviaqa::for-kids::316",
+        "opentriviaqa::for-kids::317",
+        "opentriviaqa::for-kids::318",
+        "opentriviaqa::for-kids::320",
+        "opentriviaqa::for-kids::321",
+        "opentriviaqa::for-kids::323",
+        "opentriviaqa::for-kids::324",
+        "opentriviaqa::for-kids::336",
+        "opentriviaqa::for-kids::337",
+        "opentriviaqa::for-kids::343",
+        "opentriviaqa::for-kids::344",
+        "opentriviaqa::for-kids::351",
+        "opentriviaqa::for-kids::353",
+        "opentriviaqa::for-kids::367",
+        "opentriviaqa::for-kids::368",
+        "opentriviaqa::for-kids::370",
+        "opentriviaqa::for-kids::371",
+        "opentriviaqa::for-kids::372",
+        "opentriviaqa::for-kids::373",
+        "opentriviaqa::for-kids::374",
+        "opentriviaqa::for-kids::382",
+        "opentriviaqa::for-kids::383",
+        "opentriviaqa::for-kids::384",
+        "opentriviaqa::for-kids::385",
+        "opentriviaqa::for-kids::386",
+        "opentriviaqa::for-kids::387",
+        "opentriviaqa::for-kids::388",
+        "opentriviaqa::for-kids::389",
+        "opentriviaqa::for-kids::390",
+        "opentriviaqa::for-kids::391",
+        "opentriviaqa::for-kids::393",
+        "opentriviaqa::for-kids::394",
+        "opentriviaqa::for-kids::396",
+        "opentriviaqa::for-kids::397",
+        "opentriviaqa::for-kids::398",
+        "opentriviaqa::for-kids::399",
+        "opentriviaqa::for-kids::401",
+        "opentriviaqa::for-kids::402",
+        "opentriviaqa::for-kids::403",
+        "opentriviaqa::for-kids::404",
+        "opentriviaqa::for-kids::405",
+        "opentriviaqa::for-kids::406",
+        "opentriviaqa::for-kids::407",
+        "opentriviaqa::for-kids::408",
+        "opentriviaqa::for-kids::410",
+        "opentriviaqa::for-kids::411",
+        "opentriviaqa::for-kids::412",
+        "opentriviaqa::for-kids::414",
+        "opentriviaqa::for-kids::415",
+        "opentriviaqa::for-kids::416",
+        "opentriviaqa::for-kids::418",
+        "opentriviaqa::for-kids::420",
+        "opentriviaqa::for-kids::422",
+        "opentriviaqa::for-kids::423",
+        "opentriviaqa::for-kids::424",
+        "opentriviaqa::for-kids::425",
+        "opentriviaqa::for-kids::426",
+        "opentriviaqa::for-kids::437",
+        "opentriviaqa::for-kids::439",
+        "opentriviaqa::for-kids::440",
+        "opentriviaqa::for-kids::450",
+        "opentriviaqa::for-kids::452",
+        "opentriviaqa::for-kids::454",
+        "opentriviaqa::for-kids::455",
+        "opentriviaqa::for-kids::456",
+        "opentriviaqa::for-kids::457",
+        "opentriviaqa::for-kids::458",
+        "opentriviaqa::for-kids::459",
+        "opentriviaqa::for-kids::460",
+        "opentriviaqa::for-kids::466",
+        "opentriviaqa::for-kids::468",
+        "opentriviaqa::for-kids::469",
+        "opentriviaqa::for-kids::470",
+        "opentriviaqa::for-kids::471",
+        "opentriviaqa::for-kids::472",
+        "opentriviaqa::for-kids::473",
+        "opentriviaqa::for-kids::474",
+        "opentriviaqa::for-kids::475",
+        "opentriviaqa::for-kids::476",
+        "opentriviaqa::for-kids::477",
+        "opentriviaqa::for-kids::478",
+        "opentriviaqa::for-kids::479",
+        "opentriviaqa::for-kids::482",
+        "opentriviaqa::for-kids::484",
+        "opentriviaqa::for-kids::486",
+        "opentriviaqa::for-kids::488",
+        "opentriviaqa::for-kids::490",
+        "opentriviaqa::for-kids::491",
+        "opentriviaqa::for-kids::492",
+        "opentriviaqa::for-kids::493",
+        "opentriviaqa::for-kids::494",
+        "opentriviaqa::for-kids::495",
+        "opentriviaqa::for-kids::496",
+        "opentriviaqa::for-kids::497",
+        "opentriviaqa::for-kids::498",
+        "opentriviaqa::for-kids::499",
+        "opentriviaqa::for-kids::501",
+        "opentriviaqa::for-kids::503",
+        "opentriviaqa::for-kids::504",
+        "opentriviaqa::for-kids::512",
+        "opentriviaqa::for-kids::515",
+        "opentriviaqa::for-kids::520",
+        "opentriviaqa::for-kids::521",
+        "opentriviaqa::for-kids::523",
+        "opentriviaqa::for-kids::528",
+        "opentriviaqa::for-kids::533",
+        "opentriviaqa::for-kids::534",
+        "opentriviaqa::for-kids::535",
+        "opentriviaqa::for-kids::537",
+        "opentriviaqa::for-kids::541",
+        "opentriviaqa::for-kids::542",
+        "opentriviaqa::for-kids::543",
+        "opentriviaqa::for-kids::544",
+        "opentriviaqa::for-kids::545",
+        "opentriviaqa::for-kids::546",
+        "opentriviaqa::for-kids::547",
+        "opentriviaqa::for-kids::561",
+        "opentriviaqa::for-kids::562",
+        "opentriviaqa::for-kids::578",
+        "opentriviaqa::for-kids::579",
+        "opentriviaqa::for-kids::580",
+        "opentriviaqa::for-kids::581",
+        "opentriviaqa::for-kids::582",
+        "opentriviaqa::for-kids::583",
+        "opentriviaqa::for-kids::587",
+        "opentriviaqa::for-kids::588",
+        "opentriviaqa::for-kids::589",
+        "opentriviaqa::for-kids::590",
+        "opentriviaqa::for-kids::591",
+        "opentriviaqa::for-kids::592",
+        "opentriviaqa::for-kids::593",
+        "opentriviaqa::for-kids::594",
+        "opentriviaqa::for-kids::596",
+        "opentriviaqa::for-kids::597",
+        "opentriviaqa::for-kids::598",
+        "opentriviaqa::for-kids::599",
+        "opentriviaqa::for-kids::600",
+        "opentriviaqa::for-kids::601",
+        "opentriviaqa::for-kids::603",
+        "opentriviaqa::for-kids::605",
+        "opentriviaqa::for-kids::606",
+        "opentriviaqa::for-kids::611",
+        "opentriviaqa::for-kids::637",
+        "opentriviaqa::for-kids::639",
+        "opentriviaqa::for-kids::640",
+        "opentriviaqa::for-kids::641",
+        "opentriviaqa::for-kids::642",
+        "opentriviaqa::for-kids::645",
+        "opentriviaqa::for-kids::654",
+        "opentriviaqa::for-kids::655",
+        "opentriviaqa::for-kids::656",
+        "opentriviaqa::for-kids::657",
+        "opentriviaqa::for-kids::658",
+        "opentriviaqa::for-kids::667",
+        "opentriviaqa::for-kids::668",
+        "opentriviaqa::for-kids::669",
+        "opentriviaqa::for-kids::670",
+        "opentriviaqa::for-kids::671",
+        "opentriviaqa::for-kids::672",
+        "opentriviaqa::for-kids::673",
+        "opentriviaqa::for-kids::674",
+        "opentriviaqa::for-kids::675",
+        "opentriviaqa::for-kids::676",
+        "opentriviaqa::for-kids::677",
+        "opentriviaqa::for-kids::679",
+        "opentriviaqa::for-kids::680",
+        "opentriviaqa::for-kids::703",
+        "opentriviaqa::for-kids::704",
+        "opentriviaqa::for-kids::705",
+        "opentriviaqa::for-kids::706",
+        "opentriviaqa::for-kids::707",
+        "opentriviaqa::for-kids::708",
+        "opentriviaqa::for-kids::709",
+        "opentriviaqa::for-kids::710",
+        "opentriviaqa::for-kids::747",
+        "opentriviaqa::for-kids::749",
+        "opentriviaqa::for-kids::750",
+        "opentriviaqa::for-kids::752",
+        "opentriviaqa::for-kids::753",
+        "opentriviaqa::for-kids::754",
+        "opentriviaqa::for-kids::757",
+        "opentriviaqa::for-kids::758",
+        "opentriviaqa::for-kids::759"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::2",
+          "prompt_text": "Speaking of the famous fairy tale, that girl with the long hair was named which of these plants?",
+          "correct_answer": "Rampion"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::3",
+          "prompt_text": "Sleeping Beauty pricked her finger on the part of a spinning wheel that does this.",
+          "correct_answer": "Twists the fibres into a thread"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::7",
+          "prompt_text": "Referring to a well-known fairy tale, the millers daughter had to spin what?",
+          "correct_answer": "Dry stalks of wheat."
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::9",
+          "prompt_text": "Referring to the popular fairy tale, what is the name of the goose girls enchanted horse?",
+          "correct_answer": "Falada - to speak"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::10",
+          "prompt_text": "Poor Eliza of the famous fairy tale, had to make eleven shirts of what plant?",
+          "correct_answer": "Urticaceae"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::19",
+          "prompt_text": "Which charm did Doby the House Elf use to get Harry Potter in huge trouble with his Uncle?",
+          "correct_answer": "A hover charm"
+        }
+      ]
+    },
+    {
+      "reason": "too-adult-or-dark-for-primary",
+      "rowCount": 140,
+      "sourceIds": [
+        "opentriviaqa::for-kids::5",
+        "opentriviaqa::for-kids::8",
+        "opentriviaqa::for-kids::12",
+        "opentriviaqa::for-kids::16",
+        "opentriviaqa::for-kids::18",
+        "opentriviaqa::for-kids::24",
+        "opentriviaqa::for-kids::36",
+        "opentriviaqa::for-kids::37",
+        "opentriviaqa::for-kids::39",
+        "opentriviaqa::for-kids::45",
+        "opentriviaqa::for-kids::46",
+        "opentriviaqa::for-kids::47",
+        "opentriviaqa::for-kids::77",
+        "opentriviaqa::for-kids::97",
+        "opentriviaqa::for-kids::98",
+        "opentriviaqa::for-kids::99",
+        "opentriviaqa::for-kids::100",
+        "opentriviaqa::for-kids::101",
+        "opentriviaqa::for-kids::102",
+        "opentriviaqa::for-kids::103",
+        "opentriviaqa::for-kids::104",
+        "opentriviaqa::for-kids::105",
+        "opentriviaqa::for-kids::106",
+        "opentriviaqa::for-kids::108",
+        "opentriviaqa::for-kids::114",
+        "opentriviaqa::for-kids::145",
+        "opentriviaqa::for-kids::182",
+        "opentriviaqa::for-kids::188",
+        "opentriviaqa::for-kids::189",
+        "opentriviaqa::for-kids::190",
+        "opentriviaqa::for-kids::191",
+        "opentriviaqa::for-kids::193",
+        "opentriviaqa::for-kids::214",
+        "opentriviaqa::for-kids::217",
+        "opentriviaqa::for-kids::242",
+        "opentriviaqa::for-kids::264",
+        "opentriviaqa::for-kids::283",
+        "opentriviaqa::for-kids::285",
+        "opentriviaqa::for-kids::286",
+        "opentriviaqa::for-kids::287",
+        "opentriviaqa::for-kids::288",
+        "opentriviaqa::for-kids::289",
+        "opentriviaqa::for-kids::290",
+        "opentriviaqa::for-kids::291",
+        "opentriviaqa::for-kids::292",
+        "opentriviaqa::for-kids::294",
+        "opentriviaqa::for-kids::295",
+        "opentriviaqa::for-kids::296",
+        "opentriviaqa::for-kids::309",
+        "opentriviaqa::for-kids::311",
+        "opentriviaqa::for-kids::314",
+        "opentriviaqa::for-kids::319",
+        "opentriviaqa::for-kids::322",
+        "opentriviaqa::for-kids::326",
+        "opentriviaqa::for-kids::327",
+        "opentriviaqa::for-kids::328",
+        "opentriviaqa::for-kids::329",
+        "opentriviaqa::for-kids::330",
+        "opentriviaqa::for-kids::331",
+        "opentriviaqa::for-kids::332",
+        "opentriviaqa::for-kids::333",
+        "opentriviaqa::for-kids::334",
+        "opentriviaqa::for-kids::338",
+        "opentriviaqa::for-kids::339",
+        "opentriviaqa::for-kids::340",
+        "opentriviaqa::for-kids::352",
+        "opentriviaqa::for-kids::355",
+        "opentriviaqa::for-kids::356",
+        "opentriviaqa::for-kids::377",
+        "opentriviaqa::for-kids::378",
+        "opentriviaqa::for-kids::379",
+        "opentriviaqa::for-kids::380",
+        "opentriviaqa::for-kids::381",
+        "opentriviaqa::for-kids::413",
+        "opentriviaqa::for-kids::446",
+        "opentriviaqa::for-kids::448",
+        "opentriviaqa::for-kids::462",
+        "opentriviaqa::for-kids::481",
+        "opentriviaqa::for-kids::500",
+        "opentriviaqa::for-kids::502",
+        "opentriviaqa::for-kids::505",
+        "opentriviaqa::for-kids::514",
+        "opentriviaqa::for-kids::516",
+        "opentriviaqa::for-kids::517",
+        "opentriviaqa::for-kids::519",
+        "opentriviaqa::for-kids::522",
+        "opentriviaqa::for-kids::525",
+        "opentriviaqa::for-kids::526",
+        "opentriviaqa::for-kids::530",
+        "opentriviaqa::for-kids::531",
+        "opentriviaqa::for-kids::532",
+        "opentriviaqa::for-kids::536",
+        "opentriviaqa::for-kids::540",
+        "opentriviaqa::for-kids::550",
+        "opentriviaqa::for-kids::559",
+        "opentriviaqa::for-kids::560",
+        "opentriviaqa::for-kids::564",
+        "opentriviaqa::for-kids::571",
+        "opentriviaqa::for-kids::572",
+        "opentriviaqa::for-kids::574",
+        "opentriviaqa::for-kids::576",
+        "opentriviaqa::for-kids::577",
+        "opentriviaqa::for-kids::584",
+        "opentriviaqa::for-kids::585",
+        "opentriviaqa::for-kids::586",
+        "opentriviaqa::for-kids::595",
+        "opentriviaqa::for-kids::602",
+        "opentriviaqa::for-kids::604",
+        "opentriviaqa::for-kids::607",
+        "opentriviaqa::for-kids::608",
+        "opentriviaqa::for-kids::609",
+        "opentriviaqa::for-kids::610",
+        "opentriviaqa::for-kids::613",
+        "opentriviaqa::for-kids::615",
+        "opentriviaqa::for-kids::624",
+        "opentriviaqa::for-kids::626",
+        "opentriviaqa::for-kids::627",
+        "opentriviaqa::for-kids::628",
+        "opentriviaqa::for-kids::629",
+        "opentriviaqa::for-kids::630",
+        "opentriviaqa::for-kids::631",
+        "opentriviaqa::for-kids::632",
+        "opentriviaqa::for-kids::633",
+        "opentriviaqa::for-kids::635",
+        "opentriviaqa::for-kids::636",
+        "opentriviaqa::for-kids::638",
+        "opentriviaqa::for-kids::643",
+        "opentriviaqa::for-kids::644",
+        "opentriviaqa::for-kids::646",
+        "opentriviaqa::for-kids::647",
+        "opentriviaqa::for-kids::648",
+        "opentriviaqa::for-kids::659",
+        "opentriviaqa::for-kids::660",
+        "opentriviaqa::for-kids::661",
+        "opentriviaqa::for-kids::662",
+        "opentriviaqa::for-kids::663",
+        "opentriviaqa::for-kids::664",
+        "opentriviaqa::for-kids::678",
+        "opentriviaqa::for-kids::681",
+        "opentriviaqa::for-kids::711"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::5",
+          "prompt_text": "The Little Mermaid refused to kill the prince, so she eventually ends up as this.",
+          "correct_answer": "A daughter of the air."
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::8",
+          "prompt_text": "The witch in Hansel and Gretel was probably raised in this part of the world.",
+          "correct_answer": "Eastern Europe"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::12",
+          "prompt_text": "What does Ron hate the most about himself?",
+          "correct_answer": "Being poor"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::16",
+          "prompt_text": "Has Ron ever been dead?",
+          "correct_answer": "No"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::18",
+          "prompt_text": "In which of the first six books does Ron face Voldemort?",
+          "correct_answer": "Never"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::24",
+          "prompt_text": "Harry Potters Dudley Dursley has had many traumatic encounters with wizards.  Which of the following has not happened to him?",
+          "correct_answer": "He breaks out in horrible zits"
+        }
+      ]
+    },
+    {
+      "reason": "stale-pop-culture-or-entertainment-trivia",
+      "rowCount": 85,
+      "sourceIds": [
+        "opentriviaqa::for-kids::1",
+        "opentriviaqa::for-kids::157",
+        "opentriviaqa::for-kids::158",
+        "opentriviaqa::for-kids::159",
+        "opentriviaqa::for-kids::160",
+        "opentriviaqa::for-kids::162",
+        "opentriviaqa::for-kids::166",
+        "opentriviaqa::for-kids::180",
+        "opentriviaqa::for-kids::181",
+        "opentriviaqa::for-kids::183",
+        "opentriviaqa::for-kids::184",
+        "opentriviaqa::for-kids::185",
+        "opentriviaqa::for-kids::186",
+        "opentriviaqa::for-kids::187",
+        "opentriviaqa::for-kids::260",
+        "opentriviaqa::for-kids::269",
+        "opentriviaqa::for-kids::304",
+        "opentriviaqa::for-kids::375",
+        "opentriviaqa::for-kids::376",
+        "opentriviaqa::for-kids::427",
+        "opentriviaqa::for-kids::428",
+        "opentriviaqa::for-kids::429",
+        "opentriviaqa::for-kids::430",
+        "opentriviaqa::for-kids::431",
+        "opentriviaqa::for-kids::432",
+        "opentriviaqa::for-kids::433",
+        "opentriviaqa::for-kids::434",
+        "opentriviaqa::for-kids::436",
+        "opentriviaqa::for-kids::451",
+        "opentriviaqa::for-kids::507",
+        "opentriviaqa::for-kids::508",
+        "opentriviaqa::for-kids::509",
+        "opentriviaqa::for-kids::510",
+        "opentriviaqa::for-kids::511",
+        "opentriviaqa::for-kids::513",
+        "opentriviaqa::for-kids::548",
+        "opentriviaqa::for-kids::612",
+        "opentriviaqa::for-kids::614",
+        "opentriviaqa::for-kids::616",
+        "opentriviaqa::for-kids::617",
+        "opentriviaqa::for-kids::618",
+        "opentriviaqa::for-kids::619",
+        "opentriviaqa::for-kids::620",
+        "opentriviaqa::for-kids::621",
+        "opentriviaqa::for-kids::622",
+        "opentriviaqa::for-kids::623",
+        "opentriviaqa::for-kids::625",
+        "opentriviaqa::for-kids::649",
+        "opentriviaqa::for-kids::650",
+        "opentriviaqa::for-kids::651",
+        "opentriviaqa::for-kids::652",
+        "opentriviaqa::for-kids::653",
+        "opentriviaqa::for-kids::665",
+        "opentriviaqa::for-kids::666",
+        "opentriviaqa::for-kids::682",
+        "opentriviaqa::for-kids::683",
+        "opentriviaqa::for-kids::684",
+        "opentriviaqa::for-kids::685",
+        "opentriviaqa::for-kids::686",
+        "opentriviaqa::for-kids::687",
+        "opentriviaqa::for-kids::688",
+        "opentriviaqa::for-kids::689",
+        "opentriviaqa::for-kids::690",
+        "opentriviaqa::for-kids::691",
+        "opentriviaqa::for-kids::692",
+        "opentriviaqa::for-kids::693",
+        "opentriviaqa::for-kids::694",
+        "opentriviaqa::for-kids::695",
+        "opentriviaqa::for-kids::696",
+        "opentriviaqa::for-kids::697",
+        "opentriviaqa::for-kids::698",
+        "opentriviaqa::for-kids::699",
+        "opentriviaqa::for-kids::700",
+        "opentriviaqa::for-kids::701",
+        "opentriviaqa::for-kids::702",
+        "opentriviaqa::for-kids::734",
+        "opentriviaqa::for-kids::735",
+        "opentriviaqa::for-kids::736",
+        "opentriviaqa::for-kids::737",
+        "opentriviaqa::for-kids::738",
+        "opentriviaqa::for-kids::739",
+        "opentriviaqa::for-kids::740",
+        "opentriviaqa::for-kids::741",
+        "opentriviaqa::for-kids::742",
+        "opentriviaqa::for-kids::743"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::1",
+          "prompt_text": "What is NOT one of Strong Bads favorite bands in the Internet cartoon Homestar Runner?",
+          "correct_answer": "sloshy"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::157",
+          "prompt_text": "Josh and Parker star on this Nickelodeon show which takes place mostly at a fast food restaurant. What is the name of the show?",
+          "correct_answer": "Mr. Meaty"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::158",
+          "prompt_text": "Which of these Nickelodeon animated shows stars a big headed kid who also has a very big brain?",
+          "correct_answer": "Jimmy Neutron"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::159",
+          "prompt_text": "In the show Jimmy Neutron, Jimmy goes to Mars in search of a major power source and runs into some huge rock creatures living on Mars. What substance are these creatures vulnerable to?",
+          "correct_answer": "Water"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::160",
+          "prompt_text": "Actor Drake Bell from the Nickelodeon show Drake and Josh founded a band named Drake 24/7 in real life.",
+          "correct_answer": "True"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::162",
+          "prompt_text": "Actress Miranda Cosgrove plays Megan in the hit Nickelodeon show Drake and Josh.",
+          "correct_answer": "True"
+        }
+      ]
+    },
+    {
+      "reason": "vague-general-trivia-not-course-aligned",
+      "rowCount": 79,
+      "sourceIds": [
+        "opentriviaqa::for-kids::11",
+        "opentriviaqa::for-kids::13",
+        "opentriviaqa::for-kids::14",
+        "opentriviaqa::for-kids::15",
+        "opentriviaqa::for-kids::17",
+        "opentriviaqa::for-kids::27",
+        "opentriviaqa::for-kids::28",
+        "opentriviaqa::for-kids::29",
+        "opentriviaqa::for-kids::30",
+        "opentriviaqa::for-kids::33",
+        "opentriviaqa::for-kids::34",
+        "opentriviaqa::for-kids::35",
+        "opentriviaqa::for-kids::42",
+        "opentriviaqa::for-kids::61",
+        "opentriviaqa::for-kids::62",
+        "opentriviaqa::for-kids::63",
+        "opentriviaqa::for-kids::64",
+        "opentriviaqa::for-kids::65",
+        "opentriviaqa::for-kids::66",
+        "opentriviaqa::for-kids::67",
+        "opentriviaqa::for-kids::68",
+        "opentriviaqa::for-kids::69",
+        "opentriviaqa::for-kids::70",
+        "opentriviaqa::for-kids::71",
+        "opentriviaqa::for-kids::148",
+        "opentriviaqa::for-kids::149",
+        "opentriviaqa::for-kids::152",
+        "opentriviaqa::for-kids::153",
+        "opentriviaqa::for-kids::154",
+        "opentriviaqa::for-kids::155",
+        "opentriviaqa::for-kids::156",
+        "opentriviaqa::for-kids::161",
+        "opentriviaqa::for-kids::207",
+        "opentriviaqa::for-kids::235",
+        "opentriviaqa::for-kids::335",
+        "opentriviaqa::for-kids::341",
+        "opentriviaqa::for-kids::346",
+        "opentriviaqa::for-kids::348",
+        "opentriviaqa::for-kids::349",
+        "opentriviaqa::for-kids::354",
+        "opentriviaqa::for-kids::369",
+        "opentriviaqa::for-kids::395",
+        "opentriviaqa::for-kids::400",
+        "opentriviaqa::for-kids::417",
+        "opentriviaqa::for-kids::419",
+        "opentriviaqa::for-kids::421",
+        "opentriviaqa::for-kids::435",
+        "opentriviaqa::for-kids::438",
+        "opentriviaqa::for-kids::441",
+        "opentriviaqa::for-kids::442",
+        "opentriviaqa::for-kids::443",
+        "opentriviaqa::for-kids::444",
+        "opentriviaqa::for-kids::445",
+        "opentriviaqa::for-kids::447",
+        "opentriviaqa::for-kids::449",
+        "opentriviaqa::for-kids::461",
+        "opentriviaqa::for-kids::463",
+        "opentriviaqa::for-kids::464",
+        "opentriviaqa::for-kids::465",
+        "opentriviaqa::for-kids::467",
+        "opentriviaqa::for-kids::480",
+        "opentriviaqa::for-kids::483",
+        "opentriviaqa::for-kids::487",
+        "opentriviaqa::for-kids::489",
+        "opentriviaqa::for-kids::518",
+        "opentriviaqa::for-kids::527",
+        "opentriviaqa::for-kids::529",
+        "opentriviaqa::for-kids::538",
+        "opentriviaqa::for-kids::539",
+        "opentriviaqa::for-kids::563",
+        "opentriviaqa::for-kids::565",
+        "opentriviaqa::for-kids::566",
+        "opentriviaqa::for-kids::567",
+        "opentriviaqa::for-kids::568",
+        "opentriviaqa::for-kids::712",
+        "opentriviaqa::for-kids::713",
+        "opentriviaqa::for-kids::746",
+        "opentriviaqa::for-kids::748",
+        "opentriviaqa::for-kids::756"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::11",
+          "prompt_text": "How many siblings does Ron have?",
+          "correct_answer": "6"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::13",
+          "prompt_text": "Who does Ron take to the Yule ball?",
+          "correct_answer": "Padma Patil"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::14",
+          "prompt_text": "Rons mom is part of the order of the phoenix.",
+          "correct_answer": "True"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::15",
+          "prompt_text": "What is Rons full name?",
+          "correct_answer": "Ronald Bilius Weasley"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::17",
+          "prompt_text": "Who is Rons idol?",
+          "correct_answer": "Viktor Krum"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::27",
+          "prompt_text": "Who was the last person Harry talked to in the book?",
+          "correct_answer": "Hermoine"
+        }
+      ]
+    },
+    {
+      "reason": "not-aligned-to-current-primary-course",
+      "rowCount": 33,
+      "sourceIds": [
+        "opentriviaqa::for-kids::43",
+        "opentriviaqa::for-kids::44",
+        "opentriviaqa::for-kids::48",
+        "opentriviaqa::for-kids::126",
+        "opentriviaqa::for-kids::127",
+        "opentriviaqa::for-kids::128",
+        "opentriviaqa::for-kids::129",
+        "opentriviaqa::for-kids::130",
+        "opentriviaqa::for-kids::131",
+        "opentriviaqa::for-kids::132",
+        "opentriviaqa::for-kids::133",
+        "opentriviaqa::for-kids::134",
+        "opentriviaqa::for-kids::170",
+        "opentriviaqa::for-kids::171",
+        "opentriviaqa::for-kids::172",
+        "opentriviaqa::for-kids::173",
+        "opentriviaqa::for-kids::174",
+        "opentriviaqa::for-kids::175",
+        "opentriviaqa::for-kids::176",
+        "opentriviaqa::for-kids::177",
+        "opentriviaqa::for-kids::178",
+        "opentriviaqa::for-kids::179",
+        "opentriviaqa::for-kids::236",
+        "opentriviaqa::for-kids::237",
+        "opentriviaqa::for-kids::281",
+        "opentriviaqa::for-kids::282",
+        "opentriviaqa::for-kids::297",
+        "opentriviaqa::for-kids::298",
+        "opentriviaqa::for-kids::299",
+        "opentriviaqa::for-kids::300",
+        "opentriviaqa::for-kids::301",
+        "opentriviaqa::for-kids::302",
+        "opentriviaqa::for-kids::303"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::43",
+          "prompt_text": "Which of the following items cannot be found in a colonial classroom?",
+          "correct_answer": "Crayon"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::44",
+          "prompt_text": "Colonial people spend some of their free time doing which of these?",
+          "correct_answer": "Reading McGuffey"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::48",
+          "prompt_text": "Which of the following events is associated with Independence Day?",
+          "correct_answer": "Declaration of Independence"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::126",
+          "prompt_text": "What is the wooden stick used to hit a baseball called?",
+          "correct_answer": "Baseball Bat"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::127",
+          "prompt_text": "What color is a major league baseball?",
+          "correct_answer": "White"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::128",
+          "prompt_text": "Should you wear a helmet while hitting a baseball?",
+          "correct_answer": "Yes"
+        }
+      ]
+    },
+    {
+      "reason": "answer-quality-or-ambiguity-risk",
+      "rowCount": 28,
+      "sourceIds": [
+        "opentriviaqa::for-kids::4",
+        "opentriviaqa::for-kids::6",
+        "opentriviaqa::for-kids::49",
+        "opentriviaqa::for-kids::52",
+        "opentriviaqa::for-kids::93",
+        "opentriviaqa::for-kids::96",
+        "opentriviaqa::for-kids::147",
+        "opentriviaqa::for-kids::284",
+        "opentriviaqa::for-kids::293",
+        "opentriviaqa::for-kids::325",
+        "opentriviaqa::for-kids::342",
+        "opentriviaqa::for-kids::345",
+        "opentriviaqa::for-kids::347",
+        "opentriviaqa::for-kids::350",
+        "opentriviaqa::for-kids::392",
+        "opentriviaqa::for-kids::453",
+        "opentriviaqa::for-kids::485",
+        "opentriviaqa::for-kids::506",
+        "opentriviaqa::for-kids::524",
+        "opentriviaqa::for-kids::549",
+        "opentriviaqa::for-kids::569",
+        "opentriviaqa::for-kids::570",
+        "opentriviaqa::for-kids::573",
+        "opentriviaqa::for-kids::575",
+        "opentriviaqa::for-kids::634",
+        "opentriviaqa::for-kids::744",
+        "opentriviaqa::for-kids::745",
+        "opentriviaqa::for-kids::755"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::4",
+          "prompt_text": "Why does Cinderella wear a glass slipper?",
+          "correct_answer": "Glass shoes sound like something a princess would wear."
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::6",
+          "prompt_text": "Only one of the following descriptions of the features of Snow White is true.  Can you spot it?",
+          "correct_answer": "Wooden hair."
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::49",
+          "prompt_text": "What year did Columbus first arrive on American land?",
+          "correct_answer": "1498"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::52",
+          "prompt_text": "This is a repulsive insect either black or brown. It can live a couple of weeks with its head cut off.",
+          "correct_answer": "Cockroach"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::93",
+          "prompt_text": "The path in which electricity travels is called an electric circuit.",
+          "correct_answer": "False"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::96",
+          "prompt_text": "There are 4 basic conditions needed to produce an echo.",
+          "correct_answer": "True"
+        }
+      ]
+    },
+    {
+      "reason": "malformed-or-missing-stimulus",
+      "rowCount": 21,
+      "sourceIds": [
+        "opentriviaqa::for-kids::60",
+        "opentriviaqa::for-kids::121",
+        "opentriviaqa::for-kids::163",
+        "opentriviaqa::for-kids::167",
+        "opentriviaqa::for-kids::169",
+        "opentriviaqa::for-kids::272",
+        "opentriviaqa::for-kids::274",
+        "opentriviaqa::for-kids::277",
+        "opentriviaqa::for-kids::279",
+        "opentriviaqa::for-kids::714",
+        "opentriviaqa::for-kids::724",
+        "opentriviaqa::for-kids::725",
+        "opentriviaqa::for-kids::726",
+        "opentriviaqa::for-kids::727",
+        "opentriviaqa::for-kids::728",
+        "opentriviaqa::for-kids::729",
+        "opentriviaqa::for-kids::730",
+        "opentriviaqa::for-kids::731",
+        "opentriviaqa::for-kids::732",
+        "opentriviaqa::for-kids::733",
+        "opentriviaqa::for-kids::751"
+      ],
+      "samples": [
+        {
+          "source_id": "opentriviaqa::for-kids::60",
+          "prompt_text": "Which subject was Hermione not taking at 9am?",
+          "correct_answer": "Potions"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::121",
+          "prompt_text": "In which movie did Hermione Granger say the following:",
+          "correct_answer": "Harry Potter and the Sorcerers Stone"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::163",
+          "prompt_text": "Complete this line from the classic childrens book Green Eggs and Ham:",
+          "correct_answer": "Sam"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::167",
+          "prompt_text": "Complete this line from the book Green Eggs and Ham:",
+          "correct_answer": "Fox"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::169",
+          "prompt_text": "What word is missing in this line from the book Green Eggs and Ham:",
+          "correct_answer": "Car"
+        },
+        {
+          "source_id": "opentriviaqa::for-kids::272",
+          "prompt_text": "What does x equal in this equation?",
+          "correct_answer": "2"
+        }
+      ]
+    }
+  ]
+}

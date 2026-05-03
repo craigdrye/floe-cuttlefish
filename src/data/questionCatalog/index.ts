@@ -1,6 +1,17 @@
 import type { AgeGroup } from '../ageCatalog'
 
-export type { Answer, Misconception, Question, QuestionCatalog, QuestionKind, Topic } from './types'
+export type {
+  Answer,
+  Misconception,
+  Question,
+  QuestionCatalog,
+  QuestionKind,
+  QuestionReview,
+  QuestionReviewFlag,
+  QuestionReviewOverride,
+  QuestionReviewStatus,
+  Topic,
+} from './types'
 
 const highMathTrackIds = new Set([
   'col-illustrative-mathematics-6th-8th-grade',
@@ -18,6 +29,7 @@ const highMathTrackIds = new Set([
   'col-high-school-statistics',
   'col-trigonometry',
   'col-statistics-probability',
+  'col-sat-math',
 ])
 
 const highAdvancedTrackIds = new Set([
@@ -25,11 +37,13 @@ const highAdvancedTrackIds = new Set([
   'col-high-school-physics-ngss',
   'col-world-history-project-origins-to-the-present',
   'col-world-history-project-1750-to-the-present',
+  'apHumanGeography',
   'apCalculus',
   'apBiology',
   'apChemistry',
   'apPhysics',
   'apEnglish',
+  'apPsychology',
   'apHistory',
   'apEconomics',
   'apComputerScience',
@@ -49,6 +63,7 @@ const highAdvancedTrackIds = new Set([
   'basic_html_and_html5',
   'mathematics_extensions',
   'ib_history',
+  'col-sat-reading-and-writing',
 ])
 
 const highFunTrackIds = new Set([
@@ -63,11 +78,19 @@ const universityCollegeTrackIds = new Set([
   'col-class-11-math',
   'col-class-12-math',
   'col-eureka-math-precalculus',
-  'col-ap-college-calculus-ab',
-  'col-ap-college-statistics',
   'col-college-algebra',
-  'col-ap-college-calculus-bc',
+  'class11Math',
+  'class12Math',
+  'collegeAlgebra',
+  'introDataScience',
+  'apCalculusAB',
+  'apStatistics',
+  'mathDiagnostics',
+  'apCalculusBc',
+  'collegeAlgebraWorkout',
   'linearAlgebra',
+  'differentialEquations',
+  'multivariableCalculus',
 ])
 
 const universityAcademicTrackIds = new Set([
@@ -75,16 +98,26 @@ const universityAcademicTrackIds = new Set([
   'macroeconomics',
   'organicChemistry',
   'neuroscience',
+  'introToPsychology',
+  'cosmologyAndAstronomy',
+  'artHistory',
+  'apEnvironmentalScience',
   'researchMethods',
   'philosophy',
+  'logicCriticalThinking',
+  'formalLogic',
+  'philSenior',
   'dataStructures',
   'internationalRelations',
   'marketing',
 ])
 
 const universityPrepTrackIds = new Set([
+  'introCS',
   'ml',
   'software',
+  'softwareDesign',
+  'softwareFoundations',
   'research',
   'uxResearch',
 ])
@@ -94,18 +127,18 @@ export function questionCatalogKeyForTrack(trackId: string, ageGroup: AgeGroup):
     if (highMathTrackIds.has(trackId)) return 'high-math'
     if (highAdvancedTrackIds.has(trackId)) return 'high-advanced'
     if (highFunTrackIds.has(trackId)) return 'high-fun'
-    return null
+    return 'high-generated'
   }
 
   if (ageGroup === 'university') {
     if (universityCollegeTrackIds.has(trackId)) return 'university-college'
     if (universityAcademicTrackIds.has(trackId)) return 'university-academic'
     if (universityPrepTrackIds.has(trackId)) return 'university-prep'
-    return null
+    return 'university-generated'
   }
 
   if (ageGroup === 'primary') return 'primary'
-  if (ageGroup === 'career' || ageGroup === 'career-hopper') return 'career'
+  if (ageGroup === 'career' || ageGroup === 'career-hopper' || ageGroup === 'nerd') return 'career'
 
   return null
 }
@@ -128,6 +161,10 @@ export async function loadQuestionCatalog(catalogKey: string) {
       const module = await import('./highFun')
       return module.buildHighFunQuestionCatalog()
     }
+    case 'high-generated': {
+      const module = await import('./highGenerated')
+      return module.buildHighGeneratedQuestionCatalog()
+    }
     case 'university-college': {
       const module = await import('./universityCollege')
       return module.buildUniversityCollegeQuestionCatalog()
@@ -139,6 +176,10 @@ export async function loadQuestionCatalog(catalogKey: string) {
     case 'university-prep': {
       const module = await import('./universityPrep')
       return module.buildUniversityPrepQuestionCatalog()
+    }
+    case 'university-generated': {
+      const module = await import('./universityAgentGenerated')
+      return module.buildUniversityAgentGeneratedQuestionCatalog()
     }
     case 'career': {
       const module = await import('./career')

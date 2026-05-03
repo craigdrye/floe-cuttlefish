@@ -1,8 +1,9 @@
 import type { Question } from './types'
 import { makeSimpleQuestion } from './base'
+import { topUpHighGeneratedTrack } from './highGenerated'
 
 export function buildHighFunQuestionCatalog(): Record<string, Question[]> {
-  return {
+  const catalog: Record<string, Question[]> = {
   chessTactics: [
     makeSimpleQuestion(15001, 'Fun', 'Chess Dock', 'Fork alert',
       'A fork in chess is best described as:',
@@ -174,4 +175,11 @@ export function buildHighFunQuestionCatalog(): Record<string, Question[]> {
       ]),
   ],
   }
+
+  return Object.fromEntries(
+    Object.entries(catalog).map(([trackId, questions]) => [
+      trackId,
+      topUpHighGeneratedTrack(trackId, questions),
+    ]),
+  )
 }

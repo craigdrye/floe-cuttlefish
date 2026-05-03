@@ -1,6 +1,14 @@
 import { answerSet } from '../data/questionCatalog/base'
+import { ensureQuestionCollectionMeta } from '../data/questionCatalog/collections'
 import type { Answer, Question, QuestionCatalog, Topic } from '../data/questionCatalog'
 import type { AgeGroup } from '../data/ageCatalog'
+import {
+  isPlayableQuestion,
+  repairSparseImportedQuestion,
+  reviewQuestion,
+  stripPlaceholderAnswers,
+  summarizeQuestionReviews,
+} from '../data/questionCatalog/review'
 
 type TrackLike = {
   id: string
@@ -23,7 +31,14 @@ export function buildTrackQuiz(
   if (base.length === 0) {
     throw new Error(`No questions found for track "${track.id}". Check that the catalog is loaded correctly.`)
   }
-  return base.slice(0, QUIZ_LENGTH).map(ensureSixAnswerChoices)
+  const playable = dedupeQuestionsByPrompt(base.filter(isPlayableQuestion))
+  if (playable.length === 0) {
+    const summary = summarizeQuestionReviews(base)
+    throw new Error(
+      `No playable questions found for track "${track.id}". ${summary.recoverable} need cleanup and ${summary.quarantined} are quarantined.`,
+    )
+  }
+  return playable.slice(0, QUIZ_LENGTH).map(ensureSixAnswerChoices)
 }
 
 
@@ -283,8 +298,44 @@ export function ensureSixAnswerChoices(question: Question): Question {
 
 export function normalizeQuestionCatalog(questionCatalog: Record<string, Question[]>) {
   return Object.fromEntries(
-    Object.entries(questionCatalog).map(([key, value]) => [key, value.map(ensureSixAnswerChoices)]),
+    Object.entries(questionCatalog).map(([key, value]) => [
+      key,
+      dedupeQuestionsByPrompt(
+        value.map((question) => {
+          const staged = ensureQuestionCollectionMeta(question, key)
+          const sanitized = repairSparseImportedQuestion(stripPlaceholderAnswers(staged))
+          const reviewed = reviewQuestion(sanitized, key)
+          return isPlayableQuestion(reviewed) ? ensureSixAnswerChoices(reviewed) : reviewed
+        }),
+      ),
+    ]),
   ) as Record<string, Question[]>
+}
+
+function duplicatePromptKey(question: Question) {
+  return question.prompt
+    .toLowerCase()
+    .replace(/[“”]/g, '"')
+    .replace(/[‘’]/g, "'")
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+function dedupeQuestionsByPrompt(questions: Question[]) {
+  const seen = new Set<string>()
+
+  return questions.filter((question) => {
+    const key = duplicatePromptKey(question)
+    if (!key) return true
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
+
+export function countPlayableQuestions(questions: Question[]) {
+  return questions.filter(isPlayableQuestion).length
 }
 
 function hashString(value: string) {

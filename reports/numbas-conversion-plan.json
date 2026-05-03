@@ -1,0 +1,201 @@
+{
+  "source": {
+    "folder": "data/raw_collections/numbas",
+    "summary": "data/raw_collections/numbas/numbas_summary.md",
+    "questions": "data/raw_collections/numbas/numbas_questions.json",
+    "existingReport": "reports/numbas-import-analysis.md",
+    "records": 9808,
+    "collectionId": "numbas::reuse-questions"
+  },
+  "headline": {
+    "recommendation": "Do not wire Numbas records into app code directly. Build an offline Numbas-to-static-variant conversion pipeline, then import only reviewed generated fixed-choice cards.",
+    "directImportReady": "Effectively no assessed direct-import subset in the current extraction because answer/correctness configuration is omitted.",
+    "fixedChoiceCandidateSubset": {
+      "definition": "Permissive CC BY / CC BY-SA records whose part types are only Numbas choice-like parts: 1_n_2, m_n_2, m_n_x, yes-no, true-false.",
+      "count": 498,
+      "note": "These still need full .exam refetch plus Numbas parameter rendering to recover option text, correct choices, feedback, and deterministic generated variants."
+    }
+  },
+  "counts": {
+    "partTypes": {
+      "gapfill": 13983,
+      "numberentry": 2550,
+      "jme": 1795,
+      "1_n_2": 1504,
+      "m_n_2": 351,
+      "m_n_x": 305,
+      "matrix": 125,
+      "patternmatch": 70,
+      "yes-no": 25,
+      "true-false": 11
+    },
+    "candidateTracksAllLicenses": {
+      "mathExtensions": 2296,
+      "high_algebra_2": 2296,
+      "quantAdvanced": 980,
+      "genMath1": 841,
+      "apCalculusBC": 841,
+      "apCalculusAB": 841,
+      "linearAlgebra": 723,
+      "quant": 719,
+      "introDataScience": 719,
+      "apStatistics": 719,
+      "genPhys1": 304,
+      "logicCriticalThinking": 80,
+      "brainBurners": 80
+    },
+    "candidateTracksPermissiveFixedChoice": {
+      "mathExtensions": 52,
+      "high_algebra_2": 52,
+      "genMath1": 41,
+      "apCalculusBC": 41,
+      "apCalculusAB": 41,
+      "quant": 21,
+      "introDataScience": 21,
+      "apStatistics": 21,
+      "quantAdvanced": 20,
+      "linearAlgebra": 20,
+      "logicCriticalThinking": 19,
+      "brainBurners": 19
+    }
+  },
+  "metadataAvailable": [
+    "source_id",
+    "question_id",
+    "slug",
+    "source_url",
+    "title",
+    "licence",
+    "contributors",
+    "tags",
+    "topic_tags",
+    "part_types",
+    "variable_names",
+    "candidate_track_ids",
+    "statement_html",
+    "advice_html",
+    "exam_length"
+  ],
+  "conversionStages": [
+    "Refetch full .exam payload for selected records.",
+    "Apply licence and route gates before rendering.",
+    "Run Numbas variable generation with deterministic seeds.",
+    "Render statement, advice, LaTeX, variables, choice text, correct answers, and simple generated assets.",
+    "Convert one rendered variant into a Floe fixed-choice candidate with provenance and review status.",
+    "Review for answer leakage, diagram dependency, distractor quality, and target course fit before app import."
+  ],
+  "candidateFamilies": [
+    {
+      "family": "BODMAS / order of operations multiple choice",
+      "examples": ["numbas::60569", "numbas::57944", "numbas::60870", "numbas::97880", "numbas::107707"],
+      "targetCourses": ["high_algebra_2", "mathExtensions"],
+      "conversionFit": "high",
+      "reason": "Choice-like arithmetic rules can become fixed-choice cards after option/correctness refetch and variable rendering."
+    },
+    {
+      "family": "Algebraic graph recognition",
+      "examples": ["numbas::97909", "numbas::97910", "numbas::29832", "numbas::29834", "numbas::30351"],
+      "targetCourses": ["high_algebra_2", "mathExtensions", "apCalculusAB"],
+      "conversionFit": "medium",
+      "reason": "Fixed-choice if rendered graphs are static assets; hold GeoGebra-heavy variants."
+    },
+    {
+      "family": "Factor theorem and polynomial factors",
+      "examples": ["numbas::29360", "numbas::41247"],
+      "targetCourses": ["high_algebra_2", "mathExtensions"],
+      "conversionFit": "high",
+      "reason": "Multiple-select factor identification maps naturally to fixed-choice after option extraction."
+    },
+    {
+      "family": "Simple quadratic equations",
+      "examples": ["numbas::97883"],
+      "targetCourses": ["high_algebra_2", "mathExtensions"],
+      "conversionFit": "high",
+      "reason": "Single-choice procedural algebra with small variable set."
+    },
+    {
+      "family": "Matrix row echelon classification",
+      "examples": ["numbas::12037", "numbas::32976"],
+      "targetCourses": ["linearAlgebra", "quantAdvanced"],
+      "conversionFit": "high",
+      "reason": "Matching/classification choices can become fixed-choice or multi-select cards with rendered matrices."
+    },
+    {
+      "family": "Matrix dimensions true/false",
+      "examples": ["numbas::69197"],
+      "targetCourses": ["linearAlgebra", "quantAdvanced"],
+      "conversionFit": "high",
+      "reason": "True/false statements are the closest shape to current fixed-choice cards."
+    },
+    {
+      "family": "Graph adjacency matrices",
+      "examples": ["numbas::113784"],
+      "targetCourses": ["linearAlgebra", "quantAdvanced"],
+      "conversionFit": "medium",
+      "reason": "Choice conversion is straightforward, but graph diagrams must be rendered as static assets."
+    },
+    {
+      "family": "Quantifiers and predicates",
+      "examples": ["numbas::11836", "numbas::11827", "numbas::16275"],
+      "targetCourses": ["logicCriticalThinking", "brainBurners"],
+      "conversionFit": "high",
+      "reason": "Matching logical statements to symbolic forms is fixed-choice friendly."
+    },
+    {
+      "family": "Binomial vs Poisson modeling",
+      "examples": ["numbas::462"],
+      "targetCourses": ["apStatistics", "introDataScience", "quant"],
+      "conversionFit": "high",
+      "reason": "Classification choices produce useful statistics concept checks."
+    },
+    {
+      "family": "Independent events classification",
+      "examples": ["numbas::88235"],
+      "targetCourses": ["apStatistics", "introDataScience", "quant"],
+      "conversionFit": "high",
+      "reason": "Classification of event pairs can be flattened into multiple fixed-choice cards."
+    },
+    {
+      "family": "Correlation and data-type classification",
+      "examples": ["numbas::154121", "numbas::154584", "numbas::168614"],
+      "targetCourses": ["apStatistics", "introDataScience", "quant"],
+      "conversionFit": "medium",
+      "reason": "Good conceptual fit, but some records have missing current route metadata and need source answer fields."
+    },
+    {
+      "family": "Integration by substitution MCQ",
+      "examples": ["numbas::126096"],
+      "targetCourses": ["apCalculusAB", "apCalculusBC", "genMath1"],
+      "conversionFit": "high",
+      "reason": "Rendered symbolic options can become a single fixed-choice calculus card."
+    },
+    {
+      "family": "Graphical derivative matching",
+      "examples": ["numbas::41508"],
+      "targetCourses": ["apCalculusAB", "apCalculusBC", "genMath1"],
+      "conversionFit": "medium",
+      "reason": "Works if plots are rendered to static images and option text is recovered."
+    },
+    {
+      "family": "Mean, median, mode, range",
+      "examples": ["numbas::6523"],
+      "targetCourses": ["apStatistics", "introDataScience", "quant"],
+      "conversionFit": "medium",
+      "reason": "Currently gapfill numeric, but can be transformed into generated fixed-choice numeric cards using plausible distractors."
+    },
+    {
+      "family": "Card-and-die probability",
+      "examples": ["numbas::12531"],
+      "targetCourses": ["apStatistics", "introDataScience", "quant"],
+      "conversionFit": "medium",
+      "reason": "Number-entry probabilities need computed distractors; not a direct fixed-choice conversion."
+    },
+    {
+      "family": "Engineering statics equilibrium",
+      "examples": ["numbas::70552", "numbas::58035"],
+      "targetCourses": ["genPhys1", "quantAdvanced"],
+      "conversionFit": "low",
+      "reason": "High-value target family, but frequently uses applets/GeoGebra and gapfill numeric answers."
+    }
+  ]
+}

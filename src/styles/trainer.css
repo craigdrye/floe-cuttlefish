@@ -462,6 +462,29 @@
   color: #52726a;
   min-height: 18px;
 }
+.calculator-keypad {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+.calculator-key {
+  min-height: 40px;
+  border-radius: var(--r-sm);
+  border: 1px solid rgba(31,122,98,0.15);
+  background: rgba(255,255,255,0.72);
+  color: var(--ocean-deep);
+  font-size: 15px;
+  font-weight: 800;
+  transition: transform 0.15s, background 0.2s, border-color 0.2s;
+}
+.calculator-key:hover {
+  background: rgba(255,255,255,0.92);
+  border-color: var(--reef-teal);
+}
+.calculator-key:active {
+  transform: scale(0.97);
+}
 
 /* ── Answer Buttons ── */
 .answers {
@@ -550,12 +573,20 @@
 /* ── Action Buttons ── */
 .actions-toolbar {
   display: flex;
+  flex-direction: column;
   gap: 8px;
-  flex-wrap: wrap;
   margin-bottom: 10px;
+  overflow-x: auto;
+}
+.actions-toolbar-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  width: max-content;
 }
 .actions-toolbar .secondary {
   display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
   gap: 5px;
   min-height: 38px;
@@ -579,6 +610,7 @@
 .actions-primary {
   display: flex;
   margin-top: 14px;
+  justify-content: flex-start;
 }
 .actions-primary .primary {
   display: inline-flex;
@@ -593,7 +625,8 @@
   background: linear-gradient(135deg, var(--reef-teal), var(--reef-emerald));
   box-shadow: 0 4px 16px rgba(31,122,98,0.25);
   transition: all 0.2s;
-  width: 100%;
+  min-width: 168px;
+  width: auto;
   justify-content: center;
 }
 .actions-primary .primary:hover:not(:disabled) {
@@ -711,8 +744,9 @@
   .dive-cockpit-copy h2 { font-size: 18px; }
   .ritual-strip { grid-template-columns: 1fr; }
   .adaptive-strip { align-items: stretch; flex-direction: column; }
-  .actions-toolbar { flex-direction: column; }
-  .actions-toolbar .secondary { justify-content: center; }
+  .actions-toolbar .secondary { justify-content: flex-start; }
+  .calculator-keypad { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .calculator-key { min-height: 44px; font-size: 16px; }
   .boss-cutscene-card { grid-template-columns: 1fr; text-align: center; }
   .boss-cutscene-card img { justify-self: center; }
 }

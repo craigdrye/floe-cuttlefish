@@ -32,6 +32,12 @@ export function AudienceSelectScreen() {
     requestAnimationFrame(() => setMounted(true))
   }, [])
 
+  useEffect(() => {
+    if (selectedAge !== 'preschool') return
+    setSelectedAge('primary')
+    setSelectedStageDetail(ageDetailOptions.primary?.[0]?.id ?? null)
+  }, [selectedAge, setSelectedAge, setSelectedStageDetail])
+
   const defaultStageDetail = (ageGroup: AgeGroup): StageDetail | null => {
     const details = ageDetailOptions[ageGroup]
     return details && details.length > 0 ? (details[0]?.id as StageDetail) : null
@@ -44,7 +50,6 @@ export function AudienceSelectScreen() {
   }
 
   const kidsOptions: { id: AgeGroup; label: string; emoji: string }[] = [
-    { id: 'preschool', label: 'Pre-school', emoji: '🐣' },
     { id: 'primary', label: 'Primary school', emoji: '🌱' },
     { id: 'high', label: 'High school', emoji: '🔬' },
   ]

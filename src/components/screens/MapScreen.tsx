@@ -32,8 +32,8 @@ export function MapScreen() {
   } = useStore()
 
   const {
-    selectedTrackInfo, isSelectedCatalogReady, dailyQuestions, courseQuestions,
-    mapNodes, baseQuestion, mapBackground, reviewQuestions
+    selectedTrackInfo, isSelectedCatalogReady, dailyQuestions,
+    chapterGroups, mapNodes, baseQuestion, mapBackground, reviewQuestions
   } = useQuizData()
 
   const QUESTIONS_PER_STAGE = 4
@@ -66,14 +66,7 @@ export function MapScreen() {
     return () => window.clearTimeout(timer)
   }, [swimStage, swimState])
 
-  const chapters = useMemo(() => {
-    const seen = new Set<string>()
-    const result: string[] = []
-    for (const q of courseQuestions) {
-      if (!seen.has(q.chapter)) { seen.add(q.chapter); result.push(q.chapter) }
-    }
-    return result
-  }, [courseQuestions])
+  const chapters = useMemo(() => chapterGroups.map((group) => group.label), [chapterGroups])
 
   const completedCount = progress.solved.filter((id) => dailyQuestions.some((q) => q.id === id)).length
 
@@ -107,6 +100,10 @@ export function MapScreen() {
     if (!stage || stage >= 4) return
     setSwimStage(stage)
     setSwimState('pause')
+  }
+
+  const goBack = () => {
+    setSelectedTrack(null)
   }
 
   if (!isSelectedCatalogReady) {
@@ -340,8 +337,8 @@ export function MapScreen() {
         </div>
       </section>
 
-      <button className="back-btn" onClick={() => setSelectedTrack(null)} type="button">
-        <ArrowLeft size={16} /> Back to tracks
+      <button className="back-btn" onClick={goBack} type="button">
+        <ArrowLeft size={16} /> Back
       </button>
     </main>
   )

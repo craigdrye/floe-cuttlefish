@@ -1,5 +1,10 @@
 import type { Question } from './types'
 import { makeSimpleQuestion } from './base'
+import { openDsaBridgeCourseQuestions } from './openDsaBridgeCourseImported'
+import { openDsaFormalLanguagesQuestions } from './openDsaFormalLanguagesImported'
+import { openDsaSoftwareQuestions } from './openDsaSoftwareImported'
+import { introCsWorkoutGeneratedQuestions } from './introCsWorkoutGenerated'
+import { softwareDesignWorkoutGeneratedQuestions } from './softwareDesignWorkoutGenerated'
 
 export function buildUniversityPrepQuestionCatalog(): Record<string, Question[]> {
   return {
@@ -26,6 +31,22 @@ export function buildUniversityPrepQuestionCatalog(): Record<string, Question[]>
     makeSimpleQuestion(3012, 'Software', "Module 4: System Design", "WebSockets", "When designing a system, you would typically choose WebSockets over traditional REST API polling for:", "Applications requiring real-time, low-latency, bidirectional communication (like a chat app).", [["Serving static HTML blog posts.", "Standard HTTP/REST is perfectly fine and more efficient for static content.", "WebSockets keep a persistent connection open."], ["Batch processing overnight jobs.", "Polling or webhooks are better for slow, asynchronous jobs.", "Think real-time updates."], ["Transferring large 4K video files.", "Streaming protocols (like HLS) or standard chunked HTTP are better for large media.", "WebSockets are for many small, fast messages."]]),
     makeSimpleQuestion(3013, 'Software', "Module 5: OOD", "SOLID Principles", "In Object-Oriented Design, the 'Open/Closed Principle' states that software entities should be:", "Open for extension, but closed for modification.", [["Open for public access, but closed for private access.", "That describes access modifiers (public/private).", "It's about changing behavior without changing existing code."], ["Open for read, closed for write.", "That describes database locks or immutability.", "You should be able to add new functionality by adding new classes."], ["Open source, but closed for commercial use.", "That's a software license.", "Extend via interfaces or inheritance."]]),
     makeSimpleQuestion(3014, 'Software', "Module 5: OOD", "Design Patterns", "Which design pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable at runtime?", "The Strategy Pattern", [["The Singleton Pattern", "Singleton ensures only one instance of a class exists.", "Think of sorting algorithms: you can swap QuickSort for MergeSort dynamically."], ["The Observer Pattern", "Observer is for publish/subscribe event handling.", "It encapsulates 'strategies'."], ["The Factory Pattern", "Factory is for creating objects, not swapping algorithms.", "It lets the algorithm vary independently from clients that use it."]]),
+    ...openDsaBridgeCourseQuestions,
+    ...openDsaSoftwareQuestions,
+    ...openDsaFormalLanguagesQuestions,
+    ...softwareDesignWorkoutGeneratedQuestions,
+  ],
+  softwareDesign: [
+    ...openDsaSoftwareQuestions,
+    ...softwareDesignWorkoutGeneratedQuestions,
+  ],
+  softwareFoundations: [
+    ...openDsaBridgeCourseQuestions,
+    ...introCsWorkoutGeneratedQuestions,
+  ],
+  introCS: [
+    ...openDsaBridgeCourseQuestions,
+    ...introCsWorkoutGeneratedQuestions,
   ],
   research: [
     makeSimpleQuestion(4005, 'Research', "Module 1: Literature", "Unstated Assumptions", "When critically reading a paper claiming a new deep learning optimizer is 'state-of-the-art', what is a common unstated assumption to check for?", "That the hyperparameter tuning budget was identical for both the proposed method and the baselines.", [["That the authors wrote the code in Python.", "The language rarely affects the mathematical validity of the optimizer.", "Authors often tune their own method heavily but use default settings for baselines."], ["That the paper is over 10 pages long.", "Length does not correlate with validity.", "Look for fair comparisons."], ["That the model has exactly one million parameters.", "SOTA claims should hold across different model sizes.", "Compute budgets must be equal."]]),

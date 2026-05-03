@@ -32,12 +32,50 @@ const MAP_BACKGROUNDS = [
   '/assets/generated/map-backgrounds/swamp-reef-map-v1.png'
 ]
 
+const MAX_VISIBLE_CHAPTER_GROUPS = 10
+
+type ChapterGroup = {
+  label: string
+  chapters: string[]
+}
+
 function hashForAnswerCount(seed: string) {
   let hash = 0
   for (let i = 0; i < seed.length; i++) {
     hash = (hash * 31 + seed.charCodeAt(i)) >>> 0
   }
   return hash
+}
+
+function buildChapterGroups(courseQuestions: ReturnType<typeof buildTrackQuiz>): ChapterGroup[] {
+  const chapters: string[] = []
+  const seen = new Set<string>()
+
+  for (const question of courseQuestions) {
+    if (!seen.has(question.chapter)) {
+      seen.add(question.chapter)
+      chapters.push(question.chapter)
+    }
+  }
+
+  if (chapters.length <= MAX_VISIBLE_CHAPTER_GROUPS) {
+    return chapters.map((chapter) => ({ label: chapter, chapters: [chapter] }))
+  }
+
+  const groups: ChapterGroup[] = []
+  const size = Math.ceil(chapters.length / MAX_VISIBLE_CHAPTER_GROUPS)
+
+  for (let groupIndex = 0; groupIndex < MAX_VISIBLE_CHAPTER_GROUPS; groupIndex++) {
+    const slice = chapters.slice(groupIndex * size, (groupIndex + 1) * size)
+    if (!slice.length) break
+
+    groups.push({
+      label: `Unit ${groupIndex + 1}`,
+      chapters: slice,
+    })
+  }
+
+  return groups
 }
 
 export function useQuizData() {
@@ -96,11 +134,19 @@ export function useQuizData() {
 
   const dailyQuestions = useMemo(() => courseQuestions, [courseQuestions])
 
-  const chapterQuestions = useMemo(() => {
+  const chapterGroups = useMemo(() => buildChapterGroups(courseQuestions), [courseQuestions])
+
+  const activeChapterGroup = useMemo(() => {
     if (!selectedChapter) return null
-    const filtered = courseQuestions.filter(q => q.chapter === selectedChapter)
+    return chapterGroups.find((group) => group.label === selectedChapter) ?? null
+  }, [chapterGroups, selectedChapter])
+
+  const chapterQuestions = useMemo(() => {
+    if (!activeChapterGroup) return null
+    const chapterSet = new Set(activeChapterGroup.chapters)
+    const filtered = courseQuestions.filter((q) => chapterSet.has(q.chapter))
     return shuffledQuestions(filtered, chapterShuffleSeed)
-  }, [selectedChapter, chapterShuffleSeed, courseQuestions])
+  }, [activeChapterGroup, chapterShuffleSeed, courseQuestions])
 
   const reviewQuestions = useMemo(() => {
     const now = new Date()
@@ -171,6 +217,7 @@ export function useQuizData() {
     isSelectedCatalogReady,
     catalogError,
     courseQuestions,
+    chapterGroups,
     dailyQuestions,
     chapterQuestions,
     mapNodes,

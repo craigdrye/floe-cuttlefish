@@ -317,7 +317,7 @@ export const highCoreTracks: TrackSeed[] = [
   },
   {
     id: 'detectiveLogic',
-    title: 'Detective Logic',
+    title: 'Logic Puzzles',
     subtitle: 'Clues, contradictions, elimination, and deduction habits.',
     status: 'playable',
     accent: '#7b5e9d',
@@ -1053,6 +1053,17 @@ export const highCoreTracks: TrackSeed[] = [
     skills: ['Analysis', 'Concept Mastery', 'Problem Solving'],
   },
   {
+    id: 'col-sat-reading-and-writing',
+    title: 'SAT Reading and Writing',
+    subtitle: 'This syllabus covers the verbal half of the Digital SAT.',
+    status: 'playable',
+    accent: '#d94c4c',
+    discipline: 'Exam Prep',
+    ageGroup: 'high',
+    icon: 'edit-3',
+    skills: ['Analysis', 'Concept Mastery', 'Problem Solving'],
+  },
+  {
     id: 'col-class-8-math',
     title: 'Class 8 Math',
     subtitle: 'Year 8 is deeply focused on algebraic fluency, linear graphing, and geometric transformations.',
@@ -1417,7 +1428,7 @@ export const highStageBuckets: StageBucketMap = {
     'Creative Writing Studio',
     'Mythology and Monsters',
     'Game Design Basics',
-    'Detective Logic',
+    'Logic Puzzles',
     'Epistemology Basics',
   ],
   'high-year-11': [
