@@ -511,4 +511,34 @@ export const collegeAlgebraWorkoutGeneratedQuestions = makeQuestionBank('Mathema
     miss('50', 'That assumes every trial succeeds.', 'Use the success probability, not the total alone.'),
     miss('5', 'That is half the correct expected count.', 'Multiply the total trials by the probability.'),
   ]),
+  q(392091, 'Linear Equations', 'Variables on both sides', 'Solve 7x + 4 = 3x + 20.', 'x = 4', [
+    miss('x = 6', 'That subtracts 4 from 20 but forgets to divide by the remaining coefficient.', 'Move x-terms together, then isolate x.'),
+    miss('x = 16', 'That is the constant difference before dividing by 4.', 'After 4x = 16, divide by 4.'),
+    miss('x = -4', 'The sign flips incorrectly.', 'Check which side has the larger constant.'),
+    miss('x = 24', 'That adds the constants instead of balancing the equation.', 'Use inverse operations, not raw combining.'),
+  ]),
+  q(392092, 'Rational Expressions', 'Multiply rational expressions', 'Simplify (2/x) * (3/5).', '6/(5x)', [
+    miss('5x/6', 'That takes the reciprocal of the product.', 'Multiply numerators together and denominators together.'),
+    miss('6/5 + x', 'That adds x instead of keeping it in the denominator.', 'This is multiplication, not addition.'),
+    miss('6x/5', 'x stays in the denominator.', 'Track where the variable starts.'),
+    miss('1/(5x)', 'That loses the factor of 6 from the numerators.', 'Use both numerators.'),
+  ]),
+  q(392093, 'Functions', 'Independent variable meaning', 'In the rule y = 4x - 1, which variable is the input?', 'x', [
+    miss('y', 'y is the output determined by the rule.', 'Inputs are substituted into the function.'),
+    miss('4', '4 is a coefficient, not a variable.', 'Look for the variable you choose first.'),
+    miss('-1', 'That is the constant term.', 'Constants are not inputs.'),
+    miss('Both x and y equally', 'The rule defines y in terms of x.', 'One variable depends on the other.'),
+  ]),
+  q(392094, 'Polynomials', 'Degree of a polynomial', 'What is the degree of 5x^3 - 2x + 9?', '3', [
+    miss('5', 'That is the coefficient of the leading term, not the degree.', 'Degree is the highest exponent.'),
+    miss('2', 'That is the coefficient magnitude from another term.', 'Look for the largest power of x.'),
+    miss('9', 'That is the constant term.', 'Constants do not set the degree unless alone.'),
+    miss('1', 'The polynomial includes a higher power than x^1.', 'Check all exponents in the expression.'),
+  ]),
+  q(392095, 'Probability', 'Complement from percentage', 'If 35% of students prefer tea, what percent do not prefer tea?', '65%', [
+    miss('35%', 'That repeats the original percentage instead of taking the complement.', 'Percent complements add to 100%.'),
+    miss('75%', 'That subtracts incorrectly from 100.', 'Compute 100 - 35.'),
+    miss('135%', 'A percentage for a whole group cannot exceed 100% here.', 'Complement stays within 0% to 100%.'),
+    miss('15%', 'That subtracts the tens digit only.', 'Use the full number 35.'),
+  ]),
 ])

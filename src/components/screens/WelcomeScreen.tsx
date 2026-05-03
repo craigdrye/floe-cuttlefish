@@ -16,6 +16,12 @@ const fishImages = [
   '/assets/generated/fish easteregg3.png',
 ]
 
+const flippedFishImages = [
+  '/assets/generated/fish easteregg-flipped.png',
+  '/assets/generated/fish easteregg1-flipped.png',
+  '/assets/generated/fish easteregg3-flipped.png',
+]
+
 const wobblyRouteLines = [
   'Pick a thing, wobble bravely into it, and let the little reef of questions become a route.',
   'Pick a curious thing, flop toward it nobly, and let the baby reef of questions sketch a path.',
@@ -50,6 +56,15 @@ function loadWelcomeLine() {
 
 function loadFishSchool() {
   const pool = [...fishImages]
+  for (let i = pool.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[pool[i], pool[j]] = [pool[j], pool[i]]
+  }
+  return pool
+}
+
+function loadFlippedFishSchool() {
+  const pool = [...flippedFishImages]
   for (let i = pool.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1))
     ;[pool[i], pool[j]] = [pool[j], pool[i]]
@@ -101,9 +116,11 @@ export function WelcomeScreen() {
   const [charIndex, setCharIndex] = useState(getInitialCharIndex)
   const [welcomeLine] = useState(loadWelcomeLine)
   const [fishSchool] = useState(loadFishSchool)
+  const [midFishSchool] = useState(loadFlippedFishSchool)
   const [mounted, setMounted] = useState(false)
   const [showSaucer] = useState(() => Math.random() < 0.05)
   const [showLineFish] = useState(() => Math.random() < 0.4)
+  const [showMidFish] = useState(() => Math.random() < 0.15)
 
   useEffect(() => {
     requestAnimationFrame(() => setMounted(true))
@@ -136,6 +153,17 @@ export function WelcomeScreen() {
           </h1>
         </div>
         <div className="welcome-art-wrap">
+          {showMidFish && (
+            <div className="welcome-mid-fish-school" aria-hidden="true">
+              {midFishSchool.map((fishSrc, index) => (
+                <span
+                  key={fishSrc}
+                  className={`welcome-mid-fish welcome-mid-fish-${index + 1}`}
+                  style={{ backgroundImage: `url('${fishSrc}')` }}
+                />
+              ))}
+            </div>
+          )}
           {welcomeCharacters.map((src, i) => (
             <img
               key={src}

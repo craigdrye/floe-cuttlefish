@@ -114,6 +114,7 @@ Generated: 2026-05-03
 - College Algebra Workout Batch 2: 30 authored Floe-native questions wired into College Algebra Workout, using Numbas/WeBWorK algebra-routing coverage as the source map. Topics cover linear equations, inequalities, absolute value, polynomial operations, quadratics, functions, rational expressions, exponents/radicals/logs, systems, sequences, slope/intercepts, and probability basics.
 - College Algebra Workout Batch 3: 5 authored Floe-native questions wired into College Algebra Workout, continuing the same Numbas/WeBWorK algebra-routing coverage. Topics cover distribution in linear equations, factoring from roots, rational-function domain restrictions, zero exponents, and one-draw probability.
 - College Algebra Workout Batch 4: 5 authored Floe-native questions wired into College Algebra Workout, continuing the same reviewed algebra-routing pass. Topics cover slope from equation, inequality graph interpretation, recognizing quadratic standard form, function evaluation from a table, and expected-count probability.
+- College Algebra Workout Batch 5: 5 authored Floe-native questions wired into College Algebra Workout, continuing the same reviewed algebra-routing pass. Topics cover variables on both sides of an equation, multiplying rational expressions, identifying the input variable of a function, polynomial degree, and complement percentages.
 
 ## Blocked / Do Not Wire Directly Yet
 
