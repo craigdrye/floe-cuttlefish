@@ -21,6 +21,7 @@ export const syllabusPathByTrackId: Record<string, SyllabusPath> = {
   quantAdvanced: 'career/quant_interview_advanced.md',
   series86: 'career/series_86_exam_prep.md',
   medical: 'career/medical_reasoning.md',
+  priyasBrutalSurgeonsQuiz: 'career/priyas_brutal_surgeons_quiz.md',
   regulatory: 'career/regulatory_affairs.md',
   clinicalResearch: 'career/clinical_research_coordinator.md',
   supplyChain: 'career/supply_chain_analyst.md',
