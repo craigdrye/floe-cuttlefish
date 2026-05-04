@@ -41,8 +41,19 @@ Expert difficulty requirements:
 - Very hard questions must require at least three separate reasoning steps. For example: interpret a misleading diagnostic signal, identify the likely complication or anatomy trap, choose the safest immediate management path, and reject a superficially attractive but dangerous alternative.
 - For very hard questions, include at least one misleading-but-fair clue: false reassurance, conflicting physiology, incomplete imaging, low drain output, preserved pulses, absent fever, normal early study, or a junior's confident but wrong interpretation.
 - At least two wrong answers per question must be near-miss answers that a trained surgeon might plausibly choose under pressure.
+- Do not let answer length reveal the correct answer. At least two wrong answers must be clinically plausible and specific, not short joke answers.
+- At least one wrong answer must be longer than the correct answer. Ideally, one distractor should sound like a detailed, protocol-shaped plan that is tempting but wrong because it misses the decision hinge.
 - Each question must belong to a named surgical domain: HPB, colorectal, endocrine, vascular, trauma, transplant, surgical oncology, thoracic, head-and-neck, complex abdominal wall, or surgical critical care.
 - Avoid basic recall. If the question can be answered by a medical student from one fact, reject it.
+
+Hardness upgrade:
+- Each hard or very hard question must contain one "almost correct" distractor: an answer that would be correct if one key fact in the prompt were different.
+- At least one answer option must be wrong only because the sequence is wrong, not because all of its ingredients are wrong.
+- Very hard questions must combine at least two domains, such as oncology plus vascular anatomy, cancer plus ICU physiology, endocrine cancer plus airway risk, colorectal cancer plus anticoagulation, or HPB cancer plus liver-remnant physiology.
+- The correct answer should often be a sequencing decision, not a single intervention.
+- Include one "missing-data trap" in at least two questions: the safest next step is to obtain a specific staging, anatomy, physiology, pathology, or organ-reserve fact before committing to treatment.
+- For each question, identify the most tempting wrong answer in `difficulty_rationale` and explain why a strong surgeon might choose it.
+- Reject any question where the wrong answers are obviously inferior after one glance.
 
 Tone and voice:
 Write clinically and fairly, but with a sharp, strange, memorable voice. Priya is brilliant, exacting, and funny. Do not rely mostly on goblins. Mix the comic style: courtroom cross-examination, cursed theatre, noir detective, tiny bureaucrats, melodramatic organs, suspicious noodles, treacherous drains, smug vessels, haunted checklists, overconfident interns, and other odd but clear images. The silliness must never make the clinical logic unclear.
@@ -68,6 +79,9 @@ Style requirements:
 - Do not mention that the question was generated.
 - Keep the prompt concise but information-dense.
 - Each question must have one clearly correct answer and three plausible wrong answers.
+- Answer-option anti-giveaway rule: the correct answer must not consistently be the longest or most detailed option.
+- For every question, make at least one wrong answer the longest answer option.
+- For every question, make at least two wrong answers detailed near-misses that a competent surgeon could plausibly choose under pressure.
 - Each wrong answer needs a short explanation of why it is wrong plus a teaching hint.
 - Add a short teaching note explaining the correct idea.
 - Use original wording. You must search the web for inspiration, but final questions must be original and app-playable.
@@ -131,6 +145,9 @@ Before importing worker output, validate:
 - The correct answer is clinically defensible.
 - The wrong answers are not accidentally also acceptable.
 - The explanations match the answer key.
+- The answer options do not give away the answer by length.
+- At least one wrong answer is longer than the correct answer.
+- At least two wrong answers are plausible, specific near-miss management choices rather than obviously silly throwaways.
 - The question is harder than basic residency recall and feels appropriate for an expert surgeon.
 - Exactly 2 questions are medium, 1 is hard, and 3 are very hard.
 - Medium and hard questions require at least two reasoning steps.

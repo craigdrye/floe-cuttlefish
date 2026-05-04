@@ -268,6 +268,8 @@ The course voice should be strange, crisp, and memorable.
 - The joke must never obscure the decision.
 - Avoid gratuitous gore. Clinical urgency is enough.
 - Do not make wrong answers purely silly; at least two wrong answers should usually be plausible near-misses.
+- Do not make the correct answer obviously longer, more detailed, or more sober than the distractors.
+- At least one wrong answer should be the longest answer option, and it should sound like a tempting but flawed expert plan.
 
 ## Question Construction Rules
 Every new question should include:
@@ -278,6 +280,12 @@ Every new question should include:
 - At least two reasoning steps; at least three for very hard
 - One clearly correct answer
 - Three plausible wrong answers
+- At least two detailed near-miss wrong answers
+- At least one wrong answer longer than the correct answer
+- For hard and very hard questions, one "almost correct" distractor that would become correct if one key fact in the prompt changed
+- At least one sequence-only trap, where the answer ingredients are reasonable but the order is unsafe or oncologically wrong
+- For very hard questions, a collision between at least two domains, such as oncology plus vascular anatomy, cancer plus ICU physiology, endocrine cancer plus airway risk, colorectal cancer plus anticoagulation, or HPB cancer plus liver-remnant physiology
+- At least some missing-data traps where the safest next step is to obtain a specific staging, anatomy, physiology, pathology, or organ-reserve fact before treatment
 - A teaching note or hint that explains the core principle
 - Enough facts to solve the case without hidden assumptions
 
@@ -287,6 +295,11 @@ Reject questions if:
 - The correct answer is only “call senior help” without saying what problem is being escalated.
 - The prompt is long but not actually difficult.
 - The wrong answers are obviously silly rather than plausible.
+- The correct answer is clearly signposted by being the longest, most detailed, or only serious answer.
+- No wrong answer is longer than the correct answer.
+- The wrong answers are all obviously inferior after one glance.
+- No distractor would tempt a strong surgeon under pressure.
+- A very hard question tests only one domain or one-step recognition.
 - The scenario depends on a controversial guideline detail without giving enough context.
 - The answer would be unsafe in real surgical practice.
 
