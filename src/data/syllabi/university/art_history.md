@@ -1,118 +1,162 @@
 # Art History
-**ID**: `artHistory` · **Discipline**: Humanities · **Stage**: University Freshman (ages 18–19)
+**ID**: `artHistory` | **Discipline**: Humanities | **Stage**: University Freshman (ages 18-19)
 **Aligns with**: a global Art History survey (e.g., ARTH 101 / Survey of World Art); textbook anchors include Gardner's *Art Through the Ages*, Stokstad & Cothren's *Art History*, and the Smarthistory open-access curriculum
 
-## Course Philosophy
-A survey of art history is an exercise in seeing. Students arrive thinking the course is about memorizing names and dates; the real skill it builds is the ability to **describe what is in front of you precisely** (form), **decode what it meant to its makers and original viewers** (iconography and context), and **place it in a historical conversation** (style, influence, response). The most common freshman pitfall is reducing art to "do I like it?". Our internal goal is to expand the student's seeing-vocabulary, give them a global cultural map (not just a Western one), and equip them to argue interpretive claims with evidence drawn from the work itself. Every period should be anchored to ~5–10 canonical works, but the *transferable* skill is method, not memorisation.
+## Course Aim
+This course teaches students to look carefully, describe precisely, and interpret works of art in historical context. It treats art history as a set of transferable skills: visual analysis, chronological orientation, source evaluation, museum literacy, and evidence-based critique. Students encounter major works, makers, materials, and built environments from many regions, while also learning that survey categories and canons are scholarly constructions open to revision.
 
-## Module 1: Methods of Art History — How to Look (10%)
-- The three core approaches: **formal analysis** (line, shape, mass, space, colour, value, texture, composition, scale), **iconography/iconology** (Panofsky's three levels: pre-iconographic description, iconographic identification, iconological interpretation), **contextual analysis** (patronage, function, audience, social/political/religious setting)
-- Vocabulary of media: painting (fresco, tempera, oil, acrylic, watercolour), sculpture (additive, subtractive, casting; relief vs in-the-round), printmaking (relief, intaglio, lithography, screen), photography, architecture (terms: nave, transept, apse, buttress, pendentive, dome, vault), textiles, ceramics, metalwork, mixed media
-- **Composition** terms: balance, symmetry/asymmetry, hierarchy of scale, focal point, foreground/middleground/background, atmospheric perspective, linear perspective, golden ratio, rule of thirds
-- **Style vs subject vs medium**; periodisation as scholarly construct vs natural fact
-- The **canon** debate: who decides what art is "important"? Whose voices are missing? The 1971 Linda Nochlin question "Why have there been no great women artists?" and its extension to non-Western art and folk traditions
-- Provenance, attribution, forgery; the museum and its discontents (repatriation debates, the British Museum, the Benin Bronzes)
-- **Questions**: write a 200-word formal analysis of an unfamiliar work; apply Panofsky's three levels to a known painting; identify the medium and probable function of a work shown out of context
+By the end of the course, students should be able to analyze an unfamiliar work using formal vocabulary, connect a work to its cultural and historical setting, compare works across time and place without flattening difference, and make an interpretive argument supported by visual and contextual evidence.
 
-## Module 2: Prehistoric and Ancient Mediterranean (12%)
-- **Prehistoric**: Lascaux and Chauvet cave paintings (c. 17,000–32,000 BCE); the Venus of Willendorf; megalithic architecture (Stonehenge); functions hypothesized — ritual, sympathetic magic, record-keeping
-- **Ancient Near East / Mesopotamia**: Sumerian votive figures, Standard of Ur, ziggurats, Code of Hammurabi stele, Assyrian palace reliefs (Nineveh)
-- **Ancient Egypt**: Old Kingdom (pyramids of Giza, Great Sphinx, Khafre seated, Menkaure and Khamerernebty), Middle and New Kingdoms (Hatshepsut's mortuary temple, the Amarna revolution under Akhenaten and the bust of Nefertiti, Tutankhamun's mask, Temples of Karnak and Luxor); the canon of proportion and frontality
-- **Aegean**: Cycladic figurines, Minoan Knossos and the bull-leaping fresco, Mycenaean Lion Gate and the Mask of Agamemnon
-- **Ancient Greece**:
-  - Geometric and Orientalizing periods (Dipylon vases)
-  - Archaic kouros/kore figures and the "Archaic smile"
-  - Classical: Doryphoros (Polykleitos's canon), the Parthenon (Iktinos and Kallikrates; Phidias's sculptures), Doric/Ionic/Corinthian orders
-  - Late Classical: Praxiteles' Aphrodite of Knidos, Lysippos
-  - Hellenistic: Laocoön and His Sons, Nike of Samothrace, Dying Gaul; emotion, motion, drama
-- **Ancient Rome**: Republican veristic portraits; Augustus of Primaporta; Pantheon; Colosseum; Trajan's Column; Pompeii and the Villa of the Mysteries; late-imperial reliefs (Arch of Constantine) showing stylistic shift
-- **Questions**: identify Egyptian canonical features (frontality, hierarchy of scale); distinguish Doric from Ionic from Corinthian; explain the formal and ideological shift from Classical to Hellenistic; place a Roman portrait in republican vs imperial context
+## Course Design Notes
+- Begin with looking before labeling: students should describe form, material, scale, composition, and condition before moving to meaning or judgment.
+- Balance chronology with theme: the chapters move broadly through time, but recurring questions about bodies, power, devotion, technology, exchange, patronage, and display should keep the course from becoming a list of dates.
+- Keep the survey global: avoid treating Europe as the default story and other traditions as side units. Emphasize contact, trade, empire, translation, and local specificity.
+- Use museums and archives as learning sites: labels, catalog entries, provenance records, conservation notes, installation choices, and digital collections should become evidence students can evaluate.
+- Useful open resources include Khan Academy and Smarthistory, museum collection databases, conservation videos, UNESCO materials, OpenStax humanities support where relevant, and LibreTexts art history chapters.
 
-## Module 3: Late Antique, Byzantine, Islamic, and Medieval Europe (12%)
-- **Early Christian and Late Antique**: catacomb paintings, Old St. Peter's basilica plan; the shift from naturalism to abstraction
-- **Byzantine**: Hagia Sophia (Justinian's pendentive dome); Ravenna mosaics (San Vitale, Justinian and Theodora); icons (Theotokos of Vladimir); iconoclasm controversy
-- **Islamic art**: aniconism in religious contexts; calligraphy as the supreme art; the Dome of the Rock (691 CE); the Great Mosque of Córdoba; the Alhambra; Persian miniature painting; Ottoman tile traditions; geometric patterning (girih) and arabesque; the Mughal tradition (Shah Jahan, Taj Mahal)
-- **Early Medieval Europe**: Hiberno-Saxon manuscripts (Book of Kells, Lindisfarne Gospels); Carolingian renaissance; Sutton Hoo
-- **Romanesque** (c. 1000–1150): pilgrimage churches (Sainte-Foy at Conques, Santiago de Compostela), barrel and groin vaults, tympanum sculpture (Last Judgment at Autun by Gislebertus)
-- **Gothic** (c. 1150–1500): Abbot Suger and Saint-Denis; pointed arch, ribbed vault, flying buttress, stained glass; Chartres Cathedral; Notre-Dame de Paris; English Perpendicular; the Late Gothic and Northern detail (Limbourg Brothers, *Très Riches Heures*)
-- **Questions**: distinguish Romanesque from Gothic from formal features; explain why Islamic religious art tends toward calligraphy and pattern; identify Byzantine vs Western medieval iconography of Christ
+## Chapter 1: How to Look
+### Key Concepts
+- Formal analysis: line, shape, mass, volume, color, value, texture, composition, scale, proportion, balance, rhythm, movement, space, light, and viewpoint.
+- Media and technique: painting, drawing, printmaking, photography, sculpture, ceramics, textiles, metalwork, architecture, performance, installation, video, and digital image-making.
+- Subject, style, iconography, function, patronage, audience, site, ritual use, and historical context.
+- Description versus interpretation: how to move from observable evidence to a supported claim.
+- Canon, attribution, provenance, authenticity, conservation, repatriation, and the museum as a historical institution.
 
-## Module 4: Renaissance and Baroque (12%)
-- **Italian Proto-Renaissance**: Giotto's Arena Chapel frescoes (mass, naturalism, drama)
-- **Early Renaissance** (15th c.): Brunelleschi (linear perspective; dome of Florence Cathedral), Donatello (David, the first freestanding nude since antiquity; Gattamelata), Masaccio (Trinity, Brancacci Chapel), Botticelli (Birth of Venus, Primavera)
-- **High Renaissance** (c. 1495–1520): Leonardo da Vinci (Last Supper, Mona Lisa, Vitruvian Man, sfumato), Michelangelo (David, Sistine Chapel ceiling and Last Judgment, Pietà), Raphael (School of Athens, Madonnas)
-- **Northern Renaissance**: Jan van Eyck (Arnolfini Portrait, Ghent Altarpiece, oil-paint techniques), Bosch (Garden of Earthly Delights), Dürer (engravings, self-portraits), Bruegel
-- **Mannerism**: Pontormo, Parmigianino (Madonna of the Long Neck), El Greco; expressive distortion as a turn from High Renaissance balance
-- **Baroque**: Caravaggio (tenebrism, dramatic naturalism — Calling of St. Matthew, Judith Beheading Holofernes); Bernini (Ecstasy of St. Teresa, David, Cornaro Chapel; sculpture as theatre); Velázquez (Las Meninas — meta-painting); Rembrandt (self-portraits, Night Watch, etchings); Vermeer (light, interior); Rubens (dynamism, allegory); Artemisia Gentileschi
-- **Counter-Reformation context**: the Council of Trent's directives on art; Catholic Baroque drama vs Protestant Dutch domestic genre and still life
-- **Questions**: explain how linear perspective changed pictorial space; compare Italian and Northern Renaissance approaches to detail and oil paint; analyze tenebrism in a Caravaggio; read Las Meninas iconographically
+### Practice Questions
+- What can you describe about a work before you know its title, maker, or date?
+- How does medium shape what a work can do?
+- What evidence would make an interpretation stronger than a personal reaction?
 
-## Module 5: Asian, African, Pre-Columbian, and Pacific Traditions (12%)
-- **Chinese art**: Shang/Zhou bronzes, the terracotta army of Qin; Han ink and tomb art; Tang figural sculpture; Song landscape painting (Fan Kuan, *Travelers Among Mountains and Streams*; Guo Xi); Yuan literati painting (Ni Zan); Ming porcelain; Qing court painting
-- **Japanese art**: Buddhist sculpture (Horyu-ji, Todai-ji Daibutsu); Heian narrative scrolls (*Tale of Genji*); ink painting and Zen aesthetics; Momoyama screens (Kano school); Edo ukiyo-e prints (Hokusai's *Great Wave*, Hiroshige); the influence of Japanese prints on European modernism (japonisme)
-- **Korean art**: celadon, Joseon literati painting and folk genre
-- **South Asian art**: Indus Valley seals; Mauryan Ashokan pillars; Buddhist art at Sanchi, Bharhut, Ajanta caves; Gupta classical sculpture; Hindu temple architecture (Khajuraho, the south Indian Dravidian style); Mughal miniatures; Rajput painting
-- **Southeast Asian**: Borobudur (Java), Angkor Wat (Cambodia)
-- **African art**: Nok terracottas, Ife brass heads, Benin Bronzes (and the contemporary repatriation debate), Kongo nkisi power figures, Yoruba beaded art, masquerade traditions; the colonial-era "primitivism" misreading
-- **Pre-Columbian Americas**: Olmec colossal heads; Maya glyphs and architecture (Palenque, Tikal); Teotihuacan and the Aztec capital Tenochtitlan (Coatlicue, Calendar Stone); Andean traditions — Chavín, Moche, Nasca, Inca (Machu Picchu, Sacsayhuamán)
-- **Indigenous North American**: Mississippian mound culture, Pueblo pottery, Northwest Coast totem poles
-- **Pacific (Oceania)**: Maori carving, Polynesian tapa cloth, Easter Island moai, Aboriginal Australian dot painting and dreamings
-- **Questions**: contrast Chinese landscape painting's spatial logic with Western linear perspective; identify the function of a Yoruba mask vs an aesthetic-only reading; explain why Benin Bronzes are at the centre of repatriation debates; place Hokusai's *Great Wave* in both Japanese and global modernist contexts
+### Student Output
+Students write a 300-word formal analysis of an unfamiliar work, using specific visual vocabulary and ending with two careful interpretive possibilities.
 
-## Module 6: 18th–19th Century — Enlightenment Through Impressionism (12%)
-- **Rococo**: Watteau, Fragonard, Boucher; aristocratic playfulness as the late Baroque mood
-- **Neoclassicism**: Winckelmann's revival, Jacques-Louis David (*Oath of the Horatii*, *Death of Marat*, *Napoleon Crossing the Alps*); Houdon, Canova; the moral seriousness of Greek and Roman models
-- **Romanticism**: Goya (*Third of May 1808*, *Saturn Devouring His Son*, the Black Paintings, Disasters of War etchings); Géricault (*Raft of the Medusa*); Delacroix (*Liberty Leading the People*); Friedrich (*Wanderer above the Sea of Fog*); Turner; Constable; the sublime
-- **Realism**: Courbet (*A Burial at Ornans*, *The Stone Breakers*); Millet; Daumier; the political charge of depicting ordinary labour
-- **Photography** as a new medium (1839 onward): Daguerre, Talbot; impact on painting (the "freed" pictorial imagination); Civil War photography (Brady, O'Sullivan); pictorialism vs straight photography
-- **Pre-Raphaelite Brotherhood**, Arts and Crafts (William Morris)
-- **Impressionism**: Manet (*Olympia*, *Le Déjeuner sur l'herbe* — the bridge); Monet (series — Haystacks, Cathedrals, Water Lilies); Renoir, Degas, Pissarro, Berthe Morisot, Mary Cassatt; en plein air, broken brushwork, the depiction of modern life (the boulevard, the café, the factory smoke)
-- **Post-Impressionism**: Cézanne ("treat nature in terms of the cylinder, sphere, and cone" — the bridge to Cubism); Seurat (pointillism, Sunday Afternoon on the Island of La Grande Jatte); Van Gogh (expressive brushwork, colour as emotion); Gauguin (Tahiti, the problematics of "primitivism"); Toulouse-Lautrec
-- **Symbolism**: Moreau, Redon, Munch (*The Scream*); the inward and visionary turn
-- **19th-century architecture**: iron and glass (Crystal Palace 1851, Eiffel Tower 1889), early steel skyscrapers (Sullivan, "form follows function")
-- **Questions**: explain why *Olympia* scandalised the Salon (formal and social readings); place Cézanne as the pivot from Impressionism to Cubism; analyze Goya's Third of May as both Romantic and proto-modern
+## Chapter 2: Ancient Worlds and Early Visual Systems
+### Key Concepts
+- Prehistoric image-making and built environments: cave painting, portable figures, megaliths, ritual hypotheses, and the limits of evidence.
+- Mesopotamia, Egypt, the Aegean, Greece, and Rome: power, writing, architecture, narrative relief, funerary practice, gods, rulers, proportion, naturalism, and public space.
+- South and East Asian early traditions: Indus seals, Ashokan pillars, Buddhist stupas, early Chinese bronzes, tomb objects, and the relationship between ritual and material culture.
+- Mesoamerican and Andean foundations: Olmec, Maya, Teotihuacan, Moche, Nasca, and Inca forms of monumentality, cosmology, urban design, and memory.
+- Chronology as a tool: how period names organize evidence but can also oversimplify cultural overlap.
 
-## Module 7: 20th Century and Contemporary (12%)
-- **Early modernism**:
-  - Fauvism (Matisse, Derain) — colour liberated from description
-  - Expressionism: Die Brücke (Kirchner) and Der Blaue Reiter (Kandinsky, Marc, Macke); the move toward abstraction
-  - Cubism: Picasso (*Les Demoiselles d'Avignon*, 1907) and Braque; analytic vs synthetic; collage; influence of African masks and Cézanne
-  - Futurism (Boccioni); Vorticism
-  - Constructivism (Tatlin, Rodchenko); Suprematism (Malevich, *Black Square*)
-  - De Stijl (Mondrian, Rietveld); the Bauhaus (Gropius, Klee, Kandinsky as teacher) and the integration of art, craft, and architecture
-- **Dada and Surrealism**: Duchamp's readymades (*Fountain*, 1917) and the conceptual revolution; Hannah Höch, Man Ray; Surrealism (Breton, Dalí, Magritte, Ernst, Frida Kahlo, Leonora Carrington); the unconscious, dream, automatism
-- **Mexican Muralism**: Rivera, Orozco, Siqueiros; public art as political project
-- **Harlem Renaissance and African-American modernism**: Aaron Douglas, Jacob Lawrence (*Migration Series*); Augusta Savage
-- **Mid-century**: Abstract Expressionism (Pollock's drip paintings, de Kooning, Rothko colour-field, Newman, Lee Krasner); the gestural and the sublime
-- **Pop Art**: Warhol (Campbell's Soup, Marilyn, Brillo Boxes); Lichtenstein; Hamilton (UK); Oldenburg
-- **Minimalism** (Judd, Stella, Andre, Flavin); **Conceptual Art** (Kosuth's *One and Three Chairs*, LeWitt's wall drawings)
-- **Performance, Land, Body**: Beuys, Marina Abramović, Smithson (*Spiral Jetty*), Ana Mendieta
-- **Postmodernism**: appropriation (Sherrie Levine, Cindy Sherman's *Untitled Film Stills*); pastiche; pluralism; Identity politics in art (Gonzalez-Torres, Adrian Piper, Kara Walker)
-- **Architecture**: International Style (Mies, Le Corbusier, Frank Lloyd Wright); Brutalism; Postmodernism (Venturi, Graves); Deconstructivism (Gehry, Hadid); contemporary sustainable design
-- **Contemporary global art (1990s–2026)**: globalisation of biennials and the art market; YBAs (Hirst, Emin); Gerhard Richter; Olafur Eliasson; Ai Weiwei; Yayoi Kusama; Kara Walker; Kerry James Marshall; Kehinde Wiley; Banksy and street art; new media and digital art; NFTs and the 2021–22 boom/bust; AI-generated imagery (Boris Eldagsen and the photography prize controversy, 2023); the entanglement of art, technology, and identity
-- **Questions**: analyse Picasso's *Les Demoiselles d'Avignon* as a hinge between 19th-century painting and modernism; explain why Duchamp's *Fountain* is a conceptual rather than aesthetic object; place a contemporary work in dialogue with a modernist precedent
+### Practice Questions
+- How do ancient images communicate authority?
+- What are the risks of interpreting ritual objects without written sources?
+- How do Egyptian, Greek, Chinese, and Mesoamerican approaches to the body reveal different cultural priorities?
 
-## Module 8: Synthesis — Themes Across Time (5%)
-- **The body**: how each tradition idealised, abstracted, fragmented, or politicised the human form (Egyptian canon → Greek contrapposto → Buddhist enlightenment posture → medieval distortion → Renaissance proportion → modernist deconstruction → contemporary body politics)
-- **Sacred and devotional images** across cultures: aniconism, idol, icon, relic, mandala
-- **Power and propaganda**: from Naram-Sin's stele to Augustus to Napoleon to Soviet posters to contemporary state monuments
-- **The portrait**: from veristic Roman heads to Renaissance individualism to selfie aesthetics
-- **Landscape**: as backdrop, as subject, as mood, as ecology (Song scrolls vs Dutch realism vs Constable vs Friedrich vs Land Art)
-- **Patronage shifts**: religious institution → court → bourgeoisie → market → state → corporate → digital platform
-- **Whose history?**: how the canon has expanded over the last 50 years, and what's still missing
+### Student Output
+Students create a comparative object card for two ancient works from different regions, including medium, date range, function, context, and one formal comparison.
 
-## Stretch Zone (push beyond intro)
-- **Theory**: Marxist art history (Hauser, T.J. Clark), feminist art history (Nochlin, Pollock, Parker), psychoanalytic readings (after Lacan), semiotics (Bal, Bryson), postcolonial theory (Said, Bhabha applied to art), visual culture studies (Mirzoeff)
-- **Iconography deep cuts**: Erwin Panofsky's *Studies in Iconology*; Aby Warburg and the Mnemosyne Atlas
-- **Conservation and materials science**: pigment analysis, X-radiography, infrared reflectography; how technical art history has rewritten attributions
-- **Global Art History 2.0**: rejecting "the West and the rest" framing; transcultural exchange (the Silk Road, the Indian Ocean, the Atlantic); the Renaissance's debts to Islamic Spain
-- **Museum studies**: the colonial collection, the universal museum debate, repatriation case studies (Parthenon Marbles, Benin Bronzes, Native American Graves Protection and Repatriation Act)
-- **Art and technology in the 2020s**: machine vision and AI art (DALL·E, Midjourney, Stable Diffusion since 2022; the legal battles around Stability AI); the photography prize won and rejected by Eldagsen; the post-2024 AI image-flooding of the internet and what it does to "looking"
-- **Common student traps**:
-  - Treating "I like it" as the same as "it's good"
-  - Using vague descriptors ("interesting", "beautiful") instead of formal vocabulary
-  - Reading later concepts (e.g., individualism, originality) into pre-modern works
-  - Treating non-Western art as a single "other" rather than as multiple distinct traditions
-  - Assuming photography "tells the truth"
-  - Forgetting that most art was originally in colour, in motion, or in ritual context — what we see in museums is the dry residue
-- The single transferable skill: producing a 500-word formal-and-contextual analysis of any work, on demand, that mentions specific compositional choices and at least one historical condition that makes those choices intelligible.
+## Chapter 3: Sacred Space, Image, and Devotion
+### Key Concepts
+- Buddhist, Hindu, Jain, Christian, Islamic, Jewish, and Indigenous visual traditions as varied systems of devotion, teaching, memory, and presence.
+- Architecture of sacred space: basilica, mosque, temple, stupa, shrine, monastery, pilgrimage route, courtyard, dome, vault, minaret, mandapa, and sacred landscape.
+- Byzantine icons, Islamic calligraphy and geometric pattern, medieval manuscripts, Romanesque and Gothic churches, South Asian temples, and Buddhist cave sites.
+- Aniconism, iconoclasm, relics, pilgrimage, liturgy, manuscript culture, and the relationship between image and ritual.
+- Material brilliance: gold, glass, mosaic, stone, pigment, textile, ivory, enamel, and the sensory environment of premodern art.
+
+### Practice Questions
+- How does a sacred building choreograph movement and attention?
+- Why might a tradition restrict some images while producing rich visual culture elsewhere?
+- What changes when an object made for devotion is displayed in a museum?
+
+### Student Output
+Students diagram a sacred space or devotional object, labeling how material, movement, light, and image support its function.
+
+## Chapter 4: Courts, Cities, Trade, and Exchange
+### Key Concepts
+- Renaissance and early modern Europe: perspective, humanism, workshop practice, print culture, portraiture, anatomy, patronage, and religious reform.
+- Islamic courts, Persian and Mughal manuscript painting, Ottoman tilework, Chinese literati painting, Japanese screens and prints, and Korean ceramics.
+- African kingdoms and networks: Ife, Benin, Kongo, Ethiopia, Mali, masquerade, regalia, metalwork, and the problem of interpreting objects removed from performance contexts.
+- Trade routes and exchange: Silk Road, Indian Ocean, Atlantic world, collecting, diplomatic gifts, colonial extraction, and hybrid visual forms.
+- Cities and courts as engines of art: Florence, Venice, Istanbul, Isfahan, Beijing, Kyoto, Tenochtitlan, Cuzco, Benin City, and others.
+
+### Practice Questions
+- How did patronage shape subject matter, scale, and materials?
+- What evidence shows exchange rather than isolated invention?
+- How can students compare works across regions without ranking them by a single standard?
+
+### Student Output
+Students build a visual exchange map tracing one material, motif, technology, or object type across at least three places.
+
+## Chapter 5: Modernity, Revolution, and the Public
+### Key Concepts
+- Enlightenment, empire, revolution, nationalism, abolition, industrialization, urbanization, and the rise of public exhibitions.
+- Rococo, Neoclassicism, Romanticism, Realism, photography, Impressionism, Post-Impressionism, Symbolism, Arts and Crafts, and early modern architecture.
+- Art and politics: history painting, caricature, war imagery, monuments, propaganda, public memory, and counter-memory.
+- Photography and mechanical reproduction: truth claims, staging, circulation, archives, colonial documentation, and new ways of seeing.
+- The modern viewer: salons, museums, academies, critics, newspapers, posters, department stores, and mass publics.
+
+### Practice Questions
+- Why did some modern works provoke scandal?
+- How did photography change the status of painting and evidence?
+- What makes a monument persuasive, contested, or vulnerable to reinterpretation?
+
+### Student Output
+Students write a short exhibition review of three works from the long nineteenth century, explaining how each addresses modern public life.
+
+## Chapter 6: Modernism, Avant-Gardes, and Global Responses
+### Key Concepts
+- Early modernist movements: Fauvism, Expressionism, Cubism, Futurism, Constructivism, Suprematism, De Stijl, Dada, Surrealism, and the Bauhaus.
+- Modernism beyond Europe and the United States: Mexican muralism, Harlem Renaissance, Japanese modern print culture, Indian modernism, Latin American abstraction, African modernisms, and anticolonial visual culture.
+- Abstraction, collage, readymades, performance, manifestos, design reform, architecture, and the challenge to traditional definitions of art.
+- Primitivism, appropriation, colonial collections, and the need to distinguish influence, admiration, extraction, and distortion.
+- Art under conditions of war, displacement, revolution, censorship, and mass media.
+
+### Practice Questions
+- Why did some artists reject naturalism, illusionism, or traditional craft hierarchies?
+- How can a readymade be an artwork if the artist did not make it by hand?
+- What ethical questions arise when modernists use forms taken from colonized cultures?
+
+### Student Output
+Students present a paired comparison between one canonical modernist work and one global or anticolonial response, focusing on form, context, and power.
+
+## Chapter 7: Contemporary Art, Visual Culture, and Technology
+### Key Concepts
+- Postwar and contemporary movements: Abstract Expressionism, Pop, Minimalism, Conceptual Art, performance, land art, feminist art, video art, installation, postmodernism, identity-based practices, street art, social practice, and new media.
+- Global contemporary art: biennials, residencies, diasporas, museums, art fairs, markets, state sponsorship, censorship, activism, and digital circulation.
+- Technology and image culture: television, video, internet art, social media, NFTs, AI-generated imagery, surveillance, databases, and machine vision.
+- Critique and interpretation: authorship, originality, aura, reproduction, audience participation, institutional critique, and the politics of display.
+- Environmental art, memorials, archives, repair, care, and art as public conversation.
+
+### Practice Questions
+- How does an installation change the viewer's role?
+- What happens to authorship when images are sampled, reproduced, generated, or collaboratively made?
+- How should critics evaluate contemporary work when historical distance is limited?
+
+### Student Output
+Students create a contemporary artwork dossier with images, artist statements or interviews where available, exhibition context, critical reception, and their own evidence-based critique.
+
+## Chapter 8: Museum, Source, and Critique Lab
+### Key Concepts
+- Museum literacy: labels, wall texts, catalog entries, accession numbers, provenance, donor history, conservation status, display design, and audience assumptions.
+- Primary and secondary sources: artist writings, contracts, inventories, travel accounts, criticism, oral histories, collection records, technical reports, and scholarly essays.
+- Research ethics: citation, image rights, cultural sensitivity, contested ownership, sacred materials, human remains, and community consultation.
+- Writing art history: thesis, close looking, comparison, chronology, context, counterargument, and precise citation.
+- Critique as disciplined judgment: moving beyond "I like it" toward claims about form, meaning, context, evidence, and stakes.
+
+### Practice Questions
+- What does a museum label reveal, and what does it leave out?
+- How can provenance change the meaning or ethical status of a work?
+- What makes a visual argument convincing?
+
+### Student Output
+Students revise an existing museum label or digital collection entry, adding missing context, clarifying visual evidence, and noting one unresolved research question.
+
+## Capstone
+Students complete a focused art historical research project on one work, building, object group, or exhibition. The project should include formal analysis, chronology, cultural context, source evaluation, museum or collection history where relevant, comparison to at least two other works, and a critical argument. Strong projects make the reader see the object more clearly and explain why its form, function, and history matter.
+
+## Assessment Ideas
+- Weekly looking journal with sketches, vocabulary, and short descriptions.
+- Image identification quizzes that require visual evidence, not memorized titles alone.
+- Formal analysis paper on an unfamiliar work.
+- Comparative object card or timeline assignment.
+- Museum or digital collection label critique.
+- Group presentation on exchange, patronage, or display.
+- Final research project with annotated bibliography and revised thesis statement.
+
+## Research Notes
+- Khan Academy and Smarthistory are strong open anchors for introductory art history, especially for object-focused videos, timelines, and global survey materials.
+- Museum collection databases such as the Metropolitan Museum of Art, British Museum, Louvre, Smithsonian, National Gallery of Art, Getty, and local university museums provide images, catalog data, provenance notes, and bibliographies.
+- LibreTexts art history chapters can support survey coverage and terminology; OpenStax humanities resources may help with broader cultural context.
+- Students should treat all dates, titles, attributions, and cultural labels as evidence to verify, not facts to copy passively.
+- Research should include both visual evidence and contextual sources, and should note when an object's original setting, maker, title, or function is uncertain.

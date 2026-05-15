@@ -1,54 +1,66 @@
 # 8th Grade Reading and Vocab
-**ID**: `col-8th-grade-reading-and-vocab` · **Discipline**: English · **Year**: 8 (ages 12–13)
+**ID**: `col-8th-grade-reading-and-vocab` | **Discipline**: English | **Year**: 8 (ages 12-13)
 **Frameworks**: US Common Core ELA Grade 8
 
-## Course Philosophy
-In 8th grade, literature analysis focuses on conflicting viewpoints, dramatic irony, and how modern fiction draws on traditional themes. Informational text analysis requires evaluating conflicting evidence and assessing the soundness of complex arguments. Vocabulary emphasizes nuance, connotation, and domain-specific terminology.
+## Course Aim
+Strengthen students as careful, independent readers who can infer beyond the surface, trace theme and argument, analyze rhetoric, build academic vocabulary, and discuss texts with evidence. Students learn to move between literary and informational reading without losing precision, curiosity, or confidence.
 
-## Module 1: Reading Literature (25%)
-- Cite the textual evidence that most strongly supports an analysis of what the text says explicitly as well as inferences drawn from the text
-- Determine a theme or central idea of a text and analyze its development over the course of the text, including its relationship to the characters, setting, and plot; provide an objective summary of the text
-- Analyze how particular lines of dialogue or incidents in a story or drama propel the action, reveal aspects of a character, or provoke a decision
-- Determine the meaning of words and phrases as they are used in a text, including figurative and connotative meanings; analyze the impact of specific word choices on meaning and tone, including analogies or allusions to other texts
-- Compare and contrast the structure of two or more texts and analyze how the differing structure of each text contributes to its meaning and style
-- Analyze how differences in the points of view of the characters and the audience or reader (e.g., created through the use of dramatic irony) create such effects as suspense or humor
-- Analyze the extent to which a filmed or live production of a story or drama stays faithful to or departs from the text or script, evaluating the choices made by the director or actors
-- Analyze how a modern work of fiction draws on themes, patterns of events, or character types from myths, traditional stories, or religious works such as the Bible, including describing how the material is rendered new
-- **Questions**: Strongest evidence selection, character motivation via dialogue, analyzing dramatic irony, mythic archetypes in modern fiction
+## Course Design Notes
+This course is text-rich and discussion-forward. Use short, demanding excerpts alongside whole works so students repeatedly practice close reading, annotation, vocabulary study, cross-text comparison, and written explanation. Route questions here when they involve inference, theme, characterization, author's purpose, argument, rhetoric, nonfiction structure, morphology, connotation, or evidence-based discussion.
 
-## Module 2: Reading Informational Text (25%)
-- Cite the textual evidence that most strongly supports an analysis of what the text says explicitly as well as inferences drawn from the text
-- Determine a central idea of a text and analyze its development over the course of the text, including its relationship to supporting ideas; provide an objective summary of the text
-- Analyze how a text makes connections among and distinctions between individuals, ideas, or events (e.g., through comparisons, analogies, or categories)
-- Determine the meaning of words and phrases as they are used in a text, including figurative, connotative, and technical meanings; analyze the impact of specific word choices on meaning and tone, including analogies or allusions to other texts
-- Analyze in detail the structure of a specific paragraph in a text, including the role of particular sentences in developing and refining a key concept
-- Determine an author's point of view or purpose in a text and analyze how the author acknowledges and responds to conflicting evidence or viewpoints
-- Evaluate the advantages and disadvantages of using different mediums (e.g., print or digital text, video, multimedia) to present a particular topic or idea
-- Delineate and evaluate the argument and specific claims in a text, assessing whether the reasoning is sound and the evidence is relevant and sufficient; recognize when irrelevant evidence is introduced
-- Analyze a case in which two or more texts provide conflicting information on the same topic and identify where the texts disagree on matters of fact or interpretation
-- **Questions**: Evaluating conflicting evidence, assessing argument soundness, analyzing paragraph structure, comparing cross-medium presentations
+## Chapter 1: Close Reading and Strong Inference
+- **Key concepts**: explicit meaning, inference, textual evidence, annotation, context, ambiguity, objective summary, and accountable discussion.
+- **Practice questions**: Which evidence most strongly supports the inference? What does the text state, imply, or leave uncertain? How can a summary stay neutral?
+- **Student output**: an annotated passage with three evidence-based inferences and a short objective summary.
 
-## Module 3: Vocabulary Acquisition & Use (25%)
-- Use context (e.g., the overall meaning of a sentence or paragraph; a word's position or function in a sentence) as a clue to the meaning of a word or phrase
-- Use common, grade-appropriate Greek or Latin affixes and roots as clues to the meaning of a word (e.g., precede, recede, secede)
-- Verify the preliminary determination of the meaning of a word or phrase (e.g., by checking the inferred meaning in context or in a dictionary)
-- Interpret figures of speech (e.g. verbal irony, puns) in context
-- Use the relationship between particular words to better understand each of the words
-- Distinguish among the connotations (associations) of words with similar denotations (definitions) (e.g., bullheaded, willful, firm, persistent, resolute)
-- **Questions**: Verbal irony and puns, advanced Greek/Latin roots, subtle connotative differences
+## Chapter 2: Character, Conflict, and Point of View
+- **Key concepts**: character motivation, dialogue, incident, internal and external conflict, narrator reliability, point of view, dramatic irony, suspense, and humor.
+- **Practice questions**: How does a line of dialogue change a character's decision? What does the reader know that a character does not? How does point of view shape sympathy?
+- **Student output**: a character-and-viewpoint map explaining how one scene advances conflict and theme.
 
-## Module 4: Language Conventions (25%)
-- Explain the function of verbals (gerunds, participles, infinitives) in general and their function in particular sentences
-- Form and use verbs in the active and passive voice
-- Form and use verbs in the indicative, imperative, interrogative, conditional, and subjunctive mood
-- Recognize and correct inappropriate shifts in verb voice and mood
-- Use punctuation (comma, ellipsis, dash) to indicate a pause or break
-- Use an ellipsis to indicate an omission
-- Spell correctly
-- Use knowledge of language and its conventions when writing, speaking, reading, or listening
-- **Questions**: Identifying gerunds/participles/infinitives, active vs passive voice shifts, conditional/subjunctive mood usage, ellipsis usage
+## Chapter 3: Theme, Structure, and Literary Patterns
+- **Key concepts**: theme, central idea, motif, plot structure, pacing, parallel scenes, allusion, archetype, mythic pattern, and modern adaptation.
+- **Practice questions**: How does the theme develop across the beginning, middle, and end? How does structure affect meaning? What old pattern is being remade in a new text?
+- **Student output**: a theme tracker comparing how two scenes or texts develop a shared idea.
 
-## Stretch Zone
-- Analyze complex rhetoric (ethos, pathos, logos) in Supreme Court opinions or foundational documents
-- Identify logical fallacies (e.g., false dichotomy, red herring) in political debates
-- Write analytical essays synthesizing 3+ conflicting sources
+## Chapter 4: Words, Tone, and Morphology
+- **Key concepts**: context clues, Greek and Latin roots, affixes, word families, denotation, connotation, figurative language, verbal irony, pun, analogy, and tone.
+- **Practice questions**: Which root or affix helps unlock the word? What connotation changes the tone? How does irony depend on context?
+- **Student output**: a vocabulary notebook entry set that connects morphology, context, connotation, and original sentences.
+
+## Chapter 5: Nonfiction Structure and Central Ideas
+- **Key concepts**: central idea, supporting idea, paragraph structure, comparison, analogy, category, cause and effect, problem and solution, and concept development.
+- **Practice questions**: What role does this sentence play in the paragraph? How does the author connect two ideas or events? Which detail refines the central idea?
+- **Student output**: a paragraph anatomy chart showing how sentences build and clarify a nonfiction claim.
+
+## Chapter 6: Argument, Evidence, and Rhetoric
+- **Key concepts**: claim, reason, evidence, relevance, sufficiency, sound reasoning, counterclaim, conflicting viewpoint, ethos, pathos, logos, and rhetorical choice.
+- **Practice questions**: Is the evidence relevant and sufficient? How does the author respond to a competing view? Which rhetorical appeal is doing the most work?
+- **Student output**: an argument evaluation that rates one text's claim, reasoning, evidence, and response to opposition.
+
+## Chapter 7: Comparing Texts and Media
+- **Key concepts**: cross-text comparison, conflicting information, interpretation, medium, adaptation, film and performance choices, emphasis, omission, and source perspective.
+- **Practice questions**: Where do two accounts disagree on fact or interpretation? What changes when a topic moves from print to video? Which adaptation choice changes the meaning?
+- **Student output**: a comparison brief analyzing two texts or one text and one media version of the same topic or story.
+
+## Chapter 8: Discussion and Evidence-Based Response
+- **Key concepts**: seminar norms, questioning, claim development, quotation integration, paraphrase, citation, transitions, academic register, and revision.
+- **Practice questions**: What question opens the discussion? Which quotation best supports the response? How can the explanation connect evidence back to the claim?
+- **Student output**: a short analytical response revised after peer discussion and evidence review.
+
+## Capstone
+Students create a cross-text reading portfolio on a shared theme, question, or issue. The portfolio includes literary analysis, nonfiction argument evaluation, vocabulary and morphology notes, a media or adaptation comparison, and a final discussion or written defense using the strongest evidence from multiple sources.
+
+## Assessment Ideas
+- Evidence checks that require students to choose, quote, and explain the strongest support.
+- Vocabulary tasks that combine morphology, context, connotation, and accurate use.
+- Short constructed responses graded on claim, evidence, explanation, and precision.
+- Seminar participation assessed through preparation, listening, questioning, and text-based contribution.
+- Capstone graded on cross-text synthesis, argument evaluation, vocabulary transfer, and clarity of written or spoken reasoning.
+
+## Research Notes
+- Common Core English Language Arts Standards Grade 8: https://www.thecorestandards.org/ELA-Literacy/grade-8/
+- Common Core Reading Informational Text Grade 8: https://www.thecorestandards.org/ELA-Literacy/RI/8/
+- Common Core Language Standards Grade 8: https://www.thecorestandards.org/ELA-Literacy/L/8/
+- UK National Curriculum English Key Stage 3: https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study/national-curriculum-in-england-english-programmes-of-study
+- Education Endowment Foundation Improving Literacy in Secondary Schools: https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/literacy-ks3-ks4

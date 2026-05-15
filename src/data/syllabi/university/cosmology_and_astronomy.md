@@ -1,50 +1,60 @@
 # Cosmology and Astronomy
-**ID**: `cosmologyAndAstronomy` · **Discipline**: Science · **Year**: University Senior
+**ID**: `cosmologyAndAstronomy` - **Discipline**: Science - **Year**: University Senior
 
-## Course Philosophy
-This advanced course blends astrophysics and theoretical cosmology to understand the origin, evolution, and large-scale structure of the universe. It requires a strong foundation in physics and calculus.
+## Course Aim
+Study the universe from nearby observations to large-scale cosmology: light, telescopes, stars, galaxies, black holes, dark matter, dark energy, and the history of the expanding universe. Students learn to connect physical models with astronomical evidence and to state what observations can and cannot prove.
 
-## Module 1: Observational Astronomy and Celestial Mechanics (15%)
-- The celestial sphere, coordinate systems (Right Ascension/Declination), and measuring time
-- Electromagnetic radiation and telescopes (optical, radio, space-based)
-- Spectroscopy: Blackbody radiation (Wien's Law, Stefan-Boltzmann Law), atomic spectra, the Doppler effect
-- Celestial Mechanics: Kepler's Laws, Newton's Law of Universal Gravitation, orbital velocity, and the Virial Theorem
-- **Questions**: Using the Doppler shift to calculate a galaxy's radial velocity, applying the Virial Theorem to estimate the mass of a galaxy cluster
+## Course Design Notes
+Route questions here when they involve observational astronomy, spectroscopy, celestial mechanics, stellar evolution, galaxies, distance ladders, general relativity, black holes, gravitational waves, Big Bang cosmology, the CMB, dark matter, dark energy, inflation, or the fate of the universe. The course assumes physics and calculus comfort but should keep evidence visible.
 
-## Module 2: Stellar Astrophysics (20%)
-- The Sun: Structure, nuclear fusion (proton-proton chain), solar neutrinos, and magnetic activity
-- Measuring stars: Parallax, apparent vs absolute magnitude, distance modulus ($m - M = 5 \log d - 5$)
-- The Hertzsprung-Russell (H-R) Diagram: Main sequence, giants, white dwarfs
-- Stellar Evolution: Star formation (Jeans mass), main-sequence lifespan, post-main-sequence evolution (red giants, planetary nebulae, supernovae)
-- Stellar Remnants: White dwarfs (electron degeneracy pressure, Chandrasekhar limit), Neutron stars (pulsars), and Black Holes (Schwarzschild radius)
-- **Questions**: Calculating the lifespan of a star based on its mass, explaining the evolutionary track of a 10-solar-mass star on the H-R diagram
+## Chapter 1: Observing the Sky and Measuring the Universe
+**Key concepts**: Celestial sphere, coordinates, time, telescopes, electromagnetic spectrum, spectroscopy, blackbody radiation, Doppler shift, parallax, magnitude, and uncertainty.
+**Practice questions**: Use parallax to estimate distance; interpret spectra; calculate radial velocity from redshift; compare telescope types; explain how uncertainty limits inference.
+**Student output**: An observation methods brief matching astronomical questions to instruments, wavelengths, and measurement limits.
 
-## Module 3: Galaxies and the Large-Scale Structure (20%)
-- The Milky Way: Structure (bulge, disk, halo), spiral arms (density wave theory), and the supermassive black hole (Sgr A*)
-- Galaxy Classification: The Hubble Tuning Fork (Ellipticals, Spirals, Irregulars)
-- Active Galactic Nuclei (AGN): Quasars, blazars, Seyfert galaxies, and the unified model
-- The Distance Ladder: Standard candles (Cepheid variables, Type Ia supernovae), Tully-Fisher relation
-- Galaxy Clusters and Superclusters; dark matter halos
-- **Questions**: Using Cepheid variables to calculate the distance to Andromeda, explaining the energy source of a quasar
+## Chapter 2: Celestial Mechanics and Gravity
+**Key concepts**: Kepler's laws, Newtonian gravity, orbital energy, virial theorem, tides, escape velocity, n-body limits, and gravitational evidence.
+**Practice questions**: Compute orbital speeds; use Kepler's third law; estimate mass from orbital motion; apply the virial theorem; explain why orbital data reveal unseen mass.
+**Student output**: A mechanics problem set with one written explanation connecting equations to astronomical evidence.
 
-## Module 4: General Relativity and Black Holes (20%)
-- Foundations of General Relativity: The Equivalence Principle, spacetime curvature
-- Einstein's Field Equations (conceptual overview)
-- Tests of GR: Gravitational lensing, precession of Mercury's perihelion, gravitational redshift
-- Black Hole Physics: Event horizons, ergospheres (Kerr black holes), Hawking radiation, and the information paradox
-- Gravitational Waves: Sources (binary mergers) and detection (LIGO)
-- **Questions**: Explaining how gravitational lensing provides evidence for dark matter, calculating the Schwarzschild radius of the Earth
+## Chapter 3: Stars, Fusion, and Stellar Evolution
+**Key concepts**: Solar structure, fusion, hydrostatic equilibrium, luminosity, temperature, H-R diagram, stellar mass, star formation, main sequence, giants, supernovae, white dwarfs, neutron stars, and black holes.
+**Practice questions**: Place stars on the H-R diagram; estimate stellar lifetimes; compare low- and high-mass evolution; explain the Chandrasekhar limit; trace nucleosynthesis.
+**Student output**: A stellar life-cycle poster or technical memo for stars of different masses.
 
-## Module 5: Cosmology (The Big Bang and the Fate of the Universe) (25%)
-- The expanding universe: Hubble's Law ($v = H_0 d$) and the cosmological redshift
-- The Big Bang Theory: Timeline of the early universe (Planck epoch, inflation, nucleosynthesis, recombination)
-- The Cosmic Microwave Background (CMB): Discovery, temperature fluctuations, and acoustic peaks
-- The Friedmann Equations and the geometry of the universe (flat, open, closed)
-- Dark Matter: Evidence from galactic rotation curves and the CMB
-- Dark Energy: Evidence from accelerating expansion (Type Ia supernovae) and the cosmological constant ($\Lambda$)
-- The ultimate fate of the universe: Big Freeze, Big Crunch, or Big Rip
-- **Questions**: Using Hubble's Law to estimate the age of the universe, interpreting the power spectrum of the CMB
+## Chapter 4: Galaxies and Large-Scale Structure
+**Key concepts**: Milky Way structure, galaxy classification, rotation curves, dark matter halos, active galactic nuclei, quasars, standard candles, Cepheids, Type Ia supernovae, clusters, and cosmic web.
+**Practice questions**: Use a standard candle to find distance; interpret a rotation curve; classify galaxies; explain AGN energy sources; connect galaxy surveys to large-scale structure.
+**Student output**: A galaxy evidence dossier combining image, spectrum, distance estimate, and mass inference.
 
-## Stretch Zone
-- The physics of cosmic inflation (inflaton fields, solving the horizon and flatness problems)
-- String theory and multiverse hypotheses (conceptual)
+## Chapter 5: Relativity, Black Holes, and Gravitational Waves
+**Key concepts**: Equivalence principle, spacetime curvature, gravitational lensing, Schwarzschild radius, event horizon, Kerr black holes, accretion, Hawking radiation, information paradox, and gravitational-wave detection.
+**Practice questions**: Calculate Schwarzschild radius; explain lensing; interpret a merger signal; compare Newtonian and relativistic gravity; discuss what black-hole images show.
+**Student output**: A public explainer on one relativity observation and the chain of inference behind it.
+
+## Chapter 6: Big Bang Cosmology and the Early Universe
+**Key concepts**: Hubble's law, cosmological redshift, scale factor, expansion, early-universe timeline, nucleosynthesis, recombination, cosmic microwave background, acoustic peaks, and inflation.
+**Practice questions**: Estimate Hubble time; explain why the CMB supports Big Bang cosmology; connect elemental abundances to early conditions; compare evidence for expansion and inflation.
+**Student output**: A timeline of the universe with evidence attached to each major era.
+
+## Chapter 7: Dark Matter, Dark Energy, and Cosmic Fate
+**Key concepts**: Dark matter evidence, dark energy, cosmological constant, supernova acceleration, Friedmann equations, critical density, flat/open/closed geometry, Big Freeze, Big Crunch, and Big Rip.
+**Practice questions**: Compare evidence from rotation curves, clusters, lensing, and the CMB; interpret supernova data; discuss cosmic fate under different density parameters.
+**Student output**: A model-comparison brief on dark matter or dark energy, including evidence, alternatives, and open questions.
+
+## Chapter 8: Frontiers, Uncertainty, and Scientific Communication
+**Key concepts**: Survey astronomy, simulations, multiverse hypotheses, inflationary models, string-theory claims, parameter estimation, model uncertainty, peer review, and public communication.
+**Practice questions**: Distinguish speculative theory from established evidence; critique a popular astronomy claim; read a parameter plot; explain why uncertainty is not ignorance.
+**Student output**: A final research-style presentation on a current astronomy or cosmology question.
+
+## Capstone
+Students produce an evidence-based cosmology or astronomy report using observations, equations, model assumptions, uncertainty, and a clear public-facing explanation. Topics may include galaxy rotation, stellar evolution, black holes, CMB evidence, exoplanet detection, or dark energy.
+
+## Assessment Ideas
+Use calculation sets, data interpretation, spectra/image analysis, literature summaries, model-comparison memos, and a final presentation. Assess whether students connect mathematical claims to observational evidence.
+
+## Research Notes
+- OpenStax, *Astronomy 2e*: https://openstax.org/details/books/astronomy-2e
+- NASA Astrophysics: https://science.nasa.gov/astrophysics/
+- ESA Science and Exploration: https://www.esa.int/Science_Exploration/Space_Science
+- LIGO, gravitational-wave resources: https://www.ligo.caltech.edu/

@@ -1,46 +1,66 @@
 # Data Science / ML Interview Prep
-**ID**: `ml` · **Discipline**: Technology · **Year**: University Senior / Career Hopper
+**ID**: `ml` - **Discipline**: Technology - **Year**: University Senior / Career Hopper
 
-## Course Philosophy
-This course prepares candidates for rigorous technical interviews in Data Science and Machine Learning. It bridges theoretical statistics with applied coding (Python/SQL) and emphasizes product sense and experimental design (A/B testing).
+## Course Aim
+Prepare students and career changers to handle data science and machine learning interviews by building practical fluency across the full data workflow: framing a problem, gathering and cleaning data, writing Python and SQL, reasoning statistically, training simple models, evaluating results, explaining tradeoffs, and recognizing ethical risks. The course treats interview preparation as portfolio preparation: every technical idea becomes a small artifact students can discuss clearly under pressure.
 
-## Module 1: SQL and Data Manipulation (20%)
-- SQL Fundamentals: `JOIN`s (Inner, Left, Outer), `GROUP BY`, `HAVING`
-- Advanced SQL: Window functions (`ROW_NUMBER`, `RANK`, `LEAD`, `LAG`), Common Table Expressions (CTEs), Subqueries
-- Optimization: Indexing, execution plans, handling NULLs
-- Python for Data Manipulation: Pandas (filtering, merging, aggregations, `apply`), NumPy
-- **Questions**: Writing a SQL query to find the 3rd highest salary per department, using window functions to calculate a 7-day rolling average
+## Course Design Notes
+This is a career-prep studio with short concept briefings, coding drills, case discussions, and project sprints. Route questions here when students need data science interview prep, ML fundamentals, statistics review, Pandas practice, SQL analysis, model evaluation, take-home project coaching, product experiment design, or responsible AI discussion. Emphasize clear reasoning, reproducible notebooks, defensible assumptions, and concise communication over memorized API trivia.
 
-## Module 2: Probability and Statistics (20%)
-- Probability Theory: Bayes' Theorem, conditional probability, combinatorics
-- Distributions: Normal, Binomial, Poisson, Exponential, Uniform
-- Descriptive Statistics: Variance, expected value, covariance, correlation
-- Inferential Statistics: Hypothesis testing (z-test, t-test, Chi-square), p-values, confidence intervals, Type I vs Type II errors
-- **Questions**: Solving a classic probability interview question (e.g., "Expected number of coin flips to get two heads in a row"), explaining the central limit theorem in simple terms
+## Chapter 1: Data Workflow and Problem Framing
+- **Key concepts**: Data science lifecycle, stakeholder questions, units of analysis, target variables, features, baselines, data provenance, reproducibility, project scoping, and technical storytelling.
+- **Practice questions**: Turn a vague product question into an analysis plan; identify the observation unit in a dataset; explain how a baseline changes the meaning of model performance.
+- **Student output**: A project brief with question, success metric, dataset inventory, assumptions, risks, and a short plan for analysis.
 
-## Module 3: Machine Learning Algorithms & Theory (25%)
-- Supervised Learning (Regression): Linear regression (assumptions, OLS, interpreting coefficients), Ridge/Lasso regularization (L1 vs L2)
-- Supervised Learning (Classification): Logistic regression, Support Vector Machines (SVMs), Naive Bayes, K-Nearest Neighbors (KNN)
-- Tree-Based Models: Decision trees, Random Forests (bagging), Gradient Boosting (XGBoost, LightGBM)
-- Unsupervised Learning: K-Means clustering, PCA (Principal Component Analysis)
-- Evaluation Metrics: Accuracy, Precision, Recall, F1-Score, ROC/AUC, Log-Loss, RMSE, MAE
-- **Questions**: Explaining the bias-variance tradeoff, choosing between a Random Forest and Logistic Regression for a specific dataset, dealing with imbalanced classes
+## Chapter 2: Python, Notebooks, and Pandas Fluency
+- **Key concepts**: Jupyter notebooks, Python data types, functions, imports, error handling, NumPy arrays, Pandas DataFrames, filtering, sorting, grouping, merging, missing values, dates, strings, and readable notebook structure.
+- **Practice questions**: Clean a messy column; write a function for repeatable preprocessing; explain why a merge changed row counts; debug a failed notebook cell.
+- **Student output**: A reproducible cleaning notebook that loads raw data, validates key columns, documents transformations, and exports an analysis-ready dataset.
 
-## Module 4: Product Sense and Experimental Design (20%)
-- A/B Testing: Formulating hypotheses, determining sample size/Minimum Detectable Effect (MDE), randomization, calculating duration
-- Network effects and interference in A/B testing (e.g., in ride-sharing apps)
-- Defining Metrics: North Star metrics, proxy metrics, guardrail metrics
-- Product Case Studies: "How would you measure the success of a new feature?", "Why did engagement drop by 10% yesterday?"
-- **Questions**: Designing an A/B test for a social media feed algorithm change, diagnosing a sudden drop in daily active users (DAU)
+## Chapter 3: SQL and Relational Data for Analysts
+- **Key concepts**: Tables, rows, columns, primary keys, foreign keys, query order, SELECT, WHERE, JOIN, GROUP BY, HAVING, CTEs, window functions, NULLs, grain, and metric denominators.
+- **Practice questions**: Write a query for top customers by month; diagnose duplicate rows after a join; calculate a rolling average; explain when to use SQL before Pandas.
+- **Student output**: A query set with staged CTEs, at least one join, one aggregation, one window function, and plain-language notes about grain and assumptions.
 
-## Module 5: ML System Design and Deployment (15%)
-- End-to-End ML Pipeline: Data ingestion, feature engineering, training, evaluation, deployment, monitoring
-- Handling Concept Drift and Data Drift
-- Batch vs Real-time predictions
-- Feature Stores and Model Registries
-- Cold start problems in recommendation systems
-- **Questions**: Designing a real-time recommendation engine for an e-commerce site, explaining how to monitor model performance post-deployment
+## Chapter 4: Probability and Statistical Reasoning
+- **Key concepts**: Random variables, conditional probability, Bayes' theorem, distributions, expectation, variance, covariance, correlation, sampling, confidence intervals, hypothesis tests, p-values, effect sizes, statistical power, and Type I and Type II errors.
+- **Practice questions**: Explain the central limit theorem to a nontechnical teammate; choose a test for two groups; compute and interpret a confidence interval; separate correlation from causation.
+- **Student output**: A statistics memo that summarizes a dataset, states uncertainty clearly, runs one appropriate test or interval estimate, and explains limitations.
 
-## Stretch Zone
-- Deep Learning basics (Neural Networks, CNNs, RNNs, Transformers)
-- Take-home assignment best practices (code structure, README, storytelling with data)
+## Chapter 5: Exploratory Analysis and Product Experiments
+- **Key concepts**: Exploratory data analysis, chart choice, segmentation, outliers, cohorts, funnels, A/B testing, randomization, guardrail metrics, minimum detectable effect, experiment duration, novelty effects, interference, and Simpson's paradox.
+- **Practice questions**: Diagnose a drop in daily active users; design an experiment for a recommendation change; choose guardrail metrics; identify a misleading visualization.
+- **Student output**: An experiment design brief with hypothesis, users, treatment, primary metric, guardrails, analysis plan, risks, and a decision rule.
+
+## Chapter 6: Machine Learning Foundations
+- **Key concepts**: Supervised learning, unsupervised learning, features, labels, train-test split, cross-validation, leakage, overfitting, underfitting, bias-variance tradeoff, linear regression, logistic regression, decision trees, random forests, gradient boosting, k-means, and PCA.
+- **Practice questions**: Choose a model for a small tabular dataset; identify leakage in a feature list; explain regularization; compare an interpretable baseline with a more complex model.
+- **Student output**: A modeling notebook with a baseline, one or two candidate models, documented feature choices, reproducible splits, and a concise explanation of model tradeoffs.
+
+## Chapter 7: Evaluation, Error Analysis, and Communication
+- **Key concepts**: Accuracy, precision, recall, F1, ROC AUC, PR AUC, log loss, RMSE, MAE, calibration, confusion matrices, threshold selection, class imbalance, subgroup performance, residual analysis, model cards, and interview communication.
+- **Practice questions**: Pick a metric for fraud detection; explain why accuracy can fail; tune a classification threshold; interpret errors for a stakeholder.
+- **Student output**: An evaluation report with metrics, confusion matrix or residual analysis, subgroup checks, threshold recommendation, and a short model card.
+
+## Chapter 8: Ethics, Deployment Basics, and Interview Readiness
+- **Key concepts**: Privacy, consent, bias, fairness, explainability, data retention, model monitoring, data drift, concept drift, batch scoring, online prediction, feature stores, model registries, take-home assignment structure, portfolio polish, and behavioral interview framing.
+- **Practice questions**: Identify ethical risks in a dataset; explain how to monitor a deployed model; outline a take-home project README; answer a tradeoff question using evidence.
+- **Student output**: A final interview packet with project README, ethics note, model summary, selected code excerpts, and concise talking points for technical and behavioral interviews.
+
+## Capstone
+Students complete an end-to-end data science or machine learning interview project using a real or instructor-approved dataset. The capstone must include problem framing, data cleaning, SQL or relational analysis, exploratory analysis, statistical reasoning, at least one machine learning model when appropriate, evaluation and error analysis, ethical risk review, reproducibility materials, and a presentation that explains both results and tradeoffs.
+
+## Assessment Ideas
+- Weekly coding drills in Python, Pandas, SQL, and statistics with short written explanations.
+- Notebook reviews for reproducibility, clear assumptions, clean code, and meaningful interpretation.
+- Mock interview prompts covering probability, ML concepts, product experiments, and model evaluation.
+- Take-home project checkpoints for scoping, cleaning, modeling, communication, and ethics.
+- Final portfolio review using a rubric for technical correctness, evidence quality, communication, and readiness for live discussion.
+
+## Research Notes
+- Data 8, Foundations of Data Science: https://www.data8.org/
+- Pandas documentation: https://pandas.pydata.org/docs/
+- scikit-learn user guide: https://scikit-learn.org/stable/user_guide.html
+- Jupyter Project documentation: https://docs.jupyter.org/
+- Mode SQL tutorial: https://mode.com/sql-tutorial/
+- PostgreSQL documentation: https://www.postgresql.org/docs/

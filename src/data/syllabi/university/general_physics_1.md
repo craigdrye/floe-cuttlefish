@@ -1,94 +1,61 @@
 # General Physics I (Mechanics)
-**ID**: `genPhys1` · **Discipline**: Science · **Stage**: University Freshman (ages 18–19)
-**Aligns with**: typical first-semester university mechanics (PHYS 101 / 1A / 2010 algebra-based; PHYS 121 / 2110 calc-based); textbook anchors include Halliday/Resnick/Walker, Young & Freedman, Knight, OpenStax *College Physics* / *University Physics*. Calc-based version mirrors AP Physics C: Mechanics.
+**ID**: `genPhys1` · **Discipline**: Science · **Stage**: University Freshman (ages 18-19)
+**Aligns with**: typical first-semester university mechanics; algebra-based or calculus-based versions; AP Physics C: Mechanics extension
 
-## Course Philosophy
-*PLACEHOLDER — to be expanded.* General Physics I builds the **mechanical worldview**: position, motion, forces, energy, momentum. The internal goal is for students to (1) draw a clean free-body diagram for any scenario, (2) decide which conservation law to deploy (energy vs momentum vs angular momentum), and (3) think in **limits and units** before plugging numbers. The most common failure is plug-and-chug without a sketch. Calc-based and algebra-based versions diverge in technique, not concept.
+## Course Aim
+Build the mechanical worldview: students learn to model motion, forces, energy, momentum, rotation, oscillation, and fluids with diagrams, graphs, equations, and experimental evidence. The course treats problem solving as a chain of choices: sketch the system, choose axes, identify forces, select the conservation law or equation of motion, estimate the result, and check units and limits.
 
-## Module 1: Measurement, Units, and Vectors (8%)
-- SI units, dimensional analysis, sig figs, order-of-magnitude estimation (Fermi problems)
-- Scalars vs vectors; vector components, magnitude, direction; addition (graphical and component); unit vectors î, ĵ, k̂
-- Dot product (work, projection) and cross product (torque, angular momentum) — calc-based version
-- Coordinate systems, choosing axes wisely
+## Course Design Notes
+Route questions here when they involve vectors, kinematics, free-body diagrams, Newton's laws, work and energy, momentum, collisions, rotation, torque, equilibrium, gravitation, oscillations, fluids, measurement, uncertainty, or first-year mechanics labs. Calculus-based students should use derivatives, integrals, and vector products where appropriate; algebra-based students can cover the same conceptual map with constant-acceleration and graph-based methods. The shared priority is reasoning before substitution.
 
-## Module 2: Kinematics — 1D and 2D Motion (12%)
-- Position, displacement, velocity, acceleration; instantaneous vs average; calc-based: derivatives and integrals of motion
-- Kinematic equations for constant acceleration (the four standard equations); signed quantities
-- Free fall, projectile motion (independence of horizontal and vertical components, range, max height, time of flight)
-- Relative velocity (boats in rivers, planes in wind)
-- Graphical analysis: x-t, v-t, a-t graphs and their slopes/areas
+## Chapter 1: Measurement, Vectors, and Physical Modeling
+**Key concepts**: SI units, dimensional analysis, significant figures, uncertainty, order-of-magnitude estimates, coordinate systems, scalars and vectors, components, unit vectors, dot products, cross products, and the difference between a physical object and an idealized model.
+**Practice questions**: Convert and check compound units; estimate a real-world quantity using a Fermi approach; resolve a vector into components; choose axes for an incline or projectile; use dot product for work and cross product for torque in calculus-based sections.
+**Student output**: A one-page modeling memo for a simple physical situation, including assumptions, a diagram, variable definitions, unit checks, and a short estimate.
 
-## Module 3: Newton's Laws and Forces (15%)
-- Newton's 1st (inertia), 2nd (F_net = ma), 3rd (action-reaction pairs)
-- **Free-body diagrams** as the fundamental skill
-- Common forces: gravity (weight = mg), normal, tension, friction (static μ_s, kinetic μ_k), spring (Hooke's F = -kx), drag
-- Inclined planes, pulleys (Atwood machine), connected systems
-- Uniform circular motion (centripetal acceleration v²/r); banked curves, vertical loops, conical pendulums
-- Inertial vs non-inertial frames; pseudo-forces (intuition only)
+## Chapter 2: Kinematics in One and Two Dimensions
+**Key concepts**: Position, displacement, velocity, acceleration, constant-acceleration equations, motion graphs, slope and area interpretations, free fall, projectile motion, relative velocity, and the independence of perpendicular components.
+**Practice questions**: Match position, velocity, and acceleration graphs; analyze a braking or falling object; solve projectile problems from a diagram; compare horizontal and vertical components; use calculus to move among position, velocity, and acceleration functions.
+**Student output**: A video-analysis lab report measuring acceleration from motion data, with a graph, fit, uncertainty estimate, and explanation of whether the model is reasonable.
 
-## Module 4: Work, Energy, and Conservation (15%)
-- Work W = F·d cosθ (calc-based: W = ∫F·dx); work done by variable forces (springs)
-- Kinetic energy (½mv²), gravitational PE (mgh), spring PE (½kx²)
-- Work-energy theorem; conservation of mechanical energy when only conservative forces act
-- Power P = dW/dt = F·v
-- Conservative vs non-conservative forces; energy lost to friction; ΔE_mech = W_nc
-- Energy in 2D motion, vertical loops, roller-coaster problems
+## Chapter 3: Forces and Newton's Laws
+**Key concepts**: Newton's three laws, inertial frames, free-body diagrams, weight, normal force, tension, static and kinetic friction, spring force, drag, connected systems, inclined planes, circular motion, and the distinction between real forces and the centripetal requirement.
+**Practice questions**: Draw free-body diagrams before writing equations; solve Atwood-machine and pulley problems; find static-friction limits; analyze banked curves, vertical loops, and conical pendulums; explain Newton's third-law force pairs without cancelling them incorrectly.
+**Student output**: A force-analysis portfolio with annotated free-body diagrams for at least six systems, each followed by equations and a short physical interpretation.
 
-## Module 5: Linear Momentum and Collisions (10%)
-- Momentum p = mv; impulse J = ΔP = ∫F dt
-- Conservation of momentum in isolated systems
-- Elastic, inelastic, perfectly inelastic collisions; 1D and 2D
-- Centre of mass; motion of the CoM under net external force
-- Variable mass (rocket equation — calc-based stretch)
+## Chapter 4: Work, Energy, and Power
+**Key concepts**: Work, kinetic energy, gravitational potential energy, spring potential energy, work-energy theorem, conservative and nonconservative forces, mechanical energy, power, variable-force work, and energy accounting in multi-stage motion.
+**Practice questions**: Compare force-based and energy-based solutions; compute work by a constant or variable force; analyze frictional energy loss; solve roller-coaster, spring, and vertical-loop problems; use energy graphs to identify turning points.
+**Student output**: An energy audit of a physical system, such as a cart-and-spring track or roller-coaster segment, showing transfers among kinetic, potential, thermal, and external work terms.
 
-## Module 6: Rotational Motion (12%)
-- Angular position, velocity, acceleration; analogy with linear quantities
-- Rotational kinematics (constant α equations)
-- Torque τ = r × F; rotational form of Newton's 2nd: τ = Iα
-- Moment of inertia for common shapes (disk, hoop, sphere, rod about end/centre); parallel-axis theorem
-- Rotational kinetic energy ½Iω²; rolling without slipping (translational + rotational KE)
-- **Angular momentum** L = Iω (and r × p); conservation of angular momentum (figure-skater, neutron-star spin-up); precession (intuition)
+## Chapter 5: Momentum, Impulse, and Collisions
+**Key concepts**: Linear momentum, impulse, impulse-momentum theorem, isolated systems, center of mass, elastic collisions, inelastic collisions, perfectly inelastic collisions, two-dimensional collisions, explosions, and momentum conservation under external-force assumptions.
+**Practice questions**: Interpret force-time graphs; compare energy and momentum conservation; solve one- and two-dimensional collision problems; track center-of-mass motion; critique whether a system is isolated.
+**Student output**: A collision-lab report using carts, pucks, or video analysis to compare momentum before and after interaction and explain measurement differences.
 
-## Module 7: Static Equilibrium and Elasticity (5%)
-- Conditions for equilibrium (ΣF = 0 and Στ = 0); choosing the pivot wisely
-- Centre of gravity vs centre of mass
-- Stress, strain, Young's modulus; bulk and shear moduli (intro)
+## Chapter 6: Rotation, Torque, and Equilibrium
+**Key concepts**: Angular position, angular velocity, angular acceleration, rotational kinematics, torque, moment of inertia, rotational kinetic energy, rolling without slipping, angular momentum, static equilibrium, center of mass, center of gravity, and stress-strain ideas.
+**Practice questions**: Translate between linear and angular quantities; compute torques about a chosen pivot; analyze a rolling object; apply angular momentum conservation; solve equilibrium problems for beams, ladders, and suspended signs.
+**Student output**: A rotational-system analysis that includes a torque diagram, moment-of-inertia model, equilibrium or acceleration calculation, and a short note on stability.
 
-## Module 8: Gravitation (5%)
-- Newton's law of universal gravitation F = Gm₁m₂/r²
-- Gravitational PE for an extended system: U = -Gm₁m₂/r
-- Kepler's laws and their derivation from gravity (calc-based)
-- Orbital mechanics: circular orbits, escape velocity, geostationary orbits
-- Tidal forces (intuition)
+## Chapter 7: Gravitation, Oscillations, and Fluids
+**Key concepts**: Newton's law of gravitation, gravitational potential energy, circular orbits, escape speed, Kepler's laws, simple harmonic motion, springs, pendulums, damping, resonance, density, pressure, buoyancy, continuity, and Bernoulli's equation.
+**Practice questions**: Relate orbital speed to radius; compare gravitational-field strength at different distances; derive period relations for springs and pendulums; identify resonance conditions; solve buoyancy and pressure problems; use continuity and Bernoulli reasoning in simple flows.
+**Student output**: A comparative model notebook showing how one mathematical structure, such as inverse-square force or restoring force, appears in multiple physical settings.
 
-## Module 9: Oscillations (8%)
-- Simple harmonic motion (SHM) from F = -kx; angular frequency ω = √(k/m), period T = 2π/ω
-- Energy in SHM (oscillation between KE and PE)
-- Pendulums (simple, physical) and small-angle approximation
-- Damped and driven oscillations, resonance (qualitative)
+## Chapter 8: Mechanics Lab and Modeling Studio
+**Key concepts**: Experimental design, sensors, photogates, video analysis, calibration, curve fitting, linearization, residuals, uncertainty propagation, reproducibility, model comparison, and scientific communication.
+**Practice questions**: Decide what to measure and what to control; fit a line or power law; interpret residual plots; compare a theoretical prediction with data; identify systematic and random error; revise a model after evidence disagrees.
+**Student output**: A final mechanics investigation in which students design a small experiment, collect data, fit a model, discuss uncertainty, and present a concise technical poster.
 
-## Module 10: Fluids (intro) (5%)
-- Density, pressure; Pascal's principle (hydraulic press); Archimedes' principle (buoyancy, why ships float, why ice floats)
-- Hydrostatic pressure P = ρgh
-- Fluid dynamics intro: continuity (A₁v₁ = A₂v₂), Bernoulli's equation, applications (lift, Venturi)
+## Capstone
+Analyze a real mechanical system, such as a bicycle braking event, playground swing, elevator ride, falling object, rotating platform, bridge support, or fluid-flow device. Students must use at least two complementary methods, such as force analysis and energy conservation, then compare predictions with measured or simulated data.
 
-## Module 11: Lab and Skills Layer (cross-cutting, 5%)
-- Photogates, motion sensors, force sensors, video analysis (Tracker)
-- Curve fitting, linearisation; log-log and semi-log plots
-- Uncertainty propagation (intuition)
-- Common labs: free-fall determination of g, projectile range, Atwood, conservation of momentum collisions, energy on a track, rotational inertia, simple pendulum
+## Assessment Ideas
+Use frequent diagram-first problem sets, short concept checks, lab notebooks, oral explanation of one solved problem, and cumulative exams that reward setup and assumptions as much as final numerical answers. Include at least one practical assessment where students must choose a model from messy evidence rather than being handed the governing equation.
 
-## Stretch Zone (push beyond mechanics, previewing Physics II and modern physics)
-- Lagrangian and Hamiltonian formulations (intuition only)
-- Phase space, chaos and the double pendulum
-- Special relativity intuition: time dilation, length contraction, E=mc² (a real preview, not a slogan)
-- Connection to engineering: structural analysis, vehicle dynamics, orbital mechanics
-- Climate-and-physics: heat engines, the Carnot bound, energy budget of the Earth
-- Common student traps to drill:
-  - Treating Newton's 3rd law pairs as if they cancel (they don't — they act on different bodies)
-  - Using kinematic equations when acceleration isn't constant
-  - Forgetting that friction can do work in *either* direction depending on relative motion
-  - Conflating "conservation of energy" with "kinetic energy is the same" — energy *type* changes
-  - Drawing a centripetal "force" as separate from the real force causing it (gravity, tension, normal — *that's* the centripetal force)
-  - Mishandling sign conventions on inclined planes
-- The single transferable skill: a labelled free-body diagram before any equation. No FBD, no answer.
+## Research Notes
+- OpenStax, *University Physics Volume 1*: https://openstax.org/details/books/university-physics-volume-1
+- OpenStax, *College Physics 2e*: https://openstax.org/details/books/college-physics-2e
+- American Association of Physics Teachers, undergraduate laboratory curriculum recommendations: https://www.aapt.org/Resources/upload/LabGuidelinesDocument_EBendorsed_nov10.pdf
+- PhET Interactive Simulations, physics collection: https://phet.colorado.edu/en/simulations/filter?subjects=physics

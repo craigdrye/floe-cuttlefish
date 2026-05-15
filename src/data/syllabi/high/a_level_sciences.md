@@ -1,55 +1,65 @@
 # A-Level Sciences (Biology, Chemistry, Physics)
 **Covers**: `col-a-level-biology`, `col-a-level-chemistry`, `col-a-level-physics`
-**Discipline**: Science · **Year**: 12 (ages 16–18)
+**Discipline**: Science · **Year**: 12 (ages 16-18)
 **Frameworks**: UK A-Level Sciences (AQA/Edexcel/OCR)
 
-## Course Philosophy
-This combined syllabus outlines the core requirements for the UK A-Level science tracks. A-Level sciences are highly rigorous, emphasizing not just theoretical knowledge but also detailed mathematical application and mandatory practical (laboratory) competency.
+## Course Aim
+Give sixth-form students a serious but navigable map of A-Level Biology, Chemistry, and Physics. The course supports deep subject study, practical endorsement skills, mathematical fluency, and exam-style reasoning without pretending that three A-Levels can be compressed into one shallow survey.
 
-## Module 1: A-Level Biology (33%)
-- Biological Molecules: Carbohydrates, lipids, proteins (structure and enzymes), nucleic acids, ATP, water
-- Cells: Eukaryotic vs prokaryotic structure, virus structure, cell membrane transport, cell recognition, immune system (phagocytosis, T/B cells, antibodies, vaccines, HIV)
-- Organisms Exchanging Substances: Gas exchange in humans/insects/fish, digestion/absorption, mass transport in animals (circulatory system, hemoglobin) and plants (xylem/phloem)
-- Genetic Information and Variation: DNA/genes/chromosomes, protein synthesis (transcription/translation), mutation, meiosis, genetic diversity, taxonomy and phylogeny
-- Energy Transfers (A2): Photosynthesis, Respiration, energy transfer in ecosystems
-- Organism Responses (A2): Nervous coordination (action potentials, synapses), muscle contraction, homeostasis (blood glucose, kidney function/osmoregulation)
-- Genetics, Populations, Evolution (A2): Inheritance, Hardy-Weinberg, speciation, succession
-- Gene Expression (A2): Mutations, epigenetics, stem cells, recombinant DNA technology, genetic fingerprinting
-- **Questions**: Explaining the Bohr effect on hemoglobin, tracing an action potential, describing recombinant DNA tech
+## Course Design Notes
+Use this syllabus as a routing hub for advanced UK science questions. Route biology questions here when they require A-Level detail; chemistry questions when they involve physical, inorganic, organic, analytical, or practical chemistry; and physics questions when they involve A-Level mechanics, electricity, waves, particles, fields, nuclear physics, or option-style applications.
 
-## Module 2: A-Level Chemistry (Physical & Inorganic) (33%)
-- Physical Chemistry: Atomic structure, amount of substance (moles, titration math), bonding (intermolecular forces, shapes of molecules), energetics (enthalpy, calorimetry, Hess's law), kinetics (Maxwell-Boltzmann, rate equations, Arrhenius equation), chemical equilibria (Le Chatelier, $K_c$, $K_p$), thermodynamics (Born-Haber cycles, entropy, Gibbs free energy), electrochemistry (electrode potentials, fuel cells), acids and bases (pH, weak acids, buffers, titration curves)
-- Inorganic Chemistry: Periodicity (trends in Period 3), Group 2 (alkaline earth metals), Group 7 (halogens), properties of Period 3 elements and their oxides, transition metals (complex ions, variable oxidation states, catalysts, color in transition metal complexes), reactions of ions in aqueous solution
-- **Questions**: Calculating pH of a buffer, constructing Born-Haber cycles, explaining the color of transition metal complexes using d-orbital splitting
+## Chapter 1: A-Level Science Skills and Practical Endorsement
+- **Key concepts**: Practical planning, risk assessment, apparatus choice, uncertainty, calibration, graphing, mathematical methods, significant figures, and command words.
+- **Practice questions**: Choose apparatus for a required practical; calculate uncertainty; interpret a graph in exam style.
+- **Student output**: A practical skills portfolio template that can be reused across biology, chemistry, and physics.
 
-## Module 3: A-Level Chemistry (Organic) (16.6%)
-- Basic Concepts: Nomenclature, isomerism (structural, stereoisomerism, optical)
-- Hydrocarbons: Alkanes (free radical substitution), Alkenes (electrophilic addition)
-- Halogenoalkanes (nucleophilic substitution, elimination)
-- Alcohols (oxidation, dehydration)
-- Aldehydes and Ketones (nucleophilic addition)
-- Carboxylic Acids and Derivatives (esters, acyl chlorides, amides)
-- Aromatic Chemistry (electrophilic substitution of benzene)
-- Amines, Amino acids, Proteins, and DNA
-- Polymers (addition and condensation)
-- Organic Synthesis and Analysis: IR spectroscopy, Mass spectrometry, NMR spectroscopy (1H and 13C), chromatography
-- **Questions**: Deducing a structure from NMR/IR spectra, drawing nucleophilic substitution mechanisms
+## Chapter 2: A-Level Biology - Molecules, Cells, and Exchange
+- **Key concepts**: Biological molecules, enzymes, nucleic acids, ATP, cell structure, membranes, transport, immune responses, gas exchange, digestion, and mass transport.
+- **Practice questions**: Interpret enzyme data; explain membrane transport; compare exchange surfaces; reason from microscopy or biochemical evidence.
+- **Student output**: A biology mechanisms sheet linking structure, function, and evidence.
 
-## Module 4: A-Level Physics (Mechanics, Materials, Waves, Electricity) (16.6%)
-- Measurements and their Errors: SI units, uncertainties, estimation
-- Particles and Radiation: Constituents of the atom, stable/unstable nuclei, particle interactions (Feynman diagrams), quarks and leptons, photoelectric effect, wave-particle duality
-- Waves: Progressive waves, interference, diffraction, standing waves, refraction
-- Mechanics and Materials: Vectors, kinematics, dynamics ($F=ma$), momentum, work/energy/power, bulk properties of solids (Young modulus)
-- Electricity: Current/voltage/resistance, circuits, electromotive force and internal resistance
-- **Questions**: Drawing Feynman diagrams for beta decay, calculating the Young modulus from a stress-strain graph, solving circuits with internal resistance
+## Chapter 3: A-Level Biology - Genetics, Energy, and Regulation
+- **Key concepts**: DNA, protein synthesis, mutation, meiosis, inheritance, biodiversity, photosynthesis, respiration, nervous coordination, muscle contraction, homeostasis, populations, evolution, and gene technologies.
+- **Practice questions**: Solve inheritance and Hardy-Weinberg problems; trace energy transfers; explain recombinant DNA steps; interpret population data.
+- **Student output**: A synoptic biology answer plan that connects molecules, cells, organisms, and ecosystems.
 
-## Module 5: A-Level Physics (Fields & Further Physics) (16.6%)
-- Further Mechanics: Circular motion, simple harmonic motion (mass-spring, pendulum), forced vibrations and resonance
-- Thermal Physics: Specific heat capacity, ideal gases, kinetic theory
-- Fields and their Consequences: Gravitational fields, electric fields, capacitance, magnetic fields, electromagnetic induction
-- Nuclear Physics: Rutherford scattering, alpha/beta/gamma radiation, radioactive decay ($N = N_0 e^{-\lambda t}$), mass defect and binding energy, fission and fusion
-- Options (typically one of): Astrophysics, Medical Physics, Engineering Physics, Turning Points in Physics, Electronics
-- **Questions**: Calculating the binding energy per nucleon, analyzing resonance in SHM, applying Faraday's law of induction
+## Chapter 4: A-Level Chemistry - Physical Chemistry
+- **Key concepts**: Atomic structure, amount of substance, bonding, energetics, kinetics, equilibria, acids and bases, thermodynamics, electrochemistry, and rate equations.
+- **Practice questions**: Complete mole and titration calculations; use Hess's law; interpret rate data; calculate equilibrium or pH values at the right level.
+- **Student output**: A physical chemistry calculation notebook with assumptions, units, and error checks.
 
-## Stretch Zone
-- Planning and executing complex independent practical experiments (the Practical Endorsement)
+## Chapter 5: A-Level Chemistry - Inorganic and Organic Chemistry
+- **Key concepts**: Periodicity, Group 2, Group 7, Period 3 oxides, transition metals, organic nomenclature, isomerism, reaction mechanisms, synthesis routes, polymers, amino acids, and analytical chemistry.
+- **Practice questions**: Predict inorganic trends; draw organic mechanisms; deduce structures from spectra; plan multi-step syntheses.
+- **Student output**: A reaction pathway map combining reagents, conditions, observations, and mechanism notes.
+
+## Chapter 6: A-Level Physics - Mechanics, Materials, Waves, and Electricity
+- **Key concepts**: Measurements, vectors, kinematics, Newton's laws, momentum, work, energy, power, circular motion, material properties, progressive and stationary waves, optics, circuits, and internal resistance.
+- **Practice questions**: Solve multi-step mechanics problems; interpret stress-strain graphs; analyze wave interference; solve circuit problems with real source behavior.
+- **Student output**: A physics problem journal that records diagrams, assumptions, equations, and sense checks.
+
+## Chapter 7: A-Level Physics - Particles, Fields, Thermal, and Nuclear Physics
+- **Key concepts**: Particles and radiation, photoelectric effect, quantum ideas, simple harmonic motion, thermal physics, gravitational fields, electric fields, capacitors, magnetic fields, induction, radioactivity, and nuclear energy.
+- **Practice questions**: Interpret particle interactions; calculate field strengths or capacitor behavior; analyze decay data; explain induction qualitatively and quantitatively.
+- **Student output**: A synoptic physics explainer connecting an abstract model to a measurable result.
+
+## Chapter 8: Synoptic Revision and Exam Strategy Studio
+- **Key concepts**: Specification mapping, command words, practical-linked exam questions, extended responses, multi-topic integration, common traps, revision cycles, and spaced retrieval.
+- **Practice questions**: Triage unfamiliar questions; write six-mark explanations; compare similar-looking methods across sciences.
+- **Student output**: A personal specification audit with priority topics, error patterns, and a two-week revision plan.
+
+## Capstone
+Students complete a cross-science investigation, literature review, or exam portfolio that shows practical reasoning, mathematical fluency, and at least one substantial synoptic explanation from each science.
+
+## Assessment Ideas
+- Topic tests with required working and written interpretation.
+- Practical notebooks checked against endorsement-style criteria.
+- Synoptic question sets that force links across modules.
+- Oral defenses of one biology, chemistry, and physics explanation.
+
+## Research Notes
+- AQA A-Level Biology specification: https://www.aqa.org.uk/subjects/biology/a-level/biology-7402/specification
+- AQA A-Level Chemistry specification and practical assessment: https://www.aqa.org.uk/subjects/chemistry/a-level/chemistry-7405/specification/practical-assessment
+- AQA A-Level Physics specification: https://www.aqa.org.uk/7408
+- Ofqual guidance on science practical endorsement: https://www.gov.uk/government/publications/gce-subject-level-conditions-and-requirements-for-science

@@ -1,122 +1,61 @@
 # Philosophy (Introduction)
-**ID**: `philosophy` · **Discipline**: Humanities · **Stage**: University Freshman (ages 18–19)
-**Aligns with**: a typical first university course in philosophy (PHIL 101 / Introduction to Philosophy / Problems of Philosophy); textbook anchors include Sober's *Core Questions*, Russell's *Problems of Philosophy*, Pojman & Vaughn anthologies, Nagel's *What Does It All Mean?*
+**ID**: `philosophy` - **Discipline**: Humanities - **Stage**: University Freshman (ages 18-19)
+**Aligns with**: typical PHIL 101 / Introduction to Philosophy / Problems of Philosophy
 
-## Course Philosophy
-The first job of an intro philosophy course is to teach students *how* to do philosophy — how to identify a thesis, reconstruct an argument in premise–conclusion form, test for validity and soundness, find counterexamples, and disagree precisely. The second job is to introduce the canonical questions and the most influential answers. The trap most freshmen fall into is **opinion-as-philosophy**: "well that's just my view" is the failure mode the course must dissolve. By the end of the course, students should be able to articulate a position they *disagree* with charitably and competently, recognise where their own view is most vulnerable, and respect the difficulty of the problem. We should treat each topic as a debate where we name the players, the moves, and the moves-against-the-moves.
+## Course Aim
+Introduce students to philosophy as disciplined argument about difficult questions. Students learn to reconstruct arguments, test premises, generate counterexamples, read charitably, and compare influential positions in knowledge, reality, mind, ethics, religion, and politics.
 
-## Module 1: Doing Philosophy — Arguments, Logic, and Method (15%)
-- **What is philosophy?** Conceptual analysis vs empirical investigation; why some questions persist for 2,500 years
-- **Branches of philosophy**: metaphysics, epistemology, ethics, logic, aesthetics, political philosophy, philosophy of mind, philosophy of science, philosophy of language
-- **Anatomy of an argument**: premises, conclusion, inference; standard form
-- **Deductive vs inductive vs abductive** reasoning; abduction as inference to the best explanation
-- **Validity** (if premises true, conclusion *must* be true) vs **soundness** (valid + premises actually true) vs **strength** (for inductive arguments)
-- Common valid forms: modus ponens, modus tollens, hypothetical syllogism, disjunctive syllogism
-- Common fallacies: affirming the consequent, denying the antecedent, ad hominem, straw man, equivocation, begging the question, false dichotomy, slippery slope, appeal to authority/popularity/ignorance, post hoc ergo propter hoc
-- **Counterexamples** as the primary tool of philosophical refutation
-- Necessary vs sufficient conditions; the analytic/synthetic distinction (Kant), a priori/a posteriori
-- **Thought experiments** as conceptual lab: what they can and can't show
-- The principle of charity in interpreting opponents
-- **Questions**: convert prose arguments into premise–conclusion form, identify validity and soundness, generate counterexamples to general claims, classify fallacies in news articles or political speech
+## Course Design Notes
+Route questions here when they involve intro philosophy, argument method, epistemology, metaphysics, personal identity, religion, ethics, political philosophy, mind, or philosophical essay writing. The course should dissolve "that is just my opinion" into clearer claims, reasons, objections, and replies.
 
-## Module 2: Epistemology — What Can We Know? (15%)
-- The traditional analysis of **knowledge** as **justified true belief** (JTB)
-- **Gettier cases** and the JTB-is-not-sufficient problem; subsequent fixes (no false lemmas, reliability, safety, virtue epistemology)
-- **Skepticism**: the dream argument (Descartes); the brain-in-a-vat argument; the evil demon; the skeptical regress
-- Foundationalism vs coherentism; basic beliefs and the regress problem
-- **Rationalism** (Descartes, Spinoza, Leibniz) vs **empiricism** (Locke, Berkeley, Hume): is there knowledge independent of experience?
-- Hume's problem of induction: why expect the future to resemble the past?
-- Kant's response: synthetic a priori knowledge; the categories of understanding
-- **Modern reliabilism** (Goldman); externalism vs internalism about justification
-- **Testimony** as a source of knowledge; epistemic dependence in modern life; expertise
-- **Social epistemology**: echo chambers, epistemic bubbles, the ethics of belief (Clifford vs James)
-- **Questions**: construct Gettier-style cases; identify the move a skeptical argument makes and the move a response would have to make; argue for or against rationalism on a specific belief; assess testimony in scenarios with conflicting experts
+## Chapter 1: Doing Philosophy
+**Key concepts**: Thesis, premise, conclusion, validity, soundness, inductive strength, abduction, counterexample, necessary condition, sufficient condition, thought experiment, fallacy, and charity.
+**Practice questions**: Put prose arguments in standard form; test validity; generate counterexamples; identify assumptions; steelman a view before objecting.
+**Student output**: An argument-method portfolio with reconstructions, objections, and revised claims.
 
-## Module 3: Metaphysics & Personal Identity (15%)
-- What is metaphysics? Distinguishing it from physics; descriptive vs revisionary metaphysics
-- **Existence and ontology**: what is it for something to exist? Universals (realism, nominalism, conceptualism)
-- **Time**: presentism vs eternalism vs growing block; McTaggart's argument that time is unreal; the A-series and B-series
-- **Causation**: Hume's regularity theory; counterfactual analysis (Lewis); productive/powers theories
-- **Free will**: hard determinism, libertarianism, compatibilism; the consequence argument; Frankfurt cases (showing PAP — principle of alternative possibilities — may be false)
-- **Personal identity**: bodily continuity, psychological continuity (Locke's memory criterion), narrative identity; the **Ship of Theseus**; teletransporter cases (Parfit); fission cases and what they show about identity-as-survival
-- The **Self**: bundle theory (Hume) vs substance theory; Buddhist no-self (anatta)
-- Realism vs anti-realism more generally
-- **Questions**: defend a stance on personal identity through teletransporter / fission cases; identify whether an argument relies on PAP; explain the difference between presentism and eternalism
+## Chapter 2: Knowledge and Skepticism
+**Key concepts**: Knowledge, justified true belief, Gettier case, skepticism, dream argument, brain in a vat, foundationalism, coherentism, rationalism, empiricism, induction, testimony, expertise, and epistemic responsibility.
+**Practice questions**: Construct a Gettier case; analyze a skeptical argument; compare rationalist and empiricist claims; evaluate testimony from experts.
+**Student output**: An epistemology case file defending what can be known in one difficult scenario.
 
-## Module 4: Philosophy of Religion (12%)
-- **Arguments for God's existence**:
-  - Cosmological (Aquinas's Five Ways; the Kalam cosmological argument)
-  - Teleological / design (Paley's watchmaker; modern fine-tuning)
-  - Ontological (Anselm; modal versions by Plantinga)
-  - Moral (Kant; modern divine command intuitions)
-  - Pragmatic (Pascal's wager) — and its objections (many-gods, value of belief)
-- **Arguments against**:
-  - The **problem of evil** — logical (Mackie) and evidential (Rowe) versions; theodicies (free will, soul-making, skeptical theism)
-  - The hiddenness argument (Schellenberg)
-  - Naturalistic accounts of religious belief (Hume's *Dialogues*)
-- **Faith and reason**: fideism, evidentialism, reformed epistemology (Plantinga's "warranted Christian belief")
-- **Religious diversity** and the epistemic challenge of incompatible religious traditions
-- **Questions**: reconstruct a cosmological/teleological/ontological argument and identify its weakest premise; develop a theodicy and identify its costs; evaluate Pascal's wager against many-gods objection
+## Chapter 3: Reality, Time, Causation, and Identity
+**Key concepts**: Metaphysics, ontology, universals, nominalism, presentism, eternalism, causation, free will, determinism, compatibilism, personal identity, memory, body, narrative, Ship of Theseus, and teletransportation.
+**Practice questions**: Test personal-identity theories against thought experiments; compare views of time; analyze a free-will case; explain why metaphysical claims matter.
+**Student output**: A position paper on identity, time, or free will with objection and reply.
 
-## Module 5: Ethics — Metaethics and Normative Theory (18%)
-- **Metaethics**: are moral claims true or false at all?
-  - Moral realism vs anti-realism; cognitivism vs non-cognitivism; emotivism (Ayer), expressivism (Blackburn)
-  - Error theory (Mackie) and the "queerness" argument
-  - Moral relativism (cultural and individual) and its problems (reformer's dilemma, intra-cultural disagreement)
-  - The is/ought gap (Hume); the naturalistic fallacy (Moore); the open-question argument
-- **Normative ethics**: three big families
-  - **Consequentialism / Utilitarianism**: Bentham (hedonic calculus), Mill (qualitative pleasures, harm principle); act vs rule utilitarianism; objections — utility monsters, separateness of persons, demandingness, organ-harvesting / trolley intuitions
-  - **Deontology**: Kant's Categorical Imperative (Universal Law and Humanity formulations); duties (perfect/imperfect); Ross's pluralism (prima facie duties); objections — conflicting duties, rigorism, the murderer-at-the-door case
-  - **Virtue ethics**: Aristotle's *Nicomachean Ethics*; eudaimonia, the doctrine of the mean, practical wisdom (phronesis); modern revival (MacIntyre, Foot, Hursthouse); objections — guidance problem, cultural variation
-- **Other approaches**: contractualism (Scanlon "what we owe to each other"), care ethics (Gilligan, Noddings), natural law, divine command theory
-- **Applied ethics** (selected): the trolley problem and its variants; Singer's drowning child / global poverty; abortion (Thomson's violinist); animal rights (Singer, Regan); lying and deception
-- **Moral psychology / experimental ethics**: Greene's dual-process theory; Haidt's moral foundations; what experimental findings can/can't show about normative ethics
-- **Questions**: apply each major theory to a single case (e.g., trolley problem, lying to a murderer) and articulate why their verdicts differ; identify a metaethical thesis embedded in a moral disagreement; evaluate utilitarianism against the experience-machine objection
+## Chapter 4: Philosophy of Religion
+**Key concepts**: Cosmological argument, teleological argument, ontological argument, moral argument, Pascal's wager, problem of evil, hiddenness, faith, reason, evidentialism, fideism, and religious diversity.
+**Practice questions**: Reconstruct an argument for God's existence; identify its weakest premise; explain a theodicy and its cost; evaluate the many-gods objection.
+**Student output**: A comparative argument map of one argument for and one argument against theism.
 
-## Module 6: Political Philosophy — Justice and the State (15%)
-- **Why obey the state?** Anarchism (Wolff) vs political authority; consent theories
-- **Social contract tradition**: Hobbes (state of nature, Leviathan, absolutism), Locke (natural rights, limited government, right of revolution), Rousseau (general will), Kant
-- **Liberalism**: Mill's harm principle, individual liberty, defenses of free speech; modern liberalism (Rawls)
-- **Rawls's *A Theory of Justice***: original position, veil of ignorance, two principles (equal basic liberties; difference principle); reflective equilibrium
-- **Nozick's libertarian critique**: entitlement theory (acquisition, transfer, rectification); Wilt Chamberlain argument; minimal state
-- **Communitarianism** (Sandel, Walzer, MacIntyre): unencumbered self critique
-- **Marx and critiques of capitalism**: alienation, exploitation, ideology, historical materialism (intuitive)
-- **Feminist political philosophy**: public/private distinction, care, intersectionality
-- **Distributive justice**: equality (of what? Sen, Cohen on equality of resources/welfare/capability); sufficiency; priority
-- **Global justice**: cosmopolitanism (Singer, Pogge) vs statism (Nagel); duties across borders; just war theory (jus ad bellum, jus in bello); humanitarian intervention
-- **Punishment**: retributivism, deterrence, restorative justice, incapacitation; capital punishment debates
-- **Questions**: derive Rawlsian principles from the original position; respond to Nozick's Wilt Chamberlain on a Rawlsian's behalf; apply just-war criteria to a historical case
+## Chapter 5: Ethics and Moral Theory
+**Key concepts**: Metaethics, realism, relativism, error theory, is/ought gap, utilitarianism, deontology, virtue ethics, care ethics, contractualism, rights, duties, consequences, character, and applied ethics.
+**Practice questions**: Apply multiple theories to one dilemma; distinguish first-order ethics from metaethics; identify where theories conflict; write a fair objection.
+**Student output**: An ethical analysis of one case through at least three frameworks.
 
-## Module 7: Philosophy of Mind & Consciousness (10%)
-- **The mind-body problem**: Descartes' substance dualism; arguments (conceivability, divisibility); the interaction problem
-- **Behaviourism** (Ryle's category mistake) and its failure
-- **Identity theory** / type physicalism; multiple realizability objection (Putnam)
-- **Functionalism**: minds as functional roles, not substrates; the silicon-brain thought experiment
-- **Searle's Chinese Room** against strong AI / functionalism; replies (systems, robot, brain simulator)
-- The **hard problem of consciousness** (Chalmers); qualia; Nagel's "What Is It Like to Be a Bat?"; Jackson's Mary's Room (the knowledge argument); zombies and conceivability arguments
-- **Eliminativism** (Churchland, Dennett): folk psychology may be a false theory
-- **Personal identity ↔ mind**: connections to Module 3 (psychological continuity criterion presupposes a theory of mind)
-- AI minds: would a sufficiently sophisticated AI have a mind / moral status? (Brings us full circle to ethics.)
-- **Questions**: reconstruct the conceivability argument for dualism and a physicalist response; apply Mary's Room and identify what "physicalists" must say; evaluate Searle's Chinese Room against the systems reply
+## Chapter 6: Justice, Power, and Political Philosophy
+**Key concepts**: Political authority, consent, social contract, liberty, harm principle, Rawls, veil of ignorance, Nozick, property, equality, Marx, feminism, global justice, punishment, and civil disobedience.
+**Practice questions**: Compare Rawls and Nozick; analyze a liberty dispute; apply just-war or punishment theories; ask what citizens owe one another.
+**Student output**: A political philosophy memo applying two theories to a public institution or policy.
 
-## Stretch Zone (push beyond intro)
-- **Logic**: propositional logic (truth tables, tautology, validity), basic predicate logic with quantifiers, formal proof; the difference between syntax and semantics
-- **Modal logic** intuition: necessity, possibility, possible-worlds semantics; Plantinga's free-will defense uses possible worlds
-- **Philosophy of science**: Popper on falsifiability, Kuhn on paradigms, Lakatos on research programs, Quine on holism (these become Sophomore: Philosophy of Science course)
-- **Wittgenstein**: early (Tractatus, picture theory, "the limits of my language are the limits of my world") vs late (Philosophical Investigations, language games, family resemblance, private language argument)
-- **Continental philosophy** sketches: Hegel (dialectic, master/slave), Nietzsche (genealogy, eternal recurrence, will to power, the "death of God"), Heidegger (Dasein, being-toward-death), Sartre (existence precedes essence, bad faith), Foucault (power/knowledge, biopolitics)
-- **Non-Western philosophy**:
-  - Indian: Buddhist no-self (anatta), the four noble truths, Madhyamika, Advaita Vedanta
-  - Chinese: Confucianism (ren, li, the rectification of names), Daoism (wu wei, the Dao De Jing), Mohism (impartial care)
-  - Islamic: al-Ghazali, Ibn Rushd (Averroes); the Mu'tazilite/Ash'arite debate
-  - African: ubuntu, communal personhood
-- **Effective Altruism** and the demands of beneficence (Singer, MacAskill, Ord); longtermism and existential risk
-- **AI ethics** in 2026: alignment, autonomy, moral status of AI systems, deepfakes and epistemic harms, automated decision-making and accountability
-- **Common student traps to drill**:
-  - Mistaking "everyone disagrees" for "no answer is correct" (relativism)
-  - Confusing validity with truth
-  - Thinking thought experiments must be physically possible to be probative
-  - Treating an argument from authority as an argument
-  - Sloppy use of "subjective" / "objective"
-  - Believing utilitarianism = "do whatever feels good to me" (it's the opposite — impartial maximization)
-- The single most under-taught skill: writing an essay that says "Smith argues X because of Y. The strongest objection is Z. The best response is W. Therefore, all things considered, …" — every paragraph of philosophy at every later level relies on it.
+## Chapter 7: Mind, Consciousness, and AI
+**Key concepts**: Mind-body problem, dualism, physicalism, behaviorism, identity theory, functionalism, Chinese Room, qualia, hard problem, Mary case, zombies, eliminativism, AI minds, and moral status.
+**Practice questions**: Reconstruct the conceivability argument; evaluate functionalism; explain the hard problem; analyze whether AI could have understanding or moral status.
+**Student output**: A theory-comparison chart for mind and consciousness with difficult cases.
+
+## Chapter 8: Philosophical Writing and Global Extensions
+**Key concepts**: Essay structure, objection, reply, textual evidence, conceptual precision, comparative philosophy, Buddhist no-self, Confucian ethics, Daoism, Islamic philosophy, African ubuntu, existentialism, feminism, and technology ethics.
+**Practice questions**: Write a thesis with stakes; integrate a quotation; compare traditions responsibly; revise a paragraph for clarity; identify what would change one's view.
+**Student output**: A final philosophy essay with charitable reconstruction, objection, reply, and revision note.
+
+## Capstone
+Students write or present a philosophical inquiry on one major question, accurately reconstructing at least two positions, giving the strongest objection to their own view, and defending a revised conclusion.
+
+## Assessment Ideas
+Use argument reconstructions, short response papers, seminar questions, thought-experiment analyses, comparative essays, peer objections, and a final philosophical paper.
+
+## Research Notes
+- Stanford Encyclopedia of Philosophy: https://plato.stanford.edu/
+- Internet Encyclopedia of Philosophy: https://iep.utm.edu/
+- OpenStax, *Introduction to Philosophy*: https://openstax.org/details/books/introduction-philosophy
+- PLATO, Philosophy Learning and Teaching Organization: https://philosophyguide.org/community-programs/philosophy-learning-and-teaching-organization

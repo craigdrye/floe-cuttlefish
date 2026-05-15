@@ -1,50 +1,64 @@
 # Neuroscience
-**ID**: `neuroscience` · **Discipline**: Science · **Year**: University Junior
+**ID**: `neuroscience` | **Discipline**: Science | **Year**: University Junior
 
-## Course Philosophy
-Neuroscience explores the biological foundations of the mind, behavior, and cognition. This interdisciplinary course bridges molecular biology, neuroanatomy, electrophysiology, and cognitive psychology to understand how the nervous system functions.
+## Course Aim
+Develop a systems-level and mechanistic understanding of how nervous systems generate sensation, movement, cognition, emotion, and behavior. Students connect molecules to circuits, circuits to behavior, and experimental evidence to clinical and research interpretation.
 
-## Module 1: Neuroanatomy and the Neuron Doctrine (15%)
-- The Neuron Doctrine (Cajal vs Golgi)
-- Cellular components: Neurons (soma, dendrites, axon, axon hillock, terminal boutons) and Glia (astrocytes, oligodendrocytes, Schwann cells, microglia)
-- Gross anatomy of the Central Nervous System (CNS) and Peripheral Nervous System (PNS)
-- Brain lobes (Frontal, Parietal, Temporal, Occipital) and their primary functions
-- Subcortical structures: The limbic system (amygdala, hippocampus), basal ganglia, thalamus, and hypothalamus
-- Meninges, ventricles, and cerebrospinal fluid (CSF)
-- **Questions**: Identifying the function of specific glial cells, tracing a sensory pathway through the thalamus to the cortex
+## Course Design Notes
+Route questions here when they test neuroanatomy, cellular neuroscience, electrophysiology, synapses, sensory and motor systems, cognition, methods, neuropharmacology, plasticity, neurological disease, or evidence-based interpretation at an upper-division undergraduate level. Keep the course interdisciplinary but biological: mechanisms, data, and causal evidence should anchor every topic.
 
-## Module 2: Neurophysiology (Electrical Signaling) (25%)
-- The Resting Membrane Potential: Ionic concentrations ($Na^+$, $K^+$, $Cl^-$, $Ca^{2+}$), the $Na^+/K^+$ pump, equilibrium potentials, and the Nernst/Goldman equations
-- The Action Potential: Threshold, depolarization (voltage-gated $Na^+$ channels), repolarization (voltage-gated $K^+$ channels), hyperpolarization, and the refractory period (absolute vs relative)
-- Action potential propagation: Unmyelinated vs myelinated axons, saltatory conduction, and Nodes of Ranvier
-- Patch-clamp electrophysiology concepts
-- **Questions**: Calculating an equilibrium potential using the Nernst equation, explaining the molecular basis of the absolute refractory period
+## Chapter 1: Neural Cells, Neuroanatomy, and Organization
+- **Key concepts**: Neuron doctrine, neuronal polarity, dendrites, axons, axon hillock, synaptic terminals, astrocytes, oligodendrocytes, Schwann cells, microglia, meninges, ventricles, cerebrospinal fluid, central and peripheral nervous systems, cortical lobes, thalamus, hypothalamus, basal ganglia, hippocampus, amygdala, and brainstem.
+- **Practice questions**: Match glial cell types to function; localize a lesion from symptoms; trace information flow through a named brain system.
+- **Student output**: A neuroanatomy map linking regions, cell types, pathways, and one clinical consequence of damage.
 
-## Module 3: Synaptic Transmission and Neurochemistry (25%)
-- The Synapse: Presynaptic terminal, synaptic cleft, postsynaptic membrane
-- Neurotransmitter release: Calcium influx and SNARE proteins (exocytosis)
-- Postsynaptic receptors: Ionotropic (ligand-gated ion channels, fast) vs Metabotropic (G-protein coupled receptors, slow, second messengers)
-- Excitatory (EPSP) and Inhibitory (IPSP) Postsynaptic Potentials; spatial and temporal summation
-- Major Neurotransmitter systems: Glutamate, GABA, Acetylcholine, Dopamine, Serotonin, Norepinephrine
-- Neuropharmacology: Agonists vs Antagonists, mechanisms of common drugs (e.g., SSRIs, cocaine, opioids)
-- **Questions**: Explaining how a metabotropic receptor activates a second messenger cascade, analyzing spatial summation on a dendrite
+## Chapter 2: Membranes, Ion Channels, and Electrical Signaling
+- **Key concepts**: Membrane potential, ion gradients, sodium, potassium, chloride, calcium, sodium-potassium pump, equilibrium potentials, Nernst equation, Goldman equation, voltage-gated channels, action potentials, refractory periods, myelination, saltatory conduction, cable properties, and patch-clamp logic.
+- **Practice questions**: Predict changes in membrane potential; calculate or interpret equilibrium potentials; explain conduction speed from axon structure.
+- **Student output**: An electrophysiology analysis with a labeled trace, ionic mechanism, and experimental interpretation.
 
-## Module 4: Sensory and Motor Systems (20%)
-- Sensory Transduction: Converting physical stimuli into electrical signals
-- The Visual System: Anatomy of the eye, photoreceptors (rods vs cones), phototransduction (rhodopsin cascade), retinal processing (bipolar and ganglion cells), visual pathways to the primary visual cortex (V1)
-- The Somatosensory System: Mechanoreceptors, nociceptors (pain), and the somatosensory cortex (the homunculus)
-- The Auditory System: The cochlea, hair cells, and tonotopy
-- The Motor System: Upper vs lower motor neurons, the neuromuscular junction, the role of the basal ganglia and cerebellum in movement coordination
-- **Questions**: Tracing the phototransduction cascade from photon absorption to hyperpolarization, explaining the functional organization of the somatosensory homunculus
+## Chapter 3: Synapses, Neurotransmitters, and Neuropharmacology
+- **Key concepts**: Chemical and electrical synapses, vesicle docking, calcium-triggered release, SNARE proteins, synaptic cleft, ionotropic receptors, metabotropic receptors, EPSPs, IPSPs, spatial summation, temporal summation, glutamate, GABA, acetylcholine, dopamine, serotonin, norepinephrine, neuromodulation, agonists, antagonists, reuptake, and drug mechanisms.
+- **Practice questions**: Compare fast and slow synaptic signaling; predict effects of receptor blockade; interpret summation from a dendritic diagram.
+- **Student output**: A synaptic mechanism brief explaining one drug, toxin, or disease through receptor and circuit effects.
 
-## Module 5: Cognitive Neuroscience and Plasticity (15%)
-- Learning and Memory: Declarative (explicit) vs Non-declarative (implicit) memory; the role of the hippocampus (patient H.M.)
-- Synaptic Plasticity: Long-Term Potentiation (LTP) and Long-Term Depression (LTD); the role of NMDA and AMPA receptors
-- Hebbian Learning ("Cells that fire together, wire together")
-- Language: Broca's Area, Wernicke's Area, and aphasias
-- Neurodegeneration: Alzheimer's Disease (amyloid plaques, tau tangles) and Parkinson's Disease (dopaminergic cell death in the substantia nigra)
-- **Questions**: Explaining the molecular mechanism of LTP (NMDA receptor coincidence detection), comparing Broca's and Wernicke's aphasia
+## Chapter 4: Sensory Systems and Perception
+- **Key concepts**: Sensory transduction, receptive fields, coding, adaptation, somatosensation, nociception, proprioception, retina, rods, cones, phototransduction, visual pathways, auditory hair cells, cochlear tonotopy, vestibular signaling, taste, smell, and cortical representation.
+- **Practice questions**: Trace a sensory pathway from receptor to cortex; explain how stimulus energy becomes neural code; interpret receptive-field or tuning data.
+- **Student output**: A sensory-system explainer that links receptor structure, neural pathway, cortical map, and perceptual outcome.
 
-## Stretch Zone
-- Neural Networks and computational modeling of the brain
-- Advanced neuroimaging techniques (fMRI BOLD signal, DTI, EEG, optogenetics)
+## Chapter 5: Motor Systems, Autonomic Control, and Homeostasis
+- **Key concepts**: Lower and upper motor neurons, motor cortex, corticospinal tract, neuromuscular junction, spinal reflexes, central pattern generators, basal ganglia, cerebellum, motor learning, sympathetic and parasympathetic systems, hypothalamic regulation, stress responses, feeding, temperature, sleep-wake control, and endocrine-neural integration.
+- **Practice questions**: Localize motor deficits; compare basal ganglia and cerebellar contributions; explain autonomic changes during stress or homeostatic challenge.
+- **Student output**: A motor or autonomic case analysis connecting pathway anatomy, physiology, behavior, and clinical signs.
+
+## Chapter 6: Plasticity, Learning, Memory, and Development
+- **Key concepts**: Synaptic plasticity, Hebbian learning, long-term potentiation, long-term depression, NMDA receptors, AMPA receptors, spine remodeling, critical periods, neural development, axon guidance, pruning, adult neurogenesis, hippocampus, declarative memory, nondeclarative memory, working memory, and systems consolidation.
+- **Practice questions**: Explain coincidence detection; compare memory systems; evaluate evidence for experience-dependent plasticity.
+- **Student output**: A learning and memory evidence review using one experiment, one mechanism, and one limitation.
+
+## Chapter 7: Cognition, Emotion, Language, and Social Neuroscience
+- **Key concepts**: Attention, executive function, prefrontal cortex, decision-making, reward pathways, dopamine, emotion, fear conditioning, amygdala, language networks, Broca's area, Wernicke's area, aphasia, hemispheric specialization, social cognition, consciousness debates, and limits of localization.
+- **Practice questions**: Interpret behavioral and neural evidence together; compare aphasia profiles; critique a strong claim about localization or imaging.
+- **Student output**: A cognitive neuroscience claim check that separates behavioral data, neural evidence, mechanism, and speculation.
+
+## Chapter 8: Methods, Disorders, and Translational Neuroscience
+- **Key concepts**: Lesion studies, electrophysiology, EEG, MEG, fMRI BOLD signal, PET, DTI, calcium imaging, optogenetics, animal models, human subjects ethics, reproducibility, Alzheimer's disease, Parkinson's disease, epilepsy, stroke, depression, addiction, neurodevelopmental disorders, and clinical trials.
+- **Practice questions**: Match methods to research questions; interpret limits of imaging or animal-model evidence; connect disorder symptoms to mechanisms.
+- **Student output**: A translational neuroscience proposal with question, method, expected data, ethical issues, and clinical relevance.
+
+## Capstone
+Students produce a neuroscience research dossier on a behavior, disorder, or neural system. The dossier must connect molecular or cellular mechanism, circuit anatomy, behavioral evidence, at least one research method, and a cautious interpretation of what the evidence can and cannot show.
+
+## Assessment Ideas
+- Diagram and pathway quizzes requiring function, not just labels.
+- Electrophysiology and synaptic mechanism problem sets.
+- Data interpretation from imaging, lesion, behavioral, pharmacological, or recording studies.
+- Short paper critiques focused on methods, controls, causal claims, and limitations.
+- A final research presentation that defends a mechanistic claim with evidence.
+
+## Research Notes
+- OpenStax Biology 2e: https://openstax.org/books/biology-2e/pages/index
+- BrainFacts.org neuroscience resources: https://www.brainfacts.org/
+- Society for Neuroscience education resources: https://www.sfn.org/
+- NIH National Institute of Neurological Disorders and Stroke: https://www.ninds.nih.gov/

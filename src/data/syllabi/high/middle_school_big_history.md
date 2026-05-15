@@ -1,46 +1,64 @@
 # Middle School Big History
-**ID**: `middleSchoolBigHistory` · **Discipline**: Humanities · **Year**: 7 (ages 11–12)
+**ID**: `middleSchoolBigHistory` - **Discipline**: Humanities - **Year**: 7 (ages 11-12)
 
-## Course Philosophy
-Big History is an interdisciplinary approach that traces the history of the universe from the Big Bang to the present. It combines astronomy, physics, biology, and history to show how humanity fits into the grand scale of time. This course focuses on "threshold moments" of increasing complexity.
+## Course Aim
+Help students investigate the biggest story they can responsibly tell: how the universe, Earth, life, humans, and modern societies changed over time. Students learn to ask evidence-first questions, move between science and history, and explain large patterns without losing sight of real people, places, and choices.
 
-## Module 1: The Universe & Stars (20%)
-- Threshold 1: The Big Bang (13.8 billion years ago) and the creation of time, space, matter, and energy
-- Evidence for the Big Bang: Cosmic microwave background radiation, red shift
-- Threshold 2: Stars light up. Gravity pulling hydrogen and helium together.
-- Threshold 3: New chemical elements. How dying stars (supernovae) forged the periodic table. "We are made of star stuff."
-- **Questions**: Big Bang evidence, star life cycles, origin of heavy elements
+## Course Design Notes
+This course is designed for curious ages 11-14. It keeps the wonder of Big History while making every claim answerable with evidence: observations, models, fossils, artifacts, maps, timelines, and data. Chapters follow the OER Project Big History threshold sequence, but each chapter asks students to compare sources, spot uncertainty, and build explanations that are vivid, careful, and age-appropriate.
 
-## Module 2: The Earth & Solar System (20%)
-- Threshold 4: Earth and the Solar System form (4.5 billion years ago)
-- Accretion: dust to rocks to planets
-- The Hadean Eon: molten Earth, the formation of the moon via collision
-- Conditions necessary for life (Goldilocks conditions): liquid water, right distance from a star, chemical building blocks
-- **Questions**: Solar system formation, Earth's early atmosphere, Goldilocks conditions
+## Chapter 1: Big Questions, Big Time, and Evidence
+- **Key concepts**: scale, timeline, claim, evidence, model, uncertainty, origin story, chronology, perspective.
+- **Practice questions**: How can a timeline show time that is too huge to picture? What makes a claim stronger? When should a historian or scientist say "we do not know yet"?
+- **Student output**: a personal "scale of time" strip that places a school day, a human life, farming, dinosaurs, Earth, and the universe on one evidence-labeled timeline.
 
-## Module 3: Life on Earth (20%)
-- Threshold 5: Life emerges (3.8 billion years ago)
-- DNA and the ability to reproduce and adapt
-- The evolution of complexity: single-celled organisms, photosynthesis, eukaryotes, multi-cellular life
-- Major extinction events (e.g., the K-T extinction that killed the dinosaurs) and how they drive evolutionary leaps
-- **Questions**: Milestones in evolution, photosynthesis impact on atmosphere, extinction drivers
+## Chapter 2: The Big Bang and the First Ingredients
+- **Key concepts**: Big Bang, expansion, redshift, cosmic microwave background, matter, energy, hydrogen, helium, gravity.
+- **Practice questions**: What evidence suggests the universe is expanding? Why do scientists use models for events nobody watched happen? What did the early universe contain?
+- **Student output**: an illustrated evidence card set explaining redshift, background radiation, and the first elements in clear middle-school language.
 
-## Module 4: Early Humans (20%)
-- Threshold 6: Collective Learning. The emergence of Homo sapiens.
-- Why humans are different: precise language allowing knowledge to be passed down and accumulate across generations
-- Paleolithic era: foraging, migration out of Africa, early tool use
-- Neanderthals and Denisovans
-- **Questions**: Defining collective learning, human migration paths, foraging lifestyle characteristics
+## Chapter 3: Stars, Elements, and Cosmic Recycling
+- **Key concepts**: star, nebula, fusion, supernova, chemical element, periodic table, gravity, complexity, stellar life cycle.
+- **Practice questions**: How do stars make new elements? Why are supernovae important for planets and living things? What does it mean to say atoms have histories?
+- **Student output**: a "biography of an atom" comic or storyboard that follows one element from a star to Earth to a living body.
 
-## Module 5: Agriculture & Modernity (20%)
-- Threshold 7: Agriculture (10,000 years ago). Why humans stopped foraging and started farming.
-- The impact of farming: food surpluses, permanent settlements, cities, writing, social hierarchies, disease
-- Threshold 8: The Modern Revolution (approx. 1750 CE to present)
-- Fossil fuels, the Industrial Revolution, exponential population growth, global interconnectedness
-- The Anthropocene: humans as the dominant force shaping the planet
-- **Questions**: Causes/effects of agriculture, Industrial Revolution drivers, defining the Anthropocene
+## Chapter 4: Earth, the Moon, and Goldilocks Conditions
+- **Key concepts**: solar system, accretion, orbit, Hadean Earth, Moon formation, atmosphere, liquid water, Goldilocks conditions.
+- **Practice questions**: How did dust and rock become planets? Which conditions made early Earth unusual? How do scientists use rocks, craters, and simulations as evidence?
+- **Student output**: a planet habitability brief that compares Earth with one other planet or moon using evidence about water, temperature, chemistry, and energy.
 
-## Stretch Zone
-- Threshold 9: The Future. What comes next?
-- The Fermi Paradox (Where are all the aliens?)
-- Thermodynamics: Entropy and the long-term fate of the universe
+## Chapter 5: Life Begins and Changes the Planet
+- **Key concepts**: life, cell, DNA, reproduction, adaptation, photosynthesis, oxygen, fossil, extinction, evolution.
+- **Practice questions**: What counts as evidence for very early life? How did photosynthesis change the atmosphere? Why can extinction open space for new forms of life?
+- **Student output**: a cause-and-effect diagram showing how tiny organisms changed oceans, air, rocks, and future life.
+
+## Chapter 6: Humans, Migration, and Collective Learning
+- **Key concepts**: hominin, Homo sapiens, migration, adaptation, tool, fire, language, art, collective learning, culture.
+- **Practice questions**: What evidence helps us understand early humans? How did language and shared memory change survival? Why did humans live differently in different environments?
+- **Student output**: an evidence-based migration map with short notes linking routes, climates, tools, and archaeological finds.
+
+## Chapter 7: Farming, Cities, and Written Records
+- **Key concepts**: agriculture, domestication, surplus, settlement, specialization, hierarchy, trade, disease, writing, civilization.
+- **Practice questions**: Why did some communities begin farming? What were the benefits and costs of settled life? How did writing change what later historians can know?
+- **Student output**: a balanced argument paragraph on whether farming made life better, using at least three kinds of evidence.
+
+## Chapter 8: The Modern Revolution and the Anthropocene
+- **Key concepts**: fossil fuel, industrialization, population growth, exchange network, globalization, acceleration, Anthropocene, sustainability.
+- **Practice questions**: Why did change speed up after about 1750? How are energy, machines, cities, and empires connected? What evidence shows humans now shape Earth systems?
+- **Student output**: a data story using one graph or map to explain a modern change, its benefits, its costs, and one question for the future.
+
+## Capstone
+Create a Big History museum exhibit called "How Did We Get Here?" The exhibit should include eight objects or panels, one from each chapter, with a claim, evidence, image or diagram, and short explanation. Students must show at least three cross-disciplinary links, such as stars to chemistry, farming to disease, or fossil fuels to climate.
+
+## Assessment Ideas
+- Evidence notebooks graded on clear claims, source labels, careful uncertainty, and revision after feedback.
+- Short explanations graded for accurate sequence, cause and effect, scale, and age-appropriate scientific vocabulary.
+- Capstone exhibit graded on evidence quality, cross-disciplinary connections, visual clarity, and the student's ability to answer audience questions.
+
+## Research Notes
+- OER Project Big History Project: https://www.oerproject.com/Big-History
+- OER Project Big History course guide and threshold resources: https://www.oerproject.com/
+- NASA Universe resources for educators: https://science.nasa.gov/universe/
+- Smithsonian Human Origins education resources: https://humanorigins.si.edu/education
+- Library of Congress primary source sets: https://www.loc.gov/classroom-materials/primary-source-sets/
+- British Library learning resources: https://www.bl.uk/learning

@@ -1,0 +1,301 @@
+/* ═══ LETTERBOXED ═══ */
+
+.letterboxed-layout {
+  display: grid;
+  gap: 18px;
+  padding: 10px 0 28px;
+}
+
+.letterboxed-hero {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 18px 22px;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--shadow-sm);
+}
+.letterboxed-hero h2 {
+  margin: 4px 0 6px;
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3.4vw, 30px);
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  color: var(--ocean-deep);
+}
+.letterboxed-hero p {
+  margin: 0;
+  color: rgba(11, 29, 46, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+}
+body.deep-ocean .letterboxed-hero h2 { color: #f4fdff; }
+body.deep-ocean .letterboxed-hero p { color: rgba(231, 251, 255, 0.75); }
+
+.letterboxed-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.letterboxed-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: var(--r-full);
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--ocean-deep);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.letterboxed-actions button:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateY(-1px);
+}
+body.deep-ocean .letterboxed-actions button {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e7fbff;
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.letterboxed-stage {
+  position: relative;
+  display: grid;
+  gap: 18px;
+  padding: 24px;
+  border-radius: var(--r-xl);
+  border: 1px solid rgba(46, 196, 182, 0.22);
+  background:
+    radial-gradient(ellipse at top, rgba(46, 196, 182, 0.14), transparent 60%),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.5));
+  color: #f4fdff;
+}
+
+.letterboxed-toast {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 14px;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(244, 63, 94, 0.55);
+  border-radius: var(--r-md);
+  color: #fda4af;
+  font-size: 13px;
+  font-weight: 700;
+  z-index: 4;
+}
+
+/* ── Box layout ── */
+.letterboxed-box {
+  position: relative;
+  width: min(440px, 100%);
+  aspect-ratio: 1;
+  margin: 0 auto;
+  transition: transform 0.4s;
+}
+.letterboxed-box.shaking {
+  animation: lb-shake 0.45s ease-in-out;
+}
+@keyframes lb-shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+.letterboxed-box-frame {
+  position: absolute;
+  inset: 7%;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.letterboxed-side {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+}
+.letterboxed-side.side-top {
+  top: 0; left: 7%; right: 7%; height: 14%;
+  flex-direction: row;
+}
+.letterboxed-side.side-bottom {
+  bottom: 0; left: 7%; right: 7%; height: 14%;
+  flex-direction: row;
+}
+.letterboxed-side.side-left {
+  top: 7%; bottom: 7%; left: 0; width: 14%;
+  flex-direction: column;
+}
+.letterboxed-side.side-right {
+  top: 7%; bottom: 7%; right: 0; width: 14%;
+  flex-direction: column;
+}
+
+.letterboxed-letter {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: #f4fdff;
+  color: #0f172a;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 0.12s, background 0.2s, color 0.2s, box-shadow 0.2s;
+  z-index: 3;
+}
+.letterboxed-letter:hover:not(:disabled) {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(46, 196, 182, 0.45);
+}
+.letterboxed-letter.used {
+  background: rgba(46, 196, 182, 0.85);
+  color: #f4fdff;
+}
+.letterboxed-letter.active {
+  background: var(--reef-emerald);
+  color: #f4fdff;
+  box-shadow: 0 0 0 3px rgba(46, 196, 182, 0.4);
+}
+
+.letterboxed-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ── Input area ── */
+.letterboxed-input-area {
+  display: grid;
+  gap: 10px;
+  max-width: 440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.letterboxed-current {
+  display: grid;
+  place-items: center;
+  min-height: 56px;
+  padding: 12px 18px;
+  border-radius: var(--r-md);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: #f4fdff;
+}
+.letterboxed-current-hint {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.letterboxed-input-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.letterboxed-input-buttons button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+  border-radius: var(--r-full);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: #f4fdff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.letterboxed-input-buttons button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+}
+.letterboxed-input-buttons button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.letterboxed-input-buttons button.primary {
+  background: linear-gradient(135deg, var(--reef-teal), var(--reef-emerald));
+  border-color: transparent;
+}
+
+/* ── Solved chain ── */
+.letterboxed-solved {
+  padding: 14px 18px;
+  border-radius: var(--r-md);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.letterboxed-solved .eyebrow {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+.letterboxed-chain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+.letterboxed-chain-word {
+  padding: 4px 10px;
+  border-radius: var(--r-full);
+  background: rgba(46, 196, 182, 0.18);
+  border: 1px solid rgba(46, 196, 182, 0.45);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 800;
+  color: #d1fae5;
+  letter-spacing: 0.04em;
+}
+
+.letterboxed-result {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  border-radius: var(--r-md);
+  background: rgba(46, 196, 182, 0.18);
+  border: 1px solid rgba(46, 196, 182, 0.5);
+  font-size: 14px;
+}
+.letterboxed-result strong { color: #f4fdff; }
+.letterboxed-result button {
+  margin-left: auto;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: var(--r-full);
+  background: linear-gradient(135deg, var(--reef-teal), var(--reef-emerald));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+@media (max-width: 580px) {
+  .letterboxed-hero { flex-direction: column; }
+  .letterboxed-letter { width: 36px; height: 36px; font-size: 15px; }
+}

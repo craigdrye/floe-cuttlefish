@@ -1,51 +1,155 @@
 # Logic & Argumentation
-**ID**: `logicAndArgumentation` · **Discipline**: Humanities · **Year**: 8 (ages 12–13)
+**ID**: `logicAndArgumentation` - **Discipline**: Humanities - **Year**: High School
 
-## Course Philosophy
-This course serves as a formal introduction to critical thinking and rhetoric. Students learn the structural mechanics of a sound argument, how to identify logical fallacies in media and debate, and how to construct persuasive, evidence-based reasoning. This bridges the gap between elementary philosophy and high school debate/essay writing.
+## Course Aim
+Teach students to recognize, build, test, and repair arguments in schoolwork, public debate, media, science, everyday disagreement, and their own thinking. The course treats logic as a practical craft: not a way to win every argument, but a way to make reasons visible enough to evaluate.
 
-## Module 1: The Structure of an Argument (20%)
-- Definitions: Premise, Conclusion, Inference
-- Standard form: Listing premises vertically followed by the conclusion
-- Deductive vs. Inductive reasoning
-- Deductive arguments: Validity (if the premises are true, the conclusion *must* be true) vs. Soundness (it is valid *and* the premises are actually true)
-- Inductive arguments: Strength and Cogency (dealing with probability rather than certainty)
-- **Questions**: Identifying premises vs conclusions, deductive vs inductive scenarios, assessing validity vs soundness
+## Course Design Notes
+The original syllabus had the right backbone: premises, conclusions, validity, fallacies, and rhetoric. This rewrite adds argument mapping, charitable interpretation, evidence standards, causal reasoning, formal logic foundations, media applications, and repeated practice deliverables so students learn the moves, not just the labels.
 
-## Module 2: Formal Logic Basics (20%)
-- Syllogisms: Categorical syllogisms (All A are B. C is A. Therefore, C is B.)
-- Modus Ponens (If P, then Q. P. Therefore, Q.)
-- Modus Tollens (If P, then Q. Not Q. Therefore, Not P.)
-- Logical operators: AND, OR, NOT, IF/THEN
-- Affirming the consequent and denying the antecedent (formal fallacies)
-- **Questions**: Evaluating syllogisms, identifying Modus Ponens/Tollens, spotting formal fallacies
+## Chapter 1: What Counts as an Argument?
+**Key concepts**: claim, premise, conclusion, inference, reason, evidence, explanation, disagreement, assumption, hidden premise, standard form.
 
-## Module 3: Informal Logical Fallacies (Part 1: Distraction & Emotion) (20%)
-- *Ad Hominem*: Attacking the person instead of the argument
-- *Tu Quoque* (Appeal to Hypocrisy): "You do it too!"
-- *Straw Man*: Misrepresenting an opponent's argument to make it easier to attack
-- *Red Herring*: Introducing an irrelevant topic to distract from the main issue
-- *Appeal to Emotion*: Manipulating fear, pity, or joy in place of valid logic
-- *Appeal to Authority/Popularity* (Bandwagon)
-- **Questions**: Spotting fallacies in dialogue/text snippets, distinguishing straw man from red herring
+**Essential questions**
+- How is an argument different from a fight, explanation, story, or opinion?
+- What has to be true for this conclusion to follow?
+- Which assumptions are doing quiet work?
 
-## Module 4: Informal Logical Fallacies (Part 2: Flawed Reasoning) (20%)
-- *Slippery Slope*: Arguing that a small step will inevitably lead to a chain of extreme events
-- *False Dilemma* (Black-and-White Fallacy): Presenting only two options when more exist
-- *Post Hoc Ergo Propter Hoc* (False Cause): Confusing correlation with causation
-- *Hasty Generalization*: Drawing a broad conclusion from a tiny sample size
-- *Circular Reasoning* (Begging the Question): The conclusion is included in the premise
-- **Questions**: Identifying false dichotomies, correlation vs causation scenarios, spotting circular reasoning
+**Skills**
+- Identify conclusion indicators and premise indicators.
+- Put short arguments into standard form.
+- Separate an explanation of why something happened from an argument that something is true.
 
-## Module 5: Rhetoric and Persuasion (20%)
-- Aristotle's Rhetorical Triangle: Ethos (Credibility), Pathos (Emotion), Logos (Logic)
-- Analyzing how advertisements and political speeches use ethos, pathos, and logos
-- The Principle of Charity: Interpreting an opponent's argument in its strongest possible form before attacking it
-- Steelmanning (the opposite of a straw man)
-- Constructing a counter-argument
-- **Questions**: Identifying Ethos/Pathos/Logos in text, applying the principle of charity
+**Assessment idea**
+- Argument anatomy lab: students mark premises, conclusions, assumptions, and missing evidence in news excerpts, ads, classroom claims, and short philosophical passages.
 
-## Stretch Zone
-- Introduction to cognitive biases (e.g., confirmation bias, anchoring, Dunning-Kruger effect)
-- Epistemic responsibility (Do we have a moral duty to only believe things with sufficient evidence?)
-- Truth tables (introductory symbolic logic)
+## Chapter 2: Argument Mapping and Fair Interpretation
+**Key concepts**: argument map, linked premises, independent premises, objection, rebuttal, principle of charity, steelmanning, burden of proof, relevance.
+
+**Essential questions**
+- What is the strongest fair version of this argument?
+- Which reasons work together, and which stand alone?
+- What objection would actually matter?
+
+**Skills**
+- Create simple argument maps with support and objection arrows.
+- Improve weak wording without changing the argument unfairly.
+- State an opposing view accurately enough that its defender would recognize it.
+
+**Assessment idea**
+- Steelman-and-response assignment: reconstruct an opposing view, map it, then answer one serious objection.
+
+## Chapter 3: Deductive Logic
+**Key concepts**: deductive argument, validity, soundness, conditional, necessary condition, sufficient condition, modus ponens, modus tollens, disjunctive syllogism, categorical syllogism, counterexample.
+
+**Essential questions**
+- Can an argument be valid but false?
+- What makes a counterexample decisive?
+- Why do "if," "only if," "unless," and "or" cause so many little disasters?
+
+**Skills**
+- Test validity using structure rather than vibes.
+- Distinguish validity from truth.
+- Spot affirming the consequent and denying the antecedent.
+- Translate everyday conditionals into simple logical form.
+
+**Assessment idea**
+- Validity workshop: students classify short arguments, write counterexamples, and repair invalid forms.
+
+## Chapter 4: Inductive, Causal, and Statistical Reasoning
+**Key concepts**: inductive strength, cogency, generalization, sample size, representativeness, analogy, correlation, causation, confounder, base rate, probability, causal mechanism.
+
+**Essential questions**
+- When is a sample good enough to support a general claim?
+- What would distinguish cause from coincidence?
+- How can numbers persuade honestly or dishonestly?
+
+**Skills**
+- Evaluate polls, anecdotes, trend claims, analogies, and causal claims.
+- Identify missing comparison groups or alternative explanations.
+- Rewrite overconfident conclusions into appropriately cautious ones.
+
+**Assessment idea**
+- Claim clinic: students diagnose a viral statistic or headline using sample, cause, base rate, and uncertainty checks.
+
+## Chapter 5: Informal Fallacies Without Fallacy Bingo
+**Key concepts**: ad hominem, straw man, red herring, false dilemma, slippery slope, hasty generalization, circular reasoning, appeal to authority, appeal to popularity, equivocation, loaded question.
+
+**Essential questions**
+- Why is naming a fallacy not the same as refuting an argument?
+- When can an authority, emotion, or slippery-slope concern be relevant?
+- What exactly went wrong in the reasoning?
+
+**Skills**
+- Explain the reasoning defect rather than merely naming the fallacy.
+- Distinguish similar fallacies by their underlying error.
+- Repair a fallacious argument into a stronger version.
+
+**Assessment idea**
+- Fallacy repair lab: students choose weak arguments, identify the problem, and rewrite them into fairer, stronger arguments.
+
+## Chapter 6: Rhetoric, Persuasion, and Responsible Debate
+**Key concepts**: ethos, pathos, logos, audience, framing, tone, concession, counterargument, evidence quality, deliberation, persuasion ethics.
+
+**Essential questions**
+- How can emotion support reasoning without replacing it?
+- What makes a source credible for this question?
+- How should people argue when they still have to live together afterward?
+
+**Skills**
+- Analyze how speeches, ads, essays, and campaign messages use credibility, emotion, and logic.
+- Build a persuasive argument that includes evidence, counterargument, and limits.
+- Practice discussion moves: clarify, challenge, concede, revise, and summarize.
+
+**Assessment idea**
+- Mini-debate or deliberation: students prepare argument maps, evidence cards, rebuttal notes, and a reflection on what changed.
+
+## Chapter 7: Cognitive Biases and Intellectual Habits
+**Key concepts**: confirmation bias, motivated reasoning, anchoring, availability heuristic, Dunning-Kruger effect, intellectual humility, open-mindedness, epistemic responsibility.
+
+**Essential questions**
+- Why do smart people reason badly?
+- What habits make disagreement more truth-seeking?
+- Do we have responsibilities for what we believe and share?
+
+**Skills**
+- Recognize common bias patterns in oneself and others.
+- Design a "slow thinking" checklist for high-stakes claims.
+- Decide when to suspend judgment.
+
+**Assessment idea**
+- Personal reasoning audit: students track one changed belief, one stubborn belief, and one claim they should not yet believe.
+
+## Chapter 8: Capstone Argument Studio
+Students choose a real question from school life, science, culture, politics, technology, sports, or ethics and produce:
+- a clear research question
+- an argument map
+- an evidence packet
+- one strong objection and reply
+- a revised written argument
+- a short oral defense
+
+## Capstone
+Students produce a complete argument portfolio on a real question, including a research question, argument map, evidence packet, objection and reply, revised written argument, and short oral defense.
+
+## Course-Wide Assessments
+- Argument anatomy drills
+- Argument maps
+- Validity and counterexample quizzes
+- Fallacy repair exercises
+- Media/statistics claim clinic
+- Deliberation or debate performance
+- Capstone argument portfolio
+
+## Assessment Ideas
+Use argument anatomy drills, mapping exercises, validity checks, counterexample quizzes, fallacy repair labs, statistics claim clinics, debate reflections, and the capstone portfolio. Assess precision, fairness, evidence quality, and revision.
+
+## Final Outcomes
+Students should be able to slow down a claim, map its reasons, test its structure, evaluate its evidence, treat opponents fairly, identify weak reasoning without cheap gotchas, and make better arguments of their own.
+
+## Research Notes
+- Open Textbook Library, "Introduction to Logic and Critical Thinking," informed the argument, propositional logic, and validity structure: https://open.umn.edu/opentextbooks/textbooks/introduction-to-logic-and-critical-thinking
+- Open Textbook Library, "Fundamental Methods of Logic," informed the sequence from arguments/explanations to validity, soundness, deductive/inductive reasoning, diagramming, and informal fallacies: https://open.umn.edu/opentextbooks/textbooks/fundamental-methods-of-logic
+- BYU Online High School, "Introduction to Logic and Critical Thinking," provided a high-school comparator emphasizing deductive and non-deductive arguments, formal methods, practical applications, biases, and fallacies: https://hs.byu.edu/catalog/PHIL-205-300-001
+- Stanford Online High School, "Critical Reading and Argumentation," informed the philosophical argument and careful reading orientation: https://onlinehighschool.stanford.edu/courses/2026/school-year/ocra1
+- Fordham "Logic and Critical Thinking" syllabus provided a college-level comparator for elements of good argument, formal arguments, formal fallacies, and argument practice: https://faculty.fordham.edu/davenport/syllabi/LogicCrit05.pdf

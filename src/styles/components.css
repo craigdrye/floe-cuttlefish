@@ -335,6 +335,12 @@
   color: #496b62;
   font-size: 14px;
 }
+.stage-complete-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 .stage-complete-card button {
   min-height: 44px;
   display: inline-flex;
@@ -346,4 +352,8 @@
   background: linear-gradient(135deg, var(--reef-teal), var(--reef-emerald));
   color: #fff;
   font-weight: 900;
+}
+.stage-complete-card .bonus-reward-button {
+  background: linear-gradient(135deg, #f59e0b, #ef5d7a);
+  box-shadow: 0 10px 24px rgba(239, 93, 122, 0.22);
 }

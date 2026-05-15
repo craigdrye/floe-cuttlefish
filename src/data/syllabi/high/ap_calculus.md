@@ -1,52 +1,62 @@
 # AP Calculus (AB & BC)
-**Covers**: `col-ap-calculus`
-**Discipline**: Maths · **Year**: 12 (ages 16–18)
-**Frameworks**: US College Board AP Calculus AB/BC
+**Covers**: `col-ap-calculus` · **Discipline**: Maths · **Year**: 12 (ages 16-18)
 
-## Course Philosophy
-This course covers the mathematics of continuous change. AB covers the equivalent of a first-semester college calculus course, while BC covers a full year. The focus is on limits, derivatives, integrals, and the Fundamental Theorem of Calculus.
+## Course Aim
+Prepare students for AP Calculus AB and BC by building conceptual understanding of limits, derivatives, integrals, differential equations, accumulation, series, and AP-style mathematical communication.
 
-## Module 1: Limits and Continuity (10%)
-- Evaluating limits graphically, numerically, and algebraically (factoring, conjugate method)
-- Properties of limits
-- Limits involving infinity (horizontal and vertical asymptotes)
-- Defining continuity at a point and over an interval
-- The Intermediate Value Theorem (IVT)
-- **Questions**: Evaluating $\lim_{x\to 0} \frac{\sin x}{x}$, proving a root exists using IVT
+## Course Design Notes
+AP Calculus AB is roughly a first-semester college calculus course; BC covers the same foundation plus additional integration techniques, parametric/polar/vector work, and infinite series. This syllabus marks BC extensions while keeping AB students on a coherent path through change and accumulation.
 
-## Module 2: Differentiation (25%)
-- The limit definition of the derivative: $f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h}$
-- Derivative rules: Power, Product, Quotient, and Chain rules
-- Derivatives of trigonometric, exponential, and logarithmic functions
-- Implicit differentiation and derivatives of inverse functions
-- **Questions**: Finding the derivative of $y = e^{3x}\sin(x^2)$, implicit differentiation of $x^2 + y^2 = 25$
+## Chapter 1: Limits, Continuity, and the Language of Change
+- **Key concepts**: limits from graphs, tables, and formulas; one-sided limits; infinite limits; continuity; IVT.
+- **Practice questions**: What value is approached? Where is the function discontinuous? What does IVT guarantee?
+- **Student output**: a limits and continuity evidence sheet using graph, table, and algebra.
 
-## Module 3: Applications of Differentiation (20%)
-- The Mean Value Theorem (MVT)
-- Using the First Derivative Test to find relative extrema and intervals of increasing/decreasing
-- Using the Second Derivative Test to find points of inflection and concavity
-- Optimization problems (finding absolute max/min in context)
-- Related Rates problems (how variables change with respect to time)
-- L'Hôpital's Rule for indeterminate limit forms
-- **Questions**: Optimizing the volume of a box, calculating the rate a shadow grows (related rates)
+## Chapter 2: Derivative Meaning and Rules
+- **Key concepts**: derivative definition, tangent slope, instantaneous rate, power/product/quotient/chain rules, trig derivatives.
+- **Practice questions**: What does the derivative represent? Which rule applies? How can the derivative be estimated from data?
+- **Student output**: a derivative interpretation packet with symbolic and contextual examples.
 
-## Module 4: Integration and Accumulation of Change (25%)
-- Antiderivatives and indefinite integrals
-- Riemann sums (Left, Right, Midpoint) and Trapezoidal approximations
-- The Definite Integral and the Fundamental Theorem of Calculus (Parts 1 and 2)
-- Integration techniques: U-substitution, Integration by Parts (BC), Partial Fractions (BC)
-- Improper Integrals (BC)
-- **Questions**: Evaluating $\int_0^{\pi/2} \cos(x) dx$, using U-substitution, calculating area using FTC
+## Chapter 3: Differentiation Applications
+- **Key concepts**: MVT, increasing/decreasing, concavity, extrema, optimization, related rates, L'Hopital's Rule.
+- **Practice questions**: Where is the maximum? What rate is changing? How does concavity affect the graph?
+- **Student output**: a mixed applications set with diagrams and written reasoning.
 
-## Module 5: Applications of Integration & Differential Equations (20%)
-- Finding the area between two curves
-- Finding the volume of solids of revolution (Disk/Washer method and Shell method)
-- Finding volume of solids with known cross-sections
-- Solving separable differential equations and exponential growth/decay models
-- Slope fields and Euler's Method (BC)
-- **BC ONLY**: Parametric equations, polar coordinates, and vector-valued functions
-- **BC ONLY**: Infinite Sequences and Series (Taylor and Maclaurin series, tests for convergence)
-- **Questions**: Calculating volume using washers, solving $dy/dx = ky$, determining the radius of convergence (BC)
+## Chapter 4: Integration and Accumulation
+- **Key concepts**: antiderivatives, definite integrals, Riemann sums, trapezoids, FTC Part 1 and 2, net change.
+- **Practice questions**: What quantity is accumulated? How does the graph estimate compare to the exact integral? What does the FTC say?
+- **Student output**: an accumulation model with graph, approximation, exact value, and interpretation.
 
-## Stretch Zone
-- Multivariable calculus concepts (partial derivatives, double integrals)
+## Chapter 5: Integration Techniques and Applications
+- **Key concepts**: substitution, area between curves, volumes by disks/washers, cross sections, average value; BC: integration by parts, partial fractions, improper integrals.
+- **Practice questions**: Which setup matches the region? What variable should be substituted? What does the volume integral represent?
+- **Student output**: an applications portfolio with area, volume, and average-value tasks.
+
+## Chapter 6: Differential Equations and Modeling
+- **Key concepts**: slope fields, separable differential equations, exponential growth and decay, logistic models; BC: Euler's method.
+- **Practice questions**: What solution behavior does the slope field show? How do initial conditions matter? What does the model predict?
+- **Student output**: a differential-equation model with slope field, solution, and context.
+
+## Chapter 7: BC Extensions: Parametric, Polar, Vectors, and Series
+- **Key concepts**: parametric derivatives, polar area, vector-valued motion, convergence tests, power series, Taylor and Maclaurin series, radius of convergence.
+- **Practice questions**: What does the parameter represent? Does the series converge? What polynomial approximates the function?
+- **Student output**: a BC extension packet or, for AB students, an enrichment preview.
+
+## Chapter 8: AP Calculus Exam Studio
+- **Key concepts**: calculator versus non-calculator strategy, notation, justifications, graph interpretation, FRQ scoring, error review.
+- **Practice questions**: What must be justified? Which values come from the calculator? How should the conclusion be stated?
+- **Student output**: a timed FRQ set with scoring-guideline corrections.
+
+## Capstone
+Build a calculus portfolio: limit/continuity analysis, derivative applications, integral accumulation, differential-equation model, BC extension or enrichment task, and a timed AP correction log.
+
+## Assessment Ideas
+- Problems graded on setup, notation, and interpretation.
+- Modeling tasks graded on representation and justification.
+- Capstone graded on conceptual links across derivative, integral, and accumulation ideas.
+
+## Research Notes
+- College Board AP Calculus AB and BC CED: https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-and-bc-course-and-exam-description.pdf
+- AP Calculus AB/BC overview: https://secure-media.collegeboard.org/ap/modules/overview/calculus/index.html
+- College Board AB versus BC comparison: https://blog.collegeboard.org/difference-between-ap-calculus-ab-and-bc
+- AP Calculus clarifications: https://apcentral.collegeboard.org/media/pdf/ap-calculus-ab-bc-course-and-exam-description-clarifications.pdf

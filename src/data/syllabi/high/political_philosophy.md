@@ -1,42 +1,60 @@
 # Political Philosophy
-**ID**: `politicalPhilosophy` · **Discipline**: Humanities · **Year**: 9 (ages 13–14)
+**ID**: `politicalPhilosophy` - **Discipline**: Humanities - **Year**: 9 (ages 13-14)
 
-## Course Philosophy
-This course examines the foundations of human society, authority, and justice. Students explore why governments exist, how power is legitimized, and the ongoing tension between individual liberty and collective security.
+## Course Aim
+Help students ask how people should live together when they disagree about freedom, fairness, safety, power, identity, and truth. Students meet classic political arguments, test them against current civic problems, and practice discussing contested issues with accuracy, charity, and backbone.
 
-## Module 1: The State of Nature and the Social Contract (20%)
-- Thomas Hobbes (*Leviathan*): Human nature as inherently selfish; life as "nasty, brutish, and short"; the need for an absolute sovereign to maintain order
-- John Locke (*Second Treatise*): Natural rights (Life, Liberty, Property); the government's role is to protect these rights; the right to revolution if the contract is broken
-- Jean-Jacques Rousseau (*The Social Contract*): "Man is born free, and everywhere he is in chains"; the concept of the "General Will" vs individual will
-- **Questions**: Comparing Hobbes/Locke/Rousseau, identifying social contract arguments in modern politics
+## Course Design Notes
+Route questions here when they concern political authority, justice, rights, liberty, democracy, constitutions, citizenship, protest, equality, property, ideology, propaganda, civic responsibility, or the moral logic behind policy debates. The tone should be nonpartisan and argument-centered: students should learn to name tradeoffs and reconstruct several plausible views before defending their own.
 
-## Module 2: Liberty and Rights (20%)
-- Isaiah Berlin: Positive Liberty (freedom *to* achieve potential/resources) vs. Negative Liberty (freedom *from* interference)
-- John Stuart Mill (*On Liberty*): The Harm Principle (your freedom ends where another's harm begins); the absolute defense of free speech (the marketplace of ideas)
-- The tension between security and liberty (e.g., surveillance vs privacy)
-- **Questions**: Applying the Harm Principle to modern scenarios, distinguishing positive vs negative liberty
+## Chapter 1: Why Have Government?
+**Key concepts**: State of nature, order, fear, consent, legitimacy, sovereignty, social contract, natural rights, revolution, public goods, and civil society.
+**Practice questions**: Why should anyone obey a state? Can people consent to a government they were born into? When is resistance justified? Compare Hobbes, Locke, and Rousseau on a school-rule dispute.
+**Student output**: A "school social contract" memo that explains what rules are needed, what rights students keep, and how authority can lose legitimacy.
 
-## Module 3: Justice and Equality (20%)
-- Distributive Justice: How should society's resources/wealth be divided?
-- John Rawls (*A Theory of Justice*): The "Original Position" and the "Veil of Ignorance" (designing a society without knowing your place in it); the Difference Principle
-- Robert Nozick (*Anarchy, State, and Utopia*): Libertarianism; entitlement theory; taxation as forced labor
-- Karl Marx (*The Communist Manifesto*): Historical materialism; the bourgeoisie vs the proletariat; alienation; "from each according to his ability, to each according to his needs"
-- **Questions**: Applying the Veil of Ignorance, contrasting Rawls' equity with Nozick's entitlement
+## Chapter 2: Citizenship, Virtue, and Constitutional Design
+**Key concepts**: Citizenship, virtue, common good, regime, constitution, faction, representation, separation of powers, checks and balances, majority rule, and majority tyranny.
+**Practice questions**: Should politics try to make people better, or only protect their choices? Are checks and balances wisdom or mistrust? What makes representation different from direct democracy?
+**Student output**: A constitutional design lab for a fictional school, city, or online community, including branches, powers, limits, and a failure scenario.
 
-## Module 4: Power, Authority, and the State (20%)
-- Niccolò Machiavelli (*The Prince*): Realpolitik; "It is better to be feared than loved"; the separation of ethics and politics
-- Max Weber: The state's monopoly on the legitimate use of physical force; three types of authority (Traditional, Charismatic, Legal-Rational)
-- Anarchism: The argument that all hierarchical authority is illegitimate and unnecessary
-- **Questions**: Identifying Machiavellian tactics, categorizing types of authority
+## Chapter 3: Liberty, Rights, Speech, and Harm
+**Key concepts**: Negative liberty, positive liberty, autonomy, harm principle, rights, paternalism, censorship, privacy, surveillance, equality of opportunity, and public safety.
+**Practice questions**: Is offense a harm? When can safety justify limits on freedom? Can someone be unfree because of poverty, manipulation, discrimination, or addiction?
+**Student output**: A rights brief on a contested rule, such as phone searches, dress codes, platform bans, book challenges, facial recognition, protest zones, or public health mandates.
 
-## Module 5: Modern Political Ideologies (20%)
-- Conservatism (Edmund Burke): The value of tradition, organic society, skepticism of radical change
-- Liberalism: Emphasis on individual rights, free markets, and democratic institutions
-- Socialism/Communism: Emphasis on collective ownership and reducing inequality
-- Fascism: Extreme nationalism, totalitarian control, rejection of liberalism and Marxism
-- **Questions**: Matching policies to ideologies, identifying ideological core values
+## Chapter 4: Justice, Equality, Property, and Work
+**Key concepts**: Distributive justice, equality, equity, need, merit, property, self-ownership, taxation, exploitation, alienation, capabilities, opportunity, and the least advantaged.
+**Practice questions**: Would you choose the same rules behind a veil of ignorance? Is taxation cooperation, theft, membership, or repair? Should justice measure resources, welfare, opportunities, capabilities, or power?
+**Student output**: A fair-budget simulation allocating limited funds to housing, education, health, safety, climate resilience, and culture through several political philosophies.
 
-## Stretch Zone
-- Intersectionality and Feminist political theory (e.g., Simone de Beauvoir)
-- Post-colonial political philosophy (e.g., Frantz Fanon)
-- Hannah Arendt on Totalitarianism and the "banality of evil"
+## Chapter 5: Power, Ideology, and Political Reality
+**Key concepts**: Power, authority, realpolitik, bureaucracy, propaganda, ideology, hegemony, obedience, complicity, charismatic authority, legal-rational authority, and accountability.
+**Practice questions**: Can a leader be both moral and effective? How do institutions make power seem normal? When does obedience become complicity? What makes propaganda different from persuasion?
+**Student output**: A civic power map showing who decides, who benefits, who is missing, what story is being told, and what forms of accountability exist.
+
+## Chapter 6: Democracy, Pluralism, and Disagreement
+**Key concepts**: Democracy, pluralism, public reason, civil disobedience, civic trust, polarization, populism, deliberation, identity, recognition, nationalism, and democratic erosion.
+**Practice questions**: What kinds of disagreement can democracy absorb? When is civil disobedience a democratic act? How should citizens argue with people who do not share their assumptions?
+**Student output**: A citizens' assembly report on a school, local, national, or global issue, including majority recommendation, minority report, tradeoffs, and principles used.
+
+## Chapter 7: Borders, Empire, Global Justice, and Climate
+**Key concepts**: Borders, citizenship, migration, colonialism, postcolonial critique, recognition, global inequality, aid, climate justice, historical responsibility, and intergenerational justice.
+**Practice questions**: Do borders protect justice or create exclusion? What do wealthy countries owe poorer countries? How should political responsibility work when harms cross generations and borders?
+**Student output**: A comparative policy memo applying at least two political theories to migration, climate adaptation, humanitarian aid, trade, or international conflict.
+
+## Chapter 8: Seminar, Texts, and Public Argument
+**Key concepts**: Argument reconstruction, steelmanning, primary text annotation, concept definition, objection, reply, seminar leadership, civic judgment, and public communication.
+**Practice questions**: What is a philosopher's central claim? Which premise is most vulnerable? What would have to be true for the opposing view to be partly right? How should public arguments handle uncertainty?
+**Student output**: A seminar portfolio with annotations, discussion questions, argument maps, revised views, and one public-facing essay or speech.
+
+## Capstone
+Students stage a public philosophy project: a mock constitutional convention, legitimacy trial, policy design lab, citizens' assembly, debate brief, podcast, op-ed series, or annotated speech. The final product must apply at least three political ideas to a real institutional problem and include a serious objection-and-reply section.
+
+## Assessment Ideas
+Use short argument maps, text annotations, seminar participation, civic case briefs, structured debates, policy memos, and reflective revisions. Assess students for accuracy, fairness to opposing views, clarity of concepts, quality of reasons, and willingness to revise after better evidence or argument.
+
+## Research Notes
+- Yale Open Courses, *Introduction to Political Philosophy*: https://oyc.yale.edu/political-science/plsc-114
+- Stanford Online High School, *Democracy, Freedom, Justice, and the Law*: https://onlinehighschool.stanford.edu/courses/2025/school-year/odfrl
+- Stanford Encyclopedia of Philosophy, political philosophy entries: https://plato.stanford.edu/contents.html
+- Jack Miller Center, American political tradition teaching resources: https://www.jackmillercenter.org/our-work/initiatives/founding-civics-initiative/teaching-resources-k-12/the-american-political-tradition

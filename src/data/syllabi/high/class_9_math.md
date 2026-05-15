@@ -1,52 +1,65 @@
 # Class 9 Math
-**ID**: `col-class-9-math` · **Discipline**: Maths · **Year**: 10 (ages 14–15)
+**ID**: `col-class-9-math` | **Discipline**: Maths | **Year**: 10 (ages 14-15)
 **Frameworks**: UK KS3/KS4 Year 9, India NCERT Class 9
 
-## Course Philosophy
-Year 9 mathematics requires high-level abstract thinking. Students are expected to manipulate complex algebraic expressions, solve simultaneous equations, and prove geometric theorems. This course acts as the foundation for the final years of high school mathematics (GCSE, A-Level, or equivalent).
+## Course Aim
+Build a secure bridge from middle-school arithmetic to high-school mathematical reasoning. Students strengthen algebraic manipulation, linear equations and functions, geometry, coordinate geometry, exponents, introductory polynomials, statistics, and probability while learning to explain methods clearly and check whether answers make sense.
 
-## Module 1: Number Systems & Surds (20%)
-- Understand the real number system: rational and irrational numbers
-- Locate irrational numbers (like √2, √3) on a number line
-- Laws of exponents (indices) for rational exponents (e.g., $x^{1/2} = \sqrt{x}$, $x^{-2} = 1/x^2$)
-- Simplify surds (radicals) and perform operations with them (e.g., $\sqrt{12} = 2\sqrt{3}$)
-- Rationalise denominators (e.g., $1/\sqrt{2} = \sqrt{2}/2$)
-- **Questions**: Surd simplification, rationalising denominators, fractional indices evaluation
+## Course Design Notes
+Class 9 maths should be structured, cumulative, and calm. Keep lessons balanced between worked examples, reasoning prompts, graph and diagram interpretation, and short mixed practice. Route questions here when students need foundations for GCSE/KS4, Common Core high school algebra and geometry, or NCERT Class 9 topics before moving into Class 10 exam mathematics.
 
-## Module 2: Polynomials & Factorisation (25%)
-- Understand polynomials in one variable and their degrees
-- Evaluate polynomials and use the Remainder Theorem and Factor Theorem
-- Factorise quadratic polynomials of the form ax² + bx + c by splitting the middle term
-- Factorise polynomials using algebraic identities:
-  - $(x+y)^2 = x^2 + 2xy + y^2$
-  - $(x-y)^2 = x^2 - 2xy + y^2$
-  - $x^2 - y^2 = (x-y)(x+y)$
-  - $(x+y)^3 = x^3 + y^3 + 3xy(x+y)$
-- **Questions**: Remainder/Factor theorem applications, complex quadratic factorisation, algebraic identity expansion
+## Chapter 1: Number Sense, Exponents, and Surds
+- **Key concepts**: Rational and irrational numbers, real number line, square roots, surds, laws of exponents, zero and negative powers, standard form, estimation, and reasonableness checks.
+- **Practice questions**: Classify numbers; simplify radicals and powers; estimate irrational values; compare exact and decimal forms.
+- **Student output**: A number-system map with worked examples showing exact form, approximate value, and common error checks.
 
-## Module 3: Coordinate Geometry & Linear Equations (20%)
-- The Cartesian plane: plotting points in all four quadrants
-- Linear equations in two variables (ax + by + c = 0)
-- Graphing linear equations and understanding that every point on the line is a solution
-- Solving simultaneous linear equations graphically and algebraically (substitution and elimination methods)
-- Word problems leading to simultaneous linear equations
-- **Questions**: Graphing lines from equations, solving simultaneous equations, word problem translation
+## Chapter 2: Algebra Foundations and Expressions
+- **Key concepts**: Variables, terms, coefficients, like terms, substitution, expansion, collection of terms, algebraic identities, rearranging formulas, and translating verbal statements into expressions.
+- **Practice questions**: Simplify expressions; expand brackets; evaluate formulas; write expressions for patterns and word problems.
+- **Student output**: An algebra skills portfolio with corrected examples and a short reflection on which transformations preserve equivalence.
 
-## Module 4: Geometry & Proof (20%)
-- Lines and Angles: Intersecting lines, parallel lines and transversals, angle sum property of triangles
-- Triangles: Criteria for congruence of triangles (SAS, ASA, SSS, RHS), inequalities in a triangle
-- Quadrilaterals: Properties of parallelograms, rectangles, rhombuses, squares, and kites; Mid-point theorem
-- Circles: Chords, subtended angles, cyclic quadrilaterals
-- Introduction to geometric proof (Euclidean geometry axioms and postulates)
-- **Questions**: Angle calculations with parallel lines/transversals, congruence proofs, cyclic quadrilateral angle finding
+## Chapter 3: Linear Equations and Inequalities
+- **Key concepts**: One-step and multi-step equations, equations with brackets and fractions, simple inequalities, number-line solution sets, forming equations from contexts, and checking solutions.
+- **Practice questions**: Solve equations; solve and graph inequalities; model perimeter, age, money, or rate problems with linear equations.
+- **Student output**: A problem-solving set where each solution includes setup, algebraic method, answer, and reasonableness check.
 
-## Module 5: Mensuration (Surface Area & Volume) & Statistics (15%)
-- Surface areas and volumes of cubes, cuboids, spheres (including hemispheres), and right circular cylinders/cones
-- Statistics: Collection and presentation of data (frequency distribution tables)
-- Graphical representation: Bar graphs, histograms, and frequency polygons
-- Measures of central tendency: Mean, median, and mode of ungrouped data
-- **Questions**: Complex surface area/volume calculations (composite solids), mean/median calculations from raw data
+## Chapter 4: Linear Functions and Graphs
+- **Key concepts**: Coordinate plane, slope or gradient, intercepts, linear equations in two variables, tables of values, graphing lines, proportional relationships, and interpreting rate of change.
+- **Practice questions**: Plot points; graph linear equations; identify gradient and intercept; connect a table, rule, graph, and context.
+- **Student output**: A linear functions investigation comparing two real-world plans, journeys, or prices using graphs and equations.
 
-## Stretch Zone
-- Heron's formula for the area of a triangle
-- Introduction to basic probability concepts (empirical probability)
+## Chapter 5: Geometry Basics and Proof
+- **Key concepts**: Points, lines, angles, parallel lines and transversals, triangle angle sums, congruence criteria, quadrilateral properties, midpoint theorem, and introductory proof language.
+- **Practice questions**: Find missing angles; justify triangle congruence; prove a simple quadrilateral property; identify assumptions in a diagram.
+- **Student output**: A geometry proof booklet with diagrams, givens, claims, reasons, and revised solutions after feedback.
+
+## Chapter 6: Coordinate Geometry and Measurement
+- **Key concepts**: Distance on a grid, midpoint, perimeter and area on coordinate axes, scale drawings, Pythagorean reasoning, surface area, volume, compound shapes, and units.
+- **Practice questions**: Find lengths and midpoints; calculate areas from coordinates; solve surface area and volume problems; convert units.
+- **Student output**: A coordinate design task that uses measured lengths, area, perimeter, and a written justification of choices.
+
+## Chapter 7: Polynomials and Factorisation Introduction
+- **Key concepts**: Polynomial vocabulary, degree, zeros at an introductory level, addition and subtraction of polynomials, multiplication by monomials and binomials, common factors, and basic quadratic factorisation.
+- **Practice questions**: Identify degree and terms; expand products; factor common terms; factor simple quadratics; use identities to check work.
+- **Student output**: A factorisation decision chart that explains when to use common factors, identities, or trial factor pairs.
+
+## Chapter 8: Data, Probability, and Mathematical Communication
+- **Key concepts**: Data collection, frequency tables, bar charts, histograms, mean, median, mode, range, outliers, simple probability, experimental probability, theoretical probability, and critique of claims.
+- **Practice questions**: Choose a graph; calculate summary statistics; compare two data sets; compute simple probabilities; explain uncertainty.
+- **Student output**: A data report using a small class or public data set, with graphs, statistics, probability statements, and limitations.
+
+## Capstone
+Model a school, community, or personal-planning question with Class 9 mathematics. Students must use algebra, at least one linear graph, a geometric or measurement component, and a data or probability claim, then present the model, assumptions, calculations, and limitations.
+
+## Assessment Ideas
+- Short weekly fluency checks on algebra, exponents, graphing, and geometry facts.
+- Mixed reasoning tasks graded on setup, method, diagram or graph accuracy, and explanation.
+- Error-analysis prompts where students diagnose a wrong solution and repair it.
+- Chapter tests that combine routine procedures with unfamiliar applications.
+- Capstone graded on model choice, mathematical accuracy, communication, and reflection on assumptions.
+
+## Research Notes
+- Common Core high school mathematics standards: https://www.thecorestandards.org/Math/
+- UK National Curriculum mathematics key stage 4: https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study
+- NCERT Class 9 Mathematics: https://ncert.nic.in/textbook.php?iemh1=0-12
+- NCTM Principles to Actions overview: https://www.nctm.org/PrinciplestoActions/

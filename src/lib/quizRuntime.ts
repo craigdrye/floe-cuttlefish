@@ -225,6 +225,16 @@ function makeGeneratedDistractor(label: string, reason: string): Answer {
 export function ensureSixAnswerChoices(question: Question): Question {
   const answerIds = ['a', 'b', 'c', 'd', 'e', 'f'] as const
 
+  if (question.topic === 'Fun' && (Array.isArray(question.media) ? question.media.length > 0 : Boolean(question.media))) {
+    return {
+      ...question,
+      answers: question.answers.map((answer, index) => ({
+        ...answer,
+        id: answerIds[index] ?? answer.id,
+      })),
+    }
+  }
+
   if (question.answers.length >= 6) {
     return {
       ...question,
@@ -641,6 +651,8 @@ export function rewordQuestion(base: Question, mode: number): Question {
       'Story version. Think like the person who will maintain the system later. Identify the constraint, choose the simplest useful tool, and name the tradeoff.',
     Research:
       'Story version. Read the claim like a scientist: what question is being asked, what evidence supports it, and what uncertainty remains?',
+    'Climate Science':
+      'Story version. Follow the climate system carefully: separate weather from climate, forcing from feedback, and uncertainty from ignorance.',
     Medical:
       'Story version. Start with safety, then evidence. Identify the risk, the diagnostic idea, and what decision the information supports.',
     'Series 86':

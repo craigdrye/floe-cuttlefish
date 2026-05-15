@@ -1,0 +1,311 @@
+.present-shell {
+  max-width: 1080px;
+}
+
+.present-layout {
+  display: grid;
+  gap: 14px;
+}
+
+.present-hero,
+.present-stage,
+.present-result {
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.present-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+}
+
+.present-hero h2,
+.present-panel h2 {
+  margin: 0 0 6px;
+  color: var(--ocean-deep);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.present-hero p:not(.eyebrow) {
+  margin: 0;
+  color: #3d6058;
+  line-height: 1.45;
+}
+
+.present-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.present-actions button,
+.present-result button,
+.present-panel button {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid rgba(31, 122, 98, 0.18);
+  border-radius: var(--r-full);
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ocean-deep);
+  font-weight: 800;
+  padding: 0 14px;
+}
+
+.present-stage {
+  position: relative;
+  overflow: hidden;
+  min-height: 560px;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 18% 16%, rgba(251, 191, 36, 0.24), transparent 28%),
+    radial-gradient(circle at 80% 26%, rgba(167, 139, 250, 0.2), transparent 30%),
+    linear-gradient(180deg, rgba(255, 253, 248, 0.82), rgba(232, 248, 245, 0.64));
+}
+
+.present-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3d6058;
+  font-weight: 800;
+}
+
+/* Light-stage override for the shared rules panel */
+.present-stage .game-rules {
+  border-color: rgba(11, 29, 46, 0.12);
+  background: rgba(255, 255, 255, 0.55);
+  color: #284e47;
+  margin-bottom: 4px;
+}
+.present-stage .game-rules > summary { color: var(--ocean-deep); }
+.present-stage .game-rules[open] > summary { border-bottom-color: rgba(11, 29, 46, 0.1); }
+.present-stage .game-rules strong { color: var(--ocean-deep); }
+
+.gift-wrap {
+  min-height: 330px;
+  display: grid;
+  place-items: center;
+  padding: 18px 0;
+}
+
+.gift-box {
+  width: min(310px, 78vw);
+  height: 260px;
+  position: relative;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transform-origin: 50% 100%;
+  animation: giftWiggle 2.2s ease-in-out infinite;
+}
+
+.gift-lid,
+.gift-body,
+.gift-ribbon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: var(--shadow-md);
+}
+
+.gift-lid {
+  top: 38px;
+  width: 250px;
+  height: 58px;
+  border-radius: 14px 14px 8px 8px;
+  background: #ff6b6b;
+}
+
+.gift-body {
+  top: 92px;
+  width: 222px;
+  height: 134px;
+  border-radius: 8px 8px 18px 18px;
+  background: linear-gradient(135deg, #f472b6, #ff6b6b);
+}
+
+.gift-ribbon {
+  top: 38px;
+  width: 44px;
+  height: 188px;
+  background: #fbbf24;
+  z-index: 2;
+}
+
+.gift-tag {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: var(--r-full);
+  background: #fffdf8;
+  color: var(--ocean-deep);
+  font-weight: 900;
+  box-shadow: var(--shadow-sm);
+  z-index: 3;
+}
+
+.gift-reveal {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(240px, 360px) 1fr;
+  align-items: center;
+  gap: 22px;
+}
+
+.gift-object-card {
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #fffdf8;
+  border: 1px solid rgba(11, 29, 46, 0.1);
+  box-shadow: var(--shadow-md);
+}
+
+.gift-object-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gift-question h3 {
+  margin: 0 0 8px;
+  color: var(--ocean-deep);
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.gift-question p:not(.eyebrow) {
+  margin: 0;
+  color: #345f58;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.present-answer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.present-answer-grid button {
+  min-height: 54px;
+  padding: 12px;
+  border: 1px solid rgba(11, 29, 46, 0.1);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--ocean-deep);
+  font-weight: 850;
+  text-align: left;
+}
+
+.present-answer-grid button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  background: #fff;
+}
+
+.present-answer-grid button.correct {
+  background: var(--success-soft);
+  border-color: rgba(16, 185, 129, 0.45);
+}
+
+.present-answer-grid button.wrong {
+  background: var(--error-soft);
+  border-color: rgba(244, 63, 94, 0.45);
+}
+
+.present-result {
+  margin-top: 14px;
+  padding: 14px;
+}
+
+.present-result div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.present-result p {
+  margin: 8px 0 12px;
+  color: #3d6058;
+  line-height: 1.45;
+}
+
+.result-correct strong { color: #047857; }
+.result-wrong strong { color: #be123c; }
+
+.present-panel {
+  padding: 18px;
+  border-radius: var(--r-lg);
+  background: var(--glass-bg-strong);
+}
+
+@keyframes giftWiggle {
+  0%, 100% { transform: rotate(0deg) translateY(0); }
+  35% { transform: rotate(-2deg) translateY(-3px); }
+  70% { transform: rotate(2deg) translateY(-1px); }
+}
+
+body.deep-ocean .present-hero,
+body.deep-ocean .present-stage,
+body.deep-ocean .present-result,
+body.deep-ocean .present-panel {
+  background: rgba(8, 31, 45, 0.78);
+  border-color: rgba(125, 211, 252, 0.16);
+}
+
+body.deep-ocean .present-hero h2,
+body.deep-ocean .present-panel h2,
+body.deep-ocean .gift-question h3,
+body.deep-ocean .present-score,
+body.deep-ocean .present-answer-grid button {
+  color: #e7fbff;
+}
+
+body.deep-ocean .present-hero p:not(.eyebrow),
+body.deep-ocean .gift-question p:not(.eyebrow),
+body.deep-ocean .present-result p {
+  color: #b8e4e8;
+}
+
+body.deep-ocean .present-answer-grid button {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+@media (max-width: 720px) {
+  .present-hero,
+  .gift-reveal {
+    grid-template-columns: 1fr;
+  }
+
+  .present-hero {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .present-actions {
+    justify-content: flex-start;
+  }
+
+  .present-answer-grid {
+    grid-template-columns: 1fr;
+  }
+}

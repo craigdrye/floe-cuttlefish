@@ -1,56 +1,65 @@
 # Algebra 1 Collections
 **Covers**: `col-algebra-1`, `col-algebra-1-ny-next-gen`, `col-get-ready-for-algebra-1`, `col-eureka-math-algebra-i`
-**Discipline**: Maths · **Year**: 10 (ages 14–15)
+**Discipline**: Maths | **Year**: 10 (ages 14-15)
 
-## Overview
-Combined syllabus for US-aligned Algebra 1 collections. These target high school **Common Core Algebra I**.
+## Course Aim
+Build a steady Algebra 1 course where students learn to see structure, solve with reasons, model real situations, and move confidently among expressions, equations, tables, graphs, and verbal descriptions. The course balances procedural fluency with explanation, estimation, and assessment-ready problem solving.
 
-## Domain A: Seeing Structure in Expressions (20%)
-- Interpret parts of an expression, such as terms, factors, and coefficients
-- Use the structure of an expression to identify ways to rewrite it (e.g., see $x^4 - y^4$ as $(x^2)^2 - (y^2)^2$)
-- Choose and produce an equivalent form of an expression to reveal and explain properties of the quantity represented by the expression
-- Factor a quadratic expression to reveal the zeros of the function it defines
-- Complete the square in a quadratic expression to reveal the maximum or minimum value of the function it defines
-- Use the properties of exponents to transform expressions for exponential functions
-- **Questions**: Identifying expression structure, factoring quadratics (a=1 and a>1), completing the square
+## Course Design Notes
+Use Common Core high school algebra and functions standards as the spine, with enough review time for students arriving from different middle-school pathways. Route questions here when they involve expressions, linear equations, inequalities, functions, systems, exponents, quadratics, or introductory data modeling. Keep practice cumulative: every chapter should ask students to explain what a solution means and whether it is reasonable in context.
 
-## Domain B: Arithmetic with Polynomials and Rational Expressions (15%)
-- Understand that polynomials form a system analogous to the integers, namely, they are closed under the operations of addition, subtraction, and multiplication; add, subtract, and multiply polynomials
-- Identify zeros of polynomials when suitable factorizations are available, and use the zeros to construct a rough graph of the function defined by the polynomial
-- Prove polynomial identities and use them to describe numerical relationships
-- **Questions**: Adding/subtracting/multiplying polynomials, finding zeros from factored form
+## Chapter 1: Algebraic Habits and Expressions
+- **Key concepts**: Variables, terms, factors, coefficients, order of operations, properties of operations, equivalent expressions, substitution, units, and expression structure.
+- **Practice questions**: Identify parts of an expression; evaluate formulas; rewrite expressions to reveal a useful quantity; check equivalence with substitution.
+- **Student output**: An expression-analysis page that translates one context into a formula, evaluates it for several inputs, and explains each term.
 
-## Domain C: Creating Equations & Reasoning with Equations/Inequalities (30%)
-- Create equations and inequalities in one variable and use them to solve problems (linear, quadratic, and exponential)
-- Create equations in two or more variables to represent relationships between quantities; graph equations on coordinate axes with labels and scales
-- Rearrange formulas to highlight a quantity of interest (e.g., solve $d = rt$ for $t$)
-- Understand solving an equation as a process of reasoning and explain the reasoning
-- Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters
-- Solve quadratic equations in one variable (by inspection, taking square roots, completing the square, the quadratic formula, and factoring)
-- Prove that, given a system of two equations in two variables, replacing one equation by the sum of that equation and a multiple of the other produces a system with the same solutions
-- Solve systems of linear equations exactly and approximately (e.g., with graphs)
-- Graph the solutions to a linear inequality in two variables as a half-plane
-- **Questions**: Literal equations, quadratic formula, solving systems (elimination/substitution), graphing inequalities
+## Chapter 2: Linear Equations and Literal Equations
+- **Key concepts**: One-variable equations, inverse operations, distributive property, equations with variables on both sides, identities, no-solution cases, formulas, and solving for a chosen variable.
+- **Practice questions**: Solve multi-step equations; justify each algebraic move; rearrange formulas such as distance, temperature, interest, or geometry relationships.
+- **Student output**: A solution notebook entry showing two equation solutions with annotated reasoning and one literal-equation rearrangement.
 
-## Domain D: Interpreting and Building Functions (25%)
-- Understand that a function from one set (domain) to another set (range) assigns to each element of the domain exactly one element of the range
-- Use function notation, evaluate functions for inputs in their domains, and interpret statements that use function notation in terms of a context
-- Recognize that sequences are functions, sometimes defined recursively
-- For a function that models a relationship between two quantities, interpret key features of graphs and tables (intercepts; intervals where the function is increasing, decreasing, positive, or negative; relative maximums and minimums; symmetries; end behavior)
-- Calculate and interpret the average rate of change of a function over a specified interval
-- Graph functions expressed symbolically and show key features of the graph (linear, quadratic, piecewise-defined, absolute value, exponential)
-- Write a function that describes a relationship between two quantities (linear and exponential)
-- Identify the effect on the graph of replacing $f(x)$ by $f(x) + k$, $k f(x)$, $f(kx)$, and $f(x + k)$
-- **Questions**: Evaluating $f(x)$, finding domain/range, identifying key graph features (vertex, intercepts), function transformations
+## Chapter 3: Inequalities and Constraint Reasoning
+- **Key concepts**: Inequality symbols, solution sets, number-line graphs, compound inequalities, absolute-value distance ideas, constraints, and interpreting boundaries.
+- **Practice questions**: Solve and graph linear inequalities; decide when to reverse the inequality sign; write constraints from real-world limits.
+- **Student output**: A constraint brief for a budget, time, or design scenario, including inequalities, graph, and written interpretation.
 
-## Domain E: Linear, Quadratic, and Exponential Models (10%)
-- Distinguish between situations that can be modeled with linear functions and with exponential functions
-- Prove that linear functions grow by equal differences over equal intervals, and that exponential functions grow by equal factors over equal intervals
-- Construct linear and exponential functions given a graph, a description of a relationship, or two input-output pairs
-- Observe using graphs and tables that a quantity increasing exponentially eventually exceeds a quantity increasing linearly or quadratically
-- Interpret the parameters in a linear or exponential function in terms of a context
-- **Questions**: Linear vs exponential word problems, writing exponential equations ($y = ab^x$)
+## Chapter 4: Functions, Tables, and Graphs
+- **Key concepts**: Function definition, domain and range, function notation, independent and dependent variables, graph features, intercepts, increasing and decreasing intervals, and average rate of change.
+- **Practice questions**: Decide whether a relation is a function; evaluate and interpret f(x); match contexts to tables and graphs; describe key graph features.
+- **Student output**: A function profile that represents one relationship with a table, graph, rule or description, and domain statement.
 
-## Stretch Zone
-- Introduction to rational and radical equations
-- Arithmetic and geometric sequences (explicit and recursive formulas)
+## Chapter 5: Linear Functions and Data Models
+- **Key concepts**: Slope, rate of change, intercepts, slope-intercept form, point-slope form, standard form, direct variation, scatterplots, trend lines, residuals, and correlation limits.
+- **Practice questions**: Write linear equations from graphs, points, tables, or contexts; interpret slope and intercept; fit and critique a linear model for data.
+- **Student output**: A linear-model memo using a small dataset, with graph, equation, parameter interpretation, and warning about overclaiming.
+
+## Chapter 6: Systems of Equations and Inequalities
+- **Key concepts**: Systems as simultaneous constraints, graphing, substitution, elimination, equivalent systems, solution types, linear inequalities in two variables, and feasible regions.
+- **Practice questions**: Solve systems exactly and approximately; compare methods; identify one, none, or infinitely many solutions; model break-even or mixture situations.
+- **Student output**: A systems task board with one graphing solution, one substitution solution, one elimination solution, and a context interpretation.
+
+## Chapter 7: Exponents, Polynomials, and Exponential Patterns
+- **Key concepts**: Integer exponents, exponent rules, scientific notation, polynomial addition, subtraction, and multiplication, linear versus exponential growth, sequences, and parameters in exponential models.
+- **Practice questions**: Simplify expressions with exponents; multiply polynomials; classify growth from tables; write simple exponential functions from contexts.
+- **Student output**: A growth comparison showing how a linear pattern and an exponential pattern behave across a table, graph, and written explanation.
+
+## Chapter 8: Quadratics and Algebra 1 Modeling Studio
+- **Key concepts**: Quadratic functions, parabolas, vertex, intercepts, standard and factored forms, factoring, completing the square as enrichment, quadratic formula as appropriate, and data-linked modeling.
+- **Practice questions**: Factor quadratics; find zeros from factored form; identify vertex and intercepts; solve projectile, area, or revenue-style problems.
+- **Student output**: A quadratic model poster or short report connecting a table, graph, equation, and solution interpretation for one situation.
+
+## Capstone
+Students complete an Algebra 1 modeling portfolio built around one practical question such as pricing, motion, population change, design constraints, or school data. The final product must include at least one linear model, one system or inequality constraint, one nonlinear pattern or quadratic, a graph, a written explanation, and a short reflection on model limits.
+
+## Assessment Ideas
+- Short fluency checks for solving, rewriting, graphing, and function notation.
+- Error-analysis prompts where students diagnose an invalid algebraic move.
+- Mixed representation tasks requiring an equation, graph, table, and contextual sentence.
+- Data and modeling tasks scored on setup, interpretation, reasonableness, and communication.
+- Capstone graded on mathematical accuracy, representation quality, cumulative skill use, and clear model limitations.
+
+## Research Notes
+- Common Core State Standards for High School Mathematics: https://www.thecorestandards.org/Math/
+- Illustrative Mathematics Algebra 1 course resources: https://illustrativemathematics.org/math-curriculum/high-school/
+- NCTM Principles to Actions and classroom resources: https://www.nctm.org/standards-and-positions/principles-to-actions/
+- New York State Next Generation Mathematics Learning Standards: https://www.nysed.gov/curriculum-instruction/mathematics-learning-standards

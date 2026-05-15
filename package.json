@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "audit:career": "node scripts/audit_career_catalog.cjs",
     "mine:openlogic": "python3 scripts/mine_openlogic.py",
     "mine:webwork-opl": "python3 scripts/mine_webwork_opl.py",
     "mine:opendsa": "python3 scripts/mine_opendsa.py",

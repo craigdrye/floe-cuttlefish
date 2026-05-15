@@ -1,14 +1,20 @@
 import type { AgeGroup, StageDetail } from '../data/ageCatalog/types'
+import type { CourseTopicId } from '../lib/coursePersonalization'
 
-export type AppScreen = 'map' | 'lesson' | 'profile' | 'questionnaire'
+export type AppScreen = 'hub' | 'courses' | 'games' | 'map' | 'lesson' | 'profile' | 'questionnaire' | 'pong' | 'invaders' | 'present' | 'slots' | 'fight' | 'wordle' | 'quordle' | 'octordle' | 'connections' | 'letterboxed' | 'waffle' | 'g2048' | 'g2248' | 'nerdle' | 'sumplete' | 'sudoku' | 'kakuro' | 'rikudo'
 export type AppMode = 'daily' | 'practice' | 'doom' | 'podcast' | 'review'
 export type Mood = 'fired' | 'good' | 'cozy' | 'curious' | null
+export type AdultFocusOption = 'Geeky Fun' | 'Work Skills' | 'Technical Qualifications' | 'Interview Prep'
 
 export interface UserProfile {
   username: string
   email?: string
   isGuest: boolean
   questionnaireAnswers: Record<string, string>
+  onboardingAge?: number
+  interests?: CourseTopicId[]
+  adultFocus?: AdultFocusOption[]
+  onboardingComplete?: boolean
 }
 
 export interface Achievement {
@@ -75,6 +81,7 @@ export interface ProgressState {
 export interface UISlice {
   showWelcome: boolean
   showAudience: boolean
+  showInterests: boolean
   showProfile: boolean
   showQuestionnaire: boolean
   screen: AppScreen
@@ -87,6 +94,7 @@ export interface UISlice {
 
   setShowWelcome: (show: boolean) => void
   setShowAudience: (show: boolean) => void
+  setShowInterests: (show: boolean) => void
   setShowProfile: (show: boolean) => void
   setShowQuestionnaire: (show: boolean) => void
   setScreen: (screen: AppScreen) => void
@@ -136,6 +144,12 @@ export interface QuizSlice {
   selectedAge: AgeGroup
   selectedStageDetail: StageDetail | null
   selectedDiscipline: string
+  onboardingAge: number
+  onboardingUsername: string
+  onboardingEmail: string
+  onboardingMode: 'games' | 'quizzes' | 'both'
+  selectedInterests: CourseTopicId[]
+  selectedAdultFocus: AdultFocusOption[]
   index: number
   selectedAnswerId: string | null
   showHint: boolean
@@ -155,6 +169,14 @@ export interface QuizSlice {
   setSelectedAge: (age: AgeGroup) => void
   setSelectedStageDetail: (detail: StageDetail | null) => void
   setSelectedDiscipline: (discipline: string) => void
+  setOnboardingAge: (age: number) => void
+  setOnboardingUsername: (username: string) => void
+  setOnboardingEmail: (email: string) => void
+  setOnboardingMode: (mode: 'games' | 'quizzes' | 'both') => void
+  setSelectedInterests: (interests: CourseTopicId[]) => void
+  toggleSelectedInterest: (interest: CourseTopicId) => void
+  setSelectedAdultFocus: (focus: AdultFocusOption[]) => void
+  toggleSelectedAdultFocus: (focus: AdultFocusOption) => void
   setIndex: (index: number | ((current: number) => number)) => void
   setSelectedAnswerId: (id: string | null) => void
   setShowHint: (show: boolean | ((current: boolean) => boolean)) => void

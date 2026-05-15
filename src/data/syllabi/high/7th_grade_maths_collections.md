@@ -1,59 +1,65 @@
 # 7th Grade Maths Collections
 **Covers**: `col-7th-grade-math`, `col-7th-grade-ny-next-gen`, `col-get-ready-for-7th-grade`
-**Discipline**: Maths · **Year**: 7 (ages 11–12)
+**Discipline**: Maths | **Year**: 7 (ages 11-12)
 
-## Overview
-Combined syllabus for US-aligned 7th grade maths collections. These target **Common Core Grade 7**.
+## Course Aim
+Build confident, flexible middle-grade mathematicians who can calculate with rational numbers, reason with ratios and percents, use expressions and equations to solve problems, and make sense of geometry, data, and chance. Students should leave the course with stronger number sense, better problem-reading habits, and a clear bridge into 8th grade algebra and functions.
 
-## Domain A: Ratios and Proportional Relationships (25%)
-- Compute unit rates associated with ratios of fractions (e.g., if a person walks 1/2 mile in each 1/4 hour, compute the unit rate as the complex fraction 1/2 / 1/4 miles per hour)
-- Recognize and represent proportional relationships between quantities
-- Decide whether two quantities are in a proportional relationship (e.g., by testing for equivalent ratios in a table or graphing on a coordinate plane and observing whether the graph is a straight line through the origin)
-- Identify the constant of proportionality (unit rate) in tables, graphs, equations, diagrams, and verbal descriptions
-- Represent proportional relationships by equations (e.g., if total cost t is proportional to the number n of items purchased at a constant price p, the relationship is t = pn)
-- Explain what a point (x, y) on the graph of a proportional relationship means, paying special attention to the points (0, 0) and (1, r) where r is the unit rate
-- Use proportional relationships to solve multistep ratio and percent problems (simple interest, tax, markups/markdowns, gratuities/commissions, fees, percent increase/decrease, percent error)
-- **Questions**: Complex unit rates, identifying proportional graphs, finding constant of proportionality, percent error, simple interest
+## Course Design Notes
+Keep the course structured, practice-forward, and concrete before abstract. Route questions here when they involve rational number operations, proportional relationships, percent change, scale, linear expressions, one- and two-step equations or inequalities, angle and circle problems, sampling, probability, or multistep word problems. Students should regularly explain why a method works, not just produce an answer.
 
-## Domain B: The Number System (20%)
-- Apply and extend previous understandings of addition and subtraction to add and subtract rational numbers; represent addition and subtraction on a horizontal or vertical number line diagram
-- Understand p + q as the number located a distance |q| from p, in the positive or negative direction
-- Show that the distance between two rational numbers on the number line is the absolute value of their difference
-- Apply and extend previous understandings of multiplication and division and of fractions to multiply and divide rational numbers
-- Understand that integers can be divided, provided that the divisor is not zero, and every quotient of integers (with non-zero divisor) is a rational number
-- Convert a rational number to a decimal using long division; know that the decimal form of a rational number terminates in 0s or eventually repeats
-- Solve real-world and mathematical problems involving the four operations with rational numbers
-- **Questions**: Adding/subtracting negative numbers on a number line, absolute value distance, long division to repeating decimals, complex rational arithmetic
+## Chapter 1: Rational Number Foundations
+- **Key concepts**: Integers, fractions, decimals, opposites, absolute value, ordering rational numbers, number-line models, and distance between numbers.
+- **Practice questions**: Compare rational numbers; place positives and negatives on number lines; interpret absolute value as distance; explain signs in real contexts.
+- **Student output**: A rational-number reference page with number-line examples, sign rules in student language, and two corrected error examples.
 
-## Domain C: Expressions and Equations (20%)
-- Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients
-- Understand that rewriting an expression in different forms in a problem context can shed light on the problem and how the quantities in it are related
-- Solve multi-step real-life and mathematical problems posed with positive and negative rational numbers in any form (whole numbers, fractions, and decimals), using tools strategically
-- Use variables to represent quantities in a real-world or mathematical problem, and construct simple equations and inequalities to solve problems by reasoning about the quantities
-- Solve word problems leading to equations of the form px + q = r and p(x + q) = r
-- Solve word problems leading to inequalities of the form px + q > r or px + q < r; graph the solution set
-- **Questions**: Factoring linear expressions (e.g., 2x + 4 = 2(x+2)), solving 2-step equations with negatives, solving and graphing 2-step inequalities
+## Chapter 2: Operations With Rational Numbers
+- **Key concepts**: Adding, subtracting, multiplying, and dividing rational numbers; fraction and decimal fluency; additive inverses; distributive thinking; and reasonableness checks.
+- **Practice questions**: Compute with positive and negative fractions and decimals; convert fractions to terminating or repeating decimals; solve real-world problems with all four operations.
+- **Student output**: A mixed rational-number problem set with written checks that estimate whether each answer is reasonable.
 
-## Domain D: Geometry (15%)
-- Solve problems involving scale drawings of geometric figures, including computing actual lengths and areas from a scale drawing and reproducing a scale drawing at a different scale
-- Draw (freehand, with ruler and protractor, and with technology) geometric shapes with given conditions (focus on constructing triangles)
-- Describe the two-dimensional figures that result from slicing three-dimensional figures
-- Know the formulas for the area and circumference of a circle and use them to solve problems; give an informal derivation of the relationship between the circumference and area of a circle
-- Use facts about supplementary, complementary, vertical, and adjacent angles in a multi-step problem to write and solve simple equations for an unknown angle in a figure
-- Solve real-world and mathematical problems involving area, volume and surface area of two- and three-dimensional objects composed of triangles, quadrilaterals, polygons, cubes, and right prisms
-- **Questions**: Scale drawing calculations, slicing 3D figures, area/circumference of circles, angle relationship equations, volume of prisms
+## Chapter 3: Ratios, Rates, and Proportional Relationships
+- **Key concepts**: Equivalent ratios, unit rates, complex fractions, proportional tables, graphs through the origin, constants of proportionality, and equations of the form y = kx.
+- **Practice questions**: Find unit rates; decide whether a table, graph, equation, or story is proportional; identify and interpret the constant of proportionality.
+- **Student output**: A proportional-relationship poster connecting one situation to a table, graph, equation, and written explanation.
 
-## Domain E: Statistics and Probability (20%)
-- Understand that statistics can be used to gain information about a population by examining a sample of the population; generalizations are valid only if the sample is representative
-- Use data from a random sample to draw inferences about a population with an unknown characteristic
-- Informally assess the degree of visual overlap of two numerical data distributions with similar variabilities
-- Understand that the probability of a chance event is a number between 0 and 1
-- Approximate the probability of a chance event by collecting data on the chance process that produces it (experimental probability)
-- Develop a probability model and use it to find probabilities of events
-- Find probabilities of compound events using organized lists, tables, tree diagrams, and simulation
-- **Questions**: Validating sample bias, drawing inferences from box plots, theoretical vs experimental probability, tree diagrams for compound events
+## Chapter 4: Percent and Proportion Problem Solving
+- **Key concepts**: Percent increase and decrease, tax, tips, discounts, markups, markdowns, simple interest, percent error, scale factors, and multi-step proportion strategies.
+- **Practice questions**: Solve discount and tax problems; compare percent changes; calculate simple interest; use proportions in recipe, map, and scale contexts.
+- **Student output**: A percent decision guide that shows at least four problem types, the setup used, and a short explanation of the answer in context.
 
-## Stretch Zone
-- Complex percent mixture problems
-- Systems of equations (introductory graphing)
-- Area of circles using exact values of pi (e.g., $16\pi$)
+## Chapter 5: Expressions, Equations, and Inequalities
+- **Key concepts**: Variables, terms, coefficients, like terms, properties of operations, equivalent expressions, expanding, factoring, two-step equations, equations with parentheses, and simple inequalities.
+- **Practice questions**: Combine like terms; expand and factor linear expressions; solve equations such as px + q = r and p(x + q) = r; graph inequality solutions.
+- **Student output**: An equation-solving notebook page that shows balanced steps, inverse operations, and a check for each solution.
+
+## Chapter 6: Geometry, Scale, and Measurement
+- **Key concepts**: Scale drawings, triangles, angle relationships, circles, circumference, area, composite figures, surface area, volume, prisms, and slices of three-dimensional figures.
+- **Practice questions**: Solve scale drawing problems; find unknown angle measures; use circle formulas; calculate area, surface area, and volume in practical contexts.
+- **Student output**: A geometry design sheet with a scale drawing, measurements, area or volume calculations, and labels that make the reasoning easy to follow.
+
+## Chapter 7: Statistics, Sampling, and Probability
+- **Key concepts**: Populations, samples, random sampling, bias, measures of center and variability, comparing distributions, probability from 0 to 1, experimental probability, theoretical probability, compound events, lists, tables, tree diagrams, and simulations.
+- **Practice questions**: Judge whether a sample is fair; compare two data sets; estimate probability from experiments; find probabilities of simple and compound events.
+- **Student output**: A survey or probability mini-report with data, a display, a claim, and a note about what the evidence can and cannot show.
+
+## Chapter 8: Mathematical Problem-Solving Studio
+- **Key concepts**: Reading carefully, choosing a representation, drawing diagrams, making tables, working backward, checking units, estimating, explaining errors, and connecting arithmetic, algebra, geometry, and data.
+- **Practice questions**: Solve mixed multi-step problems; identify missing information; compare two solution strategies; revise incorrect work with a clear explanation.
+- **Student output**: A problem-solving portfolio with three revised problems: one proportional, one algebraic, and one geometry or data problem.
+
+## Capstone
+Students design and solve a realistic planning problem, such as a school event, classroom redesign, fundraiser, game analysis, or local travel plan. The final product should include rational-number calculations, proportional reasoning, at least one percent or scale component, a table or graph, and a written explanation of how the answer was checked.
+
+## Assessment Ideas
+- Frequent short fluency checks on rational numbers, ratios, percents, and equations.
+- Error-analysis prompts where students diagnose a sign error, proportion error, or equation-solving mistake.
+- Mixed problem sets scored for setup, calculation, explanation, and reasonableness.
+- Geometry and data mini-tasks that require a diagram, display, or model before a final answer.
+- A capstone rubric covering mathematical accuracy, representation choice, explanation, and revision after feedback.
+
+## Research Notes
+- Common Core Grade 7 mathematics standards emphasize ratios and proportional relationships, rational number operations, expressions and equations, geometry, statistics, and probability: https://www.corestandards.org/Math/Content/7/introduction/
+- Illustrative Mathematics Grade 7 tasks provide public examples of proportional reasoning, rational number, geometry, and statistics problems: https://tasks.illustrativemathematics.org/7
+- NCTM's Principles to Actions emphasizes reasoning, discourse, procedural fluency from conceptual understanding, and productive struggle: https://www.nctm.org/PrinciplestoActions/
+- EngageNY Grade 7 mathematics modules offer a public sequence for ratios, rational numbers, expressions, equations, percent, geometry, and statistics: https://www.engageny.org/resource/grade-7-mathematics

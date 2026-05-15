@@ -1,12 +1,12 @@
 # Priya's Brutal Surgeon's Quiz
 **ID**: `priyasBrutalSurgeonsQuiz` · **Discipline**: Healthcare / Surgery · **Level**: Expert consultant, department lead, surgical educator
 
-## Course Philosophy
+## Course Aim
 This syllabus is for an intentionally brutal expert surgical quiz. It is not medical-school recall, residency trivia, or generic clinical reasoning. The course tests whether a senior surgeon can recognize dangerous operative anatomy, misleading postoperative signals, and management tradeoffs when the easy-looking answer is unsafe.
 
 The ideal question feels like a hostile oral-board case, a morbidity-and-mortality trap, or a complex consultant phone call at 2:17 a.m. The answer should require disciplined prioritization: what is killing the patient, what anatomy is not yet proven, what test is falsely reassuring, what source is uncontrolled, what complication must be assumed until excluded, and what action is safest now.
 
-## Design Critique Incorporated
+## Course Design Notes
 - The generic `medical` syllabus was too broad and too junior; it covered triage, differential diagnosis, and safety in a way suitable for general clinical reasoning, not an expert surgical gauntlet.
 - The course needs specialty-specific surgical domains rather than generic healthcare topics.
 - Difficulty must come from multi-step reasoning, not longer wording or obscure vocabulary.
@@ -34,7 +34,7 @@ Questions should be written for adult experts, roughly 35+, who may already be a
 - Should test sequencing: resuscitation, diagnosis, source control, specialist escalation, and what not to do.
 - Example reasoning shape: identify a sentinel bleed, connect it to fistula-related arterial erosion, reject false reassurance from negative CTA, then choose angiography and ICU-level control.
 
-## Module 1: Hostile Operative Anatomy
+## Chapter 1: Hostile Operative Anatomy
 Focus on anatomy that punishes overconfidence.
 
 - Critical view failure in cholecystectomy
@@ -55,7 +55,7 @@ Question targets:
 - Recognize named danger zones from partial clues.
 - Reject blind clipping, blind clamping, broad energy use, and traction-as-navigation.
 
-## Module 2: Source Control and Postoperative Sepsis
+## Chapter 2: Source Control and Postoperative Sepsis
 Focus on the fact that antibiotics are not plumbing.
 
 - Contained anastomotic leak after colorectal surgery
@@ -74,7 +74,7 @@ Question targets:
 - Require escalation before collapse.
 - Test whether the learner can identify the dangerous miss in a crowded postoperative picture.
 
-## Module 3: HPB Catastrophes
+## Chapter 3: HPB Catastrophes
 Focus on high-consequence hepatobiliary and pancreatic traps.
 
 - Vasculobiliary injury after difficult cholecystectomy
@@ -94,7 +94,7 @@ Question targets:
 - Integrate bile leak, hepatic ischemia, sepsis, and vascular injury.
 - Reject false reassurance from transient stability or negative single-phase imaging.
 
-## Module 4: Vascular, Trauma, and Damage Control
+## Chapter 4: Vascular, Trauma, and Damage Control
 Focus on sequencing under hemorrhage and physiology failure.
 
 - Proximal vascular control before opening central hematomas
@@ -114,7 +114,7 @@ Question targets:
 - Know when not to open a hematoma.
 - Balance hemorrhage, thrombosis, perfusion, and source control.
 
-## Module 5: Anticoagulation, Coagulopathy, and Competing Catastrophes
+## Chapter 5: Anticoagulation, Coagulopathy, and Competing Catastrophes
 Focus on situations where every option can hurt the patient.
 
 - Mechanical mitral valve and emergency abdominal sepsis
@@ -133,7 +133,7 @@ Question targets:
 - Avoid all-or-nothing thinking.
 - Make learners state what is reversible, what is time-critical, and what can wait.
 
-## Module 6: Endocrine, Head-and-Neck, and Airway Traps
+## Chapter 6: Endocrine, Head-and-Neck, and Airway Traps
 Focus on small spaces where delay becomes catastrophe.
 
 - Loss of recurrent laryngeal nerve signal and staged thyroidectomy decisions
@@ -151,7 +151,7 @@ Question targets:
 - Test when to stop, stage, decompress, or call for immediate help.
 - Reject visually intact but functionally unsafe assumptions.
 
-## Module 7: Oncologic Surgical Judgment
+## Chapter 7: Oncologic Surgical Judgment
 Focus on operations where the margin, lymph basin, and sequencing matter more than speed.
 
 ### Cross-Cutting Cancer Principles
@@ -239,7 +239,7 @@ Question targets:
 - Distinguish technical resectability from oncologic strategy.
 - Make staging, margins, and nodal strategy drive the answer.
 
-## Module 8: Diagnostic Traps and False Reassurance
+## Chapter 8: Diagnostic Traps and False Reassurance
 These traps should appear repeatedly across modules.
 
 - Normal early swallow study after bariatric surgery does not exclude leak
@@ -259,19 +259,18 @@ Question targets:
 - Make the correct answer depend on the misleading clue being interpreted correctly.
 - Include overconfident junior interpretations that are plausible but dangerous.
 
-## Style and Tone
+## Course Voice
 The course voice should be strange, crisp, and memorable.
 
 - Priya is exacting, brilliant, clinically serious, and funny.
 - Silliness should vary: courtroom metaphors, noir suspects, tiny bureaucrats, cursed theatre, melodramatic organs, treacherous drains, smug vessels, chaotic interns, suspicious noodles, haunted checklists.
-- Goblins are allowed but should not dominate.
 - The joke must never obscure the decision.
 - Avoid gratuitous gore. Clinical urgency is enough.
 - Do not make wrong answers purely silly; at least two wrong answers should usually be plausible near-misses.
 - Do not make the correct answer obviously longer, more detailed, or more sober than the distractors.
 - At least one wrong answer should be the longest answer option, and it should sound like a tempting but flawed expert plan.
 
-## Question Construction Rules
+## Assessment Design Rules
 Every new question should include:
 
 - A named surgical domain
@@ -328,4 +327,19 @@ Over a mature 100-question version of the course, aim for approximate balance:
 - Anticoagulation/coagulopathy tradeoffs across domains: 10-15%
 - Surgical oncology and MDT sequencing: 5-10%
 
-The same question can count toward multiple domains, but the quiz should not become only HPB or only goblin-flavored postoperative sepsis.
+The same question can count toward multiple domains, but the quiz should not become only HPB or only postoperative sepsis.
+
+## Capstone
+The capstone should be a consultant-level oral-board gauntlet: a linked sequence of operative anatomy, postoperative collapse, anticoagulation, oncology, and false-reassurance cases where the learner must state the unsafe assumption, the next safest action, and the principle that generalizes.
+
+## Assessment Ideas
+- Medium, hard, and very hard oral-board style cases with explicit difficulty tags.
+- Near-miss distractor audits: at least two wrong answers should be tempting to a rushed expert.
+- Sequencing questions where each action is plausible but only one order is safe.
+- Case review prompts that ask learners to name the false reassurance, missing data, and escalation trigger.
+
+## Research Notes
+- SAGES Safe Cholecystectomy guideline: https://www.sages.org/publications/guidelines/safe-cholecystectomy-multi-society-practice-guideline/
+- ACS Fundamentals of Surgery Curriculum: https://www.facs.org/for-medical-professionals/education/programs/acs-fundamentals-of-surgery-curriculum/
+- WSES intra-abdominal infection guidelines: https://wjes.biomedcentral.com/articles/10.1186/s13017-017-0141-6
+- ESSO core curricula in surgical oncology: https://www.essoweb.org/education/core-curricula/

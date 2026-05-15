@@ -1,51 +1,62 @@
 # AP European History
-**ID**: `apEuropeanHistory` · **Discipline**: Humanities · **Year**: High School (Years 10–12)
+**ID**: `apEuropeanHistory` · **Discipline**: Humanities · **Year**: High School (Years 10-12)
 
-## Course Philosophy
-AP European History investigates the cultural, economic, political, and social developments that have shaped Europe from c. 1450 to the present. The course emphasizes analyzing primary/secondary sources and developing historical arguments.
+## Course Aim
+Prepare students for AP European History by building historical knowledge from c. 1450 to the present and practicing source analysis, contextualization, comparison, causation, continuity and change, DBQs, LEQs, and SAQs.
 
-## Module 1: Renaissance, Reformation, and State Building (1450-1648) (25%)
-- The Italian and Northern Renaissance: Humanism, secularism, and the printing press
-- The Age of Discovery and the Columbian Exchange
-- The Protestant Reformation (Luther, Calvin) and the Catholic Counter-Reformation
-- Wars of Religion: The French Wars of Religion and the Thirty Years' War (Peace of Westphalia)
-- State Building: The rise of New Monarchies and early absolutism
-- **Questions**: Analyzing the political motivations behind Henry VIII's break with Rome, evaluating the impact of the printing press on the spread of Reformation ideas
+## Course Design Notes
+College Board organizes AP European History into nine units and themes including Europe and the world, economic and commercial developments, cultural and intellectual developments, state power, social organization, national and European identity, and technology. This syllabus condenses the nine units into eight teachable chapters while preserving writing practice.
 
-## Module 2: Absolutism, Enlightenment, and Revolution (1648-1815) (25%)
-- Absolutism (Louis XIV, Peter the Great) vs Constitutionalism (The English Civil War and Glorious Revolution)
-- The Scientific Revolution (Copernicus, Galileo, Newton) and the transition to empiricism
-- The Enlightenment: Locke, Rousseau, Voltaire, and the concept of natural rights
-- Enlightened Absolutism in Eastern Europe
-- 18th-Century Society: Agricultural revolution, population growth, and global trade
-- The French Revolution: Causes, moderate phase, radical phase (Reign of Terror), and the rise of Napoleon Bonaparte
-- The Congress of Vienna and the restoration of conservative order
-- **Questions**: Comparing the political philosophies of Hobbes and Locke, evaluating whether Napoleon preserved or destroyed the ideals of the French Revolution
+## Chapter 1: Historical Thinking and Early Modern Europe
+- **Key concepts**: contextualization, sourcing, argumentation, Renaissance humanism, exploration, printing, state formation.
+- **Practice questions**: What changed around 1450? How did humanism reshape culture? What evidence supports an interpretation?
+- **Student output**: a source-analysis notebook with sourcing, context, claim, and evidence stems.
 
-## Module 3: Industrialization and its Discontents (1815-1914) (20%)
-- The First and Second Industrial Revolutions: Urbanization, the rise of the bourgeoisie, and the proletariat
-- The "Isms": Conservatism, Liberalism, Nationalism, Socialism, and Marxism
-- The Revolutions of 1848
-- National Unification: Cavour and Garibaldi in Italy, Bismarck in Germany (Realpolitik)
-- New Imperialism: The Scramble for Africa, social Darwinism, and global economic dominance
-- 19th-Century Culture: Romanticism, Realism, and the crisis of modern thought (Nietzsche, Freud, Einstein)
-- **Questions**: Analyzing the social impact of the factory system on working-class families, comparing the unification strategies of Bismarck and Cavour
+## Chapter 2: Reformation, Religious Conflict, and State Power
+- **Key concepts**: Protestant Reformation, Catholic reform, confessional conflict, Thirty Years' War, Peace of Westphalia, new monarchies.
+- **Practice questions**: Why did reform spread? How did religion and politics reinforce each other? What did sovereignty mean after Westphalia?
+- **Student output**: a DBQ-style document grouping on Reformation or religious conflict.
 
-## Module 4: Global Conflict and the Cold War (1914-Present) (20%)
-- World War I: Causes (M.A.I.N.), total war, the Treaty of Versailles, and the Russian Revolution (Lenin, Bolsheviks)
-- The Interwar Period: The Great Depression, the rise of Fascism (Mussolini) and Nazism (Hitler), and Stalin's Soviet Union
-- World War II: Appeasement, the Holocaust, and the defeat of the Axis powers
-- The Cold War: The Iron Curtain, containment, the Truman Doctrine, the Marshall Plan, and proxy wars
-- Decolonization and the collapse of European empires
-- The Fall of Communism (1989) and the dissolution of the Soviet Union
-- **Questions**: Evaluating the effectiveness of the Treaty of Versailles in maintaining peace, analyzing the factors that led to the collapse of the Soviet Union
+## Chapter 3: Absolutism, Constitutionalism, and Scientific Revolution
+- **Key concepts**: Louis XIV, Peter the Great, English Civil War, Glorious Revolution, scientific method, empiricism, Newtonian worldview.
+- **Practice questions**: How did absolutist and constitutional systems differ? How did science challenge older authorities?
+- **Student output**: a comparative essay outline on state power or science.
 
-## Module 5: Contemporary Europe (10%)
-- The creation and evolution of the European Union (EU)
-- Post-WWII economic miracles and the welfare state
-- Demographic shifts, immigration, and rising nationalism/Euroskepticism
-- Feminism and changing gender roles in the 20th and 21st centuries
-- **Questions**: Analyzing the economic and political arguments for and against Brexit, evaluating the challenges facing the modern European welfare state
+## Chapter 4: Enlightenment, Revolution, and Napoleon
+- **Key concepts**: Enlightenment, natural rights, salons, enlightened absolutism, French Revolution, radicalism, Napoleon, Congress of Vienna.
+- **Practice questions**: How did ideas become political action? Did Napoleon preserve or betray revolutionary ideals?
+- **Student output**: an LEQ on causation, continuity, or change in revolutionary Europe.
 
-## Stretch Zone
-- Historiography: Analyzing changing historical interpretations (e.g., Marxist vs Revisionist views of the French Revolution)
+## Chapter 5: Industrialization, Ideologies, and Social Change
+- **Key concepts**: industrial revolution, urbanization, liberalism, conservatism, nationalism, socialism, Marxism, 1848 revolutions.
+- **Practice questions**: Why did industrialization begin in Britain? How did ideology respond to social change? Why did 1848 matter?
+- **Student output**: a thematic timeline linking economic change and political ideology.
+
+## Chapter 6: Nationalism, Imperialism, and Modern Culture
+- **Key concepts**: Italian and German unification, Realpolitik, new imperialism, Social Darwinism, realism, romanticism, modernism, Freud, Einstein.
+- **Practice questions**: How did nationalism unify and divide? How did imperialism change Europe and the wider world? What made culture modern?
+- **Student output**: a comparison of unification, imperialism, or cultural responses to modernity.
+
+## Chapter 7: Global Conflict, Cold War, and Contemporary Europe
+- **Key concepts**: World War I, Russian Revolution, fascism, Nazism, Stalinism, World War II, Holocaust, Cold War, decolonization, EU, 1989, migration.
+- **Practice questions**: What made war total? Why did democracy collapse in some states? How did Europe rebuild and divide after 1945?
+- **Student output**: an SAQ and thesis practice set on 20th-century conflict and contemporary Europe.
+
+## Chapter 8: AP European History Exam Studio
+- **Key concepts**: stimulus MCQ, SAQ precision, DBQ sourcing, LEQ planning, complexity, historical themes.
+- **Practice questions**: Which source context matters? What outside evidence is strongest? How can the argument show complexity?
+- **Student output**: one timed DBQ, one LEQ, and a skill-by-skill correction log.
+
+## Capstone
+Create an AP Euro portfolio with unit maps, source analyses, two SAQ sets, one DBQ, one LEQ, and a reflection tracing one theme across at least four periods.
+
+## Assessment Ideas
+- Source work graded on sourcing, claims, evidence, and context.
+- Essays graded with AP-style thesis, evidence, reasoning, and complexity.
+- Capstone graded on periodization, comparison, and historical argument.
+
+## Research Notes
+- College Board AP European History course page: https://apcentral.collegeboard.org/courses/ap-european-history
+- AP European History CED: https://apcentral.collegeboard.org/media/pdf/ap-european-history-course-and-exam-description.pdf
+- AP European History course overview: https://apcentral.collegeboard.org/courses/ap-european-history
+- AP European History past exam questions: https://apcentral.collegeboard.org/courses/ap-european-history/exam/past-exam-questions

@@ -1,56 +1,66 @@
 # GCSE Prep (UK)
 **Covers**: `col-gcse-maths-uk`, `col-gcse-combined-science-uk`
-**Discipline**: Exam Prep · **Year**: 11 (ages 15–16)
+**Discipline**: Exam Prep | **Year**: 11 (ages 15-16)
 **Frameworks**: UK GCSE (AQA/Edexcel/OCR)
 
-## Course Philosophy
-This syllabus is tailored for the UK GCSE (General Certificate of Secondary Education) examinations at the end of Year 11. It covers both the Higher Tier Mathematics and the Combined Science (Trilogy) specifications, emphasizing rigorous problem-solving and required practicals.
+## Course Aim
+Prepare Year 11 students for GCSE Mathematics and Combined Science by building secure subject knowledge, practical reasoning, tier-aware exam strategy, and a calm revision system that turns practice into specific next steps.
 
-## Module 1: GCSE Mathematics - Number & Algebra (25%)
-- Number: Index laws (negative and fractional), surds (simplifying and rationalizing denominators), compound interest and depreciation, upper and lower bounds (error intervals)
-- Algebra: Expanding triple brackets, factorizing complex quadratics ($ax^2 + bx + c$), completing the square, using the quadratic formula
-- Solving simultaneous equations (linear and non-linear)
-- Algebraic fractions (simplifying, adding/subtracting, solving equations)
-- Functions: composite functions $fg(x)$ and inverse functions $f^{-1}(x)$
-- **Questions**: Rationalizing surds, solving non-linear simultaneous equations, finding inverse functions
+## Course Design Notes
+Use this syllabus for UK GCSE exam-prep support across maths and Combined Science. It should adapt to Foundation or Higher tier, distinguish specification content from revision tactics, and treat command words, required practicals, working, units, and error review as core learning rather than last-minute exam tips.
 
-## Module 2: GCSE Mathematics - Geometry, Measures, & Statistics (25%)
-- Geometry: Circle theorems (e.g., angle at center is twice angle at circumference, alternate segment theorem)
-- Trigonometry: Sine and Cosine rules, area of a triangle ($1/2 ab \sin C$), 3D Pythagoras and trigonometry
-- Vectors: Addition, subtraction, scalar multiplication, and geometric proof using vectors
-- Statistics: Cumulative frequency graphs, box plots, histograms (frequency density)
-- Probability: Conditional probability using tree diagrams and Venn diagrams
-- **Questions**: Applying circle theorems, geometric proofs with vectors, calculating frequency density for histograms
+## Chapter 1: GCSE Exam Map, Tier Choice, and Revision System
+- **Key concepts**: specification mapping, Foundation and Higher tier boundaries, paper structure, assessment objectives, command words, marks, working, units, retrieval practice, spaced revision, and error logs.
+- **Practice questions**: Which tier is this question written for? What does "explain", "calculate", "evaluate", or "compare" require? Which mistake type should be revised first?
+- **Student output**: a personal GCSE revision dashboard with tier decision notes, topic confidence ratings, command-word reminders, and a weekly practice cycle.
 
-## Module 3: GCSE Combined Science - Biology (16.6%)
-- Cell Biology: Eukaryotes/prokaryotes, cell division (mitosis), transport in cells
-- Organization: Human digestive system, heart and blood vessels, plant tissues and transport
-- Infection and Response: Pathogens, human defense systems, vaccination
-- Bioenergetics: Photosynthesis, respiration (aerobic and anaerobic)
-- Inheritance, Variation and Evolution: Meiosis, DNA, genetic crosses, natural selection, genetic engineering
-- Ecology: Adaptations, food chains, carbon/water cycles, biodiversity
-- **Questions**: Describing the cardiac cycle, predicting outcomes of genetic crosses, evaluating genetic engineering
+## Chapter 2: Mathematics - Number, Ratio, and Algebra Fluency
+- **Key concepts**: fractions, percentages, ratio, proportion, standard form, bounds, indices, surds, expanding, factorising, algebraic fractions, rearranging formulae, linear and quadratic equations, simultaneous equations, inequalities, and sequences.
+- **Practice questions**: Choose the most efficient algebraic method; solve a ratio problem with units; use bounds to check the reasonableness of an answer.
+- **Student output**: a maths fluency pack with worked examples, common traps, and Foundation/Higher extension markers.
 
-## Module 4: GCSE Combined Science - Chemistry (16.6%)
-- Atomic Structure and the Periodic Table: Development of the atomic model, isotopes, group trends
-- Bonding, Structure, and Properties: Ionic, covalent (giant and simple), and metallic bonding; polymers, fullerenes
-- Quantitative Chemistry: Conservation of mass, moles, limiting reactants, concentration of solutions
-- Chemical Changes: Reactivity series, extraction of metals, acids/bases, electrolysis
-- Energy Changes: Exothermic/endothermic reactions, reaction profiles
-- Rate and Extent of Chemical Change: Calculating rates, factors affecting rates, reversible reactions and Le Chatelier's principle
-- Organic Chemistry: Crude oil, fractional distillation, alkanes
-- **Questions**: Explaining properties based on bonding (e.g., graphite vs diamond), mole calculations, predicting electrolysis products
+## Chapter 3: Mathematics - Geometry, Graphs, Statistics, and Probability
+- **Key concepts**: angles, circle theorems, constructions, similarity, congruence, Pythagoras, trigonometry, vectors, transformations, graphs, rates of change, averages, spread, cumulative frequency, histograms, probability trees, Venn diagrams, and conditional probability.
+- **Practice questions**: Prove a circle theorem result; interpret a histogram using frequency density; decide whether a probability model is independent or conditional.
+- **Student output**: a mixed maths exam set with diagrams, graph annotations, and written justifications.
 
-## Module 5: GCSE Combined Science - Physics (16.6%)
-- Energy: Energy stores/transfers, conservation of energy, specific heat capacity, power, efficiency
-- Electricity: Circuit symbols, current/potential difference/resistance, series/parallel circuits, mains electricity, national grid
-- Particle Model of Matter: Density, changes of state, internal energy, specific latent heat, particle motion in gases
-- Atomic Structure: Atoms and isotopes, radioactive decay (alpha, beta, gamma), half-life
-- Forces: Scalars/vectors, gravity, resultant forces, work done, elasticity, Newton's Laws, momentum
-- Waves: Transverse/longitudinal, properties, electromagnetic spectrum
-- Magnetism and Electromagnetism: Magnetic fields, electromagnets, the motor effect (Fleming's Left-Hand Rule)
-- **Questions**: Calculating specific heat capacity, half-life decay curves, applying Fleming's Left-Hand Rule
+## Chapter 4: Combined Science Skills and Required Practicals
+- **Key concepts**: working scientifically, variables, controls, apparatus, accuracy, precision, uncertainty, risk, graphing, gradients, units, significant figures, repeat readings, anomalies, and practical-linked exam questions.
+- **Practice questions**: Identify independent, dependent, and control variables; improve a practical method; interpret a graph from experimental data.
+- **Student output**: a required-practicals notebook summarising method, variables, safety, expected data, calculations, and likely exam questions.
 
-## Stretch Zone
-- Mathematics: Transformation of graphs ($y = f(-x)$, $y = f(x) + a$)
-- Science: Independent design of required practicals addressing specific hypotheses
+## Chapter 5: Biology - Cells, Organisation, Infection, and Bioenergetics
+- **Key concepts**: cell structure, microscopy, transport in cells, mitosis, enzymes, digestion, heart and circulation, plant transport, pathogens, immunity, vaccination, photosynthesis, respiration, and exercise.
+- **Practice questions**: Explain a microscopy calculation; compare active transport and diffusion; interpret photosynthesis or respiration data.
+- **Student output**: a biology mechanisms sheet linking structure, function, evidence, and required practical examples.
+
+## Chapter 6: Biology - Homeostasis, Inheritance, Evolution, and Ecology
+- **Key concepts**: nervous system, hormones, blood glucose, reproduction, DNA, genetic crosses, variation, natural selection, selective breeding, genetic engineering, food chains, cycles, biodiversity, sampling, and environmental change.
+- **Practice questions**: Complete a genetic cross; explain a feedback loop; evaluate evidence for an ecological conclusion.
+- **Student output**: a synoptic biology answer plan for a six-mark question using key terms, evidence, and a clear conclusion.
+
+## Chapter 7: Chemistry - Matter, Reactions, Quantitative Work, and Resources
+- **Key concepts**: atomic structure, periodic table trends, bonding, structure and properties, conservation of mass, moles, concentration, acids, electrolysis, energy changes, rates, reversible reactions, organic chemistry, chemical analysis, atmosphere, and using resources.
+- **Practice questions**: Explain properties from bonding; complete a reacting-mass calculation; compare methods for making or testing a substance.
+- **Student output**: a chemistry calculation and reactions booklet with equations, units, observations, and tier-aware challenge problems.
+
+## Chapter 8: Physics - Energy, Electricity, Particles, Forces, Waves, and Magnetism
+- **Key concepts**: energy stores and transfers, efficiency, electricity, circuits, mains supply, density, particle model, specific heat capacity, radioactivity, forces, motion graphs, momentum, waves, electromagnetic spectrum, magnetism, electromagnets, and motor effect.
+- **Practice questions**: Select and rearrange the correct equation; interpret a motion or decay graph; explain a required practical result using physics vocabulary.
+- **Student output**: a physics equation and method file with formula practice, diagrams, graph interpretations, and unit checks.
+
+## Capstone
+Complete a GCSE readiness portfolio: one maths mixed paper review, one biology practical-linked response, one chemistry calculation-and-explanation set, one physics equations-and-graphs set, and a two-week revision plan based on errors rather than anxiety.
+
+## Assessment Ideas
+- Tier-aware topic tests marked for method, accuracy, units, and exam wording.
+- Required-practical checks using method, variables, graphing, and evaluation prompts.
+- Mixed-paper rehearsals followed by error taxonomy and targeted reteaching.
+- Short oral explanations of one maths method and one science practical result.
+
+## Research Notes
+- AQA GCSE Combined Science: Trilogy specification: https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification
+- AQA GCSE Mathematics specification: https://www.aqa.org.uk/subjects/mathematics/gcse/mathematics-8300/specification
+- Pearson Edexcel GCSE Mathematics specification: https://qualifications.pearson.com/en/qualifications/edexcel-gcses/mathematics-2015.html
+- OCR GCSE Mathematics qualification: https://www.ocr.org.uk/qualifications/gcse/mathematics-j560-from-2015/
+- Ofqual GCSE subject-level conditions: https://www.gov.uk/government/collections/gcse-subject-level-conditions-and-requirements

@@ -1,45 +1,62 @@
 # Life Skills & Adulting
-**ID**: `lifeSkillsAndAdulting` · **Discipline**: Life Skills · **Year**: 11/12 (ages 15–18)
+**ID**: `lifeSkillsAndAdulting` · **Discipline**: Life Skills · **Year**: 11/12 (ages 15-18)
 
-## Course Philosophy
-A highly practical, real-world course designed to bridge the gap between high school academics and independent living. It covers financial literacy, civic responsibilities, career navigation, and basic domestic survival skills.
+## Course Aim
+Prepare high-school students for independent living with practical skills in money, work, housing, transportation, health care, civic life, domestic routines, and personal systems.
 
-## Module 1: Personal Finance & Banking (25%)
-- Checking vs Savings accounts: understanding APY, overdraft fees, and minimum balances
-- Budgeting: the 50/30/20 rule (Needs, Wants, Savings/Debt)
-- Credit Cards: how credit scores (FICO) work, APR, minimum payments, and the dangers of compound interest working against you
-- Understanding a paycheck: Gross vs Net income, W-4s, FICA taxes (Social Security/Medicare)
-- **Questions**: Creating a budget based on a starting salary, calculating credit card interest, decoding a pay stub
+## Course Design Notes
+This course should be concrete, localizable, and judgment-focused. Students learn vocabulary and calculations, but the real goal is fewer costly surprises: fees, missed deadlines, bad leases, confusing benefits, preventable repairs, and avoidable paperwork spirals.
 
-## Module 2: Housing & Transportation (20%)
-- Renting an apartment: understanding a lease agreement, security deposits, guarantors/co-signers, and renters insurance
-- Red flags in apartment hunting and understanding tenant rights
-- Buying vs Leasing a car: depreciation, auto loans, down payments
-- Auto insurance: liability vs comprehensive vs collision coverage
-- Basic car maintenance: checking tire pressure, oil levels, and knowing when to see a mechanic
-- **Questions**: Calculating the true cost of car ownership, identifying lease violations, comparing insurance quotes
+## Chapter 1: Money Basics and Banking
+- **Key concepts**: checking, savings, APY, fees, overdraft, debit, credit, budgeting, emergency fund.
+- **Practice questions**: What fee is hidden? Does the budget balance? How much should be saved first?
+- **Student output**: a monthly starter budget with banking checklist.
 
-## Module 3: Career Navigation & Professionalism (20%)
-- Resume building: formatting, action verbs, and tailoring to a job description
-- Cover letters: structure and purpose
-- Interview skills: the STAR method (Situation, Task, Action, Result) for behavioral questions
-- Workplace etiquette: professional email communication, understanding HR, and navigating office politics
-- Understanding employment contracts and benefits (health insurance, 401(k) matching, PTO)
-- **Questions**: Rewriting a poorly formatted resume, drafting a professional email, using the STAR method for an interview question
+## Chapter 2: Credit, Debt, and Financial Decisions
+- **Key concepts**: credit score, APR, minimum payment, compound interest, loans, debt-to-income, scams, consumer protection.
+- **Practice questions**: What does the loan really cost? What happens after only minimum payments? Is this offer safe?
+- **Student output**: a credit-card and loan comparison sheet.
 
-## Module 4: Civic Responsibility & Healthcare (15%)
-- Taxes: how to file a basic 1040, understanding standard deductions vs itemized deductions, W-2s vs 1099s (freelance)
-- Voting: registering to vote, understanding local vs state vs federal elections, researching ballot measures
-- Healthcare basics: premiums, deductibles, copays, out-of-pocket maximums, and in-network vs out-of-network providers
-- **Questions**: Calculating total healthcare costs based on a specific plan, understanding the difference between a W-2 and a 1099
+## Chapter 3: Paychecks, Taxes, and Benefits
+- **Key concepts**: gross pay, net pay, W-4, W-2, 1099, FICA, withholding, standard deduction, health insurance, 401(k), PTO.
+- **Practice questions**: What was withheld? Is the worker employee or contractor? Which benefit changes total compensation?
+- **Student output**: a paystub and benefits decoding exercise.
 
-## Module 5: Domestic & Emotional Survival (20%)
-- Basic cooking: meal planning, grocery shopping on a budget, food safety (internal temperatures), and 5 staple recipes
-- Basic home maintenance: plunging a toilet, resetting a circuit breaker, locating the water shut-off valve, basic sewing
-- Time management and prioritization (e.g., the Eisenhower Matrix)
-- Conflict resolution: active listening, setting boundaries, and navigating roommate disputes
-- **Questions**: Creating a weekly meal plan on a strict budget, applying the Eisenhower Matrix to a to-do list
+## Chapter 4: Housing and Roommate Life
+- **Key concepts**: lease, security deposit, renter's insurance, utilities, tenant rights, inspections, roommate agreements, maintenance requests.
+- **Practice questions**: What does the lease require? Which cost is recurring? What boundary should be written down?
+- **Student output**: a renter checklist and roommate agreement draft.
 
-## Stretch Zone
-- Introduction to investing (index funds, IRAs)
-- Navigating the healthcare marketplace (Open Enrollment)
+## Chapter 5: Transportation and Basic Maintenance
+- **Key concepts**: public transit, car ownership, insurance, depreciation, loan, lease, tire pressure, oil, emergency kit, repair estimate.
+- **Practice questions**: What is the true monthly cost? Which insurance coverage matters? When is a repair urgent?
+- **Student output**: a transportation cost comparison.
+
+## Chapter 6: Career Navigation and Professional Communication
+- **Key concepts**: resume, cover letter, job description, interview, STAR method, professional email, workplace norms, feedback.
+- **Practice questions**: Which experience fits the job? How should the email be phrased? What story answers the interview question?
+- **Student output**: a resume, interview answer bank, and professional email draft.
+
+## Chapter 7: Health Care, Civic Life, and Personal Documents
+- **Key concepts**: premium, deductible, copay, network, appointment scheduling, voting registration, local government, IDs, records, privacy.
+- **Practice questions**: What will the visit cost? Which election affects this issue? Where should important documents be stored?
+- **Student output**: a health care and civic action checklist.
+
+## Chapter 8: Domestic Systems and Emotional Survival
+- **Key concepts**: meal planning, food safety, laundry, cleaning, minor repairs, time management, boundaries, conflict resolution, asking for help.
+- **Practice questions**: What can be cooked cheaply and safely? What problem needs a professional? How should conflict be handled before it grows?
+- **Student output**: a weekly life system: meals, chores, calendar, budget check, and support plan.
+
+## Capstone
+Create a first-apartment or first-job survival packet: budget, banking plan, credit strategy, paystub notes, lease checklist, transportation plan, resume, health care checklist, meal plan, and emergency contacts.
+
+## Assessment Ideas
+- Calculations graded on realistic assumptions and accuracy.
+- Checklists graded on practical completeness.
+- Capstone graded on readiness, local adaptation, and risk awareness.
+
+## Research Notes
+- Consumer Financial Protection Bureau youth financial education: https://www.consumerfinance.gov/consumer-tools/educator-tools/youth-financial-education/
+- Federal Student Aid FAFSA information: https://studentaid.gov/h/apply-for-aid/fafsa
+- IRS students page: https://www.irs.gov/individuals/students
+- Healthcare.gov glossary: https://www.healthcare.gov/glossary/

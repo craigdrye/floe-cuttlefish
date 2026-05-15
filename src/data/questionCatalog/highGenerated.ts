@@ -6,6 +6,86 @@ import { middleSchoolEarthSpaceStaarBatchQuestions } from './middleSchoolEarthSp
 import { middleSchoolBiologyStaarBatchQuestions } from './middleSchoolBiologyStaarBatch'
 import { middleSchoolChemistryStaarBatchQuestions } from './middleSchoolChemistryStaarBatch'
 import { middleSchoolPhysicsStaarBatchQuestions } from './middleSchoolPhysicsStaarBatch'
+import {
+  middleSchoolScienceAssessmentBiologyQuestions,
+  middleSchoolScienceAssessmentChemistryQuestions,
+  middleSchoolScienceAssessmentEarthSpaceQuestions,
+  middleSchoolScienceAssessmentPhysicsQuestions,
+} from './primaryScienceAssessmentImported'
+import {
+  schoolAssessmentLogicArgumentationQuestions,
+  schoolAssessmentReadingWritingQuestions,
+  schoolAssessmentUsHistoryQuestions,
+} from './schoolAssessmentReadingSocialImported'
+import { earthScienceStarterQuestions } from './courseExpansionStarterQuestions'
+import {
+  highApUsGovernmentQuestions,
+  highConstitution101Questions,
+  highPoliticalPhilosophyQuestions,
+  highUsGovernmentCivicsQuestions,
+} from './civicPoliticsQuestions'
+import { highPracticalPoliticsQuestions } from './practicalPoliticsQuestions'
+import {
+  guessTheAnimalQuestions,
+  guessTheBirdQuestions,
+  guessTheBodyPartQuestions,
+  guessTheFishQuestions,
+  guessTheFossilQuestions,
+  guessThePlantQuestions,
+  guessTheRockQuestions,
+} from './fieldIdentificationQuestions'
+import {
+  guessTheArchitectureStyleQuestions,
+  guessTheAircraftPartQuestions,
+  guessTheArtMovementQuestions,
+  guessTheCameraPartQuestions,
+  guessTheCarPartQuestions,
+  guessTheCatBreedQuestions,
+  guessTheCheeseQuestions,
+  guessTheCircuitComponentQuestions,
+  guessTheCitySkylineQuestions,
+  guessTheCloudTypeQuestions,
+  guessTheCountryShapeQuestions,
+  guessTheBridgeTypeQuestions,
+  guessTheDentalToolQuestions,
+  guessTheDinosaurQuestions,
+  guessTheDogBreedQuestions,
+  guessTheElectricalPartQuestions,
+  guessTheFlagQuestions,
+  guessTheGemstoneQuestions,
+  guessTheHandToolQuestions,
+  guessTheHistoricalFigureQuestions,
+  guessTheHistoricalRuinQuestions,
+  guessTheHouseplantQuestions,
+  guessTheInsectQuestions,
+  guessTheKitchenToolQuestions,
+  guessTheKnotQuestions,
+  guessTheLabGlasswareQuestions,
+  guessTheLiteraryCharacterQuestions,
+  guessTheMachineShopToolQuestions,
+  guessTheMicroscopePartQuestions,
+  guessTheMusicNotationQuestions,
+  guessTheMushroomQuestions,
+  guessThePastaShapeQuestions,
+  guessThePlumbingPartQuestions,
+  guessTheRoadSignQuestions,
+  guessTheSeaweedQuestions,
+  guessTheSpiceQuestions,
+  guessTheSportsEquipmentQuestions,
+  guessTheSpaceObjectQuestions,
+  guessTheStrangeFruitQuestions,
+  guessTheSurgicalToolQuestions,
+  guessTheToxicPlantQuestions,
+  guessTheSewingToolQuestions,
+  guessTheTrainPartQuestions,
+  guessTheConstellationQuestions,
+  guessTheMedicalInstrumentQuestions,
+  guessTheTypographyTermQuestions,
+  guessTheTreeQuestions,
+  guessTheWeatherInstrumentQuestions,
+  guessTheWeirdInstrumentQuestions,
+} from './bonusIdentificationQuestions'
+import { guessTheMemeQuestions } from './memeLiteracyQuestions'
 import type { Question, Topic } from './types'
 
 type HighFamily = 'math' | 'science' | 'english' | 'history' | 'philosophy' | 'computing' | 'economics' | 'life' | 'creative' | 'exam'
@@ -87,7 +167,7 @@ function familyFor(title: string, discipline: string): HighFamily {
   if (includesAny(text, ['javascript', 'html', 'web', 'computer science', 'computer', 'programming', 'python', 'internet', 'pixar'])) return 'computing'
   if (includesAny(text, ['biology', 'chemistry', 'physics', 'science', 'earth', 'space', 'climate'])) return 'science'
   if (includesAny(text, ['reading', 'vocab', 'grammar', 'english', 'literature'])) return 'english'
-  if (includesAny(text, ['history', 'government', 'civics', 'constitution', 'geography', 'art history', 'big history'])) return 'history'
+  if (includesAny(text, ['history', 'government', 'civics', 'constitution', 'politics', 'voting', 'parliament', 'geography', 'art history', 'big history'])) return 'history'
   if (includesAny(text, ['ethics', 'logic', 'philosophy', 'epistemology', 'existentialism'])) return 'philosophy'
   if (includesAny(text, ['economics', 'microeconomics', 'macroeconomics', 'finance', 'capital markets'])) return 'economics'
   if (includesAny(text, ['life skills', 'adulting', 'admissions'])) return 'life'
@@ -1351,21 +1431,170 @@ const highGeneratedTrackSpecs = allVisibleSecondaryTracks()
 
 export const highGeneratedTrackIds = highGeneratedTrackSpecs.map((track) => track.id)
 
+const schoolAssessmentReadingSocialQuestionsByTrack: Record<string, Question[]> = {
+  'col-7th-grade-reading-and-vocab': schoolAssessmentReadingWritingQuestions,
+  'col-8th-grade-reading-and-vocab': schoolAssessmentReadingWritingQuestions,
+  'col-sat-reading-and-writing': schoolAssessmentReadingWritingQuestions,
+  logicAndArgumentation: schoolAssessmentLogicArgumentationQuestions,
+  us_history: schoolAssessmentUsHistoryQuestions,
+  'col-ap-u-s-history': schoolAssessmentUsHistoryQuestions,
+}
+
+const dedicatedHighCivicQuestionsByTrack: Record<string, Question[]> = {
+  usGovAndCivics: highUsGovernmentCivicsQuestions,
+  'col-us-government-and-civics': highUsGovernmentCivicsQuestions,
+  constitution101: highConstitution101Questions,
+  'col-constitution-101': highConstitution101Questions,
+  'col-ap-us-government-politics': highApUsGovernmentQuestions,
+  politicalPhilosophy: highPoliticalPhilosophyQuestions,
+  philYear9: highPoliticalPhilosophyQuestions,
+  'col-political-philosophy': highPoliticalPhilosophyQuestions,
+  practicalPolitics: highPracticalPoliticsQuestions,
+  'col-practical-politics-voting': highPracticalPoliticsQuestions,
+}
+
+const dedicatedHighFieldIdQuestionsByTrack: Record<string, Question[]> = {
+  guessTheThing: [
+    ...guessTheRockQuestions,
+    ...guessTheFossilQuestions,
+    ...guessThePlantQuestions,
+    ...guessTheBirdQuestions,
+    ...guessTheAnimalQuestions,
+    ...guessTheFishQuestions,
+    ...guessTheBodyPartQuestions,
+    ...guessTheMemeQuestions,
+    ...guessTheSeaweedQuestions,
+    ...guessTheWeirdInstrumentQuestions,
+    ...guessTheHouseplantQuestions,
+    ...guessTheStrangeFruitQuestions,
+    ...guessTheCountryShapeQuestions,
+    ...guessTheCitySkylineQuestions,
+    ...guessTheHistoricalRuinQuestions,
+    ...guessThePlumbingPartQuestions,
+    ...guessTheElectricalPartQuestions,
+    ...guessTheCarPartQuestions,
+    ...guessTheTrainPartQuestions,
+    ...guessTheArchitectureStyleQuestions,
+    ...guessTheHandToolQuestions,
+    ...guessTheKitchenToolQuestions,
+    ...guessTheDogBreedQuestions,
+    ...guessTheCatBreedQuestions,
+    ...guessTheRoadSignQuestions,
+    ...guessThePastaShapeQuestions,
+    ...guessTheCloudTypeQuestions,
+    ...guessTheFlagQuestions,
+    ...guessTheSpiceQuestions,
+    ...guessTheCheeseQuestions,
+    ...guessTheArtMovementQuestions,
+    ...guessTheCameraPartQuestions,
+    ...guessTheMusicNotationQuestions,
+    ...guessTheSportsEquipmentQuestions,
+    ...guessTheLabGlasswareQuestions,
+    ...guessTheInsectQuestions,
+    ...guessTheMushroomQuestions,
+    ...guessTheConstellationQuestions,
+    ...guessTheGemstoneQuestions,
+    ...guessTheTreeQuestions,
+    ...guessTheWeatherInstrumentQuestions,
+    ...guessTheAircraftPartQuestions,
+    ...guessTheMedicalInstrumentQuestions,
+    ...guessTheCircuitComponentQuestions,
+    ...guessTheSpaceObjectQuestions,
+    ...guessTheSurgicalToolQuestions,
+    ...guessTheDinosaurQuestions,
+    ...guessTheKnotQuestions,
+    ...guessTheMachineShopToolQuestions,
+    ...guessTheMicroscopePartQuestions,
+    ...guessTheToxicPlantQuestions,
+    ...guessTheBridgeTypeQuestions,
+    ...guessTheTypographyTermQuestions,
+    ...guessTheSewingToolQuestions,
+    ...guessTheDentalToolQuestions,
+    ...guessTheLiteraryCharacterQuestions,
+    ...guessTheHistoricalFigureQuestions,
+  ],
+  guessTheFossil: guessTheFossilQuestions,
+  guessTheRock: guessTheRockQuestions,
+  guessThePlant: guessThePlantQuestions,
+  guessTheBird: guessTheBirdQuestions,
+  guessTheAnimal: guessTheAnimalQuestions,
+  guessTheFish: guessTheFishQuestions,
+  guessTheBodyPart: guessTheBodyPartQuestions,
+  guessTheMeme: guessTheMemeQuestions,
+  guessTheSeaweed: guessTheSeaweedQuestions,
+  guessTheWeirdInstrument: guessTheWeirdInstrumentQuestions,
+  guessTheHouseplant: guessTheHouseplantQuestions,
+  guessTheStrangeFruit: guessTheStrangeFruitQuestions,
+  guessTheCountryShape: guessTheCountryShapeQuestions,
+  guessTheCitySkyline: guessTheCitySkylineQuestions,
+  guessTheHistoricalRuin: guessTheHistoricalRuinQuestions,
+  guessThePlumbingPart: guessThePlumbingPartQuestions,
+  guessTheElectricalPart: guessTheElectricalPartQuestions,
+  guessTheCarPart: guessTheCarPartQuestions,
+  guessTheTrainPart: guessTheTrainPartQuestions,
+  guessTheArchitectureStyle: guessTheArchitectureStyleQuestions,
+  guessTheHandTool: guessTheHandToolQuestions,
+  guessTheKitchenTool: guessTheKitchenToolQuestions,
+  guessTheDogBreed: guessTheDogBreedQuestions,
+  guessTheCatBreed: guessTheCatBreedQuestions,
+  guessTheRoadSign: guessTheRoadSignQuestions,
+  guessThePastaShape: guessThePastaShapeQuestions,
+  guessTheCloudType: guessTheCloudTypeQuestions,
+  guessTheFlag: guessTheFlagQuestions,
+  guessTheSpice: guessTheSpiceQuestions,
+  guessTheCheese: guessTheCheeseQuestions,
+  guessTheArtMovement: guessTheArtMovementQuestions,
+  guessTheCameraPart: guessTheCameraPartQuestions,
+  guessTheMusicNotation: guessTheMusicNotationQuestions,
+  guessTheSportsEquipment: guessTheSportsEquipmentQuestions,
+  guessTheLabGlassware: guessTheLabGlasswareQuestions,
+  guessTheInsect: guessTheInsectQuestions,
+  guessTheMushroom: guessTheMushroomQuestions,
+  guessTheConstellation: guessTheConstellationQuestions,
+  guessTheGemstone: guessTheGemstoneQuestions,
+  guessTheTree: guessTheTreeQuestions,
+  guessTheWeatherInstrument: guessTheWeatherInstrumentQuestions,
+  guessTheAircraftPart: guessTheAircraftPartQuestions,
+  guessTheMedicalInstrument: guessTheMedicalInstrumentQuestions,
+  guessTheCircuitComponent: guessTheCircuitComponentQuestions,
+  guessTheSpaceObject: guessTheSpaceObjectQuestions,
+  guessTheSurgicalTool: guessTheSurgicalToolQuestions,
+  guessTheDinosaur: guessTheDinosaurQuestions,
+  guessTheKnot: guessTheKnotQuestions,
+  guessTheMachineShopTool: guessTheMachineShopToolQuestions,
+  guessTheMicroscopePart: guessTheMicroscopePartQuestions,
+  guessTheToxicPlant: guessTheToxicPlantQuestions,
+  guessTheBridgeType: guessTheBridgeTypeQuestions,
+  guessTheTypographyTerm: guessTheTypographyTermQuestions,
+  guessTheSewingTool: guessTheSewingToolQuestions,
+  guessTheDentalTool: guessTheDentalToolQuestions,
+  guessTheLiteraryCharacter: guessTheLiteraryCharacterQuestions,
+  guessTheHistoricalFigure: guessTheHistoricalFigureQuestions,
+}
+
 export const highGeneratedQuestionsByTrack: Record<string, Question[]> = Object.fromEntries(
-  highGeneratedTrackSpecs.map((track, index) => [
-    track.id,
-    track.id === 'logicAndArgumentation' || track.id === 'philYear8'
+  highGeneratedTrackSpecs.map((track, index) => {
+    const schoolAssessmentQuestions = schoolAssessmentReadingSocialQuestionsByTrack[track.id] || []
+    const dedicatedCivicQuestions = dedicatedHighCivicQuestionsByTrack[track.id] || []
+    const dedicatedFieldIdQuestions = dedicatedHighFieldIdQuestionsByTrack[track.id] || []
+    const generatedQuestions = dedicatedFieldIdQuestions.length
+      ? []
+      : track.id === 'logicAndArgumentation' || track.id === 'philYear8'
       ? [...highLogicArgumentationOpenLogicBatchQuestions, ...buildTrackQuestions(track, index)]
+      : track.id === 'earthScience'
+        ? [...earthScienceStarterQuestions, ...middleSchoolEarthSpaceStaarBatchQuestions, ...middleSchoolScienceAssessmentEarthSpaceQuestions, ...buildTrackQuestions(track, index)]
       : track.id === 'middleSchoolEarthSpace'
-        ? [...middleSchoolEarthSpaceStaarBatchQuestions, ...buildTrackQuestions(track, index)]
+        ? [...middleSchoolEarthSpaceStaarBatchQuestions, ...middleSchoolScienceAssessmentEarthSpaceQuestions, ...buildTrackQuestions(track, index)]
       : track.id === 'middleSchoolBiology'
-        ? [...middleSchoolBiologyStaarBatchQuestions, ...buildTrackQuestions(track, index)]
+        ? [...middleSchoolBiologyStaarBatchQuestions, ...middleSchoolScienceAssessmentBiologyQuestions, ...buildTrackQuestions(track, index)]
       : track.id === 'middleSchoolChemistry'
-        ? [...middleSchoolChemistryStaarBatchQuestions, ...buildTrackQuestions(track, index)]
+        ? [...middleSchoolChemistryStaarBatchQuestions, ...middleSchoolScienceAssessmentChemistryQuestions, ...buildTrackQuestions(track, index)]
       : track.id === 'middleSchoolPhysics'
-        ? [...middleSchoolPhysicsStaarBatchQuestions, ...buildTrackQuestions(track, index)]
-      : buildTrackQuestions(track, index),
-  ]),
+      ? [...middleSchoolPhysicsStaarBatchQuestions, ...middleSchoolScienceAssessmentPhysicsQuestions, ...buildTrackQuestions(track, index)]
+      : buildTrackQuestions(track, index)
+
+    return [track.id, [...schoolAssessmentQuestions, ...dedicatedCivicQuestions, ...dedicatedFieldIdQuestions, ...generatedQuestions]]
+  }),
 )
 
 export function topUpHighGeneratedTrack(trackId: string, existing: Question[], minimum = 50) {

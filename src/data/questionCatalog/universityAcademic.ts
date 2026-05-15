@@ -1,6 +1,7 @@
 import type { Question } from './types'
 import { makeQuestionBank } from './base'
 import { openDsaAlgorithmQuestions } from './openDsaAlgorithmsImported'
+import { openDsaCoreDataStructuresQuestions, openDsaCoreFormalLogicQuestions } from './openDsaCoreImported'
 import { openTriviaArtHistoryQuestions, openTriviaPhilosophyQuestions } from './openTriviaArtPhilosophyMicroImported'
 import { openTriviaArtHistoryExtensionQuestions } from './openTriviaArtHistoryExtensionImported'
 import { openTriviaArtHistorySecondExtensionQuestions, openTriviaPhilosophyExtensionQuestions } from './openTriviaArtPhilosophyExtensionImported'
@@ -8,7 +9,23 @@ import { openTriviaArtHistoryRemainingQuestions } from './openTriviaArtHistoryRe
 import { openTriviaEarthSystemsQuestions } from './openTriviaEarthPhysicsMicroImported'
 import { openTriviaAstronomyQuestions } from './openTriviaScienceMicroImported'
 import { openTriviaAstronomyExtensionQuestions } from './openTriviaAstronomyExtensionImported'
+import {
+  openTriviaCuratedArtHistoryAdditionalQuestions,
+  openTriviaCuratedEnvironmentalScienceAdditionalQuestions,
+} from './openTriviaCuratedAdditionalImported'
 import { formalLogicOpenLogicBatchQuestions } from './formalLogicOpenLogicBatch'
+import {
+  openLogicProjectDataStructuresQuestions,
+  openLogicProjectFormalLogicQuestions,
+  openLogicProjectLogicCriticalThinkingQuestions,
+  openLogicProjectPhilosophyQuestions,
+} from './openLogicProjectImported'
+import {
+  logicCsAdditionalDataStructuresQuestions,
+  logicCsAdditionalFormalLogicQuestions,
+  logicCsAdditionalLogicCriticalThinkingQuestions,
+} from './logicCsAdditionalImported'
+import { discreteMathematicsStarterQuestions } from './courseExpansionStarterQuestions'
 import { formalLogicGeneratedQuestions } from './formalLogicGenerated'
 import { formalLogicWorkoutGeneratedQuestions } from './formalLogicWorkoutGenerated'
 import { artHistoryWorkoutGeneratedQuestions } from './artHistoryWorkoutGenerated'
@@ -26,6 +43,7 @@ import { macroeconomicsWorkoutGeneratedQuestions } from './macroeconomicsWorkout
 import { marketingWorkoutGeneratedQuestions } from './marketingWorkoutGenerated'
 import { microeconomicsWorkoutGeneratedQuestions } from './microeconomicsWorkoutGenerated'
 import { organicChemistryWorkoutGeneratedQuestions } from './organicChemistryWorkoutGenerated'
+import { universityComparativePoliticsQuestions } from './practicalPoliticsQuestions'
 
 const logicCriticalThinkingTitles = new Set([
   'Argument clue',
@@ -271,8 +289,8 @@ export function buildUniversityAcademicQuestionCatalog(): Record<string, Questio
     { id: 17208, chapter: "Stretch Zone", title: "Philosophy of Science", prompt: "Karl Popper argued that the defining criterion of a scientific theory is its:", correct: "Falsifiability\u2014the capacity to be proven wrong by empirical evidence.", wrong: [["Verifiability\u2014the ability to be proven absolutely true.", "Popper argued you can never prove a universal law true, only false.", "The black swan problem."], ["Consensus\u2014the agreement of the scientific community.", "That is closer to Kuhn's idea of paradigms.", "A theory must make risky predictions."], ["Mathematical elegance.", "Elegance is nice, but empirical testing is the demarcation criterion.", "Psychoanalysis and Marxism failed this test, according to Popper."]] },
     { id: 17209, chapter: "Stretch Zone", title: "Aesthetics", prompt: "According to Kantian aesthetics, a pure judgment of taste must be 'disinterested,' meaning:", correct: "It is not based on any personal desire, utility, or moral interest in the existence of the object.", wrong: [["The viewer finds the artwork boring.", "It means free from bias, not lacking emotion or engagement.", "You appreciate its form for its own sake."], ["The artwork has no commercial value.", "It's about the viewer's psychological state, not the market.", "You do not want to own or consume the object."], ["It is judged purely by its moral message.", "Kant strictly separated aesthetic judgment from moral judgment.", "It is 'purposiveness without a purpose'."]] },
     { id: 17210, chapter: "Stretch Zone", title: "Philosophy of Language", prompt: "In Wittgenstein's later philosophy (Philosophical Investigations), the meaning of a word is defined by:", correct: "Its use within a specific 'language-game,' rather than an inherent connection to an object.", wrong: [["Its logical mapping to a state of affairs in the world.", "That was his early philosophy in the Tractatus Logico-Philosophicus.", "Meaning is social and context-dependent."], ["The dictionary definition determined by experts.", "Wittgenstein believed ordinary use determined meaning.", "Words are tools used in forms of life."], ["An eternal Platonic form it represents.", "He rejected essentialist theories of meaning.", "Think of the concept of a 'game'\u2014it has no single essence, only family resemblances."]] },
-  ]), ...openTriviaPhilosophyQuestions, ...openTriviaPhilosophyExtensionQuestions, ...philosophyWorkoutGeneratedQuestions],
-  artHistory: [...openTriviaArtHistoryQuestions, ...openTriviaArtHistoryExtensionQuestions, ...openTriviaArtHistorySecondExtensionQuestions, ...openTriviaArtHistoryRemainingQuestions, ...artHistoryWorkoutGeneratedQuestions],
+  ]), ...openTriviaPhilosophyQuestions, ...openTriviaPhilosophyExtensionQuestions, ...openLogicProjectPhilosophyQuestions, ...philosophyWorkoutGeneratedQuestions],
+  artHistory: [...openTriviaArtHistoryQuestions, ...openTriviaArtHistoryExtensionQuestions, ...openTriviaArtHistorySecondExtensionQuestions, ...openTriviaArtHistoryRemainingQuestions, ...openTriviaCuratedArtHistoryAdditionalQuestions, ...artHistoryWorkoutGeneratedQuestions],
   dataStructures: [...makeQuestionBank('University', [
     { id: 16701, chapter: 'Data Structures Dock', title: 'Stack rule', prompt: 'A stack usually follows which rule?', correct: 'Last in, first out', wrong: [['First in, first out', 'That describes a queue.', 'Stacks pop the newest item first.'], ['Random in, random out', 'Standard stacks are not random.', 'Use the LIFO rule.'], ['All in, none out', 'That is not a useful data structure rule.', 'Stacks support push and pop.']] },
     { id: 16702, chapter: 'Data Structures Reef', title: 'Queue rule', prompt: 'A queue usually follows which rule?', correct: 'First in, first out', wrong: [['Last in, first out', 'That is stack behavior.', 'Queues process oldest items first.'], ['Only numbers allowed', 'Queues can store many data types.', 'The rule is about order, not type.'], ['Everything at once', 'Queues process in sequence.', 'Think line at a ticket booth.']] },
@@ -288,7 +306,7 @@ export function buildUniversityAcademicQuestionCatalog(): Record<string, Questio
     { id: 16712, chapter: "Graphs", title: "Dijkstra's Algorithm", prompt: "Why does standard Dijkstra's algorithm fail with negative edge weights?", correct: "It assumes that once a node's shortest path is finalized, it cannot be reduced by subsequent longer paths", wrong: [["It cannot process floating-point numbers", "Edge weights can be any numerical type.", "It's a greedy algorithm."], ["It uses a stack instead of a queue", "Dijkstra uses a priority queue.", "The greedy choice assumes adding edges only increases total cost."], ["It requires the graph to be a tree", "Dijkstra works on general graphs with cycles.", "Negative edges allow a path to get 'shorter' by adding more edges."]] },
     { id: 16713, chapter: "Graphs", title: "Minimum Spanning Trees", prompt: "Kruskal's algorithm for finding a Minimum Spanning Tree typically uses which data structure to efficiently detect cycles?", correct: "Disjoint Set (Union-Find)", wrong: [["Priority Queue", "While it uses a priority queue/sort for edges, the cycle detection is done elsewhere.", "It needs to track connected components."], ["Hash Table", "Hash tables don't easily track merging sets.", "Think of operations like 'find' and 'union'."], ["Binary Search Tree", "A BST is too slow for merging sets of vertices.", "It keeps track of which vertices are in which tree."]] },
     { id: 16714, chapter: "Stretch Zone", title: "Disjoint Sets", prompt: "In a Disjoint Set data structure, the 'path compression' optimization ensures that:", correct: "Nodes along the path of a 'Find' operation are attached directly to the root", wrong: [["The height of the tree is always exactly 2", "The height is flattened, but not strictly guaranteed to be exactly 2 instantly.", "It flattens the tree to speed up future operations."], ["All sets are merged into one single set", "Union operations merge sets, path compression just flattens them.", "It optimizes the 'Find' step."], ["Memory usage is compressed by removing unused nodes", "Nodes are never removed; the pointers are just updated.", "It makes subsequent 'Find' calls O(1) amortized."]] },
-  ]), ...openDsaAlgorithmQuestions, ...dataStructuresWorkoutGeneratedQuestions],
+  ]), ...openDsaAlgorithmQuestions, ...openDsaCoreDataStructuresQuestions, ...openLogicProjectDataStructuresQuestions, ...logicCsAdditionalDataStructuresQuestions, ...dataStructuresWorkoutGeneratedQuestions],
   internationalRelations: [...makeQuestionBank('University', [
     { id: 16801, chapter: 'IR Dock', title: 'State actor', prompt: 'In international relations, a state usually means:', correct: 'A politically organized sovereign country', wrong: [['A temporary mood', 'That is not the IR meaning.', 'State here means political entity.'], ['Only one city block', 'That is too small and not sovereign.', 'Think country-level actor.'], ['Any weather pattern', 'That is unrelated.', 'Use the political definition.']] },
     { id: 16802, chapter: 'IR Reef', title: 'Diplomacy role', prompt: 'Diplomacy is mainly about:', correct: 'Managing relations and negotiation between political actors', wrong: [['Only military invasion', 'That is force, not diplomacy.', 'Diplomacy emphasizes communication and bargaining.'], ['Ignoring all other countries', 'That blocks relations rather than managing them.', 'It is about engagement.'], ['Writing poetry about maps', 'That is not the core practice.', 'Use the negotiation idea.']] },
@@ -329,18 +347,42 @@ export function buildUniversityAcademicQuestionCatalog(): Record<string, Questio
   ],
   apEnvironmentalScience: [
     ...openTriviaEarthSystemsQuestions,
+    ...openTriviaCuratedEnvironmentalScienceAdditionalQuestions,
     ...apEnvironmentalScienceExamBatch2Questions,
     ...apEnvironmentalScienceWorkoutGeneratedQuestions,
   ],
   }
 
-  catalog.logicCriticalThinking = catalog.philosophy.filter((question) => logicCriticalThinkingTitles.has(question.title))
+  const moralCrossroadsQuestions = catalog.philosophy.filter((question) => moralCrossroadsTitles.has(question.title))
+
+  catalog.logicCriticalThinking = [
+    ...catalog.philosophy.filter((question) => logicCriticalThinkingTitles.has(question.title)),
+    ...openDsaCoreFormalLogicQuestions,
+    ...openLogicProjectLogicCriticalThinkingQuestions,
+    ...logicCsAdditionalLogicCriticalThinkingQuestions,
+  ]
   catalog.formalLogic = [
     ...formalLogicGeneratedQuestions,
     ...formalLogicOpenLogicBatchQuestions,
+    ...openLogicProjectFormalLogicQuestions,
+    ...logicCsAdditionalFormalLogicQuestions,
     ...formalLogicWorkoutGeneratedQuestions,
+    ...openDsaCoreFormalLogicQuestions,
   ]
-  catalog.philSenior = catalog.philosophy.filter((question) => moralCrossroadsTitles.has(question.title))
+  catalog.contemporaryEthics = [
+    ...moralCrossroadsQuestions,
+    ...catalog.philosophy.filter((question) => ['Ethics', 'Political Philosophy', 'Philosophy of Mind'].includes(question.chapter)),
+    ...openTriviaPhilosophyQuestions,
+    ...openTriviaPhilosophyExtensionQuestions,
+  ]
+  catalog.discreteMath = [
+    ...discreteMathematicsStarterQuestions,
+    ...openLogicProjectDataStructuresQuestions,
+    ...logicCsAdditionalDataStructuresQuestions,
+    ...openDsaCoreDataStructuresQuestions,
+  ]
+  catalog.philSenior = moralCrossroadsQuestions
+  catalog.comparativePracticalPolitics = universityComparativePoliticsQuestions
 
   return catalog
 }

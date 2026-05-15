@@ -1,49 +1,62 @@
 # AP English Literature
-**Covers**: `col-ap-english-literature`
-**Discipline**: English · **Year**: 12 (ages 16–18)
-**Frameworks**: US College Board AP English Literature and Composition
+**Covers**: `col-ap-english-literature` · **Discipline**: English · **Year**: 12 (ages 16-18)
 
-## Course Philosophy
-AP English Literature demands college-level close reading and critical analysis of imaginative literature (poetry, drama, and fiction) from various periods. Students explore how writers use language to provide meaning and pleasure, focusing on structure, style, and themes.
+## Course Aim
+Prepare students for AP English Literature and Composition by developing close reading, literary interpretation, evidence-based writing, and flexible analysis of poetry, short fiction, longer fiction, and drama.
 
-## Module 1: Short Fiction Analysis (20%)
-- Reading for the literal vs the figurative: identifying plot structure, character development, and setting
-- Characterization: analyzing dialogue, internal monologue, and actions to understand complex motivations
-- Point of View: First person, Third person (limited, omniscient, objective), and the impact of an unreliable narrator
-- The function of setting: how time and place shape narrative and character
-- **Questions**: Analyzing how a specific setting creates an oppressive atmosphere, tracing the shift in a character's internal motivation
+## Course Design Notes
+College Board frames AP Literature around how writers create meaning through purposeful language and how students communicate interpretation through analytic writing. This syllabus spirals the course's major genres so students practice claims, evidence, and commentary all year.
 
-## Module 2: Poetry Analysis (25%)
-- Form and Structure: stanzas, enjambment, caesura, rhyme schemes, and meter (e.g., iambic pentameter, blank verse)
-- Fixed forms: Sonnets (Petrarchan vs Shakespearean), villanelles, sestinas, and free verse
-- Poetic devices: metaphor, simile, personification, synecdoche, metonymy, hyperbole, oxymoron, paradox
-- Sound devices: alliteration, assonance, consonance, onomatopoeia
-- Analyzing shifts in tone (the volta) and the speaker's perspective
-- **Questions**: Explicating a 17th-century metaphysical poem, identifying the function of enjambment, comparing the tone of two poems on the same subject
+## Chapter 1: Close Reading and Literary Argument
+- **Key concepts**: diction, syntax, imagery, tone, figurative language, theme, thesis, evidence, commentary.
+- **Practice questions**: What pattern do you notice? How does language create meaning? What claim can the evidence support?
+- **Student output**: an annotation and paragraph portfolio showing claim-evidence-commentary growth.
 
-## Module 3: Long Fiction Analysis (Novels) (20%)
-- Tracking character arcs across a long narrative
-- Understanding complex narrative structures: frame narratives, epistolary novels, non-linear timelines
-- Symbolism and Motif: tracking recurring objects or ideas and analyzing their thematic significance
-- Thematic development: how authors explore universal concepts (e.g., isolation, the corrupting nature of power, identity)
-- **Questions**: Writing an essay on the function of a specific symbol throughout a novel, analyzing the impact of a frame narrative
+## Chapter 2: Short Fiction I
+- **Key concepts**: character, setting, plot, conflict, point of view, narrator reliability, structure.
+- **Practice questions**: How does setting shape character? What does point of view reveal or hide? Where does the story shift?
+- **Student output**: a prose analysis paragraph focused on narrative technique.
 
-## Module 4: Drama Analysis (15%)
-- Reading drama as performance text: the function of stage directions, dialogue, and soliloquies/monologues
-- Classical tragedy (Aristotle's Poetics): hamartia (tragic flaw), hubris, peripeteia (reversal), anagnorisis (recognition), and catharsis
-- Modern drama: realism, the theater of the absurd
-- Analyzing dramatic irony and tension
-- **Questions**: Analyzing a Shakespearean soliloquy to reveal character state of mind, applying Aristotelian tragedy concepts to a modern play
+## Chapter 3: Poetry I
+- **Key concepts**: speaker, situation, imagery, metaphor, sound, lineation, stanza, rhyme, meter, shift.
+- **Practice questions**: Who is speaking? What tension drives the poem? How does structure affect interpretation?
+- **Student output**: a poetry explication with attention to form and language.
 
-## Module 5: Literary Argumentation (Writing) (20%)
-- The AP Lit Rubric: Thesis, Evidence/Commentary, Sophistication
-- Crafting a defensible, complex thesis statement
-- Using specific, embedded textual evidence to support claims
-- Writing the Poetry Analysis Essay (FRQ 1)
-- Writing the Prose Fiction Analysis Essay (FRQ 2)
-- Writing the Literary Argument Essay (FRQ 3 - using a novel from memory)
-- **Questions**: Drafting a thesis statement under time constraints, elevating commentary to achieve the "Sophistication" point
+## Chapter 4: Longer Fiction or Drama I
+- **Key concepts**: character arc, motif, symbol, dramatic tension, scene structure, dialogue, soliloquy, theme.
+- **Practice questions**: How does a motif develop? What conflict deepens over time? What does a scene reveal that summary cannot?
+- **Student output**: a reading journal tracking motif, character, and thematic development.
 
-## Stretch Zone
-- Applying critical lenses: Feminist, Marxist, Psychoanalytic, and Post-Colonial literary theory
-- Reading James Joyce, Virginia Woolf, or William Faulkner (Stream of Consciousness techniques)
+## Chapter 5: Short Fiction and Poetry II
+- **Key concepts**: complexity, ambiguity, irony, contrast, juxtaposition, allusion, speaker change, narrative compression.
+- **Practice questions**: Where does the text resist a simple interpretation? How do two techniques work together? What is the effect of contrast?
+- **Student output**: a comparative analysis of two shorter texts or paired passages.
+
+## Chapter 6: Longer Fiction or Drama II
+- **Key concepts**: structure across a whole work, secondary characters, setting patterns, social context, tragic and comic forms.
+- **Practice questions**: How does the ending revise the beginning? What role does a minor character serve? How does context shape conflict?
+- **Student output**: a literary argument outline using a whole work from memory.
+
+## Chapter 7: AP Essay Studio
+- **Key concepts**: poetry analysis, prose fiction analysis, literary argument, defensible thesis, line of reasoning, sophistication.
+- **Practice questions**: What is the prompt really asking? Which evidence is most specific? How does commentary move beyond paraphrase?
+- **Student output**: one timed essay of each AP Literature free-response type with revision notes.
+
+## Chapter 8: Independent Reading and Exam Readiness
+- **Key concepts**: text selection, recallable evidence, thematic range, timed planning, multiple-choice strategy, revision.
+- **Practice questions**: Which work fits this prompt? What details can be recalled accurately? What pattern do missed questions share?
+- **Student output**: an independent reading card deck and exam correction log.
+
+## Capstone
+Build an AP Literature portfolio with close-reading annotations, two polished essays, three timed essay drafts, an independent reading evidence deck, and a reflection on commentary growth.
+
+## Assessment Ideas
+- Close readings graded on textual specificity.
+- Essays graded with AP-style thesis, evidence/commentary, and sophistication criteria.
+- Capstone graded on revision, interpretive complexity, and exam readiness.
+
+## Research Notes
+- College Board AP English Literature student page: https://apstudents.collegeboard.org/courses/ap-english-literature-and-composition
+- AP English Literature CED: https://apcentral.collegeboard.org/media/pdf/ap-english-literature-and-composition-course-and-exam-description.pdf
+- AP English Literature past exam questions: https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions
+- Purdue OWL literary theory and schools of criticism: https://owl.purdue.edu/owl/subject_specific_writing/writing_in_literature/literary_theory_and_schools_of_criticism/index.html

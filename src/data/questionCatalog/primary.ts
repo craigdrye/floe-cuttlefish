@@ -18,6 +18,7 @@ import { buildKolibriQuestionCatalog } from './kolibri'
 import { openTriviaForKidsQuestionsByTrack } from './openTriviaForKidsImported'
 import { primaryGeneratedHumanitiesExamQuestionsByTrack } from './primaryGeneratedHumanitiesExam'
 import { primaryGeneratedMathQuestionsByTrack } from './primaryGeneratedMath'
+import { primaryScienceAssessmentGrade5Questions } from './primaryScienceAssessmentImported'
 import * as generatedScienceDiscovery from './primaryGeneratedScienceDiscovery'
 
 export function buildPrimaryQuestionCatalog(): Record<string, Question[]> {
@@ -105,7 +106,10 @@ export function buildPrimaryQuestionCatalog(): Record<string, Question[]> {
       ...(openTriviaForKidsQuestionsByTrack.scienceYear3 || []),
     ]),
     'scienceYear4': topUp('scienceYear4'),
-    'scienceYear5': topUp('scienceYear5', filterQs(ck12, ['human body', 'cells', 'genetics'])),
+    'scienceYear5': topUp('scienceYear5', [
+      ...filterQs(ck12, ['human body', 'cells', 'genetics']),
+      ...primaryScienceAssessmentGrade5Questions,
+    ]),
     'scienceYear6': topUp('scienceYear6', filterQs(ck12, ['chemistry', 'physics', 'electricity'])),
 
     arithmetic: topUp('arithmetic', openTriviaForKidsQuestionsByTrack.arithmetic || []),

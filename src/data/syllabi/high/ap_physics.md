@@ -1,48 +1,62 @@
 # AP Physics Collections
-**Covers**: `col-ap-physics`
-**Discipline**: Science · **Year**: 12 (ages 16–18)
-**Frameworks**: US College Board AP Physics (1, 2, C: Mechanics, C: E&M)
+**Covers**: `col-ap-physics` · **Discipline**: Science · **Year**: 12 (ages 16-18)
 
-## Course Philosophy
-This syllabus aggregates the core concepts across the AP Physics tracks. AP Physics 1 & 2 are algebra-based, while AP Physics C is calculus-based. The focus is on deep conceptual understanding, graphical analysis, and rigorous mathematical modeling of physical systems.
+## Course Aim
+Prepare students across AP Physics 1, AP Physics 2, and AP Physics C pathways by building physical intuition, mathematical modeling, graphical reasoning, lab design, and free-response explanation.
 
-## Module 1: Kinematics and Dynamics (20%)
-- 1D and 2D Kinematics: interpreting $x-t$, $v-t$, and $a-t$ graphs; using kinematic equations and calculus (for Physics C: $v = dx/dt$, $a = dv/dt$)
-- Projectile motion and relative velocity
-- Newton's Laws of Motion: complex free-body diagrams, systems of masses (pulleys, Atwood machines), friction (static and kinetic), drag forces and terminal velocity (Physics C)
-- Uniform Circular Motion and gravitation (Kepler's Laws, orbits)
-- **Questions**: Deriving expressions for acceleration in Atwood machines, setting up differential equations for air resistance (Physics C)
+## Course Design Notes
+College Board revised AP Physics frameworks for recent exam cycles, with AP Physics 1 now emphasizing eight algebra-based units and shared science practices such as representations, mathematical routines, experimental design, and argumentation. This syllabus can serve as a combined overview while allowing teachers to deepen either algebra-based or calculus-based tracks.
 
-## Module 2: Energy, Momentum, and Rotation (25%)
-- Work, Power, and Conservation of Energy: potential energy functions ($F = -dU/dx$), non-conservative forces
-- Linear Momentum and Impulse: center of mass, elastic/inelastic collisions in 1D and 2D
-- Rotational Kinematics: angular displacement, velocity, acceleration
-- Rotational Dynamics: Torque ($\tau = I\alpha$), Moment of Inertia (calculating via integration for Physics C), rotational kinetic energy
-- Conservation of Angular Momentum ($L = I\omega$)
-- Rolling without slipping
-- **Questions**: Analyzing a block sliding down a curved ramp into a spring, calculating angular momentum of a planetary orbit, analyzing rolling motion
+## Chapter 1: Physics Practices and Modeling
+- **Key concepts**: systems, models, assumptions, units, diagrams, graphs, uncertainty, experimental claims.
+- **Practice questions**: What system is being modeled? What representation fits the situation? Which assumption makes the model simpler?
+- **Lab output**: a modeling notebook page with diagram, graph, equation, uncertainty, and claim.
 
-## Module 3: Simple Harmonic Motion and Fluids/Thermodynamics (Physics 1/2) (15%)
-- SHM: Mass-spring systems and pendulums; analyzing position, velocity, and restoring force ($F = -kx$) over time
-- Fluid Mechanics (Physics 2): density, pressure, buoyancy (Archimedes' Principle), fluid flow continuity, Bernoulli's Equation
-- Thermodynamics (Physics 2): Temperature, heat, kinetic theory of gases, Ideal Gas Law, First and Second Laws of Thermodynamics, PV diagrams, heat engines
-- **Questions**: Deriving the period of a mass-spring system, calculating buoyant force, analyzing work done in a thermodynamic cycle on a PV diagram
+## Chapter 2: Kinematics and Motion Graphs
+- **Key concepts**: displacement, velocity, acceleration, projectile motion, relative motion, slopes, areas, calculus links for Physics C.
+- **Practice questions**: What does the graph imply? Which quantity is changing? How does 2D motion split into components?
+- **Lab output**: a motion-analysis report using position, velocity, and acceleration data.
 
-## Module 4: Electricity and Magnetism (25%)
-- Electrostatics: Coulomb's Law, Electric Fields (Gauss's Law for Physics C), Electric Potential ($V$), Capacitance (dielectrics)
-- DC Circuits: Ohm's Law, Kirchhoff's Rules, RC Circuits (transient behavior using calculus for Physics C)
-- Magnetism: Magnetic fields, forces on moving charges and current-carrying wires (Biot-Savart Law and Ampere's Law for Physics C)
-- Electromagnetism: Faraday's Law, Lenz's Law, Motional EMF, Inductance (LR and LC circuits for Physics C), Maxwell's Equations
-- **Questions**: Applying Gauss's Law to find the E-field of a cylinder, solving complex DC circuit networks, deriving the time constant for an RC circuit
+## Chapter 3: Forces and Translational Dynamics
+- **Key concepts**: Newton's laws, free-body diagrams, friction, tension, normal force, circular motion, gravitation.
+- **Practice questions**: What forces act on the object? Which interaction pair matters? What changes when the system boundary changes?
+- **Lab output**: a force-modeling task with competing free-body diagrams and correction notes.
 
-## Module 5: Waves, Optics, and Modern Physics (Physics 2) (15%)
-- Mechanical Waves and Sound: standing waves, interference, beats, Doppler effect
-- Electromagnetic Waves: the EM spectrum
-- Geometric Optics: Reflection, refraction (Snell's Law), mirrors (concave/convex), thin lenses, ray tracing
-- Physical Optics: Interference (Young's Double Slit), diffraction
-- Modern Physics: Quantum mechanics concepts, photoelectric effect, wave-particle duality, atomic models, nuclear physics (radioactive decay, mass-energy equivalence $E=mc^2$)
-- **Questions**: Drawing ray diagrams for a convex lens, calculating the work function in the photoelectric effect, balancing nuclear decay equations
+## Chapter 4: Work, Energy, and Power
+- **Key concepts**: work, kinetic energy, potential energy, conservation, nonconservative forces, power, energy bar charts.
+- **Practice questions**: What energy transfers occur? Is mechanical energy conserved? Which force does work over the path?
+- **Lab output**: an energy conservation investigation with graph and residual discussion.
 
-## Stretch Zone
-- Special Relativity (Time dilation, length contraction)
-- Solving second-order differential equations for damped harmonic motion (Physics C)
+## Chapter 5: Momentum, Collisions, and Rotation
+- **Key concepts**: impulse, momentum conservation, center of mass, torque, moment of inertia, angular momentum, rolling.
+- **Practice questions**: What quantity is conserved? What external torque or impulse acts? How does rotation change the energy accounting?
+- **Lab output**: a collision or rotation analysis with before/after representations.
+
+## Chapter 6: Oscillations, Fluids, and Thermodynamics
+- **Key concepts**: simple harmonic motion, springs, pendulums, pressure, buoyancy, fluid flow, ideal gas law, PV diagrams, heat engines.
+- **Practice questions**: What sets the period? What pressure difference drives motion? What work is represented on a PV diagram?
+- **Lab output**: an oscillation or fluids mini-investigation with model limitations.
+
+## Chapter 7: Electricity, Magnetism, Waves, Optics, and Modern Physics
+- **Key concepts**: electric fields, potential, circuits, capacitors, magnetic force, induction, waves, interference, lenses, photoelectric effect, nuclear processes.
+- **Practice questions**: What field or potential is present? What current path matters? How does wave behavior explain the observation?
+- **Lab output**: a circuit, optics, or wave model with prediction and evidence.
+
+## Chapter 8: AP Exam Studio
+- **Key concepts**: representations, symbolic derivation, calculation, experimental design, qualitative explanation, claim-evidence-reasoning.
+- **Practice questions**: What does the prompt ask for exactly? Which representation earns credit fastest? How should the explanation connect principle to result?
+- **Lab output**: a timed free-response set with a scoring-guideline correction log.
+
+## Capstone
+Complete a physics portfolio: one mechanics lab, one energy or momentum investigation, one field/circuit/wave model, one experimental-design response, and one timed AP-style free-response correction log.
+
+## Assessment Ideas
+- Lab reports graded on model, evidence, uncertainty, and reasoning.
+- Problem sets graded on representations before equations.
+- Capstone graded on AP science practices and correction quality.
+
+## Research Notes
+- College Board AP Physics 1 course page: https://apcentral.collegeboard.org/courses/ap-physics-1
+- College Board AP Physics course revisions: https://apcentral.collegeboard.org/courses/ap-physics/revisions-2024-25
+- College Board AP Physics 1 and 2 comparison: https://blog.collegeboard.org/difference-between-ap-physics-1-and-2
+- College Board AP courses directory: https://apcentral.collegeboard.org/courses

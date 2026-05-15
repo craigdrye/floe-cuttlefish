@@ -37,6 +37,14 @@ import { openTriviaModernHistoryColdWarQuestions } from './openTriviaModernHisto
 import { openTriviaUsHistoryAnchorQuestions } from './openTriviaUsHistoryAnchorImported'
 import { openTriviaWorldHistoryAnchorQuestions } from './openTriviaWorldHistoryAnchorImported'
 import { openTriviaWorldHistoryFinalTwoQuestions } from './openTriviaWorldHistoryFinalTwoImported'
+import {
+  openTriviaCuratedBiologyAdditionalQuestions,
+  openTriviaCuratedGeographyAdditionalQuestions,
+  openTriviaCuratedHistoryAdditionalQuestions,
+  openTriviaCuratedLanguageCultureAdditionalQuestions,
+  openTriviaCuratedLiteratureAdditionalQuestions,
+  openTriviaCuratedPhysicalScienceAdditionalQuestions,
+} from './openTriviaCuratedAdditionalImported'
 import { openSatReadingWritingQuestions } from './openSatImported'
 import { openDsaFormalLanguagesQuestions } from './openDsaFormalLanguagesImported'
 import { openDsaAlgorithmQuestions } from './openDsaAlgorithmsImported'
@@ -65,6 +73,11 @@ import { apHumanGeographyWorkoutGeneratedQuestions } from './apHumanGeographyWor
 import { apHistoryWorkoutGeneratedQuestions } from './apHistoryWorkoutGenerated'
 import { worldHistoryModernExamBatchQuestions } from './worldHistoryModernExamBatch'
 import { worldHistoryOriginsExamBatchQuestions } from './worldHistoryOriginsExamBatch'
+import { schoolAssessmentHighSchoolBiologyQuestions } from './schoolAssessmentMathScienceImported'
+import {
+  schoolAssessmentReadingWritingQuestions,
+  schoolAssessmentUsHistoryQuestions,
+} from './schoolAssessmentReadingSocialImported'
 
 export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
   const fcc = buildFCCQuestionCatalog()
@@ -74,6 +87,7 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
   'col-high-school-biology-ngss': [
     ...makeHighSchoolBiologyNGSSQuiz(),
     ...highSchoolBiologyNgssExamBatchQuestions,
+    ...schoolAssessmentHighSchoolBiologyQuestions,
   ],
   'col-high-school-physics-ngss': [
     ...makeHighSchoolPhysicsNGSSQuiz(),
@@ -89,11 +103,16 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
   ],
   apHumanGeography: [
     ...openTriviaGeographyQuestions,
+    ...openTriviaCuratedGeographyAdditionalQuestions,
+    ...openTriviaCuratedLanguageCultureAdditionalQuestions,
     ...apHumanGeographyExamBatchQuestions,
     ...apHumanGeographyWorkoutGeneratedQuestions,
   ],
   apPsychology: [...apPsychologyExamBatchQuestions, ...apPsychologyWorkoutGeneratedQuestions],
-  'col-sat-reading-and-writing': openSatReadingWritingQuestions,
+  'col-sat-reading-and-writing': [
+    ...openSatReadingWritingQuestions,
+    ...schoolAssessmentReadingWritingQuestions,
+  ],
   apCalculus: [
     makeSimpleQuestion(13001, 'AP', 'AP Calculus Pier', 'Derivative intuition',
       'If f(x) = x^2, what is f\'(3)?',
@@ -165,8 +184,10 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
     ...openTriviaAnimalBiologyQuestions,
     ...openTriviaMolecularBiologyQuestions,
     ...openTriviaApBiologyScienceBatch2Questions,
+    ...openTriviaCuratedBiologyAdditionalQuestions,
     ...apBiologyAnimalEcologyBatchQuestions,
     ...apBiologyExamBatchQuestions,
+    ...schoolAssessmentHighSchoolBiologyQuestions,
     ...apBiologyWorkoutGeneratedQuestions,
   ],
   apChemistry: [
@@ -243,6 +264,7 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
       ]),
     ...openTriviaPhysicsQuestions,
     ...openTriviaPhysicsExtensionQuestions,
+    ...openTriviaCuratedPhysicalScienceAdditionalQuestions,
     ...apPhysicsExamBatchQuestions,
     ...apPhysicsWorkoutGeneratedQuestions,
     ...(buildOpenStaxQuestionCatalog()['openstax'] || []),
@@ -290,6 +312,7 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
     ...openTriviaLiteratureShakespeareModernistQuestions,
     ...openTriviaLiteraturePoetryIdentityQuestions,
     ...openTriviaLiteratureFinalIdentityQuestions,
+    ...openTriviaCuratedLiteratureAdditionalQuestions,
     ...apEnglishExamBatchQuestions,
     ...apEnglishWorkoutGeneratedQuestions,
   ],
@@ -335,6 +358,8 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
     ...openTriviaUsHistoryAnchorQuestions,
     ...openTriviaWorldHistoryAnchorQuestions,
     ...openTriviaWorldHistoryFinalTwoQuestions,
+    ...openTriviaCuratedHistoryAdditionalQuestions,
+    ...schoolAssessmentUsHistoryQuestions,
     ...apHistoryExamBatchQuestions,
     ...apHistoryWorkoutGeneratedQuestions,
   ],

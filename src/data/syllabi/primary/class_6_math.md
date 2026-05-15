@@ -1,72 +1,74 @@
 # Class 6 Math
-**ID**: `col-class-6-math` · **Discipline**: Maths · **Year**: 6 (ages 10–11)
-**Frameworks**: UK KS2 Year 6 (SATs year), US Common Core Grade 6, ACARA v9 Year 6, India NCERT Class 6
+**ID**: `col-class-6-math` | **Discipline**: Maths | **Year**: 6 (ages 10-11)
+**Frameworks**: UK KS2 Year 6 National Curriculum, US Common Core Grade 6, ACARA v9 Year 6, India NCERT Class 6
 
-## Course Philosophy
-Year 6 is the capstone of primary mathematics. In the UK, it culminates in the KS2 SATs, requiring rigorous fluency in arithmetic and the ability to apply mathematical reasoning to complex, multi-step problems without a calculator. Topics such as ratio, proportion, and introductory algebra are formally introduced.
+## Course Aim
+Prepare learners for secondary mathematics by making primary number sense precise, flexible, and connected. Children work confidently with large numbers, integers, fractions, decimals, percentages, ratios, expressions, equations, coordinates, geometry, and statistics. They learn to move between visual models and symbolic notation, explain choices, check efficiently, and approach unfamiliar problems with steady independence.
 
-## Module 1: Number, Place Value & Calculation (20%)
-- Read, write, order, and compare numbers up to 10,000,000 and determine the value of each digit
-- Round any whole number to a required degree of accuracy
-- Use negative numbers in context, and calculate intervals across zero
-- Multiply multi-digit numbers up to 4 digits by a two-digit whole number using the formal written method of long multiplication
-- Divide numbers up to 4 digits by a two-digit whole number using the formal written method of long division, and interpret remainders as whole number remainders, fractions, or by rounding, as appropriate for the context
-- Divide numbers up to 4 digits by a two-digit number using the formal written method of short division where appropriate
-- Perform mental calculations, including with mixed operations and large numbers
-- Identify common factors, common multiples, and prime numbers
-- Use their knowledge of the order of operations (BODMAS/BIDMAS) to carry out calculations involving the four operations
-- **Questions**: Place value to 10M, negative number intervals, long division (with fraction/decimal remainders), long multiplication, BODMAS application
+## Course Design Notes
+Class 6 lessons bridge primary and secondary habits. Bar models, double number lines, ratio tables, number lines, algebra tiles, coordinate grids, angle diagrams, nets, measuring tools, statistical displays, and worked-example discussions support new abstraction. Fluency remains calm and purposeful: children practise core facts, written methods, fraction-decimal-percent links, and equation routines in short cycles while using talk, diagrams, and error analysis to keep meaning attached to procedure.
 
-## Module 2: Fractions, Decimals, & Percentages (25%)
-- Use common factors to simplify fractions; use common multiples to express fractions in the same denomination
-- Compare and order fractions, including fractions > 1
-- Add and subtract fractions with different denominators and mixed numbers, using the concept of equivalent fractions
-- Multiply simple pairs of proper fractions, writing the answer in its simplest form (e.g., 1/4 × 1/2 = 1/8)
-- Divide proper fractions by whole numbers (e.g., 1/3 ÷ 2 = 1/6)
-- Associate a fraction with division and calculate decimal fraction equivalents (e.g., 0.375) for a simple fraction (e.g., 3/8)
-- Identify the value of each digit in numbers given to three decimal places and multiply and divide numbers by 10, 100, and 1000 giving answers up to three decimal places
-- Multiply one-digit numbers with up to two decimal places by whole numbers
-- Use written division methods in cases where the answer has up to two decimal places
-- Solve problems involving the calculation of percentages (e.g., of measures, and such as 15% of 360) and the use of percentages for comparison
-- Recall and use equivalences between simple fractions, decimals, and percentages, including in different contexts
-- **Questions**: Fraction simplification, unlike denominator arithmetic, fraction × fraction, fraction ÷ whole number, calculating percentages of amounts
+## Chapter 1: Number, Place Value, and Integers
+- **Key concepts**: ten million, digit value, compare, order, round, estimate, integer, negative number, interval, absolute position.
+- **Practice activities**: read, write, order, and compare numbers to 10,000,000; round whole numbers to required degrees of accuracy; locate positive and negative numbers on horizontal and vertical number lines; calculate intervals across zero in temperature, money, elevation, and game-score contexts; estimate before calculation.
+- **Teacher prompts**: What is each digit worth? What degree of accuracy is useful here? How far is this number from zero? How can the number line show the interval?
+- **Work product**: an integer and place-value page with one large-number comparison, two rounded values, an interval-across-zero problem, and an estimate check.
 
-## Module 3: Ratio, Proportion, & Algebra (20%)
-- Solve problems involving the relative sizes of two quantities where missing values can be found by using integer multiplication and division facts (Ratio)
-- Solve problems involving the calculation of percentages (e.g., of measures, and such as 15% of 360) and the use of percentages for comparison
-- Solve problems involving similar shapes where the scale factor is known or can be found
-- Solve problems involving unequal sharing and grouping using knowledge of fractions and multiples
-- Express missing number problems algebraically (e.g., 2x + 3 = 11)
-- Use simple formulae (e.g., perimeter = 2l + 2w)
-- Generate and describe linear number sequences
-- Find pairs of numbers that satisfy an equation with two unknowns
-- Enumerate possibilities of combinations of two variables
-- **Questions**: Ratio word problems, scale factors, basic algebraic expressions, linear sequences, solving simple equations
+## Chapter 2: Calculation Fluency and Order of Operations
+- **Key concepts**: long multiplication, long division, short division, common factor, common multiple, prime, remainder, order of operations, inverse.
+- **Practice activities**: multiply up to four-digit numbers by two-digit numbers; divide up to four-digit numbers by one- and two-digit numbers; interpret remainders as whole numbers, fractions, decimals, or rounded answers; identify common factors, common multiples, and primes; evaluate expressions using brackets and order of operations; check with inverse operations and estimates.
+- **Teacher prompts**: Which written method fits the numbers? What form should the remainder take? Which operation must be completed first? How can a quick estimate catch an error?
+- **Work product**: a calculation audit with one long multiplication, one division with a context-based remainder, one order-of-operations expression, and written checks.
 
-## Module 4: Measurement (15%)
-- Solve problems involving the calculation and conversion of units of measure, using decimal notation up to three decimal places where appropriate
-- Use, read, write, and convert between standard units, converting measurements of length, mass, volume, and time from a smaller unit of measure to a larger unit, and vice versa, using decimal notation to up to three decimal places
-- Convert between miles and kilometres
-- Recognise that shapes with the same areas can have different perimeters and vice versa
-- Recognise when it is possible to use formulae for area and volume of shapes
-- Calculate the area of parallelograms and triangles
-- Calculate, estimate, and compare volume of cubes and cuboids using standard units, including cubic centimetres (cm³) and cubic metres (m³), and extending to other units (e.g., mm³ and km³)
-- **Questions**: Multi-step unit conversions, miles vs km, area of triangles/parallelograms, volume calculation
+## Chapter 3: Fractions, Decimals, and Percentages
+- **Key concepts**: simplify, equivalent fraction, common denominator, mixed number, decimal equivalent, percent, percentage of an amount, recurring idea.
+- **Practice activities**: simplify fractions using common factors; compare and order fractions greater than 1; add and subtract fractions with different denominators and mixed numbers; multiply simple pairs of proper fractions; divide proper fractions by whole numbers; convert between common fractions, decimals, and percentages; calculate percentages of quantities.
+- **Teacher prompts**: Which common factor simplifies this? What denominator can both fractions use? How does the area model show fraction multiplication? What does the percent represent in this context?
+- **Work product**: a rational-number connections page with fraction operations, one fraction multiplication or division model, decimal equivalents, percentage calculations, and a short explanation of equivalence.
 
-## Module 5: Geometry & Statistics (20%)
-- Draw 2D shapes using given dimensions and angles
-- Recognise, describe, and build simple 3D shapes, including making nets
-- Compare and classify geometric shapes based on their properties and sizes and find unknown angles in any triangles, quadrilaterals, and regular polygons
-- Illustrate and name parts of circles, including radius, diameter, and circumference, and know that the diameter is twice the radius
-- Recognise angles where they meet at a point, are on a straight line, or are vertically opposite, and find missing angles
-- Describe positions on the full coordinate grid (all four quadrants)
-- Draw and translate simple shapes on the coordinate plane, and reflect them in the axes
-- Interpret and construct pie charts and line graphs and use these to solve problems
-- Calculate and interpret the mean as an average
-- **Questions**: Drawing shapes with given angles, missing angles (polygons/vertically opposite), full coordinate grid translation/reflection, pie chart interpretation, calculating the mean
+## Chapter 4: Ratios, Rates, and Proportion
+- **Key concepts**: ratio, proportion, scale factor, rate, unit rate, double number line, ratio table, unequal sharing.
+- **Practice activities**: describe part-to-part and part-to-whole ratios; use ratio tables and double number lines to find missing values; solve recipe, map, speed, price, and mixture problems; compare rates by finding a unit rate; solve unequal sharing problems using bars, fractions, and multiples; explore similar shapes with known scale factors.
+- **Teacher prompts**: What two quantities are being compared? What stays in the same proportion? How can we scale up or down efficiently? What does one unit represent?
+- **Work product**: a ratio reasoning sheet with a double number line, a ratio table, a scale-factor problem, a unit-rate comparison, and one unequal-sharing explanation.
 
-## Stretch Zone
-- Complex BODMAS questions involving nested brackets
-- Solving simultaneous equations informally
-- Understanding the relationship between the circumference and diameter of a circle (intro to pi)
-- Finding the surface area of cuboids
+## Chapter 5: Expressions, Equations, and Patterns
+- **Key concepts**: variable, expression, equation, formula, term, coefficient, sequence, input, output, solution.
+- **Practice activities**: translate missing-number problems into expressions and equations; use simple formulae for perimeter, area, and practical contexts; solve one-step and two-step equations using balance models; generate and describe linear sequences; find pairs of values that satisfy equations with two unknowns; enumerate combinations systematically.
+- **Teacher prompts**: What does the variable stand for? How can the balance model keep both sides equal? What changes by the same amount each step? How do you know all possibilities are included?
+- **Work product**: an algebra bridge page with a translated expression, a solved equation, a formula substitution, a sequence rule, and an organized list of value pairs.
+
+## Chapter 6: Coordinate Plane, Geometry, and Transformations
+- **Key concepts**: quadrant, origin, ordered pair, x-coordinate, y-coordinate, translation, reflection, axis, congruent, orientation.
+- **Practice activities**: plot and read coordinates in all four quadrants; draw and translate shapes on the coordinate plane; reflect shapes in the x-axis and y-axis; describe transformations using precise movement language; connect coordinate rules to visual movement; solve shape-position puzzles.
+- **Teacher prompts**: Which coordinate is read first? How does the sign change across this axis? What stays the same after a translation? How can a rule describe every point?
+- **Work product**: a coordinate transformation page with plotted points, a translated shape, a reflected shape, and a written rule for one movement.
+
+## Chapter 7: Measurement, Area, Volume, and Angles
+- **Key concepts**: unit conversion, perimeter, area, parallelogram, triangle, volume, cube, cuboid, radius, diameter, circumference, angle fact.
+- **Practice activities**: convert length, mass, volume, capacity, and time using decimals to three places where appropriate; calculate area of rectangles, triangles, and parallelograms; calculate volume of cubes and cuboids; compare shapes with equal area and different perimeter; draw shapes from dimensions and angles; find missing angles in triangles, quadrilaterals, regular polygons, straight lines, points, and vertically opposite pairs; identify parts of circles.
+- **Teacher prompts**: Which formula fits this shape and why? How can we decompose the area? What unit is cubic? Which angle fact proves the missing value? How are radius and diameter related?
+- **Work product**: a geometry and measurement case file with conversions, one area calculation, one volume calculation, a missing-angle proof, and a circle diagram.
+
+## Chapter 8: Statistics, Readiness, and Problem Solving
+- **Key concepts**: mean, distribution, pie chart, line graph, table, sample, comparison, multi-step, strategy, justification.
+- **Practice activities**: interpret and construct line graphs and pie charts; calculate and interpret the mean; compare data sets using average and spread informally; solve multi-step problems that combine number, ratio, geometry, and statistics; annotate worked examples; write exam-style explanations; practise selecting the first useful representation for unfamiliar questions.
+- **Teacher prompts**: What does the graph show and what does it hide? Is the mean useful here? Which representation should come first? How can you prove the answer is reasonable?
+- **Work product**: a readiness portfolio page with one statistical display, a mean calculation, a multi-step mixed-topic problem, a checked solution, and a reflection on strategy.
+
+## Capstone
+Create a "Secondary Maths Readiness Project" around a school enterprise, community map, sports analytics board, or design challenge. Teams must use large-number calculations, integer reasoning, fractions-decimals-percentages, ratio or rate, an expression or equation, coordinate geometry, measurement with area or volume, angle reasoning, and a statistical display. The final presentation should show models, symbols, checks, and a concise explanation of one difficult decision.
+
+## Assessment Ideas
+- Observe whether children use place-value, integer, and estimation language accurately when numbers become large or cross zero.
+- Use short conferences to hear calculation choices, remainder interpretation, order-of-operations reasoning, and inverse checks.
+- Review fraction, decimal, percentage, and ratio work for flexible equivalence, accurate models, proportional reasoning, and sensible units.
+- Assess algebra readiness through variable meaning, equation balance, formula substitution, sequence rules, and systematic value-pair searches.
+- Check coordinate, geometry, measurement, and statistics tasks for precision, tool use, formula reasoning, transformation language, graph interpretation, and clear conclusions.
+- Grade the capstone on mathematical accuracy, independence, representation quality, reasoning, checking, readiness for secondary notation, and teamwork.
+
+## Research Notes
+- The UK National Curriculum primary mathematics programme of study emphasizes Year 6 fluency, reasoning, problem solving, ratio and proportion, algebra, fractions, decimals, percentages, geometry, measurement, and statistics: https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study
+- Common Core Grade 6 mathematics includes ratios and rates, the number system, expressions and equations, geometry, and statistics as a bridge into middle-school mathematics: https://www.corestandards.org/Math/Content/6/introduction/
+- NCETM primary mastery materials emphasize representations, variation, precise language, connected facts, and whole-class reasoning before procedural acceleration: https://www.ncetm.org.uk/classroom-resources/primm-primary-mastery-professional-development/
+- Learners moving toward secondary maths benefit from explicit links between models and symbols, retrieval practice, number talk, worked-example discussion, and low-stakes mixed review.

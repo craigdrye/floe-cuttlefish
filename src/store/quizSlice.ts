@@ -1,10 +1,16 @@
 import type { StateCreator } from 'zustand'
-import type { AppState, QuizSlice } from './types'
+import type { AppScreen, AppState, QuizSlice } from './types'
 
 export const createQuizSlice: StateCreator<AppState, [], [], QuizSlice> = (set) => ({
   selectedAge: 'career',
   selectedStageDetail: null,
   selectedDiscipline: 'All',
+  onboardingAge: 18,
+  onboardingUsername: '',
+  onboardingEmail: '',
+  onboardingMode: 'both',
+  selectedInterests: [],
+  selectedAdultFocus: [],
   index: 0,
   selectedAnswerId: null,
   showHint: false,
@@ -24,6 +30,24 @@ export const createQuizSlice: StateCreator<AppState, [], [], QuizSlice> = (set) 
   setSelectedAge: (age) => set({ selectedAge: age }),
   setSelectedStageDetail: (detail) => set({ selectedStageDetail: detail }),
   setSelectedDiscipline: (discipline) => set({ selectedDiscipline: discipline }),
+  setOnboardingAge: (age) => set({ onboardingAge: age }),
+  setOnboardingUsername: (username) => set({ onboardingUsername: username }),
+  setOnboardingEmail: (email) => set({ onboardingEmail: email }),
+  setOnboardingMode: (mode) => set({ onboardingMode: mode }),
+  setSelectedInterests: (interests) => set({ selectedInterests: interests }),
+  toggleSelectedInterest: (interest) =>
+    set((state) => ({
+      selectedInterests: state.selectedInterests.includes(interest)
+        ? state.selectedInterests.filter((item) => item !== interest)
+        : [...state.selectedInterests, interest],
+    })),
+  setSelectedAdultFocus: (focus) => set({ selectedAdultFocus: focus }),
+  toggleSelectedAdultFocus: (focus) =>
+    set((state) => ({
+      selectedAdultFocus: state.selectedAdultFocus.includes(focus)
+        ? state.selectedAdultFocus.filter((item) => item !== focus)
+        : [...state.selectedAdultFocus, focus],
+    })),
 
   setIndex: (index) =>
     set((state) => ({
@@ -124,15 +148,24 @@ export const createQuizSlice: StateCreator<AppState, [], [], QuizSlice> = (set) 
     }),
 
   goHome: () =>
-    set({
-      showWelcome: false,
-      showAudience: false,
-      showProfile: false,
-      showQuestionnaire: false,
-      selectedTrack: null,
-      screen: 'map',
-      selectedAnswerId: null,
-      showHint: false,
-      showLesson: false,
+    set((state) => {
+      const inStandaloneGame = state.screen === 'pong' || state.screen === 'invaders' || state.screen === 'present' || state.screen === 'slots' || state.screen === 'fight' || state.screen === 'wordle' || state.screen === 'quordle' || state.screen === 'octordle' || state.screen === 'connections' || state.screen === 'letterboxed' || state.screen === 'waffle' || state.screen === 'g2048' || state.screen === 'g2248' || state.screen === 'nerdle' || state.screen === 'sumplete' || state.screen === 'sudoku' || state.screen === 'kakuro' || state.screen === 'rikudo'
+      const inGuessTrack = state.selectedTrack?.startsWith('guess') ?? false
+      const targetScreen: AppScreen =
+        inStandaloneGame || inGuessTrack ? 'games' :
+        state.selectedTrack ? 'courses' :
+        'hub'
+      return {
+        showWelcome: false,
+        showAudience: false,
+        showInterests: false,
+        showProfile: false,
+        showQuestionnaire: false,
+        selectedTrack: null,
+        screen: targetScreen,
+        selectedAnswerId: null,
+        showHint: false,
+        showLesson: false,
+      }
     }),
 })

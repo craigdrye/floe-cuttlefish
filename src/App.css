@@ -12,6 +12,22 @@
 @import './styles/tracks.css';
 @import './styles/map.css';
 @import './styles/trainer.css';
+@import './styles/pong.css';
+@import './styles/present.css';
+@import './styles/slots.css';
+@import './styles/fight.css';
+@import './styles/wordle.css';
+@import './styles/connections.css';
+@import './styles/letterboxed.css';
+@import './styles/waffle.css';
+@import './styles/game-rules.css';
+@import './styles/game2048.css';
+@import './styles/nerdle.css';
+@import './styles/sumplete.css';
+@import './styles/sudoku.css';
+@import './styles/kakuro.css';
+@import './styles/rikudo.css';
+@import './styles/game2248.css';
 
 /* ═══ GLOBAL LAYOUT ═══ */
 

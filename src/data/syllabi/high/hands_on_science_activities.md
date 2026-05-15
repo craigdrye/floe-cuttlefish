@@ -1,39 +1,63 @@
 # Hands-on Science Activities
-**ID**: `handsOnScience` · **Discipline**: Science · **Year**: 10 (ages 14–15)
+**ID**: `handsOnScience` · **Discipline**: Science · **Year**: 10 (ages 14-15)
 
-## Course Philosophy
-This course focuses on practical, project-based science experiments that can be done with household items or basic lab equipment. The goal is to reinforce the scientific method (hypothesis, variable control, data collection, and conclusion) through physical interaction rather than textbook theory.
+## Course Aim
+Make science feel like something students can do with simple tools, careful measurements, and better questions. This course is a bridge between curiosity and disciplined investigation: students build, test, observe, record, revise, and explain.
 
-## Module 1: The Scientific Method & Measurement (20%)
-- The classic egg drop challenge: investigating impulse and momentum
-- Designing a fair test: identifying independent, dependent, and control variables
-- Precision vs Accuracy in measurement
-- **Questions**: Identifying variables in experimental designs, evaluating why an experiment failed
+## Course Design Notes
+This course should absorb practical science questions from across the archive, especially activities that do not fit cleanly into biology, chemistry, physics, or Earth science. Route questions here when they involve experimental design, measurement, home-safe investigations, engineering challenges, science fairs, or cross-disciplinary lab practice.
 
-## Module 2: Physics in Action (20%)
-- Building a simple catapult or trebuchet (exploring potential to kinetic energy)
-- Constructing a basic circuit (batteries, wires, bulbs) to test conductivity of household materials
-- Paper airplane aerodynamics (thrust, lift, drag, gravity)
-- **Questions**: Energy conversion analysis, identifying conductors vs insulators, aerodynamic forces
+## Chapter 1: Lab Safety, Measurement, and Question Design
+- **Key concepts**: Safe practice, independent and dependent variables, controls, repeated trials, measurement tools, SI units, uncertainty, and testable questions.
+- **Practice questions**: Identify unsafe steps; rewrite vague curiosity into a testable question; choose appropriate units and tools.
+- **Student output**: A lab setup checklist and a one-page investigation plan.
 
-## Module 3: Chemistry in the Kitchen (20%)
-- Baking soda and vinegar volcano (acid-base reactions)
-- Extracting DNA from a strawberry using dish soap and rubbing alcohol
-- Growing salt or sugar crystals (supersaturated solutions)
-- **Questions**: Identifying signs of a chemical reaction, explaining solubility and supersaturation
+## Chapter 2: Motion, Forces, and Engineering Challenges
+- **Key concepts**: Motion measurement, friction, force, stability, energy transfer, constraints, prototypes, fair tests, and redesign.
+- **Practice questions**: Compare prototype data; explain why a design changed performance; interpret simple motion graphs.
+- **Student output**: A build-test-redesign log for a vehicle, launcher, tower, bridge, or similar physics challenge.
 
-## Module 4: Biology & The Environment (20%)
-- Building a terrarium: understanding the water cycle and closed ecosystems
-- Testing the pH of soil or local water sources using red cabbage indicator
-- Investigating phototropism (plants growing toward light) using a shoebox maze
-- **Questions**: Explaining the water cycle in a closed system, interpreting pH results
+## Chapter 3: Circuits, Energy, and Sensors
+- **Key concepts**: Current, voltage, resistance, simple circuits, switches, conductors, energy transfer, sensors, calibration, and safe low-voltage testing.
+- **Practice questions**: Diagnose circuit failures; predict brightness or measurement changes; compare sensor readings.
+- **Student output**: A working circuit or sensor demo with a schematic and troubleshooting notes.
 
-## Module 5: Engineering & Design (20%)
-- The spaghetti and marshmallow tower challenge (exploring structural integrity and triangles)
-- Building a water filter using sand, gravel, and charcoal
-- Constructing a simple wind turbine
-- **Questions**: Explaining why triangles are strong shapes, analyzing filtration mechanisms
+## Chapter 4: Kitchen Chemistry and Materials
+- **Key concepts**: Solutions, concentration, pH, reaction evidence, temperature change, polymers, crystals, mixtures, separation methods, and material properties.
+- **Practice questions**: Identify evidence of reaction; design a fair comparison of materials; interpret pH or temperature data.
+- **Student output**: A home-safe chemistry investigation report with photos or sketches, data, and limitations.
 
-## Stretch Zone
-- Introduction to Arduino or Raspberry Pi (basic physical computing)
-- Designing a controlled experiment to test a completely novel hypothesis
+## Chapter 5: Life Science Observations and Micro-Investigations
+- **Key concepts**: Observation protocols, classification, growth conditions, variables in living systems, microscopy or magnification, ethics, and noninvasive study design.
+- **Practice questions**: Improve an observation method; compare growth or behavior data; avoid overclaiming from small samples.
+- **Student output**: A structured observation journal and a short evidence-based explanation.
+
+## Chapter 6: Earth, Weather, and Environmental Fieldwork
+- **Key concepts**: Weather data, soil and water observations, maps, sampling sites, local environmental indicators, citizen science, and data quality.
+- **Practice questions**: Choose sampling locations; interpret environmental measurements; separate local variation from broader pattern claims.
+- **Student output**: A fieldwork data sheet and map-based mini-report.
+
+## Chapter 7: Science Fair and Independent Investigation Design
+- **Key concepts**: Research background, hypothesis, methods, variables, sample size, data displays, troubleshooting, reproducibility, and responsible conclusions.
+- **Practice questions**: Critique a science fair plan; select the best graph; revise a conclusion to match the evidence.
+- **Student output**: A complete independent investigation proposal ready for teacher approval.
+
+## Chapter 8: Maker Science Studio
+- **Key concepts**: Iteration, documentation, peer critique, materials constraints, risk assessment, explaining failure, and public demonstration.
+- **Practice questions**: Debug a failed build; choose what to test next; justify a design tradeoff with evidence.
+- **Student output**: A final demonstration, poster, or notebook entry showing the path from first idea to revised result.
+
+## Capstone
+Students complete a hands-on investigation or build. The final artifact must include a question or design goal, method, data, a revised decision, and a short explanation of what they would test next.
+
+## Assessment Ideas
+- Lab notebooks checked for planning, data, revision, and safety.
+- Quick design critiques before students build.
+- Gallery walks where peers ask evidence-focused questions.
+- A final project scored on method quality, data honesty, iteration, and explanation.
+
+## Research Notes
+- Science Buddies science fair project guide: https://www.sciencebuddies.org/science-fair-projects/science-fair
+- GLOBE Program for student environmental observations: https://www.globe.gov/
+- NIST SI measurement resources: https://www.nist.gov/pml/owm/metric-si
+- NGSS science and engineering practices overview: https://www.nextgenscience.org/sites/default/files/resource/files/Appendix%20F%20%20Science%20and%20Engineering%20Practices%20in%20the%20NGSS%20-%20FINAL%20060513.pdf

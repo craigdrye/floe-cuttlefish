@@ -1,50 +1,63 @@
 # Middle School Physics
-**ID**: `middleSchoolPhysics` · **Discipline**: Science · **Year**: 9 (ages 13–14)
+**ID**: `middleSchoolPhysics` · **Discipline**: Science · **Year**: 9 (ages 13-14)
 **Frameworks**: US NGSS Middle School Physical Science, UK KS3 Physics
 
-## Course Philosophy
-This course introduces the fundamental laws of nature governing motion, forces, and energy. It emphasizes conceptual understanding and basic mathematical application (e.g., v = d/t) to explain everyday phenomena.
+## Course Aim
+Give students a first physics toolkit for explaining motion, forces, energy, waves, electricity, and magnetism. The course emphasizes careful observation, simple measurement, graphs, diagrams, and everyday examples before heavy algebra.
 
-## Module 1: Forces and Motion (25%)
-- Describing motion: position, distance, displacement, speed, velocity, and acceleration
-- Calculating average speed (v = d/t) and interpreting distance-time and velocity-time graphs
-- Newton's First Law (Inertia): an object at rest stays at rest, an object in motion stays in motion unless acted upon by a net force
-- Newton's Second Law (F = ma): the relationship between force, mass, and acceleration
-- Newton's Third Law: for every action, there is an equal and opposite reaction
-- Balanced vs. unbalanced forces and calculating net force
-- **Questions**: Speed calculations, interpreting motion graphs, applying Newton's laws to scenarios
+## Course Design Notes
+Route questions here when they involve speed, graphs, net force, energy transformations, heat transfer, wave properties, light, sound, simple circuits, magnets, or low-stakes engineering design.
 
-## Module 2: Types of Forces (15%)
-- Contact forces: friction, air resistance, tension, normal force
-- Non-contact forces (fields): gravity, magnetism, electrostatic force
-- Mass vs. Weight: W = mg (weight equals mass times gravity)
-- Factors affecting friction and how to increase/decrease it
-- **Questions**: Identifying force types, mass vs weight calculations (Earth vs Moon)
+## Chapter 1: Motion, Measurement, and Graphs
+- **Key concepts**: Position, distance, displacement, speed, velocity, acceleration, units, proportional reasoning, distance-time graphs, and velocity-time graphs.
+- **Practice questions**: Calculate average speed; read motion graphs; describe motion in words from data.
+- **Student output**: A motion lab using a ramp, video, sensor, or provided dataset with one graph and one explanation.
 
-## Module 3: Energy Types and Transformations (25%)
-- Forms of energy: kinetic, potential (gravitational, elastic, chemical), thermal, light, sound, electrical
-- The Law of Conservation of Energy: energy cannot be created or destroyed, only transformed
-- Tracing energy transformations in systems (e.g., a rollercoaster, a flashlight)
-- Heat transfer: conduction (solids), convection (fluids), radiation (empty space)
-- **Questions**: Identifying energy forms, tracing energy chains, conduction/convection/radiation scenarios
+## Chapter 2: Forces and Newton's Laws
+- **Key concepts**: Pushes and pulls, contact and non-contact forces, balanced and unbalanced forces, net force, inertia, mass, acceleration, and force diagrams.
+- **Practice questions**: Draw free-body diagrams; calculate net force; apply Newton's laws to everyday motion.
+- **Student output**: A force explanation sheet for three scenarios, each with a diagram and short reasoning.
 
-## Module 4: Waves: Light and Sound (20%)
-- Wave properties: amplitude, wavelength, frequency, wave speed
-- Mechanical waves (sound) vs Electromagnetic waves (light)
-- Sound: requires a medium, travels longitudinally, pitch (frequency) and volume (amplitude)
-- Light: travels transversely, reflection (law of reflection), refraction (bending of light), absorption
-- The visible spectrum and how we see color (reflection of specific wavelengths)
-- **Questions**: Wave property definitions, sound vs light travel, refraction scenarios
+## Chapter 3: Gravity, Friction, and Fields
+- **Key concepts**: Gravity, mass versus weight, friction, air resistance, normal force, tension, magnetic force, electrostatic force, and fields as invisible interactions.
+- **Practice questions**: Compare mass and weight; identify friction effects; explain attraction and repulsion.
+- **Student output**: A force-type gallery showing examples, evidence, and how each force changes motion.
 
-## Module 5: Electricity and Magnetism (15%)
-- Static electricity: electron transfer, attraction and repulsion of charges
-- Current electricity: voltage (push), current (flow), and resistance (opposition)
-- Series vs. Parallel circuits: how current and voltage behave in each
-- Magnetic poles and magnetic fields
-- Electromagnets: how moving charges create magnetic fields and how to increase their strength
-- **Questions**: Series vs parallel circuit analysis, static charge scenarios, electromagnet strength factors
+## Chapter 4: Energy Stores and Transfers
+- **Key concepts**: Kinetic, gravitational, elastic, chemical, thermal, light, sound, and electrical energy; conservation of energy; efficiency; and energy-transfer diagrams.
+- **Practice questions**: Trace energy transformations; identify wasted energy; compare energy before and after a change.
+- **Student output**: An energy-transfer diagram for a device, activity, or classroom build.
 
-## Stretch Zone
-- Ohm's Law (V = IR) calculations
-- Calculating kinetic energy ($KE = \frac{1}{2}mv^2$) and gravitational potential energy ($GPE = mgh$)
-- Simple machines (levers, pulleys) and mechanical advantage
+## Chapter 5: Heat Transfer and Materials
+- **Key concepts**: Temperature, thermal energy, conduction, convection, radiation, insulation, specific heat qualitatively, and material properties.
+- **Practice questions**: Identify heat-transfer mechanisms; compare insulators and conductors; explain temperature data.
+- **Student output**: A thermal-design challenge report with test data and a redesign note.
+
+## Chapter 6: Waves, Sound, and Light
+- **Key concepts**: Wavelength, frequency, amplitude, wave speed, reflection, refraction, absorption, transmission, sound waves, light waves, and the visible spectrum.
+- **Practice questions**: Label wave diagrams; compare sound and light; predict what happens at a boundary.
+- **Student output**: A wave-demonstration explainer using a diagram, observation, and vocabulary accurately.
+
+## Chapter 7: Electricity and Magnetism
+- **Key concepts**: Static charge, current, voltage, resistance, conductors, insulators, series and parallel circuits, magnetic poles, electromagnets, and safe circuit building.
+- **Practice questions**: Diagnose simple circuit diagrams; compare series and parallel circuits; predict how to strengthen an electromagnet.
+- **Student output**: A circuit or electromagnet lab with schematic, measurements, and troubleshooting notes.
+
+## Chapter 8: Physics Design Studio
+- **Key concepts**: Design constraints, variables, fair tests, iteration, measurement quality, tradeoffs, and evidence-based redesign.
+- **Practice questions**: Improve a flawed test; choose the best metric; explain why a redesign should work.
+- **Student output**: A final physics build or investigation with data, diagram, and revised explanation.
+
+## Capstone
+Students choose an everyday phenomenon or simple device and explain it using at least three physics ideas from the course.
+
+## Assessment Ideas
+- Diagram-and-explain checks for forces, energy, waves, and circuits.
+- Short graph interpretation and calculation prompts.
+- Lab notebooks that reward measurement quality and revision.
+- A final design defense focused on evidence, not decoration.
+
+## Research Notes
+- NGSS middle school physical science performance expectations: https://my.nsta.org/ngss/full/Ms-Physical-Sciences.aspx
+- PhET middle-school-friendly physics simulations: https://phet.colorado.edu/en/simulations/filter?subjects=physics
+- OpenStax Physical Science for reference readings: https://openstax.org/details/books/physical-science

@@ -8,7 +8,7 @@ import { TopBar } from '../layout/TopBar'
 import { SpeakerPortrait, type SpeakerRole } from '../common/SpeakerPortrait'
 import { XpPopup } from '../common/XpPopup'
 import { calculateExpression } from '../../lib/mathUtils'
-import { playComboSound, playSuccessSound, playWrongSound } from '../../lib/audio'
+import { playComboSound, playRewardVoiceSound, playSuccessSound, playWrongSound } from '../../lib/audio'
 import { bossRewardFor, bossTitleFor } from '../../lib/rewardSystem'
 import type { Answer } from '../../data/questionCatalog/types'
 
@@ -187,7 +187,7 @@ export function TrainerScreen() {
   } = useStore()
 
   const {
-    selectedTrackInfo, activeSet, baseQuestion, question, visibleAnswers, remixSeed, catalogError
+    selectedTrackInfo, isSelectedCatalogReady, activeSet, baseQuestion, question, visibleAnswers, remixSeed, catalogError
   } = useQuizData()
 
   const QUESTIONS_PER_STAGE = 4
@@ -226,6 +226,7 @@ export function TrainerScreen() {
     return pickQuickBriefingSpeaker(question.id, remixSeed)
   }, [question.kind, question.id, question.briefing, remixSeed])
   const successHeadline = useMemo(() => pickSuccessHeadline(question.id, remixSeed), [question.id, remixSeed])
+  const questionMedia = question.media ? (Array.isArray(question.media) ? question.media : [question.media]) : []
 
   useEffect(() => {
     if (!showBossIntro) return
@@ -265,6 +266,7 @@ export function TrainerScreen() {
       updateReview(question.id, showHint ? 3 : 5)
       const newCombo = combo + 1
       playComboSound(newCombo)
+      playRewardVoiceSound(newCombo >= 3 ? 'combo' : 'success')
       clearMisconception(question.id)
       const firstSolve = !progress.solved.includes(question.id)
       const bossBonus = isBossBattle && firstSolve && !bossAlreadyWon ? bossRewardFor(stageNumber, progress.streak) : 0
@@ -343,29 +345,20 @@ export function TrainerScreen() {
 
   const nextQuestion = () => {
     setLastXpGain(null)
-    if (isCorrect) {
-      const nextIndex = index + 1
-      const currentStage = Math.floor(index / QUESTIONS_PER_STAGE)
-      const nextStage = Math.floor(nextIndex / QUESTIONS_PER_STAGE)
-      const stageJustCompleted = nextStage > currentStage
+    const nextIndex = index + 1
+    const currentStage = Math.floor(index / QUESTIONS_PER_STAGE)
+    const nextStage = Math.floor(nextIndex / QUESTIONS_PER_STAGE)
+    const stageJustCompleted = nextStage > currentStage
 
-      if (mode === 'daily' && (nextIndex >= activeSet.length || stageJustCompleted)) {
-        if (stageJustCompleted) setPendingStageCelebration(currentStage + 1)
-        setScreen('map')
-        if (nextIndex < activeSet.length) setIndex(nextIndex)
-      } else {
-        setIndex((c) => (c + 1) % activeSet.length)
-      }
-      incrementAnswerShuffleSeed()
-      setSelectedAnswerId(null)
-      setArmedAnswerId(null)
-      setShowHint(false)
-      setShowLesson(false)
-      return
+    if (isCorrect && mode === 'daily' && (nextIndex >= activeSet.length || stageJustCompleted)) {
+      if (stageJustCompleted) setPendingStageCelebration(currentStage + 1)
+      setScreen('map')
+      if (nextIndex < activeSet.length) setIndex(nextIndex)
+    } else {
+      setIndex((c) => (c + 1) % activeSet.length)
     }
 
-    if (mode !== 'daily') setIndex((c) => (c + 1) % activeSet.length)
-    setScreen('map')
+    incrementAnswerShuffleSeed()
     setSelectedAnswerId(null)
     setArmedAnswerId(null)
     setShowHint(false)
@@ -395,6 +388,36 @@ export function TrainerScreen() {
 
   const appendCalculatorToken = (token: string) => {
     setCalculatorInput(`${calculatorInput}${token}`)
+  }
+
+  if (!isSelectedCatalogReady) {
+    return (
+      <main className="app-shell">
+        <TopBar title={selectedTrackInfo.title} />
+        <section className="dashboard">
+          <article className="mission">
+            <div className="mission-copy">
+              <p className="eyebrow">Loading quiz bank</p>
+              <h2>{selectedTrackInfo.title}</h2>
+              <p>Pulling in the question set for this course now.</p>
+            </div>
+          </article>
+        </section>
+      </main>
+    )
+  }
+
+  if (catalogError || activeSet.length === 0) {
+    return (
+      <main className="app-shell">
+        <TopBar title={selectedTrackInfo.title} />
+        <div className="catalog-error">
+          <h3>Questions failed to load</h3>
+          <p>{catalogError ?? `No playable questions found for ${selectedTrackInfo.title}.`}</p>
+          <button className="secondary" onClick={() => setScreen('map')}>Back to map</button>
+        </div>
+      </main>
+    )
   }
 
   return (
@@ -474,6 +497,20 @@ export function TrainerScreen() {
               <BookOpen size={19} />
               <div className="prompt-copy">
                 <p className="question-prompt">{question.prompt}</p>
+                {question.difficulty && (
+                  <span className={`difficulty-chip difficulty-${question.difficulty}`}>{question.difficulty}</span>
+                )}
+                {questionMedia.length > 0 && (
+                  <div className={`question-media-grid question-media-count-${questionMedia.length}`}>
+                    {questionMedia.map((item) => (
+                      <figure className="question-media" key={`${item.label ?? item.alt}-${item.src.slice(0, 36)}`}>
+                        {item.label && <strong>{item.label}</strong>}
+                        <img src={item.src} alt={item.alt} />
+                        {item.caption && <figcaption>{item.caption}</figcaption>}
+                      </figure>
+                    ))}
+                  </div>
+                )}
                 {question.setup && question.setup.length > 0 && (
                   <div className="question-setup">
                     <strong>Setup</strong>
@@ -601,7 +638,7 @@ export function TrainerScreen() {
 
             <div className="actions-primary">
               <button className="primary" disabled={!selectedAnswerId} onClick={nextQuestion}>
-                {isCorrect ? 'Next question' : 'Back to map'}
+                Next question
               </button>
             </div>
 

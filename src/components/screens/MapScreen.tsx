@@ -1,9 +1,9 @@
-import { useMemo, useState, useEffect } from 'react'
+import { useMemo, useState, useEffect, useRef } from 'react'
 import { Flame, Repeat2, Sparkles, Headphones, CheckCircle2, Map, ArrowLeft, Trophy } from 'lucide-react'
 import { useStore } from '../../store/useStore'
 import { useQuizData } from '../../hooks/useQuizData'
 import { mapScenery } from '../../lib/mapData'
-import { playFanfare } from '../../lib/audio'
+import { playFanfare, playRewardVoiceSound } from '../../lib/audio'
 import { TopBar } from '../layout/TopBar'
 
 const floeFrames = [
@@ -40,6 +40,7 @@ export function MapScreen() {
   const [floeFrame, setFloeFrame] = useState(0)
   const [swimStage, setSwimStage] = useState<number | null>(null)
   const [swimState, setSwimState] = useState<'idle' | 'pause' | 'swimming'>('idle')
+  const lastRewardVoiceStage = useRef<number | null>(null)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -65,6 +66,12 @@ export function MapScreen() {
     }, 3600)
     return () => window.clearTimeout(timer)
   }, [swimStage, swimState])
+
+  useEffect(() => {
+    if (!pendingStageCelebration || lastRewardVoiceStage.current === pendingStageCelebration) return
+    lastRewardVoiceStage.current = pendingStageCelebration
+    playRewardVoiceSound('stage')
+  }, [pendingStageCelebration])
 
   const chapters = useMemo(() => chapterGroups.map((group) => group.label), [chapterGroups])
 
@@ -102,6 +109,18 @@ export function MapScreen() {
     setSwimState('pause')
   }
 
+  const launchGuessTheThingReward = () => {
+    setPendingStageCelebration(null)
+    setSelectedTrack('guessTheThing')
+    setSelectedChapter(null)
+    setMode('daily')
+    setIndex(0)
+    setSelectedAnswerId(null)
+    setShowHint(false)
+    setScreen('map')
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   const goBack = () => {
     setSelectedTrack(null)
   }
@@ -132,11 +151,18 @@ export function MapScreen() {
           <div className="stage-complete-card">
             <img src="/assets/welcome/welcome-cuttlefish-explorer.png" alt="" />
             <p className="eyebrow">Stage {pendingStageCelebration} cleared</p>
-            <h2>Floe found a shortcut through the reef.</h2>
-            <p>That was a clean little victory. Take the dopamine, then keep the route warm.</p>
-            <button onClick={continueStageComplete} type="button">
-              <Trophy size={16} /> Continue the dive
-            </button>
+            <h2>Reward level unlocked.</h2>
+            <p>That was a clean little victory. Take the dopamine, or play a silly visual bonus round.</p>
+            <div className="stage-complete-actions">
+              {selectedTrackInfo.id !== 'guessTheThing' && (
+                <button className="bonus-reward-button" onClick={launchGuessTheThingReward} type="button">
+                  <Sparkles size={16} /> Guess the Thing
+                </button>
+              )}
+              <button onClick={continueStageComplete} type="button">
+                <Trophy size={16} /> Continue the dive
+              </button>
+            </div>
           </div>
         </div>
       )}

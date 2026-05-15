@@ -1,48 +1,60 @@
 # Philosophy of Science
-**ID**: `philSophomore` · **Discipline**: Humanities · **Year**: University Sophomore
+**ID**: `philSophomore` - **Discipline**: Humanities - **Year**: University Sophomore
 
-## Course Philosophy
-This course examines the philosophical foundations, methods, and implications of science. It asks fundamental questions: What distinguishes science from pseudoscience? How does scientific knowledge grow? And what is the relationship between scientific theories and the objective world?
+## Course Aim
+Examine how science works, what makes it reliable, where its limits lie, and how scientific knowledge changes. Students study induction, demarcation, explanation, realism, theory change, evidence, values, and special sciences through historical and contemporary cases.
 
-## Module 1: The Problem of Demarcation and Induction (20%)
-- What is Science? The Demarcation Problem (Science vs Pseudoscience)
-- David Hume and the Problem of Induction: Can we rationally justify extrapolating from past experiences to future events?
-- Logical Positivism and the Verification Principle (the Vienna Circle)
-- Karl Popper and Falsificationism: Science progresses not by proving theories true, but by proving them false
-- **Questions**: Applying Popper's falsification to astrology vs astronomy, explaining Hume's critique of inductive reasoning
+## Course Design Notes
+Route questions here when they involve science versus pseudoscience, induction, falsification, paradigms, realism, anti-realism, explanation, laws, confirmation, Bayesian reasoning, values in science, reduction, biology, physics, psychology, or science communication. Keep examples concrete and historically grounded.
 
-## Module 2: Scientific Revolutions and Paradigms (20%)
-- Thomas Kuhn and *The Structure of Scientific Revolutions*
-- Normal Science vs Revolutionary Science
-- The concept of a "Paradigm" and "Paradigm Shifts"
-- Incommensurability: The idea that differing paradigms cannot be strictly compared or translated
-- Imre Lakatos and Scientific Research Programmes (Core beliefs vs protective belts)
-- Paul Feyerabend: Epistemological Anarchism ("Anything goes")
-- **Questions**: Identifying a historical paradigm shift (e.g., Ptolemaic to Copernican astronomy), evaluating Kuhn's claim of incommensurability
+## Chapter 1: Science, Induction, and Demarcation
+**Key concepts**: Science, pseudoscience, induction, Hume, verification, falsification, Popper, prediction, auxiliary hypothesis, risky test, and demarcation problem.
+**Practice questions**: Apply falsifiability to cases; explain Hume's problem; compare verification and falsification; identify ad hoc rescue moves.
+**Student output**: A demarcation case brief on a disputed scientific or pseudoscientific claim.
 
-## Module 3: Scientific Realism vs Anti-Realism (20%)
-- Scientific Realism: Theories aim to describe an objective reality; successful theories are approximately true
-- The "No Miracles" argument for Realism (Putnam)
-- Anti-Realism (Instrumentalism): Theories are merely useful tools for making predictions, not true descriptions of unobservable reality
-- Constructive Empiricism (Bas van Fraassen): Science aims only at empirical adequacy
-- The Pessimistic Meta-Induction: Past successful theories (e.g., phlogiston, caloric) were proven false, so current ones likely will be too
-- **Questions**: Defending realism against the Pessimistic Meta-Induction, applying instrumentalism to quantum mechanics
+## Chapter 2: Evidence, Confirmation, and Bayesian Reasoning
+**Key concepts**: Evidence, confirmation, probability, prior, likelihood, posterior, Bayes' theorem, base rate, confidence, replication, p-value, and statistical significance.
+**Practice questions**: Interpret evidence updates; compare strong and weak confirmation; explain why surprising evidence matters; identify statistical overclaims.
+**Student output**: A confirmation analysis using one clinical, physics, psychology, or public-health example.
 
-## Module 4: Explanation, Laws, and Evidence (20%)
-- The Deductive-Nomological (D-N) model of scientific explanation (Hempel)
-- Causation and causal mechanisms in science
-- What is a "Law of Nature"? (Regularity theory vs Necessitarianism)
-- Confirmation Theory: Bayesian epistemology and updating probabilities based on new evidence ($P(H|E) = P(E|H)P(H)/P(E)$)
-- The Quine-Duhem Thesis: Hypotheses cannot be tested in isolation (Confirmation Holism)
-- **Questions**: Applying Bayesian updating to a clinical trial, explaining why the D-N model fails in cases of asymmetry (the flagpole shadow problem)
+## Chapter 3: Explanation, Laws, and Causation
+**Key concepts**: Scientific explanation, deductive-nomological model, law of nature, causation, mechanism, counterfactual, unification, asymmetry problem, and causal model.
+**Practice questions**: Test the covering-law model; explain the flagpole-shadow problem; compare law-based and mechanism-based explanations; distinguish correlation from cause.
+**Student output**: An explanation comparison memo for one scientific phenomenon.
 
-## Module 5: Philosophy of the Special Sciences (20%)
-- Philosophy of Biology: What is a species? Evolutionary psychology, reductionism vs emergentism
-- Philosophy of Physics: Interpretations of Quantum Mechanics (Copenhagen vs Many-Worlds), the nature of space and time (Relational vs Substantival)
-- Philosophy of Cognitive Science/Psychology: The mind-body problem in empirical research, behaviorism vs functionalism
-- Values in Science: Is science truly objective and value-free? Feminist philosophy of science (Helen Longino)
-- **Questions**: Analyzing the role of social values in theory selection, evaluating the Many-Worlds interpretation of quantum mechanics
+## Chapter 4: Kuhn, Lakatos, and Scientific Change
+**Key concepts**: Normal science, anomaly, paradigm, crisis, revolution, incommensurability, research programme, hard core, protective belt, progressive problemshift, degenerating problemshift, and Feyerabend.
+**Practice questions**: Identify a paradigm shift; evaluate incommensurability; compare Kuhn and Lakatos; explain whether "anything goes" is a serious methodological claim.
+**Student output**: A historical case study of theory change with timeline, evidence, and philosophical interpretation.
 
-## Stretch Zone
-- Philosophy of Mathematics (Platonism vs Formalism)
-- The anthropic principle in cosmology
+## Chapter 5: Realism, Anti-Realism, and Models
+**Key concepts**: Scientific realism, instrumentalism, constructive empiricism, no-miracles argument, pessimistic meta-induction, unobservable, empirical adequacy, model, idealization, and representation.
+**Practice questions**: Defend realism against past failed theories; apply instrumentalism to quantum mechanics or climate models; explain how idealized models can still teach us.
+**Student output**: A realism debate brief using one case from physics, biology, or climate science.
+
+## Chapter 6: Values, Objectivity, and Social Science of Science
+**Key concepts**: Objectivity, value-free ideal, epistemic value, social value, underdetermination, feminist philosophy of science, standpoint, peer review, replication crisis, bias, and scientific trust.
+**Practice questions**: Identify where values enter science; distinguish good and bad roles for values; evaluate peer review and replication; analyze trust in institutions.
+**Student output**: A values-in-science memo on a policy-relevant research area.
+
+## Chapter 7: Philosophy of the Special Sciences
+**Key concepts**: Reduction, emergence, species concept, adaptation, evolutionary psychology, quantum interpretation, space and time, cognitive science, psychology, economics, and multiple realization.
+**Practice questions**: Compare species concepts; evaluate reductionism; analyze a quantum interpretation claim; discuss whether psychology can reduce to neuroscience.
+**Student output**: A special-science case study showing how methods and explanations differ across disciplines.
+
+## Chapter 8: Science, Society, and Communication
+**Key concepts**: Science communication, uncertainty, risk, consensus, denialism, expertise, public trust, policy, technology, ethics, reproducibility, open science, and responsible innovation.
+**Practice questions**: Communicate uncertainty without implying ignorance; critique a popular science article; explain consensus; identify when policy requires values beyond data.
+**Student output**: A public-facing science explainer with a companion note on uncertainty, evidence, and values.
+
+## Capstone
+Students complete a philosophy of science case study on one scientific controversy, theory change, model, or public-science problem. The project must connect evidence, method, philosophical framework, and social context.
+
+## Assessment Ideas
+Use short argument reconstructions, historical case notes, Bayesian/evidence exercises, article critiques, seminar debates, and a final case study. Assess philosophical accuracy and scientific literacy together.
+
+## Research Notes
+- Stanford Encyclopedia of Philosophy, scientific method: https://plato.stanford.edu/entries/scientific-method/
+- Stanford Encyclopedia of Philosophy, scientific realism: https://plato.stanford.edu/entries/scientific-realism/
+- Internet Encyclopedia of Philosophy, philosophy of science: https://iep.utm.edu/sci-real/
+- Center for Open Science: https://www.cos.io/

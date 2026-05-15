@@ -1,52 +1,66 @@
 # World History Collections
 **Covers**: `col-oer-project-world-history`, `col-world-history-project---origins-to-the-present`, `col-world-history-project---1750-to-the-present`, `col-world-history`
-**Discipline**: Humanities · **Year**: 11 (ages 15–16)
+**Discipline**: Humanities ; **Year**: 11 (ages 15-16)
 **Frameworks**: AP World History / Standard High School World History
 
-## Overview
-Combined syllabus covering global history. This course emphasizes global interconnectedness, the rise and fall of empires, and the impact of technological/economic shifts, rather than a strictly Eurocentric timeline.
+## Course Aim
+Build a global, chronological, and source-driven understanding of world history from early human societies to the present, with attention to regional difference, cross-cultural exchange, empire, belief, technology, environment, revolution, and globalization. Students practice historical thinking by reading sources carefully, comparing societies, tracing change over time, and making evidence-based arguments.
 
-## Module 1: Early Civilizations and Classical Empires (to c. 600 CE) (15%)
-- The Neolithic Revolution and the birth of agriculture
-- Early River Valley Civilizations (Mesopotamia, Egypt, Indus, Shang)
-- The Classical Empires: Rome, Han China, Maurya/Gupta India, and Persia
-- The development and spread of major world religions and philosophies: Hinduism, Buddhism, Judaism, Christianity, Confucianism, Daoism
-- **Questions**: Comparing the fall of Rome to the fall of the Han Dynasty, tracing the Silk Road's early development
+## Course Design Notes
+This combined world history syllabus uses AP World History, World History Project, and OER Project resources as reference points while remaining flexible enough for standard high-school world history collections. The course avoids a single-region storyline by organizing chapters around broad eras, major networks, and recurring themes: state power, belief systems, economic life, migration, technology, social hierarchy, resistance, and environmental change.
 
-## Module 2: Post-Classical Era & Expanding Networks (c. 600 - 1450 CE) (20%)
-- The rise and rapid expansion of Islam; the Umayyad and Abbasid Caliphates
-- The Byzantine Empire and the Great Schism
-- Feudalism in Europe vs Feudalism in Japan
-- Tang and Song China: economic revolutions and technological innovations (gunpowder, paper)
-- The Mongol Empire: conquest, the Pax Mongolica, and the facilitation of trade (and the Black Death)
-- Trade networks: The Silk Road, Indian Ocean trade, and Trans-Saharan routes (Mali, Mansa Musa)
-- **Questions**: Evaluating the impact of the Mongol Empire on global trade, comparing feudal structures
+## Chapter 1: Human Origins, Agriculture, and Early States, to c. 600 BCE
+- **Key concepts**: human migration, foraging, Neolithic Revolution, pastoralism, river valley societies, cities, writing, law codes, social hierarchy, patriarchy, polytheism, early trade, environmental adaptation.
+- **Practice questions**: Why did agriculture emerge in some regions and not others? What advantages and problems came with cities and states? How can historians use artifacts, maps, and fragmentary written sources together?
+- **Student output**: a comparative evidence chart for two early societies, using one visual or archaeological source and one written source where available.
 
-## Module 3: Early Modern Era & Global Interactions (c. 1450 - 1750 CE) (25%)
-- The Gunpowder Empires: Ottoman, Safavid, and Mughal
-- Ming and Qing China; the Tokugawa Shogunate in Japan (isolationism)
-- European Exploration: causes (technology, economics, religion) and the voyages of Columbus, Vasco da Gama
-- The Columbian Exchange: ecological, demographic, and economic impacts
-- The Trans-Atlantic Slave Trade and the Triangle Trade system
-- The Renaissance, Protestant Reformation, and the Scientific Revolution
-- **Questions**: Demographic impacts of the Columbian Exchange, analyzing the consolidation of power in Gunpowder Empires
+## Chapter 2: Classical Civilizations and Belief Systems, c. 600 BCE-600 CE
+- **Key concepts**: empires, citizenship, bureaucracy, slavery, social class, Confucianism, Daoism, Hinduism, Buddhism, Judaism, Christianity, Greek and Roman political thought, Maurya and Gupta India, Han China, Persia, Rome.
+- **Practice questions**: How did classical empires govern diverse populations? Why did major belief systems spread and change? What comparisons can be made between Rome, Han China, and South Asian states without treating them as identical?
+- **Student output**: a comparison paragraph explaining one similarity and one difference between two classical empires or belief systems.
 
-## Module 4: Industrialization and Global Integration (c. 1750 - 1900 CE) (20%)
-- The Enlightenment: Locke, Rousseau, Voltaire and the challenge to absolute monarchy
-- The Age of Revolutions: American, French, Haitian, and Latin American revolutions
-- The Industrial Revolution: origins in Britain, spread to the US/Japan/Russia, and societal impacts (urbanization, labor movements, Marxism)
-- New Imperialism: The Scramble for Africa, British India, and the economic exploitation of Asia (e.g., Opium Wars)
-- **Questions**: Comparing the French and Haitian Revolutions, analyzing the economic motives of 19th-century imperialism
+## Chapter 3: Post-Classical Networks, States, and Religions, c. 600-1200
+- **Key concepts**: Islam, caliphates, Byzantine Empire, Tang and Song China, South and Southeast Asian kingdoms, West African states, European feudalism, Japanese political order, trade diasporas, Silk Roads, Indian Ocean trade, Trans-Saharan trade.
+- **Practice questions**: How did trade networks move goods, ideas, technologies, and disease? How did religious and political authority reinforce or challenge each other? What made the post-classical world more connected than earlier periods?
+- **Student output**: an annotated network map tracing one commodity, technology, or belief across at least three regions.
 
-## Module 5: Accelerating Global Change (c. 1900 - Present) (20%)
-- World War I: M.A.I.N causes, total war, and the Treaty of Versailles
-- The Interwar Period: the Great Depression and the rise of Fascism/Totalitarianism (Hitler, Mussolini, Stalin)
-- World War II: global conflict, the Holocaust, and the atomic bomb
-- The Cold War: ideological struggle (capitalism vs communism), proxy wars (Korea, Vietnam, Afghanistan), and the nuclear arms race
-- Decolonization: India (Gandhi), Africa (Mandela/Apartheid), and the Middle East
-- Globalization: the internet, multinational corporations, climate change, and demographic shifts
-- **Questions**: Tracing the causes of WWI, analyzing the strategies of decolonization movements, evaluating the pros/cons of globalization
+## Chapter 4: Global Convergence and Empire, c. 1200-1450
+- **Key concepts**: Mongol Empire, Pax Mongolica, Afro-Eurasian exchange, Mali and Mansa Musa, city-states, maritime technologies, state-building in the Americas, Inca and Mexica, plague, travel accounts, cultural diffusion.
+- **Practice questions**: Did the Mongol Empire mainly destroy, connect, or transform Afro-Eurasia? How did American states develop in relation to their environments? How should historians evaluate travelers' accounts as evidence?
+- **Student output**: a sourced argument that evaluates the impact of one empire or network from multiple perspectives.
 
-## Stretch Zone
-- Historiography: analyzing how history is written and the biases of primary vs secondary sources
-- Synthesizing long-term continuities and changes across 1000+ years of history
+## Chapter 5: Maritime Worlds, Gunpowder Empires, and Exchange, c. 1450-1750
+- **Key concepts**: Ottoman, Safavid, Mughal, Qing, and Russian empires, Songhai, Tokugawa Japan, European maritime expansion, Columbian Exchange, coerced labor, Atlantic slavery, plantation economies, mercantilism, missionary activity, scientific revolution.
+- **Practice questions**: How did land-based and maritime empires consolidate power? What were the demographic, ecological, and economic effects of the Columbian Exchange? How did enslaved and colonized peoples resist imperial systems?
+- **Student output**: a document-based source set analysis on empire, exchange, labor, or resistance.
+
+## Chapter 6: Revolutions, Industrialization, and Imperialism, c. 1750-1900
+- **Key concepts**: Enlightenment, Atlantic revolutions, Haitian Revolution, Latin American independence, nationalism, industrialization, capitalism, socialism, labor movements, migration, new imperialism, colonial rule, reform and resistance.
+- **Practice questions**: Why did revolutions share ideas but produce different outcomes? Why did industrialization begin and spread unevenly? How did imperialism reshape economies, borders, and cultural identities?
+- **Student output**: a thesis-driven essay outline comparing two revolutions or evaluating causes of imperial expansion.
+
+## Chapter 7: Global Conflict, Ideology, and Decolonization, c. 1900-1991
+- **Key concepts**: World War I, total war, Treaty of Versailles, Russian Revolution, Great Depression, fascism, communism, liberal democracy, World War II, Holocaust, atomic weapons, United Nations, Cold War, proxy wars, decolonization, nonalignment.
+- **Practice questions**: What made twentieth-century wars global and total? How did ideologies compete for legitimacy? Why did decolonization follow different paths in South Asia, Africa, the Middle East, and Southeast Asia?
+- **Student output**: a thematic timeline connecting war, ideology, empire, and independence movements across at least four regions.
+
+## Chapter 8: Globalization, Memory, and the Contemporary World, 1991-Present
+- **Key concepts**: post-Cold War order, globalization, trade and supply chains, migration, terrorism, digital communication, human rights, public health, climate change, economic inequality, cultural exchange, historical memory.
+- **Practice questions**: What changed after the Cold War, and what older patterns continued? How have globalization and technology connected people unevenly? How do nations and communities remember traumatic or contested pasts?
+- **Student output**: a contemporary history brief that explains one present-day issue through long-term historical causes and multiple regional perspectives.
+
+## Capstone
+Create a world history inquiry portfolio on a theme such as migration, empire, belief, technology, environment, labor, or rights. The portfolio includes a research question, sources from at least three regions, a periodized timeline, a map or visual analysis, a claim with counterevidence, and a reflection on how global scale changes the interpretation.
+
+## Assessment Ideas
+- Source work graded on sourcing, context, corroboration, and attention to perspective.
+- Comparative writing graded for accurate regional evidence, similarity and difference, and fair treatment of complexity.
+- Timeline and map tasks graded for chronology, spatial reasoning, and explanation of connections.
+- Capstone graded on global scope, source range, argument, counterevidence, and historical thinking reflection.
+
+## Research Notes
+- College Board AP World History: Modern course resources: https://apcentral.collegeboard.org/courses/ap-world-history
+- Library of Congress classroom materials: https://www.loc.gov/classroom-materials/
+- National Archives educator resources: https://www.archives.gov/education
+- Stanford History Education Group and Civic Online Reasoning: https://sheg.stanford.edu/ and https://cor.stanford.edu/
+- World History Project and OER Project materials: https://www.oerproject.com/World-History

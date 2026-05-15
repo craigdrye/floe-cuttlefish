@@ -59,6 +59,42 @@
   margin: 4px 0 0;
 }
 
+.profile-personalization {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--r-xl);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+}
+
+.profile-personalization h2 {
+  margin: 0;
+  color: white;
+  font-size: 22px;
+}
+
+.profile-topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.profile-topic-list span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: var(--r-full);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+  font-weight: 800;
+}
+
 .profile-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -445,4 +481,10 @@
 @media (max-width: 500px) {
   .profile-stats { grid-template-columns: 1fr; }
   .achievements-grid { grid-template-columns: 1fr; }
+  .profile-personalization {
+    flex-direction: column;
+  }
+  .profile-topic-list {
+    justify-content: flex-start;
+  }
 }

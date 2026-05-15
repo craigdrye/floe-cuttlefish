@@ -1,52 +1,62 @@
 # AP Economics (Macro & Micro)
-**Covers**: `col-ap-economics`, `col-ap-macroeconomics`, `col-ap-microeconomics`
-**Discipline**: Economics · **Year**: 12 (ages 16–18)
-**Frameworks**: US College Board AP Macroeconomics / AP Microeconomics
+**Covers**: `col-ap-economics`, `col-ap-macroeconomics`, `col-ap-microeconomics` · **Discipline**: Economics · **Year**: 12 (ages 16-18)
 
-## Course Philosophy
-This syllabus combines the AP Macroeconomics and AP Microeconomics curricula. It provides a mathematically rigorous, graph-heavy analysis of how individuals, firms, and governments make decisions under conditions of scarcity.
+## Course Aim
+Prepare students for AP Microeconomics and AP Macroeconomics by building graph fluency, economic model reasoning, data interpretation, policy analysis, and AP-style free-response explanation.
 
-## Module 1: Basic Economic Concepts (Micro/Macro) (10%)
-- Scarcity, Opportunity Cost, and the Production Possibilities Curve (PPC)
-- Comparative Advantage, Absolute Advantage, and Terms of Trade
-- Supply and Demand: Determinants, shifts, and market equilibrium
-- **Questions**: Calculating opportunity cost from a table, determining comparative advantage, graphing S&D shifts
+## Course Design Notes
+College Board treats AP Microeconomics and AP Macroeconomics as separate introductory college-level courses, but many schools teach them in sequence across one year. This combined syllabus preserves both course identities: first the shared economic toolkit, then micro choices and markets, then macro measurement and policy.
 
-## Module 2: Microeconomics: Consumer Choice and Firm Behavior (20%)
-- Elasticity: Price Elasticity of Demand (PED), Income, Cross-Price, and Price Elasticity of Supply (PES); Total Revenue Test
-- Consumer Surplus, Producer Surplus, and Deadweight Loss (efficiency)
-- Government intervention: Price ceilings, price floors, excise taxes, and subsidies
-- Production and Costs: Short-run vs long-run, Law of Diminishing Marginal Returns, calculating ATC, AVC, AFC, and MC
-- **Questions**: Calculating Deadweight loss from a tax, graphing cost curves, calculating marginal utility
+## Chapter 1: Economic Thinking and Graph Skills
+- **Key concepts**: scarcity, opportunity cost, incentives, marginal analysis, PPC, comparative advantage, positive and normative claims.
+- **Practice questions**: What is the opportunity cost? Which decision happens at the margin? What graph best models the situation?
+- **Student output**: an economics graph notebook with PPC, supply-demand, and trade diagrams.
 
-## Module 3: Microeconomics: Market Structures and Factor Markets (20%)
-- Perfect Competition: Profit maximization ($MR = MC$), short-run shutdown rule, long-run equilibrium (productive and allocative efficiency)
-- Monopoly: Profit maximization, deadweight loss, price discrimination, natural monopoly regulation
-- Oligopoly and Game Theory: Payoff matrices, dominant strategies, Nash equilibrium
-- Monopolistic Competition: Product differentiation, excess capacity
-- Factor Markets: Labor demand (Marginal Revenue Product), labor supply, monopsony
-- Market Failures: Positive/Negative Externalities (Pigouvian taxes/subsidies), Public Goods
-- **Questions**: Finding Nash equilibrium, graphing monopoly vs perfect competition, calculating MRP
+## Chapter 2: Supply, Demand, Elasticity, and Welfare
+- **Key concepts**: demand, supply, equilibrium, shifts, elasticity, consumer surplus, producer surplus, deadweight loss.
+- **Practice questions**: What shifts the curve? How does elasticity affect total revenue? Who gains or loses from intervention?
+- **Student output**: a market intervention analysis for a tax, subsidy, price ceiling, or price floor.
 
-## Module 4: Macroeconomics: Economic Indicators and the AD/AS Model (25%)
-- Measuring the Economy: Circular flow, calculating GDP (expenditure approach), Nominal vs Real GDP
-- Unemployment (frictional, structural, cyclical) and the Labor Force Participation Rate
-- Inflation: CPI calculations, costs of inflation
-- Aggregate Demand (AD) and the Spending/Tax Multipliers
-- Aggregate Supply (AS): SRAS (sticky wages) and LRAS (full employment)
-- AD/AS Equilibrium: Recessionary and inflationary gaps, long-run self-adjustment
-- The Phillips Curve: Short-run trade-off between inflation and unemployment, long-run vertical Phillips Curve
-- **Questions**: Calculating real GDP, using the spending multiplier, graphing an economy in a recessionary gap
+## Chapter 3: Production, Costs, and Firm Decisions
+- **Key concepts**: marginal product, diminishing returns, fixed and variable costs, MC, ATC, AVC, profit maximization, shutdown rule.
+- **Practice questions**: Where does the firm produce? Is the firm earning profit or loss? Should it operate in the short run?
+- **Student output**: a cost-curve and firm-decision packet.
 
-## Module 5: Macroeconomics: Stabilization Policy and International Trade (25%)
-- Fiscal Policy: Expansionary vs Contractionary, automatic stabilizers, crowding out, national debt
-- The Financial Sector: Functions of money, time value of money, the banking system and the money multiplier, the Money Market
-- Monetary Policy: The Federal Reserve, open market operations, discount rate, reserve requirement, and the Reserve Market
-- The Loanable Funds Market: Real interest rates and investment
-- Economic Growth: Determinants of long-run growth, productivity, public policy
-- International Trade and Finance: Balance of payments (Current Account vs Capital/Financial Account), the Foreign Exchange Market (Forex), currency appreciation/depreciation
-- **Questions**: Graphing the effects of open market operations, tracking currency exchange rates in the Forex market, evaluating the crowding-out effect
+## Chapter 4: Market Structures and Market Failure
+- **Key concepts**: perfect competition, monopoly, monopolistic competition, oligopoly, game theory, externalities, public goods, factor markets.
+- **Practice questions**: What market structure fits? Where is allocative inefficiency? What policy could improve the outcome?
+- **Student output**: a market-structure comparison and one externality policy brief.
 
-## Stretch Zone
-- Calculating the Gini Coefficient and interpreting Lorenz curves
-- Integrating AD/AS analysis with the Forex market (complex chain reactions)
+## Chapter 5: Macro Measurement and Business Cycles
+- **Key concepts**: GDP, unemployment, inflation, CPI, real versus nominal, business cycle, aggregate demand, aggregate supply.
+- **Practice questions**: How is output measured? What unemployment type appears? What shock shifts AD or AS?
+- **Student output**: a macro indicators dashboard with short interpretation notes.
+
+## Chapter 6: Fiscal Policy, Money, and Monetary Policy
+- **Key concepts**: multipliers, fiscal policy, automatic stabilizers, money market, banking, money creation, central bank tools, interest rates.
+- **Practice questions**: What policy closes the gap? How does the money market change? What happens to investment?
+- **Student output**: a stabilization policy chain from shock to graph to outcome.
+
+## Chapter 7: Growth, Open Economy, and Cross-Graph Reasoning
+- **Key concepts**: productivity, long-run growth, loanable funds, crowding out, balance of payments, foreign exchange, currency appreciation.
+- **Practice questions**: What increases LRAS? How does borrowing affect interest rates? How does exchange-rate movement affect net exports?
+- **Student output**: a linked-graphs exercise connecting AD/AS, money, loanable funds, and foreign exchange.
+
+## Chapter 8: AP Economics Exam Studio
+- **Key concepts**: graph labeling, model manipulation, calculation, policy explanation, free-response sequencing, command terms.
+- **Practice questions**: Which graph earns the point? What changes first? How should the explanation connect model to outcome?
+- **Student output**: a timed mixed AP Micro/Macro FRQ set with correction log.
+
+## Capstone
+Analyze a fictional economy and a fictional product market. Submit market graphs, firm decision, welfare analysis, macro indicators, stabilization policy, open-economy effect, and AP-style written explanations.
+
+## Assessment Ideas
+- Graph tasks graded on labels, shifts, equilibrium, and explanation.
+- Calculation tasks graded on setup and units.
+- Capstone graded on model selection, policy reasoning, and AP-style clarity.
+
+## Research Notes
+- College Board AP Macroeconomics: https://apcentral.collegeboard.org/courses/ap-macroeconomics
+- College Board AP Microeconomics course audit: https://apcentral.collegeboard.org/courses/ap-microeconomics/course-audit
+- College Board comparison of AP Macro and AP Micro: https://blog.collegeboard.org/difference-between-ap-macroeconomics-and-ap-microeconomics
+- Khan Academy AP/College Macroeconomics: https://www.khanacademy.org/economics-finance-domain/ap-macroeconomics

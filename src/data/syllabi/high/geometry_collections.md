@@ -1,53 +1,65 @@
 # Geometry Collections
 **Covers**: `col-geometry`, `col-eureka-math-geometry`
-**Discipline**: Maths · **Year**: 10 (ages 14–15)
+**Discipline**: Maths | **Year**: 10 (ages 14-15)
 
-## Overview
-Combined syllabus for US-aligned High School Geometry collections. These target **Common Core Geometry**. The focus is on formal proof, coordinate geometry, and trigonometry.
+## Course Aim
+Build a Geometry course where students reason carefully, prove claims, model space, and use diagrams, coordinates, measurements, and transformations as connected tools. The goal is calm fluency: students learn when to calculate, when to construct, when to prove, and how to communicate geometric reasoning clearly.
 
-## Domain A: Congruence and Proof (30%)
-- Know precise definitions of angle, circle, perpendicular line, parallel line, and line segment
-- Represent transformations in the plane; describe transformations as functions that take points in the plane as inputs and give other points as outputs
-- Compare transformations that preserve distance and angle to those that do not (e.g., translation versus horizontal stretch)
-- Given a geometric figure and a rotation, reflection, or translation, draw the transformed figure
-- Specify a sequence of transformations that will carry a given figure onto another
-- Use geometric descriptions of rigid motions to transform figures and to predict the effect of a given rigid motion on a given figure; given two figures, use the definition of congruence in terms of rigid motions to decide if they are congruent
-- Prove theorems about lines and angles (e.g., vertical angles are congruent; when a transversal crosses parallel lines, alternate interior angles are congruent)
-- Prove theorems about triangles (e.g., measures of interior angles of a triangle sum to 180°; base angles of isosceles triangles are congruent; the segment joining midpoints of two sides of a triangle is parallel to the third side and half the length)
-- Prove theorems about parallelograms (e.g., opposite sides are congruent, opposite angles are congruent, the diagonals of a parallelogram bisect each other)
-- **Questions**: Rigid motion sequences, identifying congruent triangles (SSS, SAS, ASA, AAS, HL), flow-chart/two-column proofs
+## Course Design Notes
+Use Common Core high school geometry standards as the main sequence, with repeated retrieval of Algebra 1 skills for coordinates, equations, and modeling. Route questions here when they involve proof, congruence, transformations, similarity, circles, coordinate geometry, measurement, right-triangle trigonometry, or spatial modeling. Keep assessment language explicit: students should know whether a task is asking for a construction, calculation, proof, model, or explanation.
 
-## Domain B: Similarity, Right Triangles, and Trigonometry (25%)
-- Verify experimentally the properties of dilations given by a center and a scale factor
-- Given two figures, use the definition of similarity in terms of similarity transformations to decide if they are similar; explain using similarity transformations the meaning of similarity for triangles as the equality of all corresponding pairs of angles and the proportionality of all corresponding pairs of sides
-- Prove theorems about triangles (e.g., a line parallel to one side of a triangle divides the other two proportionally)
-- Use congruence and similarity criteria for triangles to solve problems and to prove relationships in geometric figures
-- Understand that by similarity, side ratios in right triangles are properties of the angles in the triangle, leading to definitions of trigonometric ratios for acute angles
-- Explain and use the relationship between the sine and cosine of complementary angles
-- Use trigonometric ratios and the Pythagorean Theorem to solve right triangles in applied problems
-- **Questions**: Scale factor dilations, similar triangle side calculations, SOH CAH TOA application, angle of elevation/depression problems
+## Chapter 1: Geometry Foundations and Proof Habits
+- **Key concepts**: Points, lines, planes, segments, rays, angles, parallel and perpendicular lines, definitions, conjectures, counterexamples, conditional statements, and proof structures.
+- **Practice questions**: Name and classify geometric objects; write converse statements; find counterexamples; complete missing reasons in short proofs.
+- **Student output**: A proof-habits notebook page with definitions, diagram markings, and one short proof revised from feedback.
 
-## Domain C: Circles (15%)
-- Prove that all circles are similar
-- Identify and describe relationships among inscribed angles, radii, and chords. Include the relationship between central, inscribed, and circumscribed angles; inscribed angles on a diameter are right angles; the radius of a circle is perpendicular to the tangent where the radius intersects the circle
-- Construct the inscribed and circumscribed circles of a triangle, and prove properties of angles for a quadrilateral inscribed in a circle
-- Derive using similarity the fact that the length of the arc intercepted by an angle is proportional to the radius, and define the radian measure of the angle as the constant of proportionality; derive the formula for the area of a sector
-- **Questions**: Finding arc lengths and sector areas, calculating angles using circle theorems (tangent/chord/inscribed)
+## Chapter 2: Transformations and Congruence
+- **Key concepts**: Translations, rotations, reflections, rigid motions, composition of transformations, symmetry, congruence, corresponding parts, and transformation notation.
+- **Practice questions**: Draw transformed figures; describe a sequence of rigid motions; decide whether two figures are congruent from a diagram or coordinates.
+- **Student output**: A transformation map showing a figure, image, coordinate rule or sequence, and congruence explanation.
 
-## Domain D: Expressing Geometric Properties with Equations (20%)
-- Derive the equation of a circle of given center and radius using the Pythagorean Theorem; complete the square to find the center and radius of a circle given by an equation
-- Use coordinates to prove simple geometric theorems algebraically (e.g., prove or disprove that a figure defined by four given points in the coordinate plane is a rectangle)
-- Prove the slope criteria for parallel and perpendicular lines and use them to solve geometric problems (e.g., find the equation of a line parallel or perpendicular to a given line that passes through a given point)
-- Find the point on a directed line segment between two given points that partitions the segment in a given ratio
-- Use coordinates to compute perimeters of polygons and areas of triangles and rectangles
-- **Questions**: Completing the square for circle equations, parallel/perpendicular slope equations, distance/midpoint formulas, partitioning segments
+## Chapter 3: Triangles, Parallels, and Formal Proof
+- **Key concepts**: Angle relationships, transversals, triangle angle sum, isosceles triangles, triangle congruence criteria, perpendicular bisectors, angle bisectors, medians, and parallelogram properties.
+- **Practice questions**: Prove line and angle theorems; use SSS, SAS, ASA, AAS, or HL; justify triangle and quadrilateral relationships.
+- **Student output**: A two-column, paragraph, or flow proof portfolio with at least one triangle proof and one parallel-line proof.
 
-## Domain E: Geometric Measurement and Dimension (10%)
-- Give an informal argument for the formulas for the circumference of a circle, area of a circle, volume of a cylinder, pyramid, and cone (using Cavalieri's principle)
-- Use volume formulas for cylinders, pyramids, cones, and spheres to solve problems
-- Identify the shapes of two-dimensional cross-sections of three-dimensional objects, and identify three-dimensional objects generated by rotations of two-dimensional objects
-- **Questions**: Volume of composite 3D shapes, cross-section identification, solids of revolution
+## Chapter 4: Similarity, Dilations, and Scale
+- **Key concepts**: Dilations, scale factor, similarity transformations, proportional sides, corresponding angles, triangle similarity criteria, indirect measurement, and scale drawings.
+- **Practice questions**: Find missing lengths; prove triangles similar; use scale factors in maps, blueprints, or images; compare perimeter and area changes.
+- **Student output**: A scale-model analysis using similarity to measure or redesign an object, room, map, or image.
 
-## Stretch Zone
-- Law of Sines and Law of Cosines for non-right triangles
-- Derive the formula $A = \frac{1}{2}ab \sin(C)$ for the area of a triangle
+## Chapter 5: Right Triangles and Trigonometry Basics
+- **Key concepts**: Pythagorean Theorem, special right triangles, geometric mean relationships as enrichment, sine, cosine, tangent, complementary angles, angle of elevation, and angle of depression.
+- **Practice questions**: Solve right triangles; choose the correct trigonometric ratio; estimate whether an answer is plausible; model height or distance.
+- **Student output**: A right-triangle field problem or simulation report with labeled diagram, calculation, and explanation of assumptions.
+
+## Chapter 6: Circles and Circular Measurement
+- **Key concepts**: Circle definitions, radius, chord, diameter, tangent, secant, arcs, central angles, inscribed angles, cyclic quadrilaterals, arc length, sector area, and radian measure as enrichment.
+- **Practice questions**: Use circle angle relationships; find arc lengths and sector areas; apply tangent-radius and chord relationships; solve multi-step circle diagrams.
+- **Student output**: A circle-theorem explainer that proves or demonstrates one relationship and applies it to a measurement problem.
+
+## Chapter 7: Coordinate Geometry and Algebraic Proof
+- **Key concepts**: Distance, midpoint, slope, parallel and perpendicular lines, coordinate proofs, equations of circles, completing the square for circles, partitioning segments, and area on the coordinate plane.
+- **Practice questions**: Classify figures from coordinates; prove a quadrilateral property with slope or distance; find circle center and radius from an equation.
+- **Student output**: A coordinate proof showing how algebra verifies a geometric claim about a triangle, quadrilateral, or circle.
+
+## Chapter 8: Area, Volume, and Geometry Modeling Studio
+- **Key concepts**: Area, circumference, surface area, volume, composite figures, prisms, cylinders, pyramids, cones, spheres, cross-sections, density, units, optimization, and model limits.
+- **Practice questions**: Calculate area and volume for composite shapes; compare solids; identify cross-sections; choose measurements needed for a design problem.
+- **Student output**: A modeling studio project that estimates, calculates, and critiques the geometry of a package, room, structure, object, or public-space design.
+
+## Capstone
+Students complete a geometry modeling and proof portfolio around one design or investigation problem. The final product must include a precise diagram, at least one proof or justification, a transformation or similarity argument, a coordinate or measurement calculation, and a reflection on assumptions and error.
+
+## Assessment Ideas
+- Diagram-reading checks where students identify given information, needed information, and theorem choice.
+- Proof revisions scored on claim, reason, sequence, and use of definitions.
+- Mixed calculation tasks that require units, diagrams, and contextual interpretation.
+- Short modeling labs using scale, trigonometry, circle measurement, area, or volume.
+- Capstone graded on geometric reasoning, accuracy, proof communication, representation quality, and assessment-ready explanation.
+
+## Research Notes
+- Common Core State Standards for High School Geometry: https://www.thecorestandards.org/Math/
+- Illustrative Mathematics Geometry course resources: https://illustrativemathematics.org/math-curriculum/high-school/
+- NCTM Principles to Actions and classroom resources: https://www.nctm.org/standards-and-positions/principles-to-actions/
+- New York State Next Generation Mathematics Learning Standards: https://www.nysed.gov/curriculum-instruction/mathematics-learning-standards

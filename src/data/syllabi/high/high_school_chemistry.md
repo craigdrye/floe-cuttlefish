@@ -1,49 +1,63 @@
 # High School Chemistry
-**ID**: `col-high-school-chemistry` · **Discipline**: Science · **Year**: 11 (ages 15–16)
+**ID**: `col-high-school-chemistry` · **Discipline**: Science · **Year**: 11 (ages 15-16)
 **Frameworks**: US NGSS High School Physical Science, UK GCSE Chemistry
 
-## Course Philosophy
-High School Chemistry delves into the quantitative aspects of chemical reactions, the quantum mechanical model of the atom, chemical bonding theories, and thermodynamics. Mathematical fluency (algebra and stoichiometry) is essential.
+## Course Aim
+Help students see chemistry as a model-building discipline: particles explain properties, structure predicts reactions, and measurement turns invisible changes into evidence. The course should support everyday chemical literacy while preparing students for AP Chemistry, college lab science, or technical pathways.
 
-## Module 1: Atomic Structure and the Periodic Table (20%)
-- The quantum mechanical model of the atom: principal energy levels, sublevels (s, p, d, f), and orbitals
-- Electron configurations (e.g., $1s^2 2s^2 2p^6$) and orbital diagrams; Hund's Rule, Pauli Exclusion Principle, Aufbau Principle
-- Isotopes and calculating average atomic mass
-- Periodic trends: atomic radius, ionization energy, electronegativity, and explaining these trends using Coulomb's Law and effective nuclear charge
-- **Questions**: Writing electron configurations, predicting and explaining periodic trends, calculating average atomic mass
+## Course Design Notes
+Keep the tone practical and quantitative. Questions should be routed here when they ask students to balance reactions, reason from particle diagrams, calculate with moles, read lab data, or connect bonding and energy to observable change. Lab safety and measurement quality recur throughout.
 
-## Module 2: Bonding and Molecular Geometry (20%)
-- Ionic bonding: lattice energy, properties of ionic compounds, writing formulas for polyatomic ions
-- Covalent bonding: polar vs nonpolar covalent bonds, Lewis structures (including resonance and exceptions to the octet rule)
-- VSEPR Theory: predicting 3D molecular shapes (linear, bent, trigonal planar, tetrahedral, trigonal pyramidal) and bond angles
-- Metallic bonding and the "sea of electrons" model
-- Intermolecular Forces (IMFs): London dispersion forces, dipole-dipole interactions, hydrogen bonding; relating IMFs to boiling/melting points and vapor pressure
-- **Questions**: Drawing Lewis structures, predicting VSEPR geometry and polarity, ranking substances by boiling point based on IMFs
+## Chapter 1: Matter, Measurement, and Chemical Evidence
+- **Key concepts**: Matter classification, physical and chemical change, density, units, significant figures, uncertainty, lab safety, and particle models.
+- **Practice questions**: Classify changes and mixtures; convert units; judge whether data support a chemical claim.
+- **Student output**: A measurement mini-lab report with raw data, calculated values, sources of uncertainty, and a revised procedure.
 
-## Module 3: Stoichiometry and Chemical Reactions (25%)
-- The Mole concept: Avogadro's number, molar mass, converting between mass, moles, and particles
-- Empirical and molecular formulas
-- Balancing complex chemical equations; classifying reactions (synthesis, decomposition, single/double replacement, combustion)
-- Stoichiometry: calculating reactant/product masses, limiting reactants, and percent yield
-- Solution stoichiometry: Molarity ($M = mol/L$), dilution ($M_1V_1 = M_2V_2$)
-- **Questions**: Limiting reactant calculations, percent yield, molarity and dilution math
+## Chapter 2: Atomic Structure and the Periodic Table
+- **Key concepts**: Protons, neutrons, electrons, isotopes, average atomic mass, electron arrangement, periodic trends, ions, and evidence for atomic models.
+- **Practice questions**: Calculate isotope averages; predict ion charges; explain periodic patterns using atomic structure.
+- **Student output**: A periodic trend map that links atomic structure to radius, ionization energy, and common reactivity patterns.
 
-## Module 4: Gases, Thermodynamics, and Kinetics (20%)
-- Kinetic Molecular Theory (KMT) of gases
-- The Ideal Gas Law ($PV = nRT$) and combined gas laws (Boyle's, Charles's, Gay-Lussac's)
-- Dalton's Law of Partial Pressures
-- Thermodynamics: endothermic vs exothermic, enthalpy ($\Delta H$), calorimetry calculations ($q = mc\Delta T$)
-- Kinetics: factors affecting reaction rates (collision theory, activation energy, catalysts), interpreting potential energy diagrams
-- **Questions**: Ideal gas law calculations, calculating heat using calorimetry, interpreting potential energy profiles
+## Chapter 3: Bonding, Structure, and Properties
+- **Key concepts**: Ionic, covalent, and metallic bonding; Lewis structures; molecular shape; polarity; intermolecular forces; lattice structures; and material properties.
+- **Practice questions**: Draw Lewis structures; compare boiling points; explain why substances conduct, dissolve, melt, or remain solid.
+- **Student output**: A particle-level explanation of a material property using bonding and structure evidence.
 
-## Module 5: Equilibrium and Acids/Bases (15%)
-- Dynamic equilibrium and Le Chatelier's Principle (predicting shifts when concentration, pressure, or temperature changes)
-- The equilibrium constant expression ($K_{eq}$)
-- Arrhenius and Brønsted-Lowry definitions of acids and bases (conjugate acid-base pairs)
-- Strong vs weak acids/bases; calculating pH, pOH, $[H^+]$, and $[OH^-]$
-- Acid-base titrations and calculating unknown concentrations
-- **Questions**: Predicting Le Chatelier shifts, writing $K_{eq}$ expressions, pH calculations, titration stoichiometry
+## Chapter 4: Moles, Formulas, and Stoichiometry
+- **Key concepts**: Mole concept, molar mass, empirical and molecular formulas, percent composition, balanced equations, limiting reactants, and percent yield.
+- **Practice questions**: Convert among particles, moles, and mass; solve limiting-reactant problems; critique unrealistic yields.
+- **Student output**: A stoichiometry lab calculation sheet tied to an actual or simulated reaction.
 
-## Stretch Zone
-- Oxidation-Reduction (Redox) reactions: assigning oxidation numbers and balancing half-reactions
-- Introduction to organic chemistry nomenclature (alkanes, alkenes, alkynes, functional groups)
+## Chapter 5: Reactions, Solutions, and Gases
+- **Key concepts**: Reaction types, precipitation, acid-base reactions, oxidation-reduction basics, concentration, dilution, gas laws, and particulate explanations.
+- **Practice questions**: Predict reaction products; calculate molarity or dilution; interpret pressure-volume-temperature data.
+- **Student output**: A reaction evidence table that combines observations, equations, and particle diagrams.
+
+## Chapter 6: Energy, Rates, and Reaction Pathways
+- **Key concepts**: Conservation of energy, endothermic and exothermic processes, calorimetry, collision theory, activation energy, catalysts, and rate factors.
+- **Practice questions**: Read heating curves; calculate heat transfer; explain rate changes from concentration, temperature, surface area, or catalysts.
+- **Student output**: A kinetics or calorimetry investigation brief with a graph, model, and practical limitation.
+
+## Chapter 7: Equilibrium, Acids, Bases, and Chemical Systems
+- **Key concepts**: Dynamic equilibrium, Le Chatelier's principle, pH, strong and weak acids and bases, neutralization, buffers at an introductory level, and chemical systems thinking.
+- **Practice questions**: Predict shifts in equilibrium; calculate or compare pH; interpret titration-style data at an accessible level.
+- **Student output**: A chemical systems memo explaining how a change in conditions affects yield, pH, or environmental chemistry.
+
+## Chapter 8: Chemistry Lab Studio
+- **Key concepts**: Safe procedure design, data reliability, graph choice, error analysis, evidence-based revision, and communicating chemical risk without hype.
+- **Practice questions**: Find the flaw in a lab design; choose the right measurement tool; revise a conclusion when data conflict.
+- **Student output**: A final lab portfolio containing one polished report and one improved procedure.
+
+## Capstone
+Students explain a chemical product, process, or environmental issue from the particle level up to a real-world decision. The best projects combine equations, calculations, diagrams, and evidence from data.
+
+## Assessment Ideas
+- Frequent particle-diagram questions to prevent formula-only reasoning.
+- Calculation sets that require units, assumptions, and a sentence of interpretation.
+- Lab practicals on measurement, safety, and reaction evidence.
+- A final chemistry-in-context presentation with peer questioning.
+
+## Research Notes
+- NGSS high school physical science performance expectations: https://www.nextgenscience.org/sites/ngss/files/HS%20PS%20DCI%20combined%206.13.13.pdf
+- American Chemical Society high school chemistry guidance: https://www.acs.org/education/policies/middle-and-high-school-chemistry/high-school-chemistry.html
+- OpenStax Chemistry 2e for reference explanations and problem styles: https://openstax.org/details/books/chemistry-2e

@@ -1,54 +1,67 @@
 # 5th Grade Maths Collections
 **Covers**: `col-5th-grade-math`, `col-5th-grade-ny-next-gen`, `col-get-ready-for-5th-grade`, `col-eureka-math-foundations-3rd-8th`, `col-eureka-math-3rd-8th`
-**Discipline**: Maths · **Year**: 5 (ages 9–10)
+**Discipline**: Maths | **Year**: 5 (ages 9-10)
+**Frameworks**: Common Core Grade 5 Mathematics, NY Next Generation Grade 5 Mathematics, UK National Curriculum upper KS2 transition, NCETM primary mastery guidance
 
-## Overview
-Combined syllabus for US-aligned 5th grade maths collections. These target **Common Core Grade 5**.
+## Course Aim
+Build upper-primary mathematicians who can calculate accurately, model situations visually, and explain multi-step reasoning with growing independence. Students extend place value into decimals, use whole-number operations fluently, connect fractions, decimals, and percents, reason about volume and measurement, graph points in the coordinate plane, interpret data, and choose strategies that prepare them for the abstraction of later middle-school mathematics.
 
-## Domain A: Operations & Algebraic Thinking (15%)
-- Use parentheses, brackets, or braces in numerical expressions, and evaluate expressions with these symbols (Order of Operations without exponents)
-- Write simple expressions that record calculations with numbers, and interpret numerical expressions without evaluating them (e.g., express the calculation "add 8 and 7, then multiply by 2" as 2 × (8 + 7))
-- Generate two numerical patterns using two given rules. Identify apparent relationships between corresponding terms. Form ordered pairs and graph them on a coordinate plane
-- **Questions**: Evaluating expressions with parentheses, translating words to expressions, generating and graphing patterns
+## Course Design Notes
+Grade 5 maths should stay concrete while asking students to carry more of the thinking themselves. Lessons use place-value charts, base-ten blocks, area models, fraction strips, bar models, number lines, decimal grids, unit cubes, coordinate grids, tables, and line plots. Fluency practice is short and regular, but every procedure should stay linked to meaning through estimates, diagrams, error analysis, and written explanations.
 
-## Domain B: Number & Operations in Base Ten (30%)
-- Recognize that in a multi-digit number, a digit in one place represents 10 times as much as it represents in the place to its right and 1/10 of what it represents in the place to its left
-- Explain patterns in the number of zeros of the product when multiplying a number by powers of 10, and explain patterns in the placement of the decimal point when a decimal is multiplied or divided by a power of 10
-- Read, write, and compare decimals to thousandths
-- Round decimals to any place
-- Fluently multiply multi-digit whole numbers using the standard algorithm
-- Find whole-number quotients of whole numbers with up to four-digit dividends and two-digit divisors, using strategies based on place value, the properties of operations, and/or the relationship between multiplication and division
-- Add, subtract, multiply, and divide decimals to hundredths, using concrete models or drawings and strategies based on place value
-- **Questions**: Decimals to thousandths (read/write/compare/round), multi-digit multiplication, dividing by 2-digit divisors, decimal arithmetic to hundredths
+## Chapter 1: Place Value, Powers of Ten, and Decimal Structure
+- **Key concepts**: digit value, base ten, power of ten, tenth, hundredth, thousandth, compare, order, round, estimate.
+- **Practice questions**: Read and write decimals to thousandths; compare and order decimals using symbols and number lines; explain how a digit changes when multiplied or divided by 10, 100, or 1000; round decimals to any place; estimate products and quotients before calculating.
+- **Student output**: A place-value reasoning page showing one whole number and one decimal in expanded form, rounded values, a comparison proof, and a powers-of-ten explanation.
 
-## Domain C: Number & Operations — Fractions (30%)
-- Add and subtract fractions with unlike denominators (including mixed numbers) by replacing given fractions with equivalent fractions
-- Solve word problems involving addition and subtraction of fractions referring to the same whole
-- Interpret a fraction as division of the numerator by the denominator (a/b = a ÷ b)
-- Solve word problems involving division of whole numbers leading to answers in the form of fractions or mixed numbers
-- Apply and extend previous understandings of multiplication to multiply a fraction or whole number by a fraction
-- Interpret multiplication as scaling (resizing)
-- Solve real world problems involving multiplication of fractions and mixed numbers
-- Apply and extend previous understandings of division to divide unit fractions by whole numbers and whole numbers by unit fractions
-- **Questions**: Add/subtract fractions with unlike denominators, fraction as division, fraction × fraction, unit fraction ÷ whole number (and vice versa)
+## Chapter 2: Whole-Number Operations and Expression Sense
+- **Key concepts**: multiplication algorithm, division strategy, quotient, remainder, parentheses, brackets, expression, evaluate, inverse operation.
+- **Practice questions**: Multiply multi-digit whole numbers fluently; divide four-digit dividends by two-digit divisors using place value and partial quotients or the standard algorithm; evaluate expressions with grouping symbols; translate word phrases into numerical expressions; check answers with estimates and inverse operations.
+- **Student output**: A calculation audit with one multiplication, one division, one grouped expression, estimates, checks, and a sentence explaining why each method fits the numbers.
 
-## Domain D: Measurement & Data (15%)
-- Convert among different-sized standard measurement units within a given measurement system (e.g., convert 5 cm to 0.05 m), and use these conversions in solving multi-step, real world problems
-- Make a line plot to display a data set of measurements in fractions of a unit (1/2, 1/4, 1/8). Use operations on fractions for this grade to solve problems involving information presented in line plots
-- Recognize volume as an attribute of solid figures and understand concepts of volume measurement
-- Measure volumes by counting unit cubes, using cubic cm, cubic in, cubic ft, and improvised units
-- Relate volume to the operations of multiplication and addition and solve real world and mathematical problems involving volume
-- Apply the formulas V = l × w × h and V = b × h for rectangular prisms
-- **Questions**: Metric/customary conversions, line plots with fractions, volume calculation (counting cubes and formula)
+## Chapter 3: Fractions as Numbers and Equivalent Forms
+- **Key concepts**: equivalent fraction, common denominator, benchmark fraction, mixed number, improper fraction, fraction as division, same whole.
+- **Practice questions**: Compare fractions using models and benchmarks; create equivalent fractions; convert between mixed numbers and improper fractions; add and subtract fractions with unlike denominators; solve word problems where the whole must be identified before calculating.
+- **Student output**: A fraction proof page with a number-line comparison, an equivalent-fraction model, two unlike-denominator calculations, and one corrected error about the whole.
 
-## Domain E: Geometry (10%)
-- Use a pair of perpendicular number lines, called axes, to define a coordinate system
-- Graph points on the coordinate plane to solve real-world and mathematical problems
-- Understand that attributes belonging to a category of two-dimensional figures also belong to all subcategories of that category (e.g., all rectangles have four right angles and squares are rectangles, so all squares have four right angles)
-- Classify two-dimensional figures in a hierarchy based on properties
-- **Questions**: Graphing in Quadrant I, shape hierarchy classification
+## Chapter 4: Fraction Operations and Scaling
+- **Key concepts**: fraction multiplication, scaling, area model, unit fraction, division, partition, interpretation of answer.
+- **Practice questions**: Multiply fractions and whole numbers using area models and equations; multiply fractions by fractions; interpret multiplication as scaling up or down; divide unit fractions by whole numbers and whole numbers by unit fractions; solve multi-step fraction story problems with bar models.
+- **Student output**: A fraction modeling sheet with an area model, a scaling explanation, two division situations, and a checked multi-step problem.
 
-## Stretch Zone
-- Dividing decimals by decimals
-- Complex multi-step fraction word problems
-- Introduction to integers (negative numbers) and the full coordinate plane (all 4 quadrants)
+## Chapter 5: Decimals, Percents, and Practical Calculation
+- **Key concepts**: decimal operation, place-value alignment, percent, hundredths, equivalent representation, money context, reasonableness.
+- **Practice questions**: Add, subtract, multiply, and divide decimals to hundredths using models and written methods; connect common fractions to decimals and percents; solve money, measurement, and score problems; decide when a decimal, fraction, or percent form communicates best.
+- **Student output**: An equivalence mat linking fractions, decimals, and percents, plus a short practical problem set with decimal calculations and reasonableness checks.
+
+## Chapter 6: Measurement, Volume, and Unit Modeling
+- **Key concepts**: metric unit, customary unit, conversion, volume, cubic unit, rectangular prism, formula, additive volume.
+- **Practice questions**: Convert within measurement systems; use conversions in multi-step problems; build and count volumes with unit cubes; calculate volume using V = l x w x h and V = b x h; decompose composite rectangular prisms; explain why volume is measured in cubic units.
+- **Student output**: A volume and measurement case file with two unit conversions, one cube-counting model, one formula calculation, and one composite-volume explanation.
+
+## Chapter 7: Coordinate Plane, Geometry, and Classification
+- **Key concepts**: x-axis, y-axis, origin, ordered pair, quadrant I, polygon, attribute, hierarchy, classify, property.
+- **Practice questions**: Plot and interpret points in the first quadrant; graph paired values from numerical patterns; solve simple coordinate problems; classify triangles and quadrilaterals by properties; explain shape hierarchies, such as why every square is a rectangle but not every rectangle is a square.
+- **Student output**: A coordinate and geometry page with plotted points from a pattern, a short coordinate problem, and a shape hierarchy diagram with written property evidence.
+
+## Chapter 8: Data, Modeling, and Multi-Step Reasoning
+- **Key concepts**: line plot, measurement data, scale, table, model, equation, multi-step problem, justify, check.
+- **Practice questions**: Make and interpret line plots with fractional measurements; use fraction operations to answer questions about data; represent real situations with tables, diagrams, and equations; solve mixed multi-step problems involving operations, fractions, decimals, measurement, or geometry; write complete explanations.
+- **Student output**: A modeling portfolio with one line plot, three data questions, one mixed-topic problem, a visual model, an equation, and a written check.
+
+## Capstone
+Students create a "Grade 5 Maths Planning Challenge" for a school fair, classroom redesign, sports event, garden plan, or mini-business. The final product must include whole-number operations, at least one fraction operation, a decimal or percent connection, measurement conversions, a volume calculation, coordinate points or a graph, a data display, and a clear explanation of how one multi-step decision was checked.
+
+## Assessment Ideas
+- Use short fluency checks for place value, multiplication, division, decimal operations, and common fraction-decimal-percent links.
+- Review student diagrams to see whether visual models match the operation and the whole being used.
+- Score multi-step work for setup, calculation accuracy, labels, reasonableness checks, and explanation.
+- Include error-analysis prompts for decimal place value, unlike denominators, remainders, volume units, and coordinate order.
+- Assess geometry and data through property language, graph scales, line-plot interpretation, and written conclusions.
+- Grade the capstone on mathematical accuracy, model quality, strategy choice, independence, checking, and communication.
+
+## Research Notes
+- Common Core Grade 5 mathematics emphasizes base-ten place value, whole-number fluency, fraction operations, decimal operations, measurement and volume, coordinate graphing, and geometric classification: https://www.corestandards.org/Math/Content/5/introduction/
+- The UK National Curriculum for upper Key Stage 2 emphasizes fluency, reasoning, problem solving, fractions, decimals, percentages, measurement, geometry, and statistics as pupils prepare for secondary mathematics: https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study
+- NCETM primary mastery materials emphasize representations, variation, precise mathematical language, connected facts, and reasoning before procedural acceleration: https://www.ncetm.org.uk/classroom-resources/primm-primary-mastery-professional-development/
+- Upper-primary learners benefit from frequent retrieval, number talk, worked examples, and low-stakes explanation because these routines connect fluency with conceptual understanding.

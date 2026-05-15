@@ -33,6 +33,7 @@ const MAP_BACKGROUNDS = [
 ]
 
 const MAX_VISIBLE_CHAPTER_GROUPS = 10
+const MAP_STAGE_COUNT = 4
 
 type ChapterGroup = {
   label: string
@@ -196,11 +197,11 @@ export function useQuizData() {
     [answerShuffleSeed, baseQuestion.id, mode, mood, profileAnswers.challenge, profileAnswers.friction, profileAnswers.time, question.answers, remixSeed]
   )
 
-  // Map nodes for display (4 stages)
+  // Map nodes for display (4 positioned stages)
   const mapNodes = useMemo(() => {
     const QUESTIONS_PER_STAGE = 4
     const stages: typeof dailyQuestions[number][] = []
-    for (let i = 0; i * QUESTIONS_PER_STAGE < dailyQuestions.length; i++) {
+    for (let i = 0; i < MAP_STAGE_COUNT && i * QUESTIONS_PER_STAGE < dailyQuestions.length; i++) {
       stages.push(dailyQuestions[i * QUESTIONS_PER_STAGE])
     }
     return stages

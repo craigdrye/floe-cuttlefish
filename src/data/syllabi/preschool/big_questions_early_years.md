@@ -1,111 +1,137 @@
 # Big Questions: Early Years
-**ID**: `philosophyEarlyYears` · **Status**: soon · **Discipline**: Humanities
+**ID**: `philosophyEarlyYears` | **Status**: soon | **Discipline**: Humanities | **Level**: Preschool / Early Years
 
-## Course Philosophy
-This is our Philosophy for Children (P4C) track adapted for the youngest
-learners. At this age, philosophy is about **wondering, asking "why," and
-learning that there can be more than one right answer**. Aligned with EYFS
-Personal, Social and Emotional Development (PSED) and EYLF Outcomes 1 & 2
-(identity and connection). This course builds the foundations of ethical
-thinking, empathy, and critical reasoning through stories and scenarios.
+## Course Aim
+Invite very young children into careful wondering: listening to a story, noticing feelings, asking "why?", giving tiny reasons, and discovering that more than one thoughtful answer can live in the same circle. The course builds early foundations for fairness, empathy, identity, kindness, belonging, and curious thinking through talk, play, pictures, movement, and adult-facilitated routines.
 
-## Module 1: Fairness & Sharing (20%)
-**Learning Objectives**:
-- Understand what "fair" means in everyday situations
-- Recognise when something feels unfair
-- Think about how to share when there isn't enough for everyone
-- Distinguish between "equal" and "fair" (everyone gets what they need)
+## Course Design Notes
+This is Philosophy for Children adapted for ages 3 to 5. Questions stay close to children's lived worlds: snack time, favorite toys, family photos, lost mittens, pets, pretend shops, story characters, and classroom rules. Adult facilitation matters: children are never pushed to disclose private feelings, solve adult-sized moral problems, or find the "correct" answer. Each chapter uses sensory prompts, picture-card choices, puppets, turn-taking games, and short reflective outputs such as a drawing, gesture, sentence stem, class chart, or kindness plan.
 
-**Topics & Question Types**:
-1. Scenario: "Two children want the same toy. What should they do?"
-2. "Is this fair?" judgment questions with picture scenarios
-3. "What would you do?" open-response choices
-4. Sharing strategies: taking turns, splitting equally, compromise
-5. "Does fair always mean the same?" (A little child and a big child both need food — do they eat the same amount?)
+## Chapter 1: What Is a Big Question?
+**Circle-time invitations**
+- Hold up a familiar object, such as a shell, button, spoon, or toy animal, and ask: "What do you wonder about this?"
+- Sort picture cards into "small finding-out questions" and "big thinking questions."
+- Practice saying, "I think..." and "I wonder..." with adult modeling.
 
-**Stretch Zone**:
-- Introduce the idea that rules exist to help things be fair
-- "Who decides what's fair?" — introducing the concept of authority
-- Simple dilemma: "You found a toy. No one is looking. What do you do?"
+**Tiny thinking moves**
+- Notice that some questions can have many good answers.
+- Listen to another child's idea without needing to copy it.
+- Use a reason stem: "I think that because..."
 
-## Module 2: Feelings & Empathy (20%)
-**Learning Objectives**:
-- Name and recognise basic emotions (happy, sad, angry, scared, surprised)
-- Understand that other people have feelings too
-- Begin to understand that the same event can make different people feel different things
-- Learn simple strategies for managing big feelings
+**Playful output**
+- Add one child-drawn question mark, picture, or adult-scribed wonder to a shared Wonder Wall.
 
-**Topics & Question Types**:
-1. Emotion identification from facial expressions
-2. "How would you feel if…?" scenario questions
-3. "How does [character] feel?" reading emotions in a story context
-4. "What could you do if you feel angry?" coping strategy selection
-5. Perspective-taking: "Your friend is crying. What might have happened?"
-6. "Can two people feel different things about the same thing?" (Yes — one child loves dogs, another is scared of them)
+## Chapter 2: Fair Shares and Turn-Taking
+**Circle-time invitations**
+- Use blocks, crackers, counters, or pretend picnic food to explore sharing.
+- Ask: "Does fair always mean everyone gets the same?"
+- Act out two children wanting the same truck, cape, book, or swing.
 
-**Stretch Zone**:
-- Introduce "mixed feelings" (excited AND nervous about starting school)
-- The idea that feelings change — you won't feel sad forever
-- "What makes a good friend?" — qualities beyond "someone who plays with me"
+**Tiny thinking moves**
+- Compare equal, fair, kind, and "what someone needs."
+- Try turn-taking words: "Can I have a turn when you are done?"
+- Notice feelings when waiting is hard.
 
-## Module 3: Right & Wrong (20%)
-**Learning Objectives**:
-- Distinguish between kind and unkind actions
-- Understand basic rules and why they exist
-- Recognise that actions have consequences
-- Begin to understand the difference between "on purpose" and "by accident"
+**Playful output**
+- Make a class turn-taking picture card, such as first, next, timer, trade, or play together.
 
-**Topics & Question Types**:
-1. "Was this kind or unkind?" action judgment
-2. "What might happen next?" consequence prediction
-3. "Why do we have rules?" reasoning questions
-4. Scenario: "Sam pushed Alex. Sam says it was an accident. Alex is hurt. What should happen?"
-5. "Is it ever okay to break a rule?" introducing nuance
-6. Apologising: "What makes a good sorry?"
+## Chapter 3: Feelings Have Clues
+**Circle-time invitations**
+- Read a short picture-book scene and pause to ask: "How might the character feel?"
+- Match face, body, and voice clues to feeling cards.
+- Try a safe "feelings weather" check-in with optional gestures: sunny, cloudy, stormy, mixed.
 
-**Stretch Zone**:
-- "Is it wrong if nobody sees you do it?" — introducing moral reasoning beyond consequences
-- The difference between a mistake and a choice
-- "White lies" — is it ever okay to not tell the truth? (e.g., to avoid hurting feelings)
+**Tiny thinking moves**
+- Name common feelings: happy, sad, angry, scared, surprised, proud, worried, calm.
+- Notice that two people can feel differently about the same thing.
+- Practice asking rather than guessing: "Are you okay?"
 
-## Module 4: Identity & Belonging (20%)
-**Learning Objectives**:
-- Understand that everyone is unique and that's valuable
-- Recognise things that make them similar to and different from others
-- Understand the concept of family and that families come in many forms
-- Feel a sense of belonging to groups (family, class, community)
+**Playful output**
+- Build a feelings chart with faces, colors, or child-chosen symbols.
 
-**Topics & Question Types**:
-1. "What makes you, YOU?" self-reflection prompts
-2. "How are these two children the same? How are they different?"
-3. "Who is in your family?" — diverse family structures
-4. "What groups do you belong to?" (family, class, neighbourhood)
-5. Celebrating differences: "Is it good that we're all different? Why?"
-6. Cultural awareness: "People celebrate different things. Can you match the celebration?"
+## Chapter 4: Kind, Unkind, Mistake, or Accident?
+**Circle-time invitations**
+- Use puppets to show a bump, a grab, a spill, and a helper response.
+- Ask: "What happened? How do we know? What could happen next?"
+- Compare "on purpose," "by accident," and "I need help fixing it."
 
-**Stretch Zone**:
-- Introduce the idea of culture and tradition
-- "Where do you come from?" — geography of identity
-- Gender: "Can boys like pink? Can girls like trucks?" — challenging stereotypes
-- Disability awareness: "Some people's bodies work differently. What can we do to include everyone?"
+**Tiny thinking moves**
+- Separate an action from a person: a kind choice, an unkind choice, a mistake.
+- Think about repair: help, comfort, clean up, give back, say sorry, try again.
+- Notice that a good sorry includes listening and making it better when possible.
 
-## Module 5: Wondering & Asking Why (20%)
-**Learning Objectives**:
-- Develop comfort with open-ended questions
-- Understand that "I don't know" is a good starting point, not a failure
-- Practice giving reasons for opinions ("I think… because…")
-- Begin to understand that some questions don't have one right answer
+**Playful output**
+- Create a repair basket with picture prompts for help, hug if wanted, space, tissue, tidy, and try again.
 
-**Topics & Question Types**:
-1. "Big wonder" questions: "Why is the sky blue?" — process of wondering matters more than the answer
-2. "I think… because…" sentence starters with opinion questions
-3. "Can you think of a reason why someone might disagree?"
-4. "What's the difference between a question and an answer?"
-5. "Is there always one right answer?" — introducing ambiguity
-6. Philosophy through stories: After a simple tale, "Was the character right to do that?"
+## Chapter 5: Me, You, Us
+**Circle-time invitations**
+- Share non-private identity prompts: favorite movement, favorite color, home language word, family food, or song.
+- Compare handprints, name cards, shoe sizes, or self-portraits.
+- Ask: "What makes you you? What makes our class us?"
 
-**Stretch Zone**:
-- Introduce the Socratic method at a baby level: "But what if someone said…?"
-- "How do you know something is true?" — very early epistemology
-- "Is a dream real?" — the nature of reality
-- "If animals could talk, what would they say?" — imagination as a philosophical tool
+**Tiny thinking moves**
+- Notice same and different without ranking.
+- Recognize many kinds of families, bodies, homes, languages, and traditions.
+- Practice belonging language: "There is room for you."
+
+**Playful output**
+- Contribute to a class "All Kinds of Us" mural or basket of identity objects.
+
+## Chapter 6: Rules That Help
+**Circle-time invitations**
+- Look at classroom routine cards: line up, wash hands, gentle hands, listening ears, tidy time.
+- Ask: "What is this rule helping?"
+- Pretend a classroom has no rule for paint, blocks, or snack, then imagine what might happen.
+
+**Tiny thinking moves**
+- Connect rules to care, safety, fairness, and shared space.
+- Notice when a rule needs adult help or a calmer plan.
+- Practice helping make a simple class agreement.
+
+**Playful output**
+- Vote with stickers or gestures on one class care agreement, then draw what it looks like.
+
+## Chapter 7: Real, Pretend, and Maybe
+**Circle-time invitations**
+- Sort story cards into real, pretend, and "could happen someday."
+- Ask: "Can a dragon be real in a story?" and "Can a dream feel real?"
+- Use dress-up play to talk about imagination without confusing it with lying.
+
+**Tiny thinking moves**
+- Notice the difference between pretending, guessing, remembering, and knowing.
+- Ask, "How could we find out?"
+- Respect imaginative answers while gently naming evidence.
+
+**Playful output**
+- Make a two-sided drawing: one real thing I saw, one pretend thing I imagined.
+
+## Chapter 8: Caring for Living Things
+**Circle-time invitations**
+- Observe a plant, class pet photo, worm picture, bird nest, or outdoor leaf.
+- Ask: "What might this living thing need?"
+- Act out gentle and not-gentle choices around bugs, flowers, pets, and shared outdoor spaces.
+
+**Tiny thinking moves**
+- Notice signs of life: growing, needing food or water, moving, changing.
+- Connect care to small actions: gentle hands, enough space, clean water, no litter.
+- Wonder about animal feelings without pretending we know everything.
+
+**Playful output**
+- Choose one tiny care job for the week: water, watch, tidy, protect, or draw.
+
+## Capstone
+Children help create a "Big Questions Circle Book" or display. Each child contributes one adult-scribed question, drawing, photo of play, or dictated thought from the course. The group revisits a favorite question, listens to several answers, and celebrates careful wondering with a quiet ritual such as passing a talking object, adding a sticker to the Wonder Wall, or singing a familiar closing song.
+
+## Assessment Ideas
+- Adult observation notes on listening, turn-taking, emotional vocabulary, and willingness to wonder.
+- Photo portfolio of picture sorts, pretend-play scenarios, class charts, and child drawings.
+- Short adult-scribed child statements using stems such as "I wonder...", "I think...", or "It might be fair if..."
+- Small-group conversation records that note emerging reasoning, perspective-taking, and repair language.
+- Family connection prompt: send home one gentle wonder question for optional talk, drawing, or storytelling.
+
+## Research Notes
+- Education Endowment Foundation, "Improving Social and Emotional Learning in Primary Schools": https://educationendowmentfoundation.org.uk/education-evidence/guidance-reports/primary-sel
+- UK Department for Education, "Statutory framework for the early years foundation stage": https://www.gov.uk/government/publications/early-years-foundation-stage-framework--2
+- Australian Government Department of Education, "Belonging, Being and Becoming: The Early Years Learning Framework for Australia": https://www.education.gov.au/early-childhood/resources/belonging-being-becoming-early-years-learning-framework-australia
+- CASEL, "What Is the CASEL Framework?": https://casel.org/fundamentals-of-sel/what-is-the-casel-framework/
+- SAPERE, "What is P4C?": https://www.sapere.org.uk/what-is-p4c/

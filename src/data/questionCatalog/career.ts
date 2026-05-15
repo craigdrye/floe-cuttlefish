@@ -17,18 +17,73 @@ import { openTriviaBrainTeaserQuestions } from './openTriviaBrainTeasersImported
 import { brainBurnersOerBatch2Questions } from './brainBurnersOerBatch2'
 import { brainBurnersWorkoutGeneratedQuestions } from './brainBurnersWorkoutGenerated'
 import { topUpCareerAgentGeneratedCatalog } from './careerAgentGenerated'
+import { careerAgentGeneratedCareerFrontDoorPolishQuestionsByTrack } from './careerAgentGeneratedCareerFrontDoorPolish'
+import { careerAgentGeneratedCareerSkillsPolishQuestionsByTrack } from './careerAgentGeneratedCareerSkillsPolish'
+import { careerAgentGeneratedInterviewReasoningPolishQuestionsByTrack } from './careerAgentGeneratedInterviewReasoningPolish'
+import { careerAgentGeneratedJargonPracticePolishQuestionsByTrack } from './careerAgentGeneratedJargonPracticePolish'
+import { careerAgentGeneratedQualificationFrontDoorPolishQuestionsByTrack } from './careerAgentGeneratedQualificationFrontDoorPolish'
+import {
+  careerLabsClinicalResearchQuestions,
+  careerLabsMedicalQuestions,
+  careerLabsRegulatoryQuestions,
+} from './careerLabsImported'
+import {
+  barExamQuestions,
+  cfaSurvivalQuestions,
+  cpaExamQuestions,
+  pmpWranglerQuestions,
+  professionalEthicsQuestions,
+  shrmPeopleQuestions,
+} from './careerPhilosophyQualificationQuestions'
+import { careerPublicAffairsQuestions } from './practicalPoliticsQuestions'
+
+function promptKey(prompt: string): string {
+  return prompt
+    .toLowerCase()
+    .replace(/[\u201c\u201d]/g, '"')
+    .replace(/[\u2018\u2019]/g, "'")
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+function hasThreeDistractors(question: Question): boolean {
+  return question.answers.filter((answer) => !answer.correct).length >= 3
+}
+
+function uniqueByPrompt(questions: Question[]): Question[] {
+  const seen = new Set<string>()
+  return questions.filter((question) => {
+    const key = promptKey(question.prompt)
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
 
 export function buildCareerQuestionCatalog(): Record<string, Question[]> {
   const quantCatalog = buildQuantQuestionCatalog()
+  const openTriviaBrainTeasersCleaned = uniqueByPrompt(
+    openTriviaBrainTeaserQuestions.filter(hasThreeDistractors),
+  )
 
   const catalog: Record<string, Question[]> = {
     ...quantCatalog,
-  brainBurners: [
-    ...quantCatalog.quant.filter((question) => question.chapter === 'Brain Teasers'),
-    ...openTriviaBrainTeaserQuestions,
-    ...brainBurnersWorkoutGeneratedQuestions,
-    ...brainBurnersOerBatch2Questions,
-  ],
+    quant: [
+      ...careerAgentGeneratedInterviewReasoningPolishQuestionsByTrack.quant,
+      ...quantCatalog.quant,
+    ],
+    quantAdvanced: [
+      ...careerAgentGeneratedInterviewReasoningPolishQuestionsByTrack.quantAdvanced,
+      ...quantCatalog.quantAdvanced,
+    ],
+    brainBurners: uniqueByPrompt([
+      ...careerAgentGeneratedInterviewReasoningPolishQuestionsByTrack.brainBurners,
+      ...quantCatalog.quant.filter((question) => question.chapter === 'Brain Teasers'),
+      ...openTriviaBrainTeasersCleaned,
+      ...brainBurnersWorkoutGeneratedQuestions,
+      ...brainBurnersOerBatch2Questions,
+    ]),
   productManagement: makeQuestionBank('Career Skills', [
     { id: 17001, chapter: 'Product Dock', title: 'Problem first', prompt: 'A strong product manager starts by understanding:', correct: 'The user problem and why it matters', wrong: [['Only the logo color', 'Visual polish matters later, but it is not the starting point.', 'Start from user pain and value.'], ['Only what engineering already built', 'You need the problem before choosing the solution.', 'Problem-first beats feature-first.'], ['Only what sounds impressive in a meeting', 'Impressive is not the same as useful.', 'Use evidence about user needs.']] },
     { id: 17002, chapter: 'Product Reef', title: 'Prioritization', prompt: 'Good prioritization usually balances:', correct: 'Impact, effort, and strategic fit', wrong: [['Only whoever shouts loudest', 'Noise is not a prioritization framework.', 'Use explicit tradeoffs.'], ['Only what is easiest to build', 'Ease matters, but impact matters too.', 'Consider value and cost together.'], ['Only the oldest idea in the backlog', 'Age alone is weak prioritization logic.', 'Rank by effect and feasibility.']] },
@@ -90,16 +145,32 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
     { id: 17904, chapter: 'Sales Lagoon', title: 'Closing signal', prompt: 'A promising buying signal is when a prospect starts asking about:', correct: 'Implementation, timeline, or next steps', wrong: [['What your favorite snack is', 'That does not usually signal buying intent.', 'Operational next-step questions often show real interest.'], ['How to avoid every decision forever', 'That suggests avoidance, not progress.', 'Look for commitment-oriented questions.'], ['Nothing at all for six months', 'Silence is not a strong buying signal.', 'Interest often shows up as practical questions.']] },
   ]),
   customsBroker: makeQuestionBank('Career Skills', [
-    { id: 18001, chapter: 'Port Entry', title: 'HS code purpose', prompt: 'In customs work, a tariff classification code is mainly used to determine:', correct: 'How a product is categorized for duty and regulatory treatment', wrong: [['Who physically packed the carton', 'Packing details can matter, but the code is about classification.', 'Think category, duty, and rules.'], ['Which truck driver gets assigned', 'Transportation planning is separate.', 'HS codes define product treatment at the border.'], ['Whether the importer likes the supplier', 'Preferences do not set tariff treatment.', 'Focus on regulatory category.']] },
+    { id: 18001, chapter: 'Port Entry', title: 'HS code purpose', prompt: 'In customs work, a tariff classification code is mainly used to determine:', correct: 'How a product is categorized for duty and regulatory treatment', wrong: [['Which party negotiated freight pickup', 'Logistics facts can matter elsewhere, but classification is about the product category.', 'Think category, duty, and rules.'], ['The importer’s preferred warehouse location', 'Storage preferences do not set tariff treatment.', 'HS codes define product treatment at the border.'], ['Whether the commercial invoice is printed in color', 'Invoice clarity matters, but color does not determine classification.', 'Focus on regulatory category.']] },
     { id: 18002, chapter: 'Harbor Checkpoint', title: 'Country of origin', prompt: 'For customs purposes, country of origin usually means the country where the goods:', correct: 'Were substantially transformed into their final form', wrong: [['Were shipped from most recently', 'Ship-from location is not always origin.', 'Origin follows the production and transformation rules.'], ['Spent the longest time in a warehouse', 'Warehousing does not create origin.', 'Storage is not substantial transformation.'], ['Were sold at the highest price', 'Pricing does not determine origin.', 'Use the legal origin test.']] },
     { id: 18003, chapter: 'Broker Jetty', title: 'Reasonable care', prompt: 'When customs authorities say an importer must exercise reasonable care, they generally mean the importer should:', correct: 'Use accurate documentation and make a good-faith effort to comply with customs rules', wrong: [['Guess the classification and fix it later if someone complains', 'Guessing is not reasonable care.', 'The standard is diligence and accuracy.'], ['Let the carrier decide everything automatically', 'Some tasks can be delegated, but compliance responsibility stays with the importer.', 'Responsibility does not disappear because another party is involved.'], ['Only review entries when duties look expensive', 'Compliance applies across entries, not only costly ones.', 'Care is a general obligation.']] },
-    { id: 18004, chapter: 'Inspection Dock', title: 'Recordkeeping window', prompt: 'Strong customs recordkeeping matters because it helps an importer:', correct: 'Support classifications, values, and origin claims during audits or reviews', wrong: [['Decorate the warehouse office', 'Records are for compliance, not decor.', 'Keep evidence that supports the entry.'], ['Avoid paying all duties forever', 'Records do not erase duty obligations.', 'They help prove that the declared treatment was justified.'], ['Replace the commercial invoice entirely', 'Invoices matter, but they are only one part of the file.', 'Think broader documentation support.']] },
+    { id: 18004, chapter: 'Inspection Dock', title: 'Recordkeeping window', prompt: 'Strong customs recordkeeping matters because it helps an importer:', correct: 'Support classifications, values, and origin claims during audits or reviews', wrong: [['Rely on memory after liquidation', 'Memory is not a compliance file.', 'Keep evidence that supports the entry.'], ['Avoid paying all duties forever', 'Records do not erase duty obligations.', 'They help prove that the declared treatment was justified.'], ['Replace the commercial invoice entirely', 'Invoices matter, but they are only one part of the file.', 'Think broader documentation support.']] },
+    { id: 18005, chapter: 'HTSUS Classification', title: 'GRI Starting Point', prompt: 'A broker is choosing between two plausible HTSUS headings. The best first move is to:', correct: 'Apply the General Rules of Interpretation together with relevant section and chapter notes', wrong: [['Choose the heading with the lowest duty rate first', 'Duty rate is not the starting classification rule.', 'Classify before optimizing.'], ['Use only the supplier’s marketing description', 'Marketing language may be incomplete or imprecise.', 'Use legal notes and product facts.'], ['Pick the heading used on the prior shipment without checking changes', 'Prior treatment can help but does not replace current analysis.', 'Verify the rule and facts.']] },
+    { id: 18006, chapter: 'Valuation', title: 'Assists', prompt: 'An importer provides molds to a foreign manufacturer free of charge for use in producing imported goods. In customs valuation, that fact most likely raises:', correct: 'A possible assist that may need to be added to transaction value', wrong: [['A non-dutiable domestic retail expense in every case', 'Production assists can affect customs value.', 'Ask what the buyer supplied for production.'], ['A reason to ignore transaction value automatically', 'The transaction-value method may still apply with required additions.', 'Think additions to value.'], ['A country-of-origin change by itself', 'Providing molds does not by itself determine origin.', 'Keep origin and value separate.']] },
+    { id: 18007, chapter: 'Entry Summary', title: 'Missing Invoice Detail', prompt: 'A commercial invoice lacks enough product detail to classify a shipment accurately. The broker should generally:', correct: 'Request clarification or supporting documentation before filing an unsupported classification', wrong: [['File the entry using the broadest guess and never revisit it', 'Unsupported guesses create compliance and penalty risk.', 'Reasonable care needs facts.'], ['Ask the trucker to choose the tariff number', 'Transportation parties may not know the classification facts.', 'Get product information.'], ['Delete the invoice from the entry file', 'Removing evidence weakens the compliance record.', 'Document the gap and resolution.']] },
+    { id: 18008, chapter: 'Duties and Fees', title: 'AD/CVD Scope', prompt: 'A product may fall within an antidumping or countervailing duty order. What should the broker do before treating ordinary duty as the whole exposure?', correct: 'Check the order scope and product facts to determine whether AD/CVD may apply', wrong: [['Ignore AD/CVD unless the base duty rate is high', 'AD/CVD exposure is separate from ordinary duty rate.', 'Check the order scope.'], ['Assume AD/CVD never applies to repeat suppliers', 'Supplier history does not eliminate scope analysis.', 'Use product and order facts.'], ['Apply the lowest possible rate because the importer is in a hurry', 'Speed does not justify unsupported duty treatment.', 'Duty exposure needs support.']] },
+    { id: 18009, chapter: 'Origin and Marking', title: 'Ship-From Trap', prompt: 'Goods are shipped from Country B, but major manufacturing occurred in Country A and only packaging occurred in Country B. The origin analysis should focus on:', correct: 'Where substantial transformation occurred, not just the final ship-from country', wrong: [['The last port listed on the bill of lading only', 'Ship-from country is not always origin.', 'Follow production facts.'], ['The language printed on the outer carton only', 'Label language may matter for marking, but it does not decide origin alone.', 'Analyze transformation.'], ['The importer’s preferred trade program first', 'Preference claims depend on rule satisfaction, not preference alone.', 'Start with facts and rules.']] },
+    { id: 18010, chapter: 'Corrections', title: 'Post-Entry Error', prompt: 'After filing, an importer discovers a material classification error on an entry summary. The most defensible next step is to:', correct: 'Evaluate the proper correction or disclosure path and document the facts promptly', wrong: [['Wait for CBP to find it because silence is simpler', 'Delay can increase penalty and audit risk.', 'Correct known errors through proper channels.'], ['Change future entries only and ignore the filed entry', 'Future compliance does not resolve the existing error.', 'Address the affected entry.'], ['Delete internal emails about the issue', 'Destroying evidence creates serious compliance risk.', 'Preserve the record.']] },
+    { id: 18011, chapter: 'Exam Strategy', title: 'Reference Search', prompt: 'On an open-book customs broker exam question, a good time-management habit is to:', correct: 'Identify the controlling topic and search the relevant reference instead of rereading every source', wrong: [['Read the entire HTSUS front to back for every question', 'That is not realistic under time pressure.', 'Search with intent.'], ['Answer only from memory even when a citation is available', 'The exam is built around reference navigation.', 'Use the materials.'], ['Pick answers based on which option has the most legal words', 'Legal-sounding language can still be wrong.', 'Verify against the source.']] },
+    { id: 18012, chapter: 'Broker Responsibility', title: 'Client Communication', prompt: 'A client pressures the broker to use a lower-duty classification without support. The broker should:', correct: 'Explain the compliance risk, request supporting facts, and refuse to file an unsupported classification', wrong: [['Use the client’s preferred code because the client pays the invoice', 'A broker still has compliance responsibilities.', 'Professional duty survives pressure.'], ['File first and ask questions after liquidation', 'Unsupported filing creates avoidable risk.', 'Resolve material facts before filing.'], ['Threaten the client without explaining the issue', 'Clear advice is better than drama.', 'Communicate risk and required support.']] },
   ]),
   medicalCodingCpc: makeQuestionBank('Career Skills', [
-    { id: 18101, chapter: 'Coding Clinic', title: 'Diagnosis vs procedure', prompt: 'In medical coding, a diagnosis code is mainly used to describe:', correct: 'Why the patient needed care or what condition was assessed', wrong: [['Which parking space the patient used', 'That is unrelated.', 'Diagnosis codes describe the clinical reason or condition.'], ['The exact billing software version', 'Software details are not coded on the claim.', 'Stay with the patient condition or reason for care.'], ['The sterilization process for instruments', 'That is operational, not diagnosis coding.', 'Focus on the condition being treated or evaluated.']] },
+    { id: 18101, chapter: 'Coding Clinic', title: 'Diagnosis vs procedure', prompt: 'In medical coding, a diagnosis code is mainly used to describe:', correct: 'Why the patient needed care or what condition was assessed', wrong: [['The procedure performed during the encounter', 'Procedure coding uses CPT or HCPCS rather than diagnosis coding.', 'Diagnosis codes describe the clinical reason or condition.'], ['The exact billing software version', 'Software details are not coded on the claim.', 'Stay with the patient condition or reason for care.'], ['The sterilization process for instruments', 'That is operational, not diagnosis coding.', 'Focus on the condition being treated or evaluated.']] },
     { id: 18102, chapter: 'Claim Reef', title: 'Specificity', prompt: 'A coder is usually expected to choose the most specific supported code because it:', correct: 'Reduces ambiguity and better reflects the documented encounter', wrong: [['Makes every claim pay faster no matter what', 'Specificity helps, but payment depends on more than that.', 'The core goal is accurate representation.'], ['Lets the coder invent missing details', 'Coding must follow documentation, not imagination.', 'Specific does not mean speculative.'], ['Avoids the need for provider notes', 'Coding depends on documentation; it does not replace it.', 'Specificity still requires support.']] },
     { id: 18103, chapter: 'Audit Lagoon', title: 'Unsupported coding', prompt: 'If a code is not supported by the provider documentation, the safest action is to:', correct: 'Query or clarify rather than assign a code that the chart does not support', wrong: [['Pick the highest-paying code to be safe', 'That is not safe; it creates compliance risk.', 'Coding follows documentation, not reimbursement preference.'], ['Submit the code anyway and hope it passes', 'That exposes the organization to denials and audit issues.', 'Unsupported coding is a real risk.'], ['Delete the whole claim immediately', 'Sometimes clarification is enough; total abandonment is not the default.', 'Seek supported accuracy first.']] },
-    { id: 18104, chapter: 'Revenue Dock', title: 'Medical necessity', prompt: 'Medical necessity matters in coding and billing because payers often want to see that the service was:', correct: 'Clinically justified for the patient and documented appropriately', wrong: [['Popular on social media', 'Popularity does not create coverage.', 'Payers look for justification and documentation.'], ['Performed by the loudest department', 'Internal politics do not define necessity.', 'Need and documentation matter.'], ['The most expensive option available', 'Cost alone does not justify care.', 'Clinical appropriateness is the key test.']] },
+    { id: 18104, chapter: 'Revenue Dock', title: 'Medical necessity', prompt: 'Medical necessity matters in coding and billing because payers often want to see that the service was:', correct: 'Clinically justified for the patient and documented appropriately', wrong: [['Ordered without any diagnosis or rationale', 'An unsupported order may not establish medical necessity.', 'Payers look for justification and documentation.'], ['Selected because it produces the highest reimbursement', 'Payment preference does not establish necessity.', 'Need and documentation matter.'], ['The most expensive option available', 'Cost alone does not justify care.', 'Clinical appropriateness is the key test.']] },
+    { id: 18105, chapter: 'ICD-10-CM', title: 'Tabular Verification', prompt: 'After finding a possible ICD-10-CM code in the Alphabetic Index, a coder should:', correct: 'Verify the code and instructions in the Tabular List before final selection', wrong: [['Submit the first indexed code without checking notes', 'The Tabular List may contain specificity, excludes, or sequencing instructions.', 'Index first, verify second.'], ['Use a CPT modifier to fix the diagnosis code', 'CPT modifiers do not replace ICD-10-CM code verification.', 'Stay in the correct code set.'], ['Ignore laterality because the index found a code', 'Laterality may be required for specificity.', 'Check the Tabular details.']] },
+    { id: 18106, chapter: 'ICD-10-CM', title: 'Sequencing', prompt: 'A record documents an acute condition treated at the visit plus a stable history condition not addressed. Diagnosis sequencing should generally prioritize:', correct: 'The condition chiefly responsible for the encounter, following applicable guidelines', wrong: [['The condition with the longest name', 'Name length does not determine sequencing.', 'Use encounter reason and guidelines.'], ['Every historical condition before the treated problem', 'History codes may matter, but sequencing follows the encounter and rules.', 'Ask why care was provided.'], ['Whichever code has the highest reimbursement', 'Reimbursement preference is not a sequencing rule.', 'Follow coding guidance.']] },
+    { id: 18107, chapter: 'CPT', title: 'Procedure Detail', prompt: 'An operative note says a lesion was excised but does not document size or anatomical site. The coder should:', correct: 'Query or review documentation because size and site can determine the CPT code', wrong: [['Choose the largest excision code to avoid undercoding', 'Unsupported upcoding creates compliance risk.', 'CPT often needs precise details.'], ['Use only a diagnosis code and skip the procedure forever', 'The procedure may be codable once documentation is clarified.', 'Clarify the missing facts.'], ['Assume the site from the appointment reason', 'Coding should not infer unsupported procedure details.', 'Use provider documentation.']] },
+    { id: 18108, chapter: 'Modifiers', title: 'Distinct Service', prompt: 'A modifier should be appended only when it:', correct: 'Accurately explains a documented circumstance such as distinct service, laterality, or component billing', wrong: [['Makes a bundled service payable without real support', 'Modifiers require documentation and correct use.', 'Modifier does not mean loophole.'], ['Feels useful because a claim denied last month', 'Prior denial alone does not justify modifier use.', 'Tie modifier to this encounter.'], ['Replaces the need for CPT code selection', 'Modifiers qualify codes; they do not replace base code logic.', 'Code first, modify when supported.']] },
+    { id: 18109, chapter: 'NCCI Logic', title: 'Bundling', prompt: 'Two CPT codes appear to describe services where one is normally included in the other. Before billing both, the coder should check:', correct: 'Bundling rules, documentation, and whether any modifier is truly supported', wrong: [['Whether both codes look profitable together', 'Payment amount does not determine bundling compliance.', 'Check the edit and support.'], ['Only the order in which the services appear in the note', 'Sequence in the note does not decide bundling by itself.', 'Use NCCI logic.'], ['Whether the patient requested two line items', 'Patient preference does not override coding rules.', 'Follow coding edits and documentation.']] },
+    { id: 18110, chapter: 'HCPCS Level II', title: 'Supplies and Units', prompt: 'A claim includes a separately billable supply with quantity documented as four units. A coder should pay special attention to:', correct: 'HCPCS code selection, unit reporting, and payer documentation requirements', wrong: [['Changing the units to one because most lines look cleaner that way', 'Units should match documented billing rules and quantity.', 'Use the documented quantity and rules.'], ['Using an ICD-10-CM code for the supply itself', 'ICD-10-CM describes diagnoses, not supply items.', 'Choose the right code set.'], ['Ignoring medical necessity because supplies are never reviewed', 'Supplies can still require support.', 'Documentation matters.']] },
+    { id: 18111, chapter: 'Provider Query', title: 'Compliant Clarification', prompt: 'A provider note is ambiguous about whether a condition is current or historical. A compliant coder query should be:', correct: 'Clear, non-leading, and based on clinical facts already in the record', wrong: [['Written to push the provider toward the highest-paying diagnosis', 'Leading for reimbursement creates compliance risk.', 'Ask neutrally.'], ['Skipped because ambiguity always means choosing the more severe option', 'Ambiguity should be clarified or coded conservatively under rules.', 'Do not infer severity.'], ['Handled by changing the provider note directly', 'Coders should not alter provider documentation.', 'Request clarification.']] },
+    { id: 18112, chapter: 'Exam Strategy', title: 'Timed Case Triage', prompt: 'During CPC practice, a long surgical case is consuming too much time and the answer path is unclear. The best exam-management move is to:', correct: 'Mark it, answer easier items, and return with time for focused code-book navigation', wrong: [['Spend all remaining time proving the one case can be solved', 'One hard item should not consume the whole exam.', 'Protect total points.'], ['Stop using the code books for the rest of the exam', 'Reference use is central to CPC work.', 'Use the books efficiently.'], ['Guess every later question without reading it', 'Triage means moving strategically, not giving up accuracy.', 'Return if time allows.']] },
   ]),
   amlCompliance: makeQuestionBank('Career Skills', [
     { id: 18201, chapter: 'Compliance Wharf', title: 'KYC purpose', prompt: 'Know Your Customer procedures are mainly designed to help a firm:', correct: 'Understand who the customer is and assess risk before and during the relationship', wrong: [['Choose the customer with the nicest logo', 'Brand aesthetics are irrelevant.', 'KYC is about identity and risk.'], ['Guarantee the customer never breaks any law', 'Controls reduce risk; they do not guarantee perfect behavior.', 'Use KYC as a risk-management process.'], ['Replace transaction monitoring entirely', 'Monitoring still matters after onboarding.', 'KYC is one layer, not the whole stack.']] },
@@ -107,13 +178,32 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
     { id: 18203, chapter: 'Escalation Pier', title: 'Red flag handling', prompt: 'When an analyst sees a credible red flag, the next good move is usually to:', correct: 'Escalate through the firm process and document the facts clearly', wrong: [['Tell the customer they are under suspicion immediately', 'That can create legal and procedural problems.', 'Follow the internal escalation path.'], ['Ignore it unless the amount is huge', 'Materiality matters, but smaller activity can still be suspicious.', 'Use the risk process, not a casual threshold guess.'], ['Delete the alert to keep the queue tidy', 'That destroys the control record.', 'Document and escalate instead.']] },
     { id: 18204, chapter: 'Case File Reef', title: 'Beneficial ownership', prompt: 'Beneficial ownership checks matter because they help reveal:', correct: 'The real people who ultimately own or control an entity', wrong: [['Which office plant belongs to the finance team', 'That is unrelated.', 'Beneficial ownership is about true control.'], ['The color of the company website', 'Branding does not identify controlling parties.', 'Look through the entity to the real owners.'], ['Whether the customer prefers email or phone', 'Communication preference is not the core issue.', 'The compliance question is who actually controls the entity.']] },
   ]),
-  vcJargon: vcJargonQuestions,
-  ibJargon: ibJargonQuestions,
-  defenseBudgetingJargon: defenseBudgetingJargonQuestions,
-  clinicalResearchJargon: clinicalResearchJargonQuestions,
-  medicalBillingJargon: medicalBillingJargonQuestions,
-  cybersecOpsJargon: cybersecOpsJargonQuestions,
+  vcJargon: [
+    ...careerAgentGeneratedJargonPracticePolishQuestionsByTrack.vcJargon,
+    ...vcJargonQuestions,
+  ],
+  ibJargon: [
+    ...careerAgentGeneratedJargonPracticePolishQuestionsByTrack.ibJargon,
+    ...ibJargonQuestions,
+  ],
+  defenseBudgetingJargon: [
+    ...careerAgentGeneratedJargonPracticePolishQuestionsByTrack.defenseBudgetingJargon,
+    ...defenseBudgetingJargonQuestions,
+  ],
+  clinicalResearchJargon: [
+    ...careerAgentGeneratedJargonPracticePolishQuestionsByTrack.clinicalResearchJargon,
+    ...clinicalResearchJargonQuestions,
+  ],
+  medicalBillingJargon: [
+    ...careerAgentGeneratedJargonPracticePolishQuestionsByTrack.medicalBillingJargon,
+    ...medicalBillingJargonQuestions,
+  ],
+  cybersecOpsJargon: [
+    ...careerAgentGeneratedJargonPracticePolishQuestionsByTrack.cybersecOpsJargon,
+    ...cybersecOpsJargonQuestions,
+  ],
   medical: [
+    ...careerLabsMedicalQuestions,
     makeSimpleQuestion(5001, 'Medical', 'Vitals Dock', 'Triage priority',
       'A patient has chest pain, shortness of breath, and low blood pressure. What is the safest first priority?',
       'Assess ABCs and escalate urgent evaluation',
@@ -1278,6 +1368,7 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
     },
   ]),
   series86: [
+    ...careerAgentGeneratedInterviewReasoningPolishQuestionsByTrack.series86,
     makeSimpleQuestion(6001, 'Series 86', 'Equity Research Dock', 'EPS basics',
       'A company earns $100 million and has 50 million shares outstanding. What is EPS?',
       '$2.00',
@@ -1381,6 +1472,18 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
     { id: 6706, chapter: 'Welding Shoals', title: 'Procedure discipline', prompt: 'Why do inspectors care so much about approved procedures and qualifications during repairs?', correct: 'Because repair quality depends not just on intent but on using controlled methods and qualified execution', wrong: [['Because procedure paperwork replaces the need to inspect the repair', 'Documentation supports but does not replace inspection.', 'Process control and verification both matter.'], ['Because any experienced welder can safely improvise in code service', 'Experience is valuable, but controlled repair still matters.', 'High-consequence equipment needs qualified methods.'], ['Because qualifications matter only for new construction, not in-service work', 'Repair work can be just as critical.', 'Do not relax control because the asset is already in service.']] },
     { id: 6707, chapter: 'Reference Shelf', title: 'Code conflict instinct', prompt: 'A candidate finds two reference passages that seem to point in different directions. What is the strongest exam instinct?', correct: 'Pause and verify which code, edition, scope, and context actually govern the question before choosing an answer', wrong: [['Average the two answers and pick the middle result', 'Compromise is not a code-interpretation method.', 'Resolve the governing reference first.'], ['Choose the stricter-sounding passage automatically', 'Stricter is not always the applicable rule.', 'Applicability matters more than tone.'], ['Assume the references are wrong and answer from experience', 'Experience helps, but the exam tests code-based judgment.', 'Anchor the answer in the governing document context.']] },
     { id: 6708, chapter: 'Inspection Lagoon', title: 'Practical judgment', prompt: 'What does good API-style inspection judgment usually combine?', correct: 'Measured condition, damage mechanism understanding, code requirements, and documented engineering logic', wrong: [['Only the most conservative possible answer in every case', 'Conservatism matters, but unsupported overreaction is not the goal.', 'Judgment should be technically justified.'], ['Only the inspector’s intuition from past jobs', 'Experience helps, but decisions need disciplined support.', 'Combine field sense with code and evidence.'], ['Only the asset owner’s production preference', 'Operations pressure cannot replace integrity assessment.', 'Inspection decisions must remain technically defensible.']] },
+    { id: 6709, chapter: 'Thickness Math', title: 'Average corrosion rate', prompt: 'A pipe location measured 0.480 in. thick six years ago and 0.390 in. thick today. What is the average corrosion rate?', correct: '0.015 in. per year', wrong: [['0.090 in. per year', 'That is the total metal loss, not the annual rate.', 'Divide loss by years.'], ['0.0065 in. per year', 'That divides the current thickness by time rather than the metal loss.', 'Use old minus current thickness.'], ['0.030 in. per year', 'That overstates the rate for the six-year interval.', '0.090 divided by 6.']] },
+    { id: 6710, chapter: 'Remaining Life', title: 'Minimum thickness margin', prompt: 'A vessel shell is 0.410 in. thick, the required minimum is 0.350 in., and the corrosion rate is 0.012 in. per year. Estimated remaining life is closest to:', correct: '5 years', wrong: [['34 years', 'That divides current thickness by rate and ignores required minimum thickness.', 'Use available thickness only.'], ['3 years', 'That understates the available thickness margin.', 'Subtract minimum from current thickness first.'], ['12 years', 'That confuses the corrosion rate with the thickness margin.', 'Remaining life is margin divided by rate.']] },
+    { id: 6711, chapter: 'Inspection Intervals', title: 'Interval after rate change', prompt: 'A circuit’s corrosion rate doubles after a process change. The most defensible inspection-planning response is to:', correct: 'Recalculate remaining life and inspection interval using the updated rate and service risk', wrong: [['Keep the old interval because the previous plan was approved', 'Approval does not make the old assumptions permanent.', 'Plans depend on current risk.'], ['Extend the interval because more history always lowers uncertainty', 'More history can reveal higher risk, as it does here.', 'Use the direction of the data.'], ['Wait for leakage before changing the plan', 'Inspection planning is meant to act before loss of containment.', 'Use trend information early.']] },
+    { id: 6712, chapter: 'NDE Selection', title: 'Method fit', prompt: 'A damage mechanism is expected to cause localized internal pitting rather than broad external thinning. The selected NDE method should be judged mainly by whether it can:', correct: 'Detect and size the expected pitting at the relevant locations with adequate reliability', wrong: [['Produce the cheapest report regardless of detection limits', 'Cost matters, but method capability must fit the damage mechanism.', 'Match method to damage.'], ['Use the same technique as last time without checking the mechanism', 'Prior technique may not fit the current damage concern.', 'Damage mechanism drives selection.'], ['Avoid recording uncertain readings', 'Uncertainty should be documented and managed, not hidden.', 'Data quality matters.']] },
+    { id: 6713, chapter: 'Risk-Based Inspection', title: 'Likelihood and consequence', prompt: 'In risk-based inspection planning, an item with moderate likelihood of failure but very high consequence should usually:', correct: 'Receive attention proportional to the combined risk, not be dismissed because likelihood is only moderate', wrong: [['Be ignored unless likelihood is the single highest in the unit', 'Consequence is part of risk.', 'Risk combines likelihood and consequence.'], ['Be treated identically to every low-consequence item', 'RBI differentiates inspection effort by risk.', 'Do not flatten the risk picture.'], ['Avoid inspection because high consequence is not measurable', 'Consequence can be estimated and used in planning.', 'Use the risk model carefully.']] },
+    { id: 6714, chapter: 'Repairs', title: 'Temporary repair control', prompt: 'A temporary repair clamp is installed to keep equipment running until the next outage. What should the inspector be most concerned about after immediate safety is addressed?', correct: 'Engineering basis, approval, monitoring, documentation, and a plan to remove or replace the temporary repair', wrong: [['Letting the temporary repair become permanent without review', 'Temporary repairs need controlled follow-up.', 'Do not let temporary become invisible.'], ['Recording only that production was restored', 'Return to service is not enough documentation.', 'Track the technical basis and controls.'], ['Assuming the clamp proves the original damage no longer matters', 'The underlying condition still needs integrity management.', 'A clamp controls risk only if governed.']] },
+    { id: 6715, chapter: 'Rerating', title: 'Lower pressure service', prompt: 'A corroded vessel may be acceptable only at a lower maximum allowable pressure. Before the rerating is accepted, the inspector should verify:', correct: 'A documented engineering evaluation and required updates to records, limits, and markings as applicable', wrong: [['A verbal promise from operations to run gently', 'Operating intent does not replace rerating requirements.', 'Make the new limit controlled and documented.'], ['That rerating avoids all inspection involvement', 'Rerating is a technical change requiring review.', 'Controlled change, not shortcut.'], ['That the old design pressure remains on every operating document', 'Documents should reflect the approved conditions.', 'Avoid conflicting limits.']] },
+    { id: 6716, chapter: 'Pressure Testing', title: 'Return to service', prompt: 'After a significant pressure-boundary repair, schedule pressure leads the team to ask whether testing or alternative evaluation can be skipped. The inspector should first:', correct: 'Confirm the applicable code and engineering requirements for pressure testing or accepted alternatives before return to service', wrong: [['Let startup urgency decide the technical requirement', 'Schedule pressure does not determine code compliance.', 'Verify the requirement.'], ['Skip evaluation if the repair visually looks clean', 'Visual appearance alone may not satisfy return-to-service requirements.', 'Use applicable acceptance criteria.'], ['Delay all documentation until the next planned outage', 'Return-to-service decisions need support now.', 'Document before relying on the repair.']] },
+    { id: 6717, chapter: 'Damage Mechanisms', title: 'CUI suspicion', prompt: 'Insulated piping has a history of wet insulation and coating breakdown near supports. Even without an active leak, the inspector should consider:', correct: 'Corrosion under insulation or localized external corrosion as a credible damage mechanism', wrong: [['No credible risk because insulation hides the pipe', 'Hidden surfaces can increase inspection uncertainty.', 'Wet insulation is a clue.'], ['Only internal erosion from process velocity', 'The facts point to an external insulation/coating mechanism.', 'Match mechanism to evidence.'], ['A documentation issue only, with no inspection implication', 'Records matter, but the condition may require inspection planning.', 'Treat it as possible damage.']] },
+    { id: 6718, chapter: 'Records', title: 'Repair package', prompt: 'A completed repair package lacks the work scope, material traceability, inspection results, and approval basis. The main integrity problem is that future inspectors:', correct: 'Cannot confidently understand what was changed, why it was acceptable, or how it affects future inspection planning', wrong: [['Need only the invoice amount to plan inspection', 'Cost does not describe technical condition.', 'Future planning needs technical records.'], ['Can assume the repair was perfect because equipment restarted', 'Startup does not prove full code compliance or long-term integrity.', 'Records preserve the basis.'], ['Should delete old inspection history to avoid confusion', 'History is essential to trend and condition assessment.', 'Preserve and reconcile records.']] },
+    { id: 6719, chapter: 'Code Scope', title: 'Asset boundary', prompt: 'A question mixes tank, piping, and pressure-vessel facts. Before applying any detailed rule, the candidate should identify:', correct: 'Which asset and code scope the question is actually testing', wrong: [['The answer choice with the most familiar words', 'Familiar wording can point to the wrong code.', 'Scope first.'], ['The highest possible inspection cost', 'Cost does not identify the governing code.', 'Classify the asset.'], ['The rule used on the candidate’s most recent job, regardless of facts', 'Field experience must be matched to the exam scenario.', 'Use the question facts.']] },
+    { id: 6720, chapter: 'Professional Judgment', title: 'Incomplete evidence', prompt: 'Operations asks for inspection signoff, but required thickness data are incomplete for the area of concern. The best response is to:', correct: 'Withhold or qualify signoff until enough evidence supports the technical conclusion required', wrong: [['Sign unconditionally and gather the missing readings later if convenient', 'Unsupported signoff creates integrity and accountability risk.', 'Evidence first.'], ['Let production cost decide whether the data are necessary', 'Cost pressure cannot replace technical basis.', 'Protect the inspection conclusion.'], ['Use a vague note that hides the missing evidence', 'Ambiguous documentation weakens the record.', 'Be clear about limitations.']] },
   ]),
   cdfm: makeQuestionBank('Career Skills', [
     { id: 6801, chapter: 'Budget Dock', title: 'Purpose of appropriation', prompt: 'Why does the source and purpose of funds matter so much in defense financial management?', correct: 'Because different appropriations are available for different legally defined purposes and constraints', wrong: [['Because all government funds can be moved freely if the mission is important enough', 'Mission urgency does not erase fiscal boundaries.', 'Purpose restrictions are core to fiscal discipline.'], ['Because appropriation labels are mainly accounting decoration', 'The labels correspond to legal availability and control.', 'Treat appropriations as real constraints.'], ['Because purpose rules matter only at year-end', 'They matter whenever funds are used.', 'Availability rules apply throughout execution.']] },
@@ -1412,7 +1515,442 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
     { id: 6967, chapter: 'Role Clarity Shoals', title: 'Coordinator versus investigator', prompt: 'Why is role clarity between the study coordinator and principal investigator so important?', correct: 'Because tasks may be delegated, but responsibility for key clinical and protocol decisions cannot simply become ambiguous', wrong: [['Because coordinators should make all medical judgments to save investigator time', 'Efficiency does not justify role confusion.', 'Clinical responsibility boundaries matter.'], ['Because delegation means the investigator no longer needs oversight', 'Delegation does not remove overall responsibility.', 'Oversight remains critical.'], ['Because the PI should avoid all operational awareness to preserve independence', 'Investigators still need appropriate study oversight.', 'Role clarity supports accountability, not disengagement.']] },
     { id: 6968, chapter: 'Inspection Lagoon', title: 'Inspection readiness', prompt: 'What is the clearest sign that a site is genuinely inspection-ready rather than just cosmetically organized?', correct: 'Its records, staff explanations, and actual practices consistently align with the protocol and documented procedures', wrong: [['The binders are color-coded and look neat', 'Organization helps, but cosmetics are not readiness.', 'Inspectors test substance and consistency.'], ['The site can answer only the easiest likely questions', 'Readiness requires deeper operational consistency.', 'Being polished on the surface is not enough.'], ['The monitor has not complained recently', 'Lack of recent complaints is not a full readiness standard.', 'True readiness shows up in records and practice alignment.']] },
   ]),
+  climateScienceMaster: makeQuestionBank('Climate Science', [
+    {
+      id: 54025,
+      chapter: 'Ocean Physics in Climate Science',
+      title: 'Why Mixed-Layer Depth Matters',
+      prompt: 'Two ocean regions receive the same net downward surface heat flux for one month. Region A has a 20 m mixed layer; Region B has an 80 m mixed layer. What is the best expectation for the sea-surface temperature response?',
+      correct: 'The shallow mixed layer warms more at the surface because the heat is distributed through less water',
+      wrong: [
+        ['The deep mixed layer warms more because it can absorb more total heat', 'A deeper layer has larger heat capacity, but for the same imposed heat input it produces a smaller temperature rise.', 'Ask whether the heat input changed, or only the volume of water receiving it.'],
+        ['Both regions warm by the same amount because the surface heat flux is identical', 'The same heat flux can produce different temperature changes if it is mixed into different depths.', 'Temperature change depends on heat input divided by heat capacity.'],
+        ['Neither region warms unless heat reaches the deep ocean below the thermocline', 'The mixed layer itself can warm even if little heat immediately reaches the deep ocean.', 'Surface temperature can respond before the abyssal ocean does.'],
+      ],
+    },
+    {
+      id: 54026,
+      chapter: 'Ocean Physics in Climate Science',
+      title: 'Mode Waters as Climate Memory',
+      prompt: 'Why can subtropical mode waters help carry a surface temperature or carbon anomaly into the ocean interior?',
+      correct: 'Winter mixing forms a thick, uniform layer that can be subducted into the thermocline and isolated from direct air-sea exchange',
+      wrong: [
+        ['Mode waters matter because they are always colder and denser than deep water', 'Mode waters are not generally denser than deep water; their importance is their formation and ventilation pathway.', 'Focus on how surface properties enter the thermocline.'],
+        ['They carry anomalies downward mainly by sinking straight to the seafloor', 'Most mode waters ventilate the thermocline, not the abyssal ocean.', 'Mode waters are usually an upper-ocean to thermocline process.'],
+        ['They store anomalies because no mixing occurs during winter', 'Winter mixing is central to forming the thick, nearly uniform layer.', 'The key season is the one with deepest mixing.'],
+      ],
+    },
+    {
+      id: 54027,
+      chapter: 'Ocean Physics in Climate Science',
+      title: 'Freshwater and Overturning',
+      prompt: 'In a simple AMOC picture, what is the direct effect of adding freshwater to the high-latitude North Atlantic, all else equal?',
+      correct: 'Freshening lowers surface density, making sinking and deep convection less likely',
+      wrong: [
+        ['Freshening raises surface density because freshwater freezes more easily', 'Freshwater is less salty and therefore generally less dense than salty seawater at similar temperature.', 'Compare the density effect of lower salinity.'],
+        ['Freshening strengthens sinking because lighter water moves downward faster', 'Sinking in this context requires surface water to become dense enough to descend.', 'Dense water tends to underlie light water.'],
+        ['Freshening affects only sea level and has no role in overturning circulation', 'Freshwater changes salinity and density, both central to high-latitude convection.', 'AMOC depends partly on density contrasts.'],
+      ],
+    },
+    {
+      id: 54028,
+      chapter: 'Ocean Physics in Climate Science',
+      title: 'Southern Ocean Carbon Balance',
+      prompt: 'Why is Southern Ocean upwelling important for interpreting ocean carbon uptake?',
+      correct: 'Upwelling can expose carbon-rich deep water to the atmosphere, partly offsetting uptake of human-emitted CO2',
+      wrong: [
+        ['Upwelling always increases CO2 uptake because deep water contains no dissolved carbon', 'Deep waters are often rich in dissolved inorganic carbon accumulated from respiration and long isolation.', 'Think about what old deep water has stored.'],
+        ['Upwelling matters only for temperature, not for carbon exchange', 'Upwelling affects surface carbon chemistry as well as heat.', 'Air-sea CO2 flux depends on surface ocean conditions.'],
+        ['Upwelling shuts off gas exchange by preventing contact with the atmosphere', 'Upwelled water reaches or approaches the surface, where air-sea exchange can occur.', 'The surface ocean is where gas exchange happens.'],
+      ],
+    },
+    {
+      id: 54029,
+      chapter: 'Ocean Physics in Climate Science',
+      title: 'What Freezing Leaves Behind',
+      prompt: 'When sea ice forms in polar oceans, why can the surrounding water become more favorable for sinking?',
+      correct: 'Salt is rejected from the forming ice, making nearby seawater saltier and denser',
+      wrong: [
+        ['Salt is trapped efficiently in the ice, making nearby seawater fresher and denser', 'Sea ice excludes much of the salt, and freshening would generally reduce density rather than increase it.', 'Most sea ice is much fresher than seawater.'],
+        ['Sea ice formation warms the nearby ocean enough to drive sinking', 'Cooling and salinification, not warming, are the usual density-increasing effects.', 'Dense polar water forms through losing heat and/or gaining salt.'],
+        ['Sea ice affects only sunlight reflection and has no effect on ocean density', 'Albedo is important, but brine rejection directly changes salinity and density.', 'Freezing changes both the surface cover and the salt budget.'],
+      ],
+    },
+    {
+      id: 54030,
+      chapter: 'Ocean Physics in Climate Science',
+      title: 'Reading Ocean Records Carefully',
+      prompt: 'A reanalysis shows a sudden change in upper-ocean heat content near the start of dense Argo float coverage. At the same time, satellite altimetry shows sea level rising. What is the best cautious interpretation?',
+      correct: 'Check whether observing-system changes or analysis increments affected the heat-content jump, and separate steric expansion from added ocean mass',
+      wrong: [
+        ['Treat the heat-content jump as entirely physical because reanalyses remove all observing biases', 'Reanalyses can still show artifacts from changing observations and model-data adjustment.', 'Data assimilation systems are powerful, not magic.'],
+        ['Assume sea-level rise must be only steric because warmer water expands', 'Sea level can rise from both steric expansion and added mass from land ice or land water storage.', 'Ask whether the ocean volume changed because water expanded or because water was added.'],
+        ['Ignore Argo-era changes because ocean observing systems do not affect climate diagnostics', 'Changing data coverage can affect estimated trends and jumps, especially in reanalyses.', 'A new observing network can change what the analysis sees.'],
+      ],
+    },
+    {
+      id: 54031,
+      chapter: 'Ocean Physics in Climate Science',
+      title: 'Where Did the Heat Go?',
+      prompt: 'A model hindcast shows little surface warming in the North Pacific for five years, but Argo profiles show increasing heat content below the winter mixed layer. What is the best first interpretation?',
+      correct: 'Check whether the heat budget closes using surface fluxes, Argo sampling, and thermocline ventilation before calling it ocean heat uptake',
+      wrong: [
+        ['Conclude that greenhouse forcing paused because surface temperature stopped rising', 'Surface temperature alone cannot determine planetary heat uptake, especially when heat is stored below the mixed layer.', 'Look below the surface layer.'],
+        ['Attribute the pattern entirely to mode-water formation, because mode waters always create subsurface warming wherever surface warming is weak', 'Mode-water formation is plausible, but it must be tested against ventilation pathways, fluxes, and observed water-mass changes.', 'A plausible mechanism is not yet a closed diagnosis.'],
+        ['Assume the signal is an XBT bias because all subsurface warming trends before Argo are unreliable', 'XBT bias is a known issue, but Argo-era profiles provide independent constraints and should not be dismissed automatically.', 'Use instrument history, but do not overapply it.'],
+      ],
+    },
+    {
+      id: 54032,
+      chapter: 'Ocean Physics in Climate Science',
+      title: 'Freshwater and Overturning',
+      prompt: 'A climate model experiment adds freshwater near the Labrador Sea while winter sea-ice growth weakens and fewer leads form. What AMOC response is most physically consistent?',
+      correct: 'AMOC weakening, because surface waters become less dense and deep convection is harder to sustain',
+      wrong: [
+        ['AMOC strengthening, because fresher surface water freezes more easily and therefore always increases brine rejection', 'Freshening can affect freezing, but the scenario states weaker sea-ice growth and reduced brine rejection.', 'Use the processes given in the scenario.'],
+        ['No AMOC change, because Southern Ocean upwelling fully compensates any North Atlantic density anomaly on seasonal timescales', 'Southern Ocean compensation can influence global overturning, but it does not erase local North Atlantic density forcing immediately.', 'Compensation is not instant cancellation.'],
+        ['AMOC strengthening, because lower lead formation traps more ocean heat under ice and raises deep-water formation rates', 'Reduced leads can suppress heat and gas exchange, but trapped heat does not automatically make surface water denser.', 'Deep convection needs dense surface water.'],
+      ],
+    },
+    {
+      id: 54033,
+      chapter: 'Ocean Physics in Climate Science',
+      title: 'Eddies in the Southern Ocean',
+      prompt: 'Westerly winds over the Southern Ocean intensify. A coarse model without active eddy compensation shows much stronger upwelling and carbon outgassing. What diagnostic should you request before trusting the magnitude?',
+      correct: 'Evaluate residual overturning, eddy heat fluxes, and mixed-layer water-mass transformation before accepting the carbon uptake change',
+      wrong: [
+        ['Accept the result because stronger westerlies always produce proportionally stronger residual upwelling across the ACC', 'Eddy compensation can reduce the residual response even when Eulerian wind-driven upwelling increases.', 'ACC eddies push back.'],
+        ['Reject the result because Southern Ocean winds affect heat uptake but cannot affect carbon uptake', 'Southern Ocean circulation strongly affects carbon uptake through upwelling, gas exchange, and water-mass formation.', 'Carbon follows circulation and surface exchange.'],
+        ['Focus only on sea-surface temperature because carbon uptake is controlled entirely by local solubility', 'Solubility matters, but circulation, biological carbon, and ventilation also shape air-sea CO2 flux.', 'CO2 flux is not just a thermometer.'],
+      ],
+    },
+    {
+      id: 54034,
+      chapter: 'Ocean Physics in Climate Science',
+      title: 'ENSO Heat Recharge',
+      prompt: 'During an El Nino event, weakened trade winds flatten the equatorial Pacific thermocline and warm the eastern mixed layer. Which follow-up observation best supports the recharge-oscillator view?',
+      correct: 'A later discharge of equatorial upper-ocean heat content followed by recharge from off-equatorial wind-driven transport',
+      wrong: [
+        ['A permanent deepening of the eastern thermocline with no basin-scale heat-content adjustment', 'The recharge oscillator involves basin-scale heat-content discharge and recharge, not a one-way permanent local deepening.', 'Look for delayed basin adjustment.'],
+        ['Immediate warming over the North Atlantic caused directly by the same weakened Pacific trade winds', 'ENSO teleconnections can affect remote regions, but the recharge oscillator is diagnosed first in Pacific thermocline and heat-content evolution.', 'Start in the equatorial Pacific.'],
+        ['A stronger zonal thermocline slope caused by enhanced easterly wind stress during the warm phase', 'El Nino typically involves weakened easterlies and a reduced east-west thermocline slope.', 'Warm events relax the tilt.'],
+      ],
+    },
+    {
+      id: 54035,
+      chapter: 'Ocean Physics in Climate Science',
+      title: 'Sea Ice Is Not Enough',
+      prompt: 'A reanalysis shows expanding winter sea-ice area in the Nordic Seas and claims this proves stronger deep-water formation. What is the best critique?',
+      correct: 'Sea-ice area alone is insufficient; check brine rejection, snow insulation, lead fraction, surface density, and reanalysis increments',
+      wrong: [
+        ['The claim is always correct because more ice always means more brine rejection and denser water', 'Snow insulation, fewer leads, and reduced ocean-atmosphere heat loss can weaken densification despite larger ice area.', 'Ice cover changes several fluxes at once.'],
+        ['The claim is always wrong because sea ice prevents any ocean-atmosphere interaction', 'Leads and polynyas allow strong exchange, and ice formation can reject brine into the ocean.', 'Sea ice is not a perfect lid.'],
+        ['The result should be accepted if the reanalysis has high spatial resolution, because resolution removes the need for budget checks', 'High resolution does not guarantee conservation or correct data assimilation behavior.', 'Resolution is not budget closure.'],
+      ],
+    },
+    {
+      id: 54036,
+      chapter: 'Ocean Physics in Climate Science',
+      title: 'The Conservation Check',
+      prompt: 'After an ocean-model update, global ocean heat content rises faster, but net surface heat flux changes little. The update changed vertical remapping and timestep length. What is the best next step?',
+      correct: 'Test heat conservation, remapping errors, timestep sensitivity, and steric sea-level consistency before interpreting the trend physically',
+      wrong: [
+        ['Interpret the extra heat content as stronger anthropogenic ocean uptake because the surface flux trend is nearly unchanged', 'If heat storage changes without a matching flux or transport change, numerical leakage or diagnostics may be responsible.', 'Storage must come from somewhere.'],
+        ['Blame XBT bias, because all model heat-content jumps are caused by observational corrections', 'XBT bias affects observational records, but this scenario points to a model update involving numerics.', 'Match the suspect to the change.'],
+        ['Assume deeper thermocline ventilation increased, because remapping changes commonly create more realistic mode-water formation in every basin', 'Improved ventilation is possible, but it must be demonstrated with water-mass and budget diagnostics.', 'Do not turn a numerical change into a physical conclusion too quickly.'],
+      ],
+    },
+    {
+      id: 54019,
+      chapter: 'Ocean Heat Uptake and Ventilation',
+      title: 'Argo Floats in Tiny Lab Coats',
+      prompt: 'A reanalysis shows a sharp 2005-2012 increase in subtropical North Atlantic heat uptake below the winter mixed layer, while surface flux products show only a weak local anomaly. Which interpretation is safest before attributing the change to forced ocean heat uptake?',
+      correct: 'Check ventilation pathways, analysis increments, and observing-system transitions before attributing the subsurface OHC jump to forced uptake',
+      wrong: [
+        ['Attribute it directly to greenhouse forcing because subsurface heat content is less affected by weather noise than SST', 'Subsurface heat content can still reflect internal variability, ventilation timing, assimilation increments, and sampling changes.', 'Less weather noise does not mean no observing-system goblin.'],
+        ['Reject the reanalysis because weak local surface flux anomalies prove the heat cannot enter the thermocline there', 'Heat can be advected or subducted remotely through mode-water ventilation; local surface flux alone is not a closed diagnostic.', 'The thermocline has a passport.'],
+        ['Compare only satellite altimetry and global mean thermosteric sea level, since agreement there would automatically validate the regional subsurface pattern even if Argo coverage, XBT corrections, and analysis increments changed during the period', 'Global steric closure helps, but it does not automatically validate regional vertical redistribution or reanalysis increments.', 'A global receipt does not prove every aisle was scanned correctly.'],
+      ],
+    },
+    {
+      id: 54020,
+      chapter: 'Sea Ice, Dense Water, and Polar Gas Exchange',
+      title: 'The Brine Goblin Files a Permit',
+      prompt: 'A coastal Antarctic sector shows increased winter sea-ice production but reduced late-winter surface oxygen uptake in a coupled simulation. Which diagnosis is most physically plausible?',
+      correct: 'Enhanced brine rejection may deepen and densify the mixed layer, but thicker snow/ice cover or fewer leads can suppress air-sea gas exchange enough to reduce oxygen uptake',
+      wrong: [
+        ['This is impossible because brine rejection always increases oxygen uptake by ventilating deeper waters', 'Ventilation and gas exchange are distinct; ice cover can block exchange even while convection strengthens.', 'A deeper blender still needs a lid check.'],
+        ['It proves biological oxygen consumption increased, because sea ice has no direct role in physical oxygen flux', 'Sea ice directly alters gas transfer velocity, open-water fraction, stratification, and boundary-layer turbulence.', 'The ice is not just scenery.'],
+        ['Immediately tune vertical diffusivity downward until oxygen uptake matches observations, since reduced mixing is the only way to preserve a shallower winter mixed layer under increased sea-ice production and therefore the only internally consistent fix', 'This assumes the desired mechanism before checking lead fraction, snow insulation, surface buoyancy fluxes, and boundary-layer parameterization.', 'Do not tune the goblin before auditing the ledger.'],
+      ],
+    },
+    {
+      id: 54021,
+      chapter: 'ENSO Dynamics and Teleconnection Drift',
+      title: 'Bjerknes Feedback With a Fake Mustache',
+      prompt: 'A decadal prediction system shows stronger winter North Pacific teleconnections from El Nino after initialization, but tropical Pacific SST variance is nearly unchanged. What is the strongest next diagnostic?',
+      correct: 'Compare equatorial warm-water volume recharge, zonal wind stress coupling, thermocline slope, and extratropical waveguide/state changes across initialized and uninitialized ensembles',
+      wrong: [
+        ['Conclude that greenhouse forcing strengthened ENSO teleconnections, because unchanged tropical SST variance rules out internal tropical variability', 'Teleconnections can change through background-state shifts, atmospheric noise, initialization shock, and ensemble sampling even with similar SST variance.', 'Same SST costume, different dynamical actor.'],
+        ['Diagnose only the Nino3.4 autocorrelation and declare a recharge-oscillator change if persistence increases', 'Persistence alone does not identify recharge dynamics; subsurface heat content, wind coupling, and thermocline adjustment are needed.', 'The oscillator has more than one knob.'],
+        ['First regress North Pacific height anomalies on mature-phase Nino3.4, then infer the tropical mechanism from the regression pattern, then check warm-water volume only after the teleconnection has been attributed', 'This sequence reverses mechanism and symptom. The ingredients are reasonable, but attribution comes after checking tropical dynamics and background-state dependence.', 'Do not read the postcard before proving who mailed it.'],
+      ],
+    },
+    {
+      id: 54022,
+      chapter: 'AMOC Stability, Budgets, and Tipping Diagnostics',
+      title: 'The Smug Overturning Cell Misplaces a Receipt',
+      prompt: 'In a coupled ensemble, AMOC weakens abruptly after year 40, Labrador Sea convection collapses, and Southern Ocean upwelling increases. Freshwater forcing was applied over the subpolar North Atlantic, but the control run also has slow abyssal warming. Which inference is most defensible?',
+      correct: 'Treat tipping attribution as provisional until freshwater and heat budgets close, control drift is removed, mixing/overflow changes are diagnosed, and AMOC hysteresis or ensemble recovery tests are run',
+      wrong: [
+        ['Call it an AMOC tipping event immediately because abrupt weakening plus convection collapse are sufficient early-warning indicators', 'Abruptness and convection loss are not sufficient without budget closure, drift correction, and reversibility or hysteresis diagnostics.', 'A cliff-shaped curve is not automatically a cliff.'],
+        ['Dismiss the weakening as pure model drift because the control abyss warms, so no forced AMOC interpretation is possible', 'Control drift complicates attribution but does not rule out a forced response; anomaly construction and drift-aware ensembles can still isolate signals.', 'A dirty control is not a magic eraser.'],
+        ['Attribute the entire response to Southern Ocean eddy compensation, since increased upwelling can balance reduced North Atlantic sinking and therefore proves the global overturning change is dynamically harmless', 'Eddy compensation can alter residual overturning, but it does not prove harmlessness or explain freshwater-triggered convection collapse without residual, Eulerian, and tracer diagnostics.', 'Eddies filing paperwork are not a complete budget.'],
+      ],
+    },
+    {
+      id: 54023,
+      chapter: 'Southern Ocean Circulation and Carbon Uptake',
+      title: 'Eddies Filing Carbon Paperwork',
+      prompt: 'A coarse-resolution coupled model forced with stronger westerlies shows larger Southern Ocean CO2 uptake, deeper mode-water ventilation, and a poleward shift of the ACC. The eddy parameterization was retuned halfway through the experiment. What is the safest interpretation?',
+      correct: 'Do not attribute the CO2 uptake increase until residual overturning, eddy-induced transport, DIC/alkalinity budgets, gas-exchange changes, and retuning discontinuities are separated',
+      wrong: [
+        ['Stronger westerlies necessarily increase CO2 outgassing, so the simulated uptake increase must be wrong', 'Winds can enhance upwelling and outgassing, but also affect cooling, gas transfer, mode-water subduction, biology, and residual circulation.', 'The wind is a committee, not a single lever.'],
+        ['Accept the uptake increase because deeper mode-water ventilation proves anthropogenic carbon is being stored more efficiently', 'Deeper ventilation is relevant but insufficient without DIC, alkalinity, Revelle factor, and residual circulation diagnostics.', 'Ventilation opens the door; chemistry decides who fits through it.'],
+        ['Use only surface pCO2 maps before and after the wind change, because air-sea disequilibrium directly integrates all eddy compensation effects without needing residual overturning or tracer conservation diagnostics', 'Surface pCO2 is informative but does not isolate eddy compensation, numerical mixing, or interior storage pathways.', 'A surface map is a postcard, not the shipping manifest.'],
+      ],
+    },
+    {
+      id: 54024,
+      chapter: 'Ocean Observations, Numerics, and Attribution',
+      title: 'The Coupler in a Fake Mustache',
+      prompt: 'A paper claims a post-1993 acceleration in ocean heat uptake based on steric sea-level rise, reprocessed XBT/Argo profiles, and a coupled-model ensemble. One model family shows matching steric rise but has a known nonzero global freshwater leak at the coupler. What is the most defensible review comment?',
+      correct: 'Require independent steric closure, XBT/Argo bias sensitivity, mass/GRACE separation, and model heat-freshwater conservation diagnostics before using that model agreement as attribution evidence',
+      wrong: [
+        ['Accept the result because agreement between observed steric rise and coupled models is the strongest possible evidence for forced ocean heat uptake', 'Agreement can be contaminated by shared processing assumptions, observing transitions, drift, and conservation errors.', 'Matching footprints can come from the same muddy boot.'],
+        ['Reject all XBT-era information and use only post-2005 Argo data, because any pre-Argo heat uptake estimate is unusable for acceleration claims', 'XBT data are biased but not useless; corrected ensembles and sensitivity tests can quantify uncertainty over longer periods.', 'Biased does not mean banished.'],
+        ['First tune the model freshwater leak until global mean sea level matches altimetry, then use the tuned model to infer ocean heat uptake acceleration from steric residuals, and finally compare against corrected profiles', 'This is a sequence-only trap: tuning to the target before independent validation risks circular attribution and can hide heat/freshwater conservation failures.', 'Do not calibrate the scale using the cake you are weighing.'],
+      ],
+    },
+    {
+      id: 54007,
+      chapter: 'Grumpy Kernels and Smug Clouds',
+      title: 'The Stratocumulus Deck Has a Tiny Clipboard',
+      prompt: "Two coupled models have nearly identical historical GMST and ocean heat uptake. A 150-year abrupt-4xCO2 Gregory regression gives Model A a more positive net cloud feedback than Model B. The aerosol module in A was tuned using shortwave CRE over stratocumulus regions; B was tuned mostly against global TOA imbalance. Your collaborator points at the slope and says, 'A has physically stronger low-cloud feedback. The smug aerosols have confessed.' What is the most defensible next inference?",
+      correct: 'Do not yet rank the physical low-cloud feedback; first compare fixed-SST ERF/rapid adjustments and kernel- or PRP-decomposed cloud feedbacks under comparable SST-pattern evolution',
+      wrong: [
+        ['Model A has the stronger physical low-cloud feedback because the Gregory slope is an emergent property of the coupled system and already includes the relevant cloud physics', 'The Gregory slope can conflate ERF, rapid adjustments, time-varying feedbacks, and SST-pattern effects. It is not a clean low-cloud feedback diagnostic by itself.', 'Ask what is inside the intercept and what changes over the regression window.'],
+        ['Model B is more trustworthy because tuning to global TOA imbalance is less invasive than tuning to regional cloud radiative effect, so its cloud feedback is less likely to be contaminated', 'Global TOA tuning can hide compensating regional cloud, aerosol, and ocean-heat-uptake errors. Less obviously cloud-targeted tuning is not automatically less consequential.', 'A tiny global residual can be built from large regional cancellations.'],
+        ['Compare historical aerosol ERF only; if A and B have similar aerosol ERF, the 4xCO2 cloud-feedback difference must be physical', 'Similar historical aerosol ERF does not control for CO2 rapid adjustments, SST-pattern effects, or decomposition of cloud feedback in abrupt-4xCO2.', 'The forcing agent and the feedback experiment are not interchangeable.'],
+      ],
+    },
+    {
+      id: 54008,
+      chapter: 'Overconfident Reanalyses in Tiny Capes',
+      title: 'CERES, But Make It a Mood Ring',
+      prompt: "A model ensemble underestimates the observed 2001-2024 increase in reflected shortwave over a marine stratocumulus region. A colleague declares: 'The models have too-negative low-cloud feedback; CERES has spoken, and the reanalysis is nodding very confidently.' Which response is best?",
+      correct: 'First test whether the mismatch is a feedback signal by conditioning on SST pattern, circulation/subsidence, aerosol forcing, and radiative-kernel cloud decomposition; the raw regional SW trend is not enough',
+      wrong: [
+        ['Accept the constraint if the same region has a strong interannual relationship between low-cloud fraction and local SST, because interannual and forced feedbacks are dynamically equivalent for low clouds', 'Interannual relationships can be dominated by circulation and inversion changes that do not map cleanly onto forced long-term feedback.', 'A good emergent constraint needs a justified physical bridge between variability and forced response.'],
+        ['Reject CERES entirely because satellite records cannot constrain cloud feedbacks unless they span at least one full AMOC cycle, which they do not', 'This is too strong. CERES can constrain processes and energy budgets, but the diagnostic must address variability, forcing, and decomposition.', 'Short records are not useless; they are conditional.'],
+        ['Use the all-sky shortwave trend minus clear-sky shortwave trend from the reanalysis as the definitive cloud feedback, then regress it against global mean temperature', 'All-sky minus clear-sky trends are not automatically cloud feedbacks because clear-sky masking, aerosol changes, water vapor, surface albedo, and circulation shifts contaminate the estimate.', 'CRE is not the same thing as cloud feedback.'],
+      ],
+    },
+    {
+      id: 54009,
+      chapter: 'The Emergent Constraint Wearing a Fake Mustache',
+      title: 'A Scatterplot Walks Into a Tuning Meeting',
+      prompt: 'You find a tight across-CMIP relationship: models with stronger present-day subtropical low-cloud optical depth sensitivity to estimated inversion strength have lower ECS. Unfortunately, half the models share a cloud scheme ancestor, several were tuned against the same satellite CRE product, and the predictor is computed from AMIP runs nudged to observed SSTs. Which action most directly tests whether the relationship is a defensible emergent constraint rather than a well-dressed family reunion?',
+      correct: 'Evaluate the predictor-response link with genealogy-aware weighting and out-of-sample process tests, including whether perturbed-physics or single-model ensembles reproduce the mechanism without reusing the tuning target',
+      wrong: [
+        ['Use ordinary least squares but inflate the observational uncertainty range, because wider predictor error bars automatically cover genealogy and tuning dependence', 'Inflating observational uncertainty does not address non-independence, circular tuning, or lack of a causal mechanism.', 'The problem is not only noisy x-values.'],
+        ['Discard AMIP entirely and keep only coupled historical runs; if the relationship remains, it must be causal because coupled runs include ocean heat uptake and internal variability', 'Coupled historical agreement can still reflect shared tuning, genealogy, forcing choices, and internal variability. Coupling does not prove causality.', 'Changing experiment type does not erase common ancestry.'],
+        ['Accept the constraint if its correlation is significant after removing one model from each institution, since institutional thinning fully removes code genealogy and shared calibration information', 'Institutional thinning is a crude near-miss. It helps only if institution maps cleanly onto model dependence, which is often false.', 'A cousin can live at another institute.'],
+      ],
+    },
+    {
+      id: 54010,
+      chapter: 'The Coupler With the Fake Mustache',
+      title: 'Pattern Effect or Accounting Goblin?',
+      prompt: "In a new coupled model, the late-century feedback parameter becomes much less negative than the early-century value. Low-cloud SW feedback grows positive, mostly over subtropical eastern oceans. The Southern Ocean takes up heat aggressively, the AMOC weakens, and a recent coupler update changed conservative remapping of surface fluxes. The model's global TOA imbalance minus ocean heat uptake closes only after applying a small undocumented 'flux polish' term. The stratocumulus deck says it is innocent but looks shifty. What is the safest next diagnostic sequence?",
+      correct: 'First audit TOA-surface-ocean energy closure and piControl drift, then run prescribed-SST pattern experiments with kernel/PRP cloud decomposition before calling the late feedback shift physical',
+      wrong: [
+        ['Run prescribed-SST pattern experiments first, then audit the coupler only if the AMIP patterns fail to reproduce the coupled low-cloud response', 'This is the sequence-only trap. Prescribed-SST tests are useful, but an unresolved coupled energy leak can contaminate the target pattern and inferred feedback before the AMIP comparison begins.', 'Do not calibrate the thermometer after declaring the fever mysterious.'],
+        ['Attribute the shift to the pattern effect immediately because Southern Ocean heat uptake and AMOC weakening are known to delay tropical warming and alter subtropical low clouds', 'Those mechanisms are plausible, but the undocumented flux correction and energy-closure failure must be ruled out before physical attribution.', 'A real mechanism can coexist with a bookkeeping error.'],
+        ['Ignore the coupler issue if the top-of-atmosphere imbalance matches CERES-era values in historical runs, because observed TOA agreement validates the energy budget relevant to future feedback', 'Historical TOA agreement can be tuned or compensating and does not validate future coupled energy conservation, regional remapping, or drift behavior.', 'A good present-day checksum is not a proof of future conservation.'],
+      ],
+    },
+    {
+      id: 54011,
+      chapter: 'Event Attribution Meets a Moody Cloud Deck',
+      title: 'The Blocking High Requests a Lawyer',
+      prompt: 'A heatwave attribution study finds that high-ECS models overproduce the observed increase in blocked summertime marine heatwave frequency after 1980. These same models have stronger positive low-cloud feedback and stronger aerosol-cloud ERF. The key observational constraint uses a reanalysis whose satellite radiance stream changes in the late 1990s. A teammate proposes downweighting high-ECS models and retuning entrainment to weaken low-cloud feedback. What is the best answer?',
+      correct: 'Not yet; first separate blocking dynamics from thermodynamic SST-pattern effects, test sensitivity to reanalysis discontinuities, and decompose aerosol ERF versus cloud feedback before using the event result for weighting or tuning',
+      wrong: [
+        ['Yes; extremes are impact-relevant, so a model that misses the blocked marine-heatwave tail should be downweighted even if the mechanism is not isolated', 'Impact relevance does not remove the need for causal attribution. The mismatch may arise from circulation, observations, aerosol forcing, SST pattern, or tail sampling rather than ECS/cloud feedback.', 'A wrong tail can have several parents.'],
+        ['Retune entrainment first, then rerun the attribution analysis; if the tail improves, the original high-ECS cloud feedback was too positive', 'This sequence risks tuning to a contaminated metric and circularly validating the retuning on the same target.', 'Do not let the suspect choose the lineup.'],
+        ['Downweight only the high-ECS models with strong aerosol-cloud ERF, because if aerosol forcing were weak rather than strong the observed post-1980 heatwave increase would be even more overpredicted', 'This muddles sign and context. Aerosol ERF affects historical masking and regional patterns, but the prompt does not establish that strong aerosol-cloud ERF causes the heatwave-frequency bias.', 'A forcing correlation is not yet an attribution statement.'],
+      ],
+    },
+    {
+      id: 54012,
+      chapter: 'Carbon Accountants Versus Grumpy Kernels',
+      title: 'Net Zero With a Stratocumulus Receipt Printer',
+      prompt: 'An emergent constraint narrows positive low-cloud feedback and lowers the likely ECS range in an ensemble. An IAM group immediately uses this to shrink uncertainty in a 1.7 C overshoot pathway with large late-century CDR, claiming lower ECS implies lower peak warming, lower ZEC, and less concern about CDR permanence. The carbon accountants are waving spreadsheets like tiny semaphore flags. What is the most correct response?',
+      correct: 'Lower constrained ECS helps, but overshoot risk still needs TCRE, carbon-cycle feedbacks, ocean heat uptake/pattern effect, and CDR permanence diagnostics; ZEC and required removals do not scale simply with ECS',
+      wrong: [
+        ['The IAM team is basically right because ECS is the dominant uncertainty in all temperature outcomes once emissions pathways are specified', 'ECS matters, but near- to mid-century and overshoot outcomes also depend strongly on TCRE, carbon uptake, non-CO2 forcing, ocean heat uptake, and scenario design.', 'Equilibrium is not the same as transient overshoot.'],
+        ['The cloud constraint is irrelevant to overshoot pathways because cloud feedback affects only equilibrium warming after CO2 concentrations stabilize for millennia', 'Cloud feedback can affect transient warming and peak temperature, but it is not sufficient by itself to constrain ZEC or CDR durability.', 'Not everything is equilibrium, but not nothing is radiative feedback.'],
+        ['If the pathway used SRM instead of CDR, the ECS constraint could be applied directly because solar forcing has no cloud rapid adjustments and therefore no pattern-effect ambiguity', 'This is almost correct only in a world where solar forcing behaved like uniform negative CO2 forcing. SRM has distinct spatial, seasonal, dynamical, and cloud-adjustment issues.', 'Equal global watts do not mean equal climate response.'],
+      ],
+    },
+    {
+      id: 54013,
+      chapter: 'Reanalyses With Opinions',
+      title: 'The AMOC Hiccup and the Overconfident Reanalysis',
+      prompt: 'A reanalysis shows a sharp 2004-2005 weakening of the subpolar AMOC, just as Argo coverage expands and XBT corrections change. A colleague wants to call it an aerosol-forced North Atlantic circulation shift. The altimeter-derived steric signal is dull, RAPID-era transports are short but not dramatic, and the ocean analysis increments suddenly become spicy near the Labrador Sea. What is the most defensible next move?',
+      correct: 'Audit the observing-system transition: examine ocean analysis increments, close heat/freshwater budgets, and compare with independent transport/steric constraints before any forced-attribution claim',
+      wrong: [
+        ['Apply optimal fingerprinting immediately using the multimodel aerosol-forcing pattern, because a covariance-adjusted fingerprint will automatically distinguish forced AMOC weakening from Argo-era observing changes', 'Optimal fingerprinting does not magically remove non-climatic inhomogeneities in the target data. If the reanalysis discontinuity enters the observed vector, the fingerprint can inherit the artifact.', 'A beautiful covariance matrix cannot fix a bad observation operator.'],
+        ['Regress out ENSO and NAO, then attribute the residual AMOC drop to aerosols because internal atmospheric variability has been removed', 'This treats large-scale modes as separable nuisance terms and ignores ocean memory, assimilation increments, and forced-pattern covariance.', 'Removing two indices is not the same as proving causality.'],
+        ['Retune Labrador Sea convection in the model until the reanalysis AMOC drop is reproduced, then use that tuned model as the attribution ensemble', 'Tuning to reproduce a suspect feature risks fitting an observing-system artifact and contaminating the attribution experiment.', 'Do not tune the model to match the possibly fake mustache.'],
+      ],
+    },
+    {
+      id: 54014,
+      chapter: 'Couplers Wearing Fake Mustaches',
+      title: 'Sea Ice Improves for the Wrong Reason',
+      prompt: "A coupled model's Antarctic sea-ice extent bias shrinks when the ocean timestep is halved. TOA radiation barely changes. The same improvement appears when the coupler switches to strictly conservative remapping of heat and freshwater fluxes. The sea-ice team wants to celebrate a better brine-rejection parameterization. What diagnosis should lead?",
+      correct: 'Check coupled heat, freshwater, salt, and sea-ice enthalpy conservation across the remapping/coupling interface',
+      wrong: [
+        ['Retune shortwave cloud forcing over the Southern Ocean, because most Antarctic sea-ice biases ultimately reflect cloud-radiation errors even when TOA radiation is unchanged in this experiment', 'Cloud bias may matter generally, but the prompt’s strongest evidence points to timestep/remapping sensitivity and unchanged TOA flux.', 'A true statement about many models is not always the right diagnosis for this model.'],
+        ['Increase vertical mixing under sea ice until the sea-ice extent matches observations, then document the result as a compensated physical improvement', 'That would tune over a likely numerical conservation error and could worsen ocean stratification or heat uptake.', 'Do not bury a bug under a parameter.'],
+        ['Use a larger initial-condition ensemble to average out the sea-ice response, since timestep sensitivity is probably just internal variability', 'A deterministic sensitivity to timestep/remapping is not primarily an internal-variability problem.', 'Internal variability does not usually know which remapper you compiled.'],
+      ],
+    },
+    {
+      id: 54015,
+      chapter: 'Heat Domes and Counterfactual Goblins',
+      title: 'The Conditional Probability Ratio Trap',
+      prompt: 'For a Pacific Northwest heat dome, a team runs atmosphere-only ensembles with observed 2021 SST/sea ice. In the counterfactual they subtract a uniform global-mean warming from SST, leave circulation and soil moisture evolution effectively conditioned by the observed setup, fit a GEV, and report an unconditional anthropogenic probability ratio. Which critique is most correct?',
+      correct: 'The experiment supports at most a conditioned thermodynamic/storyline estimate unless the counterfactual SST, sea ice, land state, and circulation conditioning are aligned with the unconditional estimand',
+      wrong: [
+        ['The result is valid because atmosphere-only ensembles with observed SSTs are the gold standard for unconditional heatwave attribution; coupled models would only add unnecessary ocean noise', 'AMIP ensembles can be valuable, but they condition on observed boundary conditions. That is not the same as sampling the unconditional coupled climate distribution.', 'Observed SSTs are not neutral scenery.'],
+        ['This would be correct if the paper explicitly claimed a flow-conditioned thermodynamic contribution rather than an unconditional anthropogenic probability ratio', 'This would fit a different prompt. The actual claim is unconditional, so the workflow and conclusion are mismatched.', 'One adjective changes the answer.'],
+        ['First fit the GEV to the factual ensemble, then remove the forced trend from observations, then build the counterfactual ensemble from the fitted return levels', 'This reverses the causal sequence. The counterfactual climate state must be defined before estimating changes in tail probability.', 'Do not estimate the monster before defining the universe it lives in.'],
+      ],
+    },
+    {
+      id: 54016,
+      chapter: "The Southern Ocean's Accounting Department",
+      title: 'The Ice Shelf Melt Constraint That Smelled Like a Remapper',
+      prompt: 'A group proposes an emergent constraint: CMIP models with larger 1993-2020 Southern Ocean heat uptake also produce larger Antarctic ice-shelf basal melt, so observed reanalysis heat uptake should constrain future sea-level contribution. But the reanalysis has large subsurface temperature increments after Argo, the coupled model control has a weak warm drift, and conservative remapping reduces the heat-uptake trend by 25%. What is the defensible response?',
+      correct: 'Do not use the constraint yet; first close the heat/salt/sea-level budgets including analysis increments, control drift, and remapping sensitivity, then test against independent observations',
+      wrong: [
+        ['Proceed with the emergent constraint because the observed reanalysis trend is the best available estimate, and uncertainty from increments, drift, and remapping can be folded into the regression residual', 'Regression residuals do not fix a biased or nonphysical predictor. The problem is not merely random scatter; it may be structural contamination.', 'Do not hide systematic heat sources in an error bar.'],
+        ['Use only the model with the smallest present-day basal-melt bias, because matching the current ice shelf state guarantees the correct forced Southern Ocean heat-uptake sensitivity', 'Present-day bias matching can arise from compensation. It does not guarantee correct forced uptake, circulation, or shelf-ocean exchange physics.', 'A good snapshot can be a bad movie.'],
+        ['This would be acceptable if the reanalysis increments were negligible, the control drift were removed consistently, and conservative remapping left the trend unchanged', 'This is almost correct for a different prompt. Here, those diagnostics are explicitly not benign.', 'The prompt gives you the poison label.'],
+      ],
+    },
+    {
+      id: 54017,
+      chapter: 'Cyclones, Overshoot, and the ML Convection Goblin',
+      title: 'Rapid Intensification in a Leaky Future',
+      prompt: 'A model study claims that stratospheric aerosol intervention during an overshoot pathway halves North Atlantic rapid-intensification risk. The evidence is a raw 1980-2020 reanalysis trend plus future ensembles using an ML convection scheme that improves mean precipitation but leaks moist static energy by 0.3 W m^-2 globally. Ocean heat content trends differ sharply between ensemble members with different AMOC states. Which answer is most defensible?',
+      correct: "Withhold the headline claim until the TC record is homogenized, the ML scheme's energy/water budgets close, and SRM-vs-GHG counterfactual ensembles separate OHC, shear, and AMOC-state conditioning",
+      wrong: [
+        ['Accept the claim because improved mean precipitation proves the ML convection scheme has learned the relevant convective physics for tropical-cyclone intensification', 'Mean precipitation skill does not guarantee correct extremes, air-sea fluxes, energy conservation, or intensification physics.', 'A good climatology can still leak the storm’s fuel.'],
+        ['Use the raw reanalysis trend as the observational constraint because rapid intensification is rare, and rare-event sample size matters more than observing-system homogeneity', 'Satellite-era detection changes, aircraft sampling, and reanalysis upgrades can create artificial trends. More years do not help if the measurement system changes.', 'A longer broken ruler is still broken.'],
+        ['First rank ensemble members by AMOC weakening, then fit a tail model only to the most weakened members, then define the SRM counterfactual from that fitted tail distribution', 'This is a sequence-only trap. Conditioning and counterfactual definitions must be specified before tail fitting; otherwise selection on outcome-related dynamics biases the risk estimate.', 'Do not choose the universe after seeing the monsters.'],
+      ],
+    },
+    {
+      id: 54018,
+      chapter: 'Carbon Accountants in the Spin-Up Dungeon',
+      title: 'The Negative ZEC That Was Mostly a Spreadsheet Ghost',
+      prompt: 'An ESM reports negative zero-emissions commitment after CO2 emissions cease: surface temperature falls for 60 years. But the run is concentration-driven until year 2100, then emissions are diagnosed offline; the piControl has a small cooling drift; Southern Ocean carbon uptake depends on remapping choice; and total carbon is not conserved across the ocean-biogeochemistry coupler to within the claimed ZEC signal. What is the best interpretation?',
+      correct: 'The negative ZEC claim is not defensible until emission-driven paired ensembles demonstrate carbon and energy budget closure, control-drift removal, and robust ocean/land feedback diagnostics',
+      wrong: [
+        ['Accept the result because concentration-driven experiments are cleaner: prescribed CO2 avoids carbon-cycle noise and therefore gives a sharper estimate of zero-emissions commitment', 'ZEC is specifically about the climate response after emissions cease. Concentration-driven runs with offline diagnosed emissions do not directly impose the required carbon-budget causal experiment.', 'Prescribed concentration answers a different question.'],
+        ['Subtract the piControl temperature drift and retain the negative ZEC estimate, because drift correction removes the only systematic error mentioned', 'Control drift is only one problem. The prompt also describes non-conservative carbon coupling and remapping-sensitive ocean uptake.', 'There is more than one leak in the boat.'],
+        ['This would be much more plausible if the run were emission-driven, carbon were conserved, control drift were corrected, and the sign survived a large initial-condition ensemble', 'This is almost correct for another setup, but those conditions are not met here.', 'Do not answer the experiment you wish they had run.'],
+      ],
+    },
+    {
+      id: 54001,
+      chapter: 'Energy Balance',
+      title: 'The Planetary Thermostat Has Receipts',
+      prompt: 'Earth receives sunlight, reflects some with albedo, and emits infrared radiation back to space. A pundit penguin says greenhouse gases simply "block heat like a blanket," then waddles away with suspicious confidence. What is the more precise climate-science explanation?',
+      correct: 'Greenhouse gases absorb and emit infrared radiation, raising the effective emission altitude so the surface-troposphere system warms until outgoing energy balances incoming energy again',
+      wrong: [
+        ['Greenhouse gases mainly stop sunlight from reaching the ground, so warming occurs because less solar energy enters the climate system', 'Most greenhouse warming is not about blocking incoming sunlight; it is about outgoing longwave radiation.', 'Ask which direction and wavelength matter most.'],
+        ['Carbon dioxide creates heat from nothing, so the climate system can warm without any connection to radiation balance', 'Energy is conserved. The issue is how radiation flows through the atmosphere, not magic heat creation.', 'The climate accountant insists the books balance.'],
+        ['The ocean warms the air first, then greenhouse gases appear as a consequence, so radiative transfer is mostly irrelevant to modern warming', 'Ocean-atmosphere exchange matters, but greenhouse forcing changes the radiation budget and helps drive heat uptake.', 'The ocean can hide heat; it does not invent the forcing.'],
+      ],
+    },
+    {
+      id: 54002,
+      chapter: 'Feedbacks',
+      title: 'The Snow-Albedo Goblin Removes Its White Hat',
+      prompt: 'A warming Arctic loses reflective snow and sea ice. The darker surface absorbs more sunlight, which causes more warming. What kind of climate process is this?',
+      correct: 'A positive feedback, because the initial warming triggers a change that amplifies further warming',
+      wrong: [
+        ['A negative feedback, because losing ice sounds bad and negative means bad', 'Positive and negative describe amplification or damping, not moral vibes.', 'The sign is about direction of response.'],
+        ['An external forcing, because ice loss is imposed from outside the climate system by orbital mechanics alone', 'Ice-albedo change is mostly a response within the climate system, not the original imposed forcing in this setup.', 'Feedbacks respond to the first push.'],
+        ['Internal variability only, because sea ice changes year to year and therefore cannot affect long-term climate trends', 'Sea ice varies naturally, but persistent albedo change can amplify forced warming.', 'Variability and feedback can both exist; do not let one erase the other.'],
+      ],
+    },
+    {
+      id: 54003,
+      chapter: 'Observations and Attribution',
+      title: 'The Cold Tuesday Tries to Overthrow a Thirty-Year Trend',
+      prompt: 'A city has a brutal cold snap. Someone points at one frozen fountain and declares global warming cancelled. What is the strongest scientific response?',
+      correct: 'A single weather event cannot overturn a climate trend; compare long-term, spatially broad observations and attribution evidence instead',
+      wrong: [
+        ['Agree, because any cold event is direct evidence that greenhouse forcing has stopped', 'Weather can still produce cold extremes in a warming climate.', 'One fountain is not the planetary dataset.'],
+        ['Ignore all local observations forever, because climate science only uses global averages and never studies regional extremes', 'Regional observations matter, but they must be interpreted statistically and physically.', 'Local evidence needs context, not exile.'],
+        ['Use only the hottest day from another city as a rebuttal, because one anecdote cancels another anecdote if it has better dramatic lighting', 'Trading anecdotes is not attribution. Use records, trends, mechanisms, and probability changes.', 'Do not fight a weather anecdote with a weather anecdote wearing sunglasses.'],
+      ],
+    },
+    {
+      id: 54004,
+      chapter: 'Carbon Cycle',
+      title: 'The Tiny Carbon Accountant Drops the Ledger',
+      prompt: 'Two emissions pathways release the same total amount of CO2, but one releases most of it early and stays high for decades while the other cuts rapidly and reaches net zero sooner. Why does timing matter for peak warming?',
+      correct: 'Cumulative CO2 largely controls long-term warming, and earlier high emissions increase cumulative burden and delay the point when warming stops rising',
+      wrong: [
+        ['Only the final year matters, so emissions before net zero are irrelevant if the endpoint looks tidy', 'Past cumulative emissions remain central to CO2-driven warming.', 'The atmosphere keeps receipts.'],
+        ['Timing matters only for methane, never for carbon dioxide, because CO2 disappears almost immediately after emissions stop', 'CO2 has long-lived effects across atmosphere-ocean-land reservoirs.', 'CO2 does not leave the party when asked politely.'],
+        ['Peak warming is determined only by annual emissions in the hottest year, not by cumulative emissions or net-zero timing', 'Annual emissions affect the trajectory, but cumulative CO2 is the key control on long-term temperature response.', 'Think bathtub level, not just faucet noise.'],
+      ],
+    },
+    {
+      id: 54005,
+      chapter: 'Models and Uncertainty',
+      title: 'The Model Ensemble Starts Arguing in Lab Coats',
+      prompt: 'Climate models disagree on the exact size of future warming under a scenario, especially because clouds are annoyingly powerful little committees. What is the best interpretation of that spread?',
+      correct: 'Model spread reflects uncertainty in processes and parameters, but it can still support robust conclusions when multiple evidence lines and physical constraints agree',
+      wrong: [
+        ['Any model spread proves models know nothing, so observations and physics should be ignored until all simulations match perfectly', 'Uncertainty does not mean ignorance; models can be useful without exact agreement.', 'A range is not a shrug.'],
+        ['The warmest model must be right because risk assessment should always choose the scariest line on the graph', 'High-end outcomes matter for risk, but selecting one model as truth without evaluation is not sound inference.', 'Risk analysis is not graph karaoke.'],
+        ['The average model result is automatically exact, so uncertainty intervals and process evaluation are unnecessary decoration', 'Ensemble means are useful but not exact truth; uncertainty and model skill still matter.', 'The average is a tool, not a climate oracle.'],
+      ],
+    },
+    {
+      id: 54006,
+      chapter: 'Impacts and Extremes',
+      title: 'The Rainstorm Brings a Probability Ratio and a Tiny Umbrella',
+      prompt: 'After an extreme rainfall event, an attribution study says climate change made events of this intensity about three times more likely in the region. What does that statement mean?',
+      correct: 'It means the event probability is estimated to be higher in the current climate than in a counterfactual climate without the human influence being tested',
+      wrong: [
+        ['It means climate change directly caused every raindrop in that storm and natural variability played no role at all', 'Attribution usually changes probabilities or intensities; it does not remove natural weather dynamics.', 'Probability is not a raindrop ownership certificate.'],
+        ['It means the storm will now happen exactly three times every year in that town', 'A probability ratio is not a fixed annual schedule.', 'Likelihood is not a calendar invite.'],
+        ['It means the study found no climate signal, because probabilities are less scientific than measuring one flood depth with a very serious ruler', 'Probability-based counterfactual comparison is central to event attribution.', 'Extremes are often understood through changed odds.'],
+      ],
+    },
+  ]),
   regulatory: [
+    ...careerLabsRegulatoryQuestions,
     makeSimpleQuestion(7001, 'Regulatory', 'Submission Dock', 'Regulatory strategy',
       'A startup wants to launch a new medical device in the US. The product is similar to an existing legally marketed device, but not identical. What is the best first regulatory question?',
       'Whether there is a suitable predicate device and what pathway the differences imply',
@@ -1447,6 +1985,7 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
       ]),
   ],
   clinicalResearch: [
+    ...careerLabsClinicalResearchQuestions,
     makeSimpleQuestion(8001, 'Clinical Research', 'Consent Dock', 'Informed consent',
       'A participant signs a consent form, then asks a basic question that shows they did not understand the study risks. What should a clinical research coordinator do?',
       'Pause and re-explain the study in understandable language before proceeding',
@@ -1480,6 +2019,16 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
         ['Ignore it if it seems unrelated', 'Unrelated events may still require documentation.', 'Capture first, assess through the proper process.'],
       ]),
   ],
+  professionalEthics: professionalEthicsQuestions,
+  publicAffairs: [
+    ...careerAgentGeneratedCareerSkillsPolishQuestionsByTrack.publicAffairs,
+    ...careerPublicAffairsQuestions,
+  ],
+  cfaLevelOne: cfaSurvivalQuestions,
+  cpaExam: cpaExamQuestions,
+  barExam: barExamQuestions,
+  pmpWrangler: pmpWranglerQuestions,
+  shrmPeople: shrmPeopleQuestions,
   supplyChain: [
     makeSimpleQuestion(9001, 'Supply Chain', 'Forecast Dock', 'Forecast bias',
       'A demand forecast is consistently below actual demand for eight weeks. What problem should you suspect?',
@@ -1548,6 +2097,17 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
         ['The renewal discount', 'Renewal terms are premature if the pilot value is undefined.', 'First set up a fair test.'],
       ]),
   ],
+  }
+
+  const frontDoorPolishBanks = [
+    careerAgentGeneratedCareerFrontDoorPolishQuestionsByTrack,
+    careerAgentGeneratedQualificationFrontDoorPolishQuestionsByTrack,
+  ]
+
+  for (const bank of frontDoorPolishBanks) {
+    for (const [trackId, questions] of Object.entries(bank)) {
+    catalog[trackId] = [...questions, ...(catalog[trackId] ?? [])]
+    }
   }
 
   return topUpCareerAgentGeneratedCatalog(catalog)

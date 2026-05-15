@@ -1,56 +1,65 @@
 # 8th Grade Maths Collections
 **Covers**: `col-8th-grade-math`, `col-8th-grade-ny-next-gen`, `col-get-ready-for-8th-grade`
-**Discipline**: Maths · **Year**: 8 (ages 12–13)
+**Discipline**: Maths | **Year**: 8 (ages 12-13)
 
-## Overview
-Combined syllabus for US-aligned 8th grade maths collections. These target **Common Core Grade 8**.
+## Course Aim
+Prepare students for algebra by turning middle-grade skills into connected mathematical tools. Students learn to work with linear equations and functions, compare representations, solve introductory systems, use exponents and roots, reason about transformations and the Pythagorean theorem, model volume, and interpret bivariate data.
 
-## Domain A: The Number System (10%)
-- Know that there are numbers that are not rational, and approximate them by rational numbers
-- Understand informally that every number has a decimal expansion; for rational numbers show that the decimal expansion repeats eventually
-- Convert a decimal expansion which repeats eventually into a rational number
-- Use rational approximations of irrational numbers to compare the size of irrational numbers, locate them approximately on a number line diagram, and estimate the value of expressions (e.g., π²)
-- **Questions**: Rational vs irrational classification, estimating square roots on a number line, repeating decimal to fraction conversion
+## Course Design Notes
+Keep the course explicit, visual, and practice-rich, with steady movement from examples to general rules. Route questions here when they involve linear equations, slope, functions, systems of equations, exponent rules, scientific notation, irrational numbers, transformations, similarity, Pythagorean applications, volume of round solids, scatterplots, or algebra-readiness review. Encourage students to connect graphs, tables, equations, and verbal descriptions on nearly every topic.
 
-## Domain B: Expressions and Equations (30%)
-- Know and apply the properties of integer exponents to generate equivalent numerical expressions (e.g., 3² × 3⁻⁵ = 3⁻³ = 1/27)
-- Use square root and cube root symbols to represent solutions to equations of the form x² = p and x³ = p
-- Evaluate square roots of small perfect squares and cube roots of small perfect cubes. Know that √2 is irrational
-- Use numbers expressed in the form of a single digit times an integer power of 10 to estimate very large or very small quantities (Scientific Notation)
-- Perform operations with numbers expressed in scientific notation
-- Graph proportional relationships, interpreting the unit rate as the slope of the graph. Compare two different proportional relationships represented in different ways
-- Use similar triangles to explain why the slope m is the same between any two distinct points on a non-vertical line in the coordinate plane; derive the equation y = mx for a line through the origin and the equation y = mx + b for a line intercepting the vertical axis at b
-- Solve linear equations in one variable, including equations with rational number coefficients, whose solutions require expanding expressions using the distributive property and collecting like terms
-- Analyze and solve pairs of simultaneous linear equations (Systems of Equations) by graphing and algebraically
-- **Questions**: Scientific notation operations, calculating slope (m) and y-intercept (b), solving multi-step equations, solving systems of linear equations
+## Chapter 1: Number Systems, Exponents, and Scientific Notation
+- **Key concepts**: Rational and irrational numbers, decimal expansions, square roots, cube roots, integer exponent rules, powers of 10, and scientific notation.
+- **Practice questions**: Classify numbers; estimate irrational square roots; apply exponent properties; write and compare very large or very small quantities; compute with scientific notation.
+- **Student output**: A number-system and exponent toolkit with examples, non-examples, and common mistakes corrected.
 
-## Domain C: Functions (20%)
-- Understand that a function is a rule that assigns to each input exactly one output
-- Compare properties of two functions each represented in a different way (algebraically, graphically, numerically in tables, or by verbal descriptions)
-- Interpret the equation y = mx + b as defining a linear function, whose graph is a straight line; give examples of functions that are not linear
-- Construct a function to model a linear relationship between two quantities. Determine the rate of change and initial value of the function from a description of a relationship or from two (x, y) values
-- Describe qualitatively the functional relationship between two quantities by analyzing a graph (e.g., where the function is increasing or decreasing, linear or nonlinear)
-- **Questions**: Identifying functions (vertical line test), comparing linear vs non-linear functions, modeling linear relationships from word problems
+## Chapter 2: Linear Equations in One Variable
+- **Key concepts**: Multi-step equations, rational coefficients, distributive property, combining like terms, variables on both sides, no solution, infinitely many solutions, and checking solutions.
+- **Practice questions**: Solve equations with parentheses and fractions; identify equations with one, none, or infinitely many solutions; write equations from situations.
+- **Student output**: An equation-solving flowchart showing how to simplify, isolate, classify, and check a solution.
 
-## Domain D: Geometry (25%)
-- Verify experimentally the properties of rotations, reflections, and translations: lines are taken to lines, and line segments to line segments of the same length; angles are taken to angles of the same measure; parallel lines are taken to parallel lines
-- Understand that a two-dimensional figure is congruent to another if the second can be obtained from the first by a sequence of rotations, reflections, and translations
-- Describe the effect of dilations, translations, rotations, and reflections on two-dimensional figures using coordinates
-- Understand that a two-dimensional figure is similar to another if the second can be obtained from the first by a sequence of rotations, reflections, translations, and dilations
-- Use informal arguments to establish facts about the angle sum and exterior angle of triangles, about the angles created when parallel lines are cut by a transversal, and the angle-angle criterion for similarity of triangles
-- Explain a proof of the Pythagorean Theorem and its converse
-- Apply the Pythagorean Theorem to determine unknown side lengths in right triangles in real-world and mathematical problems in two and three dimensions
-- Apply the Pythagorean Theorem to find the distance between two points in a coordinate system
-- Know the formulas for the volumes of cones, cylinders, and spheres and use them to solve real-world and mathematical problems
-- **Questions**: Coordinate geometry transformations, angles with transversals, Pythagorean theorem applications, volume of cones/spheres
+## Chapter 3: Proportional Relationships, Slope, and Lines
+- **Key concepts**: Unit rate as slope, proportional graphs, y-intercept, linear equations, y = mx and y = mx + b, rate of change, initial value, and comparing representations.
+- **Practice questions**: Find slope from graphs, tables, points, and stories; write linear equations; compare two linear relationships in different forms.
+- **Student output**: A linear relationship card sort or comparison chart linking situations, tables, graphs, and equations.
 
-## Domain E: Statistics and Probability (15%)
-- Construct and interpret scatter plots for bivariate measurement data to investigate patterns of association between two quantities. Describe patterns such as clustering, outliers, positive or negative association, linear association, and nonlinear association
-- Know that straight lines are widely used to model relationships between two quantitative variables. For scatter plots that suggest a linear association, informally fit a straight line
-- Use the equation of a linear model to solve problems in the context of bivariate measurement data, interpreting the slope and intercept
-- Understand that patterns of association can also be seen in bivariate categorical data by displaying frequencies and relative frequencies in a two-way table
-- **Questions**: Interpreting scatter plots, lines of best fit, two-way frequency tables
+## Chapter 4: Functions and Algebra Readiness
+- **Key concepts**: Functions as input-output rules, function notation at an introductory level, linear and nonlinear patterns, rate of change, initial value, graph interpretation, and algebra-ready habits.
+- **Practice questions**: Determine whether a relation is a function; interpret graphs; build a function from a context; compare linear and nonlinear examples.
+- **Student output**: A function mini-portfolio with one table, one graph, one equation, and one story for the same linear relationship.
 
-## Stretch Zone
-- Solving systems of equations via elimination method
-- Introduction to fractional exponents (e.g., $x^{1/2} = \sqrt{x}$)
+## Chapter 5: Systems of Linear Equations
+- **Key concepts**: Systems as two conditions at once, graphing systems, intersection points, substitution as an introductory strategy, solution meaning, no solution, infinitely many solutions, and context interpretation.
+- **Practice questions**: Solve simple systems by graphing; check whether an ordered pair solves both equations; use substitution in accessible cases; model break-even or comparison situations.
+- **Student output**: A systems investigation that compares two plans, prices, or rates and explains the intersection in everyday language.
+
+## Chapter 6: Transformations, Congruence, and Similarity
+- **Key concepts**: Translations, reflections, rotations, dilations, coordinates, congruence, similarity, scale factor, angle relationships, parallel lines, transversals, and triangle angle facts.
+- **Practice questions**: Describe transformations on the coordinate plane; identify congruent and similar figures; use scale factors; solve angle problems involving triangles and parallel lines.
+- **Student output**: A transformation sequence diagram with coordinates, labels, and a written explanation of what changed and what stayed the same.
+
+## Chapter 7: Pythagorean Theorem, Distance, and Volume
+- **Key concepts**: Right triangles, squares on side lengths, Pythagorean theorem, converse of the theorem, distance on the coordinate plane, cylinders, cones, spheres, volume formulas, and units.
+- **Practice questions**: Find missing side lengths; decide whether a triangle is right; calculate distance between points; solve volume problems for cylinders, cones, and spheres.
+- **Student output**: A geometry application sheet using the Pythagorean theorem and at least one volume formula to solve a design, packing, or measurement problem.
+
+## Chapter 8: Scatterplots, Association, and Modeling Studio
+- **Key concepts**: Bivariate data, scatterplots, clusters, outliers, positive and negative association, linear and nonlinear association, lines of fit, slope and intercept in data contexts, and two-way tables.
+- **Practice questions**: Interpret scatterplots; sketch an informal line of fit; use a linear model to make a prediction; read two-way frequency and relative-frequency tables.
+- **Student output**: A data-modeling report with a scatterplot, informal line of fit, prediction, and caution about association versus causation.
+
+## Capstone
+Students complete an algebra-readiness modeling project using a real or realistic data set or comparison situation. The final product should include a linear equation or system, graph, table, written interpretation of slope and intercept or intersection, one geometry or measurement connection when appropriate, and a reflection on the limits of the model.
+
+## Assessment Ideas
+- Short mixed-skill quizzes on equation solving, exponent rules, slope, and function interpretation.
+- Representation checks where students translate among graph, table, equation, and verbal description.
+- Error-analysis tasks focused on exponent properties, slope, systems, transformations, and Pythagorean calculations.
+- Geometry performance tasks that require coordinate work, diagrams, formulas, units, and written reasoning.
+- A capstone rubric covering algebraic accuracy, representation quality, interpretation, data reasoning, and readiness for Algebra 1.
+
+## Research Notes
+- Common Core Grade 8 mathematics standards emphasize expressions and equations, functions, geometry, the number system, and statistics: https://www.corestandards.org/Math/Content/8/introduction/
+- Illustrative Mathematics Grade 8 tasks provide public examples of linear relationships, systems, functions, transformations, Pythagorean theorem, and bivariate data: https://tasks.illustrativemathematics.org/8
+- NCTM's Principles to Actions emphasizes meaningful mathematical discourse, multiple representations, fluency from understanding, and reasoning about structure: https://www.nctm.org/PrinciplestoActions/
+- EngageNY Grade 8 mathematics modules offer a public sequence for integer exponents, linear equations, functions, geometry, and statistics: https://www.engageny.org/resource/grade-8-mathematics

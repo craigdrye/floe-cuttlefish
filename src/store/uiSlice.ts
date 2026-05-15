@@ -4,6 +4,7 @@ import type { AppState, UISlice } from './types'
 export const createUISlice: StateCreator<AppState, [], [], UISlice> = (set) => ({
   showWelcome: true,
   showAudience: false,
+  showInterests: false,
   showProfile: false,
   showQuestionnaire: false,
   screen: 'map',
@@ -16,6 +17,7 @@ export const createUISlice: StateCreator<AppState, [], [], UISlice> = (set) => (
 
   setShowWelcome: (show) => set({ showWelcome: show }),
   setShowAudience: (show) => set({ showAudience: show }),
+  setShowInterests: (show) => set({ showInterests: show }),
   setShowProfile: (show) => set({ showProfile: show }),
   setShowQuestionnaire: (show) => set({ showQuestionnaire: show }),
   setScreen: (screen) => set({ screen }),

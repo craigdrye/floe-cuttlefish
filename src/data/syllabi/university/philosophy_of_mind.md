@@ -1,47 +1,60 @@
 # Philosophy of Mind
-**ID**: `philJunior` · **Discipline**: Humanities · **Year**: University Junior
+**ID**: `philJunior` - **Discipline**: Humanities - **Year**: University Junior
 
-## Course Philosophy
-This course investigates the nature of consciousness, the relationship between the mind and the physical body, and the philosophical implications of artificial intelligence and cognitive science.
+## Course Aim
+Investigate consciousness, mental representation, personal identity, artificial intelligence, and the relationship between mind and body. Students learn to compare philosophical theories with cognitive science while keeping conceptual questions distinct from empirical ones.
 
-## Module 1: The Mind-Body Problem and Dualism (20%)
-- The core problem: How do mental states (subjective, qualitative) relate to physical states (objective, quantitative)?
-- Substance Dualism (Rene Descartes): The mind and body are fundamentally different substances; the indivisibility argument and the conceivability argument
-- The Interaction Problem: Princess Elisabeth of Bohemia's critique of Descartes (how can non-physical interact with physical?)
-- Property Dualism and Epiphenomenalism: The brain produces mental states, but mental states have no causal power over the physical body
-- **Questions**: Reconstructing Descartes' conceivability argument, evaluating the interaction problem against substance dualism
+## Course Design Notes
+Route questions here when they involve dualism, physicalism, behaviorism, identity theory, functionalism, AI, consciousness, qualia, hard problem, personal identity, free will, extended mind, or eliminativism. Require clear argument reconstruction and careful use of thought experiments.
 
-## Module 2: Physicalism and Behaviorism (20%)
-- Physicalism (Materialism): Everything that exists is physical
-- Logical Behaviorism (Ryle, Hempel): Mental states are nothing more than behavioral dispositions (the ghost in the machine critique)
-- Problems with Behaviorism: The "Super-Spartan" (pain without behavior) and the problem of infinite regress (beliefs require other beliefs)
-- Identity Theory (Smart, Place): Mental states are strictly identical to brain states (e.g., Pain = C-fiber firing)
-- Multiple Realizability: Hilary Putnam's critique of Identity Theory (can an octopus or an alien feel pain without C-fibers?)
-- **Questions**: Critiquing Logical Behaviorism using the Super-Spartan thought experiment, explaining how Multiple Realizability undermines Identity Theory
+## Chapter 1: The Mind-Body Problem
+**Key concepts**: Mental state, physical state, subjectivity, objectivity, substance dualism, property dualism, conceivability argument, divisibility argument, interaction problem, and causal closure.
+**Practice questions**: Reconstruct Descartes' argument; evaluate the interaction problem; distinguish substance and property dualism; state what physicalists must explain.
+**Student output**: An argument map of dualism and one major objection.
 
-## Module 3: Functionalism and Artificial Intelligence (20%)
-- Functionalism: Mental states are defined not by their physical makeup, but by their functional role (inputs, internal states, outputs)
-- The Turing Test (Alan Turing) and computational theories of mind (the brain as hardware, the mind as software)
-- Strong AI vs Weak AI
-- The Chinese Room Argument (John Searle): Syntax vs Semantics; simulation of understanding vs actual understanding
-- **Questions**: Evaluating Functionalism against Multiple Realizability, analyzing whether the Chinese Room argument successfully refutes Strong AI
+## Chapter 2: Behaviorism and Identity Theory
+**Key concepts**: Logical behaviorism, disposition, category mistake, Super-Spartan, type identity, token identity, neural correlate, reduction, and multiple realizability.
+**Practice questions**: Critique behaviorism; explain why pain behavior is not the same as pain; evaluate identity theory; use multiple realizability as an objection.
+**Student output**: A theory comparison memo on behaviorism and identity theory.
 
-## Module 4: Consciousness and the "Hard Problem" (20%)
-- Phenomenal consciousness (qualia): "What it is like" to experience something
-- The Knowledge Argument (Frank Jackson): Mary the color scientist in the black-and-white room
-- The "Hard Problem" of Consciousness (David Chalmers): Why and how do physical processes give rise to subjective experience? (Contrasted with the "Easy Problems" of cognitive mapping)
-- Philosophical Zombies (Chalmers): Physically identical beings with no inner subjective experience
-- Panpsychism: The view that consciousness is a fundamental and ubiquitous feature of the physical world
-- **Questions**: Explaining the "Hard Problem", debating whether Mary learns something new when she sees red for the first time
+## Chapter 3: Functionalism and Computational Minds
+**Key concepts**: Functional role, input, output, internal state, multiple realizability, Turing test, strong AI, weak AI, computational theory of mind, Chinese Room, syntax, semantics, and systems reply.
+**Practice questions**: Apply functionalism to nonhuman or artificial cases; evaluate the Chinese Room; distinguish simulation from understanding; compare hardware/software analogies.
+**Student output**: A structured debate brief on whether a machine could understand.
 
-## Module 5: Personal Identity and Free Will (20%)
-- What makes a person the same person over time?
-- Psychological continuity theories (John Locke, memory) vs Somatic/Biological continuity theories
-- Thought experiments: The Ship of Theseus, teletransportation, brain splitting
-- Determinism vs Free Will: In a purely physical universe, is free will an illusion?
-- Compatibilism (Soft Determinism) vs Incompatibilism (Hard Determinism and Libertarianism)
-- **Questions**: Applying the Ship of Theseus to human cellular regeneration, evaluating compatibilist arguments for moral responsibility in a deterministic universe
+## Chapter 4: Consciousness and the Hard Problem
+**Key concepts**: Phenomenal consciousness, access consciousness, qualia, hard problem, easy problems, Mary's Room, knowledge argument, philosophical zombie, conceivability, panpsychism, and illusionism.
+**Practice questions**: Explain what Mary learns or does not learn; analyze zombie arguments; compare physicalist replies; distinguish explanatory gap from ignorance.
+**Student output**: A consciousness case study explaining one argument and one response in accessible language.
 
-## Stretch Zone
-- Extended Mind Thesis (Clark & Chalmers): The mind extends into the environment (e.g., using a smartphone as memory)
-- Eliminative Materialism (Churchland): Folk psychology concepts (beliefs, desires) are false and will be replaced by neuroscience
+## Chapter 5: Representation, Perception, and Embodiment
+**Key concepts**: Intentionality, mental representation, perception, content, embodiment, predictive processing, enactivism, phenomenology, and cognitive science.
+**Practice questions**: Explain how mental states can be about things; compare representational and embodied accounts; analyze a perceptual illusion; connect empirical findings to philosophical claims.
+**Student output**: A perception-and-representation analysis using one experiment or case.
+
+## Chapter 6: Personal Identity and the Self
+**Key concepts**: Bodily continuity, psychological continuity, memory, narrative self, animalism, fission, teletransportation, survival, practical identity, and moral responsibility.
+**Practice questions**: Test identity theories with fission and teleportation; compare identity and survival; explain why identity matters for responsibility, planning, and care.
+**Student output**: A position paper on personal identity with at least two thought experiments.
+
+## Chapter 7: Free Will, Agency, and Moral Responsibility
+**Key concepts**: Determinism, indeterminism, hard determinism, libertarianism, compatibilism, Frankfurt case, reasons-responsiveness, agency, control, and neuroscience of decision.
+**Practice questions**: Compare compatibilist and incompatibilist views; analyze whether alternative possibilities are required; evaluate claims from neuroscience about free will.
+**Student output**: A responsibility memo applying free-will theories to a legal, medical, or everyday case.
+
+## Chapter 8: Extended Mind, AI Ethics, and Future Minds
+**Key concepts**: Extended mind, scaffolded cognition, smartphone memory, eliminative materialism, folk psychology, neurodiversity, AI consciousness, moral status, and rights.
+**Practice questions**: Apply the extended mind thesis; evaluate eliminativism; ask what evidence would support AI consciousness; distinguish intelligence from moral status.
+**Student output**: A future-minds policy brief on AI, neurotechnology, animal minds, or cognitive enhancement.
+
+## Capstone
+Students write a philosophy of mind research paper or presentation comparing at least two theories and testing them against a difficult case such as AI, memory loss, split-brain cases, animal minds, or teleportation.
+
+## Assessment Ideas
+Use argument maps, thought-experiment analyses, seminar debates, theory comparison tables, case memos, and final papers. Assess clarity, charity, and careful separation of empirical and conceptual claims.
+
+## Research Notes
+- Stanford Encyclopedia of Philosophy, philosophy of mind: https://plato.stanford.edu/entries/dualism/
+- Stanford Encyclopedia of Philosophy, consciousness: https://plato.stanford.edu/entries/consciousness/
+- Internet Encyclopedia of Philosophy, philosophy of mind: https://iep.utm.edu/category/m-and-e/mind/
+- BrainFacts.org: https://www.brainfacts.org/

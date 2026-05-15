@@ -1,10 +1,14 @@
 import type { Question } from './types'
 import { makeSimpleQuestion } from './base'
 import { openDsaBridgeCourseQuestions } from './openDsaBridgeCourseImported'
+import { openDsaAlgorithmQuestions } from './openDsaAlgorithmsImported'
+import { openDsaCoreIntroCsQuestions, openDsaCoreSoftwareQuestions } from './openDsaCoreImported'
 import { openDsaFormalLanguagesQuestions } from './openDsaFormalLanguagesImported'
 import { openDsaSoftwareQuestions } from './openDsaSoftwareImported'
+import { logicCsAdditionalIntroCsQuestions, logicCsAdditionalSoftwareQuestions } from './logicCsAdditionalImported'
 import { introCsWorkoutGeneratedQuestions } from './introCsWorkoutGenerated'
 import { softwareDesignWorkoutGeneratedQuestions } from './softwareDesignWorkoutGenerated'
+import { algorithmsStarterQuestions, sqlFoundationsStarterQuestions } from './courseExpansionStarterQuestions'
 
 export function buildUniversityPrepQuestionCatalog(): Record<string, Question[]> {
   return {
@@ -34,6 +38,8 @@ export function buildUniversityPrepQuestionCatalog(): Record<string, Question[]>
     ...openDsaBridgeCourseQuestions,
     ...openDsaSoftwareQuestions,
     ...openDsaFormalLanguagesQuestions,
+    ...openDsaCoreSoftwareQuestions,
+    ...logicCsAdditionalSoftwareQuestions,
     ...softwareDesignWorkoutGeneratedQuestions,
   ],
   softwareDesign: [
@@ -44,8 +50,19 @@ export function buildUniversityPrepQuestionCatalog(): Record<string, Question[]>
     ...openDsaBridgeCourseQuestions,
     ...introCsWorkoutGeneratedQuestions,
   ],
+  algorithms: [
+    ...algorithmsStarterQuestions,
+    ...openDsaAlgorithmQuestions,
+    ...openDsaFormalLanguagesQuestions,
+  ],
+  sqlFoundations: [
+    ...sqlFoundationsStarterQuestions,
+    ...openDsaCoreIntroCsQuestions.filter((question) => question.prompt.toLowerCase().includes('database')),
+  ],
   introCS: [
     ...openDsaBridgeCourseQuestions,
+    ...openDsaCoreIntroCsQuestions,
+    ...logicCsAdditionalIntroCsQuestions,
     ...introCsWorkoutGeneratedQuestions,
   ],
   research: [

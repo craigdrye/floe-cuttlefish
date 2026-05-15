@@ -1,48 +1,63 @@
 # Computer Science Theory
-**ID**: `computerScienceTheory` · **Discipline**: Computing · **Year**: 11 (ages 15–16)
+**ID**: `computerScienceTheory` - **Discipline**: Computing - **Year**: 11 (ages 15-16)
 
-## Course Philosophy
-This course moves beyond basic programming syntax to explore the mathematical and theoretical foundations of computation. Students will study algorithms, data structures, complexity, and the fundamental limits of what computers can do.
+## Course Aim
+Give students a rigorous but motivating introduction to the ideas behind computation: how data is represented, how algorithms are reasoned about, what makes problems efficient or hard, how machines can be modeled, and where computation has limits. Students practice proof habits alongside labs, simulations, and security-minded design questions.
 
-## Module 1: Data Structures (20%)
-- Arrays vs Linked Lists (memory allocation, insertion/deletion efficiency)
-- Stacks (LIFO - Last In, First Out) and Queues (FIFO - First In, First Out)
-- Hash Tables (Hash functions, collision resolution)
-- Trees: Binary Trees, Binary Search Trees (BST), and Tree Traversal (In-order, Pre-order, Post-order)
-- Graphs (Nodes, Edges, Directed vs Undirected)
-- **Questions**: Tracing a BST insertion, explaining hash collisions, comparing stack vs queue use cases
+## Course Design Notes
+This course works best after or alongside an introductory programming course. It uses unplugged activities, Python or pseudocode labs, diagrams, and short proofs so theory feels usable rather than abstract. The scope aligns with CSTA standards, AP Computer Science Principles big ideas, AP Computer Science A algorithmic reasoning, and classic ACM K-12 computing themes.
 
-## Module 2: Algorithms and Complexity (Big O Notation) (25%)
-- Understanding Time and Space Complexity
-- Big O Notation: $O(1)$, $O(\log n)$, $O(n)$, $O(n \log n)$, $O(n^2)$, $O(2^n)$
-- Search Algorithms: Linear Search vs Binary Search (requires sorted data)
-- Sorting Algorithms: Bubble Sort, Selection Sort, Insertion Sort
-- Advanced Sorting: Merge Sort (Divide and Conquer) and Quick Sort
-- **Questions**: Determining the Big O of a code snippet, tracing a Merge Sort array, explaining why Binary Search is $O(\log n)$
+## Chapter 1: Data Representation and Digital Systems
+- **Key concepts**: bit, byte, binary, hexadecimal, integer representation, overflow, ASCII, Unicode, image and sound encoding, compression.
+- **Practice questions**: How is this number represented in binary? What information is lost by this compression? Why can overflow happen?
+- **Lab output**: a data representation notebook with conversions, encoding examples, and a short compression experiment.
 
-## Module 3: Graph Algorithms & Recursion (20%)
-- Recursion: Base cases, recursive steps, and the Call Stack
-- The Fibonacci sequence and calculating factorial recursively vs iteratively
-- Graph Traversal: Breadth-First Search (BFS) using a Queue (finding shortest path in unweighted graphs)
-- Graph Traversal: Depth-First Search (DFS) using a Stack/Recursion (maze solving)
-- Dijkstra's Algorithm (conceptual understanding of shortest path in weighted graphs)
-- **Questions**: Tracing recursive function outputs, choosing BFS vs DFS for a specific problem
+## Chapter 2: Logic, Circuits, and Proof Habits
+- **Key concepts**: proposition, truth table, Boolean algebra, `and`, `or`, `not`, XOR, implication, De Morgan's laws, logic gate, invariant.
+- **Practice questions**: Are these two expressions equivalent? Which circuit matches the truth table? What claim must be shown?
+- **Lab output**: a truth-table and circuit-design exercise plus a short written proof of equivalence.
 
-## Module 4: Computability and Logic (15%)
-- Boolean Algebra and Logic Gates (AND, OR, NOT, XOR, NAND)
-- Constructing truth tables for complex logic circuits
-- The Turing Machine: the theoretical model of all computation
-- The Halting Problem (Alan Turing's proof that some problems are undecidable)
-- P vs NP (conceptual introduction): Easy to solve vs Easy to verify
-- **Questions**: Evaluating a truth table, explaining the significance of the Halting Problem
+## Chapter 3: Algorithms, Correctness, and Complexity Intuition
+- **Key concepts**: algorithm, specification, precondition, postcondition, loop invariant, time complexity, space complexity, Big O, best/worst case.
+- **Practice questions**: Why does this algorithm terminate? What input creates the worst case? What is ignored when using Big O?
+- **Lab output**: an algorithm analysis sheet comparing several solutions to the same problem.
 
-## Module 5: Cryptography and Security (20%)
-- Symmetric Encryption (e.g., AES) vs Asymmetric Encryption (Public Key Cryptography, e.g., RSA)
-- One-way functions and hashing (e.g., SHA-256)
-- Digital signatures and certificates
-- Common vulnerabilities: SQL Injection, Buffer Overflow, Cross-Site Scripting (XSS)
-- **Questions**: Explaining how public key cryptography works, distinguishing between hashing and encryption
+## Chapter 4: Searching, Sorting, and Recursion
+- **Key concepts**: linear search, binary search, selection sort, insertion sort, merge sort, recursion, base case, call stack, divide and conquer.
+- **Practice questions**: What precondition does binary search require? Which sorting pass just occurred? What is the recursive subproblem?
+- **Lab output**: trace diagrams and timing experiments for search, sort, and one recursive function.
 
-## Stretch Zone
-- Dynamic Programming (Memoization and Tabulation)
-- Introduction to Automata Theory (Finite State Machines, Regular Expressions)
+## Chapter 5: Data Structures and Graphs
+- **Key concepts**: array, list, stack, queue, hash table, tree, graph, node, edge, adjacency list, BFS, DFS, shortest path intuition.
+- **Practice questions**: Which structure fits the operation pattern? How does BFS visit this graph? Why might a hash collision matter?
+- **Lab output**: a graph model of a school, transit, game, or social system with traversal results and design tradeoffs.
+
+## Chapter 6: Automata, Languages, and Models of Computation
+- **Key concepts**: finite-state machine, state, transition, accept state, regular language, regular expression, grammar, Turing machine.
+- **Practice questions**: Which strings does this machine accept? How can a pattern be represented as states? What does the tape model capture?
+- **Lab output**: a finite-state machine for a vending machine, lock, game enemy, or text pattern, with accepted and rejected examples.
+
+## Chapter 7: Computability, Hard Problems, and Limits
+- **Key concepts**: decidable problem, undecidable problem, halting problem, reduction intuition, P, NP, verification, brute force, heuristic.
+- **Practice questions**: Is this problem asking to find or verify a solution? Why can no perfect halting checker exist? When is brute force unrealistic?
+- **Lab output**: a short explainer comparing an easy, hard, and undecidable problem using examples a non-specialist could understand.
+
+## Chapter 8: Cryptography, Security, and Responsible Theory
+- **Key concepts**: threat model, encryption, decryption, symmetric key, public key, hash, digital signature, authentication, randomness, attack surface.
+- **Practice questions**: Is this a hash or encryption task? What assumption makes the system secure? What can an attacker observe or change?
+- **Lab output**: a security case study that models a protocol, identifies risks, and explains how cryptographic tools help or fail.
+
+## Capstone
+Create a theory-to-practice investigation. Students choose an algorithm, data representation system, automaton, graph problem, or security protocol; build a small simulation or visual model; analyze correctness and efficiency; and present a clear argument about what the model proves, approximates, or cannot decide.
+
+## Assessment Ideas
+- Problem sets graded on reasoning, notation, diagrams, and clear justification rather than final answers alone.
+- Labs graded on accurate models, trace evidence, and connection between code or diagrams and theory.
+- Capstone graded on conceptual accuracy, proof or analysis quality, communication, and responsible treatment of limits and security claims.
+
+## Research Notes
+- CSTA K-12 Computer Science Standards: https://csteachers.org/k12standards/
+- AP Computer Science Principles course page: https://apcentral.collegeboard.org/courses/ap-computer-science-principles
+- AP Computer Science A course page: https://apcentral.collegeboard.org/courses/ap-computer-science-a
+- ACM/CSTA K-12 Computer Science Standards historical materials: https://csteachers.org/page/standards
+- CS50 for AP Computer Science Principles: https://cs50.harvard.edu/ap/

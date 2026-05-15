@@ -1,55 +1,65 @@
 # Integrated Math 1 Collections
 **Covers**: `col-integrated-math-1`, `col-integrated-math-1-duplicate`
-**Discipline**: Maths · **Year**: 10 (ages 14–15)
+**Discipline**: Maths | **Year**: 10 (ages 14-15)
 
-## Overview
-Combined syllabus for US-aligned Integrated Math 1 collections. Unlike the traditional Algebra 1 / Geometry / Algebra 2 sequence, Integrated Math blends algebra, geometry, and statistics into a single cohesive course every year.
+## Course Aim
+Build a coherent first-year integrated mathematics course where students connect algebra, functions, geometry, statistics, and modeling instead of treating them as separate subjects. Students learn to represent relationships with equations, graphs, tables, diagrams, and words; justify solution methods; and interpret answers in context.
 
-## Domain A: Number and Quantity & Algebra (25%)
-- Use units as a way to understand problems and to guide the solution of multi-step problems (dimensional analysis)
-- Interpret the structure of expressions (linear and exponential)
-- Create equations and inequalities in one variable and use them to solve problems
-- Create equations in two or more variables to represent relationships between quantities; graph equations on coordinate axes with labels and scales
-- Represent constraints by equations or inequalities, and by systems of equations and/or inequalities
-- Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters
-- Solve systems of linear equations exactly and approximately (e.g., with graphs), focusing on pairs of linear equations in two variables
-- **Questions**: Solving multi-step equations/inequalities, unit conversion word problems, solving systems of equations
+## Course Design Notes
+Use Common Core high school mathematics standards as the backbone, with an integrated pathway emphasis similar to public Integrated Math 1 sequences. Route questions here when they involve linear equations, inequalities, functions, systems, introductory exponential patterns, coordinate geometry, transformations, descriptive statistics, scatterplots, or modeling. Keep practice cumulative and representation-rich: students should regularly explain what a symbol, point, slope, transformation, or statistic means in the situation.
 
-## Domain B: Functions (30%)
-- Understand that a function from one set (called the domain) to another set (called the range) assigns to each element of the domain exactly one element of the range
-- Evaluate functions for inputs in their domains, and interpret statements that use function notation in terms of a context
-- Recognize that sequences are functions, sometimes defined recursively, whose domain is a subset of the integers
-- For a function that models a relationship between two quantities, interpret key features of graphs and tables (linear and exponential)
-- Calculate and interpret the average rate of change of a function over a specified interval
-- Graph linear and exponential functions expressed symbolically and show key features of the graph
-- Write a function that describes a relationship between two quantities (linear and exponential)
-- Distinguish between situations that can be modeled with linear functions and with exponential functions
-- **Questions**: Function notation, identifying linear vs exponential growth, finding average rate of change, arithmetic/geometric sequences
+## Chapter 1: Quantities, Expressions, and Algebraic Structure
+- **Key concepts**: Units, variables, expressions, terms, factors, coefficients, order of operations, equivalent expressions, formulas, substitution, and interpreting structure.
+- **Practice questions**: Evaluate expressions and formulas; rewrite expressions to show a quantity of interest; use units to check reasonableness; translate contexts into algebraic expressions.
+- **Student output**: A quantity-and-expression notebook page that models one situation with variables, units, an expression or formula, sample values, and interpretation of each term.
 
-## Domain C: Geometry (25%)
-- Know precise definitions of angle, circle, perpendicular line, parallel line, and line segment, based on the undefined notions of point, line, distance along a line, and distance around a circular arc
-- Represent transformations in the plane; describe transformations as functions that take points in the plane as inputs and give other points as outputs
-- Compare transformations that preserve distance and angle to those that do not (e.g., translation versus horizontal stretch)
-- Given a rectangle, parallelogram, trapezoid, or regular polygon, describe the rotations and reflections that carry it onto itself
-- Use geometric descriptions of rigid motions to transform figures and to predict the effect of a given rigid motion on a given figure
-- Given two figures, use the definition of congruence in terms of rigid motions to decide if they are congruent
-- Use coordinates to prove simple geometric theorems algebraically (e.g., prove or disprove that a figure defined by four given points in the coordinate plane is a rectangle)
-- Use coordinates to compute perimeters of polygons and areas of triangles and rectangles
-- **Questions**: Describing rigid transformations, identifying lines of symmetry and rotational symmetry, calculating perimeter/area on a coordinate plane
+## Chapter 2: Linear Equations and Inequalities
+- **Key concepts**: One-variable equations, inverse operations, distributive property, equations with variables on both sides, identities, no-solution cases, inequalities, compound inequalities, and solution sets.
+- **Practice questions**: Solve multi-step equations and inequalities; justify each algebraic move; graph solution sets; decide whether a proposed solution fits the original context.
+- **Student output**: An annotated solving portfolio with two equations, two inequalities, number-line representations, and written checks of the answers.
 
-## Domain D: Statistics and Probability (20%)
-- Represent data with plots on the real number line (dot plots, histograms, and box plots)
-- Use statistics appropriate to the shape of the data distribution to compare center (median, mean) and spread (interquartile range, standard deviation) of two or more different data sets
-- Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points (outliers)
-- Summarize categorical data for two categories in two-way frequency tables; interpret relative frequencies in the context of the data
-- Represent data on two quantitative variables on a scatter plot, and describe how the variables are related
-- Fit a function to the data; use functions fitted to data to solve problems in the context of the data (focus on linear models)
-- Informally assess the fit of a function by plotting and analyzing residuals
-- Interpret the slope (rate of change) and the intercept (constant term) of a linear model in the context of the data
-- Compute and interpret the correlation coefficient of a linear fit
-- Distinguish between correlation and causation
-- **Questions**: Interpreting box plots and histograms, calculating standard deviation (conceptually), interpreting scatter plots, correlation vs causation
+## Chapter 3: Functions, Graphs, and Rate of Change
+- **Key concepts**: Function definition, domain and range, function notation, independent and dependent variables, graph features, intercepts, increasing and decreasing behavior, and average rate of change.
+- **Practice questions**: Determine whether a relation is a function; evaluate and interpret f(x); match tables, graphs, equations, and descriptions; calculate and interpret average rate of change.
+- **Student output**: A function profile for one relationship, including table, graph, rule or description, domain statement, and interpretation of key graph features.
 
-## Stretch Zone
-- Introduction to exponential decay models (e.g., half-life)
-- Proving geometric theorems using formal two-column proofs
+## Chapter 4: Linear Functions and Modeling
+- **Key concepts**: Slope, constant rate of change, intercepts, slope-intercept form, point-slope form, standard form, direct variation, residuals, correlation, and limits of linear models.
+- **Practice questions**: Write linear equations from graphs, points, tables, and contexts; interpret slope and intercept; compare candidate linear models; identify when linear modeling is inappropriate.
+- **Student output**: A short linear-model memo using a small dataset or scenario, with graph, equation, parameter interpretation, prediction, and warning about model limits.
+
+## Chapter 5: Systems and Constraints
+- **Key concepts**: Systems as simultaneous constraints, graphing, substitution, elimination, approximate solutions, exact solutions, solution types, linear inequalities in two variables, and feasible regions.
+- **Practice questions**: Solve systems by graphing, substitution, and elimination; explain one, none, or infinitely many solutions; model break-even, mixture, planning, or design constraints.
+- **Student output**: A systems task board showing three solution methods for related problems and a context interpretation of what the solution point means.
+
+## Chapter 6: Geometry Foundations and Transformations
+- **Key concepts**: Points, lines, segments, angles, parallel and perpendicular lines, polygons, precise definitions, translations, rotations, reflections, symmetry, rigid motions, congruence, and transformation notation.
+- **Practice questions**: Describe transformations on and off the coordinate plane; identify symmetries; decide whether figures are congruent; write transformation rules and explain preserved distance and angle measures.
+- **Student output**: A transformation map with original figure, image, coordinate rule or motion sequence, and a short congruence explanation.
+
+## Chapter 7: Coordinate Geometry, Measurement, and Introductory Proof
+- **Key concepts**: Coordinate plane, distance, midpoint, slope, parallel and perpendicular lines, perimeter, area, simple coordinate proofs, geometric definitions, and diagram-based reasoning.
+- **Practice questions**: Find distance and midpoint; classify figures from coordinates; compute perimeter or area; use slope and distance to justify a geometric claim.
+- **Student output**: A coordinate-geometry proof page that verifies a claim about a triangle, quadrilateral, or design using calculations and written reasoning.
+
+## Chapter 8: Statistics, Exponential Patterns, and Modeling Studio
+- **Key concepts**: Dot plots, histograms, box plots, mean, median, interquartile range, standard deviation as spread, two-way tables, scatterplots, association, correlation versus causation, arithmetic sequences, geometric sequences, and introductory exponential growth and decay.
+- **Practice questions**: Compare distributions; interpret two-way tables and relative frequencies; describe scatterplot association; distinguish linear and exponential patterns from tables and graphs.
+- **Student output**: A modeling studio report comparing at least two representations of data or growth, including a graph, summary statistic or equation, and interpretation in context.
+
+## Capstone
+Students complete an Integrated Math 1 modeling portfolio around one practical question such as transportation, school scheduling, pricing, sports data, environmental data, or a small design problem. The final product must include a linear equation or function, a system or inequality constraint, a geometric or coordinate representation, a data display, and a reflection on assumptions, precision, and model limits.
+
+## Assessment Ideas
+- Short fluency checks on solving, graphing, function notation, slope, transformations, and summary statistics.
+- Mixed representation tasks requiring students to move among equations, graphs, tables, diagrams, and written explanations.
+- Error-analysis prompts for invalid algebraic moves, misleading graphs, unsupported correlation claims, or unclear geometric reasoning.
+- Modeling tasks scored on setup, method choice, interpretation, units, and reasonableness.
+- Capstone graded on mathematical accuracy, representation quality, concept connections, communication, and assessment-ready reflection.
+
+## Research Notes
+- Common Core State Standards for High School Mathematics, including algebra, functions, geometry, statistics, and modeling: https://www.thecorestandards.org/Math/
+- Illustrative Mathematics high school curriculum and tasks emphasize integrated reasoning, modeling, and multiple representations: https://illustrativemathematics.org/math-curriculum/high-school/
+- NCTM Principles to Actions supports coherent instruction, productive discourse, procedural fluency from understanding, and formative assessment: https://www.nctm.org/standards-and-positions/principles-to-actions/
+- California Common Core State Standards Mathematics Framework includes integrated pathway course guidance: https://www.cde.ca.gov/ci/ma/cf/

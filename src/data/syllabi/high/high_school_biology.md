@@ -1,51 +1,63 @@
 # High School Biology
 **Covers**: `col-high-school-biology`, `col-high-school-biology---ngss`
-**Discipline**: Science · **Year**: 11 (ages 15–16)
+**Discipline**: Science · **Year**: 11 (ages 15-16)
 
-## Course Philosophy
-High School Biology takes a molecular and systems-level approach to life. It covers biochemistry, cellular energetics, complex genetics, evolution, and ecology. The focus is on the biochemical mechanisms underlying life processes.
+## Course Aim
+Give students a living-systems toolkit: how cells transform matter and energy, how traits move through generations, how evolution explains biological diversity, and how ecosystems respond to change. The course is less about memorizing vocabulary than using evidence, models, and data to explain what living systems do.
 
-## Module 1: Biochemistry and Cellular Structure (20%)
-- Properties of water: polarity, hydrogen bonding, cohesion, adhesion, high specific heat
-- Biological macromolecules: structure and function of carbohydrates, lipids, proteins, and nucleic acids
-- Enzyme structure and function: activation energy, active sites, competitive vs non-competitive inhibition
-- The cell membrane: fluid mosaic model, selective permeability
-- Cellular transport: simple diffusion, facilitated diffusion, osmosis (hyper/hypo/isotonic solutions), active transport, endocytosis/exocytosis
-- **Questions**: Identifying macromolecule structures, predicting osmosis direction, analyzing enzyme reaction graphs
+## Course Design Notes
+This syllabus sits below AP Biology but should still feel rigorous. Every chapter pairs core biology with an investigation habit: modeling, data interpretation, argument from evidence, or experimental design. Questions from the biology and NGSS banks should be routed here when they ask students to explain processes, interpret biological data, or connect molecular details to organism and ecosystem outcomes.
 
-## Module 2: Cellular Energetics (20%)
-- ATP structure and function as the cellular energy currency
-- Photosynthesis: the Light-Dependent Reactions (thylakoid, chlorophyll, electron transport chain, ATP/NADPH production) and the Calvin Cycle (stroma, carbon fixation)
-- Cellular Respiration: Glycolysis (cytoplasm), Krebs Cycle (mitochondrial matrix), and the Electron Transport Chain (inner mitochondrial membrane, oxidative phosphorylation)
-- Anaerobic respiration: Lactic acid fermentation vs Alcoholic fermentation
-- **Questions**: Tracing carbon/electrons through photosynthesis and respiration, calculating ATP yield, interpreting photosynthesis rate graphs
+## Chapter 1: Biology Practices and Chemistry of Life
+- **Key concepts**: Scientific claims and evidence, variables and controls, water properties, pH, macromolecules, enzymes, and scale from molecules to systems.
+- **Practice questions**: Identify controls in a biology experiment; interpret enzyme-rate data; explain how molecular structure affects biological function.
+- **Student output**: A short lab brief that turns a food, enzyme, or pH investigation into a claim-evidence-reasoning paragraph.
 
-## Module 3: Cell Division and Genetics (25%)
-- The Cell Cycle: G1, S, G2, M phase, and cell cycle checkpoints (cancer as uncontrolled division)
-- Mitosis phases and cytokinesis
-- Meiosis: homologous chromosomes, crossing over (prophase I), independent assortment, haploid vs diploid
-- Mendelian Genetics: monohybrid and dihybrid crosses, Law of Segregation, Law of Independent Assortment
-- Non-Mendelian Genetics: incomplete dominance, codominance, multiple alleles (blood types), sex-linked traits, polygenic traits
-- DNA structure (nucleotides, base pairing) and replication (helicase, DNA polymerase, semi-conservative model)
-- Protein Synthesis (Central Dogma): Transcription (DNA to mRNA) and Translation (mRNA to protein at the ribosome, tRNA, codons)
-- Mutations: substitution (silent, missense, nonsense) and frameshift (insertion/deletion)
-- **Questions**: Dihybrid cross Punnett squares, tracing protein synthesis from DNA sequence, identifying mutation impacts, analyzing pedigrees
+## Chapter 2: Cells, Membranes, and Transport
+- **Key concepts**: Prokaryotic and eukaryotic cells, organelles, membrane structure, diffusion, osmosis, active transport, surface area, and homeostasis.
+- **Practice questions**: Predict water movement across membranes; match organelles to functions; reason from diagrams of transport proteins and concentration gradients.
+- **Student output**: A cell-system model showing how at least four organelles coordinate to maintain a cell process.
 
-## Module 4: Evolution (15%)
-- Mechanisms of evolution: natural selection, mutation, genetic drift (bottleneck/founder effect), gene flow, sexual selection
-- Hardy-Weinberg equilibrium (calculating allele and genotype frequencies: $p+q=1$, $p^2+2pq+q^2=1$)
-- Speciation: allopatric vs sympatric, prezygotic vs postzygotic isolating mechanisms
-- Evidence for evolution: fossil record, biogeography, comparative anatomy, molecular biology (DNA/protein similarities)
-- Cladograms and phylogenetic trees
-- **Questions**: Hardy-Weinberg calculations, identifying isolating mechanisms, interpreting cladograms
+## Chapter 3: Energy in Living Systems
+- **Key concepts**: ATP, enzyme regulation, photosynthesis, cellular respiration, energy transfer, matter cycling, and limits of simplified equations.
+- **Practice questions**: Trace carbon or energy through photosynthesis and respiration; read graphs from light, temperature, or substrate experiments; compare aerobic and anaerobic pathways.
+- **Student output**: A two-page explanation of how matter and energy move through a chosen biological scenario.
 
-## Module 5: Ecology and Systems (20%)
-- Population ecology: exponential vs logistic growth (carrying capacity, limiting factors)
-- Community ecology: symbiotic relationships (mutualism, commensalism, parasitism), predator-prey dynamics, keystone species
-- Ecosystems: energy flow (10% rule), primary productivity, biogeochemical cycles (carbon, nitrogen, phosphorus)
-- Human impact: climate change, biomagnification, habitat destruction, invasive species
-- **Questions**: Logistic growth graph interpretation, tracing the nitrogen cycle, analyzing biomagnification in food webs
+## Chapter 4: DNA, Cell Division, and Gene Expression
+- **Key concepts**: DNA structure, replication, mitosis, meiosis, transcription, translation, mutations, chromosomes, and gene regulation.
+- **Practice questions**: Model meiosis outcomes; translate a DNA or RNA sequence; explain how a mutation can change, preserve, or disrupt protein function.
+- **Student output**: A diagrammed flow from DNA sequence to trait, with one mutation scenario analyzed.
 
-## Stretch Zone
-- Operon models of gene regulation in bacteria (e.g., lac operon)
-- Gel electrophoresis and PCR techniques
+## Chapter 5: Inheritance and Biotechnology
+- **Key concepts**: Mendelian inheritance, Punnett squares, pedigrees, incomplete dominance, codominance, polygenic traits, genetic testing, gel electrophoresis, and PCR.
+- **Practice questions**: Solve inheritance problems; interpret a pedigree; evaluate what a biotechnology result can and cannot prove.
+- **Student output**: A genetics case file that combines probability, a family history or population scenario, and an ethical reflection.
+
+## Chapter 6: Evolution and Biological Diversity
+- **Key concepts**: Natural selection, genetic drift, gene flow, mutation, common ancestry, phylogenies, adaptation, speciation, and evidence from fossils, anatomy, and DNA.
+- **Practice questions**: Read a phylogenetic tree; distinguish individual change from population change; explain selection using variation, inheritance, and differential survival.
+- **Student output**: An evidence poster defending an evolutionary explanation with at least three independent lines of evidence.
+
+## Chapter 7: Ecology and Human Impacts
+- **Key concepts**: Populations, communities, ecosystems, food webs, carrying capacity, biodiversity, nutrient cycles, succession, disturbance, and human impacts.
+- **Practice questions**: Interpret population graphs; predict how a change travels through a food web; analyze ecosystem services and tradeoffs.
+- **Student output**: A local ecosystem brief with one measurable indicator, one stressor, and one intervention proposal.
+
+## Chapter 8: Biology Investigation Studio
+- **Key concepts**: Experimental design, data quality, graphing, uncertainty, peer critique, scientific communication, and responsible use of biological evidence.
+- **Practice questions**: Debug a flawed experiment; choose the best graph for biological data; revise a claim when new evidence appears.
+- **Student output**: A final investigation report or model-based explanation using original or provided data.
+
+## Capstone
+Students produce a "living systems explainer" on a biological question they care about. Strong projects connect at least two scales, such as molecules and cells, cells and organisms, or populations and ecosystems.
+
+## Assessment Ideas
+- Short claim-evidence-reasoning responses from diagrams, data tables, or experimental results.
+- Modeling checks where students revise a biological diagram after feedback.
+- Lab notebook entries graded for question, method, data, uncertainty, and conclusion.
+- One cumulative project defense focused on evidence quality rather than presentation polish.
+
+## Research Notes
+- NGSS high school life science performance expectations: https://my.nsta.org/ngss/full/Hs-Life-Sciences.aspx
+- HHMI BioInteractive classroom resources: https://www.biointeractive.org/classroom-resources
+- OpenStax Biology 2e for reference-level explanations and diagrams: https://openstax.org/details/books/biology-2e

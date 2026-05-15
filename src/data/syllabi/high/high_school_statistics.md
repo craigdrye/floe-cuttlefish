@@ -1,52 +1,63 @@
 # High School Statistics
 **Covers**: `col-high-school-statistics`, `col-statistics-probability`
-**Discipline**: Maths · **Year**: 11 (ages 15–16)
+**Discipline**: Maths · **Year**: 11 (ages 15-16)
 
-## Course Philosophy
-This course introduces the concepts of data collection, descriptive statistics, probability, and introductory statistical inference. It focuses on statistical literacy, critical thinking about data, and the mathematical modeling of chance.
+## Course Aim
+Teach statistics as the craft of asking better questions with data. Students learn to design fair comparisons, describe patterns honestly, quantify uncertainty, and recognize when a claim is stronger than the evidence behind it.
 
-## Module 1: Exploring One-Variable Data (20%)
-- Categorical vs Quantitative data
-- Displaying data: bar charts, pie charts, dot plots, stem-and-leaf plots, histograms, and box plots
-- Describing distributions: shape (skewness, symmetry, bimodal), center (mean, median), and spread (range, IQR, standard deviation)
-- Identifying outliers using the $1.5 \times IQR$ rule
-- The effect of linear transformations on summary statistics
-- **Questions**: Comparing two box plots, calculating standard deviation conceptually, identifying skew from a histogram
+## Course Design Notes
+Use the GAISE investigation cycle as the backbone: formulate questions, collect or consider data, analyze, and interpret. Route questions here when they focus on data displays, distributions, probability, study design, correlation, regression, sampling variability, or introductory inference.
 
-## Module 2: The Normal Distribution (15%)
-- Density curves and the properties of the Normal distribution
-- The Empirical Rule (68-95-99.7 rule)
-- Standardizing values: calculating and interpreting z-scores
-- Using standard normal tables or technology to find areas under the normal curve (percentiles) and finding z-scores given percentiles
-- **Questions**: Finding the proportion of data above a certain value, solving for $\mu$ or $\sigma$ given a percentile
+## Chapter 1: Statistical Questions and the Data Cycle
+- **Key concepts**: Statistical questions, variability, populations and samples, variables, data types, measurement quality, bias, and the full statistical investigation cycle.
+- **Practice questions**: Sort statistical from non-statistical questions; classify variables; identify likely sources of bias or missing context.
+- **Student output**: A data-question proposal with population, variable definitions, collection plan, and anticipated limitations.
 
-## Module 3: Exploring Two-Variable Data (20%)
-- Scatterplots: describing direction, form, and strength of an association
-- Correlation coefficient ($r$): calculation, interpretation, and its limitations (correlation does not imply causation)
-- Least-Squares Regression Line (LSRL): $\hat{y} = a + bx$
-- Interpreting the slope and y-intercept in context
-- Residuals and residual plots: assessing the fit of a linear model
-- Coefficient of determination ($r^2$)
-- **Questions**: Interpreting slope in context, calculating a residual, analyzing a residual plot for non-linear patterns
+## Chapter 2: One-Variable Data
+- **Key concepts**: Dot plots, histograms, box plots, center, spread, shape, outliers, percentiles, standard deviation, and comparing distributions.
+- **Practice questions**: Choose and interpret displays; compare two distributions; justify whether mean or median is more appropriate.
+- **Student output**: A one-page distribution report comparing two groups using graphs and numerical summaries.
 
-## Module 4: Study Design and Probability (25%)
-- Sampling methods: Simple Random Sample (SRS), stratified, cluster, systematic
-- Bias in sampling: undercoverage, nonresponse, voluntary response, wording of questions
-- Observational studies vs Experiments: confounding variables, control groups, random assignment, blinding (single and double)
-- Basic probability: theoretical vs empirical, Law of Large Numbers
-- Addition rule for mutually exclusive events; Multiplication rule for independent events
-- Conditional probability ($P(A|B)$) and tree diagrams
-- **Questions**: Identifying the type of bias, designing a completely randomized experiment, conditional probability calculations
+## Chapter 3: Normal Models and Standardization
+- **Key concepts**: Density curves, normal distributions, z-scores, empirical rule, percentiles, standardization, and model fit.
+- **Practice questions**: Calculate and interpret z-scores; estimate areas and percentiles; decide whether a normal model is reasonable.
+- **Student output**: A normal-model critique that compares a real or provided distribution to a theoretical model.
 
-## Module 5: Random Variables & Introduction to Inference (20%)
-- Discrete vs Continuous random variables
-- Expected value (mean) and standard deviation of a discrete random variable
-- Binomial distribution: conditions (BINS - Binary, Independent, Number of trials fixed, Success probability constant) and calculating binomial probabilities
-- Introduction to sampling distributions and the Central Limit Theorem (CLT)
-- Concept of a confidence interval and margin of error (informal derivation)
-- **Questions**: Calculating expected value, identifying if a scenario is binomial, applying the CLT
+## Chapter 4: Two-Variable Data and Regression
+- **Key concepts**: Scatterplots, association, correlation, least-squares regression, residuals, influential points, explanatory and response variables, and the limits of causal claims.
+- **Practice questions**: Interpret slope, intercept, correlation, and residuals; identify outliers; distinguish association from causation.
+- **Student output**: A regression brief with a scatterplot, model, residual check, and careful prediction statement.
 
-## Stretch Zone
-- Geometric distributions
-- Formal calculation of Confidence Intervals for a proportion (1-Prop Z-Int)
-- Introduction to hypothesis testing (null vs alternative hypotheses, p-values)
+## Chapter 5: Study Design and Data Ethics
+- **Key concepts**: Surveys, experiments, observational studies, random sampling, random assignment, control, confounding, blinding, replication, privacy, and consent.
+- **Practice questions**: Improve a flawed study design; decide what conclusions a study permits; identify ethical risks in data collection.
+- **Student output**: A redesigned study plan that explains how the new design reduces bias or strengthens causal reasoning.
+
+## Chapter 6: Probability and Random Variables
+- **Key concepts**: Probability rules, independence, conditional probability, expected value, discrete random variables, binomial settings, and simulation.
+- **Practice questions**: Use two-way tables; calculate conditional probabilities; build or interpret a simulation for a chance process.
+- **Student output**: A simulation notebook that estimates a probability or expected value and compares it with a theoretical result.
+
+## Chapter 7: Sampling Variability and Introductory Inference
+- **Key concepts**: Sampling distributions, margin of error, confidence intervals, null hypotheses, p-values, statistical significance, practical significance, and uncertainty communication.
+- **Practice questions**: Interpret confidence intervals and p-values in context; identify common inference mistakes; compare statistical and practical importance.
+- **Student output**: An inference memo written for a non-technical audience, including a plain-language uncertainty statement.
+
+## Chapter 8: Data Story Studio
+- **Key concepts**: Reproducible analysis habits, graph integrity, annotation, dashboard basics, uncertainty in public claims, and revision after critique.
+- **Practice questions**: Spot misleading graph choices; revise a data claim; decide what evidence a public claim would need.
+- **Student output**: A final data story using one dataset, at least two visualizations, and a limitations section.
+
+## Capstone
+Students complete a statistical investigation from question to interpretation. The final product can be a report, slide briefing, or interactive notebook, but it must include design choices, analysis, uncertainty, and a clear answer to the original question.
+
+## Assessment Ideas
+- Short interpretation prompts where arithmetic is less important than context.
+- Study-design critiques using real headlines or mock abstracts.
+- Mini investigations using classroom, public, or simulated datasets.
+- A final data story scored on question quality, display choice, statistical reasoning, and honest limitations.
+
+## Research Notes
+- ASA GAISE reports for statistics education: https://www.amstat.org/asa/education/Guidelines-for-Assessment-and-Instruction-in-Statistics-Education-Reports.aspx
+- ASA K-12 statistics education resources: https://www.amstat.org/education/k-12-educators
+- Census at School for classroom-friendly data investigations: https://ww2.amstat.org/censusatschool/

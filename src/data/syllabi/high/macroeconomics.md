@@ -1,49 +1,62 @@
 # Macroeconomics
-**ID**: `macroeconomics` · **Discipline**: Economics · **Year**: 11 (ages 15–16)
+**ID**: `macroeconomics` · **Discipline**: Economics · **Year**: 11 (ages 15-16)
 
-## Course Philosophy
-Macroeconomics examines the economy as a whole. Students will study national income, inflation, unemployment, economic growth, and the role of government stabilization policies (fiscal and monetary) in managing economic fluctuations.
+## Course Aim
+Teach students how to analyze the economy as a whole: output, unemployment, inflation, business cycles, aggregate demand and supply, fiscal policy, money, banking, monetary policy, growth, and open-economy effects.
 
-## Module 1: Basic Economic Concepts & Measurement (20%)
-- Scarcity, choice, and opportunity cost
-- Production Possibilities Curve (PPC): efficiency, growth, and shifts
-- Comparative advantage and the basis for international trade
-- Measuring the Economy: Gross Domestic Product (GDP) - expenditures vs income approach, nominal vs real GDP
-- Measuring Unemployment: labor force participation rate, types of unemployment (frictional, structural, cyclical)
-- Measuring Inflation: Consumer Price Index (CPI), GDP deflator, costs of inflation
-- **Questions**: Calculating real GDP, identifying types of unemployment, explaining shifts in the PPC
+## Course Design Notes
+This standalone high-school macroeconomics course can support AP Macroeconomics preparation or a non-AP economics sequence. It emphasizes graphs, indicators, policy chains, and clear explanation of tradeoffs.
 
-## Module 2: National Income and Price Determination (25%)
-- Aggregate Demand (AD): determinants (C + I + G + NX) and the multiplier effect
-- Aggregate Supply (AS): short-run (SRAS) vs long-run (LRAS) aggregate supply, sticky vs flexible wages
-- Macroeconomic Equilibrium: AD/AS model, short-run fluctuations (recessionary and inflationary gaps)
-- The Phillips Curve: the short-run trade-off between inflation and unemployment
-- **Questions**: Graphing the AD/AS model, analyzing the impact of a demand shock, explaining the short-run Phillips Curve
+## Chapter 1: Economic Thinking and Measurement
+- **Key concepts**: scarcity, opportunity cost, PPC, comparative advantage, circular flow, GDP, real versus nominal.
+- **Practice questions**: What counts in GDP? What is the opportunity cost? How does trade create gains?
+- **Student output**: an economic measurement worksheet with GDP and PPC interpretation.
 
-## Module 3: Fiscal Policy (20%)
-- The role of government in stabilizing the economy
-- Expansionary vs Contractionary fiscal policy (taxes and government spending)
-- The spending multiplier ($1/(1-MPC)$) and the tax multiplier
-- Automatic stabilizers (e.g., unemployment insurance, progressive taxation)
-- The national debt and the crowding-out effect (how government borrowing affects interest rates and private investment)
-- **Questions**: Calculating the impact of a change in government spending using the multiplier, explaining the crowding-out effect
+## Chapter 2: Inflation, Unemployment, and Business Cycles
+- **Key concepts**: CPI, inflation, unemployment types, labor force participation, business cycle, real income, price level.
+- **Practice questions**: What kind of unemployment is present? How does inflation affect purchasing power? Where is the economy in the cycle?
+- **Student output**: a macro indicators report using fictional or real data.
 
-## Module 4: The Financial Sector and Monetary Policy (20%)
-- The definition and functions of money (medium of exchange, unit of account, store of value)
-- The banking system and money creation: the money multiplier ($1/RRR$)
-- The Money Market: demand for money and the supply of money
-- The Federal Reserve (Central Bank): structure and functions
-- Tools of Monetary Policy: open market operations (buying/selling bonds), the discount rate, and the reserve requirement
-- Expansionary vs Contractionary monetary policy and their effects on interest rates, investment, and AD
-- **Questions**: Calculating money creation using the reserve requirement, graphing the money market, tracing the effects of open market operations
+## Chapter 3: Aggregate Demand and Aggregate Supply
+- **Key concepts**: AD, SRAS, LRAS, recessionary gap, inflationary gap, supply shock, self-correction, Phillips Curve.
+- **Practice questions**: What shifts AD or AS? What happens to output and price level? How does unemployment change?
+- **Student output**: an AD/AS graph packet with shock explanations.
 
-## Module 5: Economic Growth and International Economics (15%)
-- Long-run economic growth: determinants (productivity, human capital, physical capital, technology)
-- The Foreign Exchange Market: supply and demand for currency, exchange rates (appreciation vs depreciation)
-- Balance of Payments: Current Account vs Capital/Financial Account
-- The effects of exchange rate changes on net exports and AD
-- **Questions**: Explaining factors that shift the LRAS curve, analyzing currency appreciation/depreciation graphs, calculating the balance of payments
+## Chapter 4: Fiscal Policy and Multipliers
+- **Key concepts**: government spending, taxes, transfers, MPC, spending multiplier, tax multiplier, automatic stabilizers, debt.
+- **Practice questions**: Which fiscal policy closes the gap? What is the multiplier effect? What tradeoff appears over time?
+- **Student output**: a fiscal policy recommendation memo.
 
-## Stretch Zone
-- The loanable funds market and its interaction with the money market
-- The rational expectations theory vs adaptive expectations
+## Chapter 5: Money, Banking, and Financial Markets
+- **Key concepts**: functions of money, banks, reserves, money creation, money market, loanable funds, nominal and real interest rates.
+- **Practice questions**: How much money can banks create? What changes interest rates? How does saving fund investment?
+- **Student output**: a money-market and loanable-funds linked graph exercise.
+
+## Chapter 6: Monetary Policy
+- **Key concepts**: central bank, open market operations, discount rate, reserve requirements, expansionary and contractionary policy.
+- **Practice questions**: What should the central bank do? How does the policy affect interest rates, investment, AD, and output?
+- **Student output**: a monetary policy transmission chain with graph and explanation.
+
+## Chapter 7: Long-Run Growth and International Economics
+- **Key concepts**: productivity, human capital, physical capital, technology, growth policy, balance of payments, exchange rates, net exports.
+- **Practice questions**: What shifts LRAS? Why does currency appreciate? How does exchange rate movement affect trade?
+- **Student output**: a growth and open-economy briefing.
+
+## Chapter 8: Macro Policy Studio
+- **Key concepts**: policy mix, crowding out, inflation expectations, graphing precision, data interpretation, written explanation.
+- **Practice questions**: Which policy is appropriate? What unintended consequence may appear? How do multiple graphs connect?
+- **Student output**: a timed policy-analysis set with correction log.
+
+## Capstone
+Analyze a fictional national economy facing a shock. Diagnose the indicators, draw AD/AS and money-market graphs, recommend fiscal and monetary responses, discuss long-run consequences, and predict exchange-rate effects.
+
+## Assessment Ideas
+- Graphs graded on labels, shifts, and equilibrium.
+- Policy memos graded on model-to-outcome reasoning.
+- Capstone graded on indicator interpretation and tradeoff awareness.
+
+## Research Notes
+- College Board AP Macroeconomics: https://apcentral.collegeboard.org/courses/ap-macroeconomics
+- Khan Academy AP/College Macroeconomics: https://www.khanacademy.org/economics-finance-domain/ap-macroeconomics
+- CLEP Principles of Macroeconomics overview: https://clep.collegeboard.org/clep-exams/principles-macroeconomics
+- Federal Reserve education resources: https://www.federalreserveeducation.org/

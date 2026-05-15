@@ -1,50 +1,62 @@
 # Microeconomics
-**ID**: `microeconomics` · **Discipline**: Economics · **Year**: 11 (ages 15–16)
+**ID**: `microeconomics` · **Discipline**: Economics · **Year**: 11 (ages 15-16)
 
-## Course Philosophy
-Microeconomics focuses on the behavior of individual consumers and firms. Students will analyze how prices are determined in different market structures, how individuals make choices to maximize utility, and how market failures occur.
+## Course Aim
+Teach students how individuals, firms, and markets make choices under scarcity. Students learn supply and demand, elasticity, welfare, consumer choice, production costs, market structures, factor markets, and market failure.
 
-## Module 1: Supply, Demand, and Market Equilibrium (25%)
-- The Law of Demand: substitution effect, income effect, diminishing marginal utility
-- The Law of Supply: marginal cost and profit maximization
-- Determinants of demand (income, preferences, prices of related goods) and supply (input costs, technology)
-- Market equilibrium: finding the market-clearing price and quantity
-- Disequilibrium: shortages (price ceilings) and surpluses (price floors)
-- Elasticity: price elasticity of demand (PED), income elasticity, cross-price elasticity, and price elasticity of supply (PES)
-- Total Revenue Test ($TR = P \times Q$)
-- **Questions**: Graphing shifts in supply/demand, calculating PED, analyzing the effects of a price ceiling (deadweight loss)
+## Course Design Notes
+This standalone high-school microeconomics course can support AP Microeconomics preparation or a non-AP economics sequence. It emphasizes graph fluency, marginal reasoning, incentives, and when markets work well or fail.
 
-## Module 2: Consumer Choice and Production Costs (20%)
-- Consumer behavior: maximizing total utility subject to a budget constraint ($MU_x/P_x = MU_y/P_y$)
-- Production in the short run: Law of Diminishing Marginal Returns
-- Short-run costs: Fixed Costs (FC), Variable Costs (VC), Total Cost (TC), Marginal Cost (MC), and Average Costs (ATC, AVC, AFC)
-- Production in the long run: Economies of scale, constant returns to scale, diseconomies of scale
-- **Questions**: Calculating marginal utility per dollar, graphing short-run cost curves, explaining why the MC curve intersects ATC at its minimum
+## Chapter 1: Economic Choice and Market Basics
+- **Key concepts**: scarcity, opportunity cost, marginal thinking, incentives, PPC, specialization, comparative advantage, trade.
+- **Practice questions**: What is the next-best alternative? Who has comparative advantage? Why does specialization increase output?
+- **Student output**: a comparative-advantage and PPC problem set.
 
-## Module 3: Perfect Competition (20%)
-- Characteristics of perfect competition: many buyers/sellers, identical products, easy entry/exit, price takers
-- Profit maximization rule: Produce where Marginal Revenue equals Marginal Cost ($MR = MC$)
-- Short-run equilibrium: calculating economic profit or loss
-- The shut-down rule (produce only if $P \geq AVC$)
-- Long-run equilibrium: zero economic profit (normal profit), productive efficiency ($P = \text{min ATC}$), allocative efficiency ($P = MC$)
-- **Questions**: Graphing a perfectly competitive firm in short-run loss, tracing the adjustment to long-run equilibrium
+## Chapter 2: Supply, Demand, and Elasticity
+- **Key concepts**: demand, supply, equilibrium, shifts, shortages, surpluses, price elasticity, income elasticity, cross-price elasticity, total revenue.
+- **Practice questions**: Which curve shifts? Is demand elastic? What happens to revenue when price changes?
+- **Student output**: a market shock graph packet with elasticity calculations.
 
-## Module 4: Imperfect Competition (Monopoly, Oligopoly, Monopolistic Competition) (20%)
-- Monopoly: barriers to entry, price makers, MR curve lies below the demand curve
-- Monopoly pricing and output: profit maximization, deadweight loss (inefficiency), natural monopolies
-- Price discrimination (1st, 2nd, and 3rd degree)
-- Monopolistic Competition: product differentiation, excess capacity in the long run
-- Oligopoly: interdependence, game theory (payoff matrices, dominant strategies, Nash equilibrium), cartels/collusion
-- **Questions**: Graphing a monopoly, calculating deadweight loss, finding the Nash equilibrium in a payoff matrix
+## Chapter 3: Welfare and Government Intervention
+- **Key concepts**: consumer surplus, producer surplus, efficiency, deadweight loss, price ceilings, price floors, taxes, subsidies, quotas.
+- **Practice questions**: Who gains and loses? Where is deadweight loss? What unintended outcome does the policy create?
+- **Student output**: a policy analysis of rent control, minimum wage, tax, or subsidy.
 
-## Module 5: Factor Markets and Market Failure (15%)
-- The labor market: derived demand, Marginal Revenue Product ($MRP = MRC$)
-- Monopsony in the labor market
-- Market Failure: Externalities (positive and negative) and government intervention (Pigouvian taxes, subsidies)
-- Public goods (non-rival, non-excludable) and the free-rider problem
-- Income inequality (Lorenz curve, Gini coefficient) and tax structures (progressive, proportional, regressive)
-- **Questions**: Graphing a negative externality and its tax solution, determining hiring quantity based on MRP, explaining the free-rider problem
+## Chapter 4: Consumer Choice and Production Costs
+- **Key concepts**: utility, budget constraint, marginal utility per dollar, production functions, diminishing marginal returns, fixed and variable costs, MC, ATC, AVC.
+- **Practice questions**: Which bundle maximizes utility? Why does marginal cost rise? Where is average total cost minimized?
+- **Student output**: a consumer and cost-curve worksheet.
 
-## Stretch Zone
-- Evaluating the Coase Theorem for resolving externalities
-- Detailed analysis of monopsony graphs
+## Chapter 5: Perfect Competition
+- **Key concepts**: price taker, marginal revenue, profit maximization, short-run profit and loss, shutdown rule, long-run equilibrium, efficiency.
+- **Practice questions**: What output maximizes profit? Should the firm produce? How does entry or exit change the market?
+- **Student output**: a perfect-competition firm and market graph set.
+
+## Chapter 6: Imperfect Competition
+- **Key concepts**: monopoly, natural monopoly, price discrimination, monopolistic competition, oligopoly, game theory, Nash equilibrium.
+- **Practice questions**: What creates market power? Where is the monopoly inefficient? Which strategy is dominant?
+- **Student output**: a monopoly and oligopoly comparison with payoff matrix.
+
+## Chapter 7: Factor Markets, Externalities, and Public Goods
+- **Key concepts**: derived demand, marginal revenue product, labor markets, monopsony, positive and negative externalities, public goods, free riding.
+- **Practice questions**: How many workers should be hired? What external cost or benefit is ignored? Which policy internalizes the externality?
+- **Student output**: a factor-market or externality policy brief.
+
+## Chapter 8: Microeconomics Studio
+- **Key concepts**: graph precision, marginal analysis, welfare reasoning, policy tradeoffs, written explanation.
+- **Practice questions**: Which model fits? What changes first? How do you explain the outcome without hand-waving?
+- **Student output**: a timed mixed microeconomics problem set with correction log.
+
+## Capstone
+Analyze a fictional market from consumer demand through firm behavior and policy. Include supply-demand, elasticity, welfare, cost, market-structure, and externality analysis.
+
+## Assessment Ideas
+- Graphs graded on labels, shifts, and model choice.
+- Calculations graded on setup and interpretation.
+- Capstone graded on marginal reasoning and policy tradeoff clarity.
+
+## Research Notes
+- College Board AP Microeconomics course audit: https://apcentral.collegeboard.org/courses/ap-microeconomics/course-audit
+- College Board comparison of AP Macro and AP Micro: https://blog.collegeboard.org/difference-between-ap-macroeconomics-and-ap-microeconomics
+- Khan Academy microeconomics course: https://www.khanacademy.org/economics-finance-domain/microeconomics
+- Federal Reserve education resources: https://www.federalreserveeducation.org/

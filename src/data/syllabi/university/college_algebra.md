@@ -1,86 +1,68 @@
 # College Algebra
-**ID**: `collegeAlgebra` · **Discipline**: Mathematics · **Stage**: University Freshman (ages 18–19, US track)
+**ID**: `collegeAlgebra` - **Discipline**: Mathematics - **Stage**: University Freshman (ages 18-19, US track)
 **Aligns with**: typical "MATH 110 / MATH 1314 / MAT 121" College Algebra; Khan Academy "College algebra"; CLEP College Algebra exam topics
 
-## Course Philosophy
-College Algebra is the gatekeeper course that decides whether a student can take any quantitative class — calculus, statistics, economics, business analytics, the sciences. Its real subject matter is *function fluency*: recognising the shape, domain, behaviour, and inverse of polynomial, rational, exponential, logarithmic, and trigonometric (lite) functions, and being able to manipulate expressions and solve equations without arithmetic anxiety. Students who only "computed" through high school often arrive here brittle: they can solve x² − 5x + 6 = 0 but freeze at 2^x = 7. Our internal goal is to build the calm muscle of "I have seen something like this; here is the move," because every later course assumes it.
+## Course Aim
+Build a durable, practice-forward command of algebra as the language of functions, equations, inequalities, and quantitative models. Students strengthen symbolic fluency, graph interpretation, function notation, equation solving, systems reasoning, polynomial and rational analysis, exponential and logarithmic modeling, and readiness for precalculus, calculus, statistics, economics, business, and science courses.
 
-## Module 1: Algebra Fluency Review and the Real Number System (15%)
-- Real numbers: rationals, irrationals, integer subsets; properties (associative, commutative, distributive); absolute value
-- Order of operations and the algebra of signed numbers; common error patterns
-- Exponents and radicals: integer exponents, rational exponents, simplifying radicals, rationalising denominators
-- Polynomial arithmetic: addition, subtraction, multiplication, special products (difference of squares, sum/difference of cubes, perfect-square trinomials)
-- Factoring: GCF, grouping, trinomials (a = 1 and a ≠ 1), special forms, factoring by substitution
-- Rational expressions: simplifying, multiplying/dividing, adding/subtracting (LCD method), complex fractions
-- Linear equations and inequalities in one variable; absolute-value equations and inequalities
-- Word problems: mixture, work/rate, distance–rate–time, simple interest, percentage change
-- **Questions**: simplify expressions involving rational exponents, factor a quartic that factors as a quadratic in x², solve absolute-value inequalities of the form |ax + b| < c, set up and solve mixture problems
+## Course Design Notes
+This is a university gateway mathematics course with weekly problem sets, short skills quizzes, graphing technology checks, and explicit repair of fragile algebra habits. Route questions here when students need real numbers, exponents, radicals, factoring, rational expressions, equations, inequalities, functions, transformations, inverse functions, polynomial functions, rational functions, exponential functions, logarithmic functions, systems, matrices, conics, sequences, or algebraic modeling. Emphasize clean notation, domain restrictions, exact versus approximate answers, graph-symbol-table connections, and the habit of checking solutions against the original problem.
 
-## Module 2: Functions and Graphs (20%)
-- Cartesian coordinate system, distance and midpoint formulas
-- Graphs of equations: intercepts, symmetry (about x-axis, y-axis, origin), circles in standard form
-- **Functions**: definition, domain, range, function notation; vertical line test
-- Increasing/decreasing/constant intervals; relative maxima and minima (intuitive)
-- Even and odd functions; piecewise functions and step functions
-- **Library of parent functions**: identity, square, cube, square root, cube root, absolute value, reciprocal, greatest integer
-- Transformations: vertical and horizontal shifts, reflections, vertical/horizontal stretches and compressions; order of transformations
-- Combinations of functions: (f + g), (f − g), (fg), (f/g) and their domains
-- **Composition**: (f ∘ g)(x); decomposing a function into a composition
-- **Inverse functions**: one-to-one, horizontal line test; finding f⁻¹ algebraically and graphically; verifying inverses via composition; restricting domains
-- **Questions**: find the domain of a rational/radical function, sketch a transformed parent function, compute (f ∘ g)(x) and its domain, decide whether a function is invertible and find its inverse
+## Chapter 1: Algebra Fluency and Real Numbers
+- **Key concepts**: Real-number subsets, interval notation, absolute value, algebraic properties, order of operations, integer and rational exponents, radicals, polynomial arithmetic, special products, factoring methods, rational expressions, complex fractions, and common algebra error patterns.
+- **Practice questions**: Simplify expressions with rational exponents; factor a polynomial using grouping or substitution; reduce and combine rational expressions; solve a linear or absolute-value equation while checking restrictions.
+- **Student output**: An algebra fluency packet with worked simplification, factoring, and rational-expression problems plus a short error analysis explaining why common invalid moves fail.
 
-## Module 3: Polynomial and Rational Functions (20%)
-- Linear functions: slope, point-slope and slope-intercept forms, parallel/perpendicular, rates of change
-- **Quadratic functions**: vertex form, completing the square, axis of symmetry; min/max problems; the discriminant
-- The Quadratic Formula; complex roots and the introduction of i
-- **Polynomial functions**: leading-coefficient/end-behaviour analysis, degree, multiplicity, turning points
-- Real zeros: synthetic and long division; Remainder and Factor Theorems
-- Rational Zero Theorem; Descartes' Rule of Signs; bounding real zeros
-- Fundamental Theorem of Algebra; complex zeros come in conjugate pairs
-- **Rational functions**: domain, vertical asymptotes, horizontal asymptotes, slant/oblique asymptotes, holes (removable discontinuities)
-- Sketching rational functions from sign analysis; solving rational equations and inequalities
-- Polynomial and rational inequalities via sign charts
-- **Questions**: complete-the-square to find the vertex of a parabola, factor a degree-4 polynomial given one rational root, determine all asymptotes of a rational function and sketch it, solve (x−1)(x+2)/(x−3) ≤ 0
+## Chapter 2: Equations, Inequalities, and Applied Problem Setup
+- **Key concepts**: Linear equations, formulas and literal equations, linear inequalities, compound inequalities, absolute-value equations and inequalities, quadratic equations, radical equations, rational equations, extraneous solutions, applications involving rates, mixtures, work, distance, percent change, simple interest, and units.
+- **Practice questions**: Solve and graph a compound inequality; isolate a variable in a formula; solve a radical equation and identify extraneous roots; translate a rate or mixture scenario into an equation.
+- **Student output**: A problem-setup notebook in which each applied problem includes variables, units, equation construction, solution method, and reasonableness check.
 
-## Module 4: Exponential and Logarithmic Functions (15%)
-- Exponential functions f(x) = a·b^x; growth vs decay; the natural base e (compound interest motivation)
-- Graphs and transformations of exponentials; horizontal asymptote
-- **Logarithmic functions** as inverses: log_b x, the natural log ln x, the common log log x; domain and graph
-- Properties of logs: product, quotient, power, change-of-base
-- Solving exponential equations (taking logs of both sides) and logarithmic equations (exponentiating, watching for extraneous roots)
-- **Applications**: compound interest A = P(1 + r/n)^(nt) and continuous interest A = Pe^(rt); doubling time and half-life; exponential population models; Newton's law of cooling; logistic growth (introductory); pH, decibels, Richter scale as log models
-- **Questions**: solve 5^(2x+1) = 17 algebraically, evaluate log_2 24 with change-of-base, write a single log expression as a sum/difference, set up and solve a half-life problem
+## Chapter 3: Functions, Graphs, and Transformations
+- **Key concepts**: Coordinate geometry, distance and midpoint formulas, graphs of equations, circles, relations, functions, domain, range, function notation, vertical line test, increasing and decreasing intervals, extrema, even and odd symmetry, piecewise functions, parent functions, transformations, operations on functions, composition, and inverse functions.
+- **Practice questions**: Determine the domain of a rational or radical function; sketch a transformed parent function; compute and interpret a composition; decide whether a function is one-to-one and find its inverse.
+- **Student output**: A function portfolio connecting tables, formulas, graphs, domains, ranges, transformations, compositions, and inverse-function checks.
 
-## Module 5: Systems, Matrices, and Conic Sections (15%)
-- Systems of linear equations in two variables: substitution, elimination, graphical interpretation; consistent/inconsistent/dependent
-- Systems in three variables: row operations, Gaussian elimination
-- Matrix representation; row-echelon and reduced row-echelon form (intro)
-- Inverse of a 2×2 matrix; determinants of 2×2 and 3×3; Cramer's Rule
-- Systems of nonlinear equations (polynomial × linear, polynomial × polynomial); graphical solutions
-- Systems of inequalities; linear programming and the corner-point principle (introductory)
-- **Conic sections**: parabola, circle, ellipse, hyperbola — equations in standard form, identifying centre/vertex/foci/asymptotes, sketching, solving systems involving conics
-- Translations and (briefly) rotations of conics
-- **Questions**: solve a 3-variable system by elimination, set up and solve a linear programming problem with two constraints, identify a conic from its general second-degree equation and put it in standard form
+## Chapter 4: Linear and Quadratic Functions
+- **Key concepts**: Slope, rate of change, intercepts, point-slope form, slope-intercept form, standard form, parallel and perpendicular lines, linear models, quadratic functions, vertex form, standard form, completing the square, discriminant, quadratic formula, complex numbers, maximum and minimum problems, and projectile or revenue models.
+- **Practice questions**: Build a linear model from data; convert a quadratic to vertex form; solve a quadratic by factoring, completing the square, and the quadratic formula; interpret the vertex in an optimization context.
+- **Student output**: A linear and quadratic modeling assignment with exact algebra, graph verification, and written interpretation of slope, intercepts, zeros, and vertices.
 
-## Module 6: Sequences, Series, Counting, and Probability (15%)
-- **Sequences**: explicit and recursive definitions; arithmetic and geometric sequences; nth-term formulas
-- **Series**: sum of a finite arithmetic series, sum of a finite geometric series, sum of an infinite geometric series (|r| < 1)
-- Sigma notation and basic manipulation
-- Mathematical induction (introductory) — proving summation formulas
-- **Binomial Theorem**: Pascal's triangle, binomial coefficients C(n, k), expansion of (a + b)^n; finding a particular term
-- **Counting**: Fundamental Counting Principle; permutations P(n, r); combinations C(n, r); permutations with repetition; circular permutations
-- **Probability**: sample space and events; theoretical vs empirical probability; complements; addition rule; mutually exclusive events; conditional probability and independence (introductory); expected value (intro)
-- **Questions**: find the sum of an arithmetic/geometric finite series, expand (2x − 3)^5 and find a specific coefficient, count arrangements with constraints, compute conditional probability from a two-way table
+## Chapter 5: Polynomial Functions and Polynomial Equations
+- **Key concepts**: Polynomial degree, leading coefficient, end behavior, zeros, multiplicity, turning points, long division, synthetic division, Remainder Theorem, Factor Theorem, Rational Zero Theorem, Descartes' Rule of Signs, complex conjugate roots, Fundamental Theorem of Algebra, and polynomial inequalities.
+- **Practice questions**: Predict end behavior from degree and leading coefficient; divide polynomials and use the remainder; find all zeros given one factor; solve a polynomial inequality with a sign chart.
+- **Student output**: A polynomial analysis sheet that moves from algebraic factorization to intercepts, multiplicities, sign behavior, and a graph consistent with all features.
 
-## Stretch Zone (push beyond standard college algebra)
-- ε-style precision: making "approaches" rigorous (preview of limits and analysis)
-- Partial fractions decomposition for rational functions (often deferred to Calc II — preview here)
-- Synthetic division for non-monic divisors and polynomial composition
-- Roots of unity, the complex plane, and the geometry of multiplication by i
-- Elementary number-theoretic ideas: divisibility, gcd by Euclidean algorithm, modular arithmetic intro
-- Logarithmic linearisation: turning power laws and exponentials into straight lines (log–log and semi-log plots)
-- Matrix view of systems: when does Ax = b have zero / one / infinitely many solutions, and what does the determinant tell you?
-- Why complex roots come in conjugate pairs (proof from real coefficients)
-- Generating functions as a way to encode sequences and combinatorial identities
-- Brief preview: limit form of e via (1 + 1/n)^n, the derivative as a "best linear approximation"
-- Common student traps to spotlight: log(a + b) ≠ log a + log b; (a + b)² ≠ a² + b²; cancelling within a sum; losing solutions when squaring both sides; introducing extraneous solutions when clearing denominators
+## Chapter 6: Rational Functions and Rational Inequalities
+- **Key concepts**: Rational-function domains, holes, vertical asymptotes, horizontal asymptotes, slant asymptotes, intercepts, sign charts, graph sketching, rational equations, rational inequalities, variation models, and rates expressed as quotients.
+- **Practice questions**: Identify all discontinuities and asymptotes of a rational function; solve a rational equation while excluding restricted values; solve a rational inequality using test intervals; model inverse variation.
+- **Student output**: A rational-function dossier with domain restrictions, asymptote calculations, sign analysis, graph sketches, and a written explanation of removable versus nonremovable discontinuities.
+
+## Chapter 7: Exponential and Logarithmic Functions
+- **Key concepts**: Exponential growth and decay, transformations of exponential graphs, base e, compound interest, continuous growth, logarithms as inverses, common and natural logarithms, logarithm laws, change of base, exponential equations, logarithmic equations, half-life, doubling time, pH, decibels, and introductory logistic models.
+- **Practice questions**: Solve an exponential equation using logarithms; condense and expand logarithmic expressions; solve a logarithmic equation with domain checks; set up a half-life or compound-interest model.
+- **Student output**: An exponential and logarithmic modeling report comparing algebraic solution, graphing technology output, and interpretation of parameters in context.
+
+## Chapter 8: Systems, Matrices, Conics, Sequences, and Readiness
+- **Key concepts**: Systems of linear equations in two and three variables, substitution, elimination, Gaussian elimination, matrices, determinants, Cramer's Rule, nonlinear systems, systems of inequalities, introductory linear programming, conic sections, arithmetic sequences, geometric sequences, finite series, sigma notation, binomial theorem, and precalculus readiness links.
+- **Practice questions**: Solve a three-variable system by elimination; use row operations on an augmented matrix; identify a conic in standard form; find the sum of a finite geometric series; solve a two-variable optimization problem by testing vertices.
+- **Student output**: A readiness map showing which algebra tools support precalculus and calculus topics such as function composition, inverse functions, trigonometric preparation, limits, rates of change, and optimization.
+
+## Capstone
+Students complete a function-modeling project using at least three major course tool families: equations and inequalities, function transformations, polynomial or rational analysis, exponential or logarithmic modeling, systems, matrices, conics, or sequences. The project must define variables and units, justify domain choices, solve symbolically where possible, use graphs or tables to validate results, and explain model limits. Suitable topics include tuition growth, medication half-life, business break-even analysis, population growth, depreciation, projectile motion, supply and demand, mixture planning, or comparing competing pricing models.
+
+## Assessment Ideas
+- Weekly written problem sets graded for notation, algebraic method, checking, graph interpretation, and communication.
+- Short skills quizzes on factoring, exponents, equations, inequalities, function notation, transformations, logarithm laws, and systems.
+- Technology checks using graphing calculators, Desmos, GeoGebra, or a CAS to compare symbolic, tabular, and graphical answers.
+- Cumulative readiness tasks that ask students to identify the method before calculating and to explain why other common methods do not apply.
+- Capstone rubric covering model setup, algebraic correctness, domain and unit reasoning, graph validation, interpretation, and readiness for the next mathematics course.
+
+## Research Notes
+- OpenStax, College Algebra 2e: https://openstax.org/details/books/college-algebra-2e
+- OpenStax, Algebra and Trigonometry 2e: https://openstax.org/details/books/algebra-and-trigonometry-2e
+- Paul's Online Notes, Algebra: https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx
+- Khan Academy, College Algebra: https://www.khanacademy.org/math/college-algebra
+- MIT OpenCourseWare, Mathematics for Computer Science prerequisite algebra review links: https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/
+- University of Houston, Math 1314 College Algebra course materials: https://www.math.uh.edu/~blerina/math1314/
+- College Board, CLEP College Algebra exam description: https://clep.collegeboard.org/clep-exams/college-algebra

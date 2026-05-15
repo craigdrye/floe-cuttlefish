@@ -1,54 +1,60 @@
 # Organic Chemistry
-**ID**: `organicChemistry` · **Discipline**: Science · **Year**: University Junior
+**ID**: `organicChemistry` - **Discipline**: Science - **Year**: University Junior
 
-## Course Philosophy
-Organic chemistry is the study of carbon-containing compounds. This course focuses on molecular structure, stereochemistry, and the mechanisms of chemical reactions. It requires intense spatial reasoning and pattern recognition, moving away from the rote memorization of general chemistry.
+## Course Aim
+Teach organic chemistry as structure, mechanism, and evidence rather than memorized reactions. Students learn to reason with bonding, stereochemistry, electron flow, functional groups, spectroscopy, synthesis, and reaction conditions.
 
-## Module 1: Structure, Bonding, and Resonance (15%)
-- Review of atomic structure, Lewis structures, formal charge, and VSEPR
-- Hybridization ($sp^3$, $sp^2$, $sp$) and molecular geometry
-- Molecular Orbital (MO) Theory (bonding and antibonding orbitals)
-- Electronegativity, bond polarity, and dipole moments
-- Resonance structures: curved arrow formalism and evaluating the relative stability of resonance contributors
-- Acids and bases: Brønsted-Lowry, Lewis acids/bases, pKa values, and predicting equilibrium position (ARIO: Atom, Resonance, Induction, Orbital)
-- **Questions**: Drawing valid resonance structures using curved arrows, predicting which proton is most acidic using ARIO principles
+## Course Design Notes
+Route questions here when they involve bonding, resonance, acid-base reasoning, conformations, stereochemistry, substitution, elimination, alkene/alkyne chemistry, aromaticity, carbonyls, spectroscopy, synthesis, or mechanism arrows. Emphasize pattern recognition, curved-arrow logic, and spatial reasoning.
 
-## Module 2: Alkanes, Cycloalkanes, and Stereochemistry (20%)
-- Nomenclature of alkanes and cycloalkanes (IUPAC rules)
-- Conformational analysis of alkanes: Newman projections (staggered vs eclipsed, torsional/steric strain)
-- Conformational analysis of cyclohexane: Chair conformations, ring flips, axial vs equatorial stability (1,3-diaxial interactions)
-- Stereochemistry: Isomers (constitutional vs stereoisomers)
-- Chirality, enantiomers, and diastereomers
-- Assigning R/S configurations (Cahn-Ingold-Prelog priorities)
-- Optical activity, specific rotation, and meso compounds
-- **Questions**: Drawing the most stable chair conformation of a substituted cyclohexane, determining R/S configuration, identifying meso compounds
+## Chapter 1: Structure, Bonding, and Acid-Base Reasoning
+**Key concepts**: Lewis structures, formal charge, VSEPR, hybridization, molecular orbitals, electronegativity, dipoles, resonance, curved arrows, Bronsted-Lowry acids, Lewis acids, pKa, and ARIO.
+**Practice questions**: Draw resonance contributors; rank acidity; identify nucleophiles and electrophiles; predict equilibrium direction; explain how structure controls reactivity.
+**Student output**: A structure-reasoning notebook with resonance, pKa, and arrow-pushing examples.
 
-## Module 3: Substitution and Elimination Reactions (25%)
-- Thermodynamics and Kinetics of organic reactions; reaction coordinate diagrams, transition states vs intermediates
-- Nucleophilic Substitution Mechanisms: $S_N1$ vs $S_N2$
-  - Kinetics, stereochemistry (inversion vs racemization), substrate effects (primary vs tertiary), nucleophile strength, leaving group ability, and solvent effects (polar protic vs aprotic)
-- Elimination Mechanisms: $E1$ vs $E2$
-  - Kinetics, regioselectivity (Zaitsev vs Hofmann products), stereoselectivity (anti-periplanar geometry)
-- Predicting the products: $S_N1$ vs $S_N2$ vs $E1$ vs $E2$ competition
-- **Questions**: Drawing the full curved-arrow mechanism for an $S_N2$ reaction, predicting the major product (Zaitsev vs Hofmann) of an $E2$ reaction, predicting whether a reaction proceeds via $S_N1$ or $S_N2$
+## Chapter 2: Nomenclature, Conformation, and Stereochemistry
+**Key concepts**: IUPAC naming, constitutional isomers, conformations, Newman projections, chair conformations, axial/equatorial positions, chirality, enantiomers, diastereomers, meso compounds, R/S, E/Z, and optical activity.
+**Practice questions**: Name structures; draw stable conformations; assign stereochemistry; identify relationships among isomers; predict conformational preferences.
+**Student output**: A stereochemistry portfolio with 3D drawings, chair flips, and isomer classifications.
 
-## Module 4: Reactions of Alkenes and Alkynes (20%)
-- Nomenclature of alkenes (E/Z system) and alkynes
-- Electrophilic Addition to alkenes: Hydrohalogenation (Markovnikov's rule, carbocation rearrangements), hydration (acid-catalyzed, hydroboration-oxidation), halogenation (anti-addition), halohydrin formation, epoxidation, ozonolysis
-- Reactions of alkynes: preparation, addition reactions, and acidity of terminal alkynes
-- Synthesis strategies: combining reactions to build complex molecules from simple precursors (retrosynthetic analysis)
-- **Questions**: Predicting the major product of hydroboration-oxidation (anti-Markovnikov), drawing the mechanism for the bromination of an alkene, designing a 3-step synthesis
+## Chapter 3: Reaction Energy and Mechanism Logic
+**Key concepts**: Thermodynamics, kinetics, reaction coordinate, transition state, intermediate, activation energy, Hammond postulate, leaving group, solvent, nucleophile, base, and mechanism competition.
+**Practice questions**: Interpret energy diagrams; compare kinetic and thermodynamic products; explain reagent roles; predict how solvent or temperature changes a reaction pathway.
+**Student output**: A mechanism decision guide that connects conditions to likely pathways.
 
-## Module 5: Spectroscopy and Structure Determination (20%)
-- Mass Spectrometry (MS): determination of molecular weight and molecular formula (isotope peaks, M+1, M+2)
-- Infrared (IR) Spectroscopy: identifying functional groups (e.g., broad OH peak, sharp carbonyl peak)
-- Nuclear Magnetic Resonance (NMR) Spectroscopy ($^1H$ and $^{13}C$)
-  - Chemical shift (shielding vs deshielding)
-  - Integration (number of protons)
-  - Spin-spin splitting (multiplicity: $n+1$ rule)
-- Solving complex structures by combining MS, IR, and NMR data
-- **Questions**: Deducing a molecular structure given IR and $^1H$ NMR spectra, predicting the splitting pattern for a specific proton
+## Chapter 4: Substitution and Elimination
+**Key concepts**: SN1, SN2, E1, E2, substrate effects, stereochemistry, carbocation stability, rearrangement, polar protic solvent, polar aprotic solvent, Zaitsev product, Hofmann product, and anti-periplanar geometry.
+**Practice questions**: Predict major products; draw full mechanisms; choose between substitution and elimination; analyze stereochemical outcomes; explain rearrangements.
+**Student output**: A reaction-competition table with substrate, reagent, solvent, mechanism, product, and justification.
 
-## Stretch Zone
-- Radical reactions (halogenation of alkanes, allylic bromination)
-- Conjugated systems and Pericyclic reactions (Diels-Alder)
+## Chapter 5: Alkenes, Alkynes, and Radical Chemistry
+**Key concepts**: Electrophilic addition, Markovnikov addition, anti-Markovnikov addition, hydroboration-oxidation, halogenation, halohydrin formation, epoxidation, ozonolysis, alkyne acidity, reduction, radical halogenation, and allylic substitution.
+**Practice questions**: Predict alkene and alkyne products; draw addition mechanisms; plan multi-step transformations; compare stereochemical outcomes.
+**Student output**: A synthesis mini-set converting simple hydrocarbons into target molecules with mechanisms.
+
+## Chapter 6: Aromaticity and Carbonyl Chemistry
+**Key concepts**: Conjugation, aromaticity, Huckel rule, electrophilic aromatic substitution, directing effects, aldehydes, ketones, carboxylic acids, acid derivatives, nucleophilic addition, acyl substitution, and enolate chemistry.
+**Practice questions**: Determine aromaticity; predict substitution patterns; compare carbonyl reactivity; draw nucleophilic addition and acyl substitution mechanisms.
+**Student output**: A functional-group map linking structure, electrophilicity, reagents, and products.
+
+## Chapter 7: Spectroscopy and Structure Determination
+**Key concepts**: Mass spectrometry, molecular ion, isotope peaks, IR spectroscopy, functional-group peaks, proton NMR, carbon NMR, chemical shift, integration, splitting, coupling, and combined evidence.
+**Practice questions**: Interpret IR, MS, and NMR data; assign peaks; solve unknown structures; predict spectra for a given molecule.
+**Student output**: A structure-determination report solving an unknown from multiple spectra.
+
+## Chapter 8: Synthesis Strategy and Laboratory Thinking
+**Key concepts**: Retrosynthesis, protecting groups, chemoselectivity, regioselectivity, stereoselectivity, purification, extraction, chromatography, recrystallization, yield, safety, and green chemistry.
+**Practice questions**: Propose synthetic routes; choose purification methods; calculate percent yield; identify safety hazards; revise a route after a failed step.
+**Student output**: A synthesis proposal with retrosynthetic analysis, forward route, mechanisms, and lab considerations.
+
+## Capstone
+Students solve a target-molecule challenge: identify key functional groups, propose a synthesis, justify mechanisms, predict spectra, and present the route with likely side reactions and purification plan.
+
+## Assessment Ideas
+Use mechanism quizzes, stereochemistry drills, synthesis sets, spectroscopy unknowns, lab-style writeups, and oral mechanism explanations. Assess reasoning and arrow logic, not just products.
+
+## Research Notes
+- OpenStax, *Organic Chemistry*: https://openstax.org/details/books/organic-chemistry
+- LibreTexts Organic Chemistry: https://chem.libretexts.org/Bookshelves/Organic_Chemistry
+- Master Organic Chemistry study resources: https://www.masterorganicchemistry.com/
+- ChemCollective virtual labs: https://chemcollective.org/

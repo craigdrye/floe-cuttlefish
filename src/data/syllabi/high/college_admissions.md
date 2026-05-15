@@ -1,47 +1,62 @@
 # College Admissions
-**ID**: `collegeAdmissions` · **Discipline**: Life Skills · **Year**: 11/12 (ages 15–18)
+**ID**: `collegeAdmissions` · **Discipline**: Life Skills · **Year**: 11/12 (ages 15-18)
 
-## Course Philosophy
-A practical guide to navigating the complex and often stressful landscape of university admissions (with a primary focus on the US system, but applicable globally). The course covers strategic planning, essay writing, financial aid, and building a cohesive applicant narrative.
+## Course Aim
+Help students navigate college admissions with less panic and more usable judgment: fit, list-building, applications, essays, recommendations, financial aid, interviews, timelines, and final choice.
 
-## Module 1: The Landscape and Strategy (20%)
-- Understanding the holistic review process (academics, extracurriculars, essays, recommendations)
-- Building a balanced college list: Reach, Target, and Safety (Likely) schools
-- Public vs Private universities; Liberal Arts Colleges vs Research Universities
-- Early Decision (ED), Early Action (EA), Restrictive Early Action (REA), and Regular Decision (RD)
-- **Questions**: Categorizing a school as reach/target/safety based on a student profile, explaining the binding nature of ED
+## Course Design Notes
+This syllabus is U.S.-centered but includes transfer, international, portfolio, athletic, and U.K./global comparison notes where useful. Current official guidance from Common App and Federal Student Aid informs the application and aid sections; students should still verify each college's own deadlines and requirements.
 
-## Module 2: The Academic Profile & Testing (20%)
-- The importance of transcript rigor (AP, IB, Dual Enrollment, Honors) vs GPA
-- Standardized Testing: SAT vs ACT (structure, pacing, and scoring)
-- Test-Optional and Test-Blind policies: When to submit scores and when to withhold them
-- English proficiency exams (TOEFL, IELTS) for international students
-- **Questions**: Analyzing a transcript for rigor, deciding whether to submit a borderline SAT score
+## Chapter 1: Admissions Landscape and Personal Goals
+- **Key concepts**: fit, selectivity, holistic review, major exploration, campus environment, outcomes, constraints.
+- **Practice questions**: What does the student actually need from college? Which constraints are financial, academic, geographic, or personal?
+- **Student output**: a personal college criteria brief with must-haves, nice-to-haves, and deal-breakers.
 
-## Module 3: Extracurriculars and "The Spike" (20%)
-- The myth of the "well-rounded" student vs the "angular" student (The Spike)
-- Quality and impact over quantity: leadership, initiative, and measurable results
-- Crafting the Activities List (Common App): using active verbs and maximizing character limits
-- Demonstrating intellectual vitality outside the classroom (independent projects, research, internships)
-- **Questions**: Editing an activity description for maximum impact, identifying a student's core narrative ("spike")
+## Chapter 2: Building a Balanced College List
+- **Key concepts**: reach, target, likely, public/private, liberal arts college, research university, community college, transfer pathway.
+- **Practice questions**: Is this school academically and financially plausible? What evidence supports the category? What option is missing?
+- **Student output**: a balanced college list with rationale and risk notes.
 
-## Module 4: The Personal Statement & Supplemental Essays (20%)
-- The purpose of the Personal Statement (Common App Essay): showing character, values, and voice
-- Overcoming common cliches (the sports injury, the mission trip, the resume rehash)
-- The writing process: Brainstorming (values exercise), drafting, and editing for "Show, Don't Tell"
-- The "Why Us" supplemental essay: deep research, specific connections (professors, labs, clubs), and demonstrating fit
-- Other common supplementals: The "Community" essay, the "Intellectual Curiosity" essay
-- **Questions**: Identifying the core value in a sample essay, critiquing a generic "Why Us" essay
+## Chapter 3: Application Systems and Timelines
+- **Key concepts**: Common App, Coalition/Scoir, institutional portals, ED, EA, REA, RD, rolling admission, direct admission, deadlines.
+- **Practice questions**: What is binding? Which deadline controls scholarships? Which materials must come from the school counselor?
+- **Student output**: an application calendar with tasks, owners, and deadlines.
 
-## Module 5: Recommendations, Interviews, & Financial Aid (20%)
-- Letters of Recommendation: who to ask, when to ask, and how to provide a "brag sheet"
-- The College Interview: preparation, common questions, and asking good questions in return
-- Financial Aid: Understanding the FAFSA and CSS Profile
-- Need-blind vs Need-aware admissions; meeting 100% of demonstrated need
-- Merit scholarships vs Need-based aid
-- **Questions**: Drafting a request for a recommendation letter, understanding the difference between need-blind and need-aware
+## Chapter 4: Academic Profile, Testing, and Course Rigor
+- **Key concepts**: transcript, GPA context, rigor, AP/IB/dual enrollment, SAT/ACT, test-optional, test-blind, English proficiency.
+- **Practice questions**: What does the transcript show over time? Should a score be submitted? What context should be explained?
+- **Student output**: an academic profile review with testing and course-plan decisions.
 
-## Stretch Zone
-- Navigating the UK UCAS system (Personal Statement differences: highly academic vs personal)
-- Athletic recruiting and the NLI (National Letter of Intent) process
-- Portfolio submission for art/design/architecture programs
+## Chapter 5: Activities, Honors, and Applicant Narrative
+- **Key concepts**: activities list, impact, leadership, initiative, intellectual vitality, family responsibilities, employment, narrative coherence.
+- **Practice questions**: What did the student actually do? What changed because of it? Which activity reveals a value or strength?
+- **Student output**: a polished activities and honors section with action verbs and evidence.
+
+## Chapter 6: Personal Statement and Supplemental Essays
+- **Key concepts**: voice, specificity, reflection, values, "why us," community, intellectual curiosity, revision, avoiding resume rehash.
+- **Practice questions**: What does the essay reveal that the rest of the application does not? Which sentence sounds generic? What concrete detail proves the claim?
+- **Student output**: one personal statement draft and two supplemental essay outlines.
+
+## Chapter 7: Recommendations, Interviews, Portfolios, and Special Paths
+- **Key concepts**: recommendation requests, brag sheet, interviews, demonstrated interest, arts portfolio, athletic recruiting, transfer, UCAS comparison.
+- **Practice questions**: Who can write with evidence? What questions should be asked in an interview? What special materials require earlier planning?
+- **Student output**: a recommendation packet and interview preparation sheet.
+
+## Chapter 8: Financial Aid, Offers, and Final Decision
+- **Key concepts**: FAFSA, CSS Profile, net price, need-based aid, merit aid, scholarships, aid appeal, loan basics, fit after admission.
+- **Practice questions**: What is the actual net cost? Which offer is renewable? What debt level is realistic?
+- **Student output**: an offer comparison table with cost, aid conditions, academic fit, and final recommendation.
+
+## Capstone
+Build a complete admissions planning packet: college criteria, balanced list, timeline, academic profile, activities section, essay plan, recommendation packet, financial-aid checklist, and decision matrix.
+
+## Assessment Ideas
+- College list graded on balance, fit evidence, and affordability awareness.
+- Essays graded on specificity, reflection, and revision quality.
+- Capstone graded on completeness, realism, and student-owned decision making.
+
+## Research Notes
+- Common App first-year application guide: https://www.commonapp.org/apply/first-year-students
+- Common App first-year toolkit: https://www.commonapp.org/apply/fy-toolkit/
+- Common App apply overview: https://www.commonapp.org/apply/
+- Federal Student Aid FAFSA information: https://studentaid.gov/h/apply-for-aid/fafsa

@@ -1,51 +1,63 @@
-# General Biology 2
+# General Biology II
 **ID**: `generalBiology2` · **Discipline**: Science · **Year**: University Freshman
 
-## Course Philosophy
-Building upon the cellular and molecular foundations of General Biology 1, this course explores the diversity of life on Earth. The focus shifts to macroscopic biology, encompassing evolution, phylogeny, plant and animal anatomy/physiology, and ecology.
+## Course Aim
+Extend General Biology I from cellular mechanisms to the diversity and systems of life. Students learn how evolution explains biological history, how organisms solve physiological problems, how ecosystems function, and how evidence guides conservation decisions.
 
-## Module 1: Evolution and the History of Life (20%)
-- Darwinian Evolution: Descent with modification and natural selection
-- Population Genetics: The Hardy-Weinberg principle, genetic drift, gene flow, and mutation
-- The Origin of Species: Biological species concept, allopatric and sympatric speciation, reproductive isolation
-- Phylogeny and the Tree of Life: Cladistics, reading phylogenetic trees, and maximum parsimony
-- The fossil record and the major epochs of life on Earth (Cambrian explosion, mass extinctions)
-- **Questions**: Calculating allele frequencies using the Hardy-Weinberg equation, interpreting a complex cladogram
+## Course Design Notes
+Route questions here when they test evolution, population genetics, phylogeny, diversity of life, plant structure and function, animal physiology, ecology, conservation biology, or comparative biological reasoning at a first-year college level. Keep the course systems-oriented: structure, function, evolution, energy, information, and interactions should keep reappearing.
 
-## Module 2: The Diversity of Life (Microbes, Fungi, and Plants) (20%)
-- Prokaryotes: Bacteria and Archaea (structure, reproduction, metabolic diversity, ecological roles)
-- Protists: The diverse origins of eukaryotes
-- Fungi: Morphology (mycelium, hyphae), life cycles, and ecological impact (mycorrhizae, decomposition)
-- Plant Evolution: Bryophytes, seedless vascular plants (ferns), Gymnosperms, and Angiosperms
-- Plant Anatomy and Physiology: Roots, stems, leaves; xylem and phloem transport; plant hormones (auxin, ethylene)
-- **Questions**: Comparing the life cycles of a moss and a fern (alternation of generations), explaining the mechanism of water transport in xylem (cohesion-tension theory)
+## Chapter 1: Evolution and Population Genetics
+- **Key concepts**: Natural selection, descent with modification, genetic drift, gene flow, mutation, Hardy-Weinberg equilibrium, fitness, adaptation, sexual selection, and evolutionary evidence.
+- **Practice questions**: Calculate allele frequencies; identify evolutionary mechanisms; explain why populations, not individuals, evolve.
+- **Student output**: A population genetics case analysis with assumptions, calculation, and biological interpretation.
 
-## Module 3: Animal Diversity and Invertebrates (20%)
-- Key transitions in animal evolution: Symmetry (radial vs bilateral), tissues (diploblastic vs triploblastic), body cavities (coelomates), and early development (protostomes vs deuterostomes)
-- Sponges (Porifera) and Cnidarians (jellyfish, corals)
-- Lophotrochozoans: Flatworms, Molluscs (gastropods, bivalves, cephalopods), and Annelids
-- Ecdysozoans: Nematodes and Arthropods (insects, crustaceans, arachnids)
-- Deuterostomes: Echinoderms (sea stars) and the transition to chordates
-- **Questions**: Identifying the evolutionary advantage of the coelom, comparing the respiratory systems of an insect and a mollusc
+## Chapter 2: Speciation, Phylogeny, and the History of Life
+- **Key concepts**: Biological species concept, reproductive isolation, allopatric and sympatric speciation, cladistics, phylogenetic trees, homology, fossil evidence, mass extinctions, and major transitions in life history.
+- **Practice questions**: Interpret cladograms; distinguish shared ancestral and derived traits; connect fossil evidence to evolutionary claims.
+- **Student output**: A phylogeny explainer that defends one evolutionary relationship using evidence.
 
-## Module 4: Vertebrate Anatomy and Physiology (20%)
-- Characteristics of Chordates and the evolution of Vertebrates
-- The conquest of land: Tetrapods and the amniotic egg
-- Form and Function: Homeostasis, thermoregulation (endothermy vs ectothermy)
-- Comparative Physiology:
-  - Digestion (monogastric vs ruminant)
-  - Circulation (open vs closed, single vs double circulation)
-  - Respiration (gills, lungs, countercurrent exchange)
-  - Excretion (kidney function, loop of Henle)
-- **Questions**: Tracing the evolution of the vertebrate heart from fish to mammals, explaining the countercurrent exchange mechanism in fish gills
+## Chapter 3: Microbial, Protist, and Fungal Diversity
+- **Key concepts**: Bacteria, Archaea, prokaryotic structure, horizontal gene transfer, metabolic diversity, protist diversity, endosymbiosis, fungi, decomposition, symbiosis, and ecological roles.
+- **Practice questions**: Compare domains and major eukaryotic groups; interpret microbial metabolism scenarios; explain symbiotic relationships.
+- **Student output**: A microbe or fungus profile connecting structure, metabolism, ecology, and human relevance.
 
-## Module 5: Ecology and Conservation Biology (20%)
-- Population Ecology: Exponential and logistic growth models, carrying capacity, r/K selection
-- Community Ecology: Interspecific interactions (competition, predation, mutualism), ecological niches, competitive exclusion, keystone species
-- Ecosystems: Energy flow (trophic levels, food webs), biogeochemical cycling (carbon, nitrogen, phosphorus)
-- Conservation Biology: Biodiversity hotspots, habitat fragmentation, climate change, and restoration ecology
-- **Questions**: Calculating population growth rates, analyzing the cascading effects of removing a keystone species from a food web
+## Chapter 4: Plant Evolution, Structure, and Function
+- **Key concepts**: Land plant evolution, alternation of generations, bryophytes, seedless vascular plants, gymnosperms, angiosperms, roots, stems, leaves, xylem, phloem, water transport, hormones, reproduction, and plant responses.
+- **Practice questions**: Compare plant life cycles; explain cohesion-tension; interpret data on growth, transpiration, or hormone response.
+- **Student output**: A plant systems diagram tracing water, sugar, signals, and reproductive structures.
 
-## Stretch Zone
-- Animal Behavior (Ethology): Innate vs learned behaviors, kin selection, Hamilton's rule ($rB > C$)
-- Advanced plant responses to light (phytochromes)
+## Chapter 5: Animal Diversity and Body Plans
+- **Key concepts**: Animal evolution, tissues, symmetry, body cavities, protostomes, deuterostomes, major invertebrate groups, chordates, vertebrate transitions, and comparative anatomy.
+- **Practice questions**: Sort animal traits on a phylogeny; compare body plans; explain adaptive value of structural transitions.
+- **Student output**: A comparative diversity chart connecting body plan, habitat, and evolutionary tradeoff.
+
+## Chapter 6: Animal Physiology and Homeostasis
+- **Key concepts**: Homeostasis, thermoregulation, nutrition, digestion, circulation, respiration, osmoregulation, excretion, nervous and endocrine control, reproduction, and immune defense at an introductory level.
+- **Practice questions**: Trace physiological processes; compare organ systems across groups; interpret homeostasis feedback diagrams.
+- **Student output**: A physiology case study showing how multiple systems maintain a stable internal condition.
+
+## Chapter 7: Ecology: Populations, Communities, and Ecosystems
+- **Key concepts**: Population growth, carrying capacity, life history, species interactions, niches, competitive exclusion, keystone species, succession, trophic structure, energy flow, and biogeochemical cycles.
+- **Practice questions**: Model population growth; analyze food webs; predict community effects of species loss or disturbance.
+- **Student output**: An ecosystem model with population, community, energy, and nutrient-cycle components.
+
+## Chapter 8: Conservation Biology and Field Evidence Studio
+- **Key concepts**: Biodiversity, ecosystem services, habitat fragmentation, invasive species, climate change, restoration ecology, protected areas, conservation genetics, field sampling, data quality, and ethics.
+- **Practice questions**: Evaluate conservation interventions; interpret biodiversity or abundance data; critique a sampling plan.
+- **Student output**: A conservation decision memo using evidence, uncertainty, stakeholders, and tradeoffs.
+
+## Capstone
+Students produce a systems biology case study that connects evolution, structure-function reasoning, physiology or ecology, and conservation or human impact.
+
+## Assessment Ideas
+- Phylogeny and data-interpretation prompts with written justification.
+- Comparative diagrams that link structure to function and evolution.
+- Quantitative ecology and population genetics problem sets.
+- Field-style observation or dataset analysis briefs.
+- A final conservation or organismal biology defense grounded in evidence.
+
+## Research Notes
+- OpenStax Biology 2e: https://openstax.org/books/biology-2e/pages/index
+- AAAS Vision and Change in Undergraduate Biology Education: https://www.aaas.org/resources/vision-change-undergraduate-biology-education-call-action
+- HHMI BioInteractive ecology and evolution resources: https://www.biointeractive.org/classroom-resources

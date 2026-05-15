@@ -1,0 +1,144 @@
+.pong-shell {
+  max-width: 1080px;
+}
+
+.pong-layout {
+  display: grid;
+  gap: 14px;
+}
+
+.pong-hero,
+.pong-footer {
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.pong-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px;
+}
+
+.pong-hero h2 {
+  margin: 0 0 6px;
+  color: var(--ocean-deep);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.pong-hero p:not(.eyebrow) {
+  margin: 0;
+  color: #3d6058;
+  line-height: 1.45;
+}
+
+.pong-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.pong-actions button {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgba(31, 122, 98, 0.18);
+  border-radius: var(--r-full);
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--ocean-deep);
+  font-weight: 800;
+  padding: 0 14px;
+}
+
+.pong-actions button:hover {
+  background: #fff;
+  transform: translateY(-1px);
+}
+
+.pong-board-wrap {
+  border-radius: var(--r-lg);
+  padding: 10px;
+  background: linear-gradient(135deg, rgba(0, 245, 212, 0.28), rgba(167, 139, 250, 0.24));
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  box-shadow: var(--shadow-md);
+  display: grid;
+  gap: 10px;
+}
+
+.pong-board {
+  width: 100%;
+  aspect-ratio: 900 / 520;
+  display: block;
+  border-radius: 14px;
+  touch-action: none;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.22);
+}
+
+.invaders-board {
+  aspect-ratio: 900 / 560;
+}
+
+/* Rules panel sits on the dark canvas-style background — bump opacity so it reads */
+.pong-board-wrap .game-rules {
+  background: rgba(8, 24, 36, 0.55);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.pong-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  color: #335850;
+}
+
+.pong-footer div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pong-footer strong {
+  color: var(--ocean-deep);
+  font-weight: 900;
+}
+
+body.deep-ocean .pong-hero,
+body.deep-ocean .pong-footer {
+  background: rgba(8, 31, 45, 0.78);
+  border-color: rgba(125, 211, 252, 0.16);
+}
+
+body.deep-ocean .pong-hero h2,
+body.deep-ocean .pong-footer strong {
+  color: #e7fbff;
+}
+
+body.deep-ocean .pong-hero p:not(.eyebrow),
+body.deep-ocean .pong-footer {
+  color: #b8e4e8;
+}
+
+@media (max-width: 720px) {
+  .pong-hero {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .pong-actions {
+    justify-content: flex-start;
+  }
+
+  .pong-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

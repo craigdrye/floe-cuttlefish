@@ -84,6 +84,16 @@ export function defaultQuestionScaffold(topic: Topic, title: string, prompt: str
       fieldNote: 'A good research answer keeps evidence and interpretation in the right order.',
       mentorHint: 'Ask what would have to be true for the claim to actually follow.',
     },
+    'Climate Science': {
+      briefing: 'This question is testing climate-system reasoning. Track energy, carbon, uncertainty, and timescale before choosing an answer.',
+      setup: [
+        `You are working on "${title}".`,
+        'Separate weather anecdotes from climate evidence, and forcing from feedback.',
+        'Prefer the answer that preserves mechanism, scale, and uncertainty rather than the one with the loudest certainty.',
+      ],
+      fieldNote: 'Climate science questions reward mechanism plus statistical context: what changed, over what scale, and compared with what counterfactual?',
+      mentorHint: 'Ask whether this is about radiation, feedback, carbon budget, variability, attribution, or risk.',
+    },
     Medical: {
       briefing: 'This question is testing clinical reasoning with safety first. Start by identifying the urgent risk, then the meaning of the evidence.',
       setup: [

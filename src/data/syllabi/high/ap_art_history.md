@@ -1,46 +1,62 @@
 # AP Art History
-**Covers**: `col-ap-art-history`
-**Discipline**: Arts/Humanities · **Year**: 12 (ages 16–18)
-**Frameworks**: US College Board AP Art History
+**Covers**: `col-ap-art-history` · **Discipline**: Arts/Humanities · **Year**: 12 (ages 16-18)
 
-## Course Philosophy
-AP Art History explores the global history of art from prehistory to the present. Students analyze works of art across diverse traditions, focusing on form, function, content, and context, and how art reflects the societies that created it.
+## Course Aim
+Prepare students for AP Art History by developing visual analysis, contextual analysis, comparison, attribution, interpretation, and evidence-based writing across the global history of art from prehistory to the present.
 
-## Module 1: Global Prehistory and Indigenous Americas (15%)
-- Prehistoric Art: Paleolithic cave paintings (Lascaux), Neolithic architecture (Stonehenge)
-- The function of early art: shamanism, fertility, and survival
-- Indigenous Americas: Chavin, Maya (Yaxchilan), Aztec (Templo Mayor), and Inca (Machu Picchu) architecture and sculpture
-- North American traditions: Mesa Verde, Serpent Mound, Kwakwaka'wakw masks
-- **Questions**: Analyzing the function of prehistoric art in the absence of written records, comparing the architectural functions of the Aztec and Inca
+## Course Design Notes
+College Board's AP Art History course emphasizes required works, global traditions, art historical thinking skills, primary and secondary sources, and the relationship between form, function, content, and context. This syllabus organizes the global content chronologically and thematically while making visual analysis a weekly habit.
 
-## Module 2: Ancient Mediterranean and Early Europe (20%)
-- Ancient Near East: Sumer, Babylon, Assyria (Ziggurats, Lamassu, Hammurabi's Code)
-- Ancient Egypt: Old Kingdom pyramids, New Kingdom temples, continuity and change in Amarna art
-- Ancient Greece: Archaic, Classical (Parthenon, Polykleitos' Doryphoros), and Hellenistic periods; the evolution of the ideal human form
-- Ancient Rome: Republic portraiture vs Imperial propaganda (Augustus of Prima Porta), architectural innovations (Colosseum, Pantheon, concrete)
-- **Questions**: Tracing the evolution of the male nude from Archaic Greece to the Hellenistic period, analyzing Roman use of architecture as imperial propaganda
+## Chapter 1: Art Historical Thinking Skills
+- **Key concepts**: form, function, content, context, patronage, materials, technique, iconography, attribution, comparison.
+- **Practice questions**: What do you see? What does the work do? How do materials and context shape meaning?
+- **Student output**: a visual-analysis notebook with sketches, vocabulary, and comparison stems.
 
-## Module 3: Early Christian, Islamic, and Asian Art (20%)
-- Early Christian and Byzantine: Catacombs, basilicas, Hagia Sophia, mosaics, and the iconoclasm debate
-- Islamic Art: The Kaaba, Dome of the Rock, Great Mosque of Córdoba, Alhambra; avoidance of figural imagery in religious contexts (calligraphy, arabesques, tessellations)
-- South, East, and Southeast Asia: Buddhist art (stupas, Bamiyan Buddhas, Borobudur), Hindu temples (Angkor Wat, Lakshmana Temple), Chinese scroll painting, Japanese woodblock prints (Ukiyo-e)
-- **Questions**: Comparing the function of the Hagia Sophia to the Great Mosque of Córdoba, analyzing the spiritual significance of landscape in Chinese scroll painting
+## Chapter 2: Global Prehistory and Ancient Mediterranean
+- **Key concepts**: ritual, architecture, power, memory, ideal bodies, empire, funerary practice, civic space.
+- **Practice questions**: How can art communicate power without written explanation? How did ancient cultures use scale, site, and material?
+- **Student output**: a comparison of two ancient works using form, function, content, and context.
 
-## Module 4: European Art (Medieval to Romanticism) (25%)
-- Romanesque and Gothic Architecture: Pilgrimage routes, tympanum sculpture, stained glass, flying buttresses (Chartres Cathedral)
-- The Renaissance (Proto, Early, High, Northern): Giotto, Donatello, Brunelleschi, Leonardo, Michelangelo, Raphael, Van Eyck, Dürer; humanism, linear perspective
-- Mannerism and Baroque: Caravaggio, Bernini, Velázquez, Rembrandt, Versailles; theatricality, tenebrism, the Counter-Reformation
-- 18th/19th Century: Rococo, Neoclassicism (David), Romanticism (Goya, Turner, Delacroix)
-- **Questions**: Analyzing how the Counter-Reformation influenced Baroque art, comparing the philosophy of Neoclassicism vs Romanticism
+## Chapter 3: Indigenous Americas, Africa, and Pacific Traditions
+- **Key concepts**: sacred landscapes, performance, community identity, materials, oral traditions, colonial interpretation risk.
+- **Practice questions**: How does context change when a work is performed or used? What should viewers avoid assuming from a museum display alone?
+- **Student output**: a context brief for one work whose meaning depends on ritual, place, or community use.
 
-## Module 5: Later Europe, Americas, and Contemporary Art (20%)
-- Realism, Impressionism, and Post-Impressionism: Courbet, Manet, Monet, Van Gogh, Cézanne; the impact of photography, capturing fleeting light
-- Early 20th Century: Cubism (Picasso), Fauvism (Matisse), Expressionism (Kandinsky), Dada (Duchamp's readymades), Surrealism
-- Mid-to-Late 20th Century: Abstract Expressionism (Pollock), Pop Art (Warhol), Earthworks (Smithson)
-- Global Contemporary (1980-Present): Themes of identity, globalization, and mixed media (Basquiat, Maya Lin, El Anatsui)
-- African and Pacific Art: Masks, reliquary figures, Moai of Easter Island
-- **Questions**: Tracing the breakdown of the traditional picture plane from Cézanne to Cubism, analyzing how contemporary artists address post-colonial identity
+## Chapter 4: Early Europe, Byzantine, Islamic, and Asian Art
+- **Key concepts**: sacred architecture, pilgrimage, iconoclasm, calligraphy, ornament, devotional image, court culture, landscape.
+- **Practice questions**: How do religious spaces guide movement? How do abstraction and figuration serve different purposes?
+- **Student output**: a comparative essay on sacred space or devotional image-making.
 
-## Stretch Zone
-- Deep dive into architectural floor plans and elevations
-- Writing the comparative visual analysis essay
+## Chapter 5: Renaissance, Baroque, and Early Modern Europe
+- **Key concepts**: humanism, perspective, patronage, Reformation, Counter-Reformation, theatricality, court power, realism.
+- **Practice questions**: How does perspective shape viewer experience? What changed between Renaissance and Baroque approaches?
+- **Student output**: a thesis-driven visual analysis of a European painting, sculpture, or building.
+
+## Chapter 6: Later Europe, Americas, and Modernism
+- **Key concepts**: Enlightenment, revolution, colonialism, academic art, photography, Realism, Impressionism, abstraction, avant-garde.
+- **Practice questions**: How did modern life change subject matter and technique? How did artists challenge academic conventions?
+- **Student output**: a timeline linking social change, technology, and artistic experimentation.
+
+## Chapter 7: Global Contemporary Art
+- **Key concepts**: identity, globalization, installation, memory, land art, conceptual practice, postcolonial critique, public art.
+- **Practice questions**: How does contemporary art use site, audience, or material as part of meaning? What historical question is the artist revisiting?
+- **Student output**: a short curatorial label for a contemporary work with evidence and interpretation.
+
+## Chapter 8: AP Exam Studio
+- **Key concepts**: unknown work analysis, attribution, comparison, image set recall, short-response precision, long essay planning.
+- **Practice questions**: What evidence supports the attribution? Which comparison is strongest? What context can be stated accurately?
+- **Student output**: a timed practice portfolio with visual analysis, comparison, attribution, and long-response tasks.
+
+## Capstone
+Curate a small digital exhibition of six works across at least four cultures or periods. Include labels that analyze form, function, content, context, and a final comparison essay explaining the exhibition's central idea.
+
+## Assessment Ideas
+- Weekly visual-analysis drills graded on observation and art vocabulary.
+- Comparison writing graded on specific evidence and meaningful contrast.
+- Capstone graded on curatorial argument, global range, and accurate context.
+
+## Research Notes
+- College Board AP Art History course page: https://apcentral.collegeboard.org/courses/ap-art-history
+- AP Art History course audit requirements: https://apcentral.collegeboard.org/courses/ap-art-history/course-audit
+- The Metropolitan Museum of Art Heilbrunn Timeline of Art History: https://www.metmuseum.org/toah/
+- Smarthistory AP Art History resources: https://smarthistory.org/ap-art-history/

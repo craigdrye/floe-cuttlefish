@@ -4,6 +4,8 @@ import { coreTrackSeeds, stageBuckets } from '../data/ageCatalog'
 import type { AgeGroup, StageDetail, IconKey } from '../data/ageCatalog'
 import { materializeTrack, buildCollectionTracks } from './trackUtils'
 import type { Track } from './trackUtils'
+import { trackMatchesAnyTopic } from './coursePersonalization'
+import type { CourseTopicId } from './coursePersonalization'
 
 export const iconForKey: Record<IconKey, ReactNode> = {
   brain: <Brain size={24} />,
@@ -48,4 +50,33 @@ export function getFilteredTracks(age: AgeGroup, detail: StageDetail | null, dis
   return ageFiltered.filter(track =>
     discipline === 'All' ? true : track.discipline === discipline
   )
+}
+
+function isFlexibleDiscoveryTrack(track: Track) {
+  return track.id.startsWith('guess')
+}
+
+const hopperTracksForCareerFinance = new Set([
+  'quant',
+  'quantAdvanced',
+  'consultingCases',
+  'brainBurners',
+])
+
+export function getPersonalizedTracks(age: AgeGroup, detail: StageDetail | null, topicIds: CourseTopicId[]) {
+  const includeCareerHopper =
+    age === 'career' &&
+    topicIds.length > 0 &&
+    topicIds.includes('business-finance')
+
+  return allTracks.filter((track) => {
+    const ageMatchesCore = track.ageGroup === age && trackMatchesStageDetail(track, detail)
+    const ageMatchesHopper =
+      includeCareerHopper &&
+      track.ageGroup === 'career-hopper' &&
+      trackMatchesStageDetail(track, detail) &&
+      (trackMatchesAnyTopic(track, topicIds) || hopperTracksForCareerFinance.has(track.id))
+    const ageOk = ageMatchesCore || isFlexibleDiscoveryTrack(track) || ageMatchesHopper
+    return ageOk && trackMatchesAnyTopic(track, topicIds)
+  })
 }

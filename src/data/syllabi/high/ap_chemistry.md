@@ -1,56 +1,62 @@
 # AP Chemistry
-**Covers**: `col-ap-chemistry`
-**Discipline**: Science · **Year**: 12 (ages 16–18)
-**Frameworks**: US College Board AP Chemistry
+**Covers**: `col-ap-chemistry` · **Discipline**: Science · **Year**: 12 (ages 16-18)
 
-## Course Philosophy
-AP Chemistry is a college-level course focusing on atomic structure, intermolecular forces, chemical reactions, kinetics, thermodynamics, and equilibrium. It requires strong mathematical reasoning and an ability to particulate-level modeling.
+## Course Aim
+Prepare students for AP Chemistry by developing particle-level reasoning, quantitative problem solving, laboratory evidence, and explanations that connect structure, energy, kinetics, equilibrium, and thermodynamics.
 
-## Module 1: Atomic Structure, Properties, & Bonding (20%)
-- Moles, molar mass, mass spectroscopy, and elemental composition
-- Electron configuration and Photoelectron Spectroscopy (PES)
-- Periodic trends (Coulomb's Law, effective nuclear charge, shielding)
-- Ionic bonding, lattice energy, and metallic bonding
-- Covalent bonding: Lewis structures, formal charge, resonance, VSEPR theory, hybridization ($sp$, $sp^2$, $sp^3$), and bond polarity
-- **Questions**: Interpreting PES graphs, calculating formal charge to determine best Lewis structure, determining hybridization
+## Course Design Notes
+The current AP Chemistry framework emphasizes models and representations, question and method selection, data analysis, mathematical routines, and argumentation. This syllabus follows the course's major chemistry domains while repeatedly asking students to connect macroscopic observations to particulate and symbolic explanations.
 
-## Module 2: Intermolecular Forces & Properties (15%)
-- Intermolecular forces (LDFs, dipole-dipole, hydrogen bonding, ion-dipole)
-- Properties of solids (ionic, covalent network, molecular, metallic) and liquids
-- Ideal Gas Law and Kinetic Molecular Theory (Maxwell-Boltzmann distributions)
-- Deviations from ideal gas behavior
-- Solutions and mixtures (molarity, particulate representations)
-- Separation techniques (chromatography, distillation)
-- **Questions**: Ranking boiling points based on IMFs, interpreting Maxwell-Boltzmann curves, analyzing chromatography Rf values
+## Chapter 1: Chemistry Practices and Atomic Structure
+- **Key concepts**: measurement, uncertainty, particulate models, moles, atomic structure, isotopes, mass spectra, electron configuration, PES.
+- **Practice questions**: What does the data measure? Which atomic model explains the observation? How do units guide the calculation?
+- **Lab output**: a measurement and representation task linking data, particles, and symbols.
 
-## Module 3: Chemical Reactions & Kinetics (20%)
-- Types of chemical equations (net ionic equations)
-- Physical vs Chemical changes, stoichiometry, limiting reactants, percent yield
-- Acid-Base reactions and Oxidation-Reduction (Redox) reactions
-- Kinetics: reaction rates, rate laws ($Rate = k[A]^m[B]^n$), determining order from experimental data (method of initial rates)
-- Integrated rate laws (zero, first, and second order) and half-life (focus on first-order $t_{1/2} = 0.693/k$)
-- Collision theory, reaction mechanisms (identifying rate-determining steps, intermediates, catalysts), and activation energy
-- **Questions**: Writing net ionic equations, determining rate laws from data tables, analyzing reaction coordinate diagrams
+## Chapter 2: Periodicity, Bonding, and Molecular Structure
+- **Key concepts**: periodic trends, Coulomb's law, ionic bonding, covalent bonding, Lewis structures, formal charge, resonance, VSEPR, polarity.
+- **Practice questions**: Why does this trend occur? Which structure is most plausible? How does shape affect polarity?
+- **Lab output**: a molecular-structure explanation with Lewis structures, geometry, and property prediction.
 
-## Module 4: Thermodynamics (15%)
-- Endothermic vs Exothermic processes, heat transfer, specific heat capacity, and calorimetry
-- Enthalpy of reaction ($\Delta H_{rxn}$), bond enthalpies, standard enthalpies of formation
-- Hess's Law
-- Entropy ($\Delta S$) and the Second Law of Thermodynamics
-- Gibbs Free Energy ($\Delta G = \Delta H - T\Delta S$) and thermodynamic favorability (spontaneity)
-- **Questions**: Calculating $\Delta H$ using Hess's Law, predicting signs of $\Delta S$, calculating $\Delta G$ to determine spontaneity
+## Chapter 3: Intermolecular Forces and Properties
+- **Key concepts**: London dispersion, dipole-dipole, hydrogen bonding, ion-dipole, gases, liquids, solids, solutions, chromatography.
+- **Practice questions**: Which force dominates? Why does boiling point change? What separation method fits the mixture?
+- **Lab output**: an IMF-property ranking with particulate diagrams and evidence.
 
-## Module 5: Equilibrium & Acid-Base Chemistry (30%)
-- The Equilibrium Constant ($K_c$, $K_p$) and the Reaction Quotient ($Q$)
-- ICE (Initial, Change, Equilibrium) tables to calculate equilibrium concentrations
-- Le Chatelier's Principle
-- Solubility Equilibria ($K_{sp}$) and the common ion effect
-- Acid-Base Equilibria: $K_w$, pH, pOH, strong vs weak acids/bases ($K_a$, $K_b$)
-- Acid-base properties of salts
-- Buffers (Henderson-Hasselbalch equation) and Acid-Base Titrations (analyzing titration curves, finding equivalence points, half-equivalence points)
-- Electrochemistry: Galvanic (Voltaic) cells vs Electrolytic cells, standard reduction potentials, calculating cell potential ($E^\circ_{cell}$), Nernst equation, relating $E^\circ$, $\Delta G^\circ$, and $K$
-- **Questions**: Using ICE tables to find equilibrium concentrations, calculating pH of a buffer, determining cell potential and spontaneity
+## Chapter 4: Chemical Reactions and Stoichiometry
+- **Key concepts**: net ionic equations, precipitation, acid-base reactions, redox, limiting reactants, percent yield, titration basics.
+- **Practice questions**: What species actually react? Which reactant limits product? What evidence indicates a chemical change?
+- **Lab output**: a stoichiometry lab analysis with balanced equations and error discussion.
 
-## Stretch Zone
-- Complex ion equilibria
-- Non-ideal solution behavior (Raoult's Law)
+## Chapter 5: Kinetics
+- **Key concepts**: reaction rates, rate laws, initial rates, integrated rate laws, half-life, mechanisms, catalysts, activation energy.
+- **Practice questions**: What is the rate law? Which step is rate-determining? How does a catalyst change the energy profile?
+- **Lab output**: a kinetics data table, graph, rate-law determination, and mechanism claim.
+
+## Chapter 6: Thermochemistry and Thermodynamics
+- **Key concepts**: heat, calorimetry, enthalpy, Hess's law, entropy, Gibbs free energy, thermodynamic favorability.
+- **Practice questions**: Is the process endothermic? What drives favorability? How do enthalpy and entropy compete?
+- **Lab output**: a calorimetry or thermodynamics analysis with energy diagram and calculation.
+
+## Chapter 7: Equilibrium, Acids and Bases, and Electrochemistry
+- **Key concepts**: equilibrium constants, Q versus K, Le Chatelier, Ksp, pH, Ka, Kb, buffers, titration curves, galvanic and electrolytic cells.
+- **Practice questions**: Which direction will the system shift? What pH model applies? Is the redox reaction spontaneous?
+- **Lab output**: an equilibrium or titration analysis with ICE table, graph, and interpretation.
+
+## Chapter 8: AP Chemistry Exam Studio
+- **Key concepts**: particulate diagrams, data tables, lab design, calculations, explanations, error analysis, free-response strategy.
+- **Practice questions**: What representation earns credit? Which assumption is hidden? How should the calculation be justified?
+- **Lab output**: a timed FRQ set with scoring-guideline corrections.
+
+## Capstone
+Build an AP Chemistry evidence portfolio: one particulate modeling task, one stoichiometry or kinetics lab, one thermodynamics analysis, one equilibrium or acid-base task, and one timed AP-style correction log.
+
+## Assessment Ideas
+- Problem sets graded on setup, units, and chemical reasoning.
+- Labs graded on data quality, model connection, and uncertainty.
+- Capstone graded on particulate-symbolic-macroscopic integration.
+
+## Research Notes
+- College Board AP Chemistry course page: https://apcentral.collegeboard.org/courses/ap-chemistry
+- AP Chemistry CED effective Fall 2024: https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description-effective-fall-2024.pdf
+- AP Chemistry clarifications and corrections: https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description-clarifications.pdf
+- AP Chemistry past exam questions: https://apcentral.collegeboard.org/courses/ap-chemistry/exam/past-exam-questions

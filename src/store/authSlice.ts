@@ -7,25 +7,76 @@ export const createAuthSlice: StateCreator<AppState, [], [], AuthSlice> = (set) 
 
   login: (username) =>
     set((state) => {
-      const user = state.savedUsers.find((u) => u.username === username)
-      if (user) return { user }
+      const identifier = username.trim().toLowerCase()
+      const user = state.savedUsers.find((u) =>
+        u.username.toLowerCase() === identifier || u.email?.toLowerCase() === identifier
+      )
+      if (user) {
+        return {
+          user,
+          onboardingAge: user.onboardingAge ?? state.onboardingAge,
+          onboardingUsername: user.username,
+          onboardingEmail: user.email ?? state.onboardingEmail,
+          selectedInterests: user.interests ?? state.selectedInterests,
+          selectedAdultFocus: user.adultFocus ?? state.selectedAdultFocus,
+        }
+      }
       return state
     }),
 
   register: (username, email) =>
     set((state) => {
-      if (state.savedUsers.some((u) => u.username === username)) return state
-      const newUser: UserProfile = { username, email, isGuest: false, questionnaireAnswers: {} }
+      const identifier = username.trim()
+      const normalizedIdentifier = identifier.toLowerCase()
+      const normalizedEmail = email?.trim().toLowerCase()
+      const existingUser = state.savedUsers.find((u) =>
+        u.username.toLowerCase() === normalizedIdentifier ||
+        (normalizedEmail ? u.email?.toLowerCase() === normalizedEmail : false)
+      )
+      if (existingUser) {
+        const updatedUser: UserProfile = {
+          ...existingUser,
+          email: email?.trim() || existingUser.email,
+          onboardingAge: state.onboardingAge,
+          interests: state.selectedInterests,
+          adultFocus: state.selectedAdultFocus,
+          onboardingComplete: true,
+        }
+        return {
+          user: updatedUser,
+          savedUsers: state.savedUsers.map((user) => user.username === existingUser.username ? updatedUser : user),
+        }
+      }
+      const newUser: UserProfile = {
+        username: identifier,
+        email: email?.trim() || undefined,
+        isGuest: false,
+        questionnaireAnswers: {},
+        onboardingAge: state.onboardingAge,
+        interests: state.selectedInterests,
+        adultFocus: state.selectedAdultFocus,
+        onboardingComplete: true,
+      }
       return {
         user: newUser,
+        onboardingUsername: newUser.username,
+        onboardingEmail: newUser.email ?? state.onboardingEmail,
         savedUsers: [...state.savedUsers, newUser],
       }
     }),
 
   loginAsGuest: () =>
-    set({
-      user: { username: 'Guest', isGuest: true, questionnaireAnswers: {} },
-    }),
+    set((state) => ({
+      user: {
+        username: 'Guest',
+        isGuest: true,
+        questionnaireAnswers: {},
+        onboardingAge: state.onboardingAge,
+        interests: state.selectedInterests,
+        adultFocus: state.selectedAdultFocus,
+        onboardingComplete: true,
+      },
+    })),
 
   logout: () =>
     set({

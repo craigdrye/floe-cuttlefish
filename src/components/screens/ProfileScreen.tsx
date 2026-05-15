@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
-import { ArrowLeft, User, Flame, Star, Trophy, Sparkles, LogOut, Eye, EyeOff, Home } from 'lucide-react'
+import { ArrowLeft, User, Flame, Star, Trophy, Sparkles, LogOut, Eye, EyeOff, Home, Moon, Sun } from 'lucide-react'
 import { useStore } from '../../store/useStore'
 import { FloatingParticles } from '../common/FloatingParticles'
 import { StreakCalendar } from '../common/StreakCalendar'
 import { getRecommendations } from '../../lib/recommendationEngine'
 import { getFilteredTracks } from '../../lib/trackData'
 import { homePhases, petShopItems, getHomePhase, getNextHomePhase } from '../../lib/rewardSystem'
+import { topicLabelForId } from '../../lib/coursePersonalization'
 
 export function ProfileScreen() {
   const {
@@ -13,6 +14,8 @@ export function ProfileScreen() {
     progress,
     maxCombo,
     achievements,
+    onboardingAge,
+    selectedInterests,
     setShowProfile,
     setShowQuestionnaire,
     logout,
@@ -20,6 +23,8 @@ export function ProfileScreen() {
     setScreen,
     focusMode,
     toggleFocusMode,
+    darkMode,
+    toggleDarkMode,
     petItems,
     equippedPetItems,
     buyPetItem,
@@ -81,6 +86,22 @@ export function ProfileScreen() {
           <h1>{user ? user.username : 'Guest Player'}</h1>
           {user && user.email && <p className="profile-email">{user.email}</p>}
         </header>
+
+        <section className="profile-personalization">
+          <div>
+            <p className="eyebrow">Course feed</p>
+            <h2>Age {user?.onboardingAge ?? onboardingAge}</h2>
+          </div>
+          <div className="profile-topic-list">
+            {(user?.interests ?? selectedInterests).length > 0 ? (
+              (user?.interests ?? selectedInterests).map((topicId) => (
+                <span key={topicId}>{topicLabelForId(topicId)}</span>
+              ))
+            ) : (
+              <span>All topics</span>
+            )}
+          </div>
+        </section>
 
         {!user?.questionnaireAnswers || Object.keys(user.questionnaireAnswers).length === 0 ? (
           <section className="profile-onboarding">
@@ -295,6 +316,29 @@ export function ProfileScreen() {
             >
               {focusMode ? <EyeOff size={18} /> : <Eye size={18} />}
               {focusMode ? 'Enabled' : 'Disabled'}
+            </button>
+          </div>
+          <div className="setting-item" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '1rem' }}>
+            <div>
+              <strong>Deep Ocean Mode</strong>
+              <p style={{ margin: 0, fontSize: '0.85rem', color: 'var(--text-secondary)' }}>Darker palette for evening dives.</p>
+            </div>
+            <button
+              onClick={toggleDarkMode}
+              style={{
+                background: darkMode ? 'var(--primary-color)' : 'var(--input-bg)',
+                color: darkMode ? 'white' : 'var(--text-primary)',
+                border: 'none',
+                padding: '0.5rem 1rem',
+                borderRadius: '8px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                cursor: 'pointer'
+              }}
+            >
+              {darkMode ? <Moon size={18} /> : <Sun size={18} />}
+              {darkMode ? 'Enabled' : 'Disabled'}
             </button>
           </div>
         </section>

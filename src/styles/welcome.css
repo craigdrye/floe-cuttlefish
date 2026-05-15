@@ -127,7 +127,7 @@
   place-items: center;
   position: relative;
   animation: float-slow 6s ease-in-out infinite;
-  margin: 8px 0;
+  margin: -10px 0 26px;
 }
 
 .welcome-art {
@@ -195,24 +195,50 @@
   align-items: center;
   gap: 16px;
   width: 100%;
-  max-width: 400px;
+  max-width: 560px;
 }
 
-.welcome-line-wrap {
-  position: relative;
-  width: 100%;
-  max-width: 340px;
-}
-
-.welcome-line {
+.welcome-auth {
   position: relative;
   z-index: 1;
-  color: rgba(255,255,255,0.7);
-  font-size: 14px;
-  text-align: center;
-  line-height: 1.5;
-  max-width: 340px;
-  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 8px;
+  width: min(100%, 448px);
+}
+
+.welcome-auth-input {
+  min-height: 40px;
+  padding: 0 13px;
+  border: 1.5px solid rgba(255,255,255,0.34);
+  border-radius: var(--r-md);
+  background: rgba(255,255,255,0.34);
+  color: var(--ocean-deep);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  outline: none;
+  box-shadow: 0 10px 26px rgba(8,33,48,0.08);
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+  backdrop-filter: blur(10px);
+}
+
+.welcome-auth-input::placeholder {
+  color: rgba(8,33,48,0.46);
+}
+
+.welcome-auth-or {
+  color: rgba(8,33,48,0.58);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.welcome-auth-input:focus {
+  border-color: rgba(31,122,98,0.58);
+  background: rgba(255,255,255,0.46);
+  box-shadow: 0 12px 30px rgba(31,122,98,0.16);
 }
 
 .welcome-fish-school {
@@ -321,18 +347,18 @@
 .welcome-cta {
   position: relative;
   z-index: 1;
-  min-height: 54px;
-  min-width: 180px;
+  min-height: 38px;
+  min-width: 126px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 9px;
-  padding: 0 32px;
+  gap: 6px;
+  padding: 0 22px;
   border: 0;
   border-radius: var(--r-full);
   background: linear-gradient(135deg, var(--reef-teal), var(--reef-emerald));
   color: #fff;
-  font-size: 17px;
+  font-size: 12px;
   font-weight: 800;
   box-shadow: 0 12px 32px rgba(31,122,98,0.35);
   transition: all 0.25s var(--ease-out-expo);
@@ -343,4 +369,15 @@
 }
 .welcome-cta:active {
   transform: translateY(0) scale(0.98);
+}
+
+@media (max-width: 640px) {
+  .welcome-auth {
+    grid-template-columns: 1fr;
+    max-width: 272px;
+  }
+
+  .welcome-auth-or {
+    justify-self: center;
+  }
 }

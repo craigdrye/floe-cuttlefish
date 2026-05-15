@@ -1,52 +1,62 @@
 # High School Grammar
-**ID**: `col-grammar` · **Discipline**: English · **Year**: 9 (ages 13–14)
-**Frameworks**: Universal English Grammar Standards
+**ID**: `col-grammar` · **Discipline**: English · **Year**: 9 (ages 13-14)
 
-## Course Philosophy
-This course is a rigorous, mechanics-focused deep dive into English grammar. It is intended for students who need to solidify their understanding of syntax, punctuation, and usage before tackling high school essays and standardized tests (SAT/ACT). 
+## Course Aim
+Build practical command of English grammar, punctuation, usage, and sentence style so students can edit their own writing, understand standardized-test conventions, and make deliberate stylistic choices.
 
-## Module 1: Parts of Speech Deep Dive (20%)
-- Nouns: abstract, concrete, collective, compound, count/non-count
-- Pronouns: personal, possessive, reflexive, intensive, relative, interrogative, demonstrative, indefinite
-- Verbs: action, linking, helping (auxiliary), transitive vs intransitive
-- Adjectives vs Adverbs: degrees of comparison (positive, comparative, superlative), avoiding double negatives
-- Prepositions and Prepositional Phrases (adjectival vs adverbial)
-- Conjunctions: coordinating (FANBOYS), correlative, subordinating
-- **Questions**: Identifying specific parts of speech in complex sentences, choosing between adjective/adverb forms
+## Course Design Notes
+This is not grammar for grammar's sake. Each chapter connects rules to editing, sentence clarity, and rhetorical control. Students learn to name structures only when the name helps them fix or improve writing.
 
-## Module 2: Sentence Structure & Clauses (25%)
-- Subjects and Predicates (simple and complete)
-- Direct objects, indirect objects, and subject complements (predicate nominatives/adjectives)
-- Independent vs. Dependent (subordinate) clauses
-- Types of dependent clauses: noun clauses, adjective (relative) clauses, adverb clauses
-- Sentence types: Simple, Compound, Complex, Compound-Complex
-- Identifying and fixing sentence fragments and run-on sentences (comma splices, fused sentences)
-- **Questions**: Identifying clause types, classifying sentence structures, correcting fragments/run-ons
+## Chapter 1: Sentence Foundations
+- **Key concepts**: subject, predicate, phrase, clause, independent clause, dependent clause, simple sentence.
+- **Practice questions**: What is the main subject? Is this a complete sentence? Which words form a phrase rather than a clause?
+- **Student output**: a sentence map identifying subjects, verbs, phrases, and clauses.
 
-## Module 3: Verb Tense, Voice, and Mood (20%)
-- The 12 verb tenses (Simple, Continuous/Progressive, Perfect, Perfect Continuous for Past, Present, Future)
-- Active vs. Passive Voice: identifying them and knowing when to use which (and how to convert passive to active for stronger writing)
-- Verb Moods: Indicative, Imperative, Interrogative, Conditional, Subjunctive (e.g., "If I *were* a rich man...")
-- Subject-Verb Agreement: tricky cases (indefinite pronouns, intervening phrases, compound subjects, collective nouns)
-- **Questions**: Subject-verb agreement with tricky subjects, active/passive conversion, subjunctive mood usage
+## Chapter 2: Parts of Speech in Context
+- **Key concepts**: nouns, pronouns, verbs, adjectives, adverbs, prepositions, conjunctions, interjections, function shift.
+- **Practice questions**: What job does the word do in this sentence? Which modifier is misplaced? What changes when a word shifts function?
+- **Student output**: a parts-of-speech annotation and revision set.
 
-## Module 4: Punctuation Mastery (20%)
-- Commas: separating independent clauses, introductory elements, items in a series, coordinate adjectives, nonrestrictive elements (appositives)
-- Semicolons: joining closely related independent clauses, separating items in a complex list
-- Colons: introducing lists, quotations, or explanatory independent clauses
-- Apostrophes: possession (singular, plural, joint vs individual) and contractions
-- Em-dashes, en-dashes, and hyphens
-- Quotation marks: dialogue, titles, and placement of terminal punctuation (inside vs outside)
-- **Questions**: Comma placement rules, semicolon vs colon usage, apostrophe correction
+## Chapter 3: Clause Types and Sentence Variety
+- **Key concepts**: noun clauses, adjective clauses, adverb clauses, simple, compound, complex, compound-complex, coordination, subordination.
+- **Practice questions**: Which idea should be main? Which clause adds detail? How can sentence variety improve rhythm?
+- **Student output**: a paragraph revised for sentence variety and emphasis.
 
-## Module 5: Advanced Usage & Style (15%)
-- Verbals: Gerunds (noun), Participles (adjective), Infinitives (noun/adj/adv)
-- Identifying and fixing misplaced and dangling modifiers
-- Parallel structure (parallelism) in lists and paired ideas
-- Pronoun-Antecedent Agreement: ensuring number, person, and gender match
-- Fixing vague or ambiguous pronoun references
-- **Questions**: Identifying verbals, correcting dangling modifiers, fixing parallel structure errors
+## Chapter 4: Fragments, Run-Ons, and Boundaries
+- **Key concepts**: fragment, fused sentence, comma splice, coordinating conjunction, semicolon, colon, dash.
+- **Practice questions**: Where does one complete thought end? Which punctuation correctly joins the clauses? Is the colon introducing an explanation?
+- **Student output**: a boundaries correction notebook with rule labels.
 
-## Stretch Zone
-- Rhetorical grammar: using syntax for stylistic effect (e.g., polysyndeton, asyndeton, chiasmus)
-- Diagramming complex sentences (Reed-Kellogg system)
+## Chapter 5: Verbs, Agreement, Voice, and Mood
+- **Key concepts**: tense, aspect, active voice, passive voice, subject-verb agreement, indicative, imperative, interrogative, conditional, subjunctive.
+- **Practice questions**: Does the verb agree with the true subject? Is passive voice hiding the actor? Is the tense sequence logical?
+- **Student output**: a verb audit of a student paragraph.
+
+## Chapter 6: Pronouns, Modifiers, and Parallelism
+- **Key concepts**: antecedent, pronoun agreement, vague reference, misplaced modifier, dangling modifier, parallel structure.
+- **Practice questions**: What does the pronoun refer to? What is the modifier modifying? Are list items grammatically parallel?
+- **Student output**: a clarity revision set focused on pronouns, modifiers, and parallelism.
+
+## Chapter 7: Punctuation and Style
+- **Key concepts**: commas, apostrophes, quotation marks, parentheses, hyphens, dashes, appositives, restrictive and nonrestrictive elements.
+- **Practice questions**: Is the element essential? Is possession singular or plural? What punctuation best supports the rhythm?
+- **Student output**: a punctuation style sheet with examples.
+
+## Chapter 8: Grammar for Editing and Rhetoric
+- **Key concepts**: concision, emphasis, rhythm, syntax, rhetorical fragments, repetition, proofreading, style guides.
+- **Practice questions**: What can be cut? Which sentence should be longer or shorter? Which rule is being bent for effect?
+- **Student output**: a before-and-after edit of an essay paragraph with explanation.
+
+## Capstone
+Edit a multi-paragraph piece of writing through three passes: correctness, clarity, and style. Submit marked-up drafts, a rule checklist, and a reflection on the highest-impact revisions.
+
+## Assessment Ideas
+- Corrections graded on rule recognition and explanation.
+- Revision tasks graded on clarity and sentence control.
+- Capstone graded on transfer to authentic writing.
+
+## Research Notes
+- Common Core Language Standards grades 9-10: https://www.thecorestandards.org/ELA-Literacy/L/9-10/
+- Purdue OWL grammar resources: https://owl.purdue.edu/owl/general_writing/grammar/index.html
+- Purdue OWL punctuation resources: https://owl.purdue.edu/owl/general_writing/punctuation/index.html
+- University of North Carolina Writing Center handouts: https://writingcenter.unc.edu/tips-and-tools/

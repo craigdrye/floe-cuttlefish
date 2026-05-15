@@ -1,57 +1,62 @@
 # AP World History: Modern
-**Covers**: `col-ap-world-history`
-**Discipline**: Humanities · **Year**: 12 (ages 16–18)
-**Frameworks**: US College Board AP World History: Modern
+**Covers**: `col-ap-world-history` · **Discipline**: Humanities · **Year**: 12 (ages 16-18)
 
-## Course Philosophy
-AP World History: Modern focuses on global history from c. 1200 CE to the present. It emphasizes analyzing global patterns, interactions across regions, and the use of historical thinking skills (contextualization, comparison, causation, and CCOT) over rote memorization.
+## Course Aim
+Prepare students for AP World History: Modern by building global historical knowledge from c. 1200 to the present and practicing contextualization, comparison, causation, continuity and change, source analysis, DBQs, LEQs, and SAQs.
 
-## Module 1: The Global Tapestry and Networks of Exchange (c. 1200 - 1450) (20%)
-- State building in East Asia (Song Dynasty), Dar al-Islam (Abbasid decline, Seljuk/Mamluk/Delhi Sultanates), South/Southeast Asia, the Americas (Inca, Aztec), and Africa (Mali, Great Zimbabwe)
-- The Silk Roads: luxury goods, caravanserai, the spread of Buddhism
-- The Mongol Empire and the making of the modern world (Pax Mongolica)
-- Exchange in the Indian Ocean (monsoon winds, diasporic communities, astrolabe) and Trans-Saharan Trade (camel saddles, gold/salt)
-- Cultural and environmental consequences of connectivity (Ibn Battuta, Marco Polo, spread of the Bubonic Plague, Champa rice)
-- **Questions**: Comparing state-building techniques between the Song Dynasty and the Aztecs, evaluating the impact of the Mongols on Eurasian trade
+## Course Design Notes
+The AP World History: Modern framework begins around 1200 CE and emphasizes global patterns, cross-regional connections, and historical argument. This syllabus follows the nine-unit course arc while embedding writing and document analysis in every period.
 
-## Module 2: Land-Based Empires and Transoceanic Interconnections (c. 1450 - 1750) (20%)
-- Expansion and administration of Land-Based Empires: Ottoman, Safavid, Mughal, Qing, and Russian (use of gunpowder, monumental architecture, tax collection)
-- Belief systems: The Protestant Reformation, the Sunni/Shi'a split, Sikhism
-- Technological innovations enabling European exploration (caravel, lateen sail, compass)
-- The Columbian Exchange: disease, crops (potatoes, maize to Old World; sugar, horses to New World)
-- Maritime Empires Established: the Spanish, Portuguese, Dutch, French, and British
-- Labor systems: chattel slavery, indentured servitude, encomienda, hacienda, mit'a
-- Social hierarchies and resistance (Casta system, Pueblo Revolt, Maroon societies)
-- **Questions**: Analyzing methods used by land-based empires to consolidate power, comparing labor systems in the Americas
+## Chapter 1: Historical Thinking and Global Frames
+- **Key concepts**: contextualization, comparison, causation, continuity and change, sourcing, thesis, evidence, complexity.
+- **Practice questions**: What makes this a global pattern? What region-specific context matters? What evidence would support a defensible claim?
+- **Student output**: a skills notebook with SAQ, DBQ, and LEQ templates.
 
-## Module 3: Revolutions and Industrialization (c. 1750 - 1900) (20%)
-- The Enlightenment and its impact on revolutionary documents (Declaration of Rights of Man, Jamaica Letter)
-- The Atlantic Revolutions: American, French, Haitian, and Latin American
-- The Industrial Revolution: origins in Britain, spread to US/Russia/Japan (Meiji Restoration)
-- Technology of the Industrial Age (steam engine, telegraph, railroads)
-- Economic ideologies: Capitalism (Adam Smith) vs Communism/Socialism (Karl Marx)
-- Responses to Industrialization: labor unions, Ottoman Tanzimat reforms, Self-Strengthening Movement in China
-- **Questions**: Comparing the causes and outcomes of the French and Haitian Revolutions, analyzing societal shifts caused by industrialization
+## Chapter 2: The Global Tapestry, c. 1200-1450
+- **Key concepts**: Song China, Dar al-Islam, South and Southeast Asia, states in Africa, Europe, Americas, belief systems, state power.
+- **Practice questions**: How did states legitimize rule? What role did religion or bureaucracy play? How did regions differ?
+- **Student output**: a comparison chart of state-building across three regions.
 
-## Module 4: Imperialism and Global Conflict (c. 1750 - 1945) (20%)
-- Rationales for Imperialism (Social Darwinism, civilizing mission)
-- State Expansion: Scramble for Africa (Berlin Conference), British in India, spheres of influence in China
-- Indigenous Responses: Sepoy Mutiny, Ghost Dance, Xhosa Cattle-Killing Movement
-- Global Migration: push/pull factors, Chinese/Indian indentured labor, ethnic enclaves, Chinese Exclusion Act
-- World War I: Causes (MAIN), total war, new technology, Treaty of Versailles
-- The Interwar Period: Great Depression, rise of Fascism/Totalitarian regimes
-- World War II: causes, total war, the Holocaust, the atomic bomb
-- **Questions**: Evaluating the economic motives for 19th-century imperialism, analyzing the global impact of the Great Depression
+## Chapter 3: Networks of Exchange, c. 1200-1450
+- **Key concepts**: Silk Roads, Indian Ocean, Trans-Saharan trade, Mongols, technology, diasporic communities, disease, cultural diffusion.
+- **Practice questions**: What made exchange possible? What spread through networks besides goods? How did the Mongols alter connectivity?
+- **Student output**: a trade-network map with causes and consequences.
 
-## Module 5: Cold War and Decolonization to the Present (c. 1900 - Present) (20%)
-- The Cold War: ideological struggle, NATO vs Warsaw Pact, proxy wars (Korea, Vietnam, Soviet-Afghan War)
-- Decolonization: negotiated independence (India/Gandhi, Gold Coast) vs armed struggle (Algeria, Vietnam)
-- Newly independent states and the Non-Aligned Movement
-- The end of the Cold War (Gorbachev's reforms, fall of the Soviet Union)
-- Globalization: advances in technology/medicine, multinational corporations, global culture, international organizations (UN, WTO)
-- Environmental and demographic changes: Green Revolution, climate change, pandemics
-- **Questions**: Comparing methods of decolonization, analyzing the effects of the Green Revolution on global population
+## Chapter 4: Land-Based Empires and Maritime Exchange, c. 1450-1750
+- **Key concepts**: Ottoman, Safavid, Mughal, Qing, Russian empires, gunpowder, administration, exploration, Columbian Exchange, maritime empires.
+- **Practice questions**: How did empires consolidate power? What changed after transoceanic contact? How did labor systems shift?
+- **Student output**: a DBQ-style source analysis on empire, exchange, or labor.
 
-## Stretch Zone
-- Writing the Document-Based Question (DBQ): complex thesis generation and sourcing primary documents (HIPP)
-- Analyzing long-term Continuities and Changes Over Time (CCOT) across 800 years
+## Chapter 5: Revolutions and Industrialization, c. 1750-1900
+- **Key concepts**: Enlightenment, Atlantic revolutions, nationalism, industrialization, capitalism, socialism, reform, migration.
+- **Practice questions**: What caused revolution? Why did industrialization begin and spread unevenly? How did societies respond?
+- **Student output**: an LEQ outline on causation or comparison.
+
+## Chapter 6: Imperialism and Global Conflict, c. 1750-1945
+- **Key concepts**: new imperialism, colonial rule, resistance, global migration, World War I, interwar crisis, fascism, World War II.
+- **Practice questions**: What motives drove imperialism? How did colonized peoples resist? What made war global?
+- **Student output**: a thematic timeline linking empire, migration, and conflict.
+
+## Chapter 7: Cold War, Decolonization, and Globalization, c. 1900-Present
+- **Key concepts**: Cold War, proxy wars, decolonization, nationalism, nonalignment, globalization, technology, environment, demographic change.
+- **Practice questions**: How did newly independent states navigate the Cold War? What changed after 1991? What continuities shaped globalization?
+- **Student output**: an SAQ set on decolonization, Cold War, and global change.
+
+## Chapter 8: AP World Exam Studio
+- **Key concepts**: stimulus MCQ, SAQ precision, DBQ grouping and sourcing, LEQ planning, outside evidence, complexity.
+- **Practice questions**: Which documents belong together? What outside evidence is accurate? How can a thesis address change over time?
+- **Student output**: one timed DBQ, one LEQ, and a skill-by-skill correction log.
+
+## Capstone
+Create an AP World portfolio: unit maps, two SAQ sets, one LEQ, one DBQ, and a global themes reflection tracing one theme across at least four periods.
+
+## Assessment Ideas
+- Source work graded on sourcing, context, and evidence.
+- Essays graded with AP-style thesis, evidence, reasoning, and complexity criteria.
+- Capstone graded on global scope, comparison, and periodization.
+
+## Research Notes
+- College Board AP World History: Modern course page: https://apcentral.collegeboard.org/courses/ap-world-history
+- AP World History: Modern CED: https://apcentral.collegeboard.org/media/pdf/ap-world-history-modern-course-and-exam-description.pdf
+- AP World History past exam questions: https://apcentral.collegeboard.org/courses/ap-world-history/exam/past-exam-questions
+- World History Project resources: https://www.oerproject.com/World-History

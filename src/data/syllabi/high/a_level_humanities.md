@@ -1,43 +1,69 @@
 # A-Level Humanities & Computing
 **Covers**: `col-a-level-economics`, `col-a-level-history`, `col-a-level-english-literature`, `col-a-level-computer-science`
-**Discipline**: Humanities/Computing · **Year**: 12 (ages 16–18)
+**Discipline**: Humanities/Computing - **Year**: 12 (ages 16-18)
 **Frameworks**: UK A-Level (AQA/Edexcel/OCR)
 
-## Course Philosophy
-This syllabus aggregates the rigorous UK A-Level requirements for Economics, History, English Literature, and Computer Science. A-Levels require deep, extended essay writing, critical evaluation of sources, and, in the case of CS, a substantial independent programming project.
+## Course Aim
+Prepare advanced pre-university students for humanities study through rigorous reading, source evaluation, comparative argument, extended essay writing, and disciplined independent research. Students learn to move between history, literature, religious studies, philosophy, and public reasoning while building the habits expected in UK A-level work.
 
-## Module 1: A-Level Economics (25%)
-- Microeconomics: Scarcity, PPFs, supply/demand/elasticity, behavioral economics, production/costs/revenue, market structures (perfect competition, monopolistic competition, oligopoly, monopoly, monopsony), the labor market, market failure (externalities, public goods, information gaps), and government intervention
-- Macroeconomics: Macroeconomic indicators (GDP, inflation, unemployment, balance of payments), AD/AS analysis, economic performance, the financial sector (role of banks, central banks, regulation), fiscal/monetary/supply-side policies, international economics (globalization, trade, exchange rates), economic development
-- **Questions**: Evaluating the effectiveness of quantitative easing, drawing and analyzing complex oligopoly kinked-demand curves, assessing the impact of a wealth tax
+## Course Design Notes
+This syllabus is a humanities refit of the older combined A-level file: it preserves the metadata while shifting the learning spine toward essay, source, interpretation, comparison, and research skills. It draws on the style of AQA, OCR, and Pearson Edexcel A-level specifications, where students must handle unfamiliar material, evaluate interpretations, compare texts or arguments, and write precise, well-supported responses under both coursework and timed conditions.
 
-## Module 2: A-Level History (25%)
-- Depth Study (e.g., The Tudors: England 1485-1603, or The French Revolution): Focus on political, economic, and social changes, understanding the motives of key individuals, and evaluating primary sources in context
-- Breadth Study (e.g., The Quest for Political Stability: Germany 1871-1991, or The British Empire c1857-1967): Focus on identifying long-term trends, continuity, and change over a period of at least 100 years
-- Historical Investigation (Coursework): A 3000-4000 word independently researched essay analyzing a historical issue over a 100-year period, evaluating differing historical interpretations (historiography)
-- **Questions**: Evaluating the validity of a historian's interpretation of the causes of the French Revolution, analyzing the utility of a primary source for understanding Tudor religious policy
+## Chapter 1: Humanities Methods and Academic Argument
+- **Key concepts**: claim, evidence, warrant, interpretation, context, provenance, comparison, evaluation, counterargument, scholarly convention.
+- **Practice questions**: What is the precise question being asked? Which evidence actually proves the claim? How should a counterargument change the line of reasoning?
+- **Student output**: an argument toolkit with model thesis statements, paragraph plans, source annotation codes, and a personal checklist for revision.
 
-## Module 3: A-Level English Literature (25%)
-- Component 1: Drama (e.g., Shakespeare's *Othello* or *Hamlet*, plus one other play like *A Streetcar Named Desire*). Focus on dramatic form, staging, and critical interpretations over time
-- Component 2: Prose (e.g., comparing two novels linked by a theme, such as *Frankenstein* and *The Handmaid's Tale* for "Science and Society"). Focus on narrative structure, context, and comparative analysis
-- Component 3: Poetry (e.g., a modern poetry anthology and a specific poet/period like Keats or the Romantics). Focus on poetic form, unseen poetry analysis, and context
-- Component 4: Non-Exam Assessment (Coursework): An independent comparative essay of 2500-3000 words on two texts of the student's choosing
-- **Questions**: Comparing the presentation of gender roles in two texts, applying Marxist literary theory to a novel, analyzing the function of the chorus in a classical play
+## Chapter 2: Historical Sources, Context, and Interpretation
+- **Key concepts**: primary source, secondary interpretation, provenance, utility, reliability, representativeness, causation, continuity, change, significance.
+- **Practice questions**: How useful is this source for the enquiry? What does the source reveal unintentionally? How far does one historian's interpretation explain the evidence?
+- **Student output**: a source evaluation dossier comparing two primary sources and two historians on a shared historical problem.
 
-## Module 4: A-Level Computer Science (Theoretical) (15%)
-- Fundamentals of Programming, Data Structures (Queues, Stacks, Graphs, Trees, Hash Tables), and Algorithms (Dijkstra's, A*, searching/sorting)
-- Theory of Computation: Regular languages, Finite State Machines (FSMs), Turing Machines, Backus-Naur Form (BNF)
-- Data Representation: Binary, floating-point arithmetic, character encoding, image/sound representation
-- Computer Systems: Boolean algebra, logic gates, hardware, processor architecture (Von Neumann/Harvard, Fetch-Execute cycle, assembly language)
-- Computer Organization/Architecture, Consequences of Computing (legal, moral, ethical), Communication and Networking (TCP/IP stack), Databases (SQL, normalization to 3NF)
-- **Questions**: Normalizing a database to 3NF, tracing a Turing Machine state transition table, evaluating the ethical implications of AI in healthcare
+## Chapter 3: Breadth, Periodisation, and Comparative History
+- **Key concepts**: periodisation, theme, turning point, long-term cause, short-term trigger, comparison, empire, revolution, reform, state power.
+- **Practice questions**: Where should the period begin and end? Which change was most significant? How do two societies reveal similar pressures but different outcomes?
+- **Student output**: a comparative essay plan and 1,200-word timed response on a long-period historical question.
 
-## Module 5: A-Level Computer Science (Practical Project) (10%)
-- Non-Exam Assessment (NEA): A substantial programming project (often in Java, Python, or C#)
-- Process: Analysis of the problem, Design of the solution, Technical Implementation, Testing (white-box/black-box), and Evaluation
-- Focus on using advanced techniques (e.g., OOP, complex data structures, GUI development, database integration)
-- **Questions**: Designing a robust testing plan for a student-built application, justifying the choice of a specific data structure for a given problem
+## Chapter 4: Literary Form, Genre, and Close Reading
+- **Key concepts**: genre, form, structure, narrative voice, dramatic method, imagery, metre, ambiguity, critical lens, reception.
+- **Practice questions**: How does form shape meaning? What changes when the text is staged, spoken, or read silently? Which critical interpretation best accounts for the language?
+- **Student output**: an annotated close reading of a poem, scene, or prose passage followed by a polished analytical paragraph sequence.
 
-## Stretch Zone
-- Humanities: Engaging with university-level literary/historical criticism
-- Computing: Implementing machine learning algorithms or complex physics simulations for the NEA
+## Chapter 5: Comparative Literature and Context
+- **Key concepts**: intertextuality, theme, context, canon, adaptation, gender, class, colonialism, modernity, critical debate.
+- **Practice questions**: How do two texts treat the same human problem differently? When does context illuminate rather than replace textual analysis? What makes a comparison genuinely analytical?
+- **Student output**: a comparative essay section linking two literary texts through form, theme, context, and critical interpretation.
+
+## Chapter 6: Religion, Ethics, and Philosophical Reasoning
+- **Key concepts**: argument, validity, soundness, analogy, theodicy, revelation, secularism, virtue ethics, deontology, utilitarianism, applied ethics.
+- **Practice questions**: Is the argument valid, persuasive, or both? What assumptions about human nature are being made? How would two ethical theories judge the same case?
+- **Student output**: a structured philosophy or religious studies essay that compares two positions and evaluates their strengths and limits.
+
+## Chapter 7: Politics, Economics, and Public Ideas
+- **Key concepts**: ideology, liberalism, conservatism, socialism, democracy, rights, market, inequality, public policy, rhetoric.
+- **Practice questions**: How does a thinker define freedom or justice? What evidence supports a policy claim? How do economic assumptions shape political argument?
+- **Student output**: a briefing paper that compares two public arguments, tests their evidence, and identifies the values behind them.
+
+## Chapter 8: Independent Research and Exam Studio
+- **Key concepts**: research question, bibliography, historiography, critical debate, methodology, quotation, citation, synthesis, timed writing, reflection.
+- **Practice questions**: Is the research question narrow enough to answer? Which sources deserve most weight? How can a timed essay remain analytical under pressure?
+- **Student output**: an independent research proposal, annotated bibliography, timed essay set, and revision log tracking argument, evidence, and expression.
+
+## Capstone
+Produce a pre-university humanities portfolio built around one broad problem, such as revolution, freedom, belief, identity, empire, technology, justice, or memory. The portfolio should include one historical source analysis, one literary comparison, one philosophy or religious studies argument, one public-ideas briefing, and a 2,500-3,500 word research essay using properly cited primary and secondary material.
+
+## Assessment Ideas
+- Source responses graded on provenance, context, utility, limitation, corroboration, and judgement.
+- Essays graded on thesis precision, conceptual control, evidence selection, comparative structure, critical engagement, and written fluency.
+- Seminars graded on preparation, listening, questioning, and the ability to refine a claim after challenge.
+- Capstone graded on research design, source range, disciplinary comparison, citation practice, and quality of revision.
+
+## Research Notes
+- AQA A-level History specification: https://www.aqa.org.uk/subjects/history/as-and-a-level/history-7041-7042/specification
+- OCR A Level History A qualification: https://www.ocr.org.uk/qualifications/as-and-a-level/history-a-h105-h505-from-2015/
+- Pearson Edexcel A level History: https://qualifications.pearson.com/en/qualifications/edexcel-a-levels/history-2015.html
+- AQA A-level English Literature specification: https://www.aqa.org.uk/subjects/english/as-and-a-level/english-literature-b-7716-7717/specification
+- OCR A Level Religious Studies qualification: https://www.ocr.org.uk/qualifications/as-and-a-level/religious-studies-h173-h573-from-2016/
+- Pearson Edexcel A level Religious Studies: https://qualifications.pearson.com/en/qualifications/edexcel-a-levels/religious-studies-2016.html
+- Library of Congress classroom materials and primary source sets: https://www.loc.gov/classroom-materials/
+- British Library learning resources and collection guides: https://www.bl.uk/learning

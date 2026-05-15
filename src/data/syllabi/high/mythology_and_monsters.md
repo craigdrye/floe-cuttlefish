@@ -1,41 +1,61 @@
 # Mythology and Monsters
-**ID**: `mythologyAndMonsters` · **Discipline**: Humanities · **Year**: 10 (ages 14–15)
+**ID**: `mythologyAndMonsters` - **Discipline**: Humanities - **Year**: 10 (ages 14-15)
 
-## Course Philosophy
-This course explores world mythology, focusing on the cultural function of myths and the psychological/societal significance of "monsters." Students will analyze how ancient stories continue to shape modern storytelling and values.
+## Course Aim
+Explore why cultures tell sacred, heroic, strange, and frightening stories, and how those stories keep changing. Students study myths and monsters as tools for explaining the world, teaching values, marking boundaries, carrying memory, and dramatizing fears that societies may not be able to name directly.
 
-## Module 1: The Function of Myth (20%)
-- What is a myth? (Etiological, historical, psychological functions)
-- Joseph Campbell's Hero with a Thousand Faces (The Monomyth)
-- Carl Jung and archetypes (The Shadow, The Anima/Animus, The Trickster)
-- **Questions**: Identifying the stages of the Hero's Journey, recognizing Jungian archetypes in modern media
+## Course Design Notes
+Route questions here when they involve mythology, origin stories, heroes, tricksters, underworld journeys, gods, monsters, archetypes, adaptation, folklore, comparative religion as literature, or the cultural meaning of frightening figures. Keep the course comparative and respectful: myths are not treated as "wrong science" but as symbolic, social, artistic, and religious worlds.
 
-## Module 2: Classical Mythology (Greece & Rome) (20%)
-- The pantheon: Olympian gods and their domains
-- Creation myths: Chaos, the Titans, and the rise of Zeus
-- The tragic hero: hubris and hamartia (e.g., Oedipus, Icarus, Achilles)
-- Classical monsters: Minotaur, Medusa, Hydra (representing untamed nature or female power)
-- **Questions**: Analyzing the role of hubris in Greek tragedy, decoding the symbolism of the Minotaur
+## Chapter 1: What Myths Do
+**Key concepts**: Myth, legend, folktale, ritual, etiological story, sacred story, worldview, archetype, oral tradition, cultural memory, and adaptation.
+**Practice questions**: What makes a story a myth rather than only entertainment? How do myths explain origins, values, fear, or social rules? What changes when a story moves from oral tradition to film or game?
+**Student output**: A myth-function map that analyzes one story through origin, moral, social, psychological, and artistic lenses.
 
-## Module 3: Norse Mythology (20%)
-- The Nine Realms and Yggdrasil
-- The Aesir vs the Vanir; Loki as the ultimate Trickster
-- Ragnarok: the concept of an inevitable, fatalistic end
-- Norse monsters: Fenrir, Jormungandr (the Midgard Serpent)
-- **Questions**: Comparing Greek and Norse cosmologies, analyzing Loki's role in the pantheon
+## Chapter 2: Heroes, Quests, and Dangerous Journeys
+**Key concepts**: Hero, antihero, quest, threshold, descent, transformation, trial, helper, return, monomyth, epic, fate, and choice.
+**Practice questions**: Does every heroic story follow the same pattern? What does a hero owe to their community? When is courage different from pride? How do modern stories revise heroic ideals?
+**Student output**: A comparative quest chart for two stories from different traditions, including what each culture seems to admire, fear, or warn against.
 
-## Module 4: World Mythologies (Egypt & Mesoamerica) (20%)
-- Egyptian cosmology: Ma'at (balance/order), Osiris, Isis, and Set
-- The Egyptian afterlife and the weighing of the heart
-- Mesoamerican myth: Quetzalcoatl, the concept of cyclical time and sacrifice
-- **Questions**: Understanding Ma'at, comparing cyclical (Mesoamerican) vs linear (Norse) time
+## Chapter 3: Classical Myth: Greece and Rome
+**Key concepts**: Pantheon, Olympian gods, Titans, hubris, hamartia, tragedy, oracle, metamorphosis, fate, hospitality, underworld, and classical reception.
+**Practice questions**: How do Greek and Roman myths explain power, pride, love, punishment, and transformation? Why do figures such as Medusa, Icarus, Achilles, and Odysseus keep being retold?
+**Student output**: A close-reading commentary on a classical myth that tracks character choice, divine power, symbolic objects, and later adaptation.
 
-## Module 5: The Evolution of Monsters (20%)
-- Why do we invent monsters? (Externalizing societal fears)
-- The Gothic monster: Frankenstein's monster (fear of science), Dracula (fear of the "other" / contagion)
-- Modern monsters: Zombies (fear of mass consumerism/pandemic), AI (fear of obsolescence)
-- **Questions**: Analyzing the societal fear represented by specific monsters (ancient and modern)
+## Chapter 4: Norse Worlds and Endings
+**Key concepts**: Yggdrasil, the Nine Realms, Aesir, Vanir, trickster, oath, feud, fate, Ragnarok, heroic death, and cosmic cycle.
+**Practice questions**: How is a world shaped by an expected ending? What makes Loki useful and dangerous? How does Norse fatalism compare with Greek fate or modern superhero storytelling?
+**Student output**: A cosmology diagram and short explanation showing how place, power, and destiny work in Norse myth.
 
-## Stretch Zone
-- Comparative mythology: The flood myth across different cultures (Gilgamesh, Noah, Manu)
-- Feminist readings of mythological monsters (e.g., Medusa, Lilith)
+## Chapter 5: Egypt, Mesopotamia, and the Afterlife
+**Key concepts**: Ma'at, chaos, kingship, underworld, judgment, weighing of the heart, flood narrative, divine order, resurrection, and sacred kingship.
+**Practice questions**: What does a culture's afterlife reveal about its values? How do flood or creation stories organize chaos? Why do law, balance, and ritual matter in ancient mythic worlds?
+**Student output**: A museum-label set for three mythic images or objects, connecting visual detail to belief, power, and social order.
+
+## Chapter 6: Mesoamerican, South Asian, East Asian, and Indigenous Traditions
+**Key concepts**: Cyclical time, sacrifice, balance, creation, transformation, trickster, dharma, avatar, dragon, ancestor, land-based story, and cultural context.
+**Practice questions**: How do myths connect humans to land, ancestors, seasons, and moral order? What are the risks of retelling sacred stories outside their communities? How do cycles differ from linear endings?
+**Student output**: A respectful comparative study of two stories that avoids ranking cultures and instead compares questions, symbols, and narrative roles.
+
+## Chapter 7: Monsters and Social Fear
+**Key concepts**: Monster, boundary, taboo, the other, contagion, wilderness, technology, body horror, gothic, uncanny, scapegoat, and moral panic.
+**Practice questions**: Why do societies create monsters? What fear does a monster carry: nature, disease, science, outsiders, sexuality, technology, guilt, or disorder? Can a monster also be a victim?
+**Student output**: A monster dossier tracing one figure from older sources to a modern adaptation, with attention to what changed and why.
+
+## Chapter 8: Retelling, Adaptation, and Ethical Storytelling
+**Key concepts**: Adaptation, appropriation, reception, public domain, fan culture, feminist retelling, decolonial critique, media franchise, symbolism, and audience.
+**Practice questions**: Who has the right to retell a myth? When does adaptation deepen a story, and when does it flatten it? How do modern books, films, games, and comics use old mythic structures?
+**Student output**: An original retelling or critical adaptation proposal with a creator's note explaining source respect, theme, audience, and changes.
+
+## Capstone
+Students create a comparative myth and monster portfolio: one analytical essay, one visual or digital exhibit, and one original retelling or adaptation pitch. The portfolio must explain what stories do for cultures and what a monster reveals about the people who imagine it.
+
+## Assessment Ideas
+Use myth-function maps, close readings, comparative charts, museum labels, seminar discussions, adaptation critiques, and creative projects with source notes. Assess accuracy, cultural respect, symbolic interpretation, evidence from texts or images, and the ability to compare without reducing every story to one universal formula.
+
+## Research Notes
+- World History Encyclopedia, mythology collection: https://www.worldhistory.org/mythology/
+- Theoi Greek Mythology: https://www.theoi.com/
+- British Library, myths and legends resources: https://www.bl.uk/learning/cult/myth.html
+- Metropolitan Museum of Art, Heilbrunn Timeline of Art History: https://www.metmuseum.org/toah/
+- Harvard Center for Hellenic Studies, classical myth resources: https://chs.harvard.edu/

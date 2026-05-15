@@ -1,51 +1,65 @@
 # Algebra 2 Collections
 **Covers**: `col-algebra-2`, `col-get-ready-for-algebra-2`, `col-eureka-math-algebra-ii`
-**Discipline**: Maths · **Year**: 11 (ages 15–16)
+**Discipline**: Maths | **Year**: 11 (ages 15-16)
 
-## Overview
-Combined syllabus for US-aligned Algebra 2 collections. These target high school **Common Core Algebra II**. This course builds on Algebra 1, extending to complex numbers, logarithmic and exponential functions, rational functions, and advanced polynomials.
+## Course Aim
+Build a durable Algebra 2 toolkit for interpreting, transforming, and modeling with functions. Students extend Algebra 1 into polynomial, rational, exponential, logarithmic, radical, complex, statistical, and geometric settings while learning to justify methods, check constraints, and communicate results in context.
 
-## Domain A: The Complex Number System & Polynomials (25%)
-- Know there is a complex number $i$ such that $i^2 = -1$, and every complex number has the form $a + bi$
-- Use the relation $i^2 = -1$ and the commutative, associative, and distributive properties to add, subtract, and multiply complex numbers
-- Solve quadratic equations with real coefficients that have complex solutions
-- Understand the Remainder Theorem: For a polynomial $p(x)$ and a number $a$, the remainder on division by $x - a$ is $p(a)$, so $p(a) = 0$ if and only if $(x - a)$ is a factor of $p(x)$
-- Identify zeros of polynomials when suitable factorizations are available, and use the zeros to construct a rough graph of the function defined by the polynomial
-- Prove polynomial identities and use them to describe numerical relationships
-- Use the Binomial Theorem for the expansion of $(x + y)^n$ in powers of $x$ and $y$
-- **Questions**: Complex arithmetic, finding complex roots, applying the Remainder Theorem, expanding via Pascal's Triangle/Binomial Theorem
+## Course Design Notes
+Keep the course structured around function families and modeling cycles: notice structure, choose a representation, transform or solve, check reasonableness, and interpret. Route questions here when they involve advanced algebraic manipulation, function comparison, equations with constraints, sequences and series, complex solutions, conic sections, probability, statistics, or modeling with technology.
 
-## Domain B: Rational & Radical Expressions and Equations (20%)
-- Rewrite simple rational expressions in different forms; write $a(x)/b(x)$ in the form $q(x) + r(x)/b(x)$
-- Understand that rational expressions form a system analogous to the rational numbers, closed under addition, subtraction, multiplication, and division
-- Solve simple rational and radical equations in one variable, and give examples showing how extraneous solutions may arise
-- Explain how the definition of the meaning of rational exponents follows from extending the properties of integer exponents
-- Rewrite expressions involving radicals and rational exponents using the properties of exponents
-- **Questions**: Simplifying rational expressions, solving equations with $\sqrt{x}$ and checking for extraneous solutions, translating $x^{m/n}$ to $\sqrt[n]{x^m}$
+## Chapter 1: Function Structure and Transformation
+- **Key concepts**: Function notation, domain and range, rate of change, composition, inverse functions, transformations, piecewise definitions, absolute value, square root, cube root, and multiple representations.
+- **Practice questions**: Evaluate and compose functions; find inverse functions with domain restrictions; compare graphs, tables, equations, and verbal descriptions.
+- **Student output**: A function-family reference sheet showing parent graphs, transformations, domains, ranges, and one context for each family.
 
-## Domain C: Exponential & Logarithmic Functions (25%)
-- Understand the inverse relationship between exponents and logarithms and use this relationship to solve problems involving logarithms and exponents
-- Express as a logarithm the solution to $ab^{ct} = d$ where $a$, $c$, and $d$ are numbers and the base $b$ is 2, 10, or $e$; evaluate the logarithm using technology
-- Graph exponential and logarithmic functions, showing intercepts and end behavior
-- Use the properties of exponents to interpret expressions for exponential functions (e.g., compound interest, continuous compounding $A = Pe^{rt}$)
-- Interpret the parameters in a linear or exponential function in terms of a context
-- **Questions**: Solving exponential equations, converting between log and exponential form, applying compound interest formulas, applying log properties (product/quotient/power rules)
+## Chapter 2: Quadratics, Complex Numbers, and Algebraic Fluency
+- **Key concepts**: Completing the square, quadratic formula, discriminant, complex number system, operations with complex numbers, conjugates, roots, and structure in expressions.
+- **Practice questions**: Solve quadratics by multiple methods; classify roots using the discriminant; add, subtract, multiply, and simplify complex expressions.
+- **Student output**: A quadratic methods portfolio comparing factoring, graphing, completing the square, and the quadratic formula on matched examples.
 
-## Domain D: Functions and Modeling (20%)
-- Combine standard function types using arithmetic operations
-- Find inverse functions; verify by composition that one function is the inverse of another
-- Graph square root, cube root, and piecewise-defined functions, including step functions and absolute value functions
-- Compare properties of two functions each represented in a different way (algebraically, graphically, numerically in tables, or by verbal descriptions)
-- Write a function that describes a relationship between two quantities (including trigonometric functions to model periodic phenomena)
-- **Questions**: Finding $f^{-1}(x)$, graphing piecewise functions, composing $f(g(x))$, modeling amplitude and period in basic sine/cosine graphs
+## Chapter 3: Polynomial Functions and Identities
+- **Key concepts**: Polynomial operations, long and synthetic division, Remainder Theorem, Factor Theorem, zeros, multiplicity, end behavior, graph features, polynomial identities, and Binomial Theorem.
+- **Practice questions**: Divide polynomials; identify factors and zeros; sketch polynomial behavior from algebraic structure; expand binomials using patterns.
+- **Student output**: A polynomial investigation linking a factored equation, a table, a graph, and a written explanation of zeros and end behavior.
 
-## Domain E: Sequences, Series, & Statistics (10%)
-- Write arithmetic and geometric sequences both recursively and with an explicit formula, use them to model situations, and translate between the two forms
-- Derive the formula for the sum of a finite geometric series, and use the formula to solve problems (e.g., mortgage payments)
-- Use the mean and standard deviation of a data set to fit it to a normal distribution and to estimate population percentages
-- Understand the differences among randomized experiments, observational studies, and surveys
-- **Questions**: Finding the $n$th term of a sequence, calculating geometric series sums, using the empirical rule (68-95-99.7) for normal distributions
+## Chapter 4: Rational and Radical Expressions
+- **Key concepts**: Rational expressions, restrictions, equivalent forms, asymptotes, holes, rational equations, radical equations, rational exponents, extraneous solutions, and inverse variation.
+- **Practice questions**: Simplify rational expressions; solve rational and radical equations; identify excluded values; rewrite radicals using rational exponents.
+- **Student output**: An equation-checking lab in which students solve, verify, and explain why extraneous or invalid solutions appear.
 
-## Stretch Zone
-- Graphing rational functions and finding horizontal/vertical/oblique asymptotes
-- Introduction to limits and continuity
+## Chapter 5: Exponential and Logarithmic Models
+- **Key concepts**: Exponential growth and decay, logarithms as inverses, logarithm properties, common and natural logs, continuous compounding, half-life, doubling time, and parameter interpretation.
+- **Practice questions**: Convert between exponential and logarithmic forms; solve exponential equations using logs; fit and interpret growth or decay models.
+- **Student output**: A modeling brief using an exponential or logarithmic model, with parameter meanings, prediction limits, and a reasonableness check.
+
+## Chapter 6: Sequences, Series, and Recursive Reasoning
+- **Key concepts**: Arithmetic sequences, geometric sequences, recursive and explicit formulas, sigma notation, finite geometric series, growth patterns, and financial applications.
+- **Practice questions**: Translate between recursive and explicit forms; calculate finite series; model savings, payments, or repeated percent change.
+- **Student output**: A sequence-and-series task set that includes one visual pattern, one financial context, and one written comparison of arithmetic and geometric growth.
+
+## Chapter 7: Conics, Coordinate Geometry, and Modeling
+- **Key concepts**: Distance formula, midpoint, completing the square, circles, parabolas, ellipses, hyperbolas, foci, directrices, axes, asymptotes, and geometric constraints.
+- **Practice questions**: Write and graph conic equations; identify key features; derive a parabola from focus and directrix; model a geometric design constraint.
+- **Student output**: A conic design sheet connecting an equation, labeled graph, defining features, and a short explanation of the represented shape.
+
+## Chapter 8: Probability, Statistics, and Function Modeling Studio
+- **Key concepts**: Conditional probability, independence, two-way tables, normal distributions, z-scores, study design, correlation, regression, residuals, and choosing models from data.
+- **Practice questions**: Calculate conditional probabilities; interpret normal-model estimates; critique surveys and experiments; compare linear, quadratic, and exponential fits.
+- **Student output**: A data-modeling report that selects an appropriate model, explains residual evidence, and states what the model can and cannot claim.
+
+## Capstone
+Students complete a modeling project that begins with a measurable question and ends with a defensible algebraic model. The final product should include data or assumptions, at least two representations, a solved or optimized question, verification of constraints, and a clear interpretation for a non-specialist audience.
+
+## Assessment Ideas
+- Short mixed-representation quizzes that require students to move among equations, graphs, tables, and written descriptions.
+- Error-analysis prompts focused on domain restrictions, extraneous solutions, logarithm properties, and function inverses.
+- Modeling tasks scored on representation choice, algebraic accuracy, interpretation, and limits of the model.
+- Chapter portfolios in which students revise one solved problem after feedback and explain the correction.
+- A capstone rubric covering question quality, model fit, mathematical justification, technology use, and communication.
+
+## Research Notes
+- Common Core high school mathematics standards frame Algebra 2 topics through number and quantity, algebra, functions, statistics, probability, and modeling: https://www.corestandards.org/Math/
+- Illustrative Mathematics high school tasks provide public examples of reasoning-rich Algebra 2 and modeling work: https://tasks.illustrativemathematics.org/
+- NCTM's Principles to Actions emphasizes productive struggle, mathematical discourse, procedural fluency from conceptual understanding, and meaningful assessment: https://www.nctm.org/PrinciplestoActions/
+- EngageNY/Eureka Math Algebra II materials offer a public curriculum sequence with modules on polynomial, rational, exponential, logarithmic, trigonometric, and statistical reasoning: https://www.engageny.org/resource/high-school-algebra-ii

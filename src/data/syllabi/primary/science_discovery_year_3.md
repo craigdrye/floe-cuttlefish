@@ -1,57 +1,74 @@
 # Science Discovery: Year 3
-**ID**: `scienceYear3` · **Discipline**: Science · **Year**: 3 (ages 7–8)
-**Frameworks**: UK KS2 Science Year 3, US NGSS Grade 3, ACARA Science Year 3
+**ID**: `scienceYear3` | **Discipline**: Science | **Year**: 3 (ages 7-8)
+**Frameworks**: UK KS2 Science Year 3, US NGSS Grade 3-5, ACARA Science Year 3
 
-## Course Philosophy
-Year 3 science becomes genuinely investigative. Children move from describing what they see to asking **"why?"** and designing simple tests to find out. Five major topics align across international curricula — each chosen for its power to develop scientific thinking.
+## Course Aim
+Help young scientists notice patterns, ask testable questions, and explain the living and physical world with evidence. Children investigate plants, rocks, soils, fossils, light, forces, magnets, nutrition, skeletons, habitats, and fair testing through hands-on observation, simple measurement, careful drawing, and confident science talk.
 
-## Module 1: Rocks, Soils & Fossils (20%)
-- Three types of rock: ignite (formed from lava), sedimentary (layers), metamorphic (heat + pressure)
-- Compare rocks by appearance (grain size, texture, crystal content)
-- How soil is formed: rock weathering + decomposed organic matter
-- Fossils: preserved remains of living things in rock
-- How fossils form (simple 4-step process: die → buried → mineralised → discovered)
-- Mary Anning and other famous fossil hunters
-- **Questions**: Rock classification, soil formation sequencing, fossil formation, "which rock is…?"
+## Course Design Notes
+Year 3 science is practical, curious, and skill-building. Lessons should alternate between short teacher demonstrations, partner exploration, nature and classroom observations, vocabulary practice, and simple recording routines. Every chapter includes "question, prediction, test, observe, explain" habits, with increasing attention to fair comparisons, safety, measurement, labelled diagrams, and using evidence rather than guessing.
 
-## Module 2: Light & Shadows (20%)
-- Light sources vs reflectors (the Sun produces light; the Moon reflects it)
-- Light travels in straight lines
-- Shadows form when an opaque object blocks light
-- Shadow size changes with the distance between light source and object
-- Reflective surfaces and why they matter (safety vests, cat's eyes)
-- Danger: never look directly at the Sun
-- **Questions**: Light source identification, shadow prediction, reflection reasoning
+## Chapter 1: Scientists Ask Better Questions
+- **Key concepts**: observation, question, prediction, evidence, fair test, variable, measure, record, conclude.
+- **Practice activities**: compare mystery objects with hand lenses; sort questions into research, observation, and test questions; plan a fair test with one thing changed; practise using rulers, timers, tables, and labelled sketches.
+- **Teacher prompts**: What can you observe without guessing? What will you keep the same? What evidence would change your mind?
+- **Work product**: an investigation planner with one testable question, a prediction, a method, a results table, and a short conclusion sentence.
 
-## Module 3: Forces & Magnets (20%)
-- Contact forces: push, pull, friction
-- Friction: some surfaces create more friction than others; friction slows things down
-- Magnetic force: attracts some metals (iron, steel, nickel, cobalt) — not all metals
-- Magnetic poles: attract (N-S) and repel (N-N, S-S)
-- Everyday uses of magnets: fridge magnets, compasses, magnetic locks
-- Classify materials as magnetic or non-magnetic
-- **Questions**: Force identification, friction prediction, magnetic/non-magnetic sorting, pole behaviour
+## Chapter 2: Plants, Parts, and Survival Needs
+- **Key concepts**: root, stem, leaf, flower, water, light, nutrient, space, warmth, function, transport.
+- **Practice activities**: dissect safe flowers and label parts; grow seedlings under different conditions; observe root and shoot growth over time; compare leaf shapes and discuss how plants capture light.
+- **Teacher prompts**: What job does each plant part do? Which need is missing in this setup? How does your evidence show that the plant changed?
+- **Work product**: a plant needs diary with dated drawings, measurements, labels, and one evidence-based explanation.
 
-## Module 4: Plants — Functions & Life Cycle (20%)
-- Functions of plant parts: roots (anchor + absorb water), stem (transport), leaves (photosynthesis), flowers (reproduction)
-- What plants need: water, light, nutrients, space, warmth
-- Life cycle of a flowering plant: seed → germination → growth → flowering → pollination → seed dispersal
-- Seed dispersal methods: wind, water, animal, explosion
-- Pollination: the role of bees and other insects
-- **Questions**: Function matching, life cycle sequencing, "what happens if…?", dispersal method identification
+## Chapter 3: Life Cycles, Pollination, and Seed Dispersal
+- **Key concepts**: germination, growth, flowering, pollination, seed, dispersal, life cycle, pattern, adaptation.
+- **Practice activities**: sequence the life cycle of a flowering plant; model pollination with powder or paper pollen; test seed models for wind, water, animal, and bursting dispersal; compare real seeds by shape and surface.
+- **Teacher prompts**: How does the seed move away from the parent plant? Why might that help the new plant survive? Which stage comes next, and what evidence tells you?
+- **Work product**: a flowering plant life-cycle wheel with a labelled seed dispersal example and a short explanation of pollination.
 
-## Module 5: Animals Including Humans — Nutrition & Skeleton (20%)
-- Humans need a balanced diet: carbohydrates, proteins, fats, vitamins, minerals, fibre, water
-- Food groups and examples
-- The human skeleton: support, protection, movement
-- Name major bones: skull, spine, ribs, pelvis, femur, humerus
-- Muscles: work in pairs to move bones (bicep + tricep)
-- Joints: hinge (knee, elbow), ball-and-socket (shoulder, hip)
-- **Questions**: Food group classification, bone identification, muscle-pair reasoning, joint type matching
+## Chapter 4: Rocks, Soils, and Fossils
+- **Key concepts**: rock, mineral, grain, texture, hardness, soil, organic matter, fossil, sediment, weathering.
+- **Practice activities**: compare rocks by appearance and simple scratch tests; make soil layers in jars; observe soil samples for sand, clay, stones, and plant matter; model fossil formation with layered materials.
+- **Teacher prompts**: Which property helps you sort these rocks? What is soil made from? Why are fossils usually found in rock layers?
+- **Work product**: a rock and soil field card with observations, a sorting rule, a soil diagram, and a four-step fossil formation sequence.
 
-## Stretch Zone
-- Design a fair test: "Which surface has the most friction?"
-- Introduction to the scientific enquiry cycle: Question → Prediction → Method → Results → Conclusion
-- Permeability: which rocks let water through?
-- Translucent vs transparent vs opaque (beyond just opaque = shadow)
-- Comparative anatomy: human skeleton vs other animals
+## Chapter 5: Forces, Friction, and Magnets
+- **Key concepts**: push, pull, contact force, friction, surface, magnet, pole, attract, repel, magnetic material.
+- **Practice activities**: test toy cars on different surfaces; measure how far objects move after a push; sort classroom materials as magnetic or non-magnetic; explore attraction and repulsion using labelled magnet poles.
+- **Teacher prompts**: What force starts the motion? Which surface creates more friction? Are all metals magnetic? How do the poles behave?
+- **Work product**: a forces and magnets report with a friction results table, a magnetic material sort, and one explanation using "attract" or "repel."
+
+## Chapter 6: Light, Reflection, and Shadows
+- **Key concepts**: light source, reflector, transparent, translucent, opaque, shadow, reflection, straight line, distance.
+- **Practice activities**: sort light sources and reflectors; make shadows with opaque objects; test how shadow size changes when distance changes; compare reflective materials for visibility and safety.
+- **Teacher prompts**: Is this object making light or reflecting it? What happens when the object moves closer to the light source? Why should we never look directly at the Sun?
+- **Work product**: a shadow investigation page with a diagram, distance notes, measured shadow lengths, and a safety statement.
+
+## Chapter 7: Nutrition, Skeletons, and Movement
+- **Key concepts**: balanced diet, carbohydrate, protein, fat, vitamin, mineral, fibre, skeleton, joint, muscle, support, protection.
+- **Practice activities**: sort foods by nutrient role; plan balanced lunch plates; build paper or craft-stick skeleton models; identify skull, ribs, spine, pelvis, femur, and humerus; model muscle pairs bending a joint.
+- **Teacher prompts**: What does this food help the body do? Which bones protect important organs? How do muscles and bones work together to make movement?
+- **Work product**: a healthy body poster showing a balanced meal, labelled major bones, one joint, and a short movement explanation.
+
+## Chapter 8: Habitats, Adaptations, and Local Fieldwork
+- **Key concepts**: habitat, microhabitat, organism, adaptation, shelter, food, water, change, classify, data.
+- **Practice activities**: survey a schoolyard or garden habitat; use simple keys to identify common plants or invertebrates; record where organisms are found; discuss how light, moisture, temperature, and human changes affect habitats.
+- **Teacher prompts**: What does this living thing need from its habitat? What pattern do you see in your data? How might a habitat change help or harm organisms?
+- **Work product**: a local habitat map with organism counts, simple classification notes, and one claim supported by field evidence.
+
+## Capstone
+Create a "Young Scientist Field Station." Teams choose one local science question about plants, rocks, forces, light, bodies, or habitats, then run a simple investigation or observation study. The final station must include a clear question, prediction, safe method, labelled diagram, data table, conclusion, and a hands-on demonstration for visitors.
+
+## Assessment Ideas
+- Observe whether children ask testable questions, make sensible predictions, keep comparisons fair, and describe evidence in age-appropriate language.
+- Review plant work for accurate part functions, survival needs, life-cycle sequencing, pollination, and seed dispersal explanations.
+- Check rocks, soils, and fossils tasks for property-based sorting, soil component awareness, and clear fossil formation order.
+- Assess forces, magnets, and light through predictions, results tables, vocabulary use, safety habits, and explanations of patterns.
+- Use body and habitat products to evaluate correct science vocabulary, labelled diagrams, classification, and claims supported by observations.
+- Grade the capstone on curiosity, practical method, accurate records, teamwork, oral explanation, and willingness to revise ideas after evidence.
+
+## Research Notes
+- The UK National Curriculum lower Key Stage 2 science programme emphasizes working scientifically alongside plants, rocks, light, forces and magnets, animals including humans, and living things: https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study
+- NGSS Grades 3-5 emphasize asking questions, planning investigations, analyzing data, constructing explanations, and linking life, Earth, and physical science ideas to evidence: https://www.nextgenscience.org/
+- NSTA elementary science resources support inquiry-rich routines, science talk, phenomena, notebooks, and investigation skills for young learners: https://www.nsta.org/elementary-school
+- Science Buddies provides age-appropriate investigation planning guidance, fair-test examples, and practical project structures suitable for primary science: https://www.sciencebuddies.org/

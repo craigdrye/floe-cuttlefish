@@ -7,6 +7,7 @@ export type Topic =
   | 'ML'
   | 'Software'
   | 'Research'
+  | 'Climate Science'
   | 'Medical'
   | 'Series 86'
   | 'Regulatory'
@@ -88,6 +89,14 @@ export type Answer = {
   setShowLesson?: (show: boolean) => void
 }
 
+export type QuestionMedia = {
+  type: 'image'
+  src: string
+  alt: string
+  label?: string
+  caption?: string
+}
+
 export type Question = {
   id: number
   kind: QuestionKind
@@ -97,6 +106,8 @@ export type Question = {
   source?: string
   briefing: string
   setup?: string[]
+  difficulty?: 'kids' | 'adults' | 'experts'
+  media?: QuestionMedia | QuestionMedia[]
   prompt: string
   fieldNote: string
   mentorHint: string

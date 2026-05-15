@@ -36,6 +36,88 @@ export function playSuccessSound() {
   playTone(783.99, now + 0.18, 0.18, 0.075)
 }
 
+type RewardVoiceIntensity = 'success' | 'combo' | 'stage'
+
+const rewardVoiceLines: Record<RewardVoiceIntensity, string[]> = {
+  success: [
+    'yay',
+    'nice',
+    'wahoo',
+    'lets go',
+    'nailed it',
+    'big brain',
+    'clean',
+    'correct',
+  ],
+  combo: [
+    'wombo combo',
+    'on a roll',
+    'huge',
+    'unstoppable',
+    'nice streak',
+    'keep cooking',
+  ],
+  stage: [
+    'wahoo',
+    'reward unlocked',
+    'you did it',
+    'massive win',
+    'victory lap',
+  ],
+}
+
+function pickRewardVoiceLine(intensity: RewardVoiceIntensity) {
+  const lines = rewardVoiceLines[intensity]
+  return lines[Math.floor(Math.random() * lines.length)]
+}
+
+function speakRewardLine(line: string, intensity: RewardVoiceIntensity) {
+  if (typeof window === 'undefined' || !('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
+    return false
+  }
+
+  const utterance = new SpeechSynthesisUtterance(line)
+  const voices = window.speechSynthesis.getVoices()
+  const playfulVoice = voices.find((voice) => /female|girl|samantha|victoria|karen|moira|zira/i.test(voice.name))
+    || voices.find((voice) => voice.lang.startsWith('en'))
+
+  if (playfulVoice) utterance.voice = playfulVoice
+  utterance.pitch = intensity === 'stage' ? 1.45 : 1.7
+  utterance.rate = intensity === 'combo' ? 1.18 : 1.08
+  utterance.volume = intensity === 'stage' ? 0.55 : 0.42
+
+  window.speechSynthesis.cancel()
+  window.speechSynthesis.speak(utterance)
+  return true
+}
+
+export function playRewardVoiceSound(intensity: RewardVoiceIntensity = 'success') {
+  const context = getAudioContext()
+  const now = context.currentTime
+  const line = pickRewardVoiceLine(intensity)
+  const spoke = speakRewardLine(line, intensity)
+
+  if (intensity === 'stage') {
+    playTone(523.25, now, 0.12, 0.05, 'triangle')
+    playTone(659.25, now + 0.1, 0.12, 0.055, 'triangle')
+    playTone(880, now + 0.2, 0.2, 0.06, 'triangle')
+    playTone(1174.66, now + 0.34, 0.28, 0.055, 'sine')
+    return
+  }
+
+  if (intensity === 'combo') {
+    playTone(659.25, now, 0.08, 0.045, 'square')
+    playTone(880, now + 0.07, 0.1, 0.05, 'square')
+    playTone(1318.51, now + 0.16, 0.16, 0.04, 'triangle')
+    return
+  }
+
+  if (!spoke) {
+    playTone(740, now, 0.06, 0.045, 'triangle')
+    playTone(988, now + 0.07, 0.11, 0.05, 'triangle')
+  }
+}
+
 export function playComboSound(combo: number) {
   if (combo < 3) return
   const context = getAudioContext()

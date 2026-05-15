@@ -6,6 +6,7 @@ export type {
   Question,
   QuestionCatalog,
   QuestionKind,
+  QuestionMedia,
   QuestionReview,
   QuestionReviewFlag,
   QuestionReviewOverride,
@@ -106,7 +107,10 @@ const universityAcademicTrackIds = new Set([
   'philosophy',
   'logicCriticalThinking',
   'formalLogic',
+  'contemporaryEthics',
+  'discreteMath',
   'philSenior',
+  'comparativePracticalPolitics',
   'dataStructures',
   'internationalRelations',
   'marketing',
@@ -114,6 +118,8 @@ const universityAcademicTrackIds = new Set([
 
 const universityPrepTrackIds = new Set([
   'introCS',
+  'algorithms',
+  'sqlFoundations',
   'ml',
   'software',
   'softwareDesign',

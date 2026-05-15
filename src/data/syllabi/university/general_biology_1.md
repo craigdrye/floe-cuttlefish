@@ -1,69 +1,64 @@
 # General Biology I
-**ID**: `genBio1` · **Discipline**: Science · **Stage**: University Freshman (ages 18–19)
-**Aligns with**: typical first-semester gen-bio (BIOL 101 / 1A / 1500); textbook anchors include Campbell & Reece, OpenStax *Biology*, Freeman *Biological Science*; lab pairs with Gen Bio I lab. (AP Biology — placed in our sophomore bucket — is broader; Gen Bio I is the standard 14-week molecular/cellular-half-of-the-year version.)
+**ID**: `genBio1` · **Discipline**: Science · **Stage**: University Freshman (ages 18-19)
+**Aligns with**: typical first-semester general biology; molecular and cellular biology half of a two-semester sequence
 
-## Course Philosophy
-*PLACEHOLDER — to be expanded.* General Biology I focuses on the **molecular and cellular foundations** of life: chemistry of life, cells, energetics, genetics, molecular biology. Gen Bio II then covers organismal biology, evolution, and ecology. The single internal goal is to make students think mechanistically — every biological phenomenon must reduce to molecules, structures, energy, and information. Memorisation without mechanism is the failure mode.
+## Course Aim
+Give students a mechanistic foundation for biology: life emerges from molecules, cells process energy and information, genes shape traits, and laboratory evidence lets us test explanations. The course should make students draw, model, quantify, and argue from data rather than memorize isolated terms.
 
-## Module 1: Chemistry of Life (10%)
-- Atoms, bonds (covalent, ionic, hydrogen, van der Waals), water properties (polarity, cohesion, high specific heat, ice less dense, universal solvent)
-- Acids, bases, pH, buffers (biological relevance — blood pH ~7.4)
-- Carbon chemistry, functional groups
-- Macromolecules: carbohydrates, lipids, proteins (4 levels of structure), nucleic acids — monomers, polymers, dehydration synthesis vs hydrolysis
+## Course Design Notes
+Route questions here when they test chemistry of life, cell structure, membranes, metabolism, cell division, genetics, molecular biology, biotechnology, lab skills, or evidence-based explanations at a first-year college level. Keep Gen Bio I focused on molecular and cellular foundations; organismal diversity, evolution, and ecology live more naturally in General Biology II.
 
-## Module 2: Cell Structure and Function (12%)
-- Prokaryote vs eukaryote; cell theory
-- Organelles and their functions (nucleus, ribosomes, ER, Golgi, mitochondria, chloroplasts, lysosomes, peroxisomes, cytoskeleton)
-- Endosymbiotic theory (mitochondria and chloroplasts)
-- Plasma membrane: fluid mosaic model, phospholipid bilayer, membrane proteins
-- Transport: passive (simple diffusion, facilitated diffusion, osmosis), active (primary, secondary, pumps), bulk transport (endocytosis, exocytosis)
-- Tonicity (hypo/iso/hyper), water potential
+## Chapter 1: Biology as Evidence, Chemistry, and Scale
+- **Key concepts**: Scientific reasoning, experimental design, atoms, bonds, water, pH, buffers, carbon chemistry, functional groups, biological scale, and the molecule-to-cell-to-organism frame.
+- **Practice questions**: Interpret experimental controls; explain water properties; connect functional groups to biological behavior.
+- **Student output**: A claim-evidence-reasoning brief from a simple biochemical dataset.
 
-## Module 3: Energy and Metabolism (15%)
-- Thermodynamics in biology: 1st and 2nd laws; free energy, ΔG, exergonic vs endergonic
-- ATP as energy currency
-- Enzymes: active site, induced fit, activation energy, regulation (allosteric, competitive vs noncompetitive inhibition, feedback inhibition)
-- **Cellular respiration**: glycolysis, pyruvate oxidation, citric acid (Krebs) cycle, oxidative phosphorylation/electron transport chain, chemiosmosis; net ATP yields; fermentation
-- **Photosynthesis**: light reactions (photosystems II → I, ETC, ATP and NADPH production), Calvin cycle (carbon fixation, reduction, regeneration), C3 vs C4 vs CAM
-- The unity of light reactions and oxidative phosphorylation as chemiosmotic mechanisms
+## Chapter 2: Macromolecules and Structure-Function Reasoning
+- **Key concepts**: Carbohydrates, lipids, proteins, nucleic acids, monomers, polymers, dehydration synthesis, hydrolysis, protein structure, denaturation, and molecular recognition.
+- **Practice questions**: Compare macromolecule structures; predict effects of denaturation or mutation; link structure to function.
+- **Student output**: A macromolecule comparison chart with one disease, nutrition, or biotechnology connection.
 
-## Module 4: Cell Division and the Cell Cycle (10%)
-- Cell cycle phases (G1, S, G2, M); checkpoints (G1, G2, M); cyclins/CDKs; loss of regulation → cancer
-- Mitosis (PMAT) — somatic cells, identical daughters
-- Meiosis I and II — gametes, genetic diversity through crossing over (prophase I), independent assortment (metaphase I), random fertilization
-- Comparing mitosis vs meiosis
+## Chapter 3: Cells, Organelles, and Membranes
+- **Key concepts**: Prokaryotic and eukaryotic cells, organelles, endosymbiosis, cytoskeleton, extracellular matrix, fluid mosaic model, diffusion, osmosis, active transport, and bulk transport.
+- **Practice questions**: Interpret micrographs; predict transport outcomes; explain organelle cooperation in a cell process.
+- **Student output**: A cell systems model showing how membranes and organelles coordinate a function.
 
-## Module 5: Mendelian and Molecular Genetics (15%)
-- Mendel's experiments and laws (segregation, independent assortment); Punnett squares, monohybrid and dihybrid crosses
-- Probability rules (multiplication, addition); pedigrees
-- Extensions: incomplete dominance, codominance, multiple alleles, polygenic, pleiotropy, sex linkage, X-inactivation
-- Linkage and recombination frequency; gene mapping intuition
-- Chromosomal abnormalities: aneuploidy (Down/trisomy 21, Klinefelter, Turner), polyploidy
+## Chapter 4: Energy, Enzymes, and Metabolism
+- **Key concepts**: Thermodynamics, free energy, ATP, enzymes, activation energy, allosteric regulation, competitive and noncompetitive inhibition, feedback control, and metabolic pathways.
+- **Practice questions**: Read enzyme-rate graphs; compare exergonic and endergonic reactions; explain regulation from pathway diagrams.
+- **Student output**: An enzyme investigation analysis with graph, mechanism, and limitation.
 
-## Module 6: Molecular Biology — DNA, RNA, Protein (15%)
-- DNA structure (Watson, Crick, Franklin); replication (semiconservative; helicase, primase, polymerases, leading vs lagging strand, Okazaki fragments, ligase, telomerase)
-- Transcription (initiation, elongation, termination; promoters; RNA polymerase II for mRNA; introns/exons, splicing, 5' cap, 3' poly-A)
-- Translation (genetic code, codons, tRNA, rRNA, ribosome A/P/E sites); start/stop codons; the genetic code as redundant and (nearly) universal
-- Mutations: point (silent, missense, nonsense), insertion/deletion, frameshift; consequences
-- Gene regulation: prokaryotic operons (lac, trp); eukaryotic regulation (epigenetics, chromatin, transcription factors, miRNA); the central dogma and its modern caveats (reverse transcription, prions)
-- Modern biotech: PCR, gel electrophoresis, restriction enzymes, sequencing (Sanger → NGS → nanopore), CRISPR-Cas9, gene therapy
+## Chapter 5: Cellular Respiration and Photosynthesis
+- **Key concepts**: Glycolysis, pyruvate oxidation, citric acid cycle, electron transport, chemiosmosis, fermentation, light reactions, Calvin cycle, C3/C4/CAM strategies, and energy-matter transfer.
+- **Practice questions**: Trace carbon, electrons, and energy; compare respiration and photosynthesis; interpret data from light, substrate, or oxygen experiments.
+- **Student output**: A linked diagram showing respiration and photosynthesis as energy and matter systems.
 
-## Module 7: Lab and Skills Layer (cross-cutting, 10%)
-- Microscopy (light, fluorescence, electron), staining, sterile technique
-- Pipetting, dilutions, gel electrophoresis, PCR setup, basic bioinformatics (NCBI BLAST)
-- Lab notebook discipline, biosafety levels (BSL-1/2), waste handling
+## Chapter 6: Cell Cycle, Mitosis, and Meiosis
+- **Key concepts**: Cell cycle phases, checkpoints, cyclins and CDKs, cancer as regulation failure, mitosis, meiosis, crossing over, independent assortment, gametes, and genetic variation.
+- **Practice questions**: Compare mitosis and meiosis; interpret chromosome diagrams; predict consequences of nondisjunction.
+- **Student output**: A cell-division explainer that distinguishes chromosome number, DNA amount, and genetic variation.
 
-## Module 8: Skill Connectors (cross-cutting, 8%)
-- The "molecule → cell → organism" zoom; energy and information as the two organising threads
-- Distinguishing structure from function and tracing one to the other
-- Common student traps: confusing transcription with translation; confusing mitosis with meiosis I vs II; treating "dominant" as "common" or "good"; conflating gene with allele; misreading Punnett square outcomes as guaranteed instead of probabilistic
+## Chapter 7: Mendelian Genetics and Molecular Inheritance
+- **Key concepts**: Mendel's laws, probability, monohybrid and dihybrid crosses, pedigrees, incomplete dominance, codominance, sex linkage, linkage and recombination, DNA replication, transcription, translation, mutations, and gene regulation.
+- **Practice questions**: Solve inheritance problems; interpret pedigrees; translate sequence changes into protein effects; compare gene regulation scenarios.
+- **Student output**: A genetics case file combining probability, molecular mechanism, and evidence.
 
-## Stretch Zone (push beyond Gen Bio I, previewing Bio II / molecular bio)
-- Population genetics (Hardy-Weinberg) and evolutionary mechanisms; speciation; phylogenetics
-- Developmental biology, Hox genes, regulatory cascades
-- Immunology basics (innate vs adaptive, B/T cells, vaccines, mRNA vaccine mechanism since 2020)
-- Systems biology, network thinking, single-cell sequencing
-- AlphaFold and the protein-structure revolution (2021–2026); ML in drug discovery; CRISPR therapies (Casgevy 2023 sickle cell approval)
-- Cancer as evolutionary disease; the hallmarks of cancer (Hanahan & Weinberg)
-- Ethics: gene editing in embryos (He Jiankui case), genetic privacy, biobanks, biosecurity (gain-of-function debates)
-- The single most leveraged habit: drawing every process as a labelled diagram before answering — biology lives in the picture.
+## Chapter 8: Biotechnology, Lab Skills, and Biology Studio
+- **Key concepts**: Microscopy, pipetting, dilutions, sterile technique, gel electrophoresis, PCR, sequencing, CRISPR, BLAST, biosafety, lab notebooks, data quality, and responsible biotechnology.
+- **Practice questions**: Choose lab methods; interpret gel or sequence data; identify safety and reproducibility issues.
+- **Student output**: A mini research proposal or lab report with method, expected data, risks, and ethical considerations.
+
+## Capstone
+Students produce a molecular-to-cellular explanation of a biological phenomenon, using at least one diagram, one dataset or lab-style result, and one genetics or metabolism connection.
+
+## Assessment Ideas
+- Diagram-based quizzes that require labels plus mechanism.
+- Data interpretation prompts from enzyme, respiration, photosynthesis, genetics, or biotechnology contexts.
+- Lab notebook checks for method, raw data, uncertainty, and conclusion.
+- Cumulative concept maps connecting energy, information, structure, and function.
+- A final written defense of a biological mechanism with evidence.
+
+## Research Notes
+- OpenStax Biology 2e: https://openstax.org/books/biology-2e/pages/index
+- AAAS Vision and Change in Undergraduate Biology Education: https://www.aaas.org/resources/vision-change-undergraduate-biology-education-call-action
+- HHMI BioInteractive classroom resources: https://www.biointeractive.org/classroom-resources
