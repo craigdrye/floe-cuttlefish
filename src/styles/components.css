@@ -1,0 +1,359 @@
+/* ═══ SHARED COMPONENTS ═══ */
+
+/* ── Eyebrow Label ── */
+.eyebrow {
+  margin: 0 0 4px;
+  color: var(--reef-teal);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── TopBar ── */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0 16px;
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.topbar-title {
+  max-width: 180px;
+  overflow: hidden;
+  color: var(--ocean-deep);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+}
+
+.topbar-logo {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  animation: float 4s ease-in-out infinite;
+}
+
+.topbar-brand {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--ocean-deep);
+  letter-spacing: -0.01em;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+/* ── Stat Chips ── */
+.stat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--r-full);
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur);
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: var(--shadow-xs);
+  transition: all 0.2s;
+}
+.stat-chip:hover { background: rgba(255,255,255,0.75); transform: translateY(-1px); }
+.stat-chip-streak { color: #c5590a; }
+.stat-chip-xp { color: #8a6d13; }
+.stat-chip-combo { color: var(--reef-teal); }
+.theme-toggle {
+  width: 34px;
+  justify-content: center;
+  padding: 0;
+}
+
+.profile-btn {
+  width: 36px; height: 36px;
+  display: grid; place-items: center;
+  border: 1px solid var(--glass-border);
+  border-radius: 50%;
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur);
+  color: var(--ocean-deep);
+  transition: all 0.2s;
+  box-shadow: var(--shadow-xs);
+}
+.profile-btn:hover { background: #fff; transform: translateY(-1px); }
+
+/* ── Flow Frame (color-cycling cuttlefish) ── */
+.flow-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.12));
+  opacity: 0;
+  transition: opacity 0.9s ease;
+  pointer-events: none;
+}
+.flow-frame-active { opacity: 1; }
+
+/* ── Glass Card ── */
+.glass-card {
+  padding: 18px;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--r-lg);
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ── Back Buttons ── */
+.back-btn {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 100;
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 16px;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--r-full);
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur);
+  color: var(--ocean-deep);
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: var(--shadow-md);
+  transition: all 0.2s;
+}
+.back-btn:hover {
+  background: rgba(255,255,255,0.9);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ── Achievement Toast ── */
+.achievement-toast {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-radius: var(--r-lg);
+  background: linear-gradient(135deg, rgba(31, 60, 50, 0.95), rgba(20, 50, 70, 0.95));
+  border: 1px solid rgba(46, 196, 182, 0.3);
+  backdrop-filter: blur(24px);
+  color: #fff;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3), var(--shadow-glow-teal);
+  max-width: min(420px, 90vw);
+  overflow: hidden;
+  cursor: pointer;
+}
+.achievement-icon { font-size: 28px; flex-shrink: 0; }
+.achievement-copy { display: grid; gap: 2px; }
+.achievement-copy strong { font-size: 15px; font-weight: 800; }
+.achievement-copy span { font-size: 12px; opacity: 0.8; }
+.achievement-shimmer {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 60px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  animation: achievement-shimmer 2.5s ease-in-out infinite;
+}
+
+/* ── Combo Meter ── */
+.combo-meter {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--r-full);
+  font-weight: 800;
+  font-size: 14px;
+  animation: combo-pulse 1.5s ease-in-out infinite;
+}
+.combo-number { display: flex; align-items: center; gap: 4px; }
+.combo-label { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; }
+
+.combo-warm { background: rgba(251, 146, 60, 0.15); color: #ea580c; border: 1px solid rgba(251, 146, 60, 0.3); }
+.combo-hot { background: rgba(239, 68, 68, 0.15); color: #dc2626; border: 1px solid rgba(239, 68, 68, 0.3); }
+.combo-fire { background: rgba(239, 68, 68, 0.2); color: #dc2626; border: 1px solid rgba(239, 68, 68, 0.4); box-shadow: 0 0 16px rgba(239, 68, 68, 0.2); }
+.combo-legendary { background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(251, 191, 36, 0.2)); color: var(--bio-purple); border: 1px solid rgba(139, 92, 246, 0.4); box-shadow: 0 0 20px rgba(139, 92, 246, 0.25); }
+
+/* ── XP Popup ── */
+.xp-popup {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: var(--r-full);
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: 0 4px 16px rgba(251, 191, 36, 0.4);
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* ── Speaker Portrait ── */
+.speaker-portrait {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--glass-border);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ── Mood Pills ── */
+.mood-selector {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mood-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  border-radius: var(--r-full);
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  color: rgba(255,255,255,0.9);
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.25s var(--ease-out-expo);
+  cursor: pointer;
+}
+.mood-pill:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.4);
+  transform: translateY(-2px);
+}
+.mood-pill.mood-active {
+  background: rgba(255,255,255,0.28);
+  border-color: rgba(255,255,255,0.5);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transform: scale(1.05);
+}
+.mood-emoji { font-size: 20px; }
+
+@media (max-width: 520px) {
+  .topbar {
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .topbar-left {
+    gap: 6px;
+    flex: 1;
+  }
+  .topbar-title {
+    max-width: 78px;
+    font-size: 12px;
+  }
+  .topbar-right {
+    gap: 4px;
+  }
+  .topbar-right .stat-chip-streak,
+  .topbar-right .stat-chip-xp {
+    max-width: 52px;
+    padding: 0 7px;
+  }
+  .topbar-right .stat-chip strong {
+    white-space: nowrap;
+  }
+}
+
+/* ── Stage Complete Modal ── */
+.stage-complete {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  background: rgba(3, 22, 34, 0.48);
+  backdrop-filter: blur(10px);
+}
+
+.stage-complete-card {
+  width: min(420px, 100%);
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: var(--r-xl);
+  background: linear-gradient(145deg, rgba(245, 255, 251, 0.94), rgba(194, 244, 239, 0.9));
+  color: var(--ocean-deep);
+  text-align: center;
+  box-shadow: 0 22px 70px rgba(0,0,0,0.24), var(--shadow-glow-teal);
+  animation: hop-in 0.48s var(--ease-spring);
+}
+.stage-complete-card img {
+  width: 118px;
+  height: 118px;
+  object-fit: contain;
+  margin: 0 auto 8px;
+  filter: drop-shadow(0 12px 22px rgba(0,0,0,0.16));
+}
+.stage-complete-card h2 {
+  margin: 6px 0 8px;
+  font-size: 24px;
+}
+.stage-complete-card p:not(.eyebrow) {
+  margin: 0 auto 18px;
+  color: #496b62;
+  font-size: 14px;
+}
+.stage-complete-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.stage-complete-card button {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 20px;
+  border-radius: var(--r-full);
+  background: linear-gradient(135deg, var(--reef-teal), var(--reef-emerald));
+  color: #fff;
+  font-weight: 900;
+}
+.stage-complete-card .bonus-reward-button {
+  background: linear-gradient(135deg, #f59e0b, #ef5d7a);
+  box-shadow: 0 10px 24px rgba(239, 93, 122, 0.22);
+}

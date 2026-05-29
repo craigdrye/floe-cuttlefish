@@ -1,0 +1,2486 @@
+import type { Question } from './types'
+import { answerSet, buildCycledMathQuiz } from './base'
+
+export function makeColAlgebraNyNextGenQuiz(): Question[] {
+  const unitBlueprints: Array<{
+    chapter: string
+    title: string
+    setup: string[]
+    prompt: string
+    fieldNote: string
+    mentorHint: string
+    correct: string
+    wrong: [string, string, string][]
+  }> = [
+    {
+      chapter: 'Unit 1: Algebra foundations',
+      title: 'Expression sanity check',
+      setup: [
+        'Suppose you are simplifying the expression 3x - 2 + 5x + 7.',
+        'Combine like terms and constants carefully.',
+        'Choose the simplified expression.',
+      ],
+      prompt: 'Which expression is equivalent to 3x - 2 + 5x + 7?',
+      fieldNote: 'Only terms with the same variable part can be combined.',
+      mentorHint: 'Group the x-terms together and the constants together.',
+      correct: '8x + 5',
+      wrong: [
+        ['8x - 5', 'The sign on the constants was handled incorrectly.', 'Compute -2 + 7 carefully.'],
+        ['15x + 5', 'The coefficients were added incorrectly.', '3x + 5x is 8x, not 15x.'],
+        ['8x + 9', 'The constants were combined incorrectly.', 'Only add the constant terms that are actually present.'],
+      ],
+    },
+    {
+      chapter: 'Unit 2: Solving equations & inequalities',
+      title: 'Both-sides equation duel',
+      setup: [
+        'Imagine you are solving 4x + 7 = 2x + 19.',
+        'Solve for x.',
+        'Choose the correct value.',
+      ],
+      prompt: 'What value of x makes 4x + 7 = 2x + 19 true?',
+      fieldNote: 'Whatever operation you do to one side of an equation, you must do to the other.',
+      mentorHint: 'Start by moving x-terms to one side and constants to the other.',
+      correct: 'x = 6',
+      wrong: [
+        ['x = 5', 'That does not satisfy both sides of the equation.', 'Check by substitution if you are unsure.'],
+        ['x = 12', 'That comes from stopping before dividing correctly.', 'After isolating 2x = 12, divide by 2.'],
+        ['x = -6', 'The sign was flipped incorrectly during solving.', 'Track the direction of each operation carefully.'],
+      ],
+    },
+    {
+      chapter: 'Unit 3: Working with units',
+      title: 'Unit conversion trapdoor',
+      setup: [
+        'A problem says a car travels 180 miles in 3 hours.',
+        'Find the unit rate in miles per hour.',
+        'Choose the best answer.',
+      ],
+      prompt: 'What is the rate in miles per hour?',
+      fieldNote: 'A unit rate is found by dividing by 1 unit of time.',
+      mentorHint: 'Divide total miles by total hours.',
+      correct: '60 miles per hour',
+      wrong: [
+        ['183 miles per hour', 'That adds distance and time instead of dividing.', 'Rates come from division, not addition.'],
+        ['540 miles per hour', 'That multiplies instead of dividing.', 'Use miles divided by hours.'],
+        ['30 miles per hour', 'That divides incorrectly.', '180 divided by 3 is 60.'],
+      ],
+    },
+    {
+      chapter: 'Unit 4: Linear equations & graphs',
+      title: 'Slope detective',
+      setup: [
+        'A line on a graph crosses the y-axis at 4 and rises 3 units for every 1 unit to the right.',
+        'Write the equation of the line in slope-intercept form.',
+        'Choose the best equation.',
+      ],
+      prompt: 'Which equation matches the graph description?',
+      fieldNote: 'In slope-intercept form, y = mx + b, m is slope and b is the y-intercept.',
+      mentorHint: 'Use slope 3 and intercept 4.',
+      correct: 'y = 3x + 4',
+      wrong: [
+        ['y = 4x + 3', 'The slope and intercept were reversed.', 'The number multiplied by x is the slope.'],
+        ['y = 3x - 4', 'The sign of the intercept is wrong.', 'Crossing the y-axis at 4 means +4.'],
+        ['y = x + 7', 'That does not match the stated slope.', 'A rise of 3 for every 1 right means slope 3.'],
+      ],
+    },
+    {
+      chapter: 'Unit 5: Forms of linear equations',
+      title: 'Equation form showdown',
+      setup: [
+        'Suppose you know a line passes through (2, 5) and has slope -3.',
+        'Use point-slope form first.',
+        'Choose the equation that uses the given point and slope correctly.',
+      ],
+      prompt: 'Which equation is correct in point-slope form?',
+      fieldNote: 'Point-slope form is y - y1 = m(x - x1).',
+      mentorHint: 'Substitute m = -3 and the point (2, 5).',
+      correct: 'y - 5 = -3(x - 2)',
+      wrong: [
+        ['y + 5 = -3(x + 2)', 'The coordinates were substituted with the wrong signs.', 'Use y - y1 and x - x1.'],
+        ['y - 2 = -3(x - 5)', 'The x- and y-coordinates were swapped.', 'The point is (2, 5), not (5, 2).'],
+        ['y = -3x + 5', 'That uses the point incorrectly.', 'The slope is right, but the line does not pass through (2, 5).'],
+      ],
+    },
+    {
+      chapter: 'Unit 6: Systems of equations',
+      title: 'Two-line collision',
+      setup: [
+        'Consider the system y = 2x + 1 and y = -x + 7.',
+        'Find the solution to the system.',
+        'The answer should be an ordered pair.',
+      ],
+      prompt: 'What is the solution to the system?',
+      fieldNote: 'A system solution must make both equations true at the same time.',
+      mentorHint: 'Set the two expressions for y equal to each other.',
+      correct: '(2, 5)',
+      wrong: [
+        ['(1, 3)', 'That point does not satisfy both equations.', 'Substitute the point into each equation to verify.'],
+        ['(3, 7)', 'That comes from solving only part of the system.', 'The same ordered pair must satisfy both lines.'],
+        ['(2, 7)', 'The x-value may be tempting, but the y-value is wrong.', 'Once x is found, plug it back in correctly.'],
+      ],
+    },
+    {
+      chapter: 'Unit 7: Inequalities (systems & graphs)',
+      title: 'Shaded region logic',
+      setup: [
+        'You graph y > 2x - 1.',
+        'Think about the boundary line and the shading.',
+        'A strict inequality changes the line style.',
+      ],
+      prompt: 'How should the graph look?',
+      fieldNote: 'Strict inequalities use dashed lines because points on the boundary are not included.',
+      mentorHint: 'Test (0, 0). Since 0 > -1 is true, shade the side containing the origin.',
+      correct: 'A dashed line y = 2x - 1 with the region above the line shaded',
+      wrong: [
+        ['A solid line y = 2x - 1 with the region above shaded', 'The line style is wrong for a strict inequality.', 'Use dashed for > or <.'],
+        ['A dashed line y = 2x - 1 with the region below shaded', 'The shaded side does not satisfy the inequality.', 'Test a point like (0, 0).'],
+        ['A dashed vertical line at x = -1', 'The inequality is in terms of y, so the boundary is not vertical.', 'Graph the equation y = 2x - 1 first.'],
+      ],
+    },
+    {
+      chapter: 'Unit 8: Functions',
+      title: 'Function machine audit',
+      setup: [
+        'Suppose f(x) = 2x + 3 and you are asked to find f(5).',
+        'Substitute the input value into the rule.',
+        'Choose the correct output.',
+      ],
+      prompt: 'What is f(5)?',
+      fieldNote: 'Function notation tells you which input to plug into the rule.',
+      mentorHint: 'Replace x with 5 in 2x + 3.',
+      correct: '13',
+      wrong: [
+        ['10', 'That multiplies 2 by 5 but forgets the +3.', 'Substitute into the whole rule.'],
+        ['8', 'That adds instead of applying the expression correctly.', 'Compute 2(5) + 3.'],
+        ['25', 'That treats the rule like multiplication only.', 'Use the actual function expression given.'],
+      ],
+    },
+    {
+      chapter: 'Unit 9: Sequences',
+      title: 'Sequence pattern chase',
+      setup: [
+        'You see the sequence 3, 7, 11, 15, ... in one problem and 2, 6, 18, 54, ... in another.',
+        'Focus on the first sequence: 3, 7, 11, 15, ...',
+        'Find the next term.',
+      ],
+      prompt: 'What is the next term in the sequence 3, 7, 11, 15, ... ?',
+      fieldNote: 'Arithmetic sequences increase by a constant difference.',
+      mentorHint: 'Check the difference between consecutive terms.',
+      correct: '19',
+      wrong: [
+        ['16', 'That adds 1 instead of the constant difference.', 'The pattern is +4 each time.'],
+        ['18', 'That may come from averaging nearby numbers rather than following the rule.', 'Keep the same difference from term to term.'],
+        ['22', 'That jumps too far.', 'Add 4 once, not twice.'],
+      ],
+    },
+    {
+      chapter: 'Unit 10: Absolute value & piecewise functions',
+      title: 'Piecewise plot twist',
+      setup: [
+        'A function is defined by f(x) = x + 2 when x < 0 and f(x) = 3x when x >= 0.',
+        'You want to evaluate f(-2).',
+        'Choose the rule that applies to that input.',
+      ],
+      prompt: 'What is f(-2)?',
+      fieldNote: 'Piecewise functions use only one rule for a given input.',
+      mentorHint: 'Since -2 is less than 0, use the rule x + 2.',
+      correct: '0',
+      wrong: [
+        ['-6', 'That uses the wrong rule 3x.', 'Choose the branch that matches the interval.'],
+        ['4', 'That may come from using the wrong sign or wrong branch.', 'Substitute -2 into x + 2 carefully.'],
+        ['2', 'That ignores the actual arithmetic.', 'Evaluate the selected expression fully.'],
+      ],
+    },
+    {
+      chapter: 'Unit 11: Exponents & radicals',
+      title: 'Exponent rule remix',
+      setup: [
+        'Simplify the expression x^3 * x^2.',
+        'Use the exponent rule for multiplying powers with the same base.',
+        'Choose the simplified expression.',
+      ],
+      prompt: 'What is x^3 * x^2 equal to?',
+      fieldNote: 'When multiplying powers with the same base, add the exponents.',
+      mentorHint: 'Keep the base x and add 3 + 2.',
+      correct: 'x^5',
+      wrong: [
+        ['x^6', 'That multiplies the exponents instead of adding them.', 'For same bases, add exponents when multiplying.'],
+        ['2x^5', 'No extra coefficient appears here.', 'Only the exponents change.'],
+        ['x', 'That throws away too much information.', 'Keep the full exponent sum.'],
+      ],
+    },
+    {
+      chapter: 'Unit 12: Exponential growth & decay',
+      title: 'Growth-vs-decay cage match',
+      setup: [
+        'A bacteria culture starts at 50 and doubles every hour.',
+        'After one hour it is 100, after two hours it is 200.',
+        'You want the amount after three hours.',
+      ],
+      prompt: 'How many bacteria are there after three hours?',
+      fieldNote: 'Repeated multiplication creates an exponential pattern.',
+      mentorHint: 'Double the amount once more after 200.',
+      correct: '400',
+      wrong: [
+        ['250', 'That adds instead of doubling.', 'The amount is multiplied by 2 each hour.'],
+        ['300', 'That treats the pattern like constant addition.', 'This is repeated multiplication, not repeated addition.'],
+        ['800', 'That doubles one extra time.', 'Count the hours carefully.'],
+      ],
+    },
+    {
+      chapter: 'Unit 13: Quadratics: Multiplying & factoring',
+      title: 'Factoring dojo',
+      setup: [
+        'Factor the quadratic x^2 + 5x + 6.',
+        'Look for two numbers that multiply to 6 and add to 5.',
+        'Choose the correct factorization.',
+      ],
+      prompt: 'Which factorization is correct?',
+      fieldNote: 'For a trinomial x^2 + bx + c, look for numbers that multiply to c and add to b.',
+      mentorHint: 'The two numbers are 2 and 3.',
+      correct: '(x + 2)(x + 3)',
+      wrong: [
+        ['(x - 2)(x - 3)', 'The signs are wrong; that would give x^2 - 5x + 6.', 'Check the middle term after expanding.'],
+        ['(x + 1)(x + 6)', 'Those numbers multiply correctly but add to 7, not 5.', 'You need both the right product and sum.'],
+        ['(x + 2)(x - 3)', 'That gives a different middle term and constant.', 'Expand to verify the sign pattern.'],
+      ],
+    },
+    {
+      chapter: 'Unit 14: Quadratic functions & equations',
+      title: 'Parabola boss fight',
+      setup: [
+        'Solve the equation x^2 - 9 = 0.',
+        'This quadratic can be solved by isolating x^2 and taking square roots.',
+        'Choose the full set of real solutions.',
+      ],
+      prompt: 'What are the solutions to x^2 - 9 = 0?',
+      fieldNote: 'If x^2 = 9, then x can be the positive or negative square root of 9.',
+      mentorHint: 'Start from x^2 = 9 and remember both signs.',
+      correct: 'x = 3 and x = -3',
+      wrong: [
+        ['x = 3 only', 'Quadratics can have two square-root solutions here.', 'Remember the positive and negative roots.'],
+        ['x = -3 only', 'You lost one valid root.', 'Check both square roots of 9.'],
+        ['x = 9', 'That confuses x with x^2.', 'Take the square root after isolating x^2.'],
+      ],
+    },
+    {
+      chapter: 'Unit 15: Irrational numbers',
+      title: 'Irrational number mythbusting',
+      setup: [
+        'Classify the number sqrt(2).',
+        'It does not simplify to a whole number or a fraction of integers.',
+        'Choose the best classification.',
+      ],
+      prompt: 'Is sqrt(2) rational or irrational?',
+      fieldNote: 'A number is irrational if it cannot be written as a ratio of integers.',
+      mentorHint: 'sqrt(2) does not terminate or repeat as a decimal.',
+      correct: 'Irrational',
+      wrong: [
+        ['Rational', 'sqrt(2) cannot be written as a fraction of integers.', 'Do not confuse it with square roots of perfect squares.'],
+        ['Whole number', 'It is not an integer.', 'Only perfect-square radicands give whole-number roots.'],
+        ['Undefined', 'The square root of 2 is a real number.', 'It is just irrational, not undefined.'],
+      ],
+    },
+    {
+      chapter: 'Unit 16: Statistics & probability',
+      title: 'Data display street race',
+      setup: [
+        'Two classes take the same quiz.',
+        'Class A has scores tightly clustered around 78. Class B has scores spread widely from 50 to 100, with a similar center.',
+        'You want to compare the distributions.',
+      ],
+      prompt: 'Which statement is the best comparison?',
+      fieldNote: 'Comparing distributions means looking at more than one feature, especially center and spread.',
+      mentorHint: 'The centers are similar, but one class is much more spread out.',
+      correct: 'The two classes have similar centers, but Class B has much greater spread',
+      wrong: [
+        ['Class A definitely scored higher on every question', 'The information given is about overall distribution, not every question.', 'Do not overclaim beyond the data shown.'],
+        ['Class B has the smaller spread', 'The description says Class B is more spread out.', 'Spread refers to how widely the scores vary.'],
+        ['The classes must have different medians', 'A similar center suggests the medians may be similar.', 'Do not invent differences not supported by the description.'],
+      ],
+    },
+    {
+      chapter: 'Unit 17: Creativity in algebra',
+      title: 'Creative algebra lab',
+      setup: [
+        'A student solves a word problem and gets a negative number of tickets sold.',
+        'The algebra may have been done consistently, but the result should still be checked against the context.',
+        'You want to decide what a strong math response looks like.',
+      ],
+      prompt: 'What should the student do next?',
+      fieldNote: 'A correct-looking calculation can still produce an impossible answer in context.',
+      mentorHint: 'Check whether the answer makes sense in the real situation described.',
+      correct: 'Recheck the setup and interpretation, because a negative number of tickets sold does not make sense',
+      wrong: [
+        ['Keep the answer because algebra always beats context', 'Context matters in modeling problems.', 'Answers should be mathematically and contextually reasonable.'],
+        ['Flip the sign automatically and move on', 'Changing the sign without finding the mistake is not sound reasoning.', 'Find the source of the issue before correcting it.'],
+        ['Ignore the result and start a different unit', 'The point is to understand what went wrong here.', 'Use the impossible answer as a clue to debug the model.'],
+      ],
+    },
+  ]
+
+  return Array.from({ length: 50 }, (_, index) => {
+    const blueprint = unitBlueprints[index % unitBlueprints.length]
+    const cycle = Math.floor(index / unitBlueprints.length) + 1
+    const question: Question = {
+      id: 24001 + index,
+      kind: index % 10 === 9 ? 'deep' : 'quick',
+      topic: 'AP',
+      chapter: blueprint.chapter,
+      title: `${blueprint.title} #${cycle}`,
+      briefing: 'Work the algebra in front of you. Read the setup, keep track of signs and operations, and choose the answer that matches the math.',
+      setup: blueprint.setup,
+      prompt: blueprint.prompt,
+      fieldNote: blueprint.fieldNote,
+      mentorHint: blueprint.mentorHint,
+      answers: answerSet(blueprint.correct, blueprint.wrong),
+      solution: blueprint.correct,
+      xp: index % 10 === 9 ? 16 : 10,
+    }
+    return question
+  })
+}
+
+export function makeColGeometryQuiz(): Question[] {
+  const unitBlueprints: Array<{
+    chapter: string
+    title: string
+    setup: string[]
+    prompt: string
+    fieldNote: string
+    mentorHint: string
+    correct: string
+    wrong: [string, string, string][]
+  }> = [
+    {
+      chapter: 'Unit 1: Lines',
+      title: 'Segment or ray',
+      setup: [
+        'Point A is at one end, point B is at the other end, and the path stops at both points.',
+        'You are naming the figure determined by A and B.',
+        'Choose the most precise geometry word.',
+      ],
+      prompt: 'What is a straight path with two endpoints called?',
+      fieldNote: 'A line extends forever in both directions, a ray has one endpoint, and a segment has two endpoints.',
+      mentorHint: 'Count endpoints before choosing the name.',
+      correct: 'A line segment',
+      wrong: [
+        ['A line', 'A line does not stop at endpoints.', 'A line continues forever in both directions.'],
+        ['A ray', 'A ray has only one endpoint.', 'Two endpoints means segment.'],
+        ['An angle', 'An angle is made from two rays, not one straight path.', 'Choose the object with exactly two endpoints.'],
+      ],
+    },
+    {
+      chapter: 'Unit 2: Angles',
+      title: 'Supplementary angle check',
+      setup: [
+        'Two angles are supplementary.',
+        'One of the angles measures 128 degrees.',
+        'Find the measure of the other angle.',
+      ],
+      prompt: 'What is the measure of the second angle?',
+      fieldNote: 'Supplementary angles add to 180 degrees.',
+      mentorHint: 'Subtract 128 from 180.',
+      correct: '52°',
+      wrong: [
+        ['62°', 'That subtraction is off.', 'Use 180 - 128 carefully.'],
+        ['42°', 'That does not add back to 180.', 'Check the total after you subtract.'],
+        ['308°', 'Supplementary angles are a sum, not a concatenation.', 'You need the missing part of 180°.'],
+      ],
+    },
+    {
+      chapter: 'Unit 3: Shapes',
+      title: 'Polygon headcount',
+      setup: [
+        'A polygon has 5 sides and 5 angles.',
+        'You need the standard name for that shape.',
+        'Choose the correct classification.',
+      ],
+      prompt: 'What do we call a 5-sided polygon?',
+      fieldNote: 'Polygon names are tied to the number of sides.',
+      mentorHint: 'Five sides means pentagon.',
+      correct: 'Pentagon',
+      wrong: [
+        ['Hexagon', 'A hexagon has 6 sides.', 'Match the name to the side count.'],
+        ['Quadrilateral', 'A quadrilateral has 4 sides.', 'This shape has one more side than that.'],
+        ['Triangle', 'A triangle has 3 sides.', 'Count all five sides.'],
+      ],
+    },
+    {
+      chapter: 'Unit 4: Triangles',
+      title: 'Triangle angle sum',
+      setup: [
+        'A triangle has angles measuring 35° and 65°.',
+        'Find the third angle.',
+        'Use the angle sum of a triangle.',
+      ],
+      prompt: 'What is the third angle of the triangle?',
+      fieldNote: 'The interior angles of a triangle add to 180 degrees.',
+      mentorHint: 'Add the known angles first, then subtract from 180.',
+      correct: '80°',
+      wrong: [
+        ['90°', 'That would make the total too large.', 'Check 35 + 65 + 90.'],
+        ['100°', 'That ignores the actual triangle sum.', 'The three angles must total 180°.'],
+        ['70°', 'The subtraction is off.', '180 - (35 + 65) = 80.'],
+      ],
+    },
+    {
+      chapter: 'Unit 5: Quadrilaterals',
+      title: 'Rectangle property audit',
+      setup: [
+        'You are checking which statement must be true for every rectangle.',
+        'Ignore things that are only true for some special rectangles.',
+        'Pick the property that always holds.',
+      ],
+      prompt: 'Which statement is always true for a rectangle?',
+      fieldNote: 'A rectangle always has four right angles and opposite sides parallel.',
+      mentorHint: 'Look for the property that is guaranteed, not optional.',
+      correct: 'It has four right angles',
+      wrong: [
+        ['All four sides are equal', 'That is true for squares, not all rectangles.', 'Do not confuse a special case with the full category.'],
+        ['Its diagonals are perpendicular', 'That is not true for every rectangle.', 'Rectangles guarantee right angles, not perpendicular diagonals.'],
+        ['It has exactly one pair of parallel sides', 'A rectangle has two pairs of parallel sides.', 'Check the definition.'],
+      ],
+    },
+    {
+      chapter: 'Unit 6: Coordinate plane',
+      title: 'Midpoint finder',
+      setup: [
+        'Points A and B are at (2, 4) and (8, 10).',
+        'Find the midpoint of the segment joining them.',
+        'Average the x-coordinates and y-coordinates separately.',
+      ],
+      prompt: 'What is the midpoint of the segment?',
+      fieldNote: 'The midpoint is found by averaging each coordinate.',
+      mentorHint: 'Use ((2 + 8)/2, (4 + 10)/2).',
+      correct: '(5, 7)',
+      wrong: [
+        ['(10, 14)', 'That adds coordinates without averaging.', 'A midpoint sits halfway, so divide by 2.'],
+        ['(4, 5)', 'That averages incorrectly.', 'Average x-values together and y-values together.'],
+        ['(6, 8)', 'That is close but still not halfway in both directions.', 'Compute each average carefully.'],
+      ],
+    },
+    {
+      chapter: 'Unit 7: Area and perimeter',
+      title: 'Rectangle area',
+      setup: [
+        'A rectangle has length 9 units and width 4 units.',
+        'You need the area, not the perimeter.',
+        'Choose the correct value with units squared.',
+      ],
+      prompt: 'What is the area of the rectangle?',
+      fieldNote: 'Area of a rectangle is length × width.',
+      mentorHint: 'Multiply 9 by 4.',
+      correct: '36 square units',
+      wrong: [
+        ['26 units', 'That comes from adding for perimeter instead of area.', 'Area uses multiplication and square units.'],
+        ['18 square units', 'That uses only half the needed product.', 'Use the full length times width.'],
+        ['13 square units', 'That adds the dimensions instead of multiplying them.', 'Area is not length plus width.'],
+      ],
+    },
+    {
+      chapter: 'Unit 8: Volume and surface area',
+      title: 'Rectangular prism volume',
+      setup: [
+        'A rectangular prism has length 3, width 5, and height 4.',
+        'Find its volume.',
+        'Multiply all three dimensions.',
+      ],
+      prompt: 'What is the volume of the prism?',
+      fieldNote: 'Volume of a rectangular prism is length × width × height.',
+      mentorHint: 'Compute 3 × 5 × 4.',
+      correct: '60 cubic units',
+      wrong: [
+        ['47 cubic units', 'That does not match the product of the dimensions.', 'Multiply the three numbers directly.'],
+        ['24 cubic units', 'That leaves out one dimension.', 'Use all three dimensions for volume.'],
+        ['12 square units', 'That is not volume and uses the wrong units.', 'Volume is cubic, not square.'],
+      ],
+    },
+    {
+      chapter: 'Unit 9: Pythagorean theorem',
+      title: 'Missing leg',
+      setup: [
+        'A right triangle has hypotenuse 13 and one leg 5.',
+        'Find the missing leg.',
+        'Use a² + b² = c².',
+      ],
+      prompt: 'What is the length of the missing leg?',
+      fieldNote: 'In a right triangle, the hypotenuse is the longest side and belongs in c².',
+      mentorHint: 'Solve a² + 5² = 13².',
+      correct: '12',
+      wrong: [
+        ['8', 'That does not satisfy the theorem.', 'Check 5² + 8² against 13².'],
+        ['18', 'That adds side lengths instead of using squares.', 'Use the Pythagorean relationship, not simple addition.'],
+        ['169', 'That is 13², not the side length.', 'Take the square root after subtracting.'],
+      ],
+    },
+    {
+      chapter: 'Unit 10: Transformations',
+      title: 'Translation move',
+      setup: [
+        'Point P starts at (3, -2).',
+        'It is translated 4 units right and 5 units up.',
+        'Find the image of the point.',
+      ],
+      prompt: 'Where does the point land after the translation?',
+      fieldNote: 'Right increases x. Up increases y.',
+      mentorHint: 'Add 4 to x and 5 to y.',
+      correct: '(7, 3)',
+      wrong: [
+        ['(-1, 3)', 'That moves the x-coordinate in the wrong direction.', 'Moving right makes x larger.'],
+        ['(7, -7)', 'That moves the y-coordinate the wrong way.', 'Moving up makes y larger.'],
+        ['(4, 5)', 'That ignores the starting point.', 'Apply the translation to the original coordinates.'],
+      ],
+    },
+    {
+      chapter: 'Unit 11: Congruence',
+      title: 'Congruent triangles',
+      setup: [
+        'Two triangles are congruent.',
+        'One triangle has side lengths 6, 8, and 10.',
+        'Choose what must be true about the other triangle.',
+      ],
+      prompt: 'What must be true if the triangles are congruent?',
+      fieldNote: 'Congruent figures have the same size and shape.',
+      mentorHint: 'Congruent means all corresponding side lengths and angles match.',
+      correct: 'It also has side lengths 6, 8, and 10',
+      wrong: [
+        ['It only has the same shape, but can be bigger', 'That describes similarity, not congruence.', 'Congruence requires the same size too.'],
+        ['Its angles can change as long as the perimeter matches', 'Changing angles changes the shape.', 'Congruent triangles match side lengths and angles.'],
+        ['It must be a right triangle with side lengths 5, 12, and 13', 'That is a different triangle.', 'The matching triangle must correspond exactly.'],
+      ],
+    },
+    {
+      chapter: 'Unit 12: Similarity',
+      title: 'Scale factor check',
+      setup: [
+        'Two similar triangles have corresponding side lengths 3 and 12.',
+        'Find the scale factor from the smaller triangle to the larger triangle.',
+        'Use larger ÷ smaller.',
+      ],
+      prompt: 'What is the scale factor?',
+      fieldNote: 'For similar figures, corresponding lengths change by a constant factor.',
+      mentorHint: 'Divide 12 by 3.',
+      correct: '4',
+      wrong: [
+        ['3', 'That is one of the side lengths, not the factor.', 'Compare the two lengths by division.'],
+        ['9', 'That multiplies the lengths instead of comparing them.', 'Scale factor is a ratio, not a product.'],
+        ['1/4', 'That is the reverse direction.', 'The question asks from smaller to larger.'],
+      ],
+    },
+    {
+      chapter: 'Unit 13: Trigonometry',
+      title: 'Sine in a right triangle',
+      setup: [
+        'In a right triangle, angle θ has opposite side 6 and hypotenuse 10.',
+        'Use the sine ratio.',
+        'Choose the value of sin(θ).',
+      ],
+      prompt: 'What is sin(θ)?',
+      fieldNote: 'sin(θ) = opposite / hypotenuse.',
+      mentorHint: 'Write 6 over 10 and simplify if you want.',
+      correct: '3/5',
+      wrong: [
+        ['5/3', 'That flips the ratio.', 'Sine uses opposite over hypotenuse, not the reverse.'],
+        ['4/5', 'That would use the adjacent side instead.', 'Use the sides named in the setup.'],
+        ['16', 'Trig ratios are quotients here, not sums.', 'Divide the lengths instead of adding them.'],
+      ],
+    },
+    {
+      chapter: 'Unit 14: Circles',
+      title: 'Circumference formula',
+      setup: [
+        'A circle has radius 5.',
+        'Find the circumference in terms of π.',
+        'Use C = 2πr.',
+      ],
+      prompt: 'What is the circumference of the circle?',
+      fieldNote: 'Circumference uses the distance around the circle.',
+      mentorHint: 'Substitute r = 5 into 2πr.',
+      correct: '10π',
+      wrong: [
+        ['25π', 'That uses the area structure instead.', 'Circumference is linear, not square.'],
+        ['5π', 'That forgets the factor of 2.', 'Use 2πr, not just πr.'],
+        ['20π', 'That doubles one step too many.', 'The radius is 5, not 10.'],
+      ],
+    },
+    {
+      chapter: 'Unit 15: Analytic geometry',
+      title: 'Slope from two points',
+      setup: [
+        'A line passes through (1, 2) and (5, 10).',
+        'Find the slope of the line.',
+        'Use rise over run.',
+      ],
+      prompt: 'What is the slope?',
+      fieldNote: 'Slope = (y₂ - y₁) / (x₂ - x₁).',
+      mentorHint: 'Compute (10 - 2) / (5 - 1).',
+      correct: '2',
+      wrong: [
+        ['1/2', 'That flips rise and run.', 'Slope uses change in y over change in x.'],
+        ['8', 'That uses the rise only.', 'You still need to divide by the run.'],
+        ['4', 'That divides incorrectly.', '8 divided by 4 is 2.'],
+      ],
+    },
+    {
+      chapter: 'Unit 16: Geometric constructions',
+      title: 'Perpendicular bisector purpose',
+      setup: [
+        'You are describing what a perpendicular bisector does to a segment.',
+        'Think about both words in the name.',
+        'Pick the best description.',
+      ],
+      prompt: 'What does a perpendicular bisector of a segment do?',
+      fieldNote: 'A bisector cuts something into two equal parts, and perpendicular means 90 degrees.',
+      mentorHint: 'The line should cross the segment at its midpoint and form a right angle.',
+      correct: 'It crosses the segment at its midpoint and forms a right angle',
+      wrong: [
+        ['It crosses the segment at one endpoint and doubles its length', 'That is not what bisecting means.', 'A bisector goes through the middle, not an endpoint.'],
+        ['It makes two parallel copies of the segment', 'Parallel lines do not bisect the original segment.', 'Think midpoint plus 90 degrees.'],
+        ['It touches the segment without crossing it', 'A bisector must cut the segment.', 'The construction passes through the segment.'],
+      ],
+    },
+    {
+      chapter: 'Unit 17: Miscellaneous',
+      title: 'Interior angle sum',
+      setup: [
+        'You are finding the sum of the interior angles of a hexagon.',
+        'Use the polygon angle-sum formula.',
+        'For an n-sided polygon, the sum is (n - 2) × 180°.',
+      ],
+      prompt: 'What is the sum of the interior angles of a hexagon?',
+      fieldNote: 'Hexagon means 6 sides, so use n = 6.',
+      mentorHint: 'Compute (6 - 2) × 180°.',
+      correct: '720°',
+      wrong: [
+        ['540°', 'That would be the sum for a pentagon.', 'Check the number of sides first.'],
+        ['900°', 'That multiplies too far.', 'Use (n - 2), not n itself.'],
+        ['360°', 'That is far too small for a hexagon.', 'A hexagon can be split into 4 triangles.'],
+      ],
+    },
+  ]
+
+  return Array.from({ length: 50 }, (_, index) => {
+    const blueprint = unitBlueprints[index % unitBlueprints.length]
+    const cycle = Math.floor(index / unitBlueprints.length) + 1
+    const question: Question = {
+      id: 24501 + index,
+      kind: index % 10 === 9 ? 'deep' : 'quick',
+      topic: 'Mathematics',
+      chapter: blueprint.chapter,
+      title: `${blueprint.title} #${cycle}`,
+      briefing: 'Read the geometry facts carefully, decide which relationship applies, and choose the answer that actually matches the diagram or calculation.',
+      setup: blueprint.setup,
+      prompt: blueprint.prompt,
+      fieldNote: blueprint.fieldNote,
+      mentorHint: blueprint.mentorHint,
+      answers: answerSet(blueprint.correct, blueprint.wrong),
+      solution: blueprint.correct,
+      xp: index % 10 === 9 ? 16 : 10,
+    }
+    return question
+  })
+}
+
+export function makeColAlgebra2Quiz(): Question[] {
+  const unitBlueprints: Array<{
+    chapter: string
+    title: string
+    setup: string[]
+    prompt: string
+    fieldNote: string
+    mentorHint: string
+    correct: string
+    wrong: [string, string, string][]
+  }> = [
+    {
+      chapter: 'Unit 1: Introduction to functions in Algebra 2',
+      title: 'Function value check',
+      setup: [
+        'A function is defined by f(x) = 3x - 4.',
+        'You are asked to evaluate the function at x = 6.',
+        'Substitute the input into the rule and simplify.',
+      ],
+      prompt: 'What is f(6)?',
+      fieldNote: 'Evaluating a function means plugging the input into the expression exactly as written.',
+      mentorHint: 'Replace x with 6 in 3x - 4.',
+      correct: '14',
+      wrong: [
+        ['10', 'That misses part of the calculation.', 'Compute 3(6) first, then subtract 4.'],
+        ['18', 'That stops after multiplying and forgets the -4.', 'Use the entire rule, not just the first term.'],
+        ['2', 'That mixes the operations incorrectly.', 'Keep the substitution order clean.'],
+      ],
+    },
+    {
+      chapter: 'Unit 2: Absolute value functions, equations, and inequalities',
+      title: 'Absolute value equation',
+      setup: [
+        'Solve the equation |x - 3| = 5.',
+        'Absolute value equations can split into two linear cases.',
+        'Choose the full solution set.',
+      ],
+      prompt: 'What are the solutions to |x - 3| = 5?',
+      fieldNote: 'If |A| = k, then A = k or A = -k, as long as k is nonnegative.',
+      mentorHint: 'Set x - 3 equal to 5 and to -5.',
+      correct: 'x = 8 and x = -2',
+      wrong: [
+        ['x = 8 only', 'Absolute value here gives two cases, not one.', 'Solve both branches.'],
+        ['x = -8 and x = 2', 'The shifting by 3 was handled incorrectly.', 'Work from x - 3, not x alone.'],
+        ['x = 2 and x = -2', 'One root is close, but the positive branch is wrong.', 'Check both solutions by substitution.'],
+      ],
+    },
+    {
+      chapter: 'Unit 3: Systems of linear equations and inequalities',
+      title: 'System by substitution',
+      setup: [
+        'Consider the system y = 2x + 1 and x + y = 10.',
+        'Substitute the first equation into the second.',
+        'Find the ordered pair that satisfies both equations.',
+      ],
+      prompt: 'What is the solution to the system?',
+      fieldNote: 'A solution to a system must make both equations true at the same time.',
+      mentorHint: 'Replace y with 2x + 1 in x + y = 10.',
+      correct: '(3, 7)',
+      wrong: [
+        ['(2, 5)', 'That does not satisfy both equations.', 'Check the point in each equation.'],
+        ['(3, 6)', 'The x-value may be tempting, but the y-value is off.', 'Use y = 2x + 1 after solving for x.'],
+        ['(4, 6)', 'This only satisfies one side of the reasoning.', 'Verify in both equations.'],
+      ],
+    },
+    {
+      chapter: 'Unit 4: Expressions, factoring, and equations with rational exponents',
+      title: 'Rational exponent rewrite',
+      setup: [
+        'Rewrite 16^(1/2) using what a one-half exponent means.',
+        'A one-half power represents a square root.',
+        'Choose the correct value.',
+      ],
+      prompt: 'What is 16^(1/2)?',
+      fieldNote: 'A fractional exponent of 1/2 means “take the square root.”',
+      mentorHint: 'Ask which number squares to 16.',
+      correct: '4',
+      wrong: [
+        ['8', 'That doubles instead of taking the square root.', 'A one-half power is not multiplication by one-half.'],
+        ['256', 'That squares 16 instead of taking its root.', 'The exponent 1/2 reduces magnitude here.'],
+        ['2', 'That is too small.', 'Check by squaring your answer.'],
+      ],
+    },
+    {
+      chapter: 'Unit 5: Quadratic relations, equations, and inequalities',
+      title: 'Factoring a quadratic',
+      setup: [
+        'Factor x^2 - 7x + 12.',
+        'Look for two numbers that multiply to 12 and add to -7.',
+        'Choose the correct factorization.',
+      ],
+      prompt: 'Which factorization is correct?',
+      fieldNote: 'For x^2 + bx + c, find two numbers whose product is c and whose sum is b.',
+      mentorHint: 'The numbers are -3 and -4.',
+      correct: '(x - 3)(x - 4)',
+      wrong: [
+        ['(x + 3)(x + 4)', 'The signs produce +7x, not -7x.', 'Check the middle term after expanding.'],
+        ['(x - 2)(x - 6)', 'Those numbers multiply to 12 but add to -8.', 'You need both the correct product and sum.'],
+        ['(x + 2)(x - 6)', 'That gives the wrong middle term and constant pattern.', 'Expand to verify.'],
+      ],
+    },
+    {
+      chapter: 'Unit 6: Square root functions and equations',
+      title: 'Square root equation',
+      setup: [
+        'Solve sqrt(x + 9) = 7.',
+        'Isolate the radical, then square both sides.',
+        'Choose the solution.',
+      ],
+      prompt: 'What value of x solves the equation?',
+      fieldNote: 'After squaring both sides, check the result in the original equation.',
+      mentorHint: 'Square first to get x + 9 = 49.',
+      correct: '40',
+      wrong: [
+        ['58', 'That adds incorrectly after squaring.', '49 - 9 = 40.'],
+        ['-40', 'The sign was flipped without reason.', 'Check against the original equation.'],
+        ['49', 'That is the squared right-hand side, not x.', 'Solve for x after squaring.'],
+      ],
+    },
+    {
+      chapter: 'Unit 7: Cubic and cube root functions and equations',
+      title: 'Cube root inverse move',
+      setup: [
+        'Solve cube root(x) = 4.',
+        'Undo the cube root by cubing both sides.',
+        'Choose the correct value of x.',
+      ],
+      prompt: 'What is x?',
+      fieldNote: 'Cubing both sides undoes a cube root.',
+      mentorHint: 'Compute 4^3.',
+      correct: '64',
+      wrong: [
+        ['16', 'That squares instead of cubes.', 'Use the inverse of cube root, which is cubing.'],
+        ['12', 'That adds or multiplies loosely instead of applying the exponent.', 'Do 4 × 4 × 4.'],
+        ['256', 'That raises 4 too high.', 'Cube means power of 3, not 4.'],
+      ],
+    },
+    {
+      chapter: 'Unit 8: Rational functions and equations',
+      title: 'Domain restriction',
+      setup: [
+        'Consider the rational expression 5 / (x - 2).',
+        'The denominator cannot be zero.',
+        'Choose the value that is not allowed in the domain.',
+      ],
+      prompt: 'Which value of x must be excluded from the domain?',
+      fieldNote: 'A rational expression is undefined when its denominator equals zero.',
+      mentorHint: 'Set x - 2 = 0.',
+      correct: '2',
+      wrong: [
+        ['0', 'Zero in the numerator is fine here.', 'Only denominator zeros cause the restriction.'],
+        ['-2', 'That makes the denominator -4, which is allowed.', 'Test the denominator directly.'],
+        ['5', 'That keeps the denominator nonzero.', 'Exclude only the value that makes division impossible.'],
+      ],
+    },
+    {
+      chapter: 'Unit 9: Exponential functions and equations',
+      title: 'Exponential growth step',
+      setup: [
+        'An amount starts at 200 and grows by a factor of 1.5 each period.',
+        'You want the amount after one period.',
+        'Multiply the starting amount by the growth factor once.',
+      ],
+      prompt: 'What is the amount after one period?',
+      fieldNote: 'Exponential growth uses repeated multiplication by the growth factor.',
+      mentorHint: 'Compute 200 × 1.5.',
+      correct: '300',
+      wrong: [
+        ['250', 'That adds half of 100 instead of multiplying correctly.', 'Use the stated growth factor directly.'],
+        ['201.5', 'That treats 1.5 like an additive increase.', 'Growth factor means multiplication, not addition.'],
+        ['400', 'That doubles instead of multiplying by 1.5.', 'Use the exact factor given.'],
+      ],
+    },
+    {
+      chapter: 'Unit 10: Exponential and logarithmic functions and equations',
+      title: 'Logarithm meaning',
+      setup: [
+        'You are evaluating log10(1000).',
+        'A base-10 logarithm asks what exponent on 10 gives the number.',
+        'Choose the correct value.',
+      ],
+      prompt: 'What is log10(1000)?',
+      fieldNote: 'log_b(a) asks: “To what power must b be raised to get a?”',
+      mentorHint: 'Ask which power of 10 equals 1000.',
+      correct: '3',
+      wrong: [
+        ['10', 'That uses the base itself rather than the exponent.', 'The answer is the exponent on 10.'],
+        ['100', 'That is not an exponent at all here.', 'Think powers, not nearby numbers.'],
+        ['1/3', 'That inverts the idea.', '10^3 = 1000.'],
+      ],
+    },
+    {
+      chapter: 'Unit 11: Linear, quadratic, and exponential data models',
+      title: 'Model recognition',
+      setup: [
+        'A table increases by +5, then +5, then +5 between consecutive y-values.',
+        'You are deciding which model type best fits that pattern.',
+        'Choose the model with constant first differences.',
+      ],
+      prompt: 'Which type of model best matches the data?',
+      fieldNote: 'Constant first differences indicate a linear model.',
+      mentorHint: 'Ask whether the pattern changes by a constant amount or a constant factor.',
+      correct: 'Linear',
+      wrong: [
+        ['Exponential', 'Exponential patterns use constant ratios, not constant differences.', 'Compare add-vs-multiply behavior.'],
+        ['Quadratic', 'Quadratic patterns have constant second differences.', 'This pattern is simpler than that.'],
+        ['Logarithmic', 'Nothing in the table suggests logarithmic behavior.', 'Use the difference pattern you were given.'],
+      ],
+    },
+  ]
+
+  return Array.from({ length: 50 }, (_, index) => {
+    const blueprint = unitBlueprints[index % unitBlueprints.length]
+    const cycle = Math.floor(index / unitBlueprints.length) + 1
+    const question: Question = {
+      id: 24601 + index,
+      kind: index % 10 === 9 ? 'deep' : 'quick',
+      topic: 'Mathematics',
+      chapter: blueprint.chapter,
+      title: `${blueprint.title} #${cycle}`,
+      briefing: 'Read the algebra carefully, identify the rule being used, and choose the answer that completes the actual calculation or classification.',
+      setup: blueprint.setup,
+      prompt: blueprint.prompt,
+      fieldNote: blueprint.fieldNote,
+      mentorHint: blueprint.mentorHint,
+      answers: answerSet(blueprint.correct, blueprint.wrong),
+      solution: blueprint.correct,
+      xp: index % 10 === 9 ? 16 : 10,
+    }
+    return question
+  })
+}
+
+
+export function makeColPrecalculusQuiz(): Question[] {
+  return buildCycledMathQuiz(24701,
+    'Read the setup carefully, identify the precalculus idea in play, and choose the answer that matches the actual algebra, trigonometry, or model.',
+    [
+      {
+        chapter: 'Unit 1: Complex numbers and transformations',
+        title: 'Imaginary unit cleanup',
+        setup: [
+          'Simplify i^2.',
+          'Use the defining property of the imaginary unit.',
+          'Choose the exact value.',
+        ],
+        prompt: 'What is i^2 equal to?',
+        fieldNote: 'By definition, i^2 = -1.',
+        mentorHint: 'The imaginary unit is built so that squaring it gives -1.',
+        correct: '-1',
+        wrong: [
+          ['1', 'That ignores the defining property of i.', 'i is not a real-number square root of 1.'],
+          ['i', 'Squaring changes the value.', 'Apply the exponent instead of repeating the symbol.'],
+          ['0', 'There is no cancellation here.', 'Use the definition directly.'],
+        ],
+      },
+      {
+        chapter: 'Unit 2: Vectors and matrices',
+        title: 'Vector magnitude',
+        setup: [
+          'A vector has components <3, 4>.',
+          'Find its magnitude.',
+          'Use the distance formula in component form.',
+        ],
+        prompt: 'What is the magnitude of the vector?',
+        fieldNote: 'Magnitude of <a, b> is sqrt(a^2 + b^2).',
+        mentorHint: 'Compute sqrt(3^2 + 4^2).',
+        correct: '5',
+        wrong: [
+          ['7', 'That adds the components without using the magnitude formula.', 'Square, add, then take the square root.'],
+          ['25', 'That is the squared magnitude, not the magnitude.', 'Take the square root at the end.'],
+          ['1', 'That does not fit the 3-4-5 triangle.', 'Check the geometry of the vector.'],
+        ],
+      },
+      {
+        chapter: 'Unit 3: Rational and exponential functions',
+        title: 'Horizontal asymptote check',
+        setup: [
+          'Consider f(x) = (2x + 1) / (x - 3).',
+          'The numerator and denominator have the same degree.',
+          'Find the horizontal asymptote.',
+        ],
+        prompt: 'What is the horizontal asymptote of the function?',
+        fieldNote: 'When degrees match, the horizontal asymptote is the ratio of leading coefficients.',
+        mentorHint: 'Use 2 divided by 1.',
+        correct: 'y = 2',
+        wrong: [
+          ['y = -3', 'That comes from the denominator shift, which relates to a vertical asymptote.', 'Horizontal asymptotes come from end behavior.'],
+          ['x = 2', 'That is the wrong axis and wrong interpretation.', 'Horizontal asymptotes are equations in y.'],
+          ['y = 1/2', 'That flips the coefficient ratio.', 'Use numerator coefficient over denominator coefficient.'],
+        ],
+      },
+      {
+        chapter: 'Unit 4a: Trigonometry foundations',
+        title: 'Special angle sine',
+        setup: [
+          'Evaluate sin(30°).',
+          'Use the standard special-angle value.',
+          'Choose the exact answer.',
+        ],
+        prompt: 'What is sin(30°)?',
+        fieldNote: '30°-60°-90° triangles give the basic special-angle trig values.',
+        mentorHint: 'The sine of 30° is the short side over the hypotenuse.',
+        correct: '1/2',
+        wrong: [
+          ['sqrt(3)/2', 'That is cos(30°), not sin(30°).', 'Keep sine and cosine distinct.'],
+          ['1', '30° is not large enough for sine to be 1.', 'Only 90° gives sine 1.'],
+          ['0', '30° has a positive nonzero sine.', 'Visualize the unit circle point.'],
+        ],
+      },
+      {
+        chapter: 'Unit 4b: Analytic trigonometry',
+        title: 'Law of cosines',
+        setup: [
+          'In a triangle, two sides have lengths 5 and 7, and the included angle is 60°.',
+          'Find the length of the third side c.',
+          'Use the law of cosines.',
+        ],
+        prompt: 'What is c?',
+        fieldNote: 'c^2 = a^2 + b^2 - 2ab cos(C).',
+        mentorHint: 'Compute c^2 = 25 + 49 - 2(5)(7)(1/2).',
+        correct: 'sqrt(39)',
+        wrong: [
+          ['6', 'That rounds too aggressively and is not exact.', 'The exact form comes from simplifying c^2 first.'],
+          ['sqrt(74)', 'That forgets the subtraction term.', 'Use the full law of cosines, not just Pythagorean theorem.'],
+          ['sqrt(14)', 'That arithmetic is off.', 'Work the product 2ab cos(C) carefully.'],
+        ],
+      },
+      {
+        chapter: 'Unit 5: Probability and statistics',
+        title: 'Expected value',
+        setup: [
+          'A game pays $10 with probability 0.3 and $0 otherwise.',
+          'Find the expected payout.',
+          'Use a weighted average.',
+        ],
+        prompt: 'What is the expected payout?',
+        fieldNote: 'Expected value is the sum of each outcome times its probability.',
+        mentorHint: 'Compute 10(0.3) + 0(0.7).',
+        correct: '$3',
+        wrong: [
+          ['$10', 'That is the best-case outcome, not the expected value.', 'Weight outcomes by probability.'],
+          ['$7', 'That uses the complement probability incorrectly.', 'Only the payout branch contributes $10.'],
+          ['$0.3', 'That uses the probability alone instead of the payout.', 'Expected value keeps the outcome units.'],
+        ],
+      },
+      {
+        chapter: 'Unit 6: Conics',
+        title: 'Circle from standard form',
+        setup: [
+          'A circle has equation (x - 2)^2 + (y + 1)^2 = 16.',
+          'Find its radius.',
+          'Use the standard form of a circle.',
+        ],
+        prompt: 'What is the radius of the circle?',
+        fieldNote: 'In (x - h)^2 + (y - k)^2 = r^2, the radius is r.',
+        mentorHint: 'Here r^2 = 16.',
+        correct: '4',
+        wrong: [
+          ['16', 'That is r^2, not r.', 'Take the square root to get the radius.'],
+          ['2', 'That confuses the center shift with the radius.', 'The center does not determine the radius.'],
+          ['5', 'That does not match the equation.', 'Read the constant term as r^2.'],
+        ],
+      },
+      {
+        chapter: 'Unit 7: Functions and inverses',
+        title: 'Inverse function step',
+        setup: [
+          'Let f(x) = 2x + 5.',
+          'Find f^(-1)(x).',
+          'Solve y = 2x + 5 for x, then swap variables.',
+        ],
+        prompt: 'What is the inverse function?',
+        fieldNote: 'To find an inverse, solve for the original input in terms of the output.',
+        mentorHint: 'Start with y = 2x + 5, then isolate x.',
+        correct: '(x - 5) / 2',
+        wrong: [
+          ['2x - 5', 'That does not undo the original function.', 'An inverse should reverse both operations.'],
+          ['(x + 5) / 2', 'The sign is wrong when undoing the +5.', 'Subtract 5 before dividing by 2.'],
+          ['1 / (2x + 5)', 'That takes a reciprocal, not an inverse function.', 'Inverse functions undo inputs and outputs, not by reciprocation.'],
+        ],
+      },
+      {
+        chapter: 'Unit 8: Matrices as transformations',
+        title: 'Determinant of a 2x2 matrix',
+        setup: [
+          'Find the determinant of [[2, 1], [3, 4]].',
+          'Use ad - bc for a 2x2 matrix.',
+          'Choose the exact value.',
+        ],
+        prompt: 'What is the determinant?',
+        fieldNote: 'For [[a, b], [c, d]], determinant = ad - bc.',
+        mentorHint: 'Compute 2·4 - 1·3.',
+        correct: '5',
+        wrong: [
+          ['11', 'That adds products instead of subtracting.', 'Use ad - bc, not ad + bc.'],
+          ['8', 'That ignores the bc term.', 'Subtract the second product.'],
+          ['-5', 'The subtraction order was reversed.', 'Start with ad.'],
+        ],
+      },
+      {
+        chapter: 'Unit 9: Series and limits',
+        title: 'Geometric series total',
+        setup: [
+          'Consider the finite geometric series 2 + 6 + 18.',
+          'Add the listed terms directly.',
+          'Choose the total.',
+        ],
+        prompt: 'What is the sum of the series?',
+        fieldNote: 'A short finite series can often be summed directly without a formula.',
+        mentorHint: 'Add 2, 6, and 18.',
+        correct: '26',
+        wrong: [
+          ['18', 'That stops at the last term instead of summing.', 'A series asks for the total of the terms.'],
+          ['24', 'That addition is off.', 'Add carefully term by term.'],
+          ['54', 'That continues the pattern instead of summing it.', 'Do not generate a new term; total the existing ones.'],
+        ],
+      },
+    ])
+}
+
+export function makeColHighSchoolStatisticsQuiz(): Question[] {
+  return buildCycledMathQuiz(24801,
+    'Read the data description carefully, decide which statistics idea applies, and choose the answer that matches the actual distribution, study, or probability question.',
+    [
+      {
+        chapter: 'Unit 1: Displaying a single quantitative variable',
+        title: 'Histogram reading',
+        setup: [
+          'A histogram has its tallest bar over the interval 20 to 29.',
+          'You are being asked what that means.',
+          'Choose the best interpretation.',
+        ],
+        prompt: 'What does the tallest bar tell you?',
+        fieldNote: 'In a histogram, taller bars represent more data values in that interval.',
+        mentorHint: 'Think frequency, not exact individual values.',
+        correct: 'More observations fall between 20 and 29 than in any other interval',
+        wrong: [
+          ['Every observation equals 25', 'A bar covers a range, not one exact value.', 'Histograms group data into intervals.'],
+          ['20 to 29 is the mean', 'A tall bar is not automatically the mean.', 'It shows where many observations lie.'],
+          ['There are no observations outside 20 to 29', 'Other bars can still be present.', 'Tallest does not mean only.'],
+        ],
+      },
+      {
+        chapter: 'Unit 2: Analyzing a single quantitative variable',
+        title: 'Median of an ordered list',
+        setup: [
+          'The ordered data set is 2, 4, 7, 9, 10.',
+          'Find the median.',
+          'With an odd number of values, the median is the middle value.',
+        ],
+        prompt: 'What is the median?',
+        fieldNote: 'The median is the middle value of ordered data.',
+        mentorHint: 'Count to the center of the five numbers.',
+        correct: '7',
+        wrong: [
+          ['6.4', 'That is closer to a mean than a median.', 'Median uses position, not averaging all values.'],
+          ['9', 'That is too far right in the list.', 'Choose the middle value, not a large one.'],
+          ['4', 'That is too far left in the list.', 'Middle means one value on each side countwise.'],
+        ],
+      },
+      {
+        chapter: 'Unit 3: Two-way tables',
+        title: 'Conditional proportion',
+        setup: [
+          'In a class, 12 students play soccer and 8 of them also play basketball.',
+          'You want the proportion of soccer players who also play basketball.',
+          'Condition on the soccer players.',
+        ],
+        prompt: 'What proportion of soccer players also play basketball?',
+        fieldNote: 'Conditional proportions divide the overlap by the conditioned group total.',
+        mentorHint: 'Use 8 divided by 12.',
+        correct: '2/3',
+        wrong: [
+          ['8/20', 'That uses the overlap over a combined total that was not asked for.', 'Condition on soccer players only.'],
+          ['12/8', 'That reverses the ratio.', 'Part over whole, not whole over part.'],
+          ['1/3', 'That would describe the non-basketball share among soccer players.', 'Use the overlapping group in the numerator.'],
+        ],
+      },
+      {
+        chapter: 'Unit 4: Scatterplots',
+        title: 'Positive association',
+        setup: [
+          'A scatterplot shows that as hours studied increase, quiz scores usually increase.',
+          'You are classifying the direction of association.',
+          'Choose the best description.',
+        ],
+        prompt: 'What kind of association does the scatterplot show?',
+        fieldNote: 'When larger x-values tend to go with larger y-values, the association is positive.',
+        mentorHint: 'Watch the overall trend from left to right.',
+        correct: 'Positive association',
+        wrong: [
+          ['Negative association', 'That would mean one variable rises as the other falls.', 'This plot rises together instead.'],
+          ['No association', 'There is a visible trend.', 'Do not ignore the overall direction.'],
+          ['Causation', 'Association alone does not prove causation.', 'First classify the pattern before inferring more.'],
+        ],
+      },
+      {
+        chapter: 'Unit 5: Study design',
+        title: 'Observational or experiment',
+        setup: [
+          'A researcher records what people already eat and compares that with their cholesterol levels.',
+          'The researcher does not assign diets.',
+          'Choose the study type.',
+        ],
+        prompt: 'What type of study is this?',
+        fieldNote: 'If researchers only observe and do not impose treatments, the study is observational.',
+        mentorHint: 'Ask whether the researcher assigned a treatment.',
+        correct: 'Observational study',
+        wrong: [
+          ['Randomized experiment', 'No treatment was assigned.', 'Experiments impose treatments.'],
+          ['Census', 'Not everyone in the population is necessarily included.', 'The key issue here is observation versus assignment.'],
+          ['Simulation', 'No model or artificial process is being run.', 'This uses real observed data.'],
+        ],
+      },
+      {
+        chapter: 'Unit 6: Probability',
+        title: 'Complement probability',
+        setup: [
+          'The probability of rain tomorrow is 0.2.',
+          'Find the probability that it does not rain.',
+          'Use the complement rule.',
+        ],
+        prompt: 'What is the probability that it does not rain?',
+        fieldNote: 'The probabilities of an event and its complement add to 1.',
+        mentorHint: 'Subtract 0.2 from 1.',
+        correct: '0.8',
+        wrong: [
+          ['0.2', 'That repeats the original event probability.', 'The complement is what is left over.'],
+          ['1.2', 'Probabilities cannot exceed 1.', 'Use 1 - p.'],
+          ['0.5', 'That is unrelated to the given value.', 'Compute the exact complement.'],
+        ],
+      },
+      {
+        chapter: 'Unit 7: Probability distributions and expected value',
+        title: 'Expected winnings',
+        setup: [
+          'A game pays $5 with probability 0.4 and $0 otherwise.',
+          'Find the expected winnings.',
+          'Use a weighted average of the outcomes.',
+        ],
+        prompt: 'What is the expected winnings amount?',
+        fieldNote: 'Expected value multiplies each outcome by its probability and adds the results.',
+        mentorHint: 'Compute 5(0.4) + 0(0.6).',
+        correct: '$2',
+        wrong: [
+          ['$5', 'That is the winning outcome, not the expected value.', 'Weight outcomes by probability.'],
+          ['$3', 'That uses the losing probability incorrectly.', 'Only the $5 branch contributes dollars.'],
+          ['$0.4', 'That uses probability but not payout.', 'Expected value keeps the monetary units.'],
+        ],
+      },
+    ])
+}
+
+export function makeColCalculusABQuiz(): Question[] {
+  return buildCycledMathQuiz(24901,
+    'Read the calculus setup carefully, identify the limit, derivative, or integral idea being used, and choose the answer that matches the actual computation or interpretation.',
+    [
+      {
+        chapter: 'Unit 1: Limits and continuity',
+        title: 'Direct limit evaluation',
+        setup: [
+          'Evaluate lim x→2 of (x^2 + 3).',
+          'This is a polynomial, so direct substitution works.',
+          'Choose the limit value.',
+        ],
+        prompt: 'What is the limit?',
+        fieldNote: 'For polynomials, the limit at a point equals the function value there.',
+        mentorHint: 'Substitute x = 2.',
+        correct: '7',
+        wrong: [
+          ['5', 'That substitutes incorrectly.', 'Compute 2^2 + 3.'],
+          ['4', 'That stops after squaring.', 'Include the +3.'],
+          ['Does not exist', 'There is no discontinuity here.', 'Polynomials are continuous everywhere.'],
+        ],
+      },
+      {
+        chapter: 'Unit 2: Differentiation: definition and basic derivative rules',
+        title: 'Power rule',
+        setup: [
+          'Find the derivative of f(x) = x^3.',
+          'Use the power rule.',
+          'Choose the derivative.',
+        ],
+        prompt: 'What is f\'(x)?',
+        fieldNote: 'For x^n, the derivative is nx^(n-1).',
+        mentorHint: 'Bring down the exponent and reduce it by one.',
+        correct: '3x^2',
+        wrong: [
+          ['x^2', 'That misses the coefficient from the power rule.', 'Use n·x^(n-1).'],
+          ['3x^3', 'The exponent should decrease by one.', 'Differentiate, do not just attach a coefficient.'],
+          ['x^4', 'Differentiation does not increase the exponent here.', 'Apply the power rule exactly.'],
+        ],
+      },
+      {
+        chapter: 'Unit 3: Differentiation: composite, implicit, and inverse functions',
+        title: 'Chain rule',
+        setup: [
+          'Find the derivative of (2x + 1)^4.',
+          'Use the chain rule.',
+          'Differentiate the outside, then multiply by the derivative of the inside.',
+        ],
+        prompt: 'What is the derivative?',
+        fieldNote: 'For [g(x)]^n, differentiate the outer power and multiply by g\'(x).',
+        mentorHint: 'Start with 4(2x + 1)^3, then multiply by 2.',
+        correct: '8(2x + 1)^3',
+        wrong: [
+          ['4(2x + 1)^3', 'That forgets the derivative of the inside.', 'Chain rule needs the inner derivative too.'],
+          ['8(2x + 1)^4', 'The exponent should drop by one after differentiating.', 'Keep the power rule intact.'],
+          ['(2x + 1)^3', 'That misses both necessary coefficients.', 'Differentiate the outer function fully.'],
+        ],
+      },
+      {
+        chapter: 'Unit 4: Contextual applications of differentiation',
+        title: 'Velocity from position',
+        setup: [
+          'A particle has position s(t) = t^2 + 3t.',
+          'Velocity is the derivative of position.',
+          'Find v(t).',
+        ],
+        prompt: 'What is the velocity function?',
+        fieldNote: 'Velocity is the rate of change of position.',
+        mentorHint: 'Differentiate term by term.',
+        correct: '2t + 3',
+        wrong: [
+          ['t^2 + 3', 'That only differentiates one term.', 'Differentiate both terms.'],
+          ['2t', 'That drops the constant derivative from 3t.', 'The derivative of 3t is 3.'],
+          ['t + 3', 'The power rule was applied incorrectly to t^2.', 'd/dt of t^2 is 2t.'],
+        ],
+      },
+      {
+        chapter: 'Unit 5: Applying derivatives to analyze functions',
+        title: 'Critical point check',
+        setup: [
+          'For f(x) = x^2 - 4x, find the x-value of the critical point.',
+          'Set the derivative equal to zero.',
+          'Solve for x.',
+        ],
+        prompt: 'At what x-value is the critical point?',
+        fieldNote: 'Critical points occur where the derivative is zero or undefined.',
+        mentorHint: 'Differentiate first, then solve 2x - 4 = 0.',
+        correct: '2',
+        wrong: [
+          ['4', 'That uses the coefficient without solving.', 'Set the derivative equal to zero.'],
+          ['-2', 'The sign flips incorrectly during solving.', 'Solve 2x = 4 carefully.'],
+          ['0', 'The derivative is not zero there.', 'Check the derivative directly.'],
+        ],
+      },
+      {
+        chapter: 'Unit 6: Integration and accumulation of change',
+        title: 'Basic antiderivative',
+        setup: [
+          'Find an antiderivative of 6x.',
+          'Reverse the power rule.',
+          'Choose a correct antiderivative.',
+        ],
+        prompt: 'Which is an antiderivative of 6x?',
+        fieldNote: 'Antiderivatives increase the power by one and divide by the new power.',
+        mentorHint: 'Ask what differentiates to 6x.',
+        correct: '3x^2 + C',
+        wrong: [
+          ['6x^2 + C', 'That differentiates to 12x.', 'Check by differentiating your answer.'],
+          ['3x + C', 'That differentiates to 3, not 6x.', 'Antiderivatives should reverse the derivative.'],
+          ['x^6 + C', 'That applies the exponent idea in the wrong direction.', 'Keep the relationship to the derivative close.'],
+        ],
+      },
+      {
+        chapter: 'Unit 7: Differential equations',
+        title: 'Slope field logic',
+        setup: [
+          'A differential equation says dy/dx = 0 whenever y = 3.',
+          'You are interpreting what that means for the slope field.',
+          'Choose the best description.',
+        ],
+        prompt: 'What should the slope field look like along the line y = 3?',
+        fieldNote: 'dy/dx = 0 means horizontal tangent segments.',
+        mentorHint: 'A slope of zero is flat.',
+        correct: 'The slope segments should be horizontal along y = 3',
+        wrong: [
+          ['The slope segments should be vertical along y = 3', 'Vertical does not mean zero slope.', 'Zero slope is horizontal.'],
+          ['The slope segments should all point upward steeply', 'That would indicate positive slope, not zero slope.', 'Match the picture to the derivative value.'],
+          ['There should be no slope segments on y = 3', 'A slope field still shows slopes there.', 'The equation defines a slope at those points.'],
+        ],
+      },
+      {
+        chapter: 'Unit 8: Applications of integration',
+        title: 'Area under a line',
+        setup: [
+          'Find the area under y = x from x = 0 to x = 2.',
+          'This region is a right triangle.',
+          'Use geometry or a definite integral.',
+        ],
+        prompt: 'What is the area?',
+        fieldNote: 'Area under y = x from 0 to 2 forms a triangle with base 2 and height 2.',
+        mentorHint: 'Use 1/2 × base × height.',
+        correct: '2',
+        wrong: [
+          ['4', 'That multiplies base and height without the one-half factor.', 'A triangle area is half the rectangle.'],
+          ['1', 'That is too small for the region shown.', 'Check the dimensions carefully.'],
+          ['0', 'There is clearly positive area on the interval.', 'The graph sits above the x-axis here.'],
+        ],
+      },
+      {
+        chapter: 'Unit 9: AP Calculus AB solved free response questions from past exams',
+        title: 'Average rate of change',
+        setup: [
+          'Suppose f(1) = 3 and f(5) = 11.',
+          'You want the average rate of change on [1, 5].',
+          'Use change in output over change in input.',
+        ],
+        prompt: 'What is the average rate of change?',
+        fieldNote: 'Average rate of change on [a, b] is (f(b) - f(a)) / (b - a).',
+        mentorHint: 'Compute (11 - 3) / (5 - 1).',
+        correct: '2',
+        wrong: [
+          ['8', 'That uses only the change in output.', 'You still need to divide by the change in input.'],
+          ['4', 'That divides incorrectly.', '8 divided by 4 is 2.'],
+          ['14', 'That adds values instead of comparing them.', 'Use difference over difference.'],
+        ],
+      },
+    ])
+}
+
+export function makeColAPStatisticsQuiz(): Question[] {
+  return buildCycledMathQuiz(25001,
+    'Read the data or study description carefully, identify the AP Statistics idea in play, and choose the answer that matches the actual summary, probability, or inference question.',
+    [
+      {
+        chapter: 'Unit 1: Exploring categorical data',
+        title: 'Mode from categories',
+        setup: [
+          'A survey result is shown in a bar chart.',
+          'The category with the tallest bar appears most often.',
+          'You are being asked for the mode.',
+        ],
+        prompt: 'What does the mode represent in this categorical data set?',
+        fieldNote: 'For categorical data, the mode is the most frequent category.',
+        mentorHint: 'Look for the category that appears the most.',
+        correct: 'The most common category',
+        wrong: [
+          ['The average category label', 'Categories are not averaged this way.', 'Mode is about frequency, not arithmetic mean.'],
+          ['The middle category after sorting alphabetically', 'That is not how mode works.', 'Mode depends on counts.'],
+          ['The least common category', 'That is the opposite idea.', 'Find the tallest bar instead.'],
+        ],
+      },
+      {
+        chapter: 'Unit 2: Displaying and describing quantitative data',
+        title: 'Mean from a small set',
+        setup: [
+          'The data set is 4, 6, 10.',
+          'Find the mean.',
+          'Add the values and divide by the number of values.',
+        ],
+        prompt: 'What is the mean?',
+        fieldNote: 'Mean = total divided by count.',
+        mentorHint: 'Add 4 + 6 + 10, then divide by 3.',
+        correct: '20/3',
+        wrong: [
+          ['6', 'That is close to the center but not the exact mean.', 'Use the arithmetic average.'],
+          ['10', 'That uses the largest value instead of averaging.', 'Include all data values.'],
+          ['20', 'That is the sum, not the mean.', 'Divide by the number of observations.'],
+        ],
+      },
+      {
+        chapter: 'Unit 3: Summary statistics',
+        title: 'Interquartile range',
+        setup: [
+          'Suppose Q1 = 12 and Q3 = 20.',
+          'Find the interquartile range.',
+          'Use Q3 - Q1.',
+        ],
+        prompt: 'What is the interquartile range?',
+        fieldNote: 'IQR measures the spread of the middle 50% of the data.',
+        mentorHint: 'Subtract 12 from 20.',
+        correct: '8',
+        wrong: [
+          ['32', 'That adds instead of subtracting.', 'IQR is an interval width, not a total.'],
+          ['4', 'That subtraction is off.', 'Use Q3 - Q1 exactly.'],
+          ['20', 'That is just Q3.', 'Use both quartiles.'],
+        ],
+      },
+      {
+        chapter: 'Unit 4: Percentiles, z-scores, and the normal distribution',
+        title: 'Z-score sign',
+        setup: [
+          'A test score is below the mean.',
+          'You are deciding the sign of its z-score.',
+          'Choose the best description.',
+        ],
+        prompt: 'What sign should the z-score have?',
+        fieldNote: 'Values below the mean have negative z-scores.',
+        mentorHint: 'z measures how many standard deviations a value is from the mean. Below means negative.',
+        correct: 'Negative',
+        wrong: [
+          ['Positive', 'That would place the value above the mean.', 'Check the direction from the mean.'],
+          ['Zero', 'Only values exactly at the mean have z = 0.', 'This score is below the mean.'],
+          ['Undefined', 'A normal z-score is well-defined here.', 'Only the sign question matters.'],
+        ],
+      },
+      {
+        chapter: 'Unit 5: Exploring two-variable quantitative data',
+        title: 'Correlation clue',
+        setup: [
+          'As x increases, y tends to decrease in a roughly linear way.',
+          'You are describing the correlation.',
+          'Choose the best classification.',
+        ],
+        prompt: 'What kind of correlation does this suggest?',
+        fieldNote: 'When one variable tends to go down as the other goes up, the correlation is negative.',
+        mentorHint: 'Watch the overall left-to-right slope of the point cloud.',
+        correct: 'Negative correlation',
+        wrong: [
+          ['Positive correlation', 'That would mean both variables tend to increase together.', 'This pattern moves in the opposite direction.'],
+          ['No correlation', 'A clear trend is described.', 'Correlation is about overall pattern, not perfect fit.'],
+          ['Causation', 'Correlation alone does not prove causation.', 'First classify the association.'],
+        ],
+      },
+      {
+        chapter: 'Unit 6: Collecting data',
+        title: 'Randomized experiment',
+        setup: [
+          'Participants are randomly assigned to either receive a new study app or not.',
+          'The researcher compares later test scores.',
+          'Classify the design.',
+        ],
+        prompt: 'What type of study is this?',
+        fieldNote: 'Random assignment to treatments indicates an experiment.',
+        mentorHint: 'Ask whether the researcher imposed a treatment.',
+        correct: 'Randomized experiment',
+        wrong: [
+          ['Observational study', 'The researcher did more than observe.', 'A treatment was assigned.'],
+          ['Census', 'Not everyone in a population is being included by default.', 'The key feature is random assignment.'],
+          ['Simulation', 'No artificial process is being modeled.', 'This is a real experiment on participants.'],
+        ],
+      },
+      {
+        chapter: 'Unit 7: Probability',
+        title: 'Addition rule',
+        setup: [
+          'Two events are mutually exclusive.',
+          'P(A) = 0.3 and P(B) = 0.2.',
+          'Find P(A or B).',
+        ],
+        prompt: 'What is P(A or B)?',
+        fieldNote: 'For mutually exclusive events, P(A or B) = P(A) + P(B).',
+        mentorHint: 'Add the two probabilities.',
+        correct: '0.5',
+        wrong: [
+          ['0.06', 'That multiplies instead of adding.', 'Use the addition rule for mutually exclusive events.'],
+          ['0.1', 'That subtracts incorrectly.', 'These events do not overlap.'],
+          ['1.5', 'Probabilities cannot exceed 1.', 'Stay within the probability scale.'],
+        ],
+      },
+      {
+        chapter: 'Unit 8: Random variables and probability distributions',
+        title: 'Expected value of a random variable',
+        setup: [
+          'A random variable X takes value 1 with probability 0.5 and value 3 with probability 0.5.',
+          'Find E(X).',
+          'Use a weighted average of the values.',
+        ],
+        prompt: 'What is E(X)?',
+        fieldNote: 'Expected value multiplies each possible value by its probability and sums.',
+        mentorHint: 'Compute 1(0.5) + 3(0.5).',
+        correct: '2',
+        wrong: [
+          ['1.5', 'That averages the probabilities or values incorrectly.', 'Use the weighted sum directly.'],
+          ['3', 'That chooses one outcome, not the expectation.', 'Expected value blends all outcomes.'],
+          ['4', 'That adds values without weighting.', 'Probability must be included.'],
+        ],
+      },
+      {
+        chapter: 'Unit 9: Sampling distributions',
+        title: 'Sample size and spread',
+        setup: [
+          'You increase the sample size when looking at the sampling distribution of a sample mean.',
+          'You are asked what happens to the spread.',
+          'Think standard error.',
+        ],
+        prompt: 'What generally happens to the spread of the sampling distribution?',
+        fieldNote: 'Larger sample sizes usually make the sampling distribution tighter.',
+        mentorHint: 'More data gives a more stable sample mean.',
+        correct: 'It gets smaller',
+        wrong: [
+          ['It gets larger', 'That runs opposite to the usual standard error behavior.', 'Larger n reduces variability of the sample mean.'],
+          ['It stays exactly the same', 'Sample size matters for the spread.', 'The sampling distribution depends on n.'],
+          ['It becomes impossible to describe', 'The effect is well understood.', 'Think tighter clustering.'],
+        ],
+      },
+      {
+        chapter: 'Unit 10: Inference for categorical data: Proportions',
+        title: 'Confidence interval interpretation',
+        setup: [
+          'A 95% confidence interval for a population proportion is (0.42, 0.50).',
+          'Choose the best interpretation.',
+          'Interpret the interval as plausible values for the population proportion.',
+        ],
+        prompt: 'Which interpretation is best?',
+        fieldNote: 'A confidence interval gives a range of plausible values for the population parameter.',
+        mentorHint: 'The interval is about the unknown population proportion, not a probability that the fixed parameter moves around.',
+        correct: 'We are 95% confident the population proportion is between 0.42 and 0.50',
+        wrong: [
+          ['95% of individual observations are between 0.42 and 0.50', 'Confidence intervals are not about individual observations.', 'The target is the parameter.'],
+          ['The population proportion changes value 95% of the time within this interval', 'The parameter is fixed, not changing from moment to moment.', 'Confidence refers to the method.'],
+          ['Exactly 95% of future samples will land inside 0.42 and 0.50', 'That is not the direct interpretation of this one computed interval.', 'Keep the focus on plausible parameter values.'],
+        ],
+      },
+      {
+        chapter: 'Unit 11: Inference for quantitative data: Means',
+        title: 'Null hypothesis language',
+        setup: [
+          'A null hypothesis often represents no effect or no difference.',
+          'You are deciding which statement fits that role.',
+          'Choose the best null hypothesis form.',
+        ],
+        prompt: 'Which statement best matches a null hypothesis?',
+        fieldNote: 'Null hypotheses usually express equality or no change.',
+        mentorHint: 'Look for the “no effect” statement.',
+        correct: 'The population mean is equal to the claimed benchmark',
+        wrong: [
+          ['The population mean is definitely larger because we hope so', 'A null hypothesis is not built from hope or desired outcomes.', 'Use a neutral baseline statement.'],
+          ['The sample mean must equal the population mean exactly', 'Samples vary naturally.', 'Null hypotheses are about population parameters.'],
+          ['The treatment works a little bit', 'That is directional and not a null baseline.', 'Null usually encodes no effect.'],
+        ],
+      },
+      {
+        chapter: 'Unit 12: Inference for categorical data: Chi-square',
+        title: 'Chi-square purpose',
+        setup: [
+          'A chi-square test can compare observed counts with expected counts.',
+          'You are choosing the broad purpose of the test.',
+          'Pick the best description.',
+        ],
+        prompt: 'What does a chi-square test mainly compare?',
+        fieldNote: 'Chi-square procedures are built around counts in categories.',
+        mentorHint: 'Think observed versus expected category frequencies.',
+        correct: 'Observed counts and expected counts',
+        wrong: [
+          ['Means and standard deviations only', 'That is not the core chi-square setup.', 'Chi-square is for categorical count patterns.'],
+          ['Two line slopes on a scatterplot', 'That belongs to regression, not chi-square.', 'Stay in the world of categories.'],
+          ['One exact data value and one z-score', 'That misses the count-based structure.', 'The test aggregates category counts.'],
+        ],
+      },
+      {
+        chapter: 'Unit 13: Inference for quantitative data: slopes',
+        title: 'Slope interpretation',
+        setup: [
+          'A regression line is y = 2 + 1.5x.',
+          'Interpret the slope.',
+          'Assume x increases by 1 unit.',
+        ],
+        prompt: 'What does the slope 1.5 mean?',
+        fieldNote: 'The slope tells the predicted change in y for a one-unit increase in x.',
+        mentorHint: 'Focus on how much y is expected to change when x goes up by 1.',
+        correct: 'Predicted y increases by 1.5 for each 1-unit increase in x',
+        wrong: [
+          ['Predicted y starts at 1.5 when x = 0', 'That confuses slope with intercept.', 'The intercept here is 2.'],
+          ['Predicted x increases by 1.5 when y increases by 1', 'That reverses the variables.', 'Slope is change in y over change in x.'],
+          ['The data must fit perfectly', 'A slope value alone says nothing about perfect fit.', 'Slope is about rate of change.'],
+        ],
+      },
+    ])
+}
+
+export function makeColTrigonometryQuiz(): Question[] {
+  return buildCycledMathQuiz(25101,
+    'Read the triangle or function setup carefully, identify the trigonometric relationship in play, and choose the answer that matches the actual ratio, angle, or graph feature.',
+    [
+      {
+        chapter: 'Unit 1: Right triangles and ratios',
+        title: 'Sine ratio',
+        setup: [
+          'In a right triangle, angle θ has opposite side 9 and hypotenuse 15.',
+          'Use the definition of sine.',
+          'Choose the exact ratio in simplest form.',
+        ],
+        prompt: 'What is sin(θ)?',
+        fieldNote: 'sin(θ) = opposite / hypotenuse.',
+        mentorHint: 'Write 9/15 and simplify.',
+        correct: '3/5',
+        wrong: [
+          ['5/3', 'That flips the ratio.', 'Sine is opposite over hypotenuse.'],
+          ['4/5', 'That would use a different side relationship.', 'Use only the sides named in the setup.'],
+          ['24', 'Trig ratios are quotients here, not sums.', 'Divide, do not add.'],
+        ],
+      },
+      {
+        chapter: 'Unit 2a: Radians and the unit circle',
+        title: 'Radians conversion',
+        setup: [
+          'Convert 180° to radians.',
+          'Use the standard degree-radian equivalence.',
+          'Choose the exact value.',
+        ],
+        prompt: 'What is 180° in radians?',
+        fieldNote: '180 degrees equals π radians.',
+        mentorHint: 'This is the straight-angle benchmark.',
+        correct: 'π',
+        wrong: [
+          ['π/2', 'That corresponds to 90°.', '180° is twice that amount.'],
+          ['2π', 'That corresponds to 360°.', 'A full turn is 2π, not a straight angle.'],
+          ['1', 'Radians are not counted that way here.', 'Use the degree-radian benchmark.'],
+        ],
+      },
+      {
+        chapter: 'Unit 2b: Special-angle values',
+        title: 'Unit circle cosine',
+        setup: [
+          'You are evaluating cos(π/3).',
+          'Use the unit circle special-angle value.',
+          'Choose the exact answer.',
+        ],
+        prompt: 'What is cos(π/3)?',
+        fieldNote: 'Special-angle trig values come from the unit circle or 30-60-90 triangles.',
+        mentorHint: 'π/3 radians is 60°.',
+        correct: '1/2',
+        wrong: [
+          ['sqrt(3)/2', 'That is cos(π/6) or sin(π/3), not cos(π/3).', 'Keep the angle-value pairing straight.'],
+          ['0', '60° does not land on the y-axis.', 'Cosine is positive there.'],
+          ['1', 'Only 0 radians gives cosine 1 on the unit circle.', 'Check the special-angle point.'],
+        ],
+      },
+      {
+        chapter: 'Unit 2c: Sinusoid graphs',
+        title: 'Sinusoid amplitude',
+        setup: [
+          'Consider y = 4 sin(x) - 2.',
+          'Find the amplitude of the sinusoidal function.',
+          'Amplitude is the absolute value of the sine coefficient.',
+        ],
+        prompt: 'What is the amplitude?',
+        fieldNote: 'In y = a sin(x) + d, amplitude = |a|.',
+        mentorHint: 'Ignore the vertical shift when finding amplitude.',
+        correct: '4',
+        wrong: [
+          ['2', 'That uses the vertical shift instead.', 'Amplitude comes from the sine coefficient.'],
+          ['6', 'That adds coefficient and shift incorrectly.', 'These features describe different things.'],
+          ['-4', 'Amplitude is reported as a positive size.', 'Use the absolute value.'],
+        ],
+      },
+      {
+        chapter: 'Unit 3: Non-right triangles and trigonometry',
+        title: 'Law of sines',
+        setup: [
+          'In triangle ABC, side a = 8, side b = 10, and angle A = 30°.',
+          'Use the law of sines to find sin(B).',
+          'Set up a/sin(A) = b/sin(B).',
+        ],
+        prompt: 'What is sin(B)?',
+        fieldNote: 'The law of sines matches each side with the sine of its opposite angle.',
+        mentorHint: 'Use sin(B) = b sin(A) / a.',
+        correct: '5/8',
+        wrong: [
+          ['4/5', 'That inverts the relationship.', 'Keep each side opposite its own angle.'],
+          ['3/8', 'That uses the wrong trig value for 30°.', 'sin(30°) = 1/2.'],
+          ['5/4', 'Sine cannot exceed 1 in this triangle.', 'Check the calculation and reasonableness.'],
+        ],
+      },
+      {
+        chapter: 'Unit 4: Trigonometric identities',
+        title: 'Pythagorean identity',
+        setup: [
+          'Suppose sin(θ) = 3/5 and θ is acute.',
+          'Use the Pythagorean identity to find cos(θ).',
+          'Choose the positive value.',
+        ],
+        prompt: 'What is cos(θ)?',
+        fieldNote: 'sin²(θ) + cos²(θ) = 1.',
+        mentorHint: 'This is the 3-4-5 triangle pattern in disguise.',
+        correct: '4/5',
+        wrong: [
+          ['3/5', 'That repeats sine instead of finding cosine.', 'Use the identity or triangle relationship.'],
+          ['-4/5', 'The setup says the angle is acute, so cosine is positive.', 'Use the quadrant information.'],
+          ['1/5', 'That does not satisfy the identity.', 'Check by squaring and adding.'],
+        ],
+      },
+      {
+        chapter: 'Unit 5: Trigonometric equations and inequalities',
+        title: 'Basic trig equation',
+        setup: [
+          'Solve sin(x) = 0 on the interval [0, 2π].',
+          'Use the unit circle.',
+          'List all solutions in the interval.',
+        ],
+        prompt: 'Which set gives all solutions?',
+        fieldNote: 'Sine is zero where the unit-circle point lies on the x-axis.',
+        mentorHint: 'Look at 0, π, and 2π on the unit circle.',
+        correct: '0, π, and 2π',
+        wrong: [
+          ['π/2 and 3π/2', 'Those are where cosine is zero, not sine.', 'Check which coordinate equals zero.'],
+          ['π only', 'That misses the endpoints on the interval.', 'Include all values in the stated interval.'],
+          ['0 and 2π only', 'That misses the interior solution at π.', 'Trace the full interval once around the circle.'],
+        ],
+      },
+      {
+        chapter: 'Unit 6: Inverse trigonometric functions',
+        title: 'Arcsine value',
+        setup: [
+          'Evaluate arcsin(1/2).',
+          'Use the principal-value range for arcsine.',
+          'Choose the angle in radians.',
+        ],
+        prompt: 'What is arcsin(1/2)?',
+        fieldNote: 'arcsin returns the angle in [-π/2, π/2] whose sine matches the input.',
+        mentorHint: 'Which special angle has sine 1/2 in the principal range?',
+        correct: 'π/6',
+        wrong: [
+          ['π/3', 'That angle has sine sqrt(3)/2.', 'Match the sine value first.'],
+          ['5π/6', 'That has sine 1/2 but is outside the principal arcsine range.', 'Use the inverse-function output range.'],
+          ['π/2', 'That angle has sine 1.', 'Check the unit-circle value.'],
+        ],
+      },
+      {
+        chapter: 'Unit 7: Complex numbers in trigonometric form',
+        title: 'Complex modulus',
+        setup: [
+          'Consider the complex number 3 + 4i.',
+          'Find its modulus.',
+          'Use the distance from the origin in the complex plane.',
+        ],
+        prompt: 'What is |3 + 4i|?',
+        fieldNote: 'The modulus of a + bi is sqrt(a² + b²).',
+        mentorHint: 'Use the 3-4-5 triangle.',
+        correct: '5',
+        wrong: [
+          ['7', 'That adds real and imaginary parts.', 'Use the distance formula, not simple addition.'],
+          ['25', 'That is the squared modulus.', 'Take the square root at the end.'],
+          ['1', 'That does not fit the coordinates.', 'Plot the point mentally from the origin.'],
+        ],
+      },
+    ])
+}
+
+export function makeColCollegeAlgebraQuiz(): Question[] {
+  return buildCycledMathQuiz(25201,
+    'Read the algebra setup carefully, identify the function or equation type being used, and choose the answer that matches the actual manipulation, solution, or graph feature.',
+    [
+      {
+        chapter: 'Unit 1: Linear equations and inequalities',
+        title: 'Solving a linear equation',
+        setup: [
+          'Solve 5x - 7 = 18.',
+          'Isolate x using inverse operations.',
+          'Choose the correct solution.',
+        ],
+        prompt: 'What is x?',
+        fieldNote: 'Undo subtraction and multiplication step by step.',
+        mentorHint: 'Add 7 first, then divide by 5.',
+        correct: '5',
+        wrong: [
+          ['2', 'That stops too early.', 'Finish both inverse operations.'],
+          ['25', 'That multiplies instead of dividing at the end.', 'After isolating 5x, divide by 5.'],
+          ['-5', 'The sign is incorrect.', 'Check by substitution.'],
+        ],
+      },
+      {
+        chapter: 'Unit 2: Functions',
+        title: 'Domain of a square root function',
+        setup: [
+          'Consider f(x) = sqrt(x - 4).',
+          'The expression inside the square root must be nonnegative.',
+          'Choose the domain.',
+        ],
+        prompt: 'What is the domain of the function?',
+        fieldNote: 'For real-valued square roots, the radicand must be at least zero.',
+        mentorHint: 'Solve x - 4 >= 0.',
+        correct: 'x ≥ 4',
+        wrong: [
+          ['x > 4', 'That wrongly excludes the endpoint where the square root is zero.', 'Zero is allowed under a square root.'],
+          ['x ≤ 4', 'That reverses the inequality.', 'The inside must stay nonnegative.'],
+          ['All real numbers', 'Negative radicands are not allowed in real-valued graphs.', 'Apply the square-root restriction.'],
+        ],
+      },
+      {
+        chapter: 'Unit 3: Polynomial and rational functions',
+        title: 'Remainder theorem check',
+        setup: [
+          'Let p(x) = x^2 - 3x + 2.',
+          'Use the remainder theorem to find the remainder when dividing by x - 1.',
+          'Evaluate p(1).',
+        ],
+        prompt: 'What is the remainder?',
+        fieldNote: 'The remainder when dividing by x - a is p(a).',
+        mentorHint: 'Substitute x = 1.',
+        correct: '0',
+        wrong: [
+          ['1', 'That evaluates the polynomial incorrectly.', 'Compute 1 - 3 + 2 carefully.'],
+          ['2', 'That uses the constant term only.', 'The remainder theorem uses the full polynomial value.'],
+          ['-1', 'The arithmetic sign is off.', 'Check the substitution line by line.'],
+        ],
+      },
+      {
+        chapter: 'Unit 4: Exponential and logarithmic functions',
+        title: 'Exponential equation',
+        setup: [
+          'Solve 2^x = 8.',
+          'Rewrite 8 as a power of 2.',
+          'Choose the correct exponent.',
+        ],
+        prompt: 'What is x?',
+        fieldNote: 'Matching equal bases lets you compare exponents.',
+        mentorHint: '8 = 2^3.',
+        correct: '3',
+        wrong: [
+          ['4', '2^4 is too large.', 'Match the exact power of 2.'],
+          ['2', '2^2 equals 4, not 8.', 'Check by substitution.'],
+          ['1/3', 'That reverses the exponent logic.', 'The exponent should build 8 from base 2.'],
+        ],
+      },
+      {
+        chapter: 'Unit 5: Systems of equations',
+        title: 'Elimination move',
+        setup: [
+          'Solve the system x + y = 9 and x - y = 1.',
+          'Add the equations to eliminate y.',
+          'Then solve for x and y.',
+        ],
+        prompt: 'What is the solution to the system?',
+        fieldNote: 'Elimination works well when coefficients are opposites.',
+        mentorHint: 'Adding gives 2x = 10.',
+        correct: '(5, 4)',
+        wrong: [
+          ['(4, 5)', 'That swaps the coordinates.', 'Solve for x first, then substitute back.'],
+          ['(5, -4)', 'That gives the wrong sign for y.', 'Check the original sum equation.'],
+          ['(10, -1)', 'That treats intermediate steps as the final answer.', 'Finish solving both variables.'],
+        ],
+      },
+      {
+        chapter: 'Unit 6: Matrices and determinants',
+        title: 'Matrix entry lookup',
+        setup: [
+          'Consider the matrix [[1, 4], [2, 7]].',
+          'You are asked for the entry in row 2, column 1.',
+          'Read the matrix by rows first, then columns.',
+        ],
+        prompt: 'What is the entry in row 2, column 1?',
+        fieldNote: 'Matrix positions are read as row number, then column number.',
+        mentorHint: 'Go to the second row and first column.',
+        correct: '2',
+        wrong: [
+          ['4', 'That is row 1, column 2.', 'Keep row-column order straight.'],
+          ['7', 'That is row 2, column 2.', 'Check the column index carefully.'],
+          ['1', 'That is row 1, column 1.', 'Move to the correct row first.'],
+        ],
+      },
+      {
+        chapter: 'Unit 7: Sequences and series',
+        title: 'Arithmetic sequence',
+        setup: [
+          'An arithmetic sequence starts 11, 15, 19, 23, ...',
+          'Find the next term.',
+          'Use the constant difference.',
+        ],
+        prompt: 'What is the next term?',
+        fieldNote: 'Arithmetic sequences change by a constant amount.',
+        mentorHint: 'Each step adds 4.',
+        correct: '27',
+        wrong: [
+          ['26', 'That adds inconsistently.', 'Keep the same difference.'],
+          ['28', 'That adds 5 instead of 4.', 'Check consecutive differences.'],
+          ['46', 'That jumps too far ahead.', 'Only take one step forward.'],
+        ],
+      },
+      {
+        chapter: 'Unit 8: Conic sections',
+        title: 'Parabola vertex form',
+        setup: [
+          'The parabola is y = (x - 3)^2 + 2.',
+          'Find the vertex.',
+          'Use the vertex form y = (x - h)^2 + k.',
+        ],
+        prompt: 'What is the vertex?',
+        fieldNote: 'In vertex form, the vertex is (h, k).',
+        mentorHint: 'Read h and k directly from the shifted form.',
+        correct: '(3, 2)',
+        wrong: [
+          ['(-3, 2)', 'The horizontal shift sign is misread.', 'x - 3 means h = 3.'],
+          ['(3, -2)', 'The vertical shift sign is wrong.', 'The +2 moves the graph up.'],
+          ['(0, 2)', 'That ignores the horizontal shift.', 'Use both pieces of the vertex form.'],
+        ],
+      },
+      {
+        chapter: 'Unit 9: Probability and statistics',
+        title: 'Permutation count',
+        setup: [
+          'How many ways can 3 distinct books be arranged on a shelf?',
+          'Order matters.',
+          'Choose the correct count.',
+        ],
+        prompt: 'How many arrangements are possible?',
+        fieldNote: 'For 3 distinct items, the number of permutations is 3!.',
+        mentorHint: 'Compute 3 × 2 × 1.',
+        correct: '6',
+        wrong: [
+          ['3', 'That counts items, not arrangements.', 'Permutations count possible orders.'],
+          ['9', 'That multiplies incorrectly for this situation.', 'Use factorial structure.'],
+          ['1', 'There is more than one ordering.', 'List a few to see the pattern.'],
+        ],
+      },
+    ])
+}
+
+export function makeColStatisticsProbabilityQuiz(): Question[] {
+  return buildCycledMathQuiz(25301,
+    'Read the data or probability setup carefully, identify which statistics or probability rule applies, and choose the answer that matches the actual count, distribution, or inference idea.',
+    [
+      {
+        chapter: 'Unit 1: Analyzing categorical data',
+        title: 'Relative frequency',
+        setup: [
+          'Out of 50 survey responses, 15 selected option A.',
+          'Find the relative frequency of option A.',
+          'Use count divided by total.',
+        ],
+        prompt: 'What is the relative frequency of option A?',
+        fieldNote: 'Relative frequency is the proportion of the total in a category.',
+        mentorHint: 'Compute 15/50.',
+        correct: '0.3',
+        wrong: [
+          ['3.0', 'That places the decimal incorrectly.', 'A relative frequency should be between 0 and 1.'],
+          ['35/50', 'That uses the complement count.', 'Use the category count asked for.'],
+          ['15', 'That is the raw count, not the relative frequency.', 'Divide by the total number of responses.'],
+        ],
+      },
+      {
+        chapter: 'Unit 2: Displaying and comparing quantitative data',
+        title: 'Range of a data set',
+        setup: [
+          'The smallest value in a data set is 12 and the largest is 31.',
+          'Find the range.',
+          'Use maximum minus minimum.',
+        ],
+        prompt: 'What is the range?',
+        fieldNote: 'Range is a simple measure of spread: largest minus smallest.',
+        mentorHint: 'Subtract 12 from 31.',
+        correct: '19',
+        wrong: [
+          ['43', 'That adds instead of subtracting.', 'Range is a difference.'],
+          ['21', 'The subtraction is off.', 'Use max - min carefully.'],
+          ['31', 'That is only the maximum, not the range.', 'Use both endpoints.'],
+        ],
+      },
+      {
+        chapter: 'Unit 3: Summarizing quantitative data',
+        title: 'Mean vs median with an outlier',
+        setup: [
+          'A data set has one very large high outlier.',
+          'You are deciding which center measure gets pulled more by that outlier.',
+          'Choose the better statement.',
+        ],
+        prompt: 'Which measure is more affected by the outlier?',
+        fieldNote: 'The mean is more sensitive to extreme values than the median.',
+        mentorHint: 'Think about which measure uses every value directly.',
+        correct: 'The mean',
+        wrong: [
+          ['The median', 'The median is more resistant to outliers.', 'Median depends on order position more than magnitude.'],
+          ['Neither one', 'Outliers do affect center measures, just not equally.', 'One measure is notably more sensitive.'],
+          ['The sample size only', 'That is not a measure of center.', 'Stay focused on mean versus median.'],
+        ],
+      },
+      {
+        chapter: 'Unit 4: Modeling data distributions',
+        title: 'Empirical rule',
+        setup: [
+          'A distribution is approximately normal with mean 70 and standard deviation 5.',
+          'Use the empirical rule to find the interval within one standard deviation of the mean.',
+          'Choose the correct interval.',
+        ],
+        prompt: 'Which interval is within one standard deviation of the mean?',
+        fieldNote: 'One standard deviation from the mean is mean ± 1 standard deviation.',
+        mentorHint: 'Go 5 below and 5 above 70.',
+        correct: '65 to 75',
+        wrong: [
+          ['60 to 80', 'That is two standard deviations, not one.', 'Only move one standard deviation in each direction.'],
+          ['70 to 75', 'That only goes one way from the mean.', 'Use both sides of the mean.'],
+          ['55 to 85', 'That is too wide.', 'Check the standard deviation amount.'],
+        ],
+      },
+      {
+        chapter: 'Unit 5: Exploring bivariate numerical data',
+        title: 'Residual sign',
+        setup: [
+          'A point lies above the regression line.',
+          'Residual = observed - predicted.',
+          'Choose the sign of the residual.',
+        ],
+        prompt: 'What sign is the residual?',
+        fieldNote: 'Points above the regression line have positive residuals.',
+        mentorHint: 'Observed is larger than predicted here.',
+        correct: 'Positive',
+        wrong: [
+          ['Negative', 'That would correspond to a point below the line.', 'Compare actual and predicted values carefully.'],
+          ['Zero', 'That would mean the point is on the line.', 'This point is above it.'],
+          ['Undefined', 'Residuals are defined for plotted data points.', 'Use the observed-minus-predicted rule.'],
+        ],
+      },
+      {
+        chapter: 'Unit 6: Study design',
+        title: 'Bias in a sample',
+        setup: [
+          'A school surveys only students in the chess club about favorite sports.',
+          'You are checking whether the sample is representative of the whole school.',
+          'Choose the best concern.',
+        ],
+        prompt: 'What is the main problem with this sample?',
+        fieldNote: 'If the sample comes from a narrow subgroup, it may be biased.',
+        mentorHint: 'Ask whether all students had a fair chance to be sampled.',
+        correct: 'The sample is likely biased and not representative of the whole school',
+        wrong: [
+          ['The sample is automatically random because chess is strategic', 'The club membership does not create randomness.', 'Sampling method matters, not the hobby.'],
+          ['The sample is too mathematical to study sports', 'That is not the issue here.', 'The problem is representativeness.'],
+          ['There is no problem as long as the questions are polite', 'Politeness does not fix sampling bias.', 'Focus on how the sample was chosen.'],
+        ],
+      },
+      {
+        chapter: 'Unit 7: Probability',
+        title: 'Simple probability',
+        setup: [
+          'A fair six-sided die is rolled once.',
+          'Find the probability of rolling an even number.',
+          'Count favorable outcomes over total outcomes.',
+        ],
+        prompt: 'What is the probability of rolling an even number?',
+        fieldNote: 'Even results on a standard die are 2, 4, and 6.',
+        mentorHint: 'There are 3 favorable outcomes out of 6 total.',
+        correct: '1/2',
+        wrong: [
+          ['1/3', 'That undercounts the favorable outcomes.', 'Three of the six faces are even.'],
+          ['2/3', 'That overstates the chance.', 'Only half the faces are even.'],
+          ['3', 'Probabilities are not raw counts here.', 'Use favorable over total.'],
+        ],
+      },
+      {
+        chapter: 'Unit 8: Counting, permutations, and combinations',
+        title: 'Combination logic',
+        setup: [
+          'You are choosing 2 students from a group of 5.',
+          'Order does not matter.',
+          'Choose the correct number of groups.',
+        ],
+        prompt: 'How many groups of 2 can be chosen?',
+        fieldNote: 'When order does not matter, use combinations.',
+        mentorHint: '5 choose 2 equals 10.',
+        correct: '10',
+        wrong: [
+          ['20', 'That counts ordered arrangements.', 'Combinations do not double-count order.'],
+          ['7', 'That is too small for the available pairs.', 'Think systematically or use nCr.'],
+          ['25', 'That multiplies choices without adjusting for order.', 'Combination counts are smaller than simple products here.'],
+        ],
+      },
+      {
+        chapter: 'Unit 9: Random variables',
+        title: 'Expected value of a discrete variable',
+        setup: [
+          'A random variable X takes values 0 and 4 with probabilities 0.25 and 0.75.',
+          'Find E(X).',
+          'Use the weighted average formula.',
+        ],
+        prompt: 'What is E(X)?',
+        fieldNote: 'Multiply each value by its probability, then add.',
+        mentorHint: 'Compute 0(0.25) + 4(0.75).',
+        correct: '3',
+        wrong: [
+          ['4', 'That chooses the most common outcome rather than the expectation.', 'Expected value blends all possible values.'],
+          ['1', 'That uses probabilities loosely instead of weighting the values correctly.', 'Keep the outcomes in the calculation.'],
+          ['0.75', 'That is a probability, not the expected value in outcome units.', 'Expected value uses the random-variable values too.'],
+        ],
+      },
+      {
+        chapter: 'Unit 10: Sampling distributions',
+        title: 'Sampling distribution center',
+        setup: [
+          'You repeatedly take random samples and compute the sample mean.',
+          'You are asked about the center of the sampling distribution of the sample mean.',
+          'Assume the sampling is unbiased.',
+        ],
+        prompt: 'What is the center of this sampling distribution?',
+        fieldNote: 'The sampling distribution of the sample mean is centered at the population mean.',
+        mentorHint: 'Unbiased estimators are centered at the parameter they estimate.',
+        correct: 'The population mean',
+        wrong: [
+          ['The sample size', 'That affects spread, not the center itself.', 'Separate parameter from design feature.'],
+          ['Zero', 'There is no reason for the center to be zero in general.', 'Use the population parameter being estimated.'],
+          ['The population standard deviation', 'That is a spread parameter, not the center.', 'The sample mean estimates the population mean.'],
+        ],
+      },
+      {
+        chapter: 'Unit 11: Confidence intervals',
+        title: 'Margin of error intuition',
+        setup: [
+          'Two confidence intervals are built from the same method, but one uses a larger sample size.',
+          'You are asked what typically happens to the margin of error.',
+          'Assume all else stays the same.',
+        ],
+        prompt: 'What usually happens to the margin of error?',
+        fieldNote: 'Larger samples usually reduce uncertainty and shrink the margin of error.',
+        mentorHint: 'More information generally means a tighter interval.',
+        correct: 'It gets smaller',
+        wrong: [
+          ['It gets larger', 'That goes against the usual effect of larger sample size.', 'Bigger n typically tightens the estimate.'],
+          ['It stays exactly the same', 'Sample size matters for interval width.', 'Do not ignore n in interval precision.'],
+          ['It becomes impossible to calculate', 'Larger samples do not break the method.', 'The direction is toward more precision.'],
+        ],
+      },
+      {
+        chapter: 'Unit 12: Significance tests',
+        title: 'P-value meaning',
+        setup: [
+          'A p-value is small under the null hypothesis.',
+          'You are deciding what that suggests.',
+          'Choose the best interpretation.',
+        ],
+        prompt: 'What does a small p-value suggest?',
+        fieldNote: 'A small p-value means the observed result would be unusual if the null hypothesis were true.',
+        mentorHint: 'Think “evidence against the null,” not “proof of truth.”',
+        correct: 'The data provide evidence against the null hypothesis',
+        wrong: [
+          ['The null hypothesis is 100% false', 'Statistics rarely gives absolute certainty from one test.', 'Evidence is not the same as proof.'],
+          ['The alternative hypothesis is automatically proven true', 'A test can support a claim without proving it with certainty.', 'Keep the language probabilistic.'],
+          ['The sample must have been biased', 'A small p-value alone does not imply sampling bias.', 'Interpret the p-value within hypothesis testing.'],
+        ],
+      },
+      {
+        chapter: 'Unit 13: Two-sample inference',
+        title: 'Comparing group means',
+        setup: [
+          'Two independent groups are being compared on an average outcome.',
+          'You are deciding the target parameter.',
+          'Choose the best description.',
+        ],
+        prompt: 'What parameter is being compared?',
+        fieldNote: 'Two-sample mean procedures compare population means across groups.',
+        mentorHint: 'Focus on the population quantities, not just the sample summaries.',
+        correct: 'The difference between the two population means',
+        wrong: [
+          ['The difference between the two sample sizes', 'Sample size is part of design, not the target parameter.', 'The question is about average outcomes.'],
+          ['The larger of the two sample means only', 'Inference compares both groups, not just the bigger summary.', 'Keep the parameter as a difference.'],
+          ['The product of the two population means', 'That is not the usual inferential target.', 'Use the comparison quantity the procedure is built for.'],
+        ],
+      },
+      {
+        chapter: 'Unit 14: Chi-square tests',
+        title: 'Goodness-of-fit idea',
+        setup: [
+          'A goodness-of-fit test checks whether observed category counts match a claimed distribution.',
+          'You are choosing what gets compared.',
+          'Pick the best answer.',
+        ],
+        prompt: 'What does a goodness-of-fit test compare?',
+        fieldNote: 'Goodness-of-fit is about observed counts versus expected counts under a claimed model.',
+        mentorHint: 'This is a category-count comparison, not a mean comparison.',
+        correct: 'Observed category counts and expected category counts',
+        wrong: [
+          ['Observed means and expected means', 'Chi-square goodness-of-fit is not built around means.', 'Stay with category counts.'],
+          ['A single data value and a z-score', 'That is not the structure of this test.', 'The procedure aggregates categories.'],
+          ['Two regression slopes', 'That belongs to a different inferential setting.', 'Use the categorical-count framework.'],
+        ],
+      },
+      {
+        chapter: 'Unit 15: Advanced regression',
+        title: 'Slope meaning in context',
+        setup: [
+          'A regression equation is predicted score = 40 + 2.5(hours studied).',
+          'Interpret the slope.',
+          'Assume hours studied increases by 1.',
+        ],
+        prompt: 'What does the slope 2.5 mean?',
+        fieldNote: 'In a linear model, slope is the predicted change in y for a one-unit increase in x.',
+        mentorHint: 'Ask how much the predicted score moves when study time increases by one hour.',
+        correct: 'Predicted score increases by 2.5 points for each additional hour studied',
+        wrong: [
+          ['The starting score is 2.5 when no one studies', 'That confuses slope with intercept.', 'The intercept here is 40.'],
+          ['Study time increases by 2.5 hours for each point scored', 'That reverses x and y.', 'Slope describes change in y per unit x.'],
+          ['Every student will score exactly 2.5 more points', 'Regression predictions are not exact guarantees for individuals.', 'Interpret as predicted average change.'],
+        ],
+      },
+      {
+        chapter: 'Unit 16: Analysis of variance (ANOVA)',
+        title: 'ANOVA purpose',
+        setup: [
+          'A researcher wants to compare the mean outcomes of three groups at once.',
+          'Choose the statistical procedure designed for that broad purpose.',
+          'You are identifying the method, not computing it.',
+        ],
+        prompt: 'Which procedure is designed for this job?',
+        fieldNote: 'ANOVA is used to compare means across multiple groups.',
+        mentorHint: 'The clue is “three groups at once.”',
+        correct: 'ANOVA',
+        wrong: [
+          ['A simple one-sample z-interval', 'That is for a different inferential target.', 'This problem compares multiple groups.'],
+          ['A histogram', 'That is a display, not an inferential procedure.', 'The question asks for a method.'],
+          ['A single proportion test', 'That targets categorical proportions, not several group means.', 'Match the procedure to the parameter.'],
+        ],
+      },
+    ])
+}
+
+export function makeColCalculusBCQuiz(): Question[] {
+  return buildCycledMathQuiz(25401,
+    'Read the calculus setup carefully, identify the BC idea in play, and choose the answer that matches the actual limit, derivative, integral, parametric, or series calculation.',
+    [
+      {
+        chapter: 'Unit 1: Limits and continuity',
+        title: 'Direct limit',
+        setup: [
+          'Evaluate lim x→1 of (x^2 + x).',
+          'This function is continuous at x = 1.',
+          'Use direct substitution.',
+        ],
+        prompt: 'What is the limit?',
+        fieldNote: 'Polynomials are continuous, so direct substitution works.',
+        mentorHint: 'Substitute x = 1.',
+        correct: '2',
+        wrong: [
+          ['1', 'That ignores one term.', 'Compute 1^2 + 1.'],
+          ['0', 'There is no cancellation to zero here.', 'Use direct substitution correctly.'],
+          ['Does not exist', 'Nothing breaks continuity here.', 'This is a polynomial limit.'],
+        ],
+      },
+      {
+        chapter: 'Unit 2: Basic derivative rules',
+        title: 'Derivative of a power',
+        setup: [
+          'Differentiate f(x) = x^4.',
+          'Use the power rule.',
+          'Choose the derivative.',
+        ],
+        prompt: 'What is f\'(x)?',
+        fieldNote: 'For x^n, the derivative is nx^(n-1).',
+        mentorHint: 'Bring down 4 and reduce the exponent by 1.',
+        correct: '4x^3',
+        wrong: [
+          ['x^3', 'That misses the coefficient from the power rule.', 'Keep the original exponent as a multiplier.'],
+          ['4x^4', 'The exponent must drop by one.', 'Differentiation changes the power.'],
+          ['x^5', 'The exponent moves the wrong direction.', 'Apply the rule carefully.'],
+        ],
+      },
+      {
+        chapter: 'Unit 3: Composite, implicit, and inverse functions',
+        title: 'Chain rule derivative',
+        setup: [
+          'Differentiate (x^2 + 1)^5.',
+          'Use the chain rule.',
+          'Differentiate the outside and multiply by the derivative of the inside.',
+        ],
+        prompt: 'What is the derivative?',
+        fieldNote: 'The chain rule handles compositions of functions.',
+        mentorHint: 'Start with 5(x^2 + 1)^4, then multiply by 2x.',
+        correct: '10x(x^2 + 1)^4',
+        wrong: [
+          ['5(x^2 + 1)^4', 'That forgets the inner derivative.', 'Chain rule needs both pieces.'],
+          ['10x(x^2 + 1)^5', 'The outer exponent should decrease by one.', 'Differentiate before multiplying through.'],
+          ['2x(x^2 + 1)^4', 'That misses the outer coefficient 5.', 'Differentiate the outside function too.'],
+        ],
+      },
+      {
+        chapter: 'Unit 4: Contextual applications of differentiation',
+        title: 'Acceleration from velocity',
+        setup: [
+          'A particle has velocity v(t) = 6t - 1.',
+          'Acceleration is the derivative of velocity.',
+          'Choose the acceleration function.',
+        ],
+        prompt: 'What is the acceleration?',
+        fieldNote: 'Acceleration is the rate of change of velocity.',
+        mentorHint: 'Differentiate 6t - 1.',
+        correct: '6',
+        wrong: [
+          ['6t', 'That fails to differentiate completely.', 'The derivative of 6t is a constant.'],
+          ['-1', 'That uses the constant term only.', 'Differentiate the whole expression.'],
+          ['0', 'The derivative is not zero here.', 'Check each term carefully.'],
+        ],
+      },
+      {
+        chapter: 'Unit 5: Applying derivatives to analyze functions',
+        title: 'Second derivative concavity',
+        setup: [
+          'For f(x) = x^3, find f\'\'(x).',
+          'Differentiate twice.',
+          'Choose the correct second derivative.',
+        ],
+        prompt: 'What is f\'\'(x)?',
+        fieldNote: 'Second derivatives describe how the first derivative changes.',
+        mentorHint: 'First derivative is 3x^2, then differentiate again.',
+        correct: '6x',
+        wrong: [
+          ['3x^2', 'That is only the first derivative.', 'Differentiate one more time.'],
+          ['6', 'That differentiates once too far for x^3.', 'Stop after the second derivative.'],
+          ['x', 'That drops the coefficient.', 'Carry constants through differentiation.'],
+        ],
+      },
+      {
+        chapter: 'Unit 6: Integration and accumulation of change',
+        title: 'Definite integral of a constant',
+        setup: [
+          'Evaluate ∫ from 1 to 4 of 3 dx.',
+          'This is constant accumulation over an interval of length 3.',
+          'Choose the value.',
+        ],
+        prompt: 'What is the value of the integral?',
+        fieldNote: 'A constant integral equals height times interval length.',
+        mentorHint: 'Multiply 3 by (4 - 1).',
+        correct: '9',
+        wrong: [
+          ['12', 'That uses the upper bound directly instead of the interval length.', 'Integrate over the width of the interval.'],
+          ['3', 'That keeps only the height.', 'Include the interval length.'],
+          ['1', 'That ignores the accumulation entirely.', 'Think area of a rectangle.'],
+        ],
+      },
+      {
+        chapter: 'Unit 7: Differential equations',
+        title: 'Euler step',
+        setup: [
+          'Suppose y\' = 2x, and at x = 1 the solution has y = 3.',
+          'Use Euler’s method with step size 0.5 to estimate y at x = 1.5.',
+          'Use the slope at x = 1.',
+        ],
+        prompt: 'What is the Euler estimate for y(1.5)?',
+        fieldNote: 'Euler’s method uses current value plus step size times current slope.',
+        mentorHint: 'At x = 1, the slope is 2. Then compute 3 + 0.5(2).',
+        correct: '4',
+        wrong: [
+          ['5', 'That uses too large a change.', 'Multiply slope by the step size, not by 1.'],
+          ['3.5', 'That uses slope 1 instead of 2.', 'Evaluate the derivative at x = 1.'],
+          ['2', 'That moves in the wrong direction.', 'The slope here is positive.'],
+        ],
+      },
+      {
+        chapter: 'Unit 8: Applications of integration',
+        title: 'Average value of a function',
+        setup: [
+          'Find the average value of f(x) = x on [0, 2].',
+          'Use (1/(b-a)) times the definite integral.',
+          'Choose the correct value.',
+        ],
+        prompt: 'What is the average value?',
+        fieldNote: 'Average value on [a, b] is (1/(b-a))∫_a^b f(x) dx.',
+        mentorHint: 'The integral of x from 0 to 2 is 2, then divide by 2.',
+        correct: '1',
+        wrong: [
+          ['2', 'That is the integral, not the average value.', 'Divide by interval length after integrating.'],
+          ['1/2', 'That divides too far.', 'Check the integral and interval width carefully.'],
+          ['0', 'The function is positive on most of the interval.', 'The average should be positive.'],
+        ],
+      },
+      {
+        chapter: 'Unit 9: Parametric, polar, and vector-valued functions',
+        title: 'Parametric derivative',
+        setup: [
+          'A curve is defined parametrically by x = t^2 and y = t^3.',
+          'Find dy/dx.',
+          'Use (dy/dt) / (dx/dt).',
+        ],
+        prompt: 'What is dy/dx in terms of t?',
+        fieldNote: 'For parametric equations, dy/dx = (dy/dt)/(dx/dt) when dx/dt ≠ 0.',
+        mentorHint: 'dy/dt = 3t^2 and dx/dt = 2t.',
+        correct: '3t/2',
+        wrong: [
+          ['3t^2 / 2', 'That fails to simplify after dividing by 2t.', 'Cancel a factor of t.'],
+          ['2t/3', 'That flips the derivative ratio.', 'Use dy/dt over dx/dt, not the reverse.'],
+          ['t/2', 'That drops the factor 3.', 'Carry coefficients through the ratio.'],
+        ],
+      },
+      {
+        chapter: 'Unit 10: Infinite sequences and series',
+        title: 'Convergence of a geometric series',
+        setup: [
+          'Consider the infinite geometric series 3 + 3/2 + 3/4 + ...',
+          'The common ratio is 1/2.',
+          'Decide whether the series converges.',
+        ],
+        prompt: 'Does the infinite series converge?',
+        fieldNote: 'An infinite geometric series converges when |r| < 1.',
+        mentorHint: 'Here the common ratio is 1/2.',
+        correct: 'Yes, it converges',
+        wrong: [
+          ['No, it diverges because it has infinitely many terms', 'Infinite length alone does not force divergence.', 'Check the common ratio.'],
+          ['No, it diverges because the terms are positive', 'Positive terms can still form a convergent geometric series.', 'Use the geometric-series test.'],
+          ['It is impossible to tell', 'The ratio gives enough information here.', 'Use the convergence criterion directly.'],
+        ],
+      },
+      {
+        chapter: 'Unit 11: AP Calculus BC solved exams',
+        title: 'Taylor series clue',
+        setup: [
+          'The Maclaurin series for e^x begins 1 + x + x^2/2! + ...',
+          'You are asked for the coefficient of x^2.',
+          'Choose the exact coefficient.',
+        ],
+        prompt: 'What is the coefficient of x^2?',
+        fieldNote: 'In the Maclaurin series for e^x, the x^n coefficient is 1/n!.',
+        mentorHint: 'For n = 2, use 1/2!.',
+        correct: '1/2',
+        wrong: [
+          ['2', 'That flips the factorial value.', '2! belongs in the denominator.'],
+          ['1', 'That would be the coefficient of x.', 'Match the term to the correct power.'],
+          ['1/6', 'That belongs to x^3, not x^2.', 'Use n = 2.'],
+        ],
+      },
+    ])
+}

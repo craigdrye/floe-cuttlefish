@@ -1,0 +1,3406 @@
+{
+  "source": "NYSED 2024 Grades 3-8 Mathematics Released Questions",
+  "questionCount": 170,
+  "items": [
+    {
+      "source_id": "nysed-math-2024::grade-3::1",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-3.OA.2 Operations and Algebraic Thinking 0.73",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::2",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-3.NBT.1 Number and Operations - Base Ten 0.70",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::4",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-3.NF.2b Number and Operations - Fractions 0.80",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::8",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 8,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.OA.1 Operations and Algebraic Thinking 0.82",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::9",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-3.MD.7d Measurement and Data 0.57",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::12",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 12,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-3.NF.3c Number and Operations - Fractions 0.34",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::13",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.MD.5b Measurement and Data 0.62",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::18",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 18,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-3.OA.5 Operations and Algebraic Thinking 0.70",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::21",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.NF.1 Number and Operations - Fractions 0.85",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::23",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-3.MD.7a Measurement and Data 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::25",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 25,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-3.OA.6 Operations and Algebraic Thinking 0.75",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::26",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 26,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-3.G.2 Geometry 0.86",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::27",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 27,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.OA.9 Operations and Algebraic Thinking 0.72",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::28",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 28,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-3.MD.6 Measurement and Data 0.79",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::29",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 29,
+      "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-3.OA.8a Operations and Algebraic Thinking 0.41",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::30",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 30,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-3.NF.3b Number and Operations - Fractions 0.52",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::31",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 31,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-3.MD.1 Measurement and Data 0.73 0.73",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::32",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 32,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-3.NBT.4b Number and Operations - Base Ten 0.43 0.43",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::33",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 33,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-3.OA.3 Operations and Algebraic Thinking 0.66 0.66",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::34",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 34,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-3.MD.7b Measurement and Data 1.03 0.52",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::35",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 35,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-3.NF.3b Number and Operations - Fractions 0.78 0.39",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::36",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 36,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-3.NBT.3 Number and Operations - Base Ten NGLS.Math.Content.NY-3.OA.8a 0.94 0.47",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::37",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 37,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-3.OA.3 Operations and Algebraic Thinking 0.84 0.42",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-3::38",
+      "collection_id": "nysed-math-2024::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2024 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g3.pdf",
+      "question_number": 38,
+      "prompt_text": "Constructed Response n/a 3 NGLS.Math.Content.NY-3.NF.3d Number and Operations - Fractions 0.72 0.24 Secondary Standard(s) *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding. Constructed Response Questions Grade 3 2024 Mathematics Tests Map to the Standards THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 THE STATE EDUCATION DEPARTMENT Question Type Key Points Standard Domain",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=3",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::1",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-4.OA.2 Operations and Algebraic Thinking 0.91",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::2",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-4.NF.1 Number and Operations - Fractions 0.77",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::7",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-4.MD.7 Measurement and Data 0.67",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::10",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-4.G.1 Geometry 0.74",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::11",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-4.NF.3a Number and Operations - Fractions 0.77",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::12",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 12,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-4.NBT.3 Number and Operations in Base Ten 0.82",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::15",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-4.NF.4c Number and Operations - Fractions 0.69",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::16",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-4.NBT.6 Number and Operations in Base Ten 0.73",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::22",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 22,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-4.NF.3c Number and Operations - Fractions 0.46",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::23",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-4.NBT.1 Number and Operations in Base Ten 0.60",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::24",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 24,
+      "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-4.NF.4b Number and Operations - Fractions 0.58",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::26",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 26,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-4.G.2c Geometry 0.60",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::29",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 29,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-4.NBT.5 Number and Operations in Base Ten 0.69",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::30",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 30,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-4.MD.3 Measurement and Data 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::31",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-4.G.3 Geometry 0.58",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::32",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-4.OA.3a Operations and Algebraic Thinking 0.58",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::33",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-4.NF.2 Number and Operations - Fractions 0.74",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::34",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-4.NBT.5 Number and Operations in Base Ten 0.67",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::35",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-4.NF.3b Number and Operations - Fractions 0.63",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::36",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 36,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-4.MD.6 Measurement and Data 0.63 0.63",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::37",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 37,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-4.OA.4 Operations and Algebraic Thinking 0.58 0.58",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::38",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 38,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-4.G.2a Geometry 0.52 0.52",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::39",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 39,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-4.NBT.6 Number and Operations in Base Ten 0.79 0.40",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::40",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 40,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-4.NBT.2b Number and Operations in Base Ten NGLS.Math.Content.NY-4.NBT.2a 1.05 0.53",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::41",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-4.MD.4 Measurement and Data 0.85 0.43",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::42",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-4.NF.4a Number and Operations - Fractions 0.92 0.46",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::43",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-4.G.1 Geometry 0.82 0.41",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-4::44",
+      "collection_id": "nysed-math-2024::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2024 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g4.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response n/a 3 NGLS.Math.Content.NY-4.OA.3b Operations and Algebraic Thinking NGLS.Math.Content.NY-4.OA.3a 1.13 0.38 *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding. Secondary Standard(s) Constructed Response Questions Grade 4 THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 THE STATE EDUCATION DEPARTMENT 2024 Mathematics Tests Map to the Standards Question Type Key Points Standard Domain",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=3",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::1",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-5.NBT.7 Number and Operations in Base Ten 0.89",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::2",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-5.NF.4a Number and Operations - Fractions 0.75",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::3",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-5.MD.3a Measurement and Data 0.70",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::4",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-5.NBT.4 Number and Operations in Base Ten 0.62",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::7",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-5.NF.3 Number and Operations - Fractions 0.43",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::9",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-5.MD.5c Measurement and Data 0.51",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::10",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-5.NF.7c Number and Operations - Fractions 0.71",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::12",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 12,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-4.MD.2a Measurement and Data 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::15",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-5.NBT.6 Number and Operations in Base Ten 0.42",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::16",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-5.NBT.3b Number and Operations in Base Ten 0.83",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::19",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 19,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-5.G.3 Geometry 0.48",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::27",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 27,
+      "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-5.NF.7a Number and Operations - Fractions 0.72",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::28",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 28,
+      "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-5.NF.2 Number and Operations - Fractions 0.46",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::30",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 30,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-5.NF.4b Number and Operations - Fractions 0.27",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::31",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-5.NBT.7 Number and Operations in Base Ten 0.73",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::32",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-5.NF.1 Number and Operations - Fractions 0.61",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::33",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-5.G.4 Geometry 0.38",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::34",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-5.NF.2 Number and Operations - Fractions 0.71",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::35",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-5.MD.1 Measurement and Data 0.49",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::36",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 36,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-5.MD.5a Measurement and Data 0.57 0.57",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::37",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 37,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-5.NF.6 Number and Operations - Fractions 0.12 0.12",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::38",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 38,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-5.NBT.6 Number and Operations in Base Ten 0.62 0.62",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::39",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 39,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-5.MD.2 Measurement and Data 0.97 0.49",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::40",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 40,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-5.NF.4b Number and Operations - Fractions 0.54 0.27",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::41",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-5.NF.5a Number and Operations - Fractions 0.43 0.22",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::42",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-5.NBT.3a Number and Operations in Base Ten 0.48 0.24",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::43",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-5.MD.5a Measurement and Data 1.04 0.52",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::44",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response n/a 3 NGLS.Math.Content.NY-5.NBT.7 Number and Operations in Base Ten 0.55 0.18 2024 Mathematics Tests Map to the Standards THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 THE STATE EDUCATION DEPARTMENT *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding. Secondary Standard(s) Constructed Response Questions Grade 5 Question Type Key Points Standard Domain",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=3",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-5::54",
+      "collection_id": "nysed-math-2024::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2024 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g5.pdf",
+      "question_number": 54,
+      "prompt_text": "employees. What is the minimum number of buses the company needs to transport all of the employees to the picnic area? A 24 B 25 C 26 D 27 Which comparison is true? A B C D",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::2",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-6.EE.2a Expressions and Equations 0.71",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::3",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-6.EE.5 Expressions and Equations 0.71",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::4",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-6.NS.8 The Number System 0.62",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::7",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 7,
+      "prompt_text": "pounds of chocolates. How long, in minutes, will it take the machine to produce",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::9",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 9,
+      "prompt_text": "pounds of chocolates? A 6 B 15 C 54 D 63 The dimensions of a cereal box in the shape of a right rectangular prism are shown below. inches by inches by inches What is the volume, in cubic inches, of the cereal box? A B C D",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::11",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-6.EE.8 Expressions and Equations 0.55",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::14",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-6.EE.1 Expressions and Equations 0.58",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::15",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-6.NS.1 The Number System 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::18",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 18,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-6.NS.6a The Number System 0.28",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::20",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 20,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-6.G.2 Geometry 0.44",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::22",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 22,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-6.EE.6 Expressions and Equations 0.58",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::23",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-6.RP.3d Ratios and Proportional Relationships 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::26",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 26,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-6.NS.6b The Number System 0.38",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::28",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 28,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-6.G.1 Geometry 0.35",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::29",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 29,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-6.NS.7a The Number System 0.47",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::31",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-6.RP.2 Ratios and Proportional Relationships 0.89",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::32",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-6.G.4 Geometry 0.53",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::33",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-6.RP.3c Ratios and Proportional Relationships 0.50",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::34",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-6.RP.3b Ratios and Proportional Relationships 0.73",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::35",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-6.G.2 Geometry 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::36",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 36,
+      "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-6.EE.7 Expressions and Equations NGLS.Math.Content.NY-6.RP.3b 0.71",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::37",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 37,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-6.G.3 Geometry 0.20 0.20",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::38",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 38,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-6.EE.7 Expressions and Equations 0.58 0.58",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::39",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 39,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-6.RP.2 Ratios and Proportional Relationships NGLS.Math.Content.NY-6.RP.3b 0.37 0.37",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::40",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 40,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-6.G.1 Geometry 0.68 0.34",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::41",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-6.EE.4 Expressions and Equations 0.74 0.37",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::42",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-6.EE.9 Expressions and Equations 0.57 0.28",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::43",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-6.NS.4 The Number System 0.85 0.42",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::44",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-6.G.5 Geometry 0.59 0.30",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::45",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 45,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-6.NS.8 The Number System 0.90 0.45",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-6::46",
+      "collection_id": "nysed-math-2024::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2024 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g6.pdf",
+      "question_number": 46,
+      "prompt_text": "Constructed Response n/a 3 NGLS.Math.Content.NY-6.RP.3a Ratios and Proportional Relationships 1.17 0.39 2024 Mathematics Tests Map to the Standards THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 THE STATE EDUCATION DEPARTMENT *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding. Secondary Standard(s) Constructed Response Questions Grade 6 Question Type Key Points Standard Domain",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=3",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::1",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-7.RP.2b Ratios and Proportional Relationships 0.89",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::4",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-7.EE.4a Expressions and Equations 0.68",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::5",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 5,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-7.NS.1c The Number System 0.52",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::6",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 6,
+      "prompt_text": "blocks west. C The total distance Nicole hikes from a depth of 10 feet below sea level to a height of 10 feet above sea level. D The total number of cookies Tiffany has if she bought 4 batches of cookies and sold the 4 batches of cookies. Cheryl earns babysitting for hours. At that rate, how much does Cheryl earn when babysitting for hours? A B C D",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::7",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-6.SP.2 Statistics and Probability 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::10",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-7.EE.4b Expressions and Equations 0.49",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::11",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-7.EE.2 Expressions and Equations 0.30",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::12",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 12,
+      "prompt_text": "more pencils. B The total number of blocks Tom walks after walking 6 blocks north and walking",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::13",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-7.EE.1 Expressions and Equations 0.68",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::14",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-7.SP.1 Statistics and Probability 0.58",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::15",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-7.NS.1d The Number System 0.69",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::17",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 17,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-7.EE.3 Expressions and Equations 0.40",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::21",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-7.RP.2c Ratios and Proportional Relationships 0.52",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::26",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 26,
+      "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-7.RP.1 Ratios and Proportional Relationships 0.47",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::29",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 29,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-7.RP.3 Ratios and Proportional Relationships 0.67",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::30",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 30,
+      "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-7.EE.4b Expressions and Equations 0.28",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::31",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-7.NS.3 The Number System 0.70",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::33",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-7.NS.1a The Number System 0.78",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::34",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-7.RP.3 Ratios and Proportional Relationships 0.75",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::35",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-7.SP.3 Statistics and Probability 0.63",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::36",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 36,
+      "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-7.NS.3 The Number System 0.55",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::37",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 37,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-7.EE.1 Expressions and Equations 0.60",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::38",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 38,
+      "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-7.RP.2b Ratios and Proportional Relationships 0.65",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::39",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 39,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-7.RP.2c Ratios and Proportional Relationships 0.31 0.31",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::40",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 40,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-7.NS.2c The Number System 0.81 0.81",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::41",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response n/a 1 NGLS.Math.Content.NY-7.RP.3 Ratios and Proportional Relationships 0.33 0.33",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::42",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-7.NS.1d The Number System NGLS.Math.Content.NY-7.NS.1b 1.21 0.60",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::43",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-7.RP.1 Ratios and Proportional Relationships 1.20 0.60",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::44",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-7.G.1 Geometry 1.43 0.72",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::45",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 45,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-7.EE.4a Expressions and Equations 1.33 0.67",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::46",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 46,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-7.EE.1 Expressions and Equations 0.76 0.38",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::47",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 47,
+      "prompt_text": "Constructed Response n/a 2 NGLS.Math.Content.NY-7.SP.8a Statistics and Probability 0.73 0.36",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=2",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-7::48",
+      "collection_id": "nysed-math-2024::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2024 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g7.pdf",
+      "question_number": 48,
+      "prompt_text": "Constructed Response n/a 3 NGLS.Math.Content.NY-7.RP.3 Ratios and Proportional Relationships 0.75 0.25 2024 Mathematics Tests Map to the Standards THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 THE STATE EDUCATION DEPARTMENT *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding. Secondary Standard(s) Constructed Response Questions Grade 7 Question Type Key Points Standard Domain",
+      "answer_key_excerpt": "Constructed Response; correct=n/a; points=3",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::1",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 1,
+      "prompt_text": "2 Triangle is rotated about the origin and then reected over the axis to form triangle . One of the angles in triangle has a measure of . One of the angles in triangle has a measure of . Which is the measure of an angle in triangle ? A B C D What is the value of in the equation ? A B C D",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::4",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 4,
+      "prompt_text": "5 Two electricians, Electrician A and Electrician B, offer pricing plans for their work. Each electrician charges an initial fee for a service call plus an hourly rate. The charges for each electrician are represented by the equation and the table shown below. Which statement comparing the charges for each electrician is true? A Electrician A has an initial fee and an hourly rate that are both less than those for Electrician B. B Electrician A has an initial fee and an hourly rate that are both greater than those for Electrician B. C Electrician A has an initial fee that is less than that for Electrician B. The hourly rate for Electrician A is greater than that for Electrician B. D Electrician A has an initial fee that is greater than that for Electrician B. The hourly rate for Electrician A is less than that for Electrician B.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::7",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 7,
+      "prompt_text": "What is the slope of the line on a coordinate plane that passes through the points and ? A B C D",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::9",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 9,
+      "prompt_text": "A sphere has a radius of inches. A cone has a radius of inches and a height of inches. Which expression represents the difference in volume, in cubic inches, between the sphere and the cone? A B C D",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::10",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 10,
+      "prompt_text": "Which value of makes the equation true? A B C D",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::12",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 12,
+      "prompt_text": "The scatter plot below shows the weight, in pounds, of an alligator as it grows at a zoo. The line has been drawn to best represent the relationship between the alligator\u2019s weight and growth time. Which statement best describes what the number in the equation represents in this situation? A The starting weight, in pounds, of the alligator. B The approximate number of pounds the alligator gains each week. C The maximum number of pounds the alligator gains each week. D The average number of pounds of food the alligator is fed each week.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::18",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 18,
+      "prompt_text": "Trapezoid ABCD and its image A\u2019B\u2019C\u2019D\u2019 are shown on the coordinate plane below. Which series of transformations could be applied to map trapezoid ABCD onto trapezoid A\u2019B\u2019C\u2019D\u2019 ? A reection over the x axis and then a rotation of 180\u02da about the origin B reection over the x axis and then a rotation of 90\u02da about the origin C reection over the y axis and then a rotation of 180\u02da about the origin D reection over the y axis and then a rotation of 90\u02da about the origin Which equation represents a linear function? A B C D",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::19",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 19,
+      "prompt_text": "20 On a coordinate plane, triangle is rotated degrees clockwise about the origin and then dilated with a scale factor of centered at the origin to form triangle . Which statement describes the relationship between triangle and triangle ? A They are similar and congruent. B They are similar but not congruent. C They are congruent but not similar. D They are neither congruent nor similar. One of the angles in a triangle measures degrees. Another angle in the triangle measures degrees. Which expression represents the measurement, in degrees, of the third angle of the triangle? A B C D",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::22",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 22,
+      "prompt_text": "23 Which expression is equivalent to ? A B C D",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::27",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 27,
+      "prompt_text": "Which list of numbers could represent the side lengths of a right triangle? A 5, 10, 13 B 5, 12, 17 C 10, 24, 26 D 10, 24, 68",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::30",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 30,
+      "prompt_text": "STOP Grade 8 Mathematics Test Spring 2024 GRADE 8 MATH SESSION 2 Name: New York State Testing Program Mathematics Test Grade \u2022 \u2022 Spring 2024 r L _J Z NOISS3S HlVII\\I 8 30W9 Developed and published under contract with the New Y ork State Education Department by NWEA, a division of HMH, 14720 Energy Way, Apple Valley, MN 55124. Copyright \u00a9 2024 by the New Y ork State Education Department. TIPS FOR TAKING THE TEST Here are some ideas to help you do your best: \u2022 Read each question carefully. T ake your time. \u2022 You have a ruler , a protractor, a reference sheet, and a calculator that you can use on the test if they help you answer the question. \u2022 Be sure to show your work when asked. \u2022 Be sure to explain your answer when asked. The table below represents a function. Which statement describes the function? A The function is nonlinear because the intercept is 0. B The function is linear because the rate of change is constant. C The function is linear because the intercept is a constant value. D The function is nonlinear because the rate of change is not constant.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::33",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 33,
+      "prompt_text": "Quadrilateral is rotated about the origin to form quadrilateral . Which two sides are equal in length? A and B and C and D and",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::34",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 34,
+      "prompt_text": "A manufacturer makes cylindrical cans in two sizes. The dimensions of each can are shown in the diagram below. What is the difference between the volumes, in cubic centimeters, of the large can and the small can in terms of ? A B C D An equation is shown below. Which statement about the equation is true? A It has no solutions. B It has exactly one solution. C It has exactly two solutions. D It has an innite number of solutions.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::35",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 35,
+      "prompt_text": "36 Which statement best describes the value of ? A between and B between and C between and but closer to D between and but closer to A set of ordered pairs is shown below. Which ordered pair should be removed to make the set a function? A B C D",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::37",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 37,
+      "prompt_text": "38 This question is worth 1 credit. A movie theater sells popcorn in cone shaped containers as shown below. What is the volume, in cubic inches, of the popcorn container? Round your answer to the nearest tenth. Answer cubic inches",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::39",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 39,
+      "prompt_text": "This question is worth 1 credit. The area of a square shaped garden is 324 square feet. What is the length, in feet, of each side of the garden? Answer feet",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::40",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 40,
+      "prompt_text": "This question is worth 1 credit. Line segment AB is graphed on the coordinate plane shown below. What is the length, in units, of line segment AB ? Answer units",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::41",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 41,
+      "prompt_text": "This question is worth 2 credits. In the gure below, line p is parallel to line q and lines and are transversals. What is the measure, in degrees, of ? Show your work. Answer degrees",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::42",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 42,
+      "prompt_text": "This question is worth 2 credits. The equation is used to model the yearly salary, , of an employee, in thousands of dollars, where is the number of years the employee has worked for the company. What does the slope of the line represent in this situation? Explain your answer.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::43",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 43,
+      "prompt_text": "This question is worth 2 credits. A dog owner collected data to see which of his two dogs runs at the greater speed. The graph and the table below show the relationship between the time, in seconds, and the distance, in feet, each dog ran. What is the difference, in feet per second, between the speeds of the two dogs? Show your work. Answer feet per second",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::44",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 44,
+      "prompt_text": "This question is worth 2 credits. Two ordered pairs of a linear function are shown below. What is the rate of change for the function? Show your work. Answer",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::45",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 45,
+      "prompt_text": "This question is worth 2 credits. What value of makes the equation shown below true? Show your work. Answer",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::46",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 46,
+      "prompt_text": "This question is worth 2 credits. A list of numbers is shown below. Classify each number as either rational or irrational. Be sure to include how you know a number is rational. Explain your answer.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::47",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 47,
+      "prompt_text": "This question is worth 3 credits. Store A and Store B sell fabric for different prices. The equation represents the price, , in dollars, for yards of fabric at Store A. The graph below represents the price for the same type of fabric at Store B. What is the unit rate for the price of fabric, per yard, at each store? Store A $ per yard of fabric Store B $ per yard of fabric How much more would the price of yards of fabric be at Store A than at Store B ? Show your work. Answer $",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2024::grade-8::48",
+      "collection_id": "nysed-math-2024::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2024 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2024/2024-released-items-math-g8.pdf",
+      "question_number": 48,
+      "prompt_text": "STOP Grade 8 Mathematics Test Spring 2024",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2024 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2024"
+      ]
+    }
+  ]
+}

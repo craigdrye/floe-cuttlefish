@@ -1,0 +1,476 @@
+{
+  "generated": "2026-05-03",
+  "scope": "Remaining fixed-choice OER candidates after existing OpenDSA, OpenTrivia brain-teaser, OpenSAT, IMS, and OpenIntro slide imports.",
+  "criteria": [
+    "prompt present and self-contained",
+    "correct answer present",
+    "at least two distinct wrong choices",
+    "no obvious answer leakage",
+    "no template placeholders in playable text",
+    "category/course alignment and no high-churn current-events categories"
+  ],
+  "opendsa": {
+    "totalRaw": 1257,
+    "candidateCount": 122,
+    "byCollection": [
+      {
+        "key": "open-dsa::mengbridgecourse",
+        "count": 122
+      }
+    ],
+    "recommendations": {
+      "open-dsa::mengbridgecourse": {
+        "track": "universityPrep: Software Engineering Prep / Intro Computer Science",
+        "reason": "bridge-course CS basics, debugging, and programming concepts not covered by the Algorithms/Software/Formal Languages imports"
+      }
+    },
+    "samples": [
+      {
+        "source_id": "opendsa::MengBridgeCourse/AdditionalStuff/OOP1Checkpoint1/OOP1Checkpoint1Q1.html",
+        "collection_id": "open-dsa::mengbridgecourse",
+        "prompt_text": "How many objects and object references would we have if the following code is executed?",
+        "correct_answer": "2 objects, 3 references",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opendsa::MengBridgeCourse/AdditionalStuff/OOP1Checkpoint1/OOP1Checkpoint1Q2.html",
+        "collection_id": "open-dsa::mengbridgecourse",
+        "prompt_text": "What kind of variable is label?",
+        "correct_answer": "local variable, Object Reference",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opendsa::MengBridgeCourse/AdditionalStuff/OOP1Checkpoint1/OOP1Checkpoint1Q3.html",
+        "collection_id": "open-dsa::mengbridgecourse",
+        "prompt_text": "One of the key features of Object-oriented programming is encapsulation. Because of encapsulation, we generally have _________ instance variables and _____________ methods.",
+        "correct_answer": "private, public",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opendsa::MengBridgeCourse/AdditionalStuff/RecursionCheckpoint4Q2.html",
+        "collection_id": "open-dsa::mengbridgecourse",
+        "prompt_text": "Given a recursive algorithm to calculate the the nth fibonacci number that makes 2 recursive calls. Approximately how many recursive calls would it make to calculate the 7th fibonacci number? The fibonacci series is a series of numbers in which each number is the sum of the two preceding numbers. Here's the beginning of the sequence: 1, 1, 2, 3, 5, 8",
+        "correct_answer": "2^7",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opendsa::MengBridgeCourse/BagsCheckpoint1Q1.html",
+        "collection_id": "open-dsa::mengbridgecourse",
+        "prompt_text": "Which method in the ArrayBag class is overloaded?",
+        "correct_answer": "remove",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opendsa::MengBridgeCourse/BagsCheckpoint1Q2.html",
+        "collection_id": "open-dsa::mengbridgecourse",
+        "prompt_text": "What does the add method return?",
+        "correct_answer": "True if the addition is successful, or false if not.",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opendsa::MengBridgeCourse/BagsCheckpoint1Q3.html",
+        "collection_id": "open-dsa::mengbridgecourse",
+        "prompt_text": "A set is an abstract data type that is similar to a bag. It is also unordered, but it does not allow duplicates. Examples of sets would be even integers or a collection of the movies you have previously seen. Which bag behavior would need to be modified for a set?",
+        "correct_answer": "add",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opendsa::MengBridgeCourse/BagsCheckpoint2Q2.html",
+        "collection_id": "open-dsa::mengbridgecourse",
+        "prompt_text": "In the Fixed Size Array implementation of a Bag, depicted below as ArrayBag1, what happens when a client tries to add an element to the ArrayBag1 but the underlying array is full?",
+        "correct_answer": "The element does not get added",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opendsa::MengBridgeCourse/BagsCheckpoint3Q1.html",
+        "collection_id": "open-dsa::mengbridgecourse",
+        "prompt_text": "Which of the following 5 implementations could not be used for contains?",
+        "correct_answer": "public boolean contains(T anEntry) { return !isEmpty(); }",
+        "wrong_count": 4
+      },
+      {
+        "source_id": "opendsa::MengBridgeCourse/BagsCheckpoint3Q2.html",
+        "collection_id": "open-dsa::mengbridgecourse",
+        "prompt_text": "Which of the following 5 implementations could not be used for getFrequency?",
+        "correct_answer": "public int getFrequencyOf(T anEntry) { int i = 0; int count = 0; while(anEntry.equals(contents[i])) { i++; count++; } return numberOfEntries - count; }",
+        "wrong_count": 4
+      }
+    ]
+  },
+  "openTriviaQA": {
+    "totalRaw": 49716,
+    "candidateCount": 7728,
+    "byCategory": [
+      {
+        "key": "science-technology",
+        "count": 2067
+      },
+      {
+        "key": "history",
+        "count": 1365
+      },
+      {
+        "key": "literature",
+        "count": 1084
+      },
+      {
+        "key": "animals",
+        "count": 1003
+      },
+      {
+        "key": "humanities",
+        "count": 898
+      },
+      {
+        "key": "geography",
+        "count": 758
+      },
+      {
+        "key": "for-kids",
+        "count": 553
+      }
+    ],
+    "recommendations": {
+      "for-kids": {
+        "track": "primary: Big Questions / Science Discovery / Reading and Vocab",
+        "reason": "age-appropriate general knowledge with fixed answer choices"
+      },
+      "science-technology": {
+        "track": "high/university: Science Discovery, AP Sciences, Intro CS where topic-matched",
+        "reason": "course-adjacent science and technology facts with fixed answer choices"
+      },
+      "geography": {
+        "track": "high: World History / AP Human Geography",
+        "reason": "map, country, region, and place knowledge aligned to geography tracks"
+      },
+      "history": {
+        "track": "high: US History / World History / AP History",
+        "reason": "history facts aligned to existing history tracks"
+      },
+      "literature": {
+        "track": "high/university: English Literature / Humanities",
+        "reason": "literature facts aligned to humanities and English tracks"
+      },
+      "humanities": {
+        "track": "high/university: Humanities / Philosophy / Art History",
+        "reason": "humanities facts aligned to existing humanities tracks"
+      },
+      "animals": {
+        "track": "primary/high: Science Discovery / Biology",
+        "reason": "biology and animal science facts with simple fixed choices"
+      }
+    },
+    "excludedCategories": [
+      "brain-teasers already imported",
+      "movies/television/music/celebrities/sports/video-games/entertainment/hobbies/rated/newest/people/world as too entertainment-heavy, too broad, or time-sensitive",
+      "religion-faith as not a current course-aligned safe import without a dedicated review policy"
+    ],
+    "samples": [
+      {
+        "source_id": "opentriviaqa::animals::1",
+        "category": "animals",
+        "prompt_text": "Three of these animals hibernate. Which one does not?",
+        "correct_answer": "Sloth",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opentriviaqa::animals::2",
+        "category": "animals",
+        "prompt_text": "All of these animals are omnivorous except one.",
+        "correct_answer": "Snail",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opentriviaqa::animals::3",
+        "category": "animals",
+        "prompt_text": "Three of these Latin names are names of bears. Which is the odd one?",
+        "correct_answer": "Felis silvestris catus",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opentriviaqa::animals::4",
+        "category": "animals",
+        "prompt_text": "These are typical Australian animals except one.",
+        "correct_answer": "Sloth",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opentriviaqa::animals::5",
+        "category": "animals",
+        "prompt_text": "Representatives of three of these species produce venom of their own. Which is the odd species?",
+        "correct_answer": "Mosquitos",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opentriviaqa::animals::6",
+        "category": "animals",
+        "prompt_text": "Three of these species shed their skin. Which one does not?",
+        "correct_answer": "Penguins",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opentriviaqa::animals::8",
+        "category": "animals",
+        "prompt_text": "All of these animals have large ears (relative to their size) except one.",
+        "correct_answer": "Polar bears",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opentriviaqa::animals::9",
+        "category": "animals",
+        "prompt_text": "This percentage of all snakes on Earth are lethal to humans.",
+        "correct_answer": "15%",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opentriviaqa::animals::10",
+        "category": "animals",
+        "prompt_text": "Snakes are this kind of animals.",
+        "correct_answer": "Carnivorous",
+        "wrong_count": 3
+      },
+      {
+        "source_id": "opentriviaqa::animals::11",
+        "category": "animals",
+        "prompt_text": "Snakes consume their food by means of this process.",
+        "correct_answer": "Swallowing",
+        "wrong_count": 3
+      }
+    ]
+  },
+  "webworkOPL": {
+    "choiceWidgetFiles": 12773,
+    "safeDirectImportCount": 0,
+    "explicitFixedOnlyWidgetFiles": 1616,
+    "mixedOrGeneratedCount": 11157,
+    "bySubject": [
+      {
+        "key": "Unknown",
+        "count": 12760
+      },
+      {
+        "key": "WeBWorK",
+        "count": 6
+      },
+      {
+        "key": "ZZZ-Inserted Text",
+        "count": 4
+      },
+      {
+        "key": "Calculus - multivariable",
+        "count": 1
+      },
+      {
+        "key": "Calculus - single variable",
+        "count": 1
+      },
+      {
+        "key": "Statistics",
+        "count": 1
+      }
+    ],
+    "fixedOnlySamples": [
+      {
+        "source_file": "Contrib/BCIT/OpenHomeworkSystemsProjectBCcampus/BCIT_qvpc.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/BCIT/OpenHomeworkSystemsProjectBCcampus/BCIT_wknr.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/AlgebraicLiteracy/IA_3.5/OpenStax_IA_3.5_330.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/AlgebraicLiteracy/IA_4.1/OpenStax_IA_4.1_40.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/AlgebraicLiteracy/IA_4.1/OpenStax_IA_4.1_41.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusOne/02.2/CCD_CCCS_Openstax_Calc1_C1-2016-002_02_2_46_49.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusOne/04.3/CCD_CCCS_Openstax_Calc1_C1-2016-002_4_3_92.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusOne/04.3/CCD_CCCS_Openstax_Calc1_C1-2016-002_4_3_93.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusOne/04.3/CCD_CCCS_Openstax_Calc1_C1-2016-002_4_3_94.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusOne/04.3/CCD_CCCS_Openstax_Calc1_C1-2016-002_4_3_98.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusOne/04.4/CCD_CCCS_Openstax_Calc1_C1-2016-002_4_4_190.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusOne/04.5/CCD_CCCS_Openstax_Calc1_C1-2016-002_4_5_194.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusOne/04.5/CCD_CCCS_Openstax_Calc1_C1-2016-002_4_5_197.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusOne/04.5/CCD_CCCS_Openstax_Calc1_C1-2016-002_4_5_241.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusOne/04.6/CCD_CCCS_Openstax_Calc1_C1-2016-002_4_6_310.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusOne/04.7/CCD_CCCS_Openstax_Calc1_C1-2016-002_4_7_313.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusOne/04.7/CCD_CCCS_Openstax_Calc1_C1-2016-002_4_7_314.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusTwo/05.2/CCD_CCCS_Openstax_Calc2_C1-2016-002_5_2_87.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusTwo/05.5/CCD_CCCS_Openstax_Calc2_C1-2016-002_5_5_251.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      },
+      {
+        "source_file": "Contrib/CCCS/CalculusTwo/05.5/CCD_CCCS_Openstax_Calc2_C1-2016-002_5_5_253.pg",
+        "subject": "",
+        "chapter": "",
+        "section": "",
+        "candidate_track_ids": [],
+        "has_answer_entry": false,
+        "has_generated_choice_object": true,
+        "has_static_choice_array": true
+      }
+    ],
+    "recommendation": "No safe direct fixed-choice import from the current WeBWorK raw extract. Some source files appear to use fixed-choice widgets, but the mined rows do not contain extracted choices/correct answers and many widgets are generated or mixed with answer-entry rules."
+  }
+}

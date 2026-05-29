@@ -1,0 +1,2423 @@
+{
+  "generatedAt": "2026-05-03T19:13:55.982Z",
+  "rawQuestionInstances": 44822,
+  "normalizedQuestionInstances": 29592,
+  "removedQuestionInstances": 15230,
+  "beforeDuplicateGroups": 3632,
+  "afterDuplicateGroups": 0,
+  "removedByTrack": [
+    {
+      "catalogKey": "primary",
+      "trackId": "ck12",
+      "rawCount": 17694,
+      "normalizedCount": 13528,
+      "removed": 4166
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "khanacademy",
+      "rawCount": 2306,
+      "normalizedCount": 1520,
+      "removed": 786
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-class-3-math",
+      "rawCount": 1379,
+      "normalizedCount": 962,
+      "removed": 417
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-class-6-math",
+      "rawCount": 926,
+      "normalizedCount": 587,
+      "removed": 339
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-class-4-math",
+      "rawCount": 488,
+      "normalizedCount": 342,
+      "removed": 146
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-class-1-math",
+      "rawCount": 275,
+      "normalizedCount": 143,
+      "removed": 132
+    },
+    {
+      "catalogKey": "university-prep",
+      "trackId": "software",
+      "rawCount": 557,
+      "normalizedCount": 458,
+      "removed": 99
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-class-5-math",
+      "rawCount": 374,
+      "normalizedCount": 286,
+      "removed": 88
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-class-2-math",
+      "rawCount": 373,
+      "normalizedCount": 297,
+      "removed": 76
+    },
+    {
+      "catalogKey": "high-math",
+      "trackId": "col-sat-math",
+      "rawCount": 401,
+      "normalizedCount": 348,
+      "removed": 53
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "advancedEthicsMoralPhilosophy",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "alevelEconomics",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "apEconomics",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "chessTactics",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-economics",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-macroeconomics",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-microeconomics",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-finance-and-capital-markets",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-macroeconomics",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-microeconomics",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "collegeAdmissions",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "creativeWriting",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "detectiveLogic",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "epistemologyBasics",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "existentialism",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "financeAndCapitalMarkets",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "gameDesign",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "gameDesignBasics",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "introToEthics",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "lifeSkillsAndAdulting",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "lifeSkillsHigh",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "logicAndArgumentation",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "macroeconomics",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "microeconomics",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "mythologyAndMonsters",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "mythologyMonsters",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "philYear10",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "philYear11",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "philYear12",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "philYear7",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "philYear8",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "philYear9",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "politicalPhilosophy",
+      "rawCount": 50,
+      "normalizedCount": 2,
+      "removed": 48
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "alevelHistory",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "apEuropeanHistory",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "apHistory",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "apHumanGeography",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-art-history",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-u-s-history",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-us-government-politics",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-us-history",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-world-history",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-art-history",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-constitution-101",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-middle-school-big-history",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-oer-project-world-history",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-us-government-and-civics",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-us-history",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-world-history",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-world-history-project-1750-to-the-present",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-world-history-project-origins-to-the-present",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "constitution101",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "middleSchoolBigHistory",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "usGovAndCivics",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "usHistory",
+      "rawCount": 50,
+      "normalizedCount": 3,
+      "removed": 47
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "alevelComputerScience",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "alevelEnglish",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "apComputerScience",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "apEnglish",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "basic_javascript",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-10th-grade-reading-and-vocab",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-7th-grade-reading-and-vocab",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-8th-grade-reading-and-vocab",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-9th-grade-reading-and-vocab",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-computer-science",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-computer-science-principles",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-english-literature",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-computer-programming",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-computer-science-theory",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-computers-and-the-internet",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-get-ready-for-sat-prep-reading-and-writing",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-intro-to-cs---python",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-intro-to-cs-python",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-pixar-in-a-box",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-math",
+      "trackId": "col-sat-reading-and-writing",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-sat-reading-and-writing",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "computerScienceTheory",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "creativeWritingStudio",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "pixarInABox",
+      "rawCount": 50,
+      "normalizedCount": 4,
+      "removed": 46
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "alevelBiology",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "alevelChemistry",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "alevelPhysics",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "apBiology",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "apChemistry",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "apPhysics",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "apPsychology",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "university-college",
+      "trackId": "apStatistics",
+      "rawCount": 219,
+      "normalizedCount": 174,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "climateProject",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-a-level-biology",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-biology",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-chemistry",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-physics",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-climate-project",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-hands-on-science-activities",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-high-school-biology",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-high-school-biology-ngss",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-high-school-chemistry",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-high-school-physics",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-high-school-physics-ngss",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-middle-school-biology",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-middle-school-chemistry",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-middle-school-earth-and-space-science",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-middle-school-physics",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "gcseScience",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "handsOnScience",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "middleSchoolBiology",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "middleSchoolChemistry",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "middleSchoolEarthSpace",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "middleSchoolPhysics",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "neetPrep",
+      "rawCount": 50,
+      "normalizedCount": 5,
+      "removed": 45
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "alevelEconomics",
+      "rawCount": 50,
+      "normalizedCount": 6,
+      "removed": 44
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "apCalculus",
+      "rawCount": 50,
+      "normalizedCount": 6,
+      "removed": 44
+    },
+    {
+      "catalogKey": "high-fun",
+      "trackId": "chessTactics",
+      "rawCount": 50,
+      "normalizedCount": 6,
+      "removed": 44
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-ap-calculus",
+      "rawCount": 50,
+      "normalizedCount": 6,
+      "removed": 44
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-get-ready-for-ap-calculus",
+      "rawCount": 50,
+      "normalizedCount": 6,
+      "removed": 44
+    },
+    {
+      "catalogKey": "high-fun",
+      "trackId": "creativeWriting",
+      "rawCount": 50,
+      "normalizedCount": 6,
+      "removed": 44
+    },
+    {
+      "catalogKey": "high-fun",
+      "trackId": "detectiveLogic",
+      "rawCount": 50,
+      "normalizedCount": 6,
+      "removed": 44
+    },
+    {
+      "catalogKey": "high-fun",
+      "trackId": "gameDesign",
+      "rawCount": 50,
+      "normalizedCount": 6,
+      "removed": 44
+    },
+    {
+      "catalogKey": "high-fun",
+      "trackId": "mythologyMonsters",
+      "rawCount": 50,
+      "normalizedCount": 6,
+      "removed": 44
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "alevelHistory",
+      "rawCount": 50,
+      "normalizedCount": 7,
+      "removed": 43
+    },
+    {
+      "catalogKey": "high-math",
+      "trackId": "col-high-school-statistics",
+      "rawCount": 50,
+      "normalizedCount": 7,
+      "removed": 43
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "alevelComputerScience",
+      "rawCount": 50,
+      "normalizedCount": 8,
+      "removed": 42
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "alevelEnglish",
+      "rawCount": 50,
+      "normalizedCount": 8,
+      "removed": 42
+    },
+    {
+      "catalogKey": "university-college",
+      "trackId": "apCalculusAB",
+      "rawCount": 100,
+      "normalizedCount": 58,
+      "removed": 42
+    },
+    {
+      "catalogKey": "university-college",
+      "trackId": "col-college-algebra",
+      "rawCount": 50,
+      "normalizedCount": 8,
+      "removed": 42
+    },
+    {
+      "catalogKey": "university-college",
+      "trackId": "collegeAlgebra",
+      "rawCount": 50,
+      "normalizedCount": 8,
+      "removed": 42
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "alevelBiology",
+      "rawCount": 50,
+      "normalizedCount": 9,
+      "removed": 41
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "alevelChemistry",
+      "rawCount": 50,
+      "normalizedCount": 9,
+      "removed": 41
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "alevelPhysics",
+      "rawCount": 50,
+      "normalizedCount": 9,
+      "removed": 41
+    },
+    {
+      "catalogKey": "high-math",
+      "trackId": "col-trigonometry",
+      "rawCount": 50,
+      "normalizedCount": 9,
+      "removed": 41
+    },
+    {
+      "catalogKey": "university-prep",
+      "trackId": "softwareDesign",
+      "rawCount": 476,
+      "normalizedCount": 435,
+      "removed": 41
+    },
+    {
+      "catalogKey": "university-college",
+      "trackId": "apCalculusBc",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "apPhysics",
+      "rawCount": 126,
+      "normalizedCount": 86,
+      "removed": 40
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "class5Math",
+      "rawCount": 55,
+      "normalizedCount": 15,
+      "removed": 40
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "class6Math",
+      "rawCount": 52,
+      "normalizedCount": 12,
+      "removed": 40
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-4th-grade-math",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-5th-grade-math",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-6th-grade-math",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-eureka-math-3rd-8th-grade",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "university-college",
+      "trackId": "col-eureka-math-precalculus",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "col-high-school-biology-ngss",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "col-high-school-physics-ngss",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "high-math",
+      "trackId": "col-illustrative-mathematics-6th-8th-grade",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "high-math",
+      "trackId": "col-precalculus",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "col-world-history-project-1750-to-the-present",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "col-world-history-project-origins-to-the-present",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "elevenPlus",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "pslePrep",
+      "rawCount": 50,
+      "normalizedCount": 10,
+      "removed": 40
+    },
+    {
+      "catalogKey": "high-math",
+      "trackId": "col-algebra-2",
+      "rawCount": 50,
+      "normalizedCount": 11,
+      "removed": 39
+    },
+    {
+      "catalogKey": "high-math",
+      "trackId": "col-eureka-math-algebra-ii",
+      "rawCount": 50,
+      "normalizedCount": 11,
+      "removed": 39
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-3rd-grade-math",
+      "rawCount": 50,
+      "normalizedCount": 14,
+      "removed": 36
+    },
+    {
+      "catalogKey": "high-math",
+      "trackId": "col-statistics-probability",
+      "rawCount": 50,
+      "normalizedCount": 16,
+      "removed": 34
+    },
+    {
+      "catalogKey": "high-math",
+      "trackId": "col-algebra-1-ny-next-gen",
+      "rawCount": 50,
+      "normalizedCount": 17,
+      "removed": 33
+    },
+    {
+      "catalogKey": "high-math",
+      "trackId": "col-eureka-math-algebra-i",
+      "rawCount": 50,
+      "normalizedCount": 17,
+      "removed": 33
+    },
+    {
+      "catalogKey": "high-math",
+      "trackId": "col-eureka-math-geometry",
+      "rawCount": 50,
+      "normalizedCount": 17,
+      "removed": 33
+    },
+    {
+      "catalogKey": "high-math",
+      "trackId": "col-geometry",
+      "rawCount": 50,
+      "normalizedCount": 17,
+      "removed": 33
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-eureka-math-foundations-3rd-8th-grade",
+      "rawCount": 50,
+      "normalizedCount": 20,
+      "removed": 30
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "principles_economics_3e",
+      "rawCount": 50,
+      "normalizedCount": 20,
+      "removed": 30
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "principles_economics_3e",
+      "rawCount": 50,
+      "normalizedCount": 20,
+      "removed": 30
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "alevelMaths",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-7th-grade-ny-next-gen",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-8th-grade-ny-next-gen",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-a-level-economics",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-a-level-maths",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-gcse-maths-uk",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-get-ready-for-7th-grade",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-get-ready-for-8th-grade",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-get-ready-for-sat-prep-math",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-hsc---vce-maths-australia",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-jee-main-prep-india",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-sat-math",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "gcseMaths",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "hscVceMaths",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "ib_history",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "jeeMain",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "naplanYear7",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "naplanYear9",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "us_history",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "us_history",
+      "rawCount": 50,
+      "normalizedCount": 21,
+      "removed": 29
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "basic_html_and_html5",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "codingBasics",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-7th-grade-math",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-8th-grade-math",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-algebra-1",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-algebra-1-ny-next-gen",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-algebra-2",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-algebra-basics",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-class-10-math",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-class-7-math",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-class-8-math",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-class-9-math",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-coding-basics",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-eureka-math-algebra-i",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-eureka-math-algebra-ii",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-eureka-math-geometry",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-geometry",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-get-ready-for-algebra-1",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-get-ready-for-algebra-2",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-get-ready-for-ap-statistics",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-get-ready-for-geometry",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-get-ready-for-precalculus",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-grammar",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-high-school-statistics",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-illustrative-mathematics-6th-8th-grade",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-integrated-math-1",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-integrated-math-2",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-integrated-math-3",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-pre-algebra",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-precalculus",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-statistics-probability",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "col-trigonometry",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "ib_history",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "naplanYear5",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "trigonometry",
+      "rawCount": 50,
+      "normalizedCount": 22,
+      "removed": 28
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "biology_2e",
+      "rawCount": 50,
+      "normalizedCount": 23,
+      "removed": 27
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "biology_2e",
+      "rawCount": 50,
+      "normalizedCount": 23,
+      "removed": 27
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "psychology_2e",
+      "rawCount": 50,
+      "normalizedCount": 23,
+      "removed": 27
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "psychology_2e",
+      "rawCount": 50,
+      "normalizedCount": 23,
+      "removed": 27
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "alevelMaths",
+      "rawCount": 50,
+      "normalizedCount": 24,
+      "removed": 26
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "col-sat-reading-and-writing",
+      "rawCount": 799,
+      "normalizedCount": 781,
+      "removed": 18
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "mathematics_extensions",
+      "rawCount": 50,
+      "normalizedCount": 34,
+      "removed": 16
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "mathematics_extensions",
+      "rawCount": 50,
+      "normalizedCount": 34,
+      "removed": 16
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "naplanYear3",
+      "rawCount": 50,
+      "normalizedCount": 34,
+      "removed": 16
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-5th-grade-reading-and-vocab",
+      "rawCount": 50,
+      "normalizedCount": 38,
+      "removed": 12
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-6th-grade-reading-and-vocab",
+      "rawCount": 50,
+      "normalizedCount": 38,
+      "removed": 12
+    },
+    {
+      "catalogKey": "career",
+      "trackId": "brainBurners",
+      "rawCount": 288,
+      "normalizedCount": 279,
+      "removed": 9
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "apHistory",
+      "rawCount": 514,
+      "normalizedCount": 506,
+      "removed": 8
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-4th-grade-reading-and-vocab",
+      "rawCount": 50,
+      "normalizedCount": 42,
+      "removed": 8
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "philosophyYear3",
+      "rawCount": 50,
+      "normalizedCount": 42,
+      "removed": 8
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "apComputerScience",
+      "rawCount": 326,
+      "normalizedCount": 319,
+      "removed": 7
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "apEnglish",
+      "rawCount": 279,
+      "normalizedCount": 272,
+      "removed": 7
+    },
+    {
+      "catalogKey": "university-college",
+      "trackId": "introDataScience",
+      "rawCount": 169,
+      "normalizedCount": 162,
+      "removed": 7
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-word-builders",
+      "rawCount": 50,
+      "normalizedCount": 46,
+      "removed": 4
+    },
+    {
+      "catalogKey": "university-academic",
+      "trackId": "dataStructures",
+      "rawCount": 311,
+      "normalizedCount": 307,
+      "removed": 4
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "philosophyYear1",
+      "rawCount": 50,
+      "normalizedCount": 46,
+      "removed": 4
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "wordBuilders",
+      "rawCount": 50,
+      "normalizedCount": 46,
+      "removed": 4
+    },
+    {
+      "catalogKey": "university-college",
+      "trackId": "class11Math",
+      "rawCount": 50,
+      "normalizedCount": 48,
+      "removed": 2
+    },
+    {
+      "catalogKey": "university-college",
+      "trackId": "col-class-11-math",
+      "rawCount": 50,
+      "normalizedCount": 48,
+      "removed": 2
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "apCalculus",
+      "rawCount": 54,
+      "normalizedCount": 53,
+      "removed": 1
+    },
+    {
+      "catalogKey": "high-advanced",
+      "trackId": "basic_javascript",
+      "rawCount": 113,
+      "normalizedCount": 112,
+      "removed": 1
+    },
+    {
+      "catalogKey": "primary",
+      "trackId": "col-early-math-review",
+      "rawCount": 50,
+      "normalizedCount": 49,
+      "removed": 1
+    },
+    {
+      "catalogKey": "university-academic",
+      "trackId": "formalLogic",
+      "rawCount": 70,
+      "normalizedCount": 69,
+      "removed": 1
+    },
+    {
+      "catalogKey": "university-college",
+      "trackId": "multivariableCalculus",
+      "rawCount": 50,
+      "normalizedCount": 49,
+      "removed": 1
+    },
+    {
+      "catalogKey": "university-academic",
+      "trackId": "researchMethods",
+      "rawCount": 84,
+      "normalizedCount": 83,
+      "removed": 1
+    }
+  ],
+  "logicArgumentationDuplicateExamplesBeforeRemoval": [
+    {
+      "catalogKey": "high-generated",
+      "trackId": "logicAndArgumentation",
+      "count": 25,
+      "prompt": "A classmate says, “All dragons love toast. Pebble loves toast. Therefore Pebble is a dragon.” What is wrong?",
+      "items": [
+        {
+          "id": 1906900,
+          "title": "Logic & Argumentation: Premise check 1",
+          "chapter": "Logic 1",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906902,
+          "title": "Logic & Argumentation: Premise check 2",
+          "chapter": "Logic 2",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906904,
+          "title": "Logic & Argumentation: Premise check 3",
+          "chapter": "Logic 3",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906906,
+          "title": "Logic & Argumentation: Premise check 4",
+          "chapter": "Logic 4",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906908,
+          "title": "Logic & Argumentation: Premise check 5",
+          "chapter": "Logic 5",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906910,
+          "title": "Logic & Argumentation: Premise check 6",
+          "chapter": "Logic 6",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906912,
+          "title": "Logic & Argumentation: Premise check 7",
+          "chapter": "Logic 7",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906914,
+          "title": "Logic & Argumentation: Premise check 8",
+          "chapter": "Logic 8",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906916,
+          "title": "Logic & Argumentation: Premise check 9",
+          "chapter": "Logic 9",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906918,
+          "title": "Logic & Argumentation: Premise check 10",
+          "chapter": "Logic 10",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906920,
+          "title": "Logic & Argumentation: Premise check 11",
+          "chapter": "Logic 11",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906922,
+          "title": "Logic & Argumentation: Premise check 12",
+          "chapter": "Logic 12",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906924,
+          "title": "Logic & Argumentation: Premise check 13",
+          "chapter": "Logic 13",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906926,
+          "title": "Logic & Argumentation: Premise check 14",
+          "chapter": "Logic 14",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906928,
+          "title": "Logic & Argumentation: Premise check 15",
+          "chapter": "Logic 15",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906930,
+          "title": "Logic & Argumentation: Premise check 16",
+          "chapter": "Logic 16",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906932,
+          "title": "Logic & Argumentation: Premise check 17",
+          "chapter": "Logic 17",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906934,
+          "title": "Logic & Argumentation: Premise check 18",
+          "chapter": "Logic 18",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906936,
+          "title": "Logic & Argumentation: Premise check 19",
+          "chapter": "Logic 19",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906938,
+          "title": "Logic & Argumentation: Premise check 20",
+          "chapter": "Logic 20",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906940,
+          "title": "Logic & Argumentation: Premise check 21",
+          "chapter": "Logic 21",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906942,
+          "title": "Logic & Argumentation: Premise check 22",
+          "chapter": "Logic 22",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906944,
+          "title": "Logic & Argumentation: Premise check 23",
+          "chapter": "Logic 23",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906946,
+          "title": "Logic & Argumentation: Premise check 24",
+          "chapter": "Logic 24",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906948,
+          "title": "Logic & Argumentation: Premise check 25",
+          "chapter": "Logic 25",
+          "source": "Floe secondary generated syllabus bank v2"
+        }
+      ]
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "logicAndArgumentation",
+      "count": 25,
+      "prompt": "A game asks players to collect moon cheese, upgrade a backpack, then collect stranger cheese. What is being described?",
+      "items": [
+        {
+          "id": 1906901,
+          "title": "Logic & Argumentation: Game loop 1",
+          "chapter": "Creative Design 1",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906903,
+          "title": "Logic & Argumentation: Game loop 2",
+          "chapter": "Creative Design 2",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906905,
+          "title": "Logic & Argumentation: Game loop 3",
+          "chapter": "Creative Design 3",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906907,
+          "title": "Logic & Argumentation: Game loop 4",
+          "chapter": "Creative Design 4",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906909,
+          "title": "Logic & Argumentation: Game loop 5",
+          "chapter": "Creative Design 5",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906911,
+          "title": "Logic & Argumentation: Game loop 6",
+          "chapter": "Creative Design 6",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906913,
+          "title": "Logic & Argumentation: Game loop 7",
+          "chapter": "Creative Design 7",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906915,
+          "title": "Logic & Argumentation: Game loop 8",
+          "chapter": "Creative Design 8",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906917,
+          "title": "Logic & Argumentation: Game loop 9",
+          "chapter": "Creative Design 9",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906919,
+          "title": "Logic & Argumentation: Game loop 10",
+          "chapter": "Creative Design 10",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906921,
+          "title": "Logic & Argumentation: Game loop 11",
+          "chapter": "Creative Design 11",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906923,
+          "title": "Logic & Argumentation: Game loop 12",
+          "chapter": "Creative Design 12",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906925,
+          "title": "Logic & Argumentation: Game loop 13",
+          "chapter": "Creative Design 13",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906927,
+          "title": "Logic & Argumentation: Game loop 14",
+          "chapter": "Creative Design 14",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906929,
+          "title": "Logic & Argumentation: Game loop 15",
+          "chapter": "Creative Design 15",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906931,
+          "title": "Logic & Argumentation: Game loop 16",
+          "chapter": "Creative Design 16",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906933,
+          "title": "Logic & Argumentation: Game loop 17",
+          "chapter": "Creative Design 17",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906935,
+          "title": "Logic & Argumentation: Game loop 18",
+          "chapter": "Creative Design 18",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906937,
+          "title": "Logic & Argumentation: Game loop 19",
+          "chapter": "Creative Design 19",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906939,
+          "title": "Logic & Argumentation: Game loop 20",
+          "chapter": "Creative Design 20",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906941,
+          "title": "Logic & Argumentation: Game loop 21",
+          "chapter": "Creative Design 21",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906943,
+          "title": "Logic & Argumentation: Game loop 22",
+          "chapter": "Creative Design 22",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906945,
+          "title": "Logic & Argumentation: Game loop 23",
+          "chapter": "Creative Design 23",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906947,
+          "title": "Logic & Argumentation: Game loop 24",
+          "chapter": "Creative Design 24",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1906949,
+          "title": "Logic & Argumentation: Game loop 25",
+          "chapter": "Creative Design 25",
+          "source": "Floe secondary generated syllabus bank v2"
+        }
+      ]
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "philYear8",
+      "count": 25,
+      "prompt": "A classmate says, “All dragons love toast. Pebble loves toast. Therefore Pebble is a dragon.” What is wrong?",
+      "items": [
+        {
+          "id": 1903000,
+          "title": "Logic & Argumentation: Premise check 1",
+          "chapter": "Logic 1",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903002,
+          "title": "Logic & Argumentation: Premise check 2",
+          "chapter": "Logic 2",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903004,
+          "title": "Logic & Argumentation: Premise check 3",
+          "chapter": "Logic 3",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903006,
+          "title": "Logic & Argumentation: Premise check 4",
+          "chapter": "Logic 4",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903008,
+          "title": "Logic & Argumentation: Premise check 5",
+          "chapter": "Logic 5",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903010,
+          "title": "Logic & Argumentation: Premise check 6",
+          "chapter": "Logic 6",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903012,
+          "title": "Logic & Argumentation: Premise check 7",
+          "chapter": "Logic 7",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903014,
+          "title": "Logic & Argumentation: Premise check 8",
+          "chapter": "Logic 8",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903016,
+          "title": "Logic & Argumentation: Premise check 9",
+          "chapter": "Logic 9",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903018,
+          "title": "Logic & Argumentation: Premise check 10",
+          "chapter": "Logic 10",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903020,
+          "title": "Logic & Argumentation: Premise check 11",
+          "chapter": "Logic 11",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903022,
+          "title": "Logic & Argumentation: Premise check 12",
+          "chapter": "Logic 12",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903024,
+          "title": "Logic & Argumentation: Premise check 13",
+          "chapter": "Logic 13",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903026,
+          "title": "Logic & Argumentation: Premise check 14",
+          "chapter": "Logic 14",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903028,
+          "title": "Logic & Argumentation: Premise check 15",
+          "chapter": "Logic 15",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903030,
+          "title": "Logic & Argumentation: Premise check 16",
+          "chapter": "Logic 16",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903032,
+          "title": "Logic & Argumentation: Premise check 17",
+          "chapter": "Logic 17",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903034,
+          "title": "Logic & Argumentation: Premise check 18",
+          "chapter": "Logic 18",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903036,
+          "title": "Logic & Argumentation: Premise check 19",
+          "chapter": "Logic 19",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903038,
+          "title": "Logic & Argumentation: Premise check 20",
+          "chapter": "Logic 20",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903040,
+          "title": "Logic & Argumentation: Premise check 21",
+          "chapter": "Logic 21",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903042,
+          "title": "Logic & Argumentation: Premise check 22",
+          "chapter": "Logic 22",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903044,
+          "title": "Logic & Argumentation: Premise check 23",
+          "chapter": "Logic 23",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903046,
+          "title": "Logic & Argumentation: Premise check 24",
+          "chapter": "Logic 24",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903048,
+          "title": "Logic & Argumentation: Premise check 25",
+          "chapter": "Logic 25",
+          "source": "Floe secondary generated syllabus bank v2"
+        }
+      ]
+    },
+    {
+      "catalogKey": "high-generated",
+      "trackId": "philYear8",
+      "count": 25,
+      "prompt": "A game asks players to collect moon cheese, upgrade a backpack, then collect stranger cheese. What is being described?",
+      "items": [
+        {
+          "id": 1903001,
+          "title": "Logic & Argumentation: Game loop 1",
+          "chapter": "Creative Design 1",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903003,
+          "title": "Logic & Argumentation: Game loop 2",
+          "chapter": "Creative Design 2",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903005,
+          "title": "Logic & Argumentation: Game loop 3",
+          "chapter": "Creative Design 3",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903007,
+          "title": "Logic & Argumentation: Game loop 4",
+          "chapter": "Creative Design 4",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903009,
+          "title": "Logic & Argumentation: Game loop 5",
+          "chapter": "Creative Design 5",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903011,
+          "title": "Logic & Argumentation: Game loop 6",
+          "chapter": "Creative Design 6",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903013,
+          "title": "Logic & Argumentation: Game loop 7",
+          "chapter": "Creative Design 7",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903015,
+          "title": "Logic & Argumentation: Game loop 8",
+          "chapter": "Creative Design 8",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903017,
+          "title": "Logic & Argumentation: Game loop 9",
+          "chapter": "Creative Design 9",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903019,
+          "title": "Logic & Argumentation: Game loop 10",
+          "chapter": "Creative Design 10",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903021,
+          "title": "Logic & Argumentation: Game loop 11",
+          "chapter": "Creative Design 11",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903023,
+          "title": "Logic & Argumentation: Game loop 12",
+          "chapter": "Creative Design 12",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903025,
+          "title": "Logic & Argumentation: Game loop 13",
+          "chapter": "Creative Design 13",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903027,
+          "title": "Logic & Argumentation: Game loop 14",
+          "chapter": "Creative Design 14",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903029,
+          "title": "Logic & Argumentation: Game loop 15",
+          "chapter": "Creative Design 15",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903031,
+          "title": "Logic & Argumentation: Game loop 16",
+          "chapter": "Creative Design 16",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903033,
+          "title": "Logic & Argumentation: Game loop 17",
+          "chapter": "Creative Design 17",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903035,
+          "title": "Logic & Argumentation: Game loop 18",
+          "chapter": "Creative Design 18",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903037,
+          "title": "Logic & Argumentation: Game loop 19",
+          "chapter": "Creative Design 19",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903039,
+          "title": "Logic & Argumentation: Game loop 20",
+          "chapter": "Creative Design 20",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903041,
+          "title": "Logic & Argumentation: Game loop 21",
+          "chapter": "Creative Design 21",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903043,
+          "title": "Logic & Argumentation: Game loop 22",
+          "chapter": "Creative Design 22",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903045,
+          "title": "Logic & Argumentation: Game loop 23",
+          "chapter": "Creative Design 23",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903047,
+          "title": "Logic & Argumentation: Game loop 24",
+          "chapter": "Creative Design 24",
+          "source": "Floe secondary generated syllabus bank v2"
+        },
+        {
+          "id": 1903049,
+          "title": "Logic & Argumentation: Game loop 25",
+          "chapter": "Creative Design 25",
+          "source": "Floe secondary generated syllabus bank v2"
+        }
+      ]
+    }
+  ],
+  "remainingDuplicateGroups": []
+}

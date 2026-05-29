@@ -1,0 +1,75 @@
+# Trigonometry
+A focused dive from right-triangle ratios to the unit circle, graphs, identities, equations, oblique triangles, vectors, and polar form - building trigonometry as both geometry and the mathematics of periodic change.
+
+**ID**: `trigonometry` · **Discipline**: Maths
+
+## Course Aim
+Trigonometry sits at the hinge between geometry and analysis. This course (Year 11, roughly ages 15-16) treats it as two intertwined stories: the geometry of triangles, where sine, cosine, and tangent are side ratios that let us measure the unreachable, and the theory of periodic functions, where those same ratios become smooth curves that model anything that repeats. Students begin with right-triangle ratios and angles of elevation, extend the definitions to the whole plane using the unit circle, and then study trigonometric functions as objects in their own right - with amplitude, period, phase, and transformations.
+
+From there the course moves into the analytic core: inverse trigonometric functions and the discipline of finding every solution to an equation on an interval; the identities (reciprocal, quotient, Pythagorean, even-odd, cofunction, and the sum, difference, double-angle, and half-angle formulas) and the distinct habits of verifying an identity versus solving an equation; and the trigonometry of non-right triangles through the law of sines, the ambiguous case, and the law of cosines. A final strand connects trigonometry to vectors, polar coordinates, and the trigonometric form of complex numbers, where multiplication becomes rotation and De Moivre's theorem unlocks powers and roots.
+
+By the end, a student can choose the right ratio or law for a triangle problem, evaluate exact values from the unit circle without a calculator, graph and write equations for sinusoids, prove and apply identities, solve trigonometric equations over a stated interval (capturing all solutions, not just the principal one), and use trigonometry to describe direction, rotation, and waves. The course is designed to feed directly into precalculus, calculus, and any physics or engineering pathway where periodic behaviour or direction matters.
+
+## Course Design Notes
+Route a question here when it involves sine, cosine, tangent, the reciprocal functions, radians, the unit circle, exact special-angle values, reference angles and quadrant signs, graph transformations of sinusoids, inverse trigonometric functions, trigonometric identities, trigonometric equations, the law of sines or cosines, triangle area, vectors, polar coordinates, or the trigonometric/polar form of complex numbers. Encourage diagram-first reasoning, explicit quadrant and sign analysis, careful attention to domain restrictions on inverse functions, and a deliberate check for every solution on the required interval. The most common high-school trig errors are not algebraic - they come from losing solutions, mixing degrees with radians, or applying an identity in the wrong direction. Keep practice cumulative and exact-value fluency frequent, and distinguish clearly between proving an identity (an equivalence true for all valid inputs) and solving an equation (finding the specific inputs that make a statement true).
+
+## Chapter 1: Right-Triangle Trigonometry
+- **Core questions**: Why do the trig ratios depend only on the angle and not the size of the triangle? Which ratio connects the sides I know to the side I want? How do I recover an angle from a ratio, and when do I use an inverse function?
+- **Key concepts**: similar triangles and ratio invariance; sine, cosine, tangent as opposite/hypotenuse, adjacent/hypotenuse, opposite/adjacent; the reciprocal ratios cosecant, secant, cotangent; SOH-CAH-TOA; the Pythagorean theorem; inverse trig (arcsin, arccos, arctan) to find angles; angles of elevation and depression; bearings.
+- **Applied skills**: label a right triangle and select the correct ratio for a given pair of known and unknown sides; solve for a missing side or angle; solve elevation, depression, and bearing word problems; estimate whether a computed length or angle is plausible from the diagram; explain why two similar triangles share the same trig ratios.
+- **Common traps**: pairing a side with the wrong angle (e.g. using the hypotenuse as the adjacent side); forgetting to take an inverse function when solving for an angle; leaving a calculator in radian mode when the problem uses degrees; treating the ratio as additive rather than a quotient.
+
+## Chapter 2: Radians, Arc Length, and the Unit Circle
+- **Core questions**: What is a radian, and why is it the natural angle measure for calculus and circular motion? How do I locate any angle on the unit circle and read off its trig values? How do reference angles and quadrant signs combine to give exact values?
+- **Key concepts**: degree and radian measure and conversion; coterminal angles; arc length s = rθ and sector area A = ½r²θ; the unit circle and the (cos θ, sin θ) coordinate definition; terminal side, reference angle, and the four quadrants; the ASTC sign pattern; exact values for 0, π/6, π/4, π/3, π/2 and their multiples.
+- **Applied skills**: convert fluently between degrees and radians; find arc length and sector area for a given radius and central angle; find a coterminal angle in a chosen range; locate an angle on the unit circle and state its sine and cosine; use a reference angle plus quadrant sign to evaluate any special-angle expression exactly.
+- **Common traps**: forgetting that arc-length and sector-area formulas require radians, not degrees; assigning the wrong sign because the quadrant was misidentified; confusing the reference angle with the angle itself; mixing up which coordinate is cosine and which is sine.
+
+## Chapter 3: Trigonometric Functions and Their Graphs
+- **Core questions**: What do the graphs of the six trig functions look like, and where are their zeros, maxima, and asymptotes? How do amplitude, period, phase shift, and vertical shift change a sinusoid? How do I read an equation off a graph, or model a repeating real-world quantity?
+- **Key concepts**: domain, range, intercepts, and asymptotes of sine, cosine, tangent, and the reciprocal functions; the general sinusoid y = a·sin(b(x − c)) + d; amplitude |a|, period 2π/b (or π/b for tangent), frequency, phase shift c, and vertical shift d; even/odd symmetry; modelling periodic phenomena.
+- **Applied skills**: graph any of the six functions and identify its key features; determine amplitude, period, phase shift, and vertical shift from an equation; write a sinusoidal equation from a graph or a verbal description; model daylight hours, tides, temperature, sound, or circular motion with a sinusoid and interpret its parameters.
+- **Common traps**: computing the period as b rather than 2π/b; reading the phase shift with the wrong sign (the form is b(x − c), so x = c is the shift); confusing amplitude with the vertical shift or with the maximum value; assuming tangent has the same period as sine.
+
+## Chapter 4: Inverse Trigonometry and Trigonometric Equations
+- **Core questions**: Why must the inverse trig functions have restricted ranges, and what are those ranges? How do I find every solution of a trig equation on a given interval rather than just the one the calculator returns? When does symmetry of the unit circle give a second solution?
+- **Key concepts**: restricted domains and principal-value ranges of arcsin, arccos, arctan; evaluating and composing inverse expressions; solving linear and factorable trig equations; using reference angles and quadrant symmetry to find all solutions on an interval; general solutions with added period; extraneous solutions introduced by squaring.
+- **Applied skills**: evaluate inverse trig expressions and compositions such as sin(arccos x); solve a trig equation on [0, 2π) and report all solutions; write a general solution that captures every angle; solve equations that require factoring or an identity first; check candidate solutions against the original equation and discard extraneous ones.
+- **Common traps**: reporting only the principal value and missing the second-quadrant or fourth-quadrant partner; giving an answer outside the inverse function's range; dividing both sides by a trig factor (losing the solutions where that factor is zero); forgetting to add the period when a general solution is required.
+
+## Chapter 5: Identities and Proof Habits
+- **Core questions**: How is verifying an identity different from solving an equation? Which identity is the strategic next step in a simplification? How do I avoid the illegal moves that make a "proof" invalid?
+- **Key concepts**: reciprocal and quotient identities; the three Pythagorean identities; even-odd identities; cofunction identities; simplifying expressions to a single function; verifying an identity by transforming one side; strategy (convert to sine and cosine, factor, combine fractions, multiply by a conjugate).
+- **Applied skills**: simplify a trig expression to its simplest equivalent form; choose an identity that moves a proof forward; verify an identity by working one side until it matches the other; rewrite tangent, secant, cosecant, and cotangent in terms of sine and cosine; explain why an identity holds for all valid inputs whereas an equation holds only for specific ones.
+- **Common traps**: working both sides at once and "meeting in the middle" (which assumes the result); cancelling a factor that could be zero; treating an identity as something to "solve"; applying a Pythagorean identity in the wrong rearranged form (e.g. sin²θ = 1 + cos²θ).
+
+## Chapter 6: Sum, Difference, Double-Angle, and Half-Angle Formulas
+- **Core questions**: How do I find the exact trig value of an angle like 75° or π/12 that is not a standard special angle? When does a double-angle or half-angle formula simplify an expression or equation? Which form of the double-angle cosine should I use?
+- **Key concepts**: sum and difference formulas for sine, cosine, and tangent; the double-angle formulas, including the three forms of cos(2θ); the half-angle formulas and their sign choices; using these to find exact values of compound angles and to solve trig equations that hide a quadratic.
+- **Applied skills**: compute exact values such as cos(75°) by writing the angle as a sum or difference of special angles; rewrite an expression using a double-angle or half-angle formula; solve a trig equation that becomes a quadratic after a double-angle substitution; choose the cos(2θ) form (1 − 2sin²θ, 2cos²θ − 1, or cos²θ − sin²θ) that best fits the problem.
+- **Common traps**: assuming sin(A + B) equals sin A + sin B; using the wrong sign in a difference formula; picking the wrong sign on a half-angle value (the quadrant of the half-angle decides it); not recognising that an equation in sin(2x) and sin(x) needs a double-angle identity before it factors.
+
+## Chapter 7: Oblique Triangles and Vectors
+- **Core questions**: Which law solves a non-right triangle from the information I have? How do I tell whether an SSA case has no triangle, one, or two? How do vectors encode magnitude and direction, and what does the dot product measure?
+- **Key concepts**: the law of sines and the ambiguous (SSA) case; the law of cosines for SAS and SSS; triangle area via ½ab·sin C and Heron's formula; vectors as components and as magnitude-direction pairs; vector addition and scalar multiplication; the dot product and the angle between two vectors.
+- **Applied skills**: choose and apply the law of sines or cosines to solve any triangle; determine whether an SSA configuration yields zero, one, or two triangles; find the area of an oblique triangle; resolve a vector into components and combine vectors; compute a dot product and the angle between vectors; model navigation and force problems with triangles and vectors.
+- **Common traps**: using the law of sines on an SAS case where it cannot start; missing the second triangle in the ambiguous case; forgetting that the angle in the area formula must be the angle between the two given sides; adding vector magnitudes directly instead of adding components.
+
+## Chapter 8: Polar Coordinates and Complex Numbers
+- **Core questions**: How do polar coordinates describe a point by distance and direction, and how do they relate to rectangular coordinates? Why does writing a complex number in trigonometric form turn multiplication into rotation? How does De Moivre's theorem give powers and roots?
+- **Key concepts**: polar coordinates (r, θ) and conversion to and from (x, y); plotting polar points and basic polar curves; the trigonometric (polar) form of a complex number r(cos θ + i sin θ); modulus and argument; multiplication and division in polar form (multiply moduli, add arguments); De Moivre's theorem for powers and nth roots.
+- **Applied skills**: convert points between rectangular and polar coordinates; plot polar points; write a complex number in trigonometric form and back; multiply and divide complex numbers in polar form; apply De Moivre's theorem to compute a power or find the nth roots of a complex number; explain rotation as multiplication by a unit-modulus complex number.
+- **Common traps**: dropping the quadrant when computing the argument from arctan (the calculator returns only principal values); confusing modulus with argument; forgetting that a point has infinitely many polar representations; in De Moivre's roots, omitting the +2πk/n spacing that produces all n distinct roots.
+
+## Capstone: Trigonometric Modeling Portfolio
+Assemble a three-part portfolio that pulls the whole course together, each part presented with a clear diagram or graph, the governing equations, a worked solution with checks, and a short explanation aimed at a non-specialist.
+- **Triangle measurement**: solve a real measurement problem (an inaccessible height, a survey, or a navigation leg) using right-triangle ratios or the law of sines/cosines, and discuss measurement error and reasonableness.
+- **Periodic model**: fit a sinusoid to data or a scenario (daylight, tides, sound, seasonal temperature, or circular motion), state amplitude, period, phase, and vertical shift, and use the model to make a prediction.
+- **Advanced extension**: choose one of vectors (a forces or navigation problem), polar coordinates (a curve or coordinate conversion), or complex numbers (multiplication as rotation, a De Moivre power or root), and show how trigonometry describes direction, rotation, or waves.
+
+## Research Notes
+- OpenStax, *Algebra and Trigonometry 2e*: https://openstax.org/details/books/algebra-and-trigonometry-2e
+- OpenStax, *Precalculus 2e*: https://openstax.org/details/books/precalculus-2e
+- Khan Academy, Trigonometry: https://www.khanacademy.org/math/trigonometry
+- Illustrative Mathematics, high-school functions and trigonometry: https://illustrativemathematics.org/math-curriculum/high-school-math/
+- Common Core State Standards, high-school Functions and Geometry: https://www.thecorestandards.org/Math/

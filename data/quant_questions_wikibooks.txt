@@ -1,0 +1,63 @@
+ID: WB_Math_Logic_1 | Mathematics Extensions - Logic
+Q: Produce the truth table for the NAND operation: x NAND y = NOT (x AND y). Which of the following represents the outputs for (T,T), (T,F), (F,T), (F,F)?
+
+CORRECT: F, T, T, T
+WRONG:   T, F, F, F
+           Flaw: That is the AND operation.
+           Reframe: NAND is NOT(AND).
+
+WRONG:   F, F, F, T
+           Flaw: That is the NOR operation.
+           Reframe: NAND and NOR are different.
+
+WRONG:   T, T, T, F
+           Flaw: That is the OR operation.
+           Reframe: Check the truth table for NAND again.
+
+LESSON:
+NAND is a universal logic gate. It outputs false only if both inputs are true.
+
+----------------------------------------------------------------------
+
+ID: WB_Math_Logic_2 | Mathematics Extensions - Logic
+Q: In Boolean logic, what is x XOR y true if and ONLY if?
+
+CORRECT: One of x or y is true, but not both.
+WRONG:   Both x and y are true.
+           Flaw: That is AND.
+           Reframe: XOR stands for Exclusive OR.
+
+WRONG:   At least one of x or y is true.
+           Flaw: That is inclusive OR.
+           Reframe: XOR excludes the case where both are true.
+
+WRONG:   Neither x nor y is true.
+           Flaw: That is NOR.
+           Reframe: XOR requires exactly one true input.
+
+LESSON:
+Exclusive OR (XOR) is true when inputs differ.
+
+----------------------------------------------------------------------
+
+ID: WB_History_WWI_1 | IB History - Causes of WWI
+Q: Which of the following was a primary characteristic of a 'Great Power' in 1900?
+
+CORRECT: Significant military alliances, large industrial capacity, and colonial possessions.
+WRONG:   Total isolation from world trade.
+           Flaw: Great Powers were central to world trade.
+           Reframe: Think about global influence.
+
+WRONG:   A focus solely on internal agriculture.
+           Flaw: Industrialization was key to being a Great Power.
+           Reframe: Military and industry went hand-in-hand.
+
+WRONG:   Lack of any standing army.
+           Flaw: Militarism was a defining trait of the period.
+           Reframe: Alliances and armies were fundamental.
+
+LESSON:
+The 'Great Powers' (Britain, Germany, France, Russia, Austria-Hungary) were defined by their industrial and military might.
+
+----------------------------------------------------------------------
+

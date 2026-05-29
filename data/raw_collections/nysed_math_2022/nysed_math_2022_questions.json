@@ -1,0 +1,4086 @@
+{
+  "source": "NYSED 2022 Grades 3-8 Mathematics Released Questions",
+  "questionCount": 204,
+  "items": [
+    {
+      "source_id": "nysed-math-2022::grade-3::1",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.A.1 Operations and Algebraic Thinking 0.78",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::2",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.NF.A.2b Number and Operations - Fractions 0.62",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::3",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.MD.C.7d Measurement and Data 0.35",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::4",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.MD.A.2 Measurement and Data 0.79",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::6",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 6,
+      "prompt_text": "Mica has gumballs. He gives all of them to friends. Each friend gets the same number of gumballs. Which expression can be used to \ufb01nd the number of gumballs Mica gives each friend?",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::9",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.B.5 Operations and Algebraic Thinking 0.63",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::10",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.OA.A.3 Operations and Algebraic Thinking 0.63",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::11",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.NBT.A.3 Number and Operations in Base Ten 0.68",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::12",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 12,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.MD.C.5b Measurement and Data 0.4",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::15",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.OA.A.4 Operations and Algebraic Thinking 0.75",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::16",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.NF.A.3b Number and Operations - Fractions 0.41",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::22",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 22,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.NF.A.2a Number and Operations - Fractions 0.51",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::26",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 26,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.G.A.2 Geometry 0.96",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::27",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 27,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.MD.A.2 Measurement and Data 0.82 THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2022 Mathematics Tests Map to the Standards Grade 3 Released Questions Constructed Response Questions Question Type Key Points Standard Cluster",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::28",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 28,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.OA.A.1 Operations and Algebraic Thinking 0.93",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::29",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 29,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.D.9 Operations and Algebraic Thinking 0.57",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::30",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 30,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.NF.A.3d Number and Operations - Fractions 0.45",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::31",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.OA.A.2 Operations and Algebraic Thinking 0.75",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::32",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.MD.C.5b Measurement and Data 0.5",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::33",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.NF.A.3a Number and Operations - Fractions 0.36",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::34",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 34,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.3.OA.D.8 Operations and Algebraic Thinking 1.09 0.55",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::35",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 35,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.3.MD.C.6 Measurement and Data 1.2 0.6",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::36",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 36,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.3.NBT.A.1 Number and Operations in Base Ten 0.45 0.22",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::37",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 37,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.3.OA.B.6 Operations and Algebraic Thinking 0.88 0.44",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::38",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 38,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.3.MD.C.7a Measurement and Data 1.18 0.59",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::39",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 39,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.3.NF.A.3d Number and Operations - Fractions 0.8 0.4",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::40",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 40,
+      "prompt_text": "Constructed Response 3 CCSS.Math.Content.3.OA.A.3 Operations and Algebraic Thinking 1.64 0.55 *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-3::63",
+      "collection_id": "nysed-math-2022::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2022 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf",
+      "question_number": 63,
+      "prompt_text": "\u00f7 7 =",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::1",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.MD.C.5b Measurement and Data 0.77",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::2",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.G.A.1 Geometry 0.73",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::3",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 3,
+      "prompt_text": "4",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::4",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 4,
+      "prompt_text": "4 2 A ? 4 + 4 + 2 = B ? 4 + 4 \u00d7 2 = C ? 4 \u00d7 4 \u00d7 2 = D ? 4 \u00d7 4 + 2 =",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::5",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 5,
+      "prompt_text": "9 AAnnsswweerr inches",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::6",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 6,
+      "prompt_text": "7",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::8",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 8,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.MD.A.3 Measurement and Data 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::9",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.NBT.A.1 Number and Operations in Base Ten 0.41",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::10",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 10,
+      "prompt_text": "Cam has 35 tickets to use at an amusement park. He wants to use as many of the tickets on rides as he can. Each ride requires 4 tickets. How many tickets will Cam have left over after going on as many rides as he can? A 3 B 4 C 8 D 9",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::12",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 12,
+      "prompt_text": "D , ,3",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::13",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.OA.A.1 Operations and Algebraic Thinking 0.9",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::14",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.NF.B.3a Number and Operations - Fractions 0.76",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::16",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.MD.B.4 Measurement and Data 0.47",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::17",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 17,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.4.NBT.A.3 Number and Operations in Base Ten 0.62",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::21",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.4.NF.A.2 Number and Operations - Fractions 0.74",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::22",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 22,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.MD.C.6 Measurement and Data 0.69",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::23",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.OA.A.3 Operations and Algebraic Thinking 0.44",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::24",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 24,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.MD.C.5a Measurement and Data 0.55",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::27",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 27,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.NBT.B.5 Number and Operations in Base Ten 0.61",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::28",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 28,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.G.A.2 Geometry 0.71 THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2022 Mathematics Tests Map to the Standards Grade 4 Released Questions Constructed Response Questions Question Type PointsKey Standard Cluster",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::31",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.NF.B.3d Number and Operations - Fractions 0.74",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::32",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.OA.A.2 Operations and Algebraic Thinking 0.82",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::33",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.MD.B.4 Measurement and Data 0.67",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::34",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.OA.A.1 Operations and Algebraic Thinking 0.88",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::35",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.NF.B.3c Number and Operations - Fractions 0.44",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::36",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 36,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.4.OA.A.3 Operations and Algebraic Thinking 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::37",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 37,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.NBT.B.6 Number and Operations in Base Ten 0.68",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::38",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 38,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.OA.A.2 Operations and Algebraic Thinking 0.81",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::39",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 39,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.4.OA.C.5 Operations and Algebraic Thinking 1.38 0.69",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::40",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 40,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.4.MD.C.7 Measurement and Data 0.5 0.25",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::41",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.4.G.A.3 Geometry 0.72 0.36",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::42",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.4.NBT.A.2 Number and Operations in Base Ten 1.01 0.5",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::43",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.4.NF.A.2 Number and Operations - Fractions 0.8 0.4",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::44",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.4.NBT.B.5 Number and Operations in Base Ten 1.09 0.55",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-4::45",
+      "collection_id": "nysed-math-2022::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2022 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf",
+      "question_number": 45,
+      "prompt_text": "Constructed Response 3 CCSS.Math.Content.4.NF.B.4c Number and Operations - Fractions 0.98 0.33 *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::1",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.MD.A.2 Measurement and Data 0.73",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::2",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NF.A.1 Number and Operations - Fractions 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::3",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.5.G.B.4 Geometry 0.62",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::4",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 4,
+      "prompt_text": "AAnnsswweerr miles",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::5",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 5,
+      "prompt_text": "B 5",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::6",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 6,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.5.MD.A.1 Measurement and Data 0.47",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::7",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NF.B.7b Number and Operations - Fractions 0.5",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::8",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 8,
+      "prompt_text": "3",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::10",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 10,
+      "prompt_text": "C 28 100 D 28 1,000 Mr. Davis buys 4 pizzas for a family dinner. He cuts each pizza into sixths. How many pieces of pizza does Mr. Davis have for the family dinner? A 6 B 10 C 20 D 24",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::12",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 12,
+      "prompt_text": "B 2 2",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::13",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.NF.C.7 Number and Operations in Base Ten 0.62",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::14",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.MD.A.1 Measurement and Data 0.82",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::15",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.5.NBT.B.6 Number and Operations in Base Ten 0.68",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::18",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 18,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.MD.B.2 Measurement and Data 0.38",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::19",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 19,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NBT.B.7 Number and Operations in Base Ten 0.43",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::20",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 20,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.5.NF.A.1 Number and Operations - Fractions 0.43",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::21",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.5.NF.B.3 Number and Operations - Fractions 0.56",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::22",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 22,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.NF.C.5 Number and Operations - Fractions 0.57",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::23",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.5.NBT.A.2 Number and Operations in Base Ten 0.45 THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2022 Mathematics Tests Map to the Standards Grade 5 Released Questions Constructed Response Questions Question Type Key Points Standard Cluster",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::24",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 24,
+      "prompt_text": "Trey and his friends equally share a -ounce jar of applesauce. How much applesauce, in ounces, does each person receive?",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::31",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.NF.C.5 Number and Operations - Fractions 0.36",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::32",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.5.NF.B.4a Number and Operations - Fractions 0.53",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::33",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.G.B.3 Geometry 0.79",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::34",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.5.NF.B.5a Number and Operations - Fractions 0.65",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::35",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.NF.C.6 Number and Operations in Base Ten 0.69",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::36",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 36,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NF.B.7b Number and Operations - Fractions 0.89",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::37",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 37,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NF.A.2 Number and Operations - Fractions 0.61",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::38",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 38,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.5.NBT.A.3a Number and Operations in Base Ten 0.78",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::39",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 39,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.5.MD.A.1 Measurement and Data 0.67 0.33",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::40",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 40,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.5.NF.B.7a Number and Operations - Fractions 0.49 0.24",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::41",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.5.NBT.A.1 Number and Operations in Base Ten 0.6 0.3",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::42",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.5.NBT.B.7 Number and Operations in Base Ten 1.02 0.51",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::43",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.5.MD.C.4 Measurement and Data 1.1 0.55",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::44",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.5.NF.A.2 Number and Operations - Fractions 0.86 0.43",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-5::45",
+      "collection_id": "nysed-math-2022::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2022 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf",
+      "question_number": 45,
+      "prompt_text": "Constructed Response 3 CCSS.Math.Content.5.MD.C.5c Measurement and Data 1.33 0.44 *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::0",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 0,
+      "prompt_text": "A \u221221 B \u221220 C 0 D 20",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::1",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.EE.B.5 Expressions and Equations 0.68",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::2",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.RP.A.3a Ratios and Proportional Relationships 0.53",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::3",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.G.A.4 Geometry 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::4",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.EE.C.9 Expressions and Equations 0.71",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::5",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 5,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.RP.A.1 Ratios and Proportional Relationships 0.55",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::6",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 6,
+      "prompt_text": "CONVERSIONS FORMULAS Grade 6 Mathematics Reference Sheet Right Rectangular Prism",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::9",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 9,
+      "prompt_text": "\udc66\ud835",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::11",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.EE.A.2c Expressions and Equations 0.49",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::12",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 12,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.G.A.1 Geometry 0.5",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::15",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.RP.A.3c Ratios and Proportional Relationships 0.63",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::16",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.EE.B.5 Expressions and Equations 0.62",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::17",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 17,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.RP.A.3d Ratios and Proportional Relationships 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::20",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 20,
+      "prompt_text": "B 8",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::22",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 22,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.NS.A.1 The Number System 0.55",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::23",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.G.A.1 Geometry 0.33",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::26",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 26,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.NS.C.6c The Number System 0.51",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::27",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 27,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.RP.A.2 Ratios and Proportional Relationships 0.59 THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2022 Mathematics Tests Map to the Standards Grade 6 Released Questions Constructed Response Questions Question Type Key Points Standard Cluster",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::28",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 28,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.G.A.3 Geometry 0.56",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::32",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.RP.A.3a Ratios and Proportional Relationships 0.53",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::33",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.G.A.4 Geometry 0.43",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::34",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.RP.A.2 Ratios and Proportional Relationships 0.79",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::35",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.NS.C.5 The Number System 0.72",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::36",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 36,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.G.A.1 Geometry 0.53",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::37",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 37,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.RP.A.3c Ratios and Proportional Relationships 0.38",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::38",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 38,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.EE.B.6 Expressions and Equations 0.61",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::39",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 39,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.6.EE.A.2a Expressions and Equations 0.8 0.4",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::40",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 40,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.6.NS.C.8 The Number System 0.93 0.46",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::41",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.6.NS.B.4 The Number System 1.09 0.54",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::42",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.6.G.A.2 Geometry 0.44 0.22",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::43",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.6.EE.A.3 Expressions and Equations 0.73 0.36",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::44",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.6.RP.A.3b Ratios and Proportional Relationships 0.25 0.12",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::45",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 45,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.6.EE.B.7 Expressions and Equations 1.04 0.52",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::46",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 46,
+      "prompt_text": "Constructed Response 3 CCSS.Math.Content.6.EE.C.9 Expressions and Equations 1.64 0.55 *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-6::96",
+      "collection_id": "nysed-math-2022::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2022 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf",
+      "question_number": 96,
+      "prompt_text": "pencils. What is the unit price of a pencil? A $0.12 B $0.96 C $1.20 D $1.92 Three vertices of a rectangle are located at , , and on a coordinate plane. What are the coordinates of the fourth vertex of the rectangle? (2, 4) ( \u22122,\u22125) ( \u22122, 4) A (2, 5) B (2,\u22125) C (5, 2) D (\u22125,\u22122)",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::1",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.SP.C.5 Statistics and Probability 0.75",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::2",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.RP.A.3 Ratios and Proportional Relationships 0.74",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::3",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 3,
+      "prompt_text": "B 3",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::4",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.SP.C.7b Statistics and Probability 0.49",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::5",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 5,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.EE.A.1 Expressions and Equations 0.65",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::7",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 7,
+      "prompt_text": "D 3",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::8",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 8,
+      "prompt_text": "A chef made cups of chili and sold of it. A serving size of the chili is cups. How many servings of chili were sold? 150 60% 1 2",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::9",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.SP.A.3 Statistics and Probability 0.48",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::10",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.SP.C.8b Statistics and Probability 0.48",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::11",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.RP.A.2c Ratios and Proportional Relationships 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::13",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 13,
+      "prompt_text": "46 Ms. Boi spent a total of for admission tickets and for parking at a baseball game. The cost of each admission ticket was the same amount, including tax. The cost of parking was . Write an equation that can be used to determine , the cost, in dollars, of each admission ticket, including tax. EEqquuaattiioonn $175.00 4 $25.00 \udc61\ud835 What was the cost, in dollars, of each admission ticket, including tax? SShhooww yyoouurr wwoorrkk.. AAnnsswweerr $",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::15",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 15,
+      "prompt_text": "B 1",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::19",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 19,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.NS.A.1c The Number System 0.64",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::20",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 20,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.EE.B.3 Expressions and Equations 0.42",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::21",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.NS.A.1b The Number System 0.72",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::25",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 25,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.NS.A.3 The Number System 0.63",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::26",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 26,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.RP.A.1 Ratios and Proportional Relationships 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::28",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 28,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.RP.A.2b Ratios and Proportional Relationships 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::30",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 30,
+      "prompt_text": "\udc65\ud835",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::31",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 31,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.RP.A.3 Ratios and Proportional Relationships 0.63 THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2022 Mathematics Tests Map to the Standards Grade 7 Released Questions Constructed Response Questions Question Type Key Points Standard Cluster",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::32",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 32,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.EE.B.3 Expressions and Equations 0.5",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::33",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 33,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.G.A.1 Geometry 0.4",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::34",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.EE.B.4b Expressions and Equations 0.59",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::35",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.SP.B.4 Statistics and Probability 0.5",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::36",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 36,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.EE.B.3 Expressions and Equations 0.81",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::37",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 37,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.RP.A.1 Ratios and Proportional Relationships 0.52",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::38",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 38,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.EE.A.1 Expressions and Equations 0.5",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::39",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 39,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.RP.A.2b Ratios and Proportional Relationships 0.34",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::40",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 40,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.EE.A.1 Expressions and Equations 0.51",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::41",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.SP.A.2 Statistics and Probability 0.78 0.39",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::42",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.NS.A.3 The Number System 1.32 0.66",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::43",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.RP.A.2b Ratios and Proportional Relationships 1.63 0.81",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::44",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.NS.A.1c The Number System 1.1 0.55",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::45",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 45,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.EE.B.3 Expressions and Equations 0.89 0.45",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::46",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 46,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.NS.A.2b The Number System 0.9 0.45",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::47",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 47,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.7.EE.B.4a Expressions and Equations 0.75 0.38",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::48",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 48,
+      "prompt_text": "Constructed Response 3 CCSS.Math.Content.7.RP.A.3 Ratios and Proportional Relationships 0.9 0.3 *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-7::50",
+      "collection_id": "nysed-math-2022::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2022 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf",
+      "question_number": 50,
+      "prompt_text": "A 1",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::1",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.F.B.5 Functions 0.83",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::2",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.EE.C.7b Expressions and Equations 0.63",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::3",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.G.B.6 Geometry 0.73",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::4",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.EE.B.6 Expressions and Equations 0.6",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::5",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 5,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.G.B.5 Expressions and Equations 0.6",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::6",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 6,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.G.A.4 Geometry 0.46",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::7",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.SP.A.2 Statistics and Probability 0.67",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::8",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 8,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.EE.C.7a Expressions and Equations 0.65",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::12",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 12,
+      "prompt_text": "2",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::14",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.EE.A.1 Expressions and Equations 0.43",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::15",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.F.B.4 Functions 0.48",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::16",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.EE.C.7b Expressions and Equations 0.47",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::19",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 19,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.F.B.5 Functions 0.66",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::23",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.G.C.9 Geometry 0.51",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::24",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 24,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.G.A.2 Expressions and Equations 0.52 THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2022 Mathematics Tests Map to the Standards Grade 8 Released Questions Constructed Response Questions Question Type Key Points Standard Cluster",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::25",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 25,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.EE.B.6 Expressions and Equations 0.57",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::26",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 26,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.EE.B.5 Expressions and Equations 0.54",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::34",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 34,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.SP.A.3 Statistics and Probability 0.63",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::35",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 35,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.EE.A.1 Expressions and Equations 0.49",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::36",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 36,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.G.A.5 Geometry 0.55",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::37",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 37,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.G.A.2 Geometry 0.73",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::38",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 38,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.F.A.1 Functions 0.66",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::39",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 39,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.EE.C.7a Expressions and Equations 0.47",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::40",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 40,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.G.A.3 Geometry 0.61",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::41",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 41,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.F.B.4 Functions 0.63 0.31",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::42",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 42,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.G.A.2 Geometry 0.75 0.37",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::43",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 43,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.G.A.5 Geometry 0.35 0.17",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::44",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 44,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.EE.C.7b Expressions and Equations 0.59 0.29",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::45",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 45,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.F.A.2 Functions 0.84 0.42",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::46",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 46,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.G.C.9 Geometry 0.52 0.26",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::47",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 47,
+      "prompt_text": "Constructed Response 2 CCSS.Math.Content.8.EE.C.7b Expressions and Equations 0.47 0.24",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::48",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 48,
+      "prompt_text": "Constructed Response 3 CCSS.Math.Content.8.F.A.3 Functions 0.69 0.23 *This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding.",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2022::grade-8::63",
+      "collection_id": "nysed-math-2022::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2022 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf",
+      "question_number": 63,
+      "prompt_text": "5 61 1",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2022 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2022"
+      ]
+    }
+  ]
+}

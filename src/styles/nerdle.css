@@ -1,0 +1,184 @@
+/* ═══ NERDLE ═══ */
+
+.nerdle-layout {
+  display: grid;
+  gap: 18px;
+  padding: 10px 0 28px;
+}
+
+.nerdle-hero {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 18px 22px;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur);
+}
+.nerdle-hero h2 {
+  margin: 4px 0 6px;
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3.4vw, 30px);
+  font-weight: 900;
+  color: var(--ocean-deep);
+}
+.nerdle-hero p { margin: 0; color: rgba(11, 29, 46, 0.7); font-size: 14px; font-weight: 500; }
+body.deep-ocean .nerdle-hero h2 { color: #f4fdff; }
+body.deep-ocean .nerdle-hero p { color: rgba(231, 251, 255, 0.75); }
+
+.nerdle-actions { display: flex; gap: 8px; flex-shrink: 0; }
+.nerdle-actions button {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 14px; border-radius: var(--r-full);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--ocean-deep);
+  font-size: 13px; font-weight: 700; cursor: pointer;
+}
+body.deep-ocean .nerdle-actions button {
+  background: rgba(255, 255, 255, 0.08); color: #e7fbff;
+}
+
+.nerdle-stage {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  padding: 22px 18px;
+  border-radius: var(--r-xl);
+  border: 1px solid rgba(46, 196, 182, 0.22);
+  background:
+    radial-gradient(ellipse at top, rgba(46, 196, 182, 0.14), transparent 60%),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.5));
+  color: #f4fdff;
+}
+
+.nerdle-toast {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 14px;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(244, 63, 94, 0.55);
+  border-radius: var(--r-md);
+  color: #fda4af;
+  font-size: 13px;
+  font-weight: 700;
+  z-index: 4;
+}
+
+.nerdle-board {
+  display: grid;
+  gap: 6px;
+  padding: 6px;
+}
+.nerdle-board.shaking .nerdle-row { animation: nerdle-shake 0.45s ease-in-out; }
+@keyframes nerdle-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+
+.nerdle-row {
+  display: grid;
+  grid-template-columns: repeat(8, 48px);
+  gap: 6px;
+}
+
+.nerdle-tile {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 900;
+  color: #f4fdff;
+}
+.nerdle-tile.filled { border-color: rgba(255, 255, 255, 0.55); }
+.nerdle-tile.state-correct,
+.nerdle-tile.state-present,
+.nerdle-tile.state-absent {
+  animation: nerdle-flip 0.5s ease forwards;
+  animation-fill-mode: both;
+}
+@keyframes nerdle-flip {
+  0% { transform: rotateX(0); background: rgba(255, 255, 255, 0.04); }
+  45%, 55% { transform: rotateX(-90deg); }
+  100% { transform: rotateX(0); }
+}
+.nerdle-tile.state-correct { background: #6aaa64; border-color: #6aaa64; color: #fff; }
+.nerdle-tile.state-present { background: #c9b458; border-color: #c9b458; color: #fff; }
+.nerdle-tile.state-absent { background: rgba(71, 85, 105, 0.85); border-color: rgba(71, 85, 105, 0.85); color: rgba(255, 255, 255, 0.78); }
+
+.nerdle-result {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  border-radius: var(--r-md);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 14px;
+}
+.nerdle-result em { font-family: var(--font-display); font-weight: 800; font-style: normal; color: #d1fae5; letter-spacing: 0.04em; }
+.nerdle-result.win { background: rgba(106, 170, 100, 0.18); border-color: rgba(106, 170, 100, 0.5); }
+.nerdle-result.lose { background: rgba(244, 63, 94, 0.18); border-color: rgba(244, 63, 94, 0.5); }
+.nerdle-result button {
+  margin-left: auto;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: var(--r-full);
+  background: linear-gradient(135deg, var(--reef-teal), var(--reef-emerald));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.nerdle-keyboard {
+  display: grid;
+  gap: 6px;
+  width: 100%;
+  max-width: 520px;
+}
+.nerdle-key-row {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.nerdle-key {
+  flex: 0 0 auto;
+  min-width: 40px;
+  height: 48px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #f4fdff;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.nerdle-key.action { padding: 0 12px; font-size: 14px; }
+.nerdle-key.wide { min-width: 72px; }
+.nerdle-key:hover { background: rgba(255, 255, 255, 0.22); }
+.nerdle-key.state-correct { background: #6aaa64; }
+.nerdle-key.state-present { background: #c9b458; }
+.nerdle-key.state-absent { background: rgba(51, 65, 85, 0.85); color: rgba(255, 255, 255, 0.55); }
+
+@media (max-width: 580px) {
+  .nerdle-hero { flex-direction: column; }
+  .nerdle-row { grid-template-columns: repeat(8, 36px); gap: 4px; }
+  .nerdle-tile { width: 36px; height: 36px; font-size: 18px; }
+  .nerdle-key { height: 42px; font-size: 16px; min-width: 32px; }
+}

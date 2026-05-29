@@ -1,0 +1,518 @@
+import { makeQuestionBank } from './base'
+import type { Question } from './types'
+
+const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
+const source = 'Floe englishComposition101 top-up'
+
+export const englishComposition101TopUpQuestions: Question[] = makeQuestionBank('University', [
+  // ---------------------------------------------------------------------------
+  // Chapter 1: The Writing Process and the Rhetorical Situation
+  // ---------------------------------------------------------------------------
+  {
+    id: 7420000,
+    chapter: 'English Composition: The Writing Process and the Rhetorical Situation',
+    title: 'Identifying exigence',
+    prompt: 'A city posts a sudden water-boil advisory and a blogger immediately writes a piece explaining how to purify tap water. In rhetorical terms, what is the advisory functioning as?',
+    correct: 'The exigence — the urgent situation that makes the writing necessary right now',
+    wrong: [
+      miss('The thesis of the blog post', 'The thesis is the claim the blogger argues; the advisory is the external event that prompted the writing, not the argument itself.', 'Distinguish the event that triggers writing from the claim the writer makes in response to it.'),
+      miss('The genre of the blog post', 'Genre is the type of text (a how-to post); the advisory is the circumstance that called the text into being, not its form.', 'Genre answers "what kind of text"; exigence answers "why write it now."'),
+      miss('The audience of the blog post', 'The audience is the readers who need clean water; the advisory is the pressing condition that created their need, not the readers themselves.', 'Audience is who you write to; exigence is the problem or urgency that makes writing worthwhile.'),
+    ],
+    lesson: 'Exigence is the part of the rhetorical situation that makes writing necessary: a problem, gap, or urgency that demands a response. Identifying exigence helps a writer see why a text exists and what it is trying to change, separate from its audience, genre, or thesis.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420001,
+    chapter: 'English Composition: The Writing Process and the Rhetorical Situation',
+    title: 'Genre shapes form',
+    prompt: 'A student researches campus food waste and must present the findings as both a peer-reviewed-style report and a public-awareness poster. Which statement best captures how genre should affect the two texts?',
+    correct: 'Each genre has different conventions, so the same findings should be organized, worded, and designed differently for each',
+    wrong: [
+      miss('The poster should simply be a shrunken copy of the report so the content stays identical', 'A poster and a report serve different audiences and reading conditions; copying the report ignores the visual, scannable conventions a poster requires.', 'Adapting to a genre means rethinking structure and design for its audience, not resizing the same text.'),
+      miss('Genre is only about formatting, so only the fonts and margins need to change', 'Genre governs structure, evidence, tone, and design — not just surface formatting. The poster needs different organization and emphasis entirely.', 'Genre conventions reach far beyond fonts; they shape what you include and how you arrange it.'),
+      miss('Since the data is the same, the rhetorical situation is identical for both', 'The data may be shared, but audience, purpose, and reading context differ, so the rhetorical situation differs even with identical findings.', 'Same facts can sit in very different rhetorical situations; audience and purpose still change.'),
+    ],
+    lesson: 'Genre is a set of conventions a discourse community expects for a given purpose and audience. The same content must be re-shaped — in structure, evidence, tone, and design — when it moves between genres like a research report and a public poster.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420002,
+    chapter: 'English Composition: The Writing Process and the Rhetorical Situation',
+    title: 'Writing as recursive',
+    prompt: 'A writer drafts a paragraph, realizes mid-sentence that the idea is wrong, and goes back to re-read a source before re-outlining. Which view of the writing process does this illustrate?',
+    correct: 'Writing is recursive — invention, drafting, and revision loop back into one another rather than running in a fixed order',
+    wrong: [
+      miss('Writing is linear — you must finish prewriting, then drafting, then revising in strict sequence', 'The scenario shows the writer looping back from drafting to invention, which a strictly linear model forbids; real writing moves back and forth.', 'A linear model bans backtracking; experienced writers loop between stages constantly.'),
+      miss('The writer is procrastinating and should never stop to revise while drafting', 'Stopping to rethink an idea is part of how writing discovers meaning, not procrastination; banning it would lock in the flawed idea.', 'Pausing to re-see meaning is productive revision, not avoidance.'),
+      miss('Good writers produce a correct draft on the first try and rarely loop back', 'Even skilled writers revise and re-research as they draft; the myth of a flawless first draft discourages the looping that improves writing.', 'First-draft perfection is a myth; the loop back is where the thinking happens.'),
+    ],
+    lesson: 'The writing process is recursive, not linear: writers move back and forth among invention, drafting, and revision as their thinking develops. Drafting often reveals that an idea needs rethinking, sending the writer back to read, plan, or research again.',
+    source,
+    generated: true,
+  },
+  // ---------------------------------------------------------------------------
+  // Chapter 2: Active Reading and the Academic Conversation
+  // ---------------------------------------------------------------------------
+  {
+    id: 7420003,
+    chapter: 'English Composition: Active Reading and the Academic Conversation',
+    title: 'Accurate summary vs. reaction',
+    prompt: 'A source argues that later school start times improve teen sleep. A student writes: "This author is right that schools should care more about students." What is wrong with this as a summary?',
+    correct: 'It substitutes the reader\'s reaction for the source\'s actual claim instead of restating what the author argued',
+    wrong: [
+      miss('It is too long to count as a summary', 'Length is not the problem; the sentence is short. The flaw is that it reports agreement rather than the author\'s argument.', 'A summary fails when it reports your view instead of the source\'s, regardless of length.'),
+      miss('It quotes the source without quotation marks', 'No language from the source is reproduced here; the issue is that the writer inserted an opinion, not that a quotation went unmarked.', 'Check whether the sentence restates the source or just reacts to it.'),
+      miss('It correctly summarizes the source because it agrees with it', 'Agreeing with a source is not the same as summarizing it; the sentence never states the source\'s claim about start times and sleep.', 'Agreement is a response, not a summary; a summary must name the source\'s point.'),
+    ],
+    lesson: 'An accurate summary restates a source\'s main claim and reasoning in your own words, without inserting your reaction. Mixing in agreement or disagreement at the summary stage distorts the source and weakens the later "I say" response.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420004,
+    chapter: 'English Composition: Active Reading and the Academic Conversation',
+    title: 'They say / I say: complicating',
+    prompt: 'A source claims standardized tests predict college success. A student writes: "While these tests may predict first-year grades, they also reflect access to expensive prep, so they measure opportunity as much as ability." Which conversational move is this?',
+    correct: 'Complicating the claim — agreeing in part while adding a qualification the original overlooked',
+    wrong: [
+      miss('Flatly disagreeing with the claim', 'The student concedes the tests "may predict first-year grades," so this is not a flat rejection; it accepts part of the claim while adding nuance.', 'Flat disagreement rejects the claim outright; this response keeps part of it.'),
+      miss('Simply restating the source\'s claim in new words', 'The student adds a new point about test prep and opportunity that the source did not make, so it goes beyond restatement.', 'Restatement adds nothing new; complicating introduces an overlooked dimension.'),
+      miss('Agreeing fully with no reservation', 'Full agreement would not add the "but they also reflect access to prep" caveat; this response qualifies the claim rather than endorsing it wholesale.', 'Full agreement has no "but"; complicating hinges on the qualification it adds.'),
+    ],
+    lesson: 'In the "they say / I say" framework, complicating a claim means accepting part of it while adding a consideration the original missed. It is more sophisticated than flat agreement or disagreement because it advances the conversation rather than just taking a side.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420005,
+    chapter: 'English Composition: Active Reading and the Academic Conversation',
+    title: 'Naming an assumption',
+    prompt: 'A source argues: "The library should buy more e-books because students clearly prefer screens to paper." What unstated assumption does the argument depend on?',
+    correct: 'That a preference for screens means students would actually read more if the library bought e-books',
+    wrong: [
+      miss('That the library has a budget for new purchases', 'A budget is a practical precondition, not the logical assumption linking the screen-preference evidence to the buy-more-e-books conclusion.', 'Look for the belief that lets the stated reason support the conclusion, not a background fact.'),
+      miss('That e-books are cheaper than paper books', 'Cost is never mentioned and is not what bridges "students prefer screens" to "the library should buy e-books"; the argument turns on preference, not price.', 'The assumption must connect the given evidence to the claim, not introduce a new reason.'),
+      miss('That students enjoy visiting the physical library', 'Whether students enjoy the building is irrelevant to whether a screen preference justifies buying e-books; this is unrelated to the inference.', 'Test each option by asking: does the argument fall apart without it? An unrelated point fails that test.'),
+    ],
+    lesson: 'An assumption is the unstated belief an argument needs in order for its evidence to support its claim. Naming it lets a reader evaluate the argument: here, the leap from "prefer screens" to "should buy e-books" only works if preference would translate into more reading.',
+    source,
+    generated: true,
+  },
+  // ---------------------------------------------------------------------------
+  // Chapter 3: Thesis, Claims, and Essay Architecture
+  // ---------------------------------------------------------------------------
+  {
+    id: 7420006,
+    chapter: 'English Composition: Thesis, Claims, and Essay Architecture',
+    title: 'Arguable vs. factual thesis',
+    prompt: 'Which of these would work best as an arguable thesis for a college argument essay?',
+    correct: 'The campus should replace letter grades with narrative feedback because grades discourage intellectual risk-taking',
+    wrong: [
+      miss('Many colleges in the United States use letter grades to evaluate students', 'This is a verifiable fact, not a contestable position; no reasonable reader could disagree, so there is nothing to argue.', 'A thesis must be debatable; if no one could disagree, it is a fact, not a thesis.'),
+      miss('In this essay, I will discuss grades, feedback, and student motivation', 'This announces the topics the essay will cover but stakes no claim; it tells the reader the subject, not the argument.', 'Announcing topics is not arguing a point; a thesis takes a stance.'),
+      miss('Grading is a very interesting and important topic in education today', 'Calling a topic "interesting and important" is a vague observation, not an arguable claim; it commits to no position a reader could contest.', 'Vague value words ("interesting," "important") signal a topic, not a thesis.'),
+    ],
+    lesson: 'A strong academic thesis is arguable (a reasonable person could disagree), specific, and significant. Facts, topic announcements, and vague observations all fail the test because they take no contestable position.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420007,
+    chapter: 'English Composition: Thesis, Claims, and Essay Architecture',
+    title: 'Function of a topic sentence',
+    prompt: 'In a well-built body paragraph, what is the main job of the topic sentence?',
+    correct: 'To state the single claim the paragraph will support and connect it to the essay\'s argument',
+    wrong: [
+      miss('To introduce a new, unrelated idea to keep the reader interested', 'A topic sentence should unify the paragraph around one idea tied to the thesis; introducing an unrelated idea breaks paragraph unity.', 'Topic sentences create unity, not surprise; they keep the paragraph on one point.'),
+      miss('To present the longest quotation in the paragraph', 'A topic sentence is the writer\'s own claim, not borrowed material; opening with a quotation hands the paragraph\'s direction to a source.', 'The topic sentence should be your claim; evidence and quotations come after it.'),
+      miss('To summarize the entire essay in one line', 'Summarizing the whole essay is closer to the thesis or conclusion; a topic sentence governs just one paragraph\'s point.', 'A topic sentence covers one paragraph; the thesis covers the whole essay.'),
+    ],
+    lesson: 'A topic sentence states the one claim a paragraph will develop and links it to the essay\'s thesis, giving the paragraph unity. Evidence and analysis then support that claim; the paragraph should not wander into unrelated ideas.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420008,
+    chapter: 'English Composition: Thesis, Claims, and Essay Architecture',
+    title: 'Reverse outlining',
+    prompt: 'A writer suspects a draft is disorganized, so she writes one sentence summarizing each paragraph\'s point and reads the list straight through. What revision technique is this, and what does it reveal?',
+    correct: 'Reverse outlining — it exposes whether the paragraphs progress logically or repeat, jump, and stray from the thesis',
+    wrong: [
+      miss('Proofreading — it catches the comma and spelling errors in each paragraph', 'Summarizing each paragraph\'s point examines structure, not surface mechanics; proofreading happens later and looks at sentences, not organization.', 'Reverse outlining tests structure; proofreading checks surface correctness.'),
+      miss('Freewriting — it generates brand-new material to add to the draft', 'Freewriting produces new content; this technique analyzes existing structure by abstracting each paragraph into a single point.', 'Freewriting invents; reverse outlining diagnoses what is already there.'),
+      miss('Peer review — it collects another reader\'s reaction to the draft', 'No second reader is involved; the writer is auditing her own structure by listing each paragraph\'s claim.', 'Peer review needs another person; reverse outlining is a self-check of your own draft.'),
+    ],
+    lesson: 'Reverse outlining means writing a one-line summary of each paragraph after drafting, then reading the summaries in order. It reveals structural problems — repetition, gaps, misordering, or drift from the thesis — that are hard to see while reading the full prose.',
+    source,
+    generated: true,
+  },
+  // ---------------------------------------------------------------------------
+  // Chapter 4: Argument, the Toulmin Model, and Logical Reasoning
+  // ---------------------------------------------------------------------------
+  {
+    id: 7420009,
+    chapter: 'English Composition: Argument, the Toulmin Model, and Logical Reasoning',
+    title: 'Toulmin grounds',
+    prompt: 'In the Toulmin model, an argument states: "The bridge is unsafe (claim) because inspectors found three cracked support beams last week." What Toulmin element are the cracked beams?',
+    correct: 'The grounds (data) — the evidence offered in direct support of the claim',
+    wrong: [
+      miss('The warrant', 'The warrant is the unstated principle linking evidence to claim (e.g., "cracked support beams make a bridge unsafe"), not the evidence itself.', 'The warrant is the bridge between evidence and claim; the evidence is the grounds.'),
+      miss('The qualifier', 'A qualifier limits the claim\'s scope ("probably," "in most cases"); the cracked beams are the factual support, not a hedge on the claim.', 'Qualifiers soften the claim; grounds supply the facts behind it.'),
+      miss('The rebuttal', 'A rebuttal names exceptions or counter-cases to the claim; the cracked beams support the claim rather than challenge it.', 'Rebuttals state exceptions; grounds state supporting evidence.'),
+    ],
+    lesson: 'In Stephen Toulmin\'s model, the grounds (or data) are the evidence and facts offered to support the claim. The warrant is the separate, often unstated, principle that explains why those grounds support the claim.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420010,
+    chapter: 'English Composition: Argument, the Toulmin Model, and Logical Reasoning',
+    title: 'Adding a qualifier',
+    prompt: 'A writer claims: "Online classes always lead to lower grades." A reviewer notes that some studies disagree. Which revision best adds an appropriate Toulmin qualifier?',
+    correct: 'Online classes are often associated with lower grades, especially for students without reliable internet access',
+    wrong: [
+      miss('Online classes definitely and absolutely lead to lower grades in every case', 'This strengthens rather than qualifies the overbroad claim; "definitely and absolutely" makes it even harder to defend against the conflicting studies.', 'A qualifier narrows a claim; doubling down widens it and ignores the counterevidence.'),
+      miss('Online classes are bad and everyone knows it', 'This is vaguer and more sweeping, not qualified; "everyone knows it" begs the question rather than scoping the claim.', 'A qualifier adds precise limits, not a louder assertion.'),
+      miss('Online classes exist at many universities', 'This drops the claim entirely and states a fact; a qualifier should scope the original claim, not replace it with an unrelated observation.', 'Qualifying a claim keeps the claim and limits it; it does not abandon it.'),
+    ],
+    lesson: 'A qualifier states the degree of certainty or the conditions under which a claim holds (e.g., "often," "in most cases," "for students without reliable access"). Adding one turns an indefensible absolute claim into a more accurate, defensible one.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420011,
+    chapter: 'English Composition: Argument, the Toulmin Model, and Logical Reasoning',
+    title: 'Identifying a straw man',
+    prompt: 'In a debate about campus parking, one writer responds: "My opponent wants to ban all cars on campus, leaving disabled students stranded." The opponent had only proposed raising parking fees. Which fallacy is this?',
+    correct: 'Straw man — misrepresenting the opponent\'s position as a more extreme one that is easier to attack',
+    wrong: [
+      miss('Slippery slope', 'Slippery slope claims one step leads to a chain of dire consequences; here the writer distorts what the opponent actually proposed rather than predicting a chain.', 'Slippery slope predicts a chain; straw man distorts the original position.'),
+      miss('Ad hominem', 'Ad hominem attacks the person rather than the argument; here the writer attacks a fabricated version of the argument, not the opponent\'s character.', 'Ad hominem attacks the arguer; straw man attacks a misrepresented argument.'),
+      miss('Appeal to authority', 'Appeal to authority cites an unfit source to settle a question; no authority is invoked here, only a distorted restatement of the opponent.', 'Appeal to authority misuses a source; straw man misstates the opposing view.'),
+    ],
+    lesson: 'A straw man fallacy replaces an opponent\'s real position with a weaker or more extreme caricature, then attacks the caricature. Refuting an argument fairly requires representing it accurately first.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420012,
+    chapter: 'English Composition: Argument, the Toulmin Model, and Logical Reasoning',
+    title: 'Identifying a false dilemma',
+    prompt: 'A student writes: "Either we cut the entire arts budget or the university goes bankrupt." Which fallacy does this commit?',
+    correct: 'False dilemma — presenting only two options when other possibilities exist',
+    wrong: [
+      miss('Hasty generalization', 'Hasty generalization draws a broad conclusion from too little evidence; this sentence instead forces a choice between two options while ignoring others.', 'Hasty generalization overreaches from a small sample; false dilemma hides the middle options.'),
+      miss('Circular reasoning', 'Circular reasoning uses the conclusion as its own premise; here the problem is the artificially limited set of choices, not a self-supporting loop.', 'Circular reasoning loops back on itself; false dilemma collapses many options into two.'),
+      miss('Red herring', 'A red herring distracts with an irrelevant point; this sentence stays on topic but wrongly limits the budget options to exactly two.', 'A red herring changes the subject; a false dilemma narrows the choices.'),
+    ],
+    lesson: 'A false dilemma (false dichotomy) presents only two options as if they were the only possibilities, when in fact others exist — here, partial cuts, fundraising, or reallocation. Spotting the missing third option dissolves the fallacy.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420013,
+    chapter: 'English Composition: Argument, the Toulmin Model, and Logical Reasoning',
+    title: 'Logos, ethos, pathos',
+    prompt: 'An essay supports later dining hours mainly by citing survey data, dining-hall traffic statistics, and a cost analysis. Which rhetorical appeal is the essay relying on most?',
+    correct: 'Logos — appeal to reason through evidence and logical analysis',
+    wrong: [
+      miss('Pathos — appeal to the audience\'s emotions', 'Statistics and cost analysis target reasoning, not feeling; an emotional appeal would use vivid stories of hungry students, which is not what is described.', 'Data and analysis are logos; emotional stories are pathos.'),
+      miss('Ethos — appeal based on the writer\'s credibility and character', 'Ethos would emphasize the writer\'s expertise or trustworthiness; the essay instead leans on external data and logical analysis.', 'Ethos rests on the speaker\'s credibility; this essay rests on its evidence.'),
+      miss('Kairos — appeal based on perfect timing', 'Kairos concerns the opportune moment for an argument; the described essay emphasizes evidence and logic, not timeliness.', 'Kairos is about timing; logos is about the reasoning the evidence supplies.'),
+    ],
+    lesson: 'Logos is the appeal to reason: evidence, data, and logical structure. Ethos appeals through the writer\'s credibility, and pathos through emotion. An argument built on statistics and analysis is leaning primarily on logos.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420014,
+    chapter: 'English Composition: Argument, the Toulmin Model, and Logical Reasoning',
+    title: 'Diagnosing circular reasoning',
+    prompt: 'A writer argues: "This policy is the fairest option because nothing is more fair than this policy." What is the logical problem?',
+    correct: 'Circular reasoning — the conclusion is offered as its own support rather than backed by independent reasons',
+    wrong: [
+      miss('False dilemma — it forces a choice between two options', 'No two-way choice is presented; the sentence restates its own conclusion as evidence, which is circularity, not a forced dilemma.', 'A false dilemma limits options; circular reasoning reuses the conclusion as the premise.'),
+      miss('Ad hominem — it attacks a person', 'No person is attacked; the flaw is that the claim supports itself rather than targeting an opponent\'s character.', 'Ad hominem targets a person; circular reasoning targets nothing but itself.'),
+      miss('Appeal to emotion — it relies on feelings instead of reasons', 'The sentence offers no emotional content; it simply asserts the conclusion twice in different words.', 'Emotional appeals stir feelings; circular reasoning just repeats the claim.'),
+    ],
+    lesson: 'Circular reasoning (begging the question) occurs when an argument assumes its conclusion in its premises, so the "reason" merely restates the claim. A sound argument supports the claim with independent evidence or reasoning.',
+    source,
+    generated: true,
+  },
+  // ---------------------------------------------------------------------------
+  // Chapter 5: Research Questions and Information Literacy
+  // ---------------------------------------------------------------------------
+  {
+    id: 7420015,
+    chapter: 'English Composition: Research Questions and Information Literacy',
+    title: 'From topic to research question',
+    prompt: 'A student starts with the topic "social media." Which of these is the strongest researchable question for a short college essay?',
+    correct: 'How does daily Instagram use relate to reported sleep quality among first-year college students?',
+    wrong: [
+      miss('Is social media good or bad?', 'This is far too broad and value-laden to research in a short essay; it has no defined population, platform, or measurable outcome.', 'A researchable question is narrow and specific; "good or bad" is sweeping and vague.'),
+      miss('What is social media?', 'This asks for a definition, not an inquiry; it can be answered in a sentence and supports no argument or evidence-gathering.', 'A research question should require investigation, not a one-line definition.'),
+      miss('Don\'t you think social media is harmful?', 'This is a leading, yes/no question that presumes its own answer and cannot anchor balanced research.', 'Good research questions are open and unbiased, not leading or presupposing the answer.'),
+    ],
+    lesson: 'A researchable question narrows a broad topic into something specific, focused, and answerable with evidence: it names a population, a variable, and a relationship. "Good or bad," definitional, and leading questions all fail this test.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420016,
+    chapter: 'English Composition: Research Questions and Information Literacy',
+    title: 'Primary vs. secondary source',
+    prompt: 'For an essay analyzing a historical event, which of the following is a primary source?',
+    correct: 'A diary written by someone who lived through the event',
+    wrong: [
+      miss('A textbook chapter summarizing the event decades later', 'A textbook interprets and synthesizes other sources after the fact, which makes it a secondary source, not first-hand evidence.', 'Primary sources are first-hand records; textbooks interpret them later.'),
+      miss('A journal article reviewing several studies of the event', 'A review article analyzes and synthesizes existing scholarship, placing it firmly in the secondary category.', 'Anything that reviews or analyzes other works is secondary, not primary.'),
+      miss('An encyclopedia entry about the event', 'An encyclopedia compiles and condenses information from other sources, making it a tertiary or secondary reference, not a first-hand account.', 'Reference works that compile information are tertiary or secondary, not primary.'),
+    ],
+    lesson: 'A primary source is direct, first-hand evidence created at the time — a diary, letter, photograph, dataset, or original study. Secondary sources interpret or analyze primary material; tertiary sources (encyclopedias) compile and summarize.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420017,
+    chapter: 'English Composition: Research Questions and Information Literacy',
+    title: 'Effect of the OR operator',
+    prompt: 'A student\'s database search returns too few results. They want to capture sources that use either "teenager" or "adolescent." Which Boolean move helps most?',
+    correct: 'Connect the synonyms with OR: "teenager" OR "adolescent"',
+    wrong: [
+      miss('Connect them with AND: "teenager" AND "adolescent"', 'AND requires both terms to appear in every result, which narrows the search further — the opposite of what is needed when results are too few.', 'AND narrows by demanding all terms; OR broadens by accepting any of them.'),
+      miss('Connect them with NOT: "teenager" NOT "adolescent"', 'NOT excludes results containing "adolescent," shrinking the pool and dropping relevant sources that use the synonym.', 'NOT removes results; it cannot broaden a search that is already too small.'),
+      miss('Put the whole phrase in quotation marks: "teenager adolescent"', 'Quotation marks force an exact phrase match, so only documents with those two words side by side would appear — far fewer, not more.', 'Quotation marks tighten to an exact phrase; they do not gather synonyms.'),
+    ],
+    lesson: 'In Boolean searching, OR broadens results by retrieving records containing any of the listed terms, which is ideal for capturing synonyms. AND narrows by requiring all terms, and NOT excludes terms — both of which shrink a result set.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420018,
+    chapter: 'English Composition: Research Questions and Information Literacy',
+    title: 'Lateral reading',
+    prompt: 'A student lands on an official-looking website with a confident article. To judge its credibility, which strategy do information-literacy researchers recommend?',
+    correct: 'Lateral reading — leave the site and open new tabs to see what other sources say about its authors and funding',
+    wrong: [
+      miss('Vertical reading — stay on the site and judge it by how professional its design and tone look', 'Polished design and confident tone are easy to fake and tell you little about reliability; staying on the page is exactly what misleads readers.', 'A slick site can still be unreliable; design is not evidence of accuracy.'),
+      miss('Trust it because it appears near the top of the search results', 'Search ranking reflects relevance and optimization, not credibility; high placement is not evidence the source is trustworthy.', 'Ranking measures visibility, not trustworthiness; verify the source elsewhere.'),
+      miss('Count the number of citations listed at the bottom of the article', 'A long reference list can be padded or irrelevant; the number of citations alone does not establish who is behind the site or whether it is reliable.', 'Citation count is easy to inflate; check who the source is and what others say about it.'),
+    ],
+    lesson: 'Lateral reading means leaving a source to check what independent, reputable sources say about its author, organization, and funding, rather than evaluating it by its own appearance. Professional design, search ranking, and citation count are poor proxies for credibility.',
+    source,
+    generated: true,
+  },
+  // ---------------------------------------------------------------------------
+  // Chapter 6: Source Integration, Citation, and Academic Integrity
+  // ---------------------------------------------------------------------------
+  {
+    id: 7420019,
+    chapter: 'English Composition: Source Integration, Citation, and Academic Integrity',
+    title: 'MLA in-text citation format',
+    prompt: 'A student quotes a sentence from page 47 of a book by one author named Carter, using MLA 9 style. Which in-text citation is correct?',
+    correct: '(Carter 47)',
+    wrong: [
+      miss('(Carter, 47)', 'MLA does not place a comma between the author\'s last name and the page number; the comma belongs to APA style, not MLA.', 'MLA uses author and page with no comma: (Carter 47).'),
+      miss('(Carter, p. 47)', 'MLA does not use the abbreviation "p." before the page number, and it adds no comma after the author; this mixes in APA conventions.', 'MLA omits "p." and the comma; APA uses both.'),
+      miss('(Carter 2023, 47)', 'MLA in-text citations do not include the publication year; the year appears only in APA in-text citations.', 'The year belongs in APA in-text citations, not MLA.'),
+    ],
+    lesson: 'An MLA 9 in-text citation lists the author\'s last name and the page number with no comma and no "p." — for example, (Carter 47). The publication year does not appear in the in-text citation, only in the works-cited entry.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420020,
+    chapter: 'English Composition: Source Integration, Citation, and Academic Integrity',
+    title: 'APA in-text citation format',
+    prompt: 'A student paraphrases an idea from a 2021 article by one author named Okafor, using APA 7 style. Which parenthetical in-text citation is correct?',
+    correct: '(Okafor, 2021)',
+    wrong: [
+      miss('(Okafor 2021)', 'APA requires a comma between the author\'s name and the year; omitting it follows MLA spacing, not APA.', 'APA separates author and year with a comma: (Okafor, 2021).'),
+      miss('(Okafor 47)', 'This is MLA author-page form; APA in-text citations use the year, and page numbers appear only for direct quotations.', 'APA uses the year, not a page number, for paraphrased ideas.'),
+      miss('(Okafor, p. 2021)', 'The "p." abbreviation marks a page number, not a year; the year should appear after a comma with no "p."', 'In APA, "p." precedes a page number; the year stands alone after the comma.'),
+    ],
+    lesson: 'An APA 7 parenthetical in-text citation gives the author\'s last name and the year separated by a comma — for example, (Okafor, 2021). A page number (with "p.") is added only when quoting directly, not for a paraphrase.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420021,
+    chapter: 'English Composition: Source Integration, Citation, and Academic Integrity',
+    title: 'APA et al. for multiple authors',
+    prompt: 'In APA 7, a parenthetical citation refers to a work by five authors (Nguyen, Patel, Romano, Schmidt, and Wu, 2022). How should the first in-text citation read?',
+    correct: '(Nguyen et al., 2022)',
+    wrong: [
+      miss('(Nguyen, Patel, Romano, Schmidt, & Wu, 2022)', 'APA 7 uses "et al." after the first author for works with three or more authors, even on the first citation; listing all five is incorrect.', 'For 3+ authors, APA 7 abbreviates to the first author plus "et al." from the very first citation.'),
+      miss('(Nguyen and others, 2022)', 'APA uses the Latin abbreviation "et al.," not the English phrase "and others," in in-text citations.', 'The convention is "et al.," not a translated phrase like "and others."'),
+      miss('(Nguyen et al.)', 'A complete APA citation includes the year; omitting "2022" drops a required element of the author-date system.', 'APA in-text citations always include the year alongside the author.'),
+    ],
+    lesson: 'In APA 7, a work with three or more authors is cited as the first author followed by "et al." and the year — even in the first citation — for example, (Nguyen et al., 2022). The year is always required in the author-date system.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420022,
+    chapter: 'English Composition: Source Integration, Citation, and Academic Integrity',
+    title: 'MLA nine core elements',
+    prompt: 'MLA 9 builds works-cited entries from a template of "core elements." Which option correctly describes that template?',
+    correct: 'Nine core elements — author, title of source, title of container, other contributors, version, number, publisher, publication date, and location — included only when relevant',
+    wrong: [
+      miss('A fixed set of rules with a different rigid format memorized for every source type', 'MLA 9 deliberately replaced format-per-source memorization with one flexible template of core elements that adapts to any source.', 'MLA 9\'s point is one adaptable template, not a separate rule for every source type.'),
+      miss('Three elements only: author, title, and page number', 'The template has nine core elements (including container, publisher, and date), not three; page number is part of "location," not the whole template.', 'The MLA 9 template lists nine core elements, far more than author, title, and page.'),
+      miss('Every entry must list all nine elements even if some do not apply', 'MLA 9 instructs writers to include an element only when it is relevant and available, and to omit any that does not apply (never the title).', 'You include a core element only when it applies; you do not invent missing ones.'),
+    ],
+    lesson: 'MLA 9 documents any source using a template of nine core elements — author; title of source; title of container; other contributors; version; number; publisher; publication date; location — included in order and only when relevant. This replaces memorizing a separate format for each source type.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420023,
+    chapter: 'English Composition: Source Integration, Citation, and Academic Integrity',
+    title: 'The quotation sandwich',
+    prompt: 'A writer wants to integrate a quotation effectively. Besides the quotation itself, what two elements complete a "quotation sandwich"?',
+    correct: 'A signal phrase introducing the source before the quotation and the writer\'s analysis explaining it afterward',
+    wrong: [
+      miss('A second, longer quotation before it and a third quotation after it', 'Surrounding a quotation with more quotations leaves the borrowed material unexplained and removes the writer\'s own voice and interpretation.', 'A quotation sandwich frames a quote with your own words, not with more quotations.'),
+      miss('A page number before it and a header after it', 'A page number is part of the citation, not the rhetorical frame; a header does not interpret the quotation for the reader.', 'The "bread" of the sandwich is your introduction and analysis, not formatting.'),
+      miss('An exclamation point before it and a rhetorical question after it', 'Punctuation and rhetorical flourishes do not introduce the source or interpret its meaning; the quotation still floats without a frame.', 'Framing means lead-in and analysis, not stylistic punctuation.'),
+    ],
+    lesson: 'The "quotation sandwich" frames borrowed material with the writer\'s own words: a signal phrase introduces the source and a sentence of analysis afterward explains its relevance. This prevents "drive-by" quotations that are dropped in without context.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420024,
+    chapter: 'English Composition: Source Integration, Citation, and Academic Integrity',
+    title: 'Common knowledge',
+    prompt: 'Which of the following statements counts as "common knowledge" that generally does not require a citation in a college essay?',
+    correct: 'Water freezes at 0 degrees Celsius at standard atmospheric pressure',
+    wrong: [
+      miss('A 2023 study found that 14% of surveyed students skipped breakfast on exam days', 'A specific statistic from a particular study is original research, not common knowledge, and must be cited to its source.', 'Specific data from a study always needs a citation; only widely known facts do not.'),
+      miss('One scholar\'s recent argument that breakfast improves test performance', 'An individual scholar\'s argument is a particular intellectual contribution and must be attributed, not treated as general knowledge.', 'Someone\'s specific claim or interpretation must be credited to them.'),
+      miss('A little-known historical detail found in only one specialized archive', 'Information available in only one specialized source is the opposite of common knowledge and must be cited to that source.', 'If a fact is hard to find or appears in only one source, cite it.'),
+    ],
+    lesson: 'Common knowledge is undisputed information widely known and easily found in many sources (basic facts, well-known dates). Specific statistics, individual scholars\' arguments, and obscure findings are not common knowledge and must be cited.',
+    source,
+    generated: true,
+  },
+  // ---------------------------------------------------------------------------
+  // Chapter 7: Synthesis and the Research Essay
+  // ---------------------------------------------------------------------------
+  {
+    id: 7420025,
+    chapter: 'English Composition: Synthesis and the Research Essay',
+    title: 'Organizing by idea, not by source',
+    prompt: 'A research essay devotes one paragraph to "what Source A says," the next to "what Source B says," and the next to "what Source C says." What is the structural problem?',
+    correct: 'It is organized source-by-source, so it reports summaries instead of synthesizing the sources around the writer\'s own claims',
+    wrong: [
+      miss('It uses too few sources to support an argument', 'The number of sources is not the issue; three can be plenty. The problem is the source-by-source arrangement that prevents synthesis.', 'The flaw is the source-by-source structure, not how many sources appear.'),
+      miss('It should quote each source more heavily to add length', 'More quotation would deepen the summary problem, not fix it; synthesis requires the writer\'s claims organizing the sources, not longer quotations.', 'Adding quotation worsens source-dumping; it does not create synthesis.'),
+      miss('It puts the sources in the wrong chronological order', 'Synthesis is organized by ideas and claims, not by publication date; reordering chronologically would not turn summaries into synthesis.', 'Reordering by date does not help; reorganize by your own claims instead.'),
+    ],
+    lesson: 'A synthesizing research essay is organized by the writer\'s claims, weaving multiple sources into each point to show agreement, tension, and gaps. A source-by-source structure produces a string of summaries rather than an argument.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420026,
+    chapter: 'English Composition: Synthesis and the Research Essay',
+    title: 'Revising a thesis after new evidence',
+    prompt: 'Midway through research, a writer finds strong evidence that contradicts her working thesis. What is the most intellectually honest next step?',
+    correct: 'Revise the thesis to account for the new evidence, even if that means changing her original position',
+    wrong: [
+      miss('Ignore the contradicting evidence so the original thesis still stands', 'Suppressing evidence that undercuts a claim is cherry-picking and dishonest; research should reshape the thesis, not be filtered to protect it.', 'Hiding inconvenient evidence is a research integrity failure, not a fix.'),
+      miss('Keep the thesis but add the contradicting source to the works-cited list without discussing it', 'Listing a source without engaging its argument hides the conflict; honest synthesis must address evidence that complicates the claim.', 'Citing a source you never engage does not resolve the contradiction.'),
+      miss('Discredit the new source by criticizing its formatting and font', 'Attacking a source\'s appearance instead of its evidence is irrelevant and evasive; credibility is judged on method and authority, not design.', 'Dismiss a source on its evidence and method, never on superficial traits.'),
+    ],
+    lesson: 'Research is inquiry, not advocacy for a predetermined conclusion. When credible evidence contradicts a working thesis, the honest move is to revise the thesis to fit the evidence, not to suppress, ignore, or unfairly dismiss the source.',
+    source,
+    generated: true,
+  },
+  // ---------------------------------------------------------------------------
+  // Chapter 8: Revision, Peer Review, and Feedback
+  // ---------------------------------------------------------------------------
+  {
+    id: 7420027,
+    chapter: 'English Composition: Revision, Peer Review, and Feedback',
+    title: 'Revision vs. editing',
+    prompt: 'Which task counts as revision rather than editing?',
+    correct: 'Reordering paragraphs and cutting a section because the argument\'s logic does not hold together',
+    wrong: [
+      miss('Fixing comma splices and subject-verb agreement throughout the draft', 'Correcting grammar and punctuation is editing — sentence-level cleanup — not revision, which addresses meaning and structure.', 'Grammar and punctuation fixes are editing; revision changes structure and argument.'),
+      miss('Correcting the spelling of names and technical terms', 'Spelling correction is proofreading, the surface-level final pass, not the structural re-seeing that defines revision.', 'Spelling is a proofreading task; revision works on ideas and organization.'),
+      miss('Adjusting the font and margins to match the assignment guidelines', 'Formatting to a style guide is a mechanical, surface task, not revision of the essay\'s content or structure.', 'Formatting is cosmetic; revision reshapes the substance of the writing.'),
+    ],
+    lesson: 'Revision means re-seeing the big picture: argument, structure, organization, and clarity of meaning. Editing and proofreading handle sentence-level concerns like grammar, punctuation, spelling, and formatting, and should come after revision.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420028,
+    chapter: 'English Composition: Revision, Peer Review, and Feedback',
+    title: 'Useful peer feedback',
+    prompt: 'During peer review, which comment is most useful to the writer?',
+    correct: '"Your second and third paragraphs both argue the same point, so the essay stalls — consider merging them or adding a new reason."',
+    wrong: [
+      miss('"This is really good, I liked it a lot!"', 'Vague praise gives the writer nothing to act on; useful feedback identifies a specific issue and suggests a direction.', 'Specific, actionable comments help; blanket praise does not guide revision.'),
+      miss('"You should rewrite the whole thing the way I would have written it."', 'Rewriting the essay in the reviewer\'s voice takes over the writer\'s argument instead of helping them improve their own choices.', 'Good feedback advises the writer; it does not seize their argument.'),
+      miss('"There is a typo in the first sentence."', 'A single proofreading note is fine for editing but addresses a surface error, not the higher-order concerns peer review should prioritize.', 'Peer review should target structure and argument before catching typos.'),
+    ],
+    lesson: 'Effective peer feedback is specific and actionable, and it prioritizes higher-order concerns (argument, structure, clarity) over surface errors. It describes a concrete problem and suggests a direction without taking over the writer\'s argument.',
+    source,
+    generated: true,
+  },
+  // ---------------------------------------------------------------------------
+  // Chapter 9: Academic Style, Clarity, and Concision
+  // ---------------------------------------------------------------------------
+  {
+    id: 7420029,
+    chapter: 'English Composition: Academic Style, Clarity, and Concision',
+    title: 'When passive voice is appropriate',
+    prompt: 'In which sentence is the passive voice the more appropriate choice?',
+    correct: '"The samples were contaminated during shipping" — when who caused it is unknown or not the point',
+    wrong: [
+      miss('"The decision was made by me to change the thesis" — to emphasize who acted', 'When you want to emphasize the actor, the active voice ("I decided to change the thesis") is clearer and more direct than this wordy passive.', 'If the actor matters and is known, prefer the active voice.'),
+      miss('"Mistakes were made and nobody is responsible" — to dodge accountability', 'Using the passive to hide a known, responsible actor is evasive, not appropriate; this is the classic misuse of the passive voice.', 'Passive voice is misused when it conceals a known, responsible agent.'),
+      miss('"The ball was thrown by the pitcher" — when the actor is obvious and important', 'When the actor is known and central, the active voice ("The pitcher threw the ball") is stronger; passive here just adds words.', 'When the doer is the point, active voice is tighter and clearer.'),
+    ],
+    lesson: 'Passive voice is appropriate when the actor is unknown, irrelevant, or genuinely less important than the action or recipient (common in scientific writing). It is misused when it adds words, buries a known actor, or evades accountability.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7420030,
+    chapter: 'English Composition: Academic Style, Clarity, and Concision',
+    title: 'Unpacking a nominalization',
+    prompt: 'A sentence reads: "The committee conducted an evaluation of the proposal." Which revision improves concision by turning the nominalization back into a verb?',
+    correct: '"The committee evaluated the proposal."',
+    wrong: [
+      miss('"An evaluation of the proposal was conducted by the committee."', 'This keeps the noun "evaluation" and adds passive voice, making the sentence longer and less direct rather than tightening it.', 'A nominalization fix turns the buried noun into the main verb, not into a passive phrase.'),
+      miss('"The committee made the conducting of an evaluation of the proposal."', 'This piles on more abstract nouns ("conducting," "evaluation"), worsening the nominalization rather than removing it.', 'Adding more -tion and -ing nouns deepens the problem; convert to a single strong verb.'),
+      miss('"The proposal received an evaluation from the committee."', 'This still hides the action in the noun "evaluation" and merely reshuffles the words instead of making "evaluate" the verb.', 'The goal is to make the action a verb; rearranging the noun does not achieve that.'),
+    ],
+    lesson: 'A nominalization turns a verb into an abstract noun ("evaluate" becomes "an evaluation"), padding sentences with weak verbs like "conduct" or "make." Restoring the buried verb ("evaluated") tightens prose and clarifies who does what.',
+    source,
+    generated: true,
+  },
+  // ---------------------------------------------------------------------------
+  // Chapter 10: Multimodal Composition, Reflection, and the Portfolio
+  // ---------------------------------------------------------------------------
+  {
+    id: 7420031,
+    chapter: 'English Composition: Multimodal Composition, Reflection, and the Portfolio',
+    title: 'Adapting an argument to a new medium',
+    prompt: 'A student is turning a written research essay into a five-minute podcast for a general audience. Which choice best reflects sound multimodal adaptation?',
+    correct: 'Restructure the argument for listening — lead with the stakes, use signposting and a conversational tone, and convert dense data into memorable examples',
+    wrong: [
+      miss('Read the essay aloud word for word, including all in-text citations', 'Academic prose with parenthetical citations is hard to follow by ear; a podcast needs a structure and tone designed for listeners, not a verbatim reading.', 'Reading print aloud ignores the medium; adapt structure and tone for the ear.'),
+      miss('Keep the exact same structure since the argument has not changed', 'Even with the same argument, a new medium and audience require re-designing organization and emphasis; preserving the essay structure ignores the rhetorical situation.', 'A new medium and audience change the rhetorical situation, so the structure must change too.'),
+      miss('Add background music and sound effects but make no other changes to the content', 'Audio decoration does not adapt the argument; multimodal composition re-designs the content for the medium, not just dresses it up.', 'Adaptation is rhetorical re-design, not decoration layered over unchanged content.'),
+    ],
+    lesson: 'Multimodal adaptation re-designs an argument for a new medium and audience, not just reformats it. Moving an essay to a podcast means restructuring for listening — clear signposting, a conversational register, stakes up front, and data turned into memorable examples.',
+    source,
+    generated: true,
+  },
+])

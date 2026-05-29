@@ -1,0 +1,64 @@
+/* ═══════════════════════════════════════
+   FLOE CUTTLEFISH — REBUILD 3
+   A quiz adventure for curious minds
+   ═══════════════════════════════════════ */
+
+@import './styles/animations.css';
+@import './styles/particles.css';
+@import './styles/components.css';
+@import './styles/welcome.css';
+@import './styles/audience.css';
+@import './styles/profile.css';
+@import './styles/tracks.css';
+@import './styles/map.css';
+@import './styles/trainer.css';
+@import './styles/personality.css';
+@import './styles/pong.css';
+@import './styles/present.css';
+@import './styles/slots.css';
+@import './styles/fight.css';
+@import './styles/wordle.css';
+@import './styles/connections.css';
+@import './styles/letterboxed.css';
+@import './styles/waffle.css';
+@import './styles/game-rules.css';
+@import './styles/game2048.css';
+@import './styles/nerdle.css';
+@import './styles/sumplete.css';
+@import './styles/sudoku.css';
+@import './styles/kakuro.css';
+@import './styles/rikudo.css';
+@import './styles/game2248.css';
+
+/* ═══ GLOBAL LAYOUT ═══ */
+
+main {
+  width: min(1080px, calc(100% - 24px));
+  margin: 0 auto;
+  padding: 14px 0 42px;
+}
+
+/* ═══ PAGE TRANSITION WRAPPER ═══ */
+
+.page-transition {
+  width: 100%;
+}
+
+/* ═══ RESPONSIVE ═══ */
+
+@media (max-width: 480px) {
+  main {
+    width: calc(100% - 16px);
+    padding: 10px 0 36px;
+  }
+
+  .stat-chip {
+    min-height: 28px;
+    padding: 0 8px;
+    font-size: 11px;
+  }
+
+  .mission-copy h2 { font-size: 18px; }
+  .path-header h2 { font-size: 18px; }
+  .menu-hero-title { font-size: 24px; }
+}

@@ -1,0 +1,81 @@
+# AP Psychology
+Evidence-first preparation for the redesigned, fully digital AP Psychology exam — reasoning from research and data, not memorizing definitions.
+
+**ID**: `apPsychology` · **Discipline**: Social Science
+
+## Course Aim
+This course prepares students for the AP Psychology exam by teaching the scientific study of behavior and mental processes. Students learn to read a research design, identify variables and confounds, interpret descriptive and inferential data, and apply psychological concepts to concrete scenarios. The aim is transferable reasoning: choosing the right concept for a situation, supporting a claim with evidence, and explaining it in clear, precise prose.
+
+The College Board redesigned AP Psychology around the APA's "five pillars" of introductory psychology, reducing nine units to five and shifting the exam toward science practices and data interpretation. The fully digital exam now uses 75 four-option multiple-choice questions (90 minutes) plus two free-response tasks — the Article Analysis Question (AAQ) and the Evidence-Based Question (EBQ) — that ask students to evaluate a study or marshal evidence for a claim. Purely definitional questions have been removed, so memorization alone is no longer enough.
+
+This syllabus preserves the classic content psychologists expect students to know — neurons and brain structures, sensation and perception, learning, memory and cognition, development, motivation and emotion, personality, social influence, disorders, and treatment — but organizes it around evidence and scenario reasoning. Throughout, students should practice operationalizing variables, distinguishing correlation from causation, recognizing common cognitive and statistical errors, and writing the kind of tight, concept-anchored explanations the rubrics reward. The course is age-appropriate for the high-school tier: it assumes no prior psychology and builds research literacy gradually.
+
+## Course Design Notes
+The chapter order maps the College Board's five pillars while keeping research methods first as the lens for everything that follows. Chapter 1 establishes the scientific foundation; Chapter 2 covers biological bases; Chapter 3 covers sensation, perception, and consciousness; Chapter 4 covers learning; Chapter 5 covers cognition, memory, and intelligence; Chapter 6 covers development, motivation, emotion, and personality; Chapter 7 covers social psychology and mental and physical health; and Chapter 8 is an exam studio focused on the AAQ and EBQ.
+
+Every chapter pairs concepts with application, because AP points are won on correctly applying a term to a scenario and supporting it with evidence — not on reciting a definition. "Common traps" sections target the specific confusions readers see most often: correlation read as causation, negative reinforcement mistaken for punishment, conformity confused with obedience, or a perceptual phenomenon mislabeled as a sensory one. Where the science has cautions (replication failures, the misuse of older studies, the importance of describing disorders without stigma), the syllabus flags them so students reason responsibly.
+
+## Chapter 1: Psychology as a Science
+- **Core questions**: What is the hypothesis and is it falsifiable? What variable is confounded? Does this design support a causal claim or only an association? What does the statistic actually tell us?
+- **Key concepts**: psychological perspectives (biological, cognitive, behavioral, psychodynamic, humanistic, sociocultural, evolutionary); experiments, correlational studies, case studies, naturalistic observation, surveys; independent/dependent/confounding variables; operational definitions; populations, sampling, and random assignment; descriptive statistics (mean, median, mode, range, standard deviation, normal curve, skew) and inferential statistics (statistical significance, effect size); ethics (informed consent, debriefing, the right to withdraw, IRB review).
+- **Applied skills**: state a testable hypothesis and operationalize its variables; identify the IV, DV, and a plausible confound in a described study; decide whether a design can support causation; read a graph or table and choose the claim the data support.
+- **Common traps**: inferring causation from a correlation; confusing random sampling (for generalizability) with random assignment (for causal inference); treating "statistically significant" as "large" or "important"; assuming any difference in a sample proves a real difference.
+
+## Chapter 2: Biological Bases of Behavior
+- **Core questions**: How does a signal travel within and between neurons? Which brain region or neurotransmitter best explains a described behavior? When is a difference better explained by biology versus environment?
+- **Key concepts**: neuron structure (dendrites, axon, myelin), the action potential and the all-or-none principle, synaptic transmission, key neurotransmitters (acetylcholine, dopamine, serotonin, GABA, glutamate, endorphins) and agonists/antagonists; central and peripheral nervous systems, the autonomic (sympathetic/parasympathetic) division; the endocrine system; brain structures (medulla, cerebellum, limbic system — amygdala, hippocampus — and the cortex's four lobes); neuroplasticity; heritability and the diathesis-stress model.
+- **Applied skills**: trace a signal from dendrite to synapse and explain how a neurotransmitter changes the postsynaptic neuron; match a deficit to a brain region; interpret a twin or adoption study for heritability; distinguish a sympathetic from a parasympathetic response.
+- **Common traps**: confusing reuptake with breakdown of neurotransmitters; thinking the action potential varies in strength (it does not — frequency carries intensity); treating heritability as a percentage that applies to an individual rather than to variation in a population; over-locating a complex behavior in one structure.
+
+## Chapter 3: Sensation, Perception, and Consciousness
+- **Core questions**: Is this bottom-up sensation or top-down perception? Which principle explains the illusion or grouping? How do sleep and altered states change cognition and behavior?
+- **Key concepts**: transduction, absolute and difference thresholds (Weber's law), sensory adaptation, signal detection; vision (rods/cones, trichromatic and opponent-process theories) and hearing (place and frequency theories); Gestalt grouping principles, depth and constancy cues, perceptual set; selective attention and inattentional blindness; circadian rhythm, the sleep stages and REM, sleep theories and disorders; psychoactive drug categories (depressants, stimulants, hallucinogens) and tolerance, dependence, and withdrawal.
+- **Applied skills**: classify a phenomenon as sensation or perception; apply a Gestalt principle to a figure; identify a depth cue in an image; label a sleep stage from its description; predict a drug's effect from its category.
+- **Common traps**: calling a perceptual interpretation a sensory event; assuming REM is the deepest sleep; treating tolerance and dependence as the same thing; confusing the trichromatic stage (receptors) with the opponent-process stage (afterimages).
+
+## Chapter 4: Learning
+- **Core questions**: What is the conditioned stimulus and conditioned response? Is this negative reinforcement or punishment? Which reinforcement schedule is operating, and what behavior is being modeled?
+- **Key concepts**: classical conditioning (US, UR, CS, CR, acquisition, extinction, spontaneous recovery, generalization, discrimination), Pavlov and Watson's Little Albert; operant conditioning (Thorndike's law of effect, Skinner), positive/negative reinforcement and punishment, primary/secondary reinforcers, shaping; reinforcement schedules (fixed/variable ratio and interval) and their response patterns; observational learning (Bandura's modeling) and cognitive elements (latent learning, insight, intrinsic versus extrinsic motivation); biological constraints on learning (taste aversion, instinctive drift).
+- **Applied skills**: label the four components of a classical-conditioning scenario; classify a consequence as reinforcement or punishment and as positive or negative; identify a schedule from a response pattern; design an ethical behavior-change plan using shaping and reinforcement.
+- **Common traps**: equating negative reinforcement with punishment (negative reinforcement increases behavior by removing something aversive); calling any unpleasant outcome "negative reinforcement"; mistaking variable-ratio for fixed-interval responding; treating reinforcement and reward as identical.
+
+## Chapter 5: Cognition, Memory, and Intelligence
+- **Core questions**: Which memory process — encoding, storage, or retrieval — failed? What heuristic or bias shaped the judgment? Is this test valid and reliable for the claim being made?
+- **Key concepts**: the three-stage model (sensory, working/short-term, long-term), encoding strategies (chunking, mnemonics, levels of processing), explicit/implicit and procedural/episodic/semantic memory, retrieval cues, priming, and the serial position effect; forgetting (encoding failure, decay, proactive and retroactive interference, retrieval failure) and memory reconstruction (misinformation effect, source amnesia); problem-solving (algorithms versus heuristics), the representativeness and availability heuristics, framing, confirmation bias, and overconfidence; intelligence theories (Spearman's g, Gardner, Sternberg), test construction, standardization, reliability, validity, and the normal distribution of IQ.
+- **Applied skills**: locate a failure point in the memory model from a scenario; name the bias driving a judgment; evaluate whether a test is valid for a stated purpose; explain how a leading question can distort an eyewitness memory.
+- **Common traps**: treating memory as a perfect recording rather than a reconstruction; confusing the availability and representativeness heuristics; conflating reliability (consistency) with validity (measuring the intended construct); reading a high test score as proof of a single, fixed "intelligence."
+
+## Chapter 6: Development, Motivation, Emotion, and Personality
+- **Core questions**: What developmental stage or pattern does the behavior show? Which motivation or emotion theory best explains the scenario? Which personality construct is being measured, and by what method?
+- **Key concepts**: research designs in development (cross-sectional, longitudinal); Piaget's cognitive stages and Vygotsky's zone of proximal development; attachment (Ainsworth's styles, Harlow); Erikson's psychosocial stages and adolescent identity; Kohlberg's moral reasoning; motivation theories (drive reduction, arousal/Yerkes-Dodson, Maslow's hierarchy, self-determination); emotion theories (James-Lange, Cannon-Bard, Schachter-Singer two-factor); trait theory and the Big Five; the psychodynamic, humanistic, and social-cognitive perspectives; self-report inventories versus projective tests.
+- **Applied skills**: match a child's behavior to a Piagetian stage; identify an attachment style or Eriksonian conflict; apply the right emotion theory to a described reaction; distinguish a trait-based from a humanistic explanation of behavior.
+- **Common traps**: confusing Cannon-Bard with the two-factor theory of emotion; treating Maslow's hierarchy as rigid rather than flexible; assuming a longitudinal finding when the study was cross-sectional; reading projective-test results as objective measurement.
+- **Note**: some classic findings (e.g., certain attachment and stage claims) have nuance or replication caveats; describe them as influential models, not settled facts.
+
+## Chapter 7: Social Psychology and Mental and Physical Health
+- **Core questions**: What social-influence process is operating? How can a disorder be described accurately and without stigma? Which treatment approach best fits the scenario, and on what evidence?
+- **Key concepts**: attribution theory and the fundamental attribution error, attitudes and cognitive dissonance, conformity (Asch), obedience (Milgram), group processes (groupthink, group polarization, social facilitation and loafing, deindividuation), the bystander effect and diffusion of responsibility, prejudice and stereotypes; stress and the general adaptation syndrome; the diagnostic approach (DSM framework) and major disorder categories (anxiety, depressive and bipolar, OCD, trauma-related, schizophrenia spectrum, personality); treatment approaches (psychodynamic, humanistic, cognitive, behavioral, cognitive-behavioral, biomedical/psychopharmacology) and the goals of evidence-based therapy.
+- **Applied skills**: name the social-influence process in a scenario; distinguish conformity from obedience; describe a disorder by its criteria using person-first, non-stigmatizing language; match a therapy to the perspective that explains the disorder.
+- **Common traps**: confusing conformity (peer/group norms) with obedience (an authority's command); committing the fundamental attribution error when analyzing others' behavior; conflating negative symptoms of schizophrenia with depression; assuming medication and therapy are interchangeable rather than complementary.
+
+## Chapter 8: AP Psychology Exam Studio (AAQ & EBQ)
+- **Core questions**: Which concept best explains this scenario, and how do I state it precisely? For the AAQ, what does this single study's design, finding, and limitation actually show? For the EBQ, which sources support the claim, and how do I cite them?
+- **Key concepts**: the digital exam structure (75 four-option MCQs in 90 minutes; AAQ and EBQ free-response tasks); science-practice command terms (identify, explain, apply); reading a study's method and data; defending a claim with cited evidence; concise, vocabulary-precise writing.
+- **Applied skills**: structure an AAQ response (identify the design, state the finding, evaluate a limitation, apply a concept); structure an EBQ (make a defensible claim and support it with evidence from each provided source); apply terminology accurately under time pressure; revise vague answers into precise ones using a scoring rubric.
+- **Common traps**: restating the prompt instead of answering it; using a term without applying it to the scenario; overgeneralizing from one study (the AAQ tests exactly this caution); citing a source vaguely instead of tying specific evidence to the claim.
+
+## Capstone
+Build a psychology evidence portfolio that demonstrates application across all five pillars. Submit: a research critique that identifies a study's design, variables, a confound, and an ethics issue; a brain-behavior case explanation linking a structure or neurotransmitter to a behavior; a learning application that uses conditioning and reinforcement schedules ethically; a cognition analysis tracing a memory failure and a judgment bias; a social-clinical scenario that names a social-influence process and describes a disorder and a matched, evidence-based treatment without stigma; and one timed AAQ-style and one EBQ-style response with a correction log. The portfolio should show accurate concept application, sound use of evidence, and concise AP-style explanation.
+
+## Assessment Ideas
+- Scenario questions graded on accurate concept application, not definition recall.
+- Research tasks graded on design, variable identification, ethics, and data interpretation.
+- AAQ and EBQ practice graded on the College Board rubrics (claim, evidence, application, and limitation).
+- Capstone graded on evidence use, responsible description of disorders, and concise AP-style explanation.
+
+## Research Notes
+- College Board AP Psychology course page: https://apcentral.collegeboard.org/courses/ap-psychology
+- College Board AP Psychology exam page: https://apcentral.collegeboard.org/courses/ap-psychology/exam
+- College Board AP Psychology Course and Exam Description (CED): https://apcentral.collegeboard.org/media/pdf/ap-psychology-course-and-exam-description.pdf
+- AP Psychology assessment overview (AAQ and EBQ): https://apstudents.collegeboard.org/courses/ap-psychology/assessment
+- American Psychological Association K-12 psychology resources: https://www.apa.org/education-career/k12

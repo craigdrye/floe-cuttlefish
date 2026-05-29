@@ -1,0 +1,2378 @@
+{
+  "source": "IMS Tutorials",
+  "license": "CC BY-SA 3.0",
+  "repository": "https://github.com/OpenIntroStat/ims-tutorials.git",
+  "collectionCount": 6,
+  "questionCount": 92,
+  "items": [
+    {
+      "source_id": "ims-tutorials::01-data::02-lesson::1",
+      "collection_id": "ims-tutorials::01-data",
+      "module_slug": "01-data",
+      "lesson_slug": "02-lesson",
+      "source_file": "01-data/02-lesson/01-02-lesson.Rmd",
+      "prompt_text": "What type of study is this?",
+      "choices": [
+        "Observational study",
+        "Experiment",
+        "Neither, since the sample consists of volunteers"
+      ],
+      "correct_choice": "Experiment",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "01 data",
+        "02 lesson",
+        "What type of study is this?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::01-data::02-lesson::2",
+      "collection_id": "ims-tutorials::01-data",
+      "module_slug": "01-data",
+      "lesson_slug": "02-lesson",
+      "source_file": "01-data/02-lesson/01-02-lesson.Rmd",
+      "prompt_text": "What type of study is this?",
+      "choices": [
+        "Observational study",
+        "Experiment",
+        "Neither, since we don't have data on all countries."
+      ],
+      "correct_choice": "Observational study",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "01 data",
+        "02 lesson",
+        "What type of study is this?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::01-data::02-lesson::3",
+      "collection_id": "ims-tutorials::01-data",
+      "module_slug": "01-data",
+      "lesson_slug": "02-lesson",
+      "source_file": "01-data/02-lesson/01-02-lesson.Rmd",
+      "prompt_text": "Does this study employ random sampling and/or random assignment?",
+      "choices": [
+        "Random sampling, but not random assignment",
+        "Random assignment, but not random sampling",
+        "Neither random sampling nor random assignment",
+        "Both random sampling and random assignment"
+      ],
+      "correct_choice": "Neither random sampling nor random assignment",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "01 data",
+        "02 lesson",
+        "Does this study employ random sampling and/or random assignment?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::01-data::02-lesson::4",
+      "collection_id": "ims-tutorials::01-data",
+      "module_slug": "01-data",
+      "lesson_slug": "02-lesson",
+      "source_file": "01-data/02-lesson/01-02-lesson.Rmd",
+      "prompt_text": "The results of the study ______ be generalized to all people and a causal link between believing information is stored and memory ______ be inferred based on these results.",
+      "choices": [
+        "cannot, cannot",
+        "cannot, can",
+        "can, cannot",
+        "can, can"
+      ],
+      "correct_choice": "cannot, can",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "01 data",
+        "02 lesson",
+        "The results of the study ______ be generalized to all people and a causal link b"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::01-data::02-lesson::5",
+      "collection_id": "ims-tutorials::01-data",
+      "module_slug": "01-data",
+      "lesson_slug": "02-lesson",
+      "source_file": "01-data/02-lesson/01-02-lesson.Rmd",
+      "prompt_text": "Which of the following best describes the relationship between admission status and gender?",
+      "choices": [
+        "Within most departments, female applicants are more likely to be admitted.",
+        "Within most departments, male applicants are more likely to be admitted.",
+        "Within most departments, male and female applicants are equally likely to be admitted."
+      ],
+      "correct_choice": "Within most departments, female applicants are more likely to be admitted.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "01 data",
+        "02 lesson",
+        "Which of the following best describes the relationship between admission status "
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::01-data::03-lesson::1",
+      "collection_id": "ims-tutorials::01-data",
+      "module_slug": "01-data",
+      "lesson_slug": "03-lesson",
+      "source_file": "01-data/03-lesson/01-03-lesson.Rmd",
+      "prompt_text": "What sampling strategy has this company used?",
+      "choices": [
+        "Simple random sample",
+        "Stratified sample",
+        "Cluster sample",
+        "Multistage sample"
+      ],
+      "correct_choice": "Stratified sample",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "01 data",
+        "03 lesson",
+        "What sampling strategy has this company used?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::01-data::03-lesson::2",
+      "collection_id": "ims-tutorials::01-data",
+      "module_slug": "01-data",
+      "lesson_slug": "03-lesson",
+      "source_file": "01-data/03-lesson/01-03-lesson.Rmd",
+      "prompt_text": "Which approach would likely be the least effective for selecting the schools where the survey will be conducted?",
+      "choices": [
+        "Simple random sample",
+        "Stratified sampling, where each stratum is a neighborhood",
+        "Cluster sampling, where each cluster is a neighborhood"
+      ],
+      "correct_choice": "Cluster sampling, where each cluster is a neighborhood",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "01 data",
+        "03 lesson",
+        "Which approach would likely be the least effective for selecting the schools whe"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::01-data::03-lesson::3",
+      "collection_id": "ims-tutorials::01-data",
+      "module_slug": "01-data",
+      "lesson_slug": "03-lesson",
+      "source_file": "01-data/03-lesson/01-03-lesson.Rmd",
+      "prompt_text": "Which method you implemented, simple random sampling or stratified sampling, ensured an equal number of states from each region?",
+      "choices": [
+        "Simple random sampling",
+        "Stratified sampling"
+      ],
+      "correct_choice": "Stratified sampling",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "01 data",
+        "03 lesson",
+        "Which method you implemented, simple random sampling or stratified sampling, ens"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::01-data::03-lesson::4",
+      "collection_id": "ims-tutorials::01-data",
+      "module_slug": "01-data",
+      "lesson_slug": "03-lesson",
+      "source_file": "01-data/03-lesson/01-03-lesson.Rmd",
+      "prompt_text": "Which of the below is correct?",
+      "choices": [
+        "There are 3 explanatory variables (light, noise, sex) and 1 response variable (exam performance).",
+        "There is 1 explanatory variable (sex) and 3 response variables (light, noise, exam performance).",
+        "There are 2 blocking variables (light and noise), 1 explanatory variable (sex), and 1 response variable (exam performance).",
+        "There are 2 explanatory variables (light and noise), 1 blocking variable (sex), and 1 response variable (exam performance)."
+      ],
+      "correct_choice": "There are 2 explanatory variables (light and noise), 1 blocking variable (sex), and 1 response variable (exam performance).",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "01 data",
+        "03 lesson",
+        "Which of the below is correct?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::01-data::04-lesson::1",
+      "collection_id": "ims-tutorials::01-data",
+      "module_slug": "01-data",
+      "lesson_slug": "04-lesson",
+      "source_file": "01-data/04-lesson/01-04-lesson.Rmd",
+      "prompt_text": "What type of study is this?",
+      "choices": [
+        "Observational study",
+        "Experiment"
+      ],
+      "correct_choice": "Observational study",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "01 data",
+        "04 lesson",
+        "What type of study is this?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::01-data::04-lesson::2",
+      "collection_id": "ims-tutorials::01-data",
+      "module_slug": "01-data",
+      "lesson_slug": "04-lesson",
+      "source_file": "01-data/04-lesson/01-04-lesson.Rmd",
+      "prompt_text": "The data from this study were gathered by ___.",
+      "choices": [
+        "randomly sampling classes",
+        "randomly sampling students",
+        "randomly assigning students to classes",
+        "randomly assigning professors to students"
+      ],
+      "correct_choice": "randomly sampling classes",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "01 data",
+        "04 lesson",
+        "The data from this study were gathered by ___."
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::02-explore::01-lesson::1",
+      "collection_id": "ims-tutorials::02-explore",
+      "module_slug": "02-explore",
+      "lesson_slug": "01-lesson",
+      "source_file": "02-explore/01-lesson/02-01-lesson.Rmd",
+      "prompt_text": "Which one of the barcharts shows no relationship between age and flavor? In other words, which plot shows that pie preference is the same for both young and old?",
+      "choices": [
+        "Plot 1",
+        "Plot 2",
+        "Plot 3"
+      ],
+      "correct_choice": "Plot 1",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "02 explore",
+        "01 lesson",
+        "Which one of the barcharts shows no relationship between age and flavor? In othe"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::02-explore::01-lesson::2",
+      "collection_id": "ims-tutorials::02-explore",
+      "module_slug": "02-explore",
+      "lesson_slug": "01-lesson",
+      "source_file": "02-explore/01-lesson/02-01-lesson.Rmd",
+      "prompt_text": "Which of the following interpretations of the bar charts above is NOT valid?",
+      "choices": [
+        "Among characters with Neutral alignment, males are the most common.",
+        "In general, there is an association between gender and alignment.",
+        "Across all genders, Bad is the most common alignment.",
+        "There are more male characters than female characters in this dataset."
+      ],
+      "correct_choice": "Across all genders, Bad is the most common alignment.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "02 explore",
+        "01 lesson",
+        "Which of the following interpretations of the bar charts above is NOT valid?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::02-explore::01-lesson::3",
+      "collection_id": "ims-tutorials::02-explore",
+      "module_slug": "02-explore",
+      "lesson_slug": "01-lesson",
+      "source_file": "02-explore/01-lesson/02-01-lesson.Rmd",
+      "prompt_text": "Using the tables above, approximately what proportion of all female characters are good?",
+      "choices": [
+        "44%",
+        "1.3%",
+        "13%",
+        "51%"
+      ],
+      "correct_choice": "51%",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "02 explore",
+        "01 lesson",
+        "Using the tables above, approximately what proportion of all female characters a"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::02-explore::02-lesson::1",
+      "collection_id": "ims-tutorials::02-explore",
+      "module_slug": "02-explore",
+      "lesson_slug": "02-lesson",
+      "source_file": "02-explore/02-lesson/02-02-lesson.Rmd",
+      "prompt_text": "What feature is present in Plot A that's not found in B or C?",
+      "choices": [
+        "The most common horsepower is around 200.",
+        "There is a tendency for cars to have horsepower right at 200 or 300 horsepower.",
+        "There is a second mode around 300 horsepower."
+      ],
+      "correct_choice": "There is a tendency for cars to have horsepower right at 200 or 300 horsepower.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "02 explore",
+        "02 lesson",
+        "What feature is present in Plot A that's not found in B or C?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::02-explore::02-lesson::2",
+      "collection_id": "ims-tutorials::02-explore",
+      "module_slug": "02-explore",
+      "lesson_slug": "02-lesson",
+      "source_file": "02-explore/02-lesson/02-02-lesson.Rmd",
+      "prompt_text": "Which of the following interpretations of the plot is not valid?",
+      "choices": [
+        "The highest mileage cars have 4 cylinders.",
+        "The typical 4 cylinder car gets better mileage than the typical 6 cylinder car, which gets better mileage than the typical 8 cylinder car.",
+        "Most of the 4 cylinder cars get better mileage than even the most efficient 8 cylinder cars.",
+        "The variability in mileage of 8 cylinder cars is smaller than the variability in mileage of 4 cylinder cars."
+      ],
+      "correct_choice": "The variability in mileage of 8 cylinder cars is smaller than the variability in mileage of 4 cylinder cars.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "02 explore",
+        "02 lesson",
+        "Which of the following interpretations of the plot is not valid?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::02-explore::02-lesson::3",
+      "collection_id": "ims-tutorials::02-explore",
+      "module_slug": "02-explore",
+      "lesson_slug": "02-lesson",
+      "source_file": "02-explore/02-lesson/02-02-lesson.Rmd",
+      "prompt_text": "Which of the following interpretations of the plot is valid?",
+      "choices": [
+        "Across both SUVs and non-SUVs, mileage tends to decrease as the number of cylinders increases.",
+        "There are more SUVs than non-SUVs across all cylinder types.",
+        "There is more variability in 6-cylinder non-SUVs than in any other type of car."
+      ],
+      "correct_choice": "Across both SUVs and non-SUVs, mileage tends to decrease as the number of cylinders increases.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "02 explore",
+        "02 lesson",
+        "Which of the following interpretations of the plot is valid?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::02-explore::03-lesson::1",
+      "collection_id": "ims-tutorials::02-explore",
+      "module_slug": "02-explore",
+      "lesson_slug": "03-lesson",
+      "source_file": "02-explore/03-lesson/02-03-lesson.Rmd",
+      "prompt_text": "Which set of measures of central tendency would be worst for describing the two distributions shown here?",
+      "choices": [
+        "A: mode, B: median",
+        "A: mean, B: mode",
+        "A: median, B: mean",
+        "A: median, B: median"
+      ],
+      "correct_choice": "A: mean, B: mode",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "02 explore",
+        "03 lesson",
+        "Which set of measures of central tendency would be worst for describing the two "
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::02-explore::03-lesson::2",
+      "collection_id": "ims-tutorials::02-explore",
+      "module_slug": "02-explore",
+      "lesson_slug": "03-lesson",
+      "source_file": "02-explore/03-lesson/02-03-lesson.Rmd",
+      "prompt_text": "Which set of measures of spread would be worst for describing the two distributions shown here?",
+      "choices": [
+        "A: IQR, B: IQR",
+        "A: SD, B: IQR",
+        "A: Variance, B: Range"
+      ],
+      "correct_choice": "A: Variance, B: Range",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "02 explore",
+        "03 lesson",
+        "Which set of measures of spread would be worst for describing the two distributi"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::02-explore::03-lesson::3",
+      "collection_id": "ims-tutorials::02-explore",
+      "module_slug": "02-explore",
+      "lesson_slug": "03-lesson",
+      "source_file": "02-explore/03-lesson/02-03-lesson.Rmd",
+      "prompt_text": "Which of the following options does the best job of describing their shape in terms of modality and skew/symmetry?",
+      "choices": [
+        "A: bimodal symmetric; B: unimodal symmetric; C: unimodal left-skewed, D: bimodal right-skewed.",
+        "A: unimodal symmetric; B: unimodal right-skewed; C: unimodal right-skewed, D: bimodal symmetric.",
+        "A: unimodal right-skewed; B: unimodal left-skewed; C: unimodal left-skewed; D: bimodal symmetric.",
+        "A: unimodal left-skewed; B: bimodal symmetric; C: unimodal right-skewed, D: unimodal symmetric."
+      ],
+      "correct_choice": "A: unimodal symmetric; B: unimodal right-skewed; C: unimodal right-skewed, D: bimodal symmetric.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "02 explore",
+        "03 lesson",
+        "Which of the following options does the best job of describing their shape in te"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::02-explore::04-lesson::1",
+      "collection_id": "ims-tutorials::02-explore",
+      "module_slug": "02-explore",
+      "lesson_slug": "04-lesson",
+      "source_file": "02-explore/04-lesson/02-04-lesson.Rmd",
+      "prompt_text": "Which of the following interpretations of the plot is valid?",
+      "choices": [
+        "The shortest email in this dataset was not spam.",
+        "The median length of not spam emails is greater than that of spam emails.",
+        "The IQR of email length of spam is greater than that of not spam."
+      ],
+      "correct_choice": "The median length of not spam emails is greater than that of spam emails.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "02 explore",
+        "04 lesson",
+        "Which of the following interpretations of the plot is valid?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::02-explore::04-lesson::2",
+      "collection_id": "ims-tutorials::02-explore",
+      "module_slug": "02-explore",
+      "lesson_slug": "04-lesson",
+      "source_file": "02-explore/04-lesson/02-04-lesson.Rmd",
+      "prompt_text": "Which interpretation of these faceted histograms is not correct?",
+      "choices": [
+        "The most common value of exclaim_mess in both classes of email is zero (a log(exclaim_mess) of -4.6 after adding .01).",
+        "There are more cases of spam in this dataset than not spam.",
+        "Even after a transformation, the distribution of exclaim_mess in both classes of email is right-skewed.",
+        "The typical number of exclamations in the not spam group appears to be slightly higher than in the spam group."
+      ],
+      "correct_choice": "There are more cases of spam in this dataset than not spam.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "02 explore",
+        "04 lesson",
+        "Which interpretation of these faceted histograms is not correct?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::02-explore::04-lesson::3",
+      "collection_id": "ims-tutorials::02-explore",
+      "module_slug": "02-explore",
+      "lesson_slug": "04-lesson",
+      "source_file": "02-explore/04-lesson/02-04-lesson.Rmd",
+      "prompt_text": "Which of the following interpretations of the plot is valid?",
+      "choices": [
+        "There are more emails with images than without images.",
+        "Emails without images have a higher proportion that are spam than do emails with images.",
+        "An email without an image is more likely to be not spam than spam."
+      ],
+      "correct_choice": "An email without an image is more likely to be not spam than spam.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "02 explore",
+        "04 lesson",
+        "Which of the following interpretations of the plot is valid?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::02-explore::04-lesson::4",
+      "collection_id": "ims-tutorials::02-explore",
+      "module_slug": "02-explore",
+      "lesson_slug": "04-lesson",
+      "source_file": "02-explore/04-lesson/02-04-lesson.Rmd",
+      "prompt_text": "Which of the following interpretations of the above plots is not valid?",
+      "choices": [
+        "Given that an email contains a small number, it is more likely to be not spam",
+        "Given that an email contains no number, it is more likely to be spam.",
+        "Given that an email contains a big number, it is more likely to be not spam.",
+        "Within both spam and not spam, the most common number is a small one."
+      ],
+      "correct_choice": "Given that an email contains no number, it is more likely to be spam.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "logicCriticalThinking"
+      ],
+      "topic_tags": [
+        "02 explore",
+        "04 lesson",
+        "Which of the following interpretations of the above plots is not valid?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::01-lesson::1",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "01-lesson",
+      "source_file": "03-model/01-lesson/03-01-lesson.Rmd",
+      "prompt_text": "Describe the form, direction, and strength of this relationship",
+      "choices": [
+        "Linear, positive, strong",
+        "Linear, negative, weak",
+        "Linear, negative, moderately strong",
+        "Non-linear, negative, strong"
+      ],
+      "correct_choice": "Linear, negative, moderately strong",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "01 lesson",
+        "Describe the form, direction, and strength of this relationship"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::02-lesson::1",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "02-lesson",
+      "source_file": "03-model/02-lesson/03-02-lesson.Rmd",
+      "prompt_text": "In a scientific paper, three correlations are reported with the following values: (1) -0.395 (2) 1.827 (3) 0.738",
+      "choices": [
+        "(1) is invalid.",
+        "(2) is invalid.",
+        "(3) is invalid.",
+        "Both (1) and (2) are invalid.",
+        "Both (2) and (3) are invalid."
+      ],
+      "correct_choice": "(2) is invalid.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "02 lesson",
+        "In a scientific paper, three correlations are reported with the following values"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::02-lesson::2",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "02-lesson",
+      "source_file": "03-model/02-lesson/03-02-lesson.Rmd",
+      "prompt_text": "In a scientific paper, three correlations are reported: 0.582, 0.134, -0.795. Which of these values represents the strongest correlation?",
+      "choices": [
+        "0.582",
+        "0.134",
+        "-0.795",
+        "Can't tell!"
+      ],
+      "correct_choice": "-0.795",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "02 lesson",
+        "In a scientific paper, three correlations are reported: 0.582, 0.134, -0.795. Wh"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::02-lesson::3",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "02-lesson",
+      "source_file": "03-model/02-lesson/03-02-lesson.Rmd",
+      "prompt_text": "Which of the following values is the correct correlation between poverty rate and high school graduation rate?",
+      "choices": [
+        "-0.861",
+        "-0.681",
+        "-0.186",
+        "0.186",
+        "0.681",
+        "0.861"
+      ],
+      "correct_choice": "-0.681",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "02 lesson",
+        "Which of the following values is the correct correlation between poverty rate an"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::02-lesson::4",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "02-lesson",
+      "source_file": "03-model/02-lesson/03-02-lesson.Rmd",
+      "prompt_text": "Choose the correct interpretation of this value.",
+      "choices": [
+        "People who graduate from high school are less likely to be poor.",
+        "Counties with lower high school graduation rates are likely to have lower poverty rates.",
+        "Counties with lower high school graduation rates are likely to have higher poverty rates.",
+        "Because the correlation is negative, there is no relationship between poverty rates and high school graduate rates.",
+        "Having a higher percentage of high school graduates in a county results in that county having lower poverty rates."
+      ],
+      "correct_choice": "Counties with lower high school graduation rates are likely to have higher poverty rates.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "02 lesson",
+        "Choose the correct interpretation of this value."
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::02-lesson::5",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "02-lesson",
+      "source_file": "03-model/02-lesson/03-02-lesson.Rmd",
+      "prompt_text": "Which of the following conclusions is not a valid statistical interpretation of these results?",
+      "choices": [
+        "We observed that babies with longer gestational periods tended to be heavier at birth.",
+        "It may be that a longer gestational period contributes to a heavier birth weight among babies, but a randomized, controlled experiment is needed to confirm this observation.",
+        "Staying in the womb longer causes babies to be heavier when they are born.",
+        "These data suggest that babies with longer gestational periods tend to be heavier at birth, but there are many potential confounding factors that were not taken into account."
+      ],
+      "correct_choice": "Staying in the womb longer causes babies to be heavier when they are born.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "02 lesson",
+        "Which of the following conclusions is not a valid statistical interpretation of "
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::03-lesson::2",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "03-lesson",
+      "source_file": "03-model/03-lesson/03-03-lesson.Rmd",
+      "prompt_text": "In Hampshire County in western Massachusetts, the high school graduation rate is 92.4%. These two facts imply that the mean poverty rate in Hampshire County is ___.",
+      "choices": [
+        "exactly 11.7%",
+        "exactly 10.0%",
+        "expected to be about 10.0%",
+        "expected to be about 11.7%"
+      ],
+      "correct_choice": "expected to be about 10.0%",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "03 lesson",
+        "In Hampshire County in western Massachusetts, the high school graduation rate is"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::03-lesson::3",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "03-lesson",
+      "source_file": "03-model/03-lesson/03-03-lesson.Rmd",
+      "prompt_text": "The author is arguing that...",
+      "choices": [
+        "Because of regression to the mean, an outstanding basketball player is likely to have sons that are as good at basketball as him.",
+        "Because of regression to the mean, an outstanding basketball player is likely to have sons that are not good at basketball.",
+        "Because of regression to the mean, an outstanding basketball player is likely to have sons that are good at basketball, but not as good as him.",
+        "Linear regression is incapable of evaluating musical or athletic talent."
+      ],
+      "correct_choice": "Because of regression to the mean, an outstanding basketball player is likely to have sons that are good at basketball, but not as good as him.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "03 lesson",
+        "The author is arguing that..."
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::04-lesson::1",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "04-lesson",
+      "source_file": "03-model/04-lesson/03-04-lesson.Rmd",
+      "prompt_text": "Which of the following is the correct interpretation of the slope coefficient?",
+      "choices": [
+        "Among U.S. counties, each additional percentage point increase in the poverty rate is associated with about a 0.591 percentage point decrease in the mean high school graduation rate.",
+        "Among U.S. counties, each additional percentage point increase in the high school graduation rate is associated with about a 0.591 percentage point decrease in the mean poverty rate.",
+        "Among U.S. counties, each additional percentage point increase in the high school graduation rate is associated with a 0.591 percentage point decrease in the poverty rate for each school.",
+        "Among U.S. counties, a 1% increase in the high school graduation rate is associated with about a 0.591% decrease in the poverty rate."
+      ],
+      "correct_choice": "Among U.S. counties, each additional percentage point increase in the high school graduation rate is associated with about a 0.591 percentage point decrease in the mean poverty rate.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "04 lesson",
+        "Which of the following is the correct interpretation of the slope coefficient?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::04-lesson::2",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "04-lesson",
+      "source_file": "03-model/04-lesson/03-04-lesson.Rmd",
+      "prompt_text": "Which of the following mistakes in interpretation has the politician made?",
+      "choices": [
+        "Implying that the regression model establishes a cause-and-effect relationship.",
+        "Switching the role of the response and explanatory variables.",
+        "Confusing percentage change with percentage point change.",
+        "All of the above."
+      ],
+      "correct_choice": "All of the above.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "04 lesson",
+        "Which of the following mistakes in interpretation has the politician made?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::04-lesson::3",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "04-lesson",
+      "source_file": "03-model/04-lesson/03-04-lesson.Rmd",
+      "prompt_text": "Which of the following statements is incorrect?",
+      "choices": [
+        "A person who is 170 cm tall is expected to weigh about 68 kg.",
+        "Because the slope coefficient for obp is larger (1.110) than the slope coefficient for hgt (1.018), we can conclude that the association between obp and slg is stronger than the association between height and weight.",
+        "None of the above."
+      ],
+      "correct_choice": "None of the above.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "04 lesson",
+        "Which of the following statements is incorrect?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::05-lesson::1",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "05-lesson",
+      "source_file": "03-model/05-lesson/03-05-lesson.Rmd",
+      "prompt_text": "What does this mean?",
+      "choices": [
+        "The typical difference between the observed poverty rate and the poverty rate predicted by the model is about 4.67 percentage points.",
+        "The typical difference between the observed poverty rate and the poverty rate predicted by the model is about 4.67%.",
+        "The model explains about 4.67% of the variability in poverty rate among counties.",
+        "The model correctly predicted the poverty rate of 4.67% of the counties."
+      ],
+      "correct_choice": "The typical difference between the observed poverty rate and the poverty rate predicted by the model is about 4.67 percentage points.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "05 lesson",
+        "What does this mean?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::05-lesson::2",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "05-lesson",
+      "source_file": "03-model/05-lesson/03-05-lesson.Rmd",
+      "prompt_text": "How should this value be interpreted?",
+      "choices": [
+        "46.4% of the variability in high school graduate rate among U.S. counties can be explained by poverty rate.",
+        "46.4% of the variability in poverty rate among U.S. counties can be explained by high school graduation rate.",
+        "This model is 46.4% effective.",
+        "The correlation between poverty rate and high school graduation rate is 0.464."
+      ],
+      "correct_choice": "46.4% of the variability in poverty rate among U.S. counties can be explained by high school graduation rate.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "05 lesson",
+        "How should this value be interpreted?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::06-lesson::1",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "06-lesson",
+      "source_file": "03-model/06-lesson/03-06-lesson.Rmd",
+      "prompt_text": "Which formula will result in a parallel slopes model?",
+      "choices": [
+        "total_pr ~ start_pr + ship_pr",
+        "cond ~ start_pr + stock_photo",
+        "total_pr ~ ship_pr + stock_photo",
+        "total_pr ~ cond"
+      ],
+      "correct_choice": "total_pr ~ ship_pr + stock_photo",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "06 lesson",
+        "Which formula will result in a parallel slopes model?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::06-lesson::2",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "06-lesson",
+      "source_file": "03-model/06-lesson/03-06-lesson.Rmd",
+      "prompt_text": "Choose the correct interpretation of the coefficient on condused:",
+      "choices": [
+        "For each additional wheel, the expected price of a used MarioKart is $5.58 lower.",
+        "The expected price of a used MarioKart is $5.58 less than that of a new one with the same number of wheels.",
+        "The expected price of a new MarioKart is $5.58 less than that of a used one with the same number of wheels.",
+        "The used MarioKarts are always $5.58 cheaper."
+      ],
+      "correct_choice": "The expected price of a used MarioKart is $5.58 less than that of a new one with the same number of wheels.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "06 lesson",
+        "Choose the correct interpretation of the coefficient on condused:"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::06-lesson::3",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "06-lesson",
+      "source_file": "03-model/06-lesson/03-06-lesson.Rmd",
+      "prompt_text": "Choose the correct interpretation of the slope coefficient:",
+      "choices": [
+        "For each additional wheel, the expected price of a MarioKart increases by $7.23 regardless of whether it is new or used.",
+        "For each additional wheel, the expected price of a new MarioKart increases by $7.23.",
+        "The expected price of a used MarioKart is $5.59 less than that of a new one with the same number of wheels.",
+        "You should always expect to pay $42.37 for a MarioKart."
+      ],
+      "correct_choice": "For each additional wheel, the expected price of a MarioKart increases by $7.23 regardless of whether it is new or used.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "06 lesson",
+        "Choose the correct interpretation of the slope coefficient:"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::07-lesson::1",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "07-lesson",
+      "source_file": "03-model/07-lesson/03-07-lesson.Rmd",
+      "prompt_text": "If you decide to keep the interaction term present in the second model, you are implicitly assuming that",
+      "choices": [
+        "The amount of rot will vary based on the temperature.",
+        "The amount of rot will vary based on the temperature, after controlling for the length of time they have been left out.",
+        "The rate at which apples rot will vary based on the temperature.",
+        "Time and temperature are independent."
+      ],
+      "correct_choice": "The rate at which apples rot will vary based on the temperature.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "07 lesson",
+        "If you decide to keep the interaction term present in the second model, you are "
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::07-lesson::2",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "07-lesson",
+      "source_file": "03-model/07-lesson/03-07-lesson.Rmd",
+      "prompt_text": "Choose the correct interpretation of this slope coefficient.",
+      "choices": [
+        "For every additional thousand dollars of salary for teachers in a particular state, the expected SAT score for a student from that state is about 3 points lower.",
+        "For every additional thousand dollars of salary for teachers in a particular state, the expected SAT score for a student from that state is about 3 points higher, after controlling for the percentage of students taking the SAT.",
+        "The average SAT score in richer states is about 3 points higher."
+      ],
+      "correct_choice": "For every additional thousand dollars of salary for teachers in a particular state, the expected SAT score for a student from that state is about 3 points higher, after controlling for the percentage of students taking the SAT.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "07 lesson",
+        "Choose the correct interpretation of this slope coefficient."
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::08-lesson::1",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "08-lesson",
+      "source_file": "03-model/08-lesson/03-08-lesson.Rmd",
+      "prompt_text": "This interpretation is false because.",
+      "choices": [
+        "The coefficient on duration is negative.",
+        "Smaller coefficients are more important.",
+        "The coefficients have different units (dollars per day and dollars per dollar, respectively) and so they are not directly comparable.",
+        "The intercept coefficient is much bigger, so it is the most important one."
+      ],
+      "correct_choice": "The coefficients have different units (dollars per day and dollars per dollar, respectively) and so they are not directly comparable.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "08 lesson",
+        "This interpretation is false because."
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::08-lesson::2",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "08-lesson",
+      "source_file": "03-model/08-lesson/03-08-lesson.Rmd",
+      "prompt_text": "This interpretation is correct \u00e2\u0080\u00a6",
+      "choices": [
+        "For each additional day the auction lasts, the expected final price declines by $1.51, after controlling for starting price.",
+        "For each additional dollar of starting price, the expected final price increases by $0.23, after controlling for the duration of the auction.",
+        "The duration of the auction is a more important determinant of final price than starting price, because the coefficient is larger.",
+        "The average auction lasts 51 days."
+      ],
+      "correct_choice": "For each additional dollar of starting price, the expected final price increases by $0.23, after controlling for the duration of the auction.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "08 lesson",
+        "This interpretation is correct \u00e2\u0080\u00a6"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::08-lesson::3",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "08-lesson",
+      "source_file": "03-model/08-lesson/03-08-lesson.Rmd",
+      "prompt_text": "Choose the right interpretation of beta the coefficient on condUsed",
+      "choices": [
+        "The expected premium for new (relative to used) MarioKarts is $8.95, after controlling for the duration and starting price of the auction.",
+        "The expected premium for used (relative to new) MarioKarts is $8.95, after controlling for the duration and starting price of the auction.",
+        "For each additional day the auction lasts, the expected final price declines by $8.95, after controlling for starting price and condition."
+      ],
+      "correct_choice": "The expected premium for new (relative to used) MarioKarts is $8.95, after controlling for the duration and starting price of the auction.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "08 lesson",
+        "Choose the right interpretation of beta the coefficient on condUsed"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::08-lesson::4",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "08-lesson",
+      "source_file": "03-model/08-lesson/03-08-lesson.Rmd",
+      "prompt_text": "Choose the correct interpretation of the coefficient on the number of wheels",
+      "choices": [
+        "The average number of wheels is 6.72.",
+        "Each additional wheel costs exactly $6.72.",
+        "Each additional wheel is associated with an increase in the expected auction price of $6.72.",
+        "Each additional wheel is associated with an increase in the expected auction price of $6.72, after controlling for auction duration, starting price, number of bids, and the condition of the item."
+      ],
+      "correct_choice": "Each additional wheel is associated with an increase in the expected auction price of $6.72, after controlling for auction duration, starting price, number of bids, and the condition of the item.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "08 lesson",
+        "Choose the correct interpretation of the coefficient on the number of wheels"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::10-lesson::1",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "10-lesson",
+      "source_file": "03-model/10-lesson/03-10-lesson.Rmd",
+      "prompt_text": "Which pairs of variables appear to be strongly correlated?",
+      "choices": [
+        "Case and Decor.",
+        "Restaurant and Price.",
+        "Price and Food.",
+        "Price and East."
+      ],
+      "correct_choice": "Price and Food.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "10 lesson",
+        "Which pairs of variables appear to be strongly correlated?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::10-lesson::2",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "10-lesson",
+      "source_file": "03-model/10-lesson/03-10-lesson.Rmd",
+      "prompt_text": "Identify the statement that is FALSE:",
+      "choices": [
+        "Each additional rating point of food quality is associated with a $2.88 increase in the expected price of meal, after controlling for location.",
+        "The premium for an Italian restaurant in NYC associated with being on the east side of 5th Avenue is $1.46, after controlling for the quality of the food.",
+        "The change in the coefficient of food from $2.94 in the simple linear model to $2.88 in this model has profound practical implications for restaurant owners."
+      ],
+      "correct_choice": "The change in the coefficient of food from $2.94 in the simple linear model to $2.88 in this model has profound practical implications for restaurant owners.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "10 lesson",
+        "Identify the statement that is FALSE:"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::10-lesson::3",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "10-lesson",
+      "source_file": "03-model/10-lesson/03-10-lesson.Rmd",
+      "prompt_text": "Which of the following statements is FALSE?",
+      "choices": [
+        "The premium for being on the East side of 5th Avenue is just less than a dollar, after controlling for the quality of food and service.",
+        "The impact of location is relatively small, since one additional rating point of either food or service would result in a higher expected price than moving a restaurant from the West side to the East side.",
+        "The expected price of a meal on the East side is about 96% of the cost of a meal on the West side, after controlling for the quality of food and service."
+      ],
+      "correct_choice": "The expected price of a meal on the East side is about 96% of the cost of a meal on the West side, after controlling for the quality of food and service.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "10 lesson",
+        "Which of the following statements is FALSE?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::03-model::10-lesson::4",
+      "collection_id": "ims-tutorials::03-model",
+      "module_slug": "03-model",
+      "lesson_slug": "10-lesson",
+      "source_file": "03-model/10-lesson/03-10-lesson.Rmd",
+      "prompt_text": "Which of the following interpretations is invalid?",
+      "choices": [
+        "Since the quality of food, decor, and service were all strongly correlated, multicollinearity is the likely explanation.",
+        "Once we control for the quality of food, decor, and location, the additional information conveyed by service is negligible.",
+        "Service is not an important factor in determining the price of a meal.",
+        "None of the above."
+      ],
+      "correct_choice": "Service is not an important factor in determining the price of a meal.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced"
+      ],
+      "topic_tags": [
+        "03 model",
+        "10 lesson",
+        "Which of the following interpretations is invalid?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::04-foundations::01-lesson::1",
+      "collection_id": "ims-tutorials::04-foundations",
+      "module_slug": "04-foundations",
+      "lesson_slug": "01-lesson",
+      "source_file": "04-foundations/01-lesson/04-01-lesson.Rmd",
+      "prompt_text": "Which would be a good null hypothesis for the FDA statistician examining the drug company's data?",
+      "choices": [
+        "Drug A is better than drug B at treating diabetes.",
+        "Drug A is worse than drug B at treating diabetes.",
+        "Drug A is different than drug B at treating diabetes (but you don't know if it is better or worse).",
+        "Drug A is the same as drug B at treating diabetes."
+      ],
+      "correct_choice": "Drug A is the same as drug B at treating diabetes.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "04 foundations",
+        "01 lesson",
+        "Which would be a good null hypothesis for the FDA statistician examining the dru"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::04-foundations::01-lesson::2",
+      "collection_id": "ims-tutorials::04-foundations",
+      "module_slug": "04-foundations",
+      "lesson_slug": "01-lesson",
+      "source_file": "04-foundations/01-lesson/04-01-lesson.Rmd",
+      "prompt_text": "Which would be a good alternative hypothesis?",
+      "choices": [
+        "Drug A is better than drug B at treating diabetes.",
+        "Drug A is worse than drug B at treating diabetes.",
+        "Drug A is different than drug B at treating diabetes (but you don't know if it is better or worse).",
+        "Drug A is the same as drug B at treating diabetes."
+      ],
+      "correct_choice": "Drug A is better than drug B at treating diabetes.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "04 foundations",
+        "01 lesson",
+        "Which would be a good alternative hypothesis?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::04-foundations::01-lesson::3",
+      "collection_id": "ims-tutorials::04-foundations",
+      "module_slug": "04-foundations",
+      "lesson_slug": "01-lesson",
+      "source_file": "04-foundations/01-lesson/04-01-lesson.Rmd",
+      "prompt_text": "What can you conclude from the analysis?",
+      "choices": [
+        "We have learned that being female causes people to buy houses.",
+        "We have learned that our data is consistent with the hypothesis of no difference in home ownership across gender.",
+        "We have learned that the observed difference (from the data) in proportion of home ownership across gender is due to something other than random variation."
+      ],
+      "correct_choice": "We have learned that our data is consistent with the hypothesis of no difference in home ownership across gender.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "04 foundations",
+        "01 lesson",
+        "What can you conclude from the analysis?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::04-foundations::02-lesson::1",
+      "collection_id": "ims-tutorials::04-foundations",
+      "module_slug": "04-foundations",
+      "lesson_slug": "02-lesson",
+      "source_file": "04-foundations/02-lesson/04-02-lesson.Rmd",
+      "prompt_text": "Which of the following null and alternative hypotheses are appropriate for the gender discrimination example described in the previous lesson?",
+      "choices": [
+        "H0: gender and promotion are unrelated variables. HA: men are more likely to be promoted.",
+        "H0: gender and promotion are unrelated variables. HA: women are more likely to be promoted.",
+        "H0: men are more likely to be promoted. HA: gender and promotion are unrelated variables.",
+        "H0: women are more likely to be promoted. HA: gender and promotion are unrelated variables."
+      ],
+      "correct_choice": "H0: gender and promotion are unrelated variables. HA: men are more likely to be promoted.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "04 foundations",
+        "02 lesson",
+        "Which of the following null and alternative hypotheses are appropriate for the g"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::04-foundations::02-lesson::2",
+      "collection_id": "ims-tutorials::04-foundations",
+      "module_slug": "04-foundations",
+      "lesson_slug": "02-lesson",
+      "source_file": "04-foundations/02-lesson/04-02-lesson.Rmd",
+      "prompt_text": "Based on the plot you created in the last exercise (displayed again here), which of the following seems like a reasonable conclusion about promotions?",
+      "choices": [
+        "In the population there is no evidence that women are discriminated against.",
+        "In the population there is no evidence that women are promoted at a different rate from men.",
+        "In the population there is evidence that women are discriminated against.",
+        "In the population there is evidence that women are promoted at a different rate, but we cannot tell whether the difference is due to discrimination or something else."
+      ],
+      "correct_choice": "In the population there is evidence that women are promoted at a different rate, but we cannot tell whether the difference is due to discrimination or something else.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "04 foundations",
+        "02 lesson",
+        "Based on the plot you created in the last exercise (displayed again here), which"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::04-foundations::02-lesson::3",
+      "collection_id": "ims-tutorials::04-foundations",
+      "module_slug": "04-foundations",
+      "lesson_slug": "02-lesson",
+      "source_file": "04-foundations/02-lesson/04-02-lesson.Rmd",
+      "prompt_text": "The statistic of 0.2917 would ______.",
+      "choices": [
+        "Be closer to the bulk of the permuted differences (within the distribution).",
+        "Remain in the same location (in the right tail of the distribution of permuted differences).",
+        "Be much farther to the right of the permuted differences (completely off of the distribution)."
+      ],
+      "correct_choice": "Be much farther to the right of the permuted differences (completely off of the distribution).",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "04 foundations",
+        "02 lesson",
+        "The statistic of 0.2917 would ______."
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::04-foundations::03-lesson::1",
+      "collection_id": "ims-tutorials::04-foundations",
+      "module_slug": "04-foundations",
+      "lesson_slug": "03-lesson",
+      "source_file": "04-foundations/03-lesson/04-03-lesson.Rmd",
+      "prompt_text": "Based on this result of 0.007, what can you conclude from the study about the effect of reminding students to save money?",
+      "choices": [
+        "Reminding them causes them to be less likely to buy the DVD.",
+        "Reminding them causes them to be more likely to buy the DVD.",
+        "There is no effect due to reminding students to save money.",
+        "Students who are reminded are less likely to buy the DVD, but it could be for reasons other than the reminder (i.e. the relationship is not necessarily causal)."
+      ],
+      "correct_choice": "Reminding them causes them to be less likely to buy the DVD.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "04 foundations",
+        "03 lesson",
+        "Based on this result of 0.007, what can you conclude from the study about the ef"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::04-foundations::03-lesson::2",
+      "collection_id": "ims-tutorials::04-foundations",
+      "module_slug": "04-foundations",
+      "lesson_slug": "03-lesson",
+      "source_file": "04-foundations/03-lesson/04-03-lesson.Rmd",
+      "prompt_text": "What decision should be made if the goal is to never make a Type II error false negative?",
+      "choices": [
+        "Never claim there is a difference in proportions.",
+        "Always claim there is a difference in proportions.",
+        "Claim there is a difference in proportions only if the difference is large enough."
+      ],
+      "correct_choice": "Always claim there is a difference in proportions.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "04 foundations",
+        "03 lesson",
+        "What decision should be made if the goal is to never make a Type II error false "
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::04-foundations::03-lesson::3",
+      "collection_id": "ims-tutorials::04-foundations",
+      "module_slug": "04-foundations",
+      "lesson_slug": "03-lesson",
+      "source_file": "04-foundations/03-lesson/04-03-lesson.Rmd",
+      "prompt_text": "What are Type I (false positive) and Type II (false negative) errors for the two-sided hypotheses related to the opportunity costs example?",
+      "choices": [
+        "Type I: There is a difference in proportions, but the observed difference is not big enough to indicate that the proportions are different. Type II: There is not a difference in proportions, but the observed difference is large enough to indicate that the proportions are different.",
+        "Type I: There is not a difference in proportions, and the observed difference is not big enough to indicate that the proportions are different. Type II: There is a difference in proportions, and the observed difference is large enough to indicate that the proportions are different.",
+        "Type I: There is not a difference in proportions, but the observed difference is big enough to indicate that the proportions are different. Type II: There is a difference in proportions, but the observed difference is not large enough to indicate that the proportions are different.",
+        "Type I: There is a difference in proportions, and the observed difference is big enough to indicate that the proportions are different. Type II: There is not a difference in proportions, and the observed difference is not large enough to indicate that the proportions are different."
+      ],
+      "correct_choice": "Type I: There is not a difference in proportions, but the observed difference is big enough to indicate that the proportions are different. Type II: There is a difference in proportions, but the observed difference is not large enough to indicate that the proportions are different.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "04 foundations",
+        "03 lesson",
+        "What are Type I (false positive) and Type II (false negative) errors for the two"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::04-foundations::04-lesson::1",
+      "collection_id": "ims-tutorials::04-foundations",
+      "module_slug": "04-foundations",
+      "lesson_slug": "04-lesson",
+      "source_file": "04-foundations/04-lesson/04-04-lesson.Rmd",
+      "prompt_text": "Before investigating the sampling variability, what is the population parameter of interest?",
+      "choices": [
+        "The proportion of individuals in a given poll who will vote for Candidate X.",
+        "The variability of the sample proportion from poll to poll.",
+        "The proportion of all voters in your town who will vote for Candidate X on election day."
+      ],
+      "correct_choice": "The proportion of all voters in your town who will vote for Candidate X on election day.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "04 foundations",
+        "04 lesson",
+        "Before investigating the sampling variability, what is the population parameter "
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::04-foundations::04-lesson::2",
+      "collection_id": "ims-tutorials::04-foundations",
+      "module_slug": "04-foundations",
+      "lesson_slug": "04-lesson",
+      "source_file": "04-foundations/04-lesson/04-04-lesson.Rmd",
+      "prompt_text": "In this setting, which is more appropriate, a hypothesis test or a confidence interval?",
+      "choices": [
+        "Hypothesis test because there is a particular research claim.",
+        "Hypothesis test because the goal is to estimate a population parameter.",
+        "Confidence interval because there is a particular research claim.",
+        "Confidence interval because the goal is to estimate a population parameter."
+      ],
+      "correct_choice": "Confidence interval because the goal is to estimate a population parameter.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "04 foundations",
+        "04 lesson",
+        "In this setting, which is more appropriate, a hypothesis test or a confidence in"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::04-foundations::04-lesson::3",
+      "collection_id": "ims-tutorials::04-foundations",
+      "module_slug": "04-foundations",
+      "lesson_slug": "04-lesson",
+      "source_file": "04-foundations/04-lesson/04-04-lesson.Rmd",
+      "prompt_text": "Generally, if $n$ represents the size of the original sample, how many observations should we resample with replacement when bootstrapping?",
+      "choices": [
+        "Resample fewer than $n$ observations because otherwise every sample will include the same observations.",
+        "Resample exactly $n$ observations so that we have the exact same observations as the original sample.",
+        "Resample exactly $n$ observations because then the variability of $\\hat{p}^*$ will be most similar / representative of the original sampling process.",
+        "Resample more than $n$ observations in order to minimize the variability."
+      ],
+      "correct_choice": "Resample exactly $n$ observations because then the variability of $\\hat{p}^*$ will be most similar / representative of the original sampling process.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "04 foundations",
+        "04 lesson",
+        "Generally, if $n$ represents the size of the original sample, how many observati"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::01-lesson::1",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "01-lesson",
+      "source_file": "05-infer/01-lesson/05-01-lesson.Rmd",
+      "prompt_text": "If we had used 5000 instead of 500 bootstrap samples, which of the following would be true?",
+      "choices": [
+        "The bootstrap distribution would appear smoother.",
+        "The standard error would decrease.",
+        "The standard error would increase.",
+        "p_hat would be 10 times larger."
+      ],
+      "correct_choice": "The bootstrap distribution would appear smoother.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "01 lesson",
+        "If we had used 5000 instead of 500 bootstrap samples, which of the following wou"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::01-lesson::2",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "01-lesson",
+      "source_file": "05-infer/01-lesson/05-01-lesson.Rmd",
+      "prompt_text": "What is your best guess at the confidence level used in these intervals?",
+      "choices": [
+        "0.05",
+        "0.35",
+        "0.65",
+        "0.95"
+      ],
+      "correct_choice": "0.65",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "01 lesson",
+        "What is your best guess at the confidence level used in these intervals?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::01-lesson::3",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "01-lesson",
+      "source_file": "05-infer/01-lesson/05-01-lesson.Rmd",
+      "prompt_text": "Which of the following statements is correct?",
+      "choices": [
+        "Once the rule-of-thumb condition is violated, the approximation method instantly becomes extremely inaccurate.",
+        "At a very small sample size, both approaches will perform poorly. Inference on very small data sets is not recommended!",
+        "In traditional surveys and scientific research, the bootstrap approach is more commonly used than the approximation approach."
+      ],
+      "correct_choice": "At a very small sample size, both approaches will perform poorly. Inference on very small data sets is not recommended!",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "01 lesson",
+        "Which of the following statements is correct?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::02-lesson::1",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "02-lesson",
+      "source_file": "05-infer/02-lesson/05-02-lesson.Rmd",
+      "prompt_text": "Using an alpha level of .05, what is your decision regarding the null hypothesis?",
+      "choices": [
+        "The p-value < alpha, thus the data is consistent with the null hypothesis so I fail to reject it as a reasonable explanation.",
+        "The p-value < alpha, thus the data is inconsistent with the null hypothesis so I reject it as a reasonable explanation.",
+        "The p-value > alpha, thus the data is consistent with the null hypothesis so I fail to reject it as a reasonable explanation.",
+        "The p-value > alpha, thus the data is inconsistent with the null hypothesis so I reject it as a reasonable explanation."
+      ],
+      "correct_choice": "The p-value > alpha, thus the data is consistent with the null hypothesis so I fail to reject it as a reasonable explanation.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "02 lesson",
+        "Using an alpha level of .05, what is your decision regarding the null hypothesis"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::03-lesson::1",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "03-lesson",
+      "source_file": "05-infer/03-lesson/05-03-lesson.Rmd",
+      "prompt_text": "Which of the following is FALSE regarding contingency tables?",
+      "choices": [
+        "They are a common method of displaying categorical data.",
+        "They have one variable across the columns and another variable along the rows.",
+        "They have the variables across the columns and observations down the rows.",
+        "They should be transformed to a tidy format for analysis."
+      ],
+      "correct_choice": "They have the variables across the columns and observations down the rows.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "03 lesson",
+        "Which of the following is FALSE regarding contingency tables?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::03-lesson::2",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "03-lesson",
+      "source_file": "05-infer/03-lesson/05-03-lesson.Rmd",
+      "prompt_text": "Select the correct answer",
+      "choices": [
+        "Since both p-values are above 0.05, we fail to reject the hypotheses that both military spending and spending on space exploration are independent of political party.",
+        "The data set is consistent with the hypothesis that there is no relationship between political party and space exploration spending, but does suggest a relationship between party and spending on the military.",
+        "The data set is inconsistent with the hypothesis that there is no relationship between both military spending and party as well as spending for space exploration and party.",
+        "The data set is consistent with the hypothesis that there is no relationship between political party and military spending, but does suggest a relationship between party and spending on space exploration."
+      ],
+      "correct_choice": "The data set is consistent with the hypothesis that there is no relationship between political party and space exploration spending, but does suggest a relationship between party and spending on the military.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "03 lesson",
+        "Select the correct answer"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::03-lesson::3",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "03-lesson",
+      "source_file": "05-infer/03-lesson/05-03-lesson.Rmd",
+      "prompt_text": "The chi-squared approximation method will only be accurate for one of them. Which one?",
+      "choices": [
+        "ds1",
+        "ds2",
+        "ds3"
+      ],
+      "correct_choice": "ds3",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "03 lesson",
+        "The chi-squared approximation method will only be accurate for one of them. Whic"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::04-lesson::1",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "04-lesson",
+      "source_file": "05-infer/04-lesson/05-04-lesson.Rmd",
+      "prompt_text": "Which of the following is FALSE regarding the iran data set?",
+      "choices": [
+        "Each row refers to a single ballot cast.",
+        "The data set has 9 variables on 366 observations.",
+        "The variables contain vote counts for various candidates as well as categorical data for the city and province names.",
+        "There appear to be four candidates represented in this data set."
+      ],
+      "correct_choice": "Each row refers to a single ballot cast.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "04 lesson",
+        "Which of the following is FALSE regarding the iran data set?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::04-lesson::2",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "04-lesson",
+      "source_file": "05-infer/04-lesson/05-04-lesson.Rmd",
+      "prompt_text": "Based on your p-value of approximately 0.006, which of the following statements is FALSE?",
+      "choices": [
+        "If the null hypothesis is true, the probability of observing a test statistic more extreme than the observed statistic is 0.006.",
+        "This data is consistent with a model in which Benford's Law applies to vote totals from the 2009 Iranian election.",
+        "The p-value is a measure of the consistency between a data set and a particular hypothesis."
+      ],
+      "correct_choice": "This data is consistent with a model in which Benford's Law applies to vote totals from the 2009 Iranian election.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "04 lesson",
+        "Based on your p-value of approximately 0.006, which of the following statements "
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::04-lesson::3",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "04-lesson",
+      "source_file": "05-infer/04-lesson/05-04-lesson.Rmd",
+      "prompt_text": "Determine which of the following statements is FALSE",
+      "choices": [
+        "There are 1386 observations on 5 variables.",
+        "The columns contain the name of the office, the candidate, the party, the county, and the votes cast, all of which are categorical data.",
+        "Each row refers to candidate pair (President/Vice President) in a single county.",
+        "There appear to be 14 distinct categories in the candidate column."
+      ],
+      "correct_choice": "The columns contain the name of the office, the candidate, the party, the county, and the votes cast, all of which are categorical data.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "04 lesson",
+        "Determine which of the following statements is FALSE"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::04-lesson::4",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "04-lesson",
+      "source_file": "05-infer/04-lesson/05-04-lesson.Rmd",
+      "prompt_text": "Based on the null distribution that you constructed in the last exercise and the p-value (which you can compute using null and chi_obs_stat in your workspace here), which of the following statements is FALSE?",
+      "choices": [
+        "The low p-value indicates that if in fact there was election fraud in Iowa, there would be a very small probability of observing this data or more extreme.",
+        "Because the observed statistic is far into the tails of the null distribution, this indicates that your data is inconsistent with the null hypothesis that Benford's Law applies to vote totals in Iowa.",
+        "The high p-value indicates a high probability that that our null hypothesis (that Benford's Law applies to vote totals in Iowa) is true."
+      ],
+      "correct_choice": "The high p-value indicates a high probability that that our null hypothesis (that Benford's Law applies to vote totals in Iowa) is true.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "04 lesson",
+        "Based on the null distribution that you constructed in the last exercise and the"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::05-lesson::1",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "05-lesson",
+      "source_file": "05-infer/05-lesson/05-05-lesson.Rmd",
+      "prompt_text": "Which method is more appropriate for calculating the bootstrap confidence interval for the median rent of 1 BR apartments in Manhattan?",
+      "choices": [
+        "Percentile method.",
+        "Standard error method."
+      ],
+      "correct_choice": "Standard error method.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "05 lesson",
+        "Which method is more appropriate for calculating the bootstrap confidence interv"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::05-lesson::2",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "05-lesson",
+      "source_file": "05-infer/05-lesson/05-05-lesson.Rmd",
+      "prompt_text": "Which of the following is false about the distribution of visits?",
+      "choices": [
+        "On average, mothers visit the doctor approximately 12 times throughout pregnancy.",
+        "The distribution of number of doctor's visits is unimodal and roughly symmetric.",
+        "The median number of doctor's visits throughout the pregnancy is roughly equal to the mean number of visits.",
+        "The number of doctor's visits for one of the mothers in the dataset is missing."
+      ],
+      "correct_choice": "The number of doctor's visits for one of the mothers in the dataset is missing.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "05 lesson",
+        "Which of the following is false about the distribution of visits?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::05-lesson::3",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "05-lesson",
+      "source_file": "05-infer/05-lesson/05-05-lesson.Rmd",
+      "prompt_text": "What is the conclusion of the hypothesis test at the 5% significance level?",
+      "choices": [
+        "We reject $H_0$ since the p-value is above the significance level, and conclude that the data provide convincing evidence that median rent of 1 BR apartments in Manhattan is greater than $2500.",
+        "We fail to reject $H_0$ since the p-value is above the significance level, and conclude that the data provide convincing evidence that median rent of 1 BR apartments in Manhattan is greater than $2500.",
+        "We reject $H_0$ since the p-value is below the significance level, and conclude that the data do not provide convincing evidence that median rent of 1 BR apartments in Manhattan is greater than $2500.",
+        "We fail to reject $H_0$ since the p-value is above the significance level, and conclude that the data do not provide convincing evidence that median rent of 1 BR apartments in Manhattan is greater than $2500."
+      ],
+      "correct_choice": "We fail to reject $H_0$ since the p-value is above the significance level, and conclude that the data do not provide convincing evidence that median rent of 1 BR apartments in Manhattan is greater than $2500.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "05 lesson",
+        "What is the conclusion of the hypothesis test at the 5% significance level?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::06-lesson::1",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "06-lesson",
+      "source_file": "05-infer/06-lesson/05-06-lesson.Rmd",
+      "prompt_text": "Which of the following describes best why we might need to use the t-distribution for inference?",
+      "choices": [
+        "When the population distribution is not known",
+        "When the population standard deviation is unknown",
+        "When the sample is not random",
+        "When the sample is not representative of the population"
+      ],
+      "correct_choice": "When the population standard deviation is unknown",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "06 lesson",
+        "Which of the following describes best why we might need to use the t-distributio"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::06-lesson::2",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "06-lesson",
+      "source_file": "05-infer/06-lesson/05-06-lesson.Rmd",
+      "prompt_text": "Which of the following is false about confidence intervals when all else is held constant?",
+      "choices": [
+        "As the confidence level increases, the margin of error of the interval increases as well.",
+        "As the confidence level increases, the width of the interval increases as well.",
+        "As the sample size increases, the margin of error of the interval increases as well.",
+        "As the sample size increases, the precision of the interval increases as well."
+      ],
+      "correct_choice": "As the sample size increases, the margin of error of the interval increases as well.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "06 lesson",
+        "Which of the following is false about confidence intervals when all else is held"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::06-lesson::3",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "06-lesson",
+      "source_file": "05-infer/06-lesson/05-06-lesson.Rmd",
+      "prompt_text": "Which of the following is the correct definition of the p-value of this hypothesis test?",
+      "choices": [
+        "The probability that there is no difference between the median math and science scores.",
+        "The probability that the median math score is higher than the median science score.",
+        "The probability of getting a random sample of 200 high school students where there is no difference between the median math and science scores, if in fact the median difference between their math and science test scores is at least 1.",
+        "The probability of getting a random sample of 200 high school students where the median difference between their math and science test scores is at least 1, if in fact there is no difference between the median math and science scores."
+      ],
+      "correct_choice": "The probability of getting a random sample of 200 high school students where the median difference between their math and science test scores is at least 1, if in fact there is no difference between the median math and science scores.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "06 lesson",
+        "Which of the following is the correct definition of the p-value of this hypothes"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::07-lesson::1",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "07-lesson",
+      "source_file": "05-infer/07-lesson/05-07-lesson.Rmd",
+      "prompt_text": "_____ between the heart pumping capacities of sheep's hearts in the control and treatment groups.",
+      "choices": [
+        "There is a difference",
+        "There is no difference",
+        "The data provide convincing evidence of a difference",
+        "The data provide convincing evidence that there is no difference"
+      ],
+      "correct_choice": "The data provide convincing evidence of a difference",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "07 lesson",
+        "_____ between the heart pumping capacities of sheep's hearts in the control and "
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::08-lesson::1",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "08-lesson",
+      "source_file": "05-infer/08-lesson/05-08-lesson.Rmd",
+      "prompt_text": "Which of the following plots shows groups with means that are most and least likely to be significantly different from each other?",
+      "choices": [
+        "Most likely: 1, least likely: 2",
+        "Most likely: 1, least likely: 3",
+        "Most likely: 2, least likely: 3",
+        "Most likely: 2, least likely: 1"
+      ],
+      "correct_choice": "Most likely: 1, least likely: 2",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "08 lesson",
+        "Which of the following plots shows groups with means that are most and least lik"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::05-infer::08-lesson::2",
+      "collection_id": "ims-tutorials::05-infer",
+      "module_slug": "05-infer",
+      "lesson_slug": "08-lesson",
+      "source_file": "05-infer/08-lesson/05-08-lesson.Rmd",
+      "prompt_text": "Which of the following provides the most complete information for checking the normality condition for the ANOVA for evaluating whether there are differences between the average vocabulary scores across social classes?",
+      "choices": [
+        "Violin plot of vocabulary scores, faceted by social class",
+        "Box plot of vocabulary scores, faceted by social class",
+        "Means and standard deviations of vocabulary scores in each social class",
+        "Number of modes of vocabulary scores in each social class"
+      ],
+      "correct_choice": "Violin plot of vocabulary scores, faceted by social class",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "05 infer",
+        "08 lesson",
+        "Which of the following provides the most complete information for checking the n"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::06-model-infer::01-lesson::1",
+      "collection_id": "ims-tutorials::06-model-infer",
+      "module_slug": "06-model-infer",
+      "lesson_slug": "01-lesson",
+      "source_file": "06-model-infer/01-lesson/06-01-lesson.Rmd",
+      "prompt_text": "Should the researchers run a test with a one- or two-sided alternative hypothesis?",
+      "choices": [
+        "one-sided because the researchers know studying leads to higher test scores.",
+        "one-sided because the researchers are trying to demonstrate a positive association.",
+        "two-sided because the researchers have no pre-conceived notion of whether or not studying is associated with test scores.",
+        "two-sided because the researchers don't want to perform data-snooping."
+      ],
+      "correct_choice": "one-sided because the researchers are trying to demonstrate a positive association.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "06 model infer",
+        "01 lesson",
+        "Should the researchers run a test with a one- or two-sided alternative hypothesi"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::06-model-infer::01-lesson::2",
+      "collection_id": "ims-tutorials::06-model-infer",
+      "module_slug": "06-model-infer",
+      "lesson_slug": "01-lesson",
+      "source_file": "06-model-infer/01-lesson/06-01-lesson.Rmd",
+      "prompt_text": "Which of the following combinations increases the variability in the sampling distribution of the slope coefficient?",
+      "choices": [
+        "Bigger sample size, larger variability around the line, increased range of explanatory variable",
+        "Bigger sample size, larger variability around the line, decreased range of explanatory variable.",
+        "Smaller sample size, smaller variability around the line, increased range of explanatory variable.",
+        "Smaller sample size, larger variability around the line, decreased range of explanatory variable.",
+        "Smaller sample size, smaller variability around the line, decreased range of explanatory variable."
+      ],
+      "correct_choice": "Smaller sample size, larger variability around the line, decreased range of explanatory variable.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "06 model infer",
+        "01 lesson",
+        "Which of the following combinations increases the variability in the sampling di"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::06-model-infer::02-lesson::1",
+      "collection_id": "ims-tutorials::06-model-infer",
+      "module_slug": "06-model-infer",
+      "lesson_slug": "02-lesson",
+      "source_file": "06-model-infer/02-lesson/06-02-lesson.Rmd",
+      "prompt_text": "What can we conclude based on the p-value associated with the twins data?",
+      "choices": [
+        "If there were no association between foster and biological twin IQ (no nature) in the population, we would be extremely unlikely to have collected a sample of data like we did.",
+        "A biological twin's IQ being higher causes a foster twin's IQ to be higher.",
+        "Biological twins' IQs are higher than foster twins' IQs, on average.",
+        "Given the data, the probability of biological and foster twins' IQs being unrelated is close to zero."
+      ],
+      "correct_choice": "If there were no association between foster and biological twin IQ (no nature) in the population, we would be extremely unlikely to have collected a sample of data like we did.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "06 model infer",
+        "02 lesson",
+        "What can we conclude based on the p-value associated with the twins data?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::06-model-infer::02-lesson::2",
+      "collection_id": "ims-tutorials::06-model-infer",
+      "module_slug": "06-model-infer",
+      "lesson_slug": "02-lesson",
+      "source_file": "06-model-infer/02-lesson/06-02-lesson.Rmd",
+      "prompt_text": "What are the appropriate conclusions of this study?",
+      "choices": [
+        "Zero is not a plausible value for the population slope, one is a plausible value for the population slope.",
+        "Zero is not a plausible value for the estimated slope, one is a plausible value for the estimated slope.",
+        "Zero is a plausible value for the population slope, one is not a plausible value for the population slope.",
+        "Zero is a plausible value for the estimated slope, one not is a plausible value for the estimated slope."
+      ],
+      "correct_choice": "Zero is not a plausible value for the population slope, one is a plausible value for the population slope.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "06 model infer",
+        "02 lesson",
+        "What are the appropriate conclusions of this study?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::06-model-infer::03-lesson::1",
+      "collection_id": "ims-tutorials::06-model-infer",
+      "module_slug": "06-model-infer",
+      "lesson_slug": "03-lesson",
+      "source_file": "06-model-infer/03-lesson/06-03-lesson.Rmd",
+      "prompt_text": "Why does it matter if the sampling distribution is accurate?",
+      "choices": [
+        "If the distribution is wrong, the software will not compute a p-value.",
+        "If the distribution is wrong, the p-value will not represent the probability of the data given the null hypothesis is true.",
+        "If the distribution is wrong, the CI procedure will not capture the true parameter in 95% of samples.",
+        "All of the above.",
+        "Some of the above."
+      ],
+      "correct_choice": "Some of the above.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "06 model infer",
+        "03 lesson",
+        "Why does it matter if the sampling distribution is accurate?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::06-model-infer::04-lesson::1",
+      "collection_id": "ims-tutorials::06-model-infer",
+      "module_slug": "06-model-infer",
+      "lesson_slug": "04-lesson",
+      "source_file": "06-model-infer/04-lesson/06-04-lesson.Rmd",
+      "prompt_text": "Which of the linear regression technical conditions are violated in the given figure?",
+      "choices": [
+        "Linearity",
+        "Independence of errors",
+        "Normality of the response variable around the line",
+        "Equal variability around the entire line",
+        "No technical conditions are violated"
+      ],
+      "correct_choice": "Linearity",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "06 model infer",
+        "04 lesson",
+        "Which of the linear regression technical conditions are violated in the given fi"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::06-model-infer::04-lesson::2",
+      "collection_id": "ims-tutorials::06-model-infer",
+      "module_slug": "06-model-infer",
+      "lesson_slug": "04-lesson",
+      "source_file": "06-model-infer/04-lesson/06-04-lesson.Rmd",
+      "prompt_text": "Which of the linear regression technical conditions are violated in the given figure?",
+      "choices": [
+        "Linearity",
+        "Independence of errors",
+        "Normality of the response variable around the line",
+        "Equal variability around the entire line",
+        "No technical conditions are violated"
+      ],
+      "correct_choice": "Equal variability around the entire line",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "06 model infer",
+        "04 lesson",
+        "Which of the linear regression technical conditions are violated in the given fi"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::06-model-infer::04-lesson::3",
+      "collection_id": "ims-tutorials::06-model-infer",
+      "module_slug": "06-model-infer",
+      "lesson_slug": "04-lesson",
+      "source_file": "06-model-infer/04-lesson/06-04-lesson.Rmd",
+      "prompt_text": "What happens if inferences is performed when the technical conditions are violated?",
+      "choices": [
+        "If the technical conditions are violated, the software will not compute a p-value",
+        "If the technical conditions are violated, the p-value will not represent the probability of the data given the null hypothesis is true.",
+        "If the technical conditions are violated, the CI procedure will not capture the true parameter in 95% of samples.",
+        "All of the above.",
+        "Some of the above."
+      ],
+      "correct_choice": "Some of the above.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "06 model infer",
+        "04 lesson",
+        "What happens if inferences is performed when the technical conditions are violat"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::06-model-infer::05-lesson::1",
+      "collection_id": "ims-tutorials::06-model-infer",
+      "module_slug": "06-model-infer",
+      "lesson_slug": "05-lesson",
+      "source_file": "06-model-infer/05-lesson/06-05-lesson.Rmd",
+      "prompt_text": "What is the appropriate interpretation of the coefficient on log(sqft)?",
+      "choices": [
+        "Each additional square foot of house size produces an estimate of the average price which is $1.44 more.",
+        "Each additional square foot of house size produces an estimate of the average price which is $1,442 more.",
+        "Each additional square foot of house size produces an estimate of the average price which is 1.44% higher.",
+        "Each additional 1% of square footage produces an estimate of the average price which is $1.44 more.",
+        "Each additional 1% of square footage produces an estimate of the average price which is 1.44% higher."
+      ],
+      "correct_choice": "Each additional 1% of square footage produces an estimate of the average price which is 1.44% higher.",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "06 model infer",
+        "05 lesson",
+        "What is the appropriate interpretation of the coefficient on log(sqft)?"
+      ]
+    },
+    {
+      "source_id": "ims-tutorials::06-model-infer::05-lesson::2",
+      "collection_id": "ims-tutorials::06-model-infer",
+      "module_slug": "06-model-infer",
+      "lesson_slug": "05-lesson",
+      "source_file": "06-model-infer/05-lesson/06-05-lesson.Rmd",
+      "prompt_text": "What is the correct interpretation of the coefficient on Service in the linear model which regresses Price on Service, Food, and Decor? ?",
+      "choices": [
+        "For every one unit increase in Service, the predicted average Price is expected to increase by 0.135.",
+        "For every one unit increase in Service, the predicted average Price is expected to increase by 0.135, given fixed values of Food and Decor.",
+        "For every one unit increase in Service, the predicted average Price is expected to increase by 0.135, for any possible value of Food and Decor.",
+        "Given that Food and Decor are in the model, Service is not significant, and we cannot know whether it has effect on modeling Price"
+      ],
+      "correct_choice": "Given that Food and Decor are in the model, Service is not significant, and we cannot know whether it has effect on modeling Price",
+      "candidate_track_ids": [
+        "apStatistics",
+        "introDataScience",
+        "ml",
+        "quantAdvanced",
+        "quant",
+        "medical"
+      ],
+      "topic_tags": [
+        "06 model infer",
+        "05 lesson",
+        "What is the correct interpretation of the coefficient on Service in the linear m"
+      ]
+    }
+  ]
+}

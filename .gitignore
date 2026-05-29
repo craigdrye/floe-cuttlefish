@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+.vite/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude / agent state
+.claude/
+
+# Scratch
+_*.ts
+_*.txt
+_*.mts
+
+# Large raw data (GitHub 100MB limit)
+data/kolibri_databases/
+data/quant_questions_kolibri.txt
+data/raw_collections/numbas/numbas_questions.json
+data/raw_collections/numbas_exams/numbas_exam_questions.json
+data/raw_collections/opentriviaqa/opentriviaqa_questions.json
+data/raw_collections/webwork_opl/webwork_opl_problems.json
+reports/raw-collection-mapping-manifest.json
+reports/duplicate-question-audit.json
+
+# Catch-all for oversized artifacts
+*.sqlite3
+tmp/

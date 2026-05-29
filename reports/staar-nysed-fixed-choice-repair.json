@@ -1,0 +1,1143 @@
+{
+  "files": [
+    {
+      "folder": "nysed_ela_2015",
+      "file": "data/raw_collections/nysed_ela_2015/nysed_ela_2015_questions.json",
+      "kind": "NYSED ELA",
+      "items": 233,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 0,
+      "tiny_prompt": 104,
+      "empty_answer_key_excerpt": 233
+    },
+    {
+      "folder": "nysed_ela_2016",
+      "file": "data/raw_collections/nysed_ela_2016/nysed_ela_2016_questions.json",
+      "kind": "NYSED ELA",
+      "items": 204,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 145,
+      "tiny_prompt": 0,
+      "empty_answer_key_excerpt": 204
+    },
+    {
+      "folder": "nysed_ela_2017",
+      "file": "data/raw_collections/nysed_ela_2017/nysed_ela_2017_questions.json",
+      "kind": "NYSED ELA",
+      "items": 251,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 150,
+      "tiny_prompt": 3,
+      "empty_answer_key_excerpt": 251
+    },
+    {
+      "folder": "nysed_ela_2018",
+      "file": "data/raw_collections/nysed_ela_2018/nysed_ela_2018_questions.json",
+      "kind": "NYSED ELA",
+      "items": 186,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 95,
+      "tiny_prompt": 46,
+      "empty_answer_key_excerpt": 186
+    },
+    {
+      "folder": "nysed_ela_2019",
+      "file": "data/raw_collections/nysed_ela_2019/nysed_ela_2019_questions.json",
+      "kind": "NYSED ELA",
+      "items": 211,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 108,
+      "tiny_prompt": 1,
+      "empty_answer_key_excerpt": 211
+    },
+    {
+      "folder": "nysed_ela_2021",
+      "file": "data/raw_collections/nysed_ela_2021/nysed_ela_2021_questions.json",
+      "kind": "NYSED ELA",
+      "items": 164,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 142,
+      "tiny_prompt": 5,
+      "empty_answer_key_excerpt": 164
+    },
+    {
+      "folder": "nysed_ela_2022",
+      "file": "data/raw_collections/nysed_ela_2022/nysed_ela_2022_questions.json",
+      "kind": "NYSED ELA",
+      "items": 191,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 108,
+      "tiny_prompt": 1,
+      "empty_answer_key_excerpt": 191
+    },
+    {
+      "folder": "nysed_ela_2023",
+      "file": "data/raw_collections/nysed_ela_2023/nysed_ela_2023_questions.json",
+      "kind": "NYSED ELA",
+      "items": 239,
+      "with_correct_letter": 124,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 124,
+      "tiny_prompt": 1,
+      "empty_answer_key_excerpt": 115
+    },
+    {
+      "folder": "nysed_ela_2024",
+      "file": "data/raw_collections/nysed_ela_2024/nysed_ela_2024_questions.json",
+      "kind": "NYSED ELA",
+      "items": 237,
+      "with_correct_letter": 124,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 124,
+      "tiny_prompt": 0,
+      "empty_answer_key_excerpt": 113
+    },
+    {
+      "folder": "nysed_ela_2025",
+      "file": "data/raw_collections/nysed_ela_2025/nysed_ela_2025_questions.json",
+      "kind": "NYSED ELA",
+      "items": 224,
+      "with_correct_letter": 124,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 124,
+      "tiny_prompt": 0,
+      "empty_answer_key_excerpt": 94
+    },
+    {
+      "folder": "nysed_math_2017",
+      "file": "data/raw_collections/nysed_math_2017/nysed_math_2017_questions.json",
+      "kind": "NYSED math",
+      "items": 284,
+      "with_correct_letter": 208,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 199,
+      "tiny_prompt": 13,
+      "empty_answer_key_excerpt": 76
+    },
+    {
+      "folder": "nysed_math_2018",
+      "file": "data/raw_collections/nysed_math_2018/nysed_math_2018_questions.json",
+      "kind": "NYSED math",
+      "items": 185,
+      "with_correct_letter": 140,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 134,
+      "tiny_prompt": 0,
+      "empty_answer_key_excerpt": 45
+    },
+    {
+      "folder": "nysed_math_2019",
+      "file": "data/raw_collections/nysed_math_2019/nysed_math_2019_questions.json",
+      "kind": "NYSED math",
+      "items": 192,
+      "with_correct_letter": 139,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 134,
+      "tiny_prompt": 3,
+      "empty_answer_key_excerpt": 53
+    },
+    {
+      "folder": "nysed_math_2021",
+      "file": "data/raw_collections/nysed_math_2021/nysed_math_2021_questions.json",
+      "kind": "NYSED math",
+      "items": 143,
+      "with_correct_letter": 141,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 135,
+      "tiny_prompt": 0,
+      "empty_answer_key_excerpt": 2
+    },
+    {
+      "folder": "nysed_math_2022",
+      "file": "data/raw_collections/nysed_math_2022/nysed_math_2022_questions.json",
+      "kind": "NYSED math",
+      "items": 204,
+      "with_correct_letter": 131,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 125,
+      "tiny_prompt": 19,
+      "empty_answer_key_excerpt": 73
+    },
+    {
+      "folder": "nysed_math_2023",
+      "file": "data/raw_collections/nysed_math_2023/nysed_math_2023_questions.json",
+      "kind": "NYSED math",
+      "items": 197,
+      "with_correct_letter": 115,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 165,
+      "tiny_prompt": 21,
+      "empty_answer_key_excerpt": 82
+    },
+    {
+      "folder": "nysed_math_2024",
+      "file": "data/raw_collections/nysed_math_2024/nysed_math_2024_questions.json",
+      "kind": "NYSED math",
+      "items": 170,
+      "with_correct_letter": 94,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 135,
+      "tiny_prompt": 0,
+      "empty_answer_key_excerpt": 30
+    },
+    {
+      "folder": "nysed_math_2025",
+      "file": "data/raw_collections/nysed_math_2025/nysed_math_2025_questions.json",
+      "kind": "NYSED math",
+      "items": 178,
+      "with_correct_letter": 115,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 165,
+      "tiny_prompt": 2,
+      "empty_answer_key_excerpt": 7
+    },
+    {
+      "folder": "nysed_science_2024",
+      "file": "data/raw_collections/nysed_science_2024/nysed_science_2024_questions.json",
+      "kind": "NYSED science",
+      "items": 98,
+      "with_correct_letter": 48,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 47,
+      "tiny_prompt": 7,
+      "empty_answer_key_excerpt": 50
+    },
+    {
+      "folder": "nysed_science_2025",
+      "file": "data/raw_collections/nysed_science_2025/nysed_science_2025_questions.json",
+      "kind": "NYSED science",
+      "items": 94,
+      "with_correct_letter": 48,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 46,
+      "tiny_prompt": 7,
+      "empty_answer_key_excerpt": 46
+    },
+    {
+      "folder": "staar_2018",
+      "file": "data/raw_collections/staar_2018/staar_2018_questions.json",
+      "kind": "STAAR released tests",
+      "items": 502,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 0,
+      "tiny_prompt": 87,
+      "empty_answer_key_excerpt": 68
+    },
+    {
+      "folder": "staar_2019",
+      "file": "data/raw_collections/staar_2019/staar_2019_questions.json",
+      "kind": "STAAR released tests",
+      "items": 488,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 0,
+      "tiny_prompt": 75,
+      "empty_answer_key_excerpt": 60
+    },
+    {
+      "folder": "staar_2021",
+      "file": "data/raw_collections/staar_2021/staar_2021_questions.json",
+      "kind": "STAAR released tests",
+      "items": 529,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 0,
+      "tiny_prompt": 91,
+      "empty_answer_key_excerpt": 70
+    },
+    {
+      "folder": "staar_2022",
+      "file": "data/raw_collections/staar_2022/staar_2022_questions.json",
+      "kind": "STAAR released tests",
+      "items": 952,
+      "with_correct_letter": 451,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 0,
+      "tiny_prompt": 127,
+      "empty_answer_key_excerpt": 179
+    },
+    {
+      "folder": "staar_2023",
+      "file": "data/raw_collections/staar_2023/staar_2023_questions.json",
+      "kind": "STAAR released tests",
+      "items": 427,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 0,
+      "tiny_prompt": 51,
+      "empty_answer_key_excerpt": 163
+    },
+    {
+      "folder": "staar_2023_redesign",
+      "file": "data/raw_collections/staar_2023_redesign/staar_2023_redesign_questions.json",
+      "kind": "STAAR released tests",
+      "items": 1069,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 0,
+      "tiny_prompt": 109,
+      "empty_answer_key_excerpt": 42
+    },
+    {
+      "folder": "staar_2024_rationales",
+      "file": "data/raw_collections/staar_2024_rationales/staar_2024_rationales.json",
+      "kind": "STAAR rationales",
+      "items": 438,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 0,
+      "tiny_prompt": 56,
+      "empty_answer_key_excerpt": 32
+    },
+    {
+      "folder": "staar_2025_rationales",
+      "file": "data/raw_collections/staar_2025_rationales/staar_2025_rationales.json",
+      "kind": "STAAR rationales",
+      "items": 1254,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 0,
+      "tiny_prompt": 230,
+      "empty_answer_key_excerpt": 133
+    },
+    {
+      "folder": "staar_alt2_2023",
+      "file": "data/raw_collections/staar_alt2_2023/staar_alt2_2023_questions.json",
+      "kind": "STAAR released tests",
+      "items": 355,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 0,
+      "tiny_prompt": 0,
+      "empty_answer_key_excerpt": 0
+    },
+    {
+      "folder": "staar_alt2_2025",
+      "file": "data/raw_collections/staar_alt2_2025/staar_alt2_2025_questions.json",
+      "kind": "STAAR released tests",
+      "items": 360,
+      "with_correct_letter": 0,
+      "with_choice_markers_in_prompt": 0,
+      "safe_current_fixed_choice": 0,
+      "metadata_or_table_like_prompt": 0,
+      "tiny_prompt": 0,
+      "empty_answer_key_excerpt": 0
+    }
+  ],
+  "examples": {
+    "nysed_ela_2015": {
+      "bad_prompt_samples": [],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "nysed_ela_2016": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-ela-2016::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice A 1 CCSS.ELA-Literacy.RL.3.5 Reading 0.76",
+          "answer_key_excerpt": ""
+        },
+        {
+          "source_id": "nysed-ela-2016::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice D 1 CCSS.ELA-Literacy.RL.3.1 Reading 0.90",
+          "answer_key_excerpt": ""
+        },
+        {
+          "source_id": "nysed-ela-2016::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice B 1 CCSS.ELA-Literacy.RL.3.1 Reading 0.57",
+          "answer_key_excerpt": ""
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "nysed_ela_2017": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-ela-2017::grade-3::7",
+          "question_number": 7,
+          "prompt_text": "Multiple Choice C 1 CCSS.ELA-Literacy.L.3.5a Reading 0.52",
+          "answer_key_excerpt": ""
+        },
+        {
+          "source_id": "nysed-ela-2017::grade-3::8",
+          "question_number": 8,
+          "prompt_text": "Multiple Choice C 1 CCSS.ELA-Literacy.RI.3.8 Reading 0.62",
+          "answer_key_excerpt": ""
+        },
+        {
+          "source_id": "nysed-ela-2017::grade-3::9",
+          "question_number": 9,
+          "prompt_text": "Multiple Choice B 1 CCSS.ELA-Literacy.RI.3.1 Reading 0.56",
+          "answer_key_excerpt": ""
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "nysed_ela_2018": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-ela-2018::grade-4::7",
+          "question_number": 7,
+          "prompt_text": "Multiple Choice D 1 CCSS.ELA-Literacy.RI.4.4 Reading 0.59",
+          "answer_key_excerpt": ""
+        },
+        {
+          "source_id": "nysed-ela-2018::grade-4::8",
+          "question_number": 8,
+          "prompt_text": "Multiple Choice A 1 CCSS.ELA-Literacy.RI.4.3 Reading 0.49",
+          "answer_key_excerpt": ""
+        },
+        {
+          "source_id": "nysed-ela-2018::grade-4::9",
+          "question_number": 9,
+          "prompt_text": "Multiple Choice B 1 CCSS.ELA-Literacy.RI.4.3 Reading 0.53",
+          "answer_key_excerpt": ""
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "nysed_ela_2019": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-ela-2019::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice B 1 CCSS.ELA-Literacy.L.3.4 Reading 0.85",
+          "answer_key_excerpt": ""
+        },
+        {
+          "source_id": "nysed-ela-2019::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice C 1 CCSS.ELA-Literacy.RL.3.3 Reading 0.83",
+          "answer_key_excerpt": ""
+        },
+        {
+          "source_id": "nysed-ela-2019::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice B 1 CCSS.ELA-Literacy.RL.3.3 Reading 0.82",
+          "answer_key_excerpt": ""
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "nysed_ela_2021": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-ela-2021::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice B 1 CCSS.ELA-Literacy.L.3.4 Language Standards Reading",
+          "answer_key_excerpt": ""
+        },
+        {
+          "source_id": "nysed-ela-2021::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice C 1 CCSS.ELA-Literacy.RL.3.3 Reading Standards for Literature Reading",
+          "answer_key_excerpt": ""
+        },
+        {
+          "source_id": "nysed-ela-2021::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice B 1 CCSS.ELA-Literacy.RL.3.3 Reading Standards for Literature Reading",
+          "answer_key_excerpt": ""
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "nysed_ela_2022": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-ela-2022::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice D 1 CCSS.ELA-Literacy.RL.3.6 Reading 0.8",
+          "answer_key_excerpt": ""
+        },
+        {
+          "source_id": "nysed-ela-2022::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice B 1 CCSS.ELA-Literacy.RL.3.4 Reading 0.9",
+          "answer_key_excerpt": ""
+        },
+        {
+          "source_id": "nysed-ela-2022::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice A 1 CCSS.ELA-Literacy.RL.3.3 Reading 0.75",
+          "answer_key_excerpt": ""
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "nysed_ela_2023": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-ela-2023::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice A 1 NGLS.ELA.Content.NY-3.R.2Reading Standards for Literature Reading 0.78",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=NGLS.ELA.Content.NY-3.R.2Reading"
+        },
+        {
+          "source_id": "nysed-ela-2023::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice D 1 NGLS.ELA.Content.NY-3.R.3Reading Standards for Literature Reading 0.71",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=NGLS.ELA.Content.NY-3.R.3Reading"
+        },
+        {
+          "source_id": "nysed-ela-2023::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice A 1 NGLS.ELA.Content.NY-3.R.4Reading Standards for Literature Reading 0.74",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=NGLS.ELA.Content.NY-3.R.4Reading"
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "nysed-ela-2023::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice A 1 NGLS.ELA.Content.NY-3.R.2Reading Standards for Literature Reading 0.78",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=NGLS.ELA.Content.NY-3.R.2Reading"
+        },
+        {
+          "source_id": "nysed-ela-2023::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice D 1 NGLS.ELA.Content.NY-3.R.3Reading Standards for Literature Reading 0.71",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=NGLS.ELA.Content.NY-3.R.3Reading"
+        },
+        {
+          "source_id": "nysed-ela-2023::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice A 1 NGLS.ELA.Content.NY-3.R.4Reading Standards for Literature Reading 0.74",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=NGLS.ELA.Content.NY-3.R.4Reading"
+        }
+      ]
+    },
+    "nysed_ela_2024": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-ela-2024::grade-3::13",
+          "question_number": 13,
+          "prompt_text": "Multiple Choice D 1 NGLS.ELA.Content.NY-3.R.4Reading 0.65",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=NGLS.ELA.Content.NY-3.R.4Reading"
+        },
+        {
+          "source_id": "nysed-ela-2024::grade-3::14",
+          "question_number": 14,
+          "prompt_text": "Multiple Choice A 1 NGLS.ELA.Content.NY-3.R.8Reading 0.6",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=NGLS.ELA.Content.NY-3.R.8Reading"
+        },
+        {
+          "source_id": "nysed-ela-2024::grade-3::15",
+          "question_number": 15,
+          "prompt_text": "Multiple Choice A 1 NGLS.ELA.Content.NY-3.R.5Reading 0.62",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=NGLS.ELA.Content.NY-3.R.5Reading"
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "nysed-ela-2024::grade-3::13",
+          "question_number": 13,
+          "prompt_text": "Multiple Choice D 1 NGLS.ELA.Content.NY-3.R.4Reading 0.65",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=NGLS.ELA.Content.NY-3.R.4Reading"
+        },
+        {
+          "source_id": "nysed-ela-2024::grade-3::14",
+          "question_number": 14,
+          "prompt_text": "Multiple Choice A 1 NGLS.ELA.Content.NY-3.R.8Reading 0.6",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=NGLS.ELA.Content.NY-3.R.8Reading"
+        },
+        {
+          "source_id": "nysed-ela-2024::grade-3::15",
+          "question_number": 15,
+          "prompt_text": "Multiple Choice A 1 NGLS.ELA.Content.NY-3.R.5Reading 0.62",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=NGLS.ELA.Content.NY-3.R.5Reading"
+        }
+      ]
+    },
+    "nysed_ela_2025": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-ela-2025::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice A 1 NGLS.ELA.Content.NY-3.R.4 Reading Standards for Literature Reading 0.48",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=NGLS.ELA.Content.NY-3.R.4"
+        },
+        {
+          "source_id": "nysed-ela-2025::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice B 1 NGLS.ELA.Content.NY-3.R.3 Reading Standards for Literature Reading 0.82",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=NGLS.ELA.Content.NY-3.R.3"
+        },
+        {
+          "source_id": "nysed-ela-2025::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice A 1 NGLS.ELA.Content.NY-3.R.3 Reading Standards for Literature Reading 0.71",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=NGLS.ELA.Content.NY-3.R.3"
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "nysed-ela-2025::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice A 1 NGLS.ELA.Content.NY-3.R.4 Reading Standards for Literature Reading 0.48",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=NGLS.ELA.Content.NY-3.R.4"
+        },
+        {
+          "source_id": "nysed-ela-2025::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice B 1 NGLS.ELA.Content.NY-3.R.3 Reading Standards for Literature Reading 0.82",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=NGLS.ELA.Content.NY-3.R.3"
+        },
+        {
+          "source_id": "nysed-ela-2025::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice A 1 NGLS.ELA.Content.NY-3.R.3 Reading Standards for Literature Reading 0.71",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=NGLS.ELA.Content.NY-3.R.3"
+        }
+      ]
+    },
+    "nysed_math_2017": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-math-2017::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.NF.A.1 Number and Operations\u2014 Fractions 0.76",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        },
+        {
+          "source_id": "nysed-math-2017::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.OA.A.4 Operations and Algebraic Thinking 0.90",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1"
+        },
+        {
+          "source_id": "nysed-math-2017::grade-3::5",
+          "question_number": 5,
+          "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.MD.B.3 Measurement and Data 0.51",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1"
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "nysed-math-2017::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.NF.A.1 Number and Operations\u2014 Fractions 0.76",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        },
+        {
+          "source_id": "nysed-math-2017::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.OA.A.4 Operations and Algebraic Thinking 0.90",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1"
+        },
+        {
+          "source_id": "nysed-math-2017::grade-3::5",
+          "question_number": 5,
+          "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.MD.B.3 Measurement and Data 0.51",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1"
+        }
+      ]
+    },
+    "nysed_math_2018": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-math-2018::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.B.5 Operations and Algebraic Thinking 0.78",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2018::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.NBT.A.1 Numbers and Operations in Base Ten 0.85",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        },
+        {
+          "source_id": "nysed-math-2018::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.OA.A.4 Operations and Algebraic Thinking 0.75",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "nysed-math-2018::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.B.5 Operations and Algebraic Thinking 0.78",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2018::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.NBT.A.1 Numbers and Operations in Base Ten 0.85",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        },
+        {
+          "source_id": "nysed-math-2018::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.OA.A.4 Operations and Algebraic Thinking 0.75",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        }
+      ]
+    },
+    "nysed_math_2019": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-math-2019::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.OA.A.1 Operations and Algebraic Thinking 0.90",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        },
+        {
+          "source_id": "nysed-math-2019::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.OA.D.9 Operations and Algebraic Thinking 0.81",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1"
+        },
+        {
+          "source_id": "nysed-math-2019::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.OA.A.2 Operations and Algebraic Thinking 0.81",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1"
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "nysed-math-2019::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.OA.A.1 Operations and Algebraic Thinking 0.90",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        },
+        {
+          "source_id": "nysed-math-2019::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.OA.D.9 Operations and Algebraic Thinking 0.81",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1"
+        },
+        {
+          "source_id": "nysed-math-2019::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.OA.A.2 Operations and Algebraic Thinking 0.81",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1"
+        }
+      ]
+    },
+    "nysed_math_2021": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-math-2021::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.B.5 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2021::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.NBT.A.1 Numbers and Operations in Base Ten",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        },
+        {
+          "source_id": "nysed-math-2021::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.OA.A.4 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "nysed-math-2021::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.B.5 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2021::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.NBT.A.1 Numbers and Operations in Base Ten",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        },
+        {
+          "source_id": "nysed-math-2021::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.OA.A.4 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        }
+      ]
+    },
+    "nysed_math_2022": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-math-2022::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.A.1 Operations and Algebraic Thinking 0.78",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2022::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.NF.A.2b Number and Operations - Fractions 0.62",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2022::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.MD.C.7d Measurement and Data 0.35",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1"
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "nysed-math-2022::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.A.1 Operations and Algebraic Thinking 0.78",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2022::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.NF.A.2b Number and Operations - Fractions 0.62",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2022::grade-3::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.MD.C.7d Measurement and Data 0.35",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1"
+        }
+      ]
+    },
+    "nysed_math_2023": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-math-2023::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.OA.4 Operations and Algebraic Thinking Operations and Algebraic Thinking 0.83",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2023::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.MD.6 Measurement and Data Measurement and Data 0.88",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2023::grade-3::5",
+          "question_number": 5,
+          "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.NF.3a Number and Operations - Fractions Number and Operations - Fractions NGLS.Math.Content.NY-3.NF.2b 0.53",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "nysed-math-2023::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.OA.4 Operations and Algebraic Thinking Operations and Algebraic Thinking 0.83",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2023::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.MD.6 Measurement and Data Measurement and Data 0.88",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2023::grade-3::5",
+          "question_number": 5,
+          "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.NF.3a Number and Operations - Fractions Number and Operations - Fractions NGLS.Math.Content.NY-3.NF.2b 0.53",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        }
+      ]
+    },
+    "nysed_math_2024": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-math-2024::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-3.OA.2 Operations and Algebraic Thinking 0.73",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1"
+        },
+        {
+          "source_id": "nysed-math-2024::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-3.NBT.1 Number and Operations - Base Ten 0.70",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1"
+        },
+        {
+          "source_id": "nysed-math-2024::grade-3::4",
+          "question_number": 4,
+          "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-3.NF.2b Number and Operations - Fractions 0.80",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1"
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "nysed-math-2024::grade-3::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice A 1 NGLS.Math.Content.NY-3.OA.2 Operations and Algebraic Thinking 0.73",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1"
+        },
+        {
+          "source_id": "nysed-math-2024::grade-3::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-3.NBT.1 Number and Operations - Base Ten 0.70",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1"
+        },
+        {
+          "source_id": "nysed-math-2024::grade-3::4",
+          "question_number": 4,
+          "prompt_text": "Multiple Choice B 1 NGLS.Math.Content.NY-3.NF.2b Number and Operations - Fractions 0.80",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1"
+        }
+      ]
+    },
+    "nysed_math_2025": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-math-2025::grade-3::5",
+          "question_number": 5,
+          "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-3.MD.2a Measurement and Data Measurement and Data 0.83",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        },
+        {
+          "source_id": "nysed-math-2025::grade-3::6",
+          "question_number": 6,
+          "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.OA.2 Operations and Algebraic Thinking Operations and Algebraic Thinking 0.72",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2025::grade-3::7",
+          "question_number": 7,
+          "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.NF.3c Number and Operations - Fractions Number and Operations - Fractions 0.30",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "nysed-math-2025::grade-3::5",
+          "question_number": 5,
+          "prompt_text": "Multiple Choice C 1 NGLS.Math.Content.NY-3.MD.2a Measurement and Data Measurement and Data 0.83",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1"
+        },
+        {
+          "source_id": "nysed-math-2025::grade-3::6",
+          "question_number": 6,
+          "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.OA.2 Operations and Algebraic Thinking Operations and Algebraic Thinking 0.72",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        },
+        {
+          "source_id": "nysed-math-2025::grade-3::7",
+          "question_number": 7,
+          "prompt_text": "Multiple Choice D 1 NGLS.Math.Content.NY-3.NF.3c Number and Operations - Fractions Number and Operations - Fractions 0.30",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1"
+        }
+      ]
+    },
+    "nysed_science_2024": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-science-2024::grade-5::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice C 1 4-LS1-2 LS 0.48",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=4-LS1-2"
+        },
+        {
+          "source_id": "nysed-science-2024::grade-5::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice B 1 4-LS1-2 LS 0.46",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=4-LS1-2"
+        },
+        {
+          "source_id": "nysed-science-2024::grade-5::4",
+          "question_number": 4,
+          "prompt_text": "Multiple Choice D 1 4-PS4-2 PS 0.37",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=4-PS4-2"
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "nysed-science-2024::grade-5::2",
+          "question_number": 2,
+          "prompt_text": "Multiple Choice C 1 4-LS1-2 LS 0.48",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=4-LS1-2"
+        },
+        {
+          "source_id": "nysed-science-2024::grade-5::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice B 1 4-LS1-2 LS 0.46",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=4-LS1-2"
+        },
+        {
+          "source_id": "nysed-science-2024::grade-5::4",
+          "question_number": 4,
+          "prompt_text": "Multiple Choice D 1 4-PS4-2 PS 0.37",
+          "answer_key_excerpt": "Multiple Choice; correct=D; points=1; standard=4-PS4-2"
+        }
+      ]
+    },
+    "nysed_science_2025": {
+      "bad_prompt_samples": [
+        {
+          "source_id": "nysed-science-2025::grade-5::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice A 1 3-LS3-1 LS 0.56",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=3-LS3-1"
+        },
+        {
+          "source_id": "nysed-science-2025::grade-5::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice C 1 3-LS3-2 LS 0.52",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=3-LS3-2"
+        },
+        {
+          "source_id": "nysed-science-2025::grade-5::4",
+          "question_number": 4,
+          "prompt_text": "Multiple Choice B 1 3-LS1-1 LS 0.71",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=3-LS1-1"
+        }
+      ],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "nysed-science-2025::grade-5::1",
+          "question_number": 1,
+          "prompt_text": "Multiple Choice A 1 3-LS3-1 LS 0.56",
+          "answer_key_excerpt": "Multiple Choice; correct=A; points=1; standard=3-LS3-1"
+        },
+        {
+          "source_id": "nysed-science-2025::grade-5::3",
+          "question_number": 3,
+          "prompt_text": "Multiple Choice C 1 3-LS3-2 LS 0.52",
+          "answer_key_excerpt": "Multiple Choice; correct=C; points=1; standard=3-LS3-2"
+        },
+        {
+          "source_id": "nysed-science-2025::grade-5::4",
+          "question_number": 4,
+          "prompt_text": "Multiple Choice B 1 3-LS1-1 LS 0.71",
+          "answer_key_excerpt": "Multiple Choice; correct=B; points=1; standard=3-LS1-1"
+        }
+      ]
+    },
+    "staar_2018": {
+      "bad_prompt_samples": [],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "staar_2019": {
+      "bad_prompt_samples": [],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "staar_2021": {
+      "bad_prompt_samples": [],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "staar_2022": {
+      "bad_prompt_samples": [],
+      "choice_marker_samples": [],
+      "correct_letter_samples": [
+        {
+          "source_id": "staar-2022::algebra-i::1",
+          "question_number": 1,
+          "prompt_text": "2",
+          "answer_key_excerpt": "1 4 Readiness Standard A.7(A) D"
+        },
+        {
+          "source_id": "staar-2022::algebra-i::2",
+          "question_number": 2,
+          "prompt_text": "+ 2 11373",
+          "answer_key_excerpt": "2 2 Readiness Standard A.3(B) H"
+        },
+        {
+          "source_id": "staar-2022::algebra-i::3",
+          "question_number": 3,
+          "prompt_text": "4",
+          "answer_key_excerpt": "3 3 Readiness Standard A.2(I) B"
+        }
+      ]
+    },
+    "staar_2023": {
+      "bad_prompt_samples": [],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "staar_2023_redesign": {
+      "bad_prompt_samples": [],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "staar_2024_rationales": {
+      "bad_prompt_samples": [],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "staar_2025_rationales": {
+      "bad_prompt_samples": [],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "staar_alt2_2023": {
+      "bad_prompt_samples": [],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    },
+    "staar_alt2_2025": {
+      "bad_prompt_samples": [],
+      "choice_marker_samples": [],
+      "correct_letter_samples": []
+    }
+  }
+}

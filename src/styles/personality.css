@@ -1,0 +1,311 @@
+.personality-shell {
+  padding-bottom: 80px;
+}
+
+.personality-test,
+.personality-pick {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.personality-length-options {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.personality-length-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(31, 60, 90, 0.18);
+  border-radius: 16px;
+  padding: 18px 20px;
+  cursor: pointer;
+  color: var(--ocean-deep, #1f3c5a);
+  transition: transform 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+}
+
+.personality-length-card:hover {
+  background: rgba(122, 92, 180, 0.12);
+  border-color: rgba(122, 92, 180, 0.55);
+  transform: translateY(-1px);
+}
+
+.personality-length-card svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #7a5cb4;
+}
+
+.personality-length-card strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.personality-length-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+}
+
+.personality-header {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.personality-intro h2 {
+  margin: 4px 0 6px;
+  font-size: 1.4rem;
+}
+
+.personality-intro .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--ocean-deep, #2b5a78);
+  font-weight: 700;
+}
+
+.personality-hint {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+.personality-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.personality-progress-track {
+  position: relative;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  overflow: hidden;
+}
+
+.personality-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #7a5cb4, #b45c8e);
+  transition: width 0.3s ease;
+}
+
+.personality-progress-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ocean-deep, #2b5a78);
+}
+
+.personality-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 8px 26px rgba(31, 60, 90, 0.08);
+}
+
+.personality-prompt {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 18px;
+  color: var(--ocean-deep, #16374f);
+}
+
+.likert-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (min-width: 640px) {
+  .likert-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.likert-btn {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(31, 60, 90, 0.18);
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ocean-deep, #1f3c5a);
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+  text-align: left;
+}
+
+.likert-btn:hover {
+  background: rgba(122, 92, 180, 0.12);
+  border-color: rgba(122, 92, 180, 0.5);
+}
+
+.likert-btn.selected {
+  background: rgba(122, 92, 180, 0.18);
+  border-color: rgba(122, 92, 180, 0.85);
+}
+
+.likert-value {
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(122, 92, 180, 0.18);
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.likert-label {
+  font-size: 0.92rem;
+}
+
+.forced-choice {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.forced-choice-btn {
+  width: 100%;
+  padding: 16px 18px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(31, 60, 90, 0.18);
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ocean-deep, #1f3c5a);
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.4;
+  transition: transform 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+}
+
+.forced-choice-btn:hover {
+  background: rgba(180, 92, 142, 0.12);
+  border-color: rgba(180, 92, 142, 0.5);
+  transform: translateX(2px);
+}
+
+.forced-choice-btn.selected {
+  background: rgba(180, 92, 142, 0.18);
+  border-color: rgba(180, 92, 142, 0.85);
+}
+
+/* ── Result screen ────────────────────────────────────────── */
+.personality-result {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.personality-result-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 26px rgba(31, 60, 90, 0.08);
+}
+
+.personality-result-card h2 {
+  margin: 6px 0 8px;
+  font-size: 1.5rem;
+}
+
+.ocean-list,
+.mbti-list {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ocean-item,
+.mbti-item {
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(31, 60, 90, 0.1);
+}
+
+.ocean-header,
+.mbti-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.98rem;
+  margin-bottom: 8px;
+}
+
+.ocean-score,
+.mbti-score {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: #7a5cb4;
+}
+
+.ocean-bar {
+  height: 8px;
+  background: rgba(31, 60, 90, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.ocean-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #7a5cb4, #b45c8e);
+  transition: width 0.4s ease;
+}
+
+.ocean-lean,
+.mbti-blurb {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: rgba(0, 0, 0, 0.72);
+  margin: 0;
+}
+
+.personality-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.personality-actions .secondary,
+.personality-actions .primary {
+  flex: 1;
+}

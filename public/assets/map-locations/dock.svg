@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="Dock location">
+  <defs>
+    <linearGradient id="dockSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff6ff" />
+      <stop offset="100%" stop-color="#f5fcff" />
+    </linearGradient>
+    <linearGradient id="dockWater" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#74c6df" />
+      <stop offset="100%" stop-color="#3b93b5" />
+    </linearGradient>
+    <linearGradient id="dockWood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cc9a58" />
+      <stop offset="100%" stop-color="#9f6b31" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="220" rx="20" fill="url(#dockSky)" />
+  <rect y="108" width="320" height="112" fill="url(#dockWater)" />
+  <circle cx="252" cy="52" r="22" fill="#ffd98a" />
+  <g opacity="0.5" stroke="#ffffff">
+    <path d="M28 34h58" />
+    <path d="M230 34h40" />
+    <path d="M106 52h64" />
+  </g>
+  <rect x="28" y="112" width="156" height="16" rx="4" fill="url(#dockWood)" />
+  <rect x="52" y="126" width="18" height="42" rx="3" fill="#8f5f2d" />
+  <rect x="146" y="126" width="18" height="42" rx="3" fill="#8f5f2d" />
+  <rect x="28" y="136" width="156" height="10" rx="4" fill="#b88343" opacity="0.8" />
+  <path d="M206 138c16-10 30-7 40 8-12 15-28 18-46 8 2-6 3-11 6-16z" fill="#ffb06e" />
+  <circle cx="236" cy="148" r="3" fill="#2f2f2f" />
+  <path d="M32 172c22 8 38 8 60 0m28 0c20 8 36 8 58 0m58 0c18 8 34 8 56 0" fill="none" stroke="#a8e8f7" stroke-linecap="round" stroke-width="4" opacity="0.5" />
+</svg>

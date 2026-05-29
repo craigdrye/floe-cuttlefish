@@ -1,0 +1,168 @@
+/* ═══ WAFFLE ═══ */
+
+.waffle-layout {
+  display: grid;
+  gap: 18px;
+  padding: 10px 0 28px;
+}
+
+.waffle-hero {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 18px 22px;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg-strong);
+  backdrop-filter: var(--glass-blur);
+  box-shadow: var(--shadow-sm);
+}
+.waffle-hero h2 {
+  margin: 4px 0 6px;
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3.4vw, 30px);
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  color: var(--ocean-deep);
+}
+.waffle-hero p {
+  margin: 0;
+  color: rgba(11, 29, 46, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+}
+body.deep-ocean .waffle-hero h2 { color: #f4fdff; }
+body.deep-ocean .waffle-hero p { color: rgba(231, 251, 255, 0.75); }
+
+.waffle-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.waffle-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: var(--r-full);
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--ocean-deep);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.waffle-actions button:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateY(-1px);
+}
+body.deep-ocean .waffle-actions button {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e7fbff;
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.waffle-stage {
+  display: grid;
+  gap: 18px;
+  justify-items: center;
+  padding: 24px;
+  border-radius: var(--r-xl);
+  border: 1px solid rgba(46, 196, 182, 0.22);
+  background:
+    radial-gradient(ellipse at top, rgba(46, 196, 182, 0.14), transparent 60%),
+    linear-gradient(180deg, rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.5));
+  color: #f4fdff;
+}
+
+.waffle-meta {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.waffle-meta strong { color: #f4fdff; font-weight: 800; }
+
+.waffle-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 56px);
+  grid-template-rows: repeat(5, 56px);
+  gap: 6px;
+}
+
+.waffle-cell {
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 900;
+  color: #f4fdff;
+  cursor: pointer;
+  transition: transform 0.12s, background 0.2s, color 0.2s, box-shadow 0.18s;
+}
+.waffle-cell.empty {
+  background: transparent;
+  cursor: default;
+  pointer-events: none;
+}
+.waffle-cell.tile:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+.waffle-cell.tile.selected {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.8);
+  transform: scale(1.05);
+}
+.waffle-cell.tile.state-correct {
+  background: #2ec4b6;
+  color: #fff;
+  cursor: default;
+}
+.waffle-cell.tile.state-present-line {
+  background: #fbbf24;
+  color: #422006;
+}
+.waffle-cell.tile.state-absent {
+  background: rgba(71, 85, 105, 0.85);
+  color: rgba(255, 255, 255, 0.78);
+}
+.waffle-cell.tile.corner.state-correct {
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.55);
+}
+
+/* Result */
+.waffle-result {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  border-radius: var(--r-md);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 14px;
+  width: 100%;
+  max-width: 480px;
+}
+.waffle-result.win { background: rgba(46, 196, 182, 0.18); border-color: rgba(46, 196, 182, 0.5); }
+.waffle-result.lose { background: rgba(244, 63, 94, 0.18); border-color: rgba(244, 63, 94, 0.5); }
+.waffle-result strong { color: #f4fdff; }
+.waffle-result button {
+  margin-left: auto;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: var(--r-full);
+  background: linear-gradient(135deg, var(--reef-teal), var(--reef-emerald));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.waffle-result button + button { background: transparent; border: 1px solid rgba(255, 255, 255, 0.2); margin-left: 6px; }
+
+@media (max-width: 580px) {
+  .waffle-hero { flex-direction: column; }
+  .waffle-grid { grid-template-columns: repeat(5, 44px); grid-template-rows: repeat(5, 44px); gap: 4px; }
+  .waffle-cell { font-size: 22px; }
+}

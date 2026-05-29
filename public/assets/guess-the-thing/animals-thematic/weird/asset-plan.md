@@ -1,0 +1,370 @@
+# Weird Animals Asset Plan
+
+Target: first 36 PNG-backed quiz assets for `animals-thematic/weird`.
+
+## Naming Rule
+
+- Use lowercase kebab-case.
+- Use stable common names.
+- Default file pattern: `common-name.png`
+
+## Initial 36
+
+- [x] `axolotl.png`
+- [x] `blobfish.png`
+- [x] `aye-aye.png`
+- [x] `naked-mole-rat.png`
+- [x] `star-nosed-mole.png`
+- [x] `shoebill-stork.png`
+- [x] `saiga-antelope.png`
+- [x] `proboscis-monkey.png`
+- [x] `platypus.png`
+- [x] `mata-mata-turtle.png`
+- [x] `goblin-shark.png`
+- [x] `tarsier.png`
+- [x] `okapi.png`
+- [x] `pink-fairy-armadillo.png`
+- [x] `sea-pig.png`
+- [x] `babirusa.png`
+- [x] `leafy-seadragon.png`
+- [x] `potoo.png`
+- [x] `thorny-devil.png`
+- [x] `dumbo-octopus.png`
+- [x] `cassowary.png`
+- [x] `japanese-spider-crab.png`
+- [x] `gharial.png`
+- [x] `mantis-shrimp.png`
+- [x] `sarcastic-fringehead.png`
+- [x] `tufted-deer.png`
+- [x] `echidna.png`
+- [x] `pangolin.png`
+- [x] `glaucus-atlanticus.png`
+- [x] `lamprey.png`
+- [x] `horseshoe-crab.png`
+- [x] `ocean-sunfish.png`
+- [x] `anglerfish.png`
+- [x] `vampire-squid.png`
+- [x] `gulper-eel.png`
+- [x] `giant-isopod.png`
+- [x] `narwhal.png`
+- [x] `binturong.png`
+- [x] `quokka.png`
+- [x] `glass-frog.png`
+- [x] `red-lipped-batfish.png`
+- [x] `olm.png`
+- [x] `gerenuk.png`
+- [x] `fossa.png`
+- [x] `hammer-headed-bat.png`
+- [x] `long-eared-jerboa.png`
+- [x] `sea-angel.png`
+- [x] `barreleye-fish.png`
+- [x] `satanic-leaf-tailed-gecko.png`
+- [x] `ribbon-eel.png`
+- [x] `yeti-crab.png`
+- [x] `markhor.png`
+- [x] `frilled-lizard.png`
+- [x] `sunda-colugo.png`
+- [x] `leaf-sheep-sea-slug.png`
+- [x] `malayan-tapir.png`
+- [x] `black-dragonfish.png`
+- [x] `armadillo-girdled-lizard.png`
+- [x] `elephant-shrew.png`
+- [x] `leaf-katydid.png`
+- [x] `orchid-mantis.png`
+- [x] `blue-parrotfish.png`
+- [x] `saola.png`
+- [x] `pygmy-seahorse.png`
+- [x] `tardigrade.png`
+- [x] `hoatzin.png`
+- [x] `coelacanth.png`
+- [x] `ribbon-worm.png`
+- [x] `hagfish.png`
+- [x] `pacu.png`
+- [x] `glass-squid.png`
+- [x] `greater-sage-grouse.png`
+- [x] `kakapo.png`
+- [x] `mexican-mole-lizard.png`
+- [x] `oarfish.png`
+- [x] `blue-footed-booby.png`
+- [x] `harpy-eagle.png`
+- [x] `slow-loris.png`
+- [x] `spiny-orb-weaver.png`
+- [x] `sea-pen.png`
+- [x] `numbat.png`
+- [x] `marine-iguana.png`
+- [x] `red-handfish.png`
+- [x] `decorator-crab.png`
+- [x] `dik-dik.png`
+- [x] `mola-mola-larva.png`
+- [x] `blanket-octopus.png`
+- [x] `jacana.png`
+- [x] `solenodon.png`
+- [x] `purple-frog.png`
+- [x] `surinam-toad.png`
+- [x] `hammerhead-worm.png`
+- [x] `lowland-streaked-tenrec.png`
+- [x] `bilby.png`
+- [x] `zorilla.png`
+- [x] `warty-frogfish.png`
+- [x] `goblin-spider.png`
+- [x] `pink-sea-through-fantasia.png`
+- [x] `christmas-tree-worm.png`
+- [x] `velella.png`
+- [x] `mary-river-turtle.png`
+- [x] `peacock-spider.png`
+- [x] `sea-bunny.png`
+- [x] `honduran-white-bat.png`
+- [x] `mangalitsa-pig.png`
+- [x] `glasswing-butterfly.png`
+- [x] `spotted-handfish.png`
+- [x] `tasselled-wobbegong.png`
+- [x] `hairy-frog.png`
+- [x] `giraffe-weevil.png`
+- [x] `sea-spider.png`
+- [x] `malagasy-leaf-nosed-snake.png`
+- [x] `golden-snub-nosed-monkey.png`
+- [x] `aardwolf.png`
+- [x] `secretarybird.png`
+- [x] `mantis-lacewing.png`
+- [x] `siphonophore.png`
+- [x] `panda-ant.png`
+- [x] `amazonian-royal-flycatcher.png`
+- [x] `ili-pika.png`
+- [x] `mimic-octopus.png`
+- [x] `leafy-sea-slug.png`
+- [x] `hooded-seal.png`
+- [x] `kiwa-hirsuta.png`
+- [x] `marabou-stork.png`
+- [x] `nautilus.png`
+- [x] `tube-nosed-bat.png`
+- [x] `magnapinna-squid.png`
+- [x] `bobbit-worm.png`
+- [x] `fried-egg-jellyfish.png`
+- [x] `musk-deer.png`
+- [x] `helmeted-hornbill.png`
+- [x] `alligator-snapping-turtle.png`
+- [x] `tuatara.png`
+- [x] `kagu.png`
+- [x] `owlfly.png`
+- [x] `pink-river-dolphin.png`
+- [x] `long-wattled-umbrellabird.png`
+- [x] `turtle-frog.png`
+- [x] `spiny-bush-viper.png`
+- [x] `nudibranch.png`
+- [x] `bearded-vulture.png`
+- [x] `giant-anteater.png`
+- [x] `weedy-seadragon.png`
+- [x] `japanese-flying-squid.png`
+- [x] `ribbon-seal.png`
+- [x] `southern-tamandua.png`
+- [x] `saddleback-caterpillar.png`
+- [x] `sun-bear.png`
+- [x] `basking-shark.png`
+- [x] `duck-billed-frog.png`
+- [x] `giant-siphonophore.png`
+- [x] `pangolin-gecko.png`
+- [x] `lumpsucker.png`
+- [x] `vogelkop-superb-bird-of-paradise.png`
+- [x] `greater-glider.png`
+- [x] `giant-pangolin.png`
+- [x] `scaly-foot-snail.png`
+- [x] `proboscis-worm.png`
+- [x] `raccoon-dog.png`
+- [x] `vaquita.png`
+- [x] `yapok.png`
+- [x] `giant-oarfish.png`
+- [x] `net-winged-beetle.png`
+- [x] `pyrenean-desman.png`
+- [x] `stargazer-fish.png`
+- [x] `rosy-maple-moth.png`
+- [x] `aardvark.png`
+- [x] `tripod-fish.png`
+- [x] `thorn-bug.png`
+- [x] `flying-gurnard.png`
+- [x] `sloanes-viperfish.png`
+- [x] `basket-star.png`
+- [x] `pelican-spider.png`
+- [x] `giant-tube-worm.png`
+- [x] `shingleback-skink.png`
+- [x] `japanese-giant-salamander.png`
+- [x] `flamboyant-cuttlefish.png`
+- [x] `coconut-crab.png`
+- [x] `oilbird.png`
+- [x] `tentacled-snake.png`
+- [x] `comb-jelly.png`
+- [x] `velvet-worm.png`
+- [x] `wheel-bug.png`
+- [x] `archerfish.png`
+- [x] `caecilian.png`
+- [x] `spiny-flower-mantis.png`
+- [x] `mole-cricket.png`
+- [x] `pig-nosed-turtle.png`
+- [x] `planthopper-nymph.png`
+- [x] `hercules-beetle.png`
+- [x] `sea-apple.png`
+- [x] `leaf-insect.png`
+- [x] `thresher-shark.png`
+- [x] `leafy-filefish.png`
+- [x] `mantis-shrimp-larva.png`
+- [x] `glass-octopus.png`
+- [x] `puss-moth-caterpillar.png`
+- [x] `stalk-eyed-fly.png`
+- [x] `sea-sapphire.png`
+- [x] `magnificent-frigatebird.png`
+- [x] `turtle-ant.png`
+- [x] `spotted-ratfish.png`
+- [x] `lace-bug.png`
+- [x] `gliding-lizard.png`
+- [x] `diving-bell-spider.png`
+- [x] `hairy-legged-vampire-bat.png`
+- [x] `crowned-jellyfish.png`
+- [x] `wrinkle-faced-bat.png`
+- [x] `acorn-weevil.png`
+- [x] `portuguese-man-o-war.png`
+- [x] `ogre-faced-spider.png`
+- [x] `hummingbird-hawk-moth.png`
+- [x] `marbled-polecat.png`
+- [x] `sea-butterfly.png`
+- [x] `harlequin-shrimp.png`
+- [x] `surgeonfish-larva.png`
+- [x] `lanternfly.png`
+- [x] `screaming-hairy-armadillo.png`
+- [x] `sea-walnut.png`
+- [x] `wallaces-flying-frog.png`
+- [x] `pistol-shrimp.png`
+- [x] `vinegaroon.png`
+- [x] `ghost-pipefish.png`
+- [x] `blue-dragon-sea-slug.png`
+- [x] `jerboa.png`
+- [x] `shoebill.png`
+- [x] `praya-dubia.png`
+- [x] `leaf-tailed-gecko.png`
+- [x] `giant-water-bug.png`
+- [x] `colugo.png`
+- [x] `whitemargin-stargazer.png`
+- [x] `mirror-spider.png`
+- [x] `wunderpus-octopus.png`
+
+## Notes
+
+- Chosen for highly unusual morphology, bizarre features, and high "guess the thing" fun factor.
+- Includes mammals, birds, reptiles, amphibians, fish, and deep-sea invertebrates.
+- Emphasize the weirdest features in the illustrations (e.g., the star nose, the huge eyes, the crazy bill).
+
+## Source Notes
+
+- `weird-animals-grid-v2.png`: generated 2x2 source sheet; quadrants are aye-aye, kinkajou, deep-sea anglerfish, and blobfish.
+- `aye-aye-v2.png`, `kinkajou-v2.png`, `deep-sea-anglerfish-v2.png`, `blobfish-v2.png`: cropped from `weird-animals-grid-v2.png` and currently wired into the app.
+- `weird-animals-grid-v3.png`: generated 2x2 source sheet; quadrants are babirusa, leafy seadragon, potoo, and thorny devil.
+- `babirusa-v2.png`, `leafy-seadragon-v2.png`, `potoo-v2.png`, `thorny-devil-v2.png`: cropped from `weird-animals-grid-v3.png` and currently wired into the app.
+- `weird-animals-grid-v4.png`: generated 2x2 source sheet; quadrants are southern cassowary, Japanese spider crab, gharial, and mantis shrimp.
+- `cassowary-v2.png`, `japanese-spider-crab-v2.png`, `gharial-v2.png`, `mantis-shrimp-v2.png`: cropped from `weird-animals-grid-v4.png` and currently wired into the app.
+- `dumbo-octopus.png`, `sarcastic-fringehead.png`, `tufted-deer.png`, `echidna.png`: existing checked assets now wired directly into the app.
+- `pangolin.png`, `glaucus-atlanticus.png`, `lamprey.png`, `horseshoe-crab.png`: existing checked assets now wired directly into the app.
+- `giant-isopod.png`, `gulper-eel.png`, `ocean-sunfish.png`, `vampire-squid.png`: existing checked assets now wired directly into the app.
+- `anglerfish.png` and `cassowary.png` remain available but intentionally unwired for now because `deep-sea-anglerfish-v2.png` and `cassowary-v2.png` already cover those playable concepts.
+- `weird-animals-grid-v5.png`: generated 2x2 source sheet; quadrants are narwhal, binturong, quokka, and glass frog.
+- `narwhal.png`, `binturong.png`, `quokka.png`, `glass-frog.png`: cropped from `weird-animals-grid-v5.png` and currently wired into the app.
+- `weird-animals-grid-v6.png`: generated 2x2 source sheet; quadrants are red-lipped batfish, olm, gerenuk, and fossa.
+- `red-lipped-batfish.png`, `olm.png`, `gerenuk.png`, `fossa.png`: cropped from `weird-animals-grid-v6.png` and currently wired into the app.
+- `weird-animals-grid-v7.png`: generated 2x2 source sheet; quadrants are hammer-headed bat, long-eared jerboa, sea angel, and barreleye fish.
+- `hammer-headed-bat.png`, `long-eared-jerboa.png`, `sea-angel.png`, `barreleye-fish.png`: cropped from `weird-animals-grid-v7.png` and currently wired into the app.
+- `weird-animals-grid-v8.png`: generated 2x2 source sheet; quadrants are satanic leaf-tailed gecko, ribbon eel, yeti crab, and markhor.
+- `satanic-leaf-tailed-gecko.png`, `ribbon-eel.png`, `yeti-crab.png`, `markhor.png`: cropped from `weird-animals-grid-v8.png` and currently wired into the app.
+- `weird-animals-grid-v9.png`: generated 2x2 source sheet; quadrants are frilled lizard, Sunda colugo, leaf sheep sea slug, and Malayan tapir.
+- `frilled-lizard.png`, `sunda-colugo.png`, `leaf-sheep-sea-slug.png`, `malayan-tapir.png`: cropped from `weird-animals-grid-v9.png` and currently wired into the app.
+- `weird-animals-grid-v10.png`: generated 2x2 source sheet; quadrants are black dragonfish, armadillo girdled lizard, elephant shrew, and leaf katydid.
+- `black-dragonfish.png`, `armadillo-girdled-lizard.png`, `elephant-shrew.png`, `leaf-katydid.png`: cropped from `weird-animals-grid-v10.png` and currently wired into the app.
+- `weird-animals-grid-v11.png`: generated 2x2 source sheet; quadrants are orchid mantis, blue parrotfish, saola, and pygmy seahorse.
+- `orchid-mantis.png`, `blue-parrotfish.png`, `saola.png`, `pygmy-seahorse.png`: cropped from `weird-animals-grid-v11.png` and currently wired into the app.
+- `weird-animals-grid-v12.png`: generated 2x2 source sheet; quadrants are tardigrade, hoatzin, coelacanth, and ribbon worm.
+- `tardigrade.png`, `hoatzin.png`, `coelacanth.png`, `ribbon-worm.png`: cropped from `weird-animals-grid-v12.png` and currently wired into the app.
+- `weird-animals-grid-v13.png`: generated 2x2 source sheet; quadrants are hagfish, pacu, glass squid, and greater sage-grouse.
+- `hagfish.png`, `pacu.png`, `glass-squid.png`, `greater-sage-grouse.png`: cropped from `weird-animals-grid-v13.png` and currently wired into the app.
+- `weird-animals-grid-v14.png`: generated 2x2 source sheet; quadrants are kakapo, Mexican mole lizard, oarfish, and blue-footed booby.
+- `kakapo.png`, `mexican-mole-lizard.png`, `oarfish.png`, `blue-footed-booby.png`: cropped from `weird-animals-grid-v14.png` and currently wired into the app.
+- `weird-animals-grid-v15.png`: generated 2x2 source sheet; quadrants are harpy eagle, slow loris, spiny orb-weaver, and sea pen.
+- `harpy-eagle.png`, `slow-loris.png`, `spiny-orb-weaver.png`, `sea-pen.png`: cropped from `weird-animals-grid-v15.png` and currently wired into the app.
+- `weird-animals-grid-v16.png`: generated 2x2 source sheet; quadrants are numbat, marine iguana, red handfish, and decorator crab.
+- `numbat.png`, `marine-iguana.png`, `red-handfish.png`, `decorator-crab.png`: cropped from `weird-animals-grid-v16.png` and currently wired into the app.
+- `weird-animals-grid-v17.png`: generated 2x2 source sheet; quadrants are dik-dik, mola mola larva, blanket octopus, and jacana.
+- `dik-dik.png`, `mola-mola-larva.png`, `blanket-octopus.png`, `jacana.png`: cropped from `weird-animals-grid-v17.png` and currently wired into the app.
+- `weird-animals-grid-v18.png`: generated 2x2 source sheet; quadrants are solenodon, purple frog, Surinam toad, and hammerhead worm.
+- `solenodon.png`, `purple-frog.png`, `surinam-toad.png`, `hammerhead-worm.png`: cropped from `weird-animals-grid-v18.png` and currently wired into the app.
+- `weird-animals-grid-v19.png`: generated 2x2 source sheet; quadrants are lowland streaked tenrec, bilby, zorilla, and warty frogfish.
+- `lowland-streaked-tenrec.png`, `bilby.png`, `zorilla.png`, `warty-frogfish.png`: cropped from `weird-animals-grid-v19.png` and currently wired into the app.
+- `weird-animals-grid-v20.png`: generated 2x2 source sheet; quadrants are goblin spider, pink sea-through fantasia, Christmas tree worm, and Velella.
+- `goblin-spider.png`, `pink-sea-through-fantasia.png`, `christmas-tree-worm.png`, `velella.png`: cropped from `weird-animals-grid-v20.png` and currently wired into the app.
+- `weird-animals-grid-v21.png`: generated 2x2 source sheet; quadrants are Mary River turtle, peacock spider, sea bunny, and Honduran white bat.
+- `mary-river-turtle.png`, `peacock-spider.png`, `sea-bunny.png`, `honduran-white-bat.png`: cropped from `weird-animals-grid-v21.png` and currently wired into the app.
+- `weird-animals-grid-v22.png`: generated 2x2 source sheet; quadrants are Mangalitsa pig, glasswing butterfly, spotted handfish, and tasselled wobbegong.
+- `mangalitsa-pig.png`, `glasswing-butterfly.png`, `spotted-handfish.png`, `tasselled-wobbegong.png`: cropped from `weird-animals-grid-v22.png` and currently wired into the app.
+- `weird-animals-grid-v23.png`: generated 2x2 source sheet; quadrants are hairy frog, giraffe weevil, sea spider, and Malagasy leaf-nosed snake.
+- `hairy-frog.png`, `giraffe-weevil.png`, `sea-spider.png`, `malagasy-leaf-nosed-snake.png`: cropped from `weird-animals-grid-v23.png` and currently wired into the app.
+- `weird-animals-grid-v24.png`: generated 2x2 source sheet; quadrants are golden snub-nosed monkey, aardwolf, secretarybird, and mantis lacewing.
+- `golden-snub-nosed-monkey.png`, `aardwolf.png`, `secretarybird.png`, `mantis-lacewing.png`: cropped from `weird-animals-grid-v24.png` and currently wired into the app.
+- `weird-animals-grid-v25.png`: generated 2x2 source sheet; quadrants are siphonophore, panda ant, Amazonian royal flycatcher, and Ili pika.
+- `siphonophore.png`, `panda-ant.png`, `amazonian-royal-flycatcher.png`, `ili-pika.png`: cropped from `weird-animals-grid-v25.png` and currently wired into the app.
+- `weird-animals-grid-v26.png`: generated 2x2 source sheet; quadrants are mimic octopus, leafy sea slug, hooded seal, and Kiwa hirsuta.
+- `mimic-octopus.png`, `leafy-sea-slug.png`, `hooded-seal.png`, `kiwa-hirsuta.png`: cropped from `weird-animals-grid-v26.png` and currently wired into the app.
+- `weird-animals-grid-v27.png`: generated 2x2 source sheet; quadrants are marabou stork, nautilus, tube-nosed bat, and Magnapinna squid.
+- `marabou-stork.png`, `nautilus.png`, `tube-nosed-bat.png`, `magnapinna-squid.png`: cropped from `weird-animals-grid-v27.png` and currently wired into the app.
+- `weird-animals-grid-v28.png`: generated 2x2 source sheet; quadrants are Bobbit worm, fried egg jellyfish, musk deer, and helmeted hornbill.
+- `bobbit-worm.png`, `fried-egg-jellyfish.png`, `musk-deer.png`, `helmeted-hornbill.png`: cropped from `weird-animals-grid-v28.png` and currently wired into the app.
+- `weird-animals-grid-v29.png`: generated 2x2 source sheet; quadrants are alligator snapping turtle, tuatara, kagu, and owlfly.
+- `alligator-snapping-turtle.png`, `tuatara.png`, `kagu.png`, `owlfly.png`: cropped from `weird-animals-grid-v29.png` and currently wired into the app.
+- `weird-animals-grid-v30.png`: generated 2x2 source sheet; quadrants are pink river dolphin, long-wattled umbrellabird, turtle frog, and spiny bush viper.
+- `pink-river-dolphin.png`, `long-wattled-umbrellabird.png`, `turtle-frog.png`, `spiny-bush-viper.png`: cropped from `weird-animals-grid-v30.png` and currently wired into the app.
+- `weird-animals-grid-v31.png`: generated 2x2 source sheet; quadrants are nudibranch, bearded vulture, giant anteater, and weedy seadragon.
+- `nudibranch.png`, `bearded-vulture.png`, `giant-anteater.png`, `weedy-seadragon.png`: cropped from `weird-animals-grid-v31.png` and currently wired into the app.
+- `weird-animals-grid-v32.png`: generated 2x2 source sheet; quadrants are Japanese flying squid, ribbon seal, southern tamandua, and saddleback caterpillar.
+- `japanese-flying-squid.png`, `ribbon-seal.png`, `southern-tamandua.png`, `saddleback-caterpillar.png`: cropped from `weird-animals-grid-v32.png` and currently wired into the app.
+- `weird-animals-grid-v33.png`: generated 2x2 source sheet; quadrants are sun bear, basking shark, duck-billed frog, and giant siphonophore.
+- `sun-bear.png`, `basking-shark.png`, `duck-billed-frog.png`, `giant-siphonophore.png`: cropped from `weird-animals-grid-v33.png` and currently wired into the app.
+- `weird-animals-grid-v34.png`: generated 2x2 source sheet; quadrants are pangolin gecko, lumpsucker, Vogelkop superb bird-of-paradise, and greater glider.
+- `pangolin-gecko.png`, `lumpsucker.png`, `vogelkop-superb-bird-of-paradise.png`, `greater-glider.png`: cropped from `weird-animals-grid-v34.png` and currently wired into the app.
+- `weird-animals-grid-v35.png`: generated 2x2 source sheet; quadrants are giant pangolin, scaly-foot snail, proboscis worm, and raccoon dog.
+- `giant-pangolin.png`, `scaly-foot-snail.png`, `proboscis-worm.png`, `raccoon-dog.png`: cropped from `weird-animals-grid-v35.png` and currently wired into the app.
+- `weird-animals-grid-v36.png`: generated 2x2 source sheet; quadrants are vaquita, yapok, giant oarfish, and net-winged beetle.
+- `vaquita.png`, `yapok.png`, `giant-oarfish.png`, `net-winged-beetle.png`: cropped from `weird-animals-grid-v36.png` and currently wired into the app.
+- `weird-animals-grid-v37.png`: generated 2x2 source sheet; quadrants are Pyrenean desman, stargazer fish, rosy maple moth, and aardvark.
+- `pyrenean-desman.png`, `stargazer-fish.png`, `rosy-maple-moth.png`, `aardvark.png`: cropped from `weird-animals-grid-v37.png` and currently wired into the app.
+- `weird-animals-grid-v38.png`: generated 2x2 source sheet; quadrants are tripod fish, thorn bug, flying gurnard, and Sloane's viperfish.
+- `tripod-fish.png`, `thorn-bug.png`, `flying-gurnard.png`, `sloanes-viperfish.png`: cropped from `weird-animals-grid-v38.png` and currently wired into the app.
+- `weird-animals-grid-v39.png`: generated 2x2 source sheet; quadrants are basket star, pelican spider, giant tube worm, and shingleback skink.
+- `basket-star.png`, `pelican-spider.png`, `giant-tube-worm.png`, `shingleback-skink.png`: cropped from `weird-animals-grid-v39.png` and currently wired into the app.
+- `weird-animals-grid-v40.png`: generated 2x2 source sheet; quadrants are Japanese giant salamander, flamboyant cuttlefish, coconut crab, and oilbird.
+- `japanese-giant-salamander.png`, `flamboyant-cuttlefish.png`, `coconut-crab.png`, `oilbird.png`: cropped from `weird-animals-grid-v40.png` and currently wired into the app.
+- `weird-animals-grid-v41.png`: generated 2x2 source sheet; quadrants are tentacled snake, comb jelly, velvet worm, and wheel bug.
+- `tentacled-snake.png`, `comb-jelly.png`, `velvet-worm.png`, `wheel-bug.png`: cropped from `weird-animals-grid-v41.png` and currently wired into the app.
+- `weird-animals-grid-v42.png`: generated 2x2 source sheet; quadrants are archerfish, caecilian, spiny flower mantis, and mole cricket.
+- `archerfish.png`, `caecilian.png`, `spiny-flower-mantis.png`, `mole-cricket.png`: cropped from `weird-animals-grid-v42.png` and currently wired into the app.
+- `weird-animals-grid-v43.png`: generated 2x2 source sheet; quadrants are pig-nosed turtle, planthopper nymph, Hercules beetle, and sea apple.
+- `pig-nosed-turtle.png`, `planthopper-nymph.png`, `hercules-beetle.png`, `sea-apple.png`: cropped from `weird-animals-grid-v43.png` and currently wired into the app.
+- `weird-animals-grid-v44.png`: generated 2x2 source sheet; quadrants are leaf insect, thresher shark, leafy filefish, and mantis shrimp larva.
+- `leaf-insect.png`, `thresher-shark.png`, `leafy-filefish.png`, `mantis-shrimp-larva.png`: cropped from `weird-animals-grid-v44.png` and currently wired into the app.
+- `weird-animals-grid-v45.png`: generated 2x2 source sheet; quadrants are glass octopus, puss moth caterpillar, stalk-eyed fly, and sea sapphire.
+- `glass-octopus.png`, `puss-moth-caterpillar.png`, `stalk-eyed-fly.png`, `sea-sapphire.png`: cropped from `weird-animals-grid-v45.png` and currently wired into the app.
+- `weird-animals-grid-v46.png`: generated 2x2 source sheet; quadrants are magnificent frigatebird, turtle ant, spotted ratfish, and lace bug.
+- `magnificent-frigatebird.png`, `turtle-ant.png`, `spotted-ratfish.png`, `lace-bug.png`: cropped from `weird-animals-grid-v46.png` and currently wired into the app.
+- `weird-animals-grid-v47.png`: generated 2x2 source sheet; quadrants are gliding lizard, diving bell spider, hairy-legged vampire bat, and crowned jellyfish.
+- `gliding-lizard.png`, `diving-bell-spider.png`, `hairy-legged-vampire-bat.png`, `crowned-jellyfish.png`: cropped from `weird-animals-grid-v47.png` and currently wired into the app.
+- `weird-animals-grid-v48.png`: generated 2x2 source sheet; quadrants are wrinkle-faced bat, acorn weevil, Portuguese man o' war, and ogre-faced spider.
+- `wrinkle-faced-bat.png`, `acorn-weevil.png`, `portuguese-man-o-war.png`, `ogre-faced-spider.png`: cropped from `weird-animals-grid-v48.png` and currently wired into the app.
+- `weird-animals-grid-v49.png`: generated 2x2 source sheet; quadrants are hummingbird hawk-moth, marbled polecat, sea butterfly, and harlequin shrimp.
+- `hummingbird-hawk-moth.png`, `marbled-polecat.png`, `sea-butterfly.png`, `harlequin-shrimp.png`: cropped from `weird-animals-grid-v49.png` and currently wired into the app.
+- `weird-animals-grid-v50.png`: generated 2x2 source sheet; quadrants are surgeonfish larva, lanternfly, screaming hairy armadillo, and sea walnut.
+- `surgeonfish-larva.png`, `lanternfly.png`, `screaming-hairy-armadillo.png`, `sea-walnut.png`: cropped from `weird-animals-grid-v50.png` and currently wired into the app.
+- `weird-animals-grid-v51.png`: generated 2x2 source sheet; quadrants are Wallace's flying frog, pistol shrimp, vinegaroon, and ghost pipefish.
+- `wallaces-flying-frog.png`, `pistol-shrimp.png`, `vinegaroon.png`, `ghost-pipefish.png`: cropped from `weird-animals-grid-v51.png` and currently wired into the app.
+- `weird-animals-grid-v52.png`: generated 2x2 source sheet; quadrants are blue dragon sea slug, jerboa, hoatzin, and naked mole-rat. Only blue dragon sea slug and jerboa are wired because hoatzin and naked mole-rat were already present in the course.
+- `blue-dragon-sea-slug.png`, `jerboa.png`: cropped from `weird-animals-grid-v52.png` and currently wired into the app.
+- `weird-animals-grid-v53.png`: generated 2x2 source sheet; quadrants are shoebill, Praya dubia, leaf-tailed gecko, and giant water bug.
+- `shoebill.png`, `praya-dubia.png`, `leaf-tailed-gecko.png`, `giant-water-bug.png`: cropped from `weird-animals-grid-v53.png` and currently wired into the app.
+- `weird-animals-grid-v54.png`: generated 2x2 source sheet; quadrants are colugo, whitemargin stargazer, mirror spider, and wunderpus octopus.
+- `colugo.png`, `whitemargin-stargazer.png`, `mirror-spider.png`, `wunderpus-octopus.png`: cropped from `weird-animals-grid-v54.png` and currently wired into the app.
+- `aye-aye.png`: Wikimedia image surfaced through https://en.wikipedia.org/wiki/Aye-aye
+- `kinkajou.png`: Wikimedia image surfaced through https://en.wikipedia.org/wiki/Kinkajou
+- `deep-sea-anglerfish.png`: Wikimedia image surfaced through https://en.wikipedia.org/wiki/Humpback_anglerfish
+- `blobfish.png`: Wikimedia image surfaced through https://en.wikipedia.org/wiki/Psychrolutes_marcidus
+- Other checked images in this folder are generated local quiz assets for the FLOe prototype.

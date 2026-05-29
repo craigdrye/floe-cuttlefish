@@ -1,0 +1,2866 @@
+{
+  "source": "NYSED 2021 Grades 3-8 Mathematics Released Questions",
+  "questionCount": 143,
+  "items": [
+    {
+      "source_id": "nysed-math-2021::grade-3::1",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.B.5 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::2",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.NBT.A.1 Numbers and Operations in Base Ten",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::3",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.OA.A.4 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::4",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.NF.A.3b Number and Operations\u2014 Fractions Number and Operations\u2014 Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::5",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 5,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.OA.A.1 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::6",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 6,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.MD.C.5b Measurement and Data Measurement and Data",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::7",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.OA.D.8 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::8",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 8,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.NBT.A.3 Numbers and Operations in Base Ten",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::9",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.OA.B.6 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::10",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.OA.A.2 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::11",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.G.A.2 Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::12",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 12,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.MD.A.1 Measurement and Data Measurement and Data",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::13",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.NF.A.2b Number and Operations\u2014 Fractions Number and Operations\u2014 Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::14",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.3.OA.A.3 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::15",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.3.OA.D.9 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::16",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.NF.A.2a Number and Operations\u2014 Fractions Number and Operations\u2014 Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::17",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 17,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.3.MD.A.2 Measurement and Data Measurement and Data",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::18",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 18,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.OA.B.5 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-3::19",
+      "collection_id": "nysed-math-2021::grade-3",
+      "grade": 3,
+      "exam_title": "NYSED 2021 Grade 3 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf",
+      "question_number": 19,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.3.NF.A.3d Number and Operations\u2014 Fractions Number and Operations\u2014 Fractions This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding. THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2021 Mathematics Tests Map to the Standards Grade 3 Released Questions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "naplanYear3",
+        "col-class-3-math"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 3 Math",
+        "math",
+        "grade-3",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::1",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.NF.B.4c Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::2",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.OA.B.4 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::3",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.4.NF.A.2 Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::4",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.OA.A.2 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::5",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 5,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.4.G.A.1 Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::6",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 6,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.OA.A.3 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::7",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.NF.A.1 Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::8",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 8,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.MD.C.7 Measurement and Data",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::9",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.NF.A.2 Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::10",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.4.NF.B.3c Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::11",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.NBT.B.5 Number and Operations in Base Ten Number and Operations in Base Ten",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::12",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 12,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.NBT.B.6 Number and Operations in Base Ten Number and Operations in Base Ten",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::13",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.OA.A.3 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::14",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.OA.A.1 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::15",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.NBT.A.3 Number and Operations in Base Ten Number and Operations in Base Ten",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::16",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.MD.A.3 Measurement and Data",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::17",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 17,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.MD.B.4 Measurement and Data",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::18",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 18,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.NBT.A.1 Number and Operations in Base Ten Number and Operations in Base Ten",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::19",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 19,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.OA.C.5 Operations and Algebraic Thinking Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::20",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 20,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.NF.B.3a Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::21",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.G.A.3 Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::22",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 22,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.4.MD.C.5a Measurement and Data",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-4::23",
+      "collection_id": "nysed-math-2021::grade-4",
+      "grade": 4,
+      "exam_title": "NYSED 2021 Grade 4 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.4.OA.A.1 Operations and Algebraic Thinking Operations and Algebraic Thinking This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding. THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2021 Mathematics Tests Map to the Standards Grade 4 Released Questions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-4-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 4 Math",
+        "math",
+        "grade-4",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::1",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.MD.C.5b Measurement and Data Measurement and Data",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::2",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.4.NF.C.5 Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::3",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.5.NF.B.6 Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::4",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.NF.C.6 Number and Operations in Base Ten Number and Operations in Base Ten",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::5",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 5,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.5.NBT.A.3b Number and Operations in Base Ten Number and Operations in Base Ten",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::6",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 6,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.OA.A.2 Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::7",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.MD.C.4 Measurement and Data Measurement and Data",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::8",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 8,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.5.OA.A.1 Operations and Algebraic Thinking",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::9",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.MD.A.1 Measurement and Data Measurement and Data",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::10",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NF.B.4b Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::11",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.4.MD.A.2 Measurement and Data Measurement and Data",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::12",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 12,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.5.NBT.B.6 Number and Operations in Base Ten Number and Operations in Base Ten",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::13",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.MD.C.5a Measurement and Data Measurement and Data",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::14",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.5.NBT.A.4 Number and Operations in Base Ten Number and Operations in Base Ten",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::15",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NF.B.7c Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::16",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.5.NF.A.2 Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::17",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 17,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.5.NF.B.6 Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::18",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 18,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.NF.B.5a Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::19",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 19,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.5.NF.B.7a Number and Operations - Fractions Number and Operations - Fractions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::20",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 20,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.5.NBT.B.7 Number and Operations in Base Ten Number and Operations in Base Ten",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::21",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.5.NBT.B.6 Number and Operations in Base Ten Number and Operations in Base Ten",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::22",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 22,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.MD.B.2 Measurement and Data Measurement and Data",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-5::23",
+      "collection_id": "nysed-math-2021::grade-5",
+      "grade": 5,
+      "exam_title": "NYSED 2021 Grade 5 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.5.MD.C.5c Measurement and Data Measurement and Data This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding. THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2021 Mathematics Tests Map to the Standards Grade 5 Released Questions",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-5-math",
+        "naplanYear5"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 5 Math",
+        "math",
+        "grade-5",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::1",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.EE.B.5 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::2",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.RP.A.3c Ratios and Proportional Relationships Ratios and Proportional Relationships",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::3",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.NS.B.4 The Number System The Number System",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::4",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.EE.C.9 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::5",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 5,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.EE.A.2c Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::6",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 6,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.RP.A.1 Ratios and Proportional Relationships Ratios and Proportional Relationships",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::7",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.G.A.3 Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::8",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 8,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.EE.B.7 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::9",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.NS.C.6c The Number System The Number System",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::10",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.G.A.2 Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::11",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.RP.A.3c Ratios and Proportional Relationships Ratios and Proportional Relationships",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::12",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 12,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.EE.C.9 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::13",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.EE.A.1 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::14",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.RP.A.3b Ratios and Proportional Relationships Ratios and Proportional Relationships",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::15",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.EE.B.5 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::16",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.G.A.1 Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::17",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 17,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.NS.C.6 The Number System The Number System",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::18",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 18,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.6.RP.A.3b Ratios and Proportional Relationships Ratios and Proportional Relationships",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::19",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 19,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.EE.A.3 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::20",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 20,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.5.G.A.2 The Number System The Number System",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::21",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.6.G.A.4 Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::22",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 22,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.EE.A.4 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::23",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.6.RP.A.3a Ratios and Proportional Relationships Ratios and Proportional Relationships",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-6::24",
+      "collection_id": "nysed-math-2021::grade-6",
+      "grade": 6,
+      "exam_title": "NYSED 2021 Grade 6 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf",
+      "question_number": 24,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.6.EE.B.6 Expressions and Equations Expressions and Equations This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding. THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2021 Mathematics Tests Map to the Standards Grade 6 Released Questions",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-6-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 6 Math",
+        "math",
+        "grade-6",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::1",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.EE.B.4a Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::2",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.NS.A.2d The Number System The Number System",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::3",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.RP.A.3 Ratios and Proportional Relationships Ratios and Proportional Relationships",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::4",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.G.B.4 Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::5",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 5,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.RP.A.1 Ratios and Proportional Relationships Ratios and Proportional Relationships",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::6",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 6,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.NS.A.3 The Number System The Number System",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::7",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.RP.A.2b Ratios and Proportional Relationships Ratios and Proportional Relationships",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::8",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 8,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.NS.A.1a The Number System The Number System",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::9",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.EE.B.3 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::10",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.RP.A.3 Ratios and Proportional Relationships Ratios and Proportional Relationships",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::11",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.EE.A.2 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::12",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 12,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.NS.A.3 The Number System The Number System",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::13",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.RP.A.1 Ratios and Proportional Relationships Ratios and Proportional Relationships",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::14",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.RP.A.3 Ratios and Proportional Relationships Ratios and Proportional Relationships",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::15",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.RP.A.2a Ratios and Proportional Relationships Ratios and Proportional Relationships",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::16",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.EE.A.1 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::17",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 17,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.SP.C.7b Statistics and Probability",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::18",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 18,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.7.EE.B.3 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::19",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 19,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.SP.A.2 Statistics and Probability",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::20",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 20,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.G.A.1 Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::21",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.NS.A.1c The Number System The Number System",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::22",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 22,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.EE.B.4b Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::23",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.SP.A.1 Statistics and Probability",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::24",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 24,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.7.SP.C.6 Statistics and Probability",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::25",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 25,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.NS.A.1a The Number System The Number System",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::26",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 26,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.7.EE.B.3 Expressions and Equations Expressions and Equations This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding. THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2021 Mathematics Tests Map to the Standards Grade 7 Released Questions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::42",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 42,
+      "prompt_text": "customers said they would shop for children\u2019s shoes",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-7::78",
+      "collection_id": "nysed-math-2021::grade-7",
+      "grade": 7,
+      "exam_title": "NYSED 2021 Grade 7 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf",
+      "question_number": 78,
+      "prompt_text": "customers said they would not shop for children\u2019s shoes Mario has an average of 440 customers per month. Based on the survey results, which value is the best estimate of the number of customers that would shop for children\u2019s shoes during an average month? A 120 B 154 C 220 D 286 Danielle constructs a scale model of a building with a rectangular base. Her model is",
+      "answer_key_excerpt": "",
+      "candidate_track_ids": [
+        "col-class-7-math",
+        "naplanYear7"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 7 Math",
+        "math",
+        "grade-7",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::1",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 1,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.F.A.3 Functions Functions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::2",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 2,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.EE.A.4 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::3",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 3,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.F.B.4 Functions Functions",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::4",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 4,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.G.C.9 Geometry Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::5",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 5,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.EE.B.5 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::6",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 6,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.F.A.3 Functions Functions",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::7",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 7,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.EE.B.6 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::8",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 8,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.EE.A.4 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::9",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 9,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.G.A.2 Geometry Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::10",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 10,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.EE.C.8b Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::11",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 11,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.EE.C.8b Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::12",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 12,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.F.B.4 Functions Functions",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::13",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 13,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.G.A.4 Geometry Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::14",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 14,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.7.G.B.6 Geometry Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::15",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 15,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.EE.B.6 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::16",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 16,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.EE.C.7a Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::17",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 17,
+      "prompt_text": "Multiple Choice B 1 CCSS.Math.Content.8.SP.A.3 Statistics and Probability",
+      "answer_key_excerpt": "Multiple Choice; correct=B; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::18",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 18,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.SP.A.2 Statistics and Probability",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::19",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 19,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.EE.B.5 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::20",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 20,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.G.C.9 Geometry Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::21",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 21,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.EE.A.3 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::22",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 22,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.EE.A.1 Expressions and Equations Expressions and Equations",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::23",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 23,
+      "prompt_text": "Multiple Choice A 1 CCSS.Math.Content.8.F.A.2 Functions Functions",
+      "answer_key_excerpt": "Multiple Choice; correct=A; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::24",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 24,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.SP.A.1 Statistics and Probability",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::25",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 25,
+      "prompt_text": "Multiple Choice C 1 CCSS.Math.Content.8.G.A.5 Geometry Geometry",
+      "answer_key_excerpt": "Multiple Choice; correct=C; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    },
+    {
+      "source_id": "nysed-math-2021::grade-8::26",
+      "collection_id": "nysed-math-2021::grade-8",
+      "grade": 8,
+      "exam_title": "NYSED 2021 Grade 8 Math",
+      "source_url": "https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf",
+      "question_number": 26,
+      "prompt_text": "Multiple Choice D 1 CCSS.Math.Content.8.F.B.5 Functions Functions This item map is intended to identify the primary analytic skills necessary to successfully answer each question. However, some questions measure proficiencies described in multiple standards, including a balanced combination of procedural and conceptual understanding. THE STATE EDUCATION DEPARTMENT THE UNIVERSITY OF THE STATE OF NEW YORK / ALBANY, NY 12234 2021 Mathematics Tests Map to the Standards Grade 8 Released Questions",
+      "answer_key_excerpt": "Multiple Choice; correct=D; points=1",
+      "candidate_track_ids": [
+        "col-class-8-math",
+        "high_algebra_1"
+      ],
+      "topic_tags": [
+        "NYSED 2021 Grade 8 Math",
+        "math",
+        "grade-8",
+        "nysed-2021"
+      ]
+    }
+  ]
+}

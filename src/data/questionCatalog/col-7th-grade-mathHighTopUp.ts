@@ -1,0 +1,623 @@
+import { makeQuestionBank } from './base'
+import type { Question } from './types'
+
+const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
+const source = 'Floe col-7th-grade-math high top-up'
+
+export const colSeventhGradeMathHighTopUpQuestions: Question[] = makeQuestionBank('Mathematics', [
+  // Chapter 1: Rational Number Foundations
+  {
+    id: 7501000, chapter: 'Rational Number Foundations', title: 'Ordering negatives',
+    prompt: 'Which of these numbers is the greatest: -8, -3, -12, -5?',
+    correct: '-3',
+    wrong: [
+      miss('-12', 'That is the most negative, so it is the least, not the greatest.', 'On a number line, greater means farther to the right.'),
+      miss('-8', 'That is less than -3, since -8 sits farther left.', 'Compare positions on the number line, not the digit sizes.'),
+      miss('-5', 'That is less than -3; -5 is to the left of -3.', 'The number closest to zero from below is the greatest here.'),
+    ],
+    lesson: 'For negative numbers, the one closest to zero is the greatest. On a number line, "greater" always means farther to the right, so -3 beats -5, -8, and -12 even though 12 is the biggest digit.',
+    source, generated: true,
+  },
+  {
+    id: 7501001, chapter: 'Rational Number Foundations', title: 'Absolute value as distance',
+    prompt: 'What is the value of |-9|?',
+    correct: '9',
+    wrong: [
+      miss('-9', 'Absolute value is a distance, so it is never negative.', 'Distance from zero cannot be below zero.'),
+      miss('0', 'That would mean -9 is at zero, but it is 9 units away.', 'Count the units from 0 to -9.'),
+      miss('18', 'That doubles the distance instead of measuring it once.', 'Absolute value is the single distance from zero.'),
+    ],
+    lesson: 'Absolute value measures distance from zero on the number line, so it is always zero or positive. The point -9 is 9 units from zero, so |-9| = 9.',
+    source, generated: true,
+  },
+  {
+    id: 7501002, chapter: 'Rational Number Foundations', title: 'Opposite of a number',
+    prompt: 'What is the opposite (additive inverse) of -4.5?',
+    correct: '4.5',
+    wrong: [
+      miss('-4.5', 'That is the original number, not its opposite.', 'Opposites are on the other side of zero.'),
+      miss('0', 'That is what -4.5 plus its opposite equals, not the opposite itself.', 'The opposite is the number you add to reach 0.'),
+      miss('4.5 and -4.5', 'A number has exactly one opposite, not two.', 'Find the single value the same distance from zero.'),
+    ],
+    lesson: 'The opposite (additive inverse) of a number is the value the same distance from zero on the other side. The opposite of -4.5 is 4.5, and -4.5 + 4.5 = 0.',
+    source, generated: true,
+  },
+  {
+    id: 7501003, chapter: 'Rational Number Foundations', title: 'Comparing fraction and decimal',
+    prompt: 'Which symbol makes this true: 3/5 ___ 0.65?',
+    correct: '<',
+    wrong: [
+      miss('>', 'That claims 3/5 is larger, but 3/5 = 0.60, which is smaller than 0.65.', 'Convert the fraction to a decimal before comparing.'),
+      miss('=', 'They are not equal; 3/5 = 0.60, not 0.65.', 'Write both in the same form first.'),
+      miss('cannot compare', 'You can always compare a fraction and a decimal by converting one.', 'Turn 3/5 into a decimal.'),
+    ],
+    lesson: 'To compare a fraction and a decimal, write both in the same form. Since 3/5 = 0.60 and 0.60 < 0.65, the correct symbol is <.',
+    source, generated: true,
+  },
+  {
+    id: 7501004, chapter: 'Rational Number Foundations', title: 'Signed numbers in context',
+    prompt: 'A diver is at -18 m (18 m below sea level) and rises 7 m. What is the diver\'s new elevation?',
+    correct: '-11 m',
+    wrong: [
+      miss('-25 m', 'Rising should bring the diver closer to the surface, not deeper.', 'Rising adds a positive 7 to -18.'),
+      miss('11 m', 'That puts the diver above sea level, but the diver is still underwater.', 'Start below zero and move up only 7.'),
+      miss('-7 m', 'That ignores the starting depth of -18 m.', 'Add the rise to the starting elevation.'),
+    ],
+    lesson: 'Rising means adding a positive value to elevation. Starting at -18 m and rising 7 m gives -18 + 7 = -11 m, still below sea level.',
+    source, generated: true,
+  },
+
+  // Chapter 2: Operations With Rational Numbers
+  {
+    id: 7501005, chapter: 'Operations With Rational Numbers', title: 'Adding integers',
+    prompt: 'What is -7 + 12?',
+    correct: '5',
+    wrong: [
+      miss('-5', 'The number with the larger magnitude (12) is positive, so the sum is positive.', 'Subtract magnitudes, then keep the sign of the bigger one.'),
+      miss('-19', 'That adds the magnitudes and keeps a negative sign.', 'The signs differ, so subtract instead of adding.'),
+      miss('19', 'That adds the magnitudes; opposite signs should subtract.', 'Find the difference 12 - 7.'),
+    ],
+    lesson: 'When signs differ, subtract the smaller magnitude from the larger and keep the sign of the larger. Here 12 - 7 = 5 and 12 is positive, so -7 + 12 = 5.',
+    source, generated: true,
+  },
+  {
+    id: 7501006, chapter: 'Operations With Rational Numbers', title: 'Subtracting a negative',
+    prompt: 'What is 4 - (-9)?',
+    correct: '13',
+    wrong: [
+      miss('-5', 'Subtracting a negative adds, it does not subtract.', 'Subtracting -9 is the same as adding 9.'),
+      miss('-13', 'The result should be positive, since you are adding 9 to 4.', 'Rewrite as 4 + 9.'),
+      miss('5', 'That treats - (-9) as -9 instead of +9.', 'Two minus signs make a plus.'),
+    ],
+    lesson: 'Subtracting a negative is the same as adding its opposite: 4 - (-9) = 4 + 9 = 13.',
+    source, generated: true,
+  },
+  {
+    id: 7501007, chapter: 'Operations With Rational Numbers', title: 'Multiplying signed numbers',
+    prompt: 'What is (-6) × (-5)?',
+    correct: '30',
+    wrong: [
+      miss('-30', 'A negative times a negative gives a positive product.', 'Two negative factors make a positive.'),
+      miss('-11', 'That adds the numbers instead of multiplying them.', 'The operation is multiplication.'),
+      miss('11', 'That adds magnitudes; you should multiply.', 'Multiply 6 by 5.'),
+    ],
+    lesson: 'A negative times a negative is positive. So (-6) × (-5) = +30.',
+    source, generated: true,
+  },
+  {
+    id: 7501008, chapter: 'Operations With Rational Numbers', title: 'Dividing fractions',
+    prompt: 'What is (3/4) ÷ (1/2)?',
+    correct: '3/2',
+    wrong: [
+      miss('3/8', 'That multiplied the fractions instead of dividing.', 'To divide, multiply by the reciprocal of 1/2.'),
+      miss('2/3', 'That used the reciprocal of the wrong fraction.', 'Flip the divisor (1/2), then multiply.'),
+      miss('1/2', 'That just copied the divisor.', 'Compute 3/4 times 2/1.'),
+    ],
+    lesson: 'Dividing by a fraction means multiplying by its reciprocal: (3/4) ÷ (1/2) = (3/4) × (2/1) = 6/4 = 3/2.',
+    source, generated: true,
+  },
+  {
+    id: 7501009, chapter: 'Operations With Rational Numbers', title: 'Fraction to repeating decimal',
+    prompt: 'Written as a decimal, 2/3 equals which of these?',
+    correct: '0.666... (a repeating decimal)',
+    wrong: [
+      miss('0.66 exactly', 'The 6 repeats forever; it does not stop at two places.', 'Try the long division 2 ÷ 3.'),
+      miss('0.23', 'That just writes the numerator and denominator as digits.', 'Divide 2 by 3.'),
+      miss('1.5', 'That is 3/2, the reciprocal, not 2/3.', 'Divide the top by the bottom: 2 ÷ 3.'),
+    ],
+    lesson: 'Dividing 2 by 3 gives 0.6666..., a repeating decimal often written 0.6 with a bar over the 6. Fractions whose denominators have factors other than 2 and 5 give repeating decimals.',
+    source, generated: true,
+  },
+  {
+    id: 7501010, chapter: 'Operations With Rational Numbers', title: 'Multiplying decimals in context',
+    prompt: 'A stock fell $1.25 each day for 4 days. What was the total change?',
+    correct: '-$5.00',
+    wrong: [
+      miss('-$1.25', 'That is one day\'s change, not four days\' total.', 'Multiply the daily change by 4 days.'),
+      miss('$5.00', 'A fall is negative, so the total change should be negative.', 'A drop each day means a negative total.'),
+      miss('-$3.75', 'That counts only 3 days instead of 4.', 'There are 4 equal drops.'),
+    ],
+    lesson: 'A consistent daily drop of $1.25 over 4 days is 4 × (-1.25) = -5.00. The negative sign shows the value went down.',
+    source, generated: true,
+  },
+  {
+    id: 7501011, chapter: 'Operations With Rational Numbers', title: 'Order of operations with signs',
+    prompt: 'Evaluate: -3 + 2 × (-4).',
+    correct: '-11',
+    wrong: [
+      miss('-4', 'That added before multiplying, breaking order of operations.', 'Multiply 2 × (-4) first, then add.'),
+      miss('4', 'That dropped the sign on the product.', '2 times -4 is -8.'),
+      miss('5', 'That added all three numbers without multiplying.', 'Do multiplication before addition.'),
+    ],
+    lesson: 'Multiplication comes before addition. First 2 × (-4) = -8, then -3 + (-8) = -11.',
+    source, generated: true,
+  },
+
+  // Chapter 3: Ratios, Rates, and Proportional Relationships
+  {
+    id: 7501012, chapter: 'Ratios, Rates, and Proportional Relationships', title: 'Unit rate',
+    prompt: 'A car travels 150 miles on 5 gallons of gas. What is the unit rate in miles per gallon?',
+    correct: '30 miles per gallon',
+    wrong: [
+      miss('30 gallons per mile', 'That inverts the rate; gallons per mile would be a tiny number.', 'Miles per gallon means miles divided by gallons.'),
+      miss('145 miles per gallon', 'That subtracts instead of dividing.', 'A rate is a quotient, not a difference.'),
+      miss('750 miles per gallon', 'That multiplies miles by gallons.', 'Divide 150 by 5.'),
+    ],
+    lesson: 'A unit rate compares an amount to one unit. Miles per gallon is miles divided by gallons: 150 ÷ 5 = 30 miles per gallon.',
+    source, generated: true,
+  },
+  {
+    id: 7501013, chapter: 'Ratios, Rates, and Proportional Relationships', title: 'Complex-fraction rate',
+    prompt: 'A snail moves 1/2 foot in 1/4 hour. What is its speed in feet per hour?',
+    correct: '2 feet per hour',
+    wrong: [
+      miss('1/8 foot per hour', 'That multiplied the two fractions instead of dividing.', 'Speed is distance divided by time.'),
+      miss('1/2 foot per hour', 'That ignored the time of 1/4 hour.', 'Divide the distance by the time.'),
+      miss('4 feet per hour', 'That used the time as the distance.', 'Distance is 1/2, time is 1/4: divide them.'),
+    ],
+    lesson: 'A rate is distance divided by time: (1/2) ÷ (1/4) = (1/2) × 4 = 2 feet per hour.',
+    source, generated: true,
+  },
+  {
+    id: 7501014, chapter: 'Ratios, Rates, and Proportional Relationships', title: 'Constant of proportionality',
+    prompt: 'A table shows that 3 books cost $24 and 5 books cost $40. What is the constant of proportionality (cost per book)?',
+    correct: '8',
+    wrong: [
+      miss('3', 'That is the number of books in the first row, not the cost per book.', 'Divide cost by number of books.'),
+      miss('24', 'That is the cost of 3 books, not the cost of one.', 'Find the cost of a single book.'),
+      miss('72', 'That multiplied 24 by 3 instead of dividing.', 'The constant is cost divided by books.'),
+    ],
+    lesson: 'In y = kx, the constant of proportionality k is the unit rate. Here cost ÷ books = 24 ÷ 3 = 8 and 40 ÷ 5 = 8, so k = 8 dollars per book.',
+    source, generated: true,
+  },
+  {
+    id: 7501015, chapter: 'Ratios, Rates, and Proportional Relationships', title: 'Identifying a proportional graph',
+    prompt: 'Which feature must a graph have to represent a proportional relationship?',
+    correct: 'It is a straight line that passes through the origin (0, 0).',
+    wrong: [
+      miss('It is a straight line with a positive y-intercept.', 'A nonzero y-intercept means it is linear but not proportional.', 'Proportional graphs must pass through (0, 0).'),
+      miss('It is any curve that increases.', 'Proportional relationships are straight lines, not general curves.', 'Look for a line through the origin.'),
+      miss('It is a horizontal line.', 'A horizontal line has the same y for every x, not a constant ratio.', 'The line must rise through the origin.'),
+    ],
+    lesson: 'A proportional relationship graphs as a straight line through the origin, because when x = 0 the quantity y = kx is also 0. A line that misses the origin is linear but not proportional.',
+    source, generated: true,
+  },
+  {
+    id: 7501016, chapter: 'Ratios, Rates, and Proportional Relationships', title: 'Writing y = kx',
+    prompt: 'A worker earns $15 per hour. Which equation relates earnings y to hours x?',
+    correct: 'y = 15x',
+    wrong: [
+      miss('y = x + 15', 'That adds a flat $15, but the pay is $15 for each hour.', 'Per hour means multiply, not add.'),
+      miss('y = 15/x', 'That divides by hours, giving less pay for more hours.', 'More hours should mean more pay.'),
+      miss('x = 15y', 'That swaps the variables, making hours depend on earnings times 15.', 'Earnings (y) equal rate times hours.'),
+    ],
+    lesson: 'A constant hourly rate is a proportional relationship of the form y = kx. With k = 15, earnings y = 15x where x is hours worked.',
+    source, generated: true,
+  },
+  {
+    id: 7501017, chapter: 'Ratios, Rates, and Proportional Relationships', title: 'Solving a proportion',
+    prompt: 'If 4 pens cost $6, how much do 10 pens cost at the same rate?',
+    correct: '$15',
+    wrong: [
+      miss('$12', 'That doubled the cost of 4 pens but you need 10, not 8.', 'Scale by 10/4, not by 2.'),
+      miss('$10', 'That ignored the price and just used the count of pens.', 'Use the unit price of $1.50 per pen.'),
+      miss('$24', 'That multiplied $6 by 4 instead of scaling to 10 pens.', 'First find the cost of one pen.'),
+    ],
+    lesson: 'Find the unit price: $6 ÷ 4 = $1.50 per pen. Then 10 pens cost 10 × $1.50 = $15. Equivalently, set up 4/6 = 10/x.',
+    source, generated: true,
+  },
+
+  // Chapter 4: Percent and Proportion Problem Solving
+  {
+    id: 7501018, chapter: 'Percent and Proportion Problem Solving', title: 'Percent of a number',
+    prompt: 'What is 15% of 80?',
+    correct: '12',
+    wrong: [
+      miss('15', 'That copies the percent instead of taking 15% of 80.', 'Multiply 0.15 by 80.'),
+      miss('1.2', 'That used 1.5% (0.015) instead of 15% (0.15).', 'Move the decimal two places for percent.'),
+      miss('120', 'That multiplied 80 by 1.5 instead of 0.15.', '15% is 0.15, less than 1.'),
+    ],
+    lesson: 'A percent is a rate per 100. 15% = 0.15, so 15% of 80 = 0.15 × 80 = 12.',
+    source, generated: true,
+  },
+  {
+    id: 7501019, chapter: 'Percent and Proportion Problem Solving', title: 'Discount final price',
+    prompt: 'A $60 jacket is 30% off. What is the sale price?',
+    correct: '$42',
+    wrong: [
+      miss('$18', 'That is the discount amount, not the price you pay.', 'Subtract the discount from $60.'),
+      miss('$30', 'That treats 30% as $30 off.', '30% of $60 is $18, not $30.'),
+      miss('$57', 'That subtracted only $3, using 5% instead of 30%.', 'Find 30% of 60 first.'),
+    ],
+    lesson: 'The discount is 30% of $60 = $18. The sale price is $60 - $18 = $42. You can also multiply $60 by (1 - 0.30) = 0.70.',
+    source, generated: true,
+  },
+  {
+    id: 7501020, chapter: 'Percent and Proportion Problem Solving', title: 'Price after tax',
+    prompt: 'A meal costs $40 before an 8% sales tax. What is the total with tax?',
+    correct: '$43.20',
+    wrong: [
+      miss('$48', 'That used 20% tax instead of 8%.', '8% of $40 is $3.20, not $8.'),
+      miss('$3.20', 'That is only the tax, not the total bill.', 'Add the tax to the $40.'),
+      miss('$40.08', 'That added 8 cents instead of 8 percent.', '8% means 0.08 times 40.'),
+    ],
+    lesson: 'Tax is 8% of $40 = $3.20. Total = $40 + $3.20 = $43.20. You can also multiply by 1.08.',
+    source, generated: true,
+  },
+  {
+    id: 7501021, chapter: 'Percent and Proportion Problem Solving', title: 'Percent increase',
+    prompt: 'A plant grew from 20 cm to 25 cm. What is the percent increase?',
+    correct: '25%',
+    wrong: [
+      miss('5%', 'That reports the raw change (5 cm) as a percent, not relative to the start.', 'Divide the change by the original height.'),
+      miss('20%', 'That divided the change by the new height (25) instead of the original.', 'Percent change uses the original amount as the base.'),
+      miss('125%', 'That found the new height as a percent of the old, not the increase.', 'Subtract 100% to get the increase.'),
+    ],
+    lesson: 'Percent increase = (change ÷ original) × 100. The change is 25 - 20 = 5 cm, so (5 ÷ 20) × 100 = 25%.',
+    source, generated: true,
+  },
+  {
+    id: 7501022, chapter: 'Percent and Proportion Problem Solving', title: 'Simple interest',
+    prompt: 'Using I = Prt, find the simple interest on $500 at 4% per year for 3 years.',
+    correct: '$60',
+    wrong: [
+      miss('$20', 'That found one year of interest, not three.', 'Multiply by the time of 3 years.'),
+      miss('$600', 'That treated 4% as a multiplier of 1.2 over the whole amount.', 'Interest is P times r times t, all multiplied.'),
+      miss('$540', 'That is the total balance, not just the interest.', 'The question asks for interest only.'),
+    ],
+    lesson: 'Simple interest I = Prt. Here P = 500, r = 0.04, t = 3, so I = 500 × 0.04 × 3 = $60.',
+    source, generated: true,
+  },
+  {
+    id: 7501023, chapter: 'Percent and Proportion Problem Solving', title: 'Tip amount',
+    prompt: 'A diner leaves an 18% tip on a $50 bill. How much is the tip?',
+    correct: '$9',
+    wrong: [
+      miss('$18', 'That treats 18% as $18, ignoring the bill size.', '18% of $50 is less than $18.'),
+      miss('$59', 'That is the bill plus tip, but the question asks for the tip only.', 'Find just 18% of $50.'),
+      miss('$0.90', 'That used 1.8% (0.018) instead of 18% (0.18).', 'Move the decimal two places for percent.'),
+    ],
+    lesson: 'A tip is a percent of the bill. 18% of $50 = 0.18 × 50 = $9.',
+    source, generated: true,
+  },
+  {
+    id: 7501024, chapter: 'Percent and Proportion Problem Solving', title: 'Scale drawing length',
+    prompt: 'A map uses a scale of 1 cm = 5 km. Two towns are 7 cm apart on the map. How far apart are they in reality?',
+    correct: '35 km',
+    wrong: [
+      miss('12 km', 'That added 7 and 5 instead of scaling.', 'Each centimeter stands for 5 km.'),
+      miss('1.4 km', 'That divided 7 by 5 instead of multiplying.', 'Larger map distance means larger real distance.'),
+      miss('7 km', 'That ignored the scale of 5 km per centimeter.', 'Multiply 7 cm by 5 km per cm.'),
+    ],
+    lesson: 'With a scale of 1 cm = 5 km, multiply the map distance by 5: 7 × 5 = 35 km.',
+    source, generated: true,
+  },
+
+  // Chapter 5: Expressions, Equations, and Inequalities
+  {
+    id: 7501025, chapter: 'Expressions, Equations, and Inequalities', title: 'Combining like terms',
+    prompt: 'Simplify: 5x + 3 - 2x + 7.',
+    correct: '3x + 10',
+    wrong: [
+      miss('7x + 10', 'That added the x terms instead of subtracting 2x.', '5x - 2x = 3x, not 7x.'),
+      miss('3x + 4', 'That subtracted the constants instead of adding 3 and 7.', '3 + 7 = 10.'),
+      miss('13x', 'That combined variable terms and constants together.', 'Only like terms can be combined.'),
+    ],
+    lesson: 'Combine like terms separately: 5x - 2x = 3x and 3 + 7 = 10, giving 3x + 10. Variable terms and constants cannot be merged.',
+    source, generated: true,
+  },
+  {
+    id: 7501026, chapter: 'Expressions, Equations, and Inequalities', title: 'Distributive property',
+    prompt: 'Expand: 3(x + 4).',
+    correct: '3x + 12',
+    wrong: [
+      miss('3x + 4', 'That distributed to only the first term inside the parentheses.', 'Multiply 3 by both x and 4.'),
+      miss('x + 12', 'That distributed only to the 4, not to the x.', 'The 3 multiplies every term.'),
+      miss('3x + 7', 'That added 3 and 4 instead of multiplying.', 'Distribute by multiplying, not adding.'),
+    ],
+    lesson: 'The distributive property multiplies the outside factor by each term inside: 3(x + 4) = 3·x + 3·4 = 3x + 12.',
+    source, generated: true,
+  },
+  {
+    id: 7501027, chapter: 'Expressions, Equations, and Inequalities', title: 'Factoring a linear expression',
+    prompt: 'Factor out the greatest common factor: 6x + 9.',
+    correct: '3(2x + 3)',
+    wrong: [
+      miss('3(2x + 9)', 'That failed to divide the 9 by 3.', 'Divide both terms by the common factor 3.'),
+      miss('6(x + 9)', 'That factored only the first term and 6 does not divide 9 evenly.', 'Find a factor common to both terms.'),
+      miss('3(6x + 9)', 'That pulled out 3 but did not divide the terms inside.', 'After factoring, the inside terms shrink.'),
+    ],
+    lesson: 'The greatest common factor of 6x and 9 is 3. Dividing each term by 3 gives 6x + 9 = 3(2x + 3).',
+    source, generated: true,
+  },
+  {
+    id: 7501028, chapter: 'Expressions, Equations, and Inequalities', title: 'Two-step equation',
+    prompt: 'Solve for x: 3x - 5 = 16.',
+    correct: '7',
+    wrong: [
+      miss('11', 'That stopped after adding 5 but never divided by 3.', 'After adding 5, divide both sides by 3.'),
+      miss('3.67', 'That divided 16 by 3 before undoing the -5.', 'Undo subtraction before division.'),
+      miss('63', 'That multiplied 21 by 3 instead of dividing.', 'Divide, do not multiply, to undo 3x.'),
+    ],
+    lesson: 'Undo operations in reverse order. Add 5: 3x = 21. Then divide by 3: x = 7. Check: 3(7) - 5 = 16.',
+    source, generated: true,
+  },
+  {
+    id: 7501029, chapter: 'Expressions, Equations, and Inequalities', title: 'Equation with parentheses',
+    prompt: 'Solve for x: 2(x + 3) = 14.',
+    correct: '4',
+    wrong: [
+      miss('5.5', 'That distributed only to x, getting 2x + 3 = 14.', 'Distribute the 2 to both x and 3.'),
+      miss('8', 'That divided 14 by 2 first but forgot to subtract the 3.', 'After dividing, subtract 3: 7 - 3.'),
+      miss('2', 'That subtracted 3 before dividing, mishandling the parentheses.', 'Either distribute first or divide both sides by 2 first.'),
+    ],
+    lesson: 'Divide both sides by 2: x + 3 = 7. Then subtract 3: x = 4. Or distribute first: 2x + 6 = 14, so 2x = 8 and x = 4.',
+    source, generated: true,
+  },
+  {
+    id: 7501030, chapter: 'Expressions, Equations, and Inequalities', title: 'Solving an inequality',
+    prompt: 'Solve for x: 4x + 1 > 17.',
+    correct: 'x > 4',
+    wrong: [
+      miss('x > 4.5', 'That divided 18 by 4 without first subtracting 1.', 'Subtract 1 before dividing.'),
+      miss('x < 4', 'The inequality sign should not flip when dividing by a positive 4.', 'Only flip when dividing by a negative.'),
+      miss('x > 16', 'That divided only the right side, leaving 4x as x.', 'Divide both sides by 4.'),
+    ],
+    lesson: 'Subtract 1: 4x > 16. Divide by 4 (positive, so the sign stays): x > 4.',
+    source, generated: true,
+  },
+  {
+    id: 7501031, chapter: 'Expressions, Equations, and Inequalities', title: 'Inequality with a negative',
+    prompt: 'Solve for x: -2x > 10.',
+    correct: 'x < -5',
+    wrong: [
+      miss('x > -5', 'Dividing by a negative number reverses the inequality sign.', 'Flip the sign when dividing by -2.'),
+      miss('x > 5', 'That dropped the negative sign and skipped the flip.', 'Divide by -2 and reverse the symbol.'),
+      miss('x < 5', 'That kept the wrong sign for the right side.', '10 ÷ (-2) = -5, and the symbol flips.'),
+    ],
+    lesson: 'When you divide or multiply both sides of an inequality by a negative number, reverse the symbol. -2x > 10 gives x < -5.',
+    source, generated: true,
+  },
+  {
+    id: 7501032, chapter: 'Expressions, Equations, and Inequalities', title: 'Writing an equation from a story',
+    prompt: 'A taxi charges a $3 base fee plus $2 per mile. Which equation gives the cost y for x miles?',
+    correct: 'y = 2x + 3',
+    wrong: [
+      miss('y = 3x + 2', 'That swapped the per-mile rate and the base fee.', 'The $2 is per mile; the $3 is fixed.'),
+      miss('y = 2x', 'That left out the $3 base fee.', 'Add the fixed starting charge.'),
+      miss('y = 5x', 'That added the base fee and rate together as one rate.', 'Keep the fixed fee separate from the per-mile rate.'),
+    ],
+    lesson: 'A fixed fee plus a per-unit rate gives y = (rate)x + (fee). Here y = 2x + 3, where 2 is dollars per mile and 3 is the base fee.',
+    source, generated: true,
+  },
+
+  // Chapter 6: Geometry, Scale, and Measurement
+  {
+    id: 7501033, chapter: 'Geometry, Scale, and Measurement', title: 'Supplementary angles',
+    prompt: 'Two angles are supplementary. One measures 130°. What is the other?',
+    correct: '50°',
+    wrong: [
+      miss('230°', 'That added to 360° instead of 180°.', 'Supplementary angles sum to 180°.'),
+      miss('40°', 'That used 90° (complementary) instead of 180°.', 'Supplementary, not complementary, means 180°.'),
+      miss('130°', 'That assumed the two angles are equal.', 'Only their sum of 180° is given.'),
+    ],
+    lesson: 'Supplementary angles add to 180°. The other angle is 180° - 130° = 50°.',
+    source, generated: true,
+  },
+  {
+    id: 7501034, chapter: 'Geometry, Scale, and Measurement', title: 'Complementary angles',
+    prompt: 'Two angles are complementary. One measures 35°. What is the other?',
+    correct: '55°',
+    wrong: [
+      miss('145°', 'That used 180° (supplementary) instead of 90°.', 'Complementary angles sum to 90°.'),
+      miss('35°', 'That assumed equal angles.', 'Only the sum of 90° is given.'),
+      miss('65°', 'That subtracted from 100° instead of 90°.', 'Use 90° - 35°.'),
+    ],
+    lesson: 'Complementary angles add to 90°. The other angle is 90° - 35° = 55°.',
+    source, generated: true,
+  },
+  {
+    id: 7501035, chapter: 'Geometry, Scale, and Measurement', title: 'Vertical angles',
+    prompt: 'Two lines cross. One of the four angles is 72°. What is the measure of the angle vertical (opposite) to it?',
+    correct: '72°',
+    wrong: [
+      miss('108°', 'That gives the adjacent (supplementary) angle, not the vertical one.', 'Vertical angles are equal, not supplementary.'),
+      miss('18°', 'That used 90° - 72°, treating them as complementary.', 'Vertical angles share the same measure.'),
+      miss('36°', 'That halved the angle for no reason.', 'Opposite angles at an intersection are congruent.'),
+    ],
+    lesson: 'When two lines intersect, vertical (opposite) angles are equal. So the angle opposite a 72° angle is also 72°.',
+    source, generated: true,
+  },
+  {
+    id: 7501036, chapter: 'Geometry, Scale, and Measurement', title: 'Circumference of a circle',
+    prompt: 'A circle has radius 5 cm. Using C = 2πr, what is its circumference? (Use π ≈ 3.14.)',
+    correct: '31.4 cm',
+    wrong: [
+      miss('78.5 cm', 'That computed area (πr²) instead of circumference.', 'Circumference is the distance around, 2πr.'),
+      miss('15.7 cm', 'That used the radius once (πr) instead of 2πr.', 'Multiply by 2 as well as π and r.'),
+      miss('62.8 cm', 'That used the diameter (10) as the radius in 2πr.', 'The radius is 5, not 10.'),
+    ],
+    lesson: 'Circumference C = 2πr = 2 × 3.14 × 5 = 31.4 cm. Do not confuse it with area, A = πr².',
+    source, generated: true,
+  },
+  {
+    id: 7501037, chapter: 'Geometry, Scale, and Measurement', title: 'Area of a circle',
+    prompt: 'A circle has radius 4 m. Using A = πr², what is its area? (Use π ≈ 3.14.)',
+    correct: '50.24 m²',
+    wrong: [
+      miss('25.12 m²', 'That used 2πr (circumference) instead of πr².', 'Area uses the radius squared.'),
+      miss('12.56 m²', 'That used πr without squaring the radius.', 'Square the 4 first: 4² = 16.'),
+      miss('100.48 m²', 'That used a diameter of 8 instead of the radius 4.', 'Square the radius, not the diameter.'),
+    ],
+    lesson: 'Area A = πr² = 3.14 × 4² = 3.14 × 16 = 50.24 m². The radius is squared, and the result is in square units.',
+    source, generated: true,
+  },
+  {
+    id: 7501038, chapter: 'Geometry, Scale, and Measurement', title: 'Area of a triangle',
+    prompt: 'A triangle has base 10 cm and height 6 cm. What is its area?',
+    correct: '30 cm²',
+    wrong: [
+      miss('60 cm²', 'That forgot the 1/2 in the triangle area formula.', 'Area of a triangle is half base times height.'),
+      miss('16 cm²', 'That added the base and height instead of multiplying.', 'Use (1/2) × base × height.'),
+      miss('30 cm', 'The area should be in square units, not linear units.', 'Multiplying two lengths gives cm².'),
+    ],
+    lesson: 'Triangle area = (1/2) × base × height = (1/2) × 10 × 6 = 30 cm². Area is always in square units.',
+    source, generated: true,
+  },
+  {
+    id: 7501039, chapter: 'Geometry, Scale, and Measurement', title: 'Volume of a rectangular prism',
+    prompt: 'A box is 4 cm long, 3 cm wide, and 5 cm tall. What is its volume?',
+    correct: '60 cm³',
+    wrong: [
+      miss('12 cm³', 'That multiplied only length and width, ignoring height.', 'Multiply all three dimensions.'),
+      miss('60 cm²', 'Volume uses three dimensions, so the units are cubic.', 'Three lengths multiplied give cm³.'),
+      miss('94 cm³', 'That looks like a surface-area calculation, not volume.', 'Volume is length × width × height.'),
+    ],
+    lesson: 'Volume of a rectangular prism is length × width × height = 4 × 3 × 5 = 60 cm³. Volume uses cubic units.',
+    source, generated: true,
+  },
+  {
+    id: 7501040, chapter: 'Geometry, Scale, and Measurement', title: 'Cross-section of a prism',
+    prompt: 'If you slice a rectangular prism straight across, parallel to one of its rectangular faces, what shape is the cross-section?',
+    correct: 'A rectangle',
+    wrong: [
+      miss('A triangle', 'A parallel slice of a rectangular prism is not triangular.', 'Picture cutting a stick of butter straight across.'),
+      miss('A circle', 'Circles come from slicing cylinders or spheres, not rectangular prisms.', 'A prism has flat rectangular faces.'),
+      miss('A cube', 'A cross-section is a flat 2D shape, not a solid.', 'Slicing produces a 2D figure.'),
+    ],
+    lesson: 'Slicing a rectangular prism parallel to a face produces a 2D cross-section that matches that face: a rectangle. Cross-sections are always flat shapes.',
+    source, generated: true,
+  },
+
+  // Chapter 7: Statistics, Sampling, and Probability
+  {
+    id: 7501041, chapter: 'Statistics, Sampling, and Probability', title: 'Random vs. biased sample',
+    prompt: 'To learn what all students think of the cafeteria, which sampling method is most likely to be fair (unbiased)?',
+    correct: 'Randomly select students from the whole school',
+    wrong: [
+      miss('Survey only students in the lunch line', 'That overrepresents students who eat cafeteria food.', 'A fair sample represents the whole population.'),
+      miss('Survey only the student council', 'That small, special group is not representative of all students.', 'Avoid groups chosen for a special reason.'),
+      miss('Survey your own friends', 'Friends share your views and are a convenience sample.', 'Convenience samples are biased.'),
+    ],
+    lesson: 'A fair (unbiased) sample is chosen randomly so every member of the population has an equal chance. Convenience samples (lunch line, friends, council) skew the results.',
+    source, generated: true,
+  },
+  {
+    id: 7501042, chapter: 'Statistics, Sampling, and Probability', title: 'Finding the mean',
+    prompt: 'What is the mean of the data set 4, 8, 6, 10, 12?',
+    correct: '8',
+    wrong: [
+      miss('6', 'That is the median (middle value), not the mean.', 'The mean adds all values and divides by the count.'),
+      miss('40', 'That is the total sum, not the average.', 'Divide the sum by how many numbers there are.'),
+      miss('10', 'That picked the most common-looking value, not the average.', 'Add all five and divide by 5.'),
+    ],
+    lesson: 'The mean is the sum divided by the count: (4 + 8 + 6 + 10 + 12) ÷ 5 = 40 ÷ 5 = 8.',
+    source, generated: true,
+  },
+  {
+    id: 7501043, chapter: 'Statistics, Sampling, and Probability', title: 'Finding the range',
+    prompt: 'What is the range of the data set 3, 9, 5, 14, 7?',
+    correct: '11',
+    wrong: [
+      miss('14', 'That is the maximum value, not the spread between max and min.', 'Range is largest minus smallest.'),
+      miss('7', 'That is roughly the middle value, not the range.', 'Subtract the smallest from the largest.'),
+      miss('38', 'That is the sum of all values, not the range.', 'Range uses only the highest and lowest.'),
+    ],
+    lesson: 'The range is a measure of spread: largest value minus smallest value = 14 - 3 = 11.',
+    source, generated: true,
+  },
+  {
+    id: 7501044, chapter: 'Statistics, Sampling, and Probability', title: 'Probability of a simple event',
+    prompt: 'A bag has 4 red, 3 green, and 5 blue marbles. What is the probability of drawing a green marble?',
+    correct: '3/12 = 1/4',
+    wrong: [
+      miss('3/9', 'That left blue marbles out of the total count.', 'The total is 4 + 3 + 5 = 12.'),
+      miss('3', 'A probability must be between 0 and 1, not a whole count.', 'Divide favorable outcomes by total outcomes.'),
+      miss('1/3', 'That used 3 green out of 9 non-green, the wrong total.', 'Use 3 green out of all 12 marbles.'),
+    ],
+    lesson: 'Probability = favorable outcomes ÷ total outcomes. There are 3 green of 12 total marbles, so P(green) = 3/12 = 1/4.',
+    source, generated: true,
+  },
+  {
+    id: 7501045, chapter: 'Statistics, Sampling, and Probability', title: 'Experimental probability',
+    prompt: 'A coin is flipped 50 times and lands heads 30 times. What is the experimental probability of heads?',
+    correct: '3/5',
+    wrong: [
+      miss('1/2', 'That is the theoretical probability, not what the experiment showed.', 'Use the actual results: 30 out of 50.'),
+      miss('30', 'A probability cannot be greater than 1.', 'Divide heads by total flips.'),
+      miss('20/50', 'That used the number of tails (20), not heads.', 'The question asks about heads (30).'),
+    ],
+    lesson: 'Experimental probability uses actual results: heads ÷ total flips = 30/50 = 3/5. This may differ from the theoretical 1/2.',
+    source, generated: true,
+  },
+  {
+    id: 7501046, chapter: 'Statistics, Sampling, and Probability', title: 'Compound event outcomes',
+    prompt: 'You flip a coin and roll a standard six-sided die. How many total outcomes are possible?',
+    correct: '12',
+    wrong: [
+      miss('8', 'That added 2 and 6 instead of multiplying them.', 'Multiply the outcomes of each event.'),
+      miss('6', 'That counted only the die and ignored the coin.', 'Each die result pairs with heads or tails.'),
+      miss('36', 'That treated both events as a die roll (6 × 6).', 'The coin has only 2 outcomes, not 6.'),
+    ],
+    lesson: 'For compound events, multiply the number of outcomes: 2 (coin) × 6 (die) = 12 total outcomes. A tree diagram or table confirms this.',
+    source, generated: true,
+  },
+  {
+    id: 7501047, chapter: 'Statistics, Sampling, and Probability', title: 'Probability of compound event',
+    prompt: 'What is the probability of flipping heads AND rolling a 4 on a six-sided die?',
+    correct: '1/12',
+    wrong: [
+      miss('1/8', 'That used 2 + 6 = 8 outcomes instead of 2 × 6 = 12.', 'Multiply the totals of each event.'),
+      miss('1/2', 'That found only the coin probability, ignoring the die.', 'Combine both independent events.'),
+      miss('2/12', 'That counted heads as two favorable outcomes.', 'Only one outcome is heads-and-4.'),
+    ],
+    lesson: 'For independent events, multiply probabilities: P(heads) × P(4) = (1/2) × (1/6) = 1/12. There is 1 favorable outcome out of 12.',
+    source, generated: true,
+  },
+  {
+    id: 7501048, chapter: 'Statistics, Sampling, and Probability', title: 'Comparing two data sets',
+    prompt: 'Class A scores average 80 with a range of 5; Class B scores average 80 with a range of 40. What can you conclude?',
+    correct: 'The classes have the same average, but Class B\'s scores are much more spread out.',
+    wrong: [
+      miss('Class A did better overall because its range is smaller.', 'A smaller range means more consistency, not a higher average.', 'Both have the same mean of 80.'),
+      miss('The two classes are identical.', 'Equal means do not imply equal spread; the ranges differ.', 'Compare variability as well as center.'),
+      miss('Class B did better because its range is larger.', 'A larger range means more variability, not higher scores.', 'Range measures spread, not achievement.'),
+    ],
+    lesson: 'To compare distributions, look at both center and spread. Equal means (80) show similar typical scores, while the larger range in Class B (40 vs. 5) shows much greater variability.',
+    source, generated: true,
+  },
+
+  // Chapter 8: Mathematical Problem-Solving Studio
+  {
+    id: 7501049, chapter: 'Mathematical Problem-Solving Studio', title: 'Multistep word problem',
+    prompt: 'Mia buys 3 notebooks at $2.50 each and a pen for $1.75. She pays with a $20 bill. How much change does she get?',
+    correct: '$10.75',
+    wrong: [
+      miss('$13.25', 'That subtracted only the pen and one notebook from $20.', 'Add the cost of all 3 notebooks first.'),
+      miss('$9.25', 'That charged $2.50 four times instead of three notebooks plus a $1.75 pen.', 'Multiply notebooks by 3, then add the pen.'),
+      miss('$9.75', 'That found the total cost ($9.25) but mislabeled it as change.', 'Subtract the total from $20.'),
+    ],
+    lesson: 'Work in steps: notebooks cost 3 × $2.50 = $7.50; plus the pen, total = $9.25; change = $20 - $9.25 = $10.75. Check that the answer is reasonable.',
+    source, generated: true,
+  },
+])
