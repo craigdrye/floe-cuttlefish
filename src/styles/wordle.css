@@ -108,6 +108,25 @@ body.deep-ocean .wordle-actions button {
   display: grid;
   gap: 6px;
   padding: 6px;
+  /* Tapping the grid focuses the hidden input to bring up the device keyboard. */
+  cursor: text;
+}
+/* Hidden but focusable input that drives the current guess. Must stay in the
+   layout (NOT display:none / visibility:hidden) so it can receive focus and
+   raise the mobile soft keyboard. font-size:16px stops iOS auto-zoom on focus. */
+.wordle-hidden-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  opacity: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  font-size: 16px;
 }
 .wordle-row {
   display: grid;

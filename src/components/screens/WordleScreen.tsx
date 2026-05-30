@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import type { ChangeEvent, KeyboardEvent as ReactKeyboardEvent } from 'react'
 import { ArrowLeft, HelpCircle } from 'lucide-react'
 import { TopBar } from '../layout/TopBar'
 import { useStore } from '../../store/useStore'
@@ -71,6 +72,10 @@ export function WordleScreen() {
   const [shake, setShake] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
 
+  // The board renders no on-screen keyboard — players use their own. A single
+  // visually-hidden <input> is the one source of letter input.
+  const inputRef = useRef<HTMLInputElement>(null)
+
   // Auto-load the daily puzzle the first time the player opens the screen each day.
   useEffect(() => {
     if (solution !== null) return
@@ -124,35 +129,44 @@ export function WordleScreen() {
     }
   }, [current, daily, guesses, puzzleMode, showToast, solution, status])
 
-  const pushLetter = useCallback((letter: string) => {
-    if (status !== 'playing') return
-    if (current.length >= WORD_LEN) return
-    setCurrent((c) => c + letter)
-  }, [current.length, status])
+  const focusInput = useCallback(() => {
+    inputRef.current?.focus()
+  }, [])
 
-  const popLetter = useCallback(() => {
-    if (status !== 'playing') return
-    setCurrent((c) => c.slice(0, -1))
-  }, [status])
+  // Letters flow through the hidden input's VALUE, not key events: on mobile,
+  // Android predictive keyboards report keyCode 229 / 'Unidentified' for letters
+  // and Backspace, so reading the value is the only reliable path. We sanitize to
+  // at most WORD_LEN uppercase A–Z; deleting simply shrinks the value.
+  const handleInput = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+    if (status !== 'playing' || !solution) return
+    const next = e.currentTarget.value.toUpperCase().replace(/[^A-Z]/g, '').slice(0, WORD_LEN)
+    setCurrent(next)
+  }, [status, solution])
 
-  // Physical keyboard
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.metaKey || e.ctrlKey || e.altKey) return
-      if (e.key === 'Enter') {
-        submitGuess()
-        e.preventDefault()
-      } else if (e.key === 'Backspace') {
-        popLetter()
-        e.preventDefault()
-      } else if (/^[a-zA-Z]$/.test(e.key)) {
-        pushLetter(e.key.toUpperCase())
-        e.preventDefault()
-      }
+  // Enter is the only key we read from keydown — it doesn't change the value.
+  const handleInputKeyDown = useCallback((e: ReactKeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      e.preventDefault()
+      submitGuess()
     }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [pushLetter, popLetter, submitGuess])
+  }, [submitGuess])
+
+  // On desktop (fine pointer) keep the hidden input focused so the player can
+  // always type; on touch devices let blur dismiss the soft keyboard naturally.
+  const handleInputBlur = useCallback(() => {
+    if (typeof window !== 'undefined' && window.matchMedia('(pointer: fine)').matches) {
+      requestAnimationFrame(() => {
+        if (solution && status === 'playing') inputRef.current?.focus()
+      })
+    }
+  }, [solution, status])
+
+  // Focus the hidden input when a playable puzzle loads so desktop players can type
+  // immediately. (On iOS this won't raise the keyboard — that needs a board tap —
+  // but it's harmless.)
+  useEffect(() => {
+    if (solution && status === 'playing') inputRef.current?.focus()
+  }, [solution, status])
 
   const startBonusPuzzle = useCallback(() => {
     if (daily.phase !== 'bonus') return
@@ -163,6 +177,7 @@ export function WordleScreen() {
     setCurrent('')
     setStatus('playing')
     setToast(null)
+    inputRef.current?.focus()
   }, [daily, selectedInterests])
 
   return (
@@ -200,12 +215,34 @@ export function WordleScreen() {
                     <li><span className="game-rules-swatch absent" />Letter not in the word</li>
                   </ul>
                 </li>
-                <li>Type with your keyboard. <kbd>Enter</kbd> submits, <kbd>⌫</kbd> (Backspace) deletes.</li>
+                <li>Type with your keyboard — on a phone, tap the grid to bring it up. <kbd>Enter</kbd> submits, <kbd>⌫</kbd> deletes.</li>
               </ol>
             </div>
           </details>
 
-          <div className={`wordle-board ${shake ? 'shaking' : ''}`}>
+          <input
+            ref={inputRef}
+            className="wordle-hidden-input"
+            value={current}
+            onChange={handleInput}
+            onKeyDown={handleInputKeyDown}
+            onBlur={handleInputBlur}
+            type="text"
+            inputMode="text"
+            autoCapitalize="characters"
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            maxLength={WORD_LEN}
+            enterKeyHint="done"
+            aria-label="Type your 5-letter guess"
+          />
+
+          <div
+            className={`wordle-board ${shake ? 'shaking' : ''}`}
+            onClick={focusInput}
+            onTouchEnd={focusInput}
+          >
             {Array.from({ length: MAX_GUESSES }).map((_, rowIdx) => {
               const isCurrentRow = rowIdx === guesses.length && status === 'playing'
               const guess = guesses[rowIdx] ?? (isCurrentRow ? current.padEnd(WORD_LEN, ' ') : '     ')
