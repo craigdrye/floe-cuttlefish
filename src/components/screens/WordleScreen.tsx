@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { ArrowLeft, Delete, HelpCircle } from 'lucide-react'
+import { ArrowLeft, HelpCircle } from 'lucide-react'
 import { TopBar } from '../layout/TopBar'
 import { useStore } from '../../store/useStore'
 import { wordleWords } from '../../data/wordleWords'
@@ -21,10 +21,6 @@ const MAX_GUESSES = 6
 // from the interest sub-pool. Remainder uses the general pool. 0.65 gives
 // strong topical bias while keeping enough variety to avoid feeling repetitive.
 const INTEREST_BIAS = 0.65
-
-const ROW_1 = 'QWERTYUIOP'.split('')
-const ROW_2 = 'ASDFGHJKL'.split('')
-const ROW_3 = ['ENTER', ...'ZXCVBNM'.split(''), 'BACK']
 
 function pickRandomSolution(interestIds: ReadonlyArray<CourseTopicId> = []): string {
   const interestPool = wordsForInterests(interestIds)
@@ -62,12 +58,6 @@ function evaluateGuess(guess: string, solution: string): LetterState[] {
   return result
 }
 
-function rankState(prev: LetterState | undefined, next: LetterState): LetterState {
-  const order: LetterState[] = ['empty', 'absent', 'present', 'correct']
-  if (!prev) return next
-  return order.indexOf(next) > order.indexOf(prev) ? next : prev
-}
-
 export function WordleScreen() {
   const { setScreen, selectedInterests } = useStore()
   const daily = useDailyPuzzle('wordle')
@@ -97,17 +87,6 @@ export function WordleScreen() {
     () => solution ? guesses.map((g) => evaluateGuess(g, solution)) : [],
     [guesses, solution],
   )
-
-  const letterStates: Record<string, LetterState> = useMemo(() => {
-    const map: Record<string, LetterState> = {}
-    guesses.forEach((g, gIdx) => {
-      const ev = evaluations[gIdx]
-      for (let i = 0; i < WORD_LEN; i += 1) {
-        map[g[i]] = rankState(map[g[i]], ev[i])
-      }
-    })
-    return map
-  }, [guesses, evaluations])
 
   const showToast = useCallback((msg: string) => {
     setToast(msg)
@@ -186,12 +165,6 @@ export function WordleScreen() {
     setToast(null)
   }, [daily, selectedInterests])
 
-  const onKeyPress = (key: string) => {
-    if (key === 'ENTER') submitGuess()
-    else if (key === 'BACK') popLetter()
-    else pushLetter(key)
-  }
-
   return (
     <main className="app-shell wordle-shell">
       <TopBar title="Floedle" />
@@ -227,7 +200,7 @@ export function WordleScreen() {
                     <li><span className="game-rules-swatch absent" />Letter not in the word</li>
                   </ul>
                 </li>
-                <li>Type with your keyboard or tap the on-screen keys. <kbd>Enter</kbd> submits, <kbd>⌫</kbd> deletes.</li>
+                <li>Type with your keyboard. <kbd>Enter</kbd> submits, <kbd>⌫</kbd> (Backspace) deletes.</li>
               </ol>
             </div>
           </details>
@@ -299,27 +272,6 @@ export function WordleScreen() {
             </div>
           )}
 
-          <div className="wordle-keyboard" role="group" aria-label="Wordle keyboard">
-            {[ROW_1, ROW_2, ROW_3].map((row, rIdx) => (
-              <div key={rIdx} className="wordle-keyboard-row">
-                {row.map((key) => {
-                  const isAction = key === 'ENTER' || key === 'BACK'
-                  const state = isAction ? '' : letterStates[key] ?? 'empty'
-                  return (
-                    <button
-                      key={key}
-                      type="button"
-                      className={`wordle-key ${isAction ? 'action' : ''} state-${state}`}
-                      onClick={() => onKeyPress(key)}
-                      aria-label={key === 'BACK' ? 'Backspace' : key}
-                    >
-                      {key === 'BACK' ? <Delete size={16} /> : key}
-                    </button>
-                  )
-                })}
-              </div>
-            ))}
-          </div>
         </section>
       </section>
     </main>
