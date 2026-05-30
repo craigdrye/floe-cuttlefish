@@ -1,0 +1,583 @@
+import { makeQuestionBank } from './base'
+import type { Question } from './types'
+
+const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
+const source = 'Floe col-a-level-economics top-up'
+
+export const colALevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBank('High', [
+  // ============================================================
+  // Business growth, objectives and the divorce of ownership
+  // ============================================================
+  {
+    id: 7971500,
+    chapter: 'Business growth and objectives',
+    title: 'Why some firms remain small',
+    prompt: 'A specialist artisan bakery deliberately chooses to stay small rather than expand into a national chain. Which of the following is the strongest economic reason for a firm to remain small?',
+    correct: 'It serves a niche market where demand is too limited to justify large-scale production',
+    wrong: [
+      miss('Small firms always achieve lower average costs than large firms', 'Large firms typically gain economies of scale and lower average costs; staying small usually means forgoing these.', 'Think about why a niche, not lower costs, keeps a firm small.'),
+      miss('Small firms are legally prevented from growing beyond a fixed size', 'There is no general legal cap on firm size; firms remain small by choice or market conditions, not statute.', 'Ask whether the law or the market is the constraint.'),
+      miss('Small firms automatically have more monopoly power', 'Monopoly power comes from a large market share; small firms generally have little market power.', 'Market power rises with size, not falls.'),
+    ],
+    lesson: 'Firms stay small for reasons including niche or local markets where demand is limited, the desire to retain control, low barriers to entry that keep competition fierce, and diseconomies of scale that would raise costs if they grew. A niche market simply cannot support large-scale output, so expansion would leave capacity unsold. Remaining small is therefore a rational response to market size rather than a sign of inefficiency.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971501,
+    chapter: 'Business growth and objectives',
+    title: 'Profit satisficing behaviour',
+    prompt: 'A firm with separated ownership and control pursues just enough profit to keep shareholders content while managers also pursue sales and job security. This behaviour is best described as:',
+    correct: 'Profit satisficing',
+    wrong: [
+      miss('Profit maximising', 'Profit maximising means producing where MR = MC to earn the greatest possible profit, not merely an acceptable level.', 'The firm settles for enough, not the maximum.'),
+      miss('Sales revenue maximising', 'Revenue maximising occurs where marginal revenue equals zero; here the firm balances several goals rather than maximising revenue.', 'The firm is juggling stakeholder demands, not chasing one peak.'),
+      miss('Predatory pricing', 'Predatory pricing is setting prices below cost to drive out rivals, an unrelated competitive tactic.', 'This is about objectives, not pricing tactics.'),
+    ],
+    lesson: 'Satisficing means achieving a satisfactory rather than optimal outcome, sacrificing some profit to meet the conflicting objectives of different stakeholders. With ownership divorced from control, managers may pursue their own goals such as job security or sales growth, so long as shareholders receive an acceptable minimum return. It reflects the principal-agent problem rather than pure profit maximisation.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971502,
+    chapter: 'Business growth and objectives',
+    title: 'Organic versus inorganic growth',
+    prompt: 'A firm expands by reinvesting its retained profits to open new branches it builds itself, rather than by taking over other companies. This is an example of:',
+    correct: 'Organic (internal) growth',
+    wrong: [
+      miss('Inorganic growth through merger', 'A merger combines two existing firms; building new branches internally does not involve another company.', 'Did the firm join with another firm or grow from within?'),
+      miss('Horizontal integration', 'Horizontal integration is a takeover of a firm at the same stage of production, which is inorganic, not internal expansion.', 'No other firm is being absorbed here.'),
+      miss('A demerger', 'A demerger splits a firm into separate parts, the opposite of expansion.', 'The firm is getting bigger, not breaking up.'),
+    ],
+    lesson: 'Organic or internal growth occurs when a firm expands its own operations, typically by reinvesting retained profit to increase capacity. It is usually slower and lower risk than inorganic growth (mergers and takeovers), and avoids the integration problems and culture clashes that external growth can bring. Funding it from retained profit also avoids extra debt.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971503,
+    chapter: 'Business growth and objectives',
+    title: 'A constraint on business growth',
+    prompt: 'Which of the following is most likely to act as a constraint on the growth of a firm?',
+    correct: 'The size of the market relative to the firm\'s minimum efficient scale',
+    wrong: [
+      miss('A fall in the firm\'s fixed costs', 'Lower fixed costs make production cheaper and would tend to encourage growth, not constrain it.', 'A constraint limits growth; cheaper costs do the opposite.'),
+      miss('An increase in consumer incomes for a normal good', 'Rising incomes raise demand for normal goods, expanding the market and supporting growth.', 'More demand usually enables expansion.'),
+      miss('Access to cheaper sources of finance', 'Cheaper finance makes expansion easier to fund, encouraging rather than constraining growth.', 'Easier funding removes a barrier rather than creating one.'),
+    ],
+    lesson: 'Growth can be constrained by the size of the market, the availability and cost of finance, owners\' desire to retain control, and the onset of diseconomies of scale. If the market is small relative to the minimum efficient scale, a firm cannot grow large without overcapacity. Factors that lower costs or raise demand tend to enable, not restrain, growth.',
+    source,
+    generated: true,
+  },
+
+  // ============================================================
+  // Costs, revenue and profit (theory of the firm)
+  // ============================================================
+  {
+    id: 7971504,
+    chapter: 'Costs, revenue and profit',
+    title: 'The law of diminishing returns',
+    prompt: 'A factory keeps its capital fixed in the short run and adds more workers. Output rises but each additional worker adds less extra output than the last. This illustrates:',
+    correct: 'The law of diminishing marginal returns',
+    wrong: [
+      miss('Diseconomies of scale', 'Diseconomies of scale are a long-run concept where all factors vary; diminishing returns is a short-run effect with at least one fixed factor.', 'Is capital fixed or variable here?'),
+      miss('Economies of scale', 'Economies of scale lower long-run average cost as output rises; this scenario shows falling marginal product, not falling average cost.', 'Look at whether output per extra worker is rising or falling.'),
+      miss('Constant returns to scale', 'Constant returns means output rises in proportion to all inputs in the long run, but here only labour is varied.', 'Only one input is changing.'),
+    ],
+    lesson: 'The law of diminishing marginal returns is a short-run phenomenon: with at least one factor fixed, adding more of a variable factor eventually causes the marginal product to fall. This is why short-run marginal and average cost curves eventually slope upward. It is distinct from diseconomies of scale, which occur in the long run when all factors are variable.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971505,
+    chapter: 'Costs, revenue and profit',
+    title: 'Internal economies of scale',
+    prompt: 'A large manufacturer can borrow at lower interest rates than its smaller rivals because lenders see it as less risky. This is an example of which internal economy of scale?',
+    correct: 'Financial economies of scale',
+    wrong: [
+      miss('Technical economies of scale', 'Technical economies come from specialised, indivisible capital equipment, not from cheaper borrowing.', 'This advantage comes from finance, not machinery.'),
+      miss('Purchasing economies of scale', 'Purchasing (bulk-buying) economies come from discounts on inputs, not from lower interest rates.', 'The saving is on borrowing, not on raw materials.'),
+      miss('External economies of scale', 'External economies arise from industry growth and benefit all firms; cheaper borrowing here is internal to the large firm.', 'Is the benefit specific to this firm or to the whole industry?'),
+    ],
+    lesson: 'Internal economies of scale reduce a firm\'s long-run average cost as it grows. Financial economies arise because larger firms are seen as lower-risk borrowers and can access finance more cheaply. Other internal economies include technical, purchasing, managerial, marketing and risk-bearing economies, all of which lower average costs as output expands.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971506,
+    chapter: 'Costs, revenue and profit',
+    title: 'Normal versus supernormal profit',
+    prompt: 'A firm earns exactly enough revenue to cover all its explicit costs and the opportunity cost of the entrepreneur\'s resources, with nothing left over. The firm is earning:',
+    correct: 'Normal profit',
+    wrong: [
+      miss('Supernormal (abnormal) profit', 'Supernormal profit is the surplus above normal profit; here there is no surplus, only the minimum needed to stay in business.', 'Is there anything left over above opportunity cost?'),
+      miss('A loss', 'A loss occurs when revenue fails to cover total economic costs; here all costs including opportunity cost are exactly covered.', 'Covering opportunity cost means the firm is breaking even economically.'),
+      miss('Negative economic profit', 'Negative economic profit means costs exceed revenue, but this firm covers all its costs exactly.', 'Breaking even in economic terms is not a loss.'),
+    ],
+    lesson: 'Normal profit is the minimum reward needed to keep an entrepreneur in their current line of business; it equals the opportunity cost of the resources and is treated as a cost. It is earned when total revenue equals total economic cost. Any surplus above this is supernormal profit, while revenue below total cost produces an economic loss.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971507,
+    chapter: 'Costs, revenue and profit',
+    title: 'The shut-down point in the short run',
+    prompt: 'In the short run, a firm should continue producing rather than shut down as long as the price it receives is at least equal to:',
+    correct: 'Average variable cost',
+    wrong: [
+      miss('Average total cost', 'A firm covering average total cost makes at least normal profit, but it can still operate at a loss in the short run provided it covers variable costs.', 'In the short run, fixed costs are paid whether or not the firm produces.'),
+      miss('Marginal cost', 'Marginal cost determines the profit-maximising output, not whether to shut down; the shut-down rule compares price with average variable cost.', 'The shut-down test is about covering variable costs, not the cost of one more unit.'),
+      miss('Average fixed cost', 'Average fixed cost is irrelevant to the short-run shut-down decision because fixed costs are unavoidable in the short run.', 'Fixed costs are sunk in the short run.'),
+    ],
+    lesson: 'In the short run a firm continues operating as long as price (average revenue) covers average variable cost, because fixed costs must be paid whether or not it produces. If price falls below average variable cost, the firm loses more by producing than by shutting down. In the long run, however, all costs are variable, so the firm must cover average total cost to remain in the market.',
+    source,
+    generated: true,
+  },
+
+  // ============================================================
+  // Market structures: perfect competition and monopoly
+  // ============================================================
+  {
+    id: 7971508,
+    chapter: 'Market structures: perfect competition and monopoly',
+    title: 'Long-run equilibrium in perfect competition',
+    prompt: 'In a perfectly competitive market, what level of profit do firms earn in long-run equilibrium?',
+    correct: 'Normal profit only',
+    wrong: [
+      miss('Supernormal profit', 'Supernormal profit attracts new entrants, which increases supply and erodes the surplus until only normal profit remains.', 'What happens to profits when there are no barriers to entry?'),
+      miss('Maximum possible profit through restricting output', 'Perfectly competitive firms are price takers and cannot restrict output to raise price; only monopolists can do that.', 'Price takers cannot influence market price.'),
+      miss('Losses, because competition is so intense', 'Persistent losses would cause firms to exit, reducing supply and restoring price until survivors earn normal profit.', 'Exit of firms removes the losses over time.'),
+    ],
+    lesson: 'In perfect competition there are no barriers to entry or exit, so supernormal profits attract new firms and losses drive firms out. This entry and exit continues until firms earn only normal profit in long-run equilibrium, producing where price equals minimum average cost. This makes perfect competition both productively and allocatively efficient.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971509,
+    chapter: 'Market structures: perfect competition and monopoly',
+    title: 'Allocative efficiency condition',
+    prompt: 'Allocative efficiency in a market is achieved at the output level where:',
+    correct: 'Price equals marginal cost (P = MC)',
+    wrong: [
+      miss('Marginal cost equals marginal revenue (MC = MR)', 'MC = MR gives the profit-maximising output, which only coincides with allocative efficiency under perfect competition where P = MR.', 'Allocative efficiency compares price to marginal cost, not to marginal revenue.'),
+      miss('Average cost is at its minimum', 'Minimum average cost defines productive efficiency, not allocative efficiency.', 'Allocative efficiency is about value to consumers versus the cost of the last unit.'),
+      miss('Total revenue is maximised', 'Maximising total revenue occurs where marginal revenue is zero, which is unrelated to allocative efficiency.', 'Allocative efficiency is a price-equals-marginal-cost condition.'),
+    ],
+    lesson: 'Allocative efficiency occurs where price equals marginal cost, meaning the value consumers place on the last unit (price) just equals the cost of producing it. At this point society\'s resources are allocated to reflect consumer preferences, and welfare is maximised. A monopoly restricts output so price exceeds marginal cost, creating allocative inefficiency and deadweight loss.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971510,
+    chapter: 'Market structures: perfect competition and monopoly',
+    title: 'Source of monopoly power',
+    prompt: 'Which of the following is the most important condition that allows a monopoly to earn supernormal profit in the long run?',
+    correct: 'High barriers to entry that prevent new firms from entering the market',
+    wrong: [
+      miss('A perfectly elastic demand curve', 'A monopolist faces a downward-sloping (inelastic-leaning) demand curve; a perfectly elastic curve describes a price taker in perfect competition.', 'Price takers, not monopolists, face perfectly elastic demand.'),
+      miss('The presence of many close substitutes', 'Many close substitutes erode monopoly power; a monopolist is the sole supplier of a product with no close substitutes.', 'Substitutes weaken, rather than create, monopoly power.'),
+      miss('Producing at the minimum point of average cost', 'Monopolists typically do not produce at minimum average cost, and doing so would not protect profits from new entrants.', 'What stops rivals from entering and competing the profit away?'),
+    ],
+    lesson: 'A monopoly can sustain supernormal profit in the long run only if barriers to entry keep potential competitors out. Barriers include economies of scale, legal protection such as patents, ownership of key resources, and high sunk costs. Without these barriers, supernormal profit would attract entrants who compete the abnormal profit away, as happens in perfect competition.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971511,
+    chapter: 'Market structures: perfect competition and monopoly',
+    title: 'Conditions for price discrimination',
+    prompt: 'Which set of conditions must all hold for a firm to practise price discrimination successfully?',
+    correct: 'The firm has price-setting power, can separate markets, and resale between markets is prevented',
+    wrong: [
+      miss('The firm is a price taker and demand is identical in all markets', 'Price discrimination requires price-setting power and differing elasticities, not price-taking with identical demand.', 'A price taker cannot set different prices at all.'),
+      miss('The good can be freely resold between consumers', 'Free resale would let buyers in the cheap market sell to the expensive market, destroying the strategy.', 'Resale must be blocked, not allowed.'),
+      miss('All consumers have the same price elasticity of demand', 'Identical elasticities remove the incentive to charge different prices; discrimination exploits different elasticities.', 'Different groups must differ in how sensitive they are to price.'),
+    ],
+    lesson: 'Successful price discrimination requires three conditions: the firm must have some monopoly (price-setting) power, it must be able to identify and separate consumer groups with different price elasticities of demand, and it must prevent resale (arbitrage) between those groups. The firm then charges higher prices where demand is inelastic and lower prices where it is elastic, raising total profit.',
+    source,
+    generated: true,
+  },
+
+  // ============================================================
+  // Market structures: oligopoly and monopolistic competition
+  // ============================================================
+  {
+    id: 7971512,
+    chapter: 'Market structures: oligopoly and monopolistic competition',
+    title: 'The kinked demand curve',
+    prompt: 'The kinked demand curve model of oligopoly is used primarily to explain why:',
+    correct: 'Prices in oligopolistic markets tend to be stable even when costs change',
+    wrong: [
+      miss('Firms in oligopoly always engage in price wars', 'The kinked demand model explains price rigidity, predicting that firms avoid price changes rather than fight price wars.', 'The model is about why prices stay still.'),
+      miss('Oligopolists earn only normal profit in the long run', 'Barriers to entry mean oligopolists can sustain supernormal profit; the model does not address long-run profit erosion.', 'Profit levels are not what the kinked curve explains.'),
+      miss('Demand is perfectly elastic at all prices', 'The model assumes demand is more elastic above the current price and more inelastic below it, not perfectly elastic.', 'The two segments of the curve have different elasticities.'),
+    ],
+    lesson: 'The kinked demand curve assumes rivals will not follow a price rise but will match a price cut, making demand elastic above the current price and inelastic below it. This creates a discontinuity in the marginal revenue curve, so marginal cost can change within a range without altering the profit-maximising price. The model therefore explains the price stability often observed in oligopolies.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971513,
+    chapter: 'Market structures: oligopoly and monopolistic competition',
+    title: 'Collusion in oligopoly',
+    prompt: 'A small number of large firms in a market secretly agree to fix prices and limit output. This is best described as:',
+    correct: 'A collusive oligopoly operating as a cartel',
+    wrong: [
+      miss('Perfect competition', 'Perfect competition has many firms acting independently as price takers, the opposite of a few firms colluding.', 'Many independent price takers cannot fix prices together.'),
+      miss('Contestable market behaviour', 'A contestable market is disciplined by the threat of entry; colluding to fix prices is the opposite of competitive discipline.', 'Collusion raises prices; contestability tends to lower them.'),
+      miss('Monopolistic competition', 'Monopolistic competition has many firms with differentiated products and low barriers, not a few firms colluding.', 'Collusion needs few firms, not many.'),
+    ],
+    lesson: 'Collusion occurs when firms in an oligopoly agree to act together, for example by fixing prices or output, forming a cartel that behaves like a monopoly. This raises prices and profits at the expense of consumers and is generally illegal under competition law. Collusion is easier to sustain when there are few firms, high barriers to entry, and similar products.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971514,
+    chapter: 'Market structures: oligopoly and monopolistic competition',
+    title: 'Game theory and the prisoner\'s dilemma',
+    prompt: 'In a simple two-firm pricing game with a dominant strategy, why might both firms end up charging low prices even though both would earn more by keeping prices high?',
+    correct: 'Each firm\'s dominant strategy is to cut price regardless of the rival\'s choice, leading to a worse joint outcome',
+    wrong: [
+      miss('Because consumers force firms to set the lowest possible price', 'In this model the outcome is driven by the firms\' own strategic incentives, not by direct consumer pressure.', 'Focus on each firm\'s best response to the other.'),
+      miss('Because both firms are price takers with no influence over price', 'Oligopolists in a pricing game are price setters; the dilemma arises precisely because their choices interact.', 'Price takers would not have a pricing strategy at all.'),
+      miss('Because high prices are illegal under competition law', 'It is collusion to keep prices high that is illegal; charging high prices alone is lawful. The low-price outcome here is strategic, not legal.', 'The driver is strategy, not the law.'),
+    ],
+    lesson: 'In a prisoner\'s dilemma each firm has a dominant strategy to cut price because, whatever the rival does, undercutting yields a higher payoff for that firm individually. When both follow this logic they reach a Nash equilibrium of low prices, which is worse for both than mutual high pricing. The dilemma explains the temptation to cheat on collusive agreements.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971515,
+    chapter: 'Market structures: oligopoly and monopolistic competition',
+    title: 'Non-price competition',
+    prompt: 'Oligopolists frequently rely on non-price competition. Which of the following is an example of non-price competition?',
+    correct: 'Launching a loyalty rewards scheme to retain customers',
+    wrong: [
+      miss('Cutting the price below that of rivals', 'Reducing price is price competition by definition, not non-price competition.', 'Non-price competition avoids changing the price.'),
+      miss('Matching a rival\'s price reduction', 'Matching a price cut is still competing on price, just defensively.', 'If the tool is price, it is not non-price competition.'),
+      miss('Offering a temporary discount during a sale', 'A discount lowers the effective price, making it a form of price competition.', 'Discounts work through price.'),
+    ],
+    lesson: 'Because price competition can trigger damaging price wars, oligopolists often compete in non-price ways: advertising, branding, product quality, loyalty schemes, customer service and innovation. These methods build customer loyalty and differentiate the product without provoking retaliatory price cuts. Loyalty schemes are a classic example because they retain customers without lowering the headline price.',
+    source,
+    generated: true,
+  },
+
+  // ============================================================
+  // The labour market
+  // ============================================================
+  {
+    id: 7971516,
+    chapter: 'The labour market',
+    title: 'Derived demand for labour',
+    prompt: 'Economists describe the demand for labour as a derived demand. This means that:',
+    correct: 'The demand for labour depends on the demand for the goods and services that labour produces',
+    wrong: [
+      miss('Workers derive satisfaction from the work they do', 'Job satisfaction is unrelated to the concept of derived demand, which concerns where the demand comes from.', 'Derived demand is about what the labour is used to make.'),
+      miss('Wages are derived from the marginal cost of capital', 'Wages reflect the marginal revenue product of labour, not the cost of capital, and this is not what derived demand means.', 'Think about what creates the need for the worker.'),
+      miss('The supply of labour determines its own demand', 'Supply does not create its own demand; the demand for labour is driven by demand for the final product.', 'Demand for labour follows demand for output.'),
+    ],
+    lesson: 'Labour is not wanted for its own sake but because it helps produce goods and services consumers want, so its demand is derived from the demand for output. If demand for a product rises, firms need more workers to make it, increasing the demand for that labour. This is why a recession that cuts product demand also reduces employment.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971517,
+    chapter: 'The labour market',
+    title: 'Marginal revenue product of labour',
+    prompt: 'A profit-maximising firm operating in competitive markets will hire workers up to the point where:',
+    correct: 'The marginal revenue product of labour equals the wage rate',
+    wrong: [
+      miss('The average product of labour is at its maximum', 'Maximum average product does not give the profit-maximising number of workers; firms compare the marginal contribution of labour with its wage.', 'Compare the value added by the last worker with what they cost.'),
+      miss('The total output of the firm is maximised', 'Maximising output ignores costs; a profit maximiser stops hiring before output peaks if extra workers add less value than their wage.', 'More output is not the goal; more profit is.'),
+      miss('The wage rate equals average total cost', 'The hiring rule compares the wage with the marginal revenue product of labour, not with average total cost.', 'The relevant comparison is the value of the extra worker.'),
+    ],
+    lesson: 'The marginal revenue product of labour (MRPL) is the extra revenue generated by employing one more worker, equal to marginal product multiplied by marginal revenue. A profit-maximising firm hires up to the point where MRPL equals the wage rate, because employing beyond that adds more to costs than to revenue. The MRPL curve is therefore the firm\'s demand curve for labour.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971518,
+    chapter: 'The labour market',
+    title: 'Monopsony in the labour market',
+    prompt: 'A single large employer dominates the labour market in a remote town. Compared with a competitive labour market, this monopsonist is likely to:',
+    correct: 'Employ fewer workers and pay a lower wage',
+    wrong: [
+      miss('Employ more workers and pay a higher wage', 'A monopsonist restricts hiring to keep the wage down, employing fewer workers at a lower wage than a competitive market would.', 'A dominant buyer of labour uses its power to push wages down.'),
+      miss('Pay the wage that exactly equals each worker\'s marginal revenue product', 'A monopsonist pays below the marginal revenue product because it must raise the wage for all workers to hire one more.', 'Buyer power lets the firm pay less than the value workers add.'),
+      miss('Have no influence over the wage rate at all', 'As the dominant or sole buyer of labour, a monopsonist has significant wage-setting power.', 'A single dominant buyer is not a wage taker.'),
+    ],
+    lesson: 'A monopsony is a market with a single dominant buyer, here of labour. Because it must raise the wage for all workers to attract one more, its marginal cost of labour exceeds the wage, so it hires where marginal cost of labour equals MRPL and pays a wage below that level. The result is lower employment and lower wages than in a competitive labour market, which can justify intervention such as a minimum wage.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971519,
+    chapter: 'The labour market',
+    title: 'Effect of a minimum wage in a competitive market',
+    prompt: 'In an otherwise competitive labour market, a minimum wage set above the market equilibrium wage is most likely to cause:',
+    correct: 'Excess supply of labour (unemployment) in that market',
+    wrong: [
+      miss('A shortage of labour as demand exceeds supply', 'A minimum wage above equilibrium raises the wage, increasing the quantity of labour supplied and reducing quantity demanded, creating a surplus not a shortage.', 'Above equilibrium, supply exceeds demand.'),
+      miss('No change in employment because wages do not affect demand', 'Higher wages raise firms\' costs and reduce the quantity of labour demanded in a competitive market.', 'Demand for labour slopes downward against the wage.'),
+      miss('A guaranteed rise in total employment in that market', 'A binding minimum wage tends to reduce, not raise, employment in a competitive market.', 'A price floor above equilibrium reduces quantity traded.'),
+    ],
+    lesson: 'In a competitive labour market, a minimum wage set above equilibrium acts as a price floor: the quantity of labour supplied rises while the quantity demanded falls, producing excess supply, that is, unemployment. The effect on employment is less clear-cut in a monopsony, where a minimum wage can actually raise both wages and employment by offsetting the employer\'s buyer power.',
+    source,
+    generated: true,
+  },
+
+  // ============================================================
+  // International trade and globalisation
+  // ============================================================
+  {
+    id: 7971520,
+    chapter: 'International trade and globalisation',
+    title: 'Comparative advantage',
+    prompt: 'According to the theory of comparative advantage, a country should specialise in producing the goods for which it has:',
+    correct: 'The lowest opportunity cost compared with other countries',
+    wrong: [
+      miss('The lowest absolute amount of resources used', 'That describes absolute advantage; comparative advantage is based on relative opportunity cost, not absolute resource use.', 'The key is opportunity cost, not raw quantities.'),
+      miss('The largest population of skilled workers', 'A large skilled workforce may help, but the principle of comparative advantage rests on relative opportunity cost.', 'Specialisation follows opportunity cost, not workforce size.'),
+      miss('The highest selling price on world markets', 'A high world price does not determine where a country\'s comparative advantage lies.', 'Look at what must be given up to produce the good.'),
+    ],
+    lesson: 'Comparative advantage states that a country gains from specialising in goods it can produce at a lower opportunity cost than its trading partners, even if another country has an absolute advantage in everything. By specialising and trading, total world output rises and both countries can consume beyond their own production possibilities. The theory underpins the case for free trade.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971521,
+    chapter: 'International trade and globalisation',
+    title: 'Effect of an import tariff',
+    prompt: 'A government imposes a tariff on imported steel. The most direct effect of this tariff is to:',
+    correct: 'Raise the domestic price of steel and reduce the quantity imported',
+    wrong: [
+      miss('Lower the price of steel for domestic consumers', 'A tariff is a tax on imports that raises, not lowers, the price consumers pay.', 'A tax added to imports pushes their price up.'),
+      miss('Increase the volume of steel imported', 'By raising import prices, a tariff reduces the quantity imported rather than increasing it.', 'Higher import prices discourage imports.'),
+      miss('Reduce the output of domestic steel producers', 'Tariffs protect domestic producers, encouraging them to expand output as imports become less competitive.', 'Domestic producers gain from the protection.'),
+    ],
+    lesson: 'A tariff is a tax on imports that raises their price in the domestic market. This makes imported goods less competitive, so consumers buy less of them and domestic producers can sell more at a higher price. The cost is higher prices for consumers and a loss of allocative efficiency, since the tariff distorts the pattern of trade away from comparative advantage.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971522,
+    chapter: 'International trade and globalisation',
+    title: 'Terms of trade',
+    prompt: 'A country\'s terms of trade are calculated as an index of:',
+    correct: 'Average export prices relative to average import prices',
+    wrong: [
+      miss('The volume of exports relative to the volume of imports', 'The terms of trade measure relative prices, not relative volumes; volumes affect the trade balance instead.', 'It is about prices, not quantities.'),
+      miss('The current account balance as a share of GDP', 'The terms of trade are a price index, distinct from the current account balance.', 'A balance is a flow of money; terms of trade are a price ratio.'),
+      miss('The exchange rate against a basket of currencies', 'The exchange rate influences the terms of trade but is not the same measurement.', 'Terms of trade compare export and import prices directly.'),
+    ],
+    lesson: 'The terms of trade measure the ratio of average export prices to average import prices, usually expressed as an index. An improvement (rise in the index) means a country can buy more imports for a given volume of exports, which can raise living standards. However, the effect on the trade balance depends on the price elasticities of demand for exports and imports.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971523,
+    chapter: 'International trade and globalisation',
+    title: 'A valid argument for protectionism',
+    prompt: 'Which of the following is a recognised economic argument in favour of protectionism?',
+    correct: 'Protecting infant industries until they can achieve economies of scale',
+    wrong: [
+      miss('Permanently shielding inefficient industries from all competition', 'Permanent protection of inefficient industries encourages complacency and is not a sound economic justification.', 'Valid arguments are usually temporary or targeted.'),
+      miss('Maximising the gains from comparative advantage', 'Free trade, not protection, maximises the gains from comparative advantage.', 'Protection restricts trade rather than promoting specialisation.'),
+      miss('Guaranteeing the lowest possible prices for consumers', 'Protectionism tends to raise consumer prices, not lower them.', 'Tariffs and quotas push prices up for buyers.'),
+    ],
+    lesson: 'Recognised arguments for protectionism include shielding infant industries until they grow large enough to compete, protecting against dumping, safeguarding strategic industries, and correcting a persistent trade deficit. The infant industry argument is temporary and contingent on the industry eventually becoming competitive. Most protection carries costs of higher prices and reduced efficiency, so economists treat the case cautiously.',
+    source,
+    generated: true,
+  },
+
+  // ============================================================
+  // Exchange rates and the balance of payments
+  // ============================================================
+  {
+    id: 7971524,
+    chapter: 'Exchange rates and the balance of payments',
+    title: 'Effect of currency depreciation on exports',
+    prompt: 'When a country\'s currency depreciates against other currencies, the most likely immediate effect is that its:',
+    correct: 'Exports become cheaper in foreign currency and imports become more expensive',
+    wrong: [
+      miss('Exports become more expensive in foreign currency', 'A weaker currency lowers the foreign-currency price of exports, making them cheaper abroad, not dearer.', 'A cheaper currency makes home-made goods cheaper for foreigners.'),
+      miss('Imports become cheaper in domestic currency', 'Depreciation raises the domestic-currency cost of imports because each unit of foreign goods now costs more home currency.', 'Foreign goods cost more when the home currency is weaker.'),
+      miss('Both exports and imports become cheaper for everyone', 'Depreciation moves export and import prices in opposite directions; it cannot make both cheaper.', 'A currency change helps one side of trade and hurts the other.'),
+    ],
+    lesson: 'A depreciation lowers the external value of a currency, so exports become cheaper to foreign buyers while imports become more expensive at home. This can improve the trade balance, but only if the Marshall-Lerner condition holds (combined price elasticities of demand for exports and imports exceed one). In the short run the J-curve effect can mean the balance worsens before it improves.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971525,
+    chapter: 'Exchange rates and the balance of payments',
+    title: 'Components of the current account',
+    prompt: 'Which of the following is recorded in the current account of the balance of payments?',
+    correct: 'The value of goods and services exported and imported',
+    wrong: [
+      miss('Purchases of foreign factories by domestic firms', 'Foreign direct investment is recorded in the financial account, not the current account.', 'Long-term capital flows belong in the financial account.'),
+      miss('Long-term portfolio investment in foreign shares', 'Portfolio investment flows are part of the financial account.', 'Buying foreign assets is a financial-account item.'),
+      miss('Changes in a central bank\'s foreign currency reserves', 'Movements in official reserves are recorded in the financial account.', 'Reserve changes are not trade or income flows.'),
+    ],
+    lesson: 'The current account records trade in goods and services, primary income (such as investment income and wages) and secondary income (transfers). It captures flows arising from current economic activity rather than changes in the ownership of assets. Capital flows such as foreign direct investment, portfolio investment and reserve changes are recorded in the financial account.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971526,
+    chapter: 'Exchange rates and the balance of payments',
+    title: 'Fixed versus floating exchange rates',
+    prompt: 'Under a purely floating exchange rate system, the value of a currency is determined by:',
+    correct: 'Market forces of supply and demand for the currency',
+    wrong: [
+      miss('A fixed peg set and maintained by the central bank', 'A central-bank peg describes a fixed, not a floating, exchange rate system.', 'Floating means the market, not the bank, sets the rate.'),
+      miss('A target rate enforced through government intervention', 'Active intervention to hold a target rate is a managed or fixed system, not a pure float.', 'Pure floating involves no intervention to set the rate.'),
+      miss('The level of a country\'s gold reserves alone', 'Modern floating rates are not tied to gold reserves; they respond to currency supply and demand.', 'The gold standard is a historical fixed-rate system.'),
+    ],
+    lesson: 'Under a freely floating exchange rate, the currency\'s value is set by the supply of and demand for it in foreign exchange markets, with no central-bank intervention. Floating rates adjust automatically to shocks and free monetary policy to target domestic goals, but they can be volatile. Fixed and managed systems instead use intervention or reserves to hold the rate at or near a chosen level.',
+    source,
+    generated: true,
+  },
+
+  // ============================================================
+  // Fiscal, monetary and supply-side policy
+  // ============================================================
+  {
+    id: 7971527,
+    chapter: 'Macroeconomic policy: fiscal, monetary and supply-side',
+    title: 'Expansionary fiscal policy',
+    prompt: 'A government uses expansionary fiscal policy to boost a weak economy. This would typically involve:',
+    correct: 'Increasing government spending and/or cutting taxes',
+    wrong: [
+      miss('Raising interest rates to encourage borrowing', 'Changing interest rates is monetary policy, and raising them would contract rather than expand demand.', 'Fiscal policy uses spending and taxation, not interest rates.'),
+      miss('Cutting government spending to balance the budget', 'Cutting spending is contractionary fiscal policy, which dampens demand rather than boosting it.', 'Expansionary policy injects demand, it does not withdraw it.'),
+      miss('Increasing the money supply through quantitative easing', 'Quantitative easing is a monetary policy tool, not a fiscal one.', 'Fiscal policy works through the government\'s budget.'),
+    ],
+    lesson: 'Fiscal policy uses government spending and taxation to influence aggregate demand. Expansionary fiscal policy increases spending or cuts taxes to raise aggregate demand, output and employment, typically widening the budget deficit. It is distinct from monetary policy, which works through interest rates and the money supply controlled by the central bank.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971528,
+    chapter: 'Macroeconomic policy: fiscal, monetary and supply-side',
+    title: 'The bank rate and aggregate demand',
+    prompt: 'A central bank raises its base interest rate (bank rate). Through the transmission mechanism, this is most likely to:',
+    correct: 'Reduce aggregate demand by discouraging borrowing and spending',
+    wrong: [
+      miss('Increase aggregate demand by making saving less attractive', 'Higher interest rates make saving more attractive and borrowing dearer, reducing rather than increasing demand.', 'Higher rates reward saving and penalise borrowing.'),
+      miss('Have no effect on consumption or investment', 'Interest-rate changes directly affect the cost of borrowing for consumption and investment.', 'Borrowing costs are central to the transmission mechanism.'),
+      miss('Automatically reduce the rate of unemployment', 'By cooling demand, a rate rise tends to slow output and can raise unemployment in the short run.', 'Tighter policy usually cools the economy.'),
+    ],
+    lesson: 'Raising the bank rate increases the cost of borrowing and the return to saving, so households and firms borrow and spend less while saving more. This reduces consumption and investment, lowers aggregate demand and helps bring down inflation. The same mechanism can also strengthen the exchange rate, reducing net exports and reinforcing the contractionary effect.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971529,
+    chapter: 'Macroeconomic policy: fiscal, monetary and supply-side',
+    title: 'Supply-side policy aim',
+    prompt: 'The central aim of supply-side policies is to:',
+    correct: 'Increase the productive potential of the economy by improving efficiency and incentives',
+    wrong: [
+      miss('Directly raise aggregate demand in the short run', 'Boosting aggregate demand is the role of fiscal and monetary policy; supply-side policy targets potential output.', 'Supply-side policy shifts long-run aggregate supply, not demand.'),
+      miss('Stabilise the exchange rate at a fixed level', 'Exchange-rate management is a separate policy; supply-side measures focus on productivity and incentives.', 'The focus is on the supply capacity of the economy.'),
+      miss('Reduce the budget deficit by raising tax rates', 'Higher tax rates can blunt incentives and are not the aim of supply-side policy, which often cuts marginal taxes.', 'Supply-side policy works on incentives and efficiency.'),
+    ],
+    lesson: 'Supply-side policies aim to raise the productive potential of the economy by improving the quantity and quality of factors of production and the efficiency of markets. Examples include investment in education and training, infrastructure spending, labour-market reforms, tax incentives and deregulation. By shifting long-run aggregate supply outward, they can deliver growth with lower inflationary pressure.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971530,
+    chapter: 'Macroeconomic policy: fiscal, monetary and supply-side',
+    title: 'Automatic stabilisers',
+    prompt: 'During a recession, automatic stabilisers help to support the economy because:',
+    correct: 'Tax revenue falls and welfare spending rises without any new government decision',
+    wrong: [
+      miss('The government must pass new legislation to cut taxes', 'Automatic stabilisers operate without new legislation; discretionary changes are the ones that require fresh decisions.', 'Automatic means no new policy action is needed.'),
+      miss('The central bank automatically cuts interest rates', 'Interest-rate changes are discretionary monetary policy, not fiscal automatic stabilisers.', 'Stabilisers here work through the existing tax and benefit system.'),
+      miss('Government spending is frozen to balance the budget', 'Freezing spending would worsen a downturn; automatic stabilisers allow spending to rise and taxes to fall.', 'Stabilisers cushion demand rather than withdraw it.'),
+    ],
+    lesson: 'Automatic stabilisers are features of the tax and benefit system that dampen the business cycle without deliberate government action. In a recession, incomes and spending fall, so tax revenue automatically declines while unemployment benefit payments rise, supporting aggregate demand. In a boom the reverse happens, helping to restrain demand, which smooths the cycle and reduces the need for discretionary intervention.',
+    source,
+    generated: true,
+  },
+
+  // ============================================================
+  // The financial sector and economic development
+  // ============================================================
+  {
+    id: 7971531,
+    chapter: 'The financial sector',
+    title: 'Role of commercial banks',
+    prompt: 'One key function performed by commercial banks in the financial system is to:',
+    correct: 'Channel funds from savers to borrowers (financial intermediation)',
+    wrong: [
+      miss('Set the official bank rate for the whole economy', 'Setting the official bank rate is the role of the central bank, not commercial banks.', 'Which institution sets monetary policy?'),
+      miss('Print the nation\'s banknotes and coins', 'Issuing currency is a function of the central bank or mint, not commercial banks.', 'Commercial banks lend and take deposits; they do not issue cash.'),
+      miss('Act as the lender of last resort to other banks', 'The lender of last resort role belongs to the central bank.', 'Who rescues banks in a liquidity crisis?'),
+    ],
+    lesson: 'Commercial banks act as financial intermediaries, accepting deposits from savers and lending to borrowers, while also providing payment services and maturity transformation. This channelling of funds supports investment and consumption across the economy. Functions such as setting the bank rate, issuing currency and acting as lender of last resort belong to the central bank.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971532,
+    chapter: 'The financial sector',
+    title: 'Market failure in financial markets',
+    prompt: 'The 2008 financial crisis is often used to illustrate market failure in financial markets. Which problem contributed most directly to that failure through excessive risk-taking by banks?',
+    correct: 'Moral hazard, where banks took large risks expecting to be bailed out',
+    wrong: [
+      miss('Perfect information available to all market participants', 'The crisis was marked by asymmetric and poor information, not perfect information; perfect information would reduce failure.', 'The issue was too little information, not too much.'),
+      miss('An absence of any externalities in banking', 'Banking is full of negative externalities (systemic spillovers); their presence, not absence, contributed to the crisis.', 'Bank failures impose costs on the wider economy.'),
+      miss('Excessive competition forcing prices below cost', 'The crisis stemmed from risk-taking and information failures, not from price competition driving prices below cost.', 'Focus on incentives to take on risk.'),
+    ],
+    lesson: 'Financial markets suffer several market failures, including asymmetric information, moral hazard, negative externalities and speculative bubbles. Moral hazard arises when banks take excessive risks because they expect to be rescued if things go wrong, distorting their incentives. Such failures justify regulation of the financial sector to protect the wider economy from systemic risk.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971533,
+    chapter: 'Economic growth and development',
+    title: 'Limitations of GDP as a development measure',
+    prompt: 'Why might GDP per capita be a misleading measure of a country\'s economic development?',
+    correct: 'It ignores income distribution and non-market factors such as health and education',
+    wrong: [
+      miss('It always understates the value of market output', 'GDP measures recorded market output; it does not systematically understate it, and that is not the main critique for development.', 'The concern is what GDP omits about welfare, not measurement bias.'),
+      miss('It fully captures inequality and environmental quality', 'GDP per capita does not capture inequality or environmental damage, which is precisely why it is criticised.', 'Think about what living standards measures should include but GDP excludes.'),
+      miss('It is the same as the Human Development Index', 'The HDI was created to broaden beyond GDP by adding health and education indicators; the two are not the same.', 'A broader index exists for a reason.'),
+    ],
+    lesson: 'GDP per capita measures average output per person but ignores how income is distributed, the quality of health and education, environmental costs and the value of non-market activity. A country can have rising GDP per capita yet poor living standards if growth is unequal or environmentally damaging. Composite measures such as the Human Development Index combine income with life expectancy and education to give a fuller picture of development.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971534,
+    chapter: 'Economic growth and development',
+    title: 'The primary product dependency trap',
+    prompt: 'Many developing economies rely heavily on exporting a narrow range of primary commodities. Why can this primary product dependency hinder development?',
+    correct: 'Volatile commodity prices make export earnings and growth unstable and hard to plan',
+    wrong: [
+      miss('Primary products always have a high income elasticity of demand', 'Many primary products have low income elasticity, so demand grows slowly as world incomes rise, worsening the problem.', 'Demand for raw commodities tends to grow slowly with incomes.'),
+      miss('Commodity prices are exceptionally stable over time', 'Commodity prices are notoriously volatile, which is the core of the problem.', 'Unstable prices are precisely the issue.'),
+      miss('Specialising in primary products guarantees rising terms of trade', 'Primary product exporters often face declining or volatile terms of trade, not guaranteed improvement (the Prebisch-Singer hypothesis).', 'Terms of trade for commodities often deteriorate.'),
+    ],
+    lesson: 'Primary product dependency exposes a country to volatile world commodity prices, making export revenue, government income and growth unpredictable. Many primary products also have low income elasticity of demand, so their share of world trade tends to fall, and exporters may face deteriorating terms of trade over time. Diversification into manufacturing and services is a common strategy to reduce this vulnerability.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7971535,
+    chapter: 'Economic growth and development',
+    title: 'The Harrod-Domar model',
+    prompt: 'According to the Harrod-Domar growth model, economic growth in a developing economy is driven primarily by:',
+    correct: 'The level of saving and investment relative to the capital-output ratio',
+    wrong: [
+      miss('The size of the country\'s trade surplus', 'The Harrod-Domar model focuses on domestic saving and investment, not the trade balance.', 'The model is about capital accumulation, not trade.'),
+      miss('The rate of population growth alone', 'Population growth affects per capita outcomes but is not the central driver in the Harrod-Domar model.', 'The model centres on saving-funded investment.'),
+      miss('The level of consumer spending on imports', 'Spending on imports does not drive growth in this model; saving that funds investment does.', 'Saving, not import spending, fuels investment here.'),
+    ],
+    lesson: 'The Harrod-Domar model argues that economic growth depends on the level of saving (which finances investment) and the capital-output ratio, which shows how much extra capital is needed to produce extra output. Higher saving and investment, and a lower capital-output ratio, raise the growth rate. The model highlights the savings gap in poor countries, suggesting that low incomes limit saving and so constrain the investment needed for growth.',
+    source,
+    generated: true,
+  },
+])

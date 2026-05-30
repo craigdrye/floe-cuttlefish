@@ -154,6 +154,7 @@ export function questionCatalogKeyForTrack(trackId: string, ageGroup: AgeGroup):
 import { TIER_TOPUPS } from './tierTopUps'
 import { UNIVERSITY_103_TOPUPS } from './university103TopUps'
 import { PRIMARY_103_TOPUPS } from './primary103TopUps'
+import { HIGH_103_TOPUPS } from './high103TopUps'
 
 /**
  * Public catalog loader: builds the requested catalog, then appends university/high tier
@@ -170,6 +171,9 @@ export async function loadQuestionCatalog(catalogKey: string) {
     if (catalog[id]) catalog[id] = [...catalog[id], ...extra]
   }
   for (const [id, extra] of Object.entries(PRIMARY_103_TOPUPS)) {
+    if (catalog[id]) catalog[id] = [...catalog[id], ...extra]
+  }
+  for (const [id, extra] of Object.entries(HIGH_103_TOPUPS)) {
     if (catalog[id]) catalog[id] = [...catalog[id], ...extra]
   }
   return catalog

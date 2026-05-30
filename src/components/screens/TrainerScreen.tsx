@@ -173,6 +173,7 @@ export function TrainerScreen() {
     questionQualityRatings, setQuestionQualityRating,
     showLesson, setShowLesson,
     selectedLesson, setSelectedLesson,
+    selectedChapter, setSelectedChapter,
   } = useStore()
 
   // Back navigation: if the player drilled in through a chapter sub-map
@@ -189,7 +190,8 @@ export function TrainerScreen() {
   }
 
   const {
-    selectedTrackInfo, isSelectedCatalogReady, activeSet, baseQuestion, question, visibleAnswers, remixSeed, catalogError
+    selectedTrackInfo, isSelectedCatalogReady, activeSet, baseQuestion, question, visibleAnswers, remixSeed, catalogError,
+    chapterLessons, chapterGroups,
   } = useQuizData()
 
   const QUESTIONS_PER_STAGE = 4
@@ -334,6 +336,26 @@ export function TrainerScreen() {
     submitAnswer(answer)
   }
 
+  // Auto-advance on lesson completion: roll straight into the next lesson, and
+  // into the next chapter's lesson path once the current chapter's lessons are
+  // finished. Returns true if it navigated, false when there is nothing left.
+  const goToNextLessonOrChapter = (): boolean => {
+    const lessonIdx = chapterLessons.findIndex((l) => l.id === selectedLesson)
+    if (lessonIdx >= 0 && lessonIdx + 1 < chapterLessons.length) {
+      setSelectedLesson(chapterLessons[lessonIdx + 1].id)
+      setIndex(0)
+      return true
+    }
+    const chapterIdx = chapterGroups.findIndex((g) => g.label === selectedChapter)
+    if (chapterIdx >= 0 && chapterIdx + 1 < chapterGroups.length) {
+      // setSelectedChapter also clears selectedLesson and resets index/answer state.
+      setSelectedChapter(chapterGroups[chapterIdx + 1].label)
+      setScreen('chapter')
+      return true
+    }
+    return false
+  }
+
   const nextQuestion = () => {
     setLastXpGain(null)
     const nextIndex = index + 1
@@ -342,13 +364,18 @@ export function TrainerScreen() {
     const stageJustCompleted = nextStage > currentStage
 
     if (isCorrect && mode === 'daily' && (nextIndex >= activeSet.length || stageJustCompleted)) {
-      if (stageJustCompleted) setPendingStageCelebration(currentStage + 1)
-      // When the player finishes a lesson (or hits a stage milestone inside
-      // it) we want them back at the chapter sub-map, not the course map,
-      // so the next-lesson choice is one tap away.
-      if (selectedLesson) setSelectedLesson(null)
-      setScreen(selectedLesson ? 'chapter' : 'map')
-      if (nextIndex < activeSet.length) setIndex(nextIndex)
+      const lessonComplete = nextIndex >= activeSet.length
+      if (lessonComplete && selectedLesson && goToNextLessonOrChapter()) {
+        // Auto-advanced straight into the next lesson (or the next chapter once
+        // this chapter's lessons are done) — no detour back to the sub-map.
+      } else {
+        if (stageJustCompleted) setPendingStageCelebration(currentStage + 1)
+        // Mid-lesson stage milestone, or the end of the final chapter: drop back
+        // to the chapter sub-map (or course map) so the next pick is one tap away.
+        if (selectedLesson) setSelectedLesson(null)
+        setScreen(selectedLesson ? 'chapter' : 'map')
+        if (nextIndex < activeSet.length) setIndex(nextIndex)
+      }
     } else {
       setIndex((c) => (c + 1) % activeSet.length)
     }
