@@ -261,22 +261,9 @@ body.deep-ocean .wordle-actions button {
   color: rgba(255, 255, 255, 0.55);
 }
 
-/* Multicolored pastel palette for un-guessed keys. As soon as a letter is
-   played, its state-correct/present/absent colour takes over (those rules sit
-   above and only match non-empty keys, so they win for played letters). The
-   palette cycles every 7 keys across each row for a soft rainbow look. */
-.wordle-key.state-empty {
-  color: #3a3450;
-  background: #ffe1ec;
-}
-.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n + 1) { background: #ffd1dc; }
-.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n + 2) { background: #ffe5b4; }
-.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n + 3) { background: #fff7b2; }
-.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n + 4) { background: #c9f2c7; }
-.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n + 5) { background: #bfe9ff; }
-.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n + 6) { background: #d3d4ff; }
-.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n) { background: #ecd1ff; }
-.wordle-key.state-empty:hover { background: #ffe5b4; filter: brightness(0.96); }
+/* Un-played keys get a scattered pastel colour assigned per-letter in JS
+   (wordleKeyColor, applied inline); played keys keep their state-* colour above. */
+.wordle-key.state-empty:hover { filter: brightness(0.96); }
 
 /* ── Quordle / Octordle ── */
 .wordle-progress {

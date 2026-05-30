@@ -8,6 +8,7 @@ import { playSuccessSound, playWrongSound } from '../../lib/audio'
 import { useDailyPuzzle } from '../../hooks/useDailyPuzzle'
 import { DailyPuzzleBanner } from '../common/DailyPuzzleBanner'
 import { dailyRng } from '../../lib/dailyPuzzle'
+import { wordleKeyColor } from '../../lib/wordleKeyColors'
 import type { DailyGameId } from '../../store/types'
 
 type LetterState = 'correct' | 'present' | 'absent' | 'pending' | 'empty'
@@ -352,6 +353,7 @@ export function MultiWordleScreen({ boardCount, title, subtitle, gameId }: Multi
                       key={key}
                       type="button"
                       className={`wordle-key ${isAction ? 'action' : ''} state-${state}`}
+                      style={!isAction && state === 'empty' ? { background: wordleKeyColor(key), color: '#3a3450' } : undefined}
                       onClick={() => onKeyPress(key)}
                       aria-label={key === 'BACK' ? 'Backspace' : key}
                     >
