@@ -7,6 +7,7 @@ import { buildQuantQuestionCatalog } from './quant'
 import { buildUniversityPrepQuestionCatalog } from './universityPrep'
 import { ADULT_NEW_COURSE_BANKS } from './adultCoursesNew'
 import { CAREER_TOPUPS } from './careerTopUps'
+import { CAREER_TOPUPS_R2 } from './careerTopUpsR2'
 import { series86Imported } from './series86Imported'
 import {
   vcJargonQuestions,
@@ -1661,6 +1662,11 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
   // Quality-pass top-ups (2026-05): append AI-generated (generated:true) questions to
   // courses that were under 50, bringing every career course to >=50.
   for (const [id, extra] of Object.entries(CAREER_TOPUPS)) {
+    polished[id] = [...(polished[id] ?? []), ...extra]
+  }
+
+  // Round-2 (103-pass) top-ups: bring each course up to >=103 questions.
+  for (const [id, extra] of Object.entries(CAREER_TOPUPS_R2)) {
     polished[id] = [...(polished[id] ?? []), ...extra]
   }
 
