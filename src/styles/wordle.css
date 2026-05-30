@@ -108,25 +108,6 @@ body.deep-ocean .wordle-actions button {
   display: grid;
   gap: 6px;
   padding: 6px;
-  /* Tapping the grid focuses the hidden input to bring up the device keyboard. */
-  cursor: text;
-}
-/* Hidden but focusable input that drives the current guess. Must stay in the
-   layout (NOT display:none / visibility:hidden) so it can receive focus and
-   raise the mobile soft keyboard. font-size:16px stops iOS auto-zoom on focus. */
-.wordle-hidden-input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  border: 0;
-  opacity: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-  font-size: 16px;
 }
 .wordle-row {
   display: grid;
@@ -279,6 +260,23 @@ body.deep-ocean .wordle-actions button {
   background: rgba(51, 65, 85, 0.85);
   color: rgba(255, 255, 255, 0.55);
 }
+
+/* Multicolored pastel palette for un-guessed keys. As soon as a letter is
+   played, its state-correct/present/absent colour takes over (those rules sit
+   above and only match non-empty keys, so they win for played letters). The
+   palette cycles every 7 keys across each row for a soft rainbow look. */
+.wordle-key.state-empty {
+  color: #3a3450;
+  background: #ffe1ec;
+}
+.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n + 1) { background: #ffd1dc; }
+.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n + 2) { background: #ffe5b4; }
+.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n + 3) { background: #fff7b2; }
+.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n + 4) { background: #c9f2c7; }
+.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n + 5) { background: #bfe9ff; }
+.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n + 6) { background: #d3d4ff; }
+.wordle-keyboard-row .wordle-key.state-empty:nth-child(7n) { background: #ecd1ff; }
+.wordle-key.state-empty:hover { background: #ffe5b4; filter: brightness(0.96); }
 
 /* ── Quordle / Octordle ── */
 .wordle-progress {

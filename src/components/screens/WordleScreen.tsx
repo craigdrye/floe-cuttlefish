@@ -1,6 +1,5 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import type { ChangeEvent, KeyboardEvent as ReactKeyboardEvent } from 'react'
-import { ArrowLeft, HelpCircle } from 'lucide-react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { ArrowLeft, Delete, HelpCircle } from 'lucide-react'
 import { TopBar } from '../layout/TopBar'
 import { useStore } from '../../store/useStore'
 import { wordleWords } from '../../data/wordleWords'
@@ -22,6 +21,10 @@ const MAX_GUESSES = 6
 // from the interest sub-pool. Remainder uses the general pool. 0.65 gives
 // strong topical bias while keeping enough variety to avoid feeling repetitive.
 const INTEREST_BIAS = 0.65
+
+const ROW_1 = 'QWERTYUIOP'.split('')
+const ROW_2 = 'ASDFGHJKL'.split('')
+const ROW_3 = ['ENTER', ...'ZXCVBNM'.split(''), 'BACK']
 
 function pickRandomSolution(interestIds: ReadonlyArray<CourseTopicId> = []): string {
   const interestPool = wordsForInterests(interestIds)
@@ -59,6 +62,12 @@ function evaluateGuess(guess: string, solution: string): LetterState[] {
   return result
 }
 
+function rankState(prev: LetterState | undefined, next: LetterState): LetterState {
+  const order: LetterState[] = ['empty', 'absent', 'present', 'correct']
+  if (!prev) return next
+  return order.indexOf(next) > order.indexOf(prev) ? next : prev
+}
+
 export function WordleScreen() {
   const { setScreen, selectedInterests } = useStore()
   const daily = useDailyPuzzle('wordle')
@@ -71,10 +80,6 @@ export function WordleScreen() {
   const [status, setStatus] = useState<GameStatus>('playing')
   const [shake, setShake] = useState(false)
   const [toast, setToast] = useState<string | null>(null)
-
-  // The board renders no on-screen keyboard — players use their own. A single
-  // visually-hidden <input> is the one source of letter input.
-  const inputRef = useRef<HTMLInputElement>(null)
 
   // Auto-load the daily puzzle the first time the player opens the screen each day.
   useEffect(() => {
@@ -92,6 +97,17 @@ export function WordleScreen() {
     () => solution ? guesses.map((g) => evaluateGuess(g, solution)) : [],
     [guesses, solution],
   )
+
+  const letterStates: Record<string, LetterState> = useMemo(() => {
+    const map: Record<string, LetterState> = {}
+    guesses.forEach((g, gIdx) => {
+      const ev = evaluations[gIdx]
+      for (let i = 0; i < WORD_LEN; i += 1) {
+        map[g[i]] = rankState(map[g[i]], ev[i])
+      }
+    })
+    return map
+  }, [guesses, evaluations])
 
   const showToast = useCallback((msg: string) => {
     setToast(msg)
@@ -129,44 +145,35 @@ export function WordleScreen() {
     }
   }, [current, daily, guesses, puzzleMode, showToast, solution, status])
 
-  const focusInput = useCallback(() => {
-    inputRef.current?.focus()
-  }, [])
+  const pushLetter = useCallback((letter: string) => {
+    if (status !== 'playing') return
+    if (current.length >= WORD_LEN) return
+    setCurrent((c) => c + letter)
+  }, [current.length, status])
 
-  // Letters flow through the hidden input's VALUE, not key events: on mobile,
-  // Android predictive keyboards report keyCode 229 / 'Unidentified' for letters
-  // and Backspace, so reading the value is the only reliable path. We sanitize to
-  // at most WORD_LEN uppercase A–Z; deleting simply shrinks the value.
-  const handleInput = useCallback((e: ChangeEvent<HTMLInputElement>) => {
-    if (status !== 'playing' || !solution) return
-    const next = e.currentTarget.value.toUpperCase().replace(/[^A-Z]/g, '').slice(0, WORD_LEN)
-    setCurrent(next)
-  }, [status, solution])
+  const popLetter = useCallback(() => {
+    if (status !== 'playing') return
+    setCurrent((c) => c.slice(0, -1))
+  }, [status])
 
-  // Enter is the only key we read from keydown — it doesn't change the value.
-  const handleInputKeyDown = useCallback((e: ReactKeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter') {
-      e.preventDefault()
-      submitGuess()
-    }
-  }, [submitGuess])
-
-  // On desktop (fine pointer) keep the hidden input focused so the player can
-  // always type; on touch devices let blur dismiss the soft keyboard naturally.
-  const handleInputBlur = useCallback(() => {
-    if (typeof window !== 'undefined' && window.matchMedia('(pointer: fine)').matches) {
-      requestAnimationFrame(() => {
-        if (solution && status === 'playing') inputRef.current?.focus()
-      })
-    }
-  }, [solution, status])
-
-  // Focus the hidden input when a playable puzzle loads so desktop players can type
-  // immediately. (On iOS this won't raise the keyboard — that needs a board tap —
-  // but it's harmless.)
+  // Physical keyboard
   useEffect(() => {
-    if (solution && status === 'playing') inputRef.current?.focus()
-  }, [solution, status])
+    const onKey = (e: KeyboardEvent) => {
+      if (e.metaKey || e.ctrlKey || e.altKey) return
+      if (e.key === 'Enter') {
+        submitGuess()
+        e.preventDefault()
+      } else if (e.key === 'Backspace') {
+        popLetter()
+        e.preventDefault()
+      } else if (/^[a-zA-Z]$/.test(e.key)) {
+        pushLetter(e.key.toUpperCase())
+        e.preventDefault()
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [pushLetter, popLetter, submitGuess])
 
   const startBonusPuzzle = useCallback(() => {
     if (daily.phase !== 'bonus') return
@@ -177,8 +184,13 @@ export function WordleScreen() {
     setCurrent('')
     setStatus('playing')
     setToast(null)
-    inputRef.current?.focus()
   }, [daily, selectedInterests])
+
+  const onKeyPress = (key: string) => {
+    if (key === 'ENTER') submitGuess()
+    else if (key === 'BACK') popLetter()
+    else pushLetter(key)
+  }
 
   return (
     <main className="app-shell wordle-shell">
@@ -215,34 +227,12 @@ export function WordleScreen() {
                     <li><span className="game-rules-swatch absent" />Letter not in the word</li>
                   </ul>
                 </li>
-                <li>Type with your keyboard — on a phone, tap the grid to bring it up. <kbd>Enter</kbd> submits, <kbd>⌫</kbd> deletes.</li>
+                <li>Type with your keyboard or tap the on-screen keys. <kbd>Enter</kbd> submits, <kbd>⌫</kbd> deletes.</li>
               </ol>
             </div>
           </details>
 
-          <input
-            ref={inputRef}
-            className="wordle-hidden-input"
-            value={current}
-            onChange={handleInput}
-            onKeyDown={handleInputKeyDown}
-            onBlur={handleInputBlur}
-            type="text"
-            inputMode="text"
-            autoCapitalize="characters"
-            autoComplete="off"
-            autoCorrect="off"
-            spellCheck={false}
-            maxLength={WORD_LEN}
-            enterKeyHint="done"
-            aria-label="Type your 5-letter guess"
-          />
-
-          <div
-            className={`wordle-board ${shake ? 'shaking' : ''}`}
-            onClick={focusInput}
-            onTouchEnd={focusInput}
-          >
+          <div className={`wordle-board ${shake ? 'shaking' : ''}`}>
             {Array.from({ length: MAX_GUESSES }).map((_, rowIdx) => {
               const isCurrentRow = rowIdx === guesses.length && status === 'playing'
               const guess = guesses[rowIdx] ?? (isCurrentRow ? current.padEnd(WORD_LEN, ' ') : '     ')
@@ -309,6 +299,27 @@ export function WordleScreen() {
             </div>
           )}
 
+          <div className="wordle-keyboard" role="group" aria-label="Wordle keyboard">
+            {[ROW_1, ROW_2, ROW_3].map((row, rIdx) => (
+              <div key={rIdx} className="wordle-keyboard-row">
+                {row.map((key) => {
+                  const isAction = key === 'ENTER' || key === 'BACK'
+                  const state = isAction ? '' : letterStates[key] ?? 'empty'
+                  return (
+                    <button
+                      key={key}
+                      type="button"
+                      className={`wordle-key ${isAction ? 'action' : ''} state-${state}`}
+                      onClick={() => onKeyPress(key)}
+                      aria-label={key === 'BACK' ? 'Backspace' : key}
+                    >
+                      {key === 'BACK' ? <Delete size={16} /> : key}
+                    </button>
+                  )
+                })}
+              </div>
+            ))}
+          </div>
         </section>
       </section>
     </main>
