@@ -40,6 +40,7 @@ import { projectManagementR2Questions } from './projectManagementR2'
 import { psychology101R2Questions } from './psychology101R2'
 import { publicAffairsR2Questions } from './publicAffairsR2'
 import { publicSpeakingR2Questions } from './publicSpeakingR2'
+import { salesFundamentalsR2Questions } from './salesFundamentalsR2'
 import { softwareEngineeringRoadmapR2Questions } from './softwareEngineeringRoadmapR2'
 import { softwareR2Questions } from './softwareR2'
 import { statisticsIntroR2Questions } from './statisticsIntroR2'
@@ -95,6 +96,7 @@ export const CAREER_TOPUPS_R2: Record<string, Question[]> = {
   psychology101: psychology101R2Questions,
   publicAffairs: publicAffairsR2Questions,
   publicSpeaking: publicSpeakingR2Questions,
+  salesFundamentals: salesFundamentalsR2Questions,
   softwareEngineeringRoadmap: softwareEngineeringRoadmapR2Questions,
   software: softwareR2Questions,
   statisticsIntro: statisticsIntroR2Questions,
