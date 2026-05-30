@@ -1,0 +1,340 @@
+import { makeQuestionBank } from './base'
+import type { Question } from './types'
+
+const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
+const source = 'Floe neuroscience top-up'
+
+export const neuroscienceUniv103TopUpQuestions: Question[] = makeQuestionBank('University', [
+  // ---------------- Chapter 1: Neuron Structure ----------------
+  {
+    id: 7743000,
+    chapter: 'Neuron Structure',
+    title: 'Function of the axon hillock',
+    prompt: 'In a typical multipolar neuron, the axon hillock is the region most directly responsible for which function?',
+    correct: 'Integrating incoming graded potentials and initiating the action potential when threshold is reached',
+    wrong: [
+      miss('Synthesizing the neurotransmitters released at the axon terminal', 'Neurotransmitter synthesis occurs in the soma and terminals, not at the hillock; the hillock is where spikes are triggered.', 'Think about the trigger zone for the action potential rather than where chemicals are made.'),
+      miss('Receiving most synaptic inputs from other neurons', 'Most synaptic inputs arrive on dendrites and the cell body, not at the axon hillock itself.', 'Which structure has the highest density of incoming synapses?'),
+      miss('Forming the myelin sheath around the axon', 'Myelin is produced by oligodendrocytes or Schwann cells, not by the neuron at the hillock.', 'Recall which glial cells wrap the axon.'),
+    ],
+    lesson: 'The axon hillock (and the adjacent initial segment) has the highest density of voltage-gated sodium channels and the lowest threshold in the neuron. It sums the graded excitatory and inhibitory potentials spreading from the dendrites and soma, and when the net depolarization reaches threshold it fires an all-or-none action potential.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7743001,
+    chapter: 'Neuron Structure',
+    title: 'Role of Nissl bodies',
+    prompt: 'Nissl bodies, visible as basophilic clumps in the neuronal cell body, primarily represent which structures?',
+    correct: 'Rough endoplasmic reticulum and free ribosomes engaged in protein synthesis',
+    wrong: [
+      miss('Aggregates of mitochondria supplying ATP', 'Mitochondria are distinct organelles; Nissl bodies stain for ribosomal RNA, not for energy-producing membranes.', 'The basophilic staining points to nucleic acids, not to ATP machinery.'),
+      miss('Bundles of neurofilaments providing structural support', 'Neurofilaments are cytoskeletal proteins; Nissl substance is defined by ribosome-rich rough ER.', 'Ask what stains intensely with basic dyes inside the soma.'),
+      miss('Stored vesicles of neurotransmitter awaiting release', 'Transmitter vesicles concentrate at terminals, whereas Nissl bodies are protein-synthesis machinery in the soma.', 'Distinguish where transmitters are stored from where proteins are made.'),
+    ],
+    lesson: 'Nissl bodies are clusters of rough endoplasmic reticulum and free polyribosomes that give the neuronal cytoplasm its characteristic basophilic staining. They reflect the high protein-synthetic demand of neurons and disperse (chromatolysis) when an axon is injured, making them a useful marker of neuronal health.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7743002,
+    chapter: 'Neuron Structure',
+    title: 'Glial cell of central myelination',
+    prompt: 'Which glial cell type forms the myelin sheaths around axons within the central nervous system?',
+    correct: 'Oligodendrocytes',
+    wrong: [
+      miss('Schwann cells', 'Schwann cells myelinate axons in the peripheral nervous system, not the central nervous system.', 'Match the cell to the correct compartment: one for CNS, one for PNS.'),
+      miss('Astrocytes', 'Astrocytes support neurons, regulate the extracellular environment, and help form the blood-brain barrier but do not make myelin.', 'Which CNS glial cell wraps axons in lipid layers?'),
+      miss('Microglia', 'Microglia are the immune cells of the CNS that perform phagocytosis; they do not produce myelin.', 'Think structural insulation, not immune defense.'),
+    ],
+    lesson: 'Oligodendrocytes myelinate CNS axons, with a single oligodendrocyte extending processes that wrap segments of several different axons. In the PNS, Schwann cells do the equivalent job but each wraps only one internode of a single axon. Myelin speeds conduction by enabling saltatory propagation between nodes of Ranvier.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 2: Resting Membrane Potential ----------------
+  {
+    id: 7743003,
+    chapter: 'Resting Membrane Potential',
+    title: 'Dominant ion at rest',
+    prompt: 'The resting membrane potential of a typical neuron (about -70 mV) sits close to the equilibrium potential of which ion, and why?',
+    correct: 'Potassium, because the resting membrane is far more permeable to K+ than to other ions',
+    wrong: [
+      miss('Sodium, because the Na+/K+ pump keeps sodium high inside', 'The pump keeps sodium concentrated outside, and resting permeability to Na+ is low, so the potential is far from E_Na (about +60 mV).', 'Compare resting permeabilities: which ion has the most open leak channels?'),
+      miss('Chloride, because Cl- channels set the resting potential', 'In most neurons chloride is near but not the primary determinant; the high K+ permeability dominates the resting value.', 'Which ion has the greatest number of open leak channels at rest?'),
+      miss('Calcium, because Ca2+ gradients are the steepest', 'Although the Ca2+ gradient is very steep, resting Ca2+ permeability is extremely low, so it barely influences the resting potential.', 'A steep gradient matters only if the membrane is permeable to that ion.'),
+    ],
+    lesson: 'At rest the membrane is dominated by open potassium leak channels, so the resting potential (around -70 mV) lies near the potassium equilibrium potential (E_K, about -90 mV). It is slightly more positive than E_K because a small resting Na+ permeability pulls it toward E_Na. The Na+/K+-ATPase maintains the gradients that make this possible.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7743004,
+    chapter: 'Resting Membrane Potential',
+    title: 'Nernst versus Goldman',
+    prompt: 'A student wants to predict the actual resting membrane potential of a neuron that is permeable to Na+, K+, and Cl- simultaneously. Which relationship is most appropriate?',
+    correct: 'The Goldman-Hodgkin-Katz equation, because it weights each ion by its relative permeability',
+    wrong: [
+      miss('The Nernst equation for potassium alone, since K+ dominates', 'The Nernst equation gives the equilibrium potential for a single ion and ignores the contributions of Na+ and Cl-.', 'You need a formula that combines several permeant ions, not just one.'),
+      miss('Ohms law (V = IR) applied to the whole membrane', 'Ohms law relates voltage, current, and resistance but does not by itself predict the resting potential from ion gradients and permeabilities.', 'You need an equation built from ion concentrations and permeabilities.'),
+      miss('The Henderson-Hasselbalch equation', 'Henderson-Hasselbalch relates pH to acid dissociation; it is unrelated to membrane potentials.', 'That equation belongs to acid-base chemistry, not electrophysiology.'),
+    ],
+    lesson: 'The Nernst equation gives the equilibrium potential for a single ion, but a real membrane is permeable to several ions at once. The Goldman-Hodgkin-Katz (GHK) equation generalizes Nernst by weighting each ion concentration by its relative permeability, yielding the steady-state membrane potential when multiple ions contribute.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 3: Action Potentials ----------------
+  {
+    id: 7743005,
+    chapter: 'Action Potentials',
+    title: 'Cause of the rising phase',
+    prompt: 'During the rising (depolarizing) phase of a neuronal action potential, the rapid change in membrane potential is caused primarily by:',
+    correct: 'A regenerative influx of Na+ through voltage-gated sodium channels',
+    wrong: [
+      miss('Efflux of K+ through voltage-gated potassium channels', 'Potassium efflux drives repolarization (the falling phase), not the rising phase.', 'Which ion moving inward would make the inside more positive?'),
+      miss('Influx of Cl- through ligand-gated chloride channels', 'Chloride influx is hyperpolarizing/inhibitory and is not responsible for the spike upstroke.', 'The upstroke needs a depolarizing inward positive current.'),
+      miss('Active transport of Na+ outward by the Na+/K+ pump', 'The pump works slowly and moves sodium out; it cannot account for the rapid depolarization of the spike.', 'The fast upstroke comes from channels, not from the pump.'),
+    ],
+    lesson: 'When the membrane reaches threshold, voltage-gated Na+ channels open and Na+ rushes in down its electrochemical gradient. This depolarization opens still more Na+ channels, creating the regenerative, all-or-none upstroke. The channels then inactivate, and delayed voltage-gated K+ channels open to repolarize the membrane.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7743006,
+    chapter: 'Action Potentials',
+    title: 'Basis of the absolute refractory period',
+    prompt: 'The absolute refractory period of an axon, during which no second action potential can be generated regardless of stimulus strength, is caused mainly by:',
+    correct: 'Inactivation of voltage-gated sodium channels',
+    wrong: [
+      miss('Complete closure of all voltage-gated potassium channels', 'During this period K+ channels are still open; it is Na+ channel inactivation that prevents another spike.', 'Focus on the channel that must reset before the membrane can fire again.'),
+      miss('Depletion of ATP needed by the sodium-potassium pump', 'A single action potential does not deplete ATP; the pump is not the limiting factor for the refractory period.', 'The block is about channel state, not energy supply.'),
+      miss('Exhaustion of neurotransmitter at the synapse', 'The refractory period is a property of the axonal membrane and its channels, independent of synaptic transmitter stores.', 'Think about the axon membrane itself, not the synapse.'),
+    ],
+    lesson: 'After opening, voltage-gated Na+ channels enter an inactivated state with their inactivation gate closed. Until the membrane repolarizes enough for these channels to return to the resting (closed but available) state, no new action potential can fire, defining the absolute refractory period. This ensures one-way propagation and limits maximum firing frequency.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7743007,
+    chapter: 'Action Potentials',
+    title: 'Why myelin speeds conduction',
+    prompt: 'Myelination increases the conduction velocity of an axon primarily because it:',
+    correct: 'Forces the action potential to regenerate only at the nodes of Ranvier (saltatory conduction)',
+    wrong: [
+      miss('Increases membrane capacitance so charge accumulates faster', 'Myelin decreases capacitance and increases resistance; increased capacitance would actually slow signaling.', 'Recall whether insulation raises or lowers capacitance.'),
+      miss('Opens additional sodium channels along the internodes', 'Internodes under myelin have few Na+ channels; the channels are concentrated at the nodes.', 'Where along a myelinated axon are voltage-gated Na+ channels clustered?'),
+      miss('Generates new action potentials continuously along the whole axon', 'Continuous regeneration is what happens in unmyelinated axons and is slower than saltatory conduction.', 'Myelinated axons skip the spike between nodes rather than regenerating everywhere.'),
+    ],
+    lesson: 'Myelin acts as an insulator that lowers membrane capacitance and increases transverse resistance, so depolarizing current spreads passively and quickly down the internode. The action potential only regenerates at the nodes of Ranvier, where Na+ channels are concentrated, causing the impulse to jump from node to node (saltatory conduction) much faster than continuous propagation.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 4: Synaptic Transmission ----------------
+  {
+    id: 7743008,
+    chapter: 'Synaptic Transmission',
+    title: 'Trigger for vesicle fusion',
+    prompt: 'At a chemical synapse, what is the immediate trigger that causes synaptic vesicles to fuse with the presynaptic membrane and release neurotransmitter?',
+    correct: 'Influx of Ca2+ through voltage-gated calcium channels in the presynaptic terminal',
+    wrong: [
+      miss('Influx of Na+ that directly binds the vesicle release machinery', 'Sodium entry depolarizes the terminal, but it is Ca2+, sensed by synaptotagmin, that triggers fusion.', 'Which ion is the direct chemical signal sensed by the fusion machinery?'),
+      miss('Efflux of K+ that pulls vesicles toward the membrane', 'Potassium efflux repolarizes the terminal and does not trigger vesicle fusion.', 'Look for an inward signal that the fusion proteins can detect.'),
+      miss('Binding of neurotransmitter to presynaptic receptors', 'Presynaptic autoreceptors modulate release but do not cause the primary fusion event, which is Ca2+ dependent.', 'The core trigger is an ion entering the terminal, not a transmitter feedback loop.'),
+    ],
+    lesson: 'When an action potential reaches the axon terminal, the depolarization opens voltage-gated Ca2+ channels. The resulting rise in intracellular Ca2+ is sensed by synaptotagmin, which, with the SNARE complex, drives vesicle fusion and exocytosis of neurotransmitter into the synaptic cleft. Calcium is therefore the essential coupling signal between excitation and secretion.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7743009,
+    chapter: 'Synaptic Transmission',
+    title: 'Spatial versus temporal summation',
+    prompt: 'A postsynaptic neuron reaches threshold because several different presynaptic terminals fire nearly simultaneously, and their EPSPs add together. This is an example of:',
+    correct: 'Spatial summation',
+    wrong: [
+      miss('Temporal summation', 'Temporal summation involves rapid repeated firing of the same input over time, not multiple distinct inputs at once.', 'Distinguish many inputs at one moment from one input repeated quickly.'),
+      miss('Lateral inhibition', 'Lateral inhibition sharpens contrast between neighboring pathways and reduces, rather than sums, signals.', 'This describes adding excitation, not suppressing neighbors.'),
+      miss('Saltatory conduction', 'Saltatory conduction is how a spike travels along a myelinated axon, unrelated to summing synaptic inputs.', 'Summation is about combining synaptic potentials, not axonal propagation.'),
+    ],
+    lesson: 'Spatial summation occurs when EPSPs from multiple synapses at different locations arrive together and combine at the axon hillock. Temporal summation occurs when a single synapse fires repeatedly in quick succession so its EPSPs overlap in time. Both mechanisms let subthreshold inputs add up to reach the firing threshold.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7743010,
+    chapter: 'Synaptic Transmission',
+    title: 'Ionotropic versus metabotropic',
+    prompt: 'Which statement best distinguishes an ionotropic receptor from a metabotropic receptor?',
+    correct: 'An ionotropic receptor is itself a ligand-gated ion channel, whereas a metabotropic receptor acts through G proteins and second messengers',
+    wrong: [
+      miss('Ionotropic receptors use G proteins, while metabotropic receptors are ion channels', 'This reverses the definitions; it is the metabotropic receptor that couples to G proteins.', 'Match the term ionotropic to direct ion flow.'),
+      miss('Ionotropic receptors respond only to light, metabotropic only to chemicals', 'Both are typically activated by neurotransmitters; the distinction is the mechanism, not the stimulus type.', 'The difference is how the signal is transduced, not what kind of stimulus.'),
+      miss('Ionotropic receptors are always inhibitory and metabotropic always excitatory', 'Either class can be excitatory or inhibitory depending on the ions and pathways involved.', 'Effect sign depends on the specific receptor, not on the ionotropic/metabotropic split.'),
+    ],
+    lesson: 'Ionotropic receptors are ligand-gated ion channels that open directly when a transmitter binds, producing fast, brief responses. Metabotropic receptors are G-protein-coupled receptors that activate intracellular second-messenger cascades, producing slower but longer-lasting and often amplified effects. The same transmitter can act on both types.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 5: Neurotransmitters ----------------
+  {
+    id: 7743011,
+    chapter: 'Neurotransmitters',
+    title: 'Primary inhibitory transmitter',
+    prompt: 'Which neurotransmitter is the principal inhibitory transmitter in the adult mammalian brain?',
+    correct: 'GABA (gamma-aminobutyric acid)',
+    wrong: [
+      miss('Glutamate', 'Glutamate is the main excitatory transmitter in the brain, essentially the opposite role.', 'Pair the excitatory and inhibitory amino-acid transmitters and pick the inhibitory one.'),
+      miss('Acetylcholine', 'Acetylcholine is excitatory at the neuromuscular junction and has diverse central roles, but it is not the chief inhibitory transmitter.', 'Think of the dedicated inhibitory amino acid rather than a modulatory transmitter.'),
+      miss('Dopamine', 'Dopamine is a modulatory monoamine involved in reward and movement, not the principal inhibitory transmitter.', 'The main inhibitory transmitter is an amino acid, not a monoamine.'),
+    ],
+    lesson: 'GABA is the dominant inhibitory neurotransmitter in the adult brain, typically opening Cl- channels (GABA-A) or activating K+ currents via G proteins (GABA-B) to hyperpolarize neurons. Glycine plays the analogous inhibitory role in the spinal cord and brainstem, while glutamate is the main excitatory transmitter.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7743012,
+    chapter: 'Neurotransmitters',
+    title: 'Termination of acetylcholine signaling',
+    prompt: 'At the neuromuscular junction, the action of acetylcholine is terminated primarily by:',
+    correct: 'Enzymatic hydrolysis by acetylcholinesterase in the synaptic cleft',
+    wrong: [
+      miss('Reuptake of intact acetylcholine into the presynaptic terminal', 'Acetylcholine is not taken back up intact; it is first broken down, and choline is then recycled.', 'Recall whether ACh is degraded or transported whole back into the terminal.'),
+      miss('Diffusion of acetylcholine into nearby capillaries only', 'Diffusion contributes minimally; rapid enzymatic breakdown is the dominant mechanism at this synapse.', 'A specific enzyme, not passive diffusion, ends the ACh signal.'),
+      miss('Degradation by monoamine oxidase (MAO)', 'MAO degrades monoamines such as dopamine and norepinephrine, not acetylcholine.', 'Match the transmitter class to its degrading enzyme.'),
+    ],
+    lesson: 'Acetylcholinesterase in the synaptic cleft rapidly hydrolyzes acetylcholine into choline and acetate, ending its action within milliseconds. Choline is then transported back into the presynaptic terminal for resynthesis. Inhibitors of this enzyme (e.g., organophosphates, some drugs) prolong ACh action and can cause continuous muscle stimulation.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7743013,
+    chapter: 'Neurotransmitters',
+    title: 'Dopamine and Parkinson disease',
+    prompt: 'The motor symptoms of Parkinson disease are most directly linked to the degeneration of dopaminergic neurons in which structure?',
+    correct: 'The substantia nigra pars compacta',
+    wrong: [
+      miss('The hippocampus', 'The hippocampus is central to memory formation, not to the dopaminergic control of movement lost in Parkinson disease.', 'Look for a midbrain nucleus that projects dopamine to the striatum.'),
+      miss('The cerebellum', 'The cerebellum coordinates movement but is not the site of the dopaminergic loss that causes Parkinson disease.', 'The lesion is a dopamine-producing nucleus, not a coordination center.'),
+      miss('The locus coeruleus', 'The locus coeruleus is the main noradrenergic nucleus; the classic Parkinson lesion is dopaminergic, in the midbrain.', 'Distinguish the noradrenergic source from the dopaminergic one.'),
+    ],
+    lesson: 'In Parkinson disease, dopaminergic neurons of the substantia nigra pars compacta degenerate, depleting dopamine in the striatum (the nigrostriatal pathway). This disrupts basal ganglia circuits that regulate movement, producing bradykinesia, rigidity, and resting tremor. Levodopa therapy aims to replenish the lost dopamine.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 6: Neuroanatomy ----------------
+  {
+    id: 7743014,
+    chapter: 'Neuroanatomy',
+    title: 'Function of the hypothalamus',
+    prompt: 'Which of the following is the best description of the principal function of the hypothalamus?',
+    correct: 'Maintaining homeostasis by coordinating the autonomic nervous system and the endocrine system',
+    wrong: [
+      miss('Relaying nearly all sensory information to the cerebral cortex', 'That relay function describes the thalamus, not the hypothalamus.', 'Do not confuse the thalamus (sensory relay) with the hypothalamus (homeostasis).'),
+      miss('Coordinating fine motor movements and balance', 'Fine motor coordination and balance are roles of the cerebellum, not the hypothalamus.', 'Match homeostasis and hormone control to the correct structure.'),
+      miss('Forming new long-term declarative memories', 'Declarative memory formation depends on the hippocampus, not the hypothalamus.', 'The hypothalamus regulates internal state, not memory consolidation.'),
+    ],
+    lesson: 'The hypothalamus is the brains master regulator of homeostasis. It controls body temperature, hunger, thirst, circadian rhythms, and stress responses by directing the autonomic nervous system and by governing the pituitary gland, thereby linking the nervous and endocrine systems. The nearby thalamus, by contrast, is the great sensory relay station.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7743015,
+    chapter: 'Neuroanatomy',
+    title: 'Broca area function',
+    prompt: 'Damage to Broca area, typically in the inferior frontal gyrus of the dominant hemisphere, characteristically produces which deficit?',
+    correct: 'Non-fluent (expressive) aphasia, with effortful, halting speech but relatively preserved comprehension',
+    wrong: [
+      miss('Fluent speech that is grammatically smooth but largely meaningless, with poor comprehension', 'That pattern describes Wernicke (receptive) aphasia, caused by damage to a temporal area, not Broca area.', 'Broca is about output; the deficit you want involves halting production.'),
+      miss('Complete loss of the ability to hear spoken words', 'Inability to perceive sound reflects auditory pathway damage, not Broca area, which concerns speech production.', 'Broca damage affects producing speech, not basic hearing.'),
+      miss('Loss of the ability to recognize familiar faces', 'Failure to recognize faces (prosopagnosia) involves temporal-occipital regions, not Broca area.', 'Focus on speech output rather than visual recognition.'),
+    ],
+    lesson: 'Broca area in the frontal lobe is critical for speech production. Lesions cause non-fluent (expressive) aphasia: patients understand language reasonably well but speak in short, effortful, often agrammatical phrases. This contrasts with Wernicke aphasia, where speech is fluent but meaningless and comprehension is impaired.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7743016,
+    chapter: 'Neuroanatomy',
+    title: 'Sympathetic versus parasympathetic',
+    prompt: 'Activation of the sympathetic division of the autonomic nervous system would be expected to produce which of the following effects?',
+    correct: 'Increased heart rate and pupil dilation',
+    wrong: [
+      miss('Decreased heart rate and increased digestive activity', 'These are parasympathetic (rest-and-digest) effects, opposite to sympathetic activation.', 'Recall whether fight-or-flight speeds up or slows down the heart.'),
+      miss('Pupil constriction and increased salivation', 'Pupil constriction and copious salivation are parasympathetic responses, not sympathetic ones.', 'Sympathetic activation prepares the body for action, not for digestion.'),
+      miss('Bronchoconstriction and lowered blood glucose', 'Sympathetic activation dilates bronchi and raises blood glucose to fuel activity, the opposite of these effects.', 'Think about what would help the body during an emergency.'),
+    ],
+    lesson: 'The sympathetic division mediates the fight-or-flight response: it raises heart rate and blood pressure, dilates the pupils and bronchioles, mobilizes glucose, and diverts blood toward skeletal muscle. The parasympathetic division promotes rest-and-digest functions, slowing the heart and enhancing digestion, generally opposing sympathetic effects.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 7: Sensory Systems ----------------
+  {
+    id: 7743017,
+    chapter: 'Sensory Systems',
+    title: 'Phototransduction in rods',
+    prompt: 'When a rod photoreceptor in the retina absorbs light, what is its immediate electrical response?',
+    correct: 'It hyperpolarizes and decreases its release of glutamate',
+    wrong: [
+      miss('It depolarizes and increases glutamate release', 'Photoreceptors are unusual: light hyperpolarizes them and reduces transmitter release rather than depolarizing them.', 'Recall that rods are depolarized in the dark and respond to light in the opposite direction.'),
+      miss('It fires an all-or-none action potential', 'Rods respond with graded potentials, not action potentials; they do not spike like typical neurons.', 'Photoreceptors signal with graded changes, not classic spikes.'),
+      miss('It releases GABA to excite bipolar cells', 'Photoreceptors release glutamate, not GABA, and light decreases that release.', 'Identify the transmitter rods actually use and the direction light changes it.'),
+    ],
+    lesson: 'In the dark, a cyclic-GMP-gated current keeps rods depolarized and steadily releasing glutamate. Light activates rhodopsin, triggering a transduction cascade (transducin to phosphodiesterase) that lowers cGMP, closes the channels, and hyperpolarizes the cell. This decreases glutamate release, the signal that downstream bipolar cells interpret as light.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7743018,
+    chapter: 'Sensory Systems',
+    title: 'Tonotopy in the cochlea',
+    prompt: 'The cochlea encodes sound frequency in part through its mechanical properties. Where along the basilar membrane are high-frequency sounds best detected?',
+    correct: 'At the base, near the oval window, where the membrane is narrow and stiff',
+    wrong: [
+      miss('At the apex, where the membrane is wide and floppy', 'The apex responds best to low frequencies; high frequencies peak at the stiff base.', 'Match stiff and narrow to high pitch, wide and floppy to low pitch.'),
+      miss('Uniformly along the entire length of the membrane', 'The basilar membrane is tonotopically organized, so different frequencies peak at different positions, not uniformly.', 'Different locations are tuned to different frequencies.'),
+      miss('Only in the semicircular canals', 'The semicircular canals sense rotational head movement (balance), not sound frequency.', 'Frequency is encoded in the cochlea, not the vestibular organs.'),
+    ],
+    lesson: 'The basilar membrane is tonotopically organized: it is narrow and stiff at the base (near the oval window) and wide and flexible at the apex. High-frequency sounds maximally vibrate the base, while low-frequency sounds peak at the apex. This place coding lets the brain interpret pitch from which hair cells are most strongly stimulated.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 8: Motor Systems ----------------
+  {
+    id: 7743019,
+    chapter: 'Motor Systems',
+    title: 'Upper versus lower motor neuron signs',
+    prompt: 'Which set of findings is most characteristic of an upper motor neuron lesion (as opposed to a lower motor neuron lesion)?',
+    correct: 'Spastic paralysis with hyperreflexia and a positive Babinski sign',
+    wrong: [
+      miss('Flaccid paralysis with absent reflexes and muscle wasting', 'These are hallmarks of a lower motor neuron lesion, not an upper motor neuron lesion.', 'Match spasticity to upper, flaccidity and wasting to lower.'),
+      miss('Fasciculations and rapid, severe muscle atrophy', 'Fasciculations and pronounced early atrophy point to lower motor neuron damage.', 'Denervation signs like fasciculations come from lower motor neuron loss.'),
+      miss('Complete loss of all sensation below the lesion only', 'Pure sensory loss reflects damage to sensory pathways, not a defining feature of an upper motor neuron lesion.', 'The question concerns motor signs, not sensory loss.'),
+    ],
+    lesson: 'Upper motor neuron lesions (in the cortex or descending tracts) release lower circuits from inhibition, producing spastic paralysis, hyperreflexia, increased tone, and a positive Babinski sign with little muscle atrophy. Lower motor neuron lesions (the final motor pathway) cause flaccid paralysis, hyporeflexia or areflexia, fasciculations, and marked atrophy.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 9: Neural Plasticity, Learning and Memory ----------------
+  {
+    id: 7743020,
+    chapter: 'Neural Plasticity, Learning and Memory',
+    title: 'Mechanism of long-term potentiation',
+    prompt: 'In the classic NMDA-dependent form of long-term potentiation (LTP) at hippocampal CA1 synapses, what allows the NMDA receptor to admit Ca2+ during strong synaptic activity?',
+    correct: 'Postsynaptic depolarization relieves the Mg2+ block of the NMDA receptor channel',
+    wrong: [
+      miss('Glutamate binding alone is sufficient to open the channel at rest', 'The NMDA receptor is both ligand- and voltage-dependent; at resting potential Mg2+ blocks the pore even when glutamate is bound.', 'Recall the coincidence-detector property requiring both transmitter and depolarization.'),
+      miss('Acetylcholine binds the NMDA receptor to open it', 'NMDA receptors are activated by glutamate (with glycine as co-agonist), not by acetylcholine.', 'Identify the correct transmitter for this glutamatergic receptor.'),
+      miss('Closure of AMPA receptors forces Ca2+ through the NMDA receptor', 'AMPA receptors actually open first to provide the depolarization; their closure does not drive NMDA conductance.', 'AMPA activation supplies the depolarization, it does not close to help.'),
+    ],
+    lesson: 'The NMDA receptor is a coincidence detector: it requires both glutamate binding and postsynaptic depolarization. At rest, Mg2+ plugs the channel; strong activity (via AMPA receptors) depolarizes the membrane, expelling Mg2+ and letting Ca2+ enter. The Ca2+ rise activates CaMKII and other kinases, driving AMPA receptor insertion and the lasting strengthening that underlies LTP.',
+    source,
+    generated: true,
+  },
+])

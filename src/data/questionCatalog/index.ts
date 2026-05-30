@@ -152,15 +152,20 @@ export function questionCatalogKeyForTrack(trackId: string, ageGroup: AgeGroup):
 }
 
 import { TIER_TOPUPS } from './tierTopUps'
+import { UNIVERSITY_103_TOPUPS } from './university103TopUps'
 
 /**
  * Public catalog loader: builds the requested catalog, then appends university/high tier
- * question top-ups (generated:true) to any track that already has a bank in this catalog,
- * bringing under-50 courses up to >=50. (Career top-ups merge inside buildCareerQuestionCatalog.)
+ * question top-ups (generated:true) to any track that already has a bank in this catalog.
+ * TIER_TOPUPS brought under-50 courses up to >=50; UNIVERSITY_103_TOPUPS brings the 47
+ * university courses up to >=103. (Career top-ups merge inside buildCareerQuestionCatalog.)
  */
 export async function loadQuestionCatalog(catalogKey: string) {
   const catalog = await loadQuestionCatalogRaw(catalogKey)
   for (const [id, extra] of Object.entries(TIER_TOPUPS)) {
+    if (catalog[id]) catalog[id] = [...catalog[id], ...extra]
+  }
+  for (const [id, extra] of Object.entries(UNIVERSITY_103_TOPUPS)) {
     if (catalog[id]) catalog[id] = [...catalog[id], ...extra]
   }
   return catalog

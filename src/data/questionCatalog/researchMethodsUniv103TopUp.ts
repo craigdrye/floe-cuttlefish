@@ -1,0 +1,340 @@
+import { makeQuestionBank } from './base'
+import type { Question } from './types'
+
+const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
+const source = 'Floe researchMethods top-up'
+
+export const researchMethodsUniv103TopUpQuestions: Question[] = makeQuestionBank('University', [
+  // ---------------- Variables and Hypotheses ----------------
+  {
+    id: 7744000,
+    chapter: 'Variables and Hypotheses',
+    title: 'Independent vs Dependent Variable',
+    prompt: 'A researcher manipulates the amount of sleep participants get and then measures their reaction time. Which variable is the dependent variable?',
+    correct: 'Reaction time',
+    wrong: [
+      miss('Amount of sleep', 'Sleep is the factor the researcher deliberately manipulates, which makes it the independent variable, not the dependent one.', 'The dependent variable is the outcome you measure, not the one you set.'),
+      miss('The number of participants', 'Sample size is a feature of the study design, not an outcome being measured in response to a manipulation.', 'Ask which quantity is expected to change as a result of the manipulation.'),
+      miss('The reliability of the reaction-time test', 'Reliability is a property of the measurement instrument, not the variable whose values are recorded as the study outcome.', 'Distinguish the measured outcome from the quality of the tool measuring it.'),
+    ],
+    lesson: 'The independent variable (IV) is what the experimenter manipulates; the dependent variable (DV) is the outcome measured in response. Here sleep is the IV and reaction time is the DV. A useful phrasing: the DV depends on the IV.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7744001,
+    chapter: 'Variables and Hypotheses',
+    title: 'The Null Hypothesis',
+    prompt: 'In null hypothesis significance testing, what does the null hypothesis (H0) typically state?',
+    correct: 'There is no effect or no difference between the groups or conditions being compared.',
+    wrong: [
+      miss('The researcher predicts a strong positive effect.', 'A directional prediction of an effect is the alternative (research) hypothesis, not the null.', 'The null is the claim that the predicted effect is absent.'),
+      miss('The sample is representative of the population.', 'Representativeness is a sampling concern, not the statistical statement being tested by H0.', 'H0 concerns the effect or difference, not sample composition.'),
+      miss('The study has sufficient statistical power.', 'Power is a property of the test design that affects the ability to reject H0; it is not what H0 asserts.', 'Separate what the hypothesis claims from how likely you are to detect an effect.'),
+    ],
+    lesson: 'The null hypothesis states there is no effect, no relationship, or no difference. The goal of a significance test is to assess whether the observed data provide enough evidence to reject H0 in favor of the alternative hypothesis.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7744002,
+    chapter: 'Variables and Hypotheses',
+    title: 'Operational Definitions',
+    prompt: 'Why does a researcher provide an operational definition of a construct such as anxiety?',
+    correct: 'To specify exactly how the construct will be measured or manipulated so the study can be replicated.',
+    wrong: [
+      miss('To make the construct sound more scientific in the write-up.', 'An operational definition serves a methodological purpose, not a rhetorical one.', 'Think about what makes a study repeatable by others.'),
+      miss('To prove that the construct genuinely exists.', 'Operationalizing a construct does not establish its reality; it only fixes how it is observed in this study.', 'A definition specifies measurement, it does not validate existence.'),
+      miss('To guarantee the measurement is perfectly valid.', 'Defining how you measure something does not by itself ensure the measure is valid; validity must be assessed separately.', 'Specifying a procedure is not the same as proving it is accurate.'),
+    ],
+    lesson: 'An operational definition translates an abstract construct into concrete, observable procedures (e.g., anxiety as a score on a specified questionnaire). This precision lets other researchers replicate the study and lets readers judge the measurement, though it does not by itself guarantee validity.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Experimental vs Correlational Design ----------------
+  {
+    id: 7744003,
+    chapter: 'Experimental vs Correlational Design',
+    title: 'Random Assignment',
+    prompt: 'What is the primary purpose of randomly assigning participants to conditions in a true experiment?',
+    correct: 'To distribute confounding variables evenly across conditions so the groups are comparable at the outset.',
+    wrong: [
+      miss('To ensure the sample is representative of the target population.', 'Representativeness comes from random sampling, not random assignment; the two serve different goals.', 'Distinguish how participants are selected from how they are placed into conditions.'),
+      miss('To increase the sample size of each condition.', 'Random assignment divides existing participants; it does not add new ones or change the total count.', 'Assignment allocates participants, it does not recruit them.'),
+      miss('To make the dependent variable easier to measure.', 'Random assignment affects group equivalence, not the measurement procedure for the outcome.', 'Focus on what makes causal comparison between groups fair.'),
+    ],
+    lesson: 'Random assignment makes the groups probabilistically equivalent on all variables before the manipulation, so differences in the outcome can be attributed to the independent variable. This is what allows experiments, unlike correlational studies, to support causal claims.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7744004,
+    chapter: 'Experimental vs Correlational Design',
+    title: 'Correlation and Causation',
+    prompt: 'A study finds that cities with more ice cream sales also have more drownings. The most likely explanation is that:',
+    correct: 'A third variable, such as hot weather, increases both ice cream sales and swimming (and thus drownings).',
+    wrong: [
+      miss('Buying ice cream directly causes people to drown.', 'This assumes a direct causal link from a correlation, ignoring a plausible common cause.', 'Ask whether some other factor could drive both measures up together.'),
+      miss('Drownings cause people to buy more ice cream.', 'Reversing the arrow is still an unjustified causal claim from correlational data, and is implausible here.', 'A correlation does not tell you the direction of causation.'),
+      miss('The correlation must be a coincidence with no real connection.', 'Dismissing a strong, repeatable correlation as pure chance ignores the likely shared cause.', 'Consider a lurking variable rather than assuming randomness.'),
+    ],
+    lesson: 'Correlation does not imply causation. A spurious correlation often arises from a confounding third variable that drives both measured variables. Here warm weather plausibly raises both ice cream sales and swimming-related drownings.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7744005,
+    chapter: 'Experimental vs Correlational Design',
+    title: 'Quasi-Experimental Designs',
+    prompt: 'What distinguishes a quasi-experiment from a true experiment?',
+    correct: 'A quasi-experiment lacks random assignment of participants to conditions.',
+    wrong: [
+      miss('A quasi-experiment has no independent variable.', 'Quasi-experiments still involve an independent variable; what they lack is random assignment to its levels.', 'The missing ingredient is how participants are allocated, not whether there is an IV.'),
+      miss('A quasi-experiment never measures a dependent variable.', 'Quasi-experiments measure outcomes just like true experiments; the difference lies in assignment.', 'Both designs record an outcome variable.'),
+      miss('A quasi-experiment is always conducted in a laboratory.', 'Setting (lab vs field) is independent of whether a design is quasi-experimental.', 'The defining feature is about random assignment, not location.'),
+    ],
+    lesson: 'In a quasi-experiment the groups are formed by pre-existing characteristics or non-random means (e.g., comparing two schools), so the absence of random assignment leaves open the possibility of selection bias and confounding, weakening causal inference relative to a true experiment.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Internal and External Validity ----------------
+  {
+    id: 7744006,
+    chapter: 'Internal and External Validity',
+    title: 'Defining Internal Validity',
+    prompt: 'A study has high internal validity when:',
+    correct: 'Changes in the dependent variable can confidently be attributed to the independent variable rather than to confounds.',
+    wrong: [
+      miss('Its results generalize to many populations and settings.', 'Generalizability across populations and settings is external validity, not internal validity.', 'Internal validity is about causal confidence within the study itself.'),
+      miss('The measurement instrument produces consistent scores on repeated use.', 'Consistency of measurement is reliability, which is distinct from internal validity.', 'Do not confuse stable measurement with sound causal inference.'),
+      miss('A large and diverse sample was recruited.', 'Sample size and diversity relate more to external validity and precision than to ruling out confounds.', 'Internal validity hinges on whether confounds were controlled.'),
+    ],
+    lesson: 'Internal validity is the degree to which a study supports a causal claim by ruling out alternative explanations (confounds). It is maximized by controls such as random assignment. It is a separate question from external validity, which concerns generalization.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7744007,
+    chapter: 'Internal and External Validity',
+    title: 'Threats to Internal Validity',
+    prompt: 'In a pre-test/post-test study with no control group, participants improve partly because the broader economy improved during the study period. This threat to internal validity is called:',
+    correct: 'History',
+    wrong: [
+      miss('Maturation', 'Maturation refers to changes within participants over time (aging, fatigue, growth), not external events occurring during the study.', 'Ask whether the change came from inside the participants or from an outside event.'),
+      miss('Testing', 'The testing threat is improvement caused by taking the pre-test itself, not by an outside event.', 'This threat is about an external occurrence, not practice on the measure.'),
+      miss('Regression to the mean', 'Regression to the mean explains movement of extreme scores toward average on retest, not the effect of an external event.', 'No mention here of extreme initial scores; focus on the outside event.'),
+    ],
+    lesson: 'History is a threat to internal validity in which an external event occurring between measurements (not the treatment) influences the outcome. A control group exposed to the same history but not the treatment helps separate the treatment effect from such events.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Sampling ----------------
+  {
+    id: 7744008,
+    chapter: 'Sampling',
+    title: 'Simple Random Sampling',
+    prompt: 'Which statement best describes a simple random sample?',
+    correct: 'Every member of the population has an equal and independent chance of being selected.',
+    wrong: [
+      miss('The population is divided into subgroups and a sample is drawn from each.', 'That describes stratified sampling, which deliberately samples within defined strata.', 'Simple random sampling does not pre-divide the population into groups.'),
+      miss('Every kth member of an ordered list is selected after a random start.', 'That is systematic sampling, which uses a fixed interval rather than fully independent selection.', 'Independent equal chance is the hallmark of simple random sampling.'),
+      miss('Researchers select whoever is most convenient to reach.', 'That is convenience sampling, a non-probability method with no equal-chance guarantee.', 'Convenience is the opposite of giving everyone an equal chance.'),
+    ],
+    lesson: 'In simple random sampling, each member of the population has an equal and independent probability of selection, and so does each possible sample of a given size. This is the baseline probability-sampling method that supports unbiased estimation and inferential statistics.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7744009,
+    chapter: 'Sampling',
+    title: 'Stratified vs Cluster Sampling',
+    prompt: 'A researcher divides a population into age strata and randomly samples a proportional number of people from each stratum. This is:',
+    correct: 'Stratified random sampling',
+    wrong: [
+      miss('Cluster sampling', 'Cluster sampling randomly selects whole naturally occurring groups (clusters) and often samples everyone within them, rather than sampling within every predefined stratum.', 'Stratified sampling draws from every subgroup; cluster sampling selects only some groups.'),
+      miss('Convenience sampling', 'Convenience sampling uses easily available participants and involves no random selection within defined groups.', 'This procedure uses random selection within strata, not whoever is handy.'),
+      miss('Quota sampling', 'Quota sampling fills target numbers per subgroup but uses non-random selection within each quota.', 'The key here is random selection within each stratum.'),
+    ],
+    lesson: 'Stratified random sampling partitions the population into mutually exclusive strata (e.g., age bands) and randomly samples within each, usually in proportion to stratum size. It improves precision when strata differ on the variable of interest. Cluster sampling, by contrast, randomly selects whole groups.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7744010,
+    chapter: 'Sampling',
+    title: 'Sampling Bias',
+    prompt: 'A 1936 magazine poll predicted a landslide that did not happen because it drew names from phone books and car registries during a depression. This illustrates:',
+    correct: 'Sampling bias from a frame that systematically excluded poorer voters.',
+    wrong: [
+      miss('Random sampling error that would shrink with a larger sample.', 'The problem was systematic exclusion, not random error; a larger biased sample would still be wrong.', 'A bigger biased sample does not fix a skewed sampling frame.'),
+      miss('Measurement error in how responses were recorded.', 'The issue was who was sampled, not how their answers were measured.', 'Focus on the composition of the sampled group.'),
+      miss('Regression to the mean across repeated polls.', 'Regression to the mean concerns extreme scores moving toward average, not a biased sampling frame.', 'The failure traces to an unrepresentative sampling frame.'),
+    ],
+    lesson: 'Sampling bias occurs when the sampling frame or method systematically over- or under-represents parts of the population. The famous 1936 Literary Digest poll oversampled wealthier people who owned phones and cars, so even its huge sample misjudged the electorate. Larger samples do not cure bias.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Measurement and Reliability ----------------
+  {
+    id: 7744011,
+    chapter: 'Measurement and Reliability',
+    title: 'Reliability vs Validity',
+    prompt: 'A bathroom scale always reads exactly 3 kg too high. This measurement is best described as:',
+    correct: 'Reliable but not valid',
+    wrong: [
+      miss('Valid but not reliable', 'A constant 3 kg overstatement means the readings are systematically wrong (not valid) even though they are perfectly consistent.', 'Consistency is reliability; accuracy is validity. Which one is failing here?'),
+      miss('Both reliable and valid', 'A scale that is always 3 kg off cannot be valid, because it does not measure true weight.', 'A consistent but biased measure is not accurate.'),
+      miss('Neither reliable nor valid', 'Because it gives the same (wrong) reading every time, it is highly consistent, hence reliable.', 'Repeatable readings satisfy reliability even when wrong.'),
+    ],
+    lesson: 'Reliability is consistency of measurement; validity is whether the measure captures the true value of the intended construct. A scale that is always off by a fixed amount is perfectly reliable but invalid. Reliability is necessary but not sufficient for validity.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7744012,
+    chapter: 'Measurement and Reliability',
+    title: 'Cronbach Alpha',
+    prompt: 'Cronbach alpha is most commonly reported as a measure of:',
+    correct: 'Internal consistency reliability among the items of a scale.',
+    wrong: [
+      miss('The criterion validity of a test against an external standard.', 'Cronbach alpha indexes how well items hang together, not how well scores predict an external criterion.', 'Alpha is about consistency among items, not prediction of an outside measure.'),
+      miss('The test-retest reliability of a measure over time.', 'Test-retest reliability requires two administrations on separate occasions, whereas alpha is computed from a single administration.', 'Alpha uses inter-item relationships at one time point, not stability across time.'),
+      miss('The statistical significance of a correlation coefficient.', 'Alpha is a reliability coefficient, not a p-value or test of significance.', 'It estimates reliability, not whether a result is significant.'),
+    ],
+    lesson: 'Cronbach alpha estimates internal consistency: how strongly a set of items measuring the same construct correlate with one another, computed from one administration. It ranges from 0 to 1, with values around 0.70 and above commonly treated as acceptable, though very high values can signal redundant items.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7744013,
+    chapter: 'Measurement and Reliability',
+    title: 'Levels of Measurement',
+    prompt: 'Temperature measured in degrees Celsius is an example of which level of measurement?',
+    correct: 'Interval',
+    wrong: [
+      miss('Ratio', 'A ratio scale requires a true zero indicating absence of the quantity; 0 degrees Celsius does not mean no temperature, so ratios like twice as hot are not meaningful.', 'Check whether the scale has a meaningful absolute zero.'),
+      miss('Ordinal', 'Ordinal data give only rank order, but Celsius degrees are equally spaced, so differences are meaningful.', 'Equal intervals between values exceed what ordinal scales provide.'),
+      miss('Nominal', 'Nominal data are unordered categories, whereas temperature values are ordered and equally spaced.', 'Temperature clearly has order and equal spacing, unlike labels.'),
+    ],
+    lesson: 'Interval scales have ordered values with equal intervals but an arbitrary (non-true) zero, so differences are meaningful but ratios are not. Celsius is interval because 0 degrees is arbitrary. Kelvin, with an absolute zero, is a ratio scale, where ratios are meaningful.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Descriptive Statistics ----------------
+  {
+    id: 7744014,
+    chapter: 'Descriptive Statistics',
+    title: 'Choosing a Measure of Central Tendency',
+    prompt: 'For a strongly right-skewed income distribution, which measure of central tendency best represents the typical value?',
+    correct: 'The median, because it is resistant to extreme high values.',
+    wrong: [
+      miss('The mean, because it uses every data point.', 'Using every value makes the mean sensitive to extreme high incomes, pulling it above the typical case.', 'In skewed data the mean is dragged toward the long tail.'),
+      miss('The mode, because it is the most frequent value.', 'The single most common value can be unrepresentative and unstable for continuous, skewed income data.', 'Frequency alone may not capture the center of a skewed spread.'),
+      miss('The range, because it captures the full spread.', 'The range is a measure of variability, not of central tendency at all.', 'Central tendency describes the center, not the spread.'),
+    ],
+    lesson: 'In a skewed distribution the mean is pulled toward the long tail, so it overstates or understates the typical value. The median, the middle value, is robust to outliers and better represents central tendency for skewed data such as income.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7744015,
+    chapter: 'Descriptive Statistics',
+    title: 'Interpreting Correlation Coefficients',
+    prompt: 'A Pearson correlation coefficient of r = -0.85 between two variables indicates:',
+    correct: 'A strong negative linear relationship: as one variable increases, the other tends to decrease.',
+    wrong: [
+      miss('A weak relationship, because the value is negative.', 'The sign indicates direction, not strength; a magnitude of 0.85 is strong regardless of sign.', 'Judge strength by the absolute value, not the minus sign.'),
+      miss('That one variable causes a decrease in the other.', 'Pearson r measures association, not causation, even when the magnitude is large.', 'A strong correlation still does not establish cause.'),
+      miss('No relationship, because r is not equal to 1.', 'A coefficient need not equal 1 to indicate a relationship; values near zero indicate no linear relationship.', 'Only r near 0 indicates the absence of a linear relationship.'),
+    ],
+    lesson: 'Pearson r ranges from -1 to +1. The sign gives the direction of a linear relationship and the absolute value gives its strength. An r of -0.85 is a strong negative linear association, but correlation alone does not establish causation.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Inferential Statistics ----------------
+  {
+    id: 7744016,
+    chapter: 'Inferential Statistics',
+    title: 'Interpreting a p-value',
+    prompt: 'A study reports p = 0.03 for a two-group comparison. What does this p-value mean?',
+    correct: 'If the null hypothesis were true, there is about a 3% probability of obtaining results at least as extreme as those observed.',
+    wrong: [
+      miss('There is a 3% probability that the null hypothesis is true.', 'A p-value is not the probability that H0 is true; it is computed assuming H0 is true.', 'The p-value conditions on the null, it does not give the probability of the null.'),
+      miss('There is a 97% probability that the alternative hypothesis is true.', 'A p-value does not give the probability of any hypothesis being true; that misreads its definition.', 'p-values do not assign probabilities to hypotheses.'),
+      miss('The effect is large and practically important.', 'A small p-value can occur for tiny, unimportant effects, especially with large samples; significance is not effect size.', 'Statistical significance differs from practical importance.'),
+    ],
+    lesson: 'A p-value is the probability of observing data at least as extreme as the actual data, assuming the null hypothesis is true. It is not the probability that H0 is true, nor a measure of effect size or importance. Reporting effect sizes alongside p-values addresses the latter.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7744017,
+    chapter: 'Inferential Statistics',
+    title: 'Type I and Type II Errors',
+    prompt: 'A Type I error in hypothesis testing occurs when a researcher:',
+    correct: 'Rejects the null hypothesis when it is actually true (a false positive).',
+    wrong: [
+      miss('Fails to reject the null hypothesis when it is actually false.', 'That describes a Type II error (a false negative), the opposite of a Type I error.', 'A Type I error is a false positive, not a missed true effect.'),
+      miss('Uses too small a sample to detect a real effect.', 'Insufficient sample size lowers power and raises the chance of a Type II error, but it is not the definition of a Type I error.', 'Power relates to Type II errors, not the definition of Type I.'),
+      miss('Measures the dependent variable with a biased instrument.', 'Measurement bias is a validity problem, not the statistical decision error defined as Type I.', 'Type I error is about a wrong decision regarding H0, not measurement.'),
+    ],
+    lesson: 'A Type I error is rejecting a true null hypothesis (a false positive); its probability is the significance level alpha. A Type II error is failing to reject a false null (a false negative); its probability is beta, and 1 minus beta is statistical power.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7744018,
+    chapter: 'Inferential Statistics',
+    title: 'Confidence Intervals',
+    prompt: 'A 95% confidence interval for a population mean is correctly interpreted as:',
+    correct: 'A range produced by a procedure that, across many repeated samples, captures the true mean 95% of the time.',
+    wrong: [
+      miss('There is a 95% probability that the true mean lies within this specific interval.', 'In the frequentist framework the true mean is fixed and a given interval either contains it or not; the 95% refers to the long-run procedure, not this one interval.', 'The confidence level describes the method over repeated samples, not one realized interval.'),
+      miss('95% of the data values fall within the interval.', 'A confidence interval estimates a parameter (the mean), not the spread of individual data points.', 'Do not confuse a confidence interval with a range covering most observations.'),
+      miss('The interval contains 95% of all possible sample means.', 'The interval is an estimate of the population mean, not a container for a percentage of sample means.', 'Focus on what the interval is estimating: the population parameter.'),
+    ],
+    lesson: 'A 95% confidence interval comes from a procedure that, if repeated across many samples, would contain the true parameter in 95% of those samples. For any single computed interval the parameter is either in it or not, so the confidence level is a property of the long-run method rather than the individual interval.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Research Ethics ----------------
+  {
+    id: 7744019,
+    chapter: 'Research Ethics',
+    title: 'The Belmont Report Principles',
+    prompt: 'The Belmont Report (1979) sets out three core ethical principles for research with human subjects. Which trio is correct?',
+    correct: 'Respect for persons, beneficence, and justice.',
+    wrong: [
+      miss('Honesty, objectivity, and reproducibility.', 'These are general scientific virtues, not the three principles named in the Belmont Report.', 'Recall the report focus on protecting human participants.'),
+      miss('Confidentiality, anonymity, and informed consent.', 'These are important practices, but they are applications or procedures rather than the three foundational Belmont principles.', 'The principles are broader than specific procedures like consent.'),
+      miss('Autonomy, nonmaleficence, and fidelity.', 'These overlap with biomedical ethics frameworks but are not the exact three principles of the Belmont Report.', 'Look for the specific Belmont wording, including justice.'),
+    ],
+    lesson: 'The Belmont Report (1979) articulates three principles: respect for persons (treating people as autonomous and protecting those with diminished autonomy), beneficence (do no harm, maximize benefits and minimize harms), and justice (fair distribution of research burdens and benefits). These map onto informed consent, risk-benefit assessment, and equitable subject selection.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Qualitative Methods ----------------
+  {
+    id: 7744020,
+    chapter: 'Qualitative Methods',
+    title: 'Purpose of Qualitative Research',
+    prompt: 'Which research aim is qualitative methodology (e.g., in-depth interviews, thematic analysis) best suited to address?',
+    correct: 'Understanding the meanings, experiences, and processes behind a phenomenon in depth.',
+    wrong: [
+      miss('Estimating the precise percentage of a population holding a given attitude.', 'Estimating population proportions calls for quantitative survey methods with probability sampling, not in-depth qualitative inquiry.', 'Qualitative work explores meaning rather than producing population-level numeric estimates.'),
+      miss('Establishing a causal effect through random assignment.', 'Causal effects via random assignment are the domain of experimental (quantitative) designs.', 'Qualitative methods typically do not use random assignment to test causation.'),
+      miss('Computing a confidence interval for a population mean.', 'Confidence intervals are quantitative inferential tools, not outputs of thematic qualitative analysis.', 'Numeric estimation of parameters is a quantitative task.'),
+    ],
+    lesson: 'Qualitative methods aim to understand how people interpret and experience phenomena, generating rich, contextual descriptions and themes. They excel at exploring meaning and process but are not designed for numeric generalization to populations or for experimentally establishing causal effects, which are strengths of quantitative designs.',
+    source,
+    generated: true,
+  },
+])

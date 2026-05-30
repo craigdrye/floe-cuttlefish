@@ -35,6 +35,8 @@ Thumbs.db
 _*.ts
 _*.txt
 _*.mts
+_*.cjs
+_*.mjs
 
 # Large raw data (GitHub 100MB limit)
 data/kolibri_databases/

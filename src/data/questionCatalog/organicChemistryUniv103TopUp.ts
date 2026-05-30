@@ -1,0 +1,340 @@
+import { makeQuestionBank } from './base'
+import type { Question } from './types'
+
+const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
+const source = 'Floe organicChemistry top-up'
+
+export const organicChemistryUniv103TopUpQuestions: Question[] = makeQuestionBank('University', [
+  // ---------------- Chapter 1: Bonding & Hybridization ----------------
+  {
+    id: 7742000,
+    chapter: 'Bonding & Hybridization',
+    title: 'Hybridization of Alkyne Carbon',
+    prompt: 'What is the hybridization of each carbon atom in the triple bond of an alkyne such as ethyne (acetylene)?',
+    correct: 'sp',
+    wrong: [
+      miss('sp2', 'sp2 hybridization corresponds to a carbon with three sigma bonds and one pi bond, as in alkenes, not the two sigma bonds of an alkyne carbon.', 'Count the sigma bonds plus lone pairs on the carbon to find the number of hybrid orbitals needed.'),
+      miss('sp3', 'sp3 carbons form four sigma bonds with no pi bonds, as in alkanes; an alkyne carbon has only two sigma bonds and two pi bonds.', 'A triple bond contains two pi bonds, which use unhybridized p orbitals.'),
+      miss('sp3d', 'Carbon has no accessible d orbitals at this energy and cannot expand its octet, so sp3d hybridization does not apply to carbon.', 'Period 2 elements are limited to s and p orbitals for hybridization.'),
+    ],
+    lesson: 'Each alkyne carbon forms two sigma bonds (one to its triple-bond partner and one to another atom) and participates in two pi bonds. Two sigma frameworks require two hybrid orbitals, giving sp hybridization, with two leftover p orbitals forming the two pi bonds. This produces a linear 180 degree geometry.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7742001,
+    chapter: 'Bonding & Hybridization',
+    title: 'Sigma vs Pi Bond Strength',
+    prompt: 'Why is a carbon-carbon pi bond generally weaker and more reactive than a carbon-carbon sigma bond?',
+    correct: 'Pi bonds form by sideways overlap of parallel p orbitals, which is less effective than the head-on overlap of a sigma bond.',
+    wrong: [
+      miss('Pi bonds involve sharing four electrons while sigma bonds share only two, spreading the bonding force thinner.', 'A single pi bond shares two electrons, just like a sigma bond; the difference is orbital overlap geometry, not electron count.', 'Each individual covalent bond, sigma or pi, is a two-electron bond.'),
+      miss('Pi bonds are ionic in character, so they break apart more easily in solution.', 'Carbon-carbon pi bonds are covalent, not ionic; there is no significant charge separation between two like carbon atoms.', 'Think about electronegativity differences between two carbons.'),
+      miss('Pi electrons are held closer to the nuclei, making them tightly bound and easy to remove.', 'Pi electron density actually lies above and below the bond axis, farther from the internuclear region, making them more available, not more tightly held.', 'Consider where pi electron density sits relative to the bond axis.'),
+    ],
+    lesson: 'Sigma bonds arise from head-on (axial) overlap that concentrates electron density directly between the nuclei, giving strong, efficient bonding. Pi bonds arise from lateral overlap of parallel p orbitals above and below the bond axis, which is less effective. Consequently the pi component of a double or triple bond is weaker and is typically the bond attacked first in addition reactions.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 2: Functional Groups ----------------
+  {
+    id: 7742002,
+    chapter: 'Functional Groups',
+    title: 'Identifying the Carboxylic Acid Group',
+    prompt: 'Which functional group is defined by a carbonyl carbon also bonded to a hydroxyl group (-COOH)?',
+    correct: 'Carboxylic acid',
+    wrong: [
+      miss('Ester', 'An ester has a carbonyl carbon bonded to an -OR group (oxygen bearing a carbon), not an -OH group.', 'Look at whether the oxygen attached to the carbonyl carries a hydrogen or another carbon.'),
+      miss('Ketone', 'A ketone carbonyl carbon is flanked by two carbon atoms and has no attached oxygen-hydrogen group.', 'A ketone has no -OH or -OR on the carbonyl carbon.'),
+      miss('Aldehyde', 'An aldehyde has a carbonyl carbon bonded to at least one hydrogen and not to a hydroxyl oxygen.', 'Aldehydes end in -CHO, not -COOH.'),
+    ],
+    lesson: 'A carboxylic acid combines a carbonyl (C=O) and a hydroxyl (-OH) on the same carbon, written -COOH. The adjacent carbonyl makes the O-H far more acidic than an alcohol because the resulting carboxylate anion is resonance stabilized. Replacing the -OH hydrogen with a carbon gives an ester instead.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7742003,
+    chapter: 'Functional Groups',
+    title: 'Amine Classification',
+    prompt: 'How is a secondary amine classified based on its structure?',
+    correct: 'A nitrogen atom bonded to exactly two carbon-containing groups and one hydrogen.',
+    wrong: [
+      miss('A nitrogen atom bonded to two hydrogens and one carbon group.', 'That describes a primary amine, which has only one carbon substituent on nitrogen.', 'Count how many carbon groups, not hydrogens, are attached to nitrogen.'),
+      miss('A carbon atom bonded to two other carbons and the nitrogen.', 'Amine classification is based on the substituents on nitrogen, not on the carbon attached to it.', 'Unlike alcohols, amine degree is set by nitrogen substitution.'),
+      miss('A nitrogen atom bearing a positive charge with four carbon groups.', 'A nitrogen with four carbon groups and a positive charge is a quaternary ammonium ion, not a secondary amine.', 'A neutral secondary amine still retains one N-H bond.'),
+    ],
+    lesson: 'Amine classification counts the number of carbon substituents directly bonded to nitrogen: primary (one), secondary (two), tertiary (three), and quaternary ammonium (four, positively charged). This differs from alcohol classification, which counts carbons on the carbon bearing the -OH. A secondary amine therefore has two C-N bonds and one remaining N-H.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 3: IUPAC Nomenclature ----------------
+  {
+    id: 7742004,
+    chapter: 'IUPAC Nomenclature',
+    title: 'Naming a Branched Alkane',
+    prompt: 'What is the correct IUPAC name for (CH3)2CHCH2CH3?',
+    correct: '2-methylbutane',
+    wrong: [
+      miss('2-methylpropane', 'This molecule has a four-carbon main chain (butane), not three; counting the longest continuous chain gives four carbons.', 'Trace the longest continuous carbon chain before naming the parent.'),
+      miss('isopentane', '"isopentane" is an older common name; the systematic IUPAC name uses locants and the longest-chain parent.', 'IUPAC preferred names avoid common prefixes like iso for substituted chains.'),
+      miss('3-methylbutane', 'Locants must be as low as possible, so numbering from the other end places the methyl branch at carbon 2, not 3.', 'Number the chain from whichever end gives the substituent the lowest locant.'),
+    ],
+    lesson: 'The longest continuous chain is four carbons (butane), with a methyl branch. Numbering to give the lowest locant places the methyl on carbon 2, yielding 2-methylbutane. The common name isopentane refers to the same compound but is not the systematic IUPAC name.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7742005,
+    chapter: 'IUPAC Nomenclature',
+    title: 'Lowest Locants Rule',
+    prompt: 'When numbering the carbon chain of a substituted alkane, what is the primary IUPAC rule for choosing the direction of numbering?',
+    correct: 'Number from the end that gives the lowest set of locants to the substituents.',
+    wrong: [
+      miss('Number from the end nearest the largest substituent first.', 'Priority is given to the lowest overall set of locants, not to the size of an individual substituent.', 'Compare the full sets of position numbers, not substituent size, at the first difference.'),
+      miss('Number alphabetically so the first-named substituent always gets position 1.', 'Alphabetical order determines listing order in the name, not the numbering direction of the chain.', 'Alphabetization affects how substituents are listed, not where numbering starts.'),
+      miss('Always number from left to right as the structure is drawn.', 'The drawing orientation is arbitrary; numbering follows locant rules, not the page layout.', 'Numbering is independent of how the molecule happens to be drawn.'),
+    ],
+    lesson: 'The chain is numbered to give the lowest set of locants to the substituents, compared term by term at the first point of difference. If two directions tie on the locant set, the substituent first in alphabetical order receives the lower number. Alphabetical order otherwise governs only the order substituents are listed in the final name.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 4: Stereochemistry ----------------
+  {
+    id: 7742006,
+    chapter: 'Stereochemistry',
+    title: 'Defining Enantiomers',
+    prompt: 'What is the precise relationship between two molecules that are enantiomers?',
+    correct: 'They are non-superimposable mirror images of each other.',
+    wrong: [
+      miss('They are superimposable mirror images, identical in every respect.', 'If mirror images are superimposable the molecule is achiral and the two forms are simply the same compound, not enantiomers.', 'Enantiomers require chirality, so the mirror images must NOT superimpose.'),
+      miss('They differ in connectivity of their atoms.', 'Differing connectivity describes structural (constitutional) isomers, not stereoisomers like enantiomers.', 'Enantiomers have identical bonding connectivity and differ only in 3D arrangement.'),
+      miss('They are stereoisomers that are not mirror images.', 'Stereoisomers that are not mirror images are diastereomers, not enantiomers.', 'The defining feature of enantiomers is the mirror-image relationship.'),
+    ],
+    lesson: 'Enantiomers are stereoisomers that are non-superimposable mirror images, arising when a molecule is chiral (lacks an internal mirror plane or other improper symmetry). They share identical connectivity and most physical properties but rotate plane-polarized light in opposite directions and can react differently with other chiral species. Stereoisomers that are not mirror images are diastereomers.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7742007,
+    chapter: 'Stereochemistry',
+    title: 'R/S Priority by CIP Rules',
+    prompt: 'Under the Cahn-Ingold-Prelog rules, how is priority assigned to the four groups on a stereocenter?',
+    correct: 'By atomic number of the directly attached atoms, exploring outward to break ties.',
+    wrong: [
+      miss('By the size or molecular mass of each whole substituent group.', 'CIP priority depends on atomic number at each point of comparison, not on the total mass or bulk of the group.', 'Compare atoms outward from the stereocenter, highest atomic number first.'),
+      miss('By alphabetical order of the substituent names.', 'Alphabetical naming has nothing to do with CIP stereochemical priority.', 'CIP rules are based on atomic number, not letters.'),
+      miss('By the number of hydrogen atoms each group contains, fewest first.', 'Hydrogen count is not the CIP criterion; the rule ranks the atomic numbers of attached atoms.', 'Higher atomic number wins, regardless of hydrogen content.'),
+    ],
+    lesson: 'CIP priority compares the atomic numbers of the atoms directly bonded to the stereocenter; the highest atomic number ranks first. When attached atoms tie, you move outward to the next set of atoms and compare again at the first point of difference. Double bonds are treated as duplicate atoms. With the lowest-priority group pointing away, a clockwise 1 to 3 arrangement is R and counterclockwise is S.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7742008,
+    chapter: 'Stereochemistry',
+    title: 'Meso Compounds',
+    prompt: 'What makes a molecule a meso compound despite containing stereocenters?',
+    correct: 'It contains stereocenters but has an internal plane of symmetry, making it achiral overall.',
+    wrong: [
+      miss('It contains only one stereocenter and rotates light strongly.', 'A meso compound requires multiple stereocenters whose effects cancel; a single stereocenter cannot be meso.', 'Meso compounds need an internal mirror relationship between parts of the molecule.'),
+      miss('It is a 50:50 mixture of two enantiomers that cancels optical activity.', 'That describes a racemic mixture, which is two separate compounds, not a single meso compound.', 'A meso compound is one substance, optically inactive on its own.'),
+      miss('It has no stereocenters at all, so it cannot be chiral.', 'Meso compounds do contain stereocenters; their achirality comes from internal symmetry, not from the absence of stereocenters.', 'The key is internal symmetry within a molecule that does have stereocenters.'),
+    ],
+    lesson: 'A meso compound has two or more stereocenters but possesses an internal mirror plane that makes one half the reflection of the other. The chirality of the stereocenters cancels internally, so the molecule is superimposable on its mirror image and is optically inactive. This is distinct from a racemate, which is a 50:50 mixture of two separate chiral enantiomers.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 5: Substitution & Elimination ----------------
+  {
+    id: 7742009,
+    chapter: 'Substitution & Elimination',
+    title: 'SN2 Stereochemistry',
+    prompt: 'What stereochemical outcome occurs at the carbon center during an SN2 reaction?',
+    correct: 'Inversion of configuration (Walden inversion).',
+    wrong: [
+      miss('Retention of configuration.', 'Retention would require the nucleophile to attack from the same side as the leaving group, which the SN2 backside mechanism does not allow.', 'The nucleophile attacks opposite the leaving group, flipping the center.'),
+      miss('Complete racemization.', 'Full racemization is characteristic of SN1, which proceeds through a planar carbocation attacked from both faces.', 'SN2 is concerted with a single defined geometry of attack.'),
+      miss('Loss of all stereochemistry to give an achiral product.', 'SN2 preserves the stereocenter but inverts it; the product remains chiral if the substituents differ.', 'A stereocenter is retained as a center, just inverted.'),
+    ],
+    lesson: 'In SN2 the nucleophile attacks the carbon directly opposite the leaving group in a single concerted step, passing through a trigonal bipyramidal transition state. This backside attack flips the three remaining substituents like an umbrella in the wind, inverting the configuration. By contrast, SN1 goes through a planar carbocation and typically gives racemization.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7742010,
+    chapter: 'Substitution & Elimination',
+    title: 'Zaitsev Rule in Elimination',
+    prompt: 'According to Zaitsev rule, which alkene predominates in a typical E1 or E2 elimination?',
+    correct: 'The more substituted (more stable) alkene.',
+    wrong: [
+      miss('The less substituted alkene with the fewest alkyl groups on the double bond.', 'That describes the Hofmann product, which dominates only with bulky bases or special conditions, not the default Zaitsev outcome.', 'Zaitsev favors the more substituted, thermodynamically stable alkene.'),
+      miss('The alkene with the leaving group still attached.', 'Elimination removes the leaving group entirely; it cannot remain in the product alkene.', 'Elimination expels the leaving group and a beta hydrogen to form the double bond.'),
+      miss('The alkene that places the double bond at the terminal carbon regardless of substitution.', 'Terminal placement gives the less substituted alkene, which is generally the minor product under Zaitsev conditions.', 'More internal, more substituted double bonds are favored by Zaitsev.'),
+    ],
+    lesson: 'Zaitsev rule states that the more substituted alkene is usually the major elimination product because greater alkyl substitution stabilizes the double bond through hyperconjugation and induction. The opposing Hofmann outcome, favoring the less substituted alkene, arises with sterically bulky bases such as tert-butoxide that cannot easily reach the internal hydrogens.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7742011,
+    chapter: 'Substitution & Elimination',
+    title: 'SN1 Rate Dependence',
+    prompt: 'The rate of an SN1 reaction depends on the concentration of which species?',
+    correct: 'Only the substrate (it is first order overall).',
+    wrong: [
+      miss('Both the substrate and the nucleophile.', 'Dependence on both species is the hallmark of the SN2 mechanism, which is second order overall.', 'SN1 has a rate-determining step that involves only the substrate.'),
+      miss('Only the nucleophile.', 'The nucleophile enters after the rate-determining ionization step, so its concentration does not affect the rate.', 'The slow step in SN1 occurs before the nucleophile attacks.'),
+      miss('The solvent and the leaving group together.', 'While solvent assists ionization, the kinetic rate law for SN1 is first order in substrate alone.', 'Focus on what appears in the rate-determining step of the mechanism.'),
+    ],
+    lesson: 'SN1 proceeds in two steps: slow ionization of the substrate to form a carbocation, followed by fast nucleophilic capture. Because the rate-determining step is the unimolecular ionization, the rate law is first order, depending only on substrate concentration. SN2, in contrast, is bimolecular and depends on both substrate and nucleophile.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 6: Addition Reactions ----------------
+  {
+    id: 7742012,
+    chapter: 'Addition Reactions',
+    title: 'Markovnikov Addition of HX',
+    prompt: 'When HBr adds to propene (CH3-CH=CH2) under ionic conditions, where does the hydrogen add according to Markovnikov rule?',
+    correct: 'To the terminal CH2 carbon, placing Br on the more substituted carbon.',
+    wrong: [
+      miss('To the more substituted internal carbon, placing Br on the terminal carbon.', 'This is the anti-Markovnikov outcome; under ionic (non-radical) conditions the more stable carbocation forms at the internal carbon, so Br ends up there.', 'The proton adds so as to create the more stable carbocation intermediate.'),
+      miss('Equally to both carbons, giving a 50:50 mixture of products.', 'The reaction is strongly regioselective because the two possible carbocations differ markedly in stability.', 'Carbocation stability dictates a clear preference, not a coin flip.'),
+      miss('Hydrogen does not add; only Br adds across the double bond.', 'HBr addition adds one hydrogen and one bromine across the double bond; both atoms are incorporated.', 'Both H and Br from HBr are added to the alkene.'),
+    ],
+    lesson: 'Markovnikov rule says the proton adds to the carbon already bearing more hydrogens, generating the more stable (more substituted) carbocation. For propene plus HBr, H goes to the terminal CH2 and the secondary carbocation forms at the central carbon, so Br ends up on the more substituted carbon to give 2-bromopropane. Radical conditions with peroxides reverse this to give anti-Markovnikov addition.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7742013,
+    chapter: 'Addition Reactions',
+    title: 'Syn Addition in Hydrogenation',
+    prompt: 'Catalytic hydrogenation of an alkene with H2 over a metal catalyst adds the two hydrogen atoms with what stereochemistry?',
+    correct: 'Syn addition (both hydrogens add to the same face of the double bond).',
+    wrong: [
+      miss('Anti addition (hydrogens add to opposite faces).', 'Anti addition is characteristic of reactions like bromine addition through a bridged halonium ion, not surface-catalyzed hydrogenation.', 'On a catalyst surface both hydrogens are delivered from one side.'),
+      miss('Random addition with no facial preference.', 'Hydrogenation is stereospecific because both hydrogens are delivered from the catalyst surface together.', 'Surface delivery enforces same-face addition.'),
+      miss('Addition of only one hydrogen, leaving a radical.', 'Hydrogenation saturates the double bond by adding two hydrogens, not one, and produces no free radical.', 'Both hydrogens of H2 are added across the bond.'),
+    ],
+    lesson: 'In heterogeneous catalytic hydrogenation, the alkene and H2 adsorb onto the metal surface and both hydrogen atoms are delivered to the same face of the pi bond. This syn (same-side) addition is stereospecific. It contrasts with the anti addition seen when halogens add through a cyclic halonium ion intermediate.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 7: Carbonyl Chemistry ----------------
+  {
+    id: 7742014,
+    chapter: 'Carbonyl Chemistry',
+    title: 'Nucleophilic Addition to Aldehydes',
+    prompt: 'Why are aldehydes generally more reactive toward nucleophilic addition than ketones?',
+    correct: 'Aldehydes have less steric hindrance and less electron donation at the carbonyl carbon than ketones.',
+    wrong: [
+      miss('Aldehydes have a more electronegative carbonyl oxygen than ketones.', 'The carbonyl oxygen is the same element in both; reactivity differences come from the carbon substituents, not a change in oxygen.', 'Compare the groups attached to the carbonyl carbon, not the oxygen.'),
+      miss('Ketones lack a carbonyl group, so they cannot undergo addition.', 'Ketones do have a carbonyl group; both aldehydes and ketones contain C=O and can undergo nucleophilic addition.', 'Both classes are carbonyl compounds.'),
+      miss('Aldehydes are aromatic and ketones are not.', 'Neither plain aldehydes nor ketones are aromatic by virtue of their carbonyl group; reactivity here is electronic and steric, not aromatic.', 'Aromaticity is unrelated to this comparison.'),
+    ],
+    lesson: 'Aldehydes bear one hydrogen and one carbon (or two hydrogens) on the carbonyl carbon, while ketones bear two carbon groups. The extra alkyl group in a ketone both shields the carbon sterically and donates electron density, reducing the carbon partial positive charge. Both effects make ketones less electrophilic, so aldehydes undergo nucleophilic addition more readily.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7742015,
+    chapter: 'Carbonyl Chemistry',
+    title: 'Alpha Hydrogen Acidity',
+    prompt: 'Why is a hydrogen on the carbon alpha to a carbonyl group unusually acidic?',
+    correct: 'The resulting enolate anion is stabilized by resonance delocalization onto the carbonyl oxygen.',
+    wrong: [
+      miss('The alpha carbon is directly bonded to the electronegative oxygen, polarizing the C-H bond.', 'The alpha carbon is bonded to the carbonyl carbon, not directly to oxygen; the acidity comes from resonance stabilization of the conjugate base.', 'Trace where the negative charge goes after the proton leaves.'),
+      miss('Alpha hydrogens are part of an aromatic ring that stabilizes the anion.', 'No aromatic ring is required; the stabilization comes from resonance into the carbonyl, available in simple aldehydes and ketones.', 'The key is delocalization onto the carbonyl, not aromaticity.'),
+      miss('Removing the alpha hydrogen forms a stable carbocation.', 'Deprotonation forms an anion (enolate), not a cation; loss of a proton generates negative, not positive, charge.', 'Removing H+ leaves behind an electron pair, giving an anion.'),
+    ],
+    lesson: 'Removing an alpha hydrogen produces an enolate whose negative charge is delocalized between the alpha carbon and the carbonyl oxygen through resonance. This resonance stabilization, especially the form placing charge on the electronegative oxygen, lowers the energy of the conjugate base and makes the alpha C-H far more acidic than ordinary C-H bonds (pKa near 20 versus near 50). Enolates are central to aldol and alkylation chemistry.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7742016,
+    chapter: 'Carbonyl Chemistry',
+    title: 'Hemiacetal Formation',
+    prompt: 'What product forms when one equivalent of an alcohol adds to an aldehyde under acid catalysis, before further reaction?',
+    correct: 'A hemiacetal (a carbon bearing both an -OH and an -OR group).',
+    wrong: [
+      miss('An acetal directly, with two -OR groups on the carbon.', 'A full acetal requires two equivalents of alcohol; with one equivalent the intermediate is a hemiacetal.', 'One alcohol gives a half-product before the second adds.'),
+      miss('A carboxylic acid by oxidation of the aldehyde.', 'Addition of an alcohol is not an oxidation; no carboxylic acid is formed in this step.', 'This is a nucleophilic addition, not an oxidation.'),
+      miss('An ether by substitution of the carbonyl oxygen.', 'The carbonyl oxygen is retained as part of the new -OH; the alcohol adds across the C=O rather than substituting the oxygen.', 'Track the carbonyl oxygen, which becomes a hydroxyl in the product.'),
+    ],
+    lesson: 'The first equivalent of alcohol adds across the carbonyl C=O to give a hemiacetal, a carbon carrying both -OH and -OR. Under continued acid catalysis the -OH can be protonated and lost as water, allowing a second alcohol to add and form a full acetal with two -OR groups. Hemiacetals are key intermediates and also the cyclic form of many sugars.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 8: Aromaticity ----------------
+  {
+    id: 7742017,
+    chapter: 'Aromaticity',
+    title: 'Huckel Rule',
+    prompt: 'According to Huckel rule, how many pi electrons must a planar, fully conjugated cyclic molecule have to be aromatic?',
+    correct: '4n + 2 pi electrons, where n is a non-negative integer (e.g. 2, 6, 10).',
+    wrong: [
+      miss('4n pi electrons, where n is a positive integer (e.g. 4, 8).', 'A count of 4n pi electrons in a planar conjugated ring leads to antiaromaticity and instability, not aromaticity.', 'Aromatic systems have 4n+2, while 4n is antiaromatic.'),
+      miss('Any even number of pi electrons.', 'Not all even counts qualify; 4 and 8 are even but give antiaromatic systems, so only the 4n+2 series is aromatic.', 'Only specific even counts (2, 6, 10, ...) satisfy the rule.'),
+      miss('Exactly 6 pi electrons in every case.', 'Six is the most common aromatic count (benzene), but 2, 10, 14 and other 4n+2 values are also aromatic.', 'The rule is a general formula, not a single fixed number.'),
+    ],
+    lesson: 'Huckel rule states that a cyclic, planar, fully conjugated molecule is aromatic when it contains 4n+2 pi electrons (2, 6, 10, 14, ...). Such systems gain substantial stabilization from delocalization. Rings with 4n pi electrons that are planar and conjugated are antiaromatic and destabilized, while non-planar or non-conjugated rings are simply non-aromatic.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7742018,
+    chapter: 'Aromaticity',
+    title: 'Directing Effects in EAS',
+    prompt: 'In electrophilic aromatic substitution, where does an activating group such as -OCH3 (methoxy) direct an incoming electrophile?',
+    correct: 'To the ortho and para positions.',
+    wrong: [
+      miss('To the meta position only.', 'Meta direction is characteristic of deactivating groups such as nitro; activating groups like methoxy are ortho/para directors.', 'Electron-donating activators stabilize ortho/para intermediates.'),
+      miss('To all positions equally with no selectivity.', 'EAS is strongly regioselective; the substituent steers the electrophile rather than allowing random attack.', 'Resonance stabilization of the intermediate favors specific positions.'),
+      miss('To the ipso position, replacing the methoxy group.', 'The electrophile normally attacks a ring C-H, not the carbon already bearing the substituent; ipso substitution is uncommon here.', 'Substitution occurs at unsubstituted ring carbons.'),
+    ],
+    lesson: 'Electron-donating groups like -OCH3 stabilize the cationic arenium intermediate when the electrophile adds ortho or para, because resonance can place positive charge adjacent to the donor. These groups are therefore ortho/para directors and ring activators. Electron-withdrawing groups such as -NO2 destabilize ortho/para attack and instead favor meta substitution while deactivating the ring.',
+    source,
+    generated: true,
+  },
+
+  // ---------------- Chapter 9: Spectroscopy ----------------
+  {
+    id: 7742019,
+    chapter: 'Spectroscopy',
+    title: 'IR Carbonyl Stretch',
+    prompt: 'A strong absorption near 1700 cm-1 in an infrared spectrum most characteristically indicates which functional group?',
+    correct: 'A carbonyl group (C=O).',
+    wrong: [
+      miss('A carbon-hydrogen single bond (C-H).', 'C-H stretches appear near 2850-3000 cm-1, well above the carbonyl region around 1700 cm-1.', 'C-H stretches are at much higher wavenumber.'),
+      miss('A hydroxyl group (O-H).', 'O-H stretches give a broad band near 3200-3550 cm-1, not the sharp carbonyl band near 1700 cm-1.', 'O-H absorbs as a broad signal at high wavenumber.'),
+      miss('A carbon-carbon single bond (C-C).', 'C-C single bond stretches are weak and occur in the fingerprint region; they are not the diagnostic strong band near 1700 cm-1.', 'A strong, sharp 1700 band signals a double bond to oxygen.'),
+    ],
+    lesson: 'The C=O stretch is one of the most diagnostic infrared signals, appearing as a strong, sharp absorption typically near 1700-1750 cm-1. Its exact position shifts with the carbonyl type (esters higher, amides lower) and with conjugation. By contrast, O-H and N-H stretches appear broad above 3000 cm-1 and C-H stretches near 2850-3000 cm-1.',
+    source,
+    generated: true,
+  },
+  {
+    id: 7742020,
+    chapter: 'Spectroscopy',
+    title: 'NMR Signal Splitting (n+1 Rule)',
+    prompt: 'In first-order proton NMR, a signal split into a triplet indicates the hydrogen is adjacent to how many equivalent neighboring protons?',
+    correct: 'Two equivalent neighboring protons.',
+    wrong: [
+      miss('Three equivalent neighboring protons.', 'Three neighbors would give a quartet (3+1 = 4 peaks), not a triplet.', 'Apply the n+1 rule: number of peaks equals neighbors plus one.'),
+      miss('One neighboring proton.', 'One neighbor gives a doublet (1+1 = 2 peaks), not a triplet.', 'A triplet means three peaks, so n+1 = 3.'),
+      miss('Zero neighboring protons.', 'No neighbors give a singlet (a single unsplit peak), not a triplet.', 'Splitting only occurs when neighboring protons are present.'),
+    ],
+    lesson: 'The n+1 rule states that a proton with n equivalent neighboring protons is split into n+1 peaks. A triplet has three peaks, so n+1 = 3 and the hydrogen has two equivalent neighbors. The relative intensities follow Pascal triangle (1:2:1 for a triplet), reflecting the number of spin combinations of the neighboring nuclei.',
+    source,
+    generated: true,
+  },
+])
