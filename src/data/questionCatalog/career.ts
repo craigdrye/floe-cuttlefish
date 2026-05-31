@@ -1,5 +1,6 @@
 import type { Question } from './types'
 import {
+  defaultQuestionScaffold,
   makeSimpleQuestion,
   makeQuestionBank,
 } from './base'
@@ -64,6 +65,101 @@ import { CAREER_SKILLS_SUB_TOPICS, CAREER_SKILLS_MENTOR_HINTS, CAREER_SKILLS_COR
 import { polish as runCareerSkillsPolish } from './polishPipeline'
 
 const _careerSkillsBundle = [{ subTopics: CAREER_SKILLS_SUB_TOPICS, mentorHints: CAREER_SKILLS_MENTOR_HINTS, correctShortened: CAREER_SKILLS_CORRECT_SHORTENED, source: 'careerSkills' }]
+
+const GENERIC_CAREER_HINTS = new Set([
+  'Ask what you would actually want a competent teammate to do here.',
+  ...([
+    'Career Skills',
+    'Medical',
+    'Clinical Research',
+    'Supply Chain',
+    'Technical Sales',
+    'UX Research',
+    'ML',
+    'Software',
+    'Statistics',
+    'Series 86',
+    'Regulatory',
+    'Quant Finance',
+  ] as const).map(topic => defaultQuestionScaffold(topic, '__', '__').mentorHint),
+])
+
+function careerMentorHint(trackId: string, question: Question): string {
+  const text = `${trackId} ${question.topic} ${question.chapter} ${question.title} ${question.prompt}`.toLowerCase()
+
+  if (text.includes('cfa') || text.includes('equity') || text.includes('valuation') || text.includes('financial statement') || text.includes('capital budgeting')) {
+    if (text.includes('ethic') || text.includes('mnpi') || text.includes('suitability')) {
+      return 'For finance ethics, identify the duty first: confidentiality, fair dealing, suitability, disclosure, or market integrity. The best answer should be the action a documented compliance review could defend.'
+    }
+    return 'Translate the finance setup into the driver being tested: cash flow, discount rate, growth, margin, leverage, or accounting treatment. Then keep the time period and denominator straight before comparing answers.'
+  }
+
+  if (text.includes('surgery') || text.includes('postoperative') || text.includes('sepsis') || text.includes('anticoag') || text.includes('oncologic')) {
+    return 'Start with the immediate clinical danger, then ask what decision changes management right now. Surgical judgment questions often hinge on source control, bleeding risk, anatomy, margins, or whether more information would delay a necessary action.'
+  }
+
+  if (text.includes('electrical') || text.includes('voltage') || text.includes('breaker') || text.includes('wire') || text.includes('circuit')) {
+    return 'For home electrical questions, separate normal function from safety protection: hot, neutral, ground, breaker, load, and fault each have different jobs. If a scenario involves work on wiring, prioritize de-energizing and verifying over convenience.'
+  }
+
+  if (text.includes('hvac') || text.includes('refrigerant') || text.includes('heat pump') || text.includes('furnace') || text.includes('air conditioner')) {
+    return 'Trace where heat is moving and which component changes pressure or airflow. HVAC questions usually become clear when you follow the cycle: absorb heat, compress, reject heat, meter, and repeat.'
+  }
+
+  if (text.includes('plumbing') || text.includes('drain') || text.includes('pipe') || text.includes('water heater') || text.includes('shutoff')) {
+    return 'Follow the water path and ask whether the issue is supply, drain, venting, pressure, or safety. The practical answer should reduce damage risk before jumping to a complicated repair.'
+  }
+
+  if (text.includes('asvab') || text.includes('arithmetic') || text.includes('mechanical') || text.includes('afqt')) {
+    if (text.includes('arithmetic') || text.includes('percent') || text.includes('ratio') || text.includes('interest')) {
+      return 'For ASVAB arithmetic, write the relationship as a small equation before calculating. Units, percent meaning, and rate-time-distance wording usually reveal which operation belongs where.'
+    }
+    return 'Ask which ASVAB subskill the item is testing: score structure, word knowledge, arithmetic, mechanical reasoning, or test strategy. The right answer should fit that subskill rather than a general test-taking slogan.'
+  }
+
+  if (text.includes('critical thinking') || text.includes('argument') || text.includes('premise') || text.includes('fallacy') || text.includes('valid')) {
+    return 'Map the argument before judging it: premise, conclusion, assumption, and possible flaw. The correct choice should describe the reasoning move, not whether you happen to agree with the topic.'
+  }
+
+  if (text.includes('government') || text.includes('voting') || text.includes('law') || text.includes('congress') || text.includes('court')) {
+    return 'Identify the institution and step in the process first: voters, legislature, executive agency, court, or constitution. Civics answers are strongest when they match who has authority to do the action.'
+  }
+
+  if (text.includes('personal finance') || text.includes('investing') || text.includes('credit') || text.includes('retirement') || text.includes('budget')) {
+    return 'Separate the money decision into risk, time horizon, cash flow, cost, and protection. The best answer should improve long-term resilience, not just chase the most exciting short-term number.'
+  }
+
+  if (text.includes('psychology') || text.includes('depression') || text.includes('anxiety') || text.includes('loneliness') || text.includes('mental')) {
+    return 'Look for the response that is accurate, supportive, and appropriately bounded. These questions usually test recognizing patterns and next safe steps, not diagnosing someone from one clue.'
+  }
+
+  if (text.includes('pregnancy') || text.includes('prenatal') || text.includes('labor') || text.includes('postpartum')) {
+    return 'Sort the scenario into routine care, warning sign, body change, or support need. When safety is involved, the best answer respects escalation and avoids minimizing red flags.'
+  }
+
+  if (text.includes('philosophy') || text.includes('ethic') || text.includes('world history')) {
+    return 'Identify the claim, principle, or historical cause being tested before reacting to the example. Good answers preserve context and avoid turning a nuanced idea into an absolute slogan.'
+  }
+
+  if (text.includes('machine learning') || text.includes('model') || text.includes('metric') || text.includes('data') || text.includes('ux research')) {
+    return 'Ask what decision the practitioner is trying to make and what evidence would improve it. Metrics, sampling, bias, user behavior, and deployment constraints matter more than technical vocabulary by itself.'
+  }
+
+  return 'Read the scenario as a workplace decision: what risk, constraint, stakeholder, or evidence matters most? The best answer should be practical, defensible, and matched to the exact role in the prompt.'
+}
+
+function enrichCareerHints(catalog: Record<string, Question[]>): Record<string, Question[]> {
+  return Object.fromEntries(
+    Object.entries(catalog).map(([trackId, questions]) => [
+      trackId,
+      questions.map(question => (
+        question.mentorHint && !GENERIC_CAREER_HINTS.has(question.mentorHint)
+          ? question
+          : { ...question, mentorHint: careerMentorHint(trackId, question) }
+      )),
+    ]),
+  )
+}
 
 export function buildCareerQuestionCatalog(): Record<string, Question[]> {
   const quantCatalog = buildQuantQuestionCatalog()
@@ -1352,7 +1448,11 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
         ['$0.50', 'That divides shares by earnings instead of earnings by shares.', 'EPS = net income / shares.'],
         ['$50.00', 'That ignores the million-unit scale.', 'Keep units consistent.'],
         ['$100.00', 'That is total earnings, not earnings per share.', 'Per-share means divide by share count.'],
-      ]),
+      ],
+      undefined,
+      undefined,
+      undefined,
+      'EPS is a per-share measure, so start with total earnings and divide by the share count. Keep the units aligned before judging whether the dollar amount is reasonable.'),
     makeSimpleQuestion(6002, 'Series 86', 'Valuation Reef', 'P/E multiple',
       'A stock trades at $40 and expected EPS is $2. What is the forward P/E?',
       '20x',
@@ -1360,7 +1460,11 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
         ['0.05x', 'That is EPS divided by price.', 'P/E = price / earnings per share.'],
         ['2x', 'That misses a factor of ten.', 'Divide 40 by 2.'],
         ['$80', 'P/E is a multiple, not a dollar value.', 'Use x notation for valuation multiples.'],
-      ]),
+      ],
+      undefined,
+      undefined,
+      undefined,
+      'Forward P/E compares today’s price with expected earnings per share. Divide price by forward EPS and express the result as a multiple, not as dollars.'),
     makeSimpleQuestion(6003, 'Series 86', 'Research Swamp', 'Channel checks',
       'What is the main purpose of channel checks in equity research?',
       'To gather industry or supply-chain evidence that can inform company forecasts',
@@ -1368,7 +1472,11 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
         ['To guarantee inside information', 'Research must avoid material nonpublic information.', 'Use lawful, mosaic-style evidence.'],
         ['To replace financial statements', 'Channel checks supplement filings; they do not replace them.', 'Combine qualitative checks with financial analysis.'],
         ['To set accounting rules', 'Accounting standards are not set by analysts.', 'Analysts interpret information, they do not write GAAP.'],
-      ]),
+      ],
+      undefined,
+      undefined,
+      undefined,
+      'Channel checks are about building a lawful mosaic of evidence around demand, pricing, supply, or sentiment. The hint is to supplement the model without crossing into material nonpublic information.'),
     makeSimpleQuestion(6004, 'Series 86', 'Forecast Lagoon', 'Revenue build',
       'Which is a basic bottom-up way to forecast revenue?',
       'Units sold multiplied by average selling price',
@@ -1376,7 +1484,11 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
         ['Net income divided by beta', 'Beta is a market risk measure, not a revenue driver.', 'Start from operating drivers.'],
         ['Debt minus cash', 'That relates to enterprise value, not revenue.', 'Use business volume and pricing.'],
         ['Share count times dividend yield', 'That relates to equity distributions, not revenue.', 'Revenue comes from sales activity.'],
-      ]),
+      ],
+      undefined,
+      undefined,
+      undefined,
+      'A bottom-up forecast starts from the business drivers that create sales. For revenue, look for volume times price before moving to margins, valuation, or capital-structure metrics.'),
     ...series86Imported,
   ],
   series87: makeQuestionBank('Career Skills', [
@@ -1670,5 +1782,5 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
     polished[id] = [...(polished[id] ?? []), ...extra]
   }
 
-  return topUpCareerAgentGeneratedCatalog(polished)
+  return enrichCareerHints(topUpCareerAgentGeneratedCatalog(polished))
 }

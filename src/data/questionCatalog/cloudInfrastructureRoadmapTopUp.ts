@@ -32,6 +32,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Regions, availability zones, and edge sites are different failure domains. Surviving a whole-region outage requires capacity and data in a second region; multi-AZ only survives a single data-center failure, and backups only limit data loss.',
+    mentorHint:
+      'Cloud resilience starts with failure domains. Check whether the proposed design survives the exact boundary named in the requirement: instance, zone, region, or provider edge.',
     source,
     generated: true,
   },
@@ -61,6 +63,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'The shared responsibility model shifts with the service tier. The more managed the platform, the more the provider owns the lower layers (hardware, OS, runtime), but the customer always owns its own code, configuration, dependencies, and data.',
+    mentorHint:
+      'Use the shared responsibility model to locate the abstraction boundary. Managed platforms move lower-layer operations to the provider, but application code, configuration, data, and dependencies remain customer-owned.',
     source,
     generated: true,
   },
@@ -92,6 +96,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'A NAT gateway lets private-subnet instances initiate outbound connections to the internet while blocking unsolicited inbound traffic. The NAT gateway lives in a public subnet; the private subnet routes its default route to the NAT. An internet gateway, by contrast, allows two-way reachability.',
+    mentorHint:
+      'Separate reachability from egress. Private workloads often need a path to initiate outbound connections without acquiring public addresses or accepting unsolicited inbound traffic.',
     source,
     generated: true,
   },
@@ -121,6 +127,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Security groups are stateful and attach to instances/ENIs, so allowed outbound traffic automatically permits the return. Network ACLs are stateless and attach to subnets, so you must allow both directions explicitly. Knowing which is which prevents both over-blocking and over-opening.',
+    mentorHint:
+      'Cloud network controls differ by statefulness and attachment point. Ask whether the rule follows a connection automatically and whether it applies to a single workload interface or an entire subnet.',
     source,
     generated: true,
   },
@@ -150,6 +158,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Workload identities (IAM roles attached to compute) deliver short-lived, automatically rotated credentials, so there is no static secret to leak and the blast radius of any compromise is small and time-bound. Hardcoded long-lived keys are a recurring source of breaches.',
+    mentorHint:
+      'Static credentials create long exploit windows and unclear ownership. A workload identity should be scoped to one application, expire quickly, and rotate without a human copying secrets.',
     source,
     generated: true,
   },
@@ -181,6 +191,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'A canary deployment routes a small fraction of live traffic to the new version, lets you observe golden signals, and ramps up only if it stays healthy. Blue-green keeps two full environments and switches all traffic at once, trading gradual signal for instant rollback.',
+    mentorHint:
+      'Risky releases should reduce blast radius while gathering live signals. Think about whether traffic moves gradually by percentage or switches all at once between complete environments.',
     source,
     generated: true,
   },
@@ -210,6 +222,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'The expand/contract (parallel-change) pattern keeps every deployed version working: add the new structure, dual-write and backfill, migrate reads, then remove the old structure in a separate later release. This preserves backward compatibility and a clean rollback at each step.',
+    mentorHint:
+      'Safe schema changes are compatible across multiple deployed versions. Keep both old and new shapes working long enough to deploy, backfill, observe, and roll back cleanly if needed.',
     source,
     generated: true,
   },
@@ -239,6 +253,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Rollback assumes the prior version can run the current data. When a release includes an irreversible or forward-only migration, reverting the code can leave it facing data it cannot handle. In those cases a roll-forward (fix and deploy) is usually safer, which is why migrations and code should be designed to be reversible or compatible across versions.',
+    mentorHint:
+      'Rollback safety depends on both code and state. Once data has moved forward, old binaries may not understand it, so recovery planning must include migration compatibility.',
     source,
     generated: true,
   },
@@ -270,6 +286,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'A readiness probe controls whether a pod receives traffic: when it fails, the pod is removed from Service endpoints but is not restarted. A liveness probe controls whether the container is healthy at all: when it fails, the kubelet restarts it. Using liveness where you needed readiness causes needless restart loops.',
+    mentorHint:
+      'Kubernetes probes answer different questions. One controls whether traffic should be sent to a pod; another decides whether the container should be killed and restarted.',
     source,
     generated: true,
   },
@@ -299,6 +317,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'A liveness probe that begins before a slow application has finished initializing will kill it mid-boot, creating a restart loop. The fix is a startup probe (which gates liveness/readiness until boot completes) or a longer initialDelaySeconds, not removing the probe or adding replicas.',
+    mentorHint:
+      'A slow boot is not the same as a dead process. Give the platform a startup-specific signal so initialization time is not mistaken for an unhealthy workload.',
     source,
     generated: true,
   },
@@ -328,6 +348,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Requests tell the scheduler how much capacity to reserve and where a pod can fit; limits cap how much it may use. A high limit with no request lets the scheduler overcommit a node, so under load pods contend and the kernel OOM-kills them. Set realistic requests so placement reflects real needs.',
+    mentorHint:
+      'Scheduling and runtime enforcement are separate concerns. One value tells the scheduler what capacity to reserve; another caps how much the container may consume under pressure.',
     source,
     generated: true,
   },
@@ -357,6 +379,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Tags like :latest are mutable pointers, so the same reference can resolve to different image digests over time. That breaks reproducibility and rollbacks. Deploy by immutable digest or a unique, never-reused version tag so a given deployment always runs exactly the same bytes.',
+    mentorHint:
+      'Reproducible deployments require immutable references. A tag that can be repointed later makes it hard to know exactly which image version is running or to roll back confidently.',
     source,
     generated: true,
   },
@@ -386,6 +410,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Stateless services scale out cleanly: horizontal autoscaling adds replicas when a load signal rises and removes them when it falls, matching cost to short spikes and avoiding a single oversized failure point. Vertical scaling suits workloads that cannot be parallelized but is slower and capped by instance size.',
+    mentorHint:
+      'Scaling strategy should match workload shape. Spiky, mostly stateless traffic usually benefits from adding and removing replicas rather than making one replica larger by hand.',
     source,
     generated: true,
   },
@@ -417,6 +443,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'The four golden signals are latency (how long requests take), traffic (how much demand), errors (rate of failed requests, including wrong-content and SLO-violating ones), and saturation (how full the system is). Monitoring these four covers most user-facing failures with minimal instrumentation.',
+    mentorHint:
+      'Golden signals connect user experience to system pressure. Look for measures that cover speed, volume, failures, and how close the system is to exhausting capacity.',
     source,
     generated: true,
   },
@@ -446,6 +474,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'An error budget is the allowed failure derived from the SLO (for 99.9% over 28 days, about 40 minutes of downtime-equivalent). Burn rate is how fast you are spending it: 1x exactly matches the SLO pace, while 10x exhausts the whole window in roughly a tenth of the time, signaling a fast-burn alert and escalation.',
+    mentorHint:
+      'Burn rate is the speed at which reliability allowance is being consumed. A high multiple means the calendar window will be exhausted much sooner than planned, so urgency rises.',
     source,
     generated: true,
   },
@@ -475,6 +505,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'High-quality alerting pages on symptoms that map to user impact and the SLO (rising latency or error rate), not on every internal cause. Cause-based alerts that rarely affect users create alert fatigue and rising MTTA. Keep resource metrics for diagnosis, but page on what users feel.',
+    mentorHint:
+      'Good alerts page for symptoms that users or SLOs care about. Cause metrics still matter, but they belong mainly in dashboards and debugging context unless they predict imminent impact.',
     source,
     generated: true,
   },
@@ -506,6 +538,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Spot uses spare capacity at a steep discount but can be reclaimed on roughly two minutes notice. It suits fault-tolerant, interruptible work (batch, CI, stateless scale-out with drain). Customer-facing, interruption-intolerant services belong on on-demand for the baseline, with reserved instances or savings plans covering steady usage.',
+    mentorHint:
+      'Discounted or spare capacity changes the interruption model. Use it where workloads can checkpoint, retry, or disappear gracefully, not where abrupt termination breaks the service promise.',
     source,
     generated: true,
   },
@@ -535,6 +569,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'A Compute Savings Plan commits you to a dollars-per-hour spend and applies the discount across instance families, sizes, regions, and even Fargate/Lambda. Reserved Instances offer deeper discounts but lock you to specific attributes. When usage is steady but its shape will move, savings plans capture discount without the lock-in.',
+    mentorHint:
+      'Commitment discounts trade flexibility for savings. Compare whether the commitment is tied to a narrow instance shape or can follow changing compute choices over time.',
     source,
     generated: true,
   },
@@ -564,6 +600,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Storage tiers trade access speed and retrieval cost for lower per-GB price. A lifecycle policy automatically transitions objects from hot to cool to archive as they age past their active-read window, and can expire them when retention allows. This matches cost to access pattern without manual housekeeping.',
+    mentorHint:
+      'Storage cost optimization follows access patterns and retention needs. Lifecycle policies are most useful when data gets colder over time and can move to cheaper tiers automatically.',
     source,
     generated: true,
   },
@@ -595,6 +633,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'RPO (recovery point objective) is the maximum acceptable data loss, measured backward to the last clean recoverable state, so it drives backup/replication frequency. RTO (recovery time objective) is the maximum acceptable downtime, measured forward to restoration, so it drives recovery architecture. They are independent and set from business impact.',
+    mentorHint:
+      'Disaster recovery has two independent targets: how much data loss is tolerable and how long service restoration may take. Keep those objectives separate when evaluating a plan.',
     source,
     generated: true,
   },
@@ -624,6 +664,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Replication protects against hardware/site failure by keeping a live copy of the current state, but it dutifully propagates logical disasters: deletes, corruption, and ransomware all reach the replica. Backups (ideally versioned, immutable, and off-site per the 3-2-1 rule) provide a recoverable point in time that replication cannot.',
+    mentorHint:
+      'Replication is a freshness mechanism, not a time machine. If bad writes propagate instantly, you still need isolated or point-in-time copies to recover from corruption or deletion.',
     source,
     generated: true,
   },
@@ -653,6 +695,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'The 3-2-1 rule: three copies of your data, on two different media types, with at least one copy off-site. It survives single-device, single-media, and single-site failures. Modern guidance extends it to 3-2-1-1-0: add one immutable/air-gapped copy and verify zero restore errors through testing.',
+    mentorHint:
+      'Backup resilience comes from diversity and separation. Think in terms of multiple copies, different failure modes, and at least one copy outside the primary blast radius.',
     source,
     generated: true,
   },
@@ -682,6 +726,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Once a secret reaches a remote repository it must be assumed compromised: git history, forks, clones, and automated scanners may already hold it. The required action is to rotate/revoke the credential immediately and review for misuse. Removing it from the latest commit or rewriting history does not recall copies that already exist.',
+    mentorHint:
+      'A leaked secret should be treated as already copied. Removing it from the current file is not enough because history, forks, logs, and local clones may still contain it.',
     source,
     generated: true,
   },
@@ -713,6 +759,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'MTTD measures detection, MTTA measures the delay from alert to acknowledgment, and MTTR measures time to resolve. A rising MTTA with steady MTTR is a classic early warning of alert fatigue or thin on-call coverage: engineers are responding more slowly, not fixing things more slowly.',
+    mentorHint:
+      'Incident metrics measure different stages of response. Distinguish how long it takes to notice or acknowledge an alert from how long it takes to restore healthy service.',
     source,
     generated: true,
   },
@@ -742,6 +790,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Blameless postmortems assume competent people acting reasonably with the information they had, and ask why the system permitted the failure to cause harm. Blame makes people give sanitized accounts, which buries the real root cause. The output should be systemic action items (guardrails, process, automation) with owners and deadlines.',
+    mentorHint:
+      'Blameless review looks for system conditions that made the mistake possible. The goal is honest reporting and better guardrails, not finding a person to punish.',
     source,
     generated: true,
   },
@@ -771,6 +821,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Severity reflects business and user impact. A total, revenue-stopping, all-customer outage is SEV-1: declare immediately, assign an incident commander, escalate, communicate to stakeholders, and work it under the tightest resolution target. High-performing teams aim to resolve SEV-1s in under an hour.',
+    mentorHint:
+      'Severity is assigned from customer impact, business criticality, scope, and time sensitivity. The classification exists to trigger the right people, cadence, and escalation path.',
     source,
     generated: true,
   },
@@ -800,6 +852,8 @@ export const cloudInfrastructureRoadmapTopUpQuestions: Question[] = makeQuestion
     ],
     lesson:
       'Restoring service mitigates the incident; it does not prevent recurrence. A complete response produces a postmortem and a set of concrete action items, each with a named owner and a due date, tracked in the system of record. Prevention that depends on one person remembering is not prevention.',
+    mentorHint:
+      'After service is restored, learning must turn into owned work. Follow-ups should address the systemic cause with a clear owner, due date, and way to verify completion.',
     source,
     generated: true,
   },

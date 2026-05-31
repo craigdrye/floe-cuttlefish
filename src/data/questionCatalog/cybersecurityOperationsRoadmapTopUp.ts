@@ -33,6 +33,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'Operations runs on a ladder of certainty: events are everything observed, alerts are events a detection flagged, and incidents are confirmed adverse occurrences that require response. Triage is the act of deciding whether an alert is a real incident, so using the words precisely keeps the team aligned on what has actually been declared.',
+    mentorHint:
+      'Security operations use these terms as a certainty ladder. Raw observations become review candidates, and only confirmed adverse activity should trigger full incident-response machinery.',
     source,
     generated: true,
   },
@@ -63,6 +65,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'A false positive is an alert that fired on activity that turned out to be benign; a false negative is a real threat that produced no alert. Recording dispositions accurately drives tuning and lets the team measure detection quality rather than just alert volume.',
+    mentorHint:
+      'Disposition labels describe reality, not whether a rule technically matched. Ask whether the underlying activity was actually malicious and whether the detection missed or over-called it.',
     source,
     generated: true,
   },
@@ -94,6 +98,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'Indicators of compromise (IOCs) are static artifacts left by a known attack — hashes, IPs, domains. Indicators of attack (IOAs) describe adversary behavior — the sequence of actions regardless of the specific tool. IOAs are harder for attackers to change, which makes them more durable detections.',
+    mentorHint:
+      'Indicators differ by durability. A static artifact points to something already seen, while a behavioral pattern describes how the adversary operates across tools and infrastructure.',
     source,
     generated: true,
   },
@@ -124,6 +130,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       "The Pyramid of Pain ranks indicators by how much it hurts the adversary when you detect them. Hashes, IPs, and domains are trivial to change; tools are harder; TTPs — how the attacker actually operates — are hardest of all. Detecting at the TTP level forces adversaries to retool their entire approach.",
+    mentorHint:
+      'The Pyramid of Pain ranks how costly an indicator is for the attacker to change. Durable detections target behavior and operating patterns rather than disposable infrastructure.',
     source,
     generated: true,
   },
@@ -154,6 +162,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'In MITRE ATT&CK, tactics are the high-level objectives an adversary pursues (the Enterprise matrix has 14, like Lateral Movement TA0008), and techniques are the specific methods used to accomplish each tactic. Mapping observed behavior to tactic-and-technique gives teams a shared language for what the attacker is doing and why.',
+    mentorHint:
+      'ATT&CK separates objectives from methods. First ask what goal the adversary is pursuing, then identify the concrete technique used to accomplish that goal.',
     source,
     generated: true,
   },
@@ -184,6 +194,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'The Traffic Light Protocol marks how widely shared intelligence may be redistributed. TLP:RED is for named recipients only; TLP:AMBER permits limited sharing within the recipient organization (and its clients) on a need-to-know basis; TLP:GREEN allows community-wide sharing; TLP:CLEAR is unrestricted. Respecting these markings preserves sharing relationships.',
+    mentorHint:
+      'TLP markings are handling instructions for trust-based sharing. Before forwarding intelligence, check both the color and the audience boundary allowed by that color.',
     source,
     generated: true,
   },
@@ -214,6 +226,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'The Cyber Kill Chain models intrusion as seven stages: Reconnaissance, Weaponization, Delivery, Exploitation, Installation, Command and Control, and Actions on Objectives. An installed implant calling home for instructions is Command and Control — the stage where the attacker establishes remote control before pursuing final objectives.',
+    mentorHint:
+      'Kill-chain classification depends on sequence. An implant calling outward after installation is in a different phase from pre-compromise research or final data theft.',
     source,
     generated: true,
   },
@@ -245,6 +259,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'MFA fatigue (push bombing) works only when the attacker already has the password; they spam approval requests hoping the user taps "approve" out of annoyance. Response is to revoke active sessions, reset the credential, and move toward phishing-resistant MFA or number-matching that defeats blind approvals.',
+    mentorHint:
+      'Repeated unexpected push prompts usually mean the password layer is already compromised. The attacker is trying to turn human fatigue into approval, so preserve the factor and escalate.',
     source,
     generated: true,
   },
@@ -275,6 +291,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'Changing a password does not, by itself, terminate sessions that were already authenticated; issued session and refresh tokens often remain valid until explicitly revoked. Compromised-account response must both reset the credential and revoke active sessions/tokens, or the attacker simply keeps using the session they already hold.',
+    mentorHint:
+      'Password reset and session revocation protect different time windows. One changes future authentication; the other removes access that may already be active.',
     source,
     generated: true,
   },
@@ -305,6 +323,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'Consent phishing tricks users into authorizing a malicious OAuth application, which receives delegated tokens (including a refresh token) that operate independently of the user password and often without re-prompting MFA. Remediation requires revoking the application\'s consent grant and tokens, not just resetting credentials.',
+    mentorHint:
+      'OAuth abuse often targets consent rather than passwords. Review what scopes were granted, which app received them, and whether access persists through refresh tokens.',
     source,
     generated: true,
   },
@@ -336,6 +356,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'SIEM centralizes and correlates log data across the environment; EDR (and its broader cousin XDR) gives deep endpoint telemetry like process lineage and the ability to isolate or remediate a host; SOAR orchestrates and automates response actions across all of these. They are complementary layers, not substitutes.',
+    mentorHint:
+      'Security tools differ by telemetry source and action model. Separate endpoint collection, centralized log correlation, and automated response orchestration before choosing a label.',
     source,
     generated: true,
   },
@@ -366,6 +388,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'C2 beaconing shows up as regular, low-volume callbacks from a host to attacker infrastructure — the implant "phoning home" for instructions. Periodicity, small uniform payload sizes, and a single unusual destination are the tells. Detecting the behavior (an IOA) is far more durable than blocking any one domain.',
+    mentorHint:
+      'Beaconing is suspicious because of rhythm, direction, and destination. Look for periodic outbound communication from an internal host to external infrastructure that may provide instructions.',
     source,
     generated: true,
   },
@@ -396,6 +420,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'Living-off-the-land binaries (LOLBins) are legitimate, signed OS tools repurposed by attackers to blend in. You cannot simply block them without breaking administration, so detection shifts to suspicious usage context: unusual parent processes, odd command-line arguments, and the sequence of actions around the call.',
+    mentorHint:
+      'Living-off-the-land activity hides behind trusted binaries. The file name may be normal, so analysts must rely on command line, parent process, user context, and network behavior.',
     source,
     generated: true,
   },
@@ -426,6 +452,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'A security group rule allowing 0.0.0.0/0 to a management port (RDP/3389, SSH/22) exposes that service to the entire internet, where it faces constant automated attack. The fix is least-privilege networking: allow inbound only from a bastion host, VPN, or specific administrative IP ranges.',
+    mentorHint:
+      'Cloud firewall review starts with exposure and least privilege. A broad source range on an administrative or sensitive port expands who can even attempt access.',
     source,
     generated: true,
   },
@@ -457,6 +485,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'CVSS scores theoretical severity, EPSS estimates exploitation likelihood, and CISA\'s KEV catalog lists vulnerabilities confirmed to be exploited in the wild. Risk-based prioritization patches KEV-listed and high-EPSS issues first — especially when internet-facing — even if their CVSS is lower than a severe-but-unexploited flaw.',
+    mentorHint:
+      'Vulnerability priority should account for attacker behavior in the wild. A lower theoretical score can outrank a higher one when exploitation is already observed and relevant to your environment.',
     source,
     generated: true,
   },
@@ -487,6 +517,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'EPSS (Exploit Prediction Scoring System) outputs a probability, between 0 and 1, that a given vulnerability will be exploited in the wild within the next 30 days. It complements CVSS (severity) and KEV (confirmed exploitation) to drive forward-looking, risk-based patch prioritization.',
+    mentorHint:
+      'Exploit prediction is different from impact scoring. Some metrics estimate how likely attackers are to exploit a weakness soon, which helps prioritize limited patching capacity.',
     source,
     generated: true,
   },
@@ -517,6 +549,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'When a high-risk vulnerability cannot be patched immediately, compensating controls buy time: tighten network access, deploy detection or virtual patching at a WAF/IPS, and increase monitoring. Pair this with a documented risk decision and a firm date for the validated permanent fix — never silent acceptance or hiding the finding.',
+    mentorHint:
+      'When patching is blocked, reduce reachable attack surface and exploitability. Temporary controls should buy time while preserving a plan to remove the vulnerability itself.',
     source,
     generated: true,
   },
@@ -548,6 +582,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'NIST SP 800-61 defines four phases: Preparation; Detection and Analysis; Containment, Eradication, and Recovery; and Post-Incident Activity. The cycle is continuous — lessons from the final phase feed back into preparation. SANS\' PICERL (Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned) is the closely related six-step variant.',
+    mentorHint:
+      'Incident frameworks are ordered workflows, not isolated checklists. Preparation supports detection, analysis leads to containment and recovery, and lessons feed back into better readiness.',
     source,
     generated: true,
   },
@@ -578,6 +614,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'Containment has two tiers. Short-term containment stops the bleeding fast — isolating a host or subnet. Long-term containment puts the business on a sustainable footing during the incident, such as building clean replacement systems, while eradication and full recovery proceed. Both happen before the foothold is fully removed.',
+    mentorHint:
+      'Containment can be tactical or strategic. Short-term moves stop current damage quickly, while long-term containment prevents the same path from reopening during recovery.',
     source,
     generated: true,
   },
@@ -608,6 +646,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'The order of volatility prioritizes collecting the most ephemeral evidence first. Memory (registers, cache, RAM with running processes and network connections) disappears on reboot, so it is captured before durable sources like disk files and logs. Capturing in the wrong order — or rebooting first — destroys irreplaceable forensic data.',
+    mentorHint:
+      'Evidence collection must respect volatility. Data that disappears when power, processes, or network sessions change should be considered before slower-changing disk artifacts.',
     source,
     generated: true,
   },
@@ -638,6 +678,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'Chain of custody is the documented, unbroken trail showing exactly who collected, handled, transferred, and stored each piece of evidence, when, and with what integrity verification (e.g., cryptographic hashes). Without it, evidence authenticity can be challenged and the material may be inadmissible or worthless in proceedings.',
+    mentorHint:
+      'Forensic evidence needs integrity and accountability. Track who handled it, when, how it was stored, and whether the record can be trusted later.',
     source,
     generated: true,
   },
@@ -669,6 +711,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'The incident commander owns the overall response — coordination, prioritization, communication, and decision rights — so technical responders can focus on remediation. Separating command from hands-on work prevents the classic failure where the only decision-maker disappears into a terminal and coordination collapses.',
+    mentorHint:
+      'The incident commander owns coordination, priorities, and communication flow. Deep technical responders can investigate while the commander keeps the response organized and decisive.',
     source,
     generated: true,
   },
@@ -699,6 +743,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'During a live incident, attackers may have visibility into internal communications, so detailed findings should flow on a need-to-know basis through designated, controlled channels. Broad internal broadcasts risk tipping off the adversary and spreading unverified information that later has to be retracted.',
+    mentorHint:
+      'Live incidents need controlled information flow. Share enough for responders and stakeholders to act, but avoid broad distribution that leaks sensitive facts or spreads uncertainty as truth.',
     source,
     generated: true,
   },
@@ -729,6 +775,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'Good incident communication is bounded by evidence: state what is confirmed, label what is hypothesized, and name the open questions. Reporting an inference ("data was stolen") as established fact triggers downstream decisions that may be wrong and erodes trust. Bounded uncertainty is the professional posture.',
+    mentorHint:
+      'Good incident communication separates facts from hypotheses. Label confidence clearly so leaders can make decisions without mistaking early theories for confirmed findings.',
     source,
     generated: true,
   },
@@ -760,6 +808,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'SEC Form 8-K Item 1.05 (effective late 2023) requires public companies to disclose a cybersecurity incident determined to be material within four business days of that materiality determination — not within four days of discovery. The determination must itself be made without unreasonable delay, and details can be supplemented by amendment.',
+    mentorHint:
+      'Regulatory disclosure clocks often depend on a legal determination, not just first technical discovery. Know what event starts the timer and involve counsel early.',
     source,
     generated: true,
   },
@@ -790,6 +840,8 @@ export const cybersecurityOperationsRoadmapTopUpQuestions: Question[] = makeQues
     ],
     lesson:
       'A blameless post-incident review focuses on what in the system allowed the incident, not on punishing an individual. Fear of blame makes people conceal the details you most need; psychological safety surfaces honest root causes, which become systemic fixes that feed back into the preparation phase and prevent recurrence.',
+    mentorHint:
+      'A blameless review asks why the system allowed the failure and how to make recurrence less likely. The output should be learning, guardrails, and owned improvements.',
     source,
     generated: true,
   },

@@ -11,6 +11,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Atomic Structure and Properties',
     title: 'Moles from mass',
     prompt: 'How many moles of carbon dioxide (molar mass 44.0 g/mol) are present in 22.0 g of the gas?',
+    mentorHint: 'Moles equal mass divided by molar mass, not the reverse.',
     correct: '0.500 mol',
     wrong: [
       miss('2.00 mol', 'This divides the molar mass by the mass instead of dividing mass by molar mass.', 'Moles equal mass divided by molar mass, not the reverse.'),
@@ -26,6 +27,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Atomic Structure and Properties',
     title: 'Average atomic mass from isotopes',
     prompt: 'Boron exists as 19.9% boron-10 (mass 10.01) and 80.1% boron-11 (mass 11.01). What is its average atomic mass?',
+    mentorHint: 'Weight each isotope by its percent abundance.',
     correct: '10.81',
     wrong: [
       miss('10.50', 'This is the unweighted mean of the two isotope masses, ignoring abundances.', 'Weight each isotope by its percent abundance.'),
@@ -41,6 +43,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Atomic Structure and Properties',
     title: 'Photoelectron spectroscopy peaks',
     prompt: 'In a photoelectron spectrum of magnesium, the peak at the lowest binding energy corresponds to electrons from which subshell?',
+    mentorHint: 'Lowest binding energy means the most loosely held, outermost electrons.',
     correct: '3s',
     wrong: [
       miss('1s', 'The 1s electrons are closest to the nucleus and have the highest binding energy, not the lowest.', 'Lowest binding energy means the most loosely held, outermost electrons.'),
@@ -56,6 +59,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Atomic Structure and Properties',
     title: 'Periodic trend in atomic radius',
     prompt: 'Which atom has the largest atomic radius: Na, Mg, Cl, or Ar?',
+    mentorHint: 'Atomic radius decreases left to right across a period.',
     correct: 'Na',
     wrong: [
       miss('Ar', 'Across a period, increasing nuclear charge pulls electrons in, so Ar (right side) is small, not large.', 'Atomic radius decreases left to right across a period.'),
@@ -71,6 +75,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Atomic Structure and Properties',
     title: 'Coulomb attraction and ionization energy',
     prompt: 'Why does the first ionization energy generally increase across a period from left to right?',
+    mentorHint: 'Electrons fill the same principal level across a period.',
     correct: 'Effective nuclear charge increases while electrons are added to the same shell, so the outer electrons are held more tightly',
     wrong: [
       miss('The number of energy levels (shells) increases across a period', 'Period number stays constant across a row; new shells start a new period.', 'Electrons fill the same principal level across a period.'),
@@ -86,6 +91,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Atomic Structure and Properties',
     title: 'Mass spectrum interpretation',
     prompt: 'A mass spectrum of an element shows two peaks: mass 63 at 69% abundance and mass 65 at 31% abundance. Which element is it most likely to be?',
+    mentorHint: 'Compute the weighted average and compare with the periodic table.',
     correct: 'Copper',
     wrong: [
       miss('Zinc', 'Zinc has an average atomic mass near 65.4 and several isotopes; this two-peak pattern fits copper.', 'Compute the weighted average and compare with the periodic table.'),
@@ -102,6 +108,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Compound Structure and Properties',
     title: 'Empirical formula from percent composition',
     prompt: 'A compound is 40.0% carbon, 6.7% hydrogen, and 53.3% oxygen by mass. What is its empirical formula?',
+    mentorHint: 'Reduce the mole ratio to its simplest form.',
     correct: 'CH2O',
     wrong: [
       miss('C2H4O2', 'This is a molecular formula multiple; the empirical formula is the smallest whole-number ratio.', 'Reduce the mole ratio to its simplest form.'),
@@ -117,6 +124,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Compound Structure and Properties',
     title: 'VSEPR molecular geometry',
     prompt: 'According to VSEPR theory, what is the molecular geometry of a water molecule (H2O)?',
+    mentorHint: 'Count the lone pairs on the central oxygen.',
     correct: 'Bent',
     wrong: [
       miss('Linear', 'A linear shape would require no lone pairs on the central atom, but oxygen has two lone pairs.', 'Count the lone pairs on the central oxygen.'),
@@ -132,6 +140,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Compound Structure and Properties',
     title: 'Formal charge and resonance',
     prompt: 'In the nitrate ion (NO3-), how are the three N-O bonds best described?',
+    mentorHint: 'Equivalent oxygen atoms cannot have different bonds.',
     correct: 'All three bonds are identical, with a bond order of 4/3 due to resonance',
     wrong: [
       miss('One double bond and two single bonds, fixed in place', 'A single Lewis structure is misleading; the real bonding is an average over resonance forms.', 'Equivalent oxygen atoms cannot have different bonds.'),
@@ -147,6 +156,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Compound Structure and Properties',
     title: 'Ionic vs covalent character',
     prompt: 'Which pair of elements would form a bond with the most ionic character?',
+    mentorHint: 'Ionic character grows with the electronegativity gap.',
     correct: 'K and F',
     wrong: [
       miss('C and O', 'Both are nonmetals with a moderate electronegativity difference, giving a polar covalent bond.', 'Ionic character grows with the electronegativity gap.'),
@@ -162,6 +172,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Compound Structure and Properties',
     title: 'Hybridization of carbon',
     prompt: 'What is the hybridization of the carbon atom in carbon dioxide (CO2)?',
+    mentorHint: 'Count the regions of electron density around carbon.',
     correct: 'sp',
     wrong: [
       miss('sp2', 'sp2 corresponds to three electron domains, but CO2 has only two domains around carbon.', 'Count the regions of electron density around carbon.'),
@@ -177,6 +188,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Compound Structure and Properties',
     title: 'Metallic bonding and conductivity',
     prompt: 'Why do metals conduct electricity well in the solid state?',
+    mentorHint: 'Identify which particle actually moves in solid metal.',
     correct: 'Valence electrons are delocalized and free to move through a lattice of positive ions',
     wrong: [
       miss('Metals contain mobile ions that drift through the solid lattice', 'In a solid metal the cations are fixed in the lattice; the charge carriers are electrons, not moving ions.', 'Identify which particle actually moves in solid metal.'),
@@ -193,6 +205,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Intermolecular Forces and Properties',
     title: 'Strongest intermolecular force',
     prompt: 'Which substance experiences hydrogen bonding between its molecules?',
+    mentorHint: 'Hydrogen bonding needs H bonded to N, O, or F.',
     correct: 'NH3',
     wrong: [
       miss('CH4', 'Methane has only C-H bonds and no H attached to N, O, or F, so it shows only dispersion forces.', 'Hydrogen bonding needs H bonded to N, O, or F.'),
@@ -208,6 +221,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Intermolecular Forces and Properties',
     title: 'Boiling point and dispersion forces',
     prompt: 'Among the noble gases He, Ne, Ar, and Kr, which has the highest boiling point?',
+    mentorHint: 'Larger electron clouds give stronger dispersion forces.',
     correct: 'Kr',
     wrong: [
       miss('He', 'Helium is the smallest, least polarizable atom and has the weakest dispersion forces and lowest boiling point.', 'Larger electron clouds give stronger dispersion forces.'),
@@ -223,6 +237,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Intermolecular Forces and Properties',
     title: 'Ideal gas law calculation',
     prompt: 'A 2.0 L container holds 0.50 mol of an ideal gas at 300 K. What is the pressure? (R = 0.0821 L atm/mol K)',
+    mentorHint: 'Pressure equals nRT divided by V; divide by 2.0 L.',
     correct: '6.2 atm',
     wrong: [
       miss('12.3 atm', 'This doubles the correct value by mishandling the volume in the denominator.', 'Pressure equals nRT divided by V; divide by 2.0 L.'),
@@ -238,6 +253,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Intermolecular Forces and Properties',
     title: 'Deviations from ideal gas behavior',
     prompt: 'Under which conditions does a real gas deviate most from ideal behavior?',
+    mentorHint: 'Ideal behavior is favored when molecules are far apart and fast.',
     correct: 'High pressure and low temperature',
     wrong: [
       miss('Low pressure and high temperature', 'These conditions actually make a gas behave most ideally, the opposite of the question.', 'Ideal behavior is favored when molecules are far apart and fast.'),
@@ -253,6 +269,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Intermolecular Forces and Properties',
     title: 'Beer-Lambert law',
     prompt: 'In the Beer-Lambert law A = abc, if the concentration of a colored solution doubles while path length and absorptivity stay constant, the absorbance will:',
+    mentorHint: 'A is proportional to c in the Beer-Lambert law.',
     correct: 'Double',
     wrong: [
       miss('Stay the same', 'Absorbance depends directly on concentration, so changing concentration changes absorbance.', 'A is proportional to c in the Beer-Lambert law.'),
@@ -269,6 +286,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Chemical Reactions',
     title: 'Balancing a combustion equation',
     prompt: 'When propane (C3H8) burns completely, the balanced equation is C3H8 + x O2 -> 3 CO2 + 4 H2O. What is the coefficient x?',
+    mentorHint: 'Count oxygen atoms on the product side carefully.',
     correct: '5',
     wrong: [
       miss('3', 'This balances only the carbon and ignores the oxygen needed for water.', 'Count oxygen atoms on the product side carefully.'),
@@ -284,6 +302,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Chemical Reactions',
     title: 'Limiting reactant',
     prompt: 'For the reaction N2 + 3 H2 -> 2 NH3, you start with 2 mol N2 and 3 mol H2. Which is the limiting reactant?',
+    mentorHint: 'Compare each reactant against the mole ratio in the equation.',
     correct: 'H2',
     wrong: [
       miss('N2', 'There is more than enough nitrogen; only 1 mol N2 is needed for 3 mol H2, leaving N2 in excess.', 'Compare each reactant against the mole ratio in the equation.'),
@@ -299,6 +318,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Chemical Reactions',
     title: 'Identifying oxidation states',
     prompt: 'What is the oxidation state of manganese in the permanganate ion (MnO4-)?',
+    mentorHint: 'Each oxygen is -2; sum to the overall charge.',
     correct: '+7',
     wrong: [
       miss('+5', 'This would require the oxygens to total -6, but four oxygens at -2 each total -8.', 'Each oxygen is -2; sum to the overall charge.'),
@@ -314,6 +334,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Chemical Reactions',
     title: 'Net ionic equation',
     prompt: 'When aqueous silver nitrate and sodium chloride are mixed, a precipitate forms. What is the correct net ionic equation?',
+    mentorHint: 'The net ionic equation shows only the species that form the solid.',
     correct: 'Ag+(aq) + Cl-(aq) -> AgCl(s)',
     wrong: [
       miss('Na+(aq) + NO3-(aq) -> NaNO3(s)', 'Sodium nitrate is soluble and remains dissolved; it does not precipitate.', 'The net ionic equation shows only the species that form the solid.'),
@@ -329,6 +350,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Chemical Reactions',
     title: 'Percent yield',
     prompt: 'A reaction has a theoretical yield of 25.0 g but produces only 20.0 g of product. What is the percent yield?',
+    mentorHint: 'Percent yield is actual divided by theoretical, times 100.',
     correct: '80.0%',
     wrong: [
       miss('125%', 'This inverts the ratio, dividing theoretical by actual yield.', 'Percent yield is actual divided by theoretical, times 100.'),
@@ -344,6 +366,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Chemical Reactions',
     title: 'Solution dilution',
     prompt: 'How much water must be added to 50.0 mL of 6.0 M HCl to dilute it to 2.0 M? Assume volumes are additive.',
+    mentorHint: 'Subtract the original volume from the final volume.',
     correct: '100 mL',
     wrong: [
       miss('150 mL', 'This is the final total volume, not the volume of water added.', 'Subtract the original volume from the final volume.'),
@@ -360,6 +383,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Kinetics',
     title: 'Rate law from order',
     prompt: 'For a reaction that is second order in A, what happens to the rate if the concentration of A is tripled?',
+    mentorHint: 'Second order means rate depends on concentration squared.',
     correct: 'The rate increases by a factor of 9',
     wrong: [
       miss('The rate triples', 'Tripling would happen only for a first-order reaction, not a second-order one.', 'Second order means rate depends on concentration squared.'),
@@ -375,6 +399,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Kinetics',
     title: 'First-order half-life',
     prompt: 'A first-order reaction has a rate constant such that its half-life is 10 minutes. What fraction of the original reactant remains after 30 minutes?',
+    mentorHint: 'Each half-life multiplies the amount by one-half.',
     correct: '1/8',
     wrong: [
       miss('1/3', 'Half-life decay is not linear; you cannot simply divide by the number of half-lives.', 'Each half-life multiplies the amount by one-half.'),
@@ -390,6 +415,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Kinetics',
     title: 'Activation energy and catalysts',
     prompt: 'How does a catalyst increase the rate of a reaction?',
+    mentorHint: 'A catalyst changes the energy barrier, not the molecules\' energy.',
     correct: 'It provides an alternative pathway with a lower activation energy',
     wrong: [
       miss('It increases the average kinetic energy of the reactant molecules', 'Raising kinetic energy is what increasing temperature does, not what a catalyst does.', 'A catalyst changes the energy barrier, not the molecules\' energy.'),
@@ -405,6 +431,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Kinetics',
     title: 'Reaction mechanism and rate-determining step',
     prompt: 'In a multistep mechanism, which step determines the overall rate law of the reaction?',
+    mentorHint: 'Think of the slowest step as a traffic bottleneck.',
     correct: 'The slowest elementary step (the rate-determining step)',
     wrong: [
       miss('The fastest elementary step', 'A fast step is not the bottleneck; the slowest step controls how quickly products form.', 'Think of the slowest step as a traffic bottleneck.'),
@@ -420,6 +447,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Kinetics',
     title: 'Collision theory',
     prompt: 'According to collision theory, why does increasing temperature speed up a reaction?',
+    mentorHint: 'The barrier stays fixed; what changes is the molecules\' energy distribution.',
     correct: 'A greater fraction of collisions has energy exceeding the activation energy',
     wrong: [
       miss('It lowers the activation energy of the reaction', 'Temperature does not change the activation barrier; only a catalyst does that.', 'The barrier stays fixed; what changes is the molecules\' energy distribution.'),
@@ -436,6 +464,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Thermodynamics',
     title: 'Sign of enthalpy change',
     prompt: 'A reaction releases heat to its surroundings. How is this reaction classified and what is the sign of delta H?',
+    mentorHint: 'Releasing heat means the system loses energy.',
     correct: 'Exothermic, delta H is negative',
     wrong: [
       miss('Endothermic, delta H is positive', 'Endothermic reactions absorb heat from the surroundings, the opposite of releasing it.', 'Releasing heat means the system loses energy.'),
@@ -451,6 +480,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Thermodynamics',
     title: 'Calorimetry calculation',
     prompt: 'How much heat is required to raise the temperature of 100.0 g of water by 25.0 degrees C? (specific heat of water = 4.18 J/g C)',
+    mentorHint: 'Heat equals mass times specific heat times temperature change.',
     correct: '10,450 J',
     wrong: [
       miss('418 J', 'This omits the mass factor, using only specific heat times temperature change.', 'Heat equals mass times specific heat times temperature change.'),
@@ -466,6 +496,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Thermodynamics',
     title: 'Hess\'s law',
     prompt: 'Hess\'s law allows the enthalpy change of an overall reaction to be calculated by:',
+    mentorHint: 'Hess\'s law uses whole reaction steps, not isolated reactants.',
     correct: 'Summing the enthalpy changes of a series of steps that add up to the overall reaction',
     wrong: [
       miss('Multiplying the enthalpy of each reactant by its coefficient and adding', 'That describes neither Hess\'s law nor a standard enthalpy calculation correctly.', 'Hess\'s law uses whole reaction steps, not isolated reactants.'),
@@ -481,6 +512,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Thermodynamics',
     title: 'Bond enthalpy estimate',
     prompt: 'Using bond enthalpies, how is the enthalpy change of a reaction estimated?',
+    mentorHint: 'Breaking bonds costs energy; forming bonds releases it.',
     correct: 'Sum of bonds broken (reactants) minus sum of bonds formed (products)',
     wrong: [
       miss('Sum of bonds formed minus sum of bonds broken', 'This reverses the sign convention and gives the wrong sign for delta H.', 'Breaking bonds costs energy; forming bonds releases it.'),
@@ -496,6 +528,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Thermodynamics',
     title: 'Entropy change prediction',
     prompt: 'Which process is expected to have a positive entropy change (delta S > 0)?',
+    mentorHint: 'A more ordered state has lower entropy.',
     correct: 'Sublimation of solid carbon dioxide to gas',
     wrong: [
       miss('Freezing of liquid water into ice', 'Freezing increases order as molecules lock into a lattice, so entropy decreases.', 'A more ordered state has lower entropy.'),
@@ -511,6 +544,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Thermodynamics',
     title: 'Gibbs free energy and spontaneity',
     prompt: 'A reaction has delta H positive and delta S positive. Under what conditions is it spontaneous?',
+    mentorHint: 'The T*delta S term grows with temperature.',
     correct: 'At high temperatures',
     wrong: [
       miss('At low temperatures', 'At low T the positive delta H dominates, making delta G positive and the reaction nonspontaneous.', 'The T*delta S term grows with temperature.'),
@@ -527,6 +561,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Equilibrium',
     title: 'Writing an equilibrium expression',
     prompt: 'For the reaction 2 SO2(g) + O2(g) <-> 2 SO3(g), what is the correct equilibrium constant expression Kc?',
+    mentorHint: 'Coefficients become exponents in the K expression.',
     correct: '[SO3]^2 / ([SO2]^2 [O2])',
     wrong: [
       miss('[SO3] / ([SO2] [O2])', 'This ignores the stoichiometric coefficients, which appear as exponents.', 'Coefficients become exponents in the K expression.'),
@@ -542,6 +577,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Equilibrium',
     title: 'Le Chatelier and pressure',
     prompt: 'For N2(g) + 3 H2(g) <-> 2 NH3(g), increasing the total pressure by reducing volume shifts the equilibrium:',
+    mentorHint: 'Count the gas moles on each side.',
     correct: 'Toward the products (right), the side with fewer gas moles',
     wrong: [
       miss('Toward the reactants (left), the side with more gas moles', 'Higher pressure favors the side with fewer gas molecules, which is the product side here.', 'Count the gas moles on each side.'),
@@ -557,6 +593,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Equilibrium',
     title: 'Reaction quotient vs K',
     prompt: 'For a reaction at a given moment, the reaction quotient Q is greater than the equilibrium constant K. In which direction does the reaction proceed?',
+    mentorHint: 'Compare Q to K to find which way restores balance.',
     correct: 'In the reverse direction, toward reactants',
     wrong: [
       miss('In the forward direction, toward products', 'Q greater than K means there are too many products; the reaction reverses to consume them.', 'Compare Q to K to find which way restores balance.'),
@@ -572,6 +609,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Equilibrium',
     title: 'Solubility product and molar solubility',
     prompt: 'A salt MX has a solubility product Ksp = 4.0 x 10^-10. What is the molar solubility of MX in pure water?',
+    mentorHint: 'For a 1:1 salt, solubility is the square root of Ksp.',
     correct: '2.0 x 10^-5 M',
     wrong: [
       miss('4.0 x 10^-10 M', 'This treats Ksp itself as the solubility, ignoring the square-root relationship.', 'For a 1:1 salt, solubility is the square root of Ksp.'),
@@ -587,6 +625,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Equilibrium',
     title: 'Common ion effect',
     prompt: 'How does adding sodium chloride affect the solubility of silver chloride (AgCl) in water?',
+    mentorHint: 'Extra chloride pushes the equilibrium toward solid AgCl.',
     correct: 'It decreases the solubility of AgCl due to the common chloride ion',
     wrong: [
       miss('It increases the solubility of AgCl', 'Adding a common ion shifts the dissolution equilibrium backward, reducing solubility.', 'Extra chloride pushes the equilibrium toward solid AgCl.'),
@@ -603,6 +642,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Acids and Bases',
     title: 'pH of a strong acid',
     prompt: 'What is the pH of a 0.0010 M solution of HCl, a strong acid?',
+    mentorHint: 'An acidic solution has pH below 7.',
     correct: '3.0',
     wrong: [
       miss('11.0', 'This is the pOH; pH and pOH have been swapped for this acidic solution.', 'An acidic solution has pH below 7.'),
@@ -618,6 +658,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Acids and Bases',
     title: 'Conjugate base identification',
     prompt: 'What is the conjugate base of the bicarbonate ion (HCO3-)?',
+    mentorHint: 'A conjugate base is formed by removing a proton.',
     correct: 'CO3^2-',
     wrong: [
       miss('H2CO3', 'Adding a proton gives the conjugate acid, not the conjugate base.', 'A conjugate base is formed by removing a proton.'),
@@ -633,6 +674,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Acids and Bases',
     title: 'Weak acid Ka and dissociation',
     prompt: 'A weak acid has Ka = 1.8 x 10^-5. Compared to a strong acid at the same concentration, the weak acid solution has:',
+    mentorHint: 'Partial dissociation means fewer H+ ions in solution.',
     correct: 'A higher pH because it only partially dissociates',
     wrong: [
       miss('A lower pH because weak acids release more total protons', 'Weak acids dissociate less, releasing fewer free protons and giving a higher pH.', 'Partial dissociation means fewer H+ ions in solution.'),
@@ -648,6 +690,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Acids and Bases',
     title: 'Buffer composition',
     prompt: 'Which combination would make an effective buffer solution?',
+    mentorHint: 'Buffers need a weak acid and its conjugate base.',
     correct: 'Acetic acid and sodium acetate',
     wrong: [
       miss('Hydrochloric acid and sodium chloride', 'HCl is a strong acid, and its conjugate Cl- is too weak a base to resist pH change.', 'Buffers need a weak acid and its conjugate base.'),
@@ -663,6 +706,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Acids and Bases',
     title: 'Henderson-Hasselbalch',
     prompt: 'A buffer contains equal concentrations of a weak acid and its conjugate base. If the acid has pKa = 4.74, what is the pH of the buffer?',
+    mentorHint: 'Use the Henderson-Hasselbalch equation with equal concentrations.',
     correct: '4.74',
     wrong: [
       miss('7.00', 'A buffer at equal concentrations has pH equal to the pKa, not neutral 7.', 'Use the Henderson-Hasselbalch equation with equal concentrations.'),
@@ -678,6 +722,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Acids and Bases',
     title: 'Titration equivalence point',
     prompt: 'When a weak acid is titrated with a strong base, the pH at the equivalence point is:',
+    mentorHint: 'Consider what the salt formed does to the pH.',
     correct: 'Greater than 7, because the conjugate base produced is basic',
     wrong: [
       miss('Exactly 7, since equal moles of acid and base have reacted', 'Equal moles only gives pH 7 for a strong acid-strong base titration, not a weak acid case.', 'Consider what the salt formed does to the pH.'),
@@ -693,6 +738,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Acids and Bases',
     title: 'pH and pOH relationship',
     prompt: 'At 25 degrees C, a solution has a pOH of 9.0. What is its pH?',
+    mentorHint: 'Use pH + pOH = 14.',
     correct: '5.0',
     wrong: [
       miss('9.0', 'This sets pH equal to pOH, but they sum to 14 at 25 degrees C, not match.', 'Use pH + pOH = 14.'),
@@ -709,6 +755,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Applications of Thermodynamics',
     title: 'Oxidation at the anode',
     prompt: 'In an electrochemical cell, oxidation always occurs at which electrode?',
+    mentorHint: 'Remember the mnemonic: an ox, red cat.',
     correct: 'The anode',
     wrong: [
       miss('The cathode', 'Reduction, not oxidation, occurs at the cathode.', 'Remember the mnemonic: an ox, red cat.'),
@@ -724,6 +771,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Applications of Thermodynamics',
     title: 'Standard cell potential and spontaneity',
     prompt: 'A galvanic cell has a standard cell potential of +1.10 V. What does this indicate about the reaction?',
+    mentorHint: 'Relate the sign of E to the sign of delta G.',
     correct: 'The reaction is spontaneous under standard conditions',
     wrong: [
       miss('The reaction is nonspontaneous and requires external energy', 'A positive cell potential corresponds to a negative delta G, meaning the reaction is spontaneous.', 'Relate the sign of E to the sign of delta G.'),
@@ -739,6 +787,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Applications of Thermodynamics',
     title: 'Faraday and electrolysis',
     prompt: 'During electrolysis, how many moles of electrons are required to deposit 1 mole of copper from Cu2+ ions?',
+    mentorHint: 'Match the number of electrons to the ion\'s charge.',
     correct: '2 moles of electrons',
     wrong: [
       miss('1 mole of electrons', 'Cu2+ carries a 2+ charge and needs two electrons per ion to be reduced to Cu.', 'Match the number of electrons to the ion\'s charge.'),
@@ -754,6 +803,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Applications of Thermodynamics',
     title: 'Galvanic vs electrolytic cells',
     prompt: 'What is the key difference between a galvanic cell and an electrolytic cell?',
+    mentorHint: 'One cell requires an external power source.',
     correct: 'A galvanic cell generates electricity from a spontaneous reaction, while an electrolytic cell uses electricity to drive a nonspontaneous reaction',
     wrong: [
       miss('Both use spontaneous reactions but in opposite directions', 'Only the galvanic cell is spontaneous; the electrolytic cell is driven by external power.', 'One cell requires an external power source.'),
@@ -769,6 +819,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Applications of Thermodynamics',
     title: 'Relating delta G and K',
     prompt: 'If a reaction has a standard free energy change delta G of a large negative value, what can be said about its equilibrium constant K?',
+    mentorHint: 'Negative delta G means products are favored at equilibrium.',
     correct: 'K is much greater than 1, favoring products',
     wrong: [
       miss('K is much less than 1, favoring reactants', 'A large negative delta G corresponds to a large K, not a small one.', 'Negative delta G means products are favored at equilibrium.'),
@@ -785,6 +836,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Chemical Reactions',
     title: 'Molarity of a solution',
     prompt: 'What is the molarity of a solution made by dissolving 0.50 mol of NaCl in enough water to make 250 mL of solution?',
+    mentorHint: 'Molarity is moles divided by liters.',
     correct: '2.0 M',
     wrong: [
       miss('0.125 M', 'This multiplies moles by volume instead of dividing by volume in liters.', 'Molarity is moles divided by liters.'),
@@ -800,6 +852,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Atomic Structure and Properties',
     title: 'Quantum numbers and orbitals',
     prompt: 'How many electrons can be held in a complete set of 3d orbitals?',
+    mentorHint: 'Count the number of d orbitals first.',
     correct: '10',
     wrong: [
       miss('6', 'Six is the capacity of a set of p orbitals, not d orbitals.', 'Count the number of d orbitals first.'),
@@ -815,6 +868,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Intermolecular Forces and Properties',
     title: 'Partial pressure and mole fraction',
     prompt: 'A gas mixture at a total pressure of 1.0 atm contains nitrogen and oxygen, with oxygen having a mole fraction of 0.20. What is the partial pressure of oxygen?',
+    mentorHint: 'Partial pressure equals mole fraction times total pressure.',
     correct: '0.20 atm',
     wrong: [
       miss('1.0 atm', 'This assigns the entire total pressure to oxygen, ignoring its mole fraction.', 'Partial pressure equals mole fraction times total pressure.'),
@@ -830,6 +884,7 @@ export const colApChemistryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Equilibrium',
     title: 'Effect of temperature on K',
     prompt: 'For an exothermic reaction at equilibrium, what happens to the equilibrium constant K when the temperature is increased?',
+    mentorHint: 'Treat heat as a product for an exothermic reaction.',
     correct: 'K decreases because the equilibrium shifts toward reactants',
     wrong: [
       miss('K increases because higher temperature speeds up the forward reaction', 'For an exothermic reaction added heat favors the reverse direction, decreasing K.', 'Treat heat as a product for an exothermic reaction.'),

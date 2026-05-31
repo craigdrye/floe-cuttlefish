@@ -18,6 +18,26 @@ type ScenarioFrame = {
   setup: string
 }
 
+function mentorHintForCredential(competency: CredentialCompetency): string {
+  if (competency.chapter.startsWith('CRCM')) {
+    return 'First identify the consumer-protection rule being triggered, then ask what timing, notice, disclosure, investigation, or evidence duty follows. CRCM answers usually favor a controlled, documented process over an informal customer-service workaround.'
+  }
+  if (competency.chapter.startsWith('CCEP')) {
+    return 'Use the effective-compliance-program frame: risk assessment, standards, training, reporting, investigation, discipline, third-party controls, and remediation. The best answer should strengthen accountability without hiding the business issue.'
+  }
+  if (competency.chapter.startsWith('AML') || competency.chapter.startsWith('Bank AML')) {
+    return 'Separate customer facts, transaction pattern, rule trigger, and documentation. A strong AML answer explains the risk and next step without tipping off the customer or skipping required records.'
+  }
+  if (competency.chapter.startsWith('Customs')) {
+    return 'Start with the broker and importer reasonable-care duties: support classification, value, origin, and entry decisions with facts and records. Speed or client preference does not override CBP requirements.'
+  }
+  if (competency.chapter.startsWith('AIGP')) {
+    return 'Use an AI life-cycle lens: intended use, data rights, impact, controls, human oversight, monitoring, incident response, and accountable owners. Good governance asks what evidence is needed before and after deployment.'
+  }
+
+  return 'Focus on the control duty the facts have triggered, then choose the response that creates the clearest evidence trail without overreaching beyond the facts.'
+}
+
 const bankFrames: ScenarioFrame[] = [
   { tag: 'new product review', setup: 'A mid-size bank is preparing to launch a digital account feature, and compliance is asked to review the control design before release.' },
   { tag: 'exam request', setup: 'During a regulator examination, the examiner asks for evidence that a recent issue was handled consistently with the bank policy.' },
@@ -1422,6 +1442,8 @@ function buildCredentialQuestions(
       competency.wrong,
       undefined,
       SOURCE,
+      undefined,
+      mentorHintForCredential(competency),
     )
   })
 }

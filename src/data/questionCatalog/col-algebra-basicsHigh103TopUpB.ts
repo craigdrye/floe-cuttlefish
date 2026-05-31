@@ -11,6 +11,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Systems of equations',
     title: 'Solving a system by substitution',
     prompt: 'Solve the system: y = 2x + 1 and 3x + y = 11. What is the value of x?',
+    mentorHint: 'Replace y with 2x + 1, then combine the x-terms carefully.',
     correct: 'x = 2',
     wrong: [
       miss('x = 3', 'You may have substituted incorrectly; 3x + (2x + 1) = 11 gives 5x = 10, not 5x = 15.', 'Replace y with 2x + 1, then combine the x-terms carefully.'),
@@ -26,6 +27,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Systems of equations',
     title: 'Solving a system by elimination',
     prompt: 'Solve the system: 2x + 3y = 12 and 2x - y = 4. What is the value of y?',
+    mentorHint: 'Subtract one equation from the other to eliminate x.',
     correct: 'y = 2',
     wrong: [
       miss('y = 4', 'You may have added the equations instead of subtracting to cancel the 2x terms.', 'Subtract one equation from the other to eliminate x.'),
@@ -41,6 +43,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Systems of equations',
     title: 'A system with no solution',
     prompt: 'How many solutions does this system have: y = 3x + 2 and y = 3x - 5?',
+    mentorHint: 'Compare the slopes before assuming the lines intersect.',
     correct: 'No solution',
     wrong: [
       miss('Exactly one solution', 'Two lines with the same slope never cross at a single point.', 'Compare the slopes before assuming the lines intersect.'),
@@ -56,6 +59,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Systems of equations',
     title: 'Recognizing infinitely many solutions',
     prompt: 'How many solutions does this system have: 2x + 4y = 6 and x + 2y = 3?',
+    mentorHint: 'Try dividing the first equation by 2 and compare.',
     correct: 'Infinitely many solutions',
     wrong: [
       miss('No solution', 'No solution requires parallel, non-overlapping lines, but these are the same line.', 'Try dividing the first equation by 2 and compare.'),
@@ -71,6 +75,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Systems of equations',
     title: 'Setting up a system word problem',
     prompt: 'Tickets cost $8 for adults and $5 for children. 20 tickets were sold for $130 total. Which system models this?',
+    mentorHint: 'One equation counts tickets; the other adds up dollars.',
     correct: 'a + c = 20 and 8a + 5c = 130',
     wrong: [
       miss('a + c = 130 and 8a + 5c = 20', 'You swapped the count and the money totals between the two equations.', 'One equation counts tickets; the other adds up dollars.'),
@@ -86,6 +91,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Systems of equations',
     title: 'Substitution with both variables',
     prompt: 'Solve the system: x + y = 7 and x - y = 3. What is the ordered pair (x, y)?',
+    mentorHint: 'Check which value satisfies x - y = 3.',
     correct: '(5, 2)',
     wrong: [
       miss('(2, 5)', 'You reversed x and y; x is the larger value here.', 'Check which value satisfies x - y = 3.'),
@@ -102,6 +108,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Expressions with exponents',
     title: 'Product of powers',
     prompt: 'Simplify x^5 * x^3.',
+    mentorHint: 'When multiplying like bases, add the exponents.',
     correct: 'x^8',
     wrong: [
       miss('x^15', 'You multiplied the exponents instead of adding them.', 'When multiplying like bases, add the exponents.'),
@@ -117,6 +124,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Expressions with exponents',
     title: 'Quotient of powers',
     prompt: 'Simplify y^9 / y^4.',
+    mentorHint: 'Dividing like bases subtracts the exponents.',
     correct: 'y^5',
     wrong: [
       miss('y^13', 'You added the exponents, but division subtracts them.', 'Dividing like bases subtracts the exponents.'),
@@ -132,6 +140,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Expressions with exponents',
     title: 'Power of a power',
     prompt: 'Simplify (a^3)^4.',
+    mentorHint: 'Multiply the two exponents together.',
     correct: 'a^12',
     wrong: [
       miss('a^7', 'You added the exponents, but a power raised to a power multiplies them.', 'Multiply the two exponents together.'),
@@ -147,6 +156,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Expressions with exponents',
     title: 'Power of a product',
     prompt: 'Simplify (3x)^2.',
+    mentorHint: 'Apply the exponent to every factor inside the parentheses.',
     correct: '9x^2',
     wrong: [
       miss('3x^2', 'You squared only x and left the 3 unchanged, but the exponent applies to both factors.', 'Apply the exponent to every factor inside the parentheses.'),
@@ -162,6 +172,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Expressions with exponents',
     title: 'Zero exponent',
     prompt: 'What is the value of 7^0 (assuming the base is nonzero)?',
+    mentorHint: 'Think about y^3 / y^3 = y^0.',
     correct: '1',
     wrong: [
       miss('0', 'A zero exponent does not make the value zero; any nonzero base to the 0 power is 1.', 'Think about y^3 / y^3 = y^0.'),
@@ -177,6 +188,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Expressions with exponents',
     title: 'Negative exponent',
     prompt: 'Rewrite x^(-2) using a positive exponent.',
+    mentorHint: 'A negative exponent flips the base to the denominator.',
     correct: '1/x^2',
     wrong: [
       miss('-x^2', 'A negative exponent does not make the expression negative; it means a reciprocal.', 'A negative exponent flips the base to the denominator.'),
@@ -192,6 +204,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Expressions with exponents',
     title: 'Simplifying a monomial expression',
     prompt: 'Simplify (2x^2)(5x^3).',
+    mentorHint: 'Multiply the coefficients but add the exponents.',
     correct: '10x^5',
     wrong: [
       miss('10x^6', 'You multiplied the exponents instead of adding them.', 'Multiply the coefficients but add the exponents.'),
@@ -207,6 +220,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Expressions with exponents',
     title: 'Scientific notation product',
     prompt: 'Compute (3 x 10^4)(2 x 10^3) and write the result in scientific notation.',
+    mentorHint: 'When multiplying powers of 10, add the exponents.',
     correct: '6 x 10^7',
     wrong: [
       miss('6 x 10^12', 'You multiplied the exponents 4 and 3 instead of adding them.', 'When multiplying powers of 10, add the exponents.'),
@@ -223,6 +237,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Quadratics and polynomials',
     title: 'Adding polynomials',
     prompt: 'Simplify (3x^2 + 2x - 1) + (x^2 - 5x + 4).',
+    mentorHint: 'Combine coefficients only; the exponent stays 2.',
     correct: '4x^2 - 3x + 3',
     wrong: [
       miss('4x^4 - 3x + 3', 'You added the exponents on the x^2 terms; adding like terms keeps the exponent.', 'Combine coefficients only; the exponent stays 2.'),
@@ -238,6 +253,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Quadratics and polynomials',
     title: 'Subtracting polynomials',
     prompt: 'Simplify (5x^2 - 3x + 2) - (2x^2 + x - 6).',
+    mentorHint: 'Subtracting flips the sign of each term being subtracted.',
     correct: '3x^2 - 4x + 8',
     wrong: [
       miss('3x^2 - 2x - 4', 'You did not distribute the negative to every term in the second polynomial.', 'Subtracting flips the sign of each term being subtracted.'),
@@ -253,6 +269,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Quadratics and polynomials',
     title: 'Multiplying binomials (FOIL)',
     prompt: 'Expand (x + 3)(x + 5).',
+    mentorHint: 'Use FOIL: include the outer and inner products too.',
     correct: 'x^2 + 8x + 15',
     wrong: [
       miss('x^2 + 15', 'You multiplied only the first and last terms and skipped the middle terms.', 'Use FOIL: include the outer and inner products too.'),
@@ -268,6 +285,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Quadratics and polynomials',
     title: 'Squaring a binomial',
     prompt: 'Expand (x - 4)^2.',
+    mentorHint: 'A binomial squared has three terms, not two.',
     correct: 'x^2 - 8x + 16',
     wrong: [
       miss('x^2 + 16', 'You squared each term separately and dropped the middle term.', 'A binomial squared has three terms, not two.'),
@@ -283,6 +301,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Quadratics and polynomials',
     title: 'Factoring out the GCF',
     prompt: 'Factor completely: 6x^2 + 9x.',
+    mentorHint: 'Both terms also share a factor of x.',
     correct: '3x(2x + 3)',
     wrong: [
       miss('3(2x^2 + 3x)', 'You only factored out 3 and missed the common factor of x.', 'Both terms also share a factor of x.'),
@@ -298,6 +317,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Quadratics and polynomials',
     title: 'Factoring a simple trinomial',
     prompt: 'Factor x^2 + 7x + 12.',
+    mentorHint: 'Find two numbers that multiply to 12 and add to 7.',
     correct: '(x + 3)(x + 4)',
     wrong: [
       miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'Find two numbers that multiply to 12 and add to 7.'),
@@ -313,6 +333,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Quadratics and polynomials',
     title: 'Factoring a difference of squares',
     prompt: 'Factor x^2 - 25.',
+    mentorHint: 'A difference of squares has no middle term.',
     correct: '(x + 5)(x - 5)',
     wrong: [
       miss('(x - 5)^2', 'A perfect square would give a middle term of -10x, but there is no middle term here.', 'A difference of squares has no middle term.'),
@@ -328,6 +349,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Quadratics and polynomials',
     title: 'Solving a quadratic by factoring',
     prompt: 'Solve x^2 - 5x + 6 = 0.',
+    mentorHint: 'Set each factor equal to zero and solve carefully.',
     correct: 'x = 2 or x = 3',
     wrong: [
       miss('x = -2 or x = -3', 'You used the wrong signs; the factors are (x - 2)(x - 3), giving positive roots.', 'Set each factor equal to zero and solve carefully.'),
@@ -343,6 +365,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Quadratics and polynomials',
     title: 'Solving by the square root method',
     prompt: 'Solve x^2 = 49.',
+    mentorHint: 'Remember both the positive and negative roots.',
     correct: 'x = 7 or x = -7',
     wrong: [
       miss('x = 7', 'You found only the positive root; a square root equation has two solutions.', 'Remember both the positive and negative roots.'),
@@ -358,6 +381,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Quadratics and polynomials',
     title: 'Identifying the degree of a polynomial',
     prompt: 'What is the degree of the polynomial 4x^3 - 2x^5 + x - 9?',
+    mentorHint: 'Scan all terms for the largest exponent.',
     correct: '5',
     wrong: [
       miss('3', 'You used the first term written, but degree is the highest exponent regardless of order.', 'Scan all terms for the largest exponent.'),
@@ -373,6 +397,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Quadratics and polynomials',
     title: 'Evaluating the discriminant',
     prompt: 'For the quadratic x^2 + 4x + 4 = 0, what does the discriminant b^2 - 4ac tell you about the roots?',
+    mentorHint: 'Compute b^2 - 4ac before deciding.',
     correct: 'One repeated real root (discriminant = 0)',
     wrong: [
       miss('Two distinct real roots', 'Two distinct roots require a positive discriminant, but here it equals 0.', 'Compute b^2 - 4ac before deciding.'),
@@ -388,6 +413,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Quadratics and polynomials',
     title: 'Vertex of a parabola from factored form',
     prompt: 'A parabola has x-intercepts at x = 1 and x = 5. What is the x-coordinate of its vertex?',
+    mentorHint: 'The vertex sits halfway between the intercepts.',
     correct: 'x = 3',
     wrong: [
       miss('x = 6', 'You added the intercepts but did not divide by 2 to find the midpoint.', 'The vertex sits halfway between the intercepts.'),
@@ -404,6 +430,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Graphing quadratics',
     title: 'Direction a parabola opens',
     prompt: 'Which way does the parabola y = -2x^2 + 3x - 1 open?',
+    mentorHint: 'The sign of the x^2 coefficient controls the direction.',
     correct: 'Downward, because the leading coefficient is negative',
     wrong: [
       miss('Upward, because the leading coefficient is negative', 'A negative leading coefficient opens downward, not upward.', 'The sign of the x^2 coefficient controls the direction.'),
@@ -419,6 +446,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Graphing quadratics',
     title: 'Vertex from vertex form',
     prompt: 'What is the vertex of the parabola y = (x - 2)^2 + 5?',
+    mentorHint: 'The vertex x-value makes the squared term zero.',
     correct: '(2, 5)',
     wrong: [
       miss('(-2, 5)', 'The sign inside the parentheses flips: (x - 2) gives x = 2, not -2.', 'The vertex x-value makes the squared term zero.'),
@@ -434,6 +462,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Graphing quadratics',
     title: 'Finding the y-intercept of a quadratic',
     prompt: 'What is the y-intercept of y = 3x^2 - 4x + 7?',
+    mentorHint: 'Substitute x = 0 to find the y-intercept.',
     correct: '(0, 7)',
     wrong: [
       miss('(0, 3)', 'You used the leading coefficient instead of the constant term.', 'Substitute x = 0 to find the y-intercept.'),
@@ -449,6 +478,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Graphing quadratics',
     title: 'Axis of symmetry from standard form',
     prompt: 'Find the axis of symmetry of y = x^2 - 6x + 8.',
+    mentorHint: 'Watch the sign: -(-6) is +6.',
     correct: 'x = 3',
     wrong: [
       miss('x = -3', 'The formula is x = -b/(2a); with b = -6, you get +3, not -3.', 'Watch the sign: -(-6) is +6.'),
@@ -464,6 +494,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Graphing quadratics',
     title: 'Number of x-intercepts',
     prompt: 'The parabola y = x^2 + 2x + 5 has a discriminant of -16. How many x-intercepts does it have?',
+    mentorHint: 'A negative discriminant means the graph misses the x-axis.',
     correct: '0',
     wrong: [
       miss('1', 'A single x-intercept occurs when the discriminant is exactly 0, not negative.', 'A negative discriminant means the graph misses the x-axis.'),
@@ -480,6 +511,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Radicals and rational expressions',
     title: 'Simplifying a square root',
     prompt: 'Simplify the square root of 72.',
+    mentorHint: 'Find the largest perfect square that divides 72.',
     correct: '6 times the square root of 2',
     wrong: [
       miss('8 times the square root of 3', 'You used a wrong perfect-square factor; 72 = 36 * 2, not 64 * something.', 'Find the largest perfect square that divides 72.'),
@@ -495,6 +527,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Radicals and rational expressions',
     title: 'Adding radicals',
     prompt: 'Simplify 3 times the square root of 5 plus 2 times the square root of 5.',
+    mentorHint: 'Add the coefficients, not the radicands.',
     correct: '5 times the square root of 5',
     wrong: [
       miss('5 times the square root of 10', 'You added the numbers under the root; like radicals keep the same radicand.', 'Add the coefficients, not the radicands.'),
@@ -510,6 +543,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Radicals and rational expressions',
     title: 'Simplifying a rational expression',
     prompt: 'Simplify (x^2 - 9)/(x + 3) for x not equal to -3.',
+    mentorHint: 'Factor the numerator first, then cancel.',
     correct: 'x - 3',
     wrong: [
       miss('x + 3', 'You kept the wrong factor; the (x + 3) cancels, leaving (x - 3).', 'Factor the numerator first, then cancel.'),
@@ -525,6 +559,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Radicals and rational expressions',
     title: 'Rationalizing a denominator',
     prompt: 'Rationalize the denominator of 1 divided by the square root of 3.',
+    mentorHint: 'Multiply numerator and denominator by sqrt(3).',
     correct: 'the square root of 3, divided by 3',
     wrong: [
       miss('the square root of 3', 'You forgot the denominator; multiplying the top and bottom by sqrt(3) leaves a 3 below.', 'Multiply numerator and denominator by sqrt(3).'),
@@ -540,6 +575,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Radicals and rational expressions',
     title: 'Solving a radical equation',
     prompt: 'Solve the equation: the square root of (x + 1) = 4.',
+    mentorHint: 'Square both sides to undo the radical.',
     correct: 'x = 15',
     wrong: [
       miss('x = 3', 'You took the square root of 4 instead of squaring both sides.', 'Square both sides to undo the radical.'),
@@ -556,6 +592,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Equations and geometry',
     title: 'Pythagorean theorem',
     prompt: 'A right triangle has legs of length 6 and 8. What is the length of the hypotenuse?',
+    mentorHint: 'Square the legs, add, then take the square root.',
     correct: '10',
     wrong: [
       miss('14', 'You added the legs instead of using the Pythagorean theorem.', 'Square the legs, add, then take the square root.'),
@@ -571,6 +608,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Equations and geometry',
     title: 'Distance between two points',
     prompt: 'Find the distance between the points (1, 2) and (4, 6).',
+    mentorHint: 'Square the differences, add, then take the square root.',
     correct: '5',
     wrong: [
       miss('7', 'You added the differences 3 and 4 instead of using the distance formula.', 'Square the differences, add, then take the square root.'),
@@ -586,6 +624,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Equations and geometry',
     title: 'Midpoint of a segment',
     prompt: 'Find the midpoint of the segment from (2, 3) to (8, 7).',
+    mentorHint: 'Average each coordinate, do not subtract.',
     correct: '(5, 5)',
     wrong: [
       miss('(6, 4)', 'You found the differences of the coordinates instead of their averages.', 'Average each coordinate, do not subtract.'),
@@ -601,6 +640,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Equations and geometry',
     title: 'Solving for a side using area',
     prompt: 'A rectangle has area 48 square units and a width of 6 units. Write and solve an equation for its length.',
+    mentorHint: 'Area = length times width, so divide to find length.',
     correct: 'Length = 8 units',
     wrong: [
       miss('Length = 42 units', 'You subtracted the width from the area instead of dividing.', 'Area = length times width, so divide to find length.'),
@@ -616,6 +656,7 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Equations and geometry',
     title: 'Angles in a triangle',
     prompt: 'Two angles of a triangle measure 50 degrees and 65 degrees. Write an equation and solve for the third angle.',
+    mentorHint: 'The three angles must sum to 180 degrees.',
     correct: '65 degrees',
     wrong: [
       miss('115 degrees', 'You added the two given angles but did not subtract from 180.', 'The three angles must sum to 180 degrees.'),

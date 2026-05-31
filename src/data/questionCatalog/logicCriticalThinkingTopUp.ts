@@ -12,6 +12,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Soundness vs. Validity',
     prompt:
       'An argument is valid but you discover one of its premises is actually false. What can you correctly conclude about the argument?',
+    mentorHint:
+      'Separate the argument\'s logical shape from the truth of its starting claims. Validity asks whether the conclusion would follow if the premises were true; soundness asks whether that valid structure is also built on true premises.',
     correct: 'It is valid but not sound, so its conclusion is not established by this argument',
     wrong: [
       miss(
@@ -41,6 +43,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Supplying the Hidden Premise',
     prompt:
       'Someone argues: "Maria is a licensed pediatrician, so she completed medical school." Which suppressed premise makes this a valid deductive argument?',
+    mentorHint:
+      'Treat the argument as an enthymeme: something unstated must connect the stated premise to the conclusion. The missing bridge has to be strong enough to cover Maria because of her being a licensed pediatrician, not because of an unrelated trait.',
     correct: 'All licensed pediatricians have completed medical school',
     wrong: [
       miss(
@@ -70,6 +74,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Abductive Reasoning',
     prompt:
       'You come home to find the kitchen floor wet, a toppled glass nearby, and your dog hiding. You conclude the dog knocked the glass over. Which kind of reasoning is this?',
+    mentorHint:
+      'Ask what the reasoning is trying to do: guarantee a conclusion, generalize from repeated cases, or explain a set of clues. Here the evidence points toward a likely cause, while still leaving other causes logically possible.',
     correct: 'Abductive (inference to the best explanation)',
     wrong: [
       miss(
@@ -99,6 +105,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'The Principle of Charity',
     prompt:
       'You are about to respond to an opponent. Applying the principle of charity means you should first:',
+    mentorHint:
+      'Fair criticism begins by making sure you are answering the best reasonable version of the view, not a convenient caricature. Charity improves disagreement by targeting the real structure of the opponent\'s reasons.',
     correct: "Reconstruct their argument in its strongest, most plausible form before criticizing it",
     wrong: [
       miss(
@@ -130,6 +138,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Affirming the Consequent',
     prompt:
       '"If it rained, the streets are wet. The streets are wet. Therefore it rained." This argument is:',
+    mentorHint:
+      'Map the conditional as "if P, then Q," then notice which part the second premise asserts. A true consequent can have more than one possible explanation, so do not treat Q as proof of P.',
     correct: 'Invalid — it affirms the consequent',
     wrong: [
       miss(
@@ -159,6 +169,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: "De Morgan's Laws",
     prompt:
       'By De Morgan\'s laws, the statement "It is not the case that (P and Q)" is logically equivalent to:',
+    mentorHint:
+      'Translate "not both" into ordinary language before choosing symbols. Denying a conjunction only requires at least one side to fail, so the outside negation changes both the parts and the connective.',
     correct: 'Not-P or not-Q',
     wrong: [
       miss(
@@ -188,6 +200,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Conditional and Contrapositive',
     prompt:
       'The conditional "If a figure is a square, then it has four sides" is logically equivalent to which statement?',
+    mentorHint:
+      'For conditionals, the truth-preserving transformation is not simply swapping the two parts. The equivalent form reverses the direction and changes each part to its denial, which protects the original necessary condition.',
     correct: 'If a figure does not have four sides, then it is not a square',
     wrong: [
       miss(
@@ -217,6 +231,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Translating "Only If"',
     prompt:
       'How should "You may enter only if you have a ticket" be translated into a conditional?',
+    mentorHint:
+      '"Only if" marks a necessary condition: it tells you what must be true for the first claim to be allowed. Ask which situation would violate the rule, then build the conditional so that violation is impossible.',
     correct: 'If you enter, then you have a ticket (Enter → Ticket)',
     wrong: [
       miss(
@@ -246,6 +262,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Tautology, Contradiction, Contingency',
     prompt:
       'A compound statement that is true under every possible assignment of truth values to its components is called a:',
+    mentorHint:
+      'Think in terms of the final column of a truth table. Some compound statements are always true, some always false, and some depend on the row; this question asks for the "always true" category.',
     correct: 'Tautology',
     wrong: [
       miss(
@@ -277,6 +295,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Negating a Universal',
     prompt:
       'What is the correct negation of "All swans are white"?',
+    mentorHint:
+      'To negate a universal claim, look for the smallest possible counterexample. You do not need to prove the opposite universal; you only need a case that makes "all" fail.',
     correct: 'There is at least one swan that is not white',
     wrong: [
       miss(
@@ -306,6 +326,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Quantifier Order',
     prompt:
       'Which pair of statements can differ in truth value purely because of the ORDER of the quantifiers?',
+    mentorHint:
+      'Mixed quantifiers are sensitive to order because "for each person there may be someone" is different from "there is one person for everyone." Track whether the existential choice can vary by individual or must be the same object throughout.',
     correct: '"Everyone loves someone" vs. "Someone is loved by everyone"',
     wrong: [
       miss(
@@ -335,6 +357,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Translating "Only"',
     prompt:
       'Which is the correct symbolic reading of "Only members may borrow books" (Mx = x is a member, Bx = x may borrow books)?',
+    mentorHint:
+      '"Only" sets a boundary around who qualifies for the second property. Test the sentence by asking: if someone may borrow, what must be true about that person?',
     correct: '∀x (Bx → Mx)',
     wrong: [
       miss(
@@ -364,6 +388,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Building a Countermodel',
     prompt:
       'To show the argument "Some athletes are vegetarians; some vegetarians are runners; therefore some athletes are runners" is invalid, you should:',
+    mentorHint:
+      'Invalidity is shown by a possible interpretation, not by checking whether the real-world claims are true. Build a small model where the two "some" statements are satisfied by different individuals and the conclusion still fails.',
     correct: 'Describe a small domain where both premises are true but the conclusion is false',
     wrong: [
       miss(
@@ -395,6 +421,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Straw Man',
     prompt:
       'A senator proposes raising the speed limit on rural highways by 5 mph. An opponent replies, "My colleague wants to let people drive as fast as they please and endanger every family on the road." The opponent has committed:',
+    mentorHint:
+      'Compare the reply to the original proposal before naming the fallacy. If the response attacks a more extreme version than the one actually offered, the reasoning has shifted away from the real argument.',
     correct: 'A straw man fallacy',
     wrong: [
       miss(
@@ -424,6 +452,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Begging the Question',
     prompt:
       'Which argument begs the question (assumes what it sets out to prove)?',
+    mentorHint:
+      'Look for whether the premise gives independent support or merely repackages the conclusion in different words. Circular reasoning can sound emphatic, but it does not move the audience from a reason to a claim.',
     correct: '"This policy is the fairest option, because no other option is as fair as this one."',
     wrong: [
       miss(
@@ -453,6 +483,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Equivocation',
     prompt:
       '"Nothing is better than lifelong happiness. A cheese sandwich is better than nothing. So a cheese sandwich is better than lifelong happiness." The flaw is:',
+    mentorHint:
+      'A deductive chain needs key terms to keep the same meaning throughout. If a word quietly changes roles between premises, the surface grammar may look valid while the underlying concepts no longer connect.',
     correct: 'Equivocation — "nothing" shifts meaning between the premises',
     wrong: [
       miss(
@@ -482,6 +514,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Sunk-Cost Fallacy',
     prompt:
       'A studio has spent $200M on a film that test screenings show audiences dislike, and finishing it will cost $50M more with little expected return. "We have already spent $200M, so we must finish it." This reasoning illustrates:',
+    mentorHint:
+      'For a rational forward-looking choice, separate costs that can still be changed from costs that are already unrecoverable. Past investment can explain emotional pressure, but it should not by itself justify more spending.',
     correct: 'The sunk-cost fallacy',
     wrong: [
       miss(
@@ -511,6 +545,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Anchoring',
     prompt:
       'A shirt is tagged "$120, now $45." Shoppers feel the $45 is a great deal largely because the $120 figure shaped their sense of its value. This is best described as:',
+    mentorHint:
+      'Notice whether the judgment is being pulled by an initial reference point. A number can shape later estimates even when it is not reliable evidence of the item\'s real value.',
     correct: 'The anchoring bias',
     wrong: [
       miss(
@@ -542,6 +578,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'The Base-Rate Fallacy',
     prompt:
       'A disease affects 1% of people. A test catches 95% of those who have it (sensitivity) but also flags 10% of healthy people (false positives). You test positive. Roughly what is the chance you actually have the disease?',
+    mentorHint:
+      'Convert the percentages into natural frequencies, such as imagining 10,000 tested people. Rare conditions create many more healthy people than sick people, so even a modest false-positive rate can dominate the positive results.',
     correct: 'About 9% — false positives from the 99% healthy majority swamp the true positives',
     wrong: [
       miss(
@@ -571,6 +609,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Confounding Variables',
     prompt:
       'A study finds that towns with more ice cream sales also have more drowning deaths. The most likely explanation is:',
+    mentorHint:
+      'When two variables rise together, compare three possibilities: direct causation, reverse causation, or a shared cause behind both. The strongest explanation often asks what third factor would make both patterns increase at the same time.',
     correct: 'A confounder — hot weather increases both ice cream sales and swimming',
     wrong: [
       miss(
@@ -600,6 +640,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Transposing the Conditional',
     prompt:
       'Most people who have a rare genetic disorder test positive for marker M. A patient reasons, "Since I tested positive for M, I almost certainly have the disorder." The error is:',
+    mentorHint:
+      'Conditional probabilities have a direction. Evidence about how often people with a disorder test positive does not automatically tell you how often positive testers have the disorder, especially when the disorder is rare.',
     correct: 'Confusing P(positive | disorder) with P(disorder | positive)',
     wrong: [
       miss(
@@ -629,6 +671,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Expected Value',
     prompt:
       'A lottery ticket costs $2. It pays $1,000 with probability 0.001 and nothing otherwise. What is the expected net value of buying one ticket?',
+    mentorHint:
+      'Expected value is not the best-case payoff; it is the probability-weighted average across outcomes. Compute the average prize first, then include the cost of the ticket to get the net result.',
     correct: '-$1 (you lose $1 on average per ticket)',
     wrong: [
       miss(
@@ -658,6 +702,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Hasty Generalization and Sample Size',
     prompt:
       'An online poll on a celebrity\'s fan page asks 300 followers whether the celebrity should run for office; 92% say yes. A headline reports "The public overwhelmingly supports the celebrity\'s candidacy." The main flaw is:',
+    mentorHint:
+      'A survey can have an impressive percentage and still fail if the sample does not match the population being described. Ask whether the respondents were selected in a way that represents "the public" or in a way that bakes in a predictable bias.',
     correct: 'The sample is unrepresentative (self-selected fans), so it cannot generalize to the public',
     wrong: [
       miss(
@@ -689,6 +735,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Falsifiability',
     prompt:
       'According to Karl Popper, what distinguishes a genuinely scientific claim from a pseudoscientific one?',
+    mentorHint:
+      'Popper focused on whether a claim takes a real empirical risk. A theory that rules out possible observations can be tested, while a theory compatible with every outcome cannot be meaningfully challenged by evidence.',
     correct: 'A scientific claim makes risky predictions that could in principle be proven false',
     wrong: [
       miss(
@@ -718,6 +766,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'The Quine-Duhem Problem',
     prompt:
       'A telescope observation contradicts a theory’s prediction. The Quine-Duhem (underdetermination) problem points out that:',
+    mentorHint:
+      'A prediction usually comes from a whole package: the core theory plus assumptions about instruments, background conditions, and calculations. When the prediction fails, the evidence tells you something in the package is wrong, but not automatically which part.',
     correct: 'You cannot be sure whether the core theory or some auxiliary assumption (e.g., the instrument working correctly) is at fault',
     wrong: [
       miss(
@@ -747,6 +797,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Interpreting a p-value',
     prompt:
       'A study reports a statistically significant result at p = 0.03. Which interpretation is correct?',
+    mentorHint:
+      'Keep the conditioning straight: a p-value starts by assuming the null hypothesis and then asks how surprising the observed data would be. It does not directly state the probability that the hypothesis is true or the size of the effect.',
     correct: 'If there were truly no effect, results this extreme or more would occur about 3% of the time',
     wrong: [
       miss(
@@ -778,6 +830,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Lateral Reading',
     prompt:
       'Stanford research found that professional fact-checkers judge an unfamiliar website’s credibility far better than professors and students. Their key habit is to:',
+    mentorHint:
+      'Credibility checks should not depend only on a source\'s own design, biography page, or self-description. Strong verification asks what independent sources say about the site before trusting the site\'s presentation of itself.',
     correct: 'Leave the site and open new tabs to see what independent sources say about it (lateral reading)',
     wrong: [
       miss(
@@ -807,6 +861,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Misinformation vs. Disinformation',
     prompt:
       'A user shares a false health claim they sincerely believe is true and helpful. By the standard distinction, this is:',
+    mentorHint:
+      'Classify the bad information by both truth value and intent. A false claim can mislead even when shared sincerely, while deliberate deception belongs in a different category.',
     correct: 'Misinformation — false content spread without intent to deceive',
     wrong: [
       miss(
@@ -836,6 +892,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'AI Hallucination',
     prompt:
       'A chatbot confidently cites a specific journal article, authors, and page numbers that turn out not to exist. The most accurate description and response is:',
+    mentorHint:
+      'Precision is not the same as verification. Language models can produce plausible-looking details, so treat an AI citation as a claim to check against external sources rather than as evidence by itself.',
     correct: 'This is a hallucination (confabulation); always independently verify AI-provided citations',
     wrong: [
       miss(
@@ -867,6 +925,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'The Toulmin Warrant',
     prompt:
       'In the Toulmin model, an argument states: "The bridge is unsafe (claim) because its inspection found severe corrosion (grounds)." What is the WARRANT?',
+    mentorHint:
+      'In Toulmin analysis, separate what is being claimed, what evidence is offered, and what assumption authorizes the move from evidence to claim. The warrant is usually the quiet bridge that makes the grounds relevant.',
     correct: 'The unstated assumption that severe corrosion makes a bridge unsafe',
     wrong: [
       miss(
@@ -896,6 +956,8 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     title: 'Objection and Reply',
     prompt:
       'You are writing an essay defending a thesis. The strongest section to include for an honest, persuasive argument is one that:',
+    mentorHint:
+      'A strong argumentative essay does not merely pile up friendly evidence; it shows the thesis can survive serious pressure. Look for the move that engages the best opposing reason and then explains why the thesis still stands.',
     correct: 'States the most powerful objection to your thesis and then replies to it',
     wrong: [
       miss(

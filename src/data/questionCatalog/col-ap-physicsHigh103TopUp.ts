@@ -11,6 +11,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Kinematics',
     title: 'Slope of a position-time graph',
     prompt: 'On a position-versus-time graph for an object moving in one dimension, what physical quantity does the slope of the line at a point represent?',
+    mentorHint: 'Acceleration is a second derivative; the first derivative of position is velocity.',
     correct: 'The instantaneous velocity of the object',
     wrong: [
       miss('The instantaneous acceleration of the object', 'Acceleration is the slope of a velocity-time graph, not a position-time graph.', 'Acceleration is a second derivative; the first derivative of position is velocity.'),
@@ -26,6 +27,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Kinematics',
     title: 'Free fall time to ground',
     prompt: 'A ball is dropped from rest from a height of 20 m. Ignoring air resistance and taking g = 10 m/s^2, how long does it take to reach the ground?',
+    mentorHint: 'Solve 20 = 0.5 x 10 x t^2 for t.',
     correct: '2.0 s',
     wrong: [
       miss('4.0 s', 'This comes from using h = vt incorrectly or doubling the time; the correct relation is h = (1/2)gt^2.', 'Solve 20 = 0.5 x 10 x t^2 for t.'),
@@ -41,6 +43,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Kinematics',
     title: 'Horizontal range of a projectile',
     prompt: 'A projectile is launched from level ground with a fixed speed. At what launch angle above the horizontal is the horizontal range a maximum (neglecting air resistance)?',
+    mentorHint: 'Range depends on sin(2 theta); find the angle that maximizes that.',
     correct: '45 degrees',
     wrong: [
       miss('90 degrees', 'A 90-degree launch goes straight up and lands back at the start, giving zero range.', 'Range depends on sin(2 theta); find the angle that maximizes that.'),
@@ -56,6 +59,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Kinematics',
     title: 'Independence of projectile components',
     prompt: 'Two identical balls leave the edge of a table at the same instant: one is dropped straight down, the other is thrown horizontally. Neglecting air resistance, which hits the floor first?',
+    mentorHint: 'The horizontal velocity does not affect vertical fall time.',
     correct: 'They hit the floor at the same time',
     wrong: [
       miss('The dropped ball hits first', 'Both start with zero vertical velocity and fall the same height under the same g.', 'The horizontal velocity does not affect vertical fall time.'),
@@ -71,6 +75,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Kinematics',
     title: 'Area under a velocity-time graph',
     prompt: 'A car moves with a velocity-time graph that is a straight horizontal line at 15 m/s for 8 seconds. What does the area between the line and the time axis represent, and what is its value?',
+    mentorHint: 'Area under a v-t graph has units of (m/s)(s) = m.',
     correct: 'Displacement; 120 m',
     wrong: [
       miss('Acceleration; 120 m/s^2', 'The area gives displacement, not acceleration, and acceleration here is zero anyway.', 'Area under a v-t graph has units of (m/s)(s) = m.'),
@@ -87,6 +92,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Dynamics: Newton\'s Laws',
     title: 'Newton\'s second law net force',
     prompt: 'A 4 kg block experiences a 20 N force to the right and a 8 N friction force to the left. What is its acceleration?',
+    mentorHint: 'Use the NET force: 20 N - 8 N.',
     correct: '3 m/s^2 to the right',
     wrong: [
       miss('5 m/s^2 to the right', 'This uses only the 20 N force and ignores the opposing friction.', 'Use the NET force: 20 N - 8 N.'),
@@ -102,6 +108,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Dynamics: Newton\'s Laws',
     title: 'Identifying a Newton\'s third law pair',
     prompt: 'A book rests on a table. The table pushes up on the book with a normal force. According to Newton\'s third law, what is the reaction force to this normal force?',
+    mentorHint: 'A reaction force always acts on the OTHER object involved in the interaction.',
     correct: 'The book pushes down on the table',
     wrong: [
       miss('Earth\'s gravity pulls the book down', 'Gravity and the normal force act on the same object (the book); a third-law pair acts on two different objects.', 'A reaction force always acts on the OTHER object involved in the interaction.'),
@@ -117,6 +124,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Dynamics: Newton\'s Laws',
     title: 'Apparent weight in an accelerating elevator',
     prompt: 'A person stands on a scale in an elevator. When the elevator accelerates upward, how does the scale reading compare with the person\'s true weight?',
+    mentorHint: 'The normal force must exceed gravity to produce a net upward force.',
     correct: 'The scale reads more than the true weight',
     wrong: [
       miss('The scale reads less than the true weight', 'A downward acceleration would reduce the reading; here the acceleration is upward.', 'The normal force must exceed gravity to produce a net upward force.'),
@@ -132,6 +140,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Dynamics: Newton\'s Laws',
     title: 'Maximum static friction',
     prompt: 'A 10 kg box sits on a horizontal floor with a coefficient of static friction of 0.4. Taking g = 10 m/s^2, what is the maximum horizontal force that can be applied before the box begins to slide?',
+    mentorHint: 'Multiply the normal force by the coefficient of friction.',
     correct: '40 N',
     wrong: [
       miss('100 N', 'This is the weight (the normal force), not the maximum friction force.', 'Multiply the normal force by the coefficient of friction.'),
@@ -147,6 +156,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Dynamics: Newton\'s Laws',
     title: 'Block on a frictionless incline',
     prompt: 'A block slides down a frictionless incline tilted at angle theta. What is the magnitude of its acceleration along the incline?',
+    mentorHint: 'The accelerating component is parallel to the slope.',
     correct: 'g sin(theta)',
     wrong: [
       miss('g cos(theta)', 'This is the component related to the normal force, perpendicular to the incline, not along it.', 'The accelerating component is parallel to the slope.'),
@@ -163,6 +173,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Circular Motion and Gravitation',
     title: 'Direction of centripetal acceleration',
     prompt: 'A car travels at constant speed around a circular track. In what direction does its acceleration point?',
+    mentorHint: 'Constant speed means no tangential acceleration, only a change in direction.',
     correct: 'Toward the centre of the circle',
     wrong: [
       miss('In the direction of motion (tangent to the circle)', 'Tangential acceleration would change the speed; here the speed is constant.', 'Constant speed means no tangential acceleration, only a change in direction.'),
@@ -178,6 +189,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Circular Motion and Gravitation',
     title: 'Centripetal force on a satellite',
     prompt: 'What provides the centripetal force that keeps a satellite in a circular orbit around the Earth?',
+    mentorHint: 'Think about what natural force points toward the Earth\'s centre.',
     correct: 'The gravitational attraction between the satellite and the Earth',
     wrong: [
       miss('The thrust of the satellite\'s engines', 'Satellites in stable orbit coast without continuous thrust; gravity supplies the inward force.', 'Think about what natural force points toward the Earth\'s centre.'),
@@ -193,6 +205,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Circular Motion and Gravitation',
     title: 'Inverse-square law of gravitation',
     prompt: 'The gravitational force between two masses is F when they are separated by distance r. If the separation is tripled to 3r, what is the new force?',
+    mentorHint: 'The distance appears squared in the denominator of Newton\'s law of gravitation.',
     correct: 'F/9',
     wrong: [
       miss('F/3', 'This treats gravity as inverse to distance, but it is inverse to distance squared.', 'The distance appears squared in the denominator of Newton\'s law of gravitation.'),
@@ -208,6 +221,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Circular Motion and Gravitation',
     title: 'Speed for a flat circular turn',
     prompt: 'A 1000 kg car rounds a flat curve of radius 50 m. The coefficient of static friction is 0.5 and g = 10 m/s^2. What is the maximum speed at which the car can take the turn without skidding?',
+    mentorHint: 'The friction equation gives v^2 = mu g r, so take the square root.',
     correct: 'About 16 m/s',
     wrong: [
       miss('About 25 m/s', 'This drops the square root, treating v^2 as v.', 'The friction equation gives v^2 = mu g r, so take the square root.'),
@@ -224,6 +238,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Energy',
     title: 'Work done by a perpendicular force',
     prompt: 'A satellite moves in a circular orbit at constant speed. How much work does the gravitational force do on the satellite over one complete orbit?',
+    mentorHint: 'Gravity points toward the centre while motion is tangential.',
     correct: 'Zero, because the force is always perpendicular to the motion',
     wrong: [
       miss('A large positive amount, because gravity is strong', 'Work depends on the angle between force and displacement, not just the force magnitude.', 'Gravity points toward the centre while motion is tangential.'),
@@ -239,6 +254,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Energy',
     title: 'Kinetic energy and speed',
     prompt: 'A car doubles its speed. By what factor does its kinetic energy change?',
+    mentorHint: 'KE = (1/2)mv^2, so doubling v multiplies KE by 2^2.',
     correct: 'It increases by a factor of 4',
     wrong: [
       miss('It increases by a factor of 2', 'Kinetic energy depends on the square of speed, not speed itself.', 'KE = (1/2)mv^2, so doubling v multiplies KE by 2^2.'),
@@ -254,6 +270,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Energy',
     title: 'Conservation of mechanical energy',
     prompt: 'A 2 kg ball is released from rest at a height of 5 m on a frictionless track. Taking g = 10 m/s^2, what is its speed at the bottom?',
+    mentorHint: 'Set mgh = (1/2)mv^2 and solve for v.',
     correct: '10 m/s',
     wrong: [
       miss('5 m/s', 'This forgets the factor of 2 inside the square root or solves v = gh incorrectly.', 'Set mgh = (1/2)mv^2 and solve for v.'),
@@ -269,6 +286,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Energy',
     title: 'Power and work rate',
     prompt: 'A motor lifts a 50 kg load through a height of 4 m in 10 seconds at constant speed. Taking g = 10 m/s^2, what is the average power output?',
+    mentorHint: 'Power is work divided by time.',
     correct: '200 W',
     wrong: [
       miss('2000 W', 'This computes the work (2000 J) but forgets to divide by the time.', 'Power is work divided by time.'),
@@ -284,6 +302,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Energy',
     title: 'Work-energy theorem',
     prompt: 'According to the work-energy theorem, the net work done on an object equals which quantity?',
+    mentorHint: 'The theorem links net work directly to kinetic energy alone.',
     correct: 'The change in the object\'s kinetic energy',
     wrong: [
       miss('The object\'s total mechanical energy', 'Net work equals the change in kinetic energy specifically, not the total mechanical energy.', 'The theorem links net work directly to kinetic energy alone.'),
@@ -300,6 +319,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Momentum',
     title: 'Impulse-momentum theorem',
     prompt: 'A 0.5 kg ball moving at 4 m/s is brought to rest by a wall. What is the magnitude of the impulse delivered to the ball?',
+    mentorHint: 'Impulse equals the change in momentum: final minus initial.',
     correct: '2 kg m/s',
     wrong: [
       miss('8 kg m/s', 'This doubles the momentum; the ball stops at zero, so the change is just the initial momentum.', 'Impulse equals the change in momentum: final minus initial.'),
@@ -315,6 +335,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Momentum',
     title: 'Perfectly inelastic collision',
     prompt: 'A 2 kg cart moving at 6 m/s collides and sticks to a stationary 4 kg cart. What is their common velocity after the collision?',
+    mentorHint: 'Use conservation of momentum with the total mass after collision.',
     correct: '2 m/s',
     wrong: [
       miss('3 m/s', 'This averages the velocities without weighting by mass.', 'Use conservation of momentum with the total mass after collision.'),
@@ -330,6 +351,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Momentum',
     title: 'Why airbags reduce injury',
     prompt: 'In a crash, an airbag increases the time over which a passenger comes to rest. How does this reduce the force on the passenger?',
+    mentorHint: 'The change in momentum is fixed by the initial speed and mass.',
     correct: 'For the same change in momentum, a longer time means a smaller average force',
     wrong: [
       miss('It reduces the change in momentum the passenger experiences', 'The passenger still stops, so the momentum change is the same; only the time changes.', 'The change in momentum is fixed by the initial speed and mass.'),
@@ -345,6 +367,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Momentum',
     title: 'Recoil and conservation of momentum',
     prompt: 'A stationary 60 kg skater throws a 2 kg ball horizontally at 9 m/s. Ignoring friction, what is the skater\'s recoil speed?',
+    mentorHint: 'Equal and opposite momenta, but unequal masses give unequal speeds.',
     correct: '0.3 m/s',
     wrong: [
       miss('9 m/s', 'The skater is far heavier than the ball, so the skater moves much more slowly.', 'Equal and opposite momenta, but unequal masses give unequal speeds.'),
@@ -361,6 +384,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Torque and Rotational Motion',
     title: 'Torque from a perpendicular force',
     prompt: 'A force of 20 N is applied perpendicular to a wrench at a distance of 0.3 m from the bolt. What torque does it produce about the bolt?',
+    mentorHint: 'Multiply force by the actual lever arm of 0.3 m.',
     correct: '6 N m',
     wrong: [
       miss('60 N m', 'This treats the distance as 3 m instead of 0.3 m.', 'Multiply force by the actual lever arm of 0.3 m.'),
@@ -376,6 +400,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Torque and Rotational Motion',
     title: 'Conservation of angular momentum',
     prompt: 'A spinning figure skater pulls their arms inward, reducing their moment of inertia. With no external torque, what happens to their rotation?',
+    mentorHint: 'Angular momentum L = I omega is constant; if I drops, omega rises.',
     correct: 'Their angular speed increases',
     wrong: [
       miss('Their angular speed decreases', 'A smaller moment of inertia requires a larger angular speed to conserve angular momentum.', 'Angular momentum L = I omega is constant; if I drops, omega rises.'),
@@ -391,6 +416,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Torque and Rotational Motion',
     title: 'Rotational form of Newton\'s second law',
     prompt: 'Which equation is the rotational analogue of Newton\'s second law F = ma?',
+    mentorHint: 'The second law relates a "force" to acceleration, not to velocity.',
     correct: 'tau = I alpha',
     wrong: [
       miss('L = I omega', 'This defines angular momentum, the analogue of linear momentum, not the second law.', 'The second law relates a "force" to acceleration, not to velocity.'),
@@ -407,6 +433,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Simple Harmonic Motion',
     title: 'Period of a simple pendulum',
     prompt: 'A simple pendulum has a period T. If its length is quadrupled, what is the new period?',
+    mentorHint: 'T is proportional to sqrt(L), so quadrupling L multiplies T by sqrt(4).',
     correct: '2T',
     wrong: [
       miss('4T', 'The period depends on the square root of the length, not directly on length.', 'T is proportional to sqrt(L), so quadrupling L multiplies T by sqrt(4).'),
@@ -422,6 +449,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Simple Harmonic Motion',
     title: 'Restoring force in SHM',
     prompt: 'For an object undergoing simple harmonic motion, how is the restoring force related to the displacement from equilibrium?',
+    mentorHint: 'SHM requires a force that grows with displacement.',
     correct: 'It is proportional to the displacement and directed opposite to it',
     wrong: [
       miss('It is constant in magnitude regardless of displacement', 'A constant force gives uniform acceleration, not oscillation about equilibrium.', 'SHM requires a force that grows with displacement.'),
@@ -437,6 +465,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Simple Harmonic Motion',
     title: 'Energy at the extremes of SHM',
     prompt: 'A mass oscillating on a spring is momentarily at its maximum displacement (amplitude). What can be said about its kinetic and potential energy there?',
+    mentorHint: 'At maximum displacement the mass is momentarily at rest.',
     correct: 'Kinetic energy is zero and elastic potential energy is maximum',
     wrong: [
       miss('Kinetic energy is maximum and potential energy is zero', 'This describes the equilibrium point, where the mass moves fastest, not the extreme.', 'At maximum displacement the mass is momentarily at rest.'),
@@ -453,6 +482,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Waves and Sound',
     title: 'Wave speed equation',
     prompt: 'A wave has a frequency of 50 Hz and a wavelength of 4 m. What is its speed?',
+    mentorHint: 'Wave speed is frequency times wavelength.',
     correct: '200 m/s',
     wrong: [
       miss('12.5 m/s', 'This divides frequency by wavelength instead of multiplying them.', 'Wave speed is frequency times wavelength.'),
@@ -468,6 +498,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Waves and Sound',
     title: 'Transverse versus longitudinal waves',
     prompt: 'In which type of wave do the particles of the medium oscillate parallel to the direction of energy transfer?',
+    mentorHint: 'Think about which wave involves compressions and rarefactions.',
     correct: 'A longitudinal wave',
     wrong: [
       miss('A transverse wave', 'In a transverse wave particles move perpendicular to the energy transfer, not parallel.', 'Think about which wave involves compressions and rarefactions.'),
@@ -483,6 +514,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Waves and Sound',
     title: 'Beat frequency',
     prompt: 'Two tuning forks of 256 Hz and 260 Hz are sounded together. What beat frequency is heard?',
+    mentorHint: 'Subtract the two frequencies.',
     correct: '4 Hz',
     wrong: [
       miss('516 Hz', 'Beats come from the difference of the frequencies, not their sum.', 'Subtract the two frequencies.'),
@@ -499,6 +531,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Electric Charge and Electric Force',
     title: 'Coulomb\'s law distance dependence',
     prompt: 'Two point charges experience an electrostatic force F. If the distance between them is halved, what is the new force?',
+    mentorHint: 'The distance appears squared in the denominator.',
     correct: '4F',
     wrong: [
       miss('2F', 'This treats the force as inverse to distance, but Coulomb\'s law is inverse-square.', 'The distance appears squared in the denominator.'),
@@ -514,6 +547,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Electric Charge and Electric Force',
     title: 'Conservation of charge in conductors',
     prompt: 'Two identical metal spheres carry charges of +6 microcoulombs and -2 microcoulombs. They are touched together and then separated. What charge does each sphere carry afterward?',
+    mentorHint: 'Identical spheres share the total charge evenly.',
     correct: '+2 microcoulombs each',
     wrong: [
       miss('+6 and -2 microcoulombs, unchanged', 'When identical conductors touch, charge redistributes equally; it does not stay separate.', 'Identical spheres share the total charge evenly.'),
@@ -530,6 +564,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'DC Circuits',
     title: 'Ohm\'s law calculation',
     prompt: 'A resistor carries a current of 0.5 A when a voltage of 6 V is applied across it. What is its resistance?',
+    mentorHint: 'Resistance is voltage divided by current.',
     correct: '12 ohms',
     wrong: [
       miss('3 ohms', 'This multiplies voltage by current instead of dividing.', 'Resistance is voltage divided by current.'),
@@ -545,6 +580,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'DC Circuits',
     title: 'Resistors in series',
     prompt: 'Three resistors of 2 ohms, 3 ohms, and 5 ohms are connected in series. What is the total resistance of the combination?',
+    mentorHint: 'Series resistances simply add.',
     correct: '10 ohms',
     wrong: [
       miss('0.97 ohms', 'This uses the parallel formula (reciprocals), not the series formula.', 'Series resistances simply add.'),
@@ -560,6 +596,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'DC Circuits',
     title: 'Resistors in parallel',
     prompt: 'Two 6 ohm resistors are connected in parallel. What is the equivalent resistance?',
+    mentorHint: 'Parallel combinations reduce the total resistance below either value.',
     correct: '3 ohms',
     wrong: [
       miss('12 ohms', 'This adds the resistors as if in series; parallel resistance is smaller.', 'Parallel combinations reduce the total resistance below either value.'),
@@ -575,6 +612,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'DC Circuits',
     title: 'Electrical power dissipation',
     prompt: 'A 4 ohm resistor carries a current of 3 A. At what rate does it dissipate energy as heat?',
+    mentorHint: 'Power involves the current squared: P = I^2 R.',
     correct: '36 W',
     wrong: [
       miss('12 W', 'This is the voltage (I x R = 12 V), not the power.', 'Power involves the current squared: P = I^2 R.'),
@@ -591,6 +629,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Fluids',
     title: 'Buoyant force and Archimedes principle',
     prompt: 'According to Archimedes\' principle, the buoyant force on a submerged object equals which quantity?',
+    mentorHint: 'Buoyancy depends on the displaced fluid, not the object\'s own weight.',
     correct: 'The weight of the fluid displaced by the object',
     wrong: [
       miss('The weight of the object itself', 'A submerged object\'s weight only equals buoyancy when it floats in equilibrium, not in general.', 'Buoyancy depends on the displaced fluid, not the object\'s own weight.'),
@@ -606,6 +645,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Fluids',
     title: 'Pressure with depth',
     prompt: 'In a static fluid of density rho, how does the gauge pressure change as you go deeper?',
+    mentorHint: 'Deeper points support more fluid above them.',
     correct: 'It increases linearly with depth as rho g h',
     wrong: [
       miss('It decreases with depth', 'Pressure increases with depth because the weight of fluid above grows.', 'Deeper points support more fluid above them.'),
@@ -621,6 +661,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Fluids',
     title: 'Continuity equation',
     prompt: 'An incompressible fluid flows through a pipe that narrows to half its original cross-sectional area. What happens to the flow speed in the narrow section?',
+    mentorHint: 'The continuity equation requires A x v to stay constant.',
     correct: 'It doubles',
     wrong: [
       miss('It halves', 'A narrower pipe forces the fluid to move faster, not slower.', 'The continuity equation requires A x v to stay constant.'),
@@ -637,6 +678,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Thermodynamics',
     title: 'First law of thermodynamics',
     prompt: 'The first law of thermodynamics expresses the conservation of which quantity?',
+    mentorHint: 'The first law is the energy bookkeeping law.',
     correct: 'Energy',
     wrong: [
       miss('Entropy', 'Entropy is governed by the second law, not the first; it is not conserved but tends to increase.', 'The first law is the energy bookkeeping law.'),
@@ -652,6 +694,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Thermodynamics',
     title: 'Ideal gas law relationships',
     prompt: 'A fixed amount of ideal gas is held at constant temperature. If its volume is reduced to one third, what happens to its pressure?',
+    mentorHint: 'Boyle\'s law: PV is constant, so smaller V means larger P.',
     correct: 'It triples',
     wrong: [
       miss('It is reduced to one third', 'At constant temperature, pressure and volume are inversely related, so reducing volume raises pressure.', 'Boyle\'s law: PV is constant, so smaller V means larger P.'),
@@ -667,6 +710,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Thermodynamics',
     title: 'Heat required to raise temperature',
     prompt: 'How much heat is needed to raise the temperature of 2 kg of water by 10 degrees C, given a specific heat capacity of 4200 J/(kg degrees C)?',
+    mentorHint: 'Multiply all three: mass, specific heat, and temperature change.',
     correct: '84000 J',
     wrong: [
       miss('8400 J', 'This omits one factor, using either the mass or the temperature change only once.', 'Multiply all three: mass, specific heat, and temperature change.'),
@@ -683,6 +727,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Geometric Optics',
     title: 'Law of reflection',
     prompt: 'A ray of light strikes a plane mirror at an angle of incidence of 30 degrees measured from the normal. What is the angle of reflection?',
+    mentorHint: 'Both angles are measured from the normal, and they are equal.',
     correct: '30 degrees',
     wrong: [
       miss('60 degrees', 'This measures from the surface instead of from the normal.', 'Both angles are measured from the normal, and they are equal.'),
@@ -698,6 +743,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Geometric Optics',
     title: 'Refraction at a boundary',
     prompt: 'A light ray passes from air into water (a denser medium). How does the ray bend relative to the normal?',
+    mentorHint: 'Going into a slower, denser medium bends light toward the normal.',
     correct: 'It bends toward the normal',
     wrong: [
       miss('It bends away from the normal', 'Light bends away from the normal when entering a less dense medium, the reverse of this case.', 'Going into a slower, denser medium bends light toward the normal.'),
@@ -713,6 +759,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Geometric Optics',
     title: 'Total internal reflection condition',
     prompt: 'Total internal reflection can occur only when light travels in which direction across a boundary?',
+    mentorHint: 'TIR needs the refracted ray to bend away from the normal first.',
     correct: 'From a denser (slower) medium toward a less dense (faster) medium',
     wrong: [
       miss('From a less dense medium toward a denser medium', 'Going into a denser medium bends light toward the normal and never produces total internal reflection.', 'TIR needs the refracted ray to bend away from the normal first.'),
@@ -729,6 +776,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Modern Physics',
     title: 'Photon energy and frequency',
     prompt: 'According to the photon model of light, how is the energy of a single photon related to the light\'s frequency?',
+    mentorHint: 'Recall E = hf, a direct proportionality.',
     correct: 'Energy is directly proportional to frequency (E = hf)',
     wrong: [
       miss('Energy is inversely proportional to frequency', 'Higher frequency means higher energy, not lower; the relationship is direct.', 'Recall E = hf, a direct proportionality.'),
@@ -744,6 +792,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Modern Physics',
     title: 'Photoelectric effect threshold',
     prompt: 'In the photoelectric effect, no electrons are emitted from a metal unless the incident light has a frequency above a certain threshold. What does this demonstrate?',
+    mentorHint: 'Intensity cannot make up for too-low photon energy.',
     correct: 'Light energy is delivered in discrete quanta (photons), each with energy proportional to frequency',
     wrong: [
       miss('Brighter light always ejects electrons regardless of frequency', 'Below the threshold frequency, no electrons are emitted no matter how intense the light.', 'Intensity cannot make up for too-low photon energy.'),
@@ -759,6 +808,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Modern Physics',
     title: 'Mass-energy equivalence',
     prompt: 'In nuclear reactions, a small amount of mass appears to vanish and a large amount of energy is released. Which relationship accounts for this?',
+    mentorHint: 'The relation involves the speed of light, not the particle speed.',
     correct: 'E = mc^2',
     wrong: [
       miss('E = (1/2)mv^2', 'This is classical kinetic energy and does not describe mass converting to energy.', 'The relation involves the speed of light, not the particle speed.'),
@@ -774,6 +824,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Modern Physics',
     title: 'Half-life of a radioactive sample',
     prompt: 'A radioactive isotope has a half-life of 8 days. What fraction of an initial sample remains undecayed after 24 days?',
+    mentorHint: 'Decay is exponential: halve once per half-life.',
     correct: '1/8',
     wrong: [
       miss('1/3', 'This divides linearly by the number of half-lives instead of halving repeatedly.', 'Decay is exponential: halve once per half-life.'),
@@ -790,6 +841,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Kinematics',
     title: 'Velocity at the top of a vertical throw',
     prompt: 'A ball is thrown straight up. At the highest point of its path, what are its velocity and acceleration (neglecting air resistance)?',
+    mentorHint: 'The ball is momentarily at rest but still accelerating.',
     correct: 'Velocity is zero; acceleration is g downward',
     wrong: [
       miss('Both velocity and acceleration are zero', 'Gravity still acts at the top, so acceleration is g downward, not zero.', 'The ball is momentarily at rest but still accelerating.'),
@@ -805,6 +857,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Dynamics: Newton\'s Laws',
     title: 'Newton\'s first law and equilibrium',
     prompt: 'An object moves at a constant velocity in a straight line. What must be true about the forces acting on it?',
+    mentorHint: 'Balanced forces also produce constant velocity.',
     correct: 'The net force on the object is zero',
     wrong: [
       miss('There are no forces acting on the object at all', 'Forces may be present but they must balance; constant velocity does not require zero forces.', 'Balanced forces also produce constant velocity.'),
@@ -820,6 +873,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Energy',
     title: 'Energy lost to friction',
     prompt: 'A 1 kg block slides along a rough horizontal surface, starting at 6 m/s and coming to rest. How much mechanical energy is converted to thermal energy by friction?',
+    mentorHint: 'KE = (1/2)mv^2, so include the one-half.',
     correct: '18 J',
     wrong: [
       miss('36 J', 'This forgets the factor of 1/2 in the kinetic energy formula.', 'KE = (1/2)mv^2, so include the one-half.'),
@@ -835,6 +889,7 @@ export const colApPhysicsHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Circular Motion and Gravitation',
     title: 'Period and angular speed in circular motion',
     prompt: 'An object completes one full circle of radius 2 m in 4 seconds at constant speed. What is its linear speed?',
+    mentorHint: 'The object travels the whole circumference, 2 pi r, per period.',
     correct: 'About 3.1 m/s',
     wrong: [
       miss('0.5 m/s', 'This divides the radius by the period, ignoring the full circumference.', 'The object travels the whole circumference, 2 pi r, per period.'),

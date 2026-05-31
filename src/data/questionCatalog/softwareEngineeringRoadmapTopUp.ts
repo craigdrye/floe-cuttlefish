@@ -18,6 +18,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Bug rates always lag coverage by exactly one quarter', 'There is no fixed lag law; the issue is test quality, not timing.', 'Look for a mechanism that ties coverage to defects, not a calendar rule.'),
     ],
     lesson: 'Coverage tells you what code executed under test, not whether the test checked the right thing. A suite can hit 90% of lines while asserting almost nothing. Confidence comes from meaningful assertions on risky behavior, not a percentage.',
+    mentorHint:
+      'Coverage is an execution signal, not a proof of correctness. Ask whether the tests would fail if the behavior were wrong, especially around risky branches and edge cases.',
     source,
     generated: true,
   },
@@ -33,6 +35,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('A load test to see if it breaks under traffic', 'Load tests probe performance and concurrency, not the correctness of a single calculation.', 'Ask whether the bug is about speed or about a wrong answer.'),
     ],
     lesson: 'The test pyramid says: catch each bug at the lowest, cheapest level that can see it. A wrong calculation in a pure function is a textbook unit test. Reserve slow end-to-end tests for whole-system flows that nothing smaller can cover.',
+    mentorHint:
+      'Match the test size to the defect size. Pure logic with clear inputs and outputs is cheapest to check close to the code, while broader tests are better for integration risks.',
     source,
     generated: true,
   },
@@ -48,6 +52,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('The author should approve their own PRs to save time', 'Self-approval removes the second pair of eyes entirely, which is the whole point of review.', 'Consider who has the independence to spot the author’s blind spots.'),
     ],
     lesson: 'A "LGTM" that arrives faster than anyone could read the diff is theater, not review. It launders a risky change with the appearance of scrutiny. Real review takes time proportional to risk, which is also why large PRs are discouraged.',
+    mentorHint:
+      'Code review is a risk-reduction activity, not a stamp. For a large diff, ask what security, correctness, or maintainability risks a reviewer could realistically assess in the time spent.',
     source,
     generated: true,
   },
@@ -63,6 +69,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Run the whole suite single-threaded forever', 'Serializing everything papers over one test’s isolation bug at the cost of CI speed for all tests.', 'Prefer fixing the one test’s dependency over slowing the entire pipeline.'),
     ],
     lesson: 'A test that depends on shared, mutable external state is not isolated and will flake. Determinism comes from controlling the test’s inputs: mock the dependency or give each run its own fresh fixture. Sleeps and forced passes hide the problem instead of fixing it.',
+    mentorHint:
+      'Reliable tests control their inputs and isolate their state. Shared mutable dependencies introduce timing and data races, which makes a test flaky even when the product code is fine.',
     source,
     generated: true,
   },
@@ -78,6 +86,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('"This file is getting long, maybe split it someday."', 'A vague future-tense suggestion neither blocks the risk nor creates an actionable change.', 'Prefer a comment that probes a concrete failure mode in this diff.'),
     ],
     lesson: 'Good review comments target risk: edge cases, security boundaries, and missing tests on the dangerous paths. Style preferences are best left to automated linters. On a password-reset flow, token reuse and expiry are exactly where defects become incidents.',
+    mentorHint:
+      'Strong reviews follow the threat model of the change. In auth and account-recovery code, probe token lifetime, reuse, authorization boundaries, and tests for failure paths.',
     source,
     generated: true,
   },
@@ -93,6 +103,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Reformatting always breaks the build', 'Pure reformatting usually does not break the build; the problem is that it masks the behavioral change next to it.', 'Separate "does it compile" from "can a human spot the real change."'),
     ],
     lesson: 'A clean refactor and a behavior change are both fine; combined, they create a diff where the one line that matters drowns in a thousand that do not. Splitting them lets reviewers focus scrutiny on the change that can actually break something.',
+    mentorHint:
+      'Reviewability depends on signal-to-noise ratio. Mechanical churn and behavior changes deserve separate scrutiny because the risky line is easy to miss when buried in unrelated movement.',
     source,
     generated: true,
   },
@@ -108,6 +120,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Leave them; warnings are not errors so they are harmless', 'A perpetually noisy warning list trains everyone to ignore all of them, including the one real bug among the 200.', 'Think about what 200 ignored warnings do to the next real warning.'),
     ],
     lesson: 'Unmanaged warnings become noise everyone learns to ignore, which is how a real defect hides in plain sight. The discipline is to curate the rule set, enforce what matters in CI, and explicitly suppress the rest with a reason.',
+    mentorHint:
+      'A static-analysis program only works when its signals are trusted. Curate rules, document suppressions, and enforce the checks that map to real defects instead of normalizing noisy warnings.',
     source,
     generated: true,
   },
@@ -125,6 +139,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Latency, not consistency or availability, is the only thing affected', 'CAP is about consistency vs. availability under partition, not about latency; latency is a separate (PACELC) concern.', 'Distinguish "what happens during a partition" from "what happens normally."'),
     ],
     lesson: 'CAP says that when a network partition happens, a distributed system can be consistent or available, but not both, for the duration. Partition tolerance is not optional on a real network, so the real design choice is which of C or A you give up when things split.',
+    mentorHint:
+      'During a network split, partition tolerance is the condition you are living through. Reason about which user promise the system preserves when replicas cannot coordinate.',
     source,
     generated: true,
   },
@@ -140,6 +156,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Exactly 95%, because each hop loses 1%', 'Each hop loses about 0.1%, not 1%; 0.999^5 is roughly 0.995, i.e. ~99.5%.', 'Use the right per-hop loss: 99.9% available means 0.1% unavailable.'),
     ],
     lesson: 'In a synchronous chain, availabilities multiply: 0.999^5 ≈ 0.995, or about 99.5%. Every required hop lowers the whole. That is why teams reduce hard synchronous dependencies, add caching/async paths, or make degraded responses acceptable.',
+    mentorHint:
+      'End-to-end reliability in a required call chain is multiplicative. Each synchronous dependency becomes another component that must be healthy before the user receives a successful response.',
     source,
     generated: true,
   },
@@ -155,6 +173,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('High cohesion, which is always desirable', 'Cohesion is about a module doing one thing well; this is cross-team coupling, the opposite of a clean boundary.', 'Separate "one module focused" from "two teams entangled."'),
     ],
     lesson: 'When teams share a table with no contract, each becomes coupled to the other’s internal schema, and a change on one side breaks the other invisibly. Boundaries (an API or an event contract) exist precisely so a team can change its internals safely.',
+    mentorHint:
+      'Architecture boundaries need contracts. When teams share internal storage directly, schema details become part of an accidental API and changes cross team boundaries without warning.',
     source,
     generated: true,
   },
@@ -170,6 +190,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('The names of everyone who attended the meeting', 'Attendee lists are trivia; without the options and tradeoffs, the decision is still folklore.', 'Prefer the rationale over the roster when judging an ADR’s value.'),
     ],
     lesson: 'An ADR’s durable value is the why: the context, the options considered, the decision, and the tradeoffs accepted. Code shows what was built; an ADR lets a future team revisit the choice without rediscovering the constraints from scratch.',
+    mentorHint:
+      'An ADR is most valuable when future engineers can see the constraints, rejected options, and accepted tradeoffs. Code shows the result, but it rarely preserves the decision context.',
     source,
     generated: true,
   },
@@ -185,6 +207,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Nothing, because caches are not load-bearing', 'When every request depends on the cache, it is load-bearing by definition; its failure is a system failure.', 'Trace what fails downstream when this "non-critical" component goes down.'),
     ],
     lesson: 'A single point of failure is any component whose failure takes down the whole system. Routing all traffic through one node with no fallback creates exactly that. Mitigations include replication, fallback to the source of truth, and graceful degradation.',
+    mentorHint:
+      'Trace the request path and identify components with no alternate route. A component becomes load-bearing when every successful request depends on it being available.',
     source,
     generated: true,
   },
@@ -200,6 +224,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Reduced need for testing across boundaries', 'More boundaries mean more integration surfaces to test, not fewer.', 'Think about where new bugs appear when components talk over the network.'),
     ],
     lesson: 'Microservices trade in-process simplicity for operational and coordination cost: more deploys, more failure modes, more contracts. For a tiny team, that overhead usually outweighs scaling benefits they do not yet need. Architecture should match current constraints, not imagined ones.',
+    mentorHint:
+      'Microservices trade local code separation for distributed-system obligations. Think about deployment count, observability, contracts, latency, and on-call burden before assuming they create scale.',
     source,
     generated: true,
   },
@@ -215,6 +241,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Latency only matters for databases, not services', 'Latency matters anywhere a user or caller waits for a response, not only at the database layer.', 'Think about who is waiting on each individual request.'),
     ],
     lesson: 'Latency is how long one request takes; throughput is how many requests complete per unit time. A system can hit high throughput through parallelism or batching while any single request is slow. They are different dimensions that you tune separately.',
+    mentorHint:
+      'Define the metric before drawing conclusions. Latency is about one unit of work waiting; throughput is about total work completed over time, and systems can optimize one while hurting the other.',
     source,
     generated: true,
   },
@@ -232,6 +260,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Feature flag: canary and feature flags are identical', 'A feature flag toggles a code path, often per-user; canary is about traffic routing to a new deployment. They overlap but are not the same mechanism.', 'Separate "which deployment serves you" from "which code branch you hit."'),
     ],
     lesson: 'A canary deployment routes a small, increasing share of real traffic to the new version while you watch metrics, so blast radius stays tiny if it breaks. Blue-green keeps two full environments and switches all traffic at cutover (fast rollback, but the whole user base flips together).',
+    mentorHint:
+      'Progressive delivery is about limiting blast radius and watching production signals before expanding exposure. Compare that to strategies that switch traffic between complete environments.',
     source,
     generated: true,
   },
@@ -247,6 +277,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('2.4.1 stays — only the changelog needs updating', 'A code change that breaks the public API must change the version; leaving it at 2.4.1 lies to consumers about compatibility.', 'Think about how a consumer’s tooling would even detect the break.'),
     ],
     lesson: 'Semantic versioning (MAJOR.MINOR.PATCH): bump MAJOR for backward-incompatible API changes, MINOR for backward-compatible additions, PATCH for backward-compatible fixes. Removing a public function breaks callers, so 2.4.1 becomes 3.0.0.',
+    mentorHint:
+      'Semantic versioning communicates compatibility of the public contract. Ask whether existing callers can upgrade without code changes; if not, the change belongs in the compatibility-breaking category.',
     source,
     generated: true,
   },
@@ -262,6 +294,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Keep both columns forever and let the app guess which to read', 'Leaving an ambiguous dual-source permanently is unfinished migration and a future correctness bug, not a plan.', 'A migration has an end state; ask what step retires the old column.'),
     ],
     lesson: 'Expand/contract makes schema changes reversible and online: expand by adding the new column and writing to both, backfill old data, migrate reads, then contract by dropping the old column once unused. Each step is independently safe and deployable.',
+    mentorHint:
+      'Zero-downtime migrations require old and new code to coexist for a while. Design the database shape so every deployed version can still read and write safely during the rollout.',
     source,
     generated: true,
   },
@@ -277,6 +311,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Rename the flag so it looks intentional', 'Renaming does not remove the dead branch or the complexity; it just disguises the debt.', 'Prefer deleting the unused path over relabeling it.'),
     ],
     lesson: 'Feature flags are temporary by design. Once a feature is fully rolled out and stable, the flag and its now-dead alternate branch should be removed. Long-lived flags pile up as conditional complexity and untested code paths.',
+    mentorHint:
+      'Feature flags are temporary control surfaces, not permanent architecture. Once a path is fully launched and stable, stale branches add test burden and hide future defects.',
     source,
     generated: true,
   },
@@ -292,6 +328,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Only GET, and never any method that writes data', 'PUT and DELETE write data yet are still idempotent because repeating them lands on the same final state.', 'Separate "reads only" (safe) from "same final state when repeated" (idempotent).'),
     ],
     lesson: 'Per HTTP semantics, GET, HEAD, PUT, and DELETE are idempotent: repeating them produces the same final state, so retries are safe. POST is not idempotent and a retry can duplicate work, which is why POST endpoints need idempotency keys to be retry-safe.',
+    mentorHint:
+      'A retry is safe only when repeating the operation leaves the same final system state. Focus on the semantics of the method, not just whether the first attempt timed out.',
     source,
     generated: true,
   },
@@ -307,6 +345,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Add a fixed 1-second delay to every retry', 'A fixed delay still synchronizes all clients to retry at the same instant; without randomness you recreate the thundering herd.', 'Think about why identical delays make every client fire at once.'),
     ],
     lesson: 'When many clients retry in sync, they create a thundering herd / retry storm that can keep a recovering service down. Exponential backoff increases the wait after each failure, and jitter randomizes it so clients stop firing in unison.',
+    mentorHint:
+      'Retries are load too, and synchronized retries can amplify a small slowdown into an outage. Good client behavior spaces attempts out and avoids all callers retrying at once.',
     source,
     generated: true,
   },
@@ -322,6 +362,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Leave it forever and never communicate the new one', 'Never retiring anything turns the API into permanent maintenance debt and hides the better replacement from users.', 'Balance not breaking callers against not maintaining dead surface forever.'),
     ],
     lesson: 'Responsible deprecation means giving consumers a clear timeline, a documented migration path, and monitoring to see who is still calling, before removal. APIs have consumers you cannot see, so silent removal or silent behavior changes are the worst options.',
+    mentorHint:
+      'A public API is a contract with consumers you may not see directly. Responsible retirement means communication, migration support, telemetry, and enough time for callers to move.',
     source,
     generated: true,
   },
@@ -339,6 +381,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('About 4 minutes — 0.01% of the month', 'That is the budget for a 99.99% ("four nines") SLO; 99.9% allows ten times more, about 43 minutes.', 'Match the number of nines to the right fraction: three nines is 0.1%.'),
     ],
     lesson: 'Error budget = 100% minus the SLO. For 99.9% over ~30 days (43,200 minutes), 0.1% is about 43 minutes of allowed downtime. The budget turns reliability into a number teams can spend, balancing release velocity against staying within target.',
+    mentorHint:
+      'An error budget is the allowed failure slice of the measurement window. Convert the SLO into the unavailable percentage, then apply it to the length of the period.',
     source,
     generated: true,
   },
@@ -354,6 +398,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('An SLI is the contract and an SLO is the raw measurement', 'The SLI is the raw measurement (e.g., success rate); the contract is the SLA, and the SLO is the target derived from SLIs.', 'Map "Indicator" to the metric you actually measure.'),
     ],
     lesson: 'SLI (Indicator) is the measured signal, like request success rate. SLO (Objective) is the internal target for that signal, e.g., 99.9%. SLA (Agreement) is the customer-facing contract with penalties. Teams usually set the SLO stricter than the SLA to leave headroom.',
+    mentorHint:
+      'Reliability terms form a chain: first define what you measure, then set the target, then decide whether any external promise or penalty exists. Keep measurement, objective, and contract separate.',
     source,
     generated: true,
   },
@@ -369,6 +415,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Disable alerting overnight to let people sleep', 'Blanket suppression risks missing a real user-impacting outage; the goal is fewer false pages, not no coverage.', 'Distinguish "stop the noise" from "stop watching for real failures."'),
     ],
     lesson: 'Good alerts fire on things that hurt users — elevated error rates or latency against the SLO — not on internal metrics like CPU that may be fine. Cause-based alerts create fatigue, and fatigue is how the one real page gets ignored.',
+    mentorHint:
+      'Pages should represent user pain or imminent user pain. Internal resource metrics are useful for diagnosis, but alerting on every possible cause creates noise and weakens response.',
     source,
     generated: true,
   },
@@ -384,6 +432,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Disabling logging to reduce noise', 'Removing logs deletes the most detailed per-event evidence; that makes diagnosis harder, not easier.', 'Think about which signal gives per-request detail, then keep it.'),
     ],
     lesson: 'Observability rests on three pillars: metrics (aggregate trends), logs (discrete events), and traces (one request’s journey across services). Metrics tell you something is wrong; traces and logs tell you where and why. Each answers a different question.',
+    mentorHint:
+      'Pick the observability signal that answers the question being asked. Aggregates show trends, logs show discrete facts, and request paths show how work moved across service boundaries.',
     source,
     generated: true,
   },
@@ -399,6 +449,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Write the postmortem first so the cause is documented', 'A postmortem documents what happened after; it does not restore service and should not precede mitigation.', 'Restore first, explain second; ask what stops the user-facing bleeding now.'),
     ],
     lesson: 'When timing strongly implicates a release, rollback is often the fastest mitigation and returns the system to a known-good state. Restore service first, then investigate root cause. Forward fixes are tempting but risk compounding the incident.',
+    mentorHint:
+      'Incident response starts by reducing customer impact. Root-cause analysis matters, but only after the system is no longer actively harming users.',
     source,
     generated: true,
   },
@@ -414,6 +466,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Medium severity, because checkout has a retry button', 'A retry button on a fully-down checkout does not restore the path; the impact is still total for users trying to buy.', 'Judge severity by whether users can actually complete the action, not by UI affordances.'),
     ],
     lesson: 'Severity levels classify incidents by user and business impact, and they drive who responds, how fast, and how often you communicate. Total loss of a revenue-critical path at peak is top severity. Right-sizing severity is what gets the right response moving.',
+    mentorHint:
+      'Severity is a coordination tool based on impact, urgency, and business criticality. The label determines who is paged, how communication runs, and how quickly decisions must happen.',
     source,
     generated: true,
   },
@@ -429,6 +483,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Add more suggestions so the list looks thorough', 'More vague items make the list longer, not more actionable; thoroughness is not the same as follow-through.', 'Prefer a few owned, dated, specific actions over many fuzzy ones.'),
     ],
     lesson: 'Blameless does not mean vague. A postmortem earns its keep through action items that are specific, owned by a named person, and dated. "Be more careful" changes nothing; "add a contract test for the payment webhook by Friday, owned by Priya" does.',
+    mentorHint:
+      'A postmortem action item should change the system, not merely ask people to try harder. Look for a concrete owner, deadline, and observable completion condition.',
     source,
     generated: true,
   },
@@ -446,6 +502,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('A latency problem in the billing path', 'Nothing here concerns request timing; the risk is that one person is the only one who understands the system.', 'Separate how fast the pipeline runs from who can maintain it.'),
     ],
     lesson: 'Bus factor is how many people would need to be hit by a bus before a system becomes unmaintainable. A bus factor of one is a serious operational risk. You raise it by documenting, pairing, runbooks, and deliberately rotating who touches critical systems.',
+    mentorHint:
+      'Knowledge concentration is an availability risk for teams. Documentation, pairing, rotation, and shared ownership make the system maintainable when any single person is unavailable.',
     source,
     generated: true,
   },
@@ -461,6 +519,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('"Trust us, engineers know this needs doing."', 'An appeal to authority gives the leader nothing to weigh against other priorities competing for the same quarter.', 'Give the decision-maker a comparable cost/benefit, not a request to defer to you.'),
     ],
     lesson: 'Technical debt wins priority when it is framed as business consequence: outages, slowed delivery, security exposure, or cost. "Ugly" and "old" are not cases. Quantify the carrying cost and the upside of paying it down in the leader’s terms.',
+    mentorHint:
+      'Technical debt competes better when framed in product outcomes. Translate cleanup into reduced outages, faster delivery, lower support load, or customer-visible reliability.',
     source,
     generated: true,
   },
@@ -476,6 +536,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Keep debating, since thorough discussion is always good', 'Past a point, debate becomes the most expensive option: the project burns a week with no direction and the cost compounds.', 'Recognize when more discussion stops adding information and starts costing delivery.'),
     ],
     lesson: 'Deadlocks break when the team makes the decision process explicit: agree on what criteria matter, compare options against them, and give one person the authority to decide. Then record the decision so it stays decided. "Disagree and commit" beats endless threads.',
+    mentorHint:
+      'Design deadlocks need decision mechanics, not louder arguments. Make criteria explicit, weigh tradeoffs against those criteria, assign decision ownership, and record the rationale.',
     source,
     generated: true,
   },
@@ -491,6 +553,8 @@ export const softwareEngineeringRoadmapTopUpQuestions: Question[] = makeQuestion
       miss('Measure success by how many tickets are started each sprint', 'Optimizing for starts rewards the exact behavior causing the problem; the goal is finished, shipped work.', 'Distinguish the input (tickets opened) from the output (value delivered).'),
     ],
     lesson: 'High work-in-progress fragments attention and stalls throughput: everything is started, nothing finishes. Limiting WIP forces the team to complete and ship before opening new fronts, which exposes priorities and increases real delivery.',
+    mentorHint:
+      'Too much work in progress creates context switching and hides blocked items. Limiting active work improves flow by forcing the team to finish valuable items before starting more.',
     source,
     generated: true,
   },

@@ -11,6 +11,7 @@ export const usGovAndCivicsHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     chapter: 'Constitutional Foundations and Democratic Ideas',
     title: 'Madison on factions',
     prompt: 'In Federalist No. 10, what is James Madison’s main argument for why a large republic is better at controlling the dangers of faction?',
+    mentorHint: 'Madison thinks factions are unavoidable in a free society, so the design problem is controlling their effects. In Federalist No. 10, ask how size, representation, and diversity of interests make majority tyranny harder.',
     correct: 'A large republic contains so many competing interests that no single faction can easily form a tyrannical majority',
     wrong: [
       miss('A large republic can simply outlaw factions and the groups that cause them', 'Madison rejects removing the causes of faction, saying liberty is to faction what air is to fire — you cannot abolish factions without destroying liberty.', 'Madison wants to control the effects of factions, not ban them.'),
@@ -27,6 +28,7 @@ export const usGovAndCivicsHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     chapter: 'Federalism and "Who Can Fix This?"',
     title: 'When laws conflict',
     prompt: 'A valid federal law and a state law directly conflict on the same issue. Under the Supremacy Clause, which one generally prevails?',
+    mentorHint: 'Article VI makes valid federal law supreme, but the word valid matters. First ask whether the federal government was acting within constitutional authority, then resolve the conflict with state law.',
     correct: 'The federal law prevails, as long as the federal government acted within its constitutional powers',
     wrong: [
       miss('The state law always prevails because states are closer to the people', 'The Supremacy Clause makes constitutional federal law the supreme law of the land; closeness to the people does not override it.', 'Read Article VI on which law is supreme.'),
@@ -42,6 +44,7 @@ export const usGovAndCivicsHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     chapter: 'Federalism and "Who Can Fix This?"',
     title: 'Powers reserved to states',
     prompt: 'The Tenth Amendment is the constitutional basis for which idea?',
+    mentorHint: 'The Tenth Amendment is about powers left over after the Constitution grants some powers to the national government and denies some to states. Think reserved powers, not shared powers or judicial review.',
     correct: 'Powers not given to the federal government, nor denied to the states, are reserved to the states or the people',
     wrong: [
       miss('Powers shared by both the federal and state governments, like taxation', 'Shared authority describes concurrent powers; the Tenth Amendment specifically reserves leftover powers to the states or the people.', 'The Tenth Amendment is about what is left over, not what is shared.'),
@@ -58,6 +61,7 @@ export const usGovAndCivicsHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     chapter: 'Congress and Lawmaking',
     title: 'Breaking a filibuster',
     prompt: 'How many votes are normally required in the U.S. Senate to invoke cloture and end a filibuster on most legislation?',
+    mentorHint: 'Cloture is the Senate procedure for ending extended debate. Do not confuse the vote needed to pass ordinary legislation with the higher vote usually needed to force the chamber to stop debating it.',
     correct: '60 votes (three-fifths of the Senate)',
     wrong: [
       miss('51 votes (a simple majority)', 'A simple majority can pass a bill once debate ends, but it is not enough to overcome a filibuster and force a vote.', 'Cloture needs a supermajority, not just a majority.'),
@@ -73,6 +77,7 @@ export const usGovAndCivicsHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     chapter: 'Congress and Lawmaking',
     title: 'Authorize vs. fund',
     prompt: 'Congress passes a law creating a new national tutoring program but never provides the dollars to run it. What is the most accurate description of what happened?',
+    mentorHint: 'Congress often separates permission from payment. An authorization can create or define a program, while an appropriation is the step that actually supplies money for it to operate.',
     correct: 'The program was authorized but not appropriated, so it may legally exist yet have no funding to operate',
     wrong: [
       miss('The program is fully operational because passing a law automatically provides its budget', 'Passing an authorizing law does not move money; a separate appropriations bill is normally required to fund it.', 'Authorizing and funding are two different steps.'),
@@ -89,6 +94,7 @@ export const usGovAndCivicsHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     chapter: 'Presidency, Bureaucracy, and Executive Power',
     title: 'Limits of executive orders',
     prompt: 'A president issues an executive order. Which statement best describes a key limit on executive orders?',
+    mentorHint: 'Executive orders are fast because the president can issue them without Congress, but that speed also makes them legally fragile. Ask who can undo them and what happens if they exceed statutory or constitutional authority.',
     correct: 'A later president can rescind it, and courts can strike it down if it exceeds the president’s legal authority',
     wrong: [
       miss('Once signed, an executive order has the same permanence as a constitutional amendment', 'Executive orders are far easier to undo than amendments; the next president can simply reverse them.', 'Amendments need ratification; orders need only a signature to create or cancel.'),
@@ -105,6 +111,7 @@ export const usGovAndCivicsHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     chapter: 'Courts, Civil Liberties, and Civil Rights',
     title: 'Marbury’s legacy',
     prompt: 'The 1803 case Marbury v. Madison is most important for establishing which principle?',
+    mentorHint: 'Marbury is less important for the appointment dispute than for the Court’s claimed role in constitutional interpretation. Look for the power that lets courts refuse to enforce laws that conflict with the Constitution.',
     correct: 'Judicial review — the power of courts to declare a law unconstitutional and void',
     wrong: [
       miss('Selective incorporation of the Bill of Rights against the states', 'Incorporation came much later through the Fourteenth Amendment; Marbury established judicial review.', 'Marbury is about court power, not applying rights to states.'),
@@ -120,6 +127,7 @@ export const usGovAndCivicsHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     chapter: 'Courts, Civil Liberties, and Civil Rights',
     title: 'Liberties vs. rights',
     prompt: 'Which pairing correctly distinguishes a civil liberty from a civil right?',
+    mentorHint: 'Civil liberties usually protect freedoms from government interference, while civil rights protect equal treatment and guard against discrimination. Classify each example by the kind of protection it gives.',
     correct: 'Free speech is a civil liberty (protection from government); equal treatment regardless of race is a civil right (protection from discrimination)',
     wrong: [
       miss('Both free speech and equal treatment are civil rights with no meaningful difference', 'They are usually distinguished: liberties protect freedoms from government, while rights protect against discrimination.', 'One protects a freedom; the other protects equal treatment.'),
@@ -135,6 +143,7 @@ export const usGovAndCivicsHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     chapter: 'Courts, Civil Liberties, and Civil Rights',
     title: 'Applying rights to states',
     prompt: 'Through which constitutional mechanism does the Supreme Court apply most protections in the Bill of Rights to state governments?',
+    mentorHint: 'Originally, most Bill of Rights protections constrained only the federal government. The key bridge to the states is a Reconstruction Amendment, applied right by right through Supreme Court cases.',
     correct: 'Selective incorporation using the Due Process Clause of the Fourteenth Amendment',
     wrong: [
       miss('The Supremacy Clause of Article VI', 'The Supremacy Clause settles federal-state conflicts but is not the tool for applying the Bill of Rights to states.', 'Incorporation works through a specific amendment, not Article VI.'),
@@ -151,6 +160,7 @@ export const usGovAndCivicsHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     chapter: 'Political Ideologies, Public Opinion, and Media',
     title: 'Reading the margin of error',
     prompt: 'A poll reports Candidate A at 48% and Candidate B at 45%, with a margin of error of plus or minus 4 points. What is the most accurate interpretation?',
+    mentorHint: 'A margin of error turns each poll number into a range, not a precise point. Compare the size of the candidates’ gap with the uncertainty around each estimate before declaring a lead meaningful.',
     correct: 'The race is effectively a statistical tie, because the candidates’ ranges overlap within the margin of error',
     wrong: [
       miss('Candidate A is certain to win because 48% is higher than 45%', 'A 3-point gap is smaller than the 4-point margin of error, so the lead is not statistically meaningful.', 'Compare the gap to the margin of error before claiming a winner.'),
@@ -167,6 +177,7 @@ export const usGovAndCivicsHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     chapter: 'Elections, Parties, Interest Groups, and Money',
     title: 'Winning the presidency',
     prompt: 'How many of the 538 electoral votes must a presidential candidate win to be elected outright?',
+    mentorHint: 'The Electoral College is won by a majority of electors, not by exactly half and not directly by the national popular vote. With an even total, the winning threshold is one more than half.',
     correct: '270 — a majority of the 538 electoral votes',
     wrong: [
       miss('269 — exactly half of the electoral votes', '269 is only half; a 269–269 split is a tie, so a candidate needs one more, which is 270.', 'A tie does not win; you need a majority.'),
@@ -183,6 +194,7 @@ export const usGovAndCivicsHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     chapter: 'Public Policy and Civic Action Lab',
     title: 'Aiming civic action',
     prompt: 'A student wants the speed limit lowered on the road outside their public high school. Which first step is most likely to be effective?',
+    mentorHint: 'Effective civic action starts with authority mapping. Before making noise, identify which level of government controls the decision, what evidence would matter, and when the decision window is open.',
     correct: 'Identify which body controls that road — often the city council or county — and bring evidence to the right decision-maker before the relevant vote',
     wrong: [
       miss('Email the President of the United States, since the president runs the country', 'Local road speed limits are set by city or county authorities, not the president.', 'Match the issue to the level of government that controls it.'),

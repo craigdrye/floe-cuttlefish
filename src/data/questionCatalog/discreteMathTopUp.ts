@@ -12,6 +12,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Negating a Nested Quantifier',
     prompt:
       'What is the correct negation of the statement "for every integer x, there exists an integer y such that x + y = 0"?',
+    mentorHint:
+      'Move the negation inward one quantifier at a time. Each universal quantifier changes to existential, each existential changes to universal, and only after that do you negate the equation itself.',
     correct: 'There exists an integer x such that for every integer y, x + y is not 0',
     wrong: [
       miss(
@@ -41,6 +43,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Conditional and Contrapositive',
     prompt:
       'Which statement is logically equivalent to "If a number is divisible by 6, then it is divisible by 3"?',
+    mentorHint:
+      'For a conditional, the logically equivalent form is obtained by both swapping the two parts and negating them. Be careful: swapping alone gives the converse, and negating alone gives the inverse.',
     correct: 'If a number is not divisible by 3, then it is not divisible by 6',
     wrong: [
       miss(
@@ -70,6 +74,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Vacuously True Implications',
     prompt:
       'Consider "For every x in the empty set, x is greater than 100." What is the truth value of this statement?',
+    mentorHint:
+      'A universal statement is false only if you can find an element in the domain that violates it. When the domain is empty, ask whether there is any possible counterexample at all.',
     correct: 'True, because there is no counterexample (it is vacuously true)',
     wrong: [
       miss(
@@ -100,6 +106,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Choosing Proof by Contradiction',
     prompt:
       'To prove "the square root of 2 is irrational," which proof strategy is standard and why?',
+    mentorHint:
+      'Irrationality says that no fraction with integer numerator and denominator can equal the number. A natural way to prove a "no such object exists" claim is to temporarily assume such an object exists, then force an impossible consequence.',
     correct:
       'Proof by contradiction: assume sqrt(2) = a/b in lowest terms and derive that a and b are both even',
     wrong: [
@@ -130,6 +138,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'What a Counterexample Proves',
     prompt:
       'A student claims "every odd number is prime." You point to 9. What exactly has this established?',
+    mentorHint:
+      'A statement that begins "every" is a universal claim, so one legitimate exception is enough to defeat it. Focus on what 9 satisfies and what part of the claimed property it fails.',
     correct: 'The universal claim is false; one counterexample disproves a "for all" statement',
     wrong: [
       miss(
@@ -159,6 +169,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Direct Proof of a Parity Claim',
     prompt:
       'In a direct proof that "the product of any two odd integers is odd," how should you represent two arbitrary odd integers?',
+    mentorHint:
+      'Start from the definition of odd, but keep the two integers genuinely independent. If the proof must work for any pair of odd integers, your notation should not accidentally force the two numbers to be the same.',
     correct: 'As 2m + 1 and 2n + 1 for some integers m and n',
     wrong: [
       miss(
@@ -189,6 +201,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Combination Versus Permutation',
     prompt:
       'A pizza shop offers 8 toppings. How many ways can you choose a 3-topping pizza, where order does not matter and toppings are distinct?',
+    mentorHint:
+      'First decide whether rearranging the same three toppings creates a new outcome. Since the toppings are distinct but their order on the pizza is irrelevant, count selections and avoid counting the same set in multiple orders.',
     correct: 'C(8,3) = 56',
     wrong: [
       miss(
@@ -218,6 +232,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Pigeonhole Principle',
     prompt:
       'In a group of 13 people, why must at least two of them share the same birth month?',
+    mentorHint:
+      'Model the people as items being assigned to month-categories. If there are more items than categories, at least one category must receive more than one item, no probability assumptions needed.',
     correct: 'There are only 12 months, so by the pigeonhole principle 13 people cannot all differ',
     wrong: [
       miss(
@@ -247,6 +263,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Inclusion-Exclusion for Two Sets',
     prompt:
       'In a class of 30 students, 18 take French and 15 take Spanish, and 8 take both. How many take at least one of the two languages?',
+    mentorHint:
+      'Adding the French total and the Spanish total counts students in both groups twice. Inclusion-exclusion fixes that by correcting exactly the duplicated overlap.',
     correct: '25',
     wrong: [
       miss(
@@ -277,6 +295,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Purpose of the Inductive Step',
     prompt:
       'In a proof by mathematical induction, what exactly does the inductive step establish?',
+    mentorHint:
+      'Think of induction as building a chain of implications after one starting case is secured. The inductive step is not the starting case itself; it is the rule that transfers truth from an arbitrary case to the next one.',
     correct: 'That if the statement holds for n = k, then it also holds for n = k + 1',
     wrong: [
       miss(
@@ -306,6 +326,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Solving a Divide-and-Conquer Recurrence',
     prompt:
       'Merge sort satisfies T(n) = 2T(n/2) + cn. What is its asymptotic running time?',
+    mentorHint:
+      'Picture the recursion tree: each split creates twice as many subproblems of half the size. Estimate the total work on one level, then multiply by how many times the input can be halved before reaching size 1.',
     correct: 'Theta(n log n)',
     wrong: [
       miss(
@@ -335,6 +357,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Why the Base Case Matters',
     prompt:
       'A "proof" by induction verifies the inductive step k implies k+1 perfectly but skips the base case. What is wrong?',
+    mentorHint:
+      'An inductive step is only a conditional promise: if one case is true, then the next follows. Without a verified first true case, the chain has no place to begin.',
     correct:
       'Without a true base case, the chain has nothing to start from, so the claim need not hold for any n',
     wrong: [
@@ -366,6 +390,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Euclidean Algorithm for gcd',
     prompt:
       'Using the Euclidean algorithm, what is gcd(252, 105)?',
+    mentorHint:
+      'Use repeated division with remainder rather than listing factors. Replace the larger pair by the smaller number and the remainder, and keep going until a remainder becomes zero.',
     correct: '21',
     wrong: [
       miss(
@@ -395,6 +421,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'When a Modular Inverse Exists',
     prompt:
       'For which moduli n does the integer 6 have a multiplicative inverse modulo n?',
+    mentorHint:
+      'A modular inverse exists exactly when multiplication by the number does not collapse distinct residue classes together. In number-theory terms, check whether the number and the modulus share any common factor greater than 1.',
     correct: 'Exactly when gcd(6, n) = 1, i.e. when n shares no factor of 2 or 3 with 6',
     wrong: [
       miss(
@@ -424,6 +452,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Fermat’s Little Theorem',
     prompt:
       'Using Fermat’s Little Theorem, what is 3^16 mod 17?',
+    mentorHint:
+      'Identify the prime modulus and compare the exponent with one less than that prime. Fermat’s Little Theorem applies when the base is not divisible by the prime modulus.',
     correct: '1',
     wrong: [
       miss(
@@ -454,6 +484,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Handshaking Lemma',
     prompt:
       'In any undirected graph, why is the number of vertices with odd degree always even?',
+    mentorHint:
+      'Count edge-ends instead of vertices one by one: every edge contributes two to the total degree sum. Once you know that total is even, think about what parity requires from the number of odd-degree contributions.',
     correct: 'Because the sum of all degrees equals twice the number of edges, which is even',
     wrong: [
       miss(
@@ -483,6 +515,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Existence of an Euler Circuit',
     prompt:
       'A connected undirected graph has an Euler circuit (a closed walk using every edge exactly once) if and only if which condition holds?',
+    mentorHint:
+      'An Euler circuit uses edges, not just vertices, and it returns to where it started. At every vertex along such a closed walk, each arrival must be paired with a departure.',
     correct: 'Every vertex has even degree',
     wrong: [
       miss(
@@ -512,6 +546,8 @@ export const discreteMathTopUpQuestions: Question[] = makeQuestionBank('Universi
     title: 'Loop Invariant Versus Postcondition',
     prompt:
       'When proving a loop correct, what is the defining property of a loop invariant?',
+    mentorHint:
+      'An invariant is the loop version of an induction hypothesis: it must be true before the first iteration and survive each pass through the body. The postcondition is what you get at the end after combining that invariant with loop termination.',
     correct: 'It is true before the loop starts and remains true after every iteration of the loop body',
     wrong: [
       miss(

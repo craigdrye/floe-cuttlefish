@@ -32,6 +32,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'Advisors inform the decision; the decision still belongs to the accountable governing body.',
       ),
     ],
+    mentorHint:
+      'Credentialing is a governance function: the medical staff evaluates competence through peer review, but the hospital board carries final accountability for who may practice in the facility. Separate advisory roles from the body that legally owns quality of care.',
     lesson:
       'In hospital governance, the governing board carries ultimate legal responsibility for the quality of care, including approving medical staff appointments and clinical privileges. It acts on recommendations from the organized medical staff (peer review and credentials committees). The CEO runs operations and legal advises, but neither owns the credentialing decision.',
     source,
@@ -61,6 +63,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'Processing a claim downstream is not the same as making the upstream clinical-status call.',
       ),
     ],
+    mentorHint:
+      'Patient status work sits where clinical facts meet payer rules. Look for the role that can translate medical necessity, observation criteria, and utilization review into a defensible status decision.',
     lesson:
       'The physician advisor is a clinician who specializes in the intersection of medical necessity, patient status, and payment rules. They review inpatient-versus-observation decisions, support utilization review, and help defend status determinations against denials. Finance, nursing, and billing each touch the problem but none owns this bridge role.',
     source,
@@ -93,6 +97,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'Both metrics measure completed stays; the contrast is geometric versus arithmetic mean.',
       ),
     ],
+    mentorHint:
+      'A simple average is pulled upward by a small number of very long stays, which can make a unit or DRG look less efficient than its typical case really is. The geometric mean is useful when a benchmark should reflect central tendency while reducing the distortion from extreme outliers.',
     lesson:
       'ALOS is the arithmetic mean of stays and is easily skewed by a few very long admissions. GMLOS, the geometric mean, is far less sensitive to those outliers, which is why CMS uses it in DRG-based comparisons and why hospitals track observed-over-expected LOS against it. A ratio at or below 1.0 suggests stays are in line with case complexity.',
     source,
@@ -122,6 +128,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'The constraint is nurses for the beds, not a metric the hospital is trying to suppress.',
       ),
     ],
+    mentorHint:
+      'Operational capacity is not the same as physical space. A bed becomes usable capacity only when the staff, equipment, and monitoring resources needed for safe care are available at the same time.',
     lesson:
       'Capacity is staffed capacity. A vacant, clean, physically available bed is not usable unless a nurse is assigned to cover it within safe ratios. Treating physical beds as real capacity is a classic flow error that produces unsafe assignments, boarding, and downstream PACU and ED gridlock.',
     source,
@@ -151,6 +159,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'Medicare does cover SNF after a qualifying inpatient stay; the trap is that observation does not qualify.',
       ),
     ],
+    mentorHint:
+      'Medicare patient status affects more than the current hospital bill; it can determine whether the next site of care qualifies for coverage. Focus on whether the hospital days legally count as inpatient days for the downstream skilled-nursing benefit.',
     lesson:
       'Observation is an outpatient status billed under Part B, even when the patient occupies a bed for days. Because Medicare\'s SNF benefit requires a three-day inpatient (Part A) qualifying stay, observation days do not count. This is why patient-status decisions, governed by the Two-Midnight Rule, carry real financial consequences for patients and families.',
     source,
@@ -183,6 +193,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'Higher CMI means heavier cases and higher justified payment, not inflated charges.',
       ),
     ],
+    mentorHint:
+      'Case mix index is built from DRG relative weights, so it reflects how clinically complex and resource-intensive a hospital\'s discharges are on average. Do not read it as speed, satisfaction, or pricing; it is a severity and reimbursement-weight signal.',
     lesson:
       'Case mix index is the average of the MS-DRG relative weights for a hospital\'s discharges. A baseline of 1.0 is the national average; higher values indicate more complex, resource-intensive patients and correspondingly higher Medicare/Medicaid reimbursement. Accurate documentation and coding directly drive CMI, which is why clinical documentation improvement programs matter financially.',
     source,
@@ -212,6 +224,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'Payer mix is about who pays, not how many days of cash you hold.',
       ),
     ],
+    mentorHint:
+      'Liquidity metrics answer runway questions: how long the organization can pay operating expenses from reserves if collections stop. Profitability measures are important, but they do not tell leaders how many days of cash cushion remain.',
     lesson:
       'Days cash on hand divides available cash and short-term investments by average daily operating expenses (typically excluding depreciation). It estimates how many days the organization could operate with no new revenue, making it the key liquidity and resilience metric. Operating margin, by contrast, measures whether core operations are profitable, not survivability.',
     source,
@@ -241,6 +255,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'The number is right but the definition is wrong: HPPD excludes paid-but-not-worked time.',
       ),
     ],
+    mentorHint:
+      'HPPD is a productivity ratio: direct care hours divided by patient days over the same period. Keep paid leave, education time, and other non-worked hours out of the numerator because the metric is meant to describe bedside labor delivered.',
     lesson:
       'HPPD equals total worked direct-care nursing hours divided by patient days (480 / 40 = 12). It is a core staffing-productivity metric; higher-acuity units such as ICUs carry higher HPPD targets than med-surg. Critically, it counts only hours actually worked at the bedside, not paid vacation, sick, or education time.',
     source,
@@ -273,6 +289,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'The standard window is shorter than a quarter; pin down the exact figure.',
       ),
     ],
+    mentorHint:
+      'A sentinel-event response has two time horizons: immediate containment and notification, then a structured root-cause analysis with a corrective action plan. The RCA deadline must allow enough time to identify system causes, not just name the nearest human error.',
     lesson:
       'A sentinel event is a patient safety event reaching a patient that causes death, permanent harm, or severe temporary harm. The Joint Commission expects the root cause analysis process to begin within about 72 hours and a thorough RCA plus action plan to be completed within 45 calendar days. Wrong-site surgery is a classic sentinel-event example.',
     source,
@@ -302,6 +320,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'The SIR is observed divided by predicted, not the raw observed count.',
       ),
     ],
+    mentorHint:
+      'The SIR is a risk-adjusted observed-to-predicted ratio, so 1.0 is the expected benchmark. Values above 1.0 mean more infections than predicted after accounting for patient mix and device exposure.',
     lesson:
       'The Standardized Infection Ratio divides observed infections by the number predicted from NHSN risk-adjustment models. An SIR of 1.0 means as expected; above 1.0 is worse than expected (1.35 = 35% more than predicted); below 1.0 is better. If the confidence interval includes 1.0, the difference is not statistically significant.',
     source,
@@ -331,6 +351,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'Limiting reports re-creates the silence the program was built to break.',
       ),
     ],
+    mentorHint:
+      'When reporting becomes psychologically safer, the measured count of events often rises before actual harm falls. Treat early volume as better visibility into system risk, then use the details to improve processes.',
     lesson:
       'In a just culture, staff are not punished for honest errors or near-misses, which encourages disclosure. A first-year surge in reports typically means events that were always happening are finally being surfaced, giving leaders the data to fix systems. A falling report count, especially when staff say "nothing changes," is the warning sign, not a rising one.',
     source,
@@ -363,6 +385,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'EMTALA attaches at arrival to the ED, not at admission.',
       ),
     ],
+    mentorHint:
+      'EMTALA starts with presentation to a dedicated emergency department and a request for evaluation or treatment. Payment screening can happen only in a way that does not delay the medical screening exam or stabilization.',
     lesson:
       'EMTALA requires any Medicare-participating hospital with an ED to provide a medical screening exam to anyone who comes seeking evaluation, and to stabilize an emergency medical condition, regardless of ability to pay. Examination and treatment cannot be delayed to ask about payment or insurance. If the hospital cannot stabilize, it must arrange an appropriate transfer.',
     source,
@@ -392,6 +416,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'The duty attaches at the transfer request, not on arrival.',
       ),
     ],
+    mentorHint:
+      'EMTALA also creates duties for receiving hospitals with specialized capabilities. If a sending hospital lacks the needed service, the receiving hospital must evaluate capability and capacity rather than payer status or patient origin.',
     lesson:
       'EMTALA includes a "reverse" or receiving-hospital duty: a facility with the specialized capabilities and the capacity to treat a patient may not refuse an appropriate transfer from a hospital that lacks those capabilities. This obligation is independent of the patient\'s insurance or where they first presented.',
     source,
@@ -421,6 +447,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'Year-end logging is for small breaches; large breaches trigger the 60-day clock.',
       ),
     ],
+    mentorHint:
+      'Breach-notification timing starts when the breach is discovered, not when the investigation is convenient to finish. Large breaches trigger direct individual and HHS notification on a short outer timeline, even though the rule also says to avoid unreasonable delay.',
     lesson:
       'Under the HIPAA Breach Notification Rule, covered entities must notify affected individuals without unreasonable delay and no later than 60 days after discovering a breach of unsecured PHI. For breaches affecting 500 or more individuals, HHS must also be notified within that same 60-day window (small breaches may be logged and reported annually instead).',
     source,
@@ -450,6 +478,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'The 500 count must be reached within one state, not summed across all states.',
       ),
     ],
+    mentorHint:
+      'HIPAA media notice is not triggered by every large national total; it looks at how many affected people live in one state or jurisdiction. Think about the public notice purpose: alerting the community served by the media outlet.',
     lesson:
       'HIPAA requires notifying prominent media outlets serving a state or jurisdiction when a breach affects 500 or more residents of that single state or jurisdiction. The count is by place of residence and applies per state, so 800 individuals spread across two states (with neither reaching 500) does not trigger media notice. The deadline mirrors the 60-day individual-notice rule.',
     source,
@@ -482,6 +512,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'The HRRP ceiling is single digits and DRG-based, not a sweeping double-digit cut.',
       ),
     ],
+    mentorHint:
+      'HRRP is a readmissions program, so tie the penalty to excess unplanned returns after discharge for selected conditions. Keep its ceiling distinct from other CMS value programs that use different percentages and measure sets.',
     lesson:
       'HRRP penalizes hospitals with higher-than-expected 30-day unplanned readmissions across six tracked conditions (AMI, heart failure, pneumonia, COPD, CABG, and elective hip/knee replacement). The penalty is calculated from the Excess Readmission Ratio with peer grouping by dual-eligible share, and caps at a 3% reduction in base operating DRG payments.',
     source,
@@ -511,6 +543,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'Shared savings is an ACO model, not the infection-penalty program.',
       ),
     ],
+    mentorHint:
+      'Match CMS programs to their measure families: readmissions, value purchasing, and hospital-acquired conditions are separate levers. A flat penalty tied to infections and patient-safety composites points to the safety-program bucket.',
     lesson:
       'The HAC Reduction Program penalizes hospitals in the worst-performing quartile (above the 75th percentile of Total HAC Score) with a flat 1% Medicare payment reduction. Its measures are the PSI-90 patient-safety composite plus chart-abstracted healthcare-associated infections such as CLABSI, CAUTI, SSI, MRSA, and C. difficile, scored as an equally weighted average.',
     source,
@@ -543,6 +577,8 @@ export const hospitalAdministrationRoadmapTopUpQuestions: Question[] = makeQuest
         'Map experience scores to HVBP, not to the readmissions program.',
       ),
     ],
+    mentorHint:
+      'Patient experience is not just public relations; CMS converts survey domains into payment performance through value-based purchasing. When judging the business impact, ask whether the measure feeds a reimbursement formula.',
     lesson:
       'HCAHPS measures the patient\'s experience (nurse and doctor communication, responsiveness, cleanliness and quietness, discharge information, care transition, and overall rating) using top-box scoring. About one quarter of a hospital\'s Hospital Value-Based Purchasing score comes from these dimensions, so experience scores carry real reimbursement weight, not just reputational value.',
     source,

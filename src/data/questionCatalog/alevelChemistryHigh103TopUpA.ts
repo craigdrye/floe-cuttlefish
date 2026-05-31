@@ -11,6 +11,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Atomic structure',
     title: 'Mass spectrometer ionisation',
     prompt: 'In a time-of-flight (TOF) mass spectrometer using electron impact ionisation, what happens to a sample atom during the ionisation stage?',
+    mentorHint: 'Think about which charge an electric field can accelerate here.',
     correct: 'A high-energy electron knocks an electron off the atom, forming a positive ion',
     wrong: [
       miss('The atom gains an electron to form a negative ion', 'TOF spectrometers accelerate and detect positive ions, not negative ones.', 'Think about which charge an electric field can accelerate here.'),
@@ -26,6 +27,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Atomic structure',
     title: 'Relative atomic mass from isotopes',
     prompt: 'Chlorine consists of 75% chlorine-35 and 25% chlorine-37. What is its relative atomic mass?',
+    mentorHint: 'Weight each isotope by its abundance, not equally.',
     correct: '35.5',
     wrong: [
       miss('36.0', 'This is the simple mean of 35 and 37, ignoring the 75:25 abundance.', 'Weight each isotope by its abundance, not equally.'),
@@ -41,6 +43,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Atomic structure',
     title: 'Electron configuration of a transition metal ion',
     prompt: 'What is the electron configuration of the Fe2+ ion (iron has atomic number 26)?',
+    mentorHint: 'Remove electrons from the 4s sub-shell first.',
     correct: '1s2 2s2 2p6 3s2 3p6 3d6',
     wrong: [
       miss('1s2 2s2 2p6 3s2 3p6 3d4 4s2', 'When forming ions, the 4s electrons are lost before 3d electrons.', 'Remove electrons from the 4s sub-shell first.'),
@@ -56,6 +59,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Atomic structure',
     title: 'Successive ionisation energy evidence',
     prompt: 'Successive ionisation energies of an element show a large jump between the 2nd and 3rd values. In which group does the element lie?',
+    mentorHint: 'Count how many electrons are easy to remove before the big jump.',
     correct: 'Group 2',
     wrong: [
       miss('Group 1', 'A Group 1 element shows a large jump after the 1st ionisation energy, not the 2nd.', 'Count how many electrons are easy to remove before the big jump.'),
@@ -71,6 +75,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Atomic structure',
     title: 'TOF flight time and mass',
     prompt: 'Two ions with the same charge enter the flight tube of a TOF spectrometer with the same kinetic energy. Which reaches the detector first?',
+    mentorHint: 'Compare speeds at equal kinetic energy.',
     correct: 'The ion with the smaller mass',
     wrong: [
       miss('The ion with the larger mass', 'For equal kinetic energy, heavier ions move more slowly and arrive later.', 'Compare speeds at equal kinetic energy.'),
@@ -87,6 +92,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Amount of substance',
     title: 'Moles from mass',
     prompt: 'How many moles are present in 8.0 g of methane, CH4 (Mr = 16.0)?',
+    mentorHint: 'Moles = mass / molar mass, in that order.',
     correct: '0.50 mol',
     wrong: [
       miss('2.0 mol', 'This divides Mr by mass instead of mass by Mr.', 'Moles = mass / molar mass, in that order.'),
@@ -102,6 +108,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Amount of substance',
     title: 'Ideal gas equation',
     prompt: 'Using pV = nRT, what is the volume of 2.0 mol of an ideal gas at 300 K and 100 kPa? (R = 8.31 J K-1 mol-1)',
+    mentorHint: 'Substitute the correct number of moles, n = 2.0.',
     correct: 'About 0.050 m3',
     wrong: [
       miss('About 0.025 m3', 'This used 1.0 mol instead of the stated 2.0 mol.', 'Substitute the correct number of moles, n = 2.0.'),
@@ -117,6 +124,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Amount of substance',
     title: 'Empirical formula',
     prompt: 'A compound contains 40.0% carbon, 6.7% hydrogen and 53.3% oxygen by mass. What is its empirical formula?',
+    mentorHint: 'Divide the ratio down to its simplest whole numbers.',
     correct: 'CH2O',
     wrong: [
       miss('C2H4O2', 'This is a molecular formula; the empirical formula is the simplest ratio.', 'Divide the ratio down to its simplest whole numbers.'),
@@ -132,6 +140,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Amount of substance',
     title: 'Concentration calculation',
     prompt: 'What is the concentration, in mol dm-3, of a solution containing 0.20 mol of solute in 250 cm3?',
+    mentorHint: 'Concentration = moles / volume in dm3.',
     correct: '0.80 mol dm-3',
     wrong: [
       miss('0.050 mol dm-3', 'This multiplied by 0.25 instead of dividing by it.', 'Concentration = moles / volume in dm3.'),
@@ -147,6 +156,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Amount of substance',
     title: 'Percentage yield',
     prompt: 'A reaction has a theoretical yield of 5.0 g but only 4.0 g of product is obtained. What is the percentage yield?',
+    mentorHint: 'Percentage yield divides actual by theoretical.',
     correct: '80%',
     wrong: [
       miss('125%', 'This divided theoretical by actual yield, inverting the ratio.', 'Percentage yield divides actual by theoretical.'),
@@ -162,6 +172,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Amount of substance',
     title: 'Atom economy',
     prompt: 'In an addition reaction the only product is the desired one. What is the atom economy of this reaction?',
+    mentorHint: 'Consider how many atoms end up in by-products.',
     correct: '100%',
     wrong: [
       miss('50%', 'Addition reactions combine all reactant atoms into one product, so none are wasted.', 'Consider how many atoms end up in by-products.'),
@@ -178,6 +189,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Bonding',
     title: 'Shape of an ammonia molecule',
     prompt: 'What is the shape and bond angle of an ammonia molecule, NH3?',
+    mentorHint: 'Count bonding pairs versus lone pairs around nitrogen.',
     correct: 'Trigonal pyramidal, about 107 degrees',
     wrong: [
       miss('Tetrahedral, about 109.5 degrees', 'The lone pair on nitrogen makes the shape pyramidal, not tetrahedral.', 'Count bonding pairs versus lone pairs around nitrogen.'),
@@ -193,6 +205,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Bonding',
     title: 'Strongest intermolecular force in water',
     prompt: 'Which is the strongest type of intermolecular force present between water molecules?',
+    mentorHint: 'Water has H bonded to a very electronegative O.',
     correct: 'Hydrogen bonding',
     wrong: [
       miss('Permanent dipole-dipole forces', 'These are present but weaker than the hydrogen bonds water can form.', 'Water has H bonded to a very electronegative O.'),
@@ -208,6 +221,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Bonding',
     title: 'Properties of giant covalent solids',
     prompt: 'Why does diamond have a very high melting point?',
+    mentorHint: 'Diamond has no separate molecules to pull apart.',
     correct: 'Many strong covalent bonds throughout the giant lattice must be broken',
     wrong: [
       miss('Strong intermolecular forces hold the molecules together', 'Diamond is a giant covalent structure, not made of discrete molecules.', 'Diamond has no separate molecules to pull apart.'),
@@ -223,6 +237,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Bonding',
     title: 'Electronegativity and bond polarity',
     prompt: 'In which bond is the chlorine atom the negative end (delta minus) of a polar bond?',
+    mentorHint: 'A polar bond needs two different electronegativities.',
     correct: 'H-Cl',
     wrong: [
       miss('Cl-Cl', 'A bond between identical atoms has no electronegativity difference and is non-polar.', 'A polar bond needs two different electronegativities.'),
@@ -238,6 +253,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Bonding',
     title: 'Metallic bonding and conductivity',
     prompt: 'Why do metals conduct electricity in the solid state?',
+    mentorHint: 'Identify which particles are mobile in a solid metal.',
     correct: 'Delocalised electrons are free to move and carry charge',
     wrong: [
       miss('Ions are free to move and carry charge', 'In solid metal the positive ions are fixed in the lattice; only electrons move.', 'Identify which particles are mobile in a solid metal.'),
@@ -254,6 +270,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Energetics',
     title: 'Hess\'s law cycle',
     prompt: 'Hess\'s law states that the enthalpy change of a reaction is:',
+    mentorHint: 'Distinguish the energy barrier from the net energy change.',
     correct: 'Independent of the route taken, depending only on initial and final states',
     wrong: [
       miss('Always equal to the activation energy of the reaction', 'Activation energy is the barrier height, not the overall enthalpy change.', 'Distinguish the energy barrier from the net energy change.'),
@@ -269,6 +286,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Energetics',
     title: 'Bond enthalpy calculation',
     prompt: 'A reaction breaks bonds requiring 800 kJ mol-1 and forms bonds releasing 1000 kJ mol-1. What is the overall enthalpy change?',
+    mentorHint: 'Subtract bonds formed from bonds broken, watching the sign.',
     correct: '-200 kJ mol-1 (exothermic)',
     wrong: [
       miss('+200 kJ mol-1 (endothermic)', 'This reversed the sign; more energy is released than absorbed, so it is exothermic.', 'Subtract bonds formed from bonds broken, watching the sign.'),
@@ -284,6 +302,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Energetics',
     title: 'Enthalpy of combustion by calorimetry',
     prompt: 'In a calorimetry experiment burning a fuel, which equation gives the heat energy transferred to the water?',
+    mentorHint: 'Recall the standard calorimetry formula.',
     correct: 'q = mcDeltaT',
     wrong: [
       miss('q = m / cDeltaT', 'The specific heat capacity and temperature change multiply the mass; they do not divide it.', 'Recall the standard calorimetry formula.'),
@@ -299,6 +318,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Energetics',
     title: 'Definition of standard enthalpy of formation',
     prompt: 'What is the standard enthalpy of formation of an element in its standard state?',
+    mentorHint: 'Consider forming the element from itself.',
     correct: 'Zero',
     wrong: [
       miss('Equal to its enthalpy of combustion', 'Formation of an element from itself involves no change; combustion is a different process.', 'Consider forming the element from itself.'),
@@ -315,6 +335,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Kinetics',
     title: 'Effect of a catalyst',
     prompt: 'How does a catalyst increase the rate of a reaction?',
+    mentorHint: 'A catalyst changes the pathway, not the temperature.',
     correct: 'It provides an alternative route with a lower activation energy',
     wrong: [
       miss('It increases the average kinetic energy of the particles', 'Only heating raises average kinetic energy; a catalyst does not.', 'A catalyst changes the pathway, not the temperature.'),
@@ -330,6 +351,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Kinetics',
     title: 'Maxwell-Boltzmann distribution',
     prompt: 'On a Maxwell-Boltzmann distribution, what does raising the temperature do to the curve?',
+    mentorHint: 'Remember the area under the curve is fixed.',
     correct: 'The peak moves to higher energy and flattens, with more molecules exceeding the activation energy',
     wrong: [
       miss('The peak moves to higher energy and becomes taller', 'The total area must stay constant, so a curve shifted right must become lower, not taller.', 'Remember the area under the curve is fixed.'),
@@ -345,6 +367,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Kinetics',
     title: 'Collision theory and concentration',
     prompt: 'Why does increasing the concentration of a reactant usually increase the reaction rate?',
+    mentorHint: 'Energy per collision depends on temperature, not concentration.',
     correct: 'There are more particles per unit volume, so collisions are more frequent',
     wrong: [
       miss('Each collision now carries more energy', 'Concentration changes collision frequency, not the energy per collision.', 'Energy per collision depends on temperature, not concentration.'),
@@ -360,6 +383,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Kinetics',
     title: 'Meaning of activation energy',
     prompt: 'What does the activation energy of a reaction represent?',
+    mentorHint: 'Distinguish the barrier from the overall energy change.',
     correct: 'The minimum energy colliding particles need to react',
     wrong: [
       miss('The total energy released by the reaction', 'That is the enthalpy change, not the activation energy barrier.', 'Distinguish the barrier from the overall energy change.'),
@@ -376,6 +400,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Equilibria',
     title: 'Le Chatelier and pressure',
     prompt: 'For N2(g) + 3H2(g) reversible 2NH3(g), what happens to the yield of ammonia when pressure is increased?',
+    mentorHint: 'Count the gas moles on each side.',
     correct: 'The yield increases, as equilibrium shifts toward the side with fewer gas moles',
     wrong: [
       miss('The yield decreases, as equilibrium shifts toward more gas moles', 'The system shifts to oppose the rise in pressure, moving to fewer moles, not more.', 'Count the gas moles on each side.'),
@@ -391,6 +416,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Equilibria',
     title: 'Temperature and an exothermic equilibrium',
     prompt: 'For an exothermic forward reaction at equilibrium, what is the effect of raising the temperature?',
+    mentorHint: 'Decide which direction absorbs the added heat.',
     correct: 'Equilibrium shifts back toward reactants, reducing the yield of products',
     wrong: [
       miss('Equilibrium shifts toward products, increasing yield', 'Heating favours the endothermic direction, which here is the reverse reaction.', 'Decide which direction absorbs the added heat.'),
@@ -406,6 +432,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Equilibria',
     title: 'Equilibrium constant expression',
     prompt: 'For the equilibrium 2SO2(g) + O2(g) reversible 2SO3(g), what is the correct expression for Kc?',
+    mentorHint: 'Products go on top of the Kc expression.',
     correct: 'Kc = [SO3]^2 / ([SO2]^2 [O2])',
     wrong: [
       miss('Kc = [SO2]^2 [O2] / [SO3]^2', 'This inverts the expression, putting reactants over products.', 'Products go on top of the Kc expression.'),
@@ -421,6 +448,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Equilibria',
     title: 'Dynamic equilibrium meaning',
     prompt: 'What is meant by a dynamic equilibrium in a closed system?',
+    mentorHint: 'Equilibrium is dynamic, not a halt.',
     correct: 'Forward and reverse reactions occur at equal rates, so concentrations stay constant',
     wrong: [
       miss('Both forward and reverse reactions have stopped', 'The reactions continue; only the net change is zero.', 'Equilibrium is dynamic, not a halt.'),
@@ -437,6 +465,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Oxidation and reduction',
     title: 'Oxidation state of manganese',
     prompt: 'What is the oxidation state of manganese in the permanganate ion, MnO4-?',
+    mentorHint: 'Sum the oxidation states to match the overall ion charge.',
     correct: '+7',
     wrong: [
       miss('+2', 'This ignores the four oxygens, each contributing -2.', 'Sum the oxidation states to match the overall ion charge.'),
@@ -452,6 +481,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Oxidation and reduction',
     title: 'Identifying oxidation',
     prompt: 'In terms of electrons, what is oxidation?',
+    mentorHint: 'Recall the mnemonic OIL RIG.',
     correct: 'Loss of electrons',
     wrong: [
       miss('Gain of electrons', 'Gaining electrons is reduction, not oxidation.', 'Recall the mnemonic OIL RIG.'),
@@ -467,6 +497,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Oxidation and reduction',
     title: 'Half-equation balancing',
     prompt: 'Which is the correct half-equation for the reduction of Fe3+ to Fe2+?',
+    mentorHint: 'A reduction gains electrons on the left.',
     correct: 'Fe3+ + e- -> Fe2+',
     wrong: [
       miss('Fe2+ -> Fe3+ + e-', 'This is the oxidation half-equation, written the wrong way for a reduction.', 'A reduction gains electrons on the left.'),
@@ -483,6 +514,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Periodicity',
     title: 'Trend in atomic radius across a period',
     prompt: 'Why does atomic radius decrease across Period 3 from sodium to chlorine?',
+    mentorHint: 'Electrons are added to the same outer shell across a period.',
     correct: 'Nuclear charge increases while electrons are added to the same shell, pulling electrons in',
     wrong: [
       miss('More shells of electrons are added, shielding the nucleus', 'Across a period the number of occupied shells stays the same.', 'Electrons are added to the same outer shell across a period.'),
@@ -498,6 +530,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Periodicity',
     title: 'Melting point trend in Period 3',
     prompt: 'Why does silicon have the highest melting point of the Period 3 elements?',
+    mentorHint: 'Recall silicon\'s structure type.',
     correct: 'It forms a giant covalent (macromolecular) structure with many strong covalent bonds',
     wrong: [
       miss('It has the strongest metallic bonding of the period', 'Silicon is not metallic; it is a giant covalent structure.', 'Recall silicon\'s structure type.'),
@@ -513,6 +546,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Periodicity',
     title: 'First ionisation energy dip',
     prompt: 'Why is the first ionisation energy of aluminium lower than that of magnesium?',
+    mentorHint: 'Compare proton numbers of the two elements.',
     correct: 'Aluminium\'s outer electron is in a 3p sub-shell, which is higher in energy and easier to remove',
     wrong: [
       miss('Aluminium has a smaller nuclear charge than magnesium', 'Aluminium has one more proton, so its nuclear charge is larger, not smaller.', 'Compare proton numbers of the two elements.'),
@@ -529,6 +563,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Group 2 elements',
     title: 'Reactivity trend down Group 2',
     prompt: 'How does the reactivity of Group 2 metals change going down the group, and why?',
+    mentorHint: 'Relate reactivity to how easily electrons are lost.',
     correct: 'Reactivity increases because outer electrons are more easily lost as ionisation energy falls',
     wrong: [
       miss('Reactivity decreases because the atoms get larger and heavier', 'Larger atoms lose electrons more easily, so reactivity actually increases.', 'Relate reactivity to how easily electrons are lost.'),
@@ -544,6 +579,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Group 2 elements',
     title: 'Solubility of Group 2 hydroxides',
     prompt: 'How does the solubility of Group 2 hydroxides change going down the group?',
+    mentorHint: 'Distinguish the hydroxide trend from the sulfate trend.',
     correct: 'Solubility increases down the group',
     wrong: [
       miss('Solubility decreases down the group', 'That is the trend for the sulfates, not the hydroxides.', 'Distinguish the hydroxide trend from the sulfate trend.'),
@@ -559,6 +595,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Group 2 elements',
     title: 'Group 2 reaction with water',
     prompt: 'What are the products when calcium reacts with water?',
+    mentorHint: 'Consider which product forms with cold water.',
     correct: 'Calcium hydroxide and hydrogen gas',
     wrong: [
       miss('Calcium oxide and hydrogen gas', 'Reaction with liquid water gives the hydroxide, not the oxide.', 'Consider which product forms with cold water.'),
@@ -575,6 +612,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Group 7 elements',
     title: 'Oxidising power trend in halogens',
     prompt: 'How does the oxidising power of the halogens change going down Group 7, and why?',
+    mentorHint: 'Relate oxidising power to how easily an electron is gained.',
     correct: 'It decreases because larger atoms gain an electron less readily',
     wrong: [
       miss('It increases because the atoms become larger', 'Larger atoms attract an incoming electron less strongly, so oxidising power falls.', 'Relate oxidising power to how easily an electron is gained.'),
@@ -590,6 +628,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Group 7 elements',
     title: 'Displacement of halogens',
     prompt: 'What is observed when chlorine water is added to a solution of potassium bromide?',
+    mentorHint: 'Match the displaced halogen to the halide present.',
     correct: 'The solution turns orange as bromine is displaced',
     wrong: [
       miss('The solution turns yellow as iodine is displaced', 'Bromide contains no iodine; bromine, which is orange, is displaced.', 'Match the displaced halogen to the halide present.'),
@@ -605,6 +644,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Group 7 elements',
     title: 'Test for halide ions',
     prompt: 'A solution gives a cream precipitate with acidified silver nitrate that is insoluble in dilute but soluble in concentrated ammonia. Which halide ion is present?',
+    mentorHint: 'Recall the colour of the chloride precipitate.',
     correct: 'Bromide',
     wrong: [
       miss('Chloride', 'Chloride gives a white precipitate that dissolves in dilute ammonia.', 'Recall the colour of the chloride precipitate.'),
@@ -620,6 +660,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Group 7 elements',
     title: 'Disproportionation of chlorine',
     prompt: 'When chlorine reacts with cold dilute sodium hydroxide, chlorine is both oxidised and reduced. What is this type of reaction called?',
+    mentorHint: 'Consider that one element changes oxidation state both up and down.',
     correct: 'Disproportionation',
     wrong: [
       miss('Neutralisation', 'Neutralisation forms a salt and water from an acid and base, not a redox change.', 'Consider that one element changes oxidation state both up and down.'),
@@ -636,6 +677,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Acid-base titrations',
     title: 'Moles from a titration',
     prompt: 'In a titration, 25.0 cm3 of 0.100 mol dm-3 NaOH reacts exactly with HCl. How many moles of NaOH were used?',
+    mentorHint: 'Convert the volume to dm3 first.',
     correct: '2.50 x 10^-3 mol',
     wrong: [
       miss('2.50 mol', 'This forgot to convert 25.0 cm3 to dm3 by dividing by 1000.', 'Convert the volume to dm3 first.'),
@@ -651,6 +693,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Acid-base titrations',
     title: 'Choosing an indicator',
     prompt: 'Why is phenolphthalein a suitable indicator for a titration of a strong base with a strong acid?',
+    mentorHint: 'Focus on where the colour change occurs.',
     correct: 'It changes colour sharply over a pH range within the steep part of the titration curve',
     wrong: [
       miss('It is the cheapest indicator available', 'Cost is irrelevant to whether an indicator marks the end point correctly.', 'Focus on where the colour change occurs.'),
@@ -666,6 +709,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Acid-base titrations',
     title: 'Concordant titration results',
     prompt: 'In titration practice, what does it mean for results to be concordant?',
+    mentorHint: 'Concordant means agreeing within a small tolerance.',
     correct: 'They agree within 0.10 cm3 of each other',
     wrong: [
       miss('They are all exactly equal to the mean value', 'Concordant results agree closely, but they need not be exactly identical.', 'Concordant means agreeing within a small tolerance.'),
@@ -682,6 +726,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Introduction to organic chemistry',
     title: 'Definition of a homologous series',
     prompt: 'Which statement best describes a homologous series?',
+    mentorHint: 'Members of the series have different numbers of carbons.',
     correct: 'A series of compounds with the same general formula, differing by CH2, with similar chemical properties',
     wrong: [
       miss('A set of compounds that are isomers of one another', 'Isomers share a molecular formula; a homologous series differs by CH2 each step.', 'Members of the series have different numbers of carbons.'),
@@ -697,6 +742,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Introduction to organic chemistry',
     title: 'Structural isomerism',
     prompt: 'Butane and methylpropane (2-methylpropane) have the molecular formula C4H10. What kind of isomers are they?',
+    mentorHint: 'Here the carbon skeleton itself differs.',
     correct: 'Chain isomers',
     wrong: [
       miss('Positional isomers', 'Positional isomers differ in the position of a functional group on the same skeleton.', 'Here the carbon skeleton itself differs.'),
@@ -712,6 +758,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Introduction to organic chemistry',
     title: 'Naming a branched alkane',
     prompt: 'What is the IUPAC name of CH3CH(CH3)CH2CH3?',
+    mentorHint: 'Number from the end nearest the branch.',
     correct: '2-methylbutane',
     wrong: [
       miss('3-methylbutane', 'The chain must be numbered to give the substituent the lowest possible number.', 'Number from the end nearest the branch.'),
@@ -728,6 +775,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Alkanes',
     title: 'Free-radical substitution mechanism',
     prompt: 'In the chlorination of methane by UV light, what type of reaction step is Cl2 -> 2Cl(dot)?',
+    mentorHint: 'This step starts the chain by making radicals.',
     correct: 'Initiation, by homolytic fission of the Cl-Cl bond',
     wrong: [
       miss('Propagation, forming the product chloromethane', 'Propagation forms products and regenerates radicals; this step only creates the first radicals.', 'This step starts the chain by making radicals.'),
@@ -743,6 +791,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Alkanes',
     title: 'Incomplete combustion product',
     prompt: 'Which toxic gas is produced by the incomplete combustion of a hydrocarbon fuel in a limited oxygen supply?',
+    mentorHint: 'Consider what forms when oxygen is limited.',
     correct: 'Carbon monoxide',
     wrong: [
       miss('Carbon dioxide', 'Carbon dioxide is the product of complete combustion, not incomplete combustion.', 'Consider what forms when oxygen is limited.'),
@@ -758,6 +807,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Alkanes',
     title: 'Cracking of alkanes',
     prompt: 'Why is the cracking of long-chain alkanes carried out in industry?',
+    mentorHint: 'Cracking splits molecules, it does not combine them.',
     correct: 'To convert less useful long-chain alkanes into more useful shorter alkanes and alkenes',
     wrong: [
       miss('To join short alkanes into longer chains for fuels', 'Cracking breaks long chains into shorter molecules; joining them is the reverse.', 'Cracking splits molecules, it does not combine them.'),
@@ -774,6 +824,7 @@ export const alevelChemistryHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Alkenes',
     title: 'Electrophilic addition to an alkene',
     prompt: 'What type of reaction occurs when bromine reacts with ethene to form 1,2-dibromoethane?',
+    mentorHint: 'The double bond opens to add atoms, not swap them.',
     correct: 'Electrophilic addition',
     wrong: [
       miss('Free-radical substitution', 'Substitution replaces an atom; alkenes undergo addition across the double bond.', 'The double bond opens to add atoms, not swap them.'),

@@ -11,6 +11,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Energy transfers: Photosynthesis',
     title: 'Site of the light-dependent reaction',
     prompt: 'In a chloroplast, where do the light-dependent reactions of photosynthesis take place?',
+    mentorHint: 'Light-dependent reactions need the photosystems embedded in membranes.',
     correct: 'On the thylakoid membranes',
     wrong: [
       miss('In the stroma', 'The stroma is the fluid where the light-independent (Calvin) reactions occur, not the light-dependent ones.', 'Light-dependent reactions need the photosystems embedded in membranes.'),
@@ -26,6 +27,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Energy transfers: Photosynthesis',
     title: 'Role of reduced NADP in the Calvin cycle',
     prompt: 'In the light-independent reactions, what is the main role of reduced NADP (NADPH)?',
+    mentorHint: 'Reduced NADP supplies hydrogen for a reduction step, not the fixation step.',
     correct: 'To reduce glycerate 3-phosphate to triose phosphate',
     wrong: [
       miss('To fix carbon dioxide onto ribulose bisphosphate', 'Carbon dioxide fixation is catalysed by the enzyme rubisco, not by reduced NADP.', 'Reduced NADP supplies hydrogen for a reduction step, not the fixation step.'),
@@ -41,6 +43,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Energy transfers: Photosynthesis',
     title: 'Limiting factors in photosynthesis',
     prompt: 'A plant is photosynthesising on a warm, bright day. The rate of photosynthesis stops increasing even though light intensity keeps rising. What is the most likely limiting factor?',
+    mentorHint: 'A limiting factor is the one in shortest supply; light is already plentiful here.',
     correct: 'Carbon dioxide concentration',
     wrong: [
       miss('Light intensity', 'If the rate no longer rises as light increases, light is clearly not the factor holding the rate back.', 'A limiting factor is the one in shortest supply; light is already plentiful here.'),
@@ -56,6 +59,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Energy transfers: Photosynthesis',
     title: 'Effect of light on Calvin cycle intermediates',
     prompt: 'A photosynthesising alga is suddenly placed in darkness. What happens to the concentrations of glycerate 3-phosphate (GP) and ribulose bisphosphate (RuBP)?',
+    mentorHint: 'Ask which molecule still forms in the dark and which one stops being made.',
     correct: 'GP rises and RuBP falls',
     wrong: [
       miss('GP falls and RuBP rises', 'This is the reverse of what happens; without reduced NADP and ATP, GP cannot be converted onward so it accumulates.', 'Ask which molecule still forms in the dark and which one stops being made.'),
@@ -72,6 +76,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Energy transfers: Respiration',
     title: 'Net ATP yield of glycolysis',
     prompt: 'During glycolysis, two ATP molecules are used and four are produced per glucose. What is the net yield of ATP from glycolysis?',
+    mentorHint: 'Subtract the ATP used from the ATP made.',
     correct: '2 ATP',
     wrong: [
       miss('4 ATP', 'This is the gross production but ignores the 2 ATP invested at the start to phosphorylate glucose.', 'Subtract the ATP used from the ATP made.'),
@@ -87,6 +92,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Energy transfers: Respiration',
     title: 'Final electron acceptor in aerobic respiration',
     prompt: 'In oxidative phosphorylation, what is the final acceptor of electrons at the end of the electron transport chain?',
+    mentorHint: 'The final acceptor combines with electrons and protons to form water.',
     correct: 'Oxygen',
     wrong: [
       miss('Carbon dioxide', 'Carbon dioxide is released as a waste product during the link reaction and Krebs cycle, not used as an electron acceptor here.', 'The final acceptor combines with electrons and protons to form water.'),
@@ -102,6 +108,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Energy transfers: Respiration',
     title: 'Anaerobic respiration in muscle',
     prompt: 'In human muscle cells respiring anaerobically, what is the role of reducing pyruvate to lactate?',
+    mentorHint: 'The ATP comes from glycolysis, not from the lactate step.',
     correct: 'It regenerates oxidised NAD so glycolysis can continue',
     wrong: [
       miss('It produces a large amount of additional ATP', 'The conversion of pyruvate to lactate produces no ATP itself; its value is keeping glycolysis going.', 'The ATP comes from glycolysis, not from the lactate step.'),
@@ -117,6 +124,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Energy transfers: Respiration',
     title: 'Respiratory substrates and respiratory quotient',
     prompt: 'A respiratory quotient (RQ) of about 1.0 most strongly suggests that the main respiratory substrate being used is which of the following?',
+    mentorHint: 'Fats are more reduced and require more oxygen, lowering the RQ.',
     correct: 'Carbohydrate',
     wrong: [
       miss('Lipid', 'Lipids have an RQ of around 0.7 because they need relatively more oxygen per carbon dioxide produced.', 'Fats are more reduced and require more oxygen, lowering the RQ.'),
@@ -133,6 +141,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Energy transfers: Ecosystems and nutrient cycles',
     title: 'Net primary production',
     prompt: 'Net primary production (NPP) of a plant community is best defined as which of the following?',
+    mentorHint: 'NPP is what remains in plant biomass after the plants respire.',
     correct: 'Gross primary production minus respiratory losses by the producers',
     wrong: [
       miss('The total chemical energy in light absorbed by the producers', 'That describes the energy entering before any is fixed or respired, not net production.', 'NPP is what remains in plant biomass after the plants respire.'),
@@ -148,6 +157,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Energy transfers: Ecosystems and nutrient cycles',
     title: 'Efficiency of energy transfer between trophic levels',
     prompt: 'Of the energy in one trophic level, roughly what proportion is typically transferred to the next trophic level in a food chain?',
+    mentorHint: 'Most energy is lost to respiration, movement and inedible parts.',
     correct: 'About 10 percent',
     wrong: [
       miss('About 90 percent', 'This inverts the figure; the large majority of energy is lost between levels, not transferred.', 'Most energy is lost to respiration, movement and inedible parts.'),
@@ -163,6 +173,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Energy transfers: Ecosystems and nutrient cycles',
     title: 'Role of nitrifying bacteria',
     prompt: 'In the nitrogen cycle, what conversion is carried out by nitrifying bacteria?',
+    mentorHint: 'Fixation converts atmospheric nitrogen; nitrification works on ammonium ions.',
     correct: 'Ammonium ions to nitrites and then to nitrates',
     wrong: [
       miss('Nitrogen gas to ammonia', 'That is nitrogen fixation, carried out by nitrogen-fixing bacteria such as Rhizobium, not nitrifying bacteria.', 'Fixation converts atmospheric nitrogen; nitrification works on ammonium ions.'),
@@ -178,6 +189,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Energy transfers: Ecosystems and nutrient cycles',
     title: 'Mycorrhizae and the phosphorus cycle',
     prompt: 'How do mycorrhizal fungi benefit plants in nutrient cycling?',
+    mentorHint: 'Mycorrhizae help with uptake, not with fixing atmospheric nitrogen.',
     correct: 'They greatly increase the surface area for absorbing water and ions such as phosphate',
     wrong: [
       miss('They fix nitrogen gas directly from the air for the plant', 'Nitrogen fixation is done by bacteria such as Rhizobium, not by mycorrhizal fungi.', 'Mycorrhizae help with uptake, not with fixing atmospheric nitrogen.'),
@@ -194,6 +206,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Nervous coordination',
     title: 'Establishing the resting potential',
     prompt: 'Which mechanism is mainly responsible for maintaining the resting potential of a neurone at about minus 70 millivolts?',
+    mentorHint: 'The resting potential is maintained when the neurone is not firing.',
     correct: 'The sodium-potassium pump moving 3 sodium ions out for every 2 potassium ions in',
     wrong: [
       miss('Voltage-gated sodium channels opening to let sodium rush in', 'Those channels open during the action potential, depolarising the membrane, not during the resting state.', 'The resting potential is maintained when the neurone is not firing.'),
@@ -209,6 +222,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Nervous coordination',
     title: 'Depolarisation during an action potential',
     prompt: 'What directly causes the rapid depolarisation phase of an action potential?',
+    mentorHint: 'Potassium leaving makes the inside more negative, which is the opposite of depolarisation.',
     correct: 'Voltage-gated sodium channels open and sodium ions move rapidly into the axon',
     wrong: [
       miss('Voltage-gated potassium channels open and potassium ions leave the axon', 'That movement causes repolarisation, returning the membrane towards rest, not the upstroke.', 'Potassium leaving makes the inside more negative, which is the opposite of depolarisation.'),
@@ -224,6 +238,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Nervous coordination',
     title: 'Function of the myelin sheath',
     prompt: 'How does the myelin sheath increase the speed of nerve impulse conduction?',
+    mentorHint: 'Myelin works by insulating the membrane and forcing impulses to jump.',
     correct: 'It insulates the axon so the action potential jumps between the nodes of Ranvier (saltatory conduction)',
     wrong: [
       miss('It increases the diameter of the axon to lower resistance', 'Greater axon diameter does speed conduction, but that is a separate factor, not the action of myelin.', 'Myelin works by insulating the membrane and forcing impulses to jump.'),
@@ -239,6 +254,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Nervous coordination',
     title: 'Significance of the refractory period',
     prompt: 'What is one important consequence of the refractory period that follows an action potential?',
+    mentorHint: 'The refractory period affects timing and direction, not size.',
     correct: 'It ensures action potentials travel in one direction only and limits their frequency',
     wrong: [
       miss('It increases the amplitude of the next action potential', 'Action potentials are all-or-nothing, so they do not vary in amplitude.', 'The refractory period affects timing and direction, not size.'),
@@ -255,6 +271,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Synapses',
     title: 'Trigger for neurotransmitter release',
     prompt: 'At a cholinergic synapse, what is the immediate trigger for vesicles of acetylcholine to fuse with the presynaptic membrane?',
+    mentorHint: 'Look at what enters the presynaptic knob to cause vesicle fusion.',
     correct: 'An influx of calcium ions into the presynaptic knob',
     wrong: [
       miss('An influx of sodium ions into the postsynaptic membrane', 'Sodium entry into the postsynaptic cell happens after the neurotransmitter binds, not before release.', 'Look at what enters the presynaptic knob to cause vesicle fusion.'),
@@ -270,6 +287,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Synapses',
     title: 'Spatial versus temporal summation',
     prompt: 'Several different presynaptic neurones release neurotransmitter onto one postsynaptic neurone at the same time, and together they bring it to threshold. What is this an example of?',
+    mentorHint: 'Spatial relates to different locations; temporal relates to timing.',
     correct: 'Spatial summation',
     wrong: [
       miss('Temporal summation', 'Temporal summation involves one presynaptic neurone firing repeatedly over a short time, not several neurones at once.', 'Spatial relates to different locations; temporal relates to timing.'),
@@ -285,6 +303,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Synapses',
     title: 'Why synapses ensure unidirectional transmission',
     prompt: 'Why does transmission across a chemical synapse occur in one direction only?',
+    mentorHint: 'Think about which side stores the transmitter and which side has receptors.',
     correct: 'Neurotransmitter is released only from the presynaptic neurone and receptors are only on the postsynaptic membrane',
     wrong: [
       miss('The synaptic cleft is too wide for diffusion in the reverse direction', 'Diffusion would occur in any direction across the cleft; direction is set by where vesicles and receptors are.', 'Think about which side stores the transmitter and which side has receptors.'),
@@ -301,6 +320,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Muscle contraction',
     title: 'The sliding filament model',
     prompt: 'According to the sliding filament theory, what happens to the bands of a sarcomere when a muscle contracts?',
+    mentorHint: 'The filaments themselves do not shorten; they slide past each other.',
     correct: 'The I band and H zone shorten while the A band stays the same length',
     wrong: [
       miss('The A band shortens while the I band stays the same', 'The A band corresponds to the length of the myosin filaments, which do not change length during contraction.', 'The filaments themselves do not shorten; they slide past each other.'),
@@ -316,6 +336,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Muscle contraction',
     title: 'Role of calcium ions in contraction',
     prompt: 'What is the direct role of calcium ions released from the sarcoplasmic reticulum during muscle contraction?',
+    mentorHint: 'Calcium acts on the actin filament complex, and ATP supplies the energy.',
     correct: 'They cause tropomyosin to move, exposing the myosin-binding sites on actin',
     wrong: [
       miss('They bind to myosin heads and provide the energy for the power stroke', 'Energy for the power stroke comes from ATP hydrolysis, not from calcium ions binding to myosin.', 'Calcium acts on the actin filament complex, and ATP supplies the energy.'),
@@ -331,6 +352,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Muscle contraction',
     title: 'Slow and fast twitch fibres',
     prompt: 'Compared with fast-twitch muscle fibres, slow-twitch fibres are typically adapted for which of the following?',
+    mentorHint: 'Slow-twitch fibres are built for endurance, not power.',
     correct: 'Sustained aerobic activity, with many mitochondria and a rich blood supply',
     wrong: [
       miss('Short bursts of powerful anaerobic activity with large glycogen stores', 'That describes fast-twitch fibres, which rely on anaerobic respiration for rapid, powerful contractions.', 'Slow-twitch fibres are built for endurance, not power.'),
@@ -347,6 +369,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Control of blood glucose',
     title: 'Action of glucagon',
     prompt: 'When blood glucose concentration falls, the pancreas releases glucagon. What is the main effect of glucagon on liver cells?',
+    mentorHint: 'Falling glucose needs the liver to release glucose, not store it.',
     correct: 'It stimulates glycogenolysis and gluconeogenesis to raise blood glucose',
     wrong: [
       miss('It stimulates the conversion of glucose to glycogen for storage', 'That is glycogenesis, promoted by insulin when glucose is high, the opposite of what is needed here.', 'Falling glucose needs the liver to release glucose, not store it.'),
@@ -362,6 +385,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Control of blood glucose',
     title: 'Second messenger model of adrenaline',
     prompt: 'Adrenaline raises blood glucose by acting on liver cells through a second messenger. Which molecule acts as the second messenger inside the cell?',
+    mentorHint: 'The second messenger is generated inside the cell after a hormone binds.',
     correct: 'Cyclic AMP (cAMP)',
     wrong: [
       miss('Glucagon', 'Glucagon is itself a hormone acting at the cell surface, not the intracellular second messenger.', 'The second messenger is generated inside the cell after a hormone binds.'),
@@ -377,6 +401,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Control of blood glucose',
     title: 'Type 1 versus type 2 diabetes',
     prompt: 'Which statement best distinguishes type 1 diabetes from type 2 diabetes?',
+    mentorHint: 'Focus on whether insulin is produced versus whether cells respond to it.',
     correct: 'In type 1 the body cannot produce enough insulin, whereas in type 2 cells become less responsive to insulin',
     wrong: [
       miss('Type 1 is caused by eating too much sugar and type 2 is inherited only', 'This is an oversimplification; type 1 is usually autoimmune and not caused by sugar intake, and risk factors differ.', 'Focus on whether insulin is produced versus whether cells respond to it.'),
@@ -393,6 +418,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Osmoregulation and the kidney',
     title: 'Selective reabsorption in the nephron',
     prompt: 'In which part of the nephron does most selective reabsorption of glucose and amino acids occur?',
+    mentorHint: 'Glucose reabsorption happens early, near the start of the tubule.',
     correct: 'The proximal convoluted tubule',
     wrong: [
       miss('The collecting duct', 'The collecting duct mainly adjusts water reabsorption under the control of ADH, not glucose reabsorption.', 'Glucose reabsorption happens early, near the start of the tubule.'),
@@ -408,6 +434,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Osmoregulation and the kidney',
     title: 'Function of the loop of Henle',
     prompt: 'What is the main role of the loop of Henle in the mammalian kidney?',
+    mentorHint: 'The loop concentrates solutes; it does not perform filtration.',
     correct: 'To create a high solute concentration in the medulla so water can be reabsorbed from the collecting duct',
     wrong: [
       miss('To filter the blood and form the glomerular filtrate', 'Filtration occurs at the glomerulus and Bowman\'s capsule, not in the loop of Henle.', 'The loop concentrates solutes; it does not perform filtration.'),
@@ -423,6 +450,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Response to changes: Osmoregulation and the kidney',
     title: 'Action of ADH on the collecting duct',
     prompt: 'When the water potential of the blood falls too low, more ADH is released. What is its effect on the collecting duct?',
+    mentorHint: 'Low water potential should trigger water conservation, not water loss.',
     correct: 'It increases the permeability of the collecting duct to water, so more water is reabsorbed',
     wrong: [
       miss('It decreases the permeability of the collecting duct so more dilute urine is produced', 'That is what happens when ADH is low; high ADH does the opposite, making concentrated urine.', 'Low water potential should trigger water conservation, not water loss.'),
@@ -439,6 +467,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Genetics and inheritance',
     title: 'Codominance in inheritance',
     prompt: 'In the human ABO blood group system, a person with genotype I^A I^B has blood group AB. This is an example of which pattern of inheritance?',
+    mentorHint: 'Ask whether one allele hides the other or whether both show.',
     correct: 'Codominance, because both alleles are expressed in the phenotype',
     wrong: [
       miss('Complete dominance, because allele A masks allele B', 'In group AB neither allele masks the other; both antigens are present, so it is not complete dominance.', 'Ask whether one allele hides the other or whether both show.'),
@@ -454,6 +483,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Genetics and inheritance',
     title: 'Sex-linked inheritance and the chi-squared test',
     prompt: 'A geneticist crosses fruit flies and counts the offspring to see whether the results fit a predicted ratio. Which statistical test is most appropriate for comparing observed and expected categorical counts?',
+    mentorHint: 'Correlation is about relationships between variables, not category counts.',
     correct: 'The chi-squared test',
     wrong: [
       miss('The Spearman rank correlation', 'Spearman tests for a correlation between two ranked variables, not whether counts fit an expected ratio.', 'Correlation is about relationships between variables, not category counts.'),
@@ -469,6 +499,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Genetics and inheritance',
     title: 'Epistasis between two genes',
     prompt: 'In epistasis, what is the key feature of how two genes interact?',
+    mentorHint: 'Epistasis involves genes at different loci interacting.',
     correct: 'One gene affects the expression of another gene at a different locus',
     wrong: [
       miss('Two alleles of the same gene are both expressed in the heterozygote', 'That describes codominance, which involves alleles at a single locus, not two different genes.', 'Epistasis involves genes at different loci interacting.'),
@@ -484,6 +515,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Genetics and inheritance',
     title: 'Autosomal recessive cross',
     prompt: 'A genetic condition is caused by a recessive allele. Two parents who do not have the condition have an affected child. What are the parents\' genotypes (using A for the dominant allele and a for the recessive)?',
+    mentorHint: 'Affected individuals are aa; these parents are unaffected.',
     correct: 'Both parents are Aa (carriers)',
     wrong: [
       miss('Both parents are aa', 'If both parents were aa they would themselves show the recessive condition, but the question says they do not.', 'Affected individuals are aa; these parents are unaffected.'),
@@ -500,6 +532,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Populations and evolution',
     title: 'The Hardy-Weinberg principle',
     prompt: 'In a population in Hardy-Weinberg equilibrium, the frequency of the recessive allele (q) is 0.3. What is the predicted frequency of heterozygous individuals?',
+    mentorHint: 'Heterozygotes are given by 2pq, not q squared.',
     correct: '0.42',
     wrong: [
       miss('0.09', 'The value 0.09 is q squared, the frequency of homozygous recessive individuals, not the heterozygotes.', 'Heterozygotes are given by 2pq, not q squared.'),
@@ -515,6 +548,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Populations and evolution',
     title: 'Directional versus stabilising selection',
     prompt: 'A population of birds experiences a long, harsh series of dry years and the average beak size shifts towards larger beaks over generations. What type of natural selection is this?',
+    mentorHint: 'Stabilising keeps the mean the same; this mean is moving.',
     correct: 'Directional selection',
     wrong: [
       miss('Stabilising selection', 'Stabilising selection favours the average phenotype and reduces variation; here the mean is shifting, not being held constant.', 'Stabilising keeps the mean the same; this mean is moving.'),
@@ -530,6 +564,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Populations and evolution',
     title: 'Allopatric speciation',
     prompt: 'Two populations of a species become separated by a new mountain range and, over many generations, can no longer interbreed even if reunited. This is an example of which process?',
+    mentorHint: 'A physical barrier separating the populations points to allopatric, not sympatric.',
     correct: 'Allopatric speciation',
     wrong: [
       miss('Sympatric speciation', 'Sympatric speciation happens without geographical separation, within the same area, which is not the case here.', 'A physical barrier separating the populations points to allopatric, not sympatric.'),
@@ -545,6 +580,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Populations and evolution',
     title: 'The genetic bottleneck effect',
     prompt: 'A natural disaster kills most individuals in a population, leaving only a small, randomly surviving group to breed. What is the likely genetic consequence for the recovered population?',
+    mentorHint: 'A sudden loss of most individuals removes many alleles from the gene pool.',
     correct: 'Reduced genetic diversity in the new population',
     wrong: [
       miss('Increased genetic diversity due to new mutations', 'Mutations are too slow to offset the immediate loss of alleles; the bottleneck reduces diversity overall.', 'A sudden loss of most individuals removes many alleles from the gene pool.'),
@@ -561,6 +597,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Populations in ecosystems',
     title: 'Carrying capacity',
     prompt: 'In population ecology, what does the term carrying capacity mean?',
+    mentorHint: 'Think about a limit set by current resources, not history.',
     correct: 'The maximum population size an environment can support sustainably given the available resources',
     wrong: [
       miss('The total number of organisms that have ever lived in the habitat', 'Carrying capacity is about the sustainable maximum at a given time, not a cumulative historical total.', 'Think about a limit set by current resources, not history.'),
@@ -576,6 +613,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Populations in ecosystems',
     title: 'Density-dependent factors',
     prompt: 'Which of the following is a density-dependent factor that limits population size?',
+    mentorHint: 'Ask whether the effect gets stronger as the population becomes more crowded.',
     correct: 'Competition for food among members of the population',
     wrong: [
       miss('An unusually cold winter killing many organisms', 'Severe weather is generally density-independent because it affects a similar proportion regardless of population density.', 'Ask whether the effect gets stronger as the population becomes more crowded.'),
@@ -591,6 +629,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Populations in ecosystems',
     title: 'The mark-release-recapture method',
     prompt: 'A student catches 40 woodlice, marks them, and releases them. Later they catch 50 woodlice, of which 8 are marked. Using the mark-release-recapture method, what is the estimated population size?',
+    mentorHint: 'Use the proportion of marked individuals in the second sample, not a sum.',
     correct: '250',
     wrong: [
       miss('98', 'Adding the numbers (40 plus 50 plus 8) is not how the estimate is calculated.', 'Use the proportion of marked individuals in the second sample, not a sum.'),
@@ -606,6 +645,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Populations in ecosystems',
     title: 'Succession and the climax community',
     prompt: 'During ecological succession, what generally happens to biodiversity and the community as it progresses towards a climax community?',
+    mentorHint: 'Early stages have few species; later stages support more.',
     correct: 'Biodiversity tends to increase as conditions become less hostile and more species can establish',
     wrong: [
       miss('Biodiversity steadily decreases until only pioneer species remain', 'Pioneer species dominate at the start and are usually outcompeted later; diversity generally rises, not falls.', 'Early stages have few species; later stages support more.'),
@@ -622,6 +662,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Control of gene expression: Mutations',
     title: 'Effect of a substitution mutation and the degenerate code',
     prompt: 'A single base substitution occurs in a gene but the amino acid sequence of the protein is unchanged. What property of the genetic code explains this?',
+    mentorHint: 'The key is that more than one codon can specify the same amino acid.',
     correct: 'The genetic code is degenerate, so several codons can code for the same amino acid',
     wrong: [
       miss('The genetic code is non-overlapping, so bases are read once only', 'Being non-overlapping concerns how codons are read in sequence, not why a changed codon still gives the same amino acid.', 'The key is that more than one codon can specify the same amino acid.'),
@@ -637,6 +678,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Control of gene expression: Mutations',
     title: 'Frameshift mutations',
     prompt: 'Why does a deletion of a single base usually have a more severe effect on a protein than a single base substitution?',
+    mentorHint: 'Consider how the codons downstream of the change are read.',
     correct: 'A deletion shifts the reading frame, changing every codon after the mutation',
     wrong: [
       miss('A deletion always shortens the gene so no protein can be made', 'A deletion does not necessarily prevent any protein; it typically produces an altered, often non-functional protein due to the frameshift.', 'Consider how the codons downstream of the change are read.'),
@@ -653,6 +695,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Control of gene expression: Regulating transcription',
     title: 'Action of oestrogen as a transcription factor',
     prompt: 'How does the steroid hormone oestrogen switch on transcription of certain target genes?',
+    mentorHint: 'Oestrogen can cross the membrane and act directly with intracellular receptors.',
     correct: 'It binds to a receptor to form a transcription factor complex that enters the nucleus and binds DNA',
     wrong: [
       miss('It binds to a surface receptor and produces cyclic AMP as a second messenger', 'Steroid hormones such as oestrogen are lipid-soluble and act inside the cell, not via a surface receptor and cAMP.', 'Oestrogen can cross the membrane and act directly with intracellular receptors.'),
@@ -668,6 +711,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Control of gene expression: Regulating transcription',
     title: 'Epigenetic control by methylation',
     prompt: 'Increased methylation of DNA in the region of a gene typically has which effect on that gene?',
+    mentorHint: 'Epigenetic marks affect expression without changing the genetic code itself.',
     correct: 'It inhibits transcription, switching the gene off',
     wrong: [
       miss('It permanently changes the base sequence of the gene', 'Methylation is an epigenetic change that does not alter the underlying DNA base sequence.', 'Epigenetic marks affect expression without changing the genetic code itself.'),
@@ -683,6 +727,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Control of gene expression: Regulating transcription',
     title: 'Role of RNA interference',
     prompt: 'How does small interfering RNA (siRNA) reduce the expression of a gene after transcription?',
+    mentorHint: 'RNA interference works at the level of mRNA, not the gene.',
     correct: 'It guides a complex that breaks down complementary mRNA so it cannot be translated',
     wrong: [
       miss('It binds to the DNA and prevents transcription from starting', 'siRNA acts on mRNA after transcription, not on the DNA to block transcription itself.', 'RNA interference works at the level of mRNA, not the gene.'),
@@ -699,6 +744,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Control of gene expression: Cancer',
     title: 'Oncogenes and tumour suppressor genes',
     prompt: 'A mutation makes a tumour suppressor gene inactive. How does this contribute to cancer?',
+    mentorHint: 'Tumour suppressors normally restrain division, so losing them removes a brake.',
     correct: 'The cell loses a brake on division, so cell division is no longer properly inhibited',
     wrong: [
       miss('It permanently switches off all cell division in the body', 'Loss of a tumour suppressor leads to uncontrolled division, not a halt in division.', 'Tumour suppressors normally restrain division, so losing them removes a brake.'),
@@ -714,6 +760,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Control of gene expression: Cancer',
     title: 'Methylation and oncogenesis',
     prompt: 'In some cancers, abnormal hypermethylation of a tumour suppressor gene contributes to tumour formation. Why?',
+    mentorHint: 'Methylation switches genes off, not on.',
     correct: 'Hypermethylation silences the tumour suppressor gene so it can no longer inhibit cell division',
     wrong: [
       miss('Hypermethylation increases expression of the tumour suppressor gene', 'Increased methylation generally silences genes, so it lowers rather than raises expression.', 'Methylation switches genes off, not on.'),
@@ -730,6 +777,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Gene technology: PCR and amplification',
     title: 'Purpose of the polymerase chain reaction',
     prompt: 'What is the main purpose of the polymerase chain reaction (PCR)?',
+    mentorHint: 'PCR amplifies DNA; enzymes called restriction enzymes cut it.',
     correct: 'To make many copies of a specific DNA fragment in vitro',
     wrong: [
       miss('To cut DNA into fragments at specific recognition sequences', 'Cutting DNA at specific sequences is done by restriction endonucleases, not by PCR.', 'PCR amplifies DNA; enzymes called restriction enzymes cut it.'),
@@ -745,6 +793,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Gene technology: DNA probes and profiling',
     title: 'How a DNA probe detects a target sequence',
     prompt: 'How does a labelled DNA probe locate a specific allele or gene in a sample of DNA?',
+    mentorHint: 'A probe hybridises to the target; it does not cleave a cut.',
     correct: 'It binds by complementary base pairing to its target sequence and can then be detected by its label',
     wrong: [
       miss('It cuts the DNA wherever the target gene is found', 'Cutting DNA is done by restriction enzymes; a probe binds rather than cuts.', 'A probe hybridises to the target; it does not cleave a cut.'),
@@ -760,6 +809,7 @@ export const colALevelBiologyHigh103TopUpBQuestions: Question[] = makeQuestionBa
     chapter: 'Gene technology: Recombinant DNA and gene therapy',
     title: 'Use of sticky ends in recombinant DNA technology',
     prompt: 'Why is it useful to cut both a gene and a plasmid with the same restriction endonuclease?',
+    mentorHint: 'The point is compatibility of the cut ends, not fragment size.',
     correct: 'They produce complementary sticky ends that base pair so the gene can be joined into the plasmid',
     wrong: [
       miss('It guarantees the gene will be cut into the smallest possible pieces', 'The aim is to produce matching ends for joining, not to make the smallest fragments.', 'The point is compatibility of the cut ends, not fragment size.'),

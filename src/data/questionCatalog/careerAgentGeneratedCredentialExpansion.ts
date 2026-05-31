@@ -21,8 +21,57 @@ type TrackPlan = {
   competencies: Competency[]
 }
 
+function credentialMentorHint(topic: Topic, chapter: string, title: string, prompt: string): string {
+  const text = `${chapter} ${title} ${prompt}`.toLowerCase()
+
+  if (topic === 'Series 86') {
+    return 'Start with the equity-research workflow: identify the driver, bridge it through the model, then connect it to valuation or recommendation risk. The best answer should be defensible from evidence, not just a familiar finance phrase.'
+  }
+  if (text.includes('healthcare compliance')) {
+    return 'Use the healthcare compliance program frame: legal risk, independence, reporting, investigation, corrective action, education, and board-level evidence. The strongest answer protects patients and payers while preserving a defensible record.'
+  }
+  if (text.includes('drug safety') || text.includes('safety case') || text.includes('pharma')) {
+    return 'Start with pharmacovigilance basics: valid case elements, seriousness, expectedness, causality, reporting clock, and audit trail. Good safety work preserves the signal without overstating what one report proves.'
+  }
+  if (text.includes('payer') || text.includes('utilization') || text.includes('appeal') || text.includes('claim')) {
+    return 'Separate coverage, medical necessity, claims payment, appeal rights, network access, and delegation oversight. Payer questions usually turn on the process right or control that applies at that decision point.'
+  }
+  if (text.includes('medical coding') || text.includes('coding') || text.includes('chart')) {
+    return 'Code only what the record supports, using the official rule set and documented specificity. If the chart is unclear, the professional move is clarification or a supported lower-specificity choice, not guessing for payment.'
+  }
+  if (topic === 'Clinical Research' || text.includes('protocol') || text.includes('monitoring visit') || text.includes('site file')) {
+    return 'Protect the participant, protocol, and data trail in that order. Clinical research scenarios usually reward documented escalation, source support, and sponsor/IRB process over informal cleanup.'
+  }
+  if (topic === 'Regulatory' || text.includes('regulatory') || text.includes('change-control')) {
+    return 'Ask what a regulator would expect to see: controlling requirement, product or process impact, documented rationale, approval path, and evidence of implementation. The answer should make the decision reviewable later.'
+  }
+  if (text.includes('governance') || text.includes('oversight') || text.includes('board')) {
+    return 'Map the issue to oversight: who owns the risk, who must be informed, and what evidence shows the process worked. Governance answers usually favor independence and escalation over quiet local fixes.'
+  }
+  if (text.includes('documentation') || text.includes('audit trail') || text.includes('file')) {
+    return 'Think like a later reviewer: the file should show facts reviewed, rule applied, rationale, owner, approval, and remaining uncertainty. A conclusion without the chain of reasoning is usually too weak.'
+  }
+  if (text.includes('control')) {
+    return 'Separate control design from operating effectiveness. A policy can look right on paper while failing if people bypass it, exceptions are undocumented, or testing never confirms the fix.'
+  }
+  if (text.includes('conflict') || text.includes('ethics') || text.includes('independence')) {
+    return 'Identify the duty or conflict before choosing an action. The safest professional answer preserves independent judgment through disclosure, recusal, escalation, or documented safeguards.'
+  }
+  if (text.includes('risk')) {
+    return 'Rank the issue by overall risk, not just speed or dollar amount. Consider harm, likelihood, control weakness, evidence quality, and whether the issue could recur.'
+  }
+  if (text.includes('monitoring') || text.includes('testing') || text.includes('remediation')) {
+    return 'Ask whether the root cause was fixed and whether someone validated the fix with evidence. Closing a finding is not the same as proving the problem will stay fixed.'
+  }
+  if (text.includes('communication') || text.includes('plain-language')) {
+    return 'Translate the rule into an action someone can carry out: decision, reason, owner, deadline, and consequence. Good professional communication reduces ambiguity rather than showing off terminology.'
+  }
+
+  return 'Identify the controlling rule, risk, and best next action before comparing choices. The strongest credential-exam answer should be defensible, documented, and practical under review.'
+}
+
 function q(id: number, topic: Topic, chapter: string, title: string, prompt: string, correct: string, traps: Trap[], lesson: string): Question {
-  return makeSimpleQuestion(id, topic, chapter, title, prompt, correct, traps, lesson, SOURCE)
+  return makeSimpleQuestion(id, topic, chapter, title, prompt, correct, traps, lesson, SOURCE, undefined, credentialMentorHint(topic, chapter, title, prompt))
 }
 
 function expandTrack(plan: TrackPlan, limit = 220): Question[] {

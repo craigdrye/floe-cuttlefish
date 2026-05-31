@@ -13,6 +13,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 1: Short Fiction I',
     title: 'Round vs. flat character',
     prompt: 'A short story devotes pages to a protagonist\'s contradictory desires, shifting motives, and growth, while a neighbor appears only to deliver gossip and never changes. The neighbor is best described as which kind of character?',
+    mentorHint: 'Ask whether the character has depth and change, not just usefulness.',
     correct: 'A flat character, defined by a single trait or function and not developed in depth',
     wrong: [
       miss('A round character, because she advances the plot', 'Advancing the plot does not make a character round; roundness requires psychological complexity and development.', 'Ask whether the character has depth and change, not just usefulness.'),
@@ -28,6 +29,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 1: Short Fiction I',
     title: 'Direct vs. indirect characterization',
     prompt: 'Instead of telling us a man is miserly, a narrator shows him reusing tea bags, haggling over pennies, and turning off the heat when guests leave. This technique is best identified as:',
+    mentorHint: 'Check whether the narrator names the trait or shows it.',
     correct: 'Indirect characterization, in which traits are revealed through action and detail rather than stated outright',
     wrong: [
       miss('Direct characterization, because the narrator clearly establishes the trait', 'Direct characterization states a trait explicitly ("He was miserly"); here the trait is implied through behavior.', 'Check whether the narrator names the trait or shows it.'),
@@ -43,6 +45,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 1: Short Fiction I',
     title: 'Identifying point of view',
     prompt: 'A narrator refers to the protagonist as "I," reports only what that one person can perceive and think, and may be mistaken about other characters\' motives. This narration uses which point of view?',
+    mentorHint: 'Look at the pronoun and the range of access.',
     correct: 'First-person limited point of view',
     wrong: [
       miss('Third-person omniscient point of view', 'Omniscient narrators use "he/she/they" and can access any character\'s mind; this narrator uses "I" and is restricted to one mind.', 'Look at the pronoun and the range of access.'),
@@ -58,6 +61,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 1: Short Fiction I',
     title: 'Unreliable narration',
     prompt: 'A first-person narrator insists he is calm and rational while describing how he dismembered a victim and buried him under the floorboards, growing frantic at an imagined heartbeat. The gap between his claims and his behavior signals that he is:',
+    mentorHint: 'Omniscience is about access to many minds, not certainty.',
     correct: 'An unreliable narrator, whose account the reader must read against the grain',
     wrong: [
       miss('An omniscient narrator, since he knows the whole crime', 'Omniscience means access to all characters\' minds, not detailed knowledge of one\'s own actions; a first-person narrator cannot be omniscient.', 'Omniscience is about access to many minds, not certainty.'),
@@ -73,6 +77,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 1: Short Fiction I',
     title: 'Setting and mood',
     prompt: 'A story opens with a "dull, dark, and soundless day" and a "decayed" house reflected in a "black and lurid tarn." Beyond establishing place, this setting primarily functions to:',
+    mentorHint: 'Notice whether the description is neutral or loaded.',
     correct: 'Establish a foreboding mood that prepares the reader for dread and decline',
     wrong: [
       miss('Provide objective geographical orientation for the reader', 'The diction is heavily evaluative ("dull," "decayed," "lurid"), so the setting is doing emotional work, not neutral orientation.', 'Notice whether the description is neutral or loaded.'),
@@ -88,6 +93,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 1: Short Fiction I',
     title: 'Function of a foil',
     prompt: 'In a story, a reckless, impulsive brother is placed beside a cautious, calculating one so that each brother\'s defining trait becomes sharper by comparison. The cautious brother chiefly functions as:',
+    mentorHint: 'Distinguish contrast from active opposition.',
     correct: 'A foil, whose contrast clarifies and intensifies the other character\'s qualities',
     wrong: [
       miss('An antagonist, because he opposes the reckless brother', 'A foil contrasts a character; an antagonist actively works against the protagonist\'s goals. Contrast alone does not make him an antagonist.', 'Distinguish contrast from active opposition.'),
@@ -106,6 +112,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 2: Poetry I',
     title: 'Distinguishing metaphor from simile',
     prompt: 'The line "Hope is the thing with feathers" (Dickinson) equates hope with a bird without using "like" or "as." This figure of speech is a:',
+    mentorHint: 'Look for the comparison words "like" or "as."',
     correct: 'Metaphor, an implied comparison that states one thing is another',
     wrong: [
       miss('Simile, because it compares hope to a bird', 'A simile compares using "like" or "as"; this line asserts the identity directly, so it is a metaphor.', 'Look for the comparison words "like" or "as."'),
@@ -121,6 +128,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 2: Poetry I',
     title: 'Enjambment vs. end-stop',
     prompt: 'In "I shall be telling this with a sigh / Somewhere ages and ages hence" (Frost), the absence of punctuation at the line break that carries the syntax into the next line is called:',
+    mentorHint: 'Locate the pause: mid-line versus across the break.',
     correct: 'Enjambment, the continuation of a sentence past the line break without a pause',
     wrong: [
       miss('A caesura, because the line pauses', 'A caesura is a strong pause inside a line, often marked by punctuation; enjambment concerns the absence of a pause at the line\'s end.', 'Locate the pause: mid-line versus across the break.'),
@@ -136,6 +144,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 2: Poetry I',
     title: 'Iambic pentameter',
     prompt: 'A line of verse contains five repetitions of an unstressed syllable followed by a stressed syllable, as in "Shall I compare thee to a summer\'s day." This meter is:',
+    mentorHint: 'Check whether the stress comes first or second, and count the feet.',
     correct: 'Iambic pentameter',
     wrong: [
       miss('Trochaic tetrameter', 'A trochee is a stressed-then-unstressed foot, the reverse of an iamb, and tetrameter has four feet, not five.', 'Check whether the stress comes first or second, and count the feet.'),
@@ -151,6 +160,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 2: Poetry I',
     title: 'Imagery and the senses',
     prompt: 'A poem describes "the bitter tang of brine," "gulls shrieking," and "wet rope rough against the palm." Collectively, these details are best described as:',
+    mentorHint: 'Ask whether the details evoke the senses or stand for ideas.',
     correct: 'Sensory imagery that immerses the reader through taste, sound, and touch',
     wrong: [
       miss('Symbolism, because the sea stands for something larger', 'Symbolism requires an image to represent an abstract idea; these details first work as direct sensory experience, not necessarily as symbols.', 'Ask whether the details evoke the senses or stand for ideas.'),
@@ -166,6 +176,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 2: Poetry I',
     title: 'Personification',
     prompt: 'In "Because I could not stop for Death — / He kindly stopped for me" (Dickinson), Death drives a carriage and behaves with courtesy. This device is:',
+    mentorHint: 'Apostrophe requires direct address ("O Death").',
     correct: 'Personification, attributing human qualities and actions to an abstraction',
     wrong: [
       miss('Apostrophe, because the speaker addresses Death', 'The speaker describes Death in the third person rather than addressing him directly, so it is not apostrophe.', 'Apostrophe requires direct address ("O Death").'),
@@ -181,6 +192,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 2: Poetry I',
     title: 'Reading tone from diction',
     prompt: 'A speaker recalls a lost friend using words like "merely," "convenient," and "no great loss." The tone these word choices establish is best described as:',
+    mentorHint: 'Read the word choices, not just the topic.',
     correct: 'Detached or dismissive, undercutting the supposed grief',
     wrong: [
       miss('Reverent and mournful, because the friend is gone', 'The subject is loss, but the diction is cool and minimizing, which works against a mournful tone.', 'Read the word choices, not just the topic.'),
@@ -199,6 +211,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 3: Longer Fiction or Drama I',
     title: 'Internal vs. external conflict',
     prompt: 'A soldier must choose between obeying an order he believes is immoral and protecting his fellow troops. His struggle, taking place chiefly within his own mind, is an example of:',
+    mentorHint: 'Ask where the central tension is being fought: inside or between characters.',
     correct: 'Internal conflict, a struggle within a character\'s own mind or values',
     wrong: [
       miss('External conflict, because an order comes from outside him', 'The order is external, but the dramatized struggle is the character\'s internal weighing of values, which defines internal conflict.', 'Ask where the central tension is being fought: inside or between characters.'),
@@ -214,6 +227,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 3: Longer Fiction or Drama I',
     title: 'Locating the climax',
     prompt: 'In Freytag\'s pyramid model of plot, the moment of greatest tension and the turning point after which the outcome becomes inevitable is the:',
+    mentorHint: 'The turning point comes after the build-up.',
     correct: 'Climax',
     wrong: [
       miss('Rising action', 'Rising action builds tension toward the climax but is not itself the turning point.', 'The turning point comes after the build-up.'),
@@ -229,6 +243,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 3: Longer Fiction or Drama I',
     title: 'Dramatic irony',
     prompt: 'In a play, the audience knows a goblet is poisoned, but the king who is about to drink does not. The tension created by the audience knowing more than the character is:',
+    mentorHint: 'Verbal irony lives in what a speaker says.',
     correct: 'Dramatic irony',
     wrong: [
       miss('Verbal irony', 'Verbal irony is saying the opposite of what one means; this situation depends on a gap in knowledge, not on words said sarcastically.', 'Verbal irony lives in what a speaker says.'),
@@ -244,6 +259,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 3: Longer Fiction or Drama I',
     title: 'Function of a soliloquy',
     prompt: 'A character alone on stage speaks at length, revealing private doubts and intentions directly to the audience. This dramatic convention is a:',
+    mentorHint: 'Check whether others are meant to hear the speech.',
     correct: 'Soliloquy, in which a character voices inner thoughts while alone on stage',
     wrong: [
       miss('A monologue, because one character speaks at length', 'A monologue is a long speech, but it is typically delivered to other characters present; a soliloquy is spoken alone to reveal inner thought.', 'Check whether others are meant to hear the speech.'),
@@ -259,6 +275,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 3: Longer Fiction or Drama I',
     title: 'Tragic hero and hamartia',
     prompt: 'In Aristotelian tragedy, the error in judgment or fatal flaw that leads a basically noble protagonist to his downfall is called:',
+    mentorHint: 'Catharsis is the audience\'s response, not a character trait.',
     correct: 'Hamartia',
     wrong: [
       miss('Catharsis', 'Catharsis is the emotional purging the audience experiences, not the protagonist\'s flaw.', 'Catharsis is the audience\'s response, not a character trait.'),
@@ -277,6 +294,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 4: Short Fiction II',
     title: 'Symbol vs. motif',
     prompt: 'Throughout a story, the recurring image of caged birds appears in many scenes, accumulating associations with the protagonist\'s confinement. The repeated, developing image across the work is best termed a:',
+    mentorHint: 'Focus on the repetition across the whole text.',
     correct: 'Motif, a recurring element that gains thematic significance through repetition',
     wrong: [
       miss('A symbol that appears once to carry meaning', 'A symbol can appear a single time; the defining feature here is recurrence across the work, which makes it a motif.', 'Focus on the repetition across the whole text.'),
@@ -292,6 +310,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 4: Short Fiction II',
     title: 'Theme vs. subject',
     prompt: 'A story is about a marriage falling apart. Which of the following best states a theme, as opposed to merely the subject?',
+    mentorHint: 'A theme makes a claim, not a summary.',
     correct: 'Pride can blind people to the needs of those they claim to love',
     wrong: [
       miss('A husband and wife who grow apart over many years', 'This restates the subject or plot, not a theme; a theme is an arguable idea the story conveys about life.', 'A theme makes a claim, not a summary.'),
@@ -307,6 +326,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 4: Short Fiction II',
     title: 'Situational irony',
     prompt: 'A couple each secretly sells their most prized possession to buy the other a gift, only to find each gift now useless because of the sacrifice the other made. This twist is an example of:',
+    mentorHint: 'Ask whether the reader had advance knowledge.',
     correct: 'Situational irony, a gap between the expected outcome and what actually happens',
     wrong: [
       miss('Dramatic irony, because the reader knew the outcome', 'Dramatic irony depends on the reader knowing what a character does not; here the reader is surprised along with the couple by the reversal.', 'Ask whether the reader had advance knowledge.'),
@@ -322,6 +342,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 4: Short Fiction II',
     title: 'Epiphany in fiction',
     prompt: 'Near a story\'s end, a young man standing in a dark bazaar suddenly perceives his romantic quest as foolish vanity and feels burning shame. This sudden moment of insight is best called:',
+    mentorHint: 'Distinguish an inner realization from an external turning point.',
     correct: 'An epiphany, a sudden moment of profound realization',
     wrong: [
       miss('A climax of external action', 'The moment is an internal revelation, not a peak of external plot conflict; many epiphanies occur with little outward event.', 'Distinguish an inner realization from an external turning point.'),
@@ -340,6 +361,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 5: Poetry II',
     title: 'Speaker vs. poet',
     prompt: 'A poem is narrated by a duke who casually reveals he had his late wife killed for not flattering him enough. For accurate analysis, the voice expressing these views should be identified as:',
+    mentorHint: 'Separate the voice in the poem from the writer who made it.',
     correct: 'The speaker, a constructed persona distinct from the poet',
     wrong: [
       miss('The poet, expressing his own personal beliefs', 'Assuming the speaker is the poet is a common error; the dramatic monologue creates a persona whose views may differ sharply from the author\'s.', 'Separate the voice in the poem from the writer who made it.'),
@@ -355,6 +377,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 5: Poetry II',
     title: 'The Shakespearean sonnet form',
     prompt: 'A fourteen-line poem in iambic pentameter is organized into three quatrains and a final couplet, rhyming ABAB CDCD EFEF GG. This is a:',
+    mentorHint: 'Count the structural divisions and the rhyme scheme.',
     correct: 'Shakespearean (English) sonnet',
     wrong: [
       miss('Petrarchan (Italian) sonnet', 'A Petrarchan sonnet divides into an octave and a sestet (ABBAABBA + a sestet), not three quatrains and a couplet.', 'Count the structural divisions and the rhyme scheme.'),
@@ -370,6 +393,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 5: Poetry II',
     title: 'The volta or turn',
     prompt: 'In a sonnet, the line where the argument or emotion pivots, often signaled by words like "But," "Yet," or "And yet," is known as the:',
+    mentorHint: 'A volta turns the argument; a caesura pauses a line.',
     correct: 'Volta, or turn',
     wrong: [
       miss('Caesura', 'A caesura is a mid-line pause; the volta is a structural shift in the poem\'s thought, not a pause within a line.', 'A volta turns the argument; a caesura pauses a line.'),
@@ -385,6 +409,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 5: Poetry II',
     title: 'Alliteration and consonance',
     prompt: 'The phrase "the silken, sad, uncertain rustling of each purple curtain" (Poe) repeats the "s" sound at the start of stressed words. This sound device is most precisely called:',
+    mentorHint: 'Ask whether the repeated sound is a vowel or a consonant.',
     correct: 'Alliteration, the repetition of initial consonant sounds in nearby words',
     wrong: [
       miss('Assonance, the repetition of vowel sounds', 'Assonance repeats vowel sounds within words; here the repeated sound is an initial consonant, which is alliteration.', 'Ask whether the repeated sound is a vowel or a consonant.'),
@@ -400,6 +425,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 5: Poetry II',
     title: 'Apostrophe in poetry',
     prompt: 'A speaker cries, "O wild West Wind, thou breath of Autumn\'s being," directly addressing the wind as if it could hear. This device is:',
+    mentorHint: 'Apostrophe is about addressing; personification is about granting human traits.',
     correct: 'Apostrophe, direct address to an absent person, abstraction, or nonhuman thing',
     wrong: [
       miss('Personification, because the wind is given breath', 'The wind is also personified, but the device named by direct address ("O wild West Wind") is apostrophe; the question asks about the act of addressing.', 'Apostrophe is about addressing; personification is about granting human traits.'),
@@ -418,6 +444,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 6: Longer Fiction or Drama II',
     title: 'Free indirect discourse',
     prompt: 'A third-person narrator writes: "She would not, could not marry such a man. The very idea was insupportable." The blending of the narrator\'s voice with the character\'s inner judgment is called:',
+    mentorHint: 'Look for quotation marks and first-person pronouns.',
     correct: 'Free indirect discourse, blending narration with a character\'s thoughts without quotation marks',
     wrong: [
       miss('Direct discourse, because we hear the character\'s exact words', 'Direct discourse quotes a character explicitly with quotation marks ("I will not marry him"); here the character\'s thought is woven into third-person narration.', 'Look for quotation marks and first-person pronouns.'),
@@ -433,6 +460,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 6: Longer Fiction or Drama II',
     title: 'In medias res',
     prompt: 'An epic begins in the tenth year of a war, with the hero already shipwrecked, and only later fills in how events reached that point. Beginning a narrative in the middle of the action is called:',
+    mentorHint: 'In medias res is where the story opens, not a later insertion.',
     correct: 'In medias res',
     wrong: [
       miss('A flashback', 'A flashback is a scene that interrupts the present to depict an earlier event; in medias res refers specifically to starting the whole narrative mid-action.', 'In medias res is where the story opens, not a later insertion.'),
@@ -448,6 +476,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 6: Longer Fiction or Drama II',
     title: 'Frame narrative',
     prompt: 'A novel opens with a sea captain writing letters; within those letters he records a stranger\'s entire life story, which contains yet another character\'s account. This nested structure is best described as a:',
+    mentorHint: 'Frame structure is about embedding stories, not rendering thought.',
     correct: 'Frame narrative, a story enclosed within another story',
     wrong: [
       miss('Stream of consciousness', 'Stream of consciousness depicts the flow of a single mind; it does not describe stories nested within stories.', 'Frame structure is about embedding stories, not rendering thought.'),
@@ -463,6 +492,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 6: Longer Fiction or Drama II',
     title: 'Bildungsroman',
     prompt: 'A novel traces an orphan from a harsh childhood through schooling, mistakes, and hard-won maturity, focusing on her psychological and moral growth into adulthood. This genre is a:',
+    mentorHint: 'Picaresque emphasizes episodic roguery over inner formation.',
     correct: 'Bildungsroman, a coming-of-age novel of formation and maturation',
     wrong: [
       miss('A picaresque novel', 'A picaresque follows a roguish hero through episodic adventures, often without inner moral development; a bildungsroman centers on growth into maturity.', 'Picaresque emphasizes episodic roguery over inner formation.'),
@@ -478,6 +508,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 6: Longer Fiction or Drama II',
     title: 'Pacing and narrative time',
     prompt: 'A chapter compresses twenty years into a single paragraph, then devotes ten pages to one tense afternoon. The contrast in how much text covers how much story time is a matter of:',
+    mentorHint: 'Pacing is about speed of narration, not place.',
     correct: 'Pacing, the manipulation of narrative time relative to story time',
     wrong: [
       miss('Setting, because time and place are described', 'Setting establishes where and when; pacing concerns how quickly or slowly narration moves through story time.', 'Pacing is about speed of narration, not place.'),
@@ -496,6 +527,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 7: Short Fiction III',
     title: 'Verbal irony',
     prompt: 'Watching a downpour ruin a long-planned picnic, a soaked character mutters, "What perfect weather for a day outdoors." The mismatch between the words and the intended meaning is:',
+    mentorHint: 'Locate the irony in the words spoken.',
     correct: 'Verbal irony, saying the opposite of what is actually meant',
     wrong: [
       miss('Situational irony, because the day went wrong', 'The situation is unfortunate, but the irony named here lives in the spoken statement that contradicts its meaning, which is verbal irony.', 'Locate the irony in the words spoken.'),
@@ -511,6 +543,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 7: Short Fiction III',
     title: 'Connotation vs. denotation',
     prompt: 'A writer chooses "scrawny" rather than "slender" to describe a figure. Both can mean thin, but "scrawny" adds an unflattering shade of meaning. This added emotional coloring is the word\'s:',
+    mentorHint: 'Denotation is the dictionary sense; connotation is the implied feeling.',
     correct: 'Connotation, the emotional or cultural associations a word carries beyond its literal meaning',
     wrong: [
       miss('Denotation, the literal dictionary definition', 'Denotation is the strict literal meaning ("thin"); the unflattering shade is the connotation, the associated feeling.', 'Denotation is the dictionary sense; connotation is the implied feeling.'),
@@ -526,6 +559,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 7: Short Fiction III',
     title: 'Juxtaposition for meaning',
     prompt: 'A story places a lavish wedding feast directly beside a scene of starving beggars at the gate, with no commentary. Setting these contrasting scenes side by side to generate meaning is:',
+    mentorHint: 'Juxtaposition is about contrast now, not prediction.',
     correct: 'Juxtaposition, placing contrasting elements side by side to create effect',
     wrong: [
       miss('Foreshadowing, because the feast predicts the future', 'Foreshadowing hints at events to come; juxtaposition is the side-by-side placement of contrasting elements for present effect.', 'Juxtaposition is about contrast now, not prediction.'),
@@ -541,6 +575,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 7: Short Fiction III',
     title: 'Interpreting an ambiguous ending',
     prompt: 'A story ends with a character standing at an open door, neither entering nor leaving, and the narration stops. The best AP-level interpretation of this deliberate ambiguity is that it:',
+    mentorHint: 'Treat ambiguity as intentional craft to be interpreted.',
     correct: 'Invites multiple defensible readings and dramatizes the character\'s unresolved choice',
     wrong: [
       miss('Proves the author failed to finish the story', 'Deliberate open endings are a craft choice, not a failure; the ambiguity is meaningful, not accidental.', 'Treat ambiguity as intentional craft to be interpreted.'),
@@ -556,6 +591,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 7: Short Fiction III',
     title: 'Style and syntax',
     prompt: 'One writer favors long, clause-heavy sentences that accumulate qualifications; another writes in clipped, blunt fragments. This difference in their characteristic sentence construction is primarily a matter of:',
+    mentorHint: 'Diction is word choice; syntax is sentence structure.',
     correct: 'Syntax, the arrangement and structure of words and sentences',
     wrong: [
       miss('Diction, the choice of individual words', 'Diction concerns which words are chosen; the contrast here is in sentence length and structure, which is syntax.', 'Diction is word choice; syntax is sentence structure.'),
@@ -574,6 +610,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 8: Poetry III',
     title: 'Extended (controlling) metaphor',
     prompt: 'A poem develops a single comparison of life to a voyage across an entire poem, returning repeatedly to sails, storms, and harbor. A metaphor sustained throughout a work is called:',
+    mentorHint: 'Check for comparison words and for sustained development.',
     correct: 'An extended (or controlling) metaphor',
     wrong: [
       miss('A simile, because life is compared to a voyage', 'The comparison is asserted, not made with "like" or "as," and its defining feature is being sustained throughout, which makes it an extended metaphor.', 'Check for comparison words and for sustained development.'),
@@ -589,6 +626,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 8: Poetry III',
     title: 'Synecdoche vs. metonymy',
     prompt: 'When a captain orders "All hands on deck," the word "hands" stands in for the whole sailors. This substitution of a part for the whole is:',
+    mentorHint: 'Synecdoche is part-for-whole; metonymy is association.',
     correct: 'Synecdoche',
     wrong: [
       miss('Metonymy', 'Metonymy substitutes a closely associated thing (e.g., "the crown" for the monarchy), whereas synecdoche specifically uses a part to represent the whole.', 'Synecdoche is part-for-whole; metonymy is association.'),
@@ -604,6 +642,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 8: Poetry III',
     title: 'Free verse',
     prompt: 'A poem has irregular line lengths, no consistent meter, and no rhyme scheme, relying instead on cadence and imagery, as in much of Walt Whitman\'s work. This form is:',
+    mentorHint: 'Blank verse keeps the meter; free verse drops it.',
     correct: 'Free verse, poetry without regular meter or rhyme',
     wrong: [
       miss('Blank verse', 'Blank verse is unrhymed but written in regular iambic pentameter; free verse abandons regular meter altogether.', 'Blank verse keeps the meter; free verse drops it.'),
@@ -619,6 +658,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 8: Poetry III',
     title: 'Allusion',
     prompt: 'A modern poem about a doomed love affair calls the lovers "star-crossed," borrowing a phrase that evokes Shakespeare\'s tragedy. This reference to another well-known work is an:',
+    mentorHint: 'Allusion gestures; analogy explains in detail.',
     correct: 'Allusion, a brief reference to another text, person, or event the reader is expected to recognize',
     wrong: [
       miss('An analogy explaining one idea by another', 'An analogy systematically maps one situation onto another to explain it; an allusion is a brief evocative reference, not an explanatory mapping.', 'Allusion gestures; analogy explains in detail.'),
@@ -634,6 +674,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 8: Poetry III',
     title: 'Paradox',
     prompt: 'A poem declares, "Death, thou shalt die," asserting that death itself will perish. A statement that seems self-contradictory yet reveals a deeper truth is a:',
+    mentorHint: 'Oxymoron is two words; paradox is a whole statement.',
     correct: 'Paradox',
     wrong: [
       miss('An oxymoron', 'An oxymoron pairs two contradictory words ("deafening silence"); a paradox is a fuller statement that appears contradictory but conveys truth.', 'Oxymoron is two words; paradox is a whole statement.'),
@@ -652,6 +693,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 9: Longer Fiction or Drama III',
     title: 'Tragedy vs. comedy structure',
     prompt: 'In classical dramatic terms, a play that moves a high-status protagonist from prosperity to ruin and death, arousing pity and fear, belongs to which genre?',
+    mentorHint: 'Comedy tends to end in restoration; tragedy in fall.',
     correct: 'Tragedy',
     wrong: [
       miss('Comedy', 'Comedy conventionally moves toward reconciliation, marriage, and renewed social order, not the protagonist\'s downfall and death.', 'Comedy tends to end in restoration; tragedy in fall.'),
@@ -667,6 +709,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 9: Longer Fiction or Drama III',
     title: 'Allegory',
     prompt: 'A novella about farm animals overthrowing their farmer and forming a corrupt new regime systematically maps each character and event onto figures and stages of a real political revolution. This sustained correspondence makes the work an:',
+    mentorHint: 'A simile is a single comparison; allegory runs through the whole work.',
     correct: 'Allegory, a narrative in which characters and events consistently represent abstract ideas or real events',
     wrong: [
       miss('An extended simile', 'A simile is an explicit comparison using "like" or "as"; an allegory is a whole narrative whose elements stand for other things.', 'A simile is a single comparison; allegory runs through the whole work.'),
@@ -682,6 +725,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 9: Longer Fiction or Drama III',
     title: 'How setting shapes meaning',
     prompt: 'A novel is set in a rigidly stratified society where one\'s street address fixes one\'s entire future. The best account of how this setting functions is that it:',
+    mentorHint: 'Ask whether the setting shapes the story\'s ideas.',
     correct: 'Embodies the novel\'s thematic concern with class and constrained opportunity',
     wrong: [
       miss('Merely provides realistic background with no thematic role', 'A setting that determines characters\' fates is doing thematic work, not just supplying backdrop.', 'Ask whether the setting shapes the story\'s ideas.'),
@@ -697,6 +741,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Unit 9: Longer Fiction or Drama III',
     title: 'Catharsis',
     prompt: 'Aristotle argued that watching a tragedy produces in the audience a purging of built-up pity and fear, leaving them emotionally cleansed. This effect is called:',
+    mentorHint: 'Hamartia is a character\'s flaw; catharsis is the audience\'s response.',
     correct: 'Catharsis',
     wrong: [
       miss('Hamartia', 'Hamartia is the protagonist\'s tragic error or flaw, not the audience\'s emotional release.', 'Hamartia is a character\'s flaw; catharsis is the audience\'s response.'),
@@ -715,6 +760,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Literary Argumentation',
     title: 'What makes a defensible thesis',
     prompt: 'On an AP literary-analysis essay, which of the following is the strongest thesis statement?',
+    mentorHint: 'A thesis argues a point; this only names the topic.',
     correct: 'Through the recurring image of locked rooms, the novel argues that secrecy corrodes intimacy even among those who love each other',
     wrong: [
       miss('This novel is about a family with many secrets', 'This restates the subject without making an interpretive claim about meaning; a thesis must assert an arguable idea.', 'A thesis argues a point; this only names the topic.'),
@@ -730,6 +776,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Literary Argumentation',
     title: 'Commentary vs. paraphrase',
     prompt: 'After quoting a line, a student writes only, "This shows the character walked to the window and looked outside." The main weakness of this sentence in a literary argument is that it:',
+    mentorHint: 'The issue is what follows the quote, not whether one exists.',
     correct: 'Merely paraphrases the action instead of analyzing how it conveys meaning',
     wrong: [
       miss('Fails to include a direct quotation from the text', 'The problem assumes a quotation precedes it; the weakness is the absence of analysis, not the absence of evidence.', 'The issue is what follows the quote, not whether one exists.'),
@@ -745,6 +792,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Literary Argumentation',
     title: 'Line of reasoning',
     prompt: 'In an AP essay, the "line of reasoning" refers primarily to:',
+    mentorHint: 'Reasoning is about logical structure, not a device tally.',
     correct: 'The logical sequence of claims and evidence that develops and supports the thesis',
     wrong: [
       miss('The number of literary devices the essay names', 'Counting devices is not reasoning; a line of reasoning is the logical progression that connects claims to the thesis.', 'Reasoning is about logical structure, not a device tally.'),
@@ -760,6 +808,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Literary Argumentation',
     title: 'Selecting the best evidence',
     prompt: 'To support a thesis that a character\'s pride causes her downfall, which kind of evidence is most effective?',
+    mentorHint: 'Choose a precise moment, not a sweeping summary.',
     correct: 'A specific moment where her pride leads her to reject help that could have saved her',
     wrong: [
       miss('A long plot summary of the entire second half of the novel', 'Broad summary is not targeted evidence; effective support cites a specific moment tied directly to the claim.', 'Choose a precise moment, not a sweeping summary.'),
@@ -778,6 +827,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Reading Closely',
     title: 'Inference from detail',
     prompt: 'A passage notes only that a man "folded the unopened letter, set it on the mantel, and poured a second drink before noon." The best inference about his state is that he is:',
+    mentorHint: 'Read the specific actions: he does not open it.',
     correct: 'Avoiding or dreading the letter\'s contents',
     wrong: [
       miss('Eager and excited to read the letter', 'Leaving it unopened and reaching for a drink instead suggests reluctance, not eagerness.', 'Read the specific actions: he does not open it.'),
@@ -793,6 +843,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Reading Closely',
     title: 'Shift in tone',
     prompt: 'A poem opens with playful, sunlit imagery, then at its midpoint introduces "but now the frost," followed by cold, hard images. The word "but" most clearly marks a:',
+    mentorHint: 'Connect the shift to mood and imagery, not rhyme.',
     correct: 'Tonal shift from lightness to bleakness',
     wrong: [
       miss('A change in the poem\'s rhyme scheme', 'The signal "but" introduces a shift in tone and imagery, not necessarily a change in the rhyme pattern.', 'Connect the shift to mood and imagery, not rhyme.'),
@@ -808,6 +859,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Reading Closely',
     title: 'Foreshadowing',
     prompt: 'Early in a novel, a character idly remarks that the old bridge "won\'t last another hard winter," and chapters later the bridge collapses during a storm, killing a traveler. The early remark is an example of:',
+    mentorHint: 'Foreshadowing looks ahead; flashback looks back.',
     correct: 'Foreshadowing, an early hint that prepares the reader for a later event',
     wrong: [
       miss('A flashback to an earlier event', 'A flashback depicts a past event; foreshadowing points forward to something that will happen.', 'Foreshadowing looks ahead; flashback looks back.'),
@@ -823,6 +875,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Reading Closely',
     title: 'Identifying a symbol',
     prompt: 'In a novel, a green light glows at the end of a distant dock, and the protagonist reaches toward it whenever he thinks of his unreachable dream. Within the story, the green light most fully functions as a:',
+    mentorHint: 'Notice the pattern linking the object to an idea.',
     correct: 'Symbol representing the protagonist\'s longing and unattainable aspiration',
     wrong: [
       miss('A literal detail with no meaning beyond the scene', 'The recurring association of the light with the protagonist\'s yearning signals symbolic meaning beyond its literal presence.', 'Notice the pattern linking the object to an idea.'),
@@ -838,6 +891,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Reading Closely',
     title: 'Hyperbole and understatement',
     prompt: 'A speaker who has lost everything in a fire says flatly, "Well, that\'s a bit of a nuisance." This deliberate minimizing of something enormous is:',
+    mentorHint: 'Ask whether the statement inflates or deflates the reality.',
     correct: 'Understatement, presenting something as smaller or less significant than it is',
     wrong: [
       miss('Hyperbole, deliberate exaggeration for effect', 'Hyperbole overstates; here the speaker drastically downplays a catastrophe, which is understatement, the opposite move.', 'Ask whether the statement inflates or deflates the reality.'),
@@ -853,6 +907,7 @@ export const colApEnglishLiteratureHigh103TopUpQuestions: Question[] = makeQuest
     chapter: 'Reading Closely',
     title: 'Mood versus tone',
     prompt: 'A critic distinguishes between the atmosphere a text creates in the reader and the attitude the author or speaker takes toward the subject. The atmosphere felt by the reader is the work\'s:',
+    mentorHint: 'Mood is what the reader feels; tone is the writer\'s attitude.',
     correct: 'Mood',
     wrong: [
       miss('Tone, the attitude toward the subject', 'Tone is the author\'s or speaker\'s attitude toward the subject; the atmosphere the reader feels is the mood. The two are related but distinct.', 'Mood is what the reader feels; tone is the writer\'s attitude.'),

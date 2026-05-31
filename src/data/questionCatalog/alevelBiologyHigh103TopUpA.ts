@@ -11,6 +11,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Biological molecules: carbohydrates',
     title: 'Monosaccharide bonding',
     prompt: 'Two alpha-glucose molecules join to form maltose. What type of reaction occurs and what bond forms?',
+    mentorHint: 'Decide whether water is released or added.',
     correct: 'A condensation reaction forming a 1,4-glycosidic bond',
     wrong: [
       miss('A hydrolysis reaction forming a glycosidic bond', 'Hydrolysis breaks bonds by adding water; joining monomers is condensation.', 'Decide whether water is released or added.'),
@@ -26,6 +27,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Biological molecules: carbohydrates',
     title: 'Reducing sugar test',
     prompt: 'A student adds Benedict\'s solution to a sample and heats it. The solution turns brick-red. What does this indicate?',
+    mentorHint: 'A positive Benedict\'s result detects reducing sugars directly.',
     correct: 'A high concentration of reducing sugar is present',
     wrong: [
       miss('A non-reducing sugar is present', 'Non-reducing sugars give no colour change unless first hydrolysed with acid.', 'A positive Benedict\'s result detects reducing sugars directly.'),
@@ -41,6 +43,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Biological molecules: lipids',
     title: 'Triglyceride structure',
     prompt: 'Which statement correctly describes the structure of a triglyceride?',
+    mentorHint: 'A triglyceride has no phosphate group.',
     correct: 'One glycerol joined to three fatty acids by ester bonds',
     wrong: [
       miss('One glycerol joined to two fatty acids and a phosphate group', 'That describes a phospholipid, not a triglyceride.', 'A triglyceride has no phosphate group.'),
@@ -56,6 +59,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Proteins and enzymes',
     title: 'Protein structure levels',
     prompt: 'What does the tertiary structure of a protein refer to?',
+    mentorHint: 'Identify which level is just the order of residues.',
     correct: 'The overall three-dimensional shape held by bonds between R groups',
     wrong: [
       miss('The sequence of amino acids in the polypeptide chain', 'That is the primary structure.', 'Identify which level is just the order of residues.'),
@@ -71,6 +75,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Proteins and enzymes',
     title: 'Enzyme lowering activation energy',
     prompt: 'How does an enzyme increase the rate of a reaction?',
+    mentorHint: 'Think about the energy barrier, not the temperature.',
     correct: 'By lowering the activation energy required for the reaction',
     wrong: [
       miss('By raising the temperature of the reaction mixture', 'Enzymes do not heat the system; they reduce the energy barrier.', 'Think about the energy barrier, not the temperature.'),
@@ -86,6 +91,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Proteins and enzymes',
     title: 'Competitive inhibition',
     prompt: 'A competitive inhibitor has a similar shape to the substrate. What is the effect of increasing substrate concentration on its inhibition?',
+    mentorHint: 'Think about what the inhibitor and substrate compete for.',
     correct: 'Inhibition is reduced because substrate outcompetes the inhibitor for the active site',
     wrong: [
       miss('Inhibition increases because more enzyme-substrate complexes form', 'Adding substrate displaces a competitive inhibitor, reducing its effect.', 'Think about what the inhibitor and substrate compete for.'),
@@ -101,6 +107,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Nucleic acids and ATP',
     title: 'DNA nucleotide components',
     prompt: 'Which three components make up a single DNA nucleotide?',
+    mentorHint: 'Note the sugar difference between DNA and RNA.',
     correct: 'A deoxyribose sugar, a phosphate group and a nitrogenous base',
     wrong: [
       miss('A ribose sugar, a phosphate group and a nitrogenous base', 'Ribose is found in RNA; DNA contains deoxyribose.', 'Note the sugar difference between DNA and RNA.'),
@@ -116,6 +123,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Nucleic acids and ATP',
     title: 'ATP hydrolysis',
     prompt: 'What are the immediate products when ATP is hydrolysed to release energy in a cell?',
+    mentorHint: 'Consider how many phosphates are removed in one step.',
     correct: 'ADP and an inorganic phosphate (Pi)',
     wrong: [
       miss('AMP and two inorganic phosphates', 'Single-step hydrolysis removes one phosphate, giving ADP, not AMP.', 'Consider how many phosphates are removed in one step.'),
@@ -131,6 +139,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Biological molecules: water and ions',
     title: 'Water as a solvent',
     prompt: 'Why is water an excellent solvent for ionic substances and polar molecules?',
+    mentorHint: 'Reconsider whether water is polar or nonpolar.',
     correct: 'Its polarity lets water molecules surround and separate charged particles',
     wrong: [
       miss('Water molecules are nonpolar and so mix with everything', 'Water is polar; that polarity is the reason it dissolves ionic solutes.', 'Reconsider whether water is polar or nonpolar.'),
@@ -146,6 +155,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Biological molecules: carbohydrates',
     title: 'Starch versus cellulose',
     prompt: 'Starch and cellulose are both polymers of glucose. What key difference explains their very different properties?',
+    mentorHint: 'Both are pure carbohydrates.',
     correct: 'Starch is made of alpha-glucose while cellulose is made of beta-glucose',
     wrong: [
       miss('Starch contains nitrogen while cellulose does not', 'Neither polysaccharide contains nitrogen; both are made only of glucose.', 'Both are pure carbohydrates.'),
@@ -161,6 +171,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Proteins and enzymes',
     title: 'Effect of temperature on enzymes',
     prompt: 'Above its optimum temperature, an enzyme\'s rate of reaction falls sharply. What is the main reason?',
+    mentorHint: 'Focus on what denaturing affects.',
     correct: 'Bonds maintaining the tertiary structure break, denaturing the active site',
     wrong: [
       miss('The substrate molecules denature and can no longer bind', 'It is the enzyme, not the substrate, whose shape is lost on heating.', 'Focus on what denaturing affects.'),
@@ -177,6 +188,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Cell structure and microscopy',
     title: 'Function of the rough endoplasmic reticulum',
     prompt: 'What is the main function of the rough endoplasmic reticulum?',
+    mentorHint: 'Distinguish rough from smooth ER by their attached ribosomes.',
     correct: 'Folding and transport of proteins made by attached ribosomes',
     wrong: [
       miss('Synthesis and transport of lipids and steroids', 'That is the role of the smooth endoplasmic reticulum.', 'Distinguish rough from smooth ER by their attached ribosomes.'),
@@ -192,6 +204,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Cell structure and microscopy',
     title: 'Prokaryotic versus eukaryotic cells',
     prompt: 'Which feature is found in eukaryotic cells but never in prokaryotic cells?',
+    mentorHint: 'Look for a feature unique to eukaryotes.',
     correct: 'A nucleus enclosed by a double membrane',
     wrong: [
       miss('A cell-surface membrane', 'Both prokaryotic and eukaryotic cells have a cell-surface membrane.', 'Look for a feature unique to eukaryotes.'),
@@ -207,6 +220,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Cell structure and microscopy',
     title: 'Magnification calculation',
     prompt: 'A cell measures 50 micrometres in real life and appears 10 millimetres long in a drawing. What is the magnification?',
+    mentorHint: 'Convert both measurements to the same unit first.',
     correct: '200',
     wrong: [
       miss('5', 'This divides 10 by 2 instead of converting to matching units.', 'Convert both measurements to the same unit first.'),
@@ -222,6 +236,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Cell structure and microscopy',
     title: 'Magnification versus resolution',
     prompt: 'Why can an electron microscope reveal more detail than a light microscope?',
+    mentorHint: 'The key advantage is resolution, set by wavelength.',
     correct: 'Electrons have a much shorter wavelength, giving higher resolution',
     wrong: [
       miss('Electron microscopes provide much greater magnification only', 'Greater magnification without resolution would just give a bigger blur.', 'The key advantage is resolution, set by wavelength.'),
@@ -237,6 +252,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Cell structure and microscopy',
     title: 'Cell fractionation steps',
     prompt: 'During cell fractionation, why is the tissue placed in a cold, buffered, isotonic solution?',
+    mentorHint: 'Cold conditions reduce, not increase, enzyme activity.',
     correct: 'To prevent enzyme damage, pH change and osmotic bursting of organelles',
     wrong: [
       miss('To speed up enzyme reactions that break down organelles', 'A cold solution slows enzymes to protect organelles, not speed digestion.', 'Cold conditions reduce, not increase, enzyme activity.'),
@@ -252,6 +268,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Cell division and the cell cycle',
     title: 'Order of mitosis',
     prompt: 'In which stage of mitosis do chromosomes line up along the equator of the cell?',
+    mentorHint: 'Alignment at the equator names a specific phase.',
     correct: 'Metaphase',
     wrong: [
       miss('Prophase', 'In prophase chromosomes condense and the spindle forms, but they are not yet aligned.', 'Alignment at the equator names a specific phase.'),
@@ -267,6 +284,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Cell division and the cell cycle',
     title: 'Role of the cell cycle and cancer',
     prompt: 'How do many cancer treatments target rapidly dividing cells?',
+    mentorHint: 'Consider whether you want more or less division.',
     correct: 'They disrupt processes such as DNA replication or spindle formation during the cell cycle',
     wrong: [
       miss('They increase the rate of mitosis in tumour cells', 'Treatments aim to stop, not accelerate, division of tumour cells.', 'Consider whether you want more or less division.'),
@@ -282,6 +300,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Transport across cell membranes',
     title: 'Structure of the cell-surface membrane',
     prompt: 'Which model best describes the arrangement of components in a cell-surface membrane?',
+    mentorHint: 'Recall how many phospholipid layers there are.',
     correct: 'A fluid-mosaic of a phospholipid bilayer with proteins moving within it',
     wrong: [
       miss('A rigid single layer of phospholipids coated with protein', 'Membranes are a bilayer and are fluid, not a rigid single layer.', 'Recall how many phospholipid layers there are.'),
@@ -297,6 +316,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Transport across cell membranes',
     title: 'Osmosis direction',
     prompt: 'A plant cell with a water potential of -400 kPa is placed in a solution with a water potential of -200 kPa. In which direction does water move?',
+    mentorHint: 'Water moves toward the more negative water potential.',
     correct: 'Into the cell, because water moves to the more negative water potential',
     wrong: [
       miss('Out of the cell, because the cell has the higher solute concentration', 'Higher solute means more negative water potential, so water moves in, not out.', 'Water moves toward the more negative water potential.'),
@@ -312,6 +332,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Transport across cell membranes',
     title: 'Active transport features',
     prompt: 'Which feature distinguishes active transport from facilitated diffusion?',
+    mentorHint: 'Focus on the energy source.',
     correct: 'Active transport requires ATP and can move substances against a concentration gradient',
     wrong: [
       miss('Active transport uses carrier proteins while facilitated diffusion does not', 'Both can use carrier proteins; the key difference is energy use.', 'Focus on the energy source.'),
@@ -327,6 +348,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'The immune system',
     title: 'Phagocytosis and lysosomes',
     prompt: 'After a phagocyte engulfs a pathogen into a phagosome, what is the role of the lysosome?',
+    mentorHint: 'Lysosomes contain digestive enzymes.',
     correct: 'It fuses with the phagosome and releases enzymes to digest the pathogen',
     wrong: [
       miss('It produces antibodies that bind to the pathogen', 'Antibodies are made by B lymphocytes (plasma cells), not lysosomes.', 'Lysosomes contain digestive enzymes.'),
@@ -342,6 +364,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'The immune system',
     title: 'Antigens and the immune response',
     prompt: 'What is an antigen?',
+    mentorHint: 'Distinguish the trigger from the response molecule.',
     correct: 'A molecule, often a protein, that triggers an immune response',
     wrong: [
       miss('A protein produced by B cells to destroy pathogens', 'That describes an antibody, which is produced in response to an antigen.', 'Distinguish the trigger from the response molecule.'),
@@ -357,6 +380,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'The immune system',
     title: 'Primary versus secondary immune response',
     prompt: 'Why is the secondary immune response to a previously encountered pathogen faster and stronger?',
+    mentorHint: 'Consider what the body retains after the first exposure.',
     correct: 'Memory cells produced in the first response respond rapidly on re-exposure',
     wrong: [
       miss('The pathogen has become weaker since the first infection', 'The response is faster because of the body\'s memory cells, not a weaker pathogen.', 'Consider what the body retains after the first exposure.'),
@@ -372,6 +396,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'The immune system',
     title: 'How vaccines work',
     prompt: 'How does a vaccine provide immunity without causing the disease?',
+    mentorHint: 'Active immunity involves making your own memory cells.',
     correct: 'It introduces antigens that trigger antibody and memory cell production',
     wrong: [
       miss('It supplies ready-made antibodies that last for life', 'Injecting antibodies gives only short-term passive immunity, not lasting protection.', 'Active immunity involves making your own memory cells.'),
@@ -388,6 +413,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Gas exchange and surface area',
     title: 'Surface area to volume ratio',
     prompt: 'Why do small organisms not need specialised gas exchange systems while large organisms do?',
+    mentorHint: 'Reconsider how the ratio changes with size.',
     correct: 'Small organisms have a large surface area to volume ratio, so diffusion is sufficient',
     wrong: [
       miss('Small organisms have a smaller surface area to volume ratio', 'Smaller organisms have a larger, not smaller, surface area to volume ratio.', 'Reconsider how the ratio changes with size.'),
@@ -403,6 +429,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Gas exchange and surface area',
     title: 'Counter-current flow in fish gills',
     prompt: 'How does the counter-current flow in fish gills maximise oxygen uptake?',
+    mentorHint: 'Opposite directions keep the gradient.',
     correct: 'Blood and water flow in opposite directions, maintaining a diffusion gradient along the whole lamella',
     wrong: [
       miss('Blood and water flow in the same direction, equalising oxygen levels quickly', 'Parallel flow would equalise concentrations and stop diffusion partway.', 'Opposite directions keep the gradient.'),
@@ -418,6 +445,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Gas exchange and surface area',
     title: 'Insect tracheal system',
     prompt: 'How do gases primarily reach respiring tissues in an insect?',
+    mentorHint: 'Insects deliver gas directly to tissues, bypassing blood.',
     correct: 'They diffuse through a branching network of tracheae and tracheoles directly to the cells',
     wrong: [
       miss('They are carried dissolved in the blood to every cell', 'Insect blood (haemolymph) is not the main route for oxygen transport.', 'Insects deliver gas directly to tissues, bypassing blood.'),
@@ -433,6 +461,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Gas exchange and surface area',
     title: 'Adaptations of alveoli',
     prompt: 'Which adaptation of alveoli most increases the rate of gas exchange in the lungs?',
+    mentorHint: 'Thinner walls speed diffusion.',
     correct: 'A large total surface area combined with a thin, one-cell-thick wall',
     wrong: [
       miss('A thick muscular wall to pump air in and out', 'A thick wall would lengthen the diffusion distance and slow exchange.', 'Thinner walls speed diffusion.'),
@@ -448,6 +477,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Gas exchange and surface area',
     title: 'Fick\'s law of diffusion',
     prompt: 'According to Fick\'s law, the rate of diffusion across a surface is proportional to which combination?',
+    mentorHint: 'Larger area and shorter distance both speed diffusion.',
     correct: 'Surface area multiplied by concentration difference, divided by diffusion distance',
     wrong: [
       miss('Diffusion distance multiplied by concentration difference, divided by surface area', 'Surface area should be on top and distance on the bottom of the relationship.', 'Larger area and shorter distance both speed diffusion.'),
@@ -463,6 +493,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mass transport in animals',
     title: 'Haemoglobin and oxygen dissociation',
     prompt: 'The oxygen dissociation curve for haemoglobin is S-shaped (sigmoid). What does this shape reflect?',
+    mentorHint: 'The curve\'s shape implies binding affinity changes.',
     correct: 'Cooperative binding, where the first oxygen binding makes further binding easier',
     wrong: [
       miss('Oxygen binding to haemoglobin one molecule at a time at a constant rate', 'A constant rate would give a straight line, not a sigmoid curve.', 'The curve\'s shape implies binding affinity changes.'),
@@ -478,6 +509,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mass transport in animals',
     title: 'The Bohr effect',
     prompt: 'In actively respiring tissues, carbon dioxide concentration is high. What effect does this have on haemoglobin\'s oxygen affinity?',
+    mentorHint: 'Active tissues need more oxygen released.',
     correct: 'It lowers oxygen affinity, so more oxygen is released to the tissues',
     wrong: [
       miss('It raises oxygen affinity, so haemoglobin holds onto oxygen', 'Higher carbon dioxide lowers affinity, releasing oxygen where it is needed.', 'Active tissues need more oxygen released.'),
@@ -493,6 +525,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mass transport in animals',
     title: 'Structure of arteries',
     prompt: 'Which structural feature of arteries is an adaptation to withstand and maintain high blood pressure?',
+    mentorHint: 'Match the structure to high-pressure vessels.',
     correct: 'Thick walls with a high proportion of elastic tissue and smooth muscle',
     wrong: [
       miss('A very thin wall just one cell thick', 'A one-cell-thick wall describes capillaries, not arteries.', 'Match the structure to high-pressure vessels.'),
@@ -508,6 +541,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mass transport in animals',
     title: 'Tissue fluid formation',
     prompt: 'At the arteriole end of a capillary, what causes tissue fluid to be forced out of the blood?',
+    mentorHint: 'No ATP is required to form tissue fluid.',
     correct: 'High hydrostatic pressure exceeds the opposing water potential gradient',
     wrong: [
       miss('Active transport pumps plasma out of the capillary', 'Tissue fluid forms by pressure filtration, not active transport.', 'No ATP is required to form tissue fluid.'),
@@ -523,6 +557,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mass transport in animals',
     title: 'The cardiac cycle',
     prompt: 'During ventricular systole, why do the atrioventricular valves close?',
+    mentorHint: 'Valves close when ventricular pressure exceeds atrial.',
     correct: 'Ventricular pressure rises above atrial pressure, forcing the valves shut',
     wrong: [
       miss('Atrial pressure rises above ventricular pressure', 'If atrial pressure were higher, the valves would open, not close.', 'Valves close when ventricular pressure exceeds atrial.'),
@@ -538,6 +573,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mass transport in plants',
     title: 'Transpiration and the cohesion-tension theory',
     prompt: 'According to the cohesion-tension theory, what pulls water up the xylem of a plant?',
+    mentorHint: 'Water movement up xylem is passive.',
     correct: 'Transpiration from the leaves creates tension, and cohesion between water molecules pulls the column up',
     wrong: [
       miss('Active transport in the xylem pumps water upward using ATP', 'Xylem vessels are dead and do not use active transport to move water.', 'Water movement up xylem is passive.'),
@@ -553,6 +589,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mass transport in plants',
     title: 'Translocation in the phloem',
     prompt: 'In the mass flow hypothesis of translocation, what creates the pressure that drives sap from source to sink?',
+    mentorHint: 'Active loading occurs at the source, then bulk flow follows.',
     correct: 'Loading sugars at the source lowers water potential, drawing water in and raising hydrostatic pressure',
     wrong: [
       miss('Sugars are actively pumped along the phloem to the sink', 'Mass flow moves sap by a pressure gradient, not by pumping sugars along the tube.', 'Active loading occurs at the source, then bulk flow follows.'),
@@ -568,6 +605,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Digestion and absorption',
     title: 'Digestion of starch',
     prompt: 'Which enzymes act in sequence to fully digest starch into glucose for absorption?',
+    mentorHint: 'Match the enzyme to its substrate.',
     correct: 'Amylase produces maltose, then maltase breaks maltose into glucose',
     wrong: [
       miss('Lipase produces maltose, then maltase breaks it into glucose', 'Lipase digests lipids, not starch.', 'Match the enzyme to its substrate.'),
@@ -583,6 +621,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Digestion and absorption',
     title: 'Co-transport of glucose in the ileum',
     prompt: 'How is glucose absorbed against its concentration gradient in the ileum?',
+    mentorHint: 'A carrier and an ion gradient are needed.',
     correct: 'By co-transport with sodium ions, which are first pumped out by active transport',
     wrong: [
       miss('By simple diffusion directly through the phospholipid bilayer', 'Glucose is polar and cannot cross the bilayer freely, especially against a gradient.', 'A carrier and an ion gradient are needed.'),
@@ -599,6 +638,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'DNA, genes and protein synthesis',
     title: 'Defining a gene',
     prompt: 'Which statement gives the most accurate definition of a gene?',
+    mentorHint: 'Define a gene by what it codes for at the molecular level.',
     correct: 'A sequence of DNA bases that codes for a polypeptide or functional RNA',
     wrong: [
       miss('A length of DNA that always codes for a single visible characteristic', 'Many characteristics result from several genes, and not all genes give visible traits.', 'Define a gene by what it codes for at the molecular level.'),
@@ -614,6 +654,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'DNA, genes and protein synthesis',
     title: 'The genetic code',
     prompt: 'The genetic code is described as degenerate. What does this mean?',
+    mentorHint: 'It is the amino acids, not the codons, that have multiple options.',
     correct: 'Most amino acids can be coded for by more than one triplet of bases',
     wrong: [
       miss('Each triplet of bases codes for more than one amino acid', 'The code is non-overlapping and each codon specifies only one amino acid.', 'It is the amino acids, not the codons, that have multiple options.'),
@@ -629,6 +670,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'DNA, genes and protein synthesis',
     title: 'Introns and exons',
     prompt: 'During the formation of mature mRNA in eukaryotes, what happens to introns?',
+    mentorHint: 'Only exons end up in mature mRNA.',
     correct: 'They are removed by splicing, leaving only exons in the mature mRNA',
     wrong: [
       miss('They are translated into the final polypeptide', 'Introns are non-coding and are removed before translation.', 'Only exons end up in mature mRNA.'),
@@ -644,6 +686,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'DNA, genes and protein synthesis',
     title: 'Transcription',
     prompt: 'Which enzyme catalyses the formation of mRNA during transcription, and what is the template?',
+    mentorHint: 'Transcription makes RNA, so the enzyme name reflects that.',
     correct: 'RNA polymerase, using one strand of DNA as the template',
     wrong: [
       miss('DNA polymerase, using one strand of DNA as the template', 'DNA polymerase is used in DNA replication, not transcription.', 'Transcription makes RNA, so the enzyme name reflects that.'),
@@ -659,6 +702,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'DNA, genes and protein synthesis',
     title: 'Role of tRNA in translation',
     prompt: 'What is the function of transfer RNA (tRNA) during translation?',
+    mentorHint: 'Distinguish the messenger molecule from the carrier.',
     correct: 'It carries a specific amino acid and matches its anticodon to a codon on mRNA',
     wrong: [
       miss('It carries the genetic code from the nucleus to the ribosome', 'That is the role of mRNA, not tRNA.', 'Distinguish the messenger molecule from the carrier.'),
@@ -674,6 +718,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Genetic variation and mutation',
     title: 'Effect of a base substitution mutation',
     prompt: 'Because the genetic code is degenerate, a single base substitution may have no effect on the polypeptide. Why?',
+    mentorHint: 'Substitutions swap one base, not the frame.',
     correct: 'The new triplet may still code for the same amino acid',
     wrong: [
       miss('The mutation always shifts the reading frame of every codon after it', 'A substitution does not shift the reading frame; that is a deletion or insertion.', 'Substitutions swap one base, not the frame.'),
@@ -689,6 +734,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Meiosis and inheritance',
     title: 'Meiosis and genetic variation',
     prompt: 'Which two processes during meiosis are the main sources of genetic variation between gametes?',
+    mentorHint: 'Variation comes from how chromosomes recombine and assort.',
     correct: 'Crossing over and independent segregation of homologous chromosomes',
     wrong: [
       miss('Semi-conservative replication and the action of DNA polymerase', 'These copy DNA faithfully and do not generate variation between gametes.', 'Variation comes from how chromosomes recombine and assort.'),
@@ -704,6 +750,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Meiosis and inheritance',
     title: 'Comparison of meiosis and mitosis',
     prompt: 'How does the chromosome number of daughter cells produced by meiosis compare with that of the parent cell?',
+    mentorHint: 'Meiosis reduces the chromosome number.',
     correct: 'It is halved, producing haploid cells from a diploid parent',
     wrong: [
       miss('It is the same as the parent, producing identical diploid cells', 'That describes mitosis, not meiosis.', 'Meiosis reduces the chromosome number.'),
@@ -719,6 +766,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Biodiversity and classification',
     title: 'Classification hierarchy',
     prompt: 'Which sequence correctly orders these taxonomic groups from largest to smallest?',
+    mentorHint: 'Largest group should come first.',
     correct: 'Kingdom, Phylum, Class, Order, Family, Genus, Species',
     wrong: [
       miss('Species, Genus, Family, Order, Class, Phylum, Kingdom', 'This lists the groups from smallest to largest, the reverse order.', 'Largest group should come first.'),
@@ -734,6 +782,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Biodiversity and classification',
     title: 'Courtship behaviour',
     prompt: 'Why is species-specific courtship behaviour important for successful reproduction?',
+    mentorHint: 'Think about recognition, not mutation.',
     correct: 'It allows members to recognise mates of the same species and willing to mate',
     wrong: [
       miss('It increases the mutation rate to speed up evolution', 'Courtship does not raise mutation rate; it enables correct mate recognition.', 'Think about recognition, not mutation.'),
@@ -749,6 +798,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Biodiversity and classification',
     title: 'Genetic biodiversity',
     prompt: 'Which measure best reflects the genetic biodiversity within a single species?',
+    mentorHint: 'Focus inside one species, not between species.',
     correct: 'The proportion of genes that have more than one allele (are polymorphic)',
     wrong: [
       miss('The total number of different species in a habitat', 'That measures species diversity, not genetic diversity within a species.', 'Focus inside one species, not between species.'),
@@ -764,6 +814,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Nucleic acids and ATP',
     title: 'Semi-conservative DNA replication',
     prompt: 'In semi-conservative replication, what is the composition of each new DNA molecule?',
+    mentorHint: 'Each new molecule keeps one old strand.',
     correct: 'One original (template) strand and one newly synthesised strand',
     wrong: [
       miss('Two newly synthesised strands, with the original molecule conserved separately', 'That describes conservative replication, which experiments disproved.', 'Each new molecule keeps one old strand.'),
@@ -779,6 +830,7 @@ export const alevelBiologyHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'The immune system',
     title: 'Cell-mediated immunity and T cells',
     prompt: 'What is the role of a helper T cell in the specific immune response?',
+    mentorHint: 'Helper T cells coordinate rather than engulf.',
     correct: 'It releases chemical signals that stimulate B cells and other immune cells to respond',
     wrong: [
       miss('It directly engulfs and digests pathogens by phagocytosis', 'Phagocytosis is carried out by phagocytes, not helper T cells.', 'Helper T cells coordinate rather than engulf.'),

@@ -11,6 +11,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Aspects of tragedy: drama',
     title: 'Hamartia',
     prompt: 'In Aristotelian tragic theory, what does the term "hamartia" most precisely denote?',
+    mentorHint: 'Hamartia is about the protagonist\'s mistake, not the audience\'s feelings.',
     correct: 'An error or flaw in the protagonist that leads to their downfall',
     wrong: [
       miss('The moment the audience feels pity and fear', 'That describes catharsis and its emotional effect, not the cause of the fall.', 'Hamartia is about the protagonist\'s mistake, not the audience\'s feelings.'),
@@ -26,6 +27,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Aspects of tragedy: drama',
     title: 'Catharsis',
     prompt: 'According to Aristotle\'s Poetics, the proper function of tragedy is to arouse pity and fear in order to achieve what?',
+    mentorHint: 'The question asks about the effect on the audience, not the hero\'s trait.',
     correct: 'Catharsis, a purging or purification of those emotions in the audience',
     wrong: [
       miss('Hubris, an excess of pride in the protagonist', 'Hubris is a quality of the tragic hero, not the audience effect tragedy aims to produce.', 'The question asks about the effect on the audience, not the hero\'s trait.'),
@@ -41,6 +43,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Aspects of tragedy: drama',
     title: 'Blank verse',
     prompt: 'Shakespeare\'s tragedies are written largely in blank verse. What is blank verse?',
+    mentorHint: 'The word "blank" signals the absence of rhyme.',
     correct: 'Unrhymed iambic pentameter',
     wrong: [
       miss('Rhymed iambic pentameter arranged in couplets', 'Rhymed pentameter forms heroic couplets; blank verse is specifically unrhymed.', 'The word "blank" signals the absence of rhyme.'),
@@ -56,6 +59,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Aspects of tragedy: drama',
     title: 'Dramatic irony',
     prompt: 'In Othello, the audience knows Iago is deceiving Othello while Othello continues to trust him. This effect is best described as which device?',
+    mentorHint: 'Ask whether the gap is in the words or in what the audience knows.',
     correct: 'Dramatic irony',
     wrong: [
       miss('Verbal irony', 'Verbal irony is a speaker saying the opposite of what they mean; here the irony lies in audience knowledge, not word choice.', 'Ask whether the gap is in the words or in what the audience knows.'),
@@ -73,6 +77,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Reading prose: narrative voice',
     title: 'First-person narrator',
     prompt: 'A novel narrated entirely by a character who uses "I" and reports only what they personally perceive is using which point of view?',
+    mentorHint: 'Look at whether the narrator is inside the story saying "I".',
     correct: 'First-person limited narration',
     wrong: [
       miss('Third-person omniscient narration', 'An omniscient narrator stands outside the story and can access every character\'s thoughts.', 'Look at whether the narrator is inside the story saying "I".'),
@@ -88,6 +93,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Reading prose: narrative voice',
     title: 'Unreliable narrator',
     prompt: 'Which feature most clearly signals that a first-person narrator may be unreliable?',
+    mentorHint: 'Tense is a default choice, not a marker of distortion.',
     correct: 'Their account contradicts evidence the reader gathers elsewhere in the text',
     wrong: [
       miss('They narrate events in the past tense', 'Past-tense narration is the norm for storytelling and says nothing about reliability.', 'Tense is a default choice, not a marker of distortion.'),
@@ -103,6 +109,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Reading prose: narrative voice',
     title: 'Free indirect discourse',
     prompt: 'A third-person narrator writes: "Was she really expected to marry that tedious man? It was unbearable." This technique, blending the narrator\'s voice with the character\'s thoughts, is called what?',
+    mentorHint: 'Here there are no quotation marks or speech tags.',
     correct: 'Free indirect discourse',
     wrong: [
       miss('Direct speech', 'Direct speech is marked by quotation marks and reporting verbs, such as she said, "...".', 'Here there are no quotation marks or speech tags.'),
@@ -118,6 +125,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Reading prose: structure',
     title: 'In medias res',
     prompt: 'A novel that begins in the middle of the action, before later filling in earlier events, opens "in medias res". What does this phrase mean?',
+    mentorHint: 'Translate "medias" as middle.',
     correct: 'Into the middle of things',
     wrong: [
       miss('At the end of the matter', 'That would reverse the meaning; in medias res is about starting in the middle, not the end.', 'Translate "medias" as middle.'),
@@ -135,6 +143,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Poetry: form and metre',
     title: 'Iambic pentameter',
     prompt: 'A line of poetry with five metrical feet, each an unstressed syllable followed by a stressed syllable, is written in which metre?',
+    mentorHint: 'Check both the foot type and the number of feet.',
     correct: 'Iambic pentameter',
     wrong: [
       miss('Trochaic tetrameter', 'A trochee is a stressed then unstressed syllable, and tetrameter has four feet, so both elements differ.', 'Check both the foot type and the number of feet.'),
@@ -150,6 +159,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Poetry: form and metre',
     title: 'Petrarchan sonnet',
     prompt: 'A fourteen-line sonnet divided into an eight-line octave and a six-line sestet, with a turn between them, follows which sonnet form?',
+    mentorHint: 'Recall the 4-4-4-2 shape of the English form.',
     correct: 'The Petrarchan (Italian) sonnet',
     wrong: [
       miss('The Shakespearean (English) sonnet', 'The English sonnet is built from three quatrains and a final couplet, not an octave and sestet.', 'Recall the 4-4-4-2 shape of the English form.'),
@@ -165,6 +175,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Poetry: form and metre',
     title: 'Enjambment',
     prompt: 'When a sentence or phrase runs over the end of a line of verse into the next line without a grammatical pause, this is called what?',
+    mentorHint: 'Caesura is mid-line; this effect crosses the line break.',
     correct: 'Enjambment',
     wrong: [
       miss('Caesura', 'A caesura is a pause within a line, often marked by punctuation, not a run-on across lines.', 'Caesura is mid-line; this effect crosses the line break.'),
@@ -180,6 +191,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Poetry: form and metre',
     title: 'Volta',
     prompt: 'In a sonnet, what is the "volta"?',
+    mentorHint: 'A turn implies a change from what came before.',
     correct: 'The turn or shift in argument, mood or direction within the poem',
     wrong: [
       miss('The opening line that states the theme', 'The volta is a turn that comes later in the poem, not the introductory line.', 'A turn implies a change from what came before.'),
@@ -197,6 +209,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Poetic and rhetorical devices',
     title: 'Metaphor versus simile',
     prompt: 'Which line contains a metaphor rather than a simile?',
+    mentorHint: 'Look for the comparison words "like" or "as".',
     correct: '"The world is a stage on which we play our parts"',
     wrong: [
       miss('"Her smile was like sunlight breaking through cloud"', 'The word "like" makes this an explicit comparison, which defines a simile, not a metaphor.', 'Look for the comparison words "like" or "as".'),
@@ -212,6 +225,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Poetic and rhetorical devices',
     title: 'Personification',
     prompt: 'In the line "the wind whispered secrets through the trees", which device is being used?',
+    mentorHint: 'Ask whether the word imitates a noise or grants human behaviour.',
     correct: 'Personification',
     wrong: [
       miss('Onomatopoeia', 'Onomatopoeia is a word that imitates a sound, such as "buzz" or "hiss"; "whispered" describes a human action, not a sound-imitating word.', 'Ask whether the word imitates a noise or grants human behaviour.'),
@@ -227,6 +241,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Poetic and rhetorical devices',
     title: 'Sibilance',
     prompt: 'The repetition of "s", "sh" and soft "c" sounds, as in "the silent, slithering serpent", is an example of which device?',
+    mentorHint: 'The sounds described are soft and hissing, not explosive.',
     correct: 'Sibilance',
     wrong: [
       miss('Assonance', 'Assonance is the repetition of vowel sounds, not the hissing consonants described here.', 'Sibilance concerns consonants; assonance concerns vowels.'),
@@ -242,6 +257,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Poetic and rhetorical devices',
     title: 'Anaphora',
     prompt: 'A speech that begins three successive sentences with "We shall fight..." uses which rhetorical device?',
+    mentorHint: 'There is no contrast here, only repetition.',
     correct: 'Anaphora',
     wrong: [
       miss('Epistrophe', 'Epistrophe repeats words at the end of successive clauses, not the beginning.', 'Anaphora is at the start; epistrophe is at the end.'),
@@ -259,6 +275,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Genre and critical concepts',
     title: 'Defining genre',
     prompt: 'In literary study, the term "genre" most precisely refers to what?',
+    mentorHint: 'Genre is about type, not time.',
     correct: 'A recognised category of text defined by shared conventions of form and content',
     wrong: [
       miss('The historical period in which a text was written', 'Period is context, not genre; works from one era can belong to many genres.', 'Genre is about type, not time.'),
@@ -274,6 +291,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Genre and critical concepts',
     title: 'Pastoral',
     prompt: 'A poem idealising rural life, shepherds and an unspoilt countryside belongs to which literary mode?',
+    mentorHint: 'Pastoral is calm and rural; gothic is dark and uncanny.',
     correct: 'The pastoral',
     wrong: [
       miss('The gothic', 'The gothic deals with terror, the supernatural and decay, not idealised rural innocence.', 'Pastoral is calm and rural; gothic is dark and uncanny.'),
@@ -289,6 +307,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Genre and critical concepts',
     title: 'Bildungsroman',
     prompt: 'A novel that traces the psychological and moral growth of its protagonist from youth to maturity is known as a what?',
+    mentorHint: 'This term concerns narrative format, not the coming-of-age theme.',
     correct: 'Bildungsroman',
     wrong: [
       miss('Picaresque novel', 'A picaresque follows a roguish hero through episodic adventures, with less emphasis on inner moral development.', 'A picaresque is episodic; the bildungsroman charts inner growth.'),
@@ -304,6 +323,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Genre and critical concepts',
     title: 'Tragicomedy',
     prompt: 'A play that mixes the conventions of tragedy and comedy, often ending happily despite serious threats, is best classified as what?',
+    mentorHint: 'Farce is purely comic; tragicomedy mixes the two modes.',
     correct: 'A tragicomedy',
     wrong: [
       miss('A farce', 'Farce relies on improbable situations and broad physical comedy, not a blend of tragic and comic conventions.', 'Farce is purely comic; tragicomedy mixes the two modes.'),
@@ -321,6 +341,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Language: linguistic frameworks',
     title: 'Semantic field',
     prompt: 'A passage describing a battle uses the words "wound", "blood", "scar", "bleed" and "heal". These related words form what?',
+    mentorHint: 'These words share meaning, not sound at line ends.',
     correct: 'A semantic field',
     wrong: [
       miss('A rhyme scheme', 'A rhyme scheme is the pattern of end rhymes, not a cluster of related meanings.', 'These words share meaning, not sound at line ends.'),
@@ -336,6 +357,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Language: linguistic frameworks',
     title: 'Register',
     prompt: 'In language analysis, what does "register" refer to?',
+    mentorHint: 'Register can shift even within one accent.',
     correct: 'The variety of language chosen to suit a particular context, audience or purpose',
     wrong: [
       miss('The regional accent of the speaker', 'Accent concerns pronunciation tied to a place; register concerns the formality and style of language used.', 'Register can shift even within one accent.'),
@@ -351,6 +373,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Language: linguistic frameworks',
     title: 'Connotation versus denotation',
     prompt: 'The word "home" literally means a place of residence, but it also suggests warmth, safety and belonging. These additional associations are its what?',
+    mentorHint: 'Denotation is literal; connotation is the implied feeling.',
     correct: 'Connotations',
     wrong: [
       miss('Denotation', 'Denotation is the literal, dictionary meaning, which is the place of residence, not the added associations.', 'Denotation is literal; connotation is the implied feeling.'),
@@ -366,6 +389,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Language: linguistic frameworks',
     title: 'Syntax and meaning',
     prompt: 'A writer arranges a sentence so that the most important idea is delayed until the very end, after a series of subordinate clauses. This deliberately constructed sentence is best described as what?',
+    mentorHint: 'Here the main point is held back, not placed first.',
     correct: 'A periodic sentence',
     wrong: [
       miss('A loose (cumulative) sentence', 'A loose sentence states its main idea first and then adds detail, the opposite arrangement.', 'Here the main point is held back, not placed first.'),
@@ -383,6 +407,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Context and interpretation (AO3)',
     title: 'Relevant context',
     prompt: 'Under assessment objective AO3, which use of context is most likely to be rewarded in an essay?',
+    mentorHint: 'Context should explain something in the text, not stand alone.',
     correct: 'Context that illuminates a specific feature of the text being analysed',
     wrong: [
       miss('A detailed biography of the author with no link to the text', 'Unconnected biographical facts gain no credit; context must serve the analysis.', 'Context should explain something in the text, not stand alone.'),
@@ -398,6 +423,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Context and interpretation (AO3)',
     title: 'Reception context',
     prompt: 'The idea that a text\'s meaning can change depending on the values and expectations of the audience reading it is an example of which kind of context?',
+    mentorHint: 'This is about readers, not the moment of composition.',
     correct: 'Reception (or reader) context',
     wrong: [
       miss('Context of production', 'Context of production concerns the circumstances of writing, not how later audiences interpret the work.', 'This is about readers, not the moment of composition.'),
@@ -413,6 +439,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Context and interpretation (AO3)',
     title: 'Avoiding the intentional fallacy',
     prompt: 'A student writes "the poet clearly intended every reader to feel guilty here." Why might an examiner treat this claim cautiously?',
+    mentorHint: 'The problem is provability, not the existence of intention.',
     correct: 'Authorial intention cannot be proven from the text alone and risks the intentional fallacy',
     wrong: [
       miss('Because poets never have any intentions when writing', 'Writers do make choices; the issue is that fixed intention cannot be read off the text with certainty, not that intention is absent.', 'The problem is provability, not the existence of intention.'),
@@ -430,6 +457,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Literary theory and critical reading',
     title: 'Feminist criticism',
     prompt: 'A critic examines how a novel represents women, gendered power and patriarchal structures. Which critical approach is being applied?',
+    mentorHint: 'The focus here is gender, not class.',
     correct: 'Feminist criticism',
     wrong: [
       miss('Marxist criticism', 'Marxist criticism foregrounds class, economics and power relations, not gender as its primary lens.', 'The focus here is gender, not class.'),
@@ -445,6 +473,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Literary theory and critical reading',
     title: 'Marxist criticism',
     prompt: 'A reading that interprets a text mainly in terms of social class, economic power and material conditions draws on which critical tradition?',
+    mentorHint: 'The lens here is class, not the unconscious mind.',
     correct: 'Marxist criticism',
     wrong: [
       miss('Psychoanalytic criticism', 'Psychoanalytic criticism interprets texts through unconscious desire and repression, not class and economics.', 'The lens here is class, not the unconscious mind.'),
@@ -460,6 +489,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Literary theory and critical reading',
     title: 'The implied reader',
     prompt: 'Reader-response theory introduces the idea of the "implied reader". What does this term mean?',
+    mentorHint: 'It is built into the text, not a real first reader.',
     correct: 'The hypothetical reader the text seems designed to address and shape',
     wrong: [
       miss('The first person ever to read the manuscript', 'The implied reader is a textual construct, not a literal historical individual.', 'It is built into the text, not a real first reader.'),
@@ -477,6 +507,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Aspects of comedy',
     title: 'Comic resolution',
     prompt: 'Classical and Shakespearean comedies typically move towards which kind of ending?',
+    mentorHint: 'Comedy ends in renewal, not death.',
     correct: 'Reconciliation and social harmony, often sealed by marriage',
     wrong: [
       miss('The death of the protagonist', 'A protagonist\'s death is the mark of tragedy, not the harmonious close of comedy.', 'Comedy ends in renewal, not death.'),
@@ -492,6 +523,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Aspects of comedy',
     title: 'Satire',
     prompt: 'A comic work that uses ridicule and irony to expose and criticise human folly or social vice is best described as what?',
+    mentorHint: 'A pun is a local device, not a critical mode.',
     correct: 'Satire',
     wrong: [
       miss('Slapstick', 'Slapstick is broad physical comedy of pratfalls and mishaps, without satire\'s critical, corrective purpose.', 'Slapstick is physical fun; satire has a target and a moral aim.'),
@@ -507,6 +539,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Aspects of comedy',
     title: 'Comedy of manners',
     prompt: 'A witty play that satirises the behaviour, affectations and social codes of a particular fashionable class is known as a what?',
+    mentorHint: 'This subgenre is comic and social, not bloody and tragic.',
     correct: 'Comedy of manners',
     wrong: [
       miss('Tragedy of blood', 'A tragedy of blood (revenge tragedy) is violent and tragic, not a witty social satire.', 'This subgenre is comic and social, not bloody and tragic.'),
@@ -524,6 +557,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Unseen analysis: close reading',
     title: 'Tone',
     prompt: 'In close reading, what does the "tone" of a passage refer to?',
+    mentorHint: 'Tone is how, not what.',
     correct: 'The writer\'s or speaker\'s attitude towards the subject or audience',
     wrong: [
       miss('The literal subject matter of the passage', 'Subject matter is what the passage is about; tone is the attitude taken towards it.', 'Tone is how, not what.'),
@@ -539,6 +573,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Unseen analysis: close reading',
     title: 'Juxtaposition',
     prompt: 'A poet places an image of a wedding directly beside an image of a funeral to sharpen the contrast between them. This technique is called what?',
+    mentorHint: 'No reference to another work is involved here.',
     correct: 'Juxtaposition',
     wrong: [
       miss('Oxymoron', 'An oxymoron joins two contradictory words in a single phrase, such as "bitter sweet"; this involves separate images, not a contradictory phrase.', 'Oxymoron is two words; juxtaposition can be two images or ideas.'),
@@ -554,6 +589,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Unseen analysis: close reading',
     title: 'Analysing the question',
     prompt: 'When responding to an unseen poem, what should a strong opening paragraph do?',
+    mentorHint: 'Translating the poem is not analysing it.',
     correct: 'Offer a focused argument about the poem\'s meaning and effects that the essay will develop',
     wrong: [
       miss('Paraphrase the poem line by line in plain prose', 'Paraphrase merely restates content and shows no analysis or argument.', 'Translating the poem is not analysing it.'),
@@ -571,6 +607,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Characterisation and theme',
     title: 'Foil',
     prompt: 'In a play, a minor character whose contrasting qualities highlight the traits of the protagonist is called a what?',
+    mentorHint: 'Opposition is not the same as contrast.',
     correct: 'A foil',
     wrong: [
       miss('A protagonist', 'The protagonist is the central character; a foil is defined by contrast with that central figure.', 'A foil sets off the main character, but is not the main character.'),
@@ -586,6 +623,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Characterisation and theme',
     title: 'Motif',
     prompt: 'A recurring image of blood that appears repeatedly across a play, gathering symbolic weight, is best described as a what?',
+    mentorHint: 'One comparison is not a recurring pattern.',
     correct: 'A motif',
     wrong: [
       miss('A theme', 'A theme is the abstract idea explored, such as guilt; a motif is the recurring concrete element that helps develop it.', 'A motif is a recurring detail; a theme is the idea it serves.'),
@@ -601,6 +639,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Characterisation and theme',
     title: 'Symbolism',
     prompt: 'In literature, what is a symbol?',
+    mentorHint: 'A symbol points beyond its literal sense.',
     correct: 'A concrete object or image that stands for a larger abstract idea',
     wrong: [
       miss('A direct, literal description with no further meaning', 'A purely literal description carries no symbolic, secondary meaning.', 'A symbol points beyond its literal sense.'),
@@ -616,6 +655,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Characterisation and theme',
     title: 'Allegory',
     prompt: 'A narrative in which characters and events consistently represent abstract ideas or moral qualities, creating a sustained second meaning, is called what?',
+    mentorHint: 'An anecdote is brief and literal, not systematically symbolic.',
     correct: 'An allegory',
     wrong: [
       miss('An anecdote', 'An anecdote is a short personal story told for interest, without a sustained symbolic second meaning.', 'An anecdote is brief and literal, not systematically symbolic.'),
@@ -633,6 +673,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Structure, sound and shape',
     title: 'Rhyming couplet',
     prompt: 'Two consecutive lines of verse that rhyme with each other form what?',
+    mentorHint: 'A couplet is two lines; a quatrain is four.',
     correct: 'A rhyming couplet',
     wrong: [
       miss('A quatrain', 'A quatrain is a four-line stanza, not a pair of rhyming lines.', 'A couplet is two lines; a quatrain is four.'),
@@ -648,6 +689,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Structure, sound and shape',
     title: 'Refrain',
     prompt: 'A line or group of lines repeated at regular intervals throughout a poem, typically at the end of each stanza, is called a what?',
+    mentorHint: 'An epigraph appears once, at the opening.',
     correct: 'A refrain',
     wrong: [
       miss('A caesura', 'A caesura is a pause within a line, not a repeated line or stanza.', 'A refrain repeats; a caesura pauses.'),
@@ -663,6 +705,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Structure, sound and shape',
     title: 'Onomatopoeia',
     prompt: 'Words such as "buzz", "crackle" and "hiss", which imitate the sounds they describe, are examples of what?',
+    mentorHint: 'Assonance concerns vowels, not sound imitation.',
     correct: 'Onomatopoeia',
     wrong: [
       miss('Sibilance', 'Sibilance is the repetition of soft "s" sounds across words, not single words that imitate noises.', 'Sibilance is a sound pattern; onomatopoeia is a sound-imitating word.'),
@@ -678,6 +721,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Structure, sound and shape',
     title: 'Cyclical structure',
     prompt: 'A poem or story that ends by returning to the image, situation or words with which it began is said to have what kind of structure?',
+    mentorHint: 'Linear goes one way; cyclical comes back round.',
     correct: 'A cyclical structure',
     wrong: [
       miss('A linear structure', 'A linear structure moves straightforwardly from beginning to end without returning to its start.', 'Linear goes one way; cyclical comes back round.'),
@@ -695,6 +739,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Aspects of tragedy: drama',
     title: 'Soliloquy versus monologue',
     prompt: 'What distinguishes a soliloquy from a monologue in drama?',
+    mentorHint: 'The difference is about audience on stage, not verse or prose.',
     correct: 'A soliloquy is spoken by a character alone, revealing inner thoughts; a monologue is a long speech addressed to others',
     wrong: [
       miss('A soliloquy is always in prose, a monologue always in verse', 'Form is not the distinguishing feature; either can be in verse or prose.', 'The difference is about audience on stage, not verse or prose.'),
@@ -710,6 +755,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Aspects of tragedy: drama',
     title: 'Tragic chorus',
     prompt: 'In Greek tragedy, what was the primary function of the chorus?',
+    mentorHint: 'The chorus reflects and comments rather than acting out events.',
     correct: 'To comment on the action and voice collective or communal reflection',
     wrong: [
       miss('To perform the violent action on stage', 'Violence was usually reported, not enacted, and was not the chorus\'s role.', 'The chorus reflects and comments rather than acting out events.'),
@@ -725,6 +771,7 @@ export const alevelEnglishHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Aspects of tragedy: drama',
     title: 'Tragic hero status',
     prompt: 'According to traditional Aristotelian theory, the tragic hero is typically a figure of what kind?',
+    mentorHint: 'Tragedy needs sympathy, which an utter villain does not earn.',
     correct: 'A person of high or noble standing whose fall is therefore significant',
     wrong: [
       miss('An entirely villainous figure who deserves their fate', 'A wholly evil figure\'s downfall evokes justice, not the pity and fear central to tragedy.', 'Tragedy needs sympathy, which an utter villain does not earn.'),

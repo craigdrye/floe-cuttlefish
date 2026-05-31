@@ -31,6 +31,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'The metric describes the schedule, it does not constrain patients. Focus on why the third opening is less distorted than the first.',
       ),
     ],
+    mentorHint:
+      'Access metrics should describe true schedule capacity rather than lucky cancellation openings. The third-next-available convention filters out random near-term gaps so leaders can see the wait time the system is actually producing.',
     lesson:
       'Third next available appointment (TNAA) is the average days between a request and the third open slot on a clinician\'s schedule. The first two openings are frequently random cancellation gaps, so the third best represents the true performance of the access system. It is a measurement convention, not a legal rule or a booking limit.',
     source,
@@ -61,6 +63,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'A far-future date is not access. The model requires shrinking the queue so capacity can meet demand as it arrives.',
       ),
     ],
+    mentorHint:
+      'Advanced access is built on matching today\'s demand with today\'s capacity. A practice cannot hold meaningful same-day access while the future schedule is packed with unresolved backlog, so the queue has to be reduced before the model works.',
     lesson:
       'Advanced/open access rests on matching daily capacity to daily demand. Before a practice can "do today\'s work today," it must reduce the pre-booked backlog; otherwise there is no room to hold open. Backlog reduction, balanced supply and demand, and contingency planning are the pillars of the model.',
     source,
@@ -91,6 +95,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Punishing patients is not capacity management. Think about reducing no-shows and recovering capacity with evidence.',
       ),
     ],
+    mentorHint:
+      'No-shows are usually patterned, not random: lead time, visit type, transportation, reminders, and patient barriers all matter. A durable capacity strategy fixes causes and uses careful data-driven overbooking only where it will not punish patients who arrive.',
     lesson:
       'No-shows cluster by visit type, lead time, and patient circumstance, so a flat fix is wrong. Reduce them at the source (timely reminders, shorter lead times, transport and reminder support) and apply measured overbooking only where the pattern justifies it. Blanket fees or discharges neither recover capacity nor address causes.',
     source,
@@ -123,6 +129,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Coverage can change day to day. A stale monthly snapshot will miss the changes that drive denials.',
       ),
     ],
+    mentorHint:
+      'Eligibility work belongs before the service because it is a front-end denial-prevention control. Coverage can change after scheduling, so strong workflows verify early and recheck close to the visit when risk is present.',
     lesson:
       'Eligibility should be verified pre-visit (ideally at scheduling) with a same-day recheck for flagged cases, because coverage changes and front-end verification prevents the denials and balance surprises that surface at checkout or after the claim. Reactive, late, or stale checks all let preventable problems through.',
     source,
@@ -153,6 +161,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Sending is not the same as confirmed receipt. A closed loop requires confirmation and the returning consult note.',
       ),
     ],
+    mentorHint:
+      'A referral is a process with a beginning, middle, and return path. Closed-loop design confirms the order actually reached the specialist, the patient got scheduled, and the consult information came back to the referring clinician.',
     lesson:
       'A closed-loop referral tracks the order from transmission, to confirmed receipt and scheduling by the specialist, to the consult result returning to the referring clinician. Stopping at order entry, a handed-over phone number, or an unconfirmed fax leaves the loop open and is the usual source of "no one ever called me."',
     source,
@@ -183,6 +193,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Agencies are a last resort, not a front-desk strategy. The cheapest dollar to collect is the one collected at the desk.',
       ),
     ],
+    mentorHint:
+      'Patient collections are most successful while the patient is present and the amount is known or reliably estimated. The operational goal is not aggressive cash collection at all costs; it is accurate, transparent collection of predictable responsibility before it becomes low-yield mail follow-up.',
     lesson:
       'The cheapest, highest-yield collection happens at time of service: copays and known patient responsibility captured at the front desk using a real-time estimate. Mailing everything post-adjudication, demanding full charges before rooming, or jumping to collections all either lose money or harm the patient relationship.',
     source,
@@ -215,6 +227,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Random task pickup ignores licensure entirely. The principle aligns each task to the appropriate scope.',
       ),
     ],
+    mentorHint:
+      'Top-of-license design protects scarce clinical decision time. Each task should sit with the lowest-cost role that is trained, authorized, and supported by protocol to do it safely, while clinicians reserve time for work only they can do.',
     lesson:
       'Working at the top of license means each role does the most advanced work its training and license allow, while routine, lower-complexity work is delegated downward under clear protocol. It maximizes access and productivity by keeping expensive clinical time for clinical decisions. It is not universal cross-training, do-it-all clinicians, or scope-blind queue grabbing.',
     source,
@@ -245,6 +259,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Most refrigerated vaccines are destroyed by freezing. The fix is not a new excursion in the other direction.',
       ),
     ],
+    mentorHint:
+      'Cold-chain rules treat a temperature excursion as an unknown safety state until viability is evaluated. The first move should prevent use of potentially ineffective vaccine while preserving the possibility that expert review may clear some inventory.',
     lesson:
       'On a temperature excursion, refrigerated vaccines (stored at 2 to 8 degrees Celsius) should be quarantined and labeled "do not use," and the manufacturer or immunization program contacted to determine viability before any administration. Using them under schedule pressure is unsafe; destroying or freezing them is wrong because some doses may be recoverable.',
     source,
@@ -275,6 +291,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Moving the pile does not shrink it. The fix is triage by item type, not handing the whole thing to someone else.',
       ),
     ],
+    mentorHint:
+      'A provider inbox should be designed around decision rights. Protocol-driven work can be handled by trained team members, while abnormal, ambiguous, or judgment-heavy items should route to the clinician rather than burying everything in one personal queue.',
     lesson:
       'A pooled, triaged in-basket lets support staff resolve protocol-driven items (normal results, eligible refills, prior-auth legwork) and routes only items needing clinical judgment to the provider. Making the provider clear everything causes the overload; deleting or wholesale-forwarding messages is unsafe and solves nothing.',
     source,
@@ -307,6 +325,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'A front-end data error is the practice\'s to fix, not the patient\'s to pay. Correct and resubmit to the payer.',
       ),
     ],
+    mentorHint:
+      'A rejection is a front-end failure to accept the claim for processing, while a denial is a payer decision after adjudication. The workflow difference matters because rejected claims need corrected data and resubmission, not an appeal file.',
     lesson:
       'A rejection happens before adjudication (a clearinghouse or payer front-end edit catches a data problem) and is fixed and resubmitted. A denial happens after adjudication (the payer processed the claim and declined to pay) and may be appealed. Confusing the two wastes time appealing things that simply need correction.',
     source,
@@ -337,6 +357,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Improving coding usually shortens A/R days. A jump signals a problem, not an improvement.',
       ),
     ],
+    mentorHint:
+      'Days in A/R translates billing performance into cash-flow time. When it rises, segment by payer, age bucket, denial reason, and front-end error patterns instead of assuming visit volume or coding quality changed.',
     lesson:
       'Days in accounts receivable approximates the average time to collect billed charges (total A/R divided by average daily charges). A rising number means collections are slowing, flagging a cash-flow or process problem to segment by payer, age, and root cause. It does not measure patient volume, overpayment, or coding quality.',
     source,
@@ -367,6 +389,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Pricing has nothing to do with whether a claim passes edits. Focus on accuracy of the data going out.',
       ),
     ],
+    mentorHint:
+      'First-pass clean claim rate is improved before claims leave the practice. Look upstream at registration accuracy, eligibility, authorizations, coding, and payer edits rather than downstream appeals after the claim has already failed.',
     lesson:
       'First-pass clean claim rate is the share of claims accepted and paid on initial submission without correction. It is driven by front-end accuracy: registration, eligibility, coding, and payer-rule compliance. Submitting fewer or higher-charge claims, or appealing more, does not improve cleanliness; preventing errors before submission does.',
     source,
@@ -399,6 +423,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'History and exam volume stopped driving the level in 2021. The level is set by MDM or by total time.',
       ),
     ],
+    mentorHint:
+      'Modern office E/M leveling has two valid pathways: total clinician time or medical decision making. History and exam still need to be medically appropriate, but their volume no longer determines the level for these office visit codes.',
     lesson:
       'Since January 1, 2021, office-visit E/M codes (99202-99215) are leveled by either total time (face-to-face plus non-face-to-face same-day work) or by MDM (problems, data, risk). You compare the level each method supports and report the higher one. The amount of history and exam documented no longer sets the level.',
     source,
@@ -429,6 +455,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Modifier 25 is for the same provider doing extra, separate E/M work. The number of physicians is not the test.',
       ),
     ],
+    mentorHint:
+      'Modifier 25 asks whether the E/M work is above and separately identifiable from the normal work bundled into a same-day minor procedure. The key evidence is distinct documentation of meaningful evaluation or management, not merely that a procedure occurred.',
     lesson:
       'Modifier 25 reports a significant, separately identifiable E/M service by the same clinician on the same day as a procedure. The extra E/M must exceed the usual pre/post work bundled into the procedure and be documented distinctly. A separate diagnosis is not required, it is not automatic for every procedure visit, and it is not about multiple physicians.',
     source,
@@ -459,6 +487,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Incident-to is an office-setting rule. A home/telehealth encounter does not satisfy the place-of-service requirement.',
       ),
     ],
+    mentorHint:
+      'Incident-to billing is a narrow office-setting rule, not a general way to bill all NPP work under a physician. Check whether the patient and problem are established, whether the physician initiated and remains involved in the plan, and whether direct supervision is available in the office.',
     lesson:
       'Incident-to billing pays an NPP visit at 100 percent of the physician fee schedule (vs 85 percent under the NPP\'s own number) only when: the patient is established with a problem the physician initiated and stays involved in, the physician provides direct supervision (in the office suite, immediately available), and the setting is the private office (POS 11). New patients, new problems, and non-office settings do not qualify.',
     source,
@@ -489,6 +519,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Whether the patient reads it does not change the falsity. The record must match what actually happened.',
       ),
     ],
+    mentorHint:
+      'Copy-forward is risky when it turns yesterday\'s truth into today\'s false documentation. Audit defensibility depends on the note accurately reflecting what was actually performed in this encounter, especially when modality limits the exam.',
     lesson:
       'Copy-forward (cloning) becomes a compliance problem when the note documents work that did not happen, such as a physical exam in a telehealth visit. That can amount to billing for services not performed, inflate the coded level, and destroy audit credibility. Documentation must reflect the encounter that actually occurred.',
     source,
@@ -519,6 +551,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'The harm is not just visual clutter. Think about everything downstream that waits on a finalized note.',
       ),
     ],
+    mentorHint:
+      'A signed note is the finalized evidence that supports coding, billing, and continuity of care. When notes remain open, downstream teams either wait or guess, and guessing creates audit exposure rather than real revenue acceleration.',
     lesson:
       'Unsigned, unfinalized notes stall the coding and billing queues, jeopardize clean claim submission, impair the next clinician\'s reference, and create audit risk. Practices need timely note completion; coders should never guess a level to push cash, and the problem is far more than an inbox annoyance.',
     source,
@@ -551,6 +585,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'The estimate comes before the bill, not after a complaint. It is triggered by scheduling or a request.',
       ),
     ],
+    mentorHint:
+      'Good-faith-estimate duties follow patient payment status and scheduled services, not the size of the practice. For uninsured or self-pay care, the estimate is a proactive written notice that helps prevent surprise billing disputes.',
     lesson:
       'Under the No Surprises Act, all physicians and practices, including solo and small ones, must give uninsured or self-pay patients a written good-faith estimate of expected charges within set timeframes after scheduling or a request. It cannot be a verbal aside, has no small-practice exemption, and is provided proactively, not only after a dispute.',
     source,
@@ -581,6 +617,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Such a process does exist for self-pay GFEs. The question is the dollar threshold that opens it.',
       ),
     ],
+    mentorHint:
+      'The self-pay GFE dispute process uses a specific dollar threshold rather than any small variance or a percentage test. Compare the final billed total to the written estimate and ask whether the difference is large enough to open that formal process.',
     lesson:
       'Under the No Surprises Act, an uninsured or self-pay patient may use the patient-provider dispute resolution process when the final bill is at least $400 more than the good-faith estimate. It is a fixed dollar threshold, not any overage, not a percentage, and the process genuinely exists for self-pay estimates.',
     source,
@@ -611,6 +649,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Format follows the request when feasible. If an electronic copy is readily producible, it should be provided that way.',
       ),
     ],
+    mentorHint:
+      'HIPAA access rules treat the patient as entitled to their own information, not as a requester who must justify use or settle a balance first. Timing, format, and fees are constrained so the right remains practical.',
     lesson:
       'HIPAA right of access requires covered entities to provide a patient access to their own records generally within 30 days (one 30-day extension allowed), in the requested format if readily producible, for only a reasonable cost-based fee. Practices cannot charge search/retrieval fees, withhold records over a balance, or force paper when electronic was requested and feasible.',
     source,
@@ -641,6 +681,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'Who does the billing is not one of the elements. Think about who is accountable for the compliance program itself.',
       ),
     ],
+    mentorHint:
+      'The OIG compliance elements are structural controls for preventing, detecting, and correcting improper conduct. Look for governance, training, communication, monitoring, discipline, and corrective-action infrastructure rather than insurance, profit, or outsourcing choices.',
     lesson:
       'The OIG\'s seven elements of an effective compliance program are: written policies and standards, a designated compliance officer/contact, training and education, open lines of communication, internal monitoring and auditing, well-publicized disciplinary standards, and prompt corrective action. They are governance and oversight measures, not insurance, profit, or outsourcing decisions.',
     source,
@@ -673,6 +715,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'You analyze before you make anything permanent. Studying precedes any commit-it-to-policy step.',
       ),
     ],
+    mentorHint:
+      'PDSA is a learning cycle, so each step has a different job. The Study step is where the team compares measured results with the prediction from Plan and decides what the test taught before adapting or spreading the change.',
     lesson:
       'In PDSA, Plan sets a prediction and measures, Do runs the small test and collects data, Study compares the actual result to the prediction to learn what happened, and Act decides to adopt, adapt, or abandon. The Study step is analysis against the prediction, not scaling, personal preference, or premature policy-writing.',
     source,
@@ -703,6 +747,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'It is not a feel-good number. Its job is to reveal harm caused by chasing the main metric.',
       ),
     ],
+    mentorHint:
+      'Improvement can create trade-offs: a process can get faster while becoming less safe, less accurate, or worse for patients. A balancing measure is the sensor for those unintended consequences while the primary metric improves.',
     lesson:
       'A balancing measure checks whether gains on the primary metric are creating problems elsewhere, for example shorter visits raising throughput but lowering quality, safety, or patient satisfaction. It is tracked alongside outcome and process measures specifically to surface trade-offs, not to confirm, replace, or sugarcoat the main metric.',
     source,
@@ -733,6 +779,8 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
         'A bonus does not make a person always available. Address the structural fragility, not her attendance.',
       ),
     ],
+    mentorHint:
+      'A low bus factor means one absence can stop an essential workflow. Durable staffing design turns expert know-how into standard work and practiced backup coverage so prior authorizations, refills, and other time-sensitive tasks keep moving.',
     lesson:
       'Single-person dependency (a high "bus factor") makes operations fragile. The durable fix is documented standard work plus a cross-trained backup who practices the skill periodically, so essential tasks like prior authorization keep moving when anyone is out. Interrupting leave, pausing the work, or paying to prevent absences all leave the fragility in place.',
     source,

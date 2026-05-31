@@ -11,6 +11,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Differentiation: Further Techniques',
     title: 'Product rule',
     prompt: 'Differentiate y = x^2 e^x with respect to x.',
+    mentorHint: 'Use d/dx(uv) = u\'v + uv\' with u = x^2 and v = e^x.',
     correct: '(x^2 + 2x) e^x',
     wrong: [
       miss('2x e^x', 'This differentiates only the x^2 factor and forgets that e^x must also be differentiated; the product rule needs both terms.', 'Use d/dx(uv) = u\'v + uv\' with u = x^2 and v = e^x.'),
@@ -26,6 +27,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Differentiation: Further Techniques',
     title: 'Chain rule with a trig function',
     prompt: 'Differentiate y = sin(3x^2) with respect to x.',
+    mentorHint: 'The chain rule requires multiplying by u\' = 6x.',
     correct: '6x cos(3x^2)',
     wrong: [
       miss('cos(3x^2)', 'This applies d/dx(sin u) = cos u but omits multiplying by the derivative of the inner function 3x^2.', 'The chain rule requires multiplying by u\' = 6x.'),
@@ -41,6 +43,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Differentiation: Further Techniques',
     title: 'Quotient rule',
     prompt: 'Differentiate y = (2x + 1)/(x - 3) with respect to x.',
+    mentorHint: 'Carefully evaluate u\'v - uv\' before dividing by v^2.',
     correct: '-7/(x - 3)^2',
     wrong: [
       miss('7/(x - 3)^2', 'The sign is wrong; the numerator works out to 2(x-3) - (2x+1) = -7, giving a negative result.', 'Carefully evaluate u\'v - uv\' before dividing by v^2.'),
@@ -56,6 +59,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Differentiation: Further Techniques',
     title: 'Implicit differentiation',
     prompt: 'For the curve x^2 + y^2 = 25, find dy/dx in terms of x and y.',
+    mentorHint: 'Solve 2x + 2y(dy/dx) = 0 for dy/dx.',
     correct: '-x/y',
     wrong: [
       miss('-y/x', 'The x and y are swapped; differentiating gives 2x + 2y(dy/dx) = 0, so dy/dx = -x/y.', 'Solve 2x + 2y(dy/dx) = 0 for dy/dx.'),
@@ -72,6 +76,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Integration Techniques',
     title: 'Integration by substitution',
     prompt: 'Evaluate the integral of 2x(x^2 + 1)^3 with respect to x.',
+    mentorHint: 'After substituting u = x^2 + 1, integrate u^3 to u^4/4.',
     correct: '(x^2 + 1)^4 / 4 + c',
     wrong: [
       miss('(x^2 + 1)^4 + c', 'The factor of 1/4 from increasing the power and dividing is missing; integrating u^3 gives u^4/4.', 'After substituting u = x^2 + 1, integrate u^3 to u^4/4.'),
@@ -87,6 +92,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Integration Techniques',
     title: 'Integration by parts',
     prompt: 'Evaluate the integral of x e^x with respect to x.',
+    mentorHint: 'The formula subtracts the integral of v du.',
     correct: 'x e^x - e^x + c',
     wrong: [
       miss('x e^x + e^x + c', 'The sign of the second term is wrong; integration by parts gives uv - the integral of vu\', producing a minus sign.', 'The formula subtracts the integral of v du.'),
@@ -102,6 +108,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Integration Techniques',
     title: 'Integrating 1/x',
     prompt: 'Evaluate the definite integral of 1/x from x = 1 to x = e.',
+    mentorHint: 'Recall that the integral of x^(-1) is ln|x|, a special case.',
     correct: '1',
     wrong: [
       miss('e - 1', 'This integrates 1/x as if it were a power, but the integral of 1/x is ln|x|, not a polynomial.', 'Recall that the integral of x^(-1) is ln|x|, a special case.'),
@@ -117,6 +124,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Integration Techniques',
     title: 'Area between curve and axis',
     prompt: 'Find the area enclosed between the curve y = 4 - x^2 and the x-axis.',
+    mentorHint: 'Integrate from -2 to 2, not from 0 to 2.',
     correct: '32/3',
     wrong: [
       miss('16/3', 'This finds the area on only one side of the y-axis; the curve crosses the axis at x = -2 and x = 2.', 'Integrate from -2 to 2, not from 0 to 2.'),
@@ -133,6 +141,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Numerical Methods',
     title: 'Trapezium rule',
     prompt: 'Using the trapezium rule with the ordinates f(0) = 1, f(1) = 3, f(2) = 4 (strip width h = 1), estimate the area under the curve from x = 0 to x = 2.',
+    mentorHint: 'Apply h/2 [(first + last) + 2(middle)].',
     correct: '5.5',
     wrong: [
       miss('8', 'This sums all ordinates equally; the trapezium rule halves the end ordinates and gives weight 1 to interior ones via the h/2 factor.', 'Apply h/2 [(first + last) + 2(middle)].'),
@@ -148,6 +157,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Numerical Methods',
     title: 'Newton-Raphson iteration',
     prompt: 'For f(x) = x^2 - 2, with x_0 = 1.5, what is the next Newton-Raphson estimate x_1?',
+    mentorHint: 'Apply x_1 = x_0 - f(x_0)/f\'(x_0).',
     correct: '1.41666... (17/12)',
     wrong: [
       miss('1.5', 'This leaves the estimate unchanged, but Newton-Raphson moves x_0 unless f(x_0) = 0, and f(1.5) = 0.25 ≠ 0.', 'Apply x_1 = x_0 - f(x_0)/f\'(x_0).'),
@@ -163,6 +173,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Numerical Methods',
     title: 'Change of sign and root location',
     prompt: 'A continuous function gives f(2) = -1.3 and f(3) = 0.8. What can you conclude?',
+    mentorHint: 'Sign change gives at least one root, not necessarily exactly one.',
     correct: 'There is at least one root between x = 2 and x = 3',
     wrong: [
       miss('There is exactly one root between x = 2 and x = 3', 'A sign change guarantees an odd number of roots in the interval, but there could be three, five, and so on.', 'Sign change gives at least one root, not necessarily exactly one.'),
@@ -179,6 +190,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Sequences and Series',
     title: 'Sum of an arithmetic series',
     prompt: 'Find the sum of the first 20 terms of the arithmetic series with first term 3 and common difference 4.',
+    mentorHint: 'Use S_n = (n/2)[2a + (n-1)d].',
     correct: '820',
     wrong: [
       miss('800', 'This likely uses the wrong number of (n-1) gaps or drops a term; the correct sum is 820.', 'Use S_n = (n/2)[2a + (n-1)d].'),
@@ -194,6 +206,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Sequences and Series',
     title: 'Sum to infinity of a geometric series',
     prompt: 'Find the sum to infinity of the geometric series 8 + 2 + 0.5 + ...',
+    mentorHint: 'The ratio is 2/8 = 1/4, not 1/2.',
     correct: '32/3',
     wrong: [
       miss('16', 'This may come from using r = 1/2 instead of the actual ratio 1/4.', 'The ratio is 2/8 = 1/4, not 1/2.'),
@@ -209,6 +222,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Sequences and Series',
     title: 'Binomial expansion for negative index',
     prompt: 'Find the coefficient of x^2 in the expansion of (1 + x)^(-2) for small x.',
+    mentorHint: 'Use (-2)(-3)/2! for the x^2 term.',
     correct: '3',
     wrong: [
       miss('1', 'This treats it like a positive-power coefficient; for (1+x)^(-2) the x^2 coefficient comes from n(n-1)/2 with n = -2, giving 3.', 'Use (-2)(-3)/2! for the x^2 term.'),
@@ -225,6 +239,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Trigonometry: Identities and Equations',
     title: 'Double angle formula',
     prompt: 'Given that sin θ = 3/5 and θ is acute, find the exact value of sin 2θ.',
+    mentorHint: 'Use sin 2θ = 2 sin θ cos θ and find cos θ first.',
     correct: '24/25',
     wrong: [
       miss('6/5', 'This doubles sin θ directly, but sin 2θ ≠ 2 sin θ; the double angle formula is 2 sin θ cos θ.', 'Use sin 2θ = 2 sin θ cos θ and find cos θ first.'),
@@ -240,6 +255,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Trigonometry: Identities and Equations',
     title: 'Harmonic (R cos) form',
     prompt: 'Express 3 cos θ + 4 sin θ in the form R cos(θ - α) where R > 0. What is R?',
+    mentorHint: 'R = √(3^2 + 4^2).',
     correct: '5',
     wrong: [
       miss('7', 'This adds the coefficients (3 + 4); R is found from the square root of the sum of their squares.', 'R = √(3^2 + 4^2).'),
@@ -255,6 +271,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Trigonometry: Identities and Equations',
     title: 'Solving a trig equation',
     prompt: 'Solve 2 sin x = 1 for 0° ≤ x ≤ 360°.',
+    mentorHint: 'Look for all solutions in the given range, not just the principal value.',
     correct: 'x = 30° and x = 150°',
     wrong: [
       miss('x = 30° only', 'Sine is positive in both the first and second quadrants, so there is a second solution at 180° - 30° = 150°.', 'Look for all solutions in the given range, not just the principal value.'),
@@ -271,6 +288,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Functions and Modelling',
     title: 'Composite functions',
     prompt: 'Given f(x) = 2x + 1 and g(x) = x^2, find fg(3).',
+    mentorHint: 'fg(x) means f(g(x)): do g first.',
     correct: '19',
     wrong: [
       miss('49', 'This computes gf(3) = (2·3+1)^2 = 49; fg means apply g first, then f.', 'fg(x) means f(g(x)): do g first.'),
@@ -286,6 +304,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Functions and Modelling',
     title: 'Inverse function',
     prompt: 'Find the inverse of the function f(x) = (x - 4)/3.',
+    mentorHint: 'Multiply by 3 first, then add 4.',
     correct: 'f^(-1)(x) = 3x + 4',
     wrong: [
       miss('f^(-1)(x) = 3x - 4', 'The sign on the constant is wrong; rearranging y = (x-4)/3 gives x = 3y + 4, so the inverse adds 4.', 'Multiply by 3 first, then add 4.'),
@@ -301,6 +320,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Functions and Modelling',
     title: 'Modulus equation',
     prompt: 'Solve |2x - 1| = 5.',
+    mentorHint: 'Consider both 2x - 1 = 5 and 2x - 1 = -5.',
     correct: 'x = 3 and x = -2',
     wrong: [
       miss('x = 3 only', 'The modulus means 2x - 1 could equal 5 or -5; the negative case gives the second solution x = -2.', 'Consider both 2x - 1 = 5 and 2x - 1 = -5.'),
@@ -316,6 +336,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Exponentials and Logarithms',
     title: 'Solving an exponential equation',
     prompt: 'Solve 3^x = 20, giving x to 3 significant figures.',
+    mentorHint: 'Take logs of both sides: x = log 20 / log 3.',
     correct: '2.73',
     wrong: [
       miss('6.67', 'This divides 20 by 3 rather than taking logarithms; exponential equations require logs.', 'Take logs of both sides: x = log 20 / log 3.'),
@@ -331,6 +352,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Exponentials and Logarithms',
     title: 'Laws of logarithms',
     prompt: 'Write log 8 + log 2 - log 4 as a single logarithm and simplify.',
+    mentorHint: 'log a + log b = log(ab), not log(a + b).',
     correct: 'log 4',
     wrong: [
       miss('log 6', 'This adds and subtracts the arguments (8 + 2 - 4); logs of products add and logs of quotients subtract the arguments multiplicatively.', 'log a + log b = log(ab), not log(a + b).'),
@@ -347,6 +369,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Parametric Equations',
     title: 'Gradient of a parametric curve',
     prompt: 'A curve is given by x = t^2, y = t^3. Find dy/dx in terms of t.',
+    mentorHint: 'Use dy/dx = (dy/dt)/(dx/dt).',
     correct: '3t/2',
     wrong: [
       miss('3t^2/2t which is left unsimplified as 3t^2/(2t)', 'The expression is correct before cancelling but should simplify to 3t/2.', 'Cancel a factor of t in 3t^2/2t.'),
@@ -362,6 +385,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Parametric Equations',
     title: 'Converting to Cartesian form',
     prompt: 'A curve has parametric equations x = 2t, y = t^2. Find the Cartesian equation.',
+    mentorHint: 'Solve x = 2t for t before substituting.',
     correct: 'y = x^2/4',
     wrong: [
       miss('y = x^2', 'This forgets that t = x/2, so t^2 = x^2/4, introducing the factor of 4.', 'Solve x = 2t for t before substituting.'),
@@ -378,6 +402,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Vectors',
     title: 'Magnitude of a 3D vector',
     prompt: 'Find the magnitude of the vector (2, -3, 6).',
+    mentorHint: 'Sum the squares of all three components, then square root.',
     correct: '7',
     wrong: [
       miss('5', 'This omits one component or mishandles the squares; the correct sum is 4 + 9 + 36 = 49.', 'Sum the squares of all three components, then square root.'),
@@ -393,6 +418,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Vectors',
     title: 'Parallel vectors',
     prompt: 'For which value of k are the vectors (3, k) and (6, 8) parallel?',
+    mentorHint: '(6,8) is 2 times (3,k), so k = 8/2.',
     correct: 'k = 4',
     wrong: [
       miss('k = 8', 'This sets the second components equal rather than keeping the same scale factor; (3,k) must be a scalar multiple of (6,8).', '(6,8) is 2 times (3,k), so k = 8/2.'),
@@ -408,6 +434,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Vectors',
     title: 'Position vector of a midpoint',
     prompt: 'Points A and B have position vectors (1, 5) and (7, -1). Find the position vector of the midpoint of AB.',
+    mentorHint: 'Average the position vectors: (A + B)/2.',
     correct: '(4, 2)',
     wrong: [
       miss('(6, -6)', 'This is the vector AB (B - A), not the midpoint; the midpoint averages the two position vectors.', 'Average the position vectors: (A + B)/2.'),
@@ -424,6 +451,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Mechanics: Kinematics',
     title: 'SUVAT equation',
     prompt: 'A car accelerates uniformly from rest at 2 m/s^2 for 5 seconds. How far does it travel?',
+    mentorHint: 'The (1/2)at^2 term is needed when accelerating.',
     correct: '25 m',
     wrong: [
       miss('10 m', 'This uses s = ut and ignores acceleration; from rest with acceleration, use s = ut + (1/2)at^2.', 'The (1/2)at^2 term is needed when accelerating.'),
@@ -439,6 +467,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Mechanics: Kinematics',
     title: 'Velocity from displacement-time',
     prompt: 'A particle has displacement s = t^3 - 6t^2 + 9t metres. Find its velocity at t = 2 seconds.',
+    mentorHint: 'Substitute t = 2 carefully, watching signs.',
     correct: '-3 m/s',
     wrong: [
       miss('3 m/s', 'The sign is wrong; v = 3t^2 - 12t + 9 evaluated at t = 2 is 12 - 24 + 9 = -3.', 'Substitute t = 2 carefully, watching signs.'),
@@ -454,6 +483,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Mechanics: Kinematics',
     title: 'Projectile time of flight',
     prompt: 'A ball is projected vertically upwards at 19.6 m/s. Taking g = 9.8 m/s^2, how long until it returns to its starting height?',
+    mentorHint: 'Double the time to the peak for the round trip.',
     correct: '4 s',
     wrong: [
       miss('2 s', 'This is the time to reach the highest point only; the full flight is twice that by symmetry.', 'Double the time to the peak for the round trip.'),
@@ -470,6 +500,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Mechanics: Forces and Newton\'s Laws',
     title: 'Newton\'s second law',
     prompt: 'A resultant force of 12 N acts on a mass of 3 kg. What is the acceleration?',
+    mentorHint: 'a = F/m, so divide 12 by 3.',
     correct: '4 m/s^2',
     wrong: [
       miss('36 m/s^2', 'This multiplies force by mass; Newton\'s second law gives a = F/m, so you divide.', 'a = F/m, so divide 12 by 3.'),
@@ -485,6 +516,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Mechanics: Forces and Newton\'s Laws',
     title: 'Connected particles tension',
     prompt: 'Two masses, 5 kg and 3 kg, hang either side of a smooth pulley connected by a light string. Taking g = 9.8 m/s^2, find the acceleration of the system.',
+    mentorHint: 'Net force = (5 - 3)g, shared by total mass 8 kg.',
     correct: '2.45 m/s^2',
     wrong: [
       miss('9.8 m/s^2', 'This assumes free fall; the lighter mass on the other side reduces the net acceleration well below g.', 'Net force = (5 - 3)g, shared by total mass 8 kg.'),
@@ -500,6 +532,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Mechanics: Forces and Newton\'s Laws',
     title: 'Friction on a horizontal surface',
     prompt: 'A 4 kg block rests on a rough horizontal surface with coefficient of friction 0.3. Taking g = 9.8 m/s^2, what is the maximum frictional force?',
+    mentorHint: 'The normal reaction is mg, not m.',
     correct: '11.76 N',
     wrong: [
       miss('1.2 N', 'This multiplies the coefficient by the mass only, omitting g; friction = μ·R where R = mg.', 'The normal reaction is mg, not m.'),
@@ -516,6 +549,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Statistics: The Binomial Distribution',
     title: 'Binomial probability',
     prompt: 'A fair coin is tossed 4 times. What is the probability of getting exactly 2 heads?',
+    mentorHint: 'Use the binomial formula with n = 4, r = 2.',
     correct: '3/8',
     wrong: [
       miss('1/2', 'This is the probability of a single head, not the probability of exactly 2 heads in 4 tosses.', 'Use the binomial formula with n = 4, r = 2.'),
@@ -531,6 +565,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Statistics: The Normal Distribution',
     title: 'Standardising a normal variable',
     prompt: 'X is normally distributed with mean 50 and standard deviation 8. What is the z-score corresponding to X = 66?',
+    mentorHint: 'z = (x - μ)/σ, so divide by 8.',
     correct: '2',
     wrong: [
       miss('16', 'This is the difference from the mean (66 - 50) but not yet divided by the standard deviation.', 'z = (x - μ)/σ, so divide by 8.'),
@@ -546,6 +581,7 @@ export const colALevelMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank
     chapter: 'Statistics: Hypothesis Testing',
     title: 'Identifying the null hypothesis',
     prompt: 'A researcher tests whether a coin is biased towards heads. The probability of heads is p. What is the appropriate null and alternative hypothesis pair?',
+    mentorHint: 'A directional claim needs a one-tailed test.',
     correct: 'H0: p = 0.5, H1: p > 0.5 (one-tailed)',
     wrong: [
       miss('H0: p = 0.5, H1: p ≠ 0.5 (two-tailed)', 'The claim is specifically about bias towards heads, which is directional, so a one-tailed alternative p > 0.5 is appropriate.', 'A directional claim needs a one-tailed test.'),

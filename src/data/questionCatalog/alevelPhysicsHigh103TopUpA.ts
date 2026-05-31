@@ -11,6 +11,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Measurements and their errors',
     title: 'SI base units of force',
     prompt: 'The newton is a derived unit. Expressed in SI base units, 1 N is equivalent to which of the following?',
+    mentorHint: 'Force = mass x acceleration, and acceleration is m s^-2.',
     correct: 'kg m s^-2',
     wrong: [
       miss('kg m^2 s^-2', 'These are the base units of energy (the joule), not force.', 'Force = mass x acceleration, and acceleration is m s^-2.'),
@@ -26,6 +27,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Measurements and their errors',
     title: 'Random versus systematic error',
     prompt: 'A voltmeter consistently reads 0.2 V when nothing is connected to it. When used in a circuit, this fault produces what kind of error?',
+    mentorHint: 'Ask whether the error is the same each time or varies; a fixed offset is systematic.',
     correct: 'A systematic error (specifically a zero error) that shifts every reading by the same amount',
     wrong: [
       miss('A random error that varies unpredictably from reading to reading', 'A consistent fixed offset is reproducible, not random; random errors scatter both ways.', 'Ask whether the error is the same each time or varies; a fixed offset is systematic.'),
@@ -41,6 +43,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Measurements and their errors',
     title: 'Combining percentage uncertainties',
     prompt: 'A quantity is calculated using P = I^2 R. The current I has a percentage uncertainty of 3% and the resistance R has a percentage uncertainty of 2%. What is the percentage uncertainty in P?',
+    mentorHint: 'A squared quantity contributes twice its percentage uncertainty.',
     correct: '8%',
     wrong: [
       miss('5%', 'This adds 3% + 2% but ignores that I is squared, so its uncertainty doubles.', 'A squared quantity contributes twice its percentage uncertainty.'),
@@ -56,6 +59,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Measurements and their errors',
     title: 'Order of magnitude estimate',
     prompt: 'Which of the following is the best order-of-magnitude estimate for the diameter of a typical atom?',
+    mentorHint: 'The nucleus is tiny compared with the whole atom; you want the atomic diameter.',
     correct: '10^-10 m',
     wrong: [
       miss('10^-15 m', 'This is the scale of an atomic nucleus, about 100000 times smaller than the atom.', 'The nucleus is tiny compared with the whole atom; you want the atomic diameter.'),
@@ -71,6 +75,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Measurements and their errors',
     title: 'Using a vernier and prefixes',
     prompt: 'A length is recorded as 4.7 mm. Expressed in metres in standard form, this is:',
+    mentorHint: 'milli means 10^-3, not 10^-6 (which is micro).',
     correct: '4.7 x 10^-3 m',
     wrong: [
       miss('4.7 x 10^-6 m', 'This is the value in micrometres expressed in metres, off by a factor of 1000.', 'milli means 10^-3, not 10^-6 (which is micro).'),
@@ -88,6 +93,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Particles and radiation',
     title: 'Specific charge of a nucleus',
     prompt: 'A carbon-12 nucleus contains 6 protons and 6 neutrons. Taking the elementary charge as 1.6 x 10^-19 C and the nucleon mass as 1.67 x 10^-27 kg, what is the approximate specific charge of the nucleus?',
+    mentorHint: 'Specific charge uses total nuclear mass, which includes neutrons.',
     correct: '8.0 x 10^7 C kg^-1',
     wrong: [
       miss('1.6 x 10^8 C kg^-1', 'This divides the charge by the mass of only the protons, ignoring the neutrons.', 'Specific charge uses total nuclear mass, which includes neutrons.'),
@@ -103,6 +109,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Particles and radiation',
     title: 'Antiparticle properties',
     prompt: 'Which statement correctly describes the relationship between a particle and its antiparticle?',
+    mentorHint: 'Mass is never negative; it is charge that flips sign.',
     correct: 'They have equal mass and equal rest energy but opposite charge',
     wrong: [
       miss('They have opposite mass and the same charge', 'Antiparticles have the same (positive) mass; it is the charge that is reversed.', 'Mass is never negative; it is charge that flips sign.'),
@@ -118,6 +125,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Particles and radiation',
     title: 'Quark composition of the proton',
     prompt: 'The proton is a baryon with charge +1 (in units of e). Which quark combination gives the proton?',
+    mentorHint: 'Add the fractional charges: you need a total of +1 for the proton.',
     correct: 'up, up, down',
     wrong: [
       miss('up, down, down', 'This combination (uud charges +2/3, -1/3, -1/3) gives a total charge of 0, the neutron.', 'Add the fractional charges: you need a total of +1 for the proton.'),
@@ -133,6 +141,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Particles and radiation',
     title: 'Beta-minus decay and the exchange particle',
     prompt: 'In beta-minus decay a neutron changes into a proton. At the quark level a down quark becomes an up quark. Which exchange particle mediates this weak interaction?',
+    mentorHint: 'Changing quark flavour is only possible via the weak interaction.',
     correct: 'The W- boson',
     wrong: [
       miss('The photon', 'The photon mediates the electromagnetic force, but flavour change requires the weak force.', 'Changing quark flavour is only possible via the weak interaction.'),
@@ -148,6 +157,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Particles and radiation',
     title: 'Conservation in particle interactions',
     prompt: 'Which quantity is NOT necessarily conserved in a particle interaction governed by the weak interaction?',
+    mentorHint: 'Charge conservation is absolute across all four fundamental interactions.',
     correct: 'Strangeness',
     wrong: [
       miss('Charge', 'Charge is always conserved in every particle interaction without exception.', 'Charge conservation is absolute across all four fundamental interactions.'),
@@ -163,6 +173,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Particles and radiation',
     title: 'Classifying particles',
     prompt: 'Which of the following particles is a lepton?',
+    mentorHint: 'Leptons are fundamental and feel no strong force; the proton does.',
     correct: 'The muon',
     wrong: [
       miss('The proton', 'The proton is a baryon (three quarks), which makes it a hadron, not a lepton.', 'Leptons are fundamental and feel no strong force; the proton does.'),
@@ -180,6 +191,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Quantum phenomena',
     title: 'Energy of a photon',
     prompt: 'A photon has a frequency of 5.0 x 10^14 Hz. Taking the Planck constant as 6.63 x 10^-34 J s, what is the energy of the photon?',
+    mentorHint: 'Photon energy increases with frequency, so multiply h by f.',
     correct: '3.3 x 10^-19 J',
     wrong: [
       miss('1.3 x 10^-48 J', 'This divides h by f instead of multiplying; E = hf, not h/f.', 'Photon energy increases with frequency, so multiply h by f.'),
@@ -195,6 +207,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Quantum phenomena',
     title: 'Threshold frequency in the photoelectric effect',
     prompt: 'Light below a certain threshold frequency never ejects electrons from a metal, no matter how intense the beam. Which idea explains this observation?',
+    mentorHint: 'If frequency is too low, no waiting helps; energy comes per photon.',
     correct: 'Each electron absorbs a single photon, and one photon below the threshold lacks the energy to overcome the work function',
     wrong: [
       miss('Dim light simply takes longer, so eventually electrons are ejected', 'Increasing intensity or time below the threshold never works; emission is instantaneous or absent.', 'If frequency is too low, no waiting helps; energy comes per photon.'),
@@ -210,6 +223,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Quantum phenomena',
     title: 'Maximum kinetic energy of photoelectrons',
     prompt: 'Light of photon energy 4.0 eV strikes a metal whose work function is 2.5 eV. What is the maximum kinetic energy of the emitted photoelectrons?',
+    mentorHint: 'The work function is energy the electron must give up to escape, so subtract it.',
     correct: '1.5 eV',
     wrong: [
       miss('6.5 eV', 'This adds the work function instead of subtracting it.', 'The work function is energy the electron must give up to escape, so subtract it.'),
@@ -225,6 +239,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Quantum phenomena',
     title: 'de Broglie wavelength',
     prompt: 'According to de Broglie, a particle of momentum p has an associated wavelength. If the speed of an electron is doubled while its mass stays constant, its de Broglie wavelength:',
+    mentorHint: 'Recall lambda = h/p; larger p means smaller wavelength.',
     correct: 'halves',
     wrong: [
       miss('doubles', 'This treats wavelength as proportional to momentum, but it is inversely proportional.', 'Recall lambda = h/p; larger p means smaller wavelength.'),
@@ -240,6 +255,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Quantum phenomena',
     title: 'Electron energy levels and line spectra',
     prompt: 'An atom emits light at discrete wavelengths producing a line emission spectrum. What does this directly demonstrate about the electrons in the atom?',
+    mentorHint: 'Discrete lines imply discrete, not continuous, energy differences.',
     correct: 'Electrons occupy discrete, quantised energy levels',
     wrong: [
       miss('Electrons can have any energy in a continuous range', 'Continuous energies would give a continuous spectrum, not sharp lines.', 'Discrete lines imply discrete, not continuous, energy differences.'),
@@ -257,6 +273,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Waves',
     title: 'The wave equation',
     prompt: 'A wave on a string has a frequency of 250 Hz and a wavelength of 0.80 m. What is the speed of the wave?',
+    mentorHint: 'Wave speed is v = f x lambda, a product not a quotient.',
     correct: '200 m s^-1',
     wrong: [
       miss('312.5 m s^-1', 'This divides frequency by wavelength rather than multiplying them.', 'Wave speed is v = f x lambda, a product not a quotient.'),
@@ -272,6 +289,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Waves',
     title: 'Transverse versus longitudinal waves',
     prompt: 'Which of the following correctly distinguishes a longitudinal wave from a transverse wave?',
+    mentorHint: 'Longitudinal means the vibration lies along the travel direction.',
     correct: 'In a longitudinal wave the oscillations are parallel to the direction of energy transfer',
     wrong: [
       miss('In a longitudinal wave the oscillations are perpendicular to the direction of energy transfer', 'Perpendicular oscillation defines a transverse wave, not a longitudinal one.', 'Longitudinal means the vibration lies along the travel direction.'),
@@ -287,6 +305,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Waves',
     title: 'Phase difference along a wave',
     prompt: 'Two points on a progressive wave are separated by half a wavelength. What is the phase difference between them?',
+    mentorHint: 'Half a wavelength is half of a full cycle, so half of 2 pi.',
     correct: 'pi radians (180 degrees)',
     wrong: [
       miss('2 pi radians (360 degrees)', 'A full 2 pi corresponds to a separation of one whole wavelength, not half.', 'Half a wavelength is half of a full cycle, so half of 2 pi.'),
@@ -302,6 +321,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Waves',
     title: 'Conditions for a stationary wave',
     prompt: 'A stationary (standing) wave forms on a stretched string. Which condition is essential for its formation?',
+    mentorHint: 'Stationary waves need equal frequencies and opposite directions.',
     correct: 'Two waves of the same frequency travel in opposite directions and superpose',
     wrong: [
       miss('Two waves of different frequencies travel in the same direction', 'Different frequencies do not produce fixed nodes; they would give beats, not a standing wave.', 'Stationary waves need equal frequencies and opposite directions.'),
@@ -317,6 +337,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Waves',
     title: 'Nodes and antinodes on a string',
     prompt: 'A string fixed at both ends vibrates in its fundamental (first harmonic) mode. How many nodes and antinodes are present along the string?',
+    mentorHint: 'Each fixed end of a string is forced to be a node.',
     correct: '2 nodes (at the ends) and 1 antinode (in the middle)',
     wrong: [
       miss('1 node and 2 antinodes', 'The fixed ends must be nodes, so there are at least two nodes, not one.', 'Each fixed end of a string is forced to be a node.'),
@@ -332,6 +353,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Waves',
     title: 'Young double-slit fringe spacing',
     prompt: 'In a Young double-slit experiment, the fringe spacing on the screen is w = (lambda D)/s, where s is the slit separation and D the slit-to-screen distance. To increase the fringe spacing you should:',
+    mentorHint: 'Look at the equation: s is in the denominator.',
     correct: 'Decrease the slit separation s',
     wrong: [
       miss('Increase the slit separation s', 'Fringe spacing is inversely proportional to s, so increasing s narrows the fringes.', 'Look at the equation: s is in the denominator.'),
@@ -347,6 +369,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Waves',
     title: 'Refractive index and Snell\'s law',
     prompt: 'Light travels from air (refractive index 1.00) into glass of refractive index 1.50. As it enters the glass, what happens to its speed and wavelength?',
+    mentorHint: 'Frequency does not change at a boundary; only speed and wavelength do.',
     correct: 'Both speed and wavelength decrease, while frequency stays the same',
     wrong: [
       miss('Speed decreases but frequency decreases too', 'Frequency is fixed by the source and is unchanged on entering a new medium.', 'Frequency does not change at a boundary; only speed and wavelength do.'),
@@ -362,6 +385,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Waves',
     title: 'Total internal reflection',
     prompt: 'For total internal reflection to occur at a boundary, two conditions must be met. Which pair is correct?',
+    mentorHint: 'TIR only occurs when entering a medium of lower refractive index.',
     correct: 'Light must travel from a more dense to a less dense medium, and the angle of incidence must exceed the critical angle',
     wrong: [
       miss('Light must travel from a less dense to a more dense medium, and the angle must exceed the critical angle', 'Total internal reflection happens going the other way, from dense to less dense.', 'TIR only occurs when entering a medium of lower refractive index.'),
@@ -379,6 +403,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: kinematics',
     title: 'SUVAT for an accelerating car',
     prompt: 'A car starts from rest and accelerates uniformly at 3.0 m s^-2 for 4.0 s. How far does it travel in this time?',
+    mentorHint: 'The distance formula has a factor of one half and time squared.',
     correct: '24 m',
     wrong: [
       miss('12 m', 'This uses s = ut + at instead of s = ut + (1/2)at^2, dropping the squared time and the half.', 'The distance formula has a factor of one half and time squared.'),
@@ -394,6 +419,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: kinematics',
     title: 'Interpreting a velocity-time graph',
     prompt: 'On a velocity-time graph, what does the area between the line and the time axis represent?',
+    mentorHint: 'Gradient gives acceleration; area gives displacement.',
     correct: 'The displacement of the object',
     wrong: [
       miss('The acceleration of the object', 'Acceleration is the gradient of a velocity-time graph, not the area under it.', 'Gradient gives acceleration; area gives displacement.'),
@@ -409,6 +435,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: kinematics',
     title: 'Projectile motion components',
     prompt: 'A ball is thrown horizontally from a cliff. Ignoring air resistance, which statement about its motion is correct?',
+    mentorHint: 'Gravity acts vertically, changing the vertical velocity over time.',
     correct: 'Its horizontal velocity stays constant while its vertical velocity increases due to gravity',
     wrong: [
       miss('Both horizontal and vertical velocities stay constant', 'Gravity accelerates the ball downward, so the vertical velocity is not constant.', 'Gravity acts vertically, changing the vertical velocity over time.'),
@@ -424,6 +451,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: kinematics',
     title: 'Terminal velocity',
     prompt: 'A skydiver reaches terminal velocity during free fall. At this point, which statement is true?',
+    mentorHint: 'Terminal velocity is about balance of forces, not loss of weight.',
     correct: 'The drag force equals the weight, so the resultant force is zero and acceleration is zero',
     wrong: [
       miss('The weight has become zero, so the skydiver stops accelerating', 'Weight does not vanish; it is balanced by an equal upward drag force.', 'Terminal velocity is about balance of forces, not loss of weight.'),
@@ -441,6 +469,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: forces and Newton\'s laws',
     title: 'Newton\'s second law',
     prompt: 'A resultant force of 12 N acts on a mass of 4.0 kg. What is the acceleration of the mass?',
+    mentorHint: 'Acceleration is force divided by mass, not their product.',
     correct: '3.0 m s^-2',
     wrong: [
       miss('48 m s^-2', 'This multiplies force by mass rather than dividing, the inverse of a = F/m.', 'Acceleration is force divided by mass, not their product.'),
@@ -456,6 +485,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: forces and Newton\'s laws',
     title: 'Newton\'s third law pairs',
     prompt: 'A book rests on a table. According to Newton\'s third law, what is the reaction force to the gravitational pull of the Earth on the book?',
+    mentorHint: 'Third-law pairs are the same type of force on different bodies.',
     correct: 'The gravitational pull of the book on the Earth',
     wrong: [
       miss('The normal contact force of the table pushing up on the book', 'This force balances the weight but is a different type and acts on the book, so it is not the third-law pair.', 'Third-law pairs are the same type of force on different bodies.'),
@@ -471,6 +501,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: forces and Newton\'s laws',
     title: 'Resolving forces on an incline',
     prompt: 'A block of weight W sits on a frictionless slope inclined at angle theta to the horizontal. What is the component of the weight acting down the slope?',
+    mentorHint: 'The along-slope component uses sine of the incline angle.',
     correct: 'W sin(theta)',
     wrong: [
       miss('W cos(theta)', 'W cos(theta) is the component perpendicular to the slope (the normal direction), not along it.', 'The along-slope component uses sine of the incline angle.'),
@@ -486,6 +517,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: forces and Newton\'s laws',
     title: 'Free-body diagram and resultant',
     prompt: 'A 2.0 kg object hangs in equilibrium from a single vertical rope. Taking g = 9.8 m s^-2, what is the tension in the rope?',
+    mentorHint: 'Weight = mass x g, so multiply by 9.8.',
     correct: '19.6 N',
     wrong: [
       miss('2.0 N', 'This quotes the mass in newtons without multiplying by g.', 'Weight = mass x g, so multiply by 9.8.'),
@@ -501,6 +533,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: forces and Newton\'s laws',
     title: 'Moments and the principle of moments',
     prompt: 'A uniform beam is pivoted at its centre. A 30 N weight is placed 0.40 m from the pivot on the left. To balance the beam, a 20 N weight must be placed on the right at a distance of:',
+    mentorHint: 'Equal distances only balance equal forces; set the moments equal instead.',
     correct: '0.60 m',
     wrong: [
       miss('0.40 m', 'This places equal distances, but the weights differ, so the moments would not balance.', 'Equal distances only balance equal forces; set the moments equal instead.'),
@@ -518,6 +551,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: work, energy and power',
     title: 'Work done by a force',
     prompt: 'A horizontal force of 25 N drags a box 4.0 m across a floor in the direction of the force. How much work is done by the force?',
+    mentorHint: 'Work is force times distance, not force divided by distance.',
     correct: '100 J',
     wrong: [
       miss('6.25 J', 'This divides force by distance instead of multiplying them.', 'Work is force times distance, not force divided by distance.'),
@@ -533,6 +567,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: work, energy and power',
     title: 'Gravitational potential energy change',
     prompt: 'A 5.0 kg mass is lifted vertically through 2.0 m. Taking g = 9.8 m s^-2, what is the gain in gravitational potential energy?',
+    mentorHint: 'Gravitational PE change is mgh; include the value of g.',
     correct: '98 J',
     wrong: [
       miss('10 J', 'This uses mh and omits g, treating the answer as mass times height only.', 'Gravitational PE change is mgh; include the value of g.'),
@@ -548,6 +583,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: work, energy and power',
     title: 'Kinetic energy and speed',
     prompt: 'If the speed of a moving car doubles, by what factor does its kinetic energy change?',
+    mentorHint: 'Kinetic energy involves v^2, so doubling v multiplies KE by 2^2.',
     correct: 'It increases by a factor of 4',
     wrong: [
       miss('It doubles', 'This treats kinetic energy as proportional to speed, but it depends on speed squared.', 'Kinetic energy involves v^2, so doubling v multiplies KE by 2^2.'),
@@ -563,6 +599,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: work, energy and power',
     title: 'Power as rate of doing work',
     prompt: 'A motor does 6000 J of work in 30 s. What is the average power output of the motor?',
+    mentorHint: 'Power = work divided by time.',
     correct: '200 W',
     wrong: [
       miss('180000 W', 'This multiplies work by time instead of dividing; power is work per unit time.', 'Power = work divided by time.'),
@@ -578,6 +615,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: work, energy and power',
     title: 'Efficiency of a machine',
     prompt: 'A machine takes in 500 J of energy and produces 350 J of useful output. What is its efficiency?',
+    mentorHint: 'Efficiency is useful output over total input, always at most 100%.',
     correct: '70%',
     wrong: [
       miss('143%', 'This divides input by output, giving an impossible efficiency above 100%.', 'Efficiency is useful output over total input, always at most 100%.'),
@@ -593,6 +631,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: work, energy and power',
     title: 'Conservation of energy on a ramp',
     prompt: 'A frictionless trolley of mass 2.0 kg is released from rest at the top of a smooth slope and descends a vertical height of 1.5 m. Using g = 9.8 m s^-2, what is its speed at the bottom?',
+    mentorHint: 'After equating mgh to (1/2)mv^2, remember to square root.',
     correct: '5.4 m s^-1',
     wrong: [
       miss('29.4 m s^-1', 'This sets v equal to 2gh instead of taking the square root of 2gh.', 'After equating mgh to (1/2)mv^2, remember to square root.'),
@@ -610,6 +649,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: momentum',
     title: 'Defining momentum',
     prompt: 'A 1500 kg car moves at 20 m s^-1. What is the magnitude of its momentum?',
+    mentorHint: 'Momentum p = mv, a product.',
     correct: '30000 kg m s^-1',
     wrong: [
       miss('75 kg m s^-1', 'This divides mass by speed instead of multiplying; momentum is mass times velocity.', 'Momentum p = mv, a product.'),
@@ -625,6 +665,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: momentum',
     title: 'Conservation of momentum in a collision',
     prompt: 'A 2.0 kg trolley moving at 3.0 m s^-1 collides with and sticks to a stationary 1.0 kg trolley. What is their common velocity immediately after the collision?',
+    mentorHint: 'Total mass increases after sticking, so the speed must drop.',
     correct: '2.0 m s^-1',
     wrong: [
       miss('3.0 m s^-1', 'This ignores that the combined mass is larger, which must reduce the speed.', 'Total mass increases after sticking, so the speed must drop.'),
@@ -640,6 +681,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: momentum',
     title: 'Impulse and force',
     prompt: 'A force acts on an object and changes its momentum by 12 kg m s^-1 over a time of 0.30 s. What is the average force exerted?',
+    mentorHint: 'Force is the rate of change of momentum: divide by time.',
     correct: '40 N',
     wrong: [
       miss('3.6 N', 'This multiplies change in momentum by time instead of dividing.', 'Force is the rate of change of momentum: divide by time.'),
@@ -655,6 +697,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: momentum',
     title: 'Elastic versus inelastic collisions',
     prompt: 'Which statement correctly describes the difference between an elastic and an inelastic collision?',
+    mentorHint: 'Momentum conservation holds for both types of collision.',
     correct: 'In both, momentum is conserved, but kinetic energy is conserved only in an elastic collision',
     wrong: [
       miss('In an elastic collision momentum is not conserved, but kinetic energy is', 'Momentum is conserved in all collisions where no external force acts, elastic or not.', 'Momentum conservation holds for both types of collision.'),
@@ -672,6 +715,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: materials',
     title: 'Hooke\'s law and the spring constant',
     prompt: 'A spring obeys Hooke\'s law. A force of 8.0 N extends it by 0.040 m. What is the spring constant?',
+    mentorHint: 'Spring constant is force divided by extension.',
     correct: '200 N m^-1',
     wrong: [
       miss('0.32 N m^-1', 'This multiplies force by extension instead of dividing; k = F/x.', 'Spring constant is force divided by extension.'),
@@ -687,6 +731,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: materials',
     title: 'Elastic potential energy stored',
     prompt: 'A spring of spring constant 200 N m^-1 is extended by 0.10 m within its elastic limit. How much elastic potential energy is stored?',
+    mentorHint: 'The elastic PE formula has a factor of one half.',
     correct: '1.0 J',
     wrong: [
       miss('2.0 J', 'This uses kx^2 without the factor of one half.', 'The elastic PE formula has a factor of one half.'),
@@ -702,6 +747,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: materials',
     title: 'Young modulus definition',
     prompt: 'The Young modulus of a material is defined as which ratio?',
+    mentorHint: 'Stress goes on top, strain on the bottom.',
     correct: 'Tensile stress divided by tensile strain',
     wrong: [
       miss('Tensile strain divided by tensile stress', 'This is the inverse of the Young modulus; the modulus is stress over strain.', 'Stress goes on top, strain on the bottom.'),
@@ -717,6 +763,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: materials',
     title: 'Calculating stress',
     prompt: 'A wire of cross-sectional area 2.0 x 10^-6 m^2 carries a tension of 50 N. What is the tensile stress in the wire?',
+    mentorHint: 'Stress = force divided by area.',
     correct: '2.5 x 10^7 Pa',
     wrong: [
       miss('1.0 x 10^-4 Pa', 'This multiplies force by area rather than dividing; stress is force per unit area.', 'Stress = force divided by area.'),
@@ -732,6 +779,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: materials',
     title: 'Brittle versus ductile behaviour',
     prompt: 'A material that snaps suddenly with little or no plastic deformation before fracture is best described as:',
+    mentorHint: 'Elastic behaviour is about reversible deformation, not the fracture style.',
     correct: 'Brittle',
     wrong: [
       miss('Ductile', 'Ductile materials undergo large plastic deformation (e.g. drawing into wires) before breaking.', 'Ductile means it stretches a lot first; brittle snaps with little warning.'),
@@ -747,6 +795,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: materials',
     title: 'Elastic limit and plastic deformation',
     prompt: 'A metal wire is stretched beyond its elastic limit and then the load is removed. What happens to the wire?',
+    mentorHint: 'Beyond the elastic limit, deformation becomes permanent.',
     correct: 'It does not return to its original length; it retains a permanent extension',
     wrong: [
       miss('It returns exactly to its original length', 'Returning fully to the original length is elastic behaviour, which only happens below the elastic limit.', 'Beyond the elastic limit, deformation becomes permanent.'),
@@ -762,6 +811,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: scalars and vectors',
     title: 'Resultant of perpendicular vectors',
     prompt: 'Two forces, 3.0 N and 4.0 N, act at right angles to each other on the same point. What is the magnitude of their resultant?',
+    mentorHint: 'Perpendicular vectors combine via Pythagoras, not simple addition.',
     correct: '5.0 N',
     wrong: [
       miss('7.0 N', 'This simply adds the magnitudes, which is only valid when the forces are parallel.', 'Perpendicular vectors combine via Pythagoras, not simple addition.'),
@@ -777,6 +827,7 @@ export const alevelPhysicsHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     chapter: 'Mechanics: scalars and vectors',
     title: 'Scalar versus vector quantities',
     prompt: 'Which of the following is a vector quantity?',
+    mentorHint: 'A vector needs direction; speed is the magnitude of velocity.',
     correct: 'Displacement',
     wrong: [
       miss('Speed', 'Speed has magnitude only; its directional counterpart, velocity, is the vector.', 'A vector needs direction; speed is the magnitude of velocity.'),

@@ -13,6 +13,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'A team says their redesign was a success because they "shipped 14 new screens this quarter." Why is this a weak success metric for a UX project?',
     correct: 'It measures output (work produced) rather than an outcome (a change in what users can do)',
+    mentorHint: 'Separate the artifact from the user result. A UX outcome should describe whether users can complete a task more successfully, quickly, confidently, or accessibly, not how many screens the team produced.',
     wrong: [
       miss(
         'It is too low; a strong team should ship at least 30 screens',
@@ -42,6 +43,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'Using a jobs-to-be-done lens, which statement best captures why someone buys a drill?',
     correct: 'They are hiring the drill to make a hole so they can hang a shelf',
+    mentorHint: 'Jobs-to-be-done asks what progress the person is trying to make in a situation. Look past the product, demographic, or preference and name the practical outcome the tool helps accomplish.',
     wrong: [
       miss(
         'They want to own the most powerful drill on the market',
@@ -71,6 +73,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'A stakeholder asks for "a chatbot on the homepage." What is the most useful first move for the designer?',
     correct: 'Find out which user problem the chatbot is meant to solve and whether it is the best way to solve it',
+    mentorHint: 'A feature request is evidence that someone perceives a problem, but it is not proof that the proposed feature is the right solution. First translate the request into a user need, then compare solution options against that need.',
     wrong: [
       miss(
         'Start designing the chatbot UI immediately to show momentum',
@@ -100,6 +103,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     title: 'Leading question',
     prompt: 'Which interview question is most likely to bias the answer?',
     correct: 'How much did you love our new streamlined checkout?',
+    mentorHint: 'Leading questions smuggle judgment into the wording and encourage agreement. Watch for adjectives, praise, or assumptions that tell the participant how they are supposed to feel before they answer.',
     wrong: [
       miss(
         'Walk me through the last time you bought something here.',
@@ -129,6 +133,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'In a survey, 80% of users say they would pay for a premium tier, but when it launches almost no one subscribes. What does this best illustrate?',
     correct: 'The gap between what users say they will do and what they actually do',
+    mentorHint: 'Future-intent survey answers are weak evidence because there is no real cost to saying yes. Behavioral evidence becomes stronger when users must spend money, time, attention, or effort.',
     wrong: [
       miss(
         'The survey sample was too large to be reliable',
@@ -158,6 +163,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'Before any designs exist, a team wants to understand how field technicians currently diagnose equipment faults. Which type of research fits?',
     correct: 'Generative (discovery) research, such as contextual interviews and observation',
+    mentorHint: 'Choose research methods based on the stage of uncertainty. When no design exists and the team needs to understand current behavior, use methods that generate insight rather than methods that evaluate a finished artifact.',
     wrong: [
       miss(
         'Evaluative research, such as a usability test of the prototype',
@@ -188,6 +194,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'You are designing a brand-new product and want to learn how users would naturally group its content. Which method fits best?',
     correct: 'An open card sort, where participants create and name their own categories',
+    mentorHint: 'Information architecture work often starts by discovering the user’s mental model before validating your own. If the categories are not known yet, choose a method that lets participants create structure rather than fit items into yours.',
     wrong: [
       miss(
         'A closed card sort, where participants sort items into your predefined categories',
@@ -216,6 +223,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     title: 'Tree testing purpose',
     prompt: 'What does a tree test (reverse card sort) primarily measure?',
     correct: 'Whether users can find content by navigating a proposed structure',
+    mentorHint: 'Tree testing strips away visual design so you can isolate the structure of the navigation. Ask whether the method is generating categories or testing whether people can find things in a proposed hierarchy.',
     wrong: [
       miss(
         'How visually appealing the navigation menu looks',
@@ -245,6 +253,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'A designer wants to capture a user’s emotions, pain points, and touchpoints across signing up, onboarding, and first week of use over several days. Which artifact fits best?',
     correct: 'A user journey map',
+    mentorHint: 'Choose the artifact by the scale of the experience. Screen flows are good for task steps and branches, while journeys capture stages over time, touchpoints, emotions, and pain points across a broader experience.',
     wrong: [
       miss(
         'A user flow diagram',
@@ -275,6 +284,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'A landing page offers 18 equally weighted call-to-action buttons and conversions are low. Which UX law most directly explains the problem?',
     correct: 'Hick’s law — decision time grows as the number of choices increases',
+    mentorHint: 'Diagnose the friction: is the user struggling to decide among many options, reach a physical target, or recognize a familiar pattern? Too many equal choices primarily create decision load.',
     wrong: [
       miss(
         'Fitts’s law — time to acquire a target depends on its size and distance',
@@ -304,6 +314,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'Per Fitts’s law, which change makes a frequently used "Send" button faster and easier to hit on mobile?',
     correct: 'Make the button larger and place it within easy thumb reach',
+    mentorHint: 'Fitts’s law is about movement cost. For frequent actions, reduce the distance to the target and increase the target size so users can hit it faster with fewer errors.',
     wrong: [
       miss(
         'Make the button tiny so it takes up less screen space',
@@ -333,6 +344,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'Nielsen’s "recognition rather than recall" heuristic favors which design choice?',
     correct: 'Showing recently used items and visible options so users can pick rather than remember',
+    mentorHint: 'Memory load is a design cost. Interfaces are easier when users can see and recognize available actions instead of remembering commands, locations, or meanings from scratch.',
     wrong: [
       miss(
         'Requiring users to type exact command names from memory',
@@ -362,6 +374,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'A form has 6 essential fields plus 20 optional advanced settings most users never touch. Which approach best reflects progressive disclosure?',
     correct: 'Show the 6 essential fields and reveal the advanced settings behind an "Advanced options" expander',
+    mentorHint: 'Progressive disclosure manages complexity without deleting capability. Prioritize the common path first, then reveal advanced or rare controls only when users intentionally need them.',
     wrong: [
       miss(
         'Show all 26 fields at once so nothing is hidden',
@@ -393,6 +406,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
       'Nielsen’s well-known guidance that testing with about five users uncovers roughly 85% of usability problems is best understood how?',
     correct:
       'As a rule of thumb for one round of qualitative testing within a single user group, not a universal guarantee',
+    mentorHint: 'Treat small-sample usability guidance as an iteration strategy, not a universal law. Qualitative tests find many obvious problems quickly, but different user groups, quantitative claims, and complex products can require more participants.',
     wrong: [
       miss(
         'As proof that you never need to test with more than five users ever',
@@ -422,6 +436,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'A product scores 68 on the System Usability Scale (SUS). How should this be interpreted?',
     correct: 'It is right at the historical average; 68 is the benchmark mean, roughly a "C" grade',
+    mentorHint: 'SUS is a normalized usability score with benchmarks, not a literal percent usable. Compare the score to historical norms and grade interpretations rather than treating the number as a pass/fail percentage.',
     wrong: [
       miss(
         'The product is 68% usable',
@@ -451,6 +466,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'A usability test surfaces four issues. Which one should typically be fixed first?',
     correct: 'A frequent, blocking issue that stops most users from completing the core task',
+    mentorHint: 'Severity combines consequence and frequency. A practical triage question is: how many users hit this, and does it merely annoy them or prevent completion of a high-value task?',
     wrong: [
       miss(
         'A cosmetic misalignment one participant mentioned in passing',
@@ -480,6 +496,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'You need rich, in-the-moment reasoning about why users hesitate on a confusing new flow, with the ability to ask follow-up questions. Which method fits best?',
     correct: 'Moderated usability testing with a think-aloud protocol',
+    mentorHint: 'Method choice is about the kind of evidence you need. If you need live reasoning and follow-up probes, prioritize depth and facilitation over scale and automation.',
     wrong: [
       miss(
         'A large unmoderated test with 100 participants',
@@ -509,6 +526,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'In a usability test, 12 of 15 participants complete the core task unaided. What is the task success rate, and what does it tell you?',
     correct: '80% — a behavioral measure of how many users could finish the task',
+    mentorHint: 'Task success is a behavioral proportion: successful completions divided by attempts. Keep it separate from satisfaction scores, because users can finish a task and still dislike the experience, or enjoy a task they failed.',
     wrong: [
       miss(
         '12 — the raw count is the success rate',
@@ -539,6 +557,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'Under WCAG 2.2 Level AA, what is the minimum contrast ratio between normal-size body text and its background?',
     correct: '4.5:1',
+    mentorHint: 'WCAG contrast thresholds depend on text size and conformance level. Normal body text at AA has a stricter minimum than large text, while AAA raises the bar further.',
     wrong: [
       miss(
         '3:1',
@@ -568,6 +587,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'WCAG 2.2 added a Level AA target-size criterion (SC 2.5.8). What is the minimum size for a pointer target (absent the spacing or other exceptions)?',
     correct: '24 by 24 CSS pixels',
+    mentorHint: 'Target-size rules protect users with motor limitations by ensuring controls are not too small to activate reliably. Distinguish the WCAG AA minimum from stricter AAA or platform-specific touch guidelines.',
     wrong: [
       miss(
         '44 by 44 CSS pixels',
@@ -597,6 +617,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'A status message conveys errors using red color alone, with no icon or text. Which of WCAG’s four POUR principles does this most directly violate?',
     correct: 'Perceivable — information must be presented in ways users can perceive, not by color alone',
+    mentorHint: 'POUR categories map to different failure modes: seeing or sensing information, operating controls, understanding behavior, and compatibility with assistive tech. Color-only meaning fails before interaction or comprehension, because some users cannot perceive the distinction.',
     wrong: [
       miss(
         'Operable — interface components must be usable',
@@ -626,6 +647,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'A toolbar uses an icon-only button (a magnifying glass) with no text. For screen-reader users, what must the design ensure?',
     correct: 'The button has a programmatically determined accessible name, such as "Search"',
+    mentorHint: 'Assistive technology needs a control’s purpose in text form, not just a visual symbol. For icon-only buttons, ask what a screen reader would announce for the name, role, and state.',
     wrong: [
       miss(
         'The icon is drawn at a higher resolution',
@@ -657,6 +679,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
       'Why do mature design systems define a token like color-primary or space-200 instead of hardcoding a hex value or pixel number on each component?',
     correct:
       'Tokens give one named source of truth that updates everywhere and stays in sync between design and code',
+    mentorHint: 'Design tokens are about governance and consistency across systems. Named values let teams change a design decision once and propagate it through both design files and implementation instead of chasing scattered hardcoded values.',
     wrong: [
       miss(
         'Hardcoded hex values render faster in the browser',
@@ -686,6 +709,7 @@ export const uxDesignTopUpQuestions: Question[] = makeQuestionBank('Career Skill
     prompt:
       'A designer hands off a single "default" screenshot of a primary button. What is the most important thing missing for engineering?',
     correct: 'The full set of states — hover, focus, active, disabled, loading, and error',
+    mentorHint: 'A component spec must describe behavior across states, not just its prettiest default appearance. Engineering needs to know what happens when the component is focused, unavailable, in progress, pressed, hovered, or showing an error.',
     wrong: [
       miss(
         'A higher-resolution export of the same default state',

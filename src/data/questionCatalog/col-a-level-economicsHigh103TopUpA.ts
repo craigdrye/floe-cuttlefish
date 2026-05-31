@@ -11,6 +11,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'The economic problem and fundamental concepts',
     title: 'Scarcity as the basic economic problem',
     prompt: 'Which statement best describes why scarcity is regarded as the fundamental economic problem?',
+    mentorHint: 'Scarcity affects rich and poor economies alike.',
     correct: 'Human wants are unlimited but the resources available to satisfy them are finite',
     wrong: [
       miss('Some countries do not produce enough food for their populations', 'This describes one symptom of poverty, not the universal economic problem that applies to all economies.', 'Scarcity affects rich and poor economies alike.'),
@@ -26,6 +27,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'The economic problem and fundamental concepts',
     title: 'Movement along the PPF',
     prompt: 'An economy operating on its production possibility frontier (PPF) decides to produce more capital goods and fewer consumer goods. What does this involve?',
+    mentorHint: 'Distinguish using existing capacity from gaining new capacity.',
     correct: 'A movement along the PPF, with the opportunity cost being the consumer goods given up',
     wrong: [
       miss('An outward shift of the PPF caused by extra investment', 'The reallocation itself is a movement along the curve; the outward shift would only come later from the resulting capital, not from the decision today.', 'Distinguish using existing capacity from gaining new capacity.'),
@@ -41,6 +43,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'The economic problem and fundamental concepts',
     title: 'Free goods versus economic goods',
     prompt: 'Which of the following is correctly classified as a free good rather than an economic good?',
+    mentorHint: 'A free good has zero opportunity cost, not merely a low price.',
     correct: 'Sunlight reaching a beach, of which more can be enjoyed without anyone forgoing anything',
     wrong: [
       miss('Bottled drinking water sold in a supermarket', 'Bottled water requires scarce resources to produce and distribute, so it has an opportunity cost and a price.', 'A free good has zero opportunity cost, not merely a low price.'),
@@ -56,6 +59,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'The economic problem and fundamental concepts',
     title: 'Rational decision-making assumption',
     prompt: 'Standard economic theory assumes that consumers behave rationally. What does this assumption mean?',
+    mentorHint: 'Rational does not mean omniscient.',
     correct: 'Consumers aim to maximise their utility given their preferences, income, and the information they have',
     wrong: [
       miss('Consumers always make the objectively best choice available to them', 'Rationality is about maximising utility with available information, which can still lead to mistakes if information is imperfect.', 'Rational does not mean omniscient.'),
@@ -71,6 +75,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'The economic problem and fundamental concepts',
     title: 'Capital goods and economic growth',
     prompt: 'Two economies are identical except that economy X devotes more of its current output to capital goods than economy Y. Other things equal, what is the likely long-run consequence?',
+    mentorHint: 'Growth depends on adding to capacity, not on consuming output.',
     correct: 'Economy X grows faster in the long run because extra capital raises future productive capacity',
     wrong: [
       miss('Economy Y grows faster because it enjoys more consumer goods now', 'Higher current consumption boosts present living standards but does not expand future productive capacity.', 'Growth depends on adding to capacity, not on consuming output.'),
@@ -88,6 +93,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Demand, supply and the price mechanism',
     title: 'Shift versus movement in demand',
     prompt: 'The price of tea falls and, as a result, households buy more tea. In the market for tea, this is shown by which of the following?',
+    mentorHint: 'Own-price changes never shift a good\'s own demand curve.',
     correct: 'A movement down along the existing demand curve (an extension of demand)',
     wrong: [
       miss('A rightward shift of the demand curve for tea', 'A change in the good\'s own price is a movement along the curve; only changes in other determinants shift it.', 'Own-price changes never shift a good\'s own demand curve.'),
@@ -103,6 +109,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Demand, supply and the price mechanism',
     title: 'Substitutes and a price change',
     prompt: 'Coffee and tea are substitutes. If a poor harvest sharply raises the price of coffee, what happens in the market for tea?',
+    mentorHint: 'Substitutes move in the opposite direction to each other.',
     correct: 'The demand curve for tea shifts to the right, raising the equilibrium price and quantity of tea',
     wrong: [
       miss('The demand curve for tea shifts to the left as people drink less of everything', 'A higher coffee price makes tea relatively more attractive, so demand for the substitute rises, not falls.', 'Substitutes move in the opposite direction to each other.'),
@@ -118,6 +125,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Demand, supply and the price mechanism',
     title: 'The functions of the price mechanism',
     prompt: 'In a free market, when demand for a product rises and its price increases, this rising price performs which key functions of the price mechanism?',
+    mentorHint: 'The price mechanism allocates scarce goods, it does not abolish scarcity.',
     correct: 'Rationing the good among buyers and signalling to producers to expand supply',
     wrong: [
       miss('Eliminating scarcity by guaranteeing everyone can afford the good', 'Prices manage scarcity by allocating goods; they do not remove scarcity, and higher prices restrict rather than guarantee access.', 'The price mechanism allocates scarce goods, it does not abolish scarcity.'),
@@ -133,6 +141,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Demand, supply and the price mechanism',
     title: 'Complements and equilibrium',
     prompt: 'Printers and ink cartridges are complements. If improved technology sharply lowers the cost of producing printers, what is the most likely effect in the market for ink cartridges?',
+    mentorHint: 'Complements are demanded jointly.',
     correct: 'Demand for ink cartridges rises, increasing their equilibrium price and quantity',
     wrong: [
       miss('Demand for ink cartridges falls because printers are now cheaper', 'Cheaper printers raise printer sales, and complements are bought together, so cartridge demand rises rather than falls.', 'Complements are demanded jointly.'),
@@ -148,6 +157,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Demand, supply and the price mechanism',
     title: 'Effect of a subsidy on supply',
     prompt: 'A government grants producers a per-unit subsidy on solar panels. Ignoring any demand-side effects, what happens to the supply curve?',
+    mentorHint: 'A subsidy is a payment that reduces costs.',
     correct: 'It shifts vertically downward (to the right), as producers are willing to supply each quantity at a lower price',
     wrong: [
       miss('It shifts to the left because production becomes more regulated', 'A subsidy lowers producers\' effective costs, encouraging more supply, so the curve shifts right, not left.', 'A subsidy is a payment that reduces costs.'),
@@ -165,6 +175,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Elasticities',
     title: 'Calculating price elasticity of demand',
     prompt: 'When the price of a product rises from 10 to 12, quantity demanded falls from 100 to 90. What is the price elasticity of demand (using the simple percentage method) and what does it indicate?',
+    mentorHint: 'Divide percentage change in quantity by percentage change in price.',
     correct: 'About -0.5, indicating demand is price inelastic',
     wrong: [
       miss('About -2, indicating demand is price elastic', 'This inverts the ratio; the percentage change in price (20 per cent) exceeds the percentage change in quantity (10 per cent), giving a value below one in magnitude.', 'Divide percentage change in quantity by percentage change in price.'),
@@ -180,6 +191,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Elasticities',
     title: 'PED and total revenue',
     prompt: 'A firm faces price-inelastic demand for its product. To increase its total revenue, what should it do?',
+    mentorHint: 'The revenue effect of a price cut depends on elasticity.',
     correct: 'Raise the price, since quantity falls proportionately less than price rises',
     wrong: [
       miss('Lower the price, since this always boosts total revenue', 'Cutting price raises revenue only when demand is elastic; with inelastic demand a price cut reduces revenue.', 'The revenue effect of a price cut depends on elasticity.'),
@@ -195,6 +207,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Elasticities',
     title: 'Income elasticity and inferior goods',
     prompt: 'A good has an income elasticity of demand of -0.8. How should this good be classified?',
+    mentorHint: 'The sign, not just the size, classifies the good.',
     correct: 'An inferior good, because demand falls as income rises',
     wrong: [
       miss('A normal necessity, because the value is less than one', 'A normal necessity has a positive income elasticity between zero and one; a negative value signals an inferior good.', 'The sign, not just the size, classifies the good.'),
@@ -210,6 +223,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Elasticities',
     title: 'Determinants of price elasticity of supply',
     prompt: 'Which factor would make the supply of a manufactured good more price elastic?',
+    mentorHint: 'Hard-to-adjust inputs make supply less responsive.',
     correct: 'The availability of spare productive capacity and plentiful stocks',
     wrong: [
       miss('Production that requires highly specialised, hard-to-acquire equipment', 'Specialised, difficult-to-obtain factors make it harder to expand output quickly, reducing elasticity of supply.', 'Hard-to-adjust inputs make supply less responsive.'),
@@ -225,6 +239,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Elasticities',
     title: 'Cross elasticity of demand interpretation',
     prompt: 'The cross elasticity of demand between good A and good B is +1.5. What does this reveal about the relationship between the two goods?',
+    mentorHint: 'The sign distinguishes substitutes from complements.',
     correct: 'They are close substitutes, since a rise in the price of one raises demand for the other',
     wrong: [
       miss('They are strong complements, since the goods are used together', 'Complements have a negative cross elasticity; a positive value points to substitutes.', 'The sign distinguishes substitutes from complements.'),
@@ -242,6 +257,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Consumer behaviour and market surplus',
     title: 'Definition of consumer surplus',
     prompt: 'In a standard supply and demand diagram, consumer surplus is best defined as which of the following?',
+    mentorHint: 'Surplus is a gain, not total expenditure.',
     correct: 'The difference between the maximum price consumers are willing to pay and the price they actually pay',
     wrong: [
       miss('The total amount of money consumers spend on the good', 'Total spending is price multiplied by quantity, whereas surplus is the extra value consumers gain above what they pay.', 'Surplus is a gain, not total expenditure.'),
@@ -257,6 +273,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Consumer behaviour and market surplus',
     title: 'Bounded rationality',
     prompt: 'In behavioural economics, the concept of bounded rationality suggests that individuals make decisions that are which of the following?',
+    mentorHint: 'The point is that optimisation is constrained.',
     correct: 'Limited by available information, time, and cognitive capacity, so they often satisfice rather than optimise',
     wrong: [
       miss('Always fully optimal once all prices are known', 'Bounded rationality explicitly denies that people reliably optimise even with prices known, because of cognitive and time limits.', 'The point is that optimisation is constrained.'),
@@ -272,6 +289,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Consumer behaviour and market surplus',
     title: 'Producer surplus and a price rise',
     prompt: 'In a competitive market, the equilibrium price of a good rises following an increase in demand. Holding the supply curve fixed, what happens to producer surplus?',
+    mentorHint: 'A higher price widens the producer surplus area.',
     correct: 'Producer surplus increases, because suppliers receive a higher price above their marginal costs',
     wrong: [
       miss('Producer surplus falls because firms must produce more units', 'A higher price along the existing supply curve raises the gap between price and marginal cost on each unit, increasing surplus.', 'A higher price widens the producer surplus area.'),
@@ -287,6 +305,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Consumer behaviour and market surplus',
     title: 'Diminishing marginal utility',
     prompt: 'The principle of diminishing marginal utility helps explain why a typical demand curve slopes downward. What does the principle state?',
+    mentorHint: 'Distinguish total utility from marginal utility.',
     correct: 'Each additional unit consumed yields less extra satisfaction than the previous unit',
     wrong: [
       miss('Total utility falls as more units of a good are consumed', 'Total utility usually keeps rising while marginal utility falls; only the extra satisfaction per unit declines.', 'Distinguish total utility from marginal utility.'),
@@ -304,6 +323,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Costs, revenue and profit',
     title: 'Fixed versus variable costs',
     prompt: 'In the short run, which of the following is best classified as a fixed cost for a manufacturing firm?',
+    mentorHint: 'Costs that change with output are variable.',
     correct: 'Annual rent on the factory building',
     wrong: [
       miss('The cost of raw materials used in production', 'Raw material costs rise and fall directly with output, making them variable rather than fixed.', 'Costs that change with output are variable.'),
@@ -319,6 +339,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Costs, revenue and profit',
     title: 'Normal versus supernormal profit',
     prompt: 'In economic terms, a firm earns normal profit when which of the following holds?',
+    mentorHint: 'Normal profit is the break-even point in economic terms.',
     correct: 'Total revenue exactly equals total cost, where total cost includes the opportunity cost of all resources',
     wrong: [
       miss('Total revenue exceeds total cost by a large margin', 'Revenue exceeding total cost is supernormal (abnormal) profit, not normal profit.', 'Normal profit is the break-even point in economic terms.'),
@@ -334,6 +355,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Costs, revenue and profit',
     title: 'Economies of scale',
     prompt: 'A large supermarket chain can buy goods in bulk far more cheaply per unit than a small corner shop. This illustrates which type of internal economy of scale?',
+    mentorHint: 'Match the source of the saving to the right category.',
     correct: 'Purchasing (bulk-buying) economies of scale',
     wrong: [
       miss('A technical economy of scale', 'Technical economies come from using more efficient large-scale machinery and processes, not from bulk purchasing terms.', 'Match the source of the saving to the right category.'),
@@ -349,6 +371,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Costs, revenue and profit',
     title: 'Marginal cost and average cost',
     prompt: 'For a firm with a U-shaped average total cost (ATC) curve, what is true about the relationship between marginal cost (MC) and ATC?',
+    mentorHint: 'Think about where average cost stops falling.',
     correct: 'The MC curve cuts the ATC curve at its minimum point',
     wrong: [
       miss('The MC curve cuts the ATC curve at its maximum point', 'MC intersects ATC at the lowest point of ATC, not the highest; ATC has no interior maximum in the relevant range.', 'Think about where average cost stops falling.'),
@@ -366,6 +389,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Market structures',
     title: 'Characteristics of perfect competition',
     prompt: 'Which of the following is a defining characteristic of a perfectly competitive market?',
+    mentorHint: 'Perfect competition has many firms, not one.',
     correct: 'Many small firms producing a homogeneous product, each a price taker',
     wrong: [
       miss('A single firm supplying the entire market', 'A single supplier is a monopoly, the opposite extreme from perfect competition.', 'Perfect competition has many firms, not one.'),
@@ -381,6 +405,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Market structures',
     title: 'Sources of monopoly power',
     prompt: 'Which of the following would most directly create or strengthen a firm\'s monopoly power?',
+    mentorHint: 'Substitutes reduce, not increase, monopoly power.',
     correct: 'High barriers to entry that prevent new competitors from entering the market',
     wrong: [
       miss('A large number of close substitutes for the firm\'s product', 'Plentiful substitutes weaken a firm\'s market power by giving customers alternatives.', 'Substitutes reduce, not increase, monopoly power.'),
@@ -396,6 +421,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Market structures',
     title: 'Price discrimination',
     prompt: 'A cinema charges lower ticket prices to students than to other adults for the same screening. For this price discrimination to work, which condition must hold?',
+    mentorHint: 'The good is the same; only the price differs.',
     correct: 'The firm must be able to separate the groups and prevent resale between them',
     wrong: [
       miss('The product sold to each group must be physically different', 'Price discrimination involves charging different prices for essentially the same product, not for different products.', 'The good is the same; only the price differs.'),
@@ -411,6 +437,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Market structures',
     title: 'Oligopoly and interdependence',
     prompt: 'A key feature of an oligopoly that distinguishes it from other market structures is which of the following?',
+    mentorHint: 'Few large firms means actions are noticed.',
     correct: 'Firms are interdependent, so each must consider rivals\' likely reactions when setting price or output',
     wrong: [
       miss('Firms ignore one another because the market has so many sellers', 'Oligopolies have few dominant firms, so each firm\'s actions noticeably affect rivals, making them interdependent.', 'Few large firms means actions are noticed.'),
@@ -428,6 +455,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Market failure and externalities',
     title: 'Negative production externality',
     prompt: 'A factory discharges pollution into a river, harming downstream fishermen who receive no compensation. In welfare terms, what does this imply about the free-market output?',
+    mentorHint: 'Pollution adds an external cost, not an external benefit.',
     correct: 'The marginal social cost exceeds the marginal private cost, so the good is overproduced',
     wrong: [
       miss('The marginal social benefit exceeds the marginal private benefit, so the good is underproduced', 'That describes a positive consumption externality; pollution is a negative externality that causes overproduction.', 'Pollution adds an external cost, not an external benefit.'),
@@ -443,6 +471,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Market failure and externalities',
     title: 'Characteristics of a public good',
     prompt: 'Which pair of characteristics defines a pure public good such as national defence?',
+    mentorHint: 'Public goods are the opposite of private goods.',
     correct: 'Non-rivalry and non-excludability',
     wrong: [
       miss('Rivalry and excludability', 'Those are the features of a private good, which a competitive market can supply, not a public good.', 'Public goods are the opposite of private goods.'),
@@ -458,6 +487,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Market failure and externalities',
     title: 'Information failure and merit goods',
     prompt: 'Education is often described as a merit good. Why might a free market under-provide it?',
+    mentorHint: 'Merit goods carry external benefits, not external costs.',
     correct: 'Individuals undervalue its long-term private and external benefits, so demand is too low',
     wrong: [
       miss('Education generates negative externalities that deter consumers', 'Education generates positive externalities, such as a more productive workforce, not negative ones.', 'Merit goods carry external benefits, not external costs.'),
@@ -473,6 +503,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Market failure and externalities',
     title: 'Tragedy of the commons',
     prompt: 'Open-access ocean fishing grounds are often overfished to the point of collapse. This is best explained by which concept?',
+    mentorHint: 'The problem is overuse, not over-conservation.',
     correct: 'The tragedy of the commons, where a non-excludable but rival resource is overexploited',
     wrong: [
       miss('A positive externality that encourages excessive conservation', 'Overfishing reflects a negative externality and overuse, not a positive externality or conservation.', 'The problem is overuse, not over-conservation.'),
@@ -490,6 +521,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Government intervention and government failure',
     title: 'Effect of a binding price ceiling',
     prompt: 'A government sets a maximum rent below the free-market equilibrium for housing. What is the most likely direct consequence?',
+    mentorHint: 'Lower controlled prices discourage supply.',
     correct: 'A shortage of rental housing, as quantity demanded exceeds quantity supplied',
     wrong: [
       miss('A surplus of rental housing as landlords build more', 'A price ceiling below equilibrium reduces the quantity supplied while raising quantity demanded, producing a shortage, not a surplus.', 'Lower controlled prices discourage supply.'),
@@ -505,6 +537,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Government intervention and government failure',
     title: 'Indirect taxes to correct externalities',
     prompt: 'A government imposes a tax on petrol equal to the external cost of the pollution it causes. What is this policy designed to achieve?',
+    mentorHint: 'The goal is the optimal quantity, not zero.',
     correct: 'Internalising the externality so that price reflects the full marginal social cost',
     wrong: [
       miss('Eliminating all consumption of petrol entirely', 'A corrective tax aims to reduce consumption toward the social optimum, not to ban the good outright.', 'The goal is the optimal quantity, not zero.'),
@@ -520,6 +553,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Government intervention and government failure',
     title: 'Causes of government failure',
     prompt: 'Which of the following is an example of government failure rather than market failure?',
+    mentorHint: 'This is the market failing, not the government.',
     correct: 'A subsidy intended to support farmers creates wasteful surpluses and distorts incentives',
     wrong: [
       miss('A factory pollutes a river without compensating those harmed', 'Uncompensated pollution is a classic market failure from a negative externality, not a failure of government policy.', 'This is the market failing, not the government.'),
@@ -535,6 +569,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'Government intervention and government failure',
     title: 'Tradable pollution permits',
     prompt: 'A government caps total emissions and issues tradable pollution permits to firms. What is the main economic advantage of allowing the permits to be traded?',
+    mentorHint: 'Trading allows flexibility, not uniformity.',
     correct: 'Firms that can cut emissions cheaply do so and sell permits, achieving the cap at least total cost',
     wrong: [
       miss('It guarantees that every firm pollutes exactly the same amount', 'Trading deliberately lets emissions reductions concentrate where they are cheapest, so firms pollute different amounts.', 'Trading allows flexibility, not uniformity.'),
@@ -552,6 +587,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'The labour market',
     title: 'Derived demand for labour',
     prompt: 'Economists describe the demand for labour as a derived demand. What does this mean?',
+    mentorHint: 'Focus on why firms demand labour.',
     correct: 'Labour is demanded not for its own sake but for the goods and services it helps produce',
     wrong: [
       miss('Workers derive satisfaction directly from being employed', 'Job satisfaction is a separate idea; derived demand refers to why firms hire labour, namely to produce output.', 'Focus on why firms demand labour.'),
@@ -567,6 +603,7 @@ export const colALevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestion
     chapter: 'The labour market',
     title: 'Effect of a binding minimum wage',
     prompt: 'In a competitive labour market, a government sets a national minimum wage above the equilibrium wage. In the standard model, what is the predicted effect?',
+    mentorHint: 'Above-equilibrium wages raise supply and cut demand.',
     correct: 'An excess supply of labour, as the quantity of labour supplied exceeds the quantity demanded',
     wrong: [
       miss('A shortage of labour, as employers cannot find enough workers', 'A wage above equilibrium attracts more workers while reducing the number firms wish to hire, creating excess supply, not a shortage.', 'Above-equilibrium wages raise supply and cut demand.'),

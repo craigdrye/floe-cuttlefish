@@ -34,6 +34,55 @@ function textWrong(entries: Array<[string, string, string]>): WrongAnswer[] {
   return entries
 }
 
+function mentorHintForGeneratedMath(chapter: string, title: string, prompt: string): string {
+  const topic = `${chapter} ${title} ${prompt}`.toLowerCase()
+
+  if (topic.includes('addition') || topic.includes('sum') || topic.includes('double')) {
+    return 'Think of the numbers as parts being joined. Count on from the larger number, or break one addend into friendly pieces before checking the answer.'
+  }
+  if (topic.includes('subtraction') || topic.includes('one less') || topic.includes('less than')) {
+    return 'Subtraction asks what is left or how far apart two numbers are. Count back carefully, and make sure you are taking away the right amount.'
+  }
+  if (topic.includes('multiplication') || topic.includes('times table') || topic.includes('equal groups')) {
+    return 'Multiplication means equal groups, so picture the number of groups and the size of each group. A skip-count or repeated-addition check can catch most near misses.'
+  }
+  if (topic.includes('division') || topic.includes('shared equally') || topic.includes('divided')) {
+    return 'Division asks for an equal share or for how many groups fit. Use the related multiplication fact to check whether your quotient recreates the original total.'
+  }
+  if (topic.includes('fraction')) {
+    return 'Name the whole first, then compare the numerator and denominator. For equivalent or ordered fractions, use equal parts, common denominators, or a benchmark like one half.'
+  }
+  if (topic.includes('decimal')) {
+    return 'Line up place values before comparing or calculating with decimals. Tenths, hundredths, and thousandths behave like smaller place-value columns, so zeros can matter.'
+  }
+  if (topic.includes('percent')) {
+    return 'Translate the percent into a fraction, decimal, or familiar benchmark such as 10%. Then decide whether the question asks for the percent amount or the final total.'
+  }
+  if (topic.includes('pattern')) {
+    return 'Find the repeating unit or the constant step before choosing the next item. Test your rule on every shown term, not just the last two.'
+  }
+  if (topic.includes('place value') || topic.includes('expanded')) {
+    return 'Read each digit by its place: ones, tens, hundreds, and beyond. Expanded form keeps only the value each digit contributes, while zeros hold places.'
+  }
+  if (topic.includes('coordinate') || topic.includes('quadrant')) {
+    return 'Use the ordered pair as x first, y second. The signs tell the quadrant, and distances along a horizontal or vertical side come from subtracting matching coordinates.'
+  }
+  if (topic.includes('area') || topic.includes('perimeter') || topic.includes('volume') || topic.includes('surface area') || topic.includes('geometry')) {
+    return 'First decide what kind of measure is being asked for: around, covering, or filling. Then choose the matching formula and check whether the units should be plain, squared, or cubed.'
+  }
+  if (topic.includes('data') || topic.includes('mode') || topic.includes('median') || topic.includes('histogram')) {
+    return 'Identify the data word before calculating. Mean, median, mode, range, and histograms each ask for a different view of the same set of values.'
+  }
+  if (topic.includes('inequality') || topic.includes('equation') || topic.includes('solve')) {
+    return 'Treat the equation or inequality like a balance and undo operations in reverse order. For inequalities, remember that multiplying or dividing by a negative flips the symbol.'
+  }
+  if (topic.includes('shape') || topic.includes('angle')) {
+    return 'Match the shape or angle to its definition before looking at the choices. Count sides, corners, or degrees rather than relying on how the diagram feels.'
+  }
+
+  return 'Point to the exact clue in the question, then choose the operation or definition that matches it. Most wrong answers are one small counting, place-value, or wording slip away from the right idea.'
+}
+
 function define(
   id: number,
   chapter: string,
@@ -61,7 +110,7 @@ function define(
     }
   }
 
-  return { id, chapter, title, prompt, correct, wrong: cleanedWrong, lesson }
+  return { id, chapter, title, prompt, correct, wrong: cleanedWrong, lesson, mentorHint: mentorHintForGeneratedMath(chapter, title, prompt) }
 }
 
 function bank(baseId: number, builders: Array<(id: number) => QuestionDefinition>): Question[] {

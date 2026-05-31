@@ -11,6 +11,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 1: The Global Tapestry',
     title: 'Song China and the civil service',
     prompt: 'Which feature most clearly distinguished the bureaucracy of Song China (960-1279) from that of contemporaneous societies?',
+    mentorHint: 'Recall how Song officials were selected.',
     correct: 'A merit-based civil service staffed through Confucian-based examinations',
     wrong: [
       miss('A hereditary warrior aristocracy that monopolized all government posts', 'The exam system was designed precisely to recruit officials by learning rather than birth or martial rank.', 'Recall how Song officials were selected.'),
@@ -26,6 +27,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 1: The Global Tapestry',
     title: 'Neo-Confucianism',
     prompt: 'Neo-Confucianism, which flourished during the Song dynasty, is best described as which of the following?',
+    mentorHint: 'The name itself points to a renewal of Confucian thought.',
     correct: 'A revived Confucian philosophy that incorporated Buddhist and Daoist metaphysical ideas',
     wrong: [
       miss('A wholesale rejection of Confucian ethics in favor of Buddhist monasticism', 'Neo-Confucianism reaffirmed Confucian social ethics rather than abandoning them.', 'The name itself points to a renewal of Confucian thought.'),
@@ -41,6 +43,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 1: The Global Tapestry',
     title: 'Dar al-Islam and knowledge transfer',
     prompt: 'During the period 1200-1450, the Abbasid and successor Islamic states contributed to global learning primarily by which means?',
+    mentorHint: 'Recall the role of the House of Wisdom.',
     correct: 'Preserving and translating Greek, Persian, and Indian texts while advancing mathematics and medicine',
     wrong: [
       miss('Banning the study of pre-Islamic Greek philosophy as heretical', 'Muslim scholars actively translated and built upon Greek philosophy and science.', 'Recall the role of the House of Wisdom.'),
@@ -56,6 +59,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 1: The Global Tapestry',
     title: 'The Delhi Sultanate',
     prompt: 'The Delhi Sultanate (1206-1526) is best characterized as which of the following?',
+    mentorHint: 'Recall the religion of the ruling sultans.',
     correct: 'A series of Muslim dynasties ruling much of northern India over a predominantly Hindu population',
     wrong: [
       miss('A Hindu empire that expelled Islam from the Indian subcontinent', 'The sultanate was Muslim-ruled and governed many Hindu subjects, not a Hindu state.', 'Recall the religion of the ruling sultans.'),
@@ -71,6 +75,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 1: The Global Tapestry',
     title: 'Mit\'a and Andean states',
     prompt: 'In the Inca Empire, the mit\'a system functioned primarily as which of the following?',
+    mentorHint: 'Recall how the Inca extracted resources without money.',
     correct: 'A mandatory public labor obligation owed by subjects to the state',
     wrong: [
       miss('A market currency used to buy and sell goods in Andean towns', 'The Inca economy relied on labor obligations and redistribution rather than a coined currency.', 'Recall how the Inca extracted resources without money.'),
@@ -86,6 +91,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 1: The Global Tapestry',
     title: 'Feudalism and decentralization',
     prompt: 'Political decentralization in both medieval Europe and Heian/Kamakura Japan is most directly reflected in which shared institution?',
+    mentorHint: 'Decentralization is the opposite of one centralized bureaucracy.',
     correct: 'A feudal system of personal bonds in which lords granted land in return for military service',
     wrong: [
       miss('A centralized salaried bureaucracy directing the entire realm from one capital', 'Feudal arrangements arose precisely where central authority was weak, not strong.', 'Decentralization is the opposite of one centralized bureaucracy.'),
@@ -103,6 +109,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 2: Networks of Exchange',
     title: 'The Mongols and the Silk Roads',
     prompt: 'Which phrase best captures the Mongols\' overall effect on Silk Road commerce in the thirteenth and fourteenth centuries?',
+    mentorHint: 'Recall the meaning of the Pax Mongolica.',
     correct: 'They imposed the Pax Mongolica, lowering the risks of long-distance trade across Eurasia',
     wrong: [
       miss('They permanently severed all overland trade between China and the Mediterranean', 'Mongol unification actually increased the safety and volume of overland trade.', 'Recall the meaning of the Pax Mongolica.'),
@@ -118,6 +125,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 2: Networks of Exchange',
     title: 'Indian Ocean monsoons',
     prompt: 'Why were knowledge of the monsoon winds and the use of the lateen sail so important to Indian Ocean trade?',
+    mentorHint: 'Recall the role of entrepots like Calicut and Malacca.',
     correct: 'They allowed merchants to time predictable round-trip voyages across the ocean basin',
     wrong: [
       miss('They eliminated the need for any commercial intermediaries or port cities', 'Port cities and middlemen remained essential hubs despite improved sailing.', 'Recall the role of entrepots like Calicut and Malacca.'),
@@ -133,6 +141,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 2: Networks of Exchange',
     title: 'Trans-Saharan trade and Mali',
     prompt: 'The wealth of the Mali Empire in the fourteenth century rested chiefly on its control of which trade?',
+    mentorHint: 'Check the dates against European arrival in the Americas.',
     correct: 'The trans-Saharan exchange of West African gold for North African salt and goods',
     wrong: [
       miss('The Atlantic shipment of enslaved people to plantations in the Americas', 'The transatlantic slave trade did not exist until after 1492, well after Mali\'s peak.', 'Check the dates against European arrival in the Americas.'),
@@ -148,6 +157,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 2: Networks of Exchange',
     title: 'The Black Death',
     prompt: 'The spread of the Black Death in the mid-fourteenth century is most directly attributable to which development?',
+    mentorHint: 'Consider how the disease traveled so far so fast.',
     correct: 'The intensification of Eurasian trade networks that also moved fleas, rats, and pathogens',
     wrong: [
       miss('The collapse of all trade routes, which trapped disease within isolated regions', 'It was the connectivity of trade routes, not their collapse, that spread the plague.', 'Consider how the disease traveled so far so fast.'),
@@ -163,6 +173,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 2: Networks of Exchange',
     title: 'Diffusion of crops and technology',
     prompt: 'Which is the best example of cultural and technological diffusion along Afro-Eurasian trade routes before 1450?',
+    mentorHint: 'Check whether these crops were available before 1450.',
     correct: 'The westward spread of gunpowder and papermaking from China into the Islamic world and Europe',
     wrong: [
       miss('The introduction of maize and potatoes from the Americas into China', 'American crops did not reach Afro-Eurasia until after 1492 via the Columbian Exchange.', 'Check whether these crops were available before 1450.'),
@@ -180,6 +191,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 3: Land-Based Empires',
     title: 'Gunpowder empires',
     prompt: 'Why are the Ottoman, Safavid, and Mughal Empires often grouped together as "gunpowder empires"?',
+    mentorHint: 'Recall the religion and origins of these dynasties.',
     correct: 'Each used artillery and firearms to conquer territory and centralize power',
     wrong: [
       miss('Each was founded by European Christian monarchs', 'These were Islamic empires of Turkic, Persian, and Central Asian origin, not European Christian states.', 'Recall the religion and origins of these dynasties.'),
@@ -195,6 +207,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 3: Land-Based Empires',
     title: 'Ottoman devshirme',
     prompt: 'The Ottoman devshirme system involved which of the following?',
+    mentorHint: 'Focus on how the empire staffed its army and bureaucracy.',
     correct: 'Recruiting Christian boys from the Balkans to serve as administrators and elite Janissary soldiers',
     wrong: [
       miss('Electing the sultan through a vote of provincial governors', 'The devshirme was a recruitment system, not a method of choosing the sultan.', 'Focus on how the empire staffed its army and bureaucracy.'),
@@ -210,6 +223,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 3: Land-Based Empires',
     title: 'Sunni-Shia and the Safavids',
     prompt: 'A major source of conflict between the Ottoman and Safavid Empires was rooted in which difference?',
+    mentorHint: 'Both states were Muslim.',
     correct: 'The Ottomans were predominantly Sunni while the Safavids adopted Shia Islam as the state religion',
     wrong: [
       miss('The Ottomans were Christian while the Safavids were Muslim', 'Both empires were Islamic; their split was within Islam, not Christian versus Muslim.', 'Both states were Muslim.'),
@@ -225,6 +239,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 3: Land-Based Empires',
     title: 'Akbar and religious policy',
     prompt: 'The Mughal emperor Akbar (r. 1556-1605) promoted political stability in part through which policy?',
+    mentorHint: 'Recall Akbar\'s reputation regarding Hindus.',
     correct: 'A policy of religious tolerance, including abolishing the jizya tax on non-Muslims',
     wrong: [
       miss('Forcing the entire empire to convert to Sunni Islam by decree', 'Akbar pursued tolerance and conciliation, not forced conversion.', 'Recall Akbar\'s reputation regarding Hindus.'),
@@ -240,6 +255,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 3: Land-Based Empires',
     title: 'Legitimizing imperial rule',
     prompt: 'Which strategy did land-based empires of 1450-1750 most commonly use to project and legitimize their authority?',
+    mentorHint: 'Recall how absolute rulers, not voters, held power.',
     correct: 'Monumental architecture and art tied to religion and the ruler\'s glory',
     wrong: [
       miss('Holding regular democratic elections open to all male subjects', 'These empires were monarchies, not electoral democracies.', 'Recall how absolute rulers, not voters, held power.'),
@@ -257,6 +273,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 4: Transoceanic Interconnections',
     title: 'The Columbian Exchange',
     prompt: 'Which of the following is the most significant biological consequence of the Columbian Exchange for the Americas?',
+    mentorHint: 'Recall the demographic effect of smallpox and measles.',
     correct: 'A catastrophic decline of indigenous populations caused mainly by Old World diseases',
     wrong: [
       miss('A rapid increase in Native American population from new European crops', 'European contact brought epidemics that devastated, rather than grew, native populations.', 'Recall the demographic effect of smallpox and measles.'),
@@ -272,6 +289,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 4: Transoceanic Interconnections',
     title: 'Silver and global trade',
     prompt: 'How did New World silver reshape global trade in the period 1450-1750?',
+    mentorHint: 'Recall how China taxed in silver.',
     correct: 'It financed a global circuit in which Europeans used American silver to buy Asian goods, much of it flowing to China',
     wrong: [
       miss('It caused China to abandon all foreign trade and close its ports', 'Chinese demand for silver actually drew it into global commerce rather than closing it off.', 'Recall how China taxed in silver.'),
@@ -287,6 +305,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 4: Transoceanic Interconnections',
     title: 'The encomienda system',
     prompt: 'The encomienda system in Spanish America is best described as which of the following?',
+    mentorHint: 'Recall who benefited from the labor.',
     correct: 'A grant giving colonists the right to demand labor and tribute from indigenous people',
     wrong: [
       miss('A representative assembly elected by indigenous communities', 'The encomienda was a coercive labor grant, not a native legislature.', 'Recall who benefited from the labor.'),
@@ -302,6 +321,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 4: Transoceanic Interconnections',
     title: 'The Atlantic slave trade',
     prompt: 'Which factor most directly drove the growth of the transatlantic slave trade after 1500?',
+    mentorHint: 'Focus on what the plantations needed labor for.',
     correct: 'The labor demands of plantation agriculture producing sugar and other cash crops',
     wrong: [
       miss('A shortage of any available indigenous or European labor of any kind', 'Europeans turned to enslaved Africans after disease and resistance limited native labor, but it was plantation demand that drove the trade.', 'Focus on what the plantations needed labor for.'),
@@ -317,6 +337,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 4: Transoceanic Interconnections',
     title: 'Casta system',
     prompt: 'The casta system in colonial Latin America was a hierarchy based primarily on which factor?',
+    mentorHint: 'Recall the role of European versus mixed descent.',
     correct: 'Racial and ethnic ancestry, with peninsulares at the top',
     wrong: [
       miss('Wealth alone, regardless of birth or ancestry', 'While wealth mattered, the casta hierarchy was defined chiefly by ancestry and birthplace.', 'Recall the role of European versus mixed descent.'),
@@ -332,6 +353,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 4: Transoceanic Interconnections',
     title: 'Mercantilism',
     prompt: 'Mercantilist economic policy, dominant among European states in this era, emphasized which of the following?',
+    mentorHint: 'Recall the goal of hoarding precious metals.',
     correct: 'Accumulating bullion and maintaining a favorable balance of trade, often through colonies',
     wrong: [
       miss('Removing all tariffs to maximize free trade between nations', 'Mercantilism favored protectionism and state control, not free trade.', 'Recall the goal of hoarding precious metals.'),
@@ -349,6 +371,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 5: Revolutions',
     title: 'Enlightenment ideas',
     prompt: 'Which Enlightenment idea most directly inspired the Atlantic revolutions of the late eighteenth century?',
+    mentorHint: 'Recall what Enlightenment thinkers argued against.',
     correct: 'The notion that legitimate government rests on popular sovereignty and natural rights',
     wrong: [
       miss('The doctrine that kings rule by unquestionable divine right', 'Revolutionaries challenged divine-right absolutism rather than upholding it.', 'Recall what Enlightenment thinkers argued against.'),
@@ -364,6 +387,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 5: Revolutions',
     title: 'The Haitian Revolution',
     prompt: 'What makes the Haitian Revolution (1791-1804) distinctive among the Atlantic revolutions?',
+    mentorHint: 'Recall its outcome for enslaved people.',
     correct: 'It was the only successful large-scale slave revolt to create an independent state',
     wrong: [
       miss('It restored slavery and monarchy after a brief uprising', 'The revolution abolished slavery and established an independent republic, not a restored monarchy.', 'Recall its outcome for enslaved people.'),
@@ -379,6 +403,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 5: Revolutions',
     title: 'Latin American independence',
     prompt: 'The creole elites who led most Latin American independence movements were motivated chiefly by which grievance?',
+    mentorHint: 'Recall who creoles were and what they gained.',
     correct: 'Resentment at being subordinated to Spanish-born peninsulares in colonial society',
     wrong: [
       miss('A desire to abolish the casta system and grant full equality to all', 'Most creole leaders sought political independence, not the dismantling of the social hierarchy that benefited them.', 'Recall who creoles were and what they gained.'),
@@ -394,6 +419,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 5: Revolutions',
     title: 'Causes of the Industrial Revolution',
     prompt: 'Why did the Industrial Revolution begin in Britain rather than elsewhere around 1750-1800?',
+    mentorHint: 'Recall the material conditions in Britain.',
     correct: 'A combination of coal and iron, capital, colonial markets, and agricultural improvements',
     wrong: [
       miss('A government decree banning all manufacturing in rival nations', 'No such decree existed; industrialization grew from economic and resource advantages.', 'Recall the material conditions in Britain.'),
@@ -409,6 +435,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 5: Revolutions',
     title: 'The factory system',
     prompt: 'Which social change followed most directly from the rise of the factory system in the nineteenth century?',
+    mentorHint: 'Recall the direction of population movement.',
     correct: 'Rapid urbanization as workers moved to cities to take factory jobs',
     wrong: [
       miss('A return of most workers to small independent family farms', 'Industrialization drew people off the land and into cities, the opposite trend.', 'Recall the direction of population movement.'),
@@ -426,6 +453,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 6: Consequences of Industrialization',
     title: 'New imperialism motives',
     prompt: 'Which combination of factors best explains the "new imperialism" of the late nineteenth century?',
+    mentorHint: 'Recall the economic and nationalist motives.',
     correct: 'Demand for raw materials and markets, nationalist rivalry, and a sense of civilizing mission',
     wrong: [
       miss('A purely defensive effort to protect Africa and Asia from one another', 'Imperialism was driven by European competition and gain, not protection of colonized regions.', 'Recall the economic and nationalist motives.'),
@@ -441,6 +469,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 6: Consequences of Industrialization',
     title: 'The Berlin Conference',
     prompt: 'The Berlin Conference of 1884-1885 is most significant for which outcome?',
+    mentorHint: 'Recall who attended and whose interests prevailed.',
     correct: 'It established rules by which European powers partitioned Africa among themselves',
     wrong: [
       miss('It granted independence to existing African kingdoms', 'The conference facilitated European colonization, not African independence.', 'Recall who attended and whose interests prevailed.'),
@@ -456,6 +485,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 6: Consequences of Industrialization',
     title: 'The Meiji Restoration',
     prompt: 'The Meiji Restoration in Japan (1868) is best understood as which of the following?',
+    mentorHint: 'Recall Japan\'s response to Western pressure.',
     correct: 'A program of rapid, state-led industrialization and modernization to resist Western domination',
     wrong: [
       miss('A rejection of all foreign technology in favor of strict isolation', 'Meiji leaders deliberately adopted Western technology and institutions rather than rejecting them.', 'Recall Japan\'s response to Western pressure.'),
@@ -471,6 +501,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 6: Consequences of Industrialization',
     title: 'Marx and socialism',
     prompt: 'Karl Marx\'s critique of industrial capitalism centered on which core argument?',
+    mentorHint: 'Recall the role of class struggle.',
     correct: 'That class conflict between the bourgeoisie and proletariat would lead to revolution',
     wrong: [
       miss('That capitalism would peacefully expand until poverty disappeared on its own', 'Marx predicted conflict and revolution, not the peaceful self-correction of capitalism.', 'Recall the role of class struggle.'),
@@ -486,6 +517,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 6: Consequences of Industrialization',
     title: 'Indentured servitude',
     prompt: 'The large-scale migration of indentured laborers from India and China in the nineteenth century resulted mainly from which development?',
+    mentorHint: 'Recall the timing of abolition.',
     correct: 'The abolition of slavery, which created demand for new sources of cheap plantation labor',
     wrong: [
       miss('The expansion of the transatlantic slave trade after 1850', 'The transatlantic slave trade was being abolished, not expanding, by this period.', 'Recall the timing of abolition.'),
@@ -503,6 +535,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 7: Global Conflict',
     title: 'Long-term causes of WWI',
     prompt: 'Which set of factors is most often cited as the underlying long-term causes of World War I?',
+    mentorHint: 'Check the timeline against the war\'s outbreak.',
     correct: 'Militarism, alliances, imperialism, and nationalism',
     wrong: [
       miss('The spread of communism from the Soviet Union', 'The Soviet Union did not exist until the 1917 revolution, after the war began.', 'Check the timeline against the war\'s outbreak.'),
@@ -518,6 +551,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 7: Global Conflict',
     title: 'Total war',
     prompt: 'The concept of "total war" in the twentieth century refers to which of the following?',
+    mentorHint: 'Recall the meaning of "total."',
     correct: 'The mobilization of entire economies and societies, blurring the line between soldiers and civilians',
     wrong: [
       miss('Wars fought entirely by professional armies without civilian involvement', 'Total war did the opposite, drawing civilians and whole economies into the conflict.', 'Recall the meaning of "total."'),
@@ -533,6 +567,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 7: Global Conflict',
     title: 'The Russian Revolution',
     prompt: 'The Bolshevik seizure of power in Russia in 1917 was made possible largely by which condition?',
+    mentorHint: 'Recall Russia\'s wartime experience.',
     correct: 'Popular discontent intensified by the hardships and military failures of World War I',
     wrong: [
       miss('A long period of prosperity and military victory under the tsar', 'It was failure and suffering in the war, not prosperity, that undermined the tsar.', 'Recall Russia\'s wartime experience.'),
@@ -548,6 +583,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 7: Global Conflict',
     title: 'Causes of WWII',
     prompt: 'Which factor most directly contributed to the rise of fascism and the outbreak of World War II?',
+    mentorHint: 'Recall the League\'s ineffectiveness.',
     correct: 'Economic devastation from the Great Depression and resentment over the Treaty of Versailles',
     wrong: [
       miss('The success and stability of the League of Nations', 'The League proved weak and failed to prevent aggression, contributing to the war.', 'Recall the League\'s ineffectiveness.'),
@@ -563,6 +599,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 7: Global Conflict',
     title: 'The Armenian Genocide',
     prompt: 'The Armenian Genocide during World War I was carried out by which state?',
+    mentorHint: 'Recall who the perpetrators and victims were.',
     correct: 'The Ottoman Empire against its Armenian population',
     wrong: [
       miss('Nazi Germany against the Jewish population of Europe', 'That describes the Holocaust during World War II, not the Armenian Genocide of World War I.', 'Recall who the perpetrators and victims were.'),
@@ -580,6 +617,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 8: Cold War and Decolonization',
     title: 'Origins of the Cold War',
     prompt: 'The Cold War between the United States and the Soviet Union is best characterized as which of the following?',
+    mentorHint: 'Recall why it is called the Cold War.',
     correct: 'An ideological, political, and military rivalry between capitalism and communism waged largely without direct war between the two',
     wrong: [
       miss('A direct, full-scale conventional war fought on American and Soviet soil', 'The two superpowers never fought each other directly in open war, hence "cold."', 'Recall why it is called the Cold War.'),
@@ -595,6 +633,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 8: Cold War and Decolonization',
     title: 'Proxy wars',
     prompt: 'The wars in Korea and Vietnam are best understood as examples of which Cold War phenomenon?',
+    mentorHint: 'Recall the meaning of a proxy war.',
     correct: 'Proxy wars in which the superpowers backed opposing sides without fighting each other directly',
     wrong: [
       miss('Direct wars between the United States and the Soviet Union', 'The superpowers backed proxies but did not openly fight one another in these conflicts.', 'Recall the meaning of a proxy war.'),
@@ -610,6 +649,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 8: Cold War and Decolonization',
     title: 'Indian independence and nonviolence',
     prompt: 'Mohandas Gandhi\'s strategy in the Indian independence movement centered on which method?',
+    mentorHint: 'Recall the principle of satyagraha.',
     correct: 'Nonviolent civil disobedience and noncooperation with British rule',
     wrong: [
       miss('Armed guerrilla warfare to expel the British by force', 'Gandhi explicitly advocated nonviolence rather than armed struggle.', 'Recall the principle of satyagraha.'),
@@ -625,6 +665,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 8: Cold War and Decolonization',
     title: 'Partition of India',
     prompt: 'The 1947 partition of British India resulted in the creation of which states?',
+    mentorHint: 'Recall the religious divisions involved.',
     correct: 'India and Pakistan, divided largely along religious lines',
     wrong: [
       miss('A single unified secular state encompassing the whole subcontinent', 'Partition divided the subcontinent rather than uniting it.', 'Recall the religious divisions involved.'),
@@ -640,6 +681,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 8: Cold War and Decolonization',
     title: 'The Chinese Communist Revolution',
     prompt: 'The Chinese Communist victory in 1949 under Mao Zedong was built primarily on the support of which group?',
+    mentorHint: 'Recall how Maoism differed from orthodox Marxism.',
     correct: 'The rural peasantry, mobilized around promises of land reform',
     wrong: [
       miss('Urban industrial workers in coastal factory cities, as in classical Marxism', 'Mao adapted communism to rely on peasants rather than the small urban proletariat.', 'Recall how Maoism differed from orthodox Marxism.'),
@@ -655,6 +697,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 8: Cold War and Decolonization',
     title: 'Non-Aligned Movement',
     prompt: 'The Non-Aligned Movement, formed during the Cold War, represented which stance among newly independent nations?',
+    mentorHint: 'Recall the meaning of "non-aligned."',
     correct: 'A refusal to formally align with either the US-led or Soviet-led blocs',
     wrong: [
       miss('A firm military alliance with the United States against the Soviet Union', 'Non-alignment meant avoiding commitment to either superpower bloc.', 'Recall the meaning of "non-aligned."'),
@@ -672,6 +715,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 9: Globalization',
     title: 'The Green Revolution',
     prompt: 'The Green Revolution of the mid-twentieth century is best described as which of the following?',
+    mentorHint: 'Recall the focus on raising crop yields.',
     correct: 'The spread of high-yield crops, fertilizers, and irrigation that greatly increased agricultural output',
     wrong: [
       miss('A worldwide environmental movement to ban industrial agriculture', 'The Green Revolution expanded industrial-style farming rather than banning it.', 'Recall the focus on raising crop yields.'),
@@ -687,6 +731,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 9: Globalization',
     title: 'Multinational corporations',
     prompt: 'The rise of multinational corporations in the late twentieth century reflects which feature of globalization?',
+    mentorHint: 'Recall the meaning of "multinational."',
     correct: 'The integration of production and markets across national borders',
     wrong: [
       miss('The retreat of business activity within strict national boundaries', 'Multinationals operate across borders, the opposite of national confinement.', 'Recall the meaning of "multinational."'),
@@ -702,6 +747,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 9: Globalization',
     title: 'The end of the Cold War',
     prompt: 'Which event most directly symbolized the end of the Cold War?',
+    mentorHint: 'Check the date against the Cold War period.',
     correct: 'The fall of the Berlin Wall in 1989 and the dissolution of the Soviet Union in 1991',
     wrong: [
       miss('The signing of the Treaty of Versailles in 1919', 'Versailles ended World War I, decades before the Cold War even began.', 'Check the date against the Cold War period.'),
@@ -717,6 +763,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 9: Globalization',
     title: 'Decolonization and the UN',
     prompt: 'How did the United Nations contribute to the postwar order after 1945?',
+    mentorHint: 'Recall the UN\'s purpose of cooperation, not colonization.',
     correct: 'It provided a forum for international cooperation and a venue where decolonizing nations gained voice',
     wrong: [
       miss('It served as the colonial administration governing Africa and Asia', 'The UN was an international organization, not a colonial government.', 'Recall the UN\'s purpose of cooperation, not colonization.'),
@@ -732,6 +779,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 9: Globalization',
     title: 'Feminist movements',
     prompt: 'Twentieth-century movements for women\'s rights around the world generally sought which of the following?',
+    mentorHint: 'Recall the goals of suffrage and equal opportunity.',
     correct: 'Expanded political, economic, and social rights including suffrage and access to education and work',
     wrong: [
       miss('The removal of women from all forms of paid employment', 'These movements sought greater, not reduced, access to work and public life.', 'Recall the goals of suffrage and equal opportunity.'),
@@ -747,6 +795,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 9: Globalization',
     title: 'Technology and communication',
     prompt: 'Which technological development most accelerated globalization in the late twentieth and early twenty-first centuries?',
+    mentorHint: 'Recall the era of steam power.',
     correct: 'Digital communications technology, including the internet and mobile networks',
     wrong: [
       miss('The invention of the steam engine', 'The steam engine drove the eighteenth- and nineteenth-century Industrial Revolution, not late-twentieth-century globalization.', 'Recall the era of steam power.'),
@@ -764,6 +813,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 2: Networks of Exchange',
     title: 'Diasporic merchant communities',
     prompt: 'Diasporic communities, such as Muslim merchants settling in Southeast Asian ports, contributed to trade networks chiefly by which means?',
+    mentorHint: 'Recall how trade, not conquest, spread Islam in Southeast Asia.',
     correct: 'Facilitating commerce and spreading their culture and religion in host societies',
     wrong: [
       miss('Conquering and politically annexing the regions where they settled', 'Merchant diasporas generally traded and intermarried rather than conquering territory.', 'Recall how trade, not conquest, spread Islam in Southeast Asia.'),
@@ -779,6 +829,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 3: Land-Based Empires',
     title: 'Comparing tax-collection systems',
     prompt: 'The Ottoman tax farming and Mughal zamindar systems were similar in that both did which of the following?',
+    mentorHint: 'Recall the role of middlemen in revenue.',
     correct: 'Delegated tax collection to local intermediaries who kept a share of the revenue',
     wrong: [
       miss('Collected taxes directly through a centralized salaried imperial bureaucracy', 'Both systems relied on local intermediaries rather than direct central collection.', 'Recall the role of middlemen in revenue.'),
@@ -794,6 +845,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 5: Revolutions',
     title: 'Nationalism and unification',
     prompt: 'The unifications of Germany and Italy in the nineteenth century are best understood as products of which force?',
+    mentorHint: 'Recall the meaning of nationalism.',
     correct: 'Nationalism, the belief that people sharing a common culture should form a single state',
     wrong: [
       miss('A rejection of national identity in favor of universal empire', 'Unification was driven by national identity, not its rejection.', 'Recall the meaning of nationalism.'),
@@ -809,6 +861,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 6: Consequences of Industrialization',
     title: 'Economic imperialism in Latin America',
     prompt: 'After independence, many Latin American economies experienced "economic imperialism," meaning which of the following?',
+    mentorHint: 'Recall who held economic power over whom.',
     correct: 'Foreign powers exerted strong economic control through investment and trade without formal colonial rule',
     wrong: [
       miss('Latin American nations formally annexed European countries', 'Economic imperialism describes outside dominance over Latin America, not the reverse.', 'Recall who held economic power over whom.'),
@@ -824,6 +877,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 7: Global Conflict',
     title: 'The atomic bomb',
     prompt: 'The use of atomic bombs on Hiroshima and Nagasaki in 1945 had which major long-term consequence?',
+    mentorHint: 'Recall the nuclear arms race that followed.',
     correct: 'It ushered in the nuclear age and shaped the deterrence strategies of the Cold War',
     wrong: [
       miss('It ended all use of advanced weaponry in future conflicts', 'The atomic age intensified weapons development rather than ending it.', 'Recall the nuclear arms race that followed.'),
@@ -839,6 +893,7 @@ export const colApWorldHistoryHigh103TopUpQuestions: Question[] = makeQuestionBa
     chapter: 'Unit 9: Globalization',
     title: 'Resistance to globalization',
     prompt: 'Religious fundamentalist and nationalist movements at the end of the twentieth century are often interpreted as which of the following?',
+    mentorHint: 'Recall their reaction to outside influence.',
     correct: 'Reactions against the cultural and economic changes brought by globalization',
     wrong: [
       miss('Enthusiastic endorsements of unrestricted global cultural mixing', 'Such movements typically resisted rather than embraced globalized culture.', 'Recall their reaction to outside influence.'),

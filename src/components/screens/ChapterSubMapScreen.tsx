@@ -23,10 +23,17 @@ const LESSON_MASTERY_ACCURACY = 0.8
 // brief's "80% accuracy OR 8 of 10 answered" rule.
 const LESSON_UNLOCK_ANSWERED_MIN = 8
 
-function computeStars(accuracy: number, solved: number): 0 | 1 | 2 | 3 {
-  if (solved === 0) return 0
-  if (accuracy >= 0.9) return 3
-  if (accuracy >= 0.75) return 2
+function computeStarScore(correct: number, answered: number, total: number): number {
+  if (total <= 0) return 0
+  const correctPct = correct / total
+  const answeredPct = answered / total
+  return Math.min(100, Math.round(((correctPct + answeredPct) / 2) * 100))
+}
+
+function computeStars(starScorePct: number): 0 | 1 | 2 | 3 {
+  if (starScorePct <= 0) return 0
+  if (starScorePct >= 67) return 3
+  if (starScorePct >= 34) return 2
   return 1
 }
 
@@ -45,6 +52,7 @@ type LessonStats = {
   solved: number
   attempted: number
   accuracy: number
+  starScorePct: number
   stars: 0 | 1 | 2 | 3
   unlocked: boolean
   completed: boolean
@@ -88,6 +96,7 @@ export function ChapterSubMapScreen() {
       const target = lesson.questions.length
       const denom = Math.max(attempted, solved)
       const accuracy = denom > 0 ? solved / denom : 0
+      const starScorePct = computeStarScore(solved, attempted, target)
       return {
         id: lesson.id,
         index: lesson.index,
@@ -97,7 +106,8 @@ export function ChapterSubMapScreen() {
         solved,
         attempted,
         accuracy,
-        stars: computeStars(accuracy, solved),
+        starScorePct,
+        stars: computeStars(starScorePct),
         avgDifficulty: lesson.avgDifficulty,
       }
     })
@@ -134,9 +144,9 @@ export function ChapterSubMapScreen() {
   }, [chapterLessons, progress.solved, progress.reviews, selectedLesson])
 
   const activeLessonStat = lessonStats.find((l) => l.isActive) ?? null
-  const totalSolved = lessonStats.reduce((sum, l) => sum + l.solved, 0)
-  const totalTarget = lessonStats.reduce((sum, l) => sum + l.target, 0)
-  const overallPct = totalTarget > 0 ? Math.round((totalSolved / totalTarget) * 100) : 0
+  const totalAnswered = lessonStats.reduce((sum, l) => sum + l.attempted, 0)
+  const totalQuestions = lessonStats.reduce((sum, l) => sum + l.totalQuestions, 0)
+  const overallPct = totalQuestions > 0 ? Math.round((totalAnswered / totalQuestions) * 100) : 0
   const chapterDisplayName = (selectedChapter ?? '').replace(/^Capstone:\s*/i, '')
 
   // When we land here having just completed the selected lesson, let Floe rest on
@@ -223,7 +233,7 @@ export function ChapterSubMapScreen() {
           <p className="eyebrow">{selectedTrackInfo.title} &middot; {chapterDisplayName}</p>
           <h2>Lesson path</h2>
           <p>
-            {totalSolved}/{chapterAllQuestions?.length ?? totalTarget} answered &middot; {overallPct}% mastery &middot; {chapterLessons.length} lesson{chapterLessons.length === 1 ? '' : 's'}
+            {totalAnswered}/{chapterAllQuestions?.length ?? totalQuestions} answered &middot; {overallPct}% answered &middot; {chapterLessons.length} lesson{chapterLessons.length === 1 ? '' : 's'}
           </p>
         </div>
         <div className="chapter-path-header-ring">
@@ -254,9 +264,9 @@ export function ChapterSubMapScreen() {
         <ol className="chapter-path-list" ref={listRef}>
           {lessonStats.map((lesson, i) => {
             const side = i % 2 === 0 ? 'left' : 'right'
-            const targetLabel = `${lesson.solved}/${lesson.target}`
+            const targetLabel = `${lesson.attempted}/${lesson.target}`
             const ringPct = lesson.target > 0
-              ? Math.min(100, Math.round((lesson.solved / lesson.target) * 100))
+              ? Math.min(100, Math.round((lesson.attempted / lesson.target) * 100))
               : 0
             const classes = [
               'chapter-node-row',
@@ -291,7 +301,7 @@ export function ChapterSubMapScreen() {
                   disabled={!lesson.unlocked}
                   onClick={() => lesson.unlocked && enterLesson(lesson.id)}
                   type="button"
-                  aria-label={`${lesson.title} — ${lesson.unlocked ? targetLabel : 'locked'}`}
+                  aria-label={`${lesson.title} — ${lesson.unlocked ? `${targetLabel} answered` : 'locked'}`}
                 >
                   <div
                     className="chapter-node-ring"
@@ -315,7 +325,7 @@ export function ChapterSubMapScreen() {
                     <strong>
                       {lesson.totalQuestions} question{lesson.totalQuestions === 1 ? '' : 's'} &middot; {difficultyLabel(lesson.avgDifficulty)}
                     </strong>
-                    <div className="chapter-node-stars" aria-label={`${lesson.stars} of 3 stars`}>
+                    <div className="chapter-node-stars" aria-label={`${lesson.stars} of 3 stars, ${lesson.starScorePct}% combined progress`}>
                       {[0, 1, 2].map((s) => (
                         <Star
                           key={s}
@@ -338,7 +348,7 @@ export function ChapterSubMapScreen() {
           <div className="chapter-path-cta-copy">
             <p className="eyebrow">Up next</p>
             <strong>{activeLessonStat.title}</strong>
-            <span>{activeLessonStat.solved}/{activeLessonStat.target} solved &middot; {Math.round(activeLessonStat.accuracy * 100)}% accuracy</span>
+            <span>{activeLessonStat.attempted}/{activeLessonStat.target} answered &middot; {Math.round(activeLessonStat.accuracy * 100)}% accuracy</span>
           </div>
           <button className="lets-go" onClick={continueActive} type="button">
             <Sparkles size={17} /> Continue <ChevronRight size={15} />

@@ -11,6 +11,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Limits & Continuity',
     title: 'Indeterminate Limit by Factoring',
     prompt: 'Evaluate the limit of (x^2 - 9) / (x - 3) as x approaches 3.',
+    mentorHint: 'Direct substitution gives the indeterminate form 0/0, which usually means the expression needs algebraic simplification before the limit is evaluated. Factor the difference of squares and look for a removable factor rather than treating x = 3 as ordinary substitution.',
     correct: '6',
     wrong: [
       miss('0', 'Plugging in x = 3 gives 0/0, an indeterminate form, not 0; you must simplify first.', 'Factor the numerator and cancel before substituting.'),
@@ -26,6 +27,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Limits & Continuity',
     title: 'Squeeze Theorem Application',
     prompt: 'What is the limit of x^2 * sin(1/x) as x approaches 0?',
+    mentorHint: 'The sine factor oscillates, but it is always bounded between -1 and 1. The Squeeze Theorem works when a bounded oscillation is multiplied by a factor whose magnitude is forced toward 0.',
     correct: '0',
     wrong: [
       miss('1', 'sin(1/x) oscillates between -1 and 1 and never settles to 1; the limit is forced to 0 by the x^2 factor.', 'Bound the oscillating factor and multiply by x^2.'),
@@ -41,6 +43,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Limits & Continuity',
     title: 'Continuity Condition',
     prompt: 'A function f is continuous at x = a precisely when which condition holds?',
+    mentorHint: 'Continuity at a point has three linked requirements: the function value exists, the two-sided limit exists, and those two quantities agree. A graph with a hole, jump, or vertical blow-up fails at least one part of that checklist.',
     correct: 'f(a) is defined, the limit of f(x) as x approaches a exists, and that limit equals f(a).',
     wrong: [
       miss('The limit of f(x) as x approaches a exists.', 'A limit can exist even where f(a) is undefined or differs from the limit (a removable discontinuity).', 'Continuity also requires f(a) to be defined and to equal the limit.'),
@@ -56,6 +59,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Limits & Continuity',
     title: 'L Hopital on Trig Limit',
     prompt: 'Evaluate the limit of (1 - cos x) / x^2 as x approaches 0.',
+    mentorHint: 'This is a 0/0 form, so L Hopital\'s Rule or a small-angle Taylor expansion can compare the leading terms. Remember that 1 - cos x behaves like a second-order term near 0, not like sin x.',
     correct: '1/2',
     wrong: [
       miss('0', 'The numerator and denominator both approach 0, so this is indeterminate; the limit is not simply 0.', 'Apply L Hopital twice or use the known small-angle expansion.'),
@@ -72,6 +76,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Derivatives & Rules',
     title: 'Product Rule',
     prompt: 'What is the derivative of f(x) = x^2 * e^x?',
+    mentorHint: 'This is a product of two differentiable factors, so use the product rule instead of differentiating each factor and multiplying the results. Differentiate one factor at a time and keep the other factor attached in each term.',
     correct: '(x^2 + 2x) e^x',
     wrong: [
       miss('2x e^x', 'This multiplies the derivatives instead of using the product rule; you cannot just multiply f prime by g prime.', 'Use d(uv) = u prime v + u v prime.'),
@@ -87,6 +92,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Derivatives & Rules',
     title: 'Chain Rule',
     prompt: 'What is the derivative of f(x) = sin(3x^2)?',
+    mentorHint: 'Identify the outer function as sine and the inner function as 3x^2. The chain rule says to differentiate the outer function at the unchanged inner expression, then multiply by the derivative of the inner expression.',
     correct: '6x cos(3x^2)',
     wrong: [
       miss('cos(3x^2)', 'This forgets to multiply by the derivative of the inner function 3x^2.', 'The chain rule requires multiplying by the inner derivative.'),
@@ -102,6 +108,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Derivatives & Rules',
     title: 'Implicit Differentiation',
     prompt: 'For the circle x^2 + y^2 = 25, what is dy/dx?',
+    mentorHint: 'Because y depends on x along the curve, differentiating y^2 requires the chain rule and produces a dy/dx factor. After differentiating both sides, isolate dy/dx to get the slope formula.',
     correct: '-x/y',
     wrong: [
       miss('-x', 'Differentiating y^2 gives 2y times dy/dx, so the y in the denominator must remain.', 'Apply the chain rule to y^2 and solve for dy/dx.'),
@@ -117,6 +124,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Derivatives & Rules',
     title: 'Derivative of Inverse Tangent',
     prompt: 'What is the derivative of arctan(x)?',
+    mentorHint: 'Match inverse trig functions to their standard derivative formulas; arctan has a denominator involving 1 plus x squared. Its graph is increasing everywhere, so the derivative should stay positive.',
     correct: '1/(1 + x^2)',
     wrong: [
       miss('1/(1 - x^2)', 'That is the derivative of arctanh(x) (inverse hyperbolic tangent), not arctan(x).', 'The denominator for arctan uses a plus sign.'),
@@ -133,6 +141,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Applications of Derivatives',
     title: 'Critical Points and Extrema',
     prompt: 'For f(x) = x^3 - 3x, at which x-value does a local maximum occur?',
+    mentorHint: 'Local extrema can occur where f prime is zero or undefined, then classification requires a sign test or second derivative test. Find the critical points first, then use concavity to distinguish a maximum from a minimum.',
     correct: 'x = -1',
     wrong: [
       miss('x = 1', 'At x = 1 the second derivative 6x is positive, indicating a local minimum, not a maximum.', 'Use the second derivative test to classify each critical point.'),
@@ -148,6 +157,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Applications of Derivatives',
     title: 'Related Rates',
     prompt: 'A spherical balloon is inflated so its volume increases at 36 pi cubic units per second. When the radius is 3 units, how fast is the radius increasing? (V = (4/3) pi r^3)',
+    mentorHint: 'Related-rates problems start by differentiating the given geometric relationship with respect to time. Keep dV/dt and dr/dt distinct, substitute the radius only after differentiating, and check that the final units are length per time.',
     correct: '1 unit per second',
     wrong: [
       miss('3 units per second', 'This forgets to divide by the surface-area factor 4 pi r^2 = 36 pi when solving for dr/dt.', 'Differentiate V and isolate dr/dt = (dV/dt)/(4 pi r^2).'),
@@ -163,6 +173,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Applications of Derivatives',
     title: 'Concavity and Inflection',
     prompt: 'For f(x) = x^3, what happens at x = 0?',
+    mentorHint: 'An inflection point is about a change in concavity, which is tracked by the sign of the second derivative. A horizontal tangent by itself does not guarantee a local maximum or minimum.',
     correct: 'There is an inflection point where concavity changes from down to up.',
     wrong: [
       miss('There is a local minimum.', 'f prime(0) = 0 but f does not change from decreasing to increasing; x^3 is increasing throughout.', 'Check whether the first derivative changes sign.'),
@@ -178,6 +189,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Applications of Derivatives',
     title: 'Mean Value Theorem',
     prompt: 'For f(x) = x^2 on [0, 4], the Mean Value Theorem guarantees a point c in (0, 4) where f prime(c) equals what value?',
+    mentorHint: 'The Mean Value Theorem connects an instantaneous slope to the secant slope over the whole interval. Compute the average rate of change (f(b) - f(a))/(b - a); that is the derivative value guaranteed somewhere inside.',
     correct: '4',
     wrong: [
       miss('8', 'This is f prime(4), the slope at the right endpoint, not the average rate of change over the interval.', 'Compute (f(4) - f(0))/(4 - 0).'),
@@ -194,6 +206,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Integrals & Fundamental Theorem',
     title: 'Definite Integral of a Polynomial',
     prompt: 'Evaluate the integral from 0 to 2 of 3x^2 dx.',
+    mentorHint: 'Use the power rule for antiderivatives, then apply the Fundamental Theorem of Calculus by subtracting the lower-bound value from the upper-bound value. The definite integral is a number, not a family with + C.',
     correct: '8',
     wrong: [
       miss('12', 'This evaluates the antiderivative incorrectly; the antiderivative of 3x^2 is x^3, giving 2^3 = 8.', 'Antidifferentiate to x^3 and evaluate at the bounds.'),
@@ -209,6 +222,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Integrals & Fundamental Theorem',
     title: 'FTC Part 1',
     prompt: 'If F(x) is the integral from 0 to x of sqrt(1 + t^3) dt, what is F prime(x)?',
+    mentorHint: 'FTC Part 1 says an accumulation function with upper limit x has derivative equal to the integrand evaluated at x. The integration variable is a dummy variable, so it gets replaced by the moving upper limit.',
     correct: 'sqrt(1 + x^3)',
     wrong: [
       miss('sqrt(1 + t^3)', 'The result must be a function of x; the dummy variable t is replaced by the upper limit x.', 'Substitute the upper limit for the integration variable.'),
@@ -224,6 +238,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Integrals & Fundamental Theorem',
     title: 'Integration by Parts',
     prompt: 'Evaluate the integral of x e^x dx.',
+    mentorHint: 'Use integration by parts for a product where one factor becomes simpler when differentiated. Choose u so that du simplifies the algebra, then apply the formula integral u dv = uv - integral v du.',
     correct: 'x e^x - e^x + C',
     wrong: [
       miss('x e^x + C', 'This skips the second term; integration by parts leaves a -integral of e^x that contributes -e^x.', 'Apply uv - integral of v du with u = x.'),
@@ -239,6 +254,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Integrals & Fundamental Theorem',
     title: 'Improper Integral Convergence',
     prompt: 'Evaluate the integral from 1 to infinity of 1/x^2 dx.',
+    mentorHint: 'Treat the infinite upper limit as a limit of ordinary definite integrals. This is also a p-integral, and the threshold p > 1 predicts convergence before you compute the finite value.',
     correct: '1',
     wrong: [
       miss('Diverges', 'The exponent p = 2 is greater than 1, so this p-integral converges; 1/x diverges but 1/x^2 does not.', 'Recall the p-test: integral of 1/x^p from 1 to infinity converges for p > 1.'),
@@ -255,6 +271,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Applications of Integrals',
     title: 'Area Between Curves',
     prompt: 'What is the area enclosed between y = x and y = x^2 from x = 0 to x = 1?',
+    mentorHint: 'Area between curves is found by integrating upper function minus lower function over the interval of enclosure. On this interval, compare x and x^2 before setting up the integrand so the area stays positive.',
     correct: '1/6',
     wrong: [
       miss('1/2', 'This is only the area under y = x; you must subtract the area under y = x^2.', 'Integrate the difference (top minus bottom) of the two curves.'),
@@ -270,6 +287,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Applications of Integrals',
     title: 'Volume by Disk Method',
     prompt: 'The region under y = sqrt(x) from x = 0 to x = 4 is revolved about the x-axis. What is the volume?',
+    mentorHint: 'For rotation around the x-axis, the disk method uses pi times the integral of the radius squared. Here the function value is the radius, so square it before integrating and keep the factor of pi outside.',
     correct: '8 pi',
     wrong: [
       miss('16 pi', 'This forgets the factor of 1/2 from integrating x; integral of x from 0 to 4 is 8, not 16.', 'Square the radius sqrt(x) to get x, then integrate.'),
@@ -285,6 +303,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Applications of Integrals',
     title: 'Average Value of a Function',
     prompt: 'What is the average value of f(x) = x^2 on the interval [0, 3]?',
+    mentorHint: 'The average value of a function is the height of a constant rectangle with the same signed area over the interval. Use (1/(b - a)) times the definite integral from a to b.',
     correct: '3',
     wrong: [
       miss('9', 'This is f(3), the maximum value, not the average over the interval.', 'Use (1/(b-a)) times the integral of f over [a, b].'),
@@ -300,6 +319,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Applications of Integrals',
     title: 'Arc Length',
     prompt: 'Which integral gives the arc length of a smooth curve y = f(x) from x = a to x = b?',
+    mentorHint: 'Arc length comes from adding tiny distance elements along the curve, so the Pythagorean relationship creates a square root. The derivative f prime appears because local steepness determines how much vertical change accompanies each small dx.',
     correct: 'The integral from a to b of sqrt(1 + (f prime(x))^2) dx',
     wrong: [
       miss('The integral from a to b of sqrt(1 + f(x)^2) dx', 'Arc length uses the derivative f prime(x), not the function value f(x), inside the radical.', 'The slope of the curve, not its height, drives arc length.'),
@@ -316,6 +336,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Differential Equations',
     title: 'Separable Equation',
     prompt: 'Solve dy/dx = ky with initial condition y(0) = y_0.',
+    mentorHint: 'When a rate is proportional to the current amount, expect an exponential model. Separate variables as dy/y = k dx, integrate both sides, then use the initial condition to determine the multiplicative constant.',
     correct: 'y = y_0 e^(kx)',
     wrong: [
       miss('y = y_0 + kx', 'This is the solution to dy/dx = k (constant slope), not exponential growth where the rate is proportional to y.', 'When the rate is proportional to the amount, the solution is exponential.'),
@@ -331,6 +352,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Differential Equations',
     title: 'Euler Method Step',
     prompt: 'Using Euler method with step size h = 0.1 on dy/dx = x + y with y(0) = 1, what is the approximate value of y at x = 0.1?',
+    mentorHint: 'Euler\'s method takes a tangent-line step from the current point. Evaluate the slope function at the starting point, multiply by the step size h, and add that increment to the current y-value.',
     correct: '1.1',
     wrong: [
       miss('1.2', 'This doubles the increment; Euler adds h times the slope (0.1 times 1 = 0.1), giving 1.1.', 'Use y_new = y_old + h times f(x_old, y_old).'),
@@ -346,6 +368,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Differential Equations',
     title: 'Logistic Growth Carrying Capacity',
     prompt: 'For the logistic equation dP/dt = 0.5 P (1 - P/200), what is the limiting population as t goes to infinity (for P_0 between 0 and 200)?',
+    mentorHint: 'In the logistic model dP/dt = rP(1 - P/M), M is the carrying capacity and gives the stable nonzero equilibrium. Set the growth-rate expression equal to zero to identify equilibrium populations and decide which one positive solutions approach.',
     correct: '200',
     wrong: [
       miss('100', 'This is where the growth rate dP/dt is maximized, not the carrying capacity the population approaches.', 'The carrying capacity is the nonzero equilibrium, found where dP/dt = 0.'),
@@ -362,6 +385,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Parametric & Polar',
     title: 'Slope of a Parametric Curve',
     prompt: 'For x = t^2 and y = t^3, what is dy/dx in terms of t?',
+    mentorHint: 'For a parametric curve, dy/dx is not found by separately looking at y alone. Use the chain-rule relationship dy/dx = (dy/dt)/(dx/dt), then simplify the ratio where it is defined.',
     correct: '(3/2) t',
     wrong: [
       miss('3t^2 / 2t', 'This is the unsimplified correct expression but should reduce to (3/2)t; leaving it unsimplified risks evaluation errors and the form (3/2)t is expected.', 'Simplify (dy/dt)/(dx/dt) fully.'),
@@ -377,6 +401,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Parametric & Polar',
     title: 'Polar Area',
     prompt: 'Which integral gives the area enclosed by a polar curve r = f(theta) from theta = a to theta = b?',
+    mentorHint: 'Polar area is built from thin circular sectors rather than rectangles. The sector-area formula contributes both the factor 1/2 and the radius squared, integrated with respect to theta.',
     correct: 'The integral from a to b of (1/2) r^2 d theta',
     wrong: [
       miss('The integral from a to b of r d theta', 'This omits the factor 1/2 and the square; polar area comes from summing circular sectors.', 'Recall the sector area formula (1/2) r^2 d theta.'),
@@ -392,6 +417,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Parametric & Polar',
     title: 'Polar to Cartesian Conversion',
     prompt: 'The polar equation r = 2 cos(theta) describes which curve in Cartesian coordinates?',
+    mentorHint: 'Use the conversion identities r^2 = x^2 + y^2 and r cos(theta) = x. Multiplying the equation by r often creates these identities, and completing the square reveals the Cartesian curve.',
     correct: 'A circle of radius 1 centered at (1, 0)',
     wrong: [
       miss('A circle of radius 2 centered at the origin', 'r = 2 cos(theta) varies with theta; only r = 2 (constant) gives an origin-centered circle of radius 2.', 'Multiply both sides by r and convert to x and y.'),
@@ -408,6 +434,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Infinite Sequences & Series',
     title: 'Geometric Series Sum',
     prompt: 'What is the sum of the infinite geometric series 1 + 1/3 + 1/9 + 1/27 + ... ?',
+    mentorHint: 'For an infinite geometric series, first identify the initial term and common ratio. The series has a finite sum only when the absolute value of the ratio is less than 1, then use the standard sum formula.',
     correct: '3/2',
     wrong: [
       miss('3', 'This uses 1/(1 - r) with r misread; with first term 1 and r = 1/3 the sum is 1/(1 - 1/3) = 3/2.', 'Apply a/(1 - r) with a = 1 and r = 1/3.'),
@@ -423,6 +450,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Infinite Sequences & Series',
     title: 'p-Series Convergence',
     prompt: 'For which values of p does the series sum of 1/n^p (from n = 1 to infinity) converge?',
+    mentorHint: 'The p-series test has a sharp boundary at p = 1. Compare the case p = 1 to the harmonic series, then remember that faster decay than 1/n is needed for convergence.',
     correct: 'p > 1',
     wrong: [
       miss('p >= 1', 'At p = 1 the series is the harmonic series, which diverges; the inequality must be strict.', 'Check the boundary case p = 1 separately.'),
@@ -438,6 +466,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Infinite Sequences & Series',
     title: 'Ratio Test',
     prompt: 'Applying the ratio test to the series sum of 1/n!, what is the limit of |a_(n+1)/a_n| and the conclusion?',
+    mentorHint: 'The ratio test compares consecutive term sizes by simplifying |a_(n+1)/a_n|. Factorials simplify especially well because (n + 1)! contains an extra factor of n + 1 beyond n!.',
     correct: 'The limit is 0, so the series converges absolutely.',
     wrong: [
       miss('The limit is 1, so the test is inconclusive.', 'The ratio is n!/(n+1)! = 1/(n+1), which goes to 0, not 1.', 'Simplify the factorial ratio before taking the limit.'),
@@ -453,6 +482,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Infinite Sequences & Series',
     title: 'Alternating Series Test',
     prompt: 'Why does the alternating harmonic series 1 - 1/2 + 1/3 - 1/4 + ... converge?',
+    mentorHint: 'The Alternating Series Test needs more than terms approaching zero: the signs must alternate and the absolute values must decrease toward zero. This explains conditional convergence even when the corresponding positive-term harmonic series diverges.',
     correct: 'The terms decrease in absolute value to 0 and alternate in sign, satisfying the Alternating Series Test.',
     wrong: [
       miss('Because the harmonic series converges.', 'The harmonic series itself diverges; the alternating signs are what produce convergence here.', 'Distinguish conditional convergence from absolute convergence.'),
@@ -469,6 +499,7 @@ export const apCalculusBcUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     chapter: 'Taylor Series',
     title: 'Maclaurin Series of e^x',
     prompt: 'What is the Maclaurin series for e^x?',
+    mentorHint: 'A Maclaurin series uses derivatives evaluated at 0 to build coefficients. Since every derivative of e^x is still e^x, the coefficients follow the Taylor formula with factorial denominators and all nonnegative powers of x.',
     correct: 'The sum from n = 0 to infinity of x^n / n!',
     wrong: [
       miss('The sum from n = 0 to infinity of x^n', 'That is the geometric series 1/(1 - x); e^x has factorials in the denominators.', 'The Taylor coefficients of e^x are 1/n! from the repeated derivative e^x.'),

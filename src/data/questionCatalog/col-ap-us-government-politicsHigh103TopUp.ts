@@ -11,6 +11,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 1: Foundations of American Democracy',
     title: 'Participatory democracy',
     prompt: 'Which model of democracy emphasizes broad citizen participation in politics and civil society, such as town meetings, ballot initiatives, and grassroots activism?',
+    mentorHint: 'Think about which model wants the most ordinary citizens directly involved.',
     correct: 'Participatory democracy',
     wrong: [
       miss('Elite democracy', 'Elite democracy emphasizes a smaller group of educated representatives making decisions, not broad mass participation.', 'Think about which model wants the most ordinary citizens directly involved.'),
@@ -26,6 +27,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 1: Foundations of American Democracy',
     title: 'Federalist No. 10 and factions',
     prompt: 'In Federalist No. 10, James Madison argues that the dangers of faction are best controlled by:',
+    mentorHint: 'Madison says curing faction by removing liberty is a remedy worse than the disease.',
     correct: 'Creating a large republic in which many competing factions check one another',
     wrong: [
       miss('Eliminating the causes of faction by suppressing political liberty', 'Madison explicitly rejects removing the causes of faction because doing so would destroy liberty, the very thing worth protecting.', 'Madison says curing faction by removing liberty is a remedy worse than the disease.'),
@@ -41,6 +43,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 1: Foundations of American Democracy',
     title: 'Brutus No. 1',
     prompt: 'The Anti-Federalist essay Brutus No. 1 makes which central argument against ratifying the Constitution?',
+    mentorHint: 'Anti-Federalists feared concentrated power, not insufficient power.',
     correct: 'A free republic cannot govern a territory as large and diverse as the United States without endangering liberty',
     wrong: [
       miss('The new government would be too weak to defend the nation from foreign threats', 'Brutus argued the proposed government was too powerful and too distant, not too weak.', 'Anti-Federalists feared concentrated power, not insufficient power.'),
@@ -56,6 +59,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 1: Foundations of American Democracy',
     title: 'Articles of Confederation weakness',
     prompt: 'Which structural weakness of the Articles of Confederation was most directly exposed by Shays\' Rebellion in 1786-1787?',
+    mentorHint: 'Recall whether the Confederation could even levy direct taxes.',
     correct: 'The national government lacked the power to raise an army or maintain order',
     wrong: [
       miss('The national government taxed citizens so heavily that farmers revolted', 'Under the Articles the national government could not tax individuals directly at all; weakness, not overreach, was the problem.', 'Recall whether the Confederation could even levy direct taxes.'),
@@ -71,6 +75,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 1: Foundations of American Democracy',
     title: 'Great Compromise',
     prompt: 'The Great (Connecticut) Compromise at the Constitutional Convention resolved the dispute over representation by:',
+    mentorHint: 'The final design split representation between two chambers.',
     correct: 'Creating a bicameral legislature with population-based House seats and equal Senate representation',
     wrong: [
       miss('Adopting the Virginia Plan, giving every state representation based on population', 'The Virginia Plan favored large states and was rejected by small states; the compromise blended it with equal representation.', 'The final design split representation between two chambers.'),
@@ -86,6 +91,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 1: Foundations of American Democracy',
     title: 'Federalist No. 51',
     prompt: 'Federalist No. 51 argues that the primary safeguard against tyranny in the new government is:',
+    mentorHint: 'No. 51 wants ambition to check ambition across branches.',
     correct: 'Separation of powers with checks and balances, so ambition counteracts ambition',
     wrong: [
       miss('A strong, unified executive who can act decisively in all matters', 'That argument appears in Federalist No. 70; No. 51 is about dividing and checking power, not concentrating it.', 'No. 51 wants ambition to check ambition across branches.'),
@@ -101,6 +107,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 1: Foundations of American Democracy',
     title: 'Amendment process',
     prompt: 'Under Article V, which of the following is the most common method by which the Constitution has actually been amended?',
+    mentorHint: 'All 27 amendments began in Congress, not a convention.',
     correct: 'Proposal by a two-thirds vote of both houses of Congress and ratification by three-fourths of state legislatures',
     wrong: [
       miss('Proposal by a national convention called by the states and ratification by Congress', 'A convention has never been used to propose an amendment, and Congress does not ratify amendments.', 'All 27 amendments began in Congress, not a convention.'),
@@ -116,6 +123,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 1: Foundations of American Democracy',
     title: 'Federalism in the Constitution',
     prompt: 'The constitutional principle of federalism is best defined as:',
+    mentorHint: 'Federalism concerns levels of government, not branches.',
     correct: 'The division of power between a national government and state governments',
     wrong: [
       miss('The division of power among the legislative, executive, and judicial branches', 'That describes separation of powers, a different principle operating within a single level of government.', 'Federalism concerns levels of government, not branches.'),
@@ -131,6 +139,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 1: Foundations of American Democracy',
     title: 'Necessary and proper clause',
     prompt: 'The necessary and proper (elastic) clause of Article I is most significant because it:',
+    mentorHint: 'The elastic clause expands national, not state, authority.',
     correct: 'Allows Congress to make laws needed to carry out its enumerated powers, expanding implied powers',
     wrong: [
       miss('Grants the states all powers not specifically given to the national government', 'That describes the Tenth Amendment and reserved powers, not the necessary and proper clause.', 'The elastic clause expands national, not state, authority.'),
@@ -146,6 +155,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 1: Foundations of American Democracy',
     title: 'Declaration of Independence',
     prompt: 'Which Enlightenment idea most directly shaped the Declaration of Independence\'s claim that governments derive their just powers from "the consent of the governed"?',
+    mentorHint: 'The Declaration emphasizes consent and the right to alter government.',
     correct: 'John Locke\'s social contract theory and natural rights',
     wrong: [
       miss('Thomas Hobbes\'s argument for an absolute sovereign to escape the state of nature', 'Hobbes justified strong, often absolute authority; the Declaration draws instead on Locke\'s limited, consent-based government.', 'The Declaration emphasizes consent and the right to alter government.'),
@@ -162,6 +172,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'Powers of the Senate',
     prompt: 'Which power belongs exclusively to the Senate rather than the House of Representatives?',
+    mentorHint: 'Tax bills must start in the chamber closest to the people.',
     correct: 'Holding trials of impeachment and confirming presidential appointments',
     wrong: [
       miss('Initiating all revenue and tax bills', 'Originating revenue bills is a power of the House, not the Senate.', 'Tax bills must start in the chamber closest to the people.'),
@@ -177,6 +188,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'The filibuster',
     prompt: 'In the modern Senate, the filibuster functions primarily as a tool that:',
+    mentorHint: 'The filibuster empowers the minority, not the majority.',
     correct: 'Allows a minority to delay or block a vote unless 60 senators invoke cloture',
     wrong: [
       miss('Lets the majority leader force an immediate final vote on any bill', 'That is closer to a motion to end debate; the filibuster is a minority tool to extend debate, not the majority\'s tool to cut it off.', 'The filibuster empowers the minority, not the majority.'),
@@ -192,6 +204,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'Federalist No. 70',
     prompt: 'Federalist No. 70 argues that the executive branch should have which characteristic to be effective?',
+    mentorHint: 'No. 70 favors one person, not a committee.',
     correct: 'Energy and unity, vested in a single president',
     wrong: [
       miss('A plural executive of several co-equal officials to prevent abuse', 'Hamilton explicitly opposes a plural executive, arguing it weakens accountability and energy.', 'No. 70 favors one person, not a committee.'),
@@ -207,6 +220,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'Presidential veto and override',
     prompt: 'If the president vetoes a bill, Congress can override the veto by:',
+    mentorHint: 'Override needs a supermajority, not a simple majority.',
     correct: 'A two-thirds vote in both the House and the Senate',
     wrong: [
       miss('A simple majority vote in both chambers', 'A simple majority already passed the bill; overriding a veto requires a higher two-thirds threshold.', 'Override needs a supermajority, not a simple majority.'),
@@ -222,6 +236,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'Iron triangles',
     prompt: 'An "iron triangle" in American policymaking refers to the stable relationship among:',
+    mentorHint: 'Iron triangles involve bureaucracy and interest groups, not the three branches.',
     correct: 'A congressional committee, a federal agency, and an interest group',
     wrong: [
       miss('The president, the Supreme Court, and Congress', 'That describes the three branches of government, not the subgovernment relationship of an iron triangle.', 'Iron triangles involve bureaucracy and interest groups, not the three branches.'),
@@ -237,6 +252,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'Bureaucratic discretionary authority',
     prompt: 'When the Environmental Protection Agency writes detailed regulations to implement a broad clean-air statute, it is exercising:',
+    mentorHint: 'Rule-making is administrative, not judicial.',
     correct: 'Discretionary and rule-making authority delegated by Congress',
     wrong: [
       miss('Judicial review over the constitutionality of the statute', 'Agencies cannot strike down laws as unconstitutional; that is the judiciary\'s power.', 'Rule-making is administrative, not judicial.'),
@@ -252,6 +268,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'Congressional oversight',
     prompt: 'Which action is the clearest example of Congress exercising oversight of the executive branch?',
+    mentorHint: 'Oversight checks agencies; it does not empower them.',
     correct: 'Holding committee hearings to investigate how an agency spent its appropriated funds',
     wrong: [
       miss('Passing a law that delegates new authority to an agency', 'Delegating authority creates bureaucratic power; oversight is the monitoring of how that power is used.', 'Oversight checks agencies; it does not empower them.'),
@@ -267,6 +284,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'Federalist No. 78',
     prompt: 'In Federalist No. 78, Hamilton describes the judiciary as the "least dangerous" branch because it:',
+    mentorHint: 'Recall how federal judges reach the bench.',
     correct: 'Has neither the power of the purse nor the sword and depends on judgment alone',
     wrong: [
       miss('Is directly elected and therefore accountable to the people', 'Federal judges are appointed, not elected; Hamilton actually praises their independence from elections.', 'Recall how federal judges reach the bench.'),
@@ -282,6 +300,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'Judicial review',
     prompt: 'The power of judicial review, the authority to declare laws unconstitutional, was established by the Supreme Court in:',
+    mentorHint: 'That case is about a national bank and the elastic clause.',
     correct: 'Marbury v. Madison (1803)',
     wrong: [
       miss('McCulloch v. Maryland (1819)', 'McCulloch established implied powers and national supremacy over states, not judicial review.', 'That case is about a national bank and the elastic clause.'),
@@ -297,6 +316,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'Checks on the judiciary',
     prompt: 'Which is a legitimate check the other branches hold over the federal judiciary?',
+    mentorHint: 'No branch can simply overrule the Court by decree.',
     correct: 'Congress can propose constitutional amendments to overturn court decisions and the president appoints judges',
     wrong: [
       miss('The president can directly overrule a Supreme Court decision he disagrees with', 'The president cannot reverse a Court ruling; he may only decline to vigorously enforce it, which is controversial, not a formal check.', 'No branch can simply overrule the Court by decree.'),
@@ -312,6 +332,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'Executive agreements',
     prompt: 'How does an executive agreement differ from a treaty?',
+    mentorHint: 'Recall which chamber handles treaties.',
     correct: 'An executive agreement does not require Senate ratification, while a treaty needs a two-thirds Senate vote',
     wrong: [
       miss('An executive agreement requires approval by the House while a treaty does not', 'The House is not involved in either; treaties require the Senate, and executive agreements require neither chamber\'s ratification.', 'Recall which chamber handles treaties.'),
@@ -328,6 +349,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 3: Civil Liberties and Civil Rights',
     title: 'Selective incorporation',
     prompt: 'The doctrine of selective incorporation refers to the process by which:',
+    mentorHint: 'Courts, not Congress, incorporate rights.',
     correct: 'Most protections in the Bill of Rights are applied to the states through the Fourteenth Amendment',
     wrong: [
       miss('Congress selectively chooses which states must follow the Bill of Rights', 'Incorporation is a judicial doctrine applied by the courts, not a power Congress exercises over states.', 'Courts, not Congress, incorporate rights.'),
@@ -343,6 +365,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 3: Civil Liberties and Civil Rights',
     title: 'Establishment clause',
     prompt: 'In Engel v. Vitale (1962), the Supreme Court ruled that a state-sponsored prayer in public schools violated:',
+    mentorHint: 'The problem was government endorsing prayer, not restricting worship.',
     correct: 'The establishment clause of the First Amendment',
     wrong: [
       miss('The free exercise clause of the First Amendment', 'The free exercise clause protects practicing one\'s religion; the issue here was the state establishing/promoting religion.', 'The problem was government endorsing prayer, not restricting worship.'),
@@ -358,6 +381,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 3: Civil Liberties and Civil Rights',
     title: 'Free exercise of religion',
     prompt: 'In Wisconsin v. Yoder (1972), the Supreme Court held that requiring Amish children to attend school past eighth grade violated:',
+    mentorHint: 'The Amish wanted to practice their faith, not stop a government endorsement.',
     correct: 'The free exercise clause of the First Amendment',
     wrong: [
       miss('The establishment clause of the First Amendment', 'The establishment clause limits government endorsement of religion; here the issue was burdening religious practice, which falls under free exercise.', 'The Amish wanted to practice their faith, not stop a government endorsement.'),
@@ -373,6 +397,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 3: Civil Liberties and Civil Rights',
     title: 'Freedom of the press',
     prompt: 'In New York Times Co. v. United States (1971), the Court ruled against the government\'s attempt to stop publication of the Pentagon Papers, strengthening the principle that:',
+    mentorHint: 'The case is about restraining publication in advance, not removing all limits.',
     correct: 'Prior restraint of the press carries a heavy presumption against constitutionality',
     wrong: [
       miss('The press may publish anything without any limits whatsoever', 'The ruling did not grant unlimited freedom; it held a heavy burden against prior restraint specifically, not absolute immunity.', 'The case is about restraining publication in advance, not removing all limits.'),
@@ -388,6 +413,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 3: Civil Liberties and Civil Rights',
     title: 'Symbolic speech',
     prompt: 'In Tinker v. Des Moines (1969), the Supreme Court protected students wearing black armbands to protest the Vietnam War, holding that:',
+    mentorHint: 'Recall the famous schoolhouse-gate language.',
     correct: 'Symbolic speech in schools is protected unless it substantially disrupts the educational environment',
     wrong: [
       miss('Students have no First Amendment rights while on school grounds', 'The Court explicitly said students do not "shed their constitutional rights at the schoolhouse gate."', 'Recall the famous schoolhouse-gate language.'),
@@ -403,6 +429,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 3: Civil Liberties and Civil Rights',
     title: 'Right to counsel',
     prompt: 'In Gideon v. Wainwright (1963), the Supreme Court ruled that:',
+    mentorHint: 'Gideon is about a lawyer, not silence.',
     correct: 'States must provide an attorney to defendants in criminal cases who cannot afford one',
     wrong: [
       miss('Defendants have a right to remain silent during police questioning', 'That right was established in Miranda v. Arizona, not Gideon.', 'Gideon is about a lawyer, not silence.'),
@@ -418,6 +445,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 3: Civil Liberties and Civil Rights',
     title: 'Second Amendment incorporation',
     prompt: 'In McDonald v. Chicago (2010), the Supreme Court held that:',
+    mentorHint: 'The case extended an individual right to the states.',
     correct: 'The Second Amendment right to keep and bear arms applies to state and local governments',
     wrong: [
       miss('The Second Amendment protects only state militias, not individuals', 'McDonald affirmed an individual right and applied it to the states, rejecting a purely militia-based reading.', 'The case extended an individual right to the states.'),
@@ -433,6 +461,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 3: Civil Liberties and Civil Rights',
     title: 'Brown v. Board of Education',
     prompt: 'Brown v. Board of Education (1954) overturned which earlier precedent by ruling that segregated public schools are inherently unequal?',
+    mentorHint: 'Brown ended segregation, not judicial review.',
     correct: 'Plessy v. Ferguson and its "separate but equal" doctrine',
     wrong: [
       miss('Marbury v. Madison and the principle of judicial review', 'Brown applied judicial review; it did not overturn Marbury, which remains good law.', 'Brown ended segregation, not judicial review.'),
@@ -448,6 +477,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 3: Civil Liberties and Civil Rights',
     title: 'Letter from Birmingham Jail',
     prompt: 'In "Letter from Birmingham Jail," Martin Luther King Jr. justifies civil disobedience primarily by distinguishing between:',
+    mentorHint: 'King\'s line is moral, not federal versus state.',
     correct: 'Just laws that align with moral law and unjust laws that one has a duty to disobey nonviolently',
     wrong: [
       miss('Federal laws, which must be obeyed, and state laws, which may be ignored', 'King\'s distinction is moral (just versus unjust), not based on which level of government passed the law.', 'King\'s line is moral, not federal versus state.'),
@@ -463,6 +493,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 3: Civil Liberties and Civil Rights',
     title: 'Equal protection and affirmative action',
     prompt: 'The Fourteenth Amendment\'s equal protection clause is the constitutional basis for challenges to:',
+    mentorHint: 'Equal protection is about equal treatment, not speech.',
     correct: 'Government policies that treat people differently based on race or other protected categories',
     wrong: [
       miss('Restrictions on free speech imposed by the federal government', 'Speech restrictions are challenged under the First Amendment, not the equal protection clause.', 'Equal protection is about equal treatment, not speech.'),
@@ -479,6 +510,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 4: American Political Ideologies and Beliefs',
     title: 'Political socialization',
     prompt: 'Political socialization is best defined as:',
+    mentorHint: 'Socialization is about forming beliefs, not casting ballots.',
     correct: 'The process by which individuals acquire their political values and beliefs',
     wrong: [
       miss('The act of registering and turning out to vote in elections', 'Voting is a form of participation, not the lifelong process of developing political attitudes.', 'Socialization is about forming beliefs, not casting ballots.'),
@@ -494,6 +526,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 4: American Political Ideologies and Beliefs',
     title: 'Scientific polling and sampling',
     prompt: 'For a public opinion poll to accurately reflect the views of a large population, it most importantly relies on:',
+    mentorHint: 'Quality of the sample beats sheer quantity.',
     correct: 'A random, representative sample of the population',
     wrong: [
       miss('Surveying as many people as possible regardless of who they are', 'A huge but biased sample is less accurate than a smaller random one; representativeness matters more than raw size.', 'Quality of the sample beats sheer quantity.'),
@@ -509,6 +542,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 4: American Political Ideologies and Beliefs',
     title: 'Liberal vs conservative ideology',
     prompt: 'In contemporary American politics, which position is most associated with modern liberalism?',
+    mentorHint: 'Liberals favor more, not less, economic intervention.',
     correct: 'Greater government involvement in the economy to promote equality and a social safety net',
     wrong: [
       miss('Minimal government regulation of business and lower taxes', 'That reflects modern conservatism\'s economic preferences, not liberalism.', 'Liberals favor more, not less, economic intervention.'),
@@ -524,6 +558,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 4: American Political Ideologies and Beliefs',
     title: 'Keynesian vs supply-side economics',
     prompt: 'Supply-side economic policy, often associated with conservatives, primarily seeks to stimulate the economy by:',
+    mentorHint: 'Supply-side focuses on producers, not demand.',
     correct: 'Cutting taxes and regulations to encourage production and investment',
     wrong: [
       miss('Increasing government spending to boost consumer demand', 'That describes Keynesian (demand-side) policy, typically favored by liberals, not supply-side.', 'Supply-side focuses on producers, not demand.'),
@@ -539,6 +574,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 4: American Political Ideologies and Beliefs',
     title: 'Generational and demographic effects',
     prompt: 'A pollster notices that Americans who came of age during a major war hold distinctly more pro-defense views decades later. This pattern best illustrates:',
+    mentorHint: 'This is a genuine attitude pattern, not noise.',
     correct: 'A generational (cohort) effect from a shared formative political event',
     wrong: [
       miss('Sampling error in the poll', 'A consistent, explainable pattern tied to a shared experience is a real effect, not random sampling error.', 'This is a genuine attitude pattern, not noise.'),
@@ -554,6 +590,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 4: American Political Ideologies and Beliefs',
     title: 'Core American political values',
     prompt: 'Which set best represents the core values of American political culture emphasized in the AP framework?',
+    mentorHint: 'These are the opposite of core American values.',
     correct: 'Individualism, equality of opportunity, free enterprise, rule of law, and limited government',
     wrong: [
       miss('Centralized economic planning, hereditary status, and state religion', 'These conflict with American emphases on free enterprise, equality of opportunity, and religious freedom.', 'These are the opposite of core American values.'),
@@ -570,6 +607,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 5: Political Participation',
     title: 'Expansion of voting rights',
     prompt: 'Which amendment lowered the national voting age to 18?',
+    mentorHint: 'That amendment is about sex, not age.',
     correct: 'The Twenty-Sixth Amendment',
     wrong: [
       miss('The Nineteenth Amendment', 'The Nineteenth Amendment granted women the right to vote, not a change to the voting age.', 'That amendment is about sex, not age.'),
@@ -585,6 +623,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 5: Political Participation',
     title: 'Factors affecting voter turnout',
     prompt: 'Which factor is most strongly associated with higher voter turnout among individuals?',
+    mentorHint: 'Turnout rises with age, not falls.',
     correct: 'Higher levels of education',
     wrong: [
       miss('Younger age', 'Younger citizens consistently vote at lower rates than older citizens, so youth is linked to lower, not higher, turnout.', 'Turnout rises with age, not falls.'),
@@ -600,6 +639,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 5: Political Participation',
     title: 'Linkage institutions',
     prompt: 'Which of the following is a "linkage institution" that connects citizens to government?',
+    mentorHint: 'Linkage institutions connect people to government; courts are part of government.',
     correct: 'Political parties',
     wrong: [
       miss('The Supreme Court', 'The Court is a governing institution that decides cases, not a channel linking citizens\' preferences to government like parties or the media.', 'Linkage institutions connect people to government; courts are part of government.'),
@@ -615,6 +655,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 5: Political Participation',
     title: 'Two-party system causes',
     prompt: 'Why does the United States maintain a two-party system rather than a multiparty system?',
+    mentorHint: 'Parties are not in the Constitution at all.',
     correct: 'Single-member districts with winner-take-all (plurality) elections favor two large parties',
     wrong: [
       miss('The Constitution explicitly requires exactly two political parties', 'The Constitution never mentions parties; the two-party pattern results from the electoral system, not a constitutional mandate.', 'Parties are not in the Constitution at all.'),
@@ -630,6 +671,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 5: Political Participation',
     title: 'Interest groups and free-rider problem',
     prompt: 'The "free-rider problem" makes it difficult for some interest groups to form because:',
+    mentorHint: 'The issue is people benefiting for free, not a legal ban.',
     correct: 'Individuals can enjoy a group\'s collective benefits without paying dues or participating',
     wrong: [
       miss('Interest groups are legally prohibited from charging membership dues', 'Groups routinely charge dues; the problem is that people can benefit without joining, not a ban on dues.', 'The issue is people benefiting for free, not a legal ban.'),
@@ -645,6 +687,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 5: Political Participation',
     title: 'Citizens United v. FEC',
     prompt: 'In Citizens United v. Federal Election Commission (2010), the Supreme Court ruled that:',
+    mentorHint: 'Citizens United was about independent spending, not direct donations.',
     correct: 'Limits on independent political spending by corporations and unions violate the First Amendment',
     wrong: [
       miss('Individuals may contribute unlimited amounts directly to candidates', 'The case concerned independent expenditures, not direct contributions to candidates, which remain limited.', 'Citizens United was about independent spending, not direct donations.'),
@@ -660,6 +703,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 5: Political Participation',
     title: 'The Electoral College',
     prompt: 'A presidential candidate can lose the national popular vote but still win the presidency because:',
+    mentorHint: 'It is the Electoral College, not the Court.',
     correct: 'The Electoral College awards votes mostly on a winner-take-all basis by state',
     wrong: [
       miss('The Supreme Court chooses the president when results are close', 'The Court does not select the president; the Electoral College does, and the discrepancy stems from how electoral votes are distributed.', 'It is the Electoral College, not the Court.'),
@@ -675,6 +719,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 5: Political Participation',
     title: 'Mass media as gatekeeper',
     prompt: 'When news organizations decide which stories receive prominent coverage and which are ignored, they are performing which media function?',
+    mentorHint: 'This is about which stories appear, not how one is spun.',
     correct: 'Agenda-setting (gatekeeping)',
     wrong: [
       miss('Framing a single story to emphasize a particular interpretation', 'Framing concerns how a chosen story is presented, while deciding which stories get covered at all is agenda-setting.', 'This is about which stories appear, not how one is spun.'),
@@ -690,6 +735,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 5: Political Participation',
     title: 'Voting Rights Act of 1965',
     prompt: 'The Voting Rights Act of 1965 most directly expanded political participation by:',
+    mentorHint: 'The Act targeted discriminatory barriers, not the voting age.',
     correct: 'Banning discriminatory practices like literacy tests that had been used to disenfranchise Black voters',
     wrong: [
       miss('Lowering the voting age to 18 nationwide', 'That was accomplished by the Twenty-Sixth Amendment, not the Voting Rights Act.', 'The Act targeted discriminatory barriers, not the voting age.'),
@@ -706,6 +752,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 1: Foundations of American Democracy',
     title: 'Concurrent powers',
     prompt: 'Which power is a "concurrent power" shared by both the national and state governments?',
+    mentorHint: 'Only the national government coins money.',
     correct: 'The power to levy and collect taxes',
     wrong: [
       miss('The power to coin money', 'Coining money is an exclusive (delegated) power of the national government, not concurrent.', 'Only the national government coins money.'),
@@ -721,6 +768,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'Baker v. Carr',
     prompt: 'Baker v. Carr (1962) is significant because it:',
+    mentorHint: 'The case attacked unequal districts, not encouraged manipulation.',
     correct: 'Opened the door to federal court review of legislative redistricting, leading to "one person, one vote"',
     wrong: [
       miss('Established that districts must be drawn to maximize partisan advantage', 'Baker did the opposite by making malapportionment reviewable; it did not require partisan gerrymandering.', 'The case attacked unequal districts, not encouraged manipulation.'),
@@ -736,6 +784,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'Shaw v. Reno',
     prompt: 'In Shaw v. Reno (1993), the Supreme Court held that:',
+    mentorHint: 'The case targeted race-based districting, not every kind.',
     correct: 'Legislative districts drawn predominantly on the basis of race are subject to strict scrutiny',
     wrong: [
       miss('All forms of gerrymandering are unconstitutional under the Constitution', 'Shaw addressed racial gerrymandering specifically; it did not ban all gerrymandering, including partisan kinds.', 'The case targeted race-based districting, not every kind.'),
@@ -751,6 +800,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'United States v. Lopez',
     prompt: 'United States v. Lopez (1995) is significant for federalism because it:',
+    mentorHint: 'The case curtailed, not broadened, commerce power.',
     correct: 'Set a limit on Congress\'s commerce clause power, striking down a federal gun-free school zones law',
     wrong: [
       miss('Expanded Congress\'s commerce power to cover virtually all activity', 'Lopez limited the commerce power; it did not expand it, marking a check on national authority.', 'The case curtailed, not broadened, commerce power.'),
@@ -766,6 +816,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'McCulloch v. Maryland',
     prompt: 'McCulloch v. Maryland (1819) strengthened the national government by establishing which two principles?',
+    mentorHint: 'McCulloch is about the bank and federal power over states.',
     correct: 'Implied powers through the necessary and proper clause, and national supremacy over the states',
     wrong: [
       miss('Judicial review and the right to a jury trial', 'Judicial review came from Marbury, and jury trials are unrelated; McCulloch concerned implied powers and supremacy.', 'McCulloch is about the bank and federal power over states.'),
@@ -781,6 +832,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 1: Foundations of American Democracy',
     title: 'Categorical vs block grants',
     prompt: 'Compared with a block grant, a categorical grant gives the federal government more influence over states because it:',
+    mentorHint: 'Categorical grants come with narrow strings, not broad discretion.',
     correct: 'Provides funds that must be spent on specific, narrowly defined purposes with strict conditions',
     wrong: [
       miss('Provides funds states may spend with broad discretion within a general area', 'That describes a block grant, which gives states more flexibility, not a categorical grant.', 'Categorical grants come with narrow strings, not broad discretion.'),
@@ -796,6 +848,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 5: Political Participation',
     title: 'Critical and realigning elections',
     prompt: 'A "realigning" (critical) election is best described as one in which:',
+    mentorHint: 'Realignment is about lasting coalition change, not margin.',
     correct: 'A long-lasting shift in party coalitions and the balance of power occurs',
     wrong: [
       miss('The incumbent president wins re-election by a narrow margin', 'A close re-election is not a realignment; realignment involves durable shifts in which groups support each party.', 'Realignment is about lasting coalition change, not margin.'),
@@ -811,6 +864,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 3: Civil Liberties and Civil Rights',
     title: 'Schenck v. United States',
     prompt: 'In Schenck v. United States (1919), the Supreme Court ruled that speech may be restricted when it:',
+    mentorHint: 'Discomfort is not the standard the Court used.',
     correct: 'Creates a "clear and present danger" of bringing about serious harms Congress can prevent',
     wrong: [
       miss('Merely offends or angers a portion of the listening audience', 'Offense alone is not enough; Schenck required a clear and present danger, a much higher bar.', 'Discomfort is not the standard the Court used.'),
@@ -826,6 +880,7 @@ export const colApUsGovernmentPoliticsHigh103TopUpQuestions: Question[] = makeQu
     chapter: 'Unit 2: Interactions Among Branches of Government',
     title: 'Divided government and gridlock',
     prompt: 'When one party controls the presidency and the other controls at least one chamber of Congress, the most likely consequence is:',
+    mentorHint: 'The branches still function; they just clash more.',
     correct: 'Increased difficulty passing major legislation due to gridlock',
     wrong: [
       miss('Automatic suspension of the separation of powers', 'Divided government does not suspend constitutional structure; it operates within it, often producing gridlock.', 'The branches still function; they just clash more.'),

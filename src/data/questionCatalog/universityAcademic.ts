@@ -71,6 +71,58 @@ import { polish as runUniversityPolish } from './polishPipeline'
 
 const _universityBundle = [{ subTopics: UNIVERSITY_SUB_TOPICS, mentorHints: UNIVERSITY_MENTOR_HINTS, correctShortened: UNIVERSITY_CORRECT_SHORTENED, source: 'university' }]
 
+const ACADEMIC_TRACK_MENTOR_OPENERS: Record<string, string> = {
+  microeconomics: 'Use the micro model first: identify the agent, constraint, marginal tradeoff, and market condition before judging the options.',
+  macroeconomics: 'Start from the macro identity or transmission channel in play, then ask whether the prompt is about a level, a rate, a shift, or a policy response.',
+  organicChemistry: 'Translate the wording into structure and electron movement before reading the options; organic chemistry rewards mechanism over memorized labels.',
+  neuroscience: 'Locate the scale of the question first: molecule, synapse, circuit, brain region, behavior, or measurement method.',
+  introToPsychology: 'Separate the psychological construct from the study finding or everyday example, then match the option to the construct rather than the vibe of the story.',
+  cosmologyAndAstronomy: 'Anchor the question in the physical scale first: planet, star, galaxy, universe, light, gravity, or time.',
+  artHistory: 'Treat the artwork or movement as evidence: look for period, patronage, materials, composition, and cultural purpose before picking a label.',
+  apEnvironmentalScience: 'Track the environmental system and the flow through it: energy, matter, population pressure, pollution, feedback, or risk.',
+  researchMethods: 'Name the research-design issue before evaluating answers: variable, measurement, sampling, validity, inference, ethics, or replication.',
+  philosophy: 'Rebuild the argument in plain language, then separate the conclusion from the premises or thought experiment doing the work.',
+  logicCriticalThinking: 'Put the argument into form before judging it; validity, support, assumptions, and fallacies are about structure, not surface plausibility.',
+  formalLogic: 'Abstract away the topic and focus on the formal relationship between symbols, quantifiers, conditionals, premises, and conclusion.',
+  contemporaryEthics: 'Identify the moral framework or fairness principle being tested, then ask what kind of reason would count within that framework.',
+  discreteMath: 'Convert the prompt into the relevant discrete object: set, relation, graph, recurrence, proof pattern, or counting structure.',
+  philSenior: 'Treat this as a higher-level philosophy item: identify the debate, then ask what the named view or thought experiment is designed to show.',
+  comparativePracticalPolitics: 'Sort the political claim by institution, incentive, actor, and evidence before choosing an answer.',
+  dataStructures: 'Ask what operation or invariant the structure is meant to protect, then compare the options against that constraint.',
+  internationalRelations: 'Separate the actor, level of analysis, and theory of power or cooperation before choosing among nearby IR terms.',
+  marketing: 'Start with the business decision being made: audience, positioning, research, pricing, channel, or metric.',
+}
+
+function academicPromptMove(prompt: string): string {
+  const lower = prompt.toLowerCase()
+  if (/\bnot\b|\bexcept\b|\bleast\b/.test(lower)) {
+    return 'Because the wording contains a limiting or negative cue, eliminate the choices that satisfy the ordinary rule and keep the one that breaks it.'
+  }
+  if (/\baccording to\b|\bargues?\b|\bclaims?\b|\btheory\b|\bmodel\b|\brule\b|\bprinciple\b/.test(lower)) {
+    return 'When a named theory or rule appears, ask what distinctive claim it makes and avoid answers that belong to a neighboring framework.'
+  }
+  if (/\bwhy\b|\bbecause\b|\bprimarily\b|\bmainly\b|\bmost likely\b/.test(lower)) {
+    return 'Since this is asking for a reason or mechanism, prefer the option that explains the causal link rather than one that merely names a related fact.'
+  }
+  if (/\bcalculate\b|\bcompute\b|\bexpected\b|\bprobability\b|\brate\b|\bcomplexity\b|\bpka\b|\bppm\b|\bcm/.test(lower)) {
+    return 'Write down the quantity being asked for and the rule that governs it before comparing answer choices.'
+  }
+  return 'Use the exact wording of the prompt to decide whether it wants a definition, mechanism, comparison, or application.'
+}
+
+function buildAcademicMentorHint(trackId: string, question: Question): string {
+  const opener = ACADEMIC_TRACK_MENTOR_OPENERS[trackId] ?? 'Use the university context to identify the governing concept before reading the options.'
+  const promptMove = academicPromptMove(question.prompt)
+  return `${opener} In "${question.chapter}", treat "${question.title}" as the topic boundary so you do not drift into a nearby concept. ${promptMove}`
+}
+
+function enrichUniversityAcademicMentorHints(trackId: string, questions: Question[]): Question[] {
+  return questions.map((question) => ({
+    ...question,
+    mentorHint: buildAcademicMentorHint(trackId, question),
+  }))
+}
+
 export function buildUniversityAcademicQuestionCatalog(): Record<string, Question[]> {
   const catalog: Record<string, Question[]> = {
   // Wave 4 consolidation 2026-05-18: micro/macro hand banks extracted into highEconomics.ts so
@@ -314,7 +366,7 @@ export function buildUniversityAcademicQuestionCatalog(): Record<string, Questio
 
   const polished: Record<string, Question[]> = {}
   for (const [trackId, questions] of Object.entries(catalog)) {
-    polished[trackId] = runUniversityPolish(questions, _universityBundle)
+    polished[trackId] = enrichUniversityAcademicMentorHints(trackId, runUniversityPolish(questions, _universityBundle))
   }
   return polished
 }

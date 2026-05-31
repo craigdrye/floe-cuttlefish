@@ -28,6 +28,7 @@ function q(
   correct: string,
   wrong: WrongTuple[],
   lesson: string,
+  mentorHint?: string,
 ): Question {
   return makeSimpleQuestion(
     id,
@@ -39,7 +40,96 @@ function q(
     wrong.map(([label, why]) => [label, why, lesson] as [string, string, string]),
     lesson,
     SOURCE,
+    undefined,
+    mentorHint,
   )
+}
+
+function mentorHintForConcept(concept: Concept): string {
+  switch (concept.chapter) {
+    case 'CPA Exam Architecture and Study Operating System':
+      return 'Use the blueprint like a work order: identify the content area, item type, and skill level before choosing a study move. A higher skill tag means practice judgment and application, not just recall.'
+    case 'FAR Core - Financial Accounting and Reporting':
+      return 'First classify the accounting question: recognition, measurement, presentation, or disclosure. Then apply the relevant standard to the triggering fact instead of following labels or management preference.'
+    case 'AUD Core - Auditing and Attestation':
+      return 'Tie the procedure or report choice to the audit risk and assertion. AUD rewards source reliability, sufficiency, independence, and whether the problem is a misstatement or evidence limitation.'
+    case 'REG Core - Taxation and Regulation':
+      return 'Separate the tax boxes before calculating: authority, basis, timing, character, eligibility, and documentation. REG distractors often collapse those boxes into one tempting shortcut.'
+    case 'Discipline Choice Studio - BAR, ISC, or TCP':
+      return 'Choose the Discipline lens by the work being performed, not by a familiar acronym. Ask whether the facts call for reporting analysis, systems controls, or taxpayer planning.'
+    case 'Simulations, Research, and Workpaper Craft':
+      return 'Read the requirement first, then decide which exhibits and signs actually matter. Good simulation work is organized for partial credit and does not use every number just because it is present.'
+    case 'Exam Strategy and Candidate Stamina':
+      return 'Sequence and timing decisions should protect overlap, readiness, and endurance. The exam rewards planned tradeoffs more than heroic last-minute coverage.'
+    case 'The Bar Exam Operating System':
+      return 'Let the call of the question control the subject, task, and posture before you mine facts. A true rule is still wrong if it answers a different legal question.'
+    case 'MBE Core I - Civil Procedure, Constitutional Law, and Evidence':
+      return 'Sort the doctrine gate first: jurisdiction, scrutiny, forum, hearsay purpose, or admissibility balance. Then apply only the facts that change that rule.'
+    case 'MBE Core II - Contracts, Torts, Criminal Law, and Real Property':
+      return 'Name the elements and the governing framework before weighing answers. MBE traps often state a correct nearby rule while skipping the element or exception the facts trigger.'
+    case 'Essay Subjects and MEE Rule Muscles':
+      return 'On essays, make the rule visible and attach each important fact to an element. The grader needs issue, rule, application, and conclusion more than a polished conclusion alone.'
+    case 'MPT - Lawyering in a 90-Minute Box':
+      return 'Treat the task memo as the rubric and the File and Library as the universe. Format, audience, rule synthesis, and client facts drive points.'
+    case 'Memorization, Retrieval, and Attack Outlines':
+      return 'Convert doctrine into issue cues, elements, and exception triggers you can retrieve under time. Passive familiarity is weaker than a short rule you can apply to facts.'
+    case 'MBE Strategy and Distractor Surgery':
+      return 'Predict the tested rule before letting answer choices steer you. Eliminate answers that are true but irrelevant, too broad, or missing the exception in the stem.'
+    case 'Simulation, Final Review, and Exam-Day Execution':
+      return 'Think in points per minute. Preserve the main rule and fact application, then move before perfection on one item costs points elsewhere.'
+    case 'PMP Operating System':
+      return 'Ask what authority, objective, or decision right is missing before work begins. PMP best answers usually clarify purpose and governance before detailed execution.'
+    case 'People - Teams, Conflict, and Communication':
+      return 'Start with servant leadership: understand the facts, facilitate the right conversation, and remove the system obstacle. Escalation is stronger after you know the issue and authority threshold.'
+    case 'Stakeholders, Vision, and Business Value':
+      return 'Connect the action to stakeholder expectations and value realization. Outputs are not enough if engagement, adoption, or benefit ownership is missing.'
+    case 'Starting and Planning the Work':
+      return 'Tailor the planning artifact to the work: baseline, backlog, dependency, reserve, or requirement traceability. The right answer makes uncertainty and tradeoffs visible before commitment.'
+    case 'Executing, Monitoring, and Controlling':
+      return 'For in-flight work, compare the new fact to the approved baseline, metric, or quality agreement. Analyze impact and route decisions through the process before acting quietly.'
+    case 'Risk, Issues, Compliance, and Procurement':
+      return 'Decide whether the event is an uncertain risk, an occurred issue, a compliance obligation, or a contract performance problem. The response depends on that classification and the approved governance.'
+    case 'Agile, Hybrid, and Tailoring Lab':
+      return 'Respect agile role boundaries and flow signals while tailoring to constraints. Ask who owns value, what is truly done, and whether the life cycle fits the uncertainty.'
+    case 'Business Environment':
+      return 'Trace the decision back to business value, compliance, governance, and external change. PMP distractors often protect the plan while ignoring why the project exists.'
+    case 'Exam Strategy and Simulation':
+      return 'Favor measured, context-fit action: assess, engage, follow the process, then escalate if the threshold is met. Extreme answers need strong facts to justify them.'
+    case 'SHRM Decision Logic and HR\'s Role':
+      return 'Think like an HR business partner: facts, policy, consistency, risk, and stakeholder impact before the recommendation. The best SHRM answer is balanced, not merely manager-pleasing.'
+    case 'People Domain: Talent, Total Rewards, and Employee Relations':
+      return 'Tie the people practice to job relevance, fairness, documentation, and the business problem. SHRM distractors often use a people lever without diagnosing the actual driver.'
+    case 'Organization Domain: Strategy, Structure, and Change':
+      return 'Ask how the people decision supports strategy, culture, capability, and adoption. A structure or announcement is not enough unless behavior and measures change too.'
+    case 'Workplace Domain: Compliance, Risk, Safety, and Inclusion':
+      return 'Use a process that protects people and the record: assess urgency, confidentiality, legal duties, consistency, and documentation. Compliance answers should be prompt without being reckless.'
+    case 'Behavioral Competencies in Practice':
+      return 'Identify the competency under pressure: ethics, consultation, communication, business acumen, or global mindset. Strong HR behavior is candid, confidential, and courageous when risk is real.'
+    case 'Data, Metrics, and Evidence-Based HR':
+      return 'Start with the business question, then choose or segment the metric that actually answers it. Averages and single metrics can hide the pattern that matters.'
+    case 'Employee Relations Lab':
+      return 'Separate allegation, evidence, credibility, policy, and retaliation risk. Fair employee relations work is structured enough that the conclusion can be explained later.'
+    case 'Exam Survival and Scenario Judgment':
+      return 'Prefer the option that is lawful, ethical, humane, evidence-aware, and business-aligned. Extreme speed or avoidance usually skips the competency being tested.'
+    case 'Patent System, Exam Format, and MPEP Navigation':
+      return 'Anchor the answer in the current USPTO source materials and tested MPEP section. On procedure questions, navigation and source control matter as much as memory.'
+    case 'Patentability and Subject Matter Eligibility':
+      return 'Classify the patentability requirement first: eligibility, utility, enablement, or another disclosure rule. Then ask what the claim and specification actually teach.'
+    case 'Claims and Specification Support':
+      return 'Read the claim like a checklist and compare each limitation to the original disclosure. Support, clarity, and dependency logic turn on exact claim language.'
+    case 'Prior Art and Novelty':
+      return 'Track who disclosed what, when, and whether every claim limitation is present. Dates, priority support, and AIA exceptions can change the prior-art result.'
+    case 'Obviousness and Rejection Analysis':
+      return 'For obviousness, map the claim limitations to the references and test the examiner\'s rationale. Motivation, reasonable expectation, teaching away, and nexus evidence are the decision points.'
+    case 'Prosecution Procedure and Office Actions':
+      return 'Procedure is deadline and posture driven. Identify whether the case is non-final, final, restricted, allowed, or on appeal before choosing the filing path.'
+    case 'MPEP Drills and Procedural Edge Cases':
+      return 'Use the MPEP like a rulebook for timing, required papers, fees, petitions, and consequences. Edge cases turn on exact procedural posture, not general patent intuition.'
+    case 'USPTO Ethics and Practitioner Judgment':
+      return 'Separate client loyalty from duties to the Office and practitioner responsibility. Candor, conflicts, signatures, supervision, and withdrawal are ethics issues before strategy issues.'
+    default:
+      return 'Name the professional frame first, then apply the facts through the required process. The strongest answer should be defensible without giving in to speed or familiarity.'
+  }
 }
 
 function expandTrack(startId: number, count: number, concepts: Concept[], leads: ScenarioLead[]): Question[] {
@@ -56,6 +146,7 @@ function expandTrack(startId: number, count: number, concepts: Concept[], leads:
       concept.correct,
       concept.wrong,
       concept.lesson,
+      mentorHintForConcept(concept),
     )
   })
 }

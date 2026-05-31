@@ -1,4 +1,6 @@
 import type { AgeGroup } from '../ageCatalog'
+import { defaultQuestionScaffold } from './base'
+import type { Question, Topic } from './types'
 
 export type {
   Answer,
@@ -177,7 +179,100 @@ export async function loadQuestionCatalog(catalogKey: string) {
       if (catalog[id]) catalog[id] = [...catalog[id], ...extra]
     }
   }
-  return catalog
+  return enrichLoadedCatalogHints(catalogKey, catalog)
+}
+
+const TOPICS_WITH_SCAFFOLD_HINTS: Topic[] = [
+  'Mathematics',
+  'Game theory',
+  'Probability',
+  'Expected value',
+  'Statistics',
+  'ML',
+  'Software',
+  'Research',
+  'Climate Science',
+  'Medical',
+  'Series 86',
+  'Regulatory',
+  'Clinical Research',
+  'Supply Chain',
+  'Technical Sales',
+  'UX Research',
+  'AP',
+  'A-level',
+  'Primary',
+  'Fun',
+  'University',
+  'Career Skills',
+  'Quant Finance',
+  'Extension',
+  'Science',
+  'High',
+]
+
+const LOADED_CATALOG_GENERIC_HINTS = new Set([
+  'Ask what you would actually want a competent teammate to do here.',
+  'Use the clues in the question first, then check which answer fits best.',
+  'Translate the question into the core concept first, then eliminate answers that do not match the wording.',
+  ...TOPICS_WITH_SCAFFOLD_HINTS.map(topic => defaultQuestionScaffold(topic, '__', '__').mentorHint),
+])
+
+function enrichLoadedCatalogHints(catalogKey: string, catalog: Record<string, Question[]>): Record<string, Question[]> {
+  return Object.fromEntries(
+    Object.entries(catalog).map(([trackId, questions]) => [
+      trackId,
+      questions.map(question => (
+        question.mentorHint && !LOADED_CATALOG_GENERIC_HINTS.has(question.mentorHint)
+          ? question
+          : { ...question, mentorHint: loadedCatalogHint(catalogKey, trackId, question) }
+      )),
+    ]),
+  )
+}
+
+function loadedCatalogHint(catalogKey: string, trackId: string, question: Question): string {
+  const text = `${catalogKey} ${trackId} ${question.topic} ${question.chapter} ${question.title} ${question.prompt}`.toLowerCase()
+
+  if (text.includes('physics') || text.includes('force') || text.includes('motion') || text.includes('energy') || text.includes('circuit') || text.includes('wave')) {
+    return 'Name the physical quantity first, then choose the law or conservation idea that controls it. Keep direction, units, and system boundaries visible so a familiar formula does not get used in the wrong place.'
+  }
+
+  if (text.includes('climate') || text.includes('carbon') || text.includes('warming') || text.includes('greenhouse')) {
+    return 'Separate mechanism, evidence, and timescale. Climate questions usually hinge on whether the prompt is about radiation balance, feedbacks, carbon flow, attribution, or risk under uncertainty.'
+  }
+
+  if (text.includes('history') || text.includes('government') || text.includes('constitution') || text.includes('european') || text.includes('war')) {
+    return 'Place the event or institution in context before choosing: who had power, what changed, and what cause or consequence is being tested? Strong history answers connect the fact to the larger pattern.'
+  }
+
+  if (text.includes('math') || text.includes('algebra') || text.includes('geometry') || text.includes('trigonometry') || text.includes('calculus') || text.includes('linear algebra')) {
+    if (text.includes('geometry') || text.includes('angle') || text.includes('triangle') || text.includes('area')) {
+      return 'Identify the figure and the measurement being asked for before calculating. Geometry distractors often use the right-looking number with the wrong rule for length, area, angle, or similarity.'
+    }
+    return 'Translate the setup into one clean representation: equation, graph, table, vector, or function. Once the structure is clear, apply the rule that matches it rather than chasing the most familiar expression.'
+  }
+
+  if (text.includes('biology') || text.includes('chemistry') || text.includes('science') || text.includes('earth')) {
+    if (text.includes('chem')) {
+      return 'Track particles and conservation first: atoms, charge, moles, energy, or electrons. The right chemistry answer should match both the mechanism and the conditions in the prompt.'
+    }
+    return 'Ask which level of science the question is using: molecule, cell, organism, ecosystem, rock cycle, atmosphere, or experiment. The best answer explains the mechanism at that level without drifting to a nearby topic.'
+  }
+
+  if (text.includes('english') || text.includes('reading') || text.includes('writing') || text.includes('vocab')) {
+    return 'Use the surrounding sentence or passage as evidence. The right choice should preserve the author’s meaning, improve clarity, or match the word in context rather than merely sounding sophisticated.'
+  }
+
+  if (text.includes('logic') || text.includes('argument') || text.includes('philosophy') || text.includes('ethics')) {
+    return 'Separate the claim, reason, assumption, and example before judging the answer choices. The strongest option describes the reasoning role or principle precisely, without making the argument broader than it is.'
+  }
+
+  if (text.includes('chess') || text.includes('detective') || text.includes('game design') || text.includes('meme')) {
+    return 'Look for the rule of the small system: position, clue, constraint, audience reaction, or design goal. The best answer follows that rule instead of picking the funniest or flashiest option.'
+  }
+
+  return 'Restate the question in your own words and identify the exact relationship it asks about. Then choose the answer that fits those clues, not just the answer that belongs somewhere in the same subject.'
 }
 
 async function loadQuestionCatalogRaw(catalogKey: string): Promise<Record<string, import('./types').Question[]>> {

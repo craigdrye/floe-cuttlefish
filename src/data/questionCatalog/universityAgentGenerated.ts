@@ -3,6 +3,78 @@ import type { Question, Topic } from './types'
 
 const SOURCE = 'Floe university agent-generated syllabus bank'
 
+function universityAgentMentorHint(chapter: string, title: string, prompt: string): string {
+  const text = `${chapter} ${title} ${prompt}`.toLowerCase()
+
+  if (text.includes('mcat') || text.includes('enzyme') || text.includes('physiology') || text.includes('genetics') || text.includes('hardy-weinberg')) {
+    if (text.includes('dose') || text.includes('concentration') || text.includes('volume')) {
+      return 'Start by separating the dose calculation into two steps: total amount needed, then volume from concentration. Keep the units visible so mg/kg, mg, and mg/mL cannot blur together.'
+    }
+    if (text.includes('enzyme') || text.includes('km') || text.includes('vmax') || text.includes('inhibition')) {
+      return 'For enzyme kinetics, translate the curve shift into what happened to Km and Vmax before naming the inhibitor. Competitive, noncompetitive, and uncompetitive patterns differ mainly in those two quantities.'
+    }
+    if (text.includes('genetic') || text.includes('hardy') || text.includes('allele')) {
+      return 'For Hardy-Weinberg items, identify which frequency the prompt gives first: affected recessive people are q^2, not q. Once you have q, ask whether the question wants alleles, carriers, or genotype frequencies.'
+    }
+    return 'Anchor the MCAT item in the underlying mechanism before choosing an answer: charge, pressure, memory system, control group, or causal design. The strongest option should match both the biology and the exact experimental setup.'
+  }
+
+  if (text.includes('composition') || text.includes('rhetorical') || text.includes('thesis') || text.includes('citation') || text.includes('source')) {
+    if (text.includes('thesis') || text.includes('claim') || text.includes('argument')) {
+      return 'Look for the option that makes a specific, arguable claim and gives the reader a reason to believe it. A topic, announcement, or personal complaint is usually too weak to function as a thesis.'
+    }
+    if (text.includes('source') || text.includes('citation') || text.includes('bibliography') || text.includes('peer')) {
+      return 'Ask what job the source or citation is doing: establishing credibility, summarizing evidence, or showing where an idea came from. Good academic writing makes that job explicit instead of relying on surface polish.'
+    }
+    return 'Composition questions usually test the relationship between audience, purpose, evidence, and revision. Choose the answer that makes the writing more precise for its reader, not just more formal.'
+  }
+
+  if (text.includes('accounting') || text.includes('debit') || text.includes('credit') || text.includes('financial statement') || text.includes('revenue') || text.includes('expense')) {
+    return 'In accounting questions, first decide what kind of account or statement line is being affected, then track whether it increases or decreases. The right answer should preserve the accounting equation and the timing rule.'
+  }
+
+  if (text.includes('chemistry') || text.includes('equilibrium') || text.includes('acid') || text.includes('base') || text.includes('mole') || text.includes('bond') || text.includes('thermodynamic')) {
+    if (text.includes('equilibrium') || text.includes('le chatelier')) {
+      return 'For equilibrium, compare the disturbance to how the system can partially offset it. Track concentrations, pressure, temperature, and whether heat is acting like a reactant or product.'
+    }
+    if (text.includes('acid') || text.includes('base') || text.includes('ph') || text.includes('pka')) {
+      return 'For acid-base items, identify the proton donor/acceptor and compare pH with pKa when relevant. The useful question is which form is favored under the stated conditions.'
+    }
+    return 'Chemistry questions become clearer when you name the conserved quantity or driving force first: moles, charge, energy, electron movement, or concentration. Then let that mechanism rule out answers that only sound familiar.'
+  }
+
+  if (text.includes('biology') || text.includes('anatomy') || text.includes('physiology') || text.includes('cell') || text.includes('homeostasis')) {
+    return 'Start with structure and function: what part, system, or molecule is being described, and what job does it normally perform? Biology distractors often name a real concept that belongs to a different level of organization.'
+  }
+
+  if (text.includes('physics') || text.includes('circuit') || text.includes('force') || text.includes('energy') || text.includes('electric') || text.includes('voltage')) {
+    if (text.includes('circuit') || text.includes('resistor') || text.includes('voltage') || text.includes('current')) {
+      return 'For circuit questions, decide whether elements are in series or parallel before doing arithmetic. Then use Ohm law with the voltage and equivalent resistance that actually apply to that branch or circuit.'
+    }
+    return 'Write down the physical quantity being asked for and the law that connects the givens to it. The units are a good guardrail: if the answer has the wrong kind of unit, the reasoning has drifted.'
+  }
+
+  if (text.includes('sociology') || text.includes('psychology') || text.includes('social') || text.includes('behavior')) {
+    return 'Separate the everyday story from the formal concept being tested. The best answer should describe the pattern in the prompt without adding extra motives or assumptions that the evidence does not support.'
+  }
+
+  if (text.includes('lsat') || text.includes('cars') || text.includes('argument') || text.includes('assumption') || text.includes('inference') || text.includes('weaken')) {
+    if (text.includes('weaken')) {
+      return 'For weaken questions, find the argument bridge first, then look for the answer that damages that bridge directly. A choice can be true or interesting and still miss the inference being attacked.'
+    }
+    if (text.includes('assumption')) {
+      return 'Ask what unstated idea must be true for the conclusion to follow from the evidence. A necessary assumption is often modest: remove it, and the argument stops working.'
+    }
+    return 'Treat the passage like a chain of claims: evidence, assumption, conclusion, and tone. The correct answer should stay within that chain rather than adding a stronger claim than the author made.'
+  }
+
+  if (text.includes('research') || text.includes('study') || text.includes('experiment') || text.includes('control') || text.includes('causal') || text.includes('confound')) {
+    return 'Identify the claim the study wants to make, then check whether the design can actually support it. Controls, randomization, confounders, and measurement choices determine how far the evidence can travel.'
+  }
+
+  return 'Translate the prompt into the core concept being tested, then ask what must be true for the correct choice to follow. Strong answers fit the exact wording of the scenario rather than a nearby term from the same chapter.'
+}
+
 function q(
   id: number,
   topic: Topic,
@@ -23,6 +95,8 @@ function q(
     wrong.map(([label, why]) => [label, why, lesson] as [string, string, string]),
     lesson,
     SOURCE,
+    true,
+    universityAgentMentorHint(chapter, title, prompt),
   )
 }
 

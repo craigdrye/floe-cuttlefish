@@ -573,16 +573,16 @@
 .calculator-keypad {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 8px;
-  margin-top: 10px;
+  gap: 6px;
+  margin-top: 8px;
 }
 .calculator-key {
-  min-height: 40px;
-  border-radius: var(--r-sm);
+  min-height: 30px;
+  border-radius: 10px;
   border: 1px solid rgba(31,122,98,0.15);
   background: rgba(255,255,255,0.72);
   color: var(--ocean-deep);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 800;
   transition: transform 0.15s, background 0.2s, border-color 0.2s;
 }
@@ -691,6 +691,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-top: 12px;
   margin-bottom: 10px;
   overflow-x: auto;
 }
@@ -710,18 +711,101 @@
   border-radius: var(--r-full);
   font-size: 13px;
   font-weight: 700;
-  color: #476159;
-  background: rgba(255,255,255,0.4);
-  border: 1px solid rgba(255,255,255,0.3);
-  transition: all 0.2s;
+  color: var(--pastel-ink, #476159);
+  background: var(--pastel-bg, rgba(255,255,255,0.4));
+  border: 1px solid var(--pastel-border, rgba(255,255,255,0.3));
+  box-shadow: 0 3px 8px var(--pastel-shadow, rgba(30, 95, 90, 0.04));
+  transition: transform 0.2s, background 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 .actions-toolbar .secondary:hover {
-  background: rgba(255,255,255,0.6);
+  background: var(--pastel-bg-hover, rgba(255,255,255,0.6));
+  transform: translateY(-1px);
+  box-shadow: 0 5px 12px var(--pastel-shadow, rgba(30, 95, 90, 0.07));
 }
 .actions-toolbar .secondary.active {
-  background: rgba(46,196,182,0.15);
-  border-color: var(--reef-teal);
-  color: var(--reef-teal);
+  background: var(--pastel-bg-active, rgba(46,196,182,0.15));
+  border-color: var(--pastel-border-active, var(--reef-teal));
+  color: var(--pastel-ink-active, var(--reef-teal));
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.45), 0 5px 12px var(--pastel-shadow, rgba(30, 95, 90, 0.08));
+}
+.actions-toolbar .secondary.attention-flash {
+  animation: tool-border-flash 0.5s ease-in-out 3;
+  border-color: var(--pastel-border-active, var(--reef-teal));
+  box-shadow:
+    0 0 0 3px rgba(255,255,255,0.7),
+    0 0 0 6px color-mix(in srgb, var(--pastel-border-active, var(--reef-teal)) 42%, transparent),
+    0 10px 24px var(--pastel-shadow, rgba(30, 95, 90, 0.16));
+}
+.actions-toolbar .pastel-1 {
+  --pastel-bg: #f2f8ff;
+  --pastel-bg-hover: #eaf4ff;
+  --pastel-bg-active: #e4f0fb;
+  --pastel-border: #d9eaf8;
+  --pastel-border-active: #9dc7e8;
+  --pastel-ink: #486a81;
+  --pastel-ink-active: #2f6287;
+  --pastel-shadow: rgba(91, 154, 205, 0.08);
+}
+.actions-toolbar .pastel-2 {
+  --pastel-bg: #fff8df;
+  --pastel-bg-hover: #fff3ce;
+  --pastel-bg-active: #f9edbf;
+  --pastel-border: #eee2b5;
+  --pastel-border-active: #d8bd63;
+  --pastel-ink: #705f37;
+  --pastel-ink-active: #80641c;
+  --pastel-shadow: rgba(199, 159, 45, 0.08);
+}
+.actions-toolbar .pastel-3 {
+  --pastel-bg: #f2faec;
+  --pastel-bg-hover: #eaf6e0;
+  --pastel-bg-active: #e0f0d4;
+  --pastel-border: #d5e8c9;
+  --pastel-border-active: #9bc77c;
+  --pastel-ink: #526b4a;
+  --pastel-ink-active: #4f7a35;
+  --pastel-shadow: rgba(111, 171, 83, 0.08);
+}
+.actions-toolbar .pastel-4 {
+  --pastel-bg: #f8f1ff;
+  --pastel-bg-hover: #f2eaff;
+  --pastel-bg-active: #ece2fb;
+  --pastel-border: #e3d7f4;
+  --pastel-border-active: #bfa8e3;
+  --pastel-ink: #66577a;
+  --pastel-ink-active: #75559c;
+  --pastel-shadow: rgba(138, 99, 185, 0.08);
+}
+.actions-toolbar .pastel-5 {
+  --pastel-bg: #fff1f5;
+  --pastel-bg-hover: #ffeaf1;
+  --pastel-bg-active: #fae0ea;
+  --pastel-border: #efd4dd;
+  --pastel-border-active: #dca0b5;
+  --pastel-ink: #775967;
+  --pastel-ink-active: #924d69;
+  --pastel-shadow: rgba(196, 91, 126, 0.08);
+}
+.actions-toolbar .pastel-6 {
+  --pastel-bg: #eefaf7;
+  --pastel-bg-hover: #e5f6f2;
+  --pastel-bg-active: #d9f0eb;
+  --pastel-border: #cbe8e2;
+  --pastel-border-active: #89c8bc;
+  --pastel-ink: #4d6964;
+  --pastel-ink-active: #34786f;
+  --pastel-shadow: rgba(70, 167, 154, 0.08);
+}
+
+@keyframes tool-border-flash {
+  0%, 100% {
+    transform: translateY(0);
+    border-color: var(--pastel-border-active, var(--reef-teal));
+  }
+  50% {
+    transform: translateY(-1px);
+    border-color: color-mix(in srgb, var(--pastel-border-active, var(--reef-teal)) 72%, white);
+  }
 }
 .actions-primary {
   display: flex;
@@ -861,8 +945,8 @@
   .ritual-strip { grid-template-columns: 1fr; }
   .adaptive-strip { align-items: stretch; flex-direction: column; }
   .actions-toolbar .secondary { justify-content: flex-start; }
-  .calculator-keypad { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .calculator-key { min-height: 44px; font-size: 16px; }
+  .calculator-keypad { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .calculator-key { min-height: 30px; font-size: 13px; }
   .boss-cutscene-card { grid-template-columns: 1fr; text-align: center; }
   .boss-cutscene-card img { justify-self: center; }
 }

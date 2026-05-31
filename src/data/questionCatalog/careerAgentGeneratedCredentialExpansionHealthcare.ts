@@ -14,6 +14,20 @@ type QuestionSeed = {
   wrong: WrongAnswer[]
 }
 
+function mentorHintForHealthcare(seed: QuestionSeed): string | undefined {
+  if (healthcareComplianceRoadmap.includes(seed)) {
+    return 'Use the healthcare compliance program frame: legal risk, independence, reporting, investigation, corrective action, education, and board-level evidence. The strongest answer protects patients and payers while preserving a defensible record.'
+  }
+  if (pharmaDrugSafetyRoadmap.includes(seed)) {
+    return 'Start with pharmacovigilance basics: valid case elements, seriousness, expectedness, causality, reporting clock, and audit trail. Good safety work preserves the signal without overstating what one report proves.'
+  }
+  if (healthInsurancePayersRoadmap.includes(seed)) {
+    return 'Separate coverage, medical necessity, claims payment, appeal rights, network access, and delegation oversight. Payer questions usually turn on the process right or control that applies at that decision point.'
+  }
+
+  return undefined
+}
+
 function buildTrack(seeds: QuestionSeed[]): Question[] {
   return seeds.map((seed) =>
     makeSimpleQuestion(
@@ -26,6 +40,8 @@ function buildTrack(seeds: QuestionSeed[]): Question[] {
       seed.wrong,
       undefined,
       SOURCE,
+      undefined,
+      mentorHintForHealthcare(seed),
     ),
   )
 }

@@ -21,6 +21,8 @@ const _baseDiscreteMathematicsStarterQuestions = makeQuestionBank('University', 
       miss('P and not Q', 'That is the condition that would refute the original implication.', 'Look for an equivalent implication.'),
     ],
     lesson: 'A conditional and its contrapositive are logically equivalent. This is one of the most useful proof moves in discrete mathematics.',
+    mentorHint:
+      'For a conditional, the contrapositive keeps the same truth value by both reversing the direction and negating each statement. Track the hypothesis and conclusion separately so you do not accidentally choose the converse or inverse.',
     source: 'Floe authored course expansion',
   },
   {
@@ -35,6 +37,8 @@ const _baseDiscreteMathematicsStarterQuestions = makeQuestionBank('University', 
       miss('A has more elements than B', 'Cardinality is not the defining condition.', 'Membership inclusion matters first.'),
     ],
     lesson: 'Subset claims are universal: to prove A is contained in B, take an arbitrary element of A and show it must belong to B.',
+    mentorHint:
+      'A subset statement is about membership, not size or visual position. Read "A is a subset of B" as a universal claim: if something is in A, then it must also be in B.',
     source: 'Floe authored course expansion',
   },
   {
@@ -49,6 +53,8 @@ const _baseDiscreteMathematicsStarterQuestions = makeQuestionBank('University', 
       miss('Finite, countable, and infinite', 'Those classify sizes of sets.', 'An equivalence relation needs three logical properties.'),
     ],
     lesson: 'Equivalence relations partition a set into equivalence classes, which is why the three properties matter together.',
+    mentorHint:
+      'Equivalence relations act like a carefully defined version of equality. Ask which properties guarantee each object relates to itself, relationships go both directions, and chains of relationships stay consistent.',
     source: 'Floe authored course expansion',
   },
   {
@@ -63,6 +69,8 @@ const _baseDiscreteMathematicsStarterQuestions = makeQuestionBank('University', 
       miss('25', 'That would be 5 choices for both positions.', 'The first position has only 3 choices.'),
     ],
     lesson: 'The product rule says independent stages multiply: 3 choices followed by 5 choices gives 3 x 5 outcomes.',
+    mentorHint:
+      'Use the product rule when a choice happens in stages and each first-stage option can pair with every second-stage option. Addition would count alternatives, while multiplication counts combinations of independent decisions.',
     source: 'Floe authored course expansion',
   },
   {
@@ -77,6 +85,8 @@ const _baseDiscreteMathematicsStarterQuestions = makeQuestionBank('University', 
       miss('The number of colors used to draw the graph', 'Graph coloring is separate from degree.', 'Count attached edges.'),
     ],
     lesson: 'Vertex degree is local connectivity. It is one of the first quantities to check when reasoning about graph structure.',
+    mentorHint:
+      'Degree is a local graph property, so focus on one vertex rather than the whole graph. Count the edges touching that vertex; in an undirected graph each incident edge contributes to that vertex degree.',
     source: 'Floe authored course expansion',
   },
   {
@@ -91,6 +101,8 @@ const _baseDiscreteMathematicsStarterQuestions = makeQuestionBank('University', 
       miss('The domain and codomain are both empty only', 'Empty functions can be injective, but that is not the general definition.', 'Use the no-collisions idea.'),
     ],
     lesson: 'Injective functions preserve distinctness: if f(a) = f(b), then a = b.',
+    mentorHint:
+      'Injection is the "no collisions" condition for a function. A useful proof form is the contrapositive-style statement: if two outputs are equal, then the original inputs must have been equal.',
     source: 'Floe authored course expansion',
   },
 ])
@@ -108,6 +120,8 @@ const _baseAlgorithmsStarterQuestions = makeQuestionBank('Software', [
       miss('The number of comments in a file', 'Comments are not the resource being modeled.', 'Big-O usually describes time or space.'),
     ],
     lesson: 'Big-O is a growth-rate language for comparing algorithms as inputs become large.',
+    mentorHint:
+      'Big-O abstracts away machine details and constant factors so you can reason about scaling. Ask how the time or space changes when the input size grows, especially for large inputs.',
     source: 'Floe authored course expansion',
   },
   {
@@ -122,6 +136,8 @@ const _baseAlgorithmsStarterQuestions = makeQuestionBank('Software', [
       miss('Limited to exactly two elements', 'Binary search works on many sizes.', 'Binary refers to halving, not only two items.'),
     ],
     lesson: 'Binary search is powerful because ordering lets each comparison eliminate a large region of impossible answers.',
+    mentorHint:
+      'The invariant in binary search is that the target, if it exists, remains inside the current ordered interval. Each comparison is only useful because sorted order tells you which half cannot contain the answer.',
     source: 'Floe authored course expansion',
   },
   {
@@ -136,6 +152,8 @@ const _baseAlgorithmsStarterQuestions = makeQuestionBank('Software', [
       miss('It sorts all edge weights first', 'Unweighted BFS does not sort weights.', 'Each edge has equal cost.'),
     ],
     lesson: 'In an unweighted graph, every edge has the same cost, so BFS layers correspond to shortest-path distance.',
+    mentorHint:
+      'BFS maintains a distance-layer invariant: all vertices reached with k edges are processed before vertices that need k + 1 edges. That is why a queue, not a deep recursive path, supports shortest paths in unweighted graphs.',
     source: 'Floe authored course expansion',
   },
   {
@@ -150,6 +168,8 @@ const _baseAlgorithmsStarterQuestions = makeQuestionBank('Software', [
       miss('A solution that cannot be broken apart', 'DP depends on decomposing the problem.', 'Substructure is the clue.'),
     ],
     lesson: 'DP saves work by solving repeated subproblems once and reusing those answers.',
+    mentorHint:
+      'Dynamic programming fits when the same smaller questions appear repeatedly and optimal answers can be assembled from optimal subanswers. Look for a reusable state definition before thinking about code.',
     source: 'Floe authored course expansion',
   },
 ])
@@ -167,6 +187,8 @@ const _baseSqlFoundationsStarterQuestions = makeQuestionBank('Software', [
       miss('Which index must be rebuilt', 'Index maintenance is not the SELECT clause role.', 'SELECT is part of reading data.'),
     ],
     lesson: 'A basic SQL query separates output columns in SELECT from input tables in FROM and row filters in WHERE.',
+    mentorHint:
+      'Separate the logical roles of the query clauses: SELECT shapes the result columns, while FROM supplies rows and WHERE filters them. Ask what the final output should display.',
     source: 'Floe authored course expansion',
   },
   {
@@ -181,6 +203,8 @@ const _baseSqlFoundationsStarterQuestions = makeQuestionBank('Software', [
       miss('LIMIT', 'LIMIT caps the number of returned rows.', 'It does not define the condition.'),
     ],
     lesson: 'WHERE applies row-level conditions such as `status = "active"` or `created_at >= "2026-01-01"`.',
+    mentorHint:
+      'WHERE is evaluated as a row-level predicate: each row either passes the condition or does not. Look for the clause that reduces which records flow into the result before grouping or final display.',
     source: 'Floe authored course expansion',
   },
   {
@@ -195,6 +219,8 @@ const _baseSqlFoundationsStarterQuestions = makeQuestionBank('Software', [
       miss('A random sample from both tables', 'Joins combine related rows, not random samples.', 'Use the join condition.'),
     ],
     lesson: 'INNER JOIN is the default matched-record join: unmatched rows from either side are excluded.',
+    mentorHint:
+      'Think of an INNER JOIN as keeping only paired rows that satisfy the relationship condition. If a row has no matching partner on the join key, it will not survive this type of join.',
     source: 'Floe authored course expansion',
   },
   {
@@ -209,6 +235,8 @@ const _baseSqlFoundationsStarterQuestions = makeQuestionBank('Software', [
       miss('Delete duplicate records from the database', 'GROUP BY can reveal duplicates, but it does not delete rows by itself.', 'It summarizes.'),
     ],
     lesson: 'GROUP BY pairs with aggregates like COUNT, SUM, AVG, MIN, and MAX.',
+    mentorHint:
+      'GROUP BY changes the question from individual rows to summary rows. Identify the attribute that defines each bucket, then apply aggregate functions such as COUNT or SUM within each bucket.',
     source: 'Floe authored course expansion',
   },
   {
@@ -223,6 +251,8 @@ const _baseSqlFoundationsStarterQuestions = makeQuestionBank('Software', [
       miss('Columns before SELECT runs', 'HAVING is not for choosing columns.', 'It filters summary groups.'),
     ],
     lesson: 'Use WHERE for row conditions and HAVING for aggregate conditions such as `COUNT(*) > 10`.',
+    mentorHint:
+      'HAVING is for predicates that require aggregate results, such as counts or totals, so it comes after grouping in the reasoning. If the condition can be checked on one raw row, it usually belongs in WHERE instead.',
     source: 'Floe authored course expansion',
   },
   {
@@ -237,6 +267,8 @@ const _baseSqlFoundationsStarterQuestions = makeQuestionBank('Software', [
       miss('The average timestamp for each user', 'No averaging happens here.', 'ORDER BY controls sequence, not an average.'),
     ],
     lesson: 'Window functions compute values across related rows while keeping row-level detail in the result.',
+    mentorHint:
+      'Read the OVER clause in two parts: PARTITION BY restarts the calculation for each group, and ORDER BY decides the sequence inside that group. ROW_NUMBER labels rows in that ordered window without collapsing them.',
     source: 'Floe authored course expansion',
   },
   {
@@ -251,6 +283,8 @@ const _baseSqlFoundationsStarterQuestions = makeQuestionBank('Software', [
       miss('Always be the largest text column', 'Column size is not the defining property.', 'Uniqueness and stability matter.'),
     ],
     lesson: 'Primary keys give rows stable identity so other tables can reference them safely.',
+    mentorHint:
+      'A primary key is about row identity in a relation. It should be unique and stable enough that other tables can point to one specific record without ambiguity.',
     source: 'Floe authored course expansion',
   },
   {
@@ -265,6 +299,8 @@ const _baseSqlFoundationsStarterQuestions = makeQuestionBank('Software', [
       miss('Prevent any table from having more than one row', 'Foreign keys do not impose that rule.', 'They preserve relational integrity.'),
     ],
     lesson: 'Foreign keys are how relational schemas represent relationships like orders belonging to customers.',
+    mentorHint:
+      'A foreign key stores a reference from one table to a key in another table. The idea is relational integrity: relationships between records should point to real, identifiable rows.',
     source: 'Floe authored course expansion',
   },
 ])
@@ -282,6 +318,8 @@ const _baseEarthScienceStarterQuestions = makeQuestionBank('AP', [
       miss('Evaporation of sunlight', 'Sunlight does not evaporate into rock.', 'Think pressure and mineral glue.'),
     ],
     lesson: 'Sedimentary rocks form when sediments are buried, compacted, and cemented together over time.',
+    mentorHint:
+      'Follow the mechanism from loose sediment to solid rock. Burial increases pressure for compaction, and dissolved minerals can act as cement that binds grains together.',
     source: 'Floe authored course expansion',
   },
   {
@@ -296,6 +334,8 @@ const _baseEarthScienceStarterQuestions = makeQuestionBank('AP', [
       miss('Photosynthesis', 'Photosynthesis is biological energy capture.', 'This is plate motion.'),
     ],
     lesson: 'Subduction zones are associated with deep ocean trenches, earthquakes, and volcanic arcs.',
+    mentorHint:
+      'At a convergent boundary, evidence such as trenches, earthquakes, and volcanic arcs points to one plate descending beneath another. Connect the observed features to the mechanism of plate motion.',
     source: 'Floe authored course expansion',
   },
   {
@@ -310,6 +350,8 @@ const _baseEarthScienceStarterQuestions = makeQuestionBank('AP', [
       miss('The equator directly to every city', 'Global circulation is more complex.', 'The local driver is pressure gradient.'),
     ],
     lesson: 'Wind is driven by pressure differences, then shaped by rotation, friction, and local geography.',
+    mentorHint:
+      'Air motion begins with a pressure-gradient force, meaning air tends to move from higher pressure toward lower pressure. Other factors can curve or slow the wind, but the pressure difference supplies the initial push.',
     source: 'Floe authored course expansion',
   },
   {
@@ -324,6 +366,8 @@ const _baseEarthScienceStarterQuestions = makeQuestionBank('AP', [
       miss('Turn oxygen into rock', 'That is unrelated to atmospheric warming.', 'Focus on radiation.'),
     ],
     lesson: 'Greenhouse gases such as water vapor, carbon dioxide, and methane interact with outgoing infrared radiation.',
+    mentorHint:
+      'Focus on Earth energy balance: visible sunlight mostly enters, while Earth emits energy back out as infrared radiation. Greenhouse gases warm the surface by absorbing and re-emitting some of that outgoing infrared energy.',
     source: 'Floe authored course expansion',
   },
   {
@@ -338,6 +382,8 @@ const _baseEarthScienceStarterQuestions = makeQuestionBank('AP', [
       miss('Can never carry sediment or pollutants', 'Runoff often carries both.', 'Surface flow can transport materials.'),
     ],
     lesson: 'Runoff connects weather, erosion, watersheds, and water quality.',
+    mentorHint:
+      'Runoff is part of the surface-water pathway in the water cycle. Think about water that does not immediately infiltrate or evaporate, and how flowing water can move sediment, nutrients, or pollutants through a watershed.',
     source: 'Floe authored course expansion',
   },
 ])

@@ -11,6 +11,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Limits and Continuity',
     title: 'Limit by Factoring',
     prompt: 'Evaluate the limit of (x^2 - 4) / (x - 2) as x approaches 2.',
+    mentorHint: 'Factor the numerator and cancel the common factor before substituting.',
     correct: '4',
     wrong: [
       miss('0', 'Direct substitution gives 0/0, an indeterminate form, not 0; you must simplify first.', 'Factor the numerator and cancel the common factor before substituting.'),
@@ -26,6 +27,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Limits and Continuity',
     title: 'Squeeze Theorem',
     prompt: 'Evaluate the limit of x^2 * cos(1/x) as x approaches 0.',
+    mentorHint: 'Bound the oscillating factor and multiply by x^2.',
     correct: '0',
     wrong: [
       miss('1', 'cos(1/x) oscillates between -1 and 1 and never settles to 1; the x^2 factor forces the product to 0.', 'Bound the oscillating factor and multiply by x^2.'),
@@ -41,6 +43,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Limits and Continuity',
     title: 'Limit at Infinity of a Rational Function',
     prompt: 'Evaluate the limit of (3x^2 + 5x) / (2x^2 - 7) as x approaches infinity.',
+    mentorHint: 'Compare the degrees of numerator and denominator.',
     correct: '3/2',
     wrong: [
       miss('0', 'The numerator and denominator have the same degree, so the ratio approaches the ratio of leading coefficients, not 0.', 'Compare the degrees of numerator and denominator.'),
@@ -56,6 +59,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Limits and Continuity',
     title: 'Continuity Condition',
     prompt: 'A function f is continuous at x = a exactly when which set of conditions holds?',
+    mentorHint: 'Continuity also requires the function value to exist and match the limit.',
     correct: 'f(a) is defined, the limit of f(x) as x approaches a exists, and that limit equals f(a).',
     wrong: [
       miss('The limit of f(x) as x approaches a exists.', 'A limit can exist while f(a) is undefined or unequal to the limit, so this alone is insufficient.', 'Continuity also requires the function value to exist and match the limit.'),
@@ -71,6 +75,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Limits and Continuity',
     title: 'Removable Discontinuity Repair',
     prompt: 'For f(x) = (x^2 - 1)/(x - 1) with x not equal to 1, what value must f(1) be assigned to make f continuous at x = 1?',
+    mentorHint: 'Compute the limit of the simplified expression at x = 1.',
     correct: '2',
     wrong: [
       miss('0', 'Setting f(1) = 0 leaves a jump because the surrounding limit is 2, not 0.', 'Compute the limit of the simplified expression at x = 1.'),
@@ -86,6 +91,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Limits and Continuity',
     title: 'Intermediate Value Theorem',
     prompt: 'f is continuous on [1, 4] with f(1) = -3 and f(4) = 5. Which conclusion is guaranteed by the Intermediate Value Theorem?',
+    mentorHint: 'The IVT is about values between f(1) and f(4), not about extremes.',
     correct: 'There is at least one c in (1, 4) where f(c) = 0.',
     wrong: [
       miss('f has a maximum value of 5 on [1, 4].', 'The Extreme Value Theorem addresses max/min; the IVT only guarantees intermediate output values are attained.', 'The IVT is about values between f(1) and f(4), not about extremes.'),
@@ -101,6 +107,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Limits and Continuity',
     title: 'One-Sided Limits and Existence',
     prompt: 'For a piecewise function, the left-hand limit at x = 2 is 5 and the right-hand limit at x = 2 is 5, but f(2) = 9. What is the limit of f(x) as x approaches 2?',
+    mentorHint: 'A limit ignores the actual function value at the point.',
     correct: '5',
     wrong: [
       miss('9', 'The value f(2) does not determine the limit; the limit depends only on nearby values, which approach 5.', 'A limit ignores the actual function value at the point.'),
@@ -118,6 +125,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Differentiation: Definition and Fundamental Properties',
     title: 'Derivative from the Limit Definition',
     prompt: 'Using the limit definition, what is the derivative of f(x) = x^2 at a general point x?',
+    mentorHint: 'Expand (x + h)^2 and simplify the difference quotient carefully.',
     correct: '2x',
     wrong: [
       miss('x', 'The definition produces 2x because the (h^2)/h term vanishes and the 2xh/h term remains.', 'Expand (x + h)^2 and simplify the difference quotient carefully.'),
@@ -133,6 +141,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Differentiation: Definition and Fundamental Properties',
     title: 'Power Rule with Negative Exponent',
     prompt: 'Find the derivative of f(x) = 1/x^3.',
+    mentorHint: 'Rewrite as x^(-3) and apply the power rule carefully to the sign.',
     correct: '-3/x^4',
     wrong: [
       miss('3/x^4', 'The negative exponent makes the derivative negative; you dropped the sign.', 'Rewrite as x^(-3) and apply the power rule carefully to the sign.'),
@@ -148,6 +157,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Differentiation: Definition and Fundamental Properties',
     title: 'Product Rule',
     prompt: 'If f(x) = x^2 * sin(x), what is f\'(x)?',
+    mentorHint: 'Use f\'g + fg\' for a product of two functions.',
     correct: '2x sin(x) + x^2 cos(x)',
     wrong: [
       miss('2x cos(x)', 'You cannot just differentiate each factor and multiply; the product rule keeps both terms.', 'Use f\'g + fg\' for a product of two functions.'),
@@ -163,6 +173,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Differentiation: Definition and Fundamental Properties',
     title: 'Quotient Rule',
     prompt: 'If f(x) = x / (x + 1), what is f\'(x)?',
+    mentorHint: 'Use (low * d-high minus high * d-low) over low squared.',
     correct: '1/(x + 1)^2',
     wrong: [
       miss('1', 'Differentiating numerator and denominator separately and dividing is invalid; the quotient rule is required.', 'Use (low * d-high minus high * d-low) over low squared.'),
@@ -178,6 +189,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Differentiation: Definition and Fundamental Properties',
     title: 'Derivative of the Natural Exponential',
     prompt: 'What is the derivative of f(x) = e^x?',
+    mentorHint: 'The base e, not the exponent, is constant here.',
     correct: 'e^x',
     wrong: [
       miss('x e^(x - 1)', 'The power rule applies to x raised to a constant, not a constant raised to x; e^x is an exponential function.', 'The base e, not the exponent, is constant here.'),
@@ -193,6 +205,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Differentiation: Definition and Fundamental Properties',
     title: 'Differentiability and Continuity',
     prompt: 'Which statement about the relationship between differentiability and continuity is correct?',
+    mentorHint: 'A corner is continuous yet has no single tangent slope.',
     correct: 'If a function is differentiable at a point, then it is continuous there.',
     wrong: [
       miss('If a function is continuous at a point, then it is differentiable there.', 'Continuity does not guarantee differentiability; |x| is continuous but not differentiable at 0.', 'A corner is continuous yet has no single tangent slope.'),
@@ -210,6 +223,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Composite, Implicit, and Inverse Functions',
     title: 'Chain Rule Application',
     prompt: 'Find the derivative of f(x) = (3x^2 + 1)^4.',
+    mentorHint: 'The chain rule requires multiplying by the inner derivative.',
     correct: '24x(3x^2 + 1)^3',
     wrong: [
       miss('4(3x^2 + 1)^3', 'You forgot to multiply by the derivative of the inside function, 6x.', 'The chain rule requires multiplying by the inner derivative.'),
@@ -225,6 +239,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Composite, Implicit, and Inverse Functions',
     title: 'Implicit Differentiation',
     prompt: 'For the circle x^2 + y^2 = 25, what is dy/dx by implicit differentiation?',
+    mentorHint: 'Solve 2x + 2y(dy/dx) = 0 for dy/dx.',
     correct: '-x/y',
     wrong: [
       miss('-y/x', 'The variables are swapped; differentiating x^2 gives 2x and y^2 gives 2y dy/dx, leading to -x/y.', 'Solve 2x + 2y(dy/dx) = 0 for dy/dx.'),
@@ -240,6 +255,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Composite, Implicit, and Inverse Functions',
     title: 'Derivative of an Inverse Function',
     prompt: 'g is the inverse of f, f(2) = 5, and f\'(2) = 4. What is g\'(5)?',
+    mentorHint: 'Use g\'(b) = 1/f\'(a) where b = f(a).',
     correct: '1/4',
     wrong: [
       miss('4', 'The derivative of the inverse is the reciprocal of the original derivative, not the same value.', 'Use g\'(b) = 1/f\'(a) where b = f(a).'),
@@ -255,6 +271,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Composite, Implicit, and Inverse Functions',
     title: 'Derivative of Natural Log Composite',
     prompt: 'Find the derivative of f(x) = ln(x^2 + 1).',
+    mentorHint: 'The derivative of ln(u) is u\'/u.',
     correct: '2x/(x^2 + 1)',
     wrong: [
       miss('1/(x^2 + 1)', 'You forgot the chain rule; multiply by the derivative of the inside, which is 2x.', 'The derivative of ln(u) is u\'/u.'),
@@ -270,6 +287,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Composite, Implicit, and Inverse Functions',
     title: 'Second Derivative via Repeated Chain Rule',
     prompt: 'If y = sin(2x), what is the second derivative d^2y/dx^2?',
+    mentorHint: 'Track the inner derivative 2 each time you differentiate.',
     correct: '-4 sin(2x)',
     wrong: [
       miss('-sin(2x)', 'Each differentiation brings down a factor of 2, so two differentiations give a factor of 4, not 1.', 'Track the inner derivative 2 each time you differentiate.'),
@@ -287,6 +305,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Contextual Applications of Differentiation',
     title: 'Velocity and Acceleration',
     prompt: 'A particle moves with position s(t) = t^3 - 6t^2 + 9t. At what time t > 0 is the velocity zero with the particle momentarily at rest while still on its way from increasing to decreasing position?',
+    mentorHint: 'Check the sign of velocity just before and after each zero.',
     correct: 't = 1',
     wrong: [
       miss('t = 3', 'At t = 3 velocity is also zero, but there the particle changes from decreasing back to increasing, not the requested transition.', 'Check the sign of velocity just before and after each zero.'),
@@ -302,6 +321,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Contextual Applications of Differentiation',
     title: 'Related Rates: Expanding Balloon',
     prompt: 'A spherical balloon\'s volume increases at 36pi cubic cm per second. When the radius is 3 cm, how fast is the radius increasing? (V = (4/3)pi r^3)',
+    mentorHint: 'Differentiate V and isolate dr/dt before substituting.',
     correct: '1 cm/s',
     wrong: [
       miss('4 cm/s', 'You likely forgot to divide by the surface-area factor 4pi r^2 = 36pi when solving for dr/dt.', 'Differentiate V and isolate dr/dt before substituting.'),
@@ -317,6 +337,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Contextual Applications of Differentiation',
     title: 'Linear Approximation',
     prompt: 'Use the tangent line to f(x) = sqrt(x) at x = 100 to approximate sqrt(101).',
+    mentorHint: 'Compute f\'(100) = 1/(2 sqrt(100)) carefully.',
     correct: '10.05',
     wrong: [
       miss('10.5', 'The increment is f\'(100) times 1 = 1/(2*10) = 0.05, not 0.5.', 'Compute f\'(100) = 1/(2 sqrt(100)) carefully.'),
@@ -332,6 +353,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Contextual Applications of Differentiation',
     title: 'L\'Hopital\'s Rule',
     prompt: 'Evaluate the limit of sin(x)/x as x approaches 0 using L\'Hopital\'s Rule.',
+    mentorHint: 'Apply L\'Hopital because the form is 0/0.',
     correct: '1',
     wrong: [
       miss('0', 'Substituting gives 0/0, an indeterminate form; differentiating top and bottom gives cos(0)/1 = 1.', 'Apply L\'Hopital because the form is 0/0.'),
@@ -347,6 +369,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Contextual Applications of Differentiation',
     title: 'Related Rates: Sliding Ladder',
     prompt: 'A 13 ft ladder leans against a wall; its base slides away at 5 ft/s. When the base is 12 ft from the wall, how fast is the top sliding down? (Top height satisfies x^2 + y^2 = 169.)',
+    mentorHint: 'Differentiate x^2 + y^2 = 169 and substitute the current x, y.',
     correct: '12 ft/s downward',
     wrong: [
       miss('5 ft/s downward', 'The top and bottom rates are not equal; the geometry makes the top move faster here.', 'Differentiate x^2 + y^2 = 169 and substitute the current x, y.'),
@@ -364,6 +387,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Analytical Applications of Differentiation',
     title: 'Critical Points',
     prompt: 'For f(x) = x^3 - 3x, at which x-values does f have critical points?',
+    mentorHint: 'Solve 3x^2 - 3 = 0 for x.',
     correct: 'x = -1 and x = 1',
     wrong: [
       miss('x = 0 only', 'f\'(x) = 3x^2 - 3 equals zero at x = ±1, not at x = 0.', 'Solve 3x^2 - 3 = 0 for x.'),
@@ -379,6 +403,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Analytical Applications of Differentiation',
     title: 'First Derivative Test',
     prompt: 'For f(x) = x^3 - 3x, classify the critical point at x = -1.',
+    mentorHint: 'Check the sign of f\' just left and right of x = -1.',
     correct: 'Local maximum',
     wrong: [
       miss('Local minimum', 'The derivative changes from positive to negative at x = -1, signaling a maximum, not a minimum.', 'Check the sign of f\' just left and right of x = -1.'),
@@ -394,6 +419,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Analytical Applications of Differentiation',
     title: 'Concavity and the Second Derivative',
     prompt: 'For f(x) = x^3 - 3x, on what interval is the graph concave up?',
+    mentorHint: 'Concave up requires f\'\'(x) > 0.',
     correct: 'x > 0',
     wrong: [
       miss('x < 0', 'Here f\'\'(x) = 6x, which is negative for x < 0, indicating concave down, not up.', 'Concave up requires f\'\'(x) > 0.'),
@@ -409,6 +435,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Analytical Applications of Differentiation',
     title: 'Mean Value Theorem',
     prompt: 'f(x) = x^2 on [0, 4]. By the Mean Value Theorem, at what c in (0, 4) does the instantaneous rate equal the average rate of change?',
+    mentorHint: 'Set f\'(c) equal to the average slope and solve.',
     correct: 'c = 2',
     wrong: [
       miss('c = 4', 'The MVT point lies strictly inside (0, 4), and at x = 4 the slope 8 exceeds the average slope 4.', 'Set f\'(c) equal to the average slope and solve.'),
@@ -424,6 +451,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Analytical Applications of Differentiation',
     title: 'Optimization: Maximum Area',
     prompt: 'A rectangle has perimeter 40 m. What dimensions maximize its area?',
+    mentorHint: 'Express area as a function of one side and maximize.',
     correct: '10 m by 10 m',
     wrong: [
       miss('15 m by 5 m', 'These satisfy the perimeter but give area 75, less than the square\'s 100.', 'Express area as a function of one side and maximize.'),
@@ -439,6 +467,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Analytical Applications of Differentiation',
     title: 'Inflection Points',
     prompt: 'For f(x) = x^4 - 6x^2, how many inflection points does the graph have?',
+    mentorHint: 'Solve f\'\'(x) = 0 and check sign changes.',
     correct: 'Two',
     wrong: [
       miss('One', 'f\'\'(x) = 12x^2 - 12 has two roots where concavity changes, giving two inflection points.', 'Solve f\'\'(x) = 0 and check sign changes.'),
@@ -456,6 +485,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Integration and Accumulation of Change',
     title: 'Basic Antiderivative',
     prompt: 'Find the antiderivative of f(x) = 3x^2.',
+    mentorHint: 'Add one to the exponent and divide by the new exponent.',
     correct: 'x^3 + C',
     wrong: [
       miss('6x + C', 'That is the derivative of 3x^2, not its antiderivative; integration raises the power.', 'Add one to the exponent and divide by the new exponent.'),
@@ -471,6 +501,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Integration and Accumulation of Change',
     title: 'Definite Integral via FTC',
     prompt: 'Evaluate the definite integral of 2x from x = 1 to x = 3.',
+    mentorHint: 'Compute F(3) - F(1) where F(x) = x^2.',
     correct: '8',
     wrong: [
       miss('4', 'You may have evaluated only the upper limit or forgotten to subtract the lower limit\'s value.', 'Compute F(3) - F(1) where F(x) = x^2.'),
@@ -486,6 +517,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Integration and Accumulation of Change',
     title: 'U-Substitution',
     prompt: 'Evaluate the integral of 2x cos(x^2) dx.',
+    mentorHint: 'Let u = x^2 so that du = 2x dx.',
     correct: 'sin(x^2) + C',
     wrong: [
       miss('2x sin(x^2) + C', 'After substitution the 2x is absorbed into du; it should not remain in the answer.', 'Let u = x^2 so that du = 2x dx.'),
@@ -501,6 +533,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Integration and Accumulation of Change',
     title: 'Accumulation Function',
     prompt: 'If g(x) is the integral of f(t) from 0 to x and f(t) = t, what is g(4)?',
+    mentorHint: 'Integrate f(t) = t from 0 to 4.',
     correct: '8',
     wrong: [
       miss('4', 'You may have used f(4) = 4 instead of integrating; g accumulates area, not function values.', 'Integrate f(t) = t from 0 to 4.'),
@@ -516,6 +549,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Integration and Accumulation of Change',
     title: 'Riemann Sum Estimate',
     prompt: 'Estimate the integral of f(x) = x^2 from 0 to 2 using a right Riemann sum with two subintervals of equal width.',
+    mentorHint: 'Use the right endpoints x = 1 and x = 2.',
     correct: '5',
     wrong: [
       miss('2', 'A left Riemann sum gives f(0)(1) + f(1)(1) = 0 + 1 = 1; the right sum uses the right endpoints.', 'Use the right endpoints x = 1 and x = 2.'),
@@ -531,6 +565,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Integration and Accumulation of Change',
     title: 'Integral of 1 over x',
     prompt: 'Find the antiderivative of f(x) = 1/x.',
+    mentorHint: 'The power rule breaks for the exponent -1.',
     correct: 'ln|x| + C',
     wrong: [
       miss('x^0 + C', 'Applying the power rule to x^(-1) fails because it would divide by zero; the log rule is needed instead.', 'The power rule breaks for the exponent -1.'),
@@ -548,6 +583,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Differential Equations',
     title: 'Separable Differential Equation',
     prompt: 'Solve dy/dx = 2xy with the general solution form.',
+    mentorHint: 'Separate variables and integrate 2x dx.',
     correct: 'y = C e^(x^2)',
     wrong: [
       miss('y = C e^(2x)', 'Integrating 2x gives x^2, not 2x; the exponent should be x^2.', 'Separate variables and integrate 2x dx.'),
@@ -563,6 +599,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Differential Equations',
     title: 'Exponential Growth Model',
     prompt: 'A population satisfies dP/dt = 0.05P with P(0) = 200. What is the population model P(t)?',
+    mentorHint: 'dP/dt proportional to P signals exponential, not linear, growth.',
     correct: 'P(t) = 200 e^(0.05t)',
     wrong: [
       miss('P(t) = 200 + 0.05t', 'A constant rate gives linear growth, but here the rate is proportional to P, giving exponential growth.', 'dP/dt proportional to P signals exponential, not linear, growth.'),
@@ -578,6 +615,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Differential Equations',
     title: 'Slope Fields',
     prompt: 'For the differential equation dy/dx = x, what is true about the slope field along the line x = 2?',
+    mentorHint: 'Substitute x = 2 into dy/dx = x.',
     correct: 'Every segment along x = 2 has slope 2, regardless of y.',
     wrong: [
       miss('Every segment along x = 2 has slope 0.', 'Slope equals x = 2 there, not 0; zero slopes occur along x = 0.', 'Substitute x = 2 into dy/dx = x.'),
@@ -593,6 +631,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Differential Equations',
     title: 'Particular Solution from Initial Condition',
     prompt: 'Solve dy/dx = 3x^2 with the initial condition y(1) = 5.',
+    mentorHint: 'Apply the initial condition after integrating to find C.',
     correct: 'y = x^3 + 4',
     wrong: [
       miss('y = x^3 + 5', 'You used 5 as the constant directly, but substituting x = 1 requires solving 1 + C = 5, giving C = 4.', 'Apply the initial condition after integrating to find C.'),
@@ -610,6 +649,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Applications of Integration',
     title: 'Area Between Curves',
     prompt: 'Find the area between y = x and y = x^2 from x = 0 to x = 1.',
+    mentorHint: 'Subtract the lower curve from the upper before integrating.',
     correct: '1/6',
     wrong: [
       miss('1/3', 'You may have integrated only one curve; the area is the integral of the difference (x - x^2).', 'Subtract the lower curve from the upper before integrating.'),
@@ -625,6 +665,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Applications of Integration',
     title: 'Volume by Disk Method',
     prompt: 'The region under y = sqrt(x) from x = 0 to x = 4 is revolved about the x-axis. What is the volume?',
+    mentorHint: 'Integrate pi times (sqrt(x))^2 = pi x.',
     correct: '8pi',
     wrong: [
       miss('16pi', 'You may have forgotten the factor 1/2 from integrating x; the integral of x from 0 to 4 is 8.', 'Integrate pi times (sqrt(x))^2 = pi x.'),
@@ -640,6 +681,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Applications of Integration',
     title: 'Average Value of a Function',
     prompt: 'Find the average value of f(x) = x^2 on the interval [0, 3].',
+    mentorHint: 'Use the average-value formula with the integral divided by the interval length.',
     correct: '3',
     wrong: [
       miss('9', 'That is f(3), the endpoint value, not the average over the interval.', 'Use the average-value formula with the integral divided by the interval length.'),
@@ -655,6 +697,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Applications of Integration',
     title: 'Net Change from a Rate',
     prompt: 'Water flows into a tank at a rate r(t) = 6t liters per minute. How much water enters between t = 0 and t = 2 minutes?',
+    mentorHint: 'Evaluate the definite integral between the given limits.',
     correct: '12 liters',
     wrong: [
       miss('12t liters', 'The net change is a number, not a function; you integrate over [0, 2] to get a value.', 'Evaluate the definite integral between the given limits.'),
@@ -670,6 +713,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Applications of Integration',
     title: 'Displacement vs Distance',
     prompt: 'A particle has velocity v(t) = t - 2 for t in [0, 3]. What is the total distance traveled?',
+    mentorHint: 'Split the integral where velocity changes sign at t = 2.',
     correct: '2.5',
     wrong: [
       miss('1.5', 'That is the displacement (the signed integral); total distance integrates the absolute value of velocity.', 'Split the integral where velocity changes sign at t = 2.'),
@@ -685,6 +729,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Applications of Integration',
     title: 'Volume by Washer Method',
     prompt: 'The region between y = x and y = x^2 (from x = 0 to x = 1) is revolved about the x-axis. Which integral gives the volume?',
+    mentorHint: 'Use pi(R^2 - r^2), squaring each radius separately.',
     correct: 'pi times the integral of (x^2 - x^4) dx from 0 to 1',
     wrong: [
       miss('pi times the integral of (x - x^2)^2 dx from 0 to 1', 'You cannot square the difference of the functions; you subtract the squares of the two radii.', 'Use pi(R^2 - r^2), squaring each radius separately.'),
@@ -702,6 +747,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Limits and Continuity',
     title: 'Infinite Limit and Vertical Asymptote',
     prompt: 'Evaluate the limit of 1/(x - 2)^2 as x approaches 2.',
+    mentorHint: 'A squared denominator never becomes negative.',
     correct: 'Positive infinity',
     wrong: [
       miss('Negative infinity', 'The denominator is squared, so it stays positive near x = 2, making the limit positive infinity.', 'A squared denominator never becomes negative.'),
@@ -717,6 +763,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Differentiation: Definition and Fundamental Properties',
     title: 'Derivative of Tangent',
     prompt: 'What is the derivative of f(x) = tan(x)?',
+    mentorHint: 'Recall the standard derivative of the tangent function.',
     correct: 'sec^2(x)',
     wrong: [
       miss('sec(x) tan(x)', 'That is the derivative of sec(x), not tan(x); do not confuse the two.', 'Recall the standard derivative of the tangent function.'),
@@ -732,6 +779,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Composite, Implicit, and Inverse Functions',
     title: 'Chain Rule with Exponential',
     prompt: 'Find the derivative of f(x) = e^(3x).',
+    mentorHint: 'Multiply by the derivative of the exponent.',
     correct: '3 e^(3x)',
     wrong: [
       miss('e^(3x)', 'You forgot the chain rule factor; the derivative of the exponent 3x is 3.', 'Multiply by the derivative of the exponent.'),
@@ -747,6 +795,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Contextual Applications of Differentiation',
     title: 'Indeterminate Form infinity over infinity',
     prompt: 'Evaluate the limit of (e^x)/(x) as x approaches infinity using L\'Hopital\'s Rule.',
+    mentorHint: 'Differentiate and re-examine the new form.',
     correct: 'Positive infinity',
     wrong: [
       miss('1', 'After one application of L\'Hopital, e^x/1 still tends to infinity, not 1.', 'Differentiate and re-examine the new form.'),
@@ -762,6 +811,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Analytical Applications of Differentiation',
     title: 'Second Derivative Test',
     prompt: 'For f(x) with f\'(3) = 0 and f\'\'(3) = -2, what does the second derivative test conclude about x = 3?',
+    mentorHint: 'Recall that f\'\' < 0 means concave down.',
     correct: 'Local maximum',
     wrong: [
       miss('Local minimum', 'A negative second derivative indicates concave down, which gives a maximum, not a minimum.', 'Recall that f\'\' < 0 means concave down.'),
@@ -777,6 +827,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Integration and Accumulation of Change',
     title: 'Fundamental Theorem Part 1',
     prompt: 'If F(x) is the integral of cos(t) from 0 to x, what is F\'(x)?',
+    mentorHint: 'Differentiating an accumulation function gives back the integrand.',
     correct: 'cos(x)',
     wrong: [
       miss('sin(x)', 'You integrated cos to get sin, but the FTC Part 1 says the derivative returns the integrand itself.', 'Differentiating an accumulation function gives back the integrand.'),
@@ -792,6 +843,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Integration and Accumulation of Change',
     title: 'Integration by Substitution with Limits',
     prompt: 'Evaluate the definite integral of 2x(x^2 + 1)^3 dx from x = 0 to x = 1.',
+    mentorHint: 'Change the limits to u-values: u(0) = 1 and u(1) = 2.',
     correct: '15/4',
     wrong: [
       miss('1/4', 'You may have used the wrong limits after substitution; u runs from 1 to 2, giving (16 - 1)/4.', 'Change the limits to u-values: u(0) = 1 and u(1) = 2.'),
@@ -807,6 +859,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Differential Equations',
     title: 'Newton\'s Law of Cooling Setup',
     prompt: 'An object cools so its temperature satisfies dT/dt = -k(T - 20) for ambient temperature 20 degrees. What is the equilibrium temperature as t increases without bound?',
+    mentorHint: 'Equilibrium is where dT/dt = 0.',
     correct: '20 degrees',
     wrong: [
       miss('0 degrees', 'The object approaches the ambient temperature 20, not absolute zero.', 'Equilibrium is where dT/dt = 0.'),
@@ -822,6 +875,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Applications of Integration',
     title: 'Volume by Cross Sections',
     prompt: 'A solid has a base bounded by x = 0, x = 2, and the x-axis under y = 2 - x, with square cross-sections perpendicular to the x-axis. The side of each square equals the height (2 - x). Which integral gives the volume?',
+    mentorHint: 'A square\'s area is side squared, not pi r squared.',
     correct: 'The integral of (2 - x)^2 dx from 0 to 2',
     wrong: [
       miss('pi times the integral of (2 - x)^2 dx from 0 to 2', 'Square cross-sections have area (side)^2, with no factor of pi; pi belongs to circular cross-sections.', 'A square\'s area is side squared, not pi r squared.'),
@@ -837,6 +891,7 @@ export const colApCalculusHigh103TopUpQuestions: Question[] = makeQuestionBank('
     chapter: 'Analytical Applications of Differentiation',
     title: 'Absolute Extrema on a Closed Interval',
     prompt: 'Find the absolute maximum of f(x) = x^3 - 3x on the closed interval [0, 2].',
+    mentorHint: 'Compare all candidate values and pick the largest.',
     correct: '2',
     wrong: [
       miss('-2', 'That value -2 is the minimum (at x = 1), not the maximum on this interval.', 'Compare all candidate values and pick the largest.'),

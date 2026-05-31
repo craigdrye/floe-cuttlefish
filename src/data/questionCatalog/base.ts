@@ -299,6 +299,7 @@ export function makeSimpleQuestion(
   lesson?: string,
   source?: string,
   generated?: boolean,
+  mentorHint?: string,
 ): Question {
   const scaffold = defaultQuestionScaffold(topic, title, prompt)
   return {
@@ -316,7 +317,7 @@ export function makeSimpleQuestion(
     // bespoke setup should set it explicitly via the Question literal.
     prompt,
     fieldNote: scaffold.fieldNote,
-    mentorHint: scaffold.mentorHint,
+    mentorHint: mentorHint ?? scaffold.mentorHint,
     answers: answerSet(correct, wrong),
     solution: correct,
     lesson,
@@ -336,6 +337,7 @@ export function makeQuestionBank(
     lesson?: string
     source?: string
     generated?: boolean
+    mentorHint?: string
   }>,
 ): Question[] {
   return definitions.map((definition) =>
@@ -350,6 +352,7 @@ export function makeQuestionBank(
       definition.lesson,
       definition.source,
       definition.generated,
+      definition.mentorHint,
     ),
   )
 }

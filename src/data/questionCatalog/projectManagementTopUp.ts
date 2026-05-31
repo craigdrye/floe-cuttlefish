@@ -11,6 +11,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'What a charter is for',
     prompt: 'A sponsor asks why the project even needs a charter before work starts. What is the charter\'s primary job?',
     correct: 'It formally authorizes the project, names the sponsor, and grants the project manager authority to apply resources',
+    mentorHint: 'Think about where a project gets permission to exist before detailed planning begins. A charter is about authorization, sponsorship, and authority; detailed schedules and lessons learned belong to later phases.',
     wrong: [
       miss('It lists every task and its exact duration so the schedule is locked before kickoff', 'That is a detailed schedule, built later. A charter authorizes the work and sets high-level direction; it does not freeze a task list.', 'Think authority and authorization, not a Gantt chart.'),
       miss('It is the legal contract that binds external vendors to delivery dates', 'Vendor obligations live in procurement contracts, not the charter. The charter is an internal authorizing document.', 'Separate internal authorization from external contracts.'),
@@ -26,6 +27,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Business case versus requirement',
     prompt: 'During initiation, which statement is a business case rather than a requirement?',
     correct: 'Reducing manual invoice handling should save roughly $400k a year, justifying the build',
+    mentorHint: 'Separate the reason to invest from the thing to build. A business case argues that the project is worth funding, while requirements define capabilities, constraints, or performance targets for the solution.',
     wrong: [
       miss('The system must export invoices as PDF/A-3 files', 'That is a requirement: a specific capability the solution must provide. A business case explains why the project is worth funding.', 'Business case answers "why fund this"; a requirement answers "what must it do".'),
       miss('The vendor API must respond within 500 milliseconds', 'That is a performance requirement. It describes how the solution must behave, not the value that justifies the investment.', 'Performance targets are requirements, not justification.'),
@@ -41,6 +43,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'The need under the solution',
     prompt: 'A stakeholder writes: "We need a Slack bot that pings managers about overdue tasks." What is the underlying requirement worth confirming first?',
     correct: 'Managers need timely awareness of overdue tasks so they can intervene; a Slack bot is one possible solution',
+    mentorHint: 'Stakeholder requests often arrive as solutions wearing requirement clothing. Translate the proposed feature back into the underlying need so you can compare multiple ways to satisfy it.',
     wrong: [
       miss('The team must build a Slack bot, because that is exactly what was requested', 'Taking the stated solution as the requirement skips diagnosis. The need is awareness of overdue work; email, a dashboard, or a digest might serve it better.', 'A solution disguised as a need locks you into one design.'),
       miss('Slack must be adopted company-wide before any reminder feature is possible', 'That invents a far larger dependency. The actual need is overdue-task awareness, which does not require a Slack rollout.', 'Do not inflate scope to fit one tool.'),
@@ -56,6 +59,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'The 100 percent rule',
     prompt: 'When decomposing a project into a work breakdown structure, what does the "100 percent rule" require?',
     correct: 'The WBS captures 100 percent of the project scope — all deliverables — and child elements sum to their parent with nothing extra and nothing missing',
+    mentorHint: 'A WBS is a scope decomposition, so the test is completeness and containment. Each child group should add up exactly to its parent: no hidden work omitted and no extra work invented.',
     wrong: [
       miss('Every team member must be 100 percent allocated to the project', 'That is a resourcing constraint, not the WBS rule. The 100 percent rule is about scope completeness, not how busy people are.', 'The rule governs scope coverage, not utilization.'),
       miss('Each work package must be exactly 100 percent complete before the next one begins', 'That describes a strict sequential workflow, which is not what the rule means and is often undesirable. The rule is about decomposition completeness.', 'It is about totality of scope, not task ordering.'),
@@ -71,6 +75,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Acceptance criteria that hold up',
     prompt: 'Which acceptance criterion is strong enough to settle a dispute at delivery?',
     correct: 'The report exports to CSV in under 10 seconds for datasets up to 1 million rows, verified on the staging environment',
+    mentorHint: 'Good acceptance criteria reduce endgame arguments because they are observable before emotions rise. Look for a measurable condition, expected result, environment, and threshold that can be tested.',
     wrong: [
       miss('The report should feel fast and look professional', 'Feel and look are subjective; two reasonable people will disagree at acceptance. Strong criteria are testable and measurable.', 'If it cannot be measured, it cannot be accepted cleanly.'),
       miss('The report will be the best in its category', 'Best is a comparison with no defined benchmark or test. You cannot pass or fail against an undefined superlative.', 'Superlatives are not pass/fail conditions.'),
@@ -86,6 +91,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'The RACI golden rule',
     prompt: 'A draft RACI matrix lists two people as Accountable for the data-migration deliverable. Why is this a problem?',
     correct: 'A deliverable should have exactly one Accountable owner; splitting accountability means each assumes the other is watching, so it effectively disappears',
+    mentorHint: 'RACI distinguishes doers from final ownership. Multiple people can contribute, but final accountability needs a single named person so decisions, escalation, and acceptance do not diffuse.',
     wrong: [
       miss('Two Accountable owners is ideal because it provides redundancy if one is unavailable', 'Redundancy of doers (Responsible) is fine, but two final owners create a decision bottleneck and diffuse accountability. The single-A rule prevents exactly this.', 'Back up the doers, not the final authority.'),
       miss('It is fine as long as no one is marked Responsible for the same task', 'Every task still needs Responsible doers; the issue is the duplicate Accountable. You have not fixed the rule violation by removing the R.', 'The violation is two A\'s, not a missing R.'),
@@ -101,6 +107,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Power/interest grid',
     prompt: 'On a power/interest stakeholder grid, how should you treat a stakeholder with high power but low interest in the project?',
     correct: 'Keep them satisfied — give concise, well-targeted updates without overwhelming them, because they can influence outcomes if dissatisfied',
+    mentorHint: 'Stakeholder communication should match influence and appetite for detail. High power means they can affect the project, while low interest means they need concise confidence-building updates rather than constant involvement.',
     wrong: [
       miss('Ignore them entirely, because low interest means they will not engage', 'Low interest plus high power is dangerous to ignore: if they become dissatisfied they can derail the project with a single decision.', 'Power matters even when interest is low.'),
       miss('Flood them with every detailed status report so they cannot claim they were uninformed', 'Over-communicating to a low-interest, high-power stakeholder wastes their attention and yours, and risks them tuning out the message that matters.', 'Match volume to interest; keep it concise.'),
@@ -116,6 +123,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'What a decision log is for',
     prompt: 'A project keeps relitigating choices it already made weeks ago. Which artifact most directly prevents this?',
     correct: 'A decision log that records each decision, the rationale, who made it, and when',
+    mentorHint: 'When teams reopen settled questions, the missing asset is often organizational memory. A decision log preserves the decision, rationale, owner, and date so later debate can start from the record instead of memory.',
     wrong: [
       miss('A risk register, which lists possible future problems and their owners', 'A risk register tracks uncertainty that has not happened. Relitigated decisions are settled choices; you need a record of decisions and their rationale.', 'Risks are future; decisions are already made.'),
       miss('A burndown chart showing remaining work over time', 'A burndown shows progress against scope, not the history and rationale of decisions. It will not stop the team from reopening settled questions.', 'Progress tracking is not decision memory.'),
@@ -131,6 +139,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Critical path with a fork',
     prompt: 'Activities: A (4 days) then both B (6 days) and C (3 days) can start; D (2 days) starts only after both B and C finish. What is the shortest possible project duration?',
     correct: '12 days',
+    mentorHint: 'Draw the dependency network and remember that parallel branches do not simply add together. The branch that takes longer controls the merge point, then downstream work starts after both branches are complete.',
     wrong: [
       miss('9 days', '9 days takes A + C + D (4 + 3 + 2) and ignores B. But D waits for B too, and B is longer than C, so the path through B governs.', 'The longer parallel branch sets the finish, not the shorter one.'),
       miss('15 days', '15 days adds B and C in series (4 + 6 + 3 + 2). B and C run in parallel after A, so you do not add both.', 'Parallel branches do not stack; take the longer one.'),
@@ -146,6 +155,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'How much float does C have',
     prompt: 'Using the same network — A (4d), then B (6d) and C (3d) in parallel, then D (2d) after both — how much total float does activity C have?',
     correct: '3 days',
+    mentorHint: 'Float is slack before a task delays the project finish, not the task duration itself. Compare C to the longer parallel branch that D must also wait for; the gap between them is C’s room to slip.',
     wrong: [
       miss('0 days', 'Zero float would mean C is on the critical path. But C (3 days) shares the same window as B (6 days), so C can slip before it affects D.', 'Only critical-path activities have zero float.'),
       miss('6 days', '6 days is B\'s duration, not C\'s slack. Float is how long C can slip before delaying the project, set by the gap to its parallel path.', 'Float is a slack window, not another task\'s length.'),
@@ -161,6 +171,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'PERT expected duration',
     prompt: 'A task is estimated at 4 days optimistic, 10 days most likely, and 22 days pessimistic. What is the PERT (beta) expected duration?',
     correct: '11 days',
+    mentorHint: 'PERT is a weighted three-point estimate, giving the most-likely value extra influence while still accounting for optimistic and pessimistic tails. Use the 1-4-1 weighting pattern before dividing by the total weight.',
     wrong: [
       miss('12 days', '12 is the simple average of 4, 10, and 22. PERT weights the most likely estimate four times: (4 + 4x10 + 22) / 6 = 66 / 6 = 11.', 'PERT is a weighted average, not a plain mean.'),
       miss('10 days', '10 is the most likely value alone. PERT blends all three estimates, pulling the answer slightly above the mode because the pessimistic tail is long.', 'The mode is one input, not the PERT result.'),
@@ -176,6 +187,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Fast-track or crash',
     prompt: 'The launch must move up two weeks. You decide to overlap design and build that were planned sequentially, rather than add staff. What schedule-compression technique is this, and its main side effect?',
     correct: 'Fast-tracking — running activities in parallel that were sequential, which adds rework risk but not direct cost',
+    mentorHint: 'Schedule compression usually trades against either cost or risk. If you add people or money to critical work, that is one technique; if you overlap work that used to be sequential, the main danger is rework.',
     wrong: [
       miss('Crashing — adding resources to critical tasks, which raises cost but lowers risk', 'Crashing means throwing money/people at the task. Overlapping sequential work with the same team is fast-tracking; its side effect is rework risk, not added cost.', 'Adding people is crashing; overlapping phases is fast-tracking.'),
       miss('Scope reduction — cutting deliverables to hit the date with no downside', 'Overlapping phases keeps the full scope. You changed the sequence, not the deliverables, and there is a real downside: rework risk.', 'You overlapped work; you did not cut it.'),
@@ -191,6 +203,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Risk or issue',
     prompt: 'The vendor just told you the data feed went down this morning and your test run failed. In project terms, is this a risk or an issue, and where does it go?',
     correct: 'It is an issue — it has already happened — so it belongs in the issue log with an owner and a resolution path',
+    mentorHint: 'The fastest way to classify this is by timing. A risk is uncertain and future-facing; once the event has happened and is affecting the project, it needs ownership and resolution tracking.',
     wrong: [
       miss('It is a risk, so add it to the risk register with a probability and impact score', 'A risk is something that might happen. This already happened and is affecting work now, which makes it an issue, not a risk.', 'If it has occurred, it is no longer a probability.'),
       miss('It is neither; vendor problems are outside the project and need no log entry', 'A failed test run directly affects your schedule and quality, so it is your issue to track and drive to resolution regardless of who caused it.', 'Impact on your project makes it your issue.'),
@@ -206,6 +219,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Choosing a risk response',
     prompt: 'A key risk is that a small specialist subcontractor might go out of business mid-project. You sign a fixed-price contract with a larger firm to do that work instead. Which risk response strategy is this?',
     correct: 'Transfer — shifting the impact and ownership of the risk to a third party better able to bear it',
+    mentorHint: 'Risk responses differ by what happens to the risk: remove it, move it, reduce it, or knowingly live with it. Contracts and insurance often change who carries the financial or delivery impact rather than eliminating the uncertainty.',
     wrong: [
       miss('Avoid — eliminating the risk by removing its cause entirely', 'Avoiding would mean changing the plan so the risky work is not needed at all. Here the work still happens; you moved who bears the risk, which is transfer.', 'Avoid removes the work; transfer moves who carries it.'),
       miss('Mitigate — reducing the probability or impact while keeping ownership', 'Mitigation lowers the risk but you still own it. A fixed-price contract hands the cost-overrun and continuity risk to the larger firm, so it is transfer.', 'Mitigation keeps the risk; transfer hands it off.'),
@@ -221,6 +235,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Contingency versus management reserve',
     prompt: 'Your budget has $50k set aside for identified risks in the register, and a separate pool the sponsor controls for unforeseen work. What are these two pools called?',
     correct: 'The $50k is contingency reserve (for known risks, within the PM\'s authority); the sponsor\'s pool is management reserve (for unknown unknowns)',
+    mentorHint: 'Ask whether the uncertainty is already identified and planned for, or genuinely unforeseen. Project managers typically control reserve for known risks, while sponsor-level reserve protects against work outside the known risk picture.',
     wrong: [
       miss('Both are contingency reserve, just held by two different people', 'They are distinct: contingency covers identified risks and is the PM\'s to use; management reserve covers unidentified risks and needs higher authority to release.', 'Known vs unknown risks use different reserves.'),
       miss('The $50k is management reserve and the sponsor\'s pool is contingency reserve', 'It is the reverse. Contingency is tied to specific known risks (the register); management reserve is the sponsor-controlled buffer for the unforeseen.', 'Reserve tied to listed risks is contingency.'),
@@ -236,6 +251,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Sprint length limit',
     prompt: 'Per the 2020 Scrum Guide, what is the maximum length of a Sprint?',
     correct: 'One month or less',
+    mentorHint: 'Scrum uses short, fixed feedback loops so the plan cannot drift too far from reality before inspection. Remember the guide sets an upper bound, even though teams often choose shorter cadences in practice.',
     wrong: [
       miss('Exactly two weeks, with no flexibility', 'Two weeks is a common choice, but the Guide sets a maximum of one month and lets the team pick a consistent length at or below it. It is not fixed at two weeks.', 'Two weeks is popular, not mandated.'),
       miss('Up to one quarter (three months) for larger initiatives', 'A quarter is far too long for the fast feedback Scrum is built on. The cap is one month precisely to limit how long the plan can drift from reality.', 'Long Sprints defeat the point of short feedback loops.'),
@@ -251,6 +267,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'What the Scrum Master actually does',
     prompt: 'A new Scrum Master spends each Daily Scrum collecting status from Developers and assigning them tasks. Why does this miss the role?',
     correct: 'The Scrum Master serves the team by coaching and removing impediments; the Developers self-manage their own work, and the Daily Scrum is theirs, not a status report to a boss',
+    mentorHint: 'Scrum deliberately separates facilitation and coaching from command-and-control task assignment. The Daily Scrum belongs to Developers as a planning checkpoint around the Sprint Goal, not as a reporting meeting for a manager.',
     wrong: [
       miss('It is correct — the Scrum Master is the project manager who directs the Developers daily', 'Scrum has no command-and-control manager directing daily work. The Scrum Master is a servant-leader who enables the team; Developers decide how to do the work.', 'Scrum Master coaches; it is not a task-assigning boss.'),
       miss('The only mistake is the timing; status collection should happen in the Sprint Review instead', 'The Sprint Review inspects the Increment with stakeholders, not a daily status roll-up either. The deeper error is treating a self-management event as a reporting line.', 'The problem is the role, not just the meeting choice.'),
@@ -266,6 +283,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Daily Scrum timebox and purpose',
     prompt: 'The Daily Scrum keeps running 40 minutes as the team designs solutions to problems raised. What is the correct fix?',
     correct: 'Keep the Daily Scrum to its 15-minute timebox for the Developers to inspect progress and re-plan, and take deep problem-solving to a separate conversation afterward',
+    mentorHint: 'Timeboxes protect the purpose of an event. The Daily Scrum is for inspection and adaptation of the day’s plan; detailed design or troubleshooting can still happen, but with the relevant people after the event.',
     wrong: [
       miss('Extend the Daily Scrum to 45 minutes so problems can be fully solved in one place', 'The Daily Scrum is timeboxed to 15 minutes by design; expanding it turns a quick re-plan into a daily meeting. Detailed problem-solving belongs in a follow-up.', 'Protect the 15-minute box; spin off the deep dives.'),
       miss('Cancel the Daily Scrum, since the real work is the problem-solving discussion', 'The Daily Scrum still adds value as a focused inspect-and-adapt checkpoint. The issue is overrunning it, not that it is worthless.', 'Trim the event; do not delete it.'),
@@ -281,6 +299,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Little\'s Law on a Kanban board',
     prompt: 'A Kanban team averages 20 items of work in progress and completes 5 items per week. By Little\'s Law, what is the average cycle time per item?',
     correct: '4 weeks',
+    mentorHint: 'Little’s Law connects flow metrics as a ratio: work in progress, throughput, and cycle time. If many items are open and only a few finish each week, each item spends longer in the system, which is why WIP limits matter.',
     wrong: [
       miss('0.25 weeks', '0.25 inverts the formula (throughput / WIP = 5/20). Little\'s Law is cycle time = WIP / throughput = 20 / 5 = 4 weeks.', 'Divide WIP by throughput, not the other way around.'),
       miss('25 weeks', '25 multiplies WIP by throughput (20 x 5). Little\'s Law divides: 20 / 5 = 4 weeks.', 'It is a division, not a product.'),
@@ -296,6 +315,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Agile in costume',
     prompt: 'A team holds Daily Scrums and uses a board, but scope, deadline, and budget were all fixed and signed off up front and cannot change. What is the honest description?',
     correct: 'This is essentially predictive delivery wearing agile ceremonies; without the ability to adapt scope based on feedback, the iteration is cosmetic',
+    mentorHint: 'Agile is defined by inspect-and-adapt behavior, not by the presence of ceremonies. If the team cannot change scope or priorities based on learning, daily meetings and boards do not create real adaptability.',
     wrong: [
       miss('It is fully agile, because the team runs the standard Scrum events', 'Ceremonies alone do not make a process agile. Agile depends on being able to adapt scope as you learn; a frozen scope-date-budget removes that core ability.', 'Events without adaptability are theater.'),
       miss('It is hybrid, the best of both worlds, by definition', 'Hybrid deliberately combines predictive and adaptive elements where each fits. Locking everything and adding standups is not a designed hybrid; it is predictive with extra meetings.', 'Hybrid is intentional blending, not accidental contradiction.'),
@@ -311,6 +331,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Who carries the cost risk',
     prompt: 'Scope is well-defined and you want the vendor — not your budget — to absorb any cost overruns. Which contract type fits best?',
     correct: 'Firm fixed price, because the seller commits to a set price and bears the risk of cost overruns',
+    mentorHint: 'Contract type is a risk allocation decision. When scope is clear and the buyer wants cost certainty, look for the structure that makes overruns the seller’s problem rather than reimbursing every extra hour or cost.',
     wrong: [
       miss('Cost-plus (cost-reimbursable), because the vendor is paid its costs plus a fee', 'Under cost-plus the buyer reimburses actual costs, so the buyer carries the overrun risk — the opposite of what you want with a well-defined scope.', 'Cost-plus puts the overrun risk on the buyer.'),
       miss('Time and materials, paying an hourly rate plus materials with no cap', 'Open T&M leaves cost risk with the buyer because hours and materials can climb. With a known scope, fixed price transfers that risk to the seller.', 'Uncapped T&M leaves cost risk with you.'),
@@ -326,6 +347,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Capping a T&M contract',
     prompt: 'You must use time and materials because the scope is genuinely unclear, but finance is nervous about open-ended spend. What clause most directly addresses that concern?',
     correct: 'A not-to-exceed (ceiling) clause that caps total billing, so the vendor cannot bill beyond an agreed maximum without approval',
+    mentorHint: 'Time and materials preserves flexibility, but it exposes the buyer to growing hours. To keep flexibility while controlling financial risk, look for a contractual ceiling rather than a clause about lateness or rate changes.',
     wrong: [
       miss('A clause converting it to cost-plus once spending gets high', 'Cost-plus also reimburses actual costs, so it does not cap the buyer\'s exposure. A not-to-exceed ceiling is what bounds the spend.', 'Cost-plus does not put a lid on total cost.'),
       miss('A clause requiring the vendor to lower its hourly rate every month', 'Falling rates do not bound total cost if hours keep growing. The protection finance wants is a hard ceiling on total billing.', 'Rate cuts do not cap a runaway hour count.'),
@@ -341,6 +363,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Reading a CPI of 0.8',
     prompt: 'A monthly report shows a Cost Performance Index (CPI) of 0.8. What does this tell you?',
     correct: 'The project is over budget: for every dollar spent, only 80 cents of planned work was earned',
+    mentorHint: 'Earned value indices compare value earned to a baseline quantity. CPI is cost efficiency, so values below 1 signal unfavorable cost performance; do not confuse it with schedule progress or percent complete.',
     wrong: [
       miss('The project is under budget, since 0.8 is close to 1 and any positive value is healthy', 'CPI below 1 is unfavorable. At 0.8 the project earned only $0.80 of value per $1 spent — it is over budget, not under.', 'CPI under 1 means over budget, not under.'),
       miss('The project is ahead of schedule, since CPI measures timing', 'CPI is a cost measure (EV / AC). Schedule performance is the separate SPI (EV / PV). A CPI of 0.8 says nothing directly about timing.', 'CPI is cost; SPI is schedule. Do not swap them.'),
@@ -356,6 +379,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'SPI above 1 with a catch',
     prompt: 'A project reports SPI = 1.1, yet the launch date is still at risk. How is this possible?',
     correct: 'SPI > 1 means more value than planned has been earned overall, but the work that is ahead may be off the critical path while a critical task lags',
+    mentorHint: 'SPI is an aggregate earned-value measure, while launch risk is often governed by the critical path. A project can look healthy overall if non-critical work is ahead, even when one date-driving dependency is slipping.',
     wrong: [
       miss('It is impossible; SPI above 1 guarantees the project will finish on time', 'SPI is an aggregate value measure, not a critical-path test. You can be ahead on non-critical work while a critical activity slips, putting the date at risk.', 'Aggregate value can hide a critical-path slip.'),
       miss('SPI above 1 actually means behind schedule, so the date risk is expected', 'SPI above 1 means ahead by the value measure, not behind. The subtlety is that overall value progress can mask a lagging critical task.', 'SPI > 1 is favorable; the catch is where the work sits.'),

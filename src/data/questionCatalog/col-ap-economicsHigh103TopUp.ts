@@ -11,6 +11,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Basic Economic Concepts',
     title: 'Opportunity cost of a choice',
     prompt: 'A student has one free evening and can either study for an economics exam or work a shift earning $40. She chooses to study. What is the opportunity cost of studying?',
+    mentorHint: 'Ask what was given up by choosing to study.',
     correct: 'The $40 in wages she gives up by not working',
     wrong: [
       miss('Zero, because studying does not cost any money', 'Opportunity cost includes forgone benefits, not just out-of-pocket money spent.', 'Ask what was given up by choosing to study.'),
@@ -26,6 +27,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Basic Economic Concepts',
     title: 'Comparative advantage and trade',
     prompt: 'In one hour, Country A can produce 10 shirts or 5 computers, and Country B can produce 4 shirts or 4 computers. Which country has a comparative advantage in computers?',
+    mentorHint: 'Compare the shirts given up per computer in each country.',
     correct: 'Country B, because its opportunity cost per computer is 1 shirt',
     wrong: [
       miss('Country A, because it can produce more computers per hour', 'Comparative advantage depends on opportunity cost, not absolute output.', 'Compare the shirts given up per computer in each country.'),
@@ -41,6 +43,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Basic Economic Concepts',
     title: 'Production possibilities and increasing costs',
     prompt: 'A production possibilities curve (PPC) that is bowed outward (concave to the origin) reflects which of the following?',
+    mentorHint: 'A curved PPC means the trade-off ratio changes.',
     correct: 'Increasing opportunity cost as more of one good is produced',
     wrong: [
       miss('Constant opportunity cost between the two goods', 'Constant opportunity cost produces a straight-line PPC, not a bowed one.', 'A curved PPC means the trade-off ratio changes.'),
@@ -56,6 +59,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Basic Economic Concepts',
     title: 'Marginal analysis decision rule',
     prompt: 'A profit-maximizing firm should expand an activity as long as which condition holds?',
+    mentorHint: 'Optimization happens at the margin, not in totals.',
     correct: 'Marginal benefit exceeds marginal cost',
     wrong: [
       miss('Total benefit exceeds total cost', 'A firm can still gain by stopping earlier; total comparison does not identify the optimum.', 'Optimization happens at the margin, not in totals.'),
@@ -72,6 +76,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Supply and Demand',
     title: 'Change in demand versus quantity demanded',
     prompt: 'The price of coffee falls and consumers buy more coffee. Holding everything else constant, this is best described as:',
+    mentorHint: 'Shifts come from non-price determinants.',
     correct: 'An increase in quantity demanded (a movement along the demand curve)',
     wrong: [
       miss('An increase in demand (a rightward shift of the curve)', 'A price change alone moves along the curve; it does not shift it.', 'Shifts come from non-price determinants.'),
@@ -87,6 +92,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Supply and Demand',
     title: 'Determinants that shift demand',
     prompt: 'Good X and Good Y are substitutes. If the price of Good Y rises sharply, what happens to the demand for Good X?',
+    mentorHint: 'Substitutes can replace each other in consumption.',
     correct: 'Demand for Good X increases (shifts right)',
     wrong: [
       miss('Demand for Good X decreases (shifts left)', 'That would be true for complements, not substitutes.', 'Substitutes can replace each other in consumption.'),
@@ -102,6 +108,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Supply and Demand',
     title: 'Effect of a binding price ceiling',
     prompt: 'A government sets a rent ceiling below the equilibrium rent in a housing market. What is the most likely result?',
+    mentorHint: 'A price ceiling sits below equilibrium, not above it.',
     correct: 'A shortage of rental housing because quantity demanded exceeds quantity supplied',
     wrong: [
       miss('A surplus of rental housing as landlords supply more units', 'A below-equilibrium price reduces quantity supplied and raises quantity demanded.', 'A price ceiling sits below equilibrium, not above it.'),
@@ -117,6 +124,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Supply and Demand',
     title: 'Simultaneous shifts and indeterminate outcomes',
     prompt: 'In a market, demand increases and supply decreases at the same time. What can we conclude about the new equilibrium?',
+    mentorHint: 'Track which variable both shifts agree on.',
     correct: 'Equilibrium price rises, but the change in quantity is indeterminate',
     wrong: [
       miss('Both equilibrium price and quantity rise', 'The two shifts push quantity in opposite directions, so its change is ambiguous.', 'Track which variable both shifts agree on.'),
@@ -133,6 +141,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Elasticity',
     title: 'Total revenue and price elasticity of demand',
     prompt: 'A firm raises its price and finds that its total revenue increases. This implies that demand for its product over this range is:',
+    mentorHint: 'Recall the total-revenue test direction.',
     correct: 'Price inelastic (elasticity less than 1 in absolute value)',
     wrong: [
       miss('Price elastic (elasticity greater than 1)', 'If demand were elastic, a price increase would reduce total revenue.', 'Recall the total-revenue test direction.'),
@@ -148,6 +157,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Elasticity',
     title: 'Cross-price elasticity sign',
     prompt: 'The cross-price elasticity of demand between Good A and Good B is calculated to be negative. What does this indicate about the two goods?',
+    mentorHint: 'Check the sign convention for cross-price elasticity.',
     correct: 'They are complements',
     wrong: [
       miss('They are substitutes', 'Substitutes have a positive cross-price elasticity, not a negative one.', 'Check the sign convention for cross-price elasticity.'),
@@ -163,6 +173,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Elasticity',
     title: 'Determinants of price elasticity of supply',
     prompt: 'Which factor tends to make the supply of a good MORE price elastic?',
+    mentorHint: 'Think about how easily output can be expanded.',
     correct: 'A longer time period for producers to adjust output',
     wrong: [
       miss('Production that requires highly specialized, scarce inputs', 'Specialized inputs make it hard to expand output, lowering supply elasticity.', 'Think about how easily output can be expanded.'),
@@ -178,6 +189,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Elasticity',
     title: 'Income elasticity and inferior goods',
     prompt: 'As consumer incomes rise, the quantity demanded of a particular brand of instant noodles falls. The income elasticity of demand for this good is therefore:',
+    mentorHint: 'Check the sign matching falling demand to rising income.',
     correct: 'Negative, indicating an inferior good',
     wrong: [
       miss('Positive, indicating a normal good', 'Demand falls as income rises, which gives a negative income elasticity.', 'Check the sign matching falling demand to rising income.'),
@@ -194,6 +206,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Production, Cost, and Perfect Competition',
     title: 'Law of diminishing marginal returns',
     prompt: 'A firm with a fixed amount of capital keeps adding workers. Marginal product of labor first rises, then begins to fall as more workers are hired. The falling portion reflects:',
+    mentorHint: 'Note that capital is fixed here, so this is a short-run effect.',
     correct: 'Diminishing marginal returns to the variable input',
     wrong: [
       miss('Diseconomies of scale', 'Diseconomies of scale occur in the long run when all inputs vary, not with fixed capital.', 'Note that capital is fixed here, so this is a short-run effect.'),
@@ -209,6 +222,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Production, Cost, and Perfect Competition',
     title: 'Relationship between marginal and average cost',
     prompt: 'When a firm\'s marginal cost (MC) is below its average total cost (ATC), what is happening to ATC as output increases?',
+    mentorHint: 'Think of how a below-average new value affects an average.',
     correct: 'ATC is falling',
     wrong: [
       miss('ATC is rising', 'When MC is below ATC, the average is being pulled down, so ATC falls.', 'Think of how a below-average new value affects an average.'),
@@ -224,6 +238,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Production, Cost, and Perfect Competition',
     title: 'Profit maximization in perfect competition',
     prompt: 'A perfectly competitive firm faces a market price of $8. To maximize profit, it should produce the quantity where:',
+    mentorHint: 'Use the MR equals MC rule.',
     correct: 'Marginal cost equals $8',
     wrong: [
       miss('Average total cost is at its minimum', 'Minimum ATC sets the break-even price, not the profit-maximizing quantity at a given price.', 'Use the MR equals MC rule.'),
@@ -239,6 +254,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Production, Cost, and Perfect Competition',
     title: 'Shutdown decision in the short run',
     prompt: 'In the short run, a competitive firm should shut down production immediately when price falls below:',
+    mentorHint: 'Distinguish the loss-minimizing range from the shutdown point.',
     correct: 'Average variable cost (AVC)',
     wrong: [
       miss('Average total cost (ATC)', 'Below ATC the firm loses money but should keep operating until price drops below AVC.', 'Distinguish the loss-minimizing range from the shutdown point.'),
@@ -254,6 +270,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Production, Cost, and Perfect Competition',
     title: 'Long-run equilibrium in perfect competition',
     prompt: 'In long-run equilibrium, a perfectly competitive firm earns:',
+    mentorHint: 'Free entry and exit drive profit to a specific level.',
     correct: 'Zero economic profit (a normal profit)',
     wrong: [
       miss('Positive economic profit that persists indefinitely', 'Positive economic profit attracts entry, which eliminates it in the long run.', 'Free entry and exit drive profit to a specific level.'),
@@ -270,6 +287,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Imperfect Competition',
     title: 'Monopoly price and marginal revenue',
     prompt: 'For a single-price monopolist, marginal revenue is:',
+    mentorHint: 'A monopolist must lower price to sell more.',
     correct: 'Less than price at every output level beyond the first unit',
     wrong: [
       miss('Equal to price at every output level', 'That is true only for a price taker in perfect competition, not a monopolist.', 'A monopolist must lower price to sell more.'),
@@ -285,6 +303,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Imperfect Competition',
     title: 'Deadweight loss from monopoly',
     prompt: 'Compared with a perfectly competitive market, a single-price monopoly typically creates deadweight loss because it:',
+    mentorHint: 'Market power leads to lower output.',
     correct: 'Produces less output and charges a higher price than the efficient level',
     wrong: [
       miss('Produces more output than the competitive level', 'Monopolies restrict output to raise price, producing less, not more.', 'Market power leads to lower output.'),
@@ -300,6 +319,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Imperfect Competition',
     title: 'Monopolistic competition in the long run',
     prompt: 'A firm in monopolistic competition in long-run equilibrium produces where:',
+    mentorHint: 'Allocative efficiency is not reached in monopolistic competition.',
     correct: 'Price equals average total cost, but price exceeds marginal cost',
     wrong: [
       miss('Price equals marginal cost, achieving allocative efficiency', 'Differentiated products give downward-sloping demand, so price stays above MC.', 'Allocative efficiency is not reached in monopolistic competition.'),
@@ -315,6 +335,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Imperfect Competition',
     title: 'Nash equilibrium in a payoff matrix',
     prompt: 'Two firms each choose to advertise or not. In a one-shot game, both firms have a dominant strategy to advertise, yet both would earn more if neither advertised. This situation is an example of:',
+    mentorHint: 'This scenario is about strategic interaction.',
     correct: 'A prisoner\'s dilemma',
     wrong: [
       miss('A perfectly contestable market', 'Contestability concerns ease of entry and exit, not strategic payoff structures.', 'This scenario is about strategic interaction.'),
@@ -331,6 +352,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Factor Markets',
     title: 'Marginal revenue product of labor',
     prompt: 'A firm in a competitive labor market hires workers up to the point where:',
+    mentorHint: 'Convert output into revenue before comparing to the wage.',
     correct: 'The marginal revenue product of labor equals the wage',
     wrong: [
       miss('The marginal product of labor equals the wage', 'The hiring rule uses marginal revenue product (in dollars), not physical product.', 'Convert output into revenue before comparing to the wage.'),
@@ -346,6 +368,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Factor Markets',
     title: 'Derived demand for labor',
     prompt: 'The demand for labor is described as a "derived demand" because it depends on:',
+    mentorHint: 'Demand comes from the output side, not the worker side.',
     correct: 'The demand for the goods and services that the labor helps produce',
     wrong: [
       miss('The number of workers willing to supply their labor', 'That describes labor supply, not why labor demand is derived.', 'Demand comes from the output side, not the worker side.'),
@@ -361,6 +384,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Factor Markets',
     title: 'Monopsony in the labor market',
     prompt: 'Compared with a competitive labor market, a profit-maximizing monopsonist employer tends to:',
+    mentorHint: 'A monopsonist faces an upward-sloping labor supply curve.',
     correct: 'Hire fewer workers and pay a lower wage',
     wrong: [
       miss('Hire more workers and pay a higher wage', 'Market power over hiring leads a monopsonist to restrict employment, not expand it.', 'A monopsonist faces an upward-sloping labor supply curve.'),
@@ -377,6 +401,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Market Failure and Government Intervention',
     title: 'Negative externality and overproduction',
     prompt: 'A factory emits pollution that harms nearby residents but does not pay for that harm. In an unregulated market, the good produced by this factory will be:',
+    mentorHint: 'Negative externalities push output too high.',
     correct: 'Overproduced relative to the socially optimal quantity',
     wrong: [
       miss('Underproduced relative to the socially optimal quantity', 'Underproduction is the result of a positive externality, not a negative one.', 'Negative externalities push output too high.'),
@@ -392,6 +417,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Market Failure and Government Intervention',
     title: 'Public goods and the free-rider problem',
     prompt: 'Which characteristics define a pure public good such as national defense?',
+    mentorHint: 'Public goods cannot easily exclude non-payers.',
     correct: 'It is non-rival and non-excludable in consumption',
     wrong: [
       miss('It is rival and excludable in consumption', 'Those are the features of a private good, not a public good.', 'Public goods cannot easily exclude non-payers.'),
@@ -407,6 +433,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Market Failure and Government Intervention',
     title: 'Per-unit tax and deadweight loss',
     prompt: 'A government imposes a per-unit tax on a good with upward-sloping supply and downward-sloping demand. The tax creates deadweight loss because it:',
+    mentorHint: 'Distinguish transferred surplus from destroyed surplus.',
     correct: 'Reduces the quantity traded below the efficient level, eliminating mutually beneficial trades',
     wrong: [
       miss('Transfers surplus from consumers to the government', 'A transfer of surplus is not a loss; deadweight loss is surplus that disappears.', 'Distinguish transferred surplus from destroyed surplus.'),
@@ -422,6 +449,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Market Failure and Government Intervention',
     title: 'Tax incidence and elasticity',
     prompt: 'A per-unit tax is placed on a good whose demand is very inelastic and whose supply is relatively elastic. Who bears the larger share of the tax burden?',
+    mentorHint: 'Burden depends on relative elasticities, not legal collection.',
     correct: 'Consumers, because they are less responsive to price changes',
     wrong: [
       miss('Producers, because they collect and remit the tax', 'Who remits the tax does not determine who bears its economic burden.', 'Burden depends on relative elasticities, not legal collection.'),
@@ -438,6 +466,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Economic Indicators and the Business Cycle',
     title: 'What counts in GDP',
     prompt: 'Which of the following is included in the United States\' GDP for the current year?',
+    mentorHint: 'GDP measures new output, not resales.',
     correct: 'A new car manufactured and sold in the United States this year',
     wrong: [
       miss('The sale of a used car originally produced two years ago', 'GDP counts only current production; a used car was counted in a prior year.', 'GDP measures new output, not resales.'),
@@ -453,6 +482,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Economic Indicators and the Business Cycle',
     title: 'Real versus nominal GDP',
     prompt: 'Nominal GDP rose 6 percent over a year while the GDP deflator (price level) rose 4 percent. Approximately what happened to real GDP?',
+    mentorHint: 'Real growth strips out price changes.',
     correct: 'It rose about 2 percent',
     wrong: [
       miss('It rose about 10 percent', 'You subtract inflation from nominal growth, not add it.', 'Real growth strips out price changes.'),
@@ -468,6 +498,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Economic Indicators and the Business Cycle',
     title: 'Types of unemployment',
     prompt: 'A factory worker loses her job because a permanent decline in demand for the product makes her specific skills obsolete. This is an example of:',
+    mentorHint: 'Structural change makes certain skills obsolete.',
     correct: 'Structural unemployment',
     wrong: [
       miss('Frictional unemployment', 'Frictional unemployment is short-term job search, not a skills-mismatch from structural change.', 'Structural change makes certain skills obsolete.'),
@@ -483,6 +514,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Economic Indicators and the Business Cycle',
     title: 'Calculating the unemployment rate',
     prompt: 'In an economy, 150 million people are employed and 10 million are unemployed but actively seeking work. The unemployment rate is approximately:',
+    mentorHint: 'Labor force equals employed plus unemployed.',
     correct: 'About 6.25 percent',
     wrong: [
       miss('About 6.67 percent (10 divided by 150)', 'The denominator is the labor force, not just the employed.', 'Labor force equals employed plus unemployed.'),
@@ -498,6 +530,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Economic Indicators and the Business Cycle',
     title: 'Limitations of the Consumer Price Index',
     prompt: 'The Consumer Price Index (CPI) is sometimes said to overstate the true increase in the cost of living partly because of:',
+    mentorHint: 'Think about how the basket reacts to price changes.',
     correct: 'Substitution bias, since the fixed basket ignores consumers switching to cheaper goods',
     wrong: [
       miss('Its exclusion of all imported goods from the basket', 'The CPI does include many imported consumer goods, so this is not the bias.', 'Think about how the basket reacts to price changes.'),
@@ -514,6 +547,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'National Income and Price Determination',
     title: 'The spending multiplier',
     prompt: 'If the marginal propensity to consume (MPC) is 0.8, the simple spending multiplier is:',
+    mentorHint: 'The multiplier is 1 divided by (1 minus MPC).',
     correct: '5',
     wrong: [
       miss('0.8', 'That is the MPC itself, not the multiplier derived from it.', 'The multiplier is 1 divided by (1 minus MPC).'),
@@ -529,6 +563,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'National Income and Price Determination',
     title: 'Shifters of aggregate demand',
     prompt: 'Which of the following would shift the aggregate demand (AD) curve to the right?',
+    mentorHint: 'Distinguish movements along AD from shifts of AD.',
     correct: 'An increase in government spending',
     wrong: [
       miss('An increase in the overall price level', 'A price-level change moves along AD; it does not shift the curve.', 'Distinguish movements along AD from shifts of AD.'),
@@ -544,6 +579,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'National Income and Price Determination',
     title: 'Short-run aggregate supply shifters',
     prompt: 'A sharp rise in oil prices that increases production costs across the economy will:',
+    mentorHint: 'Rising costs reduce, not increase, supply.',
     correct: 'Shift short-run aggregate supply (SRAS) to the left',
     wrong: [
       miss('Shift short-run aggregate supply to the right', 'Higher input costs reduce supply at each price level, shifting SRAS left.', 'Rising costs reduce, not increase, supply.'),
@@ -559,6 +595,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'National Income and Price Determination',
     title: 'Recessionary gap',
     prompt: 'An economy is in short-run equilibrium with real GDP below its full-employment (potential) level. This situation is called a:',
+    mentorHint: 'Compare actual output to potential output.',
     correct: 'Recessionary (negative output) gap',
     wrong: [
       miss('Inflationary gap', 'An inflationary gap occurs when output is above potential, not below it.', 'Compare actual output to potential output.'),
@@ -574,6 +611,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'National Income and Price Determination',
     title: 'Fiscal policy to close an inflationary gap',
     prompt: 'To close an inflationary gap, the appropriate discretionary fiscal policy is:',
+    mentorHint: 'An inflationary gap needs less spending, not more.',
     correct: 'Decrease government spending or raise taxes (contractionary fiscal policy)',
     wrong: [
       miss('Increase government spending or cut taxes', 'That is expansionary policy, which would worsen an inflationary gap.', 'An inflationary gap needs less spending, not more.'),
@@ -590,6 +628,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'The Financial Sector',
     title: 'Functions of money',
     prompt: 'When a price tag on a sofa reads "$600," money is primarily serving as a:',
+    mentorHint: 'Here money is expressing a price, not changing hands.',
     correct: 'Unit of account',
     wrong: [
       miss('Medium of exchange', 'Medium of exchange is money\'s role when it is actually used to make a payment.', 'Here money is expressing a price, not changing hands.'),
@@ -605,6 +644,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'The Financial Sector',
     title: 'The money multiplier and reserve requirement',
     prompt: 'If the required reserve ratio is 10 percent, the maximum value of the simple money (deposit) multiplier is:',
+    mentorHint: 'The multiplier is 1 divided by the reserve ratio.',
     correct: '10',
     wrong: [
       miss('0.10', 'That is the reserve ratio itself, not its reciprocal.', 'The multiplier is 1 divided by the reserve ratio.'),
@@ -620,6 +660,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'The Financial Sector',
     title: 'Open market operations',
     prompt: 'To increase the money supply and lower interest rates, the central bank can conduct open market operations by:',
+    mentorHint: 'Buying adds reserves; selling removes them.',
     correct: 'Buying government bonds from banks and the public',
     wrong: [
       miss('Selling government bonds to banks and the public', 'Selling bonds drains reserves and shrinks the money supply, raising rates.', 'Buying adds reserves; selling removes them.'),
@@ -635,6 +676,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'The Financial Sector',
     title: 'Money market and interest rates',
     prompt: 'In the money market, if the central bank increases the money supply while money demand is unchanged, the nominal interest rate will:',
+    mentorHint: 'More money available pushes its price (the rate) down.',
     correct: 'Fall',
     wrong: [
       miss('Rise', 'An increased money supply lowers the interest rate; it does not raise it.', 'More money available pushes its price (the rate) down.'),
@@ -651,6 +693,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Long-Run Consequences of Stabilization Policies',
     title: 'Crowding out',
     prompt: 'Expansionary fiscal policy financed by government borrowing can reduce private investment through:',
+    mentorHint: 'Crowding out works through interest rates.',
     correct: 'The crowding-out effect, as higher interest rates discourage private borrowing',
     wrong: [
       miss('The multiplier effect, which reduces total spending', 'The multiplier amplifies spending; it does not reduce private investment.', 'Crowding out works through interest rates.'),
@@ -666,6 +709,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Long-Run Consequences of Stabilization Policies',
     title: 'The Phillips curve in the long run',
     prompt: 'According to mainstream theory, the long-run Phillips curve is:',
+    mentorHint: 'Long-run output returns to potential.',
     correct: 'Vertical at the natural rate of unemployment',
     wrong: [
       miss('Downward sloping, showing a permanent inflation-unemployment trade-off', 'That describes the short-run Phillips curve; the trade-off vanishes in the long run.', 'Long-run output returns to potential.'),
@@ -681,6 +725,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Long-Run Consequences of Stabilization Policies',
     title: 'Sources of long-run economic growth',
     prompt: 'Which of the following is most likely to increase an economy\'s long-run potential output (shift the long-run aggregate supply curve right)?',
+    mentorHint: 'Long-run growth comes from the supply side.',
     correct: 'An increase in the economy\'s stock of physical and human capital',
     wrong: [
       miss('A one-time increase in government transfer payments', 'Transfer payments may raise demand temporarily but do not expand productive capacity.', 'Long-run growth comes from the supply side.'),
@@ -696,6 +741,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Long-Run Consequences of Stabilization Policies',
     title: 'Loanable funds and the real interest rate',
     prompt: 'In the loanable funds market, an increase in private saving (with demand for funds unchanged) will:',
+    mentorHint: 'A larger supply of funds pushes the price of borrowing down.',
     correct: 'Lower the real interest rate and increase the quantity of funds borrowed',
     wrong: [
       miss('Raise the real interest rate and reduce borrowing', 'More saving increases the supply of funds, which lowers the rate.', 'A larger supply of funds pushes the price of borrowing down.'),
@@ -712,6 +758,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Open Economy: International Trade and Finance',
     title: 'Effect of currency depreciation on trade',
     prompt: 'If the United States dollar depreciates against the euro, the most likely effect is:',
+    mentorHint: 'Depreciation lowers the foreign price of domestic goods.',
     correct: 'United States exports to Europe become cheaper and exports increase',
     wrong: [
       miss('United States exports become more expensive and exports fall', 'A weaker dollar makes United States goods cheaper to Europeans, boosting exports.', 'Depreciation lowers the foreign price of domestic goods.'),
@@ -727,6 +774,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Open Economy: International Trade and Finance',
     title: 'Demand for a currency in the foreign exchange market',
     prompt: 'In the foreign exchange market, which of the following would increase the demand for the Japanese yen?',
+    mentorHint: 'Buying foreign goods supplies the home currency.',
     correct: 'Foreigners increasing their purchases of Japanese exports',
     wrong: [
       miss('Japanese residents buying more foreign goods', 'That increases the supply of yen (to buy foreign currency), not demand for yen.', 'Buying foreign goods supplies the home currency.'),
@@ -742,6 +790,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Open Economy: International Trade and Finance',
     title: 'Balance of payments accounts',
     prompt: 'A foreign company building a new factory in the United States is recorded primarily in the United States balance of payments under the:',
+    mentorHint: 'Investment flows belong to the financial account.',
     correct: 'Financial (capital) account as an inflow',
     wrong: [
       miss('Current account as an export', 'Building a factory is a foreign investment in assets, not a sale of goods or services.', 'Investment flows belong to the financial account.'),
@@ -757,6 +806,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Open Economy: International Trade and Finance',
     title: 'Interest rates and capital flows',
     prompt: 'If real interest rates in a country rise relative to those abroad, the most likely short-run effect on its currency is:',
+    mentorHint: 'Higher returns draw money in, not out.',
     correct: 'The currency appreciates as foreign investors buy domestic assets',
     wrong: [
       miss('The currency depreciates as investors flee the country', 'Higher relative returns attract capital inflows, which appreciate the currency.', 'Higher returns draw money in, not out.'),
@@ -773,6 +823,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Consumer Choice and Market Welfare',
     title: 'Utility maximization rule',
     prompt: 'A consumer maximizes utility from two goods, X and Y, when income is fully spent and:',
+    mentorHint: 'Divide marginal utility by price for each good.',
     correct: 'The marginal utility per dollar is equal across both goods',
     wrong: [
       miss('The marginal utility of X equals the marginal utility of Y', 'Prices differ, so equal marginal utilities (not per dollar) do not maximize utility.', 'Divide marginal utility by price for each good.'),
@@ -788,6 +839,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Consumer Choice and Market Welfare',
     title: 'Consumer surplus',
     prompt: 'Consumer surplus in a market is best described as:',
+    mentorHint: 'Surplus is the gap between willingness to pay and price.',
     correct: 'The difference between what consumers are willing to pay and what they actually pay',
     wrong: [
       miss('The total amount consumers spend on the good', 'Total spending is price times quantity, not the surplus consumers gain.', 'Surplus is the gap between willingness to pay and price.'),
@@ -803,6 +855,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Consumer Choice and Market Welfare',
     title: 'Allocative efficiency condition',
     prompt: 'A competitive market achieves allocative efficiency when output is produced up to the point where:',
+    mentorHint: 'Compare the benefit and cost of the last unit.',
     correct: 'Marginal social benefit equals marginal social cost',
     wrong: [
       miss('Total benefit equals total cost', 'Efficiency is a marginal condition; matching totals does not maximize net benefit.', 'Compare the benefit and cost of the last unit.'),
@@ -819,6 +872,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Economic Indicators and the Business Cycle',
     title: 'Expenditure approach to GDP',
     prompt: 'In the expenditure approach, GDP is calculated as the sum of consumption, investment, government purchases, and:',
+    mentorHint: 'Subtract imports from exports.',
     correct: 'Net exports (exports minus imports)',
     wrong: [
       miss('Gross exports only', 'GDP uses net exports; imports must be subtracted to avoid counting foreign production.', 'Subtract imports from exports.'),
@@ -834,6 +888,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'National Income and Price Determination',
     title: 'Automatic stabilizers',
     prompt: 'During a recession, which feature of the United States budget automatically helps cushion the downturn without new legislation?',
+    mentorHint: 'Automatic stabilizers require no new law.',
     correct: 'Rising unemployment benefits and falling tax revenue',
     wrong: [
       miss('A newly passed infrastructure spending bill', 'New legislation is discretionary fiscal policy, not an automatic stabilizer.', 'Automatic stabilizers require no new law.'),

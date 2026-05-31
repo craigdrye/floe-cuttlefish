@@ -11,9 +11,9 @@
 //   Unit 5 - Factor Markets (labor demand/supply, MRP, monopsony)
 //   Unit 6 - Market Failure (externalities, public goods, asymmetric information, inequality)
 //
-// AP_MICRO_MENTOR_HINTS overrides the generic scaffold hint with a one-line
-// second-person nudge in the voice of an AP Microeconomics teacher: name the
-// model, graph, or formula that is being tested without giving away the answer.
+// AP_MICRO_MENTOR_HINTS overrides the generic scaffold hint with a learner-facing
+// AP Microeconomics nudge: name the model, graph, or formula being tested and
+// point the learner toward the reasoning without giving away the answer.
 //
 // AP_MICRO_CORRECT_SHORTENED trims `correct` strings flagged by the length-heuristic
 // audit (correct >=1.8x longer than longest wrong AND >=20 chars longer). Trimmed
@@ -83,50 +83,50 @@ export const AP_MICRO_SUB_TOPICS: Record<string, number[]> = {
 
 export const AP_MICRO_MENTOR_HINTS: Record<number, string> = {
   // ---------- Unit 1: Basic Economic Concepts ----------
-  16105: 'Total economic cost = explicit (out-of-pocket) + implicit (forgone wages). Add both, do not pick one.',
-  16107: 'Scarcity is the structural mismatch between finite resources and unlimited wants. Distinguish cause from symptom.',
-  16121: 'Compute each country\'s opportunity cost per banana in apples. Lower opportunity cost wins the comparative advantage.',
+  16105: 'Economic cost includes both the money you actually pay and the best alternative you give up. Convert the time into forgone wages, then combine that implicit cost with the explicit ticket cost.',
+  16107: 'Scarcity is not a temporary shortage or a moral judgment about people. It is the basic economic condition that forces choices because resources have limits while wants keep extending beyond them.',
+  16121: 'Comparative advantage is about opportunity cost, not who can produce more in absolute terms. For each country, translate one banana into the number of apples sacrificed, then compare those tradeoffs.',
 
   // ---------- Unit 2: Supply, Demand & Elasticity ----------
-  16101: 'Law of demand: price and quantity demanded move inversely along a fixed demand curve.',
-  16106: 'A price change moves you along the curve; only non-price determinants shift the curve itself. Mind the distinction.',
-  16108: 'Income elasticity sign tells you the type. If income up and demand down, the good is inferior, not normal.',
-  16110: 'Price elasticity of demand = % change in quantity demanded / % change in price. Order matters.',
-  16104: 'Consumer surplus is the area between the demand curve and the price line — willingness to pay minus price paid.',
-  16111: 'Tax incidence falls on the more inelastic side. Perfectly inelastic demand is the limiting case.',
-  16115: 'A binding price ceiling sits below equilibrium, creates a shortage, and prevents trades whose surplus is positive.',
+  16101: 'Use the law of demand on a single fixed demand curve. When the good\'s own price changes, ask how buyers adjust the quantity they are willing and able to buy.',
+  16106: 'Separate a change in quantity demanded from a change in demand. The good\'s own price moves the point on the existing curve, while income, tastes, related goods, expectations, and number of buyers shift the whole curve.',
+  16108: 'Income elasticity is about how demand responds when income changes. If a higher income makes buyers switch away from a good, classify the good by the sign of that relationship rather than by whether it is cheap or common.',
+  16110: 'Price elasticity of demand uses percent change in quantity demanded divided by percent change in price. After calculating the absolute value, compare it with 1 to decide whether buyers are relatively responsive.',
+  16104: 'Consumer surplus measures the buyer\'s net gain from trade. On a demand graph, picture the space between what buyers were willing to pay and the market price they actually face.',
+  16111: 'Tax incidence depends on relative elasticity, not on who physically sends the tax payment to the government. The side that has fewer good substitutes, and therefore adjusts quantity less, absorbs more of the burden.',
+  16115: 'A binding price ceiling is set below equilibrium, so quantity demanded exceeds quantity supplied. The deadweight loss comes from trades that would have created gains for both sides but no longer happen.',
 
   // ---------- Unit 3: Production, Cost & Perfect Competition ----------
-  16102: 'Marginal cost is the change in total cost from producing one additional unit. Stay incremental.',
-  16704: 'For a Giffen good the income effect outweighs the substitution effect, flipping the demand curve\'s slope.',
-  16709: 'Perfect complements are consumed in fixed proportions, giving L-shaped indifference curves at the kink.',
-  16112: 'Profit is maximized where MR = MC, not where revenue or price is highest. Marginal logic governs.',
-  16122: 'Long-run exit: P < ATC. Short-run shutdown: P < AVC. Pick the rule for the time horizon stated.',
+  16102: 'Marginal analysis focuses on the next unit, not the entire production process. Ask how total cost changes when output rises by exactly one more unit.',
+  16704: 'A Giffen good is an extreme inferior-good case where the income effect overpowers the substitution effect. Think through what happens when a price increase makes a poor consumer feel poorer and pushes them toward more of the staple good.',
+  16709: 'Perfect complements are goods used together in fixed proportions. Extra units of only one good add little or no utility, which is why the indifference curve has a sharp corner at the useful bundle ratio.',
+  16112: 'Use marginal profit logic: if the next unit adds more revenue than cost, producing it helps; if it adds more cost than revenue, it hurts. The stopping rule is about the last unit, not total revenue or the highest possible price.',
+  16122: 'Pay attention to the time horizon. In the short run, variable cost determines whether to shut down temporarily; in the long run, all costs must be covered for the firm to remain in the market.',
 
   // ---------- Unit 4: Imperfect Competition ----------
-  16103: 'Monopoly = one seller of a good with no close substitutes. Count the sellers.',
-  16109: 'Pure monopoly requires a single seller, no close substitutes, and high barriers to entry.',
-  16705: 'A natural monopoly arises when LRATC is downward-sloping over the entire relevant range of demand — economies of scale dominate.',
-  16123: 'In first-degree price discrimination, the demand curve becomes the MR curve. Trace what that does to surplus.',
-  16703: 'A perfect price discriminator charges each buyer their willingness to pay, so MR = price for every unit sold.',
-  16116: 'Long-run equilibrium for monopolistic competition: P = ATC tangent, MR = MC, output below min-ATC. That gap is excess capacity.',
-  16113: 'Nash equilibrium = each player\'s strategy is a best response to the other\'s. Test mutual best response, not joint payoff.',
-  16117: 'Tit-for-tat works in repeated games because it is nice, retaliatory, forgiving, and clear. Each property matters.',
-  16701: 'In a Prisoner\'s Dilemma, defect is dominant for both, but mutual defection is Pareto-inferior to mutual cooperation.',
-  16706: 'Cournot duopolists compete on quantity simultaneously, each treating the rival\'s output as given. Reaction functions cross at equilibrium.',
+  16103: 'Classify the market by the seller side first. A monopoly has market power because buyers cannot easily turn to many equivalent sellers offering close substitutes.',
+  16109: 'A pure monopoly needs both market concentration and protection from entry. Check whether the option rules out close substitutes and explains why rivals cannot quickly compete away the market power.',
+  16705: 'Natural monopoly is an economies-of-scale story, not mainly a legal privilege or resource ownership story. If one large network can serve the relevant market at lower average cost than multiple smaller firms, the cost curve explains the structure.',
+  16123: 'First-degree price discrimination lets the firm tailor price to each buyer\'s willingness to pay. Trace the demand curve as marginal revenue and ask where the surplus goes when every buyer pays their maximum.',
+  16703: 'With perfect price discrimination, selling one more unit does not require cutting the price on earlier units. That changes the monopolist\'s marginal revenue calculation and pushes output toward the efficient quantity.',
+  16116: 'In monopolistic competition, free entry removes economic profit in the long run, but product differentiation leaves the firm facing a downward-sloping demand curve. The tangency with ATC occurs before minimum efficient scale, creating excess capacity.',
+  16113: 'For a Nash equilibrium, hold one player\'s choice fixed and ask whether the other player would switch; then reverse the test. Stability comes from mutual best responses, even if the outcome is not the best total payoff.',
+  16117: 'Tit-for-tat supports cooperation in repeated games by making behavior predictable and conditional. It rewards cooperation, responds to cheating, and then allows cooperation to restart after punishment.',
+  16701: 'A Prisoner\'s Dilemma separates individual incentives from collective welfare. Each player can have a privately rational move that leaves both players worse off than a cooperative outcome would have.',
+  16706: 'Cournot is the quantity-competition model: each firm chooses output while treating the rival\'s output as fixed. The equilibrium comes where both firms\' reaction functions are consistent with each other.',
 
   // ---------- Unit 5: Factor Markets ----------
-  16114: 'In a competitive labor market, hire while MRP > wage; stop where MRP = wage. MRP = MP x P.',
-  16708: 'A monopsonist faces an upward-sloping labor supply, so MFC lies above the supply curve. Hire where MRP = MFC.',
+  16114: 'Labor hiring is a marginal benefit versus marginal cost decision. The benefit of one more worker is that worker\'s marginal revenue product, so compare that value with the wage.',
+  16708: 'A monopsonist is the buyer with wage-setting power in a labor market. Because hiring another worker requires raising pay along an upward-sloping labor supply curve, marginal factor cost sits above the wage curve.',
 
   // ---------- Unit 6: Market Failure & Inequality ----------
-  16118: 'Negative externality: marginal social cost > marginal private cost, so the free market overproduces at too low a price.',
-  16702: 'A Pigouvian tax equal to the marginal external cost shifts MPC up to MSC — internalizing the externality.',
-  16124: 'Coase Theorem: with clear property rights and low transaction costs, private bargaining reaches the efficient outcome.',
-  16119: 'Akerlof\'s Market for Lemons: asymmetric information drives quality sellers out, collapsing trade. Adverse selection at work.',
-  16707: 'Adverse selection arises before the transaction when the informed side (sellers) can hide quality. Compare to moral hazard.',
-  16120: 'Gini ranges 0 (perfect equality) to 1 (one person holds everything). Map 0.8 on that scale.',
-  16710: 'Pareto efficiency in exchange requires MRS equal across consumers — that is the contract curve in the Edgeworth box.',
+  16118: 'For a negative production externality, private decision makers ignore part of the social cost. Draw marginal social cost above marginal private cost, then compare the market outcome with the socially efficient outcome.',
+  16702: 'A Pigouvian tax is designed to make private decision makers face the external damage their production creates. On the graph, it raises the private supply/cost curve toward the social cost curve.',
+  16124: 'The Coase Theorem is about private bargaining over externalities. It works only when the parties know who owns the relevant rights and bargaining itself is cheap enough to make negotiation practical.',
+  16119: 'The lemons model is an adverse selection story: one side knows quality before trade and the other side cannot verify it. Think through why average pricing can push high-quality sellers away and make the market unravel.',
+  16707: 'Adverse selection happens before a transaction because hidden information affects who chooses to participate. Compare that with moral hazard, where behavior changes after the transaction because one side is insulated from consequences.',
+  16120: 'The Gini coefficient measures distribution, not output growth or poverty by itself. Values closer to 0 mean more equal incomes, while values closer to 1 mean income is much more concentrated.',
+  16710: 'Pareto efficiency in exchange means there are no mutually beneficial trades left between consumers. In an Edgeworth box, that condition occurs where consumers value the tradeoff between goods at the same marginal rate.',
 }
 
 export const AP_MICRO_CORRECT_SHORTENED: Record<number, { newCorrect?: string; lessonAddendum?: string }> = {

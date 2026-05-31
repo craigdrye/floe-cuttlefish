@@ -11,6 +11,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Proportional relationships',
     title: 'Identify a proportional table',
     prompt: 'Which table shows a proportional relationship between x and y?',
+    mentorHint: 'Check whether y divided by x gives the same number for every row.',
     correct: 'x: 2, 4, 6 and y: 6, 12, 18',
     wrong: [
       miss('x: 1, 2, 3 and y: 3, 5, 7', 'Here y goes up by 2 each time but starts at 3, so y divided by x is not constant.', 'Check whether y divided by x gives the same number for every row.'),
@@ -26,6 +27,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Proportional relationships',
     title: 'Constant of proportionality',
     prompt: 'The cost y of buying x notebooks is proportional, and 5 notebooks cost $4.00. What is the constant of proportionality (cost per notebook)?',
+    mentorHint: 'The constant is the dependent value divided by the independent value: cost divided by notebooks.',
     correct: '$0.80 per notebook',
     wrong: [
       miss('$1.25 per notebook', 'This divides the number of notebooks by the cost (5 / 4) instead of cost by notebooks.', 'The constant is the dependent value divided by the independent value: cost divided by notebooks.'),
@@ -41,6 +43,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Proportional relationships',
     title: 'Equation of a proportion',
     prompt: 'A car travels at a constant speed, going 150 miles in 3 hours. Which equation relates distance d to time t in hours?',
+    mentorHint: 'Find how far the car goes in just one hour first.',
     correct: 'd = 50t',
     wrong: [
       miss('d = 150t', 'This uses the total distance as the rate instead of the distance per hour.', 'Find how far the car goes in just one hour first.'),
@@ -56,6 +59,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Proportional relationships',
     title: 'Graph of a proportional relationship',
     prompt: 'A graph shows a proportional relationship between x and y. Which feature must the graph have?',
+    mentorHint: 'Ask what y equals when x is 0 in a proportional relationship.',
     correct: 'It is a straight line that passes through the origin (0, 0)',
     wrong: [
       miss('A straight line that crosses the y-axis at a positive number', 'A line with a nonzero y-intercept is linear but not proportional.', 'Ask what y equals when x is 0 in a proportional relationship.'),
@@ -71,6 +75,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Proportional relationships',
     title: 'Reading the unit rate from a graph',
     prompt: 'On a proportional graph, the point (1, 7) lies on the line. What does this point tell you?',
+    mentorHint: 'Read the y-value directly when x is 1.',
     correct: 'The constant of proportionality is 7',
     wrong: [
       miss('The constant of proportionality is 1/7', 'This divides x by y; the constant is y when x equals 1.', 'Read the y-value directly when x is 1.'),
@@ -88,6 +93,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Unit rates and ratios',
     title: 'Compute a unit rate',
     prompt: 'A printer prints 90 pages in 6 minutes at a steady rate. What is the unit rate in pages per minute?',
+    mentorHint: 'A unit rate divides the total by the number of minutes.',
     correct: '15 pages per minute',
     wrong: [
       miss('540 pages per minute', 'This multiplies 90 by 6 instead of dividing.', 'A unit rate divides the total by the number of minutes.'),
@@ -103,6 +109,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Unit rates and ratios',
     title: 'Unit rate with fractions',
     prompt: 'A runner covers 3/4 of a mile in 1/8 of an hour. What is the speed in miles per hour?',
+    mentorHint: 'Divide the distance by the time to get speed.',
     correct: '6 miles per hour',
     wrong: [
       miss('3/32 miles per hour', 'This multiplies 3/4 by 1/8 instead of dividing distance by time.', 'Divide the distance by the time to get speed.'),
@@ -118,6 +125,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Unit rates and ratios',
     title: 'Better buy comparison',
     prompt: 'Store A sells 12 ounces of juice for $3.00. Store B sells 20 ounces for $4.40. Which is the better buy per ounce?',
+    mentorHint: 'Compare the price of a single ounce, not the totals.',
     correct: 'Store B, because it is about $0.22 per ounce versus $0.25 at Store A',
     wrong: [
       miss('Store A, because $3.00 is less than $4.40', 'Comparing totals ignores that Store B gives more juice.', 'Compare the price of a single ounce, not the totals.'),
@@ -133,6 +141,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Unit rates and ratios',
     title: 'Scaling a ratio',
     prompt: 'A paint mix uses red and white in a ratio of 2 to 5. To make a batch with 15 cups of white, how much red is needed?',
+    mentorHint: 'Find how many times bigger 15 is than 5, then scale red the same way.',
     correct: '6 cups',
     wrong: [
       miss('12 cups', 'This doubles 6 or misapplies the scale factor; 15/5 = 3, so red is 2 times 3 = 6.', 'Find how many times bigger 15 is than 5, then scale red the same way.'),
@@ -150,6 +159,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Rates and percentages',
     title: 'Find a percent of a number',
     prompt: 'What is 35% of 80?',
+    mentorHint: 'Multiply 80 by 0.35, do not subtract.',
     correct: '28',
     wrong: [
       miss('45', 'This subtracts 35 from 80 instead of taking a percent of it.', 'Multiply 80 by 0.35, do not subtract.'),
@@ -165,6 +175,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Rates and percentages',
     title: 'Sales tax total',
     prompt: 'A jacket costs $40 and sales tax is 8%. What is the total amount paid?',
+    mentorHint: '8% of $40 is not $8; compute 0.08 times 40 first.',
     correct: '$43.20',
     wrong: [
       miss('$48.00', 'This adds 8 dollars instead of 8 percent of $40.', '8% of $40 is not $8; compute 0.08 times 40 first.'),
@@ -180,6 +191,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Rates and percentages',
     title: 'Percent as a part of a whole',
     prompt: 'In a class of 25 students, 15 have a pet. What percent of the class has a pet?',
+    mentorHint: 'Divide the part by the whole before converting to a percent.',
     correct: '60%',
     wrong: [
       miss('15%', 'This treats the count of 15 as a percent without comparing to the total.', 'Divide the part by the whole before converting to a percent.'),
@@ -195,6 +207,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Rates and percentages',
     title: 'Finding the whole from a percent',
     prompt: 'A tip of $6 is left, and it is 20% of the bill. What was the bill amount?',
+    mentorHint: 'The bill is bigger than the tip, so dividing is needed.',
     correct: '$30',
     wrong: [
       miss('$1.20', 'This takes 20% of $6 instead of treating $6 as 20% of the bill.', 'The bill is bigger than the tip, so dividing is needed.'),
@@ -212,6 +225,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Percent increase and decrease',
     title: 'Markdown price',
     prompt: 'A $50 pair of shoes is marked down 30%. What is the sale price?',
+    mentorHint: 'Compute 30% of $50 first, then subtract.',
     correct: '$35',
     wrong: [
       miss('$20', 'This subtracts $30 instead of 30% of $50, which is $15.', 'Compute 30% of $50 first, then subtract.'),
@@ -227,6 +241,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Percent increase and decrease',
     title: 'Percent increase amount',
     prompt: 'A plant grows from 20 cm to 26 cm. What is the percent increase in height?',
+    mentorHint: 'Divide the increase by the starting amount.',
     correct: '30%',
     wrong: [
       miss('6%', 'This reports the change of 6 cm as a percent without dividing by the original.', 'Divide the increase by the starting amount.'),
@@ -242,6 +257,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Percent increase and decrease',
     title: 'Original price before discount',
     prompt: 'After a 25% discount, a backpack costs $45. What was the original price?',
+    mentorHint: 'The $45 represents 75% of the original; divide by 0.75.',
     correct: '$60',
     wrong: [
       miss('$56.25', 'This adds 25% to $45, but $45 is 75% of the original, not the full price.', 'The $45 represents 75% of the original; divide by 0.75.'),
@@ -257,6 +273,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Percent increase and decrease',
     title: 'Simple interest',
     prompt: 'You deposit $200 in an account earning 5% simple interest per year. How much interest is earned in 3 years?',
+    mentorHint: 'Multiply the yearly interest by the number of years.',
     correct: '$30',
     wrong: [
       miss('$10', 'This finds interest for only one year (5% of $200) and forgets the 3 years.', 'Multiply the yearly interest by the number of years.'),
@@ -274,6 +291,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Negative numbers: addition and subtraction',
     title: 'Add a positive and a negative',
     prompt: 'What is -8 + 5?',
+    mentorHint: 'When signs differ, find the difference of the absolute values.',
     correct: '-3',
     wrong: [
       miss('-13', 'This adds the absolute values, but the signs differ so you subtract.', 'When signs differ, find the difference of the absolute values.'),
@@ -289,6 +307,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Negative numbers: addition and subtraction',
     title: 'Subtracting a negative',
     prompt: 'What is 4 - (-7)?',
+    mentorHint: 'Two minus signs together make a plus.',
     correct: '11',
     wrong: [
       miss('-3', 'This subtracts 7, but subtracting a negative is the same as adding.', 'Two minus signs together make a plus.'),
@@ -304,6 +323,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Negative numbers: addition and subtraction',
     title: 'Temperature change',
     prompt: 'The temperature is -3 degrees and drops by 9 degrees. What is the new temperature?',
+    mentorHint: 'A drop means subtract, moving toward colder values.',
     correct: '-12 degrees',
     wrong: [
       miss('6 degrees', 'This adds 9 instead of dropping, moving up the number line.', 'A drop means subtract, moving toward colder values.'),
@@ -319,6 +339,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Negative numbers: addition and subtraction',
     title: 'Distance between integers',
     prompt: 'What is the distance on the number line between -6 and 4?',
+    mentorHint: 'Distance counts every unit between the two points.',
     correct: '10',
     wrong: [
       miss('2', 'This adds -6 and 4 to get -2 and drops the sign, ignoring distance.', 'Distance counts every unit between the two points.'),
@@ -336,6 +357,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Negative numbers: multiplication and division',
     title: 'Product of two negatives',
     prompt: 'What is (-6) times (-4)?',
+    mentorHint: 'Negative times negative is positive.',
     correct: '24',
     wrong: [
       miss('-24', 'Two negative factors give a positive product, not a negative one.', 'Negative times negative is positive.'),
@@ -351,6 +373,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Negative numbers: multiplication and division',
     title: 'Dividing signed numbers',
     prompt: 'What is (-45) divided by 9?',
+    mentorHint: 'Different signs give a negative quotient.',
     correct: '-5',
     wrong: [
       miss('5', 'A negative divided by a positive is negative, so the sign is wrong.', 'Different signs give a negative quotient.'),
@@ -366,6 +389,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Negative numbers: multiplication and division',
     title: 'Sign of a product chain',
     prompt: 'What is the sign of (-2) times (-3) times (-1)?',
+    mentorHint: 'A product is zero only if a factor is zero.',
     correct: 'Negative',
     wrong: [
       miss('Positive', 'There are three negative factors, an odd number, so the product is negative.', 'Count the negative signs; an odd count gives a negative result.'),
@@ -381,6 +405,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Negative numbers: multiplication and division',
     title: 'Negative numbers in context',
     prompt: 'A diver descends at a steady rate, changing depth by -3 meters each minute. What is the change in depth after 5 minutes?',
+    mentorHint: 'A downward change should keep its negative sign.',
     correct: '-15 meters',
     wrong: [
       miss('15 meters', 'Descending means going deeper, so the change is negative, not positive.', 'A downward change should keep its negative sign.'),
@@ -398,6 +423,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Rational number arithmetic',
     title: 'Adding fractions with negatives',
     prompt: 'What is -1/2 + 3/4?',
+    mentorHint: 'Compare the sizes after finding a common denominator.',
     correct: '1/4',
     wrong: [
       miss('-1/4', 'This keeps the sign of the smaller number; 3/4 is larger, so the result is positive.', 'Compare the sizes after finding a common denominator.'),
@@ -413,6 +439,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Rational number arithmetic',
     title: 'Multiplying a fraction by a negative',
     prompt: 'What is (-2/3) times (6)?',
+    mentorHint: 'Different signs give a negative product.',
     correct: '-4',
     wrong: [
       miss('4', 'A negative times a positive is negative, so the sign is wrong.', 'Different signs give a negative product.'),
@@ -428,6 +455,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Rational number arithmetic',
     title: 'Decimal as a fraction',
     prompt: 'Which fraction is equal to the decimal 0.75?',
+    mentorHint: '0.75 means 75 hundredths; write 75/100 and simplify.',
     correct: '3/4',
     wrong: [
       miss('1/75', 'This treats 75 as a denominator instead of converting hundredths.', '0.75 means 75 hundredths; write 75/100 and simplify.'),
@@ -443,6 +471,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Rational number arithmetic',
     title: 'Order of operations with negatives',
     prompt: 'Evaluate: -2 + 3 times (-4).',
+    mentorHint: 'Multiplication comes before addition.',
     correct: '-14',
     wrong: [
       miss('-4', 'This adds -2 and 3 first before multiplying, ignoring order of operations.', 'Multiplication comes before addition.'),
@@ -458,6 +487,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Rational number arithmetic',
     title: 'Terminating or repeating decimal',
     prompt: 'When written as a decimal, the fraction 1/3 is which kind of decimal?',
+    mentorHint: 'Divide 1 by 3 and notice the remainder never disappears.',
     correct: 'A repeating decimal, 0.333...',
     wrong: [
       miss('A terminating decimal, 0.3', '0.3 equals 3/10, not 1/3, so it does not capture the full value.', 'Divide 1 by 3 and notice the remainder never disappears.'),
@@ -475,6 +505,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Fractions, decimals, and percentages',
     title: 'Convert a fraction to a percent',
     prompt: 'What percent is equal to the fraction 3/5?',
+    mentorHint: 'Divide 3 by 5 first, then convert to a percent.',
     correct: '60%',
     wrong: [
       miss('35%', 'This reads the digits 3 and 5 as a percent instead of dividing.', 'Divide 3 by 5 first, then convert to a percent.'),
@@ -490,6 +521,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Fractions, decimals, and percentages',
     title: 'Ordering across forms',
     prompt: 'Which of these is the largest value: 0.7, 3/5, or 65%?',
+    mentorHint: 'Convert each to a decimal and compare.',
     correct: '0.7',
     wrong: [
       miss('3/5', '3/5 equals 0.6, which is smaller than 0.7.', 'Convert each to a decimal and compare.'),
@@ -505,6 +537,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Fractions, decimals, and percentages',
     title: 'Percent greater than 100',
     prompt: 'Write 1.5 as a percent.',
+    mentorHint: 'Multiply by 100, which moves the decimal two places.',
     correct: '150%',
     wrong: [
       miss('15%', 'This moves the decimal one place instead of two.', 'Multiply by 100, which moves the decimal two places.'),
@@ -520,6 +553,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Fractions, decimals, and percentages',
     title: 'Fraction of a quantity',
     prompt: 'A recipe needs 3/4 of a cup of sugar, but you are making half the recipe. How much sugar do you need?',
+    mentorHint: 'Half of an amount means multiply by 1/2.',
     correct: '3/8 cup',
     wrong: [
       miss('1 1/4 cups', 'This adds 3/4 and 1/2 instead of taking half of 3/4.', 'Half of an amount means multiply by 1/2.'),
@@ -537,6 +571,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Scale drawings',
     title: 'Using a scale factor',
     prompt: 'A map uses a scale of 1 inch = 20 miles. Two towns are 3.5 inches apart on the map. What is the real distance?',
+    mentorHint: 'Each inch stands for 20 miles, so multiply.',
     correct: '70 miles',
     wrong: [
       miss('23.5 miles', 'This adds 3.5 and 20 instead of multiplying by the scale.', 'Each inch stands for 20 miles, so multiply.'),
@@ -552,6 +587,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Scale drawings',
     title: 'Finding the drawing length',
     prompt: 'A scale drawing uses 2 cm to represent 5 m. A wall is 15 m long in real life. How long is the wall in the drawing?',
+    mentorHint: 'Real length is larger, so the drawing length must be smaller.',
     correct: '6 cm',
     wrong: [
       miss('37.5 cm', 'This multiplies 15 by 2.5, scaling the wrong direction.', 'Real length is larger, so the drawing length must be smaller.'),
@@ -567,6 +603,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Scale drawings',
     title: 'Area and scale factor',
     prompt: 'A square garden has sides scaled up by a factor of 3 in a new plan. How does the area change?',
+    mentorHint: 'Area depends on two dimensions, each multiplied by 3.',
     correct: 'The area becomes 9 times as large',
     wrong: [
       miss('The area becomes 3 times as large', 'Only the side lengths scale by 3; area scales by the square of the factor.', 'Area depends on two dimensions, each multiplied by 3.'),

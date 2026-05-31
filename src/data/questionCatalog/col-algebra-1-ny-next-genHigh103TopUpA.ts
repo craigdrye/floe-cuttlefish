@@ -11,6 +11,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Algebraic expressions',
     title: 'Translating a word phrase',
     prompt: 'Which expression represents "five less than three times a number n"?',
+    mentorHint: 'Start from 3n, then take 5 away from it.',
     correct: '3n - 5',
     wrong: [
       miss('5 - 3n', 'This is "five less three times n", reversing the subtraction order.', 'Start from 3n, then take 5 away from it.'),
@@ -26,6 +27,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Algebraic expressions',
     title: 'Evaluating with order of operations',
     prompt: 'Evaluate 2x^2 - 3x + 4 when x = -2.',
+    mentorHint: 'When x is negative, square the whole value including its sign.',
     correct: '18',
     wrong: [
       miss('-2', 'This squares -2 as -4 (treating -2^2 as -(2^2)) instead of (-2)^2 = 4.', 'When x is negative, square the whole value including its sign.'),
@@ -41,6 +43,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Algebraic expressions',
     title: 'Combining like terms',
     prompt: 'Simplify 4x + 7 - 2x + 3 - x.',
+    mentorHint: 'Only the number terms combine into the constant.',
     correct: 'x + 10',
     wrong: [
       miss('x + 12', 'This added 7 + 3 + 2 instead of just the constants 7 and 3.', 'Only the number terms combine into the constant.'),
@@ -56,6 +59,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Algebraic expressions',
     title: 'Distributive property',
     prompt: 'Expand and simplify -3(2x - 5) + 4x.',
+    mentorHint: 'A negative times a negative is positive.',
     correct: '-2x + 15',
     wrong: [
       miss('-2x - 15', 'This kept -3 times -5 as -15 instead of +15.', 'A negative times a negative is positive.'),
@@ -71,6 +75,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Algebraic expressions',
     title: 'Identifying parts of an expression',
     prompt: 'In the expression 5x^3 + 2x - 7, what is the coefficient of the linear term?',
+    mentorHint: 'The linear term has x to the first power.',
     correct: '2',
     wrong: [
       miss('5', 'This is the coefficient of the cubic term x^3, not the linear term.', 'The linear term has x to the first power.'),
@@ -88,6 +93,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Solving linear equations',
     title: 'One-variable equation with variables on both sides',
     prompt: 'Solve for x: 5x - 8 = 3x + 6.',
+    mentorHint: 'After 2x = 14, divide both sides by 2.',
     correct: 'x = 7',
     wrong: [
       miss('x = 1', 'This subtracted 3x and added 8 but divided incorrectly or dropped a term.', 'After 2x = 14, divide both sides by 2.'),
@@ -103,6 +109,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Solving linear equations',
     title: 'Equation with distribution',
     prompt: 'Solve for x: 3(x + 4) = 2x + 18.',
+    mentorHint: 'Multiply 3 by both terms inside the parentheses.',
     correct: 'x = 6',
     wrong: [
       miss('x = 2', 'This distributed as 3x + 4 instead of 3x + 12.', 'Multiply 3 by both terms inside the parentheses.'),
@@ -118,6 +125,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Solving linear equations',
     title: 'Equation with fractions',
     prompt: 'Solve for x: (x/3) + 2 = 5.',
+    mentorHint: 'To undo division by 3, multiply both sides by 3.',
     correct: 'x = 9',
     wrong: [
       miss('x = 1', 'This subtracted 2 but then divided by 3 instead of multiplying.', 'To undo division by 3, multiply both sides by 3.'),
@@ -133,6 +141,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Solving linear equations',
     title: 'Identifying number of solutions',
     prompt: 'How many solutions does the equation 2(x + 3) = 2x + 6 have?',
+    mentorHint: 'Distribute and compare both sides fully.',
     correct: 'Infinitely many solutions',
     wrong: [
       miss('Exactly one solution', 'After simplifying, the variable cancels, so it is not a single value.', 'Distribute and compare both sides fully.'),
@@ -148,6 +157,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Solving linear equations',
     title: 'Literal equation rearrangement',
     prompt: 'The formula for the perimeter of a rectangle is P = 2l + 2w. Solve for w in terms of P and l.',
+    mentorHint: 'The w term still has a coefficient of 2 to remove.',
     correct: 'w = (P - 2l) / 2',
     wrong: [
       miss('w = P - 2l', 'This subtracted 2l but forgot to divide the whole result by 2.', 'The w term still has a coefficient of 2 to remove.'),
@@ -165,6 +175,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Linear inequalities',
     title: 'Flipping the inequality sign',
     prompt: 'Solve the inequality -4x + 3 > 19.',
+    mentorHint: 'When you divide by -4, reverse the > to <.',
     correct: 'x < -4',
     wrong: [
       miss('x > -4', 'Dividing by a negative number requires flipping the inequality sign.', 'When you divide by -4, reverse the > to <.'),
@@ -180,6 +191,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Linear inequalities',
     title: 'Compound inequality',
     prompt: 'Solve the compound inequality -1 <= 2x + 3 < 7.',
+    mentorHint: 'Match each inequality symbol to the original.',
     correct: '-2 <= x < 2',
     wrong: [
       miss('-2 <= x <= 2', 'The right end is strict (<), so 2 should not be included.', 'Match each inequality symbol to the original.'),
@@ -195,6 +207,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Linear inequalities',
     title: 'Inequality from a word problem',
     prompt: 'A taxi charges $3 plus $2 per mile. You have at most $20. Which inequality represents the miles m you can travel?',
+    mentorHint: 'At most translates to less than or equal to.',
     correct: '3 + 2m <= 20',
     wrong: [
       miss('3 + 2m >= 20', '"At most $20" means the cost cannot exceed 20, so it must be <=.', 'At most translates to less than or equal to.'),
@@ -210,6 +223,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Linear inequalities',
     title: 'Graphing an inequality on a number line',
     prompt: 'Which number-line description matches the solution to x - 5 >= -2?',
+    mentorHint: 'Closed circles mark inclusive endpoints.',
     correct: 'A closed (filled) circle at 3 with shading to the right',
     wrong: [
       miss('An open circle at 3 with shading to the right', 'The >= symbol includes equality, so the circle should be closed.', 'Closed circles mark inclusive endpoints.'),
@@ -227,6 +241,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Introduction to functions',
     title: 'Function from a set of ordered pairs',
     prompt: 'Which set of ordered pairs represents a function?',
+    mentorHint: 'Each input can have only one output.',
     correct: '{(1, 2), (2, 4), (3, 6), (4, 8)}',
     wrong: [
       miss('{(1, 2), (1, 3), (2, 4), (3, 5)}', 'The input 1 maps to both 2 and 3, so it fails the function test.', 'Each input can have only one output.'),
@@ -242,6 +257,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Introduction to functions',
     title: 'Vertical line test',
     prompt: 'What does the vertical line test tell you about a graph?',
+    mentorHint: 'The test is about single outputs, not straight lines.',
     correct: 'If no vertical line crosses the graph more than once, the graph represents a function',
     wrong: [
       miss('If a vertical line crosses the graph once, the graph is linear', 'The test checks whether a relation is a function, not whether it is a line.', 'The test is about single outputs, not straight lines.'),
@@ -257,6 +273,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Introduction to functions',
     title: 'Evaluating function notation',
     prompt: 'If f(x) = 3x^2 - x + 1, what is f(-2)?',
+    mentorHint: '(-2)^2 = 4, so 3(4) = 12.',
     correct: '15',
     wrong: [
       miss('-9', 'This computed 3(-2)^2 as -12 by squaring incorrectly.', '(-2)^2 = 4, so 3(4) = 12.'),
@@ -272,6 +289,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Introduction to functions',
     title: 'Domain and range from a graph',
     prompt: 'A function consists only of the points (-3, 1), (0, 4), and (2, 1). What is its range?',
+    mentorHint: 'Range is the set of output (y) values.',
     correct: '{1, 4}',
     wrong: [
       miss('{-3, 0, 2}', 'These are the domain (input) values, not the range.', 'Range is the set of output (y) values.'),
@@ -289,6 +307,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Linear functions and slope',
     title: 'Slope from two points',
     prompt: 'Find the slope of the line through the points (1, -2) and (4, 7).',
+    mentorHint: 'Subtract the y-values and x-values in the same order.',
     correct: '3',
     wrong: [
       miss('-3', 'This computed the slope as -9/3 by reversing the subtraction in the numerator only.', 'Subtract the y-values and x-values in the same order.'),
@@ -304,6 +323,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Linear functions and slope',
     title: 'Interpreting slope in context',
     prompt: 'A phone plan costs C = 0.10t + 25, where t is minutes used. What does the slope 0.10 represent?',
+    mentorHint: 'The constant term is the starting cost.',
     correct: 'The cost increases by $0.10 for each additional minute used',
     wrong: [
       miss('The fixed monthly charge is $0.10', 'The fixed charge is the y-intercept 25, not the slope.', 'The constant term is the starting cost.'),
@@ -319,6 +339,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Linear functions and slope',
     title: 'Slope of horizontal and vertical lines',
     prompt: 'What is the slope of the vertical line x = 5?',
+    mentorHint: 'Horizontal lines are flat; vertical lines are upright.',
     correct: 'Undefined',
     wrong: [
       miss('0', 'A slope of 0 belongs to a horizontal line, not a vertical one.', 'Horizontal lines are flat; vertical lines are upright.'),
@@ -334,6 +355,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Linear functions and slope',
     title: 'Average rate of change',
     prompt: 'For f(x) = x^2, what is the average rate of change from x = 1 to x = 4?',
+    mentorHint: 'Average rate of change divides change in f by change in x.',
     correct: '5',
     wrong: [
       miss('3', 'This found the change in x (4 - 1) rather than the rate of change.', 'Average rate of change divides change in f by change in x.'),
@@ -351,6 +373,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Forms of linear equations',
     title: 'Slope-intercept identification',
     prompt: 'For the line y = -2x + 7, what are the slope and y-intercept?',
+    mentorHint: 'In y = mx + b, m is the slope and b is the intercept.',
     correct: 'Slope -2 and y-intercept 7',
     wrong: [
       miss('Slope 7 and y-intercept -2', 'This swapped the roles of the slope and the y-intercept.', 'In y = mx + b, m is the slope and b is the intercept.'),
@@ -366,6 +389,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Forms of linear equations',
     title: 'Writing an equation from slope and a point',
     prompt: 'Write the equation of the line with slope 4 passing through the point (2, 3) in slope-intercept form.',
+    mentorHint: 'Substitute the point to find the correct intercept.',
     correct: 'y = 4x - 5',
     wrong: [
       miss('y = 4x + 5', 'This used +5 instead of solving 3 = 4(2) + b for b = -5.', 'Substitute the point to find the correct intercept.'),
@@ -381,6 +405,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Forms of linear equations',
     title: 'Converting standard form to slope-intercept',
     prompt: 'Rewrite 3x + 2y = 12 in slope-intercept form.',
+    mentorHint: 'Subtracting 3x makes the x-coefficient negative.',
     correct: 'y = -(3/2)x + 6',
     wrong: [
       miss('y = (3/2)x + 6', 'This forgot to keep the negative sign when moving 3x across.', 'Subtracting 3x makes the x-coefficient negative.'),
@@ -396,6 +421,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Forms of linear equations',
     title: 'Parallel line equations',
     prompt: 'Which line is parallel to y = (1/3)x - 4?',
+    mentorHint: 'Parallel lines share the same slope.',
     correct: 'y = (1/3)x + 2',
     wrong: [
       miss('y = -3x + 2', 'Slope -3 is the negative reciprocal, which makes lines perpendicular, not parallel.', 'Parallel lines share the same slope.'),
@@ -413,6 +439,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Systems of linear equations',
     title: 'Solving by substitution',
     prompt: 'Solve the system: y = 2x - 1 and 3x + y = 9.',
+    mentorHint: 'Plug x = 2 into y = 2x - 1.',
     correct: 'x = 2, y = 3',
     wrong: [
       miss('x = 2, y = 5', 'This found x correctly but substituted into the wrong expression for y.', 'Plug x = 2 into y = 2x - 1.'),
@@ -428,6 +455,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Systems of linear equations',
     title: 'Solving by elimination',
     prompt: 'Solve the system: 2x + 3y = 12 and 2x - y = 4 using elimination.',
+    mentorHint: 'Subtract the equations to eliminate x, then solve for y first.',
     correct: 'x = 3, y = 2',
     wrong: [
       miss('x = 2, y = 3', 'This swapped the x and y solutions.', 'Subtract the equations to eliminate x, then solve for y first.'),
@@ -443,6 +471,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Systems of linear equations',
     title: 'Systems with no solution',
     prompt: 'How many solutions does the system y = 3x + 2 and y = 3x - 5 have?',
+    mentorHint: 'Compare the slopes before assuming they cross.',
     correct: 'No solution',
     wrong: [
       miss('Exactly one solution', 'Lines with equal slopes but different intercepts never intersect.', 'Compare the slopes before assuming they cross.'),
@@ -458,6 +487,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Systems of linear equations',
     title: 'System word problem setup',
     prompt: 'Adult tickets cost $8 and child tickets cost $5. If 12 tickets were sold for $81 total, which system models this?',
+    mentorHint: 'The 12 counts tickets; the 81 is money.',
     correct: 'a + c = 12 and 8a + 5c = 81',
     wrong: [
       miss('a + c = 81 and 8a + 5c = 12', 'This swapped the total count of tickets with the total dollars.', 'The 12 counts tickets; the 81 is money.'),
@@ -475,6 +505,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Systems of linear inequalities',
     title: 'Testing a point in an inequality',
     prompt: 'Is the point (1, 2) a solution to the inequality y > 2x - 1?',
+    mentorHint: 'Evaluate 2(1) - 1 = 1, then compare to y = 2.',
     correct: 'Yes, because 2 > 1 is true',
     wrong: [
       miss('No, because 2 = 2(1) - 1', 'This computed 2x - 1 as 1, not the false value 2; the test should pass.', 'Evaluate 2(1) - 1 = 1, then compare to y = 2.'),
@@ -490,6 +521,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Systems of linear inequalities',
     title: 'Boundary line style',
     prompt: 'When graphing the inequality y <= 3x + 1, what should the boundary line look like?',
+    mentorHint: 'Solid lines mark inclusive boundaries.',
     correct: 'A solid line, because points on the line satisfy <=',
     wrong: [
       miss('A dashed line, because the line is excluded', 'The <= includes equality, so the boundary points are part of the solution.', 'Solid lines mark inclusive boundaries.'),
@@ -505,6 +537,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Systems of linear inequalities',
     title: 'Solution region of a system',
     prompt: 'A system of two linear inequalities is graphed. Where are its solutions found?',
+    mentorHint: 'Both conditions must hold at once.',
     correct: 'In the region where the shaded areas of both inequalities overlap',
     wrong: [
       miss('In the region shaded by either inequality', 'A solution must satisfy both inequalities, not just one.', 'Both conditions must hold at once.'),
@@ -522,6 +555,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Sequences',
     title: 'Identifying an arithmetic sequence',
     prompt: 'Which sequence is arithmetic?',
+    mentorHint: 'Arithmetic sequences add a constant, not multiply.',
     correct: '5, 9, 13, 17, ...',
     wrong: [
       miss('2, 4, 8, 16, ...', 'Each term is multiplied by 2, making this geometric, not arithmetic.', 'Arithmetic sequences add a constant, not multiply.'),
@@ -537,6 +571,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Sequences',
     title: 'Explicit formula for an arithmetic sequence',
     prompt: 'An arithmetic sequence has first term 7 and common difference 3. What is the explicit formula for the nth term a_n?',
+    mentorHint: 'At n = 1 the formula must return the first term.',
     correct: 'a_n = 7 + 3(n - 1)',
     wrong: [
       miss('a_n = 7 + 3n', 'This adds an extra 3 because the first term should use n - 1, not n.', 'At n = 1 the formula must return the first term.'),
@@ -552,6 +587,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Sequences',
     title: 'Recursive definition',
     prompt: 'A sequence is defined by a_1 = 2 and a_n = a_(n-1) + 5. What is a_4?',
+    mentorHint: 'Going from term 1 to term 4 is three steps.',
     correct: '17',
     wrong: [
       miss('22', 'This applied the +5 four times instead of three from a_1 to a_4.', 'Going from term 1 to term 4 is three steps.'),
@@ -569,6 +605,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Exponents and exponential expressions',
     title: 'Product of powers',
     prompt: 'Simplify x^5 times x^3.',
+    mentorHint: 'When multiplying like bases, add the exponents.',
     correct: 'x^8',
     wrong: [
       miss('x^15', 'This multiplied the exponents instead of adding them.', 'When multiplying like bases, add the exponents.'),
@@ -584,6 +621,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Exponents and exponential expressions',
     title: 'Power of a power',
     prompt: 'Simplify (2x^3)^2.',
+    mentorHint: 'Apply the exponent to every factor inside.',
     correct: '4x^6',
     wrong: [
       miss('2x^6', 'The coefficient 2 must also be squared, giving 4.', 'Apply the exponent to every factor inside.'),
@@ -599,6 +637,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Exponents and exponential expressions',
     title: 'Negative and zero exponents',
     prompt: 'Evaluate 5^0 + 2^(-2).',
+    mentorHint: 'Any nonzero base to the power 0 equals 1.',
     correct: '1.25',
     wrong: [
       miss('0.25', 'This treated 5^0 as 0 instead of 1.', 'Any nonzero base to the power 0 equals 1.'),
@@ -614,6 +653,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Exponents and exponential expressions',
     title: 'Exponential growth model',
     prompt: 'A population of 200 bacteria triples every hour. Which expression gives the population after t hours?',
+    mentorHint: 'Repeated tripling puts t in the exponent.',
     correct: '200 times 3^t',
     wrong: [
       miss('200 times t^3', 'This raises t to a fixed power instead of using a constant base with variable exponent.', 'Repeated tripling puts t in the exponent.'),
@@ -629,6 +669,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Exponents and exponential expressions',
     title: 'Quotient of powers',
     prompt: 'Simplify (x^7)/(x^2).',
+    mentorHint: 'Dividing like bases subtracts the exponents.',
     correct: 'x^5',
     wrong: [
       miss('x^9', 'This added the exponents, but division subtracts them.', 'Dividing like bases subtracts the exponents.'),
@@ -644,6 +685,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     chapter: 'Exponents and exponential expressions',
     title: 'Comparing linear and exponential growth',
     prompt: 'Two savings options start at $100. Option A adds $20 per year; Option B grows by 10% per year. Which statement is true over the long run?',
+    mentorHint: 'Compare the long-run behavior, not just the first year.',
     correct: 'Option B eventually exceeds Option A because exponential growth outpaces linear growth',
     wrong: [
       miss('Option A always stays ahead because $20 is more than 10% of $100', 'Early on A leads, but B compounds and overtakes A eventually.', 'Compare the long-run behavior, not just the first year.'),

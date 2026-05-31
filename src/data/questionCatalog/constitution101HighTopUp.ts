@@ -10,6 +10,7 @@ export const constitution101HighTopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Constitutional Conversation and Civic Reasoning',
     title: 'Constitutional vs. political question',
     prompt: 'A friend says "Closing the public library on Sundays is unconstitutional." What is the most useful first response?',
+    mentorHint: 'Start by separating constitutional law from ordinary policy disagreement. A claim is constitutional only if it connects the government action to a specific text, power, right, or limit.',
     correct: 'Ask which constitutional text, right, or power the closure actually violates, since this may be a policy disagreement rather than a constitutional one',
     wrong: [
       miss('Agree, because any government decision people dislike is unconstitutional', 'Disliking a policy does not make it a constitutional violation; the Constitution does not require libraries to open on any particular day.', 'Separate "I disagree" from "this breaks a constitutional rule."'),
@@ -25,6 +26,7 @@ export const constitution101HighTopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Constitutional Conversation and Civic Reasoning',
     title: 'Checking a reliable civic source',
     prompt: 'To verify the exact text and current status of a bill in Congress, which source is most reliable?',
+    mentorHint: 'For bill text and status, primary official records beat summaries, screenshots, and advocacy messages. Ask which source is responsible for maintaining the legal record rather than persuading an audience.',
     correct: 'Congress.gov, the official legislative information site',
     wrong: [
       miss('A viral social-media post quoting the bill', 'Posts can quote outdated drafts or misstate text; they are not authoritative.', 'Prefer the official record over a screenshot.'),
@@ -40,6 +42,7 @@ export const constitution101HighTopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Revolution, Confederation, and Founding Principles',
     title: 'Why the Articles failed',
     prompt: 'Which weakness of the Articles of Confederation most directly explains why the national government could not pay its debts?',
+    mentorHint: 'Under the Articles, states kept most governing power and the national government depended heavily on state cooperation. For debt, focus on whether Congress could raise revenue directly or merely ask states to contribute.',
     correct: 'Congress could not tax citizens directly and had to request money from the states, which often did not pay',
     wrong: [
       miss('The Articles created a powerful president who overspent', 'The Articles created no national executive at all.', 'Recall what national offices the Articles did and did not create.'),
@@ -55,6 +58,7 @@ export const constitution101HighTopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Revolution, Confederation, and Founding Principles',
     title: 'Federalist No. 10 and faction',
     prompt: 'In Federalist No. 10, James Madison argues that the danger of faction is best controlled by:',
+    mentorHint: 'Madison does not try to eliminate factions, because doing so would destroy liberty. He asks how a constitutional design can reduce the chance that one faction becomes an oppressive majority.',
     correct: 'A large republic in which many competing interests make it hard for any single faction to form a tyrannical majority',
     wrong: [
       miss('Eliminating liberty so that factions cannot form', 'Madison says destroying liberty to cure faction is a remedy worse than the disease, since "liberty is to faction what air is to fire."', 'Recall Madison\'s rejected "cures" before his actual solution.'),
@@ -70,6 +74,7 @@ export const constitution101HighTopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Convention, Compromise, and Ratification',
     title: 'The Great Compromise',
     prompt: 'The Great (Connecticut) Compromise of 1787 settled the dispute over representation by:',
+    mentorHint: 'The conflict was between large states that wanted representation by population and small states that wanted equal state power. A compromise should preserve something important from both plans.',
     correct: 'Creating a bicameral Congress with population-based representation in the House and equal representation (two seats per state) in the Senate',
     wrong: [
       miss('Giving every state exactly one vote in a single-house Congress', 'That was closer to the New Jersey Plan and the Articles, not the final compromise.', 'The compromise blended two competing plans, not one.'),
@@ -85,6 +90,7 @@ export const constitution101HighTopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Convention, Compromise, and Ratification',
     title: 'Federalist No. 51 logic',
     prompt: 'When Madison writes in Federalist No. 51 that "ambition must be made to counteract ambition," he is defending:',
+    mentorHint: 'Madison assumes officials will seek power, so the design has to channel that motive instead of pretending it disappears. Look for the structure that lets each branch resist overreach by the others.',
     correct: 'Checks and balances that give each branch the means and motive to resist encroachment by the others',
     wrong: [
       miss('A single supreme branch that absorbs the others to act decisively', 'That is the concentration of power the design is meant to prevent.', 'The phrase is about branches resisting each other, not merging.'),
@@ -100,6 +106,7 @@ export const constitution101HighTopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Congress, Lawmaking, and Representation',
     title: 'How a bill becomes law',
     prompt: 'A bill has passed the House but not the Senate. Constitutionally, what is its status?',
+    mentorHint: 'Article I lawmaking requires bicameralism and presentment. Before something is a federal statute, the same text must clear both chambers and then go to the president.',
     correct: 'It is not yet law; identical text must pass both chambers and then be presented to the president',
     wrong: [
       miss('It is already law because the House represents the whole country', 'The House alone cannot enact a statute; bicameral passage is required.', 'Recall how many chambers must agree.'),
@@ -115,6 +122,7 @@ export const constitution101HighTopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Congress, Lawmaking, and Representation',
     title: 'Trustee vs. delegate representation',
     prompt: 'A senator votes against a bill her constituents support because she believes it will harm the country long-term. This best illustrates which model of representation?',
+    mentorHint: 'Representation models ask whether an elected official mirrors constituents or uses independent judgment. Pay attention to whether the senator follows expressed preferences or chooses what she thinks serves the broader public good.',
     correct: 'The trustee model, in which a representative uses independent judgment about the broader good',
     wrong: [
       miss('The delegate model, mirroring constituents\' expressed wishes', 'A delegate would have voted with constituents; she did the opposite.', 'Delegates follow the district; she overrode it.'),
@@ -130,6 +138,7 @@ export const constitution101HighTopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'The Presidency, Administration, and Emergency Power',
     title: 'Limits of an executive order',
     prompt: 'Which statement about executive orders is accurate?',
+    mentorHint: 'Executive orders are directives inside the executive branch, not constitutional amendments or statutes. Test any option by asking whether the order stays within existing constitutional and statutory authority.',
     correct: 'An executive order directs the executive branch but cannot override the Constitution or a valid statute, and courts can strike it down',
     wrong: [
       miss('An executive order has the same force as a constitutional amendment', 'Amendments require the Article V process; an order is an executive directive, far lower in authority.', 'Compare an order to a statute and the Constitution.'),
@@ -145,6 +154,7 @@ export const constitution101HighTopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Courts, Judicial Review, and Constitutional Argument',
     title: 'Origin of judicial review',
     prompt: 'Where does the Supreme Court\'s power to strike down a law as unconstitutional come from?',
+    mentorHint: 'Judicial review is central to modern constitutional law, but it is not written out as a simple sentence in Article III. Think of the landmark early case where the Court announced the power while deciding a dispute over a commission.',
     correct: 'It was established by the Court itself in Marbury v. Madison (1803), not stated explicitly in the Constitution',
     wrong: [
       miss('An explicit clause in Article III granting it', 'Article III does not expressly grant judicial review; the power was established by precedent.', 'Check whether the text actually says it.'),
@@ -160,6 +170,7 @@ export const constitution101HighTopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Civil Liberties and the Bill of Rights',
     title: 'Student speech at school',
     prompt: 'In Tinker v. Des Moines (1969), the Supreme Court held that students wearing armbands to protest a war:',
+    mentorHint: 'Tinker protects student expression but allows schools to maintain order. The key test is whether officials have more than dislike or discomfort: they need a real forecast of substantial disruption.',
     correct: 'Were protected by the First Amendment unless the speech would substantially disrupt school operations',
     wrong: [
       miss('Have no free-speech rights at all once inside a public school', 'Tinker famously said students do not "shed their constitutional rights at the schoolhouse gate."', 'Recall the schoolhouse-gate language.'),
@@ -175,6 +186,7 @@ export const constitution101HighTopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Reconstruction, Equal Protection, Voting, and Civic Participation',
     title: 'Matching the Reconstruction Amendments',
     prompt: 'Which pairing of a Reconstruction Amendment with its main effect is correct?',
+    mentorHint: 'Treat the Reconstruction Amendments as a sequence after the Civil War: slavery, citizenship/equal legal protection, and race-based voting exclusion. Sort each amendment by the problem it was designed to address.',
     correct: 'The 13th Amendment abolished slavery; the 14th guaranteed citizenship, due process, and equal protection; the 15th barred denying the vote based on race',
     wrong: [
       miss('The 13th gave women the vote; the 14th abolished slavery; the 15th set term limits', 'The 19th Amendment (1920) gave women the vote; the 13th abolished slavery, not the 14th; term limits are unrelated.', 'Re-sort which amendment did each thing.'),

@@ -13,6 +13,7 @@ type ImportedMathQuestion = {
   chapter: string
   title: string
   prompt: string
+  mentorHint?: string
   correct: string
   wrong: [string, string, string][]
   sourceId: string
@@ -25,6 +26,7 @@ const q = ({
   chapter,
   title,
   prompt,
+  mentorHint,
   correct,
   wrong,
   sourceId,
@@ -35,6 +37,7 @@ const q = ({
   chapter,
   title,
   prompt,
+  ...(mentorHint ? { mentorHint } : {}),
   correct,
   wrong,
   lesson: `Third-pass conversion from ${sourceName} raw math item ${sourceId}. ${sourceUrl ? `Source URL: ${sourceUrl}. ` : ''}Selected because the raw prompt or advice exposed a stable concept that could be reviewed as fixed-choice practice without importing applets, random-variable rendering, or diagrams.`,
@@ -47,6 +50,7 @@ const _baseNumbasWebworkThirdAlgebraQuestions = makeQuestionBank('Mathematics', 
     chapter: 'Logarithmic Equations',
     title: 'Undoing a logarithm',
     prompt: 'To solve log_a(bx + c) = d, what is the key first algebraic move?',
+    mentorHint: 'A logarithm equation can often be solved by translating it into exponential form. Remember that log base a of an argument equals the exponent needed on a to produce that argument.',
     correct: 'Rewrite it as bx + c = a^d',
     wrong: [
       miss('Rewrite it as bx + c = d^a', 'The logarithm base becomes the base of the exponential expression.', 'Ask what power of a gives the log argument.'),
@@ -62,6 +66,7 @@ const _baseNumbasWebworkThirdAlgebraQuestions = makeQuestionBank('Mathematics', 
     chapter: 'Quadratics',
     title: 'Factoring x^2 + bx + c',
     prompt: 'When factoring x^2 + bx + c as (x + m)(x + n), what must m and n do?',
+    mentorHint: 'Expand (x + m)(x + n) mentally: the middle coefficient comes from m + n, while the constant term comes from mn. Factoring is the reverse of matching those two relationships.',
     correct: 'Add to b and multiply to c',
     wrong: [
       miss('Add to c and multiply to b', 'The middle coefficient comes from m + n, while the constant comes from mn.', 'Expand (x + m)(x + n).'),
@@ -77,6 +82,7 @@ const _baseNumbasWebworkThirdAlgebraQuestions = makeQuestionBank('Mathematics', 
     chapter: 'Exponential Models',
     title: 'Half-life model',
     prompt: 'In a half-life model, what happens to the amount of substance after each full half-life period?',
+    mentorHint: 'Half-life is a multiplicative decay model, not a fixed subtraction model. Each equal time interval keeps the same fraction of the current amount, so the absolute amount lost gets smaller over time.',
     correct: 'It is multiplied by 1/2',
     wrong: [
       miss('It decreases by the same fixed number of units', 'Half-life is multiplicative decay, not constant subtraction.', 'Each period keeps the same fraction.'),
@@ -95,6 +101,7 @@ const _baseNumbasWebworkThirdTrigonometryQuestions = makeQuestionBank('Mathemati
     chapter: 'Sinusoidal Graphs',
     title: 'Amplitude in trig graphs',
     prompt: 'For a sinusoidal graph y = A sin(Bx + C), what does |A| determine?',
+    mentorHint: 'In a sinusoidal model, the outside multiplier controls vertical stretch from the midline. The amplitude is a distance, so it uses an absolute value and is not affected by whether the graph is reflected.',
     correct: 'The amplitude',
     wrong: [
       miss('The period', 'The period depends on B, not the outside multiplier A.', 'Amplitude measures vertical size.'),
@@ -109,6 +116,7 @@ const _baseNumbasWebworkThirdTrigonometryQuestions = makeQuestionBank('Mathemati
     chapter: 'Reference Angles',
     title: 'Reference angle meaning',
     prompt: 'What is a reference angle?',
+    mentorHint: 'A reference angle strips an angle down to its acute angle with the x-axis. It helps transfer special-angle trig values across quadrants while the quadrant determines the signs.',
     correct: 'The acute angle between the terminal side and the x-axis',
     wrong: [
       miss('The original angle plus 360 degrees', 'That creates a coterminal angle, not a reference angle.', 'Reference angles are always acute or zero in standard work.'),
@@ -123,6 +131,7 @@ const _baseNumbasWebworkThirdTrigonometryQuestions = makeQuestionBank('Mathemati
     chapter: 'Unit Circle',
     title: 'Coordinates on the unit circle',
     prompt: 'For an angle theta in standard position on the unit circle, what do the terminal point coordinates represent?',
+    mentorHint: 'The unit circle defines cosine and sine as coordinates of the terminal point. Read the ordered pair as x-coordinate first and y-coordinate second, then connect those to horizontal and vertical displacement.',
     correct: '(cos(theta), sin(theta))',
     wrong: [
       miss('(sin(theta), cos(theta))', 'The x-coordinate is cosine and the y-coordinate is sine.', 'Read coordinates left to right as x then y.'),
@@ -140,6 +149,7 @@ const _baseNumbasWebworkThirdCalculusQuestions = makeQuestionBank('Mathematics',
     chapter: 'Product Rule',
     title: 'Derivative of a product',
     prompt: 'If y = u(x)v(x), which expression matches the product rule?',
+    mentorHint: 'The derivative of a product is not the product of the derivatives. Differentiate one factor while holding the other unchanged, then repeat with the roles reversed and add the two terms.',
     correct: "u'(x)v(x) + u(x)v'(x)",
     wrong: [
       miss("u'(x)v'(x)", 'The product rule is not just the product of derivatives.', 'Each term differentiates one factor and leaves the other unchanged.'),
@@ -155,6 +165,7 @@ const _baseNumbasWebworkThirdCalculusQuestions = makeQuestionBank('Mathematics',
     chapter: 'Exponential Derivatives',
     title: 'Derivative of e^u',
     prompt: 'When differentiating e^(u(x)), what does the chain rule add?',
+    mentorHint: 'The exponential e^u keeps its own shape under differentiation, but a composite exponent still contributes an inside derivative. Think outer derivative evaluated at u, multiplied by u prime.',
     correct: 'A factor of u prime(x)',
     wrong: [
       miss('A factor of ln(u)', 'The derivative of e^u is e^u times the derivative of u, not ln(u).', 'Differentiate the exponent.'),
@@ -170,6 +181,7 @@ const _baseNumbasWebworkThirdCalculusQuestions = makeQuestionBank('Mathematics',
     chapter: 'Integration',
     title: 'Constant of integration',
     prompt: 'Why do indefinite integrals include a + C term?',
+    mentorHint: 'Indefinite integration recovers a whole family of antiderivatives, not just one function. Because constants have derivative zero, the derivative information cannot tell which vertical shift was present.',
     correct: 'Functions that differ by a constant have the same derivative',
     wrong: [
       miss('Because every antiderivative must pass through the origin', 'The constant means antiderivatives can be shifted vertically.', 'A whole family of functions has the same derivative.'),
@@ -188,6 +200,7 @@ const _baseNumbasWebworkThirdLinearAlgebraQuestions = makeQuestionBank('Mathemat
     chapter: 'Matrix Dimensions',
     title: 'Order of a matrix',
     prompt: 'The order or size of a matrix is written m x n. What do m and n represent?',
+    mentorHint: 'Matrix order is a shape description using rows first and columns second. Think of m as how many horizontal lines of entries there are and n as how many entries appear across each row.',
     correct: 'm rows and n columns',
     wrong: [
       miss('m columns and n rows', 'Matrix order is rows first, then columns.', 'Read the size from top-to-bottom count first.'),
@@ -203,6 +216,7 @@ const _baseNumbasWebworkThirdLinearAlgebraQuestions = makeQuestionBank('Mathemat
     chapter: 'Matrix Arithmetic',
     title: 'Adding matrices',
     prompt: 'How are two matrices of the same size added?',
+    mentorHint: 'Matrix addition requires the same dimensions because each entry needs a matching partner. The result keeps the same shape, with each position formed from the two entries in that same position.',
     correct: 'Add corresponding entries',
     wrong: [
       miss('Multiply rows of the first by columns of the second', 'That describes matrix multiplication, not addition.', 'Addition is entry by entry.'),
@@ -218,6 +232,7 @@ const _baseNumbasWebworkThirdLinearAlgebraQuestions = makeQuestionBank('Mathemat
     chapter: 'Matrix Multiplication',
     title: 'Rows times columns',
     prompt: 'In matrix multiplication AB, how is an entry of the product formed?',
+    mentorHint: 'Each product entry combines one row from the left matrix with one column from the right matrix. This row-column dot product is why the inner dimensions must match for multiplication to be defined.',
     correct: 'Take a dot product of a row of A with a column of B',
     wrong: [
       miss('Add entries in the same positions of A and B', 'That is matrix addition, not multiplication.', 'Multiplication pairs rows with columns.'),
@@ -236,6 +251,7 @@ const _baseNumbasWebworkThirdStatisticsQuestions = makeQuestionBank('Statistics'
     chapter: 'Summary Statistics',
     title: 'Outliers and resistant measures',
     prompt: 'For data with strong outliers, which pair is usually a better summary of center and spread?',
+    mentorHint: 'Outliers can pull summaries that use all numerical magnitudes, especially the mean and standard deviation. Resistant summaries focus on order and the middle portion of the data, which makes them better for skewed or outlier-heavy distributions.',
     correct: 'Median and interquartile range',
     wrong: [
       miss('Mean and standard deviation', 'Both can be pulled strongly by outliers.', 'Use resistant summaries for skewed data or outliers.'),
@@ -251,6 +267,7 @@ const _baseNumbasWebworkThirdStatisticsQuestions = makeQuestionBank('Statistics'
     chapter: 'Summary Statistics',
     title: 'Location versus spread',
     prompt: 'Which measure describes spread rather than location?',
+    mentorHint: 'Location measures describe where the data are centered, while spread measures describe how dispersed they are. Look for a statistic based on a distance or interval between parts of the data.',
     correct: 'Interquartile range',
     wrong: [
       miss('Mean', 'The mean is a measure of center or location.', 'Spread describes how values vary.'),
@@ -266,6 +283,7 @@ const _baseNumbasWebworkThirdStatisticsQuestions = makeQuestionBank('Statistics'
     chapter: 'Independent Events',
     title: 'Multiplication rule',
     prompt: 'If events A and B are independent, how do you find P(A and B)?',
+    mentorHint: 'For independent events, knowing that one event occurred does not update the probability of the other. The joint probability of both events happening uses the product rule for independent intersections.',
     correct: 'P(A) times P(B)',
     wrong: [
       miss('P(A) plus P(B)', 'Adding probabilities is for union-style questions with overlap handled separately.', 'Independent joint probability multiplies.'),
@@ -292,4 +310,3 @@ export const numbasWebworkThirdTrigonometryQuestions = runPolish(_baseNumbasWebw
 export const numbasWebworkThirdCalculusQuestions = runPolish(_baseNumbasWebworkThirdCalculusQuestions, _numbasBundle)
 export const numbasWebworkThirdLinearAlgebraQuestions = runPolish(_baseNumbasWebworkThirdLinearAlgebraQuestions, _numbasBundle)
 export const numbasWebworkThirdStatisticsQuestions = runPolish(_baseNumbasWebworkThirdStatisticsQuestions, _numbasBundle)
-

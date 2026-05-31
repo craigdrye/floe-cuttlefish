@@ -10,6 +10,7 @@ export const professionalEthicsTopUpQuestions: Question[] = makeQuestionBank('Ca
     chapter: 'Integrity, Role Duties, and the Law/Ethics Gap',
     title: 'Loyalty vs care',
     prompt: 'A board director quietly steers a contract to a company they secretly own. Of the two core fiduciary duties, which one does this most directly breach?',
+    mentorHint: 'Separate fiduciary duties by the kind of failure involved. Care asks whether the decision-maker used reasonable diligence and information, while loyalty asks whether personal interest displaced the organization’s interest.',
     correct: 'The duty of loyalty, because the director must serve the organization’s interests, not their own',
     wrong: [
       miss('The duty of care, because the director failed to gather enough information', 'Care governs how diligently and how informed a decision is made, not whose interest it serves. The flaw here is self-dealing, which is a loyalty problem.', 'Ask whether the issue is sloppy diligence or divided allegiance.'),
@@ -25,6 +26,7 @@ export const professionalEthicsTopUpQuestions: Question[] = makeQuestionBank('Ca
     chapter: 'Stakeholders, Harms, and Incentives',
     title: 'Facilitating payment',
     prompt: 'Under the U.S. Foreign Corrupt Practices Act (FCPA), which payment to a foreign official falls within the narrow "facilitating payment" exception rather than counting as prohibited bribery?',
+    mentorHint: 'The key distinction is routine versus discretionary official action. A facilitating payment, where recognized, concerns speeding up something the official is already obligated to do, not influencing a judgment call or winning business.',
     correct: 'A small payment to speed up a routine, non-discretionary act the official is already required to perform, such as processing a standard permit',
     wrong: [
       miss('A payment to persuade an official to award your firm a competitive contract', 'Influencing a discretionary decision such as a contract award is the core conduct the FCPA prohibits, not a facilitating payment.', 'The exception covers timing of routine acts, never winning discretionary business.'),
@@ -40,6 +42,7 @@ export const professionalEthicsTopUpQuestions: Question[] = makeQuestionBank('Ca
     chapter: 'Ethical Frameworks That Actually Help',
     title: 'The publicity test',
     prompt: 'A manager weighing a borderline decision asks, "Would I be comfortable if this choice were reported on the front page of tomorrow’s newspaper and read by my family and a regulator?" Which ethical heuristic is this?',
+    mentorHint: 'This kind of test asks whether a decision depends on secrecy to feel acceptable. It is different from calculating net benefits or designing fair rules; it checks transparency, accountability, and reputational defensibility.',
     correct: 'The publicity (newspaper or sunlight) test, which probes whether a decision can withstand public scrutiny',
     wrong: [
       miss('A cost-benefit analysis, which totals the expected harms and benefits', 'Cost-benefit weighing is consequentialist arithmetic; the publicity test instead asks whether the choice survives transparency and accountability.', 'This heuristic is about disclosure, not adding up outcomes.'),
@@ -55,6 +58,7 @@ export const professionalEthicsTopUpQuestions: Question[] = makeQuestionBank('Ca
     chapter: 'Speaking Up, Escalation, and Documentation',
     title: 'Dodd-Frank vs SOX',
     prompt: 'A U.S. public-company employee wants the strongest anti-retaliation protection available under the Dodd-Frank Act’s whistleblower provisions. To secure that specific protection, what does the law generally require of how they report?',
+    mentorHint: 'Whistleblower statutes often protect different reporting channels. Compare internal reporting protections with the special Dodd-Frank route tied to securities regulators, then ask which channel triggers that particular remedy.',
     correct: 'They generally must report the potential securities-law violation to the SEC, not only internally',
     wrong: [
       miss('They only need to report internally to a supervisor, and Dodd-Frank covers it automatically', 'That broad internal-reporting protection comes from Sarbanes-Oxley Section 806; Dodd-Frank’s anti-retaliation provision generally requires a report to the SEC.', 'Internal-only reporting is the SOX path, not the Dodd-Frank path.'),
@@ -70,6 +74,7 @@ export const professionalEthicsTopUpQuestions: Question[] = makeQuestionBank('Ca
     chapter: 'Fair Process, Investigations, and Bias',
     title: 'Four-fifths rule',
     prompt: 'An HR team checks a hiring test for bias using the EEOC’s "four-fifths rule." Under that rule of thumb, a selection procedure generally triggers an adverse-impact concern when one group’s selection rate is:',
+    mentorHint: 'Adverse impact looks for a substantial selection-rate disparity between groups, not simply a low overall hiring rate. The four-fifths rule uses the highest-selected group as the comparison point and asks whether another group falls far below it.',
     correct: 'Less than 80 percent (four-fifths) of the selection rate of the highest-selected group',
     wrong: [
       miss('More than 80 percent above the average selection rate of all groups', 'The rule compares a group to the highest-selected group, not to an average, and flags rates that fall below four-fifths, not rates that exceed a threshold.', 'It looks for rates that fall short of the top group, not rates that run high.'),
@@ -85,6 +90,7 @@ export const professionalEthicsTopUpQuestions: Question[] = makeQuestionBank('Ca
     chapter: 'Ethical Culture and Control Design',
     title: 'Normalization of deviance',
     prompt: 'A team repeatedly skips a safety step, sees no immediate disaster, and over time treats the shortcut as the standard way of working. Sociologist Diane Vaughan named this organizational failure mode:',
+    mentorHint: 'Look for a process that changes gradually because repeated violations seem harmless. This is not mainly about one bad decision or pressure to agree; it is about an unsafe exception becoming the new normal.',
     correct: 'Normalization of deviance, where an unsafe practice gradually becomes accepted because nothing bad has happened yet',
     wrong: [
       miss('Groupthink, where the desire for consensus suppresses dissent and critical evaluation', 'Groupthink is about a group prioritizing agreement over scrutiny in a decision; normalization of deviance is the slow drift of a rule-breaking practice into the routine.', 'One is silenced dissent in a meeting; the other is a creeping standard over time.'),
@@ -100,6 +106,7 @@ export const professionalEthicsTopUpQuestions: Question[] = makeQuestionBank('Ca
     chapter: 'Fair Process, Investigations, and Bias',
     title: 'Hear the other side',
     prompt: 'During a misconduct investigation, a manager is ready to issue a final decision against the respondent before the respondent has been told the allegations or given any chance to answer. Which core principle of fair process is most directly violated?',
+    mentorHint: 'Fair process is not only about the eventual penalty; it is also about the steps before judgment. Ask whether the person affected has notice of the claim and a meaningful chance to respond before the decision hardens.',
     correct: 'The right to be heard: a respondent should know the allegations and have a genuine opportunity to respond before a decision is made',
     wrong: [
       miss('Proportionality, which requires the penalty to match the severity of the conduct', 'Proportionality concerns whether the sanction fits the offense; the violation here happens earlier, by deciding without letting the respondent answer at all.', 'The flaw is no chance to respond, not a mismatched penalty.'),

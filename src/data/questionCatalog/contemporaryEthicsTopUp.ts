@@ -10,6 +10,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'What Ethical Theory Is For',
     title: 'Reflective Equilibrium',
     prompt: 'In the method of reflective equilibrium, what makes the procedure distinctive compared with simply listing your moral intuitions?',
+    mentorHint: 'Think of this method as a coherence-seeking conversation between general principles and particular case judgments. The distinctive move is that neither side is immune from revision when the whole pattern fails to fit.',
     correct: 'It allows revision in both directions: a principle may be rejected because of a case, or a case judgment may be overturned because of a principle.',
     wrong: [
       miss('It treats considered intuitions as fixed data points that principles must always accommodate.', 'That is one-directional fitting, not equilibrium; equilibrium permits giving up an intuition when a strong principle conflicts with it.', 'Ask whether either side of the principle/intuition pair is allowed to give way.'),
@@ -25,6 +26,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'What Ethical Theory Is For',
     title: 'The Is-Ought Gap',
     prompt: 'Hume\'s "is-ought" observation is best understood as the claim that:',
+    mentorHint: 'Track the grammar of the inference: descriptive premises say what is the case, while normative conclusions say what ought to be done. Facts can matter morally, but a value-bridging premise is needed to turn description into obligation.',
     correct: 'A conclusion containing an "ought" cannot be validly derived from premises that are purely descriptive ("is") without some additional normative premise.',
     wrong: [
       miss('Factual claims are irrelevant to moral reasoning and should be ignored.', 'The gap does not say facts are irrelevant; it says facts alone cannot entail an obligation without a connecting value premise.', 'Facts can support moral arguments once a normative premise links them.'),
@@ -40,6 +42,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Moral Truth, Relativism, and Objectivity',
     title: 'Expressivism',
     prompt: 'According to metaethical expressivism, when a person sincerely asserts "Cruelty is wrong," they are primarily:',
+    mentorHint: 'Expressivism is a non-cognitivist view, so ask whether the sentence is functioning like a description of a fact or like the expression of an attitude. Do not collapse it into subjectivism, which still treats the claim as reporting a psychological fact about the speaker.',
     correct: 'Expressing a non-cognitive attitude of disapproval rather than describing a moral fact.',
     wrong: [
       miss('Reporting the fact that they personally disapprove of cruelty.', 'That is subjectivism, which makes the sentence a true/false description of the speaker\'s psychology; expressivism denies the sentence describes anything.', 'Expressing an attitude differs from reporting that you have it.'),
@@ -55,6 +58,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Moral Truth, Relativism, and Objectivity',
     title: 'Open Question Argument',
     prompt: 'G. E. Moore\'s open question argument is designed to show that:',
+    mentorHint: 'Moore is testing proposed definitions of "good" by asking whether the follow-up question still feels meaningful. If "good" really meant the same thing as a natural property, asking whether that property is good would be as trivial as asking whether bachelors are unmarried.',
     correct: 'Goodness cannot be defined as any natural property, because for any proposed definition "Is this good?" remains a meaningful, open question.',
     wrong: [
       miss('Moral judgments are merely expressions of emotion with no cognitive content.', 'That is emotivism; Moore was a non-naturalist realist who held goodness is a real but non-natural, indefinable property.', 'Moore argues about definability, not about whether moral claims express emotion.'),
@@ -70,6 +74,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Moral Truth, Relativism, and Objectivity',
     title: 'Relativism vs Tolerance',
     prompt: 'A common objection to using metaethical relativism to ground a duty of tolerance is that:',
+    mentorHint: 'Relativism can explain why different cultures endorse different norms, but grounding a universal duty requires a standard that reaches beyond any one culture. Ask whether the argument secretly relies on the kind of cross-cultural norm relativism denies.',
     correct: 'If all moral truth is relative to a culture, then "you ought to tolerate other cultures" is itself only true relative to some cultures, so it cannot be a universal duty.',
     wrong: [
       miss('Tolerance is impossible to practice in a pluralistic society.', 'The objection is logical, not practical; it concerns whether relativism can support tolerance as a universal norm, not whether tolerance is feasible.', 'Focus on the consistency of relativism plus universal tolerance.'),
@@ -85,6 +90,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Reasons, Motivation, and Moral Responsibility',
     title: 'Motivational Internalism',
     prompt: 'Motivational internalism in metaethics is the thesis that:',
+    mentorHint: 'The internalism/externalism debate is about the connection between moral judgment and motivation. Keep it separate from debates about whether moral facts exist, what makes acts right, or how moral knowledge is acquired.',
     correct: 'A necessary connection holds between sincerely judging an act right and being at least somewhat motivated to do it.',
     wrong: [
       miss('Moral facts exist only inside the agent\'s mind and not in the external world.', 'That conflates motivational internalism with metaethical anti-realism; internalism here is about the judgment-motivation link, not where facts reside.', 'Internalism here concerns motivation, not the location of moral facts.'),
@@ -100,6 +106,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Reasons, Motivation, and Moral Responsibility',
     title: 'Moral Luck',
     prompt: 'A drunk driver who reaches home safely and an equally drunk driver who, through no further fault, strikes a pedestrian who stepped out unexpectedly illustrate which kind of moral luck?',
+    mentorHint: 'Moral luck appears when blame changes because of something outside the agent\'s control. Compare whether the two agents differ in character, situation, or merely in how the risky action happens to turn out.',
     correct: 'Resultant moral luck — luck in how the agent\'s actions turn out.',
     wrong: [
       miss('Constitutive moral luck — luck in the kind of person one is.', 'Constitutive luck concerns temperament and character one did not choose; here the difference is purely in outcome, not in who the agents are.', 'Ask whether the cases differ in character or only in result.'),
@@ -115,6 +122,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Reasons, Motivation, and Moral Responsibility',
     title: 'Excuse vs Justification',
     prompt: 'In ethics and law, the key difference between a justification and an excuse is that:',
+    mentorHint: 'A defense can target either the act or the agent. Ask whether the claim says the conduct was permissible in context, or instead admits the conduct was wrong while arguing the person should not be blamed.',
     correct: 'A justification claims the act was not wrong given the circumstances, while an excuse concedes the act was wrong but argues the agent is not blameworthy.',
     wrong: [
       miss('A justification reduces the penalty, while an excuse eliminates it entirely.', 'Both can affect penalties in various ways; the real distinction is about the wrongness of the act versus the culpability of the agent, not the size of the penalty.', 'Ask whether the claim is "not wrong" or "wrong but not my fault."'),
@@ -130,6 +138,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Normative Theories Under Pressure',
     title: 'Scanlon\'s Contractualism',
     prompt: 'On Scanlon\'s contractualism, an act is wrong when:',
+    mentorHint: 'Scanlon\'s test is about whether principles can be justified to each person, not whether total welfare is maximized. Focus on reasonable rejection by individuals rather than aggregation, historical agreement, or the agent\'s private maxim.',
     correct: 'It is disallowed by any set of principles for the general regulation of behavior that no one could reasonably reject.',
     wrong: [
       miss('It fails to maximize aggregate well-being summed across everyone affected.', 'That is the utilitarian criterion; Scanlon\'s contractualism explicitly rejects aggregation in favor of what individuals could reasonably reject.', 'Contractualism centers reasonable rejection by individuals, not a sum of welfare.'),
@@ -145,6 +154,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Normative Theories Under Pressure',
     title: 'The Demandingness Objection',
     prompt: 'The "demandingness objection" is most directly a challenge to which feature of act consequentialism?',
+    mentorHint: 'Act consequentialism evaluates each action by whether it produces the best overall outcome. The pressure point is what that impartial maximizing demand seems to require of a person\'s time, money, relationships, and projects.',
     correct: 'Its impartial requirement to always produce the best outcome, which can demand enormous personal sacrifice and leaves little room for personal projects.',
     wrong: [
       miss('Its reliance on rules that cannot bend to exceptional circumstances.', 'That rigidity objection targets rule-based deontology, not the maximizing impartiality of consequentialism.', 'Demandingness is about how much sacrifice is required, not about rigid rules.'),
@@ -160,6 +170,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Normative Theories Under Pressure',
     title: 'Doctrine of Double Effect',
     prompt: 'Under the doctrine of double effect, a harmful side effect of an otherwise good act may be permissible only if, among other conditions:',
+    mentorHint: 'Double effect is not just a cost-benefit test; it asks how the bad effect is related to the agent\'s intention. Distinguish a harm used as the means from a harm that is foreseen, unintended, and proportionate.',
     correct: 'The harm is foreseen but not intended as a means or an end, and is proportionate to the good achieved.',
     wrong: [
       miss('The harm produces, on balance, more total happiness than any alternative.', 'That is a purely consequentialist test; double effect is deontological and turns on intention and the means/side-effect distinction, not net happiness.', 'Double effect cares how the harm relates to the intention, not just the totals.'),
@@ -175,6 +186,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Normative Theories Under Pressure',
     title: 'Care Ethics',
     prompt: 'Care ethics, associated with Gilligan and Noddings, distinctively challenges mainstream moral theory by emphasizing that:',
+    mentorHint: 'Care ethics pushes against pictures of morality that begin only with impartial rules or aggregate welfare. Look for attentiveness, dependency, responsiveness, and the moral importance of particular relationships.',
     correct: 'Morality is grounded in concrete relationships, responsiveness to particular others, and attentiveness, rather than only in impartial universal principles.',
     wrong: [
       miss('Only consequences for aggregate welfare determine what we morally ought to do.', 'That is consequentialism, which care ethics critiques for ignoring relationships and partiality.', 'Care ethics foregrounds relationships, not aggregate welfare.'),
@@ -190,6 +202,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Technology, AI, and Human Agency',
     title: 'Incompatible Fairness Metrics',
     prompt: 'A well-known result in algorithmic fairness shows that, except in trivial cases, a risk-scoring system generally cannot simultaneously satisfy:',
+    mentorHint: 'Algorithmic fairness has multiple formal definitions, and they can conflict when groups have different base rates. Compare calibration, which concerns what a score means within each group, with error-rate parity, which concerns false positives and false negatives.',
     correct: 'Calibration across groups and equal false-positive and false-negative rates across groups, when base rates differ.',
     wrong: [
       miss('Accuracy and speed of prediction at the same time.', 'The impossibility result is about competing fairness criteria, not a trade-off between accuracy and latency.', 'The conflict is among definitions of fairness, not performance speed.'),
@@ -205,6 +218,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Technology, AI, and Human Agency',
     title: 'The Responsibility Gap',
     prompt: 'The "responsibility gap" in machine ethics refers to the worry that:',
+    mentorHint: 'Responsibility usually depends on capacities like control, foreseeability, and blameworthiness. The gap arises when an autonomous system causes harm in a way no human actor fully controlled or predicted, while the machine is not itself an ordinary moral agent.',
     correct: 'When an autonomous system causes harm through learned behavior no human fully foresaw or controlled, it becomes unclear who can be fairly held responsible.',
     wrong: [
       miss('Autonomous systems will inevitably become moral agents that deserve blame themselves.', 'The gap is precisely the problem that current systems are not apt subjects of blame, leaving a gap among the humans, not a claim that machines are moral agents.', 'The worry is that no suitable human bearer of responsibility remains, not that machines qualify.'),
@@ -220,6 +234,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Global Justice, Climate, and Future People',
     title: 'The Non-Identity Problem',
     prompt: 'Parfit\'s non-identity problem poses a puzzle because, in cases like resource depletion that lowers future quality of life:',
+    mentorHint: 'Person-affecting views ask whether a choice is worse for some particular person. Parfit\'s puzzle is that long-term policies can determine which people exist at all, making it hard to say a later person was harmed by the policy that made their existence possible.',
     correct: 'The same policy choice also determines which people come to exist, so those future people are not made worse off than they would otherwise have been, since otherwise they would not have existed at all.',
     wrong: [
       miss('Future people do not yet exist, so they have no interests we could ever weigh.', 'Parfit grants future people will have interests; the puzzle is not their non-existence now but that our choice fixes their identity.', 'The issue is identity-dependence of the choice, not that the future is unknowable.'),
@@ -235,6 +250,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Global Justice, Climate, and Future People',
     title: 'Social Discount Rate',
     prompt: 'In climate economics and ethics, choosing a higher pure rate of time preference (a higher social discount rate) tends to:',
+    mentorHint: 'Discounting translates future costs and benefits into present value, but the rate chosen carries ethical weight. A higher rate makes distant harms count for less today, so ask how that changes the apparent urgency of protecting future people.',
     correct: 'Reduce the present value assigned to future harms and benefits, making aggressive near-term mitigation look less worthwhile.',
     wrong: [
       miss('Increase the weight given to distant future generations.', 'A higher discount rate does the opposite: it shrinks the present-day weight of distant costs and benefits.', 'Higher discounting means future effects count for less today, not more.'),
@@ -250,6 +266,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Bodies, Life, and Moral Status',
     title: 'Speciesism and Marginal Cases',
     prompt: 'Peter Singer\'s "argument from marginal cases" against speciesism contends that:',
+    mentorHint: 'The argument tests whether a proposed threshold for moral consideration can be applied consistently. If rationality or language excludes animals, ask what follows for humans who lack those capacities yet still seem to matter morally.',
     correct: 'If we deny moral consideration to animals for lacking traits like rationality, consistency requires denying it to humans who also lack those traits — which we reject, so mere species membership cannot be the relevant criterion.',
     wrong: [
       miss('Animals have exactly the same rights as typical adult humans in all respects.', 'Singer argues for equal consideration of comparable interests, not identical rights across all cases; the marginal-cases argument targets the criterion for consideration.', 'The argument attacks species membership as the criterion, not all differences in treatment.'),
@@ -265,6 +282,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Bodies, Life, and Moral Status',
     title: 'QALYs and Hidden Values',
     prompt: 'A central ethical criticism of using QALYs (quality-adjusted life years) to allocate health resources is that:',
+    mentorHint: 'A QALY combines length of life with a quality-of-life weight, which makes comparison easier but not value-free. Ask who may be disadvantaged when a metric treats some years of life as lower quality before allocation decisions are made.',
     correct: 'The quality weights can systematically disadvantage disabled or elderly patients, embedding contested value judgments that look like neutral measurement.',
     wrong: [
       miss('QALYs measure only the number of years gained and ignore quality entirely.', 'The opposite is true: the "quality-adjusted" part deliberately weights years by health-related quality of life.', 'A QALY combines length of life with a quality weight, so it does account for quality.'),
@@ -280,6 +298,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Public Ethics and Democratic Disagreement',
     title: 'Public Reason',
     prompt: 'Rawls\'s idea of "public reason" holds that, on fundamental political questions, citizens and officials should:',
+    mentorHint: 'Public reason responds to reasonable pluralism: citizens disagree deeply while still seeing each other as free and equal. The key is whether coercive political rules are justified by reasons others could reasonably accept, not by one group\'s comprehensive doctrine alone.',
     correct: 'Justify coercive laws by appeal to reasons others could accept as free and equal citizens, rather than by appeal to any single comprehensive doctrine.',
     wrong: [
       miss('Set aside all their moral convictions and decide purely by majority vote.', 'Public reason restricts the kinds of reasons offered, not the holding of convictions; it is about justification, not abandoning values or reducing everything to a vote.', 'It asks for shareable reasons, not the surrender of one\'s morality.'),
@@ -295,6 +314,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Public Ethics and Democratic Disagreement',
     title: 'Epistemic Injustice',
     prompt: 'In Miranda Fricker\'s account, "testimonial injustice" occurs when:',
+    mentorHint: 'Fricker distinguishes wrongs in individual credibility exchanges from structural gaps in shared concepts. Testimonial injustice concerns how a hearer evaluates a speaker\'s credibility, especially when identity prejudice distorts that evaluation.',
     correct: 'A hearer gives a speaker a deflated level of credibility because of prejudice tied to the speaker\'s social identity.',
     wrong: [
       miss('A community lacks the shared concepts needed to make sense of someone\'s experience.', 'That describes hermeneutical injustice, the other form Fricker identifies, which operates at the level of collective interpretive resources rather than a single exchange.', 'Testimonial injustice happens in an exchange; the conceptual-gap case is hermeneutical.'),
@@ -310,6 +330,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Public Ethics and Democratic Disagreement',
     title: 'Civil Disobedience',
     prompt: 'On the classic Rawlsian conception, an act of civil disobedience is typically distinguished from ordinary law-breaking by being:',
+    mentorHint: 'Civil disobedience is illegal, but its moral shape differs from evasion or private crime. Look for publicity, nonviolence, conscience, appeal to shared justice, and a willingness to accept legal consequences.',
     correct: 'A public, non-violent, conscientious breach of law done to appeal to the community\'s sense of justice, with willingness to accept the legal penalty.',
     wrong: [
       miss('A covert violation designed to evade detection and punishment.', 'Civil disobedience is openly performed and the agent typically accepts the penalty; covertness is characteristic of ordinary lawbreaking, not principled protest.', 'Publicity and acceptance of penalty are central to the Rawlsian account.'),
@@ -325,6 +346,7 @@ export const contemporaryEthicsTopUpQuestions: Question[] = makeQuestionBank('Un
     chapter: 'Method in Practice — From Theory to Recommendation',
     title: 'Decision-Making Under Moral Uncertainty',
     prompt: 'When you are genuinely uncertain which moral theory is correct, one defensible decision strategy is to:',
+    mentorHint: 'Moral uncertainty means your confidence is spread across more than one plausible theory. A principled strategy asks how options fare across those theories, especially whether any choice risks being gravely wrong even if your favorite theory permits it.',
     correct: 'Avoid options that would be catastrophic or seriously wrong on any plausible theory, even if a single favored theory permits them.',
     wrong: [
       miss('Simply act on whichever theory you find most elegant and ignore the others.', 'That ignores your own uncertainty; if you might be wrong, betting everything on one theory can court serious wrongdoing under the others.', 'Uncertainty is a reason to hedge across theories, not to commit fully to one.'),

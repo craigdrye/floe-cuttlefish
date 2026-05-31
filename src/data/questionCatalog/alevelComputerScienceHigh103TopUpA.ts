@@ -11,6 +11,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Fundamentals of programming',
     title: 'Iteration versus selection',
     prompt: 'In structured programming, which construct repeatedly executes a block of code while a condition remains true?',
+    mentorHint: 'Ask whether the construct repeats or merely decides.',
     correct: 'Iteration (a while loop)',
     wrong: [
       miss('Selection (an if statement)', 'Selection chooses between branches once; it does not repeat a block.', 'Ask whether the construct repeats or merely decides.'),
@@ -26,6 +27,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Fundamentals of programming',
     title: 'Local versus global scope',
     prompt: 'A variable declared inside a subroutine and accessible only within that subroutine is described as having what kind of scope?',
+    mentorHint: 'Consider where the variable can be referenced.',
     correct: 'Local scope',
     wrong: [
       miss('Global scope', 'A global variable is accessible throughout the whole program, not just one subroutine.', 'Consider where the variable can be referenced.'),
@@ -41,6 +43,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Fundamentals of programming',
     title: 'Pass by reference',
     prompt: 'When an argument is passed to a subroutine by reference, what is actually passed?',
+    mentorHint: 'Decide whether the original can be modified.',
     correct: 'The memory address of the variable, so changes affect the original',
     wrong: [
       miss('A copy of the value, so the original is unchanged', 'That describes passing by value, which protects the caller\'s variable.', 'Decide whether the original can be modified.'),
@@ -56,6 +59,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Fundamentals of programming',
     title: 'Definite iteration',
     prompt: 'A loop that runs a fixed, predetermined number of times is best implemented using which construct?',
+    mentorHint: 'Match a known repeat count to the right loop type.',
     correct: 'A for loop (count-controlled loop)',
     wrong: [
       miss('A while loop tested at the start', 'A while loop is condition-controlled and used when the count is not known in advance.', 'Match a known repeat count to the right loop type.'),
@@ -71,6 +75,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Fundamentals of programming',
     title: 'Integer division and modulo',
     prompt: 'Using integer division and modulo, what are the results of 17 DIV 5 and 17 MOD 5?',
+    mentorHint: 'DIV is the whole-number quotient; MOD is the remainder.',
     correct: 'DIV gives 3 and MOD gives 2',
     wrong: [
       miss('DIV gives 2 and MOD gives 3', 'The quotient and remainder have been swapped.', 'DIV is the whole-number quotient; MOD is the remainder.'),
@@ -86,6 +91,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Fundamentals of programming',
     title: 'Constants versus variables',
     prompt: 'Why might a programmer declare a value such as the rate of VAT as a named constant rather than a variable?',
+    mentorHint: 'Think about why you would forbid the value from changing.',
     correct: 'Its value should not change during execution, and a name makes the program clearer and easier to maintain',
     wrong: [
       miss('Constants run faster than every variable in all languages', 'Performance is not the defining reason; immutability and clarity are.', 'Think about why you would forbid the value from changing.'),
@@ -101,6 +107,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Fundamentals of programming',
     title: 'String slicing result',
     prompt: 'If the string "COMPUTER" is indexed from 0, what substring is given by characters at indices 3 to 6 inclusive?',
+    mentorHint: 'Count carefully: index 0 is the first character.',
     correct: 'PUTE',
     wrong: [
       miss('MPUT', 'This starts one place too early, at index 2 rather than 3.', 'Count carefully: index 0 is the first character.'),
@@ -118,6 +125,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data structures',
     title: 'Stack behaviour',
     prompt: 'A stack data structure follows which access discipline?',
+    mentorHint: 'Picture a pile of plates: which one is removed first?',
     correct: 'Last In, First Out (LIFO)',
     wrong: [
       miss('First In, First Out (FIFO)', 'FIFO describes a queue, not a stack.', 'Picture a pile of plates: which one is removed first?'),
@@ -133,6 +141,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data structures',
     title: 'Circular queue pointers',
     prompt: 'Why is a circular queue often preferred over a simple linear array-based queue?',
+    mentorHint: 'Think about space reuse, not infinite size.',
     correct: 'It reuses space freed at the front, avoiding wasted slots as the queue moves through the array',
     wrong: [
       miss('It can store an unlimited number of items', 'A circular queue still has a fixed capacity equal to the array size.', 'Think about space reuse, not infinite size.'),
@@ -148,6 +157,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data structures',
     title: 'Linked list advantage',
     prompt: 'What is a key advantage of a linked list over a static array?',
+    mentorHint: 'Consider how you reach the nth node.',
     correct: 'Nodes can be inserted or removed without shifting other elements, and size can grow dynamically',
     wrong: [
       miss('Linked lists allow direct indexed access to any element in constant time', 'You must traverse from the head, so access is not constant-time by index.', 'Consider how you reach the nth node.'),
@@ -163,6 +173,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data structures',
     title: 'Two-dimensional array indexing',
     prompt: 'A 2D array is declared as scores[4][3] (4 rows, 3 columns), indexed from 0. Which element is the last valid one?',
+    mentorHint: 'The maximum index is one less than the size.',
     correct: 'scores[3][2]',
     wrong: [
       miss('scores[4][3]', 'These indices are out of bounds; the size is 4 by 3 but the highest indices are 3 and 2.', 'The maximum index is one less than the size.'),
@@ -178,6 +189,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data structures',
     title: 'Records versus arrays',
     prompt: 'What distinguishes a record (struct) from a one-dimensional array?',
+    mentorHint: 'Records combine mixed field types.',
     correct: 'A record groups fields that may have different data types, whereas an array holds elements of the same type',
     wrong: [
       miss('A record can only hold numeric data', 'Records can hold strings, booleans and other types in different fields.', 'Records combine mixed field types.'),
@@ -193,6 +205,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data structures',
     title: 'Hash table collisions',
     prompt: 'In a hash table, what is a collision?',
+    mentorHint: 'A collision concerns two keys, not capacity.',
     correct: 'When two different keys hash to the same index',
     wrong: [
       miss('When the table becomes completely full', 'A full table relates to load factor, not the definition of a collision.', 'A collision concerns two keys, not capacity.'),
@@ -208,6 +221,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data structures',
     title: 'Binary tree traversal',
     prompt: 'Which traversal of a binary search tree visits its nodes in ascending sorted order?',
+    mentorHint: 'Recall which traversal places the root between the subtrees.',
     correct: 'In-order traversal',
     wrong: [
       miss('Pre-order traversal', 'Pre-order visits the root before its subtrees and does not yield sorted order.', 'Recall which traversal places the root between the subtrees.'),
@@ -225,6 +239,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Algorithms and complexity',
     title: 'Binary search precondition',
     prompt: 'What must be true of a list before a binary search can be used on it?',
+    mentorHint: 'The essential requirement concerns ordering.',
     correct: 'The list must be sorted',
     wrong: [
       miss('The list must contain only unique values', 'Binary search works on sorted lists even if duplicates exist.', 'The essential requirement concerns ordering.'),
@@ -240,6 +255,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Algorithms and complexity',
     title: 'Big-O of linear search',
     prompt: 'What is the worst-case time complexity of a linear search through n items?',
+    mentorHint: 'Linear search may examine every item.',
     correct: 'O(n)',
     wrong: [
       miss('O(log n)', 'Logarithmic time applies to binary search on sorted data, not linear search.', 'Linear search may examine every item.'),
@@ -255,6 +271,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Algorithms and complexity',
     title: 'Bubble sort behaviour',
     prompt: 'During one pass of a bubble sort on an unsorted list, what is guaranteed to happen?',
+    mentorHint: 'Think about how many elements are settled per pass.',
     correct: 'Adjacent out-of-order pairs are swapped, and the largest unsorted value moves to its final position',
     wrong: [
       miss('The whole list becomes fully sorted in a single pass', 'One pass only guarantees one element is placed; multiple passes are needed.', 'Think about how many elements are settled per pass.'),
@@ -270,6 +287,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Algorithms and complexity',
     title: 'Merge sort strategy',
     prompt: 'Merge sort is an example of which algorithmic design strategy?',
+    mentorHint: 'Think about how merge sort breaks the problem down.',
     correct: 'Divide and conquer',
     wrong: [
       miss('Greedy', 'Greedy algorithms make locally optimal choices step by step; merge sort splits and merges.', 'Think about how merge sort breaks the problem down.'),
@@ -285,6 +303,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Algorithms and complexity',
     title: 'Recursion components',
     prompt: 'Which two components must every correctly designed recursive algorithm contain?',
+    mentorHint: 'Recursion is defined by self-calls and a stopping condition.',
     correct: 'A base case and a recursive case that moves toward the base case',
     wrong: [
       miss('A loop counter and an accumulator variable', 'Those are features of iteration, not the defining parts of recursion.', 'Recursion is defined by self-calls and a stopping condition.'),
@@ -300,6 +319,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Algorithms and complexity',
     title: 'Dijkstra\'s algorithm purpose',
     prompt: 'What problem does Dijkstra\'s algorithm solve?',
+    mentorHint: 'It works on edge weights to find distances.',
     correct: 'Finding the shortest path from a start node to all other nodes in a weighted graph with non-negative weights',
     wrong: [
       miss('Sorting the nodes of a graph into ascending order', 'Dijkstra\'s algorithm finds paths, not a sorted ordering of nodes.', 'It works on edge weights to find distances.'),
@@ -315,6 +335,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Algorithms and complexity',
     title: 'Intractable problems',
     prompt: 'What is meant by an intractable problem in computational complexity?',
+    mentorHint: 'Intractable problems are solvable, just not efficiently.',
     correct: 'A problem that has a solution but no known algorithm that solves it in polynomial time',
     wrong: [
       miss('A problem that can never be solved by any computer', 'That describes a non-computable problem, not an intractable one.', 'Intractable problems are solvable, just not efficiently.'),
@@ -332,6 +353,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: number systems',
     title: 'Binary to denary',
     prompt: 'What is the denary (decimal) value of the unsigned binary number 10110?',
+    mentorHint: 'Add the place values of the set bits: 16, 8, 4, 2, 1.',
     correct: '22',
     wrong: [
       miss('26', 'This miscounts the place values; recheck which bits are set.', 'Add the place values of the set bits: 16, 8, 4, 2, 1.'),
@@ -347,6 +369,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: number systems',
     title: 'Hexadecimal conversion',
     prompt: 'What is the 8-bit binary number 11011010 expressed in hexadecimal?',
+    mentorHint: 'Convert the left nibble first, then the right.',
     correct: 'DA',
     wrong: [
       miss('AD', 'The two nibbles have been swapped.', 'Convert the left nibble first, then the right.'),
@@ -362,6 +385,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: number systems',
     title: 'Two\'s complement range',
     prompt: 'What is the range of integers that can be represented in 8-bit two\'s complement?',
+    mentorHint: 'Two\'s complement reserves space for negative values.',
     correct: '-128 to 127',
     wrong: [
       miss('0 to 255', 'That is the range for unsigned 8-bit numbers, which cannot represent negatives.', 'Two\'s complement reserves space for negative values.'),
@@ -377,6 +401,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: number systems',
     title: 'Negative number in two\'s complement',
     prompt: 'In 8-bit two\'s complement, what is the representation of -5?',
+    mentorHint: 'Two\'s complement requires inverting the bits and adding one.',
     correct: '11111011',
     wrong: [
       miss('10000101', 'This is sign-and-magnitude, not two\'s complement.', 'Two\'s complement requires inverting the bits and adding one.'),
@@ -392,6 +417,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: number systems',
     title: 'Binary addition overflow',
     prompt: 'Two unsigned 8-bit numbers are added and the result requires a ninth bit. What has occurred?',
+    mentorHint: 'Consider whether the result is too big or too small.',
     correct: 'Overflow, because the result exceeds the range storable in 8 bits',
     wrong: [
       miss('Underflow, because the result is too small to store', 'Underflow refers to values too small (often in floating point), not too large for the bits.', 'Consider whether the result is too big or too small.'),
@@ -407,6 +433,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: number systems',
     title: 'Floating point components',
     prompt: 'In a floating-point number, which two parts are stored?',
+    mentorHint: 'Floating point scales one part by a power.',
     correct: 'A mantissa (significand) and an exponent',
     wrong: [
       miss('A numerator and a denominator', 'That describes a rational/fraction representation, not floating point.', 'Floating point scales one part by a power.'),
@@ -422,6 +449,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: number systems',
     title: 'Range versus precision trade-off',
     prompt: 'In a fixed-size floating-point format, what is the effect of allocating more bits to the exponent and fewer to the mantissa?',
+    mentorHint: 'Bits given to one field are taken from the other.',
     correct: 'The range of representable values increases but precision decreases',
     wrong: [
       miss('Both range and precision increase', 'With a fixed total of bits, gaining range from the exponent costs mantissa precision.', 'Bits given to one field are taken from the other.'),
@@ -437,6 +465,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: number systems',
     title: 'Binary fraction value',
     prompt: 'What denary value does the unsigned binary fixed-point number 101.01 represent?',
+    mentorHint: 'Place values right of the point are 0.5 then 0.25.',
     correct: '5.25',
     wrong: [
       miss('5.5', 'The bit after the point at the 0.25 position has been misread as 0.5.', 'Place values right of the point are 0.5 then 0.25.'),
@@ -452,6 +481,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: number systems',
     title: 'Bits, bytes and nibbles',
     prompt: 'How many bits are there in one byte, and how many bits in a nibble?',
+    mentorHint: 'Recall the standard size of a byte.',
     correct: '8 bits in a byte and 4 bits in a nibble',
     wrong: [
       miss('16 bits in a byte and 8 bits in a nibble', 'A byte is 8 bits, not 16; these values are doubled.', 'Recall the standard size of a byte.'),
@@ -469,6 +499,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: text, sound and images',
     title: 'ASCII versus Unicode',
     prompt: 'Why was Unicode developed as an alternative to standard 7-bit ASCII?',
+    mentorHint: 'Think about how many characters each can represent.',
     correct: 'ASCII could represent too few characters to cover the world\'s writing systems, so Unicode provides a much larger code space',
     wrong: [
       miss('Unicode encrypts text so it cannot be read without a key', 'Unicode is a character-encoding standard, not an encryption scheme.', 'Think about how many characters each can represent.'),
@@ -484,6 +515,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: text, sound and images',
     title: 'Image colour depth',
     prompt: 'If an image uses a colour depth of 8 bits per pixel, how many distinct colours can each pixel display?',
+    mentorHint: 'Each extra bit doubles the number of available colours.',
     correct: '256',
     wrong: [
       miss('8', 'The number of bits is not the number of colours; colours grow as 2 to the power of the bits.', 'Each extra bit doubles the number of available colours.'),
@@ -499,6 +531,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: text, sound and images',
     title: 'Bitmap file size',
     prompt: 'A bitmap image is 100 pixels wide, 50 pixels tall, with a colour depth of 4 bits per pixel. What is the size of the image data in bits (ignoring headers)?',
+    mentorHint: 'Multiply width by height first, then by bit depth.',
     correct: '20000 bits',
     wrong: [
       miss('5000 bits', 'This multiplies the pixel count by the bit depth incorrectly; recount.', 'Multiply width by height first, then by bit depth.'),
@@ -514,6 +547,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: text, sound and images',
     title: 'Sound sampling rate',
     prompt: 'In digital audio, what does the sampling rate measure?',
+    mentorHint: 'Rate is about how often, per second.',
     correct: 'The number of amplitude measurements taken per second',
     wrong: [
       miss('The number of bits used to store each sample', 'That is the sample resolution (bit depth), not the sampling rate.', 'Rate is about how often, per second.'),
@@ -529,6 +563,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: text, sound and images',
     title: 'Lossless versus lossy compression',
     prompt: 'What is the defining feature of lossless compression?',
+    mentorHint: 'The defining trait is reversibility, not the compression ratio.',
     correct: 'The original data can be perfectly reconstructed from the compressed file',
     wrong: [
       miss('It always achieves a smaller file than lossy compression', 'Lossy methods usually compress more; lossless guarantees exact reconstruction, not the smallest size.', 'The defining trait is reversibility, not the compression ratio.'),
@@ -544,6 +579,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Data representation: text, sound and images',
     title: 'Run-length encoding',
     prompt: 'Run-length encoding is most effective on data that has which characteristic?',
+    mentorHint: 'RLE exploits repetition.',
     correct: 'Long runs of repeated identical values',
     wrong: [
       miss('Completely random data with no repetition', 'Random data has no repeated runs to compress and may even grow.', 'RLE exploits repetition.'),
@@ -561,6 +597,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Boolean algebra and logic gates',
     title: 'XOR truth value',
     prompt: 'For inputs A = 1 and B = 1, what is the output of an XOR gate?',
+    mentorHint: 'XOR means exclusive OR: true when inputs are unequal.',
     correct: '0',
     wrong: [
       miss('1', 'XOR outputs 1 only when the inputs differ; here they are the same.', 'XOR means exclusive OR: true when inputs are unequal.'),
@@ -576,6 +613,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Boolean algebra and logic gates',
     title: 'De Morgan\'s law',
     prompt: 'According to De Morgan\'s laws, the expression NOT (A AND B) is equivalent to which expression?',
+    mentorHint: 'Negating a bracket flips AND to OR.',
     correct: '(NOT A) OR (NOT B)',
     wrong: [
       miss('(NOT A) AND (NOT B)', 'The operator must change from AND to OR when the negation is distributed.', 'Negating a bracket flips AND to OR.'),
@@ -591,6 +629,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Boolean algebra and logic gates',
     title: 'Boolean simplification',
     prompt: 'Using Boolean algebra, the expression A AND (A OR B) simplifies to which of the following?',
+    mentorHint: 'Apply the absorption law.',
     correct: 'A',
     wrong: [
       miss('A OR B', 'This is the inner term, but the outer AND with A absorbs it.', 'Apply the absorption law.'),
@@ -606,6 +645,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Boolean algebra and logic gates',
     title: 'NAND universality',
     prompt: 'Why is the NAND gate described as a universal gate?',
+    mentorHint: 'Think about what combinations of gates it can replace.',
     correct: 'Any Boolean function can be built using only NAND gates',
     wrong: [
       miss('It is the fastest gate to switch in all circuits', 'Universality refers to functional completeness, not switching speed.', 'Think about what combinations of gates it can replace.'),
@@ -621,6 +661,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Boolean algebra and logic gates',
     title: 'Half adder outputs',
     prompt: 'A half adder takes two single-bit inputs. Which two outputs does it produce?',
+    mentorHint: 'Adders produce a carry, not a borrow.',
     correct: 'A sum bit and a carry bit',
     wrong: [
       miss('A sum bit and a borrow bit', 'A borrow is associated with subtraction, not a half adder.', 'Adders produce a carry, not a borrow.'),
@@ -638,6 +679,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Computer systems and architecture',
     title: 'Von Neumann key feature',
     prompt: 'What is the defining characteristic of the Von Neumann architecture?',
+    mentorHint: 'Consider whether one shared memory holds both.',
     correct: 'Program instructions and data are stored together in the same memory',
     wrong: [
       miss('Instructions and data are stored in physically separate memories', 'That describes the Harvard architecture, not Von Neumann.', 'Consider whether one shared memory holds both.'),
@@ -653,6 +695,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Computer systems and architecture',
     title: 'Fetch-decode-execute cycle',
     prompt: 'During the fetch stage of the fetch-decode-execute cycle, which register holds the address of the next instruction to be fetched?',
+    mentorHint: 'Think about which register tracks the instruction sequence.',
     correct: 'The Program Counter (PC)',
     wrong: [
       miss('The Memory Data Register (MDR)', 'The MDR holds data or instructions transferred to or from memory, not the next address.', 'Think about which register tracks the instruction sequence.'),
@@ -668,6 +711,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Computer systems and architecture',
     title: 'Role of the address bus',
     prompt: 'What is the function of the address bus in a computer system?',
+    mentorHint: 'The address bus specifies where, not what.',
     correct: 'It carries the location in memory that the processor wishes to read from or write to',
     wrong: [
       miss('It carries the actual data being transferred to or from memory', 'Carrying data is the role of the data bus, not the address bus.', 'The address bus specifies where, not what.'),
@@ -683,6 +727,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Computer systems and architecture',
     title: 'Address bus width and memory',
     prompt: 'If a processor has an address bus that is 16 bits wide, how many distinct memory locations can it address?',
+    mentorHint: 'Raise 2 to the power of the bus width.',
     correct: '65536',
     wrong: [
       miss('16', 'The width is the number of bits, not the number of locations; locations grow as 2 to the power of the width.', 'Raise 2 to the power of the bus width.'),
@@ -698,6 +743,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Computer systems and architecture',
     title: 'Clock speed and performance',
     prompt: 'Why does increasing a processor\'s clock speed not always give a proportional increase in real performance?',
+    mentorHint: 'It matters, but it is not the whole story.',
     correct: 'Performance also depends on factors such as cache, number of cores and the bus, so the clock is only one influence',
     wrong: [
       miss('Clock speed has no effect on performance at all', 'Clock speed does affect how many cycles occur per second; it is just not the only factor.', 'It matters, but it is not the whole story.'),
@@ -713,6 +759,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Computer systems and architecture',
     title: 'Purpose of cache memory',
     prompt: 'What is the main purpose of cache memory in a computer?',
+    mentorHint: 'Cache is about speed, not permanence.',
     correct: 'To store frequently or recently used instructions and data close to the CPU for faster access',
     wrong: [
       miss('To provide permanent storage when the computer is switched off', 'Cache is volatile and loses contents when power is removed; that is the role of secondary storage.', 'Cache is about speed, not permanence.'),
@@ -728,6 +775,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Computer systems and architecture',
     title: 'RISC versus CISC',
     prompt: 'Which statement correctly contrasts RISC and CISC processor designs?',
+    mentorHint: 'The R in RISC stands for reduced.',
     correct: 'RISC uses a small set of simple instructions executed quickly, while CISC offers more complex, multi-step instructions',
     wrong: [
       miss('RISC instructions are individually more complex than CISC instructions', 'This is reversed; CISC has the more complex instructions.', 'The R in RISC stands for reduced.'),
@@ -743,6 +791,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Computer systems and architecture',
     title: 'Interrupts',
     prompt: 'What is an interrupt in a computer system?',
+    mentorHint: 'The processor returns to what it was doing.',
     correct: 'A signal that temporarily halts the current process so the processor can attend to a higher-priority task',
     wrong: [
       miss('A permanent shutdown of the processor', 'An interrupt is temporary; the original task usually resumes afterwards.', 'The processor returns to what it was doing.'),
@@ -758,6 +807,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Computer systems and architecture',
     title: 'Primary versus secondary storage',
     prompt: 'Which statement correctly describes the difference between primary and secondary storage?',
+    mentorHint: 'Consider which level the CPU reads instructions from directly.',
     correct: 'Primary storage (such as RAM) is fast and directly accessible by the CPU, while secondary storage is slower but non-volatile and larger',
     wrong: [
       miss('Secondary storage is directly accessed by the CPU during execution', 'The CPU works with primary memory; data must usually be loaded from secondary storage first.', 'Consider which level the CPU reads instructions from directly.'),
@@ -773,6 +823,7 @@ export const alevelComputerScienceHigh103TopUpAQuestions: Question[] = makeQuest
     chapter: 'Computer systems and architecture',
     title: 'Volatility of memory',
     prompt: 'Which type of memory loses its contents when the computer is switched off?',
+    mentorHint: 'Recall which memory keeps boot instructions when power is off.',
     correct: 'RAM, because it is volatile',
     wrong: [
       miss('ROM, because it is volatile', 'ROM is non-volatile and retains its contents without power.', 'Recall which memory keeps boot instructions when power is off.'),

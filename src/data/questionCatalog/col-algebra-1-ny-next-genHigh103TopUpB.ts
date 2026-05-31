@@ -11,6 +11,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Sequences',
     title: 'Explicit rule for an arithmetic sequence',
     prompt: 'An arithmetic sequence has first term 7 and common difference 4. Which explicit formula gives the nth term?',
+    mentorHint: 'Check what the formula gives for n = 1; it must equal the first term.',
     correct: 'a(n) = 7 + 4(n - 1)',
     wrong: [
       miss('a(n) = 7 + 4n', 'This adds the common difference one extra time, so a(1) would be 11 instead of 7.', 'Check what the formula gives for n = 1; it must equal the first term.'),
@@ -26,6 +27,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Sequences',
     title: 'Recursive definition of a geometric sequence',
     prompt: 'A geometric sequence begins 3, 12, 48, 192, ... Which recursive definition matches it?',
+    mentorHint: 'Check whether consecutive terms differ by a constant or are multiplied by a constant.',
     correct: 'a(1) = 3; a(n) = 4 * a(n - 1)',
     wrong: [
       miss('a(1) = 3; a(n) = a(n - 1) + 9', 'The terms do not increase by a constant amount, so it is not arithmetic.', 'Check whether consecutive terms differ by a constant or are multiplied by a constant.'),
@@ -41,6 +43,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Sequences',
     title: 'Modeling a real situation with a sequence',
     prompt: 'A gym charges a 50 dollar sign-up fee plus 30 dollars each month. Let a(n) be the total paid after n months. Which is correct?',
+    mentorHint: 'A constant fee per period is repeated addition, which is arithmetic.',
     correct: 'a(n) = 50 + 30n, an arithmetic pattern',
     wrong: [
       miss('a(n) = 50 * 30^n, a geometric pattern', 'A flat monthly charge adds, it does not multiply the total by 30 each month.', 'A constant fee per period is repeated addition, which is arithmetic.'),
@@ -56,6 +59,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Sequences',
     title: 'Finding a term from a formula',
     prompt: 'A sequence is defined by a(n) = 2(3)^(n - 1). What is a(4)?',
+    mentorHint: 'The exponent (n - 1) means repeated multiplication of 3, not multiplication by 4.',
     correct: '54',
     wrong: [
       miss('24', 'This computes 2 * 3 * 4, treating the exponent as a multiplier.', 'The exponent (n - 1) means repeated multiplication of 3, not multiplication by 4.'),
@@ -71,6 +75,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Sequences',
     title: 'Arithmetic vs geometric from a table',
     prompt: 'A sequence has terms 80, 40, 20, 10, ... How would you describe it?',
+    mentorHint: 'Check that every consecutive difference is the same before calling it arithmetic.',
     correct: 'Geometric with common ratio 1/2',
     wrong: [
       miss('Arithmetic with common difference -40', 'The difference is not constant: 80 to 40 is -40, but 40 to 20 is -20.', 'Check that every consecutive difference is the same before calling it arithmetic.'),
@@ -87,6 +92,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Absolute value & piecewise functions',
     title: 'Solving an absolute value equation',
     prompt: 'Solve |2x - 5| = 9.',
+    mentorHint: 'Remember that the inside can equal +9 or -9.',
     correct: 'x = 7 or x = -2',
     wrong: [
       miss('x = 7 only', 'Absolute value equations usually have two cases; the negative case was dropped.', 'Remember that the inside can equal +9 or -9.'),
@@ -102,6 +108,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Absolute value & piecewise functions',
     title: 'Evaluating a piecewise function',
     prompt: 'Let f(x) = x^2 for x < 0 and f(x) = 2x + 1 for x >= 0. What is f(-3)?',
+    mentorHint: 'Check which condition -3 satisfies before applying a rule.',
     correct: '9',
     wrong: [
       miss('-5', 'This used the x >= 0 piece, but -3 is negative, so the wrong rule was chosen.', 'Check which condition -3 satisfies before applying a rule.'),
@@ -117,6 +124,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Absolute value & piecewise functions',
     title: 'Solving an absolute value inequality',
     prompt: 'Solve |x - 4| < 3.',
+    mentorHint: 'A "< c" absolute value inequality gives a single interval between two bounds.',
     correct: '1 < x < 7',
     wrong: [
       miss('x < 1 or x > 7', 'This is the solution to a "greater than" inequality, not a "less than" one.', 'A "< c" absolute value inequality gives a single interval between two bounds.'),
@@ -132,6 +140,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Absolute value & piecewise functions',
     title: 'Graph of an absolute value function',
     prompt: 'The graph of g(x) = |x + 2| - 3 has its vertex at which point?',
+    mentorHint: 'Set the expression inside the absolute value to zero to find the vertex x-value.',
     correct: '(-2, -3)',
     wrong: [
       miss('(2, -3)', 'The horizontal shift is inside the bars; x + 2 = 0 gives x = -2, not 2.', 'Set the expression inside the absolute value to zero to find the vertex x-value.'),
@@ -147,6 +156,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Absolute value & piecewise functions',
     title: 'Domain of a piecewise rule',
     prompt: 'A step function charges 5 dollars for the first 10 miles and 8 dollars for any distance from 10 up to 20 miles. A 10-mile trip should cost which amount under the stated rule "5 dollars for the first 10 miles"?',
+    mentorHint: 'Boundary values need an explicit "less than" or "less than or equal" to assign them.',
     correct: 'It depends on whether the 10-mile point belongs to the first piece (5 dollars) or second piece (8 dollars), so the boundary condition must be specified',
     wrong: [
       miss('Always 8 dollars, because 10 is the larger tier', 'Without a stated inequality, you cannot assume 10 belongs to the higher tier.', 'Boundary values need an explicit "less than" or "less than or equal" to assign them.'),
@@ -163,6 +173,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Exponents & radicals',
     title: 'Simplifying with the product rule',
     prompt: 'Simplify x^5 * x^3.',
+    mentorHint: 'Use x^a * x^b = x^(a+b).',
     correct: 'x^8',
     wrong: [
       miss('x^15', 'Multiplying same-base powers adds the exponents; it does not multiply them.', 'Use x^a * x^b = x^(a+b).'),
@@ -178,6 +189,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Exponents & radicals',
     title: 'Negative exponent meaning',
     prompt: 'Rewrite 3^(-2) as a fraction.',
+    mentorHint: 'A negative exponent means take the reciprocal of the positive-exponent value.',
     correct: '1/9',
     wrong: [
       miss('-9', 'A negative exponent does not make the value negative; it makes a reciprocal.', 'A negative exponent means take the reciprocal of the positive-exponent value.'),
@@ -193,6 +205,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Exponents & radicals',
     title: 'Rational exponents and radicals',
     prompt: 'Which expression equals 8^(2/3)?',
+    mentorHint: 'A fractional exponent means a root and a power, not multiplication.',
     correct: '4',
     wrong: [
       miss('16/3', 'This multiplied 8 by 2/3 instead of applying the fractional exponent.', 'A fractional exponent means a root and a power, not multiplication.'),
@@ -208,6 +221,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Exponents & radicals',
     title: 'Simplifying a square root',
     prompt: 'Simplify the square root of 72 to simplest radical form.',
+    mentorHint: 'When 36 leaves the radical it becomes the square root of 36, which is 6.',
     correct: '6 times the square root of 2',
     wrong: [
       miss('36 times the square root of 2', 'The perfect square factor 36 should come out as 6, not stay as 36.', 'When 36 leaves the radical it becomes the square root of 36, which is 6.'),
@@ -223,6 +237,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Exponents & radicals',
     title: 'Power of a power rule',
     prompt: 'Simplify (2x^3)^4.',
+    mentorHint: 'Apply the outer exponent to every factor inside, including the number.',
     correct: '16x^12',
     wrong: [
       miss('2x^12', 'The coefficient 2 must also be raised to the 4th power, becoming 16.', 'Apply the outer exponent to every factor inside, including the number.'),
@@ -239,6 +254,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Exponential growth & decay',
     title: 'Identifying growth vs decay',
     prompt: 'Which function models exponential decay?',
+    mentorHint: 'Decay needs a base strictly between 0 and 1.',
     correct: 'f(x) = 500(0.85)^x',
     wrong: [
       miss('f(x) = 500(1.15)^x', 'A base greater than 1 means growth, not decay.', 'Decay needs a base strictly between 0 and 1.'),
@@ -254,6 +270,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Exponential growth & decay',
     title: 'Writing a growth model from a percent',
     prompt: 'A population of 2000 grows by 6 percent per year. Which function gives the population after t years?',
+    mentorHint: 'For growth, the base is 1 plus the rate, not the rate alone.',
     correct: 'P(t) = 2000(1.06)^t',
     wrong: [
       miss('P(t) = 2000(0.06)^t', 'A base of 0.06 means losing 94 percent each year, which is rapid decay.', 'For growth, the base is 1 plus the rate, not the rate alone.'),
@@ -269,6 +286,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Exponential growth & decay',
     title: 'Interpreting the initial value',
     prompt: 'In the model V(t) = 12000(0.80)^t for a car\'s value after t years, what does 12000 represent?',
+    mentorHint: 'Substitute t = 0 to see what 12000 means.',
     correct: 'The car\'s value when t = 0 (its starting value)',
     wrong: [
       miss('The amount the car loses each year', 'The yearly loss depends on current value; it is not the fixed 12000.', 'Substitute t = 0 to see what 12000 means.'),
@@ -284,6 +302,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Exponential growth & decay',
     title: 'Comparing linear and exponential growth',
     prompt: 'Plan A pays 100 dollars per week. Plan B starts at 1 dollar in week 1 and doubles each week. Over many weeks, which statement is true?',
+    mentorHint: 'Compare the long-run behavior, not just the early weeks.',
     correct: 'Plan B eventually exceeds Plan A and grows far faster because it is exponential',
     wrong: [
       miss('Plan A always pays more because it starts much higher', 'Exponential growth overtakes any linear amount given enough time.', 'Compare the long-run behavior, not just the early weeks.'),
@@ -299,6 +318,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Exponential growth & decay',
     title: 'Evaluating a decay model',
     prompt: 'A sample of 240 grams of a substance halves every hour: A(t) = 240(0.5)^t. How many grams remain after 3 hours?',
+    mentorHint: 'Apply the halving for each of the 3 hours.',
     correct: '30',
     wrong: [
       miss('120', 'This halves only once instead of three times.', 'Apply the halving for each of the 3 hours.'),
@@ -315,6 +335,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Quadratics: Multiplying & factoring',
     title: 'Multiplying two binomials',
     prompt: 'Expand (x + 5)(x - 3).',
+    mentorHint: 'Use FOIL: include the outer and inner products.',
     correct: 'x^2 + 2x - 15',
     wrong: [
       miss('x^2 - 15', 'The two middle terms were dropped instead of being combined.', 'Use FOIL: include the outer and inner products.'),
@@ -330,6 +351,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Quadratics: Multiplying & factoring',
     title: 'Factoring a simple trinomial',
     prompt: 'Factor x^2 + 7x + 12.',
+    mentorHint: 'The two numbers must multiply to 12 AND add to 7.',
     correct: '(x + 3)(x + 4)',
     wrong: [
       miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'The two numbers must multiply to 12 AND add to 7.'),
@@ -345,6 +367,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Quadratics: Multiplying & factoring',
     title: 'Difference of squares',
     prompt: 'Factor x^2 - 49.',
+    mentorHint: 'A difference of squares factors into a sum times a difference, not a perfect square.',
     correct: '(x + 7)(x - 7)',
     wrong: [
       miss('(x - 7)^2', 'Squaring gives x^2 - 14x + 49, which has a middle term that should not appear.', 'A difference of squares factors into a sum times a difference, not a perfect square.'),
@@ -360,6 +383,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Quadratics: Multiplying & factoring',
     title: 'Factoring out a common factor first',
     prompt: 'Factor 3x^2 - 12x completely.',
+    mentorHint: 'Both terms also share an x, so factor that out too.',
     correct: '3x(x - 4)',
     wrong: [
       miss('3(x^2 - 4x)', 'This pulled out only the 3 and left a common factor of x inside.', 'Both terms also share an x, so factor that out too.'),
@@ -375,6 +399,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Quadratics: Multiplying & factoring',
     title: 'Factoring with a leading coefficient',
     prompt: 'Factor 2x^2 + 7x + 3.',
+    mentorHint: 'Check the outer and inner products sum to 7x.',
     correct: '(2x + 1)(x + 3)',
     wrong: [
       miss('(2x + 3)(x + 1)', 'Expanding gives 2x^2 + 5x + 3; the middle term is wrong.', 'Check the outer and inner products sum to 7x.'),
@@ -391,6 +416,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Quadratic functions & equations',
     title: 'Solving by the zero product property',
     prompt: 'Solve (x - 6)(x + 2) = 0.',
+    mentorHint: 'Set each factor equal to zero and solve, keeping signs straight.',
     correct: 'x = 6 or x = -2',
     wrong: [
       miss('x = -6 or x = 2', 'The signs were flipped; setting x - 6 = 0 gives x = 6, not -6.', 'Set each factor equal to zero and solve, keeping signs straight.'),
@@ -406,6 +432,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Quadratic functions & equations',
     title: 'Using the quadratic formula',
     prompt: 'Solve x^2 - 4x - 5 = 0 using the quadratic formula.',
+    mentorHint: 'Check by substituting: x = 5 should make the equation zero.',
     correct: 'x = 5 or x = -1',
     wrong: [
       miss('x = -5 or x = 1', 'The signs are reversed; the factors are (x - 5)(x + 1).', 'Check by substituting: x = 5 should make the equation zero.'),
@@ -421,6 +448,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Quadratic functions & equations',
     title: 'Interpreting the discriminant',
     prompt: 'For x^2 + 6x + 9 = 0, what does the discriminant tell you about the roots?',
+    mentorHint: 'Compute b^2 - 4ac before deciding the number of roots.',
     correct: 'The discriminant is 0, so there is exactly one real (repeated) root',
     wrong: [
       miss('The discriminant is positive, so there are two distinct real roots', 'b^2 - 4ac = 36 - 36 = 0, not positive.', 'Compute b^2 - 4ac before deciding the number of roots.'),
@@ -436,6 +464,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Quadratic functions & equations',
     title: 'Vertex from vertex form',
     prompt: 'The function f(x) = (x - 3)^2 + 4 has its vertex at which point, and does it open up or down?',
+    mentorHint: 'Set the squared expression to zero: x - 3 = 0 gives x = 3.',
     correct: '(3, 4), opening up',
     wrong: [
       miss('(-3, 4), opening up', 'The x-coordinate of the vertex is h = 3, since (x - 3) means x = 3 at the vertex.', 'Set the squared expression to zero: x - 3 = 0 gives x = 3.'),
@@ -451,6 +480,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Quadratic functions & equations',
     title: 'Solving by completing the square',
     prompt: 'Solve x^2 + 6x = 7 by completing the square.',
+    mentorHint: 'Solve x + 3 = 4 and x + 3 = -4 carefully.',
     correct: 'x = 1 or x = -7',
     wrong: [
       miss('x = -1 or x = 7', 'The signs are reversed; (x + 3)^2 = 16 gives x + 3 = ±4.', 'Solve x + 3 = 4 and x + 3 = -4 carefully.'),
@@ -466,6 +496,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Quadratic functions & equations',
     title: 'Axis of symmetry from standard form',
     prompt: 'What is the axis of symmetry of f(x) = 2x^2 - 8x + 1?',
+    mentorHint: 'Remember the formula has a negative b, so -(-8) is positive.',
     correct: 'x = 2',
     wrong: [
       miss('x = -2', 'A sign error: the formula -b/(2a) gives -(-8)/4 = +2, not -2.', 'Remember the formula has a negative b, so -(-8) is positive.'),
@@ -481,6 +512,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Quadratic functions & equations',
     title: 'Projectile word problem',
     prompt: 'A ball\'s height in feet is h(t) = -16t^2 + 32t. At what time does it hit the ground (height 0), other than t = 0?',
+    mentorHint: 'Set h(t) = 0 and factor out t, then solve the remaining factor.',
     correct: 't = 2 seconds',
     wrong: [
       miss('t = 16 seconds', 'This misreads a coefficient; factoring gives t(-16t + 32) = 0.', 'Set h(t) = 0 and factor out t, then solve the remaining factor.'),
@@ -496,6 +528,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Quadratic functions & equations',
     title: 'Number of x-intercepts',
     prompt: 'How many x-intercepts does the graph of f(x) = x^2 + 4 have?',
+    mentorHint: 'Solve x^2 = -4 and ask whether a real number squares to a negative.',
     correct: 'None, because x^2 + 4 = 0 has no real solutions',
     wrong: [
       miss('Two, at x = 2 and x = -2', 'Those are solutions of x^2 - 4 = 0, not x^2 + 4 = 0.', 'Solve x^2 = -4 and ask whether a real number squares to a negative.'),
@@ -512,6 +545,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Irrational numbers',
     title: 'Classifying a number as rational or irrational',
     prompt: 'Which of these numbers is irrational?',
+    mentorHint: 'A number that can be written as a fraction of integers is rational.',
     correct: 'The square root of 10',
     wrong: [
       miss('0.75', 'This terminating decimal equals 3/4, a ratio of integers.', 'A number that can be written as a fraction of integers is rational.'),
@@ -527,6 +561,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Irrational numbers',
     title: 'Sum of rational and irrational',
     prompt: 'What kind of number is 3 + the square root of 2?',
+    mentorHint: 'Rationality is about being a ratio of integers, not about being one number.',
     correct: 'Irrational',
     wrong: [
       miss('Rational, because 3 is rational', 'Adding a rational to an irrational cannot remove the non-repeating part.', 'A rational plus an irrational is always irrational.'),
@@ -542,6 +577,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Irrational numbers',
     title: 'Product closure with irrationals',
     prompt: 'Which product is rational?',
+    mentorHint: 'Multiply under one radical: sqrt(2)*sqrt(3) = sqrt(6).',
     correct: 'The square root of 8 times the square root of 2',
     wrong: [
       miss('The square root of 2 times the square root of 3', 'This equals the square root of 6, which is irrational.', 'Multiply under one radical: sqrt(2)*sqrt(3) = sqrt(6).'),
@@ -557,6 +593,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Irrational numbers',
     title: 'Estimating an irrational number',
     prompt: 'Between which two consecutive integers does the square root of 50 lie?',
+    mentorHint: 'Compare 50 to the perfect squares 49 and 64.',
     correct: 'Between 7 and 8',
     wrong: [
       miss('Between 6 and 7', 'Since 7^2 = 49 < 50, the value is above 7, not below it.', 'Compare 50 to the perfect squares 49 and 64.'),
@@ -573,6 +610,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Creativity in algebra',
     title: 'Recognizing equivalent expressions',
     prompt: 'Which expression is equivalent to (x + 4)^2 - 16?',
+    mentorHint: 'Expand (x + 4)^2 fully before subtracting 16.',
     correct: 'x^2 + 8x',
     wrong: [
       miss('x^2 + 16', 'This dropped the middle term and mishandled the -16.', 'Expand (x + 4)^2 fully before subtracting 16.'),
@@ -588,6 +626,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Creativity in algebra',
     title: 'Choosing a useful form',
     prompt: 'You want to read off the zeros of a quadratic function quickly. Which form is most directly useful?',
+    mentorHint: 'Which form sets up the zero product property directly?',
     correct: 'Factored form, such as f(x) = (x - 3)(x + 5)',
     wrong: [
       miss('Standard form, such as f(x) = x^2 + 2x - 15', 'Standard form shows the y-intercept easily but hides the zeros.', 'Which form sets up the zero product property directly?'),
@@ -603,6 +642,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Creativity in algebra',
     title: 'Strategic rewriting to reveal structure',
     prompt: 'Which rewrite of f(x) = x^2 - 6x + 5 most directly reveals the minimum value of the function?',
+    mentorHint: 'The minimum is the vertex y-value, which factored form hides.',
     correct: 'f(x) = (x - 3)^2 - 4',
     wrong: [
       miss('f(x) = (x - 1)(x - 5)', 'Factored form shows the zeros, not the minimum value.', 'The minimum is the vertex y-value, which factored form hides.'),
@@ -618,6 +658,7 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Creativity in algebra',
     title: 'Interpreting structure in an expression',
     prompt: 'A profit model is P = 50n - n^2 where n is items sold. By rewriting as P = n(50 - n), what does the structure reveal?',
+    mentorHint: 'A downward parabola has a maximum, not endless growth.',
     correct: 'Profit is zero when n = 0 or n = 50, so it peaks halfway, at n = 25',
     wrong: [
       miss('Profit grows forever as n increases', 'The -n^2 term eventually dominates, pulling profit down.', 'A downward parabola has a maximum, not endless growth.'),

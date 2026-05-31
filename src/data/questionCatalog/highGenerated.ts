@@ -1922,6 +1922,87 @@ function blueprintsFor(spec: TrackSpec) {
   return [...mathBlueprints(), ...scienceBlueprints(), ...englishBlueprints()]
 }
 
+function mentorHintForGeneratedHighQuestion(spec: TrackSpec, blueprint: Blueprint) {
+  const chapter = blueprint.chapter.toLowerCase()
+  const title = blueprint.title.toLowerCase()
+  const family = spec.family
+
+  if (family === 'math' || chapter.includes('equation') || chapter.includes('quadratic') || chapter.includes('ratio')) {
+    if (chapter.includes('ratio') || chapter.includes('rate')) {
+      return 'Find the unit rate first, then scale it to the new situation. Keep the two quantities in the same order so you do not accidentally compare envelopes to stickers or minutes to miles.'
+    }
+    if (chapter.includes('linear')) {
+      return 'Distribute through parentheses before collecting terms, then undo operations in reverse order. Check the solution by substituting it back into the original equation.'
+    }
+    if (chapter.includes('probability')) {
+      return 'Decide whether the draws are independent or without replacement before multiplying probabilities. The second draw may have a changed denominator or changed counts.'
+    }
+    if (chapter.includes('coordinate')) {
+      return 'For gradient or slope, use change in y divided by change in x. Keep the point order consistent in both differences so the signs stay meaningful.'
+    }
+    if (chapter.includes('quadratic')) {
+      return 'Look for two factors whose product gives the constant term and whose sum gives the middle coefficient. The solutions come from setting each factor equal to zero.'
+    }
+    if (chapter.includes('calculus')) {
+      return 'Identify the changing quantity and the formula connecting it to the requested rate. Differentiate the relationship before substituting the instant’s numbers.'
+    }
+    return 'Name the operation or formula before calculating, then apply it to the exact numbers in the prompt. A nearby arithmetic value is usually a distractor, so check the result in context.'
+  }
+
+  if (family === 'science') {
+    if (chapter.includes('genetic')) {
+      return 'Track the alleles each parent can pass on and build the outcome combinations before choosing. Dominant traits can hide recessive alleles, so genotype and phenotype are not always the same.'
+    }
+    if (chapter.includes('energy') || title.includes('clover')) {
+      return 'Follow the energy back through the food chain to its original source. Matter cycles through organisms, but usable energy enters most ecosystems through sunlight captured by producers.'
+    }
+    if (chapter.includes('chem') || chapter.includes('bond') || chapter.includes('reaction')) {
+      return 'Identify the particles, bonds, or conservation rule involved before choosing. Chemistry answers should preserve atoms, charge, and the mechanism described in the prompt.'
+    }
+    if (chapter.includes('physics') || chapter.includes('force') || chapter.includes('motion')) {
+      return 'Start by naming the quantity being asked for, such as force, energy, speed, or acceleration. Then use the relationship that connects the given numbers to that quantity.'
+    }
+    if (chapter.includes('earth') || chapter.includes('climate')) {
+      return 'Separate the observation from the process that explains it. Earth and climate questions usually turn on timescale, energy flow, cycling matter, or evidence from patterns.'
+    }
+    return 'Identify the system, the variable that changes, and the mechanism that links cause to effect. The best science answer should match the stated conditions without adding a new assumption.'
+  }
+
+  if (family === 'economics' || family === 'life') {
+    if (chapter.includes('tradeoff') || title.includes('opportunity')) {
+      return 'Opportunity cost is the value of the next-best option you give up, not every possible benefit. Ask what choice is actually being sacrificed by the decision.'
+    }
+    if (chapter.includes('credit')) {
+      return 'Separate borrowed principal from interest and repayment behavior. Credit questions often hinge on compounding balances, payment history, utilization, and the cost of carrying debt.'
+    }
+    if (chapter.includes('tax')) {
+      return 'Distinguish gross pay from take-home pay and marginal tax rates from average rates. A higher bracket usually applies only to the next dollars in that bracket.'
+    }
+    if (chapter.includes('saving') || chapter.includes('compound')) {
+      return 'Compound growth earns returns on earlier returns, while simple growth does not. Focus on the base that each period’s percentage is applied to.'
+    }
+    return 'Translate the situation into the economic choice, incentive, risk, or budget constraint being tested. Then pick the answer that explains the tradeoff rather than just naming money.'
+  }
+
+  if (family === 'computing') {
+    return 'Identify what part of the computing system is being tested: data, control flow, networks, security, or user input. The best answer should describe what the system actually does, not just use a technical word.'
+  }
+
+  if (family === 'english') {
+    return 'Read the sentence or passage for the specific job the word, claim, or detail performs. Use context and evidence from the text instead of choosing the answer that merely sounds sophisticated.'
+  }
+
+  if (family === 'history') {
+    return 'Place the event or document in its historical context: who had power, what changed, and what evidence the prompt gives. Avoid choices that are true in another era but not in this situation.'
+  }
+
+  if (family === 'philosophy' || family === 'creative') {
+    return 'Name the rule, assumption, or perspective behind the question before judging the answers. The best choice should fit the reasoning pattern, not just the most familiar term.'
+  }
+
+  return 'Identify the course concept and the exact task in the prompt before reading the choices. Eliminate answers that use familiar vocabulary but do not fit the situation described.'
+}
+
 function buildTrackQuestions(spec: TrackSpec, trackIndex: number): Question[] {
   const blueprints = blueprintsFor(spec)
   const baseId = 1_900_000 + trackIndex * 100
@@ -1946,6 +2027,8 @@ function buildTrackQuestions(spec: TrackSpec, trackIndex: number): Question[] {
       blueprint.wrong(variant),
       blueprint.lesson(variant),
       generatedSource,
+      undefined,
+      mentorHintForGeneratedHighQuestion(spec, blueprint),
     ))
   }
 

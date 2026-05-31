@@ -13,6 +13,7 @@ type ImportedMathQuestion = {
   chapter: string
   title: string
   prompt: string
+  mentorHint?: string
   correct: string
   wrong: [string, string, string][]
   sourceId: string
@@ -25,6 +26,7 @@ const q = ({
   chapter,
   title,
   prompt,
+  mentorHint,
   correct,
   wrong,
   sourceId,
@@ -35,6 +37,7 @@ const q = ({
   chapter,
   title,
   prompt,
+  ...(mentorHint ? { mentorHint } : {}),
   correct,
   wrong,
   lesson: `Converted from ${sourceName} raw math item ${sourceId}. ${sourceUrl ? `Source URL: ${sourceUrl}. ` : ''}Distractors were authored during Floe import so the item is playable as fixed-choice practice.`,
@@ -47,6 +50,7 @@ const _baseNumbasWebworkAlgebraQuestions = makeQuestionBank('Mathematics', [
     chapter: 'Order of Operations',
     title: 'BIDMAS order',
     prompt: 'When evaluating an expression with brackets, powers, multiplication, division, addition, and subtraction, which work should happen first?',
+    mentorHint: 'Order-of-operations conventions are a parsing rule for expressions. Grouping symbols have highest priority because they tell you which subexpression must be simplified before powers and the left-to-right multiplication/division stage.',
     correct: 'Brackets',
     wrong: [
       miss('Addition', 'Addition comes after brackets, powers, multiplication, and division.', 'Start with the grouped part of the expression.'),
@@ -62,6 +66,7 @@ const _baseNumbasWebworkAlgebraQuestions = makeQuestionBank('Mathematics', [
     chapter: 'Factors',
     title: 'Factor of 5',
     prompt: 'Which test correctly identifies whether a whole number has 5 as a factor?',
+    mentorHint: 'Divisibility by 5 depends only on the ones digit because powers of 10 are already multiples of 5. Check the final digit rather than adding digits or testing parity.',
     correct: 'Its last digit is 0 or 5',
     wrong: [
       miss('The sum of its digits is divisible by 5', 'Digit sums are useful for divisibility by 3 or 9, not 5.', 'Focus on the final digit.'),
@@ -77,6 +82,7 @@ const _baseNumbasWebworkAlgebraQuestions = makeQuestionBank('Mathematics', [
     chapter: 'Factors',
     title: 'Factor of 3',
     prompt: 'A whole number has 3 as a factor when:',
+    mentorHint: 'The divisibility rule for 3 comes from the fact that each power of 10 leaves remainder 1 modulo 3. That means a whole number has the same remainder as the sum of its digits.',
     correct: 'The sum of its digits is divisible by 3',
     wrong: [
       miss('Its last digit is 3', 'Some multiples of 3 do not end in 3, such as 12 or 96.', 'Use the digit-sum rule.'),
@@ -92,6 +98,7 @@ const _baseNumbasWebworkAlgebraQuestions = makeQuestionBank('Mathematics', [
     chapter: 'Surds',
     title: 'Rationalising a denominator',
     prompt: 'What is the goal when rationalising the denominator of a fraction involving surds?',
+    mentorHint: 'Rationalising a denominator means rewriting an exact expression so the denominator no longer contains a radical. The usual move is to multiply by an equivalent form of 1, often using a matching radical or conjugate.',
     correct: 'Remove square-root terms from the denominator',
     wrong: [
       miss('Make the numerator equal to 1', 'That is not the purpose of rationalising.', 'The target is the denominator.'),
@@ -110,6 +117,7 @@ const _baseNumbasWebworkCalculusQuestions = makeQuestionBank('Mathematics', [
     chapter: 'Differentiation',
     title: 'Power rule shape',
     prompt: 'For a term of the form kx^n, what does the power rule do?',
+    mentorHint: 'The constant multiple k stays attached while the exponent controls the derivative. The power rule says the exponent becomes a factor and the new power is one less than before.',
     correct: 'Multiply by n and lower the exponent by 1',
     wrong: [
       miss('Divide by n and raise the exponent by 1', 'That is closer to an antiderivative pattern.', 'This question asks for differentiation.'),
@@ -125,6 +133,7 @@ const _baseNumbasWebworkCalculusQuestions = makeQuestionBank('Mathematics', [
     chapter: 'Integration',
     title: 'Substitution target',
     prompt: 'In an integral such as integral bcx^(b-1) sin(ax^b) dx, why is u = ax^b a natural substitution?',
+    mentorHint: 'Substitution is useful when an integrand contains a composite function and a multiple of its derivative. Identify the inside expression of the sine, then check whether the remaining factor can become du.',
     correct: 'Its derivative is proportional to x^(b-1), matching the outside factor',
     wrong: [
       miss('It removes the sine function because sin(u) is always 0', 'Sine does not vanish under substitution.', 'The point is to match the inside function and its derivative.'),
@@ -140,6 +149,7 @@ const _baseNumbasWebworkCalculusQuestions = makeQuestionBank('Mathematics', [
     chapter: 'Derivatives',
     title: 'Linear function derivative',
     prompt: "If f(x) = bx - a, where a and b are constants, what is f'(x)?",
+    mentorHint: 'A linear function has constant slope equal to the coefficient of x. Constant terms shift the graph vertically but disappear under differentiation because their rate of change is zero.',
     correct: 'b',
     wrong: [
       miss('a', 'The constant a disappears when differentiated.', 'Only the coefficient of x remains.'),
@@ -154,6 +164,7 @@ const _baseNumbasWebworkCalculusQuestions = makeQuestionBank('Mathematics', [
     chapter: 'Vector Functions',
     title: 'Derivative of a vector function',
     prompt: "When differentiating a vector function r(t), how is r'(t) found?",
+    mentorHint: 'A vector function stores several coordinate functions at once. Differentiate with respect to the parameter component by component so the derivative remains a vector describing velocity or rate of change.',
     correct: 'Differentiate each component with respect to t',
     wrong: [
       miss('Differentiate only the first component', 'Every component changes with t independently.', 'Apply the derivative component by component.'),
@@ -168,6 +179,7 @@ const _baseNumbasWebworkCalculusQuestions = makeQuestionBank('Mathematics', [
     chapter: 'Partial Derivatives',
     title: 'Partial derivative focus',
     prompt: 'When finding the partial derivative f_x of a function f(x, y, z), which variables are treated as constants?',
+    mentorHint: 'A partial derivative isolates change in one input direction at a time. For f_x, let x vary and freeze the other variables as constants while applying ordinary derivative rules.',
     correct: 'y and z',
     wrong: [
       miss('x only', 'x is the variable being changed for f_x.', 'Hold the other variables fixed.'),
@@ -182,6 +194,7 @@ const _baseNumbasWebworkCalculusQuestions = makeQuestionBank('Mathematics', [
     chapter: 'Directional Derivatives',
     title: 'Directional derivative ingredients',
     prompt: 'To find a directional derivative of f at a point in the direction of vector v, what should v be converted to first?',
+    mentorHint: 'Directional derivatives measure rate of change per unit distance in a chosen direction. Normalize the direction vector first so its length is 1 before using the gradient dot product formula.',
     correct: 'A unit vector',
     wrong: [
       miss('A zero vector', 'The zero vector has no direction.', 'Direction needs length one, not length zero.'),
@@ -199,6 +212,7 @@ const _baseNumbasWebworkLinearAlgebraQuestions = makeQuestionBank('Mathematics',
     chapter: 'Matrices',
     title: 'Special matrix names',
     prompt: 'Which description matches an identity matrix?',
+    mentorHint: 'The identity matrix plays the role of 1 for matrix multiplication. Its diagonal entries preserve each coordinate, while zeros elsewhere prevent coordinates from mixing.',
     correct: 'A square matrix with 1s on the main diagonal and 0s elsewhere',
     wrong: [
       miss('A matrix with every entry equal to 0', 'That describes the zero matrix.', 'Identity matrices preserve products.'),
@@ -214,6 +228,7 @@ const _baseNumbasWebworkLinearAlgebraQuestions = makeQuestionBank('Mathematics',
     chapter: 'Row Reduction',
     title: 'Reduced row echelon form',
     prompt: 'In reduced row echelon form, what must happen in each pivot column?',
+    mentorHint: 'Reduced row echelon form is stricter than ordinary echelon form. Each pivot is normalized to 1, and its column is cleared above and below so the pivot is the only nonzero entry there.',
     correct: 'The pivot is 1 and every other entry in that column is 0',
     wrong: [
       miss('The pivot can be any nonzero number', 'That may fit echelon form before full reduction, but not reduced row echelon form.', 'Reduced form normalizes pivots.'),
@@ -229,6 +244,7 @@ const _baseNumbasWebworkLinearAlgebraQuestions = makeQuestionBank('Mathematics',
     chapter: 'Graph Matrices',
     title: 'Adjacency matrix entry',
     prompt: 'In an adjacency matrix for a graph, what does a 1 in row i, column j usually indicate?',
+    mentorHint: 'An adjacency matrix encodes graph connections using row and column indices as vertex labels. Read a single entry as a local yes/no statement about whether those two vertices are connected in that direction.',
     correct: 'There is an edge from vertex i to vertex j',
     wrong: [
       miss('Vertex i has degree exactly j', 'The column index is a vertex label, not a degree count.', 'Entries record connections.'),
@@ -244,6 +260,7 @@ const _baseNumbasWebworkLinearAlgebraQuestions = makeQuestionBank('Mathematics',
     chapter: 'Eigenvalues',
     title: 'Characteristic polynomial',
     prompt: 'For a square matrix A, the characteristic polynomial is usually built from which determinant?',
+    mentorHint: 'Eigenvalue equations come from asking when a matrix shift becomes singular. The characteristic polynomial keeps a variable multiplied by the identity matrix so the determinant equation can reveal eigenvalues.',
     correct: 'det(tI - A)',
     wrong: [
       miss('det(A + I) only', 'That loses the variable t and is not the characteristic polynomial.', 'The polynomial tracks t against A.'),
@@ -259,6 +276,7 @@ const _baseNumbasWebworkLinearAlgebraQuestions = makeQuestionBank('Mathematics',
     chapter: 'Matrix Transformations',
     title: 'Unit square transformation',
     prompt: 'A 2D matrix transformation can be understood by watching what happens to which reference shape?',
+    mentorHint: 'A linear transformation is determined by where it sends the standard basis directions. The unit square shows both basis vectors at once, making stretches, rotations, shears, reflections, and area changes visible.',
     correct: 'The unit square',
     wrong: [
       miss('Only the x-axis label', 'A label alone does not show area, shear, rotation, or scaling.', 'Use a shape with both basis directions.'),
@@ -277,6 +295,7 @@ const _baseNumbasWebworkStatisticsQuestions = makeQuestionBank('Statistics', [
     chapter: 'Confidence Intervals',
     title: 'Meaning of a 95% confidence interval',
     prompt: 'What does a 95% confidence interval procedure mean in repeated sampling?',
+    mentorHint: 'Confidence describes the long-run reliability of the interval-building method, not a changing probability for one already-computed interval. Imagine repeatedly drawing samples and constructing intervals the same way.',
     correct: 'About 95% of intervals made this way would contain the true parameter',
     wrong: [
       miss('There is a 95% chance this fixed interval changes tomorrow', 'Once computed, the interval is fixed.', 'The 95% refers to the long-run method.'),
@@ -292,6 +311,7 @@ const _baseNumbasWebworkStatisticsQuestions = makeQuestionBank('Statistics', [
     chapter: 'Variables',
     title: 'Nominal variable',
     prompt: 'Which description best fits a nominal variable?',
+    mentorHint: 'Variable type depends on what comparisons make sense. Nominal data use names or labels where equality and difference matter, but ranking the categories from smaller to larger would not be meaningful.',
     correct: 'Categories with no intrinsic order',
     wrong: [
       miss('Categories that must be ranked from low to high', 'That describes an ordinal variable.', 'Nominal labels do not have a natural order.'),
@@ -307,6 +327,7 @@ const _baseNumbasWebworkStatisticsQuestions = makeQuestionBank('Statistics', [
     chapter: 'Probability Density',
     title: 'PDF condition',
     prompt: 'Which statement must be true for a probability density function?',
+    mentorHint: 'For a continuous random variable, probability is represented by area under the density curve. A valid density must stay nonnegative and have total area 1 across its full support.',
     correct: 'Its total area over the full range is 1',
     wrong: [
       miss('It must be negative for some values', 'A probability density cannot be negative.', 'Densities stay at or above zero.'),
@@ -322,6 +343,7 @@ const _baseNumbasWebworkStatisticsQuestions = makeQuestionBank('Statistics', [
     chapter: 'Paired Tests',
     title: 'Paired t-test data',
     prompt: 'In a paired sample t-test, what values are analyzed after pairing each subject or unit?',
+    mentorHint: 'Pairing turns two related measurements into one within-pair difference for each subject or matched unit. The test then asks whether the average of those differences is meaningfully different from zero.',
     correct: 'The within-pair differences',
     wrong: [
       miss('Only the larger value in each pair', 'Keeping only larger values destroys the paired comparison.', 'The difference within each pair is the signal.'),
@@ -337,6 +359,7 @@ const _baseNumbasWebworkStatisticsQuestions = makeQuestionBank('Statistics', [
     chapter: 'ANOVA',
     title: 'One-way ANOVA purpose',
     prompt: 'A one-way ANOVA is mainly used to test whether:',
+    mentorHint: 'One-way ANOVA compares a quantitative response across multiple groups defined by one factor. Its core idea is to compare between-group variation to within-group variation using an F statistic.',
     correct: 'Several group means differ more than expected from within-group variation',
     wrong: [
       miss('One individual observation is an outlier', 'ANOVA compares group means, not one point in isolation.', 'Think between-group versus within-group variation.'),
@@ -362,4 +385,3 @@ export const numbasWebworkAlgebraQuestions = runPolish(_baseNumbasWebworkAlgebra
 export const numbasWebworkCalculusQuestions = runPolish(_baseNumbasWebworkCalculusQuestions, _numbasBundle)
 export const numbasWebworkLinearAlgebraQuestions = runPolish(_baseNumbasWebworkLinearAlgebraQuestions, _numbasBundle)
 export const numbasWebworkStatisticsQuestions = runPolish(_baseNumbasWebworkStatisticsQuestions, _numbasBundle)
-

@@ -13,6 +13,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Further mechanics: Circular motion',
     title: 'Direction of centripetal acceleration',
     prompt: 'An object moves at constant speed in a horizontal circle. In which direction does its acceleration point?',
+    mentorHint: 'Ask which way the velocity vector is being turned.',
     correct: 'Towards the centre of the circle',
     wrong: [
       miss('In the direction of motion (tangentially)', 'A tangential acceleration would change the speed, but the speed is constant. The acceleration here only changes the direction of the velocity.', 'Ask which way the velocity vector is being turned.'),
@@ -28,6 +29,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Further mechanics: Circular motion',
     title: 'Centripetal force calculation',
     prompt: 'A 0.50 kg ball on a string moves in a horizontal circle of radius 0.80 m at a speed of 4.0 m/s. What is the centripetal force on the ball?',
+    mentorHint: 'Check the index on the speed in the centripetal force equation.',
     correct: '10 N',
     wrong: [
       miss('2.5 N', 'This uses F = mv/r, forgetting that the speed must be squared in F = mv^2/r.', 'Check the index on the speed in the centripetal force equation.'),
@@ -43,6 +45,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Further mechanics: Circular motion',
     title: 'Angular speed and period',
     prompt: 'A wheel rotates with a period of 0.40 s. What is its angular speed?',
+    mentorHint: 'Use omega = 2 pi / T, not 1/T.',
     correct: 'About 16 rad/s',
     wrong: [
       miss('About 2.5 rad/s', 'This is 1/T (the frequency in Hz), not the angular speed. Angular speed requires multiplying by 2 pi.', 'Use omega = 2 pi / T, not 1/T.'),
@@ -61,6 +64,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Further mechanics: Simple harmonic motion',
     title: 'Defining condition for SHM',
     prompt: 'Which condition must hold for an object to undergo simple harmonic motion?',
+    mentorHint: 'Think about how the restoring force varies as the object moves.',
     correct: 'The acceleration is proportional to the displacement and directed towards the equilibrium position',
     wrong: [
       miss('The acceleration is constant in magnitude and direction', 'Constant acceleration gives uniformly accelerated (e.g. projectile) motion, not oscillation. In SHM the acceleration changes continuously with displacement.', 'Think about how the restoring force varies as the object moves.'),
@@ -76,6 +80,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Further mechanics: Simple harmonic motion',
     title: 'Maximum speed in SHM',
     prompt: 'A mass oscillates in SHM with amplitude 0.050 m and angular frequency 12 rad/s. What is its maximum speed?',
+    mentorHint: 'v_max = omega A, a product not a quotient.',
     correct: '0.60 m/s',
     wrong: [
       miss('0.0042 m/s', 'This divides amplitude by omega instead of multiplying. Maximum speed is omega times amplitude.', 'v_max = omega A, a product not a quotient.'),
@@ -91,6 +96,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Further mechanics: Simple harmonic motion',
     title: 'Energy in a damped oscillator',
     prompt: 'A pendulum oscillating in air is lightly damped. Over successive swings, how do its amplitude and period change?',
+    mentorHint: 'Recall that SHM period is independent of amplitude.',
     correct: 'The amplitude gradually decreases while the period stays approximately constant',
     wrong: [
       miss('Both the amplitude and the period gradually decrease', 'For light damping the period is essentially unchanged; only the amplitude decays. Damping removes energy, not frequency.', 'Recall that SHM period is independent of amplitude.'),
@@ -106,6 +112,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Further mechanics: Simple harmonic motion',
     title: 'Resonance condition',
     prompt: 'A system with a natural frequency of 5.0 Hz is driven by a periodic force. At which driving frequency is the amplitude of oscillation greatest?',
+    mentorHint: 'Maximum response happens when the driver matches the natural frequency.',
     correct: 'About 5.0 Hz',
     wrong: [
       miss('At a very low frequency, near 0 Hz', 'At very low driving frequencies the system simply follows the driver with small amplitude; the large response occurs near the natural frequency.', 'Maximum response happens when the driver matches the natural frequency.'),
@@ -124,6 +131,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Thermal physics: Energy and temperature',
     title: 'Specific heat capacity calculation',
     prompt: 'How much energy is needed to raise the temperature of 2.0 kg of water (specific heat capacity 4200 J/kg/K) by 30 K?',
+    mentorHint: 'Multiply by the temperature rise as well.',
     correct: '252000 J',
     wrong: [
       miss('8400 J', 'This uses only m x c and ignores the temperature change. The full relation is Q = mc(delta T).', 'Multiply by the temperature rise as well.'),
@@ -139,6 +147,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Thermal physics: Energy and temperature',
     title: 'Specific latent heat',
     prompt: 'While a pure substance melts at its melting point, energy is supplied steadily. What happens to the temperature during melting?',
+    mentorHint: 'Temperature is fixed during a change of state.',
     correct: 'It stays constant because the energy goes into breaking bonds, not raising temperature',
     wrong: [
       miss('It rises steadily because energy is being added', 'During a phase change the supplied energy increases potential energy by breaking intermolecular bonds, so the temperature (a measure of kinetic energy) does not change.', 'Temperature is fixed during a change of state.'),
@@ -154,6 +163,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Thermal physics: Energy and temperature',
     title: 'Absolute zero',
     prompt: 'What is the physical meaning of absolute zero (0 K)?',
+    mentorHint: 'Define it in terms of particle energy, not phase.',
     correct: 'The temperature at which particles have the minimum possible internal energy',
     wrong: [
       miss('The temperature at which all matter becomes a solid', 'Helium, for example, remains liquid at very low temperatures under normal pressure; absolute zero is about minimum energy, not a guaranteed solid state.', 'Define it in terms of particle energy, not phase.'),
@@ -172,6 +182,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Thermal physics: Gases',
     title: 'Ideal gas equation',
     prompt: 'A fixed mass of ideal gas is heated at constant volume so its absolute temperature doubles. What happens to its pressure?',
+    mentorHint: 'Use p proportional to T at constant volume.',
     correct: 'It doubles',
     wrong: [
       miss('It halves', 'At constant volume pressure is proportional to absolute temperature, so doubling the temperature doubles the pressure rather than halving it.', 'Use p proportional to T at constant volume.'),
@@ -187,6 +198,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Thermal physics: Gases',
     title: 'Kinetic theory and mean kinetic energy',
     prompt: 'According to kinetic theory, the mean kinetic energy of the molecules of an ideal gas is directly proportional to which quantity?',
+    mentorHint: 'Recall mean KE = (3/2) k T.',
     correct: 'The absolute (kelvin) temperature',
     wrong: [
       miss('The pressure of the gas', 'Pressure depends on temperature, volume and amount of gas; mean molecular kinetic energy depends only on absolute temperature.', 'Recall mean KE = (3/2) k T.'),
@@ -202,6 +214,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Thermal physics: Gases',
     title: 'Assumptions of an ideal gas',
     prompt: 'Which of the following is an assumption of the kinetic theory model of an ideal gas?',
+    mentorHint: 'Ideal gas molecules are assumed not to attract each other.',
     correct: 'Collisions between molecules and with the walls are perfectly elastic',
     wrong: [
       miss('Molecules exert strong attractive forces on each other at all times', 'The model assumes negligible intermolecular forces except during the very brief collisions; strong continuous forces would invalidate it.', 'Ideal gas molecules are assumed not to attract each other.'),
@@ -220,6 +233,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Gravitational fields',
     title: 'Newton\'s law of gravitation',
     prompt: 'Two point masses are separated by a distance r. If the separation is tripled, by what factor does the gravitational force between them change?',
+    mentorHint: 'Square the factor by which distance changes.',
     correct: 'It becomes one ninth of the original',
     wrong: [
       miss('It becomes one third of the original', 'This treats the force as proportional to 1/r, but gravitation follows an inverse-square law, 1/r^2.', 'Square the factor by which distance changes.'),
@@ -235,6 +249,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Gravitational fields',
     title: 'Gravitational potential',
     prompt: 'Why is gravitational potential always assigned a negative value (taking infinity as zero)?',
+    mentorHint: 'Think about the reference point at infinity.',
     correct: 'Because gravity is attractive, so work must be done against it to move a mass from a point out to infinity',
     wrong: [
       miss('Because gravitational potential energy is always lost as objects fall', 'The sign convention comes from defining potential relative to infinity for an attractive force, not from energy being lost during a fall.', 'Think about the reference point at infinity.'),
@@ -250,6 +265,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Gravitational fields',
     title: 'Orbital speed of a satellite',
     prompt: 'For a satellite in a circular orbit, which expression correctly relates its orbital speed v to the radius r of the orbit (M is the mass of the central body)?',
+    mentorHint: 'Higher orbits have lower orbital speed.',
     correct: 'v = sqrt(GM/r)',
     wrong: [
       miss('v = sqrt(GMr)', 'This makes speed increase with radius, but satellites in larger orbits actually move more slowly. The radius belongs in the denominator.', 'Higher orbits have lower orbital speed.'),
@@ -265,6 +281,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Gravitational fields',
     title: 'Geostationary orbit',
     prompt: 'Which property must a satellite in a geostationary orbit have?',
+    mentorHint: 'It must remain fixed above one point on the equator.',
     correct: 'An orbital period of 24 hours, above the equator, moving in the same direction as Earth\'s rotation',
     wrong: [
       miss('A period of 24 hours but orbiting over the poles', 'A polar orbit does not stay above a fixed point on the equator; a geostationary satellite must orbit in the equatorial plane.', 'It must remain fixed above one point on the equator.'),
@@ -283,6 +300,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Electric fields',
     title: 'Coulomb\'s law',
     prompt: 'Two point charges experience a force F. If both charges are doubled and the distance between them is also doubled, what is the new force?',
+    mentorHint: 'Track the charge factor and the distance factor separately.',
     correct: 'F (unchanged)',
     wrong: [
       miss('2F', 'Doubling each charge multiplies the force by 4, while doubling the distance divides it by 4. These cancel, so the force is unchanged, not doubled.', 'Track the charge factor and the distance factor separately.'),
@@ -298,6 +316,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Electric fields',
     title: 'Uniform field between parallel plates',
     prompt: 'Two parallel plates are 5.0 mm apart with a potential difference of 2000 V between them. What is the electric field strength between the plates?',
+    mentorHint: 'Use E = V/d, a quotient.',
     correct: '4.0 x 10^5 V/m',
     wrong: [
       miss('10 V/m', 'This multiplies V by d (2000 x 0.005) instead of dividing. Field strength is V divided by d.', 'Use E = V/d, a quotient.'),
@@ -313,6 +332,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Electric fields',
     title: 'Comparing gravitational and electric fields',
     prompt: 'In what important way does the electric field around a point charge differ from the gravitational field around a point mass?',
+    mentorHint: 'Both follow 1/r^2; compare the possible directions of the force.',
     correct: 'The electric force can be attractive or repulsive, whereas gravity is always attractive',
     wrong: [
       miss('The electric field obeys an inverse-square law but the gravitational field does not', 'Both fields obey an inverse-square law (1/r^2). The key difference is the sign of the interaction, not the distance dependence.', 'Both follow 1/r^2; compare the possible directions of the force.'),
@@ -331,6 +351,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Capacitance',
     title: 'Energy stored in a capacitor',
     prompt: 'A 100 microfarad capacitor is charged to 12 V. How much energy is stored?',
+    mentorHint: 'The correct formula is E = (1/2) C V^2.',
     correct: '7.2 x 10^-3 J',
     wrong: [
       miss('1.2 x 10^-3 J', 'This uses E = QV without the factor of one half, double-counting the energy stored as the voltage builds up.', 'The correct formula is E = (1/2) C V^2.'),
@@ -346,6 +367,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Capacitance',
     title: 'Time constant of an RC circuit',
     prompt: 'A 470 microfarad capacitor discharges through a 2.0 kilohm resistor. What is the time constant of the circuit?',
+    mentorHint: 'Use R = 2000 ohms and C = 4.70 x 10^-4 F.',
     correct: '0.94 s',
     wrong: [
       miss('0.94 ms', 'This is out by a factor of a thousand, likely from treating the resistance as 2.0 ohms instead of 2.0 kilohms.', 'Use R = 2000 ohms and C = 4.70 x 10^-4 F.'),
@@ -361,6 +383,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Capacitance',
     title: 'Exponential discharge',
     prompt: 'A capacitor discharges through a resistor. After one time constant has elapsed, the charge remaining is closest to what fraction of the initial charge?',
+    mentorHint: 'Use Q = Q0 e^(-1) at t = tau.',
     correct: 'About 37%',
     wrong: [
       miss('About 50%', 'The discharge is exponential, not linear; the charge falls to 1/e (about 37%), not to half, after one time constant.', 'Use Q = Q0 e^(-1) at t = tau.'),
@@ -379,6 +402,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Magnetic fields',
     title: 'Force on a current-carrying wire',
     prompt: 'A wire of length 0.25 m carrying a current of 3.0 A lies perpendicular to a magnetic field of flux density 0.40 T. What force acts on the wire?',
+    mentorHint: 'Use F = BIL, including the length L.',
     correct: '0.30 N',
     wrong: [
       miss('1.2 N', 'This uses F = BI without including the length of wire in the field.', 'Use F = BIL, including the length L.'),
@@ -394,6 +418,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Magnetic fields',
     title: 'Charged particle in a magnetic field',
     prompt: 'A charged particle moves at constant speed in a circle in a uniform magnetic field. What does the magnetic force do to the particle\'s kinetic energy?',
+    mentorHint: 'Work requires a force component along the displacement.',
     correct: 'Nothing, because the force is always perpendicular to the velocity and does no work',
     wrong: [
       miss('It steadily increases the kinetic energy', 'A force perpendicular to the motion does no work, so it cannot change the speed or kinetic energy; it only changes direction.', 'Work requires a force component along the displacement.'),
@@ -409,6 +434,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Electromagnetic induction',
     title: 'Faraday\'s law',
     prompt: 'A coil of 200 turns experiences a change in magnetic flux of 2.0 x 10^-3 Wb in 0.10 s. What is the magnitude of the average induced emf?',
+    mentorHint: 'Multiply by N = 200 turns.',
     correct: '4.0 V',
     wrong: [
       miss('0.020 V', 'This forgets to multiply by the number of turns; the emf depends on the rate of change of flux linkage, N times the flux.', 'Multiply by N = 200 turns.'),
@@ -424,6 +450,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Electromagnetic induction',
     title: 'Lenz\'s law and energy conservation',
     prompt: 'A magnet is pushed north-pole-first towards a coil. The induced current in the coil creates a magnetic field that opposes the magnet\'s approach. Why must the induced current oppose the change?',
+    mentorHint: 'Link the direction of the induced current to energy conservation.',
     correct: 'To conserve energy: the work done pushing against the opposing force becomes the electrical energy induced',
     wrong: [
       miss('Because magnetic fields always cancel each other out', 'Magnetic fields do not generally cancel; the opposition is required specifically to satisfy conservation of energy, as stated by Lenz\'s law.', 'Link the direction of the induced current to energy conservation.'),
@@ -439,6 +466,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Alternating currents and transformers',
     title: 'RMS value of an alternating current',
     prompt: 'A sinusoidal alternating current has a peak value of 5.0 A. What is its root-mean-square (rms) value?',
+    mentorHint: 'Divide the peak by sqrt(2) for a sine wave.',
     correct: 'About 3.5 A',
     wrong: [
       miss('5.0 A', 'The rms value equals the peak only for a constant (DC) current; for a sinusoid the rms is the peak divided by sqrt(2).', 'Divide the peak by sqrt(2) for a sine wave.'),
@@ -454,6 +482,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Alternating currents and transformers',
     title: 'Transformer turns ratio',
     prompt: 'An ideal transformer has 1200 turns on the primary and 300 turns on the secondary. If the primary voltage is 240 V, what is the secondary voltage?',
+    mentorHint: 'Fewer secondary turns means lower secondary voltage.',
     correct: '60 V',
     wrong: [
       miss('960 V', 'This multiplies by the turns ratio the wrong way; with fewer secondary turns the voltage steps down, not up.', 'Fewer secondary turns means lower secondary voltage.'),
@@ -472,6 +501,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Nuclear physics: Radioactivity',
     title: 'Penetrating power of radiation',
     prompt: 'Which type of nuclear radiation is stopped by a few centimetres of air or a sheet of paper?',
+    mentorHint: 'Alpha is the least penetrating of the three.',
     correct: 'Alpha radiation',
     wrong: [
       miss('Beta radiation', 'Beta particles are more penetrating than alpha and typically pass through paper, being stopped by a few millimetres of aluminium.', 'Alpha is the least penetrating of the three.'),
@@ -487,6 +517,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Nuclear physics: Radioactivity',
     title: 'Half-life calculation',
     prompt: 'A radioactive sample has a half-life of 8.0 days. What fraction of the original activity remains after 24 days?',
+    mentorHint: 'Count how many half-lives fit into 24 days.',
     correct: 'One eighth',
     wrong: [
       miss('One third', 'Decay is exponential, not linear; 24 days is three half-lives, halving the activity three times to give 1/8, not 1/3.', 'Count how many half-lives fit into 24 days.'),
@@ -502,6 +533,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Nuclear physics: Radioactivity',
     title: 'Decay constant and activity',
     prompt: 'Which equation correctly relates the activity A of a radioactive source to the number of undecayed nuclei N and the decay constant lambda?',
+    mentorHint: 'A larger decay constant means a higher activity.',
     correct: 'A = lambda N',
     wrong: [
       miss('A = N / lambda', 'This inverts the relationship; activity is proportional to lambda, not inversely proportional. More likely-to-decay nuclei give a higher activity.', 'A larger decay constant means a higher activity.'),
@@ -517,6 +549,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Nuclear physics: Radioactivity',
     title: 'Alpha decay equation',
     prompt: 'Uranium-238 (Z = 92) undergoes alpha decay. What are the proton number and nucleon number of the daughter nucleus?',
+    mentorHint: 'An alpha particle removes 2 protons and 2 neutrons.',
     correct: 'Proton number 90, nucleon number 234',
     wrong: [
       miss('Proton number 92, nucleon number 234', 'In alpha decay the proton number falls by 2 (an alpha particle carries away 2 protons), so the daughter cannot keep Z = 92.', 'An alpha particle removes 2 protons and 2 neutrons.'),
@@ -535,6 +568,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Nuclear physics: Mass and energy',
     title: 'Mass-energy equivalence',
     prompt: 'In a nuclear reaction, 3.0 x 10^-29 kg of mass is converted into energy. Using c = 3.0 x 10^8 m/s, how much energy is released?',
+    mentorHint: 'The speed of light is squared in E = mc^2.',
     correct: '2.7 x 10^-12 J',
     wrong: [
       miss('9.0 x 10^-21 J', 'This uses E = mc rather than E = mc^2, forgetting to square the speed of light.', 'The speed of light is squared in E = mc^2.'),
@@ -550,6 +584,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Nuclear physics: Mass and energy',
     title: 'Binding energy per nucleon',
     prompt: 'On a graph of binding energy per nucleon against nucleon number, the peak occurs near iron. What does this tell us about which processes release energy?',
+    mentorHint: 'Moving towards the iron peak releases energy from either side.',
     correct: 'Fusion of light nuclei and fission of heavy nuclei both release energy because they move towards iron',
     wrong: [
       miss('Only fission releases energy; fusion always requires a net input of energy', 'Fusing light nuclei below iron increases binding energy per nucleon and releases energy, which powers stars. Both processes can release energy.', 'Moving towards the iron peak releases energy from either side.'),
@@ -565,6 +600,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Nuclear physics: Fission and reactors',
     title: 'Role of the moderator',
     prompt: 'In a thermal nuclear fission reactor, what is the purpose of the moderator?',
+    mentorHint: 'Control rods absorb; the moderator slows.',
     correct: 'To slow down fast neutrons so they can cause further fission',
     wrong: [
       miss('To absorb excess neutrons and shut down the reaction', 'Absorbing neutrons to control the reaction is the job of the control rods, not the moderator, which instead slows neutrons.', 'Control rods absorb; the moderator slows.'),
@@ -583,6 +619,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Astrophysics: Telescopes',
     title: 'Resolving power and the Rayleigh criterion',
     prompt: 'According to the Rayleigh criterion, how can the resolving power of a telescope be improved for a given wavelength of light?',
+    mentorHint: 'Resolution depends on aperture, not eyepiece.',
     correct: 'By increasing the diameter of the objective aperture',
     wrong: [
       miss('By increasing the focal length of the eyepiece', 'A longer eyepiece focal length changes magnification but does not improve resolving power, which is set by the aperture diameter and wavelength.', 'Resolution depends on aperture, not eyepiece.'),
@@ -598,6 +635,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Astrophysics: Stars',
     title: 'Apparent versus absolute magnitude',
     prompt: 'What is the difference between the apparent magnitude and the absolute magnitude of a star?',
+    mentorHint: 'The difference is about distance, not waveband.',
     correct: 'Apparent magnitude is how bright the star looks from Earth; absolute magnitude is how bright it would appear at a standard distance of 10 parsecs',
     wrong: [
       miss('Apparent magnitude is measured in visible light, while absolute magnitude includes all wavelengths', 'Both can be defined for a given waveband; the real distinction is whether the brightness is judged from Earth or from a standard distance.', 'The difference is about distance, not waveband.'),
@@ -613,6 +651,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Astrophysics: Stars',
     title: 'Wien\'s displacement law',
     prompt: 'Star A appears blue and star B appears red. Using Wien\'s displacement law, what can you conclude about their surface temperatures?',
+    mentorHint: 'Shorter peak wavelength means higher temperature.',
     correct: 'Star A (blue) is hotter than star B (red)',
     wrong: [
       miss('Star B (red) is hotter than star A (blue)', 'Wien\'s law shows hotter objects peak at shorter (bluer) wavelengths, so the blue star is the hotter one.', 'Shorter peak wavelength means higher temperature.'),
@@ -628,6 +667,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Astrophysics: Cosmology',
     title: 'Doppler shift and recession',
     prompt: 'The spectral lines of a distant galaxy are shifted towards longer (redder) wavelengths. What does this redshift indicate?',
+    mentorHint: 'Stretched wavelengths mean the source is receding.',
     correct: 'The galaxy is moving away from us',
     wrong: [
       miss('The galaxy is moving towards us', 'Motion towards an observer compresses wavelengths, producing a blueshift; a redshift indicates recession.', 'Stretched wavelengths mean the source is receding.'),
@@ -643,6 +683,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Astrophysics: Cosmology',
     title: 'Hubble\'s law and the age of the universe',
     prompt: 'Hubble\'s law states that the recession velocity of a galaxy is proportional to its distance. What is the constant of proportionality called, and what does its reciprocal estimate?',
+    mentorHint: 'Check the units of 1/H.',
     correct: 'The Hubble constant; its reciprocal estimates the age of the universe',
     wrong: [
       miss('The Hubble constant; its reciprocal estimates the size of the observable universe', 'The reciprocal of the Hubble constant has units of time, giving an estimate of the age, not a length.', 'Check the units of 1/H.'),
@@ -658,6 +699,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Astrophysics: Cosmology',
     title: 'Evidence for the Big Bang',
     prompt: 'Which observation is regarded as strong evidence for the Big Bang theory?',
+    mentorHint: 'Look for a relic of the early hot universe.',
     correct: 'The cosmic microwave background radiation observed in all directions',
     wrong: [
       miss('The existence of black holes at the centres of galaxies', 'Black holes form from collapsing stars and gas; they are not direct evidence for the origin of the universe in the way the CMB is.', 'Look for a relic of the early hot universe.'),
@@ -676,6 +718,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Turning points: The electron',
     title: 'Millikan\'s oil-drop experiment',
     prompt: 'What did Millikan\'s oil-drop experiment determine?',
+    mentorHint: 'The experiment isolated the electron\'s charge.',
     correct: 'That charge is quantised and the value of the charge on the electron',
     wrong: [
       miss('The mass of the electron directly', 'Millikan measured the charge; the mass followed only when combined with Thomson\'s earlier charge-to-mass ratio.', 'The experiment isolated the electron\'s charge.'),
@@ -691,6 +734,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Turning points: Wave-particle duality',
     title: 'The photoelectric effect and photon energy',
     prompt: 'Light below a certain threshold frequency causes no photoelectrons to be emitted from a metal, no matter how intense the light. Which model explains this?',
+    mentorHint: 'A sharp threshold frequency points to quantised photon energy.',
     correct: 'The photon model: each photon carries energy hf, and below the threshold no single photon has enough energy to release an electron',
     wrong: [
       miss('The wave model, because waves deliver energy continuously', 'The wave model predicts that even low-frequency light, if intense enough, would eventually free electrons, which contradicts the observed threshold.', 'A sharp threshold frequency points to quantised photon energy.'),
@@ -706,6 +750,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Turning points: Special relativity',
     title: 'The Michelson-Morley experiment',
     prompt: 'What was the significance of the null result of the Michelson-Morley experiment?',
+    mentorHint: 'A null result means no ether effect was found.',
     correct: 'It found no evidence for the ether and supported the idea that the speed of light is the same for all observers',
     wrong: [
       miss('It proved that the ether fills all of space', 'The experiment failed to detect any ether wind; its null result undermined, rather than confirmed, the ether hypothesis.', 'A null result means no ether effect was found.'),
@@ -721,6 +766,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Turning points: Special relativity',
     title: 'Time dilation',
     prompt: 'A muon travelling close to the speed of light reaches the Earth\'s surface even though its half-life is far too short to survive the journey at that speed in classical terms. How does special relativity explain this?',
+    mentorHint: 'No massive particle can reach light speed.',
     correct: 'From Earth\'s frame the muon\'s internal clock runs slow (time dilation), so it decays more slowly and survives long enough',
     wrong: [
       miss('The muon speeds up beyond the speed of light to arrive in time', 'Nothing with mass can reach or exceed the speed of light; the explanation is time dilation, not faster-than-light travel.', 'No massive particle can reach light speed.'),
@@ -739,6 +785,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Further mechanics: Momentum',
     title: 'Elastic versus inelastic collisions',
     prompt: 'In a perfectly inelastic collision between two objects, which quantity is conserved and which is not?',
+    mentorHint: 'Inelastic collisions lose kinetic energy.',
     correct: 'Momentum is conserved but kinetic energy is not',
     wrong: [
       miss('Both momentum and kinetic energy are conserved', 'Conservation of kinetic energy is the defining feature of an elastic collision; in an inelastic collision some kinetic energy is transferred to other forms.', 'Inelastic collisions lose kinetic energy.'),
@@ -754,6 +801,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Further mechanics: Momentum',
     title: 'Impulse and change of momentum',
     prompt: 'A 0.16 kg ball travelling at 25 m/s is struck and rebounds straight back at 25 m/s. What is the magnitude of the impulse delivered to the ball?',
+    mentorHint: 'Momentum is a vector; account for the reversal in direction.',
     correct: '8.0 N s',
     wrong: [
       miss('0 N s', 'Although the speed is unchanged, the direction reverses, so the velocity changes from +25 to -25 m/s; the momentum change is not zero.', 'Momentum is a vector; account for the reversal in direction.'),
@@ -772,6 +820,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Magnetic fields',
     title: 'Magnetic flux linkage',
     prompt: 'A flat coil of N turns and area A is placed in a uniform magnetic field of flux density B, with the field at an angle theta to the plane of the coil. Which expression gives the flux linkage?',
+    mentorHint: 'Check whether the angle is to the plane or to the normal.',
     correct: 'N B A sin(theta)',
     wrong: [
       miss('N B A cos(theta)', 'The cosine form applies when theta is measured between the field and the normal to the coil; here theta is between the field and the plane, so sine is correct.', 'Check whether the angle is to the plane or to the normal.'),
@@ -790,6 +839,7 @@ export const alevelPhysicsHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Thermal physics: Energy and temperature',
     title: 'Internal energy of a system',
     prompt: 'What is meant by the internal energy of a system?',
+    mentorHint: 'Think microscopically, not about bulk motion.',
     correct: 'The sum of the randomly distributed kinetic and potential energies of all the particles in the system',
     wrong: [
       miss('The kinetic energy of the system as it moves through space', 'Internal energy refers to the microscopic energies of the particles, not the bulk kinetic energy of the whole system moving together.', 'Think microscopically, not about bulk motion.'),

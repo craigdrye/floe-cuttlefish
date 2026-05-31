@@ -17,6 +17,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('The number of claims denied per day across all payers', 'That describes a denial-volume metric; days in A/R measures how long money sits uncollected.', 'Separate "how many claims fail" from "how long money takes to arrive" — they are different KPIs.'),
       miss('The legal deadline by which claims must be filed', 'Filing deadlines are timely-filing limits set by payers; days in A/R is an internal performance measure.', 'Timely filing is an external rule; A/R days is an internal speed-of-collection measure.'),
     ],
+    mentorHint:
+      'Days in A/R is a speed-of-cash metric, not a denial count or a filing rule. Think of it as how long billed revenue sits in receivables before becoming cash, which makes increases a warning sign for collections and follow-up.',
     lesson: 'Days in A/R approximates how long, on average, money stays uncollected after billing (outstanding receivables divided by average daily charges). A rising figure signals slower cash flow, often from denials, aging follow-up, or front-end errors, and is a core revenue-cycle health metric.',
     source,
     generated: true,
@@ -32,6 +34,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('Payment posting failed because the ERA was misread', 'Posting handles money the payer already returned; a charge that was never billed produces no remittance to post.', 'Posting is the last step and acts on remittances; a missing charge never generated one.'),
       miss('Eligibility failed because coverage was not verified', 'Coverage may be perfectly valid; the problem is that the rendered service simply never became a billable line.', 'Distinguish "could this be paid" (eligibility) from "was it ever billed at all" (charge capture).'),
     ],
+    mentorHint:
+      'The revenue cycle starts before claim submission: documented work must be converted into charge lines. If the payer never sees a service, the failure is not adjudication or posting; it is the upstream control that captures billable work.',
     lesson: 'Charge capture is the step that turns documented services into billable charges. A captured-but-unbilled or never-captured service is pure revenue leakage. It must be found and submitted within timely-filing limits, and recurring gaps point to a charge-reconciliation control problem.',
     source,
     generated: true,
@@ -49,6 +53,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('The mother\'s plan, because mothers are primary by default', 'There is no default-to-mother rule; coordination order for dependents follows the birthday rule.', 'Gender of the parent is irrelevant; only whose birthday lands earlier in the year matters.'),
       miss('Whichever plan the parents designate as primary', 'COB order for a dependent child is rule-based, not chosen by the family.', 'Payer order is determined by COB rules, not by family preference.'),
     ],
+    mentorHint:
+      'Coordination of benefits rules decide payer order before anyone chooses a preference. For dependent children, focus on the month and day of each parent\'s birthday, not age, gender, or whose plan the family likes better.',
     lesson: 'For a dependent child covered by both parents\' commercial plans, the birthday rule makes the plan of the parent whose birthday (month and day) falls earlier in the calendar year primary. The birth year is irrelevant. Getting COB order right prevents "other coverage" denials and payment delays.',
     source,
     generated: true,
@@ -64,6 +70,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('Medicare is primary because the patient is enrolled in it', 'Enrollment does not set order; MSP rules can place Medicare second even when the patient holds it.', 'Holding Medicare and Medicare paying first are different things — MSP decides order.'),
       miss('Whichever plan the patient asks to bill first', 'Payer order under MSP is rule-driven, not a patient choice.', 'Coordination order is governed by MSP regulation, not patient preference.'),
     ],
+    mentorHint:
+      'Medicare Secondary Payer rules can put another plan ahead of Medicare even for someone over 65. The key variables are active employment and employer size, which is why registration workflows ask detailed MSP questions.',
     lesson: 'Under Medicare Secondary Payer rules, for an aged (65+) working beneficiary whose employer (or spouse\'s employer) has 20 or more employees, the group health plan pays primary and Medicare is secondary. Defaulting Medicare to primary is an MSP violation; the MSP questionnaire captures the employer size and status that decide order.',
     source,
     generated: true,
@@ -79,6 +87,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('$320, which is 80% of the allowed amount', 'That figure is the plan\'s share once coinsurance applies, and it ignores that the deductible is unmet.', 'You computed the plan\'s coinsurance share, not the patient\'s, and skipped the deductible step.'),
       miss('$0, because the service is covered', 'Covered does not mean free; an unmet deductible makes the patient responsible for the allowed amount.', '"Covered" sets the allowed amount and rules, but the patient still pays deductible and cost-share.'),
     ],
+    mentorHint:
+      'Cost-sharing follows an order of operations: apply any remaining deductible first, then coinsurance only after the deductible is satisfied. Always use the allowed amount as the base, because covered services are priced by contract rather than billed charge.',
     lesson: 'Cost-sharing follows an order: the deductible is satisfied first, then coinsurance applies to amounts above it. With $1,200 of deductible remaining, a $400 allowed service is paid entirely by the patient toward the deductible; the 80/20 split only begins once the deductible is met. The amount is also capped at the allowed amount, never billed charges.',
     source,
     generated: true,
@@ -96,6 +106,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('A referral always replaces the need for authorization', 'A referral routes the patient but does not pre-approve a procedure; authorization may still be required.', 'Routing the patient is not the same as pre-approving a service.'),
       miss('Authorization is only needed when a referral is missing', 'Authorization requirements are set by payer policy for specific services, independent of whether a referral exists.', 'Authorization is service-driven; referral is PCP-direction-driven. They do not substitute.'),
     ],
+    mentorHint:
+      'A referral and an authorization answer different operational questions: who directed the patient to the specialist, and whether the payer approved a particular service. A clean front-end check verifies each requirement separately because missing either can produce a different denial.',
     lesson: 'A referral is the primary-care provider directing a patient to a specialist; prior authorization is the payer pre-approving a specific service before it is rendered. They have different triggers and owners, and a plan may require both. Conflating them produces both missing-referral and no-authorization denials.',
     source,
     generated: true,
@@ -111,6 +123,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('Rebill all 9 visits under the same auth number to force payment', 'Resubmitting the same over-limit claim produces the same denial; the units exceed what was approved.', 'The blocker is units, not formatting — resubmission alone changes nothing.'),
       miss('Change the visit count on the claim to 6 and keep the other 3 unpaid', 'Misstating the count to match the auth misrepresents services rendered and abandons revenue without proper resolution.', 'Do not alter documented service counts; pursue additional auth or an appeal for the extra units.'),
     ],
+    mentorHint:
+      'An authorization is bounded by service type, date range, provider, and units or visits. Having an auth number is only useful if the claim stays inside those boundaries or the practice obtains support for the extra work.',
     lesson: 'Prior authorization approves specific services, units, and dates. A claim must match the approval. Visits beyond the authorized units are not covered by that auth, so the fix is to obtain additional authorization (often retroactively limited) or appeal the extra units with clinical justification, never to misstate the service count.',
     source,
     generated: true,
@@ -126,6 +140,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('Modifier GY, because Medicare may not pay', 'GY is for services statutorily excluded or not a Medicare benefit, not for likely-non-covered-but-usually-covered services with an ABN.', 'GY = never-covered/statutorily excluded; this service is usually covered but expected to be denied.'),
       miss('No modifier, since the signed ABN by itself allows patient billing', 'Without the GA modifier the claim does not signal the ABN, and the patient-liability protection may not be recognized.', 'The signed ABN must be communicated to Medicare via the modifier; the form alone is not on the claim.'),
     ],
+    mentorHint:
+      'ABN modifiers tell Medicare whether the patient was warned before a usually covered service that may be denied. Distinguish the modifier that preserves patient liability from the modifier that admits no valid notice was obtained.',
     lesson: 'When a usually-covered Medicare service is expected to be denied (e.g., medical necessity) and a mandatory ABN is signed, modifier GA reports the waiver of liability so the patient can be billed if Medicare denies. GZ signals no ABN was obtained (provider liability); GY is for statutorily excluded services.',
     source,
     generated: true,
@@ -143,6 +159,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('The physician uses the UB-04 and the hospital uses the CMS-1500', 'This reverses them: UB-04 is institutional (facility), CMS-1500 is professional (provider).', 'You have the forms swapped — UB-04 is the facility/institutional form.'),
       miss('Both use the UB-04, since the patients are shared', 'Shared patients do not change form selection; form choice follows whether the billing entity is professional or institutional.', 'Form choice depends on the billing entity type, not on which patients are involved.'),
     ],
+    mentorHint:
+      'Claim form choice follows the type of billing entity and service, not the fact that the patient is the same person. Professional clinicians and institutional facilities use different paper forms and different 837 electronic transaction types.',
     lesson: 'Professional/provider services are billed on the CMS-1500 (electronic format 837P). Institutional/facility services are billed on the UB-04, also called CMS-1450 (electronic format 837I). Choosing the wrong form is a structural clean-claim error that will be rejected.',
     source,
     generated: true,
@@ -158,6 +176,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('The diagnosis uses CPT and the service uses ICD-10-CM', 'This reverses the systems: ICD-10-CM is diagnoses, CPT is procedures/services.', 'You swapped them — ICD-10-CM is the diagnosis system.'),
       miss('Both use HCPCS Level II codes', 'HCPCS Level II covers items like drugs, supplies, and DME, not the diagnosis or a standard office E/M visit.', 'HCPCS Level II is mainly products/supplies; it is not the diagnosis system and not the usual E/M system.'),
     ],
+    mentorHint:
+      'Coding systems divide the story into why care was needed and what was done. Diagnoses support medical necessity, while procedure and supply codes describe the billable work or items.',
     lesson: 'ICD-10-CM codes the diagnosis (why the patient was seen). CPT codes the procedure or service (what was done); HCPCS Level II covers many drugs, supplies, and equipment. Diagnosis-to-procedure linkage must support medical necessity, and using the wrong system produces denials.',
     source,
     generated: true,
@@ -173,6 +193,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('J1885, the ketorolac injection', 'A letter followed by four digits is the HCPCS Level II pattern (a drug here), not an ICD-10-CM diagnosis code.', 'Letter + exactly four digits = HCPCS Level II; ICD-10-CM has a decimal and 3–7 characters.'),
       miss('36415, the venipuncture', 'That is a numeric CPT procedure code for blood draw, not a diagnosis code.', 'Five numeric digits with no decimal is CPT; diagnoses begin with a letter and use a decimal.'),
     ],
+    mentorHint:
+      'Code patterns are a fast clean-claim skill: diagnoses have ICD-10-CM structure, office visits and venipuncture are CPT, and many injected drugs use HCPCS Level II. Use the format of the code to classify it before interpreting the clinical meaning.',
     lesson: 'ICD-10-CM diagnosis codes begin with an alpha character, run 3–7 characters, and use a decimal after the third (e.g., E11.40). CPT Category I codes are five numeric digits (00100–99499). HCPCS Level II codes are a letter plus four digits (e.g., J1885). Recognizing the pattern is core clean-claim literacy.',
     source,
     generated: true,
@@ -188,6 +210,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('Both boxes hold the group\'s Type 2 NPI', 'The rendering provider in 24J must be the individual (Type 1) NPI of who actually performed the service.', 'A rendering provider is a person — box 24J needs the individual Type 1 NPI.'),
       miss('Both boxes hold the physician\'s individual Type 1 NPI', 'When billing under a group, box 33a should carry the group\'s billing NPI, not the individual\'s.', 'Box 33a is the billing entity; under a group that is the group\'s NPI, not the individual\'s.'),
     ],
+    mentorHint:
+      'NPI fields separate the person who performed the service from the entity billing for payment. In group practice billing, those can be different NPIs, so read each box by function rather than assuming one identifier goes everywhere.',
     lesson: 'On the CMS-1500, box 24J carries the rendering provider\'s individual Type 1 NPI (who performed the service), while box 33a carries the billing provider\'s NPI (who is paid). Billing under a group puts the group\'s (typically Type 2) NPI in 33a. Mismatched NPI fields are a common cause of enrollment-related denials.',
     source,
     generated: true,
@@ -203,6 +227,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('Append modifier 25 to the column-two procedure', 'Modifier 25 is for a significant, separate E/M service on the same day, not for unbundling two procedures.', 'Modifier 25 is an E/M-specific modifier; this is a procedure-to-procedure bundling issue.'),
       miss('Delete the column-two code so the claim passes the edit', 'Removing a documented, separately performed service abandons legitimate revenue.', 'Do not drop a real service — unbundle correctly with a supported modifier instead.'),
     ],
+    mentorHint:
+      'NCCI edits treat some code pairs as normally bundled, but documentation can justify separate payment when the services are truly distinct. The modifier is the claim signal that tells the payer to evaluate distinctness rather than apply the bundle automatically.',
     lesson: 'NCCI procedure-to-procedure edits bundle code pairs; the column-two code is denied unless an NCCI-associated modifier (59, or the more specific XE/XP/XS/XU) is appended and documentation supports a truly distinct service. Modifier 59 is the modifier of last resort. Modifier 25 is for E/M services, not procedure unbundling.',
     source,
     generated: true,
@@ -220,6 +246,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('It is a denial, so a corrected claim with the right indicators is required', 'A corrected claim applies to claims already on file at the payer; a rejected claim was never accepted, so resubmit it new.', 'Corrected-claim handling assumes the payer already has the claim; a rejection means they never did.'),
       miss('It does not matter, since both are handled the same way', 'They are handled differently: rejections are resubmitted, denials are corrected or appealed, and timely-filing implications differ.', 'The distinction drives the entire downstream workflow and deadlines — it matters a lot.'),
     ],
+    mentorHint:
+      'A rejection means the claim failed a gatekeeping edit before adjudication, so the payer has not made a coverage or payment decision yet. That workflow calls for data correction and new submission, while denials require a different path.',
     lesson: 'A rejection happens before adjudication (clearinghouse or payer front-end edits) and is not "on file," so you fix the data and resubmit a fresh claim. A denial is an adjudicated decision to not pay, handled via a corrected claim or an appeal. Treating a rejection as a denial wastes time and can risk timely filing.',
     source,
     generated: true,
@@ -235,6 +263,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('The CO amount goes to the patient and the PR amount is the write-off', 'This reverses the codes: CO is the contractual write-off, PR is patient responsibility.', 'You swapped them — CO = contractual obligation (write-off), PR = patient responsibility.'),
       miss('Both are write-offs because the payer adjusted them', 'PR is explicitly patient responsibility (deductible, copay, coinsurance) and should be billed to the patient.', 'Not every adjustment is a write-off; PR amounts are owed by the patient.'),
     ],
+    mentorHint:
+      'Remittance group codes assign financial responsibility. Before billing a patient or writing off a balance, identify whether the adjustment is contractual, patient responsibility, or another payer/process adjustment.',
     lesson: 'Group codes on a remittance assign responsibility: CO (contractual obligation) is a provider write-off you cannot bill the patient for; PR (patient responsibility) is billable to the patient (deductible, copay, coinsurance); OA (other adjustment) covers everything else, such as COB. Reading the group code correctly prevents both lost revenue and improper patient billing.',
     source,
     generated: true,
@@ -250,6 +280,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('Within 12 months of the remittance date, not the date of service', 'Medicare measures timely filing from the date of service, not from any remittance.', 'The clock starts at the date of service, not at a payer response.'),
       miss('There is no deadline as long as the claim is clean', 'Timely filing limits apply regardless of claim quality; a clean but late claim is still denied.', 'Cleanliness does not stop the clock — late is late even for a perfect claim.'),
     ],
+    mentorHint:
+      'Timely filing is measured from the service date for Medicare fee-for-service claims, and it is unforgiving once the window closes. A clean claim can still become unrecoverable revenue if it is discovered after the filing clock expires.',
     lesson: 'Medicare fee-for-service requires claims to be filed within 12 months (one calendar year) of the date of service. A claim filed after that is denied for untimely filing (CO-29) and the revenue is lost. Commercial payers set their own, often shorter, limits, so aged claims need urgency and proof of submission.',
     source,
     generated: true,
@@ -265,6 +297,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('An Administrative Law Judge (ALJ) hearing, within 60 days', 'The ALJ hearing is the third level and has a minimum amount-in-controversy; it is not the first step.', 'ALJ is level three with a dollar threshold — you cannot start there.'),
       miss('A corrected claim resubmission, within 12 months', 'A corrected claim is not an appeal level; it addresses claim errors, not a disputed adjudication decision.', 'Correcting a claim error is different from formally appealing a denial decision.'),
     ],
+    mentorHint:
+      'Appeals ladders are sequential: each level has a reviewer, a deadline, and sometimes an amount threshold. Start by identifying whether the claim has already been adjudicated, then choose the first formal Medicare review level.',
     lesson: 'The Medicare fee-for-service appeals ladder runs: (1) redetermination by the MAC (120 days to file), (2) reconsideration by a QIC (180 days), (3) ALJ hearing (60 days, with a minimum amount in controversy), then the Medicare Appeals Council and federal court. Knowing the level and its deadline keeps appealable revenue recoverable.',
     source,
     generated: true,
@@ -282,6 +316,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('The EOB is the provider remittance and the 835 is sent to the patient', 'This reverses them: the 835/ERA goes to the provider, the EOB goes to the patient.', 'You swapped the audiences — the 835 is the provider-facing electronic remittance.'),
       miss('The 835 is a denial notice and the EOB is a payment notice', 'Both can show payments and adjustments; the distinction is audience and format, not payment versus denial.', 'Neither is defined by pay-vs-deny; the difference is who receives it and in what format.'),
     ],
+    mentorHint:
+      'The same claim can generate different documents for different audiences. Provider posting relies on standardized electronic remittance data, while the patient-facing explanation is designed for understanding benefits and cost share.',
     lesson: 'The ERA/835 is the electronic remittance advice the payer sends the provider; it carries the CARC/RARC and group codes used to post payments and adjustments. The EOB (explanation of benefits) is the payer\'s document to the patient explaining the same claim. Post from the 835, not the patient\'s EOB.',
     source,
     generated: true,
@@ -297,6 +333,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('Yes, and the $80 should be billed to the patient', 'CO-45 is a contractual obligation write-off and cannot be billed to the patient.', 'CO is a provider write-off — that $80 never goes to the patient.'),
       miss('It cannot be determined without the patient\'s EOB', 'The provider remittance already shows allowed, adjustment, and paid amounts; the contracted rate determines whether it is an underpayment.', 'The 835 has everything you need: compare paid to the contracted allowed amount.'),
     ],
+    mentorHint:
+      'Underpayment analysis compares what the payer paid to the contracted allowed amount, not to the practice\'s billed charge. A contractual adjustment is expected when charges exceed the allowed rate and generally cannot be shifted to the patient.',
     lesson: 'CO-45 means the charge exceeds the fee schedule/contracted amount, and that excess is a contractual write-off, not an underpayment. An underpayment exists only when the payer pays less than the contracted allowed amount. Compare paid against the contracted rate, never against billed charges, and never bill the patient for a CO write-off.',
     source,
     generated: true,
@@ -312,6 +350,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('Apply the $75 to an unrelated family member\'s balance', 'Moving a credit to another account without a policy basis is misapplication of funds and can constitute fraud.', 'Funds belong to the party who overpaid; do not transfer them without authorization.'),
       miss('Re-bill the patient an extra $75 so the account reads zero', 'Creating a fake charge to absorb a legitimate credit is theft from the patient.', 'Never invent a charge to zero out a real credit — that takes money the patient is owed.'),
     ],
+    mentorHint:
+      'A credit balance is not extra money for the practice; it is a clue that someone paid more than the final allowed responsibility. The safe workflow is research first, then refund the correct party or follow unclaimed-property rules.',
     lesson: 'A credit balance signals a confirmed overpayment once researched. The overpaid amount must be refunded to the correct party, payer or patient, under policy and within required timeframes. Unrefunded credits create regulatory exposure and may fall under state escheat (unclaimed property) law. Never park, transfer, or absorb a legitimate credit.',
     source,
     generated: true,
@@ -329,6 +369,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('Balance billing is allowed if the patient signs a waiver at the desk', 'For ancillary services like anesthesia at an in-network facility, the patient generally cannot waive these protections.', 'Certain ancillary providers cannot use a consent waiver to balance-bill — anesthesia is one.'),
       miss('The hospital absorbs the entire bill, including the anesthesiologist\'s fee', 'The protection limits the patient\'s liability; it does not make the facility pay the out-of-network provider\'s fee, which is resolved between provider and plan.', 'The patient is protected, but the unpaid amount is settled between provider and plan, not paid by the hospital.'),
     ],
+    mentorHint:
+      'The No Surprises Act limits patient liability in situations where the patient could not reasonably choose the out-of-network provider. Separate what the patient owes from how the plan and out-of-network provider resolve the remaining payment dispute.',
     lesson: 'The No Surprises Act (effective 2022) bans balance billing for emergency care and for many out-of-network providers at in-network facilities (such as anesthesiology, radiology, pathology). The patient pays only in-network cost-sharing; the out-of-network amount is resolved between provider and plan, often via independent dispute resolution.',
     source,
     generated: true,
@@ -344,6 +386,8 @@ export const medicalBillingRoadmapTopUpQuestions: Question[] = makeQuestionBank(
       miss('The patient must pay the full $1,600 but can request a payment plan', 'A payment plan does not address the protection; the $600 overage exceeds the $400 threshold and is disputable.', 'A payment plan is separate from the patient\'s right to dispute the overage.'),
       miss('The provider must automatically waive everything above $1,000', 'The Act provides a dispute process, not an automatic waiver of the overage.', 'Resolution comes through the dispute process, not an automatic write-down.'),
     ],
+    mentorHint:
+      'Good faith estimates are consumer-protection documents for uninsured and self-pay patients, but they are not automatic price locks. The key is whether the final bill crosses the dollar threshold that opens the formal dispute pathway.',
     lesson: 'Under the No Surprises Act, uninsured and self-pay patients are entitled to a good faith estimate before scheduled care. If the final bill exceeds the estimate by $400 or more, the patient may use the patient-provider dispute resolution process through HHS, generally within 120 days of receiving the bill. Accurate estimates and transparent statements reduce this exposure.',
     source,
     generated: true,

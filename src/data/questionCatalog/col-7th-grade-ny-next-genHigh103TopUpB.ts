@@ -11,6 +11,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Solving Multi-Step Equations',
     title: 'Solve a two-step equation',
     prompt: 'Solve for x: 3x + 7 = 22.',
+    mentorHint: 'Undo the addition before undoing the multiplication.',
     correct: 'x = 5',
     wrong: [
       miss('x = 9.67', 'This divides 22 + 7 by 3, but the 7 should be subtracted first, not added.', 'Undo the addition before undoing the multiplication.'),
@@ -26,6 +27,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Solving Multi-Step Equations',
     title: 'Equation in the form p(x + q) = r',
     prompt: 'Solve for x: 4(x - 3) = 20.',
+    mentorHint: 'Either distribute the 4 or divide both sides by 4 first.',
     correct: 'x = 8',
     wrong: [
       miss('x = 2', 'This solves 4x - 3 = 20 by ignoring that the 4 multiplies the whole quantity.', 'Either distribute the 4 or divide both sides by 4 first.'),
@@ -41,6 +43,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Solving Multi-Step Equations',
     title: 'Variables on both sides',
     prompt: 'Solve for x: 5x + 4 = 2x + 19.',
+    mentorHint: 'Subtract 2x from both sides so the variable stays on one side.',
     correct: 'x = 5',
     wrong: [
       miss('x = 23/7', 'This adds the variable terms (5x + 2x) instead of subtracting to gather them on one side.', 'Subtract 2x from both sides so the variable stays on one side.'),
@@ -56,6 +59,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Solving Multi-Step Equations',
     title: 'Word problem to equation',
     prompt: 'A taxi charges a $3 flat fee plus $2 per mile. If the total ride cost $17, how many miles was the ride?',
+    mentorHint: 'Subtract the flat fee before dividing by the per-mile rate.',
     correct: '7 miles',
     wrong: [
       miss('10 miles', 'This divides 17 by 2 but ignores the $3 flat fee.', 'Subtract the flat fee before dividing by the per-mile rate.'),
@@ -71,6 +75,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Solving Multi-Step Equations',
     title: 'Equation with negative coefficient',
     prompt: 'Solve for x: -2x + 9 = 1.',
+    mentorHint: 'Both sides must be divided by -2, and -8 divided by -2 is +4.',
     correct: 'x = 4',
     wrong: [
       miss('x = -4', 'This forgets the sign: dividing 8 by -2 gives -4 only if you mishandle the negatives.', 'Both sides must be divided by -2, and -8 divided by -2 is +4.'),
@@ -87,6 +92,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Inequalities',
     title: 'Solve a one-step inequality',
     prompt: 'Solve for x: x + 6 > 10.',
+    mentorHint: 'Subtract 6 from both sides to undo the +6.',
     correct: 'x > 4',
     wrong: [
       miss('x > 16', 'This adds 6 instead of subtracting it.', 'Subtract 6 from both sides to undo the +6.'),
@@ -102,6 +108,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Inequalities',
     title: 'Dividing by a negative flips the sign',
     prompt: 'Solve for x: -3x < 12.',
+    mentorHint: 'Dividing by -3 reverses the direction of the inequality.',
     correct: 'x > -4',
     wrong: [
       miss('x < -4', 'When dividing both sides by a negative number, the inequality sign must flip.', 'Dividing by -3 reverses the direction of the inequality.'),
@@ -117,6 +124,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Inequalities',
     title: 'Two-step inequality word problem',
     prompt: 'Maya has $50 and wants to buy a $14 backpack and some notebooks that cost $4 each. What is the greatest number of notebooks she can buy?',
+    mentorHint: 'Subtract the backpack cost before dividing by the notebook price.',
     correct: '9 notebooks',
     wrong: [
       miss('12 notebooks', 'This divides $50 by $4 but ignores the cost of the backpack.', 'Subtract the backpack cost before dividing by the notebook price.'),
@@ -132,6 +140,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Inequalities',
     title: 'Graphing an inequality on a number line',
     prompt: 'When graphing the solution to x >= 3 on a number line, what should be drawn at the point 3?',
+    mentorHint: 'The "or equal to" part means 3 is part of the solution.',
     correct: 'A closed (filled-in) circle, with shading to the right',
     wrong: [
       miss('An open (hollow) circle, with shading to the right', 'An open circle means the value is not included, but >= includes 3.', 'The "or equal to" part means 3 is part of the solution.'),
@@ -148,6 +157,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Percent Applications',
     title: 'Sales tax total',
     prompt: 'A jacket costs $40 and the sales tax rate is 8%. What is the total cost including tax?',
+    mentorHint: 'Find 8% of $40 first, which is $3.20.',
     correct: '$43.20',
     wrong: [
       miss('$48.00', 'This applies a 20% increase or mis-multiplies; 8% of $40 is $3.20, not $8.00.', 'Find 8% of $40 first, which is $3.20.'),
@@ -163,6 +173,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Percent Applications',
     title: 'Discount price',
     prompt: 'A video game originally costs $60 and is on sale for 25% off. What is the sale price?',
+    mentorHint: 'Subtract the discount from the original price.',
     correct: '$45',
     wrong: [
       miss('$15', 'This is the amount of the discount, not the price you pay.', 'Subtract the discount from the original price.'),
@@ -178,6 +189,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Percent Applications',
     title: 'Simple interest',
     prompt: 'You deposit $500 in an account that earns 4% simple interest per year. How much interest is earned after 3 years?',
+    mentorHint: 'Multiply the yearly interest by the number of years.',
     correct: '$60',
     wrong: [
       miss('$20', 'This is the interest for only one year; the question asks for 3 years.', 'Multiply the yearly interest by the number of years.'),
@@ -193,6 +205,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Percent Applications',
     title: 'Percent increase',
     prompt: 'A plant grew from 20 cm to 26 cm. What was the percent increase in height?',
+    mentorHint: 'Divide the change by the original amount, then convert to a percent.',
     correct: '30%',
     wrong: [
       miss('6%', 'This reports the raw change of 6 cm as a percent without dividing by the original.', 'Divide the change by the original amount, then convert to a percent.'),
@@ -208,6 +221,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Percent Applications',
     title: 'Tip calculation',
     prompt: 'A restaurant bill is $80 before tip. If you leave a 15% tip, how much is the tip?',
+    mentorHint: 'Take 15% of the $80 bill.',
     correct: '$12',
     wrong: [
       miss('$15', 'This treats 15% as a flat $15 instead of 15% of the bill.', 'Take 15% of the $80 bill.'),
@@ -223,6 +237,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Percent Applications',
     title: 'Finding the original price',
     prompt: 'After a 20% discount, a pair of shoes costs $48. What was the original price?',
+    mentorHint: 'The $48 represents 80% of the original, so divide.',
     correct: '$60',
     wrong: [
       miss('$57.60', 'This takes 20% off of $48 again, but $48 is already the discounted price.', 'The $48 represents 80% of the original, so divide.'),
@@ -239,6 +254,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Scale Drawings and Proportions',
     title: 'Using a map scale',
     prompt: 'On a map, 1 inch represents 25 miles. Two cities are 3.5 inches apart on the map. What is the actual distance between them?',
+    mentorHint: 'Multiply the map distance by the miles per inch.',
     correct: '87.5 miles',
     wrong: [
       miss('28.5 miles', 'This adds 25 and 3.5 instead of multiplying by the scale.', 'Multiply the map distance by the miles per inch.'),
@@ -254,6 +270,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Scale Drawings and Proportions',
     title: 'Scale factor and area',
     prompt: 'A scale drawing of a rectangular garden uses a scale of 1 cm = 2 m. The drawing is 4 cm by 3 cm. What is the actual area of the garden?',
+    mentorHint: 'Convert each dimension to actual meters first.',
     correct: '48 square meters',
     wrong: [
       miss('12 square meters', 'This finds the drawing area (4 x 3) without applying the scale.', 'Convert each dimension to actual meters first.'),
@@ -269,6 +286,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Scale Drawings and Proportions',
     title: 'Solving a proportion',
     prompt: 'If 3 pencils cost $1.20, how much do 7 pencils cost at the same rate?',
+    mentorHint: 'Find the unit price, then multiply by 7.',
     correct: '$2.80',
     wrong: [
       miss('$2.40', 'This doubles the price for 6 pencils but does not reach 7.', 'Find the unit price, then multiply by 7.'),
@@ -285,6 +303,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Angle Relationships',
     title: 'Complementary angles',
     prompt: 'Two angles are complementary. One angle measures 35 degrees. What is the measure of the other angle?',
+    mentorHint: 'Complementary angles add to 90 degrees.',
     correct: '55 degrees',
     wrong: [
       miss('145 degrees', 'This uses 180 degrees, which is for supplementary angles, not complementary.', 'Complementary angles add to 90 degrees.'),
@@ -300,6 +319,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Angle Relationships',
     title: 'Vertical angles',
     prompt: 'Two lines intersect. One of the four angles formed measures 110 degrees. What is the measure of the angle directly opposite it (its vertical angle)?',
+    mentorHint: 'Vertical angles are equal, not supplementary.',
     correct: '110 degrees',
     wrong: [
       miss('70 degrees', 'This gives the supplementary (adjacent) angle, not the vertical angle.', 'Vertical angles are equal, not supplementary.'),
@@ -315,6 +335,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Angle Relationships',
     title: 'Solve for an unknown angle with an equation',
     prompt: 'Two angles are supplementary. One measures (2x) degrees and the other measures (x + 30) degrees. What is the value of x?',
+    mentorHint: 'Supplementary angles add to 180 degrees.',
     correct: 'x = 50',
     wrong: [
       miss('x = 30', 'This solves as if the angles were complementary (sum 90) rather than supplementary.', 'Supplementary angles add to 180 degrees.'),
@@ -331,6 +352,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Area, Circumference, and Circles',
     title: 'Circumference of a circle',
     prompt: 'A circle has a radius of 5 cm. Using pi approximately 3.14, what is its circumference?',
+    mentorHint: 'Circumference uses 2 pi r, not pi r squared.',
     correct: 'About 31.4 cm',
     wrong: [
       miss('About 78.5 cm', 'This computes the area (pi r squared) instead of the circumference.', 'Circumference uses 2 pi r, not pi r squared.'),
@@ -346,6 +368,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Area, Circumference, and Circles',
     title: 'Area of a circle',
     prompt: 'A circle has a radius of 4 m. Using pi approximately 3.14, what is its area?',
+    mentorHint: 'Area uses pi r squared, not 2 pi r.',
     correct: 'About 50.24 square meters',
     wrong: [
       miss('About 25.12 square meters', 'This computes the circumference (2 pi r) rather than the area.', 'Area uses pi r squared, not 2 pi r.'),
@@ -361,6 +384,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Area, Circumference, and Circles',
     title: 'From circumference to diameter',
     prompt: 'A circular pond has a circumference of about 18.84 m. Using pi approximately 3.14, what is its diameter?',
+    mentorHint: 'C = pi x d, so divide by pi to get the diameter directly.',
     correct: 'About 6 m',
     wrong: [
       miss('About 3 m', 'This finds the radius, not the diameter.', 'C = pi x d, so divide by pi to get the diameter directly.'),
@@ -377,6 +401,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Surface Area and Volume',
     title: 'Volume of a rectangular prism',
     prompt: 'A rectangular box is 6 cm long, 4 cm wide, and 3 cm tall. What is its volume?',
+    mentorHint: 'Volume is length times width times height.',
     correct: '72 cubic centimeters',
     wrong: [
       miss('13 cubic centimeters', 'This adds the three dimensions instead of multiplying them.', 'Volume is length times width times height.'),
@@ -392,6 +417,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Surface Area and Volume',
     title: 'Surface area of a rectangular prism',
     prompt: 'A cube has a side length of 5 cm. What is its total surface area?',
+    mentorHint: 'Surface area covers the 6 faces, not the inside.',
     correct: '150 square centimeters',
     wrong: [
       miss('125 square centimeters', 'This is the volume (5 cubed), not the surface area.', 'Surface area covers the 6 faces, not the inside.'),
@@ -407,6 +433,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Surface Area and Volume',
     title: 'Volume of a triangular prism',
     prompt: 'A triangular prism has a triangular base with area 10 square cm and a length (height of the prism) of 7 cm. What is its volume?',
+    mentorHint: 'The triangle area is given, so just multiply by the length.',
     correct: '70 cubic centimeters',
     wrong: [
       miss('35 cubic centimeters', 'This includes an extra factor of one-half, but the base area already accounts for the triangle.', 'The triangle area is given, so just multiply by the length.'),
@@ -422,6 +449,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Surface Area and Volume',
     title: 'Net of a solid',
     prompt: 'A net is made of 6 rectangles. Which three-dimensional solid does this net most likely form?',
+    mentorHint: 'Count the shapes: 6 rectangles point to a box-like solid.',
     correct: 'A rectangular prism',
     wrong: [
       miss('A triangular prism', 'A triangular prism net has 2 triangles and 3 rectangles, not 6 rectangles.', 'Count the shapes: 6 rectangles point to a box-like solid.'),
@@ -438,6 +466,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Probability of Simple and Compound Events',
     title: 'Probability of a simple event',
     prompt: 'A bag contains 3 red, 5 blue, and 2 green marbles. If you draw one marble at random, what is the probability it is blue?',
+    mentorHint: 'The denominator should be the total number of marbles.',
     correct: '1/2',
     wrong: [
       miss('5/3', 'This compares blue to red instead of blue to the total, and probability cannot exceed 1.', 'The denominator should be the total number of marbles.'),
@@ -453,6 +482,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Probability of Simple and Compound Events',
     title: 'Complement of an event',
     prompt: 'The probability that it rains tomorrow is 0.3. What is the probability that it does NOT rain?',
+    mentorHint: 'The complement is what is left after subtracting from 1.',
     correct: '0.7',
     wrong: [
       miss('0.3', 'This repeats the given probability instead of finding its complement.', 'The complement is what is left after subtracting from 1.'),
@@ -468,6 +498,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Probability of Simple and Compound Events',
     title: 'Compound event with a tree or table',
     prompt: 'You flip a fair coin and roll a standard six-sided die. What is the probability of getting heads AND a 4?',
+    mentorHint: 'A standard die has 6 faces, and a coin has 2 sides.',
     correct: '1/12',
     wrong: [
       miss('1/8', 'This treats the die as having only 4 sides or otherwise miscounts the outcomes.', 'A standard die has 6 faces, and a coin has 2 sides.'),
@@ -483,6 +514,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Probability of Simple and Compound Events',
     title: 'Experimental vs theoretical probability',
     prompt: 'A spinner with 4 equal sections (1, 2, 3, 4) is spun 80 times and lands on 3 a total of 24 times. What is the experimental probability of landing on 3?',
+    mentorHint: 'Experimental probability uses the actual observed counts.',
     correct: '24/80, which is 0.3',
     wrong: [
       miss('1/4, which is 0.25', 'This is the theoretical probability, not the experimental result from the spins.', 'Experimental probability uses the actual observed counts.'),
@@ -499,6 +531,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Statistics, Sampling, and Data',
     title: 'Representative sample',
     prompt: 'A principal wants to estimate how all 600 students feel about lunch. Which sampling method gives the most representative (least biased) sample?',
+    mentorHint: 'A good sample should not favor one type of student.',
     correct: 'Randomly selecting 60 students from across all grades',
     wrong: [
       miss('Asking only the members of the cooking club', 'Cooking club members likely have stronger opinions about food, biasing the results.', 'A good sample should not favor one type of student.'),
@@ -514,6 +547,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Statistics, Sampling, and Data',
     title: 'Mean of a data set',
     prompt: 'Find the mean of the data set: 4, 8, 6, 10, 2.',
+    mentorHint: 'Divide the total by how many numbers there are.',
     correct: '6',
     wrong: [
       miss('30', 'This is the sum of the values, not the average; you still need to divide by 5.', 'Divide the total by how many numbers there are.'),
@@ -529,6 +563,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Statistics, Sampling, and Data',
     title: 'Comparing two populations with measures of center',
     prompt: 'Class A has a mean test score of 82 and Class B has a mean of 78. Both classes have a similar spread. What can you reasonably conclude?',
+    mentorHint: 'The mean is a group average, not a guarantee about individuals.',
     correct: 'On average, Class A scored higher than Class B',
     wrong: [
       miss('Every student in Class A scored higher than every student in Class B', 'A higher mean does not mean every individual scored higher; means describe the group, not each person.', 'The mean is a group average, not a guarantee about individuals.'),
@@ -544,6 +579,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     chapter: 'Statistics, Sampling, and Data',
     title: 'Using a sample proportion to estimate',
     prompt: 'In a random sample of 50 voters, 30 support a new park. Based on this sample, about how many of the town\'s 2000 voters would you predict support the park?',
+    mentorHint: 'Use the sample proportion to predict the larger group.',
     correct: 'About 1200',
     wrong: [
       miss('About 30', 'This reports the sample count without scaling up to the full population.', 'Use the sample proportion to predict the larger group.'),

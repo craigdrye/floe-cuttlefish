@@ -11,6 +11,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Rate equations and kinetics',
     title: 'Determining order from initial rates',
     prompt: 'When the concentration of reactant X is doubled (with all else constant), the initial rate increases by a factor of four. What is the order of reaction with respect to X?',
+    mentorHint: 'Ask what power of 2 gives 4.',
     correct: 'Second order',
     wrong: [
       miss('First order', 'For first order, doubling a concentration doubles the rate (a factor of 2), not a factor of 4.', 'Ask what power of 2 gives 4.'),
@@ -26,6 +27,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Rate equations and kinetics',
     title: 'Units of a rate constant',
     prompt: 'A reaction has the rate equation rate = k[A][B], with rate in mol dm^-3 s^-1 and concentrations in mol dm^-3. What are the units of the rate constant k?',
+    mentorHint: 'Add the orders: 1 + 1 = 2 overall.',
     correct: 'mol^-1 dm^3 s^-1',
     wrong: [
       miss('s^-1', 'These are the units for an overall first-order rate constant, where rate = k[A]. This reaction is overall second order.', 'Add the orders: 1 + 1 = 2 overall.'),
@@ -41,6 +43,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Rate equations and kinetics',
     title: 'Rate-determining step and the rate equation',
     prompt: 'A reaction has the experimentally determined rate equation rate = k[A]^2. Which statement about the rate-determining (slowest) step is best supported?',
+    mentorHint: 'Reactants absent from the rate equation enter after the slow step.',
     correct: 'Two molecules of A are involved in or before the rate-determining step',
     wrong: [
       miss('One molecule of A and one molecule of another reactant collide in the slow step', 'If a different reactant featured in the slow step, its concentration would appear in the rate equation; only [A] appears, raised to the power 2.', 'Reactants absent from the rate equation enter after the slow step.'),
@@ -56,6 +59,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Rate equations and kinetics',
     title: 'Effect of temperature on the rate constant',
     prompt: 'According to the Arrhenius equation, why does increasing temperature increase the rate constant k for most reactions?',
+    mentorHint: 'Ea is a property of the pathway, not of temperature.',
     correct: 'A larger fraction of molecules have energy greater than or equal to the activation energy',
     wrong: [
       miss('The activation energy of the reaction is lowered', 'Temperature does not change the activation energy; only a catalyst provides a lower-energy pathway. Temperature changes the distribution of molecular energies.', 'Ea is a property of the pathway, not of temperature.'),
@@ -71,6 +75,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Rate equations and kinetics',
     title: 'Reading order from a concentration-time graph',
     prompt: 'A reactant follows a concentration-time graph with a constant half-life (the time to halve the concentration is the same throughout the reaction). What is the order with respect to that reactant?',
+    mentorHint: 'Constant half-life is the signature of one specific order.',
     correct: 'First order',
     wrong: [
       miss('Zero order', 'A zero-order reactant gives a straight-line concentration-time graph with constant gradient, so its half-life shortens as concentration falls, not stays constant.', 'Constant half-life is the signature of one specific order.'),
@@ -87,6 +92,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Equilibrium constant Kp for homogeneous systems',
     title: 'Definition of a partial pressure',
     prompt: 'In a gas mixture at total pressure P, how is the partial pressure of gas A calculated?',
+    mentorHint: 'Use the share of moles that A contributes.',
     correct: 'Mole fraction of A multiplied by the total pressure',
     wrong: [
       miss('Total pressure divided by the number of gases present', 'This assumes every gas is present in equal amounts, which is generally false; partial pressure depends on the actual proportion of each gas.', 'Use the share of moles that A contributes.'),
@@ -102,6 +108,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Equilibrium constant Kp for homogeneous systems',
     title: 'Writing a Kp expression',
     prompt: 'For the equilibrium N2(g) + 3H2(g) reversible-arrow 2NH3(g), what is the correct expression for Kp?',
+    mentorHint: 'Products over reactants, each raised to its stoichiometric coefficient.',
     correct: 'Kp = p(NH3)^2 / (p(N2) x p(H2)^3)',
     wrong: [
       miss('Kp = (p(N2) x p(H2)^3) / p(NH3)^2', 'This is the reciprocal: products must go on top and reactants on the bottom. This expression describes the reverse reaction.', 'Products over reactants, each raised to its stoichiometric coefficient.'),
@@ -117,6 +124,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Equilibrium constant Kp for homogeneous systems',
     title: 'Effect of temperature on Kp',
     prompt: 'For an exothermic forward reaction, what happens to the value of Kp when the temperature is increased?',
+    mentorHint: 'Apply Le Chatelier: heat opposes the exothermic direction.',
     correct: 'Kp decreases',
     wrong: [
       miss('Kp increases', 'Raising temperature favours the endothermic (reverse) direction for an exothermic forward reaction, shifting equilibrium back toward reactants, which lowers Kp.', 'Apply Le Chatelier: heat opposes the exothermic direction.'),
@@ -132,6 +140,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Equilibrium constant Kp for homogeneous systems',
     title: 'Effect of a catalyst on equilibrium',
     prompt: 'A catalyst is added to a gaseous reaction at equilibrium. What is the effect on Kp and on the position of equilibrium?',
+    mentorHint: 'Catalysts affect rate, not the equilibrium position.',
     correct: 'Neither Kp nor the position of equilibrium changes; equilibrium is reached faster',
     wrong: [
       miss('Kp increases and equilibrium shifts toward products', 'A catalyst speeds the forward and reverse reactions equally, so it cannot favour products or change Kp.', 'Catalysts affect rate, not the equilibrium position.'),
@@ -148,6 +157,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Acids and bases: pH, Ka and buffers',
     title: 'pH of a strong acid',
     prompt: 'What is the pH of 0.010 mol dm^-3 hydrochloric acid (a strong monoprotic acid)? (log 0.010 = -2)',
+    mentorHint: 'Take the negative log of 0.010 exactly.',
     correct: '2.0',
     wrong: [
       miss('1.0', 'pH = -log[H+]; using 0.010 mol dm^-3 gives -log(0.010) = 2.0, not 1.0. A pH of 1 corresponds to 0.10 mol dm^-3.', 'Take the negative log of 0.010 exactly.'),
@@ -163,6 +173,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Acids and bases: pH, Ka and buffers',
     title: 'How a buffer resists pH change',
     prompt: 'An ethanoic acid / sodium ethanoate buffer resists a fall in pH when a small amount of acid is added. Which species removes the added H+ ions?',
+    mentorHint: 'You need the basic component to neutralise added acid.',
     correct: 'Ethanoate ions, CH3COO-',
     wrong: [
       miss('Ethanoic acid molecules, CH3COOH', 'Ethanoic acid is the source of H+, not a remover of it; it reacts with added base instead. Added acid is mopped up by the conjugate base.', 'You need the basic component to neutralise added acid.'),
@@ -178,6 +189,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Acids and bases: pH, Ka and buffers',
     title: 'pH at the half-equivalence point',
     prompt: 'During the titration of a weak acid with a strong base, what is true at the half-neutralisation (half-equivalence) point?',
+    mentorHint: 'Think about the ratio of acid to conjugate base at this point.',
     correct: 'pH = pKa of the weak acid',
     wrong: [
       miss('pH = 7', 'pH 7 is neutral and is not generally the value at half-neutralisation; the half-equivalence point depends on the acid\'s strength, not on neutrality.', 'Think about the ratio of acid to conjugate base at this point.'),
@@ -193,6 +205,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Acids and bases: pH, Ka and buffers',
     title: 'Ionic product of water',
     prompt: 'In pure water at 25 degrees C, Kw = 1.0 x 10^-14 mol^2 dm^-6. What is the concentration of H+ ions?',
+    mentorHint: 'In pure water [H+] equals [OH-], so [H+]^2 = Kw.',
     correct: '1.0 x 10^-7 mol dm^-3',
     wrong: [
       miss('1.0 x 10^-14 mol dm^-3', 'This is the value of Kw itself, not [H+]; you must take the square root because [H+] = [OH-] in pure water.', 'In pure water [H+] equals [OH-], so [H+]^2 = Kw.'),
@@ -209,6 +222,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Thermodynamics: Born-Haber and free energy',
     title: 'Defining lattice enthalpy of formation',
     prompt: 'Which process corresponds to the lattice enthalpy of formation (lattice dissociation\'s reverse) of sodium chloride?',
+    mentorHint: 'Lattice enthalpy of formation starts from separate gaseous ions.',
     correct: 'Na+(g) + Cl-(g) -> NaCl(s)',
     wrong: [
       miss('Na(s) + 1/2 Cl2(g) -> NaCl(s)', 'This is the standard enthalpy of formation of NaCl from its elements, not the lattice enthalpy, which starts from gaseous ions.', 'Lattice enthalpy of formation starts from separate gaseous ions.'),
@@ -224,6 +238,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Thermodynamics: Born-Haber and free energy',
     title: 'Lattice enthalpy and ionic size',
     prompt: 'Which factor would make a lattice enthalpy more exothermic (more negative)?',
+    mentorHint: 'Higher charges and smaller ions both strengthen attraction.',
     correct: 'Smaller ionic radii of the ions',
     wrong: [
       miss('Lower ionic charges on the ions', 'Lower charges weaken the electrostatic attraction, making the lattice enthalpy less exothermic, not more.', 'Higher charges and smaller ions both strengthen attraction.'),
@@ -239,6 +254,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Thermodynamics: Born-Haber and free energy',
     title: 'Sign of entropy change',
     prompt: 'For the reaction CaCO3(s) -> CaO(s) + CO2(g), what is the sign of the standard entropy change, and why?',
+    mentorHint: 'Gases have far higher entropy than solids.',
     correct: 'Positive, because a gas is produced from a solid',
     wrong: [
       miss('Negative, because two products form from one reactant', 'Counting particles is not the key factor; the formation of a gas hugely increases disorder, giving a positive entropy change.', 'Gases have far higher entropy than solids.'),
@@ -254,6 +270,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Thermodynamics: Born-Haber and free energy',
     title: 'Feasibility from Gibbs free energy',
     prompt: 'A reaction is thermodynamically feasible (spontaneous) at a given temperature when the standard Gibbs free energy change, delta-G, has which value?',
+    mentorHint: 'Feasible reactions release free energy, lowering G.',
     correct: 'Less than or equal to zero (negative)',
     wrong: [
       miss('Greater than zero (positive)', 'A positive delta-G means the reaction is not feasible in the forward direction under standard conditions.', 'Feasible reactions release free energy, lowering G.'),
@@ -270,6 +287,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Electrode potentials and electrochemical cells',
     title: 'Identifying the more powerful oxidising agent',
     prompt: 'Given the standard electrode potentials Cu2+/Cu = +0.34 V and Zn2+/Zn = -0.76 V, which species is the stronger oxidising agent?',
+    mentorHint: 'More positive potentials mean stronger oxidising agents.',
     correct: 'Cu2+ ions',
     wrong: [
       miss('Zn2+ ions', 'Zn2+/Zn has a more negative electrode potential, so Zn2+ is a poorer electron acceptor and a weaker oxidising agent.', 'More positive potentials mean stronger oxidising agents.'),
@@ -285,6 +303,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Electrode potentials and electrochemical cells',
     title: 'Calculating cell EMF',
     prompt: 'Using Cu2+/Cu = +0.34 V and Zn2+/Zn = -0.76 V, what is the standard EMF of the cell made from these two electrodes?',
+    mentorHint: 'EMF = E(positive electrode) - E(negative electrode).',
     correct: '+1.10 V',
     wrong: [
       miss('-1.10 V', 'The EMF of a spontaneous cell is positive; you subtract the less positive potential from the more positive one to get +1.10 V.', 'EMF = E(positive electrode) - E(negative electrode).'),
@@ -300,6 +319,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Electrode potentials and electrochemical cells',
     title: 'Role of the standard hydrogen electrode',
     prompt: 'Why is the standard hydrogen electrode (SHE) used in measuring electrode potentials?',
+    mentorHint: 'Its role is as a benchmark, not an extreme.',
     correct: 'It provides a fixed reference assigned a potential of exactly 0.00 V',
     wrong: [
       miss('It is the strongest possible reducing agent', 'The SHE is not an extreme reducing agent; it is simply a reproducible reference whose potential is defined as zero.', 'Its role is as a benchmark, not an extreme.'),
@@ -316,6 +336,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Transition metals: complexes and colour',
     title: 'Defining a transition metal',
     prompt: 'Which definition correctly describes a transition metal?',
+    mentorHint: 'The defining feature is the d-electron configuration of the ions.',
     correct: 'A d-block element that forms at least one stable ion with a partially filled d-subshell',
     wrong: [
       miss('Any element found in the d-block of the periodic table', 'Not all d-block elements qualify: scandium and zinc are d-block but do not form ions with partially filled d-subshells.', 'The defining feature is the d-electron configuration of the ions.'),
@@ -331,6 +352,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Transition metals: complexes and colour',
     title: 'Origin of colour in transition metal complexes',
     prompt: 'Why are most aqueous transition metal complexes coloured?',
+    mentorHint: 'Ligands split the d-orbitals into two close energy levels.',
     correct: 'd-electrons absorb specific wavelengths of visible light to move between split d-orbitals',
     wrong: [
       miss('Electrons are promoted from the d-subshell to a higher principal energy level', 'The transition is between d-orbitals split by the ligands within the same subshell, not a jump to a new principal level, which would require much higher energy.', 'Ligands split the d-orbitals into two close energy levels.'),
@@ -346,6 +368,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Transition metals: complexes and colour',
     title: 'Bidentate ligands',
     prompt: 'Which of the following acts as a bidentate ligand?',
+    mentorHint: 'A bidentate ligand must donate two lone pairs.',
     correct: 'Ethane-1,2-diamine (en)',
     wrong: [
       miss('Ammonia, NH3', 'Ammonia donates only one lone pair through its single nitrogen, making it monodentate, not bidentate.', 'A bidentate ligand must donate two lone pairs.'),
@@ -361,6 +384,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Transition metals: complexes and colour',
     title: 'Heterogeneous catalysis by transition metals',
     prompt: 'Iron is used as a heterogeneous catalyst in the Haber process. What is meant by a heterogeneous catalyst?',
+    mentorHint: 'Hetero means different.',
     correct: 'A catalyst in a different physical state from the reactants',
     wrong: [
       miss('A catalyst in the same physical state as the reactants', 'That describes a homogeneous catalyst; heterogeneous catalysts are in a different phase, such as a solid catalysing gas-phase reactions.', 'Hetero means different.'),
@@ -376,6 +400,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Transition metals: complexes and colour',
     title: 'Shape of a six-coordinate complex',
     prompt: 'What is the shape of the complex ion [Cu(H2O)6]^2+?',
+    mentorHint: 'Six bonding pairs around the centre.',
     correct: 'Octahedral',
     wrong: [
       miss('Tetrahedral', 'A tetrahedral shape arises with four ligands, not six; six monodentate ligands arrange octahedrally.', 'Six bonding pairs around the centre.'),
@@ -392,6 +417,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Reactions of inorganic ions in aqueous solution',
     title: 'Acidity of metal-aqua ions',
     prompt: 'Why are solutions of [Fe(H2O)6]^3+ more acidic than solutions of [Fe(H2O)6]^2+?',
+    mentorHint: 'Think about how the central ion weakens O-H bonds in ligands.',
     correct: 'The higher charge density of Fe3+ polarises coordinated water more, releasing H+ more readily',
     wrong: [
       miss('Fe3+ ions react directly with water to release hydrogen gas', 'No hydrogen gas is produced; acidity arises from the loss of H+ from coordinated water molecules, not from a redox reaction.', 'Think about how the central ion weakens O-H bonds in ligands.'),
@@ -407,6 +433,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Reactions of inorganic ions in aqueous solution',
     title: 'Amphoteric hydroxide behaviour',
     prompt: 'Aluminium hydroxide, Al(OH)3, dissolves in both dilute acid and excess sodium hydroxide. What does this show?',
+    mentorHint: 'It reacts as both an acid and a base.',
     correct: 'It is amphoteric',
     wrong: [
       miss('It is a strong base', 'A strong base would not dissolve in excess alkali; the fact that it reacts with NaOH as well as acid shows amphoteric character.', 'It reacts as both an acid and a base.'),
@@ -422,6 +449,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Reactions of inorganic ions in aqueous solution',
     title: 'Ligand substitution and colour change',
     prompt: 'When concentrated hydrochloric acid is added to aqueous [Cu(H2O)6]^2+, the solution changes from pale blue to yellow-green forming [CuCl4]^2-. What change in geometry accompanies this substitution?',
+    mentorHint: 'Chloride ions are larger, so fewer fit around the metal.',
     correct: 'Octahedral to tetrahedral',
     wrong: [
       miss('Tetrahedral to octahedral', 'The change is the other way round: six water ligands are replaced by four chloride ligands, going from octahedral to tetrahedral.', 'Chloride ions are larger, so fewer fit around the metal.'),
@@ -438,6 +466,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Optical isomerism and carbonyl compounds',
     title: 'Condition for optical isomerism',
     prompt: 'Which structural feature is required for a molecule to show optical isomerism?',
+    mentorHint: 'Optical isomerism needs a chiral centre, not a double bond.',
     correct: 'A chiral (asymmetric) carbon bonded to four different groups',
     wrong: [
       miss('A carbon-carbon double bond with different groups on each carbon', 'That feature gives rise to E/Z (geometric) isomerism, not optical isomerism.', 'Optical isomerism needs a chiral centre, not a double bond.'),
@@ -453,6 +482,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Optical isomerism and carbonyl compounds',
     title: 'Distinguishing aldehydes from ketones',
     prompt: 'Which reagent gives a positive result (a silver mirror) with an aldehyde but not with a ketone?',
+    mentorHint: 'You need a mild oxidising agent that aldehydes reduce.',
     correct: 'Tollens\' reagent (ammoniacal silver nitrate)',
     wrong: [
       miss('Bromine water', 'Bromine water tests for alkenes (and phenols) by decolourising; it does not distinguish aldehydes from ketones reliably.', 'You need a mild oxidising agent that aldehydes reduce.'),
@@ -468,6 +498,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Optical isomerism and carbonyl compounds',
     title: 'Mechanism of nucleophilic addition to carbonyls',
     prompt: 'In the reaction of HCN with a ketone such as propanone, which species attacks the carbonyl carbon first?',
+    mentorHint: 'A positively polarised carbon attracts negative species.',
     correct: 'The cyanide ion, CN-, acting as a nucleophile',
     wrong: [
       miss('The hydrogen ion, H+, acting as an electrophile', 'The carbonyl carbon is electron-poor and is attacked by a nucleophile first; the H+ adds later to the oxygen.', 'A positively polarised carbon attracts negative species.'),
@@ -484,6 +515,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Carboxylic acids and derivatives',
     title: 'Test for a carboxylic acid',
     prompt: 'Which observation confirms the presence of a carboxylic acid when sodium carbonate solution is added?',
+    mentorHint: 'Look for a gas, not a solid.',
     correct: 'Effervescence as carbon dioxide gas is released',
     wrong: [
       miss('A white precipitate forms', 'Carboxylic acids react with carbonate to give a soluble salt, water and CO2 gas, not an insoluble precipitate.', 'Look for a gas, not a solid.'),
@@ -499,6 +531,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Carboxylic acids and derivatives',
     title: 'Esterification products',
     prompt: 'Ethanoic acid reacts with ethanol in the presence of a strong acid catalyst. What are the products?',
+    mentorHint: 'Esterification is a condensation that releases water.',
     correct: 'Ethyl ethanoate and water',
     wrong: [
       miss('Ethyl ethanoate and hydrogen', 'No hydrogen gas is produced in esterification; the small molecule eliminated is water.', 'Esterification is a condensation that releases water.'),
@@ -514,6 +547,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Carboxylic acids and derivatives',
     title: 'Reactivity of acyl chlorides',
     prompt: 'When ethanoyl chloride reacts with water, which observation is made and what is produced?',
+    mentorHint: 'The C-Cl bond in an acyl chloride is highly reactive.',
     correct: 'Vigorous reaction producing ethanoic acid and steamy fumes of hydrogen chloride',
     wrong: [
       miss('No reaction, because acyl chlorides are unreactive', 'Acyl chlorides are among the most reactive carboxylic acid derivatives and react readily, even violently, with water.', 'The C-Cl bond in an acyl chloride is highly reactive.'),
@@ -530,6 +564,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Aromatic chemistry',
     title: 'Evidence against the Kekule benzene structure',
     prompt: 'Which piece of evidence shows benzene does NOT contain three localised double bonds as in Kekule\'s structure?',
+    mentorHint: 'Look for evidence about bond lengths or stability.',
     correct: 'All six carbon-carbon bonds have the same intermediate length',
     wrong: [
       miss('Benzene burns with a smoky flame', 'A smoky flame indicates a high carbon-to-hydrogen ratio but says nothing about whether the double bonds are localised.', 'Look for evidence about bond lengths or stability.'),
@@ -545,6 +580,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Aromatic chemistry',
     title: 'Mechanism of aromatic nitration',
     prompt: 'In the nitration of benzene, which species is the electrophile that attacks the ring?',
+    mentorHint: 'Benzene\'s pi electrons attract a positive electrophile.',
     correct: 'The nitronium ion, NO2+',
     wrong: [
       miss('The nitrate ion, NO3-', 'A negative ion would not be attracted to the electron-rich benzene ring; the electrophile is the positive nitronium ion.', 'Benzene\'s pi electrons attract a positive electrophile.'),
@@ -560,6 +596,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Aromatic chemistry',
     title: 'Why benzene prefers substitution',
     prompt: 'Why does benzene tend to undergo substitution rather than addition reactions?',
+    mentorHint: 'Think about retaining benzene\'s stability.',
     correct: 'Substitution preserves the stable delocalised ring of electrons',
     wrong: [
       miss('Addition would release too much energy to be possible', 'Addition is not blocked by releasing energy; it is disfavoured because it would destroy the stabilising delocalised system.', 'Think about retaining benzene\'s stability.'),
@@ -576,6 +613,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Amines, amino acids and polymers',
     title: 'Basicity of amines',
     prompt: 'Why does an amine such as ethylamine act as a base?',
+    mentorHint: 'A base can be a proton acceptor, not only a hydroxide source.',
     correct: 'The lone pair on nitrogen can accept a proton (H+)',
     wrong: [
       miss('It releases hydroxide ions directly from its structure', 'Amines contain no -OH group to release; they act as bases by accepting protons using the nitrogen lone pair.', 'A base can be a proton acceptor, not only a hydroxide source.'),
@@ -591,6 +629,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Amines, amino acids and polymers',
     title: 'Zwitterions and the isoelectric point',
     prompt: 'At its isoelectric point, an amino acid exists predominantly as a zwitterion. What is a zwitterion?',
+    mentorHint: 'The charges are opposite and cancel out.',
     correct: 'A species with both a positive and a negative charge but no overall charge',
     wrong: [
       miss('A molecule with two positive charges', 'A zwitterion carries one positive and one negative charge, giving zero net charge, not two positive charges.', 'The charges are opposite and cancel out.'),
@@ -606,6 +645,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Amines, amino acids and polymers',
     title: 'Condensation polymers',
     prompt: 'Which type of polymer is formed when a diamine reacts with a dicarboxylic acid?',
+    mentorHint: 'A small molecule is released, so it is condensation.',
     correct: 'A polyamide (condensation polymer)',
     wrong: [
       miss('An addition polymer', 'Addition polymers form from monomers containing C=C double bonds with no small molecule lost; this reaction eliminates water and forms amide links.', 'A small molecule is released, so it is condensation.'),
@@ -621,6 +661,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Amines, amino acids and polymers',
     title: 'Preparing aliphatic amines',
     prompt: 'Which reaction produces a primary aliphatic amine from a haloalkane?',
+    mentorHint: 'You need a nitrogen-containing nucleophile.',
     correct: 'Heating the haloalkane with excess ammonia in ethanol under pressure',
     wrong: [
       miss('Reacting the haloalkane with water', 'Water replaces the halogen with -OH to give an alcohol, not an amine.', 'You need a nitrogen-containing nucleophile.'),
@@ -637,6 +678,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Organic analysis: NMR spectroscopy',
     title: 'Number of peaks in proton NMR',
     prompt: 'How many peaks (sets of equivalent protons) appear in the low-resolution proton NMR spectrum of ethanol, CH3CH2OH?',
+    mentorHint: 'Group protons by their chemical environment.',
     correct: 'Three',
     wrong: [
       miss('Two', 'Counting only two ignores one chemical environment; the CH3, CH2 and OH protons are all in different environments, giving three.', 'Group protons by their chemical environment.'),
@@ -652,6 +694,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Organic analysis: NMR spectroscopy',
     title: 'The n+1 splitting rule',
     prompt: 'In high-resolution proton NMR, the CH3 protons of ethanal (CH3CHO) are split into how many lines by the single adjacent CHO proton?',
+    mentorHint: 'Apply the n+1 rule to one neighbouring proton.',
     correct: 'A doublet (two lines)',
     wrong: [
       miss('A singlet (one line)', 'A neighbouring proton causes splitting; with one adjacent proton the n+1 rule predicts 1+1 = 2 lines, a doublet.', 'Apply the n+1 rule to one neighbouring proton.'),
@@ -667,6 +710,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Organic analysis: NMR spectroscopy',
     title: 'Role of TMS in NMR',
     prompt: 'Why is tetramethylsilane (TMS) added to samples in proton NMR spectroscopy?',
+    mentorHint: 'TMS is a standard, not a reactant.',
     correct: 'It provides a single sharp peak defined as the zero point for the chemical shift scale',
     wrong: [
       miss('It reacts with the sample to make protons visible', 'TMS is chemically inert and does not react with the sample; it serves only as a reference standard.', 'TMS is a standard, not a reactant.'),
@@ -682,6 +726,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Organic analysis: chromatography',
     title: 'Calculating an Rf value',
     prompt: 'In thin-layer chromatography, a spot moves 4.5 cm while the solvent front moves 9.0 cm. What is the Rf value of the spot?',
+    mentorHint: 'Rf can never exceed 1.',
     correct: '0.50',
     wrong: [
       miss('2.0', 'This divides solvent distance by spot distance, the wrong way round; Rf = distance moved by spot / distance moved by solvent, which is always one or less.', 'Rf can never exceed 1.'),
@@ -697,6 +742,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Organic analysis: chromatography',
     title: 'Retention time in gas chromatography',
     prompt: 'In gas chromatography, what does the retention time of a component represent?',
+    mentorHint: 'Retention time concerns position, not size.',
     correct: 'The time taken for the component to pass through the column to the detector',
     wrong: [
       miss('The mass of the component in the sample', 'Mass relates to the size (area) of the peak, not to where the peak appears in time.', 'Retention time concerns position, not size.'),
@@ -713,6 +759,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Rate equations and kinetics',
     title: 'Catalyst and activation energy',
     prompt: 'How does a catalyst increase the rate constant of a reaction?',
+    mentorHint: 'A catalyst changes the pathway, not the temperature.',
     correct: 'It provides an alternative reaction pathway with a lower activation energy',
     wrong: [
       miss('It increases the average kinetic energy of the molecules', 'Raising average kinetic energy is the effect of heating, not of a catalyst; a catalyst lowers the energy barrier instead.', 'A catalyst changes the pathway, not the temperature.'),
@@ -728,6 +775,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Acids and bases: pH, Ka and buffers',
     title: 'Strong versus weak acids',
     prompt: 'Two acids have the same concentration, but acid A has a much larger Ka than acid B. Which statement is correct?',
+    mentorHint: 'Same concentration, different Ka.',
     correct: 'Acid A is more fully dissociated and has a lower pH',
     wrong: [
       miss('Acid B has a lower pH because it is more concentrated', 'The concentrations are equal; the difference is the extent of dissociation, governed by Ka, not concentration.', 'Same concentration, different Ka.'),
@@ -743,6 +791,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Transition metals: complexes and colour',
     title: 'Variable oxidation states',
     prompt: 'Why do transition metals commonly show variable oxidation states, unlike most s-block metals?',
+    mentorHint: 'Compare the energies of the outer sub-levels.',
     correct: 'Their 4s and 3d sub-levels are close in energy, so similar amounts of energy remove different numbers of electrons',
     wrong: [
       miss('They have very large atomic radii that release electrons easily', 'Atomic radius is not the reason; the key is the similar energies of the 4s and 3d electrons.', 'Compare the energies of the outer sub-levels.'),
@@ -758,6 +807,7 @@ export const alevelChemistryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Electrode potentials and electrochemical cells',
     title: 'Effect of concentration on electrode potential',
     prompt: 'For the half-cell Cu2+(aq) + 2e- reversible-arrow Cu(s), how does increasing the concentration of Cu2+ ions affect the electrode potential?',
+    mentorHint: 'Apply Le Chatelier to the reduction half-equation.',
     correct: 'It becomes more positive, favouring the forward (reduction) reaction',
     wrong: [
       miss('It becomes more negative, favouring the reverse reaction', 'Adding more Cu2+ shifts the equilibrium to the right (reduction), making the electrode potential more positive, not more negative.', 'Apply Le Chatelier to the reduction half-equation.'),

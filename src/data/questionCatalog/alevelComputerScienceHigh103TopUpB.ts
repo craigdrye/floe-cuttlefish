@@ -13,6 +13,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Data structures',
     title: 'Stack behaviour',
     prompt: 'A stack is implemented as a static array with a top pointer. The values 4, 9, 2 are pushed in that order, then one item is popped and the value 7 is pushed. Reading from the bottom to the top, what does the stack now contain?',
+    mentorHint: 'A stack is LIFO, so the last value pushed is the first removed.',
     correct: '4, 9, 7',
     wrong: [
       miss('4, 9, 2, 7', 'This forgets the pop: a pop removes the most recently pushed item (2) before 7 is added.', 'A stack is LIFO, so the last value pushed is the first removed.'),
@@ -28,6 +29,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Data structures',
     title: 'Queue using a circular buffer',
     prompt: 'Why is a circular (ring) buffer often preferred over a simple linear array for implementing a queue?',
+    mentorHint: 'Think about what happens to the empty cells left behind after dequeuing.',
     correct: 'It reuses array slots that were freed by dequeue operations, avoiding wasted space at the front',
     wrong: [
       miss('It allows items to be removed from either end in constant time', 'That describes a deque; a standard queue still removes only from the front. The circular buffer\'s benefit is slot reuse, not double-ended access.', 'Think about what happens to the empty cells left behind after dequeuing.'),
@@ -43,6 +45,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Data structures',
     title: 'Linked list versus array',
     prompt: 'Which operation is generally more efficient in a singly linked list than in a static array?',
+    mentorHint: 'Can you jump straight to position 500 in a linked list?',
     correct: 'Inserting a new node at the start of the list',
     wrong: [
       miss('Accessing the element at a known index', 'Arrays give O(1) random access by index; a linked list must be traversed from the head, which is O(n).', 'Can you jump straight to position 500 in a linked list?'),
@@ -58,6 +61,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Data structures',
     title: 'Hash table collision',
     prompt: 'A hash table uses a hashing function to map keys to array indices. What is a collision?',
+    mentorHint: 'Collisions are about two keys, not about how full the table is.',
     correct: 'When two different keys hash to the same array index',
     wrong: [
       miss('When the hash table becomes completely full', 'A full table is a separate problem (load factor reaching capacity); a collision can occur long before the table is full.', 'Collisions are about two keys, not about how full the table is.'),
@@ -73,6 +77,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Data structures',
     title: 'Binary tree traversal order',
     prompt: 'An in-order traversal is performed on a binary search tree. In what order are the node values output?',
+    mentorHint: 'A BST keeps smaller values on the left of each node.',
     correct: 'In ascending sorted order',
     wrong: [
       miss('In the order the values were inserted', 'In-order traversal depends on the tree structure, not insertion history; for a BST it produces sorted output regardless of insertion order.', 'A BST keeps smaller values on the left of each node.'),
@@ -88,6 +93,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Data structures',
     title: 'Graph representation',
     prompt: 'A sparse graph has many vertices but relatively few edges. Which representation is generally more memory-efficient for it?',
+    mentorHint: 'Which structure only stores edges that actually exist?',
     correct: 'An adjacency list',
     wrong: [
       miss('An adjacency matrix', 'An adjacency matrix uses O(V squared) space whether or not edges exist, wasting memory when the graph is sparse.', 'Which structure only stores edges that actually exist?'),
@@ -107,6 +113,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Algorithms and complexity',
     title: 'Binary search precondition',
     prompt: 'What condition must hold for a binary search to work correctly on a list?',
+    mentorHint: 'The algorithm decides which half to discard based on order.',
     correct: 'The list must be sorted',
     wrong: [
       miss('The list must contain only unique values', 'Binary search works fine on lists with duplicates; it just may return the index of any matching element. Sorting, not uniqueness, is the requirement.', 'The algorithm decides which half to discard based on order.'),
@@ -122,6 +129,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Algorithms and complexity',
     title: 'Big-O of merge sort',
     prompt: 'What is the time complexity of merge sort in the worst case?',
+    mentorHint: 'Merge sort splits the list in half each time.',
     correct: 'O(n log n)',
     wrong: [
       miss('O(n squared)', 'O(n squared) is the worst case for simple sorts like bubble or insertion sort; merge sort\'s divide-and-conquer keeps it at O(n log n) even in the worst case.', 'Merge sort splits the list in half each time.'),
@@ -137,6 +145,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Algorithms and complexity',
     title: 'Dijkstra\'s algorithm purpose',
     prompt: 'What does Dijkstra\'s algorithm compute?',
+    mentorHint: 'A shortest path tree is not the same as a minimum-weight tree linking everything.',
     correct: 'The shortest path from a single source vertex to all other vertices in a weighted graph',
     wrong: [
       miss('The minimum spanning tree connecting all vertices', 'That is the goal of Prim\'s or Kruskal\'s algorithm; Dijkstra finds shortest paths from one source, which is a different objective.', 'A shortest path tree is not the same as a minimum-weight tree linking everything.'),
@@ -152,6 +161,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Algorithms and complexity',
     title: 'A* heuristic role',
     prompt: 'In the A* search algorithm, what is the purpose of the heuristic function?',
+    mentorHint: 'A* uses f(n) = g(n) + h(n); which part looks ahead?',
     correct: 'To estimate the remaining cost from a node to the goal, guiding the search towards the target',
     wrong: [
       miss('To record the exact cost already travelled from the start node', 'That is the g(n) component of A*, not the heuristic; the heuristic h(n) estimates the cost still to come.', 'A* uses f(n) = g(n) + h(n); which part looks ahead?'),
@@ -167,6 +177,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Algorithms and complexity',
     title: 'Intractable problems',
     prompt: 'In computational complexity, what is meant by an "intractable" problem?',
+    mentorHint: 'Intractable means slow, not impossible.',
     correct: 'A problem for which no known algorithm can solve it in polynomial time as input size grows',
     wrong: [
       miss('A problem that no computer can ever solve, even given unlimited time', 'That describes a non-computable (undecidable) problem; intractable problems are solvable in principle but too slow in practice.', 'Intractable means slow, not impossible.'),
@@ -186,6 +197,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Theory of computation',
     title: 'Halting problem',
     prompt: 'What did Alan Turing prove about the halting problem?',
+    mentorHint: 'How long would you wait before deciding it never halts?',
     correct: 'It is undecidable: no algorithm can determine for every program and input whether the program will halt',
     wrong: [
       miss('It can always be solved by simply running the program and waiting', 'If the program loops forever you would wait forever, so running it does not give a guaranteed answer; that is precisely why it is undecidable.', 'How long would you wait before deciding it never halts?'),
@@ -201,6 +213,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Theory of computation',
     title: 'Finite state machine',
     prompt: 'A finite state machine has states and transitions triggered by inputs. What is its key defining limitation compared with a Turing machine?',
+    mentorHint: 'Think about what the machine can store, not how much input it reads.',
     correct: 'It has no external memory or tape, so it can only remember which state it is in',
     wrong: [
       miss('It can only accept inputs that are exactly one character long', 'An FSM processes a sequence of inputs of any length, one symbol at a time; the limitation is memory, not input length.', 'Think about what the machine can store, not how much input it reads.'),
@@ -216,6 +229,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Theory of computation',
     title: 'Regular expression matching',
     prompt: 'Which strings are matched by the regular expression ab*c (where * means zero or more of the preceding item)?',
+    mentorHint: 'What does zero or more of b allow?',
     correct: 'ac, abc, abbc, abbbc and so on',
     wrong: [
       miss('Only the single string abc', 'The * means zero or more b characters, so abc is just one match among many, including ac and abbbc.', 'What does zero or more of b allow?'),
@@ -231,6 +245,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Theory of computation',
     title: 'Backus-Naur Form',
     prompt: 'What is Backus-Naur Form (BNF) used to define?',
+    mentorHint: 'BNF tells you if code is well-formed, not what it computes.',
     correct: 'The syntax (grammar) of a programming language',
     wrong: [
       miss('The meaning of each instruction at run time', 'The meaning, or semantics, is separate; BNF describes only the allowed structure of valid statements, not what they do.', 'BNF tells you if code is well-formed, not what it computes.'),
@@ -250,6 +265,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Networking',
     title: 'TCP/IP layering',
     prompt: 'In the four-layer TCP/IP model, at which layer does the IP protocol operate?',
+    mentorHint: 'Which layer is concerned with addressing and routing across networks?',
     correct: 'The network (internet) layer',
     wrong: [
       miss('The application layer', 'The application layer holds protocols like HTTP and SMTP that programs use directly; IP works lower down to route packets between networks.', 'Which layer is concerned with addressing and routing across networks?'),
@@ -265,6 +281,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Networking',
     title: 'TCP versus UDP',
     prompt: 'Why might a live video-conferencing application choose UDP rather than TCP?',
+    mentorHint: 'Which protocol is the reliable, connection-oriented one?',
     correct: 'UDP has lower latency because it does not retransmit lost packets or wait for acknowledgements',
     wrong: [
       miss('UDP guarantees every packet arrives in the correct order', 'That is a property of TCP, not UDP; UDP makes no delivery or ordering guarantees, which is exactly why it is faster.', 'Which protocol is the reliable, connection-oriented one?'),
@@ -280,6 +297,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Networking',
     title: 'DNS function',
     prompt: 'What is the primary purpose of the Domain Name System (DNS)?',
+    mentorHint: 'DNS is about looking up addresses, not protecting data.',
     correct: 'To translate human-readable domain names into IP addresses',
     wrong: [
       miss('To encrypt traffic between a browser and a web server', 'Encryption is provided by HTTPS/TLS; DNS performs name resolution and does not itself secure traffic.', 'DNS is about looking up addresses, not protecting data.'),
@@ -295,6 +313,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Networking',
     title: 'Packet switching',
     prompt: 'In a packet-switched network, how is a large message transmitted?',
+    mentorHint: 'Does the internet reserve a private line for each transfer?',
     correct: 'It is split into packets that may travel independently along different routes and are reassembled at the destination',
     wrong: [
       miss('A dedicated physical circuit is reserved for the whole message until it completes', 'That describes circuit switching, used in traditional telephone networks; packet switching shares links and does not reserve a circuit.', 'Does the internet reserve a private line for each transfer?'),
@@ -310,6 +329,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Networking',
     title: 'Subnet mask purpose',
     prompt: 'What does a subnet mask determine for an IP address?',
+    mentorHint: 'The mask splits the address into two functional parts.',
     correct: 'Which part of the address identifies the network and which part identifies the host',
     wrong: [
       miss('The geographic country in which the device is located', 'IP addresses are not assigned strictly by geography, and a subnet mask is a local network/host divider, not a location code.', 'The mask splits the address into two functional parts.'),
@@ -329,6 +349,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Databases',
     title: 'Primary key role',
     prompt: 'What is the role of a primary key in a relational database table?',
+    mentorHint: 'Which key points outward to a different table?',
     correct: 'It uniquely identifies each record in the table',
     wrong: [
       miss('It links the table to a record in another table', 'That is the role of a foreign key; a primary key uniquely identifies rows within its own table.', 'Which key points outward to a different table?'),
@@ -344,6 +365,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Databases',
     title: 'Third normal form',
     prompt: 'A table in second normal form still has an attribute that depends on another non-key attribute rather than on the primary key. Which normalisation step removes this?',
+    mentorHint: 'Which form specifically removes non-key to non-key dependencies?',
     correct: 'Converting it to third normal form (3NF)',
     wrong: [
       miss('Converting it to first normal form (1NF)', '1NF only removes repeating groups and ensures atomic values; it does not address transitive dependencies on non-key attributes.', 'Which form specifically removes non-key to non-key dependencies?'),
@@ -359,6 +381,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Databases',
     title: 'SQL SELECT with WHERE',
     prompt: 'Which SQL statement returns the names of all students in the Students table whose age is greater than 17?',
+    mentorHint: 'You need a comparison that means "greater than".',
     correct: 'SELECT Name FROM Students WHERE Age > 17;',
     wrong: [
       miss('SELECT Name FROM Students WHERE Age = 17;', 'The = operator returns only students aged exactly 17, not those older than 17.', 'You need a comparison that means "greater than".'),
@@ -374,6 +397,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Databases',
     title: 'Referential integrity',
     prompt: 'What does referential integrity in a relational database ensure?',
+    mentorHint: 'Referential integrity is about links between tables.',
     correct: 'That every foreign key value matches an existing primary key value in the referenced table',
     wrong: [
       miss('That no two records in a table are completely identical', 'Avoiding duplicate rows relates to entity integrity and keys, not referential integrity, which is specifically about valid references between tables.', 'Referential integrity is about links between tables.'),
@@ -389,6 +413,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Databases',
     title: 'ACID transactions',
     prompt: 'In the ACID properties of database transactions, what does "Atomicity" guarantee?',
+    mentorHint: 'Which letter deals with separating concurrent transactions?',
     correct: 'A transaction either completes entirely or has no effect at all',
     wrong: [
       miss('Concurrent transactions cannot interfere with one another', 'That is Isolation; atomicity is specifically about all-or-nothing completion of a single transaction.', 'Which letter deals with separating concurrent transactions?'),
@@ -408,6 +433,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Boolean algebra and logic',
     title: 'De Morgan\'s law',
     prompt: 'According to De Morgan\'s laws, the expression NOT (A AND B) is equivalent to which of the following?',
+    mentorHint: 'When you push NOT inside, the AND must become OR.',
     correct: '(NOT A) OR (NOT B)',
     wrong: [
       miss('(NOT A) AND (NOT B)', 'This swaps the operator incorrectly; De Morgan\'s law flips AND to OR when the negation is distributed, so the result uses OR, not AND.', 'When you push NOT inside, the AND must become OR.'),
@@ -423,6 +449,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Boolean algebra and logic',
     title: 'XOR gate output',
     prompt: 'A two-input XOR (exclusive OR) gate outputs 1 in which case?',
+    mentorHint: 'XOR means the inputs must differ.',
     correct: 'When exactly one of its two inputs is 1',
     wrong: [
       miss('When both inputs are 1', 'That is the behaviour of an AND gate; XOR outputs 0 when both inputs are 1.', 'XOR means the inputs must differ.'),
@@ -438,6 +465,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Boolean algebra and logic',
     title: 'Half adder outputs',
     prompt: 'A half adder takes two single-bit inputs. Which two outputs does it produce?',
+    mentorHint: 'Adding bits can overflow into a carry, not a borrow.',
     correct: 'A sum bit and a carry bit',
     wrong: [
       miss('A sum bit and a borrow bit', 'A borrow is produced by a subtractor, not an adder; addition generates a carry when the result exceeds one bit.', 'Adding bits can overflow into a carry, not a borrow.'),
@@ -453,6 +481,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Boolean algebra and logic',
     title: 'Karnaugh map purpose',
     prompt: 'What is the main purpose of a Karnaugh map?',
+    mentorHint: 'K-maps deal with logic, not arithmetic conversion.',
     correct: 'To simplify a Boolean expression by grouping adjacent terms',
     wrong: [
       miss('To convert a denary number into binary', 'Number base conversion is unrelated; a Karnaugh map operates on Boolean logic terms, not number representations.', 'K-maps deal with logic, not arithmetic conversion.'),
@@ -472,6 +501,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Programming paradigms',
     title: 'Encapsulation in OOP',
     prompt: 'In object-oriented programming, what does encapsulation describe?',
+    mentorHint: 'Inheritance is about reusing a parent class.',
     correct: 'Bundling data and the methods that operate on it together, while restricting direct external access to the data',
     wrong: [
       miss('Creating a new class that inherits attributes and methods from an existing class', 'That is inheritance, a different OOP principle; encapsulation is about bundling and protecting an object\'s internal state.', 'Inheritance is about reusing a parent class.'),
@@ -487,6 +517,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Programming paradigms',
     title: 'Polymorphism',
     prompt: 'A program has a base class Shape with a method area(), overridden in subclasses Circle and Square. Calling area() on a list of Shape objects runs the correct version for each. Which OOP principle is this?',
+    mentorHint: 'Which principle is about a single interface, many implementations?',
     correct: 'Polymorphism',
     wrong: [
       miss('Encapsulation', 'Encapsulation is about hiding internal data; here the key idea is one method call producing different behaviour per object type.', 'Which principle is about a single interface, many implementations?'),
@@ -502,6 +533,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Programming paradigms',
     title: 'Functional programming first-class functions',
     prompt: 'In functional programming, what does it mean to say functions are "first-class objects"?',
+    mentorHint: 'Think about whether a function can be used like a piece of data.',
     correct: 'Functions can be passed as arguments, returned from other functions, and assigned to variables',
     wrong: [
       miss('Functions are always executed before any other code in the program', 'Execution order is not what "first-class" means; it refers to functions being treated as ordinary values that can be passed around.', 'Think about whether a function can be used like a piece of data.'),
@@ -517,6 +549,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Programming paradigms',
     title: 'Higher-order function map',
     prompt: 'A functional language applies map(f, [1, 2, 3]) where f doubles its argument. What is the result?',
+    mentorHint: 'map keeps the list shape, returning one result per element.',
     correct: '[2, 4, 6]',
     wrong: [
       miss('12', 'map applies f to each element and returns a new list; it does not combine results into a single sum. Summing the doubled values would be a fold, not a map.', 'map keeps the list shape, returning one result per element.'),
@@ -536,6 +569,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Recursion',
     title: 'Base case necessity',
     prompt: 'Why must a recursive function include a base case?',
+    mentorHint: 'The base case is about stopping, not speed.',
     correct: 'To provide a stopping condition that prevents infinite recursion',
     wrong: [
       miss('To make the function run faster than an equivalent loop', 'A base case does not improve speed; it ensures the recursion terminates. Recursion is often slower than iteration due to call overhead.', 'The base case is about stopping, not speed.'),
@@ -551,6 +585,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Recursion',
     title: 'Call stack and recursion',
     prompt: 'What can happen if a recursive function recurses too deeply without reaching a base case?',
+    mentorHint: 'Each pending call must be stored somewhere finite.',
     correct: 'A stack overflow occurs because the call stack runs out of memory',
     wrong: [
       miss('The program runs faster as the calls accumulate', 'Accumulating unfinished calls consumes memory and eventually crashes; it does not speed the program up.', 'Each pending call must be stored somewhere finite.'),
@@ -566,6 +601,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Recursion',
     title: 'Converting recursion to iteration',
     prompt: 'Any recursive algorithm can be rewritten iteratively. Which data structure is typically used to mimic the behaviour of recursion in an iterative version?',
+    mentorHint: 'Recursion returns to the last call first.',
     correct: 'A stack',
     wrong: [
       miss('A queue', 'A queue is FIFO, but recursion resumes the most recently suspended call first, which is LIFO behaviour matching a stack.', 'Recursion returns to the last call first.'),
@@ -585,6 +621,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Compression, encryption and hashing',
     title: 'Lossless versus lossy compression',
     prompt: 'Why must compression of a text document use a lossless rather than a lossy method?',
+    mentorHint: 'Which method preserves the original data exactly?',
     correct: 'Lossy compression discards data, which would corrupt or change the exact characters of the text',
     wrong: [
       miss('Lossless compression always produces smaller files than lossy compression', 'Lossy methods usually achieve greater size reduction; the reason for choosing lossless on text is fidelity, not file size.', 'Which method preserves the original data exactly?'),
@@ -600,6 +637,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Compression, encryption and hashing',
     title: 'Symmetric versus asymmetric encryption',
     prompt: 'What is the key difference between symmetric and asymmetric encryption?',
+    mentorHint: 'Focus on how many keys each uses and how.',
     correct: 'Symmetric uses the same key to encrypt and decrypt, while asymmetric uses a public/private key pair',
     wrong: [
       miss('Symmetric encryption cannot be broken, while asymmetric can', 'Both can be broken given enough resources or weak keys; the actual distinction is how keys are used, not unbreakability.', 'Focus on how many keys each uses and how.'),
@@ -615,6 +653,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Compression, encryption and hashing',
     title: 'Run-length encoding',
     prompt: 'Run-length encoding compresses the string "AAAAABBB" most effectively because the data has which property?',
+    mentorHint: 'RLE rewards repetition, not variety.',
     correct: 'Long runs of repeated identical symbols',
     wrong: [
       miss('A wide variety of different symbols with no repetition', 'RLE replaces runs of identical symbols with a count; data with no repetition would gain little and could even grow.', 'RLE rewards repetition, not variety.'),
@@ -630,6 +669,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Compression, encryption and hashing',
     title: 'One-way property of hashing',
     prompt: 'Why is a cryptographic hash function suitable for storing passwords?',
+    mentorHint: 'If it could be decrypted, it would not protect the password.',
     correct: 'It is computationally infeasible to reverse the hash to recover the original password',
     wrong: [
       miss('The hash can be easily decrypted back into the password when the user logs in', 'A secure hash is one-way and is not decrypted; at login the entered password is hashed and the hashes are compared.', 'If it could be decrypted, it would not protect the password.'),
@@ -649,6 +689,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Computational thinking',
     title: 'Abstraction in problem solving',
     prompt: 'In computational thinking, what is abstraction?',
+    mentorHint: 'Which technique simplifies by hiding detail rather than dividing?',
     correct: 'Removing or hiding unnecessary detail to focus on the essential features of a problem',
     wrong: [
       miss('Breaking a large problem into smaller, more manageable sub-problems', 'That is decomposition, a related but distinct technique; abstraction is about ignoring irrelevant detail rather than splitting the problem.', 'Which technique simplifies by hiding detail rather than dividing?'),
@@ -664,6 +705,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Computational thinking',
     title: 'Decomposition',
     prompt: 'A student designs a chess program by separately tackling move generation, board display, and checking for checkmate. Which computational thinking technique is this?',
+    mentorHint: 'The focus is on splitting the problem into parts.',
     correct: 'Decomposition',
     wrong: [
       miss('Abstraction', 'Abstraction hides detail; here the work is being divided into independent sub-tasks, which is decomposition.', 'The focus is on splitting the problem into parts.'),
@@ -679,6 +721,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Computational thinking',
     title: 'Backtracking',
     prompt: 'An algorithm tries one option, and if it leads to a dead end, it returns to the previous decision point and tries another. What is this technique called?',
+    mentorHint: 'The defining feature here is returning to a previous decision.',
     correct: 'Backtracking',
     wrong: [
       miss('Brute force', 'Brute force tries every possible combination exhaustively; backtracking abandons partial solutions early once they cannot succeed.', 'Backtracking prunes dead ends rather than testing everything blindly.'),
@@ -694,6 +737,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Computational thinking',
     title: 'Heuristic approach',
     prompt: 'When is a heuristic approach typically used to solve a problem?',
+    mentorHint: 'Heuristics earn their place on hard, large problems.',
     correct: 'When finding the exact optimal solution is impractical, so a good-enough solution found quickly is acceptable',
     wrong: [
       miss('When the problem is so simple that any method works instantly', 'Trivial problems do not need heuristics; heuristics are valuable precisely when exact methods are too slow.', 'Heuristics earn their place on hard, large problems.'),
@@ -713,6 +757,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Big data',
     title: 'Functional programming and big data',
     prompt: 'Why are functional programming techniques well suited to processing big data across many machines?',
+    mentorHint: 'Think about why side-effect-free code parallelises well.',
     correct: 'Functions with no side effects and immutable data make computations easy to run in parallel',
     wrong: [
       miss('Functional programs always use less memory than other paradigms', 'Memory usage is not the reason; functional code can use plenty of memory. Its value for big data is safe parallelism through statelessness.', 'Think about why side-effect-free code parallelises well.'),
@@ -728,6 +773,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Big data',
     title: 'Characteristics of big data',
     prompt: 'The "volume, velocity and variety" of big data refer to which respective characteristics?',
+    mentorHint: 'Recall what each V word literally means.',
     correct: 'The amount of data, the speed it is generated, and the range of different data formats',
     wrong: [
       miss('The cost of storage, the number of users, and the encryption strength', 'These are not the standard 3 Vs; volume, velocity and variety describe size, speed of arrival and format diversity.', 'Recall what each V word literally means.'),
@@ -743,6 +789,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Consequences of computing',
     title: 'Computer Misuse Act',
     prompt: 'Under the UK Computer Misuse Act, which action is the most clearly defined offence?',
+    mentorHint: 'Which law deals specifically with unauthorised access to systems?',
     correct: 'Gaining unauthorised access to computer material',
     wrong: [
       miss('Selling a second-hand laptop without wiping personal data', 'Failing to wipe data may breach data protection duties, but the offence under the Computer Misuse Act centres on unauthorised access, not resale.', 'Which law deals specifically with unauthorised access to systems?'),
@@ -758,6 +805,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Consequences of computing',
     title: 'Open source software',
     prompt: 'Which statement best describes open source software?',
+    mentorHint: 'Open source is about source-code freedom, not necessarily zero cost.',
     correct: 'Its source code is made freely available so users may study, modify and redistribute it',
     wrong: [
       miss('It is always completely free of any charge and can never be sold', 'Open source refers to access to the source code and freedoms to modify and share; software can still be sold or have paid support.', 'Open source is about source-code freedom, not necessarily zero cost.'),
@@ -773,6 +821,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Consequences of computing',
     title: 'Algorithmic bias',
     prompt: 'A recruitment machine-learning model trained mostly on past male hires starts rejecting qualified female applicants. What does this most clearly illustrate?',
+    mentorHint: 'Look at what the model was trained on, not the machine.',
     correct: 'Algorithmic bias arising from unrepresentative training data',
     wrong: [
       miss('A hardware fault in the computer running the model', 'The outcome stems from the data the model learned from, not a physical hardware malfunction.', 'Look at what the model was trained on, not the machine.'),
@@ -788,6 +837,7 @@ export const alevelComputerScienceHigh103TopUpBQuestions: Question[] = makeQuest
     chapter: 'Consequences of computing',
     title: 'Digital divide',
     prompt: 'What does the term "digital divide" refer to?',
+    mentorHint: 'The digital divide is a societal concern, not an architecture one.',
     correct: 'The gap between those who have access to digital technology and the internet and those who do not',
     wrong: [
       miss('The split between hardware and software components of a computer', 'That is a technical distinction within a computer, not a social issue about access to technology.', 'The digital divide is a societal concern, not an architecture one.'),

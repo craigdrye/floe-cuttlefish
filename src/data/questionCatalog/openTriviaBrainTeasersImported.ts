@@ -2041,4 +2041,42 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
 
 const _miscBundle = [{ subTopics: MISC_BANKS_SUB_TOPICS, mentorHints: MISC_BANKS_MENTOR_HINTS, correctShortened: MISC_BANKS_CORRECT_SHORTENED, source: 'miscBanks' }]
 
-export const openTriviaBrainTeaserQuestions = runPolish(_openTriviaBrainTeaserQuestionsBase, _miscBundle)
+function openTriviaBrainTeaserHint(question: (typeof _openTriviaBrainTeaserQuestionsBase)[number]): string {
+  const text = `${question.title} ${question.prompt}`.toLowerCase()
+
+  if (text.includes('number') || text.includes('comes next') || text.includes('row')) {
+    return 'Do not assume the pattern is ordinary arithmetic until you test alternatives. Some teaser sequences are about words, calendars, spoken descriptions, or how the numbers are written.'
+  }
+  if (text.includes('race') || text.includes('second place') || text.includes('place would')) {
+    return 'Track positions literally instead of translating the situation into “first.” Passing one person means you take that person’s place, not everyone’s place.'
+  }
+  if (text.includes('photograph') || text.includes('father') || text.includes('brothers') || text.includes('sisters')) {
+    return 'Draw the family relationship as arrows rather than reading it conversationally. The clue “my father’s son” depends on whether the speaker has siblings.'
+  }
+  if (text.includes('coin') || text.includes('bc') || text.includes('minted')) {
+    return 'Ask whether the label could have existed at the time, not just whether the date sounds old. Historical wording can be the hidden contradiction.'
+  }
+  if (text.includes('always') || text.includes('truth') || text.includes('lies')) {
+    return 'Treat each statement as a logic constraint and test candidates one by one. The answer must satisfy the exact number of true and false claims, not just one plausible claim.'
+  }
+  if (text.includes('except') || text.includes('left') || text.includes('died')) {
+    return 'Read “except” literally and identify what remains after the condition is applied. The trap is usually counting everything mentioned instead of what survived the wording.'
+  }
+  if (text.includes('marry') || text.includes('widow')) {
+    return 'Check the premise before applying social or legal rules. If a person has a widow, something about that person’s current status is already decided.'
+  }
+  if (text.includes('apple') || text.includes('basket')) {
+    return 'Look for a way the wording can be satisfied exactly, not a way to make the arithmetic seem impossible. In classic sharing teasers, the container or leftover object may still be part of the distribution.'
+  }
+  if (text.includes('mirror') || text.includes('speak') || text.includes('hear')) {
+    return 'Translate the riddle into properties rather than looking for a living speaker. Something can “tell the truth” by reflecting or showing reality without communicating.'
+  }
+
+  return 'Slow down and read the wording literally before doing arithmetic or guessing the familiar punchline. Brain teasers usually hide the key in a qualifier, relationship, or assumption the obvious answer skips.'
+}
+
+export const openTriviaBrainTeaserQuestions = runPolish(_openTriviaBrainTeaserQuestionsBase, _miscBundle).map((question) =>
+  question.mentorHint === 'Ask what rule would let you explain your answer to someone else.'
+    ? { ...question, mentorHint: openTriviaBrainTeaserHint(question) }
+    : question,
+)

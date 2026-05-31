@@ -11,6 +11,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Proof and Mathematical Argument',
     title: 'Disproving a universal statement',
     prompt: 'A student claims "for all positive integers n, the value 2n + 1 is prime." What is the simplest valid way to disprove this?',
+    mentorHint: 'A universal claim needs only a single counterexample to fall.',
     correct: 'Give one counterexample, e.g. n = 4 gives 9 = 3 x 3, which is not prime',
     wrong: [
       miss('Verify n = 1, 2, 3 give 3, 5, 7 (all prime), so the claim holds', 'Confirming a handful of cases never proves a "for all" claim; one failure refutes it.', 'A universal claim needs only a single counterexample to fall.'),
@@ -26,6 +27,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Proof and Mathematical Argument',
     title: 'Choosing a proof method',
     prompt: 'You must prove "there is no largest negative rational number." Which proof method is most natural?',
+    mentorHint: 'Exhaustion only works for a finite, listable set of cases.',
     correct: 'Proof by contradiction: assume a largest negative rational q exists, then q/2 is a larger negative rational',
     wrong: [
       miss('Proof by exhaustion, checking every negative rational in turn', 'There are infinitely many negative rationals, so exhaustion can never terminate.', 'Exhaustion only works for a finite, listable set of cases.'),
@@ -41,6 +43,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Proof and Mathematical Argument',
     title: 'Necessary versus sufficient',
     prompt: 'For a real number x, which statement correctly relates the condition x > 3 to the condition x^2 > 9?',
+    mentorHint: 'Test a negative value to see whether x > 3 is required.',
     correct: 'x > 3 is sufficient for x^2 > 9 but not necessary, since x = -4 also gives x^2 > 9',
     wrong: [
       miss('x > 3 is both necessary and sufficient for x^2 > 9', 'x = -4 gives x^2 = 16 > 9 without x > 3, so it is not necessary.', 'Test a negative value to see whether x > 3 is required.'),
@@ -56,6 +59,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Proof and Mathematical Argument',
     title: 'Completing the square in a proof',
     prompt: 'Which expression proves that x^2 - 6x + 11 is positive for every real x?',
+    mentorHint: 'After (x - 3)^2 you subtract 9 and add 11, leaving +2.',
     correct: '(x - 3)^2 + 2, which is at least 2 for all real x',
     wrong: [
       miss('(x - 3)^2 - 2, which can be negative', 'Completing the square gives +2, not -2; the constant term is computed wrongly.', 'After (x - 3)^2 you subtract 9 and add 11, leaving +2.'),
@@ -72,6 +76,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Algebra and Functions',
     title: 'Discriminant and equal roots',
     prompt: 'For which value of k does the equation x^2 + kx + 9 = 0 have exactly one (repeated) real root with k > 0?',
+    mentorHint: 'Set the discriminant b^2 - 4ac equal to 0 and solve for k.',
     correct: 'k = 6',
     wrong: [
       miss('k = 3', 'This uses sqrt(9) directly, but the repeated-root condition is k^2 = 4(9) = 36, so k = 6.', 'Set the discriminant b^2 - 4ac equal to 0 and solve for k.'),
@@ -87,6 +92,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Algebra and Functions',
     title: 'Solving a quadratic inequality',
     prompt: 'Solve the inequality x^2 - x - 6 > 0.',
+    mentorHint: 'A positive U-shaped quadratic is above zero outside its roots, not between them.',
     correct: 'x < -2 or x > 3',
     wrong: [
       miss('-2 < x < 3', 'This is the region where the quadratic is negative; the inequality asks for > 0.', 'A positive U-shaped quadratic is above zero outside its roots, not between them.'),
@@ -102,6 +108,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Algebra and Functions',
     title: 'Laws of indices',
     prompt: 'Simplify (8x^6)^(2/3).',
+    mentorHint: 'A fractional power means root then power: cube-root 8 is 2, squared is 4.',
     correct: '4x^4',
     wrong: [
       miss('16x^4', 'This computes 8 x 2 = 16 instead of 8^(2/3) = 4.', 'A fractional power means root then power: cube-root 8 is 2, squared is 4.'),
@@ -117,6 +124,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Algebra and Functions',
     title: 'Rationalising a surd',
     prompt: 'Rationalise the denominator of 6 / (3 + sqrt(3)).',
+    mentorHint: 'After multiplying by the conjugate the denominator becomes 6, which cancels with the numerator factor 6.',
     correct: '3 - sqrt(3)',
     wrong: [
       miss('3 + sqrt(3)', 'You must multiply by the conjugate 3 - sqrt(3), which changes the sign of the surd term.', 'The conjugate of 3 + sqrt(3) is 3 - sqrt(3).'),
@@ -132,6 +140,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Algebra and Functions',
     title: 'Factor theorem',
     prompt: 'Given f(x) = x^3 - 4x^2 + x + 6, which is a factor of f(x)?',
+    mentorHint: 'A factor (x - a) requires f(a) = 0; test each candidate.',
     correct: '(x - 2)',
     wrong: [
       miss('(x - 1)', 'f(1) = 1 - 4 + 1 + 6 = 4, which is not zero, so (x - 1) is not a factor.', 'A factor (x - a) requires f(a) = 0; test each candidate.'),
@@ -147,6 +156,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Algebra and Functions',
     title: 'Composite functions',
     prompt: 'Given f(x) = 2x + 1 and g(x) = x^2, find fg(3) (i.e. f(g(3))).',
+    mentorHint: 'fg means apply g first, then f: f(g(3)).',
     correct: '19',
     wrong: [
       miss('49', 'This computes g(f(3)) = (2x+1)^2 at x=3 = 49; the order is reversed.', 'fg means apply g first, then f: f(g(3)).'),
@@ -162,6 +172,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Algebra and Functions',
     title: 'Inverse function',
     prompt: 'Find the inverse of f(x) = (x - 5) / 2.',
+    mentorHint: 'Reverse all operations: undo divide-by-2 by multiplying, undo subtract-5 by adding.',
     correct: 'f^-1(x) = 2x + 5',
     wrong: [
       miss('f^-1(x) = (x + 5) / 2', 'You changed the constant sign but left the division, which does not undo the operations.', 'Reverse all operations: undo divide-by-2 by multiplying, undo subtract-5 by adding.'),
@@ -177,6 +188,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Algebra and Functions',
     title: 'Graph transformation',
     prompt: 'The graph of y = f(x) is transformed to y = f(x - 3) + 2. Which transformation describes this?',
+    mentorHint: 'Replacing x by x - 3 moves the graph in the positive x direction.',
     correct: 'Translation 3 units right and 2 units up',
     wrong: [
       miss('Translation 3 units left and 2 units up', 'f(x - 3) shifts right, not left; inside-the-bracket changes act in the opposite sense.', 'Replacing x by x - 3 moves the graph in the positive x direction.'),
@@ -192,6 +204,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Algebra and Functions',
     title: 'Partial fractions setup',
     prompt: 'Into which form should (3x + 1) / ((x - 1)(x + 2)) be split for partial fractions?',
+    mentorHint: 'Each separate linear factor becomes its own simple fraction.',
     correct: 'A / (x - 1) + B / (x + 2)',
     wrong: [
       miss('A / (x - 1) + B / (x - 1)(x + 2)', 'You repeat a denominator and keep the product; each distinct linear factor gets one fraction.', 'Each separate linear factor becomes its own simple fraction.'),
@@ -208,6 +221,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Coordinate Geometry',
     title: 'Equation of a straight line',
     prompt: 'Find the equation of the line through (2, 1) with gradient 3.',
+    mentorHint: 'Use y - y1 = m(x - x1) with the given point.',
     correct: 'y = 3x - 5',
     wrong: [
       miss('y = 3x + 5', 'Substituting the point gives 1 = 6 + c, so c = -5, not +5.', 'Use y - y1 = m(x - x1) with the given point.'),
@@ -223,6 +237,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Coordinate Geometry',
     title: 'Perpendicular gradients',
     prompt: 'A line has gradient 4. What is the gradient of any line perpendicular to it?',
+    mentorHint: 'Perpendicular gradients multiply to -1, so include the negative sign.',
     correct: '-1/4',
     wrong: [
       miss('1/4', 'The reciprocal alone is not enough; perpendicular gradients also change sign.', 'Perpendicular gradients multiply to -1, so include the negative sign.'),
@@ -238,6 +253,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Coordinate Geometry',
     title: 'Distance between two points',
     prompt: 'Find the distance between the points (1, 2) and (4, 6).',
+    mentorHint: 'The distance uses the square root of the sum of squares, not a plain sum.',
     correct: '5',
     wrong: [
       miss('7', 'This adds the differences (3 + 4) instead of using Pythagoras.', 'The distance uses the square root of the sum of squares, not a plain sum.'),
@@ -253,6 +269,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Coordinate Geometry',
     title: 'Equation of a circle',
     prompt: 'What are the centre and radius of the circle (x - 3)^2 + (y + 1)^2 = 16?',
+    mentorHint: 'Read centre as (a, b) from (x - a)^2 + (y - b)^2 = r^2, and r = sqrt of the right side.',
     correct: 'Centre (3, -1), radius 4',
     wrong: [
       miss('Centre (-3, 1), radius 16', 'The centre signs are flipped and the radius is the square root of 16, not 16.', 'Read centre as (a, b) from (x - a)^2 + (y - b)^2 = r^2, and r = sqrt of the right side.'),
@@ -268,6 +285,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Coordinate Geometry',
     title: 'Midpoint of a segment',
     prompt: 'Find the midpoint of the segment joining (-2, 5) and (6, -3).',
+    mentorHint: 'The midpoint averages the coordinates, so divide each sum by 2.',
     correct: '(2, 1)',
     wrong: [
       miss('(4, 2)', 'This adds the coordinates without dividing by 2.', 'The midpoint averages the coordinates, so divide each sum by 2.'),
@@ -284,6 +302,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Sequences and Series',
     title: 'Sum of an arithmetic series',
     prompt: 'Find the sum of the first 20 terms of the arithmetic series 3 + 7 + 11 + ...',
+    mentorHint: 'Use S = (n/2)(2a + (n-1)d) with a = 3, d = 4.',
     correct: '820',
     wrong: [
       miss('800', 'This uses the wrong last term or drops the +3 start; recompute a and d carefully.', 'Use S = (n/2)(2a + (n-1)d) with a = 3, d = 4.'),
@@ -299,6 +318,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Sequences and Series',
     title: 'Sum to infinity of a geometric series',
     prompt: 'Find the sum to infinity of the geometric series 8 + 4 + 2 + 1 + ...',
+    mentorHint: 'Use S_inf = a / (1 - r) with a = 8 and r = 1/2.',
     correct: '16',
     wrong: [
       miss('15', 'This sums only finitely many visible terms instead of using the infinite-sum formula.', 'Use S_inf = a / (1 - r) with a = 8 and r = 1/2.'),
@@ -314,6 +334,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Sequences and Series',
     title: 'Binomial expansion coefficient',
     prompt: 'In the expansion of (1 + 2x)^5, what is the coefficient of x^2?',
+    mentorHint: 'Each x comes with a factor of 2, so include 2^2.',
     correct: '40',
     wrong: [
       miss('10', 'This uses the binomial coefficient C(5,2) = 10 but ignores the factor (2)^2 = 4.', 'Each x comes with a factor of 2, so include 2^2.'),
@@ -329,6 +350,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Sequences and Series',
     title: 'Recurrence relation',
     prompt: 'A sequence is defined by u_(n+1) = 2u_n - 1 with u_1 = 3. Find u_3.',
+    mentorHint: 'Compute u_2 first, then u_3, applying the rule exactly twice.',
     correct: '9',
     wrong: [
       miss('11', 'This applies the rule too many times or mis-multiplies; track each step carefully.', 'Compute u_2 first, then u_3, applying the rule exactly twice.'),
@@ -345,6 +367,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Trigonometry',
     title: 'Exact trigonometric value',
     prompt: 'What is the exact value of sin(60 degrees)?',
+    mentorHint: 'For 60 degrees, sine is the larger of the two exact values.',
     correct: 'sqrt(3) / 2',
     wrong: [
       miss('1/2', 'This is sin(30 degrees) or cos(60 degrees); the values are swapped.', 'For 60 degrees, sine is the larger of the two exact values.'),
@@ -360,6 +383,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Trigonometry',
     title: 'Using the cosine rule',
     prompt: 'In a triangle, two sides of length 5 and 7 enclose an angle of 60 degrees. Find the length of the third side.',
+    mentorHint: 'The cosine rule subtracts 2ab cos(C); do not omit that term.',
     correct: 'sqrt(39)',
     wrong: [
       miss('sqrt(74)', 'This uses Pythagoras (5^2 + 7^2), valid only for a 90-degree angle, not 60.', 'The cosine rule subtracts 2ab cos(C); do not omit that term.'),
@@ -375,6 +399,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Trigonometry',
     title: 'Solving a trig equation',
     prompt: 'Solve sin(x) = 0.5 for 0 <= x < 360 degrees.',
+    mentorHint: 'In 0 to 360 degrees, sin(x) = positive value has two solutions.',
     correct: 'x = 30 degrees or x = 150 degrees',
     wrong: [
       miss('x = 30 degrees only', 'Sine is also positive in the second quadrant, giving a second solution.', 'In 0 to 360 degrees, sin(x) = positive value has two solutions.'),
@@ -390,6 +415,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Trigonometry',
     title: 'Trigonometric identity',
     prompt: 'Simplify the expression (1 - cos^2(x)) / sin(x), assuming sin(x) is not zero.',
+    mentorHint: 'Use the identity sin^2 + cos^2 = 1 to rewrite the numerator.',
     correct: 'sin(x)',
     wrong: [
       miss('cos(x)', 'This would follow only if the numerator were sin^2 wrongly identified; 1 - cos^2 equals sin^2.', 'Use the identity sin^2 + cos^2 = 1 to rewrite the numerator.'),
@@ -405,6 +431,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Trigonometry',
     title: 'Radians and arc length',
     prompt: 'A circle has radius 6 cm. Find the length of an arc that subtends an angle of pi/3 radians at the centre.',
+    mentorHint: 'Arc length s = r times theta works only when theta is in radians.',
     correct: '2 pi cm',
     wrong: [
       miss('60 cm', 'This treats the angle as 60 degrees in a degree-based formula, mixing units.', 'Arc length s = r times theta works only when theta is in radians.'),
@@ -421,6 +448,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Exponentials and Logarithms',
     title: 'Evaluating a logarithm',
     prompt: 'Evaluate log base 2 of 32.',
+    mentorHint: 'log base 2 of 32 asks: 2 to what power equals 32?',
     correct: '5',
     wrong: [
       miss('16', 'This halves 32 rather than asking what power of 2 gives 32.', 'log base 2 of 32 asks: 2 to what power equals 32?'),
@@ -436,6 +464,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Exponentials and Logarithms',
     title: 'Laws of logarithms',
     prompt: 'Write log(a) + 2 log(b) - log(c) as a single logarithm.',
+    mentorHint: 'log(x) + log(y) = log(xy), not log(x + y).',
     correct: 'log(a b^2 / c)',
     wrong: [
       miss('log(a + b^2 - c)', 'Sums and differences of logs become products and quotients, not sums inside the log.', 'log(x) + log(y) = log(xy), not log(x + y).'),
@@ -451,6 +480,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Exponentials and Logarithms',
     title: 'Solving an exponential equation',
     prompt: 'Solve 3^x = 20, giving x to 3 significant figures (use log).',
+    mentorHint: 'Take logs of both sides: x = log(20)/log(3).',
     correct: 'x = 2.73',
     wrong: [
       miss('x = 6.67', 'This divides 20 by 3, which does not solve an exponential equation.', 'Take logs of both sides: x = log(20)/log(3).'),
@@ -466,6 +496,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Exponentials and Logarithms',
     title: 'Linearising with logarithms',
     prompt: 'A relationship y = a x^n is plotted as log(y) against log(x), giving a straight line. What does the gradient represent?',
+    mentorHint: 'Taking logs gives log y = n log x + log a; match terms to y = mx + c.',
     correct: 'The exponent n',
     wrong: [
       miss('The constant a', 'a appears as the intercept (log a), not the gradient.', 'Taking logs gives log y = n log x + log a; match terms to y = mx + c.'),
@@ -482,6 +513,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Differentiation',
     title: 'Differentiating a polynomial',
     prompt: 'Differentiate y = 4x^3 - 2x^2 + 7x - 1 with respect to x.',
+    mentorHint: 'The derivative of a constant is zero.',
     correct: 'dy/dx = 12x^2 - 4x + 7',
     wrong: [
       miss('dy/dx = 12x^2 - 4x + 7 - 1', 'The constant -1 differentiates to 0 and should be dropped, not carried.', 'The derivative of a constant is zero.'),
@@ -497,6 +529,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Differentiation',
     title: 'Gradient at a point',
     prompt: 'For the curve y = x^2 - 3x, find the gradient of the tangent at the point where x = 4.',
+    mentorHint: 'First differentiate, then substitute x = 4 into dy/dx.',
     correct: '5',
     wrong: [
       miss('4', 'This substitutes x = 4 into y or the original function, not the derivative.', 'First differentiate, then substitute x = 4 into dy/dx.'),
@@ -512,6 +545,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Differentiation',
     title: 'Stationary points',
     prompt: 'Find the x-coordinates of the stationary points of y = x^3 - 12x + 4.',
+    mentorHint: 'Set 3x^2 - 12 = 0 and solve.',
     correct: 'x = 2 and x = -2',
     wrong: [
       miss('x = 4 only', 'This solves something other than dy/dx = 0; differentiate and set equal to zero.', 'Set 3x^2 - 12 = 0 and solve.'),
@@ -527,6 +561,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Differentiation',
     title: 'Second derivative test',
     prompt: 'For y = x^3 - 3x, at the stationary point x = 1 the second derivative d^2y/dx^2 equals 6. What does this tell you?',
+    mentorHint: 'Positive curvature (concave up) means a minimum.',
     correct: 'The point is a local minimum',
     wrong: [
       miss('The point is a local maximum', 'A positive second derivative indicates a minimum, not a maximum.', 'Positive curvature (concave up) means a minimum.'),
@@ -542,6 +577,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Differentiation',
     title: 'Differentiation from first principles',
     prompt: 'Differentiation from first principles uses which limit definition of f\'(x)?',
+    mentorHint: 'The gradient is the change in y over change in x: a difference on top.',
     correct: 'lim as h tends to 0 of [f(x + h) - f(x)] / h',
     wrong: [
       miss('lim as h tends to 0 of [f(x + h) + f(x)] / h', 'The definition uses a difference in the numerator, not a sum.', 'The gradient is the change in y over change in x: a difference on top.'),
@@ -558,6 +594,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     chapter: 'Integration',
     title: 'Indefinite integral of a polynomial',
     prompt: 'Find the integral of (6x^2 - 4x + 3) dx.',
+    mentorHint: 'Always add +c when there are no limits.',
     correct: '2x^3 - 2x^2 + 3x + c',
     wrong: [
       miss('2x^3 - 2x^2 + 3x', 'An indefinite integral must include the arbitrary constant of integration, +c.', 'Always add +c when there are no limits.'),

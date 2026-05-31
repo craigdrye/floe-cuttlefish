@@ -11,6 +11,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'The economic problem and fundamental concepts',
     title: 'Definition of opportunity cost',
     prompt: 'A government decides to spend a fixed budget on building a new hospital rather than a new motorway. In economic terms, what is the opportunity cost of this decision?',
+    mentorHint: 'Ask what had to be given up, not what was paid.',
     correct: 'The motorway (the next best alternative forgone)',
     wrong: [
       miss('The total monetary cost of building the hospital', 'Opportunity cost is measured in forgone alternatives, not in the money price of the chosen option.', 'Ask what had to be given up, not what was paid.'),
@@ -26,6 +27,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'The economic problem and fundamental concepts',
     title: 'Positive versus normative statements',
     prompt: 'Which of the following is a normative economic statement?',
+    mentorHint: 'Normative statements contain value judgements about what should be.',
     correct: 'The government ought to raise the minimum wage to reduce poverty',
     wrong: [
       miss('A rise in the minimum wage increased unemployment among teenagers', 'This is a positive statement: it is a claim of fact that can be tested against evidence.', 'Normative statements contain value judgements about what should be.'),
@@ -41,6 +43,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'The economic problem and fundamental concepts',
     title: 'Production possibility frontier shifts',
     prompt: 'An economy experiences a significant increase in the quantity and quality of its capital stock following a wave of investment. What is the most likely effect on its production possibility frontier (PPF)?',
+    mentorHint: 'New resources change capacity itself, not just the chosen point.',
     correct: 'An outward shift of the entire PPF',
     wrong: [
       miss('A movement along the existing PPF', 'A movement along the curve reallocates output between goods; it does not represent an increase in productive capacity.', 'New resources change capacity itself, not just the chosen point.'),
@@ -56,6 +59,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'The economic problem and fundamental concepts',
     title: 'The factor of production: enterprise',
     prompt: 'In economics, the factor of production known as enterprise earns which type of reward?',
+    mentorHint: 'Match each factor to its specific factor payment.',
     correct: 'Profit',
     wrong: [
       miss('Wages', 'Wages are the reward to labour, not to enterprise.', 'Match each factor to its specific factor payment.'),
@@ -71,6 +75,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'The economic problem and fundamental concepts',
     title: 'Specialisation and the division of labour',
     prompt: 'Which of the following is a disadvantage of the division of labour in a production process?',
+    mentorHint: 'Recall why Adam Smith\'s pin factory produced more, not less.',
     correct: 'Workers may experience boredom from repetitive tasks, lowering motivation and quality',
     wrong: [
       miss('Output per worker falls because tasks become narrower', 'Specialisation usually raises output per worker through practice and reduced switching time.', 'Recall why Adam Smith\'s pin factory produced more, not less.'),
@@ -88,6 +93,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Demand, supply and the price mechanism',
     title: 'Change in demand versus change in quantity demanded',
     prompt: 'The price of tea, a substitute for coffee, rises sharply. In the market for coffee, what does this cause?',
+    mentorHint: 'Distinguish a change in own price from a change in a conditioning factor.',
     correct: 'A rightward shift of the demand curve for coffee',
     wrong: [
       miss('A movement up along the demand curve for coffee', 'A movement along the curve is caused by a change in the price of coffee itself, not the price of a substitute.', 'Distinguish a change in own price from a change in a conditioning factor.'),
@@ -103,6 +109,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Demand, supply and the price mechanism',
     title: 'Functions of the price mechanism',
     prompt: 'When a sudden frost destroys part of the orange crop and orange prices rise, the higher price encourages producers in unaffected regions to supply more oranges. Which function of the price mechanism does this illustrate?',
+    mentorHint: 'Ask whether buyers are being rationed or producers being motivated.',
     correct: 'The incentive function',
     wrong: [
       miss('The rationing function', 'Rationing is when higher prices discourage some buyers so that scarce goods go to those willing to pay; here the focus is on producers being encouraged.', 'Ask whether buyers are being rationed or producers being motivated.'),
@@ -118,6 +125,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Demand, supply and the price mechanism',
     title: 'Consumer surplus',
     prompt: 'Consumer surplus is best defined as which of the following?',
+    mentorHint: 'Consumer surplus is a benefit to buyers, not sellers.',
     correct: 'The difference between the price a consumer is willing to pay and the price actually paid',
     wrong: [
       miss('The difference between the price a producer accepts and the cost of production', 'That describes producer surplus, the gain to suppliers, not consumer surplus.', 'Consumer surplus is a benefit to buyers, not sellers.'),
@@ -133,6 +141,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Demand, supply and the price mechanism',
     title: 'Effect of an indirect tax on supply',
     prompt: 'The government imposes a specific (per-unit) indirect tax on a good. Other things equal, what is the effect on the supply curve?',
+    mentorHint: 'A per-unit tax adds the same sum at every quantity.',
     correct: 'A parallel vertical shift upward by the amount of the tax',
     wrong: [
       miss('A pivot that makes the supply curve steeper', 'A specific tax is a fixed amount per unit, so it shifts the curve up by a constant, keeping the slope unchanged.', 'A per-unit tax adds the same sum at every quantity.'),
@@ -148,6 +157,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Demand, supply and the price mechanism',
     title: 'Equilibrium and excess demand',
     prompt: 'In a competitive market, the current price is set below the equilibrium price. What is the immediate consequence?',
+    mentorHint: 'A low price encourages buyers and discourages sellers.',
     correct: 'Excess demand (a shortage), which puts upward pressure on price',
     wrong: [
       miss('Excess supply (a surplus), which puts downward pressure on price', 'A surplus occurs when price is above equilibrium; below equilibrium, demand exceeds supply.', 'A low price encourages buyers and discourages sellers.'),
@@ -165,6 +175,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Elasticities',
     title: 'Price elasticity of demand and total revenue',
     prompt: 'A firm sells a good with price elasticity of demand equal to -0.4. If the firm raises its price, what happens to total revenue?',
+    mentorHint: 'Compare the absolute value of PED with 1.',
     correct: 'Total revenue rises, because demand is price inelastic',
     wrong: [
       miss('Total revenue falls, because demand is price elastic', 'A PED of -0.4 has magnitude less than 1, so demand is inelastic, not elastic.', 'Compare the absolute value of PED with 1.'),
@@ -180,6 +191,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Elasticities',
     title: 'Income elasticity of demand for an inferior good',
     prompt: 'A good has an income elasticity of demand of -0.6. How is this good best classified?',
+    mentorHint: 'A negative YED signals demand moving opposite to income.',
     correct: 'An inferior good, because demand falls as income rises',
     wrong: [
       miss('A normal necessity, because the value is less than 1', 'The negative sign matters: a normal necessity has a positive YED between 0 and 1.', 'A negative YED signals demand moving opposite to income.'),
@@ -195,6 +207,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Elasticities',
     title: 'Cross elasticity of demand and complements',
     prompt: 'The cross elasticity of demand between two goods is -1.5. What does this indicate about the relationship between the goods?',
+    mentorHint: 'Check whether a price rise in one good raises or lowers demand for the other.',
     correct: 'They are strong complements',
     wrong: [
       miss('They are strong substitutes', 'Substitutes have a positive cross elasticity; a negative figure indicates complements.', 'Check whether a price rise in one good raises or lowers demand for the other.'),
@@ -210,6 +223,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Elasticities',
     title: 'Determinants of price elasticity of supply',
     prompt: 'Which of the following would tend to make the supply of a good more price elastic?',
+    mentorHint: 'Faster responses raise elasticity, not slower ones.',
     correct: 'Producers holding large stocks of the good that can be released quickly',
     wrong: [
       miss('A long production process with significant time lags', 'Long production times make it harder to respond quickly to price, reducing elasticity.', 'Faster responses raise elasticity, not slower ones.'),
@@ -225,6 +239,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Elasticities',
     title: 'Tax incidence and elasticity',
     prompt: 'When demand for a good is highly price inelastic and supply is relatively elastic, who bears the larger share of the burden of a new indirect tax?',
+    mentorHint: 'The party least able to change behaviour absorbs more burden.',
     correct: 'Consumers bear the larger share of the tax',
     wrong: [
       miss('Producers bear the larger share of the tax', 'The more inelastic side of the market bears more of the tax; here demand is inelastic, so consumers pay more.', 'The party least able to change behaviour absorbs more burden.'),
@@ -242,6 +257,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Market failure and externalities',
     title: 'Negative production externality',
     prompt: 'A factory discharges pollution into a river, harming downstream fishing communities. At the free-market output, how does the marginal social cost (MSC) compare with the marginal private cost (MPC)?',
+    mentorHint: 'External costs add to, not subtract from, social cost.',
     correct: 'MSC is greater than MPC because of the external cost of pollution',
     wrong: [
       miss('MSC is less than MPC because pollution is cheap to produce', 'A negative externality adds external costs to society, so social cost exceeds private cost, not the reverse.', 'External costs add to, not subtract from, social cost.'),
@@ -257,6 +273,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Market failure and externalities',
     title: 'Public goods and the free-rider problem',
     prompt: 'National defence is often cited as a pure public good. Which pair of characteristics makes it a public good?',
+    mentorHint: 'Public goods are the opposite of private goods on both counts.',
     correct: 'It is non-excludable and non-rival',
     wrong: [
       miss('It is excludable and rival', 'Those are the features of a private good, which markets can supply efficiently.', 'Public goods are the opposite of private goods on both counts.'),
@@ -272,6 +289,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Market failure and externalities',
     title: 'Positive consumption externality',
     prompt: 'Vaccination generates a positive externality of consumption. In a free market, why does this lead to market failure?',
+    mentorHint: 'External benefits raise social benefit above what individuals account for.',
     correct: 'The good is under-consumed because the marginal social benefit exceeds the marginal private benefit',
     wrong: [
       miss('The good is over-consumed because private benefits are too high', 'Positive externalities mean social benefit exceeds private benefit, leading to under-consumption, not over-consumption.', 'External benefits raise social benefit above what individuals account for.'),
@@ -287,6 +305,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Market failure and externalities',
     title: 'Information failure and demerit goods',
     prompt: 'Demerit goods such as cigarettes are often over-consumed. Which type of market failure best explains this over-consumption?',
+    mentorHint: 'Free riding is about non-payment, not over-consumption.',
     correct: 'Information failure, because consumers underestimate the long-term private costs',
     wrong: [
       miss('The free-rider problem, because consumers avoid paying', 'The free-rider problem applies to non-excludable public goods, not to over-consumed demerit goods.', 'Free riding is about non-payment, not over-consumption.'),
@@ -302,6 +321,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Market failure and externalities',
     title: 'Tragedy of the commons',
     prompt: 'Overfishing of international waters, leading to collapsing fish stocks, is a classic example of which problem?',
+    mentorHint: 'Public goods are non-rival; fish stocks are rival.',
     correct: 'The tragedy of the commons, arising from a non-excludable but rival resource',
     wrong: [
       miss('The free-rider problem for a pure public good', 'Fish are rival (one boat\'s catch reduces what is left), so the stock is not a pure public good.', 'Public goods are non-rival; fish stocks are rival.'),
@@ -319,6 +339,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Government intervention and government failure',
     title: 'Maximum price (price ceiling)',
     prompt: 'A government sets a maximum price below the free-market equilibrium price for rented housing. What is the most likely consequence?',
+    mentorHint: 'A binding ceiling sits below equilibrium and excess demand follows.',
     correct: 'A shortage of rented housing, because quantity demanded exceeds quantity supplied',
     wrong: [
       miss('A surplus of rented housing', 'A surplus results from a minimum price set above equilibrium; a binding maximum price causes a shortage.', 'A binding ceiling sits below equilibrium and excess demand follows.'),
@@ -334,6 +355,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Government intervention and government failure',
     title: 'Subsidies and the supply curve',
     prompt: 'A government grants a per-unit subsidy to producers of solar panels. Other things equal, what is the immediate effect on the market?',
+    mentorHint: 'Subsidies to producers act on the supply side.',
     correct: 'The supply curve shifts to the right, lowering the price paid by consumers and raising the quantity traded',
     wrong: [
       miss('The demand curve shifts to the right', 'A producer subsidy lowers production costs and affects supply, not the position of the demand curve.', 'Subsidies to producers act on the supply side.'),
@@ -349,6 +371,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Government intervention and government failure',
     title: 'Tradable pollution permits',
     prompt: 'How does a system of tradable pollution permits aim to reduce emissions efficiently?',
+    mentorHint: 'The scheme sets a limit and a market, not prohibition.',
     correct: 'It caps total emissions and lets firms trade permits so that abatement is concentrated where it is cheapest',
     wrong: [
       miss('It bans all emissions outright across every firm', 'Permit schemes set a cap and allow some emissions to be traded, not a complete ban.', 'The scheme sets a limit and a market, not prohibition.'),
@@ -364,6 +387,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Government intervention and government failure',
     title: 'Causes of government failure',
     prompt: 'Which of the following is the clearest example of government failure?',
+    mentorHint: 'Government failure means intervention makes things worse.',
     correct: 'A subsidy intended to help farmers leads to large surpluses and wasteful overproduction',
     wrong: [
       miss('A tax on cigarettes reduces smoking and raises revenue as intended', 'This achieves its aims and corrects a market failure, so it is successful intervention, not failure.', 'Government failure means intervention makes things worse.'),
@@ -379,6 +403,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Government intervention and government failure',
     title: 'Minimum price (price floor)',
     prompt: 'A government introduces a minimum price for alcohol that is set above the free-market equilibrium price. What is the likely effect?',
+    mentorHint: 'A high enforced price reduces demand and raises supply.',
     correct: 'Excess supply, with quantity supplied exceeding quantity demanded',
     wrong: [
       miss('Excess demand, with shortages of alcohol', 'A binding minimum price sits above equilibrium and discourages buyers, producing a surplus rather than a shortage.', 'A high enforced price reduces demand and raises supply.'),
@@ -396,6 +421,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Measuring economic performance',
     title: 'Real versus nominal GDP',
     prompt: 'Over a year, a country\'s nominal GDP rises by 5 per cent while the price level rises by 3 per cent. Approximately what is the rate of real economic growth?',
+    mentorHint: 'Real growth strips out price-level changes.',
     correct: 'About 2 per cent',
     wrong: [
       miss('About 8 per cent', 'This adds inflation to nominal growth; real growth is found by removing inflation, so we subtract it.', 'Real growth strips out price-level changes.'),
@@ -411,6 +437,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Measuring economic performance',
     title: 'Limitations of GDP as a welfare measure',
     prompt: 'Which of the following is a valid limitation of using GDP per capita to measure living standards?',
+    mentorHint: 'An average can conceal inequality, not exaggerate it.',
     correct: 'It excludes non-marketed and informal activity such as the value of unpaid household work',
     wrong: [
       miss('It always overstates inequality within the population', 'GDP per capita is an average that hides, rather than overstates, the distribution of income.', 'An average can conceal inequality, not exaggerate it.'),
@@ -426,6 +453,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Measuring economic performance',
     title: 'Measuring inflation with the CPI',
     prompt: 'The Consumer Prices Index (CPI) measures inflation by tracking which of the following?',
+    mentorHint: 'CPI is based on prices of goods, not the money stock.',
     correct: 'The change in price of a representative, weighted basket of goods and services consumed by households',
     wrong: [
       miss('The total amount of money in circulation in the economy', 'The money supply is a separate monetary measure, not how the CPI is calculated.', 'CPI is based on prices of goods, not the money stock.'),
@@ -441,6 +469,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Measuring economic performance',
     title: 'The circular flow: injections and withdrawals',
     prompt: 'In the circular flow of income, which of the following is classified as an injection?',
+    mentorHint: 'Injections add to spending; saving removes it.',
     correct: 'Investment by firms',
     wrong: [
       miss('Saving by households', 'Saving is a withdrawal (leakage) from the circular flow, not an injection.', 'Injections add to spending; saving removes it.'),
@@ -456,6 +485,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Measuring economic performance',
     title: 'Claimant count versus the Labour Force Survey',
     prompt: 'Which statement correctly distinguishes the two main UK measures of unemployment?',
+    mentorHint: 'One is benefit-based, the other survey-based.',
     correct: 'The claimant count records those claiming unemployment benefits, while the Labour Force Survey uses a sample survey based on the ILO definition',
     wrong: [
       miss('Both measures count exactly the same people in the same way', 'The two measures differ in method and typically give different figures.', 'One is benefit-based, the other survey-based.'),
@@ -473,6 +503,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Aggregate demand and aggregate supply',
     title: 'Components of aggregate demand',
     prompt: 'Aggregate demand is the total planned expenditure in an economy. Which formula correctly represents it?',
+    mentorHint: 'Exports add to demand; imports subtract.',
     correct: 'AD = C + I + G + (X - M)',
     wrong: [
       miss('AD = C + I + G + (M - X)', 'Net trade is exports minus imports, not imports minus exports; the sign is reversed here.', 'Exports add to demand; imports subtract.'),
@@ -488,6 +519,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Aggregate demand and aggregate supply',
     title: 'Effect of a fall in interest rates',
     prompt: 'The central bank lowers the base rate of interest. Other things equal, what is the most likely effect on aggregate demand?',
+    mentorHint: 'Cheaper credit tends to stimulate, not depress, demand.',
     correct: 'Aggregate demand rises, as cheaper borrowing boosts consumption and investment',
     wrong: [
       miss('Aggregate demand falls, as saving becomes more attractive', 'Lower interest rates reduce the reward for saving and the cost of borrowing, encouraging spending, so AD rises.', 'Cheaper credit tends to stimulate, not depress, demand.'),
@@ -503,6 +535,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Aggregate demand and aggregate supply',
     title: 'The multiplier effect',
     prompt: 'In an economy where the marginal propensity to consume is 0.8, what is the value of the spending multiplier?',
+    mentorHint: 'The multiplier is 1 divided by the marginal propensity to withdraw.',
     correct: '5',
     wrong: [
       miss('0.8', 'This is the marginal propensity to consume itself, not the multiplier derived from it.', 'The multiplier is 1 divided by the marginal propensity to withdraw.'),
@@ -518,6 +551,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Aggregate demand and aggregate supply',
     title: 'Keynesian aggregate supply curve',
     prompt: 'On a Keynesian aggregate supply (AS) curve, what happens to the price level when aggregate demand rises while the economy has substantial spare capacity?',
+    mentorHint: 'Idle resources allow output to expand without bidding up prices.',
     correct: 'Real output rises with little or no increase in the price level',
     wrong: [
       miss('The price level rises sharply with no increase in output', 'With spare capacity the AS curve is horizontal, so output rises before prices do.', 'Idle resources allow output to expand without bidding up prices.'),
@@ -533,6 +567,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Aggregate demand and aggregate supply',
     title: 'Determinants of long-run aggregate supply',
     prompt: 'Which of the following would shift the long-run aggregate supply (LRAS) curve to the right?',
+    mentorHint: 'LRAS depends on the quantity and quality of resources, not demand sentiment.',
     correct: 'An improvement in the productivity of the labour force through better education and training',
     wrong: [
       miss('A temporary increase in consumer confidence', 'Higher confidence raises aggregate demand in the short run; it does not change productive capacity (LRAS).', 'LRAS depends on the quantity and quality of resources, not demand sentiment.'),
@@ -548,6 +583,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Aggregate demand and aggregate supply',
     title: 'Demand-pull inflation',
     prompt: 'Which scenario is the clearest example of demand-pull inflation?',
+    mentorHint: 'Cost-push inflation originates with higher production costs.',
     correct: 'Strong consumer and investment spending pushes aggregate demand up near full employment, raising the price level',
     wrong: [
       miss('A sharp rise in world oil prices increases firms\' costs', 'Rising input costs cause cost-push inflation, which comes from the supply side, not demand.', 'Cost-push inflation originates with higher production costs.'),
@@ -565,6 +601,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Economic objectives and policy',
     title: 'The four main macroeconomic objectives',
     prompt: 'Which of the following is a standard macroeconomic policy objective for a government?',
+    mentorHint: 'Macro objectives concern the whole economy, not individual firms.',
     correct: 'Low and stable inflation',
     wrong: [
       miss('Maximising the profits of private firms', 'Firm profitability is a microeconomic concern, not a government-wide macroeconomic objective.', 'Macro objectives concern the whole economy, not individual firms.'),
@@ -580,6 +617,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Economic objectives and policy',
     title: 'Fiscal policy instruments',
     prompt: 'A government uses expansionary fiscal policy to boost aggregate demand. Which combination of measures does this involve?',
+    mentorHint: 'Fiscal policy works through spending and taxation.',
     correct: 'Increasing government spending and/or cutting taxes',
     wrong: [
       miss('Raising the base rate of interest', 'Changing interest rates is monetary policy, conducted by the central bank, not fiscal policy.', 'Fiscal policy works through spending and taxation.'),
@@ -595,6 +633,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Economic objectives and policy',
     title: 'The short-run Phillips curve trade-off',
     prompt: 'The short-run Phillips curve illustrates a trade-off between which two variables?',
+    mentorHint: 'Recall the two variables on the axes of the Phillips curve.',
     correct: 'Unemployment and inflation',
     wrong: [
       miss('Economic growth and the exchange rate', 'The Phillips curve relates unemployment and inflation, not growth and the exchange rate.', 'Recall the two variables on the axes of the Phillips curve.'),
@@ -610,6 +649,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Economic objectives and policy',
     title: 'Supply-side policies',
     prompt: 'Which of the following is a supply-side policy rather than a demand-side policy?',
+    mentorHint: 'Supply-side policies target productive capacity, not demand.',
     correct: 'Investing in education and training to raise the skills of the workforce',
     wrong: [
       miss('Cutting interest rates to encourage borrowing', 'Lowering interest rates is a demand-side monetary policy aimed at boosting aggregate demand.', 'Supply-side policies target productive capacity, not demand.'),
@@ -627,6 +667,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Costs, revenue and profit',
     title: 'Fixed versus variable costs',
     prompt: 'A bakery rents its premises for a fixed monthly amount and buys flour according to how many loaves it bakes. How are these two costs classified?',
+    mentorHint: 'A cost that stays constant regardless of output is fixed.',
     correct: 'Rent is a fixed cost and flour is a variable cost',
     wrong: [
       miss('Both rent and flour are variable costs', 'Rent does not change with output in the short run, so it is fixed, not variable.', 'A cost that stays constant regardless of output is fixed.'),
@@ -642,6 +683,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Costs, revenue and profit',
     title: 'Economies of scale',
     prompt: 'A firm doubles all its inputs and finds that output more than doubles, so average costs fall. What does this illustrate?',
+    mentorHint: 'Falling average cost signals economies, not diseconomies.',
     correct: 'Economies of scale (increasing returns to scale)',
     wrong: [
       miss('Diseconomies of scale', 'Diseconomies occur when average costs rise as output expands, the opposite of what happens here.', 'Falling average cost signals economies, not diseconomies.'),
@@ -657,6 +699,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Costs, revenue and profit',
     title: 'Law of diminishing marginal returns',
     prompt: 'The law of diminishing marginal returns states that, in the short run, what happens as more of a variable factor is added to a fixed factor?',
+    mentorHint: 'Distinguish falling marginal output from falling total output.',
     correct: 'Beyond a certain point, the marginal output of each additional unit of the variable factor begins to fall',
     wrong: [
       miss('Total output must eventually fall as more workers are added', 'Marginal output falls first; total output can still rise, just at a decreasing rate, before any fall.', 'Distinguish falling marginal output from falling total output.'),
@@ -672,6 +715,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'Costs, revenue and profit',
     title: 'Normal versus supernormal profit',
     prompt: 'A firm is earning exactly normal profit. What does this mean?',
+    mentorHint: 'Normal profit is the minimum reward needed to stay in business.',
     correct: 'Total revenue equals total cost, including the opportunity cost of the entrepreneur staying in business',
     wrong: [
       miss('The firm is making a loss and will exit the market', 'Normal profit means costs are exactly covered, so the firm is content to remain, not making a loss.', 'Normal profit is the minimum reward needed to stay in business.'),
@@ -689,6 +733,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'The labour market',
     title: 'Derived demand for labour',
     prompt: 'Economists describe the demand for labour as a derived demand. What does this mean?',
+    mentorHint: 'Ask where the underlying demand originates.',
     correct: 'Demand for labour depends on the demand for the goods and services it produces',
     wrong: [
       miss('Demand for labour depends only on the wage rate offered', 'The wage rate affects the quantity of labour demanded, but the demand itself derives from product demand.', 'Ask where the underlying demand originates.'),
@@ -704,6 +749,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'The labour market',
     title: 'Effect of a minimum wage above equilibrium',
     prompt: 'A national minimum wage is set above the free-market equilibrium wage in a competitive labour market. According to standard theory, what is the likely effect on employment in that market?',
+    mentorHint: 'A higher enforced wage raises labour costs for firms.',
     correct: 'It can create unemployment, as the quantity of labour supplied exceeds the quantity demanded',
     wrong: [
       miss('It always increases total employment in the market', 'In a competitive market, a wage above equilibrium reduces the quantity of labour firms demand.', 'A higher enforced wage raises labour costs for firms.'),
@@ -719,6 +765,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'The labour market',
     title: 'Geographical labour immobility',
     prompt: 'A worker who is made redundant in a depressed region cannot easily relocate to a city where jobs are available because house prices there are far higher. This is an example of what?',
+    mentorHint: 'This barrier concerns moving area, not changing occupation.',
     correct: 'Geographical immobility of labour',
     wrong: [
       miss('Occupational immobility of labour', 'Occupational immobility is about lacking the skills to switch jobs, not the difficulty of moving location.', 'This barrier concerns moving area, not changing occupation.'),
@@ -734,6 +781,7 @@ export const alevelEconomicsHigh103TopUpAQuestions: Question[] = makeQuestionBan
     chapter: 'The labour market',
     title: 'Structural unemployment',
     prompt: 'The decline of coal mining leaves many former miners jobless because their skills do not match the vacancies in growing service industries. What type of unemployment is this?',
+    mentorHint: 'Here the issue is mismatched skills, not a recession.',
     correct: 'Structural unemployment',
     wrong: [
       miss('Cyclical (demand-deficient) unemployment', 'Cyclical unemployment results from a general fall in aggregate demand during a downturn, not from a mismatch of skills.', 'Here the issue is mismatched skills, not a recession.'),

@@ -14,6 +14,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Algebra Foundations',
     title: 'Linear Equation',
     prompt: 'Solve 3x - 7 = 14.',
+    mentorHint: 'Treat the equation like a balance and undo operations in reverse order. Use inverse operations: remove the subtraction first, then undo the multiplication by the coefficient of x.',
     correct: 'x = 7',
     wrong: [
       ['x = 3', 'This does not undo both operations.', 'Add 7 first, then divide by 3.'],
@@ -28,6 +29,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Algebra Foundations',
     title: 'Factor Quadratic',
     prompt: 'Which factorization matches x^2 - 5x + 6?',
+    mentorHint: 'For a monic quadratic x^2 + bx + c, the two binomial constants must multiply to c and add to b. Expanding each candidate is also a reliable check because the middle term comes from the cross products.',
     correct: '(x - 2)(x - 3)',
     wrong: [
       ['(x + 2)(x + 3)', 'That gives a positive middle term.', 'The factors must multiply to 6 and add to -5.'],
@@ -42,6 +44,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Algebra Foundations',
     title: 'Inequality Direction',
     prompt: 'Solve -2x < 8.',
+    mentorHint: 'Solve inequalities with the same inverse-operation logic as equations, but remember the special sign rule. Dividing or multiplying both sides by a negative reverses the inequality direction.',
     correct: 'x > -4',
     wrong: [
       ['x < -4', 'The inequality sign must flip when dividing by a negative.', 'That sign flip is the key step.'],
@@ -56,6 +59,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Functions and Graphs',
     title: 'Function Evaluation',
     prompt: 'If f(x) = 2x^2 - 3, what is f(4)?',
+    mentorHint: 'Function notation asks you to substitute the input everywhere x appears. Follow order of operations carefully: evaluate the exponent before multiplying by the coefficient.',
     correct: '29',
     wrong: [
       ['13', 'That treats 2x^2 like (2x)^1 or misses the square.', 'Square 4 before multiplying by 2.'],
@@ -70,6 +74,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Functions and Graphs',
     title: 'Slope',
     prompt: 'What is the slope of the line through (1, 2) and (5, 10)?',
+    mentorHint: 'Slope is the constant rate of change of a line, computed as change in y divided by change in x. Use the two-point slope formula (y2 - y1)/(x2 - x1) and keep the order consistent in both differences.',
     correct: '2',
     wrong: [
       ['8', 'That is the vertical change only.', 'Slope is rise divided by run.'],
@@ -84,6 +89,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Functions and Graphs',
     title: 'Exponential Growth',
     prompt: 'A quantity grows by 5% each year from an initial value of 200. Which expression gives the value after t years?',
+    mentorHint: 'Repeated percent growth is multiplicative, not additive. The growth factor is 1 plus the decimal rate, and the exponent counts how many equal growth periods have occurred.',
     correct: '200(1.05)^t',
     wrong: [
       ['200(0.05)^t', 'That repeatedly multiplies by the growth rate alone, not the growth factor.', 'Use 1 plus the rate for growth.'],
@@ -98,6 +104,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Calculus Readiness',
     title: 'Derivative Meaning',
     prompt: 'The derivative of a function at a point most directly measures:',
+    mentorHint: 'A derivative is a local idea: it describes what the graph is doing right at one input. Think of the slope of the tangent line or an instantaneous rate, not a total accumulated quantity over an interval.',
     correct: 'Instantaneous rate of change',
     wrong: [
       ['Total accumulated area', 'That is integral language.', 'Derivative is local rate.'],
@@ -112,6 +119,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Calculus Readiness',
     title: 'Power Rule',
     prompt: 'What is the derivative of x^5?',
+    mentorHint: 'Use the power rule for derivatives: d/dx of x^n brings the exponent down as a coefficient and then lowers the exponent by 1. Check that you are differentiating, not finding an antiderivative.',
     correct: '5x^4',
     wrong: [
       ['x^4', 'The exponent must come down as a coefficient.', 'Use d/dx x^n = nx^(n-1).'],
@@ -126,6 +134,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Calculus Readiness',
     title: 'Integral Meaning',
     prompt: 'A definite integral over an interval most directly represents:',
+    mentorHint: 'A definite integral accumulates a quantity across an interval. Graphically, it represents signed area between the curve and the horizontal axis, with regions below the axis contributing negatively.',
     correct: 'Accumulated change or signed area',
     wrong: [
       ['The slope at one point', 'That is derivative language.', 'Integrals accumulate over intervals.'],
@@ -140,6 +149,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Probability',
     title: 'Complement Rule',
     prompt: 'If P(A) = 0.3, what is P(not A)?',
+    mentorHint: 'The complement of an event is everything in the sample space where that event does not occur. Since total probability is 1, use the complement rule P(not A) = 1 - P(A).',
     correct: '0.7',
     wrong: [
       ['0.3', 'That repeats the original probability.', 'The complement fills the rest of the probability space.'],
@@ -154,6 +164,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Probability',
     title: 'Independent Events',
     prompt: 'If A and B are independent with P(A) = 0.4 and P(B) = 0.5, what is P(A and B)?',
+    mentorHint: 'Independence means one event happening does not change the probability of the other. For independent events, the probability that both occur is found with the multiplication rule.',
     correct: '0.2',
     wrong: [
       ['0.9', 'That adds the probabilities.', 'For independent intersection, multiply.'],
@@ -168,6 +179,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Statistics',
     title: 'Median Robustness',
     prompt: 'Which summary statistic is usually most resistant to an extreme outlier?',
+    mentorHint: 'A resistant statistic changes very little when one unusually large or small value is added. Measures based on order or position are usually less sensitive to outliers than measures based on arithmetic averaging.',
     correct: 'Median',
     wrong: [
       ['Mean', 'The mean moves strongly when an extreme value appears.', 'Use the statistic based on order.'],
@@ -182,6 +194,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Statistics',
     title: 'Standard Deviation',
     prompt: 'Standard deviation measures:',
+    mentorHint: 'Standard deviation is a spread measure, not a center measure. It summarizes a typical distance of data values from the mean, so larger values indicate more variability.',
     correct: 'Typical spread of values around the mean',
     wrong: [
       ['The exact middle value', 'That is the median.', 'Standard deviation is about spread.'],
@@ -196,6 +209,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Linear Algebra',
     title: 'Matrix Dimensions',
     prompt: 'A matrix with 3 rows and 2 columns has dimensions:',
+    mentorHint: 'Matrix size is written in the order rows by columns. Count the horizontal rows first, then the vertical columns, rather than counting total entries.',
     correct: '3 x 2',
     wrong: [
       ['2 x 3', 'That reverses rows and columns.', 'Rows come first.'],
@@ -210,6 +224,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Linear Algebra',
     title: 'Dot Product',
     prompt: 'What is the dot product of (1, 2) and (3, 4)?',
+    mentorHint: 'The dot product multiplies matching components and then adds those products, producing a scalar. It is different from componentwise multiplication because the final result is one number.',
     correct: '11',
     wrong: [
       ['7', 'That adds only the second vector components or misses products.', 'Multiply corresponding entries first.'],
@@ -224,6 +239,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Mechanics Basics',
     title: 'Constant Acceleration',
     prompt: 'If velocity changes from 4 m/s to 10 m/s in 3 seconds, what is the average acceleration?',
+    mentorHint: 'Average acceleration is change in velocity divided by elapsed time. Track units as (meters per second) per second, which simplifies to m/s^2.',
     correct: '2 m/s^2',
     wrong: [
       ['6 m/s^2', 'That is the velocity change, not divided by time.', 'Acceleration is change in velocity over time.'],
@@ -238,6 +254,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Mechanics Basics',
     title: 'Force Law',
     prompt: 'Newton\'s second law is usually written as:',
+    mentorHint: 'Newton\'s second law connects the net force on an object to how strongly its motion accelerates. The units also guide the formula: newtons match kilograms times meters per second squared.',
     correct: 'F = ma',
     wrong: [
       ['E = mc^2', 'That is mass-energy equivalence, not Newton\'s second law.', 'Connect force to mass and acceleration.'],
@@ -252,6 +269,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Quantitative Methods',
     title: 'Units Check',
     prompt: 'A good first check on a quantitative answer is whether:',
+    mentorHint: 'Dimensional analysis is a quick way to catch many errors before doing detailed arithmetic. Ask whether the units of your result match the kind of quantity the problem requested.',
     correct: 'The units match the quantity being asked for',
     wrong: [
       ['The answer has the most decimal places', 'Extra decimals do not guarantee correctness.', 'Dimensional consistency is a stronger first check.'],
@@ -266,6 +284,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Quantitative Methods',
     title: 'Approximation Sense',
     prompt: 'Before trusting a calculator result, the best quick sanity check is to:',
+    mentorHint: 'A calculator can evaluate what you typed, but it cannot know whether the setup was reasonable. Round the inputs mentally and estimate the order of magnitude so you can spot misplaced decimals or impossible values.',
     correct: 'Estimate the size of the answer mentally and compare',
     wrong: [
       ['Assume the calculator result is always right', 'Input errors and formula errors still happen.', 'Estimate before accepting precision.'],
@@ -280,6 +299,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     chapter: 'Quantitative Methods',
     title: 'Model Choice',
     prompt: 'If a quantity increases by the same percentage each period, the natural model is usually:',
+    mentorHint: 'Same absolute change suggests a linear model, while same percentage change suggests repeated multiplication. Look for a constant growth factor applied once per period.',
     correct: 'Exponential',
     wrong: [
       ['Linear', 'Linear growth adds the same absolute amount each period.', 'Same percentage change points to multiplication.'],

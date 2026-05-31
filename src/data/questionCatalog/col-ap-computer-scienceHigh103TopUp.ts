@@ -11,6 +11,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Primitive Types',
     title: 'Integer division result',
     prompt: 'In Java, what value does the expression 17 / 5 evaluate to?',
+    mentorHint: 'Check the data types of both operands before deciding whether division is integer or floating point.',
     correct: '3',
     wrong: [
       miss('3.4', 'Both operands are int, so Java performs integer division and discards the fractional part rather than producing a double.', 'Check the data types of both operands before deciding whether division is integer or floating point.'),
@@ -26,6 +27,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Primitive Types',
     title: 'Modulo with operands',
     prompt: 'What is the value of the expression 23 % 4 in Java?',
+    mentorHint: 'The % operator returns the remainder, not the quotient.',
     correct: '3',
     wrong: [
       miss('5', 'This is the integer quotient 23 / 4, not the remainder that % returns.', 'The % operator returns the remainder, not the quotient.'),
@@ -41,6 +43,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Primitive Types',
     title: 'Implicit type casting',
     prompt: 'Given int x = 7; double y = x / 2;, what value is stored in y?',
+    mentorHint: 'Evaluate the right side fully before the assignment widens it.',
     correct: '3.0',
     wrong: [
       miss('3.5', 'The division x / 2 happens first using int arithmetic (giving 3); only afterward is the result widened to double.', 'Evaluate the right side fully before the assignment widens it.'),
@@ -56,6 +59,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Primitive Types',
     title: 'Compound assignment',
     prompt: 'After int n = 10; n += 3 * 2;, what is the value of n?',
+    mentorHint: 'Apply operator precedence: multiplication happens before the compound add.',
     correct: '16',
     wrong: [
       miss('26', 'The multiplication 3 * 2 is evaluated before the addition, so 6 is added to 10, not 16.', 'Apply operator precedence: multiplication happens before the compound add.'),
@@ -71,6 +75,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Primitive Types',
     title: 'Overflow of int range',
     prompt: 'Why can a Java int variable not reliably store the value 3,000,000,000?',
+    mentorHint: 'Recall the actual order of magnitude of Integer.MAX_VALUE.',
     correct: 'It exceeds the maximum value an int can hold (about 2.1 billion)',
     wrong: [
       miss('int cannot store values above one million', 'The int maximum is roughly 2.147 billion (2^31 - 1), far above one million.', 'Recall the actual order of magnitude of Integer.MAX_VALUE.'),
@@ -87,6 +92,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Using Objects',
     title: 'String length method',
     prompt: 'For String s = "Banana";, what does s.length() return?',
+    mentorHint: 'Count every character including repeated letters.',
     correct: '6',
     wrong: [
       miss('5', 'This undercounts; "Banana" has six characters: B, a, n, a, n, a.', 'Count every character including repeated letters.'),
@@ -102,6 +108,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Using Objects',
     title: 'Substring extraction',
     prompt: 'For String s = "Computer";, what does s.substring(2, 5) return?',
+    mentorHint: 'The second argument is exclusive, not inclusive.',
     correct: '"mpu"',
     wrong: [
       miss('"mput"', 'substring(2, 5) stops before index 5, so the character at index 5 is excluded.', 'The second argument is exclusive, not inclusive.'),
@@ -117,6 +124,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Using Objects',
     title: 'Comparing String contents',
     prompt: 'What is the correct way to test whether two String variables a and b contain the same sequence of characters?',
+    mentorHint: 'Reference equality is not the same as content equality for objects.',
     correct: 'a.equals(b)',
     wrong: [
       miss('a == b', 'The == operator compares object references (memory addresses), not the character contents.', 'Reference equality is not the same as content equality for objects.'),
@@ -132,6 +140,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Using Objects',
     title: 'Wrapper class and Math',
     prompt: 'Which expression returns a random integer from 1 to 6 inclusive, simulating a die roll?',
+    mentorHint: 'Add an offset to shift the lower bound up to 1.',
     correct: '(int)(Math.random() * 6) + 1',
     wrong: [
       miss('(int)(Math.random() * 6)', 'Math.random() returns a value in [0.0, 1.0), so this gives 0 to 5, not 1 to 6.', 'Add an offset to shift the lower bound up to 1.'),
@@ -147,6 +156,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Using Objects',
     title: 'indexOf behaviour',
     prompt: 'For String s = "mississippi";, what does s.indexOf("ss") return?',
+    mentorHint: 'indexOf finds the earliest match, scanning left to right.',
     correct: '2',
     wrong: [
       miss('5', 'indexOf returns the index of the first occurrence, not a later one; the first "ss" begins at index 2.', 'indexOf finds the earliest match, scanning left to right.'),
@@ -163,6 +173,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Boolean Expressions and if Statements',
     title: 'Short-circuit evaluation',
     prompt: 'In the expression (x != 0) && (10 / x > 2), why does this avoid a division-by-zero error when x is 0?',
+    mentorHint: 'Consider what actually prevents the right side from running.',
     correct: 'The && operator short-circuits: if the left operand is false, the right operand is never evaluated',
     wrong: [
       miss('Java automatically replaces division by zero with 0', 'Java throws an ArithmeticException for integer division by zero; it does not silently substitute a value.', 'Consider what actually prevents the right side from running.'),
@@ -178,6 +189,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Boolean Expressions and if Statements',
     title: 'De Morgan\'s law',
     prompt: 'Which expression is equivalent to !(a && b) by De Morgan\'s law?',
+    mentorHint: 'Recall that negation flips both the operands and the connective.',
     correct: '!a || !b',
     wrong: [
       miss('!a && !b', 'Negating an AND yields an OR of the negations, not an AND; this is the negation of (a || b) instead.', 'Recall that negation flips both the operands and the connective.'),
@@ -193,6 +205,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Boolean Expressions and if Statements',
     title: 'Nested if-else flow',
     prompt: 'Given if (n > 0) { if (n > 100) print("big"); } else print("nonpositive");, what is printed when n is 50?',
+    mentorHint: 'Check whether the inner condition is satisfied.',
     correct: 'Nothing is printed',
     wrong: [
       miss('"big"', '"big" prints only when n > 100; 50 does not exceed 100, so the inner if is false.', 'Check whether the inner condition is satisfied.'),
@@ -208,6 +221,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Boolean Expressions and if Statements',
     title: 'Equivalent boolean conditions',
     prompt: 'Which condition is logically equivalent to !(x >= 5)?',
+    mentorHint: 'Determine whether the boundary value 5 satisfies the original condition.',
     correct: 'x < 5',
     wrong: [
       miss('x <= 5', 'This includes the value 5, but !(x >= 5) excludes 5 since 5 >= 5 is true.', 'Determine whether the boundary value 5 satisfies the original condition.'),
@@ -223,6 +237,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Boolean Expressions and if Statements',
     title: 'Comparing objects vs primitives',
     prompt: 'When comparing two int variables for equality in an if statement, which operator should be used?',
+    mentorHint: 'Recall that primitives and objects compare differently.',
     correct: 'The == operator',
     wrong: [
       miss('The equals method', 'equals is used for objects like String; primitives such as int use ==.', 'Recall that primitives and objects compare differently.'),
@@ -239,6 +254,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Iteration',
     title: 'Counting loop iterations',
     prompt: 'How many times does the body of for (int i = 3; i <= 12; i++) execute?',
+    mentorHint: 'Check whether the final value 12 is included by the condition.',
     correct: '10',
     wrong: [
       miss('9', 'This treats the loop as exclusive of 12, but i <= 12 includes the iteration where i is 12.', 'Check whether the final value 12 is included by the condition.'),
@@ -254,6 +270,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Iteration',
     title: 'Accumulation in a loop',
     prompt: 'What is the final value of sum after int sum = 0; for (int i = 1; i <= 4; i++) sum += i;?',
+    mentorHint: 'The loop adds every value of i, not just the final one.',
     correct: '10',
     wrong: [
       miss('4', 'This is only the last value of i added once; sum accumulates 1 + 2 + 3 + 4.', 'The loop adds every value of i, not just the final one.'),
@@ -269,6 +286,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Iteration',
     title: 'Nested loop total iterations',
     prompt: 'How many times does the innermost statement run in for (int i = 0; i < 3; i++) for (int j = 0; j < 4; j++) print(i + j);?',
+    mentorHint: 'Nested loops multiply their iteration counts.',
     correct: '12',
     wrong: [
       miss('7', 'The loops are nested (multiplied), not run sequentially (added), so it is 3 * 4 rather than 3 + 4.', 'Nested loops multiply their iteration counts.'),
@@ -284,6 +302,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Iteration',
     title: 'while loop termination',
     prompt: 'What is the value of n after int n = 1; while (n < 100) n *= 2;?',
+    mentorHint: 'Continue doubling until the condition becomes false.',
     correct: '128',
     wrong: [
       miss('64', '64 satisfies n < 100, so the loop runs once more and doubles it to 128 before stopping.', 'Continue doubling until the condition becomes false.'),
@@ -299,6 +318,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Iteration',
     title: 'Reversing a string with a loop',
     prompt: 'To build the reverse of a String s using a loop and accumulating into a result variable, which traversal correctly produces the reversed string?',
+    mentorHint: 'Decide which direction of traversal reverses the order.',
     correct: 'Loop i from s.length() - 1 down to 0, appending s.substring(i, i + 1) each time',
     wrong: [
       miss('Loop i from 0 up to s.length() - 1, appending s.substring(i, i + 1)', 'Traversing front to back appends characters in original order, producing the same string, not its reverse.', 'Decide which direction of traversal reverses the order.'),
@@ -314,6 +334,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Iteration',
     title: 'Off-by-one in loop bound',
     prompt: 'A programmer writes for (int i = 0; i <= arr.length; i++) to traverse an array. What runtime error will occur?',
+    mentorHint: 'Identify the error type caused by an invalid index.',
     correct: 'ArrayIndexOutOfBoundsException when i equals arr.length',
     wrong: [
       miss('NullPointerException on the first iteration', 'A NullPointerException arises from using a null reference, not from an index that is one too large.', 'Identify the error type caused by an invalid index.'),
@@ -330,6 +351,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Writing Classes',
     title: 'Purpose of a constructor',
     prompt: 'What is the primary role of a constructor in a Java class?',
+    mentorHint: 'Constructors run when an object is made, not removed.',
     correct: 'To initialize the state (instance variables) of a newly created object',
     wrong: [
       miss('To destroy an object and free its memory', 'Java uses garbage collection for cleanup; constructors create and initialize, they do not destroy.', 'Constructors run when an object is made, not removed.'),
@@ -345,6 +367,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Writing Classes',
     title: 'Encapsulation with private',
     prompt: 'Why are instance variables typically declared private in a well-designed class?',
+    mentorHint: 'Think about the design principle, not performance.',
     correct: 'To enforce encapsulation, controlling access through public methods rather than direct external modification',
     wrong: [
       miss('To make the program run faster at runtime', 'Access modifiers affect visibility and design, not execution speed.', 'Think about the design principle, not performance.'),
@@ -360,6 +383,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Writing Classes',
     title: 'The this keyword',
     prompt: 'In a constructor with the parameter String name and an instance variable also named name, what does this.name = name; accomplish?',
+    mentorHint: 'The left side of = is the destination of the assignment.',
     correct: 'It assigns the parameter value to the instance variable, distinguishing the two same-named variables',
     wrong: [
       miss('It assigns the instance variable to the parameter', 'this.name is the instance variable (the assignment target); name on the right is the parameter (the source).', 'The left side of = is the destination of the assignment.'),
@@ -375,6 +399,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Writing Classes',
     title: 'Static versus instance variables',
     prompt: 'A class declares private static int count;. What is true about this variable?',
+    mentorHint: 'Recall what the static keyword means for storage.',
     correct: 'There is one shared copy of count for the entire class, regardless of how many objects exist',
     wrong: [
       miss('Each object gets its own separate copy of count', 'A static variable is shared by all instances; only non-static instance variables get per-object copies.', 'Recall what the static keyword means for storage.'),
@@ -390,6 +415,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Writing Classes',
     title: 'Method return type matching',
     prompt: 'A method is declared as public double average(int total, int n). Which statement could legally appear as its return statement?',
+    mentorHint: 'A non-void method must return a value of its declared type.',
     correct: 'return (double) total / n;',
     wrong: [
       miss('return;', 'A method with return type double must return a double value, not nothing.', 'A non-void method must return a value of its declared type.'),
@@ -405,6 +431,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Writing Classes',
     title: 'Overriding toString',
     prompt: 'What is the benefit of overriding the toString method in a class?',
+    mentorHint: 'toString affects printing, not equality comparison.',
     correct: 'It provides a meaningful String representation used automatically when the object is printed',
     wrong: [
       miss('It allows the object to be compared with the == operator', 'toString controls textual representation, not how == compares references.', 'toString affects printing, not equality comparison.'),
@@ -421,6 +448,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Array',
     title: 'Default array element values',
     prompt: 'After int[] data = new int[5];, what is the value of data[0] before any assignment?',
+    mentorHint: 'Distinguish primitive defaults from object reference defaults.',
     correct: '0',
     wrong: [
       miss('null', 'null is the default for object reference elements, but int is a primitive whose default is 0.', 'Distinguish primitive defaults from object reference defaults.'),
@@ -436,6 +464,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Array',
     title: 'Enhanced for loop limitation',
     prompt: 'Why can a standard enhanced for loop (for-each) not be used to modify the elements of an int array in place?',
+    mentorHint: 'The loop can read values; the issue is writing.',
     correct: 'The loop variable is a copy of each element, so assigning to it does not change the array',
     wrong: [
       miss('Enhanced for loops cannot access array elements at all', 'A for-each loop does read each element; it simply cannot write back through the loop variable.', 'The loop can read values; the issue is writing.'),
@@ -451,6 +480,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Array',
     title: 'Finding the maximum',
     prompt: 'What is the standard way to initialize the running maximum when scanning an array of unknown values to find the largest element?',
+    mentorHint: 'Consider what happens with all-negative data.',
     correct: 'Set max to the first element, then compare it with each remaining element',
     wrong: [
       miss('Set max to 0, then compare with each element', 'If all elements are negative, 0 wrongly remains the maximum since no element exceeds it.', 'Consider what happens with all-negative data.'),
@@ -466,6 +496,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Array',
     title: 'Array length property',
     prompt: 'How do you obtain the number of elements in an array named arr in Java?',
+    mentorHint: 'Arrays use a property, not a method call.',
     correct: 'arr.length',
     wrong: [
       miss('arr.length()', 'length for arrays is a field accessed without parentheses, unlike the length() method of String.', 'Arrays use a property, not a method call.'),
@@ -481,6 +512,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Array',
     title: 'Linear search outcome',
     prompt: 'A linear search loops through an array looking for a target. What should the method return if the target is not present?',
+    mentorHint: 'Choose a value that cannot be a valid index.',
     correct: 'A sentinel value such as -1 to indicate not found',
     wrong: [
       miss('The array length', 'Returning the length is indistinguishable from a valid result in some contexts and is not a conventional not-found signal.', 'Choose a value that cannot be a valid index.'),
@@ -497,6 +529,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'ArrayList',
     title: 'ArrayList stores objects',
     prompt: 'Why is ArrayList<Integer> used instead of ArrayList<int> to store integers?',
+    mentorHint: 'Consider what types generics are allowed to hold.',
     correct: 'Generic type parameters require object types, so the wrapper class Integer is used instead of the primitive int',
     wrong: [
       miss('Integer can store larger numbers than int', 'Integer wraps an int and has the same value range; the issue is that generics need an object type.', 'Consider what types generics are allowed to hold.'),
@@ -512,6 +545,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'ArrayList',
     title: 'Removing during traversal',
     prompt: 'What problem commonly occurs when you remove elements from an ArrayList while traversing it with an increasing index?',
+    mentorHint: 'Focus on how indices shift after removal.',
     correct: 'Elements shift left after a removal, so the next element is skipped',
     wrong: [
       miss('The ArrayList automatically resizes to a fixed length', 'ArrayList does resize, but the traversal bug is skipping elements, not a fixed length.', 'Focus on how indices shift after removal.'),
@@ -527,6 +561,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'ArrayList',
     title: 'ArrayList add with index',
     prompt: 'After ArrayList<String> list holds [A, B, C], what does list.add(1, "X") produce?',
+    mentorHint: 'Distinguish inserting from replacing.',
     correct: '[A, X, B, C]',
     wrong: [
       miss('[A, X, C]', 'add(index, element) inserts X and shifts existing elements right; it does not replace B.', 'Distinguish inserting from replacing.'),
@@ -542,6 +577,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'ArrayList',
     title: 'set versus add',
     prompt: 'What is the difference between list.set(2, "Q") and list.add(2, "Q") on an ArrayList?',
+    mentorHint: 'Compare whether the list size changes.',
     correct: 'set replaces the element at index 2; add inserts a new element at index 2 and shifts others right',
     wrong: [
       miss('They are identical and produce the same result', 'set overwrites while add inserts and shifts, so they differ in effect and in resulting size.', 'Compare whether the list size changes.'),
@@ -557,6 +593,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'ArrayList',
     title: 'ArrayList size method',
     prompt: 'To loop over every element of an ArrayList named items by index, what should the loop condition use?',
+    mentorHint: 'Recall the correct count syntax for ArrayList.',
     correct: 'i < items.size()',
     wrong: [
       miss('i < items.length', 'length is an array field; ArrayList uses the method size() with parentheses.', 'Recall the correct count syntax for ArrayList.'),
@@ -573,6 +610,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: '2D Array',
     title: 'Element count in a 2D array',
     prompt: 'How many elements does the array declared by int[][] grid = new int[3][5]; contain in total?',
+    mentorHint: 'Total elements equal rows times columns.',
     correct: '15',
     wrong: [
       miss('8', 'The dimensions are multiplied (3 * 5), not added (3 + 5), to count elements.', 'Total elements equal rows times columns.'),
@@ -588,6 +626,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: '2D Array',
     title: 'Row-major traversal',
     prompt: 'In the standard nested loop for (int r = 0; r < grid.length; r++) for (int c = 0; c < grid[0].length; c++), what does grid.length represent?',
+    mentorHint: 'The outer length measures rows, not columns.',
     correct: 'The number of rows in the 2D array',
     wrong: [
       miss('The number of columns in the 2D array', 'grid.length is the count of rows; the column count is grid[0].length.', 'The outer length measures rows, not columns.'),
@@ -603,6 +642,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: '2D Array',
     title: 'Accessing a 2D element',
     prompt: 'For a 2D array grid, how do you access the element in the third row and second column?',
+    mentorHint: 'Subtract one from each position because indexing is zero-based.',
     correct: 'grid[2][1]',
     wrong: [
       miss('grid[3][2]', 'Indices start at 0, so the third row is index 2 and the second column is index 1.', 'Subtract one from each position because indexing is zero-based.'),
@@ -618,6 +658,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: '2D Array',
     title: 'Summing a 2D array',
     prompt: 'When computing the sum of all elements in a rectangular 2D int array, why is a nested loop required?',
+    mentorHint: 'Two coordinates need two loop variables.',
     correct: 'The outer loop selects each row and the inner loop visits every element within that row',
     wrong: [
       miss('A single loop can sum all elements without nesting', 'A single index cannot address both the row and the column dimensions of a 2D array.', 'Two coordinates need two loop variables.'),
@@ -634,6 +675,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Inheritance',
     title: 'The extends keyword',
     prompt: 'Which keyword is used to declare that class Dog inherits from class Animal?',
+    mentorHint: 'Distinguish inheriting a class from realizing an interface.',
     correct: 'extends, as in class Dog extends Animal',
     wrong: [
       miss('implements, as in class Dog implements Animal', 'implements is used for interfaces; class-to-class inheritance uses extends.', 'Distinguish inheriting a class from realizing an interface.'),
@@ -649,6 +691,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Inheritance',
     title: 'Calling the superclass constructor',
     prompt: 'Inside a subclass constructor, how do you invoke the constructor of the superclass?',
+    mentorHint: 'Use the keyword that refers to the parent class.',
     correct: 'super(arguments); as the first statement of the constructor',
     wrong: [
       miss('this(arguments); as the first statement', 'this(...) calls another constructor in the same class, not the superclass constructor.', 'Use the keyword that refers to the parent class.'),
@@ -664,6 +707,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Inheritance',
     title: 'Method overriding',
     prompt: 'A subclass defines a method with the same signature as one in its superclass. What is this called, and what happens at runtime for a subclass object?',
+    mentorHint: 'Same signature in a subclass is not overloading.',
     correct: 'Overriding; the subclass version is called for a subclass object',
     wrong: [
       miss('Overloading; the superclass version is always called', 'Overloading means same name but different parameter lists; same signature in a subclass is overriding.', 'Same signature in a subclass is not overloading.'),
@@ -679,6 +723,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Inheritance',
     title: 'Polymorphism and dynamic dispatch',
     prompt: 'Given Animal a = new Dog(); where Dog overrides speak(), which version of speak() runs when a.speak() is called?',
+    mentorHint: 'Distinguish the declared type from the runtime object.',
     correct: 'The Dog version, because the actual object type determines the method at runtime',
     wrong: [
       miss('The Animal version, because a is declared as type Animal', 'The declared type controls what methods are visible, but the actual object type determines which overridden version runs.', 'Distinguish the declared type from the runtime object.'),
@@ -694,6 +739,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Inheritance',
     title: 'Object as universal superclass',
     prompt: 'In Java, what is true about every class that does not explicitly extend another class?',
+    mentorHint: 'Java provides a default parent when none is named.',
     correct: 'It implicitly extends the Object class',
     wrong: [
       miss('It has no superclass at all', 'Every class except Object itself has a superclass; unspecified ones default to Object.', 'Java provides a default parent when none is named.'),
@@ -709,6 +755,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Inheritance',
     title: 'super to extend behaviour',
     prompt: 'A subclass overrides a method but wants to also run the superclass version inside the override. How is that done?',
+    mentorHint: 'this refers to the current (overriding) implementation.',
     correct: 'Call super.methodName(arguments) within the overriding method',
     wrong: [
       miss('Call this.methodName(arguments)', 'this.methodName refers to the overriding version itself and would cause infinite recursion.', 'this refers to the current (overriding) implementation.'),
@@ -725,6 +772,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Recursion',
     title: 'Role of the base case',
     prompt: 'Why must a recursive method include a base case?',
+    mentorHint: 'Focus on stopping, not on performance.',
     correct: 'It provides a condition under which the method stops calling itself, preventing infinite recursion',
     wrong: [
       miss('It makes the method run faster than iteration', 'A base case ensures termination; it is not a speed optimization over loops.', 'Focus on stopping, not on performance.'),
@@ -740,6 +788,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Recursion',
     title: 'Tracing a factorial',
     prompt: 'Given int fact(int n) { if (n <= 1) return 1; return n * fact(n - 1); }, what does fact(4) return?',
+    mentorHint: 'Factorial is a product, not a sum.',
     correct: '24',
     wrong: [
       miss('10', '10 is 4 + 3 + 2 + 1; factorial multiplies the values rather than adding them.', 'Factorial is a product, not a sum.'),
@@ -755,6 +804,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Recursion',
     title: 'Recursion versus iteration',
     prompt: 'Which statement best describes the relationship between recursion and iteration?',
+    mentorHint: 'Consider whether the two approaches differ in raw capability.',
     correct: 'Any problem solvable by iteration can also be solved by recursion, and vice versa',
     wrong: [
       miss('Recursion can solve problems that iteration fundamentally cannot', 'Both are computationally equivalent; either approach can solve the same problems.', 'Consider whether the two approaches differ in raw capability.'),
@@ -770,6 +820,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Recursion',
     title: 'Recursive sum of array',
     prompt: 'A recursive method sums an array from index i to the end via return arr[i] + sumFrom(arr, i + 1);. What should the base case return when i equals arr.length?',
+    mentorHint: 'There is no element to add at that index.',
     correct: '0',
     wrong: [
       miss('arr[i]', 'When i equals arr.length there is no valid element at that index, so accessing arr[i] is out of bounds.', 'There is no element to add at that index.'),
@@ -785,6 +836,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Recursion',
     title: 'Binary search recursion depth',
     prompt: 'Recursive binary search halves the search interval each call. For a sorted array of 1000 elements, roughly how many comparisons are needed in the worst case?',
+    mentorHint: 'The work is logarithmic, not linear in half the size.',
     correct: 'About 10, since log base 2 of 1000 is approximately 10',
     wrong: [
       miss('About 500, half of the array size', 'Binary search halves the remaining interval each step rather than checking half the elements once.', 'The work is logarithmic, not linear in half the size.'),
@@ -800,6 +852,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Recursion',
     title: 'StackOverflowError cause',
     prompt: 'What typically causes a StackOverflowError in a recursive method?',
+    mentorHint: 'Distinguish value overflow from call-stack overflow.',
     correct: 'The recursion does not reach a base case, so calls keep stacking until memory is exhausted',
     wrong: [
       miss('The method returns a value that is too large for an int', 'An overly large return value causes integer overflow, not a stack overflow of calls.', 'Distinguish value overflow from call-stack overflow.'),
@@ -816,6 +869,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Iteration',
     title: 'Selection sort behaviour',
     prompt: 'In selection sort applied to an array, what happens on each pass through the unsorted portion?',
+    mentorHint: 'Identify which algorithm swaps neighbours repeatedly.',
     correct: 'The smallest remaining element is found and swapped into the next sorted position',
     wrong: [
       miss('Adjacent elements are repeatedly swapped until none are out of order', 'That describes bubble sort, which compares neighbours, not selection sort\'s single placement per pass.', 'Identify which algorithm swaps neighbours repeatedly.'),
@@ -831,6 +885,7 @@ export const colApComputerScienceHigh103TopUpQuestions: Question[] = makeQuestio
     chapter: 'Boolean Expressions and if Statements',
     title: 'Testing divisibility',
     prompt: 'Which boolean expression correctly tests whether an int n is evenly divisible by 3?',
+    mentorHint: 'Use the remainder, not the quotient, to test divisibility.',
     correct: 'n % 3 == 0',
     wrong: [
       miss('n / 3 == 0', 'n / 3 is the quotient; it equals 0 only for small n, not for divisibility.', 'Use the remainder, not the quotient, to test divisibility.'),

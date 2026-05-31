@@ -306,6 +306,139 @@ export function ensureSixAnswerChoices(question: Question): Question {
   }
 }
 
+function answerLabelLength(label: string) {
+  return label.replace(/\s+/g, ' ').trim().length
+}
+
+function shouldBalanceAnswerLengths(question: Question) {
+  const correct = question.answers.find((answer) => answer.correct)
+  const wrong = question.answers.filter((answer) => !answer.correct)
+  if (!correct || wrong.length < 2) return false
+
+  const correctLength = answerLabelLength(correct.label)
+  const wrongLengths = wrong.map((answer) => answerLabelLength(answer.label))
+  const maxWrong = Math.max(...wrongLengths)
+  const avgWrong = wrongLengths.reduce((sum, length) => sum + length, 0) / wrongLengths.length
+
+  return correctLength >= 20 && correctLength > maxWrong && correctLength >= Math.max(maxWrong * 1.2, avgWrong * 1.45)
+}
+
+function balanceAnswerLabelLengths(question: Question): Question {
+  if (!shouldBalanceAnswerLengths(question)) return question
+
+  const correct = question.answers.find((answer) => answer.correct)
+  if (!correct) return question
+
+  const targetLength = Math.min(answerLabelLength(correct.label) + 4, Math.max(32, Math.round(answerLabelLength(correct.label) * 0.9)))
+  const existing = new Set(question.answers.map((answer) => answer.label.trim().toLowerCase()))
+  const expanded = question.answers.map((answer) => {
+    if (answer.correct || answerLabelLength(answer.label) >= targetLength) return answer
+
+    const label = expandedDistractorLabel(answer.label, question, targetLength)
+    const normalized = label.trim().toLowerCase()
+    if (normalized === answer.label.trim().toLowerCase() || existing.has(normalized)) return answer
+
+    existing.add(normalized)
+    return { ...answer, label }
+  })
+
+  return { ...question, answers: expanded }
+}
+
+function expandedDistractorLabel(label: string, question: Question, targetLength: number) {
+  const trimmed = label.trim()
+  const lower = `${question.topic} ${question.chapter} ${question.title} ${question.prompt}`.toLowerCase()
+  const candidates = [
+    expandSpecificDistractor(trimmed, lower),
+    expandByAnswerShape(trimmed, lower),
+    `${trimmed} under the stated conditions`,
+    `${trimmed} as the main answer to this question`,
+  ].filter(Boolean) as string[]
+
+  for (const candidate of candidates) {
+    if (answerLabelLength(candidate) >= Math.min(targetLength, 48)) return candidate
+  }
+
+  return candidates[0] ?? trimmed
+}
+
+function expandSpecificDistractor(label: string, lowerContext: string): string | null {
+  const normalized = label.toLowerCase()
+
+  if (!label) return 'A result from applying a different setup condition'
+  if (normalized === 'incorrect interpretation') return 'A result from a different interpretation of the setup'
+  if (normalized === 'incomplete answer') return 'A choice that uses only part of the given evidence'
+  if (normalized === 'categorical error') return 'A choice from the wrong category for this question'
+  if (normalized === 'neither') return 'Neither option works under the stated condition'
+  if (normalized === 'both') return 'Both options work under the stated condition'
+  if (normalized === 'true') return 'True under the stated conditions'
+  if (normalized === 'false') return 'False under the stated conditions'
+  if (normalized === 'yes') return 'Yes, based on the stated conditions'
+  if (normalized === 'no') return 'No, based on the stated conditions'
+
+  const onlyMatch = label.match(/^Only\s+(.+)$/i)
+  if (onlyMatch) {
+    return `Only ${onlyMatch[1]} works for the given setup`
+  }
+
+  if (lowerContext.includes('cross section') && /^[A-Za-z ]+$/.test(label)) {
+    return `A ${label.toLowerCase()} cross section of the solid`
+  }
+
+  if (lowerContext.includes('shape') && /^[A-Za-z ]+$/.test(label)) {
+    return `A ${label.toLowerCase()} shape in this situation`
+  }
+
+  if ((lowerContext.includes('limit') || lowerContext.includes('integral')) && looksLikeMathValue(label)) {
+    return `A finite value of ${label}`
+  }
+
+  if ((lowerContext.includes('equation') || lowerContext.includes('solution')) && looksLikeMathValue(label)) {
+    return `A possible solution of ${label}`
+  }
+
+  if ((lowerContext.includes('probability') || lowerContext.includes('expected value')) && looksLikeMathValue(label)) {
+    return `A calculated probability or value of ${label}`
+  }
+
+  return null
+}
+
+function expandByAnswerShape(label: string, lowerContext: string): string | null {
+  if (looksLikeMathValue(label)) {
+    if (lowerContext.includes('density') || lowerContext.includes('mass') || lowerContext.includes('volume')) {
+      return `A calculated measurement of ${label}`
+    }
+    return `A calculated value of ${label}`
+  }
+
+  if (/^[A-Z][A-Za-z -]{1,24}$/.test(label)) {
+    if (lowerContext.includes('biology') || lowerContext.includes('science')) {
+      return `The ${label} concept in this scenario`
+    }
+    if (lowerContext.includes('history') || lowerContext.includes('government')) {
+      return `The ${label} answer in this context`
+    }
+    return `The ${label} option for this question`
+  }
+
+  if (answerLabelLength(label) < 24) {
+    return `${label} for this exact setup`
+  }
+
+  return null
+}
+
+function looksLikeMathValue(label: string) {
+  const compact = label.replace(/\s+/g, '')
+  const letters = (compact.match(/[A-Za-z]/g) ?? []).length
+  const mathMarks = (compact.match(/[$\\\d=+\-*/^()[\]{}<>.,:]/g) ?? []).length
+
+  if (/(?:\\dfrac|\\frac|\\sqrt|\$)/.test(label) && letters <= 18) return true
+  if (!/[A-Za-z]/.test(label) && /(?:\d|=|\$|\\)/.test(label)) return true
+  return mathMarks >= Math.max(3, letters * 2)
+}
+
 export function normalizeQuestionCatalog(questionCatalog: Record<string, Question[]>) {
   return Object.fromEntries(
     Object.entries(questionCatalog).map(([key, value]) => [
@@ -315,7 +448,7 @@ export function normalizeQuestionCatalog(questionCatalog: Record<string, Questio
           const staged = ensureQuestionCollectionMeta(question, key)
           const sanitized = repairSparseImportedQuestion(stripPlaceholderAnswers(staged))
           const reviewed = reviewQuestion(sanitized, key)
-          return isPlayableQuestion(reviewed) ? ensureSixAnswerChoices(reviewed) : reviewed
+          return isPlayableQuestion(reviewed) ? balanceAnswerLabelLengths(ensureSixAnswerChoices(reviewed)) : reviewed
         }),
       ),
     ]),
@@ -786,17 +919,17 @@ export function rewordQuestion(base: Question, mode: number): Question {
   if (mode === 0) return base
 
   if (mode === 1) {
+    const reworded = buildRewordedPrompt(base, 'plain')
     return {
       ...base,
       briefing:
-        'Same question, stripped down. First identify what is being asked, then list the givens, then choose the answer that follows from those givens.',
+        'Same question, asked more plainly. First identify the task, then use the facts in the setup to decide which answer follows.',
       setup: [
         `Question type: ${base.topic}.`,
-        `Goal: ${base.prompt}`,
+        `Original idea: ${base.title} (${base.chapter}).`,
         ...(base.setup ?? []),
       ],
-      prompt:
-        'Using only the setup above, which answer is correct? Ignore which answer feels most familiar and follow the quantities step by step.',
+      prompt: reworded,
       fieldNote: `Breakdown version: ${base.fieldNote}`,
     }
   }
@@ -860,7 +993,201 @@ export function rewordQuestion(base: Question, mode: number): Question {
     ...base,
     briefing: narrativeByTopic[base.topic],
     setup: base.setup,
-    prompt: base.prompt,
+    prompt: buildRewordedPrompt(base, 'teaching'),
     fieldNote: base.fieldNote,
   }
+}
+
+function buildRewordedPrompt(question: Question, style: 'plain' | 'teaching'): string {
+  const original = normalizePromptForRewording(question.prompt)
+  const lower = `${question.topic} ${question.chapter} ${question.title} ${question.prompt}`.toLowerCase()
+
+  if (style === 'plain') {
+    return plainRewording(question, original, lower)
+  }
+
+  return teachingRewording(question, original, lower)
+}
+
+function normalizePromptForRewording(prompt: string): string {
+  return prompt
+    .replace(/\s+/g, ' ')
+    .replace(/\s+([?.!,;:])/g, '$1')
+    .trim()
+}
+
+function plainRewording(question: Question, original: string, lower: string): string {
+  const sentencePart = original.match(/^what is the (.+?) in the following sentence\?\s*(.+)$/i)
+  if (sentencePart) {
+    return `In this sentence, which answer identifies the ${sentencePart[1]}: ${sentencePart[2]}`
+  }
+
+  const trailingQuestion = trailingQuestionSentence(original)
+  if (trailingQuestion && trailingQuestion !== original) {
+    const context = original.slice(0, -trailingQuestion.length).trim()
+    return `${context} ${rewriteQuestionStem(trailingQuestion, lower)}`
+  }
+
+  const definitionTarget = original.match(/^what is (?:the meaning of )?(.+?)\?*$/i)
+  if (definitionTarget && !/\b(in|from|for|about)\b/i.test(definitionTarget[1])) {
+    return `Which answer gives the best definition of ${definitionTarget[1]}?`
+  }
+
+  const findTarget = original.match(/^(.+?)\bfind ([^.?!]+)\.?$/i)
+  if (findTarget) {
+    return `Using the given information, which answer gives ${findTarget[2].trim()}?`
+  }
+
+  if (/^(what|which|why|how|when|where|who)\b/i.test(original)) {
+    return rewriteQuestionStem(original, lower)
+  }
+
+  if (lower.includes('calculate') || lower.includes('how many') || lower.includes('how much') || lower.includes('solve')) {
+    return `Find the requested value from this situation: ${original}`
+  }
+
+  if (question.topic === 'Primary') {
+    return `Try this in simpler words: ${original} Which answer best matches the clues?`
+  }
+
+  return `Put another way: ${original} Which choice gives the best answer to that same task?`
+}
+
+function rewriteQuestionStem(original: string, lower: string): string {
+  const withoutQuestionMark = original.replace(/\?+$/, '')
+
+  const whenWhat = original.match(/^when\b(.+),\s*what\b(.+)/i)
+  if (whenWhat) {
+    return `While${whenWhat[1]}, which answer identifies ${whatIsToNounPhrase(whenWhat[2])}`
+  }
+
+  if (/^which of the following\b/i.test(original)) {
+    return original.replace(/^which of the following\b/i, 'Pick the answer that')
+  }
+
+  if (/^which\b/i.test(original)) {
+    const whichPart = original.match(/^which part is (.+)$/i)
+    if (whichPart) {
+      return `Which answer identifies the part that is ${whichPart[1]}`
+    }
+    return original.replace(/^which\b/i, 'Pick the answer that identifies which')
+  }
+
+  if (/^what is\b/i.test(original)) {
+    return original.replace(/^what is\b/i, 'Which answer gives')
+  }
+
+  if (/^what does\b/i.test(original)) {
+    return original.replace(/^what does\b/i, 'Which answer best explains what')
+  }
+
+  if (/^what should\b/i.test(original)) {
+    return original.replace(/^what should\b/i, 'Which answer gives the best next step for what')
+  }
+
+  if (/^why\b/i.test(original)) {
+    return `Which explanation best answers this why-question: ${withoutQuestionMark}?`
+  }
+
+  if (/^how many\b/i.test(original) || /^how much\b/i.test(original)) {
+    return `Work out the quantity being asked for here: ${withoutQuestionMark}.`
+  }
+
+  if (/^how\b/i.test(original)) {
+    return `Which choice best explains the process or method in this question: ${withoutQuestionMark}?`
+  }
+
+  if (/^when\b/i.test(original)) {
+    return `Given that situation, which answer best fits: ${withoutQuestionMark}.`
+  }
+
+  if (/^where\b/i.test(original)) {
+    return `Pick the answer that identifies the correct place, location, or part in this situation: ${withoutQuestionMark}.`
+  }
+
+  if (/^who\b/i.test(original)) {
+    return `Pick the answer that identifies the person, group, or role described here: ${withoutQuestionMark}.`
+  }
+
+  if (lower.includes('best') || lower.includes('most')) {
+    return `Choose the option that most directly fits this same situation: ${original}`
+  }
+
+  return `Answer the same question in a more direct form: ${original}`
+}
+
+function whatIsToNounPhrase(fragment: string): string {
+  const match = fragment.match(/^ is (?:a|an|the) (.+)$/i)
+  return match ? `the ${match[1]}` : `what${fragment}`
+}
+
+function trailingQuestionSentence(prompt: string): string | null {
+  const match = prompt.match(/((?:What|Which|Why|How|When|Where|Who)\b[^?]*\?)$/)
+  return match?.[1] ?? null
+}
+
+function teachingRewording(question: Question, original: string, lower: string): string {
+  const sentencePart = original.match(/^what is the (.+?) in the following sentence\?\s*(.+)$/i)
+  if (sentencePart) {
+    return `Treat this as a close-reading check. In the sentence "${sentencePart[2]}", which answer names the ${sentencePart[1]}?`
+  }
+
+  const definitionTarget = original.match(/^what is (?:the meaning of )?(.+?)\?*$/i)
+  if (definitionTarget && !/\b(in|from|for|about)\b/i.test(definitionTarget[1])) {
+    return `Treat this as a definition check. Which answer states what ${definitionTarget[1]} means without adding extra conditions?`
+  }
+
+  if (lower.includes('critical thinking') || lower.includes('argument') || lower.includes('premise') || lower.includes('fallacy') || lower.includes('valid')) {
+    return `Treat this as an argument map. What is the claim, what is the support, and which answer names the reasoning role or flaw correctly: ${original}`
+  }
+
+  if (lower.includes('electrical') || lower.includes('voltage') || lower.includes('breaker') || lower.includes('wire') || lower.includes('circuit')) {
+    return `Ask it as a safety-and-function question. Which answer correctly describes what the electrical part or quantity does in this situation: ${original}`
+  }
+
+  if (question.topic === 'Mathematics' || lower.includes('math') || lower.includes('algebra') || lower.includes('calculus')) {
+    return `Imagine you are solving this without answer choices. What rule, relationship, or calculation does this situation require: ${original}`
+  }
+
+  if (question.topic === 'Probability' || question.topic === 'Expected value' || lower.includes('probability') || lower.includes('expected value')) {
+    return `Reframe the problem as a set of possible cases. From the situation described, which answer follows when the relevant cases are counted or weighted correctly: ${original}`
+  }
+
+  if (question.topic === 'Statistics' || lower.includes('study') || lower.includes('sample') || lower.includes('p-value') || lower.includes('confidence')) {
+    return `Ask it as a data-reasoning question: what quantity, comparison, or claim is the evidence actually allowed to support here: ${original}`
+  }
+
+  if (question.topic === 'ML' || question.topic === 'Software' || lower.includes('model') || lower.includes('algorithm') || lower.includes('data structure')) {
+    return `Treat this as an engineering decision. Given the constraint or failure mode in the prompt, which answer chooses the tool, metric, or action that best fits: ${original}`
+  }
+
+  if (question.topic === 'Research' || lower.includes('experiment') || lower.includes('control') || lower.includes('causal')) {
+    return `Ask it like a research-methods reviewer: what design feature, limitation, or interpretation determines the strongest answer here: ${original}`
+  }
+
+  if (question.topic === 'Medical' || lower.includes('clinical') || lower.includes('patient') || lower.includes('diagnos')) {
+    return `Turn it into a clinical judgment question: what is the key risk, finding, or decision point in this scenario, and which answer handles it best: ${original}`
+  }
+
+  if (question.topic === 'Career Skills' || lower.includes('roadmap') || lower.includes('client') || lower.includes('manager')) {
+    return `Frame it as a practical workplace call: what outcome matters, what constraint is present, and which answer is the most defensible action: ${original}`
+  }
+
+  if (question.topic === 'Primary') {
+    return `Read this like a teacher asking for the main clue. Which word, number, shape, or detail is the question asking you to notice: ${original}`
+  }
+
+  if (question.topic === 'Science' || question.topic === 'High' || lower.includes('biology') || lower.includes('chemistry') || lower.includes('physics')) {
+    return `Ask it as a science reasoning question: what quantity, system, or mechanism is being tested, and which answer matches the conditions given: ${original}`
+  }
+
+  if (lower.includes('history') || lower.includes('government') || lower.includes('ethics') || lower.includes('philosophy') || lower.includes('argument')) {
+    return `Treat this as a meaning-and-reasoning question. What claim, cause, principle, or institution is being tested, and which answer states it most accurately: ${original}`
+  }
+
+  if (question.topic === 'Fun') {
+    return `Look past the playful surface and ask for the rule underneath. Which answer follows from the clue, pattern, or system in this question: ${original}`
+  }
+
+  return `Here is the same task from a teaching angle: what concept is being tested, what clue in the prompt matters most, and which answer fits that clue: ${original}`
 }

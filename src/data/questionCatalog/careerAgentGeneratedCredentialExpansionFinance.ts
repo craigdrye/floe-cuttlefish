@@ -6,6 +6,52 @@ const SOURCE = 'Floe career agent-generated credential expansion 2026-05-20'
 type WrongTuple = [string, string]
 type QuestionFactory = (id: number, cycle: number) => Question
 
+function mentorHintForFinance(topic: Topic, chapter: string): string | undefined {
+  if (topic === 'Series 86') {
+    switch (chapter) {
+      case 'Forecasting and Earnings Drivers':
+        return 'Start with the operating driver the analyst can actually model: units, price, mix, margin, or utilization. Series 86 forecasting questions usually reward a clean driver bridge before any valuation conclusion.'
+      case 'Ratios, Margins, and Quality of Earnings':
+        return 'Name the numerator and denominator of the ratio before calculating. Then ask whether the number reflects durable economics or a quality-of-earnings warning such as working capital, one-time items, or cost pressure.'
+      case 'Valuation Multiples and Enterprise Value':
+        return 'Match the multiple to the claim being tested: equity value pairs with equity metrics, enterprise value pairs with operating metrics. Check whether the question wants a current value, a forward estimate, or an implied range.'
+      case 'Accounting, Cash Flow, and Balance Sheet Signals':
+        return 'Separate accounting earnings from cash conversion. Balance-sheet changes such as receivables, payables, debt, goodwill, and capex often explain why reported profit and economic value diverge.'
+      default:
+        return 'Think like an equity research analyst: identify the operating driver, accounting signal, or valuation input before touching the choices. The strongest answer should connect the metric to a forecast or investment conclusion.'
+    }
+  }
+
+  if (topic === 'Career Skills') {
+    switch (chapter) {
+      case 'Analyst Ethics, Conflicts, and Disclosures':
+        return 'Ask what conflict, compensation link, trading interest, or MNPI issue a reasonable reader would need to know before relying on the research. Series 87 usually rewards independence, disclosure, and escalation over quiet accommodation.'
+      case 'Research Report Discipline':
+        return 'Separate the research opinion from the support behind it. A defensible report ties rating, price target, assumptions, risks, and evidence together clearly enough for a reader to test the conclusion.'
+      case 'Supervision, Communications, and Exam Execution':
+        return 'Treat research as a controlled communication: timing, audience, review, dissemination, and correction process matter as much as the words themselves. The safest answer preserves fair access and supervisory evidence.'
+      case 'Ethical and Professional Standards':
+        return 'For CFA ethics, identify the duty first: loyalty, independence, fair dealing, diligence, confidentiality, or disclosure. The right answer usually protects clients and market integrity through a documented, standard-compliant process.'
+      case 'Quantitative Methods and Economics':
+        return 'Translate the prompt into the statistic, rate, or economic relationship being tested before calculating. Keep units, time periods, and base rates aligned so a plausible shortcut does not distort the result.'
+      case 'Financial Reporting and Analysis':
+        return 'Follow the accounting flow from recognition to ratios to interpretation. CFA reporting questions often turn on whether an item affects income, cash flow, equity, or only a disclosure.'
+      case 'Corporate Issuers and Equity Valuation':
+        return 'Link the finance tool to the business decision: capital budgeting, cost of capital, governance, dividends, or valuation. Check whether the answer changes cash flows, risk, growth, or required return.'
+      case 'Fixed Income and Derivatives':
+        return 'For fixed income and derivatives, identify the payoff or cash-flow pattern before using formulas. Duration, convexity, option moneyness, and hedge direction all come from how value changes when the underlying input moves.'
+      case 'Portfolio Management and Risk':
+        return 'Separate objectives from constraints, then match the risk measure to the decision. Portfolio questions reward disciplined framing: return target, risk tolerance, liquidity, horizon, taxes, legal limits, and unique circumstances.'
+      case 'Integrated Practice and Exam Strategy':
+        return 'Read the qualifier first: most likely, least appropriate, best, or except. Many exam traps are not concept gaps; they are task-direction errors.'
+      default:
+        return undefined
+    }
+  }
+
+  return undefined
+}
+
 function q(
   id: number,
   topic: Topic,
@@ -26,6 +72,8 @@ function q(
     wrong.map(([label, why]) => [label, why, lesson] as [string, string, string]),
     lesson,
     SOURCE,
+    undefined,
+    mentorHintForFinance(topic, chapter),
   )
 }
 

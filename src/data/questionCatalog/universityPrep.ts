@@ -5,8 +5,54 @@ import { introCsWorkoutGeneratedQuestions } from './introCsWorkoutGenerated'
 import { softwareDesignWorkoutGeneratedQuestions } from './softwareDesignWorkoutGenerated'
 import { algorithmsStarterQuestions, sqlFoundationsStarterQuestions } from './courseExpansionStarterQuestions'
 
+const PREP_TRACK_MENTOR_OPENERS: Record<string, string> = {
+  introCS: 'Reduce the programming question to the value, control flow, or data-structure behavior being tested before reading the options.',
+  algorithms: 'Identify the invariant, input size, and operation cost first; algorithm questions usually turn on one of those three constraints.',
+  sqlFoundations: 'Read the SQL clause by clause and ask what rows exist at each stage before deciding what the query returns.',
+  ml: 'Think like a model owner: identify the objective, data distribution, evaluation metric, and failure mode before choosing.',
+  software: 'Frame this as an engineering tradeoff under constraints, then choose the option that preserves correctness and observability.',
+  softwareDesign: 'Ask what responsibility, dependency, or extension point is being controlled by the design choice.',
+  softwareFoundations: 'Trace the code or concept with a small concrete example, then generalize from that behavior.',
+  research: 'Separate the claim from the evidence and ask what comparison, design feature, or limitation controls the inference.',
+  uxResearch: 'Focus on the kind of evidence the study can produce: observed behavior, stated attitude, task success, prioritization, or synthesis.',
+}
+
+function prepPromptMove(prompt: string): string {
+  const lower = prompt.toLowerCase()
+  if (/\bnot\b|\bexcept\b|\bleast\b/.test(lower)) {
+    return 'Watch the limiting word carefully; most tempting options will answer the ordinary version of the question instead.'
+  }
+  if (/\bwhen\b|\bif\b/.test(lower)) {
+    return 'Pin down the condition in the prompt first, then ask which rule or workflow activates under that condition.'
+  }
+  if (/\bwhy\b|\bbecause\b|\bprimary\b|\bmain\b|\badvantage\b|\bdifference\b/.test(lower)) {
+    return 'Since the prompt asks for a reason or contrast, compare the mechanism behind each option rather than matching vocabulary.'
+  }
+  if (/\bcomplexity\b|\bo\(|sample size|power|auc|precision|recall|f1|mde/.test(lower)) {
+    return 'Write the quantity being evaluated in plain language, then decide which choice changes that quantity in the right direction.'
+  }
+  return 'Use the exact wording to decide whether the question wants a definition, a design move, a metric, or a failure mode.'
+}
+
+function buildPrepMentorHint(trackId: string, question: Question): string {
+  const opener = PREP_TRACK_MENTOR_OPENERS[trackId] ?? 'Treat this as a university-prep reasoning question and identify the governing concept first.'
+  const promptMove = prepPromptMove(question.prompt)
+  return `${opener} In "${question.chapter}", use "${question.title}" as the topic boundary so you stay on the intended skill. ${promptMove}`
+}
+
+function enrichUniversityPrepMentorHints(catalog: Record<string, Question[]>): Record<string, Question[]> {
+  const enriched: Record<string, Question[]> = {}
+  for (const [trackId, questions] of Object.entries(catalog)) {
+    enriched[trackId] = questions.map((question) => ({
+      ...question,
+      mentorHint: buildPrepMentorHint(trackId, question),
+    }))
+  }
+  return enriched
+}
+
 export function buildUniversityPrepQuestionCatalog(): Record<string, Question[]> {
-  return {
+  const catalog: Record<string, Question[]> = {
   ml: [
     makeSimpleQuestion(2005, 'ML', "Module 1: SQL", "Window Functions", "What does the SQL window function `ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY date DESC)` achieve?", "It assigns a unique sequential integer starting from 1 to each user's most recent activity.", [["It sums the total number of activities for each user.", "That would be `COUNT() OVER (PARTITION BY user_id)`.", "Think about 'row number' and 'order by descending date'."], ["It returns the exact date of the user's last login.", "It returns an integer, not a date.", "It ranks the rows."], ["It creates a running total of the user's spending.", "That would be `SUM() OVER (...)`.", "It's about numbering rows within a group."]]),
     makeSimpleQuestion(2006, 'ML', "Module 2: Statistics", "Expected Value", "What is the expected number of fair coin flips needed to get two heads in a row?", "6", [["4", "While expected flips for one head is 2, two in a row requires restarting on tails.", "Let x be the expected value. x = 0.5*(1+x) + 0.25*(2+x) + 0.25*(2). Solve for x."], ["2", "That's the expected number of flips for a single head.", "You have a 50% chance of failing on the first flip and starting over."], ["8", "This is the expected number of flips to get three heads in a row.", "It's exactly 6."]]),
@@ -74,4 +120,6 @@ export function buildUniversityPrepQuestionCatalog(): Record<string, Question[]>
     makeSimpleQuestion(11014, 'UX Research', "Stretch Zone", "MaxDiff", "MaxDiff (Maximum Difference) scaling is an advanced quantitative survey technique used primarily to:", "Force users to make trade-offs to determine the absolute relative importance of different features.", [["Ask users if they 'like' a feature on a scale of 1 to 5.", "That is a simple Likert scale, prone to users rating everything '5'.", "It presents lists and asks for 'Most Important' and 'Least Important'."], ["Measure the exact millisecond a user clicks a button.", "That is unmoderated click-tracking.", "It prevents the 'everything is important' problem."], ["Recruit participants for qualitative studies.", "It is an analysis method, not a recruiting tool.", "It provides a strict ranking of preferences."]]),
   ],
   }
+
+  return enrichUniversityPrepMentorHints(catalog)
 }

@@ -32,6 +32,7 @@ type ChapterStats = {
   solved: number          // # correctly answered (in progress.solved)
   attempted: number       // # questions seen at least once (in progress.reviews)
   accuracy: number        // solved / max(attempted, 1)
+  starScorePct: number
   stars: 0 | 1 | 2 | 3
   isCapstone: boolean
   unlocked: boolean
@@ -43,10 +44,17 @@ function detectCapstone(name: string) {
   return /capstone/i.test(name)
 }
 
-function computeStars(accuracy: number, solved: number): 0 | 1 | 2 | 3 {
-  if (solved === 0) return 0
-  if (accuracy >= 0.9) return 3
-  if (accuracy >= 0.75) return 2
+function computeStarScore(correct: number, answered: number, total: number): number {
+  if (total <= 0) return 0
+  const correctPct = correct / total
+  const answeredPct = answered / total
+  return Math.min(100, Math.round(((correctPct + answeredPct) / 2) * 100))
+}
+
+function computeStars(starScorePct: number): 0 | 1 | 2 | 3 {
+  if (starScorePct <= 0) return 0
+  if (starScorePct >= 67) return 3
+  if (starScorePct >= 34) return 2
   return 1
 }
 
@@ -131,6 +139,7 @@ export function MapScreen() {
       }
       const denom = Math.max(attempted, solved)
       const accuracy = denom > 0 ? solved / denom : 0
+      const starScorePct = computeStarScore(solved, attempted, totalQuestions)
       return {
         name,
         index,
@@ -139,7 +148,8 @@ export function MapScreen() {
         solved,
         attempted,
         accuracy,
-        stars: computeStars(accuracy, solved),
+        starScorePct,
+        stars: computeStars(starScorePct),
         isCapstone: detectCapstone(name),
       }
     })
@@ -183,9 +193,9 @@ export function MapScreen() {
   }, [courseQuestions, progress.solved, progress.reviews, selectedChapter])
 
   const activeChapter = chapterStats.find((c) => c.isActive) ?? null
-  const totalSolved = chapterStats.reduce((sum, c) => sum + c.solved, 0)
-  const totalTarget = chapterStats.reduce((sum, c) => sum + c.target, 0)
-  const overallPct = totalTarget > 0 ? Math.round((totalSolved / totalTarget) * 100) : 0
+  const totalAnswered = chapterStats.reduce((sum, c) => sum + c.attempted, 0)
+  const totalQuestions = chapterStats.reduce((sum, c) => sum + c.totalQuestions, 0)
+  const overallPct = totalQuestions > 0 ? Math.round((totalAnswered / totalQuestions) * 100) : 0
 
   const goBack = () => {
     setSelectedTrack(null)
@@ -255,7 +265,7 @@ export function MapScreen() {
         <div className="chapter-path-header-copy">
           <p className="eyebrow">Season 1 &middot; {selectedTrackInfo.title}</p>
           <h2>{selectedTrackInfo.id === 'quant' ? 'Survive the interview reef' : 'Chapter path'}</h2>
-          <p>{totalSolved}/{totalTarget} answered &middot; {overallPct}% mastery</p>
+          <p>{totalAnswered}/{totalQuestions} answered &middot; {overallPct}% answered</p>
         </div>
         <div className="chapter-path-header-ring">
           <div className="ring" style={{ '--score': `${overallPct}%` } as React.CSSProperties}>
@@ -326,9 +336,9 @@ export function MapScreen() {
         <ol className="chapter-path-list">
           {chapterStats.map((chapter, i) => {
             const side = i % 2 === 0 ? 'left' : 'right'
-            const targetLabel = `${chapter.solved}/${chapter.target}`
-            const ringPct = chapter.target > 0
-              ? Math.min(100, Math.round((chapter.solved / chapter.target) * 100))
+            const targetLabel = `${chapter.attempted}/${chapter.totalQuestions}`
+            const ringPct = chapter.totalQuestions > 0
+              ? Math.min(100, Math.round((chapter.attempted / chapter.totalQuestions) * 100))
               : 0
             const classes = [
               'chapter-node-row',
@@ -361,7 +371,7 @@ export function MapScreen() {
                   disabled={!chapter.unlocked}
                   onClick={() => chapter.unlocked && enterChapter(chapter.name)}
                   type="button"
-                  aria-label={`Chapter ${i + 1}: ${chapter.name} — ${chapter.unlocked ? targetLabel : 'locked'}`}
+                  aria-label={`Chapter ${i + 1}: ${chapter.name} — ${chapter.unlocked ? `${targetLabel} answered` : 'locked'}`}
                 >
                   <div
                     className="chapter-node-ring"
@@ -385,7 +395,7 @@ export function MapScreen() {
                       {chapter.isCapstone ? 'Capstone' : `Chapter ${i + 1}`}
                     </span>
                     <strong>{chapter.name.replace(/^Capstone:\s*/i, '')}</strong>
-                    <div className="chapter-node-stars" aria-label={`${chapter.stars} of 3 stars`}>
+                    <div className="chapter-node-stars" aria-label={`${chapter.stars} of 3 stars, ${chapter.starScorePct}% combined progress`}>
                       {[0, 1, 2].map((s) => (
                         <Star
                           key={s}
@@ -409,7 +419,7 @@ export function MapScreen() {
           <div className="chapter-path-cta-copy">
             <p className="eyebrow">{activeChapter.isCapstone ? 'Capstone unlocked' : 'Up next'}</p>
             <strong>{activeChapter.name.replace(/^Capstone:\s*/i, '')}</strong>
-            <span>{activeChapter.solved}/{activeChapter.target} solved &middot; {Math.round(activeChapter.accuracy * 100)}% accuracy</span>
+            <span>{activeChapter.attempted}/{activeChapter.totalQuestions} answered &middot; {Math.round(activeChapter.accuracy * 100)}% accuracy</span>
           </div>
           <button className="lets-go" onClick={continueActive} type="button">
             <Sparkles size={17} /> Continue <ChevronRight size={15} />

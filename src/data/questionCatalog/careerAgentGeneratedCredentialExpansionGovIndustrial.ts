@@ -30,6 +30,25 @@ type TrackConfig = {
 
 const select = <T,>(items: T[], index: number): T => items[index % items.length]
 
+function mentorHintForTrack(label: string): string {
+  switch (label) {
+    case 'NERC System Operator':
+      return 'Name the reliability quantity being protected: balance, voltage, operating limit, restoration path, or communication loop. NERC-style answers usually preserve real-time reliability through coordinated, documented operating action.'
+    case 'API Inspector':
+      return 'Identify the governing equipment boundary, damage mechanism, and inspection basis before choosing a response. API questions reward documented fitness-for-service thinking over visual-only checks or improvised repairs.'
+    case 'CDFM':
+      return 'Use the defense financial-management triad: purpose, time, amount, and the internal controls that prove execution. The right move should preserve legal availability and auditable support, not just make the spreadsheet balance.'
+    case 'Certified General Appraiser':
+      return 'Anchor the analysis in USPAP-style problem identification: client, intended use, property rights, scope, competency, and supportable market evidence. A credible appraisal answer resists advocacy pressure and preserves the workfile.'
+    case 'Procurement Contracting':
+      return 'Start with the requirement and market facts, then apply the FAR path for competition, contract type, source selection, and documentation. Convenience is not a substitute for a supportable acquisition record.'
+    case 'Defense Budgeting':
+      return 'Separate budget request, budget authority, apportionment, allotment, obligation, outlay, and period of availability. Defense budgeting questions usually turn on which legal control point allows or blocks the action.'
+    default:
+      return 'Identify the controlling standard or authority, then choose the response that leaves the strongest operational and documentation trail.'
+  }
+}
+
 function buildTrackQuestions(config: TrackConfig): Question[] {
   return Array.from({ length: config.count }, (_, index) => {
     const concept = select(config.concepts, index)
@@ -46,6 +65,8 @@ function buildTrackQuestions(config: TrackConfig): Question[] {
       concept.wrong,
       undefined,
       GOV_INDUSTRIAL_CREDENTIAL_EXPANSION_SOURCE,
+      undefined,
+      mentorHintForTrack(config.label),
     )
   })
 }

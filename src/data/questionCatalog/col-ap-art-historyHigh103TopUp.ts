@@ -11,6 +11,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 1: Global Prehistory',
     title: 'Lascaux cave painting technique',
     prompt: 'The Paleolithic paintings in the Hall of the Bulls at Lascaux (France, c. 15,000 BCE) were primarily created using which materials and method?',
+    mentorHint: 'Think about what materials were available to hunter-gatherers.',
     correct: 'Mineral pigments such as ochre and charcoal applied to the rock wall, sometimes blown or daubed on',
     wrong: [
       miss('Glazed ceramic tiles fired in a kiln and mortared to the wall', 'Ceramic glazing and kilns did not exist in the Paleolithic; the images are painted directly on stone.', 'Think about what materials were available to hunter-gatherers.'),
@@ -26,6 +27,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 1: Global Prehistory',
     title: 'Stonehenge function',
     prompt: 'Scholars most commonly interpret the alignment of the megaliths at Stonehenge (Wiltshire, UK, c. 2500 BCE) as evidence that the site functioned partly as which of the following?',
+    mentorHint: 'Look at the celestial alignment of the stones.',
     correct: 'A monument aligned with solar events such as the summer solstice sunrise',
     wrong: [
       miss('A fortified military garrison guarding a trade route', 'Stonehenge has no defensive walls or barracks; its open ring is unsuited to defense.', 'Look at the celestial alignment of the stones.'),
@@ -41,6 +43,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 1: Global Prehistory',
     title: 'Apollo 11 stones',
     prompt: 'The Apollo 11 stones from Namibia are significant in the AP Art History image set primarily because they are among the oldest known examples of what?',
+    mentorHint: 'Recall the medium is drawing on stone, not metal.',
     correct: 'Figurative art on a portable object in Africa',
     wrong: [
       miss('Cast-bronze sculpture in southern Africa', 'The stones are charcoal drawings on rock slabs, not bronze casting.', 'Recall the medium is drawing on stone, not metal.'),
@@ -57,6 +60,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 2: Ancient Mediterranean',
     title: 'Standard of Ur register convention',
     prompt: 'On the Standard of Ur (Sumerian, c. 2600-2400 BCE), the relative size of figures is determined chiefly by which principle?',
+    mentorHint: 'Think about who is largest and why, not depth.',
     correct: 'Hierarchy of scale, in which the most important figure (the king) is shown larger',
     wrong: [
       miss('Linear perspective, with closer figures drawn larger', 'Linear perspective is a Renaissance development; Sumerian art uses flat registers, not perspectival space.', 'Think about who is largest and why, not depth.'),
@@ -72,6 +76,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 2: Ancient Mediterranean',
     title: 'Egyptian canon of proportions',
     prompt: 'Egyptian wall paintings and reliefs, such as those of King Menkaure, typically depict the human figure using which combination of viewpoints?',
+    mentorHint: 'Notice that the head and legs are in profile while the torso faces front.',
     correct: 'A composite view: head in profile, eye and torso frontal, legs and feet in profile',
     wrong: [
       miss('A fully frontal view of the entire body', 'Egyptian figures combine profile and frontal views rather than showing one consistent angle.', 'Notice that the head and legs are in profile while the torso faces front.'),
@@ -87,6 +92,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 2: Ancient Mediterranean',
     title: 'Contrapposto and the Doryphoros',
     prompt: 'Polykleitos\'s Doryphoros (Spear Bearer) is famous for embodying contrapposto. What does contrapposto refer to?',
+    mentorHint: 'Recall the relaxed, weight-bearing leg of the Doryphoros.',
     correct: 'A naturalistic stance in which the weight rests on one leg, causing the hips and shoulders to shift in opposition',
     wrong: [
       miss('A rigid, symmetrical pose with weight evenly on both feet', 'That describes the earlier Archaic kouros; contrapposto introduces an asymmetrical weight shift.', 'Recall the relaxed, weight-bearing leg of the Doryphoros.'),
@@ -102,6 +108,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 2: Ancient Mediterranean',
     title: 'Pantheon engineering',
     prompt: 'The Pantheon in Rome (118-125 CE) is celebrated as an engineering achievement chiefly because of its',
+    mentorHint: 'Recall how light actually enters the rotunda.',
     correct: 'Massive unreinforced concrete dome with a central oculus',
     wrong: [
       miss('Soaring stained-glass clerestory windows', 'Stained-glass clerestories are a Gothic feature; the Pantheon is lit by a single oculus.', 'Recall how light actually enters the rotunda.'),
@@ -117,6 +124,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 2: Ancient Mediterranean',
     title: 'Hellenistic style: Winged Victory',
     prompt: 'The Winged Victory of Samothrace (Nike) exemplifies the Hellenistic style through its',
+    mentorHint: 'Recall the dynamic, windswept quality of the figure.',
     correct: 'Dramatic movement and theatrical interaction of drapery with implied wind and water',
     wrong: [
       miss('Rigid frontality and stylized Archaic smile', 'The Archaic smile and frontality belong to much earlier Greek sculpture, not Hellenistic.', 'Recall the dynamic, windswept quality of the figure.'),
@@ -133,6 +141,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 3: Early Europe and Colonial Americas',
     title: 'Hagia Sophia structure',
     prompt: 'A defining structural innovation of Hagia Sophia (Constantinople, 532-537 CE) is its use of which device to transition from a square base to a circular dome?',
+    mentorHint: 'Think about the curved triangular surfaces inside, under the dome.',
     correct: 'Pendentives',
     wrong: [
       miss('Flying buttresses', 'Flying buttresses are exterior supports characteristic of Gothic cathedrals, not Byzantine domes.', 'Think about the curved triangular surfaces inside, under the dome.'),
@@ -148,6 +157,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 3: Early Europe and Colonial Americas',
     title: 'Gothic light and structure',
     prompt: 'The walls of High Gothic cathedrals such as Chartres could be opened up for large stained-glass windows mainly because the weight of the vaults was channeled by which combination of features?',
+    mentorHint: 'Recall what allowed Gothic walls to thin out.',
     correct: 'Pointed arches, ribbed vaults, and flying buttresses',
     wrong: [
       miss('Rounded barrel vaults and thick continuous walls', 'Barrel vaults push outward along their whole length, requiring heavy walls with few windows, the opposite of Gothic openness.', 'Recall what allowed Gothic walls to thin out.'),
@@ -163,6 +173,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 3: Early Europe and Colonial Americas',
     title: 'Linear perspective in the Renaissance',
     prompt: 'In a work such as Masaccio\'s Holy Trinity, the illusion that the painted chapel recedes convincingly into the wall is achieved through',
+    mentorHint: 'Recall the geometric system of converging lines.',
     correct: 'One-point linear perspective with orthogonals converging on a single vanishing point',
     wrong: [
       miss('Atmospheric perspective alone, using only color and haze', 'Atmospheric perspective softens distant forms but cannot by itself construct the precise architectural recession seen here.', 'Recall the geometric system of converging lines.'),
@@ -178,6 +189,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 3: Early Europe and Colonial Americas',
     title: 'Sfumato and Leonardo',
     prompt: 'Leonardo da Vinci\'s soft, smoky transitions between light and shadow, as seen in the Mona Lisa, are called',
+    mentorHint: 'Recall the term meaning smoke-like softening.',
     correct: 'Sfumato',
     wrong: [
       miss('Chiaroscuro', 'Chiaroscuro refers to strong light-dark contrast generally; sfumato names the specific hazy, edge-less blending Leonardo perfected.', 'Recall the term meaning smoke-like softening.'),
@@ -193,6 +205,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 3: Early Europe and Colonial Americas',
     title: 'Northern Renaissance: Arnolfini Portrait',
     prompt: 'Jan van Eyck\'s Arnolfini Portrait is celebrated for the meticulous rendering of textures and reflections, made possible by his pioneering mastery of which medium?',
+    mentorHint: 'Recall the medium that allows slow, layered glazing.',
     correct: 'Oil paint',
     wrong: [
       miss('Fresco', 'Fresco involves painting into wet plaster on walls and cannot achieve the jewel-like detail of this small panel.', 'Recall the medium that allows slow, layered glazing.'),
@@ -208,6 +221,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 3: Early Europe and Colonial Americas',
     title: 'Baroque tenebrism',
     prompt: 'Caravaggio\'s Calling of Saint Matthew uses a strong diagonal shaft of light against deep shadow to direct the viewer\'s attention. This dramatic dark-dominated lighting is known as',
+    mentorHint: 'Recall the term tied to extreme darkness in Baroque painting.',
     correct: 'Tenebrism',
     wrong: [
       miss('Sfumato', 'Sfumato is gentle, smoky blending; tenebrism is sharp, theatrical contrast of light and dark.', 'Recall the term tied to extreme darkness in Baroque painting.'),
@@ -224,6 +238,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 4: Later Europe and Americas',
     title: 'Neoclassicism: Oath of the Horatii',
     prompt: 'Jacques-Louis David\'s Oath of the Horatii (1784) is a key Neoclassical work because it',
+    mentorHint: 'Recall the serious, antique-inspired message of the work.',
     correct: 'Revives Greco-Roman subject matter, clarity, and severity to promote civic virtue and sacrifice',
     wrong: [
       miss('Celebrates frivolous aristocratic leisure with pastel colors and curving forms', 'That describes Rococo; David rejected its lightness in favor of stern classical morality.', 'Recall the serious, antique-inspired message of the work.'),
@@ -239,6 +254,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 4: Later Europe and Americas',
     title: 'Romanticism: Goya',
     prompt: 'Francisco Goya\'s Third of May, 1808 departs from Neoclassical ideals chiefly by',
+    mentorHint: 'Recall where the painting\'s sympathy clearly lies.',
     correct: 'Emphasizing raw emotion, violence, and sympathy for victims rather than idealized heroism',
     wrong: [
       miss('Glorifying the executioners as noble classical heroes', 'Goya condemns the killing; he does not ennoble the firing squad.', 'Recall where the painting\'s sympathy clearly lies.'),
@@ -254,6 +270,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 4: Later Europe and Americas',
     title: 'Realism: Courbet',
     prompt: 'Gustave Courbet\'s Stone Breakers exemplifies nineteenth-century Realism because it',
+    mentorHint: 'Recall who the figures actually are.',
     correct: 'Depicts ordinary laborers at a monumental scale, without idealization or moralizing narrative',
     wrong: [
       miss('Portrays gods and heroes from classical mythology', 'Realism rejected mythological subjects in favor of contemporary everyday life.', 'Recall who the figures actually are.'),
@@ -269,6 +286,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 4: Later Europe and Americas',
     title: 'Impressionism aims',
     prompt: 'Impressionist painters such as Monet are best characterized by their interest in',
+    mentorHint: 'Recall the sketchy, light-filled quality of the style.',
     correct: 'Capturing transient effects of light and atmosphere with broken, visible brushstrokes',
     wrong: [
       miss('Producing highly finished surfaces with invisible brushwork and precise detail', 'Impressionists deliberately left brushstrokes visible and surfaces loose, the opposite of academic finish.', 'Recall the sketchy, light-filled quality of the style.'),
@@ -284,6 +302,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 4: Later Europe and Americas',
     title: 'Post-Impressionism: Van Gogh',
     prompt: 'Post-Impressionist works such as Van Gogh\'s Starry Night differ from Impressionism mainly in that they',
+    mentorHint: 'Recall that the change is in how paint is used, not in giving up paint.',
     correct: 'Use expressive color and dynamic brushwork to convey emotion and structure rather than mere optical sensation',
     wrong: [
       miss('Abandon paint entirely in favor of photography', 'Post-Impressionists were painters; they did not replace painting with photography.', 'Recall that the change is in how paint is used, not in giving up paint.'),
@@ -299,6 +318,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 4: Later Europe and Americas',
     title: 'Cubism',
     prompt: 'Analytic Cubism, pioneered by Picasso and Braque, is best described as a style that',
+    mentorHint: 'Recall the simultaneous, multi-angle vision of Cubism.',
     correct: 'Fractures objects into geometric facets and shows multiple viewpoints simultaneously on a flattened surface',
     wrong: [
       miss('Renders a single fixed viewpoint with deep illusionistic perspective', 'Cubism rejected the single vanishing-point view, presenting several angles at once.', 'Recall the simultaneous, multi-angle vision of Cubism.'),
@@ -314,6 +334,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 4: Later Europe and Americas',
     title: 'German Expressionism: Die Brucke',
     prompt: 'The Expressionist group Die Brucke, including Kirchner, sought above all to',
+    mentorHint: 'Recall their emotional, distorting aims.',
     correct: 'Convey intense subjective emotion through jarring color, distortion, and angular forms',
     wrong: [
       miss('Reproduce nature with scientific accuracy and neutral observation', 'Expressionists distorted appearances precisely to escape neutral, objective depiction.', 'Recall their emotional, distorting aims.'),
@@ -329,6 +350,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 4: Later Europe and Americas',
     title: 'Dada and the readymade',
     prompt: 'Marcel Duchamp\'s Fountain, a signed urinal submitted as sculpture, challenged the art world primarily by',
+    mentorHint: 'Recall the idea of the readymade and artistic choice.',
     correct: 'Proposing that an ordinary manufactured object becomes art through the artist\'s choice and context',
     wrong: [
       miss('Demonstrating superior craftsmanship and technical skill', 'The point was precisely that no traditional craft was involved; it is a mass-produced object.', 'Recall the idea of the readymade and artistic choice.'),
@@ -345,6 +367,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 5: Indigenous Americas',
     title: 'Maya stelae',
     prompt: 'Carved Maya stelae, such as those at sites like Yaxchilan, primarily served to',
+    mentorHint: 'Recall that they record history and rulers, not hold up buildings.',
     correct: 'Commemorate rulers and record dynastic and calendrical events through image and glyphic text',
     wrong: [
       miss('Function as load-bearing columns supporting temple roofs', 'Stelae are freestanding commemorative monuments, not structural supports.', 'Recall that they record history and rulers, not hold up buildings.'),
@@ -360,6 +383,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 5: Indigenous Americas',
     title: 'Templo Mayor and Aztec cosmology',
     prompt: 'The Templo Mayor in Tenochtitlan featured twin shrines at its summit dedicated to which two deities, reflecting Aztec priorities?',
+    mentorHint: 'Recall the pairing of war/sun with rain/agriculture.',
     correct: 'Huitzilopochtli, god of war and the sun, and Tlaloc, god of rain and agriculture',
     wrong: [
       miss('Quetzalcoatl and Coyolxauhqui as the supreme creator pair', 'Coyolxauhqui is associated with the temple\'s base relief, not a summit shrine; the twin temples honored Huitzilopochtli and Tlaloc.', 'Recall the pairing of war/sun with rain/agriculture.'),
@@ -375,6 +399,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 5: Indigenous Americas',
     title: 'Great Serpent Mound',
     prompt: 'The Great Serpent Mound in Ohio is best classified as which kind of work?',
+    mentorHint: 'Recall that it is a sculpted mound of soil.',
     correct: 'An effigy mound, an earthwork shaped like an animal',
     wrong: [
       miss('A stone pyramid with interior burial chambers', 'The Serpent Mound is built of earth, not cut stone, and is not a pyramid.', 'Recall that it is a sculpted mound of soil.'),
@@ -391,6 +416,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 6: Africa',
     title: 'Great Mosque of Djenne material',
     prompt: 'The Great Mosque of Djenne (Mali) is the world\'s largest building made principally of',
+    mentorHint: 'Recall its earthen, replastered surface.',
     correct: 'Sun-dried mud brick (adobe) coated with mud plaster',
     wrong: [
       miss('Cut and polished marble blocks', 'Marble is not the material of Djenne; the mosque is built of earthen adobe.', 'Recall its earthen, replastered surface.'),
@@ -406,6 +432,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 6: Africa',
     title: 'Benin plaques',
     prompt: 'The cast plaques and heads from the Kingdom of Benin (Nigeria) were produced using which technique?',
+    mentorHint: 'Recall the metal-casting technique for the plaques.',
     correct: 'Lost-wax casting of bronze or brass',
     wrong: [
       miss('Carving directly from blocks of ivory', 'While Benin produced ivory works, the famous plaques and commemorative heads are metal castings.', 'Recall the metal-casting technique for the plaques.'),
@@ -421,6 +448,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 6: Africa',
     title: 'Power figures: nkisi nkondi',
     prompt: 'A Kongo nkisi nkondi (power figure) is typically studded with driven nails and blades because',
+    mentorHint: 'Recall the ritual purpose of each driven blade.',
     correct: 'Each insertion activated the figure to seal an oath, agreement, or to address a wrong',
     wrong: [
       miss('The nails were purely decorative surface ornament', 'The nails are functional ritual activators, not mere decoration.', 'Recall the ritual purpose of each driven blade.'),
@@ -437,6 +465,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 7: West and Central Asia',
     title: 'Aniconism and Islamic art',
     prompt: 'Islamic religious art and architecture frequently avoid figural imagery of God and prophets, favoring instead',
+    mentorHint: 'Recall the preference for non-figural ornament.',
     correct: 'Geometric patterns, vegetal arabesques, and calligraphy',
     wrong: [
       miss('Large narrative scenes of God enthroned in heaven', 'Depicting God in figural form is precisely what religious Islamic art avoids.', 'Recall the preference for non-figural ornament.'),
@@ -452,6 +481,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 7: West and Central Asia',
     title: 'Dome of the Rock',
     prompt: 'The Dome of the Rock in Jerusalem is significant in Islamic art history partly because it is',
+    mentorHint: 'Recall its early Umayyad origin.',
     correct: 'One of the earliest surviving monumental Islamic buildings, richly decorated with mosaics and inscriptions',
     wrong: [
       miss('A purely modern twentieth-century reconstruction', 'Its core dates to the late seventh century CE, making it one of the oldest Islamic monuments.', 'Recall its early Umayyad origin.'),
@@ -467,6 +497,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 7: West and Central Asia',
     title: 'Mosque architecture vocabulary',
     prompt: 'In a mosque, the niche in the wall that indicates the qibla, the direction of Mecca for prayer, is called the',
+    mentorHint: 'Recall the niche that orients prayer toward Mecca.',
     correct: 'Mihrab',
     wrong: [
       miss('Minbar', 'The minbar is the pulpit from which sermons are delivered, not the directional niche.', 'Recall the niche that orients prayer toward Mecca.'),
@@ -483,6 +514,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 8: South, East, and Southeast Asia',
     title: 'Borobudur',
     prompt: 'The monument of Borobudur in Java is best understood as a Buddhist',
+    mentorHint: 'Recall its function as a stupa and pilgrimage site.',
     correct: 'Stupa and cosmic mandala that pilgrims ascend in circumambulation toward enlightenment',
     wrong: [
       miss('Hindu palace serving as a royal residence', 'Borobudur is a Buddhist religious monument, not a Hindu palace.', 'Recall its function as a stupa and pilgrimage site.'),
@@ -498,6 +530,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 8: South, East, and Southeast Asia',
     title: 'Angkor and Hindu-Buddhist symbolism',
     prompt: 'The central towers of Angkor Wat (Cambodia) were designed to symbolize',
+    mentorHint: 'Recall the Hindu cosmic mountain it represents.',
     correct: 'Mount Meru, the cosmic mountain home of the gods in Hindu cosmology',
     wrong: [
       miss('The minarets of a mosque calling worshippers to prayer', 'Angkor Wat is a Hindu (later Buddhist) temple, not a mosque; its towers are not minarets.', 'Recall the Hindu cosmic mountain it represents.'),
@@ -513,6 +546,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 8: South, East, and Southeast Asia',
     title: 'Chinese landscape painting',
     prompt: 'Monumental Chinese landscape paintings such as those of the Northern Song dynasty typically use which approach to space?',
+    mentorHint: 'Recall the moving, multi-level vantage of these scrolls.',
     correct: 'Shifting, multiple vantage points and atmospheric recession rather than a single fixed perspective',
     wrong: [
       miss('Strict one-point linear perspective converging on a vanishing point', 'Single-point perspective is a Western Renaissance system; Chinese landscape uses shifting viewpoints.', 'Recall the moving, multi-level vantage of these scrolls.'),
@@ -528,6 +562,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 8: South, East, and Southeast Asia',
     title: 'Ukiyo-e woodblock prints',
     prompt: 'Japanese ukiyo-e prints, such as Hokusai\'s Under the Wave off Kanagawa, were produced by',
+    mentorHint: 'Recall the woodblock printing process and its editions.',
     correct: 'Carving designs into woodblocks and printing them in multiple colors, a collaborative process',
     wrong: [
       miss('Painting each image individually in oil on canvas', 'Ukiyo-e are multiplied woodblock prints, not unique oil paintings.', 'Recall the woodblock printing process and its editions.'),
@@ -543,6 +578,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 8: South, East, and Southeast Asia',
     title: 'Taj Mahal',
     prompt: 'The Taj Mahal in Agra was built by the Mughal emperor Shah Jahan principally as',
+    mentorHint: 'Recall who is buried at its heart.',
     correct: 'A mausoleum (tomb) for his wife Mumtaz Mahal',
     wrong: [
       miss('A congregational mosque for Friday prayers', 'Although it includes a mosque on its grounds, the central white-marble building is a tomb.', 'Recall who is buried at its heart.'),
@@ -559,6 +595,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 9: The Pacific',
     title: 'Moai of Rapa Nui',
     prompt: 'The colossal moai of Rapa Nui (Easter Island) are generally understood to represent',
+    mentorHint: 'Recall their role in ancestor veneration.',
     correct: 'Deified ancestors who watched over and protected the community',
     wrong: [
       miss('Portraits of European explorers who reached the island', 'The moai predate European contact and depict Polynesian ancestors, not foreigners.', 'Recall their role in ancestor veneration.'),
@@ -574,6 +611,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 9: The Pacific',
     title: 'Pacific materials and the sea',
     prompt: 'Many Pacific Island artworks, such as Micronesian navigation charts, reflect a culture in which',
+    mentorHint: 'Recall the maritime focus of these cultures.',
     correct: 'Seafaring and detailed knowledge of currents, swells, and stars were essential to life',
     wrong: [
       miss('Permanent stone cities dominated daily existence', 'Pacific island life centered on the ocean and voyaging, not large stone urban centers.', 'Recall the maritime focus of these cultures.'),
@@ -590,6 +628,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 10: Global Contemporary',
     title: 'Maya Lin and the memorial',
     prompt: 'Maya Lin\'s Vietnam Veterans Memorial in Washington, D.C. departs from traditional war monuments by',
+    mentorHint: 'Recall its abstract, name-covered wall.',
     correct: 'Using a minimalist sunken black-granite wall inscribed with the names of the dead rather than a heroic figure',
     wrong: [
       miss('Featuring a triumphant equestrian bronze of a victorious general', 'Lin\'s memorial deliberately avoids heroic figurative statuary.', 'Recall its abstract, name-covered wall.'),
@@ -605,6 +644,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 10: Global Contemporary',
     title: 'Installation art',
     prompt: 'An installation work is best defined as art that',
+    mentorHint: 'Recall that the viewer enters and moves through the work.',
     correct: 'Transforms a whole space so that the viewer experiences the environment from within it',
     wrong: [
       miss('Is always a single freestanding bronze statue', 'Installation art is environmental and often multi-element, not a lone traditional statue.', 'Recall that the viewer enters and moves through the work.'),
@@ -620,6 +660,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 10: Global Contemporary',
     title: 'Appropriation and the Pictures Generation',
     prompt: 'Contemporary artists who rephotograph or reproduce existing images to question authorship and media are engaged in a practice known as',
+    mentorHint: 'Recall the term for borrowing pre-existing imagery.',
     correct: 'Appropriation',
     wrong: [
       miss('Fresco', 'Fresco is a wall-painting technique, not a strategy of reusing existing images.', 'Recall the term for borrowing pre-existing imagery.'),
@@ -635,6 +676,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 10: Global Contemporary',
     title: 'Performance art',
     prompt: 'Performance art is distinguished from most traditional media because its primary material is',
+    mentorHint: 'Recall the live, time-based nature of the work.',
     correct: 'The artist\'s body and live action presented to an audience over time',
     wrong: [
       miss('Marble carved into permanent figures', 'Performance is ephemeral and live, not a permanent carved object.', 'Recall the live, time-based nature of the work.'),
@@ -651,6 +693,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'AP Skill: Visual Analysis (Form, Materials, Technique)',
     title: 'Defining a relief',
     prompt: 'A sculpture in which figures project from a background surface to which they remain attached is called',
+    mentorHint: 'Recall that relief stays connected to a flat ground.',
     correct: 'A relief',
     wrong: [
       miss('Sculpture in the round', 'Sculpture in the round is fully freestanding and detached from any backing surface.', 'Recall that relief stays connected to a flat ground.'),
@@ -666,6 +709,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'AP Skill: Visual Analysis (Form, Materials, Technique)',
     title: 'Fresco technique',
     prompt: 'In the buon fresco technique, pigment is applied',
+    mentorHint: 'Recall the wet plaster bonding in buon fresco.',
     correct: 'Onto wet plaster, so the color bonds chemically with the wall as it dries',
     wrong: [
       miss('Onto dry plaster after the wall has fully cured', 'That describes fresco secco; true buon fresco requires wet plaster.', 'Recall the wet plaster bonding in buon fresco.'),
@@ -681,6 +725,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'AP Skill: Visual Analysis (Form, Materials, Technique)',
     title: 'Reading composition',
     prompt: 'When an art historian analyzes the "composition" of a painting, they are examining',
+    mentorHint: 'Recall that composition is about arrangement.',
     correct: 'How the visual elements are arranged within the picture\'s space',
     wrong: [
       miss('The chemical makeup of the pigments used', 'Pigment chemistry concerns materials and technique, not composition.', 'Recall that composition is about arrangement.'),
@@ -696,6 +741,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'AP Skill: Visual Analysis (Form, Materials, Technique)',
     title: 'Iconography',
     prompt: 'In art history, "iconography" refers to',
+    mentorHint: 'Recall that iconography concerns meaning and symbols.',
     correct: 'The study of subject matter and the symbolic meaning of images and motifs',
     wrong: [
       miss('The chemical analysis of paint layers', 'That is technical or conservation study, not iconography.', 'Recall that iconography concerns meaning and symbols.'),
@@ -712,6 +758,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'AP Skill: Contextual Analysis (Function, Context, Patronage)',
     title: 'Role of patronage',
     prompt: 'Studying the "patronage" of a work means investigating',
+    mentorHint: 'Recall that patronage concerns who funded the work.',
     correct: 'Who commissioned and paid for it, and how their interests shaped the work',
     wrong: [
       miss('The pigments and binding media the artist mixed', 'Pigments and media are technical matters, not patronage.', 'Recall that patronage concerns who funded the work.'),
@@ -727,6 +774,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'AP Skill: Contextual Analysis (Function, Context, Patronage)',
     title: 'Function and reliquaries',
     prompt: 'A medieval reliquary was an object whose primary function was to',
+    mentorHint: 'Recall that they hold holy relics.',
     correct: 'House and display the sacred remains or relics of a saint',
     wrong: [
       miss('Serve as everyday tableware for monastic meals', 'Reliquaries are precious sacred containers, not ordinary dishes.', 'Recall that they hold holy relics.'),
@@ -742,6 +790,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'AP Skill: Contextual Analysis (Function, Context, Patronage)',
     title: 'Propaganda and imperial art',
     prompt: 'The Augustus of Prima Porta depicts the emperor as youthful and idealized in order to',
+    mentorHint: 'Recall its persuasive, political purpose.',
     correct: 'Project political authority and divine connection as a form of imperial propaganda',
     wrong: [
       miss('Provide an accurate medical record of the aging emperor', 'The statue idealizes Augustus rather than documenting his actual appearance.', 'Recall its persuasive, political purpose.'),
@@ -758,6 +807,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'AP Skill: Attribution and Comparison',
     title: 'Attributing by style: Gothic vs Romanesque',
     prompt: 'A church with thick walls, rounded arches, small windows, and barrel vaults would most likely be attributed to which style?',
+    mentorHint: 'Recall the heavy, rounded-arch character of Romanesque.',
     correct: 'Romanesque',
     wrong: [
       miss('High Gothic', 'High Gothic churches feature pointed arches, large stained-glass windows, and thin walls, the opposite of this description.', 'Recall the heavy, rounded-arch character of Romanesque.'),
@@ -773,6 +823,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'AP Skill: Attribution and Comparison',
     title: 'Comparing kouros and Doryphoros',
     prompt: 'Compared with the Archaic Greek kouros, the Classical Doryphoros shows greater',
+    mentorHint: 'Recall the weight shift introduced in Classical sculpture.',
     correct: 'Naturalism, including a relaxed contrapposto stance and convincing anatomy',
     wrong: [
       miss('Rigidity, with both feet planted and arms locked at the sides', 'Rigidity describes the earlier kouros; the Doryphoros is more relaxed and lifelike.', 'Recall the weight shift introduced in Classical sculpture.'),
@@ -788,6 +839,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'AP Skill: Attribution and Comparison',
     title: 'Distinguishing Baroque from Renaissance',
     prompt: 'Compared with High Renaissance art, Baroque art is generally characterized by greater',
+    mentorHint: 'Recall the theatrical energy of Baroque works.',
     correct: 'Drama, movement, and emotional intensity, often using strong diagonals and light contrasts',
     wrong: [
       miss('Calm symmetry, balance, and restrained stillness', 'Calm balance describes the High Renaissance; Baroque favors dynamism and tension.', 'Recall the theatrical energy of Baroque works.'),
@@ -804,6 +856,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 2: Ancient Mediterranean',
     title: 'Greek temple orders',
     prompt: 'A Greek column with a plain, cushion-like capital and no base, as on the Parthenon, belongs to which order?',
+    mentorHint: 'Recall the simple, baseless capital of the Doric order.',
     correct: 'Doric',
     wrong: [
       miss('Ionic', 'Ionic columns have scroll-like volutes on their capitals and stand on a base, unlike the plain Doric.', 'Recall the simple, baseless capital of the Doric order.'),
@@ -819,6 +872,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 3: Early Europe and Colonial Americas',
     title: 'Colonial Americas: casta and conversion imagery',
     prompt: 'Much religious art produced in colonial Latin America, such as paintings in New Spain, primarily served to',
+    mentorHint: 'Recall the Spanish Catholic missionary context.',
     correct: 'Promote Catholic devotion and aid the conversion and instruction of Indigenous populations',
     wrong: [
       miss('Spread Buddhist teachings among the colonists', 'Colonial Latin American religious art was Catholic, not Buddhist.', 'Recall the Spanish Catholic missionary context.'),
@@ -834,6 +888,7 @@ export const colApArtHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank
     chapter: 'Content Area 4: Later Europe and Americas',
     title: 'Surrealism',
     prompt: 'Surrealist artists such as Salvador Dali aimed above all to',
+    mentorHint: 'Recall the focus on dreams and the unconscious.',
     correct: 'Tap the unconscious mind and dreams to create irrational, fantastical imagery',
     wrong: [
       miss('Record industrial cities with documentary precision', 'Documentary precision contradicts Surrealism\'s embrace of dream logic and fantasy.', 'Recall the focus on dreams and the unconscious.'),

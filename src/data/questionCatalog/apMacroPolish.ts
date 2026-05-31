@@ -7,10 +7,10 @@
 // Determination; Unit 4 Financial Sector; Unit 5 Long-Run Consequences of
 // Stabilization Policies; Unit 6 Open Economy.
 //
-// AP_MACRO_MENTOR_HINTS overrides the generic scaffold hint with a one-line
-// second-person nudge in the voice of an AP Macro teacher — naming the
-// model (AD/AS, money market, Phillips, Solow, Mundell-Fleming, loanable
-// funds) or the transmission channel without giving the answer.
+// AP_MACRO_MENTOR_HINTS overrides the generic scaffold hint with a learner-facing
+// AP Macro nudge: name the model (AD/AS, money market, Phillips, Solow,
+// Mundell-Fleming, loanable funds) or transmission channel and point the learner
+// toward the reasoning without giving away the answer.
 //
 // AP_MACRO_CORRECT_SHORTENED trims `correct` strings where the answer ran
 // substantially longer than the longest wrong, pushing the trimmed
@@ -83,48 +83,48 @@ export const AP_MACRO_SUB_TOPICS: Record<string, number[]> = {
 
 export const AP_MACRO_MENTOR_HINTS: Record<number, string> = {
   // ---------- Unit 2: Economic Indicators and the Business Cycle ----------
-  16201: 'GDP is a flow of final-goods production. Strip out anything that is not a newly produced good or service this year.',
-  16202: 'Inflation is the change in the aggregate price level — measured by CPI, PPI, or the GDP deflator. Not a single price.',
-  16204: 'A recession is a broad fall in real output, employment, and income — not one firm and not a total shutdown.',
-  16205: 'Y = C + I + G + NX. G captures government purchases of goods and services; transfer payments do not count.',
-  16206: 'AP categorizes unemployment as frictional, structural, or cyclical. Job search and graduates fall under frictional.',
-  16207: 'Inflation is a sustained rise in the overall price level. Distinguish the definition from its consequences and causes.',
-  16208: 'Business cycle phases: peak, recession, trough, expansion. The turning point at the bottom has a name.',
-  16209: 'Circular flow: injections (I, G, X) add to spending; leakages (S, T, M) pull out. Match the pairs.',
-  16210: 'Use the Fisher approximation: real growth ≈ nominal growth − inflation. Subtract the deflator from nominal GDP growth.',
+  16201: 'GDP is a flow measure of production during a period of time. Look for newly produced final goods and services, and exclude assets, resale, weather, and other things that are not current output.',
+  16202: 'Inflation describes the overall price level, not one unusually expensive item. Think of indexes like CPI or the GDP deflator, which summarize many prices across the economy.',
+  16204: 'A recession is a broad macroeconomic downturn, not a single business struggling or the whole economy disappearing forever. Look for language about economy-wide decline in output, income, or employment.',
+  16205: 'Use the expenditure identity Y = C + I + G + NX. For G, include government purchases that buy current goods and services, but leave out transfers because they only move income from one group to another.',
+  16206: 'Sort unemployment by cause. Frictional unemployment comes from normal search and matching, structural from mismatched skills or locations, and cyclical from weak demand during downturns.',
+  16207: 'Keep the definition of inflation separate from its causes and effects. The definition is about the sustained movement of the overall price level over time, while purchasing power and money growth are related ideas.',
+  16208: 'The business cycle has phases and turning points. When activity stops falling and begins rising, identify the named turning point rather than the whole period of growth that follows.',
+  16209: 'In the circular flow model, injections add spending to the domestic income stream while leakages pull spending out. Match I with saving, G with taxes, and exports with imports before choosing.',
+  16210: 'Real GDP growth removes inflation from nominal GDP growth. Use the approximation that real growth is nominal growth minus the growth in the price level.',
 
   // ---------- Unit 3: National Income and Price Determination ----------
-  16203: 'Fiscal policy = G and T. Distinguish it from monetary policy (the Fed) and from non-policy variables.',
-  16211: 'Spending multiplier = 1 / (1 − MPC) = 1 / MPS. Apply the formula, do not invert it.',
-  16214: 'Discretionary fiscal policy requires new legislation. Automatic stabilizers move with the cycle without new law.',
-  16223: 'Ricardian equivalence: forward-looking consumers save the tax cut because they anticipate higher future taxes.',
-  16810: 'Same Ricardian logic — the household sees lifetime wealth as unchanged and adjusts saving, not consumption.',
+  16203: 'Fiscal policy is the government budget side of stabilization policy. Ask whether the choice changes government purchases or taxes, as opposed to the central bank changing interest rates or the money supply.',
+  16211: 'The spending multiplier depends on the fraction of each extra dollar that gets re-spent. Convert MPC into MPS first, then use multiplier = 1 / MPS.',
+  16214: 'Discretionary fiscal policy requires an active policy choice, usually a new law changing spending or taxes. Automatic stabilizers respond to the business cycle without a new vote.',
+  16223: 'Ricardian equivalence assumes forward-looking households connect today\'s debt-financed tax cuts with tomorrow\'s taxes. The key reasoning step is whether current disposable income actually changes lifetime wealth.',
+  16810: 'Use the same Ricardian logic, but focus on household behavior. If people expect the government debt to become future tax bills, ask whether they treat the tax cut as spendable income or set it aside.',
 
   // ---------- Unit 4: Financial Sector ----------
-  16212: 'On the MS/MD diagram, an increase in MS shifts supply right. The nominal rate falls until the market clears.',
-  16217: 'Actual money multiplier = 1 / (required + excess + cash drain). Add all three leakages in the denominator.',
-  16221: 'Quantity theory MV = PY. If V and Y are fixed, %ΔM = %ΔP. Money is neutral in the long run.',
-  16224: 'In the abundant-reserves framework, the Fed steers the funds rate using IORB (and ON RRP) — not daily OMOs.',
-  16806: 'QE buys long-duration assets to push down long-term rates once the policy rate is at the zero lower bound.',
-  16809: 'A higher currency-deposit ratio shrinks the multiplier because cash held by the public is not loanable reserves.',
+  16212: 'Use the money market graph with the nominal interest rate as the price of holding money. When the central bank increases money supply, shift the vertical supply curve and find the new market-clearing rate.',
+  16217: 'The simple money multiplier works only when required reserves are the only leakage. Here, excess reserves and cash held by the public also block deposit creation, so add all leakage ratios before taking the reciprocal.',
+  16221: 'Quantity theory uses MV = PY. If velocity and real output are fixed, a change in money mainly shows up in nominal variables, so compare the percentage change in M with the percentage change in P.',
+  16224: 'In an abundant-reserves system, banks already hold plenty of reserves, so tiny daily reserve adjustments are not the main steering wheel. Think about the administered rate the Fed pays on reserve balances as the floor for the federal funds market.',
+  16806: 'Quantitative easing is used when the usual short-term policy rate has little room left to fall. It works through large-scale central bank purchases of longer-term assets, aiming to affect longer-term yields and financial conditions.',
+  16809: 'The money multiplier depends on how much money stays inside banks as deposits and reserves. When the public holds more currency, banks have less deposit funding to support loans and multiple rounds of money creation.',
 
   // ---------- Unit 5: Long-Run Consequences of Stabilization Policies ----------
-  16215: 'On the Phillips curve, a supply shock shifts the SRPC right — higher inflation and higher unemployment together.',
-  16216: 'In the loanable funds market, deficit borrowing shifts demand right. The real rate rises and private I falls.',
-  16222: 'In Solow, capital deepening hits diminishing returns. Only technological progress drives long-run per-capita growth.',
-  16801: 'Taylor rule responds to two gaps: inflation vs target and output vs potential. Both feed the rate setting.',
-  16802: 'Trace the channel: deficit → loanable funds demand right → real rate up → private investment down. That is crowding out.',
-  16803: 'Solow steady state: savings sets the level, but only A — technology — sets the long-run growth rate.',
-  16805: 'LRPC is vertical at the natural rate because expectations fully adjust. Money is neutral in the long run.',
-  16807: 'Real Business Cycle theory blames technology and productivity shocks — supply-side, not aggregate demand.',
+  16215: 'The short-run Phillips curve shows a tradeoff unless something shifts the whole curve. Stagflation is the clue that inflation and unemployment are moving in the same bad direction, which usually points to a supply shock or changed expectations.',
+  16216: 'Crowding out runs through the loanable funds market. Government deficits increase borrowing demand, which changes the real interest rate and affects firms\' willingness to finance private investment projects.',
+  16222: 'In the Solow model, adding more capital per worker eventually runs into diminishing marginal returns. Sustained growth in output per person requires something that keeps making workers more productive over time.',
+  16801: 'The Taylor Rule is a monetary policy reaction function, not a fiscal rule. It tells the central bank how to adjust the nominal interest rate when inflation differs from target or output differs from potential.',
+  16802: 'Trace the financial-market channel step by step. Deficit spending raises government borrowing in loanable funds, and the resulting rate pressure makes some private investment no longer worthwhile.',
+  16803: 'In Solow steady state, savings and capital accumulation can raise the level of income per worker, but diminishing returns stop them from creating permanent per-capita growth. Look for the factor that shifts productivity itself.',
+  16805: 'The long-run Phillips curve is vertical because expected inflation eventually catches up with actual inflation. Once expectations adjust, unemployment returns to the natural rate even if inflation is higher or lower.',
+  16807: 'Real Business Cycle theory explains fluctuations from the supply side. It emphasizes real shocks to technology or productivity rather than demand failures, sticky wages, or central bank mistakes.',
 
   // ---------- Unit 6: Open Economy ----------
-  16213: 'Comparative advantage is about opportunity cost, not absolute productivity. Compute the trade-off ratios first.',
-  16218: 'Higher US real rates pull capital inward. Demand for dollars shifts right, and the dollar appreciates.',
-  16219: 'Balance of payments identity: CA + KA + FA = 0. A current account deficit must be financed by a capital/financial surplus.',
-  16220: 'The Mundell-Fleming trilemma: fixed exchange rate, free capital, independent monetary policy — pick any two.',
-  16804: 'Mundell-Fleming with floating rates and perfect capital mobility — fiscal expansion appreciates the currency and crowds out NX.',
-  16808: 'Absolute PPP rests on the Law of One Price across a common basket. The real exchange rate equals one when it holds.',
+  16213: 'Comparative advantage is about relative sacrifice, not who uses fewer total resources. Translate production choices into opportunity costs and compare the tradeoffs between countries.',
+  16218: 'Exchange rates respond to capital flows as well as trade flows. If one country offers a higher real return, trace how foreign investors must acquire that country\'s currency to buy its assets.',
+  16219: 'The balance of payments is an accounting identity: money flowing out through one account must be offset by money flowing in through another. A current account gap is therefore matched by the capital/financial side, not by unrelated indicators like inflation.',
+  16220: 'The open-economy trilemma says a country cannot simultaneously maintain a fixed exchange rate, free capital mobility, and independent monetary policy. If an option is not one of those three policy goals, it is outside the trilemma.',
+  16804: 'Use the Mundell-Fleming model for a small open economy with floating exchange rates and perfect capital mobility. Expansionary fiscal policy can pull in capital, move the exchange rate, and offset the demand effect through net exports.',
+  16808: 'Absolute purchasing power parity comes from the Law of One Price applied to a common basket of goods. When it holds exactly, goods-market arbitrage aligns purchasing power across currencies.',
 }
 
 // AP_MACRO_CORRECT_SHORTENED — questions where the correct answer ran

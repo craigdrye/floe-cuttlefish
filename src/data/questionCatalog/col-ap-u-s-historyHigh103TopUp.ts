@@ -11,6 +11,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 1: 1491-1607',
     title: 'The Columbian Exchange',
     prompt: 'Which of the following is the best example of the Columbian Exchange transforming societies in the Eastern Hemisphere?',
+    mentorHint: 'The question asks about the Eastern Hemisphere specifically.',
     correct: 'The introduction of high-calorie American crops like potatoes and maize, which contributed to population growth in Europe, Africa, and Asia',
     wrong: [
       miss('The spread of horses across the North American Great Plains, reshaping Native American hunting cultures', 'This is a real consequence, but it transformed the Western Hemisphere, not the Eastern.', 'The question asks about the Eastern Hemisphere specifically.'),
@@ -26,6 +27,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 1: 1491-1607',
     title: 'Pre-Columbian diversity',
     prompt: 'Which statement best characterizes Native American societies in North America before European contact?',
+    mentorHint: 'Consider the variety of climates and resources across the continent.',
     correct: 'They were highly diverse, with social structures shaped by the environments and resources of their regions',
     wrong: [
       miss('They were uniformly nomadic hunter-gatherers with no permanent settlements', 'Many groups, such as the Pueblo and Mississippian peoples, built permanent agricultural settlements.', 'Consider the variety of climates and resources across the continent.'),
@@ -41,6 +43,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 1: 1491-1607',
     title: 'The Spanish caste system',
     prompt: 'The Spanish casta system in colonial Latin America was primarily designed to:',
+    mentorHint: 'Think about who held power and privilege.',
     correct: 'Create a social hierarchy based on perceived racial ancestry, with peninsulares at the top',
     wrong: [
       miss('Promote equality between Spanish settlers and Native populations', 'The system was explicitly hierarchical and unequal, not egalitarian.', 'Think about who held power and privilege.'),
@@ -56,6 +59,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 1: 1491-1607',
     title: 'The Black Legend and debate over conquest',
     prompt: 'Bartolome de las Casas is best known for:',
+    mentorHint: 'He advocated for Native peoples, not their exploiters.',
     correct: 'Arguing that Native Americans had rational souls and condemning their abuse under the encomienda system',
     wrong: [
       miss('Defending the encomienda system as essential to Spain\'s mission', 'Las Casas was a critic of the encomienda, not its defender.', 'He advocated for Native peoples, not their exploiters.'),
@@ -71,6 +75,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 1: 1491-1607',
     title: 'Maize and societal change',
     prompt: 'The spread of maize cultivation northward from Mesoamerica most directly led to:',
+    mentorHint: 'Crops enable settlement, not abandonment.',
     correct: 'The development of more complex and settled societies in the present-day American Southwest',
     wrong: [
       miss('The collapse of all agriculture among Native peoples', 'Maize expanded agriculture and supported larger populations, not its collapse.', 'Crops enable settlement, not abandonment.'),
@@ -88,6 +93,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 2: 1607-1754',
     title: 'Chesapeake versus New England',
     prompt: 'Which factor best explains why the Chesapeake colonies developed a society very different from New England in the 1600s?',
+    mentorHint: 'Recall the Puritan motives behind the Massachusetts Bay Colony.',
     correct: 'The Chesapeake economy centered on labor-intensive tobacco, fostering large plantations and reliance on indentured servants and later enslaved Africans',
     wrong: [
       miss('New England settlers came primarily for profit while Chesapeake settlers sought religious freedom', 'This reverses reality: New England drew religious dissenters and the Chesapeake drew profit-seekers.', 'Recall the Puritan motives behind the Massachusetts Bay Colony.'),
@@ -103,6 +109,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 2: 1607-1754',
     title: 'Bacon\'s Rebellion',
     prompt: 'Bacon\'s Rebellion (1676) is often cited by historians as significant because it:',
+    mentorHint: 'Consider the rebellion\'s short-term failure but long-term consequences.',
     correct: 'Revealed tensions between backcountry settlers and the planter elite and accelerated the shift toward enslaved African labor',
     wrong: [
       miss('Successfully overthrew the British monarchy in Virginia', 'The rebellion collapsed after Bacon\'s death; it did not overthrow the monarchy.', 'Consider the rebellion\'s short-term failure but long-term consequences.'),
@@ -118,6 +125,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 2: 1607-1754',
     title: 'The mercantilist Navigation Acts',
     prompt: 'The British Navigation Acts were designed primarily to:',
+    mentorHint: 'Recall the goal of mercantilist policy.',
     correct: 'Ensure that colonial trade benefited the mother country by requiring goods to be carried on English ships and routed through England',
     wrong: [
       miss('Promote free trade between the colonies and all European nations', 'Mercantilism restricted trade to benefit Britain, the opposite of free trade.', 'Recall the goal of mercantilist policy.'),
@@ -133,6 +141,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 2: 1607-1754',
     title: 'The Great Awakening',
     prompt: 'A major long-term political effect of the First Great Awakening was that it:',
+    mentorHint: 'Consider how revivalism challenged established institutions.',
     correct: 'Encouraged individuals to question traditional authority, fostering a more democratic and independent spirit',
     wrong: [
       miss('Strengthened the established Anglican Church\'s monopoly over the colonies', 'The Awakening split congregations and weakened established churches.', 'Consider how revivalism challenged established institutions.'),
@@ -148,6 +157,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 2: 1607-1754',
     title: 'Colonial self-government',
     prompt: 'The Virginia House of Burgesses, established in 1619, is significant because it was:',
+    mentorHint: 'Distinguish a legislative body from a written charter.',
     correct: 'The first elected representative legislative body in English North America',
     wrong: [
       miss('The first written constitution in the American colonies', 'That distinction belongs to documents like the Fundamental Orders of Connecticut, not the House of Burgesses.', 'Distinguish a legislative body from a written charter.'),
@@ -163,6 +173,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 2: 1607-1754',
     title: 'The Middle Passage and Atlantic slavery',
     prompt: 'The triangular trade and Middle Passage were central to which transatlantic system?',
+    mentorHint: 'Recall who was carried in chains across the Atlantic.',
     correct: 'The forced transport of enslaved Africans to the Americas in exchange for raw materials and manufactured goods',
     wrong: [
       miss('The voluntary migration of European indentured servants to New England', 'The Middle Passage refers to the forced transport of enslaved Africans, not voluntary servants.', 'Recall who was carried in chains across the Atlantic.'),
@@ -180,6 +191,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 3: 1754-1800',
     title: 'The Seven Years\' War aftermath',
     prompt: 'How did the French and Indian War (Seven Years\' War) most directly contribute to tensions between Britain and its colonies?',
+    mentorHint: 'Consider Britain\'s financial situation after the war.',
     correct: 'Britain sought to tax colonists and tighten control to pay off war debts and govern new territory',
     wrong: [
       miss('Britain immediately granted the colonies full independence', 'Britain tightened control rather than granting independence.', 'Consider Britain\'s financial situation after the war.'),
@@ -195,6 +207,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 3: 1754-1800',
     title: 'No taxation without representation',
     prompt: 'The colonial slogan "no taxation without representation" challenged the British concept of:',
+    mentorHint: 'The colonists rejected the British justification, not their own demand.',
     correct: 'Virtual representation, the idea that Parliament represented all British subjects regardless of who could vote for it',
     wrong: [
       miss('Direct representation, in which colonists elected their own members of Parliament', 'Colonists wanted direct representation; they had none in Parliament.', 'The colonists rejected the British justification, not their own demand.'),
@@ -210,6 +223,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 3: 1754-1800',
     title: 'Common Sense',
     prompt: 'Thomas Paine\'s pamphlet Common Sense (1776) was influential because it:',
+    mentorHint: 'Recall his stance on the British monarchy.',
     correct: 'Used plain language to argue for complete independence and against monarchy, reaching a wide popular audience',
     wrong: [
       miss('Called for reconciliation with Britain under a reformed Parliament', 'Paine argued for full independence, not reconciliation.', 'Recall his stance on the British monarchy.'),
@@ -225,6 +239,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 3: 1754-1800',
     title: 'Weakness of the Articles of Confederation',
     prompt: 'Which weakness of the Articles of Confederation was most clearly exposed by Shays\' Rebellion?',
+    mentorHint: 'The problem was too little federal power, not too much.',
     correct: 'The national government lacked the power to raise an army or maintain order',
     wrong: [
       miss('The national government taxed citizens too heavily and oppressively', 'The federal government could not effectively tax at all under the Articles.', 'The problem was too little federal power, not too much.'),
@@ -240,6 +255,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 3: 1754-1800',
     title: 'The Great Compromise',
     prompt: 'The Great Compromise at the Constitutional Convention resolved the dispute between large and small states by:',
+    mentorHint: 'The compromise blended two competing plans.',
     correct: 'Creating a bicameral legislature with representation by population in the House and equal representation in the Senate',
     wrong: [
       miss('Giving every state an equal number of representatives in a single chamber', 'That was the New Jersey Plan, which the compromise rejected in favor of a two-house solution.', 'The compromise blended two competing plans.'),
@@ -255,6 +271,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 3: 1754-1800',
     title: 'Federalists and Anti-Federalists',
     prompt: 'Anti-Federalists opposed ratification of the Constitution primarily because they feared that:',
+    mentorHint: 'Reverse who they trusted more.',
     correct: 'A strong central government would threaten individual liberties and the powers of the states',
     wrong: [
       miss('The Constitution gave too much power to the states and not enough to the central government', 'Anti-Federalists wanted to protect state power; they feared central, not state, strength.', 'Reverse who they trusted more.'),
@@ -270,6 +287,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 3: 1754-1800',
     title: 'Washington\'s Farewell Address',
     prompt: 'In his Farewell Address, George Washington warned the nation against:',
+    mentorHint: 'Recall his domestic policy stance.',
     correct: 'Permanent foreign alliances and the divisive influence of political parties',
     wrong: [
       miss('Establishing a national bank and a strong federal economy', 'Washington supported Hamilton\'s financial program, including the national bank.', 'Recall his domestic policy stance.'),
@@ -287,6 +305,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 4: 1800-1848',
     title: 'Marbury v. Madison',
     prompt: 'The principle of judicial review was established by which landmark Supreme Court case?',
+    mentorHint: 'Recall which case first struck down an act of Congress.',
     correct: 'Marbury v. Madison (1803)',
     wrong: [
       miss('McCulloch v. Maryland (1819)', 'This case confirmed federal supremacy and implied powers, not judicial review of laws.', 'Recall which case first struck down an act of Congress.'),
@@ -302,6 +321,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 4: 1800-1848',
     title: 'The Louisiana Purchase dilemma',
     prompt: 'The Louisiana Purchase (1803) presented Thomas Jefferson with a constitutional dilemma because:',
+    mentorHint: 'The dilemma concerned constitutional authority, not money.',
     correct: 'As a strict constructionist, he doubted the Constitution explicitly authorized the federal government to acquire territory',
     wrong: [
       miss('He believed the purchase would bankrupt the nation\'s entire treasury', 'The purchase was a bargain at roughly 15 million dollars; cost was not the constitutional issue.', 'The dilemma concerned constitutional authority, not money.'),
@@ -317,6 +337,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 4: 1800-1848',
     title: 'The Monroe Doctrine',
     prompt: 'The Monroe Doctrine (1823) declared that:',
+    mentorHint: 'Recall the principle of mutual non-interference.',
     correct: 'The Western Hemisphere was closed to further European colonization and intervention',
     wrong: [
       miss('The United States would actively join European wars to defend its allies', 'The doctrine emphasized non-involvement in European affairs, not joining their wars.', 'Recall the principle of mutual non-interference.'),
@@ -332,6 +353,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 4: 1800-1848',
     title: 'The Market Revolution',
     prompt: 'The Market Revolution of the early 1800s transformed the American economy primarily by:',
+    mentorHint: 'Think about integration, not isolation.',
     correct: 'Connecting regions through new transportation and shifting production from households to markets and factories',
     wrong: [
       miss('Returning the nation to self-sufficient, isolated subsistence farming', 'The Market Revolution did the opposite, linking farmers to distant markets.', 'Think about integration, not isolation.'),
@@ -347,6 +369,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 4: 1800-1848',
     title: 'Jacksonian democracy and the spoils system',
     prompt: 'The "spoils system" associated with Andrew Jackson refers to the practice of:',
+    mentorHint: 'Think about government jobs and patronage.',
     correct: 'Rewarding political supporters with government jobs and offices',
     wrong: [
       miss('Distributing western land equally to all American citizens', 'The spoils system concerned political appointments, not land distribution.', 'Think about government jobs and patronage.'),
@@ -362,6 +385,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 4: 1800-1848',
     title: 'Indian Removal',
     prompt: 'The "Trail of Tears" most directly resulted from:',
+    mentorHint: 'The forced march defied, rather than resulted from, the Court ruling.',
     correct: 'The Indian Removal Act and the forced relocation of the Cherokee and other southeastern peoples',
     wrong: [
       miss('The Supreme Court decision in Worcester v. Georgia protecting Cherokee land', 'The Court actually ruled in the Cherokee\'s favor, but Jackson ignored it, leading to removal.', 'The forced march defied, rather than resulted from, the Court ruling.'),
@@ -377,6 +401,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 4: 1800-1848',
     title: 'The Second Great Awakening and reform',
     prompt: 'The Second Great Awakening contributed to antebellum reform movements primarily by:',
+    mentorHint: 'Recall its emphasis on human agency and perfection.',
     correct: 'Promoting the belief that individuals could perfect society and themselves through moral action',
     wrong: [
       miss('Teaching that society could not be improved and reform was futile', 'It taught the opposite, inspiring optimism that people could improve society.', 'Recall its emphasis on human agency and perfection.'),
@@ -394,6 +419,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 5: 1844-1877',
     title: 'Manifest Destiny',
     prompt: 'The concept of Manifest Destiny in the 1840s held that:',
+    mentorHint: 'The phrase celebrated westward growth.',
     correct: 'The United States was divinely destined to expand across the North American continent',
     wrong: [
       miss('The United States should avoid acquiring any new territory', 'Manifest Destiny championed expansion, not restraint.', 'The phrase celebrated westward growth.'),
@@ -409,6 +435,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 5: 1844-1877',
     title: 'The Compromise of 1850',
     prompt: 'Which component of the Compromise of 1850 most angered Northern abolitionists?',
+    mentorHint: 'Recall California\'s status in the compromise.',
     correct: 'The strengthened Fugitive Slave Act requiring Northerners to assist in capturing escaped enslaved people',
     wrong: [
       miss('The admission of California as a slave state', 'California entered as a free state, which pleased the North.', 'Recall California\'s status in the compromise.'),
@@ -424,6 +451,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 5: 1844-1877',
     title: 'Popular sovereignty and Bleeding Kansas',
     prompt: 'The Kansas-Nebraska Act of 1854 increased sectional conflict because it:',
+    mentorHint: 'Recall the principle of popular sovereignty it introduced.',
     correct: 'Repealed the Missouri Compromise line and let settlers vote on slavery, sparking violence in Kansas',
     wrong: [
       miss('Immediately admitted both Kansas and Nebraska as free states', 'The act left the question to settlers, leading to conflict rather than immediate free admission.', 'Recall the principle of popular sovereignty it introduced.'),
@@ -439,6 +467,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 5: 1844-1877',
     title: 'The Emancipation Proclamation',
     prompt: 'A key limitation of the Emancipation Proclamation (1863) was that it:',
+    mentorHint: 'Consider where the proclamation actually applied.',
     correct: 'Freed enslaved people only in areas still in rebellion, not in the loyal border states',
     wrong: [
       miss('Immediately freed every enslaved person in the entire United States', 'It exempted the loyal border states and Union-controlled areas.', 'Consider where the proclamation actually applied.'),
@@ -454,6 +483,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 5: 1844-1877',
     title: 'Reconstruction amendments',
     prompt: 'Which Reconstruction amendment granted citizenship to all persons born or naturalized in the United States?',
+    mentorHint: 'Recall which amendment guarantees equal protection and citizenship.',
     correct: 'The Fourteenth Amendment',
     wrong: [
       miss('The Thirteenth Amendment', 'The Thirteenth abolished slavery; it did not define citizenship.', 'Recall which amendment guarantees equal protection and citizenship.'),
@@ -469,6 +499,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 5: 1844-1877',
     title: 'The end of Reconstruction',
     prompt: 'The Compromise of 1877 contributed to the end of Reconstruction by:',
+    mentorHint: 'Consider what happened to federal troops after the compromise.',
     correct: 'Resolving the disputed 1876 election in exchange for the withdrawal of federal troops from the South',
     wrong: [
       miss('Guaranteeing permanent federal protection for Black voting rights', 'It did the opposite by withdrawing federal enforcement from the South.', 'Consider what happened to federal troops after the compromise.'),
@@ -486,6 +517,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 6: 1865-1898',
     title: 'The Gilded Age and industrialists',
     prompt: 'The term "captains of industry" versus "robber barons" reflects a debate over whether figures like Carnegie and Rockefeller:',
+    mentorHint: 'The debate concerns business practices, not political corruption.',
     correct: 'Benefited society through innovation and philanthropy or exploited workers and competitors for personal gain',
     wrong: [
       miss('Were elected government officials abusing political office', 'They were private businessmen, not elected officials.', 'The debate concerns business practices, not political corruption.'),
@@ -501,6 +533,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 6: 1865-1898',
     title: 'The New South and sharecropping',
     prompt: 'Sharecropping in the post-Civil War South often trapped farmers in cycles of debt because:',
+    mentorHint: 'Think about how croppers obtained supplies and land.',
     correct: 'Croppers borrowed against future crops and frequently owed more than their harvest earned',
     wrong: [
       miss('The federal government heavily taxed all agricultural production', 'Debt came from the crop-lien and credit system, not federal taxes.', 'Think about how croppers obtained supplies and land.'),
@@ -516,6 +549,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 6: 1865-1898',
     title: 'The transcontinental railroad',
     prompt: 'The completion of the transcontinental railroad in 1869 most directly affected Native Americans of the Great Plains by:',
+    mentorHint: 'Consider the effects of settlement and bison hunting.',
     correct: 'Accelerating white settlement and the destruction of the bison herds central to their way of life',
     wrong: [
       miss('Granting them new federal protections and expanded reservations', 'The railroad accelerated the loss, not the protection, of Native lands.', 'Consider the effects of settlement and bison hunting.'),
@@ -531,6 +565,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 6: 1865-1898',
     title: 'Social Darwinism',
     prompt: 'Social Darwinism was often used in the Gilded Age to:',
+    mentorHint: 'Recall its laissez-faire implications.',
     correct: 'Justify economic inequality by claiming that the wealthy succeeded through natural superiority',
     wrong: [
       miss('Argue that the government should redistribute wealth to the poor', 'Social Darwinism opposed such intervention, treating poverty as natural.', 'Recall its laissez-faire implications.'),
@@ -546,6 +581,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 6: 1865-1898',
     title: 'The new immigration',
     prompt: 'In the late 1800s, the "new immigrants" differed from earlier arrivals primarily because they:',
+    mentorHint: 'Reverse the regions of origin.',
     correct: 'Came largely from southern and eastern Europe and were often Catholic, Jewish, or Orthodox',
     wrong: [
       miss('Came mainly from Britain and northern Europe and were mostly Protestant', 'That describes the earlier "old immigrants," not the new wave.', 'Reverse the regions of origin.'),
@@ -563,6 +599,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 7: 1890-1945',
     title: 'Progressive Era muckrakers',
     prompt: 'Upton Sinclair\'s novel The Jungle (1906) led most directly to:',
+    mentorHint: 'Recall which industry The Jungle exposed.',
     correct: 'Passage of the Meat Inspection Act and Pure Food and Drug Act',
     wrong: [
       miss('The breakup of the Standard Oil monopoly', 'That resulted from antitrust action, not from Sinclair\'s novel.', 'Recall which industry The Jungle exposed.'),
@@ -578,6 +615,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 7: 1890-1945',
     title: 'Imperialism and the Spanish-American War',
     prompt: 'A major consequence of the Spanish-American War (1898) was that the United States:',
+    mentorHint: 'Recall which side was victorious.',
     correct: 'Acquired overseas territories including the Philippines, Puerto Rico, and Guam, becoming a colonial power',
     wrong: [
       miss('Lost all of its existing territory to Spain', 'The U.S. won the war and gained territory; it lost none to Spain.', 'Recall which side was victorious.'),
@@ -593,6 +631,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 7: 1890-1945',
     title: 'World War I and civil liberties',
     prompt: 'The Supreme Court case Schenck v. United States (1919) is significant for establishing the standard that:',
+    mentorHint: 'Recall the limit the Court placed on speech.',
     correct: 'Speech may be restricted if it presents a "clear and present danger"',
     wrong: [
       miss('All forms of speech are absolutely protected during wartime', 'The ruling allowed restrictions on speech, contradicting absolute protection.', 'Recall the limit the Court placed on speech.'),
@@ -608,6 +647,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 7: 1890-1945',
     title: 'The Harlem Renaissance',
     prompt: 'The Harlem Renaissance of the 1920s is best described as:',
+    mentorHint: 'Think about literature, music, and art.',
     correct: 'A flourishing of African American literature, music, and art celebrating Black culture and identity',
     wrong: [
       miss('A political movement to end Prohibition', 'It was a cultural and artistic movement, not a campaign about alcohol.', 'Think about literature, music, and art.'),
@@ -623,6 +663,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 7: 1890-1945',
     title: 'Causes of the Great Depression',
     prompt: 'Which of the following was a major underlying cause of the Great Depression?',
+    mentorHint: 'Recall the structural weaknesses of the 1920s economy.',
     correct: 'Overproduction, uneven distribution of wealth, and excessive speculation on margin in the stock market',
     wrong: [
       miss('Excessively high federal income taxes on ordinary workers', 'Taxes were relatively low in the 1920s; the causes lay in the economy\'s structure.', 'Recall the structural weaknesses of the 1920s economy.'),
@@ -638,6 +679,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 7: 1890-1945',
     title: 'The New Deal',
     prompt: 'Which New Deal program created a permanent system of old-age insurance funded by payroll taxes?',
+    mentorHint: 'Recall which program addressed old age and the unemployed.',
     correct: 'The Social Security Act',
     wrong: [
       miss('The Civilian Conservation Corps (CCC)', 'The CCC provided temporary jobs in conservation, not retirement insurance.', 'Recall which program addressed old age and the unemployed.'),
@@ -653,6 +695,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 7: 1890-1945',
     title: 'Japanese American internment',
     prompt: 'In Korematsu v. United States (1944), the Supreme Court:',
+    mentorHint: 'Recall the controversial outcome of the case.',
     correct: 'Upheld the wartime internment of Japanese Americans as a justified military necessity',
     wrong: [
       miss('Declared the internment of Japanese Americans unconstitutional', 'The Court upheld, rather than struck down, the internment policy.', 'Recall the controversial outcome of the case.'),
@@ -670,6 +713,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 8: 1945-1980',
     title: 'Containment and the Truman Doctrine',
     prompt: 'The Truman Doctrine (1947) established the U.S. policy of:',
+    mentorHint: 'Recall the difference between containment and rollback.',
     correct: 'Containing the spread of communism by supporting nations resisting Soviet influence',
     wrong: [
       miss('Rolling back communism by directly invading the Soviet Union', 'Containment aimed to limit communism\'s spread, not to invade the USSR.', 'Recall the difference between containment and rollback.'),
@@ -685,6 +729,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 8: 1945-1980',
     title: 'Brown v. Board of Education',
     prompt: 'Brown v. Board of Education (1954) overturned which earlier doctrine?',
+    mentorHint: 'Recall what segregation precedent Brown struck down.',
     correct: 'The "separate but equal" doctrine of Plessy v. Ferguson',
     wrong: [
       miss('The judicial review established in Marbury v. Madison', 'Brown relied on judicial review; it did not overturn it.', 'Recall what segregation precedent Brown struck down.'),
@@ -700,6 +745,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 8: 1945-1980',
     title: 'Civil rights strategies',
     prompt: 'The Montgomery Bus Boycott (1955-56) demonstrated the civil rights movement\'s use of:',
+    mentorHint: 'Recall the movement\'s emphasis on nonviolence.',
     correct: 'Nonviolent direct action and economic pressure to challenge segregation',
     wrong: [
       miss('Armed rebellion against local governments', 'The boycott was nonviolent, relying on economic pressure rather than arms.', 'Recall the movement\'s emphasis on nonviolence.'),
@@ -715,6 +761,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 8: 1945-1980',
     title: 'The Cuban Missile Crisis',
     prompt: 'The Cuban Missile Crisis (1962) is widely regarded as significant because it:',
+    mentorHint: 'Consider the crisis\' place in the broader Cold War.',
     correct: 'Brought the United States and Soviet Union closest to nuclear war during the Cold War',
     wrong: [
       miss('Marked the official end of the Cold War', 'The Cold War continued for nearly three more decades.', 'Consider the crisis\' place in the broader Cold War.'),
@@ -730,6 +777,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 8: 1945-1980',
     title: 'The Great Society',
     prompt: 'Lyndon Johnson\'s Great Society programs included which of the following?',
+    mentorHint: 'Recall which programs came under Johnson in the 1960s.',
     correct: 'Medicare and Medicaid, providing health coverage for the elderly and the poor',
     wrong: [
       miss('The creation of Social Security old-age pensions', 'Social Security was a New Deal program from 1935, not the Great Society.', 'Recall which programs came under Johnson in the 1960s.'),
@@ -745,6 +793,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 8: 1945-1980',
     title: 'Vietnam and the credibility gap',
     prompt: 'The Tet Offensive (1968) had a major impact on the Vietnam War because it:',
+    mentorHint: 'Consider the gap between military results and public perception.',
     correct: 'Undermined American confidence in official optimism and increased opposition to the war',
     wrong: [
       miss('Was a clear, decisive military victory for North Vietnam', 'Militarily the offensive was largely repulsed; its impact was political and psychological.', 'Consider the gap between military results and public perception.'),
@@ -760,6 +809,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 8: 1945-1980',
     title: 'Watergate',
     prompt: 'The Watergate scandal ultimately led to:',
+    mentorHint: 'Recall how Nixon left office.',
     correct: 'The resignation of President Richard Nixon in 1974',
     wrong: [
       miss('The impeachment and conviction of President Nixon by the Senate', 'Nixon resigned before the full House voted; he was never convicted by the Senate.', 'Recall how Nixon left office.'),
@@ -777,6 +827,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 9: 1980-Present',
     title: 'Reaganomics',
     prompt: 'The economic policies known as "Reaganomics" emphasized:',
+    mentorHint: 'Recall the supply-side approach.',
     correct: 'Tax cuts, deregulation, and reduced domestic spending to stimulate growth (supply-side economics)',
     wrong: [
       miss('Higher taxes on businesses and expanded social welfare programs', 'Reaganomics cut taxes and trimmed domestic spending, the opposite of this.', 'Recall the supply-side approach.'),
@@ -792,6 +843,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 9: 1980-Present',
     title: 'The end of the Cold War',
     prompt: 'The fall of the Berlin Wall in 1989 symbolized:',
+    mentorHint: 'Recall when the Cold War started versus when it ended.',
     correct: 'The collapse of communist control in Eastern Europe and the approaching end of the Cold War',
     wrong: [
       miss('The beginning of the Cold War between the superpowers', 'The Cold War had begun decades earlier; the Wall\'s fall signaled its end.', 'Recall when the Cold War started versus when it ended.'),
@@ -807,6 +859,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 9: 1980-Present',
     title: 'The information economy',
     prompt: 'The "digital revolution" of the late 20th and early 21st centuries most transformed the American economy by:',
+    mentorHint: 'Consider the rise of computers and the internet.',
     correct: 'Shifting it toward information technology, services, and globalized communication and trade',
     wrong: [
       miss('Returning the economy to its 19th-century industrial manufacturing base', 'The trend moved away from heavy manufacturing toward services and technology.', 'Consider the rise of computers and the internet.'),
@@ -822,6 +875,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 9: 1980-Present',
     title: 'Post-9/11 policy',
     prompt: 'A major domestic policy response to the September 11, 2001 attacks was:',
+    mentorHint: 'Recall the expansion of homeland security.',
     correct: 'Passage of the USA PATRIOT Act and creation of the Department of Homeland Security',
     wrong: [
       miss('The repeal of all federal surveillance and security agencies', 'The response expanded, not eliminated, security and surveillance powers.', 'Recall the expansion of homeland security.'),
@@ -837,6 +891,7 @@ export const colApUSHistoryHigh103TopUpQuestions: Question[] = makeQuestionBank(
     chapter: 'Period 9: 1980-Present',
     title: 'Migration and demographic change',
     prompt: 'Since 1980, immigration to the United States has been characterized chiefly by:',
+    mentorHint: 'Recall the demographic shifts after 1980.',
     correct: 'Rising numbers of immigrants from Latin America and Asia, reshaping the nation\'s demographics',
     wrong: [
       miss('A near-total halt to immigration from all regions', 'Immigration grew substantially during this period rather than halting.', 'Recall the demographic shifts after 1980.'),

@@ -194,8 +194,33 @@ const CORRECT_SHORTENED: Record<number, { newCorrect?: string; lessonAddendum?: 
 function tagMentorHint(questions: Question[]): Question[] {
   return questions.map((q) => {
     const hint = MENTOR_HINTS[q.id]
-    return hint ? { ...q, mentorHint: hint } : q
+    return { ...q, mentorHint: hint ?? quantFallbackMentorHint(q) }
   })
+}
+
+function quantFallbackMentorHint(q: Question): string {
+  const text = `${q.chapter} ${q.title} ${q.prompt}`.toLowerCase()
+
+  if (text.includes('calculus') || text.includes('limit') || text.includes('derivative') || text.includes('taylor')) {
+    return 'Name the calculus object first: limit, derivative, series, or optimization. Then use the local rule or expansion that preserves the behavior near the point in the prompt.'
+  }
+  if (text.includes('linear algebra') || text.includes('matrix') || text.includes('eigen') || text.includes('rank')) {
+    return 'Translate the matrix fact into eigenvalues, rank, trace, determinant, or column independence. Quant screens often reward the invariant that stays true under the stated matrix assumptions.'
+  }
+  if (text.includes('stochastic') || text.includes('brownian') || text.includes('ito') || text.includes('martingale')) {
+    return 'Start from the process definition and track the drift, volatility, and conditioning information. For Ito-style questions, remember the second-order term from quadratic variation.'
+  }
+  if (text.includes('option') || text.includes('delta') || text.includes('gamma') || text.includes('put-call') || text.includes('hedge')) {
+    return 'Think in replication and payoff terms before reaching for a formula. Identify how the option value changes with spot, time, volatility, rates, or dividends, then match that sensitivity to the Greek or parity relation.'
+  }
+  if (text.includes('finance') || text.includes('portfolio') || text.includes('risk') || text.includes('isda') || text.includes('spread')) {
+    return 'Map the finance term to the risk or cash-flow mechanism it controls. The best quant-finance answer should explain payoff, exposure, collateral, discounting, or portfolio effect rather than only naming jargon.'
+  }
+  if (text.includes('algorithm') || text.includes('programming') || text.includes('heap') || text.includes('array')) {
+    return 'Match the data structure to the query and state the time or memory tradeoff. Interview answers usually prefer the simplest approach that meets the constraint.'
+  }
+
+  return 'Identify the mathematical structure before calculating: symmetry, invariance, conditioning, optimization, or replication. A good quant answer names the principle and then applies it cleanly to the facts.'
 }
 
 function applyCorrectShortening(questions: Question[]): Question[] {

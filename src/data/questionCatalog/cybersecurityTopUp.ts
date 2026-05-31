@@ -32,6 +32,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'The CIA triad splits security harm into three questions: was data exposed (confidentiality), was it altered or corrupted (integrity), or was access lost (availability)? An accuracy failure with no exposure and no downtime is purely an integrity problem.',
+    mentorHint:
+      'Use the CIA triad as three separate diagnostic questions: was data exposed, was data changed, or was access lost? The scenario usually points to one primary kind of harm.',
     source,
     generated: true,
   },
@@ -61,6 +63,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Precision matters: a vulnerability is a weakness, a threat is something that could exploit it, and risk is the resulting exposure (likelihood × impact). Mixing these up leads to muddled prioritization.',
+    mentorHint:
+      'Security vocabulary separates the actor, the weakness, and the exposure. Identify whether the scenario describes something that attacks, something that can be exploited, or the combined business risk.',
     source,
     generated: true,
   },
@@ -91,6 +95,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Risk prioritization weighs likelihood against impact. Defenders routinely overspend on dramatic, rare scenarios while ignoring high-frequency, already-demonstrated risks like password reuse that are both likely and cheap to fix.',
+    mentorHint:
+      'Risk prioritization is not just worst-case imagination. Weigh likelihood, impact, and evidence from previous incidents, then prefer controls that reduce the most probable meaningful loss.',
     source,
     generated: true,
   },
@@ -123,6 +129,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Business email compromise (BEC) and vendor/invoice fraud are among the costliest cybercrimes by dollar loss because the email looks legitimate. The defense is out-of-band verification: confirm any payment or bank-detail change using a contact you already trusted, never one supplied in the message.',
+    mentorHint:
+      'Business email compromise abuses trust and routine payment workflows. Verify money-movement changes through a channel you already trusted before the suspicious request arrived.',
     source,
     generated: true,
   },
@@ -153,6 +161,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'A QR code is simply an encoded URL, so "quishing" can deliver the same credential-harvesting pages as a phishing link — and printed codes bypass email filters entirely. Treat any QR code asking for credentials or payment with the same suspicion as an unexpected link, and verify through known channels.',
+    mentorHint:
+      'A QR code is just a URL with the destination hidden until scan time. Treat urgency, credential requests, and unverified physical notices as social-engineering signals.',
     source,
     generated: true,
   },
@@ -183,6 +193,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Credential stuffing takes username/password pairs leaked from one breach and automatically tries them on many other services, succeeding wherever people reused the password. Unique passwords (via a password manager) and MFA break the chain.',
+    mentorHint:
+      'After a breach, attackers try leaked username and password pairs wherever they might also work. Unique passwords and MFA break the chain between one compromised site and another account.',
     source,
     generated: true,
   },
@@ -215,6 +227,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'MFA fatigue (a.k.a. push bombing) floods a victim with approval prompts after stealing their password, betting they will approve one to make it stop — the tactic used in the 2022 Uber breach. Deny all prompts, change the password, and report it; phishing-resistant factors like passkeys defeat this entirely.',
+    mentorHint:
+      'Unexpected MFA prompts are evidence, not annoyance. They often mean the password layer has already failed, so the response should preserve the second factor and trigger account protection.',
     source,
     generated: true,
   },
@@ -244,6 +258,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Phishing-resistant MFA (FIDO2/WebAuthn keys and passkeys) cryptographically binds the login to the genuine site’s domain, so a credential sent to a look-alike domain simply fails — no user decision can leak it. Codes, SMS, and push approvals can all be relayed to a fake page in real time.',
+    mentorHint:
+      'Phishing-resistant authentication verifies the site origin, not just the person. Consider whether the factor can be tricked into approving a fake domain that looks convincing to a human.',
     source,
     generated: true,
   },
@@ -274,6 +290,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Recovery (backup) codes are single-use keys that let you back into an account if you lose your authenticator. Store them somewhere secure and offline — a password manager’s secure note or printed in a safe — because anyone who reads them can bypass your MFA.',
+    mentorHint:
+      'Recovery codes are backup credentials for when the normal second factor is unavailable. Store them like emergency keys: offline, private, and not in the same place as the device they recover.',
     source,
     generated: true,
   },
@@ -305,6 +323,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'The cloud shared-responsibility model divides duties by service model: in IaaS the provider secures the physical infrastructure while the customer patches and hardens the guest OS and applications. Responsibility shifts toward the provider as you move to PaaS and SaaS — but "the cloud handles it" is a dangerous assumption in IaaS.',
+    mentorHint:
+      'Cloud responsibility shifts by service model. In infrastructure services, customers still operate the guest system and application stack even though the provider owns the physical layer.',
     source,
     generated: true,
   },
@@ -335,6 +355,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'A VPN encrypts data in transit between your device and the VPN server, protecting against local eavesdropping. It does not inspect content, so it cannot stop phishing pages, malicious attachments, or malware — those depend on endpoint protection and user judgment.',
+    mentorHint:
+      'A VPN protects traffic over a tunnel, but it does not make endpoints trustworthy or websites safe. Separate network privacy from malware defense, phishing resistance, and browser security.',
     source,
     generated: true,
   },
@@ -364,6 +386,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Encryption at rest (e.g., full-disk encryption like BitLocker or FileVault) protects stored data on devices and backups; encryption in transit (TLS/HTTPS, VPNs) protects data moving across a network. A stolen, powered-off laptop is the textbook at-rest scenario.',
+    mentorHint:
+      'Classify encryption by where the data is in its lifecycle. Stored data, moving data, and actively processed data have different protections and different failure modes.',
     source,
     generated: true,
   },
@@ -394,6 +418,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Cloud misconfiguration — especially publicly readable storage buckets — is one of the most common causes of data exposure. The customer owns access configuration under the shared-responsibility model, and "public" storage is continuously scanned and indexed by attackers and researchers alike.',
+    mentorHint:
+      'Public cloud storage exposure is an access-control problem. Start from least privilege and ask which identities genuinely need read access, then verify the setting from outside the account.',
     source,
     generated: true,
   },
@@ -426,6 +452,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Modern ransomware deliberately hunts for and encrypts reachable backups. The 3-2-1 rule (three copies, two media, one offsite) has evolved to add an immutable or air-gapped copy — one that cannot be altered or deleted even with admin credentials — because that is the copy that survives an attack that owns the network.',
+    mentorHint:
+      'Ransomware recovery depends on copies the attacker cannot alter. Backups that are online, writable, or mounted with the same credentials may be encrypted along with production data.',
     source,
     generated: true,
   },
@@ -455,6 +483,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Lateral movement is how a single compromised endpoint becomes an organization-wide incident: attackers reuse credentials and exploit trust between systems to expand their footprint, often for days, before acting. Network segmentation and least privilege shrink the resulting blast radius.',
+    mentorHint:
+      'Initial compromise is often only the first step. Watch for the attacker expanding access across hosts, accounts, shares, and admin paths after gaining a foothold.',
     source,
     generated: true,
   },
@@ -484,6 +514,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Double extortion encrypts a victim’s data and steals a copy, threatening to publish it if the ransom is unpaid. This defeats the classic "we have good backups" defense, because restoring files does not undo the threat of public disclosure — which is why prevention and data protection still matter alongside backups.',
+    mentorHint:
+      'Modern ransomware is also an extortion workflow. Think beyond file encryption and ask whether the attacker has stolen data they can threaten to publish.',
     source,
     generated: true,
   },
@@ -514,6 +546,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Macro-enabled Office documents are a long-running malware-delivery method: the "Enable Content/Macros" banner exists to get you to run the attacker’s code. Leave macros disabled, especially on unexpected attachments, and report the message rather than forcing the document to render.',
+    mentorHint:
+      'Documents become dangerous when they can launch code or automation. Treat unexpected requests to enable scripts, macros, or active content as an execution-risk signal.',
     source,
     generated: true,
   },
@@ -546,6 +580,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Indicators of compromise (IOCs) are concrete forensic artifacts — file hashes, malicious IPs/domains, registry keys — that reveal a threat, usually after the fact. Indicators of attack (IOAs) focus on attacker behavior and intent as it happens. Mature detection programs use both: IOCs to catch known threats fast, IOAs to catch novel ones.',
+    mentorHint:
+      'Detection can focus on artifacts or behavior. Specific hashes and domains are easy to swap, while patterns of attacker activity usually survive tool changes.',
     source,
     generated: true,
   },
@@ -576,6 +612,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'A SIEM (Security Information and Event Management) aggregates logs from across an environment and applies correlation rules, so events that look harmless individually — a login spike, a new admin, a big transfer — can together raise one meaningful alert. It is the backbone of detection in most SOCs.',
+    mentorHint:
+      'A SIEM is mainly a place to collect, normalize, correlate, and search security telemetry. It improves visibility and triage, but it is not automatically a preventive control.',
     source,
     generated: true,
   },
@@ -606,6 +644,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'When detection rules are poorly tuned, analysts face a flood of false positives. The result is alert fatigue: real, urgent alerts get missed or dismissed amid the noise, and analyst time is wasted. Good detection requires ongoing tuning so the alerts that fire are the ones worth acting on.',
+    mentorHint:
+      'Alert quality matters more than alert volume. Useful triage separates high-risk signals from background noise and tunes rules so analysts do not learn to ignore everything.',
     source,
     generated: true,
   },
@@ -636,6 +676,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'A high-quality incident ticket states the affected asset, a precise timeline, the indicators (IPs, accounts, anomalies), and the actions already taken. That context lets the next investigator act immediately instead of reconstructing the basics — and it preserves the trail for review.',
+    mentorHint:
+      'A good security ticket transfers context to the next responder. Include observed facts, scope, evidence links, timeline, actions already taken, and the next decision needed.',
     source,
     generated: true,
   },
@@ -668,6 +710,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'The incident-response lifecycle runs preparation → identification → containment → eradication → recovery → lessons learned. Containment (isolating the affected system while preserving evidence) comes before eradication and recovery, because stopping the spread and keeping forensic clues are the priorities once an incident is confirmed.',
+    mentorHint:
+      'Incident handling usually limits spread before deep cleanup. If an attacker is still active, eradication work can fail unless containment first reduces their ability to move or persist.',
     source,
     generated: true,
   },
@@ -698,6 +742,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'A potential data exposure should go through the incident/privacy process immediately, because containment options and breach-notification obligations are often time-sensitive. Fast, honest reporting — not quiet deletion or solo damage control — is what lets the organization meet its legal and customer duties.',
+    mentorHint:
+      'A misdirected customer file is a data-handling incident even if no attacker is involved. Preserve facts, limit further exposure, follow notification rules, and communicate through the response process.',
     source,
     generated: true,
   },
@@ -729,6 +775,8 @@ export const cybersecurityTopUpQuestions: Question[] = makeQuestionBank('Career 
     ],
     lesson:
       'Security is broader than hacking. GRC (governance, risk, and compliance) focuses on policy, framework alignment (e.g., NIST CSF), risk management, and audit readiness — a strong fit for people who think in process and documentation rather than live threat hunting. Other lanes include SOC/blue team, AppSec, cloud security, identity, and incident response.',
+    mentorHint:
+      'Security careers include policy and risk work as well as hands-on defense. Look for the lane that turns requirements, controls, audits, and risk decisions into a managed program.',
     source,
     generated: true,
   },

@@ -10,6 +10,7 @@ export const investingBasicsTopUpQuestions: Question[] = makeQuestionBank('Caree
     chapter: 'Accounts and Where to Hold Investments',
     title: 'Roth vs traditional, in one line',
     prompt: 'You expect to be in a HIGHER tax bracket in retirement than you are today. All else equal, which account is usually more advantageous for new contributions?',
+    mentorHint: 'The Roth/traditional choice is mostly a timing question about when the dollars are taxed. Compare the marginal tax rate you would pay now with the rate you expect when withdrawals happen, then favor paying tax in the lower-rate period.',
     correct: 'A Roth account — you pay tax now at the lower rate, and qualified withdrawals are tax-free',
     wrong: [
       miss('A traditional account — the upfront deduction always wins', 'The deduction helps most when your CURRENT rate is high; if your future rate is higher, paying tax now (Roth) is usually better.', 'Compare today\'s rate to your expected retirement rate.'),
@@ -25,6 +26,7 @@ export const investingBasicsTopUpQuestions: Question[] = makeQuestionBank('Caree
     chapter: 'Fees, Costs, and What They Steal',
     title: 'What a 1% fee really costs',
     prompt: 'Two funds earn the same 7% gross return, but Fund A charges a 1.0% expense ratio and Fund B charges 0.05%. Over 30 years on a $100,000 investment, the fee gap costs roughly:',
+    mentorHint: 'An expense ratio is not a one-time charge; it reduces the return every year on the invested balance. Over long horizons, the fee dollars you lose also lose their chance to compound, so small annual differences can become large dollar gaps.',
     correct: 'Tens of thousands of dollars — fees compound against you just like returns compound for you',
     wrong: [
       miss('About $285 — just 0.95% of the balance once', 'Fees are charged every year on the whole balance, so the drag compounds over decades — far more than a one-time slice.', 'A fee recurs annually and compounds.'),

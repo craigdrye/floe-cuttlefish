@@ -14,6 +14,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Output vs outcome',
     prompt: 'A leader says, "We shipped 14 features last quarter, so the team had a great quarter." Why is this an output-focused judgment a PM should push back on?',
     correct: 'Features shipped is an output; a great quarter is defined by the user or business outcomes those features moved',
+    mentorHint: 'Separate activity from impact: shipping is something the team did, while an outcome is something that changed for users or the business. A PM should ask which behavior, retention, revenue, satisfaction, or efficiency metric moved because of the work.',
     wrong: [
       miss('Because 14 is too few features to count as a good quarter', 'The objection is not the count. A team could ship one feature that moves the business or fifty that move nothing; volume is the wrong axis.', 'Judge by what changed for users or the business, not by how many things shipped.'),
       miss('Because features should be measured in story points, not feature count', 'Swapping one output unit for another output unit does not fix the problem; story points still measure effort, not value delivered.', 'The fix is switching from outputs to outcomes, not to a different effort metric.'),
@@ -29,6 +30,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'PM vs project manager vs PO',
     prompt: 'In a typical product trio, which responsibility most distinctly belongs to the product manager rather than the engineering lead or designer?',
     correct: 'Deciding which problem the team should solve next and why it matters to users and the business',
+    mentorHint: 'Map the trio by decision domain: product frames the problem and desired outcome, design shapes the experience, and engineering owns the technical approach. The PM contribution is not control of every detail; it is choosing the valuable problem and aligning the team around why it matters.',
     wrong: [
       miss('Owning the visual hierarchy and interaction details of each screen', 'That is the designer\'s craft. The PM frames the problem and outcome but does not own pixel-level interaction design.', 'The PM owns what-and-why; design owns the experience craft.'),
       miss('Owning the technical architecture and choosing the database', 'That is the engineering lead\'s domain. The PM should understand constraints but does not pick the stack.', 'Engineering owns the how; the PM owns which problem is worth solving.'),
@@ -44,6 +46,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Decide, recommend, or facilitate',
     prompt: 'A pricing change will affect legal exposure, finance forecasts, and the brand. The PM has done the analysis but does not hold decision rights here. What is the most appropriate PM action?',
     correct: 'Make a clear recommendation with evidence and tradeoffs, and facilitate the decision among the rights-holders',
+    mentorHint: 'Decision rights are part of product judgment: sometimes the PM decides, sometimes they recommend, and sometimes they facilitate a cross-functional call. When legal, finance, or brand risk is material, the strongest PM move is to make tradeoffs legible for the people who own those risks.',
     wrong: [
       miss('Unilaterally announce the new price because the PM owns the product', 'Owning the product roadmap does not mean owning every cross-functional decision. Pricing with legal and finance exposure has other rights-holders.', 'Recognize where you recommend versus where you decide.'),
       miss('Stay silent and let legal and finance figure it out themselves', 'Withholding the analysis abdicates the PM\'s value. Even without decision rights, the PM should inform and recommend.', 'No decision rights still means you bring the evidence and a recommendation.'),
@@ -62,6 +65,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Opportunity solution tree layers',
     prompt: 'In Teresa Torres\'s opportunity solution tree, what sits at the very top and sets the scope for everything below it?',
     correct: 'A desired outcome that the team is trying to move',
+    mentorHint: 'An opportunity solution tree is a discovery map, not a backlog. Start with the measurable outcome, then branch into user opportunities, possible solutions, and the assumptions or experiments that test them.',
     wrong: [
       miss('The list of features the team has already committed to building', 'Committed features are solutions, which sit near the bottom of the tree. Starting from them inverts discovery into solution-justification.', 'The tree runs outcome at top, then opportunities, then solutions, then experiments.'),
       miss('A persona describing the target user demographic', 'A persona is context, not the root. The tree is anchored on the measurable outcome you want to change, not on who the user is.', 'The root is the outcome; opportunities are the unmet needs underneath it.'),
@@ -77,6 +81,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Say-do gap',
     prompt: 'In a user interview, a customer insists, "I would absolutely pay for a weekly summary email." Why should a PM treat this as weak evidence?',
     correct: 'Stated intentions in interviews often diverge from actual behavior; what users say they will do is not what they do',
+    mentorHint: 'Treat hypothetical future claims as low-strength evidence, even when the user is sincere. Stronger discovery evidence comes from past behavior, current workarounds, actual tradeoffs, or commitment tests where saying yes has a cost.',
     wrong: [
       miss('Because email is an outdated channel that no users actually read', 'The channel is not the issue; the same caution applies to any stated future intention regardless of medium.', 'The weakness is self-reported future behavior, not the specific feature.'),
       miss('Because a single interview can never produce any useful signal', 'One interview can surface real pain and hypotheses; the caution is specifically about self-reported willingness to pay, not interviews in general.', 'Interviews are valuable; predicted future actions are the unreliable part.'),
@@ -92,6 +97,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Leading question detector',
     prompt: 'Which discovery interview question is least likely to bias the answer?',
     correct: 'Walk me through the last time you tried to do this. What happened?',
+    mentorHint: 'Good discovery questions reduce two kinds of bias: they avoid pitching your solution and they anchor the user in a specific past episode. Look for the option that invites a story about real behavior instead of agreement with your idea.',
     wrong: [
       miss('Don\'t you think our new dashboard would make this much easier?', 'This is a leading question: it states the desired answer and invites agreement, contaminating the signal.', 'Ask about past behavior openly rather than proposing your solution.'),
       miss('Would you use a feature that automatically organizes everything for you?', 'This asks a user to predict future use of a solution you describe, inviting an agreeable but unreliable yes.', 'Avoid solution-pitching; ask what actually happened last time.'),
@@ -110,6 +116,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Sean Ellis PMF test',
     prompt: 'Using the Sean Ellis product-market-fit test, what threshold of survey respondents saying they would be "very disappointed" if they could no longer use the product is the rough signal of product-market fit?',
     correct: 'At least 40% answering "very disappointed"',
+    mentorHint: 'This test looks for intensity of dependence, not general satisfaction. Recall the rough empirical benchmark used as a PMF signal, and do not substitute a different metric like NPS or a simple majority rule.',
     wrong: [
       miss('At least 90%, because anything less means the product has failed', 'A 90% bar is unrealistically high; Ellis found ~40% across 100+ startups correlated with sustainable growth, not near-universal devotion.', 'The benchmark is around 40%, not near-total satisfaction.'),
       miss('Exactly 50%, because that is a simple majority', 'A clean majority is intuitive but not the empirical threshold. The observed correlation was at roughly 40%.', 'Recall the specific benchmark Ellis derived: about 40%.'),
@@ -125,6 +132,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Naming the non-customer',
     prompt: 'A PM presents a strategy that claims the product is "for everyone who works." Why is the most senior strategic critique here?',
     correct: 'A strategy that serves everyone names no target segment and no tradeoffs, so it cannot guide what to build or differentiate against',
+    mentorHint: 'Strategy earns its keep by making choices under constraint. If a positioning statement does not identify a target segment, non-customers, and tradeoffs, it cannot guide prioritization or create differentiation.',
     wrong: [
       miss('The phrasing is too informal for an executive audience', 'Tone is cosmetic. The substantive failure is the absence of a target segment and explicit non-customers, not word choice.', 'The flaw is strategic scope, not presentation polish.'),
       miss('"Everyone who works" excludes retirees, which is unfair', 'Inclusivity of the phrase is beside the point; even a broader phrase would still fail by naming no focus and no tradeoff.', 'Strategy needs a sharp target and explicit non-customers, not wider wording.'),
@@ -140,6 +148,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Mirror-imaging competitors',
     prompt: 'A competitor ships an AI assistant, and an exec demands the team copy it within the quarter. What is the strongest strategic objection to a pure copy-the-competitor approach?',
     correct: 'Copying erodes differentiation and may not address what our specific customers actually need',
+    mentorHint: 'A competitor launch is a market signal, not a roadmap command. Before copying, ask whether the move fits your target users, positioning, capabilities, and unmet opportunities.',
     wrong: [
       miss('Competitor moves should always be ignored as irrelevant noise', 'Over-correcting the other way is also wrong; a competitor launch is a market signal worth interrogating, not dismissing.', 'Treat the move as a signal to investigate, not an instruction to copy.'),
       miss('AI features are technically impossible to build in one quarter', 'Feasibility varies; the strategic problem is undifferentiated me-too building, not a blanket technical impossibility.', 'The objection is about strategy and customer fit, not engineering timelines.'),
@@ -158,6 +167,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'RICE formula',
     prompt: 'In the RICE prioritization framework, how is the RICE score computed from Reach, Impact, Confidence, and Effort?',
     correct: '(Reach × Impact × Confidence) ÷ Effort',
+    mentorHint: 'RICE estimates expected value per unit of work. The value-side factors should increase priority, while effort should reduce it, so reason about which inputs belong above or below the line.',
     wrong: [
       miss('Reach + Impact + Confidence + Effort', 'Summing all four treats effort as additive value, but higher effort should lower priority. Effort must divide, not add.', 'Effort sits in the denominator; the other three multiply on top.'),
       miss('(Reach × Impact × Effort) ÷ Confidence', 'This swaps Confidence and Effort. More effort should reduce the score and more confidence should raise it, so Effort divides.', 'Confidence multiplies the numerator; Effort divides.'),
@@ -173,6 +183,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'RICE arithmetic',
     prompt: 'Feature A: Reach 1000, Impact 2, Confidence 0.8, Effort 4. Feature B: Reach 500, Impact 3, Confidence 1.0, Effort 2. Using RICE, which has the higher score?',
     correct: 'Feature B, with a RICE score of 750 versus Feature A\'s 400',
+    mentorHint: 'Do the whole RICE calculation before comparing: multiply reach, impact, and confidence, then divide by effort. A feature with lower reach can still win if its impact, confidence, and effort profile create better value per unit of work.',
     wrong: [
       miss('Feature A, because it reaches twice as many users', 'Reach alone does not decide it. A\'s score is (1000×2×0.8)/4 = 400, lower than B\'s 750 despite higher reach.', 'Compute the full formula; B wins 750 to 400.'),
       miss('They tie, because the products of the numerators are equal', 'They are not equal: A\'s numerator is 1600 and B\'s is 1500, and effort differs too. Dividing by effort gives 400 vs 750.', 'Divide each numerator by its effort before comparing.'),
@@ -188,6 +199,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Kano: delighter vs must-be',
     prompt: 'In the Kano model, a feature whose absence makes customers very dissatisfied but whose presence only brings them to neutral (never delight) is which type?',
     correct: 'A must-be (basic) feature',
+    mentorHint: 'Kano categories describe how satisfaction changes when a feature is absent or present. Focus on the asymmetric pattern: some features only prevent pain, while others create proportional gains or unexpected delight.',
     wrong: [
       miss('A delighter (attractive) feature', 'Delighters are the opposite: absent, no one misses them; present, they create delight. A must-be can only avoid dissatisfaction, never delight.', 'Delighters surprise upward; must-be features only prevent anger.'),
       miss('A performance (one-dimensional) feature', 'Performance features scale satisfaction linearly with how much you provide. A must-be caps at neutral no matter how well done.', 'Performance scales up with more; must-be just clears a floor.'),
@@ -203,6 +215,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'MoSCoW "Won\'t have"',
     prompt: 'In MoSCoW prioritization for a timeboxed release, what does the "Won\'t have" category mean?',
     correct: 'Items the team has explicitly agreed to exclude from this delivery timebox',
+    mentorHint: 'MoSCoW is scoped to a specific delivery window, so the categories are about what belongs in this release. The most useful version of "no" is explicit: it protects the team from silent scope creep and gives stakeholders a shared boundary.',
     wrong: [
       miss('Items that are technically impossible to ever build', 'Won\'t-have is about this timebox, not permanent infeasibility; many won\'t-haves are deferred, not impossible.', 'It is a deliberate exclusion for now, not a statement of impossibility.'),
       miss('Items that the team forgot to estimate', 'Won\'t-have is a deliberate stakeholder agreement, not an oversight. Forgotten items are a process failure, not a MoSCoW category.', 'It is an explicit agreed exclusion, not an accident.'),
@@ -218,6 +231,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Now-Next-Later honesty',
     prompt: 'Why do many teams prefer a now-next-later roadmap over a roadmap of precise dated feature commitments?',
     correct: 'It communicates priority and confidence honestly while avoiding false precision about distant work',
+    mentorHint: 'Roadmaps communicate confidence as much as sequence. Near-term work can be more committed, while distant work should usually express direction and priority without pretending that uncertain dates are promises.',
     wrong: [
       miss('Because it lets the team avoid ever being held accountable for anything', 'Now-next-later still commits to the "now" horizon; it avoids false precision on the far future, not all accountability.', 'It manages uncertainty honestly; it does not erase commitment.'),
       miss('Because stakeholders cannot read calendars and prefer vague words', 'Stakeholders read calendars fine; the issue is that distant dates are guesses presented as promises, not stakeholder literacy.', 'The problem is false precision on the future, not audience capability.'),
@@ -236,6 +250,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'The peeking problem',
     prompt: 'A PM checks an A/B test five separate times and stops it the first moment p drops below 0.05. Why is this conclusion untrustworthy?',
     correct: 'Repeatedly peeking and stopping at the first significant result inflates the false-positive rate well above the intended 5%',
+    mentorHint: 'Experiment rules matter because the stopping rule changes the error rate. If you repeatedly look for a lucky crossing and stop when you see one, you are no longer running the test implied by a single fixed threshold.',
     wrong: [
       miss('Because p-values are meaningless and should never be used at all', 'P-values are useful when the test design is respected. The flaw is the stopping rule, not the existence of p-values.', 'The problem is optional stopping, not p-values themselves.'),
       miss('Because a p-value below 0.05 always proves the variant is better', 'It does not prove that even once; and checking repeatedly makes a spurious crossing far more likely. Significance is probabilistic.', 'Frequent checks raise the odds of a chance crossing, not certainty.'),
@@ -251,6 +266,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Novelty effect',
     prompt: 'A redesigned feature shows a big engagement spike in week one that fades to baseline by week three. What most likely happened?',
     correct: 'A novelty effect — users engaged because the change was new, and the lift was not durable',
+    mentorHint: 'Look at durability, not only the first data point. A temporary spike after a visible change can reflect curiosity or attention rather than lasting improvement in the user value loop.',
     wrong: [
       miss('The redesign permanently improved engagement and should be rolled out widely', 'Permanent improvement would sustain past week one. A spike that decays to baseline is the signature of a temporary novelty bump.', 'A lift that fades to baseline is not a durable win.'),
       miss('The instrumentation broke in weeks two and three', 'Possible but not the likeliest reading of a clean rise-then-fade pattern, which is the classic novelty curve.', 'A rise-then-fade to baseline is the textbook novelty shape, not a tracking gap.'),
@@ -266,6 +282,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'NPS calculation',
     prompt: 'A survey returns 55% promoters (9-10), 30% passives (7-8), and 15% detractors (0-6). What is the Net Promoter Score?',
     correct: '40',
+    mentorHint: 'NPS is a net score, not an average of all response groups. Identify promoters and detractors, ignore passives for the subtraction, and keep the result as a score rather than a percent complete.',
     wrong: [
       miss('70', '70 is promoters minus passives (55 − 30) — but NPS subtracts detractors, not passives. Passives are excluded from the subtraction.', 'NPS = %promoters − %detractors; passives drop out.'),
       miss('55', '55 is just the promoter share. NPS nets out detractors: 55 − 15 = 40, not the raw promoter percentage.', 'Subtract the detractor percentage from the promoter percentage.'),
@@ -281,6 +298,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Guardrail metrics',
     prompt: 'A team sets a north-star of "weekly active creators" and adds a guardrail metric of "support tickets per active user." What is the purpose of that guardrail?',
     correct: 'To catch cases where the team boosts the north-star in ways that quietly harm users or the business',
+    mentorHint: 'A north-star metric says what you are trying to grow; guardrails say what must not be harmed while growing it. Think about the bad local optimum a team might accidentally create if it chased the headline number alone.',
     wrong: [
       miss('To replace the north-star metric as the new primary goal', 'A guardrail constrains the primary goal; it does not replace it. The north-star still defines success.', 'Guardrails bound the goal, not become the goal.'),
       miss('To give the support team a performance target to hit', 'A guardrail watches for harm to users, not to set departmental quotas; framing it as a support KPI misses its purpose.', 'It exists to detect collateral damage, not to grade a team.'),
@@ -296,6 +314,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Activation aha moment',
     prompt: 'For a note-taking app, which metric best captures the "activation / aha moment" — the point where a new user first experiences core value?',
     correct: 'Percentage of new users who create and return to at least one note within the first week',
+    mentorHint: 'Activation is the first meaningful experience of the product’s core value, not merely arrival or signup. For a note product, ask what behavior shows the user actually made the product useful and came back to benefit from it.',
     wrong: [
       miss('Total number of accounts created this month', 'Account creation is acquisition, not activation; signing up is not the same as experiencing the core value of the product.', 'Activation is reaching value, not merely signing up.'),
       miss('Average time users spend on the marketing landing page', 'Time on a marketing page is a pre-signup acquisition signal, unrelated to whether a user reached value inside the product.', 'Look for the in-product value moment, not landing-page dwell.'),
@@ -314,6 +333,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Why non-goals matter',
     prompt: 'A PRD lists detailed goals but no "non-goals" section. What is the main risk of omitting non-goals?',
     correct: 'Scope creeps because nothing explicitly states what is out of bounds for this effort',
+    mentorHint: 'Goals define the target; non-goals define the boundary. In delivery, unclear boundaries invite adjacent requests that seem reasonable one by one but collectively change the scope, cost, and learning goal.',
     wrong: [
       miss('Engineers will not know which programming language to use', 'Non-goals scope the product problem, not the tech stack. Language choice is an engineering decision unaffected by a non-goals section.', 'Non-goals bound scope, not implementation details.'),
       miss('The document will be too short to look professional', 'Length is not the concern. A PRD can be short and excellent; the missing non-goals create a real scope risk, not a cosmetic one.', 'The risk is uncontrolled scope, not document size.'),
@@ -329,6 +349,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Testable acceptance criteria',
     prompt: 'Which acceptance criterion is written well enough that QA and engineering can objectively verify it?',
     correct: 'When a user submits the form with an empty email field, an inline error appears within 1 second',
+    mentorHint: 'Acceptance criteria should turn disagreement into verification. Look for a condition, a user action, and an observable result that QA can pass or fail without debating taste.',
     wrong: [
       miss('The form should feel modern and delightful to use', '"Feel modern and delightful" is subjective and unverifiable; two reviewers could disagree forever with no objective test.', 'Acceptance criteria must be objectively checkable, not aesthetic feelings.'),
       miss('The form should work well in most situations', '"Work well" and "most situations" are undefined; there is no concrete condition or expected result to test against.', 'Specify the exact condition and observable result.'),
@@ -344,6 +365,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Constraint changes the decision',
     prompt: 'Mid-discovery, engineering reveals that real-time sync would require a six-month infrastructure rebuild, while near-real-time (30-second) sync is trivial. What should a strong PM do?',
     correct: 'Revisit whether users actually need true real-time, since the constraint may make near-real-time the better bet',
+    mentorHint: 'Feasibility is not a separate phase from product judgment; it is information that can change the shape of the best solution. Ask what user need the requirement serves and whether a cheaper constraint-aware option satisfies it well enough.',
     wrong: [
       miss('Insist on true real-time because that was the original spec', 'Treating the original spec as sacred ignores new information. A constraint that costs six months should reopen the requirement, not lock it.', 'Let a material constraint reshape the decision instead of clinging to the spec.'),
       miss('Drop the feature entirely because anything hard is not worth doing', 'Difficulty alone is not a kill criterion; the near-real-time option is cheap and may fully satisfy the user need.', 'Weigh the cheap alternative against the real user need before abandoning.'),
@@ -362,6 +384,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Staged rollout order',
     prompt: 'A team wants to de-risk a major release using a staged rollout. Which ordering reflects standard practice for minimizing blast radius?',
     correct: 'Internal dogfooding, then a limited beta, then a small canary (e.g., 5%), then a gradual ramp to 100%',
+    mentorHint: 'Staged rollout is risk management through progressively larger exposure. The safest sequence starts where the blast radius is smallest, checks signals, and only then expands to broader user populations.',
     wrong: [
       miss('Release to 100% of users first, then dogfood internally if problems arise', 'This inverts the point: shipping to everyone before internal testing maximizes blast radius instead of minimizing it.', 'Start narrow (internal/canary) and widen; never start at 100%.'),
       miss('Canary to 50% immediately, then dogfood, then beta', '50% is far too large for a first canary, and dogfooding should precede external exposure, not follow a half-population release.', 'Canary means a small slice first; internal testing comes before users.'),
@@ -377,6 +400,7 @@ export const productManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     title: 'Launch enablement gap',
     prompt: 'A complex new feature launches with great engineering but no briefing for sales or support. What is the most likely consequence?',
     correct: 'Customers hit confusion, support and sales cannot answer questions, and adoption stalls despite a solid build',
+    mentorHint: 'Launch success is not just whether code shipped; it is whether the market and internal teams can absorb the change. Think about who must explain, support, sell, and measure the feature during the first days of adoption.',
     wrong: [
       miss('Adoption will be perfect because the feature is well engineered', 'Engineering quality does not teach a customer how or why to use a feature; without enablement, even great builds go unused.', 'A solid build still needs people who can explain and support it.'),
       miss('Sales and support do not need to know about product features', 'They are frontline interpreters of the product; uninformed, they give wrong answers and erode trust at exactly the launch moment.', 'Frontline teams must be enabled to carry a launch.'),

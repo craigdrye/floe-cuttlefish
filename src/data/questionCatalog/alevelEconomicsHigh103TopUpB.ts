@@ -13,6 +13,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Business growth and objectives',
     title: 'Horizontal vs vertical integration',
     prompt: 'A supermarket chain buys a rival supermarket chain. What type of integration is this?',
+    mentorHint: 'Ask whether the two firms are at the same stage of the supply chain.',
     correct: 'Horizontal integration',
     wrong: [
       miss('Backward vertical integration', 'Backward vertical integration is a merger with a supplier (an earlier stage of production), not with a competitor at the same stage.', 'Ask whether the two firms are at the same stage of the supply chain.'),
@@ -28,6 +29,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Business growth and objectives',
     title: 'The principal-agent problem',
     prompt: 'In a large public limited company, the principal-agent problem most directly refers to a conflict of interest between which two groups?',
+    mentorHint: 'Think about who owns the firm versus who runs it day to day.',
     correct: 'Shareholders (owners) and managers (directors)',
     wrong: [
       miss('Workers and trade unions', 'A union represents workers rather than acting as their agent in this sense; the classic principal-agent problem in firms concerns the divorce of ownership from control.', 'Think about who owns the firm versus who runs it day to day.'),
@@ -43,6 +45,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Business growth and objectives',
     title: 'Reasons firms stay small',
     prompt: 'Which of the following best explains why some firms deliberately remain small rather than growing?',
+    mentorHint: 'Think about why a niche might suit a small firm even if costs are higher.',
     correct: 'They serve a niche market where demand is limited and personal service is valued',
     wrong: [
       miss('Small firms always have lower average costs than large firms', 'This is not generally true; large firms often enjoy economies of scale that lower average costs, so cost is not the reason small firms exist.', 'Think about why a niche might suit a small firm even if costs are higher.'),
@@ -58,6 +61,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Business growth and objectives',
     title: 'Sales maximisation condition',
     prompt: 'A firm pursuing sales (revenue) maximisation will produce at the output where:',
+    mentorHint: 'Revenue maximisers ignore costs; what happens to total revenue when MR is positive?',
     correct: 'Marginal revenue equals zero',
     wrong: [
       miss('Marginal cost equals marginal revenue', 'MC = MR is the profit-maximising condition, not the revenue-maximising one.', 'Revenue maximisers ignore costs; what happens to total revenue when MR is positive?'),
@@ -76,6 +80,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Costs, revenues and profit',
     title: 'Economies of scale',
     prompt: 'Which of the following is an example of an internal economy of scale?',
+    mentorHint: 'Is the cost saving caused by the firm growing or the industry growing?',
     correct: 'A firm spreads the cost of a large machine over a greater output, lowering average cost',
     wrong: [
       miss('Several firms in an area share a pool of skilled labour', 'This is an external economy of scale, arising from the growth of the whole industry, not from the growth of one firm.', 'Is the cost saving caused by the firm growing or the industry growing?'),
@@ -91,6 +96,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Costs, revenues and profit',
     title: 'Calculating average fixed cost',
     prompt: 'A firm has total fixed costs of 600 and produces 50 units. What is its average fixed cost per unit?',
+    mentorHint: 'AFC = total fixed cost / quantity.',
     correct: '12',
     wrong: [
       miss('30000', 'This multiplies 600 by 50 instead of dividing; average fixed cost is fixed cost divided by output.', 'AFC = total fixed cost / quantity.'),
@@ -106,6 +112,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Costs, revenues and profit',
     title: 'Normal vs supernormal profit',
     prompt: 'A firm is said to be earning normal profit when:',
+    mentorHint: 'Normal profit is the minimum reward to keep the entrepreneur in the industry.',
     correct: 'Total revenue equals total cost, including the opportunity cost of the entrepreneur',
     wrong: [
       miss('Total revenue is zero', 'Zero revenue would mean the firm sells nothing; normal profit is about revenue just covering all costs, not earning nothing.', 'Normal profit is the minimum reward to keep the entrepreneur in the industry.'),
@@ -121,6 +128,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Costs, revenues and profit',
     title: 'Shape of the long-run average cost curve',
     prompt: 'The typically U-shaped long-run average cost curve falls then rises. What explains the rising (upward-sloping) section?',
+    mentorHint: 'Which effect raises average cost as the firm gets very large?',
     correct: 'Diseconomies of scale',
     wrong: [
       miss('Economies of scale', 'Economies of scale explain the falling section of the LRAC curve, not the rising one.', 'Which effect raises average cost as the firm gets very large?'),
@@ -139,6 +147,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Market structures: perfect competition and monopoly',
     title: 'Long-run profit under perfect competition',
     prompt: 'In the long run, a firm in a perfectly competitive market will earn:',
+    mentorHint: 'What happens to profit when free entry is allowed?',
     correct: 'Normal profit only',
     wrong: [
       miss('Persistent supernormal profit', 'Any supernormal profit attracts new entrants because there are no barriers to entry, which competes the profit away.', 'What happens to profit when free entry is allowed?'),
@@ -154,6 +163,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Market structures: perfect competition and monopoly',
     title: 'Allocative efficiency condition',
     prompt: 'Allocative efficiency in a market is achieved when:',
+    mentorHint: 'Allocative efficiency compares price with the marginal cost of the last unit.',
     correct: 'Price equals marginal cost (P = MC)',
     wrong: [
       miss('Price equals average cost (P = AC)', 'P = AC indicates normal profit / break-even, not allocative efficiency.', 'Allocative efficiency compares price with the marginal cost of the last unit.'),
@@ -169,6 +179,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Market structures: perfect competition and monopoly',
     title: 'Conditions for price discrimination',
     prompt: 'For a firm to practise price discrimination successfully, which of the following must hold?',
+    mentorHint: 'Discrimination means different prices, not one price.',
     correct: 'The firm has market power and can prevent resale (no arbitrage) between consumer groups',
     wrong: [
       miss('The product must be sold at a single uniform price', 'Charging a single uniform price is the opposite of price discrimination, which means charging different prices to different groups.', 'Discrimination means different prices, not one price.'),
@@ -184,6 +195,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Market structures: perfect competition and monopoly',
     title: 'Natural monopoly',
     prompt: 'Why is the water supply network often described as a natural monopoly?',
+    mentorHint: 'Think about why duplicating pipe networks would be wasteful.',
     correct: 'Very high fixed costs mean average cost keeps falling over the entire relevant range of output, so one firm supplies most cheaply',
     wrong: [
       miss('Because the government legally bans all competition in every market', 'A natural monopoly arises from cost conditions, not a blanket legal ban; the cause is economies of scale relative to market size.', 'Think about why duplicating pipe networks would be wasteful.'),
@@ -202,6 +214,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Market structures: monopolistic competition and oligopoly',
     title: 'Concentration ratio',
     prompt: 'A four-firm concentration ratio of 85% in an industry indicates that:',
+    mentorHint: 'It is a sum across the top firms, not a per-firm figure.',
     correct: 'The largest four firms together account for 85% of total market sales',
     wrong: [
       miss('Each of the four largest firms has an 85% share', 'The ratio is the combined share of the top firms, not the share of each firm individually.', 'It is a sum across the top firms, not a per-firm figure.'),
@@ -217,6 +230,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Market structures: monopolistic competition and oligopoly',
     title: 'The kinked demand curve',
     prompt: 'The kinked demand curve model of oligopoly is used to explain:',
+    mentorHint: 'Reread what rivals do when one firm raises versus lowers price.',
     correct: 'Price stability (price rigidity) because rivals match price cuts but not price rises',
     wrong: [
       miss('Why oligopoly prices change very frequently', 'The model predicts the opposite, sticky prices, because firms fear the reactions of rivals to any price change.', 'Reread what rivals do when one firm raises versus lowers price.'),
@@ -232,6 +246,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Market structures: monopolistic competition and oligopoly',
     title: 'Collusion in oligopoly',
     prompt: 'A cartel in which firms secretly agree to fix prices and restrict output is an example of:',
+    mentorHint: 'Colluding firms behave more like a single monopolist.',
     correct: 'Overt or tacit collusion that reduces competition and raises prices toward the monopoly level',
     wrong: [
       miss('Perfect competition operating efficiently', 'Cartels reduce competition and are the opposite of competitive behaviour; they create allocative inefficiency.', 'Colluding firms behave more like a single monopolist.'),
@@ -247,6 +262,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Market structures: monopolistic competition and oligopoly',
     title: 'Game theory and the dominant strategy',
     prompt: 'In a one-shot prisoner\'s dilemma between two competing firms, each firm choosing to advertise heavily even though both would be better off not advertising illustrates:',
+    mentorHint: 'Compare the equilibrium payoff with the cooperative payoff.',
     correct: 'A Nash equilibrium that is not the jointly optimal outcome',
     wrong: [
       miss('An outcome that maximises the combined profit of both firms', 'The dilemma is precisely that the equilibrium does not maximise joint profit; both would gain by cooperating.', 'Compare the equilibrium payoff with the cooperative payoff.'),
@@ -262,6 +278,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Market structures: monopolistic competition and oligopoly',
     title: 'Features of monopolistic competition',
     prompt: 'Which feature distinguishes monopolistic competition from perfect competition?',
+    mentorHint: 'Both have easy entry; what differs is the product.',
     correct: 'Firms sell differentiated (non-identical) products and have some price-setting power',
     wrong: [
       miss('There are very high barriers to entry', 'Monopolistic competition, like perfect competition, has low barriers to entry; this is not the distinguishing feature.', 'Both have easy entry; what differs is the product.'),
@@ -280,6 +297,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'The labour market',
     title: 'Derived demand for labour',
     prompt: 'Economists describe the demand for labour as a "derived demand" because it:',
+    mentorHint: 'Where does the firm\'s demand for workers ultimately come from?',
     correct: 'Depends on the demand for the goods and services that labour produces',
     wrong: [
       miss('Is determined only by the size of the working-age population', 'Population affects labour supply, not the derived nature of demand, which flows from product demand.', 'Where does the firm\'s demand for workers ultimately come from?'),
@@ -295,6 +313,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'The labour market',
     title: 'Monopsony in the labour market',
     prompt: 'A monopsony employer in a labour market is one that:',
+    mentorHint: 'Mono-psony refers to a single buyer, not seller.',
     correct: 'Is the dominant or sole buyer of a particular type of labour, giving it wage-setting power',
     wrong: [
       miss('Is the only seller of a good in the product market', 'A sole seller in the product market is a monopoly; a monopsony is a sole or dominant buyer, here of labour.', 'Mono-psony refers to a single buyer, not seller.'),
@@ -310,6 +329,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'The labour market',
     title: 'Effect of a minimum wage in a competitive market',
     prompt: 'In a competitive labour market initially at equilibrium, setting a national minimum wage above the equilibrium wage is most likely to:',
+    mentorHint: 'Compare quantity demanded and supplied at the higher wage.',
     correct: 'Create excess supply of labour (unemployment) as quantity supplied exceeds quantity demanded',
     wrong: [
       miss('Eliminate unemployment completely', 'A minimum wage above equilibrium in a competitive market reduces quantity of labour demanded and raises quantity supplied, tending to create unemployment, not remove it.', 'Compare quantity demanded and supplied at the higher wage.'),
@@ -325,6 +345,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'The labour market',
     title: 'Wage differentials',
     prompt: 'Which factor best explains why surgeons typically earn much more than supermarket cashiers?',
+    mentorHint: 'Think about how scarce and how productive each type of labour is.',
     correct: 'The supply of surgeons is limited by long, costly training while their marginal revenue product is high',
     wrong: [
       miss('Surgeons work many more hours, and pay depends only on hours worked', 'Pay differentials reflect supply and MRP differences, not simply hours; many low-paid jobs also involve long hours.', 'Think about how scarce and how productive each type of labour is.'),
@@ -343,6 +364,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Government intervention and competition policy',
     title: 'Aim of competition policy',
     prompt: 'The main aim of UK competition policy (enforced by the Competition and Markets Authority) is to:',
+    mentorHint: 'Whose interests is the policy designed to protect?',
     correct: 'Protect consumers by promoting competition and preventing the abuse of market power',
     wrong: [
       miss('Guarantee that every firm earns supernormal profit', 'Competition policy works to prevent firms exploiting market power, which tends to erode supernormal profit, not guarantee it.', 'Whose interests is the policy designed to protect?'),
@@ -358,6 +380,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Government intervention and competition policy',
     title: 'Regulating a natural monopoly with RPI-X',
     prompt: 'A regulator imposes an "RPI minus X" price cap on a privatised utility. The "X" factor is designed to:',
+    mentorHint: 'Subtracting X reduces the allowed price increase.',
     correct: 'Force the firm to pass on expected efficiency gains to consumers through lower real prices',
     wrong: [
       miss('Allow the firm to raise prices faster than inflation every year', 'RPI minus X limits price rises to below inflation; it does not let the firm outpace inflation.', 'Subtracting X reduces the allowed price increase.'),
@@ -373,6 +396,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Government intervention and competition policy',
     title: 'Regulatory capture',
     prompt: 'Regulatory capture occurs when:',
+    mentorHint: 'Capture is about whose interests the regulator serves.',
     correct: 'A regulator comes to act in the interests of the firms it regulates rather than consumers',
     wrong: [
       miss('A government nationalises a private firm by force', 'Nationalisation is a change of ownership, not regulatory capture, which is about a regulator being influenced by the industry.', 'Capture is about whose interests the regulator serves.'),
@@ -388,6 +412,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Government intervention and competition policy',
     title: 'Privatisation arguments',
     prompt: 'Which is the strongest economic argument in favour of privatising a state-owned industry?',
+    mentorHint: 'Does selling the firm remove its market power?',
     correct: 'The profit motive and competition can sharpen incentives to cut costs and improve efficiency',
     wrong: [
       miss('Privatisation always removes the need for any regulation', 'Privatised natural monopolies usually still need regulation to protect consumers from abuse of market power.', 'Does selling the firm remove its market power?'),
@@ -406,6 +431,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Fiscal policy and the public finances',
     title: 'Expansionary fiscal policy',
     prompt: 'Which combination represents expansionary fiscal policy?',
+    mentorHint: 'Fiscal policy uses spending and taxation, not interest rates.',
     correct: 'Higher government spending and/or lower taxes',
     wrong: [
       miss('Higher interest rates set by the central bank', 'Changing interest rates is monetary policy, not fiscal policy, and raising rates is contractionary.', 'Fiscal policy uses spending and taxation, not interest rates.'),
@@ -421,6 +447,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Fiscal policy and the public finances',
     title: 'Budget deficit vs national debt',
     prompt: 'What is the difference between the budget deficit and the national debt?',
+    mentorHint: 'One is measured per year, the other is a total.',
     correct: 'The deficit is the annual shortfall of revenue against spending; the national debt is the accumulated stock of past borrowing',
     wrong: [
       miss('They are two names for exactly the same thing', 'They are related but distinct: a deficit is a yearly flow, while the national debt is a stock that grows when deficits occur.', 'One is measured per year, the other is a total.'),
@@ -436,6 +463,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Fiscal policy and the public finances',
     title: 'Progressive taxation',
     prompt: 'A tax is described as progressive if:',
+    mentorHint: 'Progressivity is about the share of income paid, not equal pounds.',
     correct: 'The proportion of income paid in tax rises as income rises',
     wrong: [
       miss('Everyone pays exactly the same amount of tax in pounds', 'A fixed amount per person is a lump-sum (poll) tax and is regressive in proportional terms, not progressive.', 'Progressivity is about the share of income paid, not equal pounds.'),
@@ -451,6 +479,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Fiscal policy and the public finances',
     title: 'Automatic stabilisers',
     prompt: 'During a recession, automatic stabilisers tend to:',
+    mentorHint: 'The word "automatic" is the clue.',
     correct: 'Cushion the fall in aggregate demand as tax receipts fall and welfare spending rises without new policy decisions',
     wrong: [
       miss('Require a new Act of Parliament each time before they operate', 'Automatic stabilisers work automatically through existing tax and benefit systems, with no new legislation needed.', 'The word "automatic" is the clue.'),
@@ -469,6 +498,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Monetary policy and the financial sector',
     title: 'Transmission of a rate cut',
     prompt: 'If the Bank of England cuts the base interest rate, the most likely short-run effect on aggregate demand is that AD:',
+    mentorHint: 'What happens to the cost of borrowing when rates fall?',
     correct: 'Rises, as cheaper borrowing and lower saving returns boost consumption and investment',
     wrong: [
       miss('Falls, because lower rates discourage all spending', 'Lower rates make borrowing cheaper and saving less attractive, encouraging spending, so AD tends to rise, not fall.', 'What happens to the cost of borrowing when rates fall?'),
@@ -484,6 +514,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Monetary policy and the financial sector',
     title: 'Quantitative easing',
     prompt: 'Quantitative easing (QE) is best described as a policy in which a central bank:',
+    mentorHint: 'QE is an unconventional tool used near the zero lower bound.',
     correct: 'Creates new money electronically to buy financial assets, mainly government bonds, to lower yields and boost spending',
     wrong: [
       miss('Raises the base interest rate sharply to reduce inflation', 'Raising rates is conventional contractionary monetary policy, not QE; QE is used when rates are already very low.', 'QE is an unconventional tool used near the zero lower bound.'),
@@ -499,6 +530,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Monetary policy and the financial sector',
     title: 'Role of the central bank as lender of last resort',
     prompt: 'A central bank acting as "lender of last resort" means it:',
+    mentorHint: 'Who does the central bank lend to in a crisis?',
     correct: 'Provides emergency liquidity to solvent banks facing a short-term shortage of funds to prevent a banking collapse',
     wrong: [
       miss('Lends money to ordinary households who cannot get a mortgage', 'The lender-of-last-resort function supports the banking system, not individual retail borrowers.', 'Who does the central bank lend to in a crisis?'),
@@ -514,6 +546,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Monetary policy and the financial sector',
     title: 'Market bubbles and financial instability',
     prompt: 'A speculative asset-price "bubble" is characterised by:',
+    mentorHint: 'Bubbles are about prices detaching from underlying value.',
     correct: 'Asset prices rising far above fundamental value, driven by expectations of further price rises, before a sharp crash',
     wrong: [
       miss('Asset prices staying exactly equal to their fundamental value at all times', 'A bubble is defined by prices diverging from fundamentals, not by them matching fundamentals.', 'Bubbles are about prices detaching from underlying value.'),
@@ -532,6 +565,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Supply-side policies',
     title: 'Identifying a supply-side policy',
     prompt: 'Which of the following is a supply-side policy?',
+    mentorHint: 'Supply-side policies aim to shift LRAS, not just AD.',
     correct: 'Investment in education and training to raise workforce productivity',
     wrong: [
       miss('Cutting interest rates to boost consumer borrowing', 'Cutting rates is a demand-side (monetary) policy that works mainly through aggregate demand, not productive capacity.', 'Supply-side policies aim to shift LRAS, not just AD.'),
@@ -547,6 +581,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Supply-side policies',
     title: 'Effect of effective supply-side policy on the PPF and LRAS',
     prompt: 'A successful supply-side policy that raises productivity is best illustrated by:',
+    mentorHint: 'Which curve represents productive capacity?',
     correct: 'An outward shift of the LRAS curve and the production possibility frontier',
     wrong: [
       miss('A rightward shift of the aggregate demand curve only', 'Shifting AD is a demand-side effect; supply-side policies are shown by a shift in LRAS (and the PPF).', 'Which curve represents productive capacity?'),
@@ -562,6 +597,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Supply-side policies',
     title: 'Market-based vs interventionist supply-side policy',
     prompt: 'Which pairing correctly classifies the supply-side policy?',
+    mentorHint: 'Market-based policies reduce government intervention; this increases it.',
     correct: 'Cutting income tax to improve work incentives is market-based; government-funded apprenticeships are interventionist',
     wrong: [
       miss('Building a state-funded motorway network is a market-based policy', 'Government-funded infrastructure is an interventionist supply-side policy, not market-based.', 'Market-based policies reduce government intervention; this increases it.'),
@@ -580,6 +616,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'International trade and globalisation',
     title: 'Comparative advantage',
     prompt: 'According to the theory of comparative advantage, a country should specialise in producing a good if it can produce that good:',
+    mentorHint: 'Compare what each country gives up, not how many people it employs.',
     correct: 'At a lower opportunity cost than its trading partner',
     wrong: [
       miss('Using more workers than its trading partner', 'Comparative advantage is about opportunity cost, not the number of workers used.', 'Compare what each country gives up, not how many people it employs.'),
@@ -595,6 +632,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'International trade and globalisation',
     title: 'Effect of a tariff',
     prompt: 'A government places a tariff on imported steel. The most likely direct effect is that:',
+    mentorHint: 'A tax on imports raises their price.',
     correct: 'The domestic price of steel rises and the quantity of imports falls',
     wrong: [
       miss('The domestic price of steel falls, helping consumers', 'A tariff raises the price imported steel sells for, increasing the domestic price, so consumers pay more, not less.', 'A tax on imports raises their price.'),
@@ -610,6 +648,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'International trade and globalisation',
     title: 'Trade creation and trade diversion',
     prompt: 'When a country joins a customs union and switches from a low-cost non-member supplier to a higher-cost member supplier because of the common external tariff, this is called:',
+    mentorHint: 'Trade creation moves trade toward the more efficient producer.',
     correct: 'Trade diversion',
     wrong: [
       miss('Trade creation', 'Trade creation is switching from a high-cost domestic source to a lower-cost member, which raises welfare; this scenario is the welfare-reducing opposite.', 'Trade creation moves trade toward the more efficient producer.'),
@@ -625,6 +664,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'International trade and globalisation',
     title: 'Causes of globalisation',
     prompt: 'Which factor has most directly contributed to the acceleration of globalisation in recent decades?',
+    mentorHint: 'Globalisation is associated with fewer, not more, trade barriers.',
     correct: 'Falling transport and communication costs together with trade liberalisation',
     wrong: [
       miss('A worldwide rise in protectionist tariff barriers', 'Rising protectionism would slow globalisation; it has been the reduction of trade barriers that has driven it.', 'Globalisation is associated with fewer, not more, trade barriers.'),
@@ -643,6 +683,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Exchange rates and the balance of payments',
     title: 'Effect of currency depreciation',
     prompt: 'If the pound depreciates against other currencies, the most likely immediate effect is that:',
+    mentorHint: 'A weaker pound makes UK goods cheaper for foreigners.',
     correct: 'UK exports become cheaper abroad and imports become more expensive in the UK',
     wrong: [
       miss('UK exports become more expensive abroad and imports cheaper', 'Depreciation lowers the foreign-currency price of exports and raises the domestic price of imports, the reverse of this.', 'A weaker pound makes UK goods cheaper for foreigners.'),
@@ -658,6 +699,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Exchange rates and the balance of payments',
     title: 'Components of the current account',
     prompt: 'Which of the following is recorded in the current account of the balance of payments?',
+    mentorHint: 'Investment flows belong to the financial account.',
     correct: 'The value of goods and services exported and imported (trade balance)',
     wrong: [
       miss('Foreign direct investment used to build a new factory abroad', 'FDI is recorded in the financial account, not the current account.', 'Investment flows belong to the financial account.'),
@@ -673,6 +715,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Exchange rates and the balance of payments',
     title: 'Fixed exchange rate maintenance',
     prompt: 'To defend a fixed exchange rate when there is downward pressure on its currency, a central bank can:',
+    mentorHint: 'To support the currency the bank must buy, not sell, it.',
     correct: 'Buy its own currency using foreign-exchange reserves and/or raise interest rates',
     wrong: [
       miss('Sell large amounts of its own currency to push the value down further', 'Selling its own currency would weaken it further, the opposite of defending against depreciation pressure.', 'To support the currency the bank must buy, not sell, it.'),
@@ -688,6 +731,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Exchange rates and the balance of payments',
     title: 'Evaluating a current account deficit',
     prompt: 'Which statement about a persistent current account deficit is most accurate?',
+    mentorHint: 'Consider why the deficit exists and how it is funded.',
     correct: 'It is not necessarily harmful, and whether it is a problem depends on its cause, size and how it is financed',
     wrong: [
       miss('A current account deficit is always a sign of a failing economy', 'A deficit can reflect strong domestic demand or investment inflows and need not signal failure; context matters.', 'Consider why the deficit exists and how it is funded.'),
@@ -706,6 +750,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Economic development and emerging economies',
     title: 'Measuring development with HDI',
     prompt: 'The Human Development Index (HDI) combines income per head with which other two dimensions?',
+    mentorHint: 'HDI is a broad development measure, not a stability measure.',
     correct: 'Health (life expectancy) and education',
     wrong: [
       miss('Inflation and unemployment', 'Inflation and unemployment are macroeconomic indicators, not the dimensions used in the HDI.', 'HDI is a broad development measure, not a stability measure.'),
@@ -721,6 +766,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Economic development and emerging economies',
     title: 'The primary product dependency problem',
     prompt: 'Why can heavy dependence on exporting primary commodities hinder a developing country\'s growth?',
+    mentorHint: 'Do people buy a lot more raw food as they get richer?',
     correct: 'Commodity prices are volatile and tend to have low income elasticity, causing unstable and limited export earnings',
     wrong: [
       miss('Primary products always have a very high income elasticity of demand', 'Many primary products have low income elasticity, so demand grows slowly as world incomes rise, limiting earnings growth.', 'Do people buy a lot more raw food as they get richer?'),
@@ -736,6 +782,7 @@ export const alevelEconomicsHigh103TopUpBQuestions: Question[] = makeQuestionBan
     chapter: 'Economic development and emerging economies',
     title: 'The savings gap and the Harrod-Domar model',
     prompt: 'In the Harrod-Domar growth model, what is identified as the key constraint on growth in poor economies?',
+    mentorHint: 'The problem is too little, not too much, investment finance.',
     correct: 'A low level of saving, which limits the funds available for investment',
     wrong: [
       miss('Too much foreign investment flooding into the country', 'The model emphasises a shortage of domestic saving and investment, not an excess of foreign investment.', 'The problem is too little, not too much, investment finance.'),

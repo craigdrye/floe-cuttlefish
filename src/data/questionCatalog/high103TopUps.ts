@@ -185,7 +185,72 @@ import { principles_economics_3eHigh103TopUpBQuestions } from './principles_econ
 import { psychology_2eHigh103TopUpAQuestions } from './psychology_2eHigh103TopUpA'
 import { psychology_2eHigh103TopUpBQuestions } from './psychology_2eHigh103TopUpB'
 
-export const HIGH_103_TOPUPS: Record<string, Question[]> = {
+const GENERIC_HIGH_103_HINTS = new Set([
+  'Before choosing an answer, say out loud what the concept is and what the question wants from you.',
+  'Name the relevant rule first, then apply it carefully.',
+  'State the definition first, then match the option that fits it.',
+  'Name the rule first, then apply it to the exact numbers in the setup.',
+  'Translate the question into plain language before evaluating the choices.',
+])
+
+function high103MentorHint(question: Question): string {
+  const text = `${question.chapter} ${question.title} ${question.prompt}`.toLowerCase()
+
+  if (text.includes('macroeconomic') || text.includes('scarcity') || text.includes('opportunity cost') || text.includes('inflation') || text.includes('gdp') || text.includes('unemployment') || text.includes('monetary') || text.includes('fiscal')) {
+    return 'Identify the macro relationship before choosing: scarcity, opportunity cost, aggregate demand/supply, inflation, unemployment, GDP, fiscal policy, or monetary policy. Then ask whether the answer describes a shift, a movement, or a measurement.'
+  }
+  if (text.includes('microeconomic') || text.includes('supply') || text.includes('demand') || text.includes('elastic') || text.includes('market') || text.includes('marginal') || text.includes('externality')) {
+    return 'Draw the market or marginal tradeoff in your head first. Microeconomics questions usually turn on who changes behavior, which curve moves, and whether the decision is made at the margin.'
+  }
+  if (text.includes('biology') || text.includes('cell') || text.includes('enzyme') || text.includes('protein') || text.includes('genetic') || text.includes('ecosystem')) {
+    return 'Name the biological system and the mechanism linking structure to function. Check whether the question is asking about evidence, molecules, cells, inheritance, evolution, or energy flow.'
+  }
+  if (text.includes('chemistry') || text.includes('molecule') || text.includes('bond') || text.includes('acid') || text.includes('reaction') || text.includes('stoichi')) {
+    return 'Track particles and conservation first: atoms, charge, electrons, energy, and moles do not disappear. The right answer should fit both the chemical mechanism and the quantities given.'
+  }
+  if (text.includes('physics') || text.includes('force') || text.includes('motion') || text.includes('energy') || text.includes('wave') || text.includes('circuit')) {
+    return 'Identify the physical quantity being asked for, then choose the law that connects the given variables. A units check can often reveal whether the reasoning is about force, energy, power, momentum, or charge.'
+  }
+  if (text.includes('climate') || text.includes('earth') || text.includes('geology') || text.includes('weather')) {
+    return 'Separate the observation from the process that explains it, and keep timescale in view. Earth science answers usually rely on energy flow, matter cycles, evidence patterns, or system feedbacks.'
+  }
+  if (text.includes('algebra') || text.includes('equation') || text.includes('inequality') || text.includes('slope') || text.includes('quadratic') || text.includes('function')) {
+    return 'Choose the algebra move before calculating: simplify, solve, factor, substitute, or read the graph. Keep signs and operation order visible, because most distractors come from one small reversal.'
+  }
+  if (text.includes('geometry') || text.includes('angle') || text.includes('triangle') || text.includes('circle') || text.includes('area') || text.includes('volume')) {
+    return 'Name the figure property or formula before using numbers. Check whether the question asks for length, angle, area, surface area, or volume so the units and operation match.'
+  }
+  if (text.includes('statistic') || text.includes('probability') || text.includes('data') || text.includes('sample') || text.includes('mean') || text.includes('median')) {
+    return 'Identify the data idea first: center, spread, probability, sampling, correlation, or inference. Then compare the answer to what the statistic can actually claim from the information given.'
+  }
+  if (text.includes('history') || text.includes('government') || text.includes('civic') || text.includes('constitution') || text.includes('politic')) {
+    return 'Place the event, document, or institution in context before choosing. Ask who has authority, what changed, and which evidence in the prompt supports that interpretation.'
+  }
+  if (text.includes('english') || text.includes('literature') || text.includes('reading') || text.includes('grammar') || text.includes('vocab')) {
+    return 'Use the sentence or passage as evidence, not just the answer that sounds polished. For grammar and vocabulary, test how the word or structure functions in context.'
+  }
+  if (text.includes('computer') || text.includes('program') || text.includes('internet') || text.includes('python') || text.includes('code')) {
+    return 'Identify what the system is doing with data, instructions, networks, or user input. The best computing answer should explain the actual behavior, not just repeat a technical term.'
+  }
+  if (text.includes('finance') || text.includes('capital') || text.includes('credit') || text.includes('interest') || text.includes('budget')) {
+    return 'Translate the prompt into the financial relationship being tested: cash flow, risk, return, compounding, credit cost, or market role. Then check whether the answer describes the amount, rate, or institution correctly.'
+  }
+  if (text.includes('art')) {
+    return 'Look for the visual evidence named in the prompt: medium, style, patronage, period, or purpose. Art history answers should connect the feature to context rather than just naming a movement.'
+  }
+
+  return 'Identify the course concept and the exact task in the prompt before reading the choices. Eliminate answers that use familiar vocabulary but do not fit the situation described.'
+}
+
+function enrichHigh103Hints(questions: Question[]): Question[] {
+  return questions.map((question) =>
+    GENERIC_HIGH_103_HINTS.has(question.mentorHint)
+      ? { ...question, mentorHint: high103MentorHint(question) }
+      : question,
+  )
+}
+
+const RAW_HIGH_103_TOPUPS: Record<string, Question[]> = {
   "alevelBiology": [...alevelBiologyHigh103TopUpAQuestions, ...alevelBiologyHigh103TopUpBQuestions],
   "alevelChemistry": [...alevelChemistryHigh103TopUpAQuestions, ...alevelChemistryHigh103TopUpBQuestions],
   "alevelComputerScience": [...alevelComputerScienceHigh103TopUpAQuestions, ...alevelComputerScienceHigh103TopUpBQuestions],
@@ -290,3 +355,7 @@ export const HIGH_103_TOPUPS: Record<string, Question[]> = {
   "principles_economics_3e": [...principles_economics_3eHigh103TopUpAQuestions, ...principles_economics_3eHigh103TopUpBQuestions],
   "psychology_2e": [...psychology_2eHigh103TopUpAQuestions, ...psychology_2eHigh103TopUpBQuestions],
 }
+
+export const HIGH_103_TOPUPS: Record<string, Question[]> = Object.fromEntries(
+  Object.entries(RAW_HIGH_103_TOPUPS).map(([trackId, questions]) => [trackId, enrichHigh103Hints(questions)]),
+)

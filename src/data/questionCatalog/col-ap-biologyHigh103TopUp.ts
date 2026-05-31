@@ -11,6 +11,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 1: Chemistry of Life',
     title: 'Hydrogen bonding in water',
     prompt: 'Water molecules are strongly cohesive and adhesive, and water has a high specific heat. Which property of water is directly responsible for all of these behaviors?',
+    mentorHint: 'Think about why oxygen pulls electrons more strongly than hydrogen.',
     correct: 'Hydrogen bonds form between the partial charges of neighboring polar water molecules',
     wrong: [
       miss('Water molecules are nonpolar, so they pack tightly together', 'Water is polar, not nonpolar; the uneven sharing of electrons creates partial charges.', 'Think about why oxygen pulls electrons more strongly than hydrogen.'),
@@ -26,6 +27,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 1: Chemistry of Life',
     title: 'Properties of carbon',
     prompt: 'Carbon is the backbone of biological macromolecules. Which feature of carbon best explains why it can build such diverse and complex molecules?',
+    mentorHint: 'Consider whether carbon gains, loses, or shares electrons.',
     correct: 'It has four valence electrons, allowing it to form four covalent bonds and branched or ring structures',
     wrong: [
       miss('It readily forms ionic bonds with many other elements', 'Carbon shares electrons in covalent bonds rather than transferring them to form ions.', 'Consider whether carbon gains, loses, or shares electrons.'),
@@ -41,6 +43,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 1: Chemistry of Life',
     title: 'Dehydration synthesis',
     prompt: 'During the formation of a polymer from monomers, what happens at the molecular level when each new bond forms?',
+    mentorHint: 'Decide whether building releases or consumes water.',
     correct: 'A water molecule is removed as a new covalent bond forms between monomers',
     wrong: [
       miss('A water molecule is added to break the bond between monomers', 'That describes hydrolysis, which breaks polymers rather than building them.', 'Decide whether building releases or consumes water.'),
@@ -56,6 +59,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 1: Chemistry of Life',
     title: 'Protein structure levels',
     prompt: 'A mutation changes one amino acid in a protein, which then folds incorrectly and loses function. Which level of protein structure was directly altered by the mutation itself?',
+    mentorHint: 'Find the level that is the sequence of amino acids.',
     correct: 'Primary structure',
     wrong: [
       miss('Secondary structure', 'Secondary structure (alpha helices and beta sheets) may be affected downstream, but the mutation directly changes the amino acid sequence.', 'Find the level that is the sequence of amino acids.'),
@@ -71,6 +75,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 1: Chemistry of Life',
     title: 'Directionality of nucleic acids',
     prompt: 'A nucleic acid strand has a free phosphate group on one end and a free hydroxyl group on the other. What does this directionality describe?',
+    mentorHint: 'The directionality is about the backbone, not the rungs.',
     correct: 'The 5\' to 3\' orientation of the sugar-phosphate backbone',
     wrong: [
       miss('The hydrogen bonding between complementary bases', 'Base pairing holds two strands together but does not define the 5\' and 3\' ends of a single strand.', 'The directionality is about the backbone, not the rungs.'),
@@ -86,6 +91,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 1: Chemistry of Life',
     title: 'Saturated vs unsaturated fats',
     prompt: 'An unsaturated fatty acid is liquid at room temperature while a saturated one of similar length is solid. What structural feature explains this difference?',
+    mentorHint: 'Saturated means saturated with hydrogen; recount.',
     correct: 'Double bonds in unsaturated chains create kinks that prevent tight packing',
     wrong: [
       miss('Unsaturated fats have more hydrogen atoms per carbon', 'Unsaturated fats have fewer hydrogens because double bonds replace some C-H bonds.', 'Saturated means saturated with hydrogen; recount.'),
@@ -101,6 +107,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 1: Chemistry of Life',
     title: 'Enzyme active site specificity',
     prompt: 'An enzyme catalyzes only one specific reaction. Which statement best explains this specificity?',
+    mentorHint: 'Reconsider whether catalysts are used up.',
     correct: 'The shape and chemistry of the active site complement only a particular substrate',
     wrong: [
       miss('The enzyme is consumed in the reaction, so it can only act once', 'Enzymes are catalysts and are not consumed; they can act repeatedly.', 'Reconsider whether catalysts are used up.'),
@@ -118,6 +125,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 2: Cell Structure and Function',
     title: 'Surface area to volume ratio',
     prompt: 'As a cell grows larger, why does it become less efficient at exchanging materials with its environment?',
+    mentorHint: 'Compare how area (squared) and volume (cubed) scale.',
     correct: 'Volume increases faster than surface area, reducing the surface-area-to-volume ratio',
     wrong: [
       miss('Surface area increases faster than volume, overwhelming the membrane', 'It is the opposite: volume grows faster than surface area as size increases.', 'Compare how area (squared) and volume (cubed) scale.'),
@@ -133,6 +141,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 2: Cell Structure and Function',
     title: 'Endomembrane pathway',
     prompt: 'A secreted protein is synthesized, modified, and packaged for export. What is the correct order of organelles it passes through?',
+    mentorHint: 'Identify where ribosome-bound synthesis begins.',
     correct: 'Rough ER, then Golgi apparatus, then secretory vesicle, then plasma membrane',
     wrong: [
       miss('Golgi apparatus, then rough ER, then lysosome, then plasma membrane', 'The protein begins at the rough ER, not the Golgi; the Golgi processes proteins after the ER.', 'Identify where ribosome-bound synthesis begins.'),
@@ -148,6 +157,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 2: Cell Structure and Function',
     title: 'Endosymbiotic theory evidence',
     prompt: 'Which observation most strongly supports the endosymbiotic origin of mitochondria and chloroplasts?',
+    mentorHint: 'Look for evidence of independent prokaryotic origin.',
     correct: 'They contain their own circular DNA and ribosomes resembling those of bacteria',
     wrong: [
       miss('They are the largest organelles in the cell', 'Size is not evidence of bacterial ancestry, and they are not always the largest organelles.', 'Look for evidence of independent prokaryotic origin.'),
@@ -163,6 +173,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 2: Cell Structure and Function',
     title: 'Tonicity and osmosis',
     prompt: 'A plant cell is placed in a hypotonic solution. What will happen to the cell?',
+    mentorHint: 'Determine which direction water moves toward higher solute.',
     correct: 'Water enters the cell, which becomes turgid as the cell wall resists bursting',
     wrong: [
       miss('Water leaves the cell, causing it to shrivel and plasmolyze', 'Water leaving and plasmolysis occur in a hypertonic solution, not a hypotonic one.', 'Determine which direction water moves toward higher solute.'),
@@ -178,6 +189,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 2: Cell Structure and Function',
     title: 'Facilitated diffusion',
     prompt: 'Glucose crosses the plasma membrane down its concentration gradient with the help of a transport protein. How is this process best classified?',
+    mentorHint: 'Check whether the molecule moves with or against its gradient.',
     correct: 'Facilitated diffusion, a form of passive transport requiring no ATP',
     wrong: [
       miss('Active transport, because a protein is involved', 'Protein involvement alone does not mean active transport; movement down a gradient without ATP is passive.', 'Check whether the molecule moves with or against its gradient.'),
@@ -193,6 +205,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 2: Cell Structure and Function',
     title: 'Function of the nucleolus',
     prompt: 'Within the nucleus, the nucleolus is a dense region with a specialized role. What is its primary function?',
+    mentorHint: 'Connect the nucleolus to ribosome production, not replication.',
     correct: 'Synthesizing ribosomal RNA and assembling ribosome subunits',
     wrong: [
       miss('Replicating the cell\'s DNA before division', 'DNA replication occurs throughout the nucleus during S phase, not specifically in the nucleolus.', 'Connect the nucleolus to ribosome production, not replication.'),
@@ -210,6 +223,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 3: Cellular Energetics',
     title: 'Coupled reactions and ATP',
     prompt: 'A cell drives an energetically unfavorable (endergonic) reaction by linking it to ATP hydrolysis. What is this strategy called?',
+    mentorHint: 'This term is about using energy, not regulating a pathway.',
     correct: 'Energy coupling',
     wrong: [
       miss('Feedback inhibition', 'Feedback inhibition regulates pathways by having a product inhibit an upstream enzyme, not by driving endergonic reactions.', 'This term is about using energy, not regulating a pathway.'),
@@ -225,6 +239,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 3: Cellular Energetics',
     title: 'Light-dependent reactions products',
     prompt: 'The light-dependent reactions of photosynthesis occur in the thylakoid membranes. Which molecules do they produce that are then used in the Calvin cycle?',
+    mentorHint: 'Find the energy-carrier molecules passed to the next stage.',
     correct: 'ATP and NADPH',
     wrong: [
       miss('Glucose and oxygen', 'Glucose is a product of the Calvin cycle, and oxygen is released but not used by the Calvin cycle.', 'Find the energy-carrier molecules passed to the next stage.'),
@@ -240,6 +255,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 3: Cellular Energetics',
     title: 'Chemiosmosis and the proton gradient',
     prompt: 'In both mitochondria and chloroplasts, ATP synthase makes ATP. What directly drives ATP synthesis by this enzyme?',
+    mentorHint: 'Trace what the electron chain builds up before ATP is made.',
     correct: 'The flow of protons (H+) down their electrochemical gradient through ATP synthase',
     wrong: [
       miss('The direct transfer of electrons to ATP synthase', 'Electrons move through the electron transport chain, but it is the resulting proton gradient, not direct electron transfer, that powers ATP synthase.', 'Trace what the electron chain builds up before ATP is made.'),
@@ -255,6 +271,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 3: Cellular Energetics',
     title: 'Fate of pyruvate without oxygen',
     prompt: 'In the absence of oxygen, many cells carry out fermentation after glycolysis. What is the main purpose of fermentation\'s final steps?',
+    mentorHint: 'Ask what glycolysis needs in order to keep running.',
     correct: 'To regenerate NAD+ so that glycolysis can continue producing ATP',
     wrong: [
       miss('To produce large amounts of ATP from pyruvate', 'Fermentation produces little to no additional ATP; the ATP comes from glycolysis itself.', 'Ask what glycolysis needs in order to keep running.'),
@@ -270,6 +287,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 3: Cellular Energetics',
     title: 'Where the Krebs cycle occurs',
     prompt: 'In eukaryotic cells, in which specific location does the citric acid (Krebs) cycle take place?',
+    mentorHint: 'Distinguish the location of glycolysis from later stages.',
     correct: 'The mitochondrial matrix',
     wrong: [
       miss('The cytoplasm', 'Glycolysis occurs in the cytoplasm, but the Krebs cycle takes place inside the mitochondrion.', 'Distinguish the location of glycolysis from later stages.'),
@@ -285,6 +303,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 3: Cellular Energetics',
     title: 'Feedback inhibition of metabolism',
     prompt: 'In a metabolic pathway, the final product binds to and inhibits the first enzyme of the pathway. What is the purpose of this regulation?',
+    mentorHint: 'Think about whether plenty of product means make more or less.',
     correct: 'To prevent the cell from wasting resources by overproducing the product',
     wrong: [
       miss('To speed up the pathway when the product is abundant', 'Inhibition slows, not speeds, the pathway; abundance of product signals to slow down.', 'Think about whether plenty of product means make more or less.'),
@@ -302,6 +321,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 4: Cell Communication and Cell Cycle',
     title: 'Signal transduction pathway stages',
     prompt: 'A signaling molecule binds a receptor and triggers a series of relay molecules inside the cell, ultimately changing gene expression. What is the correct order of the three main stages?',
+    mentorHint: 'Identify which stage involves the signal binding the receptor.',
     correct: 'Reception, transduction, then response',
     wrong: [
       miss('Transduction, reception, then response', 'Reception must come first, because the signal must be received before it can be relayed.', 'Identify which stage involves the signal binding the receptor.'),
@@ -317,6 +337,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 4: Cell Communication and Cell Cycle',
     title: 'Role of the G1 checkpoint',
     prompt: 'The G1 checkpoint is a critical control point in the cell cycle. What does the cell primarily assess at this checkpoint?',
+    mentorHint: 'Match each checkpoint to its specific concern.',
     correct: 'Whether conditions are favorable and the cell is large enough to divide',
     wrong: [
       miss('Whether all chromosomes are attached to spindle fibers', 'That assessment occurs at the M (spindle) checkpoint during metaphase, not at G1.', 'Match each checkpoint to its specific concern.'),
@@ -332,6 +353,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 4: Cell Communication and Cell Cycle',
     title: 'Negative vs positive feedback',
     prompt: 'After a meal, rising blood glucose triggers insulin release, which lowers blood glucose back toward a set point. What type of feedback is this?',
+    mentorHint: 'Ask whether the response increases or reverses the stimulus.',
     correct: 'Negative feedback, because the response counteracts the original change',
     wrong: [
       miss('Positive feedback, because the response amplifies the original change', 'Positive feedback intensifies a change; here glucose is being reduced, which opposes the change.', 'Ask whether the response increases or reverses the stimulus.'),
@@ -347,6 +369,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 4: Cell Communication and Cell Cycle',
     title: 'Apoptosis function',
     prompt: 'Apoptosis is a tightly controlled process important in normal development, such as the loss of webbing between a developing embryo\'s fingers. What is apoptosis?',
+    mentorHint: 'Apoptosis removes cells rather than multiplying them.',
     correct: 'Programmed cell death that dismantles cells in an orderly way',
     wrong: [
       miss('Uncontrolled cell division leading to tumors', 'Uncontrolled division is characteristic of cancer; apoptosis is the opposite, a controlled cell death.', 'Apoptosis removes cells rather than multiplying them.'),
@@ -364,6 +387,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 5: Heredity',
     title: 'Law of independent assortment',
     prompt: 'Mendel\'s law of independent assortment is explained by an event during meiosis. Which event is responsible?',
+    mentorHint: 'Independent assortment concerns how different chromosome pairs line up.',
     correct: 'The random orientation of homologous chromosome pairs at metaphase I',
     wrong: [
       miss('The separation of sister chromatids during anaphase II', 'Sister chromatid separation in anaphase II separates copies of a chromosome, not different gene pairs independently.', 'Independent assortment concerns how different chromosome pairs line up.'),
@@ -379,6 +403,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 5: Heredity',
     title: 'Dihybrid cross ratio',
     prompt: 'Two organisms heterozygous for two independently assorting genes (AaBb x AaBb) are crossed. What phenotypic ratio is expected in the offspring?',
+    mentorHint: 'Count how many traits are being tracked.',
     correct: '9:3:3:1',
     wrong: [
       miss('3:1', 'A 3:1 ratio results from a monohybrid cross (one gene), not a dihybrid cross of two genes.', 'Count how many traits are being tracked.'),
@@ -394,6 +419,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 5: Heredity',
     title: 'Sex-linked inheritance',
     prompt: 'Red-green color blindness is X-linked recessive. A carrier mother (X^C X^c) and a normal-vision father (X^C Y) have children. Which statement is correct?',
+    mentorHint: 'Track the X the father passes to daughters.',
     correct: 'Half of their sons are expected to be color blind',
     wrong: [
       miss('All of their daughters will be color blind', 'Daughters receive a normal-vision X from the father, so none will be color blind, though half may be carriers.', 'Track the X the father passes to daughters.'),
@@ -409,6 +435,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 5: Heredity',
     title: 'Incomplete dominance vs codominance',
     prompt: 'In snapdragons, crossing a red-flowered plant with a white-flowered plant produces pink-flowered offspring. Which inheritance pattern does this illustrate?',
+    mentorHint: 'Decide whether the offspring shows a blend or both traits separately.',
     correct: 'Incomplete dominance, where the heterozygote shows an intermediate phenotype',
     wrong: [
       miss('Codominance, where both alleles are fully and separately expressed', 'In codominance both phenotypes appear distinctly (like red and white spots), not blended into pink.', 'Decide whether the offspring shows a blend or both traits separately.'),
@@ -424,6 +451,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 5: Heredity',
     title: 'Nondisjunction',
     prompt: 'A gamete ends up with an extra chromosome because homologous chromosomes failed to separate during meiosis. What is this error called?',
+    mentorHint: 'This is an error in separation, not a normal exchange.',
     correct: 'Nondisjunction',
     wrong: [
       miss('Crossing over', 'Crossing over is the normal exchange of segments between homologs; it does not produce extra whole chromosomes.', 'This is an error in separation, not a normal exchange.'),
@@ -439,6 +467,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 5: Heredity',
     title: 'Linked genes and recombination',
     prompt: 'Two genes located close together on the same chromosome tend to be inherited together. How does the recombination frequency between two linked genes relate to the distance between them?',
+    mentorHint: 'Think about how often a crossover lands between two nearby points.',
     correct: 'The closer the genes, the lower the recombination frequency',
     wrong: [
       miss('The closer the genes, the higher the recombination frequency', 'Closely linked genes are less likely to be separated by crossing over, so recombination frequency is lower.', 'Think about how often a crossover lands between two nearby points.'),
@@ -456,6 +485,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 6: Gene Expression and Regulation',
     title: 'Transcription vs translation',
     prompt: 'Which statement correctly distinguishes transcription from translation?',
+    mentorHint: 'Order the processes: DNA to RNA, then RNA to protein.',
     correct: 'Transcription makes RNA from a DNA template; translation makes protein from an mRNA template',
     wrong: [
       miss('Transcription makes protein from RNA; translation makes RNA from DNA', 'This reverses the two processes; transcription comes first and produces RNA, not protein.', 'Order the processes: DNA to RNA, then RNA to protein.'),
@@ -471,6 +501,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 6: Gene Expression and Regulation',
     title: 'Reading the genetic code',
     prompt: 'The mRNA codon AUG signals the start of translation and codes for methionine. How many nucleotides specify a single amino acid?',
+    mentorHint: 'Count how many bases are in a codon.',
     correct: 'Three nucleotides (one codon)',
     wrong: [
       miss('One nucleotide', 'With only four bases, single nucleotides could specify just four amino acids, too few for the twenty needed.', 'Count how many bases are in a codon.'),
@@ -486,6 +517,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 6: Gene Expression and Regulation',
     title: 'RNA splicing',
     prompt: 'After a eukaryotic gene is transcribed, the pre-mRNA undergoes splicing before translation. What does splicing accomplish?',
+    mentorHint: 'Recall which segments are expressed and which are cut out.',
     correct: 'Introns are removed and exons are joined together',
     wrong: [
       miss('Exons are removed and introns are joined together', 'It is the reverse: introns (intervening sequences) are removed, and exons (expressed sequences) are kept.', 'Recall which segments are expressed and which are cut out.'),
@@ -501,6 +533,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 6: Gene Expression and Regulation',
     title: 'The lac operon',
     prompt: 'In E. coli, the lac operon is normally off but turns on in the presence of lactose. What best describes how lactose triggers expression?',
+    mentorHint: 'Focus on what molecule blocks transcription when lactose is absent.',
     correct: 'Lactose (as allolactose) inactivates the repressor, allowing transcription of the operon',
     wrong: [
       miss('Lactose binds RNA polymerase and forces it onto the promoter', 'Lactose does not bind RNA polymerase; it acts on the repressor protein.', 'Focus on what molecule blocks transcription when lactose is absent.'),
@@ -516,6 +549,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 6: Gene Expression and Regulation',
     title: 'Effect of a frameshift mutation',
     prompt: 'A single nucleotide is inserted into the coding region of a gene, well before the stop codon. Why does this often have a severe effect on the protein?',
+    mentorHint: 'Consider what happens to codons read after an inserted base.',
     correct: 'It shifts the reading frame, altering every codon downstream of the insertion',
     wrong: [
       miss('It changes exactly one amino acid in the protein', 'Changing one amino acid describes a missense point substitution, not an insertion that shifts the frame.', 'Consider what happens to codons read after an inserted base.'),
@@ -531,6 +565,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 6: Gene Expression and Regulation',
     title: 'Cell differentiation and gene expression',
     prompt: 'Muscle cells and nerve cells in the same person contain the same genome yet look and function very differently. What best explains this difference?',
+    mentorHint: 'Distinguish having a gene from expressing it.',
     correct: 'Different sets of genes are expressed in each cell type',
     wrong: [
       miss('Each cell type contains a different set of genes', 'Nearly all body cells have the same DNA; the difference is which genes are turned on.', 'Distinguish having a gene from expressing it.'),
@@ -548,6 +583,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 7: Natural Selection',
     title: 'Hardy-Weinberg conditions',
     prompt: 'A population is in Hardy-Weinberg equilibrium, meaning allele frequencies are not changing. Which condition is required for this equilibrium?',
+    mentorHint: 'Consider how chance affects small versus large populations.',
     correct: 'No natural selection is acting on the trait',
     wrong: [
       miss('A small population size', 'Small populations experience genetic drift, which changes allele frequencies; equilibrium requires a large population.', 'Consider how chance affects small versus large populations.'),
@@ -563,6 +599,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 7: Natural Selection',
     title: 'Calculating allele frequency',
     prompt: 'In a population at Hardy-Weinberg equilibrium, the recessive phenotype appears in 16% of individuals (q^2 = 0.16). What is the frequency of the dominant allele (p)?',
+    mentorHint: 'After finding q, remember p + q = 1.',
     correct: '0.6',
     wrong: [
       miss('0.4', '0.4 is the frequency of the recessive allele q (the square root of 0.16), not the dominant allele p.', 'After finding q, remember p + q = 1.'),
@@ -578,6 +615,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 7: Natural Selection',
     title: 'Genetic drift vs natural selection',
     prompt: 'A volcanic eruption randomly kills most members of a beetle population, and the survivors happen to differ in color frequency from the original population by pure chance. What evolutionary mechanism does this illustrate?',
+    mentorHint: 'Ask whether survival depended on adaptation or chance.',
     correct: 'Genetic drift (specifically a bottleneck effect)',
     wrong: [
       miss('Natural selection favoring better-adapted beetles', 'The survivors were not selected for fitness; survival was random, which is drift, not selection.', 'Ask whether survival depended on adaptation or chance.'),
@@ -593,6 +631,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 7: Natural Selection',
     title: 'Convergent vs divergent evolution',
     prompt: 'The streamlined body shapes of sharks (fish) and dolphins (mammals) evolved independently in response to similar aquatic environments. What does this exemplify?',
+    mentorHint: 'Determine whether the similarity comes from shared ancestry or similar pressures.',
     correct: 'Convergent evolution producing analogous structures',
     wrong: [
       miss('Divergent evolution producing homologous structures', 'Homologous structures share common ancestry; sharks and dolphins evolved similar shapes independently, which is convergence.', 'Determine whether the similarity comes from shared ancestry or similar pressures.'),
@@ -608,6 +647,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 7: Natural Selection',
     title: 'Reproductive isolation and speciation',
     prompt: 'Two populations of a species become geographically separated by a new mountain range and eventually can no longer interbreed even if reunited. What mode of speciation is this?',
+    mentorHint: 'Check whether a geographic barrier is involved.',
     correct: 'Allopatric speciation',
     wrong: [
       miss('Sympatric speciation', 'Sympatric speciation occurs without geographic separation; here a physical barrier divides the populations.', 'Check whether a geographic barrier is involved.'),
@@ -623,6 +663,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 7: Natural Selection',
     title: 'Common ancestry evidence',
     prompt: 'All known living organisms use the same DNA-based genetic code, with the same codons specifying the same amino acids. What does this universality most strongly support?',
+    mentorHint: 'Ask why the code would be identical across all life.',
     correct: 'All life shares a common ancestor',
     wrong: [
       miss('Each species independently evolved its own genetic code', 'If codes evolved independently, they would differ; the shared code points to common ancestry.', 'Ask why the code would be identical across all life.'),
@@ -638,6 +679,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 7: Natural Selection',
     title: 'Disruptive selection',
     prompt: 'In a bird population, both small-beaked birds (eating soft seeds) and large-beaked birds (cracking hard seeds) survive well, while medium-beaked birds struggle. What type of selection is acting?',
+    mentorHint: 'Notice which phenotype is doing poorly.',
     correct: 'Disruptive selection',
     wrong: [
       miss('Stabilizing selection', 'Stabilizing selection favors the intermediate phenotype; here the intermediate is disfavored.', 'Notice which phenotype is doing poorly.'),
@@ -655,6 +697,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 8: Ecology',
     title: 'Energy transfer between trophic levels',
     prompt: 'On average, only about 10% of the energy at one trophic level is transferred to the next. What is the main reason most energy is not passed on?',
+    mentorHint: 'Think about the second law of thermodynamics.',
     correct: 'Most energy is lost as heat through metabolism and cellular respiration',
     wrong: [
       miss('Predators rarely eat all of the prey available', 'While some biomass is uneaten, the dominant loss is energy used and dissipated as heat during metabolism.', 'Think about the second law of thermodynamics.'),
@@ -670,6 +713,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 8: Ecology',
     title: 'Exponential vs logistic growth',
     prompt: 'A population growing in an environment with limited resources eventually levels off near its carrying capacity. Which growth model describes this pattern?',
+    mentorHint: 'Look for the model that includes a resource limit.',
     correct: 'Logistic growth, producing an S-shaped curve',
     wrong: [
       miss('Exponential growth, producing a J-shaped curve', 'Exponential growth assumes unlimited resources and keeps accelerating; it does not level off at carrying capacity.', 'Look for the model that includes a resource limit.'),
@@ -685,6 +729,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 8: Ecology',
     title: 'Symbiotic relationships',
     prompt: 'A bird eats parasites off the back of a large grazing mammal: the bird gets food and the mammal gets pest removal. What type of symbiosis is this?',
+    mentorHint: 'Check whether both species gain something.',
     correct: 'Mutualism, because both species benefit',
     wrong: [
       miss('Commensalism, because one benefits and the other is unaffected', 'In this case the mammal also benefits from pest removal, so it is not commensalism.', 'Check whether both species gain something.'),
@@ -700,6 +745,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 8: Ecology',
     title: 'Keystone species',
     prompt: 'Removing a single predator from a community causes its prey to overpopulate, which then crowds out many other species, sharply reducing biodiversity. What term describes this predator?',
+    mentorHint: 'Consider whether the species is foreign or native to the community.',
     correct: 'A keystone species',
     wrong: [
       miss('An invasive species', 'An invasive species is a non-native organism that spreads harmfully; this predator is native and stabilizing the community.', 'Consider whether the species is foreign or native to the community.'),
@@ -715,6 +761,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 8: Ecology',
     title: 'The carbon cycle',
     prompt: 'Which pair of processes most directly moves carbon between the atmosphere and living organisms in opposite directions?',
+    mentorHint: 'Match the processes to the carbon cycle, not the water cycle.',
     correct: 'Photosynthesis removes CO2 from the air; cellular respiration releases CO2 back',
     wrong: [
       miss('Transpiration removes CO2; condensation releases CO2', 'Transpiration and condensation are part of the water cycle and involve water vapor, not carbon dioxide exchange.', 'Match the processes to the carbon cycle, not the water cycle.'),
@@ -730,6 +777,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 8: Ecology',
     title: 'Density-dependent limiting factors',
     prompt: 'Which of the following is a density-dependent factor that limits population growth?',
+    mentorHint: 'Ask whether the factor\'s effect depends on how crowded the population is.',
     correct: 'Spread of an infectious disease through a crowded population',
     wrong: [
       miss('A sudden severe winter freeze', 'Weather events like a freeze affect a population regardless of its density, so they are density-independent.', 'Ask whether the factor\'s effect depends on how crowded the population is.'),
@@ -745,6 +793,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 8: Ecology',
     title: 'Ecological succession',
     prompt: 'A region devastated by a retreating glacier, leaving bare rock with no soil, is gradually colonized first by lichens, then mosses, then larger plants. What is this an example of?',
+    mentorHint: 'Check whether soil is present at the start.',
     correct: 'Primary succession',
     wrong: [
       miss('Secondary succession', 'Secondary succession occurs where soil already exists after a disturbance; bare rock with no soil indicates primary succession.', 'Check whether soil is present at the start.'),
@@ -760,6 +809,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 8: Ecology',
     title: 'Trophic levels and biomagnification',
     prompt: 'A fat-soluble pesticide present in low concentrations in water becomes highly concentrated in top predators like eagles. What process explains this?',
+    mentorHint: 'Focus on accumulation, not cleanup.',
     correct: 'Biomagnification, the increasing concentration of a substance up the food chain',
     wrong: [
       miss('Bioremediation, the use of organisms to clean up pollutants', 'Bioremediation removes pollutants; here the pollutant is accumulating, not being cleaned up.', 'Focus on accumulation, not cleanup.'),
@@ -777,6 +827,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 2: Cell Structure and Function',
     title: 'Prokaryote vs eukaryote',
     prompt: 'Which feature is found in eukaryotic cells but absent in prokaryotic cells?',
+    mentorHint: 'Find the feature that only eukaryotes possess.',
     correct: 'A membrane-bound nucleus enclosing the DNA',
     wrong: [
       miss('Ribosomes for protein synthesis', 'Both prokaryotes and eukaryotes have ribosomes, though they differ in size.', 'Find the feature that only eukaryotes possess.'),
@@ -792,6 +843,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 3: Cellular Energetics',
     title: 'Comparing photosynthesis and respiration',
     prompt: 'How are photosynthesis and cellular respiration related at the level of reactants and products?',
+    mentorHint: 'Compare which way each reaction runs.',
     correct: 'The products of one are largely the reactants of the other',
     wrong: [
       miss('They are identical reactions occurring in different organelles', 'They are essentially reverse processes, not identical; one stores energy and the other releases it.', 'Compare which way each reaction runs.'),
@@ -807,6 +859,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 4: Cell Communication and Cell Cycle',
     title: 'Mitosis vs meiosis outcomes',
     prompt: 'Which statement correctly contrasts the products of mitosis and meiosis in humans?',
+    mentorHint: 'Match each process to the right cell count and ploidy.',
     correct: 'Mitosis yields two diploid cells; meiosis yields four haploid cells',
     wrong: [
       miss('Mitosis yields four haploid cells; meiosis yields two diploid cells', 'This reverses the two processes; mitosis produces two diploid cells and meiosis four haploid cells.', 'Match each process to the right cell count and ploidy.'),
@@ -822,6 +875,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 5: Heredity',
     title: 'Test cross purpose',
     prompt: 'An organism shows the dominant phenotype, but its genotype is unknown (it could be homozygous dominant or heterozygous). How can a test cross reveal the genotype?',
+    mentorHint: 'You need a partner whose offspring will differ depending on the unknown genotype.',
     correct: 'Cross it with a homozygous recessive individual and observe the offspring',
     wrong: [
       miss('Cross it with a homozygous dominant individual and observe the offspring', 'All offspring would show the dominant phenotype regardless of the unknown genotype, revealing nothing.', 'You need a partner whose offspring will differ depending on the unknown genotype.'),
@@ -837,6 +891,7 @@ export const colApBiologyHigh103TopUpQuestions: Question[] = makeQuestionBank('H
     chapter: 'Unit 6: Gene Expression and Regulation',
     title: 'Role of transcription factors',
     prompt: 'In eukaryotes, proteins must bind to specific DNA sequences for RNA polymerase to begin transcribing a gene efficiently. What are these regulatory proteins called?',
+    mentorHint: 'These proteins help start transcription, not cut DNA.',
     correct: 'Transcription factors',
     wrong: [
       miss('Restriction enzymes', 'Restriction enzymes cut DNA at specific sequences; they do not regulate transcription initiation.', 'These proteins help start transcription, not cut DNA.'),

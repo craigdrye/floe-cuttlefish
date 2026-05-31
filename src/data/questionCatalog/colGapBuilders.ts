@@ -8,10 +8,24 @@ type Definition = {
   prompt: string
   correct: string
   wrong: [string, string, string][]
+  mentorHint?: string
+}
+
+type TemplatePrompt = {
+  prompt: string
+  correct: string
+  wrong: string[][]
+  mentorHint?: string
 }
 
 function buildCourse(topic: Topic, definitions: Definition[]): Question[] {
-  return makeQuestionBank(topic, definitions)
+  return makeQuestionBank(
+    topic,
+    definitions.map((definition) => ({
+      ...definition,
+      mentorHint: definition.mentorHint ?? inferMathMentorHint(topic, definition.chapter, definition.title, definition.prompt),
+    })),
+  )
 }
 
 // Helpers now require per-distractor whyWrong (slot 2). The howToFix tip (slot 3)
@@ -39,6 +53,67 @@ function fractionWrong(
     whyWrong,
     `Use a common denominator or simplest form and compare with ${correct}.`,
   ])
+}
+
+function inferMathMentorHint(topic: Topic, chapter: string, title: string, prompt: string): string | undefined {
+  if (topic !== 'Primary' && topic !== 'Mathematics') return undefined
+
+  const text = `${chapter} ${title} ${prompt}`.toLowerCase()
+
+  if (text.includes('derivative')) return 'Use the power rule term by term: bring the exponent down, then reduce the exponent by 1. Constants become 0, and coefficients stay attached.'
+  if (text.includes('antiderivative')) return 'Reverse the power rule: raise the exponent by 1 and divide by the new exponent. Remember that an antiderivative family includes a constant.'
+  if (text.includes('determinant')) return 'For a diagonal 2 by 2 matrix, multiply the diagonal entries. The zero off-diagonal entries do not get added as separate terms.'
+  if (text.includes('combination')) return 'A combination counts selections where order does not matter. Use the choose formula or a short organized list instead of simply multiplying the two numbers.'
+  if (text.includes('mutually exclusive') || text.includes('probability')) return 'For mutually exclusive events, the outcomes do not overlap, so the "one or the other" probability comes from adding their separate chances. Keep the sample-space denominator consistent.'
+  if (text.includes('quadratic') || text.includes('factorization') || text.includes('factorisation')) return 'For a quadratic, look for two numbers that multiply to the constant term and combine to the middle coefficient. Check a factor choice by expanding it back.'
+  if (text.includes('f(x)')) return 'Substitute the given x-value everywhere x appears, then follow order of operations. Keep multiplication before addition or subtraction.'
+  if (text.includes('positive root') || text.includes('x^2') || text.includes('x²')) return 'First isolate the squared term, then take the positive square root if the question asks for the positive value. Check by substituting back into the original equation.'
+  if (text.includes('pythagorean') || text.includes('hypotenuse') || text.includes('ladder')) return 'In a right triangle, the longest side is the hypotenuse. Use the relationship between the squares of the two legs and the hypotenuse, then take a square root when needed.'
+  if (text.includes('trig') || text.includes('sin') || text.includes('cos') || text.includes('tan')) return 'Label opposite, adjacent, and hypotenuse from the angle named in the question. Then match the trig function to the correct side ratio.'
+  if (text.includes('circle') || text.includes('radius')) return 'Circle area uses the radius twice. Do not switch to the circumference rule; square the radius before using pi.'
+  if (text.includes('slope')) return 'Slope is rise over run. Since the line passes through the origin here, compare the y-change to the x-change from the origin to the point.'
+  if (text.includes('reflected in the x-axis')) return 'A reflection across the x-axis keeps the x-coordinate and changes the sign of the y-coordinate. Picture the point moving the same distance to the other side of the x-axis.'
+  if (text.includes('coordinate plane') || text.includes('point (') || text.includes('point is')) return 'Read coordinates in order: x first, then y. Use the operation the question asks for instead of swapping or multiplying the coordinates.'
+  if (text.includes('vector')) return 'Treat the vector components as the two listed numbers. If the question asks for their sum, add components directly and keep their signs.'
+  if (text.includes('mean') || text.includes('average')) return 'Mean means total shared equally. Add all the values, then divide by how many values there are.'
+  if (text.includes('median')) return 'Put the numbers in order first. The median is the middle value, not the sum or the biggest number.'
+  if (text.includes('unit rate') || text.includes('per second') || text.includes('per hour')) return 'A unit rate tells how much for one unit of time or one item. Divide the total amount by the number of units.'
+  if (text.includes('percent') || text.includes('percentage')) return 'Translate the percent into a fraction or decimal of the whole. For "what percent," use part divided by whole, then scale to per hundred.'
+  if (text.includes('ratio') || text.includes('out of') || text.includes('simplest form')) return 'Think of the ratio as a fraction and simplify both parts by the same common factor. Keep the order of part and whole the same.'
+  if (text.includes('greater than 1/2') || text.includes('which fraction is greater') || text.includes('larger:') || text.includes('fraction is equivalent') || text.includes('equivalent to')) return 'Compare fractions by using common denominators, cross-products, or a benchmark like one-half. Equivalent fractions must scale the top and bottom by the same factor.'
+  if (text.includes('fraction') || text.includes('/')) return 'For fraction operations, make sure the denominators name the same-sized pieces before adding, subtracting, or comparing. For "of," think multiplication or equal parts.'
+  if (text.includes('decimal')) return 'Line up decimal places or rewrite the numbers with the same number of decimal digits. Compare or calculate by place value, not by the length of the digits.'
+  if (text.includes('nearest ten') || text.includes('round') || text.includes('closest to')) return 'Look at the ones digit and decide which ten the number is closer to. Numbers ending in 5 or more round up to the next ten.'
+  if (text.includes('place value') || text.includes('hundreds place') || text.includes('tens place') || text.includes('how many tens')) return 'Read place value from right to left: ones, tens, hundreds. A digit means more or less depending on the place it sits in.'
+  if (text.includes('count the dots')) return 'Touch or mark each object once as you count. This helps you avoid skipping one or counting the same one twice.'
+  if (text.includes('number bond') || text.includes('make 10') || text.includes('make ten')) return 'Picture a ten-frame with some spaces already filled. Count how many more are needed to complete the ten.'
+  if (text.includes('comes between') || text.includes('middle number')) return 'Say the counting sequence from the first number to the last. The number between them is the one that comes after the first and before the last.'
+  if (text.includes('jump forward') || text.includes('hop on the number line')) return 'Start at the first number and count each jump one at a time. The answer is the landing spot after the final jump.'
+  if (text.includes('which number is larger') || text.includes('comparing numbers') || (text.includes('__') && text.includes('symbol'))) return 'Compare the largest place value first, then move right if needed. The open side of the comparison symbol points toward the larger number.'
+  if (text.includes('straight sides') || text.includes('shape')) return 'Trace the outline once and count only straight sides. Curved edges, like on a circle, are not straight sides.'
+  if (text.includes('unit makes the most sense') || text.includes('comparison:') || text.includes('measuring')) return 'First decide what is being measured: length, mass, capacity, time, or angle. Then choose a unit or word that fits that kind of measurement and its size.'
+  if (text.includes('quarter hour') || text.includes('half hour') || text.includes('minutes') || text.includes('clock')) return 'Use 60 minutes for one full hour. A half hour is two equal parts of an hour, and a quarter hour is four equal parts.'
+  if (text.includes('solution to the system')) return 'Use both equations, not just one. Adding or subtracting the equations can eliminate one variable, and substitution checks the ordered pair.'
+  if (text.includes('solve') || text.includes('what is x') || text.includes('equation')) return 'Undo operations in reverse order while keeping both sides balanced. Substitute your result back into the original equation to check it.'
+  if (text.includes('arithmetic sequence') || text.includes('next term')) return 'Find the common difference between neighboring terms. Add that same difference once more to get the next term.'
+  if (text.includes('function') || text.includes('f(x)') || text.includes('when x =')) return 'Substitute the given x-value everywhere x appears, then follow order of operations. Keep multiplication before addition or subtraction.'
+  if (text.includes('exponent') || text.includes('^')) return 'An exponent tells how many times to use the base as a factor. It is repeated multiplication, not base times exponent.'
+  if (text.includes('negative') || text.includes('(-') || text.includes(' × -') || text.includes('+ (')) return 'Keep the signs attached to the numbers. A number line helps for addition, and sign rules help for multiplication.'
+  if (text.includes('shared equally') || text.includes('÷') || text.includes('division')) return 'Division asks for equal groups or equal shares. Check a quotient by multiplying it back by the number of groups.'
+  if (text.includes('bags with') || text.includes('equal groups') || text.includes('product of') || text.includes('×') || (text.includes('value of') && text.includes(' if '))) return 'Look for equal groups or a coefficient next to a variable. Multiplication can be checked by repeated addition or by substituting the given value first.'
+  if (text.includes('subtraction') || text.includes('how many left') || text.includes('still empty') || text.includes(' - ')) return 'Start with the total and take away the part that is used, eaten, or removed. Line up place values if there are two digits.'
+  if (text.includes('addition') || text.includes('altogether') || text.includes(' + ')) return 'Join the groups or combine like place values. Counting on from the larger number can keep the arithmetic tidy.'
+  if (text.includes('perimeter')) return 'Perimeter is the distance around the outside. Add every side, or for a rectangle use two lengths and two widths.'
+  if (text.includes('area of a triangle')) return 'A triangle is half of a rectangle with the same base and height. Multiply base by height, then take half.'
+  if (text.includes('area of a rectangle') || text.includes('area of a parallelogram')) return 'Area counts square units covering a flat shape. Multiply the base or length by the matching height or width.'
+  if (text.includes('area of a square') || text.includes('side length')) return 'A square area is side times side. To go from area back to side length, look for the number whose square gives the area.'
+  if (text.includes('volume') || text.includes('rectangular prism') || text.includes('box')) return 'Volume counts cubes inside a 3D shape. Multiply length, width, and height, then use cubic units.'
+  if (text.includes('angle')) return 'Compare the angle to the benchmarks: less than 90 is acute, exactly 90 is right, between 90 and 180 is obtuse, and 180 is straight.'
+  if (text.includes('transformation') || text.includes('slid') || text.includes('turned') || text.includes('flipped')) return 'Match the motion word to the transformation: slide means translation, turn means rotation, and flip means reflection.'
+  if (text.includes('gcf') || text.includes('greatest common factor')) return 'List factors of both numbers and look for the largest one they share. The GCF must divide both numbers exactly.'
+  if (text.includes('algebraic form')) return 'Test the form with a few integer values of n. The right expression should always produce the kind of integer named in the question.'
+
+  return 'Identify the math idea first, then use the exact numbers in the prompt. A quick sketch, number line, or equation can keep the work organized.'
 }
 
 export function makeIndiaClass1MathQuiz(): Question[] {
@@ -517,11 +592,7 @@ function buildTemplateCourse(
   baseId: number,
   chapter: string,
   title: string,
-  prompts: Array<{
-    prompt: string
-    correct: string
-    wrong: string[][]
-  }>,
+  prompts: TemplatePrompt[],
 ): Question[] {
   return buildCourse(
     topic,
@@ -532,6 +603,7 @@ function buildTemplateCourse(
       prompt: entry.prompt,
       correct: entry.correct,
       wrong: entry.wrong as [string, string, string][],
+      mentorHint: entry.mentorHint,
     })),
   )
 }

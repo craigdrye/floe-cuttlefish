@@ -11,6 +11,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Prose: the 19th-century novel',
     title: 'Free indirect discourse',
     prompt: 'A novelist writes: "She would not go to the ball. What was the point? Nobody there cared for her." Which narrative technique is being used?',
+    mentorHint: 'Check whether the pronouns are first or third person.',
     correct: 'Free indirect discourse, which blends the narrator\'s third-person voice with the character\'s own thoughts and idiom',
     wrong: [
       miss('First-person interior monologue', 'The pronoun is "she", not "I", so the passage is third-person; interior monologue is first-person, presenting thought directly without a narrator.', 'Check whether the pronouns are first or third person.'),
@@ -26,6 +27,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Prose: the 19th-century novel',
     title: 'The bildungsroman',
     prompt: 'A novel that traces a protagonist\'s moral and psychological growth from youth to maturity is best described by which genre term?',
+    mentorHint: 'The question asks for the general growth-of-a-person form, not the artist-specific one.',
     correct: 'Bildungsroman',
     wrong: [
       miss('Kunstlerroman', 'A Kunstlerroman is a specific sub-type tracing the growth of an artist; the broader term for general coming-of-age development is bildungsroman.', 'The question asks for the general growth-of-a-person form, not the artist-specific one.'),
@@ -41,6 +43,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Prose: the 19th-century novel',
     title: 'Realism as a mode',
     prompt: 'Which of these is the clearest hallmark of nineteenth-century literary realism?',
+    mentorHint: 'Realism prizes the believable and everyday.',
     correct: 'Detailed, plausible representation of ordinary social life and the consequences of everyday choices',
     wrong: [
       miss('Supernatural events presented as literally true within the world', 'Embedding the supernatural as fact belongs to Gothic or fantastic modes, which realism deliberately avoids in favour of the ordinary and probable.', 'Realism prizes the believable and everyday.'),
@@ -56,6 +59,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Prose: the 19th-century novel',
     title: 'Serial publication and form',
     prompt: 'Many Victorian novels first appeared in monthly instalments. What structural feature does this serial publication most directly encourage?',
+    mentorHint: 'Think about what a monthly part needs at its end.',
     correct: 'Cliffhangers and recurring plot reminders to sustain reader interest between instalments',
     wrong: [
       miss('A single unbroken chapter with no internal divisions', 'Serialisation does the opposite, dividing the novel into discrete, regularly ending units rather than one continuous chapter.', 'Think about what a monthly part needs at its end.'),
@@ -73,6 +77,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Prose: the modern novel',
     title: 'Stream of consciousness',
     prompt: 'Which narrative technique attempts to render the continuous, associative flow of a character\'s thoughts and impressions as they occur?',
+    mentorHint: 'A frame is a story-within-a-story device, not a way of presenting thought.',
     correct: 'Stream of consciousness',
     wrong: [
       miss('Frame narrative', 'A frame narrative is a story nested inside another story; it concerns structure, not the flow of unfiltered thought.', 'A frame is a story-within-a-story device, not a way of presenting thought.'),
@@ -88,6 +93,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Prose: the modern novel',
     title: 'Unreliable narrator',
     prompt: 'A first-person narrator whose account the reader comes to distrust because of bias, naivety or deception is called an:',
+    mentorHint: 'Omniscient narrators know everything and are usually trusted.',
     correct: 'Unreliable narrator',
     wrong: [
       miss('Omniscient narrator', 'An omniscient narrator is all-knowing and stands above the action; reliability is generally assumed, and it is third-person rather than first-person.', 'Omniscient narrators know everything and are usually trusted.'),
@@ -103,6 +109,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Prose: the modern novel',
     title: 'Modernism\'s key concerns',
     prompt: 'Which cluster of features best characterises literary modernism in the early twentieth century?',
+    mentorHint: 'Modernists broke with tradition rather than enforcing it.',
     correct: 'Fragmentation, subjectivity, allusion and a break with traditional realist conventions',
     wrong: [
       miss('Strict adherence to neoclassical rules of order and decorum', 'Modernism rebelled against inherited rules and decorum; insisting on neoclassical order describes an earlier eighteenth-century ideal.', 'Modernists broke with tradition rather than enforcing it.'),
@@ -118,6 +125,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Prose: the modern novel',
     title: 'Magic realism',
     prompt: 'In which mode are supernatural or impossible events narrated matter-of-factly within an otherwise realistic, everyday world?',
+    mentorHint: 'Naturalism excludes the marvellous entirely.',
     correct: 'Magic realism',
     wrong: [
       miss('High fantasy', 'High fantasy builds an entirely invented secondary world with its own rules; magic realism keeps a recognisable real-world setting and treats the marvellous as ordinary.', 'Fantasy invents whole new worlds; magic realism stays in ours.'),
@@ -135,6 +143,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Narrative theory and form',
     title: 'Story versus discourse',
     prompt: 'In narratology, "story" refers to the events in chronological order, while "discourse" (or plot) refers to:',
+    mentorHint: 'Discourse is about arrangement and telling, not message.',
     correct: 'The particular order and manner in which those events are arranged and told',
     wrong: [
       miss('The moral lesson the author intends the reader to draw', 'A moral or theme is an interpretive outcome, not the technical term for how events are arranged; that is discourse.', 'Discourse is about arrangement and telling, not message.'),
@@ -150,6 +159,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Narrative theory and form',
     title: 'In medias res',
     prompt: 'A narrative that begins in the middle of the action, with earlier events filled in later, opens "in medias res". This technique most directly creates:',
+    mentorHint: 'Opening point and reliability are unrelated.',
     correct: 'Immediate engagement and suspense, prompting the reader to reconstruct earlier events',
     wrong: [
       miss('A guaranteed reliable narrator', 'Starting mid-action says nothing about the narrator\'s trustworthiness; reliability is a separate matter from where the narrative begins.', 'Opening point and reliability are unrelated.'),
@@ -165,6 +175,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Narrative theory and form',
     title: 'Foreshadowing',
     prompt: 'A storm gathering ominously just before a family quarrel that ends in disaster is most likely an example of:',
+    mentorHint: 'Irony is about who knows what; foreshadowing is about what is hinted.',
     correct: 'Foreshadowing, where an early detail hints at a later development',
     wrong: [
       miss('Dramatic irony, where the audience knows something a character does not', 'Dramatic irony depends on a gap in knowledge between audience and character, not on an early hint of future events.', 'Irony is about who knows what; foreshadowing is about what is hinted.'),
@@ -182,6 +193,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Critical theory and interpretation',
     title: 'Feminist criticism',
     prompt: 'A critic argues that a novel\'s female characters exist only to advance the male hero\'s development and have no autonomous desires. This reading is most clearly:',
+    mentorHint: 'Marxism foregrounds class; here the issue is gender.',
     correct: 'Feminist criticism, examining how texts construct and constrain representations of gender',
     wrong: [
       miss('Marxist criticism, focused on class and economic power', 'Marxist criticism centres on class conflict and material conditions, not specifically on gender representation.', 'Marxism foregrounds class; here the issue is gender.'),
@@ -197,6 +209,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Critical theory and interpretation',
     title: 'Marxist reading',
     prompt: 'Which question would a Marxist literary critic most characteristically ask of a text?',
+    mentorHint: 'Marxism asks about class and power, not metre.',
     correct: 'How does the text reflect or challenge the class relations and economic forces of its society?',
     wrong: [
       miss('How does the rhyme scheme contribute to the poem\'s music?', 'This is a formal, prosodic question typical of close reading, not the social-economic focus of Marxist criticism.', 'Marxism asks about class and power, not metre.'),
@@ -212,6 +225,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Critical theory and interpretation',
     title: 'Post-colonial criticism',
     prompt: 'A reading that examines how a novel represents colonised peoples, exposes imperial assumptions, and considers the "other" is best labelled:',
+    mentorHint: 'New Criticism brackets out empire and history.',
     correct: 'Post-colonial criticism',
     wrong: [
       miss('New Criticism', 'New Criticism insists on close reading of the text in isolation from history and politics, the opposite of post-colonial concerns.', 'New Criticism brackets out empire and history.'),
@@ -227,6 +241,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Critical theory and interpretation',
     title: 'The intentional fallacy',
     prompt: 'The "intentional fallacy", as defined by Wimsatt and Beardsley, is the mistaken belief that:',
+    mentorHint: 'You are describing the affective fallacy, a different idea.',
     correct: 'A work\'s meaning is determined by, and can be settled by appeal to, the author\'s stated intention',
     wrong: [
       miss('A reader\'s emotional response is the true measure of a poem\'s value', 'That claim is the separate "affective fallacy", which concerns the reader\'s feelings, not authorial intention.', 'You are describing the affective fallacy, a different idea.'),
@@ -244,6 +259,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Context and historicism',
     title: 'Using context (AO3) well',
     prompt: 'In A-level essays, the best use of historical and social context is to:',
+    mentorHint: 'Context should serve analysis, not replace it.',
     correct: 'Illuminate specific features of the text, showing how context shapes meaning and interpretation',
     wrong: [
       miss('Provide a lengthy standalone history lesson before discussing the text', 'Detached context that is not tied to the writing reads as padding and gains little credit; context must connect to the text\'s effects.', 'Context should serve analysis, not replace it.'),
@@ -259,6 +275,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Context and historicism',
     title: 'The Gothic and its era',
     prompt: 'The flourishing of Gothic fiction in the late eighteenth and early nineteenth centuries is often linked to a cultural reaction against:',
+    mentorHint: 'Check which movement came first.',
     correct: 'The confident rationalism and order of the Enlightenment',
     wrong: [
       miss('The experimental fragmentation of modernism', 'Modernism is a twentieth-century movement that postdates the Gothic\'s rise by over a century, so the Gothic could not be reacting against it.', 'Check which movement came first.'),
@@ -274,6 +291,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Context and historicism',
     title: 'Reception over time',
     prompt: 'Why might the same novel be interpreted very differently by readers in 1850 and readers today?',
+    mentorHint: 'The book stays the same; the readers differ.',
     correct: 'Meaning is shaped by readers\' own historical and cultural contexts, so interpretations shift over time',
     wrong: [
       miss('Because the words on the page physically change between editions', 'The text\'s wording is essentially stable; what changes is the framework readers bring, not the words themselves.', 'The book stays the same; the readers differ.'),
@@ -291,6 +309,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Genre study: tragedy and comedy',
     title: 'Aristotle on tragedy',
     prompt: 'In Aristotle\'s Poetics, "catharsis" refers to:',
+    mentorHint: 'You are describing hamartia, not catharsis.',
     correct: 'The purging or release of pity and fear that tragedy arouses in the audience',
     wrong: [
       miss('The tragic hero\'s fatal error of judgement', 'That is hamartia, a different Aristotelian term for the flaw or mistake that brings about the hero\'s downfall.', 'You are describing hamartia, not catharsis.'),
@@ -306,6 +325,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Genre study: tragedy and comedy',
     title: 'Hubris and the tragic fall',
     prompt: 'A tragic protagonist\'s excessive pride or overconfidence that provokes their downfall is termed:',
+    mentorHint: 'Nemesis is the consequence; the prideful flaw has another name.',
     correct: 'Hubris',
     wrong: [
       miss('Nemesis', 'Nemesis is the retribution or downfall that hubris invites, the punishment rather than the prideful flaw itself.', 'Nemesis is the consequence; the prideful flaw has another name.'),
@@ -321,6 +341,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Genre study: tragedy and comedy',
     title: 'Conventions of dramatic comedy',
     prompt: 'Which ending is most conventional for classical and Shakespearean comedy as a genre?',
+    mentorHint: 'A pile of corpses signals tragedy, not comedy.',
     correct: 'The restoration of social harmony, typically sealed by one or more marriages',
     wrong: [
       miss('The death of the protagonist and a stage of corpses', 'Multiple deaths and a destroyed order are conventions of tragedy, not comedy, which moves toward reconciliation.', 'A pile of corpses signals tragedy, not comedy.'),
@@ -336,6 +357,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Genre study: dystopian fiction',
     title: 'Defining dystopia',
     prompt: 'Which feature is most central to the dystopian genre?',
+    mentorHint: 'You have described utopia, not dystopia.',
     correct: 'A nightmarish, oppressive society presented as a warning about present-day tendencies',
     wrong: [
       miss('A perfected, harmonious society free of all conflict', 'That describes a utopia, the dystopia\'s opposite; dystopias depict deeply flawed, controlling societies.', 'You have described utopia, not dystopia.'),
@@ -353,6 +375,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Drama beyond Shakespeare',
     title: 'The soliloquy',
     prompt: 'A speech in which a character, alone on stage, voices their private thoughts to the audience is a:',
+    mentorHint: 'An aside is short and slipped in while others are onstage.',
     correct: 'Soliloquy',
     wrong: [
       miss('Aside', 'An aside is a brief remark spoken so that only the audience (not other characters) hears it, usually while others are present; a soliloquy is a longer speech delivered alone.', 'An aside is short and slipped in while others are onstage.'),
@@ -368,6 +391,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Drama beyond Shakespeare',
     title: 'Dramatic irony',
     prompt: 'In a play, the audience knows a returning soldier is alive, but his wife on stage believes he is dead and mourns him. This situation is an example of:',
+    mentorHint: 'No one is saying the opposite of what they mean here.',
     correct: 'Dramatic irony, where the audience knows more than a character does',
     wrong: [
       miss('Verbal irony, where a speaker means the opposite of what is said', 'Verbal irony lies in a speaker\'s words meaning the reverse of their literal sense; here the gap is in knowledge, not in the meaning of an utterance.', 'No one is saying the opposite of what they mean here.'),
@@ -383,6 +407,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Drama beyond Shakespeare',
     title: 'Stage directions and subtext',
     prompt: 'In a modern playscript, a stage direction reading "(pause)" before a character finally answers a question most often functions to convey:',
+    mentorHint: 'Treat directions as intentional, not as mistakes.',
     correct: 'Subtext, signalling hesitation, tension or unspoken feeling beneath the dialogue',
     wrong: [
       miss('A printing error to be ignored in performance', 'Stage directions are deliberate authorial instructions for performance, not accidental errors; a pause is meaningful.', 'Treat directions as intentional, not as mistakes.'),
@@ -400,6 +425,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Comparative and unseen analysis',
     title: 'Building a comparison (AO4)',
     prompt: 'When comparing two texts, which approach demonstrates the strongest comparative skill?',
+    mentorHint: 'Comparison links the texts; it does not summarise them in turn.',
     correct: 'Analysing how each writer uses methods to handle a shared concern, drawing connections and distinctions throughout',
     wrong: [
       miss('Summarising the whole plot of text A, then the whole plot of text B', 'Two separate plot summaries place the texts side by side without comparing them; genuine comparison interweaves analysis.', 'Comparison links the texts; it does not summarise them in turn.'),
@@ -415,6 +441,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Comparative and unseen analysis',
     title: 'Approaching an unseen extract',
     prompt: 'Faced with an unseen prose extract, what is the most productive first analytical step?',
+    mentorHint: 'Start with the words on the page, not with guessing the author.',
     correct: 'Identify the writer\'s methods and their effects on the reader, linking detail to meaning',
     wrong: [
       miss('Guess the author\'s name and date before reading closely', 'Guessing attribution is unreliable and adds nothing; the task rewards close analysis of the extract itself.', 'Start with the words on the page, not with guessing the author.'),
@@ -430,6 +457,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Comparative and unseen analysis',
     title: 'Tone versus mood',
     prompt: 'In analysing an extract, the distinction between "tone" and "mood" is best expressed as:',
+    mentorHint: 'Both terms concern feeling, not plot or cast.',
     correct: 'Tone is the writer\'s attitude conveyed through language; mood is the emotional atmosphere created in the reader',
     wrong: [
       miss('Tone is the plot summary; mood is the list of characters', 'Neither term refers to plot or character lists; both describe felt or implied attitude and atmosphere.', 'Both terms concern feeling, not plot or cast.'),
@@ -445,6 +473,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Comparative and unseen analysis',
     title: 'Symbolism',
     prompt: 'A recurring image of a caged bird that comes to suggest the protagonist\'s lack of freedom is functioning as a:',
+    mentorHint: 'There is no "like" or "as" here; the image works by suggestion.',
     correct: 'Symbol, where a concrete image carries a wider, often abstract, significance',
     wrong: [
       miss('Simile, an explicit comparison using "like" or "as"', 'A simile states a likeness directly with "like" or "as"; a recurring image standing for a larger idea works by association, not explicit comparison.', 'There is no "like" or "as" here; the image works by suggestion.'),
@@ -460,6 +489,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Comparative and unseen analysis',
     title: 'Structure as meaning (AO2)',
     prompt: 'A critic notes that a story is told entirely in reverse, from the protagonist\'s death back to their birth. To analyse this for Assessment Objective 2, you should focus on:',
+    mentorHint: 'AO2 is about effect of method, not factual accuracy.',
     correct: 'How this structural choice shapes meaning and the reader\'s response, not merely that it happens',
     wrong: [
       miss('Whether the events described actually occurred in real history', 'Historical accuracy of events is irrelevant to analysing a structural technique\'s effect; the focus is on craft and meaning.', 'AO2 is about effect of method, not factual accuracy.'),
@@ -477,6 +507,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Language and style analysis',
     title: 'Syntax and effect',
     prompt: 'A passage piles up many short, abrupt sentences during a chase scene. This syntactic choice most likely creates an effect of:',
+    mentorHint: 'Short, abrupt sentences speed things up, not slow them down.',
     correct: 'Pace, urgency and tension that mirror the speed of the action',
     wrong: [
       miss('Calm, leisurely reflection', 'Long, flowing sentences suit reflection; short, clipped sentences instead quicken the rhythm and heighten urgency.', 'Short, abrupt sentences speed things up, not slow them down.'),
@@ -492,6 +523,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Language and style analysis',
     title: 'Semantic field',
     prompt: 'A poem about grief repeatedly uses "wither", "fade", "decay" and "shadow". Together these words form a:',
+    mentorHint: 'This is about shared meaning, not rhyme.',
     correct: 'Semantic field of decline and death, reinforcing the poem\'s mood',
     wrong: [
       miss('Rhyming couplet', 'A rhyming couplet is two consecutive rhyming lines; these are related words by meaning, not a rhyme structure.', 'This is about shared meaning, not rhyme.'),
@@ -507,6 +539,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Language and style analysis',
     title: 'Connotation versus denotation',
     prompt: 'The word "home" denotes the place where one lives, but it connotes:',
+    mentorHint: 'You have given the denotation, not the connotation.',
     correct: 'Associated feelings and ideas such as warmth, belonging and security',
     wrong: [
       miss('Only its strict dictionary definition with no extra meaning', 'That strict definition is the denotation; connotation refers to the additional associations a word carries.', 'You have given the denotation, not the connotation.'),
@@ -522,6 +555,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Language and style analysis',
     title: 'Register',
     prompt: 'A character\'s speech shifts from relaxed slang at home to careful formal English in a job interview. This variation is best described as a change in:',
+    mentorHint: 'Dialect is about where you are from; this is about how formal you are.',
     correct: 'Register, the level of formality and style suited to a context',
     wrong: [
       miss('Dialect, regional variation in vocabulary and grammar', 'Dialect refers to features tied to a region or social group; the change here is in formality across situations, not a regional shift.', 'Dialect is about where you are from; this is about how formal you are.'),
@@ -539,6 +573,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Poetry: form and structure',
     title: 'The volta',
     prompt: 'In a sonnet, the "volta" is:',
+    mentorHint: 'The volta is the turn in thought, not a specific pair of lines.',
     correct: 'A turn or shift in thought, argument or mood, often between the octave and sestet or before the final couplet',
     wrong: [
       miss('The final rhyming couplet of a Shakespearean sonnet', 'The closing couplet is a structural unit; the volta is the turn in meaning, which may coincide with but is not identical to that couplet.', 'The volta is the turn in thought, not a specific pair of lines.'),
@@ -554,6 +589,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Poetry: form and structure',
     title: 'Enjambment',
     prompt: 'When a sentence or phrase runs over the end of a line of verse into the next without a pause, this is called:',
+    mentorHint: 'A caesura pauses inside the line; this is about flowing over the line end.',
     correct: 'Enjambment',
     wrong: [
       miss('A caesura', 'A caesura is a pause within a line, usually mid-line, whereas enjambment concerns the lack of a pause at the line\'s end.', 'A caesura pauses inside the line; this is about flowing over the line end.'),
@@ -569,6 +605,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Poetry: form and structure',
     title: 'Iambic pentameter',
     prompt: 'A line of poetry with five metrical feet, each an unstressed syllable followed by a stressed one, is written in:',
+    mentorHint: 'Check both the stress order and the number of feet.',
     correct: 'Iambic pentameter',
     wrong: [
       miss('Trochaic tetrameter', 'A trochee reverses the iamb (stressed then unstressed) and tetrameter has four feet, so this differs on both stress pattern and length.', 'Check both the stress order and the number of feet.'),
@@ -584,6 +621,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Poetry: form and structure',
     title: 'The dramatic monologue',
     prompt: 'In a dramatic monologue such as Browning\'s "My Last Duchess", the speaker is:',
+    mentorHint: 'The voice is a character\'s, not the poet\'s own.',
     correct: 'A single fictional persona, distinct from the poet, who unwittingly reveals their own character while addressing an implied listener',
     wrong: [
       miss('The poet speaking sincerely in their own voice', 'A dramatic monologue is spoken by an invented persona, deliberately separated from the poet\'s own views.', 'The voice is a character\'s, not the poet\'s own.'),
@@ -601,6 +639,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Non-fiction and rhetoric',
     title: 'The rhetorical appeals',
     prompt: 'A speech that persuades chiefly by establishing the speaker\'s credibility and good character relies most on which classical appeal?',
+    mentorHint: 'Pathos targets feelings; this is about the speaker\'s trustworthiness.',
     correct: 'Ethos',
     wrong: [
       miss('Pathos', 'Pathos persuades by arousing the audience\'s emotions, not by establishing the speaker\'s credibility and character.', 'Pathos targets feelings; this is about the speaker\'s trustworthiness.'),
@@ -616,6 +655,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Non-fiction and rhetoric',
     title: 'Anaphora',
     prompt: 'The repetition of the same word or phrase at the beginning of successive clauses, as in "We shall fight on the beaches, we shall fight on the landing grounds", is called:',
+    mentorHint: 'Check whether the repetition is at the start or the end.',
     correct: 'Anaphora',
     wrong: [
       miss('Epistrophe', 'Epistrophe repeats words at the end of successive clauses, not at the beginning as anaphora does.', 'Check whether the repetition is at the start or the end.'),
@@ -631,6 +671,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Non-fiction and rhetoric',
     title: 'Distinguishing satire',
     prompt: 'A pamphlet that gravely "proposes" an outrageous solution to poverty in order to expose society\'s callousness is best understood as:',
+    mentorHint: 'The outrageousness is the clue that it is not meant literally.',
     correct: 'Satire, using irony and exaggeration to criticise and provoke reform',
     wrong: [
       miss('A sincere policy proposal meant to be enacted literally', 'Reading the proposal literally misses the irony; satire means the opposite of its surface and aims to expose, not enact.', 'The outrageousness is the clue that it is not meant literally.'),
@@ -646,6 +687,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Non-fiction and rhetoric',
     title: 'Bias in non-fiction',
     prompt: 'When analysing a persuasive article, identifying the writer\'s "bias" means recognising:',
+    mentorHint: 'Bias is about viewpoint, not length.',
     correct: 'The writer\'s slant or partiality that shapes how the subject is presented',
     wrong: [
       miss('The total word count of the article', 'Word count is a neutral statistic that says nothing about partiality or slant.', 'Bias is about viewpoint, not length.'),
@@ -663,6 +705,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Comparative and unseen analysis',
     title: 'Embedding quotations',
     prompt: 'Which sentence embeds a quotation most effectively in a literary essay?',
+    mentorHint: 'Weave the words into your own sentence rather than announcing them.',
     correct: 'The narrator\'s description of the house as a "great heap of mouldering stone" conveys decay and neglect.',
     wrong: [
       miss('There is a quote about the house and it is "a great heap of mouldering stone".', 'Announcing "there is a quote" is clumsy and fails to integrate the words grammatically into a point about effect.', 'Weave the words into your own sentence rather than announcing them.'),
@@ -678,6 +721,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Critical theory and interpretation',
     title: 'Psychoanalytic reading',
     prompt: 'A critic who interprets a character\'s recurring dreams and slips of the tongue as clues to repressed desire is applying:',
+    mentorHint: 'Dreams and repression point away from class analysis.',
     correct: 'Psychoanalytic criticism',
     wrong: [
       miss('Marxist criticism', 'Marxist criticism focuses on class and economic structures, not on the unconscious, dreams or repression.', 'Dreams and repression point away from class analysis.'),
@@ -693,6 +737,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Genre study: tragedy and comedy',
     title: 'Domestic tragedy',
     prompt: 'A modern play depicting the downfall of an ordinary salesman within his own family is often classed as:',
+    mentorHint: 'The protagonist here is ordinary, not a king.',
     correct: 'Domestic (or modern) tragedy, which locates tragic suffering in ordinary, middle- or working-class life',
     wrong: [
       miss('Classical tragedy of kings and nobles only', 'Classical tragedy traditionally centred on high-status figures; the modern form deliberately makes an ordinary person the tragic subject.', 'The protagonist here is ordinary, not a king.'),
@@ -708,6 +753,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Prose: the modern novel',
     title: 'Motif',
     prompt: 'A recurring image of broken clocks that appears throughout a novel and gathers thematic significance is best termed a:',
+    mentorHint: 'Denouement is an ending stage, not a repeated image.',
     correct: 'Motif',
     wrong: [
       miss('A protagonist', 'A protagonist is the central character, not a recurring image or idea threaded through a text.', 'A motif is a recurring element, not a person.'),
@@ -723,6 +769,7 @@ export const alevelEnglishHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     chapter: 'Narrative theory and form',
     title: 'Narrative perspective and focalisation',
     prompt: 'A third-person narrative that restricts what we know to the perceptions and knowledge of a single character is said to use:',
+    mentorHint: 'Restricting to one character is the opposite of omniscience.',
     correct: 'Limited (or internal) focalisation through that character',
     wrong: [
       miss('Omniscient narration with full access to every character\'s mind', 'Omniscient narration gives unrestricted access to all characters; limited focalisation deliberately confines us to one viewpoint.', 'Restricting to one character is the opposite of omniscience.'),

@@ -11,6 +11,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Foundations',
     title: 'Order of operations',
     prompt: 'Evaluate 6 + 2 * (5 - 3)^2.',
+    mentorHint: 'Handle parentheses and exponents before addition.',
     correct: '14',
     wrong: [
       miss('64', 'This adds 6 + 2 = 8 first, then squares and multiplies, ignoring that multiplication beats addition.', 'Handle parentheses and exponents before addition.'),
@@ -26,6 +27,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Foundations',
     title: 'Adding integers with signs',
     prompt: 'Compute -7 + 12 - 5.',
+    mentorHint: 'Track each sign separately; some terms are positive.',
     correct: '0',
     wrong: [
       miss('-24', 'This adds the absolute values 7 + 12 + 5 and keeps a negative sign.', 'Track each sign separately; some terms are positive.'),
@@ -41,6 +43,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Foundations',
     title: 'Multiplying negative numbers',
     prompt: 'Compute (-4)(-3)(2).',
+    mentorHint: 'Count the negative factors; an even count gives a positive result.',
     correct: '24',
     wrong: [
       miss('-24', 'This counts an odd number of negatives, but there are two, so the product is positive.', 'Count the negative factors; an even count gives a positive result.'),
@@ -56,6 +59,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Foundations',
     title: 'Adding fractions',
     prompt: 'Compute 2/3 + 1/4.',
+    mentorHint: 'Find a common denominator before adding numerators.',
     correct: '11/12',
     wrong: [
       miss('3/7', 'This adds numerators and denominators directly, which is not how fractions add.', 'Find a common denominator before adding numerators.'),
@@ -71,6 +75,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Foundations',
     title: 'Absolute value',
     prompt: 'What is the value of |3 - 9| + |-2|?',
+    mentorHint: 'Absolute value makes each result non-negative.',
     correct: '8',
     wrong: [
       miss('-4', 'This computes 3 - 9 = -6 and -2 without taking absolute values.', 'Absolute value makes each result non-negative.'),
@@ -86,6 +91,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Foundations',
     title: 'Dividing fractions',
     prompt: 'Compute (3/5) / (2/7).',
+    mentorHint: 'Dividing by a fraction means multiplying by its reciprocal.',
     correct: '21/10',
     wrong: [
       miss('6/35', 'This multiplies the fractions straight across instead of inverting the divisor.', 'Dividing by a fraction means multiplying by its reciprocal.'),
@@ -103,6 +109,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Algebraic expressions',
     title: 'Evaluating an expression',
     prompt: 'Evaluate 5a - b^2 when a = 3 and b = -4.',
+    mentorHint: 'Squaring -4 gives a positive 16.',
     correct: '-1',
     wrong: [
       miss('31', 'This treats b^2 as -16 (using -(4^2)) instead of (-4)^2 = 16, so it adds instead of subtracts.', 'Squaring -4 gives a positive 16.'),
@@ -118,6 +125,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Algebraic expressions',
     title: 'Combining like terms',
     prompt: 'Simplify 6x - 4 + 2x - 9 - x.',
+    mentorHint: 'The -x term subtracts from the coefficient total.',
     correct: '7x - 13',
     wrong: [
       miss('9x - 13', 'This adds all x-coefficients as 6 + 2 + 1 instead of 6 + 2 - 1.', 'The -x term subtracts from the coefficient total.'),
@@ -133,6 +141,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Algebraic expressions',
     title: 'Distributive property',
     prompt: 'Expand and simplify -2(3x - 7) + 5x.',
+    mentorHint: 'A negative times a negative is positive: -2 times -7 is +14.',
     correct: '-x + 14',
     wrong: [
       miss('-x - 14', 'This distributes -2 to 3x correctly but keeps -7 negative, giving -14 instead of +14.', 'A negative times a negative is positive: -2 times -7 is +14.'),
@@ -148,6 +157,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Algebraic expressions',
     title: 'Translating a phrase',
     prompt: 'Which expression represents "the quotient of a number n and 4, decreased by 7"?',
+    mentorHint: 'The phrase lists n first, so n is the dividend.',
     correct: 'n/4 - 7',
     wrong: [
       miss('4/n - 7', 'This writes the quotient as 4 divided by n instead of n divided by 4.', 'The phrase lists n first, so n is the dividend.'),
@@ -163,6 +173,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Algebraic expressions',
     title: 'Factoring out a common factor',
     prompt: 'Factor completely: 12x + 18.',
+    mentorHint: 'Pull out the greatest common factor of 12 and 18.',
     correct: '6(2x + 3)',
     wrong: [
       miss('2(6x + 9)', 'This factors out only 2, but 6x + 9 still shares a common factor of 3.', 'Pull out the greatest common factor of 12 and 18.'),
@@ -178,6 +189,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Algebraic expressions',
     title: 'Equivalent expressions',
     prompt: 'Which expression is equivalent to 3(x + 2) - (x - 4)?',
+    mentorHint: 'Distributing the minus sign flips both signs inside.',
     correct: '2x + 10',
     wrong: [
       miss('2x + 2', 'This subtracts the parentheses as -(x - 4) = -x - 4 instead of -x + 4.', 'Distributing the minus sign flips both signs inside.'),
@@ -195,6 +207,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Linear equations and inequalities',
     title: 'One-step equation',
     prompt: 'Solve for x: x/5 = -3.',
+    mentorHint: 'To undo division by 5, multiply both sides by 5.',
     correct: 'x = -15',
     wrong: [
       miss('x = -3/5', 'This divides by 5 again instead of multiplying both sides by 5.', 'To undo division by 5, multiply both sides by 5.'),
@@ -210,6 +223,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Linear equations and inequalities',
     title: 'Two-step equation',
     prompt: 'Solve for x: 4x - 7 = 17.',
+    mentorHint: 'Add 7 to both sides first, then divide by 4.',
     correct: 'x = 6',
     wrong: [
       miss('x = 2.5', 'This divides by 4 before adding 7, using 17/4 then adjusting incorrectly.', 'Add 7 to both sides first, then divide by 4.'),
@@ -225,6 +239,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Linear equations and inequalities',
     title: 'Variables on both sides',
     prompt: 'Solve for x: 5x + 3 = 2x - 9.',
+    mentorHint: 'Dividing -12 by 3 gives a negative result.',
     correct: 'x = -4',
     wrong: [
       miss('x = 4', 'This collects terms correctly to 3x = -12 but then divides as 12/3 with the wrong sign.', 'Dividing -12 by 3 gives a negative result.'),
@@ -240,6 +255,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Linear equations and inequalities',
     title: 'Equation with distribution',
     prompt: 'Solve for x: 3(x - 2) = 2x + 5.',
+    mentorHint: 'Multiply the 3 by both x and -2.',
     correct: 'x = 11',
     wrong: [
       miss('x = 1', 'This distributes 3(x - 2) as 3x - 2 instead of 3x - 6.', 'Multiply the 3 by both x and -2.'),
@@ -255,6 +271,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Linear equations and inequalities',
     title: 'Solving an inequality',
     prompt: 'Solve for x: -3x + 4 < 19.',
+    mentorHint: 'Dividing by a negative number reverses the inequality sign.',
     correct: 'x > -5',
     wrong: [
       miss('x < -5', 'This divides by -3 without flipping the inequality direction.', 'Dividing by a negative number reverses the inequality sign.'),
@@ -270,6 +287,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Linear equations and inequalities',
     title: 'Equation with fractions',
     prompt: 'Solve for x: x/3 + 2 = 5.',
+    mentorHint: 'To undo division by 3, multiply both sides by 3.',
     correct: 'x = 9',
     wrong: [
       miss('x = 1', 'This subtracts 2 to get x/3 = 3 but then divides by 3 instead of multiplying.', 'To undo division by 3, multiply both sides by 3.'),
@@ -285,6 +303,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Linear equations and inequalities',
     title: 'Compound inequality',
     prompt: 'Which values of x satisfy -2 <= 2x - 4 < 6?',
+    mentorHint: 'Add 4 to all three parts before dividing.',
     correct: '1 <= x < 5',
     wrong: [
       miss('-1 <= x < 1', 'This divides only the middle by 2 without first adding 4 to all parts.', 'Add 4 to all three parts before dividing.'),
@@ -302,6 +321,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Graphing lines and slope',
     title: 'Slope from two points',
     prompt: 'What is the slope of the line through (1, 2) and (4, 11)?',
+    mentorHint: 'Slope is change in y divided by change in x.',
     correct: '3',
     wrong: [
       miss('1/3', 'This computes run over rise instead of rise over run, inverting the slope.', 'Slope is change in y divided by change in x.'),
@@ -317,6 +337,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Graphing lines and slope',
     title: 'Interpreting slope sign',
     prompt: 'A line has slope -2. As x increases by 1, what happens to y?',
+    mentorHint: 'A negative slope means the line falls as x increases.',
     correct: 'y decreases by 2',
     wrong: [
       miss('y increases by 2', 'This ignores the negative sign on the slope.', 'A negative slope means the line falls as x increases.'),
@@ -332,6 +353,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Graphing lines and slope',
     title: 'Slope of a horizontal line',
     prompt: 'What is the slope of the line through (-3, 5) and (4, 5)?',
+    mentorHint: 'Here the y-values are equal, so the line is horizontal.',
     correct: '0',
     wrong: [
       miss('undefined', 'This describes a vertical line, where x stays constant, not a horizontal one.', 'Here the y-values are equal, so the line is horizontal.'),
@@ -347,6 +369,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Graphing lines and slope',
     title: 'Finding the y-intercept',
     prompt: 'A line has slope 2 and passes through (3, 1). What is its y-intercept?',
+    mentorHint: 'The y-intercept is the y-value when x = 0, not at x = 3.',
     correct: '-5',
     wrong: [
       miss('1', 'This mistakes the y-coordinate of the given point for the y-intercept.', 'The y-intercept is the y-value when x = 0, not at x = 3.'),
@@ -362,6 +385,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Graphing lines and slope',
     title: 'Reading slope from a graph',
     prompt: 'A line rises 4 units vertically for every 6 units it moves horizontally to the right. What is its slope?',
+    mentorHint: 'Slope is the vertical change divided by the horizontal change.',
     correct: '2/3',
     wrong: [
       miss('3/2', 'This computes run over rise instead of rise over run.', 'Slope is the vertical change divided by the horizontal change.'),
@@ -377,6 +401,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'The coordinate plane',
     title: 'Identifying a point on a line',
     prompt: 'Which point lies on the line y = 3x - 2?',
+    mentorHint: 'Substitute x = 2 fully: 3(2) - 2.',
     correct: '(2, 4)',
     wrong: [
       miss('(2, 8)', 'This computes 3(2) but forgets to subtract 2, getting 6 then 8 by error.', 'Substitute x = 2 fully: 3(2) - 2.'),
@@ -394,6 +419,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Forms of linear equations',
     title: 'Slope and intercept from an equation',
     prompt: 'For the line y = -4x + 7, what are the slope and y-intercept?',
+    mentorHint: 'In y = mx + b, m is the coefficient of x.',
     correct: 'slope -4, y-intercept 7',
     wrong: [
       miss('slope 7, y-intercept -4', 'This swaps the slope and the y-intercept.', 'In y = mx + b, m is the coefficient of x.'),
@@ -409,6 +435,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Forms of linear equations',
     title: 'Writing an equation from slope and intercept',
     prompt: 'Write the equation of the line with slope 1/2 and y-intercept -3.',
+    mentorHint: 'The slope is the coefficient of x; the intercept is the constant.',
     correct: 'y = (1/2)x - 3',
     wrong: [
       miss('y = -3x + 1/2', 'This swaps the slope and the y-intercept positions.', 'The slope is the coefficient of x; the intercept is the constant.'),
@@ -424,6 +451,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Forms of linear equations',
     title: 'Point-slope form',
     prompt: 'Using point-slope form, write an equation for the line through (2, -1) with slope 3.',
+    mentorHint: 'Subtracting a negative y1 becomes addition: y - (-1) = y + 1.',
     correct: 'y + 1 = 3(x - 2)',
     wrong: [
       miss('y - 1 = 3(x - 2)', 'This uses -1 as if y1 were positive, but the point has y = -1.', 'Subtracting a negative y1 becomes addition: y - (-1) = y + 1.'),
@@ -439,6 +467,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Forms of linear equations',
     title: 'Converting to slope-intercept form',
     prompt: 'Rewrite 2x + 3y = 12 in slope-intercept form.',
+    mentorHint: 'Subtracting 2x makes the x-term negative.',
     correct: 'y = -(2/3)x + 4',
     wrong: [
       miss('y = (2/3)x + 4', 'This forgets to keep the negative sign when moving 2x to the other side.', 'Subtracting 2x makes the x-term negative.'),
@@ -454,6 +483,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Forms of linear equations',
     title: 'Finding both intercepts',
     prompt: 'For the line 3x - 4y = 12, what is the x-intercept?',
+    mentorHint: 'The x-intercept occurs where y = 0.',
     correct: '(4, 0)',
     wrong: [
       miss('(0, 4)', 'This gives a point where x = 0, which is the y-intercept, not the x-intercept.', 'The x-intercept occurs where y = 0.'),
@@ -469,6 +499,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Forms of linear equations',
     title: 'Parallel line slope',
     prompt: 'A line is parallel to y = 5x - 1. What is the slope of the parallel line?',
+    mentorHint: 'Parallel lines share the same slope.',
     correct: '5',
     wrong: [
       miss('-1/5', 'This gives the perpendicular slope (negative reciprocal), not the parallel slope.', 'Parallel lines share the same slope.'),
@@ -484,6 +515,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Forms of linear equations',
     title: 'Perpendicular line slope',
     prompt: 'A line is perpendicular to a line with slope 2/3. What is the slope of the perpendicular line?',
+    mentorHint: 'Perpendicular slopes are negative reciprocals.',
     correct: '-3/2',
     wrong: [
       miss('2/3', 'This repeats the original slope, which would make the lines parallel, not perpendicular.', 'Perpendicular slopes are negative reciprocals.'),
@@ -499,6 +531,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Forms of linear equations',
     title: 'Equation through two points',
     prompt: 'What is the slope-intercept equation of the line through (0, 3) and (2, 7)?',
+    mentorHint: 'The y-intercept is the y-value when x = 0, which is at the first point.',
     correct: 'y = 2x + 3',
     wrong: [
       miss('y = 2x + 7', 'This uses the y-value of the second point as the intercept.', 'The y-intercept is the y-value when x = 0, which is at the first point.'),
@@ -516,6 +549,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Foundations',
     title: 'Exponent on a negative base',
     prompt: 'Evaluate (-2)^3.',
+    mentorHint: 'Three negative factors multiply to a negative.',
     correct: '-8',
     wrong: [
       miss('8', 'This treats the result as positive, but an odd power of a negative is negative.', 'Three negative factors multiply to a negative.'),
@@ -531,6 +565,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Ratios, rates, and percentages',
     title: 'Percent of a number',
     prompt: 'What is 15% of 80?',
+    mentorHint: 'Multiply 0.15 by the full number 80.',
     correct: '12',
     wrong: [
       miss('1.2', 'This computes 15% of 8 instead of 80, missing a factor of 10.', 'Multiply 0.15 by the full number 80.'),
@@ -546,6 +581,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Ratios, rates, and percentages',
     title: 'Simplifying a ratio',
     prompt: 'Write the ratio 18:24 in simplest form.',
+    mentorHint: 'Divide by the greatest common factor of 18 and 24.',
     correct: '3:4',
     wrong: [
       miss('9:12', 'This divides both numbers by 2 but they still share a common factor of 3.', 'Divide by the greatest common factor of 18 and 24.'),
@@ -563,6 +599,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Algebraic expressions',
     title: 'Nested distribution',
     prompt: 'Simplify 2(3x + 4) - 3(x - 1).',
+    mentorHint: 'The minus times minus 1 gives +3.',
     correct: '3x + 11',
     wrong: [
       miss('3x + 5', 'This distributes -3(x - 1) as -3x - 3 instead of -3x + 3.', 'The minus times minus 1 gives +3.'),
@@ -578,6 +615,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Algebraic expressions',
     title: 'Expression with exponents',
     prompt: 'Simplify 4x^2 + 3x - x^2 + 5x.',
+    mentorHint: 'The -x^2 term subtracts from the x^2 total.',
     correct: '3x^2 + 8x',
     wrong: [
       miss('5x^2 + 8x', 'This adds the x^2 coefficients as 4 + 1 instead of 4 - 1.', 'The -x^2 term subtracts from the x^2 total.'),
@@ -595,6 +633,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Linear equations and inequalities',
     title: 'No solution recognition',
     prompt: 'How many solutions does 2x + 5 = 2x - 3 have?',
+    mentorHint: 'Subtract 2x from both sides and see what remains.',
     correct: 'No solution',
     wrong: [
       miss('One solution', 'This assumes every linear equation has exactly one solution.', 'Subtract 2x from both sides and see what remains.'),
@@ -610,6 +649,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Linear equations and inequalities',
     title: 'Word problem to equation',
     prompt: 'A taxi charges $3 plus $2 per mile. If a ride costs $19, how many miles was it?',
+    mentorHint: 'Subtract the fixed $3 before dividing by the per-mile rate.',
     correct: '8 miles',
     wrong: [
       miss('11 miles', 'This divides 19 by 2 without first subtracting the $3 base fare, then rounds.', 'Subtract the fixed $3 before dividing by the per-mile rate.'),
@@ -625,6 +665,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Linear equations and inequalities',
     title: 'Literal equation',
     prompt: 'Solve the formula P = 2L + 2W for W.',
+    mentorHint: 'After isolating 2W, divide both sides by 2.',
     correct: 'W = (P - 2L)/2',
     wrong: [
       miss('W = P - 2L', 'This subtracts 2L but forgets to divide by 2.', 'After isolating 2W, divide both sides by 2.'),
@@ -640,6 +681,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     chapter: 'Graphing lines and slope',
     title: 'Slope of a vertical line',
     prompt: 'What is the slope of the line through (5, 2) and (5, -4)?',
+    mentorHint: 'When x stays constant, the run is zero.',
     correct: 'undefined',
     wrong: [
       miss('0', 'This describes a horizontal line, but here the x-values are equal, not the y-values.', 'When x stays constant, the run is zero.'),

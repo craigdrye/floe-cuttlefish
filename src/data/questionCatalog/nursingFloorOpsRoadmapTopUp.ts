@@ -19,6 +19,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Start with whichever room the previous charge nurse mentioned last', 'Recency of mention is not a risk signal; the quiet, unmentioned patient is often the one deteriorating.', 'Build the read from the whole board, then route attention by documented risk rather than who got talked about.'),
       miss('Ask which patients have the most demanding families', 'Family demand is a workload factor but does not identify clinical risk; it drives squeaky-wheel attention.', 'Separate who is loud from who is sick; the risk scan should rank physiologic and safety risk first.'),
     ],
+    mentorHint:
+      'A charge nurse\'s first scan should find hidden risk, not just distribute rooms evenly. Patient load is shaped by acuity, isolation, observation, recent change, and safety needs, so the board read should combine census with those risk signals.',
     lesson: 'Reading a unit means mapping census against acuity, isolation burden, observation needs, and overnight changes. The headcount tells you how many patients there are, not which one is about to fall, deteriorate, or be missed.',
     source,
     generated: true,
@@ -34,6 +36,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Answering call lights faster once they go off', 'Faster reactive response still leaves the patient waiting and reaching; rounding is meant to be proactive.', 'The point is to meet needs before the light, so unassisted toileting attempts and falls drop.'),
       miss('Documenting a round only when something abnormal is found', 'Exception-only documentation hides whether rounding actually happened and breaks accountability for the schedule.', 'Reliable rounding is documented every round so the pattern, not just the exceptions, is auditable.'),
     ],
+    mentorHint:
+      'Purposeful rounding works because it anticipates the predictable reasons patients call or get up unsafely. Think of it as a reliable prevention routine: pain, position, toileting, and needed items are addressed before the patient has to improvise.',
     lesson: 'Purposeful hourly rounding reduces falls and call-light use by reliably anticipating predictable needs — pain, position, toileting, and personal items — before the patient has to call. The discipline is proactive and scheduled, not a reactive walk-by.',
     source,
     generated: true,
@@ -49,6 +53,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('A huddle is only for managers; rounds are only for nurses', 'Huddles are deliberately interdisciplinary and frontline; restricting them to managers defeats the purpose.', 'Think about who needs shared awareness of unit risks versus who reviews each patient.'),
       miss('Rounds happen daily; huddles happen only after a safety event', 'Effective units huddle routinely (often per shift) for proactive awareness, not just reactively after an event.', 'Huddles are a routine proactive tool; tie them to the start of a shift, not to incidents.'),
     ],
+    mentorHint:
+      'Huddles and rounds operate at different altitudes. A huddle creates shared situational awareness for the unit, while rounds dive into the status and care plan for individual patients.',
     lesson: 'A safety huddle is a short, whole-team stand-up that builds shared situational awareness of unit-level risks, staffing, and plans. Rounds are the patient-by-patient review of clinical status. Both matter; conflating them loses the unit-wide view.',
     source,
     generated: true,
@@ -68,6 +74,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Accept it silently and say nothing so the shift moves along', 'Silent acceptance leaves no record of the safety concern and lets the unsafe pattern recur unchallenged.', 'Coverage and a documented objection are not mutually exclusive; do both.'),
       miss('Take the assignment and quietly skip the least urgent tasks to cope', 'Quietly rationing care creates undocumented missed care and hidden risk rather than addressing the staffing gap.', 'The fix is to surface the gap upward, not to absorb it invisibly through cut corners.'),
     ],
+    mentorHint:
+      'Unsafe-assignment processes try to protect two duties at once: patients still need coverage, and the safety concern needs a clear record and escalation path. The most defensible action keeps care going while making the staffing risk visible through chain of command.',
     lesson: 'When a nurse judges an assignment unsafe but cannot change it, the defensible move is to keep patients covered while formally documenting the objection through the facility chain-of-command or assignment-despite-objection process. Abandoning patients and silent acceptance are both worse.',
     source,
     generated: true,
@@ -83,6 +91,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('It means the nurses involved are simply less diligent than their peers', 'Framing it as individual diligence ignores the staffing/workload driver and blames people for a system problem.', 'Look for the structural cause; missed care tracks with workload, not character.'),
       miss('It is harmless as long as medications and treatments are still given', 'Fundamental care omissions (mobility, hygiene, repositioning) independently drive falls, pressure injuries, and infections.', 'These "soft" tasks are exactly the ones whose omission shows up later as preventable harm.'),
     ],
+    mentorHint:
+      'Unfinished nursing care is a system signal, especially when basic prevention tasks are the first things skipped. Mobility, oral care, and repositioning may look routine, but their omission predicts measurable harm downstream.',
     lesson: 'Missed or rationed nursing care is needed care that is delayed, partially done, or left undone, usually driven by time scarcity. Fundamental care like mobility, hygiene, and repositioning is cut first and its omission predicts falls, pressure injuries, infections, and lower satisfaction.',
     source,
     generated: true,
@@ -98,6 +108,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Precautions only matter for the infection team, not the staffing grid', 'Precautions directly change frontline workflow time, which is precisely what staffing must account for.', 'The burden lands on the bedside nurse each entry, so it belongs in the assignment math.'),
       miss('It does not, because the patients are not sicker than the comparison group', 'Workload is not only acuity; precaution overhead adds time even when clinical acuity is equal.', 'Equal acuity can still mean unequal work once you count the precaution overhead per entry.'),
     ],
+    mentorHint:
+      'Workload is more than acuity and headcount. Contact precautions add time to every entry and exit, create equipment friction, and reduce the ease of bundling tasks, so they should be counted in assignment balance.',
     lesson: 'Contact precautions add donning, doffing, and dedicated-equipment steps to every single room entry, plus restricted workflow. Even when census and acuity match, a heavy isolation load is real additional work and is a legitimate reason to rebalance an assignment.',
     source,
     generated: true,
@@ -113,6 +125,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Give the agency nurse only the sickest patients to use their experience fully', 'Stacking the highest acuity onto someone unfamiliar with the local tools maximizes the very risk you identified.', 'Match the assignment to the familiarity gap; do not concentrate complexity where the tooling is new.'),
       miss('Have the agency nurse shadow without an assignment for the entire shift', 'A full shift of shadowing wastes a needed nurse and is unnecessary once targeted orientation closes the tool gap.', 'The fix is targeted orientation plus support, not removing the nurse from care entirely.'),
     ],
+    mentorHint:
+      'Competence has both general and local parts. A licensed nurse may know the clinical work but still need quick orientation to the unit\'s pumps, EHR, escalation paths, and documentation expectations before working independently.',
     lesson: 'Float and agency staff bring real competence but not unit-specific familiarity with smart pumps, EHRs, or local protocols. Safe staffing closes that gap with quick orientation and a named resource before assigning an independent load, rather than assuming licensure covers everything.',
     source,
     generated: true,
@@ -132,6 +146,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Reconciliation is complete once the admitting provider signs the orders', 'A signature does not confirm that home meds were compared to orders; the discrepancy check still has to happen.', 'The work is reconciling two lists, not obtaining a signature; mismatches must be surfaced and resolved.'),
       miss('Only prescription drugs need reconciling; OTC and supplements can be ignored', 'OTC drugs, herbals, and supplements cause real interactions and must be captured in reconciliation.', 'A complete reconciliation includes OTC, herbal, and supplement use, not just prescriptions.'),
     ],
+    mentorHint:
+      'Medication reconciliation is a safety comparison, not a copy task. The goal is to find and resolve gaps between what the patient actually takes, what the record says, and what the current orders will continue, stop, or change.',
     lesson: 'Medication reconciliation is comparing the patient\'s actual home medications (verified across sources, including OTC and supplements) against the medications ordered, then resolving every omission, duplication, and discrepancy. Copying a list is transcription, not reconciliation, and it propagates errors.',
     source,
     generated: true,
@@ -147,6 +163,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Only the admitting diagnosis, since the chart contains everything else', 'The chart lags real time; drips just stopped, lines placed, and pending criticals may not be visible yet.', 'A diagnosis is not a handoff; confirm the live, time-sensitive items that the chart may not yet reflect.'),
       miss('Whichever details the ICU nurse happens to volunteer in passing', 'Relying on what is volunteered is exactly how a stopped drip or pending critical lab gets dropped at transfer.', 'Drive the report with a checklist of safety-critical items rather than accepting an ad hoc summary.'),
     ],
+    mentorHint:
+      'Transfers are dangerous because live clinical details can fall between teams before the chart catches up. Prioritize information that changes immediate nursing actions: drips, lines, pending results, code status, and mobility limits.',
     lesson: 'Transfers are high-risk handoffs. Before accepting an ICU step-down, confirm the safety-critical, time-sensitive items: active and recently discontinued drips, lines and access, pending labs and studies, code status, and activity or mobility limits. The chart often lags the patient\'s real-time status.',
     source,
     generated: true,
@@ -162,6 +180,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('"Do you have any questions about the inhaler?"', 'Inviting questions is useful but does not verify the patient can actually perform the steps correctly.', 'Verification needs the patient to show or restate the steps, not just confirm they have no questions.'),
       miss('"I\'ve gone over the inhaler twice, so you should be all set."', 'Repetition by the nurse is not evidence of patient learning; teach-back checks the learner, not the teacher.', 'Shift from how many times you explained to whether the patient can demonstrate it back.'),
     ],
+    mentorHint:
+      'Teach-back tests the effectiveness of the teaching, not the patient\'s politeness or confidence. The strongest phrasing asks the patient to demonstrate or explain the skill in their own words while making it safe to reveal confusion.',
     lesson: 'Teach-back asks the patient to demonstrate or restate the instruction in their own words, framed as a check on the teaching ("to make sure I explained it well") rather than a quiz on the patient. Yes/no questions and counting repetitions do not verify understanding.',
     source,
     generated: true,
@@ -177,6 +197,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Accept instantly with no readiness check because boarding is an emergency', 'Accept-first with no readiness recreates the rushed-arrival failures that harm both the patient and the workflow.', 'Speed and readiness are not opposites; work the blockers fast rather than ignoring them.'),
       miss('Tell the ED the floor is full even though a clean room exists', 'Misrepresenting capacity is dishonest, erodes trust, and can delay care for a patient who needs the bed.', 'Be honest about the real blockers and resolve them; do not fabricate a full-house status.'),
     ],
+    mentorHint:
+      'Boarding creates real safety pressure, but rushed admissions create their own hazards if basic readiness is skipped. Good flow work identifies the exact blockers and clears them quickly rather than pretending readiness does not matter.',
     lesson: 'Boarding is a genuine system-level safety problem, so the floor should accept patients as quickly as true readiness allows by clearing specific blockers (bed assignment, orders review, equipment), not by skipping them or by stonewalling. Both accept-first chaos and blanket refusal shift risk elsewhere.',
     source,
     generated: true,
@@ -196,6 +218,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('A low-risk response handled entirely by the ward nurse alone', 'Low-risk is reserved for aggregate 1-4; a score of 7+ requires escalation beyond the ward nurse.', 'Reserve nurse-only response for the low band; the high band needs an urgent clinical/critical-care team.'),
       miss('No response is needed unless the score reaches 10 or higher', 'There is no 10 threshold in NEWS2; the emergency response is already triggered at an aggregate of 7.', 'The top escalation tier begins at 7, not 10; do not invent a higher cutoff.'),
     ],
+    mentorHint:
+      'Early warning scores are escalation tools, so the score band should map directly to the response intensity. For NEWS2, think in tiers: low scores stay closer to ward review, middle scores need urgent clinical review, and the highest band demands emergency-level response.',
     lesson: 'In NEWS2, an aggregate score of 1-4 is low risk (ward-nurse assessment), 5-6 is medium risk (urgent review), and 7 or more is high risk, triggering an emergency response by a team with critical-care competency. Each band maps to a defined level of escalation.',
     source,
     generated: true,
@@ -211,6 +235,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Wait until the aggregate climbs to 5 before involving a clinician', 'Waiting ignores the extreme single-parameter derangement that the rule is specifically designed to catch early.', 'The whole point of the single-parameter trigger is to act before the total catches up.'),
       miss('Recheck in four hours since one abnormal value is not concerning', 'A parameter scoring 3 is an extreme derangement, and new confusion in particular has serious causes that cannot wait.', 'Treat a single 3 as a red flag, especially new confusion; do not defer for hours.'),
     ],
+    mentorHint:
+      'Aggregate scores can hide a single extreme abnormality. NEWS2 uses a single-parameter trigger so one severely deranged finding, especially new confusion, still prompts urgent review even when the total score looks modest.',
     lesson: 'NEWS2 includes a single-parameter trigger: any individual vital sign scoring 3 (an extreme derangement) prompts at least an urgent medium-risk response even if the aggregate is low. New-onset confusion scoring 3 is exactly the kind of finding this rule exists to escalate early.',
     source,
     generated: true,
@@ -226,6 +252,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Wait and reassess in an hour to see whether the patient stabilizes alone', 'Waiting forfeits the early-intervention window that rapid response exists to capture, risking progression to arrest.', 'Rapid response is precisely for the pre-arrest window; do not wait for collapse.'),
       miss('Page the primary provider and take no further action until they reply', 'Relying on a single page with no backup can stall while the patient declines; rapid response guarantees a timely team.', 'A page can go unanswered; a rapid response brings a guaranteed, time-bound team to the bedside.'),
     ],
+    mentorHint:
+      'Rapid response is designed for the pre-arrest window: the patient is clearly deteriorating but still has signs of circulation and breathing. The decision logic is to bring expert help before waiting turns instability into a code.',
     lesson: 'A rapid response team is activated for a deteriorating but not-yet-arrested patient to bring critical-care expertise to the bedside and prevent arrest. A code blue is reserved for actual or imminent cardiopulmonary arrest. Recognizing the pre-arrest window and acting in it is the core skill.',
     source,
     generated: true,
@@ -241,6 +269,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Either method is fine as long as gloves were worn during care', 'Gloves are not a substitute for hand hygiene, and against spores only soap-and-water washing is adequate after glove removal.', 'Hand hygiene is still required after gloves, and for C. diff that hygiene must be soap and water.'),
       miss('No hand hygiene is needed if a gown and gloves were used correctly', 'PPE reduces but does not eliminate contamination; hand hygiene after doffing is mandatory, and here it must be soap and water.', 'Always perform hand hygiene after doffing PPE; for spores it specifically means soap and water.'),
     ],
+    mentorHint:
+      'Most routine hand hygiene can use alcohol rub, but spore-forming organisms are the major exception. For C. difficile, the safety concept is physical removal of spores after doffing PPE, not just killing ordinary microbes.',
     lesson: 'C. difficile forms environmentally resistant spores that alcohol-based hand rub does not reliably remove. After caring for a C. diff patient, hand hygiene must be soap-and-water washing, which physically removes spores. This is the key exception to the usual alcohol-rub default.',
     source,
     generated: true,
@@ -256,6 +286,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Give an antipyretic and resume once the fever comes down', 'Treating the fever and resuming ignores that this picture suggests hemolysis, not a benign febrile reaction.', 'New back pain and hypotension point to hemolysis; stop the unit rather than medicate-and-resume.'),
       miss('Flush the existing transfusion line with saline and keep the same tubing', 'Flushing the same tubing pushes residual incompatible blood into the patient; tubing must be changed.', 'Keep the vein open with saline on fresh tubing, not by flushing blood-contaminated tubing.'),
     ],
+    mentorHint:
+      'A suspected transfusion reaction is managed by stopping exposure first. Symptoms like back pain, fever, chills, and hypotension early in the transfusion suggest a serious incompatibility, so preserving IV access must be done without pushing more blood product into the patient.',
     lesson: 'Acute hemolytic transfusion reactions, usually from mislabeling/ABO incompatibility, present early with low back pain, chills, fever, and hypotension. The immediate action is to stop the transfusion, disconnect the blood tubing, and keep the line open with normal saline on new tubing, then assess and notify.',
     source,
     generated: true,
@@ -271,6 +303,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('The patient\'s diagnosis and assigned attending physician', 'Diagnosis and physician are shared by many patients and are not unique person-specific identifiers.', 'Pick attributes unique to the individual, like name and date of birth, not shared clinical attributes.'),
       miss('The nurse\'s visual recognition of a patient cared for all week', 'Visual recognition is error-prone and not an approved identifier; two stated/verified identifiers are still required.', 'Familiarity is not an identifier; verify two approved identifiers every time, even for known patients.'),
     ],
+    mentorHint:
+      'Patient identifiers must identify the person, not the location, diagnosis, or staff familiarity. Safe medication administration requires matching two stable patient-specific identifiers against the record every time.',
     lesson: 'The Joint Commission requires at least two person-specific identifiers (commonly full name and date of birth) verified against the armband and record before medications, blood, or procedures. Room number is explicitly excluded because it is not unique and can change.',
     source,
     generated: true,
@@ -290,6 +324,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('The fact that she is post-op day one from a hip', 'Surgical history is the Background; it sets context but is not the recommended action.', 'B is the relevant history; R is the concrete request for action.'),
       miss('The finding of diminished breath sounds at the bases', 'The exam finding is part of the Assessment; the Recommendation is the proposed next step.', 'Distinguish what you observed (A) from what you are asking for (R).'),
     ],
+    mentorHint:
+      'SBAR separates what is happening, what background matters, what you think it means, and what action you need. The recommendation is the ask that turns a concern into a decision point for the provider.',
     lesson: 'SBAR structures escalation: Situation (the immediate problem), Background (relevant history), Assessment (your read of what is happening), and Recommendation (the explicit ask). Naming the recommendation forces a clear, actionable request rather than a vague "the patient looks off."',
     source,
     generated: true,
@@ -305,6 +341,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Administer immediately and document the verbal order afterward', 'Acting before read-back skips the verification step where dose or drug errors are caught.', 'Verify first, act second; the read-back has to happen before administration.'),
       miss('Ask a second nurse to witness you giving the drug instead of reading back', 'A witness to administration does not verify that the order was heard correctly from the provider.', 'The safeguard is confirming the order content with the prescriber, not witnessing the act of giving it.'),
     ],
+    mentorHint:
+      'Closed-loop communication makes the sender confirm the receiver heard the order correctly before action is taken. This is especially important for verbal medication orders because small sound-alike or dose errors can become immediate patient harm.',
     lesson: 'Verbal and telephone orders (and critical results) require closed-loop communication: write down or enter the order, then read it back to the prescriber for explicit confirmation before acting. This catches mishearings of drug, dose, and route at the moment they would otherwise become errors.',
     source,
     generated: true,
@@ -320,6 +358,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('Send "patient not doing well, please call" with no clinical data', 'Without data the covering provider cannot triage this call against other concurrent demands.', 'Give enough clinical signal (vitals, the change) for the provider to prioritize correctly.'),
       miss('List every normal finding first to reassure the provider before the concern', 'Leading with reassuring normals delays the urgent signal and risks the provider deprioritizing the call.', 'Lead with the abnormal, urgent finding; do not bury it behind a list of normals.'),
     ],
+    mentorHint:
+      'Urgent pages compete with other urgent pages, so the structure must help the receiver triage quickly. Lead with the acute change and vital signs, then give only the background needed to support a specific next action.',
     lesson: 'An urgent escalation should front-load the acute problem and current vitals, include only pertinent background, state the nurse\'s assessment, and end with a specific request. A covering provider triages many demands, so a clear, prioritized message gets the right action faster.',
     source,
     generated: true,
@@ -339,6 +379,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('A brief entry written from memory at the end of the shift', 'End-of-shift recall is less accurate and less defensible than a contemporaneous, timed entry.', 'Chart contemporaneously with real times rather than reconstructing hours later.'),
       miss('An incident-report number with no clinical note in the chart', 'The incident report is internal quality data and does not replace the required clinical documentation in the record.', 'Keep the two separate: an internal report does not substitute for a factual chart note.'),
     ],
+    mentorHint:
+      'Clinical documentation should be objective enough to survive someone reading it months later with no memory of the event. After a fall, chart times, assessment findings, actions, notifications, and patient response; keep blame and incident-report mechanics out of the clinical note.',
     lesson: 'Defensible documentation is contemporaneous, timed, objective, and complete: what was assessed, what was found, what actions were taken, who was notified, and how the patient responded. Avoid blame and speculation, chart in real time, and never let an internal incident report substitute for the clinical note.',
     source,
     generated: true,
@@ -354,6 +396,8 @@ export const nursingFloorOpsRoadmapTopUpQuestions: Question[] = makeQuestionBank
       miss('PT should personally mobilize the patient on every occasion from now on', 'Off-loading all mobility to PT is unrealistic and ignores that the recommendation must reach nursing care.', 'The fix is integrating the recommendation into the shared care plan, not making one discipline do all the work.'),
       miss('Wait for the next PT visit so they can clarify their own note', 'Waiting leaves the patient at fall risk under a one-person assist that PT has already deemed unsafe.', 'Act on the documented safer plan now; do not let the patient stay at risk until the next consult.'),
     ],
+    mentorHint:
+      'Consult recommendations do not improve safety unless they change the shared plan at the bedside. Closing the loop means the recommendation is communicated, incorporated into workflows, and visible to every caregiver who will act on it.',
     lesson: 'A consult is only useful when its recommendation reaches the care plan and the bedside team. The failure here is a broken consult-to-bedside loop. The fix is to flag the new mobility status, update the shared care plan, and communicate it to every caregiver so practice matches the safer recommendation.',
     source,
     generated: true,

@@ -169,7 +169,6 @@ export function TrainerScreen() {
     combo, incrementCombo, resetCombo,
     lastXpGain, setLastXpGain, unlockAchievement, updateReview,
     captureMisconception, clearMisconception, misconceptionArtifacts, recordBossWin, bossWins, focusMode,
-    flaggedQuestions, repeatedQuestions, toggleFlagQuestion, toggleRepeatQuestion,
     questionQualityRatings, setQuestionQualityRating,
     showLesson, setShowLesson,
     selectedLesson, setSelectedLesson,
@@ -196,10 +195,25 @@ export function TrainerScreen() {
   const [bossIntroDismissedFor, setBossIntroDismissedFor] = useState<string | number | null>(null)
   const [showCalculator, setShowCalculator] = useState(false)
   const [showThoughts, setShowThoughts] = useState(false)
+  const [attentionTool, setAttentionTool] = useState<'ask' | 'hint' | 'teach' | null>(null)
 
   useEffect(() => {
     setCalculatorInput('')
   }, [baseQuestion.id, remixSeed, setCalculatorInput])
+
+  useEffect(() => {
+    setAttentionTool(null)
+    const schedule = [
+      { tool: 'ask' as const, delay: 3000 },
+      { tool: 'hint' as const, delay: 6000 },
+      { tool: 'teach' as const, delay: 10000 },
+    ]
+    const timers = schedule.flatMap(({ tool, delay }) => [
+      window.setTimeout(() => setAttentionTool(tool), delay),
+      window.setTimeout(() => setAttentionTool((current) => (current === tool ? null : current)), delay + 1500),
+    ])
+    return () => timers.forEach((timer) => window.clearTimeout(timer))
+  }, [baseQuestion.id, question.prompt, remixSeed])
 
   const thoughtKey = `${baseQuestion.id}-${remixSeed}`
   const calculatorResult = useMemo(() => calculateExpression(calculatorInput), [calculatorInput])
@@ -525,16 +539,37 @@ export function TrainerScreen() {
             </div>
 
 
+            <div className="answers">
+              {visibleAnswers.map((answer) => (
+                <button
+                  key={answer.id}
+                  className={[
+                    'answer',
+                    armedAnswerId === answer.id ? 'armed' : '',
+                    selectedAnswerId === answer.id ? 'selected' : '',
+                    selectedAnswerId && answer.correct ? 'correct' : '',
+                    selectedAnswerId === answer.id && !answer.correct ? 'wrong' : '',
+                  ].join(' ')}
+                  onClick={() => choose(answer)}
+                >
+                  <span className="answer-label" title={answer.label}>{answer.label}</span>
+                  {armedAnswerId === answer.id && !selectedAnswerId && <span className="commit-hint">Tap again</span>}
+                  {selectedAnswerId && answer.correct && <CheckCircle2 size={17} />}
+                  {selectedAnswerId === answer.id && !answer.correct && <XCircle size={17} />}
+                </button>
+              ))}
+            </div>
+
             <div className="actions-toolbar">
               <div className="actions-toolbar-row">
-                <button className="secondary" onClick={askDifferently}><ShieldQuestion size={15} /> Ask differently</button>
-                <button className="secondary" onClick={() => setShowHint(!showHint)}><Sparkles size={15} /> Hint</button>
-                <button className="secondary" onClick={() => setShowLesson(!showLesson)}><BookOpen size={15} /> Teach me</button>
+                <button className={`secondary pastel-1${attentionTool === 'ask' ? ' attention-flash' : ''}`} onClick={askDifferently}><ShieldQuestion size={15} /> Ask differently</button>
+                <button className={`secondary pastel-2${attentionTool === 'hint' ? ' attention-flash' : ''}`} onClick={() => setShowHint(!showHint)}><Sparkles size={15} /> Hint</button>
+                <button className={`secondary pastel-3${attentionTool === 'teach' ? ' attention-flash' : ''}`} onClick={() => setShowLesson(!showLesson)}><BookOpen size={15} /> Teach me</button>
               </div>
               <div className="actions-toolbar-row">
-                <button className={`secondary${showCalculator ? ' active' : ''}`} onClick={() => setShowCalculator(v => !v)}><Calculator size={15} /> Calculator</button>
-                <button className={`secondary${showThoughts ? ' active' : ''}`} onClick={() => setShowThoughts(v => !v)}><Brain size={15} /> Note pad</button>
-                <button className="secondary" onClick={resetQuestion}><Repeat2 size={15} /> Reset Q</button>
+                <button className={`secondary pastel-4${showCalculator ? ' active' : ''}`} onClick={() => setShowCalculator(v => !v)}><Calculator size={15} /> Calculator</button>
+                <button className={`secondary pastel-5${showThoughts ? ' active' : ''}`} onClick={() => setShowThoughts(v => !v)}><Brain size={15} /> Note pad</button>
+                <button className="secondary pastel-6" onClick={resetQuestion}><Repeat2 size={15} /> Reset Q</button>
               </div>
             </div>
 
@@ -614,31 +649,6 @@ export function TrainerScreen() {
                 </motion.div>
               )}
             </AnimatePresence>
-
-            <div className="answers">
-              {visibleAnswers.map((answer) => (
-                <button
-                  key={answer.id}
-                  className={[
-                    'answer',
-                    armedAnswerId === answer.id ? 'armed' : '',
-                    selectedAnswerId === answer.id ? 'selected' : '',
-                    selectedAnswerId && answer.correct ? 'correct' : '',
-                    selectedAnswerId === answer.id && !answer.correct ? 'wrong' : '',
-                  ].join(' ')}
-                  onClick={() => choose(answer)}
-                >
-                  <span className="answer-label" title={answer.label}>{answer.label}</span>
-                  {armedAnswerId === answer.id && !selectedAnswerId && <span className="commit-hint">Tap again</span>}
-                  {selectedAnswerId && answer.correct && <CheckCircle2 size={17} />}
-                  {selectedAnswerId === answer.id && !answer.correct && <XCircle size={17} />}
-                </button>
-              ))}
-              <div className="commit-rule">
-                <CheckCircle2 size={14} />
-                <span>Tap once to lock an answer. Tap the lit answer again to submit.</span>
-              </div>
-            </div>
 
             <div className="actions-primary">
               <button className="primary" disabled={!selectedAnswerId} onClick={nextQuestion}>
@@ -730,24 +740,7 @@ export function TrainerScreen() {
           </label>
         </div>
 
-        <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-          <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', fontWeight: 700, color: 'var(--ocean-deep)', cursor: 'pointer' }}>
-            <input
-              type="checkbox"
-              checked={flaggedQuestions.includes(question.id)}
-              onChange={() => toggleFlagQuestion(question.id)}
-            />
-            Flag (bad question)
-          </label>
-          <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', fontWeight: 700, color: 'var(--ocean-deep)', cursor: 'pointer' }}>
-            <input
-              type="checkbox"
-              checked={repeatedQuestions.includes(question.id)}
-              onChange={() => toggleRepeatQuestion(question.id)}
-            />
-            Repeated
-          </label>
-        </div>
+        <div style={{ minHeight: '21px' }} aria-hidden="true" />
       </div>
 
       <button className="back-btn" onClick={goBackFromTrainer} type="button">
