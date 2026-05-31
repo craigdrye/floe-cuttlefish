@@ -1,4 +1,5 @@
 import { useMemo, useState, useEffect, useRef } from 'react'
+import { motion } from 'framer-motion'
 import { ArrowLeft, CheckCircle2, ChevronRight, Lock, Sparkles, Star } from 'lucide-react'
 import { useStore } from '../../store/useStore'
 import { useQuizData } from '../../hooks/useQuizData'
@@ -138,6 +139,21 @@ export function ChapterSubMapScreen() {
   const overallPct = totalTarget > 0 ? Math.round((totalSolved / totalTarget) * 100) : 0
   const chapterDisplayName = (selectedChapter ?? '').replace(/^Capstone:\s*/i, '')
 
+  // When we land here having just completed the selected lesson, let Floe rest on
+  // that lesson for a beat, then clear the selection so the active node advances to
+  // the next incomplete lesson — Floe glides along the path (layout animation).
+  const floeAdvancedRef = useRef(false)
+  useEffect(() => {
+    if (floeAdvancedRef.current || !selectedLesson) return
+    const current = lessonStats.find((l) => l.id === selectedLesson)
+    if (!current || !current.completed) return
+    const nextIncomplete = lessonStats.find((l) => l.unlocked && !l.completed)
+    if (!nextIncomplete) return
+    floeAdvancedRef.current = true
+    const timer = window.setTimeout(() => setSelectedLesson(null), 900)
+    return () => window.clearTimeout(timer)
+  }, [selectedLesson, lessonStats, setSelectedLesson])
+
   const goBack = () => {
     setSelectedLesson(null)
     setScreen('map')
@@ -253,7 +269,12 @@ export function ChapterSubMapScreen() {
             return (
               <li key={lesson.id} className={classes}>
                 {lesson.isActive && (
-                  <div className="chapter-node-floe" aria-hidden="true">
+                  <motion.div
+                    layoutId="chapter-floe"
+                    className="chapter-node-floe"
+                    aria-hidden="true"
+                    transition={{ type: 'spring', stiffness: 260, damping: 28 }}
+                  >
                     {floeFrames.map((src, idx) => (
                       <img
                         key={src}
@@ -262,7 +283,7 @@ export function ChapterSubMapScreen() {
                         alt=""
                       />
                     ))}
-                  </div>
+                  </motion.div>
                 )}
 
                 <button

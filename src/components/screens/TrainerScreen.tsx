@@ -173,7 +173,6 @@ export function TrainerScreen() {
     questionQualityRatings, setQuestionQualityRating,
     showLesson, setShowLesson,
     selectedLesson, setSelectedLesson,
-    selectedChapter, setSelectedChapter,
   } = useStore()
 
   // Back navigation: if the player drilled in through a chapter sub-map
@@ -191,7 +190,6 @@ export function TrainerScreen() {
 
   const {
     selectedTrackInfo, isSelectedCatalogReady, activeSet, baseQuestion, question, visibleAnswers, remixSeed, catalogError,
-    chapterLessons, chapterGroups,
   } = useQuizData()
 
   const [armedAnswerId, setArmedAnswerId] = useState<string | null>(null)
@@ -357,40 +355,17 @@ export function TrainerScreen() {
     submitAnswer(answer)
   }
 
-  // Auto-advance on lesson completion: roll straight into the next lesson, and
-  // into the next chapter's lesson path once the current chapter's lessons are
-  // finished. Returns true if it navigated, false when there is nothing left.
-  const goToNextLessonOrChapter = (): boolean => {
-    const lessonIdx = chapterLessons.findIndex((l) => l.id === selectedLesson)
-    if (lessonIdx >= 0 && lessonIdx + 1 < chapterLessons.length) {
-      setSelectedLesson(chapterLessons[lessonIdx + 1].id)
-      setIndex(0)
-      return true
-    }
-    const chapterIdx = chapterGroups.findIndex((g) => g.label === selectedChapter)
-    if (chapterIdx >= 0 && chapterIdx + 1 < chapterGroups.length) {
-      // setSelectedChapter also clears selectedLesson and resets index/answer state.
-      setSelectedChapter(chapterGroups[chapterIdx + 1].label)
-      setScreen('chapter')
-      return true
-    }
-    return false
-  }
-
   const nextQuestion = () => {
     setLastXpGain(null)
     const nextIndex = index + 1
     const lessonComplete = nextIndex >= activeSet.length
 
     if (isCorrect && mode === 'daily' && lessonComplete) {
-      // Lesson finished (all rounds played) — roll straight into the next lesson,
-      // and into the next chapter once the chapter's lessons are done. Rounds
-      // inside a lesson flow back-to-back; we never detour to the sub-map between
-      // them. Only fall back to the sub-map/map at the end of the final chapter.
-      if (!(selectedLesson && goToNextLessonOrChapter())) {
-        if (selectedLesson) setSelectedLesson(null)
-        setScreen(selectedLesson ? 'chapter' : 'map')
-      }
+      // Lesson finished (all rounds played) — return to the chapter map. We keep
+      // `selectedLesson` pointing at the just-completed lesson so Floe lands on it
+      // there, then the lesson path glides Floe along to the next lesson. Rounds
+      // inside a lesson still flow back-to-back; this only fires at lesson end.
+      setScreen(selectedLesson ? 'chapter' : 'map')
     } else {
       setIndex((c) => (c + 1) % activeSet.length)
     }
