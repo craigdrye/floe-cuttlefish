@@ -167,7 +167,7 @@ export function TrainerScreen() {
     thoughts, setThought, wrongAnswerFeedback, setWrongAnswerFeedback,
     setScreen, setRemixSeed, setWordingMode,
     combo, incrementCombo, resetCombo,
-    lastXpGain, setLastXpGain, unlockAchievement, updateReview, setPendingStageCelebration,
+    lastXpGain, setLastXpGain, unlockAchievement, updateReview,
     captureMisconception, clearMisconception, misconceptionArtifacts, recordBossWin, bossWins, focusMode,
     flaggedQuestions, repeatedQuestions, toggleFlagQuestion, toggleRepeatQuestion,
     questionQualityRatings, setQuestionQualityRating,
@@ -194,7 +194,6 @@ export function TrainerScreen() {
     chapterLessons, chapterGroups,
   } = useQuizData()
 
-  const QUESTIONS_PER_STAGE = 4
   const [armedAnswerId, setArmedAnswerId] = useState<string | null>(null)
   const [bossIntroDismissedFor, setBossIntroDismissedFor] = useState<string | number | null>(null)
   const [showCalculator, setShowCalculator] = useState(false)
@@ -210,8 +209,30 @@ export function TrainerScreen() {
   const isCorrect = selectedAnswer?.correct
   const rarity = questionRarity(question)
   const activeMuseumItem = misconceptionArtifacts.find((item) => item.questionId === question.id && !item.clearedAt)
-  const stageNumber = Math.floor(index / QUESTIONS_PER_STAGE) + 1
-  const isBossBattle = mode === 'daily' && index % QUESTIONS_PER_STAGE === QUESTIONS_PER_STAGE - 1
+  // Lessons play in rounds of "3 questions + a boss" (the round's last question).
+  // Rounds = floor(n / 4): 4-7 questions -> 1 round, 8-11 -> 2 rounds, 12-15 -> 3,
+  // and so on. Questions split as evenly as possible across the rounds and are all
+  // played in order. A lesson with fewer than 4 questions has NO boss — you just
+  // answer what's there and move on.
+  const roundPlan = useMemo(() => {
+    const n = activeSet.length
+    const roundCount = Math.floor(n / 4)
+    const bossIndices = new Set<number>()
+    const roundStarts: number[] = []
+    if (roundCount > 0) {
+      const base = Math.floor(n / roundCount)
+      const rem = n % roundCount
+      let cursor = 0
+      for (let r = 0; r < roundCount; r += 1) {
+        roundStarts.push(cursor)
+        cursor += base + (r < rem ? 1 : 0)
+        bossIndices.add(cursor - 1) // the round's last question is the boss
+      }
+    }
+    return { roundCount, bossIndices, roundStarts }
+  }, [activeSet.length])
+  const stageNumber = roundPlan.roundStarts.reduce((acc, start, i) => (index >= start ? i + 1 : acc), 1)
+  const isBossBattle = mode === 'daily' && roundPlan.bossIndices.has(index)
   const isSecretBoss = isBossBattle && progress.streak >= 7
   const bossId = `${selectedTrackInfo.id}-stage-${stageNumber}`
   const bossTitle = bossTitleFor(selectedTrackInfo.title, stageNumber)
@@ -359,22 +380,16 @@ export function TrainerScreen() {
   const nextQuestion = () => {
     setLastXpGain(null)
     const nextIndex = index + 1
-    const currentStage = Math.floor(index / QUESTIONS_PER_STAGE)
-    const nextStage = Math.floor(nextIndex / QUESTIONS_PER_STAGE)
-    const stageJustCompleted = nextStage > currentStage
+    const lessonComplete = nextIndex >= activeSet.length
 
-    if (isCorrect && mode === 'daily' && (nextIndex >= activeSet.length || stageJustCompleted)) {
-      const lessonComplete = nextIndex >= activeSet.length
-      if (lessonComplete && selectedLesson && goToNextLessonOrChapter()) {
-        // Auto-advanced straight into the next lesson (or the next chapter once
-        // this chapter's lessons are done) — no detour back to the sub-map.
-      } else {
-        if (stageJustCompleted) setPendingStageCelebration(currentStage + 1)
-        // Mid-lesson stage milestone, or the end of the final chapter: drop back
-        // to the chapter sub-map (or course map) so the next pick is one tap away.
+    if (isCorrect && mode === 'daily' && lessonComplete) {
+      // Lesson finished (all rounds played) — roll straight into the next lesson,
+      // and into the next chapter once the chapter's lessons are done. Rounds
+      // inside a lesson flow back-to-back; we never detour to the sub-map between
+      // them. Only fall back to the sub-map/map at the end of the final chapter.
+      if (!(selectedLesson && goToNextLessonOrChapter())) {
         if (selectedLesson) setSelectedLesson(null)
         setScreen(selectedLesson ? 'chapter' : 'map')
-        if (nextIndex < activeSet.length) setIndex(nextIndex)
       }
     } else {
       setIndex((c) => (c + 1) % activeSet.length)
