@@ -207,13 +207,16 @@ export function TrainerScreen() {
   const isCorrect = selectedAnswer?.correct
   const rarity = questionRarity(question)
   const activeMuseumItem = misconceptionArtifacts.find((item) => item.questionId === question.id && !item.clearedAt)
-  // Lessons play in rounds of "3 questions + a boss" (the round's last question).
-  // Rounds = floor(n / 4): 4-7 questions -> 1 round, 8-11 -> 2 rounds, 12-15 -> 3,
-  // and so on. Questions split as evenly as possible across the rounds and are all
-  // played in order. A lesson with fewer than 4 questions has NO boss — you just
-  // answer what's there and move on.
+  // Lessons play in rounds of "3 questions + a boss" (the round's last question),
+  // capped at 2 rounds / 8 questions per lesson:
+  //   8+ questions -> two rounds of 4 (3 + boss, 3 + boss), then back to the map
+  //   4-7          -> one round (all of them, boss is the last)
+  //   <4           -> no boss, just answer what's there
+  // (Lessons longer than 8 aren't re-chunked; the remaining questions surface on a
+  // later visit. The aim is ~8 questions per lesson, i.e. two clean rounds.)
+  const lessonLength = Math.min(activeSet.length, 8)
   const roundPlan = useMemo(() => {
-    const n = activeSet.length
+    const n = lessonLength
     const roundCount = Math.floor(n / 4)
     const bossIndices = new Set<number>()
     const roundStarts: number[] = []
@@ -228,7 +231,7 @@ export function TrainerScreen() {
       }
     }
     return { roundCount, bossIndices, roundStarts }
-  }, [activeSet.length])
+  }, [lessonLength])
   const stageNumber = roundPlan.roundStarts.reduce((acc, start, i) => (index >= start ? i + 1 : acc), 1)
   const isBossBattle = mode === 'daily' && roundPlan.bossIndices.has(index)
   const isSecretBoss = isBossBattle && progress.streak >= 7
@@ -358,7 +361,7 @@ export function TrainerScreen() {
   const nextQuestion = () => {
     setLastXpGain(null)
     const nextIndex = index + 1
-    const lessonComplete = nextIndex >= activeSet.length
+    const lessonComplete = nextIndex >= lessonLength
 
     if (isCorrect && mode === 'daily' && lessonComplete) {
       // Lesson finished (all rounds played) — return to the chapter map. We keep
@@ -367,7 +370,7 @@ export function TrainerScreen() {
       // inside a lesson still flow back-to-back; this only fires at lesson end.
       setScreen(selectedLesson ? 'chapter' : 'map')
     } else {
-      setIndex((c) => (c + 1) % activeSet.length)
+      setIndex((c) => (c + 1) % Math.max(1, lessonLength))
     }
 
     incrementAnswerShuffleSeed()
