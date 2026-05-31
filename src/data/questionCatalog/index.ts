@@ -151,30 +151,31 @@ export function questionCatalogKeyForTrack(trackId: string, ageGroup: AgeGroup):
   return null
 }
 
-import { TIER_TOPUPS } from './tierTopUps'
-import { UNIVERSITY_103_TOPUPS } from './university103TopUps'
-import { PRIMARY_103_TOPUPS } from './primary103TopUps'
-import { HIGH_103_TOPUPS } from './high103TopUps'
-
 /**
- * Public catalog loader: builds the requested catalog, then appends university/high tier
- * question top-ups (generated:true) to any track that already has a bank in this catalog.
- * TIER_TOPUPS brought under-50 courses up to >=50; UNIVERSITY_103_TOPUPS brings the 47
- * university courses up to >=103. (Career top-ups merge inside buildCareerQuestionCatalog.)
+ * Public catalog loader: builds the requested catalog, then appends the relevant
+ * tier's question top-ups (generated:true) to any track that already has a bank in
+ * this catalog. The top-up aggregators are imported DYNAMICALLY (not statically) so
+ * their ~14k questions stay OUT of the eager app bundle and only load when a course
+ * in that tier is actually opened. The maps are tier-disjoint, so scoping by catalog
+ * key produces identical results to merging all of them.
+ * (Career top-ups merge inside buildCareerQuestionCatalog.)
  */
 export async function loadQuestionCatalog(catalogKey: string) {
   const catalog = await loadQuestionCatalogRaw(catalogKey)
-  for (const [id, extra] of Object.entries(TIER_TOPUPS)) {
-    if (catalog[id]) catalog[id] = [...catalog[id], ...extra]
+  const maps: Array<Record<string, import('./types').Question[]>> = []
+  if (catalogKey === 'primary') {
+    maps.push((await import('./primary103TopUps')).PRIMARY_103_TOPUPS)
+  } else if (catalogKey.startsWith('university')) {
+    maps.push((await import('./tierTopUps')).TIER_TOPUPS)
+    maps.push((await import('./university103TopUps')).UNIVERSITY_103_TOPUPS)
+  } else if (catalogKey.startsWith('high')) {
+    maps.push((await import('./tierTopUps')).TIER_TOPUPS)
+    maps.push((await import('./high103TopUps')).HIGH_103_TOPUPS)
   }
-  for (const [id, extra] of Object.entries(UNIVERSITY_103_TOPUPS)) {
-    if (catalog[id]) catalog[id] = [...catalog[id], ...extra]
-  }
-  for (const [id, extra] of Object.entries(PRIMARY_103_TOPUPS)) {
-    if (catalog[id]) catalog[id] = [...catalog[id], ...extra]
-  }
-  for (const [id, extra] of Object.entries(HIGH_103_TOPUPS)) {
-    if (catalog[id]) catalog[id] = [...catalog[id], ...extra]
+  for (const map of maps) {
+    for (const [id, extra] of Object.entries(map)) {
+      if (catalog[id]) catalog[id] = [...catalog[id], ...extra]
+    }
   }
   return catalog
 }
