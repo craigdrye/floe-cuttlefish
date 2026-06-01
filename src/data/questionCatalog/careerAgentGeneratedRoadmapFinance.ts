@@ -4539,7 +4539,7 @@ export const careerAgentGeneratedRoadmapFinanceQuestionsByTrack: Record<string, 
       [
         ['Assume supplier continuity from current production stability', 'Single-source supply chains are operational time bombs. COVID and shipping disruption made this risk concrete for every PE firm.'],
         ['Value the company as if nothing ever ships late', 'Shipping delays are normal. The diligence question is whether the business has buffer to absorb them.'],
-        ['Ask the supplier to promise nicely', 'Supplier promises are not enforceable inventory. Real mitigation requires contracts, alternative sources, or buffer stock.'],
+        ['Rely on the supplier\'s verbal assurance without checking contracts or backups', 'Verbal comfort is not enforceable inventory. Real mitigation requires contracts, alternative sources, or buffer stock.'],
       ],
       'Operational fragility can become financial risk. Supplier concentration belongs in the investment thesis and value-creation plan.'),
 
