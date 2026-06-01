@@ -3,6 +3,25 @@ import type { Question } from './types'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/linear|systems|inequalities/i.test(chapter)) {
+    return `${title} is about keeping roles straight in equations and graphs. The useful answer is "${correct}"; identify the rate, starting value, operation, or boundary before doing arithmetic.`
+  }
+  if (/quadratics/i.test(chapter)) {
+    return `${title} is about the structure of a quadratic expression. The useful answer is "${correct}"; use factors, signs, and the zero-product property rather than treating every number as a root.`
+  }
+  if (/exponents|radicals/i.test(chapter)) {
+    return `${title} is about rewriting expressions without changing their value. The useful answer is "${correct}"; use exponent rules or perfect-square factors carefully, including signs and leftover factors.`
+  }
+  if (/geometry/i.test(chapter)) {
+    return `${title} is about turning a diagram or coordinate situation into a relationship. The useful answer is "${correct}"; use the horizontal and vertical changes together, not just one coordinate difference.`
+  }
+  if (/statistics/i.test(chapter)) {
+    return `${title} is about reading patterns in data. The useful answer is "${correct}"; describe the association you see without jumping from pattern to proof of causation.`
+  }
+  return `${title} is a Grade 9 math skill. The useful answer is "${correct}"; name the structure first, then use the matching rule or operation.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -24,8 +43,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson: extra.lesson ??
-    'Coverage source: NYSED, STAAR, and OER Grade 9 algebra/geometry collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: extra.lesson ?? lessonFor(chapter, title, correct),
   solution: extra.solution,
   mentorHint: extra.mentorHint,
   alternatePrompts: extra.alternatePrompts,

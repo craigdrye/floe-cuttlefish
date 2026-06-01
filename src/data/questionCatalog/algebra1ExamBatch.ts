@@ -2,6 +2,28 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/functions|tables|graphs/i.test(chapter)) {
+    return `${title} is about interpreting a function in context. The useful answer is "${correct}"; decide what inputs and outputs are possible before treating the symbols as abstract numbers.`
+  }
+  if (/linear functions|data models/i.test(chapter)) {
+    return `${title} is about reading a model. The useful answer is "${correct}"; separate starting value, rate of change, residual, and trend so each number keeps its job.`
+  }
+  if (/inequalities/i.test(chapter)) {
+    return `${title} is about solving while preserving the comparison. The useful answer is "${correct}"; use inverse operations and only flip the inequality when multiplying or dividing by a negative.`
+  }
+  if (/systems/i.test(chapter)) {
+    return `${title} is about making two equations agree at the same point. The useful answer is "${correct}"; set matching expressions equal or substitute carefully, then answer the variable asked for.`
+  }
+  if (/exponents|polynomials|exponential/i.test(chapter)) {
+    return `${title} is about expression structure. The useful answer is "${correct}"; distinguish repeated multiplication, rates, coefficients, and like terms.`
+  }
+  if (/quadratics/i.test(chapter)) {
+    return `${title} is about a curved model and its turning point. The useful answer is "${correct}"; use the vertex, opening direction, and coordinates according to the context.`
+  }
+  return `${title} is an Algebra 1 skill. The useful answer is "${correct}"; identify the algebra structure, then use the rule that matches it.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +38,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: NYSED Algebra I, STAAR Algebra I, and OER algebra collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from NYSED/STAAR/OER Algebra I coverage',
 })
 
