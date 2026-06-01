@@ -151,7 +151,7 @@ export const financialModelingR2Questions: Question[] = makeQuestionBank('Career
     wrong: [
       miss('Treat the low-charge year as the new normal and forecast from it', 'A temporarily depressed expense is not the run-rate; forecasting from it overstates future operating income. Normalize toward the recurring level.', 'A one-year dip in an expense is not a permanent structural change; do not anchor on it.'),
       miss('Add the missing stock comp back as revenue to balance it out', 'Stock comp is an expense, not revenue; reclassifying it as revenue is nonsensical and inflates the top line. Normalization adjusts the expense, not the revenue line.', 'You adjust the understated expense in place; you do not invent revenue to offset it.'),
-      miss('Ignore stock comp entirely because it is non-cash', 'Non-cash does not mean costless: stock comp dilutes shareholders and is a real economic expense most analysts keep in operating costs. Excluding it overstates margins.', 'Non-cash is not free. Many analysts treat stock comp as a genuine operating cost.'),
+      miss('Exclude stock comp from run-rate operating costs simply because it does not use cash in the period', 'Non-cash does not mean costless: stock comp dilutes shareholders and is a real economic expense most analysts keep in operating costs. Excluding it overstates margins.', 'Non-cash is not free. Many analysts treat stock comp as a genuine operating cost.'),
     ],
     lesson: 'Normalization smooths nonrecurring distortions in either direction. A year with an unusually small (or large) stock-comp charge is not the run-rate; adjust it toward the recurring level before it anchors a forecast. Stock comp is a real, dilutive expense, not a free non-cash item to ignore.',
     source,

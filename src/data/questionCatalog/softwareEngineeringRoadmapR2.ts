@@ -707,7 +707,7 @@ export const softwareEngineeringRoadmapR2Questions: Question[] = makeQuestionBan
     wrong: [
       miss('Keep the broken instances live to preserve evidence until root cause is found', 'Leaving the outage running makes users pay for the investigation; restoring service comes first, with evidence captured rather than left in production.', 'Who absorbs the cost while you keep the broken version up to study it?'),
       miss('Roll back immediately and don\'t worry about evidence; you can reproduce it later', 'Discarding all forensic data often makes the cause unreproducible; a quick snapshot costs little and preserves the ability to fix it for good.', 'If the state is gone, how do you investigate what you cannot reproduce?'),
-      miss('Skip mitigation and write the postmortem from memory afterward', 'The postmortem is after the fact and cannot restore service; memory is a poor substitute for captured evidence, and users stay down meanwhile.', 'Does writing it up later restore service or recover the lost state?'),
+      miss('Focus on reconstructing the incident narrative first, then mitigate once the story is clear', 'The postmortem is after the fact and cannot restore service; memory is a poor substitute for captured evidence, and users stay down meanwhile.', 'Does writing it up later restore service or recover the lost state?'),
     ],
     lesson: 'Restoring users is the priority, but a good responder grabs the evidence needed for root cause before it is destroyed: snapshot logs, capture a heap dump, copy the bad config or state. It is usually a few seconds of work that preserves the ability to truly fix the problem, so you do not have to choose between fast recovery and ever understanding what happened.',
     source,
@@ -770,7 +770,7 @@ export const softwareEngineeringRoadmapR2Questions: Question[] = makeQuestionBan
     prompt: 'An engineer notices a debug feature flag is sending full request bodies to an expensive log vendor, quietly costing thousands a month. What is the right framing?',
     correct: 'Treat runaway cost like a bug: flag it with the data, propose the fix (disable the verbose logging), and own it rather than assuming spend is someone else\'s problem',
     wrong: [
-      miss('Ignore it — cloud spend is finance\'s or the platform team\'s problem, not an engineer\'s', 'Cost is a shared engineering concern; the person who can see the waste and fix it is best placed to act, and "not my job" lets it bleed indefinitely.', 'Who else even knows this debug flag is the cause?'),
+      miss('Route it only to finance because the waste shows up as spend rather than as an application error', 'Cost is a shared engineering concern; the person who can see the waste and fix it is best placed to act, and "not my job" lets it bleed indefinitely.', 'Who else even knows this debug flag is the cause?'),
       miss('Quietly disable the flag in production without telling anyone', 'Silent changes, even good ones, skip review and can hide a reason the verbose logging was on; flag it and fix it transparently, the same as any change.', 'Does an unreviewed silent prod change fit how the team handles changes?'),
       miss('Wait until the monthly bill is reviewed so the right meeting can decide', 'Deferring a known, fixable waste burns thousands more while waiting; you would not sit on a known bug until a meeting, and cost is no different.', 'Would you let a known bug run for a month to wait for a meeting?'),
     ],

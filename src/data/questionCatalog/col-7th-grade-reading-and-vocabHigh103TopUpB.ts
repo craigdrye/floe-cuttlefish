@@ -380,7 +380,7 @@ export const col7thGradeReadingAndVocabHigh103TopUpBQuestions: Question[] = make
     wrong: [
       miss('Trust it completely because it comes from the team itself.', 'A source connected to the subject has reason to present a favorable view.', 'Closeness to the subject can create bias, not extra reliability.'),
       miss('Reject everything in it because it must be entirely false.', 'Bias does not make every fact false; the reader should verify, not dismiss.', 'Check claims rather than assuming all are lies.'),
-      miss('Assume the article has no point of view at all.', 'A publicity office writes with a clear promotional purpose and viewpoint.', 'Every author has a perspective worth noticing.'),
+      miss('Treat the article as neutral because it uses official team language.', 'A publicity office writes with a clear promotional purpose and viewpoint.', 'Every author has a perspective worth noticing.'),
     ],
     lesson: 'Bias is a slant toward a particular point of view, often shaped by who wrote a text and why. A team\'s own publicity office has reason to present the team favorably, so a careful reader verifies its claims against independent sources rather than fully trusting or fully rejecting it.',
     source,

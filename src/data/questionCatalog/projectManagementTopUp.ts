@@ -109,7 +109,7 @@ export const projectManagementTopUpQuestions: Question[] = makeQuestionBank('Car
     correct: 'Keep them satisfied — give concise, well-targeted updates without overwhelming them, because they can influence outcomes if dissatisfied',
     mentorHint: 'Stakeholder communication should match influence and appetite for detail. High power means they can affect the project, while low interest means they need concise confidence-building updates rather than constant involvement.',
     wrong: [
-      miss('Ignore them entirely, because low interest means they will not engage', 'Low interest plus high power is dangerous to ignore: if they become dissatisfied they can derail the project with a single decision.', 'Power matters even when interest is low.'),
+      miss('Send them no regular updates because their low interest suggests they do not want project detail', 'Low interest plus high power is dangerous to ignore: if they become dissatisfied they can derail the project with a single decision.', 'Power matters even when interest is low.'),
       miss('Flood them with every detailed status report so they cannot claim they were uninformed', 'Over-communicating to a low-interest, high-power stakeholder wastes their attention and yours, and risks them tuning out the message that matters.', 'Match volume to interest; keep it concise.'),
       miss('Treat them exactly like a high-power, high-interest stakeholder and manage them closely', 'Close management is for high-power, high-interest stakeholders. A low-interest one needs to be kept satisfied, not managed in detail.', 'Tailor effort to the quadrant.'),
     ],

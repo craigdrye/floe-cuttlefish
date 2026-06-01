@@ -179,7 +179,7 @@ export const softwareR2Questions: Question[] = makeQuestionBank('Career Skills',
     wrong: [
       miss('Run one UPDATE over all 80 million rows in a single transaction for atomicity', 'A single massive transaction holds locks and bloats, can time out, and can stall or take down the live database.', 'Picture one statement locking the whole table while users wait.'),
       miss('Pause all production traffic, backfill at full speed, then resume', 'Taking the system down for a routine backfill is an unnecessary outage; online batched backfill avoids it.', 'A backfill should run while the system stays up, not require downtime.'),
-      miss('Skip the backfill and compute the column on every read forever', 'Computing on every read shifts permanent cost to the hot path and may be impossible for derived values needing the stored data.', 'That trades a one-time migration for a permanent read-time tax.'),
+      miss('Avoid the migration by deriving the value during every future read request', 'Computing on every read shifts permanent cost to the hot path and may be impossible for derived values needing the stored data.', 'That trades a one-time migration for a permanent read-time tax.'),
     ],
     lesson: 'Large backfills run online in small batches with brief pauses so they never hold long locks or saturate the database that is still serving users. One giant transaction over millions of rows risks lock contention, timeouts, and an outage. Batching keeps the migration reversible, observable, and gentle on production.',
     source, generated: true },

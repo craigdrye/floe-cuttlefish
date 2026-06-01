@@ -316,7 +316,7 @@ export const lsatTopUpQuestions: Question[] = makeQuestionBank('University', [
     correct: 'Mark a guess, flag it, and move on to bank the easier questions, returning only if time allows',
     wrong: [
       miss('Keep working until the parallel-flaw question is solved, since giving up wastes effort', 'Sunk effort is irrelevant; staying risks losing several easy points to one hard question.', 'Compare the points at stake: one hard item versus many reachable ones.'),
-      miss('Skip the rest of the section and start reviewing what is already done', 'Abandoning unread, likely-easy questions sacrifices the most available points.', 'Easy unread questions are the highest-value use of remaining time.'),
+      miss('Switch into review mode because protecting earlier answers feels safer than facing unread questions', 'Abandoning unread, likely-easy questions sacrifices the most available points.', 'Easy unread questions are the highest-value use of remaining time.'),
       miss('Erase prior answers to recheck them before continuing', 'Rechecking secure answers while questions go unread trades sure points for doubt.', 'Prioritize unread, gettable questions over re-litigating done ones.'),
     ],
     lesson: 'Every LR question is worth the same point, so time spent depends on yield. When a hard question threatens easier ones, guess, flag, and move on to secure the reachable points first; return only if time remains.',
@@ -420,7 +420,7 @@ export const lsatTopUpQuestions: Question[] = makeQuestionBank('University', [
     correct: 'Re-solve every flagged question untimed, committing to a final answer before scoring',
     wrong: [
       miss('Immediately check the answer key to see which questions were missed', 'Checking first skips the diagnostic step; blind review happens before you see the key.', 'The point is to test understanding without the key giving it away.'),
-      miss('Skip review entirely and take another timed section right away', 'Stacking timed sections without review does not surface why misses happened.', 'Practice value comes from review, not from raw volume.'),
+      miss('Do another timed section immediately because more volume feels like the fastest improvement path', 'Stacking timed sections without review does not surface why misses happened.', 'Practice value comes from review, not from raw volume.'),
       miss('Read the explanations for every question whether flagged or not', 'Reading explanations comes after the untimed re-solve, not in place of it.', 'First re-solve untimed; explanations are the final step.'),
     ],
     lesson: 'Blind review means re-solving flagged questions untimed and committing to answers before checking the key. Comparing your timed answer, your untimed answer, and the correct answer reveals whether a miss came from time pressure or a genuine gap.',

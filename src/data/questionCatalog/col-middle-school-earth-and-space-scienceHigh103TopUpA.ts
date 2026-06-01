@@ -739,7 +739,7 @@ export const colMiddleSchoolEarthAndSpaceScienceHigh103TopUpAQuestions: Question
     correct: 'Gather and examine evidence, such as rock layers and signs of erosion, to see which explanation it supports',
     wrong: [
       miss('Take a vote and go with whichever idea is more popular', 'Popularity does not determine what is true in science; evidence does.', 'Science relies on data, not a show of hands.'),
-      miss('Pick the explanation that sounds the most impressive', 'How impressive an idea sounds does not make it correct.', 'Look at what the evidence actually supports.'),
+      miss('Prefer the explanation with the most technical-sounding words', 'How impressive an idea sounds does not make it correct.', 'Look at what the evidence actually supports.'),
       miss('Choose whichever student is older and more confident', 'Authority or confidence does not settle a scientific question; evidence does.', 'Even confident people can be wrong without evidence.'),
     ],
     lesson: 'Science settles disagreements by collecting and analyzing evidence rather than by opinion, popularity, or authority. To explain how a canyon formed, scientists would examine clues like rock layers, fossils, and signs of erosion to test which explanation best fits the observations. Conclusions are based on what the data show and can be revised if new evidence appears.',

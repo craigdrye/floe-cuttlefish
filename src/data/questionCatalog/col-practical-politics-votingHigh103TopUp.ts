@@ -816,7 +816,7 @@ export const colPracticalPoliticsVotingHigh103TopUpQuestions: Question[] = makeQ
     correct: 'Treat it as likely misinformation and verify voting procedures with official election sources',
     wrong: [
       miss('Trust it and text the vote, since social media is always reliable', 'Social media is not a reliable source of voting rules, and texting a vote is not a real method, so trusting it risks not voting.', 'Verify with official sources before acting on viral claims.'),
-      miss('Assume all voting can be done by text in every U.S. election', 'General voting by text is not how U.S. elections work; this claim is false.', 'You cannot cast an official vote by text message.'),
+      miss('Believe texting is allowed because the post gives a phone number that looks official', 'General voting by text is not how U.S. elections work; this claim is false.', 'You cannot cast an official vote by text message.'),
       miss('Share it widely first and check whether it is true only afterward', 'Spreading unverified claims can mislead others; verification should come before sharing.', 'Check first, then decide whether to share.'),
     ],
     lesson: 'Election misinformation, including false claims about how or when to vote, spreads quickly online and can suppress turnout or confuse voters. A careful voter verifies procedures with official sources such as the state or county election office before believing or sharing a claim. Media literacy is an essential civic skill for protecting your vote.',

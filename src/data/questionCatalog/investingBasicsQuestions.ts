@@ -159,7 +159,7 @@ export const investingBasicsQuestions: Question[] = makeQuestionBank('Career Ski
     wrong: [
       miss('Maximize the return of your best stock', 'Diversification spreads bets; it does not amplify a single winner. Concentrating does that — with far more risk.', 'Spreading out trades a home run for a steadier ride. What does it protect against?'),
       miss('Guarantee you never lose money', 'Diversification softens losses but cannot eliminate them; a broad market can still fall.', 'It cushions, it does not promise. Markets can still drop together.'),
-      miss('Pick the single best year to invest', 'That is market timing, not diversification. Diversifying is about spreading across holdings, not dates.', 'Think spreading across assets, not choosing a perfect moment.'),
+      miss('Put everything into the asset class that looks best for the current market cycle', 'That is market timing, not diversification. Diversifying is about spreading across holdings, not dates.', 'Think spreading across assets, not choosing a perfect moment.'),
     ],
     lesson: "Diversification means not putting all your money in one place, so a single company's collapse cannot sink you. It does not erase risk or guarantee gains, but it removes the avoidable danger of betting everything on one name. Owning a broad fund does this automatically.",
     source,

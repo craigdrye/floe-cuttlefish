@@ -475,7 +475,7 @@ export const col8thGradeReadingAndVocabHigh103TopUpAQuestions: Question[] = make
     wrong: [
       miss('Insist it means "to make into one" because of "uni-"', 'The word comes from "union," not the prefix "uni-"; context corrects the false root.', 'Let the sentence override a misleading root guess.'),
       miss('Decide the word has no meaning since the root is unclear', 'Context makes the meaning clear even when the root analysis misleads.', 'Read the whole sentence before giving up.'),
-      miss('Assume it means the opposite of "ionize"', 'There is no basis for splitting the word as "un-ionize"; the sentence points to unions.', 'Trust the supporting context, not a forced split.'),
+      miss('Split the word as "un-ionize" and read it as undoing an ionizing process', 'There is no basis for splitting the word as "un-ionize"; the sentence points to unions.', 'Trust the supporting context, not a forced split.'),
     ],
     lesson: 'Root and affix analysis is powerful but not foolproof; some words only appear to contain a familiar root. "Unionize" derives from "union," so context ("Workers voted... for better pay") is the reliable guide when a root guess would mislead.',
     source,

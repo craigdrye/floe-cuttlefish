@@ -90,7 +90,7 @@ export const col8thGradeReadingAndVocabHigh103TopUpBQuestions: Question[] = make
     wrong: [
       miss('count the number of sentences in each paragraph', 'Sentence counts measure length, not the development of an idea.', 'Focus on meaning and connections, not numerical features.'),
       miss('memorize every fact in the article in order', 'Memorizing details does not by itself show how they connect to a central idea.', 'Look for the relationship among details, not a list of them.'),
-      miss('skip to the final paragraph and read only the conclusion', 'A conclusion may state the idea but skips the development the question asks you to trace.', 'Development happens across the whole text, not just at the end.'),
+      miss('Read only the final paragraph because the conclusion might state the central idea', 'A conclusion may state the idea but skips the development the question asks you to trace.', 'Development happens across the whole text, not just at the end.'),
     ],
     lesson: 'To analyze how a central idea is developed, readers track the most important detail in each section and observe how those details accumulate, refine, or support one main point. This is a process of connecting parts to the whole, not memorizing facts or reading only the conclusion. Mapping paragraph functions makes the structure visible.',
     source,

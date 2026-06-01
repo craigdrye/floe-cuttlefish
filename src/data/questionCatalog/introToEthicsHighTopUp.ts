@@ -167,7 +167,7 @@ export const introToEthicsHighTopUpQuestions: Question[] = makeQuestionBank('Hig
     wrong: [
       miss('Agree with the opposing view to keep the peace', 'Charity is about fair interpretation, not abandoning your own position or avoiding disagreement.', 'Charity means understand fairly, not surrender.'),
       miss('Find the weakest version of the view so it is easy to refute', 'That is the opposite, called a straw man; charity requires the strongest version, not the weakest.', 'Attacking the weakest form is a straw man, not charity.'),
-      miss('Ignore the opposing view and restate your own', 'Charity requires engaging with the other view fairly, not setting it aside.', 'You must engage the view, not skip it.'),
+      miss('Summarize only your own view again before criticizing the other side', 'Charity requires engaging with the other view fairly, not setting it aside.', 'You must engage the view, not skip it.'),
     ],
     lesson: 'The principle of charity asks you to interpret an opposing argument in its strongest, most reasonable form before responding. This avoids the straw-man fallacy of attacking a weak caricature. Charitable interpretation makes disagreement productive: if you can defeat the best version, your reply is genuinely strong.',
     source,
@@ -705,7 +705,7 @@ export const introToEthicsHighTopUpQuestions: Question[] = makeQuestionBank('Hig
     correct: 'State the strongest objection to your view and give a thoughtful reply',
     wrong: [
       miss('Repeat your recommendation in louder, more confident language', 'Restating with more confidence adds no reasons; rigor comes from engaging objections, not from emphasis.', 'Confidence is not an argument.'),
-      miss('Ignore objections so your argument looks flawless', 'Hiding objections weakens an analysis; a fair, strong argument faces the best counterpoints openly.', 'Strength comes from facing objections, not hiding them.'),
+      miss('Leave out the strongest objection so the recommendation sounds cleaner', 'Hiding objections weakens an analysis; a fair, strong argument faces the best counterpoints openly.', 'Strength comes from facing objections, not hiding them.'),
       miss('Switch to attacking anyone who might disagree', 'Attacking opponents is an ad hominem move that does not address the merits of any objection.', 'Attacking people is a fallacy, not a reply.'),
     ],
     lesson: 'A persuasive ethical analysis does not just defend a view; it anticipates the strongest objection and answers it. This shows you have considered the other side fairly and that your position survives serious challenge. Objection-and-reply is the core of rigorous moral argument.',

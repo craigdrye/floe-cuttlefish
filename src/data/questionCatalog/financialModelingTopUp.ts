@@ -104,7 +104,7 @@ export const financialModelingTopUpQuestions: Question[] = makeQuestionBank('Car
     wrong: [
       miss('Recognize all $1,200 as revenue immediately', 'Cash collected is not yet earned; the service is delivered over a year. Booking it all on day one overstates current revenue and understates the liability.', 'Cash in the door is not the same as revenue earned. Ask when the service is delivered.'),
       miss('Record $1,200 as accounts receivable', 'AR is money owed to you that has not been collected; here the cash is already in hand. The unearned portion is a liability, not a receivable.', 'You already have the cash, so it cannot be a receivable.'),
-      miss('Ignore it until the cash is spent', 'Unearned cash creates an obligation to deliver service; ignoring it omits a real liability and the future revenue recognition.', 'Collecting cash for undelivered service always creates a liability to track.'),
+      miss('Treat the upfront cash as a balance-sheet-only item until the company spends it', 'Unearned cash creates an obligation to deliver service; ignoring it omits a real liability and the future revenue recognition.', 'Collecting cash for undelivered service always creates a liability to track.'),
     ],
     lesson: 'Cash collected before delivery is deferred (unearned) revenue, a liability. You recognize it as revenue over the service period. Confusing cash collected with revenue earned is a classic SaaS-modeling error.',
     source,
