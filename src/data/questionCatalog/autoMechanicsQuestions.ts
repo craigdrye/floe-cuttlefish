@@ -669,7 +669,7 @@ export const autoMechanicsQuestions: Question[] = makeQuestionBank('Career Skill
     wrong: [
       miss('Immediately do a full coolant flush yourself', 'A small drop does not require a full flush; topping up and monitoring is the proportionate first step.', 'Match the action to the symptom: small low = top up, not flush.'),
       miss('Add plain tap water to the maximum line', 'Plain water dilutes the antifreeze protection and can introduce minerals; use the proper coolant mix.', 'Use spec coolant (or pre-mix), not straight tap water.'),
-      miss('Ignore it since coolant never needs attention', 'Coolant does drop and degrade over time; ignoring a recurring low level can mask a leak.', 'A repeat low reading is a clue, not nothing — track it.'),
+      miss('Treat the low level as normal because modern coolant systems are sealed and maintenance-free', 'Coolant does drop and degrade over time; ignoring a recurring low level can mask a leak.', 'A repeat low reading is a clue, not nothing — track it.'),
     ],
     mentorHint: 'Maintenance decisions should match the size and pattern of the symptom. A slightly low reservoir is different from repeated loss, overheating, contamination, or a scheduled fluid-service interval.',
     lesson: 'A slightly low reservoir after heat cycling is common; top up to the correct level with the specified coolant (often a pre-diluted mix) once the engine is cool. The key is watching the trend: a one-time small top-up is routine, but a level that keeps dropping signals a leak worth diagnosing before it causes overheating.',

@@ -596,7 +596,7 @@ export const collegeAdmissionsHighTopUpQuestions: Question[] = makeQuestionBank(
     correct: 'Treat it as a two-way conversation: show genuine interest, ask thoughtful questions, and learn whether the school fits',
     wrong: [
       miss('Treat it as a test to be passed by reciting rehearsed, perfect answers', 'Over-rehearsed recitation feels stiff; interviewers value authentic conversation and curiosity over scripted lines.', 'A genuine conversation beats a memorized script.'),
-      miss('Skip preparing questions because the interviewer does all the asking', 'Thoughtful questions signal real interest and engagement; coming with none is a missed opportunity.', 'Bring questions — silence reads as disinterest.'),
+      miss('Prepare only answers about yourself and assume the interviewer will supply every question worth asking', 'Thoughtful questions signal real interest and engagement; coming with none is a missed opportunity.', 'Bring questions — silence reads as disinterest.'),
       miss('Use it to demand a decision on the spot about admission', 'Interviewers do not make admissions decisions on the spot; pressing for one is inappropriate.', 'Interviewers don\'t decide admission live.'),
     ],
     lesson: 'A college interview is a two-way conversation, not an interrogation. Showing genuine interest, asking thoughtful questions, and assessing fit makes the strongest impression and helps you decide too. Prepare a few specific questions, and be yourself.',

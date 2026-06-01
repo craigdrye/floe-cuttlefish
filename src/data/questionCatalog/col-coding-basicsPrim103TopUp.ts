@@ -604,7 +604,7 @@ export const colCodingBasicsPrim103TopUpQuestions: Question[] = makeQuestionBank
     correct: 'Plan the steps the player will take first',
     wrong: [
       miss('Type random code and hope it works', 'Random code usually leads to many bugs.', 'A plan helps you know what to write.'),
-      miss('Skip planning because plans are useless', 'Plans help you break the work into steps.', 'A clear plan makes coding easier.'),
+      miss('Start coding the maze immediately and figure out the steps only after something breaks', 'Plans help you break the work into steps.', 'A clear plan makes coding easier.'),
       miss('Wait for the game to make itself', 'Games do not make themselves.', 'You need to plan and then build it.'),
     ],
     lesson: 'Planning before you code helps you break the task into clear steps. For a maze game, you might plan how the player moves, what the walls do, and how to win. A good plan makes the coding part smoother.',

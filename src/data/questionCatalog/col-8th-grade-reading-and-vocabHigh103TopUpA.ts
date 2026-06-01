@@ -643,7 +643,7 @@ export const col8thGradeReadingAndVocabHigh103TopUpAQuestions: Question[] = make
     correct: 'Stop, reread the confusing section, and summarize it before moving on',
     wrong: [
       miss('Keep reading quickly to finish the page faster', 'Pushing ahead without understanding lets the confusion compound.', 'Address the breakdown before it grows.'),
-      miss('Skip to the last page to see how it ends', 'Jumping to the end skips the content the reader failed to absorb.', 'Repair understanding where it broke, not at the finish.'),
+      miss('Jump ahead to the ending, hoping the conclusion will make the confusing section clear', 'Jumping to the end skips the content the reader failed to absorb.', 'Repair understanding where it broke, not at the finish.'),
       miss('Decide the text is too hard and stop reading entirely', 'Giving up wastes a chance to fix a fixable comprehension gap.', 'Use a repair strategy instead of quitting.'),
     ],
     lesson: 'Skilled readers monitor their own understanding and notice when it breaks down. The fix is to pause, reread the troublesome part, and put it into a quick summary, repairing comprehension before continuing rather than pushing on or giving up.',

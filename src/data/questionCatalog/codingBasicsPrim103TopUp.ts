@@ -348,7 +348,7 @@ export const codingBasicsPrim103TopUpQuestions: Question[] = makeQuestionBank('P
     wrong: [
       miss('Change several lines at once before testing again', 'Changing lots of things makes it hard to know what helped.', 'Go slowly and check one step at a time.'),
       miss('Only reread the answer you expected instead of watching what happens', 'Rereading the goal can help, but debugging needs evidence from the code as it runs.', 'You need to find where the problem is.'),
-      miss('Keep running the same broken version without checking each step', 'Repeating the same run does not reveal which step first goes wrong.', 'You can find the bug by checking each step.'),
+      miss('Run it again and hope the bug disappears before looking at any individual step', 'Repeating the same run does not reveal which step first goes wrong.', 'You can find the bug by checking each step.'),
     ],
     lesson: 'When a bug is hard to find, slow down and check the code one step at a time. Watch what each step does and compare it with what you expected. The step that goes wrong is where your bug is hiding.',
     source,

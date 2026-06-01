@@ -294,7 +294,7 @@ export const clinicalResearchJargonR2Questions: Question[] = makeQuestionBank('C
     correct: 'Record it today, clearly label it as a late entry, and state the actual date the assessment occurred — never date it to the day it happened',
     wrong: [
       miss('Write today’s note but date it two days ago so the timeline looks clean', 'Dating it to the event day is back-dating, a falsification.', 'Do not date it to the event day — that is back-dating; mark it as a late entry.'),
-      miss('Skip documenting it because the window for charting has passed', 'Omitting the assessment leaves an incomplete record.', 'You must still document it — omission breaks the “Complete” attribute.'),
+      miss('Leave the assessment out of the source record because contemporaneous documentation is no longer possible', 'Omitting the assessment leaves an incomplete record.', 'You must still document it — omission breaks the “Complete” attribute.'),
       miss('Ask a colleague to sign it as if they made it contemporaneously', 'Having someone falsely attest contemporaneity is falsification.', 'Never have someone falsely attest — record it honestly as your late entry.'),
     ],
     lesson: 'A late entry is acceptable when documented honestly: make the note on today’s date, identify it as a late entry, and reference the actual date/time the event occurred. This preserves both "Contemporaneous" (true recording date) and "Complete." Back-dating, omitting, or having someone falsely attest are integrity violations.',

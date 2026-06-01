@@ -665,7 +665,7 @@ export const colUsGovernmentAndCivicsHigh103TopUpQuestions: Question[] = makeQue
     wrong: [
       miss('Share it immediately so others can decide for themselves', 'Spreading an unverified claim can amplify misinformation before anyone checks it.', 'Verify before you amplify.'),
       miss('Trust it because it has many likes and shares', 'Popularity does not establish accuracy; false claims often spread widely.', 'Engagement is not evidence.'),
-      miss('Assume it is false because all viral posts are lies', 'Blanket skepticism is as unreliable as blind trust; the right move is to verify against a credible source.', 'Verify rather than reflexively accept or reject.'),
+      miss('Reject it automatically because the post became popular on social media', 'Blanket skepticism is as unreliable as blind trust; the right move is to verify against a credible source.', 'Verify rather than reflexively accept or reject.'),
     ],
     lesson: 'Responsible media literacy means verifying striking claims before sharing them. Look for an original, credible source, a date, and corroboration rather than relying on engagement numbers. Both blind trust and blanket rejection are poor habits; the goal is to check evidence and trace claims to where they came from.',
     source,

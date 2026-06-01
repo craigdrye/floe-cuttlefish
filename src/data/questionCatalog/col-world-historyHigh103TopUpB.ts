@@ -714,7 +714,7 @@ export const colWorldHistoryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     correct: 'State one genuine similarity and one genuine difference, supported by specific evidence from each case',
     wrong: [
       miss('Declare one country superior and ignore evidence that complicates the ranking', 'Fair comparison avoids ranking societies as better or worse and engages complexity rather than ignoring it.', 'Compare and connect rather than rank.'),
-      miss('Assume the two cases were identical because both industrialized', 'Treating cases as the same flattens real differences; comparison requires identifying them.', 'Recall the trap of calling two cases "the same."'),
+      miss('Emphasize only the shared factory growth and treat the political contexts as basically the same', 'Treating cases as the same flattens real differences; comparison requires identifying them.', 'Recall the trap of calling two cases "the same."'),
       miss('List only random facts about each country with no point of comparison', 'Comparison needs an analytical point, not a disconnected list of facts.', 'Tie the facts to a similarity or difference.'),
     ],
     lesson: 'The course defines fair comparison as identifying at least one real similarity and one real difference, each backed by specific evidence, without flattening the cases into sameness or ranking them as superior and inferior. Comparing British and Japanese industrialization, for instance, reveals shared use of new technology alongside very different roles for the state, deepening understanding of both.',

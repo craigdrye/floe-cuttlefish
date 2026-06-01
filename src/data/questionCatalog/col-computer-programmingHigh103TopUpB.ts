@@ -509,7 +509,7 @@ export const colComputerProgrammingHigh103TopUpBQuestions: Question[] = makeQues
     wrong: [
       miss('Delete the loop and rewrite the whole program from scratch', 'Rewriting everything discards working code and information; observing the variable first is faster and more targeted.', 'Investigate before discarding code.'),
       miss('Add more loops in case one is too few', 'Adding loops blindly guesses at the cause; you should first observe what the existing loop does.', 'Gather evidence before changing structure.'),
-      miss('Assume the language is broken and switch languages', 'The bug is almost certainly in your logic, not the language; switching languages avoids understanding the problem.', 'Suspect your own logic first.'),
+      miss('Blame the programming language before checking the loop counter and stopping condition', 'The bug is almost certainly in your logic, not the language; switching languages avoids understanding the problem.', 'Suspect your own logic first.'),
     ],
     lesson: 'Effective debugging is about gathering evidence before changing code. Printing key values, such as the loop counter and condition, with console.log reveals exactly how the program behaves versus how you expected. This often pinpoints an off-by-one bound or a condition that never becomes false, so you can fix the real cause rather than guess.',
     source,

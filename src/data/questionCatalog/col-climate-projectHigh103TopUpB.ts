@@ -573,7 +573,7 @@ export const colClimateProjectHigh103TopUpBQuestions: Question[] = makeQuestionB
     correct: 'Revise the plan to a lower-cost version or phased approach that still meets a measurable goal',
     wrong: [
       miss('Abandon the entire project because one detail was criticised', 'A budget concern is a fixable constraint, not a reason to scrap a sound idea; revision is the productive response.', 'Adapt the plan; do not discard it over one obstacle.'),
-      miss('Ignore the feedback and submit the same plan unchanged', 'Ignoring a real constraint means the plan likely will not be approved or funded.', 'Feedback from decision-makers signals what must change to succeed.'),
+      miss('Treat the budget concern as a misunderstanding and resubmit the original plan with only minor wording changes', 'Ignoring a real constraint means the plan likely will not be approved or funded.', 'Feedback from decision-makers signals what must change to succeed.'),
       miss('Insist the council find more money rather than changing anything', 'Demanding others adjust while you change nothing is unlikely to work and ignores a stated limit.', 'The student should adapt to the constraint, not deny it.'),
     ],
     lesson: 'Real projects evolve through feedback loops. When a decision-maker flags a genuine constraint like cost, the productive move is to revise: scale down, phase the rollout, or find cheaper options while preserving a measurable goal. Treating feedback as information to act on, rather than rejection, is what makes a plan survive contact with stakeholders.',

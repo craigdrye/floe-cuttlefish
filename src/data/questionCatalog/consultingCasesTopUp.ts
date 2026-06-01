@@ -343,7 +343,7 @@ export const consultingCasesTopUpQuestions: Question[] = makeQuestionBank('Caree
     correct: 'Tighten the structure, prioritize the most decision-relevant branch, and move into analysis so you reach a recommendation in time',
     wrong: [
       miss('Keep expanding the structure to make it fully comprehensive', 'A perfect, exhaustive tree that never reaches a recommendation fails the case; completeness without a conclusion scores poorly.', 'Trade breadth for reaching a defensible answer on time.'),
-      miss('Skip straight to a recommendation with no analysis at all', 'Jumping to a conclusion without any supporting math abandons the rigor the interview is testing.', 'Do enough focused analysis to support the call, then synthesize.'),
+      miss('Give an early recommendation based only on the initial structure to make sure there is an answer on time', 'Jumping to a conclusion without any supporting math abandons the rigor the interview is testing.', 'Do enough focused analysis to support the call, then synthesize.'),
       miss('Ask the interviewer to extend the time', 'Time management is part of the evaluation; requesting more time signals you cannot work within real constraints.', 'Re-prioritize within the time you have.'),
     ],
     lesson: 'Pacing is graded. A full case must reach a recommendation, so if you are over-invested in structure, prioritize the most decision-relevant branch, move into analysis, and reserve time to synthesize. Finishing beats being exhaustive.',

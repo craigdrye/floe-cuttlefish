@@ -621,7 +621,7 @@ export const col10thGradeReadingAndVocabHigh103TopUpBQuestions: Question[] = mak
     wrong: [
       miss('Always pick the first answer that sounds reasonable', 'Grabbing the first plausible-sounding option skips checking it against the passage and ignores stronger choices.', 'Test options against the text rather than first impressions.'),
       miss('The longest answer, even if it contradicts the passage', 'Length is not a sign of correctness; a long option can still contradict the passage.', 'Judge by fit with the text, not by length.'),
-      miss('Pick the option with the most advanced vocabulary', 'Fancy wording does not make an answer correct; accuracy to the passage does.', 'Sophisticated wording is not evidence of correctness.'),
+      miss('Prefer the option with academic-sounding vocabulary even before checking it against the passage', 'Fancy wording does not make an answer correct; accuracy to the passage does.', 'Sophisticated wording is not evidence of correctness.'),
     ],
     lesson: 'Process of elimination is the most reliable strategy for hard items: remove choices that contradict the passage or do not answer the question, narrowing your odds before deciding. Defaulting to the first, longest, or fanciest-sounding option ignores the evidence in the text, which is what actually determines the answer.',
     source,
@@ -680,7 +680,7 @@ export const col10thGradeReadingAndVocabHigh103TopUpBQuestions: Question[] = mak
     correct: 'Identify each passage\'s main claim and tone, then pinpoint where they agree or disagree',
     wrong: [
       miss('Read only the first passage and assume the second agrees', 'You must read both; assuming agreement risks missing the very contrast the question tests.', 'A comparison requires understanding both passages.'),
-      miss('Pick the passage you like better and answer from it', 'Personal preference does not reveal how the passages relate; both must be analyzed.', 'Analyze the relationship, not your favorite.'),
+      miss('Focus on the passage whose argument feels more persuasive and treat it as the main one', 'Personal preference does not reveal how the passages relate; both must be analyzed.', 'Analyze the relationship, not your favorite.'),
       miss('Count which passage is longer and base the answer on that', 'Length tells you nothing about the passages\' positions or how they differ.', 'Compare claims and tone, not word counts.'),
     ],
     lesson: 'For paired-passage questions, read both, then summarize each one\'s main claim and tone before comparing where they overlap or clash. Skipping a passage, choosing a favorite, or comparing length all miss the actual relationship the question targets. The relationship between the two texts is the key.',

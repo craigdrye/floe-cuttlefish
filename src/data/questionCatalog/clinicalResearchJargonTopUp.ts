@@ -228,7 +228,7 @@ export const clinicalResearchJargonTopUpQuestions: Question[] = makeQuestionBank
     correct: 'Investigate the discrepancy, correct the CRF to match the verified source, and document the resolution — the source governs, and it is not changed to fit the CRF',
     wrong: [
       miss('Edit the source value so it matches what was already entered in the CRF', 'The source is the truth; altering it to fit the CRF is falsification.', 'Source governs the CRF, never the reverse — do not edit source to match.'),
-      miss('Close the query as "no action needed" without checking the source', 'Discrepancies require investigation and a documented resolution.', 'Queries demand investigation, not a silent close — check the real source.'),
+      miss('Mark the query resolved based on the CRF entry alone because the CRF was already submitted', 'Discrepancies require investigation and a documented resolution.', 'Queries demand investigation, not a silent close — check the real source.'),
       miss('Average the two values and enter the midpoint as a compromise', 'Inventing a midpoint creates fabricated data unsupported by source.', 'Never invent a value — resolve to what the source actually documents.'),
     ],
     lesson: 'Queries are resolved against source. When the CRF and source disagree, you verify the source, correct the CRF to match it, and document the change in the audit trail. Editing source to clear a query, closing without investigation, or inventing values are all data-integrity violations.',
