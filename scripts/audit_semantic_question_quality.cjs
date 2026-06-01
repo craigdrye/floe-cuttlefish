@@ -411,9 +411,21 @@ function extractWrongArrayItems(arrayNode, sourceFile, sourceText) {
 
       if (callName === 'distractor' && item.arguments.length === 2) {
         const scope = stringValue(item.arguments[0], sourceFile)
+        const answer = stringValue(item.arguments[1], sourceFile)
         labelNode = item.arguments[1]
-        flaw = scope ? `This source distractor does not match the ${scope} clue in the prompt.` : undefined
-        reframe = scope ? `Anchor the answer to the named ${scope} relationship rather than to a nearby familiar term.` : undefined
+        if (scope && answer) {
+          const shortAnswer = answer.length > 64 ? `${answer.slice(0, 61)}...` : answer
+          const scopeNudges = {
+            geography: 'place, latitude, landform, water body, or Earth-system clue',
+            history: 'period, person, event, institution, or cause-and-effect clue',
+            literature: 'author, title, character, genre, or quoted-work clue',
+            'language or culture': 'language-family, translation, country, or culture clue',
+            'environmental science': 'scale, chemistry, climate, or environmental-process clue',
+          }
+          const nudge = scopeNudges[scope] ?? `${scope} clue`
+          flaw = `${shortAnswer} is a nearby ${scope} answer, but it does not fit the specific ${nudge} in the prompt.`
+          reframe = `Anchor the answer to the named ${scope} relationship rather than to a familiar-but-wrong term.`
+        }
       }
 
       wrongAnswers.push({
