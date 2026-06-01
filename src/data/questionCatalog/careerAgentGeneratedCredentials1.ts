@@ -200,7 +200,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A case is escalated to investigations. What handoff would be most useful to the next reviewer?',
       'A concise summary of customer profile, key transactions, red flags, corroborating evidence, and unresolved questions',
       [
-        ['A screenshot dump with no explanation', 'Raw screenshots force the next reviewer to reconstruct the analysis from scratch.'],
+        ['A chronological list of transactions with no customer profile or risk explanation', 'Chronology helps, but without profile, red flags, evidence, and open questions the investigator still has to rebuild the analysis.'],
         ['A message saying "good luck, this one is spicy"', 'Casual handoffs lose context and waste investigator time on rediscovery.'],
         ['Only the customer name and account number', 'Identifiers without context strip the case of its analytical value.'],
       ],
@@ -229,7 +229,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['Closing the file because no owner reaches the threshold', 'Beneficial-ownership rules use both ownership and control prongs; missing the threshold does not end the analysis.'],
         ['Treating the office landlord as the owner', 'Leasing space is not ownership or control of the entity.'],
-        ['Replacing beneficial ownership review with a logo check', 'Brand identity is not a KYC input; identification of natural persons is.'],
+        ['Collecting only the company registration number and skipping the senior-managing-official review', 'Entity registration identifies the legal entity, but the control-prong check still asks which natural person can direct it.'],
       ],
       'Beneficial-ownership programs often need both ownership and control analysis. Complex ownership does not remove the need to identify who can direct the entity.'),
     q(4101221, 'Career Skills', 'Advanced Typologies and Emerging Risk', 'Nested-account risk',
@@ -429,16 +429,16 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A company issues new shares to fund an acquisition. What should an analyst test before calling the deal accretive?',
       'Whether added earnings per share exceed the dilution and financing effects',
       [
-        ['Whether the press release has exciting adjectives', 'Accretion is arithmetic, not announcement tone.'],
+        ['Whether the acquisition increases total company revenue even if share count rises faster', 'Accretion is per-share analysis; total revenue can grow while EPS still falls.'],
         ['Whether the share count can be ignored after closing', 'Share count is the EPS denominator and cannot be ignored.'],
-        ['Whether the target has a shorter company name', 'Name length is unrelated to EPS accretion.'],
+        ['Whether management calls the deal strategic before showing the financing assumptions', 'Strategic language does not prove accretion; the analyst still needs earnings, financing cost, and share-count math.'],
       ],
       'Accretion and dilution analysis tests the effect on per-share earnings after financing, new shares, and target contribution.'),
     q(4101313, 'Series 86', 'Research Logic and Investment Conclusions', 'Disclosure scavenger',
       'An analyst needs details on executive compensation and stock awards. Which source is often most relevant?',
       'Proxy statement and annual-report footnotes',
       [
-        ['Weather report and investor-relations logo page', 'Neither carries the substantive compensation disclosures.'],
+        ['A product brochure and the investor-relations homepage summary', 'Marketing pages may mention leadership, but compensation tables and equity-award details usually live in proxy materials and footnotes.'],
         ['Only the intraday stock chart', 'Price action does not disclose pay arrangements.'],
         ['A customer review site', 'Customer reviews do not document executive pay.'],
       ],
@@ -2413,7 +2413,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['Any collected customer data is automatically available for future model training', 'Compatibility analysis is required.'],
         ['Proceed if the model team deletes the project name from the deck', 'Naming is not legal basis.'],
-        ['Use only the funniest chats because they are memorable', 'Selection bias is itself an issue.'],
+        ['Use only low-severity support chats because they feel less sensitive', 'A smaller or milder subset still needs purpose, notice, consent or opt-out, retention, and safeguard review.'],
       ],
       'Privacy review matters when data collected for one purpose is reused for AI training or profiling.'),
     q(4106864, 'Career Skills', 'AI Impact Assessments and Documentation', 'Aggregate score comfort',
@@ -2600,7 +2600,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['Whether production likes the fastest repair option', 'Production preference is not the classification test.'],
         ['Whether the weld looks tidy from ten feet away', 'Visual tidiness is not a code criterion.'],
-        ['Whether the job title of the requester sounds technical', 'Job titles do not classify repairs.'],
+        ['Whether the work order uses the word "maintenance" rather than "alteration"', 'Labels on a work order do not control the classification; the technical effect on the pressure boundary and design conditions does.'],
       ],
       'Repair, alteration, and rerating classifications can trigger different engineering, authorization, inspection, and documentation requirements.'),
     q(4102004, 'Career Skills', 'Corrosion and Damage Mechanisms', 'Pretty paint problem',
@@ -2609,7 +2609,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['Exterior coating condition proves the internal surface is acceptable', 'Exterior coatings do not certify interior condition.'],
         ['Delay inspection until leakage is visible', 'Leakage is the failure, not the trigger.'],
-        ['Judge risk by whether the equipment looks photogenic', 'Photogenicity is not a damage-mechanism test.'],
+        ['Use only last year\'s external visual checklist because it was clean', 'A clean external checklist does not test the suspected internal mechanism under current service conditions.'],
       ],
       'Good inspection planning starts with credible damage mechanisms, not cosmetic condition alone.'),
     q(4102005, 'Career Skills', 'Inspector Role, Code Scope, and Reference Navigation', 'Wrong book blues',
@@ -2680,7 +2680,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'It can reliably detect and size the expected damage in the relevant location and conditions',
       [
         ['It is the cheapest method on the vendor menu', 'Cost is not the suitability test.'],
-        ['It produces the most impressive-looking screenshots', 'Screenshots are not detection capability.'],
+        ['It gives a colorful image even if it cannot size wall loss accurately', 'A visually rich output is not enough; the method must detect and size the expected thinning reliably.'],
         ['It is the method the team used last time for a different mechanism', 'Methods must fit the mechanism at hand.'],
       ],
       'NDE selection should fit the damage mechanism, location, access, accuracy needs, and acceptance criteria.'),
