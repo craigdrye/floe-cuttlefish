@@ -267,7 +267,7 @@ export const clfCapstoneQuestions: Question[] = [
     'Build a downside case with a 12% revenue decline in year 2 (mid-cycle recession scenario), recovering 6% in year 3 — and show the credit metrics in that case; an underwriting that assumes no recession in a 5-year hold is not an underwriting, it is a sales pitch',
     [
       ['Use the sponsor case as-is because Apex has been growing and the recession is hypothetical', 'Using the sponsor case as-is means the bank has no credit view distinct from the sponsor — the entire point of the underwriting analysis is to add a downside scenario the sponsor model omits.'],
-      ['Assume a flat revenue scenario as the conservative case, since industrial recessions are unpredictable', 'Flat revenue understates the historical industrial cycle. Industrial distributors actually do decline 8–15% in recessions — a flat case is not conservative, it is wrong on the data.'],
+      ['Use a flat-revenue downside case because it feels conservative relative to the sponsor’s 5% growth case', 'Flat revenue understates the historical industrial cycle. Industrial distributors actually do decline 8–15% in recessions — a flat case is not conservative, it is wrong on the data.'],
       ['Build a 20%+ revenue decline scenario to be maximally cautious', 'A 20%+ decline is more severe than typical industrial recessions for a distributor like Apex — building an unrealistic worst case can be just as misleading as the sponsor\'s no-recession case. Anchor on actual historical declines.'],
     ],
     'Underwriting cases require an honest read of the historical cycle, not the sponsor\'s preferred case. For industrial distribution, a 10–15% peak-to-trough revenue decline is the right base downside, with a 1-year recovery thereafter. The credit metrics in that case — leverage spike, coverage compression, FCF collapse — are what the committee should be evaluating.'),
@@ -576,7 +576,7 @@ export const clfCapstoneQuestions: Question[] = [
     [
       ['Compress the roadshow to one day to take advantage of strong market conditions', 'One-day roadshows are typical for known issuers refinancing existing debt — not for first-time issuers like Apex. The buy side needs diligence time on a new credit; compressing the timeline raises pricing.'],
       ['Launch with talk at 8.00% and rely on accelerated execution to maintain momentum', '8.00% is the *tight* end of comps and leaves no room to flex if the book is soft on day one. For a first-time issuer the prudent move is talk that brackets the expected clearing level.'],
-      ['Skip the roadshow entirely and use only investor calls to keep the process efficient', 'Skipping the roadshow on a first-time, unrated industrial issuer is the kind of process shortcut that costs 25–50bps in pricing. The buy side equates roadshow access with diligence access.'],
+      ['Run only short investor calls because the credit story is straightforward enough to explain efficiently', 'Skipping the roadshow on a first-time, unrated industrial issuer is the kind of process shortcut that costs 25–50bps in pricing. The buy side equates roadshow access with diligence access.'],
     ],
     'Roadshow strategy and price talk are coordinated decisions: more diligence access lets the desk launch tighter, but only if the diligence actually changes investors\' views. For a first-time issuer like Apex, the right move is to give investors the time and access they need — and to launch with talk that brackets the underwritten level so the desk has room to tighten or flex modestly.'),
 

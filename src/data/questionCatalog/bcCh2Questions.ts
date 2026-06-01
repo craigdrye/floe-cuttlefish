@@ -136,7 +136,7 @@ export const bcCh2Questions: Question[] = [
     'A customer opening an account online cannot produce a clear scan of a government photo ID. The CIP policy permits non-documentary verification. Which approach is consistent with the rule?',
     'Use independent sources — credit bureau data, public records, and a third-party identity-verification service — to confirm the customer\'s identity, and document why documentary verification was not feasible',
     [
-      ['Skip verification because the customer is opening online and the bank has no way to see the ID', 'Channel constraints do not waive CIP. The rule explicitly anticipates non-documentary methods precisely so online and remote accounts can still be opened compliantly.'],
+      ['Treat the online channel as a reason to rely only on the information typed into the application', 'Channel constraints do not waive CIP. The rule explicitly anticipates non-documentary methods precisely so online and remote accounts can still be opened compliantly.'],
       ['Accept a screenshot of the customer\'s online banking session at another institution', 'A screenshot of another bank\'s session is not an independent identity source. CIP non-documentary methods rely on third-party data the bank can corroborate, not the customer\'s own screen.'],
       ['Ask the customer to verify themselves by answering challenge questions only they would know', 'Knowledge-based authentication is one component, but standing alone it is weak. Non-documentary CIP usually combines multiple independent sources — credit bureau, public records, identity-vendor — not just self-answered questions.'],
     ],
@@ -528,7 +528,7 @@ export const bcCh2Questions: Question[] = [
     'As one input among several — corruption perception correlates with AML risk but is not by itself definitive; combine with FATF status, OFAC posture, AML mutual-evaluation results, and the bank\'s own exposure to produce a country score',
     [
       ['Use the CPI score alone to assign the country tier, since it is the most comprehensive index', 'CPI is informative but not comprehensive for AML purposes. AML mutual evaluations, FATF status, and OFAC posture each capture dimensions CPI does not.'],
-      ['Ignore the CPI because it is a perception measure and not a legal designation', 'Perception measures are valuable risk signals even when they are not legal designations. The CPI is widely used in country-risk models and discounting it entirely under-uses available evidence.'],
+      ['Exclude the CPI from the model because it is not a binding sanctions or FATF designation', 'Perception measures are valuable risk signals even when they are not legal designations. The CPI is widely used in country-risk models and discounting it entirely under-uses available evidence.'],
       ['Use the CPI to set product pricing for customers from each country', 'Country-risk inputs drive AML treatment, not pricing. Using CPI to price customers creates serious conduct and disclosure problems.'],
     ],
     'Country-risk models work best as composites: FATF status + OFAC posture + AML evaluation results + corruption indices + the bank\'s own exposure. Any single input over-relied on creates a misclassified country tier.'),

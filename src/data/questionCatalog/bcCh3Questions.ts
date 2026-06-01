@@ -214,7 +214,7 @@ export const bcCh3Questions: Question[] = [
     'A US bank operates a branch in Singapore. The branch flags a name on the UN Consolidated Sanctions List that is not currently on the OFAC SDN list. How should the branch treat the match?',
     'Apply both UN and Singaporean implementation requirements at the branch (because UN sanctions are implemented by member states through national law), and additionally apply OFAC rules to the US-person branch — UN sanctions members typically translate UN designations into national lists, and a US bank\'s foreign branches remain US persons under OFAC',
     [
-      ['Ignore the hit because only OFAC binds a US bank', 'Foreign branches of US banks are US persons under OFAC, but they are also subject to the law of the host jurisdiction. Ignoring UN-implementing local law is a separate violation.'],
+      ['Treat the hit as informational only because it is not currently an OFAC SDN match', 'Foreign branches of US banks are US persons under OFAC, but they are also subject to the law of the host jurisdiction. Ignoring UN-implementing local law is a separate violation.'],
       ['Block immediately under OFAC because UN designations are automatically SDN', 'UN designations are not automatically on the SDN list. In practice OFAC implements most UN designations, but the timing and scope can differ — the right answer matches the actual list, not the assumption.'],
       ['Refer to Singapore\'s MAS but not OFAC, because the branch is in Singapore', 'A US bank\'s foreign branch is a US person and remains subject to OFAC. Foreign branches that ignored OFAC have produced significant settlements (Standard Chartered $1.1B, 2019; BNP Paribas $8.97B, 2014).'],
     ],
@@ -245,7 +245,7 @@ export const bcCh3Questions: Question[] = [
     'Use FBI matches as AML/KYC risk signals — they may inform CDD review, EDD, SAR filing under 31 CFR 1020.320, or law-enforcement subpoena response — but do not treat them as OFAC blocking events; the FBI list is an investigative tool, not a sanctions list',
     [
       ['Block the account, because anyone on a federal wanted list is sanctioned', 'A federal wanted notice is not a sanctions designation. Blocking without authority can itself give rise to claims (wrongful seizure, civil rights, contract). The two regimes do not collapse.'],
-      ['Ignore FBI hits because only OFAC matters for compliance', 'OFAC is the operative sanctions authority, but the BSA imposes independent SAR obligations and CDD scrutiny that an FBI hit clearly informs. Ignoring it would miss real AML risk.'],
+      ['Treat FBI matches as outside the AML workflow because they are not sanctions designations', 'OFAC is the operative sanctions authority, but the BSA imposes independent SAR obligations and CDD scrutiny that an FBI hit clearly informs. Ignoring it would miss real AML risk.'],
       ['File a SAR automatically on every FBI list hit', 'SAR filing requires the suspicious-activity standard (31 CFR 1020.320); an FBI list match is a strong input but not by itself an automatic-trigger. Mechanical SAR-filing on every hit floods FinCEN and dilutes signal.'],
     ],
     'Lists serve different purposes: OFAC lists drive blocking and reject decisions; FBI/Interpol lists drive AML and law-enforcement workflows. A mature program maps each list to the right downstream procedure and avoids collapsing them into a single "block on any hit" rule.'),

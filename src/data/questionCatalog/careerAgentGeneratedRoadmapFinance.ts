@@ -4537,9 +4537,9 @@ export const careerAgentGeneratedRoadmapFinanceQuestionsByTrack: Record<string, 
       'A target relies on one overseas supplier for a critical component with no backup. What diligence work is needed?',
       'Assess supplier concentration, switching cost, inventory buffers, contracts, and mitigation plans',
       [
-        ['Assume supplier continuity from current production stability', 'Single-source supply chains are operational time bombs. COVID and shipping disruption made this risk concrete for every PE firm.'],
+        ['Treat recent on-time production as proof that the single-source supplier risk is immaterial', 'Single-source supply chains are operational time bombs. COVID and shipping disruption made this risk concrete for every PE firm.'],
         ['Value the company as if nothing ever ships late', 'Shipping delays are normal. The diligence question is whether the business has buffer to absorb them.'],
-        ['Rely on the supplier\'s verbal assurance without checking contracts or backups', 'Verbal comfort is not enforceable inventory. Real mitigation requires contracts, alternative sources, or buffer stock.'],
+        ['Accept management’s statement that the supplier relationship is strong without testing contract rights or alternatives', 'Verbal comfort is not enforceable inventory. Real mitigation requires contracts, alternative sources, or buffer stock.'],
       ],
       'Operational fragility can become financial risk. Supplier concentration belongs in the investment thesis and value-creation plan.'),
 

@@ -110,7 +110,7 @@ export const cybersecOpsJargonTopUpQuestions: Question[] = makeQuestionBank('Car
     wrong: [
       miss('Declare a high-severity incident because the malware is dangerous in general', 'A threat you have no exposure to does not warrant an incident; relevance, not global scariness, drives priority.', 'Impact depends on whether the targeted tech is present in your estate.'),
       miss('Block the indicators and consider it fully handled with no further thought', 'Blocking is fine, but relevance assessment is the point; you should record applicability, not just react.', 'The skill is judging applicability, not reflexively blocking everything.'),
-      miss('Ignore all external intel because it is about other organizations', 'Some external intel is highly relevant; the right move is to assess applicability, not dismiss the source.', 'Do not dismiss intel wholesale; check whether it touches your environment.'),
+      miss('Treat vendor and industry reports as low-value unless they mention your company by name', 'Some external intel is highly relevant; the right move is to assess applicability, not dismiss the source.', 'Do not dismiss intel wholesale; check whether it touches your environment.'),
     ],
     lesson: 'Threat-intel value depends on applicability. An indicator or campaign that targets technology you do not run is low priority for you, even if it is globally severe. Relevance to your actual attack surface drives the triage decision.', source, generated: true },
   // ---------------- Chapter 3: Identity and Access Language ----------------
@@ -202,7 +202,7 @@ export const cybersecOpsJargonTopUpQuestions: Question[] = makeQuestionBank('Car
     wrong: [
       miss('Rename the bucket to something less guessable and move on', 'Obscure naming does not fix permissions and ignores whether data was already exposed.', 'Security by obscurity is not remediation; you still must assess exposure.'),
       miss('Add a warning banner to the bucket so users know it is sensitive', 'A banner does not remove public access and does nothing about data already reachable.', 'A label does not change permissions or undo exposure.'),
-      miss('Assume no impact because the bucket had no obvious link to it', 'Public buckets are routinely found by scanners and crawlers without any link; absence of a link is not absence of access.', 'Unlinked does not mean undiscovered; check access logs for real exposure.'),
+      miss('Treat the exposure as harmless if the bucket URL was not linked from the public website', 'Public buckets are routinely found by scanners and crawlers without any link; absence of a link is not absence of access.', 'Unlinked does not mean undiscovered; check access logs for real exposure.'),
     ],
     lesson: 'Fixing a public bucket is necessary but not sufficient. Misconfiguration incidents require assessing data sensitivity and reviewing access logs to learn whether anything was actually read or copied while exposed, which drives notification and breach decisions.', source, generated: true },
   { id: 7306022, chapter: 'Endpoint, Network, and Cloud Investigation', title: 'Over-permissioned workload identity',

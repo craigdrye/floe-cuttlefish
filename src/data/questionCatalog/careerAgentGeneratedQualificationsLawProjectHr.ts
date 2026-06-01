@@ -703,7 +703,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'A PMP scenario asks what the project manager should do next after a conflict, surprise risk, or stakeholder concern. Which exam habit helps most?',
       'Choose the response that assesses facts, engages the right people, and follows the appropriate process before drastic action',
       [
-        ['Choose the most forceful management action to signal decisiveness', 'PMP rarely rewards forceful unilateral action over collaborative process.'],
+        ['Take unilateral corrective action before consulting the team or checking the process', 'PMP rarely rewards forceful unilateral action over collaborative process.'],
         ['Escalate every inconvenience immediately', 'Excessive escalation signals weak project management on PMP scenarios.'],
         ['Treat urgency as a reason to bypass the required process', 'Urgency is not a process exemption in PMP scenarios.'],
       ],
@@ -714,7 +714,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       [
         ['Choose it because confidence beats context', 'Confidence is not a PMP scoring criterion. Context-fit is.'],
         ['Treat absolute promises as normal project-plan discipline', 'PMP scenarios reward judgement, not absolute rules.'],
-        ['Choose the strongest-sounding verb even when the facts point elsewhere', 'PMP items are scenario-based; the verb without context is not the answer.'],
+        ['Prefer the answer with the most decisive action verb, even if the scenario facts are thin', 'PMP items are scenario-based; the verb without context is not the answer.'],
       ],
       'PMP scenario answers usually favour context, process, and judgement. Absolute language is often a warning light.'),
     q(4250830, 'Career Skills', 'Exam Strategy and Simulation', 'Process before heroics',
