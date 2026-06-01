@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-01T07:26:46.449Z",
+  "generatedAt": "2026-06-01T07:28:49.930Z",
   "summary": {
     "filesScanned": 758,
     "questionsScanned": 56989,
     "extractedQuestionRecords": 57146,
     "skippedNonPlayablePlaceholders": 157,
     "distinctQuestionIds": 38778,
-    "totalIssues": 391,
-    "jsonIssuesStored": 391,
-    "duplicateWhyWrongGroups": 65
+    "totalIssues": 373,
+    "jsonIssuesStored": 373,
+    "duplicateWhyWrongGroups": 60
   },
   "flagCounts": {
-    "repeated-why-wrong": 226,
+    "repeated-why-wrong": 208,
     "obvious-irrelevant-distractor": 45,
     "meta-distractor": 120
   },
@@ -893,60 +893,6 @@
       ]
     },
     {
-      "text": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "count": 6,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-          "line": 531,
-          "questionId": 7850034,
-          "title": "Adjectives",
-          "chapter": "Grammar",
-          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-          "line": 730,
-          "questionId": 7852047,
-          "title": "Identifying nouns",
-          "chapter": "Grammar and Language",
-          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
-          "line": 458,
-          "questionId": 7856029,
-          "title": "Identifying a noun",
-          "chapter": "Grammar",
-          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-          "line": 793,
-          "questionId": 7851051,
-          "title": "Finding the noun",
-          "chapter": "Grammar and Writing",
-          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-          "line": 666,
-          "questionId": 7855042,
-          "title": "Identifying a noun",
-          "chapter": "Grammar and Writing",
-          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-          "line": 487,
-          "questionId": 7846031,
-          "title": "Finding the noun",
-          "chapter": "Grammar",
-          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),"
-        }
-      ]
-    },
-    {
       "text": "These multiply to 12 but add to 8, not 7.",
       "count": 6,
       "examples": [
@@ -1109,52 +1055,6 @@
       ]
     },
     {
-      "text": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
-      "count": 5,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-          "line": 320,
-          "questionId": 7852020,
-          "title": "Equivalent fractions",
-          "chapter": "Fractions",
-          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top number is exactly half of the bottom.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-          "line": 262,
-          "questionId": 7816016,
-          "title": "Equivalent fractions",
-          "chapter": "Fractions Basics",
-          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top is half of the bottom.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
-          "line": 168,
-          "questionId": 7815010,
-          "title": "Equivalent fractions",
-          "chapter": "Fractions",
-          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top is exactly half the bottom.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
-          "line": 199,
-          "questionId": 7814012,
-          "title": "Equivalent fractions",
-          "chapter": "Fractions",
-          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For halves, the top should be half of the bottom.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-          "line": 17,
-          "questionId": 7846000,
-          "title": "Equivalent fractions",
-          "chapter": "Fractions",
-          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top number should be exactly half of the bottom number.'),"
-        }
-      ]
-    },
-    {
       "text": "In the first quadrant cosine is positive, so the negative root is rejected.",
       "count": 5,
       "examples": [
@@ -1201,48 +1101,48 @@
       ]
     },
     {
-      "text": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "text": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "count": 5,
       "examples": [
         {
           "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-          "line": 425,
-          "questionId": 7850027,
-          "title": "Synonyms",
-          "chapter": "Vocabulary",
-          "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-          "line": 504,
-          "questionId": 7849032,
-          "title": "Synonyms",
-          "chapter": "Reading and Vocabulary",
-          "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),"
+          "line": 531,
+          "questionId": 7850034,
+          "title": "Adjectives",
+          "chapter": "Grammar",
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),"
         },
         {
           "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-          "line": 684,
-          "questionId": 7852044,
-          "title": "Synonyms",
-          "chapter": "Vocabulary and Word Meaning",
-          "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
           "line": 730,
-          "questionId": 7846047,
-          "title": "Choosing a synonym",
-          "chapter": "Vocabulary",
-          "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),"
+          "questionId": 7852047,
+          "title": "Identifying nouns",
+          "chapter": "Grammar and Language",
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
         },
         {
-          "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
-          "line": 508,
-          "questionId": 7858032,
-          "title": "Words that mean the same",
-          "chapter": "Vocabulary and Word Meanings",
-          "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Find a word that also means feeling good.'),"
+          "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
+          "line": 458,
+          "questionId": 7856029,
+          "title": "Identifying a noun",
+          "chapter": "Grammar",
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
+          "line": 793,
+          "questionId": 7851051,
+          "title": "Finding the noun",
+          "chapter": "Grammar and Writing",
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
+          "line": 666,
+          "questionId": 7855042,
+          "title": "Identifying a noun",
+          "chapter": "Grammar and Writing",
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
         }
       ]
     },
@@ -1281,6 +1181,44 @@
           "title": "Equivalent fractions",
           "chapter": "Fractions",
           "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'Half of 4 parts is 2 parts.'),"
+        }
+      ]
+    },
+    {
+      "text": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
+      "count": 4,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+          "line": 320,
+          "questionId": 7852020,
+          "title": "Equivalent fractions",
+          "chapter": "Fractions",
+          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top number is exactly half of the bottom.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
+          "line": 262,
+          "questionId": 7816016,
+          "title": "Equivalent fractions",
+          "chapter": "Fractions Basics",
+          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top is half of the bottom.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
+          "line": 168,
+          "questionId": 7815010,
+          "title": "Equivalent fractions",
+          "chapter": "Fractions",
+          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top is exactly half the bottom.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
+          "line": 199,
+          "questionId": 7814012,
+          "title": "Equivalent fractions",
+          "chapter": "Fractions",
+          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For halves, the top should be half of the bottom.'),"
         }
       ]
     },
@@ -1395,6 +1333,44 @@
           "title": "Even or odd",
           "chapter": "Comparing Numbers",
           "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Look at the ones digit: 4 is even.'),"
+        }
+      ]
+    },
+    {
+      "text": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "count": 4,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+          "line": 425,
+          "questionId": 7850027,
+          "title": "Synonyms",
+          "chapter": "Vocabulary",
+          "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
+          "line": 504,
+          "questionId": 7849032,
+          "title": "Synonyms",
+          "chapter": "Reading and Vocabulary",
+          "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+          "line": 684,
+          "questionId": 7852044,
+          "title": "Synonyms",
+          "chapter": "Vocabulary and Word Meaning",
+          "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
+          "line": 508,
+          "questionId": 7858032,
+          "title": "Words that mean the same",
+          "chapter": "Vocabulary and Word Meanings",
+          "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Find a word that also means feeling good.'),"
         }
       ]
     },
@@ -1897,36 +1873,6 @@
       ]
     },
     {
-      "text": "3/4 covers three quarters of the shape, more than the half being asked for.",
-      "count": 3,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
-          "line": 184,
-          "questionId": 7803011,
-          "title": "Matching Half",
-          "chapter": "Equivalent Fractions",
-          "snippet": "miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'A half is the middle, halfway between 0 and 1.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-          "line": 263,
-          "questionId": 7816016,
-          "title": "Equivalent fractions",
-          "chapter": "Fractions Basics",
-          "snippet": "miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'One half means the top is half the bottom.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-          "line": 18,
-          "questionId": 7846000,
-          "title": "Equivalent fractions",
-          "chapter": "Fractions",
-          "snippet": "miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'In 2/4, the top is half of the bottom, so it equals 1/2.'),"
-        }
-      ]
-    },
-    {
       "text": "4 is just one step too high; check the last count carefully.",
       "count": 3,
       "examples": [
@@ -2255,6 +2201,36 @@
           "snippet": "miss('Exactly one solution', 'Lines with equal slopes but different intercepts never intersect.', 'Compare the slopes of the two lines.'),"
         }
       ]
+    },
+    {
+      "text": "Liters is for liquid volume, not measuring how long something is.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
+          "line": 524,
+          "questionId": 7810033,
+          "title": "Right unit for length",
+          "chapter": "Measurement",
+          "snippet": "miss('Liters', 'Liters is for liquid volume, not measuring how long something is.', 'You want to measure how long the pencil is.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
+          "line": 611,
+          "questionId": 7815039,
+          "title": "Units of length",
+          "chapter": "Measurement and Perimeter",
+          "snippet": "miss('Liters', 'Liters is for liquid volume, not measuring how long something is.', 'Length needs a distance unit.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
+          "line": 534,
+          "questionId": 7814034,
+          "title": "Units of length",
+          "chapter": "Measurement and Data",
+          "snippet": "miss('liters', 'liters is for liquid volume, not measuring how long something is.', 'Length needs a length unit.'),"
+        }
+      ]
     }
   ],
   "examplesByFlag": {
@@ -2428,21 +2404,6 @@
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
         "priority": 90,
-        "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-        "line": 531,
-        "questionId": 7850034,
-        "title": "Adjectives",
-        "chapter": "Grammar",
-        "field": "whyWrong",
-        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-        "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 90,
         "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
         "line": 443,
         "questionId": 7849028,
@@ -2473,21 +2434,6 @@
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
         "priority": 90,
-        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-        "line": 730,
-        "questionId": 7852047,
-        "title": "Identifying nouns",
-        "chapter": "Grammar and Language",
-        "field": "whyWrong",
-        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-        "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 90,
         "file": "src/data/questionCatalog/col-5th-grade-ny-next-genPrim103TopUp.ts",
         "line": 730,
         "questionId": 7854047,
@@ -2512,21 +2458,6 @@
         "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
         "detail": "Same normalized whyWrong appears 6 times.",
         "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 90,
-        "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
-        "line": 458,
-        "questionId": 7856029,
-        "title": "Identifying a noun",
-        "chapter": "Grammar",
-        "field": "whyWrong",
-        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-        "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2593,21 +2524,6 @@
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
         "priority": 90,
-        "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-        "line": 793,
-        "questionId": 7851051,
-        "title": "Finding the noun",
-        "chapter": "Grammar and Writing",
-        "field": "whyWrong",
-        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-        "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 90,
         "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
         "line": 619,
         "questionId": 7855039,
@@ -2617,21 +2533,6 @@
         "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
         "detail": "Same normalized whyWrong appears 6 times.",
         "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the reverse.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 90,
-        "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-        "line": 666,
-        "questionId": 7855042,
-        "title": "Identifying a noun",
-        "chapter": "Grammar and Writing",
-        "field": "whyWrong",
-        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-        "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2713,21 +2614,6 @@
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
         "priority": 90,
-        "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-        "line": 487,
-        "questionId": 7846031,
-        "title": "Finding the noun",
-        "chapter": "Grammar",
-        "field": "whyWrong",
-        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-        "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 90,
         "file": "src/data/questionCatalog/openIntroStatsSlidesImported.ts",
         "line": 291,
         "questionId": 332017,
@@ -2759,29 +2645,14 @@
         "label": "Repeated whyWrong",
         "priority": 89,
         "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-        "line": 425,
-        "questionId": 7850027,
-        "title": "Synonyms",
-        "chapter": "Vocabulary",
+        "line": 531,
+        "questionId": 7850034,
+        "title": "Adjectives",
+        "chapter": "Grammar",
         "field": "whyWrong",
-        "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
         "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 89,
-        "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-        "line": 504,
-        "questionId": 7849032,
-        "title": "Synonyms",
-        "chapter": "Reading and Vocabulary",
-        "field": "whyWrong",
-        "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
-        "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),",
         "extractor": "object"
       },
       {
@@ -2789,74 +2660,29 @@
         "label": "Repeated whyWrong",
         "priority": 89,
         "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-        "line": 320,
-        "questionId": 7852020,
-        "title": "Equivalent fractions",
-        "chapter": "Fractions",
+        "line": 730,
+        "questionId": 7852047,
+        "title": "Identifying nouns",
+        "chapter": "Grammar and Language",
         "field": "whyWrong",
-        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
         "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top number is exactly half of the bottom.'),",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
         "extractor": "object"
       },
       {
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
         "priority": 89,
-        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-        "line": 684,
-        "questionId": 7852044,
-        "title": "Synonyms",
-        "chapter": "Vocabulary and Word Meaning",
+        "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 458,
+        "questionId": 7856029,
+        "title": "Identifying a noun",
+        "chapter": "Grammar",
         "field": "whyWrong",
-        "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
         "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 89,
-        "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-        "line": 262,
-        "questionId": 7816016,
-        "title": "Equivalent fractions",
-        "chapter": "Fractions Basics",
-        "field": "whyWrong",
-        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
-        "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top is half of the bottom.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 89,
-        "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
-        "line": 168,
-        "questionId": 7815010,
-        "title": "Equivalent fractions",
-        "chapter": "Fractions",
-        "field": "whyWrong",
-        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
-        "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top is exactly half the bottom.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 89,
-        "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
-        "line": 199,
-        "questionId": 7814012,
-        "title": "Equivalent fractions",
-        "chapter": "Fractions",
-        "field": "whyWrong",
-        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
-        "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For halves, the top should be half of the bottom.'),",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2872,6 +2698,36 @@
         "value": "In the first quadrant cosine is positive, so the negative root is rejected.",
         "detail": "Same normalized whyWrong appears 5 times.",
         "snippet": "miss('-4/5', 'In the first quadrant cosine is positive, so the negative root is rejected.', 'Use the quadrant to choose the sign of the square root.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 89,
+        "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
+        "line": 793,
+        "questionId": 7851051,
+        "title": "Finding the noun",
+        "chapter": "Grammar and Writing",
+        "field": "whyWrong",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
+        "detail": "Same normalized whyWrong appears 5 times.",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 89,
+        "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
+        "line": 666,
+        "questionId": 7855042,
+        "title": "Identifying a noun",
+        "chapter": "Grammar and Writing",
+        "field": "whyWrong",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
+        "detail": "Same normalized whyWrong appears 5 times.",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2932,51 +2788,6 @@
         "value": "In the first quadrant cosine is positive, so the negative root is rejected.",
         "detail": "Same normalized whyWrong appears 5 times.",
         "snippet": "miss('-4/5', 'In the first quadrant cosine is positive, so the negative root is rejected.', 'All trig functions are positive in the first quadrant.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 89,
-        "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-        "line": 17,
-        "questionId": 7846000,
-        "title": "Equivalent fractions",
-        "chapter": "Fractions",
-        "field": "whyWrong",
-        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
-        "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top number should be exactly half of the bottom number.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 89,
-        "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-        "line": 730,
-        "questionId": 7846047,
-        "title": "Choosing a synonym",
-        "chapter": "Vocabulary",
-        "field": "whyWrong",
-        "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
-        "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 89,
-        "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
-        "line": 508,
-        "questionId": 7858032,
-        "title": "Words that mean the same",
-        "chapter": "Vocabulary and Word Meanings",
-        "field": "whyWrong",
-        "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
-        "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Find a word that also means feeling good.'),",
         "extractor": "object"
       },
       {
@@ -3052,6 +2863,66 @@
         "value": "Neither is still part of the even-or-odd number family; check the ones digit instead.",
         "detail": "Same normalized whyWrong appears 4 times.",
         "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Check if it can split into two equal groups.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 88,
+        "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+        "line": 425,
+        "questionId": 7850027,
+        "title": "Synonyms",
+        "chapter": "Vocabulary",
+        "field": "whyWrong",
+        "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+        "detail": "Same normalized whyWrong appears 4 times.",
+        "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 88,
+        "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
+        "line": 504,
+        "questionId": 7849032,
+        "title": "Synonyms",
+        "chapter": "Reading and Vocabulary",
+        "field": "whyWrong",
+        "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+        "detail": "Same normalized whyWrong appears 4 times.",
+        "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 88,
+        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 320,
+        "questionId": 7852020,
+        "title": "Equivalent fractions",
+        "chapter": "Fractions",
+        "field": "whyWrong",
+        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
+        "detail": "Same normalized whyWrong appears 4 times.",
+        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top number is exactly half of the bottom.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 88,
+        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 684,
+        "questionId": 7852044,
+        "title": "Synonyms",
+        "chapter": "Vocabulary and Word Meaning",
+        "field": "whyWrong",
+        "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+        "detail": "Same normalized whyWrong appears 4 times.",
+        "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),",
         "extractor": "object"
       },
       {
@@ -3163,6 +3034,36 @@
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
         "priority": 88,
+        "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
+        "line": 262,
+        "questionId": 7816016,
+        "title": "Equivalent fractions",
+        "chapter": "Fractions Basics",
+        "field": "whyWrong",
+        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
+        "detail": "Same normalized whyWrong appears 4 times.",
+        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top is half of the bottom.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 88,
+        "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
+        "line": 168,
+        "questionId": 7815010,
+        "title": "Equivalent fractions",
+        "chapter": "Fractions",
+        "field": "whyWrong",
+        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
+        "detail": "Same normalized whyWrong appears 4 times.",
+        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top is exactly half the bottom.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 88,
         "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
         "line": 169,
         "questionId": 7815010,
@@ -3232,6 +3133,21 @@
         "value": "1/4 is only one quarter, so it is smaller than a half.",
         "detail": "Same normalized whyWrong appears 4 times.",
         "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'Half of 4 parts is 2 parts.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 88,
+        "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
+        "line": 199,
+        "questionId": 7814012,
+        "title": "Equivalent fractions",
+        "chapter": "Fractions",
+        "field": "whyWrong",
+        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
+        "detail": "Same normalized whyWrong appears 4 times.",
+        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For halves, the top should be half of the bottom.'),",
         "extractor": "object"
       },
       {
@@ -3582,6 +3498,21 @@
       {
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
+        "priority": 88,
+        "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
+        "line": 508,
+        "questionId": 7858032,
+        "title": "Words that mean the same",
+        "chapter": "Vocabulary and Word Meanings",
+        "field": "whyWrong",
+        "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+        "detail": "Same normalized whyWrong appears 4 times.",
+        "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Find a word that also means feeling good.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
         "priority": 87,
         "file": "src/data/questionCatalog/basicGeometryPrim103TopUpB.ts",
         "line": 273,
@@ -3697,21 +3628,6 @@
         "value": "100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.",
         "detail": "Same normalized whyWrong appears 3 times.",
         "snippet": "miss('100', '100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.', 'Division makes smaller groups, not a bigger number.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 87,
-        "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
-        "line": 184,
-        "questionId": 7803011,
-        "title": "Matching Half",
-        "chapter": "Equivalent Fractions",
-        "field": "whyWrong",
-        "value": "3/4 covers three quarters of the shape, more than the half being asked for.",
-        "detail": "Same normalized whyWrong appears 3 times.",
-        "snippet": "miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'A half is the middle, halfway between 0 and 1.'),",
         "extractor": "object"
       },
       {
@@ -3944,21 +3860,6 @@
         "label": "Repeated whyWrong",
         "priority": 87,
         "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-        "line": 520,
-        "questionId": 7849033,
-        "title": "Antonyms",
-        "chapter": "Reading and Vocabulary",
-        "field": "whyWrong",
-        "value": "Tall is about height; the prompt is looking for the size word that means not big.",
-        "detail": "Same normalized whyWrong appears 3 times.",
-        "snippet": "miss('Tall', 'Tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 87,
-        "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
         "line": 565,
         "questionId": 7849036,
         "title": "Finding a noun",
@@ -4057,6 +3958,81 @@
         "value": "That adds the numbers instead of subtracting.",
         "detail": "Same normalized whyWrong appears 3 times.",
         "snippet": "miss('9,225', 'That adds the numbers instead of subtracting.', 'Empty seats means you take away the filled ones.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 472,
+        "questionId": 7852030,
+        "title": "Adding money",
+        "chapter": "Decimals and Money",
+        "field": "whyWrong",
+        "value": "That subtracts instead of adding.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('$2.75', 'That subtracts instead of adding.', 'In all means add the two prices together.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 821,
+        "questionId": 7852053,
+        "title": "Choosing the right adjective",
+        "chapter": "Grammar and Language",
+        "field": "whyWrong",
+        "value": "slept describes an action or state, so it is a verb rather than a noun.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('slept', 'slept describes an action or state, so it is a verb rather than a noun.', 'Look for the word that tells what the cat is like.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-5th-grade-mathPrim103TopUp.ts",
+        "line": 733,
+        "questionId": 7812047,
+        "title": "Multiplying two-digit numbers",
+        "chapter": "Multi-Digit Multiplication and Division",
+        "field": "whyWrong",
+        "value": "27 is 23 plus 4, but the prompt asks for four groups of 23.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('27', '27 is 23 plus 4, but the prompt asks for four groups of 23.', 'Multiply each part: 4 times 23.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-5th-grade-mathPrim103TopUp.ts",
+        "line": 764,
+        "questionId": 7812049,
+        "title": "Division with a remainder",
+        "chapter": "Multi-Digit Multiplication and Division",
+        "field": "whyWrong",
+        "value": "2 remainder 7 leaves too much behind; a valid remainder must be smaller than the divisor.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('2 remainder 7', '2 remainder 7 leaves too much behind; a valid remainder must be smaller than the divisor.', 'The remainder must be less than 5.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-5th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 109,
+        "questionId": 7854006,
+        "title": "A fraction times a fraction",
+        "chapter": "Multiplying Fractions",
+        "field": "whyWrong",
+        "value": "2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('2/6', '2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.', 'Multiply the tops too: 1 x 1 = 1.'),",
         "extractor": "object"
       }
     ],
@@ -6679,21 +6655,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 90,
-      "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-      "line": 531,
-      "questionId": 7850034,
-      "title": "Adjectives",
-      "chapter": "Grammar",
-      "field": "whyWrong",
-      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 90,
       "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
       "line": 443,
       "questionId": 7849028,
@@ -6724,21 +6685,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 90,
-      "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-      "line": 730,
-      "questionId": 7852047,
-      "title": "Identifying nouns",
-      "chapter": "Grammar and Language",
-      "field": "whyWrong",
-      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 90,
       "file": "src/data/questionCatalog/col-5th-grade-ny-next-genPrim103TopUp.ts",
       "line": 730,
       "questionId": 7854047,
@@ -6763,21 +6709,6 @@
       "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
       "detail": "Same normalized whyWrong appears 6 times.",
       "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 90,
-      "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
-      "line": 458,
-      "questionId": 7856029,
-      "title": "Identifying a noun",
-      "chapter": "Grammar",
-      "field": "whyWrong",
-      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
       "extractor": "object"
     },
     {
@@ -6844,21 +6775,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 90,
-      "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-      "line": 793,
-      "questionId": 7851051,
-      "title": "Finding the noun",
-      "chapter": "Grammar and Writing",
-      "field": "whyWrong",
-      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 90,
       "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
       "line": 619,
       "questionId": 7855039,
@@ -6868,21 +6784,6 @@
       "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
       "detail": "Same normalized whyWrong appears 6 times.",
       "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the reverse.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 90,
-      "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-      "line": 666,
-      "questionId": 7855042,
-      "title": "Identifying a noun",
-      "chapter": "Grammar and Writing",
-      "field": "whyWrong",
-      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
       "extractor": "object"
     },
     {
@@ -6964,21 +6865,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 90,
-      "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-      "line": 487,
-      "questionId": 7846031,
-      "title": "Finding the noun",
-      "chapter": "Grammar",
-      "field": "whyWrong",
-      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 90,
       "file": "src/data/questionCatalog/openIntroStatsSlidesImported.ts",
       "line": 291,
       "questionId": 332017,
@@ -7010,29 +6896,14 @@
       "label": "Repeated whyWrong",
       "priority": 89,
       "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-      "line": 425,
-      "questionId": 7850027,
-      "title": "Synonyms",
-      "chapter": "Vocabulary",
+      "line": 531,
+      "questionId": 7850034,
+      "title": "Adjectives",
+      "chapter": "Grammar",
       "field": "whyWrong",
-      "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-      "line": 504,
-      "questionId": 7849032,
-      "title": "Synonyms",
-      "chapter": "Reading and Vocabulary",
-      "field": "whyWrong",
-      "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),",
       "extractor": "object"
     },
     {
@@ -7040,74 +6911,29 @@
       "label": "Repeated whyWrong",
       "priority": 89,
       "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-      "line": 320,
-      "questionId": 7852020,
-      "title": "Equivalent fractions",
-      "chapter": "Fractions",
+      "line": 730,
+      "questionId": 7852047,
+      "title": "Identifying nouns",
+      "chapter": "Grammar and Language",
       "field": "whyWrong",
-      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top number is exactly half of the bottom.'),",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
       "extractor": "object"
     },
     {
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 89,
-      "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-      "line": 684,
-      "questionId": 7852044,
-      "title": "Synonyms",
-      "chapter": "Vocabulary and Word Meaning",
+      "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
+      "line": 458,
+      "questionId": 7856029,
+      "title": "Identifying a noun",
+      "chapter": "Grammar",
       "field": "whyWrong",
-      "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-      "line": 262,
-      "questionId": 7816016,
-      "title": "Equivalent fractions",
-      "chapter": "Fractions Basics",
-      "field": "whyWrong",
-      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top is half of the bottom.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
-      "line": 168,
-      "questionId": 7815010,
-      "title": "Equivalent fractions",
-      "chapter": "Fractions",
-      "field": "whyWrong",
-      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top is exactly half the bottom.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
-      "line": 199,
-      "questionId": 7814012,
-      "title": "Equivalent fractions",
-      "chapter": "Fractions",
-      "field": "whyWrong",
-      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For halves, the top should be half of the bottom.'),",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
       "extractor": "object"
     },
     {
@@ -7123,6 +6949,36 @@
       "value": "In the first quadrant cosine is positive, so the negative root is rejected.",
       "detail": "Same normalized whyWrong appears 5 times.",
       "snippet": "miss('-4/5', 'In the first quadrant cosine is positive, so the negative root is rejected.', 'Use the quadrant to choose the sign of the square root.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 89,
+      "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
+      "line": 793,
+      "questionId": 7851051,
+      "title": "Finding the noun",
+      "chapter": "Grammar and Writing",
+      "field": "whyWrong",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
+      "detail": "Same normalized whyWrong appears 5 times.",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 89,
+      "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
+      "line": 666,
+      "questionId": 7855042,
+      "title": "Identifying a noun",
+      "chapter": "Grammar and Writing",
+      "field": "whyWrong",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
+      "detail": "Same normalized whyWrong appears 5 times.",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
       "extractor": "object"
     },
     {
@@ -7183,51 +7039,6 @@
       "value": "In the first quadrant cosine is positive, so the negative root is rejected.",
       "detail": "Same normalized whyWrong appears 5 times.",
       "snippet": "miss('-4/5', 'In the first quadrant cosine is positive, so the negative root is rejected.', 'All trig functions are positive in the first quadrant.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-      "line": 17,
-      "questionId": 7846000,
-      "title": "Equivalent fractions",
-      "chapter": "Fractions",
-      "field": "whyWrong",
-      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top number should be exactly half of the bottom number.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-      "line": 730,
-      "questionId": 7846047,
-      "title": "Choosing a synonym",
-      "chapter": "Vocabulary",
-      "field": "whyWrong",
-      "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
-      "line": 508,
-      "questionId": 7858032,
-      "title": "Words that mean the same",
-      "chapter": "Vocabulary and Word Meanings",
-      "field": "whyWrong",
-      "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Find a word that also means feeling good.'),",
       "extractor": "object"
     },
     {
@@ -7303,6 +7114,66 @@
       "value": "Neither is still part of the even-or-odd number family; check the ones digit instead.",
       "detail": "Same normalized whyWrong appears 4 times.",
       "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Check if it can split into two equal groups.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 88,
+      "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+      "line": 425,
+      "questionId": 7850027,
+      "title": "Synonyms",
+      "chapter": "Vocabulary",
+      "field": "whyWrong",
+      "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "detail": "Same normalized whyWrong appears 4 times.",
+      "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 88,
+      "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
+      "line": 504,
+      "questionId": 7849032,
+      "title": "Synonyms",
+      "chapter": "Reading and Vocabulary",
+      "field": "whyWrong",
+      "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "detail": "Same normalized whyWrong appears 4 times.",
+      "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 88,
+      "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+      "line": 320,
+      "questionId": 7852020,
+      "title": "Equivalent fractions",
+      "chapter": "Fractions",
+      "field": "whyWrong",
+      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
+      "detail": "Same normalized whyWrong appears 4 times.",
+      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top number is exactly half of the bottom.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 88,
+      "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+      "line": 684,
+      "questionId": 7852044,
+      "title": "Synonyms",
+      "chapter": "Vocabulary and Word Meaning",
+      "field": "whyWrong",
+      "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "detail": "Same normalized whyWrong appears 4 times.",
+      "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),",
       "extractor": "object"
     },
     {
@@ -7414,6 +7285,36 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 88,
+      "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
+      "line": 262,
+      "questionId": 7816016,
+      "title": "Equivalent fractions",
+      "chapter": "Fractions Basics",
+      "field": "whyWrong",
+      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
+      "detail": "Same normalized whyWrong appears 4 times.",
+      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top is half of the bottom.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 88,
+      "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
+      "line": 168,
+      "questionId": 7815010,
+      "title": "Equivalent fractions",
+      "chapter": "Fractions",
+      "field": "whyWrong",
+      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
+      "detail": "Same normalized whyWrong appears 4 times.",
+      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top is exactly half the bottom.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 88,
       "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
       "line": 169,
       "questionId": 7815010,
@@ -7483,6 +7384,21 @@
       "value": "1/4 is only one quarter, so it is smaller than a half.",
       "detail": "Same normalized whyWrong appears 4 times.",
       "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'Half of 4 parts is 2 parts.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 88,
+      "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
+      "line": 199,
+      "questionId": 7814012,
+      "title": "Equivalent fractions",
+      "chapter": "Fractions",
+      "field": "whyWrong",
+      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
+      "detail": "Same normalized whyWrong appears 4 times.",
+      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For halves, the top should be half of the bottom.'),",
       "extractor": "object"
     },
     {
@@ -7833,6 +7749,21 @@
     {
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
+      "priority": 88,
+      "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
+      "line": 508,
+      "questionId": 7858032,
+      "title": "Words that mean the same",
+      "chapter": "Vocabulary and Word Meanings",
+      "field": "whyWrong",
+      "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "detail": "Same normalized whyWrong appears 4 times.",
+      "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Find a word that also means feeling good.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/basicGeometryPrim103TopUpB.ts",
       "line": 273,
@@ -7948,21 +7879,6 @@
       "value": "100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('100', '100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.', 'Division makes smaller groups, not a bigger number.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
-      "line": 184,
-      "questionId": 7803011,
-      "title": "Matching Half",
-      "chapter": "Equivalent Fractions",
-      "field": "whyWrong",
-      "value": "3/4 covers three quarters of the shape, more than the half being asked for.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'A half is the middle, halfway between 0 and 1.'),",
       "extractor": "object"
     },
     {
@@ -8195,21 +8111,6 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-      "line": 520,
-      "questionId": 7849033,
-      "title": "Antonyms",
-      "chapter": "Reading and Vocabulary",
-      "field": "whyWrong",
-      "value": "Tall is about height; the prompt is looking for the size word that means not big.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Tall', 'Tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
       "line": 565,
       "questionId": 7849036,
       "title": "Finding a noun",
@@ -8345,21 +8246,6 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/col-5th-grade-mathPrim103TopUp.ts",
-      "line": 200,
-      "questionId": 7812012,
-      "title": "Place value in a decimal",
-      "chapter": "Decimals",
-      "field": "whyWrong",
-      "value": "The 7 is in the hundredths place, not the 4.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('4 hundredths', 'The 7 is in the hundredths place, not the 4.', 'Count places right of the dot: tenths, then hundredths.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-5th-grade-mathPrim103TopUp.ts",
       "line": 733,
       "questionId": 7812047,
       "title": "Multiplying two-digit numbers",
@@ -8398,21 +8284,6 @@
       "value": "2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('2/6', '2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.', 'Multiply the tops too: 1 x 1 = 1.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-5th-grade-ny-next-genPrim103TopUp.ts",
-      "line": 139,
-      "questionId": 7854008,
-      "title": "Finding a fraction of a number",
-      "chapter": "Multiplying Fractions",
-      "field": "whyWrong",
-      "value": "That is one half of 12, not one third.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('6', 'That is one half of 12, not one third.', 'Divide 12 by 3, not by 2.'),",
       "extractor": "object"
     },
     {
@@ -8720,21 +8591,6 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-      "line": 263,
-      "questionId": 7816016,
-      "title": "Equivalent fractions",
-      "chapter": "Fractions Basics",
-      "field": "whyWrong",
-      "value": "3/4 covers three quarters of the shape, more than the half being asked for.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'One half means the top is half the bottom.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
       "line": 307,
       "questionId": 7816019,
       "title": "Adding same-bottom fractions",
@@ -8758,21 +8614,6 @@
       "value": "An obtuse angle is bigger than a right angle, not smaller.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('An obtuse angle', 'An obtuse angle is bigger than a right angle, not smaller.', 'Acute angles are the small, sharp ones.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-basic-geometry-and-measurementPrim103TopUp.ts",
-      "line": 349,
-      "questionId": 7817022,
-      "title": "Area of a larger rectangle",
-      "chapter": "Area",
-      "field": "whyWrong",
-      "value": "You added the length and width instead of multiplying.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('13 square m', 'You added the length and width instead of multiplying.', 'Area is length times width, so multiply 10 by 3.'),",
       "extractor": "object"
     },
     {
@@ -9005,21 +8846,6 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-      "line": 327,
-      "questionId": 7855020,
-      "title": "Fraction of a group",
-      "chapter": "Fractions",
-      "field": "whyWrong",
-      "value": "That is one half of 12, not one third.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('6', 'That is one half of 12, not one third.', 'One third means three equal parts, not two.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
       "line": 480,
       "questionId": 7855030,
       "title": "Area of a rectangle",
@@ -9028,21 +8854,6 @@
       "value": "You added the sides instead of multiplying them.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('16 square cm', 'You added the sides instead of multiplying them.', 'Area is length times width.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-      "line": 481,
-      "questionId": 7855030,
-      "title": "Area of a rectangle",
-      "chapter": "Measurement and Time",
-      "field": "whyWrong",
-      "value": "You added the length and width instead of multiplying.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('8 square cm', 'You added the length and width instead of multiplying.', 'Multiply 5 by 3 to find the area.'),",
       "extractor": "object"
     },
     {
@@ -9073,21 +8884,6 @@
       "value": "2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('2/6', '2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.', 'Multiply the tops too: 1 x 1 = 1.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-6th-gradePrim103TopUp.ts",
-      "line": 139,
-      "questionId": 7857008,
-      "title": "Reading the place value of a decimal",
-      "chapter": "Understanding Decimals",
-      "field": "whyWrong",
-      "value": "The 7 is in the hundredths place, not the 4.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('4 hundredths', 'The 7 is in the hundredths place, not the 4.', 'Count places after the dot: first is tenths.'),",
       "extractor": "object"
     },
     {
@@ -9589,81 +9385,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 87,
-      "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-      "line": 18,
-      "questionId": 7846000,
-      "title": "Equivalent fractions",
-      "chapter": "Fractions",
-      "field": "whyWrong",
-      "value": "3/4 covers three quarters of the shape, more than the half being asked for.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'In 2/4, the top is half of the bottom, so it equals 1/2.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-      "line": 62,
-      "questionId": 7846003,
-      "title": "Fraction of a group",
-      "chapter": "Fractions",
-      "field": "whyWrong",
-      "value": "That is one half of 12, not one third.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('6', 'That is one half of 12, not one third.', 'For thirds, split 12 into 3 equal parts.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-      "line": 93,
-      "questionId": 7846005,
-      "title": "Place value in decimals",
-      "chapter": "Decimals",
-      "field": "whyWrong",
-      "value": "The 7 is in the hundredths place, not the 4.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('4 hundredths', 'The 7 is in the hundredths place, not the 4.', 'Count places after the point: first is tenths.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-      "line": 199,
-      "questionId": 7846012,
-      "title": "Area of a rectangle",
-      "chapter": "Measurement",
-      "field": "whyWrong",
-      "value": "You added the length and width instead of multiplying.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('10 square cm', 'You added the length and width instead of multiplying.', 'Multiply 6 by 4 to find the area.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-      "line": 747,
-      "questionId": 7846048,
-      "title": "Choosing an antonym",
-      "chapter": "Vocabulary",
-      "field": "whyWrong",
-      "value": "tall is about height; the prompt is looking for the size word that means not big.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Find the word that means not big.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
       "file": "src/data/questionCatalog/naplanYear9HighTopUp.ts",
       "line": 715,
       "questionId": 7566046,
@@ -9777,21 +9498,6 @@
       "value": "12 belongs to months in a year, but the week has seven days.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('12', '12 belongs to months in a year, but the week has seven days.', 'A week has fewer days than that.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/primaryPrim103TopUpB.ts",
-      "line": 479,
-      "questionId": 7858530,
-      "title": "Opposite of big",
-      "chapter": "Synonyms, Antonyms and Vocabulary",
-      "field": "whyWrong",
-      "value": "tall is about height; the prompt is looking for the size word that means not big.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big at all.'),",
       "extractor": "object"
     },
     {

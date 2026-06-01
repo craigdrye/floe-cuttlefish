@@ -14,8 +14,8 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     correct: '2/4',
     wrong: [
       miss('1/3', 'One third is smaller than one half, not the same.', 'Cut a shape into 2 equal parts, then into 4. How many of the 4 parts cover half?'),
-      miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top number should be exactly half of the bottom number.'),
-      miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'In 2/4, the top is half of the bottom, so it equals 1/2.'),
+      miss('2/3', 'Two thirds means two out of three equal pieces, which is more than half the whole.', 'For one half, the top number should be exactly half of the bottom number.'),
+      miss('3/4', 'Three quarters leaves only one quarter missing, so it is larger than one half rather than equal to it.', 'In 2/4, the top is half of the bottom, so it equals 1/2.'),
     ],
     lesson: 'Two fractions are equivalent when they show the same amount. If you multiply the top and bottom of 1/2 by 2, you get 2/4. So 1/2 and 2/4 cover the same part of a whole.',
     source,
@@ -59,7 +59,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     correct: '4',
     wrong: [
       miss('3', 'You may have used the number 3 from the fraction by mistake.', 'Share 12 apples into 3 equal groups, then take one group.'),
-      miss('6', 'That is one half of 12, not one third.', 'For thirds, split 12 into 3 equal parts.'),
+      miss('6', 'Six would split 12 into 2 equal groups; thirds need 3 equal groups of 4.', 'For thirds, split 12 into 3 equal parts.'),
       miss('9', 'That is two thirds of 12, not one third.', 'One third is just one of the three equal groups.'),
     ],
     lesson: 'To find one third of a number, split it into 3 equal groups. 12 shared into 3 groups gives 4 in each group. So 1/3 of 12 is 4.',
@@ -90,7 +90,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     correct: '4 tenths',
     wrong: [
       miss('4 ones', 'The 4 is after the decimal point, so it is not in the ones place.', 'The first digit after the point shows tenths.'),
-      miss('4 hundredths', 'The 7 is in the hundredths place, not the 4.', 'Count places after the point: first is tenths.'),
+      miss('4 hundredths', 'Hundredths is the second place after the decimal, where the 7 sits in 3.47.', 'Count places after the point: first is tenths.'),
       miss('4 tens', 'There is no tens digit here, and the 4 is after the point.', 'Digits after the point are smaller than one.'),
     ],
     lesson: 'After the decimal point, the first place is tenths and the second is hundredths. In 3.47, the 4 is in the first place after the point, so it means 4 tenths.',
@@ -196,7 +196,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     correct: '24 square cm',
     wrong: [
       miss('20 square cm', 'That is the perimeter, the distance around the edge.', 'Area is length times width, not the sides added up.'),
-      miss('10 square cm', 'You added the length and width instead of multiplying.', 'Multiply 6 by 4 to find the area.'),
+      miss('10 square cm', 'Ten comes from 6 + 4, but rectangle area needs the full grid: 6 rows of 4.', 'Multiply 6 by 4 to find the area.'),
       miss('24 cm', '24 cm uses length units, but area needs square units because it covers a surface.', 'The answer needs square cm because it covers a flat space.'),
     ],
     lesson: 'Area is the amount of flat space inside a shape. For a rectangle, multiply the length by the width: 6 times 4 is 24. Area is measured in square units, so the answer is 24 square cm.',
@@ -484,7 +484,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'Which word in this sentence is a noun: The dog ran quickly?',
     correct: 'dog',
     wrong: [
-      miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),
+      miss('ran', 'Ran tells what the dog did, so it is the action word rather than the naming word.', 'A noun is a person, place, animal or thing.'),
       miss('quickly', 'Quickly tells how the dog ran, so it is an adverb.', 'Look for the word that names an animal or thing.'),
       miss('The', 'The is a small word called an article, not a noun.', 'Find the word that names something.'),
     ],
@@ -727,7 +727,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'Which word means almost the same as happy?',
     correct: 'glad',
     wrong: [
-      miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),
+      miss('sad', 'Sad is the opposite feeling from happy, so it is an antonym-style choice instead of a synonym.', 'A synonym means a word with a similar meaning.'),
       miss('angry', 'Angry is a cross feeling, not a happy one.', 'Look for a word that gives a good feeling like happy.'),
       miss('tired', 'Tired means needing rest, not feeling happy.', 'Find the word closest in meaning to happy.'),
     ],
@@ -744,7 +744,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     wrong: [
       miss('large', 'Large means the same as big, not the opposite.', 'An antonym is a word with the opposite meaning.'),
       miss('huge', 'Huge means very big, which is similar to big.', 'Look for a word that means the opposite of big.'),
-      miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Find the word that means not big.'),
+      miss('tall', 'Tall describes height, but this antonym question is asking for the opposite general size word.', 'Find the word that means not big.'),
     ],
     lesson: 'An antonym is a word that means the opposite. The opposite of big is small, so big and small are antonyms.',
     source,
