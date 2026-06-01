@@ -315,7 +315,7 @@ export const peopleManagementTopUpQuestions: Question[] = makeQuestionBank('Care
         'You have done G and R; what does the next letter stand for?',
       ),
       miss(
-        'Skip to Will and ask only "are you committed?"',
+        'Move directly to a commitment question before exploring possible actions',
         'Will/Way forward is the final step; committing before exploring Options yields a thin, unconsidered plan.',
         'Commitment lands better after options have been weighed.',
       ),
@@ -392,17 +392,17 @@ export const peopleManagementTopUpQuestions: Question[] = makeQuestionBank('Care
     correct: 'Whether expectations were ever clearly communicated — this looks like a clarity gap',
     wrong: [
       miss(
-        'Assume it is a motivation gap and discuss their commitment',
+        'Frame it as low commitment and start a performance-motivation conversation',
         'The person is motivated; treating clarity issues as attitude leads to an unfair, ineffective intervention.',
         'A motivated person doing it "wrong" may simply not know what right looks like.',
       ),
       miss(
-        'Assume it is a skill gap and enroll them in formatting training',
+        'Send them to formatting training before checking whether the expected format was explained',
         'Training a capable person who was never told the expected format wastes effort and misses the cause.',
         'Skill training does not fix never-communicated expectations.',
       ),
       miss(
-        'Assume it is a system gap and replace the reporting tool',
+        'Open a tooling-replacement project even though the current reporting tool works',
         'The tooling works fine, so a system fix targets the wrong cause.',
         'If the tool works, the breakdown is elsewhere.',
       ),

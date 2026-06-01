@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-01T06:02:11.541Z",
+  "generatedAt": "2026-06-01T06:03:14.769Z",
   "summary": {
     "filesScanned": 758,
     "questionsScanned": 57077,
     "extractedQuestionRecords": 57234,
     "skippedNonPlayablePlaceholders": 157,
     "distinctQuestionIds": 38866,
-    "totalIssues": 1437,
-    "jsonIssuesStored": 1437,
+    "totalIssues": 1433,
+    "jsonIssuesStored": 1433,
     "duplicateWhyWrongGroups": 249
   },
   "flagCounts": {
     "repeated-why-wrong": 1126,
     "obvious-irrelevant-distractor": 75,
-    "meta-distractor": 236
+    "meta-distractor": 232
   },
   "scannedFiles": [
     "src/data/questionCatalog/adultCoursesNew.ts",
@@ -28476,66 +28476,6 @@
       "chapter": "Difficult Conversations, Conflict, and Fair Process",
       "field": "distractor",
       "value": "Ignore it entirely, since strong employees never need feedback",
-      "detail": "Wrong answer is about answering strategy rather than content.",
-      "snippet": "miss(",
-      "extractor": "object"
-    },
-    {
-      "flag": "meta-distractor",
-      "label": "Meta distractor",
-      "priority": 66,
-      "file": "src/data/questionCatalog/peopleManagementTopUp.ts",
-      "line": 317,
-      "questionId": 7317010,
-      "title": "GROW sequence",
-      "chapter": "Feedback, Coaching, and Performance Diagnosis",
-      "field": "distractor",
-      "value": "Skip to Will and ask only \"are you committed?\"",
-      "detail": "Wrong answer is about answering strategy rather than content.",
-      "snippet": "miss(",
-      "extractor": "object"
-    },
-    {
-      "flag": "meta-distractor",
-      "label": "Meta distractor",
-      "priority": 66,
-      "file": "src/data/questionCatalog/peopleManagementTopUp.ts",
-      "line": 394,
-      "questionId": 7317013,
-      "title": "Clarity gap diagnosis",
-      "chapter": "Feedback, Coaching, and Performance Diagnosis",
-      "field": "distractor",
-      "value": "Assume it is a motivation gap and discuss their commitment",
-      "detail": "Wrong answer is about answering strategy rather than content.",
-      "snippet": "miss(",
-      "extractor": "object"
-    },
-    {
-      "flag": "meta-distractor",
-      "label": "Meta distractor",
-      "priority": 66,
-      "file": "src/data/questionCatalog/peopleManagementTopUp.ts",
-      "line": 399,
-      "questionId": 7317013,
-      "title": "Clarity gap diagnosis",
-      "chapter": "Feedback, Coaching, and Performance Diagnosis",
-      "field": "distractor",
-      "value": "Assume it is a skill gap and enroll them in formatting training",
-      "detail": "Wrong answer is about answering strategy rather than content.",
-      "snippet": "miss(",
-      "extractor": "object"
-    },
-    {
-      "flag": "meta-distractor",
-      "label": "Meta distractor",
-      "priority": 66,
-      "file": "src/data/questionCatalog/peopleManagementTopUp.ts",
-      "line": 404,
-      "questionId": 7317013,
-      "title": "Clarity gap diagnosis",
-      "chapter": "Feedback, Coaching, and Performance Diagnosis",
-      "field": "distractor",
-      "value": "Assume it is a system gap and replace the reporting tool",
       "detail": "Wrong answer is about answering strategy rather than content.",
       "snippet": "miss(",
       "extractor": "object"
