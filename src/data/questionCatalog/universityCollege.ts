@@ -53,7 +53,7 @@ function rewriteUniversityMathPrompt(question: Question): string {
   const prompt = question.prompt.trim()
   if (prompt.endsWith('?')) return question.prompt
   if (prompt.endsWith(':')) {
-    return `${prompt} Which answer correctly completes this math idea?`
+    return `${prompt} ___. Which option fits best?`
   }
   return `${prompt} What is the correct answer?`
 }
@@ -84,11 +84,18 @@ function normalizeApStatisticsChapter(question: Question): Question {
     case 'Exploratory Data Analysis':
     case 'Exploring Data':
     case 'Introduction to Data':
+    case 'Data and Variables':
     case 'Variables':
     case 'Summary Statistics':
     case 'Normal Distribution':
-    case 'Distributions':
       mappedChapter = 'Chapter 1: Exploring One-Variable Data'
+      break
+    case 'Distributions':
+      mappedChapter = context.includes('sampling distribution')
+        ? 'Chapter 5: Sampling Distributions'
+        : /\b(normal|z-score|standard deviation|percentile)\b/.test(context)
+          ? 'Chapter 1: Exploring One-Variable Data'
+        : 'Chapter 4: Probability and Random Variables'
       break
     case 'Unit 5: Exploring two-variable quantitative data':
       mappedChapter = 'Chapter 2: Exploring Two-Variable Data'
@@ -96,6 +103,8 @@ function normalizeApStatisticsChapter(question: Question): Question {
     case 'Unit 6: Collecting data':
     case 'Data and Study Design':
     case 'Data Basics and Study Design':
+    case 'Study Design':
+    case 'Sampling':
       mappedChapter = 'Chapter 3: Collecting Data'
       break
     case 'Unit 7: Probability':
@@ -111,6 +120,8 @@ function normalizeApStatisticsChapter(question: Question): Question {
       break
     case 'Unit 10: Inference for categorical data: Proportions':
     case 'Inference for Categorical Data':
+    case 'One Proportion':
+    case 'Two Proportions':
       mappedChapter = 'Chapter 6: Inference for Proportions'
       break
     case 'Unit 11: Inference for quantitative data: Means':
@@ -118,14 +129,29 @@ function normalizeApStatisticsChapter(question: Question): Question {
     case 'Inference for Numerical Data':
     case 'Paired Tests':
     case 'ANOVA':
+    case 'One Mean':
+    case 'Two Means':
       mappedChapter = 'Chapter 7: Inference for Means'
       break
     case 'Unit 12: Inference for categorical data: Chi-square':
     case 'Unit 13: Inference for quantitative data: slopes':
-    case 'Linear Regression':
+    case 'Categorical Inference':
     case 'Multiple and Logistic Regression':
     case 'Multiple Regression':
       mappedChapter = 'Chapter 8: Chi-Square and Inference for Regression'
+      break
+    case 'Linear Regression':
+    case 'Regression':
+      mappedChapter = /\b(correlation|residual|extrapolat|slope interpretation|predict)\b/.test(context)
+        ? 'Chapter 2: Exploring Two-Variable Data'
+        : /\b(p-value|hypothesis|test|inference|coefficient|standard error|logistic|multiple)\b/.test(context)
+        ? 'Chapter 8: Chi-Square and Inference for Regression'
+        : 'Chapter 2: Exploring Two-Variable Data'
+      break
+    case 'Inference Foundations':
+      mappedChapter = /\bstandard error|sampling variability|sampling distribution\b/.test(context)
+        ? 'Chapter 5: Sampling Distributions'
+        : 'Chapter 6: Inference for Proportions'
       break
     case 'Foundations of Inference':
     case 'Foundations for Inference':

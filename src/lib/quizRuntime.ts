@@ -110,14 +110,17 @@ function expandShortPrompt(question: Question, prompt: string) {
   const comparableTitle = comparableText(title)
 
   if (title && comparablePrompt === comparableTitle) {
-    return `In ${chapter}, ${title} is the concept being tested. Which answer best explains what it means or why it matters?`
+    return `You are checking the idea "${title}" in ${chapter}. Which option best explains what it means or why it matters?`
   }
 
-  const core = ensureTerminalPunctuation(prompt)
-  const prefix = title && !comparablePrompt.includes(comparableTitle)
-    ? `This ${chapter} question is about ${title}.`
-    : `This ${chapter} question asks you to use the relevant concept carefully.`
-  const expanded = `${prefix} ${core}`
+  const trimmed = prompt.trim()
+  const core = trimmed.endsWith(':')
+    ? `${trimmed} ___. Which option fits best?`
+    : ensureTerminalPunctuation(trimmed)
+  const suffix = title && !comparablePrompt.includes(comparableTitle)
+    ? `Use "${title}" as the clue while you test each answer.`
+    : 'Use the exact wording of the prompt while you test each answer.'
+  const expanded = `${core} ${suffix}`
 
   if (promptWordCount(expanded) >= MIN_LEARNER_PROMPT_WORDS) return expanded
   return `${expanded} Choose the option that best matches the exact facts and concept in the question.`
