@@ -1,6 +1,6 @@
 # Question Quality Dashboard
 
-Generated on 2026-06-01T13:39:03.737Z.
+Generated on 2026-06-01T13:41:37.253Z.
 
 Only questions reachable through the app course catalog builders are included.
 
