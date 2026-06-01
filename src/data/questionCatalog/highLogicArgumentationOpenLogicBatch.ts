@@ -2,6 +2,25 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/argument structure/i.test(chapter)) {
+    return `${title} is about finding the job each sentence is doing. The useful answer is "${correct}"; premises give reasons, while the conclusion is the claim those reasons are trying to establish.`
+  }
+  if (/validity|soundness|conditionals/i.test(chapter)) {
+    return `${title} is about deductive structure. The useful answer is "${correct}"; separate whether the pattern preserves truth from whether the premises are actually true, and test conditionals by looking for the one broken-promise case.`
+  }
+  if (/fallacies/i.test(chapter)) {
+    return `${title} is about a tempting but invalid if-then move. The useful answer is "${correct}"; name which side of the conditional was affirmed or denied, then compare the pattern with modus ponens or modus tollens.`
+  }
+  if (/quantifier|counterexample/i.test(chapter)) {
+    return `${title} is about how many cases a claim covers. The useful answer is "${correct}"; universal claims can fall to one targeted counterexample, while existential claims need at least one matching witness.`
+  }
+  if (/definitions/i.test(chapter)) {
+    return `${title} is about conditions. The useful answer is "${correct}"; a necessary condition is required for the result, while a sufficient condition is enough to guarantee it.`
+  }
+  return `${title} is an argumentation concept. The useful answer is "${correct}"; translate the sentence into plain language, then check the role, pattern, or counterexample it depends on.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +35,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: Open Logic Project raw collection, adapted into a high-school argumentation drill. This is an authored Floe-native item, not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from Open Logic Project coverage',
 })
 
