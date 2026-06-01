@@ -95,11 +95,66 @@ function wrongChoices(item) {
       seen.add(key)
       return true
     })
-    .map((choice) => [
-      choice,
-      'This option does not match the astronomy clue in the prompt.',
-      'Anchor the answer to Moon phases, planets, stars, spacecraft, or Solar System structure.',
-    ])
+    .map((choice, index) => {
+      const [flaw, reframe] = astronomyFeedback(item, choice, index)
+      return [choice, flaw, reframe]
+    })
+}
+
+function shortChoice(choice) {
+  const text = normalizeText(choice)
+  return text.length > 64 ? `${text.slice(0, 61)}...` : text
+}
+
+function astronomyFeedback(item, choice, index) {
+  const context = `${item.prompt_text} ${item.correct_answer}`.toLowerCase()
+  const label = shortChoice(choice)
+
+  if (/\bmoon\b|lunar|phase|tide/.test(context)) {
+    const moves = [
+      'mixes up Moon-phase timing with a different cycle or viewing pattern',
+      'uses a nearby lunar fact but not the motion or surface clue being tested',
+      'answers as if the Moon were changing randomly rather than following a repeatable orbit pattern',
+    ]
+    return [`${label} ${moves[index % moves.length]}.`, 'Anchor lunar questions to orbit, phase, surface, or tide clues.']
+  }
+  if (/star|constellation|sirius|pleiades|castor|pollux|polaris|betelgeuse|proxima|aldebaran/.test(context)) {
+    const moves = [
+      'names a real sky object, but not the star or constellation clue in the prompt',
+      'confuses a famous star, constellation, or nearby object with the one being described',
+      'matches the general night-sky category but misses the specific identifier',
+    ]
+    return [`${label} ${moves[index % moves.length]}.`, 'Check whether the clue is asking for a star, constellation, distance, or nickname.']
+  }
+  if (/spacecraft|telescope|gagarin|laika|hubble|probe|apollo|mission|astronaut/.test(context)) {
+    const moves = [
+      'belongs to spaceflight history, but not the mission, person, or instrument in the clue',
+      'confuses a spacecraft/astronaut fact with a different milestone',
+      'sounds space-related but does not match the event named in the prompt',
+    ]
+    return [`${label} ${moves[index % moves.length]}.`, 'Pin the answer to the named mission, person, telescope, or milestone.']
+  }
+  if (/mars|venus|jupiter|mercury|saturn|uranus|neptune|pluto|planet|solar system|orbit|sun|astronomical unit/.test(context)) {
+    const moves = [
+      'is a Solar System fact, but about the wrong planet, orbit, or scale',
+      'confuses a planet feature with a neighboring planet or another body',
+      'uses a plausible-sounding Solar System number or name but not the one asked for',
+    ]
+    return [`${label} ${moves[index % moves.length]}.`, 'Match the clue to the exact planet, orbit, distance, or Solar System structure.']
+  }
+  if (/kepler|copernicus|heliocentrism|asteroid|astronomy/.test(context)) {
+    const moves = [
+      'points at a real astronomy idea but not the historical concept in the clue',
+      'mixes up discovery history with a different astronomer or model',
+      'answers the broad topic while missing the named astronomy principle',
+    ]
+    return [`${label} ${moves[index % moves.length]}.`, 'Separate the historical model, discovery, and named astronomer before choosing.']
+  }
+
+  return [
+    `${label} is astronomy-adjacent, but it does not fit the specific object, motion, scale, or discovery in the prompt.`,
+    'Anchor the answer to Moon phases, planets, stars, spacecraft, or Solar System structure.',
+  ]
 }
 
 function chapterForItem(item) {
@@ -136,7 +191,7 @@ function buildOutput(items) {
     lines.push(`    prompt: ${JSON.stringify(normalizeText(item.prompt_text))},`)
     lines.push(`    correct: ${JSON.stringify(correct)},`)
     lines.push(`    wrong: ${JSON.stringify(wrong)},`)
-    lines.push(`    lesson: ${JSON.stringify(`Source: OpenTriviaQA (${item.source_id}). Included in the reviewed Cosmology and Astronomy extension micro-batch.`)},`)
+    lines.push(`    lesson: ${JSON.stringify(`Use the clue to identify the exact astronomy object, scale, motion, mission, or discovery being tested. Nearby space words can sound right while pointing to a different part of the sky.`)},`)
     lines.push('  },')
   })
 
