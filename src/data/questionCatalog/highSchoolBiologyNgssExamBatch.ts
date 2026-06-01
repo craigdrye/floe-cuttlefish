@@ -2,6 +2,25 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/cells|molecular/i.test(chapter)) {
+    return `${title} is about what cell parts and molecules do. The useful answer is "${correct}"; connect the structure or molecule to its job in reactions, information flow, or protein production.`
+  }
+  if (/division|genetics|mutations/i.test(chapter)) {
+    return `${title} is about how biological information is copied, reshuffled, or changed. The useful answer is "${correct}"; ask whether the process preserves cells, makes gametes, changes DNA, or changes a protein.`
+  }
+  if (/evolution/i.test(chapter)) {
+    return `${title} is about evidence for relatedness over time. The useful answer is "${correct}"; compare inherited structures and patterns rather than assuming identical lifestyle or lifetime-acquired traits.`
+  }
+  if (/ecology|populations/i.test(chapter)) {
+    return `${title} is about systems and limits. The useful answer is "${correct}"; track energy, resources, population size, and what the environment can support over time.`
+  }
+  if (/homeostasis/i.test(chapter)) {
+    return `${title} is about keeping internal conditions stable. The useful answer is "${correct}"; negative feedback pushes a changed condition back toward a set point.`
+  }
+  return `${title} is a biology concept. The useful answer is "${correct}"; connect the process to the level of life being tested: molecule, cell, organism, population, or ecosystem.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +35,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: STAAR Biology, NYSED Living Environment, OpenStax Biology, and OER biology collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from STAAR/NYSED/OpenStax/OER high-school biology coverage',
 })
 
@@ -69,7 +87,7 @@ export const highSchoolBiologyNgssExamBatchQuestions = makeQuestionBank('Science
     miss('Turns DNA into a carbohydrate', 'Mutations change DNA sequence, not molecule class.', 'Stay with genetic information.'),
   ]),
   q(442010, 'Populations', 'Carrying capacity', 'What does carrying capacity describe?', 'The largest population size an environment can support over time', [
-    miss('The speed of one animal running', 'That is individual movement, not population ecology.', 'Think population size and resources.'),
+    miss('The fastest speed an individual in the population can move', 'Individual speed is an organism-level trait, while carrying capacity describes a population limit set by resources.', 'Think population size and resources.'),
     miss('The number of chromosomes in a cell', 'That is genetics, not carrying capacity.', 'Use the ecology context.'),
     miss('The exact number of offspring every organism has', 'Reproduction rates vary and do not define carrying capacity.', 'Focus on environmental limits.'),
   ]),
