@@ -461,7 +461,7 @@ export const hfCh1Questions: Question[] = [
     'With a soft hurdle, once the fund clears 5%, performance fee is owed on the full return (20% of 8% = 1.6%) — the hurdle is just a hurdle to crossing, not to the fee base; with a hard hurdle, performance fee would only be owed on returns above 5% (20% of 3% = 0.6%)',
     [
       ['Soft and hard hurdles produce the same fee at the same return level', 'They produce the same fee only when the fund returns below the hurdle (zero fee in both cases) or far above it. At a return modestly above the hurdle, the fee differs significantly — that is the whole point of distinguishing them.'],
-      ['Hurdle rates are illegal under Investment Advisers Act and rarely appear in HF documents', 'Hurdle rates are perfectly legal and appear in many institutional-share-class hedge fund offerings, particularly those marketed to pensions and endowments. They are uncommon in the standard offering but not illegal.'],
+      ['Hurdle rates are prohibited in hedge-fund documents because they reduce GP fees', 'Hurdle rates are permitted and appear in many institutional-share-class hedge fund offerings, particularly those marketed to pensions and endowments. They are uncommon in the standard offering but not prohibited.'],
       ['Hurdle rate means the fund cannot charge management fee unless it clears 5%', 'Hurdle rates apply to the performance fee only, not the management fee. Management fee is paid regardless of performance under standard 2-and-20 terms.'],
     ],
     'Soft vs hard hurdle is a fee-economics question. Soft means: clear the hurdle, then charge on everything. Hard means: charge only on the excess above the hurdle. The difference is meaningful at returns near the hurdle level and is one of the items LPs negotiate during onboarding.'),
@@ -492,7 +492,7 @@ export const hfCh1Questions: Question[] = [
     [
       ['Investor-level and fund-level gates are the same mechanism described differently', 'They constrain different things — one caps per-LP exit, the other caps aggregate exit. Many funds have both because they protect against different liquidity scenarios.'],
       ['Gates are activated only during force majeure events', 'Some gate provisions are automatic on every redemption period (always active); others are GP-discretionary and only activated under stress. The offering memo specifies which — automatic gates are more common in less liquid strategies.'],
-      ['Gates are illegal in offshore master-feeder structures', 'Gates are standard in both onshore (Delaware LP) and offshore (Cayman) feeders. They are explicitly permitted under the relevant fund documentation across the major jurisdictions.'],
+      ['Gates cannot appear in offshore feeder documents because offshore funds must offer full liquidity', 'Gates are standard in both onshore (Delaware LP) and offshore (Cayman) feeders. They are explicitly permitted under the relevant fund documentation across the major jurisdictions.'],
     ],
     'Gates manage liquidity pressure on the fund. Investor-level limits one LP\'s exit speed; fund-level limits the aggregate. Both protect remaining LPs and the integrity of the portfolio. The exact thresholds, mechanics, and discretion all live in the offering memo and matter during stress events.'),
 
@@ -548,7 +548,7 @@ export const hfCh1Questions: Question[] = [
     [
       ['FoHFs are functionally identical to direct LPs once they invest', 'FoHFs have their own LPs and their own redemption pressure, which can translate into faster exits from the underlying funds. They are a less stable capital base, by structure.'],
       ['FoHFs pay full fees because they are professional buyers', 'FoHFs almost always negotiate fee discounts or rebates given the size and frequency of their checks across many funds. Full-fee FoHF allocations are unusual.'],
-      ['FoHFs are illegal in the US under the Investment Company Act', '40-Act fund-of-funds are regulated and common; private FoHFs under 3(c)(7) are also common. There is no general illegality of FoHF structures in the US.'],
+      ['FoHFs cannot operate in the US because the Investment Company Act bans fund-of-funds structures', '40-Act fund-of-funds are regulated and common; private FoHFs under 3(c)(7) are also common. There is no general ban on FoHF structures in the US.'],
     ],
     'FoHFs are a useful but less stable LP type. They underwrite faster than pensions and endowments, but their own LP base introduces redemption risk to the underlying fund. The GP balances the speed of FoHF capital with the duration risk of FoHF turnover.'),
 

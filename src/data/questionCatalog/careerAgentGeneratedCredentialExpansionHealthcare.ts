@@ -248,7 +248,7 @@ const medicalCodingRoadmap: QuestionSeed[] = [
     wrong: [
       ['Whether panels are always illegal to bill', 'Panels are valid when ordered and performed.', 'The issue is duplicate component reporting.'],
       ['Whether the patient fasted long enough to create extra codes', 'Fasting may be clinically relevant but does not unbundle panel components.', 'Look at panel composition and edits.'],
-      ['Whether the lab machine is newer than the clinic computer', 'Equipment age is not the panel coding rule.', 'Use CPT panel instructions and payer edits.'],
+      ['Whether the analyzer platform creates a separate billable component for each result', 'Analyzer configuration does not override panel coding rules or payer bundling edits.', 'Use CPT panel instructions and payer edits.'],
     ],
   },
   {
@@ -876,7 +876,7 @@ const healthcareComplianceRoadmap: QuestionSeed[] = [
     prompt: 'A clinic reviews a sample of claims quarterly and also watches daily claim-edit reports. How should compliance describe these activities?',
     correct: 'The sample review is auditing, while daily edit review is monitoring; both support compliance oversight',
     wrong: [
-      ['Only the daily report matters because samples are illegal', 'Sampling is a common audit method.', 'Use both periodic audits and ongoing monitoring.'],
+      ['Only the daily report matters because sampled audits are too limited to help', 'Sampling is a common audit method when the population is too large for full review.', 'Use both periodic audits and ongoing monitoring.'],
       ['Both are the same as employee discipline', 'Auditing and monitoring find issues; discipline may follow separate processes.', 'Keep control activities distinct.'],
       ['Neither activity helps compliance because revenue cycle owns claims', 'Revenue-cycle controls are part of compliance risk management.', 'Compliance should coordinate oversight.'],
     ],
@@ -1069,7 +1069,7 @@ const healthcareComplianceRoadmap: QuestionSeed[] = [
     correct: 'Preserve original records and provide complete, unaltered evidence through the investigation process',
     wrong: [
       ['Edit logs freely if the manager has good intentions', 'Altering evidence undermines the investigation.', 'Preserve originals.'],
-      ['Send only screenshots with missing timestamps', 'Incomplete evidence can hide key facts.', 'Maintain full traceability.'],
+      ['Send cropped exports that show the visible issue but omit timestamps', 'Incomplete evidence can hide key facts.', 'Maintain full traceability.'],
       ['Delete records older than one week automatically', 'Investigation records may be subject to retention needs.', 'Do not destroy relevant evidence.'],
     ],
   },
