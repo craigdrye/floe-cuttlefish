@@ -29,7 +29,7 @@ export const basicGeometryPrim103TopUpAQuestions: Question[] = makeQuestionBank(
     correct: 'Square',
     wrong: [
       miss('Rectangle', 'A rectangle has 4 corners, but its sides are not all the same length.', 'A square has all four sides equal.'),
-      miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'This shape has 4 equal sides.'),
+      miss('Triangle', 'A triangle stops after 3 sides, but this clue describes 4 straight sides and 4 square corners.', 'This shape has 4 equal sides.'),
       miss('Pentagon', 'Pentagon has five sides; check the side count before choosing the shape.', 'Count again: this shape has 4 sides.'),
     ],
     lesson: 'A square has 4 straight sides that are all the same length, and 4 square corners. It is a special kind of rectangle where every side matches.',
@@ -75,7 +75,7 @@ export const basicGeometryPrim103TopUpAQuestions: Question[] = makeQuestionBank(
     wrong: [
       miss('Pentagon', 'A pentagon has 5 sides, not 6.', 'Hexagon has 6 sides; "hex" means six.'),
       miss('Octagon', 'An octagon has 8 sides.', 'Count again: a honeycomb cell has 6 sides.'),
-      miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'A shape with 6 sides is a hexagon.'),
+      miss('Triangle', 'A triangle has only 3 sides, half as many as the 6-sided honeycomb shape in the clue.', 'A shape with 6 sides is a hexagon.'),
     ],
     lesson: 'A hexagon has 6 straight sides. The "hex" in hexagon means six. Bees make their honeycomb cells in this shape because hexagons fit together with no gaps.',
     source,
@@ -104,7 +104,7 @@ export const basicGeometryPrim103TopUpAQuestions: Question[] = makeQuestionBank(
     correct: 'Rectangle',
     wrong: [
       miss('Square', 'A square has all 4 sides the same length, but this one has long and short sides.', 'A rectangle has two long sides and two short sides.'),
-      miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'This shape has 4 sides.'),
+      miss('Triangle', 'A triangle has 3 corners, but the prompt says this shape has 4 corners with long and short sides.', 'This shape has 4 sides.'),
       miss('Circle', 'Circle is round with no corners; this clue needs a shape with straight sides.', 'You want a shape with 4 corners.'),
     ],
     lesson: 'A rectangle has 4 straight sides and 4 square corners. Two sides are long and two are short. A door and a book cover are usually rectangles.',
@@ -163,7 +163,7 @@ export const basicGeometryPrim103TopUpAQuestions: Question[] = makeQuestionBank(
     prompt: 'Which of these shapes has the most sides?',
     correct: 'Hexagon',
     wrong: [
-      miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'A hexagon has 6 sides, which is more.'),
+      miss('Triangle', 'A triangle has only 3 sides, so it is the smallest option here rather than the one with the most sides.', 'A hexagon has 6 sides, which is more.'),
       miss('Square', 'A square has 4 sides.', 'Compare: a hexagon has 6 sides.'),
       miss('Pentagon', 'A pentagon has 5 sides.', 'A hexagon has 6 sides, one more than a pentagon.'),
     ],

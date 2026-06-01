@@ -136,7 +136,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('Odd', '14 can be split into two equal groups, so it is even.', 'Even numbers end in 0, 2, 4, 6, or 8.'),
       miss('Both', 'A whole number is either even or odd, not both.', 'Check the last digit to decide.'),
-      miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Look at the ones digit: 4 is even.'),
+      miss('Neither', 'Every whole number is either even or odd; 14 ends in 4, which puts it in the even group.', 'Look at the ones digit: 4 is even.'),
     ],
     lesson: 'A number is even if you can split it into two equal groups with none left over. 14 ends in 4, and numbers ending in 0, 2, 4, 6, or 8 are even. So 14 is even.',
     source,
@@ -454,7 +454,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'What do we call a shape with 4 equal sides and 4 square corners?',
     correct: 'Square',
     wrong: [
-      miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'Count the sides of the shape described.'),
+      miss('Triangle', 'A triangle has 3 sides, but this clue says 4 equal sides and 4 square corners.', 'Count the sides of the shape described.'),
       miss('Circle', 'Circle is round with no corners; this clue needs a shape with straight sides.', 'This shape has 4 equal straight sides.'),
       miss('Rectangle', 'A rectangle has 4 corners, but its sides are not all equal.', 'A square has all 4 sides the same length.'),
     ],

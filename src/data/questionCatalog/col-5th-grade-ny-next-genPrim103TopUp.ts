@@ -106,7 +106,7 @@ export const col5thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     wrong: [
       miss('2/5', 'You added the tops and the bottoms instead of multiplying.', 'Multiply tops together and bottoms together.'),
       miss('1/5', 'You added the bottoms instead of multiplying them.', 'Multiply 2 x 3 for the new bottom.'),
-      miss('2/6', '2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.', 'Multiply the tops too: 1 x 1 = 1.'),
+      miss('2/6', 'This multiplies the denominators but adds the numerators; multiplication needs 1 x 1 on top and 2 x 3 on bottom.', 'Multiply the tops too: 1 x 1 = 1.'),
     ],
     lesson: 'To multiply two fractions, multiply the top numbers together and the bottom numbers together. So 1/2 x 1/3 = 1/6. Multiplying by a fraction makes a smaller piece.',
     source,
@@ -454,7 +454,7 @@ export const col5thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'A box is 2 units long, 3 units wide, and 4 units tall. What is its volume?',
     correct: '24 cubic units',
     wrong: [
-      miss('9 cubic units', 'You added the sides instead of multiplying them.', 'Volume is length times width times height.'),
+      miss('9 cubic units', 'This adds 2 + 3 + 4, but box volume counts all the unit cubes in a 3D array.', 'Volume is length times width times height.'),
       miss('14 cubic units', 'You multiplied two sides and added the third.', 'Multiply all three sides together.'),
       miss('20 cubic units', 'You multiplied two of the sides but not all three.', 'Use 2 x 3 x 4 for the volume.'),
     ],
@@ -499,7 +499,7 @@ export const col5thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'A shape is made of two boxes. One has a volume of 10 cubic units and the other has 6 cubic units. What is the total volume?',
     correct: '16 cubic units',
     wrong: [
-      miss('60 cubic units', 'You multiplied the volumes instead of adding them.', 'To combine two solids, add their volumes.'),
+      miss('60 cubic units', 'Multiplying 10 by 6 treats the two boxes like side lengths; they are already volumes that should be combined.', 'To combine two solids, add their volumes.'),
       miss('4 cubic units', '4 cubic units comes from taking away, but this question asks for the amounts together.', 'Putting two shapes together makes a bigger volume.'),
       miss('10 cubic units', 'You only counted one of the two boxes.', 'Add both volumes: 10 + 6.'),
     ],
@@ -682,7 +682,7 @@ export const col5thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'What does the word "fearless" mean?',
     correct: 'Without fear',
     wrong: [
-      miss('Full of fear', 'The suffix -less means without, not full of.', 'The suffix -less takes the fear away.'),
+      miss('Full of fear', 'That reverses the suffix: -ful would mean full of, but -less means without.', 'The suffix -less takes the fear away.'),
       miss('A little bit scared', 'Fearless means no fear at all, not a little.', 'Less here means without, so there is no fear.'),
       miss('To make someone afraid', 'Fearless describes a person, not an action.', 'Add the meaning of -less to the word fear.'),
     ],
@@ -727,7 +727,7 @@ export const col5thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which word is the opposite of "ancient"?',
     correct: 'Modern',
     wrong: [
-      miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),
+      miss('Old', 'Old is a near-synonym for ancient, so it points in the same direction instead of the opposite one.', 'An antonym is the opposite, so look for new.'),
       miss('Tall', 'Tall is about height, not about age.', 'Think about new versus old for ancient.'),
       miss('Heavy', 'Heavy is about weight, not age.', 'The opposite of very old is very new.'),
     ],

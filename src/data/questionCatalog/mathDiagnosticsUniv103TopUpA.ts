@@ -117,7 +117,7 @@ export const mathDiagnosticsUniv103TopUpAQuestions: Question[] = makeQuestionBan
     prompt: 'Factor x^2 + 7x + 12 completely.',
     correct: '(x + 3)(x + 4)',
     wrong: [
-      miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'You need two numbers with product 12 and sum 7.'),
+      miss('(x + 2)(x + 6)', 'The constant works because 2 x 6 = 12, but the middle term would be 8x instead of 7x.', 'You need two numbers with product 12 and sum 7.'),
       miss('(x - 3)(x - 4)', 'Negative factors give a positive constant but a negative middle term.', 'The middle term +7x requires positive factors.'),
       miss('(x + 1)(x + 12)', 'These multiply to 12 but sum to 13, not 7.', 'Check that the two numbers add to the middle coefficient.'),
     ],
