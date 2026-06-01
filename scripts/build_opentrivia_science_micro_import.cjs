@@ -89,6 +89,11 @@ function wrongChoices(item) {
     })
 }
 
+function shortChoice(choice) {
+  const text = normalizeText(choice)
+  return text.length > 64 ? `${text.slice(0, 61)}...` : text
+}
+
 function chapterForChemistry(prompt) {
   if (/symbol|periodic table|atomic number|noble gases|valence|protons|neutrons/i.test(prompt)) return 'Atoms and the Periodic Table'
   if (/acid|base|pH|indicator|NaOH|HCl/i.test(prompt)) return 'Acids and Bases'
@@ -99,6 +104,62 @@ function chapterForAstronomy(prompt) {
   if (/planet|solar system|moon|satellite|orbit|perihelion/i.test(prompt)) return 'Solar System'
   if (/star|binary|nebula|galaxy|brown dwarf|ecliptic|zodiac/i.test(prompt)) return 'Stars and Galaxies'
   return 'Astronomy Foundations'
+}
+
+function chemistryFeedback(item, choice, index) {
+  const context = `${item.prompt_text} ${item.correct_answer}`.toLowerCase()
+  const label = shortChoice(choice)
+  if (/symbol|periodic table|atomic number|noble gases|valence|protons|neutrons|element/.test(context)) {
+    const moves = [
+      'confuses the element symbol, atomic number, or periodic-table position being tested',
+      'names a real chemistry term, but not the element fact in this clue',
+      'uses a nearby periodic-table idea while missing the exact identifier',
+    ]
+    return [`${label} ${moves[index % moves.length]}.`, 'Use the element symbol, atomic number, group, or particle count named in the prompt.']
+  }
+  if (/acid|base|ph|indicator|naoh|hcl|litmus/.test(context)) {
+    const moves = [
+      'reverses the acid-base relationship or indicator behavior',
+      'sounds chemical, but it does not fit the pH or reaction clue',
+      'mixes up the substance with a different acid-base role',
+    ]
+    return [`${label} ${moves[index % moves.length]}.`, 'Anchor the choice to pH, acid/base behavior, or the named reagent.']
+  }
+  return [
+    `${label} is chemistry-related, but it does not match the formula, compound, element, or reaction clue being asked about.`,
+    'Use the periodic-table fact, formula, or reaction relationship directly.',
+  ]
+}
+
+function astronomyFeedback(item, choice, index) {
+  const context = `${item.prompt_text} ${item.correct_answer}`.toLowerCase()
+  const label = shortChoice(choice)
+  if (/planet|solar system|moon|satellite|orbit|perihelion|sun/.test(context)) {
+    const moves = [
+      'is a Solar System fact, but about the wrong planet, orbit, moon, or scale',
+      'confuses one planetary feature with a neighboring body or different orbital clue',
+      'uses a plausible Solar System term while missing the exact object being described',
+    ]
+    return [`${label} ${moves[index % moves.length]}.`, 'Match the clue to the exact planet, moon, orbit, or Solar System relationship.']
+  }
+  if (/star|binary|nebula|galaxy|brown dwarf|ecliptic|zodiac/.test(context)) {
+    const moves = [
+      'matches the broad sky category but not the star, galaxy, or celestial-structure clue',
+      'confuses a stellar object with a different type of space object',
+      'sounds astronomical, but not at the scale the question is asking about',
+    ]
+    return [`${label} ${moves[index % moves.length]}.`, 'Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation.']
+  }
+  return [
+    `${label} is space-related, but it does not fit the specific astronomy definition in the prompt.`,
+    'Anchor on the astronomical definition or Solar System relationship being described.',
+  ]
+}
+
+function feedbackForItem(item, choice, track, index) {
+  return track === 'apChemistry'
+    ? chemistryFeedback(item, choice, index)
+    : astronomyFeedback(item, choice, index)
 }
 
 function buildQuestion(item, id, track) {
@@ -113,8 +174,11 @@ function buildQuestion(item, id, track) {
     `    title: ${JSON.stringify(prompt.length <= 58 ? prompt : `OpenTrivia ${isChemistry ? 'Chemistry' : 'Astronomy'} ${id}`)},`,
     `    prompt: ${JSON.stringify(prompt)},`,
     `    correct: ${JSON.stringify(normalizeText(item.correct_answer))},`,
-    `    wrong: ${JSON.stringify(wrong.map((choice) => [choice, isChemistry ? 'This does not match the chemical symbol, formula, atomic structure, or acid-base relationship in the prompt.' : 'This does not match the planet, orbit, star, galaxy, or Solar System clue in the prompt.', isChemistry ? 'Use the periodic-table fact, formula, or reaction relationship directly.' : 'Anchor on the astronomical definition or Solar System relationship being described.']))},`,
-    `    lesson: ${JSON.stringify(`Source: OpenTriviaQA (${item.source_id}). Included in the reviewed science micro-batch for ${isChemistry ? 'AP Chemistry' : 'Cosmology and Astronomy'}.`)},`,
+    `    wrong: ${JSON.stringify(wrong.map((choice, wrongIndex) => {
+      const [flaw, reframe] = feedbackForItem(item, choice, track, wrongIndex)
+      return [choice, flaw, reframe]
+    }))},`,
+    `    lesson: ${JSON.stringify(isChemistry ? 'Use the chemistry clue to decide whether the question is about a symbol, formula, element property, or acid-base relationship. Nearby chemistry words can be tempting without matching the exact fact.' : 'Use the astronomy clue to decide whether the question is about a planet, orbit, star, galaxy, or Solar System relationship. Nearby space words can be tempting without matching the exact fact.')},`,
     "    source: 'OpenTriviaQA',",
     '  },',
   ].join('\n')
