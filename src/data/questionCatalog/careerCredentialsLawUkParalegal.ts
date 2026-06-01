@@ -350,7 +350,7 @@ export const sqe1Questions: Question[] = makeQuestionBank('Career Skills', [
     correct: 'Read the statute, so far as possible, in a way compatible with the Convention right',
     wrong: [
       miss('Strike down the statute as incompatible with the Convention', 'UK courts cannot strike down primary legislation under the HRA; section 4 allows a declaration of incompatibility.', 'No strike-down power.'),
-      miss('Ignore the Convention right and apply the natural meaning', 'Section 3 imposes an interpretive duty toward compatibility.', 'Interpretation must lean compatible where possible.'),
+      miss('Apply the ordinary meaning even though a compatible reading is available', 'Section 3 imposes an interpretive duty toward compatibility.', 'Interpretation must lean compatible where possible.'),
       miss('Refer the question to the European Court of Human Rights for a preliminary ruling', 'There is no preliminary reference procedure under the ECHR system equivalent to the EU one.', 'The HRA operates within domestic courts.'),
     ],
     lesson: 'Section 3 HRA 1998 requires courts to interpret legislation compatibly with Convention rights "so far as it is possible to do so", short of striking down.',
@@ -1866,7 +1866,7 @@ export const sqe2Questions: Question[] = makeQuestionBank('Career Skills', [
     wrong: [
       miss('Move to the next topic to maintain interview flow', 'Bypassing the recurring topic risks missing the actual concern.', 'The repetition is a signal.'),
       miss('Interrupt with a direct closed question about that topic', 'Active listening avoids interruption; pause and summarise instead.', 'Interruption is poor technique.'),
-      miss('Ignore the repetition as a sign of confusion', 'Repetition usually signals importance, not confusion.', 'Take repetition seriously.'),
+      miss('Treat the repetition as confusion and move on quickly', 'Repetition usually signals importance, not confusion.', 'Take repetition seriously.'),
     ],
     lesson: 'Active listening involves summarising back to confirm understanding, pausing to allow elaboration, and noticing what the client returns to. Repetition is typically a signal of unresolved concern. SRA interview station marking criteria explicitly reward active listening technique.',
     source,
@@ -1893,7 +1893,7 @@ export const sqe2Questions: Question[] = makeQuestionBank('Career Skills', [
     correct: 'Note the case as potentially distinguishable, identify the material difference, and assess persuasive force',
     wrong: [
       miss('Cite the case without acknowledging the factual difference', 'Failing to flag the difference produces unreliable advice.', 'Honesty in research.'),
-      miss('Ignore the case entirely because the facts are not identical', 'Distinguishing is part of legal reasoning; the case may still inform.', 'Don\'t ignore relevant authority.'),
+      miss('Treat the case as irrelevant because the facts are not identical', 'Distinguishing is part of legal reasoning; the case may still inform.', 'Don\'t ignore relevant authority.'),
       miss('Argue that the case must be overruled', 'Trainees do not call for overruling; analysis records distinctions.', 'Distinguishing, not overruling.'),
     ],
     lesson: 'Defensible research records both authorities on point and material distinctions. A case factually distinct may still persuade by analogy or expose limits of the controlling rule. The research note should make the distinction explicit, not paper over it.',

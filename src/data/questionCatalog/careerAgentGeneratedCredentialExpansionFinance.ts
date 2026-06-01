@@ -512,7 +512,7 @@ const series87Factories: QuestionFactory[] = [
       `A junior analyst wants to send a thematic report mentioning ${issuer} directly to clients before supervisory review because the market is moving. What is the strongest control response?`,
       'Follow the firm\'s required review and approval workflow before client dissemination',
       [
-        ['Skip review if the report is time sensitive', 'Time sensitivity is a reason for efficient review, not no review.'],
+        ['Treat market urgency as approval to send before review', 'Time sensitivity is a reason for efficient review, not no review.'],
         ['Send it from a personal email so the firm is not involved', 'Personal channels increase recordkeeping and supervision risk.'],
         ['Ask sales to approve the analysis instead of a supervisor', 'Sales interest does not substitute for required supervisory approval.'],
       ],
@@ -597,7 +597,7 @@ const series87Factories: QuestionFactory[] = [
       'Escalate promptly, correct the error through firm procedures, and preserve the record of what changed and why',
       [
         ['Quietly edit the online file with no record', 'Silent changes weaken the audit trail and may mislead readers.'],
-        ['Ignore the error if the recommendation label stays the same', 'A material calculation error deserves correction even if the rating does not change.'],
+        ['Treat the error as immaterial because the recommendation label stays the same', 'A material calculation error deserves correction even if the rating does not change.'],
         ['Ask sales to explain the fix only to clients who complain', 'Selective correction is not a fair dissemination process.'],
       ],
       'Research communications need recordkeeping and correction discipline. A defensible process shows the original issue, the correction, approval, and dissemination path.')
@@ -818,7 +818,7 @@ const cfaFactories: QuestionFactory[] = [
       'Circle the qualifier mentally and choose the action that fails the standard or process, not the action that sounds generally prudent',
       [
         ['A prudent-sounding action that does not fail the standard', 'Least appropriate reverses the task; a prudent action is likely a trap.'],
-        ['Ignore the word "least" because CFA questions avoid qualifiers', 'Level I questions commonly use qualifiers such as most appropriate or least appropriate.'],
+        ['Read the stem as asking for the most prudent action by default', 'Level I questions commonly use qualifiers such as most appropriate or least appropriate.'],
         ['A long compliance-heavy answer that ignores the qualifier', 'Length is not evidence; the qualifier and facts control.'],
       ],
       'Level I is as much reading discipline as memory. Qualifiers such as most likely, least likely, best, and least appropriate define the task.')

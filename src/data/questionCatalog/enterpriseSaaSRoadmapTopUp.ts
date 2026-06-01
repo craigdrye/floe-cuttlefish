@@ -96,7 +96,7 @@ export const enterpriseSaaSRoadmapTopUpQuestions: Question[] = makeQuestionBank(
     wrong: [
       miss('Accept it and write "improved experience" as the success metric', 'A vague, unmeasurable goal cannot be defended at renewal; "feels better" gives the buyer no evidence to justify continued spend.', 'Unmeasurable success cannot be proven later. Convert the feeling into a number the buyer will own.'),
       miss('Define the success criteria yourself based on typical customers', 'Seller-defined criteria the buyer never agreed to will be disowned at renewal; success criteria must be the buyer\'s, not the vendor\'s.', 'If the buyer did not set the bar, they will not honor it. Co-author measurable criteria with them.'),
-      miss('Skip success criteria and focus on closing quickly', 'Closing without agreed success criteria sets up an impossible-to-prove renewal and a customer success team with no target.', 'Skipping the target dooms the renewal conversation. Define what success means before signing.'),
+      miss('Treat the signed contract as success enough for now', 'Closing without agreed success criteria sets up an impossible-to-prove renewal and a customer success team with no target.', 'Skipping the target dooms the renewal conversation. Define what success means before signing.'),
     ],
     lesson: 'Vague success language ("feels better") gives no defensible basis for renewal. The seller should press for measurable criteria tied to a business outcome the buyer will own, so customer success has a target and the renewal has evidence. Criteria the buyer authors are the ones that hold.',
     source,
@@ -317,8 +317,8 @@ export const enterpriseSaaSRoadmapTopUpQuestions: Question[] = makeQuestionBank(
     correct: 'Start security and legal review in parallel as early as possible, since they are common gating steps that routinely run longer than expected',
     wrong: [
       miss('Wait until the commercial terms are fully signed, then begin security review', 'Sequencing security after signature stalls go-live and can reopen the deal if reviewers reject controls; these reviews must run alongside, not after, the deal.', 'Security after signing can unravel the deal. Run it in parallel so it is not the last surprise.'),
-      miss('Skip the questionnaire and assure the buyer the product is secure verbally', 'Enterprise security teams require evidence (reports, completed questionnaires), not assurances; a verbal claim does not clear their gate.', 'Verbal assurance does not pass a security gate. Reviewers need documented evidence.'),
-      miss('Assume legal redlines will be trivial and leave them to the last day', 'DPA and MSA redlines frequently surface negotiation on liability, data terms, and SLAs; assuming they are trivial is how deals slip past quarter-end.', 'Redlines are rarely trivial. Last-day legal is the classic reason a deal misses the quarter.'),
+      miss('Give the buyer verbal assurance that the product is secure', 'Enterprise security teams require evidence (reports, completed questionnaires), not assurances; a verbal claim does not clear their gate.', 'Verbal assurance does not pass a security gate. Reviewers need documented evidence.'),
+      miss('Treat legal redlines as routine paperwork to finish on the final day', 'DPA and MSA redlines frequently surface negotiation on liability, data terms, and SLAs; assuming they are trivial is how deals slip past quarter-end.', 'Redlines are rarely trivial. Last-day legal is the classic reason a deal misses the quarter.'),
     ],
     lesson: 'Security questionnaires and legal redlines (DPA, MSA, SLA) are standard enterprise gates that often take longer than expected and can block or even reopen a deal. The disciplined move is to start them early and in parallel with commercial negotiation, not defer them to the end of the cycle.',
     source,
