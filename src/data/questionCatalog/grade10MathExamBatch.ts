@@ -2,6 +2,25 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/quadratics|polynomials/i.test(chapter)) {
+    return `${title} is about reading structure from an expression. The useful answer is "${correct}"; use the discriminant, vertex form, substitution, or theorem instead of guessing from one number.`
+  }
+  if (/trigonometry/i.test(chapter)) {
+    return `${title} is about side ratios in a right triangle. The useful answer is "${correct}"; match sine, cosine, or tangent to the correct pair of opposite, adjacent, and hypotenuse sides.`
+  }
+  if (/circle/i.test(chapter)) {
+    return `${title} is about circle measures. The useful answer is "${correct}"; decide whether you need area, circumference, or a fraction of the full 360-degree circle.`
+  }
+  if (/coordinate/i.test(chapter)) {
+    return `${title} is about turning points into a calculation. The useful answer is "${correct}"; average coordinates for midpoint or compare rise over run for slope.`
+  }
+  if (/similarity/i.test(chapter)) {
+    return `${title} is about how measurements scale in similar figures. The useful answer is "${correct}"; lengths scale by the factor, areas by its square, and volumes by its cube.`
+  }
+  return `${title} is a Grade 10 math skill. The useful answer is "${correct}"; identify the geometry or algebra structure, then apply the matching rule.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +35,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: NYSED, STAAR, and OER Grade 10 algebra/geometry collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from NYSED/STAAR/OER Grade 10 math coverage',
 })
 

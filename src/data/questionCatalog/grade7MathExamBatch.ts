@@ -3,6 +3,25 @@ import type { Question } from './types'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/integer/i.test(chapter)) {
+    return `${title} is about direction and distance on the number line. The useful answer is "${correct}"; combine the magnitudes, then let the larger absolute value decide the sign.`
+  }
+  if (/proportional|percent|scale/i.test(chapter)) {
+    return `${title} is about comparing quantities multiplicatively. The useful answer is "${correct}"; find the per-one rate, percent part, or scale factor before calculating.`
+  }
+  if (/expressions|equations/i.test(chapter)) {
+    return `${title} is about using operations in the right order. The useful answer is "${correct}"; substitute or undo operations carefully until the variable is isolated.`
+  }
+  if (/angle|circles/i.test(chapter)) {
+    return `${title} is about matching the shape relationship to the right formula. The useful answer is "${correct}"; decide whether the question asks for a sum, distance around, or area.`
+  }
+  if (/probability|data/i.test(chapter)) {
+    return `${title} is about summarizing chance or a data set. The useful answer is "${correct}"; use favorable over total for probability, and order values before finding a median.`
+  }
+  return `${title} is a Grade 7 math skill. The useful answer is "${correct}"; identify the relationship first, then calculate.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -24,8 +43,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson: extra.lesson ??
-    'Coverage source: NYSED and STAAR Grade 7 math raw collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: extra.lesson ?? lessonFor(chapter, title, correct),
   solution: extra.solution,
   mentorHint: extra.mentorHint,
   alternatePrompts: extra.alternatePrompts,
