@@ -134,9 +134,9 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'What is 20 divided by 5?',
     correct: '4',
     wrong: [
-      miss('15', '15 takes away 5 once, but division asks how many equal groups fit in 20.', 'Ask how many 5s fit inside 20.'),
+      miss('15', 'Fifteen is 20 minus one group of 5, but division asks how many groups of 5 fit in 20.', 'Ask how many 5s fit inside 20.'),
       miss('5', 'This repeats the 5 instead of finding the answer.', 'Skip count by 5 until you reach 20 and count the steps.'),
-      miss('100', '100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.', 'Dividing makes the number smaller, not bigger.'),
+      miss('100', 'One hundred is 20 times 5, but this problem asks the reverse question: how many 5s make 20?', 'Dividing makes the number smaller, not bigger.'),
     ],
     lesson: 'Division asks how many equal groups fit. 20 divided by 5 asks how many 5s make 20. Count 5, 10, 15, 20, that is four steps. So the answer is 4.',
     source,
@@ -422,8 +422,8 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which word means almost the same as happy?',
     correct: 'Glad',
     wrong: [
-      miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),
-      miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Pick the word that has a close meaning to happy.'),
+      miss('Sad', 'Sad is the opposite feeling from happy, so it is not a word with a similar meaning.', 'A synonym means a word with a similar meaning.'),
+      miss('Tired', 'Tired can be a feeling, but it means needing rest rather than feeling cheerful.', 'Pick the word that has a close meaning to happy.'),
       miss('Angry', 'Angry is a different feeling from happy.', 'Look for a happy feeling word.'),
     ],
     lesson: 'Synonyms are words that mean almost the same thing. Glad and happy both describe a good, cheerful feeling, so they are synonyms.',
@@ -438,7 +438,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: 'End',
     wrong: [
       miss('Start', 'Start means the same as begin, not the opposite.', 'An antonym is a word that means the opposite.'),
-      miss('Open', 'Open does not undo begin; look for the word that means the action has finished.', 'Think about what happens at the finish.'),
+      miss('Open', 'Open is a different action, not the finish-word that reverses begin.', 'Think about what happens at the finish.'),
       miss('Run', 'Run is an action, not the opposite of begin.', 'Look for the word that means to finish.'),
     ],
     lesson: 'Antonyms are words with opposite meanings. Begin means to start something, and end means to finish it, so they are antonyms.',
@@ -498,7 +498,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which word in this sentence is a noun: The cat slept on the mat.',
     correct: 'cat',
     wrong: [
-      miss('slept', 'slept describes an action or state, so it is a verb rather than a noun.', 'A noun names a person, place, animal, or thing.'),
+      miss('slept', 'Slept tells what the cat did, so it is the verb instead of the naming word.', 'A noun names a person, place, animal, or thing.'),
       miss('on', 'On is a small word that shows position, not a noun.', 'Look for a person, place, or thing.'),
       miss('the', 'The is a little word that comes before a noun.', 'Find the word that names something.'),
     ],
@@ -528,7 +528,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which word describes the dog in this sentence: The fluffy dog ran fast.',
     correct: 'fluffy',
     wrong: [
-      miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),
+      miss('ran', 'Ran tells the dog\'s action, but the question asks for a describing word.', 'An adjective tells what something is like.'),
       miss('dog', 'Dog is the thing being described, a noun.', 'Find the word that tells about the dog.'),
       miss('fast', 'Fast tells how the dog ran, not what the dog is like.', 'Look for the word that describes the dog itself.'),
     ],
@@ -589,7 +589,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which mark belongs at the end of this sentence: What is your name',
     correct: 'A question mark',
     wrong: [
-      miss('A period', 'A period ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence is asking something.'),
+      miss('A period', 'A period would make it a telling sentence, but "What is your name" asks something.', 'This sentence is asking something.'),
       miss('A comma', 'A comma is a pause inside a sentence, not an ending.', 'Use a mark that shows a question.'),
       miss('No mark at all', 'Every sentence needs an end mark.', 'A question needs a question mark.'),
     ],
@@ -696,7 +696,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: 'less than',
     wrong: [
       miss('greater than', '256 is smaller than 265, so it is not greater.', 'Compare the tens digit: 5 tens versus 6 tens.'),
-      miss('equal to', 'equal to would mean both sides match, but these two numbers differ when you compare the digits.', 'Look closely, the tens digits are different.'),
+      miss('equal to', 'The hundreds match, but the tens digits differ: 5 tens is less than 6 tens.', 'Look closely, the tens digits are different.'),
       miss('cannot tell', 'You can compare them digit by digit.', 'Start from the hundreds, then the tens.'),
     ],
     lesson: 'To compare numbers, start with the biggest place. Both have 2 hundreds, but 256 has 5 tens and 265 has 6 tens. So 256 is less than 265.',

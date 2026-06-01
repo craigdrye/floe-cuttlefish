@@ -104,7 +104,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'What is 6,004 - 2,178?',
     correct: '3,826',
     wrong: [
-      miss('4,174', 'You subtracted the smaller digit from the larger in each column instead of borrowing.', 'When the top digit is smaller, you must borrow from the next place.'),
+      miss('4,174', 'That subtracts each column the easy-looking way, but 6,004 needs regrouping across the zeros before subtracting.', 'When the top digit is smaller, you must borrow from the next place.'),
       miss('3,936', 'A borrow across the zeros was not carried all the way.', 'You need to borrow across both zeros in 6,004.'),
       miss('3,816', 'A small slip happened in the tens place after borrowing.', 'Recheck the tens column after you regroup.'),
     ],
@@ -135,7 +135,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: '1,775',
     wrong: [
       miss('1,875', 'A borrow was missed in the hundreds place.', 'You need to borrow to subtract 7 hundreds from 5 hundreds.'),
-      miss('9,225', 'That adds the numbers instead of subtracting.', 'Empty seats means you take away the filled ones.'),
+      miss('9,225', 'That combines the capacity and filled seats, but empty seats are what remain after the filled seats are taken away.', 'Empty seats means you take away the filled ones.'),
       miss('2,225', 'The borrowing did not carry through the columns correctly.', 'Subtract carefully from right to left, regrouping as you go.'),
     ],
     lesson: 'Empty seats means subtract the filled seats from the total. 5,500 - 3,725 needs borrowing: the answer is 1,775. So 1,775 seats are empty.',
@@ -317,7 +317,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which fraction is equal to 1/2?',
     correct: '3/6',
     wrong: [
-      miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top number is exactly half of the bottom.'),
+      miss('2/3', 'Two thirds covers two of three equal parts, which is more than half rather than equal to it.', 'Check if the top number is exactly half of the bottom.'),
       miss('1/4', 'One fourth is less than one half.', 'In a fraction equal to 1/2, the top is half the bottom.'),
       miss('3/5', 'Three fifths is a little more than one half.', 'For one half, the numerator must be half the denominator.'),
     ],
@@ -469,7 +469,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: '$5.75',
     wrong: [
       miss('$5.30', 'The cents were added wrong; 25 cents plus 50 cents is 75 cents.', 'Add the cents carefully: 25 + 50.'),
-      miss('$2.75', 'That subtracts instead of adding.', 'In all means add the two prices together.'),
+      miss('$2.75', 'That looks like the price difference, but "in all" asks for the total cost of both items together.', 'In all means add the two prices together.'),
       miss('$6.75', 'The dollars were added wrong; 4 plus 1 is 5.', 'Add the whole dollars: 4 + 1 = 5.'),
     ],
     lesson: 'Line up the decimal points and add. Cents: 25 + 50 = 75. Dollars: 4 + 1 = 5. Put it together to get $5.75. Keeping the decimal points lined up keeps the dollars and cents in the right place.',
@@ -681,7 +681,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which word means almost the same as "happy"?',
     correct: 'joyful',
     wrong: [
-      miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),
+      miss('sad', 'Sad is the opposite mood from happy, so it is an antonym-style choice rather than a synonym.', 'A synonym means almost the same thing.'),
       miss('sleepy', 'Sleepy is about being tired, not happy.', 'Look for a word with a meaning close to happy.'),
       miss('hungry', 'Hungry is about wanting food, not feeling happy.', 'Pick a word that matches a happy feeling.'),
     ],
@@ -696,7 +696,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which word is the opposite of "ancient"?',
     correct: 'modern',
     wrong: [
-      miss('old', 'old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the opposite.'),
+      miss('old', 'Old is close to ancient in meaning, but an antonym must point to the opposite idea: new or current.', 'An antonym means the opposite.'),
       miss('huge', 'Huge is about size, not about age.', 'Look for a word that means new or recent.'),
       miss('dusty', 'Dusty describes dirt, not the opposite of old.', 'Pick a word that means the opposite of very old.'),
     ],
@@ -727,7 +727,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'In the sentence "The dog ran to the park," which word is a noun?',
     correct: 'park',
     wrong: [
-      miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),
+      miss('ran', 'Ran tells the action in the sentence; the noun is the word naming a place or thing.', 'A noun names a person, place, or thing.'),
       miss('to', 'To is a small connecting word, not a noun.', 'Look for a word that names a place or thing.'),
       miss('the', 'The is an article that comes before nouns but is not one.', 'Find the word that names something.'),
     ],
@@ -818,7 +818,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: 'fluffy',
     wrong: [
       miss('cat', 'Cat is a thing, which is a noun.', 'An adjective describes a noun.'),
-      miss('slept', 'slept describes an action or state, so it is a verb rather than a noun.', 'Look for the word that tells what the cat is like.'),
+      miss('slept', 'Slept tells what the cat did, while the adjective should describe what the cat is like.', 'Look for the word that tells what the cat is like.'),
       miss('bed', 'Bed is a thing, which is a noun.', 'Find the describing word, not the thing itself.'),
     ],
     lesson: 'An adjective is a word that describes a noun. Fluffy tells us what the cat is like, so fluffy is an adjective. Adjectives add detail to make writing clearer.',
