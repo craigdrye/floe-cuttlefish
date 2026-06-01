@@ -3,6 +3,25 @@ import type { Question } from './types'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/arguments|validity|soundness|metatheory/i.test(chapter)) {
+    return `${title} is about what follows from what. The useful answer is "${correct}"; separate the role of premises and conclusions from truth preservation, soundness, consistency, and possible counterexamples.`
+  }
+  if (/conditionals|connectives|truth tables/i.test(chapter)) {
+    return `${title} is a propositional-logic idea. The useful answer is "${correct}"; track the truth table row, connective rule, or equivalent formula rather than relying on ordinary-language vibes.`
+  }
+  if (/proof rules/i.test(chapter)) {
+    return `${title} is a proof-rule question. The useful answer is "${correct}"; match the available lines to the rule pattern before adding a new line to the proof.`
+  }
+  if (/first-order|identity/i.test(chapter)) {
+    return `${title} is a first-order-logic concept. The useful answer is "${correct}"; distinguish objects, predicates, quantifiers, identity, and the domain those variables range over.`
+  }
+  if (/sets|relations/i.test(chapter)) {
+    return `${title} connects logic with set and relation language. The useful answer is "${correct}"; check membership direction, pair reversal, or whether each input has exactly one output.`
+  }
+  return `${title} is a formal-logic concept. The useful answer is "${correct}"; translate the notation into plain language, then test the structure carefully.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -24,8 +43,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson: extra.lesson ??
-    'Coverage source: Open Logic Project raw collection. This is an authored Floe-native conversion item, not a direct proof-exercise import.',
+  lesson: extra.lesson ?? lessonFor(chapter, title, correct),
   solution: extra.solution,
   mentorHint: extra.mentorHint,
   alternatePrompts: extra.alternatePrompts,
@@ -52,12 +70,12 @@ export const formalLogicOpenLogicBatchQuestions = makeQuestionBank('University',
   q(455004, 'Validity and Soundness', 'Soundness test', 'A sound deductive argument must be:', 'Valid and have all true premises', [
     miss('Invalid but persuasive', 'Persuasion is not soundness.', 'Soundness includes validity.'),
     miss('Valid with at least one false premise', 'False premises block soundness.', 'Sound means valid plus true premises.'),
-    miss('Short enough to fit in a truth table', 'Length is irrelevant.', 'Check structure and premise truth.'),
+    miss('Short enough to look simple at a glance', 'A short argument can still be unsound; soundness needs valid structure plus true premises.', 'Check structure and premise truth.'),
   ]),
   q(455005, 'Validity and Soundness', 'Counterexample pattern', 'To show an argument is invalid, you need a possible case where:', 'The premises are true and the conclusion is false', [
     miss('The premises are false and the conclusion is true', 'False-premise rows do not refute validity.', 'Invalidity needs truth not preserved.'),
     miss('Every statement is false', 'That may not test the argument form.', 'Keep premises true and conclusion false.'),
-    miss('The conclusion is unpopular', 'Popularity is irrelevant.', 'Use a possible truth-value assignment or model.'),
+    miss('The conclusion is unpopular or surprising', 'Popularity does not test validity; the key is whether true premises can still lead to a false conclusion.', 'Use a possible truth-value assignment or model.'),
   ]),
   q(455006, 'Conditionals', 'Material conditional false row', 'In classical propositional logic, P -> Q is false exactly when:', 'P is true and Q is false', [
     miss('P is false and Q is false', 'A false antecedent makes the material conditional true.', 'Only true-to-false fails.'),
@@ -191,6 +209,6 @@ export const formalLogicOpenLogicBatchQuestions = makeQuestionBank('University',
   q(455030, 'Metatheory', 'Consistency', 'A set of sentences is consistent when:', 'It is possible for all of them to be true together', [
     miss('At least one sentence in the set is false', 'That does not define consistency.', 'Consistency asks whether joint truth is possible.'),
     miss('The set contains a contradiction as a theorem', 'That would show inconsistency.', 'Contradictions block joint satisfaction.'),
-    miss('Every sentence uses the same predicate letter', 'Notation uniformity is irrelevant.', 'Use possible simultaneous truth.'),
+    miss('Every sentence uses the same predicate letter', 'Using the same symbol does not decide whether the sentences can all be true together.', 'Use possible simultaneous truth.'),
   ]),
 ])
