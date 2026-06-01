@@ -228,6 +228,18 @@ function isGuessTrack(track: { id: string }) {
   return track.id.startsWith('guess')
 }
 
+function guessShelfTitle(title: string) {
+  return title
+    .replace(/^Guess the Thing:\s*/i, '')
+    .replace(/^Guess the Thing$/i, 'Mixed Mystery Box')
+    .replace(/^Guess the\s+/i, '')
+}
+
+function guessShelfSubtitle(track: { title: string; questionCount?: number }) {
+  const count = track.questionCount ? `${track.questionCount} quick reveals` : 'Quick reveals'
+  return `${count}. Open one picture, make the call, then unwrap another.`
+}
+
 function courseTierFromAdultFocus(focus: AdultFocusOption[]): CourseDepthCategory {
   if (focus.includes('Interview Prep')) return 'interview'
   if (focus.includes('Technical Qualifications')) return 'qualifications'
@@ -698,7 +710,7 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
           </h1>
           <p className="menu-hero-subtitle">
             {mode === 'games'
-              ? 'Quick guesses, arcade challenges, brain breaks.'
+              ? 'Mystery boxes, arcade challenges, brain breaks.'
               : 'Pick a track and dive in.'}
           </p>
         </div>
@@ -710,7 +722,7 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
             <p className="eyebrow">{mode === 'games' ? 'Pick a game' : 'Choose your track'}</p>
             <h2>
               {mode === 'games'
-                ? 'What kind of distraction?'
+                ? 'What are we opening?'
                 : selectedDiscipline === 'For you' && !professionalCourseNav
                   ? 'Picked from your interests'
                   : 'What are we training for?'}
@@ -853,11 +865,11 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
                 <span className="track-icon"><Sparkles size={28} /></span>
                 <span className="track-status">Mystery box</span>
                 <strong>Surprise mystery</strong>
-                <span>Let Floe grab a random visual clue from this shelf.</span>
+                <span>Let Floe grab a random wrapped clue from the whole shelf.</span>
                 <div className="track-meta">
                   <span className="skill-tags">
-                    <small>Quick guess</small>
-                    <small>Random pick</small>
+                    <small>One tap reveal</small>
+                    <small>Lucky dip</small>
                   </span>
                   <span className="q-count-badge">
                     <Gift size={10} /> {playableGuessTracks.reduce((sum, track) => sum + (track.questionCount || 0), 0)} mysteries
@@ -890,17 +902,22 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
                     }
                   }
                 }}
-              >
+                >
                 <span className="track-icon">{mode === 'games' ? <Gift size={26} /> : track.icon}</span>
                 <span className="track-status">{mode === 'games' ? 'Mystery box' : track.discipline}</span>
-                <strong>{track.title}</strong>
-                <span>{track.subtitle}</span>
+                <strong>{mode === 'games' ? guessShelfTitle(track.title) : track.title}</strong>
+                <span>{mode === 'games' ? guessShelfSubtitle(track) : track.subtitle}</span>
                 <div className="track-meta">
                   <span className="skill-tags">
                     {mode !== 'games' && inferTrackTopicIds(track).slice(0, 2).map((topicId) => (
                       <small key={`${track.id}-${topicId}`} className="topic-tag">{topicLabelForId(topicId)}</small>
                     ))}
-                    {track.skills.slice(0, mode === 'games' ? 2 : track.skills.length).map((skill) => (
+                    {mode === 'games' ? (
+                      <>
+                        <small>Open box</small>
+                        <small>Visual clue</small>
+                      </>
+                    ) : track.skills.map((skill) => (
                       <small key={`${track.id}-${skill}`}>{skill}</small>
                     ))}
                   </span>
