@@ -8,6 +8,25 @@ import {
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/historical thinking/i.test(chapter)) {
+    return `${title} is an AP History reasoning skill. The useful answer is "${correct}"; build an argument by connecting evidence to causation, comparison, context, continuity, or complexity rather than listing facts.`
+  }
+  if (/u\.s\. history/i.test(chapter)) {
+    return `${title} is a U.S. History concept. The useful answer is "${correct}"; place the event in its era and ask how power, economy, rights, institutions, or sectional conflict changed over time.`
+  }
+  if (/world history/i.test(chapter)) {
+    return `${title} is a World History pattern. The useful answer is "${correct}"; connect local events to broader networks of trade, empire, migration, ideology, technology, and resistance.`
+  }
+  if (/document skills/i.test(chapter)) {
+    return `${title} is a source-analysis skill. The useful answer is "${correct}"; read for author, audience, purpose, context, and bias, then explain how that perspective affects the document's usefulness.`
+  }
+  if (/exam skills/i.test(chapter)) {
+    return `${title} is an AP History writing move. The useful answer is "${correct}"; answer the prompt directly, choose evidence that fits the time period, and show how the evidence supports the line of reasoning.`
+  }
+  return `${title} is an AP History concept. The useful answer is "${correct}"; connect the fact to a larger argument about change, power, evidence, and historical context.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -22,8 +41,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: reviewed OpenTriviaQA history rows plus AP U.S./World History course skill gaps. This is an authored Floe-native drill item, not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from AP History coverage',
 })
 
@@ -44,7 +62,7 @@ const _baseApHistoryWorkoutGeneratedQuestions = makeQuestionBank('AP', [
   q(424014, 'U.S. History', 'Federalism', 'Federalism divides power between:', 'National and state governments', [miss('Only the president and courts', 'That is separation of powers, not federalism.', 'Levels of government.'), miss('Colonies and empires only', 'Federalism is a constitutional power structure.', 'National/state split.'), miss('Political parties only', 'Parties are not the core definition.', 'Government levels.')]),
   q(424015, 'U.S. History', 'Market Revolution', 'The Market Revolution changed the United States by expanding:', 'Commercial farming, wage labor, transportation, and market connections', [miss('A purely subsistence economy everywhere', 'The trend was toward market integration.', 'More exchange and transport.'), miss('A total rejection of factories', 'Early industrialization grew.', 'Markets and industry.'), miss('Isolation between regions', 'Transport linked regions more closely.', 'Canals, roads, railroads.')]),
   q(424016, 'U.S. History', 'Second Great Awakening', 'The Second Great Awakening helped inspire:', 'Reform movements such as abolition, temperance, and women’s rights', [miss('The end of all religious activity', 'It was a religious revival.', 'Revival and reform.'), miss('A ban on social reform', 'It energized reformers.', 'Moral improvement.'), miss('Only overseas imperial wars', 'Domestic reform was a major effect.', 'Reform movements.')]),
-  q(424017, 'U.S. History', 'Sectionalism', 'Antebellum sectional conflict was most deeply tied to:', 'Slavery, economic interests, and the expansion of power in new territories', [miss('Uniform agreement over slavery', 'Slavery divided sections sharply.', 'Expansion intensified the issue.'), miss('No regional economic differences', 'Regional economies differed.', 'North/South interests.'), miss('Only disagreement over sports', 'That is not historical causation here.', 'Slavery and territory.')]),
+  q(424017, 'U.S. History', 'Sectionalism', 'Antebellum sectional conflict was most deeply tied to:', 'Slavery, economic interests, and the expansion of power in new territories', [miss('Uniform agreement over slavery', 'Slavery divided sections sharply.', 'Expansion intensified the issue.'), miss('No regional economic differences', 'Regional economies differed.', 'North/South interests.'), miss('Only disagreement over tariffs, with slavery playing no central role', 'Tariffs mattered in some debates, but sectional conflict before the Civil War centered deeply on slavery and territorial expansion.', 'Slavery and territory.')]),
   q(424018, 'U.S. History', 'Reconstruction', 'A central conflict during Reconstruction was:', 'How to define freedom, citizenship, and federal protection after slavery', [miss('Whether the colonies should join Britain', 'Wrong era.', 'After the Civil War.'), miss('How to restart mercantilism', 'Reconstruction focused on postwar South and citizenship.', 'Freedom and rights.'), miss('Whether the Constitution existed', 'The issue was how to apply and amend it.', 'Citizenship and protection.')]),
   q(424019, 'U.S. History', 'Gilded Age', 'The Gilded Age was marked by:', 'Rapid industrial growth, inequality, immigration, and political corruption debates', [miss('The disappearance of corporations', 'Large corporations expanded.', 'Industrial capitalism.'), miss('No urban growth', 'Cities grew rapidly.', 'Industry and immigration.'), miss('A complete end to labor conflict', 'Labor conflict intensified.', 'Workers and capital.')]),
   q(424020, 'U.S. History', 'Progressivism', 'Progressive reformers generally sought to:', 'Use government and civic action to address problems of industrial society', [miss('Eliminate all public regulation', 'Progressives often favored regulation.', 'Reform through institutions.'), miss('Restore colonial monarchy', 'Wrong goal and era.', 'Modern reform.'), miss('Ignore urban poverty and corruption', 'Those were key targets.', 'Industrial-era problems.')]),
@@ -68,7 +86,7 @@ const _baseApHistoryWorkoutGeneratedQuestions = makeQuestionBank('AP', [
   q(424038, 'World History', 'Imperialism', 'Nineteenth-century imperialism was often justified by:', 'Nationalism, racism, economic interests, and claims of a civilizing mission', [miss('A full rejection of hierarchy and extraction', 'Imperialism relied on hierarchy and extraction.', 'Ideologies of empire.'), miss('Only mutual legal equality', 'Colonial rule was unequal.', 'Power imbalance.'), miss('No economic motive', 'Markets and resources mattered.', 'Economic interests.')]),
   q(424039, 'World History', 'World War I', 'Long-term causes of World War I included:', 'Militarism, alliances, imperial rivalries, and nationalism', [miss('Only one isolated assassination with no background', 'The assassination triggered war within deeper tensions.', 'Long-term causes.'), miss('The end of all alliances', 'Alliance systems mattered.', 'Entangling alliances.'), miss('No nationalism in Europe', 'Nationalism was a major force.', 'Competing nation-states.')]),
   q(424040, 'World History', 'Interwar Crisis', 'The interwar period saw:', 'Economic crisis, fragile democracies, fascism, and revisionist powers', [miss('Universal political stability', 'The period was unstable.', 'Depression and extremism.'), miss('No economic disruption', 'The Great Depression mattered globally.', 'Economic crisis.'), miss('The end of ideological conflict', 'Ideological conflict intensified.', 'Fascism, communism, liberalism.')]),
-  q(424041, 'World History', 'World War II', 'Appeasement before World War II refers to:', 'Concessions made to aggressive powers in hopes of avoiding war', [miss('A military strategy of immediate invasion', 'Appeasement meant concessions, not attack.', 'Munich is the classic example.'), miss('A postwar rebuilding plan', 'That is later.', 'Prewar diplomacy.'), miss('A decolonization movement', 'No.', 'Concession to aggressors.')]),
+  q(424041, 'World History', 'World War II', 'Appeasement before World War II refers to:', 'Concessions made to aggressive powers in hopes of avoiding war', [miss('A military strategy of immediate invasion', 'Appeasement meant concessions, not attack.', 'Munich is the classic example.'), miss('A postwar rebuilding plan', 'That is later.', 'Prewar diplomacy.'), miss('A decolonization movement', 'Decolonization is a postwar anti-imperial process, not the prewar policy of making concessions to aggressors.', 'Concession to aggressors.')]),
   q(424042, 'World History', 'Decolonization', 'Decolonization after World War II was encouraged by:', 'Nationalist movements, weakened empires, and changing global norms', [miss('European empires becoming permanently stronger everywhere', 'Many empires weakened after WWII.', 'Postwar anti-colonialism.'), miss('No local political movements', 'Nationalist movements were central.', 'Independence movements.'), miss('A universal rejection of sovereignty', 'New states sought sovereignty.', 'Self-determination.')]),
   q(424043, 'World History', 'Cold War World', 'Cold War conflicts in Asia, Africa, and Latin America often reflected:', 'Local struggles shaped by superpower rivalry', [miss('Only U.S.-Soviet events in Europe', 'The Cold War was global.', 'Proxy conflicts and local contexts.'), miss('No local agency', 'Local actors had their own goals.', 'Blend global and local causes.'), miss('Complete absence of ideology', 'Ideology mattered strongly.', 'Capitalism/communism and nationalism.')]),
   q(424044, 'World History', 'Globalization', 'Late twentieth-century globalization increased:', 'Cross-border flows of goods, capital, people, information, and culture', [miss('Total isolation of economies', 'Globalization increased interconnection.', 'Flows across borders.'), miss('No communication technology', 'Technology accelerated globalization.', 'Information flows.'), miss('Only local subsistence production', 'Global markets expanded.', 'Interdependence.')]),
