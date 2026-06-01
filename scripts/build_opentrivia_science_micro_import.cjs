@@ -94,6 +94,26 @@ function shortChoice(choice) {
   return text.length > 64 ? `${text.slice(0, 61)}...` : text
 }
 
+function stableIndex(seed, length) {
+  let hash = 0
+  for (const char of seed) hash = (hash * 31 + char.charCodeAt(0)) >>> 0
+  return hash % length
+}
+
+function variant(seed, options) {
+  return options[stableIndex(seed, options.length)]
+}
+
+function promptClue(item) {
+  const text = normalizeText(item.prompt_text)
+  const cleaned = text
+    .replace(/^what is the name of /i, '')
+    .replace(/^what is /i, '')
+    .replace(/^which /i, 'which ')
+    .replace(/[?.!]+$/g, '')
+  return cleaned.length > 74 ? `${cleaned.slice(0, 71)}...` : cleaned
+}
+
 function chapterForChemistry(prompt) {
   if (/symbol|periodic table|atomic number|noble gases|valence|protons|neutrons/i.test(prompt)) return 'Atoms and the Periodic Table'
   if (/acid|base|pH|indicator|NaOH|HCl/i.test(prompt)) return 'Acids and Bases'
@@ -109,24 +129,32 @@ function chapterForAstronomy(prompt) {
 function chemistryFeedback(item, choice, index) {
   const context = `${item.prompt_text} ${item.correct_answer}`.toLowerCase()
   const label = shortChoice(choice)
+  const clue = promptClue(item)
+  const seed = `${item.source_id}|${choice}|${index}`
   if (/symbol|periodic table|atomic number|noble gases|valence|protons|neutrons|element/.test(context)) {
-    const moves = [
-      'confuses the element symbol, atomic number, or periodic-table position being tested',
-      'names a real chemistry term, but not the element fact in this clue',
-      'uses a nearby periodic-table idea while missing the exact identifier',
-    ]
-    return [`${label} ${moves[index % moves.length]}.`, 'Use the element symbol, atomic number, group, or particle count named in the prompt.']
+    const flaw = variant(seed, [
+      `${label} is the wrong periodic-table identifier for this clue about ${clue}.`,
+      `${label} may look element-like, but it is not the symbol, number, or particle count asked for here.`,
+      `${label} drifts to a nearby chemistry fact instead of the exact periodic-table fact in the prompt.`,
+      `${label} treats the clue as a general element question, but the prompt needs the specific identifier for ${shortChoice(item.correct_answer)}.`,
+    ])
+    return [flaw, 'Use the element symbol, atomic number, group, or particle count named in the prompt.']
   }
   if (/acid|base|ph|indicator|naoh|hcl|litmus/.test(context)) {
-    const moves = [
-      'reverses the acid-base relationship or indicator behavior',
-      'sounds chemical, but it does not fit the pH or reaction clue',
-      'mixes up the substance with a different acid-base role',
-    ]
-    return [`${label} ${moves[index % moves.length]}.`, 'Anchor the choice to pH, acid/base behavior, or the named reagent.']
+    const flaw = variant(seed, [
+      `${label} reverses or blurs the acid-base relationship in this reaction clue.`,
+      `${label} sounds chemical, but it does not fit the pH, reagent, or indicator behavior being tested.`,
+      `${label} mixes up the products or roles in an acid-base situation.`,
+      `${label} points to a different kind of reaction than the one described by ${clue}.`,
+    ])
+    return [flaw, 'Anchor the choice to pH, acid/base behavior, or the named reagent.']
   }
   return [
-    `${label} is chemistry-related, but it does not match the formula, compound, element, or reaction clue being asked about.`,
+    variant(seed, [
+      `${label} is chemistry-related, but it does not match the formula, compound, element, or reaction clue here.`,
+      `${label} is a plausible chemistry word, but the prompt is asking for the specific answer tied to ${clue}.`,
+      `${label} belongs near the same subject area, but it answers a different chemistry question.`,
+    ]),
     'Use the periodic-table fact, formula, or reaction relationship directly.',
   ]
 }
@@ -134,24 +162,33 @@ function chemistryFeedback(item, choice, index) {
 function astronomyFeedback(item, choice, index) {
   const context = `${item.prompt_text} ${item.correct_answer}`.toLowerCase()
   const label = shortChoice(choice)
+  const clue = promptClue(item)
+  const seed = `${item.source_id}|${choice}|${index}`
   if (/planet|solar system|moon|satellite|orbit|perihelion|sun/.test(context)) {
-    const moves = [
-      'is a Solar System fact, but about the wrong planet, orbit, moon, or scale',
-      'confuses one planetary feature with a neighboring body or different orbital clue',
-      'uses a plausible Solar System term while missing the exact object being described',
-    ]
-    return [`${label} ${moves[index % moves.length]}.`, 'Match the clue to the exact planet, moon, orbit, or Solar System relationship.']
+    const flaw = variant(seed, [
+      `${label} is a Solar System answer, but this clue points to ${shortChoice(item.correct_answer)} instead.`,
+      `${label} confuses the planet, moon, orbit, or scale in this clue about ${clue}.`,
+      `${label} is plausible space vocabulary, but it misses the exact object described by ${clue}.`,
+      `${label} matches the neighborhood, not the specific Solar System relationship that points to ${shortChoice(item.correct_answer)}.`,
+      `${label} would fit a different planet clue; this one hinges on the detail in the prompt.`,
+    ])
+    return [flaw, 'Match the clue to the exact planet, moon, orbit, or Solar System relationship.']
   }
   if (/star|binary|nebula|galaxy|brown dwarf|ecliptic|zodiac/.test(context)) {
-    const moves = [
-      'matches the broad sky category but not the star, galaxy, or celestial-structure clue',
-      'confuses a stellar object with a different type of space object',
-      'sounds astronomical, but not at the scale the question is asking about',
-    ]
-    return [`${label} ${moves[index % moves.length]}.`, 'Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation.']
+    const flaw = variant(seed, [
+      `${label} matches the broad sky category, but not the star, galaxy, or celestial structure in this clue.`,
+      `${label} confuses one kind of astronomical object with another.`,
+      `${label} sounds astronomical, but it is not at the scale the question is asking about.`,
+      `${label} answers a nearby space question rather than the one cued by ${clue}.`,
+    ])
+    return [flaw, 'Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation.']
   }
   return [
-    `${label} is space-related, but it does not fit the specific astronomy definition in the prompt.`,
+    variant(seed, [
+      `${label} is space-related, but it does not fit the specific astronomy definition in the prompt.`,
+      `${label} is a nearby astronomy term, but the clue is asking for ${shortChoice(item.correct_answer)}.`,
+      `${label} belongs in the sky, but not in the relationship described by ${clue}.`,
+    ]),
     'Anchor on the astronomical definition or Solar System relationship being described.',
   ]
 }
