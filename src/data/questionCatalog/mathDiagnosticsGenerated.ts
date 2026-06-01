@@ -287,9 +287,9 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
     mentorHint: 'A calculator can evaluate what you typed, but it cannot know whether the setup was reasonable. Round the inputs mentally and estimate the order of magnitude so you can spot misplaced decimals or impossible values.',
     correct: 'Estimate the size of the answer mentally and compare',
     wrong: [
-      ['Assume the calculator result is always right', 'Input errors and formula errors still happen.', 'Estimate before accepting precision.'],
+      ['Accept the calculator display even if the typed expression may be wrong', 'Input errors and formula errors still happen.', 'Estimate before accepting precision.'],
       ['Round every number to zero', 'That can destroy the quantity entirely.', 'Approximation should preserve scale.'],
-      ['Ignore units and context', 'Units and context are part of the check.', 'A plausible number must also mean the right thing.'],
+      ['Report the number without its units or real-world meaning', 'Units and context are part of the check.', 'A plausible number must also mean the right thing.'],
     ],
     lesson: 'Coverage source: Numbas diagnostic clusters. Estimation helps detect impossible or mistyped answers.',
     source: 'Generated from Numbas coverage',

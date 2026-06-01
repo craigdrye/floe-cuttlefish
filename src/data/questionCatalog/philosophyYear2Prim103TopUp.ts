@@ -88,7 +88,7 @@ export const philosophyYear2Prim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'You see a child sitting alone with no one to play with. What is the kind thing to do?',
     correct: 'Ask them to join your game',
     wrong: [
-      miss('Ignore them and keep playing', 'Ignoring someone who is alone leaves them feeling sad.', 'Imagine how it feels to have no one to play with.'),
+      miss('Keep playing with the same group and leave them out', 'Ignoring someone who is alone leaves them feeling sad.', 'Imagine how it feels to have no one to play with.'),
       miss('Tell them to go away', 'Telling them to go away makes them feel worse.', 'Kindness means letting people in, not pushing them out.'),
       miss('Point and laugh', 'Laughing at someone who is lonely is unkind.', 'Think about how to make them feel welcome.'),
     ],

@@ -151,7 +151,7 @@ export const mathematics_extensionsHigh103TopUpAQuestions: Question[] = makeQues
     correct: 'Assume the statement holds for n = k, then prove it holds for n = k + 1',
     wrong: [
       miss('Verify the statement for n = 1 only', 'That is the base case, not the inductive step.', 'The inductive step links one case to the next, not the starting case.'),
-      miss('Assume the statement holds for all n, then check n = k', 'Assuming it for all n is circular; you assume only the single case n = k.', 'The hypothesis is for one specific k, not for every n at once.'),
+      miss('Claim the statement holds for all n, then check n = k', 'Assuming it for all n is circular; you assume only the single case n = k.', 'The hypothesis is for one specific k, not for every n at once.'),
       miss('Prove the statement directly for n = k + 1 without any assumption', 'Without using the n = k assumption it is not an inductive argument at all.', 'The whole point is to use the k-case to reach the (k+1)-case.'),
     ],
     lesson: 'Mathematical induction has two parts: a base case and an inductive step. In the inductive step you assume the statement is true for some n = k (the inductive hypothesis) and use that to prove it for n = k + 1. The chain of implications then covers all n from the base case onward.',

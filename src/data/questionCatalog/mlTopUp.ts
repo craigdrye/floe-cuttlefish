@@ -484,7 +484,7 @@ export const mlTopUpQuestions: Question[] = makeQuestionBank('Career Skills', [
     prompt: "You designed a 50/50 split but observe 52,000 in control and 48,000 in treatment. A chi-squared test says this imbalance is highly improbable by chance. What should you do?",
     correct: 'Treat it as a sample ratio mismatch (SRM): investigate the assignment/logging pipeline before trusting any result',
     wrong: [
-      miss('Ignore it, since a few percent imbalance is normal random variation', 'A statistically improbable split signals a bug, not normal variation, and can bias the whole result.', 'The chi-squared test already says this is not chance.'),
+      miss('Treat the imbalance as harmless variation because it is only a few percentage points', 'A statistically improbable split signals a bug, not normal variation, and can bias the whole result.', 'The chi-squared test already says this is not chance.'),
       miss('Reweight the groups to 50/50 and report the adjusted lift', 'Reweighting papers over an unknown bug; the missing/misassigned units may be systematically different.', 'You cannot reweight away an unknown selection bug.'),
       miss('Conclude the treatment caused users to drop out', 'Differential dropout is one possible cause, but you must diagnose the pipeline first, not assume causation.', 'Diagnose the cause before interpreting the imbalance.'),
     ],

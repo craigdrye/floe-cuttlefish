@@ -160,7 +160,7 @@ export const uxDesignR2Questions: Question[] = makeQuestionBank('Career Skills',
     correct: 'As a real design input to design around, e.g., with paging, skeleton loading, and clear status, rather than ignore',
     wrong: [
       miss(
-        'Ignore it and design infinite instant results, then demand engineering match the design',
+        'Design infinite instant results first and leave engineering feasibility for later',
         'Designing against a hard technical limit produces a spec that cannot ship and wastes the collaboration.',
         'Constraints are part of the problem; design the best experience within them, not against them.',
       ),

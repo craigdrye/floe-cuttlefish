@@ -358,7 +358,7 @@ export const pregnancyBasicsQuestions: Question[] = makeQuestionBank('Career Ski
     correct: 'Contact your provider for guidance, often the same day',
     wrong: [
       miss('Wait several days to see if it returns', 'Decreased movement can be an early sign of a problem; waiting days risks delay.', 'This is a prompt-contact situation, not a multi-day wait.'),
-      miss('Assume the baby is just sleeping and ignore it', 'Babies do rest, but a clear drop from the usual pattern still deserves a check.', 'A real change from the norm warrants a call, not assumptions.'),
+      miss('Decide it is probably just a quiet sleep cycle and wait all day', 'Babies do rest, but a clear drop from the usual pattern still deserves a check.', 'A real change from the norm warrants a call, not assumptions.'),
       miss('Take a long brisk run to wake the baby', 'Vigorous self-remedies are not the answer; the change should be professionally assessed.', 'Reach out for guidance rather than trying to fix it alone.'),
     ],
     lesson: 'Later in pregnancy, getting to know the baby\'s normal movement pattern matters. A clear, sustained decrease from that pattern should prompt you to contact your provider, often the same day, who may suggest monitoring. It is frequently nothing serious, but checking promptly is the safe choice — providers welcome these calls.',
@@ -588,7 +588,7 @@ export const pregnancyBasicsQuestions: Question[] = makeQuestionBank('Career Ski
     correct: 'Reach out to a provider; postpartum depression is common and treatable',
     wrong: [
       miss('Wait it out alone since "all parents struggle"', 'Persistent, intense symptoms beyond two weeks deserve professional support, not silent waiting.', 'This pattern warrants reaching out, not toughing it out alone.'),
-      miss('Assume it means they are a bad parent', 'Postpartum depression is a medical condition, not a character flaw or parenting failure.', 'It is an illness to treat, not a judgment on the parent.'),
+      miss('Treat it as a personal failure rather than a health condition', 'Postpartum depression is a medical condition, not a character flaw or parenting failure.', 'It is an illness to treat, not a judgment on the parent.'),
       miss('Stop seeing anyone until it passes', 'Isolation can worsen symptoms; connection and professional help are protective.', 'Reaching out helps; withdrawing tends to make things worse.'),
     ],
     lesson: 'Persistent sadness, anxiety, sleep problems, or feeling disconnected for more than two weeks postpartum can indicate postpartum depression or anxiety, which are common and treatable. Reaching out to an OB, midwife, or mental-health professional is the right move. If there are thoughts of self-harm or harming the baby, seek help immediately: in the US, call or text 988 (Suicide & Crisis Lifeline) or call emergency services.',

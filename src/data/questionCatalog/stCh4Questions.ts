@@ -519,7 +519,7 @@ export const stCh4Questions: Question[] = [
     'Reduce balance-sheet-intensive positions, favor cleared and netted exposures, and unwind low-RoRWA inventory even when it is profitable in absolute dollars',
     [
       ['Increase positions to spread the RWA cost over more revenue', 'Adding RWA-intensive positions makes the RoRWA problem worse, not better. The fix is denominator reduction, not numerator inflation.'],
-      ['Ignore RWA because regulators only care about VaR', 'RWA and leverage ratio are central Basel III constraints — equally binding as VaR for many desks. Ignoring them ignores how the desk is actually graded.'],
+      ['Track VaR only and treat RWA as a secondary reporting detail', 'RWA and leverage ratio are central Basel III constraints — equally binding as VaR for many desks. Ignoring them ignores how the desk is actually graded.'],
       ['Switch all positions into illiquid bespoke instruments', 'Illiquid bespoke instruments typically carry *higher* RWA, not lower. The move would worsen the problem.'],
     ],
     'Basel III turned balance sheet into a scarce internal resource. A desk with high gross P&L and high RWA can be less valuable to the firm than a smaller desk with lower capital intensity — which is why the trading floor talks about RoRWA, not just dollar P&L.'),

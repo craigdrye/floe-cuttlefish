@@ -750,7 +750,7 @@ export const physicianPracticeRoadmapR2Questions: Question[] = makeQuestionBank(
       'Match every scheduled/completed encounter against a captured charge daily, and work the exceptions, so no completed visit closes without a charge or a documented reason',
     wrong: [
       miss(
-        'Assume billing will notice any visit that was missed when revenue looks low',
+        'Rely on month-end revenue variance to reveal any missing visits',
         'Billing has no signal for a charge that was never entered; relying on someone noticing a low total is not a control and misses the leak.',
         'A missing charge is invisible to billing. You need an explicit visit-to-charge match, not a gut sense of low revenue.',
       ),
@@ -910,7 +910,7 @@ export const physicianPracticeRoadmapR2Questions: Question[] = makeQuestionBank(
         'A contractual underpayment is between the practice and payer, not the patient\'s to pay. Do not shift it to the patient.',
       ),
       miss(
-        'Ignore it because $30 is too small to bother pursuing',
+        'Write off the underpayment as immaterial because it is only $30',
         'Systematic small underpayments aggregate into large losses and signal a fee-schedule loading or adjudication error worth catching across all claims.',
         'Small underpayments repeat across thousands of claims. The pattern, not the single $30, is the real money.',
       ),

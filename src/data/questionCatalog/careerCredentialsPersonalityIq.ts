@@ -715,7 +715,7 @@ export const iqReasoningTestsQuestions: Question[] = makeQuestionBank('Career Sk
     prompt: "On Advanced Progressive Matrices (APM), the typical strategy when an item seems impossible is to:",
     correct: 'Assume multiple rules are operating simultaneously and identify them one at a time',
     wrong: [
-      miss('Skip the item — single-rule items dominate APM', "APM items routinely combine 2-3 rules — multi-rule is the norm at the difficult end, not the exception.", 'Multi-rule is standard at hard difficulty.'),
+      miss('Pass over the item because APM questions usually use only one rule', "APM items routinely combine 2-3 rules — multi-rule is the norm at the difficult end, not the exception.", 'Multi-rule is standard at hard difficulty.'),
       miss('Guess — abstract reasoning is mostly luck', 'Guessing without analysis sacrifices points; systematic rule decomposition still helps.', 'Decompose, do not guess.'),
       miss('Look only at the rows; ignore columns', 'Both rows and columns matter — each must satisfy the rule(s).', 'Use both.'),
     ],

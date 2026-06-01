@@ -599,7 +599,7 @@ export const stCh5Questions: Question[] = [
     'The pattern is a potential red flag for layering or structuring; AML policy requires the salesperson to escalate to the firm\'s AML/BSA officer, who evaluates whether a Suspicious Activity Report (SAR) should be filed with FinCEN — the salesperson must not tip off the client about the inquiry',
     [
       ['Ask the client directly to explain, then drop it if they answer', 'Asking the client risks tipping — a separate offense — and is not a substitute for AML escalation. Inquiry is the AML officer\'s job, not the desk\'s.'],
-      ['Ignore the pattern unless the wires exceed $10,000 each', 'The $10,000 currency transaction reporting threshold is a different regime (CTRs). SAR triggers are about suspicious patterns, not single-transaction size.'],
+      ['Treat the pattern as harmless unless each wire crosses the CTR threshold', 'The $10,000 currency transaction reporting threshold is a different regime (CTRs). SAR triggers are about suspicious patterns, not single-transaction size.'],
       ['File the SAR directly from the desk', 'SAR filing runs through the AML/BSA officer, not individual desk staff. The desk escalates; the firm files.'],
     ],
     'AML red flags get escalated, not investigated by sales. The AML/BSA officer decides on SAR filings; tipping the client is itself a violation. The desk\'s job is to spot and route, with documentation.'),

@@ -492,7 +492,7 @@ export const philosophyYear3Prim103TopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('Join in leaving them out too', 'Leaving someone out makes them feel sad and is unkind.', 'Think about how being left out feels.'),
       miss('Laugh at them with the others', 'Laughing at someone who is left out is hurtful.', 'Including people is kinder.'),
-      miss('Ignore it because it is not your problem', 'You can help even when it is not about you.', 'A small kind act can make a big difference.'),
+      miss('Leave the problem for someone else because it does not affect you directly', 'You can help even when it is not about you.', 'A small kind act can make a big difference.'),
     ],
     lesson: 'Being kind sometimes means including people who are left out. Inviting someone to join can turn a sad moment into a happy one. Standing up for others in a gentle way is a good thing to do.',
     source,

@@ -317,7 +317,7 @@ export const hfCh3Questions: Question[] = [
     'Steady-state DCF at $80 as the anchor, with a catalyst-weighted overlay: prob-weighted catalyst value added to steady state — the trade has both a base value and a separable event premium',
     [
       ['Build a single DCF that includes the catalyst at 100% probability since management is guiding to a win', 'Embedding the catalyst at 100% in the DCF makes the model un-disentanglable when the catalyst resolves. The point of separating them is to know what value comes from where.'],
-      ['Ignore the catalyst because DCFs should reflect steady-state assumptions only', 'Ignoring a defined catalyst event throws away the structure of the trade. A catalyst with a known date and known payoff is exactly what HFs are paid to model.'],
+      ['Keep the catalyst out of the model because DCFs should use only steady-state assumptions', 'Ignoring a defined catalyst event throws away the structure of the trade. A catalyst with a known date and known payoff is exactly what HFs are paid to model.'],
       ['Build separate bull and bear cases and let the scenario weights handle the catalyst', 'Scenario weights conflate catalyst outcomes with steady-state assumptions. Separating the catalyst overlay from the base DCF preserves the post-event decomposition.'],
     ],
     'Catalyst-driven setups need the steady-state value and the event premium kept separate. That structure makes it possible to size the catalyst exposure independently and to update cleanly after the event resolves — without rewriting the entire DCF.'),

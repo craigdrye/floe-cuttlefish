@@ -772,7 +772,7 @@ export const philYear9High103TopUpQuestions: Question[] = makeQuestionBank('High
     wrong: [
       miss('Always agree with the argument no matter what', 'Charity does not require agreement; it requires giving the argument a fair, strong interpretation before judging it.', 'You can still disagree after reading charitably.'),
       miss('Find the weakest possible version so it is easy to attack', 'Attacking the weakest version is the straw man fallacy, the opposite of charitable reading.', 'Charity means the strongest version, not the weakest.'),
-      miss('Ignore the argument if you do not like the conclusion', 'Charity asks you to engage with the argument fairly, not to dismiss it because of its conclusion.', 'It demands fair engagement, not avoidance.'),
+      miss('Reject the argument just because you dislike its conclusion', 'Charity asks you to engage with the argument fairly, not to dismiss it because of its conclusion.', 'It demands fair engagement, not avoidance.'),
     ],
     lesson: 'The principle of charity tells us to interpret an opponent\'s argument in its strongest and most plausible form before responding to it. This avoids the straw man fallacy, where you defeat a weak version no one actually holds. Engaging with the best version of a view leads to deeper and more honest debate.',
     source,

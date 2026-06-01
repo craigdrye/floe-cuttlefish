@@ -89,7 +89,7 @@ export const publicSpeakingTopUpQuestions: Question[] = makeQuestionBank('Career
     wrong: [
       miss('List all eight rapidly so none of your work goes unmentioned', 'Eight rushed reasons exceed what listeners can hold and retain; the rule of three exists because memory is limited.', 'Curate to three memorable reasons; mentioning everything is not the same as landing anything.'),
       miss('Pick exactly one reason and repeat it three times for emphasis', 'Repeating a single point three times is not the rule of three; it narrows your case and risks sounding thin.', 'Three is about distinct, complementary points, not one point said thrice.'),
-      miss('Choose the three reasons that are easiest to explain regardless of strength', 'Selecting for ease over strength can build your case on your weakest arguments.', 'Optimize for the three strongest and most distinct, not the three simplest.'),
+      miss('Use the three easiest reasons even if they are weaker than the others', 'Selecting for ease over strength can build your case on your weakest arguments.', 'Optimize for the three strongest and most distinct, not the three simplest.'),
     ],
     lesson: 'The rule of three reflects how audiences absorb and recall structured points. Developing three strong, distinct reasons lands better than a rushed list of eight; the surplus can wait for questions.',
     source,

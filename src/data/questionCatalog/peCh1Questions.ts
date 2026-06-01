@@ -367,7 +367,7 @@ export const peCh1Questions: Question[] = [
     'A model assumes entry at 12x EV/EBITDA and exit at 14x EV/EBITDA five years later. What is the right way to evaluate this assumption inside IC?',
     'Multiple expansion has to be justified by a specific business change — scale, recurring revenue, customer concentration improvement, or platform repositioning — not by "market multiples will be higher in 5 years"',
     [
-      ['Assume multiple expansion based on long-run upward trend in PE entry multiples', 'A trend-based assumption is exactly what IC will reject. Past expansion does not predict future expansion, and underwriting to "multiples keep going up" is the trap that broke many 2021–2022 vintage deals.'],
+      ['Model multiple expansion from the long-run upward trend in PE entry multiples', 'A trend-based assumption is exactly what IC will reject. Past expansion does not predict future expansion, and underwriting to "multiples keep going up" is the trap that broke many 2021–2022 vintage deals.'],
       ['Multiple expansion is a fund-level assumption and does not need deal-level justification', 'Every multiple expansion assumption has to be deal-justified. Fund-level handwaving is the surest way to get a deal sent back to the team.'],
       ['Multiple expansion is conservative because the model only assumes 2 turns', 'Conservatism is not a number — it depends on what justifies the move. Two turns without a business-change thesis is more aggressive than four turns with a clear scale-up story.'],
     ],
@@ -422,7 +422,7 @@ export const peCh1Questions: Question[] = [
     [
       ['Reject because below 60% is below the screen', 'A growth-driven working capital drag often normalizes as growth slows. The screen exists to catch structurally cash-poor businesses; growth-driven drag is a different story that deserves diligence rather than auto-rejection.'],
       ['Accept and assume conversion will improve to 70% in the model', 'Assuming improvement without evidence is exactly the kind of optimism IC rejects. The diligence has to confirm whether the working capital pattern actually normalizes.'],
-      ['Ignore the FCF conversion metric and rely on EBITDA growth instead', 'FCF conversion is what supports debt service in an LBO. Ignoring it misses the structural question of whether the business can actually carry the leverage the deal would require.'],
+      ['Rely on EBITDA growth alone and treat FCF conversion as secondary', 'FCF conversion is what supports debt service in an LBO. Ignoring it misses the structural question of whether the business can actually carry the leverage the deal would require.'],
     ],
     'FCF conversion is the deal\'s ability to fund debt service after working capital and capex. Failing the screen is a signal to dig, not a reason to walk — the diligence question is whether the conversion is structurally low or cyclically low. The answer drives the entire leverage assumption.'),
 

@@ -455,7 +455,7 @@ export const existentialismHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     wrong: [
       miss('Maximize my freedom by limiting everyone else’s', 'Beauvoir argues freedoms are bound together; suppressing others undermines genuine freedom.', 'Crushing others’ freedom is not true freedom for her.'),
       miss('Withdraw from others to avoid all obligations', 'Her ethics is relational; freedom is realized with others, not by isolation.', 'Freedom is achieved in relation, not retreat.'),
-      miss('Ignore others, since each person’s freedom is totally separate', 'Beauvoir stresses that freedoms are interdependent, not isolated.', 'Freedoms are linked, not sealed off from one another.'),
+      miss('Treat other people’s freedom as irrelevant to your own choices', 'Beauvoir stresses that freedoms are interdependent, not isolated.', 'Freedoms are linked, not sealed off from one another.'),
     ],
     lesson: 'For Beauvoir, freedom is not solitary. Because we live among others whose freedom conditions ours, an authentic ethics wills the freedom of others alongside one’s own. Oppression is wrong precisely because it denies others the open future their freedom requires — and in doing so impoverishes everyone’s freedom.',
     source,

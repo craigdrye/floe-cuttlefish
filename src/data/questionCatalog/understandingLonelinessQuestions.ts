@@ -569,7 +569,7 @@ export const understandingLonelinessQuestions: Question[] = makeQuestionBank('Ca
     wrong: [
       miss('Self-diagnose a condition from online quizzes and treat it alone', 'Online quizzes cannot diagnose, and self-treating can miss serious issues.', 'Ask whether a quiz or a trained professional should guide care.'),
       miss('Wait silently for several years to see if it lifts', 'Long silent waiting can deepen distress; seeking help earlier is wiser.', 'Recall whether waiting in silence tends to help or harm.'),
-      miss('Assume nothing can ever be done about it', 'Effective support exists; loneliness and related conditions are treatable.', 'Think about whether help is available or hopeless.'),
+      miss('Treat loneliness as a permanent fact that support cannot change', 'Effective support exists; loneliness and related conditions are treatable.', 'Think about whether help is available or hopeless.'),
     ],
     lesson: 'This course is education, not diagnosis or therapy. If loneliness is persistent and distressing, a good step is to talk with a primary-care doctor or a licensed mental-health professional, who can assess for depression or anxiety and point you to effective support.',
     source,
@@ -583,7 +583,7 @@ export const understandingLonelinessQuestions: Question[] = makeQuestionBank('Ca
     wrong: [
       miss('Keep it private and try to handle it entirely alone', 'Thoughts of self-harm are an emergency where reaching out can save a life.', 'Ask whether a crisis is a time to isolate or to reach out.'),
       miss('Wait for a routine appointment weeks from now', 'A crisis needs immediate support, not a distant appointment.', 'Recall that crises call for immediate, not delayed, help.'),
-      miss('Assume the feeling proves the situation is hopeless', 'Crisis feelings are intense but treatable; immediate help is available.', 'Think about whether intense feelings equal permanent truth.'),
+      miss('Treat the feeling as permanent truth instead of a crisis signal', 'Crisis feelings are intense but treatable; immediate help is available.', 'Think about whether intense feelings equal permanent truth.'),
     ],
     lesson: 'If you or someone you know has thoughts of suicide or self-harm, this is an emergency. In the US, call or text 988 to reach the Suicide & Crisis Lifeline (free, confidential, 24/7), contact a licensed professional, or call local emergency services. You deserve support, and help is available.',
     source,

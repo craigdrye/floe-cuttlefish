@@ -705,7 +705,7 @@ export const understandingDepressionQuestions: Question[] = makeQuestionBank('Ca
     wrong: [
       miss('Decide it will pass and tell no one', 'Persistent symptoms deserve attention; silence can prolong suffering.', 'Reaching out is healthier than waiting in silence.'),
       miss('Self-prescribe medication from a friend', 'Borrowing medication is unsafe; prescribing belongs to clinicians.', 'A professional, not a friend\'s pills, is the safe route.'),
-      miss('Assume nothing can help, so do nothing', 'Effective help exists; doing nothing can deepen the problem.', 'Treatment works for most; reaching out is worthwhile.'),
+      miss('Treat the hopeless feeling as proof that support would not work', 'Effective help exists; doing nothing can deepen the problem.', 'Treatment works for most; reaching out is worthwhile.'),
     ],
     lesson: 'If low mood or loss of interest has lasted for weeks and is affecting your life, a healthy first step is to talk with a doctor or mental-health professional. You do not need to wait for a crisis or have all the words ready. Reaching out early often makes recovery easier, and in an emergency, immediate support like 988 is available in the US.',
     source,

@@ -405,7 +405,7 @@ export const universityAgentGeneratedQuestionsByTrack: Record<string, Question[]
       'Our group surveyed 120 students about nap pods',
       [['It should be noted by everyone that a survey was conducted about nap pods', 'Adds more passive voice and filler ("it should be noted by everyone") instead of removing it.'],
        ['Nap pods were surveyed in a very significant manner by our group', 'Still passive, and "in a very significant manner" is vague intensifier filler.'],
-       ['We did, like, a super official nap-pod vibe check', 'Informal register; not appropriate for a college argument and provides no concrete detail.']],
+       ['We ran an informal nap-pod survey and people seemed positive', 'Informal register and vague evidence are not appropriate for a college argument; this provides no concrete method or finding.']],
       'Strong style typically uses active verbs, specific details, and fewer filler phrases.'),
     q(3105015, 'University', 'English Composition: Rebuttal', 'Acknowledging cost in a rebuttal',
       'Your essay argues that the university should add more evening classes. A classmate objects, "Evening classes cost money to staff." Which response is the best rebuttal?',

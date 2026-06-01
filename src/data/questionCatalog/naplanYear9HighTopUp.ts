@@ -180,8 +180,8 @@ export const naplanYear9HighTopUpQuestions: Question[] = makeQuestionBank('High'
     prompt: 'An article on transport includes a bar graph showing bus use rising each year. How should you read it alongside the text?',
     correct: 'Use the graph as evidence that supports or extends the written argument',
     wrong: [
-      miss('Ignore the graph because the words contain the real argument', 'In multimodal texts the graph carries information the words may only summarise.', 'Multimodal means text and image work together; do not skip the visual.'),
-      miss('Assume the graph contradicts the text unless told otherwise', 'A graph usually supports the surrounding argument; do not assume conflict.', 'Read the graph in context before deciding it disagrees.'),
+      miss('Treat the graph as decorative because the paragraph contains the main words', 'In multimodal texts the graph carries information the words may only summarise.', 'Multimodal means text and image work together; do not skip the visual.'),
+      miss('Start from the idea that the graph must contradict the text', 'A graph usually supports the surrounding argument; do not assume conflict.', 'Read the graph in context before deciding it disagrees.'),
       miss('Treat the graph as decoration with no information', 'A data graph carries evidence; it is not just visual filler.', 'A graph with numbers is data, not decoration.'),
     ],
     lesson: 'In multimodal texts, images and graphs carry meaning together with the words. A rising bar graph is evidence you can use to interpret or strengthen the argument. Treating visuals as decoration loses information the test rewards.',

@@ -488,7 +488,7 @@ export const peCh3Questions: Question[] = [
     'HR diligence finds that the top eight executives have change-of-control severance equal to 2x base plus bonus, with accelerated vesting on RSUs. What is the diligence response?',
     'Quantify the total stack as a debt-like item in the net debt bridge, pressure-test whether the change of control will trigger at closing, and decide whether to renegotiate retention packages with executives the sponsor wants to keep',
     [
-      ['Ignore — change-of-control packages are standard and not material', 'They are common but rarely immaterial. Eight executives at 2x base plus bonus plus accelerated equity is a real number that belongs in the bridge.'],
+      ['Treat the change-of-control package as immaterial because such packages are common', 'They are common but rarely immaterial. Eight executives at 2x base plus bonus plus accelerated equity is a real number that belongs in the bridge.'],
       ['Strike the change-of-control provisions before closing', 'Striking signed contracts unilaterally is not a remedy; renegotiation with the executives is. The diligence step is to size and plan, not to delete by fiat.'],
       ['Pay all severance at close to clear the deck', 'Severance pays out on qualifying terminations, not at close just for convenience. Paying anyway either insults the team you want to keep or rewards the team you want to lose.'],
     ],

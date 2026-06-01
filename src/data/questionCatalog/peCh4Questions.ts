@@ -143,7 +143,7 @@ export const peCh4Questions: Question[] = [
     [
       ['Reject the fund — operational firms should not have multiple expansion in the bridge', 'Operational firms can legitimately earn multiple expansion when they grow the business into a different comparable set. The LP should not refuse to engage with the question.'],
       ['Accept the marketing claim — exit multiples reflect operational quality so the two are the same', 'Exit multiples reflect the next buyer\'s appetite, which is a function of both the asset and the market. Treating them as identical hides the cycle risk.'],
-      ['Ignore the bridge and focus only on net IRR and DPI', 'Net IRR and DPI tell you what happened. The bridge tells you what is likely to repeat in fund IV. LPs underwriting the next fund need both.'],
+      ['Use only net IRR and DPI, without decomposing the return bridge', 'Net IRR and DPI tell you what happened. The bridge tells you what is likely to repeat in fund IV. LPs underwriting the next fund need both.'],
     ],
     'Multiple expansion in the bridge is not automatically bad, but a GP that cannot explain deal-by-deal what they did to earn the higher multiple is at risk of being a beta vehicle dressed as an alpha vehicle.'),
 
@@ -396,7 +396,7 @@ export const peCh4Questions: Question[] = [
     'Pressure-test each synergy line item with named owners, time-to-realization, and a discount for execution risk — and only include synergies in the bridge that pass an "is this in the operating plan with an owner" test',
     [
       ['Add the full $2M to year-1 EBITDA in the deal model', 'Synergies do not all land in year one. Typical realization curves are 30–50% in year one, 70–90% in year two, full in year three — and there is execution risk on each line.'],
-      ['Ignore cost synergies because they are too uncertain to model', 'Cost synergies are real and measurable in most add-ons. Ignoring them surrenders the multiple-arbitrage and integration thesis that justifies the deal.'],
+      ['Set cost synergies to zero because they are uncertain', 'Cost synergies are real and measurable in most add-ons. Ignoring them surrenders the multiple-arbitrage and integration thesis that justifies the deal.'],
       ['Use a 100% confidence assumption on all synergy categories', '100% confidence is unrealistic on any synergy item. Operating partners typically apply 70–90% confidence on procurement, 50–70% on real estate, less on revenue.'],
     ],
     'Cost synergies are real, but they show up over a 12–36-month curve with named-owner discipline. Diligence teams that load synergies into year one and into the bridge without an operating plan to back them are setting up the next IC for failure.'),

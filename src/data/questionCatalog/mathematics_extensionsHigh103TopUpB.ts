@@ -212,7 +212,7 @@ export const mathematics_extensionsHigh103TopUpBQuestions: Question[] = makeQues
     prompt: 'In proving by induction that 1 + 2 + ... + n = n(n+1)/2 for all positive integers n, what is the base case (n = 1)?',
     correct: 'LHS = 1 and RHS = 1(2)/2 = 1, so the statement holds for n = 1',
     wrong: [
-      miss('Assume true for n = k', 'This is the inductive hypothesis step, not the base case; the base case verifies the smallest value directly.', 'The base case checks a specific starting value, not an assumption.'),
+      miss('Use the n = k hypothesis as the starting check', 'This is the inductive hypothesis step, not the base case; the base case verifies the smallest value directly.', 'The base case checks a specific starting value, not an assumption.'),
       miss('LHS = 0 and RHS = 0', 'The statement is for positive integers starting at n = 1, not n = 0.', 'Start the base case at the smallest value in the claim.'),
       miss('Prove true for n = k + 1', 'This is the inductive step, which relies on the hypothesis; it is not the base case.', 'The base case comes before the inductive step.'),
     ],

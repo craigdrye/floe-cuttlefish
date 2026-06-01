@@ -618,7 +618,7 @@ export const publicSpeakingR2Questions: Question[] = makeQuestionBank('Career Sk
     prompt: 'A question is adjacent to your key message but not quite it. Using "answer-bridge-return," what is the correct sequence?',
     correct: 'Answer the question honestly, bridge to your relevant point, and return control to the room (next question or your message)',
     wrong: [
-      miss('Skip answering, bridge straight to your talking point, and keep going', 'Bridging without answering is the politician\'s dodge; the room notices you evaded, which costs credibility and is not the technique.', 'You must answer first. Skipping the answer is evasion, not answer-bridge-return.'),
+      miss('Bridge straight to your talking point without first answering the question', 'Bridging without answering is the politician\'s dodge; the room notices you evaded, which costs credibility and is not the technique.', 'You must answer first. Skipping the answer is evasion, not answer-bridge-return.'),
       miss('Answer at length, then answer again, never bridging or returning', 'Turning one question into an extended monologue ("the 20-minute lecture") eats the rest of Q&A and never hands control back.', 'Keep the answer concise and return control. A monologue defeats the structure.'),
       miss('Restate the question three times to be sure, then decline to answer', 'Repeated restatement plus a refusal reads as stalling and evasive; the technique requires actually answering before bridging.', 'Restate once if needed, then answer. Endless restating and declining is not answer-bridge-return.'),
     ],

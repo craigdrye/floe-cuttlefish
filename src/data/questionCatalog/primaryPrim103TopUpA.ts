@@ -753,7 +753,7 @@ export const primaryPrim103TopUpAQuestions: Question[] = makeQuestionBank('Prima
     wrong: [
       miss('Eat only sweets', 'Eating only sweets is bad for your teeth and body.', 'Healthy habits keep your body strong.'),
       miss('Never sleep', 'Your body needs sleep to rest and grow.', 'Think about a habit that keeps you clean and well.'),
-      miss('Skip drinking water', 'Your body needs water to stay healthy.', 'Pick the habit that keeps your teeth clean.'),
+      miss('Drink water instead of cleaning your teeth', 'Your body needs water, but it does not remove plaque from your teeth.', 'Pick the habit that keeps your teeth clean.'),
     ],
     lesson: 'Brushing your teeth every day keeps them clean and healthy. Other healthy habits include eating fruit and vegetables, drinking water, and getting plenty of sleep.',
     source,

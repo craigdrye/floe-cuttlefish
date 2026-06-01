@@ -673,7 +673,7 @@ export const understandingAnxietyQuestions: Question[] = makeQuestionBank('Caree
     prompt: 'Over several weeks you notice constant, hard-to-control worry that is hurting your sleep and work. The wisest response is to:',
     correct: 'Use coping skills and consider talking to a professional',
     wrong: [
-      miss('Assume it will pass and avoid thinking about it', 'Weeks of impairing worry is a sign to act, not ignore; avoidance tends to maintain anxiety.', 'Persistent, impairing worry is a cue to act, not wait it out by ignoring it.'),
+      miss('Wait it out by avoiding the worry whenever it appears', 'Weeks of impairing worry is a sign to act, not ignore; avoidance tends to maintain anxiety.', 'Persistent, impairing worry is a cue to act, not wait it out by ignoring it.'),
       miss('Self-diagnose with GAD and start treating yourself', 'Recognizing a pattern is useful, but diagnosis and treatment belong to a licensed professional.', 'Spotting a pattern is good; turning it into a self-diagnosis and self-treatment is not.'),
       miss('Push through with more caffeine and longer hours', 'Stimulants and overwork tend to worsen anxiety and sleep, deepening the problem.', 'Powering through with caffeine and longer hours usually makes anxiety and sleep worse.'),
     ],

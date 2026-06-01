@@ -657,7 +657,7 @@ export const philosophyIntroQuestions: Question[] = makeQuestionBank('Career Ski
     prompt: 'When philosophers ask "What is the meaning of life?", a careful first move is to:',
     correct: 'Clarify whether "meaning" refers to purpose, value, or significance',
     wrong: [
-      miss('Assume the question has one obvious answer everyone shares', 'Part of the philosophical task is noticing the question is ambiguous and contested, not settled.', 'Pause to define terms; the question is genuinely ambiguous.'),
+      miss('Treat the question as settled before hearing the competing arguments', 'Part of the philosophical task is noticing the question is ambiguous and contested, not settled.', 'Pause to define terms; the question is genuinely ambiguous.'),
       miss('Conclude immediately that life has no meaning', 'Jumping to nihilism skips the analysis; philosophy first asks what the question even means.', 'Do not leap to an answer before clarifying what is being asked.'),
       miss('Insist only a religion can address it', 'Secular philosophers (Aristotle, Mill, Camus) offer accounts too; the question is not religion’s alone.', 'Many secular thinkers engage it; it is not exclusively a religious question.'),
     ],

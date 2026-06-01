@@ -427,7 +427,7 @@ export const philosophyYear6Prim103TopUpQuestions: Question[] = makeQuestionBank
     correct: 'Listen carefully to both children before deciding',
     wrong: [
       miss('Punish the louder child straight away', 'Being loud does not mean someone is in the wrong.', 'Fairness means hearing both sides first.'),
-      miss('Believe whoever spoke first without checking', 'Speaking first does not make someone right.', 'A fair person gathers the full story before deciding.'),
+      miss('Trust the first story you hear without looking for evidence', 'Speaking first does not make someone right.', 'A fair person gathers the full story before deciding.'),
       miss('Punish both children without asking anything', 'Punishing without listening could be unfair to an innocent child.', 'Listen carefully before making a decision.'),
     ],
     lesson: 'Being fair often means listening to everyone involved before making a decision. Jumping to conclusions can punish the wrong person. Gathering the whole story first helps a decision be just.',

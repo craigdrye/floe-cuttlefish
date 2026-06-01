@@ -361,7 +361,7 @@ export const nationalSecurityPolicyRoadmapTopUpQuestions: Question[] = makeQuest
         'ACH downgrades confirming evidence; the diagnostic move is seeking evidence that would *rule out* rivals.',
       ),
       miss(
-        'Pick the hypothesis with the most pieces of supporting evidence',
+        'Favor the hypothesis with the largest pile of supporting evidence',
         'Counting supporting items rewards volume over diagnosticity; ACH selects the hypothesis with the fewest *inconsistencies*, not the most confirmations.',
         'Tally inconsistencies, not confirmations — the least-contradicted hypothesis wins under ACH.',
       ),

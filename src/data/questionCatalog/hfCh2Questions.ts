@@ -296,7 +296,7 @@ export const hfCh2Questions: Question[] = [
     [
       ['Three confirmations are enough to size up the position immediately', 'Three out of 20 is 15% — directionally interesting, statistically tiny, and easily explained by store-specific factors. Sizing on this would be premature.'],
       ['Channel checks are unreliable and should be discarded', 'Channel checks are unreliable in isolation but informative in aggregate. Discarding the method because of one shallow sample misreads the technique.'],
-      ['Ignore the three positive readings because 17 locations had inventory', 'The 17 locations with inventory are also data — but ignoring the three flags treats every observation symmetrically when the question is whether tail signals are pointing at a real trend.'],
+      ['Treat the three shortage reports as immaterial because most locations had inventory', 'The 17 locations with inventory are also data — but ignoring the three flags treats every observation symmetrically when the question is whether tail signals are pointing at a real trend.'],
     ],
     'Channel checks are a triangulation tool, not a verdict. Twenty calls is a starting sample; the answer it returns is "do more work" or "drop this thread," not "buy" or "sell." Treating shallow sampling as proof is one of the fastest ways an analyst learns the limits of the technique.'),
 

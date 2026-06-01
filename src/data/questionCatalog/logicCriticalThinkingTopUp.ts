@@ -120,7 +120,7 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
         'Being fair to an argument is not the same as accepting it.',
       ),
       miss(
-        'Assume they are arguing in bad faith and dismiss them',
+        'Treat their motives as enough reason to dismiss the argument',
         'Charity assumes the most reasonable reading available, not the worst possible motive.',
         'The principle is about generous interpretation, not suspicion.',
       ),

@@ -271,7 +271,7 @@ export const philosophyYear1Prim103TopUpQuestions: Question[] = makeQuestionBank
     correct: 'Invite the left-out child to join in',
     wrong: [
       miss('Tell them they cannot play', 'Telling them no leaves them feeling sad and alone.', 'A kind child helps everyone feel included.'),
-      miss('Ignore them and carry on', 'Ignoring the child leaves them out on their own.', 'Inviting them in is the kind thing to do.'),
+      miss('Continue the game as if they probably want to stay alone', 'Ignoring the child leaves them out on their own.', 'Inviting them in is the kind thing to do.'),
       miss('Laugh that they have no one to play with', 'Laughing at them makes them feel worse.', 'Think how you would feel if you were left out.'),
     ],
     lesson: 'When someone is left out, inviting them to join is a kind thing to do. Everyone likes to feel included. Making room for others shows real kindness.',
@@ -347,7 +347,7 @@ export const philosophyYear1Prim103TopUpQuestions: Question[] = makeQuestionBank
     correct: 'Wait calmly and stay patient',
     wrong: [
       miss('Cry and stamp your feet', 'Stamping and crying will not make the turn come faster.', 'Waiting calmly is the helpful way.'),
-      miss('Grab the toy away', 'Grabbing is not fair while it is still their turn.', 'Patience means waiting until it is your go.'),
+      miss('Take the toy from them before their turn is finished', 'Grabbing is not fair while it is still their turn.', 'Patience means waiting until it is your go.'),
       miss('Tell the other child to hurry up', 'Rushing them is not kind or fair.', 'Let them finish, then it will be your turn.'),
     ],
     lesson: 'Sometimes we have to wait for our turn, and being patient helps. Waiting calmly is fairer and kinder than crying or grabbing. Your turn will come soon if you wait nicely.',

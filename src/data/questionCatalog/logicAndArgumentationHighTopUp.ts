@@ -120,7 +120,7 @@ export const logicAndArgumentationHighTopUpQuestions: Question[] = makeQuestionB
     prompt: 'A classmate says, "We should ban phones in class." Applying the principle of charity, you should first:',
     correct: 'Interpret the claim in its strongest reasonable form before responding',
     wrong: [
-      miss('Assume they mean phones should be banned everywhere, forever', 'Stretching a claim to an extreme is the opposite of charity; it builds a straw man.', 'Charity means the strongest fair reading, not the silliest.'),
+      miss('Restate the claim as "phones should be banned everywhere, forever"', 'Stretching a claim to an extreme is the opposite of charity; it builds a straw man.', 'Charity means the strongest fair reading, not the silliest.'),
       miss('Point out that they probably use their own phone constantly', 'That attacks the person, not the argument, and ignores charitable interpretation.', 'Address the claim, not the speaker.'),
       miss('Agree immediately so the discussion stays friendly', 'Charity is about fair interpretation, not avoiding all disagreement.', 'You can interpret fairly and still disagree.'),
     ],

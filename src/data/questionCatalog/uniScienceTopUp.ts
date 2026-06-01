@@ -382,7 +382,7 @@ export const uniScienceTopUpQuestions: Question[] = makeQuestionBank('University
     wrong: [
       miss('Treat it as equivalent to a peer-reviewed journal article', 'A preprint has not passed external review, so it carries less warrant than a peer-reviewed paper, even if it is openly available and citable.', 'Open access is not the same as reviewed.'),
       miss('Dismiss it entirely, since preprints are never reliable', 'Many preprints are sound and later published unchanged; blanket dismissal is unwarranted. They simply require extra scrutiny.', 'Unreviewed is not the same as worthless.'),
-      miss('Assume it has been retracted if it is not yet in a journal', 'Not yet being in a journal usually means it is still in review or unsubmitted, not retracted. Retraction is a specific later action.', 'Not-yet-published is not the same as retracted.'),
+      miss('Treat the preprint as retracted merely because it is not yet in a journal', 'Not yet being in a journal usually means it is still in review or unsubmitted, not retracted. Retraction is a specific later action.', 'Not-yet-published is not the same as retracted.'),
     ],
     lesson: 'Preprints share results before peer review, speeding dissemination but carrying no external vetting. They can be valuable and are citable, but readers must apply their own critical scrutiny and remember the work may change substantially or be rejected in review.',
     source,
@@ -411,7 +411,7 @@ export const uniScienceTopUpQuestions: Question[] = makeQuestionBank('University
     correct: 'Scrutinise the design and analysis more carefully for bias, without automatically rejecting the result',
     wrong: [
       miss('Automatically reject the findings as fraudulent', 'A conflict of interest raises the risk of bias but is not proof of fraud; funded studies can still be valid. The right response is heightened scrutiny, not dismissal.', 'A conflict warrants caution, not an automatic verdict.'),
-      miss('Ignore the funding source, since the journal published it', 'Publication does not neutralise funding bias, which can shape questions asked, analyses chosen, and results emphasised. Disclosure exists precisely so readers can weigh it.', 'Publication does not erase the conflict.'),
+      miss('Treat journal publication as enough to make the funding source irrelevant', 'Publication does not neutralise funding bias, which can shape questions asked, analyses chosen, and results emphasised. Disclosure exists precisely so readers can weigh it.', 'Publication does not erase the conflict.'),
       miss('Trust it more, because industry funding means better resources', 'Better resources do not offset the directional incentive a funder has in the outcome; that incentive is the reason disclosure is required.', 'Resources do not remove the incentive to find a favourable result.'),
     ],
     lesson: 'A conflict of interest creates an incentive that can subtly bias a study\'s design, analysis, or framing. Disclosure lets readers calibrate trust: examine methods more closely, look for selective reporting, and seek independent replication — but a conflict alone does not prove a result wrong.',

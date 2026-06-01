@@ -729,7 +729,7 @@ export const philYear12High103TopUpAQuestions: Question[] = makeQuestionBank('Hi
     wrong: [
       miss('Accept any argument you encounter as true out of politeness', 'Charity is about fair interpretation, not uncritical acceptance.', 'You still evaluate; you just interpret fairly first.'),
       miss('Attack the weakest possible version of the opposing view', 'Targeting the weakest version is the straw man fallacy, the opposite of charity.', 'Charity opposes the straw man.'),
-      miss('Ignore arguments that disagree with your own position', 'Ignoring opposing arguments is neither charitable nor rigorous.', 'Engage the strongest opposing version.'),
+      miss('Consider only arguments that already support your position', 'Ignoring opposing arguments is neither charitable nor rigorous.', 'Engage the strongest opposing version.'),
     ],
     lesson: 'The principle of charity requires reconstructing an argument in its most plausible and coherent form before assessing it, rather than attacking a distorted "straw man" version. Doing so makes criticism stronger and more honest, since refuting the best version of a view is far more telling than defeating a caricature.',
     source,

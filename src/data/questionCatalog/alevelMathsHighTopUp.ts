@@ -395,7 +395,7 @@ export const alevelMathsHighTopUpQuestions: Question[] = makeQuestionBank('Mathe
     wrong: [
       miss('Differentiate S with respect to both x and h separately', 'A-Level optimisation reduces to one variable first; you cannot set two derivatives to zero here.', 'Eliminate one variable using the constraint before differentiating.'),
       miss('Set S = 0 and solve for x', 'Minimising S means setting dS/dx = 0, not S itself equal to 0.', 'You minimise by differentiating S, not by equating S to zero.'),
-      miss('Assume h = x to make the box a cube', 'There is no reason the optimum is a cube; impose the actual volume constraint.', 'Use the given volume to relate h and x rather than guessing a shape.'),
+      miss('Set h = x to make the box a cube', 'There is no reason the optimum is a cube; impose the actual volume constraint.', 'Use the given volume to relate h and x rather than guessing a shape.'),
     ],
     lesson: 'Optimisation problems are reduced to one variable using the constraint. Here x^2 h = 32 gives h = 32/x^2, so S = x^2 + 4x(32/x^2) = x^2 + 128/x. Then minimise via dS/dx = 0.',
     source,

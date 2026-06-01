@@ -223,7 +223,7 @@ export const publicAffairsR2Questions: Question[] = makeQuestionBank('Career Ski
     prompt: 'Before your external lobbying push, what internal step most reduces the risk of being publicly undercut mid-campaign?',
     correct: 'Secure explicit alignment from legal, comms, product, finance, and ops on the ask, the message, and the red lines',
     wrong: [
-      miss('Assume internal teams agree because no one has objected yet', 'Silence is not alignment; teams often surface objections only once a public position exists.', 'Assumed alignment is how you get undercut.'),
+      miss('Treat internal silence as proof that every team is aligned', 'Silence is not alignment; teams often surface objections only once a public position exists.', 'Assumed alignment is how you get undercut.'),
       miss('Brief only the CEO and rely on authority to keep everyone in line', 'Top-down assumption skips the functions (legal, comms) that can publicly contradict the ask later.', 'Authority does not pre-empt a legal contradiction.'),
       miss('Wait until the external campaign launches, then resolve internal disagreements', 'Resolving alignment after launch invites public contradiction at the worst moment.', 'Align before you go external, not after.'),
     ],
