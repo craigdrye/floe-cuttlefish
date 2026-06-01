@@ -115,7 +115,7 @@ function expandShortPrompt(question: Question, prompt: string) {
 
   const trimmed = prompt.trim()
   const core = trimmed.endsWith(':')
-    ? `${trimmed} ___. Which option fits best?`
+    ? `${trimmed} which option best completes the statement?`
     : ensureTerminalPunctuation(trimmed)
   const suffix = title && !comparablePrompt.includes(comparableTitle)
     ? `Use "${title}" as the clue while you test each answer.`

@@ -53,7 +53,7 @@ function rewriteUniversityMathPrompt(question: Question): string {
   const prompt = question.prompt.trim()
   if (prompt.endsWith('?')) return question.prompt
   if (prompt.endsWith(':')) {
-    return `${prompt} ___. Which option fits best?`
+    return `${prompt} which option best completes the statement?`
   }
   return `${prompt} What is the correct answer?`
 }

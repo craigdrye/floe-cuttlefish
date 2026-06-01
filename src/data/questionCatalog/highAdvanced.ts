@@ -71,7 +71,7 @@ function rewriteHighAdvancedPrompt(question: Question): string {
     return `${prompt} Which answer correctly fills the blank?`
   }
   if (prompt.endsWith(':')) {
-    return `${prompt} ___. Which option fits best?`
+    return `${prompt} which option best completes the statement?`
   }
   return `${prompt} Which option best matches the clue?`
 }
