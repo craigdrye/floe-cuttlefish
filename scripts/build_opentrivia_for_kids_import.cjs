@@ -49,6 +49,11 @@ function shortChoice(choice) {
   return text.length > 64 ? `${text.slice(0, 61)}...` : text
 }
 
+function promptCue(item) {
+  const prompt = normalizeText(item.prompt_text)
+  return prompt.length > 70 ? `${prompt.slice(0, 67)}...` : prompt
+}
+
 function chapterForTrack(trackId) {
   if (trackId === 'arithmetic') return 'Arithmetic Practice'
   if (trackId === 'timesTables') return 'Multiplication Facts'
@@ -66,6 +71,7 @@ function chapterForTrack(trackId) {
 function rationaleForTrack(trackId, choice, item, index) {
   const correct = normalizeText(item.correct_answer)
   const prompt = normalizeText(item.prompt_text).toLowerCase()
+  const cue = promptCue(item)
   const choiceLabel = shortChoice(choice)
   if (trackId.includes('Math') || ['arithmetic', 'timesTables', 'moneyBasics', 'basicGeometry'].includes(trackId)) {
     const wrongNumber = numericValue(choice)
@@ -75,9 +81,9 @@ function rationaleForTrack(trackId, choice, item, index) {
         return [choice, `${choiceLabel} misses the zero rule or the step that makes the total become ${correct}.`, 'Watch for zero in multiplication and for “gave away” wording in subtraction stories.']
       }
       if (Math.abs(wrongNumber) < Math.abs(correctNumber)) {
-        return [choice, `${choiceLabel} is too small; it usually means one group, coin, unit, or step in the story was not counted.`, 'Read the story once for the action, then count every group or change.']
+        return [choice, `${choiceLabel} is too small for "${cue}"; one group, coin, unit, or step is still missing.`, 'Read the story once for the action, then count every group or change.']
       }
-      return [choice, `${choiceLabel} is too large; it usually means something was added twice or the question asks for what is left, not the starting amount.`, 'Check whether the story says add, take away, share, or multiply.']
+      return [choice, `${choiceLabel} is too large for "${cue}"; it likely adds something twice or misses a take-away step.`, 'Check whether the story says add, take away, share, or multiply.']
     }
     if (/pattern|next/.test(prompt)) {
       return [choice, `${choiceLabel} continues the pattern by the wrong jump size.`, 'Look at how each term changes before choosing the next one.']

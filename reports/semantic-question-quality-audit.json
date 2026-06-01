@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-01T07:31:47.548Z",
+  "generatedAt": "2026-06-01T07:33:33.205Z",
   "summary": {
     "filesScanned": 758,
     "questionsScanned": 56989,
     "extractedQuestionRecords": 57146,
     "skippedNonPlayablePlaceholders": 157,
     "distinctQuestionIds": 38778,
-    "totalIssues": 338,
-    "jsonIssuesStored": 338,
-    "duplicateWhyWrongGroups": 50
+    "totalIssues": 331,
+    "jsonIssuesStored": 331,
+    "duplicateWhyWrongGroups": 48
   },
   "flagCounts": {
-    "repeated-why-wrong": 173,
+    "repeated-why-wrong": 166,
     "obvious-irrelevant-distractor": 45,
     "meta-distractor": 120
   },
@@ -1131,44 +1131,6 @@
       ]
     },
     {
-      "text": "6 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
-      "count": 4,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-          "line": 81,
-          "questionId": 337007,
-          "title": "If you add 3 to 5, what would be the result?",
-          "chapter": "Arithmetic Practice",
-          "snippet": "wrong: [[\"6\",\"6 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"5\",\"5 is too small; it usually means one group, coin, unit, or step in th..."
-        },
-        {
-          "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-          "line": 121,
-          "questionId": 337011,
-          "title": "What is the solution to this problem 12-3=?",
-          "chapter": "Arithmetic Practice",
-          "snippet": "wrong: [[\"8\",\"8 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"7\",\"7 is too small; it usually means one group, coin, unit, or step in th..."
-        },
-        {
-          "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-          "line": 131,
-          "questionId": 337012,
-          "title": "OpenTrivia For Kids 12",
-          "chapter": "Arithmetic Practice",
-          "snippet": "wrong: [[\"11\",\"11 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"9\",\"9 is too small; it usually means one group, coin, unit, or step in ..."
-        },
-        {
-          "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-          "line": 183,
-          "questionId": 337017,
-          "title": "How many inches are there in a foot?",
-          "chapter": "Measurement and Geometry",
-          "snippet": "wrong: [[\"6\",\"6 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"18\",\"18 is too large; it usually means something was added twice or the q..."
-        }
-      ]
-    },
-    {
       "text": "A quadratic equation has at most two solutions, never infinitely many.",
       "count": 4,
       "examples": [
@@ -1743,36 +1705,6 @@
       ]
     },
     {
-      "text": "7 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
-      "count": 3,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-          "line": 81,
-          "questionId": 337007,
-          "title": "If you add 3 to 5, what would be the result?",
-          "chapter": "Arithmetic Practice",
-          "snippet": "wrong: [[\"6\",\"6 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"5\",\"5 is too small; it usually means one group, coin, unit, or step in th..."
-        },
-        {
-          "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-          "line": 121,
-          "questionId": 337011,
-          "title": "What is the solution to this problem 12-3=?",
-          "chapter": "Arithmetic Practice",
-          "snippet": "wrong: [[\"8\",\"8 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"7\",\"7 is too small; it usually means one group, coin, unit, or step in th..."
-        },
-        {
-          "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-          "line": 205,
-          "questionId": 337019,
-          "title": "What is the square root of 144?",
-          "chapter": "Class 5 Mixed Maths",
-          "snippet": "wrong: [[\"7\",\"7 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"14\",\"14 is too large; it usually means something was added twice or the q..."
-        }
-      ]
-    },
-    {
       "text": "A constant function graphs as a horizontal line, which is still linear.",
       "count": 3,
       "examples": [
@@ -2189,6 +2121,66 @@
           "title": "Compound probability",
           "chapter": "Numeracy: Statistics, Probability, and Mixed Reasoning",
           "snippet": "miss('1/3', 'There are four equally likely outcomes (HH, HT, TH, TT), not three.', 'List the outcomes: HH, HT, TH, TT, so the denominator is 4.'),"
+        }
+      ]
+    },
+    {
+      "text": "These multiply to -15 but add to 14, not 2.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-eureka-math-algebra-iHigh103TopUpB.ts",
+          "line": 308,
+          "questionId": 7962519,
+          "title": "Solving a quadratic equation by factoring",
+          "chapter": "Module 4: Solving quadratics by factoring",
+          "snippet": "miss('x = 15 or x = -1', 'These multiply to -15 but add to 14, not 2.', 'The two roots must sum to the opposite of the middle coefficient.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-gcse-maths-ukHigh103TopUpB.ts",
+          "line": 18,
+          "questionId": 7972500,
+          "title": "Factorising a quadratic",
+          "chapter": "Algebra: Quadratics and Factorising",
+          "snippet": "miss('(x + 15)(x - 1)', 'These multiply to -15 but add to +14, not +2.', 'Find two numbers that multiply to -15 AND add to +2.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-integrated-math-2High103TopUpA.ts",
+          "line": 154,
+          "questionId": 7949009,
+          "title": "Factor with a negative constant",
+          "chapter": "Factorization",
+          "snippet": "miss('(x − 15)(x + 1)', 'These multiply to −15 but add to −14, not −2.', 'Check the sum equals the middle coefficient.'),"
+        }
+      ]
+    },
+    {
+      "text": "This adds numerators and denominators directly, which is not how fractions add.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-algebra-basicsHigh103TopUpA.ts",
+          "line": 65,
+          "questionId": 7961003,
+          "title": "Adding fractions",
+          "chapter": "Foundations",
+          "snippet": "miss('3/7', 'This adds numerators and denominators directly, which is not how fractions add.', 'Find a common denominator before adding numerators.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-integrated-math-3High103TopUpB.ts",
+          "line": 396,
+          "questionId": 7952525,
+          "title": "Adding rational expressions",
+          "chapter": "Rational functions",
+          "snippet": "miss('5 / (2x + 1)', 'This adds numerators and denominators directly, which is not how fractions add.', 'Find a common denominator before combining.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-pre-algebraHigh103TopUpA.ts",
+          "line": 593,
+          "questionId": 7960038,
+          "title": "Adding fractions with unlike denominators",
+          "chapter": "Fractions, decimals, and percentages",
+          "snippet": "miss('2/7', 'This adds numerators and denominators directly, which is not how fractions add.', 'Find a common denominator before adding.'),"
         }
       ]
     }
@@ -3203,66 +3195,6 @@
       {
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-        "line": 81,
-        "questionId": 337007,
-        "title": "If you add 3 to 5, what would be the result?",
-        "chapter": "Arithmetic Practice",
-        "field": "whyWrong",
-        "value": "6 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "wrong: [[\"6\",\"6 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"5\",\"5 is too small; it usually means one group, coin, unit, or step in th...",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-        "line": 121,
-        "questionId": 337011,
-        "title": "What is the solution to this problem 12-3=?",
-        "chapter": "Arithmetic Practice",
-        "field": "whyWrong",
-        "value": "6 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "wrong: [[\"8\",\"8 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"7\",\"7 is too small; it usually means one group, coin, unit, or step in th...",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-        "line": 131,
-        "questionId": 337012,
-        "title": "OpenTrivia For Kids 12",
-        "chapter": "Arithmetic Practice",
-        "field": "whyWrong",
-        "value": "6 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "wrong: [[\"11\",\"11 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"9\",\"9 is too small; it usually means one group, coin, unit, or step in ...",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-        "line": 183,
-        "questionId": 337017,
-        "title": "How many inches are there in a foot?",
-        "chapter": "Measurement and Geometry",
-        "field": "whyWrong",
-        "value": "6 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "wrong: [[\"6\",\"6 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"18\",\"18 is too large; it usually means something was added twice or the q...",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
         "priority": 87,
         "file": "src/data/questionCatalog/basicGeometryPrim103TopUpB.ts",
         "line": 273,
@@ -3993,6 +3925,66 @@
         "value": "Liters is for liquid volume, not measuring how long something is.",
         "detail": "Same normalized whyWrong appears 3 times.",
         "snippet": "miss('Liters', 'Liters is for liquid volume, not measuring how long something is.', 'Length needs a distance unit.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-eureka-math-algebra-iHigh103TopUpB.ts",
+        "line": 308,
+        "questionId": 7962519,
+        "title": "Solving a quadratic equation by factoring",
+        "chapter": "Module 4: Solving quadratics by factoring",
+        "field": "whyWrong",
+        "value": "These multiply to -15 but add to 14, not 2.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('x = 15 or x = -1', 'These multiply to -15 but add to 14, not 2.', 'The two roots must sum to the opposite of the middle coefficient.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
+        "line": 199,
+        "questionId": 7814012,
+        "title": "Equivalent fractions",
+        "chapter": "Fractions",
+        "field": "whyWrong",
+        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For halves, the top should be half of the bottom.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
+        "line": 534,
+        "questionId": 7814034,
+        "title": "Units of length",
+        "chapter": "Measurement and Data",
+        "field": "whyWrong",
+        "value": "liters is for liquid volume, not measuring how long something is.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('liters', 'liters is for liquid volume, not measuring how long something is.', 'Length needs a length unit.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-gcse-maths-ukHigh103TopUpB.ts",
+        "line": 18,
+        "questionId": 7972500,
+        "title": "Factorising a quadratic",
+        "chapter": "Algebra: Quadratics and Factorising",
+        "field": "whyWrong",
+        "value": "These multiply to -15 but add to +14, not +2.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('(x + 15)(x - 1)', 'These multiply to -15 but add to +14, not +2.', 'Find two numbers that multiply to -15 AND add to +2.'),",
         "extractor": "object"
       }
     ],
@@ -7454,66 +7446,6 @@
     {
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-      "line": 81,
-      "questionId": 337007,
-      "title": "If you add 3 to 5, what would be the result?",
-      "chapter": "Arithmetic Practice",
-      "field": "whyWrong",
-      "value": "6 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "wrong: [[\"6\",\"6 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"5\",\"5 is too small; it usually means one group, coin, unit, or step in th...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-      "line": 121,
-      "questionId": 337011,
-      "title": "What is the solution to this problem 12-3=?",
-      "chapter": "Arithmetic Practice",
-      "field": "whyWrong",
-      "value": "6 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "wrong: [[\"8\",\"8 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"7\",\"7 is too small; it usually means one group, coin, unit, or step in th...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-      "line": 131,
-      "questionId": 337012,
-      "title": "OpenTrivia For Kids 12",
-      "chapter": "Arithmetic Practice",
-      "field": "whyWrong",
-      "value": "6 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "wrong: [[\"11\",\"11 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"9\",\"9 is too small; it usually means one group, coin, unit, or step in ...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-      "line": 183,
-      "questionId": 337017,
-      "title": "How many inches are there in a foot?",
-      "chapter": "Measurement and Geometry",
-      "field": "whyWrong",
-      "value": "6 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "wrong: [[\"6\",\"6 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"18\",\"18 is too large; it usually means something was added twice or the q...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/basicGeometryPrim103TopUpB.ts",
       "line": 273,
@@ -8889,51 +8821,6 @@
       "value": "There are four equally likely outcomes (HH, HT, TH, TT), not three.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('1/3', 'There are four equally likely outcomes (HH, HT, TH, TT), not three.', 'List the outcomes: HH, HT, TH, TT, so the denominator is 4.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-      "line": 81,
-      "questionId": 337007,
-      "title": "If you add 3 to 5, what would be the result?",
-      "chapter": "Arithmetic Practice",
-      "field": "whyWrong",
-      "value": "7 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "wrong: [[\"6\",\"6 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"5\",\"5 is too small; it usually means one group, coin, unit, or step in th...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-      "line": 121,
-      "questionId": 337011,
-      "title": "What is the solution to this problem 12-3=?",
-      "chapter": "Arithmetic Practice",
-      "field": "whyWrong",
-      "value": "7 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "wrong: [[\"8\",\"8 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"7\",\"7 is too small; it usually means one group, coin, unit, or step in th...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
-      "line": 205,
-      "questionId": 337019,
-      "title": "What is the square root of 144?",
-      "chapter": "Class 5 Mixed Maths",
-      "field": "whyWrong",
-      "value": "7 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "wrong: [[\"7\",\"7 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"14\",\"14 is too large; it usually means something was added twice or the q...",
       "extractor": "object"
     },
     {
