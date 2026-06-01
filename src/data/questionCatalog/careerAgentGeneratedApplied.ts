@@ -525,14 +525,14 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       [
         ['They are eligible because inclusion criteria are happier', 'Inclusion criteria do not override exclusions.'],
         ['They are half eligible, so enroll every other visit', 'Eligibility is binary, not fractional.'],
-        ['They are eligible if the coordinator writes neatly', 'Handwriting is not an eligibility factor.'],
+        ['They are eligible if the missing criterion seems clinically minor', 'Eligibility criteria are protocol requirements; a site should not waive one informally because it feels minor.'],
       ],
       'Eligibility requires meeting inclusion criteria and not meeting exclusion criteria. One exclusion can disqualify the candidate.'),
     q(4260616, 'Clinical Research', 'Monitoring, Closeout, and Inspection Readiness', 'Closeout closet',
       'At study closeout, what should the site confirm?',
       'Essential documents are complete, queries are resolved, investigational product is reconciled, and records are retained as required',
       [
-        ['All binders are alphabetized by favorite snack', 'Snack-based ordering is not a closeout activity.'],
+        ['Only the documents used most recently are filed neatly', 'Closeout needs the complete essential record, not just the easiest or most recent materials.'],
         ['Only the last visit note exists', 'Closeout requires the full essential document set, not just the last visit.'],
         ['The monitor remembers everything so records can vanish', 'Records must be retained per regulation, regardless of monitor memory.'],
       ],
@@ -569,8 +569,8 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       'A retailer sells twice as many warm scarves every November as in a normal month. What should the forecast account for?',
       'Seasonality',
       [
-        ['Random supplier names', 'Supplier name has no forecast effect.'],
-        ['The color of the analyst chair', 'Chair color is not a forecast input.'],
+        ['A one-time supplier email unrelated to customer demand', 'Supplier notes can matter for supply planning, but they do not establish a repeating demand pattern.'],
+        ['The analyst’s preferred spreadsheet layout', 'A tidy model helps communication, but the forecast driver is the recurring November demand pattern.'],
         ['A permanent drop in demand', 'November spikes are seasonal, not a permanent drop.'],
       ],
       'Seasonality is a repeating pattern tied to calendar periods or events. A November scarf spike should not be treated as random noise.'),
