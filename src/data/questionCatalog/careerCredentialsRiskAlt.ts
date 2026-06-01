@@ -1544,7 +1544,7 @@ export const caiaQuestions: Question[] = makeQuestionBank('Career Skills', [
     wrong: [
       miss('Treat the dual role as a cost saving and proceed without further checks', 'Cost savings do not outweigh the loss of independent verification.', 'Independence is structural.'),
       miss('Proceed because the GP has a strong reputation', 'Reputation is exactly what the Madoff playbook abused.', 'Verify independently.'),
-      miss('Ignore service providers and focus solely on the investment strategy', 'Operational due diligence is a separate discipline for a reason.', 'Strategy diligence is not enough.'),
+      miss('Accept the dual role if the fund discloses it clearly in the due-diligence questionnaire', 'Disclosure helps identify the conflict, but it does not remove the control weakness created when verification roles are not independent.', 'Disclosure is not remediation.'),
     ],
     lesson: 'A clean ODD process keeps administrator, auditor, custodian, and prime broker independent of each other and of the manager; overlapping roles are the single most reliable red flag in alternative investing.',
     source,
@@ -1907,7 +1907,7 @@ export const caiaQuestions: Question[] = makeQuestionBank('Career Skills', [
     correct: 'Run in parallel with veto rights for ODD, since one is investment skill and the other is non-investment risk',
     wrong: [
       miss('Be conducted by the same team for consistency', 'Best practice separates IDD and ODD teams to avoid bias.', 'Separation enforces independence.'),
-      miss('Skip ODD if the manager has a long track record', 'Long track records do not eliminate operational risk; Madoff had decades.', 'Track record is not enough.'),
+      miss('Let the investment due-diligence team sign off on operations because it knows the strategy best', 'Strategy expertise can bias operational review; ODD needs independent judgment and veto power over non-investment risks.', 'Separate skill from controls.'),
       miss('Combine into one written memo before final decision', 'Separate findings preserve independent judgments.', 'Separate, then aggregate.'),
     ],
     lesson: 'ODD covers service providers, valuation, controls, cash management, segregation of duties, IT/cyber, compliance, and key-person risk. IDD covers strategy, alpha sources, risk management, and capacity. Best practice: independent teams; ODD has veto power; both must clear before an allocation.',
@@ -1935,7 +1935,7 @@ export const caiaQuestions: Question[] = makeQuestionBank('Career Skills', [
     correct: 'Engage the manager to understand the shift and assess whether it remains within mandate',
     wrong: [
       miss('Redeem immediately on style drift', 'Some drift is normal; engagement comes before redemption.', 'Engage, then decide.'),
-      miss('Ignore because style analysis is unreliable', 'Style analysis is one tool; ignoring shifts is poor practice.', 'It is a signal worth investigating.'),
+      miss('Treat the factor shift as proof of misconduct and redeem immediately', 'A factor shift is a warning signal, not a verdict; the allocator should engage, document, and test whether the shift fits the mandate before acting.', 'Investigate before judging.'),
       miss('Increase allocation to lean into the new style', 'Adding to undisclosed drift would compound the issue.', 'Diligence before sizing.'),
     ],
     lesson: 'Style drift detection (rolling regression on factors) is allocator-side risk monitoring. Real drift can reflect: legitimate evolution (regime change, opportunity migration), capacity stretching, or undisclosed strategy shift. Process: detect, engage, document; consider trim or redeem only after diligence.',

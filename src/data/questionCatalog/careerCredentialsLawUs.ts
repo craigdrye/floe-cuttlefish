@@ -3310,7 +3310,7 @@ export const lsatQuestions: Question[] = makeQuestionBank('Career Skills', [
     correct: 'Move faster on remaining questions, flagging the hardest for return if time permits',
     wrong: [
       miss('Continue at the same pace because accuracy is primary', 'Maintaining slow pace risks not finishing.', 'Time risk.'),
-      miss('Skip the remaining questions and use time to review answered ones', 'Sacrifices points on unanswered.', 'Don\'t leave blanks.'),
+      miss('Keep the same slow pace and trust that later questions will be easier', 'Hope is not a pacing strategy; the section still has too many unanswered items for a slow first-pass approach.', 'Adjust pace now.'),
       miss('Spend more time on the first 8 to ensure they are right', 'Already past those; cannot use time on completed work.', 'Sunk time.'),
     ],
     lesson: 'LR pacing requires ongoing calibration. If you fall behind, accelerate on remaining items, flagging hard ones for second pass. Never leave the section unbubbled.',
@@ -3324,7 +3324,7 @@ export const lsatQuestions: Question[] = makeQuestionBank('Career Skills', [
     correct: 'Skip to Passages 2-4, answer easier ones first, and return to Passage 1 with remaining time',
     wrong: [
       miss('Work through Passage 1 thoroughly before moving on', 'Risks running out of time on easier passages.', 'Easy points first.'),
-      miss('Skip Passage 1 entirely and never return', 'Sacrifices points; partial credit possible.', 'Always return.'),
+      miss('Read only the first and last paragraphs, then answer the whole set from the main idea', 'Main-idea scanning misses detail, inference, and structure questions; saving the hard passage for last is better than pretending a skim is enough.', 'Triage, then return.'),
       miss('Skim Passage 1 and answer randomly', 'Random answering wastes opportunity.', 'Read enough to engage.'),
     ],
     lesson: 'RC passages vary widely in difficulty. Triage early: identify the hard passage, save it for last, and capture easy points first. Return with leftover time.',
@@ -3367,7 +3367,7 @@ export const lsatQuestions: Question[] = makeQuestionBank('Career Skills', [
     wrong: [
       miss('Memorize the conclusion verbatim', 'Memorization does not anticipate the answer.', 'Anticipate, don\'t memorize.'),
       miss('Read each choice quickly without anticipation', 'Without a prediction, you are vulnerable to traps.', 'Predictions filter traps.'),
-      miss('Skip to the answer choices immediately', 'Skipping anticipation increases trap exposure.', 'Anticipation works.'),
+      miss('Predict the exact wording of the credited answer before reading the choices', 'A useful pre-phrase predicts the kind of support needed, not the exact sentence; overly rigid wording can make you reject a correct answer in different language.', 'Predict the job, not the wording.'),
     ],
     lesson: 'Pre-phrasing means anticipating the answer\'s shape before reading the choices. For Strengthen/Weaken/Assumption questions, this dramatically reduces trap-answer susceptibility.',
     source,

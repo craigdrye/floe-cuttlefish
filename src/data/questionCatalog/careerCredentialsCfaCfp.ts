@@ -1119,7 +1119,7 @@ export const cfaLevelTwoQuestions: Question[] = makeQuestionBank('Career Skills'
     correct: 'Answer the remaining 3 questions with best-effort guesses tied to what you understand from the vignette, flag, and move on',
     wrong: [
       miss('Spend 5 more minutes reconciling the footnote because the next vignette will be easier', 'Sunk-cost bias; 5 more minutes risks 7 more lost questions on later vignettes.', 'Budget time across the test.'),
-      miss('Skip the remaining 3 questions entirely; partial guesses dilute your score', 'There is no penalty for wrong answers on the CFA exam; guesses dominate blanks.', 'No-guess-penalty rule.'),
+      miss('Spend the remaining time perfecting the one answer you already know', 'Over-polishing a single answer leaves reachable points on the table; Level II scoring rewards harvesting partial certainty across the item set.', 'Harvest the reachable points.'),
       miss('Restart the vignette from the top to recheck facts', 'Restarting consumes the budget you cannot afford to spend.', 'Move on, don\'t restart.'),
     ],
     lesson: 'Level II rewards time discipline. The exam has no penalty for wrong answers, so partial guesses always dominate blanks. Sunk-cost time is the second-biggest reason candidates fail (the biggest is studying too narrowly). Flag and move on; come back if time permits.',
@@ -2241,7 +2241,7 @@ export const cfaLevelThreeQuestions: Question[] = makeQuestionBank('Career Skill
     prompt: 'You are 20 minutes into an essay session and cannot solve a 6-point calculation subpart on private real estate cap-rate sensitivity. Best action:',
     correct: 'Write the formula you would use, substitute any plausible values, and state what the answer would represent in context — partial credit + move on',
     wrong: [
-      miss('Skip the subpart entirely and move to the next', 'Zero on a 6-point subpart is much worse than partial credit from formula and labels.', 'Always write something.'),
+      miss('Write only the final numeric answer with no formula, labels, or context', 'A bare number earns little partial credit if it is wrong; graders can award points for the setup, formula, and interpretation even when the calculation is incomplete.', 'Show the recoverable work.'),
       miss('Spend 10 more minutes thinking until the answer comes to you', 'Sunk-cost time; the next subpart suffers.', 'Budget over completeness.'),
       miss('Apologize in the answer space for not knowing', 'No credit for apology; some credit for partial work.', 'Write something useful.'),
     ],
@@ -2428,7 +2428,7 @@ export const cfpQuestions: Question[] = makeQuestionBank('Career Skills', [
     wrong: [
       miss('Donate appreciated stock annually with no aggregation', 'Annual donations may not reach the itemizing threshold; bunching solves that.', 'Look at the threshold issue.'),
       miss('Use a charitable remainder trust to receive income payments', 'A CRT is a much larger commitment and does not solve the bunching problem cleanly.', 'CRT is overkill here.'),
-      miss('Skip donations and reduce taxable income via 401(k) deferrals', 'Skipping donations defeats the philanthropic goal; bunching can keep both.', 'Preserve the giving plan.'),
+      miss('Open a private foundation for the annual $10,000 gifts', 'A private foundation is usually too complex and costly for this simple threshold problem; a donor-advised fund can bunch deductions while preserving the giving plan.', 'Match the tool to the scale.'),
     ],
     lesson: 'Donor-advised funds allow a large upfront deduction with deferred grant-making, ideal for clients near the standard-deduction threshold who want to itemize in some years and not others.',
     source,

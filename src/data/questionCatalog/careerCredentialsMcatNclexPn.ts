@@ -421,7 +421,7 @@ export const mcatQuestions: Question[] = makeQuestionBank('Career Skills', [
     wrong: [
       miss('Memorize every numerical value before looking at the questions', 'Numbers are best referenced as needed; memorizing them wastes time and exceeds working memory.', 'Reference, do not memorize.'),
       miss('Read every question first and then read the passage searching for each answer', 'Question-first reading often misses the framing needed to interpret distractors and can multiply time spent.', 'Light pass first.'),
-      miss('Skip the passage entirely and answer questions from outside knowledge', 'Passage-based items require passage-specific reasoning; outside knowledge alone misses critical experimental nuance.', 'Use the passage.'),
+      miss('Read only the figure captions and assume the graphs contain the whole experiment', 'Figures are central, but captions alone miss the hypothesis, variables, controls, and design logic that explain what the graphs mean.', 'Figures help after you know the experiment.'),
     ],
     lesson: 'A 60-90 second passage skim that identifies the central experiment and figure types makes question-answering far more efficient than diving directly into items.',
     source,
@@ -1120,7 +1120,7 @@ export const mcatQuestions: Question[] = makeQuestionBank('Career Skills', [
     correct: 'Spend up to 10 minutes on the dense passage, then flag and move on if not finished',
     wrong: [
       miss('Spend 15-20 minutes to master this passage before moving on', 'A single passage is worth only 5-7 points; spending 20 minutes risks losing 2-3 passages worth of points.', 'No passage is worth that much.'),
-      miss('Skip the passage entirely and guess on all its questions', 'Skipping forfeits all 5-7 questions. Spending 8-10 minutes for partial credit beats blind guessing.', 'Attempt, then move.'),
+      miss('Spend five minutes scanning for familiar keywords, then choose answers that repeat those words', 'CARS distractors often borrow passage vocabulary while twisting the author\'s purpose, tone, or logic; keyword matching alone is too shallow.', 'Match reasoning, not just words.'),
       miss('Read the questions first and answer them without reading the passage', 'CARS questions explicitly require passage support; question-first reading without passage context fails systematically.', 'CARS requires the passage.'),
     ],
     lesson: 'CARS pacing: roughly 10 minutes per passage. If a passage is taking too long, flag and move — the next passage is winnable, and a 10-minute investment with a flagged return is better than a 20-minute black hole.',
@@ -2088,7 +2088,7 @@ export const nclexPnQuestions: Question[] = makeQuestionBank('Career Skills', [
     prompt: 'During admission, the LPN/LVN assists with medication reconciliation. A patient reports taking St. John\'s wort daily. The nurse should:',
     correct: 'Document the herbal supplement and notify the RN and pharmacy about potential interactions',
     wrong: [
-      miss('Ignore herbal supplements because they are not real medications', 'Herbal supplements have significant drug interactions and must be reconciled.', 'Herbals count.'),
+      miss('List St. John\'s wort only under allergies because it is plant-derived', 'Plant-derived does not make it an allergy; it is an active supplement with interaction risk and belongs in medication reconciliation.', 'Classify by use and interaction risk.'),
       miss('Instruct the patient to stop taking St. John\'s wort immediately', 'Stopping a supplement is a provider decision; the PN reports the finding.', 'Provider decides.'),
       miss('Document only prescription medications, not OTC or herbals', 'Med reconciliation includes prescriptions, OTC, supplements, vitamins, and herbals.', 'All in scope.'),
     ],
@@ -2104,7 +2104,7 @@ export const nclexPnQuestions: Question[] = makeQuestionBank('Career Skills', [
     wrong: [
       miss('Update the chart to "DNR" based on the verbal statement', 'DNR requires a formal provider order; the verbal statement alone does not constitute a DNR.', 'Verbal ≠ order.'),
       miss('Tell the patient that hospital policy requires full code by default', 'While default is full code, the patient has the right to advance directive; do not dismiss the statement.', 'Right to choose.'),
-      miss('Ignore the statement until the patient signs paperwork on their own', 'Failure to communicate would obstruct the patient\'s right to advance care planning; report up.', 'Facilitate, not obstruct.'),
+      miss('Reassure the patient that the team will remember the preference without adding it to the chart', 'Uncharted preferences can be missed during an emergency; the statement needs documentation and escalation to begin the formal process.', 'Document and escalate wishes.'),
     ],
     lesson: 'Patients have the right to refuse treatment and to articulate advance directives. PN role: document the patient\'s statement verbatim, notify RN to facilitate provider discussion, ensure advance directive paperwork is offered. Until a formal DNR order exists, code status remains full code.',
     source,
