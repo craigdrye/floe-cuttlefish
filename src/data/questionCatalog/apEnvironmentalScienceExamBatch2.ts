@@ -2,6 +2,22 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/weather|hazards|earth systems|climate|oceans/i.test(chapter)) {
+    return `${title} is about Earth systems reacting to energy and risk. The useful answer is "${correct}"; connect the observation to storm timing, magnitude, ocean heat, or climate feedbacks.`
+  }
+  if (/atmosphere|biogeochemical/i.test(chapter)) {
+    return `${title} is about gases as environmental reservoirs. The useful answer is "${correct}"; track which gases store heat, shape surface conditions, or move through global cycles.`
+  }
+  if (/nutrients|minerals/i.test(chapter)) {
+    return `${title} is about elements moving through ecosystems and diets. The useful answer is "${correct}"; separate essential trace nutrients from inert gases or non-nutrient materials.`
+  }
+  if (/weather indicators|pollution/i.test(chapter)) {
+    return `${title} is about interpreting environmental signals. The useful answer is "${correct}"; connect the indicator to humidity, acidity, runoff, or ecosystem response.`
+  }
+  return `${title} is an environmental science concept. The useful answer is "${correct}"; identify the Earth system involved before choosing the effect.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +32,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: reviewed OpenTriviaQA science/technology Earth-systems rows. This is an authored Floe-native conversion item, not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'OpenTriviaQA/OER AP Environmental Science coverage',
 })
 
@@ -33,9 +48,9 @@ export const apEnvironmentalScienceExamBatch2Questions = makeQuestionBank('Unive
     miss('A hurricane category, not an earthquake measure', 'The prompt is about earthquake magnitude.', 'Separate hazard scales.'),
   ]),
   q(458003, 'Climate and Oceans', 'Coral bleaching', 'Warm-water stress during strong El Nino events can damage coral reefs mainly by causing:', 'Bleaching when corals lose their symbiotic algae', [
-    miss('Instant formation of new limestone mountains', 'Bleaching is a stress response, not mountain building.', 'Think coral-algae relationship.'),
-    miss('Corals to become immune to heat forever', 'Heat stress increases vulnerability.', 'Bleaching is harmful.'),
-    miss('All coral reefs to move into deep ocean water overnight', 'Corals are fixed animals; they do not relocate like that.', 'Stress affects living tissue.'),
+    miss('Corals to gain extra algae that make them darker and healthier', 'Bleaching is usually the loss of symbiotic algae, not a gain of protective algae.', 'Think coral-algae relationship.'),
+    miss('Corals to become permanently immune to later heat stress', 'Heat stress often makes reefs more vulnerable, especially if bleaching is repeated.', 'Bleaching is harmful.'),
+    miss('Coral polyps to migrate quickly into deep cold water', 'Coral reefs are fixed communities; heat stress affects their living tissue in place.', 'Stress affects living tissue.'),
   ]),
   q(458004, 'Atmosphere', 'Greenhouse planet', 'Venus is extremely hot largely because its dense atmosphere is rich in:', 'Carbon dioxide', [
     miss('Oxygen', 'Venus is not oxygen-rich like Earth.', 'Think greenhouse gas.'),
@@ -53,9 +68,9 @@ export const apEnvironmentalScienceExamBatch2Questions = makeQuestionBank('Unive
     miss('They eliminate all energy transfer', 'Atmospheres mediate energy transfer.', 'Radiation and heat matter.'),
   ]),
   q(458007, 'Nutrients and Minerals', 'Seaweed mineral', 'Irish moss and some seaweeds are notable dietary sources of:', 'Iodine', [
-    miss('Helium', 'Helium is not a dietary mineral.', 'Think thyroid-related mineral.'),
-    miss('Quartz', 'Quartz is a mineral but not the nutrient clue here.', 'Seaweed is known for iodine.'),
-    miss('Neon', 'Neon is an inert gas, not a seaweed nutrient.', 'Choose the essential trace element.'),
+    miss('Sodium only, with no important trace minerals', 'Seaweeds can contain sodium, but the notable trace nutrient in this clue is iodine.', 'Think thyroid-related mineral.'),
+    miss('Calcium carbonate from reef skeletons', 'Calcium compounds matter in marine systems, but Irish moss and seaweeds are especially known for iodine.', 'Seaweed is known for iodine.'),
+    miss('Nitrogen gas trapped in the leaves', 'Nitrogen gas is not the dietary mineral clue here.', 'Choose the essential trace element.'),
   ]),
   q(458008, 'Nutrients and Minerals', 'Marine nutrient', 'Some edible seaweeds are rich in minerals such as iron, which matters because minerals:', 'Support biological functions but must cycle through ecosystems and diets', [
     miss('Are always harmful at every dose', 'Many minerals are essential in appropriate amounts.', 'Dose and role matter.'),
@@ -64,8 +79,8 @@ export const apEnvironmentalScienceExamBatch2Questions = makeQuestionBank('Unive
   ]),
   q(458009, 'Weather Indicators', 'Pine cone indicator', 'Pine cones can act as simple weather indicators because they often:', 'Open in dry conditions and close when wet', [
     miss('Open only underwater', 'The clue is dry versus wet air.', 'Humidity affects scales.'),
-    miss('Turn into lightning rods', 'That is not the biological mechanism.', 'Think moisture response.'),
-    miss('Measure earthquake magnitude directly', 'Pine cones do not measure seismic energy.', 'This is a humidity cue.'),
+    miss('Close in dry air and open as humidity rises', 'This reverses the usual moisture response of many pine cones.', 'Think moisture response.'),
+    miss('Change shape mainly because of air pressure, not moisture', 'Moisture affects the cone scales more directly than air pressure here.', 'This is a humidity cue.'),
   ]),
   q(458010, 'Air and Water Pollution', 'Acid rain threshold', 'Rain is typically considered acid rain when its pH is below about:', '5.6', [
     miss('9.6', 'That would be basic, not acidic.', 'Acid means lower pH.'),

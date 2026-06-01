@@ -5,6 +5,22 @@ import { polish as runPolish } from './polishPipeline'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/careful wording|truth and lies/i.test(chapter)) {
+    return `${title} is about reading exactly what the prompt says. The useful answer is "${correct}"; look for hidden assumptions, negations, and wording traps before doing any arithmetic.`
+  }
+  if (/counting|probability|strategy/i.test(chapter)) {
+    return `${title} is about choosing a reliable puzzle strategy. The useful answer is "${correct}"; count worst cases, use complements or small cases, and avoid grabbing the first tempting number.`
+  }
+  if (/parity|ordering|sequence/i.test(chapter)) {
+    return `${title} is about structure that stays organized under moves. The useful answer is "${correct}"; track odd/even toggles, relative order, or separate pattern streams.`
+  }
+  if (/spatial/i.test(chapter)) {
+    return `${title} is about visualizing shape and direction. The useful answer is "${correct}"; distinguish faces, edges, reflections, nets, and paths on surfaces.`
+  }
+  return `${title} is a brain-teaser. The useful answer is "${correct}"; slow down, name the trap, and test the exact wording.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -19,8 +35,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: reviewed OpenTriviaQA/OER brain-teaser and puzzle coverage. This is an authored Floe-native conversion item, not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'OpenTriviaQA/OER brain-teaser coverage',
 })
 
@@ -242,7 +257,7 @@ const _brainBurnersOerBatch2QuestionsBase = makeQuestionBank('Fun', [
   ]),
   q(456044, 'Strategy', 'Small Case', 'Before solving a puzzle for 100 lockers, why test 5 or 10 lockers first?', 'Small cases can reveal the pattern safely', [
     miss('Small cases prove every answer automatically', 'They suggest patterns but still need reasoning.', 'Use them as exploration.'),
-    miss('Because large cases are illegal', 'No.', 'Small cases are manageable.'),
+    miss('Because the rules stop applying once the case gets large', 'The same rules still apply; small cases are useful because they are easier to inspect.', 'Small cases are manageable.'),
     miss('To avoid understanding the rule', 'The goal is to understand the rule better.', 'Look for structure.'),
   ]),
   q(456045, 'Strategy', 'Symmetry', 'A symmetry argument helps when:', 'Several cases behave the same after rotation, reflection, or relabeling', [

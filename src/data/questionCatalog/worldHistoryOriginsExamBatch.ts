@@ -2,6 +2,19 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/early states|empires/i.test(chapter)) {
+    return `${title} is about how large communities and states solve coordination problems. The useful answer is "${correct}"; connect resources, infrastructure, taxation, and administration to governing at scale.`
+  }
+  if (/belief|trade|maritime|exchange/i.test(chapter)) {
+    return `${title} is about ideas, goods, people, and pathogens moving across regions. The useful answer is "${correct}"; look for networks that carry more than one product or belief.`
+  }
+  if (/disease|demography|industrialization|imperialism|global conflict/i.test(chapter)) {
+    return `${title} is about large-scale change in population, production, empire, or war. The useful answer is "${correct}"; connect the event to labor, resources, markets, state power, and social disruption.`
+  }
+  return `${title} is a world history concept. The useful answer is "${correct}"; identify the historical process and the scale at which it operates.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +29,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: OpenTriviaQA history, AP World History-aligned OER, and public world-history review collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from OpenTriviaQA/OER world-history coverage',
 })
 

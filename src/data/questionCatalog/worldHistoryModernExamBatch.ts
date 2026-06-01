@@ -2,6 +2,19 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/atlantic|industrialization|imperialism/i.test(chapter)) {
+    return `${title} is about political and economic transformation. The useful answer is "${correct}"; connect ideas about rights, factory organization, or empire to the institutions they changed.`
+  }
+  if (/world war|interwar|cold war/i.test(chapter)) {
+    return `${title} is about conflict, ideology, and state strategy. The useful answer is "${correct}"; ask how alliances, regimes, diplomacy, and containment shaped escalation or rivalry.`
+  }
+  if (/decolonization|global institutions|globalization/i.test(chapter)) {
+    return `${title} is about the postwar world being reorganized. The useful answer is "${correct}"; connect self-determination, international cooperation, and cross-border economic networks.`
+  }
+  return `${title} is a modern world history concept. The useful answer is "${correct}"; identify the process, actors, and period before choosing the explanation.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +29,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: OpenTriviaQA history, AP World History-aligned OER, and public modern-history review collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from OpenTriviaQA/OER modern world-history coverage',
 })
 
