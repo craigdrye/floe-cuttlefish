@@ -398,7 +398,7 @@ export const colEurekaMathAlgebraIHigh103TopUpBQuestions: Question[] = makeQuest
     wrong: [
       miss('Two real solutions', 'A negative discriminant means no real roots, not two.', 'Compute b^2 - 4ac and check its sign.'),
       miss('One real solution', 'A single (repeated) real root requires a discriminant of exactly zero.', 'Find the value of b^2 - 4ac.'),
-      miss('Infinitely many solutions', 'A quadratic equation has at most two solutions, never infinitely many.', 'Use the discriminant to count real roots.'),
+      miss('Infinitely many solutions', 'This would require an identity true for every x, not a specific quadratic with a negative discriminant.', 'Use the discriminant to count real roots.'),
     ],
     lesson: 'The discriminant b^2 - 4ac determines the number of real roots. Here it is 3^2 - 4(1)(7) = 9 - 28 = -19, which is negative, so there are no real solutions. A positive discriminant gives two real roots and zero gives one repeated root.',
     source,

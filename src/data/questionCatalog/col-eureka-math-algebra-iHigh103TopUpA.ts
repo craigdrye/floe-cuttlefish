@@ -231,7 +231,7 @@ export const colEurekaMathAlgebraIHigh103TopUpAQuestions: Question[] = makeQuest
     wrong: [
       miss('8x^15', 'When multiplying powers with the same base you add exponents (3 + 5 = 8), not multiply them.', 'Multiplying like bases means adding the exponents.'),
       miss('6x^8', 'The coefficients are multiplied: 2 x 4 = 8, not added to 6.', 'Multiply the numerical coefficients.'),
-      miss('8x^2', 'This subtracts the exponents, which is the rule for division, not multiplication.', 'Subtracting exponents applies when you divide powers.'),
+      miss('8x^2', 'The coefficient 8 is right, but x^3 times x^5 gives eight x factors, not 3 - 5 or 5 - 3.', 'Subtracting exponents applies when you divide powers.'),
     ],
     lesson: 'To multiply monomials, multiply the coefficients and add the exponents of like bases. Here 2 x 4 = 8 and x^3 x x^5 = x^(3+5) = x^8, giving 8x^8. Subtracting exponents is the rule for division, and multiplying exponents is for a power raised to a power.',
     source,

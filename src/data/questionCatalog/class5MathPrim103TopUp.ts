@@ -591,7 +591,7 @@ export const class5MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'A line plot of pencil lengths has X marks above 1/2 and above 1/4. Which length is longer?',
     correct: '1/2',
     wrong: [
-      miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'A half is bigger than a quarter.'),
+      miss('1/4', 'A quarter-length pencil mark is shorter; two quarters would be needed to match one half.', 'A half is bigger than a quarter.'),
       miss('They are equal', 'A half and a quarter are different sizes.', 'Compare the two fractions.'),
       miss('Neither has a length', 'Each X mark sits above a real length.', 'The fraction below the X is the length.'),
     ],

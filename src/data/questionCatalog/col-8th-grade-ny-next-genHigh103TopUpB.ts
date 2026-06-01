@@ -30,7 +30,7 @@ export const col8thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     wrong: [
       miss('3^8', 'This multiplies the exponents, but the product rule adds them.', 'When the bases match and you multiply, add the exponents.'),
       miss('9^6', 'This adds the bases too; the base stays the same in the product rule.', 'Keep the base as 3 and only combine the exponents.'),
-      miss('3^2', 'This subtracts the exponents, which is the rule for division, not multiplication.', 'Subtracting exponents is for dividing powers, not multiplying.'),
+      miss('3^2', 'This uses 4 - 2, but multiplying matching bases counts all six factors of 3 together.', 'Subtracting exponents is for dividing powers, not multiplying.'),
     ],
     lesson: 'The product of powers rule says that when multiplying powers with the same base, you keep the base and add the exponents: a^m times a^n equals a^(m+n). So 3^4 times 3^2 equals 3^(4+2) equals 3^6.',
     source,

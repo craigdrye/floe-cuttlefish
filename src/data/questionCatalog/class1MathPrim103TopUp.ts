@@ -553,7 +553,7 @@ export const class1MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '3',
     wrong: [
       miss('4', 'A shape with 4 sides is a square or rectangle, not a triangle.', 'Count the straight edges of a triangle.'),
-      miss('2', '2 is not enough sides to enclose the shape being described.', 'A triangle needs more than two sides.'),
+      miss('2', 'Two sides would leave an open angle; a triangle closes only when the third side joins them.', 'A triangle needs more than two sides.'),
       miss('5', 'A shape with 5 sides is a pentagon, not a triangle.', 'A triangle has three corners and three sides.'),
     ],
     lesson: 'A triangle has 3 straight sides and 3 corners. The word tri means three, just like in tricycle. So a triangle always has 3 sides.',

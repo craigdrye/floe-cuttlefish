@@ -467,7 +467,7 @@ export const colGetReadyFor7thGradeHigh103TopUpAQuestions: Question[] = makeQues
     correct: '50 miles per hour',
     wrong: [
       miss('150 miles per hour', 'This ignores the 3 hours; a unit rate is per one hour.', 'Divide the miles by the hours.'),
-      miss('450 miles per hour', 'This multiplies instead of dividing.', 'A unit rate comes from division: 150 divided by 3.'),
+      miss('450 miles per hour', 'This multiplies 150 by 3; a unit rate asks for miles in one hour, so the 150 miles must be split across 3 hours.', 'A unit rate comes from division: 150 divided by 3.'),
       miss('3 miles per hour', 'This gives hours, not the speed.', 'Divide distance by time, not time by distance.'),
     ],
     lesson: 'A unit rate tells you the amount per one unit, here per one hour. Divide 150 miles by 3 hours to get 50 miles per hour. Dividing the two quantities makes the second quantity equal to 1.',
@@ -483,7 +483,7 @@ export const colGetReadyFor7thGradeHigh103TopUpAQuestions: Question[] = makeQues
     wrong: [
       miss('$3.00', 'This is the price of the whole pack, not one bottle.', 'Divide the total cost by the number of bottles.'),
       miss('$2.00', 'This divides by 1.5 or some other wrong number.', 'Divide 3.00 by 6.'),
-      miss('$6.00', 'This multiplies instead of dividing.', 'Unit price comes from dividing cost by quantity.'),
+      miss('$6.00', 'This treats 6 bottles as if they add dollars to the pack price; unit price divides the $3.00 across all 6 bottles.', 'Unit price comes from dividing cost by quantity.'),
     ],
     lesson: 'The unit price is the cost for one item. Divide the total cost by the number of items: $3.00 divided by 6 equals $0.50 per bottle. Unit prices help you compare which package is the better deal.',
     source,
@@ -529,7 +529,7 @@ export const colGetReadyFor7thGradeHigh103TopUpAQuestions: Question[] = makeQues
     correct: '$15 per hour',
     wrong: [
       miss('$45 per hour', 'This is the pay for 3 hours, not for 1 hour.', 'Divide the total pay by the number of hours.'),
-      miss('$135 per hour', 'This multiplies instead of dividing.', 'The constant comes from dividing pay by hours.'),
+      miss('$135 per hour', 'This multiplies $45 by 3 hours; pay per hour asks how the $45 is shared across the 3 hours.', 'The constant comes from dividing pay by hours.'),
       miss('$3 per hour', 'This gives hours per dollar or a wrong division.', 'Divide 45 by 3, not 3 by something.'),
     ],
     lesson: 'In a proportional relationship, the constant of proportionality is the amount per one unit. Divide total pay by hours: $45 divided by 3 equals $15 per hour. This constant lets you find pay for any number of hours by multiplying.',

@@ -169,7 +169,7 @@ export const primaryPrim103TopUpAQuestions: Question[] = makeQuestionBank('Prima
     wrong: [
       miss('4', 'A shape with four sides is a square or rectangle.', 'The word triangle starts with tri, meaning three.'),
       miss('5', 'A shape with five sides is a pentagon.', 'Count the straight edges of a triangle.'),
-      miss('2', '2 is not enough sides to enclose the shape being described.', 'A triangle needs three straight sides.'),
+      miss('2', 'With only two sides, the shape is still open; the third side closes the triangle.', 'A triangle needs three straight sides.'),
     ],
     lesson: 'A triangle has three straight sides and three corners. The tri in triangle means three, just like a tricycle has three wheels.',
     source,

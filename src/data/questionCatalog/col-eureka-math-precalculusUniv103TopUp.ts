@@ -631,7 +631,7 @@ export const colEurekaMathPrecalculusUniv103TopUpQuestions: Question[] = makeQue
     prompt: 'Which expression equals log(xy) for positive x and y?',
     correct: 'log(x) + log(y)',
     wrong: [
-      miss('log(x) * log(y)', 'The log of a product is a sum of logs, not a product of logs.', 'Recall that multiplication inside a log becomes addition.'),
+      miss('log(x) * log(y)', 'This keeps multiplication outside the logs, but the product rule turns multiplication inside into addition outside.', 'Recall that multiplication inside a log becomes addition.'),
       miss('log(x) - log(y)', 'Subtraction of logs corresponds to a quotient log(x/y), not a product.', 'Match the operation: product goes with sum.'),
       miss('(log x)(log y) / log(xy)', 'This is not a valid logarithm identity and does not simplify to log(xy).', 'Use the basic product rule.'),
     ],

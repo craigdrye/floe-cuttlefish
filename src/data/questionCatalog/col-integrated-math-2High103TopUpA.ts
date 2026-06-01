@@ -257,7 +257,7 @@ export const colIntegratedMath2High103TopUpAQuestions: Question[] = makeQuestion
     wrong: [
       miss('Two real solutions', 'A positive discriminant gives two real roots, but here the discriminant is negative.', 'Compute b^2 − 4ac and check its sign.'),
       miss('One real solution', 'Exactly one real solution requires a discriminant of zero, not negative.', 'A repeated root needs b^2 − 4ac = 0.'),
-      miss('Infinitely many solutions', 'A quadratic equation has at most two solutions, never infinitely many.', 'Degree-2 equations have at most two roots.'),
+      miss('Infinitely many solutions', 'The equation has fixed coefficients, so its graph cannot overlap the x-axis at every point.', 'Degree-2 equations have at most two roots.'),
     ],
     lesson: 'The discriminant b^2 − 4ac determines the number of real roots: positive means two, zero means one, negative means none. Here 3^2 − 4·2·5 = 9 − 40 = −31, which is negative, so the equation has no real solutions (the roots are complex).',
     source,

@@ -270,7 +270,7 @@ export const basicGeometryPrim103TopUpBQuestions: Question[] = makeQuestionBank(
     prompt: 'An angle that is smaller than a right angle is called what?',
     correct: 'An acute angle',
     wrong: [
-      miss('An obtuse angle', 'An obtuse angle is bigger than a right angle, not smaller.', 'Acute angles are the small, narrow ones.'),
+      miss('An obtuse angle', 'Obtuse angles open wider than a square corner; this clue asks for an angle tighter than that.', 'Acute angles are the small, narrow ones.'),
       miss('A right angle', 'A right angle is exactly a square corner, not smaller.', 'Smaller than a right angle has a special name: acute.'),
       miss('A straight angle', 'A straight angle is a flat line and is much bigger.', 'A narrow angle that is smaller than a corner is acute.'),
     ],

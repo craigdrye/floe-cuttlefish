@@ -441,7 +441,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('4', 'A shape with 4 sides is a square or rectangle.', 'The word triangle has tri, which means three.'),
       miss('5', 'A shape with 5 sides is a pentagon.', 'Count the straight edges of a triangle.'),
-      miss('2', '2 is not enough sides to enclose the shape being described.', 'A triangle needs three sides to close.'),
+      miss('2', 'Two straight edges can make a corner, but they cannot make the closed shape called a triangle.', 'A triangle needs three sides to close.'),
     ],
     lesson: 'A triangle has 3 straight sides and 3 corners. The tri in triangle means three. That is how you can always remember it.',
     source,

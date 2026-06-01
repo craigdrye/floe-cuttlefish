@@ -120,7 +120,7 @@ export const colGetReadyForSatPrepMathHigh103TopUpAQuestions: Question[] = makeQ
     correct: 'Slope -2, y-intercept 7',
     wrong: [
       miss('Slope 7, y-intercept -2', 'This swaps the roles of the slope and the intercept in y = mx + b.', 'In y = mx + b, m is the coefficient of x and b is the constant.'),
-      miss('Slope 2, y-intercept 7', 'This drops the negative sign on the slope.', 'The coefficient of x is -2, including its sign.'),
+      miss('Slope 2, y-intercept 7', 'This would make the line rise as x increases, but -2x means the slope is negative.', 'The coefficient of x is -2, including its sign.'),
       miss('Slope -2, y-intercept -7', 'This adds an incorrect negative sign to the intercept, which is +7.', 'The constant term 7 is positive, so the intercept is 7.'),
     ],
     lesson: 'In slope-intercept form y = mx + b, the coefficient m is the slope and the constant b is the y-intercept. For y = -2x + 7, the slope is -2 and the line crosses the y-axis at 7.',
@@ -455,7 +455,7 @@ export const colGetReadyForSatPrepMathHigh103TopUpAQuestions: Question[] = makeQ
     wrong: [
       miss('$27', 'This is the amount of the discount, not the price you pay after it.', 'Subtract the discount from the original price.'),
       miss('$60', 'This rounds or subtracts $30 flat rather than 30% of $90.', '30% of $90 is $27, not $30.'),
-      miss('$117', 'This adds the discount instead of subtracting it.', 'A discount lowers the price, so subtract it.'),
+      miss('$117', 'This adds the $27 discount to $90, but 30% off means the price should decrease by $27.', 'A discount lowers the price, so subtract it.'),
     ],
     lesson: 'A 30% discount removes 30% of the price. 30% of $90 is 0.30 times 90 = $27, so the sale price is $90 - $27 = $63. Alternatively, you pay 70% of the price: 0.70 times 90 = $63.',
     source,

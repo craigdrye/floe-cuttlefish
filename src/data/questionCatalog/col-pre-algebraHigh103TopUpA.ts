@@ -242,7 +242,7 @@ export const colPreAlgebraHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     wrong: [
       miss('5^6', 'This multiplies the exponents; the product rule adds them instead.', 'When multiplying powers of the same base, add the exponents.'),
       miss('25^5', 'This multiplies the bases as well as combining exponents, which is incorrect.', 'The base stays 5; only the exponents combine.'),
-      miss('5^1', 'This subtracts the exponents, which is the rule for division, not multiplication.', 'Use the product rule, not the quotient rule.'),
+      miss('5^1', 'This uses 3 - 2; multiplying 5^3 and 5^2 should count all five factors of 5.', 'Use the product rule, not the quotient rule.'),
     ],
     lesson: 'When multiplying powers with the same base, keep the base and add the exponents: 5^3 x 5^2 = 5^(3+2) = 5^5. This works because you are multiplying five 5s together in total.',
     source,
@@ -394,7 +394,7 @@ export const colPreAlgebraHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     wrong: [
       miss('$30', 'This subtracts 30 dollars rather than 30 percent of 60.', '30% of 60 is 18, not 30.'),
       miss('$18', 'This is the discount amount, not the price you pay.', 'Subtract the discount from the original price.'),
-      miss('$78', 'This adds the discount instead of subtracting it.', 'A discount lowers the price, so subtract.'),
+      miss('$78', 'This adds the $18 discount onto $60, turning a sale into a markup.', 'A discount lowers the price, so subtract.'),
     ],
     lesson: 'A percent discount is subtracted from the original price. Here 30% of 60 is 0.30 x 60 = 18, so the sale price is 60 - 18 = 42. Equivalently, you pay 70% of 60, which is 0.70 x 60 = 42.',
     source,

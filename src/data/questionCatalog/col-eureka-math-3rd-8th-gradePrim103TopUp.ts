@@ -166,7 +166,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     correct: '4/8',
     wrong: [
       miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top is exactly half the bottom.'),
-      miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'A half means the top is half the bottom.'),
+      miss('1/4', 'With fourths, half the whole is 2/4, so 1/4 is one piece short of a half.', 'A half means the top is half the bottom.'),
       miss('3/8', 'Three eighths is less than four eighths.', 'Half of 8 is 4, so 4/8 equals 1/2.'),
     ],
     lesson: 'Two fractions are equal when they show the same amount. Half of 8 is 4, so 4/8 is the same as 1/2. You can multiply the top and bottom of 1/2 by 4 to get 4/8.',

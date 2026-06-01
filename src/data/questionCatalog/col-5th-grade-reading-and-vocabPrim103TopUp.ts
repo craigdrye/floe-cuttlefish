@@ -770,7 +770,7 @@ export const col5thGradeReadingAndVocabPrim103TopUpQuestions: Question[] = makeQ
     prompt: 'Which word is the opposite of "ancient"?',
     correct: 'Modern',
     wrong: [
-      miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),
+      miss('Old', 'Old is almost a smaller version of ancient, so it is a synonym direction rather than an opposite.', 'An antonym is the opposite, so look for new.'),
       miss('Tiny', 'Tiny is about size, not about age.', 'Find a word that means new or recent.'),
       miss('Heavy', 'Heavy is about weight, not about how old something is.', 'The opposite of old and ancient is new.'),
     ],

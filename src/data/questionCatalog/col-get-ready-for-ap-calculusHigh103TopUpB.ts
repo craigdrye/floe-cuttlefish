@@ -346,7 +346,7 @@ export const colGetReadyForApCalculusHigh103TopUpBQuestions: Question[] = makeQu
     prompt: 'Which expression equals log(6) using the product rule for logarithms (same base throughout)?',
     correct: 'log(2) + log(3)',
     wrong: [
-      miss('log(2) * log(3)', 'The log of a product is a sum of logs, not a product of logs.', 'log(ab) = log a + log b, an addition.'),
+      miss('log(2) * log(3)', 'Since 6 is 2 times 3, the product rule combines the two logs by addition, not multiplication.', 'log(ab) = log a + log b, an addition.'),
       miss('log(2) - log(3)', 'Subtraction corresponds to the log of a quotient, log(2/3), not log(6).', 'Division inside the log becomes subtraction; multiplication becomes addition.'),
       miss('log(8)', 'log(2) and log(3) combine to log(6) since 2*3 = 6, not log(8).', 'Multiply the arguments: 2 times 3 is 6.'),
     ],

@@ -106,7 +106,7 @@ export const colGetReadyFor8thGradeHigh103TopUpAQuestions: Question[] = makeQues
     wrong: [
       miss('3^8', 'This multiplies the exponents, but the product rule adds them.', 'When bases match and you multiply, add the exponents.'),
       miss('9^6', 'This changes the base to 9; the base stays 3 when you add exponents.', 'Keep the same base of 3.'),
-      miss('3^2', 'This subtracts the exponents, which is the rule for division, not multiplication.', 'Multiplying powers adds the exponents.'),
+      miss('3^2', 'This keeps only the difference between 4 and 2, but the product contains 2 + 4 factors of 3.', 'Multiplying powers adds the exponents.'),
     ],
     lesson: 'When multiplying powers with the same base, keep the base and add the exponents: 3^2 times 3^4 equals 3^(2+4) = 3^6. This works because you are simply counting the total number of factors of 3. Multiplying the exponents is a common mistake.',
     source,

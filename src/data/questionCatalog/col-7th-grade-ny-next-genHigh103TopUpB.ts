@@ -178,7 +178,7 @@ export const col7thGradeNyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     wrong: [
       miss('$15', 'This is the amount of the discount, not the price you pay.', 'Subtract the discount from the original price.'),
       miss('$35', 'This subtracts a 25-dollar amount instead of 25% of $60.', '25% of $60 is $15, not $25.'),
-      miss('$75', 'This adds the discount instead of subtracting it.', 'A discount lowers the price, so subtract.'),
+      miss('$75', 'This adds the $15 discount to $60 instead of taking it off the original price.', 'A discount lowers the price, so subtract.'),
     ],
     lesson: 'A 25% discount means you pay 75% of the price. Either find 25% of $60 ($15) and subtract it, or multiply $60 by 0.75. Both give a sale price of $45.',
     source,

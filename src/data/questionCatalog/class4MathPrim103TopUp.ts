@@ -529,7 +529,7 @@ export const class4MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'An angle that is smaller than a right angle is called what?',
     correct: 'An acute angle',
     wrong: [
-      miss('An obtuse angle', 'An obtuse angle is bigger than a right angle, not smaller.', 'Acute angles are the small, sharp ones.'),
+      miss('An obtuse angle', 'An obtuse angle is more than 90 degrees, but the prompt asks for less than 90 degrees.', 'Acute angles are the small, sharp ones.'),
       miss('A straight angle', 'A straight angle is a flat line of 180 degrees.', 'You want the angle smaller than 90 degrees.'),
       miss('A right angle', 'A right angle is exactly 90 degrees, not smaller.', 'Look for the word that means less than a square corner.'),
     ],

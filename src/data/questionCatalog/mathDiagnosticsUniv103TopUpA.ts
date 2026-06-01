@@ -194,7 +194,7 @@ export const mathDiagnosticsUniv103TopUpAQuestions: Question[] = makeQuestionBan
     wrong: [
       miss('Two real solutions', 'This assumes the discriminant is positive without computing it.', 'Evaluate b^2 - 4ac before deciding.'),
       miss('One real solution', 'A single repeated root requires a discriminant of exactly zero.', 'Check whether b^2 - 4ac equals zero.'),
-      miss('Infinitely many solutions', 'A quadratic equation has at most two solutions, never infinitely many.', 'A degree-2 equation cannot have infinite roots.'),
+      miss('Infinitely many solutions', 'Infinitely many solutions would mean every x works, but this quadratic has a negative discriminant instead.', 'A degree-2 equation cannot have infinite roots.'),
     ],
     lesson: 'The discriminant b^2 - 4ac = 4 - 60 = -56 is negative, so there are no real solutions (the roots are complex). A positive discriminant gives two real roots, zero gives one repeated root.',
     source,

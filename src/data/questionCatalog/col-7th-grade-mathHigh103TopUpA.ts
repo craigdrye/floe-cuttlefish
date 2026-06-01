@@ -152,7 +152,7 @@ export const col7thGradeMathHigh103TopUpAQuestions: Question[] = makeQuestionBan
     wrong: [
       miss('-8', 'The sign is wrong; a negative divided by a negative is positive.', 'Same signs give a positive quotient.'),
       miss('-42', 'This subtracts instead of dividing.', 'Ask how many -6 groups fit into -48.'),
-      miss('288', 'This multiplies instead of dividing.', 'Division undoes multiplication.'),
+      miss('288', 'This is 48 x 6; the problem asks how many groups of -6 fit into -48.', 'Division undoes multiplication.'),
     ],
     lesson: 'Division follows the same sign rules as multiplication, so a negative divided by a negative is positive. Since 48 / 6 = 8, (-48) / (-6) = 8.',
     source,
@@ -428,7 +428,7 @@ export const col7thGradeMathHigh103TopUpAQuestions: Question[] = makeQuestionBan
     wrong: [
       miss('$30', 'This subtracts 30 dollars rather than 30 percent of 60.', 'The discount is 30% of 60, which is 18.'),
       miss('$18', 'This is the amount of the discount, not the sale price.', 'Subtract the discount from the original.'),
-      miss('$78', 'This adds the discount instead of subtracting it.', 'A discount lowers the price.'),
+      miss('$78', 'This adds the $18 discount to $60, but a sale price should move down from the original price.', 'A discount lowers the price.'),
     ],
     lesson: 'A 30% discount removes 30% of the price: 30% of 60 is 18, so the sale price is 60 - 18 = $42 (equivalently 0.70 x 60).',
     source,

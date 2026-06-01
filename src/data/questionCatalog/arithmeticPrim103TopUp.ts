@@ -229,7 +229,7 @@ export const arithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('1/3', 'One third is smaller than one half.', 'Half means the bottom number is double the top.'),
       miss('2/3', 'Two thirds is bigger than one half.', 'For one half, the top is exactly half of the bottom.'),
-      miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'Try doubling both the top and bottom of 1/2.'),
+      miss('1/4', 'One fourth is one of four equal pieces; 2/4 would be the amount that matches one half.', 'Try doubling both the top and bottom of 1/2.'),
     ],
     lesson: 'Equivalent fractions name the same amount in different ways. If you double both numbers in 1/2, you get 2/4, which is the same size. Two quarters fill exactly one half.',
     source,

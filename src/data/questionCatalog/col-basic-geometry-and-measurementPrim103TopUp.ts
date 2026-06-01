@@ -149,7 +149,7 @@ export const colBasicGeometryAndMeasurementPrim103TopUpQuestions: Question[] = m
     prompt: 'An angle that is smaller than a right angle is called what?',
     correct: 'An acute angle',
     wrong: [
-      miss('An obtuse angle', 'An obtuse angle is bigger than a right angle, not smaller.', 'Acute angles are the small, sharp ones.'),
+      miss('An obtuse angle', 'That names the wide kind of angle; the question wants the small sharp kind.', 'Acute angles are the small, sharp ones.'),
       miss('A right angle', 'A right angle is exactly a square corner, not smaller.', 'The question asks for one smaller than a right angle.'),
       miss('A straight angle', 'A straight angle is a flat line, which is much bigger.', 'A small sharp angle has its own special name.'),
     ],

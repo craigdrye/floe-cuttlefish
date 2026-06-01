@@ -764,7 +764,7 @@ export const eurekaMathPrecalculusUniv103TopUpQuestions: Question[] = makeQuesti
     prompt: 'Which expression is equivalent to log(xy)?',
     correct: 'log(x) + log(y)',
     wrong: [
-      miss('log(x) log(y)', 'The log of a product is a sum of logs, not a product of logs.', 'Recall the product rule converts multiplication inside to addition outside.'),
+      miss('log(x) log(y)', 'This treats the two log values as factors; the identity uses a plus sign between them.', 'Recall the product rule converts multiplication inside to addition outside.'),
       miss('log(x) - log(y)', 'Subtraction corresponds to a quotient log(x/y), not a product.', 'Match the operation: product gives a sum, quotient gives a difference.'),
       miss('log(x) / log(y)', 'A ratio of logs relates to the change-of-base formula, not the product rule.', 'Use the product rule log(xy) = log x + log y.'),
     ],

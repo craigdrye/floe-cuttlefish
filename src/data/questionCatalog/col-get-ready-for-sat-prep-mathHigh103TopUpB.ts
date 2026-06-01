@@ -326,7 +326,7 @@ export const colGetReadyForSatPrepMathHigh103TopUpBQuestions: Question[] = makeQ
     correct: 'slope -2, y-intercept 7',
     wrong: [
       miss('slope 7, y-intercept -2', 'This swaps the roles; in y = mx + b, m is the slope and b is the intercept.', 'The coefficient of x is the slope.'),
-      miss('slope 2, y-intercept 7', 'This drops the negative sign on the slope.', 'The slope is the full coefficient of x, including its sign.'),
+      miss('slope 2, y-intercept 7', 'This copies the 2 but leaves behind the minus sign that controls the line’s direction.', 'The slope is the full coefficient of x, including its sign.'),
       miss('slope -2, y-intercept -7', 'This flips the sign of the intercept, which is +7 in the equation.', 'The constant term is +7, so the intercept is positive.'),
     ],
     lesson: 'In slope-intercept form y = mx + b, m is the slope and b is the y-intercept. For y = -2x + 7, the coefficient of x is minus 2, so the slope is minus 2, and the constant is 7, so the y-intercept is 7. Keep the signs attached.',

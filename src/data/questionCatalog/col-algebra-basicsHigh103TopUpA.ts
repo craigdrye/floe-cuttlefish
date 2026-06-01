@@ -423,7 +423,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     correct: 'slope -4, y-intercept 7',
     wrong: [
       miss('slope 7, y-intercept -4', 'This swaps the slope and the y-intercept.', 'In y = mx + b, m is the coefficient of x.'),
-      miss('slope 4, y-intercept 7', 'This drops the negative sign on the slope.', 'The coefficient of x is -4, including its sign.'),
+      miss('slope 4, y-intercept 7', 'This keeps the magnitude 4 but misses that the coefficient of x is negative, so the line slopes downward.', 'The coefficient of x is -4, including its sign.'),
       miss('slope -4, y-intercept -7', 'This flips the sign of the y-intercept.', 'The constant term +7 is the y-intercept as written.'),
     ],
     lesson: 'In slope-intercept form y = mx + b, m is the slope and b is the y-intercept. For y = -4x + 7, the slope is -4 and the y-intercept is 7. Keep the signs as they appear in the equation.',

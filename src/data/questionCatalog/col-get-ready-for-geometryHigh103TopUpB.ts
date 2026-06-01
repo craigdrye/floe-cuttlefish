@@ -183,7 +183,7 @@ export const colGetReadyForGeometryHigh103TopUpBQuestions: Question[] = makeQues
     correct: 'slope -2, y-intercept 5',
     wrong: [
       miss('slope 5, y-intercept -2', 'This swaps the roles of the slope and the intercept in y = mx + b.', 'In y = mx + b, m is the coefficient of x and b is the constant.'),
-      miss('slope 2, y-intercept 5', 'This drops the negative sign on the slope.', 'Keep the sign: the coefficient of x is -2.'),
+      miss('slope 2, y-intercept 5', 'This treats -2x like +2x; the sign is part of the slope, not decoration.', 'Keep the sign: the coefficient of x is -2.'),
       miss('slope -2, y-intercept -5', 'This adds an extra negative to the intercept, which is +5 here.', 'The constant term is +5, so the intercept is 5.'),
     ],
     lesson: 'In slope-intercept form y = mx + b, the number multiplying x is the slope and the constant is the y-intercept. So y = -2x + 5 has slope -2 and crosses the y-axis at (0, 5).',
