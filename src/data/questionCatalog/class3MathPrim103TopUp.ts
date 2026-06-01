@@ -119,9 +119,9 @@ export const class3MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'What is 20 / 5?',
     correct: '4',
     wrong: [
-      miss('15', 'This subtracts 5 from 20 instead of dividing.', 'Ask how many 5s fit inside 20.'),
+      miss('15', '15 takes away 5 once, but division asks how many equal groups fit in 20.', 'Ask how many 5s fit inside 20.'),
       miss('5', 'This is the number you are dividing by, not the answer.', 'Count by fives until you reach 20.'),
-      miss('100', 'This multiplies 20 by 5 instead of dividing.', 'Division makes smaller groups, not a bigger number.'),
+      miss('100', '100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.', 'Division makes smaller groups, not a bigger number.'),
     ],
     lesson: 'Division asks how many equal groups fit. To find 20 / 5, count how many fives make 20: 5, 10, 15, 20, that is 4 fives. So 20 / 5 = 4.',
     source,
@@ -255,7 +255,7 @@ export const class3MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'What is 67 rounded to the nearest ten?',
     correct: '70',
     wrong: [
-      miss('60', 'The ones digit is 7, which rounds up, not down.', 'If the ones digit is 5 or more, round up.'),
+      miss('60', '60 rounds the wrong way; a ones digit of 7 pushes the number up to the next ten.', 'If the ones digit is 5 or more, round up.'),
       miss('67', 'Rounding to the nearest ten should end in a zero.', 'Choose the closest ten: 60 or 70.'),
       miss('100', 'This rounds to the nearest hundred, not ten.', 'The nearest tens are 60 and 70.'),
     ],
@@ -379,7 +379,7 @@ export const class3MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('9 cm', 'This leaves out one of the sides when adding.', 'Add all 3 sides together.'),
       miss('5 cm', 'This is only the longest side, not all the way around.', 'Perimeter goes around the whole triangle.'),
-      miss('60 cm', 'This multiplies the sides instead of adding them.', 'Perimeter means adding, not multiplying.'),
+      miss('60 cm', '60 cm treats the question like area, but this one asks for the distance around the shape.', 'Perimeter means adding, not multiplying.'),
     ],
     lesson: 'To find the perimeter of any shape, add up the lengths of all its sides. For this triangle: 3 + 4 + 5 = 12 cm.',
     source,
@@ -485,7 +485,7 @@ export const class3MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '4:30',
     wrong: [
       miss('6:00', 'The 6 is where the minute hand points, not the hour.', 'When the long hand is at 6, it is half past the hour.'),
-      miss('5:30', 'The hour hand has not reached 5 yet.', 'Use the hour the hand has already passed, which is 4.'),
+      miss('5:30', '5:30 reads the hour too early; follow where the hour hand has actually moved.', 'Use the hour the hand has already passed, which is 4.'),
       miss('4:06', 'When the long hand points to 6, it means 30 minutes.', 'Each number on the clock is 5 minutes, so 6 means 30.'),
     ],
     lesson: 'When the minute hand points to 6, it is 30 minutes past the hour, called half past. The hour hand is between 4 and 5, so the hour is 4. The time is 4:30.',
@@ -776,7 +776,7 @@ export const class3MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('8', 'This subtracts 2 from 10 instead of dividing.', 'Ask how many 2s fit in 10.'),
       miss('20', 'This multiplies 10 by 2 instead of dividing.', 'Division makes a smaller number here.'),
-      miss('2', 'This is the number you divide by, not the answer.', 'Count by twos until you reach 10.'),
+      miss('2', '2 is the divisor from the problem, not the result after the sharing is done.', 'Count by twos until you reach 10.'),
     ],
     lesson: 'Division asks how many equal groups fit. Count by twos to reach 10: 2, 4, 6, 8, 10, that is 5 twos. So 10 / 2 = 5.',
     source,

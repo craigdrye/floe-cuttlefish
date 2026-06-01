@@ -120,9 +120,9 @@ export const col3rdGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'What is 20 / 5?',
     correct: '4',
     wrong: [
-      miss('5', 'This is the number you divide by, not the answer.', 'Ask how many fives are in 20.'),
-      miss('15', 'This subtracts 5 from 20 instead of dividing.', 'Count by fives until you reach 20: 5, 10, 15, 20.'),
-      miss('100', 'This multiplies 20 by 5 instead of dividing.', 'Division makes the number smaller here, not bigger.'),
+      miss('5', '5 is the divisor from the problem, not the result after the sharing is done.', 'Ask how many fives are in 20.'),
+      miss('15', '15 takes away 5 once, but division asks how many equal groups fit in 20.', 'Count by fives until you reach 20: 5, 10, 15, 20.'),
+      miss('100', '100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.', 'Division makes the number smaller here, not bigger.'),
     ],
     lesson: 'To find 20 / 5, ask how many fives fit into 20. Count by fives: 5, 10, 15, 20. That is 4 fives, so 20 / 5 = 4.',
     source,
@@ -150,8 +150,8 @@ export const col3rdGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'If 7 x 4 = 28, what is 28 / 4?',
     correct: '7',
     wrong: [
-      miss('4', 'This is the number you divide by, not the answer.', 'Use the matching multiplication fact: 7 x 4 = 28.'),
-      miss('24', 'This subtracts 4 from 28 instead of dividing.', 'Division and multiplication are opposites here.'),
+      miss('4', '4 is the divisor from the problem, not the result after the sharing is done.', 'Use the matching multiplication fact: 7 x 4 = 28.'),
+      miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Division and multiplication are opposites here.'),
       miss('14', 'This is half of 28, but you are dividing by 4, not 2.', 'Find the number that times 4 makes 28.'),
     ],
     lesson: 'Multiplication and division are opposite operations. Since 7 x 4 = 28, the matching division fact is 28 / 4 = 7. They belong to the same fact family.',
@@ -398,7 +398,7 @@ export const col3rdGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('7 units', 'This adds only two of the three sides.', 'Add all three sides together.'),
       miss('9 units', 'This misses one of the sides.', 'Add 3 + 4 + 5.'),
-      miss('60 units', 'This multiplies the sides instead of adding them.', 'Perimeter means adding the side lengths.'),
+      miss('60 units', '60 units treats the question like area, but this one asks for the distance around the shape.', 'Perimeter means adding the side lengths.'),
     ],
     lesson: 'Perimeter is the total distance around a shape. For a triangle, add all three sides: 3 + 4 + 5 = 12 units.',
     source,
@@ -520,8 +520,8 @@ export const col3rdGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'Which unit is best for measuring how long a pencil is?',
     correct: 'Centimeters',
     wrong: [
-      miss('Kilometers', 'Kilometers measure long distances like between towns.', 'A pencil is small, so use a small unit.'),
-      miss('Liters', 'Liters measure liquid, not length.', 'You want to measure how long the pencil is.'),
+      miss('Kilometers', 'Kilometers fits long travel distances, not the smaller measure asked for here.', 'A pencil is small, so use a small unit.'),
+      miss('Liters', 'Liters is for liquid volume, not measuring how long something is.', 'You want to measure how long the pencil is.'),
       miss('Kilograms', 'Kilograms measure weight, not length.', 'Length is best measured in centimeters here.'),
     ],
     lesson: 'We pick units that fit the size of the object. A pencil is small, so centimeters work well. Kilometers are for long distances, liters are for liquids, and kilograms are for weight.',
@@ -689,7 +689,7 @@ export const col3rdGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'Round 47 to the nearest ten.',
     correct: '50',
     wrong: [
-      miss('40', 'The ones digit is 7, which rounds up, not down.', 'If the ones digit is 5 or more, round up.'),
+      miss('40', '40 rounds the wrong way; a ones digit of 7 pushes the number up to the next ten.', 'If the ones digit is 5 or more, round up.'),
       miss('47', 'Rounding to the nearest ten changes the number to a ten.', 'The answer should end in a zero.'),
       miss('70', 'This rounds to the wrong ten.', '47 is between 40 and 50, so round to one of those.'),
     ],
@@ -784,8 +784,8 @@ export const col3rdGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     correct: 'A square',
     wrong: [
       miss('A triangle', 'A triangle has 3 sides, but a quadrilateral has 4.', 'Quadrilaterals have exactly 4 sides.'),
-      miss('A circle', 'A circle has no straight sides.', 'A quadrilateral has 4 straight sides.'),
-      miss('A pentagon', 'A pentagon has 5 sides, not 4.', 'Count the sides: a quadrilateral has 4.'),
+      miss('A circle', 'A circle is round, while the prompt is asking about a shape with sides.', 'A quadrilateral has 4 straight sides.'),
+      miss('A pentagon', 'A pentagon has five sides; check the side count before choosing the shape.', 'Count the sides: a quadrilateral has 4.'),
     ],
     lesson: 'A quadrilateral is any shape with 4 straight sides. A square has 4 sides, so it is a quadrilateral. Rectangles and rhombuses are quadrilaterals too.',
     source,
@@ -846,7 +846,7 @@ export const col3rdGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     correct: 'Even',
     wrong: [
       miss('Odd', 'An odd number ends in 1, 3, 5, 7, or 9; 14 ends in 4.', 'Numbers that split into two equal groups are even.'),
-      miss('Neither', 'Every whole number is either even or odd.', 'Check if it can split into two equal groups.'),
+      miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Check if it can split into two equal groups.'),
       miss('Both', 'A number cannot be even and odd at the same time.', 'Look at the last digit to decide.'),
     ],
     lesson: 'An even number can be split into two equal groups and ends in 0, 2, 4, 6, or 8. Since 14 ends in 4, it is even.',

@@ -413,7 +413,7 @@ export const col4thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'What is 1/5 + 2/5?',
     correct: '3/5',
     wrong: [
-      miss('3/10', '3/10 adds the denominators, but like fractions keep the same bottom number and only combine the tops.', 'When bottoms match, only add the tops.'),
+      miss('3/10', '3/10 changes the denominator; when the bottoms already match, keep that bottom and add only the tops.', 'When bottoms match, only add the tops.'),
       miss('3/25', 'You multiplied the bottoms instead of keeping 5.', 'Keep the same bottom and add the top numbers.'),
       miss('2/5', 'You forgot to add the first fraction.', 'Add 1 and 2 on top to get the new top number.'),
     ],
@@ -691,7 +691,7 @@ export const col4thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('A square', 'A square has four sides, not three.', 'Count the sides: three sides means a triangle.'),
       miss('A pentagon', 'A pentagon has five sides.', 'Three sides is the smallest flat shape.'),
-      miss('A circle', 'A circle has no straight sides at all.', 'Look for the shape with exactly three sides.'),
+      miss('A circle', 'A circle is round, so it cannot be the straight-sided shape in the prompt.', 'Look for the shape with exactly three sides.'),
     ],
     lesson: 'A triangle has three straight sides and three angles. Tri means three, which helps you remember.',
     source,
@@ -799,7 +799,7 @@ export const col4thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     correct: '16 cm',
     wrong: [
       miss('15 cm', 'You multiplied the sides instead of adding them around.', 'Perimeter adds up all four sides.'),
-      miss('8 cm', 'You added only one length and one width.', 'A rectangle has two lengths and two widths.'),
+      miss('8 cm', '8 cm counts only half the boundary; perimeter needs all matching sides.', 'A rectangle has two lengths and two widths.'),
       miss('11 cm', 'You added three sides instead of all four.', 'Add all four sides: 5 + 3 + 5 + 3.'),
     ],
     lesson: 'Perimeter is the distance all the way around. A rectangle has two long sides and two short sides: 5 + 3 + 5 + 3 = 16 cm.',

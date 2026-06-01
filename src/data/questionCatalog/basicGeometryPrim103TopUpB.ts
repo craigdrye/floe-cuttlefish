@@ -60,7 +60,7 @@ export const basicGeometryPrim103TopUpBQuestions: Question[] = makeQuestionBank(
     wrong: [
       miss('9 cm', 'This only adds two of the three sides.', 'A triangle has three sides, so add all three.'),
       miss('11 cm', 'This leaves out one of the sides.', 'Add 4 + 5 + 6 to use every side.'),
-      miss('120 cm', 'This multiplies the sides instead of adding them.', 'For perimeter you add the sides, not multiply.'),
+      miss('120 cm', '120 cm treats the question like area, but this one asks for the distance around the shape.', 'For perimeter you add the sides, not multiply.'),
     ],
     lesson: 'A triangle has three sides. To find the perimeter, add the length of each side: 4 + 5 + 6 = 15 cm. Always make sure you have added every side once.',
     source,
@@ -724,7 +724,7 @@ export const basicGeometryPrim103TopUpBQuestions: Question[] = makeQuestionBank(
     prompt: 'You want to find out exactly how long your book is. What should you use?',
     correct: 'A ruler',
     wrong: [
-      miss('A clock', 'A clock measures time, not length.', 'To measure length, use a ruler.'),
+      miss('A clock', 'A clock is for time, but length is measured with tools like a ruler or tape measure.', 'To measure length, use a ruler.'),
       miss('A set of weighing scales', 'Scales measure how heavy something is, not how long.', 'Length needs a ruler or tape measure.'),
       miss('A measuring jug', 'A jug measures liquid, not length.', 'Use a ruler to measure how long the book is.'),
     ],

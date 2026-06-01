@@ -137,7 +137,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     wrong: [
       miss('82', 'You forgot to carry from 3 x 4.', 'The ones 3 x 4 = 12, so a ten carries over.'),
       miss('812', 'You wrote the parts side by side instead of adding them.', 'Carry the ten from 12 into the tens column.'),
-      miss('27', 'You added 23 and 4 instead of multiplying.', 'Four groups of 23, not 23 plus 4.'),
+      miss('27', '27 is 23 plus 4, but the prompt asks for four groups of 23.', 'Four groups of 23, not 23 plus 4.'),
     ],
     lesson: 'Break it up: 23 x 4 means 20 x 4 = 80 and 3 x 4 = 12. Add them: 80 + 12 = 92. Splitting a number into tens and ones makes multiplying much easier.',
     source,
@@ -153,7 +153,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     wrong: [
       miss('8', 'That would be sharing among 3 friends, not 4.', 'Divide 24 by 4, not by 3.'),
       miss('5', 'This is too few. Four fives only make 20.', 'Check: 4 x 6 = 24, so six is right.'),
-      miss('20', 'You subtracted 4 instead of dividing.', 'Dividing shares the sweets into equal groups.'),
+      miss('20', '20 is a subtraction result, but this prompt asks for a division share.', 'Dividing shares the sweets into equal groups.'),
     ],
     lesson: 'Sharing equally is division. 24 divided by 4 asks how many are in each of 4 equal groups. Since 4 x 6 = 24, each friend gets 6 sweets.',
     source,
@@ -167,7 +167,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     correct: '3 remainder 2',
     wrong: [
       miss('3 remainder 1', 'The leftover amount is not quite right.', 'After 5 x 3 = 15, count what is left over to 17.'),
-      miss('2 remainder 7', 'A remainder cannot be bigger than the number you divide by.', 'You can fit another group of 5 before stopping.'),
+      miss('2 remainder 7', '2 remainder 7 leaves too much behind; a valid remainder must be smaller than the divisor.', 'You can fit another group of 5 before stopping.'),
       miss('4 remainder 0', 'Four fives make 20, which is too many.', 'Five times 3 is 15, the closest without going over 17.'),
     ],
     lesson: '17 divided by 5 asks how many fives fit into 17. Three fives make 15, and that leaves 2 left over. So the answer is 3 remainder 2. The remainder must be smaller than 5.',
@@ -259,8 +259,8 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     correct: '2/4',
     wrong: [
       miss('1/4', 'This is only half of a half, so it is smaller.', 'For halves, the top should be exactly half the bottom.'),
-      miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'Check if the top is half of the bottom.'),
-      miss('3/4', '3/4 is three out of four equal pieces, which is more than half the shape.', 'One half means the top is half the bottom.'),
+      miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top is half of the bottom.'),
+      miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'One half means the top is half the bottom.'),
     ],
     lesson: 'Equivalent fractions look different but show the same amount. In 2/4, the top is exactly half the bottom, just like 1/2. If you cut each half into two, you get 2 pieces out of 4.',
     source,
@@ -304,7 +304,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     prompt: 'What is 1/5 + 2/5?',
     correct: '3/5',
     wrong: [
-      miss('3/10', '3/10 adds the denominators, but like fractions keep the same bottom number and only combine the tops.', 'Keep the bottom the same; only add the tops.'),
+      miss('3/10', '3/10 changes the denominator; when the bottoms already match, keep that bottom and add only the tops.', 'Keep the bottom the same; only add the tops.'),
       miss('2/5', 'You only counted one of the parts.', 'Add the tops: 1 + 2 = 3.'),
       miss('3/25', 'You multiplied the bottoms instead of keeping them.', 'The bottom stays 5 when both fractions are fifths.'),
     ],
@@ -382,7 +382,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     wrong: [
       miss('0.07', 'You put the answer in the wrong place.', 'Three tenths plus four tenths is seven tenths.'),
       miss('7', 'You forgot these are tenths, not whole numbers.', 'Add the tenths: 0.3 + 0.4 = 0.7.'),
-      miss('0.34', 'You wrote the digits side by side instead of adding.', 'Add 3 tenths and 4 tenths together.'),
+      miss('0.34', '0.34 sticks the digits together; addition means combine their values.', 'Add 3 tenths and 4 tenths together.'),
     ],
     lesson: 'Line up the decimal points and add as usual. 0.3 is three tenths and 0.4 is four tenths. Together that is seven tenths, written 0.7.',
     source,
@@ -395,7 +395,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     prompt: 'Which is bigger: 0.6 or 0.45?',
     correct: '0.6',
     wrong: [
-      miss('0.45', 'More digits does not mean a bigger number.', 'Compare the tenths first: 6 tenths beats 4 tenths.'),
+      miss('0.45', '0.45 looks longer, but decimals depend on place value, not digit count alone.', 'Compare the tenths first: 6 tenths beats 4 tenths.'),
       miss('They are equal', 'These show different amounts.', 'Line up the points and compare tenths.'),
       miss('You cannot compare them', 'You can always compare decimals by place value.', 'Think of 0.6 as 0.60 to compare easily.'),
     ],
@@ -489,7 +489,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     wrong: [
       miss('0', 'Zero is bigger than any negative number.', 'Negative numbers sit to the left of zero.'),
       miss('2', 'Two is the biggest of these, not the smallest.', 'Look for the number furthest left on a number line.'),
-      miss('They are equal', 'These are three different numbers.', 'Place them on a number line to compare.'),
+      miss('They are equal', 'They are equal misses that the three values are not equal; compare their positions or place values.', 'Place them on a number line to compare.'),
     ],
     lesson: 'On a number line, smaller numbers are further to the left. Negative 3 is left of zero, and 2 is to the right. So negative 3 is the smallest of the three.',
     source,
@@ -519,7 +519,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     correct: '9',
     wrong: [
       miss('6', 'You added 3 + 3 instead of multiplying.', 'Squared means times itself, not doubled.'),
-      miss('33', 'You wrote the digits side by side.', '3 squared means 3 x 3.'),
+      miss('33', '33 joins the digits as text instead of doing the arithmetic operation.', '3 squared means 3 x 3.'),
       miss('12', 'That would be 3 x 4, not 3 x 3.', 'Multiply 3 by itself.'),
     ],
     lesson: 'Squaring a number means multiplying it by itself. So 3 squared is 3 x 3 = 9. We call it squared because it makes the area of a square with sides of 3.',
@@ -594,7 +594,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     prompt: 'Three friends share a 21 pound meal equally. How much does each pay?',
     correct: '7 pounds',
     wrong: [
-      miss('18 pounds', 'You subtracted 3 instead of dividing.', 'Share the 21 pounds among 3 people.'),
+      miss('18 pounds', '18 pounds is a take-away result, but the story asks for sharing into 3 equal parts.', 'Share the 21 pounds among 3 people.'),
       miss('6 pounds', 'Three sixes only make 18, not 21.', 'Check: 3 x 7 = 21.'),
       miss('63 pounds', '63 pounds grows the number by multiplying, but this question asks you to share or split it.', 'Sharing means splitting into equal parts.'),
     ],
@@ -716,7 +716,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     prompt: 'If 4 x ___ = 28, what is the missing number?',
     correct: '7',
     wrong: [
-      miss('24', 'You subtracted 4 instead of dividing.', 'Divide 28 by 4 to find the box.'),
+      miss('24', '24 is a subtraction result, but this prompt asks for a division share.', 'Divide 28 by 4 to find the box.'),
       miss('6', 'Four sixes only make 24.', 'Check: 4 x 7 = 28.'),
       miss('32', 'You added 4 instead of dividing.', 'Ask how many fours fit into 28.'),
     ],
@@ -764,7 +764,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     wrong: [
       miss('70 cm', 'You missed the full ten from the ones column.', 'Add the ones: 5 + 5 = 10.'),
       miss('10 cm', '10 cm comes from taking away, but this question asks for the amounts together.', 'Together means add the lengths.'),
-      miss('800 cm', 'You added a zero by mistake.', '45 + 35 is 80, not 800.'),
+      miss('800 cm', '800 cm is inflated by an extra zero; recheck the place value of the final answer.', '45 + 35 is 80, not 800.'),
     ],
     lesson: 'To join two lengths, add them. 45 + 35: the ones make 5 + 5 = 10, and the tens make 40 + 30 = 70. Together that is 80 cm.',
     source,
@@ -810,7 +810,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     wrong: [
       miss('70p', 'You missed adding the 10p coin.', 'Add all three: 50 + 20 + 10.'),
       miss('60p', 'You missed one of the coins.', 'Include the 50p, 20p, and 10p.'),
-      miss('800p', 'You added a zero by mistake.', '50 + 20 + 10 is 80, not 800.'),
+      miss('800p', '800p is inflated by an extra zero; recheck the place value of the final answer.', '50 + 20 + 10 is 80, not 800.'),
     ],
     lesson: 'Add the coin values together: 50p + 20p + 10p = 80p. When counting money, line up the coins and add their values one by one.',
     source,
@@ -825,7 +825,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     wrong: [
       miss('37p', 'You added 2 instead of doubling.', 'Two weeks means twice as much.'),
       miss('55p', 'This is not quite double.', 'Double 35: 30 doubled is 60, 5 doubled is 10.'),
-      miss('350p', 'You added a zero by mistake.', '35 doubled is 70, not 350.'),
+      miss('350p', '350p is inflated by an extra zero; recheck the place value of the final answer.', '35 doubled is 70, not 350.'),
     ],
     lesson: 'Saving the same amount for 2 weeks means doubling it. Double 35p: 30 doubles to 60 and 5 doubles to 10, giving 70p. Two equal weeks means multiply by 2.',
     source,

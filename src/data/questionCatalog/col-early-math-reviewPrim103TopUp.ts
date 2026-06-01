@@ -241,7 +241,7 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     correct: '13',
     wrong: [
       miss('5', 'That looks like you took the birds away instead of adding.', 'More birds came, so the number goes up.'),
-      miss('12', 'That is one short of the total.', 'Count on from 9: 10, 11, 12, 13.'),
+      miss('12', '12 stops one count early; include the final item in the total.', 'Count on from 9: 10, 11, 12, 13.'),
       miss('94', 'You wrote the numbers side by side instead of adding.', 'Join the two groups of birds together.'),
     ],
     lesson: 'When more things join, we add. Nine birds and four more birds make 13 birds in all.',
@@ -682,7 +682,7 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     correct: '13',
     wrong: [
       miss('1', 'The word "in all" means add, not take away.', 'Join the red and blue balloons together.'),
-      miss('12', 'That is one short of the total.', 'Count on from 7: add the 6 blue balloons.'),
+      miss('12', '12 stops one count early; include the final item in the total.', 'Count on from 7: add the 6 blue balloons.'),
       miss('14', 'That is one too many.', 'Add exactly 7 and 6.'),
     ],
     lesson: 'When a problem asks how many in all, we add. Seven red and six blue balloons make 13 balloons.',
@@ -819,7 +819,7 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     correct: '9',
     wrong: [
       miss('1', 'Finding more pennies adds to your total, not takes away.', 'Add the 4 new pennies to your 5.'),
-      miss('8', 'That is one short of the total.', 'Count on from 5: 6, 7, 8, 9.'),
+      miss('8', '8 stops one count early; include the final item in the total.', 'Count on from 5: 6, 7, 8, 9.'),
       miss('54', 'You wrote the numbers side by side instead of adding.', 'Join the two groups of pennies.'),
     ],
     lesson: 'Each penny is worth one. Five pennies and four more pennies make 9 pennies in all.',
@@ -835,7 +835,7 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     wrong: [
       miss('5', 'A week has more than just the school days.', 'Remember to count the weekend days too.'),
       miss('10', 'A week has fewer than ten days.', 'Count from Monday all the way to Sunday.'),
-      miss('12', 'Twelve is the number of months in a year, not days in a week.', 'A week is shorter than that.'),
+      miss('12', '12 belongs to months in a year, but the week has seven days.', 'A week is shorter than that.'),
     ],
     lesson: 'A week has 7 days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and Sunday.',
     source,

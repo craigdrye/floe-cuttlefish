@@ -91,7 +91,7 @@ export const colGetReadyFor6thGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('2/3', 'You added the fractions instead of multiplying.', 'Multiply the tops and multiply the bottoms.'),
       miss('1/5', 'You added the bottom numbers. For multiplying, you multiply them.', 'Multiply the bottoms: 2 x 3 = 6.'),
-      miss('2/6', 'You multiplied the bottoms but added the tops.', 'Multiply the tops too: 1 x 1 = 1.'),
+      miss('2/6', '2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.', 'Multiply the tops too: 1 x 1 = 1.'),
     ],
     lesson: 'To multiply fractions, multiply the tops together and the bottoms together. So 1/2 x 1/3 = (1 x 1)/(2 x 3) = 1/6. Finding half of a third gives a smaller piece, one sixth.',
     source,
@@ -441,7 +441,7 @@ export const colGetReadyFor6thGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: '92',
     wrong: [
       miss('82', 'You forgot to carry when multiplying the ones.', 'Multiply 3 x 4 = 12, carry the 1 ten.'),
-      miss('27', 'You added 23 and 4 instead of multiplying.', 'Times means groups of, so 4 groups of 23.'),
+      miss('27', '27 is 23 plus 4, but the prompt asks for four groups of 23.', 'Times means groups of, so 4 groups of 23.'),
       miss('812', 'You wrote the digits side by side instead of carrying.', 'Carry the ten from 3 x 4 into the tens place.'),
     ],
     lesson: 'Multiply the ones first: 3 x 4 = 12, write 2 and carry 1. Then 2 x 4 = 8, plus the carried 1 makes 9. So 23 x 4 = 92.',
@@ -518,7 +518,7 @@ export const colGetReadyFor6thGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('4', 'You may have divided by 6 instead of by 4.', 'Split 24 into 4 equal groups.'),
       miss('8', 'That would be sharing among 3 friends, not 4.', '24 divided by 4 equal shares.'),
-      miss('20', 'You subtracted 4 instead of dividing.', 'Sharing equally means divide into 4 groups.'),
+      miss('20', '20 is a subtraction result, but this prompt asks for a division share.', 'Sharing equally means divide into 4 groups.'),
     ],
     lesson: 'Sharing equally means dividing. Split 24 cookies into 4 equal groups: 24 divided by 4 = 6. Each friend gets 6 cookies.',
     source,
@@ -700,7 +700,7 @@ export const colGetReadyFor6thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which word is the opposite of "ancient"?',
     correct: 'Modern',
     wrong: [
-      miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is a word that means the opposite.'),
+      miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is a word that means the opposite.'),
       miss('Tired', 'Tired is about how you feel, not about time.', 'Look for a word meaning new or from today.'),
       miss('Large', 'Large is about size, not about how old something is.', 'The opposite of very old is something new.'),
     ],

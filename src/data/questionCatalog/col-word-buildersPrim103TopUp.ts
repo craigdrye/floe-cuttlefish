@@ -614,7 +614,7 @@ export const colWordBuildersPrim103TopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('2', 'Banana has three beats: ba-na-na.', 'Clap slowly: ba-na-na.'),
       miss('1', 'Banana has more than one beat.', 'Say it in chunks and count the claps.'),
-      miss('4', 'That is one beat too many.', 'Break it into ba-na-na and count.'),
+      miss('4', '4 adds an extra beat; count the rhythm or pattern once more slowly.', 'Break it into ba-na-na and count.'),
     ],
     lesson: 'You can break long words into syllables, or beats. "Banana" breaks into ba-na-na, which is three claps, so it has three syllables. Each vowel sound usually makes a beat.',
     source,

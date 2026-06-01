@@ -59,7 +59,7 @@ export const colEurekaMathFoundations3rd8thGradePrim103TopUpQuestions: Question[
     correct: 'less than (<)',
     wrong: [
       miss('greater than (>)', '4,308 is actually smaller than 4,380.', 'Compare the tens place: 0 tens versus 8 tens.'),
-      miss('equal to (=)', 'The two numbers are not the same.', 'Look closely at the tens digit in each number.'),
+      miss('equal to (=)', 'equal to (=) would mean both sides match, but these two numbers differ when you compare the digits.', 'Look closely at the tens digit in each number.'),
       miss('cannot be compared', 'Any two whole numbers can be compared.', 'Check each place from left to right.'),
     ],
     lesson: 'To compare numbers, check each place from left to right. The thousands and hundreds match, but 4,308 has 0 tens while 4,380 has 8 tens. So 4,308 is less than 4,380.',
@@ -73,7 +73,7 @@ export const colEurekaMathFoundations3rd8thGradePrim103TopUpQuestions: Question[
     prompt: 'What number is 10 times as much as 40?',
     correct: '400',
     wrong: [
-      miss('50', 'This adds 10 instead of multiplying by 10.', 'Ten times means multiply, not add.'),
+      miss('50', '50 adds one ten, but multiplying by 10 scales the entire number.', 'Ten times means multiply, not add.'),
       miss('410', 'This adds 10 to 40 plus another mistake.', 'Multiplying by 10 shifts each digit one place left.'),
       miss('4,000', 'This is 100 times as much, not 10 times.', 'Multiplying 40 by 10 gives 400, not 4,000.'),
     ],
@@ -165,7 +165,7 @@ export const colEurekaMathFoundations3rd8thGradePrim103TopUpQuestions: Question[
     correct: '9',
     wrong: [
       miss('3', 'This gives back the number you divided by, not the missing factor.', 'Division undoes multiplication, so look for the other factor.'),
-      miss('24', 'This subtracts 3 instead of dividing.', 'Use the matching multiplication fact to help.'),
+      miss('24', '24 takes away one 3, but this division question asks for equal sharing.', 'Use the matching multiplication fact to help.'),
       miss('30', 'This adds 3 instead of dividing.', 'Dividing by 3 reverses multiplying by 3.'),
     ],
     lesson: 'Multiplication and division are opposites, so they share fact families. Since 9 x 3 = 27, dividing 27 by 3 gives 9. Knowing one fact helps you find the other.',
@@ -195,8 +195,8 @@ export const colEurekaMathFoundations3rd8thGradePrim103TopUpQuestions: Question[
     prompt: 'Which fraction is equal to 1/2?',
     correct: '2/4',
     wrong: [
-      miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'Half of 4 parts is 2 parts.'),
-      miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For halves, the top should be half of the bottom.'),
+      miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'Half of 4 parts is 2 parts.'),
+      miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For halves, the top should be half of the bottom.'),
       miss('1/3', 'One third is less than one half.', 'In an equal fraction to 1/2, the top is half the bottom.'),
     ],
     lesson: 'Equivalent fractions name the same amount in different ways. If you cut each half in two, one half becomes 2/4. The top is still half of the bottom, so 2/4 equals 1/2.',
@@ -484,7 +484,7 @@ export const colEurekaMathFoundations3rd8thGradePrim103TopUpQuestions: Question[
     prompt: 'A rectangle is 4 cm long and 6 cm wide. What is its area?',
     correct: '24 square cm',
     wrong: [
-      miss('10 square cm', 'This adds the sides instead of multiplying.', 'Area is length times width.'),
+      miss('10 square cm', '10 square cm adds lengths around or across the shape, but area needs length times width.', 'Area is length times width.'),
       miss('20 square cm', 'This adds all four sides, which is perimeter.', 'Multiply 4 by 6 to find area.'),
       miss('12 square cm', 'This multiplied only by 3 by mistake.', 'Multiply length 4 by width 6.'),
     ],
@@ -529,9 +529,9 @@ export const colEurekaMathFoundations3rd8thGradePrim103TopUpQuestions: Question[
     prompt: 'Which unit is best for measuring the length of a pencil?',
     correct: 'centimeters',
     wrong: [
-      miss('kilometers', 'Kilometers measure long distances like between towns.', 'A pencil is small, so use a small unit.'),
+      miss('kilometers', 'kilometers fits long travel distances, not the smaller measure asked for here.', 'A pencil is small, so use a small unit.'),
       miss('meters', 'A meter is much longer than a pencil.', 'Pick a unit closer to the pencil size.'),
-      miss('liters', 'Liters measure liquid, not length.', 'Length needs a length unit.'),
+      miss('liters', 'liters is for liquid volume, not measuring how long something is.', 'Length needs a length unit.'),
     ],
     lesson: 'We pick units that fit the size of what we measure. A pencil is small, so centimeters fit well. Kilometers are for long distances, and liters measure liquids.',
     source,

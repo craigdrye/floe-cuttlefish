@@ -568,7 +568,7 @@ export const readingVocab5thPrim103TopUpBQuestions: Question[] = makeQuestionBan
     correct: 'Glad',
     wrong: [
       miss('Sad', 'Sad is the opposite of happy, so it is an antonym.', 'A synonym means the SAME, not the opposite.'),
-      miss('Angry', 'Angry is a different feeling, not the same as happy.', 'Look for a word that means happy.'),
+      miss('Angry', 'Angry names a different mood; a synonym should stay close to happy.', 'Look for a word that means happy.'),
       miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Find a word that matches happy in meaning.'),
     ],
     lesson: 'A synonym is a word that means almost the same as another word. "Glad" and "happy" both mean feeling good, so they are synonyms. Synonyms help you say the same idea in different ways.',
@@ -583,7 +583,7 @@ export const readingVocab5thPrim103TopUpBQuestions: Question[] = makeQuestionBan
     correct: 'End',
     wrong: [
       miss('Start', 'Start means the same as begin, so it is a synonym.', 'An antonym is the OPPOSITE, not the same.'),
-      miss('Open', 'Open is not the opposite of begin.', 'Think about what is the opposite of begin.'),
+      miss('Open', 'Open does not undo begin; look for the word that means the action has finished.', 'Think about what is the opposite of begin.'),
       miss('Continue', 'Continue means to keep going, not the opposite of begin.', 'Look for a word that means to finish.'),
     ],
     lesson: 'An antonym is a word that means the opposite. "Begin" and "end" are opposites, so they are antonyms. Remember: synonyms mean the same, and antonyms mean the opposite.',

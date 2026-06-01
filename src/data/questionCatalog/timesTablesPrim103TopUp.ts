@@ -306,7 +306,7 @@ export const timesTablesPrim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     wrong: [
       miss('4', 'This gives the size of each group, but you divided by 4 to find how many groups.', 'Dividing by 4 undoes multiplying by 4.'),
       miss('8', 'This is too big; 8 fours make 32, not 24.', 'Use the matching fact 6 x 4 = 24.'),
-      miss('20', 'This subtracts 4 from 24 instead of dividing.', 'Division shares 24 into groups of 4.'),
+      miss('20', '20 subtracts one group of 4, but the prompt asks how many are in each equal group.', 'Division shares 24 into groups of 4.'),
     ],
     lesson: 'Multiplication and division are opposites. Since 6 x 4 = 24, you also know 24 divided by 4 = 6 and 24 divided by 6 = 4.',
     source,
@@ -736,7 +736,7 @@ export const timesTablesPrim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     wrong: [
       miss('6', 'This is too small; 4 x 6 = 24, not 28.', 'Count by fours until you reach 28.'),
       miss('8', 'This is too big; 4 x 8 = 32, not 28.', 'Try one less than 8.'),
-      miss('24', 'This subtracts 4 from 28 instead of dividing.', 'Ask how many fours make 28.'),
+      miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Ask how many fours make 28.'),
     ],
     lesson: 'To find the missing factor, ask how many fours make 28. Since 4 x 7 = 28, the missing number is 7. You can also do 28 divided by 4 = 7.',
     source,

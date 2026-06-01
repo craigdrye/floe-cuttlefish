@@ -603,7 +603,7 @@ export const readingVocab4thPrim103TopUpAQuestions: Question[] = makeQuestionBan
     correct: 'End',
     wrong: [
       miss('Start', 'Start means the same as begin, not the opposite.', 'An antonym is the opposite, so look for a word about finishing.'),
-      miss('Open', 'Open is not the opposite of begin.', 'Think about what you do when something is over.'),
+      miss('Open', 'Open does not undo begin; look for the word that means the action has finished.', 'Think about what you do when something is over.'),
       miss('Try', 'Trying is not the opposite of beginning.', 'Find the word that means to finish.'),
     ],
     lesson: '"Begin" and "end" are opposites, so they are antonyms. Watch out for "start," which is a synonym, not an antonym, of begin.',

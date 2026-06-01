@@ -755,7 +755,7 @@ export const col5thGradeReadingAndVocabPrim103TopUpQuestions: Question[] = makeQ
     prompt: 'Which word means almost the same as "happy"?',
     correct: 'Joyful',
     wrong: [
-      miss('Angry', 'Angry is a different feeling, not the same as happy.', 'A synonym means almost the same thing.'),
+      miss('Angry', 'Angry names a different mood; a synonym should stay close to happy.', 'A synonym means almost the same thing.'),
       miss('Tired', 'Tired means sleepy, not happy.', 'Find a word that also means glad.'),
       miss('Hungry', 'Hungry means you want food, not that you are happy.', 'Pick the word closest to happy.'),
     ],
@@ -770,7 +770,7 @@ export const col5thGradeReadingAndVocabPrim103TopUpQuestions: Question[] = makeQ
     prompt: 'Which word is the opposite of "ancient"?',
     correct: 'Modern',
     wrong: [
-      miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is the opposite, so look for new.'),
+      miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),
       miss('Tiny', 'Tiny is about size, not about age.', 'Find a word that means new or recent.'),
       miss('Heavy', 'Heavy is about weight, not about how old something is.', 'The opposite of old and ancient is new.'),
     ],

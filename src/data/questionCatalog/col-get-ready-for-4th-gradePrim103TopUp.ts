@@ -120,7 +120,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: '6',
     wrong: [
       miss('8', 'This is 24 / 3, not 24 / 4.', 'Count by 4s to 24: 4, 8, 12, 16, 20, 24.'),
-      miss('20', 'This subtracts 4 from 24 instead of dividing.', 'Dividing splits 24 into equal groups of 4.'),
+      miss('20', '20 subtracts one group of 4, but the prompt asks how many are in each equal group.', 'Dividing splits 24 into equal groups of 4.'),
       miss('5', 'This is one group too few.', 'It takes 6 fours to make 24.'),
     ],
     lesson: 'To find 24 / 4, ask how many 4s make 24. Count by 4s: 4, 8, 12, 16, 20, 24, which is 6 jumps. So 24 / 4 = 6.',
@@ -226,7 +226,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: 'greater than (>)',
     wrong: [
       miss('less than (<)', '364 is bigger than 346, so it is not less than.', 'Compare the tens: 6 tens beats 4 tens.'),
-      miss('equal to (=)', 'The two numbers are not the same.', 'Look closely; the tens digits are different.'),
+      miss('equal to (=)', 'equal to (=) would mean both sides match, but these two numbers differ when you compare the digits.', 'Look closely; the tens digits are different.'),
       miss('cannot tell', 'You can always compare two numbers.', 'Start from the left and compare each digit.'),
     ],
     lesson: 'To compare numbers, start at the left. Both have 3 hundreds, but 364 has 6 tens while 346 has only 4 tens. So 364 is greater than 346.',
@@ -362,7 +362,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'There are 28 kids who split into 4 equal teams. How many kids are on each team?',
     correct: '7',
     wrong: [
-      miss('24', 'This subtracts 4 from 28 instead of dividing.', 'Split 28 into 4 equal groups.'),
+      miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Split 28 into 4 equal groups.'),
       miss('6', 'This is too few; 4 teams of 6 is only 24.', 'Try 4 teams of 7 to reach 28.'),
       miss('32', 'This adds 4 to 28 instead of dividing.', 'Sharing into teams makes each group smaller.'),
     ],
@@ -560,7 +560,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which word in this sentence is a noun? "The dog ran fast."',
     correct: 'dog',
     wrong: [
-      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, animal, or thing.'),
+      miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),
       miss('fast', 'Fast describes how the dog ran, so it is not a noun.', 'Look for the animal in the sentence.'),
       miss('the', 'The is a small word that points to a noun but is not one itself.', 'Find the word that names something.'),
     ],
@@ -638,7 +638,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('30', '30 minutes is only half an hour.', 'A full hour is twice as many minutes.'),
       miss('100', 'An hour does not have 100 minutes.', 'Count by the clock: 60 minutes make an hour.'),
-      miss('24', '24 is the number of hours in a day, not minutes in an hour.', 'Think about the minute marks on a clock.'),
+      miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'Think about the minute marks on a clock.'),
     ],
     lesson: 'There are 60 minutes in one hour. When the minute hand goes all the way around the clock once, 60 minutes have passed.',
     source,
@@ -653,7 +653,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('5', '5 is the number of school days, but a week has more.', 'Do not forget the weekend days.'),
       miss('30', '30 is about the number of days in a month, not a week.', 'A week is much shorter than a month.'),
-      miss('12', '12 is the number of months in a year, not days in a week.', 'Count the days: Sunday through Saturday.'),
+      miss('12', '12 is a months-in-a-year fact, not the seven-day week.', 'Count the days: Sunday through Saturday.'),
     ],
     lesson: 'There are 7 days in a week: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, and Saturday.',
     source,
@@ -666,7 +666,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which tool would you use to measure how long a pencil is?',
     correct: 'a ruler',
     wrong: [
-      miss('a clock', 'A clock measures time, not length.', 'Length means how long something is.'),
+      miss('a clock', 'a clock is for time, but length is measured with tools like a ruler or tape measure.', 'Length means how long something is.'),
       miss('a scale', 'A scale measures weight, not length.', 'Find the tool with inches or centimeters.'),
       miss('a thermometer', 'A thermometer measures temperature, not length.', 'A ruler has marks for measuring length.'),
     ],
@@ -713,8 +713,8 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: 'a square',
     wrong: [
       miss('a triangle', 'A triangle has only 3 sides, not 4.', 'Count the sides: this shape has 4.'),
-      miss('a circle', 'A circle has no straight sides or corners.', 'This shape has 4 straight equal sides.'),
-      miss('a rectangle', 'A rectangle has 4 corners but its sides are not all equal.', 'All 4 sides here are equal, which makes a square.'),
+      miss('a circle', 'a circle is round with no corners; this clue needs a shape with straight sides.', 'This shape has 4 straight equal sides.'),
+      miss('a rectangle', 'a rectangle has four corners, but the equal-side clue points somewhere else.', 'All 4 sides here are equal, which makes a square.'),
     ],
     lesson: 'A square has 4 equal sides and 4 corners that are all square. A rectangle also has 4 corners, but a square is special because all its sides are the same length.',
     source,

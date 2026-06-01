@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-01T07:03:49.158Z",
+  "generatedAt": "2026-06-01T07:06:34.955Z",
   "summary": {
     "filesScanned": 758,
     "questionsScanned": 56987,
     "extractedQuestionRecords": 57144,
     "skippedNonPlayablePlaceholders": 157,
     "distinctQuestionIds": 38776,
-    "totalIssues": 671,
-    "jsonIssuesStored": 671,
-    "duplicateWhyWrongGroups": 149
+    "totalIssues": 574,
+    "jsonIssuesStored": 574,
+    "duplicateWhyWrongGroups": 117
   },
   "flagCounts": {
-    "repeated-why-wrong": 505,
+    "repeated-why-wrong": 408,
     "obvious-irrelevant-distractor": 45,
     "meta-distractor": 121
   },
@@ -777,7 +777,7 @@
   ],
   "duplicateWhyWrongGroups": [
     {
-      "text": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+      "text": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "count": 7,
       "examples": [
         {
@@ -786,7 +786,7 @@
           "questionId": 7850034,
           "title": "Adjectives",
           "chapter": "Grammar",
-          "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'An adjective tells what something is like.'),"
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),"
         },
         {
           "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
@@ -794,7 +794,7 @@
           "questionId": 7852047,
           "title": "Identifying nouns",
           "chapter": "Grammar and Language",
-          "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),"
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
         },
         {
           "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
@@ -802,7 +802,7 @@
           "questionId": 7856029,
           "title": "Identifying a noun",
           "chapter": "Grammar",
-          "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),"
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
         },
         {
           "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
@@ -810,7 +810,7 @@
           "questionId": 7851051,
           "title": "Finding the noun",
           "chapter": "Grammar and Writing",
-          "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, animal, or thing.'),"
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),"
         },
         {
           "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
@@ -818,7 +818,7 @@
           "questionId": 7853036,
           "title": "Finding the noun",
           "chapter": "Grammar Basics",
-          "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, animal, or thing.'),"
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),"
         },
         {
           "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
@@ -826,7 +826,7 @@
           "questionId": 7855042,
           "title": "Identifying a noun",
           "chapter": "Grammar and Writing",
-          "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),"
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
         },
         {
           "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
@@ -834,7 +834,7 @@
           "questionId": 7846031,
           "title": "Finding the noun",
           "chapter": "Grammar",
-          "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun is a person, place, animal or thing.'),"
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),"
         }
       ]
     },
@@ -901,61 +901,7 @@
       ]
     },
     {
-      "text": "A triangle has only 3 sides.",
-      "count": 6,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/basicGeometryPrim103TopUpA.ts",
-          "line": 32,
-          "questionId": 7808001,
-          "title": "Four equal sides",
-          "chapter": "Naming 2D shapes",
-          "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'This shape has 4 equal sides.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/basicGeometryPrim103TopUpA.ts",
-          "line": 78,
-          "questionId": 7808004,
-          "title": "The six-sided shape",
-          "chapter": "Naming 2D shapes",
-          "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'A shape with 6 sides is a hexagon.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/basicGeometryPrim103TopUpA.ts",
-          "line": 107,
-          "questionId": 7808006,
-          "title": "Long box shape",
-          "chapter": "Naming 2D shapes",
-          "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'This shape has 4 sides.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/basicGeometryPrim103TopUpA.ts",
-          "line": 166,
-          "questionId": 7808010,
-          "title": "Which has the most sides",
-          "chapter": "Naming 2D shapes",
-          "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'A hexagon has 6 sides, which is more.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-          "line": 443,
-          "questionId": 7849028,
-          "title": "Naming a shape",
-          "chapter": "Geometry and Shapes",
-          "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'This shape has 4 equal sides.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-          "line": 457,
-          "questionId": 7851029,
-          "title": "Naming shapes",
-          "chapter": "Shapes and Measurement",
-          "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'Count the sides of the shape described.'),"
-        }
-      ]
-    },
-    {
-      "text": "Old means almost the same as ancient, not the opposite.",
+      "text": "old is close in meaning to ancient; the prompt wants a word pointing the other way.",
       "count": 6,
       "examples": [
         {
@@ -964,7 +910,7 @@
           "questionId": 7852045,
           "title": "Antonyms",
           "chapter": "Vocabulary and Word Meaning",
-          "snippet": "miss('old', 'Old means almost the same as ancient, not the opposite.', 'An antonym means the opposite.'),"
+          "snippet": "miss('old', 'old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the opposite.'),"
         },
         {
           "file": "src/data/questionCatalog/col-5th-grade-ny-next-genPrim103TopUp.ts",
@@ -972,7 +918,7 @@
           "questionId": 7854047,
           "title": "Finding an antonym",
           "chapter": "Vocabulary",
-          "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is the opposite, so look for new.'),"
+          "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),"
         },
         {
           "file": "src/data/questionCatalog/col-5th-grade-reading-and-vocabPrim103TopUp.ts",
@@ -980,7 +926,7 @@
           "questionId": 7835050,
           "title": "Choosing an antonym",
           "chapter": "Vocabulary",
-          "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is the opposite, so look for new.'),"
+          "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),"
         },
         {
           "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
@@ -988,7 +934,7 @@
           "questionId": 7855039,
           "title": "Antonyms",
           "chapter": "Vocabulary",
-          "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym means the reverse.'),"
+          "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the reverse.'),"
         },
         {
           "file": "src/data/questionCatalog/col-get-ready-for-6th-gradePrim103TopUp.ts",
@@ -996,7 +942,7 @@
           "questionId": 7857045,
           "title": "Finding an antonym",
           "chapter": "Reading Comprehension - Vocabulary",
-          "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is a word that means the opposite.'),"
+          "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is a word that means the opposite.'),"
         },
         {
           "file": "src/data/questionCatalog/elevenPlusPrim103TopUp.ts",
@@ -1004,7 +950,7 @@
           "questionId": 7847003,
           "title": "Word that means the opposite",
           "chapter": "Verbal Reasoning - Word Patterns",
-          "snippet": "miss('old', 'Old means almost the same as ancient, not the opposite.', 'You want a word that means new or recent.'),"
+          "snippet": "miss('old', 'old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'You want a word that means new or recent.'),"
         }
       ]
     },
@@ -1171,6 +1117,60 @@
       ]
     },
     {
+      "text": "Triangle has three sides; the target shape needs the side count described in the clue.",
+      "count": 6,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/basicGeometryPrim103TopUpA.ts",
+          "line": 32,
+          "questionId": 7808001,
+          "title": "Four equal sides",
+          "chapter": "Naming 2D shapes",
+          "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'This shape has 4 equal sides.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/basicGeometryPrim103TopUpA.ts",
+          "line": 78,
+          "questionId": 7808004,
+          "title": "The six-sided shape",
+          "chapter": "Naming 2D shapes",
+          "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'A shape with 6 sides is a hexagon.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/basicGeometryPrim103TopUpA.ts",
+          "line": 107,
+          "questionId": 7808006,
+          "title": "Long box shape",
+          "chapter": "Naming 2D shapes",
+          "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'This shape has 4 sides.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/basicGeometryPrim103TopUpA.ts",
+          "line": 166,
+          "questionId": 7808010,
+          "title": "Which has the most sides",
+          "chapter": "Naming 2D shapes",
+          "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'A hexagon has 6 sides, which is more.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
+          "line": 443,
+          "questionId": 7849028,
+          "title": "Naming a shape",
+          "chapter": "Geometry and Shapes",
+          "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'This shape has 4 equal sides.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
+          "line": 457,
+          "questionId": 7851029,
+          "title": "Naming shapes",
+          "chapter": "Shapes and Measurement",
+          "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'Count the sides of the shape described.'),"
+        }
+      ]
+    },
+    {
       "text": "0 has the right kind of size but the wrong sign. Recheck the subtraction or equation direction before simplifying.",
       "count": 5,
       "examples": [
@@ -1263,7 +1263,7 @@
       ]
     },
     {
-      "text": "2/3 is more than half because two of three equal parts covers most of the whole.",
+      "text": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
       "count": 5,
       "examples": [
         {
@@ -1272,7 +1272,7 @@
           "questionId": 7852020,
           "title": "Equivalent fractions",
           "chapter": "Fractions",
-          "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'Check if the top number is exactly half of the bottom.'),"
+          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top number is exactly half of the bottom.'),"
         },
         {
           "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
@@ -1280,7 +1280,7 @@
           "questionId": 7816016,
           "title": "Equivalent fractions",
           "chapter": "Fractions Basics",
-          "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'Check if the top is half of the bottom.'),"
+          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top is half of the bottom.'),"
         },
         {
           "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
@@ -1288,7 +1288,7 @@
           "questionId": 7815010,
           "title": "Equivalent fractions",
           "chapter": "Fractions",
-          "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For one half, the top is exactly half the bottom.'),"
+          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top is exactly half the bottom.'),"
         },
         {
           "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
@@ -1296,7 +1296,7 @@
           "questionId": 7814012,
           "title": "Equivalent fractions",
           "chapter": "Fractions",
-          "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For halves, the top should be half of the bottom.'),"
+          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For halves, the top should be half of the bottom.'),"
         },
         {
           "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
@@ -1304,7 +1304,7 @@
           "questionId": 7846000,
           "title": "Equivalent fractions",
           "chapter": "Fractions",
-          "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For one half, the top number should be exactly half of the bottom number.'),"
+          "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top number should be exactly half of the bottom number.'),"
         }
       ]
     },
@@ -1561,7 +1561,7 @@
       ]
     },
     {
-      "text": "1/4 is one out of four equal pieces, which is smaller than one out of two.",
+      "text": "1/4 is only one quarter, so it is smaller than a half.",
       "count": 4,
       "examples": [
         {
@@ -1570,7 +1570,7 @@
           "questionId": 7806014,
           "title": "Equivalent fractions",
           "chapter": "Fractions",
-          "snippet": "miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'Try doubling both the top and bottom of 1/2.'),"
+          "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'Try doubling both the top and bottom of 1/2.'),"
         },
         {
           "file": "src/data/questionCatalog/class5MathPrim103TopUp.ts",
@@ -1578,7 +1578,7 @@
           "questionId": 7804038,
           "title": "Fractions on a line plot",
           "chapter": "Line Plots",
-          "snippet": "miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'A half is bigger than a quarter.'),"
+          "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'A half is bigger than a quarter.'),"
         },
         {
           "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
@@ -1586,7 +1586,7 @@
           "questionId": 7815010,
           "title": "Equivalent fractions",
           "chapter": "Fractions",
-          "snippet": "miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'A half means the top is half the bottom.'),"
+          "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'A half means the top is half the bottom.'),"
         },
         {
           "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
@@ -1594,7 +1594,7 @@
           "questionId": 7814012,
           "title": "Equivalent fractions",
           "chapter": "Fractions",
-          "snippet": "miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'Half of 4 parts is 2 parts.'),"
+          "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'Half of 4 parts is 2 parts.'),"
         }
       ]
     },
@@ -1865,7 +1865,7 @@
       ]
     },
     {
-      "text": "Every whole number is either even or odd.",
+      "text": "Neither is still part of the even-or-odd number family; check the ones digit instead.",
       "count": 4,
       "examples": [
         {
@@ -1874,7 +1874,7 @@
           "questionId": 7801044,
           "title": "Even or odd",
           "chapter": "Place Value and Numbers",
-          "snippet": "miss('Neither', 'Every whole number is either even or odd.', 'See if 8 can be shared into two equal groups.'),"
+          "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'See if 8 can be shared into two equal groups.'),"
         },
         {
           "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
@@ -1882,7 +1882,7 @@
           "questionId": 7803024,
           "title": "Even or Odd",
           "chapter": "Factors and Multiples",
-          "snippet": "miss('Neither', 'Every whole number is either even or odd.', 'Check the ones digit of the number.'),"
+          "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Check the ones digit of the number.'),"
         },
         {
           "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
@@ -1890,7 +1890,7 @@
           "questionId": 7810054,
           "title": "Even or odd",
           "chapter": "Patterns",
-          "snippet": "miss('Neither', 'Every whole number is either even or odd.', 'Check if it can split into two equal groups.'),"
+          "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Check if it can split into two equal groups.'),"
         },
         {
           "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
@@ -1898,7 +1898,7 @@
           "questionId": 7851008,
           "title": "Even or odd",
           "chapter": "Comparing Numbers",
-          "snippet": "miss('Neither', 'Every whole number is either even or odd.', 'Look at the ones digit: 4 is even.'),"
+          "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Look at the ones digit: 4 is even.'),"
         }
       ]
     },
@@ -2305,44 +2305,6 @@
       ]
     },
     {
-      "text": "This subtracts 5 from 20 instead of dividing.",
-      "count": 4,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/class3MathPrim103TopUp.ts",
-          "line": 122,
-          "questionId": 7802007,
-          "title": "Twenty divided by five",
-          "chapter": "Division facts",
-          "snippet": "miss('15', 'This subtracts 5 from 20 instead of dividing.', 'Ask how many 5s fit inside 20.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
-          "line": 124,
-          "questionId": 7810007,
-          "title": "Twenty divided by five",
-          "chapter": "Division",
-          "snippet": "miss('15', 'This subtracts 5 from 20 instead of dividing.', 'Count by fives until you reach 20: 5, 10, 15, 20.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-          "line": 137,
-          "questionId": 7850008,
-          "title": "Division as missing factor",
-          "chapter": "Division",
-          "snippet": "miss('15', 'This subtracts 5 from 20 instead of dividing.', 'Ask how many 5s fit inside 20.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-pre-algebraHigh103TopUpA.ts",
-          "line": 138,
-          "questionId": 7960008,
-          "title": "Dividing signed numbers",
-          "chapter": "Negative numbers",
-          "snippet": "miss('-15', 'This subtracts 5 from -20 instead of dividing.', 'The operation is division: ask how many 5s make 20.'),"
-        }
-      ]
-    },
-    {
       "text": "This subtracts the exponents, which is the rule for division, not multiplication.",
       "count": 4,
       "examples": [
@@ -2455,6 +2417,36 @@
           "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Find a word that matches happy in meaning.'),"
         }
       ]
+    },
+    {
+      "text": "-2 is an intermediate-size answer. It looks like one step of the work, not the final value -6.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/openSatImported.ts",
+          "line": 359,
+          "questionId": 320040,
+          "title": "Advanced Math 40",
+          "chapter": "Advanced Math - Hard",
+          "snippet": "wrong: [[\"-2\",\"-2 is an intermediate-size answer. It looks like one step of the work, not the final value -6.\",\"Check whether this is only one component of a larger total.\"],[\"2\",\"2 usually appears when the algebra is set up in the opposite direction. Track..."
+        },
+        {
+          "file": "src/data/questionCatalog/openSatImported.ts",
+          "line": 2859,
+          "questionId": 320357,
+          "title": "Advanced Math 357",
+          "chapter": "Advanced Math - Hard",
+          "snippet": "wrong: [[\"2\",\"2 is an intermediate-size answer. It looks like one step of the work, not the final value 6.\",\"Ask whether you have used every condition in the prompt.\"],[\"4\",\"Picking 4 usually means the calculation used the right direction but stopped before..."
+        },
+        {
+          "file": "src/data/questionCatalog/openSatImported.ts",
+          "line": 3189,
+          "questionId": 320392,
+          "title": "Algebra 392",
+          "chapter": "Algebra - Medium",
+          "snippet": "wrong: [[\"2\",\"2 is an intermediate-size answer. It looks like one step of the work, not the final value 6.\",\"Check whether this is only one component of a larger total.\"],[\"4\",\"This undercounts the requested quantity. The setup points past 4 to 6.\",\"Do one ..."
+        }
+      ]
     }
   ],
   "examplesByFlag": {
@@ -2469,9 +2461,9 @@
         "title": "Adjectives",
         "chapter": "Grammar",
         "field": "whyWrong",
-        "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
         "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'An adjective tells what something is like.'),",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),",
         "extractor": "object"
       },
       {
@@ -2484,9 +2476,9 @@
         "title": "Identifying nouns",
         "chapter": "Grammar and Language",
         "field": "whyWrong",
-        "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
         "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2499,9 +2491,9 @@
         "title": "Identifying a noun",
         "chapter": "Grammar",
         "field": "whyWrong",
-        "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
         "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2559,9 +2551,9 @@
         "title": "Finding the noun",
         "chapter": "Grammar and Writing",
         "field": "whyWrong",
-        "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
         "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, animal, or thing.'),",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2574,9 +2566,9 @@
         "title": "Finding the noun",
         "chapter": "Grammar Basics",
         "field": "whyWrong",
-        "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
         "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, animal, or thing.'),",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2589,9 +2581,9 @@
         "title": "Identifying a noun",
         "chapter": "Grammar and Writing",
         "field": "whyWrong",
-        "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
         "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2664,9 +2656,9 @@
         "title": "Finding the noun",
         "chapter": "Grammar",
         "field": "whyWrong",
-        "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
         "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun is a person, place, animal or thing.'),",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),",
         "extractor": "object"
       },
       {
@@ -2679,9 +2671,9 @@
         "title": "Four equal sides",
         "chapter": "Naming 2D shapes",
         "field": "whyWrong",
-        "value": "A triangle has only 3 sides.",
+        "value": "Triangle has three sides; the target shape needs the side count described in the clue.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'This shape has 4 equal sides.'),",
+        "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'This shape has 4 equal sides.'),",
         "extractor": "object"
       },
       {
@@ -2694,9 +2686,9 @@
         "title": "The six-sided shape",
         "chapter": "Naming 2D shapes",
         "field": "whyWrong",
-        "value": "A triangle has only 3 sides.",
+        "value": "Triangle has three sides; the target shape needs the side count described in the clue.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'A shape with 6 sides is a hexagon.'),",
+        "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'A shape with 6 sides is a hexagon.'),",
         "extractor": "object"
       },
       {
@@ -2709,9 +2701,9 @@
         "title": "Long box shape",
         "chapter": "Naming 2D shapes",
         "field": "whyWrong",
-        "value": "A triangle has only 3 sides.",
+        "value": "Triangle has three sides; the target shape needs the side count described in the clue.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'This shape has 4 sides.'),",
+        "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'This shape has 4 sides.'),",
         "extractor": "object"
       },
       {
@@ -2724,9 +2716,9 @@
         "title": "Which has the most sides",
         "chapter": "Naming 2D shapes",
         "field": "whyWrong",
-        "value": "A triangle has only 3 sides.",
+        "value": "Triangle has three sides; the target shape needs the side count described in the clue.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'A hexagon has 6 sides, which is more.'),",
+        "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'A hexagon has 6 sides, which is more.'),",
         "extractor": "object"
       },
       {
@@ -2754,9 +2746,9 @@
         "title": "Naming a shape",
         "chapter": "Geometry and Shapes",
         "field": "whyWrong",
-        "value": "A triangle has only 3 sides.",
+        "value": "Triangle has three sides; the target shape needs the side count described in the clue.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'This shape has 4 equal sides.'),",
+        "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'This shape has 4 equal sides.'),",
         "extractor": "object"
       },
       {
@@ -2799,9 +2791,9 @@
         "title": "Antonyms",
         "chapter": "Vocabulary and Word Meaning",
         "field": "whyWrong",
-        "value": "Old means almost the same as ancient, not the opposite.",
+        "value": "old is close in meaning to ancient; the prompt wants a word pointing the other way.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('old', 'Old means almost the same as ancient, not the opposite.', 'An antonym means the opposite.'),",
+        "snippet": "miss('old', 'old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the opposite.'),",
         "extractor": "object"
       },
       {
@@ -2814,9 +2806,9 @@
         "title": "Finding an antonym",
         "chapter": "Vocabulary",
         "field": "whyWrong",
-        "value": "Old means almost the same as ancient, not the opposite.",
+        "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is the opposite, so look for new.'),",
+        "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),",
         "extractor": "object"
       },
       {
@@ -2829,9 +2821,9 @@
         "title": "Choosing an antonym",
         "chapter": "Vocabulary",
         "field": "whyWrong",
-        "value": "Old means almost the same as ancient, not the opposite.",
+        "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is the opposite, so look for new.'),",
+        "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),",
         "extractor": "object"
       },
       {
@@ -2889,9 +2881,9 @@
         "title": "Naming shapes",
         "chapter": "Shapes and Measurement",
         "field": "whyWrong",
-        "value": "A triangle has only 3 sides.",
+        "value": "Triangle has three sides; the target shape needs the side count described in the clue.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'Count the sides of the shape described.'),",
+        "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'Count the sides of the shape described.'),",
         "extractor": "object"
       },
       {
@@ -2919,9 +2911,9 @@
         "title": "Antonyms",
         "chapter": "Vocabulary",
         "field": "whyWrong",
-        "value": "Old means almost the same as ancient, not the opposite.",
+        "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym means the reverse.'),",
+        "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the reverse.'),",
         "extractor": "object"
       },
       {
@@ -2934,9 +2926,9 @@
         "title": "Finding an antonym",
         "chapter": "Reading Comprehension - Vocabulary",
         "field": "whyWrong",
-        "value": "Old means almost the same as ancient, not the opposite.",
+        "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is a word that means the opposite.'),",
+        "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is a word that means the opposite.'),",
         "extractor": "object"
       },
       {
@@ -2979,9 +2971,9 @@
         "title": "Word that means the opposite",
         "chapter": "Verbal Reasoning - Word Patterns",
         "field": "whyWrong",
-        "value": "Old means almost the same as ancient, not the opposite.",
+        "value": "old is close in meaning to ancient; the prompt wants a word pointing the other way.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('old', 'Old means almost the same as ancient, not the opposite.', 'You want a word that means new or recent.'),",
+        "snippet": "miss('old', 'old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'You want a word that means new or recent.'),",
         "extractor": "object"
       },
       {
@@ -3069,9 +3061,9 @@
         "title": "Equivalent fractions",
         "chapter": "Fractions",
         "field": "whyWrong",
-        "value": "2/3 is more than half because two of three equal parts covers most of the whole.",
+        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
         "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'Check if the top number is exactly half of the bottom.'),",
+        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top number is exactly half of the bottom.'),",
         "extractor": "object"
       },
       {
@@ -3084,9 +3076,9 @@
         "title": "Equivalent fractions",
         "chapter": "Fractions Basics",
         "field": "whyWrong",
-        "value": "2/3 is more than half because two of three equal parts covers most of the whole.",
+        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
         "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'Check if the top is half of the bottom.'),",
+        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top is half of the bottom.'),",
         "extractor": "object"
       },
       {
@@ -3099,9 +3091,9 @@
         "title": "Equivalent fractions",
         "chapter": "Fractions",
         "field": "whyWrong",
-        "value": "2/3 is more than half because two of three equal parts covers most of the whole.",
+        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
         "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For one half, the top is exactly half the bottom.'),",
+        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top is exactly half the bottom.'),",
         "extractor": "object"
       },
       {
@@ -3114,9 +3106,9 @@
         "title": "Equivalent fractions",
         "chapter": "Fractions",
         "field": "whyWrong",
-        "value": "2/3 is more than half because two of three equal parts covers most of the whole.",
+        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
         "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For halves, the top should be half of the bottom.'),",
+        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For halves, the top should be half of the bottom.'),",
         "extractor": "object"
       },
       {
@@ -3204,9 +3196,9 @@
         "title": "Equivalent fractions",
         "chapter": "Fractions",
         "field": "whyWrong",
-        "value": "2/3 is more than half because two of three equal parts covers most of the whole.",
+        "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
         "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For one half, the top number should be exactly half of the bottom number.'),",
+        "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top number should be exactly half of the bottom number.'),",
         "extractor": "object"
       },
       {
@@ -3519,9 +3511,9 @@
         "title": "Equivalent fractions",
         "chapter": "Fractions",
         "field": "whyWrong",
-        "value": "1/4 is one out of four equal pieces, which is smaller than one out of two.",
+        "value": "1/4 is only one quarter, so it is smaller than a half.",
         "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'Try doubling both the top and bottom of 1/2.'),",
+        "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'Try doubling both the top and bottom of 1/2.'),",
         "extractor": "object"
       },
       {
@@ -3534,24 +3526,9 @@
         "title": "Even or odd",
         "chapter": "Place Value and Numbers",
         "field": "whyWrong",
-        "value": "Every whole number is either even or odd.",
+        "value": "Neither is still part of the even-or-odd number family; check the ones digit instead.",
         "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('Neither', 'Every whole number is either even or odd.', 'See if 8 can be shared into two equal groups.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/class3MathPrim103TopUp.ts",
-        "line": 122,
-        "questionId": 7802007,
-        "title": "Twenty divided by five",
-        "chapter": "Division facts",
-        "field": "whyWrong",
-        "value": "This subtracts 5 from 20 instead of dividing.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('15', 'This subtracts 5 from 20 instead of dividing.', 'Ask how many 5s fit inside 20.'),",
+        "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'See if 8 can be shared into two equal groups.'),",
         "extractor": "object"
       },
       {
@@ -3564,9 +3541,9 @@
         "title": "Even or Odd",
         "chapter": "Factors and Multiples",
         "field": "whyWrong",
-        "value": "Every whole number is either even or odd.",
+        "value": "Neither is still part of the even-or-odd number family; check the ones digit instead.",
         "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('Neither', 'Every whole number is either even or odd.', 'Check the ones digit of the number.'),",
+        "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Check the ones digit of the number.'),",
         "extractor": "object"
       },
       {
@@ -3579,24 +3556,9 @@
         "title": "Fractions on a line plot",
         "chapter": "Line Plots",
         "field": "whyWrong",
-        "value": "1/4 is one out of four equal pieces, which is smaller than one out of two.",
+        "value": "1/4 is only one quarter, so it is smaller than a half.",
         "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'A half is bigger than a quarter.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
-        "line": 124,
-        "questionId": 7810007,
-        "title": "Twenty divided by five",
-        "chapter": "Division",
-        "field": "whyWrong",
-        "value": "This subtracts 5 from 20 instead of dividing.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('15', 'This subtracts 5 from 20 instead of dividing.', 'Count by fives until you reach 20: 5, 10, 15, 20.'),",
+        "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'A half is bigger than a quarter.'),",
         "extractor": "object"
       },
       {
@@ -3609,24 +3571,9 @@
         "title": "Even or odd",
         "chapter": "Patterns",
         "field": "whyWrong",
-        "value": "Every whole number is either even or odd.",
+        "value": "Neither is still part of the even-or-odd number family; check the ones digit instead.",
         "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('Neither', 'Every whole number is either even or odd.', 'Check if it can split into two equal groups.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-        "line": 137,
-        "questionId": 7850008,
-        "title": "Division as missing factor",
-        "chapter": "Division",
-        "field": "whyWrong",
-        "value": "This subtracts 5 from 20 instead of dividing.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('15', 'This subtracts 5 from 20 instead of dividing.', 'Ask how many 5s fit inside 20.'),",
+        "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Check if it can split into two equal groups.'),",
         "extractor": "object"
       },
       {
@@ -3804,9 +3751,9 @@
         "title": "Equivalent fractions",
         "chapter": "Fractions",
         "field": "whyWrong",
-        "value": "1/4 is one out of four equal pieces, which is smaller than one out of two.",
+        "value": "1/4 is only one quarter, so it is smaller than a half.",
         "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'A half means the top is half the bottom.'),",
+        "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'A half means the top is half the bottom.'),",
         "extractor": "object"
       },
       {
@@ -3864,9 +3811,9 @@
         "title": "Equivalent fractions",
         "chapter": "Fractions",
         "field": "whyWrong",
-        "value": "1/4 is one out of four equal pieces, which is smaller than one out of two.",
+        "value": "1/4 is only one quarter, so it is smaller than a half.",
         "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'Half of 4 parts is 2 parts.'),",
+        "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'Half of 4 parts is 2 parts.'),",
         "extractor": "object"
       },
       {
@@ -3894,9 +3841,9 @@
         "title": "Even or odd",
         "chapter": "Comparing Numbers",
         "field": "whyWrong",
-        "value": "Every whole number is either even or odd.",
+        "value": "Neither is still part of the even-or-odd number family; check the ones digit instead.",
         "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('Neither', 'Every whole number is either even or odd.', 'Look at the ones digit: 4 is even.'),",
+        "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Look at the ones digit: 4 is even.'),",
         "extractor": "object"
       },
       {
@@ -4144,21 +4091,6 @@
         "label": "Repeated whyWrong",
         "priority": 88,
         "file": "src/data/questionCatalog/col-pre-algebraHigh103TopUpA.ts",
-        "line": 138,
-        "questionId": 7960008,
-        "title": "Dividing signed numbers",
-        "chapter": "Negative numbers",
-        "field": "whyWrong",
-        "value": "This subtracts 5 from -20 instead of dividing.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('-15', 'This subtracts 5 from -20 instead of dividing.', 'The operation is division: ask how many 5s make 20.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/col-pre-algebraHigh103TopUpA.ts",
         "line": 245,
         "questionId": 7960015,
         "title": "Product of powers",
@@ -4255,6 +4187,62 @@
         "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
         "detail": "Same normalized whyWrong appears 4 times.",
         "snippet": "['32', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'IQR is an interval width, not a total.'],",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 88,
+        "file": "src/data/questionCatalog/highBuilders.ts",
+        "line": 1757,
+        "title": "Slope interpretation",
+        "chapter": "Unit 13: Inference for quantitative data: slopes",
+        "field": "whyWrong",
+        "value": "That reads the rate of change as if it were the starting value.",
+        "detail": "Same normalized whyWrong appears 4 times.",
+        "snippet": "['Predicted y starts at 1.5 when x = 0', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 2.'],",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 88,
+        "file": "src/data/questionCatalog/highBuilders.ts",
+        "line": 2023,
+        "title": "Remainder theorem check",
+        "chapter": "Unit 3: Polynomial and rational functions",
+        "field": "whyWrong",
+        "value": "That grabs one visible term instead of evaluating the whole expression.",
+        "detail": "Same normalized whyWrong appears 4 times.",
+        "snippet": "['2', 'That grabs one visible term instead of evaluating the whole expression.', 'The remainder theorem uses the full polynomial value.'],",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 88,
+        "file": "src/data/questionCatalog/highBuilders.ts",
+        "line": 2215,
+        "title": "Range of a data set",
+        "chapter": "Unit 2: Displaying and comparing quantitative data",
+        "field": "whyWrong",
+        "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
+        "detail": "Same normalized whyWrong appears 4 times.",
+        "snippet": "['43', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'Range is a difference.'],",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 88,
+        "file": "src/data/questionCatalog/highBuilders.ts",
+        "line": 2519,
+        "title": "Slope meaning in context",
+        "chapter": "Unit 15: Advanced regression",
+        "field": "whyWrong",
+        "value": "That reads the rate of change as if it were the starting value.",
+        "detail": "Same normalized whyWrong appears 4 times.",
+        "snippet": "['The starting score is 2.5 when no one studies', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 40.'],",
         "extractor": "object"
       }
     ],
@@ -6717,9 +6705,9 @@
       "title": "Adjectives",
       "chapter": "Grammar",
       "field": "whyWrong",
-      "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'An adjective tells what something is like.'),",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),",
       "extractor": "object"
     },
     {
@@ -6732,9 +6720,9 @@
       "title": "Identifying nouns",
       "chapter": "Grammar and Language",
       "field": "whyWrong",
-      "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
       "extractor": "object"
     },
     {
@@ -6747,9 +6735,9 @@
       "title": "Identifying a noun",
       "chapter": "Grammar",
       "field": "whyWrong",
-      "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
       "extractor": "object"
     },
     {
@@ -6807,9 +6795,9 @@
       "title": "Finding the noun",
       "chapter": "Grammar and Writing",
       "field": "whyWrong",
-      "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, animal, or thing.'),",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
       "extractor": "object"
     },
     {
@@ -6822,9 +6810,9 @@
       "title": "Finding the noun",
       "chapter": "Grammar Basics",
       "field": "whyWrong",
-      "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, animal, or thing.'),",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
       "extractor": "object"
     },
     {
@@ -6837,9 +6825,9 @@
       "title": "Identifying a noun",
       "chapter": "Grammar and Writing",
       "field": "whyWrong",
-      "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
       "extractor": "object"
     },
     {
@@ -6912,9 +6900,9 @@
       "title": "Finding the noun",
       "chapter": "Grammar",
       "field": "whyWrong",
-      "value": "ran names an action, so it is a verb rather than the kind of word the prompt is asking for.",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun is a person, place, animal or thing.'),",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),",
       "extractor": "object"
     },
     {
@@ -6927,9 +6915,9 @@
       "title": "Four equal sides",
       "chapter": "Naming 2D shapes",
       "field": "whyWrong",
-      "value": "A triangle has only 3 sides.",
+      "value": "Triangle has three sides; the target shape needs the side count described in the clue.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'This shape has 4 equal sides.'),",
+      "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'This shape has 4 equal sides.'),",
       "extractor": "object"
     },
     {
@@ -6942,9 +6930,9 @@
       "title": "The six-sided shape",
       "chapter": "Naming 2D shapes",
       "field": "whyWrong",
-      "value": "A triangle has only 3 sides.",
+      "value": "Triangle has three sides; the target shape needs the side count described in the clue.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'A shape with 6 sides is a hexagon.'),",
+      "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'A shape with 6 sides is a hexagon.'),",
       "extractor": "object"
     },
     {
@@ -6957,9 +6945,9 @@
       "title": "Long box shape",
       "chapter": "Naming 2D shapes",
       "field": "whyWrong",
-      "value": "A triangle has only 3 sides.",
+      "value": "Triangle has three sides; the target shape needs the side count described in the clue.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'This shape has 4 sides.'),",
+      "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'This shape has 4 sides.'),",
       "extractor": "object"
     },
     {
@@ -6972,9 +6960,9 @@
       "title": "Which has the most sides",
       "chapter": "Naming 2D shapes",
       "field": "whyWrong",
-      "value": "A triangle has only 3 sides.",
+      "value": "Triangle has three sides; the target shape needs the side count described in the clue.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'A hexagon has 6 sides, which is more.'),",
+      "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'A hexagon has 6 sides, which is more.'),",
       "extractor": "object"
     },
     {
@@ -7002,9 +6990,9 @@
       "title": "Naming a shape",
       "chapter": "Geometry and Shapes",
       "field": "whyWrong",
-      "value": "A triangle has only 3 sides.",
+      "value": "Triangle has three sides; the target shape needs the side count described in the clue.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'This shape has 4 equal sides.'),",
+      "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'This shape has 4 equal sides.'),",
       "extractor": "object"
     },
     {
@@ -7047,9 +7035,9 @@
       "title": "Antonyms",
       "chapter": "Vocabulary and Word Meaning",
       "field": "whyWrong",
-      "value": "Old means almost the same as ancient, not the opposite.",
+      "value": "old is close in meaning to ancient; the prompt wants a word pointing the other way.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('old', 'Old means almost the same as ancient, not the opposite.', 'An antonym means the opposite.'),",
+      "snippet": "miss('old', 'old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the opposite.'),",
       "extractor": "object"
     },
     {
@@ -7062,9 +7050,9 @@
       "title": "Finding an antonym",
       "chapter": "Vocabulary",
       "field": "whyWrong",
-      "value": "Old means almost the same as ancient, not the opposite.",
+      "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is the opposite, so look for new.'),",
+      "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),",
       "extractor": "object"
     },
     {
@@ -7077,9 +7065,9 @@
       "title": "Choosing an antonym",
       "chapter": "Vocabulary",
       "field": "whyWrong",
-      "value": "Old means almost the same as ancient, not the opposite.",
+      "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is the opposite, so look for new.'),",
+      "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),",
       "extractor": "object"
     },
     {
@@ -7137,9 +7125,9 @@
       "title": "Naming shapes",
       "chapter": "Shapes and Measurement",
       "field": "whyWrong",
-      "value": "A triangle has only 3 sides.",
+      "value": "Triangle has three sides; the target shape needs the side count described in the clue.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('Triangle', 'A triangle has only 3 sides.', 'Count the sides of the shape described.'),",
+      "snippet": "miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'Count the sides of the shape described.'),",
       "extractor": "object"
     },
     {
@@ -7167,9 +7155,9 @@
       "title": "Antonyms",
       "chapter": "Vocabulary",
       "field": "whyWrong",
-      "value": "Old means almost the same as ancient, not the opposite.",
+      "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym means the reverse.'),",
+      "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the reverse.'),",
       "extractor": "object"
     },
     {
@@ -7182,9 +7170,9 @@
       "title": "Finding an antonym",
       "chapter": "Reading Comprehension - Vocabulary",
       "field": "whyWrong",
-      "value": "Old means almost the same as ancient, not the opposite.",
+      "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is a word that means the opposite.'),",
+      "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is a word that means the opposite.'),",
       "extractor": "object"
     },
     {
@@ -7227,9 +7215,9 @@
       "title": "Word that means the opposite",
       "chapter": "Verbal Reasoning - Word Patterns",
       "field": "whyWrong",
-      "value": "Old means almost the same as ancient, not the opposite.",
+      "value": "old is close in meaning to ancient; the prompt wants a word pointing the other way.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('old', 'Old means almost the same as ancient, not the opposite.', 'You want a word that means new or recent.'),",
+      "snippet": "miss('old', 'old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'You want a word that means new or recent.'),",
       "extractor": "object"
     },
     {
@@ -7317,9 +7305,9 @@
       "title": "Equivalent fractions",
       "chapter": "Fractions",
       "field": "whyWrong",
-      "value": "2/3 is more than half because two of three equal parts covers most of the whole.",
+      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
       "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'Check if the top number is exactly half of the bottom.'),",
+      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top number is exactly half of the bottom.'),",
       "extractor": "object"
     },
     {
@@ -7332,9 +7320,9 @@
       "title": "Equivalent fractions",
       "chapter": "Fractions Basics",
       "field": "whyWrong",
-      "value": "2/3 is more than half because two of three equal parts covers most of the whole.",
+      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
       "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'Check if the top is half of the bottom.'),",
+      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top is half of the bottom.'),",
       "extractor": "object"
     },
     {
@@ -7347,9 +7335,9 @@
       "title": "Equivalent fractions",
       "chapter": "Fractions",
       "field": "whyWrong",
-      "value": "2/3 is more than half because two of three equal parts covers most of the whole.",
+      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
       "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For one half, the top is exactly half the bottom.'),",
+      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top is exactly half the bottom.'),",
       "extractor": "object"
     },
     {
@@ -7362,9 +7350,9 @@
       "title": "Equivalent fractions",
       "chapter": "Fractions",
       "field": "whyWrong",
-      "value": "2/3 is more than half because two of three equal parts covers most of the whole.",
+      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
       "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For halves, the top should be half of the bottom.'),",
+      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For halves, the top should be half of the bottom.'),",
       "extractor": "object"
     },
     {
@@ -7452,9 +7440,9 @@
       "title": "Equivalent fractions",
       "chapter": "Fractions",
       "field": "whyWrong",
-      "value": "2/3 is more than half because two of three equal parts covers most of the whole.",
+      "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
       "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For one half, the top number should be exactly half of the bottom number.'),",
+      "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top number should be exactly half of the bottom number.'),",
       "extractor": "object"
     },
     {
@@ -7767,9 +7755,9 @@
       "title": "Equivalent fractions",
       "chapter": "Fractions",
       "field": "whyWrong",
-      "value": "1/4 is one out of four equal pieces, which is smaller than one out of two.",
+      "value": "1/4 is only one quarter, so it is smaller than a half.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'Try doubling both the top and bottom of 1/2.'),",
+      "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'Try doubling both the top and bottom of 1/2.'),",
       "extractor": "object"
     },
     {
@@ -7782,24 +7770,9 @@
       "title": "Even or odd",
       "chapter": "Place Value and Numbers",
       "field": "whyWrong",
-      "value": "Every whole number is either even or odd.",
+      "value": "Neither is still part of the even-or-odd number family; check the ones digit instead.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('Neither', 'Every whole number is either even or odd.', 'See if 8 can be shared into two equal groups.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/class3MathPrim103TopUp.ts",
-      "line": 122,
-      "questionId": 7802007,
-      "title": "Twenty divided by five",
-      "chapter": "Division facts",
-      "field": "whyWrong",
-      "value": "This subtracts 5 from 20 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('15', 'This subtracts 5 from 20 instead of dividing.', 'Ask how many 5s fit inside 20.'),",
+      "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'See if 8 can be shared into two equal groups.'),",
       "extractor": "object"
     },
     {
@@ -7812,9 +7785,9 @@
       "title": "Even or Odd",
       "chapter": "Factors and Multiples",
       "field": "whyWrong",
-      "value": "Every whole number is either even or odd.",
+      "value": "Neither is still part of the even-or-odd number family; check the ones digit instead.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('Neither', 'Every whole number is either even or odd.', 'Check the ones digit of the number.'),",
+      "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Check the ones digit of the number.'),",
       "extractor": "object"
     },
     {
@@ -7827,24 +7800,9 @@
       "title": "Fractions on a line plot",
       "chapter": "Line Plots",
       "field": "whyWrong",
-      "value": "1/4 is one out of four equal pieces, which is smaller than one out of two.",
+      "value": "1/4 is only one quarter, so it is smaller than a half.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'A half is bigger than a quarter.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
-      "line": 124,
-      "questionId": 7810007,
-      "title": "Twenty divided by five",
-      "chapter": "Division",
-      "field": "whyWrong",
-      "value": "This subtracts 5 from 20 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('15', 'This subtracts 5 from 20 instead of dividing.', 'Count by fives until you reach 20: 5, 10, 15, 20.'),",
+      "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'A half is bigger than a quarter.'),",
       "extractor": "object"
     },
     {
@@ -7857,24 +7815,9 @@
       "title": "Even or odd",
       "chapter": "Patterns",
       "field": "whyWrong",
-      "value": "Every whole number is either even or odd.",
+      "value": "Neither is still part of the even-or-odd number family; check the ones digit instead.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('Neither', 'Every whole number is either even or odd.', 'Check if it can split into two equal groups.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-      "line": 137,
-      "questionId": 7850008,
-      "title": "Division as missing factor",
-      "chapter": "Division",
-      "field": "whyWrong",
-      "value": "This subtracts 5 from 20 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('15', 'This subtracts 5 from 20 instead of dividing.', 'Ask how many 5s fit inside 20.'),",
+      "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Check if it can split into two equal groups.'),",
       "extractor": "object"
     },
     {
@@ -8052,9 +7995,9 @@
       "title": "Equivalent fractions",
       "chapter": "Fractions",
       "field": "whyWrong",
-      "value": "1/4 is one out of four equal pieces, which is smaller than one out of two.",
+      "value": "1/4 is only one quarter, so it is smaller than a half.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'A half means the top is half the bottom.'),",
+      "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'A half means the top is half the bottom.'),",
       "extractor": "object"
     },
     {
@@ -8112,9 +8055,9 @@
       "title": "Equivalent fractions",
       "chapter": "Fractions",
       "field": "whyWrong",
-      "value": "1/4 is one out of four equal pieces, which is smaller than one out of two.",
+      "value": "1/4 is only one quarter, so it is smaller than a half.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'Half of 4 parts is 2 parts.'),",
+      "snippet": "miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'Half of 4 parts is 2 parts.'),",
       "extractor": "object"
     },
     {
@@ -8142,9 +8085,9 @@
       "title": "Even or odd",
       "chapter": "Comparing Numbers",
       "field": "whyWrong",
-      "value": "Every whole number is either even or odd.",
+      "value": "Neither is still part of the even-or-odd number family; check the ones digit instead.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('Neither', 'Every whole number is either even or odd.', 'Look at the ones digit: 4 is even.'),",
+      "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Look at the ones digit: 4 is even.'),",
       "extractor": "object"
     },
     {
@@ -8385,21 +8328,6 @@
       "value": "A quadratic equation has at most two solutions, never infinitely many.",
       "detail": "Same normalized whyWrong appears 4 times.",
       "snippet": "miss('Infinitely many solutions', 'A quadratic equation has at most two solutions, never infinitely many.', 'Degree-2 equations have at most two roots.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/col-pre-algebraHigh103TopUpA.ts",
-      "line": 138,
-      "questionId": 7960008,
-      "title": "Dividing signed numbers",
-      "chapter": "Negative numbers",
-      "field": "whyWrong",
-      "value": "This subtracts 5 from -20 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('-15', 'This subtracts 5 from -20 instead of dividing.', 'The operation is division: ask how many 5s make 20.'),",
       "extractor": "object"
     },
     {
@@ -9366,51 +9294,6 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/arithmeticPrim103TopUp.ts",
-      "line": 278,
-      "questionId": 7806017,
-      "title": "Adding decimals",
-      "chapter": "Decimals",
-      "field": "whyWrong",
-      "value": "You wrote the digits side by side instead of adding.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('0.53', 'You wrote the digits side by side instead of adding.', 'Line up the points and add: 5 + 3 tenths.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/arithmeticPrim103TopUp.ts",
-      "line": 353,
-      "questionId": 7806022,
-      "title": "Rounding to the nearest ten",
-      "chapter": "Rounding",
-      "field": "whyWrong",
-      "value": "The ones digit is 7, which rounds up, not down.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('40', 'The ones digit is 7, which rounds up, not down.', 'When the ones digit is 5 or more, round up.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/arithmeticPrim103TopUp.ts",
-      "line": 551,
-      "questionId": 7806035,
-      "title": "Buying many items",
-      "chapter": "Word problems",
-      "field": "whyWrong",
-      "value": "This adds 5 and 4 instead of multiplying.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('9 cents', 'This adds 5 and 4 instead of multiplying.', 'You need 4 groups of 5 cents.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/arithmeticPrim103TopUp.ts",
       "line": 569,
       "questionId": 7806036,
       "title": "Find the next number",
@@ -9419,96 +9302,6 @@
       "value": "This doubles 8 instead of adding 2.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('16', 'This doubles 8 instead of adding 2.', 'The numbers go up by 2: 8 then 10.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/basicGeometryPrim103TopUpA.ts",
-      "line": 17,
-      "questionId": 7808000,
-      "title": "Three straight sides",
-      "chapter": "Naming 2D shapes",
-      "field": "whyWrong",
-      "value": "A circle has no straight sides at all.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Circle', 'A circle has no straight sides at all.', 'This shape has 3 straight sides.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/basicGeometryPrim103TopUpA.ts",
-      "line": 33,
-      "questionId": 7808001,
-      "title": "Four equal sides",
-      "chapter": "Naming 2D shapes",
-      "field": "whyWrong",
-      "value": "A pentagon has 5 sides, not 4.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Pentagon', 'A pentagon has 5 sides, not 4.', 'Count again: this shape has 4 sides.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/basicGeometryPrim103TopUpA.ts",
-      "line": 108,
-      "questionId": 7808006,
-      "title": "Long box shape",
-      "chapter": "Naming 2D shapes",
-      "field": "whyWrong",
-      "value": "A circle has no straight sides or corners.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Circle', 'A circle has no straight sides or corners.', 'You want a shape with 4 corners.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/basicGeometryPrim103TopUpA.ts",
-      "line": 138,
-      "questionId": 7808008,
-      "title": "Sorting by sides",
-      "chapter": "Naming 2D shapes",
-      "field": "whyWrong",
-      "value": "A circle has no straight sides.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Circle', 'A circle has no straight sides.', 'A square has 4 straight sides.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/basicGeometryPrim103TopUpA.ts",
-      "line": 700,
-      "questionId": 7808045,
-      "title": "Same number of sides",
-      "chapter": "Comparing and sorting shapes",
-      "field": "whyWrong",
-      "value": "A pentagon has 5 sides, not 4.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Pentagon', 'A pentagon has 5 sides, not 4.', 'A square has 4 sides, the same as a rectangle.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/basicGeometryPrim103TopUpB.ts",
-      "line": 63,
-      "questionId": 7808503,
-      "title": "Perimeter of a triangle",
-      "chapter": "Perimeter",
-      "field": "whyWrong",
-      "value": "This multiplies the sides instead of adding them.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('120 cm', 'This multiplies the sides instead of adding them.', 'For perimeter you add the sides, not multiply.'),",
       "extractor": "object"
     },
     {
@@ -9536,9 +9329,9 @@
       "title": "Choose the right tool",
       "chapter": "Putting it together",
       "field": "whyWrong",
-      "value": "A clock measures time, not length.",
+      "value": "A clock is for time, but length is measured with tools like a ruler or tape measure.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('A clock', 'A clock measures time, not length.', 'To measure length, use a ruler.'),",
+      "snippet": "miss('A clock', 'A clock is for time, but length is measured with tools like a ruler or tape measure.', 'To measure length, use a ruler.'),",
       "extractor": "object"
     },
     {
@@ -9606,59 +9399,14 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/class1MathPrim103TopUp.ts",
-      "line": 271,
-      "questionId": 7800017,
-      "title": "Doubles",
-      "chapter": "Addition within 20",
-      "field": "whyWrong",
-      "value": "You wrote the digits side by side instead of adding.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('77', 'You wrote the digits side by side instead of adding.', 'Doubling 7 means 7 plus 7.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class1MathPrim103TopUp.ts",
       "line": 556,
       "questionId": 7800036,
       "title": "Sides of a triangle",
       "chapter": "2D Shapes",
       "field": "whyWrong",
-      "value": "Two lines cannot close up to make a shape.",
+      "value": "2 is not enough sides to enclose the shape being described.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('2', 'Two lines cannot close up to make a shape.', 'A triangle needs more than two sides.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class1MathPrim103TopUp.ts",
-      "line": 632,
-      "questionId": 7800041,
-      "title": "Shape with five sides",
-      "chapter": "2D Shapes",
-      "field": "whyWrong",
-      "value": "A circle has no straight sides at all.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Circle', 'A circle has no straight sides at all.', 'A five-sided shape has straight edges.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class2MathPrim103TopUp.ts",
-      "line": 381,
-      "questionId": 7801024,
-      "title": "Reading half past",
-      "chapter": "Telling Time",
-      "field": "whyWrong",
-      "value": "The hour hand has not reached 5 yet.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Half past 5', 'The hour hand has not reached 5 yet.', 'The hour is the number the short hand has just passed, which is 4.'),",
+      "snippet": "miss('2', '2 is not enough sides to enclose the shape being described.', 'A triangle needs more than two sides.'),",
       "extractor": "object"
     },
     {
@@ -9681,89 +9429,29 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/class3MathPrim103TopUp.ts",
+      "line": 122,
+      "questionId": 7802007,
+      "title": "Twenty divided by five",
+      "chapter": "Division facts",
+      "field": "whyWrong",
+      "value": "15 takes away 5 once, but division asks how many equal groups fit in 20.",
+      "detail": "Same normalized whyWrong appears 3 times.",
+      "snippet": "miss('15', '15 takes away 5 once, but division asks how many equal groups fit in 20.', 'Ask how many 5s fit inside 20.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 87,
+      "file": "src/data/questionCatalog/class3MathPrim103TopUp.ts",
       "line": 124,
       "questionId": 7802007,
       "title": "Twenty divided by five",
       "chapter": "Division facts",
       "field": "whyWrong",
-      "value": "This multiplies 20 by 5 instead of dividing.",
+      "value": "100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('100', 'This multiplies 20 by 5 instead of dividing.', 'Division makes smaller groups, not a bigger number.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class3MathPrim103TopUp.ts",
-      "line": 258,
-      "questionId": 7802016,
-      "title": "Rounding to ten",
-      "chapter": "Place value to 1000",
-      "field": "whyWrong",
-      "value": "The ones digit is 7, which rounds up, not down.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('60', 'The ones digit is 7, which rounds up, not down.', 'If the ones digit is 5 or more, round up.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class3MathPrim103TopUp.ts",
-      "line": 382,
-      "questionId": 7802024,
-      "title": "Finding a missing side",
-      "chapter": "Perimeter",
-      "field": "whyWrong",
-      "value": "This multiplies the sides instead of adding them.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('60 cm', 'This multiplies the sides instead of adding them.', 'Perimeter means adding, not multiplying.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class3MathPrim103TopUp.ts",
-      "line": 488,
-      "questionId": 7802031,
-      "title": "Half past",
-      "chapter": "Telling time",
-      "field": "whyWrong",
-      "value": "The hour hand has not reached 5 yet.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('5:30', 'The hour hand has not reached 5 yet.', 'Use the hour the hand has already passed, which is 4.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class3MathPrim103TopUp.ts",
-      "line": 779,
-      "questionId": 7802050,
-      "title": "Ten divided by two",
-      "chapter": "Division facts",
-      "field": "whyWrong",
-      "value": "This is the number you divide by, not the answer.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('2', 'This is the number you divide by, not the answer.', 'Count by twos until you reach 10.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
-      "line": 32,
-      "questionId": 7803001,
-      "title": "Multiply by Ten",
-      "chapter": "Multi-Digit Multiplication",
-      "field": "whyWrong",
-      "value": "This adds 10 instead of multiplying by 10.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('57', 'This adds 10 instead of multiplying by 10.', 'Multiplying is not the same as adding. Think ten groups of 47.'),",
+      "snippet": "miss('100', '100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.', 'Division makes smaller groups, not a bigger number.'),",
       "extractor": "object"
     },
     {
@@ -9776,99 +9464,9 @@
       "title": "Matching Half",
       "chapter": "Equivalent Fractions",
       "field": "whyWrong",
-      "value": "3/4 is three out of four equal pieces, which is more than half the shape.",
+      "value": "3/4 covers three quarters of the shape, more than the half being asked for.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('3/4', '3/4 is three out of four equal pieces, which is more than half the shape.', 'A half is the middle, halfway between 0 and 1.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
-      "line": 441,
-      "questionId": 7803028,
-      "title": "Area of a Rectangle",
-      "chapter": "Area and Perimeter",
-      "field": "whyWrong",
-      "value": "This adds the sides instead of multiplying.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('9 square cm', 'This adds the sides instead of multiplying.', 'Area means length times width.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
-      "line": 442,
-      "questionId": 7803028,
-      "title": "Area of a Rectangle",
-      "chapter": "Area and Perimeter",
-      "field": "whyWrong",
-      "value": "This finds the perimeter, not the area.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('18 square cm', 'This finds the perimeter, not the area.', 'For area, multiply the two sides together.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
-      "line": 443,
-      "questionId": 7803028,
-      "title": "Area of a Rectangle",
-      "chapter": "Area and Perimeter",
-      "field": "whyWrong",
-      "value": "Area is measured in square units, not just cm.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('20 cm', 'Area is measured in square units, not just cm.', 'Use square cm when you fill a space.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
-      "line": 471,
-      "questionId": 7803030,
-      "title": "Area of a Square",
-      "chapter": "Area and Perimeter",
-      "field": "whyWrong",
-      "value": "This finds the perimeter, not the area.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24 square cm', 'This finds the perimeter, not the area.', 'For area, multiply one side by itself.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
-      "line": 486,
-      "questionId": 7803031,
-      "title": "Find the Missing Side",
-      "chapter": "Area and Perimeter",
-      "field": "whyWrong",
-      "value": "This subtracts 4 from 24 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('20 cm', 'This subtracts 4 from 24 instead of dividing.', 'To find the missing side, divide the area by the width.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
-      "line": 502,
-      "questionId": 7803032,
-      "title": "Counting Squares for Area",
-      "chapter": "Area and Perimeter",
-      "field": "whyWrong",
-      "value": "This finds the perimeter, not the area.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('10 square units', 'This finds the perimeter, not the area.', 'Area counts every square inside the shape.'),",
+      "snippet": "miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'A half is the middle, halfway between 0 and 1.'),",
       "extractor": "object"
     },
     {
@@ -9890,90 +9488,15 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 87,
-      "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
-      "line": 777,
-      "questionId": 7803050,
-      "title": "Third of a Number",
-      "chapter": "Fractions of Amounts",
-      "field": "whyWrong",
-      "value": "This subtracts 3 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('12', 'This subtracts 3 instead of dividing.', 'A third is a division, not a subtraction.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class5MathPrim103TopUp.ts",
-      "line": 77,
-      "questionId": 7804004,
-      "title": "Top times top",
-      "chapter": "Multiplying Fractions",
-      "field": "whyWrong",
-      "value": "You added the numbers instead of multiplying.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('2/5', 'You added the numbers instead of multiplying.', 'Multiply the tops together and the bottoms together.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
       "file": "src/data/questionCatalog/class5MathPrim103TopUp.ts",
       "line": 79,
       "questionId": 7804004,
       "title": "Top times top",
       "chapter": "Multiplying Fractions",
       "field": "whyWrong",
-      "value": "You multiplied the bottoms but added the tops.",
+      "value": "2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('2/6', 'You multiplied the bottoms but added the tops.', 'One times one is one on top.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class5MathPrim103TopUp.ts",
-      "line": 200,
-      "questionId": 7804012,
-      "title": "Whole times tenths",
-      "chapter": "Multiplying Decimals",
-      "field": "whyWrong",
-      "value": "You moved the point too far.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('0.08', 'You moved the point too far.', 'Four times two is eight, with one decimal place.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class5MathPrim103TopUp.ts",
-      "line": 215,
-      "questionId": 7804013,
-      "title": "Counting decimal places",
-      "chapter": "Multiplying Decimals",
-      "field": "whyWrong",
-      "value": "You added the numbers instead of multiplying.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('0.5', 'You added the numbers instead of multiplying.', 'Three times two is six, not five.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class5MathPrim103TopUp.ts",
-      "line": 246,
-      "questionId": 7804015,
-      "title": "Tenths times a whole",
-      "chapter": "Multiplying Decimals",
-      "field": "whyWrong",
-      "value": "You moved the point too far.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('0.3', 'You moved the point too far.', 'Half of six is three, not three tenths.'),",
+      "snippet": "miss('2/6', '2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.', 'One times one is one on top.'),",
       "extractor": "object"
     },
     {
@@ -10011,14 +9534,14 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
-      "line": 123,
+      "line": 124,
       "questionId": 7810007,
       "title": "Twenty divided by five",
       "chapter": "Division",
       "field": "whyWrong",
-      "value": "This is the number you divide by, not the answer.",
+      "value": "15 takes away 5 once, but division asks how many equal groups fit in 20.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('5', 'This is the number you divide by, not the answer.', 'Ask how many fives are in 20.'),",
+      "snippet": "miss('15', '15 takes away 5 once, but division asks how many equal groups fit in 20.', 'Count by fives until you reach 20: 5, 10, 15, 20.'),",
       "extractor": "object"
     },
     {
@@ -10031,24 +9554,9 @@
       "title": "Twenty divided by five",
       "chapter": "Division",
       "field": "whyWrong",
-      "value": "This multiplies 20 by 5 instead of dividing.",
+      "value": "100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('100', 'This multiplies 20 by 5 instead of dividing.', 'Division makes the number smaller here, not bigger.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
-      "line": 153,
-      "questionId": 7810009,
-      "title": "Fact family",
-      "chapter": "Division",
-      "field": "whyWrong",
-      "value": "This is the number you divide by, not the answer.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('4', 'This is the number you divide by, not the answer.', 'Use the matching multiplication fact: 7 x 4 = 28.'),",
+      "snippet": "miss('100', '100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.', 'Division makes the number smaller here, not bigger.'),",
       "extractor": "object"
     },
     {
@@ -10061,39 +9569,9 @@
       "title": "Fact family",
       "chapter": "Division",
       "field": "whyWrong",
-      "value": "This subtracts 4 from 28 instead of dividing.",
+      "value": "24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', 'This subtracts 4 from 28 instead of dividing.', 'Division and multiplication are opposites here.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
-      "line": 401,
-      "questionId": 7810025,
-      "title": "Triangle path",
-      "chapter": "Perimeter",
-      "field": "whyWrong",
-      "value": "This multiplies the sides instead of adding them.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('60 units', 'This multiplies the sides instead of adding them.', 'Perimeter means adding the side lengths.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
-      "line": 523,
-      "questionId": 7810033,
-      "title": "Right unit for length",
-      "chapter": "Measurement",
-      "field": "whyWrong",
-      "value": "Kilometers measure long distances like between towns.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Kilometers', 'Kilometers measure long distances like between towns.', 'A pencil is small, so use a small unit.'),",
+      "snippet": "miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Division and multiplication are opposites here.'),",
       "extractor": "object"
     },
     {
@@ -10106,54 +9584,9 @@
       "title": "Right unit for length",
       "chapter": "Measurement",
       "field": "whyWrong",
-      "value": "Liters measure liquid, not length.",
+      "value": "Liters is for liquid volume, not measuring how long something is.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Liters', 'Liters measure liquid, not length.', 'You want to measure how long the pencil is.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
-      "line": 692,
-      "questionId": 7810044,
-      "title": "Rounding to estimate",
-      "chapter": "Two-step word problems",
-      "field": "whyWrong",
-      "value": "The ones digit is 7, which rounds up, not down.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('40', 'The ones digit is 7, which rounds up, not down.', 'If the ones digit is 5 or more, round up.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
-      "line": 787,
-      "questionId": 7810050,
-      "title": "Quadrilateral family",
-      "chapter": "Shapes and attributes",
-      "field": "whyWrong",
-      "value": "A circle has no straight sides.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('A circle', 'A circle has no straight sides.', 'A quadrilateral has 4 straight sides.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
-      "line": 788,
-      "questionId": 7810050,
-      "title": "Quadrilateral family",
-      "chapter": "Shapes and attributes",
-      "field": "whyWrong",
-      "value": "A pentagon has 5 sides, not 4.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('A pentagon', 'A pentagon has 5 sides, not 4.', 'Count the sides: a quadrilateral has 4.'),",
+      "snippet": "miss('Liters', 'Liters is for liquid volume, not measuring how long something is.', 'You want to measure how long the pencil is.'),",
       "extractor": "object"
     },
     {
@@ -10161,14 +9594,14 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-      "line": 76,
-      "questionId": 7850004,
-      "title": "Array of dots",
-      "chapter": "Multiplication",
+      "line": 137,
+      "questionId": 7850008,
+      "title": "Division as missing factor",
+      "chapter": "Division",
       "field": "whyWrong",
-      "value": "This adds 5 and 4 instead of multiplying.",
+      "value": "15 takes away 5 once, but division asks how many equal groups fit in 20.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('9', 'This adds 5 and 4 instead of multiplying.', 'Count the rows times the dots in each row.'),",
+      "snippet": "miss('15', '15 takes away 5 once, but division asks how many equal groups fit in 20.', 'Ask how many 5s fit inside 20.'),",
       "extractor": "object"
     },
     {
@@ -10181,39 +9614,9 @@
       "title": "Division as missing factor",
       "chapter": "Division",
       "field": "whyWrong",
-      "value": "This multiplies 20 by 5 instead of dividing.",
+      "value": "100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('100', 'This multiplies 20 by 5 instead of dividing.', 'Dividing makes the number smaller, not bigger.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-      "line": 154,
-      "questionId": 7850009,
-      "title": "Linking times and divide",
-      "chapter": "Division",
-      "field": "whyWrong",
-      "value": "This adds instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('21', 'This adds instead of dividing.', 'Think of the matching times fact, 6 x 3 = 18.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-      "line": 183,
-      "questionId": 7850011,
-      "title": "Dividing by 1",
-      "chapter": "Division",
-      "field": "whyWrong",
-      "value": "This adds instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('8', 'This adds instead of dividing.', 'Dividing by 1 keeps the number the same.'),",
+      "snippet": "miss('100', '100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.', 'Dividing makes the number smaller, not bigger.'),",
       "extractor": "object"
     },
     {
@@ -10226,9 +9629,9 @@
       "title": "Antonyms",
       "chapter": "Vocabulary",
       "field": "whyWrong",
-      "value": "Open is not the opposite of begin.",
+      "value": "Open does not undo begin; look for the word that means the action has finished.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Open', 'Open is not the opposite of begin.', 'Think about what happens at the finish.'),",
+      "snippet": "miss('Open', 'Open does not undo begin; look for the word that means the action has finished.', 'Think about what happens at the finish.'),",
       "extractor": "object"
     },
     {
@@ -10241,9 +9644,9 @@
       "title": "Nouns",
       "chapter": "Grammar",
       "field": "whyWrong",
-      "value": "Slept is an action word, which is a verb.",
+      "value": "slept describes an action or state, so it is a verb rather than a noun.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('slept', 'Slept is an action word, which is a verb.', 'A noun names a person, place, animal, or thing.'),",
+      "snippet": "miss('slept', 'slept describes an action or state, so it is a verb rather than a noun.', 'A noun names a person, place, animal, or thing.'),",
       "extractor": "object"
     },
     {
@@ -10271,24 +9674,9 @@
       "title": "Comparing numbers",
       "chapter": "Place Value",
       "field": "whyWrong",
-      "value": "The two numbers are not the same.",
+      "value": "equal to would mean both sides match, but these two numbers differ when you compare the digits.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('equal to', 'The two numbers are not the same.', 'Look closely, the tens digits are different.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-      "line": 836,
-      "questionId": 7850054,
-      "title": "Multiplication pattern",
-      "chapter": "Patterns and Skip Counting",
-      "field": "whyWrong",
-      "value": "This adds 5 and 4 instead of multiplying.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('9', 'This adds 5 and 4 instead of multiplying.', 'Continue the pattern by 4 to the fifth number.'),",
+      "snippet": "miss('equal to', 'equal to would mean both sides match, but these two numbers differ when you compare the digits.', 'Look closely, the tens digits are different.'),",
       "extractor": "object"
     },
     {
@@ -10301,24 +9689,9 @@
       "title": "Minutes in an hour",
       "chapter": "Measurement and Time",
       "field": "whyWrong",
-      "value": "An hour is not split into 100 minutes.",
+      "value": "100 treats time like a base-100 measure, but an hour has 60 minutes.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('100', 'An hour is not split into 100 minutes.', 'Think about the numbers around a clock face.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-      "line": 382,
-      "questionId": 7849024,
-      "title": "Choosing a unit",
-      "chapter": "Measurement and Time",
-      "field": "whyWrong",
-      "value": "Kilometers measure long distances, like between towns.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Kilometers', 'Kilometers measure long distances, like between towns.', 'A pencil is small, so use a small unit.'),",
+      "snippet": "miss('100', '100 treats time like a base-100 measure, but an hour has 60 minutes.', 'Think about the numbers around a clock face.'),",
       "extractor": "object"
     },
     {
@@ -10331,24 +9704,9 @@
       "title": "Choosing a unit",
       "chapter": "Measurement and Time",
       "field": "whyWrong",
-      "value": "Kilograms measure how heavy something is.",
+      "value": "Kilograms measures mass or weight, not the quantity named in this prompt.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Kilograms', 'Kilograms measure how heavy something is.', 'You want to measure length, not weight.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-      "line": 445,
-      "questionId": 7849028,
-      "title": "Naming a shape",
-      "chapter": "Geometry and Shapes",
-      "field": "whyWrong",
-      "value": "A rectangle has 4 corners but its sides are not all equal.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Rectangle', 'A rectangle has 4 corners but its sides are not all equal.', 'A square has all four sides the same length.'),",
+      "snippet": "miss('Kilograms', 'Kilograms measures mass or weight, not the quantity named in this prompt.', 'You want to measure length, not weight.'),",
       "extractor": "object"
     },
     {
@@ -10361,9 +9719,9 @@
       "title": "Finding a noun",
       "chapter": "Grammar",
       "field": "whyWrong",
-      "value": "Slept is an action word, which is a verb.",
+      "value": "slept describes an action or state, so it is a verb rather than a noun.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('slept', 'Slept is an action word, which is a verb.', 'A noun names a person, place, animal, or thing.'),",
+      "snippet": "miss('slept', 'slept describes an action or state, so it is a verb rather than a noun.', 'A noun names a person, place, animal, or thing.'),",
       "extractor": "object"
     },
     {
@@ -10406,39 +9764,9 @@
       "title": "Adding like fractions",
       "chapter": "Adding and Comparing Fractions",
       "field": "whyWrong",
-      "value": "3/10 adds the denominators, but like fractions keep the same bottom number and only combine the tops.",
+      "value": "3/10 changes the denominator; when the bottoms already match, keep that bottom and add only the tops.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('3/10', '3/10 adds the denominators, but like fractions keep the same bottom number and only combine the tops.', 'When bottoms match, only add the tops.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-4th-grade-mathPrim103TopUp.ts",
-      "line": 694,
-      "questionId": 7811044,
-      "title": "Naming a shape",
-      "chapter": "Symmetry and Shapes",
-      "field": "whyWrong",
-      "value": "A circle has no straight sides at all.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('A circle', 'A circle has no straight sides at all.', 'Look for the shape with exactly three sides.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-4th-grade-mathPrim103TopUp.ts",
-      "line": 802,
-      "questionId": 7811051,
-      "title": "Perimeter of a rectangle",
-      "chapter": "Measurement and Word Problems",
-      "field": "whyWrong",
-      "value": "You added only one length and one width.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('8 cm', 'You added only one length and one width.', 'A rectangle has two lengths and two widths.'),",
+      "snippet": "miss('3/10', '3/10 changes the denominator; when the bottoms already match, keep that bottom and add only the tops.', 'When bottoms match, only add the tops.'),",
       "extractor": "object"
     },
     {
@@ -10511,9 +9839,9 @@
       "title": "Choosing the right adjective",
       "chapter": "Grammar and Language",
       "field": "whyWrong",
-      "value": "Slept is an action word, which is a verb.",
+      "value": "slept describes an action or state, so it is a verb rather than a noun.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('slept', 'Slept is an action word, which is a verb.', 'Look for the word that tells what the cat is like.'),",
+      "snippet": "miss('slept', 'slept describes an action or state, so it is a verb rather than a noun.', 'Look for the word that tells what the cat is like.'),",
       "extractor": "object"
     },
     {
@@ -10541,9 +9869,9 @@
       "title": "Multiplying two-digit numbers",
       "chapter": "Multi-Digit Multiplication and Division",
       "field": "whyWrong",
-      "value": "You added 23 and 4 instead of multiplying.",
+      "value": "27 is 23 plus 4, but the prompt asks for four groups of 23.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('27', 'You added 23 and 4 instead of multiplying.', 'Multiply each part: 4 times 23.'),",
+      "snippet": "miss('27', '27 is 23 plus 4, but the prompt asks for four groups of 23.', 'Multiply each part: 4 times 23.'),",
       "extractor": "object"
     },
     {
@@ -10556,24 +9884,9 @@
       "title": "Division with a remainder",
       "chapter": "Multi-Digit Multiplication and Division",
       "field": "whyWrong",
-      "value": "A remainder cannot be bigger than the number you divide by.",
+      "value": "2 remainder 7 leaves too much behind; a valid remainder must be smaller than the divisor.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('2 remainder 7', 'A remainder cannot be bigger than the number you divide by.', 'The remainder must be less than 5.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-5th-grade-mathPrim103TopUp.ts",
-      "line": 777,
-      "questionId": 7812050,
-      "title": "Estimating a product",
-      "chapter": "Multi-Digit Multiplication and Division",
-      "field": "whyWrong",
-      "value": "You added the numbers instead of multiplying.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('About 40', 'You added the numbers instead of multiplying.', 'Round to 20 times 20 and multiply.'),",
+      "snippet": "miss('2 remainder 7', '2 remainder 7 leaves too much behind; a valid remainder must be smaller than the divisor.', 'The remainder must be less than 5.'),",
       "extractor": "object"
     },
     {
@@ -10586,9 +9899,9 @@
       "title": "A fraction times a fraction",
       "chapter": "Multiplying Fractions",
       "field": "whyWrong",
-      "value": "You multiplied the bottoms but added the tops.",
+      "value": "2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('2/6', 'You multiplied the bottoms but added the tops.', 'Multiply the tops too: 1 x 1 = 1.'),",
+      "snippet": "miss('2/6', '2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.', 'Multiply the tops too: 1 x 1 = 1.'),",
       "extractor": "object"
     },
     {
@@ -10646,24 +9959,9 @@
       "title": "Choosing a synonym",
       "chapter": "Vocabulary",
       "field": "whyWrong",
-      "value": "Angry is a different feeling, not the same as happy.",
+      "value": "Angry names a different mood; a synonym should stay close to happy.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Angry', 'Angry is a different feeling, not the same as happy.', 'A synonym means almost the same thing.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-6th-grade-mathPrim103TopUp.ts",
-      "line": 477,
-      "questionId": 7813030,
-      "title": "Solving a multiplication equation",
-      "chapter": "Equations",
-      "field": "whyWrong",
-      "value": "You subtracted 3 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('12', 'You subtracted 3 instead of dividing.', '3n means 3 times n, so divide 15 by 3.'),",
+      "snippet": "miss('Angry', 'Angry names a different mood; a synonym should stay close to happy.', 'A synonym means almost the same thing.'),",
       "extractor": "object"
     },
     {
@@ -10685,45 +9983,15 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 87,
-      "file": "src/data/questionCatalog/col-6th-grade-mathPrim103TopUp.ts",
-      "line": 631,
-      "questionId": 7813040,
-      "title": "Rate with money",
-      "chapter": "Ratios and Rates",
-      "field": "whyWrong",
-      "value": "You subtracted 3 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('$21', 'You subtracted 3 instead of dividing.', 'Share $24 equally across 3 hours.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-6th-grade-mathPrim103TopUp.ts",
-      "line": 664,
-      "questionId": 7813042,
-      "title": "Percent to decimal",
-      "chapter": "Percentages",
-      "field": "whyWrong",
-      "value": "You moved the point too far.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('0.03', 'You moved the point too far.', '30 divided by 100 is 0.3, not 0.03.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
       "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
       "line": 414,
       "questionId": 7856026,
       "title": "Synonyms",
       "chapter": "Vocabulary",
       "field": "whyWrong",
-      "value": "Angry is a different feeling, not the same as happy.",
+      "value": "Angry names a different mood; a synonym should stay close to happy.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Angry', 'Angry is a different feeling, not the same as happy.', 'Look for the word with a similar meaning.'),",
+      "snippet": "miss('Angry', 'Angry names a different mood; a synonym should stay close to happy.', 'Look for the word with a similar meaning.'),",
       "extractor": "object"
     },
     {
@@ -10916,24 +10184,9 @@
       "title": "Two-digit times one-digit",
       "chapter": "Multiplication",
       "field": "whyWrong",
-      "value": "You added 23 and 4 instead of multiplying.",
+      "value": "27 is 23 plus 4, but the prompt asks for four groups of 23.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('27', 'You added 23 and 4 instead of multiplying.', 'Four groups of 23, not 23 plus 4.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-      "line": 156,
-      "questionId": 7816009,
-      "title": "Sharing equally",
-      "chapter": "Division",
-      "field": "whyWrong",
-      "value": "You subtracted 4 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('20', 'You subtracted 4 instead of dividing.', 'Dividing shares the sweets into equal groups.'),",
+      "snippet": "miss('27', '27 is 23 plus 4, but the prompt asks for four groups of 23.', 'Four groups of 23, not 23 plus 4.'),",
       "extractor": "object"
     },
     {
@@ -10946,9 +10199,9 @@
       "title": "Division with a remainder",
       "chapter": "Division",
       "field": "whyWrong",
-      "value": "A remainder cannot be bigger than the number you divide by.",
+      "value": "2 remainder 7 leaves too much behind; a valid remainder must be smaller than the divisor.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('2 remainder 7', 'A remainder cannot be bigger than the number you divide by.', 'You can fit another group of 5 before stopping.'),",
+      "snippet": "miss('2 remainder 7', '2 remainder 7 leaves too much behind; a valid remainder must be smaller than the divisor.', 'You can fit another group of 5 before stopping.'),",
       "extractor": "object"
     },
     {
@@ -10961,9 +10214,9 @@
       "title": "Equivalent fractions",
       "chapter": "Fractions Basics",
       "field": "whyWrong",
-      "value": "3/4 is three out of four equal pieces, which is more than half the shape.",
+      "value": "3/4 covers three quarters of the shape, more than the half being asked for.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('3/4', '3/4 is three out of four equal pieces, which is more than half the shape.', 'One half means the top is half the bottom.'),",
+      "snippet": "miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'One half means the top is half the bottom.'),",
       "extractor": "object"
     },
     {
@@ -10976,144 +10229,9 @@
       "title": "Adding same-bottom fractions",
       "chapter": "Adding Fractions",
       "field": "whyWrong",
-      "value": "3/10 adds the denominators, but like fractions keep the same bottom number and only combine the tops.",
+      "value": "3/10 changes the denominator; when the bottoms already match, keep that bottom and add only the tops.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('3/10', '3/10 adds the denominators, but like fractions keep the same bottom number and only combine the tops.', 'Keep the bottom the same; only add the tops.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-      "line": 385,
-      "questionId": 7816024,
-      "title": "Adding decimals",
-      "chapter": "Decimals",
-      "field": "whyWrong",
-      "value": "You wrote the digits side by side instead of adding.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('0.34', 'You wrote the digits side by side instead of adding.', 'Add 3 tenths and 4 tenths together.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-      "line": 398,
-      "questionId": 7816025,
-      "title": "Comparing decimals",
-      "chapter": "Decimals",
-      "field": "whyWrong",
-      "value": "More digits does not mean a bigger number.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('0.45', 'More digits does not mean a bigger number.', 'Compare the tenths first: 6 tenths beats 4 tenths.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-      "line": 492,
-      "questionId": 7816031,
-      "title": "Ordering negative numbers",
-      "chapter": "Negative Numbers",
-      "field": "whyWrong",
-      "value": "These are three different numbers.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('They are equal', 'These are three different numbers.', 'Place them on a number line to compare.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-      "line": 522,
-      "questionId": 7816033,
-      "title": "Squaring a number",
-      "chapter": "Exponents Intro",
-      "field": "whyWrong",
-      "value": "You wrote the digits side by side.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('33', 'You wrote the digits side by side.', '3 squared means 3 x 3.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-      "line": 597,
-      "questionId": 7816038,
-      "title": "Sharing a bill",
-      "chapter": "Word Problems",
-      "field": "whyWrong",
-      "value": "You subtracted 3 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('18 pounds', 'You subtracted 3 instead of dividing.', 'Share the 21 pounds among 3 people.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-      "line": 719,
-      "questionId": 7816046,
-      "title": "Inverse of multiplication",
-      "chapter": "Mixed Operations",
-      "field": "whyWrong",
-      "value": "You subtracted 4 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', 'You subtracted 4 instead of dividing.', 'Divide 28 by 4 to find the box.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-      "line": 767,
-      "questionId": 7816049,
-      "title": "Adding lengths",
-      "chapter": "Measurement Arithmetic",
-      "field": "whyWrong",
-      "value": "You added a zero by mistake.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('800 cm', 'You added a zero by mistake.', '45 + 35 is 80, not 800.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-      "line": 813,
-      "questionId": 7816052,
-      "title": "Adding coins",
-      "chapter": "Money Arithmetic",
-      "field": "whyWrong",
-      "value": "You added a zero by mistake.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('800p', 'You added a zero by mistake.', '50 + 20 + 10 is 80, not 800.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
-      "line": 828,
-      "questionId": 7816053,
-      "title": "Doubling money",
-      "chapter": "Money Arithmetic",
-      "field": "whyWrong",
-      "value": "You added a zero by mistake.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('350p', 'You added a zero by mistake.', '35 doubled is 70, not 350.'),",
+      "snippet": "miss('3/10', '3/10 changes the denominator; when the bottoms already match, keep that bottom and add only the tops.', 'Keep the bottom the same; only add the tops.'),",
       "extractor": "object"
     },
     {
@@ -11156,9 +10274,9 @@
       "title": "Minutes in an hour",
       "chapter": "Time",
       "field": "whyWrong",
-      "value": "An hour is not split into 100 minutes.",
+      "value": "100 treats time like a base-100 measure, but an hour has 60 minutes.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('100', 'An hour is not split into 100 minutes.', 'Look at a clock face; it goes up to 60.'),",
+      "snippet": "miss('100', '100 treats time like a base-100 measure, but an hour has 60 minutes.', 'Look at a clock face; it goes up to 60.'),",
       "extractor": "object"
     },
     {
@@ -11171,24 +10289,9 @@
       "title": "Minutes in an hour",
       "chapter": "Time",
       "field": "whyWrong",
-      "value": "24 is the number of hours in a day, not minutes in an hour.",
+      "value": "24 belongs to hours in a day; minutes in an hour use 60.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', '24 is the number of hours in a day, not minutes in an hour.', 'A clock face is divided into 60 minutes.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-basic-geometry-and-measurementPrim103TopUp.ts",
-      "line": 670,
-      "questionId": 7817043,
-      "title": "Reading half past",
-      "chapter": "Time",
-      "field": "whyWrong",
-      "value": "The hour hand has not reached 5 yet.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Half past 5', 'The hour hand has not reached 5 yet.', 'The short hand is between 4 and 5, so the hour is 4.'),",
+      "snippet": "miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'A clock face is divided into 60 minutes.'),",
       "extractor": "object"
     },
     {
@@ -11201,24 +10304,9 @@
       "title": "Days in a week",
       "chapter": "Time",
       "field": "whyWrong",
-      "value": "12 is the number of months in a year, not days in a week.",
+      "value": "12 is a months-in-a-year fact, not the seven-day week.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('12', '12 is the number of months in a year, not days in a week.', 'A week runs from one day name back to the same day name.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-early-math-reviewPrim103TopUp.ts",
-      "line": 244,
-      "questionId": 7819015,
-      "title": "Birds on a Branch",
-      "chapter": "Addition Within 20",
-      "field": "whyWrong",
-      "value": "That is one short of the total.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('12', 'That is one short of the total.', 'Count on from 9: 10, 11, 12, 13.'),",
+      "snippet": "miss('12', '12 is a months-in-a-year fact, not the seven-day week.', 'A week runs from one day name back to the same day name.'),",
       "extractor": "object"
     },
     {
@@ -11234,21 +10322,6 @@
       "value": "4 is just one step too high; check the last count carefully.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('4', '4 is just one step too high; check the last count carefully.', 'Take away exactly two from five.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-early-math-reviewPrim103TopUp.ts",
-      "line": 685,
-      "questionId": 7819044,
-      "title": "Balloons at a Party",
-      "chapter": "Word Problems",
-      "field": "whyWrong",
-      "value": "That is one short of the total.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('12', 'That is one short of the total.', 'Count on from 7: add the 6 blue balloons.'),",
       "extractor": "object"
     },
     {
@@ -11286,29 +10359,14 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/col-early-math-reviewPrim103TopUp.ts",
-      "line": 822,
-      "questionId": 7819053,
-      "title": "Counting Pennies",
-      "chapter": "Money and Time Basics",
-      "field": "whyWrong",
-      "value": "That is one short of the total.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('8', 'That is one short of the total.', 'Count on from 5: 6, 7, 8, 9.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-early-math-reviewPrim103TopUp.ts",
       "line": 838,
       "questionId": 7819054,
       "title": "Days in a Week",
       "chapter": "Money and Time Basics",
       "field": "whyWrong",
-      "value": "Twelve is the number of months in a year, not days in a week.",
+      "value": "12 belongs to months in a year, but the week has seven days.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('12', 'Twelve is the number of months in a year, not days in a week.', 'A week is shorter than that.'),",
+      "snippet": "miss('12', '12 belongs to months in a year, but the week has seven days.', 'A week is shorter than that.'),",
       "extractor": "object"
     },
     {
@@ -11321,84 +10379,9 @@
       "title": "Division with a remainder",
       "chapter": "Multiplication and Division",
       "field": "whyWrong",
-      "value": "A remainder cannot be bigger than the number you divide by.",
+      "value": "2 remainder 7 leaves too much behind; a valid remainder must be smaller than the divisor.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('2 remainder 7', 'A remainder cannot be bigger than the number you divide by.', 'Keep taking out fives until fewer than 5 are left.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
-      "line": 61,
-      "questionId": 7815003,
-      "title": "Multiplying by ten",
-      "chapter": "Multiplication and Division",
-      "field": "whyWrong",
-      "value": "This adds 10 instead of multiplying by 10.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('44', 'This adds 10 instead of multiplying by 10.', 'Times 10 makes the number ten times bigger.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
-      "line": 274,
-      "questionId": 7815017,
-      "title": "Comparing decimals",
-      "chapter": "Decimals",
-      "field": "whyWrong",
-      "value": "More digits does not mean a bigger number.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('0.45', 'More digits does not mean a bigger number.', 'Compare tenths first: 6 tenths beats 4 tenths.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
-      "line": 383,
-      "questionId": 7815024,
-      "title": "Ordering integers",
-      "chapter": "Integers and Negative Numbers",
-      "field": "whyWrong",
-      "value": "These are three different numbers.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('They are equal', 'These are three different numbers.', 'Place them on a number line to compare.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
-      "line": 427,
-      "questionId": 7815027,
-      "title": "Solving with multiplication",
-      "chapter": "Intro to Algebra",
-      "field": "whyWrong",
-      "value": "This subtracts 3 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('9', 'This subtracts 3 instead of dividing.', 'Divide 12 by 3 to undo the times 3.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
-      "line": 595,
-      "questionId": 7815038,
-      "title": "Area of a rectangle",
-      "chapter": "Measurement and Perimeter",
-      "field": "whyWrong",
-      "value": "This adds the sides instead of multiplying.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('20 square cm', 'This adds the sides instead of multiplying.', 'Area is length times width.'),",
+      "snippet": "miss('2 remainder 7', '2 remainder 7 leaves too much behind; a valid remainder must be smaller than the divisor.', 'Keep taking out fives until fewer than 5 are left.'),",
       "extractor": "object"
     },
     {
@@ -11411,24 +10394,9 @@
       "title": "Units of length",
       "chapter": "Measurement and Perimeter",
       "field": "whyWrong",
-      "value": "Liters measure liquid, not length.",
+      "value": "Liters is for liquid volume, not measuring how long something is.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Liters', 'Liters measure liquid, not length.', 'Length needs a distance unit.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-eureka-math-3rd-8th-gradePrim103TopUp.ts",
-      "line": 841,
-      "questionId": 7815054,
-      "title": "Equal groups problem",
-      "chapter": "Word Problems",
-      "field": "whyWrong",
-      "value": "This adds instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('42', 'This adds instead of dividing.', 'You need fewer rows than students.'),",
+      "snippet": "miss('Liters', 'Liters is for liquid volume, not measuring how long something is.', 'Length needs a distance unit.'),",
       "extractor": "object"
     },
     {
@@ -11456,69 +10424,9 @@
       "title": "Comparing numbers",
       "chapter": "Place Value",
       "field": "whyWrong",
-      "value": "The two numbers are not the same.",
+      "value": "equal to (=) would mean both sides match, but these two numbers differ when you compare the digits.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('equal to (=)', 'The two numbers are not the same.', 'Look closely at the tens digit in each number.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
-      "line": 76,
-      "questionId": 7814004,
-      "title": "Ten times bigger",
-      "chapter": "Place Value",
-      "field": "whyWrong",
-      "value": "This adds 10 instead of multiplying by 10.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('50', 'This adds 10 instead of multiplying by 10.', 'Ten times means multiply, not add.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
-      "line": 168,
-      "questionId": 7814010,
-      "title": "Fact family",
-      "chapter": "Multiplication and Division",
-      "field": "whyWrong",
-      "value": "This subtracts 3 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', 'This subtracts 3 instead of dividing.', 'Use the matching multiplication fact to help.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
-      "line": 487,
-      "questionId": 7814031,
-      "title": "Area of a rectangle",
-      "chapter": "Measurement and Data",
-      "field": "whyWrong",
-      "value": "This adds the sides instead of multiplying.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('10 square cm', 'This adds the sides instead of multiplying.', 'Area is length times width.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
-      "line": 532,
-      "questionId": 7814034,
-      "title": "Units of length",
-      "chapter": "Measurement and Data",
-      "field": "whyWrong",
-      "value": "Kilometers measure long distances like between towns.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('kilometers', 'Kilometers measure long distances like between towns.', 'A pencil is small, so use a small unit.'),",
+      "snippet": "miss('equal to (=)', 'equal to (=) would mean both sides match, but these two numbers differ when you compare the digits.', 'Look closely at the tens digit in each number.'),",
       "extractor": "object"
     },
     {
@@ -11531,9 +10439,9 @@
       "title": "Units of length",
       "chapter": "Measurement and Data",
       "field": "whyWrong",
-      "value": "Liters measure liquid, not length.",
+      "value": "liters is for liquid volume, not measuring how long something is.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('liters', 'Liters measure liquid, not length.', 'Length needs a length unit.'),",
+      "snippet": "miss('liters', 'liters is for liquid volume, not measuring how long something is.', 'Length needs a length unit.'),",
       "extractor": "object"
     },
     {
@@ -11571,89 +10479,14 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-      "line": 124,
-      "questionId": 7851007,
-      "title": "Ordering numbers",
-      "chapter": "Comparing Numbers",
-      "field": "whyWrong",
-      "value": "These are three different numbers.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('They are all the same', 'These are three different numbers.', 'Look at the tens digit of each one.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-      "line": 322,
-      "questionId": 7851020,
-      "title": "Multiplying by 2",
-      "chapter": "Intro to Multiplication",
-      "field": "whyWrong",
-      "value": "You wrote the digits side by side.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('26', 'You wrote the digits side by side.', 'Multiplying 2 by 6 means 6 + 6.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-      "line": 366,
-      "questionId": 7851023,
-      "title": "Multiplying by 10",
-      "chapter": "Intro to Multiplication",
-      "field": "whyWrong",
-      "value": "You wrote the digits side by side.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('310', 'You wrote the digits side by side.', 'Count by tens three times.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
       "line": 444,
       "questionId": 7851028,
       "title": "Counting sides",
       "chapter": "Shapes and Measurement",
       "field": "whyWrong",
-      "value": "Two lines cannot close up to make a shape.",
+      "value": "2 is not enough sides to enclose the shape being described.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('2', 'Two lines cannot close up to make a shape.', 'A triangle needs three sides to close.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-      "line": 458,
-      "questionId": 7851029,
-      "title": "Naming shapes",
-      "chapter": "Shapes and Measurement",
-      "field": "whyWrong",
-      "value": "A circle has no straight sides or corners.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Circle', 'A circle has no straight sides or corners.', 'This shape has 4 equal straight sides.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-      "line": 459,
-      "questionId": 7851029,
-      "title": "Naming shapes",
-      "chapter": "Shapes and Measurement",
-      "field": "whyWrong",
-      "value": "A rectangle has 4 corners, but its sides are not all equal.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Rectangle', 'A rectangle has 4 corners, but its sides are not all equal.', 'A square has all 4 sides the same length.'),",
+      "snippet": "miss('2', '2 is not enough sides to enclose the shape being described.', 'A triangle needs three sides to close.'),",
       "extractor": "object"
     },
     {
@@ -11666,24 +10499,9 @@
       "title": "Measuring length",
       "chapter": "Shapes and Measurement",
       "field": "whyWrong",
-      "value": "A clock measures time, not length.",
+      "value": "A clock is for time, but length is measured with tools like a ruler or tape measure.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('A clock', 'A clock measures time, not length.', 'You need a tool with marks for length.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 123,
-      "questionId": 7853007,
-      "title": "Dividing by four",
-      "chapter": "Division Facts",
-      "field": "whyWrong",
-      "value": "This subtracts 4 from 24 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('20', 'This subtracts 4 from 24 instead of dividing.', 'Dividing splits 24 into equal groups of 4.'),",
+      "snippet": "miss('A clock', 'A clock is for time, but length is measured with tools like a ruler or tape measure.', 'You need a tool with marks for length.'),",
       "extractor": "object"
     },
     {
@@ -11696,9 +10514,9 @@
       "title": "Comparing numbers",
       "chapter": "Place Value",
       "field": "whyWrong",
-      "value": "The two numbers are not the same.",
+      "value": "equal to (=) would mean both sides match, but these two numbers differ when you compare the digits.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('equal to (=)', 'The two numbers are not the same.', 'Look closely; the tens digits are different.'),",
+      "snippet": "miss('equal to (=)', 'equal to (=) would mean both sides match, but these two numbers differ when you compare the digits.', 'Look closely; the tens digits are different.'),",
       "extractor": "object"
     },
     {
@@ -11711,9 +10529,9 @@
       "title": "Splitting into teams",
       "chapter": "Word Problems",
       "field": "whyWrong",
-      "value": "This subtracts 4 from 28 instead of dividing.",
+      "value": "24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', 'This subtracts 4 from 28 instead of dividing.', 'Split 28 into 4 equal groups.'),",
+      "snippet": "miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Split 28 into 4 equal groups.'),",
       "extractor": "object"
     },
     {
@@ -11756,9 +10574,9 @@
       "title": "Telling time",
       "chapter": "Measurement and Time",
       "field": "whyWrong",
-      "value": "24 is the number of hours in a day, not minutes in an hour.",
+      "value": "24 belongs to hours in a day; minutes in an hour use 60.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', '24 is the number of hours in a day, not minutes in an hour.', 'Think about the minute marks on a clock.'),",
+      "snippet": "miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'Think about the minute marks on a clock.'),",
       "extractor": "object"
     },
     {
@@ -11771,9 +10589,9 @@
       "title": "Days in a week",
       "chapter": "Measurement and Time",
       "field": "whyWrong",
-      "value": "12 is the number of months in a year, not days in a week.",
+      "value": "12 is a months-in-a-year fact, not the seven-day week.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('12', '12 is the number of months in a year, not days in a week.', 'Count the days: Sunday through Saturday.'),",
+      "snippet": "miss('12', '12 is a months-in-a-year fact, not the seven-day week.', 'Count the days: Sunday through Saturday.'),",
       "extractor": "object"
     },
     {
@@ -11786,39 +10604,9 @@
       "title": "Measuring length",
       "chapter": "Measurement and Time",
       "field": "whyWrong",
-      "value": "A clock measures time, not length.",
+      "value": "a clock is for time, but length is measured with tools like a ruler or tape measure.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('a clock', 'A clock measures time, not length.', 'Length means how long something is.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 716,
-      "questionId": 7853046,
-      "title": "Naming a shape",
-      "chapter": "Shapes and Geometry",
-      "field": "whyWrong",
-      "value": "A circle has no straight sides or corners.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('a circle', 'A circle has no straight sides or corners.', 'This shape has 4 straight equal sides.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 717,
-      "questionId": 7853046,
-      "title": "Naming a shape",
-      "chapter": "Shapes and Geometry",
-      "field": "whyWrong",
-      "value": "A rectangle has 4 corners but its sides are not all equal.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('a rectangle', 'A rectangle has 4 corners but its sides are not all equal.', 'All 4 sides here are equal, which makes a square.'),",
+      "snippet": "miss('a clock', 'a clock is for time, but length is measured with tools like a ruler or tape measure.', 'Length means how long something is.'),",
       "extractor": "object"
     },
     {
@@ -11861,9 +10649,9 @@
       "title": "Adding fractions with like denominators",
       "chapter": "Fractions",
       "field": "whyWrong",
-      "value": "3/10 adds the denominators, but like fractions keep the same bottom number and only combine the tops.",
+      "value": "3/10 changes the denominator; when the bottoms already match, keep that bottom and add only the tops.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('3/10', '3/10 adds the denominators, but like fractions keep the same bottom number and only combine the tops.', 'When bottoms match, only add the tops.'),",
+      "snippet": "miss('3/10', '3/10 changes the denominator; when the bottoms already match, keep that bottom and add only the tops.', 'When bottoms match, only add the tops.'),",
       "extractor": "object"
     },
     {
@@ -11879,36 +10667,6 @@
       "value": "That is one half of 12, not one third.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('6', 'That is one half of 12, not one third.', 'One third means three equal parts, not two.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-      "line": 388,
-      "questionId": 7855024,
-      "title": "Comparing decimals",
-      "chapter": "Decimals",
-      "field": "whyWrong",
-      "value": "More digits does not mean a bigger number.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('0.25', 'More digits does not mean a bigger number.', 'Think of 0.3 as 0.30 and compare.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-      "line": 466,
-      "questionId": 7855029,
-      "title": "Perimeter of a rectangle",
-      "chapter": "Measurement and Time",
-      "field": "whyWrong",
-      "value": "You added only one length and one width.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('10 cm', 'You added only one length and one width.', 'A rectangle has two lengths and two widths.'),",
       "extractor": "object"
     },
     {
@@ -11945,30 +10703,15 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-      "line": 482,
-      "questionId": 7855030,
-      "title": "Area of a rectangle",
-      "chapter": "Measurement and Time",
-      "field": "whyWrong",
-      "value": "Area is measured in square units, not just cm.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('15 cm', 'Area is measured in square units, not just cm.', 'When you multiply two lengths, the unit becomes square cm.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
       "file": "src/data/questionCatalog/col-get-ready-for-6th-gradePrim103TopUp.ts",
       "line": 94,
       "questionId": 7857005,
       "title": "Multiplying two fractions",
       "chapter": "Multiplying Fractions",
       "field": "whyWrong",
-      "value": "You multiplied the bottoms but added the tops.",
+      "value": "2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('2/6', 'You multiplied the bottoms but added the tops.', 'Multiply the tops too: 1 x 1 = 1.'),",
+      "snippet": "miss('2/6', '2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.', 'Multiply the tops too: 1 x 1 = 1.'),",
       "extractor": "object"
     },
     {
@@ -12011,24 +10754,9 @@
       "title": "Multiplying a two-digit number",
       "chapter": "Multiplying Whole Numbers",
       "field": "whyWrong",
-      "value": "You added 23 and 4 instead of multiplying.",
+      "value": "27 is 23 plus 4, but the prompt asks for four groups of 23.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('27', 'You added 23 and 4 instead of multiplying.', 'Times means groups of, so 4 groups of 23.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-6th-gradePrim103TopUp.ts",
-      "line": 521,
-      "questionId": 7857033,
-      "title": "A division word problem",
-      "chapter": "Dividing Whole Numbers",
-      "field": "whyWrong",
-      "value": "You subtracted 4 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('20', 'You subtracted 4 instead of dividing.', 'Sharing equally means divide into 4 groups.'),",
+      "snippet": "miss('27', '27 is 23 plus 4, but the prompt asks for four groups of 23.', 'Times means groups of, so 4 groups of 23.'),",
       "extractor": "object"
     },
     {
@@ -12350,21 +11078,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 87,
-      "file": "src/data/questionCatalog/col-word-buildersPrim103TopUp.ts",
-      "line": 617,
-      "questionId": 7833039,
-      "title": "Three syllable word",
-      "chapter": "Syllables",
-      "field": "whyWrong",
-      "value": "That is one beat too many.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('4', 'That is one beat too many.', 'Break it into ba-na-na and count.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
       "file": "src/data/questionCatalog/colIntegratedMath2HighTopUp.ts",
       "line": 318,
       "questionId": 7551021,
@@ -12374,21 +11087,6 @@
       "value": "You changed the sign but did not take the reciprocal.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('-2/3', 'You changed the sign but did not take the reciprocal.', 'Perpendicular slope is the negative reciprocal, so flip the fraction too.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/elevenPlusPrim103TopUp.ts",
-      "line": 507,
-      "questionId": 7847032,
-      "title": "Perimeter problem",
-      "chapter": "Maths - Problem Solving",
-      "field": "whyWrong",
-      "value": "You added only one length and one width.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('8 cm', 'You added only one length and one width.', 'A rectangle has two lengths and two widths.'),",
       "extractor": "object"
     },
     {
@@ -12549,9 +11247,9 @@
       "title": "Best unit for length",
       "chapter": "Measurement - length and mass",
       "field": "whyWrong",
-      "value": "Kilograms measure how heavy something is.",
+      "value": "Kilograms measures mass or weight, not the quantity named in this prompt.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Kilograms', 'Kilograms measure how heavy something is.', 'Height is about how long, not how heavy.'),",
+      "snippet": "miss('Kilograms', 'Kilograms measures mass or weight, not the quantity named in this prompt.', 'Height is about how long, not how heavy.'),",
       "extractor": "object"
     },
     {
@@ -12564,9 +11262,9 @@
       "title": "Minutes in an hour",
       "chapter": "Measurement - time",
       "field": "whyWrong",
-      "value": "An hour is not split into 100 minutes.",
+      "value": "100 treats time like a base-100 measure, but an hour has 60 minutes.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('100', 'An hour is not split into 100 minutes.', 'A clock face goes up to 60 minutes.'),",
+      "snippet": "miss('100', '100 treats time like a base-100 measure, but an hour has 60 minutes.', 'A clock face goes up to 60 minutes.'),",
       "extractor": "object"
     },
     {
@@ -12579,9 +11277,9 @@
       "title": "Minutes in an hour",
       "chapter": "Measurement - time",
       "field": "whyWrong",
-      "value": "24 is the number of hours in a day, not minutes in an hour.",
+      "value": "24 belongs to hours in a day; minutes in an hour use 60.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', '24 is the number of hours in a day, not minutes in an hour.', 'Count the minute marks around a clock.'),",
+      "snippet": "miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'Count the minute marks around a clock.'),",
       "extractor": "object"
     },
     {
@@ -12594,9 +11292,9 @@
       "title": "Days in a week",
       "chapter": "Measurement - time",
       "field": "whyWrong",
-      "value": "12 is the number of months in a year, not days in a week.",
+      "value": "12 is a months-in-a-year fact, not the seven-day week.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('12', '12 is the number of months in a year, not days in a week.', 'A week is much shorter than that.'),",
+      "snippet": "miss('12', '12 is a months-in-a-year fact, not the seven-day week.', 'A week is much shorter than that.'),",
       "extractor": "object"
     },
     {
@@ -12624,9 +11322,9 @@
       "title": "Equivalent fractions",
       "chapter": "Fractions",
       "field": "whyWrong",
-      "value": "3/4 is three out of four equal pieces, which is more than half the shape.",
+      "value": "3/4 covers three quarters of the shape, more than the half being asked for.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('3/4', '3/4 is three out of four equal pieces, which is more than half the shape.', 'In 2/4, the top is half of the bottom, so it equals 1/2.'),",
+      "snippet": "miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'In 2/4, the top is half of the bottom, so it equals 1/2.'),",
       "extractor": "object"
     },
     {
@@ -12672,21 +11370,6 @@
       "value": "You added the length and width instead of multiplying.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('10 square cm', 'You added the length and width instead of multiplying.', 'Multiply 6 by 4 to find the area.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-      "line": 200,
-      "questionId": 7846012,
-      "title": "Area of a rectangle",
-      "chapter": "Measurement",
-      "field": "whyWrong",
-      "value": "Area is measured in square units, not just cm.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24 cm', 'Area is measured in square units, not just cm.', 'The answer needs square cm because it covers a flat space.'),",
       "extractor": "object"
     },
     {
@@ -13924,20 +12607,6 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/primaryBuilders.ts",
-      "line": 170,
-      "title": "Shape classification",
-      "chapter": "Unit 9: Quadrilaterals",
-      "field": "whyWrong",
-      "value": "A circle has no straight sides.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['Circle', 'A circle has no straight sides.', 'The shape described is a polygon.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/primaryBuilders.ts",
       "line": 329,
       "title": "Same denominator addition",
       "chapter": "Unit 8: Add and subtract fractions",
@@ -13957,9 +12626,9 @@
       "title": "Sides of a triangle",
       "chapter": "Shapes and Measuring",
       "field": "whyWrong",
-      "value": "Two lines cannot close up to make a shape.",
+      "value": "2 is not enough sides to enclose the shape being described.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('2', 'Two lines cannot close up to make a shape.', 'A triangle needs three straight sides.'),",
+      "snippet": "miss('2', '2 is not enough sides to enclose the shape being described.', 'A triangle needs three straight sides.'),",
       "extractor": "object"
     },
     {
@@ -13972,24 +12641,9 @@
       "title": "Which is longer",
       "chapter": "Shapes and Measuring",
       "field": "whyWrong",
-      "value": "Kilograms measure how heavy something is.",
+      "value": "Kilograms measures mass or weight, not the quantity named in this prompt.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Kilograms', 'Kilograms measure how heavy something is.', 'Height is about length, not weight.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
-      "line": 277,
-      "questionId": 7858017,
-      "title": "Baby animals",
-      "chapter": "Living Things",
-      "field": "whyWrong",
-      "value": "A kitten is a baby cat, not a baby dog.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Kitten', 'A kitten is a baby cat, not a baby dog.', 'Think about the word for a young dog.'),",
+      "snippet": "miss('Kilograms', 'Kilograms measures mass or weight, not the quantity named in this prompt.', 'Height is about length, not weight.'),",
       "extractor": "object"
     },
     {
@@ -14002,9 +12656,9 @@
       "title": "Days in a week",
       "chapter": "General Knowledge",
       "field": "whyWrong",
-      "value": "Twelve is the number of months in a year, not days in a week.",
+      "value": "12 belongs to months in a year, but the week has seven days.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('12', 'Twelve is the number of months in a year, not days in a week.', 'A week has fewer days than that.'),",
+      "snippet": "miss('12', '12 belongs to months in a year, but the week has seven days.', 'A week has fewer days than that.'),",
       "extractor": "object"
     },
     {
@@ -14032,9 +12686,9 @@
       "title": "Days in a week",
       "chapter": "General Knowledge and the World",
       "field": "whyWrong",
-      "value": "Twelve is the number of months in a year, not days in a week.",
+      "value": "12 belongs to months in a year, but the week has seven days.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('12', 'Twelve is the number of months in a year, not days in a week.', 'A week has fewer days than that.'),",
+      "snippet": "miss('12', '12 belongs to months in a year, but the week has seven days.', 'A week has fewer days than that.'),",
       "extractor": "object"
     },
     {
@@ -14062,54 +12716,9 @@
       "title": "Antonym for begin",
       "chapter": "Antonyms",
       "field": "whyWrong",
-      "value": "Open is not the opposite of begin.",
+      "value": "Open does not undo begin; look for the word that means the action has finished.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Open', 'Open is not the opposite of begin.', 'Think about what you do when something is over.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/readingVocab4thPrim103TopUpB.ts",
-      "line": 371,
-      "questionId": 7830523,
-      "title": "Spot the simile",
-      "chapter": "Similes and Metaphors",
-      "field": "whyWrong",
-      "value": "This is a plain fact with no comparison.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('The sun was very hot today', 'This is a plain fact with no comparison.', 'A simile compares two things with \"like\" or \"as.\"'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/readingVocab4thPrim103TopUpB.ts",
-      "line": 400,
-      "questionId": 7830525,
-      "title": "Spot the metaphor",
-      "chapter": "Similes and Metaphors",
-      "field": "whyWrong",
-      "value": "This is a plain fact with no comparison.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('The snow fell all night long', 'This is a plain fact with no comparison.', 'Look for a sentence that calls snow another thing directly.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/readingVocab5thPrim103TopUpA.ts",
-      "line": 670,
-      "questionId": 7831043,
-      "title": "Spotting a metaphor",
-      "chapter": "Figurative Language",
-      "field": "whyWrong",
-      "value": "This is a plain fact with no comparison.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('The classroom had thirty desks.', 'This is a plain fact with no comparison.', 'Look for a sentence that calls one thing another thing.'),",
+      "snippet": "miss('Open', 'Open does not undo begin; look for the word that means the action has finished.', 'Think about what you do when something is over.'),",
       "extractor": "object"
     },
     {
@@ -14122,9 +12731,9 @@
       "title": "What a synonym is",
       "chapter": "Synonyms and Antonyms",
       "field": "whyWrong",
-      "value": "Angry is a different feeling, not the same as happy.",
+      "value": "Angry names a different mood; a synonym should stay close to happy.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Angry', 'Angry is a different feeling, not the same as happy.', 'Look for a word that means happy.'),",
+      "snippet": "miss('Angry', 'Angry names a different mood; a synonym should stay close to happy.', 'Look for a word that means happy.'),",
       "extractor": "object"
     },
     {
@@ -14137,54 +12746,9 @@
       "title": "What an antonym is",
       "chapter": "Synonyms and Antonyms",
       "field": "whyWrong",
-      "value": "Open is not the opposite of begin.",
+      "value": "Open does not undo begin; look for the word that means the action has finished.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Open', 'Open is not the opposite of begin.', 'Think about what is the opposite of begin.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/scienceYear1Prim103TopUp.ts",
-      "line": 303,
-      "questionId": 7820019,
-      "title": "Baby animals",
-      "chapter": "Animals and their needs",
-      "field": "whyWrong",
-      "value": "A kitten is a baby cat, not a baby dog.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('A kitten', 'A kitten is a baby cat, not a baby dog.', 'Think of the word we use for a young dog.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/scienceYear2Prim103TopUp.ts",
-      "line": 358,
-      "questionId": 7821022,
-      "title": "A baby dog",
-      "chapter": "Animals and their babies",
-      "field": "whyWrong",
-      "value": "A kitten is a baby cat, not a baby dog.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('A kitten', 'A kitten is a baby cat, not a baby dog.', 'Think of the word for a young dog.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/timesTablesPrim103TopUp.ts",
-      "line": 309,
-      "questionId": 7807019,
-      "title": "Sharing into groups",
-      "chapter": "Related division facts",
-      "field": "whyWrong",
-      "value": "This subtracts 4 from 24 instead of dividing.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('20', 'This subtracts 4 from 24 instead of dividing.', 'Division shares 24 into groups of 4.'),",
+      "snippet": "miss('Open', 'Open does not undo begin; look for the word that means the action has finished.', 'Think about what is the opposite of begin.'),",
       "extractor": "object"
     },
     {
@@ -14197,9 +12761,9 @@
       "title": "Find the missing factor",
       "chapter": "Missing number facts",
       "field": "whyWrong",
-      "value": "This subtracts 4 from 28 instead of dividing.",
+      "value": "24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', 'This subtracts 4 from 28 instead of dividing.', 'Ask how many fours make 28.'),",
+      "snippet": "miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Ask how many fours make 28.'),",
       "extractor": "object"
     },
     {
@@ -14229,36 +12793,6 @@
       "value": "The suffix \"ful\" means full of, not without.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('without help', 'The suffix \"ful\" means full of, not without.', 'Think about what \"ful\" adds to a word.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/wordBuildersPrim103TopUp.ts",
-      "line": 631,
-      "questionId": 7832040,
-      "title": "Beats in rabbit",
-      "chapter": "Syllables",
-      "field": "whyWrong",
-      "value": "That is one beat too many.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('3', 'That is one beat too many.', 'Clap each part: rab-bit. How many claps?'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/wordBuildersPrim103TopUp.ts",
-      "line": 661,
-      "questionId": 7832042,
-      "title": "Beats in butterfly",
-      "chapter": "Syllables",
-      "field": "whyWrong",
-      "value": "That is one beat too many.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('4', 'That is one beat too many.', 'Count the chunks: but-ter-fly.'),",
       "extractor": "object"
     },
     {

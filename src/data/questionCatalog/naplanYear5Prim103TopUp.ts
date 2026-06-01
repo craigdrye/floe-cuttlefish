@@ -14,8 +14,8 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     correct: '2/4',
     wrong: [
       miss('1/3', 'One third is smaller than one half, not the same.', 'Cut a shape into 2 equal parts, then into 4. How many of the 4 parts cover half?'),
-      miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For one half, the top number should be exactly half of the bottom number.'),
-      miss('3/4', '3/4 is three out of four equal pieces, which is more than half the shape.', 'In 2/4, the top is half of the bottom, so it equals 1/2.'),
+      miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top number should be exactly half of the bottom number.'),
+      miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'In 2/4, the top is half of the bottom, so it equals 1/2.'),
     ],
     lesson: 'Two fractions are equivalent when they show the same amount. If you multiply the top and bottom of 1/2 by 2, you get 2/4. So 1/2 and 2/4 cover the same part of a whole.',
     source,
@@ -197,7 +197,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     wrong: [
       miss('20 square cm', 'That is the perimeter, the distance around the edge.', 'Area is length times width, not the sides added up.'),
       miss('10 square cm', 'You added the length and width instead of multiplying.', 'Multiply 6 by 4 to find the area.'),
-      miss('24 cm', 'Area is measured in square units, not just cm.', 'The answer needs square cm because it covers a flat space.'),
+      miss('24 cm', '24 cm uses length units, but area needs square units because it covers a surface.', 'The answer needs square cm because it covers a flat space.'),
     ],
     lesson: 'Area is the amount of flat space inside a shape. For a rectangle, multiply the length by the width: 6 times 4 is 24. Area is measured in square units, so the answer is 24 square cm.',
     source,
@@ -484,7 +484,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'Which word in this sentence is a noun: The dog ran quickly?',
     correct: 'dog',
     wrong: [
-      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun is a person, place, animal or thing.'),
+      miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),
       miss('quickly', 'Quickly tells how the dog ran, so it is an adverb.', 'Look for the word that names an animal or thing.'),
       miss('The', 'The is a small word called an article, not a noun.', 'Find the word that names something.'),
     ],

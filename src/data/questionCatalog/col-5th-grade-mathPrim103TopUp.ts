@@ -730,7 +730,7 @@ export const col5thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     correct: '92',
     wrong: [
       miss('82', 'You forgot to carry when multiplying the ones.', '4 times 3 is 12, so carry the 1 ten.'),
-      miss('27', 'You added 23 and 4 instead of multiplying.', 'Multiply each part: 4 times 23.'),
+      miss('27', '27 is 23 plus 4, but the prompt asks for four groups of 23.', 'Multiply each part: 4 times 23.'),
       miss('812', 'You wrote the parts side by side instead of adding them.', '4 times 3 = 12 and 4 times 20 = 80, then add.'),
     ],
     lesson: 'Multiply the ones first: 4 times 3 = 12, write 2 and carry 1. Then 4 times 2 tens = 80, plus the carried 10 makes 90. Add the carried digits to get 92.',
@@ -761,7 +761,7 @@ export const col5thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('3 remainder 1', 'After three 5s you have 15, and 17 - 15 leaves 2, not 1.', 'Three 5s make 15, so check what is left.'),
       miss('4 remainder 0', 'Four 5s make 20, which is more than 17.', 'You can only fit three whole 5s in 17.'),
-      miss('2 remainder 7', 'A remainder cannot be bigger than the number you divide by.', 'The remainder must be less than 5.'),
+      miss('2 remainder 7', '2 remainder 7 leaves too much behind; a valid remainder must be smaller than the divisor.', 'The remainder must be less than 5.'),
     ],
     lesson: 'See how many 5s fit into 17. Three 5s make 15, and that leaves 2 over. So 17 divided by 5 is 3 with a remainder of 2.',
     source,
@@ -774,7 +774,7 @@ export const col5thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'About how much is 19 times 21? Pick the best estimate.',
     correct: 'About 400',
     wrong: [
-      miss('About 40', 'You added the numbers instead of multiplying.', 'Round to 20 times 20 and multiply.'),
+      miss('About 40', 'About 40 combines the numbers as a sum, but the question asks for equal groups.', 'Round to 20 times 20 and multiply.'),
       miss('About 4000', 'That is ten times too big.', '20 times 20 is 400, not 4000.'),
       miss('About 200', 'You may have used 20 times 10 by mistake.', 'Round both numbers to 20, then multiply.'),
     ],

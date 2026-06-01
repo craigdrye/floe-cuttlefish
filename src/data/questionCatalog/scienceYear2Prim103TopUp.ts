@@ -355,7 +355,7 @@ export const scienceYear2Prim103TopUpQuestions: Question[] = makeQuestionBank('P
     prompt: 'What is a baby dog called?',
     correct: 'A puppy',
     wrong: [
-      miss('A kitten', 'A kitten is a baby cat, not a baby dog.', 'Think of the word for a young dog.'),
+      miss('A kitten', 'A kitten belongs to cats; the baby dog word is puppy.', 'Think of the word for a young dog.'),
       miss('A calf', 'A calf is a baby cow, not a dog.', 'Which word do we use for a young dog?'),
       miss('A chick', 'A chick is a baby chicken, not a dog.', 'A baby dog has its own special name.'),
     ],

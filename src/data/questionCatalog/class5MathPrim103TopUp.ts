@@ -74,9 +74,9 @@ export const class5MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'What is 1/2 x 1/3?',
     correct: '1/6',
     wrong: [
-      miss('2/5', 'You added the numbers instead of multiplying.', 'Multiply the tops together and the bottoms together.'),
+      miss('2/5', '2/5 combines the numbers as a sum, but the question asks for equal groups.', 'Multiply the tops together and the bottoms together.'),
       miss('1/5', 'You added the bottom numbers. Multiply them instead.', 'Two times three is six on the bottom.'),
-      miss('2/6', 'You multiplied the bottoms but added the tops.', 'One times one is one on top.'),
+      miss('2/6', '2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.', 'One times one is one on top.'),
     ],
     lesson: 'To multiply fractions, multiply the top numbers together and the bottom numbers together. So 1/2 x 1/3 = (1 x 1)/(2 x 3) = 1/6.',
     source,
@@ -197,7 +197,7 @@ export const class5MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '0.8',
     wrong: [
       miss('8', 'You forgot the decimal point. The answer is less than one.', 'Four groups of two tenths is eight tenths.'),
-      miss('0.08', 'You moved the point too far.', 'Four times two is eight, with one decimal place.'),
+      miss('0.08', '0.08 shifts the decimal too many places; move it only as far as the operation requires.', 'Four times two is eight, with one decimal place.'),
       miss('4.2', 'You added instead of multiplying.', 'Multiply 4 by 0.2 in equal groups.'),
     ],
     lesson: 'Four groups of two tenths is eight tenths. So 4 x 0.2 = 0.8. Counting the decimal places keeps the point in the right spot.',
@@ -212,7 +212,7 @@ export const class5MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '0.06',
     wrong: [
       miss('0.6', 'You used only one decimal place. Both factors have one each.', 'Two decimal places means two digits after the point.'),
-      miss('0.5', 'You added the numbers instead of multiplying.', 'Three times two is six, not five.'),
+      miss('0.5', '0.5 combines the numbers as a sum, but the question asks for equal groups.', 'Three times two is six, not five.'),
       miss('6', 'You dropped the decimal point entirely.', 'The answer is much less than one.'),
     ],
     lesson: 'Multiply 3 times 2 to get 6. Each factor has one decimal place, so the answer has two decimal places: 0.06.',
@@ -243,7 +243,7 @@ export const class5MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('30', 'You forgot the decimal point.', 'Half of six is a small number.'),
       miss('6.5', 'You added instead of multiplying.', 'Take half of six.'),
-      miss('0.3', 'You moved the point too far.', 'Half of six is three, not three tenths.'),
+      miss('0.3', '0.3 shifts the decimal too many places; move it only as far as the operation requires.', 'Half of six is three, not three tenths.'),
     ],
     lesson: 'The decimal 0.5 means one half, so 0.5 x 6 is half of 6, which is 3.',
     source,
@@ -591,7 +591,7 @@ export const class5MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'A line plot of pencil lengths has X marks above 1/2 and above 1/4. Which length is longer?',
     correct: '1/2',
     wrong: [
-      miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'A half is bigger than a quarter.'),
+      miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'A half is bigger than a quarter.'),
       miss('They are equal', 'A half and a quarter are different sizes.', 'Compare the two fractions.'),
       miss('Neither has a length', 'Each X mark sits above a real length.', 'The fraction below the X is the length.'),
     ],

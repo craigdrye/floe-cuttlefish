@@ -73,7 +73,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'A grid has 5 rows with 4 dots in each row. How many dots are there?',
     correct: '20',
     wrong: [
-      miss('9', 'This adds 5 and 4 instead of multiplying.', 'Count the rows times the dots in each row.'),
+      miss('9', '9 is the sum of 5 and 4, but equal groups call for multiplication.', 'Count the rows times the dots in each row.'),
       miss('16', 'This is 4 rows, not 5 rows.', 'Skip count by 4 a total of five times.'),
       miss('45', 'This writes the two numbers side by side instead of multiplying.', 'Multiply 5 rows by 4 dots: 5 x 4.'),
     ],
@@ -134,9 +134,9 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'What is 20 divided by 5?',
     correct: '4',
     wrong: [
-      miss('15', 'This subtracts 5 from 20 instead of dividing.', 'Ask how many 5s fit inside 20.'),
+      miss('15', '15 takes away 5 once, but division asks how many equal groups fit in 20.', 'Ask how many 5s fit inside 20.'),
       miss('5', 'This repeats the 5 instead of finding the answer.', 'Skip count by 5 until you reach 20 and count the steps.'),
-      miss('100', 'This multiplies 20 by 5 instead of dividing.', 'Dividing makes the number smaller, not bigger.'),
+      miss('100', '100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.', 'Dividing makes the number smaller, not bigger.'),
     ],
     lesson: 'Division asks how many equal groups fit. 20 divided by 5 asks how many 5s make 20. Count 5, 10, 15, 20, that is four steps. So the answer is 4.',
     source,
@@ -151,7 +151,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     wrong: [
       miss('3', 'This gives the number you divided by, not the answer.', 'Use the fact backward: 6 x 3 = 18 means 18 divided by 3 is 6.'),
       miss('15', 'This subtracts 3 from 18 instead of dividing.', 'Dividing undoes multiplying.'),
-      miss('21', 'This adds instead of dividing.', 'Think of the matching times fact, 6 x 3 = 18.'),
+      miss('21', '21 comes from joining the numbers, but division asks for sharing or grouping.', 'Think of the matching times fact, 6 x 3 = 18.'),
     ],
     lesson: 'Multiplication and division are opposites. Since 6 x 3 = 18, we know 18 divided by 3 must be 6. Knowing your times facts helps you divide fast.',
     source,
@@ -180,7 +180,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: '7',
     wrong: [
       miss('1', 'This gives the number you divided by, not the answer.', 'Sharing among 1 group gives that group everything.'),
-      miss('8', 'This adds instead of dividing.', 'Dividing by 1 keeps the number the same.'),
+      miss('8', '8 comes from joining the numbers, but division asks for sharing or grouping.', 'Dividing by 1 keeps the number the same.'),
       miss('0', 'Zero would mean nothing is left.', 'All 7 go into the one group.'),
     ],
     lesson: 'Dividing by 1 means putting everything into one group, so nothing changes. 7 divided by 1 is just 7.',
@@ -438,7 +438,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: 'End',
     wrong: [
       miss('Start', 'Start means the same as begin, not the opposite.', 'An antonym is a word that means the opposite.'),
-      miss('Open', 'Open is not the opposite of begin.', 'Think about what happens at the finish.'),
+      miss('Open', 'Open does not undo begin; look for the word that means the action has finished.', 'Think about what happens at the finish.'),
       miss('Run', 'Run is an action, not the opposite of begin.', 'Look for the word that means to finish.'),
     ],
     lesson: 'Antonyms are words with opposite meanings. Begin means to start something, and end means to finish it, so they are antonyms.',
@@ -498,7 +498,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which word in this sentence is a noun: The cat slept on the mat.',
     correct: 'cat',
     wrong: [
-      miss('slept', 'Slept is an action word, which is a verb.', 'A noun names a person, place, animal, or thing.'),
+      miss('slept', 'slept describes an action or state, so it is a verb rather than a noun.', 'A noun names a person, place, animal, or thing.'),
       miss('on', 'On is a small word that shows position, not a noun.', 'Look for a person, place, or thing.'),
       miss('the', 'The is a little word that comes before a noun.', 'Find the word that names something.'),
     ],
@@ -528,7 +528,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which word describes the dog in this sentence: The fluffy dog ran fast.',
     correct: 'fluffy',
     wrong: [
-      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'An adjective tells what something is like.'),
+      miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),
       miss('dog', 'Dog is the thing being described, a noun.', 'Find the word that tells about the dog.'),
       miss('fast', 'Fast tells how the dog ran, not what the dog is like.', 'Look for the word that describes the dog itself.'),
     ],
@@ -696,7 +696,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: 'less than',
     wrong: [
       miss('greater than', '256 is smaller than 265, so it is not greater.', 'Compare the tens digit: 5 tens versus 6 tens.'),
-      miss('equal to', 'The two numbers are not the same.', 'Look closely, the tens digits are different.'),
+      miss('equal to', 'equal to would mean both sides match, but these two numbers differ when you compare the digits.', 'Look closely, the tens digits are different.'),
       miss('cannot tell', 'You can compare them digit by digit.', 'Start from the hundreds, then the tens.'),
     ],
     lesson: 'To compare numbers, start with the biggest place. Both have 2 hundreds, but 256 has 5 tens and 265 has 6 tens. So 256 is less than 265.',
@@ -833,7 +833,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: '20',
     wrong: [
       miss('16', 'This is only 4 fours, which is 4 x 4.', 'Add one more group of 4 after 16.'),
-      miss('9', 'This adds 5 and 4 instead of multiplying.', 'Continue the pattern by 4 to the fifth number.'),
+      miss('9', '9 is the sum of 5 and 4, but equal groups call for multiplication.', 'Continue the pattern by 4 to the fifth number.'),
       miss('24', 'This is 6 fours, one too many.', 'The fifth number in the pattern is the answer.'),
     ],
     lesson: 'Counting by 4s shows the times table for 4. The pattern is 4, 8, 12, 16, then 20. The fifth number, 20, is 5 x 4.',

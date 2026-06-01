@@ -268,7 +268,7 @@ export const class1MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '14',
     wrong: [
       miss('7', 'A double means you add the number to itself, so it gets bigger.', 'Add 7 and 7 together.'),
-      miss('77', 'You wrote the digits side by side instead of adding.', 'Doubling 7 means 7 plus 7.'),
+      miss('77', '77 sticks the digits together; addition means combine their values.', 'Doubling 7 means 7 plus 7.'),
       miss('12', 'That is one short. Count on 7 from 7 carefully.', 'Start at 7 and count up 7 more.'),
     ],
     lesson: 'A double is a number added to itself. The double of 7 is 7 plus 7, which equals 14. Learning doubles helps you add quickly.',
@@ -553,7 +553,7 @@ export const class1MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '3',
     wrong: [
       miss('4', 'A shape with 4 sides is a square or rectangle, not a triangle.', 'Count the straight edges of a triangle.'),
-      miss('2', 'Two lines cannot close up to make a shape.', 'A triangle needs more than two sides.'),
+      miss('2', '2 is not enough sides to enclose the shape being described.', 'A triangle needs more than two sides.'),
       miss('5', 'A shape with 5 sides is a pentagon, not a triangle.', 'A triangle has three corners and three sides.'),
     ],
     lesson: 'A triangle has 3 straight sides and 3 corners. The word tri means three, just like in tricycle. So a triangle always has 3 sides.',
@@ -629,7 +629,7 @@ export const class1MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('Square', 'A square has only 4 sides, not 5.', 'Count five straight sides for this shape.'),
       miss('Triangle', 'A triangle has 3 sides, but this shape has 5.', 'Look for the shape with five sides.'),
-      miss('Circle', 'A circle has no straight sides at all.', 'A five-sided shape has straight edges.'),
+      miss('Circle', 'Circle is round, so it cannot be the straight-sided shape in the prompt.', 'A five-sided shape has straight edges.'),
     ],
     lesson: 'A pentagon is a flat shape with 5 straight sides and 5 corners. The word penta means five. A house drawing outline often looks like a pentagon.',
     source,

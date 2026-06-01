@@ -628,7 +628,7 @@ export const wordBuildersPrim103TopUpQuestions: Question[] = makeQuestionBank('P
     correct: '2',
     wrong: [
       miss('1', 'Rabbit has more than one beat.', 'Clap as you say rab-bit.'),
-      miss('3', 'That is one beat too many.', 'Clap each part: rab-bit. How many claps?'),
+      miss('3', '3 adds an extra beat; count the rhythm or pattern once more slowly.', 'Clap each part: rab-bit. How many claps?'),
       miss('4', 'That is too many beats.', 'Say it slowly and count the chunks.'),
     ],
     lesson: 'A syllable is a beat in a word. You can clap them. Rabbit has two beats: rab-bit. Clapping helps you break long words into parts.',
@@ -658,7 +658,7 @@ export const wordBuildersPrim103TopUpQuestions: Question[] = makeQuestionBank('P
     correct: '3',
     wrong: [
       miss('2', 'You may have missed a beat.', 'Clap each part: but-ter-fly.'),
-      miss('4', 'That is one beat too many.', 'Count the chunks: but-ter-fly.'),
+      miss('4', '4 adds an extra beat; count the rhythm or pattern once more slowly.', 'Count the chunks: but-ter-fly.'),
       miss('1', 'Butterfly is a long word with more than one beat.', 'Say it slowly and clap each part.'),
     ],
     lesson: 'Butterfly has three syllables: but-ter-fly. Breaking long words into beats makes them easier to read and spell.',

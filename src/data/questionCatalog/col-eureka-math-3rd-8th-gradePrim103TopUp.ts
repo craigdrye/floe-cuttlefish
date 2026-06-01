@@ -45,7 +45,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     wrong: [
       miss('4 remainder 0', 'Four fives make 20, which is more than 17.', 'Five fits into 17 only three full times.'),
       miss('3 remainder 1', 'After taking out 15, you have 2 left, not 1.', 'Count what is left: 17 minus 15 equals 2.'),
-      miss('2 remainder 7', 'A remainder cannot be bigger than the number you divide by.', 'Keep taking out fives until fewer than 5 are left.'),
+      miss('2 remainder 7', '2 remainder 7 leaves too much behind; a valid remainder must be smaller than the divisor.', 'Keep taking out fives until fewer than 5 are left.'),
     ],
     lesson: 'Five goes into 17 three times because 5 times 3 equals 15. That leaves 17 minus 15, which is 2. So the answer is 3 remainder 2.',
     source,
@@ -58,7 +58,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     prompt: 'What is 34 times 10?',
     correct: '340',
     wrong: [
-      miss('44', 'This adds 10 instead of multiplying by 10.', 'Times 10 makes the number ten times bigger.'),
+      miss('44', '44 adds one ten, but multiplying by 10 scales the entire number.', 'Times 10 makes the number ten times bigger.'),
       miss('304', 'The zero goes at the end, not in the middle.', 'Put a zero on the end of 34 to multiply by 10.'),
       miss('3400', 'This is times 100, which adds two zeros.', 'Times 10 adds just one zero.'),
     ],
@@ -165,8 +165,8 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     prompt: 'Which fraction is equal to 1/2?',
     correct: '4/8',
     wrong: [
-      miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For one half, the top is exactly half the bottom.'),
-      miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'A half means the top is half the bottom.'),
+      miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top is exactly half the bottom.'),
+      miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'A half means the top is half the bottom.'),
       miss('3/8', 'Three eighths is less than four eighths.', 'Half of 8 is 4, so 4/8 equals 1/2.'),
     ],
     lesson: 'Two fractions are equal when they show the same amount. Half of 8 is 4, so 4/8 is the same as 1/2. You can multiply the top and bottom of 1/2 by 4 to get 4/8.',
@@ -271,7 +271,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     prompt: 'Which is bigger, 0.6 or 0.45?',
     correct: '0.6',
     wrong: [
-      miss('0.45', 'More digits does not mean a bigger number.', 'Compare tenths first: 6 tenths beats 4 tenths.'),
+      miss('0.45', '0.45 looks longer, but decimals depend on place value, not digit count alone.', 'Compare tenths first: 6 tenths beats 4 tenths.'),
       miss('They are equal', 'Six tenths is more than 45 hundredths.', '0.6 is the same as 0.60.'),
       miss('0.45 because it is longer', 'Length of a decimal does not decide its size.', 'Think of 0.6 as 0.60 and compare.'),
     ],
@@ -380,7 +380,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     wrong: [
       miss('0', 'Zero is bigger than a negative number.', 'Negative numbers sit left of zero.'),
       miss('3', 'Three is the biggest, not the smallest.', 'Smallest is farthest left on the number line.'),
-      miss('They are equal', 'These are three different numbers.', 'Place them on a number line to compare.'),
+      miss('They are equal', 'They are equal misses that the three values are not equal; compare their positions or place values.', 'Place them on a number line to compare.'),
     ],
     lesson: 'On a number line, numbers get smaller as you move left. Negative 2 is left of 0 and 3, so it is the smallest of the three.',
     source,
@@ -424,7 +424,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     prompt: 'If 3 times n equals 12, what is n?',
     correct: '4',
     wrong: [
-      miss('9', 'This subtracts 3 instead of dividing.', 'Divide 12 by 3 to undo the times 3.'),
+      miss('9', '9 takes away one 3, but this division question asks for equal sharing.', 'Divide 12 by 3 to undo the times 3.'),
       miss('36', '36 comes from making more groups, but division asks how many are in each group or how many groups fit.', 'You want what times 3 makes 12.'),
       miss('15', 'This adds 3 to 12.', 'Share 12 into 3 equal groups.'),
     ],
@@ -592,7 +592,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     prompt: 'A rectangle is 4 cm wide and 6 cm long. What is its area?',
     correct: '24 square cm',
     wrong: [
-      miss('20 square cm', 'This adds the sides instead of multiplying.', 'Area is length times width.'),
+      miss('20 square cm', '20 square cm adds lengths around or across the shape, but area needs length times width.', 'Area is length times width.'),
       miss('10 square cm', 'This adds only the length and width.', 'Multiply the two sides, do not add them.'),
       miss('48 square cm', 'This doubles the correct area.', 'Just multiply 4 by 6 once.'),
     ],
@@ -608,7 +608,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     correct: 'Centimeters',
     wrong: [
       miss('Kilometers', 'Kilometers measure long distances like roads.', 'A pencil is small, so pick a small unit.'),
-      miss('Liters', 'Liters measure liquid, not length.', 'Length needs a distance unit.'),
+      miss('Liters', 'Liters is for liquid volume, not measuring how long something is.', 'Length needs a distance unit.'),
       miss('Kilograms', 'Kilograms measure weight, not length.', 'You want a unit for how long something is.'),
     ],
     lesson: 'Centimeters are a small unit of length, perfect for small objects like a pencil. Kilometers are for long distances, and liters and kilograms measure other things.',
@@ -838,7 +838,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     correct: '6',
     wrong: [
       miss('30', 'This subtracts 6 instead of dividing.', 'Split 36 students into groups of 6.'),
-      miss('42', 'This adds instead of dividing.', 'You need fewer rows than students.'),
+      miss('42', '42 comes from joining the numbers, but division asks for sharing or grouping.', 'You need fewer rows than students.'),
       miss('216', '216 comes from making more groups, but division asks how many are in each group or how many groups fit.', 'Share the 36 into rows of 6.'),
     ],
     lesson: 'To find the number of rows, divide the students by how many sit in each row. 36 divided by 6 equals 6 rows.',

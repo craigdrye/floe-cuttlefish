@@ -58,7 +58,7 @@ export const elevenPlusPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'Which word means the OPPOSITE of "ancient"?',
     correct: 'modern',
     wrong: [
-      miss('old', 'Old means almost the same as ancient, not the opposite.', 'You want a word that means new or recent.'),
+      miss('old', 'old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'You want a word that means new or recent.'),
       miss('large', 'Large is about size, not about age.', 'Think about the opposite of very, very old.'),
       miss('heavy', 'Heavy is about weight, not about time or age.', 'Which word means brand new or up to date?'),
     ],
@@ -504,7 +504,7 @@ export const elevenPlusPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '16 cm',
     wrong: [
       miss('15 cm', 'You found the area by multiplying, not the perimeter.', 'Perimeter means adding up all four sides.'),
-      miss('8 cm', 'You added only one length and one width.', 'A rectangle has two lengths and two widths.'),
+      miss('8 cm', '8 cm counts only half the boundary; perimeter needs all matching sides.', 'A rectangle has two lengths and two widths.'),
       miss('11 cm', 'One side was missed when adding up.', 'Add all four sides: 5, 3, 5 and 3.'),
     ],
     lesson: 'Perimeter is the distance all the way around. A rectangle has two lengths and two widths: 5 + 3 + 5 + 3 = 16 cm.',

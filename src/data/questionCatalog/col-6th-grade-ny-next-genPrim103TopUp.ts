@@ -411,7 +411,7 @@ export const col6thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     wrong: [
       miss('Sad', 'Sad is the opposite of happy, which makes it an antonym.', 'A synonym means about the same thing.'),
       miss('Tired', 'Tired describes being sleepy, not happy.', 'Pick a word that means the same as happy.'),
-      miss('Angry', 'Angry is a different feeling, not the same as happy.', 'Look for the word with a similar meaning.'),
+      miss('Angry', 'Angry names a different mood; a synonym should stay close to happy.', 'Look for the word with a similar meaning.'),
     ],
     lesson: 'A synonym is a word that means about the same as another word. Joyful means full of happiness, so it is a synonym for happy.',
     source,
@@ -455,7 +455,7 @@ export const col6thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'In the sentence "The dog ran across the park," which word is a noun?',
     correct: 'park',
     wrong: [
-      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),
+      miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),
       miss('across', 'Across tells where, so it is not a naming word.', 'Look for a word that names a place or thing.'),
       miss('the', 'The is an article, not a noun.', 'Find the word that names a place, like a park.'),
     ],

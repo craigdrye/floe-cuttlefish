@@ -368,7 +368,7 @@ export const readingVocab4thPrim103TopUpBQuestions: Question[] = makeQuestionBan
     wrong: [
       miss('Her smile was bright', 'This describes the smile but does not compare it using "like" or "as."', 'A simile needs the word "like" or "as."'),
       miss('She smiled at me', 'This just tells what she did; there is no comparison.', 'Look for a comparison using "like" or "as."'),
-      miss('The sun was very hot today', 'This is a plain fact with no comparison.', 'A simile compares two things with "like" or "as."'),
+      miss('The sun was very hot today', 'The sun was very hot today states a fact, but the prompt is asking for a comparison.', 'A simile compares two things with "like" or "as."'),
     ],
     lesson: 'A simile compares two things using "like" or "as." "Her smile was as bright as the sun" compares a smile to the sun using "as." The other sentences just describe or tell facts without comparing.',
     source,
@@ -397,7 +397,7 @@ export const readingVocab4thPrim103TopUpBQuestions: Question[] = makeQuestionBan
     correct: 'The snow was a soft white blanket on the ground',
     wrong: [
       miss('The snow was as white as a blanket', 'This uses "as," which makes it a simile, not a metaphor.', 'A metaphor does not use "like" or "as."'),
-      miss('The snow fell all night long', 'This is a plain fact with no comparison.', 'Look for a sentence that calls snow another thing directly.'),
+      miss('The snow fell all night long', 'The snow fell all night long states a fact, but the prompt is asking for a comparison.', 'Look for a sentence that calls snow another thing directly.'),
       miss('The snow was cold and wet', 'This just describes the snow without comparing it.', 'A metaphor says the snow IS something else.'),
     ],
     lesson: 'A metaphor says one thing is another, without "like" or "as." "The snow was a soft white blanket" calls the snow a blanket directly. The version with "as white as a blanket" would be a simile instead.',

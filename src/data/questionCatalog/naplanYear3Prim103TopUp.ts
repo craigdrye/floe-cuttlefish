@@ -247,7 +247,7 @@ export const naplanYear3Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     correct: 'Metres',
     wrong: [
       miss('Litres', 'Litres measure how much liquid fits in something, not length.', 'We need a unit for distance or height.'),
-      miss('Kilograms', 'Kilograms measure how heavy something is.', 'Height is about how long, not how heavy.'),
+      miss('Kilograms', 'Kilograms measures mass or weight, not the quantity named in this prompt.', 'Height is about how long, not how heavy.'),
       miss('Hours', 'Hours measure time, not height.', 'Pick a unit that measures distance.'),
     ],
     lesson: 'A door is about 2 metres tall, so metres are the best unit. We use metres for longer lengths like doors and rooms, and centimetres for shorter ones like pencils.',
@@ -308,9 +308,9 @@ export const naplanYear3Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'How many minutes are in 1 hour?',
     correct: '60',
     wrong: [
-      miss('100', 'An hour is not split into 100 minutes.', 'A clock face goes up to 60 minutes.'),
+      miss('100', '100 treats time like a base-100 measure, but an hour has 60 minutes.', 'A clock face goes up to 60 minutes.'),
       miss('30', '30 minutes is only half an hour.', 'A whole hour is double 30 minutes.'),
-      miss('24', '24 is the number of hours in a day, not minutes in an hour.', 'Count the minute marks around a clock.'),
+      miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'Count the minute marks around a clock.'),
     ],
     lesson: 'There are 60 minutes in 1 hour. Half an hour is 30 minutes, and a quarter of an hour is 15 minutes. The minute hand travels all the way around in 60 minutes.',
     source,
@@ -324,7 +324,7 @@ export const naplanYear3Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     correct: '7',
     wrong: [
       miss('5', '5 is the number of school days, but a week also has the weekend.', 'Remember to count Saturday and Sunday too.'),
-      miss('12', '12 is the number of months in a year, not days in a week.', 'A week is much shorter than that.'),
+      miss('12', '12 is a months-in-a-year fact, not the seven-day week.', 'A week is much shorter than that.'),
       miss('30', '30 is about the number of days in a month.', 'Count from Monday through to Sunday.'),
     ],
     lesson: 'A week has 7 days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and Sunday. Five of them are usually school days, and two make the weekend.',

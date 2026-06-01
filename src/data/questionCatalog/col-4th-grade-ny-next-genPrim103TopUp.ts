@@ -317,7 +317,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which fraction is equal to 1/2?',
     correct: '3/6',
     wrong: [
-      miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'Check if the top number is exactly half of the bottom.'),
+      miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top number is exactly half of the bottom.'),
       miss('1/4', 'One fourth is less than one half.', 'In a fraction equal to 1/2, the top is half the bottom.'),
       miss('3/5', 'Three fifths is a little more than one half.', 'For one half, the numerator must be half the denominator.'),
     ],
@@ -696,7 +696,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which word is the opposite of "ancient"?',
     correct: 'modern',
     wrong: [
-      miss('old', 'Old means almost the same as ancient, not the opposite.', 'An antonym means the opposite.'),
+      miss('old', 'old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the opposite.'),
       miss('huge', 'Huge is about size, not about age.', 'Look for a word that means new or recent.'),
       miss('dusty', 'Dusty describes dirt, not the opposite of old.', 'Pick a word that means the opposite of very old.'),
     ],
@@ -727,7 +727,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'In the sentence "The dog ran to the park," which word is a noun?',
     correct: 'park',
     wrong: [
-      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),
+      miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),
       miss('to', 'To is a small connecting word, not a noun.', 'Look for a word that names a place or thing.'),
       miss('the', 'The is an article that comes before nouns but is not one.', 'Find the word that names something.'),
     ],
@@ -818,7 +818,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: 'fluffy',
     wrong: [
       miss('cat', 'Cat is a thing, which is a noun.', 'An adjective describes a noun.'),
-      miss('slept', 'Slept is an action word, which is a verb.', 'Look for the word that tells what the cat is like.'),
+      miss('slept', 'slept describes an action or state, so it is a verb rather than a noun.', 'Look for the word that tells what the cat is like.'),
       miss('bed', 'Bed is a thing, which is a noun.', 'Find the describing word, not the thing itself.'),
     ],
     lesson: 'An adjective is a word that describes a noun. Fluffy tells us what the cat is like, so fluffy is an adjective. Adjectives add detail to make writing clearer.',

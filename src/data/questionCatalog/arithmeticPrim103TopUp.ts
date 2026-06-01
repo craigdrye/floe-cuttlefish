@@ -229,7 +229,7 @@ export const arithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('1/3', 'One third is smaller than one half.', 'Half means the bottom number is double the top.'),
       miss('2/3', 'Two thirds is bigger than one half.', 'For one half, the top is exactly half of the bottom.'),
-      miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'Try doubling both the top and bottom of 1/2.'),
+      miss('1/4', '1/4 is only one quarter, so it is smaller than a half.', 'Try doubling both the top and bottom of 1/2.'),
     ],
     lesson: 'Equivalent fractions name the same amount in different ways. If you double both numbers in 1/2, you get 2/4, which is the same size. Two quarters fill exactly one half.',
     source,
@@ -275,7 +275,7 @@ export const arithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('0.8 wholes', 'It is just 0.8, which is still less than one.', 'Add the tenths: 5 tenths plus 3 tenths.'),
       miss('8', '8 has the right-looking digits, but the decimal point is in the wrong place or missing.', 'Five tenths and three tenths make eight tenths, written 0.8.'),
-      miss('0.53', 'You wrote the digits side by side instead of adding.', 'Line up the points and add: 5 + 3 tenths.'),
+      miss('0.53', '0.53 sticks the digits together; addition means combine their values.', 'Line up the points and add: 5 + 3 tenths.'),
     ],
     lesson: 'Line up the decimal points and add. Five tenths plus three tenths is eight tenths, written 0.8. Keep the decimal point in the same place.',
     source,
@@ -350,7 +350,7 @@ export const arithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'Round 47 to the nearest ten.',
     correct: '50',
     wrong: [
-      miss('40', 'The ones digit is 7, which rounds up, not down.', 'When the ones digit is 5 or more, round up.'),
+      miss('40', '40 rounds the wrong way; a ones digit of 7 pushes the number up to the next ten.', 'When the ones digit is 5 or more, round up.'),
       miss('47', 'Rounding to the nearest ten must end in zero.', 'The answer should be 40 or 50.'),
       miss('45', '45 is not a ten; tens end in zero.', 'Choose between 40 and 50, the nearest tens.'),
     ],
@@ -548,7 +548,7 @@ export const arithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'Erasers cost 5 cents each. How much do 4 erasers cost?',
     correct: '20 cents',
     wrong: [
-      miss('9 cents', 'This adds 5 and 4 instead of multiplying.', 'You need 4 groups of 5 cents.'),
+      miss('9 cents', '9 cents is the sum of 5 and 4, but equal groups call for multiplication.', 'You need 4 groups of 5 cents.'),
       miss('5 cents', 'This is the price of just one eraser.', 'Multiply the price by how many you buy.'),
       miss('45 cents', 'This puts the digits side by side instead of multiplying.', 'Count by fives four times: 5, 10, 15, 20.'),
     ],

@@ -308,7 +308,7 @@ export const colGetReadyFor5thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'What is 1/5 + 2/5?',
     correct: '3/5',
     wrong: [
-      miss('3/10', '3/10 adds the denominators, but like fractions keep the same bottom number and only combine the tops.', 'When bottoms match, only add the tops.'),
+      miss('3/10', '3/10 changes the denominator; when the bottoms already match, keep that bottom and add only the tops.', 'When bottoms match, only add the tops.'),
       miss('2/5', 'You only kept one of the tops instead of adding them.', 'Add 1 + 2 on the top.'),
       miss('3/25', 'You multiplied the bottoms instead of keeping them.', 'The fifths stay fifths when you add them.'),
     ],
@@ -385,7 +385,7 @@ export const colGetReadyFor5thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which is larger, 0.3 or 0.25?',
     correct: '0.3',
     wrong: [
-      miss('0.25', 'More digits does not mean a bigger number.', 'Think of 0.3 as 0.30 and compare.'),
+      miss('0.25', '0.25 looks longer, but decimals depend on place value, not digit count alone.', 'Think of 0.3 as 0.30 and compare.'),
       miss('They are equal', 'These two decimals are not the same value.', 'Compare 30 hundredths with 25 hundredths.'),
       miss('You cannot tell', 'You can compare decimals by lining up the places.', 'Write 0.3 as 0.30, then compare to 0.25.'),
     ],
@@ -463,7 +463,7 @@ export const colGetReadyFor5thGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: '20 cm',
     wrong: [
       miss('24 cm', 'You multiplied the sides, which gives area, not perimeter.', 'Perimeter means adding up all four sides.'),
-      miss('10 cm', 'You added only one length and one width.', 'A rectangle has two lengths and two widths.'),
+      miss('10 cm', '10 cm counts only half the boundary; perimeter needs all matching sides.', 'A rectangle has two lengths and two widths.'),
       miss('14 cm', 'You added three sides instead of four.', 'Add both lengths and both widths.'),
     ],
     lesson: 'Perimeter is the distance around the shape. A rectangle has two lengths and two widths: 6 + 4 + 6 + 4 = 20 cm.',
@@ -479,7 +479,7 @@ export const colGetReadyFor5thGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('16 square cm', 'You added the sides instead of multiplying them.', 'Area is length times width.'),
       miss('8 square cm', 'You added the length and width instead of multiplying.', 'Multiply 5 by 3 to find the area.'),
-      miss('15 cm', 'Area is measured in square units, not just cm.', 'When you multiply two lengths, the unit becomes square cm.'),
+      miss('15 cm', '15 cm uses length units, but area needs square units because it covers a surface.', 'When you multiply two lengths, the unit becomes square cm.'),
     ],
     lesson: 'Area tells how much space is inside a shape. For a rectangle, multiply length by width: 5 x 3 = 15. Because it is space, the unit is square cm.',
     source,
@@ -616,7 +616,7 @@ export const colGetReadyFor5thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which word is the opposite of "ancient"?',
     correct: 'Modern',
     wrong: [
-      miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym means the reverse.'),
+      miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the reverse.'),
       miss('Huge', 'Huge is about size, not about how old something is.', 'Think about new versus very old.'),
       miss('Heavy', 'Heavy is about weight, not about age.', 'Find a word that means new or recent.'),
     ],
@@ -663,7 +663,7 @@ export const colGetReadyFor5thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'In the sentence "The dog ran to the park," which word is a noun?',
     correct: 'park',
     wrong: [
-      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),
+      miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),
       miss('to', 'To is a small joining word, not a noun.', 'Look for a person, place, or thing.'),
       miss('the', 'The is an article, not a noun.', 'Find the word that names a place or thing.'),
     ],

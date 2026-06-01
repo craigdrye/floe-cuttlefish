@@ -378,7 +378,7 @@ export const class2MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: 'Half past 4',
     wrong: [
       miss('Half past 6', 'This reads the minute hand as the hour.', 'The minute hand on 6 means half past, not 6 o’clock.'),
-      miss('Half past 5', 'The hour hand has not reached 5 yet.', 'The hour is the number the short hand has just passed, which is 4.'),
+      miss('Half past 5', 'Half past 5 reads the hour too early; follow where the hour hand has actually moved.', 'The hour is the number the short hand has just passed, which is 4.'),
       miss('6 o’clock', 'The minute hand on 6 means half past, not o’clock.', 'O’clock is when the minute hand is on 12.'),
     ],
     lesson: 'When the minute hand points to 6, it is half past the hour. The hour hand sits between 4 and 5, so the hour is 4. That makes it half past 4. Half past means 30 minutes after the hour.',
@@ -682,7 +682,7 @@ export const class2MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('Odd', 'Eight can be split into two equal groups, so it is even.', 'Even numbers share fairly into two equal groups.'),
       miss('Both even and odd', 'A number is either even or odd, not both.', 'Check if 8 splits into two equal groups.'),
-      miss('Neither', 'Every whole number is either even or odd.', 'See if 8 can be shared into two equal groups.'),
+      miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'See if 8 can be shared into two equal groups.'),
     ],
     lesson: 'An even number can be shared into two equal groups with none left over. 8 splits into 4 and 4, so it is even. Even numbers end in 0, 2, 4, 6, or 8.',
     source,

@@ -121,7 +121,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('34', '34 is the biggest, so it comes last, not first.', 'Smallest first means the lowest number.'),
       miss('27', '27 is in the middle, not the smallest.', 'Compare 19 and 27 to see which is smaller.'),
-      miss('They are all the same', 'These are three different numbers.', 'Look at the tens digit of each one.'),
+      miss('They are all the same', 'They are all the same misses that the three values are not equal; compare their positions or place values.', 'Look at the tens digit of each one.'),
     ],
     lesson: 'To order from smallest to largest, find the lowest number first. 19 has only 1 ten, while 27 and 34 have more. So 19 comes first, then 27, then 34.',
     source,
@@ -136,7 +136,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('Odd', '14 can be split into two equal groups, so it is even.', 'Even numbers end in 0, 2, 4, 6, or 8.'),
       miss('Both', 'A whole number is either even or odd, not both.', 'Check the last digit to decide.'),
-      miss('Neither', 'Every whole number is either even or odd.', 'Look at the ones digit: 4 is even.'),
+      miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Look at the ones digit: 4 is even.'),
     ],
     lesson: 'A number is even if you can split it into two equal groups with none left over. 14 ends in 4, and numbers ending in 0, 2, 4, 6, or 8 are even. So 14 is even.',
     source,
@@ -319,7 +319,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('8', 'You added 2 and 6 instead of multiplying.', 'Two groups of 6 means 6 + 6.'),
       miss('10', 'That is one group of 6 short.', 'Count two sixes: 6, then 12.'),
-      miss('26', 'You wrote the digits side by side.', 'Multiplying 2 by 6 means 6 + 6.'),
+      miss('26', '26 joins the digits as text instead of doing the arithmetic operation.', 'Multiplying 2 by 6 means 6 + 6.'),
     ],
     lesson: 'Multiplying by 2 means making two equal groups. 2 x 6 is the same as 6 + 6, which is 12. Doubling a number is another way to think of times 2.',
     source,
@@ -363,7 +363,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: '30',
     wrong: [
       miss('13', 'You added 3 and 10 instead of multiplying.', 'Three groups of 10 means 10 + 10 + 10.'),
-      miss('310', 'You wrote the digits side by side.', 'Count by tens three times.'),
+      miss('310', '310 joins the digits as text instead of doing the arithmetic operation.', 'Count by tens three times.'),
       miss('20', 'That is only two tens.', 'Count three tens: 10, 20, 30.'),
     ],
     lesson: 'Multiplying by 10 is quick. Count by tens: 10, 20, 30. So 3 x 10 = 30. A nice trick is to put a zero after the number you are multiplying.',
@@ -441,7 +441,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('4', 'A shape with 4 sides is a square or rectangle.', 'The word triangle has tri, which means three.'),
       miss('5', 'A shape with 5 sides is a pentagon.', 'Count the straight edges of a triangle.'),
-      miss('2', 'Two lines cannot close up to make a shape.', 'A triangle needs three sides to close.'),
+      miss('2', '2 is not enough sides to enclose the shape being described.', 'A triangle needs three sides to close.'),
     ],
     lesson: 'A triangle has 3 straight sides and 3 corners. The tri in triangle means three. That is how you can always remember it.',
     source,
@@ -454,8 +454,8 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'What do we call a shape with 4 equal sides and 4 square corners?',
     correct: 'Square',
     wrong: [
-      miss('Triangle', 'A triangle has only 3 sides.', 'Count the sides of the shape described.'),
-      miss('Circle', 'A circle has no straight sides or corners.', 'This shape has 4 equal straight sides.'),
+      miss('Triangle', 'Triangle has three sides; the target shape needs the side count described in the clue.', 'Count the sides of the shape described.'),
+      miss('Circle', 'Circle is round with no corners; this clue needs a shape with straight sides.', 'This shape has 4 equal straight sides.'),
       miss('Rectangle', 'A rectangle has 4 corners, but its sides are not all equal.', 'A square has all 4 sides the same length.'),
     ],
     lesson: 'A square has 4 sides that are all the same length and 4 square corners. A rectangle also has 4 corners, but only a square has all sides equal.',
@@ -469,7 +469,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which tool would you use to measure how long your pencil is?',
     correct: 'A ruler',
     wrong: [
-      miss('A clock', 'A clock measures time, not length.', 'You need a tool with marks for length.'),
+      miss('A clock', 'A clock is for time, but length is measured with tools like a ruler or tape measure.', 'You need a tool with marks for length.'),
       miss('A scale', 'A scale measures weight, not length.', 'Length is how long something is.'),
       miss('A cup', 'A cup measures how much liquid fits, not length.', 'Think of the tool with inch and centimeter marks.'),
     ],
@@ -790,7 +790,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which word in this sentence is a noun: The dog ran fast?',
     correct: 'dog',
     wrong: [
-      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, animal, or thing.'),
+      miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),
       miss('fast', 'Fast tells how the dog ran, so it is not a noun.', 'Find the word that names an animal or thing.'),
       miss('the', 'The is a little helper word, not a noun.', 'Look for the word that names something.'),
     ],

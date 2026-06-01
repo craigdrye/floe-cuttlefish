@@ -29,7 +29,7 @@ export const class4MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '470',
     wrong: [
       miss('4700', 'This adds two zeros, but multiplying by 10 only adds one zero.', 'Multiplying by 10 makes a number ten times bigger, so add just one zero.'),
-      miss('57', 'This adds 10 instead of multiplying by 10.', 'Multiplying is not the same as adding. Think ten groups of 47.'),
+      miss('57', '57 adds one ten, but multiplying by 10 scales the entire number.', 'Multiplying is not the same as adding. Think ten groups of 47.'),
       miss('407', 'This puts the zero in the wrong place inside the number.', 'When you multiply by 10, the zero goes on the end.'),
     ],
     lesson: 'To multiply any whole number by 10, just put one zero on the end. So 47 times 10 becomes 470. This works because every digit shifts one place to the left.',
@@ -181,7 +181,7 @@ export const class4MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '2/4',
     wrong: [
       miss('1/4', 'One quarter is smaller than one half, not equal to it.', 'Two quarters make a half, so look for 2 on top.'),
-      miss('3/4', '3/4 is three out of four equal pieces, which is more than half the shape.', 'A half is the middle, halfway between 0 and 1.'),
+      miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'A half is the middle, halfway between 0 and 1.'),
       miss('1/3', 'One third is a little smaller than one half.', 'Find a fraction where the top is exactly half of the bottom.'),
     ],
     lesson: 'A fraction equals one half when the top number is exactly half of the bottom number. In 2/4, the 2 is half of 4, so 2/4 equals one half.',
@@ -378,7 +378,7 @@ export const class4MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: 'Even',
     wrong: [
       miss('Odd', 'A number is odd only if it ends in 1, 3, 5, 7, or 9.', 'Look at the last digit to decide.'),
-      miss('Neither', 'Every whole number is either even or odd.', 'Check the ones digit of the number.'),
+      miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Check the ones digit of the number.'),
       miss('Both', 'A number cannot be both even and odd.', 'A number has just one of these two labels.'),
     ],
     lesson: 'A number is even if it ends in 0, 2, 4, 6, or 8. The number 46 ends in 6, so it is even.',
@@ -438,9 +438,9 @@ export const class4MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'A rectangle is 5 cm long and 4 cm wide. What is its area?',
     correct: '20 square cm',
     wrong: [
-      miss('9 square cm', 'This adds the sides instead of multiplying.', 'Area means length times width.'),
-      miss('18 square cm', 'This finds the perimeter, not the area.', 'For area, multiply the two sides together.'),
-      miss('20 cm', 'Area is measured in square units, not just cm.', 'Use square cm when you fill a space.'),
+      miss('9 square cm', '9 square cm adds lengths around or across the shape, but area needs length times width.', 'Area means length times width.'),
+      miss('18 square cm', '18 square cm traces around the outside; area measures the space inside.', 'For area, multiply the two sides together.'),
+      miss('20 cm', '20 cm uses length units, but area needs square units because it covers a surface.', 'Use square cm when you fill a space.'),
     ],
     lesson: 'Area is the space inside a shape. For a rectangle, multiply length by width: 5 times 4 equals 20 square cm.',
     source,
@@ -468,7 +468,7 @@ export const class4MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'A square has sides of 6 cm each. What is its area?',
     correct: '36 square cm',
     wrong: [
-      miss('24 square cm', 'This finds the perimeter, not the area.', 'For area, multiply one side by itself.'),
+      miss('24 square cm', '24 square cm traces around the outside; area measures the space inside.', 'For area, multiply one side by itself.'),
       miss('12 square cm', 'This adds two sides instead of multiplying.', 'Area means side times side.'),
       miss('36 cm', 'Area uses square cm, not plain cm.', 'A filled space is measured in square units.'),
     ],
@@ -483,7 +483,7 @@ export const class4MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'A rectangle has an area of 24 square cm and a width of 4 cm. What is its length?',
     correct: '6 cm',
     wrong: [
-      miss('20 cm', 'This subtracts 4 from 24 instead of dividing.', 'To find the missing side, divide the area by the width.'),
+      miss('20 cm', '20 cm subtracts one group of 4, but the prompt asks how many are in each equal group.', 'To find the missing side, divide the area by the width.'),
       miss('8 cm', 'This divides by the wrong number.', 'Divide 24 by the width, which is 4.'),
       miss('96 cm', '96 cm comes from making more groups, but division asks how many are in each group or how many groups fit.', 'You already have the area, so divide to find a side.'),
     ],
@@ -499,7 +499,7 @@ export const class4MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '6 square units',
     wrong: [
       miss('5 square units', 'This adds the rows and columns instead of multiplying.', 'Multiply squares across by squares down.'),
-      miss('10 square units', 'This finds the perimeter, not the area.', 'Area counts every square inside the shape.'),
+      miss('10 square units', '10 square units traces around the outside; area measures the space inside.', 'Area counts every square inside the shape.'),
       miss('3 square units', 'This counts only one row of squares.', 'There are 2 rows, so count both.'),
     ],
     lesson: 'You can find area by counting the unit squares inside a shape. With 3 across and 2 down, that is 3 times 2, which equals 6 square units.',
@@ -774,7 +774,7 @@ export const class4MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('3', 'This divides by 5 instead of 3.', 'A third means splitting into three equal parts.'),
       miss('7', 'This is about half, not a third.', 'Divide 15 by 3 to find one third.'),
-      miss('12', 'This subtracts 3 instead of dividing.', 'A third is a division, not a subtraction.'),
+      miss('12', '12 takes away one 3, but this division question asks for equal sharing.', 'A third is a division, not a subtraction.'),
     ],
     lesson: 'To find one third, divide by 3. A third of 15 is 15 divided by 3, which equals 5.',
     source,

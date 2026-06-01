@@ -169,7 +169,7 @@ export const primaryPrim103TopUpAQuestions: Question[] = makeQuestionBank('Prima
     wrong: [
       miss('4', 'A shape with four sides is a square or rectangle.', 'The word triangle starts with tri, meaning three.'),
       miss('5', 'A shape with five sides is a pentagon.', 'Count the straight edges of a triangle.'),
-      miss('2', 'Two lines cannot close up to make a shape.', 'A triangle needs three straight sides.'),
+      miss('2', '2 is not enough sides to enclose the shape being described.', 'A triangle needs three straight sides.'),
     ],
     lesson: 'A triangle has three straight sides and three corners. The tri in triangle means three, just like a tricycle has three wheels.',
     source,
@@ -213,7 +213,7 @@ export const primaryPrim103TopUpAQuestions: Question[] = makeQuestionBank('Prima
     correct: 'Metres',
     wrong: [
       miss('Litres', 'Litres measure how much liquid fits in something.', 'You need a unit for length, not for liquid.'),
-      miss('Kilograms', 'Kilograms measure how heavy something is.', 'Height is about length, not weight.'),
+      miss('Kilograms', 'Kilograms measures mass or weight, not the quantity named in this prompt.', 'Height is about length, not weight.'),
       miss('Seconds', 'Seconds measure time, not how tall something is.', 'Pick a unit that measures length.'),
     ],
     lesson: 'We measure length and height with units like centimetres and metres. A door is about two metres tall. Litres measure liquid, kilograms measure weight, and seconds measure time.',
@@ -274,7 +274,7 @@ export const primaryPrim103TopUpAQuestions: Question[] = makeQuestionBank('Prima
     prompt: 'What do we call a baby dog?',
     correct: 'Puppy',
     wrong: [
-      miss('Kitten', 'A kitten is a baby cat, not a baby dog.', 'Think about the word for a young dog.'),
+      miss('Kitten', 'Kitten belongs to cats; the baby dog word is puppy.', 'Think about the word for a young dog.'),
       miss('Calf', 'A calf is a baby cow.', 'Dogs have a special name for their young.'),
       miss('Foal', 'A foal is a baby horse.', 'A baby dog has a different name.'),
     ],
@@ -569,7 +569,7 @@ export const primaryPrim103TopUpAQuestions: Question[] = makeQuestionBank('Prima
     wrong: [
       miss('5', 'Five is the number of school days, but a week has weekend days too.', 'Remember to count Saturday and Sunday as well.'),
       miss('10', 'A week is shorter than ten days.', 'Count from Monday all the way to Sunday.'),
-      miss('12', 'Twelve is the number of months in a year, not days in a week.', 'A week has fewer days than that.'),
+      miss('12', '12 belongs to months in a year, but the week has seven days.', 'A week has fewer days than that.'),
     ],
     lesson: 'There are 7 days in a week: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and Sunday. Saturday and Sunday make up the weekend.',
     source,

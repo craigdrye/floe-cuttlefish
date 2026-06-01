@@ -667,7 +667,7 @@ export const readingVocab5thPrim103TopUpAQuestions: Question[] = makeQuestionBan
     correct: 'The classroom was a zoo during the party.',
     wrong: [
       miss('The classroom was as loud as a zoo.', 'This uses as, so it is a simile, not a metaphor.', 'A metaphor says something IS another thing, without using like or as.'),
-      miss('The classroom had thirty desks.', 'This is a plain fact with no comparison.', 'Look for a sentence that calls one thing another thing.'),
+      miss('The classroom had thirty desks.', 'The classroom had thirty desks. states a fact, but the prompt is asking for a comparison.', 'Look for a sentence that calls one thing another thing.'),
       miss('The students went to the zoo.', 'This just tells where they went. It is not a comparison.', 'Find the sentence that says the classroom WAS a zoo.'),
     ],
     lesson: 'A metaphor compares two things by saying one thing is another, without using like or as. The classroom was a zoo means it was wild and noisy. Metaphors paint a strong picture.',

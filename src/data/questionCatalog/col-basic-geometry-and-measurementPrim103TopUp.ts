@@ -636,9 +636,9 @@ export const colBasicGeometryAndMeasurementPrim103TopUpQuestions: Question[] = m
     prompt: 'How many minutes are there in 1 hour?',
     correct: '60',
     wrong: [
-      miss('100', 'An hour is not split into 100 minutes.', 'Look at a clock face; it goes up to 60.'),
+      miss('100', '100 treats time like a base-100 measure, but an hour has 60 minutes.', 'Look at a clock face; it goes up to 60.'),
       miss('30', 'Thirty minutes is only half an hour.', 'A whole hour is twice 30 minutes.'),
-      miss('24', '24 is the number of hours in a day, not minutes in an hour.', 'A clock face is divided into 60 minutes.'),
+      miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'A clock face is divided into 60 minutes.'),
     ],
     lesson: 'There are 60 minutes in 1 hour. A clock face has 60 little marks for the minutes. Half an hour is 30 minutes.',
     source,
@@ -667,7 +667,7 @@ export const colBasicGeometryAndMeasurementPrim103TopUpQuestions: Question[] = m
     correct: 'Half past 4',
     wrong: [
       miss('Half past 6', 'The 6 shows the minutes, not the hour.', 'The hour is shown by the short hand, which is past 4.'),
-      miss('Half past 5', 'The hour hand has not reached 5 yet.', 'The short hand is between 4 and 5, so the hour is 4.'),
+      miss('Half past 5', 'Half past 5 reads the hour too early; follow where the hour hand has actually moved.', 'The short hand is between 4 and 5, so the hour is 4.'),
       miss('Quarter past 4', 'Quarter past is when the minute hand points to the 3.', 'When the minute hand points to 6, it is half past.'),
     ],
     lesson: 'When the minute hand points to the 6, it is half past the hour. The hour hand is between 4 and 5, so the hour is 4. The time is half past 4.',
@@ -713,7 +713,7 @@ export const colBasicGeometryAndMeasurementPrim103TopUpQuestions: Question[] = m
     wrong: [
       miss('5', 'Five is the number of school days, but a week has weekend days too.', 'Remember to count Saturday and Sunday as well.'),
       miss('10', 'Ten days is more than one week.', 'Count from Monday all the way to Sunday.'),
-      miss('12', '12 is the number of months in a year, not days in a week.', 'A week runs from one day name back to the same day name.'),
+      miss('12', '12 is a months-in-a-year fact, not the seven-day week.', 'A week runs from one day name back to the same day name.'),
     ],
     lesson: 'There are 7 days in 1 week: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and Sunday. That includes the school days and the weekend.',
     source,

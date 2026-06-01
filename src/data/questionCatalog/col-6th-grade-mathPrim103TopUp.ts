@@ -474,7 +474,7 @@ export const col6thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     correct: '5',
     wrong: [
       miss('45', 'You multiplied by 3 instead of dividing.', 'To undo multiplying by 3, divide both sides by 3.'),
-      miss('12', 'You subtracted 3 instead of dividing.', '3n means 3 times n, so divide 15 by 3.'),
+      miss('12', '12 is a take-away result, but the story asks for sharing into 3 equal parts.', '3n means 3 times n, so divide 15 by 3.'),
       miss('18', 'You added 3 instead of dividing.', 'Divide 15 by 3 to find n.'),
     ],
     lesson: 'The expression 3n means 3 times n. To solve 3n = 15, undo the multiplying by dividing both sides by 3. That gives n = 15 divided by 3, which is 5.',
@@ -628,7 +628,7 @@ export const col6thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     correct: '$8',
     wrong: [
       miss('$72', 'You multiplied by 3 instead of dividing.', 'For 1 hour, split the $24 into 3 equal parts.'),
-      miss('$21', 'You subtracted 3 instead of dividing.', 'Share $24 equally across 3 hours.'),
+      miss('$21', '$21 is a take-away result, but the story asks for sharing into 3 equal parts.', 'Share $24 equally across 3 hours.'),
       miss('$27', 'You added 3 instead of dividing.', 'Find the pay for one hour by dividing by 3.'),
     ],
     lesson: 'To find the pay for 1 hour, divide the total by the number of hours. $24 divided by 3 hours is $8 per hour.',
@@ -661,7 +661,7 @@ export const col6thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('3.0', 'You moved the point the wrong way.', 'To go from percent to decimal, divide by 100.'),
       miss('30', 'A percent and its decimal are not the same value.', 'Move the decimal point two places to the left.'),
-      miss('0.03', 'You moved the point too far.', '30 divided by 100 is 0.3, not 0.03.'),
+      miss('0.03', '0.03 shifts the decimal too many places; move it only as far as the operation requires.', '30 divided by 100 is 0.3, not 0.03.'),
     ],
     lesson: 'To change a percent to a decimal, divide by 100, which moves the decimal point two places to the left. So 30% becomes 0.30, which is 0.3.',
     source,

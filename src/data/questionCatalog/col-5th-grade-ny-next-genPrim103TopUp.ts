@@ -106,7 +106,7 @@ export const col5thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     wrong: [
       miss('2/5', 'You added the tops and the bottoms instead of multiplying.', 'Multiply tops together and bottoms together.'),
       miss('1/5', 'You added the bottoms instead of multiplying them.', 'Multiply 2 x 3 for the new bottom.'),
-      miss('2/6', 'You multiplied the bottoms but added the tops.', 'Multiply the tops too: 1 x 1 = 1.'),
+      miss('2/6', '2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.', 'Multiply the tops too: 1 x 1 = 1.'),
     ],
     lesson: 'To multiply two fractions, multiply the top numbers together and the bottom numbers together. So 1/2 x 1/3 = 1/6. Multiplying by a fraction makes a smaller piece.',
     source,
@@ -727,7 +727,7 @@ export const col5thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which word is the opposite of "ancient"?',
     correct: 'Modern',
     wrong: [
-      miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is the opposite, so look for new.'),
+      miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),
       miss('Tall', 'Tall is about height, not about age.', 'Think about new versus old for ancient.'),
       miss('Heavy', 'Heavy is about weight, not age.', 'The opposite of very old is very new.'),
     ],
