@@ -235,17 +235,22 @@ export function TrainerScreen() {
 
   useEffect(() => {
     setAttentionTool(null)
+    if (!selectedLesson || mode !== 'daily' || index !== 0 || selectedAnswerId) return
+
     const schedule = [
-      { tool: 'ask' as const, delay: 3000 },
-      { tool: 'hint' as const, delay: 6000 },
-      { tool: 'teach' as const, delay: 10000 },
+      { tool: 'ask' as const, delay: 1000 },
+      { tool: 'hint' as const, delay: 1320 },
+      { tool: 'teach' as const, delay: 1640 },
+      { tool: 'ask' as const, delay: 2600 },
+      { tool: 'hint' as const, delay: 2920 },
+      { tool: 'teach' as const, delay: 3240 },
     ]
     const timers = schedule.flatMap(({ tool, delay }) => [
       window.setTimeout(() => setAttentionTool(tool), delay),
-      window.setTimeout(() => setAttentionTool((current) => (current === tool ? null : current)), delay + 1500),
+      window.setTimeout(() => setAttentionTool((current) => (current === tool ? null : current)), delay + 280),
     ])
     return () => timers.forEach((timer) => window.clearTimeout(timer))
-  }, [baseQuestion.id, question.prompt, remixSeed])
+  }, [baseQuestion.id, index, mode, question.prompt, remixSeed, selectedAnswerId, selectedLesson])
 
   const thoughtKey = `${baseQuestion.id}-${remixSeed}`
   const calculatorResult = useMemo(() => calculateExpression(calculatorInput), [calculatorInput])

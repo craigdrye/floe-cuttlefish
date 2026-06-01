@@ -800,7 +800,7 @@
   box-shadow: 0 0 0 2px rgba(255,255,255,0.45), 0 5px 12px var(--pastel-shadow, rgba(30, 95, 90, 0.08));
 }
 .actions-toolbar .secondary.attention-flash {
-  animation: tool-border-flash 0.5s ease-in-out 3;
+  animation: tool-border-flash 0.28s ease-in-out 1;
   border-color: var(--pastel-border-active, var(--reef-teal));
   box-shadow:
     0 0 0 3px rgba(255,255,255,0.7),
