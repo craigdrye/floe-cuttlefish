@@ -1,18 +1,18 @@
 # Question Quality Dashboard
 
-Generated on 2026-06-01T08:56:31.303Z.
+Generated on 2026-06-01T09:03:20.978Z.
 
 Only questions reachable through the app course catalog builders are included.
 
 ## Overall
 
-- Wired questions audited: 41644
+- Wired questions audited: 41526
 - Needs review: 0
 - High-priority authoring/depth pass: 0 (priority >= 30)
 - Recoverable: 0
 - Quarantined: 0
 - Top actions: none
-- Top authoring flags: missing-alternate-prompt (39552), missing-challenge-rating (39552), solution-answer-only (39509), lesson-too-thin (20209), prompt-under-15-words (3650)
+- Top authoring flags: missing-alternate-prompt (39434), missing-challenge-rating (39434), solution-answer-only (39391), lesson-too-thin (20109), prompt-under-15-words (3248)
 
 ## Priority Tracks
 

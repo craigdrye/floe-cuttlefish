@@ -64,7 +64,7 @@ function hasFillInBlank(prompt: string): boolean {
 }
 
 function rewritePrimaryPrompt(question: Question): string {
-  const prompt = question.prompt.trim()
+  const prompt = question.prompt.trim().replace(/\s+Which option is correct\?$/i, '')
   const title = question.title || question.chapter || 'this practice question'
   if (prompt.endsWith('?')) return question.prompt
   if (hasFillInBlank(prompt)) {
@@ -74,12 +74,12 @@ function rewritePrimaryPrompt(question: Question): string {
     return `${prompt}\nLook closely at the image for "${title}". Which answer best solves the problem?`
   }
   if (prompt.endsWith(':')) {
-    return `${prompt} Which option best completes the "${title}" problem?`
+    return `${prompt} which option best completes the problem?`
   }
   if (isBarePrimaryPrompt(prompt)) {
     return `Try this "${title}" problem: ${prompt}. Which option solves it?`
   }
-  return `${prompt} Which option is correct?`
+  return `${prompt} Choose the answer that follows from the information given.`
 }
 
 function enrichPrimaryQuestionQuality(catalog: Record<string, Question[]>): Record<string, Question[]> {

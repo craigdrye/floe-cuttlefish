@@ -118,8 +118,8 @@ function expandShortPrompt(question: Question, prompt: string) {
     ? `${trimmed} which option best completes the statement?`
     : ensureTerminalPunctuation(trimmed)
   const suffix = title && !comparablePrompt.includes(comparableTitle)
-    ? `Use "${title}" as the clue while you test each answer.`
-    : 'Use the exact wording of the prompt while you test each answer.'
+    ? `Think through the setup, then choose the answer that matches ${title}.`
+    : 'Think through the setup, then choose the answer that matches the prompt exactly.'
   const expanded = `${core} ${suffix}`
 
   if (promptWordCount(expanded) >= MIN_LEARNER_PROMPT_WORDS) return expanded

@@ -104,6 +104,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
   const prompt = question.prompt
     .replace(/\s+Which answer is correct\?$/i, '')
     .replace(/\s+Which option is correct\?$/i, '')
+    .replace(/\s+Choose the answer that follows from the information given\.$/i, '')
     .trim()
   const bulletItems = extractBulletItems(question.lesson)
   const eitherOrItems = extractAnyEitherOrItems(question.lesson)
