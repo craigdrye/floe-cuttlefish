@@ -169,7 +169,7 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       'Each jurisdiction may have different classification, evidence, labeling, registration, and post-market requirements',
       [
         ['One approval automatically travels everywhere', 'Approvals do not auto-port across jurisdictions.'],
-        ['Only the logo needs localization', 'Localization typically goes well beyond branding.'],
+        ['Only the package branding needs localization before launch', 'Localization typically goes well beyond branding.'],
         ['The easiest country should set the global rule', 'Each jurisdiction sets its own rules.'],
       ],
       'Regulatory strategy is local as well as global. Prior approvals can help, but they do not erase jurisdiction-specific obligations.'),
@@ -250,7 +250,7 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       'Review the scientific support, limitations, disclosures, and claim language before distribution',
       [
         ['Treat white papers as education with no promotional risk', 'Sponsored materials can be promotional regardless of format.'],
-        ['Remove the sponsor logo and keep the same claims', 'Removing the logo does not change the underlying claim support.'],
+        ['Make the sponsor less visible while keeping the same unsupported benefit claims', 'Removing or downplaying the sponsor does not change the underlying claim support.'],
         ['Use the subgroup result because it looks impressive', 'Subgroup post-hoc results need cautious framing, not headline promotion.'],
       ],
       'Educational-looking materials can still be promotional. Scientific claims need balanced presentation and support.'),

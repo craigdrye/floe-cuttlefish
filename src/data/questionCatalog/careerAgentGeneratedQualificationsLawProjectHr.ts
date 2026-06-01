@@ -906,7 +906,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Investigate root causes, reinforce reporting, and implement preventive controls before an injury occurs',
       [
         ['Wait for an injury because near misses are not data', 'Near misses are the highest-value safety data — they precede injuries.'],
-        ['Punish reporters so the dashboard looks calmer', 'Punishing reporters destroys reporting culture and hides risk.'],
+        ['Treat reporters as the problem because the dashboard looks worse after reports rise', 'Punishing reporters destroys reporting culture and hides risk.'],
         ['Treat safety as unrelated to HR because equipment is involved', 'Safety is an integrated HR responsibility, including reporting culture and training.'],
       ],
       'Near misses are early warnings. A strong safety culture learns before harm becomes the teacher.'),
@@ -926,8 +926,8 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Decline and follow confidentiality and authorised-access rules',
       [
         ['Look it up because friendship is a business need', 'Friendship is not a legitimate business purpose under data-access controls.'],
-        ['Share a screenshot if the friend promises silence', 'Promises do not authorise data access; the rules do.'],
-        ['Post the salary range in a casual chat', 'Posting compensation data outside authorised channels violates confidentiality norms.'],
+        ['Share the salary details privately if the friend promises silence', 'Promises do not authorise data access; the rules do.'],
+        ['Discuss the salary range in an informal team chat', 'Posting compensation data outside authorised channels violates confidentiality norms.'],
       ],
       'HR roles carry privileged access. Ethical judgement means using employee data only for legitimate, authorised purposes.'),
 

@@ -826,8 +826,8 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'State the current status accurately and share approved timeline or interim security materials',
       [
         ['Say yes because the audit is emotionally complete', 'Misrepresenting certification status is both an ethical and a contractual problem.'],
-        ['Send a competitor report with your logo removed', 'Re-badging another company\'s evidence is fabrication.'],
-        ['Avoid the question and demo dark mode', 'Avoiding security questions raises more concern than answering them honestly.'],
+        ['Send a competitor report as a temporary substitute for your own audit evidence', 'Re-badging another company\'s evidence is fabrication.'],
+        ['Redirect to unrelated product features instead of answering the assurance question', 'Avoiding security questions raises more concern than answering them honestly.'],
       ],
       'Security claims must be precise. In-progress certification is not the same as completed assurance.'),
     q(4250229, 'Career Skills', 'Security, Privacy, and Compliance Objections', 'Production data in pilot',
@@ -883,8 +883,8 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'An engineering leader says, "We could build this ourselves." Best response?',
       'Compare build cost, time, maintenance, opportunity cost, risk, and whether the capability is strategic to own',
       [
-        ['Insult the engineering team until they agree', 'Insulting the technical buyer ends the conversation.'],
-        ['Say buying is always better by law', 'Universal-buy claims have no credibility with engineering leaders.'],
+        ['Frame the objection as engineering stubbornness rather than a real evaluation', 'Dismissing the technical buyer ends the conversation.'],
+        ['Claim buying is always safer without comparing ownership trade-offs', 'Universal-buy claims have no credibility with engineering leaders.'],
         ['Avoid the topic because it sounds technical', 'Avoiding the build-vs-buy question forfeits the chance to address it credibly.'],
       ],
       'Build-versus-buy objections deserve respect. A credible seller helps the buyer compare total effort, risk, control, and strategic focus.'),

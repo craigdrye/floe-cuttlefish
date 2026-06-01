@@ -934,7 +934,7 @@ const pmpConcepts: Concept[] = [
     prompt: 'the team delivers the requested system, but no one owns the post-launch adoption metric. What is missing?',
     correct: 'A benefits measurement owner and plan for tracking outcomes after delivery',
     wrong: [
-      ['A larger project logo so adoption feels official', 'Branding does not assign accountability for benefits.'],
+      ['A polished launch deck that announces success before adoption is measured', 'Launch materials do not assign accountability for benefits.'],
       ['A procurement claim against the sponsor', 'No supplier dispute is described.'],
       ['A rule that outputs are the same as outcomes', 'Outputs are deliverables; outcomes are value realized from use.'],
     ],
@@ -1740,7 +1740,7 @@ const patentConcepts: Concept[] = [
     wrong: [
       ['Anticipation by the applicant\'s own grammar', 'Antecedent basis is a clarity issue, not a prior-art disclosure.'],
       ['Assignment defect because the word belongs to someone', 'Claim grammar is not ownership recordation.'],
-      ['Foreign filing license because the term sounds technical', 'Foreign filing licenses are unrelated to claim antecedent basis.'],
+      ['Foreign filing license issue because the claim term appears in an international application', 'Foreign filing licenses are unrelated to claim antecedent basis.'],
     ],
     lesson: 'Claim clarity includes antecedent basis, definiteness, and consistent limitation language.',
   },

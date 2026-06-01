@@ -274,7 +274,7 @@ export const investingBasicsR2Questions: Question[] = makeQuestionBank('Career S
     wrong: [
       miss('Means they pay foreign taxes they could have avoided', 'The issue is concentration risk, not foreign taxes; in fact owning only domestic stocks avoids most foreign tax wrinkles.', 'The danger is betting on one economy, not a tax bill. What\'s the downside of all-domestic exposure?'),
       miss('Guarantees lower returns than an all-foreign portfolio', 'Neither all-domestic nor all-foreign is guaranteed to win; the point is balance, not that foreign always beats home.', 'No region is guaranteed to outperform. The fix is spreading across both, not swapping one bias for another.'),
-      miss('Is illegal under U.S. investment rules', 'Holding only domestic stocks is perfectly legal; it is simply less diversified than including international holdings.', 'It\'s allowed, just lopsided. The real cost is missing diversification, not breaking a rule.'),
+      miss('Violates diversification best practice because all the exposure sits in one country', 'The concern is concentration risk, not legality; holding only domestic stocks is allowed but less diversified than including international holdings.', 'It is allowed, just lopsided. The real cost is missing diversification, not breaking a rule.'),
     ],
     lesson: 'Home-country bias is the tendency to overweight your own country\'s stocks because they feel familiar. It concentrates your fate in one economy and currency, and means you skip the diversification benefit of markets that may rise when yours falls. A total-world or international fund alongside domestic holdings spreads that risk across the globe.',
     source,
@@ -763,7 +763,7 @@ export const investingBasicsR2Questions: Question[] = makeQuestionBank('Career S
     correct: 'You may be buying after the run-up at inflated prices, with elevated odds of mean reversion',
     wrong: [
       miss('Hot sectors are guaranteed to keep rising once they start', 'Momentum can persist briefly, but no sector is guaranteed to keep climbing; last year\'s leader often lags next.', 'Does a strong year promise another? Hot streaks frequently cool, and you\'d be buying high.'),
-      miss('Sector funds are illegal to buy after a big rally', 'There is no legality issue; the risk is overpaying and concentrating, not breaking a rule.', 'It\'s allowed, just unwise. The danger is price and concentration, not legality.'),
+      miss('Sector funds become safest right after a big rally proves the theme is working', 'A strong rally can mean valuations are stretched; the risk is overpaying and concentrating, not getting a safety signal.', 'It is allowed, just often unwise. The danger is price and concentration, not legality.'),
       miss('The only risk is a slightly higher expense ratio', 'Beyond fees, the real risks are buying at a peak and concentrating in one narrow slice that can fall sharply.', 'Fees are minor here. The bigger traps are overpaying and putting too much in one theme.'),
     ],
     lesson: 'Chasing a sector after a big run usually means buying near a peak, when valuations are stretched and the easy gains are gone. Hot themes tend to mean-revert, and concentrating in one narrow slice magnifies the pain if it falls. The disciplined move is to keep funding a broad, diversified plan rather than rotating into whatever just soared.',
