@@ -712,8 +712,8 @@ export const mcatUniv103TopUpQuestions: Question[] = makeQuestionBank('Universit
     prompt: 'On the CARS section, which strategy best identifies the central thesis of a dense passage?',
     correct: 'Find the claim that the rest of the passage is organized to support, even if it is not the first sentence',
     wrong: [
-      miss('Assume the first sentence always states the thesis', 'The thesis can appear anywhere; openings are often hooks, context, or a view the author will later refute.', 'Look for the claim other sentences support, not just the opening.'),
-      miss('Choose the statement that includes the most specific factual detail', 'Specific details are usually evidence for the thesis, not the thesis itself, which is a broader claim.', 'Distinguish supporting evidence from the overarching point.'),
+      miss('Treat the opening sentence as the thesis before checking how the rest of the passage develops', 'The thesis can appear anywhere; openings are often hooks, context, or a view the author will later refute.', 'Look for the claim other sentences support, not just the opening.'),
+      miss('Mistake the most detailed factual example for the author’s central claim', 'Specific details are usually evidence for the thesis, not the thesis itself, which is a broader claim.', 'Distinguish supporting evidence from the overarching point.'),
       miss('Select whichever idea you personally agree with most', 'CARS tests the author argument, not your own opinion; personal agreement is irrelevant.', 'Identify the author position, regardless of your views.'),
     ],
     lesson: 'The central thesis is the main claim the passage as a whole is built to support. It may appear at the start, middle, or end, so the reliable approach is to ask what point the other sentences serve. CARS rewards reading for the author argument and structure rather than first impressions or personal agreement.',

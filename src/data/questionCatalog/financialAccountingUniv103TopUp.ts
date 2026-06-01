@@ -463,7 +463,7 @@ export const financialAccountingUniv103TopUpQuestions: Question[] = makeQuestion
     wrong: [
       miss('Always choose the option that maximizes reported net income.', 'Conservatism does the opposite; it avoids overstating income and assets.', 'Prudence leans against optimism, not toward it.'),
       miss('Report every estimate at its most optimistic possible value.', 'Conservatism favors caution, not optimism, when outcomes are uncertain.', 'Lean toward the less favorable reasonable estimate.'),
-      miss('Ignore potential losses until they are legally certain.', 'Conservatism recognizes probable losses early, even before legal certainty.', 'Anticipate likely losses promptly.'),
+      miss('Wait to record probable losses until every legal or factual uncertainty is resolved.', 'Conservatism recognizes probable losses early, even before legal certainty.', 'Anticipate likely losses promptly.'),
     ],
     lesson: 'Conservatism directs accountants to exercise caution so that assets and income are not overstated and liabilities and losses are not understated. Probable losses are recognized when reasonably estimable, while gains wait until realized, as in lower-of-cost-or-market for inventory.',
     source, generated: true,

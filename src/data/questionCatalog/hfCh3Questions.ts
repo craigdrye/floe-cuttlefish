@@ -468,7 +468,7 @@ export const hfCh3Questions: Question[] = [
     'You\'ve worked backwards and the market implies 25% revenue CAGR and 28% margins for the next 5 years. Both your bull case (28%/30%) and your bear case (15%/22%) sit around it. What is the most useful next step?',
     'Build sensitivity bands — show what the stock is worth at each combination of growth and margin, and locate exactly where today\'s price sits and how wide the no-edge zone is',
     [
-      ['Pick the case closest to the implied numbers and call it the base case', 'Anchoring the base case on the implied numbers is circular — it just reproduces the current price as "fair". The discipline is to assess the implied claim independently.'],
+      ['Use the case closest to the market-implied numbers as the base case without independent underwriting', 'Anchoring the base case on the implied numbers is circular — it just reproduces the current price as "fair". The discipline is to assess the implied claim independently.'],
       ['Average the bull and bear cases to produce a midpoint estimate', 'Mechanical averaging of bull and bear loses the structure of the bands. The point is to see the surface of values, not collapse it to one number.'],
       ['Conclude no edge since the implied case is between bull and bear', 'No edge is a possible conclusion but it should come from the analysis, not from the structural position of the implied case. Sensitivity bands let you see whether the edge is in growth, margin, or neither.'],
     ],

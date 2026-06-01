@@ -153,7 +153,7 @@ export const clfCh2Questions: Question[] = [
     'A retailer reports $500M of funded debt and $400M of operating lease liabilities on the balance sheet under ASC 842. LTM EBITDAR (EBITDA before rent) is $300M; rent expense is $80M. Which lease-adjusted leverage view is most defensible for credit purposes?',
     'Treat the operating lease liability as a debt-like obligation: lease-adjusted debt of ~$900M divided by EBITDAR of $300M, giving roughly 3.0x — and confirm against the rating agency 8x rent capitalization as a sanity check',
     [
-      ['Ignore leases because ASC 842 already put them on the balance sheet, so the funded debt line is enough', 'ASC 842 only put operating leases on the balance sheet — it did not move them into funded debt. The credit committee still has to decide whether to treat the lease liability as debt-like, and for a retailer the answer is yes.'],
+      ['Use only funded debt because ASC 842 already discloses leases elsewhere on the balance sheet', 'ASC 842 only put operating leases on the balance sheet — it did not move them into funded debt. The credit committee still has to decide whether to treat the lease liability as debt-like, and for a retailer the answer is yes.'],
       ['Use 500 / 300 = 1.67x and conclude the borrower is lightly levered', 'Using funded debt over EBITDAR mixes a pre-rent earnings number with a post-rent debt number. The two have to be on the same basis — either both include leases or neither does.'],
       ['Capitalize rent at 10x and ignore the ASC 842 balance', 'Rule-of-thumb rent capitalization (8x is the more common Moody\'s convention, not 10x) is a useful sanity check, but it should not displace the actual lease liability the company now discloses under ASC 842.'],
     ],

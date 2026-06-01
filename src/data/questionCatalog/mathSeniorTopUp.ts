@@ -14,7 +14,7 @@ export const mathSeniorTopUpQuestions: Question[] = makeQuestionBank('University
     correct: 'Pin down the specific decision the model must inform (e.g., when to release a correction), with explicit inputs, outputs, and a stakeholder',
     wrong: [
       miss('Collect as much data as possible first so the model can be as detailed as it can be', 'Detail without a decision has no stopping rule and no way to judge fit-for-purpose.', 'Detail is judged against a decision; name the decision before sizing the model.'),
-      miss('Choose the most sophisticated model class available (e.g., an agent-based model) for realism', 'Sophistication is not a goal; the right model class follows from the decision and data.', 'Model class should be chosen after the decision is defined, not before.'),
+      miss('Start with an agent-based model because it sounds realistic for human rumor behavior', 'Sophistication is not a goal; the right model class follows from the decision and data.', 'Model class should be chosen after the decision is defined, not before.'),
       miss('Fix the parameter values up front so the model produces a definite answer', 'Parameters are outputs of framing and data, not the first thing you assert.', 'Frame the question first; parameters come from data and assumptions, not guesses.'),
     ],
     lesson: 'A model is a tool for a decision. Until you name the decision, the stakeholder, and the inputs/outputs, you cannot judge whether the model is detailed enough or valid. Framing precedes data collection and model-class choice.',

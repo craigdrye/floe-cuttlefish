@@ -1890,7 +1890,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Clarify the shared goal, facts, constraints, and decision owner before debating solutions',
       [
         ['Treat the louder lead as higher priority because it is more visible', 'Volume is not data.'],
-        ['Treat any conflict as automatic project failure rather than a risk to manage', 'Suppressing conflict does not resolve the underlying disagreement.'],
+        ['Treat the disagreement as a sign the project is off track before separating facts from noise', 'Suppressing conflict does not resolve the underlying disagreement.'],
         ['Solve it privately with no explanation to either lead', 'Hidden decisions damage trust with both leads.'],
       ],
       'Conflict management starts by separating goals, facts, constraints, and authority. That turns drama into a solvable decision.'),

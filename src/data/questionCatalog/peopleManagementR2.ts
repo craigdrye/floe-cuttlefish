@@ -895,7 +895,7 @@ export const peopleManagementR2Questions: Question[] = makeQuestionBank('Career 
         'The response should fit the severity, and this incident is minor.',
       ),
       miss(
-        'Ignore it entirely, since strong employees never need feedback',
+        'Let it pass without comment because the employee is usually strong',
         'Even a one-off can warrant a direct, low-key conversation; ignoring it is the opposite error of overreacting.',
         'Proportional does not mean zero — it means right-sized.',
       ),

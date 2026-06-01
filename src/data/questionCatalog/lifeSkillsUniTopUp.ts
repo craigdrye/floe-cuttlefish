@@ -44,7 +44,7 @@ export const lifeSkillsUniTopUpQuestions: Question[] = makeQuestionBank('Univers
     correct: 'Set aside $120 each month in a sinking fund so the $720 is already saved when the bill arrives',
     wrong: [
       miss('Put the whole $720 on a credit card and pay it off "later"', 'Financing a known, predictable expense adds interest cost to something you could have simply saved for.', 'You know this bill is coming — pre-save it instead of borrowing.'),
-      miss('Ignore it in the monthly budget since it is not a monthly expense', 'Leaving predictable costs out of the budget is exactly what turns them into "surprises" that wreck a month.', 'Spread an annual cost across the months before it lands.'),
+      miss('Leave it out of the monthly plan because the payment only happens twice a year', 'Leaving predictable costs out of the budget is exactly what turns them into "surprises" that wreck a month.', 'Spread an annual cost across the months before it lands.'),
       miss('Move $720 from your emergency fund when the bill comes', 'The emergency fund is for the unexpected; a scheduled premium is fully predictable and should be planned for separately.', 'Emergencies are unexpected; this bill has a date.'),
     ],
     lesson: 'A sinking fund divides a known irregular expense by the months until it is due and saves that amount monthly. Insurance, registration, tuition, and holiday gifts are predictable, so pre-funding them prevents the cash-flow shocks that push people toward debt.',

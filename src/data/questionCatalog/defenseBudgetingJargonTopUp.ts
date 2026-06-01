@@ -378,7 +378,7 @@ export const defenseBudgetingJargonTopUpQuestions: Question[] = makeQuestionBank
     correct: 'Determine whether the slow obligations are a short-term timing issue that will recover or a structural problem that will leave funds unexecuted.',
     wrong: [
       miss('Immediately obligate everything available to make the rate look healthy.', 'Forcing obligations to dress up the metric ignores whether the spending is justified and executable, and can create bad obligations.', 'Diagnose the cause before chasing the number.'),
-      miss('Assume any under-execution is harmless seasonal variation and move on.', 'The boss is asking precisely because it might be structural; dismissing it skips the diagnosis.', 'The question exists because the variance might be real.'),
+      miss('Classify the variance as normal seasonality before checking contracting or requirement timing.', 'The boss is asking precisely because it might be structural; dismissing it skips the diagnosis.', 'The question exists because the variance might be real.'),
       miss('Report the program as fully executing since the funds have not yet expired.', 'Funds not yet expired does not mean execution is healthy; the issue is whether they will be obligated in time and for real needs.', 'Time remaining is not the same as execution health.'),
     ],
     lesson: 'Under-execution can be benign (contract awards bunched later, predictable phasing) or structural (a requirement that cannot actually be obligated). The job is to classify the variance — timing, scope, contracting, or planning — and then decide whether funds are at genuine risk. Force-obligating to flatter the rate is the wrong move.',

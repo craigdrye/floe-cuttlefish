@@ -4138,7 +4138,7 @@ export const series79Questions: Question[] = makeQuestionBank('Career Skills', [
     correct: 'Pay interest in cash or in additional notes at its option each period',
     wrong: [
       miss('Convert the note to common stock', 'That is a convertible feature.', 'PIK ≠ convertible.'),
-      miss('Skip interest payments without default', 'PIK is payment-in-kind, not non-payment.', 'PIK pays via notes.'),
+      miss('Defer interest with no compensation to noteholders', 'PIK is payment-in-kind, not non-payment.', 'PIK pays via notes.'),
       miss('Pay only at maturity', 'PIK is interest method, not payment timing.', 'Interest method.'),
     ],
     lesson: 'PIK (Payment-In-Kind) toggle gives the issuer optionality each period: pay cash interest, or issue additional notes equal to the interest (typically at a slightly higher rate). Common in distressed or LBO mezzanine layers where cash preservation is critical. Pure PIK = always notes; toggle = optional.',

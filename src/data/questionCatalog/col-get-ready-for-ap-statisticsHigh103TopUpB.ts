@@ -287,7 +287,7 @@ export const colGetReadyForApStatisticsHigh103TopUpBQuestions: Question[] = make
     correct: 'Assign each student a number and use a random process so every group of 50 is equally likely to be chosen',
     wrong: [
       miss('Survey the first 50 students who walk into school', 'Early arrivers are not chosen by chance and may differ systematically.', 'Convenience selection is not random selection.'),
-      miss('Pick the 50 students with the highest grades', 'Selecting by a characteristic introduces bias and is not random.', 'Choosing by a trait is the opposite of random.'),
+      miss('Select the 50 students with the strongest grades so the sample is easier to compare', 'Selecting by a characteristic introduces bias and is not random.', 'Choosing by a trait is the opposite of random.'),
       miss('Let 50 volunteers sign up for the survey', 'Volunteers self-select and tend to differ from the population (voluntary response).', 'Self-selection is not the same as random selection.'),
     ],
     lesson: 'In a simple random sample of size n, every possible group of n individuals has an equal chance of being selected. Numbering the population and using a random mechanism achieves this. Convenience samples, samples chosen by a trait, and volunteer samples are not SRSs and are prone to bias.',

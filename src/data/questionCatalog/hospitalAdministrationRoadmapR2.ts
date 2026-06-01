@@ -1445,7 +1445,7 @@ export const hospitalAdministrationRoadmapR2Questions: Question[] = makeQuestion
         'Speed and experience interact; do not dismiss the drop as noise.',
       ),
       miss(
-        'Ignore HCAHPS because throughput is the only thing that affects payment',
+        'Prioritize throughput metrics alone because they seem more directly tied to payment',
         'HCAHPS carries real reimbursement weight within HVBP\'s person-and-community-engagement domain; dismissing it ignores money and a quality signal.',
         'Experience feeds HVBP payment; it is not free to ignore.',
       ),

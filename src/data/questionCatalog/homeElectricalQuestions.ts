@@ -693,7 +693,7 @@ export const homeElectricalQuestions: Question[] = makeQuestionBank('Career Skil
     wrong: [
       miss('Immediately replace it with a standard breaker', 'Swapping out the AFCI removes required arc protection and ignores a possible real fault.', 'Do not delete protection to stop trips. Investigate the cause first.'),
       miss('Tape the breaker so it cannot trip again', 'Defeating a breaker’s trip is extremely dangerous and removes all overcurrent protection.', 'Never disable a trip. The trip is the safety feature, not the problem.'),
-      miss('Assume it is always a defective breaker', 'Sometimes the breaker is at fault, but assuming so can hide a genuine arcing hazard.', 'Could be a real arc. Rule out wiring faults before blaming the device.'),
+      miss('Blame the AFCI device first because nuisance trips are possible', 'Sometimes the breaker is at fault, but assuming so can hide a genuine arcing hazard.', 'Could be a real arc. Rule out wiring faults before blaming the device.'),
     ],
     lesson: 'A tripping breaker, especially an AFCI or GFCI, is doing its job. While true nuisance trips exist, you should treat each trip as a possible real fault: a loose connection, damaged cable, or failing appliance. Disabling, taping, or downgrading the breaker removes protection that exists to prevent shocks and fires. Investigate, do not silence.',
     source,
