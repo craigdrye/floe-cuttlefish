@@ -8,6 +8,34 @@ import {
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/Chapter 1/i.test(chapter)) {
+    return `${title} is an economic-thinking building block. The useful answer is "${correct}"; focus on scarcity, tradeoffs, opportunity cost, and marginal reasoning before reaching for formulas.`
+  }
+  if (/Chapter 2/i.test(chapter)) {
+    return `${title} is about supply, demand, elasticity, or welfare. The useful answer is "${correct}"; ask whether the prompt changes a curve, moves along a curve, changes responsiveness, or creates surplus/shortage.`
+  }
+  if (/Chapter 3/i.test(chapter)) {
+    return `${title} is about consumers, costs, or firm decisions. The useful answer is "${correct}"; separate utility from cost, marginal from total, and explicit from implicit cost.`
+  }
+  if (/Chapter 4/i.test(chapter)) {
+    return `${title} is about market power or market failure. The useful answer is "${correct}"; compare competitive benchmarks with monopoly behavior, external spillovers, public-good problems, and tax incidence.`
+  }
+  if (/Chapter 5/i.test(chapter)) {
+    return `${title} is macro measurement vocabulary. The useful answer is "${correct}"; identify whether the question is measuring output, prices, unemployment, or the business-cycle cause of a labor-market change.`
+  }
+  if (/Chapter 6/i.test(chapter)) {
+    return `${title} is about fiscal policy, money, or monetary policy. The useful answer is "${correct}"; track whether the tool changes government budgets, bank reserves, interest rates, or aggregate demand.`
+  }
+  if (/Chapter 7/i.test(chapter)) {
+    return `${title} connects trade, exchange rates, growth, and macro graphs. The useful answer is "${correct}"; follow the relative-price or capacity change through to exports, imports, output, or employment.`
+  }
+  if (/Chapter 8/i.test(chapter)) {
+    return `${title} is AP exam synthesis vocabulary. The useful answer is "${correct}"; connect the definition to the graph, formula, or welfare effect the exam is likely to test.`
+  }
+  return `${title} is an AP Economics concept. The useful answer is "${correct}"; identify the model, incentive, or measurement idea before choosing.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -22,8 +50,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: scraped economics-adjacent rows plus AP Micro/Macro topic gaps. This is an authored Floe-native drill item, not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from AP Economics coverage',
 })
 
@@ -120,9 +147,9 @@ const _baseApEconomicsWorkoutGeneratedQuestions = makeQuestionBank('AP', [
   q(402036, 'Chapter 6: Fiscal Policy, Money, and Monetary Policy', 'Expansionary fiscal policy', 'Expansionary fiscal policy includes:', 'Increasing government spending or cutting taxes', [miss('Cutting government spending and raising taxes', 'That is contractionary.', 'Expansion raises aggregate demand.'), miss('Increasing reserve requirements only', 'That is monetary policy.', 'Fiscal uses spending/taxes.'), miss('Reducing money supply only', 'That is contractionary monetary policy.', 'Use government budget tools.')]),
   q(402037, 'Chapter 6: Fiscal Policy, Money, and Monetary Policy', 'Money functions', 'Money serves as medium of exchange, unit of account, and:', 'Store of value', [miss('Source of photosynthesis', 'Not economic function.', 'Recall the three functions.'), miss('Perfect guarantee against inflation', 'Money can lose value.', 'Store of value is one role.'), miss('Only a tax bill', 'Money is broader than taxes.', 'Use standard functions.')]),
   q(402038, 'Chapter 6: Fiscal Policy, Money, and Monetary Policy', 'Bank reserves', 'Bank reserves are:', 'Funds banks hold instead of lending out', [miss('Only consumer purchases', 'Reserves are bank-held funds.', 'Think vault cash or central bank deposits.'), miss('Imports minus exports', 'That is trade balance concept.', 'Banking system.'), miss('All government spending', 'Not reserves.', 'Funds held by banks.')]),
-  q(402039, 'Chapter 6: Fiscal Policy, Money, and Monetary Policy', 'Money multiplier', 'A lower reserve requirement tends to:', 'Increase the money multiplier', [miss('Decrease the money multiplier', 'Lower reserves allow more lending.', 'Less held back means larger expansion.'), miss('Eliminate banking', 'Banks still operate.', 'Use reserve ratio relationship.'), miss('Make GDP undefined', 'No.', 'Money multiplier changes.')]),
+  q(402039, 'Chapter 6: Fiscal Policy, Money, and Monetary Policy', 'Money multiplier', 'A lower reserve requirement tends to:', 'Increase the money multiplier', [miss('Decrease the money multiplier', 'Lower reserves allow more lending.', 'Less held back means larger expansion.'), miss('Eliminate banking', 'Banks still operate.', 'Use reserve ratio relationship.'), miss('Make GDP undefined', 'GDP is measured separately; the reserve requirement changes potential deposit expansion.', 'Money multiplier changes.')]),
   q(402040, 'Chapter 6: Fiscal Policy, Money, and Monetary Policy', 'Expansionary monetary policy', 'Expansionary monetary policy usually aims to:', 'Lower interest rates and increase aggregate demand', [miss('Raise interest rates and lower aggregate demand', 'That is contractionary.', 'Expansion makes borrowing easier.'), miss('Ban all lending', 'That would not expand money/credit.', 'Use lower rates.'), miss('Fix every price individually', 'Monetary policy affects economy-wide conditions.', 'Central bank tools.')]),
-  q(402041, 'Chapter 6: Fiscal Policy, Money, and Monetary Policy', 'Open market purchase', 'When a central bank buys government bonds, bank reserves usually:', 'Increase', [miss('Decrease', 'Purchases inject money into banking system.', 'Central bank pays for bonds.'), miss('Become zero automatically', 'No.', 'Reserves rise.'), miss('Turn into tariffs', 'Tariffs are trade policy.', 'Open market operations affect reserves.')]),
+  q(402041, 'Chapter 6: Fiscal Policy, Money, and Monetary Policy', 'Open market purchase', 'When a central bank buys government bonds, bank reserves usually:', 'Increase', [miss('Decrease', 'Purchases inject money into banking system.', 'Central bank pays for bonds.'), miss('Become zero automatically', 'A bond purchase adds reserves to the banking system rather than wiping them out.', 'Reserves rise.'), miss('Turn into tariffs', 'Tariffs are trade policy.', 'Open market operations affect reserves.')]),
   q(402042, 'Chapter 7: Growth, Open Economy, Cross-Graph Reasoning', 'Tariff', 'A tariff is:', 'A tax on imports', [miss('A subsidy to exports only', 'Tariffs tax imports.', 'Trade barrier.'), miss('A limit on quantity imported', 'That is a quota.', 'Tariff is tax.'), miss('A floating exchange rate', 'That is currency regime.', 'Use import tax.')]),
   q(402043, 'Chapter 7: Growth, Open Economy, Cross-Graph Reasoning', 'Quota', 'An import quota is:', 'A legal limit on the quantity imported', [miss('A tax per imported unit', 'That is a tariff.', 'Quota is quantity limit.'), miss('A central bank bond purchase', 'That is monetary policy.', 'Trade policy.'), miss('A measure of inflation', 'Not quota.', 'Use import quantity cap.')]),
   q(402044, 'Chapter 7: Growth, Open Economy, Cross-Graph Reasoning', 'Exchange rate appreciation', 'If the dollar appreciates, U.S. imports become:', 'Cheaper for U.S. buyers', [miss('More expensive for U.S. buyers', 'A stronger dollar buys more foreign currency.', 'Imports cheaper.'), miss('Impossible to buy', 'Appreciation does not ban trade.', 'It changes relative prices.'), miss('Unrelated to currency', 'Exchange rates directly affect import prices.', 'Stronger domestic currency.')]),
