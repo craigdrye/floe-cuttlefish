@@ -76,20 +76,39 @@ function mathFeedback(item, label, index) {
 
   if (wrongValue !== null && correctValue !== null && wrongValue !== correctValue) {
     if (Math.sign(wrongValue) !== Math.sign(correctValue) && correctValue !== 0) {
+      const signContext = /slope|line|coordinate/.test(context)
+        ? 'line or slope direction'
+        : /quadratic|root|x-axis|intersect|factor/.test(context)
+          ? 'root, intercept, or coefficient sign'
+          : 'subtraction or equation direction'
       return [
-        `The value ${display} has the wrong sign compared with ${correctDisplay}, usually from reversing a subtraction, slope direction, or equation move.`,
+        `The value ${display} has the wrong sign compared with ${correctDisplay}, usually from reversing the ${signContext}.`,
         'Track signs separately before simplifying the final value.',
       ]
     }
     if (Math.abs(wrongValue) < Math.abs(correctValue)) {
+      const missingStep = /percent|rate|ratio|proportion/.test(context)
+        ? 'percent base or rate conversion'
+        : /area|volume|circle|rectangle|triangle/.test(context)
+          ? 'second dimension or full figure relationship'
+          : /function|exponent|quadratic/.test(context)
+            ? 'exponent, coefficient, or final substitution step'
+            : 'required operation'
       return [
-        `The value ${display} is too small, which usually means one factor, interval, side length, or repeated step was left out.`,
+        `The value ${display} is too small compared with ${correctDisplay}, which usually means the ${missingStep} was left out.`,
         'Check whether the answer needs the full quantity, not only one part of it.',
       ]
     }
     if (Math.abs(wrongValue) > Math.abs(correctValue)) {
+      const extraStep = /percent|rate|ratio|proportion/.test(context)
+        ? 'base, rate, or total'
+        : /area|volume|circle|rectangle|triangle/.test(context)
+          ? 'length, area, or scale factor'
+          : /function|exponent|quadratic/.test(context)
+            ? 'coefficient, exponent, or solution'
+            : 'operation'
       return [
-        `The value ${display} is too large, which usually means a rate, area, exponent, or total was applied one time too many.`,
+        `The value ${display} is too large compared with ${correctDisplay}, which usually means the ${extraStep} was applied one time too many.`,
         'Sanity-check the size of the answer against the setup before choosing it.',
       ]
     }
