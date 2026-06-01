@@ -8,6 +8,28 @@ import {
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/limits|continuity/i.test(chapter)) {
+    return `${title} is about local behavior near an input. The useful answer is "${correct}"; check what the expression or graph approaches, and remember that continuity means the approached value and the actual value line up.`
+  }
+  if (/derivative|applications|modeling/i.test(chapter)) {
+    return `${title} is about rate of change. The useful answer is "${correct}"; identify whether the problem asks for slope, a rule for differentiating, a sign pattern, or a model built from changing quantities.`
+  }
+  if (/integration|accumulation/i.test(chapter)) {
+    return `${title} is about accumulation. The useful answer is "${correct}"; use antiderivatives, signed area, units, or a substitution clue to connect tiny pieces into a total.`
+  }
+  if (/differential equations/i.test(chapter)) {
+    return `${title} is about functions defined by their rates of change. The useful answer is "${correct}"; separate variables, use initial conditions to pin down constants, and read slope fields as local derivative information.`
+  }
+  if (/sequences|series/i.test(chapter)) {
+    return `${title} is about infinite lists and sums. The useful answer is "${correct}"; first ask whether terms shrink to zero, then choose the convergence test that matches the series pattern.`
+  }
+  if (/parametric|polar|vectors|multivariable/i.test(chapter)) {
+    return `${title} extends calculus beyond one input. The useful answer is "${correct}"; track the coordinate system, direction, region, constraint, or variable being held fixed before applying the rule.`
+  }
+  return `${title} is a calculus concept. The useful answer is "${correct}"; connect the algebraic rule to the graph, rate, area, or model the question is really asking about.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -22,8 +44,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: Numbas and WeBWorK calculus clusters. This is an authored Floe-native drill item, not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from Numbas/WeBWorK coverage',
 })
 
@@ -106,7 +127,7 @@ const _baseCalculusWorkoutGeneratedQuestions = makeQuestionBank('Mathematics', [
   q(396016, 'Applications of Derivatives', 'Critical point', 'A critical point can occur where:', 'f\'(x) = 0 or f\'(x) is undefined', [
     miss('f(x) = 0 only', 'Zeros of the function are x-intercepts, not necessarily critical points.', 'Critical points concern the derivative.'),
     miss('f\'(x) = 1 only', 'Derivative equal to 1 is not the standard critical condition.', 'Look for horizontal or undefined tangent.'),
-    miss('The graph is colored red', 'Graph color is irrelevant.', 'Use derivative behavior.'),
+    miss('The function value is simply high on the graph', 'A high output value alone is not a critical-point condition; the derivative behavior matters.', 'Use derivative behavior.'),
   ]),
   q(396017, 'Applications of Derivatives', 'Increasing interval', 'If f\'(x) > 0 on an interval, f is:', 'Increasing on that interval', [
     miss('Decreasing on that interval', 'Negative derivative indicates decreasing.', 'Positive slope means rising.'),
@@ -226,7 +247,7 @@ const _baseCalculusWorkoutGeneratedQuestions = makeQuestionBank('Mathematics', [
   q(396040, 'Vectors', 'Gradient meaning', 'The gradient of a scalar function points in the direction of:', 'Steepest increase', [
     miss('Steepest decrease only', 'The negative gradient points steepest downhill.', 'Gradient itself points uphill.'),
     miss('Zero change always', 'Gradient can be nonzero.', 'It shows fastest local increase.'),
-    miss('Random rotation', 'Rotation is curl language.', 'Gradient is about scalar fields.'),
+    miss('Local spinning of a vector field', 'That is curl language; the gradient organizes change in a scalar field.', 'Gradient is about scalar fields.'),
   ]),
   q(396041, 'Multivariable', 'Partial derivative', 'A partial derivative with respect to x treats other independent variables as:', 'Constants', [
     miss('Variables to differentiate at the same time', 'That would be total differentiation.', 'Partial means one variable changes.'),
@@ -245,7 +266,7 @@ const _baseCalculusWorkoutGeneratedQuestions = makeQuestionBank('Mathematics', [
   ]),
   q(396044, 'Multivariable', 'Lagrange multipliers', 'Lagrange multipliers are used for:', 'Optimization subject to constraints', [
     miss('Factoring quadratics only', 'That is algebra, not Lagrange multipliers.', 'Constraints are the key clue.'),
-    miss('Finding truth tables', 'That belongs to logic.', 'This is multivariable optimization.'),
+    miss('Testing every possible input without using the constraint equation', 'Lagrange multipliers use the constraint directly instead of brute-force guessing.', 'This is multivariable optimization.'),
     miss('Computing simple averages only', 'Averages do not require Lagrange multipliers.', 'Use when a constraint limits choices.'),
   ]),
   q(396045, 'Chapter 6: Differential Equations and Modeling', 'Slope field', 'A slope field visualizes:', 'The derivative dy/dx at many points', [
@@ -254,7 +275,7 @@ const _baseCalculusWorkoutGeneratedQuestions = makeQuestionBank('Mathematics', [
     miss('A histogram of data', 'Histograms display distributions.', 'Slope fields display rates.'),
   ]),
   q(396046, 'Modeling', 'Related rates', 'Related rates problems usually connect variables by:', 'A shared equation differentiated with respect to time', [
-    miss('A truth table', 'Truth tables are not calculus modeling tools.', 'Use an equation like area or volume.'),
+    miss('A list of true-or-false cases with no changing quantities', 'Related rates need variables tied by an equation and changing with time.', 'Use an equation like area or volume.'),
     miss('Ignoring time completely', 'Rates usually involve time.', 'Differentiate both sides with respect to t.'),
     miss('Only factoring constants', 'Factoring may help algebra, but the method is time differentiation.', 'Look for changing quantities.'),
   ]),
@@ -266,7 +287,7 @@ const _baseCalculusWorkoutGeneratedQuestions = makeQuestionBank('Mathematics', [
   q(396048, 'Modeling', 'Newton method', 'Newton\'s method uses tangent lines to approximate:', 'Roots of an equation', [
     miss('Only areas under curves', 'Area is integration, not Newton iteration.', 'Newton targets f(x)=0.'),
     miss('Only maximum volume boxes', 'Optimization is a different use of derivatives.', 'Newton uses x - f/f\'.'),
-    miss('Only truth values', 'This is numerical calculus, not logic.', 'It iterates toward zeros.'),
+    miss('Whether a statement is true or false without solving an equation', 'Newton’s method is numerical calculus for approximating roots, not logical truth evaluation.', 'It iterates toward zeros.'),
   ]),
   q(396049, 'Concept Checks', 'Differentiability implies', 'If a function is differentiable at a point, then it is also:', 'Continuous at that point', [
     miss('Discontinuous at that point', 'Differentiability is stronger than continuity.', 'No sharp break or hole is allowed.'),
