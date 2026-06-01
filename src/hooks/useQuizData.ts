@@ -18,6 +18,7 @@ import {
   shuffledQuestions,
 } from '../lib/quizRuntime'
 import { buildLessonsForChapter } from '../lib/lessonGrouping'
+import type { Question } from '../data/questionCatalog/types'
 
 const MAP_BACKGROUNDS = [
   '/assets/reef/reef-world-scroll_long1.png',
@@ -98,6 +99,8 @@ export function useQuizData() {
     selectedLesson,
     chapterShuffleSeed,
     sessionToken,
+    misconceptionArtifacts,
+    repeatedQuestions,
   } = useStore()
   const profileAnswers = user?.questionnaireAnswers ?? {}
   
@@ -189,12 +192,30 @@ export function useQuizData() {
 
   const reviewQuestions = useMemo(() => {
     const now = new Date()
-    return courseQuestions.filter(q => {
+    const byId = new Map(courseQuestions.map((q) => [q.id, q]))
+    const queued: Question[] = []
+    const seen = new Set<number>()
+    const add = (questionId: number) => {
+      if (seen.has(questionId)) return
+      const question = byId.get(questionId)
+      if (!question) return
+      seen.add(questionId)
+      queued.push(question)
+    }
+
+    for (const item of misconceptionArtifacts) {
+      if (!item.clearedAt) add(item.questionId)
+    }
+
+    courseQuestions.forEach(q => {
       const review = progress.reviews[q.id]
-      if (!review) return false
-      return new Date(review.nextReviewDate) <= now
+      if (review && new Date(review.nextReviewDate) <= now) add(q.id)
     })
-  }, [courseQuestions, progress.reviews])
+
+    repeatedQuestions.forEach(add)
+
+    return queued
+  }, [courseQuestions, misconceptionArtifacts, progress.reviews, repeatedQuestions])
 
   const hardQuestions = useMemo(() => {
     const hard = courseQuestions.filter((q) => defaultDifficultyFor(q, selectedAge) >= 4)

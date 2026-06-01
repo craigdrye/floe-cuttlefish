@@ -63,6 +63,7 @@ export function MapScreen() {
     progress, mode, setMode, setIndex, setSelectedAnswerId,
     setShowHint, setScreen, setSelectedTrack, pendingStageCelebration, setPendingStageCelebration,
     selectedChapter, setSelectedChapter,
+    misconceptionArtifacts, bossWins,
   } = useStore()
 
   const {
@@ -196,6 +197,9 @@ export function MapScreen() {
   const totalAnswered = chapterStats.reduce((sum, c) => sum + c.attempted, 0)
   const totalQuestions = chapterStats.reduce((sum, c) => sum + c.totalQuestions, 0)
   const overallPct = totalQuestions > 0 ? Math.round((totalAnswered / totalQuestions) * 100) : 0
+  const activeMisconceptions = misconceptionArtifacts.filter((item) => !item.clearedAt).length
+  const retiredMisconceptions = misconceptionArtifacts.filter((item) => item.clearedAt).length
+  const trackBossWins = bossWins.filter((boss) => boss.trackId === selectedTrackInfo.id).length
 
   const goBack = () => {
     setSelectedTrack(null)
@@ -266,6 +270,12 @@ export function MapScreen() {
           <p className="eyebrow">Season 1 &middot; {selectedTrackInfo.title}</p>
           <h2>{selectedTrackInfo.id === 'quant' ? 'Survive the interview reef' : 'Chapter path'}</h2>
           <p>{totalAnswered}/{totalQuestions} answered &middot; {overallPct}% answered</p>
+          <div className="reef-status-row" aria-label="Reef learning status">
+            <span className="reef-status-pill">{activeMisconceptions} traps shelved</span>
+            <span className="reef-status-pill">{retiredMisconceptions} retired</span>
+            <span className="reef-status-pill">{reviewQuestions.length} due review</span>
+            <span className="reef-status-pill">{trackBossWins} bosses</span>
+          </div>
         </div>
         <div className="chapter-path-header-ring">
           <div className="ring" style={{ '--score': `${overallPct}%` } as React.CSSProperties}>

@@ -882,23 +882,42 @@ function dedupeQuestionsByPrompt(questions: Question[]) {
  * The numeric scale matches the canonical `Question.difficulty` field:
  *   1 = entry-friendly, 5 = mastery-level integration.
  */
+export function defaultChallengeRatingFor(question: Question, ageGroup: AgeGroup): 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 {
+  if (question.challengeRating) return question.challengeRating
+  if (question.difficulty) return Math.max(1, Math.min(10, question.difficulty * 2)) as 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+
+  const context = `${question.topic} ${question.chapter} ${question.title} ${question.prompt}`.toLowerCase()
+  let score = 5
+
+  if (ageGroup === 'preschool' || ageGroup === 'primary') score = 2
+  else if (ageGroup === 'high') score = 4
+  else if (ageGroup === 'university') score = 5
+  else if (ageGroup === 'career' || ageGroup === 'career-hopper') score = 6
+
+  if (/\b(capstone|boss|stretch|advanced|proof|derive|synthesis|case|scenario|interview|exam)\b/i.test(context)) score += 2
+  if (/\b(compare|evaluate|infer|diagnose|design|explain why|best response|most likely)\b/i.test(context)) score += 1
+  if (/\b(definition|identify|which is|what is|refers to|includes)\b/i.test(context)) score -= 1
+  if (question.answers.length >= 5) score += 1
+  if ((question.setup?.length ?? 0) > 0 || question.prompt.length > 220) score += 1
+
+  return Math.max(1, Math.min(10, score)) as 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+}
+
 export function defaultDifficultyFor(question: Question, ageGroup: AgeGroup): 1 | 2 | 3 | 4 | 5 {
   if (question.difficulty) return question.difficulty
-  if (question.chapter && /\bcapstone\b/i.test(question.chapter)) return 5
-  switch (ageGroup) {
-    case 'preschool':
-    case 'primary':
-      return 2
-    case 'high':
-      return 3
-    case 'university':
-    case 'career':
-    case 'career-hopper':
-    case 'nerd':
-      return 3
-    default:
-      return 3
+  if (question.challengeRating) {
+    if (question.challengeRating <= 2) return 1
+    if (question.challengeRating <= 4) return 2
+    if (question.challengeRating <= 6) return 3
+    if (question.challengeRating <= 8) return 4
+    return 5
   }
+  const inferred = defaultChallengeRatingFor(question, ageGroup)
+  if (inferred <= 2) return 1
+  if (inferred <= 4) return 2
+  if (inferred <= 6) return 3
+  if (inferred <= 8) return 4
+  return 5
 }
 
 /**
@@ -918,15 +937,10 @@ export function defaultDifficultyFor(question: Question, ageGroup: AgeGroup): 1 
  * the same session never reshuffles mid-flight, but the next session
  * (different seed) sees a different sequence.
  *
- * Graceful fallback: if every question has no `difficulty` field *and*
- * the bucketing collapses to a single bucket (e.g. all default to 3),
- * we return a plain `shuffledQuestions(...)` over the input so today's
- * behaviour is preserved for un-tagged tracks.
- *
- * Opt-in semantics: the adaptive ordering only kicks in when at least
- * one question carries an explicit `Question.difficulty`. Tracks with no
- * tags fall back to the seeded shuffle (which is what callers should
- * use to replace `index % activeSet.length` cycling).
+ * Graceful fallback: if the bucketing collapses to a single bucket, we return
+ * a plain `shuffledQuestions(...)` over the input so uniform tracks still feel
+ * fresh. Otherwise, explicit `difficulty`/`challengeRating` and the inferred
+ * challenge heuristic both feed the ramp.
  */
 export function buildAdaptiveOrder(
   questions: Question[],
@@ -934,13 +948,6 @@ export function buildAdaptiveOrder(
   ageGroup: AgeGroup,
 ): Question[] {
   if (questions.length === 0) return []
-
-  const hasExplicitDifficulty = questions.some((q) => typeof q.difficulty === 'number')
-  if (!hasExplicitDifficulty) {
-    // No track-level difficulty data — fall back to a session-seeded shuffle.
-    // Same surface area, no daily seed, no deterministic order across sessions.
-    return shuffledQuestions(questions, sessionSeed)
-  }
 
   // Bucket by canonical {easy=1-2, medium=3, hard=4-5}.
   const easy: Question[] = []

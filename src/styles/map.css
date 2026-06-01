@@ -1031,6 +1031,25 @@
   color: #52726a;
   font-weight: 700;
 }
+.reef-status-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+.reef-status-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 9px;
+  border-radius: var(--r-full);
+  border: 1px solid rgba(31,122,98,0.16);
+  background: rgba(255,255,255,0.58);
+  color: #14584d;
+  font-size: 11px;
+  font-weight: 900;
+  white-space: nowrap;
+}
 .chapter-path-header-ring .ring {
   width: 52px;
   height: 52px;

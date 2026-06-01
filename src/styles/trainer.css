@@ -421,6 +421,7 @@
   color: var(--ocean-deep);
   line-height: 1.45;
 }
+.challenge-chip,
 .difficulty-chip {
   display: inline-flex;
   width: fit-content;
@@ -433,6 +434,76 @@
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+.challenge-chip {
+  margin-right: 6px;
+  background: rgba(46,196,182,0.16);
+  color: #14584d;
+  border: 1px solid rgba(31,122,98,0.18);
+}
+.challenge-chip.challenge-easy {
+  background: rgba(16,185,129,0.12);
+  color: #047857;
+}
+.challenge-chip.challenge-medium {
+  background: rgba(251,191,36,0.14);
+  color: #92400e;
+}
+.challenge-chip.challenge-hard {
+  background: rgba(244,114,182,0.14);
+  color: #9d174d;
+}
+
+.learn-primer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 12px;
+  padding: 12px 14px;
+  border-radius: var(--r-md);
+  border: 1px solid rgba(31,122,98,0.16);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(46,196,182,0.12), transparent 45%),
+    linear-gradient(135deg, rgba(255,255,255,0.72), rgba(236,246,243,0.46));
+  box-shadow: 0 8px 22px rgba(8,33,48,0.05);
+}
+.learn-primer div {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+.learn-primer span {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--reef-teal);
+}
+.learn-primer strong {
+  color: var(--ocean-deep);
+  font-size: 14px;
+}
+.learn-primer p {
+  margin: 0;
+  color: #496b62;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.learn-primer button {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 11px;
+  border-radius: var(--r-full);
+  border: 1px solid rgba(31,122,98,0.18);
+  background: rgba(255,255,255,0.64);
+  color: #14584d;
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 .question-media-grid {
   display: grid;
@@ -912,6 +983,14 @@
 .museum-capture.cleared span {
   color: #047857;
 }
+.museum-capture small {
+  display: block;
+  margin-top: 4px;
+  color: #6a5417;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+}
 .misconception {
   padding: 10px 14px;
   border-radius: var(--r-sm);
@@ -944,6 +1023,8 @@
   .dive-cockpit-copy h2 { font-size: 18px; }
   .ritual-strip { grid-template-columns: 1fr; }
   .adaptive-strip { align-items: stretch; flex-direction: column; }
+  .learn-primer { align-items: stretch; flex-direction: column; }
+  .learn-primer button { justify-content: center; }
   .actions-toolbar .secondary { justify-content: flex-start; }
   .calculator-keypad { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .calculator-key { min-height: 30px; font-size: 13px; }

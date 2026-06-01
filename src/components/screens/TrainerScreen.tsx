@@ -11,6 +11,7 @@ import { calculateExpression } from '../../lib/mathUtils'
 import { playComboSound, playRewardVoiceSound, playSuccessSound, playWrongSound } from '../../lib/audio'
 import { bossRewardFor, bossTitleFor } from '../../lib/rewardSystem'
 import { buildLearningSupport } from '../../lib/learningSupport'
+import { defaultChallengeRatingFor } from '../../lib/quizRuntime'
 import type { Answer, Misconception, Question } from '../../data/questionCatalog/types'
 
 function questionRarity(question: { kind: string; xp: number }): string {
@@ -202,6 +203,7 @@ export function TrainerScreen() {
     questionQualityRatings, setQuestionQualityRating,
     showLesson, setShowLesson,
     selectedLesson, setSelectedLesson,
+    selectedAge,
   } = useStore()
 
   // Back navigation: if the player drilled in through a chapter sub-map
@@ -289,6 +291,9 @@ export function TrainerScreen() {
   const showQualityControls = showQuestionQualityControls()
   const selectedMisconceptions = answerMisconceptions(question, selectedAnswer)
   const learningSupport = useMemo(() => buildLearningSupport(question, selectedAnswer), [question, selectedAnswer])
+  const challengeRating = defaultChallengeRatingFor(question, selectedAge)
+  const learnPrimerText = learningSupport.lessonParagraphs[0]
+  const showLearnPrimer = mode === 'daily' && index === 0 && !selectedAnswerId && Boolean(learnPrimerText)
 
   useEffect(() => {
     if (!showBossIntro) return
@@ -547,10 +552,26 @@ export function TrainerScreen() {
               </div>
             </div>
 
+            {showLearnPrimer && (
+              <div className="learn-primer">
+                <div>
+                  <span>Before you dive</span>
+                  <strong>{question.title}</strong>
+                  <p>{learnPrimerText}</p>
+                </div>
+                <button type="button" onClick={() => setShowLesson(true)}>
+                  <BookOpen size={15} /> Deep dive
+                </button>
+              </div>
+            )}
+
             <div className="prompt-box">
               <BookOpen size={19} />
               <div className="prompt-copy">
                 <p className="question-prompt">{question.prompt}</p>
+                <span className={`challenge-chip challenge-${challengeRating >= 8 ? 'hard' : challengeRating >= 5 ? 'medium' : 'easy'}`}>
+                  Challenge {challengeRating}/10
+                </span>
                 {question.difficultyTier && (
                   <span className={`difficulty-chip difficulty-${question.difficultyTier}`}>{question.difficultyTier}</span>
                 )}
@@ -699,6 +720,9 @@ export function TrainerScreen() {
                       <div className="museum-capture">
                         <span>Captured for review</span>
                         <strong>This misconception is now on your shelf.</strong>
+                        <small>
+                          You chose {selectedAnswer.label}. Correct path: {question.answers.find((answer) => answer.correct)?.label ?? 'the best-matching answer'}.
+                        </small>
                       </div>
                       {selectedMisconceptions.map((item, i) => (
                         <div key={i} className="misconception">
