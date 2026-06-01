@@ -326,6 +326,13 @@ function distractorFeedback(item, label, index) {
     : mathFeedback(item, label, index)
 }
 
+function contextualizeFlaw(item, flaw) {
+  const cue = promptCue(item)
+  if (!cue) return flaw
+  if (flaw.includes(cue)) return flaw
+  return `${flaw} In this item, anchor the choice to: ${cue}.`
+}
+
 function wrongTriples(item) {
   const correct = correctChoiceText(item).toLowerCase()
   const seen = new Set([correct])
@@ -340,7 +347,7 @@ function wrongTriples(item) {
     })
     .map((label, index) => {
       const [flaw, reframe] = distractorFeedback(item, label, index)
-      return [label, flaw, reframe]
+      return [label, contextualizeFlaw(item, flaw), reframe]
     })
 }
 
