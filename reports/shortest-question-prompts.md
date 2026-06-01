@@ -1,6 +1,6 @@
 # Shortest Wired Question Prompts
 
-Generated on 2026-06-01T14:27:54.490Z.
+Generated on 2026-06-01T14:30:25.275Z.
 
 Only questions reachable through the app course catalog builders are included. These are the highest-priority prompts to review first because short fragments often fail to teach the learner what they are being asked to reason about.
 
