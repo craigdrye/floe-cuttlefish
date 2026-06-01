@@ -54,6 +54,15 @@ function extractEitherOrItems(lesson: string, variable: string) {
   return [`$${variable} = ${match[1].trim()}$`, `$${variable} = ${match[2].trim()}$`]
 }
 
+function extractAnyEitherOrItems(lesson?: string) {
+  if (!lesson) return []
+  const normalized = lesson.replace(/\s+/g, ' ')
+  const match = normalized.match(/\$([A-Za-z])\s*=\s*([^$]+)\$\s+or\s+\$\1\s*=\s*([^$]+)\$/)
+  if (!match) return []
+  const variable = match[1]
+  return [`$${variable} = ${match[2].trim()}$`, `$${variable} = ${match[3].trim()}$`]
+}
+
 function extractBothItems(lesson?: string) {
   if (!lesson) return []
   const normalized = lesson.replace(/\s+/g, ' ')
@@ -92,7 +101,37 @@ export function repairSparseImportedQuestion(question: Question): Question {
   if (question.source !== 'Khan Academy') return question
   if (question.answers.length > 1) return question
 
-  const prompt = question.prompt.replace(/\s+Which answer is correct\?$/i, '').trim()
+  const prompt = question.prompt
+    .replace(/\s+Which answer is correct\?$/i, '')
+    .replace(/\s+Which option is correct\?$/i, '')
+    .trim()
+  const bulletItems = extractBulletItems(question.lesson)
+  const eitherOrItems = extractAnyEitherOrItems(question.lesson)
+  const bothItems = extractBothItems(question.lesson)
+
+  if (bulletItems.length >= 2 && /which\b.+\b(expressions?|equations?|polynomials?)\b/i.test(prompt)) {
+    return buildListRepair(
+      question,
+      `${prompt.replace(/\*+/g, '').replace(/\s+/g, ' ').trim()} Which answer lists every correct option?`,
+      bulletItems,
+    )
+  }
+
+  if (eitherOrItems.length >= 2 && /\b(solution|solutions|values?)\b/i.test(prompt)) {
+    return buildListRepair(
+      question,
+      `${prompt.replace(/\*+/g, '').replace(/\s+/g, ' ').trim()} Which answer lists every solution?`,
+      eitherOrItems,
+    )
+  }
+
+  if (bothItems.length >= 2 && /sum|sigma|notation/i.test(prompt)) {
+    return buildListRepair(
+      question,
+      `${prompt.replace(/\*+/g, '').replace(/\s+/g, ' ').trim()} Which answer lists every matching notation?`,
+      bothItems,
+    )
+  }
 
   if (prompt === '**Which expressions are equivalent to $2(-6c+3)+4c$ ?**') {
     return buildListRepair(

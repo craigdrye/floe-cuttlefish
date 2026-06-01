@@ -1,304 +1,5 @@
 [
   {
-    "catalogKey": "primary",
-    "trackId": "khanacademy",
-    "total": 1530,
-    "flagged": 14,
-    "recoverable": 0,
-    "quarantined": 14,
-    "playable": 1516,
-    "flags": {
-      "insufficient-answer-choices": 14
-    },
-    "actions": {
-      "quarantine": 14
-    },
-    "chapters": {
-      "Equivalent expressions: negative numbers & distribution": 3,
-      "Negative signs in fractions": 3,
-      "Equations with square roots & cube roots": 2,
-      "Rational exponents challenge": 2,
-      "Summation notation": 2,
-      "Equations with square roots: decimals & fractions": 1,
-      "Polynomials intro": 1
-    },
-    "examples": [
-      {
-        "id": 1.0087167715059035e+24,
-        "title": "Rational exponents challenge",
-        "chapter": "Rational exponents challenge",
-        "prompt": "Which expressions are equivalent to math ? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 2,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.0068453155299538e+21,
-        "title": "Negative signs in fractions",
-        "chapter": "Negative signs in fractions",
-        "prompt": "Which of the following expressions are equivalent to math ? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.0068453155299538e+22,
-        "title": "Negative signs in fractions",
-        "chapter": "Negative signs in fractions",
-        "prompt": "Which of the following expressions are equivalent to math ? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.0074964731653293e+28,
-        "title": "Equations with square roots: decimals & fractions",
-        "chapter": "Equations with square roots: decimals & fractions",
-        "prompt": "Which of the math values are solutions to the following equation? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.0009261495198463e+22,
-        "title": "Summation notation",
-        "chapter": "Summation notation",
-        "prompt": "This Summation notation question is about Summation notation. Consider the sum math . Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.0009261495198463e+22,
-        "title": "Summation notation",
-        "chapter": "Summation notation",
-        "prompt": "This Summation notation question is about Summation notation. Consider the sum math . Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.0083281620656911e+28,
-        "title": "Rational exponents challenge",
-        "chapter": "Rational exponents challenge",
-        "prompt": "This Rational exponents challenge question is about Rational exponents challenge. Which expressions are equivalent to math ? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 2,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.0068453155299538e+21,
-        "title": "Negative signs in fractions",
-        "chapter": "Negative signs in fractions",
-        "prompt": "Which of the following expressions are equivalent to math ? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.006932974530875e+23,
-        "title": "Equations with square roots & cube roots",
-        "chapter": "Equations with square roots & cube roots",
-        "prompt": "Which of the following equations has math as a possible value of math ? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.006932974530875e+23,
-        "title": "Equations with square roots & cube roots",
-        "chapter": "Equations with square roots & cube roots",
-        "prompt": "Which of the following equations has math as a possible value of math ? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.0050436256164493e+21,
-        "title": "Polynomials intro",
-        "chapter": "Polynomials intro",
-        "prompt": "This Polynomials intro question is about Polynomials intro. Which polynomials are in standard form? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 2,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.0004676075274951e+28,
-        "title": "Equivalent expressions: negative numbers & distribution",
-        "chapter": "Equivalent expressions: negative numbers & distribution",
-        "prompt": "This Equivalent expressions: negative numbers & distribution question is about Equivalent expressions: negative numbers & distribution. Which expressions are equivalent to math ? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      }
-    ],
-    "flaggedPct": 1
-  },
-  {
-    "catalogKey": "primary",
-    "trackId": "col-class-6-math",
-    "total": 593,
-    "flagged": 6,
-    "recoverable": 0,
-    "quarantined": 6,
-    "playable": 587,
-    "flags": {
-      "insufficient-answer-choices": 6
-    },
-    "actions": {
-      "quarantine": 6
-    },
-    "chapters": {
-      "Equivalent expressions: negative numbers & distribution": 3,
-      "Equations with square roots & cube roots": 2,
-      "Equations with square roots: decimals & fractions": 1
-    },
-    "examples": [
-      {
-        "id": 1.0074964731653293e+28,
-        "title": "Equations with square roots: decimals & fractions",
-        "chapter": "Equations with square roots: decimals & fractions",
-        "prompt": "Which of the math values are solutions to the following equation? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.006932974530875e+23,
-        "title": "Equations with square roots & cube roots",
-        "chapter": "Equations with square roots & cube roots",
-        "prompt": "Which of the following equations has math as a possible value of math ? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.006932974530875e+23,
-        "title": "Equations with square roots & cube roots",
-        "chapter": "Equations with square roots & cube roots",
-        "prompt": "Which of the following equations has math as a possible value of math ? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.0004676075274951e+28,
-        "title": "Equivalent expressions: negative numbers & distribution",
-        "chapter": "Equivalent expressions: negative numbers & distribution",
-        "prompt": "This Equivalent expressions: negative numbers & distribution question is about Equivalent expressions: negative numbers & distribution. Which expressions are equivalent to math ? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      },
-      {
-        "id": 1.0024270755468993e+21,
-        "title": "Equivalent expressions: negative numbers & distribution",
-        "chapter": "Equivalent expressions: negative numbers & distribution",
-        "prompt": "This Equivalent expressions: negative numbers & distribution question is about Equivalent expressions: negative numbers & distribution. Which expressions are equivalent to math ? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      },
-      {
-        "id": 100242707554689930000,
-        "title": "Equivalent expressions: negative numbers & distribution",
-        "chapter": "Equivalent expressions: negative numbers & distribution",
-        "prompt": "This Equivalent expressions: negative numbers & distribution question is about Equivalent expressions: negative numbers & distribution. Which expressions are equivalent to math ? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      }
-    ],
-    "flaggedPct": 1
-  },
-  {
-    "catalogKey": "primary",
-    "trackId": "col-class-4-math",
-    "total": 351,
-    "flagged": 1,
-    "recoverable": 0,
-    "quarantined": 1,
-    "playable": 350,
-    "flags": {
-      "insufficient-answer-choices": 1
-    },
-    "actions": {
-      "quarantine": 1
-    },
-    "chapters": {
-      "Equations with square roots: decimals & fractions": 1
-    },
-    "examples": [
-      {
-        "id": 1.0074964731653293e+28,
-        "title": "Equations with square roots: decimals & fractions",
-        "chapter": "Equations with square roots: decimals & fractions",
-        "prompt": "Which of the math values are solutions to the following equation? Which option is correct?",
-        "flags": [
-          "insufficient-answer-choices"
-        ],
-        "reviewStatus": "quarantined",
-        "challengeRating": 3,
-        "action": "quarantine"
-      }
-    ],
-    "flaggedPct": 0
-  },
-  {
     "catalogKey": "career",
     "trackId": "aigp",
     "total": 200,
@@ -2932,12 +2633,40 @@
   },
   {
     "catalogKey": "primary",
+    "trackId": "col-class-4-math",
+    "total": 351,
+    "flagged": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "playable": 351,
+    "flags": {},
+    "actions": {},
+    "chapters": {},
+    "examples": [],
+    "flaggedPct": 0
+  },
+  {
+    "catalogKey": "primary",
     "trackId": "col-class-5-math",
     "total": 286,
     "flagged": 0,
     "recoverable": 0,
     "quarantined": 0,
     "playable": 286,
+    "flags": {},
+    "actions": {},
+    "chapters": {},
+    "examples": [],
+    "flaggedPct": 0
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "col-class-6-math",
+    "total": 593,
+    "flagged": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "playable": 593,
     "flags": {},
     "actions": {},
     "chapters": {},
@@ -3120,6 +2849,20 @@
     "recoverable": 0,
     "quarantined": 0,
     "playable": 50,
+    "flags": {},
+    "actions": {},
+    "chapters": {},
+    "examples": [],
+    "flaggedPct": 0
+  },
+  {
+    "catalogKey": "primary",
+    "trackId": "khanacademy",
+    "total": 1531,
+    "flagged": 0,
+    "recoverable": 0,
+    "quarantined": 0,
+    "playable": 1531,
     "flags": {},
     "actions": {},
     "chapters": {},
