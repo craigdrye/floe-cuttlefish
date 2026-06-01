@@ -73,7 +73,7 @@ export function buildHighFunQuestionCatalog(): Record<string, Question[]> {
       [
         ['Move the same pawn back and forth', 'That wastes time and development.', 'Openings reward useful activity.'],
         ['Bring the queen out as early as possible every game', 'Early queen adventures are often easy to attack.', 'Develop minor pieces and coordinate first.'],
-        ['Ignore king safety until the endgame', 'King safety matters early.', 'Castling and central control are core basics.'],
+        ['Treat king safety as something to worry about only in the endgame', 'King safety matters early.', 'Castling and central control are core basics.'],
       ]),
     makeSimpleQuestion(15004, 'Fun', 'Chess Lagoon', 'Check response',
       'If your king is in check, what must happen on your move?',
@@ -174,7 +174,7 @@ export function buildHighFunQuestionCatalog(): Record<string, Question[]> {
       'Challenge the player using skills the game has already taught',
       [
         ['Punish players for information they could not know', 'That feels arbitrary rather than fair.', 'Good challenge tests learned skills.'],
-        ['Ignore all pacing and come out of nowhere', 'Sharp surprises can work, but pure randomness often feels bad.', 'Difficulty should feel legible.'],
+        ['Make the challenge arrive with no warning or learnable pattern', 'Sharp surprises can work, but pure randomness often feels bad.', 'Difficulty should feel legible.'],
         ['Remove all consequences so nothing matters', 'No stakes weakens the challenge.', 'Fair does not mean consequence-free.'],
       ]),
     makeSimpleQuestion(15304, 'Fun', 'Game Design Lagoon', 'Feedback signal',
@@ -208,7 +208,7 @@ export function buildHighFunQuestionCatalog(): Record<string, Question[]> {
       'Track possibilities systematically and update them clue by clue',
       [
         ['Guess wildly and hope for vibes', 'That creates noise instead of progress.', 'Systematic elimination is faster and safer.'],
-        ['Ignore clues that seem inconvenient', 'Inconvenient clues are often the useful ones.', 'Every clue should update the grid somehow.'],
+        ['Set aside clues that do not fit your favorite theory', 'Inconvenient clues are often the useful ones.', 'Every clue should update the grid somehow.'],
         ['Memorize the answer pattern in advance', 'Logic puzzles depend on deduction from the given clues.', 'Solve from evidence, not templates.'],
       ]),
     makeSimpleQuestion(15404, 'Fun', 'Detective Lagoon', 'Sufficient evidence',

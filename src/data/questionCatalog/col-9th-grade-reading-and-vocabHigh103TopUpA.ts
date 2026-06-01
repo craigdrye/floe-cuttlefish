@@ -14,7 +14,7 @@ export const col9thGradeReadingAndVocabHigh103TopUpAQuestions: Question[] = make
     correct: 'Slow down, reread, and pay attention to specific word choices and how sentences connect.',
     wrong: [
       miss('Read it once quickly to get the gist and move on.', 'That is skimming; close reading asks you to slow down and attend to detail, not rush to the gist.', 'Close reading is the opposite of skimming for the gist.'),
-      miss('Skip the hard sentences and read only the easy ones.', 'Skipping the hard parts means missing exactly the places where meaning is built.', 'Close reading leans INTO the difficult sentences.'),
+      miss('Glide past the hard sentences and focus only on the easy ones.', 'Gliding past the hard parts means missing exactly the places where meaning is built.', 'Close reading leans INTO the difficult sentences.'),
       miss('Look up a summary online so you do not have to read it.', 'A summary replaces the text; close reading requires engaging with the actual words.', 'You cannot read closely without reading the words themselves.'),
     ],
     lesson: 'Close reading means engaging carefully with a text, often rereading, noticing precise word choices, sentence structure, and how parts connect. It is the opposite of skimming for a quick gist or relying on an outside summary. The skill grows your ability to find and explain subtle meaning.',
@@ -58,8 +58,8 @@ export const col9thGradeReadingAndVocabHigh103TopUpAQuestions: Question[] = make
     prompt: 'You face a dense passage full of unfamiliar words. What is a smart FIRST-pass strategy before close analysis?',
     correct: 'Read it once for the overall gist, then return to work through the hard parts carefully.',
     wrong: [
-      miss('Stop at the first hard word and refuse to continue.', 'Freezing at one word prevents you from using later context that often clarifies it.', 'Often the rest of the passage explains a tough word.'),
-      miss('Read only the last sentence and assume it sums everything up.', 'The last sentence may be a detail or twist, not a reliable summary of the whole.', 'One sentence rarely captures a dense passage.'),
+      miss('Freeze at the first hard word and refuse to continue.', 'Freezing at one word prevents you from using later context that often clarifies it.', 'Often the rest of the passage explains a tough word.'),
+      miss('Treat the last sentence as if it must summarize the whole passage.', 'The last sentence may be a detail or twist, not a reliable summary of the whole.', 'One sentence rarely captures a dense passage.'),
       miss('Replace every unknown word with a guess and never check.', 'Unchecked guesses can lock in wrong meanings that distort the whole passage.', 'Guesses help only if you later verify them with context.'),
     ],
     lesson: 'A good first pass reads for the overall gist, letting context illuminate hard spots, before a careful second pass tackles the details. Freezing at one hard word, trusting a single sentence, or never checking your guesses all derail comprehension. Layered reading is a core close-reading habit.',
@@ -303,7 +303,7 @@ export const col9thGradeReadingAndVocabHigh103TopUpAQuestions: Question[] = make
     correct: 'explain why he now struggles to trust anyone.',
     wrong: [
       miss('confuse readers about what year it is.', 'A well-marked flashback informs rather than confuses; its job is to add understanding.', 'Flashbacks build understanding, not confusion.'),
-      miss('skip ahead to reveal how the story ends.', 'A flashback goes backward in time; it does not jump forward to the ending.', 'Flashback = backward; this cannot reveal the future.'),
+      miss('jump forward to reveal how the story ends.', 'A flashback goes backward in time; it does not jump forward to the ending.', 'Flashback = backward; this cannot reveal the future.'),
       miss('fill pages because the author ran out of plot.', 'A purposeful flashback deepens character; treating it as filler ignores its function.', 'Flashbacks usually deepen motive, not pad length.'),
     ],
     lesson: 'A flashback inserts an earlier event to deepen understanding of the present, often explaining a character\'s motivation. Showing a childhood betrayal clarifies why the hero distrusts others now. It reaches backward in time (not forward), aims to inform (not confuse), and serves character development (not page-filling).',

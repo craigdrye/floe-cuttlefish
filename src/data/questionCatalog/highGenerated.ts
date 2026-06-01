@@ -1845,7 +1845,7 @@ function logicArgumentationBlueprints(): Blueprint[] {
       wrong: [
         ['Share it faster because it is exciting', 'Excitement is not evidence.', 'Check before amplifying.'],
         ['Add extra details to make it funnier', 'That makes misinformation worse.', 'Do not invent support.'],
-        ['Assume all rumors are true', 'Rumors need verification.', 'Use reliable sources.'],
+        ['Treat every rumor as reliable after hearing it repeated', 'Rumors need verification.', 'Use reliable sources.'],
       ],
       lesson: 'Epistemic responsibility means caring about evidence before believing or spreading claims.',
     },
@@ -1855,7 +1855,7 @@ function logicArgumentationBlueprints(): Blueprint[] {
       prompt: 'Sam believed the debate club met on Friday, but the official schedule says Thursday. What is the rational response?',
       correct: 'Update the belief based on better evidence',
       wrong: [
-        ['Ignore the schedule because changing your mind is illegal', 'Changing beliefs with evidence is rational.', 'Better evidence should matter.'],
+        ['Reject the schedule because changing your mind feels embarrassing', 'Changing beliefs with evidence is rational.', 'Better evidence should matter.'],
         ['Insist Friday is true because Sam said it first', 'First belief is not always best.', 'Revise with reliable evidence.'],
         ['Attack the font on the schedule', 'That does not answer the evidence.', 'Focus on source reliability.'],
       ],
@@ -1893,7 +1893,7 @@ function logicArgumentationBlueprints(): Blueprint[] {
       wrong: [
         ['Use louder adjectives until everyone gets tired', 'Volume is not reasoning.', 'Clarity and evidence help more.'],
         ['Change the topic whenever stuck', 'That is distraction.', 'Stay with the claim.'],
-        ['Assume your first thought is perfect', 'First thoughts can be wrong.', 'Revise and support claims.'],
+        ['Treat your first thought as perfect before hearing evidence', 'First thoughts can be wrong.', 'Revise and support claims.'],
       ],
       lesson: 'Good argumentation is fair, relevant, evidence-based, and responsive.',
     },

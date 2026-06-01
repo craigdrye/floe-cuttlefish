@@ -75,7 +75,7 @@ export const philosophyYear5Prim103TopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('Sing as loudly as you like because it is your right', 'Your wish to sing does not cancel your friends wish for quiet.', 'Both of you have wishes that matter, so look for a middle way.'),
       miss('Tell your friend they are not allowed to read', 'Stopping someone from reading is not fair to them.', 'Try to find a plan that respects both people.'),
-      miss('Ignore your friend and hope they go away', 'Ignoring a problem usually does not solve it kindly.', 'Talking it through is fairer than ignoring someone.'),
+      miss('Pretend not to hear your friend and hope they go away', 'Avoiding a problem usually does not solve it kindly.', 'Talking it through is fairer than ignoring someone.'),
     ],
     lesson: 'Sometimes two people want different things at the same time. The fair thing is to talk and find a plan that respects both. Singing in another room lets you enjoy yourself while your friend reads in peace.',
     source,
@@ -382,7 +382,7 @@ export const philosophyYear5Prim103TopUpQuestions: Question[] = makeQuestionBank
     correct: 'Invite them to join in so everyone has a chance to play',
     wrong: [
       miss('Join in leaving them out so you fit in with the group', 'Leaving someone out is unfair, even if others are doing it.', 'Think about how it feels to be left out.'),
-      miss('Ignore it because it is not your problem', 'You can help make things fairer, even if it started without you.', 'Standing up for fairness can help someone feel welcome.'),
+      miss('Stay silent because it started before you joined the game', 'You can help make things fairer, even if it started without you.', 'Standing up for fairness can help someone feel welcome.'),
       miss('Tell the new person it is their own fault', 'Being new is not a reason to be blamed or left out.', 'Kindness means welcoming people, not blaming them.'),
     ],
     lesson: 'When someone is left out unfairly, the kind and fair thing is to help them join in. Standing up for fairness can be brave, but it makes things better for everyone. A small act of welcome can mean a lot to a new person.',
@@ -768,7 +768,7 @@ export const philosophyYear5Prim103TopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('Let one child decide for everyone with no say for the rest', 'Letting only one person decide leaves everyone else out.', 'A fair choice gives everyone a say.'),
       miss('Choose whatever the tallest child likes', 'Being tall does not give someone the right to decide for all.', 'Think about a way everyone takes part.'),
-      miss('Pick the game that the loudest child shouts for', 'Shouting loudly should not decide what the whole class does.', 'A vote is fairer than the loudest voice.'),
+      miss('Let the loudest child decide by shouting over everyone', 'Shouting loudly should not decide what the whole class does.', 'A vote is fairer than the loudest voice.'),
     ],
     lesson: 'A fair way to make a group choice is to vote, so everyone has a say. Then the class can go with the choice that most people want. Voting helps decisions feel fair because everyone gets to take part.',
     source,

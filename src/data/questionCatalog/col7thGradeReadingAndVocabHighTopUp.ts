@@ -58,8 +58,8 @@ export const col7thGradeReadingAndVocabHighTopUpQuestions: Question[] = makeQues
     prompt: 'A strong reader hits a confusing paragraph. Which response best shows the metacognitive habit of monitoring comprehension?',
     correct: 'Pause, reread the paragraph, and check it against earlier clues before moving on',
     wrong: [
-      miss('Skip the paragraph and keep reading to the end as fast as possible', 'Skipping confusion without checking it leaves a gap in understanding.', 'Monitoring means noticing and repairing confusion, not ignoring it.'),
-      miss('Assume the confusing part is unimportant and forget it', 'A confusing passage is often important; dismissing it can hide the main point.', 'Notice the confusion instead of waving it away.'),
+      miss('Rush past the paragraph and keep reading to the end as fast as possible', 'Rushing past confusion without checking it leaves a gap in understanding.', 'Monitoring means noticing and repairing confusion, not ignoring it.'),
+      miss('Treat the confusing part as unimportant and forget it', 'A confusing passage is often important; dismissing it can hide the main point.', 'Notice the confusion instead of waving it away.'),
       miss('Stop reading the text entirely', 'Quitting does not repair understanding or build reading stamina.', 'The goal is to fix the confusion and continue.'),
     ],
     lesson: 'Metacognition means noticing when understanding breaks down and taking a repair step, such as rereading, slowing down, or connecting the spot to earlier clues. Skilled readers monitor and fix confusion rather than skipping it or quitting.',
@@ -619,7 +619,7 @@ export const col7thGradeReadingAndVocabHighTopUpQuestions: Question[] = makeQues
     prompt: 'L.7.4 says readers should verify a preliminary guess about a word\'s meaning. After guessing "abundant" means "plentiful" from context, what is the best way to VERIFY it?',
     correct: 'Check the inferred meaning in a dictionary or by testing it back in the sentence',
     wrong: [
-      miss('Assume the first guess is always correct', 'L.7.4 specifically asks readers to verify, not assume, their guess.', 'Verification means checking, not trusting blindly.'),
+      miss('Trust the first guess before testing it against the sentence', 'L.7.4 specifically asks readers to verify, not merely trust, their guess.', 'Verification means checking, not trusting blindly.'),
       miss('Pick a completely different word at random', 'Switching to a random word ignores the context evidence already gathered.', 'Verify the meaning you reasoned out, do not abandon it randomly.'),
       miss('Ask whether the word is long or short', 'Word length has nothing to do with verifying meaning.', 'Use a reference or context test, not letter count.'),
     ],
