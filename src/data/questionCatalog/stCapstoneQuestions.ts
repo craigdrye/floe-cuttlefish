@@ -220,7 +220,7 @@ export const stCapstoneQuestions: Question[] = [
     'Acknowledge it is quiet, surface one piece of thematic color that intersects her book (e.g. peer earnings tonight, a sector flow trend), and keep the call short — wasting her time on padding is worse than a short call',
     [
       ['Fill the time with sector commentary so the call feels substantive', 'Padding a quiet call is exactly how PMs learn to skip the slot. A short, honest call protects the relationship; a padded one erodes it.'],
-      ['Skip the call entirely if there is nothing live', 'Skipping the cadence reads as flaky. The right move is to keep the slot, name that it is quiet, and exit fast — preserving the rhythm without manufacturing substance.'],
+      ['Cancel the slot whenever there is nothing immediately actionable', 'Canceling the cadence reads as flaky. The right move is to keep the slot, name that it is quiet, and exit fast — preserving the rhythm without manufacturing substance.'],
       ['Pitch a new idea you have been working on, since the quiet window is an opening', 'A quiet morning is not a free slot to push unsolicited ideas. New pitches deserve their own setup; jamming one into a quiet call mixes signal and erodes trust.'],
     ],
     'Reading the room on a slow morning means respecting the PM\'s time more than the calendar slot. A short, honest call with one piece of relevant thematic color outperforms padded substance or a skipped slot.'),
@@ -421,7 +421,7 @@ export const stCapstoneQuestions: Question[] = [
     'Day 9. Another fund offers $40M of TSCO and your high-touch trader cannot reach Polaris\'s trader fast enough to confirm; the block goes to a competitor. How do you handle the post-mortem with Polaris?',
     'Raise it explicitly with Polaris\'s trader in the EOD recap, name the latency that cost the block, and propose a standing pre-authorisation for blocks under a defined size threshold so the next one is captured',
     [
-      ['Skip mentioning it because the block is gone and the build is nearly complete', 'Hiding a missed block when the post-trade context will surface it anyway is worse than naming it. Raising it builds trust; hiding it erodes it.'],
+      ['Treat the missed block as irrelevant because the build is nearly complete', 'Hiding a missed block when the post-trade context will surface it anyway is worse than naming it. Raising it builds trust; hiding it erodes it.'],
       ['Blame the desk routing for the latency without proposing a fix', 'Naming a problem without a proposed fix is half the work. The trust comes from the fix proposal, not the surfacing.'],
       ['Propose Polaris route future orders to a different broker', 'Recommending Polaris switch brokers because of one missed block is wildly outsized. The fix lives in the workflow, not in the relationship.'],
     ],
@@ -528,7 +528,7 @@ export const stCapstoneQuestions: Question[] = [
     'Long vega is the natural result of buying protection at scale — flag it explicitly to the PM as a known feature of the hedge structure, and discuss whether trimming the SPX put size or shortening tenor would bring vega back to a level the risk team accepts',
     [
       ['Sell volatility somewhere else to offset the vega without changing the hedge', 'Layering a vol sell to offset bought protection introduces a new exposure rather than managing the existing one. The cleanest fix is in the hedge itself, not on top of it.'],
-      ['Ignore the flag because vega is a derivative metric and what matters is dollar payoff', 'Vega is exactly what governs the path of the hedge\'s value before payoff. Ignoring it leaves the PM exposed to mark-to-market swings she may not have signed up for.'],
+      ['Treat the flag as secondary because dollar payoff matters more than derivative Greeks', 'Vega is exactly what governs the path of the hedge\'s value before payoff. Downplaying it leaves the PM exposed to mark-to-market swings she may not have signed up for.'],
       ['Replace the puts with futures to remove vega entirely', 'Replacing protective puts with futures sells the optionality the hedge was designed to give. The right adjustment is sizing or tenor, not changing the instrument.'],
     ],
     'Vega is a known feature of a protective hedge book — name it, size it, and discuss whether the hedge\'s structure (size, tenor, strike) needs adjusting. Layering offsets, ignoring the flag, or swapping out the protection each lose part of what the hedge is supposed to do.'),

@@ -654,7 +654,7 @@ export const cybersecurityOperationsRoadmapR2Questions: Question[] = makeQuestio
         'Stopping one host is not scoping the campaign. What do you lose if you delete before capturing it?',
       ),
       miss(
-        'Ignore it, because Run keys are a normal place for legitimate software to register autostart',
+        'Treat it as routine because legitimate software often registers autostart in Run keys',
         'Legitimate software does use Run keys, which is why attackers hide there; a new, unexplained value pointing to a script in a user-writable temp path warrants analysis, not dismissal.',
         'Legit software using Run keys is why attackers hide there. A new script in AppData deserves a look.',
       ),
@@ -1141,7 +1141,7 @@ export const cybersecurityOperationsRoadmapR2Questions: Question[] = makeQuestio
         'The newest backup may be the most infected. The restore point must predate the compromise.',
       ),
       miss(
-        'Skip rebuilding and just remove the malware files found on each machine',
+        'Clean only the malware files found on each machine and avoid a full rebuild',
         'Selective file deletion cannot reliably guarantee a host is clean after deep compromise; rebuilding from a trusted image is the defensible way to assert a known-good starting state.',
         'You cannot prove a deeply compromised host is clean by deleting files. Rebuild from a trusted image.',
       ),
@@ -1558,7 +1558,7 @@ export const cybersecurityOperationsRoadmapR2Questions: Question[] = makeQuestio
         'The clock already started at awareness. Waiting for certainty misses the deadline. What can you file now?',
       ),
       miss(
-        'Assume no clock applies until the company formally announces the breach publicly',
+        'Treat the notification clock as starting only when the company publicly announces the breach',
         'The obligation is triggered by the organization\'s awareness, not by a public announcement; the company cannot defer a regulatory clock by simply withholding public statements.',
         'Awareness, not a press release, starts the clock. You cannot delay it by staying quiet publicly.',
       ),

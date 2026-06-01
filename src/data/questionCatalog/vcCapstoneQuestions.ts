@@ -319,7 +319,7 @@ export const vcCapstoneQuestions: Question[] = [
     'Mix references provided by the company with 4–6 calls you source independently from the broader logo list — and structure the calls by cohort (early adopters, mid-2024 land, last quarter) so you can read change over time, not just the average sentiment',
     [
       ['Take all 8 references the company provides — they are the highest-quality conversations and the company has already opened the door', 'Founder-provided references are by definition selected. They are useful but cannot stand alone, because the load-bearing question is what *non-favorable* customers say.'],
-      ['Skip the founder references and only call cold logos from the broader customer list to avoid bias', 'Cold calls have their own bias — the customers willing to take a cold call from a VC may not be representative either. The right move is to mix sources, not to over-correct.'],
+      ['Rely only on cold logos from the broader customer list to avoid founder-selected bias', 'Cold calls have their own bias — the customers willing to take a cold call from a VC may not be representative either. The right move is to mix sources, not to over-correct.'],
       ['Run only 2–3 deep calls with the best customers since quality matters more than count', 'Three calls is not enough to read variance. The whole point of customer diligence is to triangulate, and triangulation needs both volume and spread.'],
     ],
     'A serious customer-call plan mixes founder-provided references with independently sourced calls, and structures the cohort so the associate can see change over time. The pattern across the cohort is what matters, not the loudest individual call.'),
@@ -370,7 +370,7 @@ export const vcCapstoneQuestions: Question[] = [
     [
       ['Trust the export because the founders are reputable and have no reason to misrepresent', 'Founder reputation is not a substitute for reconciliation. Even well-intentioned founders ship metrics with subtle errors — definitional, classification, cohort — that change the meaning of the numbers.'],
       ['Ask the company to re-export the data in a different format to cross-check', 'Re-exports from the same underlying system are not independent checks — they will reproduce any definitional issues that live in the source. The reconciliation has to cross *systems*, not formats.'],
-      ['Skip data reconciliation because the founders will provide audited statements at closing', 'Audited statements come later and cover financials, not SaaS metrics. Reconciliation needs to happen during diligence, not after, because the metrics drive the decision.'],
+      ['Defer metrics reconciliation until audited financial statements arrive at closing', 'Audited statements come later and cover financials, not SaaS metrics. Reconciliation needs to happen during diligence, not after, because the metrics drive the decision.'],
     ],
     'Cross-system reconciliation — metrics export against billing system against financial statements — is the diligence move that catches definitional drift before it lands in the IC memo. Skipping it is how memos end up presenting numbers that quietly disagree with each other.'),
 
@@ -553,7 +553,7 @@ export const vcCapstoneQuestions: Question[] = [
     'Take pro rata partially — write $15M from reserves to roughly preserve fund construction without breaking the reserves model; the marginal $5M would come from a new co-investor or the fund passes on the marginal dilution',
     [
       ['Write the full $20M pro rata to preserve ownership at all costs', 'Breaking the reserves model for ownership preservation is a common late-cycle mistake. Ownership is one input; reserves discipline across the portfolio matters more.'],
-      ['Skip the pro rata entirely since the 3x markup is a strong signal that does not need defending', 'Skipping pro rata on the highest-conviction deal in the portfolio is exactly the wrong direction — the markup is the signal that more conviction is warranted, not less.'],
+      ['Let the pro rata lapse because the 3x markup already validates the original investment', 'Letting pro rata lapse on the highest-conviction deal in the portfolio is exactly the wrong direction — the markup is the signal that more conviction is warranted, not less.'],
       ['Pull reserves from other portfolio companies to fund the full pro rata', 'Cross-funding from other companies\' reserves is how funds end up under-reserved on the next breakout. Reserves are committed at the deal level for a reason.'],
     ],
     'Follow-on math is where fund construction discipline meets deal-level conviction. Partial pro rata using the reserves committed to that company — without raiding other reserves and without breaking the model — is usually the right answer. The fund\'s job is the portfolio, not a single deal.'),
