@@ -488,7 +488,7 @@ export const criticalThinkingQuestions: Question[] = makeQuestionBank('Career Sk
     correct: 'Scrutinize it more carefully for bias, but do not dismiss it outright',
     wrong: [
       miss('Reject the study automatically as false', 'Funding bias is a reason for extra scrutiny, not proof the findings are wrong — that would be a genetic fallacy.', 'A conflict of interest is a yellow flag, not an automatic refutation. What is the measured response?'),
-      miss('Ignore the funding; it never matters', 'Funding sources can shape design, analysis, and what gets published, so they do matter.', 'Funding can subtly bias a study. Should you really pay it no attention?'),
+      miss('Treat the funding source as irrelevant to how you read the study', 'Funding sources can shape design, analysis, and what gets published, so they do matter.', 'Funding can subtly bias a study. Should you really pay it no attention?'),
       miss('Trust it more, since the company knows its product', 'Self-interest cuts the other way: the funder benefits from a favorable result.', 'Who gains if the study turns out a certain way? Does that increase or decrease your caution?'),
     ],
     lesson: 'A conflict of interest (like industry funding) does not make findings false, but it is a real reason for heightened scrutiny: check methods, sample, and whether independent studies agree. Dismissing the study purely because of who paid for it would be a genetic fallacy; ignoring the funding entirely would be naive. The honest middle path is careful skepticism.',
@@ -547,7 +547,7 @@ export const criticalThinkingQuestions: Question[] = makeQuestionBank('Career Sk
     wrong: [
       miss('Find its weakest version and attack that', 'That is straw-manning — the opposite of steelmanning and a fallacy.', 'Steelmanning is the opposite of straw-manning. Which builds the strongest version?'),
       miss('Quote the person\'s worst phrasing exactly', 'Pouncing on a clumsy phrase ignores the strongest version of their point.', 'Charity means engaging the best version, not the most embarrassing wording.'),
-      miss('Ignore it until they prove themselves', 'Refusing to engage is not steelmanning; the technique requires reconstructing their case fairly.', 'Steelmanning is active reconstruction, not waiting. What does it ask you to build?'),
+      miss('Refuse to engage until the other side earns your respect', 'Refusing to engage is not steelmanning; the technique requires reconstructing their case fairly.', 'Steelmanning is active reconstruction, not waiting. What does it ask you to build?'),
     ],
     lesson: 'Steelmanning is restating an opposing view in its strongest, most charitable form before responding. It is the mirror image of the straw man fallacy. If you can defeat the best version of an argument, your critique is genuinely strong; if you can only beat a weak caricature, you have proven little. It also builds trust and sharpens your own thinking.',
     source,

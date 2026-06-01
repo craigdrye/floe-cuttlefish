@@ -544,7 +544,7 @@ export const epistemologyBasicsHighTopUpQuestions: Question[] = makeQuestionBank
     correct: 'Take the disagreement as a reason to lower your confidence and re-examine',
     wrong: [
       miss('Conclude immediately that your peer is simply stupid', 'Dismissing an equally able peer ignores the evidence their disagreement provides.', 'Assuming the other person is foolish is not humble.'),
-      miss('Assume you must be right because it is your view', 'Treating your own view as automatically correct is exactly the bias to resist.', 'Owning a view does not make it true.'),
+      miss('Treat your own view as automatically right because it is yours', 'Treating your own view as automatically correct is exactly the bias to resist.', 'Owning a view does not make it true.'),
       miss('Decide the question has no answer at all', 'Disagreement among peers does not by itself show there is no fact of the matter.', 'Hard does not mean unanswerable.'),
     ],
     lesson: 'When an epistemic peer — someone roughly as informed and careful as you — disagrees, that is itself evidence worth weighing. Intellectual humility suggests lowering your confidence somewhat and re-examining your reasons, rather than dismissing the peer or assuming the question is unanswerable.',
@@ -727,7 +727,7 @@ export const epistemologyBasicsHighTopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('Attack the weakest possible version of it', 'That is a straw man, the opposite of steelmanning.', 'Knocking down the weak version is a straw man.'),
       miss('Agree with it completely to avoid conflict', 'Steelmanning is about understanding and testing the view fairly, not capitulating.', 'It is fair engagement, not surrender.'),
-      miss('Ignore it because it disagrees with you', 'Ignoring the view is neither charitable nor engagement.', 'Steelmanning requires engaging, not dodging.'),
+      miss('Dismiss the argument because it starts from the opposite side', 'Dismissing the view is neither charitable nor engagement.', 'Steelmanning requires engaging, not dodging.'),
     ],
     lesson: 'Steelmanning is the practice of restating an opposing argument in its strongest, most charitable form before responding. It contrasts with the straw man fallacy of attacking a weakened caricature. Steelmanning makes disagreement more productive and your own conclusions more defensible.',
     source,

@@ -418,7 +418,7 @@ export const consultingCasesR2Questions: Question[] = makeQuestionBank('Career S
     correct: 'Treat the two outliers as a lead to investigate (what is different about them?) rather than averaging them away or extrapolating from them',
     wrong: [
       miss('Drop the two outliers so the average looks cleaner', 'Discarding outliers to tidy the average can erase the most informative data points; they may reveal a fixable problem or a data error.', 'Investigate outliers before removing them; they often carry the insight.'),
-      miss('Assume the whole network secretly behaves like the two outliers', 'Generalizing from two extreme points to 28 well-behaved ones inverts the evidence; most stores are in the tight band.', 'Do not let two outliers redefine the 28-store norm.'),
+      miss('Treat the two extreme stores as if they reveal the hidden norm for everyone', 'Generalizing from two extreme points to 28 well-behaved ones inverts the evidence; most stores are in the tight band.', 'Do not let two outliers redefine the 28-store norm.'),
       miss('Conclude the data is unusable because it is not perfectly uniform', 'Real data has outliers; that does not make it unusable, it makes the outliers worth a focused question.', 'Use the data and probe the exceptions rather than discarding everything.'),
     ],
     lesson: 'Outliers are leads, not noise to delete or a new norm to extrapolate. Two double-cost stores against a tight band point to something specific: a different process, a data error, or a fixable inefficiency. Investigate what makes them different before averaging them away.',
@@ -733,7 +733,7 @@ export const consultingCasesR2Questions: Question[] = makeQuestionBank('Career S
     correct: 'A few minutes to open and clarify, a few to structure, the bulk on analysis and exhibits, and several minutes reserved to synthesize a recommendation',
     wrong: [
       miss('Spend most of the time perfecting an exhaustive structure, then rush the rest', 'Over-investing in structure starves analysis and synthesis; an exhaustive tree that never reaches a recommendation fails the case.', 'Cap structuring time and protect time for analysis and synthesis.'),
-      miss('Skip clarification entirely to leave more time for math', 'Cutting clarification risks solving the wrong problem; a minute spent scoping saves far more downstream.', 'Keep a short clarification phase; it prevents misdirected analysis.'),
+      miss('Treat clarification as wasted time because the math section is coming', 'Cutting clarification risks solving the wrong problem; a minute spent scoping saves far more downstream.', 'Keep a short clarification phase; it prevents misdirected analysis.'),
       miss('Spend the whole case on analysis and skip the synthesis', 'Running out of time before a recommendation is a common failure; the synthesis is what the partner actually carries.', 'Always reserve time to reach and state the recommendation.'),
     ],
     lesson: 'Pacing is graded. A workable allocation is a brief opening and clarification, a short tailored structure, the bulk of time on analysis and exhibits, and a reserved block to synthesize. The recurring failures are over-building structure, skipping clarification, and running out of time before the recommendation.',

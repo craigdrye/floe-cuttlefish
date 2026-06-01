@@ -242,8 +242,8 @@ export const alevelHistoryHighTopUpQuestions: Question[] = makeQuestionBank('Hig
     prompt: 'To argue that one reform was "most significant", a strong essay must do what?',
     correct: 'State explicit criteria for significance and apply them to rank the reforms',
     wrong: [
-      miss('Pick the reform that is most famous today', 'Present-day fame is not a defended criterion for historical significance.', 'Significance needs stated measures, not popularity.'),
-      miss('Choose the reform passed earliest in the period', 'Being first does not automatically make a reform most significant.', 'Order in time is not a criterion by itself.'),
+      miss('Treat the reform that is most famous today as automatically most significant', 'Present-day fame is not a defended criterion for historical significance.', 'Significance needs stated measures, not popularity.'),
+      miss('Treat the earliest reform in the period as automatically most important', 'Being first does not automatically make a reform most significant.', 'Order in time is not a criterion by itself.'),
       miss('Describe each reform in equal detail and stop there', 'Equal description avoids the judgement the question demands.', 'You must rank, using criteria.'),
     ],
     lesson: 'Significance is a judgement that needs criteria, such as scale of impact, durability, or how many people were affected. Naming those criteria and applying them consistently lets you defend a ranking rather than just assert it.',
