@@ -427,8 +427,8 @@ export const climateProjectHighTopUpQuestions: Question[] = makeQuestionBank('Cl
     correct: 'The costs of emissions (an externality) fall on society, not on the emitter, so markets over-produce them',
     wrong: [
       miss('Markets always fail at producing any goods at all', 'Markets work well for many goods; the specific failure here is the unpriced externality of emissions.', 'The failure is specific to uncosted pollution.'),
-      miss('Governments refuse to let any market for energy exist', 'Energy markets clearly exist; the failure is that emission damages are not priced into them.', 'The market exists; the harm just is not priced.'),
-      miss('Renewable energy is illegal in most countries', 'Renewables are legal and growing; the market failure is about unpriced emission costs.', 'Legality is not the issue; pricing is.'),
+      miss('Energy prices already include every future climate cost', 'Energy prices often leave climate damages outside the transaction, which is why economists call emissions a negative externality.', 'The market exists; the harm just is not priced.'),
+      miss('Renewable growth means fossil-fuel emissions no longer affect market outcomes', 'Renewables are growing, but emitting firms can still avoid paying the full social cost of their emissions.', 'Legality is not the issue; pricing is.'),
     ],
     lesson: 'When a factory emits CO2, the climate damage is borne by everyone, not just the emitter. This unpriced cost is a negative externality, so the market produces more emissions than is socially optimal. Correcting this market failure, by pricing or regulating emissions, is the core economic case for climate policy.',
     source,

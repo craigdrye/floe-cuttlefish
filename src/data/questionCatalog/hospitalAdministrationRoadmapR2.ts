@@ -439,8 +439,8 @@ export const hospitalAdministrationRoadmapR2Questions: Question[] = makeQuestion
       'Diversion delays definitive care and can shift the burden to nearby EDs; it treats a symptom of inpatient gridlock rather than the cause',
     wrong: [
       miss(
-        'Diversion is illegal under EMTALA in all circumstances',
-        'Diversion is not categorically illegal; the systemic caution is that it delays care and offloads strain to neighbors, while EMTALA still applies to anyone who arrives.',
+        'Diversion removes EMTALA obligations for anyone who arrives anyway',
+        'Diversion does not erase EMTALA duties for patients who still arrive; the systemic caution is that it delays care and offloads strain to neighbors.',
         'The issue is system impact and continued EMTALA duty, not a blanket ban.',
       ),
       miss(

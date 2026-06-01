@@ -378,7 +378,7 @@ export const creativeWritingStudioHighTopUpQuestions: Question[] = makeQuestionB
     correct: '"Said" is nearly invisible and keeps focus on the dialogue itself',
     wrong: [
       miss('"Said" is the only grammatically correct dialogue tag', 'The others are grammatical; the advice is stylistic, not about grammar.', 'It is about reading flow, not correctness.'),
-      miss('Fancy tags are illegal in published fiction', 'Nothing is illegal; this is a craft preference.', 'It is guidance, not a rule of law.'),
+      miss('Expressive tags always make the dialogue feel more emotional', 'Overloaded tags can pull attention away from the spoken words instead of deepening the emotion.', 'It is guidance about reader attention, not a rule of law.'),
       miss('"Said" makes the dialogue automatically funnier', 'Tag choice does not control humor.', 'Think about what the reader notices.'),
     ],
     lesson: 'Because readers process "said" almost without noticing it, it keeps attention on the words being spoken. A pile of showy tags ("queried," "opined") draws attention to itself and often does work the dialogue or a beat should do.',

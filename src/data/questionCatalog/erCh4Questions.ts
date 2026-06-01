@@ -437,7 +437,7 @@ export const erCh4Questions: Question[] = [
     [
       ['Holds are common because most stocks really are fairly valued', 'If half of all stocks were genuinely Hold-worthy, Sells would be much closer to a third of the universe. The 45/45/8 split is not a statement of fact about valuation — it reflects structural pressures on the rating choice.'],
       ['Holds are randomly assigned to maintain coverage diversity', 'Ratings are not randomly assigned — they reflect the analyst\'s view tempered by institutional considerations. Randomness is not the explanation.'],
-      ['Sell ratings are illegal under US securities rules', 'Sell ratings are explicitly permitted and required to be a meaningful share of distribution disclosures under FINRA Rule 2241. The constraint is institutional, not regulatory.'],
+      ['Sell ratings are rare because analysts are required to keep rating distributions mostly positive', 'FINRA disclosures reveal rating distributions, but they do not require firms to keep Sell ratings rare. The constraint is institutional, not regulatory.'],
     ],
     'Structural reasons inflate the Hold bucket: corporate access, banking conflicts (despite Global Settlement firewalls), and analyst-management relationships. Sophisticated buy-side reading translates "Hold at a Sell-shy broker" as a soft-Sell and watches estimate trajectory rather than rating level.'),
 

@@ -504,7 +504,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Whether partner government agency requirements, admissibility rules, and required data apply',
       [
         ['Only the duty rate, because other agencies are optional', 'PGA requirements are not optional when applicable.'],
-        ['The importer\'s logo colors for brand consistency', 'Branding is unrelated to admissibility.'],
+        ['Only the commercial invoice details, because admissibility is handled after release', 'Invoice data matters, but partner government agency and admissibility requirements can affect entry before release.'],
         ['Whether the shipper says it has imported before', 'Shipper history is not a PGA exemption.'],
       ],
       'Many entries involve partner government agency data or admissibility requirements. Customs work often has more than one regulator at the table.'),

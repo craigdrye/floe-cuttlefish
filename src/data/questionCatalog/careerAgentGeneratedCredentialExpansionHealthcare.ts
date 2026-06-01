@@ -246,7 +246,7 @@ const medicalCodingRoadmap: QuestionSeed[] = [
     prompt: 'A lab requisition includes a comprehensive metabolic panel, and the claim also lists several individual tests that are components of that panel. What should be checked?',
     correct: 'Whether individual component codes are bundled into the panel and should not be separately reported',
     wrong: [
-      ['Whether panels are always illegal to bill', 'Panels are valid when ordered and performed.', 'The issue is duplicate component reporting.'],
+      ['Whether each panel component should automatically be billed separately', 'Panel components are often bundled into the panel code rather than separately reported.', 'The issue is duplicate component reporting.'],
       ['Whether the patient fasted long enough to create extra codes', 'Fasting may be clinically relevant but does not unbundle panel components.', 'Look at panel composition and edits.'],
       ['Whether the analyzer platform creates a separate billable component for each result', 'Analyzer configuration does not override panel coding rules or payer bundling edits.', 'Use CPT panel instructions and payer edits.'],
     ],
