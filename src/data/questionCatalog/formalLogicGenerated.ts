@@ -20,7 +20,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['The conclusion is longer than the premises', 'Length has no bearing on logical consequence.', 'Track truth conditions, not surface form.'],
       ['The argument uses ordinary language instead of symbols', 'Arguments in ordinary language can be valid or invalid.', 'Validity concerns structure.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, propositional syntax and semantics. Validity is a relation between premises and conclusion, not a guarantee that the premises are true.',
+    lesson: 'Validity is about whether the premises force the conclusion. A valid argument cannot have all true premises and a false conclusion, even if some premises are not actually true in real life.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -34,7 +34,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['A proof with no assumptions', 'A proof would support validity, not refute it.', 'Look for a countervaluation.'],
       ['A premise that uses fewer connectives', 'The number of connectives is not the issue.', 'Use the truth-value pattern.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, tableaux and semantics. A counterexample to validity preserves all premises while breaking the conclusion.',
+    lesson: 'A counterexample to validity is a carefully built truth-value assignment where every premise survives but the conclusion fails. That single pattern is enough to show the argument form is invalid.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -48,7 +48,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['When P is true and Q is true', 'That is the clearest true case.', 'If the condition is met and the result holds, the conditional holds.'],
       ['Whenever Q is false', 'Q being false is not enough if P is also false.', 'Check both antecedent and consequent.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, propositional semantics. The material conditional fails only when the antecedent is true and the consequent is false.',
+    lesson: 'A material conditional is false only in the broken-promise case: P happens, but Q does not. If P is false, the conditional is not falsified in the standard truth table.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -62,7 +62,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['True only in the actual world', 'Classical tautology is about all valuations, not empirical actuality.', 'Use truth tables.'],
       ['Neither true nor false', 'Classical propositional logic is bivalent.', 'Every valuation assigns a truth value.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, propositional syntax and semantics. A tautology is truth-functional: every row of the truth table returns true.',
+    lesson: 'A tautology is truth-functional: every row of the truth table returns true. No matter how you set the atomic letters, the whole sentence still comes out true.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -76,7 +76,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['P -> P', 'That is always true.', 'A contradiction is false on every valuation.'],
       ['P or Q', 'This can be true or false depending on P and Q.', 'Contradictions do not depend on valuation.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, propositional semantics. A contradiction is false under every valuation.',
+    lesson: 'A contradiction is false under every valuation. The classic shape is a claim that asserts something and denies it at the same time, such as P and not-P.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -90,7 +90,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['P and Q is false', 'The rule gives Q directly.', 'Once P is established, detach the consequent.'],
       ['Q -> P', 'That reverses the conditional.', 'Modus ponens does not convert conditionals.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, natural deduction. Modus ponens detaches the consequent from a conditional once the antecedent is available.',
+    lesson: 'Modus ponens detaches the consequent from a conditional once the antecedent is available. If you have P and you also have P -> Q, the rule lets you infer Q.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -104,7 +104,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['not-A', 'Nothing about A and B licenses negating A.', 'Do not change truth value without a rule.'],
       ['A -> B automatically', 'A conditional requires a conditional proof or another justification.', 'Conjunction is the rule that packages both claims.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, natural deduction. Conjunction introduction allows two established claims to be combined into one conjunction.',
+    lesson: 'Conjunction introduction allows two established claims to be combined into one conjunction. If A is proven and B is proven, you may package them together as A and B.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -116,7 +116,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
     wrong: [
       ['Start from the consequent and derive the antecedent', 'That would prove the converse, not the original conditional.', 'Start with what appears before the arrow.'],
       ['Make the conclusion false as the opening move in every proof', 'That is closer to reductio or tableaux strategy.', 'Conditional proof uses a temporary antecedent assumption.'],
-      ['List all atomic propositions alphabetically', 'Ordering symbols is not a proof strategy.', 'Focus on subproof structure.'],
+      ['List the atomic propositions without opening a temporary subproof', 'A list of symbols does not show that B follows from assuming A.', 'Focus on subproof structure.'],
     ],
     lesson: 'Conditional proof is the natural-deduction rule for introducing an arrow. To prove A -> B, you temporarily step into a little proof room where A is assumed, then try to derive B inside that room.\n\nIf B follows under that temporary assumption, you close the room, discharge the assumption, and conclude A -> B. The assumption was not proved globally; it was used to show what would follow if A were true.',
     solution: 'To prove A -> B, assume A temporarily in a subproof, derive B, then discharge the assumption and infer A -> B.',
@@ -137,9 +137,9 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
     wrong: [
       ['A contradiction has been found on that branch', 'A contradiction closes a branch.', 'Open means no explicit clash remains.'],
       ['The proof has no formulas on it', 'A branch can be open with many formulas.', 'The issue is consistency, not emptiness.'],
-      ['The conclusion was typed in the wrong font', 'Presentation is not the semantic point.', 'Read the branch as a possible model.'],
+      ['A formula still needs to be decomposed but no contradiction has appeared', 'An unfinished branch is not the same as a completed open branch.', 'Read the branch as a possible model.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, tableaux. An open branch can often be read as a countermodel or satisfying assignment.',
+    lesson: 'An open completed tableau branch can often be read as a countermodel or satisfying assignment. Since no contradiction has closed it, the branch describes a way the listed commitments might all hold together.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -153,7 +153,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['A conditional sentence', 'Conditionals are decomposed; they do not close a branch by themselves.', 'Look for A and not-A.'],
       ['A universal quantifier', 'Quantifiers require rules; they do not close a branch automatically.', 'Closure is contradiction.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, tableaux. A branch closes when the accumulated commitments are inconsistent.',
+    lesson: 'A tableau branch closes when the accumulated commitments are inconsistent. The cleanest closure signal is finding a sentence and its negation on the same branch.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -167,7 +167,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['Bind a variable inside a formula', 'Quantifiers bind variables.', 'A name is not a binder.'],
       ['Mark the end of a proof', 'Proof endings are not represented by constants.', 'Use semantic reference.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, first-order syntax and semantics. Constants name individuals; predicates express properties or relations.',
+    lesson: 'In first-order logic, constants or names pick out individual objects. Predicates do a different job: they express properties of objects or relations among objects.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -178,10 +178,10 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
     correct: 'It is not within the scope of a quantifier binding that variable',
     wrong: [
       ['It appears more than three times', 'Frequency does not determine whether a variable is free.', 'Check the quantifier scope.'],
-      ['It is written at the start of the alphabet', 'The variable name does not matter.', 'Binding is structural.'],
+      ['It uses an early alphabet letter like x or y', 'The variable name itself does not decide whether it is free or bound.', 'Binding is structural.'],
       ['It occurs inside any formula at all', 'Many variable occurrences are bound.', 'Look for a matching quantifier.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, first-order syntax. Free and bound variables depend on quantifier scope.',
+    lesson: 'Free and bound variables depend on quantifier scope. A variable occurrence is bound only when it sits inside the reach of a matching quantifier such as forall x or exists x.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -195,7 +195,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['No object satisfies F', 'That would make forall x Fx false unless the domain were empty under unusual assumptions.', 'Use all objects, not none.'],
       ['F is a name of one particular object', 'F is a predicate here, not a name.', 'Read Fx as x has property F.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, first-order semantics. Universal claims range over the whole domain.',
+    lesson: 'Universal claims range over the whole domain. For forall x Fx to be true, every object the model allows x to name must satisfy F.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -209,7 +209,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['No object may satisfy F', 'That is the opposite of the existential claim.', 'Find a witness.'],
       ['F must be a connective like and or or', 'F is being used as a predicate.', 'Interpret Fx as a property claim about x.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, first-order semantics. Existential claims require at least one witness in the domain.',
+    lesson: 'Existential claims require at least one witness in the domain. To make exists x Fx true, you only need one object that satisfies F.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -223,7 +223,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['The second has no quantifiers', 'It has both quantifiers.', 'The issue is their order.'],
       ['They are always equivalent in every model', 'They can come apart in simple models.', 'One shared witness is stronger than possibly many witnesses.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, first-order syntax and semantics. Quantifier order controls dependency structure.',
+    lesson: 'Quantifier order controls dependency structure. “Everyone loves someone” can allow a different beloved person for each individual, while “someone is loved by everyone” requires one shared witness.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -237,7 +237,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['Only the true sentences of the language', 'A theory may be a set of true sentences, but a domain is not.', 'Use the semantic universe.'],
       ['The punctuation marks used in formulas', 'Punctuation is syntactic notation.', 'Variables range over domain objects.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, models and theories. A domain is the universe of discourse for a model.',
+    lesson: 'A domain is the universe of discourse for a model. It is the collection of objects that variables are allowed to range over when formulas are evaluated.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -247,11 +247,11 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
     prompt: 'An interpretation in first-order semantics assigns predicate symbols to:',
     correct: 'Sets of objects or tuples from the domain',
     wrong: [
-      ['Only font styles', 'Interpretations assign semantic values, not display styles.', 'Predicates correspond to extensions.'],
+      ['Only the spelling of the predicate symbol', 'The symbol name is syntax; interpretation gives it a semantic extension in the domain.', 'Predicates correspond to extensions.'],
       ['Proof line numbers', 'Line numbers are bookkeeping, not semantics.', 'Think about what objects satisfy a predicate.'],
       ['The truth table for every connective only', 'Connectives have fixed meanings in classical logic.', 'Predicate symbols need model-specific extensions.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, first-order semantics. A one-place predicate gets a set of objects; a two-place predicate gets a set of ordered pairs.',
+    lesson: 'An interpretation gives predicate symbols their extensions. A one-place predicate gets a set of objects; a two-place predicate gets a set of ordered pairs.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -265,7 +265,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['A and B have no elements in common', 'That describes disjointness.', 'Subset allows overlap, including equality.'],
       ['A has exactly one element', 'A subset can have any size.', 'The condition is about membership preservation.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, sets. Subset is a universal condition over members of the first set.',
+    lesson: 'Subset is a universal condition over members of the first set. A is a subset of B means every element you find in A is also safely inside B.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -279,7 +279,7 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
       ['Some inputs in A are ignored by default', 'A total function assigns each input an output.', 'Look for existence and uniqueness.'],
       ['Outputs are forbidden from repeating', 'That is injectivity, not functionhood.', 'Different inputs may share an output.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, functions. Functionhood requires existence and uniqueness of output for each input.',
+    lesson: 'Functionhood requires existence and uniqueness of output for each input. Every input must get an output, and it must not split into multiple outputs.',
     source: 'Generated from Open Logic Project coverage',
   },
   {
@@ -289,11 +289,11 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
     prompt: 'An equivalence relation must be:',
     correct: 'Reflexive, symmetric, and transitive',
     wrong: [
-      ['Reflexive, random, and temporary', 'Random and temporary are not relation properties.', 'Recall the three standard conditions.'],
+      ['Reflexive, symmetric, but only for a temporary example', 'Temporary examples do not replace the formal relation properties.', 'Recall the three standard conditions.'],
       ['Only symmetric', 'Symmetry alone is not enough.', 'Equivalence relations need all three properties.'],
       ['Only transitive and never reflexive', 'Reflexivity is required.', 'Each object must be related to itself.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, relations. Equivalence relations generalize sameness by satisfying reflexivity, symmetry, and transitivity.',
+    lesson: 'Equivalence relations generalize sameness by satisfying reflexivity, symmetry, and transitivity. Those three properties let the relation group objects into classes that behave like “same in this respect.”',
     source: 'Generated from Open Logic Project coverage',
   },
 ])
