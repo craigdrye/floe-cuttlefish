@@ -21,7 +21,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['x = 21', 'That stops after adding 7 and misses division by 3.', 'The coefficient still needs to be undone.'],
       ['x = -7', 'The sign moved in the wrong direction.', 'Use inverse operations carefully.'],
     ],
-    lesson: 'Coverage source: Numbas math diagnostics clusters. Add 7 to get 3x = 21, then divide by 3.',
+    lesson: 'Add 7 to get 3x = 21, then divide by 3.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -36,7 +36,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['(x - 1)(x - 6)', 'That gives the right product but the wrong middle term.', 'Check the sum of the roots.'],
       ['(x + 1)(x - 6)', 'That gives x^2 - 5x - 6.', 'The constant term must stay positive.'],
     ],
-    lesson: 'Coverage source: Numbas algebra clusters. Find two numbers that multiply to 6 and add to -5.',
+    lesson: 'Find two numbers that multiply to 6 and add to -5.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -51,7 +51,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['x > 4', 'The sign of the solution is wrong.', 'Divide 8 by -2.'],
       ['x < 4', 'This misses both the sign and the inequality flip.', 'Handle negative division carefully.'],
     ],
-    lesson: 'Coverage source: Numbas algebra clusters. Dividing both sides by -2 reverses the inequality.',
+    lesson: 'Dividing both sides by -2 reverses the inequality.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -66,7 +66,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['5', 'That looks like 2x - 3.', 'Use the exponent in the formula.'],
       ['61', 'That squares after multiplying by 2.', 'The expression is 2 times x squared, not (2x) squared.'],
     ],
-    lesson: 'Coverage source: Numbas function clusters. Substitute x = 4: 2(16) - 3 = 29.',
+    lesson: 'Substitute x = 4: 2(16) - 3 = 29.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -81,7 +81,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['4', 'That is the horizontal change only.', 'Use change in y over change in x.'],
       ['1/2', 'That reverses the ratio.', 'Slope is (10 - 2) / (5 - 1).'],
     ],
-    lesson: 'Coverage source: Numbas graphing clusters. The slope is 8 / 4 = 2.',
+    lesson: 'The slope is 8 / 4 = 2.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -96,7 +96,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['200 + 1.05t', 'That is linear growth, not percentage growth.', 'Repeated percent change is exponential.'],
       ['1.05(200)^t', 'The initial value and growth factor are swapped.', 'The initial amount is multiplied by the growth factor to the t.'],
     ],
-    lesson: 'Coverage source: Numbas functions clusters. Percent growth uses initial value times (1 + r)^t.',
+    lesson: 'Percent growth uses initial value times (1 + r)^t.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -111,7 +111,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['The largest possible input', 'A derivative does not select the domain endpoint.', 'Think slope at a point.'],
       ['The number of x-intercepts', 'Intercepts are separate graph features.', 'Derivative measures change.'],
     ],
-    lesson: 'Coverage source: Numbas calculus clusters. Derivatives encode local slope or instantaneous rate.',
+    lesson: 'Derivatives encode local slope or instantaneous rate.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -126,7 +126,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['5x^5', 'The exponent should decrease by one.', 'Bring down 5, then subtract 1 from the power.'],
       ['x^6/6', 'That is an antiderivative pattern.', 'The question asks for derivative.'],
     ],
-    lesson: 'Coverage source: Numbas differentiation clusters. Apply the power rule.',
+    lesson: 'Apply the power rule.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -141,7 +141,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['Only the maximum value', 'A definite integral does not directly find a maximum.', 'Think total accumulation.'],
       ['A list of all roots', 'Roots are where the function equals zero.', 'Integration is about area/accumulation.'],
     ],
-    lesson: 'Coverage source: Numbas integration clusters. Definite integrals summarize accumulated signed area over an interval.',
+    lesson: 'Definite integrals summarize accumulated signed area over an interval.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -156,7 +156,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['1.3', 'Probabilities cannot exceed 1 here.', 'Use 1 - P(A).'],
       ['0.03', 'That moves the decimal without reason.', 'Subtract from 1.'],
     ],
-    lesson: 'Coverage source: Numbas probability clusters. P(not A) = 1 - P(A).',
+    lesson: 'P(not A) = 1 - P(A).',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -171,7 +171,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['0.1', 'That subtracts instead of multiplying.', 'Use the product rule for independence.'],
       ['0.45', 'That averages the probabilities.', 'Intersection is not an average.'],
     ],
-    lesson: 'Coverage source: Numbas probability clusters. For independent events, P(A and B) = P(A)P(B).',
+    lesson: 'For independent events, P(A and B) = P(A)P(B).',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -186,7 +186,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['Range', 'The range is defined by extremes.', 'An outlier can change it dramatically.'],
       ['Maximum', 'The maximum can be the outlier itself.', 'Resistance means not pulled by extremes.'],
     ],
-    lesson: 'Coverage source: Numbas statistics clusters. The median depends on position, so it is more robust than the mean.',
+    lesson: 'The median depends on position, so it is more robust than the mean.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -201,7 +201,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['The number of data points', 'That is sample size.', 'Spread is different from count.'],
       ['Only the largest value', 'One extreme value is not the whole standard deviation.', 'It summarizes variation around the mean.'],
     ],
-    lesson: 'Coverage source: Numbas statistics clusters. Standard deviation is a measure of variability.',
+    lesson: 'Standard deviation is a measure of variability.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -216,7 +216,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['5 x 1', 'That counts entries incorrectly.', 'Dimensions are not total entries.'],
       ['6 x 6', 'That squares the number of entries.', 'Use rows by columns.'],
     ],
-    lesson: 'Coverage source: Numbas linear algebra clusters. Matrix dimensions are written rows by columns.',
+    lesson: 'Matrix dimensions are written rows by columns.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -231,7 +231,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['10', 'That multiplies 2 and 5 implicitly, not componentwise.', 'Use 1*3 + 2*4.'],
       ['(3, 8)', 'That is componentwise multiplication, not the dot product.', 'A dot product returns a scalar.'],
     ],
-    lesson: 'Coverage source: Numbas vector clusters. Compute 1*3 + 2*4 = 11.',
+    lesson: 'Compute 1*3 + 2*4 = 11.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -246,7 +246,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['14 m/s^2', 'That adds the velocities.', 'Use final minus initial.'],
       ['3 m/s^2', 'That repeats the time value.', 'Divide the velocity change by 3 seconds.'],
     ],
-    lesson: 'Coverage source: Numbas mechanics clusters. Average acceleration = (10 - 4) / 3 = 2 m/s^2.',
+    lesson: 'Average acceleration = (10 - 4) / 3 = 2 m/s^2.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -261,7 +261,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['v = d/t', 'That is average speed or velocity.', 'The question asks about force.'],
       ['p = mv^2', 'Momentum is mv, and this is not Newton\'s second law.', 'Use force equals mass times acceleration.'],
     ],
-    lesson: 'Coverage source: Numbas mechanics clusters. Net force equals mass times acceleration.',
+    lesson: 'Net force equals mass times acceleration.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -276,7 +276,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['The number is always positive', 'Some quantities can be negative, such as displacement or change.', 'Use the context and units.'],
       ['The answer looks longer than the question', 'Length is not evidence.', 'Check meaning and units.'],
     ],
-    lesson: 'Coverage source: Numbas quantitative methods clusters. Unit checks catch many modeling and algebra errors early.',
+    lesson: 'Unit checks catch many modeling and algebra errors early.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -291,7 +291,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['Round every number to zero', 'That can destroy the quantity entirely.', 'Approximation should preserve scale.'],
       ['Report the number without its units or real-world meaning', 'Units and context are part of the check.', 'A plausible number must also mean the right thing.'],
     ],
-    lesson: 'Coverage source: Numbas diagnostic clusters. Estimation helps detect impossible or mistyped answers.',
+    lesson: 'Estimation helps detect impossible or mistyped answers.',
     source: 'Generated from Numbas coverage',
   },
   {
@@ -306,7 +306,7 @@ const _baseMathDiagnosticsGeneratedQuestions = makeQuestionBank('University', [
       ['Constant', 'The quantity is changing.', 'A constant model would not grow.'],
       ['Purely random with no pattern', 'A repeated percentage change is a pattern.', 'Use the multiplicative structure.'],
     ],
-    lesson: 'Coverage source: Numbas diagnostics clusters. Repeated percent change is naturally exponential.',
+    lesson: 'Repeated percent change is naturally exponential.',
     source: 'Generated from Numbas coverage',
   },
 ])
