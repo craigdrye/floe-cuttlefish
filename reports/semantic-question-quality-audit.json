@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-01T09:12:34.870Z",
+  "generatedAt": "2026-06-01T09:16:33.537Z",
   "summary": {
     "filesScanned": 758,
-    "questionsScanned": 56977,
-    "extractedQuestionRecords": 57134,
+    "questionsScanned": 56985,
+    "extractedQuestionRecords": 57142,
     "skippedNonPlayablePlaceholders": 157,
     "distinctQuestionIds": 38775,
     "totalIssues": 0,

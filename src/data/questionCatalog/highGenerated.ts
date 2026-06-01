@@ -901,6 +901,112 @@ function computingBlueprints(): Blueprint[] {
   ]
 }
 
+function pixarBlueprints(): Blueprint[] {
+  return simpleBlueprints([
+    {
+      chapter: 'Story and Character',
+      title: 'Story spine',
+      prompt: 'A Pixar-style story team says a character should want something clear, meet pressure, and change by the end. What is that advice really protecting?',
+      correct: 'The emotional arc of the story, so events feel driven by character choices',
+      wrong: [
+        ['The number of software buttons used to animate the scene', 'Tools matter in production, but this story note is about why the audience cares.', 'Follow the character want and change.'],
+        ['The rule that every scene must include a joke', 'Humor can help, but a story arc can be powerful without constant jokes.', 'The spine is emotional, not just comic.'],
+        ['The idea that backgrounds are more important than characters', 'World design supports the story, but character change is the center of this note.', 'Ask who changes and why.'],
+      ],
+      lesson: 'A strong story spine makes the audience track a character through desire, conflict, choice, and change. In animation, the visuals are gorgeous, but they land harder when the emotional logic is clear.',
+    },
+    {
+      chapter: 'Animation Principles',
+      title: 'Squash and stretch',
+      prompt: 'An animator makes a bouncing ball flatten when it hits the ground and stretch as it springs upward. Which animation principle is being used?',
+      correct: 'Squash and stretch, which shows weight, impact, and flexibility',
+      wrong: [
+        ['Depth of field, which blurs faraway objects', 'Depth of field is a camera/composition tool, not the shape-change principle here.', 'Look at the changing shape.'],
+        ['Texture mapping, which applies surface detail', 'Texture changes appearance, but this example changes the object’s silhouette over time.', 'The ball deforms as it moves.'],
+        ['Storyboarding, which plans shots before animation', 'Storyboards plan action; squash and stretch is the motion principle being animated.', 'This happens inside the movement.'],
+      ],
+      lesson: 'Squash and stretch exaggerates deformation while preserving the object’s basic volume. It makes animated motion feel lively, physical, and easier to read.',
+    },
+    {
+      chapter: 'Lighting and Rendering',
+      title: 'Lighting for mood',
+      prompt: 'A scene has the same model and camera angle, but warm side-light makes it feel cozy while cold overhead light makes it feel uneasy. What is the lesson?',
+      correct: 'Lighting is storytelling: color, direction, and contrast guide the viewer’s emotion',
+      wrong: [
+        ['Lighting only matters after the story is finished', 'Lighting is part of how the story is felt, not just a final technical coat.', 'Mood is designed through light.'],
+        ['The model geometry must have changed completely', 'The prompt says the model stayed the same; the emotional shift came from lighting.', 'Same object, different light.'],
+        ['Viewers never notice lighting choices', 'Viewers may not name the technique, but lighting strongly shapes attention and mood.', 'Craft can work invisibly.'],
+      ],
+      lesson: 'Lighting does more than make objects visible. It directs attention, clarifies space, and gives a scene emotional temperature.',
+    },
+    {
+      chapter: 'Collaboration',
+      title: 'Notes without ego',
+      prompt: 'In a story review, a teammate points out that a scene is beautiful but does not move the character’s goal forward. What is the best production-minded response?',
+      correct: 'Test whether the scene earns its place in the story, even if the artwork is lovely',
+      wrong: [
+        ['Keep it unchanged because effort already spent is proof it belongs', 'Past effort is a sunk cost; production decisions still need to serve the story.', 'Beautiful work can still be cut.'],
+        ['Keep the scene because the lighting and motion are technically impressive', 'Technical polish matters, but a scene still needs a story purpose.', 'Craft should serve the character arc.'],
+        ['Delete every quiet scene because only action matters', 'Quiet scenes can matter deeply if they reveal character, choice, or emotion.', 'The issue is purpose, not volume.'],
+      ],
+      lesson: 'Creative production needs taste and humility. Review notes are not personal attacks; they are tests of whether each choice helps the film work.',
+    },
+  ])
+}
+
+function computerScienceTheoryBlueprints(): Blueprint[] {
+  return simpleBlueprints([
+    {
+      chapter: 'Algorithms',
+      title: 'Algorithm vs program',
+      prompt: 'A teacher says binary search can be written in Python, JavaScript, or on paper. What does that show about an algorithm?',
+      correct: 'An algorithm is the step-by-step method, independent of any one programming language',
+      wrong: [
+        ['An algorithm is the exact font used to display code', 'Font changes presentation, not the method being followed.', 'Separate idea from notation.'],
+        ['An algorithm only exists after it is compiled', 'Algorithms can be reasoned about before any compiled program exists.', 'Paper steps can still be algorithms.'],
+        ['An algorithm is any random list of commands', 'A useful algorithm has a defined process for solving a problem.', 'Look for a method with a goal.'],
+      ],
+      lesson: 'Computer science theory often studies the method behind the code. A program implements an algorithm, but the same algorithm can have many implementations.',
+    },
+    {
+      chapter: 'Complexity',
+      title: 'Growth rate',
+      prompt: 'One search method checks every item in a list, while another repeatedly cuts a sorted list in half. What is complexity analysis trying to compare?',
+      correct: 'How the amount of work grows as the input gets larger',
+      wrong: [
+        ['Which method has the prettier code comments', 'Comments affect readability, not the mathematical growth of work.', 'Ask how many steps grow.'],
+        ['Which method was invented first historically', 'History is interesting, but complexity compares scaling behavior.', 'Input size is the key variable.'],
+        ['Whether the computer screen is bright enough', 'Screen brightness has nothing to do with algorithmic work.', 'Count operations, not display settings.'],
+      ],
+      lesson: 'Complexity analysis asks how time or memory scales with input size. It helps explain why an approach that works on ten items may collapse on ten million.',
+    },
+    {
+      chapter: 'Automata',
+      title: 'Finite-state machine',
+      prompt: 'A turnstile can be locked or unlocked. A coin moves it to unlocked, and a push moves it back to locked. What computer-science-theory idea models this cleanly?',
+      correct: 'A finite-state machine with states and transitions',
+      wrong: [
+        ['A spreadsheet cell format', 'Formatting a cell does not model state changes over time.', 'Track states and transitions.'],
+        ['A sorting algorithm for arranging numbers', 'Sorting orders data; the turnstile example is about moving between states.', 'Locked and unlocked are states.'],
+        ['A database backup schedule', 'Backups preserve data; they do not explain the turnstile’s allowed transitions.', 'The inputs change the state.'],
+      ],
+      lesson: 'Finite-state machines model systems with a limited set of states and rules for moving between them. They are small but powerful tools for reasoning about behavior.',
+    },
+    {
+      chapter: 'Logic',
+      title: 'Boolean condition',
+      prompt: 'A login rule says access is allowed only if the password is correct and two-factor approval succeeds. Which logical operation links those requirements?',
+      correct: 'AND, because both conditions must be true',
+      wrong: [
+        ['OR, because either condition alone is enough', 'OR would allow access with only one condition true, which is weaker than the rule described.', 'Both gates must pass.'],
+        ['NOT, because it reverses a condition', 'NOT flips true to false or false to true; it does not combine two requirements.', 'This rule combines conditions.'],
+        ['XOR, because exactly one condition must pass', 'XOR would reject the case where both protections succeed, which is not how the login rule works.', 'Security wants both, not exactly one.'],
+      ],
+      lesson: 'Boolean logic gives precise rules for combining conditions. AND is strict: the whole statement is true only when every required part is true.',
+    },
+  ])
+}
+
 function lifeEconomicsBlueprints(): Blueprint[] {
   return [
     {
@@ -1903,6 +2009,8 @@ function logicArgumentationBlueprints(): Blueprint[] {
 function blueprintsFor(spec: TrackSpec) {
   const title = spec.title.toLowerCase()
   const id = spec.id.toLowerCase()
+  if (title.includes('pixar') || id.includes('pixar')) return pixarBlueprints()
+  if ((title.includes('computer science') && title.includes('theory')) || id.includes('computer-science-theory')) return computerScienceTheoryBlueprints()
   if (title.includes('logic') && title.includes('argumentation')) return logicArgumentationBlueprints()
   if (title.includes('calculus') && !title.includes('precalculus')) return calculusBlueprints()
   if (spec.family === 'math') return mathBlueprints()

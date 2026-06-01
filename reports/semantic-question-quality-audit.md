@@ -1,14 +1,14 @@
 # Semantic Question Quality Audit
 
-Generated on 2026-06-01T09:12:34.870Z.
+Generated on 2026-06-01T09:16:33.537Z.
 
 Scans `src/data/questionCatalog/*.ts` directly with the TypeScript parser, so it does not depend on app course wiring or runtime imports.
 
 ## Summary
 
 - Files scanned: 758
-- Question-like records scanned: 56977
-- Extracted question records before quarantine: 57134
+- Question-like records scanned: 56985
+- Extracted question records before quarantine: 57142
 - Non-playable import placeholders skipped: 157
 - Distinct question ids seen: 38775
 - Total semantic issues found: 0
