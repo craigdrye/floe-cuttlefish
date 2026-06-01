@@ -2,6 +2,19 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/solar system|planetary|moons|small bodies|orbital/i.test(chapter)) {
+    return `${title} is about how objects behave in a star system. The useful answer is "${correct}"; track the object's type, orbit, composition, and what gravity or sunlight is doing in the scene.`
+  }
+  if (/telescopes|stars|distances/i.test(chapter)) {
+    return `${title} is an observing-and-measuring idea. The useful answer is "${correct}"; astronomy often turns light, spectra, distance, and travel time into evidence about objects we cannot touch.`
+  }
+  if (/galaxies|cosmology/i.test(chapter)) {
+    return `${title} is a universe-scale concept. The useful answer is "${correct}"; separate local Solar System facts from galaxy-scale gravity, cosmic expansion, old light, and early-universe evidence.`
+  }
+  return `${title} is an astronomy concept. The useful answer is "${correct}"; first identify the scale of the question, then match the evidence to the object or motion being described.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +29,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: reviewed OpenTriviaQA science/technology astronomy rows. This is an authored Floe-native conversion item, not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'OpenTriviaQA/OER cosmology and astronomy coverage',
 })
 
@@ -84,7 +96,7 @@ export const cosmologyAstronomyExamBatch2Questions = makeQuestionBank('Universit
   ]),
   q(459013, 'Stars', 'Stellar temperature', 'A star’s surface temperature is closely related to its:', 'Color and spectrum', [
     miss('Number of named moons', 'Stars do not have moons in that sense.', 'Temperature affects emitted light.'),
-    miss('Postal address', 'No.', 'Use radiation and spectrum.'),
+    miss('The street address where the star was first cataloged', 'Catalog details do not set a star’s physical temperature; color and spectrum are tied to radiation from the star itself.', 'Use radiation and spectrum.'),
     miss('Calendar month of discovery only', 'Discovery date does not determine physical temperature.', 'Color-temperature relation.'),
   ]),
   q(459014, 'Galaxies', 'Galaxy definition', 'A galaxy is:', 'A large gravitationally bound system of stars, gas, dust, and dark matter', [
@@ -109,7 +121,7 @@ export const cosmologyAstronomyExamBatch2Questions = makeQuestionBank('Universit
   ]),
   q(459018, 'Orbital Motion', 'Inner planets', 'Mercury and Venus have no natural moons, unlike Earth and Mars. This is mainly a fact about their:', 'Satellite systems', [
     miss('Chemical formulas', 'Moon count is not a chemical formula.', 'Natural satellites.'),
-    miss('Telescope mirror type', 'No.', 'The clue is moons.'),
+    miss('Telescope mirror type', 'Mirror design affects observation, but the clue here is whether the planet has natural satellites.', 'The clue is moons.'),
     miss('Galaxy classification', 'These are planets, not galaxies.', 'Planetary satellites.'),
   ]),
   q(459019, 'Planetary Science', 'Jupiter atmosphere', 'Jupiter’s atmosphere is composed mostly of:', 'Hydrogen and helium', [
@@ -155,7 +167,7 @@ export const cosmologyAstronomyExamBatch2Questions = makeQuestionBank('Universit
   q(459027, 'Cosmology', 'Cosmic expansion', 'Hubble’s law says more distant galaxies generally have greater:', 'Recession speeds', [
     miss('Human populations', 'Hubble’s law is about galaxies, not demographics.', 'Velocity-distance relation.'),
     miss('Ocean tides', 'Not the Hubble-law variable.', 'Galaxy recession.'),
-    miss('Chemical acidity', 'No.', 'Expansion relationship.'),
+    miss('Chemical acidity measured in the galaxy’s gas clouds', 'Hubble’s law is a distance-velocity relationship, not a chemistry measurement.', 'Expansion relationship.'),
   ]),
   q(459028, 'Cosmology', 'CMB evidence', 'The cosmic microwave background is important because it is:', 'Relic radiation from the early universe', [
     miss('Weather noise from one thunderstorm', 'The CMB is cosmic, not local weather.', 'Early-universe afterglow.'),
