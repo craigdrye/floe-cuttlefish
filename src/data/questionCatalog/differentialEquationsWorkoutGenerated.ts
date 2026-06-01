@@ -8,6 +8,25 @@ import {
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/foundations|initial value/i.test(chapter)) {
+    return `${title} is about the basic language of differential equations. The useful answer is "${correct}"; identify the unknown function, the derivative order, and whether extra conditions pick one solution from a family.`
+  }
+  if (/separable|linear first order|exact/i.test(chapter)) {
+    return `${title} is a first-order solving method. The useful answer is "${correct}"; look for how to rearrange variables, use an integrating factor, or recognize a total differential before integrating.`
+  }
+  if (/equilibria|autonomous|slope fields|qualitative/i.test(chapter)) {
+    return `${title} is about reading behavior without always solving exactly. The useful answer is "${correct}"; use zero rates, direction arrows, stability, and uniqueness to understand how solutions move.`
+  }
+  if (/second order|undetermined|variation|laplace|systems/i.test(chapter)) {
+    return `${title} is part of the linear-ODE toolbox. The useful answer is "${correct}"; match the equation form to roots, forcing terms, transforms, eigenvalues, or a particular-solution method.`
+  }
+  if (/modeling|boundary|nonlinear|power series/i.test(chapter)) {
+    return `${title} is about choosing the right model or method. The useful answer is "${correct}"; translate the story or equation into rates, boundary data, nonlinearity, or coefficient relationships.`
+  }
+  return `${title} is a differential-equations concept. The useful answer is "${correct}"; connect the equation form to rates of change, solution behavior, and the solving method it suggests.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -22,8 +41,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: Numbas, WeBWorK, and Khan/Kolibri differential-equation clusters. This is an authored Floe-native drill item, not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from differential-equation coverage',
 })
 
@@ -45,7 +63,7 @@ const _baseDifferentialEquationsWorkoutGeneratedQuestions = makeQuestionBank('Ma
   ]),
   q(398004, 'Foundations', 'Solution meaning', 'A solution to a differential equation is:', 'A function that satisfies the equation when substituted in', [
     miss('Only a number that makes x zero', 'Solutions are usually functions, not just numbers.', 'Substitute the function and derivative.'),
-    miss('A graph color', 'Visual style is irrelevant.', 'Use the equation.'),
+    miss('A sketch that looks smooth but has not been checked in the equation', 'A graph can suggest a solution, but it must still satisfy the differential equation when substituted.', 'Use the equation.'),
     miss('A matrix inverse', 'That is not the general meaning here.', 'A DE solution is a function.'),
   ]),
   q(398005, 'Initial Value Problems', 'Initial condition', 'An initial condition such as y(0)=2 is used to:', 'Choose one particular solution from a family', [
@@ -121,7 +139,7 @@ const _baseDifferentialEquationsWorkoutGeneratedQuestions = makeQuestionBank('Ma
   q(398019, 'Autonomous Equations', 'Autonomous equation', 'An autonomous differential equation has derivative depending on:', 'The state variable, not explicitly on time', [
     miss('Time only and never the state', 'That is not the autonomous pattern.', 'Autonomous means no explicit t.'),
     miss('Random noise only', 'Noise is a stochastic extension, not the definition.', 'Look for dy/dt = f(y).'),
-    miss('The color of the graph', 'Display choices are irrelevant.', 'Use variables in the equation.'),
+    miss('The plotting style or color used to draw the solution curve', 'Autonomy is about whether time appears explicitly in the equation, not how its graph is displayed.', 'Use variables in the equation.'),
   ]),
   q(398020, 'Autonomous Equations', 'Phase line', 'A phase line is used mainly to analyze:', 'Equilibria and direction of motion for one-dimensional autonomous equations', [
     miss('Matrix multiplication dimensions', 'That is linear algebra.', 'Phase lines show arrows along the state axis.'),
@@ -170,7 +188,7 @@ const _baseDifferentialEquationsWorkoutGeneratedQuestions = makeQuestionBank('Ma
   ]),
   q(398029, 'Laplace Transforms', 'Laplace transform role', 'The Laplace transform often converts differential equations into:', 'Algebraic equations in a transform variable', [
     miss('Histograms', 'Laplace transforms are analytic tools.', 'They turn derivatives into algebraic expressions.'),
-    miss('Truth tables', 'That is logic.', 'Think s-domain.'),
+    miss('A table of true-or-false cases with no transform variable', 'Laplace transforms move the problem into an algebraic s-domain, not into logical truth tables.', 'Think s-domain.'),
     miss('Only geometry diagrams', 'The method is symbolic.', 'Differential becomes algebraic.'),
   ]),
   q(398030, 'Laplace Transforms', 'Derivative transform', 'The Laplace transform of y\' includes:', 'sY(s) - y(0)', [
@@ -184,14 +202,14 @@ const _baseDifferentialEquationsWorkoutGeneratedQuestions = makeQuestionBank('Ma
     miss('x dot A = 1 only', 'Dot product is not the standard system form.', 'Use x\' = Ax.'),
   ]),
   q(398032, 'Systems of ODEs', 'Eigenvalue behavior', 'For x\' = Ax, eigenvalues of A help determine:', 'Growth, decay, and oscillation behavior', [
-    miss('Only the font of the solution', 'Eigenvalues affect dynamics, not display.', 'They control modes.'),
+    miss('Only the formatting used to display the solution', 'Eigenvalues affect the solution modes themselves, not the typography used to write them.', 'They control modes.'),
     miss('Only whether A has integer entries', 'Integer entries are not the issue.', 'Eigenvalues determine time behavior.'),
-    miss('The number of unrelated variables in the title', 'They determine solution modes.', 'Use linear-system dynamics.'),
+    miss('The number of words used in the problem title', 'Eigenvalues come from the matrix A and determine solution modes, not from wording outside the equation.', 'Use linear-system dynamics.'),
   ]),
   q(398033, 'Numerical Methods', 'Euler method', 'Euler method updates y by using:', 'Current slope times step size', [
     miss('Future exact solution only', 'Euler is approximate and uses current information.', 'y_new = y_old + h f(x,y).'),
     miss('Only the second derivative', 'Basic Euler uses the first derivative field.', 'Use slope at current point.'),
-    miss('A random jump', 'Euler follows a deterministic update rule.', 'Step along tangent direction.'),
+    miss('A jump chosen without using the current derivative', 'Euler follows the current slope field; the step is not arbitrary.', 'Step along tangent direction.'),
   ]),
   q(398034, 'Numerical Methods', 'Step size', 'Reducing Euler method step size usually:', 'Improves accuracy but requires more steps', [
     miss('Always makes accuracy worse', 'Smaller steps typically reduce local approximation error.', 'Trade accuracy for computation.'),
@@ -206,10 +224,10 @@ const _baseDifferentialEquationsWorkoutGeneratedQuestions = makeQuestionBank('Ma
   q(398036, 'Modeling', 'Newton cooling', 'Newton\'s law of cooling says temperature changes at a rate proportional to:', 'The difference between object temperature and ambient temperature', [
     miss('The square of time only', 'Cooling depends on temperature gap.', 'The environment matters.'),
     miss('The object mass only', 'Mass may affect constants, but the law uses temperature difference.', 'Rate follows gap to ambient.'),
-    miss('The room number', 'That is irrelevant.', 'Use temperature difference.'),
+    miss('The label of the room where the experiment happens', 'The model depends on the temperature gap to the surroundings, not an arbitrary room label.', 'Use temperature difference.'),
   ]),
   q(398037, 'Modeling', 'Mixing model', 'A tank mixing differential equation usually tracks:', 'Amount of substance in the tank over time', [
-    miss('Only the color of the tank', 'The model tracks quantity/concentration.', 'Use inflow-outflow substance balance.'),
+    miss('Only the paint color on the outside of the tank', 'A mixing model tracks amount or concentration inside the tank, not decorative surface color.', 'Use inflow-outflow substance balance.'),
     miss('Only a determinant', 'Mixing is an applied ODE model.', 'Track amount.'),
     miss('Only a one-time average', 'The amount changes over time.', 'Use rate in minus rate out.'),
   ]),
@@ -230,7 +248,7 @@ const _baseDifferentialEquationsWorkoutGeneratedQuestions = makeQuestionBank('Ma
   ]),
   q(398041, 'Boundary Value Problems', 'Boundary value problem', 'A boundary value problem specifies conditions:', 'At two or more points of the independent variable', [
     miss('Only at the initial point', 'That is an initial value problem.', 'Boundary problems often use endpoints.'),
-    miss('Only on the graph color', 'Conditions are mathematical values.', 'Look for y(a), y(b).'),
+    miss('Only on how the solution curve is styled in a graphing window', 'Boundary conditions are mathematical values at endpoints or boundaries, not display settings.', 'Look for y(a), y(b).'),
     miss('Only on the coefficient names', 'Names are not boundary data.', 'Use values at boundaries.'),
   ]),
   q(398042, 'Existence and Uniqueness', 'Uniqueness idea', 'An existence and uniqueness theorem tells us:', 'Whether a solution exists and whether it is the only one near a point', [
@@ -249,7 +267,7 @@ const _baseDifferentialEquationsWorkoutGeneratedQuestions = makeQuestionBank('Ma
     miss('Declaring it unsolvable always', 'Many nonlinear equations are solvable by separation.', 'Try separating variables.'),
   ]),
   q(398045, 'Exact Equations', 'Exact equation idea', 'An exact first-order equation has a left side that can be treated as:', 'The total differential of a potential function', [
-    miss('A random unrelated derivative', 'Exactness has a specific potential-function meaning.', 'Think dF = M dx + N dy.'),
+    miss('Any derivative that appears somewhere else in the problem', 'Exactness has a specific potential-function meaning, not just the presence of a derivative.', 'Think dF = M dx + N dy.'),
     miss('Only a determinant', 'Exact equations are not determinant-only problems.', 'Use total differential.'),
     miss('A histogram bin', 'That is data analysis.', 'Stay with differential forms.'),
   ]),
@@ -264,8 +282,8 @@ const _baseDifferentialEquationsWorkoutGeneratedQuestions = makeQuestionBank('Ma
     miss('y = x divided by every derivative', 'That is not the standard form.', 'Power series use powers of x.'),
   ]),
   q(398048, 'Power Series', 'Recurrence relation', 'In a power-series solution, coefficients are often found using:', 'A recurrence relation', [
-    miss('Alphabetical sorting', 'Coefficient relations are algebraic, not alphabetical.', 'Equate powers of x.'),
-    miss('Only a graph color', 'Display is irrelevant.', 'Coefficients come from equations.'),
+    miss('Sorting the coefficient names alphabetically', 'Power-series coefficients are found from algebraic recurrence relations, not name ordering.', 'Equate powers of x.'),
+    miss('Only changing the color used to plot the approximate solution', 'Display choices do not determine the coefficient values; the differential equation does.', 'Coefficients come from equations.'),
     miss('Guessing every coefficient independently with no equations', 'The differential equation links coefficients.', 'Use recurrence.'),
   ]),
   q(398049, 'Concept Checks', 'Linearity test', 'Which equation is linear?', 'y\' + x y = sin x', [
