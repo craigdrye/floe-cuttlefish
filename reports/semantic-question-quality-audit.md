@@ -1,6 +1,6 @@
 # Semantic Question Quality Audit
 
-Generated on 2026-06-01T12:39:27.879Z.
+Generated on 2026-06-01T12:44:18.375Z.
 
 Scans `src/data/questionCatalog/*.ts` directly with the TypeScript parser, so it does not depend on app course wiring or runtime imports.
 

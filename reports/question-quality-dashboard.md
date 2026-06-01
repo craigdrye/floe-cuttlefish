@@ -1,6 +1,6 @@
 # Question Quality Dashboard
 
-Generated on 2026-06-01T12:39:46.406Z.
+Generated on 2026-06-01T12:44:36.827Z.
 
 Only questions reachable through the app course catalog builders are included.
 
@@ -12,7 +12,7 @@ Only questions reachable through the app course catalog builders are included.
 - Recoverable: 0
 - Quarantined: 0
 - Top actions: none
-- Top authoring flags: missing-alternate-prompt (39434), missing-challenge-rating (39434), solution-answer-only (39391), lesson-too-thin (17934), prompt-under-15-words (3248)
+- Top authoring flags: missing-alternate-prompt (39434), missing-challenge-rating (39434), solution-answer-only (39391), lesson-too-thin (17966), prompt-under-15-words (3248)
 
 ## Priority Tracks
 
