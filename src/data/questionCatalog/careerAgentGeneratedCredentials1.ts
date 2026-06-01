@@ -201,7 +201,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A concise summary of customer profile, key transactions, red flags, corroborating evidence, and unresolved questions',
       [
         ['A chronological list of transactions with no customer profile or risk explanation', 'Chronology helps, but without profile, red flags, evidence, and open questions the investigator still has to rebuild the analysis.'],
-        ['A message saying "good luck, this one is spicy"', 'Casual handoffs lose context and waste investigator time on rediscovery.'],
+        ['A transaction export with no explanation of profile fit or unresolved questions', 'Raw data alone does not preserve the risk reasoning the investigator needs to understand why the case was escalated.'],
         ['Only the customer name and account number', 'Identifiers without context strip the case of its analytical value.'],
       ],
       'Escalation should preserve context. A good handoff helps the next reviewer understand what happened, why it matters, and what remains unresolved.'),
@@ -282,7 +282,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'It may disclose suspicious activity reporting and compromise the investigation',
       [
         ['It uses too many words', 'Verbosity is not the issue; the substantive disclosure of SAR status is.'],
-        ['It fails to mention the branch phone number', 'Contact-detail completeness is irrelevant; the act of disclosure is the problem.'],
+        ['It is acceptable if the employee avoids using the exact term SAR', 'Tipping-off risk turns on revealing the investigation or reporting status, not on whether a particular acronym is spoken.'],
         ['It is acceptable as long as the customer promises secrecy', 'A customer promise does not cure a confidentiality breach; the disclosure itself is the violation.'],
       ],
       'AML staff must control customer communication around suspicious activity. Disclosing SAR status or investigative conclusions can create serious risk.'),
@@ -292,7 +292,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['Screen only the payment destination and ignore trade documents', 'Sanctions risk attaches to the whole flow, including intermediaries and routes.'],
         ['Sanctions analysis applies only to named parties, not shipping routes', 'Shipping geography is squarely within sanctions analysis, especially for routing through restricted regions.'],
-        ['Approve it because the invoice has a clean font', 'Document aesthetics are not a control input; substance is.'],
+        ['Approve it because the named payment destination is not sanctioned', 'Screening only the payment endpoint misses routed shipments, intermediaries, goods, and other facts that can create sanctions exposure.'],
       ],
       'Sanctions and AML reviews should consider the whole fact pattern. Payment geography, goods, vessels, intermediaries, and documents can all change risk.'),
     q(4101228, 'Career Skills', 'Customer Due Diligence and KYC', 'Source-of-wealth gap',
@@ -301,7 +301,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['Business-sale claims never need documentation', 'High-risk relationships expect corroboration; bare claims are not enough.'],
         ['Wealth is proven by having a large balance', 'Balance shows funds present, not how they were accumulated.'],
-        ['Public evidence is suspicious because it is easy to read', 'Public corroboration is generally a strength, not a weakness, in SoW review.'],
+        ['A client biography is enough even without independent corroboration', 'Self-presented background can help frame the review, but high-risk source-of-wealth claims need independent support.'],
       ],
       'Higher-risk relationships often require stronger corroboration. Source-of-wealth review asks how the person accumulated wealth, not just where one deposit came from.'),
     q(4101229, 'Career Skills', 'Investigations and Case Building', 'Quality escalation choice',
@@ -595,7 +595,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Management offers to share unreleased quarterly bookings if the analyst promises not to quote them. What is the safest response?',
       'Decline material nonpublic information and keep the discussion within public-information boundaries',
       [
-        ['Accept the numbers but write them in tiny handwriting', 'Possessing MNPI is the violation; how you record it is irrelevant.'],
+        ['Accept the numbers but do not quote them directly in the report', 'Using or possessing MNPI is still a problem even if the report paraphrases or omits the source detail.'],
         ['Use the information only for a private model update', 'Private use of MNPI is still misuse of MNPI.'],
         ['Trade first and ask compliance later', 'Trading on MNPI is the worst form of misuse and triggers serious consequences.'],
       ],
@@ -615,7 +615,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['Only that the analyst feels more optimistic today', 'Sentiment is not analysis; readers need supportable rationale.'],
         ['The rating change without any supporting analysis', 'Unsupported upgrades violate research-report discipline.'],
-        ['A joke about the stock finally waking up and no model detail', 'Tone is not substitute for evidence; readers cannot act on humor.'],
+        ['A rating change summary that omits the revised estimates and valuation bridge', 'Readers need the analytical basis for the upgrade; a conclusion without the changed drivers is not supportable.'],
       ],
       'Research reports should connect conclusions to evidence. Readers need to understand the assumptions and risks behind a changed recommendation.'),
     q(4101405, 'Series 86', 'Analyst Ethics, Conflicts, and Disclosures', 'Fair access',
@@ -667,7 +667,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A published draft accidentally uses 10% revenue growth in the text but 1% in the model. What should be fixed before release?',
       'Reconcile the model, text, and conclusion so the report is internally consistent',
       [
-        ['Release it because readers enjoy treasure hunts', 'Internal inconsistency confuses or misleads readers; it is a defect, not a feature.'],
+        ['Release it and let readers decide which growth assumption to trust', 'Readers should not have to reconcile conflicting model and text assumptions; inconsistency can make the report misleading.'],
         ['Keep both numbers so one is probably right', 'Probability hedging by inconsistency is not a research practice.'],
         ['Delete the revenue discussion entirely', 'Removing the topic to hide the inconsistency strips out the analytical core.'],
       ],
@@ -678,7 +678,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['Publish quickly before anyone asks for evidence', 'Speed without evidence is exactly the practice rules prohibit.'],
         ['Label the rumor as a fact if it helps the thesis', 'Misrepresenting rumor as fact is straightforwardly deceptive.'],
-        ['Use the rumor only if the trader promises it is spicy', 'Trader enthusiasm is not a verification method.'],
+        ['Use the rumor if several trading-desk contacts repeat it', 'Repetition within the same interested channel is not independent verification and does not make the claim reportable as fact.'],
       ],
       'Research must be supportable. Rumors require careful verification and cannot be treated as established facts merely because they affect a thesis.'),
     q(4101412, 'Series 86', 'Forecasting, Modeling, and Sensitivity', 'Earnings bridge',
@@ -740,7 +740,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Perform a valuation sanity check against peer multiples, growth, margins, and business quality before relying on the model output',
       [
         ['Publish because DCF outputs outrank common sense', 'DCF outputs are only as good as the assumptions; sanity-checks exist for this reason.'],
-        ['Raise the peer group multiple until the target price feels exciting', 'Adjusting peers to back into a result is reverse-engineering.'],
+        ['Raise the peer group multiple until it reconciles to the DCF target', 'Changing the peer benchmark to force agreement with the DCF is reverse-engineering, not an independent valuation cross-check.'],
         ['Delete the relative valuation section so nobody asks', 'Hiding a cross-check is exactly what credibility-protecting review prevents.'],
       ],
       'Valuation judgment includes checking whether a model result is economically sensible when compared with business fundamentals and peers.'),
@@ -831,7 +831,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['Use more superlatives so the conviction feels stronger', 'Superlatives do not substitute for evidence.'],
         ['Avoid risk discussion because it weakens the story', 'A defensible thesis stays defensible because it engages risk.'],
-        ['Base the thesis on management charisma and a tidy chart', 'Charisma is not a model input.'],
+        ['Base the thesis on management access and a visually smooth forecast', 'Access and presentation quality do not establish drivers, valuation support, or falsifiable evidence for the recommendation.'],
       ],
       'A defensible research thesis connects evidence, valuation, catalysts, risks, and decision points in a way readers can test.'),
     q(4106882, 'Series 86', 'Analyst Ethics, Conflicts, and Disclosures', 'CFO elevator whisper',
@@ -867,7 +867,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['Any public company can be a peer if the ticker is memorable', 'Comparability turns on economics, not ticker length.'],
         ['Higher multiples are more professional', 'Multiples must fit the company, not signal sophistication.'],
-        ['A multiple needs no support when the company has a nice product', 'Product opinion does not substitute for valuation discipline.'],
+        ['A premium multiple is justified solely because customers like the product', 'Product enthusiasm may inform assumptions, but it does not replace comparable economics, growth, margin, and risk analysis.'],
       ],
       'Relative valuation depends on comparability, normalization, and transparent rationale.'),
     q(4106898, 'Series 86', 'Analyst Ethics, Conflicts, and Disclosures', 'Personal account itch',
@@ -875,7 +875,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Follow personal trading restrictions and preclearance; do not trade ahead of research dissemination',
       [
         ['Trade quickly because the report is not public yet', 'That is precisely the front-running scenario that personal-trading rules prohibit.'],
-        ["Buy in a spouse's account to keep it tidy", 'Beneficial-ownership rules typically capture related-party accounts.'],
+        ["Buy in a spouse's account because it is not the analyst's brokerage account", 'Related-party and beneficial-ownership rules typically capture spouse accounts, so the conflict and front-running risk remain.'],
         ['Trade only a small amount so it feels harmless', 'Size does not cure a front-running violation.'],
       ],
       'Personal trading rules prevent analysts from benefiting from unpublished research and conflicts.'),
@@ -905,7 +905,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A company has a beautiful anti-bribery policy, but approvals are routinely backdated after payments. What is the strongest compliance concern?',
       'The written control may not be operating effectively in practice',
       [
-        ['The policy font is too formal', 'Typography is irrelevant; operation is what matters.'],
+        ['The policy owner cannot show approvals occurred before payments were released', 'The issue is operating evidence for the control, not whether the policy document itself looks complete.'],
         ['Backdating makes the control stronger', 'Backdating defeats the preapproval purpose.'],
         ['Payment controls are irrelevant if the policy is long', 'Policy length is not a control attribute.'],
       ],
@@ -1041,7 +1041,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Actionable accountability information that lets oversight track remediation',
       [
         ['A longer executive portrait section', 'Cover pages are not oversight inputs.'],
-        ['More colors in the risk heatmap only', 'Color does not substitute for ownership and timeline.'],
+        ['Only a refreshed severity rating with no owner or target date', 'Severity labels help prioritize, but oversight also needs accountability, aging, milestones, and validation.'],
         ['A statement that every issue will fix itself eventually', 'Passive remediation is not a control.'],
       ],
       'Oversight needs more than issue labels. Owners, timelines, status, aging, and obstacles help leaders test whether remediation is real.'),
@@ -1069,7 +1069,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['A policy exists in a folder nobody opens', 'Existence is not operation.'],
         ['Training slides were uploaded once three years ago', 'Stale, unused training is not evidence of effectiveness.'],
-        ['The company says ethics are important in a slogan', 'Slogans do not measure outcomes.'],
+        ['Leadership cites values statements but cannot show control testing or remediation evidence', 'Tone statements can support culture, but they do not demonstrate that controls operate or issues are fixed.'],
       ],
       'Program effectiveness is shown by design, operation, testing, culture, and remediation. Paper controls need evidence that they shape real behavior.'),
     q(4106800, 'Career Skills', 'Discipline, Remediation, and Reporting', 'Board asks for the real weather',
@@ -1161,7 +1161,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'During a storm, the control room receives hundreds of alarms in two minutes. What is the biggest operational risk of poor alarm management?',
       'Operators may miss the most critical signals needed for timely decisions',
       [
-        ['The screen colors may clash', 'Aesthetic complaints are not the reliability concern.'],
+        ['Operators may rely on the first alarm received rather than the highest-priority condition', 'Alarm order is not risk order; poor prioritization can hide the signal that needs immediate action.'],
         ['More alarms always improve understanding', 'Volume without priority degrades, not improves, situational awareness.'],
         ['Alarms matter only after restoration is complete', 'Alarms are central during the event, not after.'],
       ],
@@ -1279,7 +1279,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Whether the condition affects operating limits and requires timely reliability action',
       [
         ['Whether the limit name sounds intimidating', 'Names are not the analytical hook.'],
-        ['Whether the facility is easy to draw on a map', 'Cartographic ease is irrelevant.'],
+        ['Whether the facility is familiar enough that operators usually handle it informally', 'Familiarity does not reduce the need to assess limit impact, timing, and required reliability action.'],
         ['Whether the loading can be ignored until the next annual plan', 'IROL-class risks need real-time action, not annual review.'],
       ],
       'Operator exams often test limit discipline. The key is recognizing when a condition threatens reliable operation and needs coordinated action.'),
@@ -1369,7 +1369,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Inconsistent timestamps can obscure event sequence, response timing, and compliance evidence',
       [
         ['Timestamps matter only to historians', 'Event reconstruction is operational, not historical.'],
-        ['Different clocks make the record more creative', 'Creativity is not a reliability standard.'],
+        ['Approximate sequence is enough if the final outage report is complete', 'A polished final report cannot recover exact response timing if the underlying timestamps conflict.'],
         ['Sequence is irrelevant if equipment names are present', 'Sequence is exactly what investigators need.'],
       ],
       'Event reconstruction depends on accurate time alignment. Poor timestamps can hide cause, response, and required timing.'),
@@ -1388,14 +1388,14 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['Cyber and physical teams should never share awkward facts', 'Cross-team sharing is exactly what coordination requires.'],
         ['Unauthorized access matters only if a firewall alarm rings', 'Physical access at substations is operationally significant on its own.'],
-        ['Operations should learn about it during the annual picnic', 'Annual cadence is the opposite of timely.'],
+        ['Operations can wait for the monthly security summary if no outage occurred', 'Unauthorized access near control equipment can affect reliability before a monthly reporting cadence catches it.'],
       ],
       'Cyber and physical risks can connect around operational assets. Timely handoffs help protect reliability and investigation quality.'),
     q(4106838, 'Career Skills', 'Emergency Operations and Load Shed', 'Conservative operations moment',
       'A storm is moving in, contingency analysis is degraded, and neighboring operators report unusual flows. What operating posture is most defensible?',
       'Use conservative operations, coordination, and verified actions until situational awareness improves',
       [
-        ['Increase transfers because uncertainty is exciting', 'Uncertainty under stress argues for caution, not aggression.'],
+        ['Maintain normal transfer levels until every data source is fully restored', 'Normal operations may be too aggressive when contingency tools are degraded and neighboring flows are unusual.'],
         ['Neighboring-system information is irrelevant outside the local footprint', 'Adjacent flows affect local conditions.'],
         ['Wait for perfect data before taking any risk-reducing step', 'Risk-reducing posture is appropriate before perfect data arrives.'],
       ],
@@ -1534,7 +1534,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A claim has elements A, B, and C. One prior-art reference clearly discloses A, B, and C together. What is the main novelty problem?',
       'A single reference appears to disclose every claim element',
       [
-        ['The invention is novel because three letters are involved', 'Element count is not novelty.'],
+        ['The invention is novel because the applicant describes the elements with different labels', 'Renaming elements does not avoid anticipation when one reference discloses the same claimed structure or steps.'],
         ['Only commercial success matters', 'Commercial success is a secondary consideration, not the novelty test.'],
         ['Novelty cannot be assessed from prior art', 'Prior art is precisely how novelty is tested.'],
       ],
@@ -1543,7 +1543,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Why do claims matter so much in a patent application?',
       'They define the legal boundaries of the protection being sought',
       [
-        ['They are decorative summaries for the cover page', 'Claims are legal boundaries, not summaries.'],
+        ['They are optional summaries that can be ignored if the specification is detailed', 'The specification supports the claims, but the claims define the enforceable scope being examined.'],
         ['They replace the entire specification', 'Claims are read in light of the specification, not substitutes for it.'],
         ['They matter only after the patent expires', 'Claims matter most during prosecution and enforcement.'],
       ],
@@ -1553,7 +1553,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Argue against the rejection, amend the claim, or combine argument and amendment',
       [
         ['An outstanding rejection can be handled after the application issues', 'Issuance does not happen while a rejection is outstanding.'],
-        ['File a trademark specimen instead', 'Wrong jurisdiction; trademarks are a different filing.'],
+        ['Respond only by submitting new marketing materials about the product', 'Product materials do not answer the legal and technical basis of the examiner rejection unless tied to claim amendments or arguments.'],
         ['Ask the examiner to erase the record as a favor', 'The prosecution record cannot be informally erased.'],
       ],
       'Patent prosecution often proceeds through written responses. Applicants commonly argue, amend, or do both while maintaining the record.'),
@@ -1562,7 +1562,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Whether combining references would make the claimed invention obvious',
       [
         ['Whether one reference anticipates every element', 'Single-reference anticipation requires one reference to disclose all elements.'],
-        ['Whether the filing fee depends on letter C', 'Fees do not depend on element names.'],
+        ['Whether element C can be ignored because it appears in a second reference', 'A missing element in the primary reference often shifts the analysis to obviousness, not to ignoring the claim limitation.'],
         ['Whether the inventor must remove element A', 'Element removal is a different drafting question, not the obviousness issue.'],
       ],
       'When elements are spread across references, the analysis usually shifts from single-reference novelty toward obviousness and reasons to combine.'),
@@ -1579,7 +1579,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Why is deadline tracking so unforgiving in patent practice?',
       'Missed deadlines can forfeit rights or require limited, costly recovery steps',
       [
-        ['Deadlines exist only to decorate docketing software', 'They are legal triggers, not decorations.'],
+        ['Deadlines can be tracked informally because the examiner will usually remind the applicant', 'Patent deadlines are legal triggers; relying on informal reminders creates avoidable forfeiture risk.'],
         ['Every missed deadline is always free to fix', 'Many deadlines are non-extendable or require petitions.'],
         ['Substantive patentability no longer matters if the calendar is neat', 'Calendars do not replace substantive analysis.'],
       ],
@@ -1660,7 +1660,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Before filing, the inventor commercially offers the claimed device for sale. What should counsel analyze first?',
       'Whether the activity creates prior art or a statutory bar based on timing and applicable exceptions',
       [
-        ['Only whether the offer used the word patent', 'On-sale analysis does not turn on a magic word.'],
+        ['Only whether the buyer understood the technical details of the invention', 'On-sale analysis focuses on commercial offer and readiness for patenting; buyer technical understanding is not the controlling test.'],
         ['Whether the sale price was high enough to prove inventiveness', 'Price is not a patentability metric.'],
         ['Whether the device was popular on launch day', 'Popularity is not a statutory bar test.'],
       ],
@@ -1741,7 +1741,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'The inventor sends a journal article that appears closer than any art cited so far and asks whether it can stay out because it is inconvenient. What is the correct response?',
       'Consider materiality and submit information consistent with the duty of disclosure',
       [
-        ['Hide it unless the examiner asks nicely', 'Materiality triggers disclosure regardless.'],
+        ['Wait to see whether the examiner independently finds the article', 'The duty of disclosure is not satisfied by hoping the Office finds material information on its own.'],
         ['Submit only favorable articles', 'Selective submission violates candor.'],
         ['Tell the inventor that inconvenience is a recognized exception', 'There is no inconvenience exception.'],
       ],
@@ -1761,7 +1761,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['Client preference eliminates the need to respond to a restriction requirement', 'Restriction must be answered.'],
         ['Delete all claims and hope the examiner chooses', 'Examiners do not unilaterally select claims for the applicant.'],
-        ['Demand examination of everything because the title is singular', 'Title is not the restriction test.'],
+        ['Argue that shared specification support alone requires every claim to be examined together', 'Shared disclosure does not answer whether the claims are drawn to independent or distinct inventions under restriction practice.'],
       ],
       'Restriction practice requires election decisions, possible traversal, and planning for divisional coverage.'),
     q(4106909, 'Career Skills', 'USPTO Ethics and Practitioner Judgment', 'Citation pile timing',
@@ -1921,7 +1921,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A monitoring plan tests 20 loans from a portfolio of 50,000 loans and finds no errors. What is the best next question?',
       'Whether the sample design is risk-based enough to support the conclusion being drawn',
       [
-        ['Whether the spreadsheet format looks sufficiently polished', 'Format is not the issue.'],
+        ['Whether a small clean sample can support broad assurance over a high-volume portfolio', 'The sampling design must match the conclusion; presentation quality does not make the evidence representative.'],
         ['Whether the absence of errors proves the entire portfolio is risk-free', 'Tiny clean samples do not prove population safety.'],
         ['Whether the business can now stop all loan monitoring', 'Cessation cannot follow from a tiny sample.'],
       ],
@@ -2065,7 +2065,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A bank expands digital lending but rarely serves low- and moderate-income neighborhoods in its assessment area. What should compliance consider?',
       'CRA performance, fair access, lending patterns, and whether strategy aligns with community credit needs',
       [
-        ['CRA applies only to branch paint colors', 'CRA is substantive, not decorative.'],
+        ['CRA review is unnecessary if the branch closures were cost-justified', 'Cost justification may matter, but it does not replace analysis of community access, lending patterns, and CRA performance.'],
         ['Digital delivery removes all community-lending expectations', 'Digital delivery is in scope.'],
         ['Serving profitable neighborhoods alone proves CRA strength', 'Profitability is not the CRA test.'],
       ],
@@ -2093,7 +2093,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Assess fair-lending and CRA impact, business justification, outreach, access changes, and monitoring evidence',
       [
         ['Treat low complaint volume as proof there is no issue', 'Volume of complaints is not access analysis.'],
-        ['Review only whether the branch-closing memo used approved formatting', 'Format does not address access impact.'],
+        ['Review only whether each branch closure followed facilities policy', 'Facilities compliance does not answer fair-lending, CRA, access, or community-impact questions.'],
         ['Wait for the next CRA exam before collecting any facts', 'Proactive analysis is the expectation.'],
       ],
       'Fair-lending and CRA judgment looks at access, patterns, justification, and community impact, not only formal complaints.'),
@@ -2195,8 +2195,8 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A loan-support AI gives recommendations. Human reviewers can click approve but cannot see evidence, override outputs, or get time to investigate. What is the oversight problem?',
       'The human role is nominal because reviewers lack practical ability to understand, challenge, or override the output',
       [
-        ['The setup is strong because a human button exists', 'Buttons are not oversight.'],
-        ['The model is ungoverned only if it has no dashboard', 'Dashboards are not oversight.'],
+        ['The setup is strong because a reviewer can approve the output faster than the model can be challenged', 'Speedy approval is not meaningful oversight if reviewers lack evidence, authority, and time to disagree.'],
+        ['The oversight gap is solved by showing reviewers the final score only', 'A score alone does not let reviewers understand evidence, limitations, or grounds for override.'],
         ['Oversight is impossible whenever AI is involved', 'Meaningful oversight is possible with proper design.'],
       ],
       'Human oversight is meaningful only when people have authority, information, time, and a workable path to disagree.'),
@@ -2224,14 +2224,14 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['The vendor confidence statement is a substitute for diligence', 'Confidence is not evidence.'],
         ['Popular AI tools never need review', 'Popularity is not a control.'],
-        ['The tool must be safe because the vendor used the word compliant', 'Labels are not assurance.'],
+        ['The tool is adequately reviewed because the vendor provides a generic certification badge', 'Generic vendor assurances do not show suitability, controls, or residual risk for this organization\'s deployment.'],
       ],
       'Third-party AI still requires assessable evidence, contractual controls, monitoring expectations, and deployment-specific review.'),
     q(4101907, 'Career Skills', 'Transparency, Notices, and Human Oversight', 'Disclosure timing',
       'A customer-facing AI assistant sometimes gives product recommendations. What transparency practice is most useful?',
       'Tell users when they are interacting with AI and provide clear paths for help, correction, or escalation when needed',
       [
-        ['Hide AI involvement so users treat it like magic', 'Concealment is the opposite of transparency.'],
+        ['Disclose AI involvement only after a user complains about the recommendation', 'Transparency should be available when the interaction occurs, not only after harm or confusion arises.'],
         ['Disclose only in an internal architecture diagram', 'Internal diagrams do not inform users.'],
         ['Provide a 90-page model card as the only customer help path', 'Unusable disclosure is not transparency.'],
       ],
@@ -2249,7 +2249,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A company has an AI ethics policy but no inventory of systems, owners, data, or use cases. What is the biggest weakness?',
       'The company cannot reliably apply governance because it does not know what systems exist or how they are used',
       [
-        ['The ethics policy is invalid only because it is short', 'Length is not the issue.'],
+        ['A policy alone is enough if business units remember to self-report systems', 'Voluntary memory is not inventory control; governance needs a reliable way to identify systems, owners, data, and uses.'],
         ['Inventory matters only for engineers, not business users', 'Inventory is a governance, not engineering, tool.'],
         ['Good intentions replace operational visibility', 'Intentions do not enforce themselves.'],
       ],
@@ -2267,7 +2267,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A model supports adverse customer decisions, but staff cannot explain the main reasons for an output. What risk does that create?',
       'Affected people and reviewers may be unable to challenge, understand, or validate decisions that matter',
       [
-        ['The model becomes more fair because nobody can second-guess it', 'Opacity is not fairness.'],
+        ['High overall accuracy is enough even if staff cannot explain adverse outputs', 'Accuracy and explainability answer different governance needs; affected people and reviewers may still need reasons.'],
         ['Explanation is needed only for low-impact toy systems', 'High-impact systems often need more, not less.'],
         ['A high accuracy score eliminates all explanation concerns', 'Accuracy does not erase explainability needs.'],
       ],
@@ -2340,7 +2340,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Each category can trigger different restrictions, obligations, governance owners, and timelines',
       [
         ['All AI systems have exactly the same EU obligations', 'Obligations are tiered.'],
-        ['GPAI obligations apply only to office printers', 'GPAI is about general-purpose models, not printers.'],
+        ['GPAI obligations are irrelevant whenever the model is embedded in another application', 'Embedding a general-purpose model can create both upstream model obligations and downstream deployment obligations.'],
         ['High-risk status depends only on model size, not use context', 'Use context is central.'],
       ],
       'AI governance needs legal classification as well as technical review because obligations can depend on role, use, risk category, and jurisdiction.'),
@@ -2384,7 +2384,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A team says it red-teamed a high-impact AI system but has no scenarios, findings, severity ratings, or remediation record. What is missing?',
       'Documented adversarial testing evidence that shows what was tested, what failed, what was fixed, and what residual risk remains',
       [
-        ['Only a more exciting name for the exercise', 'Naming is not evidence.'],
+        ['Only a statement that the team discussed adversarial scenarios informally', 'Informal discussion does not show which scenarios were tested, what failed, or what residual risk remains.'],
         ['A private assurance that testing felt difficult', 'Difficulty is not documentation.'],
         ['A decision to skip remediation because testing happened', 'Remediation is the point of testing.'],
       ],
@@ -2421,7 +2421,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Subgroup performance and potential disparate impact need investigation and mitigation before relying on the model',
       [
         ['Overall accuracy proves the system is fair enough', 'Aggregate metrics can hide disparity.'],
-        ['Age-group differences are irrelevant if the model has a clean interface', 'Interface aesthetics do not address bias.'],
+        ['Age-group differences are acceptable if the aggregate accuracy target is met', 'Aggregate accuracy can coexist with disparate impact; subgroup outcomes still need investigation.'],
         ['Bias review is needed only after a lawsuit', 'Litigation is not the right trigger.'],
       ],
       'Bias assessment should examine outcomes across relevant groups, not only aggregate metrics.'),
@@ -2599,7 +2599,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Whether the work is classified correctly and reviewed under the applicable code requirements before execution',
       [
         ['Whether production likes the fastest repair option', 'Production preference is not the classification test.'],
-        ['Whether the weld looks tidy from ten feet away', 'Visual tidiness is not a code criterion.'],
+        ['Whether the repair is described as routine maintenance in the work request', 'Administrative labels do not decide classification; the technical effect on design conditions and pressure boundaries does.'],
         ['Whether the work order uses the word "maintenance" rather than "alteration"', 'Labels on a work order do not control the classification; the technical effect on the pressure boundary and design conditions does.'],
       ],
       'Repair, alteration, and rerating classifications can trigger different engineering, authorization, inspection, and documentation requirements.'),
@@ -2643,7 +2643,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A repair was performed, but the file lacks drawings, authorization, inspection results, and pressure test rationale. What is the main issue?',
       'The repair record may not support code compliance, future inspection planning, or defensible integrity decisions',
       [
-        ['The missing file matters only if the equipment is painted blue', 'Color is irrelevant.'],
+        ['The file is adequate if operations verbally remembers who approved the repair', 'Verbal memory cannot support future integrity decisions, code compliance evidence, or inspection planning.'],
         ['Records are optional once the equipment returns to service', 'Records are required for ongoing integrity work.'],
         ['The repair is automatically invalid because one document is missing', 'One missing item does not auto-invalidate the repair, but does weaken evidence.'],
       ],
@@ -2654,7 +2654,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['To inspect only the newest equipment', 'Age is not the only risk driver.'],
         ['To eliminate all inspection intervals permanently', 'RBI sets intervals, it does not remove them.'],
-        ['To replace engineering judgment with a colorful matrix', 'RBI structures judgment; it does not replace it.'],
+        ['To justify inspecting low-risk and high-risk items on the same interval', 'RBI is meant to differentiate inspection effort based on credible likelihood and consequence, not flatten it.'],
       ],
       'Risk-based inspection combines likelihood, consequence, damage understanding, and data quality to plan inspection effort.'),
     q(4102011, 'Career Skills', 'API 510 Pressure Vessel Inspection', 'Test pressure nerves',
@@ -2680,7 +2680,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'It can reliably detect and size the expected damage in the relevant location and conditions',
       [
         ['It is the cheapest method on the vendor menu', 'Cost is not the suitability test.'],
-        ['It gives a colorful image even if it cannot size wall loss accurately', 'A visually rich output is not enough; the method must detect and size the expected thinning reliably.'],
+        ['It produces a report quickly even if sizing accuracy is poor', 'Turnaround time does not make an NDE method suitable when acceptance depends on reliable detection and sizing.'],
         ['It is the method the team used last time for a different mechanism', 'Methods must fit the mechanism at hand.'],
       ],
       'NDE selection should fit the damage mechanism, location, access, accuracy needs, and acceptance criteria.'),
@@ -2697,7 +2697,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A temporary clamp stops a leak. What is the strongest inspector concern after immediate safety is addressed?',
       'Whether the temporary repair is engineered, documented, monitored, and replaced or resolved within an approved plan',
       [
-        ['Whether the clamp looks tidy from a distance', 'Tidiness is not the integrity test.'],
+        ['Whether the leak has stopped, with no follow-up plan for the temporary repair', 'Stopping leakage addresses the immediate condition but does not prove the repair is engineered, monitored, or timely resolved.'],
         ['Whether production would prefer to forget it exists', 'Forgetting is the failure pattern.'],
         ['Whether a temporary fix automatically becomes permanent after one quiet week', 'Time does not promote temporary repairs.'],
       ],
@@ -2787,7 +2787,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A candidate can find formulas but keeps losing time hunting definitions. What should their study plan emphasize?',
       'Tabbed code navigation, definition drills, and practice classifying scenarios before searching',
       [
-        ['Memorizing page colors only', 'Color is not navigation.'],
+        ['Practicing formulas without drilling where definitions and scope rules live', 'Formula familiarity helps, but API exam misses often come from applying the right calculation in the wrong code context.'],
         ['Reading every page for the first time during the exam', 'First-read on exam day wastes time.'],
         ['Ignoring terminology because formulas are enough', 'Terminology gates the right formula.'],
       ],
@@ -2797,7 +2797,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Evaluate the localized metal loss using applicable criteria, update remaining-life assumptions, and determine needed repair or fitness review',
       [
         ['Average the pits with clean plate and move on', 'Averaging masks localized damage.'],
-        ['Paint over the area so the next inspection looks nicer', 'Painting hides, not addresses, damage.'],
+        ['Use the general corrosion average to accept the plate without localized assessment', 'Localized pitting can control integrity even when average wall loss appears acceptable.'],
         ['Corrosion rates are uniform enough to overlook localized pitting', 'Local damage exists precisely because rates are not uniform.'],
       ],
       'API inspection judgment distinguishes general corrosion from localized damage that can control integrity decisions.'),
@@ -2815,7 +2815,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'The damage-mechanism review, inspection plan, CML strategy, and monitoring for credible new corrosion risks',
       [
         ['Keep the plan because the vessel serial number did not change', 'Plans should follow service changes.'],
-        ['Inspect less because new feed is exciting', 'Excitement is not a planning input.'],
+        ['Keep the old plan until corrosion is visible externally', 'Waiting for visible damage ignores process-change evidence that can introduce new internal mechanisms.'],
         ['Wait for a leak to identify the mechanism', 'Leaks are failures, not the trigger.'],
       ],
       'Inspection planning should respond to process changes that alter credible damage mechanisms.'),
@@ -2846,7 +2846,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Whether the appropriation is legally available for that purpose before any commitment is made',
       [
         ['Whether the urgent need sounds mission-friendly enough', 'Mission tone is not legal availability.'],
-        ['Whether the spreadsheet can label the cost creatively', 'Labels do not change legal purpose.'],
+        ['Whether the cost can be described broadly enough to fit the available account', 'Narrative framing cannot expand an appropriation beyond its legally available purpose.'],
         ['Whether year-end pressure makes purpose restrictions disappear', 'Time of year does not erase purpose limits.'],
       ],
       'Fiscal control starts with availability of funds for purpose, time, and amount. Mission urgency does not erase those limits.'),
@@ -2954,7 +2954,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Whether the requirement reflects a bona fide need of the current period of availability',
       [
         ['Whether the storage closet has room', 'Storage is not the legal test.'],
-        ['Whether the vendor has a fun catalog', 'Catalogs do not establish bona fide need.'],
+        ['Whether the vendor discount expires before next year funding arrives', 'A discount may affect timing judgment, but it does not by itself establish a current-period bona fide need.'],
         ['Whether buying early makes the obligation chart look busy', 'Charts are not the test.'],
       ],
       'Time availability rules focus on whether funds are used for a legitimate need of the period for which they are available.'),
@@ -3119,7 +3119,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'The legally permissible, physically possible, financially feasible, and maximally productive use supported by evidence',
       [
         ['The current owner favorite idea regardless of feasibility', 'Owner preference is not the HBU test.'],
-        ['The use with the most exciting brochure', 'Brochures are not analysis.'],
+        ['The use the owner can market most aggressively without feasibility support', 'Marketing enthusiasm does not satisfy the legal, physical, financial, and productivity tests for HBU.'],
         ['The first use listed in the zoning table without further analysis', 'Zoning order is not the HBU answer.'],
       ],
       'Highest and best use is constrained by legal, physical, financial, and productivity tests.'),
@@ -3336,7 +3336,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['Use the sale price raw because it closed', 'Financing terms affect price.'],
         ['Reject every sale with any terms to avoid thinking', 'Adjustment, not rejection, is the discipline.'],
-        ['Adjust only for paint color', 'Color is irrelevant.'],
+        ['Adjust only for visible physical condition and ignore financing terms', 'Financing concessions can affect transaction price even when the building itself is comparable.'],
       ],
       'Comparable sales need analysis for conditions of sale, financing, rights conveyed, time, location, and physical differences.'),
     q(4106964, 'Career Skills', 'Cost Approach and Depreciation', 'New roof confusion',
@@ -3379,7 +3379,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A newly built office property is 35% leased, but the pro forma assumes stabilized occupancy immediately. What should the appraiser analyze?',
       'Lease-up time, market vacancy, absorption, concessions, and risk before applying stabilized income',
       [
-        ['New interior finishes justify stabilized full occupancy without market support', 'Carpet is not occupancy data.'],
+        ['Current asking rents prove immediate stabilization without lease-up analysis', 'Asking rents do not show absorption timing, concessions, downtime, or the risk of reaching stabilized occupancy.'],
         ['Concessions are too temporary to affect income analysis', 'Concessions are valuation inputs.'],
         ['Use stabilized income without any lease-up adjustment', 'Stabilization is a future state.'],
       ],
@@ -3411,14 +3411,14 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['CRF data are stronger when no source exists', 'Source is required for verifiability.'],
         ['Source only matters if the monitor is visiting today', 'Source matters throughout.'],
-        ['A neat CRF replaces the need for traceability', 'Neatness is not traceability.'],
+        ['A CRF value is acceptable if it matches the coordinator\'s memory', 'Memory does not create a verifiable source trail for the reported data.'],
       ],
       'Clinical research data should be attributable, legible, contemporaneous, original or traceable, accurate, and complete enough to verify.'),
     q(4102303, 'Clinical Research', 'Safety, Deviations, and Escalation', 'Clinic closing time',
       'Near closing time, a participant reports a significant new symptom and the coordinator still has routine filing to finish. What comes first?',
       'Participant safety assessment and adverse-event documentation or escalation through the site process',
       [
-        ['Finish filing because binders get lonely', 'Safety outranks filing.'],
+        ['Complete routine document filing before assessing the symptom', 'Administrative backlog does not take priority over timely safety assessment and AE handling.'],
         ['Wait for the next monitor visit', 'Safety cannot wait for monitor cadence.'],
         ['Unrelated adverse events do not require source documentation', 'Documentation is required regardless of presumed causality.'],
       ],
@@ -3463,7 +3463,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A blinded study participant has a nonurgent scheduling question, and staff are curious about treatment assignment. What should happen?',
       'Maintain the blind and follow protocol processes unless criteria for unblinding are met',
       [
-        ['Unblind because curiosity is practically a medical device', 'Curiosity is not an unblinding criterion.'],
+        ['Unblind because knowing assignment would make scheduling easier', 'Operational convenience is not a protocol-defined unblinding criterion.'],
         ['Ask the participant to guess and record it as source', 'Guesses are not source.'],
         ['Unblind whenever scheduling is inconvenient', 'Scheduling is not an unblinding criterion.'],
       ],
@@ -3508,7 +3508,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'Which sign best shows a site is inspection-ready?',
       'Records, staff explanations, delegation, source data, and actual practices align with the protocol and procedures',
       [
-        ['Binders are color-coded but nobody can explain the visits', 'Color is not operational consistency.'],
+        ['Essential documents are organized but staff cannot reconcile records to actual visit conduct', 'Document order helps retrieval, but inspection readiness requires records, staff knowledge, and practice to align.'],
         ['The monitor has not emailed this week', 'Silence is not readiness.'],
         ['The site memorized answers to only the easiest questions', 'Inspections cover the full study.'],
       ],
@@ -3517,7 +3517,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A screening lab must be within 14 days before randomization. The lab was drawn 16 days before randomization. What is the best action?',
       'Treat it as outside the window unless the protocol or approved guidance allows otherwise, and escalate before randomizing',
       [
-        ['Round 16 down to 14 because enrollment needs a little optimism', 'Optimism is not rounding.'],
+        ['Treat the lab as in-window because the participant is otherwise eligible', 'Other eligibility strengths do not change a protocol-defined timing window.'],
         ['Randomize first and ask the sponsor later', 'Eligibility must be confirmed first.'],
         ['Change the lab date to fit the window', 'Date change is falsification.'],
       ],
@@ -3643,7 +3643,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'A nurse records vitals on sticky notes and later transcribes them into the chart, discarding the notes. Which ALCOA concern is strongest?',
       'The original data may not be preserved as attributable, legible, contemporaneous, original, and accurate',
       [
-        ['Sticky notes are ideal source if colorful', 'Color is not source quality.'],
+        ['Transcribed chart entries are sufficient even after discarding the original notes', 'Destroying the first recording weakens originality, attribution, and reconstruction of the data trail.'],
         ['Transcription erases all source requirements', 'Source requirements persist.'],
         ['Vitals are too routine for data integrity rules', 'All data are subject to ALCOA.'],
       ],
@@ -3663,7 +3663,7 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       [
         ['A signature date fixes all oversight concerns', 'Date alone is not oversight.'],
         ['PI oversight is optional when coordinators are competent', 'Oversight is not optional.'],
-        ['Inspection readiness means making binders look heavier', 'Weight is not readiness.'],
+        ['Inspection readiness can be recreated by collecting signatures just before inspectors arrive', 'Late reconstruction does not demonstrate timely oversight or actual study conduct.'],
       ],
       'Investigator oversight should be timely, documented, and visible throughout the study, not reconstructed at the finish line.'),
   ],
