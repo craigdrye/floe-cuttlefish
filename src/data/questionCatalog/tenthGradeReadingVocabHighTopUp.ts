@@ -361,7 +361,7 @@ export const tenthGradeReadingVocabHighTopUpQuestions: Question[] = makeQuestion
     prompt: 'A strong argumentative essay includes a counterclaim. What is the writer\'s best move after stating it?',
     correct: 'Acknowledge it fairly, then rebut it with evidence or reasoning',
     wrong: [
-      miss('Ignore it immediately so readers forget it exists', 'Pretending the opposing view does not exist weakens credibility; informed readers notice the omission.', 'A fair acknowledgment plus a rebuttal is more persuasive than avoidance.'),
+      miss('Mention it vaguely in one sentence without answering it', 'A vague nod to the opposing view does not rebut it; informed readers still need to see why the original claim holds.', 'A fair acknowledgment plus a rebuttal is more persuasive than avoidance.'),
       miss('Restate it in a distorted, weaker form and mock it', 'Distorting the opposing view is a straw man and undermines the writer\'s ethos.', 'Represent the counterclaim honestly, then answer it.'),
       miss('Agree with it and abandon the original claim', 'Conceding entirely defeats the essay\'s purpose; a counterclaim is to be answered, not surrendered to.', 'Address the counterclaim while defending your own position.'),
     ],
@@ -606,7 +606,7 @@ export const tenthGradeReadingVocabHighTopUpQuestions: Question[] = makeQuestion
     wrong: [
       miss('Summarize the first source, then separately summarize the second', 'Back-to-back summaries place sources side by side without connecting them; synthesis requires relating them.', 'Synthesis links sources around a point, not just lists them.'),
       miss('Quote whichever source is longer and ignore the other', 'Synthesis requires engaging multiple sources, not favoring one by length.', 'Bring both into conversation around your claim.'),
-      miss('Pick the source you agree with and dismiss the other without reasons', 'Dismissing a source without analysis is not synthesis; you must show the relationship between them.', 'Show how the sources relate, even if you ultimately weigh one more.'),
+      miss('Use the source that best supports your thesis and leave the tension unexplained', 'Synthesis has to show the relationship between sources, including tensions; hiding the harder source weakens the paragraph.', 'Show how the sources relate, even if you ultimately weigh one more.'),
     ],
     lesson: 'To synthesize is to combine multiple sources to develop one point, showing how they agree, disagree, or complement each other. It is more than back-to-back summary or cherry-picking one source. Strong synthesis puts sources in conversation around the writer\'s own claim.',
     source,
@@ -637,7 +637,7 @@ export const tenthGradeReadingVocabHighTopUpQuestions: Question[] = makeQuestion
     wrong: [
       miss('Answer the two questions independently with no connection', 'These paired items are designed to align; treating them separately wastes the built-in check.', 'Use the evidence lines to confirm or correct your first answer.'),
       miss('Always pick the longest line as the evidence', 'Length is irrelevant; the correct line is the one that actually supports your answer.', 'Match meaning, not length.'),
-      miss('Choose the evidence line that sounds most dramatic', 'Drama is not relevance; the line must directly support the prior answer.', 'Pick the line that proves your specific claim.'),
+      miss('Use the line with the strongest emotional wording', 'Emotional force is not the same as support; the evidence line must prove the specific answer you selected first.', 'Pick the line that proves your specific claim.'),
     ],
     lesson: 'In paired "best evidence" questions, the two items are linked: the correct evidence line should directly support your answer to the first question. If no offered line supports your choice, your first answer is probably wrong. Cross-checking the pair raises accuracy.',
     source,
@@ -712,7 +712,7 @@ export const tenthGradeReadingVocabHighTopUpQuestions: Question[] = makeQuestion
     wrong: [
       miss('Annotate every sentence of every passage in detail', 'Over-annotating early passages is a common cause of running out of time, not a fix.', 'Annotate selectively; pace yourself across all passages.'),
       miss('Read each passage three times before answering anything', 'Multiple full re-reads burn the limited time the student already lacks.', 'Read purposefully once, then return only as needed.'),
-      miss('Skip reading the questions and just trust your memory', 'Ignoring the questions leads to misreading what is asked and lowers accuracy.', 'Manage pace without sacrificing attention to the actual questions.'),
+      miss('Skim the answer choices first and rely on memory for the passage', 'Memory alone is fragile under time pressure; the student still needs to check what the question asks against the passage.', 'Manage pace without sacrificing attention to the actual questions.'),
     ],
     lesson: 'Time pressure is best handled by budgeting a fixed amount per passage, answering, and marking hard items to revisit rather than stalling. Over-annotating and repeated full re-reads are frequent causes of running out of time. Pacing is a habit you can practice and track.',
     source,

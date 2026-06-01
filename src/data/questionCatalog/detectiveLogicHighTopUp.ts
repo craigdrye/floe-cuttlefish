@@ -149,7 +149,7 @@ export const detectiveLogicHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     prompt: 'Two theories explain the same clue equally well so far. What is the best next step?',
     correct: 'Find evidence the theories predict differently',
     wrong: [
-      miss('Pick the more exciting theory', 'Excitement is not evidence and does not make a theory more likely to be true.', 'Let a discriminating test decide, not appeal.'),
+      miss('Prefer the theory with the more dramatic motive', 'A dramatic motive may make a story vivid, but it is not stronger evidence unless it predicts clues the other theory cannot.', 'Let a discriminating test decide, not appeal.'),
       miss('Keep both forever and stop investigating', 'You can usually gather evidence that separates the theories, so stopping is premature.', 'A test that splits the theories moves you forward.'),
       miss('Choose whichever you thought of first', 'Order of invention has no bearing on which theory is correct.', 'First-thought is not best-supported.'),
     ],
@@ -257,7 +257,7 @@ export const detectiveLogicHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     wrong: [
       miss('Throw out every clue in the case', 'The risk that one clue was planted does not invalidate all the others.', 'Reassess the suspect clue, not the whole file.'),
       miss('Trust the clue more because it is convenient', 'Convenience is exactly what would make a planted clue tempting to believe.', 'Convenience should raise suspicion, not trust.'),
-      miss('Ignore the possibility to keep things simple', 'Ignoring a real possibility of fabrication is how cases go wrong.', 'A live possibility deserves a test, not a shrug.'),
+      miss('Treat planted evidence as too rare to consider seriously', 'Planted evidence may be uncommon, but once the clue looks movable or convenient, rarity is not a reason to skip corroboration.', 'A live possibility deserves a test, not a shrug.'),
     ],
     lesson: 'Once you suspect a clue might be planted, its standalone value collapses. The fix is to seek independent corroboration that is hard to fake - timing, multiple traces, or evidence the planter could not have controlled - rather than ignoring the doubt or discarding the entire case.',
     source,
@@ -422,7 +422,7 @@ export const detectiveLogicHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     prompt: 'A new clue is much more likely under Theory A than under Theory B. Rationally, you should:',
     correct: 'Shift confidence toward Theory A',
     wrong: [
-      miss('Ignore the clue to protect your first theory', 'Ignoring evidence that bears on the theories is exactly the error to avoid.', 'New relevant evidence should move your beliefs.'),
+      miss('Discount the clue because it conflicts with your first theory', 'A clue that separates the theories is especially important; protecting the first theory blocks rational updating.', 'New relevant evidence should move your beliefs.'),
       miss('Shift confidence toward Theory B', 'The clue is more expected under A, so it supports A, not B.', 'Favour the theory that better predicts the clue.'),
       miss('Discard both theories immediately', 'A clue favouring A is no reason to abandon A; B is only weakened.', 'One discriminating clue does not erase everything.'),
     ],
@@ -651,7 +651,7 @@ export const detectiveLogicHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     wrong: [
       miss('Is the answer you guessed first', 'A first guess is not forced unless the clues actually rule out every alternative.', 'Forced means no alternative survives the clues.'),
       miss('Is simply the most likely of several options', 'Forced means certain, not merely most likely.', 'Likely is not the same as forced.'),
-      miss('Feels right even without checking the clues', 'A feeling is not a proof; forced conclusions come from the constraints.', 'Forced answers come from the clues, not intuition.'),
+      miss('Fits the most noticeable clue while leaving alternatives open', 'A conclusion is not forced if other possibilities still survive the full set of clues.', 'Forced answers come from the clues, not intuition.'),
     ],
     lesson: 'A forced conclusion is one the clues make certain because every other possibility has been eliminated. In a good logic puzzle you can write a short proof showing why the answer could not be anything else - that certainty is what separates deduction from guessing.',
     source,
