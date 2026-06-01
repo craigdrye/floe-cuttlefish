@@ -2,6 +2,25 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/matter|physical properties/i.test(chapter)) {
+    return `${title} is about describing what matter is like. The useful answer is "${correct}"; focus on mass, volume, particle arrangement, and properties that can be measured.`
+  }
+  if (/physical changes|chemical changes/i.test(chapter)) {
+    return `${title} is about whether a substance has changed identity. The useful answer is "${correct}"; physical changes keep the substance, while chemical reactions make new substances.`
+  }
+  if (/atoms|compounds|mixtures/i.test(chapter)) {
+    return `${title} is about how matter is built. The useful answer is "${correct}"; distinguish one kind of atom, chemically bonded substances, and physical mixtures.`
+  }
+  if (/conservation/i.test(chapter)) {
+    return `${title} is about tracking atoms through a reaction. The useful answer is "${correct}"; in a closed system, atoms rearrange but total mass is conserved.`
+  }
+  if (/solutions/i.test(chapter)) {
+    return `${title} is about particles spreading through a mixture. The useful answer is "${correct}"; dissolving disperses particles without making them vanish.`
+  }
+  return `${title} is a middle-school chemistry concept. The useful answer is "${correct}"; decide whether the question is about particles, substances, properties, or reactions.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +35,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: STAAR and NYSED middle-school physical science raw collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from STAAR/NYSED middle-school chemistry coverage',
 })
 
@@ -35,7 +53,7 @@ export const middleSchoolChemistryStaarBatchQuestions = makeQuestionBank('AP', [
   q(429003, 'Physical Properties', 'Density', 'Density is calculated as:', 'Mass divided by volume', [
     miss('Volume divided by mass', 'That reverses the formula.', 'Density tells mass per unit volume.'),
     miss('Mass plus volume', 'Density is a ratio, not a sum.', 'Use m/V.'),
-    miss('Temperature divided by color', 'Those are not the density formula quantities.', 'Use mass and volume.'),
+    miss('Weight divided by temperature', 'Weight and temperature are useful measurements, but density compares mass with volume.', 'Use mass and volume.'),
   ]),
   q(429004, 'Physical Changes', 'Melting', 'When ice melts into liquid water, the change is:', 'A physical change', [
     miss('A chemical change that creates a new substance', 'Water remains H2O.', 'Only state changes.'),
@@ -54,7 +72,7 @@ export const middleSchoolChemistryStaarBatchQuestions = makeQuestionBank('AP', [
   ]),
   q(429007, 'Compounds', 'Compound', 'Water, H2O, is a compound because it:', 'Contains hydrogen and oxygen atoms chemically bonded', [
     miss('Is only one kind of atom', 'Water has two elements.', 'H and O are bonded.'),
-    miss('Is a random mixture of rocks', 'Water is a chemical compound, not a rock mixture.', 'Use formula H2O.'),
+    miss('Is hydrogen and oxygen stirred together without bonds', 'A compound has atoms chemically bonded in a fixed ratio, not just mixed together.', 'Use formula H2O.'),
     miss('Cannot be represented by a formula', 'H2O is its formula.', 'Compounds have fixed chemical formulas.'),
   ]),
   q(429008, 'Mixtures', 'Mixture', 'Salt water is best classified as:', 'A mixture', [
@@ -65,11 +83,11 @@ export const middleSchoolChemistryStaarBatchQuestions = makeQuestionBank('AP', [
   q(429009, 'Conservation', 'Mass in reactions', 'In a closed system during a chemical reaction, total mass:', 'Stays the same', [
     miss('Always disappears', 'Matter is conserved in closed systems.', 'Atoms rearrange.'),
     miss('Always doubles', 'Reactions do not create extra mass in this context.', 'Count matter before and after.'),
-    miss('Depends only on color', 'Color does not determine mass conservation.', 'Closed system is the clue.'),
+    miss('Changes only if the products look different', 'A visible change can happen while total mass stays the same in a closed system.', 'Closed system is the clue.'),
   ]),
   q(429010, 'Solutions', 'Dissolving', 'When sugar dissolves in water, the sugar:', 'Spreads out among water particles', [
     miss('Stops existing entirely', 'The sugar particles are still present.', 'Dissolving disperses particles.'),
-    miss('Turns into metal', 'No metal is formed.', 'This is a solution process.'),
-    miss('Becomes the container', 'The container is separate from the solution.', 'Think particles mixing.'),
+    miss('Chemically changes into water molecules', 'The sugar particles spread out, but they do not become water molecules.', 'This is a solution process.'),
+    miss('Settles as one solid layer because it cannot mix', 'Dissolving means the sugar particles disperse through the water rather than staying as a separate layer.', 'Think particles mixing.'),
   ]),
 ])
