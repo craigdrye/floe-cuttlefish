@@ -615,7 +615,7 @@ export const colApEconomicsHigh103TopUpQuestions: Question[] = makeQuestionBank(
     correct: 'Decrease government spending or raise taxes (contractionary fiscal policy)',
     wrong: [
       miss('Increase government spending or cut taxes', 'That is expansionary policy, which would worsen an inflationary gap.', 'An inflationary gap needs less spending, not more.'),
-      miss('Lower the reserve requirement for banks', 'That is monetary policy, not fiscal policy.', 'Fiscal policy uses government spending and taxes.'),
+      miss('Lower the reserve requirement for banks', 'Reserve requirements are a central-bank tool; contractionary fiscal policy works through taxes or government spending instead.', 'Fiscal policy uses government spending and taxes.'),
       miss('Keep policy unchanged because the economy is at potential', 'An inflationary gap means output is above potential, not at it.', 'The economy is overheating, not at rest.'),
     ],
     lesson: 'An inflationary gap means real GDP exceeds potential, putting upward pressure on prices. Contractionary fiscal policy, reducing government spending or raising taxes, lowers aggregate demand to bring output back to potential. Expansionary fiscal policy is used for recessionary gaps instead.',
