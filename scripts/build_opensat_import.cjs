@@ -66,6 +66,55 @@ function numericValue(value) {
   return number ? Number(number[0]) : null
 }
 
+function finalNumericValue(value) {
+  const text = normalizeText(value).replace(/,/g, '')
+  const sentences = text.split(/(?<=[.!?])\s+/).filter(Boolean)
+  const tail = sentences.slice(-2).join(' ')
+  const matches = tail.match(/-?\d+(?:\.\d+)?/g)
+  if (!matches?.length) return null
+  return Number(matches[matches.length - 1])
+}
+
+function numericAnswerExplanationMismatch(item) {
+  if (item.collection_id !== 'opensat::math') return false
+  const correctValue = numericValue(correctChoiceText(item))
+  const finalValue = finalNumericValue(item.explanation)
+  if (correctValue === null || finalValue === null) return false
+  return Math.abs(correctValue - finalValue) > 1e-9
+}
+
+function stableIndex(seed, length) {
+  let hash = 2166136261
+  for (const char of String(seed)) {
+    hash ^= char.charCodeAt(0)
+    hash = Math.imul(hash, 16777619)
+  }
+  return Math.abs(hash) % length
+}
+
+function variant(seed, options) {
+  return options[stableIndex(seed, options.length)]
+}
+
+function dedupeItems(items) {
+  const seen = new Set()
+  const deduped = []
+  for (const item of items) {
+    const key = [
+      normalizeText(item.collection_id).toLowerCase(),
+      normalizeText(item.domain).toLowerCase(),
+      normalizeText(item.paragraph_text).toLowerCase(),
+      normalizeText(item.prompt_text).toLowerCase(),
+      normalizeText(item.correct_answer).toLowerCase(),
+      JSON.stringify(item.answer_choices ?? {}),
+    ].join('\u0001')
+    if (seen.has(key)) continue
+    seen.add(key)
+    deduped.push(item)
+  }
+  return deduped
+}
+
 function mathFeedback(item, label, index) {
   const context = `${item.domain} ${item.prompt_text} ${item.paragraph_text}`.toLowerCase()
   const correct = correctChoiceText(item)
@@ -73,6 +122,17 @@ function mathFeedback(item, label, index) {
   const correctValue = numericValue(correct)
   const display = shortLabel(label)
   const correctDisplay = shortLabel(correct)
+  const seed = `${item.source_id}:${item.domain}:${item.prompt_text}:${label}:${index}`
+  const asksFor = context.match(/what is (?:the )?(?:value|measure|area|radius|circumference|slope|sum|percentage|probability|number) of ([^?.]+)[?.]?/)
+  const targetPhrase = asksFor?.[1]
+    ? `The target is ${shortLabel(asksFor[1])}, so`
+    : /system|equation/.test(context)
+      ? 'Because both equations must stay true,'
+      : /survey|people|percent|percentage|probability/.test(context)
+        ? 'Because the denominator and group matter,'
+        : /circle|rectangle|triangle|sector|angle|volume|area/.test(context)
+          ? 'Because the figure relationship matters,'
+          : 'Because the final requested quantity matters,'
 
   if (wrongValue !== null && correctValue !== null && wrongValue !== correctValue) {
     if (Math.sign(wrongValue) !== Math.sign(correctValue) && correctValue !== 0) {
@@ -82,8 +142,22 @@ function mathFeedback(item, label, index) {
           ? 'root, intercept, or coefficient sign'
           : 'subtraction or equation direction'
       return [
-        `The value ${display} has the wrong sign compared with ${correctDisplay}, usually from reversing the ${signContext}.`,
-        'Track signs separately before simplifying the final value.',
+        variant(seed, [
+          `The value ${display} has the opposite sign from ${correctDisplay}; that usually means the ${signContext} flipped during the work.`,
+          `${display} has the right kind of size but the wrong sign. Recheck the ${signContext} before simplifying.`,
+          `Choosing ${display} points to a sign slip: the calculation needs ${correctDisplay}, not the sign-reversed result.`,
+          `${display} is the sign-mirror trap here. Keep the negative and positive terms separate until the last step.`,
+          `This answer changes the direction of the calculation. The ${signContext} should lead to ${correctDisplay}, not ${display}.`,
+          `${display} usually appears when the algebra is set up in the opposite direction. Track which side is being subtracted from which.`,
+          `The sign on ${display} is the clue: it comes from reversing the ${signContext}, not from solving the requested quantity.`,
+          `${display} is tempting if the magnitude looks familiar, but the sign contradicts the setup that gives ${correctDisplay}.`,
+        ]),
+        variant(`${seed}:tip`, [
+          'Carry the sign through each line instead of fixing it at the end.',
+          'Write one extra line for the signed equation before simplifying.',
+          'Check whether the answer should be positive or negative before choosing.',
+          'Substitute the signed value back into the setup as a quick check.',
+        ]),
       ]
     }
     if (Math.abs(wrongValue) < Math.abs(correctValue)) {
@@ -92,11 +166,25 @@ function mathFeedback(item, label, index) {
         : /area|volume|circle|rectangle|triangle/.test(context)
           ? 'second dimension or full figure relationship'
           : /function|exponent|quadratic/.test(context)
-            ? 'exponent, coefficient, or final substitution step'
+          ? 'exponent, coefficient, or final substitution step'
             : 'required operation'
       return [
-        `The value ${display} is too small compared with ${correctDisplay}, which usually means the ${missingStep} was left out.`,
-        'Check whether the answer needs the full quantity, not only one part of it.',
+        variant(seed, [
+          `${targetPhrase} ${display} stops short of the full result ${correctDisplay}; the ${missingStep} is still missing.`,
+          `${display} is an intermediate-size answer. It looks like one step of the work, not the final value ${correctDisplay}.`,
+          `The answer ${display} is too small for this setup because it leaves out the ${missingStep}.`,
+          `${display} likely comes from using only part of the given information; finishing the ${missingStep} gets to ${correctDisplay}.`,
+          `This undercounts the requested quantity. The setup points past ${display} to ${correctDisplay}.`,
+          `${display} is the "almost there" trap: it captures part of the calculation before the final operation is done.`,
+          `Picking ${display} usually means the calculation used the right direction but stopped before the full quantity was found.`,
+          `${display} fits a partial relationship in the problem, but the question asks for the completed result ${correctDisplay}.`,
+        ]),
+        variant(`${seed}:tip`, [
+          'Ask whether you have used every condition in the prompt.',
+          'Circle the requested quantity and make sure the last line solves for that exact thing.',
+          'Check whether this is only one component of a larger total.',
+          'Do one more substitution or unit check before choosing.',
+        ]),
       ]
     }
     if (Math.abs(wrongValue) > Math.abs(correctValue)) {
@@ -105,11 +193,25 @@ function mathFeedback(item, label, index) {
         : /area|volume|circle|rectangle|triangle/.test(context)
           ? 'length, area, or scale factor'
           : /function|exponent|quadratic/.test(context)
-            ? 'coefficient, exponent, or solution'
+          ? 'coefficient, exponent, or solution'
             : 'operation'
       return [
-        `The value ${display} is too large compared with ${correctDisplay}, which usually means the ${extraStep} was applied one time too many.`,
-        'Sanity-check the size of the answer against the setup before choosing it.',
+        variant(seed, [
+          `${display} overshoots ${correctDisplay}; it usually appears when the ${extraStep} is applied one time too many.`,
+          `This answer is too large for the setup. It likely repeats a ${extraStep} step after the final quantity was already found.`,
+          `${display} has been inflated past the target ${correctDisplay}, often by double-counting the ${extraStep}.`,
+          `Choosing ${display} points to an extra operation, not a harder version of the same problem.`,
+          `${display} is the overcount trap: it keeps calculating after the requested quantity has already been reached.`,
+          `The setup does not support a result as large as ${display}. Recheck whether the ${extraStep} was counted twice.`,
+          `${display} usually comes from treating a one-step scale or rate adjustment as if it had to happen again.`,
+          `This goes beyond the requested value. The arithmetic should land at ${correctDisplay}, not the larger ${display}.`,
+        ]),
+        variant(`${seed}:tip`, [
+          'Estimate the answer size before doing exact arithmetic.',
+          'After calculating, ask whether one of the setup numbers was counted twice.',
+          'Compare the result with the original quantities for a quick magnitude check.',
+          'Stop at the quantity the stem asks for; do not keep transforming it.',
+        ]),
       ]
     }
   }
@@ -263,9 +365,16 @@ function buildQuestionLiteral(item, id, index) {
 function buildBank(name, topic, items, baseId, exported = true) {
   const declaration = exported ? 'export const' : 'const'
   const lines = [`${declaration} ${name} = makeQuestionBank(${jsString(topic)}, [`]
-  items.forEach((item, index) => lines.push(buildQuestionLiteral(item, baseId + index, index)))
+  items.forEach((item, index) => {
+    const originalIndex = Number.isInteger(item.__importIndex) ? item.__importIndex : index
+    lines.push(buildQuestionLiteral(item, baseId + originalIndex, originalIndex))
+  })
   lines.push('])')
   return lines.join('\n')
+}
+
+function withImportOrdinals(items) {
+  return items.map((item, index) => ({ ...item, __importIndex: index }))
 }
 
 function main() {
@@ -273,8 +382,10 @@ function main() {
   const items = payload.items ?? []
   validateItems(items)
 
-  const mathItems = items.filter((item) => item.collection_id === 'opensat::math')
-  const englishItems = items.filter((item) => item.collection_id === 'opensat::english')
+  const rawMathItems = withImportOrdinals(items.filter((item) => item.collection_id === 'opensat::math'))
+  const mathMismatchCount = rawMathItems.filter(numericAnswerExplanationMismatch).length
+  const mathItems = dedupeItems(rawMathItems.filter((item) => !numericAnswerExplanationMismatch(item)))
+  const englishItems = dedupeItems(withImportOrdinals(items.filter((item) => item.collection_id === 'opensat::english')))
   const output = [
     "import { makeQuestionBank } from './base'",
     "import { polish as runPolish } from './polishPipeline'",
@@ -306,7 +417,7 @@ function main() {
   ].join('\n')
 
   fs.writeFileSync(outputPath, output, 'utf8')
-  console.log(`Wrote ${mathItems.length} SAT math and ${englishItems.length} SAT reading/writing questions.`)
+  console.log(`Wrote ${mathItems.length} SAT math and ${englishItems.length} SAT reading/writing questions (${mathMismatchCount} numeric answer/explanation mismatches and ${items.length - mathItems.length - englishItems.length - mathMismatchCount} exact duplicates skipped).`)
 }
 
 main()
