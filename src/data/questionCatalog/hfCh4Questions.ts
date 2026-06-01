@@ -274,7 +274,7 @@ export const hfCh4Questions: Question[] = [
     [
       ['Cut all the momentum names immediately to stop the bleeding', 'A panic cut on a factor reversal is a flight-from-process response. The discipline is to recognise the factor exposure was a deliberate part of the book and decide whether it still should be at this size, not to liquidate on a single month\'s factor move.'],
       ['Add to momentum names because the factor is now cheap on a relative basis', 'Adding into a sharp factor reversal is exactly the kind of "buy the dip" reasoning that gets killed by a regime change. The disciplined response is to size the factor bet; doubling down without a regime view is not.'],
-      ['Ignore the attribution because factor models do not capture discretionary investing', 'Discretionary books still carry factor exposure whether the PM measures it or not — that is precisely why the attribution exists. Dismissing the table is how a hidden factor bet becomes a public drawdown.'],
+      ['Dismiss the factor attribution as irrelevant because the book is built stock by stock', 'Discretionary stock picking still creates factor exposure. Treating the table as irrelevant is how a hidden factor bet becomes a public drawdown.'],
     ],
     'A factor drawdown is a signal that the PM owns a factor exposure, intentionally or otherwise. The discipline is to make the bet conscious: re-size momentum to the level the PM actually wants, hedge what is unwanted, and stop being surprised by a factor move that the attribution table predicted.'),
 
@@ -392,7 +392,7 @@ export const hfCh4Questions: Question[] = [
     'Treat it as a process-review trigger, not a data point — examine whether selection-effect attribution has degraded across sectors, whether the analyst team has rotated, whether new names underperform their thesis at a higher rate, and whether the alpha source the PM thought they had was actually a factor exposure that has rotated',
     [
       ['Cut leverage and reduce gross exposure until the residual comes back', 'Reducing gross is a risk lever, not a diagnostic. It treats the symptom (loss) rather than addressing whether the underlying source of alpha is intact. Diagnostic first, response second.'],
-      ['Ignore it — alpha is mean-reverting and one year of negative residual is noise', 'One year is statistically thin but it is the most recent data point, and dismissing it as noise is exactly how funds miss a deteriorating process until two years too late. It is a flag, not a verdict.'],
+      ['Call it normal mean reversion and wait another year before reviewing process', 'One year is statistically thin but it is also the newest signal. Waiting another year can hide a deteriorating process until the drawdown is much harder to reverse.'],
       ['Replace the analyst team because they are clearly the problem', 'Firing the team before diagnosis is a category error. The cause might be team, process, regime, or hidden factor — investigation comes first; staffing changes are at most a third or fourth response.'],
     ],
     'A turn in the residual is a diagnostic trigger. The right work is to decompose where selection has degraded, whether new names underperform thesis more than old names did, and whether the historical residual was real or a slow-moving factor that has now reversed. The action set follows the diagnosis, not the loss.'),
@@ -491,7 +491,7 @@ export const hfCh4Questions: Question[] = [
     'Treat the crowding score as a sizing and stop-discipline input, not a thesis input — the position can still work, but the magnitude of the bet and the willingness to take a temporary 20–30% adverse move have to reflect that the path will likely include peer-driven dislocations independent of fundamentals',
     [
       ['Sell the position because crowding always leads to drawdown', 'Crowding raises the probability of path stress but does not change the fundamental thesis. Selling on crowding alone over-rotates and misses real opportunities in well-owned names that are fundamentally correct.'],
-      ['Ignore the score because crowding is not a fundamental factor', 'Path matters in any position with a finite hold horizon. Ignoring crowding because it is "non-fundamental" leaves the PM exposed to a class of drawdown the rest of the framework was supposed to anticipate.'],
+      ['Treat the score as irrelevant because the company fundamentals have not changed', 'Path matters in any position with a finite hold horizon. Crowding can create drawdowns independent of fundamentals, so it belongs in sizing and stop discipline.'],
       ['Increase the size to maximise upside, since high crowding implies high institutional conviction', 'High crowding is a path-risk warning, not a conviction signal. Sizing up into crowding is exactly the move that turns a small loss into a forced unwind during peer stress.'],
     ],
     'Crowding is a path-risk input, not a thesis input. The disciplined response is to keep the bet but right-size it, plan for adverse drawdowns the crowding score is telling you to expect, and decide in advance how to behave if peer-driven dislocation hits before the thesis plays out.'),
@@ -538,7 +538,7 @@ export const hfCh4Questions: Question[] = [
     [
       ['Grade each name on its monthly P&L performance — winners get A, losers get F', 'Grading on monthly P&L is the surest way to lose discipline. Thesis-on-track losers become Fs and get cut; thesis-failed lucky winners become As and get held. Both outcomes destroy alpha.'],
       ['Grade only on whether the position hit its short-term price target', 'Short-term price targets are usually back-of-envelope and not the basis for a serious grade. The grade has to capture progress against the multi-quarter thesis, not whether the stock hit a 30-day mark.'],
-      ['Skip the grading exercise — discretionary PMs know their book and grades add bureaucracy', 'The exercise forces discipline. Without it, PMs are systematically slow to cut thesis-failed names and quick to cut thesis-on-track losers. The grade is the structured way to surface those decisions before P&L makes them for you.'],
+      ['Rely on the PM\'s memory of each thesis instead of assigning formal grades', 'Memory and conviction are not the same as discipline. Grades force the book to separate thesis progress from recent P&L before emotions make the decision.'],
     ],
     'The monthly grading ritual is the structured place where the PM separates "what happened in P&L" from "what happened in thesis." Grading on forward asymmetry rather than on monthly returns is what allows the book to keep adding to thesis-on-track losers and cutting thesis-failed winners — which is the entire art.'),
 

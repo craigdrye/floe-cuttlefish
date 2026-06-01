@@ -233,7 +233,7 @@ export const peCh5Questions: Question[] = [
     'Treat it as the partnership rehearsal — bring the live memo, the model, and the diligence open items; the MD\'s job is to pressure-test the thesis, expose weak sections, and make sure the team will not be ambushed by predictable IC questions',
     [
       ['Bring a polished final draft and avoid raising open issues so the MD sees the deal at its strongest', 'Hiding open issues from the MD is the surest way to be ambushed at IC. The MD is on your side — the review is the moment to surface uncertainty before partners do.'],
-      ['Skip the meeting if the memo is in good shape, since the MD\'s time is best saved for the actual IC', 'Skipping the rehearsal removes the last filter before the partnership sees the deal. MDs almost always catch issues that improve the IC outcome — bypassing the review is a costly habit.'],
+      ['Treat the review as optional if the memo already reads cleanly and the model ties', 'A clean memo and tying model are not the same as an IC-ready thesis. The MD review is the last pressure-test before the partnership sees the deal.'],
       ['Use the meeting to ask the MD which sections to cut for length, not to debate the thesis', 'Reducing the MD review to a formatting exercise wastes the most valuable feedback loop the team has. The thesis is exactly what should be argued in this meeting.'],
     ],
     'The pre-IC MD review is the rehearsal that prevents avoidable IC failures. Bring the live document, surface open issues, and use the MD\'s pressure to harden the memo before the partnership reads it. Polishing instead of stress-testing is the most common preventable mistake in deal staffing.'),
@@ -301,7 +301,7 @@ export const peCh5Questions: Question[] = [
     'You receive a teaser from a sell-side banker on a $400M healthcare services platform. The teaser is anonymized. What is the right next step if your fund is interested?',
     'Sign the NDA so the banker can release the full Confidential Information Memorandum (CIM) — the CIM names the company, provides financials and management bios, and is what enables a real preliminary read',
     [
-      ['Skip the NDA and request a management meeting directly to save time', 'Sell-side bankers do not run unsigned-NDA management meetings. The NDA is the gating step that unlocks both the CIM and the rest of the process — there is no shortcut.'],
+      ['Ask the banker for the CIM and management access before signing anything', 'Sell-side bankers do not release the CIM or schedule management access before the NDA. The NDA is the gating step, not paperwork after the real diligence starts.'],
       ['Make a preliminary bid based on the teaser alone, since speed signals interest', 'Bidding off a teaser alone is uninformed bidding. The teaser is intentionally thin; making an offer without the CIM\'s financials and management context is not aggressive, it is sloppy.'],
       ['Wait for the banker to send the CIM unprompted as a courtesy after the teaser', 'Bankers do not unsolicit CIMs. The process is buyer-initiated: NDA in, CIM out, every time.'],
     ],
@@ -312,7 +312,7 @@ export const peCh5Questions: Question[] = [
     'Prepare a short list of substantive questions that test the load-bearing parts of the thesis (customer concentration, contract structure, growth drivers, margin trajectory, key person risk) — management meetings are where you separate the CIM narrative from the operating reality',
     [
       ['Show up with general questions and let management drive the agenda so the conversation flows', 'Letting management drive the agenda means hearing the rehearsed pitch. The buyer\'s job is to pressure-test the load-bearing claims, which only happens with prepared, specific questions.'],
-      ['Skip preparation and use the meeting to introduce the firm and build rapport', 'Management meetings happen on a tight calendar in any process. Using the slot for rapport-building wastes the highest-leverage in-person opportunity the buyer gets.'],
+      ['Prepare only a firm overview and rely on management to walk through the operating story', 'Management meetings happen on a tight calendar. The buyer needs specific thesis-testing questions, not just a rapport-building introduction.'],
       ['Send the question list in advance so management can prepare polished answers', 'Sending questions in advance produces rehearsed answers and lower diligence value. The questions are designed to test on-the-spot reasoning, not generate prepared scripts.'],
     ],
     'Management meetings are where the CIM narrative meets the operating reality. The buyer\'s job is to come prepared with specific, evidence-seeking questions and to read the answers — both the substance and the way management handles pressure. Wasted management meetings cannot be re-run.'),
@@ -366,7 +366,7 @@ export const peCh5Questions: Question[] = [
     [
       ['Push through to close because backing out at this stage damages the fund\'s reputation with bankers', 'Walking away from a deal where diligence breaks the thesis is the discipline bankers actually respect. Pushing through to a known bad deal is what damages reputation — and the fund.'],
       ['Close at the original price and use the indemnification package to recover the working capital shortfall later', 'Indemnification is not a substitute for getting the price right at signing. Litigating recovery post-close is slow, contested, and rarely makes the buyer whole.'],
-      ['Ignore the findings since exclusivity is expiring and a re-run process would take six months', 'Exclusivity pressure is exactly when discipline matters most. Closing a known bad deal because the alternative is slow is the textbook sunk-cost mistake.'],
+      ['Accept the broken underwriting because losing exclusivity would restart a long process', 'Exclusivity pressure is exactly when discipline matters most. Closing a known bad deal because the alternative is slow is the textbook sunk-cost mistake.'],
     ],
     'Folding from a deal is a real skill. When confirmatory diligence breaks the underwriting, the right move is to either renegotiate the terms to restore the case or walk away. Closing a bad deal to avoid the cost of folding is how sponsors end up with write-downs they could have prevented.'),
 

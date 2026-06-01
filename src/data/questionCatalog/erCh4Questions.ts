@@ -285,7 +285,7 @@ export const erCh4Questions: Question[] = [
     [
       ['Cut TV to 50% of total value by raising the discount rate', 'Forcing the percentage by tweaking inputs is reverse-engineering. The TV share is a consequence of the assumptions, not a target.'],
       ['Reject the DCF because TV should never exceed 50%', 'A 50% cap on TV would invalidate the DCF method for most growing businesses. The percentage is high for a reason — most of a company\'s value sits past the explicit forecast period.'],
-      ['Ignore TV entirely and present an explicit-period-only valuation', 'Truncating value at year 10 understates the business by definition — the company does not stop existing in year 11. The TV is the rest of the value, and it has to be in the answer.'],
+      ['Use only the explicit forecast period because it feels more observable than terminal assumptions', 'Observable forecast years still do not capture the full business value — the company does not stop existing in year 11. Terminal value must be modeled and defended, not avoided.'],
     ],
     'Most DCFs have TV at 60–80% of total enterprise value. The right discipline is not to "shrink" TV mechanically but to make terminal-year inputs explicit and defensible — steady-state margin, normalised capex, working-capital intensity, and a g that respects long-run industry growth.'),
 
@@ -318,7 +318,7 @@ export const erCh4Questions: Question[] = [
     [
       ['Apply the full SOTP value as the target price on the view that the discount will close', 'Targeting full SOTP without a catalyst is a hope thesis. Conglomerate discounts often persist for years; baking in closure without a path is not analysis.'],
       ['Apply a 50% larger discount than current to be conservative', 'Doubling the discount arbitrarily is the opposite mistake — turning conservatism into pessimism without an argument. The published discount should reflect what is actually structural about the business.'],
-      ['Ignore SOTP because the company will never separate', 'The SOTP is informative even if the separation never happens — it tells you what the market is implicitly assigning to each piece and how that drifts over time. Throwing it out loses the diagnostic.'],
+      ['Use only a blended multiple because management says the portfolio will stay together', 'The SOTP is informative even without a separation — it shows what the market is implicitly assigning to each segment and how that drifts over time.'],
     ],
     'The conglomerate discount is real and persistent for most diversified holdcos. The defensible note quantifies the discount, names the structural reasons, and treats forced separation as an upside scenario with explicit catalysts and probabilities — not as the base case.'),
 
@@ -374,7 +374,7 @@ export const erCh4Questions: Question[] = [
     [
       ['Bull = base × 1.3, Bear = base × 0.7, applied uniformly', 'A flat ±30% band is a presentation trick, not analysis. It does not tell the client which drivers move the case and by how much, and so it cannot inform position sizing.'],
       ['Bull = best peer\'s multiple, Bear = worst peer\'s multiple, no other changes', 'Holding estimates constant and only flexing the multiple under-states the dispersion of the actual business. Cycle-driven names see margin and growth move together — bull and bear cases should reflect that.'],
-      ['Skip the bear case because it weakens the rating', 'Omitting the bear case removes the most useful part of the sensitivity analysis. Compliance and any thoughtful client expects to see what would invalidate the call.'],
+      ['Show only the base and bull cases because the published rating is positive', 'A positive rating still needs downside discipline. The bear case shows what would invalidate the call and helps clients size risk.'],
     ],
     'Bull and bear cases name the specific drivers that change, by how much, and why. Done well, they tell the client which two or three variables matter most — and they double as kill criteria when the data starts pointing at the bear case.'),
 
@@ -490,7 +490,7 @@ export const erCh4Questions: Question[] = [
     [
       ['Hold the rating and target — the variant just has not played out yet', 'That can be the right answer, but only after the sourcing has been re-examined. Holding ratings on broken theses is exactly the rating-system pathology the Hold-bucket discussion is about.'],
       ['Cut to Sell immediately to demonstrate willingness to change view', 'Going from Buy to Sell on one print, without redoing the work, is whiplash rather than discipline. The right move is to re-examine the data and let the conclusion follow.'],
-      ['Ignore the print because variant perception always takes time to be vindicated', '"Always" is the tell. Some variant perceptions take time; others were wrong. The discipline is to know which one you have, which requires going back to the sourcing.'],
+      ['Treat the miss as purely a timing issue before rechecking the original channel work', 'Some variants take time; others were simply wrong. The discipline is to retest the sourcing before deciding which case applies.'],
     ],
     'When variant perception fails to play out, the discipline is to retest the sourcing rather than defend the conclusion. Sometimes the data was misread (rating should change); sometimes the timing is just slower than expected (rating stands with a longer horizon). The note should be explicit about which case applies.'),
 
