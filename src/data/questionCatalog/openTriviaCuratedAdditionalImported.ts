@@ -33,6 +33,17 @@ const distractor = (scope: string, answer: string): [string, string, string] => 
   ]
 }
 
+const lessonFor = (scope: string): string => {
+  const lessons: Record<string, string> = {
+    geography: 'Use geography clues like latitude, landforms, water bodies, borders, and scale. The right answer should fit every location detail in the prompt, not just sound like a familiar place.',
+    history: 'History questions usually hinge on time, place, people, and cause. Check the period and the named event before choosing a famous-but-nearby person, date, or institution.',
+    literature: 'For literature clues, anchor on the author, quoted line, character, movement, or plot detail in the prompt. Nearby books can sound plausible while belonging to a different writer or period.',
+    'language or culture': 'Language and culture clues often turn on translation, language family, country, or cultural context. Match the clue precisely instead of picking a familiar language or region.',
+    'environmental science': 'Environmental science clues ask about systems, scale, chemistry, climate, or hazard measurement. Identify the process first, then choose the term that matches that exact relationship.',
+  }
+  return lessons[scope] ?? `Use the ${scope} clues in the prompt and test each answer against the exact relationship being described.`
+}
+
 export const openTriviaCuratedGeographyAdditionalQuestions = runPolish(makeQuestionBank('AP', [
   {
     id: 381001,
@@ -42,7 +53,7 @@ export const openTriviaCuratedGeographyAdditionalQuestions = runPolish(makeQuest
     prompt: 'What major geographical feature is located at 23.5 degrees north latitude?',
     correct: 'The Tropic of Cancer',
     wrong: [distractor('geography', 'The Equator'), distractor('geography', 'The Arctic Circle'), distractor('geography', 'The Tropic of Capricorn')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::geography::56). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('geography'),
   },
   {
     id: 381002,
@@ -52,7 +63,7 @@ export const openTriviaCuratedGeographyAdditionalQuestions = runPolish(makeQuest
     prompt: "Measuring at the Equator, what is the closest approximation of Earth's circumference?",
     correct: '24,900 miles',
     wrong: [distractor('geography', '24,900,000 miles'), distractor('geography', '249,000 miles'), distractor('geography', '2,490,000 miles')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::geography::60). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('geography'),
   },
   {
     id: 381003,
@@ -62,7 +73,7 @@ export const openTriviaCuratedGeographyAdditionalQuestions = runPolish(makeQuest
     prompt: 'Which saltwater lake, bordered on the west by Azerbaijan and Russia, is the largest inland body of water in the world?',
     correct: 'Caspian Sea',
     wrong: [distractor('geography', 'Tanganyika'), distractor('geography', 'Victoria'), distractor('geography', 'Baikal')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::geography::67). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('geography'),
   },
   {
     id: 381004,
@@ -72,7 +83,7 @@ export const openTriviaCuratedGeographyAdditionalQuestions = runPolish(makeQuest
     prompt: 'Which body of water, situated in southern Siberia, is the deepest and oldest freshwater lake on Earth?',
     correct: 'Baikal',
     wrong: [distractor('geography', 'Onega'), distractor('geography', 'Ladoga'), distractor('geography', 'Huron')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::geography::69). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('geography'),
   },
   {
     id: 381005,
@@ -82,7 +93,7 @@ export const openTriviaCuratedGeographyAdditionalQuestions = runPolish(makeQuest
     prompt: "Which South American freshwater lake is commonly described as the world's highest commercially navigable lake?",
     correct: 'Titicaca',
     wrong: [distractor('geography', 'Nyasa'), distractor('geography', 'Nicaragua'), distractor('geography', 'Michigan')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::geography::70). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('geography'),
   },
   {
     id: 381006,
@@ -92,7 +103,7 @@ export const openTriviaCuratedGeographyAdditionalQuestions = runPolish(makeQuest
     prompt: 'With a surface area of about 82,000 square kilometers, which lake between Ontario and Minnesota is the largest single freshwater lake in the world?',
     correct: 'Lake Superior',
     wrong: [distractor('geography', 'Turkana'), distractor('geography', 'Michigan'), distractor('geography', 'Onega')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::geography::76). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('geography'),
   },
   {
     id: 381007,
@@ -102,7 +113,7 @@ export const openTriviaCuratedGeographyAdditionalQuestions = runPolish(makeQuest
     prompt: 'If magma contains more than 65% silica, the lava is called what?',
     correct: 'felsic or acidic',
     wrong: [distractor('geography', 'thick'), distractor('geography', 'mafic or basic'), distractor('geography', 'dense')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::geography::78). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('geography'),
   },
   {
     id: 381008,
@@ -112,7 +123,7 @@ export const openTriviaCuratedGeographyAdditionalQuestions = runPolish(makeQuest
     prompt: 'The Badwater Basin, the lowest point in North America, is located in which U.S. valley?',
     correct: 'Death Valley',
     wrong: [distractor('geography', 'Sun Valley'), distractor('geography', 'Big Smoky Valley'), distractor('geography', 'Hudson Valley')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::geography::138). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('geography'),
   },
 ]), [_wave20Bundle])
 
@@ -125,7 +136,7 @@ export const openTriviaCuratedLanguageCultureAdditionalQuestions = runPolish(mak
     prompt: 'Name the artificially constructed international language in which "Mi amas vin" means "I love you."',
     correct: 'Esperanto',
     wrong: [distractor('language or culture', 'Thai'), distractor('language or culture', 'Navajo'), distractor('language or culture', 'Spanish')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::humanities::18). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('language or culture'),
   },
   {
     id: 381010,
@@ -135,7 +146,7 @@ export const openTriviaCuratedLanguageCultureAdditionalQuestions = runPolish(mak
     prompt: 'What major official language do Senegal, Monaco, Luxembourg, Haiti, and Madagascar share?',
     correct: 'French',
     wrong: [distractor('language or culture', 'Spanish'), distractor('language or culture', 'English'), distractor('language or culture', 'All of these')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::humanities::866). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('language or culture'),
   },
   {
     id: 381011,
@@ -145,7 +156,7 @@ export const openTriviaCuratedLanguageCultureAdditionalQuestions = runPolish(mak
     prompt: 'What Indo-European language-family division is based on the different treatment of the three original velar rows?',
     correct: 'Satem and Centum languages',
     wrong: [distractor('language or culture', 'Balto-Slavic and Indo-Hittite languages'), distractor('language or culture', 'Proto-Indo-European and Indo-European languages'), distractor('language or culture', 'Anatolian and Tocharian languages')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::humanities::1063). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('language or culture'),
   },
 ]), [_wave20Bundle])
 
@@ -158,7 +169,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'Which union of European countries was established by the Maastricht Treaty in 1992?',
     correct: 'The European Union',
     wrong: [distractor('history', 'American Labor Union'), distractor('history', 'Oxford Union'), distractor('history', 'European Trade Union')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::7). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381013,
@@ -168,7 +179,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: "Which of these cities has been Japan's capital in the past?",
     correct: 'Kyoto',
     wrong: [distractor('history', 'Yokohama'), distractor('history', 'Hiroshima'), distractor('history', 'Osaka')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::15). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381014,
@@ -178,7 +189,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'Yu the Great was the legendary first Chinese monarch of which dynasty?',
     correct: 'Xia Dynasty',
     wrong: [distractor('history', 'Qing (Manchu) Dynasty'), distractor('history', 'Ming Dynasty'), distractor('history', 'Yuan Dynasty')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::19). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381015,
@@ -188,7 +199,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'How many landing beaches were there in the 1944 Normandy Invasion, known as Operation Overlord?',
     correct: 'Five',
     wrong: [distractor('history', 'Four'), distractor('history', 'Six'), distractor('history', 'Three')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::22). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381016,
@@ -198,7 +209,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'The British evacuation from which French port was codenamed Operation Dynamo in 1940?',
     correct: 'Dunkirk',
     wrong: [distractor('history', 'Brest'), distractor('history', 'Cherbourg'), distractor('history', 'Toulon')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::25). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381017,
@@ -208,7 +219,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'Which Roman leader is associated with the saying "Veni, vidi, vici"?',
     correct: 'Julius Caesar',
     wrong: [distractor('history', 'Marcus Antonius'), distractor('history', 'Augustus'), distractor('history', 'Darius')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::36). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381018,
@@ -218,7 +229,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'Slavery was outlawed in all British colonies in which year?',
     correct: '1834',
     wrong: [distractor('history', '1812'), distractor('history', '1912'), distractor('history', '1738')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::47). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381019,
@@ -228,7 +239,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'What Celtic chieftain fought Julius Caesar in Gaul in the first century B.C.?',
     correct: 'Vercingetorix',
     wrong: [distractor('history', 'Odoacer'), distractor('history', 'Hasdrubal'), distractor('history', 'Leonidas')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::73). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381020,
@@ -238,7 +249,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'What Merovingian became king in the fifth century A.D.?',
     correct: 'Clovis',
     wrong: [distractor('history', 'Arpad'), distractor('history', 'Ethelred'), distractor('history', 'Belisarius')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::74). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381021,
@@ -248,7 +259,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'What statesman became the first President under the Fifth Republic of France in 1959?',
     correct: 'Charles De Gaulle',
     wrong: [distractor('history', 'Albert Lebrun'), distractor('history', 'Vincent Auriol'), distractor('history', 'Rene Coty')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::79). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381022,
@@ -258,7 +269,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'What French monarch was known as the Sun King?',
     correct: 'Louis XIV',
     wrong: [distractor('history', 'Louis X'), distractor('history', 'Charles VII'), distractor('history', 'Henry III')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::81). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381023,
@@ -268,7 +279,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'The Free Speech Movement was a student protest that began in 1964 on the campus of which university?',
     correct: 'University of California, Berkeley',
     wrong: [distractor('history', 'California State University, Los Angeles'), distractor('history', 'Anderson University, Indiana'), distractor('history', 'Florida International University')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::111). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381024,
@@ -278,7 +289,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'Which communist offensive, launched on January 30, 1968, included attacks on major cities and military bases throughout South Vietnam?',
     correct: 'Tet Offensive',
     wrong: [distractor('history', 'Ram offensive'), distractor('history', 'Ngay Offensive'), distractor('history', 'Ong offensive')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::120). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381025,
@@ -288,7 +299,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'Shootings at anti-war demonstrators on May 4, 1970, at which university triggered a nationwide student strike across America?',
     correct: 'Kent State University',
     wrong: [distractor('history', 'University of Maryland'), distractor('history', 'Western Washington University'), distractor('history', 'University of Montana')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::121). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
   {
     id: 381026,
@@ -298,7 +309,7 @@ export const openTriviaCuratedHistoryAdditionalQuestions = runPolish(makeQuestio
     prompt: 'What route ran from North Vietnam through Laos and Cambodia into South Vietnam and was used to move soldiers and supplies south?',
     correct: 'Ho Chi Minh Trail',
     wrong: [distractor('history', 'Bao Dai Trail'), distractor('history', 'Diem Trail'), distractor('history', 'Chi Thien Trail')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::history::122). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('history'),
   },
 ]), [_wave20Bundle])
 
@@ -317,7 +328,7 @@ export const openTriviaCuratedEnvironmentalScienceAdditionalQuestions = runPolis
     prompt: 'Why does the temperature of large bodies of water tend to vary much less than the temperature of land masses?',
     correct: 'Water can absorb a tremendous amount of heat',
     wrong: [distractor('environmental science', 'Liquids are better heat conductors'), distractor('environmental science', 'Water responds more quickly to temperature changes'), distractor('environmental science', 'Sunlight penetrates water more easily')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::science-technology::747). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('environmental science'),
   },
   {
     id: 381037,
@@ -327,7 +338,7 @@ export const openTriviaCuratedEnvironmentalScienceAdditionalQuestions = runPolis
     prompt: 'Acid rain is commonly defined as rain with a pH below what value?',
     correct: '5.6',
     wrong: [distractor('environmental science', '8.6'), distractor('environmental science', '2.6'), distractor('environmental science', '11.6')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::science-technology::889). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('environmental science'),
   },
   {
     id: 381038,
@@ -337,7 +348,7 @@ export const openTriviaCuratedEnvironmentalScienceAdditionalQuestions = runPolis
     prompt: 'Which scale classifies hurricanes by the intensity of their sustained winds?',
     correct: 'Saffir-Simpson scale',
     wrong: [distractor('environmental science', 'Beaufort scale'), distractor('environmental science', 'Kardashev scale'), distractor('environmental science', 'Hamilton-Norwood scale')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::science-technology::913). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('environmental science'),
   },
 ]), [_wave20Bundle])
 
@@ -350,7 +361,7 @@ export const openTriviaCuratedLiteratureAdditionalQuestions = runPolish(makeQues
     prompt: 'In which Shakespeare tragedy do three witches tell a general that he will not be vanquished until Birnam Wood comes to Dunsinane Hill?',
     correct: 'Macbeth',
     wrong: [distractor('literature', 'The Tempest'), distractor('literature', 'Hamlet'), distractor('literature', 'Titus Andronicus')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::literature::116). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('literature'),
   },
   {
     id: 381040,
@@ -360,7 +371,7 @@ export const openTriviaCuratedLiteratureAdditionalQuestions = runPolish(makeQues
     prompt: '"So we beat on, boats against the current, borne back ceaselessly into the past" is the last line of a book by which author?',
     correct: 'F. Scott Fitzgerald',
     wrong: [distractor('literature', 'Herman Melville'), distractor('literature', 'Werner Herzog'), distractor('literature', 'Thomas Hardy')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::literature::181). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('literature'),
   },
   {
     id: 381041,
@@ -370,7 +381,7 @@ export const openTriviaCuratedLiteratureAdditionalQuestions = runPolish(makeQues
     prompt: 'Which symbolic story by Polish-born novelist Joseph Conrad served as a basis for the film Apocalypse Now?',
     correct: 'Heart of Darkness',
     wrong: [distractor('literature', 'Lord Jim'), distractor('literature', 'The Shadow Line'), distractor('literature', 'An Outcast of the Islands')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::literature::194). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('literature'),
   },
   {
     id: 381042,
@@ -380,7 +391,7 @@ export const openTriviaCuratedLiteratureAdditionalQuestions = runPolish(makeQues
     prompt: 'Which Jack Kerouac novel, regarded as a defining work of the Beat Generation, is based on spontaneous trips made by the author and his friends?',
     correct: 'On the Road',
     wrong: [distractor('literature', 'Naked Lunch'), distractor('literature', 'A Passage to India'), distractor('literature', 'Midnights Children')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::literature::389). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('literature'),
   },
   {
     id: 381043,
@@ -390,7 +401,7 @@ export const openTriviaCuratedLiteratureAdditionalQuestions = runPolish(makeQues
     prompt: "What does the number 451 in the title of Ray Bradbury's novel Fahrenheit 451 refer to?",
     correct: 'the temperature at which books burn',
     wrong: [distractor('literature', 'the temperature at which forests will burn'), distractor('literature', 'the temperature required to melt glass'), distractor('literature', 'None of these')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::literature::423). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('literature'),
   },
   {
     id: 381044,
@@ -400,7 +411,7 @@ export const openTriviaCuratedLiteratureAdditionalQuestions = runPolish(makeQues
     prompt: 'Who wrote the novel Doctor Zhivago, which was banned in the Soviet Union until 1988?',
     correct: 'Boris Pasternak',
     wrong: [distractor('literature', 'Ivan Gogol'), distractor('literature', 'William F. Buckley'), distractor('literature', 'Leon Trotsky')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::literature::670). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('literature'),
   },
   {
     id: 381045,
@@ -410,7 +421,7 @@ export const openTriviaCuratedLiteratureAdditionalQuestions = runPolish(makeQues
     prompt: 'In which book does Truman Capote recount the murders of Herb Clutter and his family in Kansas?',
     correct: 'In Cold Blood',
     wrong: [distractor('literature', 'The Glass Key'), distractor('literature', 'The Moving Target'), distractor('literature', 'Red Harvest')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::literature::1076). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('literature'),
   },
   {
     id: 381046,
@@ -420,6 +431,6 @@ export const openTriviaCuratedLiteratureAdditionalQuestions = runPolish(makeQues
     prompt: 'Which famous work by American poet Henry W. Longfellow was based on legends of the Ojibway people?',
     correct: 'The Song of Hiawatha',
     wrong: [distractor('literature', "Paul Revere's Ride"), distractor('literature', 'The Evening Star'), distractor('literature', 'Evangeline')],
-    lesson: 'Source: OpenTriviaQA (opentriviaqa::literature::1112). Included in the reviewed OpenTriviaQA curated additional pass.',
+    lesson: lessonFor('literature'),
   },
 ]), [_wave20Bundle])
