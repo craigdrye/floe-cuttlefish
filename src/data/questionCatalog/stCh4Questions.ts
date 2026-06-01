@@ -208,7 +208,7 @@ export const stCh4Questions: Question[] = [
     'Front-loading the parent order shifts the VWAP itself toward the early prints, mechanically inflating the apparent outperformance — the benchmark is partly endogenous to the trader\'s own footprint',
     [
       ['VWAP cannot be beaten by 1–2 basis points without insider information', 'Small VWAP beats are routine in liquid names. The issue here is the mechanism by which the beat is generated, not its absolute size.'],
-      ['Beating VWAP is illegal under FINRA Rule 5310', 'Rule 5310 is best execution, not a prohibition on outperforming a benchmark. The concern is the integrity of the benchmark, not the result.'],
+      ['Beating VWAP automatically proves a best-execution violation under FINRA Rule 5310', 'Rule 5310 is best execution, not a prohibition on outperforming a benchmark. The concern is the integrity of the benchmark, not the result.'],
       ['Front-loading is the textbook definition of spoofing', 'Spoofing involves placing orders with intent to cancel. Front-loading filled orders is execution skewing, not spoofing — a different problem.'],
     ],
     'When the trader\'s own prints contribute to the benchmark, beating the benchmark is partly self-referential. Sophisticated TCA uses arrival-price or interval-VWAP to neutralize this; naive VWAP benchmarking rewards exactly the behavior it should flag.'),
@@ -270,7 +270,7 @@ export const stCh4Questions: Question[] = [
     'A trader argues: "If I post my full 500,000-share buy interest on the lit book at the bid, I get filled fastest with no impact." What is wrong with this reasoning?',
     'Displayed size of that magnitude signals the trader\'s intent, drives the offer up, and either fills against opportunistic flow at worse prices or simply fails to fill at all',
     [
-      ['Posting on the bid is illegal under Reg NMS', 'Posting passive bids is legal and normal. The issue is impact and signaling, not regulation.'],
+      ['Posting the full bid is protected by Reg NMS, so signaling cannot matter', 'Posting passive bids is legal and normal, but legality does not remove impact and signaling risk.'],
       ['Lit venues reject orders above 100,000 shares', 'No such universal limit exists. Venues accept large orders; the question is whether the trader should show them.'],
       ['Bids never get filled because everyone trades through them', 'Bids fill routinely. The issue is the price after the signal lands, not whether a bid can ever execute.'],
     ],

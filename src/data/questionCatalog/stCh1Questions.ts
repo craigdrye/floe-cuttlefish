@@ -154,7 +154,7 @@ export const stCh1Questions: Question[] = [
     'A long-only asset manager pays the equity desk above-market commissions and in return receives access to corporate-access events, research, and capital-introduction services. What is this arrangement called and how is it controlled?',
     'A soft-dollar (commission-sharing) arrangement, regulated under Section 28(e) of the 1934 Act and disclosed by the asset manager to its investors — legal when the services are research-related and reasonable',
     [
-      ['An illegal kickback that violates best execution', 'Soft dollars are explicitly permitted under 28(e) when used for qualifying research services. Calling them illegal kickbacks misses both the safe harbor and the disclosure regime that governs them.'],
+      ['An undisclosed kickback that always violates best execution', 'Soft dollars are permitted under 28(e) when used for qualifying research services and disclosed appropriately. Treating them as automatically improper misses the safe harbor and disclosure regime.'],
       ['A simple commission discount where the client pays less to trade', 'It is the opposite — the client pays *more* per share than execution-only cost in exchange for bundled services. Treating it as a discount inverts the economics.'],
       ['A retail PFOF arrangement applied to institutional accounts', 'PFOF is a market-maker payment to a broker for retail order flow. Soft dollars are a buy-side asset manager directing commissions to a sell-side broker for research-related services. The structure and regulation are different.'],
     ],
@@ -424,7 +424,7 @@ export const stCh1Questions: Question[] = [
     'A retail-broker client asks the desk to explain Payment for Order Flow. What is PFOF, in plain language, and who pays whom?',
     'PFOF is the practice of retail brokers (Robinhood, Schwab on some flow, TD/Ameritrade historically) routing their customer marketable orders to wholesale market makers (Citadel Securities, Virtu, Susquehanna) which fill those orders and pay the broker a small per-share fee in return — the wholesaler captures spread plus the value of trading against retail flow that tends to be less informed than institutional flow',
     [
-      ['PFOF is an illegal kickback under SEC rules and Robinhood was banned from using it', 'PFOF is legal in the US (banned in the UK and parts of the EU but not in the US). Robinhood was fined for disclosure failures around PFOF but was not banned from the practice. Calling it illegal is a very common but factually wrong assumption.'],
+      ['PFOF is treated as a prohibited kickback in the US, so retail brokers cannot use it', 'PFOF is legal in the US (banned in the UK and parts of the EU but not in the US). Robinhood was fined for disclosure failures around PFOF but was not banned from the practice. Treating it as prohibited in the US is a common but factually wrong assumption.'],
       ['PFOF is when retail brokers pay exchanges to display their customer orders', 'PFOF goes the other way — wholesalers pay brokers for the order flow. Reversing the payment direction inverts the entire economic story.'],
       ['PFOF is the commission that retail clients pay on each trade', 'PFOF is paid by wholesalers to brokers — the retail customer does not see it directly on their statement. It is what funded "zero-commission" trading; the customer\'s execution cost shows up in spread, not in a visible commission line.'],
     ],

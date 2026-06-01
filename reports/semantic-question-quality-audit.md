@@ -1,6 +1,6 @@
 # Semantic Question Quality Audit
 
-Generated on 2026-06-01T06:25:35.745Z.
+Generated on 2026-06-01T06:29:37.121Z.
 
 Scans `src/data/questionCatalog/*.ts` directly with the TypeScript parser, so it does not depend on app course wiring or runtime imports.
 
@@ -11,8 +11,8 @@ Scans `src/data/questionCatalog/*.ts` directly with the TypeScript parser, so it
 - Extracted question records before quarantine: 57234
 - Non-playable import placeholders skipped: 157
 - Distinct question ids seen: 38866
-- Total semantic issues found: 1309
-- JSON issue rows stored: 1309
+- Total semantic issues found: 1300
+- JSON issue rows stored: 1300
 
 ## Flag Counts
 
@@ -20,7 +20,7 @@ Scans `src/data/questionCatalog/*.ts` directly with the TypeScript parser, so it
 |---|---:|---|
 | `repeated-why-wrong` | 1126 | The same distractor flaw appears repeatedly, suggesting boilerplate rather than a specific misconception. |
 | `meta-distractor` | 121 | A wrong answer teaches test-taking behavior or vague strategy instead of a plausible content misconception. |
-| `obvious-irrelevant-distractor` | 62 | A wrong answer appears comically or generically unrelated to the prompt context. |
+| `obvious-irrelevant-distractor` | 53 | A wrong answer appears comically or generically unrelated to the prompt context. |
 
 ## Highest-Signal Examples
 

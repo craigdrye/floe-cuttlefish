@@ -120,8 +120,8 @@ export const colClimateProjectHigh103TopUpBQuestions: Question[] = makeQuestionB
     correct: 'The cost of emissions falls on society and future people, not on the emitter, making it a negative externality',
     wrong: [
       miss('There is not enough money in the world to address it', 'Affordability is debated, but the "market failure" label refers to mispriced costs, not a shortage of funds.', 'Focus on who pays for the damage, not how much money exists.'),
-      miss('Governments have banned the trading of energy', 'Energy is heavily traded; the failure is that the harm from emissions is not reflected in market prices.', 'The market still runs; it just ignores a hidden cost.'),
-      miss('Renewable energy is illegal in most countries', 'Renewables are legal and growing; the market failure is about uncosted pollution, not bans.', 'The problem is an unpriced side effect, not prohibition.'),
+      miss('Energy markets exist, so pollution costs must already be included in prices', 'Energy can be heavily traded while still leaving climate damage outside the market price.', 'The market still runs; it just ignores a hidden cost.'),
+      miss('Renewable energy growth means emissions no longer create a pricing problem', 'Renewables are growing, but the market failure remains when emissions damages are still not paid by emitters.', 'The problem is an unpriced side effect, not prohibition.'),
     ],
     lesson: 'A market failure occurs when prices do not reflect true costs. Emitting CO2 imposes costs (heat, floods, health harms) on others and on the future, but emitters usually pay nothing for that damage. This negative externality means the market overproduces emissions, which is why policy aims to put a price on or limit them.',
     source,
@@ -407,8 +407,8 @@ export const colClimateProjectHigh103TopUpBQuestions: Question[] = makeQuestionB
     correct: 'It implies the evidence is evenly split when the vast majority of evidence supports one side',
     wrong: [
       miss('Both guests should have been removed because debate is never useful', 'Debate can be useful; the issue is misrepresenting the weight of evidence, not allowing discussion at all.', 'The problem is the misleading 50-50 framing, not debate itself.'),
-      miss('The contrarian should always be given more time, not equal time', 'Giving a fringe view more time would worsen the distortion, not fix it.', 'The fix is proportion to the evidence, not more time for the minority.'),
-      miss('News programmes are required to show exactly two opposing guests', 'There is no such requirement; the distortion comes from implying the sides carry equal evidentiary weight.', 'The format is a choice, and this choice misleads.'),
+      miss('The segment is balanced as long as both guests sound confident', 'Confidence is not evidentiary weight; the format misleads when it presents fringe and consensus views as equal.', 'The fix is proportion to the evidence, not more time for the minority.'),
+      miss('A 50-50 format is always fair because climate policy is controversial', 'Controversy in politics does not mean the scientific evidence is evenly split.', 'The format is a choice, and this choice misleads.'),
     ],
     lesson: 'False balance occurs when a media format gives roughly equal weight to two positions that are not equally supported by evidence. Presenting a lone contrarian as the mirror image of the scientific mainstream suggests the field is split 50-50 when it is not. Fair coverage reflects the actual weight of evidence rather than a misleading symmetry.',
     source,

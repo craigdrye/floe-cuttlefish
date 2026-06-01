@@ -989,7 +989,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'A team debates replacing a message broker but no one remembers why it was chosen. What documentation would help?',
       'An architecture decision record with context, options, decision, tradeoffs, and consequences',
       [
-        ['A screenshot of the old whiteboard with no date', 'Undated context loses the constraints that made the decision sensible; the decision becomes opaque.'],
+        ['A note that names the chosen broker but omits context and rejected options', 'A bare outcome loses the constraints and tradeoffs that made the decision sensible; the decision becomes opaque.'],
         ['A vote based on who speaks last', 'Recency bias is not architecture; the team needs the original tradeoff logic to evaluate change.'],
         ['A rule that past decisions are unknowable', 'Treating decisions as folklore is the failure mode ADRs exist to fix.'],
       ],

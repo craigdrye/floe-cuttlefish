@@ -171,7 +171,7 @@ export const investingBasicsQuestions: Question[] = makeQuestionBank('Career Ski
     prompt: 'Putting your entire savings into one company you love is risky mainly because:',
     correct: 'That one company can fail no matter how good it seems',
     wrong: [
-      miss('Single stocks are illegal to hold long-term', 'You can legally hold one stock forever; the danger is concentration, not legality.', 'It is allowed. The problem is having all your eggs in one basket.'),
+      miss('Legal ownership means the risk must be acceptable', 'Legality is not the same as diversification; the danger is concentration, not whether the stock is allowed.', 'It is allowed. The problem is having all your eggs in one basket.'),
       miss('You would pay more taxes on one stock', 'Taxes depend on gains and account type, not on owning a single name.', 'Tax is not the core issue. Think about what happens if that one firm stumbles.'),
       miss('Good companies never pay dividends', 'Plenty of strong companies pay dividends, and dividends are not the risk here anyway.', 'Forget dividends. Focus on the danger of a single point of failure.'),
     ],
@@ -417,7 +417,7 @@ export const investingBasicsQuestions: Question[] = makeQuestionBank('Career Ski
     wrong: [
       miss('Cannot hold stocks or funds', 'A brokerage account holds the same investments; it simply lacks the tax perks of a retirement account.', 'It holds the same stuff. The difference is taxes and access rules.'),
       miss('Always loses to an IRA in every situation', 'Brokerages shine for goals before retirement age, since you can withdraw anytime without penalty.', 'Flexibility is its strength. When might penalty-free access matter?'),
-      miss('Is illegal to use for long-term investing', 'Taxable brokerage accounts are completely legal and widely used for long-term goals.', 'They are perfectly legal. The tradeoff is tax perks vs flexibility.'),
+      miss('Should only be used for short-term trading because it lacks retirement tax perks', 'Taxable brokerage accounts are widely used for long-term goals even though they lack IRA-style tax advantages.', 'They are flexible. The tradeoff is tax perks vs access.'),
     ],
     lesson: 'A taxable brokerage account offers no upfront tax break and you owe tax on dividends and gains, but you can deposit and withdraw freely with no age rules. It is ideal for goals before retirement age. Many investors max tax-advantaged accounts first, then use a brokerage.',
     source,
