@@ -397,7 +397,10 @@ export function TrainerScreen() {
   }
 
   const choose = (answer: Answer) => {
-    if (selectedAnswerId) return
+    if (selectedAnswerId) {
+      if (selectedAnswerId === answer.id) nextQuestion()
+      return
+    }
     if (armedAnswerId !== answer.id) {
       setArmedAnswerId(answer.id)
       return
