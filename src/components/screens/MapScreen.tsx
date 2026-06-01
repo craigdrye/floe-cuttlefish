@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect, useRef, type CSSProperties } from 'react'
-import { Flame, Repeat2, Sparkles, Headphones, CheckCircle2, ArrowLeft, Trophy, Lock, Star, ChevronRight } from 'lucide-react'
+import { Flame, Repeat2, Sparkles, CheckCircle2, ArrowLeft, Trophy, Lock, Star, ChevronRight } from 'lucide-react'
 import { useStore } from '../../store/useStore'
 import { useQuizData } from '../../hooks/useQuizData'
 import { playFanfare, playRewardVoiceSound } from '../../lib/audio'
@@ -277,18 +277,20 @@ export function MapScreen() {
       <section className="mode-switch-row" aria-label="Practice mode">
         <div className="mode-switch">
           <button className={mode === 'daily' ? 'active' : ''} onClick={() => { setMode('daily'); setIndex(0); setSelectedAnswerId(null) }}>
-            <Flame size={15} /> Daily
+            <Flame size={15} /> Learn
           </button>
           <button className={mode === 'practice' ? 'active' : ''} onClick={() => { setMode('practice'); setIndex(0); setSelectedAnswerId(null) }}>
             <Repeat2 size={15} /> Endless
           </button>
           <button className={mode === 'doom' ? 'active' : ''} onClick={() => { setMode('doom'); setIndex(0); setSelectedAnswerId(null) }}>
-            <Sparkles size={15} /> Doom
+            <Sparkles size={15} /> Hard
           </button>
-          <button className={mode === 'podcast' ? 'active' : ''} onClick={() => { setMode('podcast'); setIndex(0); setSelectedAnswerId(null) }}>
-            <Headphones size={15} /> Podcast
-          </button>
-          <button className={mode === 'review' ? 'active' : ''} onClick={() => { setMode('review'); setIndex(0); setSelectedAnswerId(null); setSelectedChapter(null); setScreen('lesson') }}>
+          <button
+            className={mode === 'review' ? 'active' : ''}
+            disabled={reviewQuestions.length === 0}
+            title={reviewQuestions.length === 0 ? 'No due review questions yet' : `${reviewQuestions.length} due for review`}
+            onClick={() => { setMode('review'); setIndex(0); setSelectedAnswerId(null); setSelectedChapter(null); setScreen('lesson') }}
+          >
             <Repeat2 size={15} /> Review
             {reviewQuestions.length > 0 && (
               <span className="review-badge">{reviewQuestions.length}</span>

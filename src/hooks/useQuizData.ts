@@ -10,6 +10,7 @@ import type { QuestionCatalog } from '../data/questionCatalog'
 import {
   buildAdaptiveOrder,
   buildTrackQuiz,
+  defaultDifficultyFor,
   normalizeQuestionCatalog,
   remixQuestion,
   rewordQuestion,
@@ -195,9 +196,16 @@ export function useQuizData() {
     })
   }, [courseQuestions, progress.reviews])
 
+  const hardQuestions = useMemo(() => {
+    const hard = courseQuestions.filter((q) => defaultDifficultyFor(q, selectedAge) >= 4)
+    return hard.length >= 4 ? hard : courseQuestions
+  }, [courseQuestions, selectedAge])
+
   const rawActiveSet = chapterQuestions
     ?? (mode === 'review' && reviewQuestions.length > 0
       ? reviewQuestions
+      : mode === 'doom'
+        ? hardQuestions
       : mode === 'daily'
         ? dailyQuestions
         : courseQuestions)

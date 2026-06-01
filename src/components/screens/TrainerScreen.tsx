@@ -313,7 +313,7 @@ export function TrainerScreen() {
       unlockAchievement({ id: 'century', title: 'Century Club', description: 'You earned 100 XP total.', icon: '💯' })
     }
     if (solvedCount >= 16) {
-      unlockAchievement({ id: 'daily-clear', title: 'Daily Clear!', description: 'All 16 daily questions solved.', icon: '🏆' })
+      unlockAchievement({ id: 'daily-clear', title: 'Reef Regular!', description: 'You solved 16 questions. Floe is taking notes.', icon: '🏆' })
     }
   }, [unlockAchievement])
 

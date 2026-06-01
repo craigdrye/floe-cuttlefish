@@ -54,6 +54,13 @@
   transition: all 0.2s;
 }
 .mode-switch button:hover { background: rgba(255,255,255,0.5); }
+.mode-switch button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+.mode-switch button:disabled:hover {
+  background: rgba(255,255,255,0.3);
+}
 .mode-switch button.active {
   background: var(--reef-teal);
   color: #fff;
