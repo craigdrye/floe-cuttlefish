@@ -29,7 +29,7 @@ export const colGetReadyFor6thGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: '3/8',
     wrong: [
       miss('3/0', 'You subtracted the bottom numbers. The bottom stays the same.', 'Keep the 8 on the bottom and only subtract the tops.'),
-      miss('7/8', 'You added instead of subtracting.', 'The minus sign means take away: 5 - 2.'),
+      miss('7/8', '7/8 is what you get by adding, but the story is asking for the difference.', 'The minus sign means take away: 5 - 2.'),
       miss('3/16', 'You added the bottom numbers, which you should not do.', 'Keep the bottom as 8 and subtract the tops: 5 - 2.'),
     ],
     lesson: 'To subtract fractions with the same bottom number, subtract the top numbers and keep the bottom the same. So 5/8 - 2/8 = 3/8. You started with 5 eighths and took away 2 eighths, leaving 3 eighths.',
@@ -198,7 +198,7 @@ export const colGetReadyFor6thGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('3.6', 'You are one tenth short. Add the tenths again: 3 + 4.', 'Line up the dots and add the tenths: 3 + 4 = 7.'),
       miss('36', 'You forgot the decimal point in your answer.', 'Keep the dot lined up so the answer stays near 3.'),
-      miss('0.9', 'You subtracted instead of adding.', 'The plus sign means add: 2.3 + 1.4.'),
+      miss('0.9', '0.9 comes from taking away, but this question asks for the amounts together.', 'The plus sign means add: 2.3 + 1.4.'),
     ],
     lesson: 'Line up the decimal points, then add like normal. Add the tenths: 3 + 4 = 7 tenths. Add the ones: 2 + 1 = 3. So 2.3 + 1.4 = 3.7.',
     source,
@@ -213,7 +213,7 @@ export const colGetReadyFor6thGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('3.2', 'You subtracted the smaller tenths from the larger by mistake.', 'You need to regroup because 6 tenths is less than 8 tenths.'),
       miss('2.2', 'Check your regrouping when the tenths are too small.', 'Borrow one whole to make 16 tenths, then subtract 8.'),
-      miss('8.4', 'You added the numbers instead of subtracting.', 'The minus sign means take away: 5.6 - 2.8.'),
+      miss('8.4', '8.4 uses the total of the numbers, but the question is asking how much is left or how far apart they are.', 'The minus sign means take away: 5.6 - 2.8.'),
     ],
     lesson: 'Line up the dots. Six tenths is less than 8 tenths, so borrow one whole to make 16 tenths. Then 16 - 8 = 8 tenths, and 4 - 2 = 2 ones. So 5.6 - 2.8 = 2.8.',
     source,
@@ -532,7 +532,7 @@ export const colGetReadyFor6thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'What is 47 x 10?',
     correct: '470',
     wrong: [
-      miss('57', 'You added 10 instead of multiplying by 10.', 'Times 10 makes the number ten times bigger.'),
+      miss('57', '57 only adds one extra ten, but multiplying by 10 makes the whole number ten times as large.', 'Times 10 makes the number ten times bigger.'),
       miss('4700', 'That is multiplying by 100, with two zeros.', 'Multiplying by 10 adds just one zero.'),
       miss('410', 'You only changed one digit. Every digit shifts.', 'Multiplying by 10 shifts the whole number up.'),
     ],
@@ -548,7 +548,7 @@ export const colGetReadyFor6thGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: '35',
     wrong: [
       miss('340', 'You subtracted 10 instead of dividing by 10.', 'Dividing by 10 makes the number ten times smaller.'),
-      miss('3500', 'You multiplied by 10 instead of dividing.', 'Dividing by 10 makes the number smaller, not bigger.'),
+      miss('3500', '3500 moves the number the wrong way; dividing by 10 should make it ten times smaller.', 'Dividing by 10 makes the number smaller, not bigger.'),
       miss('3.5', 'You divided by 100. Take away only one zero.', 'Dividing 350 by 10 removes one zero.'),
     ],
     lesson: 'Dividing a number that ends in zero by 10 removes one zero. So 350 divided by 10 is 35. Each digit shifts one place to the right.',

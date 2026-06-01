@@ -501,7 +501,7 @@ export const moneyBasicsPrim103TopUpAQuestions: Question[] = makeQuestionBank('P
     prompt: 'A sweet costs 7p. You pay with a 10p coin. How much change do you get?',
     correct: '3p',
     wrong: [
-      miss('7p', 'That is the price, not the change.', 'Take the price away from the 10p you paid.'),
+      miss('7p', '7p repeats the cost, but change is the money left after paying.', 'Take the price away from the 10p you paid.'),
       miss('17p', 'That adds the coins instead of taking the price away.', 'Change means 10 take away 7.'),
       miss('4p', 'That takes away one too many.', 'Work out 10 - 7 carefully.'),
     ],
@@ -516,7 +516,7 @@ export const moneyBasicsPrim103TopUpAQuestions: Question[] = makeQuestionBank('P
     prompt: 'A rubber costs 15p. You pay with a 20p coin. How much change do you get?',
     correct: '5p',
     wrong: [
-      miss('15p', 'That is the price, not the change.', 'Take the price from the 20p you handed over.'),
+      miss('15p', '15p repeats the cost, but change is the money left after paying.', 'Take the price from the 20p you handed over.'),
       miss('35p', 'That adds the numbers instead of subtracting.', 'Change is 20 take away 15.'),
       miss('10p', 'That takes away too little.', 'Work out 20 - 15 carefully.'),
     ],
@@ -531,7 +531,7 @@ export const moneyBasicsPrim103TopUpAQuestions: Question[] = makeQuestionBank('P
     prompt: 'A toy car costs 30p. You pay with a 50p coin. How much change do you get?',
     correct: '20p',
     wrong: [
-      miss('30p', 'That is the price, not the change.', 'Take the price from the 50p you paid.'),
+      miss('30p', '30p repeats the cost, but change is the money left after paying.', 'Take the price from the 50p you paid.'),
       miss('80p', 'That adds the numbers instead of taking away.', 'Change is 50 take away 30.'),
       miss('10p', 'That takes away too much.', 'Work out 50 - 30 carefully.'),
     ],
@@ -546,7 +546,7 @@ export const moneyBasicsPrim103TopUpAQuestions: Question[] = makeQuestionBank('P
     prompt: 'A pen costs 80p. You pay with a £1 coin. How much change do you get?',
     correct: '20p',
     wrong: [
-      miss('80p', 'That is the price, not the change.', 'A pound is 100p, so take 80 away from 100.'),
+      miss('80p', '80p repeats the cost, but change is the money left after paying.', 'A pound is 100p, so take 80 away from 100.'),
       miss('180p', 'That adds the price instead of subtracting.', 'Change is 100 take away 80.'),
       miss('10p', 'That takes away too much from a pound.', 'Work out 100 - 80 carefully.'),
     ],
@@ -591,7 +591,7 @@ export const moneyBasicsPrim103TopUpAQuestions: Question[] = makeQuestionBank('P
     prompt: 'A sticker costs 5p. You pay with a 20p coin. How much change do you get?',
     correct: '15p',
     wrong: [
-      miss('5p', 'That is the price, not the change.', 'Take the price from the 20p you paid.'),
+      miss('5p', '5p repeats the cost, but change is the money left after paying.', 'Take the price from the 20p you paid.'),
       miss('25p', 'That adds the numbers instead of subtracting.', 'Change is 20 take away 5.'),
       miss('10p', 'That takes away too much.', 'Work out 20 - 5 carefully.'),
     ],

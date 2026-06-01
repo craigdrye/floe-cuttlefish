@@ -13,7 +13,7 @@ export const class5MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'What is 2/7 + 3/7?',
     correct: '5/7',
     wrong: [
-      miss('5/14', 'You added the bottom numbers, but they should stay the same.', 'When the bottoms match, only add the top numbers.'),
+      miss('5/14', '5/14 adds the denominators, but like fractions keep the same bottom number and only combine the tops.', 'When the bottoms match, only add the top numbers.'),
       miss('6/7', 'That is more than the right total. Add the tops carefully.', 'Add 2 and 3 to get the new top number.'),
       miss('5/7 plus 1', 'The sum is less than one whole, not more.', 'Two sevenths plus three sevenths is five sevenths.'),
     ],
@@ -167,7 +167,7 @@ export const class5MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('3.8', 'Check the tenths. Six tenths minus two tenths is four tenths.', 'Subtract the tenths, then the ones.'),
       miss('5.8', 'That is adding, not subtracting.', 'Take 1.2 away from 4.6.'),
-      miss('34', 'You lost the decimal point.', 'The answer is between 3 and 4.'),
+      miss('34', '34 has the right-looking digits, but the decimal point is in the wrong place or missing.', 'The answer is between 3 and 4.'),
     ],
     lesson: 'Line up the decimal points, then subtract. Six tenths minus two tenths is four tenths, and 4 minus 1 is 3, so 4.6 - 1.2 = 3.4.',
     source,
@@ -228,7 +228,7 @@ export const class5MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('2.5', 'You doubled only part of the number.', 'Double both the 1 and the 0.5.'),
       miss('3.5', 'Two halves make one whole, so the total is exactly 3.', 'One and a half doubled is three.'),
-      miss('30', 'You lost the decimal point.', 'The answer is a small whole number.'),
+      miss('30', '30 has the right-looking digits, but the decimal point is in the wrong place or missing.', 'The answer is a small whole number.'),
     ],
     lesson: 'Doubling 1.5 means 1.5 + 1.5. The two halves combine to make one whole, so 2 x 1.5 = 3.',
     source,
@@ -500,7 +500,7 @@ export const class5MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'What is 250 / 10?',
     correct: '25',
     wrong: [
-      miss('2500', 'You multiplied instead of dividing.', 'Dividing by 10 makes the number smaller.'),
+      miss('2500', '2500 grows the number by multiplying, but this question asks you to share or split it.', 'Dividing by 10 makes the number smaller.'),
       miss('240', 'You subtracted 10 instead of dividing.', 'Take one zero off the end.'),
       miss('2.5', 'You divided by 100, not 10.', 'Remove only one zero for divide by ten.'),
     ],
@@ -591,7 +591,7 @@ export const class5MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'A line plot of pencil lengths has X marks above 1/2 and above 1/4. Which length is longer?',
     correct: '1/2',
     wrong: [
-      miss('1/4', 'One quarter is smaller than one half.', 'A half is bigger than a quarter.'),
+      miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'A half is bigger than a quarter.'),
       miss('They are equal', 'A half and a quarter are different sizes.', 'Compare the two fractions.'),
       miss('Neither has a length', 'Each X mark sits above a real length.', 'The fraction below the X is the length.'),
     ],

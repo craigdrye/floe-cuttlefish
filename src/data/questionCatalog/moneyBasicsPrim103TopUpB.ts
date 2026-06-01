@@ -29,7 +29,7 @@ export const moneyBasicsPrim103TopUpBQuestions: Question[] = makeQuestionBank('P
     correct: '5p',
     wrong: [
       miss('15p', 'That is the price, not the money you get back.', 'Take 15p away from 20p.'),
-      miss('35p', 'You added instead of taking away.', 'Change is 20p minus 15p.'),
+      miss('35p', '35p comes from adding the amounts, but this question asks you to take one amount away.', 'Change is 20p minus 15p.'),
       miss('10p', 'That is not the amount left after paying 15p.', 'Count up from 15 to 20.'),
     ],
     lesson: 'To find change, take the price away from the money you paid. The pencil is 15p and you paid 20p, so 20 take away 15 is 5p. Counting up from 15 to 20 also gives 5.',
@@ -74,8 +74,8 @@ export const moneyBasicsPrim103TopUpBQuestions: Question[] = makeQuestionBank('P
     correct: '15p',
     wrong: [
       miss('25p', 'That is half of 50, not 50 take away 35.', 'Take 35 away from 50 carefully.'),
-      miss('35p', 'That is the price, not the change.', 'Subtract the price from the 50p.'),
-      miss('85p', 'You added the numbers instead of taking away.', 'Change is 50p minus 35p.'),
+      miss('35p', '35p repeats the cost, but change is the money left after paying.', 'Subtract the price from the 50p.'),
+      miss('85p', '85p treats the numbers as a total, but the action word here means take away.', 'Change is 50p minus 35p.'),
     ],
     lesson: 'Take the price away from the money you paid. The rubber is 35p and you paid 50p, so 50 take away 35 is 15p. You can count up from 35 to 50 to check.',
     source,
@@ -119,7 +119,7 @@ export const moneyBasicsPrim103TopUpBQuestions: Question[] = makeQuestionBank('P
     correct: '1 pound',
     wrong: [
       miss('4 pounds', 'That is the price of the book, not the change.', 'Take 4 pounds away from 5 pounds.'),
-      miss('9 pounds', 'You added instead of taking away.', 'Change is 5 pounds minus 4 pounds.'),
+      miss('9 pounds', '9 pounds comes from adding the amounts, but this question asks you to take one amount away.', 'Change is 5 pounds minus 4 pounds.'),
       miss('5 pounds', 'You spent some of it on the book, so you cannot get it all back.', 'You paid 5 and the book cost 4, so 1 is left.'),
     ],
     lesson: 'Take the price away from the note you paid with. The book is 4 pounds and you paid 5 pounds, so 5 take away 4 is 1 pound change.',
@@ -318,7 +318,7 @@ export const moneyBasicsPrim103TopUpBQuestions: Question[] = makeQuestionBank('P
     correct: '15p',
     wrong: [
       miss('45p', 'That is the price of the comic, not what is left.', 'Take 45p away from your 60p.'),
-      miss('105p', 'You added instead of taking away.', 'Money left is 60p minus 45p.'),
+      miss('105p', '105p comes from adding the amounts, but this question asks you to take one amount away.', 'Money left is 60p minus 45p.'),
       miss('25p', 'That is not what is left after spending 45p from 60p.', 'Count up from 45 to 60.'),
     ],
     lesson: 'After buying the comic for 45p from your 60p, take 45 away from 60 to get 15p left. That 15p could buy a small sweet.',
@@ -380,7 +380,7 @@ export const moneyBasicsPrim103TopUpBQuestions: Question[] = makeQuestionBank('P
     correct: '40p',
     wrong: [
       miss('15p', 'That is only the new money, not your total.', 'Add the new 15p to the 25p you had.'),
-      miss('10p', 'You took away instead of adding.', 'Putting money in means you add it on.'),
+      miss('10p', '10p is a take-away answer, but this prompt wants a joined total.', 'Putting money in means you add it on.'),
       miss('25p', 'You forgot to add the new 15p.', 'Add 25p and 15p together.'),
     ],
     lesson: 'When you put more money into savings, you add it to what you already have. You had 25p and added 15p, so 25 plus 15 is 40p.',
@@ -442,7 +442,7 @@ export const moneyBasicsPrim103TopUpBQuestions: Question[] = makeQuestionBank('P
     correct: '1 pound',
     wrong: [
       miss('50p', 'That is one week only, not two.', 'Add 50p for each of the 2 weeks.'),
-      miss('25p', 'You took away instead of adding.', 'Two weeks means two lots of 50p.'),
+      miss('25p', '25p is a take-away answer, but this prompt wants a joined total.', 'Two weeks means two lots of 50p.'),
       miss('2 pounds', 'That would be four lots of 50p, too many.', '50p plus 50p makes 1 pound.'),
     ],
     lesson: 'Each week you earn 50p, so in 2 weeks you earn 50p plus 50p. Two 50p coins make 100p, which is 1 pound.',
@@ -457,7 +457,7 @@ export const moneyBasicsPrim103TopUpBQuestions: Question[] = makeQuestionBank('P
     correct: '50p',
     wrong: [
       miss('30p', 'That is only the money you just earned.', 'Add it to the 20p already in the box.'),
-      miss('10p', 'You took away instead of adding.', 'Putting money in means adding it on.'),
+      miss('10p', '10p is a take-away answer, but this prompt wants a joined total.', 'Putting money in means adding it on.'),
       miss('20p', 'You forgot to add the 30p you earned.', 'Add 20p and 30p together.'),
     ],
     lesson: 'When you put earned money into your savings, you add it to what is there. The box had 20p and you added 30p, so 20 plus 30 is 50p.',
@@ -472,7 +472,7 @@ export const moneyBasicsPrim103TopUpBQuestions: Question[] = makeQuestionBank('P
     correct: '30p',
     wrong: [
       miss('90p', 'That is the whole price, but you already have some money.', 'Take away what you already have.'),
-      miss('150p', 'You added instead of taking away.', 'The amount you still need is 90p minus 60p.'),
+      miss('150p', '150p comes from adding the amounts, but this question asks you to take one amount away.', 'The amount you still need is 90p minus 60p.'),
       miss('60p', 'That is what you already have, not what is missing.', 'Count up from 60 to 90.'),
     ],
     lesson: 'To find how much more you need, take what you have away from the price. The toy is 90p and you have 60p, so 90 take away 60 is 30p more.',

@@ -342,7 +342,7 @@ export const class1MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'What is 9 take away 4?',
     correct: '5',
     wrong: [
-      miss('13', 'You added instead of taking away.', 'Taking away makes the number smaller.'),
+      miss('13', '13 comes from adding the amounts, but this question asks you to take one amount away.', 'Taking away makes the number smaller.'),
       miss('6', 'That is one too many. Count back 4 from 9 carefully.', 'Start at 9 and count back four steps.'),
       miss('4', 'That is the number you took away, not what is left.', 'Count back from 9 by 4 to find what remains.'),
     ],
@@ -374,7 +374,7 @@ export const class1MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('6', 'If you take away all 6, none are left.', 'Removing every one leaves nothing.'),
       miss('1', 'Taking all of them away leaves nothing, not one.', 'Count down from 6 by 6 and you reach 0.'),
-      miss('12', 'You added instead of taking away.', 'Take away means the number gets smaller.'),
+      miss('12', '12 comes from adding the amounts, but this question asks you to take one amount away.', 'Take away means the number gets smaller.'),
     ],
     lesson: 'When you take away the same number, nothing is left. 6 take away 6 is 0. Zero means there are none left.',
     source,
@@ -433,7 +433,7 @@ export const class1MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '4',
     wrong: [
       miss('6', 'That is the number you take away, not the part left.', 'Use the matching addition: 4 plus 6 is 10.'),
-      miss('16', 'You added instead of taking away.', 'Take 6 away from 10.'),
+      miss('16', '16 comes from adding the amounts, but this question asks you to take one amount away.', 'Take 6 away from 10.'),
       miss('10', 'That is the whole, but you removed 6 of it.', 'After taking 6 from 10, only the other part is left.'),
     ],
     lesson: 'Addition and subtraction go together. Since 4 plus 6 is 10, then 10 take away 6 must be 4. The same three numbers make a fact family.',

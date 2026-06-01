@@ -165,8 +165,8 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     prompt: 'What is 2 + 3?',
     correct: '5',
     wrong: [
-      miss('6', 'That is one more than the right answer.', 'Count on from 2: 3, 4, 5.'),
-      miss('4', 'That is one less than the right answer.', 'Start at 2 and count up 3 more.'),
+      miss('6', '6 is just one step too high; check the last count carefully.', 'Count on from 2: 3, 4, 5.'),
+      miss('4', '4 is just one step too low; count the final item as well.', 'Start at 2 and count up 3 more.'),
       miss('23', 'You put the numbers next to each other instead of adding.', 'Adding means joining the groups, not writing them side by side.'),
     ],
     lesson: 'Adding means putting groups together. Start with 2 and count up three more to reach 5.',
@@ -257,8 +257,8 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     correct: '3',
     wrong: [
       miss('7', 'That looks like you added instead of taking away.', 'Subtracting makes the number smaller.'),
-      miss('2', 'That is one less than the right answer.', 'Start at 5 and count back 2: 4, 3.'),
-      miss('4', 'That is one more than the right answer.', 'Take away exactly two from five.'),
+      miss('2', '2 is just one step too low; count the final item as well.', 'Start at 5 and count back 2: 4, 3.'),
+      miss('4', '4 is just one step too high; check the last count carefully.', 'Take away exactly two from five.'),
     ],
     lesson: 'Subtracting means taking some away. Start at 5 and count back two to land on 3.',
     source,
@@ -272,7 +272,7 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     correct: '5',
     wrong: [
       miss('11', 'Eating cookies takes them away, so the number should go down.', 'Subtract the eaten cookies from the start.'),
-      miss('6', 'That is one more than the right answer.', 'Count back 3 from 8: 7, 6, 5.'),
+      miss('6', '6 is just one step too high; check the last count carefully.', 'Count back 3 from 8: 7, 6, 5.'),
       miss('3', 'That is the number you ate, not the number left.', 'Find how many remain after eating 3.'),
     ],
     lesson: 'When some things are taken away, we subtract. Eight cookies take away three leaves 5 cookies.',
@@ -317,8 +317,8 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     correct: '9',
     wrong: [
       miss('19', 'That looks like you added instead of subtracting.', 'Taking away makes the number smaller.'),
-      miss('8', 'That is one less than the right answer.', 'Count back 5 from 14: 13, 12, 11, 10, 9.'),
-      miss('10', 'That is one more than the right answer.', 'Take away exactly five from fourteen.'),
+      miss('8', '8 is just one step too low; count the final item as well.', 'Count back 5 from 14: 13, 12, 11, 10, 9.'),
+      miss('10', '10 is just one step too high; check the last count carefully.', 'Take away exactly five from fourteen.'),
     ],
     lesson: 'To subtract from a teen number, count back step by step. Fourteen take away five lands on 9.',
     source,
@@ -698,7 +698,7 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     wrong: [
       miss('16', 'Giving toys away means you have fewer, so we subtract.', 'Take the 4 given toys away from 12.'),
       miss('4', 'That is how many you gave away, not how many are left.', 'Find what remains after giving 4 away.'),
-      miss('7', 'That is one less than the right answer.', 'Count back 4 from 12: 11, 10, 9, 8.'),
+      miss('7', '7 is just one step too low; count the final item as well.', 'Count back 4 from 12: 11, 10, 9, 8.'),
     ],
     lesson: 'Giving things away means we subtract. Twelve toys take away four leaves 8 toys.',
     source,
@@ -728,7 +728,7 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     wrong: [
       miss('14', 'Ducks swimming away means fewer ducks, so we subtract.', 'Take 3 ducks away from 11.'),
       miss('3', 'That is how many swam away, not how many stayed.', 'Find how many are left in the pond.'),
-      miss('7', 'That is one less than the right answer.', 'Count back 3 from 11: 10, 9, 8.'),
+      miss('7', '7 is just one step too low; count the final item as well.', 'Count back 3 from 11: 10, 9, 8.'),
     ],
     lesson: 'When some leave, we subtract. Eleven ducks take away three ducks leaves 8 ducks in the pond.',
     source,
@@ -743,7 +743,7 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     wrong: [
       miss('2', 'You only counted the cats and forgot the dog.', 'Count the cats and the dog together.'),
       miss('1', 'You only counted the dog and forgot the cats.', 'Add the dog to the two cats.'),
-      miss('4', 'That is one more than the right answer.', 'Add 2 cats and 1 dog.'),
+      miss('4', '4 is just one step too high; check the last count carefully.', 'Add 2 cats and 1 dog.'),
     ],
     lesson: 'To count all the pets, we add the cats and the dog. Two cats and one dog make 3 pets.',
     source,
@@ -789,7 +789,7 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     wrong: [
       miss('7', 'Seven spots have dots; the empty ones are what is left.', 'Take 7 away from 10 to find the empty spots.'),
       miss('10', 'Not all spots are empty, since 7 have dots.', 'Some spots are filled already.'),
-      miss('4', 'That is one more than the right answer.', 'Count up from 7 to 10: that is three.'),
+      miss('4', '4 is just one step too high; check the last count carefully.', 'Count up from 7 to 10: that is three.'),
     ],
     lesson: 'A ten frame has ten spots. If 7 are filled, then 10 take away 7 leaves 3 empty spots.',
     source,

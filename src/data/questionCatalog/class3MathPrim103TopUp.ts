@@ -164,7 +164,7 @@ export const class3MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'What is 9 / 1?',
     correct: '9',
     wrong: [
-      miss('1', 'This is the number you divided by, not the answer.', 'Dividing by 1 keeps the number the same.'),
+      miss('1', '1 is the group size or divisor from the question, not the result after sharing.', 'Dividing by 1 keeps the number the same.'),
       miss('0', 'Dividing by 1 does not make the number disappear.', 'One group of 9 is still 9.'),
       miss('10', 'This adds 1 to 9 instead of dividing.', 'Sharing among 1 person gives them everything.'),
     ],

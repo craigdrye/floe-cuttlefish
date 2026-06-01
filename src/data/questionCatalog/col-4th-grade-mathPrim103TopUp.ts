@@ -45,7 +45,7 @@ export const col4thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('4,625', 'You forgot to carry a ten somewhere in the middle.', 'Check the tens column: 5 + 7 = 12, so carry 1.'),
       miss('4,715', 'A small carrying slip changed the tens digit.', 'Add column by column and keep track of every carry.'),
-      miss('2,225', 'You subtracted instead of adding.', 'The plus sign means put the two numbers together.'),
+      miss('2,225', '2,225 comes from taking away, but this question asks for the amounts together.', 'The plus sign means put the two numbers together.'),
     ],
     lesson: 'Stack the numbers and add each place value, starting from the ones. Carry whenever a column passes 9. Here 1,250 + 3,475 = 4,725.',
     source,
@@ -135,7 +135,7 @@ export const col4thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'What is 47 x 10?',
     correct: '470',
     wrong: [
-      miss('57', 'You added 10 instead of multiplying by 10.', 'Multiplying by 10 shifts the digits, it does not just add 10.'),
+      miss('57', '57 only adds one extra ten, but multiplying by 10 makes the whole number ten times as large.', 'Multiplying by 10 shifts the digits, it does not just add 10.'),
       miss('407', 'You put the zero in the wrong spot.', 'When you multiply by 10, add a zero to the end.'),
       miss('4,700', 'You added two zeros, which is multiplying by 100.', 'Multiplying by 10 adds only one zero.'),
     ],
@@ -413,7 +413,7 @@ export const col4thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'What is 1/5 + 2/5?',
     correct: '3/5',
     wrong: [
-      miss('3/10', 'You added the bottom numbers, but they should stay the same.', 'When bottoms match, only add the tops.'),
+      miss('3/10', '3/10 adds the denominators, but like fractions keep the same bottom number and only combine the tops.', 'When bottoms match, only add the tops.'),
       miss('3/25', 'You multiplied the bottoms instead of keeping 5.', 'Keep the same bottom and add the top numbers.'),
       miss('2/5', 'You forgot to add the first fraction.', 'Add 1 and 2 on top to get the new top number.'),
     ],
@@ -429,7 +429,7 @@ export const col4thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     correct: '3/6',
     wrong: [
       miss('3/0', 'The bottom does not become zero.', 'Keep the bottom number 6 and subtract only the tops.'),
-      miss('7/6', 'You added instead of subtracting.', 'The minus sign means take away.'),
+      miss('7/6', '7/6 is what you get by adding, but the story is asking for the difference.', 'The minus sign means take away.'),
       miss('3/12', 'You subtracted the bottoms, but they stay the same.', 'When bottoms match, only the tops change.'),
     ],
     lesson: 'With the same bottom number, subtract the tops and keep the bottom. 5/6 - 2/6 = 3/6.',
@@ -443,7 +443,7 @@ export const col4thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'Which is larger, 1/2 or 1/3?',
     correct: '1/2',
     wrong: [
-      miss('1/3', 'A bigger bottom number means smaller pieces.', 'Cutting a cake into 3 makes smaller slices than into 2.'),
+      miss('1/3', '1/3 has more pieces, but more equal pieces means each piece is smaller.', 'Cutting a cake into 3 makes smaller slices than into 2.'),
       miss('They are equal', 'They split the whole into different numbers of pieces.', 'Think about which piece is bigger.'),
       miss('1/4', '1/4 is not even one of the choices given.', 'Compare only the two fractions shown.'),
     ],

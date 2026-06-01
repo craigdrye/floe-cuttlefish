@@ -91,7 +91,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     wrong: [
       miss('42', 'You may have subtracted without borrowing in the ones.', 'You cannot take 7 from 5, so borrow a ten first.'),
       miss('48', 'This is too high. Check the tens.', 'After borrowing, the tens are 7 - 4, not 8 - 4.'),
-      miss('132', 'You added the numbers instead of subtracting.', 'Pages left means take the read pages away.'),
+      miss('132', '132 uses the total of the numbers, but the question is asking how much is left or how far apart they are.', 'Pages left means take the read pages away.'),
     ],
     lesson: 'Pages left means 85 - 47. The ones need a borrow: 15 - 7 = 8. The tens become 7 - 4 = 3. So 38 pages are left. Subtraction tells you the difference between two amounts.',
     source,
@@ -120,7 +120,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     prompt: 'What is 34 x 10?',
     correct: '340',
     wrong: [
-      miss('44', 'You added 10 instead of multiplying by 10.', 'Times ten makes the number ten times bigger.'),
+      miss('44', '44 only adds one extra ten, but multiplying by 10 makes the whole number ten times as large.', 'Times ten makes the number ten times bigger.'),
       miss('3400', 'You added two zeros instead of one.', 'Multiplying by 10 adds just one zero.'),
       miss('310', 'This does not match multiplying every part by ten.', 'Each digit shifts up one place value.'),
     ],
@@ -183,7 +183,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     wrong: [
       miss('80', 'You did not divide at all.', 'Dividing by 10 makes a number ten times smaller.'),
       miss('70', 'You subtracted 10 instead of dividing.', 'Ask how many tens are in 80.'),
-      miss('800', 'You multiplied by 10 instead of dividing.', 'Dividing makes the number smaller, not bigger.'),
+      miss('800', '800 moves the number the wrong way; dividing by 10 should make it ten times smaller.', 'Dividing makes the number smaller, not bigger.'),
     ],
     lesson: 'Dividing by 10 asks how many tens fit into a number. 80 has eight tens, so 80 divided by 10 = 8. Dividing by 10 makes a whole number ten times smaller.',
     source,
@@ -259,8 +259,8 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     correct: '2/4',
     wrong: [
       miss('1/4', 'This is only half of a half, so it is smaller.', 'For halves, the top should be exactly half the bottom.'),
-      miss('2/3', 'Two thirds is more than one half.', 'Check if the top is half of the bottom.'),
-      miss('3/4', 'Three quarters is bigger than one half.', 'One half means the top is half the bottom.'),
+      miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'Check if the top is half of the bottom.'),
+      miss('3/4', '3/4 is three out of four equal pieces, which is more than half the shape.', 'One half means the top is half the bottom.'),
     ],
     lesson: 'Equivalent fractions look different but show the same amount. In 2/4, the top is exactly half the bottom, just like 1/2. If you cut each half into two, you get 2 pieces out of 4.',
     source,
@@ -304,7 +304,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     prompt: 'What is 1/5 + 2/5?',
     correct: '3/5',
     wrong: [
-      miss('3/10', 'You added the bottom numbers, but they should stay the same.', 'Keep the bottom the same; only add the tops.'),
+      miss('3/10', '3/10 adds the denominators, but like fractions keep the same bottom number and only combine the tops.', 'Keep the bottom the same; only add the tops.'),
       miss('2/5', 'You only counted one of the parts.', 'Add the tops: 1 + 2 = 3.'),
       miss('3/25', 'You multiplied the bottoms instead of keeping them.', 'The bottom stays 5 when both fractions are fifths.'),
     ],
@@ -428,7 +428,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     wrong: [
       miss('10', 'That is the percent, not the amount.', '10% means one tenth of the number.'),
       miss('16', 'You added instead of finding a tenth.', 'Divide 60 by 10 to find 10%.'),
-      miss('600', 'You multiplied by 10 instead of dividing.', '10% makes the number smaller, not bigger.'),
+      miss('600', '600 moves the number the wrong way; dividing by 10 should make it ten times smaller.', '10% makes the number smaller, not bigger.'),
     ],
     lesson: '10% means one tenth. To find 10% of a number, divide it by 10. So 10% of 60 is 60 divided by 10 = 6. Ten percent is a handy amount to find quickly.',
     source,
@@ -579,7 +579,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     prompt: 'You pay 10 pounds for a toy that costs 6 pounds. How much change do you get?',
     correct: '4 pounds',
     wrong: [
-      miss('16 pounds', 'You added instead of subtracting.', 'Change means take the cost away from what you paid.'),
+      miss('16 pounds', '16 pounds is what you get by adding, but the story is asking for the difference.', 'Change means take the cost away from what you paid.'),
       miss('6 pounds', 'That is the cost, not the change.', 'Subtract 6 from 10 to find the change.'),
       miss('3 pounds', 'This is one too few.', '10 take away 6 leaves 4.'),
     ],
@@ -596,7 +596,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     wrong: [
       miss('18 pounds', 'You subtracted 3 instead of dividing.', 'Share the 21 pounds among 3 people.'),
       miss('6 pounds', 'Three sixes only make 18, not 21.', 'Check: 3 x 7 = 21.'),
-      miss('63 pounds', 'You multiplied instead of dividing.', 'Sharing means splitting into equal parts.'),
+      miss('63 pounds', '63 pounds grows the number by multiplying, but this question asks you to share or split it.', 'Sharing means splitting into equal parts.'),
     ],
     lesson: 'Sharing equally is division. Split 21 pounds among 3 friends: 21 divided by 3 = 7. Each friend pays 7 pounds. Check it by multiplying: 3 x 7 = 21.',
     source,
@@ -763,7 +763,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     correct: '80 cm',
     wrong: [
       miss('70 cm', 'You missed the full ten from the ones column.', 'Add the ones: 5 + 5 = 10.'),
-      miss('10 cm', 'You subtracted instead of adding.', 'Together means add the lengths.'),
+      miss('10 cm', '10 cm comes from taking away, but this question asks for the amounts together.', 'Together means add the lengths.'),
       miss('800 cm', 'You added a zero by mistake.', '45 + 35 is 80, not 800.'),
     ],
     lesson: 'To join two lengths, add them. 45 + 35: the ones make 5 + 5 = 10, and the tens make 40 + 30 = 70. Together that is 80 cm.',
@@ -839,7 +839,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     correct: '15p',
     wrong: [
       miss('25p', 'You subtracted too little.', 'Take 35 from 50 carefully.'),
-      miss('85p', 'You added instead of subtracting.', 'Change means take the cost away.'),
+      miss('85p', '85p is what you get by adding, but the story is asking for the difference.', 'Change means take the cost away.'),
       miss('20p', 'This is a little too much change.', '50 take away 35 leaves 15.'),
     ],
     lesson: 'Change is what is left after paying. You paid 50p for a 35p sticker, so the change is 50 - 35 = 15p. Subtract the cost from what you handed over.',

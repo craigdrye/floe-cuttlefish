@@ -286,7 +286,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which is bigger, 1/2 or 1/4?',
     correct: '1/2',
     wrong: [
-      miss('1/4', 'A bigger bottom number means smaller pieces.', 'Cutting into 4 makes smaller parts than cutting into 2.'),
+      miss('1/4', '1/4 has more pieces, but more equal pieces means each piece is smaller.', 'Cutting into 4 makes smaller parts than cutting into 2.'),
       miss('they are equal', 'Half a pizza is more than a quarter of it.', 'Picture the two slice sizes.'),
       miss('cannot tell', 'You can compare them by picturing the pieces.', 'Fewer cuts make bigger pieces.'),
     ],
@@ -499,8 +499,8 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which word means almost the same as "happy"?',
     correct: 'glad',
     wrong: [
-      miss('sad', 'Sad is the opposite of happy.', 'Look for a word with a good feeling.'),
-      miss('tired', 'Tired is about being sleepy, not happy.', 'Find a word that means cheerful.'),
+      miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Look for a word with a good feeling.'),
+      miss('tired', 'tired describes sleepiness, not the cheerful feeling asked for here.', 'Find a word that means cheerful.'),
       miss('cold', 'Cold is about temperature, not a feeling of joy.', 'Pick the word closest to happy.'),
     ],
     lesson: 'Words that mean almost the same thing are called synonyms. Happy and glad are synonyms because they both mean feeling good and cheerful.',
@@ -515,7 +515,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: 'small',
     wrong: [
       miss('large', 'Large means almost the same as big, not the opposite.', 'Find a word that means tiny.'),
-      miss('tall', 'Tall is about height, not the opposite of big.', 'Think about a word meaning little.'),
+      miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Think about a word meaning little.'),
       miss('huge', 'Huge means very big, not the opposite.', 'The opposite of big is little or small.'),
     ],
     lesson: 'Words with opposite meanings are called antonyms. Big and small are antonyms because one means large and the other means little.',
@@ -560,7 +560,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which word in this sentence is a noun? "The dog ran fast."',
     correct: 'dog',
     wrong: [
-      miss('ran', 'Ran is an action word, which is a verb.', 'A noun names a person, place, animal, or thing.'),
+      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, animal, or thing.'),
       miss('fast', 'Fast describes how the dog ran, so it is not a noun.', 'Look for the animal in the sentence.'),
       miss('the', 'The is a small word that points to a noun but is not one itself.', 'Find the word that names something.'),
     ],
@@ -605,8 +605,8 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which mark should end this sentence? "What time is it"',
     correct: 'a question mark (?)',
     wrong: [
-      miss('a period (.)', 'A period ends a telling sentence, not a question.', 'This sentence asks something.'),
-      miss('an exclamation mark (!)', 'An exclamation mark shows strong feeling, not a question.', 'This sentence is asking, so use a question mark.'),
+      miss('a period (.)', 'a period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence asks something.'),
+      miss('an exclamation mark (!)', 'an exclamation mark (!) shows excitement or strong feeling; this sentence is asking, so it needs a question mark.', 'This sentence is asking, so use a question mark.'),
       miss('a comma (,)', 'A comma is used in the middle, not to end a sentence.', 'A question needs a question mark at the end.'),
     ],
     lesson: 'A sentence that asks something is a question and ends with a question mark. "What time is it?" is asking, so it needs a question mark.',
@@ -620,7 +620,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'What is the plural of "box"?',
     correct: 'boxes',
     wrong: [
-      miss('boxs', 'Words ending in x add -es, not just -s.', 'Try adding -es to box.'),
+      miss('boxs', 'boxs misses the spelling rule: words ending in x usually add -es so the word is sayable.', 'Try adding -es to box.'),
       miss('box', 'This is still just one box, not more than one.', 'A plural means more than one.'),
       miss('boxies', 'You do not add -ies to box.', 'For words ending in x, add -es.'),
     ],
@@ -790,7 +790,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('8', 'The pattern jumps by 2, so 7 plus 2 is not 8.', 'Add 2 to 7.'),
       miss('10', 'This jumps by 3, but the pattern jumps by 2.', '7 plus 2 makes 9.'),
-      miss('11', 'This skips a number in the pattern.', 'Each number is 2 more than the one before.'),
+      miss('11', '11 jumps past the next step in the pattern; follow the same change one move at a time.', 'Each number is 2 more than the one before.'),
     ],
     lesson: 'This pattern counts the odd numbers, adding 2 each time: 1, 3, 5, 7, 9. After 7, the next number is 9.',
     source,

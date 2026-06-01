@@ -320,8 +320,8 @@ export const col6thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     correct: '-4',
     wrong: [
       miss('4', 'The answer is below zero, so it needs a minus sign.', 'Starting at 2 and going back 6 passes zero.'),
-      miss('-8', 'You added the numbers instead of subtracting.', 'From 2, move 6 spaces to the left.'),
-      miss('8', 'You added instead of subtracting.', 'Subtracting makes the number go down, not up.'),
+      miss('-8', '-8 uses the total of the numbers, but the question is asking how much is left or how far apart they are.', 'From 2, move 6 spaces to the left.'),
+      miss('8', '8 is what you get by adding, but the story is asking for the difference.', 'Subtracting makes the number go down, not up.'),
     ],
     lesson: 'Start at 2 and move 6 spaces to the left. You pass zero and keep going to -4. When you subtract a bigger number, the answer is negative.',
     source,
@@ -724,7 +724,7 @@ export const col6thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     correct: '6',
     wrong: [
       miss('4', 'This counts wholes, not the 2/3 portions.', 'Each whole holds more than one portion of 2/3.'),
-      miss('8/3', 'You multiplied instead of dividing.', 'Flip 2/3 to 3/2, then multiply by 4.'),
+      miss('8/3', '8/3 grows the number by multiplying, but this question asks you to share or split it.', 'Flip 2/3 to 3/2, then multiply by 4.'),
       miss('12', 'You divided by 1/3 instead of 2/3.', 'Each portion is two thirds, which is larger than one third.'),
     ],
     lesson: 'To find how many 2/3 portions fit in 4, divide 4 by 2/3. Flip 2/3 to 3/2 and multiply: 4 times 3/2 is 6. So there are 6 portions.',

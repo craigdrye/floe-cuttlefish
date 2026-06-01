@@ -181,7 +181,7 @@ export const class4MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '2/4',
     wrong: [
       miss('1/4', 'One quarter is smaller than one half, not equal to it.', 'Two quarters make a half, so look for 2 on top.'),
-      miss('3/4', 'Three quarters is bigger than one half.', 'A half is the middle, halfway between 0 and 1.'),
+      miss('3/4', '3/4 is three out of four equal pieces, which is more than half the shape.', 'A half is the middle, halfway between 0 and 1.'),
       miss('1/3', 'One third is a little smaller than one half.', 'Find a fraction where the top is exactly half of the bottom.'),
     ],
     lesson: 'A fraction equals one half when the top number is exactly half of the bottom number. In 2/4, the 2 is half of 4, so 2/4 equals one half.',
@@ -485,7 +485,7 @@ export const class4MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('20 cm', 'This subtracts 4 from 24 instead of dividing.', 'To find the missing side, divide the area by the width.'),
       miss('8 cm', 'This divides by the wrong number.', 'Divide 24 by the width, which is 4.'),
-      miss('96 cm', 'This multiplies instead of dividing.', 'You already have the area, so divide to find a side.'),
+      miss('96 cm', '96 cm comes from making more groups, but division asks how many are in each group or how many groups fit.', 'You already have the area, so divide to find a side.'),
     ],
     lesson: 'Area is length times width. To find the missing length, divide the area by the width: 24 divided by 4 equals 6 cm.',
     source,

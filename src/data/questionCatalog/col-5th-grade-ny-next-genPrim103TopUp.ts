@@ -180,7 +180,7 @@ export const col5thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'What is 1/2 divided by 4?',
     correct: '1/8',
     wrong: [
-      miss('4/2', 'You multiplied instead of dividing.', 'Dividing splits the half into smaller pieces.'),
+      miss('4/2', '4/2 grows the number by multiplying, but this question asks you to share or split it.', 'Dividing splits the half into smaller pieces.'),
       miss('2', 'You divided 4 by 2 instead of splitting 1/2 into 4 parts.', 'Splitting a half makes a smaller piece, not a whole number.'),
       miss('1/6', 'You added 4 to the bottom instead of multiplying by 4.', 'The new bottom is 2 times 4, which is 8.'),
     ],
@@ -334,7 +334,7 @@ export const col5thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     wrong: [
       miss('3.0', 'You subtracted only the whole numbers and dropped the tenths.', 'Take away the tenths too: 6 tenths minus 4 tenths.'),
       miss('3.10', 'You subtracted the tenths the wrong way around.', 'It is 6 tenths take away 4 tenths, which is 2 tenths.'),
-      miss('7.10', 'You added the numbers instead of subtracting.', 'The minus sign means take away, so the answer is smaller.'),
+      miss('7.10', '7.10 uses the total of the numbers, but the question is asking how much is left or how far apart they are.', 'The minus sign means take away, so the answer is smaller.'),
     ],
     lesson: 'Line up the decimal points and subtract each place. 5.6 - 2.4 gives 3 wholes and 2 tenths, which is 3.2.',
     source,
@@ -500,7 +500,7 @@ export const col5thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: '16 cubic units',
     wrong: [
       miss('60 cubic units', 'You multiplied the volumes instead of adding them.', 'To combine two solids, add their volumes.'),
-      miss('4 cubic units', 'You subtracted instead of adding.', 'Putting two shapes together makes a bigger volume.'),
+      miss('4 cubic units', '4 cubic units comes from taking away, but this question asks for the amounts together.', 'Putting two shapes together makes a bigger volume.'),
       miss('10 cubic units', 'You only counted one of the two boxes.', 'Add both volumes: 10 + 6.'),
     ],
     lesson: 'When a shape is built from two separate boxes, you can add their volumes to find the total. 10 + 6 = 16 cubic units.',
@@ -713,7 +713,7 @@ export const col5thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: 'Joyful',
     wrong: [
       miss('Angry', 'Angry is an opposite feeling, not a synonym.', 'A synonym has a similar meaning.'),
-      miss('Tired', 'Tired is about being sleepy, not happy.', 'Look for a word that means glad or cheerful.'),
+      miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Look for a word that means glad or cheerful.'),
       miss('Hungry', 'Hungry is about wanting food, not a feeling like happy.', 'Pick the word closest in meaning to happy.'),
     ],
     lesson: 'A synonym is a word that means almost the same as another word. Joyful means full of joy, which is very close to happy.',

@@ -428,7 +428,7 @@ export const primaryPrim103TopUpBQuestions: Question[] = makeQuestionBank('Prima
     prompt: 'What is the correct word for more than one box?',
     correct: 'boxes',
     wrong: [
-      miss('boxs', 'Words ending in x add -es, not just -s.', 'Say the word out loud; you can hear an extra sound.'),
+      miss('boxs', 'boxs misses the spelling rule: words ending in x usually add -es so the word is sayable.', 'Say the word out loud; you can hear an extra sound.'),
       miss('boxies', 'You do not change the x to an i here.', 'Just add -es to the end of box.'),
       miss('box', 'Box means only one, but we want more than one.', 'A plural needs an ending added.'),
     ],
@@ -476,7 +476,7 @@ export const primaryPrim103TopUpBQuestions: Question[] = makeQuestionBank('Prima
     correct: 'small',
     wrong: [
       miss('huge', 'Huge means very big, so it is similar, not opposite.', 'Think of a word that means little.'),
-      miss('tall', 'Tall is about height, not the opposite of big.', 'Look for a word that means not big at all.'),
+      miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big at all.'),
       miss('round', 'Round is a shape and is not the opposite of big.', 'The opposite of big describes size.'),
     ],
     lesson: 'An antonym is a word that means the opposite. The opposite of big is small. Huge means very big, so it is the opposite of what we want.',

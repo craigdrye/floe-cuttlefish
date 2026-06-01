@@ -569,7 +569,7 @@ export const readingVocab5thPrim103TopUpBQuestions: Question[] = makeQuestionBan
     wrong: [
       miss('Sad', 'Sad is the opposite of happy, so it is an antonym.', 'A synonym means the SAME, not the opposite.'),
       miss('Angry', 'Angry is a different feeling, not the same as happy.', 'Look for a word that means happy.'),
-      miss('Tired', 'Tired is about being sleepy, not happy.', 'Find a word that matches happy in meaning.'),
+      miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Find a word that matches happy in meaning.'),
     ],
     lesson: 'A synonym is a word that means almost the same as another word. "Glad" and "happy" both mean feeling good, so they are synonyms. Synonyms help you say the same idea in different ways.',
     source,

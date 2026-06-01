@@ -195,8 +195,8 @@ export const colEurekaMathFoundations3rd8thGradePrim103TopUpQuestions: Question[
     prompt: 'Which fraction is equal to 1/2?',
     correct: '2/4',
     wrong: [
-      miss('1/4', 'One quarter is smaller than one half.', 'Half of 4 parts is 2 parts.'),
-      miss('2/3', 'Two thirds is more than one half.', 'For halves, the top should be half of the bottom.'),
+      miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'Half of 4 parts is 2 parts.'),
+      miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For halves, the top should be half of the bottom.'),
       miss('1/3', 'One third is less than one half.', 'In an equal fraction to 1/2, the top is half the bottom.'),
     ],
     lesson: 'Equivalent fractions name the same amount in different ways. If you cut each half in two, one half becomes 2/4. The top is still half of the bottom, so 2/4 equals 1/2.',

@@ -153,7 +153,7 @@ export const arithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('4', 'This is the number of children, not how many each gets.', 'Split 20 into 4 equal groups and count one group.'),
       miss('16', 'This subtracts 4 from 20 instead of sharing.', 'Sharing means dividing into equal groups.'),
-      miss('80', 'This multiplies instead of dividing.', 'Sharing makes each part smaller, not bigger.'),
+      miss('80', '80 comes from making more groups, but division asks how many are in each group or how many groups fit.', 'Sharing makes each part smaller, not bigger.'),
     ],
     lesson: 'Dividing means sharing into equal groups. Splitting 20 sweets among 4 children gives 5 each, because 4 x 5 = 20. So 20 divided by 4 is 5.',
     source,
@@ -229,7 +229,7 @@ export const arithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('1/3', 'One third is smaller than one half.', 'Half means the bottom number is double the top.'),
       miss('2/3', 'Two thirds is bigger than one half.', 'For one half, the top is exactly half of the bottom.'),
-      miss('1/4', 'One quarter is smaller than one half.', 'Try doubling both the top and bottom of 1/2.'),
+      miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'Try doubling both the top and bottom of 1/2.'),
     ],
     lesson: 'Equivalent fractions name the same amount in different ways. If you double both numbers in 1/2, you get 2/4, which is the same size. Two quarters fill exactly one half.',
     source,
@@ -274,7 +274,7 @@ export const arithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '0.8',
     wrong: [
       miss('0.8 wholes', 'It is just 0.8, which is still less than one.', 'Add the tenths: 5 tenths plus 3 tenths.'),
-      miss('8', 'You lost the decimal point.', 'Five tenths and three tenths make eight tenths, written 0.8.'),
+      miss('8', '8 has the right-looking digits, but the decimal point is in the wrong place or missing.', 'Five tenths and three tenths make eight tenths, written 0.8.'),
       miss('0.53', 'You wrote the digits side by side instead of adding.', 'Line up the points and add: 5 + 3 tenths.'),
     ],
     lesson: 'Line up the decimal points and add. Five tenths plus three tenths is eight tenths, written 0.8. Keep the decimal point in the same place.',
@@ -520,7 +520,7 @@ export const arithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('3', 'This is the number of boxes, not the pencils per box.', 'Share 24 into 3 equal groups and count one group.'),
       miss('21', 'This subtracts 3 from 24 instead of sharing.', 'Sharing equally means dividing.'),
-      miss('72', 'This multiplies instead of dividing.', 'Each box should hold fewer than 24 pencils.'),
+      miss('72', '72 comes from making more groups, but division asks how many are in each group or how many groups fit.', 'Each box should hold fewer than 24 pencils.'),
     ],
     lesson: 'Sharing equally means dividing. Split 24 pencils into 3 boxes: 24 divided by 3 = 8, because 3 x 8 = 24. So each box gets 8 pencils.',
     source,

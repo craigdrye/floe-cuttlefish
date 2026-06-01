@@ -107,7 +107,7 @@ export const primaryPrim103TopUpAQuestions: Question[] = makeQuestionBank('Prima
     wrong: [
       miss('33', 'You took away only the tens and forgot the ones.', 'Subtract both the 20 and the 3.'),
       miss('37', 'You only took away 13 instead of 23.', 'Start at 50 and step back 23.'),
-      miss('73', 'You added the numbers instead of taking away.', 'The minus sign means take away.'),
+      miss('73', '73 treats the numbers as a total, but the action word here means take away.', 'The minus sign means take away.'),
     ],
     lesson: 'To work out 50 - 23, take away 20 to reach 30, then take away 3 more to reach 27. Subtracting in two steps keeps it simple.',
     source,
@@ -505,7 +505,7 @@ export const primaryPrim103TopUpAQuestions: Question[] = makeQuestionBank('Prima
     prompt: 'Which word means almost the same as happy?',
     correct: 'Glad',
     wrong: [
-      miss('Sad', 'Sad is the opposite of happy.', 'Find a word that also means feeling good.'),
+      miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Find a word that also means feeling good.'),
       miss('Angry', 'Angry is a cross feeling, not a happy one.', 'Look for a cheerful word.'),
       miss('Tired', 'Tired means sleepy, not happy.', 'Pick the word that means pleased and cheerful.'),
     ],

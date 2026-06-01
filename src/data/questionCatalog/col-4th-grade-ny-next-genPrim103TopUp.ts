@@ -317,7 +317,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which fraction is equal to 1/2?',
     correct: '3/6',
     wrong: [
-      miss('2/3', 'Two thirds is more than one half.', 'Check if the top number is exactly half of the bottom.'),
+      miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'Check if the top number is exactly half of the bottom.'),
       miss('1/4', 'One fourth is less than one half.', 'In a fraction equal to 1/2, the top is half the bottom.'),
       miss('3/5', 'Three fifths is a little more than one half.', 'For one half, the numerator must be half the denominator.'),
     ],
@@ -332,7 +332,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'What is 3/8 + 2/8?',
     correct: '5/8',
     wrong: [
-      miss('5/16', 'You added the bottom numbers, but they should stay the same.', 'When denominators match, keep the bottom and add only the tops.'),
+      miss('5/16', '5/16 adds the denominators, but like fractions keep the same bottom number and only combine the tops.', 'When denominators match, keep the bottom and add only the tops.'),
       miss('6/8', 'You may have added wrong; 3 plus 2 is 5, not 6.', 'Add the numerators: 3 + 2.'),
       miss('1/8', 'That subtracts the tops instead of adding.', 'The plus sign means add the numerators.'),
     ],
@@ -681,7 +681,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which word means almost the same as "happy"?',
     correct: 'joyful',
     wrong: [
-      miss('sad', 'Sad is the opposite of happy.', 'A synonym means almost the same thing.'),
+      miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),
       miss('sleepy', 'Sleepy is about being tired, not happy.', 'Look for a word with a meaning close to happy.'),
       miss('hungry', 'Hungry is about wanting food, not feeling happy.', 'Pick a word that matches a happy feeling.'),
     ],
@@ -727,7 +727,7 @@ export const col4thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'In the sentence "The dog ran to the park," which word is a noun?',
     correct: 'park',
     wrong: [
-      miss('ran', 'Ran is an action word, which is a verb.', 'A noun names a person, place, or thing.'),
+      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),
       miss('to', 'To is a small connecting word, not a noun.', 'Look for a word that names a place or thing.'),
       miss('the', 'The is an article that comes before nouns but is not one.', 'Find the word that names something.'),
     ],

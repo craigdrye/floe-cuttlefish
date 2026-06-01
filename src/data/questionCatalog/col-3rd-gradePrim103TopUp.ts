@@ -105,7 +105,7 @@ export const col3rdGradePrim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     correct: '27',
     wrong: [
       miss('37', 'You did not borrow when 5 is smaller than 8.', 'Borrow a ten so the ones become 15 - 8.'),
-      miss('63', 'You added instead of taking away.', 'People got off, so the number gets smaller.'),
+      miss('63', '63 comes from adding the amounts, but this question asks you to take one amount away.', 'People got off, so the number gets smaller.'),
       miss('33', 'You borrowed but subtracted the tens wrong.', 'After borrowing, the tens are 3 - 1 = 2.'),
     ],
     lesson: 'When people leave, you subtract. 45 - 18: the ones 5 - 8 need a borrow, so 15 - 8 = 7. The tens become 3 - 1 = 2. So 27 people are still on the bus.',
@@ -501,7 +501,7 @@ export const col3rdGradePrim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'Which word means almost the same as the word "happy"?',
     correct: 'Glad',
     wrong: [
-      miss('Sad', 'Sad is the opposite of happy.', 'A synonym means a word with a similar meaning.'),
+      miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),
       miss('Tired', 'Tired means you need rest, not that you feel happy.', 'Look for a word that means joyful.'),
       miss('Angry', 'Angry means upset or mad, not happy.', 'Pick the word closest in meaning to happy.'),
     ],
@@ -517,7 +517,7 @@ export const col3rdGradePrim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     correct: 'Small',
     wrong: [
       miss('Large', 'Large means the same as big, not the opposite.', 'An opposite means a word that means the reverse.'),
-      miss('Tall', 'Tall is about height, not the opposite of big.', 'Look for a word that means not big.'),
+      miss('Tall', 'Tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big.'),
       miss('Huge', 'Huge means very big, so it is similar, not opposite.', 'The opposite of big means little.'),
     ],
     lesson: 'An antonym is a word that means the opposite. The opposite of big is small. Words like large and huge mean almost the same as big.',

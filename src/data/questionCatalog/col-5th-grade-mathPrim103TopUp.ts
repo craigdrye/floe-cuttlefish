@@ -30,7 +30,7 @@ export const col5thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('2/6', 'You added the tops and the bottoms straight across. That does not work for fractions.', 'Make the bottoms match first. Change 1/2 into 2/4.'),
       miss('2/4', 'You forgot to change 1/2 into fourths before adding.', 'One half is the same as 2/4, then add 1/4.'),
-      miss('1/4', 'You subtracted instead of adding.', 'The plus sign means combine the two pieces.'),
+      miss('1/4', '1/4 comes from taking away, but this question asks for the amounts together.', 'The plus sign means combine the two pieces.'),
     ],
     lesson: 'To add fractions with different bottoms, make the bottoms the same first. One half is the same as 2/4. Now add 2/4 + 1/4 = 3/4.',
     source,
@@ -302,7 +302,7 @@ export const col5thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'What is 50 divided by 10?',
     correct: '5',
     wrong: [
-      miss('500', 'You multiplied by 10 instead of dividing.', 'Dividing makes the number smaller.'),
+      miss('500', '500 moves the number the wrong way; dividing by 10 should make it ten times smaller.', 'Dividing makes the number smaller.'),
       miss('40', 'You subtracted 10 instead of dividing by 10.', 'Split 50 into 10 equal groups.'),
       miss('0.5', 'You divided by 100 by mistake.', 'Dividing 50 by 10 moves it one place smaller.'),
     ],
@@ -334,7 +334,7 @@ export const col5thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('2.50', 'You did not move the decimal point. Times 10 makes it bigger.', 'Move the decimal point one place to the right.'),
       miss('250', 'You moved the decimal two places, which is times 100.', 'Times 10 moves the point just one place.'),
-      miss('12.5', 'You added 10 instead of multiplying by 10.', 'Multiplying by 10 makes 2.5 ten times bigger.'),
+      miss('12.5', '12.5 only adds one extra ten, but multiplying by 10 makes the whole number ten times as large.', 'Multiplying by 10 makes 2.5 ten times bigger.'),
     ],
     lesson: 'Multiplying a decimal by 10 moves the decimal point one place to the right. So 2.5 times 10 becomes 25.',
     source,

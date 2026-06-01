@@ -667,7 +667,7 @@ export const class2MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('31', 'This adds only one instead of ten.', 'Each step adds a whole ten.'),
       miss('35', 'This adds only five instead of ten.', 'The pattern jumps by 10 each time.'),
-      miss('50', 'This skips a number in the pattern.', 'After 30, the next ten is 40, not 50.'),
+      miss('50', '50 jumps past the next step in the pattern; follow the same change one move at a time.', 'After 30, the next ten is 40, not 50.'),
     ],
     lesson: 'When counting by tens, each number is 10 more than the one before. After 10, 20, 30 comes 40. Skip counting by tens is a fast way to count groups of ten.',
     source,
@@ -788,7 +788,7 @@ export const class2MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '10',
     wrong: [
       miss('9', 'This adds only one instead of two.', 'The pattern goes up by 2 each time.'),
-      miss('12', 'This skips a number in the pattern.', 'After 8, add 2 to get the next number.'),
+      miss('12', '12 jumps past the next step in the pattern; follow the same change one move at a time.', 'After 8, add 2 to get the next number.'),
       miss('16', 'This doubles 8 instead of adding 2.', 'Each step adds 2, so 8 + 2 comes next.'),
     ],
     lesson: 'This pattern counts by twos: 2, 4, 6, 8, and the next is 10. Each number is 2 more than the one before. Counting by twos lands on the even numbers.',

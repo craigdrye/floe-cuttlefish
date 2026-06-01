@@ -319,7 +319,7 @@ export const timesTablesPrim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'What is 35 divided by 5?',
     correct: '7',
     wrong: [
-      miss('5', 'This is the number you divided by, not the answer.', 'Ask how many fives fit in 35.'),
+      miss('5', '5 is the group size or divisor from the question, not the result after sharing.', 'Ask how many fives fit in 35.'),
       miss('6', 'This is too small; 6 fives make only 30.', 'Count by fives until you reach 35.'),
       miss('30', 'This subtracts 5 from 35 instead of dividing.', 'Share 35 into equal groups of 5.'),
     ],
@@ -334,7 +334,7 @@ export const timesTablesPrim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'What is 18 divided by 3?',
     correct: '6',
     wrong: [
-      miss('3', 'This is the number you divided by, not the answer.', 'Ask how many threes fit in 18.'),
+      miss('3', '3 is the group size or divisor from the question, not the result after sharing.', 'Ask how many threes fit in 18.'),
       miss('5', 'This is too small; 5 threes make only 15.', 'Count by threes until you reach 18.'),
       miss('15', 'This subtracts 3 from 18 instead of dividing.', 'Share 18 into equal groups of 3.'),
     ],
@@ -364,7 +364,7 @@ export const timesTablesPrim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'What is 40 divided by 8?',
     correct: '5',
     wrong: [
-      miss('8', 'This is the number you divided by, not the answer.', 'Ask how many eights fit in 40.'),
+      miss('8', '8 is the group size or divisor from the question, not the result after sharing.', 'Ask how many eights fit in 40.'),
       miss('6', 'This is too big; 6 eights make 48, not 40.', 'Count by eights until you reach 40.'),
       miss('32', 'This subtracts 8 from 40 instead of dividing.', 'Share 40 into equal groups of 8.'),
     ],
@@ -379,7 +379,7 @@ export const timesTablesPrim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'What is 54 divided by 6?',
     correct: '9',
     wrong: [
-      miss('6', 'This is the number you divided by, not the answer.', 'Ask how many sixes fit in 54.'),
+      miss('6', '6 is the group size or divisor from the question, not the result after sharing.', 'Ask how many sixes fit in 54.'),
       miss('8', 'This is too small; 8 sixes make only 48.', 'Count by sixes until you reach 54.'),
       miss('48', 'This subtracts 6 from 54 instead of dividing.', 'Share 54 into equal groups of 6.'),
     ],

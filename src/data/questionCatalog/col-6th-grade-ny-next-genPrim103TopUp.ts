@@ -455,7 +455,7 @@ export const col6thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'In the sentence "The dog ran across the park," which word is a noun?',
     correct: 'park',
     wrong: [
-      miss('ran', 'Ran is an action word, which is a verb.', 'A noun names a person, place, or thing.'),
+      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),
       miss('across', 'Across tells where, so it is not a naming word.', 'Look for a word that names a place or thing.'),
       miss('the', 'The is an article, not a noun.', 'Find the word that names a place, like a park.'),
     ],

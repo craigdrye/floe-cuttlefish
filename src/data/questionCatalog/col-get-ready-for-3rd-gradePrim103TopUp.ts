@@ -211,7 +211,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: '33',
     wrong: [
       miss('23', 'You only added 5 more, not 15.', 'Add the full 15 to the 18.'),
-      miss('3', 'You took away instead of adding.', 'Getting more means you add.'),
+      miss('3', '3 is a take-away answer, but this prompt wants a joined total.', 'Getting more means you add.'),
       miss('32', 'You are one short. Carry the ten from the ones.', 'The ones make 8 + 5 = 13, so carry a ten.'),
     ],
     lesson: 'Getting more stickers means we add. Start with 18 and add 15. The ones make 8 + 5 = 13, so carry a ten. The tens are 1 + 1 + 1 = 3 tens. So Mia has 33 stickers.',
@@ -228,7 +228,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('8', 'You are one too high. Count back again from 16.', 'Count back 9 steps from 16, one at a time.'),
       miss('6', 'You took away one too many.', 'Try counting up from 9 to 16.'),
-      miss('25', 'You added the numbers instead of taking away.', 'The minus sign means take away.'),
+      miss('25', '25 treats the numbers as a total, but the action word here means take away.', 'The minus sign means take away.'),
     ],
     lesson: 'To find 16 - 9, you can count up from 9 to 16, which is 7 steps. Or count back 9 from 16. Either way, the answer is 7.',
     source,
@@ -242,7 +242,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: '25',
     wrong: [
       miss('35', 'You did not borrow when the ones were too small.', '2 is smaller than 7, so borrow a ten first.'),
-      miss('79', 'You added the numbers instead of taking away.', 'The minus sign means subtract, not add.'),
+      miss('79', '79 treats the numbers as a total, but the action word here means take away.', 'The minus sign means subtract, not add.'),
       miss('30', 'You subtracted the tens but mishandled the ones.', 'Borrow a ten so the ones become 12 - 7.'),
     ],
     lesson: 'In the ones, 2 is smaller than 7, so borrow a ten. The 12 - 7 = 5. The tens become 4 - 2 = 2. So 52 - 27 = 25.',
@@ -287,7 +287,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: '35',
     wrong: [
       miss('45', 'That is one of the numbers, not the difference.', 'Subtract the smaller from the bigger.'),
-      miss('125', 'You added the numbers instead of subtracting.', 'Difference means take away.'),
+      miss('125', '125 uses the total of the numbers, but the question is asking how much is left or how far apart they are.', 'Difference means take away.'),
       miss('25', 'Your subtraction is a bit off. Try again carefully.', 'Count up from 45 to 80 to find the gap.'),
     ],
     lesson: 'The difference means how far apart two numbers are. We subtract: 80 - 45 = 35. You can count up from 45 to 80 to check, which is 35.',
@@ -790,7 +790,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which word in this sentence is a noun: The dog ran fast?',
     correct: 'dog',
     wrong: [
-      miss('ran', 'Ran is an action word, which is a verb.', 'A noun names a person, place, animal, or thing.'),
+      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, animal, or thing.'),
       miss('fast', 'Fast tells how the dog ran, so it is not a noun.', 'Find the word that names an animal or thing.'),
       miss('the', 'The is a little helper word, not a noun.', 'Look for the word that names something.'),
     ],
@@ -835,7 +835,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which mark belongs at the end of a question?',
     correct: 'A question mark (?)',
     wrong: [
-      miss('A period (.)', 'A period ends a telling sentence, not a question.', 'Questions ask something and need a special mark.'),
+      miss('A period (.)', 'A period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'Questions ask something and need a special mark.'),
       miss('A comma (,)', 'A comma takes a short pause inside a sentence.', 'It does not end a sentence.'),
       miss('No mark at all', 'Every sentence needs an end mark.', 'A question needs its own special ending.'),
     ],

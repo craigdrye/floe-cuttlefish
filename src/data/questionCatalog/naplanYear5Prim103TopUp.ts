@@ -14,8 +14,8 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     correct: '2/4',
     wrong: [
       miss('1/3', 'One third is smaller than one half, not the same.', 'Cut a shape into 2 equal parts, then into 4. How many of the 4 parts cover half?'),
-      miss('2/3', 'Two thirds is more than one half.', 'For one half, the top number should be exactly half of the bottom number.'),
-      miss('3/4', 'Three quarters is bigger than one half.', 'In 2/4, the top is half of the bottom, so it equals 1/2.'),
+      miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For one half, the top number should be exactly half of the bottom number.'),
+      miss('3/4', '3/4 is three out of four equal pieces, which is more than half the shape.', 'In 2/4, the top is half of the bottom, so it equals 1/2.'),
     ],
     lesson: 'Two fractions are equivalent when they show the same amount. If you multiply the top and bottom of 1/2 by 2, you get 2/4. So 1/2 and 2/4 cover the same part of a whole.',
     source,
@@ -347,7 +347,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'What is 34 multiplied by 10?',
     correct: '340',
     wrong: [
-      miss('44', 'You added 10 instead of multiplying by 10.', 'Multiplying by 10 makes the number ten times bigger.'),
+      miss('44', '44 only adds one extra ten, but multiplying by 10 makes the whole number ten times as large.', 'Multiplying by 10 makes the number ten times bigger.'),
       miss('304', 'You put the zero in the wrong place.', 'When you times by 10, put a 0 at the end of the number.'),
       miss('3400', 'That is multiplying by 100, not 10.', 'Multiplying by 10 adds just one zero.'),
     ],
@@ -484,7 +484,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'Which word in this sentence is a noun: The dog ran quickly?',
     correct: 'dog',
     wrong: [
-      miss('ran', 'Ran is an action word, which is a verb.', 'A noun is a person, place, animal or thing.'),
+      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun is a person, place, animal or thing.'),
       miss('quickly', 'Quickly tells how the dog ran, so it is an adverb.', 'Look for the word that names an animal or thing.'),
       miss('The', 'The is a small word called an article, not a noun.', 'Find the word that names something.'),
     ],
@@ -653,7 +653,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     wrong: [
       miss('Full stop', 'A full stop ends a telling sentence, not a question.', 'This sentence is asking something, so it needs a special mark.'),
       miss('Comma', 'A comma is for pausing in the middle, not ending a sentence.', 'Questions end with a curved mark and a dot.'),
-      miss('Exclamation mark', 'An exclamation mark shows strong feeling, not a question.', 'The sentence is asking, so use the asking mark.'),
+      miss('Exclamation mark', 'Exclamation mark shows excitement or strong feeling; this sentence is asking, so it needs a question mark.', 'The sentence is asking, so use the asking mark.'),
     ],
     lesson: 'A question mark goes at the end of a sentence that asks something. The sentence Where are you going is a question, so it needs a question mark.',
     source,
@@ -727,7 +727,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'Which word means almost the same as happy?',
     correct: 'glad',
     wrong: [
-      miss('sad', 'Sad is the opposite of happy.', 'A synonym means a word with a similar meaning.'),
+      miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),
       miss('angry', 'Angry is a cross feeling, not a happy one.', 'Look for a word that gives a good feeling like happy.'),
       miss('tired', 'Tired means needing rest, not feeling happy.', 'Find the word closest in meaning to happy.'),
     ],
@@ -744,7 +744,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     wrong: [
       miss('large', 'Large means the same as big, not the opposite.', 'An antonym is a word with the opposite meaning.'),
       miss('huge', 'Huge means very big, which is similar to big.', 'Look for a word that means the opposite of big.'),
-      miss('tall', 'Tall is about height, not the opposite of big.', 'Find the word that means not big.'),
+      miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Find the word that means not big.'),
     ],
     lesson: 'An antonym is a word that means the opposite. The opposite of big is small, so big and small are antonyms.',
     source,

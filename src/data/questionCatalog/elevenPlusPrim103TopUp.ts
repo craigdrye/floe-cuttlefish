@@ -337,7 +337,7 @@ export const elevenPlusPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: 'two quarters',
     wrong: [
       miss('one third', 'One third is smaller than one half.', 'Split a half into two equal pieces to see what it equals.'),
-      miss('three quarters', 'Three quarters is bigger than one half.', 'One half is the same as two out of four.'),
+      miss('three quarters', 'three quarters is three out of four equal pieces, which is more than half the shape.', 'One half is the same as two out of four.'),
       miss('one quarter', 'One quarter is half of a half, which is smaller.', 'How many quarters fit into one half?'),
     ],
     lesson: 'Equivalent fractions are different ways to write the same amount. One half is the same as two quarters, because if you cut a half into two pieces you get two quarters.',
@@ -366,7 +366,7 @@ export const elevenPlusPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'What is one fifth plus two fifths?',
     correct: 'three fifths',
     wrong: [
-      miss('three tenths', 'You added the bottom numbers, but they should stay the same.', 'When the bottoms match, only add the top numbers.'),
+      miss('three tenths', 'three tenths adds the denominators, but like fractions keep the same bottom number and only combine the tops.', 'When the bottoms match, only add the top numbers.'),
       miss('two fifths', 'You forgot to add the one fifth.', 'Add the tops: 1 + 2 = 3.'),
       miss('one fifth', 'You did not add the two fifths at all.', 'Count up: 1 fifth and 2 more fifths makes 3 fifths.'),
     ],
@@ -735,7 +735,7 @@ export const elevenPlusPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: 'a question mark',
     wrong: [
       miss('a full stop', 'A full stop ends a statement, but this is a question.', 'The sentence is asking something.'),
-      miss('an exclamation mark', 'An exclamation mark shows strong feeling, not a question.', 'Look for the mark used when asking.'),
+      miss('an exclamation mark', 'an exclamation mark shows excitement or strong feeling; this sentence is asking, so it needs a question mark.', 'Look for the mark used when asking.'),
       miss('a comma', 'A comma is used inside a sentence, not to end one.', 'A question needs a special end mark.'),
     ],
     lesson: 'A sentence that asks something is a question, and it ends with a question mark. "What time is it?" is asking, so it needs a question mark.',

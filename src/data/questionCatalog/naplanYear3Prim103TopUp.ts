@@ -499,7 +499,7 @@ export const naplanYear3Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     correct: '25',
     wrong: [
       miss('21', 'The pattern jumps by 5 each time, not by 1.', 'Add 5 to the last number.'),
-      miss('30', 'This skips a number in the pattern.', '20 plus 5 is 25, not 30.'),
+      miss('30', '30 jumps past the next step in the pattern; follow the same change one move at a time.', '20 plus 5 is 25, not 30.'),
       miss('24', 'Counting by fives lands on numbers ending in 0 or 5.', 'Add 5 to 20.'),
     ],
     lesson: 'This pattern counts up by 5 each time. After 20, we add 5 more to get 25. Numbers in the five times table always end in a 0 or a 5.',
@@ -780,7 +780,7 @@ export const naplanYear3Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     wrong: [
       miss('A full stop', 'A full stop ends a telling sentence, not a question.', 'A question that asks something needs a special mark.'),
       miss('A comma', 'A comma gives a short pause but does not end a sentence.', 'You need a mark that ends a question.'),
-      miss('An exclamation mark', 'An exclamation mark shows strong feeling, not a question.', 'This sentence is asking, so use a question mark.'),
+      miss('An exclamation mark', 'An exclamation mark shows excitement or strong feeling; this sentence is asking, so it needs a question mark.', 'This sentence is asking, so use a question mark.'),
     ],
     lesson: 'When a sentence asks something, we end it with a question mark. What time is it is asking a question, so it needs a question mark. Telling sentences end with a full stop instead.',
     source,

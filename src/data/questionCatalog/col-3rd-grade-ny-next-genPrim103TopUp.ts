@@ -422,8 +422,8 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which word means almost the same as happy?',
     correct: 'Glad',
     wrong: [
-      miss('Sad', 'Sad is the opposite of happy.', 'A synonym means a word with a similar meaning.'),
-      miss('Tired', 'Tired is about being sleepy, not happy.', 'Pick the word that has a close meaning to happy.'),
+      miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),
+      miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Pick the word that has a close meaning to happy.'),
       miss('Angry', 'Angry is a different feeling from happy.', 'Look for a happy feeling word.'),
     ],
     lesson: 'Synonyms are words that mean almost the same thing. Glad and happy both describe a good, cheerful feeling, so they are synonyms.',
@@ -528,7 +528,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which word describes the dog in this sentence: The fluffy dog ran fast.',
     correct: 'fluffy',
     wrong: [
-      miss('ran', 'Ran is an action word, which is a verb.', 'An adjective tells what something is like.'),
+      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'An adjective tells what something is like.'),
       miss('dog', 'Dog is the thing being described, a noun.', 'Find the word that tells about the dog.'),
       miss('fast', 'Fast tells how the dog ran, not what the dog is like.', 'Look for the word that describes the dog itself.'),
     ],
@@ -543,7 +543,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'What is the correct plural of box?',
     correct: 'boxes',
     wrong: [
-      miss('boxs', 'Words ending in x add -es, not just -s.', 'Say box plus es out loud.'),
+      miss('boxs', 'boxs misses the spelling rule: words ending in x usually add -es so the word is sayable.', 'Say box plus es out loud.'),
       miss('box', 'This is still just one box, not more than one.', 'A plural means more than one.'),
       miss('boxies', 'This is not how to make box plural.', 'For words ending in x, add -es.'),
     ],
@@ -589,7 +589,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which mark belongs at the end of this sentence: What is your name',
     correct: 'A question mark',
     wrong: [
-      miss('A period', 'A period ends a telling sentence, not a question.', 'This sentence is asking something.'),
+      miss('A period', 'A period ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence is asking something.'),
       miss('A comma', 'A comma is a pause inside a sentence, not an ending.', 'Use a mark that shows a question.'),
       miss('No mark at all', 'Every sentence needs an end mark.', 'A question needs a question mark.'),
     ],
@@ -788,7 +788,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: '25',
     wrong: [
       miss('21', 'This adds only 1 instead of jumping by 5.', 'Each number goes up by 5.'),
-      miss('30', 'This skips a number in the pattern.', 'Add exactly 5 to 20.'),
+      miss('30', '30 jumps past the next step in the pattern; follow the same change one move at a time.', 'Add exactly 5 to 20.'),
       miss('22', 'This does not follow the skip count by 5.', 'Count 5 more from 20.'),
     ],
     lesson: 'Skip counting by 5 means adding 5 each time. After 20, add 5 to get 25. This pattern is helpful for telling time and counting money.',
@@ -818,7 +818,7 @@ export const col3rdGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     correct: '10',
     wrong: [
       miss('9', 'This adds only 1 instead of jumping by 2.', 'Each number goes up by 2.'),
-      miss('12', 'This skips a number in the pattern.', 'Add exactly 2 to 8.'),
+      miss('12', '12 jumps past the next step in the pattern; follow the same change one move at a time.', 'Add exactly 2 to 8.'),
       miss('16', 'This doubles instead of adding 2.', 'The pattern goes up by 2 each time.'),
     ],
     lesson: 'This pattern counts by 2s. Each number is 2 more than the one before. After 8, add 2 to get 10.',

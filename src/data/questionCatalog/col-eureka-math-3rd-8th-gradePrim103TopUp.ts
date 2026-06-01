@@ -165,8 +165,8 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     prompt: 'Which fraction is equal to 1/2?',
     correct: '4/8',
     wrong: [
-      miss('2/3', 'Two thirds is more than one half.', 'For one half, the top is exactly half the bottom.'),
-      miss('1/4', 'One quarter is smaller than one half.', 'A half means the top is half the bottom.'),
+      miss('2/3', '2/3 is more than half because two of three equal parts covers most of the whole.', 'For one half, the top is exactly half the bottom.'),
+      miss('1/4', '1/4 is one out of four equal pieces, which is smaller than one out of two.', 'A half means the top is half the bottom.'),
       miss('3/8', 'Three eighths is less than four eighths.', 'Half of 8 is 4, so 4/8 equals 1/2.'),
     ],
     lesson: 'Two fractions are equal when they show the same amount. Half of 8 is 4, so 4/8 is the same as 1/2. You can multiply the top and bottom of 1/2 by 4 to get 4/8.',
@@ -182,7 +182,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     wrong: [
       miss('2/5', 'Bigger bottom numbers make smaller pieces.', 'Thirds are bigger pieces than fifths.'),
       miss('They are equal', 'The pieces are different sizes.', 'Splitting into more parts makes each part smaller.'),
-      miss('2/5 because 5 is bigger', 'A bigger bottom number means smaller pieces.', 'Two big pieces beat two small pieces.'),
+      miss('2/5 because 5 is bigger', '2/5 because 5 is bigger has more pieces, but more equal pieces means each piece is smaller.', 'Two big pieces beat two small pieces.'),
     ],
     lesson: 'Both fractions have 2 pieces, but thirds are bigger than fifths. When the top numbers match, the fraction with the smaller bottom is bigger. So 2/3 is greater than 2/5.',
     source,
@@ -319,7 +319,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     wrong: [
       miss('4 dollars', 'This is half of 8, but you split by 4 apples.', 'Divide the total by the number of apples.'),
       miss('8 dollars', 'That is the price of all 4 apples.', 'You want the price of just one apple.'),
-      miss('32 dollars', 'This multiplies instead of dividing.', 'Share the cost among 4 apples.'),
+      miss('32 dollars', '32 dollars comes from making more groups, but division asks how many are in each group or how many groups fit.', 'Share the cost among 4 apples.'),
     ],
     lesson: 'To find the price of one apple, divide the total cost by the number of apples. 8 dollars divided by 4 apples is 2 dollars each.',
     source,
@@ -425,7 +425,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     correct: '4',
     wrong: [
       miss('9', 'This subtracts 3 instead of dividing.', 'Divide 12 by 3 to undo the times 3.'),
-      miss('36', 'This multiplies instead of dividing.', 'You want what times 3 makes 12.'),
+      miss('36', '36 comes from making more groups, but division asks how many are in each group or how many groups fit.', 'You want what times 3 makes 12.'),
       miss('15', 'This adds 3 to 12.', 'Share 12 into 3 equal groups.'),
     ],
     lesson: 'Since n is multiplied by 3, undo it by dividing. 12 divided by 3 is 4. Check: 3 times 4 equals 12, so n is 4.',
@@ -763,7 +763,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     wrong: [
       miss('13', 'The pattern jumps by 3 each time, not 1.', 'Find the gap between each number.'),
       miss('14', 'Each step adds 3, so 12 plus 3 is 15.', 'Add the same amount you added before.'),
-      miss('18', 'This skips a number in the pattern.', 'Add only 3 to the last number.'),
+      miss('18', '18 jumps past the next step in the pattern; follow the same change one move at a time.', 'Add only 3 to the last number.'),
     ],
     lesson: 'Each number is 3 more than the one before. After 12, add 3 to get 15. This is the counting by threes pattern.',
     source,
@@ -839,7 +839,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     wrong: [
       miss('30', 'This subtracts 6 instead of dividing.', 'Split 36 students into groups of 6.'),
       miss('42', 'This adds instead of dividing.', 'You need fewer rows than students.'),
-      miss('216', 'This multiplies instead of dividing.', 'Share the 36 into rows of 6.'),
+      miss('216', '216 comes from making more groups, but division asks how many are in each group or how many groups fit.', 'Share the 36 into rows of 6.'),
     ],
     lesson: 'To find the number of rows, divide the students by how many sit in each row. 36 divided by 6 equals 6 rows.',
     source,

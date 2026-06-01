@@ -308,7 +308,7 @@ export const colGetReadyFor5thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'What is 1/5 + 2/5?',
     correct: '3/5',
     wrong: [
-      miss('3/10', 'You added the bottom numbers, but they should stay the same.', 'When bottoms match, only add the tops.'),
+      miss('3/10', '3/10 adds the denominators, but like fractions keep the same bottom number and only combine the tops.', 'When bottoms match, only add the tops.'),
       miss('2/5', 'You only kept one of the tops instead of adding them.', 'Add 1 + 2 on the top.'),
       miss('3/25', 'You multiplied the bottoms instead of keeping them.', 'The fifths stay fifths when you add them.'),
     ],
@@ -663,7 +663,7 @@ export const colGetReadyFor5thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'In the sentence "The dog ran to the park," which word is a noun?',
     correct: 'park',
     wrong: [
-      miss('ran', 'Ran is an action word, which is a verb.', 'A noun names a person, place, or thing.'),
+      miss('ran', 'ran names an action, so it is a verb rather than the kind of word the prompt is asking for.', 'A noun names a person, place, or thing.'),
       miss('to', 'To is a small joining word, not a noun.', 'Look for a person, place, or thing.'),
       miss('the', 'The is an article, not a noun.', 'Find the word that names a place or thing.'),
     ],
@@ -723,7 +723,7 @@ export const colGetReadyFor5thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which mark should end this sentence: "Where are my shoes"',
     correct: 'A question mark (?)',
     wrong: [
-      miss('A period (.)', 'A period ends a telling sentence, not a question.', 'This sentence asks something.'),
+      miss('A period (.)', 'A period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence asks something.'),
       miss('An exclamation mark (!)', 'That shows strong feeling, but this is a plain question.', 'A sentence that asks ends with a question mark.'),
       miss('A comma (,)', 'A comma pauses inside a sentence; it does not end one.', 'Use the mark that shows a question.'),
     ],
