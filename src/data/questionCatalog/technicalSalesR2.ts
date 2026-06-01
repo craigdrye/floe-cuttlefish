@@ -92,7 +92,7 @@ export const technicalSalesR2Questions: Question[] = makeQuestionBank('Career Sk
     wrong: [
       miss('Treat every item the buyer calls a "requirement" as blocking', 'Buyers routinely label nice-to-haves as requirements; taking the list at face value mis-scopes the deal and the POC.', 'Pressure-test each item; the label "requirement" is not proof it blocks the purchase.'),
       miss('Rank them by how technically difficult each one is to build', 'Build difficulty is your concern, not the buyer\'s purchase logic; a trivial feature can still be a dealbreaker and vice versa.', 'Sort by purchase impact for the buyer, not by your engineering effort.'),
-      miss('Assume the longest item on the list is the most important one', 'Length of description does not signal blocking status; importance comes from purchase consequence, not verbosity.', 'Importance is about consequence-of-absence, not how much they wrote.'),
+      miss('Treat the longest item on the list as the most important one', 'Length of description does not signal blocking status; importance comes from purchase consequence, not verbosity.', 'Importance is about consequence-of-absence, not how much they wrote.'),
     ],
     lesson: 'A blocking requirement is one whose absence stops the purchase; a preference is desirable but survivable. The test is the consequence of absence: "If we did not have this, would that end the evaluation?" Discovery that fails to make this cut leads to over-scoped demos, doomed POCs, and chasing gaps that never mattered.',
     source,
@@ -613,7 +613,7 @@ export const technicalSalesR2Questions: Question[] = makeQuestionBank('Career Sk
     correct: 'Capture the use case, business impact, frequency across accounts, and revenue context, then route it as a structured product-feedback item — letting product weigh it against the pattern rather than reacting to one voice',
     wrong: [
       miss('Promise the customer it will be built since they asked directly', 'An SE-promised build with no product authority is a credibility-destroyer and a future broken promise; capture and route instead.', 'You cannot promise a build; capture context and route it to product.'),
-      miss('Ignore it because one customer\'s request never matters', 'Dropping the signal entirely degrades roadmap decisions; even a one-off may be the first of a pattern worth recording.', 'Do not discard the signal; one request can be the start of a pattern.'),
+      miss('Dismiss it as a one-off before recording the use case', 'Dropping the signal entirely degrades roadmap decisions; even a one-off may be the first of a pattern worth recording.', 'Do not discard the signal; one request can be the start of a pattern.'),
       miss('File it as "customer wants a feature" with no context', 'Context-free requests cannot be prioritized; product needs use case, frequency, impact, and revenue to weigh it.', 'Add use case, frequency, impact, and revenue, or product cannot act.'),
     ],
     lesson: 'The judgment is whether one ask reflects a broader pattern. Capture the use case, the business impact, how often it recurs across accounts, and the revenue context, then route it as a structured feedback item. That lets product prioritize against the whole pattern. Promising the build yourself, or filing context-free wishes, both fail — one breaks trust, the other is unusable.',
@@ -644,7 +644,7 @@ export const technicalSalesR2Questions: Question[] = makeQuestionBank('Career Sk
     wrong: [
       miss('Nothing — casual remarks are not binding, so it does not matter', 'Buyers act on what the SE says; an unrecorded promise routinely resurfaces as an expectation and a trust break, binding or not.', 'Buyers hold you to casual remarks; record and reconcile them.'),
       miss('Quietly hope the buyer forgets so you avoid an awkward correction', 'Hoping it is forgotten lets a hidden obligation fester until delivery, where it explodes; address it now.', 'Hidden obligations surface at delivery; correct the expectation early.'),
-      miss('Tell delivery to build it without checking feasibility or cost', 'Committing delivery to an unvetted custom build creates downstream failure; confirm feasibility before reinforcing the promise.', 'Verify feasibility first; do not force an unvetted build on delivery.'),
+      miss('Convert the casual remark into a delivery commitment before scoping it', 'Committing delivery to an unvetted custom build creates downstream failure; confirm feasibility before reinforcing the promise.', 'Verify feasibility first; do not force an unvetted build on delivery.'),
     ],
     lesson: 'Casual promises are dangerous precisely because buyers treat the SE as the technical authority. An undocumented "we can probably do that" becomes a hidden delivery obligation and a procurement-or-onboarding dispute. The discipline is to document what was committed, verify it with product/delivery, and reset the expectation honestly if it cannot be met.',
     source,
