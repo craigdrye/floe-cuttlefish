@@ -2,6 +2,25 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/ratios|fractions|decimals/i.test(chapter)) {
+    return `${title} is about comparing quantities fairly. The useful answer is "${correct}"; scale both ratio parts together, use the fraction as written, and keep decimal place value under control.`
+  }
+  if (/expressions|equations|inequalities/i.test(chapter)) {
+    return `${title} is about symbols standing for numbers. The useful answer is "${correct}"; combine only like terms, undo operations cleanly, and read inequality direction on a number line.`
+  }
+  if (/coordinate/i.test(chapter)) {
+    return `${title} is about location from signs. The useful answer is "${correct}"; x comes first, y comes second, and each quadrant has a sign pattern.`
+  }
+  if (/geometry|volume/i.test(chapter)) {
+    return `${title} is about choosing the right measurement formula. The useful answer is "${correct}"; area uses square units, volume uses all three dimensions, and triangle area is half a matching rectangle.`
+  }
+  if (/data/i.test(chapter)) {
+    return `${title} is about splitting a total evenly. The useful answer is "${correct}"; mean is the total divided by the number of values.`
+  }
+  return `${title} is a middle-school math skill. The useful answer is "${correct}"; identify the relationship first, then calculate carefully.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +35,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: NYSED, STAAR, and OER middle-school math collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from NYSED/STAAR/OER middle-school math coverage',
 })
 

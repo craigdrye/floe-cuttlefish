@@ -2,6 +2,19 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/series|power series|taylor/i.test(chapter)) {
+    return `${title} is about deciding how an infinite process behaves. The useful answer is "${correct}"; check the ratio, p-value, term limit, center/radius, or known Maclaurin pattern before manipulating symbols.`
+  }
+  if (/advanced integration|improper/i.test(chapter)) {
+    return `${title} is about turning an integral into a testable structure. The useful answer is "${correct}"; connect integration by parts to the product rule, and judge improper integrals by decay or comparison.`
+  }
+  if (/parametric|polar|vector/i.test(chapter)) {
+    return `${title} is about calculus in a non-y-equals-x format. The useful answer is "${correct}"; differentiate with respect to the parameter, use the polar area formula, or take vector magnitude as needed.`
+  }
+  return `${title} is an AP Calculus BC skill. The useful answer is "${correct}"; name the calculus tool first, then apply its condition or formula carefully.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +29,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: Numbas and WeBWorK AP Calculus BC clusters. This is an authored Floe-native drill item, not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from Numbas/WeBWorK AP Calculus BC coverage',
 })
 
