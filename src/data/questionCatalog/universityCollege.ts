@@ -71,9 +71,87 @@ function enrichUniversityMathQuestionQuality(catalog: Record<string, Question[]>
   )
 }
 
+function normalizeApStatisticsChapter(question: Question): Question {
+  const chapter = question.chapter.trim()
+  const context = `${question.title} ${question.prompt}`.toLowerCase()
+  let mappedChapter = chapter
+
+  switch (chapter) {
+    case 'Unit 1: Exploring categorical data':
+    case 'Unit 2: Displaying and describing quantitative data':
+    case 'Unit 3: Summary statistics':
+    case 'Unit 4: Percentiles, z-scores, and the normal distribution':
+    case 'Exploratory Data Analysis':
+    case 'Exploring Data':
+    case 'Introduction to Data':
+    case 'Variables':
+    case 'Summary Statistics':
+    case 'Normal Distribution':
+    case 'Distributions':
+      mappedChapter = 'Chapter 1: Exploring One-Variable Data'
+      break
+    case 'Unit 5: Exploring two-variable quantitative data':
+      mappedChapter = 'Chapter 2: Exploring Two-Variable Data'
+      break
+    case 'Unit 6: Collecting data':
+    case 'Data and Study Design':
+    case 'Data Basics and Study Design':
+      mappedChapter = 'Chapter 3: Collecting Data'
+      break
+    case 'Unit 7: Probability':
+    case 'Unit 8: Random variables and probability distributions':
+    case 'Probability':
+    case 'Probability Density':
+    case 'Independent Events':
+      mappedChapter = 'Chapter 4: Probability and Random Variables'
+      break
+    case 'Unit 9: Sampling distributions':
+    case 'Sampling Distributions':
+      mappedChapter = 'Chapter 5: Sampling Distributions'
+      break
+    case 'Unit 10: Inference for categorical data: Proportions':
+    case 'Inference for Categorical Data':
+      mappedChapter = 'Chapter 6: Inference for Proportions'
+      break
+    case 'Unit 11: Inference for quantitative data: Means':
+    case 'Inference for Means':
+    case 'Inference for Numerical Data':
+    case 'Paired Tests':
+    case 'ANOVA':
+      mappedChapter = 'Chapter 7: Inference for Means'
+      break
+    case 'Unit 12: Inference for categorical data: Chi-square':
+    case 'Unit 13: Inference for quantitative data: slopes':
+    case 'Linear Regression':
+    case 'Multiple and Logistic Regression':
+    case 'Multiple Regression':
+      mappedChapter = 'Chapter 8: Chi-Square and Inference for Regression'
+      break
+    case 'Foundations of Inference':
+    case 'Foundations for Inference':
+    case 'Confidence Intervals':
+    case 'Hypothesis Tests':
+      mappedChapter = context.includes('proportion') || context.includes('categorical')
+        ? 'Chapter 6: Inference for Proportions'
+        : 'Chapter 7: Inference for Means'
+      break
+  }
+
+  return mappedChapter === question.chapter ? question : { ...question, chapter: mappedChapter }
+}
+
 export function buildUniversityCollegeQuestionCatalog(): Record<string, Question[]> {
   const calculusAB = makeColCalculusABQuiz()
-  const apStatistics = makeColAPStatisticsQuiz()
+  const apStatistics = [
+    ...makeColAPStatisticsQuiz(),
+    ...openIntroImsImportedQuestions,
+    ...openIntroStatsAdditionalImportedQuestions,
+    ...openIntroStatsSlidesQuestions,
+    ...statisticsReasoningWorkoutGeneratedQuestions,
+    ...numbasWebworkStatisticsQuestions,
+    ...numbasWebworkAdditionalStatisticsQuestions,
+    ...numbasWebworkThirdStatisticsQuestions,
+  ].map(normalizeApStatisticsChapter)
   const collegeAlgebra = makeColCollegeAlgebraQuiz()
   const calculusBC = makeColCalculusBCQuiz()
   const precalculus = makeColPrecalculusQuiz()
@@ -87,16 +165,7 @@ export function buildUniversityCollegeQuestionCatalog(): Record<string, Question
   class11Math,
   class12Math,
   apCalculusAB: [...calculusAB, ...calculusWorkoutGeneratedQuestions, ...numbasWebworkCalculusQuestions, ...numbasWebworkAdditionalCalculusQuestions, ...numbasWebworkThirdCalculusQuestions],
-  apStatistics: [
-    ...apStatistics,
-    ...openIntroImsImportedQuestions,
-    ...openIntroStatsAdditionalImportedQuestions,
-    ...openIntroStatsSlidesQuestions,
-    ...statisticsReasoningWorkoutGeneratedQuestions,
-    ...numbasWebworkStatisticsQuestions,
-    ...numbasWebworkAdditionalStatisticsQuestions,
-    ...numbasWebworkThirdStatisticsQuestions,
-  ],
+  apStatistics,
   // introDataScience: pre-launch slimmed pool. Distinct from apStatistics by dropping the
   // numbasWebwork pure-math statistics problem sets (those stay on apStatistics for AP rubric
   // practice) and keeping the framed EDA / study-design / inference content from the
