@@ -766,14 +766,14 @@ export const nclexRnQuestions: Question[] = makeQuestionBank('Career Skills', [
     id: 4890055,
     chapter: 'Cardiovascular',
     title: 'Matrix — Shock Recognition',
-    prompt: 'Match each set of findings to the most likely shock type: (1) JVD, crackles, cool extremities, EF 25%; (2) Warm extremities, bounding pulses, fever, hypotension; (3) Cool clammy, flat neck veins, recent GI bleed; (4) Tracheal deviation, absent breath sounds, hypotension.',
+    prompt: 'A nurse is triaging four unstable patients and needs to match each finding cluster to the most likely shock type. Which pairing is best for: (1) JVD, crackles, cool extremities, EF 25%; (2) warm extremities, bounding pulses, fever, hypotension; (3) cool clammy skin, flat neck veins, recent GI bleed; and (4) tracheal deviation, absent breath sounds, hypotension?',
     correct: '1=cardiogenic, 2=distributive (septic), 3=hypovolemic, 4=obstructive',
     wrong: [
       miss('1=hypovolemic, 2=cardiogenic, 3=distributive, 4=obstructive', 'Low EF and crackles = cardiogenic; warm and febrile = septic.', 'Re-match the cardiac findings.'),
       miss('1=cardiogenic, 2=hypovolemic, 3=distributive, 4=obstructive', 'Warm bounding pulses with fever fit distributive (septic), not hypovolemic.', 'Match warm to distributive.'),
       miss('1=distributive, 2=septic, 3=cardiogenic, 4=hypovolemic', 'Low EF with JVD/crackles is cardiogenic, not distributive.', 'Look at EF.'),
     ],
-    lesson: 'Shock types: cardiogenic (cool, JVD, crackles, low EF), hypovolemic (cool, flat neck veins, volume loss history), distributive/septic (warm, bounding pulses, fever, vasodilation), obstructive (tension pneumothorax, tamponade, massive PE — JVD with hypotension and physical signs).',
+    lesson: 'Shock recognition is pattern matching under pressure. Cardiogenic shock points to pump failure: cool extremities, JVD, crackles, and low EF. Hypovolemic shock points to volume loss: cool clammy skin, flat neck veins, and bleeding history. Distributive or septic shock often starts warm with bounding pulses, fever, and vasodilation. Obstructive shock comes from blocked filling or outflow, such as tension pneumothorax, tamponade, or massive PE.',
     source,
   },
   {

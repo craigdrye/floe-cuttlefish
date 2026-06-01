@@ -52,26 +52,34 @@ function isMediaPrompt(prompt: string): boolean {
 function isBarePrimaryPrompt(prompt: string): boolean {
   const trimmed = prompt.trim()
   if (trimmed.length <= 12) return true
+  if (/^\$[^$]+\$\.?$/.test(trimmed)) return true
   if (/^\\?\s*math\b/i.test(trimmed)) return true
   if (/^(true or false|divide|multiply)\.?$/i.test(trimmed)) return true
   if (/^[\d\s+\-*/×÷().^]+$/.test(trimmed)) return true
   return false
 }
 
+function hasFillInBlank(prompt: string): boolean {
+  return /_{2,}|\\_\\_|blank|fill in/i.test(prompt)
+}
+
 function rewritePrimaryPrompt(question: Question): string {
   const prompt = question.prompt.trim()
   const title = question.title || question.chapter || 'this practice question'
   if (prompt.endsWith('?')) return question.prompt
+  if (hasFillInBlank(prompt)) {
+    return `${prompt} Which answer correctly fills the blank?`
+  }
   if (isMediaPrompt(prompt)) {
     return `${prompt}\nLook closely at the image for "${title}". Which answer best solves the problem?`
   }
   if (prompt.endsWith(':')) {
-    return `${prompt} Finish the "${title}" problem by choosing the option that matches the clue.`
+    return `${prompt} Which option best completes the "${title}" problem?`
   }
   if (isBarePrimaryPrompt(prompt)) {
-    return `Try this "${title}" problem: ${prompt}. Pick the option that solves it.`
+    return `Try this "${title}" problem: ${prompt}. Which option solves it?`
   }
-  return `${prompt} Pick the option that fits the problem.`
+  return `${prompt} Which option is correct?`
 }
 
 function enrichPrimaryQuestionQuality(catalog: Record<string, Question[]>): Record<string, Question[]> {

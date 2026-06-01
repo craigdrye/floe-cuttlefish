@@ -67,10 +67,13 @@ function highAdvancedLesson(question: Question): string {
 function rewriteHighAdvancedPrompt(question: Question): string {
   const prompt = question.prompt.trim()
   if (prompt.endsWith('?')) return question.prompt
-  if (prompt.endsWith(':')) {
-    return `${prompt} Choose the option that makes the idea scientifically precise.`
+  if (/_{2,}|\\_\\_|blank|fill in/i.test(prompt)) {
+    return `${prompt} Which answer correctly fills the blank?`
   }
-  return `${prompt} Use the clue to pick the most precise explanation.`
+  if (prompt.endsWith(':')) {
+    return `${prompt} Which option makes the idea most precise?`
+  }
+  return `${prompt} Which option best matches the clue?`
 }
 
 function enrichHighAdvancedQuestionQuality(catalog: Record<string, Question[]>): Record<string, Question[]> {

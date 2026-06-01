@@ -23,7 +23,7 @@ function accessiblePrompt(title: string, prompt: string) {
     return `In philosophy, "${title}" is doing a particular job. Pick the explanation that captures what it means and what problem it helps us think about.`
   }
 
-  return `Philosophers use "${title}" to sharpen a question rather than just name-drop. Complete the idea in plain language: "${stem}".`
+  return `Philosophers use "${title}" to sharpen a question rather than just name-drop. Which option best completes this idea in plain language: "${stem}"?`
 }
 
 function alternatePrompt(title: string, prompt: string) {
