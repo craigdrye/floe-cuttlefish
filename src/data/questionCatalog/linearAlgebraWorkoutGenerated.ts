@@ -8,6 +8,28 @@ import {
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/vectors|span|basis|independence|subspaces/i.test(chapter)) {
+    return `${title} is about the geometry of vector spaces. The useful answer is "${correct}"; think in terms of directions, linear combinations, closure, redundancy, and the smallest set of vectors that can generate a space.`
+  }
+  if (/matrices|systems|rank|inverses|determinants/i.test(chapter)) {
+    return `${title} is about matrices as organized linear rules. The useful answer is "${correct}"; track shape first, then ask what rows, columns, pivots, determinants, rank, or inverses say about solving Ax = b.`
+  }
+  if (/linear transformations/i.test(chapter)) {
+    return `${title} is about functions that preserve linear structure. The useful answer is "${correct}"; check whether addition and scalar multiplication are preserved, then interpret kernel and image as input/output subspaces.`
+  }
+  if (/eigenvalues/i.test(chapter)) {
+    return `${title} is about directions a transformation preserves. The useful answer is "${correct}"; eigenvectors keep their direction under A, while eigenvalues tell the stretch or flip along those directions.`
+  }
+  if (/orthogonality|least squares/i.test(chapter)) {
+    return `${title} uses perpendicularity to simplify approximation. The useful answer is "${correct}"; dot products test orthogonality, and least squares chooses the closest reachable vector when Ax = b cannot be solved exactly.`
+  }
+  if (/matrix factorizations/i.test(chapter)) {
+    return `${title} is about breaking a matrix into useful factors. The useful answer is "${correct}"; factorizations rewrite a hard matrix problem using triangular, orthogonal, or diagonal pieces that are easier to compute with.`
+  }
+  return `${title} is a linear algebra concept. The useful answer is "${correct}"; check dimensions, linear combinations, and the transformation meaning before choosing.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -22,8 +44,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: Numbas and WeBWorK linear-algebra clusters. This is an authored Floe-native drill item, not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from Numbas/WeBWorK coverage',
 })
 
