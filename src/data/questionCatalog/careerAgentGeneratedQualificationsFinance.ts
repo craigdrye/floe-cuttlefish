@@ -435,7 +435,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'Discuss rebalancing toward the strategic allocation and the risk exposures now being taken',
       [
         ['Increase equities further because recent winners keep winning', 'Momentum is not a strategic asset allocation. Letting winners run mechanically increases risk without policy approval.'],
-        ['Treat the client's current comfort as the benchmark instead of the policy allocation', 'Policy allocation exists precisely to anchor decisions against feelings. Abandoning it defeats the purpose of an IPS.'],
+        ['Treat the client\'s current comfort as the benchmark instead of the policy allocation', 'Policy allocation exists precisely to anchor decisions against feelings. Abandoning it defeats the purpose of an IPS.'],
         ['Sell all bonds because they failed to celebrate', 'Sector-level conclusions from short-term returns are exactly the bias rebalancing prevents.'],
       ],
       'Rebalancing is risk control, not a prediction that winners are bad. Exam answers favour disciplined alignment with objectives and constraints.'),
@@ -679,7 +679,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'Whether disclosures are adequate and whether the report should include appropriate going-concern language',
       [
         ['Issue an adverse opinion automatically', 'Alleviated doubt does not warrant adverse. Disclosure adequacy is the next question.'],
-        ['Treat management's plan as enough evidence that the issue is resolved', 'Plans do not erase the need to communicate clearly. Disclosure is still required.'],
+        ['Treat management\'s plan as enough evidence that the issue is resolved', 'Plans do not erase the need to communicate clearly. Disclosure is still required.'],
         ['Switch to a tax engagement after fieldwork', 'Auditors cannot reclassify the engagement mid-stream to escape going-concern obligations.'],
       ],
       'Going concern reporting depends on substantial doubt, management plans, and disclosure adequacy. A plan helps but does not silence the auditor.'),

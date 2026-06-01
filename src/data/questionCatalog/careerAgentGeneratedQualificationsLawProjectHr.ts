@@ -757,7 +757,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       [
         ['Approve the termination because the manager is annoyed', 'Annoyance is not a termination criterion. Documented cause and consistent practice are.'],
         ['Promise the employee the job is safe before reviewing facts', 'Premature promises bypass investigation and create their own credibility risk.'],
-        ['Treat each manager's preference as overriding established past practice', 'Inconsistent discipline is the textbook discrimination-risk pattern.'],
+        ['Treat each manager\'s preference as overriding established past practice', 'Inconsistent discipline is the textbook discrimination-risk pattern.'],
       ],
       'SHRM judgement starts with facts, policy, consistency, and risk. Humane process is the guardrail, not bureaucracy confetti.'),
 
@@ -833,7 +833,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       [
         ['Wait until resignations arrive with cake', 'Waiting eliminates the lead time needed to develop replacements.'],
         ['Rename junior employees as experts without preparation', 'Titles without capability do not solve a skills gap.'],
-        ['Treat external hiring as perfectly timed to the organisation's need', 'External hiring alone is rarely fast enough for critical-role retirements.'],
+        ['Treat external hiring as perfectly timed to the organisation\'s need', 'External hiring alone is rarely fast enough for critical-role retirements.'],
       ],
       'Workforce planning is forward-looking. Critical skill risk deserves action before farewell emails start lining up.'),
     q(4250909, 'Career Skills', 'Organization Domain: Strategy, Structure, and Change', 'Merger anxiety',

@@ -5655,7 +5655,7 @@ export const careerAgentGeneratedRoadmapFinanceQuestionsByTrack: Record<string, 
       'Whether the new activity fits the customer profile, stated purpose, risk rating, and source of funds',
       [
         ['Treat crypto activity as inherently criminal without reviewing counterparties', 'Crypto is widely used legitimately. The diligence is fit to profile, not blanket suspicion.'],
-        ['Treat crypto exposure as outside the bank's AML perimeter', 'Crypto on-ramps and off-ramps run through banks. They are inside the AML perimeter.'],
+        ['Treat crypto exposure as outside the bank\'s AML perimeter', 'Crypto on-ramps and off-ramps run through banks. They are inside the AML perimeter.'],
         ['Tell the customer to use rounder amounts', 'Suggesting structuring techniques to a customer is a textbook tipping-off violation.'],
       ],
       'Monitoring should evaluate changed behavior in context. Crypto-related flows can be legitimate, risky, or suspicious depending on facts.'),

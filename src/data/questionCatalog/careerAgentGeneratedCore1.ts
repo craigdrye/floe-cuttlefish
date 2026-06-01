@@ -1926,7 +1926,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Review whether there is a pattern, understand the cause, and respond proportionately with coaching or formal action if warranted',
       [
         ['Start the formal plan because one mistake proves a trend', 'Single incidents rarely justify formal action and damage trust when they do.'],
-        ['Treat a strong performer's repeated mistake as self-correcting', 'Strong employees still benefit from specific feedback on visible misses.'],
+        ['Treat a strong performer\'s repeated mistake as self-correcting', 'Strong employees still benefit from specific feedback on visible misses.'],
         ['Discuss the mistake only with peers to gather opinions', 'Peer gossip is not a fair or evidence-based response.'],
       ],
       'Performance management should be fair and evidence-based. A single incident may need coaching, but formal action should reflect pattern, severity, and context.'),
@@ -2135,7 +2135,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       [
         ['Drop the price immediately without learning the concern', 'Reflex discounting concedes margin without addressing the real concern.'],
         ['Argue that the buyer is wrong about money', 'Arguing with buyers about their own budget is rarely persuasive.'],
-        ['Repeat the prepared pitch instead of answering the buyer's objection', 'Repeating the deck does not resolve a budget objection.'],
+        ['Repeat the prepared pitch instead of answering the buyer\'s objection', 'Repeating the deck does not resolve a budget objection.'],
       ],
       'Objections are information. Before discounting, a seller should understand whether the issue is budget, value, timing, comparison, or risk.'),
     q(4260921, 'Career Skills', 'Pipeline and Forecast Hygiene', 'Next step clarity',

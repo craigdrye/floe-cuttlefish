@@ -300,7 +300,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       [
         ['Tell everyone to be more careful and close the file', '"Be careful" is not a corrective action and does not prevent recurrence.'],
         ['Rename the folder so the problem feels different', 'Renaming does not address the underlying issue.'],
-        ['Frame the issue as one worker's fault before checking the process design', 'Individual punishment without process review usually misses systemic causes.'],
+        ['Frame the issue as one worker\'s fault before checking the process design', 'Individual punishment without process review usually misses systemic causes.'],
       ],
       'CAPA should address root cause and recurrence, not just the visible symptom. Effectiveness checks confirm the fix actually worked.'),
     q(4260510, 'Regulatory', 'Change Control and Post-Market Duties', 'Audit-response sandwich',

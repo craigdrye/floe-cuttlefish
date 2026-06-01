@@ -150,7 +150,7 @@ export const ibCh3Questions: Question[] = [
     'Unlever each comp\'s beta using its own debt-to-equity and tax rate, average (or median) the unlevered betas, then relever using the target\'s assumed long-run capital structure and tax rate',
     [
       ['Average the five raw levered betas directly and use that figure in CAPM', 'Each comp has different leverage, so its levered beta carries its own capital-structure noise. Averaging raw levered betas mixes operating risk with whatever debt the comps happen to be carrying today.'],
-      ['Use the closest-size comp's levered beta without adjusting for capital structure', 'Single-comp betas are noisy and still carry that comp\'s specific capital structure. The averaging step exists to dampen single-name noise; the unlever-relever step exists to control for leverage differences.'],
+      ['Use the closest-size comp\'s levered beta without adjusting for capital structure', 'Single-comp betas are noisy and still carry that comp\'s specific capital structure. The averaging step exists to dampen single-name noise; the unlever-relever step exists to control for leverage differences.'],
       ['Unlever all five, average, and use the unlevered average directly without relevering', 'Skipping the relever step assumes your target has zero debt, which is rarely the modeling intent. The relevered beta has to reflect the target\'s capital structure to make WACC internally consistent.'],
     ],
     'The full workflow is: unlever each comp (β_u = β_L / (1 + (1 − t) × D/E)), average the unlevered betas, then relever to the target\'s capital structure (β_L = β_u × (1 + (1 − t) × D/E)). Skipping any step imports the wrong information into your cost of equity.'),

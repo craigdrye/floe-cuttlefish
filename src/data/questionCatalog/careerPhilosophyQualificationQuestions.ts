@@ -887,7 +887,7 @@ const _shrmPeopleBase = makeQuestionBank('Career Skills', [
     correct: 'Explain confidentiality limits, assess safety and policy obligations, and begin appropriate fact-finding',
     wrong: [
       miss('Promise total secrecy before knowing the risk', 'HR may need to act on serious complaints and cannot guarantee absolute secrecy.', 'Explain limits honestly.'),
-      miss('Treat an employee's request for no action as enough to close the report', 'HR may still have a duty to assess and respond.', 'Safety and policy matter.'),
+      miss('Treat an employee\'s request for no action as enough to close the report', 'HR may still have a duty to assess and respond.', 'Safety and policy matter.'),
       miss('Tell the whole department every detail immediately', 'Fact-finding should protect privacy as much as practical.', 'Use need-to-know handling.'),
     ],
     lesson: 'Employee-relations work needs empathy plus process: protect people, avoid retaliation, preserve evidence, and keep confidentiality promises realistic.',
