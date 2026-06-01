@@ -3,6 +3,22 @@ import type { Question } from './types'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/study design|ethics/i.test(chapter)) {
+    return `${title} is a study-design idea. The useful answer is "${correct}"; separate how people enter the sample from how treatments are assigned, and watch for bias, confounding, blinding, blocking, or consent concerns.`
+  }
+  if (/normal|standardization|variable data|regression/i.test(chapter)) {
+    return `${title} is about reading patterns in data. The useful answer is "${correct}"; check the scale, shape, direction, strength, units, and whether the question is asking about a model or a raw data feature.`
+  }
+  if (/probability|random variables/i.test(chapter)) {
+    return `${title} is a probability concept. The useful answer is "${correct}"; define the sample space, condition, or ordering rule before calculating, and keep probability rules distinct from summaries like means.`
+  }
+  if (/sampling variability|inference/i.test(chapter)) {
+    return `${title} is an inference concept. The useful answer is "${correct}"; identify the parameter, the repeated-sampling logic, the null model, and the specific error or uncertainty being discussed.`
+  }
+  return `${title} is a statistics concept. The useful answer is "${correct}"; name the data structure first, then choose the design, probability, model, or inference idea that matches it.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -24,8 +40,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson: extra.lesson ??
-    'Coverage source: OpenIntro, IMS, NYSED/STAAR data-analysis items, and OER statistics collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: extra.lesson ?? lessonFor(chapter, title, correct),
   solution: extra.solution,
   mentorHint: extra.mentorHint,
   alternatePrompts: extra.alternatePrompts,
