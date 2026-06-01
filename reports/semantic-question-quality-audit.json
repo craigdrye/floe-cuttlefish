@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-01T06:58:29.738Z",
+  "generatedAt": "2026-06-01T07:00:25.921Z",
   "summary": {
     "filesScanned": 758,
     "questionsScanned": 56987,
     "extractedQuestionRecords": 57144,
     "skippedNonPlayablePlaceholders": 157,
     "distinctQuestionIds": 38776,
-    "totalIssues": 823,
-    "jsonIssuesStored": 823,
-    "duplicateWhyWrongGroups": 178
+    "totalIssues": 813,
+    "jsonIssuesStored": 813,
+    "duplicateWhyWrongGroups": 175
   },
   "flagCounts": {
-    "repeated-why-wrong": 657,
+    "repeated-why-wrong": 647,
     "obvious-irrelevant-distractor": 45,
     "meta-distractor": 121
   },
@@ -2037,47 +2037,6 @@
       ]
     },
     {
-      "text": "That adds instead of subtracting.",
-      "count": 5,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/highBuilders.ts",
-          "line": 1577,
-          "title": "Interquartile range",
-          "chapter": "Unit 3: Summary statistics",
-          "snippet": "['32', 'That adds instead of subtracting.', 'IQR is an interval width, not a total.'],"
-        },
-        {
-          "file": "src/data/questionCatalog/highBuilders.ts",
-          "line": 2215,
-          "title": "Range of a data set",
-          "chapter": "Unit 2: Displaying and comparing quantitative data",
-          "snippet": "['43', 'That adds instead of subtracting.', 'Range is a difference.'],"
-        },
-        {
-          "file": "src/data/questionCatalog/primaryGeneratedHumanitiesExam.ts",
-          "line": 1696,
-          "title": "Working backwards",
-          "chapter": "Mathematics: Heuristics and Problem Solving",
-          "snippet": "miss('24', 'That adds instead of subtracting.', 'Reverse each step.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/universityBuilders.ts",
-          "line": 296,
-          "title": "Interquartile range",
-          "chapter": "Unit 3: Summary statistics",
-          "snippet": "['32', 'That adds instead of subtracting.', 'IQR is an interval width, not a total.'],"
-        },
-        {
-          "file": "src/data/questionCatalog/universityBuilders.ts",
-          "line": 990,
-          "title": "Range of a data set",
-          "chapter": "Unit 2: Displaying and comparing quantitative data",
-          "snippet": "['43', 'That adds instead of subtracting.', 'Range is a difference.'],"
-        }
-      ]
-    },
-    {
       "text": "The choice describe the speaker’s feelings and experiences. keeps the sentence grammatical in one spot while creating a punctuation or agreement problem elsewhere.",
       "count": 5,
       "examples": [
@@ -2736,6 +2695,44 @@
           "title": "Algebra 327",
           "chapter": "Algebra - Medium",
           "snippet": "wrong: [[\"2\",\"Picking 2 usually means the calculation used the right direction but stopped before the full quantity was found.\",\"Circle the requested quantity and make sure the last line solves for that exact thing.\"],[\"4\",\"4 likely comes from using only pa..."
+        }
+      ]
+    },
+    {
+      "text": "Picking 4 usually means the calculation used the right direction but stopped before the full quantity was found.",
+      "count": 4,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/openSatImported.ts",
+          "line": 1259,
+          "questionId": 320159,
+          "title": "Advanced Math 159",
+          "chapter": "Advanced Math - Medium",
+          "snippet": "wrong: [[\"2\",\"2 likely comes from using only part of the given information; finishing the required operation gets to 6.\",\"Ask whether you have used every condition in the prompt.\"],[\"4\",\"Picking 4 usually means the calculation used the right direction but s..."
+        },
+        {
+          "file": "src/data/questionCatalog/openSatImported.ts",
+          "line": 2339,
+          "questionId": 320292,
+          "title": "Algebra 292",
+          "chapter": "Algebra - Medium",
+          "snippet": "wrong: [[\"2\",\"2 fits a partial relationship in the problem, but the question asks for the completed result 6.\",\"Ask whether you have used every condition in the prompt.\"],[\"4\",\"Picking 4 usually means the calculation used the right direction but stopped bef..."
+        },
+        {
+          "file": "src/data/questionCatalog/openSatImported.ts",
+          "line": 2589,
+          "questionId": 320324,
+          "title": "Geometry and Trigonometry 324",
+          "chapter": "Geometry and Trigonometry - Hard",
+          "snippet": "wrong: [[\"4\",\"Picking 4 usually means the calculation used the right direction but stopped before the full quantity was found.\",\"Circle the requested quantity and make sure the last line solves for that exact thing.\"],[\"8\",\"8 likely comes from using only pa..."
+        },
+        {
+          "file": "src/data/questionCatalog/openSatImported.ts",
+          "line": 2859,
+          "questionId": 320357,
+          "title": "Advanced Math 357",
+          "chapter": "Advanced Math - Hard",
+          "snippet": "wrong: [[\"2\",\"2 is an intermediate-size answer. It looks like one step of the work, not the final value 6.\",\"Ask whether you have used every condition in the prompt.\"],[\"4\",\"Picking 4 usually means the calculation used the right direction but stopped before..."
         }
       ]
     }
@@ -6017,9 +6014,9 @@
         "title": "Creative algebra lab",
         "chapter": "Unit 17: Creativity in algebra",
         "field": "distractor",
-        "value": "Ignore the result and start a different unit",
+        "value": "Keep the impossible result without checking the model",
         "detail": "Wrong answer is about answering strategy rather than content.",
-        "snippet": "['Ignore the result and start a different unit', 'The point is to understand what went wrong here.', 'Use the impossible answer as a clue to debug the model.'],",
+        "snippet": "['Keep the impossible result without checking the model', 'An impossible answer is a signal to debug the setup, not a result to accept.', 'Trace the variables and assumptions until the context and calculation agree.'],",
         "extractor": "object"
       },
       {
@@ -9006,34 +9003,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 89,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 1577,
-      "title": "Interquartile range",
-      "chapter": "Unit 3: Summary statistics",
-      "field": "whyWrong",
-      "value": "That adds instead of subtracting.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "['32', 'That adds instead of subtracting.', 'IQR is an interval width, not a total.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 2215,
-      "title": "Range of a data set",
-      "chapter": "Unit 2: Displaying and comparing quantitative data",
-      "field": "whyWrong",
-      "value": "That adds instead of subtracting.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "['43', 'That adds instead of subtracting.', 'Range is a difference.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
       "file": "src/data/questionCatalog/jeeMainHigh103TopUpA.ts",
       "line": 570,
       "questionId": 7970036,
@@ -9433,48 +9402,6 @@
       "value": "The choice describe the speaker’s feelings and experiences. keeps the sentence grammatical in one spot while creating a punctuation or agreement problem elsewhere.",
       "detail": "Same normalized whyWrong appears 5 times.",
       "snippet": "wrong: [[\"describe the speaker’s feelings and experiences.\",\"The choice describe the speaker’s feelings and experiences. keeps the sentence grammatical in one spot while creating a punctuation or agreement problem elsewhere.\",\"Read the whole sentence after ...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/primaryGeneratedHumanitiesExam.ts",
-      "line": 1696,
-      "title": "Working backwards",
-      "chapter": "Mathematics: Heuristics and Problem Solving",
-      "field": "whyWrong",
-      "value": "That adds instead of subtracting.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('24', 'That adds instead of subtracting.', 'Reverse each step.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 296,
-      "title": "Interquartile range",
-      "chapter": "Unit 3: Summary statistics",
-      "field": "whyWrong",
-      "value": "That adds instead of subtracting.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "['32', 'That adds instead of subtracting.', 'IQR is an interval width, not a total.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 990,
-      "title": "Range of a data set",
-      "chapter": "Unit 2: Displaying and comparing quantitative data",
-      "field": "whyWrong",
-      "value": "That adds instead of subtracting.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "['43', 'That adds instead of subtracting.', 'Range is a difference.'],",
       "extractor": "object"
     },
     {
@@ -10206,9 +10133,23 @@
       "title": "Power rule",
       "chapter": "Unit 2: Differentiation: definition and basic derivative rules",
       "field": "whyWrong",
-      "value": "That misses the coefficient from the power rule.",
+      "value": "That keeps the new power but drops the multiplier from the original exponent.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['x^2', 'That misses the coefficient from the power rule.', 'Use n·x^(n-1).'],",
+      "snippet": "['x^2', 'That keeps the new power but drops the multiplier from the original exponent.', 'Use n·x^(n-1).'],",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 88,
+      "file": "src/data/questionCatalog/highBuilders.ts",
+      "line": 1577,
+      "title": "Interquartile range",
+      "chapter": "Unit 3: Summary statistics",
+      "field": "whyWrong",
+      "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
+      "detail": "Same normalized whyWrong appears 4 times.",
+      "snippet": "['32', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'IQR is an interval width, not a total.'],",
       "extractor": "object"
     },
     {
@@ -10220,9 +10161,9 @@
       "title": "Slope interpretation",
       "chapter": "Unit 13: Inference for quantitative data: slopes",
       "field": "whyWrong",
-      "value": "That confuses slope with intercept.",
+      "value": "That reads the rate of change as if it were the starting value.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['Predicted y starts at 1.5 when x = 0', 'That confuses slope with intercept.', 'The intercept here is 2.'],",
+      "snippet": "['Predicted y starts at 1.5 when x = 0', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 2.'],",
       "extractor": "object"
     },
     {
@@ -10234,9 +10175,23 @@
       "title": "Remainder theorem check",
       "chapter": "Unit 3: Polynomial and rational functions",
       "field": "whyWrong",
-      "value": "That uses the constant term only.",
+      "value": "That grabs one visible term instead of evaluating the whole expression.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['2', 'That uses the constant term only.', 'The remainder theorem uses the full polynomial value.'],",
+      "snippet": "['2', 'That grabs one visible term instead of evaluating the whole expression.', 'The remainder theorem uses the full polynomial value.'],",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 88,
+      "file": "src/data/questionCatalog/highBuilders.ts",
+      "line": 2215,
+      "title": "Range of a data set",
+      "chapter": "Unit 2: Displaying and comparing quantitative data",
+      "field": "whyWrong",
+      "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
+      "detail": "Same normalized whyWrong appears 4 times.",
+      "snippet": "['43', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'Range is a difference.'],",
       "extractor": "object"
     },
     {
@@ -10248,9 +10203,9 @@
       "title": "Slope meaning in context",
       "chapter": "Unit 15: Advanced regression",
       "field": "whyWrong",
-      "value": "That confuses slope with intercept.",
+      "value": "That reads the rate of change as if it were the starting value.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['The starting score is 2.5 when no one studies', 'That confuses slope with intercept.', 'The intercept here is 40.'],",
+      "snippet": "['The starting score is 2.5 when no one studies', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 40.'],",
       "extractor": "object"
     },
     {
@@ -10262,9 +10217,9 @@
       "title": "Derivative of a power",
       "chapter": "Unit 2: Basic derivative rules",
       "field": "whyWrong",
-      "value": "That misses the coefficient from the power rule.",
+      "value": "That keeps the new power but drops the multiplier from the original exponent.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['x^3', 'That misses the coefficient from the power rule.', 'Keep the original exponent as a multiplier.'],",
+      "snippet": "['x^3', 'That keeps the new power but drops the multiplier from the original exponent.', 'Keep the original exponent as a multiplier.'],",
       "extractor": "object"
     },
     {
@@ -10276,9 +10231,9 @@
       "title": "Acceleration from velocity",
       "chapter": "Unit 4: Contextual applications of differentiation",
       "field": "whyWrong",
-      "value": "That uses the constant term only.",
+      "value": "That grabs one visible term instead of evaluating the whole expression.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['-1', 'That uses the constant term only.', 'Differentiate the whole expression.'],",
+      "snippet": "['-1', 'That grabs one visible term instead of evaluating the whole expression.', 'Differentiate the whole expression.'],",
       "extractor": "object"
     },
     {
@@ -11310,9 +11265,23 @@
       "title": "Power rule",
       "chapter": "Unit 2: Differentiation: definition and basic derivative rules",
       "field": "whyWrong",
-      "value": "That misses the coefficient from the power rule.",
+      "value": "That keeps the new power but drops the multiplier from the original exponent.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['x^2', 'That misses the coefficient from the power rule.', 'Use n·x^(n-1).'],",
+      "snippet": "['x^2', 'That keeps the new power but drops the multiplier from the original exponent.', 'Use n·x^(n-1).'],",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 88,
+      "file": "src/data/questionCatalog/universityBuilders.ts",
+      "line": 296,
+      "title": "Interquartile range",
+      "chapter": "Unit 3: Summary statistics",
+      "field": "whyWrong",
+      "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
+      "detail": "Same normalized whyWrong appears 4 times.",
+      "snippet": "['32', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'IQR is an interval width, not a total.'],",
       "extractor": "object"
     },
     {
@@ -11324,9 +11293,9 @@
       "title": "Slope interpretation",
       "chapter": "Unit 13: Inference for quantitative data: slopes",
       "field": "whyWrong",
-      "value": "That confuses slope with intercept.",
+      "value": "That reads the rate of change as if it were the starting value.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['Predicted y starts at 1.5 when x = 0', 'That confuses slope with intercept.', 'The intercept here is 2.'],",
+      "snippet": "['Predicted y starts at 1.5 when x = 0', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 2.'],",
       "extractor": "object"
     },
     {
@@ -11338,9 +11307,23 @@
       "title": "Remainder theorem check",
       "chapter": "Unit 3: Polynomial and rational functions",
       "field": "whyWrong",
-      "value": "That uses the constant term only.",
+      "value": "That grabs one visible term instead of evaluating the whole expression.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['2', 'That uses the constant term only.', 'The remainder theorem uses the full polynomial value.'],",
+      "snippet": "['2', 'That grabs one visible term instead of evaluating the whole expression.', 'The remainder theorem uses the full polynomial value.'],",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 88,
+      "file": "src/data/questionCatalog/universityBuilders.ts",
+      "line": 990,
+      "title": "Range of a data set",
+      "chapter": "Unit 2: Displaying and comparing quantitative data",
+      "field": "whyWrong",
+      "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
+      "detail": "Same normalized whyWrong appears 4 times.",
+      "snippet": "['43', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'Range is a difference.'],",
       "extractor": "object"
     },
     {
@@ -11352,9 +11335,9 @@
       "title": "Slope meaning in context",
       "chapter": "Unit 15: Advanced regression",
       "field": "whyWrong",
-      "value": "That confuses slope with intercept.",
+      "value": "That reads the rate of change as if it were the starting value.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['The starting score is 2.5 when no one studies', 'That confuses slope with intercept.', 'The intercept here is 40.'],",
+      "snippet": "['The starting score is 2.5 when no one studies', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 40.'],",
       "extractor": "object"
     },
     {
@@ -11366,9 +11349,9 @@
       "title": "Derivative of a power",
       "chapter": "Unit 2: Basic derivative rules",
       "field": "whyWrong",
-      "value": "That misses the coefficient from the power rule.",
+      "value": "That keeps the new power but drops the multiplier from the original exponent.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['x^3', 'That misses the coefficient from the power rule.', 'Keep the original exponent as a multiplier.'],",
+      "snippet": "['x^3', 'That keeps the new power but drops the multiplier from the original exponent.', 'Keep the original exponent as a multiplier.'],",
       "extractor": "object"
     },
     {
@@ -11380,9 +11363,9 @@
       "title": "Acceleration from velocity",
       "chapter": "Unit 4: Contextual applications of differentiation",
       "field": "whyWrong",
-      "value": "That uses the constant term only.",
+      "value": "That grabs one visible term instead of evaluating the whole expression.",
       "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['-1', 'That uses the constant term only.', 'Differentiate the whole expression.'],",
+      "snippet": "['-1', 'That grabs one visible term instead of evaluating the whole expression.', 'Differentiate the whole expression.'],",
       "extractor": "object"
     },
     {
@@ -14469,51 +14452,9 @@
       "title": "Sine in a right triangle",
       "chapter": "Unit 13: Trigonometry",
       "field": "whyWrong",
-      "value": "Trig ratios are quotients here, not sums.",
+      "value": "That adds side lengths, but trig ratios compare sides by division.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['16', 'Trig ratios are quotients here, not sums.', 'Divide the lengths instead of adding them.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 1377,
-      "title": "Power rule",
-      "chapter": "Unit 2: Differentiation: definition and basic derivative rules",
-      "field": "whyWrong",
-      "value": "The exponent should decrease by one.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['3x^3', 'The exponent should decrease by one.', 'Differentiate, do not just attach a coefficient.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 1561,
-      "title": "Mean from a small set",
-      "chapter": "Unit 2: Displaying and describing quantitative data",
-      "field": "whyWrong",
-      "value": "That is the sum, not the mean.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['20', 'That is the sum, not the mean.', 'Divide by the number of observations.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 1615,
-      "title": "Correlation clue",
-      "chapter": "Unit 5: Exploring two-variable quantitative data",
-      "field": "whyWrong",
-      "value": "Correlation alone does not prove causation.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['Causation', 'Correlation alone does not prove causation.', 'First classify the association.'],",
+      "snippet": "['16', 'That adds side lengths, but trig ratios compare sides by division.', 'Divide the lengths instead of adding them.'],",
       "extractor": "object"
     },
     {
@@ -14525,38 +14466,9 @@
       "title": "Sine ratio",
       "chapter": "Unit 1: Right triangles and ratios",
       "field": "whyWrong",
-      "value": "Trig ratios are quotients here, not sums.",
+      "value": "That adds side lengths, but trig ratios compare sides by division.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['24', 'Trig ratios are quotients here, not sums.', 'Divide, do not add.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/highGenerated.ts",
-      "line": 1534,
-      "title": "Correlation cookie",
-      "chapter": "Evidence",
-      "field": "whyWrong",
-      "value": "Correlation alone does not prove causation.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['Cookies definitely cause intelligence', 'Correlation alone does not prove causation.', 'A third factor may explain both.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/mathDiagnosticsGenerated.ts",
-      "line": 126,
-      "questionId": 391008,
-      "title": "Power Rule",
-      "chapter": "Calculus Readiness",
-      "field": "whyWrong",
-      "value": "The exponent should decrease by one.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['5x^5', 'The exponent should decrease by one.', 'Bring down 5, then subtract 1 from the power.'],",
+      "snippet": "['24', 'That adds side lengths, but trig ratios compare sides by division.', 'Divide, do not add.'],",
       "extractor": "object"
     },
     {
@@ -16451,20 +16363,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 87,
-      "file": "src/data/questionCatalog/primaryBuilders.ts",
-      "line": 601,
-      "title": "Mean of a data set",
-      "chapter": "Unit 11: Data and statistics",
-      "field": "whyWrong",
-      "value": "That is the sum, not the mean.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "wrong: [['18', 'That is the sum, not the mean.', 'Divide by the number of data points.'], ['4', 'That is the smallest value, not the average.', 'Use all numbers in the set.'], ['7', 'That is close but not exact.', 'Check the arithmetic.']],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
       "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
       "line": 172,
       "questionId": 7858010,
@@ -16721,55 +16619,13 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 47,
-      "title": "Power rule",
-      "chapter": "Unit 2: Differentiation: definition and basic derivative rules",
-      "field": "whyWrong",
-      "value": "The exponent should decrease by one.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['3x^3', 'The exponent should decrease by one.', 'Differentiate, do not just attach a coefficient.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 273,
-      "title": "Mean from a small set",
-      "chapter": "Unit 2: Displaying and describing quantitative data",
-      "field": "whyWrong",
-      "value": "That is the sum, not the mean.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['20', 'That is the sum, not the mean.', 'Divide by the number of observations.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 334,
-      "title": "Correlation clue",
-      "chapter": "Unit 5: Exploring two-variable quantitative data",
-      "field": "whyWrong",
-      "value": "Correlation alone does not prove causation.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['Causation', 'Correlation alone does not prove causation.', 'First classify the association.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
       "line": 552,
       "title": "Sine ratio",
       "chapter": "Unit 1: Right triangles and ratios",
       "field": "whyWrong",
-      "value": "Trig ratios are quotients here, not sums.",
+      "value": "That adds side lengths, but trig ratios compare sides by division.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['24', 'Trig ratios are quotients here, not sums.', 'Divide, do not add.'],",
+      "snippet": "['24', 'That adds side lengths, but trig ratios compare sides by division.', 'Divide, do not add.'],",
       "extractor": "object"
     },
     {
@@ -18288,9 +18144,9 @@
       "title": "Creative algebra lab",
       "chapter": "Unit 17: Creativity in algebra",
       "field": "distractor",
-      "value": "Ignore the result and start a different unit",
+      "value": "Keep the impossible result without checking the model",
       "detail": "Wrong answer is about answering strategy rather than content.",
-      "snippet": "['Ignore the result and start a different unit', 'The point is to understand what went wrong here.', 'Use the impossible answer as a clue to debug the model.'],",
+      "snippet": "['Keep the impossible result without checking the model', 'An impossible answer is a signal to debug the setup, not a result to accept.', 'Trace the variables and assumptions until the context and calculation agree.'],",
       "extractor": "object"
     },
     {
