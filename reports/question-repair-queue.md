@@ -1,6 +1,6 @@
 # Question Repair Queue
 
-Generated on 2026-06-01T09:20:53.668Z.
+Generated on 2026-06-01T09:26:26.959Z.
 
 Only wired-in course questions are included. Rows are ranked by authored-learning priority and filtered to priority >= 30: thin solutions, generic hints, missing/template lessons, meta distractors, missing alternate prompts, and missing challenge ratings.
 
