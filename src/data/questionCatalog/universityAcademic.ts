@@ -145,8 +145,23 @@ function philosophyLesson(question: Question): string {
   return `In philosophy, "${question.title}" is useful because it names a recurring question, argument pattern, or debate. Here the key idea is: ${question.solution}. Use the wording of the prompt to decide whether it is asking for a definition, an example, or the claim a philosopher is using the term to make.`
 }
 
+function normalizePhilosophyChapter(question: Question): Question {
+  const chapterMap: Record<string, string> = {
+    'Knowledge and Skepticism': 'Epistemology',
+    'Ethics and Moral Theory': 'Ethics',
+    'Ethical Inquiry': 'Ethics',
+    'Branches of Philosophy': 'Doing Philosophy',
+    'Arguments': 'Doing Philosophy',
+    'Philosophical Logic': 'Doing Philosophy',
+    'Justice, Power, and Political Philosophy': 'Political Philosophy',
+    'Mind, Consciousness, and AI': 'Philosophy of Mind',
+  }
+  const mappedChapter = chapterMap[question.chapter]
+  return mappedChapter ? { ...question, chapter: mappedChapter } : question
+}
+
 function enrichPhilosophyQuestions(questions: Question[]): Question[] {
-  return questions.map((question) => ({
+  return questions.map(normalizePhilosophyChapter).map((question) => ({
     ...question,
     prompt: rewritePhilosophyFragmentPrompt(question),
     alternatePrompts: {
