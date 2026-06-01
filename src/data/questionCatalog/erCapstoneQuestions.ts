@@ -400,7 +400,7 @@ export const erCapstoneQuestions: Question[] = [
     'Model the stand-alone DiagnostixAI revenue at the ~$30M run-rate and disclose synergy revenue as a separate upside scenario — synergies are real but rarely arrive on management\'s timeline; the base case should not assume them and the upside should size them explicitly',
     [
       ['Bake synergy revenue into the base case at management\'s guided pace', 'Baking management-guided synergies into the base case is the canonical M&A modeling mistake. Synergies routinely slip 6–12 months and miss the guided magnitude; the base case should not depend on them.'],
-      ['Ignore synergies entirely since they cannot be modeled precisely', 'Ignoring synergies entirely throws away the strategic logic of the acquisition. The right move is to model them as a separate scenario with explicit assumptions, not to omit them.'],
+      ['Exclude synergy revenue from every case because management timing is uncertain', 'Leaving synergies out entirely throws away the strategic logic of the acquisition. The right move is to model them as a separate scenario with explicit assumptions, not to omit them.'],
       ['Model synergies as a permanent uplift to organic growth rates across all years', 'Treating synergies as a permanent organic uplift conflates inorganic strategy with organic execution. The decomposition has to stay clean — synergies belong on their own row, not inside the organic line.'],
     ],
     'Acquisition synergies belong in a separate scenario row, not in the base case. For MHSY and DiagnostixAI, the discipline is to base-case the stand-alone $30M run-rate and use the synergy scenario to size upside — keeping the organic thesis clean and the inorganic upside legible.'),
@@ -487,7 +487,7 @@ export const erCapstoneQuestions: Question[] = [
     [
       ['Use an exit-multiple terminal value at the average historical EV/sales of healthcare IT comps', 'Exit-multiple terminal values are circular when the multiple comparison is the primary methodology — using a multiple to validate a multiple does not add new information. Gordon Growth gives the DCF independent content.'],
       ['Run a 10-year explicit forecast with no terminal value to avoid the terminal value sensitivity issue', 'A 10-year explicit forecast at this stage has unmodelable years 6–10 and still has to handle the residual. Terminal value sensitivity is a feature of DCF, not a bug to engineer around.'],
-      ['Skip the DCF entirely since multiples are the primary methodology and DCF is unreliable for growth companies', 'Skipping the DCF as a cross-check leaves the football field without a fundamentals anchor. Even an imprecise DCF disciplines the multiple analysis by surfacing what implied growth and margins the multiple actually requires.'],
+      ['Rely only on the trading multiple because healthcare IT investors quote the sector that way', 'Dropping the DCF as a cross-check leaves the football field without a fundamentals anchor. Even an imprecise DCF disciplines the multiple analysis by surfacing what implied growth and margins the multiple actually requires.'],
     ],
     'DCF in an initiation note is a cross-check, not the primary, but the construction still has to be defensible. For MHSY, a 5-year explicit forecast plus Gordon Growth terminal, with sensitivity to WACC and terminal growth, gives the buy-side a fundamentals anchor for the multiple-based fair value.'),
 
@@ -546,7 +546,7 @@ export const erCapstoneQuestions: Question[] = [
     'Walk through the implied long-term growth and margin in each method and show where they differ — the multiple-based value usually implies modestly higher long-term growth than the DCF terminal, which is informative about where the optimistic comps are pricing the segment',
     [
       ['Average the two methodologies and report $56 as the target', 'Averaging without explaining the gap loses the most useful part of the comparison. The gap between methodologies tells you something about how the comp set is pricing growth versus what the DCF terminal assumes.'],
-      ['Pick the methodology with the lower fair value to be conservative', 'Conservatism-by-selection is not analysis. The right move is to explain why the methodologies differ, not to pick the lower number and pretend that is rigor.'],
+      ['Use the lower fair value and describe the choice as conservatism', 'Conservatism-by-selection is not analysis. The right move is to explain why the methodologies differ, not to choose the lower number and pretend that is rigor.'],
       ['Treat the gap as noise and pick the multiple-based value since multiples are the primary methodology', 'Calling the gap noise without explanation skips the most informative comparison in the football field. The DCF-multiple gap is signal, not noise — it tells the buy-side something about the comp set\'s implied assumptions.'],
     ],
     'When DCF and multiple-based valuations disagree, the gap itself is informative. For MHSY, walking through the implied growth and margin in each — and explaining where they diverge — is what separates a rigorous note from one that reports two numbers and a target.'),
