@@ -170,7 +170,7 @@ export const colGetReadyForSatPrepMathHigh103TopUpBQuestions: Question[] = makeQ
     correct: '(x + 3)(x + 4)',
     wrong: [
       miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7, so the middle term is wrong.', 'You need two numbers that multiply to 12 AND add to 7.'),
-      miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers sum to the middle coefficient.'),
+      miss('(x + 1)(x + 12)', 'A quick expansion gives x^2 + 13x + 12, so this pair makes the middle coefficient far too large.', 'Check that the two numbers sum to the middle coefficient.'),
       miss('(x - 3)(x - 4)', 'These give a middle term of minus 7x, not plus 7x.', 'Both signs should be positive to get +7x and +12.'),
     ],
     lesson: 'To factor x^2 + bx + c, find two numbers that multiply to c and add to b. Here you need a product of 12 and a sum of 7: the numbers 3 and 4 work. So the trinomial factors as (x + 3)(x + 4). Always check both the product and the sum.',

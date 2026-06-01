@@ -242,7 +242,7 @@ export const gcseMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank('Hig
     correct: '(x + 3)(x + 4)',
     wrong: [
       miss('(x + 2)(x + 6)', 'These factors multiply to 12 but add to 8, not 7.', 'You need two numbers with product 12 and sum 7.'),
-      miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers add to the coefficient of x.'),
+      miss('(x + 1)(x + 12)', 'This factor pair would expand with a 13x middle term, so it does not match the coefficient of x.', 'Check that the two numbers add to the coefficient of x.'),
       miss('(x - 3)(x - 4)', 'These give +12 but a middle term of -7x, not +7x.', 'For a positive middle term, both numbers should be positive.'),
     ],
     lesson: 'To factorise x^2 + bx + c, find two numbers that multiply to c and add to b. Here 3 and 4 multiply to 12 and add to 7, so x^2 + 7x + 12 = (x + 3)(x + 4).',

@@ -73,7 +73,7 @@ export const colEurekaMathAlgebraIiHigh103TopUpAQuestions: Question[] = makeQues
     correct: '(x + 3)(x + 4)',
     wrong: [
       miss('(x + 2)(x + 6)', 'Although 2 + 6 = 8, the middle coefficient must be 7, and 2 * 6 = 12 but the sum is wrong.', 'Find two numbers that both multiply to 12 and add to 7.'),
-      miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'The two numbers must sum to the middle coefficient.'),
+      miss('(x + 1)(x + 12)', 'The constant would be 12, but the cross terms make 13x, not the 7x in the original expression.', 'The two numbers must sum to the middle coefficient.'),
       miss('(x - 3)(x - 4)', 'These give a +12 constant but a -7x middle term, not +7x.', 'Both factors should be positive here.'),
     ],
     lesson: 'To factor x^2 + bx + c, find two numbers that multiply to c and add to b. For x^2 + 7x + 12, the numbers 3 and 4 multiply to 12 and add to 7.',

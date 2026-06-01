@@ -354,8 +354,8 @@ export const colAlgebra1NyNextGenHigh103TopUpBQuestions: Question[] = makeQuesti
     mentorHint: 'The two numbers must multiply to 12 AND add to 7.',
     correct: '(x + 3)(x + 4)',
     wrong: [
-      miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'The two numbers must multiply to 12 AND add to 7.'),
-      miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the pair sums to the middle coefficient.'),
+      miss('(x + 2)(x + 6)', 'FOIL would give x^2 + 8x + 12, so the constant is right but the middle term is too large.', 'The two numbers must multiply to 12 AND add to 7.'),
+      miss('(x + 1)(x + 12)', 'This pair uses factors of 12, but FOIL would produce a 13x middle term instead of 7x.', 'Check that the pair sums to the middle coefficient.'),
       miss('(x - 3)(x - 4)', 'Both negatives multiply to +12 but add to -7, giving the wrong middle term.', 'Since the middle term is positive, both factors should be positive.'),
     ],
     lesson: 'To factor x^2 + bx + c, find two numbers that multiply to c and add to b. For x^2 + 7x + 12, the numbers 3 and 4 multiply to 12 and add to 7, giving (x + 3)(x + 4). Always verify both the product and the sum.',

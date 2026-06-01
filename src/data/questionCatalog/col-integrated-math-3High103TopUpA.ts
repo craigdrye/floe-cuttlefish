@@ -75,7 +75,7 @@ export const colIntegratedMath3High103TopUpAQuestions: Question[] = makeQuestion
     correct: '(x + 3)(x + 4)',
     wrong: [
       miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7; you need a sum of 7.', 'Find two numbers that multiply to 12 and add to 7.'),
-      miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two factors of 12 also add to the middle coefficient.'),
+      miss('(x + 1)(x + 12)', 'The product test passes, but the inside/outside terms add to 13x instead of 7x.', 'Check that the two factors of 12 also add to the middle coefficient.'),
       miss('(x − 3)(x − 4)', 'These give +12 but a middle term of −7x, not +7x.', 'Both numbers must be positive to give +7x.'),
     ],
     lesson: 'To factor x^2 + bx + c with leading coefficient 1, find two numbers whose product is c and whose sum is b. Here we need a product of 12 and a sum of 7, which is 3 and 4. So x^2 + 7x + 12 = (x + 3)(x + 4). Always check by expanding.',

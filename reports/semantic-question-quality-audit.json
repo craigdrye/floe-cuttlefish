@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-01T07:39:06.162Z",
+  "generatedAt": "2026-06-01T07:40:56.194Z",
   "summary": {
     "filesScanned": 758,
     "questionsScanned": 56989,
     "extractedQuestionRecords": 57146,
     "skippedNonPlayablePlaceholders": 157,
     "distinctQuestionIds": 38778,
-    "totalIssues": 303,
-    "jsonIssuesStored": 303,
-    "duplicateWhyWrongGroups": 43
+    "totalIssues": 291,
+    "jsonIssuesStored": 291,
+    "duplicateWhyWrongGroups": 41
   },
   "flagCounts": {
-    "repeated-why-wrong": 144,
+    "repeated-why-wrong": 132,
     "obvious-irrelevant-distractor": 40,
     "meta-distractor": 119
   },
@@ -777,68 +777,6 @@
   ],
   "duplicateWhyWrongGroups": [
     {
-      "text": "These multiply to 12 but add to 13, not 7.",
-      "count": 7,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/col-algebra-1-ny-next-genHigh103TopUpB.ts",
-          "line": 358,
-          "questionId": 7951521,
-          "title": "Factoring a simple trinomial",
-          "chapter": "Quadratics: Multiplying & factoring",
-          "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the pair sums to the middle coefficient.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-algebra-basicsHigh103TopUpB.ts",
-          "line": 324,
-          "questionId": 7961519,
-          "title": "Factoring a simple trinomial",
-          "chapter": "Quadratics and polynomials",
-          "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers add to the middle coefficient.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-eureka-math-algebra-iiHigh103TopUpA.ts",
-          "line": 76,
-          "questionId": 7964004,
-          "title": "Factor a trinomial",
-          "chapter": "Module 1: Factoring polynomials",
-          "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'The two numbers must sum to the middle coefficient.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-algebra-2High103TopUpB.ts",
-          "line": 319,
-          "questionId": 7958520,
-          "title": "Factoring a quadratic trinomial",
-          "chapter": "Factoring quadratics",
-          "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check the sum of the constants against the middle coefficient.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-sat-prep-mathHigh103TopUpB.ts",
-          "line": 173,
-          "questionId": 7980511,
-          "title": "Factoring a Trinomial",
-          "chapter": "Quadratics and polynomials",
-          "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers sum to the middle coefficient.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-integrated-math-3High103TopUpA.ts",
-          "line": 78,
-          "questionId": 7952004,
-          "title": "Factor a quadratic trinomial",
-          "chapter": "Polynomial factorization",
-          "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two factors of 12 also add to the middle coefficient.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/gcseMathsHigh103TopUpA.ts",
-          "line": 245,
-          "questionId": 7969015,
-          "title": "Factorising a quadratic",
-          "chapter": "Algebra: Expressions and Manipulation",
-          "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers add to the coefficient of x.'),"
-        }
-      ]
-    },
-    {
       "text": "This is a plausible statistics distractor, but it misses the condition or interpretation in the prompt.",
       "count": 6,
       "examples": [
@@ -935,52 +873,6 @@
           "title": "Using a Pythagorean identity",
           "chapter": "Maths: Trigonometric Functions",
           "snippet": "miss('-4/5', 'In the first quadrant cosine is positive, so the negative root is rejected.', 'All trig functions are positive in the first quadrant.'),"
-        }
-      ]
-    },
-    {
-      "text": "These multiply to 12 but add to 8, not 7.",
-      "count": 5,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/col-algebra-1-ny-next-genHigh103TopUpB.ts",
-          "line": 357,
-          "questionId": 7951521,
-          "title": "Factoring a simple trinomial",
-          "chapter": "Quadratics: Multiplying & factoring",
-          "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'The two numbers must multiply to 12 AND add to 7.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-algebra-basicsHigh103TopUpB.ts",
-          "line": 323,
-          "questionId": 7961519,
-          "title": "Factoring a simple trinomial",
-          "chapter": "Quadratics and polynomials",
-          "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'Find two numbers that multiply to 12 and add to 7.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-eureka-math-algebra-iHigh103TopUpB.ts",
-          "line": 262,
-          "questionId": 7962516,
-          "title": "Factoring a quadratic trinomial",
-          "chapter": "Module 4: Polynomial operations",
-          "snippet": "miss('(x - 2)(x - 6)', 'These multiply to +12 but add to -8, not -7.', 'Find a factor pair of 12 whose sum is exactly 7.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-algebra-2High103TopUpB.ts",
-          "line": 318,
-          "questionId": 7958520,
-          "title": "Factoring a quadratic trinomial",
-          "chapter": "Factoring quadratics",
-          "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'You need two numbers that multiply to 12 and add to 7.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-integrated-math-2High103TopUpA.ts",
-          "line": 137,
-          "questionId": 7949008,
-          "title": "Factor a simple trinomial",
-          "chapter": "Factorization",
-          "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'Find two numbers that both multiply to 12 and add to 7.'),"
         }
       ]
     },
@@ -2127,115 +2019,70 @@
           "snippet": "miss('8', 'This is the largest number, not the average.', 'Add all three and share equally between three.'),"
         }
       ]
+    },
+    {
+      "text": "This multiplied the exponents instead of adding them.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-algebra-1-ny-next-genHigh103TopUpA.ts",
+          "line": 611,
+          "questionId": 7951036,
+          "title": "Product of powers",
+          "chapter": "Exponents and exponential expressions",
+          "snippet": "miss('x^15', 'This multiplied the exponents instead of adding them.', 'When multiplying like bases, add the exponents.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-algebra-1High103TopUpB.ts",
+          "line": 534,
+          "questionId": 7956534,
+          "title": "Product of powers",
+          "chapter": "Exponents and roots",
+          "snippet": "miss('3^8', 'This multiplied the exponents instead of adding them.', 'When multiplying powers with the same base, add the exponents.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-algebra-2High103TopUpA.ts",
+          "line": 121,
+          "questionId": 7958007,
+          "title": "Multiplying powers with the same base",
+          "chapter": "Polynomial arithmetic",
+          "snippet": "miss('x^28', 'This multiplied the exponents instead of adding them.', 'When multiplying like bases, exponents add, not multiply.'),"
+        }
+      ]
+    },
+    {
+      "text": "This multiplies the components rather than adding them.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-gcse-maths-ukHigh103TopUpB.ts",
+          "line": 347,
+          "questionId": 7972521,
+          "title": "Adding column vectors",
+          "chapter": "Vectors",
+          "snippet": "miss('(-6, -4)', 'This multiplies the components rather than adding them.', 'Vector addition adds component to component.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-precalculusHigh103TopUpA.ts",
+          "line": 570,
+          "questionId": 7954036,
+          "title": "Adding vectors component-wise",
+          "chapter": "Vectors",
+          "snippet": "miss('(-3, -10)', 'This multiplies the components rather than adding them.', 'Vector addition combines components by addition, not multiplication.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/gcseMathsHigh103TopUpB.ts",
+          "line": 187,
+          "questionId": 7969511,
+          "title": "Adding column vectors",
+          "chapter": "Vectors",
+          "snippet": "miss('(-3, -10)', 'This multiplies the components rather than adding them.', 'Vector addition combines components by adding, not multiplying.'),"
+        }
+      ]
     }
   ],
   "examplesByFlag": {
     "repeated-why-wrong": [
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/col-algebra-1-ny-next-genHigh103TopUpB.ts",
-        "line": 358,
-        "questionId": 7951521,
-        "title": "Factoring a simple trinomial",
-        "chapter": "Quadratics: Multiplying & factoring",
-        "field": "whyWrong",
-        "value": "These multiply to 12 but add to 13, not 7.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the pair sums to the middle coefficient.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/col-algebra-basicsHigh103TopUpB.ts",
-        "line": 324,
-        "questionId": 7961519,
-        "title": "Factoring a simple trinomial",
-        "chapter": "Quadratics and polynomials",
-        "field": "whyWrong",
-        "value": "These multiply to 12 but add to 13, not 7.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers add to the middle coefficient.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/col-eureka-math-algebra-iiHigh103TopUpA.ts",
-        "line": 76,
-        "questionId": 7964004,
-        "title": "Factor a trinomial",
-        "chapter": "Module 1: Factoring polynomials",
-        "field": "whyWrong",
-        "value": "These multiply to 12 but add to 13, not 7.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'The two numbers must sum to the middle coefficient.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/col-get-ready-for-algebra-2High103TopUpB.ts",
-        "line": 319,
-        "questionId": 7958520,
-        "title": "Factoring a quadratic trinomial",
-        "chapter": "Factoring quadratics",
-        "field": "whyWrong",
-        "value": "These multiply to 12 but add to 13, not 7.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check the sum of the constants against the middle coefficient.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/col-get-ready-for-sat-prep-mathHigh103TopUpB.ts",
-        "line": 173,
-        "questionId": 7980511,
-        "title": "Factoring a Trinomial",
-        "chapter": "Quadratics and polynomials",
-        "field": "whyWrong",
-        "value": "These multiply to 12 but add to 13, not 7.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers sum to the middle coefficient.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/col-integrated-math-3High103TopUpA.ts",
-        "line": 78,
-        "questionId": 7952004,
-        "title": "Factor a quadratic trinomial",
-        "chapter": "Polynomial factorization",
-        "field": "whyWrong",
-        "value": "These multiply to 12 but add to 13, not 7.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two factors of 12 also add to the middle coefficient.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/gcseMathsHigh103TopUpA.ts",
-        "line": 245,
-        "questionId": 7969015,
-        "title": "Factorising a quadratic",
-        "chapter": "Algebra: Expressions and Manipulation",
-        "field": "whyWrong",
-        "value": "These multiply to 12 but add to 13, not 7.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers add to the coefficient of x.'),",
-        "extractor": "object"
-      },
       {
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
@@ -2270,51 +2117,6 @@
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
         "priority": 89,
-        "file": "src/data/questionCatalog/col-algebra-1-ny-next-genHigh103TopUpB.ts",
-        "line": 357,
-        "questionId": 7951521,
-        "title": "Factoring a simple trinomial",
-        "chapter": "Quadratics: Multiplying & factoring",
-        "field": "whyWrong",
-        "value": "These multiply to 12 but add to 8, not 7.",
-        "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'The two numbers must multiply to 12 AND add to 7.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 89,
-        "file": "src/data/questionCatalog/col-algebra-basicsHigh103TopUpB.ts",
-        "line": 323,
-        "questionId": 7961519,
-        "title": "Factoring a simple trinomial",
-        "chapter": "Quadratics and polynomials",
-        "field": "whyWrong",
-        "value": "These multiply to 12 but add to 8, not 7.",
-        "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'Find two numbers that multiply to 12 and add to 7.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 89,
-        "file": "src/data/questionCatalog/col-eureka-math-algebra-iHigh103TopUpB.ts",
-        "line": 262,
-        "questionId": 7962516,
-        "title": "Factoring a quadratic trinomial",
-        "chapter": "Module 4: Polynomial operations",
-        "field": "whyWrong",
-        "value": "These multiply to +12 but add to -8, not -7.",
-        "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('(x - 2)(x - 6)', 'These multiply to +12 but add to -8, not -7.', 'Find a factor pair of 12 whose sum is exactly 7.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 89,
         "file": "src/data/questionCatalog/col-eureka-math-precalculusUniv103TopUp.ts",
         "line": 108,
         "questionId": 7734006,
@@ -2324,21 +2126,6 @@
         "value": "In the first quadrant cosine is positive, so the negative root is rejected.",
         "detail": "Same normalized whyWrong appears 5 times.",
         "snippet": "miss('-4/5', 'In the first quadrant cosine is positive, so the negative root is rejected.', 'Use the quadrant to choose the sign of the square root.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 89,
-        "file": "src/data/questionCatalog/col-get-ready-for-algebra-2High103TopUpB.ts",
-        "line": 318,
-        "questionId": 7958520,
-        "title": "Factoring a quadratic trinomial",
-        "chapter": "Factoring quadratics",
-        "field": "whyWrong",
-        "value": "These multiply to 12 but add to 8, not 7.",
-        "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'You need two numbers that multiply to 12 and add to 7.'),",
         "extractor": "object"
       },
       {
@@ -2369,21 +2156,6 @@
         "value": "In the first quadrant cosine is positive, so the negative root is rejected.",
         "detail": "Same normalized whyWrong appears 5 times.",
         "snippet": "miss('-4/5', 'In the first quadrant cosine is positive, so the negative root is rejected.', 'All trig functions are positive in quadrant I.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 89,
-        "file": "src/data/questionCatalog/col-integrated-math-2High103TopUpA.ts",
-        "line": 137,
-        "questionId": 7949008,
-        "title": "Factor a simple trinomial",
-        "chapter": "Factorization",
-        "field": "whyWrong",
-        "value": "These multiply to 12 but add to 8, not 7.",
-        "detail": "Same normalized whyWrong appears 5 times.",
-        "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'Find two numbers that both multiply to 12 and add to 7.'),",
         "extractor": "object"
       },
       {
@@ -3929,6 +3701,186 @@
         "value": "This adds numerators and denominators directly, which is not how fractions add.",
         "detail": "Same normalized whyWrong appears 3 times.",
         "snippet": "miss('2/7', 'This adds numerators and denominators directly, which is not how fractions add.', 'Find a common denominator before adding.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-pre-algebraHigh103TopUpB.ts",
+        "line": 31,
+        "questionId": 7960501,
+        "title": "Negative exponent",
+        "chapter": "Exponents and Scientific Notation",
+        "field": "whyWrong",
+        "value": "A negative exponent does not make the result negative; it means a reciprocal.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('-8', 'A negative exponent does not make the result negative; it means a reciprocal.', 'A negative exponent flips the base into a fraction.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-pre-algebraHigh103TopUpB.ts",
+        "line": 184,
+        "questionId": 7960511,
+        "title": "Discount then total",
+        "chapter": "Percentages",
+        "field": "whyWrong",
+        "value": "That is the discount amount, not the price you pay.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('$18', 'That is the discount amount, not the price you pay.', 'Subtract the discount from the original price.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-precalculusHigh103TopUpA.ts",
+        "line": 570,
+        "questionId": 7954036,
+        "title": "Adding vectors component-wise",
+        "chapter": "Vectors",
+        "field": "whyWrong",
+        "value": "This multiplies the components rather than adding them.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('(-3, -10)', 'This multiplies the components rather than adding them.', 'Vector addition combines components by addition, not multiplication.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-statistics-probabilityHigh103TopUpA.ts",
+        "line": 519,
+        "questionId": 7955033,
+        "title": "Independent events",
+        "chapter": "Probability",
+        "field": "whyWrong",
+        "value": "There are four equally likely outcomes (HH, HT, TH, TT), not three.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('1/3', 'There are four equally likely outcomes (HH, HT, TH, TT), not three.', 'List all ordered outcomes; HT and TH are different.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-trigonometryHigh103TopUpB.ts",
+        "line": 525,
+        "questionId": 7953533,
+        "title": "Basic sine equation",
+        "chapter": "Solving Trigonometric Equations",
+        "field": "whyWrong",
+        "value": "Sine is also positive in the second quadrant, giving a second solution.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('x = pi/6 only', 'Sine is also positive in the second quadrant, giving a second solution.', 'There are two angles in [0, 2pi) with the same positive sine.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-word-buildersPrim103TopUp.ts",
+        "line": 337,
+        "questionId": 7833021,
+        "title": "The suffix \"ful\"",
+        "chapter": "Suffixes",
+        "field": "whyWrong",
+        "value": "The suffix ful means full of, not without.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('Without help', 'The suffix ful means full of, not without.', 'The suffix that means without is less.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-word-buildersPrim103TopUp.ts",
+        "line": 352,
+        "questionId": 7833022,
+        "title": "The suffix \"less\"",
+        "chapter": "Suffixes",
+        "field": "whyWrong",
+        "value": "The suffix less means without, not full of.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('Full of fear', 'The suffix less means without, not full of.', 'The suffix that means full of is ful.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/colIntegratedMath2HighTopUp.ts",
+        "line": 318,
+        "questionId": 7551021,
+        "title": "Perpendicular slope",
+        "chapter": "Coordinate Geometry, Proof, and Conics",
+        "field": "whyWrong",
+        "value": "You changed the sign but did not take the reciprocal.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('-2/3', 'You changed the sign but did not take the reciprocal.', 'Perpendicular slope is the negative reciprocal, so flip the fraction too.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/elevenPlusPrim103TopUp.ts",
+        "line": 630,
+        "questionId": 7847040,
+        "title": "Suffix meaning",
+        "chapter": "English - Vocabulary",
+        "field": "whyWrong",
+        "value": "The suffix \"less\" means without, not full of.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('full of care', 'The suffix \"less\" means without, not full of.', 'Think about what \"less\" takes away.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/elevenPlusPrim103TopUp.ts",
+        "line": 848,
+        "questionId": 7847054,
+        "title": "Finding the average",
+        "chapter": "Maths - Measures and Data",
+        "field": "whyWrong",
+        "value": "This is the largest number, not the average.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('8', 'This is the largest number, not the average.', 'Add all three and share equally between three.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/gcseMathsHigh103TopUpB.ts",
+        "line": 187,
+        "questionId": 7969511,
+        "title": "Adding column vectors",
+        "chapter": "Vectors",
+        "field": "whyWrong",
+        "value": "This multiplies the components rather than adding them.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('(-3, -10)', 'This multiplies the components rather than adding them.', 'Vector addition combines components by adding, not multiplying.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/mathDiagnosticsUniv103TopUpA.ts",
+        "line": 347,
+        "questionId": 7701022,
+        "title": "Parallel and Perpendicular Lines",
+        "chapter": "Linear Functions and Graphs",
+        "field": "whyWrong",
+        "value": "You changed the sign but did not take the reciprocal.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('-2/3', 'You changed the sign but did not take the reciprocal.', 'Both flip and negate are required.'),",
         "extractor": "object"
       }
     ],
@@ -6295,111 +6247,6 @@
     {
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
-      "priority": 91,
-      "file": "src/data/questionCatalog/col-algebra-1-ny-next-genHigh103TopUpB.ts",
-      "line": 358,
-      "questionId": 7951521,
-      "title": "Factoring a simple trinomial",
-      "chapter": "Quadratics: Multiplying & factoring",
-      "field": "whyWrong",
-      "value": "These multiply to 12 but add to 13, not 7.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the pair sums to the middle coefficient.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 91,
-      "file": "src/data/questionCatalog/col-algebra-basicsHigh103TopUpB.ts",
-      "line": 324,
-      "questionId": 7961519,
-      "title": "Factoring a simple trinomial",
-      "chapter": "Quadratics and polynomials",
-      "field": "whyWrong",
-      "value": "These multiply to 12 but add to 13, not 7.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers add to the middle coefficient.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 91,
-      "file": "src/data/questionCatalog/col-eureka-math-algebra-iiHigh103TopUpA.ts",
-      "line": 76,
-      "questionId": 7964004,
-      "title": "Factor a trinomial",
-      "chapter": "Module 1: Factoring polynomials",
-      "field": "whyWrong",
-      "value": "These multiply to 12 but add to 13, not 7.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'The two numbers must sum to the middle coefficient.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 91,
-      "file": "src/data/questionCatalog/col-get-ready-for-algebra-2High103TopUpB.ts",
-      "line": 319,
-      "questionId": 7958520,
-      "title": "Factoring a quadratic trinomial",
-      "chapter": "Factoring quadratics",
-      "field": "whyWrong",
-      "value": "These multiply to 12 but add to 13, not 7.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check the sum of the constants against the middle coefficient.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 91,
-      "file": "src/data/questionCatalog/col-get-ready-for-sat-prep-mathHigh103TopUpB.ts",
-      "line": 173,
-      "questionId": 7980511,
-      "title": "Factoring a Trinomial",
-      "chapter": "Quadratics and polynomials",
-      "field": "whyWrong",
-      "value": "These multiply to 12 but add to 13, not 7.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers sum to the middle coefficient.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 91,
-      "file": "src/data/questionCatalog/col-integrated-math-3High103TopUpA.ts",
-      "line": 78,
-      "questionId": 7952004,
-      "title": "Factor a quadratic trinomial",
-      "chapter": "Polynomial factorization",
-      "field": "whyWrong",
-      "value": "These multiply to 12 but add to 13, not 7.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two factors of 12 also add to the middle coefficient.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 91,
-      "file": "src/data/questionCatalog/gcseMathsHigh103TopUpA.ts",
-      "line": 245,
-      "questionId": 7969015,
-      "title": "Factorising a quadratic",
-      "chapter": "Algebra: Expressions and Manipulation",
-      "field": "whyWrong",
-      "value": "These multiply to 12 but add to 13, not 7.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers add to the coefficient of x.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
       "priority": 90,
       "file": "src/data/questionCatalog/openIntroStatsSlidesImported.ts",
       "line": 291,
@@ -6431,51 +6278,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 89,
-      "file": "src/data/questionCatalog/col-algebra-1-ny-next-genHigh103TopUpB.ts",
-      "line": 357,
-      "questionId": 7951521,
-      "title": "Factoring a simple trinomial",
-      "chapter": "Quadratics: Multiplying & factoring",
-      "field": "whyWrong",
-      "value": "These multiply to 12 but add to 8, not 7.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'The two numbers must multiply to 12 AND add to 7.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/col-algebra-basicsHigh103TopUpB.ts",
-      "line": 323,
-      "questionId": 7961519,
-      "title": "Factoring a simple trinomial",
-      "chapter": "Quadratics and polynomials",
-      "field": "whyWrong",
-      "value": "These multiply to 12 but add to 8, not 7.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'Find two numbers that multiply to 12 and add to 7.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/col-eureka-math-algebra-iHigh103TopUpB.ts",
-      "line": 262,
-      "questionId": 7962516,
-      "title": "Factoring a quadratic trinomial",
-      "chapter": "Module 4: Polynomial operations",
-      "field": "whyWrong",
-      "value": "These multiply to +12 but add to -8, not -7.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('(x - 2)(x - 6)', 'These multiply to +12 but add to -8, not -7.', 'Find a factor pair of 12 whose sum is exactly 7.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
       "file": "src/data/questionCatalog/col-eureka-math-precalculusUniv103TopUp.ts",
       "line": 108,
       "questionId": 7734006,
@@ -6485,21 +6287,6 @@
       "value": "In the first quadrant cosine is positive, so the negative root is rejected.",
       "detail": "Same normalized whyWrong appears 5 times.",
       "snippet": "miss('-4/5', 'In the first quadrant cosine is positive, so the negative root is rejected.', 'Use the quadrant to choose the sign of the square root.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/col-get-ready-for-algebra-2High103TopUpB.ts",
-      "line": 318,
-      "questionId": 7958520,
-      "title": "Factoring a quadratic trinomial",
-      "chapter": "Factoring quadratics",
-      "field": "whyWrong",
-      "value": "These multiply to 12 but add to 8, not 7.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'You need two numbers that multiply to 12 and add to 7.'),",
       "extractor": "object"
     },
     {
@@ -6530,21 +6317,6 @@
       "value": "In the first quadrant cosine is positive, so the negative root is rejected.",
       "detail": "Same normalized whyWrong appears 5 times.",
       "snippet": "miss('-4/5', 'In the first quadrant cosine is positive, so the negative root is rejected.', 'All trig functions are positive in quadrant I.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 89,
-      "file": "src/data/questionCatalog/col-integrated-math-2High103TopUpA.ts",
-      "line": 137,
-      "questionId": 7949008,
-      "title": "Factor a simple trinomial",
-      "chapter": "Factorization",
-      "field": "whyWrong",
-      "value": "These multiply to 12 but add to 8, not 7.",
-      "detail": "Same normalized whyWrong appears 5 times.",
-      "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'Find two numbers that both multiply to 12 and add to 7.'),",
       "extractor": "object"
     },
     {

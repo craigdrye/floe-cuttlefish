@@ -315,8 +315,8 @@ export const colGetReadyForAlgebra2High103TopUpBQuestions: Question[] = makeQues
     prompt: 'Factor x^2 + 7x + 12.',
     correct: '(x + 3)(x + 4)',
     wrong: [
-      miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'You need two numbers that multiply to 12 and add to 7.'),
-      miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check the sum of the constants against the middle coefficient.'),
+      miss('(x + 2)(x + 6)', 'The factors 2 and 6 give the right constant, but their sum would create 8x in the middle.', 'You need two numbers that multiply to 12 and add to 7.'),
+      miss('(x + 1)(x + 12)', 'This checks the product but not the sum: 1 + 12 would make the middle coefficient 13.', 'Check the sum of the constants against the middle coefficient.'),
       miss('(x - 3)(x - 4)', 'These give a middle term of -7x and a constant of +12, but the middle term sign is wrong.', 'The middle term is positive, so both numbers should be positive.'),
     ],
     lesson: 'To factor x^2 + bx + c, find two numbers that multiply to c and add to b. Here 3 and 4 multiply to 12 and add to 7, so x^2 + 7x + 12 = (x + 3)(x + 4). Expanding back confirms the result.',

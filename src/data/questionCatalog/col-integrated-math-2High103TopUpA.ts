@@ -134,7 +134,7 @@ export const colIntegratedMath2High103TopUpAQuestions: Question[] = makeQuestion
     prompt: 'Factor x^2 + 7x + 12.',
     correct: '(x + 3)(x + 4)',
     wrong: [
-      miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'Find two numbers that both multiply to 12 and add to 7.'),
+      miss('(x + 2)(x + 6)', '2 and 6 make the constant 12, but they would produce an 8x middle term after expansion.', 'Find two numbers that both multiply to 12 and add to 7.'),
       miss('(x + 1)(x + 12)', 'The product is 12 but the sum is 13, not the required 7.', 'Check that the two numbers add to the middle coefficient.'),
       miss('(x − 3)(x − 4)', 'Two negatives give +12 for the product but −7 for the middle term.', 'Both numbers must be positive to give +7x.'),
     ],

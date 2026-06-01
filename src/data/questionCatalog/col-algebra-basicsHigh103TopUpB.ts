@@ -320,8 +320,8 @@ export const colAlgebraBasicsHigh103TopUpBQuestions: Question[] = makeQuestionBa
     mentorHint: 'Find two numbers that multiply to 12 and add to 7.',
     correct: '(x + 3)(x + 4)',
     wrong: [
-      miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'Find two numbers that multiply to 12 and add to 7.'),
-      miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers add to the middle coefficient.'),
+      miss('(x + 2)(x + 6)', 'This would expand to x^2 + 8x + 12, so it misses the 7x middle term.', 'Find two numbers that multiply to 12 and add to 7.'),
+      miss('(x + 1)(x + 12)', 'The outside and inside products would make 13x, which overshoots the required middle term.', 'Check that the two numbers add to the middle coefficient.'),
       miss('(x - 3)(x - 4)', 'These give a positive 12 but a negative middle term of -7x.', 'Both numbers must be positive to give +7x.'),
     ],
     lesson: 'To factor x^2 + bx + c, find two numbers that multiply to c and add to b. For x^2 + 7x + 12, the numbers 3 and 4 multiply to 12 and add to 7, so the factorization is (x + 3)(x + 4).',
