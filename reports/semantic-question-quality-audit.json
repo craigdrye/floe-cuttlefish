@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-01T07:20:20.855Z",
+  "generatedAt": "2026-06-01T07:23:45.769Z",
   "summary": {
     "filesScanned": 758,
     "questionsScanned": 56989,
     "extractedQuestionRecords": 57146,
     "skippedNonPlayablePlaceholders": 157,
     "distinctQuestionIds": 38778,
-    "totalIssues": 440,
-    "jsonIssuesStored": 440,
-    "duplicateWhyWrongGroups": 78
+    "totalIssues": 420,
+    "jsonIssuesStored": 420,
+    "duplicateWhyWrongGroups": 73
   },
   "flagCounts": {
-    "repeated-why-wrong": 274,
+    "repeated-why-wrong": 255,
     "obvious-irrelevant-distractor": 45,
-    "meta-distractor": 121
+    "meta-distractor": 120
   },
   "scannedFiles": [
     "src/data/questionCatalog/adultCoursesNew.ts",
@@ -1491,142 +1491,6 @@
       ]
     },
     {
-      "text": "That grabs one visible term instead of evaluating the whole expression.",
-      "count": 4,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/highBuilders.ts",
-          "line": 2023,
-          "title": "Remainder theorem check",
-          "chapter": "Unit 3: Polynomial and rational functions",
-          "snippet": "['2', 'That grabs one visible term instead of evaluating the whole expression.', 'The remainder theorem uses the full polynomial value.'],"
-        },
-        {
-          "file": "src/data/questionCatalog/highBuilders.ts",
-          "line": 2631,
-          "title": "Acceleration from velocity",
-          "chapter": "Unit 4: Contextual applications of differentiation",
-          "snippet": "['-1', 'That grabs one visible term instead of evaluating the whole expression.', 'Differentiate the whole expression.'],"
-        },
-        {
-          "file": "src/data/questionCatalog/universityBuilders.ts",
-          "line": 798,
-          "title": "Remainder theorem check",
-          "chapter": "Unit 3: Polynomial and rational functions",
-          "snippet": "['2', 'That grabs one visible term instead of evaluating the whole expression.', 'The remainder theorem uses the full polynomial value.'],"
-        },
-        {
-          "file": "src/data/questionCatalog/universityBuilders.ts",
-          "line": 1343,
-          "title": "Acceleration from velocity",
-          "chapter": "Unit 4: Contextual applications of differentiation",
-          "snippet": "['-1', 'That grabs one visible term instead of evaluating the whole expression.', 'Differentiate the whole expression.'],"
-        }
-      ]
-    },
-    {
-      "text": "That keeps the new power but drops the multiplier from the original exponent.",
-      "count": 4,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/highBuilders.ts",
-          "line": 1376,
-          "title": "Power rule",
-          "chapter": "Unit 2: Differentiation: definition and basic derivative rules",
-          "snippet": "['x^2', 'That keeps the new power but drops the multiplier from the original exponent.', 'Use n·x^(n-1).'],"
-        },
-        {
-          "file": "src/data/questionCatalog/highBuilders.ts",
-          "line": 2594,
-          "title": "Derivative of a power",
-          "chapter": "Unit 2: Basic derivative rules",
-          "snippet": "['x^3', 'That keeps the new power but drops the multiplier from the original exponent.', 'Keep the original exponent as a multiplier.'],"
-        },
-        {
-          "file": "src/data/questionCatalog/universityBuilders.ts",
-          "line": 46,
-          "title": "Power rule",
-          "chapter": "Unit 2: Differentiation: definition and basic derivative rules",
-          "snippet": "['x^2', 'That keeps the new power but drops the multiplier from the original exponent.', 'Use n·x^(n-1).'],"
-        },
-        {
-          "file": "src/data/questionCatalog/universityBuilders.ts",
-          "line": 1299,
-          "title": "Derivative of a power",
-          "chapter": "Unit 2: Basic derivative rules",
-          "snippet": "['x^3', 'That keeps the new power but drops the multiplier from the original exponent.', 'Keep the original exponent as a multiplier.'],"
-        }
-      ]
-    },
-    {
-      "text": "That reads the rate of change as if it were the starting value.",
-      "count": 4,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/highBuilders.ts",
-          "line": 1757,
-          "title": "Slope interpretation",
-          "chapter": "Unit 13: Inference for quantitative data: slopes",
-          "snippet": "['Predicted y starts at 1.5 when x = 0', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 2.'],"
-        },
-        {
-          "file": "src/data/questionCatalog/highBuilders.ts",
-          "line": 2519,
-          "title": "Slope meaning in context",
-          "chapter": "Unit 15: Advanced regression",
-          "snippet": "['The starting score is 2.5 when no one studies', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 40.'],"
-        },
-        {
-          "file": "src/data/questionCatalog/universityBuilders.ts",
-          "line": 518,
-          "title": "Slope interpretation",
-          "chapter": "Unit 13: Inference for quantitative data: slopes",
-          "snippet": "['Predicted y starts at 1.5 when x = 0', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 2.'],"
-        },
-        {
-          "file": "src/data/questionCatalog/universityBuilders.ts",
-          "line": 1231,
-          "title": "Slope meaning in context",
-          "chapter": "Unit 15: Advanced regression",
-          "snippet": "['The starting score is 2.5 when no one studies', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 40.'],"
-        }
-      ]
-    },
-    {
-      "text": "That treats a spread as a total; this statistic needs a difference, not a sum.",
-      "count": 4,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/highBuilders.ts",
-          "line": 1577,
-          "title": "Interquartile range",
-          "chapter": "Unit 3: Summary statistics",
-          "snippet": "['32', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'IQR is an interval width, not a total.'],"
-        },
-        {
-          "file": "src/data/questionCatalog/highBuilders.ts",
-          "line": 2215,
-          "title": "Range of a data set",
-          "chapter": "Unit 2: Displaying and comparing quantitative data",
-          "snippet": "['43', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'Range is a difference.'],"
-        },
-        {
-          "file": "src/data/questionCatalog/universityBuilders.ts",
-          "line": 296,
-          "title": "Interquartile range",
-          "chapter": "Unit 3: Summary statistics",
-          "snippet": "['32', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'IQR is an interval width, not a total.'],"
-        },
-        {
-          "file": "src/data/questionCatalog/universityBuilders.ts",
-          "line": 990,
-          "title": "Range of a data set",
-          "chapter": "Unit 2: Displaying and comparing quantitative data",
-          "snippet": "['43', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'Range is a difference.'],"
-        }
-      ]
-    },
-    {
       "text": "The log of a product is a SUM of logs, not a product of logs.",
       "count": 4,
       "examples": [
@@ -2309,6 +2173,126 @@
           "title": "Empty Spots",
           "chapter": "Ten Frames and Place Value",
           "snippet": "miss('4', '4 is just one step too high; check the last count carefully.', 'Count up from 7 to 10: that is three.'),"
+        }
+      ]
+    },
+    {
+      "text": "7 is too small; it usually means one group, coin, unit, or step in the story was not counted.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
+          "line": 81,
+          "questionId": 337007,
+          "title": "If you add 3 to 5, what would be the result?",
+          "chapter": "Arithmetic Practice",
+          "snippet": "wrong: [[\"6\",\"6 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"5\",\"5 is too small; it usually means one group, coin, unit, or step in th..."
+        },
+        {
+          "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
+          "line": 121,
+          "questionId": 337011,
+          "title": "What is the solution to this problem 12-3=?",
+          "chapter": "Arithmetic Practice",
+          "snippet": "wrong: [[\"8\",\"8 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"7\",\"7 is too small; it usually means one group, coin, unit, or step in th..."
+        },
+        {
+          "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
+          "line": 205,
+          "questionId": 337019,
+          "title": "What is the square root of 144?",
+          "chapter": "Class 5 Mixed Maths",
+          "snippet": "wrong: [[\"7\",\"7 is too small; it usually means one group, coin, unit, or step in the story was not counted.\",\"Read the story once for the action, then count every group or change.\"],[\"14\",\"14 is too large; it usually means something was added twice or the q..."
+        }
+      ]
+    },
+    {
+      "text": "A clock is for time, but length is measured with tools like a ruler or tape measure.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/basicGeometryPrim103TopUpB.ts",
+          "line": 727,
+          "questionId": 7808547,
+          "title": "Choose the right tool",
+          "chapter": "Putting it together",
+          "snippet": "miss('A clock', 'A clock is for time, but length is measured with tools like a ruler or tape measure.', 'To measure length, use a ruler.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
+          "line": 472,
+          "questionId": 7851030,
+          "title": "Measuring length",
+          "chapter": "Shapes and Measurement",
+          "snippet": "miss('A clock', 'A clock is for time, but length is measured with tools like a ruler or tape measure.', 'You need a tool with marks for length.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
+          "line": 669,
+          "questionId": 7853043,
+          "title": "Measuring length",
+          "chapter": "Measurement and Time",
+          "snippet": "miss('a clock', 'a clock is for time, but length is measured with tools like a ruler or tape measure.', 'Length means how long something is.'),"
+        }
+      ]
+    },
+    {
+      "text": "A constant function graphs as a horizontal line, which is still linear.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-8th-grade-mathHigh103TopUpA.ts",
+          "line": 457,
+          "questionId": 7950029,
+          "title": "Linear versus nonlinear",
+          "chapter": "Functions",
+          "snippet": "miss('y = 10', 'A constant function graphs as a horizontal line, which is still linear.', 'Horizontal lines are linear functions.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-8th-grade-mathHigh103TopUpB.ts",
+          "line": 48,
+          "questionId": 7950502,
+          "title": "Linear vs nonlinear",
+          "chapter": "Functions",
+          "snippet": "miss('y = 7', 'A constant function graphs as a horizontal line, which is still linear.', 'A horizontal line is a straight line, hence linear.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-8th-grade-mathHighTopUp.ts",
+          "line": 351,
+          "questionId": 7503022,
+          "title": "Linear vs nonlinear",
+          "chapter": "Functions and Algebra Readiness",
+          "snippet": "miss('y = 7', 'A constant function graphs as a horizontal line, which is still linear.', 'Horizontal lines are linear functions.'),"
+        }
+      ]
+    },
+    {
+      "text": "A negative exponent does not make the result negative; it means a reciprocal.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-algebra-2High103TopUpB.ts",
+          "line": 182,
+          "questionId": 7958511,
+          "title": "Negative exponent",
+          "chapter": "Negative and zero exponents",
+          "snippet": "miss('-8', 'A negative exponent does not make the result negative; it means a reciprocal.', 'A negative exponent gives 1 over the positive power.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-sat-prep-mathHigh103TopUpB.ts",
+          "line": 513,
+          "questionId": 7980535,
+          "title": "Negative Exponents",
+          "chapter": "Numbers and operations",
+          "snippet": "miss('-8', 'A negative exponent does not make the result negative; it means a reciprocal.', 'Negative exponents create fractions, not negative values.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-pre-algebraHigh103TopUpB.ts",
+          "line": 31,
+          "questionId": 7960501,
+          "title": "Negative exponent",
+          "chapter": "Exponents and Scientific Notation",
+          "snippet": "miss('-8', 'A negative exponent does not make the result negative; it means a reciprocal.', 'A negative exponent flips the base into a fraction.'),"
         }
       ]
     }
@@ -3729,118 +3713,6 @@
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
         "priority": 88,
-        "file": "src/data/questionCatalog/highBuilders.ts",
-        "line": 1376,
-        "title": "Power rule",
-        "chapter": "Unit 2: Differentiation: definition and basic derivative rules",
-        "field": "whyWrong",
-        "value": "That keeps the new power but drops the multiplier from the original exponent.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['x^2', 'That keeps the new power but drops the multiplier from the original exponent.', 'Use n·x^(n-1).'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/highBuilders.ts",
-        "line": 1577,
-        "title": "Interquartile range",
-        "chapter": "Unit 3: Summary statistics",
-        "field": "whyWrong",
-        "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['32', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'IQR is an interval width, not a total.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/highBuilders.ts",
-        "line": 1757,
-        "title": "Slope interpretation",
-        "chapter": "Unit 13: Inference for quantitative data: slopes",
-        "field": "whyWrong",
-        "value": "That reads the rate of change as if it were the starting value.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['Predicted y starts at 1.5 when x = 0', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 2.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/highBuilders.ts",
-        "line": 2023,
-        "title": "Remainder theorem check",
-        "chapter": "Unit 3: Polynomial and rational functions",
-        "field": "whyWrong",
-        "value": "That grabs one visible term instead of evaluating the whole expression.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['2', 'That grabs one visible term instead of evaluating the whole expression.', 'The remainder theorem uses the full polynomial value.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/highBuilders.ts",
-        "line": 2215,
-        "title": "Range of a data set",
-        "chapter": "Unit 2: Displaying and comparing quantitative data",
-        "field": "whyWrong",
-        "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['43', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'Range is a difference.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/highBuilders.ts",
-        "line": 2519,
-        "title": "Slope meaning in context",
-        "chapter": "Unit 15: Advanced regression",
-        "field": "whyWrong",
-        "value": "That reads the rate of change as if it were the starting value.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['The starting score is 2.5 when no one studies', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 40.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/highBuilders.ts",
-        "line": 2594,
-        "title": "Derivative of a power",
-        "chapter": "Unit 2: Basic derivative rules",
-        "field": "whyWrong",
-        "value": "That keeps the new power but drops the multiplier from the original exponent.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['x^3', 'That keeps the new power but drops the multiplier from the original exponent.', 'Keep the original exponent as a multiplier.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/highBuilders.ts",
-        "line": 2631,
-        "title": "Acceleration from velocity",
-        "chapter": "Unit 4: Contextual applications of differentiation",
-        "field": "whyWrong",
-        "value": "That grabs one visible term instead of evaluating the whole expression.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['-1', 'That grabs one visible term instead of evaluating the whole expression.', 'Differentiate the whole expression.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
         "file": "src/data/questionCatalog/mathDiagnosticsUniv103TopUpA.ts",
         "line": 197,
         "questionId": 7701012,
@@ -3960,118 +3832,6 @@
       {
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/universityBuilders.ts",
-        "line": 46,
-        "title": "Power rule",
-        "chapter": "Unit 2: Differentiation: definition and basic derivative rules",
-        "field": "whyWrong",
-        "value": "That keeps the new power but drops the multiplier from the original exponent.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['x^2', 'That keeps the new power but drops the multiplier from the original exponent.', 'Use n·x^(n-1).'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/universityBuilders.ts",
-        "line": 296,
-        "title": "Interquartile range",
-        "chapter": "Unit 3: Summary statistics",
-        "field": "whyWrong",
-        "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['32', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'IQR is an interval width, not a total.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/universityBuilders.ts",
-        "line": 518,
-        "title": "Slope interpretation",
-        "chapter": "Unit 13: Inference for quantitative data: slopes",
-        "field": "whyWrong",
-        "value": "That reads the rate of change as if it were the starting value.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['Predicted y starts at 1.5 when x = 0', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 2.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/universityBuilders.ts",
-        "line": 798,
-        "title": "Remainder theorem check",
-        "chapter": "Unit 3: Polynomial and rational functions",
-        "field": "whyWrong",
-        "value": "That grabs one visible term instead of evaluating the whole expression.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['2', 'That grabs one visible term instead of evaluating the whole expression.', 'The remainder theorem uses the full polynomial value.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/universityBuilders.ts",
-        "line": 990,
-        "title": "Range of a data set",
-        "chapter": "Unit 2: Displaying and comparing quantitative data",
-        "field": "whyWrong",
-        "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['43', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'Range is a difference.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/universityBuilders.ts",
-        "line": 1231,
-        "title": "Slope meaning in context",
-        "chapter": "Unit 15: Advanced regression",
-        "field": "whyWrong",
-        "value": "That reads the rate of change as if it were the starting value.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['The starting score is 2.5 when no one studies', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 40.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/universityBuilders.ts",
-        "line": 1299,
-        "title": "Derivative of a power",
-        "chapter": "Unit 2: Basic derivative rules",
-        "field": "whyWrong",
-        "value": "That keeps the new power but drops the multiplier from the original exponent.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['x^3', 'That keeps the new power but drops the multiplier from the original exponent.', 'Keep the original exponent as a multiplier.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/universityBuilders.ts",
-        "line": 1343,
-        "title": "Acceleration from velocity",
-        "chapter": "Unit 4: Contextual applications of differentiation",
-        "field": "whyWrong",
-        "value": "That grabs one visible term instead of evaluating the whole expression.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "['-1', 'That grabs one visible term instead of evaluating the whole expression.', 'Differentiate the whole expression.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
         "priority": 87,
         "file": "src/data/questionCatalog/arithmeticPrim103TopUp.ts",
         "line": 569,
@@ -4097,6 +3857,246 @@
         "value": "An obtuse angle is bigger than a right angle, not smaller.",
         "detail": "Same normalized whyWrong appears 3 times.",
         "snippet": "miss('An obtuse angle', 'An obtuse angle is bigger than a right angle, not smaller.', 'Acute angles are the small, narrow ones.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/basicGeometryPrim103TopUpB.ts",
+        "line": 727,
+        "questionId": 7808547,
+        "title": "Choose the right tool",
+        "chapter": "Putting it together",
+        "field": "whyWrong",
+        "value": "A clock is for time, but length is measured with tools like a ruler or tape measure.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('A clock', 'A clock is for time, but length is measured with tools like a ruler or tape measure.', 'To measure length, use a ruler.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/careerAgentGeneratedCredentials1.ts",
+        "line": 3176,
+        "questionId": 4102206,
+        "title": "Time adjustment",
+        "chapter": "Sales Comparison Approach",
+        "field": "whyWrong",
+        "value": "That subtracts instead of adding.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "['$864,000', 'That subtracts instead of adding.'],",
+        "extractor": "q"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
+        "line": 2174,
+        "questionId": 5110075,
+        "title": "EU AML Authority",
+        "chapter": "Applied Scenario",
+        "field": "whyWrong",
+        "value": "AMLA seat was confirmed as Frankfurt.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('Brussels, Belgium', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
+        "line": 2175,
+        "questionId": 5110075,
+        "title": "EU AML Authority",
+        "chapter": "Applied Scenario",
+        "field": "whyWrong",
+        "value": "AMLA seat was confirmed as Frankfurt.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('Paris, France', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
+        "line": 2176,
+        "questionId": 5110075,
+        "title": "EU AML Authority",
+        "chapter": "Applied Scenario",
+        "field": "whyWrong",
+        "value": "AMLA seat was confirmed as Frankfurt.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('Dublin, Ireland', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/class1MathPrim103TopUp.ts",
+        "line": 556,
+        "questionId": 7800036,
+        "title": "Sides of a triangle",
+        "chapter": "2D Shapes",
+        "field": "whyWrong",
+        "value": "2 is not enough sides to enclose the shape being described.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('2', '2 is not enough sides to enclose the shape being described.', 'A triangle needs more than two sides.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/class2MathPrim103TopUp.ts",
+        "line": 792,
+        "questionId": 7801051,
+        "title": "Continue the pattern",
+        "chapter": "Patterns and Shapes",
+        "field": "whyWrong",
+        "value": "This doubles 8 instead of adding 2.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('16', 'This doubles 8 instead of adding 2.', 'Each step adds 2, so 8 + 2 comes next.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/class3MathPrim103TopUp.ts",
+        "line": 122,
+        "questionId": 7802007,
+        "title": "Twenty divided by five",
+        "chapter": "Division facts",
+        "field": "whyWrong",
+        "value": "15 takes away 5 once, but division asks how many equal groups fit in 20.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('15', '15 takes away 5 once, but division asks how many equal groups fit in 20.', 'Ask how many 5s fit inside 20.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/class3MathPrim103TopUp.ts",
+        "line": 124,
+        "questionId": 7802007,
+        "title": "Twenty divided by five",
+        "chapter": "Division facts",
+        "field": "whyWrong",
+        "value": "100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('100', '100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.', 'Division makes smaller groups, not a bigger number.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
+        "line": 184,
+        "questionId": 7803011,
+        "title": "Matching Half",
+        "chapter": "Equivalent Fractions",
+        "field": "whyWrong",
+        "value": "3/4 covers three quarters of the shape, more than the half being asked for.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'A half is the middle, halfway between 0 and 1.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
+        "line": 532,
+        "questionId": 7803034,
+        "title": "Acute Angle",
+        "chapter": "Angles",
+        "field": "whyWrong",
+        "value": "An obtuse angle is bigger than a right angle, not smaller.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('An obtuse angle', 'An obtuse angle is bigger than a right angle, not smaller.', 'Acute angles are the small, sharp ones.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/class5MathPrim103TopUp.ts",
+        "line": 79,
+        "questionId": 7804004,
+        "title": "Top times top",
+        "chapter": "Multiplying Fractions",
+        "field": "whyWrong",
+        "value": "2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('2/6', '2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.', 'One times one is one on top.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/class5MathPrim103TopUp.ts",
+        "line": 305,
+        "questionId": 7804019,
+        "title": "Adding two box volumes",
+        "chapter": "Volume",
+        "field": "whyWrong",
+        "value": "You multiplied the volumes instead of adding them.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('80 cubic units', 'You multiplied the volumes instead of adding them.', 'Add the two volumes together.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/class6MathPrim103TopUp.ts",
+        "line": 661,
+        "questionId": 7805042,
+        "title": "Finding the Mean",
+        "chapter": "Intro Statistics",
+        "field": "whyWrong",
+        "value": "This is the largest number, not the average.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('6', 'This is the largest number, not the average.', 'The mean shares the total evenly among the numbers.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
+        "line": 124,
+        "questionId": 7810007,
+        "title": "Twenty divided by five",
+        "chapter": "Division",
+        "field": "whyWrong",
+        "value": "15 takes away 5 once, but division asks how many equal groups fit in 20.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('15', '15 takes away 5 once, but division asks how many equal groups fit in 20.', 'Count by fives until you reach 20: 5, 10, 15, 20.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
+        "line": 125,
+        "questionId": 7810007,
+        "title": "Twenty divided by five",
+        "chapter": "Division",
+        "field": "whyWrong",
+        "value": "100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('100', '100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.', 'Division makes the number smaller here, not bigger.'),",
         "extractor": "object"
       }
     ],
@@ -5569,20 +5569,6 @@
         "flag": "meta-distractor",
         "label": "Meta distractor",
         "priority": 66,
-        "file": "src/data/questionCatalog/highBuilders.ts",
-        "line": 318,
-        "title": "Creative algebra lab",
-        "chapter": "Unit 17: Creativity in algebra",
-        "field": "distractor",
-        "value": "Keep the impossible result without checking the model",
-        "detail": "Wrong answer is about answering strategy rather than content.",
-        "snippet": "['Keep the impossible result without checking the model', 'An impossible answer is a signal to debug the setup, not a result to accept.', 'Trace the variables and assumptions until the context and calculation agree.'],",
-        "extractor": "object"
-      },
-      {
-        "flag": "meta-distractor",
-        "label": "Meta distractor",
-        "priority": 66,
         "file": "src/data/questionCatalog/homeElectricalQuestions.ts",
         "line": 696,
         "questionId": 7202048,
@@ -6545,6 +6531,21 @@
         "detail": "Wrong answer is about answering strategy rather than content.",
         "snippet": "['We did, like, a super official nap-pod vibe check', 'Informal register; not appropriate for a college argument and provides no concrete detail.']],",
         "extractor": "q"
+      },
+      {
+        "flag": "meta-distractor",
+        "label": "Meta distractor",
+        "priority": 66,
+        "file": "src/data/questionCatalog/uxDesignR2.ts",
+        "line": 162,
+        "questionId": 7606005,
+        "title": "Constraint as design input",
+        "chapter": "UX Mindset and Problem Framing",
+        "field": "distractor",
+        "value": "Ignore it and design infinite instant results, then demand engineering match the design",
+        "detail": "Wrong answer is about answering strategy rather than content.",
+        "snippet": "miss(",
+        "extractor": "object"
       }
     ]
   },
@@ -7963,118 +7964,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 88,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 1376,
-      "title": "Power rule",
-      "chapter": "Unit 2: Differentiation: definition and basic derivative rules",
-      "field": "whyWrong",
-      "value": "That keeps the new power but drops the multiplier from the original exponent.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['x^2', 'That keeps the new power but drops the multiplier from the original exponent.', 'Use n·x^(n-1).'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 1577,
-      "title": "Interquartile range",
-      "chapter": "Unit 3: Summary statistics",
-      "field": "whyWrong",
-      "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['32', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'IQR is an interval width, not a total.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 1757,
-      "title": "Slope interpretation",
-      "chapter": "Unit 13: Inference for quantitative data: slopes",
-      "field": "whyWrong",
-      "value": "That reads the rate of change as if it were the starting value.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['Predicted y starts at 1.5 when x = 0', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 2.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 2023,
-      "title": "Remainder theorem check",
-      "chapter": "Unit 3: Polynomial and rational functions",
-      "field": "whyWrong",
-      "value": "That grabs one visible term instead of evaluating the whole expression.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['2', 'That grabs one visible term instead of evaluating the whole expression.', 'The remainder theorem uses the full polynomial value.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 2215,
-      "title": "Range of a data set",
-      "chapter": "Unit 2: Displaying and comparing quantitative data",
-      "field": "whyWrong",
-      "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['43', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'Range is a difference.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 2519,
-      "title": "Slope meaning in context",
-      "chapter": "Unit 15: Advanced regression",
-      "field": "whyWrong",
-      "value": "That reads the rate of change as if it were the starting value.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['The starting score is 2.5 when no one studies', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 40.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 2594,
-      "title": "Derivative of a power",
-      "chapter": "Unit 2: Basic derivative rules",
-      "field": "whyWrong",
-      "value": "That keeps the new power but drops the multiplier from the original exponent.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['x^3', 'That keeps the new power but drops the multiplier from the original exponent.', 'Keep the original exponent as a multiplier.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 2631,
-      "title": "Acceleration from velocity",
-      "chapter": "Unit 4: Contextual applications of differentiation",
-      "field": "whyWrong",
-      "value": "That grabs one visible term instead of evaluating the whole expression.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['-1', 'That grabs one visible term instead of evaluating the whole expression.', 'Differentiate the whole expression.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
       "file": "src/data/questionCatalog/mathDiagnosticsUniv103TopUpA.ts",
       "line": 197,
       "questionId": 7701012,
@@ -8189,118 +8078,6 @@
       "value": "Tired describes sleepiness, not the cheerful feeling asked for here.",
       "detail": "Same normalized whyWrong appears 4 times.",
       "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Find a word that matches happy in meaning.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 46,
-      "title": "Power rule",
-      "chapter": "Unit 2: Differentiation: definition and basic derivative rules",
-      "field": "whyWrong",
-      "value": "That keeps the new power but drops the multiplier from the original exponent.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['x^2', 'That keeps the new power but drops the multiplier from the original exponent.', 'Use n·x^(n-1).'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 296,
-      "title": "Interquartile range",
-      "chapter": "Unit 3: Summary statistics",
-      "field": "whyWrong",
-      "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['32', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'IQR is an interval width, not a total.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 518,
-      "title": "Slope interpretation",
-      "chapter": "Unit 13: Inference for quantitative data: slopes",
-      "field": "whyWrong",
-      "value": "That reads the rate of change as if it were the starting value.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['Predicted y starts at 1.5 when x = 0', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 2.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 798,
-      "title": "Remainder theorem check",
-      "chapter": "Unit 3: Polynomial and rational functions",
-      "field": "whyWrong",
-      "value": "That grabs one visible term instead of evaluating the whole expression.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['2', 'That grabs one visible term instead of evaluating the whole expression.', 'The remainder theorem uses the full polynomial value.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 990,
-      "title": "Range of a data set",
-      "chapter": "Unit 2: Displaying and comparing quantitative data",
-      "field": "whyWrong",
-      "value": "That treats a spread as a total; this statistic needs a difference, not a sum.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['43', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'Range is a difference.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 1231,
-      "title": "Slope meaning in context",
-      "chapter": "Unit 15: Advanced regression",
-      "field": "whyWrong",
-      "value": "That reads the rate of change as if it were the starting value.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['The starting score is 2.5 when no one studies', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 40.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 1299,
-      "title": "Derivative of a power",
-      "chapter": "Unit 2: Basic derivative rules",
-      "field": "whyWrong",
-      "value": "That keeps the new power but drops the multiplier from the original exponent.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['x^3', 'That keeps the new power but drops the multiplier from the original exponent.', 'Keep the original exponent as a multiplier.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 1343,
-      "title": "Acceleration from velocity",
-      "chapter": "Unit 4: Contextual applications of differentiation",
-      "field": "whyWrong",
-      "value": "That grabs one visible term instead of evaluating the whole expression.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "['-1', 'That grabs one visible term instead of evaluating the whole expression.', 'Differentiate the whole expression.'],",
       "extractor": "object"
     },
     {
@@ -10152,34 +9929,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 87,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 587,
-      "title": "Sine in a right triangle",
-      "chapter": "Unit 13: Trigonometry",
-      "field": "whyWrong",
-      "value": "That adds side lengths, but trig ratios compare sides by division.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['16', 'That adds side lengths, but trig ratios compare sides by division.', 'Divide the lengths instead of adding them.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 1791,
-      "title": "Sine ratio",
-      "chapter": "Unit 1: Right triangles and ratios",
-      "field": "whyWrong",
-      "value": "That adds side lengths, but trig ratios compare sides by division.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['24', 'That adds side lengths, but trig ratios compare sides by division.', 'Divide, do not add.'],",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
       "file": "src/data/questionCatalog/mathDiagnosticsUniv103TopUpA.ts",
       "line": 347,
       "questionId": 7701022,
@@ -10608,20 +10357,6 @@
       "value": "24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Ask how many fours make 28.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/universityBuilders.ts",
-      "line": 552,
-      "title": "Sine ratio",
-      "chapter": "Unit 1: Right triangles and ratios",
-      "field": "whyWrong",
-      "value": "That adds side lengths, but trig ratios compare sides by division.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "['24', 'That adds side lengths, but trig ratios compare sides by division.', 'Divide, do not add.'],",
       "extractor": "object"
     },
     {
@@ -12100,20 +11835,6 @@
       "detail": "Wrong answer is about answering strategy rather than content.",
       "snippet": "['Assume both sources are useless because they disagree.', 'Disagreement is informative, not a reason to discard both. Historians weigh evidence to reach calibrated conclusions.']],",
       "extractor": "q"
-    },
-    {
-      "flag": "meta-distractor",
-      "label": "Meta distractor",
-      "priority": 66,
-      "file": "src/data/questionCatalog/highBuilders.ts",
-      "line": 318,
-      "title": "Creative algebra lab",
-      "chapter": "Unit 17: Creativity in algebra",
-      "field": "distractor",
-      "value": "Keep the impossible result without checking the model",
-      "detail": "Wrong answer is about answering strategy rather than content.",
-      "snippet": "['Keep the impossible result without checking the model', 'An impossible answer is a signal to debug the setup, not a result to accept.', 'Trace the variables and assumptions until the context and calculation agree.'],",
-      "extractor": "object"
     },
     {
       "flag": "meta-distractor",

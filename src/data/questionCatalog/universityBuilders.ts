@@ -43,7 +43,7 @@ export function makeColCalculusABQuiz(): Question[] {
         mentorHint: 'Bring down the exponent and reduce it by one.',
         correct: '3x^2',
         wrong: [
-          ['x^2', 'That keeps the new power but drops the multiplier from the original exponent.', 'Use n·x^(n-1).'],
+          ['x^2', 'That lowers the power but forgets the coefficient 3 that the power rule brings down from x^3.', 'Use n·x^(n-1).'],
           ['3x^3', 'That brings down the coefficient but leaves the old exponent in place.', 'Differentiate, do not just attach a coefficient.'],
           ['x^4', 'Differentiation does not increase the exponent here.', 'Apply the power rule exactly.'],
         ],
@@ -293,7 +293,7 @@ export function makeColAPStatisticsQuiz(): Question[] {
         },
         challengeRating: 2,
         wrong: [
-          ['32', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'IQR is an interval width, not a total.'],
+          ['32', 'That adds the two quartile markers, but IQR measures the gap between them: 20 - 12.', 'IQR is an interval width, not a total.'],
           ['4', 'That subtraction is off.', 'Use Q3 - Q1 exactly.'],
           ['20', 'That is just Q3.', 'Use both quartiles.'],
         ],
@@ -515,7 +515,7 @@ export function makeColAPStatisticsQuiz(): Question[] {
         mentorHint: 'Focus on how much y is expected to change when x goes up by 1.',
         correct: 'Predicted y increases by 1.5 for each 1-unit increase in x',
         wrong: [
-          ['Predicted y starts at 1.5 when x = 0', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 2.'],
+          ['Predicted y starts at 1.5 when x = 0', 'That treats the slope as the intercept; the starting value is the separate +2 in the equation.', 'The intercept here is 2.'],
           ['Predicted x increases by 1.5 when y increases by 1', 'That reverses the variables.', 'Slope is change in y over change in x.'],
           ['The data must fit perfectly', 'A slope value alone says nothing about perfect fit.', 'Slope is about rate of change.'],
         ],
@@ -549,7 +549,7 @@ export function makeColTrigonometryQuiz(): Question[] {
         wrong: [
           ['5/3', 'That flips the ratio.', 'Sine is opposite over hypotenuse.'],
           ['4/5', 'That would use a different side relationship.', 'Use only the sides named in the setup.'],
-          ['24', 'That adds side lengths, but trig ratios compare sides by division.', 'Divide, do not add.'],
+          ['24', 'That adds the opposite side and hypotenuse, but sine compares those sides by division.', 'Divide, do not add.'],
         ],
       },
       {
@@ -795,7 +795,7 @@ export function makeColCollegeAlgebraQuiz(): Question[] {
         challengeRating: 4,
         wrong: [
           ['1', 'That evaluates the polynomial incorrectly.', 'Compute 1 - 3 + 2 carefully.'],
-          ['2', 'That grabs one visible term instead of evaluating the whole expression.', 'The remainder theorem uses the full polynomial value.'],
+          ['2', 'That copies the constant term instead of evaluating p(1), so it misses the full remainder-theorem substitution.', 'The remainder theorem uses the full polynomial value.'],
           ['-1', 'The arithmetic sign is off.', 'Check the substitution line by line.'],
         ],
       },
@@ -987,7 +987,7 @@ export function makeColStatisticsProbabilityQuiz(): Question[] {
         },
         challengeRating: 2,
         wrong: [
-          ['43', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'Range is a difference.'],
+          ['43', 'That adds the endpoints, but range asks how far apart they are: 31 - 12.', 'Range is a difference.'],
           ['21', 'The subtraction is off.', 'Use max - min carefully.'],
           ['31', 'That is only the maximum, not the range.', 'Use both endpoints.'],
         ],
@@ -1228,7 +1228,7 @@ export function makeColStatisticsProbabilityQuiz(): Question[] {
         mentorHint: 'Ask how much the predicted score moves when study time increases by one hour.',
         correct: 'Predicted score increases by 2.5 points for each additional hour studied',
         wrong: [
-          ['The starting score is 2.5 when no one studies', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 40.'],
+          ['The starting score is 2.5 when no one studies', 'That mistakes the hourly change for the intercept; the model starts at 40 when hours studied is zero.', 'The intercept here is 40.'],
           ['Study time increases by 2.5 hours for each point scored', 'That reverses x and y.', 'Slope describes change in y per unit x.'],
           ['Every student will score exactly 2.5 more points', 'Regression predictions are not exact guarantees for individuals.', 'Interpret as predicted average change.'],
         ],
@@ -1296,7 +1296,7 @@ export function makeColCalculusBCQuiz(): Question[] {
         mentorHint: 'Bring down 4 and reduce the exponent by 1.',
         correct: '4x^3',
         wrong: [
-          ['x^3', 'That keeps the new power but drops the multiplier from the original exponent.', 'Keep the original exponent as a multiplier.'],
+          ['x^3', 'That reduces the exponent correctly but omits the multiplier 4 that comes down from x^4.', 'Keep the original exponent as a multiplier.'],
           ['4x^4', 'The exponent must drop by one.', 'Differentiation changes the power.'],
           ['x^5', 'The exponent moves the wrong direction.', 'Apply the rule carefully.'],
         ],
@@ -1340,7 +1340,7 @@ export function makeColCalculusBCQuiz(): Question[] {
         challengeRating: 3,
         wrong: [
           ['6t', 'That fails to differentiate completely.', 'The derivative of 6t is a constant.'],
-          ['-1', 'That grabs one visible term instead of evaluating the whole expression.', 'Differentiate the whole expression.'],
+          ['-1', 'That copies the constant from velocity, but acceleration comes from differentiating every term.', 'Differentiate the whole expression.'],
           ['0', 'The derivative is not zero here.', 'Check each term carefully.'],
         ],
       },

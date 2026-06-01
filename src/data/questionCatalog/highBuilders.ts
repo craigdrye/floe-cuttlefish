@@ -315,7 +315,7 @@ export function makeColAlgebraNyNextGenQuiz(): Question[] {
       wrong: [
         ['Keep the answer because algebra always beats context', 'Context matters in modeling problems.', 'Answers should be mathematically and contextually reasonable.'],
         ['Flip the sign automatically and move on', 'Changing the sign without finding the mistake is not sound reasoning.', 'Find the source of the issue before correcting it.'],
-        ['Keep the impossible result without checking the model', 'An impossible answer is a signal to debug the setup, not a result to accept.', 'Trace the variables and assumptions until the context and calculation agree.'],
+        ['Report -5 tickets as the final number sold', 'A negative count of sold tickets is not possible in the real situation, so the model or setup needs debugging.', 'Trace the variables and assumptions until the context and calculation agree.'],
       ],
     },
   ]
@@ -584,7 +584,7 @@ export function makeColGeometryQuiz(): Question[] {
       wrong: [
         ['5/3', 'That flips the ratio.', 'Sine uses opposite over hypotenuse, not the reverse.'],
         ['4/5', 'That would use the adjacent side instead.', 'Use the sides named in the setup.'],
-        ['16', 'That adds side lengths, but trig ratios compare sides by division.', 'Divide the lengths instead of adding them.'],
+        ['16', 'That adds the opposite side and hypotenuse, but sine is a ratio of those lengths, not their total.', 'Divide the lengths instead of adding them.'],
       ],
     },
     {
@@ -1373,7 +1373,7 @@ export function makeColCalculusABQuiz(): Question[] {
         mentorHint: 'Bring down the exponent and reduce it by one.',
         correct: '3x^2',
         wrong: [
-          ['x^2', 'That keeps the new power but drops the multiplier from the original exponent.', 'Use n·x^(n-1).'],
+          ['x^2', 'That lowers the exponent correctly but forgets the coefficient 3 that comes down from x^3.', 'Use n·x^(n-1).'],
           ['3x^3', 'That brings down the coefficient but leaves the old exponent in place.', 'Differentiate, do not just attach a coefficient.'],
           ['x^4', 'Differentiation does not increase the exponent here.', 'Apply the power rule exactly.'],
         ],
@@ -1574,7 +1574,7 @@ export function makeColAPStatisticsQuiz(): Question[] {
         mentorHint: 'Subtract 12 from 20.',
         correct: '8',
         wrong: [
-          ['32', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'IQR is an interval width, not a total.'],
+          ['32', 'That adds Q1 and Q3, but IQR asks for the width between the quartiles: 20 - 12.', 'IQR is an interval width, not a total.'],
           ['4', 'That subtraction is off.', 'Use Q3 - Q1 exactly.'],
           ['20', 'That is just Q3.', 'Use both quartiles.'],
         ],
@@ -1754,7 +1754,7 @@ export function makeColAPStatisticsQuiz(): Question[] {
         mentorHint: 'Focus on how much y is expected to change when x goes up by 1.',
         correct: 'Predicted y increases by 1.5 for each 1-unit increase in x',
         wrong: [
-          ['Predicted y starts at 1.5 when x = 0', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 2.'],
+          ['Predicted y starts at 1.5 when x = 0', 'That mistakes the slope for the intercept; the starting value is the separate constant term 2.', 'The intercept here is 2.'],
           ['Predicted x increases by 1.5 when y increases by 1', 'That reverses the variables.', 'Slope is change in y over change in x.'],
           ['The data must fit perfectly', 'A slope value alone says nothing about perfect fit.', 'Slope is about rate of change.'],
         ],
@@ -2020,7 +2020,7 @@ export function makeColCollegeAlgebraQuiz(): Question[] {
         correct: '0',
         wrong: [
           ['1', 'That evaluates the polynomial incorrectly.', 'Compute 1 - 3 + 2 carefully.'],
-          ['2', 'That grabs one visible term instead of evaluating the whole expression.', 'The remainder theorem uses the full polynomial value.'],
+          ['2', 'That copies the constant term, but the remainder theorem requires substituting 1 into every term of the polynomial.', 'The remainder theorem uses the full polynomial value.'],
           ['-1', 'The arithmetic sign is off.', 'Check the substitution line by line.'],
         ],
       },
@@ -2212,7 +2212,7 @@ export function makeColStatisticsProbabilityQuiz(): Question[] {
         },
         challengeRating: 2,
         wrong: [
-          ['43', 'That treats a spread as a total; this statistic needs a difference, not a sum.', 'Range is a difference.'],
+          ['43', 'That adds the maximum and minimum, but range is the distance between endpoints: 31 - 12.', 'Range is a difference.'],
           ['21', 'The subtraction is off.', 'Use max - min carefully.'],
           ['31', 'That is only the maximum, not the range.', 'Use both endpoints.'],
         ],
@@ -2516,7 +2516,7 @@ export function makeColStatisticsProbabilityQuiz(): Question[] {
         mentorHint: 'Ask how much the predicted score moves when study time increases by one hour.',
         correct: 'Predicted score increases by 2.5 points for each additional hour studied',
         wrong: [
-          ['The starting score is 2.5 when no one studies', 'That reads the rate of change as if it were the starting value.', 'The intercept here is 40.'],
+          ['The starting score is 2.5 when no one studies', 'That confuses the slope with the y-intercept; 2.5 is the per-hour change, not the baseline score.', 'The intercept here is 40.'],
           ['Study time increases by 2.5 hours for each point scored', 'That reverses x and y.', 'Slope describes change in y per unit x.'],
           ['Every student will score exactly 2.5 more points', 'Regression predictions are not exact guarantees for individuals.', 'Interpret as predicted average change.'],
         ],
@@ -2591,7 +2591,7 @@ export function makeColCalculusBCQuiz(): Question[] {
         mentorHint: 'Bring down 4 and reduce the exponent by 1.',
         correct: '4x^3',
         wrong: [
-          ['x^3', 'That keeps the new power but drops the multiplier from the original exponent.', 'Keep the original exponent as a multiplier.'],
+          ['x^3', 'That reduces the power from 4 to 3 but leaves out the multiplier 4 from the power rule.', 'Keep the original exponent as a multiplier.'],
           ['4x^4', 'The exponent must drop by one.', 'Differentiation changes the power.'],
           ['x^5', 'The exponent moves the wrong direction.', 'Apply the rule carefully.'],
         ],
@@ -2628,7 +2628,7 @@ export function makeColCalculusBCQuiz(): Question[] {
         correct: '6',
         wrong: [
           ['6t', 'That fails to differentiate completely.', 'The derivative of 6t is a constant.'],
-          ['-1', 'That grabs one visible term instead of evaluating the whole expression.', 'Differentiate the whole expression.'],
+          ['-1', 'That copies the constant term from velocity, but constants disappear when you differentiate to get acceleration.', 'Differentiate the whole expression.'],
           ['0', 'The derivative is not zero here.', 'Check each term carefully.'],
         ],
       },
