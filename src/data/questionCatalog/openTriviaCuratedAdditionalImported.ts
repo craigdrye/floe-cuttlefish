@@ -16,11 +16,22 @@ const _wave20Bundle = {
 // Manual selective pass over OpenTriviaQA.
 // Criteria: stable academic/career-relevant rows, four usable choices, no source_id already used in OpenTrivia imports.
 
-const distractor = (scope: string, answer: string): [string, string, string] => [
-  answer,
-  `This source distractor does not match the ${scope} clue in the prompt.`,
-  `Anchor the answer to the named ${scope} relationship rather than to a nearby familiar term.`,
-]
+const distractor = (scope: string, answer: string): [string, string, string] => {
+  const shortAnswer = answer.length > 64 ? `${answer.slice(0, 61)}...` : answer
+  const scopeNudges: Record<string, string> = {
+    geography: 'place, latitude, landform, water body, or Earth-system clue',
+    history: 'period, person, event, institution, or cause-and-effect clue',
+    literature: 'author, title, character, genre, or quoted-work clue',
+    'language or culture': 'language-family, translation, country, or culture clue',
+    'environmental science': 'scale, chemistry, climate, or environmental-process clue',
+  }
+  const nudge = scopeNudges[scope] ?? `${scope} clue`
+  return [
+    answer,
+    `${shortAnswer} is a nearby ${scope} answer, but it does not fit the specific ${nudge} in the prompt.`,
+    `Anchor the answer to the named ${scope} relationship rather than to a familiar-but-wrong term.`,
+  ]
+}
 
 export const openTriviaCuratedGeographyAdditionalQuestions = runPolish(makeQuestionBank('AP', [
   {
@@ -412,4 +423,3 @@ export const openTriviaCuratedLiteratureAdditionalQuestions = runPolish(makeQues
     lesson: 'Source: OpenTriviaQA (opentriviaqa::literature::1112). Included in the reviewed OpenTriviaQA curated additional pass.',
   },
 ]), [_wave20Bundle])
-
