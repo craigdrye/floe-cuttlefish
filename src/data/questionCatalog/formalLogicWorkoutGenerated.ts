@@ -8,6 +8,31 @@ import {
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/propositional logic|truth tables/i.test(chapter)) {
+    return `${title} is about truth-functional logic. The useful answer is "${correct}"; reduce the sentence to truth values and check the rows where the connective's rule actually applies.`
+  }
+  if (/proof rules|proof theory/i.test(chapter)) {
+    return `${title} is about moving from assumptions to conclusions by licensed rules. The useful answer is "${correct}"; separate syntactic provability from semantic validity, then check which direction the rule supports.`
+  }
+  if (/first-order syntax|quantifiers|identity/i.test(chapter)) {
+    return `${title} is first-order logic vocabulary. The useful answer is "${correct}"; distinguish terms from formulas, free variables from bound variables, and universal claims from existential witnesses.`
+  }
+  if (/sets|relations|functions/i.test(chapter)) {
+    return `${title} is set-theoretic background for logic. The useful answer is "${correct}"; track membership, ordered pairs, input-output behavior, and whether a property is reflexive, symmetric, transitive, injective, or onto.`
+  }
+  if (/modal logic/i.test(chapter)) {
+    return `${title} is modal semantics. The useful answer is "${correct}"; evaluate necessity and possibility by looking across the relevant accessible worlds rather than only the actual one.`
+  }
+  if (/computability/i.test(chapter)) {
+    return `${title} is about what procedures can decide. The useful answer is "${correct}"; ask whether there is an effective algorithm, whether it must halt on all inputs, and how reductions transfer solvability.`
+  }
+  if (/model theory|metatheory/i.test(chapter)) {
+    return `${title} is about stepping back from formulas to languages, models, and consequence. The useful answer is "${correct}"; keep object language, metalanguage, theory, model, and satisfiability on separate levels.`
+  }
+  return `${title} is a formal logic concept. The useful answer is "${correct}"; check whether the question is asking about syntax, semantics, proof, or models before choosing.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -22,8 +47,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: Open Logic Project raw collection. This is an authored Floe-native drill item, not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from Open Logic Project coverage',
 })
 
