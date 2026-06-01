@@ -26,6 +26,7 @@ export const createQuizSlice: StateCreator<AppState, [], [], QuizSlice> = (set) 
   questionQualityRatings: {},
   flashcardRatings: {},
   showLesson: false,
+  teachBeforeQuestion: true,
   selectedChapter: null,
   selectedLesson: null,
   chapterShuffleSeed: 0,
@@ -180,6 +181,8 @@ export const createQuizSlice: StateCreator<AppState, [], [], QuizSlice> = (set) 
     set((state) => ({
       showLesson: typeof show === 'function' ? show(state.showLesson) : show,
     })),
+
+  setTeachBeforeQuestion: (show) => set({ teachBeforeQuestion: show }),
 
   setSelectedChapter: (chapter) =>
     set({ selectedChapter: chapter, selectedLesson: null, chapterShuffleSeed: Date.now(), index: 0, selectedAnswerId: null, showHint: false, showLesson: false }),

@@ -201,7 +201,7 @@ export function TrainerScreen() {
     lastXpGain, setLastXpGain, unlockAchievement, updateReview,
     captureMisconception, clearMisconception, misconceptionArtifacts, recordBossWin, bossWins, focusMode,
     questionQualityRatings, setQuestionQualityRating,
-    showLesson, setShowLesson,
+    showLesson, setShowLesson, teachBeforeQuestion,
     selectedLesson, setSelectedLesson,
     selectedAge,
   } = useStore()
@@ -293,7 +293,7 @@ export function TrainerScreen() {
   const learningSupport = useMemo(() => buildLearningSupport(question, selectedAnswer), [question, selectedAnswer])
   const challengeRating = defaultChallengeRatingFor(question, selectedAge)
   const learnPrimerText = learningSupport.lessonParagraphs[0]
-  const showLearnPrimer = mode === 'daily' && index === 0 && !selectedAnswerId && Boolean(learnPrimerText)
+  const showLearnPrimer = teachBeforeQuestion && mode === 'daily' && index === 0 && !selectedAnswerId && Boolean(learnPrimerText)
 
   useEffect(() => {
     if (!showBossIntro) return

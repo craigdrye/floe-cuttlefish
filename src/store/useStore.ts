@@ -39,6 +39,7 @@ export const useStore = create<AppState>()(
         repeatedQuestions: state.repeatedQuestions,
         questionQualityRatings: state.questionQualityRatings,
         flashcardRatings: state.flashcardRatings,
+        teachBeforeQuestion: state.teachBeforeQuestion,
         petItems: state.petItems,
         equippedPetItems: state.equippedPetItems,
         bossWins: state.bossWins,

@@ -65,6 +65,7 @@ export function ChapterSubMapScreen() {
   const {
     progress, setMode, setIndex, setSelectedAnswerId, setShowHint, setScreen,
     selectedChapter, setSelectedLesson, selectedLesson,
+    teachBeforeQuestion, setTeachBeforeQuestion,
   } = useStore()
 
   const {
@@ -366,6 +367,15 @@ export function ChapterSubMapScreen() {
             <strong>{activeLessonStat.title}</strong>
             <span>{activeLessonStat.attempted}/{activeLessonStat.target} answered &middot; {Math.round(activeLessonStat.accuracy * 100)}% accuracy</span>
           </div>
+          <label className="lesson-primer-toggle">
+            <input
+              type="checkbox"
+              checked={teachBeforeQuestion}
+              onChange={(event) => setTeachBeforeQuestion(event.target.checked)}
+            />
+            <span aria-hidden="true" />
+            <strong>Teach me before question</strong>
+          </label>
           <button className="lets-go" onClick={continueActive} type="button">
             <Sparkles size={17} /> Continue <ChevronRight size={15} />
           </button>

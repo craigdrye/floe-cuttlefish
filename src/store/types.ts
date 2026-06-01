@@ -176,6 +176,7 @@ export interface QuizSlice {
   questionQualityRatings: Record<number, QuestionQualityRating>
   flashcardRatings: Record<string, FlashcardRating>
   showLesson: boolean
+  teachBeforeQuestion: boolean
   selectedChapter: string | null
   /**
    * Currently-active lesson id (e.g. 'lesson-3') inside the selected chapter
@@ -209,6 +210,7 @@ export interface QuizSlice {
   setSelectedAnswerId: (id: string | null) => void
   setShowHint: (show: boolean | ((current: boolean) => boolean)) => void
   setShowLesson: (show: boolean | ((current: boolean) => boolean)) => void
+  setTeachBeforeQuestion: (show: boolean) => void
   setRemixSeed: (questionId: number, seed: number | ((current: number) => number)) => void
   setWordingMode: (questionId: number, mode: number | ((current: number) => number)) => void
   incrementAnswerShuffleSeed: () => void
