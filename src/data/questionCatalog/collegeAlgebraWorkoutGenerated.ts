@@ -8,6 +8,31 @@ import {
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/linear equations|inequalities|absolute value|systems/i.test(chapter)) {
+    return `${title} is about undoing operations while preserving equivalence. The useful answer is "${correct}"; isolate the unknown carefully, keep both sides balanced, and remember when inequalities or absolute values split into cases.`
+  }
+  if (/quadratics|polynomials/i.test(chapter)) {
+    return `${title} is about polynomial structure. The useful answer is "${correct}"; look for factors, roots, vertex information, degree, and sign patterns rather than treating each term separately.`
+  }
+  if (/functions|linear models/i.test(chapter)) {
+    return `${title} is about functions as input-output rules. The useful answer is "${correct}"; track the input, output, slope or rate of change, and whether transformations happen inside or outside the rule.`
+  }
+  if (/exponents|radicals|logarithms/i.test(chapter)) {
+    return `${title} is about inverse and power rules. The useful answer is "${correct}"; translate between powers, roots, and logs, and apply exponent laws to the operation actually being used.`
+  }
+  if (/rational expressions/i.test(chapter)) {
+    return `${title} is about fractions built from algebraic expressions. The useful answer is "${correct}"; factor before canceling, protect domain restrictions, and use common denominators or reciprocals when needed.`
+  }
+  if (/coordinate geometry/i.test(chapter)) {
+    return `${title} is coordinate geometry. The useful answer is "${correct}"; convert the picture into slope, distance, midpoint, or line-form calculations and keep x- and y-coordinates paired correctly.`
+  }
+  if (/sequences|probability|modeling/i.test(chapter)) {
+    return `${title} is about recognizing a pattern or model. The useful answer is "${correct}"; decide whether the relationship is additive, multiplicative, probabilistic, or unit-based before calculating.`
+  }
+  return `${title} is a college algebra concept. The useful answer is "${correct}"; identify the algebraic structure first, then choose the operation that preserves it.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -22,7 +47,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson: 'Coverage source: Numbas and WeBWorK algebra-routing clusters. This is an authored Floe-native drill item, not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from Numbas/WeBWorK coverage',
 })
 
