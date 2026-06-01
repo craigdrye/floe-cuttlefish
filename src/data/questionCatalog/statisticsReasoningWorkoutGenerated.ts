@@ -9,6 +9,28 @@ import {
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/data|variables/i.test(chapter)) {
+    return `${title} is about naming the data correctly before doing any math. The useful answer is "${correct}"; first identify what one row represents, then decide whether the variable is a label, an ordered label, a count, or a measurement.`
+  }
+  if (/study design|sampling/i.test(chapter)) {
+    return `${title} is a design question. The useful answer is "${correct}"; separate random sampling for generalizing from random assignment for causal comparison, and watch for confounding, blocking, or whole-cluster selection.`
+  }
+  if (/exploring data|distributions/i.test(chapter)) {
+    return `${title} is about reading distribution shape, center, spread, or model conditions. The useful answer is "${correct}"; ask whether the data are skewed, resistant to outliers, approximately normal, binomial, or varying across samples.`
+  }
+  if (/probability/i.test(chapter)) {
+    return `${title} is a probability idea. The useful answer is "${correct}"; define the event space carefully, then use complement, conditional probability, independence, or expected value without smuggling in causation.`
+  }
+  if (/inference|proportion|mean|categorical/i.test(chapter)) {
+    return `${title} is an inference question. The useful answer is "${correct}"; identify the parameter, statistic, standard error, null model, and whether the data call for proportions, means, t methods, or chi-square counts.`
+  }
+  if (/regression/i.test(chapter)) {
+    return `${title} is about a relationship between variables. The useful answer is "${correct}"; keep predictor and response straight, interpret slope in units, and treat residuals, correlation, and extrapolation as different ideas.`
+  }
+  return `${title} is a statistics concept. The useful answer is "${correct}"; start by naming the data structure, then choose the summary, probability rule, model, or inference method that matches it.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -30,8 +52,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson: extra.lesson ??
-    'Coverage source: OpenIntro Statistics and Introduction to Modern Statistics raw collections. This is an authored Floe-native drill item, not a direct raw import.',
+  lesson: extra.lesson ?? lessonFor(chapter, title, correct),
   solution: extra.solution,
   mentorHint: extra.mentorHint,
   alternatePrompts: extra.alternatePrompts,
