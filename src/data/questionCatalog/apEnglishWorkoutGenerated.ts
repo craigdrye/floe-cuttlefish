@@ -8,6 +8,25 @@ import {
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/close reading|tone and mood|imagery/i.test(chapter)) {
+    return `${title} is a close-reading move. The useful answer is "${correct}"; anchor the idea in exact words, sensory detail, attitude, and reasonable interpretation rather than plot summary.`
+  }
+  if (/figurative language|sound devices|poetry form/i.test(chapter)) {
+    return `${title} is a poetry or language-technique concept. The useful answer is "${correct}"; listen for sound, watch for comparison, and ask how form creates meaning.`
+  }
+  if (/narrative|character|drama|genre/i.test(chapter)) {
+    return `${title} is about how literature stages perspective, conflict, character, or genre. The useful answer is "${correct}"; connect the device to what it reveals for the reader.`
+  }
+  if (/theme|structure|context|comparisons/i.test(chapter)) {
+    return `${title} is about building meaning across a text. The useful answer is "${correct}"; move beyond naming the device and explain how the pattern, reference, contrast, or idea changes interpretation.`
+  }
+  if (/argument|revision|exam skills/i.test(chapter)) {
+    return `${title} is an AP Lit essay skill. The useful answer is "${correct}"; keep the chain tight: prompt focus, debatable claim, precise evidence, and commentary that explains significance.`
+  }
+  return `${title} is an AP English Literature concept. The useful answer is "${correct}"; connect the term to textual evidence and the meaning it helps create.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -22,8 +41,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: reviewed OpenTriviaQA literature rows plus AP English Literature skill gaps. This is an authored Floe-native drill item, not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from AP English Literature coverage',
 })
 
@@ -47,14 +65,14 @@ const _baseApEnglishWorkoutGeneratedQuestions = makeQuestionBank('AP', [
   q(404017, 'Poetry Form', 'Meter', 'Meter in poetry is a pattern of:', 'Stressed and unstressed syllables', [miss('Chapter titles', 'Meter is poetic rhythm.', 'Listen to stress pattern.'), miss('Character motives only', 'Motives are narrative elements.', 'Meter is sound structure.'), miss('Dictionary definitions', 'Not meter.', 'Rhythm of syllables.')]),
   q(404018, 'Poetry Form', 'Iamb', 'An iamb is a metrical foot with:', 'An unstressed syllable followed by a stressed syllable', [miss('Two stressed syllables', 'That is a spondee.', 'Iamb sounds like da-DUM.'), miss('A stressed followed by unstressed syllable', 'That is trochaic pattern.', 'Iamb rises.'), miss('Three unstressed syllables', 'Not an iamb.', 'Two syllables: unstressed-stressed.')]),
   q(404019, 'Poetry Form', 'Sonnet', 'A sonnet traditionally has:', '14 lines', [miss('5 lines', 'That is not a sonnet.', 'Think Shakespearean/Petrarchan form.'), miss('100 lines', 'Too long for traditional sonnet.', 'Sonnets are compact.'), miss('No line structure', 'Sonnets are formal poems.', '14 lines.')]),
-  q(404020, 'Poetry Form', 'Volta', 'In a sonnet, a volta is:', 'A turn in thought or argument', [miss('A repeated final consonant only', 'That is sound pattern, not volta.', 'Volta means turn.'), miss('The title page', 'Not poetic structure.', 'Look for shift.'), miss('The speaker’s name', 'No.', 'Argument shift.')]),
+  q(404020, 'Poetry Form', 'Volta', 'In a sonnet, a volta is:', 'A turn in thought or argument', [miss('A repeated final consonant only', 'That is sound pattern, not volta.', 'Volta means turn.'), miss('The title page', 'Not poetic structure.', 'Look for shift.'), miss('The speaker’s name', 'That names a person, but a volta names the poem’s shift in thought or argument.', 'Argument shift.')]),
   q(404021, 'Narrative', 'Point of view', 'Point of view refers to:', 'The perspective from which a story is told', [miss('The price of the book', 'Not narrative perspective.', 'Who tells or sees?'), miss('Only the final sentence', 'POV shapes the whole narration.', 'Narrative perspective.'), miss('A rhyme scheme', 'That is poetic form.', 'Perspective.')]),
   q(404022, 'Narrative', 'First person', 'First-person narration usually uses:', 'I or we', [miss('He, she, or they only', 'That is third person.', 'First person speaks as self.'), miss('No pronouns ever', 'First person often uses pronouns.', 'I/we.'), miss('Only stage directions', 'Not narration type.', 'Pronoun clue.')]),
   q(404023, 'Narrative', 'Unreliable narrator', 'An unreliable narrator is one whose account:', 'Cannot be fully trusted', [miss('Is guaranteed objective fact', 'That is the opposite.', 'Question the narrator’s account.'), miss('Has no perspective', 'All narrators have perspective.', 'Reliability concerns trust.'), miss('Always speaks in rhyme', 'Rhyme does not define reliability.', 'Trustworthiness.')]),
   q(404024, 'Narrative', 'Foreshadowing', 'Foreshadowing:', 'Hints at future events', [miss('Explains only past events', 'That is flashback or exposition.', 'Foreshadow points forward.'), miss('Removes all suspense', 'It often builds suspense.', 'Future hint.'), miss('Lists the author’s awards', 'Not narrative technique.', 'Hinting ahead.')]),
   q(404025, 'Narrative', 'Flashback', 'A flashback:', 'Interrupts the present action to show an earlier event', [miss('Predicts the future', 'That is foreshadowing.', 'Flashback looks backward.'), miss('Deletes the plot', 'It adds past context.', 'Earlier event.'), miss('Changes prose into poetry', 'Not the definition.', 'Time shift backward.')]),
   q(404026, 'Character', 'Characterization', 'Characterization is how a writer:', 'Reveals a character’s traits', [miss('Counts chapter pages', 'Not character analysis.', 'Traits through action, speech, description.'), miss('Creates rhyme only', 'Rhyme is sound/form.', 'Character traits.'), miss('Lists publication data', 'Not characterization.', 'How we learn character.')]),
-  q(404027, 'Character', 'Indirect characterization', 'Indirect characterization reveals traits through:', 'Actions, speech, thoughts, and effects on others', [miss('A direct label only', 'That is direct characterization.', 'Indirect means infer from evidence.'), miss('Only book cover art', 'Not usually textual characterization.', 'Use behavior and dialogue.'), miss('A dictionary entry', 'No.', 'Infer traits.')]),
+  q(404027, 'Character', 'Indirect characterization', 'Indirect characterization reveals traits through:', 'Actions, speech, thoughts, and effects on others', [miss('A direct label only', 'That is direct characterization.', 'Indirect means infer from evidence.'), miss('Only book cover art', 'Not usually textual characterization.', 'Use behavior and dialogue.'), miss('A dictionary entry', 'A dictionary entry can define a word, but indirect characterization asks readers to infer traits from textual evidence.', 'Infer traits.')]),
   q(404028, 'Character', 'Foil', 'A foil character is used to:', 'Highlight qualities of another character through contrast', [miss('Narrate every scene', 'A foil need not narrate.', 'Contrast is key.'), miss('Remove conflict', 'Foils often sharpen conflict/contrast.', 'Compare characters.'), miss('Provide historical footnotes only', 'Not foil function.', 'Contrast reveals traits.')]),
   q(404029, 'Theme', 'Theme', 'A theme is:', 'A central insight or idea developed by the work', [miss('Only a one-word topic', 'A topic is not a full theme.', 'Theme says something about the topic.'), miss('A list of every event', 'That is plot summary.', 'Theme is meaning.'), miss('The author’s font choice', 'Not literary theme.', 'Central idea.')]),
   q(404030, 'Theme', 'Theme statement', 'Which is the strongest theme statement?', 'Unchecked ambition can destroy personal relationships', [miss('Ambition', 'That is a topic, not a claim.', 'Make a statement about the topic.'), miss('The story has a protagonist', 'Too generic and structural.', 'Theme should express an insight.'), miss('Many chapters happen', 'Not thematic.', 'Say what the work suggests.')]),
