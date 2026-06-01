@@ -59,7 +59,7 @@ export const personalFinanceR2Questions: Question[] = makeQuestionBank('Career S
     correct: 'Budget from a conservative baseline (e.g., your lowest typical month) and bank the surplus',
     wrong: [
       miss('Budget from your best month so you never feel restricted', 'Planning around a peak month guarantees overspending in lean months, exactly when cash is tight and recovery is hardest.', 'Budgeting to your best month sets you up to fall short most months. Plan for the valleys, not the peaks.'),
-      miss('Skip budgeting entirely until your income becomes stable', 'Irregular income makes a plan more important, not less; without one, fat months get spent and lean months trigger debt.', 'Variable income is the case where a plan helps most. No plan means good months vanish and bad months hurt.'),
+      miss('Wait for a perfectly predictable paycheck before making a plan', 'Irregular income makes a plan more important, not less; without one, fat months get spent and lean months trigger debt.', 'Variable income is the case where a plan helps most. No plan means good months vanish and bad months hurt.'),
       miss('Take a personal loan each slow month to smooth things out', 'Borrowing to cover routine dips adds interest and hides the real problem; a savings buffer from good months is cheaper and safer.', 'Loans add cost. Smooth income yourself with a buffer built from strong months, not borrowed money.'),
     ],
     lesson: 'With irregular income, base your monthly budget on a conservative figure, often your lowest typical month, and route everything above that into a buffer account. In strong months you fill the buffer; in weak months you draw it down to "pay yourself" a steady amount. This converts a bumpy income into a predictable, livable budget without relying on debt.',
@@ -213,7 +213,7 @@ export const personalFinanceR2Questions: Question[] = makeQuestionBank('Career S
     correct: 'Stop running up new balances on the cards you just paid off',
     wrong: [
       miss('Keep using the freed-up cards as before, since the loan handles the old debt', 'Charging the cards back up while owing the consolidation loan leaves you with more total debt, the classic consolidation trap.', 'Consolidation can backfire if old cards refill. The win requires not re-borrowing on them.'),
-      miss('Choose the loan with the longest possible term to minimize total cost', 'A longer term lowers the monthly payment but usually raises total interest paid; longest is rarely cheapest overall.', 'Longer terms cut the payment but add interest. Cheapest total cost favors paying it off sooner.'),
+      miss('Use the longest term because the monthly payment looks smallest', 'A longer term lowers the monthly payment but usually raises total interest paid; longest is rarely cheapest overall.', 'Longer terms cut the payment but add interest. Cheapest total cost favors paying it off sooner.'),
       miss('Consolidate even if the new loan carries a higher rate, for simplicity', 'Moving debt to a higher rate increases cost; consolidation should lower your blended rate, not raise it.', 'A higher-rate consolidation loses money. The point is a lower rate, not just one bill.'),
     ],
     lesson: 'Debt consolidation rolls multiple balances into a single loan, ideally at a lower rate and one simple payment. The math only helps if the new rate is genuinely lower and, critically, if you do not re-load the cards you cleared. Many people consolidate, feel relief, then run the cards back up, ending with the loan plus new card debt. Cut the behavior, not just the interest rate.',
@@ -674,7 +674,7 @@ export const personalFinanceR2Questions: Question[] = makeQuestionBank('Career S
     wrong: [
       miss('Max the Roth IRA first because its growth is tax-free', 'The Roths tax-free growth is great, but it cannot beat the immediate 50-100% return of free matched dollars; grab the match first.', 'Tax-free growth is good, but a 100% match is unbeatable. Free money comes before the IRA.'),
       miss('Split the money evenly so you partially fund both', 'Splitting leaves match money on the table; you should fully capture the guaranteed match before funding the IRA.', 'A partial match forfeits free dollars. Take the whole match first, then move to the IRA.'),
-      miss('Skip both and keep the cash in a savings account for flexibility', 'Cash in savings forgoes both the match and decades of tax-advantaged growth; the match in particular is free money.', 'Hoarding cash gives up free match money and tax-advantaged growth. Capture the match.'),
+      miss('Keep all the cash in savings because flexibility feels safer', 'Cash in savings forgoes both the match and decades of tax-advantaged growth; the match in particular is free money.', 'Hoarding cash gives up free match money and tax-advantaged growth. Capture the match.'),
     ],
     lesson: 'The classic priority order starts with capturing the full employer 401(k) match, because matched dollars are an immediate, guaranteed return (often 50-100%) that no IRA can match. After the full match, high-interest debt and an emergency fund typically come next, then maxing tax-advantaged accounts like a Roth IRA or HSA. The IRA is excellent, but never at the cost of leaving free matched money behind.',
     source,

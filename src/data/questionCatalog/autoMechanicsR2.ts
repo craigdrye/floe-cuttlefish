@@ -682,9 +682,9 @@ export const autoMechanicsR2Questions: Question[] = makeQuestionBank('Career Ski
     prompt: 'A shop quotes a large repair. The most useful single thing you can do to judge whether the price is fair is to:',
     correct: 'Get an itemized estimate (parts and labor) and a second quote on the same job',
     wrong: [
-      miss('Pick the shop with the nicest waiting room', 'A comfortable lounge says nothing about price fairness or repair quality.', 'Décor is not evidence of a fair, correct price.'),
-      miss('Choose whichever shop can start soonest', 'Availability is convenient but does not tell you if the diagnosis or price is right.', 'Fast is not the same as fair or correct.'),
-      miss('Assume the most expensive quote must be the best work', 'Higher price does not guarantee better diagnosis or quality; comparing itemized quotes does.', 'Cost alone is not a quality signal; compare specifics.'),
+      miss('Trust the shop with the nicest waiting room', 'A comfortable lounge says nothing about price fairness or repair quality.', 'Décor is not evidence of a fair, correct price.'),
+      miss('Go with the first shop that has an open appointment', 'Availability is convenient but does not tell you if the diagnosis or price is right.', 'Fast is not the same as fair or correct.'),
+      miss('Treat the highest quote as proof of the best work', 'Higher price does not guarantee better diagnosis or quality; comparing itemized quotes does.', 'Cost alone is not a quality signal; compare specifics.'),
     ],
     lesson: 'An itemized estimate separates parts from labor and names the specific work, which lets you compare apples-to-apples and spot padding or unneeded extras. A second opinion on a big job — especially one prompted by an OBD code you can read yourself — protects you from both overcharging and misdiagnosis. The goal is informed judgment, not blind trust or blanket suspicion.',
     source,
@@ -698,7 +698,7 @@ export const autoMechanicsR2Questions: Question[] = makeQuestionBank('Career Ski
     correct: 'Check whether the repair is covered and have authorized work documented',
     wrong: [
       miss('Do the repair yourself to save money no matter what', 'DIY-ing a covered powertrain repair can forfeit free warranty work and may even jeopardize coverage.', 'If it is covered, paying or DIY-ing throws away free repair.'),
-      miss('Ignore the warranty since it never covers anything', 'Powertrain warranties specifically cover major engine and transmission failures; assuming nothing is covered can cost you a lot.', 'Major engine/transmission failures are exactly what these warranties cover.'),
+      miss('Treat the warranty as irrelevant because repairs are rarely free', 'Powertrain warranties specifically cover major engine and transmission failures; assuming nothing is covered can cost you a lot.', 'Major engine/transmission failures are exactly what these warranties cover.'),
       miss('Disconnect the battery to reset the warranty timer', 'Warranties run on time and mileage from purchase; nothing resets them by disconnecting the battery.', 'You cannot reset a warranty clock electrically.'),
     ],
     lesson: 'A powertrain warranty typically covers major engine and transmission components for a set time/mileage. If a big failure happens within it, the manufacturer may repair it free at an authorized dealer — so check coverage before paying out of pocket or DIY-ing. Keep maintenance records: skipping documented required service can give grounds to deny a claim. Knowing your warranty is part of being an un-upsellable owner.',

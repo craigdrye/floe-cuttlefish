@@ -644,7 +644,7 @@ export const handsOnScienceHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     wrong: [
       miss('Take the whole robot apart and rebuild it from scratch', 'Tearing it down loses information about what was wrong.', 'Isolate the fault step by step before dismantling everything.'),
       miss('Replace every single part at once', 'Swapping everything hides which part was actually faulty.', 'Change one variable at a time so you learn the cause.'),
-      miss('Assume it is unfixable and start a new project', 'Giving up forfeits the chance to find a simple cause like a loose wire.', 'Diagnose systematically before abandoning the build.'),
+      miss('Declare the whole design broken after the first failed test', 'Giving up forfeits the chance to find a simple cause like a loose wire.', 'Diagnose systematically before abandoning the build.'),
     ],
     lesson: 'Effective debugging isolates the fault by checking one thing at a time, usually starting with the basics (power, connections). Changing everything at once destroys the information you need to find the real cause.',
     source,
@@ -704,7 +704,7 @@ export const handsOnScienceHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     wrong: [
       miss('Hold the rocket in your hands at the moment of launch', 'Holding a pressurized rocket at launch risks serious injury.', 'Keep body parts clear of the launch point.'),
       miss('Point the rocket toward the group to see it better', 'Aiming at people is dangerous; never point projectiles at anyone.', 'Direct projectiles away from all people.'),
-      miss('Skip safety checks to save time', 'Skipping checks is exactly how accidents happen.', 'Risk assessment comes before, not after, a launch.'),
+      miss('Do the safety check after the first launch if anything goes wrong', 'Delaying checks is exactly how accidents happen; hazards need controls before pressure and motion are involved.', 'Risk assessment comes before, not after, a launch.'),
     ],
     lesson: 'Risk assessment identifies hazards and controls them before building or testing. For projectiles, that means keeping people at a safe distance, wearing eye protection, and never aiming at anyone. Safety planning precedes the activity.',
     source,
@@ -717,7 +717,7 @@ export const handsOnScienceHighTopUpQuestions: Question[] = makeQuestionBank('Hi
     prompt: 'During a design critique, a classmate points out a flaw in your prototype. What is the most productive response?',
     correct: 'Treat it as useful feedback, ask clarifying questions, and consider testing the suggestion',
     wrong: [
-      miss('Ignore it because it is your project, not theirs', 'Dismissing feedback wastes a chance to improve the design.', 'Peer critique is meant to strengthen the work.'),
+      miss('Treat the comment as a personal attack instead of design data', 'Dismissing feedback wastes a chance to improve the design.', 'Peer critique is meant to strengthen the work.'),
       miss('Defend the design no matter what they say', 'Reflexive defense blocks learning from a real flaw.', 'Stay open to evidence that something can be improved.'),
       miss('Abandon the project immediately', 'One critique is feedback to act on, not a reason to quit.', 'Use the critique to iterate, not to give up.'),
     ],
