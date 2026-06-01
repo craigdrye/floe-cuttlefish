@@ -2,6 +2,25 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/right-triangle|radians|unit circle/i.test(chapter)) {
+    return `${title} is about locating an angle and its side relationships. The useful answer is "${correct}"; use reference angles, full rotations, and the unit circle rather than treating angle numbers as ordinary distances.`
+  }
+  if (/functions and graphs/i.test(chapter)) {
+    return `${title} is about how trig graphs shift and repeat. The useful answer is "${correct}"; inside coefficients change period, inside subtraction shifts horizontally, and outside changes move vertically.`
+  }
+  if (/inverse trig|trig equations/i.test(chapter)) {
+    return `${title} is about finding every angle that fits a trig value in the interval. The useful answer is "${correct}"; trace the unit circle and include all matching positions.`
+  }
+  if (/identities/i.test(chapter)) {
+    return `${title} is about rewriting trig expressions without changing their value. The useful answer is "${correct}"; distinguish reciprocal identities from quotient identities.`
+  }
+  if (/oblique|vectors|polar|complex/i.test(chapter)) {
+    return `${title} is about extending trig beyond right triangles. The useful answer is "${correct}"; track radius, angle, sine/cosine components, and whether a power changes both modulus and angle.`
+  }
+  return `${title} is a trigonometry skill. The useful answer is "${correct}"; identify the trig relationship first, then apply the matching formula.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +35,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: Numbas, WeBWorK, and OER trigonometry collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from Numbas/WeBWorK/OER Trigonometry coverage',
 })
 

@@ -2,6 +2,22 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/trigonometric/i.test(chapter)) {
+    return `${title} is about connecting angle measures and trig identities. The useful answer is "${correct}"; convert degrees to radians carefully and use squared identities exactly as written.`
+  }
+  if (/function families|polynomial|rational|exponential|logarithmic/i.test(chapter)) {
+    return `${title} is about reading function structure. The useful answer is "${correct}"; check domains, asymptotes, log rules, and end behavior from the expression rather than from surface numbers.`
+  }
+  if (/vectors|complex|polar|analytic geometry/i.test(chapter)) {
+    return `${title} is about representing objects with coordinates, components, or standard forms. The useful answer is "${correct}"; multiply matching components, identify conic signs, or translate polar information carefully.`
+  }
+  if (/limits|rates|calculus readiness|matrices|systems|discrete/i.test(chapter)) {
+    return `${title} is about preparing for later algebra and calculus moves. The useful answer is "${correct}"; track the sequence, coefficient, or structure that the formula is actually asking for.`
+  }
+  return `${title} is a precalculus skill. The useful answer is "${correct}"; identify the function family or representation before choosing the rule.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +32,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: Numbas, WeBWorK, and OER precalculus collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from Numbas/WeBWorK/OER Precalculus coverage',
 })
 

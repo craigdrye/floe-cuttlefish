@@ -2,6 +2,25 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/foundations|triangles|parallels|proof/i.test(chapter)) {
+    return `${title} is about using a theorem, not just eyeballing a diagram. The useful answer is "${correct}"; match the angle or triangle information to the proof rule that guarantees it.`
+  }
+  if (/similarity|dilations|scale/i.test(chapter)) {
+    return `${title} is about same shape, possibly different size. The useful answer is "${correct}"; look for equal angles, proportional sides, or how scale changes lengths and areas.`
+  }
+  if (/right triangles|trigonometry/i.test(chapter)) {
+    return `${title} is about right-triangle relationships. The useful answer is "${correct}"; compare side squares or match the trig ratio to the sides involved.`
+  }
+  if (/circles|circular/i.test(chapter)) {
+    return `${title} is about circle theorems and measures. The useful answer is "${correct}"; distinguish radius, tangent, circumference, area, and arc relationships.`
+  }
+  if (/coordinate|transformations|area|volume/i.test(chapter)) {
+    return `${title} is about translating geometry into coordinates or formulas. The useful answer is "${correct}"; track signs under transformations, slopes in the plane, and base-area-times-height for volume.`
+  }
+  return `${title} is a geometry skill. The useful answer is "${correct}"; identify the theorem or measurement relationship before calculating.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +35,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: NYSED Geometry, STAAR geometry-aligned, and OER geometry collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from NYSED/STAAR/OER Geometry coverage',
 })
 
