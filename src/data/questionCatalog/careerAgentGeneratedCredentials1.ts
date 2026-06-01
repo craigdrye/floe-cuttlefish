@@ -209,8 +209,8 @@ const careerAgentGeneratedCredentials1BaseQuestionsByTrack: Record<string, Quest
       'An analyst finishes enough review to identify facts that may warrant a SAR. What should the team track next?',
       'The filing deadline from initial detection and any approved escalation steps',
       [
-        ['The customer birthday because it resets the deadline', 'SAR clocks run from detection, not from any customer milestone.'],
-        ['Only the analyst favorite case-note color', 'Note formatting has no relevance to a regulatory filing deadline.'],
+        ['The customer onboarding anniversary because it resets the deadline', 'SAR clocks run from detection, not from a customer milestone.'],
+        ['The preferred note template before identifying the filing clock', 'Documentation format matters less than recognizing the deadline and escalation path.'],
         ['Whether the suspicious activity feels dramatic enough for a meeting', 'SAR filing is rule-driven and time-sensitive, not theater-driven.'],
       ],
       'SAR work is deadline-sensitive once facts indicating possible suspicious activity are detected. Teams need timely escalation, documentation, and filing discipline.'),

@@ -899,7 +899,7 @@ export const universityComparativePoliticsQuestions = makeQuestionBank('Universi
     correct: 'Historical origins, social bases, policy programs, ideological traditions, and transnational affiliations',
     wrong: [
       ['Only the party name translated into English', 'Names can mislead across countries.', 'Look at origins and programs.'],
-      ['Only whether parties use similar campaign colors', 'Symbols can vary and can mislead.', 'Study ideology, history, and organization.'],
+      ['Whether parties use similar campaign symbols without comparing ideology or organization', 'Symbols can vary and can mislead across countries.', 'Study ideology, history, and organization.'],
       ['A single policy pledge made in one election', 'Party families are broader than one promise.', 'Compare durable patterns.'],
     ],
     lesson: 'Party families help compare politics across countries, but they require attention to history, social coalitions, policy agendas, and changing national meanings.',
@@ -1388,7 +1388,7 @@ export const universityComparativePoliticsQuestions = makeQuestionBank('Universi
     wrong: [
       ['Whether local leaders have the longest speeches', 'Rhetoric does not show fiscal capacity.', 'Follow money and budget authority.'],
       ['A rule that all regional services cost nothing', 'Services require revenue and administrative capacity.', 'Decentralized authority needs resources.'],
-      ['Only the color of boundaries on a map', 'Formal boundaries do not show whether governments can finance policy.', 'Look for fiscal powers.'],
+      ['Formal boundary lines as proof that local governments can finance services', 'Boundaries do not show whether governments can finance policy.', 'Look for fiscal powers.'],
     ],
     lesson: 'Decentralization is meaningful only when legal responsibilities are matched with revenue, transfers, borrowing rules, administrative capacity, and accountability.',
   },
@@ -1491,7 +1491,7 @@ export const universityComparativePoliticsQuestions = makeQuestionBank('Universi
     correct: 'Facilitative, negotiated, restrictive, selective, or coercive toward different groups and claims',
     wrong: [
       ['Identical for every protest in every regime type', 'States often vary their response by regime, group, issue, location, and threat perception.', 'Compare patterns of permission and repression.'],
-      ['Only about the weather on protest day', 'Weather can affect turnout, but protest policing is about state strategy and coercive capacity.', 'Look at how authorities respond.'],
+      ['Mainly about turnout conditions rather than the state’s response', 'Weather or turnout conditions can matter, but protest policing is about state strategy and coercive capacity.', 'Look at how authorities respond.'],
       ['Unrelated to civil liberties or regime legitimacy', 'Policing protest can directly affect rights, opposition capacity, and legitimacy.', 'Connect protest to accountability.'],
     ],
     lesson: 'Protest policing reveals how states balance order, rights, dissent, threat perception, and legitimacy, often with unequal treatment across movements and social groups.',
@@ -1517,7 +1517,7 @@ export const universityComparativePoliticsQuestions = makeQuestionBank('Universi
     correct: 'How difficult it is to change higher law and which actors must agree to constitutional revision',
     wrong: [
       ['Whether ordinary officials can ignore the constitution whenever convenient', 'Amendment rules create formal change procedures, not permission to ignore higher law.', 'Think legal pathways for revision.'],
-      ['Only the font used in printed constitutions', 'Formatting is not the political issue.', 'Focus on thresholds and required consent.'],
+      ['The publication format rather than the actors and thresholds for revision', 'Formatting is not the political issue; amendment rules define how constitutional change can happen.', 'Focus on thresholds and required consent.'],
       ['Why elections no longer matter after a constitution is written', 'Constitutions structure politics, but elections and ordinary lawmaking continue.', 'Amendment rules do not end politics.'],
     ],
     lesson: 'Rigid amendment rules can protect stability and rights but may entrench outdated arrangements; flexible rules can adapt more easily but may weaken constitutional constraint.',

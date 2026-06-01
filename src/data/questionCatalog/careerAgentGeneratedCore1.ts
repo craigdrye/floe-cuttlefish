@@ -1672,8 +1672,8 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'A procurement team says approval needs security review, budget owner signoff, and legal redlines. What should you clarify next?',
       'The sequence, owner, timing, and success criteria for each approval step',
       [
-        ['Whether procurement enjoys mazes recreationally', 'The maze is structural, not optional. The path is what matters.'],
-        ['Only the final signature page color', 'Cosmetic detail does not affect deal velocity.'],
+        ['Whether procurement can be treated as one generic approval box', 'The approval path has multiple owners and criteria, so lumping it together hides where delays occur.'],
+        ['The final signature-page format before the approval owners are known', 'Formatting can matter at the end, but it does not explain sequence, ownership, or criteria.'],
         ['How to skip every stakeholder without consequences', 'Skipping stakeholders produces post-signature breakdowns or unenforceable agreements.'],
       ],
       'Enterprise procurement requires process clarity. Knowing owners, sequence, criteria, and timing reduces surprise delays.'),

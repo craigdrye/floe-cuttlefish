@@ -659,9 +659,9 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       'Orders are late, but factory output is on schedule. What should the analyst map next?',
       'Where delays enter after production, such as staging, carrier pickup, transit, or receiving',
       [
-        ['Only the factory machines again because they are shiny', 'Production is already on schedule; the delay is elsewhere.'],
-        ['The CEO parking space', 'Parking is unrelated to flow analysis.'],
-        ['A random chart of total annual revenue', 'Annual revenue does not localize the delay.'],
+        ['Production-line cycle times as the only cause of the late orders', 'Production is already on schedule; the delay is entering somewhere after production.'],
+        ['The executive escalation list before locating the process bottleneck', 'Escalation may happen later, but first the analyst needs to find where the flow actually stalls.'],
+        ['A total annual revenue trend with no order-flow breakdown', 'Revenue does not localize the delay across staging, pickup, transit, or receiving.'],
       ],
       'Flow analysis traces where delays actually enter the system. If production is on time, downstream handoffs and transportation deserve attention.'),
     q(4260712, 'Supply Chain', 'Supply Chain Map and Metrics', 'KPI trapdoor',
