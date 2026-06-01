@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-01T07:23:45.769Z",
+  "generatedAt": "2026-06-01T07:26:46.449Z",
   "summary": {
     "filesScanned": 758,
     "questionsScanned": 56989,
     "extractedQuestionRecords": 57146,
     "skippedNonPlayablePlaceholders": 157,
     "distinctQuestionIds": 38778,
-    "totalIssues": 420,
-    "jsonIssuesStored": 420,
-    "duplicateWhyWrongGroups": 73
+    "totalIssues": 391,
+    "jsonIssuesStored": 391,
+    "duplicateWhyWrongGroups": 65
   },
   "flagCounts": {
-    "repeated-why-wrong": 255,
+    "repeated-why-wrong": 226,
     "obvious-irrelevant-distractor": 45,
     "meta-distractor": 120
   },
@@ -777,68 +777,6 @@
   ],
   "duplicateWhyWrongGroups": [
     {
-      "text": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "count": 7,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-          "line": 531,
-          "questionId": 7850034,
-          "title": "Adjectives",
-          "chapter": "Grammar",
-          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-          "line": 730,
-          "questionId": 7852047,
-          "title": "Identifying nouns",
-          "chapter": "Grammar and Language",
-          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
-          "line": 458,
-          "questionId": 7856029,
-          "title": "Identifying a noun",
-          "chapter": "Grammar",
-          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-          "line": 793,
-          "questionId": 7851051,
-          "title": "Finding the noun",
-          "chapter": "Grammar and Writing",
-          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-          "line": 563,
-          "questionId": 7853036,
-          "title": "Finding the noun",
-          "chapter": "Grammar Basics",
-          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-          "line": 666,
-          "questionId": 7855042,
-          "title": "Identifying a noun",
-          "chapter": "Grammar and Writing",
-          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-          "line": 487,
-          "questionId": 7846031,
-          "title": "Finding the noun",
-          "chapter": "Grammar",
-          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),"
-        }
-      ]
-    },
-    {
       "text": "These multiply to 12 but add to 13, not 7.",
       "count": 7,
       "examples": [
@@ -955,56 +893,56 @@
       ]
     },
     {
-      "text": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "text": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "count": 6,
       "examples": [
         {
           "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-          "line": 425,
-          "questionId": 7850027,
-          "title": "Synonyms",
-          "chapter": "Vocabulary",
-          "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-          "line": 504,
-          "questionId": 7849032,
-          "title": "Synonyms",
-          "chapter": "Reading and Vocabulary",
-          "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),"
+          "line": 531,
+          "questionId": 7850034,
+          "title": "Adjectives",
+          "chapter": "Grammar",
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),"
         },
         {
           "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-          "line": 684,
-          "questionId": 7852044,
-          "title": "Synonyms",
-          "chapter": "Vocabulary and Word Meaning",
-          "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),"
+          "line": 730,
+          "questionId": 7852047,
+          "title": "Identifying nouns",
+          "chapter": "Grammar and Language",
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
         },
         {
-          "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-          "line": 502,
-          "questionId": 7853032,
-          "title": "Words that mean the same",
-          "chapter": "Vocabulary and Words",
-          "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Look for a word with a good feeling.'),"
+          "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
+          "line": 458,
+          "questionId": 7856029,
+          "title": "Identifying a noun",
+          "chapter": "Grammar",
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
+          "line": 793,
+          "questionId": 7851051,
+          "title": "Finding the noun",
+          "chapter": "Grammar and Writing",
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
+          "line": 666,
+          "questionId": 7855042,
+          "title": "Identifying a noun",
+          "chapter": "Grammar and Writing",
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),"
         },
         {
           "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-          "line": 730,
-          "questionId": 7846047,
-          "title": "Choosing a synonym",
-          "chapter": "Vocabulary",
-          "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
-          "line": 508,
-          "questionId": 7858032,
-          "title": "Words that mean the same",
-          "chapter": "Vocabulary and Word Meanings",
-          "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Find a word that also means feeling good.'),"
+          "line": 487,
+          "questionId": 7846031,
+          "title": "Finding the noun",
+          "chapter": "Grammar",
+          "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),"
         }
       ]
     },
@@ -1263,6 +1201,52 @@
       ]
     },
     {
+      "text": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "count": 5,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+          "line": 425,
+          "questionId": 7850027,
+          "title": "Synonyms",
+          "chapter": "Vocabulary",
+          "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
+          "line": 504,
+          "questionId": 7849032,
+          "title": "Synonyms",
+          "chapter": "Reading and Vocabulary",
+          "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+          "line": 684,
+          "questionId": 7852044,
+          "title": "Synonyms",
+          "chapter": "Vocabulary and Word Meaning",
+          "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
+          "line": 730,
+          "questionId": 7846047,
+          "title": "Choosing a synonym",
+          "chapter": "Vocabulary",
+          "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
+          "line": 508,
+          "questionId": 7858032,
+          "title": "Words that mean the same",
+          "chapter": "Vocabulary and Word Meanings",
+          "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Find a word that also means feeling good.'),"
+        }
+      ]
+    },
+    {
       "text": "1/4 is only one quarter, so it is smaller than a half.",
       "count": 4,
       "examples": [
@@ -1339,44 +1323,6 @@
       ]
     },
     {
-      "text": "A period ends a statement; a question needs the mark that shows someone is asking something.",
-      "count": 4,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-          "line": 592,
-          "questionId": 7850038,
-          "title": "End punctuation",
-          "chapter": "Writing and Punctuation",
-          "snippet": "miss('A period', 'A period ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence is asking something.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-          "line": 838,
-          "questionId": 7851054,
-          "title": "End punctuation",
-          "chapter": "Grammar and Writing",
-          "snippet": "miss('A period (.)', 'A period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'Questions ask something and need a special mark.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-          "line": 608,
-          "questionId": 7853039,
-          "title": "Choosing the right punctuation",
-          "chapter": "Grammar Basics",
-          "snippet": "miss('a period (.)', 'a period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence asks something.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-          "line": 726,
-          "questionId": 7855046,
-          "title": "End punctuation",
-          "chapter": "Grammar and Writing",
-          "snippet": "miss('A period (.)', 'A period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence asks something.'),"
-        }
-      ]
-    },
-    {
       "text": "A quadratic equation has at most two solutions, never infinitely many.",
       "count": 4,
       "examples": [
@@ -1449,44 +1395,6 @@
           "title": "Even or odd",
           "chapter": "Comparing Numbers",
           "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Look at the ones digit: 4 is even.'),"
-        }
-      ]
-    },
-    {
-      "text": "Tall is about height; the prompt is looking for the size word that means not big.",
-      "count": 4,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-          "line": 520,
-          "questionId": 7849033,
-          "title": "Antonyms",
-          "chapter": "Reading and Vocabulary",
-          "snippet": "miss('Tall', 'Tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-          "line": 518,
-          "questionId": 7853033,
-          "title": "Opposite words",
-          "chapter": "Vocabulary and Words",
-          "snippet": "miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Think about a word meaning little.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-          "line": 747,
-          "questionId": 7846048,
-          "title": "Choosing an antonym",
-          "chapter": "Vocabulary",
-          "snippet": "miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Find the word that means not big.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/primaryPrim103TopUpB.ts",
-          "line": 479,
-          "questionId": 7858530,
-          "title": "Opposite of big",
-          "chapter": "Synonyms, Antonyms and Vocabulary",
-          "snippet": "miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big at all.'),"
         }
       ]
     },
@@ -1719,44 +1627,6 @@
       ]
     },
     {
-      "text": "Tired describes sleepiness, not the cheerful feeling asked for here.",
-      "count": 4,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-          "line": 426,
-          "questionId": 7850027,
-          "title": "Synonyms",
-          "chapter": "Vocabulary",
-          "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Pick the word that has a close meaning to happy.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-5th-grade-ny-next-genPrim103TopUp.ts",
-          "line": 716,
-          "questionId": 7854046,
-          "title": "Finding a synonym",
-          "chapter": "Vocabulary",
-          "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Look for a word that means glad or cheerful.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-          "line": 503,
-          "questionId": 7853032,
-          "title": "Words that mean the same",
-          "chapter": "Vocabulary and Words",
-          "snippet": "miss('tired', 'tired describes sleepiness, not the cheerful feeling asked for here.', 'Find a word that means cheerful.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/readingVocab5thPrim103TopUpB.ts",
-          "line": 572,
-          "questionId": 7831536,
-          "title": "What a synonym is",
-          "chapter": "Synonyms and Antonyms",
-          "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Find a word that matches happy in meaning.'),"
-        }
-      ]
-    },
-    {
       "text": "100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.",
       "count": 3,
       "examples": [
@@ -1843,36 +1713,6 @@
           "title": "Days in a week",
           "chapter": "General Knowledge and the World",
           "snippet": "miss('12', '12 belongs to months in a year, but the week has seven days.', 'A week has fewer days than that.'),"
-        }
-      ]
-    },
-    {
-      "text": "12 is a months-in-a-year fact, not the seven-day week.",
-      "count": 3,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/col-basic-geometry-and-measurementPrim103TopUp.ts",
-          "line": 716,
-          "questionId": 7817046,
-          "title": "Days in a week",
-          "chapter": "Time",
-          "snippet": "miss('12', '12 is a months-in-a-year fact, not the seven-day week.', 'A week runs from one day name back to the same day name.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-          "line": 656,
-          "questionId": 7853042,
-          "title": "Days in a week",
-          "chapter": "Measurement and Time",
-          "snippet": "miss('12', '12 is a months-in-a-year fact, not the seven-day week.', 'Count the days: Sunday through Saturday.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/naplanYear3Prim103TopUp.ts",
-          "line": 327,
-          "questionId": 7845020,
-          "title": "Days in a week",
-          "chapter": "Measurement - time",
-          "snippet": "miss('12', '12 is a months-in-a-year fact, not the seven-day week.', 'A week is much shorter than that.'),"
         }
       ]
     },
@@ -1993,66 +1833,6 @@
           "title": "Multiplying two fractions",
           "chapter": "Multiplying Fractions",
           "snippet": "miss('2/6', '2/6 changes the denominator as if this were multiplication, but like-fraction addition keeps the same denominator.', 'Multiply the tops too: 1 x 1 = 1.'),"
-        }
-      ]
-    },
-    {
-      "text": "24 belongs to hours in a day; minutes in an hour use 60.",
-      "count": 3,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/col-basic-geometry-and-measurementPrim103TopUp.ts",
-          "line": 641,
-          "questionId": 7817041,
-          "title": "Minutes in an hour",
-          "chapter": "Time",
-          "snippet": "miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'A clock face is divided into 60 minutes.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-          "line": 641,
-          "questionId": 7853041,
-          "title": "Telling time",
-          "chapter": "Measurement and Time",
-          "snippet": "miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'Think about the minute marks on a clock.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/naplanYear3Prim103TopUp.ts",
-          "line": 313,
-          "questionId": 7845019,
-          "title": "Minutes in an hour",
-          "chapter": "Measurement - time",
-          "snippet": "miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'Count the minute marks around a clock.'),"
-        }
-      ]
-    },
-    {
-      "text": "24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.",
-      "count": 3,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
-          "line": 154,
-          "questionId": 7810009,
-          "title": "Fact family",
-          "chapter": "Division",
-          "snippet": "miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Division and multiplication are opposites here.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-          "line": 365,
-          "questionId": 7853023,
-          "title": "Splitting into teams",
-          "chapter": "Word Problems",
-          "snippet": "miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Split 28 into 4 equal groups.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/timesTablesPrim103TopUp.ts",
-          "line": 739,
-          "questionId": 7807047,
-          "title": "Find the missing factor",
-          "chapter": "Missing number facts",
-          "snippet": "miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Ask how many fours make 28.'),"
         }
       ]
     },
@@ -2207,36 +1987,6 @@
       ]
     },
     {
-      "text": "A clock is for time, but length is measured with tools like a ruler or tape measure.",
-      "count": 3,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/basicGeometryPrim103TopUpB.ts",
-          "line": 727,
-          "questionId": 7808547,
-          "title": "Choose the right tool",
-          "chapter": "Putting it together",
-          "snippet": "miss('A clock', 'A clock is for time, but length is measured with tools like a ruler or tape measure.', 'To measure length, use a ruler.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-          "line": 472,
-          "questionId": 7851030,
-          "title": "Measuring length",
-          "chapter": "Shapes and Measurement",
-          "snippet": "miss('A clock', 'A clock is for time, but length is measured with tools like a ruler or tape measure.', 'You need a tool with marks for length.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-          "line": 669,
-          "questionId": 7853043,
-          "title": "Measuring length",
-          "chapter": "Measurement and Time",
-          "snippet": "miss('a clock', 'a clock is for time, but length is measured with tools like a ruler or tape measure.', 'Length means how long something is.'),"
-        }
-      ]
-    },
-    {
       "text": "A constant function graphs as a horizontal line, which is still linear.",
       "count": 3,
       "examples": [
@@ -2295,55 +2045,220 @@
           "snippet": "miss('-8', 'A negative exponent does not make the result negative; it means a reciprocal.', 'A negative exponent flips the base into a fraction.'),"
         }
       ]
+    },
+    {
+      "text": "A negative exponent does not make the value negative; it means take the reciprocal.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-8th-grade-mathHigh103TopUpA.ts",
+          "line": 122,
+          "questionId": 7950007,
+          "title": "Negative exponent value",
+          "chapter": "Exponents and Scientific Notation",
+          "snippet": "miss('-9', 'A negative exponent does not make the value negative; it means take the reciprocal.', 'Negative exponent means reciprocal, not negative.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-8th-grade-mathHighTopUp.ts",
+          "line": 46,
+          "questionId": 7503002,
+          "title": "Negative exponent",
+          "chapter": "Number Systems, Exponents, and Scientific Notation",
+          "snippet": "miss('-8', 'A negative exponent does not make the value negative; it means take the reciprocal.', 'Negative exponent means reciprocal, not negative number.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-geometryHigh103TopUpA.ts",
+          "line": 304,
+          "questionId": 7957019,
+          "title": "Negative exponent",
+          "chapter": "Properties of exponents and scientific notation",
+          "snippet": "miss('-9', 'A negative exponent does not make the value negative; it means take the reciprocal.', 'A negative exponent flips the base into a fraction.'),"
+        }
+      ]
+    },
+    {
+      "text": "A period ends a statement; a question needs the mark that shows someone is asking something.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+          "line": 592,
+          "questionId": 7850038,
+          "title": "End punctuation",
+          "chapter": "Writing and Punctuation",
+          "snippet": "miss('A period', 'A period ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence is asking something.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
+          "line": 838,
+          "questionId": 7851054,
+          "title": "End punctuation",
+          "chapter": "Grammar and Writing",
+          "snippet": "miss('A period (.)', 'A period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'Questions ask something and need a special mark.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
+          "line": 726,
+          "questionId": 7855046,
+          "title": "End punctuation",
+          "chapter": "Grammar and Writing",
+          "snippet": "miss('A period (.)', 'A period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence asks something.'),"
+        }
+      ]
+    },
+    {
+      "text": "AMLA seat was confirmed as Frankfurt.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
+          "line": 2174,
+          "questionId": 5110075,
+          "title": "EU AML Authority",
+          "chapter": "Applied Scenario",
+          "snippet": "miss('Brussels, Belgium', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
+          "line": 2175,
+          "questionId": 5110075,
+          "title": "EU AML Authority",
+          "chapter": "Applied Scenario",
+          "snippet": "miss('Paris, France', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
+          "line": 2176,
+          "questionId": 5110075,
+          "title": "EU AML Authority",
+          "chapter": "Applied Scenario",
+          "snippet": "miss('Dublin, Ireland', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),"
+        }
+      ]
+    },
+    {
+      "text": "An obtuse angle is bigger than a right angle, not smaller.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/basicGeometryPrim103TopUpB.ts",
+          "line": 273,
+          "questionId": 7808517,
+          "title": "Acute angle",
+          "chapter": "Types of angles",
+          "snippet": "miss('An obtuse angle', 'An obtuse angle is bigger than a right angle, not smaller.', 'Acute angles are the small, narrow ones.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/class4MathPrim103TopUp.ts",
+          "line": 532,
+          "questionId": 7803034,
+          "title": "Acute Angle",
+          "chapter": "Angles",
+          "snippet": "miss('An obtuse angle', 'An obtuse angle is bigger than a right angle, not smaller.', 'Acute angles are the small, sharp ones.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-basic-geometry-and-measurementPrim103TopUp.ts",
+          "line": 152,
+          "questionId": 7817009,
+          "title": "Naming a small angle",
+          "chapter": "Angles",
+          "snippet": "miss('An obtuse angle', 'An obtuse angle is bigger than a right angle, not smaller.', 'Acute angles are the small, sharp ones.'),"
+        }
+      ]
+    },
+    {
+      "text": "Angry names a different mood; a synonym should stay close to happy.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-5th-grade-reading-and-vocabPrim103TopUp.ts",
+          "line": 758,
+          "questionId": 7835049,
+          "title": "Choosing a synonym",
+          "chapter": "Vocabulary",
+          "snippet": "miss('Angry', 'Angry names a different mood; a synonym should stay close to happy.', 'A synonym means almost the same thing.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
+          "line": 414,
+          "questionId": 7856026,
+          "title": "Synonyms",
+          "chapter": "Vocabulary",
+          "snippet": "miss('Angry', 'Angry names a different mood; a synonym should stay close to happy.', 'Look for the word with a similar meaning.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/readingVocab5thPrim103TopUpB.ts",
+          "line": 571,
+          "questionId": 7831536,
+          "title": "What a synonym is",
+          "chapter": "Synonyms and Antonyms",
+          "snippet": "miss('Angry', 'Angry names a different mood; a synonym should stay close to happy.', 'Look for a word that means happy.'),"
+        }
+      ]
+    },
+    {
+      "text": "Kilograms measures mass or weight, not the quantity named in this prompt.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
+          "line": 384,
+          "questionId": 7849024,
+          "title": "Choosing a unit",
+          "chapter": "Measurement and Time",
+          "snippet": "miss('Kilograms', 'Kilograms measures mass or weight, not the quantity named in this prompt.', 'You want to measure length, not weight.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/naplanYear3Prim103TopUp.ts",
+          "line": 250,
+          "questionId": 7845015,
+          "title": "Best unit for length",
+          "chapter": "Measurement - length and mass",
+          "snippet": "miss('Kilograms', 'Kilograms measures mass or weight, not the quantity named in this prompt.', 'Height is about how long, not how heavy.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
+          "line": 216,
+          "questionId": 7858013,
+          "title": "Which is longer",
+          "chapter": "Shapes and Measuring",
+          "snippet": "miss('Kilograms', 'Kilograms measures mass or weight, not the quantity named in this prompt.', 'Height is about length, not weight.'),"
+        }
+      ]
+    },
+    {
+      "text": "Lines with equal slopes but different intercepts never intersect.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-algebra-1-ny-next-genHigh103TopUpA.ts",
+          "line": 477,
+          "questionId": 7951028,
+          "title": "Systems with no solution",
+          "chapter": "Systems of linear equations",
+          "snippet": "miss('Exactly one solution', 'Lines with equal slopes but different intercepts never intersect.', 'Compare the slopes before assuming they cross.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-integrated-math-1HighTopUp.ts",
+          "line": 399,
+          "questionId": 7550025,
+          "title": "Number of solutions",
+          "chapter": "Systems and Constraints",
+          "snippet": "miss('One solution', 'Lines with equal slopes but different intercepts never intersect.', 'Compare the slopes and intercepts of the two lines.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/mathDiagnosticsUniv103TopUpA.ts",
+          "line": 390,
+          "questionId": 7701025,
+          "title": "Number of Solutions",
+          "chapter": "Systems of Equations",
+          "snippet": "miss('Exactly one solution', 'Lines with equal slopes but different intercepts never intersect.', 'Compare the slopes of the two lines.'),"
+        }
+      ]
     }
   ],
   "examplesByFlag": {
     "repeated-why-wrong": [
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-        "line": 531,
-        "questionId": 7850034,
-        "title": "Adjectives",
-        "chapter": "Grammar",
-        "field": "whyWrong",
-        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-        "line": 730,
-        "questionId": 7852047,
-        "title": "Identifying nouns",
-        "chapter": "Grammar and Language",
-        "field": "whyWrong",
-        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
-        "line": 458,
-        "questionId": 7856029,
-        "title": "Identifying a noun",
-        "chapter": "Grammar",
-        "field": "whyWrong",
-        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
-        "extractor": "object"
-      },
       {
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
@@ -2387,51 +2302,6 @@
         "value": "These multiply to 12 but add to 13, not 7.",
         "detail": "Same normalized whyWrong appears 7 times.",
         "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'The two numbers must sum to the middle coefficient.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-        "line": 793,
-        "questionId": 7851051,
-        "title": "Finding the noun",
-        "chapter": "Grammar and Writing",
-        "field": "whyWrong",
-        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-        "line": 563,
-        "questionId": 7853036,
-        "title": "Finding the noun",
-        "chapter": "Grammar Basics",
-        "field": "whyWrong",
-        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-        "line": 666,
-        "questionId": 7855042,
-        "title": "Identifying a noun",
-        "chapter": "Grammar and Writing",
-        "field": "whyWrong",
-        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2492,21 +2362,6 @@
         "value": "These multiply to 12 but add to 13, not 7.",
         "detail": "Same normalized whyWrong appears 7 times.",
         "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers add to the coefficient of x.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 91,
-        "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-        "line": 487,
-        "questionId": 7846031,
-        "title": "Finding the noun",
-        "chapter": "Grammar",
-        "field": "whyWrong",
-        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-        "detail": "Same normalized whyWrong appears 7 times.",
-        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),",
         "extractor": "object"
       },
       {
@@ -2574,14 +2429,14 @@
         "label": "Repeated whyWrong",
         "priority": 90,
         "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-        "line": 425,
-        "questionId": 7850027,
-        "title": "Synonyms",
-        "chapter": "Vocabulary",
+        "line": 531,
+        "questionId": 7850034,
+        "title": "Adjectives",
+        "chapter": "Grammar",
         "field": "whyWrong",
-        "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),",
         "extractor": "object"
       },
       {
@@ -2603,36 +2458,6 @@
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
         "priority": 90,
-        "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-        "line": 504,
-        "questionId": 7849032,
-        "title": "Synonyms",
-        "chapter": "Reading and Vocabulary",
-        "field": "whyWrong",
-        "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
-        "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 90,
-        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-        "line": 684,
-        "questionId": 7852044,
-        "title": "Synonyms",
-        "chapter": "Vocabulary and Word Meaning",
-        "field": "whyWrong",
-        "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
-        "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 90,
         "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
         "line": 699,
         "questionId": 7852045,
@@ -2642,6 +2467,21 @@
         "value": "old is close in meaning to ancient; the prompt wants a word pointing the other way.",
         "detail": "Same normalized whyWrong appears 6 times.",
         "snippet": "miss('old', 'old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the opposite.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 90,
+        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 730,
+        "questionId": 7852047,
+        "title": "Identifying nouns",
+        "chapter": "Grammar and Language",
+        "field": "whyWrong",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
+        "detail": "Same normalized whyWrong appears 6 times.",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2672,6 +2512,21 @@
         "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
         "detail": "Same normalized whyWrong appears 6 times.",
         "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 90,
+        "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 458,
+        "questionId": 7856029,
+        "title": "Identifying a noun",
+        "chapter": "Grammar",
+        "field": "whyWrong",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
+        "detail": "Same normalized whyWrong appears 6 times.",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2738,15 +2593,15 @@
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
         "priority": 90,
-        "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-        "line": 502,
-        "questionId": 7853032,
-        "title": "Words that mean the same",
-        "chapter": "Vocabulary and Words",
+        "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
+        "line": 793,
+        "questionId": 7851051,
+        "title": "Finding the noun",
+        "chapter": "Grammar and Writing",
         "field": "whyWrong",
-        "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Look for a word with a good feeling.'),",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2762,6 +2617,21 @@
         "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
         "detail": "Same normalized whyWrong appears 6 times.",
         "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the reverse.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 90,
+        "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
+        "line": 666,
+        "questionId": 7855042,
+        "title": "Identifying a noun",
+        "chapter": "Grammar and Writing",
+        "field": "whyWrong",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
+        "detail": "Same normalized whyWrong appears 6 times.",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
         "extractor": "object"
       },
       {
@@ -2844,14 +2714,14 @@
         "label": "Repeated whyWrong",
         "priority": 90,
         "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-        "line": 730,
-        "questionId": 7846047,
-        "title": "Choosing a synonym",
-        "chapter": "Vocabulary",
+        "line": 487,
+        "questionId": 7846031,
+        "title": "Finding the noun",
+        "chapter": "Grammar",
         "field": "whyWrong",
-        "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
         "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),",
         "extractor": "object"
       },
       {
@@ -2887,16 +2757,31 @@
       {
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
-        "priority": 90,
-        "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
-        "line": 508,
-        "questionId": 7858032,
-        "title": "Words that mean the same",
-        "chapter": "Vocabulary and Word Meanings",
+        "priority": 89,
+        "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+        "line": 425,
+        "questionId": 7850027,
+        "title": "Synonyms",
+        "chapter": "Vocabulary",
         "field": "whyWrong",
         "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
-        "detail": "Same normalized whyWrong appears 6 times.",
-        "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Find a word that also means feeling good.'),",
+        "detail": "Same normalized whyWrong appears 5 times.",
+        "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 89,
+        "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
+        "line": 504,
+        "questionId": 7849032,
+        "title": "Synonyms",
+        "chapter": "Reading and Vocabulary",
+        "field": "whyWrong",
+        "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+        "detail": "Same normalized whyWrong appears 5 times.",
+        "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
         "extractor": "object"
       },
       {
@@ -2912,6 +2797,21 @@
         "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
         "detail": "Same normalized whyWrong appears 5 times.",
         "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top number is exactly half of the bottom.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 89,
+        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 684,
+        "questionId": 7852044,
+        "title": "Synonyms",
+        "chapter": "Vocabulary and Word Meaning",
+        "field": "whyWrong",
+        "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+        "detail": "Same normalized whyWrong appears 5 times.",
+        "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),",
         "extractor": "object"
       },
       {
@@ -3052,6 +2952,36 @@
       {
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
+        "priority": 89,
+        "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
+        "line": 730,
+        "questionId": 7846047,
+        "title": "Choosing a synonym",
+        "chapter": "Vocabulary",
+        "field": "whyWrong",
+        "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+        "detail": "Same normalized whyWrong appears 5 times.",
+        "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 89,
+        "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
+        "line": 508,
+        "questionId": 7858032,
+        "title": "Words that mean the same",
+        "chapter": "Vocabulary and Word Meanings",
+        "field": "whyWrong",
+        "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+        "detail": "Same normalized whyWrong appears 5 times.",
+        "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Find a word that also means feeling good.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
         "priority": 88,
         "file": "src/data/questionCatalog/arithmeticPrim103TopUp.ts",
         "line": 232,
@@ -3128,51 +3058,6 @@
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
         "priority": 88,
-        "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-        "line": 426,
-        "questionId": 7850027,
-        "title": "Synonyms",
-        "chapter": "Vocabulary",
-        "field": "whyWrong",
-        "value": "Tired describes sleepiness, not the cheerful feeling asked for here.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Pick the word that has a close meaning to happy.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-        "line": 592,
-        "questionId": 7850038,
-        "title": "End punctuation",
-        "chapter": "Writing and Punctuation",
-        "field": "whyWrong",
-        "value": "A period ends a statement; a question needs the mark that shows someone is asking something.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('A period', 'A period ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence is asking something.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-        "line": 520,
-        "questionId": 7849033,
-        "title": "Antonyms",
-        "chapter": "Reading and Vocabulary",
-        "field": "whyWrong",
-        "value": "Tall is about height; the prompt is looking for the size word that means not big.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('Tall', 'Tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
         "file": "src/data/questionCatalog/col-5th-grade-ny-next-genPrim103TopUp.ts",
         "line": 685,
         "questionId": 7854044,
@@ -3182,21 +3067,6 @@
         "value": "The suffix -less means without, not full of.",
         "detail": "Same normalized whyWrong appears 4 times.",
         "snippet": "miss('Full of fear', 'The suffix -less means without, not full of.', 'The suffix -less takes the fear away.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/col-5th-grade-ny-next-genPrim103TopUp.ts",
-        "line": 716,
-        "questionId": 7854046,
-        "title": "Finding a synonym",
-        "chapter": "Vocabulary",
-        "field": "whyWrong",
-        "value": "Tired describes sleepiness, not the cheerful feeling asked for here.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Look for a word that means glad or cheerful.'),",
         "extractor": "object"
       },
       {
@@ -3392,81 +3262,6 @@
         "value": "Neither is still part of the even-or-odd number family; check the ones digit instead.",
         "detail": "Same normalized whyWrong appears 4 times.",
         "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Look at the ones digit: 4 is even.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-        "line": 838,
-        "questionId": 7851054,
-        "title": "End punctuation",
-        "chapter": "Grammar and Writing",
-        "field": "whyWrong",
-        "value": "A period (.) ends a statement; a question needs the mark that shows someone is asking something.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('A period (.)', 'A period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'Questions ask something and need a special mark.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-        "line": 503,
-        "questionId": 7853032,
-        "title": "Words that mean the same",
-        "chapter": "Vocabulary and Words",
-        "field": "whyWrong",
-        "value": "tired describes sleepiness, not the cheerful feeling asked for here.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('tired', 'tired describes sleepiness, not the cheerful feeling asked for here.', 'Find a word that means cheerful.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-        "line": 518,
-        "questionId": 7853033,
-        "title": "Opposite words",
-        "chapter": "Vocabulary and Words",
-        "field": "whyWrong",
-        "value": "tall is about height; the prompt is looking for the size word that means not big.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Think about a word meaning little.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-        "line": 608,
-        "questionId": 7853039,
-        "title": "Choosing the right punctuation",
-        "chapter": "Grammar Basics",
-        "field": "whyWrong",
-        "value": "a period (.) ends a statement; a question needs the mark that shows someone is asking something.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('a period (.)', 'a period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence asks something.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-        "line": 726,
-        "questionId": 7855046,
-        "title": "End punctuation",
-        "chapter": "Grammar and Writing",
-        "field": "whyWrong",
-        "value": "A period (.) ends a statement; a question needs the mark that shows someone is asking something.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('A period (.)', 'A period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence asks something.'),",
         "extractor": "object"
       },
       {
@@ -3728,21 +3523,6 @@
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
         "priority": 88,
-        "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-        "line": 747,
-        "questionId": 7846048,
-        "title": "Choosing an antonym",
-        "chapter": "Vocabulary",
-        "field": "whyWrong",
-        "value": "tall is about height; the prompt is looking for the size word that means not big.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Find the word that means not big.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
         "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
         "line": 81,
         "questionId": 337007,
@@ -3802,51 +3582,6 @@
       {
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/primaryPrim103TopUpB.ts",
-        "line": 479,
-        "questionId": 7858530,
-        "title": "Opposite of big",
-        "chapter": "Synonyms, Antonyms and Vocabulary",
-        "field": "whyWrong",
-        "value": "tall is about height; the prompt is looking for the size word that means not big.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big at all.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 88,
-        "file": "src/data/questionCatalog/readingVocab5thPrim103TopUpB.ts",
-        "line": 572,
-        "questionId": 7831536,
-        "title": "What a synonym is",
-        "chapter": "Synonyms and Antonyms",
-        "field": "whyWrong",
-        "value": "Tired describes sleepiness, not the cheerful feeling asked for here.",
-        "detail": "Same normalized whyWrong appears 4 times.",
-        "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Find a word that matches happy in meaning.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 87,
-        "file": "src/data/questionCatalog/arithmeticPrim103TopUp.ts",
-        "line": 569,
-        "questionId": 7806036,
-        "title": "Find the next number",
-        "chapter": "Number patterns",
-        "field": "whyWrong",
-        "value": "This doubles 8 instead of adding 2.",
-        "detail": "Same normalized whyWrong appears 3 times.",
-        "snippet": "miss('16', 'This doubles 8 instead of adding 2.', 'The numbers go up by 2: 8 then 10.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
         "priority": 87,
         "file": "src/data/questionCatalog/basicGeometryPrim103TopUpB.ts",
         "line": 273,
@@ -3857,21 +3592,6 @@
         "value": "An obtuse angle is bigger than a right angle, not smaller.",
         "detail": "Same normalized whyWrong appears 3 times.",
         "snippet": "miss('An obtuse angle', 'An obtuse angle is bigger than a right angle, not smaller.', 'Acute angles are the small, narrow ones.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 87,
-        "file": "src/data/questionCatalog/basicGeometryPrim103TopUpB.ts",
-        "line": 727,
-        "questionId": 7808547,
-        "title": "Choose the right tool",
-        "chapter": "Putting it together",
-        "field": "whyWrong",
-        "value": "A clock is for time, but length is measured with tools like a ruler or tape measure.",
-        "detail": "Same normalized whyWrong appears 3 times.",
-        "snippet": "miss('A clock', 'A clock is for time, but length is measured with tools like a ruler or tape measure.', 'To measure length, use a ruler.'),",
         "extractor": "object"
       },
       {
@@ -3947,21 +3667,6 @@
         "value": "2 is not enough sides to enclose the shape being described.",
         "detail": "Same normalized whyWrong appears 3 times.",
         "snippet": "miss('2', '2 is not enough sides to enclose the shape being described.', 'A triangle needs more than two sides.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 87,
-        "file": "src/data/questionCatalog/class2MathPrim103TopUp.ts",
-        "line": 792,
-        "questionId": 7801051,
-        "title": "Continue the pattern",
-        "chapter": "Patterns and Shapes",
-        "field": "whyWrong",
-        "value": "This doubles 8 instead of adding 2.",
-        "detail": "Same normalized whyWrong appears 3 times.",
-        "snippet": "miss('16', 'This doubles 8 instead of adding 2.', 'Each step adds 2, so 8 + 2 comes next.'),",
         "extractor": "object"
       },
       {
@@ -4097,6 +3802,261 @@
         "value": "100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.",
         "detail": "Same normalized whyWrong appears 3 times.",
         "snippet": "miss('100', '100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.', 'Division makes the number smaller here, not bigger.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
+        "line": 524,
+        "questionId": 7810033,
+        "title": "Right unit for length",
+        "chapter": "Measurement",
+        "field": "whyWrong",
+        "value": "Liters is for liquid volume, not measuring how long something is.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('Liters', 'Liters is for liquid volume, not measuring how long something is.', 'You want to measure how long the pencil is.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+        "line": 137,
+        "questionId": 7850008,
+        "title": "Division as missing factor",
+        "chapter": "Division",
+        "field": "whyWrong",
+        "value": "15 takes away 5 once, but division asks how many equal groups fit in 20.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('15', '15 takes away 5 once, but division asks how many equal groups fit in 20.', 'Ask how many 5s fit inside 20.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+        "line": 139,
+        "questionId": 7850008,
+        "title": "Division as missing factor",
+        "chapter": "Division",
+        "field": "whyWrong",
+        "value": "100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('100', '100 grows 20 by groups of 5, but the prompt asks how many 5s fit into 20.', 'Dividing makes the number smaller, not bigger.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+        "line": 426,
+        "questionId": 7850027,
+        "title": "Synonyms",
+        "chapter": "Vocabulary",
+        "field": "whyWrong",
+        "value": "Tired describes sleepiness, not the cheerful feeling asked for here.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Pick the word that has a close meaning to happy.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+        "line": 441,
+        "questionId": 7850028,
+        "title": "Antonyms",
+        "chapter": "Vocabulary",
+        "field": "whyWrong",
+        "value": "Open does not undo begin; look for the word that means the action has finished.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('Open', 'Open does not undo begin; look for the word that means the action has finished.', 'Think about what happens at the finish.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+        "line": 501,
+        "questionId": 7850032,
+        "title": "Nouns",
+        "chapter": "Grammar",
+        "field": "whyWrong",
+        "value": "slept describes an action or state, so it is a verb rather than a noun.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('slept', 'slept describes an action or state, so it is a verb rather than a noun.', 'A noun names a person, place, animal, or thing.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+        "line": 592,
+        "questionId": 7850038,
+        "title": "End punctuation",
+        "chapter": "Writing and Punctuation",
+        "field": "whyWrong",
+        "value": "A period ends a statement; a question needs the mark that shows someone is asking something.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('A period', 'A period ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence is asking something.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
+        "line": 367,
+        "questionId": 7849023,
+        "title": "Minutes in an hour",
+        "chapter": "Measurement and Time",
+        "field": "whyWrong",
+        "value": "100 treats time like a base-100 measure, but an hour has 60 minutes.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('100', '100 treats time like a base-100 measure, but an hour has 60 minutes.', 'Think about the numbers around a clock face.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
+        "line": 384,
+        "questionId": 7849024,
+        "title": "Choosing a unit",
+        "chapter": "Measurement and Time",
+        "field": "whyWrong",
+        "value": "Kilograms measures mass or weight, not the quantity named in this prompt.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('Kilograms', 'Kilograms measures mass or weight, not the quantity named in this prompt.', 'You want to measure length, not weight.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
+        "line": 520,
+        "questionId": 7849033,
+        "title": "Antonyms",
+        "chapter": "Reading and Vocabulary",
+        "field": "whyWrong",
+        "value": "Tall is about height; the prompt is looking for the size word that means not big.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('Tall', 'Tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
+        "line": 565,
+        "questionId": 7849036,
+        "title": "Finding a noun",
+        "chapter": "Grammar",
+        "field": "whyWrong",
+        "value": "slept describes an action or state, so it is a verb rather than a noun.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('slept', 'slept describes an action or state, so it is a verb rather than a noun.', 'A noun names a person, place, animal, or thing.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-4th-grade-mathPrim103TopUp.ts",
+        "line": 31,
+        "questionId": 7811001,
+        "title": "Subtracting with borrowing",
+        "chapter": "Multi-Digit Addition and Subtraction",
+        "field": "whyWrong",
+        "value": "You subtracted the smaller digit from the larger in each column instead of borrowing.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('464', 'You subtracted the smaller digit from the larger in each column instead of borrowing.', 'When the top digit is smaller, borrow from the next column.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-4th-grade-mathPrim103TopUp.ts",
+        "line": 230,
+        "questionId": 7811014,
+        "title": "Checking division with multiplication",
+        "chapter": "Division",
+        "field": "whyWrong",
+        "value": "This adds the numbers instead of multiplying them.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('9 + 7 = 16', 'This adds the numbers instead of multiplying them.', 'To check division, multiply the answer by the divisor.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-4th-grade-mathPrim103TopUp.ts",
+        "line": 416,
+        "questionId": 7811026,
+        "title": "Adding like fractions",
+        "chapter": "Adding and Comparing Fractions",
+        "field": "whyWrong",
+        "value": "3/10 changes the denominator; when the bottoms already match, keep that bottom and add only the tops.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('3/10', '3/10 changes the denominator; when the bottoms already match, keep that bottom and add only the tops.', 'When bottoms match, only add the tops.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-4th-grade-mathPrim103TopUp.ts",
+        "line": 816,
+        "questionId": 7811052,
+        "title": "Area of a rectangle",
+        "chapter": "Measurement and Word Problems",
+        "field": "whyWrong",
+        "value": "You added the sides instead of multiplying them.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('20 square cm', 'You added the sides instead of multiplying them.', 'Area is length times width.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 107,
+        "questionId": 7852006,
+        "title": "Subtracting with borrowing",
+        "chapter": "Multi-Digit Addition and Subtraction",
+        "field": "whyWrong",
+        "value": "You subtracted the smaller digit from the larger in each column instead of borrowing.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('4,174', 'You subtracted the smaller digit from the larger in each column instead of borrowing.', 'When the top digit is smaller, you must borrow from the next place.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 138,
+        "questionId": 7852008,
+        "title": "Subtraction word problem",
+        "chapter": "Multi-Digit Addition and Subtraction",
+        "field": "whyWrong",
+        "value": "That adds the numbers instead of subtracting.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('9,225', 'That adds the numbers instead of subtracting.', 'Empty seats means you take away the filled ones.'),",
         "extractor": "object"
       }
     ],
@@ -6554,51 +6514,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 91,
-      "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-      "line": 531,
-      "questionId": 7850034,
-      "title": "Adjectives",
-      "chapter": "Grammar",
-      "field": "whyWrong",
-      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 91,
-      "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-      "line": 730,
-      "questionId": 7852047,
-      "title": "Identifying nouns",
-      "chapter": "Grammar and Language",
-      "field": "whyWrong",
-      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 91,
-      "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
-      "line": 458,
-      "questionId": 7856029,
-      "title": "Identifying a noun",
-      "chapter": "Grammar",
-      "field": "whyWrong",
-      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 91,
       "file": "src/data/questionCatalog/col-algebra-1-ny-next-genHigh103TopUpB.ts",
       "line": 358,
       "questionId": 7951521,
@@ -6638,51 +6553,6 @@
       "value": "These multiply to 12 but add to 13, not 7.",
       "detail": "Same normalized whyWrong appears 7 times.",
       "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'The two numbers must sum to the middle coefficient.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 91,
-      "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-      "line": 793,
-      "questionId": 7851051,
-      "title": "Finding the noun",
-      "chapter": "Grammar and Writing",
-      "field": "whyWrong",
-      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 91,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 563,
-      "questionId": 7853036,
-      "title": "Finding the noun",
-      "chapter": "Grammar Basics",
-      "field": "whyWrong",
-      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 91,
-      "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-      "line": 666,
-      "questionId": 7855042,
-      "title": "Identifying a noun",
-      "chapter": "Grammar and Writing",
-      "field": "whyWrong",
-      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
       "extractor": "object"
     },
     {
@@ -6743,21 +6613,6 @@
       "value": "These multiply to 12 but add to 13, not 7.",
       "detail": "Same normalized whyWrong appears 7 times.",
       "snippet": "miss('(x + 1)(x + 12)', 'These multiply to 12 but add to 13, not 7.', 'Check that the two numbers add to the coefficient of x.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 91,
-      "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-      "line": 487,
-      "questionId": 7846031,
-      "title": "Finding the noun",
-      "chapter": "Grammar",
-      "field": "whyWrong",
-      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
-      "detail": "Same normalized whyWrong appears 7 times.",
-      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),",
       "extractor": "object"
     },
     {
@@ -6825,14 +6680,14 @@
       "label": "Repeated whyWrong",
       "priority": 90,
       "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-      "line": 425,
-      "questionId": 7850027,
-      "title": "Synonyms",
-      "chapter": "Vocabulary",
+      "line": 531,
+      "questionId": 7850034,
+      "title": "Adjectives",
+      "chapter": "Grammar",
       "field": "whyWrong",
-      "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'An adjective tells what something is like.'),",
       "extractor": "object"
     },
     {
@@ -6854,36 +6709,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 90,
-      "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-      "line": 504,
-      "questionId": 7849032,
-      "title": "Synonyms",
-      "chapter": "Reading and Vocabulary",
-      "field": "whyWrong",
-      "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
-      "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 90,
-      "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
-      "line": 684,
-      "questionId": 7852044,
-      "title": "Synonyms",
-      "chapter": "Vocabulary and Word Meaning",
-      "field": "whyWrong",
-      "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
-      "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 90,
       "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
       "line": 699,
       "questionId": 7852045,
@@ -6893,6 +6718,21 @@
       "value": "old is close in meaning to ancient; the prompt wants a word pointing the other way.",
       "detail": "Same normalized whyWrong appears 6 times.",
       "snippet": "miss('old', 'old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the opposite.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 90,
+      "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+      "line": 730,
+      "questionId": 7852047,
+      "title": "Identifying nouns",
+      "chapter": "Grammar and Language",
+      "field": "whyWrong",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
+      "detail": "Same normalized whyWrong appears 6 times.",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
       "extractor": "object"
     },
     {
@@ -6923,6 +6763,21 @@
       "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
       "detail": "Same normalized whyWrong appears 6 times.",
       "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym is the opposite, so look for new.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 90,
+      "file": "src/data/questionCatalog/col-6th-grade-ny-next-genPrim103TopUp.ts",
+      "line": 458,
+      "questionId": 7856029,
+      "title": "Identifying a noun",
+      "chapter": "Grammar",
+      "field": "whyWrong",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
+      "detail": "Same normalized whyWrong appears 6 times.",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
       "extractor": "object"
     },
     {
@@ -6989,15 +6844,15 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 90,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 502,
-      "questionId": 7853032,
-      "title": "Words that mean the same",
-      "chapter": "Vocabulary and Words",
+      "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
+      "line": 793,
+      "questionId": 7851051,
+      "title": "Finding the noun",
+      "chapter": "Grammar and Writing",
       "field": "whyWrong",
-      "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Look for a word with a good feeling.'),",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
       "extractor": "object"
     },
     {
@@ -7013,6 +6868,21 @@
       "value": "Old is close in meaning to ancient; the prompt wants a word pointing the other way.",
       "detail": "Same normalized whyWrong appears 6 times.",
       "snippet": "miss('Old', 'Old is close in meaning to ancient; the prompt wants a word pointing the other way.', 'An antonym means the reverse.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 90,
+      "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
+      "line": 666,
+      "questionId": 7855042,
+      "title": "Identifying a noun",
+      "chapter": "Grammar and Writing",
+      "field": "whyWrong",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
+      "detail": "Same normalized whyWrong appears 6 times.",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, or thing.'),",
       "extractor": "object"
     },
     {
@@ -7095,14 +6965,14 @@
       "label": "Repeated whyWrong",
       "priority": 90,
       "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-      "line": 730,
-      "questionId": 7846047,
-      "title": "Choosing a synonym",
-      "chapter": "Vocabulary",
+      "line": 487,
+      "questionId": 7846031,
+      "title": "Finding the noun",
+      "chapter": "Grammar",
       "field": "whyWrong",
-      "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
       "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+      "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun is a person, place, animal or thing.'),",
       "extractor": "object"
     },
     {
@@ -7138,16 +7008,31 @@
     {
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
-      "priority": 90,
-      "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
-      "line": 508,
-      "questionId": 7858032,
-      "title": "Words that mean the same",
-      "chapter": "Vocabulary and Word Meanings",
+      "priority": 89,
+      "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+      "line": 425,
+      "questionId": 7850027,
+      "title": "Synonyms",
+      "chapter": "Vocabulary",
       "field": "whyWrong",
       "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
-      "detail": "Same normalized whyWrong appears 6 times.",
-      "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Find a word that also means feeling good.'),",
+      "detail": "Same normalized whyWrong appears 5 times.",
+      "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 89,
+      "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
+      "line": 504,
+      "questionId": 7849032,
+      "title": "Synonyms",
+      "chapter": "Reading and Vocabulary",
+      "field": "whyWrong",
+      "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "detail": "Same normalized whyWrong appears 5 times.",
+      "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
       "extractor": "object"
     },
     {
@@ -7163,6 +7048,21 @@
       "value": "2/3 covers more than half of the whole, so it is too large for a one-half answer.",
       "detail": "Same normalized whyWrong appears 5 times.",
       "snippet": "miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top number is exactly half of the bottom.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 89,
+      "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+      "line": 684,
+      "questionId": 7852044,
+      "title": "Synonyms",
+      "chapter": "Vocabulary and Word Meaning",
+      "field": "whyWrong",
+      "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "detail": "Same normalized whyWrong appears 5 times.",
+      "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means almost the same thing.'),",
       "extractor": "object"
     },
     {
@@ -7303,6 +7203,36 @@
     {
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
+      "priority": 89,
+      "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
+      "line": 730,
+      "questionId": 7846047,
+      "title": "Choosing a synonym",
+      "chapter": "Vocabulary",
+      "field": "whyWrong",
+      "value": "sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "detail": "Same normalized whyWrong appears 5 times.",
+      "snippet": "miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'A synonym means a word with a similar meaning.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 89,
+      "file": "src/data/questionCatalog/primaryPrim103TopUpA.ts",
+      "line": 508,
+      "questionId": 7858032,
+      "title": "Words that mean the same",
+      "chapter": "Vocabulary and Word Meanings",
+      "field": "whyWrong",
+      "value": "Sad points the other way from happy; a synonym should keep the same cheerful meaning.",
+      "detail": "Same normalized whyWrong appears 5 times.",
+      "snippet": "miss('Sad', 'Sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Find a word that also means feeling good.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
       "priority": 88,
       "file": "src/data/questionCatalog/arithmeticPrim103TopUp.ts",
       "line": 232,
@@ -7379,51 +7309,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 88,
-      "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-      "line": 426,
-      "questionId": 7850027,
-      "title": "Synonyms",
-      "chapter": "Vocabulary",
-      "field": "whyWrong",
-      "value": "Tired describes sleepiness, not the cheerful feeling asked for here.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Pick the word that has a close meaning to happy.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-      "line": 592,
-      "questionId": 7850038,
-      "title": "End punctuation",
-      "chapter": "Writing and Punctuation",
-      "field": "whyWrong",
-      "value": "A period ends a statement; a question needs the mark that shows someone is asking something.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('A period', 'A period ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence is asking something.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
-      "line": 520,
-      "questionId": 7849033,
-      "title": "Antonyms",
-      "chapter": "Reading and Vocabulary",
-      "field": "whyWrong",
-      "value": "Tall is about height; the prompt is looking for the size word that means not big.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('Tall', 'Tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
       "file": "src/data/questionCatalog/col-5th-grade-ny-next-genPrim103TopUp.ts",
       "line": 685,
       "questionId": 7854044,
@@ -7433,21 +7318,6 @@
       "value": "The suffix -less means without, not full of.",
       "detail": "Same normalized whyWrong appears 4 times.",
       "snippet": "miss('Full of fear', 'The suffix -less means without, not full of.', 'The suffix -less takes the fear away.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/col-5th-grade-ny-next-genPrim103TopUp.ts",
-      "line": 716,
-      "questionId": 7854046,
-      "title": "Finding a synonym",
-      "chapter": "Vocabulary",
-      "field": "whyWrong",
-      "value": "Tired describes sleepiness, not the cheerful feeling asked for here.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Look for a word that means glad or cheerful.'),",
       "extractor": "object"
     },
     {
@@ -7643,81 +7513,6 @@
       "value": "Neither is still part of the even-or-odd number family; check the ones digit instead.",
       "detail": "Same normalized whyWrong appears 4 times.",
       "snippet": "miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Look at the ones digit: 4 is even.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-      "line": 838,
-      "questionId": 7851054,
-      "title": "End punctuation",
-      "chapter": "Grammar and Writing",
-      "field": "whyWrong",
-      "value": "A period (.) ends a statement; a question needs the mark that shows someone is asking something.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('A period (.)', 'A period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'Questions ask something and need a special mark.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 503,
-      "questionId": 7853032,
-      "title": "Words that mean the same",
-      "chapter": "Vocabulary and Words",
-      "field": "whyWrong",
-      "value": "tired describes sleepiness, not the cheerful feeling asked for here.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('tired', 'tired describes sleepiness, not the cheerful feeling asked for here.', 'Find a word that means cheerful.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 518,
-      "questionId": 7853033,
-      "title": "Opposite words",
-      "chapter": "Vocabulary and Words",
-      "field": "whyWrong",
-      "value": "tall is about height; the prompt is looking for the size word that means not big.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Think about a word meaning little.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 608,
-      "questionId": 7853039,
-      "title": "Choosing the right punctuation",
-      "chapter": "Grammar Basics",
-      "field": "whyWrong",
-      "value": "a period (.) ends a statement; a question needs the mark that shows someone is asking something.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('a period (.)', 'a period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence asks something.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
-      "line": 726,
-      "questionId": 7855046,
-      "title": "End punctuation",
-      "chapter": "Grammar and Writing",
-      "field": "whyWrong",
-      "value": "A period (.) ends a statement; a question needs the mark that shows someone is asking something.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('A period (.)', 'A period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence asks something.'),",
       "extractor": "object"
     },
     {
@@ -7979,21 +7774,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 88,
-      "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
-      "line": 747,
-      "questionId": 7846048,
-      "title": "Choosing an antonym",
-      "chapter": "Vocabulary",
-      "field": "whyWrong",
-      "value": "tall is about height; the prompt is looking for the size word that means not big.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Find the word that means not big.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
       "file": "src/data/questionCatalog/openTriviaForKidsImported.ts",
       "line": 81,
       "questionId": 337007,
@@ -8053,51 +7833,6 @@
     {
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/primaryPrim103TopUpB.ts",
-      "line": 479,
-      "questionId": 7858530,
-      "title": "Opposite of big",
-      "chapter": "Synonyms, Antonyms and Vocabulary",
-      "field": "whyWrong",
-      "value": "tall is about height; the prompt is looking for the size word that means not big.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big at all.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 88,
-      "file": "src/data/questionCatalog/readingVocab5thPrim103TopUpB.ts",
-      "line": 572,
-      "questionId": 7831536,
-      "title": "What a synonym is",
-      "chapter": "Synonyms and Antonyms",
-      "field": "whyWrong",
-      "value": "Tired describes sleepiness, not the cheerful feeling asked for here.",
-      "detail": "Same normalized whyWrong appears 4 times.",
-      "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Find a word that matches happy in meaning.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/arithmeticPrim103TopUp.ts",
-      "line": 569,
-      "questionId": 7806036,
-      "title": "Find the next number",
-      "chapter": "Number patterns",
-      "field": "whyWrong",
-      "value": "This doubles 8 instead of adding 2.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('16', 'This doubles 8 instead of adding 2.', 'The numbers go up by 2: 8 then 10.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/basicGeometryPrim103TopUpB.ts",
       "line": 273,
@@ -8108,21 +7843,6 @@
       "value": "An obtuse angle is bigger than a right angle, not smaller.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('An obtuse angle', 'An obtuse angle is bigger than a right angle, not smaller.', 'Acute angles are the small, narrow ones.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/basicGeometryPrim103TopUpB.ts",
-      "line": 727,
-      "questionId": 7808547,
-      "title": "Choose the right tool",
-      "chapter": "Putting it together",
-      "field": "whyWrong",
-      "value": "A clock is for time, but length is measured with tools like a ruler or tape measure.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('A clock', 'A clock is for time, but length is measured with tools like a ruler or tape measure.', 'To measure length, use a ruler.'),",
       "extractor": "object"
     },
     {
@@ -8198,21 +7918,6 @@
       "value": "2 is not enough sides to enclose the shape being described.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('2', '2 is not enough sides to enclose the shape being described.', 'A triangle needs more than two sides.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/class2MathPrim103TopUp.ts",
-      "line": 792,
-      "questionId": 7801051,
-      "title": "Continue the pattern",
-      "chapter": "Patterns and Shapes",
-      "field": "whyWrong",
-      "value": "This doubles 8 instead of adding 2.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('16', 'This doubles 8 instead of adding 2.', 'Each step adds 2, so 8 + 2 comes next.'),",
       "extractor": "object"
     },
     {
@@ -8355,21 +8060,6 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
-      "line": 154,
-      "questionId": 7810009,
-      "title": "Fact family",
-      "chapter": "Division",
-      "field": "whyWrong",
-      "value": "24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Division and multiplication are opposites here.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-grade-mathPrim103TopUp.ts",
       "line": 524,
       "questionId": 7810033,
       "title": "Right unit for length",
@@ -8415,6 +8105,21 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
+      "line": 426,
+      "questionId": 7850027,
+      "title": "Synonyms",
+      "chapter": "Vocabulary",
+      "field": "whyWrong",
+      "value": "Tired describes sleepiness, not the cheerful feeling asked for here.",
+      "detail": "Same normalized whyWrong appears 3 times.",
+      "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Pick the word that has a close meaning to happy.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 87,
+      "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
       "line": 441,
       "questionId": 7850028,
       "title": "Antonyms",
@@ -8445,29 +8150,14 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-      "line": 546,
-      "questionId": 7850035,
-      "title": "Plural nouns",
-      "chapter": "Grammar",
+      "line": 592,
+      "questionId": 7850038,
+      "title": "End punctuation",
+      "chapter": "Writing and Punctuation",
       "field": "whyWrong",
-      "value": "boxs misses the spelling rule: words ending in x usually add -es so the word is sayable.",
+      "value": "A period ends a statement; a question needs the mark that shows someone is asking something.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('boxs', 'boxs misses the spelling rule: words ending in x usually add -es so the word is sayable.', 'Say box plus es out loud.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-3rd-grade-ny-next-genPrim103TopUp.ts",
-      "line": 699,
-      "questionId": 7850045,
-      "title": "Comparing numbers",
-      "chapter": "Place Value",
-      "field": "whyWrong",
-      "value": "equal to would mean both sides match, but these two numbers differ when you compare the digits.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('equal to', 'equal to would mean both sides match, but these two numbers differ when you compare the digits.', 'Look closely, the tens digits are different.'),",
+      "snippet": "miss('A period', 'A period ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence is asking something.'),",
       "extractor": "object"
     },
     {
@@ -8498,6 +8188,21 @@
       "value": "Kilograms measures mass or weight, not the quantity named in this prompt.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('Kilograms', 'Kilograms measures mass or weight, not the quantity named in this prompt.', 'You want to measure length, not weight.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 87,
+      "file": "src/data/questionCatalog/col-3rd-gradePrim103TopUp.ts",
+      "line": 520,
+      "questionId": 7849033,
+      "title": "Antonyms",
+      "chapter": "Reading and Vocabulary",
+      "field": "whyWrong",
+      "value": "Tall is about height; the prompt is looking for the size word that means not big.",
+      "detail": "Same normalized whyWrong appears 3 times.",
+      "snippet": "miss('Tall', 'Tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big.'),",
       "extractor": "object"
     },
     {
@@ -8738,6 +8443,21 @@
       "value": "You multiplied the volumes instead of adding them.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('60 cubic units', 'You multiplied the volumes instead of adding them.', 'To combine two solids, add their volumes.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 87,
+      "file": "src/data/questionCatalog/col-5th-grade-ny-next-genPrim103TopUp.ts",
+      "line": 716,
+      "questionId": 7854046,
+      "title": "Finding a synonym",
+      "chapter": "Vocabulary",
+      "field": "whyWrong",
+      "value": "Tired describes sleepiness, not the cheerful feeling asked for here.",
+      "detail": "Same normalized whyWrong appears 3 times.",
+      "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Look for a word that means glad or cheerful.'),",
       "extractor": "object"
     },
     {
@@ -9074,36 +8794,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 87,
-      "file": "src/data/questionCatalog/col-basic-geometry-and-measurementPrim103TopUp.ts",
-      "line": 641,
-      "questionId": 7817041,
-      "title": "Minutes in an hour",
-      "chapter": "Time",
-      "field": "whyWrong",
-      "value": "24 belongs to hours in a day; minutes in an hour use 60.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'A clock face is divided into 60 minutes.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-basic-geometry-and-measurementPrim103TopUp.ts",
-      "line": 716,
-      "questionId": 7817046,
-      "title": "Days in a week",
-      "chapter": "Time",
-      "field": "whyWrong",
-      "value": "12 is a months-in-a-year fact, not the seven-day week.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('12', '12 is a months-in-a-year fact, not the seven-day week.', 'A week runs from one day name back to the same day name.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
       "file": "src/data/questionCatalog/col-early-math-reviewPrim103TopUp.ts",
       "line": 261,
       "questionId": 7819016,
@@ -9210,21 +8900,6 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
-      "line": 62,
-      "questionId": 7814003,
-      "title": "Comparing numbers",
-      "chapter": "Place Value",
-      "field": "whyWrong",
-      "value": "equal to (=) would mean both sides match, but these two numbers differ when you compare the digits.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('equal to (=)', 'equal to (=) would mean both sides match, but these two numbers differ when you compare the digits.', 'Look closely at the tens digit in each number.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-eureka-math-foundations-3rd-8th-gradePrim103TopUp.ts",
       "line": 534,
       "questionId": 7814034,
       "title": "Units of length",
@@ -9285,134 +8960,14 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
-      "line": 472,
-      "questionId": 7851030,
-      "title": "Measuring length",
-      "chapter": "Shapes and Measurement",
+      "line": 838,
+      "questionId": 7851054,
+      "title": "End punctuation",
+      "chapter": "Grammar and Writing",
       "field": "whyWrong",
-      "value": "A clock is for time, but length is measured with tools like a ruler or tape measure.",
+      "value": "A period (.) ends a statement; a question needs the mark that shows someone is asking something.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('A clock', 'A clock is for time, but length is measured with tools like a ruler or tape measure.', 'You need a tool with marks for length.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 229,
-      "questionId": 7853014,
-      "title": "Comparing numbers",
-      "chapter": "Place Value",
-      "field": "whyWrong",
-      "value": "equal to (=) would mean both sides match, but these two numbers differ when you compare the digits.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('equal to (=)', 'equal to (=) would mean both sides match, but these two numbers differ when you compare the digits.', 'Look closely; the tens digits are different.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 365,
-      "questionId": 7853023,
-      "title": "Splitting into teams",
-      "chapter": "Word Problems",
-      "field": "whyWrong",
-      "value": "24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Split 28 into 4 equal groups.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 609,
-      "questionId": 7853039,
-      "title": "Choosing the right punctuation",
-      "chapter": "Grammar Basics",
-      "field": "whyWrong",
-      "value": "an exclamation mark (!) shows excitement or strong feeling; this sentence is asking, so it needs a question mark.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('an exclamation mark (!)', 'an exclamation mark (!) shows excitement or strong feeling; this sentence is asking, so it needs a question mark.', 'This sentence is asking, so use a question mark.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 623,
-      "questionId": 7853040,
-      "title": "Plural nouns",
-      "chapter": "Grammar Basics",
-      "field": "whyWrong",
-      "value": "boxs misses the spelling rule: words ending in x usually add -es so the word is sayable.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('boxs', 'boxs misses the spelling rule: words ending in x usually add -es so the word is sayable.', 'Try adding -es to box.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 641,
-      "questionId": 7853041,
-      "title": "Telling time",
-      "chapter": "Measurement and Time",
-      "field": "whyWrong",
-      "value": "24 belongs to hours in a day; minutes in an hour use 60.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'Think about the minute marks on a clock.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 656,
-      "questionId": 7853042,
-      "title": "Days in a week",
-      "chapter": "Measurement and Time",
-      "field": "whyWrong",
-      "value": "12 is a months-in-a-year fact, not the seven-day week.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('12', '12 is a months-in-a-year fact, not the seven-day week.', 'Count the days: Sunday through Saturday.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 669,
-      "questionId": 7853043,
-      "title": "Measuring length",
-      "chapter": "Measurement and Time",
-      "field": "whyWrong",
-      "value": "a clock is for time, but length is measured with tools like a ruler or tape measure.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('a clock', 'a clock is for time, but length is measured with tools like a ruler or tape measure.', 'Length means how long something is.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/col-get-ready-for-4th-gradePrim103TopUp.ts",
-      "line": 778,
-      "questionId": 7853050,
-      "title": "Counting by twos",
-      "chapter": "Patterns and Skip Counting",
-      "field": "whyWrong",
-      "value": "This doubles 8 instead of adding 2.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('16', 'This doubles 8 instead of adding 2.', 'Just add 2 to the last number.'),",
+      "snippet": "miss('A period (.)', 'A period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'Questions ask something and need a special mark.'),",
       "extractor": "object"
     },
     {
@@ -9488,6 +9043,21 @@
       "value": "You added the length and width instead of multiplying.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('8 square cm', 'You added the length and width instead of multiplying.', 'Multiply 5 by 3 to find the area.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 87,
+      "file": "src/data/questionCatalog/col-get-ready-for-5th-gradePrim103TopUp.ts",
+      "line": 726,
+      "questionId": 7855046,
+      "title": "End punctuation",
+      "chapter": "Grammar and Writing",
+      "field": "whyWrong",
+      "value": "A period (.) ends a statement; a question needs the mark that shows someone is asking something.",
+      "detail": "Same normalized whyWrong appears 3 times.",
+      "snippet": "miss('A period (.)', 'A period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence asks something.'),",
       "extractor": "object"
     },
     {
@@ -9885,21 +9455,6 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/elevenPlusPrim103TopUp.ts",
-      "line": 738,
-      "questionId": 7847047,
-      "title": "Choosing the right punctuation",
-      "chapter": "English - Grammar and Punctuation",
-      "field": "whyWrong",
-      "value": "an exclamation mark shows excitement or strong feeling; this sentence is asking, so it needs a question mark.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('an exclamation mark', 'an exclamation mark shows excitement or strong feeling; this sentence is asking, so it needs a question mark.', 'Look for the mark used when asking.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/elevenPlusPrim103TopUp.ts",
       "line": 848,
       "questionId": 7847054,
       "title": "Finding the average",
@@ -10034,51 +9589,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 87,
-      "file": "src/data/questionCatalog/naplanYear3Prim103TopUp.ts",
-      "line": 313,
-      "questionId": 7845019,
-      "title": "Minutes in an hour",
-      "chapter": "Measurement - time",
-      "field": "whyWrong",
-      "value": "24 belongs to hours in a day; minutes in an hour use 60.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'Count the minute marks around a clock.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/naplanYear3Prim103TopUp.ts",
-      "line": 327,
-      "questionId": 7845020,
-      "title": "Days in a week",
-      "chapter": "Measurement - time",
-      "field": "whyWrong",
-      "value": "12 is a months-in-a-year fact, not the seven-day week.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('12', '12 is a months-in-a-year fact, not the seven-day week.', 'A week is much shorter than that.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/naplanYear3Prim103TopUp.ts",
-      "line": 783,
-      "questionId": 7845049,
-      "title": "Ending a question",
-      "chapter": "Language - punctuation",
-      "field": "whyWrong",
-      "value": "An exclamation mark shows excitement or strong feeling; this sentence is asking, so it needs a question mark.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('An exclamation mark', 'An exclamation mark shows excitement or strong feeling; this sentence is asking, so it needs a question mark.', 'This sentence is asking, so use a question mark.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
       "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
       "line": 18,
       "questionId": 7846000,
@@ -10133,6 +9643,21 @@
       "value": "You added the length and width instead of multiplying.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('10 square cm', 'You added the length and width instead of multiplying.', 'Multiply 6 by 4 to find the area.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 87,
+      "file": "src/data/questionCatalog/naplanYear5Prim103TopUp.ts",
+      "line": 747,
+      "questionId": 7846048,
+      "title": "Choosing an antonym",
+      "chapter": "Vocabulary",
+      "field": "whyWrong",
+      "value": "tall is about height; the prompt is looking for the size word that means not big.",
+      "detail": "Same normalized whyWrong appears 3 times.",
+      "snippet": "miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Find the word that means not big.'),",
       "extractor": "object"
     },
     {
@@ -10259,14 +9784,14 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/primaryPrim103TopUpB.ts",
-      "line": 431,
-      "questionId": 7858527,
-      "title": "More than one",
-      "chapter": "Spelling and Grammar",
+      "line": 479,
+      "questionId": 7858530,
+      "title": "Opposite of big",
+      "chapter": "Synonyms, Antonyms and Vocabulary",
       "field": "whyWrong",
-      "value": "boxs misses the spelling rule: words ending in x usually add -es so the word is sayable.",
+      "value": "tall is about height; the prompt is looking for the size word that means not big.",
       "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('boxs', 'boxs misses the spelling rule: words ending in x usually add -es so the word is sayable.', 'Say the word out loud; you can hear an extra sound.'),",
+      "snippet": "miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Look for a word that means not big at all.'),",
       "extractor": "object"
     },
     {
@@ -10334,6 +9859,21 @@
       "label": "Repeated whyWrong",
       "priority": 87,
       "file": "src/data/questionCatalog/readingVocab5thPrim103TopUpB.ts",
+      "line": 572,
+      "questionId": 7831536,
+      "title": "What a synonym is",
+      "chapter": "Synonyms and Antonyms",
+      "field": "whyWrong",
+      "value": "Tired describes sleepiness, not the cheerful feeling asked for here.",
+      "detail": "Same normalized whyWrong appears 3 times.",
+      "snippet": "miss('Tired', 'Tired describes sleepiness, not the cheerful feeling asked for here.', 'Find a word that matches happy in meaning.'),",
+      "extractor": "object"
+    },
+    {
+      "flag": "repeated-why-wrong",
+      "label": "Repeated whyWrong",
+      "priority": 87,
+      "file": "src/data/questionCatalog/readingVocab5thPrim103TopUpB.ts",
       "line": 586,
       "questionId": 7831537,
       "title": "What an antonym is",
@@ -10342,21 +9882,6 @@
       "value": "Open does not undo begin; look for the word that means the action has finished.",
       "detail": "Same normalized whyWrong appears 3 times.",
       "snippet": "miss('Open', 'Open does not undo begin; look for the word that means the action has finished.', 'Think about what is the opposite of begin.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/timesTablesPrim103TopUp.ts",
-      "line": 739,
-      "questionId": 7807047,
-      "title": "Find the missing factor",
-      "chapter": "Missing number facts",
-      "field": "whyWrong",
-      "value": "24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Ask how many fours make 28.'),",
       "extractor": "object"
     },
     {

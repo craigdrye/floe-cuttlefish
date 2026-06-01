@@ -226,7 +226,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: 'greater than (>)',
     wrong: [
       miss('less than (<)', '364 is bigger than 346, so it is not less than.', 'Compare the tens: 6 tens beats 4 tens.'),
-      miss('equal to (=)', 'equal to (=) would mean both sides match, but these two numbers differ when you compare the digits.', 'Look closely; the tens digits are different.'),
+      miss('equal to (=)', 'The hundreds match, but the tens digits do not: 6 tens is more than 4 tens, so the numbers are not equal.', 'Look closely; the tens digits are different.'),
       miss('cannot tell', 'You can always compare two numbers.', 'Start from the left and compare each digit.'),
     ],
     lesson: 'To compare numbers, start at the left. Both have 3 hundreds, but 364 has 6 tens while 346 has only 4 tens. So 364 is greater than 346.',
@@ -362,7 +362,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'There are 28 kids who split into 4 equal teams. How many kids are on each team?',
     correct: '7',
     wrong: [
-      miss('24', '24 takes 4 away from 28, but the clue asks for 28 split into 4 equal parts.', 'Split 28 into 4 equal groups.'),
+      miss('24', 'That subtracts one team of 4 from 28; the question is asking how many kids are in each of 4 equal teams.', 'Split 28 into 4 equal groups.'),
       miss('6', 'This is too few; 4 teams of 6 is only 24.', 'Try 4 teams of 7 to reach 28.'),
       miss('32', 'This adds 4 to 28 instead of dividing.', 'Sharing into teams makes each group smaller.'),
     ],
@@ -499,8 +499,8 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which word means almost the same as "happy"?',
     correct: 'glad',
     wrong: [
-      miss('sad', 'sad points the other way from happy; a synonym should keep the same cheerful meaning.', 'Look for a word with a good feeling.'),
-      miss('tired', 'tired describes sleepiness, not the cheerful feeling asked for here.', 'Find a word that means cheerful.'),
+      miss('sad', 'Sad is an antonym of happy, so it points in the opposite direction instead of meaning nearly the same thing.', 'Look for a word with a good feeling.'),
+      miss('tired', 'Tired can describe how someone feels, but it means sleepy rather than pleased or cheerful.', 'Find a word that means cheerful.'),
       miss('cold', 'Cold is about temperature, not a feeling of joy.', 'Pick the word closest to happy.'),
     ],
     lesson: 'Words that mean almost the same thing are called synonyms. Happy and glad are synonyms because they both mean feeling good and cheerful.',
@@ -515,7 +515,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: 'small',
     wrong: [
       miss('large', 'Large means almost the same as big, not the opposite.', 'Find a word that means tiny.'),
-      miss('tall', 'tall is about height; the prompt is looking for the size word that means not big.', 'Think about a word meaning little.'),
+      miss('tall', 'Tall compares height, while this antonym question needs a general size word that reverses big.', 'Think about a word meaning little.'),
       miss('huge', 'Huge means very big, not the opposite.', 'The opposite of big is little or small.'),
     ],
     lesson: 'Words with opposite meanings are called antonyms. Big and small are antonyms because one means large and the other means little.',
@@ -560,7 +560,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which word in this sentence is a noun? "The dog ran fast."',
     correct: 'dog',
     wrong: [
-      miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),
+      miss('ran', 'Ran tells the action in the sentence, so it is the verb; the noun is the word naming the animal.', 'A noun names a person, place, animal, or thing.'),
       miss('fast', 'Fast describes how the dog ran, so it is not a noun.', 'Look for the animal in the sentence.'),
       miss('the', 'The is a small word that points to a noun but is not one itself.', 'Find the word that names something.'),
     ],
@@ -605,8 +605,8 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which mark should end this sentence? "What time is it"',
     correct: 'a question mark (?)',
     wrong: [
-      miss('a period (.)', 'a period (.) ends a statement; a question needs the mark that shows someone is asking something.', 'This sentence asks something.'),
-      miss('an exclamation mark (!)', 'an exclamation mark (!) shows excitement or strong feeling; this sentence is asking, so it needs a question mark.', 'This sentence is asking, so use a question mark.'),
+      miss('a period (.)', 'A period would make it sound like a telling sentence, but "What time is it" is asking for information.', 'This sentence asks something.'),
+      miss('an exclamation mark (!)', 'An exclamation mark would make the sentence sound excited, not turn it into the question it already is.', 'This sentence is asking, so use a question mark.'),
       miss('a comma (,)', 'A comma is used in the middle, not to end a sentence.', 'A question needs a question mark at the end.'),
     ],
     lesson: 'A sentence that asks something is a question and ends with a question mark. "What time is it?" is asking, so it needs a question mark.',
@@ -620,7 +620,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'What is the plural of "box"?',
     correct: 'boxes',
     wrong: [
-      miss('boxs', 'boxs misses the spelling rule: words ending in x usually add -es so the word is sayable.', 'Try adding -es to box.'),
+      miss('boxs', 'Boxs leaves out the extra e that makes the plural easy to say after the x sound.', 'Try adding -es to box.'),
       miss('box', 'This is still just one box, not more than one.', 'A plural means more than one.'),
       miss('boxies', 'You do not add -ies to box.', 'For words ending in x, add -es.'),
     ],
@@ -638,7 +638,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('30', '30 minutes is only half an hour.', 'A full hour is twice as many minutes.'),
       miss('100', 'An hour does not have 100 minutes.', 'Count by the clock: 60 minutes make an hour.'),
-      miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'Think about the minute marks on a clock.'),
+      miss('24', 'Twenty-four is the hours-in-a-day number; one hour is measured by 60 minute marks around the clock.', 'Think about the minute marks on a clock.'),
     ],
     lesson: 'There are 60 minutes in one hour. When the minute hand goes all the way around the clock once, 60 minutes have passed.',
     source,
@@ -653,7 +653,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('5', '5 is the number of school days, but a week has more.', 'Do not forget the weekend days.'),
       miss('30', '30 is about the number of days in a month, not a week.', 'A week is much shorter than a month.'),
-      miss('12', '12 is a months-in-a-year fact, not the seven-day week.', 'Count the days: Sunday through Saturday.'),
+      miss('12', 'Twelve belongs with months in a year, but a week is the Sunday-through-Saturday set of 7 days.', 'Count the days: Sunday through Saturday.'),
     ],
     lesson: 'There are 7 days in a week: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, and Saturday.',
     source,
@@ -666,7 +666,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which tool would you use to measure how long a pencil is?',
     correct: 'a ruler',
     wrong: [
-      miss('a clock', 'a clock is for time, but length is measured with tools like a ruler or tape measure.', 'Length means how long something is.'),
+      miss('a clock', 'A clock answers when or how long in time; a pencil\'s physical length needs measurement marks like inches or centimeters.', 'Length means how long something is.'),
       miss('a scale', 'A scale measures weight, not length.', 'Find the tool with inches or centimeters.'),
       miss('a thermometer', 'A thermometer measures temperature, not length.', 'A ruler has marks for measuring length.'),
     ],
@@ -775,7 +775,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     wrong: [
       miss('9', 'The pattern jumps by 2, so 8 plus 2 is not 9.', 'Add 2 to 8.'),
       miss('12', 'This skips a number; the next is only 2 more than 8.', '8 plus 2 makes 10.'),
-      miss('16', 'This doubles 8 instead of adding 2.', 'Just add 2 to the last number.'),
+      miss('16', 'Sixteen comes from doubling the last number, but this pattern grows by adding 2 each step.', 'Just add 2 to the last number.'),
     ],
     lesson: 'Counting by twos adds 2 each time: 2, 4, 6, 8, 10. After 8, the next number is 10.',
     source,
