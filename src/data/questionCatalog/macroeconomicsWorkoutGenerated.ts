@@ -1,5 +1,6 @@
 import { makeQuestionBank } from './base'
 import { polish as runPolish } from './polishPipeline'
+import type { Question } from './types'
 import {
   UNI_SCIECON_WORKOUT_SUB_TOPICS,
   UNI_SCIECON_WORKOUT_MENTOR_HINTS,
@@ -7,6 +8,26 @@ import {
 } from './uniSciEconWorkoutPolish'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
+
+function accessibleMacroPrompt(title: string, prompt: string) {
+  const cleaned = prompt.trim()
+  if (!cleaned.endsWith(':')) return cleaned
+
+  const stem = cleaned.replace(/:$/, '').trim()
+  return `A macroeconomics learner is reasoning about the wider economy using "${title}". Which answer best completes this sentence: "${stem}"?`
+}
+
+function macroAlternatePrompt(title: string) {
+  return `In plain language, what does "${title}" help explain about output, prices, jobs, money, or trade?`
+}
+
+function macroLesson(title: string, correct: string) {
+  return `Macroeconomics connects individual terms to whole-economy patterns. For "${title}", the key idea is: ${correct}. Ask whether the prompt is about measurement, the business cycle, aggregate demand or supply, fiscal policy, money, inflation, labor markets, growth, or international flows.`
+}
+
+function macroChallengeRating(chapter: string): Question['challengeRating'] {
+  return chapter.includes('Long-Run') || chapter.includes('Monetary') ? 6 : 5
+}
 
 const q = (
   id: number,
@@ -19,12 +40,15 @@ const q = (
   id,
   chapter,
   title,
-  prompt,
+  prompt: accessibleMacroPrompt(title, prompt),
+  alternatePrompts: {
+    plain: macroAlternatePrompt(title),
+  },
   correct,
   wrong,
-  lesson:
-    'Coverage source: reviewed OpenStax economics, AP economics, and macroeconomics source clusters plus Macroeconomics course skill gaps. This is an authored Floe-native drill item, not a direct raw import.',
+  lesson: macroLesson(title, correct),
   source: 'Generated from Macroeconomics coverage',
+  challengeRating: macroChallengeRating(chapter),
 })
 
 const _baseMacroeconomicsWorkoutGeneratedQuestions = makeQuestionBank('University', [

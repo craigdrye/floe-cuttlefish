@@ -31,7 +31,7 @@ const _professionalEthicsBase = makeQuestionBank('Career Skills', [
     prompt: 'A senior leader asks you to skip a required review because “the outcome is obvious.” What is the strongest professional-ethics response?',
     correct: 'Keep the required review or document a valid approved exception',
     wrong: [
-      miss('Skip the review because seniority replaces process', 'Authority does not automatically cancel controls.', 'Good process protects both the organization and the decision.'),
+      miss('Treat seniority as enough evidence that process review is unnecessary', 'Authority does not automatically cancel controls.', 'Good process protects both the organization and the decision.'),
       miss('Refuse to discuss the issue with anyone', 'Escalation and conversation may be needed.', 'Do not confuse ethics with silence.'),
       miss('Approve it verbally and avoid writing anything down', 'Avoiding documentation makes the judgment less defensible.', 'Use traceable decision-making.'),
     ],
@@ -232,7 +232,7 @@ const _cfaSurvivalBase = makeQuestionBank('Career Skills', [
     wrong: [
       miss('Enter numbers immediately and hope the display looks familiar', 'Unstructured keystrokes create avoidable errors.', 'Set up before calculating.'),
       miss('Memorize only the final answer from a practice problem', 'Exam values change; the process must travel.', 'Learn the method.'),
-      miss('Ignore units because finance formulas never use them', 'Rates, periods, and currencies matter.', 'Check scale and timing.'),
+      miss('Treat the formula output as complete even when the units are unclear', 'Rates, periods, and currencies matter.', 'Check scale and timing.'),
     ],
     lesson: 'The exam is timed, but speed comes from clean setup rather than frantic button pressing.',
     source,
@@ -388,7 +388,7 @@ const _cpaExamBase = makeQuestionBank('Career Skills', [
     correct: 'Read the requirement carefully, then use only the exhibits needed to answer it',
     wrong: [
       miss('Read every exhibit in full before learning the task', 'That can waste time and bury the actual requirement.', 'Let the requirement aim your reading.'),
-      miss('Ignore all exhibits and answer from memory only', 'Simulations often require applying provided facts.', 'Use the packet.'),
+      miss('Rely on memory even when the exhibits contain controlling facts', 'Simulations often require applying provided facts.', 'Use the packet.'),
       miss('Change the requirement into the topic you studied most', 'The exam grades the task presented, not the preferred topic.', 'Answer the actual ask.'),
     ],
     lesson: 'Simulation discipline is a survival skill: requirement first, relevant facts next, then calculation or conclusion.',
@@ -474,9 +474,9 @@ const _barExamBase = makeQuestionBank('Career Skills', [
     prompt: 'On a mixed MBE set, after reading the call of the question, the best next move is usually to:',
     correct: 'Identify the tested subject and rule, then predict before overcommitting to answer choices',
     wrong: [
-      miss('Pick the longest answer because it sounds complete', 'Length is not a reliable proxy for legal accuracy.', 'Use the rule, not answer shape.'),
-      miss('Ignore the call and read facts as a story only', 'The call tells you what legal task the facts serve.', 'Let the call aim your reading.'),
-      miss('Choose the first familiar legal phrase', 'Familiar phrases can be traps if they do not fit the facts.', 'Predict before matching.'),
+      miss('The longest answer, even when the rule fit is weak', 'Length is not a reliable proxy for legal accuracy.', 'Use the rule, not answer shape.'),
+      miss('A story-like reading that ignores the call of the question', 'The call tells you what legal task the facts serve.', 'Let the call aim your reading.'),
+      miss('The first familiar legal phrase in the options', 'Familiar phrases can be traps if they do not fit the facts.', 'Predict before matching.'),
     ],
     lesson: 'MBE speed improves when you classify the issue before the answer choices start pulling your attention sideways.',
     source,
@@ -604,7 +604,7 @@ const _pmpWranglerBase = makeQuestionBank('Career Skills', [
     correct: 'Analyze schedule compression options such as crashing or fast-tracking, including cost and risk impacts',
     wrong: [
       miss('Use total float from a noncritical activity to absorb the critical-path delay', 'Noncritical float does not automatically fix a delayed critical-path activity.', 'Track dependencies and duration.'),
-      miss('Ignore the delay because critical tasks are already important', 'Importance does not remove schedule impact.', 'A slip there matters.'),
+      miss('Treat a critical task label as enough without considering schedule delay', 'Importance does not remove schedule impact.', 'A slip there matters.'),
       miss('Automatically cut quality checks without analysis', 'Schedule compression should consider risk, quality, and stakeholder approval.', 'Assess tradeoffs before acting.'),
     ],
     lesson: 'Critical-path questions are timeline questions: a delay there usually affects the finish date unless the team takes deliberate schedule action.',
@@ -645,7 +645,7 @@ const _pmpWranglerBase = makeQuestionBank('Career Skills', [
     prompt: 'Two experienced team members are in open conflict during planning. The best first move for a PMP-style project manager is usually to:',
     correct: 'Facilitate a collaborative conversation that focuses on facts, interests, and project goals',
     wrong: [
-      miss('Ignore the conflict until one person gives up', 'Avoidance can let team damage spread.', 'Servant leadership addresses the system.'),
+      miss('Let the conflict resolve through attrition rather than active management', 'Avoidance can let team damage spread.', 'Servant leadership addresses the system.'),
       miss('Punish both people before understanding the issue', 'Discipline may be inappropriate without facts and context.', 'Start by diagnosing.'),
       miss('Ask the sponsor to choose the winner immediately', 'Escalation before facilitation can undermine team ownership.', 'Use collaboration first when possible.'),
     ],
@@ -743,9 +743,9 @@ const _pmpWranglerBase = makeQuestionBank('Career Skills', [
     prompt: 'A PMP learner preparing around the 2026 exam-content transition should be especially careful to:',
     correct: 'Match study priorities to the exam-content outline in effect on their scheduled exam date',
     wrong: [
-      miss('Assume older blueprint weights will apply forever', 'Exam-content outlines can change, including domain emphasis.', 'Check the date.'),
+      miss('Treat older blueprint weights as stable even after the exam body updates guidance', 'Exam-content outlines can change, including domain emphasis.', 'Check the date.'),
       miss('Study only formulas because people and business context are never tested', 'The PMP exam tests people, process, and business/value judgment.', 'Use the full outline.'),
-      miss('Ignore PMI sources once a practice test feels familiar', 'Official exam-content guidance anchors the study plan.', 'Verify current scope.'),
+      miss('Treat practice-test familiarity as a substitute for checking current PMI sources', 'Official exam-content guidance anchors the study plan.', 'Verify current scope.'),
     ],
     lesson: 'For PMP, timing matters: current and transition blueprints should shape what a learner practices, especially for business-environment judgment.',
     source,
@@ -845,7 +845,7 @@ const _shrmPeopleBase = makeQuestionBank('Career Skills', [
     correct: 'Analyze compensation competitiveness and propose a targeted, budget-aware retention response',
     wrong: [
       miss('Launch a recognition program without examining pay gaps', 'Recognition may help morale but does not address the stated compensation signal.', 'Match the lever to the cause.'),
-      miss('Assume all turnover is healthy without segmenting the data', 'Turnover should be analyzed by role, performance, cause, and business impact.', 'Look at the pattern.'),
+      miss('Treat aggregate turnover as healthy before segmenting by role, team, or performer group', 'Turnover should be analyzed by role, performance, cause, and business impact.', 'Look at the pattern.'),
       miss('Raise pay randomly for whichever team complains first', 'Compensation changes should be structured and equitable.', 'Use data and governance.'),
     ],
     lesson: 'Total rewards questions ask HR to connect business needs, fairness, market data, retention risk, and budget reality.',
@@ -860,7 +860,7 @@ const _shrmPeopleBase = makeQuestionBank('Career Skills', [
     wrong: [
       miss('Announce that resistance proves the system is perfect', 'Resistance may reveal real adoption, process, or data issues.', 'Diagnose before declaring victory.'),
       miss('Disable all spreadsheets without a transition plan', 'A hard cutoff may be needed later, but first identify risks and supports.', 'Manage adoption deliberately.'),
-      miss('Ignore usage data because implementation ended at launch', 'Change continues after launch.', 'Measure adoption and behavior.'),
+      miss('Treat launch completion as proof of adoption without reviewing usage data', 'Change continues after launch.', 'Measure adoption and behavior.'),
     ],
     lesson: 'Organization-domain questions treat change as behavior, trust, process, communication, and reinforcement, not just a launch date.',
     source,
@@ -887,7 +887,7 @@ const _shrmPeopleBase = makeQuestionBank('Career Skills', [
     correct: 'Explain confidentiality limits, assess safety and policy obligations, and begin appropriate fact-finding',
     wrong: [
       miss('Promise total secrecy before knowing the risk', 'HR may need to act on serious complaints and cannot guarantee absolute secrecy.', 'Explain limits honestly.'),
-      miss('Ignore the report because the employee asked for no action', 'HR may still have a duty to assess and respond.', 'Safety and policy matter.'),
+      miss('Treat an employee's request for no action as enough to close the report', 'HR may still have a duty to assess and respond.', 'Safety and policy matter.'),
       miss('Tell the whole department every detail immediately', 'Fact-finding should protect privacy as much as practical.', 'Use need-to-know handling.'),
     ],
     lesson: 'Employee-relations work needs empathy plus process: protect people, avoid retaliation, preserve evidence, and keep confidentiality promises realistic.',

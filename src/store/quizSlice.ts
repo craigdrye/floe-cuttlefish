@@ -24,6 +24,7 @@ export const createQuizSlice: StateCreator<AppState, [], [], QuizSlice> = (set) 
   flaggedQuestions: [],
   repeatedQuestions: [],
   questionQualityRatings: {},
+  flashcardRatings: {},
   showLesson: false,
   selectedChapter: null,
   selectedLesson: null,
@@ -157,6 +158,24 @@ export const createQuizSlice: StateCreator<AppState, [], [], QuizSlice> = (set) 
       }
     }),
 
+  setFlashcardRating: (cardKey, status) =>
+    set((state) => ({
+      flashcardRatings: {
+        ...state.flashcardRatings,
+        [cardKey]: {
+          status,
+          updatedAt: new Date().toISOString(),
+        },
+      },
+    })),
+
+  clearFlashcardDeckRatings: (deckKey) =>
+    set((state) => ({
+      flashcardRatings: Object.fromEntries(
+        Object.entries(state.flashcardRatings).filter(([cardKey]) => !cardKey.startsWith(`${deckKey}:`))
+      ),
+    })),
+
   setShowLesson: (show) =>
     set((state) => ({
       showLesson: typeof show === 'function' ? show(state.showLesson) : show,
@@ -183,7 +202,7 @@ export const createQuizSlice: StateCreator<AppState, [], [], QuizSlice> = (set) 
 
   goHome: () =>
     set((state) => {
-      const inStandaloneGame = state.screen === 'pong' || state.screen === 'invaders' || state.screen === 'present' || state.screen === 'fight' || state.screen === 'wordle' || state.screen === 'quordle' || state.screen === 'octordle' || state.screen === 'connections' || state.screen === 'letterboxed' || state.screen === 'waffle' || state.screen === 'g2048' || state.screen === 'g2248' || state.screen === 'nerdle' || state.screen === 'sumplete' || state.screen === 'sudoku' || state.screen === 'kakuro' || state.screen === 'rikudo'
+      const inStandaloneGame = state.screen === 'pong' || state.screen === 'invaders' || state.screen === 'present' || state.screen === 'guessGift' || state.screen === 'fight' || state.screen === 'wordle' || state.screen === 'quordle' || state.screen === 'octordle' || state.screen === 'connections' || state.screen === 'letterboxed' || state.screen === 'waffle' || state.screen === 'g2048' || state.screen === 'g2248' || state.screen === 'nerdle' || state.screen === 'sumplete' || state.screen === 'sudoku' || state.screen === 'kakuro' || state.screen === 'rikudo'
       const inGuessTrack = state.selectedTrack?.startsWith('guess') ?? false
       const targetScreen: AppScreen =
         inStandaloneGame || inGuessTrack ? 'games' :

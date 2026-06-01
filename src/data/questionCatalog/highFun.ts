@@ -2,6 +2,49 @@ import type { Question } from './types'
 import { makeSimpleQuestion } from './base'
 import { topUpHighGeneratedTrack } from './highGenerated'
 
+function highFunLesson(trackId: string, question: Question): string {
+  const title = question.title || question.chapter || 'this question'
+  const answer = question.solution || 'the best answer'
+  if (trackId === 'chessTactics') {
+    return `Chess questions are miniature pattern hunts. For "${title}", the key idea is: ${answer}. Name the threat, check what it attacks or defends, and prefer the move that creates the clearest concrete advantage.`
+  }
+  if (trackId === 'creativeWritingStudio') {
+    return `Writing questions are about making the reader feel the choice, not just label it. For "${title}", the key idea is: ${answer}. Look for action, tension, voice, and detail that reveal meaning on the page.`
+  }
+  if (trackId === 'mythologyAndMonsters') {
+    return `Myth questions often use story creatures and heroes as symbols. For "${title}", the key idea is: ${answer}. Ask what fear, desire, rule, or transformation the story element makes visible.`
+  }
+  if (trackId === 'gameDesignBasics') {
+    return `Game design questions are about how play teaches itself. For "${title}", the key idea is: ${answer}. Ask what the player repeatedly does, how the system responds, and whether the choice creates readable consequences.`
+  }
+  if (trackId === 'detectiveLogic') {
+    return `Detective-logic questions reward careful elimination. For "${title}", the key idea is: ${answer}. Track what each clue rules out, then choose the option with the strongest evidence rather than the most dramatic wording.`
+  }
+  return `This playful reasoning question still has a real learning target. For "${title}", the key idea is: ${answer}. Find the rule, pattern, or story clue that makes one answer fit better than the others.`
+}
+
+function rewriteHighFunPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  if (prompt.endsWith('?')) return question.prompt
+  if (prompt.endsWith(':')) {
+    return `${prompt} Which answer best completes this idea?`
+  }
+  return `${prompt} Which answer is best?`
+}
+
+function enrichHighFunQuestionQuality(catalog: Record<string, Question[]>): Record<string, Question[]> {
+  return Object.fromEntries(
+    Object.entries(catalog).map(([trackId, questions]) => [
+      trackId,
+      questions.map((question) => ({
+        ...question,
+        prompt: rewriteHighFunPrompt(question),
+        lesson: question.lesson || highFunLesson(trackId, question),
+      })),
+    ]),
+  )
+}
+
 // Wave 4 consolidation 2026-05-18: `gameDesignBasics` (syllabus-aligned track id) and
 // `gameDesign` (legacy track id) both route to this hand-authored gameDesign bank. Audit will
 // later collapse the duplicate ids.
@@ -184,10 +227,10 @@ export function buildHighFunQuestionCatalog(): Record<string, Question[]> {
     catalog.gameDesignBasics = catalog.gameDesign
   }
 
-  return Object.fromEntries(
+  return enrichHighFunQuestionQuality(Object.fromEntries(
     Object.entries(catalog).map(([trackId, questions]) => [
       trackId,
       topUpHighGeneratedTrack(trackId, questions),
     ]),
-  )
+  ))
 }

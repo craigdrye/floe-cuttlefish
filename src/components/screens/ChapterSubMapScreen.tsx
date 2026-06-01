@@ -1,8 +1,9 @@
 import { useMemo, useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowLeft, CheckCircle2, ChevronRight, Lock, Sparkles, Star } from 'lucide-react'
+import { ArrowLeft, BookOpenCheck, CheckCircle2, ChevronRight, Lock, Sparkles, Star } from 'lucide-react'
 import { useStore } from '../../store/useStore'
 import { useQuizData } from '../../hooks/useQuizData'
+import { buildChapterFlashcards, hasFlashcardsForTrack } from '../../lib/flashcards'
 import { TopBar } from '../layout/TopBar'
 
 const floeFrames = [
@@ -148,6 +149,11 @@ export function ChapterSubMapScreen() {
   const totalQuestions = lessonStats.reduce((sum, l) => sum + l.totalQuestions, 0)
   const overallPct = totalQuestions > 0 ? Math.round((totalAnswered / totalQuestions) * 100) : 0
   const chapterDisplayName = (selectedChapter ?? '').replace(/^Capstone:\s*/i, '')
+  const flashcards = useMemo(
+    () => buildChapterFlashcards(selectedTrackInfo.id, chapterAllQuestions),
+    [chapterAllQuestions, selectedTrackInfo.id],
+  )
+  const showFlashcards = hasFlashcardsForTrack(selectedTrackInfo.id) && flashcards.length > 0
 
   // When we land here having just completed the selected lesson, let Floe rest on
   // that lesson for a beat, then clear the selection so the active node advances to
@@ -182,6 +188,11 @@ export function ChapterSubMapScreen() {
   const continueActive = () => {
     if (!activeLessonStat) return
     enterLesson(activeLessonStat.id)
+  }
+
+  const openFlashcards = () => {
+    setScreen('flashcards')
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   if (!isSelectedCatalogReady) {
@@ -233,8 +244,13 @@ export function ChapterSubMapScreen() {
           <p className="eyebrow">{selectedTrackInfo.title} &middot; {chapterDisplayName}</p>
           <h2>Lesson path</h2>
           <p>
-            {totalAnswered}/{chapterAllQuestions?.length ?? totalQuestions} answered &middot; {overallPct}% answered &middot; {chapterLessons.length} lesson{chapterLessons.length === 1 ? '' : 's'}
+            {totalAnswered}/{totalQuestions} answered &middot; {overallPct}% answered &middot; {chapterLessons.length} lesson{chapterLessons.length === 1 ? '' : 's'}
           </p>
+          {showFlashcards && (
+            <button className="chapter-flashcard-button" onClick={openFlashcards} type="button">
+              <BookOpenCheck size={16} /> {flashcards.length} flashcards
+            </button>
+          )}
         </div>
         <div className="chapter-path-header-ring">
           <div className="ring" style={{ '--score': `${overallPct}%` } as React.CSSProperties}>

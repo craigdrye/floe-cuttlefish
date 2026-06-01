@@ -151,7 +151,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       [
         ['Boost your friend because loyalty is a competency', 'Loyalty is not a promotion criterion. Promotions follow stated competencies.'],
         ['Downgrade the critic because feedback had consequences', 'Retaliatory scoring is a clear ethics and legal violation.'],
-        ['Ignore the criteria and rank whoever seems easiest to work with', 'Personal preference is exactly the bias the criteria exist to prevent.'],
+        ['Treat team chemistry as an unstated promotion competency', 'Personal preference is exactly the bias the criteria exist to prevent.'],
       ],
       'Fair evaluations depend on consistent criteria and visible handling of bias. Personal feelings should not become hidden scoring systems.'),
 
@@ -347,7 +347,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'Follow firm policy on AI use, protect client data, verify content, and disclose use if required by the engagement or rules',
       [
         ['Paste confidential client files into any public tool because drafting is faster', 'Pasting confidential client data into uncontrolled tools is a major data-leakage breach.'],
-        ['Skip fact-checking because the prose sounds confident', 'AI outputs can be confidently wrong. Verification is the central professional duty.'],
+        ['Treat polished AI prose as equivalent to verified professional advice', 'AI outputs can be confidently wrong. Verification is the central professional duty.'],
         ['Ban all tools from memory and pretend the draft wrote itself', 'Concealment violates disclosure obligations where they apply.'],
       ],
       'AI assistance does not remove professional responsibility. Data handling, verification, client expectations, and policy requirements still control the work.'),
@@ -376,7 +376,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'Follow permit conditions, notify affected residents, and use reasonable mitigation even if it adds coordination work',
       [
         ['Start quietly and hope nobody owns a phone', 'Violating permit conditions creates legal exposure and harms residents.'],
-        ['Ignore the permit because savings are measurable', 'Cost savings do not override regulatory permit conditions.'],
+        ['Treat permit conditions as optional when the variance saves money', 'Cost savings do not override regulatory permit conditions.'],
         ['Cancel the project because notices are annoying', 'Cancelling work that the permit allows is disproportionate; the obligation is notice, not cancellation.'],
       ],
       'Professional responsibility includes impacts beyond the project team. Permits, notice, and mitigation turn external effects into managed obligations.'),
@@ -420,7 +420,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'A beverage brand sold triple its normal volume during a one-week influencer promotion. What should the planner do before using that week in the baseline forecast?',
       'Flag the promotion as an exceptional demand driver and separate baseline demand from event lift',
       [
-        ['Assume every future week will triple forever', 'Persisting a one-week promo as baseline overstates capacity, inventory, and revenue forecasts.'],
+        ['Treat one promotional spike as the new steady-state baseline', 'Persisting a one-week promo as baseline overstates capacity, inventory, and revenue forecasts.'],
         ['Delete the week with no note because it is inconvenient', 'Silent deletion loses the data needed to model future promotions.'],
         ['Blame the warehouse for being too hydrated', 'Operational mood is not a forecasting variable.'],
       ],
@@ -439,8 +439,8 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'Use downstream demand signals to identify potential bullwhip risk and adjust replenishment assumptions',
       [
         ['Trust distributor orders only because they are purchase orders', 'Distributor orders lag end-consumer demand; trusting them alone produces bullwhip.'],
-        ['Ignore point-of-sale data until the warehouse is full', 'Waiting until inventory is excessive is exactly the failure POS data could prevent.'],
-        ['Assume consumers are hiding their true demand', 'Consumer behaviour is observable in the POS signal; the issue is whether planners look at it.'],
+        ['Treat distributor replenishment orders as more current than retail demand signals', 'Waiting until inventory is excessive is exactly the failure POS data could prevent.'],
+        ['Treat channel inventory movement as proof of consumer demand', 'Consumer behaviour is observable in the POS signal; the issue is whether planners look at it.'],
       ],
       'Downstream signals reveal demand changes before orders do. Demand sensing helps avoid overreacting to channel inventory movements.'),
 
@@ -460,7 +460,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       [
         ['Tell customers averages are technically elegant', 'Elegance does not satisfy customer orders.'],
         ['Double every order forever', 'Blanket order increases create excess inventory across the catalogue.'],
-        ['Blame the picker for not finding imaginary stock', 'Pickers cannot recover from policy-driven stockouts.'],
+        ['Treat weekly stockouts as a warehouse execution problem only', 'Pickers cannot recover from policy-driven stockouts.'],
       ],
       'Reorder policies need variability, not just averages. Safety stock exists because demand and supply do not arrive politely on schedule.'),
     q(4250992, 'Career Skills', 'Inventory and Service Levels', 'Safety stock segmentation',
@@ -496,9 +496,9 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'A plant relies on one supplier for a custom sensor, and that supplier is in a flood-prone region. Best risk response?',
       'Assess exposure and develop mitigation such as alternate sourcing, safety stock, or redesign options',
       [
-        ['Assume the weather respects purchase orders', 'Weather risk is independent of contractual terms.'],
+        ['Treat purchase orders as sufficient protection against regional disruption', 'Weather risk is independent of contractual terms.'],
         ['Drop the supplier immediately without qualifying another', 'Dropping the only source before qualifying a replacement causes the very disruption being avoided.'],
-        ['Ignore it because custom parts sound exclusive', 'Custom parts amplify single-source risk; they do not reduce it.'],
+        ['Treat custom sourcing as a resilience advantage by itself', 'Custom parts amplify single-source risk; they do not reduce it.'],
       ],
       'Supplier risk work connects geography, uniqueness, qualification time, and business impact. Mitigation should be planned before disruption tests the network.'),
     q(4250996, 'Career Skills', 'Suppliers and Sourcing Risk', 'Supplier qualification',
@@ -515,7 +515,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'Perform enhanced due diligence before awarding or expanding business',
       [
         ['Take the savings because vague is efficient', 'Vagueness on labour cost in a high-risk region is precisely the human-rights diligence trigger.'],
-        ['Assume low price proves operational excellence', 'Unexplained low cost may indicate non-compliance with labour standards, not efficiency.'],
+        ['Treat unusually low labour cost as proof of superior efficiency', 'Unexplained low cost may indicate non-compliance with labour standards, not efficiency.'],
         ['Avoid asking questions so the quote stays simple', 'Avoidance of due-diligence questions is itself the breach.'],
       ],
       'Supplier responsibility includes human-rights risk. Unusually low costs in high-risk contexts deserve evidence, not wishful thinking.'),
@@ -524,7 +524,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'Review the cause, trend, and controllability before changing supplier status',
       [
         ['Fire the supplier because one chart frowned', 'One-month deviations from external causes do not justify termination.'],
-        ['Ignore all metrics because weather exists', 'Universal metric-ignoring abandons supplier performance management.'],
+        ['Treat every weather-affected scorecard as unusable performance evidence', 'Universal metric-ignoring abandons supplier performance management.'],
         ['Average it with unrelated quality scores until smooth', 'Cross-averaging unrelated dimensions hides specific signal.'],
       ],
       'Scorecards are decision tools, not automatic verdicts. Context helps distinguish supplier performance from external disruption.'),
@@ -543,8 +543,8 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'A factory can meet a surge order by running overtime for four weekends, but maintenance warns a key line is already behind on service. What should planning consider?',
       'Capacity, labour limits, maintenance risk, customer priority, and alternatives such as split shipments or subcontracting',
       [
-        ['Run nonstop because machines love ambition', 'Skipping maintenance creates equipment failure risk that costs more than the order.'],
-        ['Reject the order without checking options', 'Reflexive rejection forfeits options like split shipments or subcontracting.'],
+        ['Treat scheduled maintenance as unused capacity during surge demand', 'Skipping maintenance creates equipment failure risk that costs more than the order.'],
+        ['Treat maintenance risk as making all surge orders infeasible', 'Reflexive rejection forfeits options like split shipments or subcontracting.'],
         ['Move maintenance to next year and hope bearings are patient', 'Deferred maintenance compounds and creates larger failures.'],
       ],
       'Capacity planning is more than available hours. Overusing constrained equipment can trade one urgent order for a larger outage.'),
@@ -562,7 +562,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'A sequence that balances due dates with reduced changeover time and service priorities',
       [
         ['Group all colours forever regardless of due dates', 'Pure changeover minimisation may miss customer commitments.'],
-        ['Ignore changeovers because fairness means first-in only', 'First-in sequencing wastes capacity when changeovers are material.'],
+        ['Treat first-in sequencing as automatically fair despite setup losses', 'First-in sequencing wastes capacity when changeovers are material.'],
         ['Paint every item beige and call it lean', 'Eliminating product variety to ease scheduling rarely matches customer demand.'],
       ],
       'Scheduling often balances setup efficiency and customer commitments. Blind first-in sequencing can waste capacity when changeovers are material.'),
@@ -574,7 +574,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       [
         ['Always wait for a perfectly full truck', 'Always waiting for a full truck violates the three-day service commitment.'],
         ['Always ship instantly regardless of cost', 'Instant shipment regardless of fill rate maximises cost without considering economics.'],
-        ['Choose the option with the neatest route name', 'Route naming has no operational meaning.'],
+        ['Treat a familiar route label as evidence of better service economics', 'Route naming has no operational meaning.'],
       ],
       'Transportation planning balances cost, service, and timing. Consolidation saves money only if it still supports customer commitments.'),
     q(4250624, 'Career Skills', 'Transportation, Warehousing, and Network Tradeoffs', 'Warehouse slotting',
@@ -592,7 +592,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       [
         ['Open it wherever rent sounds friendly', 'Rent alone misses the bigger total-cost-to-serve picture.'],
         ['Count only the ribbon-cutting budget', 'Opening cost is a fraction of the lifetime operating cost.'],
-        ['Assume closer always means cheaper overall', 'Adding a node adds facility and inventory cost that may exceed freight savings.'],
+        ['Treat shorter delivery distance as the whole network-cost analysis', 'Adding a node adds facility and inventory cost that may exceed freight savings.'],
       ],
       'Network design is a total-cost and service problem. A closer node can reduce delivery time but add facility and inventory complexity.'),
     q(4250626, 'Career Skills', 'Transportation, Warehousing, and Network Tradeoffs', 'Late but cheap carrier',
@@ -609,8 +609,8 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'The landed cost and risk transfer under the proposed terms, not just the unit price',
       [
         ['Compare only the price printed in bold', 'Bold prices exclude duties, freight, and insurance that the new terms shift to the buyer.'],
-        ['Assume three-letter trade terms are decorative', 'Incoterms allocate cost and responsibility; they are not decoration.'],
-        ['Choose the quote with the nicest logo', 'Logo aesthetics are not a procurement criterion.'],
+        ['Treat Incoterms as formatting rather than cost and risk allocation', 'Incoterms allocate cost and responsibility; they are not decoration.'],
+        ['Treat supplier branding as a substitute for landed-cost analysis', 'Logo aesthetics are not a procurement criterion.'],
       ],
       'Incoterms and freight terms can shift cost and responsibility. Landed cost reveals the real economic comparison.'),
 
@@ -621,7 +621,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       [
         ['Let each team keep its favourite spreadsheet', 'Parallel plans guarantee misaligned execution.'],
         ['Average the percentages and call it destiny', 'Averaging conflicting forecasts hides the constraint instead of resolving it.'],
-        ['Ignore capacity because launches are exciting', 'Capacity ignored creates the launch failure S&OP exists to prevent.'],
+        ['Treat launch enthusiasm as evidence that supply constraints will clear', 'Capacity ignored creates the launch failure S&OP exists to prevent.'],
       ],
       'S&OP exists to reconcile demand, supply, and financial plans. Misaligned assumptions should become explicit decisions, not parallel realities.'),
     q(4250629, 'Career Skills', 'S&OP and Cross-Functional Planning', 'Order allocation',
@@ -638,7 +638,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'Coordinate effectivity dates, remaining demand, cancellation options, rework, and disposition of old stock',
       [
         ['Receive everything and hope engineering forgets', 'Receiving deprecated stock guarantees obsolescence write-offs.'],
-        ['Scrap all old stock without checking demand', 'Scrapping without analysis wastes usable inventory.'],
+        ['Treat old-revision inventory as obsolete before effectivity analysis', 'Scrapping without analysis wastes usable inventory.'],
         ['Keep both revisions active with no system controls', 'Uncontrolled dual-revision production creates assembly errors.'],
       ],
       'Engineering changes require supply coordination. Effectivity and disposition decisions prevent obsolete inventory and production mistakes.'),
@@ -646,7 +646,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'Customer orders are late, and the warehouse blames carriers while carriers blame late tendering. Best next step?',
       'Map timestamps across pick, pack, tender, pickup, and delivery to locate the delay sources',
       [
-        ['Pick the louder team as correct', 'Volume is not evidence of accuracy in cross-team blame.'],
+        ['Treat the most forceful handoff narrative as root-cause evidence', 'Volume is not evidence of accuracy in cross-team blame.'],
         ['Switch carriers before checking tender data', 'Switching without diagnosis may not address the cause if delay is internal.'],
         ['Tell customers logistics is complicated and mysterious', 'Customer communication without diagnosis erodes trust.'],
       ],
@@ -667,8 +667,8 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'Prioritise expediting by customer impact, stockout risk, margin, and recovery timing',
       [
         ['Air-freight all items because airplanes solve feelings', 'Mass air freight maximises cost without addressing actual urgency.'],
-        ['Expedite none because the budget looks stern', 'Skipping all expediting misses items where speed has real customer value.'],
-        ['Choose items at random to be fair to boxes', 'Random selection ignores impact and outcome differences.'],
+        ['Treat the expedite budget as a blanket ban on urgent recovery actions', 'Skipping all expediting misses items where speed has real customer value.'],
+        ['Treat all delayed items as equal despite different customer impact', 'Random selection ignores impact and outcome differences.'],
       ],
       'Expediting is a targeted tool. The right candidates are items where speed changes a meaningful service or financial outcome.'),
     q(4250634, 'Career Skills', 'Resilience, Analytics, and Decision Communication', 'Exception triage',
@@ -750,7 +750,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'Keep the technical flow concise and connect capabilities to financial impact, risk, and implementation effort',
       [
         ['Show every admin setting because depth equals destiny', 'Admin depth bores executives who care about outcomes.'],
-        ['Ignore the CFO because they are not a user', 'Ignoring the economic buyer is the textbook way to lose a deal.'],
+        ['Treat executive buyers as irrelevant unless they operate the product daily', 'Ignoring the economic buyer is the textbook way to lose a deal.'],
         ['Switch to only pricing without showing value', 'Pricing without value sets up a price-only negotiation.'],
       ],
       'Great demos adapt to the audience. Technical detail matters, but executives need to see business outcomes and a credible path to value.'),
@@ -780,7 +780,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       [
         ['Promise seamless magic before seeing a sample file', 'Magic promises before file review create scope mismatches at implementation.'],
         ['Tell them to replace the ERP before any conversation', 'Refusing integration because the system is old is not a sales response.'],
-        ['Ignore the integration until renewal', 'Deferring integration scoping converts a deal-shaping question into a renewal-blocking surprise.'],
+        ['Treat legacy integration as a post-sale implementation detail only', 'Deferring integration scoping converts a deal-shaping question into a renewal-blocking surprise.'],
       ],
       'Integration fit requires concrete data-flow mapping. Legacy does not mean impossible, but assumptions need validation before commitments.'),
     q(4250224, 'Career Skills', 'Architecture and Solution Design', 'API rate limits',
@@ -788,7 +788,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'Estimate throughput, design a migration approach, discuss limits, and test with representative volume',
       [
         ['Hope 10 million is smaller in production', 'Volume rarely shrinks on go-live; it usually grows.'],
-        ['Disable limits without checking platform risk', 'Disabling limits can degrade the entire platform.'],
+        ['Treat API rate limits as a migration nuisance rather than platform protection', 'Disabling limits can degrade the entire platform.'],
         ['Tell the customer imports are a state of mind', 'Avoidance does not address a real operational requirement.'],
       ],
       'Technical scoping should expose volume constraints early. Migration planning prevents a signed deal from becoming a launch failure.'),
@@ -847,7 +847,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       [
         ['Accept unlimited scope so nobody feels constrained', 'Unbounded pilots run forever without producing a decision.'],
         ['Run the pilot forever and call it relationship-building', 'Endless pilots consume resources without converting to revenue.'],
-        ['Skip user access until the final day', 'Pilots without user access cannot validate value.'],
+        ['Treat stakeholder access as unnecessary until pilot wrap-up', 'Pilots without user access cannot validate value.'],
       ],
       'Pilots answer specific buying questions. Clear scope and success criteria prevent technical trials from becoming vague experiments.'),
     q(4250231, 'Career Skills', 'Pilots, Proofs of Concept, and Mutual Action Plans', 'POC without criteria',
@@ -902,7 +902,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'Stakeholders, decision criteria, approval sequence, risks, and who owns each next step',
       [
         ['Ask the champion to approve secretly', 'No champion can override procurement, security, and executive approval secretly.'],
-        ['Ignore procurement until the contract is stuck', 'Late procurement engagement is the most common deal-stall pattern.'],
+        ['Treat procurement as a paperwork step after technical approval', 'Late procurement engagement is the most common deal-stall pattern.'],
         ['Send the same demo recording to everyone and hope', 'Single-audience recording does not address the different criteria each stakeholder applies.'],
       ],
       'Complex sales require stakeholder mapping. A strong champion helps, but deals progress through the full buying committee.'),
@@ -940,7 +940,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'Coordinate with product, legal, and delivery before accepting or revising the commitment',
       [
         ['Accept it because signatures are exciting', 'Accepting unapproved commitments creates downstream delivery failures.'],
-        ['Assume engineering can build it over a long weekend', 'Weekend-build assumptions are unreliable for committed customer features.'],
+        ['Treat unapproved custom functionality as a minor engineering estimate', 'Weekend-build assumptions are unreliable for committed customer features.'],
         ['Delete the clause and hope legal is sleepy', 'Silent deletion creates legal risk and trust damage if discovered.'],
       ],
       'Contract commitments create delivery obligations. Sales must align legal promises with product and implementation reality.'),
@@ -949,7 +949,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       'Diagnose adoption gaps and align expansion with enablement, value, and actual user need',
       [
         ['Sell more seats quickly before the data complains', 'Selling unused capacity creates a churn risk at renewal.'],
-        ['Ignore adoption because expansion is revenue', 'Ignoring adoption produces revenue today and cancellation tomorrow.'],
+        ['Treat seat expansion as healthy even when current adoption is weak', 'Ignoring adoption produces revenue today and cancellation tomorrow.'],
         ['Cancel the customer for underusing software', 'Cancellation as a response to under-adoption forfeits the relationship.'],
       ],
       'Healthy expansion is tied to value realisation. Adoption gaps should be addressed so growth sticks.'),

@@ -173,7 +173,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       'Return urgently for worsening breathing, chest pain, confusion, persistent high fever, or inability to keep fluids down',
       [
         ['Come back only if you feel like the waiting room misses you', 'Sentiment-based return advice does not capture red flags.'],
-        ['Ignore all symptoms for exactly two weeks', 'Symptom denial during a viral illness is unsafe.'],
+        ['Wait two weeks for symptom patterns before escalating any concern', 'Symptom denial during a viral illness is unsafe.'],
         ['Return for any sneeze, hiccup, or sock lint emergency', 'Encouraging return for trivial symptoms wastes resources and dilutes red-flag signal.'],
       ],
       'Follow-up logic should give concrete red flags and escalation triggers. That keeps routine care calm while protecting against deterioration.'),
@@ -190,9 +190,9 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       'A symptom has several possible causes. Which reasoning step best narrows the differential?',
       'Compare risk factors, timing, exam findings, and test results against each possible cause',
       [
-        ['Pick the cause that was mentioned most recently on a podcast', 'Recency in media is not Bayesian evidence.'],
-        ['Choose the most dramatic diagnosis because drama is memorable', 'Drama does not equal probability or relevance.'],
-        ['Ignore mechanism and use alphabetical order', 'Alphabetical order is not a diagnostic principle.'],
+        ['Favor the cause that is most salient from recent discussion rather than the case facts', 'Recency in media is not Bayesian evidence.'],
+        ['Favor the most dramatic diagnosis because it feels more complete', 'Drama does not equal probability or relevance.'],
+        ['Sort diagnoses alphabetically instead of matching mechanism and evidence', 'Alphabetical order is not a diagnostic principle.'],
       ],
       'Differential reasoning narrows possibilities by matching evidence to mechanisms and probabilities, while staying alert to high-risk diagnoses.'),
     q(4260417, 'Medical', 'Communication, Documentation, and Handoffs', 'Documentation lantern',
@@ -291,7 +291,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       [
         ['Approve the loudest team because volume is governance', 'Volume is not regulatory governance.'],
         ['Ask each team to create separate truths', 'Divergent narratives produce inconsistent submissions and post-market exposure.'],
-        ['Ignore the change until inspection week', 'Last-minute alignment is rarely defensible at inspection.'],
+        ['Wait until inspection week before assessing the process change', 'Last-minute alignment is rarely defensible at inspection.'],
       ],
       'Regulatory work depends on cross-functional alignment. Claims, technical behavior, clinical evidence, and quality records must tell the same defensible story.'),
     q(4260509, 'Regulatory', 'Change Control and Post-Market Duties', 'CAPA detective hat',
@@ -300,7 +300,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       [
         ['Tell everyone to be more careful and close the file', '"Be careful" is not a corrective action and does not prevent recurrence.'],
         ['Rename the folder so the problem feels different', 'Renaming does not address the underlying issue.'],
-        ['Punish one person without checking the process', 'Individual punishment without process review usually misses systemic causes.'],
+        ['Frame the issue as one worker's fault before checking the process design', 'Individual punishment without process review usually misses systemic causes.'],
       ],
       'CAPA should address root cause and recurrence, not just the visible symptom. Effectiveness checks confirm the fix actually worked.'),
     q(4260510, 'Regulatory', 'Change Control and Post-Market Duties', 'Audit-response sandwich',
@@ -316,7 +316,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       'Several customers report the same device failure, but no serious injuries. What should the company do?',
       'Evaluate and trend the complaints for potential investigation, reporting duties, and corrective action',
       [
-        ['Ignore them because no one was seriously hurt', 'Post-market obligations include trend review even without serious injury.'],
+        ['Treat near misses as low priority because no injury occurred', 'Post-market obligations include trend review even without serious injury.'],
         ['Treat each report as unrelated forever', 'Treating recurring failures as unrelated misses the pattern that defines a CAPA trigger.'],
         ['Forward them to marketing only because customers used words', 'Customer complaints belong in quality processes, not just marketing.'],
       ],
@@ -398,7 +398,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       'Follow the protocol eligibility rules and involve the investigator if clarification is needed',
       [
         ['Enroll them because they seem very nice', 'Niceness does not override protocol exclusions.'],
-        ['Ignore the medication unless the sponsor asks', 'Exclusion criteria must be applied at screening, not on request.'],
+        ['Leave concomitant medication out unless the sponsor specifically requests it', 'Exclusion criteria must be applied at screening, not on request.'],
         ['Change the exclusion criterion in pencil', 'Protocol changes require sponsor and IRB review, not pencil edits.'],
       ],
       'Eligibility criteria protect participants and data integrity. Coordinators should not casually override protocol requirements.'),
@@ -433,9 +433,9 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       'A data query says a visit date conflicts with the source note. What is the best response?',
       'Check the source, correct or explain the discrepancy, and document the resolution',
       [
-        ['Answer "looks fine" without checking', 'Closing a query without checking defeats data verification.'],
+        ['Use a visual impression as the source-data verification conclusion', 'Closing a query without checking defeats data verification.'],
         ['Change the source to match the CRF if it is faster', 'Altering source to match downstream entries is falsification.'],
-        ['Ignore the query until closeout day', 'Unresolved queries pile up and block closeout.'],
+        ['Leave the query unresolved until closeout pressure forces action', 'Unresolved queries pile up and block closeout.'],
       ],
       'Query resolution should be evidence-based and documented. The goal is accurate data, not quick cosmetic agreement.'),
     q(4260606, 'Clinical Research', 'Consent, Eligibility, and Visit Planning', 'Visit-window math',
@@ -451,7 +451,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       'A participant reports new dizziness after starting the study drug. What should the coordinator do?',
       'Capture the event, assess required details with the investigator, and follow reporting procedures',
       [
-        ['Ignore it unless the participant uses the phrase "adverse event"', 'Adverse-event capture does not depend on participant vocabulary.'],
+        ['Wait for the participant to use formal adverse-event language before documenting symptoms', 'Adverse-event capture does not depend on participant vocabulary.'],
         ['Record only events that happen inside the clinic lobby', 'Location of occurrence is not the determining factor.'],
         ['Tell the participant to stop mentioning symptoms', 'Suppressing symptom reporting violates participant safety obligations.'],
       ],
@@ -652,7 +652,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       [
         ['Always choose the cheapest transport mode', 'Cheapest mode ignores avoided losses and service consequences.'],
         ['Always choose the fastest transport mode', 'Fastest mode ignores cost discipline when slower options would suffice.'],
-        ['Ignore stockout cost because freight has its own column', 'Stockout cost is exactly what justifies the freight premium here.'],
+        ['Treat freight savings as separate from service and stockout costs', 'Stockout cost is exactly what justifies the freight premium here.'],
       ],
       'Transportation choices should be evaluated against service, cost, and risk together. A higher freight cost can be justified if it prevents a larger loss.'),
     q(4260711, 'Supply Chain', 'Resilience, Analytics, and Decision Communication', 'Delay map',
@@ -789,7 +789,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       [
         ['Say "trust us" with jazz hands', 'Hand-waving does not satisfy security review.'],
         ['Argue that security slows down deals', 'Arguing with security usually loses the deal.'],
-        ['Skip security because the business buyer likes the demo', 'Security review is required regardless of business-buyer enthusiasm.'],
+        ['Treat business-buyer enthusiasm as enough despite unresolved security review', 'Security review is required regardless of business-buyer enthusiasm.'],
       ],
       'Security objections need evidence and the right reviewers. Credibility comes from clear documentation, scoped answers, and follow-through.'),
     q(4260807, 'Technical Sales', 'Architecture and Solution Design', 'Integration objection',
@@ -798,7 +798,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       [
         ['Promise it integrates with everything ever built', 'Unbounded integration promises produce post-signature failure.'],
         ['Tell them legacy systems are emotionally outdated', 'Sentiment is not integration evidence.'],
-        ['Ignore integration until after signature', 'Ignored integration risk often becomes the reason the deal fails to deploy.'],
+        ['Treat integration as a post-signature detail rather than a deal risk', 'Ignored integration risk often becomes the reason the deal fails to deploy.'],
       ],
       'Integration risk should be scoped. Mapping systems, data, constraints, and validation steps reduces uncertainty without overpromising.'),
     q(4260808, 'Technical Sales', 'Demo Strategy', 'ROI math goblin',
@@ -843,7 +843,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       [
         ['Correct the AE publicly with maximum drama', 'Public correction damages the partnership.'],
         ['Handle the technical concern alone and hide it', 'Hidden concerns surface at signature with no AE preparation.'],
-        ['Ignore the API concern because budget sounds simpler', 'Ignoring scalability rarely makes it disappear.'],
+        ['Treat budget approval as enough while leaving the API concern unresolved', 'Ignoring scalability rarely makes it disappear.'],
       ],
       'Sales engineers need cross-functional alignment. Commercial and technical blockers often interact, so the team needs one shared plan.'),
     q(4260813, 'Technical Sales', 'Working With Product, Engineering, and Customer Success', 'Product feedback filter',

@@ -19,7 +19,127 @@ type TrackLike = {
 }
 
 const QUIZ_LENGTH = 300
+const MIN_LEARNER_PROMPT_WORDS = 15
 
+const ALWAYS_DROP_SETUP_PATTERNS = [
+  /^you are (working on|being tested on)/i,
+  /^question type:/i,
+  /^original idea:/i,
+  /^same question/i,
+]
+
+const GENERIC_SETUP_PATTERNS = [
+  /^pull out\b/i,
+  /^choose the answer\b/i,
+  /^do not\b/i,
+  /^before looking\b/i,
+  /^start by asking\b/i,
+  /^start with\b/i,
+  /^then choose\b/i,
+  /^then use\b/i,
+  /^think like\b/i,
+  /^picture\b/i,
+  /^separate\b/i,
+  /^look for\b/i,
+  /^prefer\b/i,
+  /^avoid\b/i,
+  /^identify whether\b/i,
+  /^identify the object\b/i,
+  /^list every\b/i,
+  /^the best answer\b/i,
+  /^the answer should\b/i,
+  /^use the setup details\b/i,
+  /^treat (the|this)\b.*\b(question|like|percentages|claim|model|problem)\b/i,
+]
+
+function setupLineLooksEssential(value: string) {
+  return (
+    /(?:\d|[$£€%]|[=<>]|\\frac|\\sqrt|[+\-*/^]|["'“”])/i.test(value) ||
+    /\b[A-Z]{1,4}\s*=/.test(value) ||
+    /\b(?:cm|mm|km|kg|g|ml|l|mph|m\/s|minutes?|hours?|days?|years?|coins?|dollars?|people|cases|observations|variance|sensitive|specific|positive|negative)\b/i.test(value)
+  )
+}
+
+function cleanPromptText(value: string) {
+  return value
+    .replace(/\s+/g, ' ')
+    .replace(/\s+([?.!,;:])/g, '$1')
+    .trim()
+}
+
+function promptWordCount(value: string) {
+  return value.match(/[A-Za-z0-9][A-Za-z0-9'-]*/g)?.length ?? 0
+}
+
+function comparableText(value: string) {
+  return cleanPromptText(value)
+    .toLowerCase()
+    .replace(/[“”]/g, '"')
+    .replace(/[‘’]/g, "'")
+    .replace(/[^a-z0-9$%]+/g, ' ')
+    .trim()
+}
+
+function ensureTerminalPunctuation(value: string) {
+  const text = cleanPromptText(value)
+  if (!text) return text
+  return /[.?!:]$/.test(text) ? text : `${text}.`
+}
+
+function usefulSetupLine(question: Question, line: string, prompt: string) {
+  const text = cleanPromptText(line)
+  if (!text) return null
+  if (ALWAYS_DROP_SETUP_PATTERNS.some((pattern) => pattern.test(text))) return null
+
+  const essential = setupLineLooksEssential(text)
+  if (!essential && promptWordCount(text) < 3) return null
+  if (!essential && GENERIC_SETUP_PATTERNS.some((pattern) => pattern.test(text))) return null
+
+  const comparable = comparableText(text.replace(/[.?!:]$/, ''))
+  if (!comparable) return null
+  if (comparable === comparableText(question.title) || comparable === comparableText(question.chapter)) return null
+  if (comparableText(prompt).includes(comparable)) return null
+
+  return ensureTerminalPunctuation(text)
+}
+
+function expandShortPrompt(question: Question, prompt: string) {
+  const title = cleanPromptText(question.title)
+  const chapter = cleanPromptText(question.chapter)
+  const comparablePrompt = comparableText(prompt)
+  const comparableTitle = comparableText(title)
+
+  if (title && comparablePrompt === comparableTitle) {
+    return `In ${chapter}, ${title} is the concept being tested. Which answer best explains what it means or why it matters?`
+  }
+
+  const core = ensureTerminalPunctuation(prompt)
+  const prefix = title && !comparablePrompt.includes(comparableTitle)
+    ? `This ${chapter} question is about ${title}.`
+    : `This ${chapter} question asks you to use the relevant concept carefully.`
+  const expanded = `${prefix} ${core}`
+
+  if (promptWordCount(expanded) >= MIN_LEARNER_PROMPT_WORDS) return expanded
+  return `${expanded} Choose the option that best matches the exact facts and concept in the question.`
+}
+
+export function prepareQuestionForPlay(question: Question): Question {
+  const prompt = cleanPromptText(question.prompt)
+  const usefulSetup = (question.setup ?? [])
+    .map((line) => usefulSetupLine(question, line, prompt))
+    .filter((line): line is string => Boolean(line))
+
+  const promptWithSetup = usefulSetup.length ? `${usefulSetup.join(' ')} ${prompt}` : prompt
+  const learnerPrompt = promptWordCount(promptWithSetup) < MIN_LEARNER_PROMPT_WORDS
+    ? expandShortPrompt(question, promptWithSetup)
+    : ensureTerminalPunctuation(promptWithSetup)
+
+  return {
+    ...question,
+    prompt: learnerPrompt,
+    setup: undefined,
+  }
+}
 
 
 
@@ -38,7 +158,7 @@ export function buildTrackQuiz(
       `No playable questions found for track "${track.id}". ${summary.recoverable} need cleanup and ${summary.quarantined} are quarantined.`,
     )
   }
-  return playable.slice(0, QUIZ_LENGTH).map(ensureSixAnswerChoices)
+  return playable.slice(0, QUIZ_LENGTH).map((question) => ensureSixAnswerChoices(prepareQuestionForPlay(question)))
 }
 
 
@@ -109,101 +229,278 @@ function mutateLabel(label: string) {
   return null
 }
 
+function questionContext(question: Question) {
+  return `${question.topic} ${question.chapter} ${question.title} ${question.prompt} ${(question.setup ?? []).join(' ')}`
+    .toLowerCase()
+}
+
+function contextHas(context: string, terms: string[]) {
+  return terms.some((term) => context.includes(term))
+}
+
+function metaDistractorLabel(label: string) {
+  const normalized = cleanPromptText(label).toLowerCase()
+  if (!normalized) return false
+
+  return [
+    /^answer with\b/,
+    /^answer only\b/,
+    /^answer the first\b/,
+    /^always answer\b/,
+    /^apply the right-looking\b/,
+    /^average all answer choices\b/,
+    /^choose the (?:answer|textbook|convenient|fastest|biggest|loudest|nearest|longest)\b/,
+    /^do part of\b/,
+    /^follow the vibe\b/,
+    /^grab the\b/,
+    /^ignore\b/,
+    /^optimize the metric that sounds\b/,
+    /^pick the (?:answer|cleverest|fairest|fastest|market story|most|nearest)\b/,
+    /^prioritize speed\b/,
+    /^push more volume\b/,
+    /^rely on a remembered rule\b/,
+    /^select (?:the answer|it)\b/,
+    /^skip\b/,
+    /^start with the longest\b/,
+    /^stop at\b/,
+    /^take the claim at face value\b/,
+    /^treat (?:the|correlation|enthusiasm|participant|sample|what users)\b/,
+    /^trust the first quote\b/,
+    /^use the (?:adjacent|biggest|closest|finance word|memorized|nearest)\b/,
+    /^write one\b/,
+    /without checking/,
+    /broad intuition/,
+    /formal test/,
+    /sounds nicest/,
+    /sounds most senior/,
+    /skip the accounting logic/,
+    /ignore the process risk/,
+    /not just the vibe/,
+  ].some((pattern) => pattern.test(normalized))
+}
+
 function genericDistractorPool(question: Question) {
+  const context = questionContext(question)
+  const contextual: string[] = []
+
+  if (contextHas(context, ['plato', 'cave', 'forms', 'epistemology', 'gettier', 'skeptic', 'knowledge'])) {
+    contextual.push(
+      'A literal detail from the story rather than its philosophical meaning',
+      'A Descartes-style evil-demon doubt about all experience',
+      'A true belief that happens to be lucky rather than knowledge',
+      'A definition of wisdom as having many memorized facts',
+    )
+  }
+
+  if (contextHas(context, ['validity', 'soundness', 'modus', 'conditional', 'deduction', 'premise', 'conclusion'])) {
+    contextual.push(
+      'A true conclusion that the premises do not force',
+      'The converse of the conditional pattern',
+      'A soundness claim when only validity is being tested',
+      'A valid-looking argument with one hidden false premise',
+    )
+  }
+
+  if (contextHas(context, ['ethic', 'moral', 'kant', 'utilitarian', 'rawls', 'virtue'])) {
+    contextual.push(
+      'The option that maximizes happiness for the largest group only',
+      'A rule-following answer with no attention to consequences',
+      'A character-virtue answer when the question asks about duty',
+      'A fairness claim that ignores the original-position constraint',
+    )
+  }
+
+  if (contextHas(context, ['statistics', 'sample', 'confidence', 'p-value', 'regression', 'iqr', 'median'])) {
+    contextual.push(
+      'The sample mean rather than the requested spread',
+      'A correlation claim with no causal support',
+      'The raw count instead of the requested proportion',
+      'A confidence statement about the sample instead of the population',
+    )
+  }
+
+  if (contextHas(context, ['probability', 'conditional', 'bayes', 'independent', 'expected value'])) {
+    contextual.push(
+      'The unconditional probability for the whole sample',
+      'The complement of the requested event',
+      'The joint probability before the final conditioning step',
+      'The simple average of the listed outcomes',
+    )
+  }
+
+  if (contextHas(context, ['finance', 'valuation', 'dcf', 'equity', 'revenue', 'margin', 'ebitda', 'model'])) {
+    contextual.push(
+      'Revenue growth with no margin bridge',
+      'A market-share story without the valuation math',
+      'An accounting ratio from the wrong financial statement',
+      'A tidy slide that does not connect to the operating driver',
+    )
+  }
+
+  if (contextHas(context, ['software', 'algorithm', 'data structure', 'api', 'debug', 'database'])) {
+    contextual.push(
+      'A cache layer before the data contract is correct',
+      'A clever abstraction that hides the failing case',
+      'A full rewrite of the working module',
+      'A faster query that returns stale results',
+    )
+  }
+
+  if (contextHas(context, ['biology', 'chemistry', 'physics', 'science', 'climate', 'medical'])) {
+    contextual.push(
+      'A local symptom treated as the whole mechanism',
+      'A short-term measurement that misses the longer time scale',
+      'A dramatic cause that does not match the evidence',
+      'A lab result from the wrong comparison group',
+    )
+  }
+
   const byTopic: Partial<Record<Topic, string[]>> = {
     Mathematics: [
-      'Grab the closest-looking formula without checking what the givens actually describe',
-      'Do part of the computation correctly, then stop before matching it back to the question',
+      'The result from adding the given values instead of applying the relationship',
+      'The reciprocal value from reversing the requested ratio',
+      'A partial computation before the final unit conversion',
     ],
     'Game theory': [
-      'Use the fairest-looking move instead of the incentive-stable one',
-      'Assume the next round helps every player equally',
+      'The equal split that feels fair but is not incentive-stable',
+      'The short-term payoff that collapses after the next move',
+      'A cooperative agreement with no enforcement mechanism',
     ],
     Probability: [
-      'Use the biggest percentage mentioned in the setup',
-      'Average the headline percentages without conditioning on the right group',
+      'The largest percentage mentioned in the setup',
+      'The average of the headline percentages',
+      'The probability of the opposite event',
     ],
     'Expected value': [
-      'Pick the most likely payoff instead of the weighted average',
-      'Ignore the low-probability branch because it feels exceptional',
+      'The most likely single payoff',
+      'The best-case payoff from the table',
+      'The simple average of the payoff amounts',
     ],
     Statistics: [
-      'Use the memorized slogan without the algebra underneath it',
-      'Treat the sample pattern as automatic proof of the larger claim',
+      'The sample pattern treated as proof of the larger claim',
+      'The center of the data when the spread is being asked for',
+      'A bigger sample size with the same design problem',
     ],
     ML: [
-      'Optimize the metric that sounds nicest without checking the cost tradeoff',
-      'Assume a cleaner-looking model is automatically the better model',
+      'The model with the highest training accuracy',
+      'The cleaner-looking model with worse validation behavior',
+      'The metric that rewards the majority class',
     ],
     Software: [
-      'Pick the cleverest pattern rather than the simplest reliable one',
-      'Assume scalability matters more than correctness in this exact case',
+      'The clever pattern that makes the edge case harder to see',
+      'A scalability fix before the correctness bug is understood',
+      'A new abstraction that duplicates the existing contract',
     ],
     Research: [
-      'Take the claim at face value without checking design or evidence',
-      'Treat correlation as enough to settle causation',
+      'A correlational pattern treated as causal evidence',
+      'A self-report result treated as observed behavior',
+      'A larger sample with the same confounder',
+    ],
+    'Climate Science': [
+      'A weather anecdote treated as a climate trend',
+      'A carbon-cycle answer with the timescale missing',
+      'A feedback effect mistaken for the original forcing',
     ],
     Medical: [
-      'Choose the fastest action before checking the safety signal',
-      'Assume a common symptom always points to the most dramatic diagnosis',
+      'The most dramatic diagnosis with no matching red flags',
+      'Symptom relief before the safety check',
+      'A common condition that does not fit the timeline',
     ],
     'Series 86': [
-      'Use the finance word that sounds most senior without doing the math',
-      'Pick the market story and skip the accounting logic',
+      'A market story with no accounting bridge',
+      'A valuation multiple from the wrong peer set',
+      'Revenue growth with working capital left out',
     ],
     Regulatory: [
-      'Choose the fastest route instead of the defensible compliant route',
-      'Assume a product claim is fine if it sounds broadly reasonable',
+      'A disclosure that omits the required risk',
+      'A compliant label copied to an unapproved use',
+      'A verbal approval without the required record',
     ],
     'Clinical Research': [
-      'Prioritize speed over protocol and documentation',
-      'Treat participant safety as separate from data quality',
+      'A protocol deviation recorded after the fact only',
+      'A faster enrollment path that weakens informed consent',
+      'A safety signal treated as unrelated to data quality',
     ],
     'Supply Chain': [
-      'Push more volume without checking the bottleneck',
-      'Assume inventory always fixes uncertainty by itself',
+      'More safety stock at the non-bottleneck step',
+      'A lower unit cost with a much longer lead time',
+      'A forecast average that hides demand spikes',
     ],
     'Technical Sales': [
-      'Pitch immediately instead of diagnosing the buyer problem',
-      'Treat enthusiasm as proof of fit',
+      'A demo script before the buyer problem is clear',
+      'A feature list that ignores the decision criteria',
+      'A discount conversation before value is established',
     ],
     'UX Research': [
-      'Trust the first quote without checking the pattern',
-      'Assume what users say is always the same as what they do',
+      'One vivid quote treated as the whole pattern',
+      'A preference survey answer treated as observed behavior',
+      'A prototype win caused by leading wording',
     ],
     AP: [
-      'Choose the textbook-sounding phrase without applying the concept',
-      'Use the nearest formula even if the setup points somewhere else',
+      'A vocabulary match from the wrong unit',
+      'A formula result using the wrong given value',
+      'A historical example from a neighboring theme',
     ],
     'A-level': [
-      'Apply the right-looking rule to the wrong part of the problem',
-      'Stop at a familiar keyword instead of finishing the logic',
+      'The right rule applied to the wrong part of the setup',
+      'A keyword match from the previous topic',
+      'A final value with the units left unmatched',
+    ],
+    High: [
+      'A clue from the previous step used as the final answer',
+      'A nearby concept from the same lesson',
+      'A calculation with one sign or direction reversed',
     ],
     Primary: [
-      'Pick the answer that sounds nicest instead of using the clue',
-      'Choose the biggest-looking number even when the rule says otherwise',
+      'The total before the last clue is used',
+      'The number from counting one group twice',
+      'The answer with the same ones digit',
     ],
     Fun: [
-      'Grab the most dramatic answer instead of the patterned one',
-      'Follow the vibe and ignore the mechanism',
+      'The pattern shifted by one step',
+      'A nearby word that matches only one clue',
+      'The most dramatic story answer',
     ],
     University: [
-      'Use the adjacent concept without checking the exact definition',
-      'Answer with the broad intuition and skip the formal test',
+      'A neighboring theory that answers a different question',
+      'A literal reading of the example rather than the concept',
+      'A historical detail that is not the main claim',
     ],
     'Career Skills': [
-      'Choose the convenient action instead of the defensible professional one',
-      'Pick the fastest move and ignore the process risk',
+      'A quick workaround that leaves the original risk in place',
+      'A stakeholder update before the decision logic is clear',
+      'A polished deliverable with the key evidence missing',
+    ],
+    'Quant Finance': [
+      'A delta-only hedge for a gamma-heavy exposure',
+      'A historical average that ignores the payoff shape',
+      'A risk-neutral price with the discounting step missing',
     ],
     'Extension': [
-      'Skip the rigorous logical steps for a common-sense shortcut',
-      'Assume the standard rule applies without checking the extension constraint',
+      'The base-case rule without the extra constraint',
+      'A familiar theorem with one hypothesis missing',
+      'A common-sense answer that misses the edge case',
+    ],
+    Science: [
+      'A visible symptom mistaken for the underlying mechanism',
+      'A measurement from the wrong scale',
+      'A plausible cause with the sequence reversed',
     ],
   }
 
-  return byTopic[question.topic] ?? [
-    'Pick the most intuitive-sounding answer without checking the key detail',
-    'Use the nearest familiar rule even if the setup points somewhere else',
+  return [...contextual, ...(byTopic[question.topic] ?? []), ...[
+    'A related concept that answers a different question',
+    'A literal detail from the setup instead of the main idea',
+    'A partial result before the final condition is applied',
+  ]].filter((label, index, labels) => !metaDistractorLabel(label) && labels.indexOf(label) === index)
+}
+
+function candidateDistractorLabels(question: Question) {
+  const correctAnswer = question.answers.find((answer) => answer.correct)
+  return [
+    ...(correctAnswer ? candidateNumberVariants(correctAnswer.label) : []),
+    ...(correctAnswer ? [mutateLabel(correctAnswer.label)].filter((label): label is string => Boolean(label)) : []),
+    ...genericDistractorPool(question),
   ]
 }
 
@@ -214,39 +511,92 @@ function makeGeneratedDistractor(label: string, reason: string): Answer {
     correct: false,
     misconceptions: [
       {
-        tempting: 'This is the kind of answer that feels tidy at first glance.',
+        tempting: 'This can sound close because it uses a nearby idea.',
         flaw: reason,
-        reframe: 'Use the actual setup details and test the mechanism, not just the vibe of the option.',
+        reframe: 'Match the answer to the exact concept and evidence in the prompt.',
       },
     ],
   }
 }
 
+function replaceMetaDistractorAnswers(question: Question): Question {
+  if (!question.answers.some((answer) => !answer.correct && metaDistractorLabel(answer.label))) return question
+
+  const existingLabels = new Set(
+    question.answers
+      .filter((answer) => answer.correct || !metaDistractorLabel(answer.label))
+      .map((answer) => answer.label.trim().toLowerCase()),
+  )
+  const replacementLabels = candidateDistractorLabels(question)
+  let replacementIndex = 0
+
+  const nextReplacement = () => {
+    while (replacementIndex < replacementLabels.length) {
+      const candidate = replacementLabels[replacementIndex++]
+      const normalized = candidate.trim().toLowerCase()
+      if (normalized && !existingLabels.has(normalized) && !metaDistractorLabel(candidate)) {
+        existingLabels.add(normalized)
+        return candidate
+      }
+    }
+
+    const fallback = `A related ${question.chapter.toLowerCase()} idea that answers a different question`
+    const normalized = fallback.trim().toLowerCase()
+    if (!existingLabels.has(normalized)) {
+      existingLabels.add(normalized)
+      return fallback
+    }
+
+    return 'A plausible nearby answer from a different part of the topic'
+  }
+
+  return {
+    ...question,
+    answers: question.answers.map((answer) => {
+      if (answer.correct || !metaDistractorLabel(answer.label)) return answer
+      const replacement = makeGeneratedDistractor(
+        nextReplacement(),
+        'It is a plausible nearby answer, but it does not match the specific concept or evidence in this prompt.',
+      )
+      return {
+        ...answer,
+        label: replacement.label,
+        misconceptions: replacement.misconceptions,
+      }
+    }),
+  }
+}
+
 export function ensureSixAnswerChoices(question: Question): Question {
+  const sanitizedQuestion = replaceMetaDistractorAnswers(question)
   const answerIds = ['a', 'b', 'c', 'd', 'e', 'f'] as const
+  const minimumAnswerCount = 4
 
-  if (question.topic === 'Fun' && (Array.isArray(question.media) ? question.media.length > 0 : Boolean(question.media))) {
+  if (sanitizedQuestion.topic === 'Fun' && (Array.isArray(sanitizedQuestion.media) ? sanitizedQuestion.media.length > 0 : Boolean(sanitizedQuestion.media))) {
     return {
-      ...question,
-      answers: question.answers.map((answer, index) => ({
+      ...sanitizedQuestion,
+      answers: sanitizedQuestion.answers.map((answer, index) => ({
         ...answer,
         id: answerIds[index] ?? answer.id,
       })),
     }
   }
 
-  if (question.answers.length >= 6) {
+  // Four well-authored choices are better than four good choices plus two
+  // generic decoys. Only pad sparse imported questions that need enough
+  // options to play cleanly.
+  if (sanitizedQuestion.answers.length >= minimumAnswerCount) {
     return {
-      ...question,
-      answers: question.answers.map((answer, index) => ({
+      ...sanitizedQuestion,
+      answers: sanitizedQuestion.answers.map((answer, index) => ({
         ...answer,
         id: answerIds[index] ?? answer.id,
       })),
     }
   }
 
-  const existingLabels = new Set(question.answers.map((answer) => answer.label.trim().toLowerCase()))
-  const correctAnswer = question.answers.find((answer) => answer.correct)
+  const existingLabels = new Set(sanitizedQuestion.answers.map((answer) => answer.label.trim().toLowerCase()))
+  const correctAnswer = sanitizedQuestion.answers.find((answer) => answer.correct)
   const extras: Answer[] = []
 
   if (correctAnswer) {
@@ -261,10 +611,10 @@ export function ensureSixAnswerChoices(question: Question): Question {
           ),
         )
       }
-      if (question.answers.length + extras.length >= 6) break
+      if (question.answers.length + extras.length >= minimumAnswerCount) break
     }
 
-    if (question.answers.length + extras.length < 6) {
+    if (question.answers.length + extras.length < minimumAnswerCount) {
       const mutated = mutateLabel(correctAnswer.label)
       if (mutated) {
         const normalized = mutated.trim().toLowerCase()
@@ -281,7 +631,7 @@ export function ensureSixAnswerChoices(question: Question): Question {
     }
   }
 
-  for (const label of genericDistractorPool(question)) {
+  for (const label of genericDistractorPool(sanitizedQuestion)) {
     const normalized = label.trim().toLowerCase()
     if (!existingLabels.has(normalized)) {
       existingLabels.add(normalized)
@@ -292,13 +642,13 @@ export function ensureSixAnswerChoices(question: Question): Question {
         ),
       )
     }
-    if (question.answers.length + extras.length >= 6) break
+    if (sanitizedQuestion.answers.length + extras.length >= minimumAnswerCount) break
   }
 
   return {
-    ...question,
-    answers: [...question.answers, ...extras]
-      .slice(0, 6)
+    ...sanitizedQuestion,
+    answers: [...sanitizedQuestion.answers, ...extras]
+      .slice(0, minimumAnswerCount)
       .map((answer, index) => ({
         ...answer,
         id: answerIds[index] ?? answer.id,
@@ -311,6 +661,8 @@ function answerLabelLength(label: string) {
 }
 
 function shouldBalanceAnswerLengths(question: Question) {
+  if (question.challengeRating || question.alternatePrompts?.plain || question.alternatePrompts?.teaching) return false
+
   const correct = question.answers.find((answer) => answer.correct)
   const wrong = question.answers.filter((answer) => !answer.correct)
   if (!correct || wrong.length < 2) return false
@@ -362,10 +714,46 @@ function expandedDistractorLabel(label: string, question: Question, targetLength
   return candidates[0] ?? trimmed
 }
 
+function stripTerminalPunctuation(value: string) {
+  return cleanPromptText(value).replace(/[.?!:]$/, '')
+}
+
+function capitalizeFirst(value: string) {
+  const text = stripTerminalPunctuation(value)
+  if (!text) return text
+  return `${text.charAt(0).toUpperCase()}${text.slice(1)}`
+}
+
+function lowercaseFirst(value: string) {
+  const text = stripTerminalPunctuation(value)
+  if (!text) return text
+  return `${text.charAt(0).toLowerCase()}${text.slice(1)}`
+}
+
+function nominalizeCommandDistractor(label: string) {
+  const command = label.match(/^(Assume|Choose|Pick|Select|Start with|Start at|Write|Ignore|Avoid|Rely on)\s+(.+)$/i)
+  if (!command) return null
+
+  const verb = command[1].toLowerCase()
+  const object = stripTerminalPunctuation(command[2])
+  if (!object) return null
+
+  if (verb === 'assume') return `The assumption that ${lowercaseFirst(object)}`
+  if (verb === 'ignore') return `Ignoring ${lowercaseFirst(object)}`
+  if (verb === 'avoid') return `Avoiding ${lowercaseFirst(object)}`
+  if (verb === 'write') return `Writing ${lowercaseFirst(object)}`
+  if (verb === 'rely on') return `Reliance on ${lowercaseFirst(object)}`
+  if (verb === 'start with' || verb === 'start at') return `Starting ${verb === 'start at' ? 'at' : 'with'} ${lowercaseFirst(object)}`
+
+  return capitalizeFirst(object)
+}
+
 function expandSpecificDistractor(label: string, lowerContext: string): string | null {
   const normalized = label.toLowerCase()
 
   if (!label) return 'A result from applying a different setup condition'
+  const nominalized = nominalizeCommandDistractor(label)
+  if (nominalized) return nominalized
   if (normalized === 'incorrect interpretation') return 'A result from a different interpretation of the setup'
   if (normalized === 'incomplete answer') return 'A choice that uses only part of the given evidence'
   if (normalized === 'categorical error') return 'A choice from the wrong category for this question'
@@ -447,7 +835,7 @@ export function normalizeQuestionCatalog(questionCatalog: Record<string, Questio
         value.map((question) => {
           const staged = ensureQuestionCollectionMeta(question, key)
           const sanitized = repairSparseImportedQuestion(stripPlaceholderAnswers(staged))
-          const reviewed = reviewQuestion(sanitized, key)
+          const reviewed = reviewQuestion(prepareQuestionForPlay(sanitized), key)
           return isPlayableQuestion(reviewed) ? balanceAnswerLabelLengths(ensureSixAnswerChoices(reviewed)) : reviewed
         }),
       ),
@@ -916,22 +1304,19 @@ export function remixQuestion(base: Question, seed: number): Question {
 }
 
 export function rewordQuestion(base: Question, mode: number): Question {
+  base = prepareQuestionForPlay(base)
   if (mode === 0) return base
 
   if (mode === 1) {
     const reworded = buildRewordedPrompt(base, 'plain')
-    return {
+    return prepareQuestionForPlay({
       ...base,
       briefing:
-        'Same question, asked more plainly. First identify the task, then use the facts in the setup to decide which answer follows.',
-      setup: [
-        `Question type: ${base.topic}.`,
-        `Original idea: ${base.title} (${base.chapter}).`,
-        ...(base.setup ?? []),
-      ],
+        'Same question, asked more plainly. First identify the task, then use the facts in the question to decide which answer follows.',
+      setup: undefined,
       prompt: reworded,
       fieldNote: `Breakdown version: ${base.fieldNote}`,
-    }
+    })
   }
 
   const narrativeByTopic: Record<Topic, string> = {
@@ -989,16 +1374,19 @@ export function rewordQuestion(base: Question, mode: number): Question {
       'Story version. Approach it like a focused high-school class: state the rule or definition first, then pick the option that exactly fits it.',
   }
 
-  return {
+  return prepareQuestionForPlay({
     ...base,
     briefing: narrativeByTopic[base.topic],
-    setup: base.setup,
+    setup: undefined,
     prompt: buildRewordedPrompt(base, 'teaching'),
     fieldNote: base.fieldNote,
-  }
+  })
 }
 
 function buildRewordedPrompt(question: Question, style: 'plain' | 'teaching'): string {
+  const authored = question.alternatePrompts?.[style]
+  if (authored?.trim()) return authored
+
   const original = normalizePromptForRewording(question.prompt)
   const lower = `${question.topic} ${question.chapter} ${question.title} ${question.prompt}`.toLowerCase()
 

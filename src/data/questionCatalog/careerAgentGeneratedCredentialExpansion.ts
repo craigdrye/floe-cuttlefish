@@ -71,7 +71,29 @@ function credentialMentorHint(topic: Topic, chapter: string, title: string, prom
 }
 
 function q(id: number, topic: Topic, chapter: string, title: string, prompt: string, correct: string, traps: Trap[], lesson: string): Question {
-  return makeSimpleQuestion(id, topic, chapter, title, prompt, correct, traps, lesson, SOURCE, undefined, credentialMentorHint(topic, chapter, title, prompt))
+  const supportLesson = `${lesson}\n\nFor this item, the learning move is to slow the scenario down: name the controlling standard, identify the fact that triggers it, then choose the next action that a later reviewer could understand. The tempting answers usually optimize speed, memory, or polished wording, but professional judgment has to connect evidence, rule, action, and record.`
+  const solution = `The strongest answer is: "${correct}". ${lesson} It wins because it creates a defensible chain from the scenario facts to the professional action, instead of relying on recall, style, or speed.`
+  return makeSimpleQuestion(
+    id,
+    topic,
+    chapter,
+    title,
+    prompt,
+    correct,
+    traps,
+    supportLesson,
+    SOURCE,
+    undefined,
+    credentialMentorHint(topic, chapter, title, prompt),
+    {
+      solution,
+      alternatePrompts: {
+        plain: `${prompt} Which answer would be most defensible under review?`,
+        teaching: `If you had to justify this ${title.toLowerCase()} decision later, what answer connects the rule, facts, action, and record most clearly?`,
+      },
+      challengeRating: topic === 'Series 86' ? 5 : topic === 'Regulatory' || topic === 'Clinical Research' ? 4 : 3,
+    },
+  )
 }
 
 function expandTrack(plan: TrackPlan, limit = 220): Question[] {

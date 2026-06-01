@@ -25,6 +25,68 @@ import { polish as runPolish } from './polishPipeline'
 
 const _primaryBundle = [{ subTopics: PRIMARY_SUB_TOPICS, mentorHints: PRIMARY_MENTOR_HINTS, correctShortened: PRIMARY_CORRECT_SHORTENED, source: 'primary' }]
 
+function primaryLesson(question: Question): string {
+  const title = question.title || question.chapter || 'this question'
+  const answer = question.solution || 'the best answer'
+
+  if (/fraction|decimal|percent/i.test(`${title} ${question.chapter}`)) {
+    return `This question is practicing how numbers can be written in different forms. For "${title}", the key idea is: ${answer}. Compare the size of the numbers, not just how they look, and use place value, equivalent fractions, or decimals when that makes the choice clearer.`
+  }
+
+  if (/multiply|multiplication|divide|division|integer|sum|difference|equation|factor|expression|order of operations/i.test(`${title} ${question.chapter}`)) {
+    return `This is a calculation question, so slow down just enough to choose the operation and keep the signs or place values straight. For "${title}", the key idea is: ${answer}. Work one step at a time, then check whether the answer is reasonable before picking it.`
+  }
+
+  if (/shape|geometry|area|perimeter|volume|triangle|coordinate|graph/i.test(`${title} ${question.chapter}`)) {
+    return `This question is about reading a visual or geometry clue carefully. For "${title}", the key idea is: ${answer}. Notice labels, units, side lengths, axes, and what the problem is asking you to find before doing any calculation.`
+  }
+
+  return `This practice item is here to build careful reading and problem solving. For "${title}", the key idea is: ${answer}. Read the prompt, identify the clue that matters most, and choose the answer that matches the facts rather than the one that merely looks familiar.`
+}
+
+function isMediaPrompt(prompt: string): boolean {
+  const trimmed = prompt.trim()
+  return /^!\[[^\]]*\]\([^)]+\)$/.test(trimmed)
+}
+
+function isBarePrimaryPrompt(prompt: string): boolean {
+  const trimmed = prompt.trim()
+  if (trimmed.length <= 12) return true
+  if (/^\\?\s*math\b/i.test(trimmed)) return true
+  if (/^(true or false|divide|multiply)\.?$/i.test(trimmed)) return true
+  if (/^[\d\s+\-*/×÷().^]+$/.test(trimmed)) return true
+  return false
+}
+
+function rewritePrimaryPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  const title = question.title || question.chapter || 'this practice question'
+  if (prompt.endsWith('?')) return question.prompt
+  if (isMediaPrompt(prompt)) {
+    return `${prompt}\nLook closely at the image for "${title}". Which answer best solves the problem?`
+  }
+  if (prompt.endsWith(':')) {
+    return `${prompt} Finish the "${title}" problem by choosing the option that matches the clue.`
+  }
+  if (isBarePrimaryPrompt(prompt)) {
+    return `Try this "${title}" problem: ${prompt}. Pick the option that solves it.`
+  }
+  return `${prompt} Pick the option that fits the problem.`
+}
+
+function enrichPrimaryQuestionQuality(catalog: Record<string, Question[]>): Record<string, Question[]> {
+  return Object.fromEntries(
+    Object.entries(catalog).map(([trackId, questions]) => [
+      trackId,
+      questions.map((question) => ({
+        ...question,
+        prompt: rewritePrimaryPrompt(question),
+        lesson: question.lesson || primaryLesson(question),
+      })),
+    ]),
+  )
+}
+
 export function buildPrimaryQuestionCatalog(): Record<string, Question[]> {
   const kolibri = buildKolibriQuestionCatalog()
   const khan = kolibri['khanacademy'] || []
@@ -178,6 +240,8 @@ export function buildPrimaryQuestionCatalog(): Record<string, Question[]> {
     
     'khanacademy': khan,
     'ck12': ck12,
+    earlyMathReview: topUp('col-early-math-review'),
+    readingVocab6th: topUp('col-6th-grade-reading-and-vocab'),
 
     primary: [
       makeSimpleQuestion(12001, 'Primary', 'Number Reef', 'Friendly fractions',
@@ -219,5 +283,5 @@ export function buildPrimaryQuestionCatalog(): Record<string, Question[]> {
   for (const [trackId, questions] of Object.entries(_catalog)) {
     polished[trackId] = runPolish(questions, _primaryBundle)
   }
-  return polished
+  return enrichPrimaryQuestionQuality(polished)
 }

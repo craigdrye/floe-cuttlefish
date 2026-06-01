@@ -189,7 +189,7 @@ export function Game2248Screen() {
         </article>
 
         <section className="game2248-stage">
-          <details className="game-rules" open>
+          <details className="game-rules">
             <summary><HelpCircle size={14} /> How to play 2248</summary>
             <div className="game-rules-body">
               <ol>

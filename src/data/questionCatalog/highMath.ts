@@ -48,6 +48,34 @@ import {
   numbasWebworkThirdTrigonometryQuestions,
 } from './numbasWebworkMathThirdImported'
 
+function highMathLesson(question: Question): string {
+  const title = question.title || question.chapter || 'this math problem'
+  const answer = question.solution || 'the correct answer'
+  return `This problem is practicing mathematical structure, not just answer-picking. For "${title}", the key result is: ${answer}. Identify the operation or theorem, keep each algebraic step balanced, and check whether the final form matches what the question asked for.`
+}
+
+function rewriteHighMathPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  if (prompt.endsWith('?')) return question.prompt
+  if (prompt.endsWith(':')) {
+    return `${prompt} Which answer correctly completes this math idea?`
+  }
+  return `${prompt} What is the correct answer?`
+}
+
+function enrichHighMathQuestionQuality(catalog: Record<string, Question[]>): Record<string, Question[]> {
+  return Object.fromEntries(
+    Object.entries(catalog).map(([trackId, questions]) => [
+      trackId,
+      questions.map((question) => ({
+        ...question,
+        prompt: rewriteHighMathPrompt(question),
+        lesson: question.lesson || highMathLesson(question),
+      })),
+    ]),
+  )
+}
+
 export function buildHighMathQuestionCatalog(): Record<string, Question[]> {
   // makeColStatisticsProbabilityQuiz content folded into col-high-school-statistics —
   // col-statistics-probability had no age-catalog entry (dead key).
@@ -79,10 +107,11 @@ export function buildHighMathQuestionCatalog(): Record<string, Question[]> {
   'col-sat-math': openSatMathQuestions,
   }
 
-  return Object.fromEntries(
+  const toppedUp = Object.fromEntries(
     Object.entries(catalog).map(([trackId, questions]) => [
       trackId,
       topUpHighGeneratedTrack(trackId, questions),
     ]),
   )
+  return enrichHighMathQuestionQuality(toppedUp)
 }

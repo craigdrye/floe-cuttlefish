@@ -13,6 +13,45 @@ import { AP_MICRO_SUB_TOPICS, AP_MICRO_MENTOR_HINTS, AP_MICRO_CORRECT_SHORTENED 
 import { AP_MACRO_SUB_TOPICS, AP_MACRO_MENTOR_HINTS, AP_MACRO_CORRECT_SHORTENED } from './apMacroPolish'
 import { polish as runPolish } from './polishPipeline'
 
+function rewriteEconomicsFragmentPrompt(question: Question, scope: 'micro' | 'macro'): string {
+  const prompt = question.prompt.trim()
+  if (!prompt.endsWith(':')) return question.prompt
+
+  const stem = prompt.replace(/:$/, '').trim()
+  const actor = scope === 'micro' ? 'a household, firm, or market' : 'an economy or policy maker'
+  return `An economics learner is using "${question.title}" to reason about ${actor}. Which answer best completes this sentence: "${stem}"?`
+}
+
+function economicsLesson(question: Question, scope: 'micro' | 'macro'): string {
+  const frame =
+    scope === 'micro'
+      ? 'Microeconomics studies choices by households, firms, and individual markets.'
+      : 'Macroeconomics studies whole-economy patterns such as output, prices, jobs, money, and trade.'
+  return `${frame} For "${question.title}", the key idea is: ${question.solution}. Use the prompt to identify the actor, the constraint, and whether the question is asking for a definition, a movement along a curve, a shift, or a policy effect.`
+}
+
+function economicsChallengeRating(question: Question): Question['challengeRating'] {
+  if (question.challengeRating) return question.challengeRating
+  if (question.chapter.includes('Studio') || question.chapter === 'Stretch Zone') return 7
+  if (question.id >= 16700 || question.id >= 16800) return 7
+  return 5
+}
+
+function enrichEconomicsQuestions(questions: Question[], scope: 'micro' | 'macro'): Question[] {
+  return questions.map((question) => ({
+    ...question,
+    prompt: rewriteEconomicsFragmentPrompt(question, scope),
+    alternatePrompts: {
+      ...question.alternatePrompts,
+      plain:
+        question.alternatePrompts?.plain ??
+        `In plain language, what does "${question.title}" help explain in ${scope === 'micro' ? 'a market decision' : 'the wider economy'}?`,
+    },
+    lesson: question.lesson || economicsLesson(question, scope),
+    challengeRating: economicsChallengeRating(question),
+  }))
+}
+
 const highMicroeconomicsHandBankBaseQuestions: Question[] = makeQuestionBank('AP', [
   { id: 16101, chapter: 'Chapter 2: Supply, Demand, and Elasticity', title: 'Demand law', prompt: 'All else equal, when price rises, quantity demanded usually:', correct: 'Falls', wrong: [['Rises', 'That reverses the usual demand relationship.', 'Keep the law of demand straight.'], ['Stays permanently identical', 'Quantity demanded usually responds to price changes.', 'This is not a fixed relationship.'], ['Becomes a tax', 'That mixes concepts.', 'Focus on quantity demanded.']] },
   { id: 16102, chapter: 'Chapter 4: Consumer Choice and Production Costs', title: 'Marginal idea', prompt: 'Marginal cost means:', correct: 'The cost of producing one more unit', wrong: [['The cost of the whole factory forever', 'That is too broad.', 'Marginal means one additional unit.'], ['Only advertising cost', 'Marginal cost is not one special expense type.', 'Think incremental production cost.'], ['A profit target', 'Cost and profit are different concepts.', 'Stay with extra cost.']] },
@@ -51,7 +90,7 @@ const highMicroeconomicsHandBankBaseQuestions: Question[] = makeQuestionBank('AP
 ])
 
 export const highMicroeconomicsHandBankQuestions: Question[] = runPolish(
-  highMicroeconomicsHandBankBaseQuestions,
+  enrichEconomicsQuestions(highMicroeconomicsHandBankBaseQuestions, 'micro'),
   [{ subTopics: AP_MICRO_SUB_TOPICS, mentorHints: AP_MICRO_MENTOR_HINTS, correctShortened: AP_MICRO_CORRECT_SHORTENED, source: 'apMicro' }],
 )
 
@@ -93,6 +132,6 @@ const highMacroeconomicsHandBankBaseQuestions: Question[] = makeQuestionBank('AP
 ])
 
 export const highMacroeconomicsHandBankQuestions: Question[] = runPolish(
-  highMacroeconomicsHandBankBaseQuestions,
+  enrichEconomicsQuestions(highMacroeconomicsHandBankBaseQuestions, 'macro'),
   [{ subTopics: AP_MACRO_SUB_TOPICS, mentorHints: AP_MACRO_MENTOR_HINTS, correctShortened: AP_MACRO_CORRECT_SHORTENED, source: 'apMacro' }],
 )

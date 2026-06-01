@@ -210,9 +210,9 @@ const medicalCodingRoadmap: QuestionSeed[] = [
     prompt: 'The diagnosis index offers right, left, bilateral, and unspecified options, but the note only says "knee pain." What is the best choice?',
     correct: 'Use the unspecified laterality code unless the provider can clarify the documented side',
     wrong: [
-      ['Assume right side because most people are right-handed', 'Hand dominance does not establish knee laterality.', 'Do not infer unsupported laterality.'],
+      ['Right-hand dominance establishes right knee laterality', 'Hand dominance does not establish knee laterality.', 'Do not infer unsupported laterality.'],
       ['Report bilateral to avoid missing a side', 'Bilateral is a specific fact that must be documented.', 'Specificity needs evidence.'],
-      ['Skip the diagnosis because laterality is incomplete', 'A less specific supported code may still be reportable.', 'Code to the highest supported specificity.'],
+      ['Unspecified laterality codes are never reportable', 'A less specific supported code may still be reportable.', 'Code to the highest supported specificity.'],
     ],
   },
   {
@@ -259,7 +259,7 @@ const medicalCodingRoadmap: QuestionSeed[] = [
     correct: 'Calculate supported anesthesia time and apply any qualifying circumstance only if documentation and rules allow it',
     wrong: [
       ['Round every case up to the next full hour automatically', 'Anesthesia time reporting follows specific rules, not automatic hour rounding.', 'Use documented start and stop time.'],
-      ['Ignore physical status and circumstances in every case', 'Some modifiers or qualifying circumstances may be relevant.', 'Review all anesthesia-specific documentation.'],
+      ['Physical status and qualifying circumstances never affect anesthesia coding', 'Some modifiers or qualifying circumstances may be relevant.', 'Review all anesthesia-specific documentation.'],
       ['Use the surgeon incision time as the only anesthesia start time', 'Anesthesia time is not necessarily identical to incision time.', 'Use the anesthesia record.'],
     ],
   },
@@ -319,7 +319,7 @@ const medicalCodingRoadmap: QuestionSeed[] = [
     correct: 'The telehealth claim may lack required support even if the clinical assessment is documented',
     wrong: [
       ['Telehealth never needs documentation because no room was used', 'Virtual services still require documentation.', 'Telehealth has service and payer requirements.'],
-      ['The claim should be converted to surgery coding', 'A video visit is not surgery.', 'Choose the code family that matches the service.'],
+      ['A video platform makes the encounter a procedural service', 'A video visit is not surgery.', 'Choose the code family that matches the service.'],
       ['The coder should add consent language after the visit', 'Coders should not create facts not documented by the provider.', 'Missing required elements need proper correction or query.'],
     ],
   },
@@ -330,7 +330,7 @@ const medicalCodingRoadmap: QuestionSeed[] = [
     prompt: 'An internal audit finds a pattern of claims paid for services that were not supported by documentation. What is the compliance priority?',
     correct: 'Quantify the issue, stop the error, correct affected claims or repayments as required, and document corrective action',
     wrong: [
-      ['Ignore the issue because the payer already paid', 'Payment does not cure unsupported billing.', 'Compliance includes correction after discovery.'],
+      ['Paid claims are compliant once the remittance posts', 'Payment does not cure unsupported billing.', 'Compliance includes correction after discovery.'],
       ['Delete the audit files so no one worries', 'Destroying evidence compounds the problem.', 'Maintain records and remediate.'],
       ['Keep billing the same way until the next annual meeting', 'Known errors should be addressed promptly.', 'Correct the process and affected claims.'],
     ],
@@ -430,7 +430,7 @@ const clinicalResearchRoadmap: QuestionSeed[] = [
     correct: 'Document the deviation, assess participant and data impact, and report or correct according to the protocol and site procedures',
     wrong: [
       ['Backdate the lab collection to fit the window', 'Falsifying dates destroys data integrity.', 'Records must reflect what happened.'],
-      ['Ignore it because the lab was eventually done', 'Late safety data can affect participant protection and data quality.', 'Deviation management is part of GCP.'],
+      ['A completed safety lab is protocol-compliant regardless of visit window', 'Late safety data can affect participant protection and data quality.', 'Deviation management is part of GCP.'],
       ['Withdraw every participant with any deviation automatically', 'Not all deviations require withdrawal.', 'Assess impact and follow the protocol.'],
     ],
   },
@@ -491,7 +491,7 @@ const clinicalResearchRoadmap: QuestionSeed[] = [
     wrong: [
       ['Enroll them because close enough is always acceptable', 'Eligibility criteria are not casual estimates.', 'Apply protocol thresholds precisely.'],
       ['Change the lab value to fit the desired answer', 'Changing data is misconduct.', 'Document the actual result.'],
-      ['Ignore laboratory criteria if the participant feels healthy', 'Lab-based exclusions can protect safety.', 'Use all eligibility criteria.'],
+      ['Normal appearance overrides protocol lab exclusion criteria', 'Lab-based exclusions can protect safety.', 'Use all eligibility criteria.'],
     ],
   },
   {
@@ -563,7 +563,7 @@ const clinicalResearchRoadmap: QuestionSeed[] = [
     wrong: [
       ['Pre-existing conditions can never become adverse events', 'Worsening can be reportable depending on protocol definitions.', 'Track change from baseline.'],
       ['Only brand-new diagnoses count as AEs', 'Adverse events can include worsening of existing conditions.', 'Use the trial AE definition.'],
-      ['Ignore it because migraines are subjective', 'Subjective symptoms can still be clinically relevant.', 'Document participant-reported events appropriately.'],
+      ['Participant-reported migraines are not valid adverse-event data', 'Subjective symptoms can still be clinically relevant.', 'Document participant-reported events appropriately.'],
     ],
   },
   {
@@ -671,7 +671,7 @@ const clinicalResearchRoadmap: QuestionSeed[] = [
     wrong: [
       ['Keep it from participants until study closeout', 'Important new risk information may affect ongoing consent.', 'Consent remains active during the trial.'],
       ['Tell only participants who ask exactly the right question', 'Participant protection should not depend on guessing.', 'Use the approved communication plan.'],
-      ['Ignore IRB involvement because the sponsor already knows', 'Sponsor awareness does not replace IRB oversight.', 'Follow required reporting and approval pathways.'],
+      ['Sponsor notification replaces required IRB oversight for new risks', 'Sponsor awareness does not replace IRB oversight.', 'Follow required reporting and approval pathways.'],
     ],
   },
   {
@@ -729,7 +729,7 @@ const clinicalResearchRoadmap: QuestionSeed[] = [
     prompt: 'A central lab report lists a participant ID that does not match the visit source worksheet. What should the site do?',
     correct: 'Reconcile identifiers against source and lab records before entering or using the result for eligibility or safety decisions',
     wrong: [
-      ['Assume the result belongs to the participant because the date is close', 'Close dates do not prove identity.', 'Verify subject attribution.'],
+      ['A matching visit date proves the central lab result attribution', 'Close dates do not prove identity.', 'Verify subject attribution.'],
       ['Enter the result and let statistics fix it later', 'Misattributed safety data can harm participants and analyses.', 'Resolve before use.'],
       ['Change the participant ID on the lab report without documentation', 'Uncontrolled alteration breaks traceability.', 'Use a documented correction pathway.'],
     ],
@@ -852,7 +852,7 @@ const healthcareComplianceRoadmap: QuestionSeed[] = [
     prompt: 'A monthly screening identifies a contracted therapist on the OIG exclusion list after several months of federal program billing. What is the best response?',
     correct: 'Remove the individual from federal program work, investigate affected claims, and follow repayment and disclosure processes as appropriate',
     wrong: [
-      ['Ignore it because contractors are not employees', 'Excluded contractors can still create federal program risk.', 'Screen workforce and relevant vendors.'],
+      ['OIG exclusion screening applies only to W-2 employees', 'Excluded contractors can still create federal program risk.', 'Screen workforce and relevant vendors.'],
       ['Keep billing until the annual credentialing cycle', 'Known exclusion issues need prompt action.', 'Stop the risk and assess impact.'],
       ['Ask the therapist to use a nickname on claims', 'Name workarounds do not cure exclusion risk.', 'Address eligibility and billing consequences.'],
     ],
@@ -912,9 +912,9 @@ const healthcareComplianceRoadmap: QuestionSeed[] = [
     prompt: 'A referral packet with patient diagnoses is faxed to the wrong business. What should the compliance and privacy team do?',
     correct: 'Contain the disclosure, document the facts, perform breach assessment, notify as required, and address process controls',
     wrong: [
-      ['Assume no issue because faxing is old technology', 'The transmission method does not remove privacy obligations.', 'Assess the disclosure.'],
+      ['Faxed PHI is exempt from privacy breach assessment', 'The transmission method does not remove privacy obligations.', 'Assess the disclosure.'],
       ['Blame the patient for having a referral', 'The organization controls the fax process.', 'Fix operational safeguards.'],
-      ['Ignore it unless the recipient posts online', 'Unauthorized disclosure can require action even without public posting.', 'Use breach assessment procedures.'],
+      ['A misdirected referral packet matters only after public disclosure', 'Unauthorized disclosure can require action even without public posting.', 'Use breach assessment procedures.'],
     ],
   },
   {
@@ -1118,7 +1118,7 @@ const healthcareComplianceRoadmap: QuestionSeed[] = [
     wrong: [
       ['Let each employee decide whether to respond', 'Uncoordinated responses risk errors and omissions.', 'Centralize and preserve.'],
       ['Destroy old billing records to narrow the request', 'Destruction after notice can create serious legal risk.', 'Implement preservation.'],
-      ['Ignore it until the agency calls again', 'Government requests require prompt attention.', 'Follow legal response procedures.'],
+      ['A subpoena creates no preservation duty until a second request arrives', 'Government requests require prompt attention.', 'Follow legal response procedures.'],
     ],
   },
   {
@@ -1145,7 +1145,7 @@ const regulatoryAffairsRoadmap: QuestionSeed[] = [
     wrong: [
       ['Only whether the two devices share the same color casing', 'Appearance alone does not establish substantial equivalence.', 'Compare intended use, technology, performance, and labeling.'],
       ['Whether the competitor has a larger sales team', 'Commercial strength does not define regulatory pathway.', 'Use FDA classification and predicate logic.'],
-      ['Assume 510(k) is impossible because the devices are not identical', 'Substantial equivalence does not require identical devices.', 'Assess whether differences affect safety and effectiveness.'],
+      ['Substantial equivalence requires the new device to be identical to the predicate', 'Substantial equivalence does not require identical devices.', 'Assess whether differences affect safety and effectiveness.'],
     ],
   },
   {
@@ -1156,8 +1156,8 @@ const regulatoryAffairsRoadmap: QuestionSeed[] = [
     correct: 'Expect higher-risk classification analysis and likely more rigorous evidence than a low-risk exempt device',
     wrong: [
       ['Treat it as exempt because all implants are simple accessories', 'Implants often raise significant risk questions.', 'Device risk drives classification and evidence.'],
-      ['Choose the pathway with the lowest user fee first', 'Cost does not determine pathway.', 'Start with statutory classification and risk.'],
-      ['Skip FDA review because the design team tested it internally', 'Internal testing does not eliminate applicable premarket requirements.', 'Map the correct pathway.'],
+      ['Premarket pathway classification is driven by the lowest user fee', 'Cost does not determine pathway.', 'Start with statutory classification and risk.'],
+      ['Internal bench testing replaces applicable FDA premarket review', 'Internal testing does not eliminate applicable premarket requirements.', 'Map the correct pathway.'],
     ],
   },
   {
@@ -1169,7 +1169,7 @@ const regulatoryAffairsRoadmap: QuestionSeed[] = [
     wrong: [
       ['Approve the claim because customer demand proves safety', 'Demand does not authorize a new intended use.', 'Claims must fit clearance or approval.'],
       ['Let sales make the claim verbally but not in writing', 'Oral promotion can still create regulatory risk.', 'Control all promotional claims.'],
-      ['Ignore labeling because websites are not labeling or promotion', 'Digital materials can be promotional labeling or advertising.', 'Review customer-facing claims.'],
+      ['Device websites cannot create labeling or promotional-claim risk', 'Digital materials can be promotional labeling or advertising.', 'Review customer-facing claims.'],
     ],
   },
   {
@@ -1216,7 +1216,7 @@ const regulatoryAffairsRoadmap: QuestionSeed[] = [
     correct: 'Assess whether the software change could significantly affect safety, effectiveness, performance, or labeling before release',
     wrong: [
       ['Approve release because users cannot see the algorithm', 'Invisible changes can affect device performance.', 'Evaluate risk and regulatory impact.'],
-      ['Assume every software change always requires a new PMA', 'Some changes can be documented without a new submission.', 'Use a structured change assessment.'],
+      ['Every cleared-device software change automatically requires a new PMA', 'Some changes can be documented without a new submission.', 'Use a structured change assessment.'],
       ['Review only after customer complaints arrive', 'Regulatory assessment belongs before implementation.', 'Control changes prospectively.'],
     ],
   },
@@ -1253,7 +1253,7 @@ const regulatoryAffairsRoadmap: QuestionSeed[] = [
     wrong: [
       ['Whether users can be blamed in the submission', 'Human factors focuses on designing for real users.', 'Mitigate use-related risk.'],
       ['Whether the device can be sold only to expert engineers if intended for home patients', 'The intended user population matters.', 'Validate with representative users.'],
-      ['Whether the confirmation step can be ignored in risk analysis', 'Skipped critical tasks can affect safety.', 'Analyze and reduce use error.'],
+      ['Dose confirmation is not a critical task in home-use risk analysis', 'Skipped critical tasks can affect safety.', 'Analyze and reduce use error.'],
     ],
   },
   {
@@ -1276,7 +1276,7 @@ const regulatoryAffairsRoadmap: QuestionSeed[] = [
     correct: 'Whether the event meets medical device reporting criteria and requires timely investigation and regulatory reporting',
     wrong: [
       ['Only whether the customer sounded upset', 'Emotion is not the MDR criterion.', 'Assess event facts and potential harm.'],
-      ['Ignore malfunctions unless injury already occurred', 'Certain malfunctions can be reportable based on recurrence risk.', 'Know MDR triggers.'],
+      ['MDR malfunction reporting requires an injury in the first event', 'Certain malfunctions can be reportable based on recurrence risk.', 'Know MDR triggers.'],
       ['Replace the device quietly with no complaint record', 'Complaint handling requires documentation and investigation.', 'Maintain a complaint file.'],
     ],
   },
@@ -1289,7 +1289,7 @@ const regulatoryAffairsRoadmap: QuestionSeed[] = [
     wrong: [
       ['Treat each complaint as isolated forever', 'A recurring pattern may indicate systemic issue.', 'Trend and escalate.'],
       ['Stop documenting after the first complaint', 'Each complaint still needs handling.', 'Use the aggregate signal.'],
-      ['Assume batteries are outside device regulation', 'Components affecting device performance can matter.', 'Investigate the failure mode.'],
+      ['Battery failures are non-regulatory because batteries are generic components', 'Components affecting device performance can matter.', 'Investigate the failure mode.'],
     ],
   },
   {
@@ -1420,7 +1420,7 @@ const regulatoryAffairsRoadmap: QuestionSeed[] = [
     correct: 'Declare conformity as appropriate and clearly justify or test any deviations from the standard',
     wrong: [
       ['Claim full conformity while hiding deviations', 'Misstating conformity creates review and compliance risk.', 'Be transparent about deviations.'],
-      ['Ignore all standards because one clause differs', 'Partial use may still support the submission.', 'Explain the standard strategy.'],
+      ['One clause deviation invalidates any use of a recognized standard', 'Partial use may still support the submission.', 'Explain the standard strategy.'],
       ['Use the standard number as a substitute for test results in every case', 'Standards often need supporting declarations and data.', 'Show how conformity was established.'],
     ],
   },
@@ -1493,7 +1493,7 @@ const regulatoryAffairsRoadmap: QuestionSeed[] = [
     wrong: [
       ['More burdensome evidence is always better', 'Unnecessary studies can add cost and ethical burden without improving answers.', 'Match evidence to the question.'],
       ['No evidence is needed if a standard exists', 'Standards may help but do not eliminate all evidence needs.', 'Use a justified evidence package.'],
-      ['The most expensive test impresses regulators automatically', 'Regulators need relevant evidence, not cost signals.', 'Choose fit-for-purpose testing.'],
+      ['Higher-cost animal testing is always stronger regulatory evidence than bench data', 'Regulators need relevant evidence, not cost signals.', 'Choose fit-for-purpose testing.'],
     ],
   },
 ]
@@ -1555,7 +1555,7 @@ const pharmaDrugSafetyRoadmap: QuestionSeed[] = [
     correct: 'Code the reported concept accurately without upgrading or diagnosing beyond the information available',
     wrong: [
       ['Always code myocardial infarction for any heart-related phrase', 'That overstates the reported event.', 'Code the actual reported concept.'],
-      ['Ignore patient words unless a physician uses Latin', 'Patient-reported events can be valid safety information.', 'Code verbatim reports carefully.'],
+      ['Patient-reported symptom terms are invalid without physician terminology', 'Patient-reported events can be valid safety information.', 'Code verbatim reports carefully.'],
       ['Change the event to product complaint only', 'Symptoms after drug exposure may be adverse events.', 'Separate AE and product-quality concepts when needed.'],
     ],
   },
@@ -1590,8 +1590,8 @@ const pharmaDrugSafetyRoadmap: QuestionSeed[] = [
     prompt: 'A patient reports an injector misfired and they later experienced worsening symptoms. What should safety operations do?',
     correct: 'Process both the product quality complaint and the associated adverse event through linked workflows',
     wrong: [
-      ['Choose either complaint or AE but never both', 'A report can contain both product-quality and safety information.', 'Route each component properly.'],
-      ['Ignore symptoms because a device was involved', 'Symptoms may be adverse events even when a device complaint exists.', 'Capture patient outcome.'],
+      ['A product-quality complaint cannot also contain an adverse event', 'A report can contain both product-quality and safety information.', 'Route each component properly.'],
+      ['Patient symptoms belong only in the device complaint file', 'Symptoms may be adverse events even when a device complaint exists.', 'Capture patient outcome.'],
       ['Handle only the complaint if the drug is expensive', 'Cost does not decide safety processing.', 'Use report content and obligations.'],
     ],
   },
@@ -1602,8 +1602,8 @@ const pharmaDrugSafetyRoadmap: QuestionSeed[] = [
     prompt: 'A weekly literature search finds a case report of a patient on the company drug who developed a rare serious event. What is required?',
     correct: 'Assess whether the publication contains a reportable ICSR and process it according to literature surveillance procedures',
     wrong: [
-      ['Ignore published cases because they are not phone calls', 'Literature can be a safety-report source.', 'Screen and process relevant publications.'],
-      ['Assume all literature events are unrelated', 'Causality must be assessed based on the report.', 'Do not dismiss by source type.'],
+      ['Published case reports are not valid pharmacovigilance sources', 'Literature can be a safety-report source.', 'Screen and process relevant publications.'],
+      ['Literature adverse events are automatically unrelated to company products', 'Causality must be assessed based on the report.', 'Do not dismiss by source type.'],
       ['Wait until the article is ten years old', 'Timelines run from awareness, not article age preference.', 'Process promptly.'],
     ],
   },
@@ -1674,7 +1674,7 @@ const pharmaDrugSafetyRoadmap: QuestionSeed[] = [
     prompt: 'A reporter says a patient became pregnant while taking a drug, but no adverse outcome has occurred. How should PV think about it?',
     correct: 'Pregnancy exposure may require capture and follow-up for maternal, fetal, and outcome information according to procedures',
     wrong: [
-      ['Ignore it until a birth defect is confirmed', 'Exposure during pregnancy can be safety-relevant before outcome is known.', 'Follow up to outcome.'],
+      ['Pregnancy exposure is reportable only after a confirmed birth defect', 'Exposure during pregnancy can be safety-relevant before outcome is known.', 'Follow up to outcome.'],
       ['Enter a serious birth defect automatically', 'Do not invent an outcome that has not occurred.', 'Record known facts and follow up.'],
       ['Treat it as product quality only', 'Pregnancy exposure is a safety topic, not merely product quality.', 'Use PV pregnancy procedures.'],
     ],
@@ -1686,7 +1686,7 @@ const pharmaDrugSafetyRoadmap: QuestionSeed[] = [
     prompt: 'A pharmacist reports a look-alike carton almost led to dispensing the wrong strength, but the error was caught before the patient received it. What should happen?',
     correct: 'Capture the medication error or near miss for safety and product-risk evaluation according to procedures',
     wrong: [
-      ['Ignore it because the patient was not harmed', 'Near misses can reveal preventable risk.', 'Medication-error data support risk reduction.'],
+      ['Medication-error near misses are not safety data without patient harm', 'Near misses can reveal preventable risk.', 'Medication-error data support risk reduction.'],
       ['Report an adverse reaction that never occurred', 'Do not create a clinical event that did not happen.', 'Classify the medication-error information accurately.'],
       ['Tell the pharmacist packaging is their problem only', 'Product presentation may contribute to error risk.', 'Evaluate root cause and prevention.'],
     ],
@@ -1818,7 +1818,7 @@ const pharmaDrugSafetyRoadmap: QuestionSeed[] = [
     prompt: 'A patient reports kidney injury while taking the suspect drug, but also had dehydration, NSAID use, and chronic kidney disease. What should medical review do?',
     correct: 'Assess alternative causes and contributing factors while documenting the reasoning for causality and case assessment',
     wrong: [
-      ['Ignore confounders because they complicate the story', 'Confounders are essential to causality assessment.', 'Evaluate the full clinical context.'],
+      ['Causality assessment should exclude dehydration, NSAID use, and kidney disease', 'Confounders are essential to causality assessment.', 'Evaluate the full clinical context.'],
       ['Declare the drug unrelated without review', 'Alternative causes do not automatically exclude contribution.', 'Use balanced medical judgment.'],
       ['Remove comorbidities from the narrative', 'Comorbidities may be highly relevant.', 'Summarize them clearly.'],
     ],
@@ -1842,7 +1842,7 @@ const pharmaDrugSafetyRoadmap: QuestionSeed[] = [
     prompt: 'On a company-managed product page, a user comments that the drug caused fainting. What should PV do?',
     correct: 'Capture and assess the post as potential safety information and attempt follow-up if feasible under company procedures',
     wrong: [
-      ['Ignore it because it is online slang', 'Company-managed social media can be a source of safety reports.', 'Screen for reportable information.'],
+      ['Social media reports are invalid when written in casual language', 'Company-managed social media can be a source of safety reports.', 'Screen for reportable information.'],
       ['Reply publicly asking for the patient full medical history', 'Public collection of private health data is inappropriate.', 'Use approved private follow-up channels.'],
       ['Delete every adverse event comment without process', 'Deletion can lose safety information and audit trail.', 'Moderate according to policy while preserving intake.'],
     ],
@@ -1967,7 +1967,7 @@ const healthInsurancePayersRoadmap: QuestionSeed[] = [
     wrong: [
       ['Pay every claim with any number on it', 'Claims need required data and consistency.', 'Use edits to ensure process integrity.'],
       ['Deny the member personally without provider correction options', 'Provider claim issues often need provider-facing correction workflows.', 'Route the issue appropriately.'],
-      ['Ignore modifiers because only diagnoses matter', 'Modifiers can affect coverage and payment.', 'Review all required claim elements.'],
+      ['Claim modifiers are irrelevant when the diagnosis code is valid', 'Modifiers can affect coverage and payment.', 'Review all required claim elements.'],
     ],
   },
   {
@@ -2086,7 +2086,7 @@ const healthInsurancePayersRoadmap: QuestionSeed[] = [
     correct: 'Transition-of-care, continuity, existing authorization, and applicable regulatory requirements before disrupting treatment',
     wrong: [
       ['Terminate all care immediately at enrollment', 'Abrupt disruption can violate continuity protections and harm members.', 'Review transition rules.'],
-      ['Ignore prior clinical records because they came from another plan', 'Prior records may be relevant to medical necessity.', 'Collect and review continuity evidence.'],
+      ['Prior-plan clinical records cannot support continuity medical-necessity review', 'Prior records may be relevant to medical necessity.', 'Collect and review continuity evidence.'],
       ['Require the member to restart diagnosis from scratch', 'Unnecessary repetition can delay care.', 'Use existing information when appropriate.'],
     ],
   },
@@ -2097,7 +2097,7 @@ const healthInsurancePayersRoadmap: QuestionSeed[] = [
     prompt: 'Claims data show one provider billing 30 hours of therapy in a single day for multiple members. What should SIU or payment integrity do?',
     correct: 'Investigate for potential fraud, waste, abuse, coding error, or data issue before payment recovery or referral decisions',
     wrong: [
-      ['Ignore it because high volume always means excellence', 'Impossible or extreme billing patterns need review.', 'Use data analytics and investigation.'],
+      ['Extremely high therapy hours are proof of superior provider productivity', 'Impossible or extreme billing patterns need review.', 'Use data analytics and investigation.'],
       ['Automatically accuse the provider publicly', 'Investigation should establish facts before conclusions.', 'Follow due process and documentation.'],
       ['Pay faster to reward productivity', 'Suspicious productivity should trigger validation.', 'Protect program integrity.'],
     ],

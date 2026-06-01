@@ -111,14 +111,21 @@ const _baseFormalLogicGeneratedQuestions = makeQuestionBank('University', [
     id: 390008,
     chapter: 'Natural Deduction',
     title: 'Conditional Proof',
-    prompt: 'The basic strategy of conditional proof is to:',
+    prompt: 'In natural deduction, conditional proof is used to prove a statement of the form A -> B. What is the basic proof strategy?',
     correct: 'Assume the antecedent temporarily and derive the consequent',
     wrong: [
       ['Assume the consequent and derive the antecedent', 'That would prove the converse, not the original conditional.', 'Start with what appears before the arrow.'],
       ['Assume the conclusion is false in every proof', 'That is closer to reductio or tableaux strategy.', 'Conditional proof uses a temporary antecedent assumption.'],
       ['List all atomic propositions alphabetically', 'Ordering symbols is not a proof strategy.', 'Focus on subproof structure.'],
     ],
-    lesson: 'Coverage source: Open Logic Project, natural deduction. To prove A -> B, open a subproof with A as an assumption and derive B inside it.',
+    lesson: 'Conditional proof is the natural-deduction rule for introducing an arrow. To prove A -> B, you temporarily step into a little proof room where A is assumed, then try to derive B inside that room.\n\nIf B follows under that temporary assumption, you close the room, discharge the assumption, and conclude A -> B. The assumption was not proved globally; it was used to show what would follow if A were true.',
+    solution: 'To prove A -> B, assume A temporarily in a subproof, derive B, then discharge the assumption and infer A -> B.',
+    mentorHint: 'Arrow introduction starts by assuming the left side of the arrow, then deriving the right side.',
+    alternatePrompts: {
+      plain: 'How do you prove A -> B using conditional proof?',
+      teaching: 'Why does a conditional proof let you assume A temporarily without claiming A is true outright?',
+    },
+    challengeRating: 5,
     source: 'Generated from Open Logic Project coverage',
   },
   {

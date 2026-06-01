@@ -4,9 +4,10 @@ import { useStore } from '../../store/useStore'
 interface Props {
   title: string
   showReferenceGuide?: boolean
+  showStats?: boolean
 }
 
-export function TopBar({ title }: Props) {
+export function TopBar({ title, showStats = true }: Props) {
   const { progress, goHome, user, setShowProfile } = useStore()
 
   const handleProfileClick = () => {
@@ -22,15 +23,19 @@ export function TopBar({ title }: Props) {
         <span className="topbar-title">{title}</span>
       </div>
       <div className="topbar-right">
-        <span className="stat-chip stat-chip-streak">
-          <Flame size={13} /> <strong>{progress.streak} day</strong>
-        </span>
-        <span className="stat-chip" title="Focus energy">
-          ❤️ <strong>{progress.energy}/5</strong>
-        </span>
-        <span className="stat-chip stat-chip-xp">
-          <Star size={13} /> <strong>{progress.xp} XP</strong>
-        </span>
+        {showStats && (
+          <>
+            <span className="stat-chip stat-chip-streak">
+              <Flame size={13} /> <strong>{progress.streak} day</strong>
+            </span>
+            <span className="stat-chip" title="Focus energy">
+              ❤️ <strong>{progress.energy}/5</strong>
+            </span>
+            <span className="stat-chip stat-chip-xp">
+              <Star size={13} /> <strong>{progress.xp} XP</strong>
+            </span>
+          </>
+        )}
         <button className="profile-btn" onClick={handleProfileClick} type="button" title="Profile">
           {user && !user.isGuest ? (
             <span className="profile-initial">{user.username.charAt(0).toUpperCase()}</span>

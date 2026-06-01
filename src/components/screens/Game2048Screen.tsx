@@ -238,7 +238,7 @@ export function Game2048Screen() {
         </article>
 
         <section className="game2048-stage">
-          <details className="game-rules" open>
+          <details className="game-rules">
             <summary><HelpCircle size={14} /> How to play 2048</summary>
             <div className="game-rules-body">
               <ol>

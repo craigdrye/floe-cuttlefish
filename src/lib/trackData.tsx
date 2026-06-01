@@ -59,6 +59,7 @@ const coreTracks: Track[] = coreTrackSeeds
 export const allTracks: Track[] = [...coreTracks, ...collectionTracks]
 
 export function trackMatchesStageDetail(track: Track, detail: StageDetail | null) {
+  if (track.id.startsWith('guess')) return true
   if (!detail) return true
   const bucket = stageBuckets[detail]
   return bucket ? bucket.includes(track.title) : true

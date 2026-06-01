@@ -169,7 +169,7 @@ export function SumpleteScreen() {
 
         <section className="sumplete-stage">
           <DailyPuzzleBanner daily={daily} />
-          <details className="game-rules" open>
+          <details className="game-rules">
             <summary><HelpCircle size={14} /> How to play Sumplete</summary>
             <div className="game-rules-body">
               <ol>

@@ -620,7 +620,7 @@ export const col10thGradeReadingAndVocabHigh103TopUpBQuestions: Question[] = mak
     correct: 'Eliminate options that clearly contradict the passage, then choose among the rest',
     wrong: [
       miss('Always pick the first answer that sounds reasonable', 'Grabbing the first plausible-sounding option skips checking it against the passage and ignores stronger choices.', 'Test options against the text rather than first impressions.'),
-      miss('Choose the longest answer because it has the most detail', 'Length is not a sign of correctness; a long option can still contradict the passage.', 'Judge by fit with the text, not by length.'),
+      miss('The longest answer, even if it contradicts the passage', 'Length is not a sign of correctness; a long option can still contradict the passage.', 'Judge by fit with the text, not by length.'),
       miss('Pick the option with the most advanced vocabulary', 'Fancy wording does not make an answer correct; accuracy to the passage does.', 'Sophisticated wording is not evidence of correctness.'),
     ],
     lesson: 'Process of elimination is the most reliable strategy for hard items: remove choices that contradict the passage or do not answer the question, narrowing your odds before deciding. Defaulting to the first, longest, or fanciest-sounding option ignores the evidence in the text, which is what actually determines the answer.',

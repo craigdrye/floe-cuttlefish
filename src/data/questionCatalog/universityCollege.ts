@@ -43,6 +43,34 @@ import {
   numbasWebworkThirdTrigonometryQuestions,
 } from './numbasWebworkMathThirdImported'
 
+function universityMathLesson(question: Question): string {
+  const title = question.title || question.chapter || 'this math problem'
+  const answer = question.solution || 'the correct answer'
+  return `This problem is practicing a reusable math move. For "${title}", the key result is: ${answer}. Name the rule first, work cleanly through the algebra or calculation, and check the final answer against the requested form.`
+}
+
+function rewriteUniversityMathPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  if (prompt.endsWith('?')) return question.prompt
+  if (prompt.endsWith(':')) {
+    return `${prompt} Which answer correctly completes this math idea?`
+  }
+  return `${prompt} What is the correct answer?`
+}
+
+function enrichUniversityMathQuestionQuality(catalog: Record<string, Question[]>): Record<string, Question[]> {
+  return Object.fromEntries(
+    Object.entries(catalog).map(([trackId, questions]) => [
+      trackId,
+      questions.map((question) => ({
+        ...question,
+        prompt: rewriteUniversityMathPrompt(question),
+        lesson: question.lesson || universityMathLesson(question),
+      })),
+    ]),
+  )
+}
+
 export function buildUniversityCollegeQuestionCatalog(): Record<string, Question[]> {
   const calculusAB = makeColCalculusABQuiz()
   const apStatistics = makeColAPStatisticsQuiz()
@@ -51,7 +79,7 @@ export function buildUniversityCollegeQuestionCatalog(): Record<string, Question
   const precalculus = makeColPrecalculusQuiz()
   const class11Math = makeIndiaClass11MathQuiz()
   const class12Math = makeIndiaClass12MathQuiz()
-  return {
+  return enrichUniversityMathQuestionQuality({
   'col-class-11-math': class11Math,
   'col-class-12-math': class12Math,
   'col-college-algebra': [...collegeAlgebra, ...numbasWebworkAlgebraQuestions, ...numbasWebworkAdditionalAlgebraQuestions, ...numbasWebworkThirdAlgebraQuestions],
@@ -99,5 +127,5 @@ export function buildUniversityCollegeQuestionCatalog(): Record<string, Question
     ...numbasWebworkAdditionalLinearAlgebraQuestions,
     ...numbasWebworkThirdLinearAlgebraQuestions,
   ],
-  }
+  })
 }

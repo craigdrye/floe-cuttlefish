@@ -1,4 +1,5 @@
 import { makeQuestionBank } from './base'
+import type { Question } from './types'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
@@ -9,6 +10,13 @@ const q = (
   prompt: string,
   correct: string,
   wrong: [string, string, string][],
+  extra: {
+    lesson?: string
+    solution?: string
+    mentorHint?: string
+    alternatePrompts?: Question['alternatePrompts']
+    challengeRating?: Question['challengeRating']
+  } = {},
 ) => ({
   id,
   chapter,
@@ -16,8 +24,12 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
+  lesson: extra.lesson ??
     'Coverage source: Open Logic Project raw collection. This is an authored Floe-native conversion item, not a direct proof-exercise import.',
+  solution: extra.solution,
+  mentorHint: extra.mentorHint,
+  alternatePrompts: extra.alternatePrompts,
+  challengeRating: extra.challengeRating,
   source: 'Open Logic Project/OER formal logic coverage',
 })
 
@@ -122,11 +134,20 @@ export const formalLogicOpenLogicBatchQuestions = makeQuestionBank('University',
     miss('not-B', 'That would make the original disjunction false.', 'One side of the or must be true.'),
     miss('A and B', 'You do not get both from a disjunction.', 'Eliminate the denied option.'),
   ]),
-  q(455021, 'First-Order Logic', 'Predicate role', 'In first-order logic, a predicate symbol is mainly used to:', 'Express a property of or relation among objects', [
+  q(455021, 'First-Order Logic', 'Predicate role', 'In first-order logic, a predicate symbol is mainly used to express something about objects. What is its main role?', 'Express a property of or relation among objects', [
     miss('Name exactly one object', 'That is the role of a constant symbol.', 'Predicates become true or false of objects.'),
     miss('Choose the order of proof lines', 'Proof order is not what predicates express.', 'Think properties and relations.'),
     miss('Stand for a whole truth table', 'Truth tables are not predicate symbols.', 'Predicates apply to terms.'),
-  ]),
+  ], {
+    solution: 'A predicate symbol expresses a property of objects or a relation among objects. For example, Tall(x) says something about one object, while Loves(x, y) relates two objects.',
+    lesson: 'First-order logic separates objects from what can be said about them. Constants and variables point to objects; predicates make claims about those objects.\n\nA one-place predicate behaves like a property, such as Red(x). A two-place predicate behaves like a relation, such as Between(x, y, z) or Loves(x, y). Once you plug in objects, the predicate expression can be true or false.',
+    mentorHint: 'Predicates are the claim-shaped pieces: they become true or false when applied to objects.',
+    alternatePrompts: {
+      plain: 'In first-order logic, what does a predicate symbol do?',
+      teaching: 'If constants name objects, what kind of logical symbol says that an object has a property or stands in a relation?',
+    },
+    challengeRating: 4,
+  }),
   q(455022, 'First-Order Logic', 'Universal quantifier', 'The formula forall x F(x) says:', 'Every object in the domain has property F', [
     miss('At least one object has property F', 'That is existential quantification.', 'Universal means all.'),
     miss('No object has property F', 'That would be forall x not-F(x).', 'Do not add a negation.'),

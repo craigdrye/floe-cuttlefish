@@ -155,8 +155,8 @@ export const erCh3Questions: Question[] = [
     'Strip the M&A contribution out to get organic growth of 9%, forecast organic growth on the underlying trajectory, and add inorganic contribution only for the trailing quarters when the acquired business is still pre-anniversary',
     [
       ['Use the headline 14% growth rate as the organic baseline going forward', 'Using the headline rate double-counts the M&A bump once the deal anniversaries. The forward year would mechanically slow, and the model would look bearish for reasons that have nothing to do with the business.'],
-      ['Ignore the acquisition disclosure because revenue is revenue regardless of source', 'Organic vs inorganic is the most-asked decomposition on industrials earnings calls. Treating them as identical disarms the analyst from answering the next sell-side question.'],
-      ['Assume the company will make another similar acquisition every year to keep the rate constant', 'Embedding a recurring M&A assumption commits to a capital allocation pattern that may not happen and that is not yours to forecast. It also hides the underlying organic trend.'],
+      ['Acquired revenue and organic revenue belong in one continuing growth bucket because both are reported as revenue', 'Organic vs inorganic is the most-asked decomposition on industrials earnings calls. Treating them as identical disarms the analyst from answering the next sell-side question.'],
+      ['A recurring tuck-in acquisition contribution should be embedded each year to hold the headline growth rate constant', 'Embedding a recurring M&A assumption commits to a capital allocation pattern that may not happen and that is not yours to forecast. It also hides the underlying organic trend.'],
     ],
     'M&A contribution is mechanical and runs off after the anniversary; organic growth is the underlying trajectory. Disciplined ER models separate the two so the forward forecast does not silently inherit a one-time step-up.'),
 
@@ -217,8 +217,8 @@ export const erCh3Questions: Question[] = [
     'A US packaged-goods company faces 6% input cost inflation on raw materials. Historical pricing data shows the company has passed through about 70% of cost inflation in prior cycles, with a 1–2 quarter lag. How should the model handle the bridge?',
     'Build the lag explicitly: full 6% COGS hit in the near quarters, then a 4.2% (70% × 6%) price increase landing one to two quarters later — so gross margin troughs before recovering, with the trough size set by the lag',
     [
-      ['Assume full immediate pass-through and hold gross margin flat', '100% pass-through ignores both the historical 70% recovery rate and the lag. The model would miss the entire margin-compression quarter that the stock will actually trade on.'],
-      ['Assume no pass-through and let gross margin absorb the full 6% inflation', 'Zero pass-through contradicts the historical pattern. It overstates the margin hit and understates the eventual recovery — a one-sided pessimism that loses the debate against management.'],
+      ['Full immediate pass-through keeps gross margin flat in the same quarter as the input-cost spike', '100% pass-through ignores both the historical 70% recovery rate and the lag. The model would miss the entire margin-compression quarter that the stock will actually trade on.'],
+      ['Raw-material inflation permanently absorbs the full 6% hit with no price recovery', 'Zero pass-through contradicts the historical pattern. It overstates the margin hit and understates the eventual recovery — a one-sided pessimism that loses the debate against management.'],
       ['Net the inflation and the price action in the same period as a single line', 'Netting them collapses the lag, which is exactly the period where the margin pressure is most visible. The trough timing is where the stock prints — the model has to preserve it.'],
     ],
     'Pass-through is rarely instant and rarely complete. A disciplined margin bridge models the inflation hit in the period it lands and the offsetting price action in the period it lands, so the trough quarter is visible and the recovery slope is defensible.'),
@@ -311,8 +311,8 @@ export const erCh3Questions: Question[] = [
     'Build a quarterly working-capital pattern that mirrors the seasonal arc: Q3 is a large absorption (inventory build), Q4 is a large release (inventory sold, receivables eventually collected), and the annual total nets to a small number — never use a flat quarterly NWC assumption for a seasonal business',
     [
       ['Spread the annual working-capital change evenly across four quarters', 'A flat allocation hides the entire seasonal pattern — the model would show smooth CFO when the actual filings will show a large Q3 cash absorption and a Q4 cash release. Sell-side comparisons would be unintelligible.'],
-      ['Ignore intra-year working capital because the annual change is small', 'Quarterly cash flow is what management reports and what the stock often trades on. A small annual number can hide enormous quarterly swings that matter for liquidity and revolver draws.'],
-      ['Assume the company holds excess cash all year to neutralize seasonality', 'Companies actively use revolvers and short-term debt to fund seasonal working capital — not idle cash. Modeling neutralization through cash misrepresents the financing pattern.'],
+      ['The small annual working-capital change means quarterly swings can be left out of the forecast', 'Quarterly cash flow is what management reports and what the stock often trades on. A small annual number can hide enormous quarterly swings that matter for liquidity and revolver draws.'],
+      ['Seasonal inventory needs are neutralized by excess cash held throughout the year', 'Companies actively use revolvers and short-term debt to fund seasonal working capital — not idle cash. Modeling neutralization through cash misrepresents the financing pattern.'],
     ],
     'For seasonal businesses, quarterly working-capital swings dominate CFO timing even when the annual total is unremarkable. Modeling the seasonal arc explicitly is what lets the analyst defend the Q3 cash absorption that always shocks first-time readers of a retail 10-Q.'),
 
@@ -324,7 +324,7 @@ export const erCh3Questions: Question[] = [
     'Model maintenance and growth capex as separate lines — maintenance scales with the existing asset base (and approximates D&A in steady state), growth capex is a discretionary investment that the model can flex based on the project pipeline; together they preserve the link between capex, depreciation, and revenue capacity',
     [
       ['Model only total capex as a single percentage of revenue', 'A single capex ratio collapses two very different decisions. Maintenance is non-discretionary and recurring; growth capex is a strategic choice that can be paused. Mixing them removes both levers.'],
-      ['Assume maintenance capex equals depreciation exactly each year', 'Maintenance approximates D&A only in steady state. Asset bases that are still building or that have a depreciation lag will show maintenance and D&A diverging — treating them as identical is a steady-state shortcut, not a rule.'],
+      ['Maintenance capex equals depreciation exactly each year as a standing rule', 'Maintenance approximates D&A only in steady state. Asset bases that are still building or that have a depreciation lag will show maintenance and D&A diverging — treating them as identical is a steady-state shortcut, not a rule.'],
       ['Treat the entire $800M as growth capex because it expands the business', 'The disclosure already separates them. Treating maintenance as growth misstates incremental capacity per dollar of capex and overstates FCF from "discretionary" levers — including the wrong line in a cut scenario.'],
     ],
     'Maintenance capex preserves the existing earning power; growth capex adds new capacity. Modeling them separately is what lets the analyst flex one without flexing the other — and what makes the FCF bridge defensible when the company chooses to slow growth investment.'),
@@ -353,7 +353,7 @@ export const erCh3Questions: Question[] = [
     'A US specialty chemicals company is running its flagship plant at 87% utilization. Forward volume growth implies hitting 95% within 18 months. What is the disciplined way to model the implied capex?',
     'Identify the utilization threshold at which a new line is needed (industry-typical is 90–95%), model a capex step in the year before the constraint binds, and increase depreciation in subsequent years — the capex is not optional if the volume forecast is right, so it should sit explicitly in the model rather than hidden in a residual',
     [
-      ['Assume the existing plant can absorb the volume without any new capacity investment', 'Approaching 95% utilization in a continuous chemical process leaves no room for maintenance downtime or quality variability. Pretending the existing plant absorbs the volume contradicts the volume forecast itself.'],
+      ['The existing plant still has enough practical capacity to absorb the forecast volume growth', 'Approaching 95% utilization in a continuous chemical process leaves no room for maintenance downtime or quality variability. Pretending the existing plant absorbs the volume contradicts the volume forecast itself.'],
       ['Add a generic capex placeholder of 5% of revenue indefinitely', 'A flat ratio loses the lumpy nature of plant capex — these investments come in steps every several years, not as a smooth percentage. A flat ratio hides both the timing and the magnitude.'],
       ['Hold capex flat at maintenance-only levels and assume volume growth halts at the constraint', 'Halting volume growth at the constraint contradicts the revenue forecast in the rest of the model. The two have to be consistent — either capex steps up or revenue growth slows.'],
     ],
@@ -377,7 +377,7 @@ export const erCh3Questions: Question[] = [
     'Share count compounds upward at roughly 3% per year, which is a persistent EPS drag even if net income grows — model the diluted share count growth explicitly each year, since SBC is real economic dilution that the income statement (which includes SBC in opex) only partially captures',
     [
       ['Hold diluted share count flat because SBC is already in operating expenses', 'SBC in opex captures the income-statement effect but not the share-count effect. RSUs vest and become shares — the dilution shows up in the denominator of EPS regardless of how the expense is classified.'],
-      ['Ignore SBC dilution because it is a non-cash item', 'SBC is non-cash but very real for ownership and per-share metrics. Non-cash does not mean non-dilutive — and ER models that ignore the dilution overstate forward EPS year after year.'],
+      ['SBC dilution drops out of per-share modeling because the grant cost is non-cash', 'SBC is non-cash but very real for ownership and per-share metrics. Non-cash does not mean non-dilutive — and ER models that ignore the dilution overstate forward EPS year after year.'],
       ['Model the share count falling because mature software companies tend to buy back stock', 'The setup says the company does not buy back stock. Modeling buybacks anyway is hardcoding an assumption that contradicts the disclosure.'],
     ],
     'SBC creates two costs: the operating expense (already in EBIT) and the share-count creep (showing up in diluted EPS). Models that capture only one of the two understate the per-share dilution and produce EPS forecasts that drift higher than reality.'),
@@ -388,7 +388,7 @@ export const erCh3Questions: Question[] = [
     [
       ['Reduce the share count by the full 5% at the start of the year', 'Front-loading the entire repurchase assumes execution that has not happened. Diluted share count for EPS is a weighted average — applying the full reduction on day one overstates the EPS benefit for the year.'],
       ['Add the entire $1B to next year because authorizations are typically not executed in-year', 'Some authorizations carry over, but most large-cap industrials execute meaningfully in the year of announcement. Assuming zero in-year execution understates the benefit.'],
-      ['Ignore the buyback because it is a capital allocation decision and does not affect EPS', 'Reducing the share count by buying back stock raises EPS mechanically. Capital allocation is exactly the lever that flows through to per-share metrics — ignoring it means ignoring the announcement entirely.'],
+      ['The buyback affects capital allocation but leaves EPS unchanged because operating income is unchanged', 'Reducing the share count by buying back stock raises EPS mechanically. Capital allocation is exactly the lever that flows through to per-share metrics — ignoring it means ignoring the announcement entirely.'],
     ],
     'Buybacks reduce the weighted-average diluted count, but the weighting matters — repurchases executed late in the year contribute less to that year\'s EPS than repurchases executed early. The clean modeling move is to phase the buyback across quarters at the assumed price.'),
 
@@ -494,7 +494,7 @@ export const erCh3Questions: Question[] = [
     [
       ['Add a plug to assets or liabilities to make the balance sheet balance', 'Plugging is the cardinal model-discipline sin. A plugged balance sheet hides the error rather than fixing it — and the next time the model needs to flex, the plug compounds the problem.'],
       ['Rebuild the model from scratch since the source of the error is unfindable', 'Most balance sheet breaks are findable in 15 minutes by checking the linkages from CFS to BS — full rebuilds are an enormous overreaction and almost never the right response.'],
-      ['Ignore small imbalances since under $100M is rounding', 'In a properly linked model the balance sheet balances to the dollar. Tolerating "small" imbalances signals that the discipline has already been abandoned — and the imbalance will grow each period.'],
+      ['$42M balance-sheet breaks are immaterial rounding in a large-cap model', 'In a properly linked model the balance sheet balances to the dollar. Tolerating "small" imbalances signals that the discipline has already been abandoned — and the imbalance will grow each period.'],
     ],
     'A balance sheet that does not balance is the model telling you something is wrong — the only correct response is to find it. Trace recent edits, check CFS-to-BS linkages line by line, and never plug. Models that allow plugs accumulate hidden errors until they collapse.'),
 

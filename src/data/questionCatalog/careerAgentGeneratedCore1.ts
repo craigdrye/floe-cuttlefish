@@ -19,6 +19,12 @@ function q(
   correct: string,
   wrong: [string, string][], // [label, whyWrong]
   lesson: string,
+  extra?: {
+    alternatePrompts?: Question['alternatePrompts']
+    challengeRating?: Question['challengeRating']
+    solution?: string
+    mentorHint?: string
+  },
 ): Question {
   return makeSimpleQuestion(
     id,
@@ -30,6 +36,9 @@ function q(
     wrong.map(([label, why]) => [label, why, lesson] as [string, string, string]),
     lesson,
     SOURCE,
+    undefined,
+    extra?.mentorHint,
+    extra,
   )
 }
 
@@ -47,7 +56,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Ask what job they are trying to complete and where the current workflow breaks',
       [
         ['Write a ticket for the waffle button exactly as requested', 'The request is the proposed solution, not the underlying job. Building it as-stated locks in a specific UI before validating the actual problem.'],
-        ['Ignore the customer because requests are never useful', 'Customer requests are evidence of pain — they should be interpreted, not discarded. Discovery extracts the job behind the wording.'],
+        ['Treat the request as a one-off before looking for similar needs across customers', 'Customer requests are evidence of pain — they should be interpreted, not discarded. Discovery extracts the job behind the wording.'],
         ['Ask engineering to estimate every possible waffle shape', 'Sizing solution variants before confirming the problem wastes engineering time and anchors the conversation on UI rather than user job.'],
       ],
       'A request is evidence, not yet the problem. Strong discovery separates the proposed solution from the underlying job, pain point, and workflow.'),
@@ -65,8 +74,8 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Help me protect deep-work time while still letting clients book appropriate meetings',
       [
         ['Help me own five calendars because five is a majestic number', 'That treats the workaround (five calendars) as the job. JTBD targets the progress the user is trying to make, not their current coping mechanism.'],
-        ['Help me change the button color on every scheduling page', 'A cosmetic change does not address the focus-time conflict — it focuses on surface UI rather than the user goal.'],
-        ['Help me read more productivity blog posts during lunch', 'That reframes the user as wanting content, not protected time. It ignores the actual constraint of unwanted bookings.'],
+        ['Help me redesign the workflow screen before confirming the scheduling bottleneck', 'A cosmetic change does not address the focus-time conflict — it focuses on surface UI rather than the user goal.'],
+        ['Help me collect general productivity tips instead of mapping the actual workflow', 'That reframes the user as wanting content, not protected time. It ignores the actual constraint of unwanted bookings.'],
       ],
       'Jobs-to-be-done focuses on the progress a user is trying to make. The real job is protecting focus time while allowing necessary scheduling.'),
     q(4260003, 'Career Skills', 'Prioritization and Roadmapping', 'Tiny feature, big splash',
@@ -75,7 +84,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       [
         ['Item B must win because 7 is larger than 6', 'Comparing only impact ignores the six-times-larger cost. Per-unit-effort, Item A delivers far more activation per sprint.'],
         ['Pick neither because estimates are never allowed', 'Refusing to estimate means refusing to prioritize. Estimates can be wrong and still be useful for ordering work.'],
-        ['Pick the one with the funniest internal codename', 'Roadmap decisions should connect to outcomes, not aesthetics. Naming preferences are irrelevant to expected value.'],
+        ['Prioritize the feature with the strongest internal excitement', 'Roadmap decisions should connect to outcomes, not aesthetics. Naming preferences are irrelevant to expected value.'],
       ],
       'Prioritization compares expected value against cost and constraints. A slightly smaller impact can be a better first move when effort is far lower.'),
     q(4260004, 'Career Skills', 'Prioritization and Roadmapping', 'Roadmap magnet',
@@ -83,7 +92,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Does this work materially support the current strategic outcome, or is it a distraction?',
       [
         ['Can we describe it with the word AI somewhere?', 'Buzzword framing does not change whether the work addresses the strategic outcome. It just changes the marketing wrapper.'],
-        ['Would it make the roadmap look busier in screenshots?', 'A busier roadmap is not a better roadmap. Showy artifacts hide whether work is connected to outcomes.'],
+        ['Would it make the roadmap look more complete to stakeholders?', 'A busier roadmap is not a better roadmap. Showy artifacts hide whether work is connected to outcomes.'],
         ['Can we avoid telling stakeholders about tradeoffs?', 'Hiding tradeoffs from stakeholders erodes trust and removes the alignment that makes prioritization stick.'],
       ],
       'Strategic fit matters because teams cannot pursue every interesting idea. Strong roadmap decisions connect work to an explicit outcome.'),
@@ -93,24 +102,24 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       [
         ['Put personalization first because it sounds more exciting', 'Excitement does not change dependencies. Launching personalization without data is launching guesses with no measurement.'],
         ['Schedule all tasks on the same day and call it bold', 'Parallel scheduling cannot satisfy true sequence dependencies — design literally cannot start without the schema decision.'],
-        ['Skip dependencies because calendars enjoy chaos', 'Ignoring dependencies guarantees rework and missed dates. Sequencing exists to honor what must precede what.'],
+        ['Build the sequence without mapping cross-team dependencies', 'Ignoring dependencies guarantees rework and missed dates. Sequencing exists to honor what must precede what.'],
       ],
       'Sequencing should respect dependency logic. If later work depends on data and schema decisions, those enabling tasks must happen first.'),
     q(4260006, 'Career Skills', 'Requirements, Design, and Delivery Partnership', 'Minimum lovable burrito',
       'A career-switching learner needs a first MVP for a resume-review tool. Which scope best tests the core value without building the whole burrito truck?',
       'Upload one resume and receive one clear prioritized improvement list',
       [
-        ['Build a social network, job board, video editor, and resume printer', 'Bundling unrelated features destroys the MVP idea — too many variables means no clean read on whether the core value works.'],
-        ['Launch only a logo with no user task', 'A logo cannot validate value because there is no user task to succeed or fail at.'],
-        ['Spend three months choosing the perfect confetti animation', 'Polishing surface detail before testing core value reverses the MVP priority order — learning first, polish later.'],
+        ['Build every adjacent feature before proving the core workflow', 'Bundling unrelated features destroys the MVP idea — too many variables means no clean read on whether the core value works.'],
+        ['Launch brand assets before a usable customer workflow exists', 'A logo cannot validate value because there is no user task to succeed or fail at.'],
+        ['Spend the launch window polishing delight moments before core reliability is proven', 'Polishing surface detail before testing core value reverses the MVP priority order — learning first, polish later.'],
       ],
       'An MVP should test the central value with the smallest useful experience. The resume tool value is whether users get actionable review help.'),
     q(4260007, 'Career Skills', 'Requirements, Design, and Delivery Partnership', 'Wizard-of-Oz trial',
       'Before automating a complex recommendation engine, the team has humans manually produce recommendations for 30 users behind the scenes. What risk is this mainly reducing?',
       'Whether users find the recommendations valuable before the team invests in automation',
       [
-        ['Whether the office snacks are sufficiently crunchy', 'The test addresses product-value risk, not workplace amenities. Snacks have no bearing on whether recommendations resonate.'],
-        ['Whether every database index has a heroic name', 'Naming conventions are an implementation detail; the Wizard-of-Oz approach skips implementation precisely to test demand first.'],
+        ['Whether employees like the workplace perk bundle', 'The test addresses product-value risk, not workplace amenities. Snacks have no bearing on whether recommendations resonate.'],
+        ['Whether internal technical naming feels consistent to the team', 'Naming conventions are an implementation detail; the Wizard-of-Oz approach skips implementation precisely to test demand first.'],
         ['Whether automation code can be written without any user feedback', 'The whole point is to gather user feedback before writing automation code, not to skip it.'],
       ],
       'Wizard-of-Oz tests can validate demand and usefulness before expensive technical buildout. They reduce product-value risk.'),
@@ -120,7 +129,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       [
         ['Total button clicks anywhere in the app', 'Raw clicks reward any UI churn, including bad UX that forces users to click more. It does not measure value delivered.'],
         ['Number of internal meetings about learning', 'Internal activity is not user value. Counting meetings rewards process, not learner outcomes.'],
-        ['How sparkly the dashboard looks on Fridays', 'A subjective dashboard impression cannot guide product decisions — it has no consistent definition or instrumentation.'],
+        ['Whether the dashboard highlights the most favorable metric clearly enough', 'A subjective dashboard impression cannot guide product decisions — it has no consistent definition or instrumentation.'],
       ],
       'A north-star metric should reflect recurring delivery of user value. Completion of meaningful practice is closer to value than raw clicks.'),
     q(4260009, 'Career Skills', 'Metrics, Analytics, and Experimentation', 'Speedy checkout caution',
@@ -155,7 +164,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'If we add checklist templates for new managers, first-week setup completion will rise from 45% to 55%',
       [
         ['Managers like helpful things because helpful things are nice', 'No change is named, no metric, no target — there is nothing to measure or falsify.'],
-        ['Our checklist vibes will be extremely premium', 'Vibes is not a measurable outcome. There is no way to know if the bet worked.'],
+        ['Our checklist will feel polished even if ownership is unclear', 'Vibes is not a measurable outcome. There is no way to know if the bet worked.'],
         ['The launch will succeed because the team believes in it deeply', 'Belief is not a hypothesis. A hypothesis predicts an observable change in a specific metric.'],
       ],
       'A useful hypothesis names the change, target users, expected outcome, and measurable success criterion.'),
@@ -163,7 +172,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'An A/B test shows onboarding B has 12% higher activation, but the sample includes only 40 users and one unusually large customer invited their whole team. What is the best read?',
       'Promising, but the team should avoid overclaiming until sample size and representativeness improve',
       [
-        ['B is proven forever for every user segment', 'A 40-user test skewed by one team cannot generalize to every segment. Claiming so overstates the evidence.'],
+        ['B is the permanent winner for all user segments', 'A 40-user test skewed by one team cannot generalize to every segment. Claiming so overstates the evidence.'],
         ['A must be deleted before anyone reviews the data', 'Killing a variant before the test is statistically meaningful destroys the ability to learn from the experiment.'],
         ['The large customer should count as exactly one tiny mouse', 'Pretending the outlier is small does not remove the bias — it just hides it. The honest move is to call out the skew.'],
       ],
@@ -172,7 +181,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'A growth shortcut could increase signups this month but is likely to create confusing settings and more cancellations later. What tradeoff is the team facing?',
       'Short-term growth versus product quality and retention risk',
       [
-        ['Logo brightness versus office carpet texture', 'Neither variable affects the decision. The actual tension is between near-term acquisition and downstream retention.'],
+        ['Brand presentation rather than evidence of customer demand', 'Neither variable affects the decision. The actual tension is between near-term acquisition and downstream retention.'],
         ['Backend syntax versus lunch ordering', 'These are unrelated to the choice between gaining users now versus losing them later.'],
         ['Pricing math versus weather forecasting', 'Pricing is not implicated in the scenario, and weather is irrelevant. The real tension is growth versus retention.'],
       ],
@@ -209,7 +218,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Clarify the renewal risk and user problem, then compare it with broader permission pain and available tradeoffs',
       [
         ['Promise the report immediately because one renewal should set the roadmap', 'One renewal threat is real signal but not a complete roadmap input. Promising commits capacity without sizing the broader opportunity.'],
-        ['Ignore the customer because niche requests are never strategic', 'Renewal risk from a key account is material. Dismissing it loses the chance to understand whether the request reveals a broader pattern.'],
+        ['Treat a niche request as non-strategic before considering revenue or retention impact', 'Renewal risk from a key account is material. Dismissing it loses the chance to understand whether the request reveals a broader pattern.'],
         ['Ask engineering to build both items without changing priorities', 'Adding work without removing work either overruns the quarter or starves existing commitments. Capacity is a real constraint.'],
       ],
       'Product judgment starts by separating the request from the underlying problem and sizing the tradeoff. A renewal risk may matter, but it still needs context against broader customer value.'),
@@ -227,7 +236,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Frame the competitive concern, gather customer and strategic evidence, and decide whether it deserves roadmap tradeoffs',
       [
         ['Add it quietly so the roadmap looks responsive', 'Quiet additions still consume capacity and signal that political pressure outranks evidence. That undermines future prioritization.'],
-        ['Reject it because competitor moves are never useful', 'Competitor moves can reveal market shifts. The right response is to interrogate the signal, not dismiss it.'],
+        ['Reject it because competitors may be solving for a different customer segment', 'Competitor moves can reveal market shifts. The right response is to interrogate the signal, not dismiss it.'],
         ['Pause all roadmap work until every competitor feature is copied', 'Mirror-imaging strategy abandons differentiation and burns capacity on work that may not matter to your customers.'],
       ],
       'Competitor signals are inputs, not instructions. Product managers should translate them into customer, strategy, and opportunity questions before committing capacity.'),
@@ -372,8 +381,8 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Clarify the handoff agreement, dates, dependencies, and consequences with both groups',
       [
         ['Let each team keep its private calendar reality', 'Diverging calendars guarantee a missed handoff. Reconciling them is the PM job, not optional.'],
-        ['Pick the date that sounds friendliest', 'Date choice should reflect the actual constraint, not tone. Otherwise the picked date will not hold.'],
-        ['Skip compliance because reviews are inconvenient', 'Skipping review creates rework or release risk. The reason to involve compliance is exactly its inconvenience.'],
+        ['Set the launch date around convenience rather than dependency readiness', 'Date choice should reflect the actual constraint, not tone. Otherwise the picked date will not hold.'],
+        ['Treat compliance review as optional because it slows the launch', 'Skipping review creates rework or release risk. The reason to involve compliance is exactly its inconvenience.'],
       ],
       'Cross-functional coordination requires shared expectations about handoffs, deadlines, and dependencies.'),
     q(4260114, 'Career Skills', 'Status, Recovery, and Retrospectives', 'Slipped banana launch',
@@ -445,7 +454,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       [
         ['Declare success because go-live happened on the calendar date', 'On-time go-live with a broken support handoff is a hidden incident. The customer experience is part of delivery.'],
         ['Ask support to discover changes through customer calls', 'Customer-driven discovery means each call surprises support and slows resolution.'],
-        ['Skip closeout because documentation is not project work', 'Documentation and operational handoff are part of the project deliverable, not optional add-ons.'],
+        ['Treat closeout documentation as admin rather than project delivery', 'Documentation and operational handoff are part of the project deliverable, not optional add-ons.'],
       ],
       'Delivery includes the teams who operate the result after launch. Strong project closeout checks whether support, documentation, and ownership are ready.'),
   ],
@@ -545,7 +554,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       [
         ['All customers hate the product equally', 'The chart shows the opposite — churn is concentrated, not uniform. The pattern is the signal.'],
         ['The chart proves pricing is the only issue', 'Onboarding-timing is not pricing evidence. The conclusion should follow what the data actually shows.'],
-        ['Ignore the time pattern because charts are decorative', 'Time patterns are exactly what onboarding-cohort analysis is for. Ignoring them discards the diagnosis.'],
+        ['Treat the chart as decoration instead of checking the usage pattern', 'Time patterns are exactly what onboarding-cohort analysis is for. Ignoring them discards the diagnosis.'],
       ],
       'Chart reading should turn patterns into focused hypotheses. The timing points toward onboarding rather than every possible driver.'),
     q(4260210, 'Career Skills', 'Synthesis and Recommendation', 'Recommendation sandwich',
@@ -570,7 +579,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'An interviewer says, "New data shows competitor prices are 15% lower than ours." What should the candidate do?',
       'Acknowledge the data, update the analysis, and test whether differentiation or costs still support the recommendation',
       [
-        ['Ignore it because changing your mind is illegal', 'Refusing to update is a red flag in case interviews. New data should be integrated.'],
+        ['Stick with the first answer after new information changes the case', 'Refusing to update is a red flag in case interviews. New data should be integrated.'],
         ['Panic and abandon all structure', 'Throwing out the framework loses the structure the interviewer is evaluating. Update, do not collapse.'],
         ['Say lower prices prove the competitor is nicer', 'Personifying competitors avoids the substantive question of price strategy and differentiation.'],
       ],
@@ -624,9 +633,9 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'A beverage company says revenue is growing but market share is falling. What is the best first structure for the case?',
       'Compare company growth with market growth, then examine volume, price, segments, and competitive dynamics',
       [
-        ['Assume the company should cut prices immediately', 'Cutting price before diagnosing the cause may worsen margins without recovering share.'],
+        ['Treat price cuts as the default response to share loss', 'Cutting price before diagnosing the cause may worsen margins without recovering share.'],
         ['Analyze only internal costs because share is a cost problem', 'Share is a relative-position problem. Internal costs alone cannot explain why competitors are growing faster.'],
-        ['Recommend a new logo before understanding the market', 'Brand work without diagnosis is solution-first thinking — the very pattern cases test against.'],
+        ['Recommend repositioning before understanding the market and customer pain', 'Brand work without diagnosis is solution-first thinking — the very pattern cases test against.'],
       ],
       'Market share problems require looking at the company and the market together. Revenue can rise while position weakens if competitors or segments grow faster.'),
     q(4260219, 'Career Skills', 'Charts, Exhibits, and Data Pulls', 'Average hides segments',
@@ -707,7 +716,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'A three-statement model shows total assets of $500 and liabilities plus equity of $485. What should the modeler do?',
       'Investigate the $15 imbalance before relying on outputs',
       [
-        ['Ignore it because $15 sounds friendly', 'Small balance-sheet imbalances usually point to a missing flow somewhere. Outputs are unreliable until it resolves.'],
+        ['Treat a small dollar mismatch as harmless without reconciling the account', 'Small balance-sheet imbalances usually point to a missing flow somewhere. Outputs are unreliable until it resolves.'],
         ['Force the balance sheet to balance with a plug and move on', 'A plug hides the root cause and may flow into valuation outputs, creating untraceable errors.'],
         ['Delete the balance sheet because it is being dramatic', 'Deleting the balance sheet removes the integrity check that catches model bugs.'],
       ],
@@ -725,7 +734,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Interest expense depends on average debt, but debt depends on cash flow after interest. What modeling issue can this create?',
       'A circular reference',
       [
-        ['A logo alignment problem', 'Sheet layout has nothing to do with this. The issue is formula dependency.'],
+        ['A presentation issue rather than a process or incentive problem', 'Sheet layout has nothing to do with this. The issue is formula dependency.'],
         ['A market-sizing shortcut', 'Market sizing is unrelated to debt schedule mechanics.'],
         ['A password reset loop only', 'A spreadsheet has no passwords. The relevant loop is in the formulas.'],
       ],
@@ -835,7 +844,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       [
         ['Leave the sales line alone because operations can catch up emotionally', 'Emotion does not fulfill orders. Without added capacity, the revenue line is unreachable.'],
         ['Delete fulfillment costs so the model balances', 'Deleting costs falsifies profitability. The constraint is real and should be modeled.'],
-        ['Assume every order ships instantly because forecasts prefer optimism', 'Unconstrained shipping ignores the operational ceiling and produces a forecast no one can deliver.'],
+        ['Build the forecast as if every order ships immediately', 'Unconstrained shipping ignores the operational ceiling and produces a forecast no one can deliver.'],
       ],
       'Models should respect real-world constraints. Growth assumptions are more credible when they include the capacity needed to deliver the revenue.'),
     q(4260319, 'Career Skills', 'Comparables, Scenarios, and Sensitivities', 'Stress case use',
@@ -861,7 +870,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'A concise summary comparing the plans on cost, service level, assumptions, and key risks',
       [
         ['Ask the operations lead to inspect every formula before deciding', 'A 15-tab inspection by noon is unrealistic. The model needs to summarize itself.'],
-        ['Send screenshots of hidden tabs because they look thorough', 'Screenshots cannot be queried and are no substitute for a decision-grade summary.'],
+        ['Send extra exhibits rather than explaining the decision and evidence', 'Screenshots cannot be queried and are no substitute for a decision-grade summary.'],
         ['Remove assumptions so the answer feels simpler', 'Removing assumptions hides the basis for the recommendation. The lead needs to see them, not be shielded from them.'],
       ],
       'A model should help someone make a decision. The output view needs to translate calculations into the tradeoffs the decision maker owns.'),
@@ -953,7 +962,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       [
         ['Make every action equally loud', 'Equal weight means users cannot tell what the recommended action is. Hierarchy guides choice.'],
         ['Hide save below the footer goblin', 'Hiding the primary action makes the task hard to complete. The opposite of what hierarchy should do.'],
-        ['Use hierarchy only for decorative confetti', 'Hierarchy is a usability tool. Treating it as decoration wastes the strongest visual lever.'],
+        ['Use hierarchy mainly to make the page feel more visually impressive', 'Hierarchy is a usability tool. Treating it as decoration wastes the strongest visual lever.'],
       ],
       'Component hierarchy guides attention toward important actions. Visual weight should reflect task priority.'),
     q(4260409, 'UX Research', 'Prototyping and Usability Testing', 'Empty-state tumbleweed',
@@ -966,14 +975,22 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       ],
       'State design includes empty states, loading states, errors, and success states. Good empty states orient users and offer a next step.'),
     q(4260410, 'UX Research', 'Prototyping and Usability Testing', 'Click with no echo',
-      'A user submits a form, but nothing changes for five seconds while the request runs. What design improvement is most direct?',
+      'A user taps Submit on a checkout form, then the screen stays unchanged for five seconds while the request runs. They cannot tell whether the click worked, so they tap again. What design improvement most directly prevents confusion and duplicate submissions?',
       'Show immediate feedback such as a loading state or disabled submit button',
       [
-        ['Make the user click ten more times for suspense', 'Repeated clicks may double-submit. Feedback prevents this, not absorbs it.'],
-        ['Hide the form behind a riddle', 'Adding a puzzle to submission contradicts the goal of completing the task.'],
-        ['Assume silence feels luxurious', 'Silence reads as broken, not premium. Acknowledgement is what makes interfaces feel responsive.'],
+        ['Show only a final success toast after the server responds', 'A final toast may be helpful, but it does not acknowledge the click during the five-second gap when duplicate submissions happen.'],
+        ['Leave the button active so impatient users feel in control', 'An active unchanged button invites repeated taps. Good feedback reduces uncertainty instead of handing the risk back to the user.'],
+        ['Move the submit button to a prettier corner while keeping the silent wait', 'Visual polish does not solve the interaction problem. The missing piece is confirmation that the action is being processed.'],
       ],
-      'Interaction feedback confirms that the system heard the user. Without feedback, users may repeat actions or think the interface is broken.'),
+      'Interaction feedback is the tiny conversation between user and system. When a request takes time, a loading state, progress cue, disabled button, or status message tells the user the click landed and the product is working.\n\nThis matters because silence is ambiguous. During a five-second pause, people may tap again, abandon the flow, or assume the form is broken. Feedback protects both confidence and data integrity.',
+      {
+        solution: 'The direct fix is immediate interaction feedback: show a loading state, disable or relabel the submit button, and keep the user oriented until the request succeeds or fails. That closes the feedback loop and prevents accidental double-submit behavior.',
+        alternatePrompts: {
+          plain: 'A user clicks Submit and nothing changes for five seconds, so they click again. What should the interface show right away?',
+          teaching: 'Why do loading states and disabled submit buttons matter when an action takes several seconds to complete?',
+        },
+        challengeRating: 4,
+      }),
     q(4260411, 'UX Research', 'Prototyping and Usability Testing', 'Delete button dragon',
       'A destructive delete action is next to a harmless edit action, and users sometimes tap it by accident. What is the best design response?',
       'Separate or de-emphasize delete and add confirmation for destructive actions',
@@ -1020,14 +1037,22 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       ],
       'Design tradeoffs are best handled collaboratively. Good designers can explain user value while adapting to constraints.'),
     q(4260416, 'UX Research', 'Research That Changes the Design', 'Critique without cactus',
-      'Which critique comment is most useful?',
+      'A teammate says a new settings screen "feels wrong," but the team needs feedback that can guide a redesign. Which critique is most useful because it connects the issue to a user goal and a fixable design principle?',
       'The primary action may be hard to find because it has the same visual weight as the secondary links',
       [
-        ['I hate it', 'Hatred is not feedback. Designers need to know what is wrong and why.'],
-        ['Make it pop, but spiritually', 'Spiritual popping is unactionable. Critique needs concrete observations.'],
-        ['The vibes are wrong in a way I refuse to name', 'Refusing to name the issue removes any path to fixing it.'],
+        ['The screen would be better if it used my favorite shade of blue', 'Personal preference can start a conversation, but it does not explain the user problem or why the current design fails.'],
+        ['It looks messy, so make everything bigger and bolder', 'This names a reaction but not the cause. Making everything louder usually destroys hierarchy instead of fixing it.'],
+        ['Users will probably be confused because I personally felt confused', 'The concern may be real, but the critique needs the observable source of confusion so the team can test or improve it.'],
       ],
-      'Good critique is specific, tied to user goals or design principles, and actionable. Vague reactions are hard to use.'),
+      'Good critique turns a reaction into evidence the team can act on. It names the visible issue, the likely user impact, and the design principle or goal being harmed.\n\n"Make it pop" and "I hate it" are emotionally legible but operationally useless. A better critique points to hierarchy, affordance, clarity, accessibility, or task flow so the next design move is testable.',
+      {
+        solution: 'The best critique identifies a specific mechanism: the primary action has the same visual weight as secondary links, so users may not notice the main next step. That gives the designer a clear path to adjust hierarchy and retest.',
+        alternatePrompts: {
+          plain: 'Which critique gives a designer specific, useful information instead of just a personal reaction?',
+          teaching: 'What makes UX critique actionable rather than just a vague opinion about how a screen feels?',
+        },
+        challengeRating: 4,
+      }),
     q(4260417, 'UX Research', 'Product Collaboration and Handoff', 'Pattern zoo',
       'A product has five different date pickers across teams. Why is this a systems-level UX problem?',
       'Inconsistent patterns increase learning cost, implementation cost, and error risk',
@@ -1050,7 +1075,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'A modal can be opened with the keyboard, but keyboard users cannot tab to the close button or escape it. What should the designer prioritize?',
       'Fix focus management so users can navigate within and exit the modal without a mouse',
       [
-        ['Assume keyboard users can refresh the page if needed', 'Forcing a refresh is not an accessibility solution; it destroys in-progress work and signals neglect.'],
+        ['Rely on browser refresh as the accessibility workaround', 'Forcing a refresh is not an accessibility solution; it destroys in-progress work and signals neglect.'],
         ['Make the close icon smaller to reduce visual clutter', 'Smaller icons make the problem worse for everyone, including keyboard and assistive-tech users.'],
         ['Add a tooltip explaining that mouse use is easier', 'That excludes users who cannot use a mouse and accepts the trap as a feature.'],
       ],
@@ -1197,7 +1222,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       [
         ['Keep accounts active in case the ghost returns', 'Active dormant accounts are common attacker targets and audit findings.'],
         ['Change the display name to "former human" and do nothing else', 'Renaming does not revoke access; the credentials still work.'],
-        ['Delete all records immediately without checking retention needs', 'Mass deletion can violate retention obligations and destroy investigation evidence.'],
+        ['Delete the account data before checking retention and compliance obligations', 'Mass deletion can violate retention obligations and destroy investigation evidence.'],
       ],
       'Account hygiene includes timely deprovisioning while preserving required business and legal records.'),
     q(4260513, 'Career Skills', 'Devices, Networks, and Cloud Basics', 'Laptop cafe quest',
@@ -1222,7 +1247,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'You receive a real alert for a login from a country you have never visited. What should you do first?',
       'Report it promptly and follow the account-protection steps such as changing password and reviewing sessions',
       [
-        ['Ignore it because geography is whimsical', 'Geographic anomalies are one of the strongest takeover signals defenders have.'],
+        ['Treat unusual login geography as harmless without reviewing device and timing signals', 'Geographic anomalies are one of the strongest takeover signals defenders have.'],
         ['Approve it to stop the notification', 'Approving an unfamiliar login authorizes the attacker. The alert exists exactly to catch this.'],
         ['Post your credentials online to see who uses them', 'Publishing credentials guarantees compromise on every site where they are reused.'],
       ],
@@ -1277,7 +1302,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Politely follow the visitor policy, such as asking them to badge in or contacting reception or security',
       [
         ['Hold the door because carrying boxes automatically proves authorization', 'Boxes are a classic social-engineering prop. Visual cues are not access controls.'],
-        ['Ignore it because physical security is only facilities work', 'Physical access feeds digital risk — once inside, an attacker can plug into the network.'],
+        ['Treat physical security as facilities-only instead of an operational risk', 'Physical access feeds digital risk — once inside, an attacker can plug into the network.'],
         ['Ask for confidential project details as a test', 'Testing intruders by sharing confidential information makes the breach worse, not better.'],
       ],
       'Social engineering can exploit politeness. A calm policy-based response protects the workplace without turning every doorway into a drama.'),
@@ -1351,7 +1376,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       [
         ['Turn around and read the slide more quietly', 'Turning away cuts projection further and removes eye contact.'],
         ['Use more filler words to warm up the room', 'Fillers reduce clarity, not increase it. Articulation is the lever.'],
-        ['Assume the person dislikes bagels and continue unchanged', 'Ignoring the feedback signal means the same person stays lost for the rest of the talk.'],
+        ['Interpret low participation as personal preference while missing format or inclusion barriers', 'Ignoring the feedback signal means the same person stays lost for the rest of the talk.'],
       ],
       'Volume is not just loudness; it is usable clarity. Projection, articulation, and pace help the room follow without forcing a shout.'),
     q(4260607, 'Career Skills', 'Delivery Mechanics', 'Laser pointer moonwalk',
@@ -1377,7 +1402,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Use a short breathing routine, anchor on the first sentence, and start at a controlled pace',
       [
         ['Tell the room you are doomed before the title slide', 'Pre-announcing doom anchors the audience on speaker discomfort rather than the content.'],
-        ['Skip the opening and improvise from slide 12', 'Improvising from the middle skips the structure that orients the audience.'],
+        ['Start mid-deck without orienting the audience to the decision or agenda', 'Improvising from the middle skips the structure that orients the audience.'],
         ['Drink three coffees and challenge the projector to a duel', 'Stimulant overload tends to accelerate the very symptoms you want to manage.'],
       ],
       'Handling nerves is about managing the first moments and reducing runaway speed. Preparation plus a simple reset keeps clarity intact.'),
@@ -1485,7 +1510,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Acknowledge the concern, answer the substance calmly, and offer to follow up on details if needed',
       [
         ['Match the tone so the room sees equal energy', 'Matching aggression escalates, alienates the rest of the room, and rarely changes the questioner.'],
-        ['Ignore the question and move to the next slide', 'Ignoring confirms the worst implied criticism without giving the room your side.'],
+        ['Deflect the hard question and continue the prepared deck', 'Ignoring confirms the worst implied criticism without giving the room your side.'],
         ['Blame another team before anyone asks again', 'Reflex blame reads as defensive and damages credibility with everyone present.'],
       ],
       'Good Q&A keeps the room focused on substance. Calm acknowledgment and a clear answer preserve credibility under pressure.'),
@@ -1585,7 +1610,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'A package that trades across salary, remote days, development budget, and start date',
       [
         ['One isolated salary number with no other variables', 'Single-variable negotiation forecloses the trades that satisfy both sides.'],
-        ['A refusal to discuss anything except office snacks', 'Restricting to one trivial variable abandons the actual interests.'],
+        ['A preference discussion that never reaches the underlying tradeoff', 'Restricting to one trivial variable abandons the actual interests.'],
         ['Four separate ultimatums delivered alphabetically', 'Ultimatums prevent the integrative trade that the asymmetric priorities allow.'],
       ],
       'Packages create room for tradeoffs. They let each side exchange lower-priority items for higher-priority ones.'),
@@ -1692,8 +1717,8 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Two department heads both need the same analyst for urgent work next week. Each claims their project is most important. What should the manager negotiate around?',
       'Shared priorities, deadlines, partial allocation options, and the business impact of delaying each workstream',
       [
-        ['Split the analyst into equal hours without checking outcomes', 'Equal splits often satisfy neither project and waste capacity on context switching.'],
-        ['Choose the louder department to save time', 'Volume is not value. Loudness rewards political skill over business priority.'],
+        ['Allocate time equally without comparing expected impact', 'Equal splits often satisfy neither project and waste capacity on context switching.'],
+        ['Prioritize the loudest stakeholder instead of the highest-value outcome', 'Volume is not value. Loudness rewards political skill over business priority.'],
         ['Tell both departments yes and let the analyst sort it out', 'Pushing the conflict downward forces the analyst into an impossible position.'],
       ],
       'Internal negotiation should make tradeoffs explicit. The goal is not just agreement, but a workable allocation tied to business priorities.'),
@@ -1774,7 +1799,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'After agreeing on a performance improvement step, what should the manager do next?',
       'Document the expectation and schedule a follow-up to review progress',
       [
-        ['Assume one chat permanently changed reality', 'One conversation rarely changes a sustained pattern by itself.'],
+        ['Treat one feedback conversation as a permanent behavior change', 'One conversation rarely changes a sustained pattern by itself.'],
         ['Mention it only in annual review season', 'Annual-only feedback is too sparse to support change.'],
         ['Hide the expectation in a riddle', 'Unclear expectations cannot be met.'],
       ],
@@ -1802,15 +1827,15 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Reconnect the work to purpose, expectations, and consequences while listening for concerns',
       [
         ['Send a tutorial on software shortcuts only', 'Tools are not the reported issue; meaning is.'],
-        ['Assume they forgot how to use their keyboard', 'Skill is not the reported issue.'],
-        ['Ignore the comment because meaning is not a metric', 'Meaning drives effort; ignoring it preserves the disengagement.'],
+        ['Treat declining cloud usage as user confusion rather than value loss', 'Skill is not the reported issue.'],
+        ['Dismiss qualitative feedback because it is not already quantified', 'Meaning drives effort; ignoring it preserves the disengagement.'],
       ],
       'Motivation gaps can come from unclear purpose, low ownership, poor incentives, or burnout. The manager should diagnose before prescribing.'),
     q(4260811, 'Career Skills', 'Goals, Priorities, and Operating Rhythm', 'Broken conveyor',
       'Three capable employees miss the same handoff deadline because approvals arrive two days late every cycle. What should the manager inspect first?',
       'The workflow system and upstream approval bottleneck',
       [
-        ['Which employee owns the office printer aura', 'Printer aura is not a workflow input.'],
+        ['Which employee owns the operational handoff after the decision', 'Printer aura is not a workflow input.'],
         ['Whether all three forgot what time means', 'Three capable people hitting the same failure points at a system cause.'],
         ['Only individual discipline, with no process review', 'Individual coaching cannot fix a structural upstream bottleneck.'],
       ],
@@ -1834,14 +1859,23 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       ],
       'Managers become bottlenecks when all decisions route through them. Clear standards and delegated authority help teams move without losing control.'),
     q(4260814, 'Career Skills', 'Hiring, Onboarding, and Team Design', 'Interview evidence',
-      'In a hiring debrief, which comment is the strongest signal?',
+      'In a hiring debrief, the team is trying to separate useful evidence from warm-but-fuzzy impressions. Which comment is the strongest signal because it describes job-relevant behavior from the interview?',
       'The candidate diagnosed the customer case, named tradeoffs, and explained what evidence would change their answer.',
       [
-        ['They seem like someone who owns a nice notebook.', 'Notebook ownership is not a job-relevant signal.'],
-        ['I liked their vibe, though I cannot name why.', 'Unnamed vibes leak bias into hiring decisions.'],
-        ['They used the word strategy seven times, which is basically leadership confetti.', 'Buzzword frequency is not behavioral evidence.'],
+        ['They were polished and easy to talk to, so they probably fit the team', 'Polish may affect the room, but it is not evidence that the candidate can do the job.'],
+        ['They went to a school we recognize, which makes the decision feel safer', 'Pedigree can smuggle bias into the process and still says little about the work sample.'],
+        ['They used impressive strategy language, but we did not see how they reasoned', 'Vocabulary can sound senior while hiding weak evidence about actual judgment.'],
       ],
-      'Hiring signal should come from job-relevant evidence. Specific behaviors beat vague impressions.'),
+      'Hiring signal should come from job-relevant evidence: what the candidate did, said, reasoned through, built, clarified, or learned in a situation that resembles the job. Vague impressions can feel confident, but they often import bias and do not predict performance well.\n\nA strong debrief comment names observable behavior and connects it to the role. It also notes uncertainty, like what evidence would change the assessment.',
+      {
+        solution: 'The strongest signal is the comment about diagnosing the customer case, naming tradeoffs, and explaining what evidence would change the answer. It describes observable reasoning tied to the work, not just charisma, pedigree, or buzzwords.',
+        mentorHint: 'Prefer behavior from the work sample over polish, pedigree, vibe, or vocabulary.',
+        alternatePrompts: {
+          plain: 'Which hiring-debrief comment gives real evidence about whether the candidate can do the job?',
+          teaching: 'Why is a concrete example of reasoning through a case stronger than saying the candidate had a good vibe?',
+        },
+        challengeRating: 4,
+      }),
     q(4260815, 'Career Skills', 'Hiring, Onboarding, and Team Design', 'First-week map',
       'A new hire starts Monday. Which onboarding plan is most useful?',
       'Give role context, first outcomes, key relationships, systems access, and a check-in rhythm',
@@ -1855,8 +1889,8 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Two team leads disagree sharply about priority. What should the manager do first?',
       'Clarify the shared goal, facts, constraints, and decision owner before debating solutions',
       [
-        ['Pick the louder lead because volume is data', 'Volume is not data.'],
-        ['Tell them conflict is illegal and cancel the project', 'Suppressing conflict does not resolve the underlying disagreement.'],
+        ['Treat the louder lead as higher priority because it is more visible', 'Volume is not data.'],
+        ['Treat any conflict as automatic project failure rather than a risk to manage', 'Suppressing conflict does not resolve the underlying disagreement.'],
         ['Solve it privately with no explanation to either lead', 'Hidden decisions damage trust with both leads.'],
       ],
       'Conflict management starts by separating goals, facts, constraints, and authority. That turns drama into a solvable decision.'),
@@ -1892,7 +1926,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Review whether there is a pattern, understand the cause, and respond proportionately with coaching or formal action if warranted',
       [
         ['Start the formal plan because one mistake proves a trend', 'Single incidents rarely justify formal action and damage trust when they do.'],
-        ['Ignore the mistake because strong employees need no feedback', 'Strong employees still benefit from specific feedback on visible misses.'],
+        ['Treat a strong performer's repeated mistake as self-correcting', 'Strong employees still benefit from specific feedback on visible misses.'],
         ['Discuss the mistake only with peers to gather opinions', 'Peer gossip is not a fair or evidence-based response.'],
       ],
       'Performance management should be fair and evidence-based. A single incident may need coaching, but formal action should reflect pattern, severity, and context.'),
@@ -1920,7 +1954,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Ask questions to understand their goals, pain, current process, and stakes before pitching',
       [
         ['Launch a 42-slide product monologue immediately', 'Feature firehoses on call one usually disqualify the seller.'],
-        ['Guess their problem from their logo color', 'Logo color is not a discovery input.'],
+        ['Infer the customer problem from brand signals rather than discovery', 'Logo color is not a discovery input.'],
         ['Offer a discount before learning what they need', 'Discounting before discovery concedes margin without knowing whether the deal will close.'],
       ],
       'Disciplined selling starts with discovery. A pitch should be shaped by the buyer problem, not delivered from autopilot.'),
@@ -1938,7 +1972,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Map stakeholders, decision criteria, sequence, and risks for each approval group',
       [
         ['Only talk to the champion and hope everyone else naps', 'Hoping for stakeholder absence is a top reason deals die in procurement.'],
-        ['Ignore security because it uses scary acronyms', 'Skipped security review usually returns at signature with worse leverage.'],
+        ['Exclude security stakeholders because their requirements sound technical', 'Skipped security review usually returns at signature with worse leverage.'],
         ['Send the same casual note to every executive on Earth', 'Mass-blasting executives reduces relevance and may damage the champion relationship.'],
       ],
       'Complex buying processes involve multiple stakeholders. Sellers need to understand who influences, blocks, approves, and uses the solution.'),
@@ -1991,7 +2025,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Which customer story is most persuasive for a hospital operations prospect?',
       'A similar hospital reduced scheduling rework by 22% after using the same workflow',
       [
-        ['A totally unrelated gaming company liked the logo', 'Logo opinion from outside the industry is not relevant proof.'],
+        ['An unrelated company liked the brand direction', 'Logo opinion from outside the industry is not relevant proof.'],
         ['A celebrity once clicked the homepage', 'A click is not an outcome.'],
         ['A mystery customer achieved secret greatness with no details', 'Anonymous unspecified success cannot be evaluated.'],
       ],
@@ -2020,7 +2054,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       [
         ['Send a 90-page attachment and listen for destiny', 'Attachments without a next meeting are usually deal-enders.'],
         ['Say thanks and never clarify what happens next', 'No next step is the most common reason promising demos go silent.'],
-        ['Ask if they want a commemorative screenshot', 'Screenshots are not deal progression.'],
+        ['Ask whether they want a cosmetic deliverable instead of next-step commitment', 'Screenshots are not deal progression.'],
       ],
       'Mutual next steps are specific and owned by both sides. Vague follow-up is weak deal progression.'),
     q(4260912, 'Career Skills', 'Pipeline and Forecast Hygiene', 'Signal or sparkle',
@@ -2072,7 +2106,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'An existing customer reports strong adoption in one department and asks about adding another team. What should the seller do first?',
       'Confirm outcomes, new team needs, stakeholders, and expansion success criteria',
       [
-        ['Assume the same pitch fits every department', 'Same-pitch expansion ignores that the new team has different workflows.'],
+        ['Use one generic expansion pitch across departments', 'Same-pitch expansion ignores that the new team has different workflows.'],
         ['Start procurement paperwork without discovery', 'Paperwork without discovery often produces a deal that does not match the new team needs.'],
         ['Celebrate so hard that the new team never gets interviewed', 'Celebration is not discovery.'],
       ],
@@ -2101,14 +2135,14 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       [
         ['Drop the price immediately without learning the concern', 'Reflex discounting concedes margin without addressing the real concern.'],
         ['Argue that the buyer is wrong about money', 'Arguing with buyers about their own budget is rarely persuasive.'],
-        ['Ignore the objection and repeat the slide deck', 'Repeating the deck does not resolve a budget objection.'],
+        ['Repeat the prepared pitch instead of answering the buyer's objection', 'Repeating the deck does not resolve a budget objection.'],
       ],
       'Objections are information. Before discounting, a seller should understand whether the issue is budget, value, timing, comparison, or risk.'),
     q(4260921, 'Career Skills', 'Pipeline and Forecast Hygiene', 'Next step clarity',
       'A sales call ends with everyone saying the meeting was useful, but no one agrees on a next step. What should the rep do before closing the call?',
       'Confirm the buyer\'s decision process, owner, timeline, and the next concrete action',
       [
-        ['Assume enthusiasm will turn into a signed contract', 'Enthusiasm without next steps usually fades within days.'],
+        ['Treat verbal enthusiasm as equivalent to a committed next step', 'Enthusiasm without next steps usually fades within days.'],
         ['Schedule a vague check-in someday', 'Vague check-ins rarely happen and do not move the deal.'],
         ['Send three unrelated case studies and call it momentum', 'Case study volume is not momentum.'],
       ],
@@ -2128,7 +2162,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'A product description says "stainless steel kitchen whisk with plastic handle." What is the best first classification instinct?',
       'Analyze the article physical characteristics and function, then work through the HTS structure and notes',
       [
-        ['Pick the code with the nicest number pattern', 'Number aesthetics are not legal classification criteria.'],
+        ['Select the classification code by pattern instead of product facts', 'Number aesthetics are not legal classification criteria.'],
         ['Classify it by the box color only', 'Packaging color is not a classification input.'],
         ['Use the importer favorite chapter because loyalty matters', 'Loyalty is not a classification rule. The schedule and notes are.'],
       ],
@@ -2147,7 +2181,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Which component gives the set its essential character?',
       [
         ['Which item is most photogenic on the invoice', 'Photogenic appeal is not a classification factor.'],
-        ['Which item has the funniest shape', 'Shape humor is not a classification factor.'],
+        ['Which item is easiest to identify visually rather than financially material', 'Shape humor is not a classification factor.'],
         ['Whether the package tape looks official', 'Tape appearance is not a classification factor.'],
       ],
       'For some sets, classification turns on essential character. The broker-style task is to identify the component or function that defines the set.'),
@@ -2193,7 +2227,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       [
         ['Average the numbers and hope the raccoon signs', 'Averaging conflicting source data does not produce an accurate entry.'],
         ['Use the largest number because it looks ambitious', 'Ambition is not a customs valuation principle.'],
-        ['Ignore the mismatch if the carton tape is tidy', 'Tape tidiness does not resolve quantity discrepancy.'],
+        ['Treat tidy packaging as enough despite a document mismatch', 'Tape tidiness does not resolve quantity discrepancy.'],
       ],
       'Entry diligence requires reconciling inconsistent documentation. Quantity, value, origin, and description mismatches can create compliance risk.'),
     q(4261008, 'Regulatory', 'Entry, Release, and Entry Summary', 'Entry summary basics',
@@ -2245,7 +2279,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'After entry, the broker discovers the declared value omitted a dutiable assist. What is the best general response?',
       'Escalate and pursue the appropriate correction path with documentation',
       [
-        ['Ignore it because the cargo already left', 'Liquidation can still be affected, and undeclared assists can trigger penalties.'],
+        ['Treat a post-entry issue as irrelevant because shipment already moved', 'Liquidation can still be affected, and undeclared assists can trigger penalties.'],
         ['Delete the worksheet and hope math forgets', 'Math does not forget; CBP audits do not either.'],
         ['Wait for an audit before saying anything', 'Voluntary correction usually carries lower risk than waiting for discovery.'],
       ],
@@ -2272,16 +2306,16 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'A certificate of origin lists Country X, the invoice lists Country Y, and the product marking lists Country Z. What is the best next step?',
       'Stop and escalate the inconsistency for reconciliation before making an origin claim',
       [
-        ['Choose the alphabetically earliest country', 'Alphabetical order is not an origin rule.'],
+        ['Select country of origin by list order rather than transformation facts', 'Alphabetical order is not an origin rule.'],
         ['Use all three countries at once for variety', 'A single origin claim must be supported by consistent documents.'],
-        ['Ignore the documents and ask the nearest pallet', 'Pallets are not authoritative origin sources.'],
+        ['Rely on the physical pallet instead of reconciling commercial documents', 'Pallets are not authoritative origin sources.'],
       ],
       'Origin documentation must reconcile. Conflicting documents are a clear escalation trigger before entry or preference claims.'),
     q(4261017, 'Regulatory', 'Duties, Fees, AD/CVD, and Special Situations', 'AD CVD caution',
       'A product may fall under an antidumping or countervailing duty order. What is the prudent broker-style move?',
       'Flag the issue, gather product and scope details, and seek specialized review before entry decisions',
       [
-        ['Assume normal duty rates always cover it', 'AD/CVD can dwarf ordinary duty and is separate from the base HTS rate.'],
+        ['Treat base duty as the whole tariff exposure before reviewing AD/CVD scope', 'AD/CVD can dwarf ordinary duty and is separate from the base HTS rate.'],
         ['Hide the concern because AD/CVD sounds inconvenient', 'Hiding scope risk creates penalty and reclamation exposure.'],
         ['Classify it as snacks if the box is small', 'Box size does not change classification.'],
       ],
@@ -2308,9 +2342,9 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'A provider writes, "knee pain," but the payer-facing code set allows laterality and encounter detail. What should the coder do?',
       'Code only supported detail and query if needed for missing billable specificity',
       [
-        ['Assume left knee because left sounds popular', 'Coders cannot invent laterality from preference.'],
+        ['Infer laterality from habit instead of the clinical documentation', 'Coders cannot invent laterality from preference.'],
         ['Add every possible detail so the claim looks fancy', 'Adding unsupported detail is fabrication.'],
-        ['Ignore laterality forever because knees travel in pairs', 'ICD-10-CM uses laterality where documented.'],
+        ['Treat laterality as unnecessary even though the code requires it', 'ICD-10-CM uses laterality where documented.'],
       ],
       'Coding accuracy depends on documented specificity. Coders should not invent facts; they should query when needed and appropriate.'),
     q(4261102, 'Medical', 'Diagnosis Coding', 'Left-right sock',
@@ -2345,7 +2379,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Bundling, because some components are included in the primary service',
       [
         ['Laterality, because closure has a left and right personality', 'Laterality is unrelated to inclusion of closure.'],
-        ['Diagnosis sequencing, because every burrito needs a first bite', 'Sequencing is a diagnosis concept, not a bundling one.'],
+        ['Diagnosis sequencing, because the primary reason for care should usually lead', 'Sequencing is a diagnosis concept, not a bundling one.'],
         ['A clean claim, because more lines are always cleaner', 'Adding unbundled lines is not a clean claim.'],
       ],
       'Bundling rules prevent separately billing services that are included in another service unless an exception is documented and allowed.'),
@@ -2399,7 +2433,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Balance speed with quality, because unsupported coding creates denial and audit risk',
       [
         ['Choose 30 because volume heals all claims', 'Volume with denials produces negative net throughput.'],
-        ['Choose the fastest path if the keyboard sounds confident', 'Keyboard sound is not a quality measure.'],
+        ['Prioritize speed over verifying the required code path', 'Keyboard sound is not a quality measure.'],
         ['Avoid productivity goals entirely forever', 'Productivity targets exist; the question is balancing them with accuracy.'],
       ],
       'Professional practice balances throughput with accuracy. Speed that creates rework, denials, or compliance exposure is not real productivity.'),
@@ -2453,7 +2487,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Give targeted feedback, update documentation prompts, and monitor whether laterality capture improves',
       [
         ['Tell coders to guess left more often', 'Guessing laterality is fabrication.'],
-        ['Ignore it because repeated patterns are decorative', 'Repeated patterns are the loudest improvement signal.'],
+        ['Treat a repeated pattern as noise instead of possible risk signal', 'Repeated patterns are the loudest improvement signal.'],
         ['Appeal every denial without fixing the source', 'Appeals without root-cause fix repeat the same denials.'],
       ],
       'Audit strategy should identify root causes and improve the process. Repeated denial patterns call for training, workflow fixes, and follow-up measurement.'),
@@ -2481,7 +2515,7 @@ const careerAgentGeneratedCore1BaseQuestionsByTrack: Record<string, Question[]> 
       'Disclose the relationship and follow the organization\'s conflict-of-interest process before participating further',
       [
         ['Say nothing because they can still be objective', 'Self-asserted objectivity does not satisfy a conflict-of-interest process.'],
-        ['Choose the relative only if the price is close', 'Price proximity does not cure the conflict.'],
+        ['Treat related-party pricing as acceptable before reviewing independence and transfer-pricing policy', 'Price proximity does not cure the conflict.'],
         ['Ask the relative to submit under a different company name', 'Concealment compounds the conflict into deception.'],
       ],
       'Conflicts of interest are managed through disclosure and process. The goal is to protect fairness and trust, not simply rely on private confidence.'),

@@ -10,7 +10,8 @@ import { XpPopup } from '../common/XpPopup'
 import { calculateExpression } from '../../lib/mathUtils'
 import { playComboSound, playRewardVoiceSound, playSuccessSound, playWrongSound } from '../../lib/audio'
 import { bossRewardFor, bossTitleFor } from '../../lib/rewardSystem'
-import type { Answer } from '../../data/questionCatalog/types'
+import { buildLearningSupport } from '../../lib/learningSupport'
+import type { Answer, Misconception, Question } from '../../data/questionCatalog/types'
 
 function questionRarity(question: { kind: string; xp: number }): string {
   if (question.kind === 'deep' && question.xp >= 18) return 'legendary'
@@ -40,6 +41,35 @@ const successHeadlines = [
   'Correct! One ceremonial jazz hand.',
   'Correct! Micro-confetti in spirit.',
 ] as const
+
+function showQuestionQualityControls() {
+  if (typeof window === 'undefined') return false
+  return window.localStorage.getItem('floe:showQualityControls') === 'true'
+}
+
+function firstSentence(value?: string) {
+  const text = (value ?? '').replace(/\s+/g, ' ').trim()
+  if (!text) return ''
+  const match = text.match(/^(.+?[.!?])(?:\s|$)/)
+  return match?.[1] ?? text
+}
+
+function answerMisconceptions(question: Question, selectedAnswer: Answer | undefined): Misconception[] {
+  if (!selectedAnswer || selectedAnswer.correct) return []
+  if (selectedAnswer.misconceptions?.length) return selectedAnswer.misconceptions
+
+  const correct = question.answers.find((answer) => answer.correct)
+  const lessonClue = firstSentence(question.lesson)
+  return [
+    {
+      tempting: `"${selectedAnswer.label}" is close enough to the topic to feel plausible, especially if you are matching keywords instead of testing the idea.`,
+      flaw: correct
+        ? `The prompt is asking for the option that best fits "${question.title}" in ${question.chapter}. The answer that matches that job is "${correct.label}", not this choice.`
+        : `This choice does not match the exact job the prompt is asking the answer to do.`,
+      reframe: lessonClue || `Restate the question in plain language, then compare each option against that exact task instead of choosing the nearest familiar phrase.`,
+    },
+  ]
+}
 
 const quickBriefingRoster: Array<{ role: SpeakerRole; name: string; label: string; lines: string[] }> = [
   {
@@ -256,6 +286,9 @@ export function TrainerScreen() {
   const successHeadline = useMemo(() => pickSuccessHeadline(question.id, remixSeed), [question.id, remixSeed])
   const questionMedia = question.media ? (Array.isArray(question.media) ? question.media : [question.media]) : []
   const qualityRating = questionQualityRatings[question.id] ?? { goodQuestion: 5, writingIssues: 5 }
+  const showQualityControls = showQuestionQualityControls()
+  const selectedMisconceptions = answerMisconceptions(question, selectedAnswer)
+  const learningSupport = useMemo(() => buildLearningSupport(question, selectedAnswer), [question, selectedAnswer])
 
   useEffect(() => {
     if (!showBossIntro) return
@@ -529,12 +562,6 @@ export function TrainerScreen() {
                     ))}
                   </div>
                 )}
-                {question.setup && question.setup.length > 0 && (
-                  <div className="question-setup">
-                    <strong>Setup</strong>
-                    <ul>{question.setup.map((line) => <li key={line}>{line}</li>)}</ul>
-                  </div>
-                )}
               </div>
             </div>
 
@@ -580,7 +607,7 @@ export function TrainerScreen() {
                     <SpeakerPortrait role="thinker" />
                     <div>
                       <strong>Sensei Cuttle says:</strong>
-                      <p>{question.mentorHint}</p>
+                      <p>{learningSupport.hint}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -596,11 +623,7 @@ export function TrainerScreen() {
                       <h3>Deep Dive Lesson</h3>
                     </div>
                     <div className="lesson-text">
-                      {question.lesson ? (
-                        question.lesson.split('\n\n').map((para, i) => <p key={i}>{para}</p>)
-                      ) : (
-                        <p>Floe is still drafting the full lesson for this specific problem. In the meantime, check the hint and worked solution for key concepts!</p>
-                      )}
+                      {learningSupport.lessonParagraphs.map((para, i) => <p key={i}>{para}</p>)}
                     </div>
                     <button className="close-lesson" onClick={() => setShowLesson(false)}>Got it</button>
                   </div>
@@ -668,13 +691,13 @@ export function TrainerScreen() {
 
                   {isCorrect && !focusMode && <XpPopup xp={lastXpGain} onDone={() => setLastXpGain(null)} />}
 
-                  {!isCorrect && selectedAnswer.misconceptions && (
+                  {!isCorrect && selectedMisconceptions.length > 0 && (
                     <motion.div className="misconceptions" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }}>
                       <div className="museum-capture">
                         <span>Captured for review</span>
                         <strong>This misconception is now on your shelf.</strong>
                       </div>
-                      {selectedAnswer.misconceptions.map((item, i) => (
+                      {selectedMisconceptions.map((item, i) => (
                         <div key={i} className="misconception">
                           <p><strong>Why this was tempting:</strong> {item.tempting}</p>
                           <p><strong>Where it breaks:</strong> {item.flaw}</p>
@@ -691,7 +714,7 @@ export function TrainerScreen() {
                     </motion.div>
                   )}
 
-                  <p className="solution"><strong>Worked solution:</strong> {question.solution}</p>
+                  <p className="solution"><strong>Worked solution:</strong> {learningSupport.workedSolution}</p>
 
                   {!isCorrect && (
                     <div className="wrong-feedback-box">
@@ -707,41 +730,43 @@ export function TrainerScreen() {
         </AnimatePresence>
       </section>
 
-      <div className="admin-flags" style={{ marginTop: '24px', padding: '16px', background: 'rgba(255,255,255,0.4)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.3)', display: 'grid', gap: '14px' }}>
-        <div style={{ display: 'grid', gap: '10px' }}>
-          <label style={{ display: 'grid', gap: '6px', fontSize: '13px', fontWeight: 700, color: 'var(--ocean-deep)' }}>
-            <span>Good question</span>
-            <input
-              type="range"
-              min="1"
-              max="5"
-              value={qualityRating.goodQuestion}
-              onChange={(event) => setQuestionQualityRating(question.id, { goodQuestion: Number(event.target.value) })}
-            />
-            <span style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', fontWeight: 700, opacity: 0.7 }}>
-              <span>Bad</span>
-              <span>Good</span>
-            </span>
-          </label>
+      {showQualityControls && (
+        <div className="admin-flags" style={{ marginTop: '24px', padding: '16px', background: 'rgba(255,255,255,0.4)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.3)', display: 'grid', gap: '14px' }}>
+          <div style={{ display: 'grid', gap: '10px' }}>
+            <label style={{ display: 'grid', gap: '6px', fontSize: '13px', fontWeight: 700, color: 'var(--ocean-deep)' }}>
+              <span>Good question</span>
+              <input
+                type="range"
+                min="1"
+                max="5"
+                value={qualityRating.goodQuestion}
+                onChange={(event) => setQuestionQualityRating(question.id, { goodQuestion: Number(event.target.value) })}
+              />
+              <span style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', fontWeight: 700, opacity: 0.7 }}>
+                <span>Bad</span>
+                <span>Good</span>
+              </span>
+            </label>
 
-          <label style={{ display: 'grid', gap: '6px', fontSize: '13px', fontWeight: 700, color: 'var(--ocean-deep)' }}>
-            <span>Writing issues</span>
-            <input
-              type="range"
-              min="1"
-              max="5"
-              value={qualityRating.writingIssues}
-              onChange={(event) => setQuestionQualityRating(question.id, { writingIssues: Number(event.target.value) })}
-            />
-            <span style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', fontWeight: 700, opacity: 0.7 }}>
-              <span>Bad</span>
-              <span>Good</span>
-            </span>
-          </label>
+            <label style={{ display: 'grid', gap: '6px', fontSize: '13px', fontWeight: 700, color: 'var(--ocean-deep)' }}>
+              <span>Writing issues</span>
+              <input
+                type="range"
+                min="1"
+                max="5"
+                value={qualityRating.writingIssues}
+                onChange={(event) => setQuestionQualityRating(question.id, { writingIssues: Number(event.target.value) })}
+              />
+              <span style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', fontWeight: 700, opacity: 0.7 }}>
+                <span>Bad</span>
+                <span>Good</span>
+              </span>
+            </label>
+          </div>
+
+          <div style={{ minHeight: '21px' }} aria-hidden="true" />
         </div>
-
-        <div style={{ minHeight: '21px' }} aria-hidden="true" />
-      </div>
+      )}
 
       <button className="back-btn" onClick={goBackFromTrainer} type="button">
         <ArrowLeft size={16} /> Back to map

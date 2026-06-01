@@ -226,7 +226,7 @@ export function MultiWordleScreen({ boardCount, title, subtitle, gameId }: Multi
           <DailyPuzzleBanner daily={daily} />
           {toast && <div className="wordle-toast" role="status">{toast}</div>}
 
-          <details className="game-rules" open>
+          <details className="game-rules">
             <summary><HelpCircle size={14} /> How to play {title}</summary>
             <div className="game-rules-body">
               <ol>

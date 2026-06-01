@@ -92,7 +92,9 @@ export function repairSparseImportedQuestion(question: Question): Question {
   if (question.source !== 'Khan Academy') return question
   if (question.answers.length > 1) return question
 
-  if (question.prompt === '**Which expressions are equivalent to $2(-6c+3)+4c$ ?**') {
+  const prompt = question.prompt.replace(/\s+Which answer is correct\?$/i, '').trim()
+
+  if (prompt === '**Which expressions are equivalent to $2(-6c+3)+4c$ ?**') {
     return buildListRepair(
       question,
       'Which answer correctly lists the expressions equivalent to $2(-6c+3)+4c$?',
@@ -100,7 +102,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
     )
   }
 
-  if (question.prompt === '**Which expressions are equivalent to $12r-5$ ?**') {
+  if (prompt === '**Which expressions are equivalent to $12r-5$ ?**') {
     return buildListRepair(
       question,
       'Which answer correctly lists the expressions equivalent to $12r-5$?',
@@ -108,7 +110,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
     )
   }
 
-  if (question.prompt === '**Which of the following equations has $3$ as a possible value of $w$?**') {
+  if (prompt === '**Which of the following equations has $3$ as a possible value of $w$?**') {
     return buildListRepair(
       question,
       'Which answer correctly lists the equations for which $3$ is a possible value of $w$?',
@@ -116,7 +118,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
     )
   }
 
-  if (question.prompt === '**Which of the following equations has $4$ as a possible value of $z$?**') {
+  if (prompt === '**Which of the following equations has $4$ as a possible value of $z$?**') {
     return buildListRepair(
       question,
       'Which answer correctly lists the equations for which $4$ is a possible value of $z$?',
@@ -124,7 +126,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
     )
   }
 
-  if (question.prompt === '**Which of the $b$ values are solutions to the following equation?**') {
+  if (prompt === '**Which of the $b$ values are solutions to the following equation?**') {
     return buildListRepair(
       question,
       'Which answer correctly lists the solutions to the equation?',
@@ -132,7 +134,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
     )
   }
 
-  if (question.prompt === '**Which of the following expressions are equivalent to $-\\left(-\\dfrac{5}{3}\\right)$?**') {
+  if (prompt === '**Which of the following expressions are equivalent to $-\\left(-\\dfrac{5}{3}\\right)$?**') {
     return buildListRepair(
       question,
       'Which answer correctly lists the expressions equivalent to $-\\left(-\\dfrac{5}{3}\\right)$?',
@@ -140,7 +142,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
     )
   }
 
-  if (question.prompt === 'Consider the sum $5 + (-7) + (-27) + (-55)$.') {
+  if (prompt === 'Consider the sum $5 + (-7) + (-27) + (-55)$.') {
     return buildListRepair(
       question,
       'Which answer correctly lists the sigma notations equal to $5 + (-7) + (-27) + (-55)$?',
@@ -148,7 +150,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
     )
   }
 
-  if (question.prompt === '**Which expressions are equivalent to $-2y-8+4y$ ?**') {
+  if (prompt === '**Which expressions are equivalent to $-2y-8+4y$ ?**') {
     return buildListRepair(
       question,
       'Which answer correctly lists the expressions equivalent to $-2y-8+4y$?',
@@ -156,7 +158,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
     )
   }
 
-  if (question.prompt === 'Consider the sum $2+5+8+11$.') {
+  if (prompt === 'Consider the sum $2+5+8+11$.') {
     return buildListRepair(
       question,
       'Which answer correctly lists the sigma notations equal to $2+5+8+11$?',
@@ -164,7 +166,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
     )
   }
 
-  if (question.prompt === '**Which of the following expressions are equivalent to $\\dfrac{5}{2}$?**') {
+  if (prompt === '**Which of the following expressions are equivalent to $\\dfrac{5}{2}$?**') {
     return buildListRepair(
       question,
       'Which answer correctly lists the expressions equivalent to $\\dfrac{5}{2}$?',
@@ -172,7 +174,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
     )
   }
 
-  if (question.prompt === '**Which expressions are equivalent to $x^{1.4}$ ?**') {
+  if (prompt === '**Which expressions are equivalent to $x^{1.4}$ ?**') {
     return buildListRepair(
       question,
       'Which answer correctly lists the expressions equivalent to $x^{1.4}$?',
@@ -184,7 +186,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
     )
   }
 
-  if (question.prompt === '**Which expressions are equivalent to $\\left(v^{-1}\\right)^{^{\\scriptsize\\dfrac{1}{9}}}$ ?**') {
+  if (prompt === '**Which expressions are equivalent to $\\left(v^{-1}\\right)^{^{\\scriptsize\\dfrac{1}{9}}}$ ?**') {
     return buildListRepair(
       question,
       'Which answer correctly lists the expressions equivalent to $\\left(v^{-1}\\right)^{^{\\scriptsize\\dfrac{1}{9}}}$?',
@@ -196,7 +198,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
     )
   }
 
-  if (question.prompt === '**Which of the following expressions are equivalent to $\\dfrac{-10}{3}$?**') {
+  if (prompt === '**Which of the following expressions are equivalent to $\\dfrac{-10}{3}$?**') {
     return buildListRepair(
       question,
       'Which answer correctly lists the expressions equivalent to $\\dfrac{-10}{3}$?',
@@ -204,7 +206,7 @@ export function repairSparseImportedQuestion(question: Question): Question {
     )
   }
 
-  if (question.prompt === '**Which polynomials are in standard form?**') {
+  if (prompt === '**Which polynomials are in standard form?**') {
     return buildListRepair(
       question,
       'Which answer correctly lists the polynomials that are in standard form?',
@@ -253,6 +255,45 @@ function promptLikelyLeaksAnswers(question: Question) {
   return false
 }
 
+function stripQuestionMarkdown(value: string) {
+  return value
+    .replace(/!\[[^\]]*]\([^)]+\)/g, ' ')
+    .replace(/\[[^\]]+]\([^)]+\)/g, ' ')
+    .replace(/\$[^$]*\$/g, ' math ')
+    .replace(/[*_`#>]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+function promptQualityFlags(question: Question): Array<{ flag: QuestionReviewFlag; note: string }> {
+  const prompt = stripQuestionMarkdown(question.prompt)
+  if (!prompt) {
+    if (/!\[[^\]]*]\([^)]+\)/.test(question.prompt)) {
+      return [{ flag: 'prompt-media-only', note: 'Prompt contains media but no sentence telling the learner what to do.' }]
+    }
+    return []
+  }
+
+  const words = prompt.match(/[A-Za-z][A-Za-z'-]*/g) ?? []
+  const hasQuestionShape = /[?]/.test(prompt) || /^(what|which|why|how|when|where|who|select|choose|pick|find|solve|calculate|identify|explain|evaluate|graph|simplify|fill)\b/i.test(prompt)
+  const hasSentencePunctuation = /[.?!:]$/.test(prompt)
+  const hasFiniteVerb = /\b(is|are|was|were|be|being|been|has|have|had|do|does|did|can|could|should|would|will|might|must|means|asks|shows|describes|explains|requires|depends|involves|evaluate|find|solve|choose|identify|select|calculate|graph|simplify|fill)\b/i.test(prompt)
+
+  if (words.length <= 2 && !/[?]/.test(prompt)) {
+    return [{ flag: 'prompt-term-only', note: 'Prompt is only a term or tiny fragment, not a learner-facing question.' }]
+  }
+
+  if (words.length < 4 && !hasQuestionShape) {
+    return [{ flag: 'prompt-too-short', note: 'Prompt is too short to explain what the learner should do.' }]
+  }
+
+  if (!hasQuestionShape && (!hasSentencePunctuation || !hasFiniteVerb)) {
+    return [{ flag: 'prompt-not-sentence-like', note: 'Prompt is not sentence-like; rewrite it as one or two accessible question sentences.' }]
+  }
+
+  return []
+}
+
 function buildReview(flags: QuestionReviewFlag[], notes: string[]): QuestionReview {
   let status: QuestionReviewStatus = 'playable'
 
@@ -265,7 +306,11 @@ function buildReview(flags: QuestionReviewFlag[], notes: string[]): QuestionRevi
   } else if (
     flags.includes('placeholder-solution') ||
     flags.includes('placeholder-answer-choice') ||
-    flags.includes('answer-leakage')
+    flags.includes('answer-leakage') ||
+    flags.includes('prompt-too-short') ||
+    flags.includes('prompt-term-only') ||
+    flags.includes('prompt-media-only') ||
+    flags.includes('prompt-not-sentence-like')
   ) {
     status = 'recoverable'
   }
@@ -301,6 +346,11 @@ export function reviewQuestion(question: Question, trackId?: string): Question {
   if (!question.prompt.trim()) {
     flags.push('missing-prompt')
     notes.push('Prompt is empty.')
+  }
+
+  for (const issue of promptQualityFlags(question)) {
+    flags.push(issue.flag)
+    notes.push(issue.note)
   }
 
   const correctAnswerCount = countCorrectAnswers(question.answers)

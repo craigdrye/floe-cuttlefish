@@ -176,7 +176,7 @@ export function PresentScreen() {
         </article>
 
         <section className={`present-stage present-${round}`}>
-          <details className="game-rules" open>
+          <details className="game-rules">
             <summary><HelpCircle size={14} /> How to play Mystery Gift</summary>
             <div className="game-rules-body">
               <ol>

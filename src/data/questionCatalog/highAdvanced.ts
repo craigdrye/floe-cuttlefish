@@ -58,6 +58,34 @@ import {
   schoolAssessmentUsHistoryQuestions,
 } from './schoolAssessmentReadingSocialImported'
 
+function highAdvancedLesson(question: Question): string {
+  const title = question.title || question.chapter || 'this question'
+  const answer = question.solution || 'the correct answer'
+  return `This AP-style question is testing whether you can connect a term, fact, or scenario to the underlying concept. For "${title}", the key idea is: ${answer}. Name the concept first, then use the wording of the prompt to avoid picking a nearby but different idea.`
+}
+
+function rewriteHighAdvancedPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  if (prompt.endsWith('?')) return question.prompt
+  if (prompt.endsWith(':')) {
+    return `${prompt} Choose the option that makes the idea scientifically precise.`
+  }
+  return `${prompt} Use the clue to pick the most precise explanation.`
+}
+
+function enrichHighAdvancedQuestionQuality(catalog: Record<string, Question[]>): Record<string, Question[]> {
+  return Object.fromEntries(
+    Object.entries(catalog).map(([trackId, questions]) => [
+      trackId,
+      questions.map((question) => ({
+        ...question,
+        prompt: rewriteHighAdvancedPrompt(question),
+        lesson: question.lesson || highAdvancedLesson(question),
+      })),
+    ]),
+  )
+}
+
 export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
   const fcc = buildFCCQuestionCatalog()
   const basicJavascript = fcc['basic-javascript'] || []
@@ -202,13 +230,25 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
   apPhysics: [
     ...makeHighSchoolPhysicsNGSSQuiz(),
     makeSimpleQuestion(13301, 'AP', 'AP Physics Dock', 'Kinematics basics',
-      'An object starts from rest and accelerates at 2 m/s^2 for 4 seconds. Final velocity?',
+      'A cart starts from rest on a track and accelerates steadily at 2 m/s^2 for 4 seconds. If acceleration adds the same amount of velocity each second, what final velocity does the cart reach?',
       '8 m/s',
       [
         ['2 m/s', 'That is the acceleration value, not the final velocity.', 'Use v = u + at.'],
         ['4 m/s', 'That uses time only and ignores acceleration magnitude.', 'Multiply acceleration by time from rest.'],
         ['16 m/s', 'That applies the factor twice.', 'Single-step substitution gives 0 + 2*4.'],
-      ]),
+      ],
+      'Kinematics tracks how motion changes over time. When acceleration is constant, final velocity can be found with v = u + at: start with the initial velocity u, then add acceleration times time. Starting from rest means u = 0, so the whole final velocity comes from the acceleration accumulated over 4 seconds.',
+      undefined,
+      undefined,
+      'Start from v = u + at. "From rest" means the initial velocity is 0, so only the acceleration-times-time part remains.',
+      {
+        solution: 'Use v = u + at. The cart starts from rest, so u = 0, and at = 2 × 4 = 8. The final velocity is 8 m/s.',
+        alternatePrompts: {
+          plain: 'A cart starts at 0 m/s and gains 2 m/s of speed every second for 4 seconds. What is its final velocity?',
+          teaching: 'Think of acceleration as adding velocity each second. If the cart gains 2 m/s four times, what speed does it reach from rest?',
+        },
+        challengeRating: 6,
+      }),
     makeSimpleQuestion(13302, 'AP', 'AP Physics Reef', 'Newton second law',
       'Newton’s second law is usually written as:',
       'F = ma',
@@ -355,13 +395,25 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
         ['To turn code into a database', 'That is not what loops do.', 'Stay with control flow.'],
       ]),
     makeSimpleQuestion(13702, 'AP', 'AP CS Reef', 'Boolean logic',
-      'A Boolean value can be:',
+      'A Boolean value is the tiny yes-or-no switch that programs use in conditions like if-statements. Which pair of values can a Boolean have?',
       'True or false',
       [
         ['Only whole numbers', 'Booleans are logical values, not just numbers.', 'Think yes/no states.'],
         ['Any decimal between 0 and 1', 'That is not the usual programming definition.', 'Boolean means two-valued logic.'],
         ['A list of strings', 'That is a collection, not a Boolean.', 'Use the data type that matches condition checks.'],
-      ]),
+      ],
+      'A Boolean is a two-valued logic type: true or false. It is what a program uses when it asks a condition such as "is the score above 10?" or "has the user logged in?"\n\nNumbers, decimals, and lists can all be useful data, but they are not the basic yes-or-no result of a condition.',
+      undefined,
+      undefined,
+      'Think of a Boolean as the answer to a yes/no question inside the code.',
+      {
+        solution: 'A Boolean value can be true or false. Those two values power condition checks, loops, and logical decisions in programs.',
+        alternatePrompts: {
+          plain: 'In programming, what two values can a Boolean usually have?',
+          teaching: 'When code asks a yes/no question, what are the two possible Boolean answers?',
+        },
+        challengeRating: 2,
+      }),
     makeSimpleQuestion(13703, 'AP', 'AP CS Cove', 'Algorithm quality',
       'A good algorithm should be:',
       'Clear, correct, and efficient enough for the task',
@@ -399,10 +451,11 @@ export function buildHighAdvancedQuestionCatalog(): Record<string, Question[]> {
     ...buildWikibooksQuestionCatalog(),
   }
 
-  return Object.fromEntries(
+  const toppedUp = Object.fromEntries(
     Object.entries(catalog).map(([trackId, questions]) => [
       trackId,
       topUpHighGeneratedTrack(trackId, topUpHighAgentGeneratedTrack(trackId, questions)),
     ]),
   )
+  return enrichHighAdvancedQuestionQuality(toppedUp)
 }

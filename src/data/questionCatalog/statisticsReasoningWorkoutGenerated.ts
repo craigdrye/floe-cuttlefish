@@ -1,4 +1,5 @@
 import { makeQuestionBank } from './base'
+import type { Question } from './types'
 import { polish as runPolish } from './polishPipeline'
 import {
   ADVANCED_MATH_WORKOUT_SUB_TOPICS,
@@ -15,6 +16,13 @@ const q = (
   prompt: string,
   correct: string,
   wrong: [string, string, string][],
+  extra: {
+    lesson?: string
+    solution?: string
+    mentorHint?: string
+    alternatePrompts?: Question['alternatePrompts']
+    challengeRating?: Question['challengeRating']
+  } = {},
 ) => ({
   id,
   chapter,
@@ -22,8 +30,12 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
+  lesson: extra.lesson ??
     'Coverage source: OpenIntro Statistics and Introduction to Modern Statistics raw collections. This is an authored Floe-native drill item, not a direct raw import.',
+  solution: extra.solution,
+  mentorHint: extra.mentorHint,
+  alternatePrompts: extra.alternatePrompts,
+  challengeRating: extra.challengeRating,
   source: 'Generated from OpenIntro/IMS coverage',
 })
 
@@ -118,11 +130,20 @@ const _baseStatisticsReasoningWorkoutGeneratedQuestions = makeQuestionBank('Stat
     miss('They always have equal probabilities', 'Disjointness says nothing about size.', 'It is about overlap.'),
     miss('Their probabilities must add to 1', 'Only complementary events must exhaust the sample space.', 'Disjoint does not mean complete.'),
   ]),
-  q(394019, 'Probability', 'Conditional probability', 'P(A | B) means:', 'The probability of A given that B has occurred', [
+  q(394019, 'Probability', 'Conditional probability', 'In probability notation, the vertical bar means "given that" and changes the sample space. What does P(A | B) mean in plain language?', 'The probability of A given that B has occurred', [
     miss('The probability of B given that A has occurred', 'The order is reversed.', 'The condition is after the vertical bar.'),
     miss('The probability of A or B', 'That is a union probability.', 'The bar means given.'),
     miss('The probability of A and B divided by P(A)', 'That formula gives P(B | A).', 'Divide by the event after the bar.'),
-  ]),
+  ], {
+    lesson: 'Conditional probability narrows the world before asking the question. P(A | B) means you only look at outcomes where B has happened, then ask what fraction of those also have A. The event after the vertical bar is the condition, so it sets the denominator in the formula P(A and B) / P(B).',
+    solution: 'P(A | B) reads as "the probability of A given B." The condition is B, so the sample space is restricted to cases where B occurred.',
+    mentorHint: 'Read the bar as "given." The event after the bar is the condition you already know happened.',
+    alternatePrompts: {
+      plain: 'What does P(A | B) mean?',
+      teaching: 'If the bar means "given that," which event is already known in P(A | B), and which event are you asking about?',
+    },
+    challengeRating: 3,
+  }),
   q(394020, 'Probability', 'Independence check', 'If P(A) = 0.4 and P(A | B) = 0.4, what does this suggest about A and B?', 'A and B may be independent', [
     miss('A and B are disjoint', 'If B does not change A, that is independence logic, not disjointness.', 'Compare conditional and unconditional probability.'),
     miss('B causes A', 'Probability equality does not prove causation.', 'This is about association.'),

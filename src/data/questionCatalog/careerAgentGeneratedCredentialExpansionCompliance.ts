@@ -135,7 +135,7 @@ const crcmCompetencies: CredentialCompetency[] = [
     prompt: 'A monitored loan appears to lack sufficient flood insurance after policy expiration. What is the most defensible next step?',
     correct: 'Follow flood notice and force-placement procedures, track timing, and document coverage evidence and borrower communications.',
     wrong: [
-      ['Ignore the gap until the next annual review', 'Flood coverage gaps require timely handling when identified.', 'Monitoring must lead to action when required insurance is missing.'],
+      ['Treat annual insurance reviews as the only flood monitoring trigger', 'Flood coverage gaps require timely handling when identified.', 'Monitoring must lead to action when required insurance is missing.'],
       ['Force place immediately without the required notice process', 'Force placement is controlled by notice and timing requirements.', 'Use the required sequence and document it.'],
       ['Accept any verbal assurance from the borrower as proof', 'Verbal assurance is weak evidence of required coverage.', 'Obtain and retain adequate insurance documentation.'],
     ],
@@ -146,7 +146,7 @@ const crcmCompetencies: CredentialCompetency[] = [
     prompt: 'A fee connected to a closed-end loan may have been excluded from the finance charge. What should compliance do first?',
     correct: 'Analyze whether the fee is a finance charge under Regulation Z and assess disclosure and restitution impact if it was misclassified.',
     wrong: [
-      ['Assume all fees paid at closing are excluded', 'Some closing-related fees may be finance charges depending on purpose and treatment.', 'Classify fees using the rule, not the location on the statement.'],
+      ['Treat settlement location as excluding the fee from the finance charge', 'Some closing-related fees may be finance charges depending on purpose and treatment.', 'Classify fees using the rule, not the location on the statement.'],
       ['Change the fee name without changing disclosures', 'Renaming a fee does not control the regulatory analysis.', 'Substance and treatment matter.'],
       ['Wait for an examiner to calculate the impact', 'The bank should self-identify, quantify, and remediate issues when appropriate.', 'Own the analysis before it becomes an exam finding.'],
     ],
@@ -181,7 +181,7 @@ const crcmCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Dismiss complaints because the contract is technically correct', 'UDAAP risk can arise from misleading practices even when contract text exists.', 'Review the full customer experience.'],
       ['Tell staff to stop writing down complaints', 'Suppressing complaint evidence worsens compliance risk.', 'Complaint capture is part of control intelligence.'],
-      ['Assume customers misunderstood and close the issue', 'A pattern of misunderstanding may reveal a disclosure or sales-practice problem.', 'Use patterns to test whether the practice is clear and fair.'],
+      ['Treat repeated complaints as isolated customer confusion', 'A pattern of misunderstanding may reveal a disclosure or sales-practice problem.', 'Use patterns to test whether the practice is clear and fair.'],
     ],
   },
   {
@@ -203,7 +203,7 @@ const crcmCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Treat the complaint as closed because the funds eventually cleared', 'Delayed availability can still create a notice and timing issue.', 'Analyze the control failure even if the money later became available.'],
       ['Delete the hold reason to make the account history simpler', 'Altering records undermines the audit trail.', 'Maintain accurate records and remediate transparently.'],
-      ['Assume branch discretion overrides notice requirements', 'Operational discretion does not remove regulatory notice obligations.', 'Procedures must support required notices.'],
+      ['Treat staff-approved extended holds as exempt from notice rules', 'Operational discretion does not remove regulatory notice obligations.', 'Procedures must support required notices.'],
     ],
   },
   {
@@ -268,7 +268,7 @@ const crcmCompetencies: CredentialCompetency[] = [
     correct: 'Confirm consent, revocation handling, number source, message content, and TCPA operational controls before dialing.',
     wrong: [
       ['Dial first and remove people only after a lawsuit', 'TCPA exposure should be controlled before outreach starts.', 'Consent and revocation controls are preventive.'],
-      ['Assume account ownership equals consent for all technology', 'Consent analysis depends on channel, number, and calling method.', 'Match consent to the planned communication.'],
+      ['Treat a customer relationship as blanket consent for autodialed calls', 'Consent analysis depends on channel, number, and calling method.', 'Match consent to the planned communication.'],
       ['Use vendor assurances without testing files', 'Vendor statements do not replace bank oversight.', 'Validate the data and controls used for dialing.'],
     ],
   },
@@ -413,7 +413,7 @@ const ccepCompetencies: CredentialCompetency[] = [
     prompt: 'Two employees committed similar policy violations, but one is a top performer. What should compliance recommend?',
     correct: 'Apply discipline consistently, considering relevant facts, role, intent, and precedent rather than sales value.',
     wrong: [
-      ['Ignore the top performer violation to protect revenue', 'Selective enforcement damages program credibility.', 'Consistency is central to effective compliance.'],
+      ['Treat revenue performance as a discipline exception', 'Selective enforcement damages program credibility.', 'Consistency is central to effective compliance.'],
       ['Punish only junior employees because they are easier to replace', 'Discipline based on status undermines fairness and deterrence.', 'Use facts and precedent.'],
       ['Never document discipline decisions', 'Undocumented discipline weakens defensibility.', 'Document rationale and consistency.'],
     ],
@@ -448,7 +448,7 @@ const ccepCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Approve because success fees are never risky', 'Success fees can be legitimate but may create bribery risk in context.', 'Review the facts and controls.'],
       ['Avoid written terms so audit rights are not needed', 'Lack of written terms increases risk.', 'Use contracts, audit rights, and payment controls.'],
-      ['Assume local custom overrides company policy', 'Local practice does not override anti-corruption obligations.', 'Apply policy and law consistently.'],
+      ['Treat local gift practices as controlling over anti-corruption policy', 'Local practice does not override anti-corruption obligations.', 'Apply policy and law consistently.'],
     ],
   },
   {
@@ -459,7 +459,7 @@ const ccepCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Stay silent and listen for market intelligence', 'Listening to improper competitor discussions can still create risk.', 'Distance the company and report.'],
       ['Share the company pricing plan to be transparent', 'Sharing future pricing with competitors is a serious antitrust risk.', 'Do not exchange competitively sensitive information.'],
-      ['Assume trade associations are exempt from antitrust rules', 'Trade associations are not safe zones for collusion.', 'The content of the discussion matters.'],
+      ['Treat trade association settings as a safe harbor for competitor pricing discussions', 'Trade associations are not safe zones for collusion.', 'The content of the discussion matters.'],
     ],
   },
   {
@@ -502,7 +502,7 @@ const ccepCompetencies: CredentialCompetency[] = [
     correct: 'Perform risk-based integration: triage urgent risks, extend reporting channels and policies, review third parties, and set remediation timelines.',
     wrong: [
       ['Wait until the acquired company has a violation', 'Integration should reduce risk before problems surface.', 'Bring the acquired entity into the program promptly.'],
-      ['Assume diligence ended at closing', 'Post-closing integration is part of effective compliance.', 'Convert diligence findings into remediation.'],
+      ['Treat closing as the end of compliance diligence', 'Post-closing integration is part of effective compliance.', 'Convert diligence findings into remediation.'],
       ['Apply every control instantly without prioritization', 'Immediate blanket changes may be unrealistic and miss urgent risks.', 'Use risk-based sequencing.'],
     ],
   },
@@ -536,7 +536,7 @@ const ccepCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Leave it alone because employees once acknowledged it', 'Old acknowledgement does not ensure current relevance.', 'Policies need lifecycle governance.'],
       ['Quietly overwrite it with no approval record', 'Uncontrolled changes weaken accountability.', 'Use review, approval, and version control.'],
-      ['Archive it without checking dependent procedures', 'Procedures may rely on the policy.', 'Assess downstream impacts before retirement.'],
+      ['Retire the policy as if procedures have no dependency', 'Procedures may rely on the policy.', 'Assess downstream impacts before retirement.'],
     ],
   },
   {
@@ -545,7 +545,7 @@ const ccepCompetencies: CredentialCompetency[] = [
     prompt: 'Analytics show that exceptions cluster around one approver at month-end. What should compliance do?',
     correct: 'Use the signal to prioritize targeted review, compare against policy requirements, and determine whether escalation or control changes are needed.',
     wrong: [
-      ['Ignore the pattern because analytics are not interviews', 'Data signals can reveal risks worth investigating.', 'Use analytics to focus follow-up.'],
+      ['Treat analytics signals as less credible than interview evidence', 'Data signals can reveal risks worth investigating.', 'Use analytics to focus follow-up.'],
       ['Accuse the approver publicly without review', 'A pattern is not proof of misconduct by itself.', 'Validate facts through a fair process.'],
       ['Turn off the report because it creates work', 'Suppressing risk signals weakens the program.', 'Improve triage and ownership.'],
     ],
@@ -570,7 +570,7 @@ const amlCompetencies: CredentialCompetency[] = [
     prompt: 'Expected activity in the customer profile does not match actual transaction behavior. What is the best AML response?',
     correct: 'Review and update CDD as appropriate, investigate the inconsistency, and decide whether escalation is warranted.',
     wrong: [
-      ['Ignore the difference because CDD is only an onboarding form', 'CDD supports ongoing monitoring and risk understanding.', 'Use CDD throughout the relationship.'],
+      ['Treat CDD as a one-time onboarding form only', 'CDD supports ongoing monitoring and risk understanding.', 'Use CDD throughout the relationship.'],
       ['Automatically exit every customer with a profile mismatch', 'Mismatch requires review, not automatic exit in every case.', 'Investigate facts and apply risk-based decisions.'],
       ['Change expected activity to match transactions without support', 'Backfilling expectations to fit activity undermines monitoring.', 'Document a legitimate basis for updates.'],
     ],
@@ -582,7 +582,7 @@ const amlCompetencies: CredentialCompetency[] = [
     correct: 'Obtain and verify required beneficial ownership and control information according to risk-based procedures.',
     wrong: [
       ['Accept the entity name as the only owner', 'Legal entity names do not identify the natural persons who own or control the entity.', 'Look through the entity as required.'],
-      ['Skip ownership review because the account is profitable', 'Profitability does not remove beneficial ownership obligations.', 'Apply requirements consistently.'],
+      ['Treat profitability as a substitute for beneficial ownership review', 'Profitability does not remove beneficial ownership obligations.', 'Apply requirements consistently.'],
       ['Ask only for a marketing brochure', 'A brochure is not reliable ownership or control evidence.', 'Use appropriate documentation and certification processes.'],
     ],
   },
@@ -626,7 +626,7 @@ const amlCompetencies: CredentialCompetency[] = [
     correct: 'Investigate for structuring, document the pattern and purpose indicators, and file a SAR if suspicion is supported.',
     wrong: [
       ['Tell the customer exactly how to stay under thresholds', 'Coaching evasion is improper and heightens risk.', 'Do not help structure transactions.'],
-      ['Ignore it because no single transaction exceeds the threshold', 'Structuring can involve transactions below a threshold.', 'Evaluate intent and pattern.'],
+      ['Treat sub-threshold cash transactions as categorically nonreportable', 'Structuring can involve transactions below a threshold.', 'Evaluate intent and pattern.'],
       ['Automatically close the account without documenting analysis', 'Exit may be appropriate sometimes, but the SAR analysis still needs documentation.', 'Investigate and record the decision path.'],
     ],
   },
@@ -660,7 +660,7 @@ const amlCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Open the account first and review it after a year', 'Correspondent banking risk requires diligence before and during the relationship.', 'Complete required review before approval.'],
       ['Rely only on the foreign bank logo', 'Branding is not evidence of AML control quality.', 'Review supervision, ownership, controls, and expected activity.'],
-      ['Skip review because only banks are involved', 'Bank-to-bank relationships can carry significant AML risk.', 'Correspondent accounts require specialized diligence.'],
+      ['Treat bank-to-bank relationships as inherently low-risk', 'Bank-to-bank relationships can carry significant AML risk.', 'Correspondent accounts require specialized diligence.'],
     ],
   },
   {
@@ -681,7 +681,7 @@ const amlCompetencies: CredentialCompetency[] = [
     correct: 'Search required records within the prescribed process, maintain confidentiality, and report matches as required.',
     wrong: [
       ['Forward the request to all customers for comment', 'Information-sharing requests are confidential.', 'Limit access and follow the secure process.'],
-      ['Ignore it because no subpoena arrived', '314(a) has its own required process.', 'Respond according to the request procedures.'],
+      ['Treat subpoenas as the only law enforcement request requiring action', '314(a) has its own required process.', 'Respond according to the request procedures.'],
       ['Report every similar name without review', 'Overbroad reporting can reduce quality.', 'Search and validate according to instructions.'],
     ],
   },
@@ -692,7 +692,7 @@ const amlCompetencies: CredentialCompetency[] = [
     correct: 'Apply monetary instrument recordkeeping rules, collect required purchaser information, and evaluate suspicious patterns.',
     wrong: [
       ['Treat monetary instruments as outside BSA controls', 'Monetary instruments have specific recordkeeping requirements.', 'Apply the relevant BSA rule.'],
-      ['Skip records because the person is not a customer', 'Noncustomer transactions can still trigger recordkeeping.', 'Collect required information based on transaction type.'],
+      ['Treat noncustomer monetary instrument purchases as outside recordkeeping', 'Noncustomer transactions can still trigger recordkeeping.', 'Collect required information based on transaction type.'],
       ['Split the sale into separate receipts to avoid documentation', 'Splitting to avoid records is a control failure and possible red flag.', 'Document according to the rule.'],
     ],
   },
@@ -735,8 +735,8 @@ const amlCompetencies: CredentialCompetency[] = [
     prompt: 'Invoices appear overvalued, goods descriptions are vague, and counterparties are in unrelated jurisdictions. What should the AML analyst do?',
     correct: 'Investigate for trade-based money laundering indicators, compare documents to expected business, and escalate if suspicion remains.',
     wrong: [
-      ['Assume all trade documents are accurate because they are formal', 'Formal documents can still be used to disguise value or parties.', 'Review substance and consistency.'],
-      ['Ignore goods descriptions because AML only covers cash', 'AML risk includes trade finance and noncash movement of value.', 'Apply AML review to trade activity.'],
+      ['Treat formal invoices as conclusive evidence of trade legitimacy', 'Formal documents can still be used to disguise value or parties.', 'Review substance and consistency.'],
+      ['Treat AML risk as limited to cash movement', 'AML risk includes trade finance and noncash movement of value.', 'Apply AML review to trade activity.'],
       ['Approve if the customer promises the shipment is urgent', 'Urgency does not resolve red flags.', 'Complete risk-based review before approval.'],
     ],
   },
@@ -747,7 +747,7 @@ const amlCompetencies: CredentialCompetency[] = [
     correct: 'Evaluate PEP risk, source of wealth, source of funds, ownership/control, adverse media, and approval or exit criteria.',
     wrong: [
       ['Automatically treat every PEP as prohibited', 'PEP status creates higher risk but not always automatic prohibition.', 'Apply risk-based EDD and approval rules.'],
-      ['Ignore indirect ownership connections', 'Control and ownership links can matter for PEP risk.', 'Look through the relationship structure.'],
+      ['Treat only direct account holders as relevant to PEP risk', 'Control and ownership links can matter for PEP risk.', 'Look through the relationship structure.'],
       ['Avoid adverse media review to reduce bias', 'Adverse media, handled carefully, is relevant to risk assessment.', 'Use reliable sources and documented analysis.'],
     ],
   },
@@ -793,7 +793,7 @@ const bankAmlRoadmapCompetencies: CredentialCompetency[] = [
     prompt: 'The bank has policies but no evidence that controls operate consistently. What should the roadmap build?',
     correct: 'Implement control activities, evidence capture, exception handling, quality assurance, and management reporting tied to AML risks.',
     wrong: [
-      ['Assume written policies equal effective controls', 'Policies need operating practices and evidence.', 'Design controls that can be tested.'],
+      ['Treat written policies as proof that AML controls operate effectively', 'Policies need operating practices and evidence.', 'Design controls that can be tested.'],
       ['Track only successful transactions', 'Exceptions often reveal whether controls work.', 'Capture both completion and exception evidence.'],
       ['Rely on informal branch memory', 'Memory is not a sustainable control.', 'Use documented workflows and records.'],
     ],
@@ -903,9 +903,9 @@ const bankAmlRoadmapCompetencies: CredentialCompetency[] = [
     prompt: 'Monitoring scenarios depend on customer and transaction fields from multiple systems. What should the roadmap include?',
     correct: 'Document data lineage, completeness, transformations, reconciliations, change controls, and ownership for AML-critical data.',
     wrong: [
-      ['Assume data is correct because reports run daily', 'A report can run daily with incomplete or mis-mapped data.', 'Validate data feeding AML controls.'],
+      ['Treat daily report generation as proof of data accuracy', 'A report can run daily with incomplete or mis-mapped data.', 'Validate data feeding AML controls.'],
       ['Let technology own all data issues without AML review', 'AML owns the compliance impact of monitoring data quality.', 'Use joint ownership and controls.'],
-      ['Ignore transformations between systems', 'Transformations can change meaning or completeness.', 'Trace data from source to alert.'],
+      ['Treat source and alert fields as identical across system transformations', 'Transformations can change meaning or completeness.', 'Trace data from source to alert.'],
     ],
   },
   {
@@ -915,7 +915,7 @@ const bankAmlRoadmapCompetencies: CredentialCompetency[] = [
     correct: 'Embed AML review in product change management, including risk assessment, controls, monitoring, sanctions, training, and vendor oversight.',
     wrong: [
       ['Launch first and assess AML after volume grows', 'New products can create immediate AML risks.', 'Assess risks before launch.'],
-      ['Assume fintech partners own all compliance duties', 'The bank remains accountable for its program and relationships.', 'Oversee partner controls.'],
+      ['Treat fintech partnership contracts as transferring all AML duties', 'The bank remains accountable for its program and relationships.', 'Oversee partner controls.'],
       ['Use old monitoring scenarios without testing fit', 'New payment features can change risk patterns.', 'Validate scenario coverage.'],
     ],
   },
@@ -950,9 +950,9 @@ const customsCompetencies: CredentialCompetency[] = [
     prompt: 'Two HTS headings could apply to a product. What is the correct classification method?',
     correct: 'Apply the General Rules of Interpretation in order, using section and chapter notes and the terms of the headings.',
     wrong: [
-      ['Choose the heading with the lowest duty rate first', 'Duty outcome does not control classification.', 'Apply the legal classification rules first.'],
+      ['Treat the lowest-duty heading as the legally preferred classification', 'Duty outcome does not control classification.', 'Apply the legal classification rules first.'],
       ['Classify only by product nickname', 'Commercial nicknames may not match tariff terms.', 'Use HTS text, notes, and GRIs.'],
-      ['Use last year tariff code without checking changes', 'Prior treatment may be relevant but product or tariff changes can alter classification.', 'Reassess against current facts and law.'],
+      ['Treat last year tariff code as binding despite product changes', 'Prior treatment may be relevant but product or tariff changes can alter classification.', 'Reassess against current facts and law.'],
     ],
   },
   {
@@ -974,7 +974,7 @@ const customsCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Reject all related-party transaction values automatically', 'Related-party transactions can be acceptable if the relationship did not influence price.', 'Analyze acceptability rather than assuming.'],
       ['Accept the price solely because both parties signed the invoice', 'A signed invoice does not resolve related-party valuation concerns.', 'Review pricing evidence.'],
-      ['Ignore valuation because classification is harder', 'Both classification and valuation matter for duty calculation.', 'Address each entry element.'],
+      ['Treat classification as the only element affecting duty liability', 'Both classification and valuation matter for duty calculation.', 'Address each entry element.'],
     ],
   },
   {
@@ -985,7 +985,7 @@ const customsCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Use the packaging country automatically', 'Packaging alone may not determine origin.', 'Analyze the applicable origin rule.'],
       ['Let the importer choose the most marketable country', 'Marketing preference does not control origin marking.', 'Origin declarations must be legally supportable.'],
-      ['Skip origin because duty is zero', 'Origin can affect marking, admissibility, trade remedies, and reporting even when ordinary duty is zero.', 'Review origin independently.'],
+      ['Treat zero ordinary duty as eliminating origin obligations', 'Origin can affect marking, admissibility, trade remedies, and reporting even when ordinary duty is zero.', 'Review origin independently.'],
     ],
   },
   {
@@ -994,8 +994,8 @@ const customsCompetencies: CredentialCompetency[] = [
     prompt: 'A product may fall under an antidumping or countervailing duty order. What is the safest broker response?',
     correct: 'Review the order scope, product characteristics, origin, and available rulings or instructions before entry treatment is selected.',
     wrong: [
-      ['Ignore AD/CVD if the importer says duty is too expensive', 'Cost concerns do not remove trade remedy obligations.', 'Scope analysis is required when risk exists.'],
-      ['Assume HTS classification alone decides AD/CVD scope', 'HTS numbers help but scope language controls AD/CVD coverage.', 'Review the scope text and facts.'],
+      ['Treat importer cost objections as removing AD/CVD exposure', 'Cost concerns do not remove trade remedy obligations.', 'Scope analysis is required when risk exists.'],
+      ['Treat HTS classification as the sole AD/CVD scope test', 'HTS numbers help but scope language controls AD/CVD coverage.', 'Review the scope text and facts.'],
       ['Wait until liquidation to consider AD/CVD', 'Entry treatment should be evaluated before filing.', 'Resolve scope risk early or seek guidance.'],
     ],
   },
@@ -1005,7 +1005,7 @@ const customsCompetencies: CredentialCompetency[] = [
     prompt: 'The shipment facts may qualify for a special entry process, but documentation is incomplete. What should the broker do?',
     correct: 'Select entry type only after confirming eligibility, documentation, bond, and admissibility requirements.',
     wrong: [
-      ['Choose the fastest entry type regardless of eligibility', 'Entry type must match legal and operational requirements.', 'Confirm eligibility before filing.'],
+      ['Treat release speed as the controlling entry type criterion', 'Entry type must match legal and operational requirements.', 'Confirm eligibility before filing.'],
       ['Use informal entry for all shipments', 'Informal entry has value and merchandise limitations.', 'Match entry type to shipment facts.'],
       ['Let entry type be decided after release', 'Entry type affects filing and release requirements.', 'Determine the proper process before submission.'],
     ],
@@ -1018,7 +1018,7 @@ const customsCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Miss the deadline because documentation is inconvenient', 'Timely entry summary filing is a broker and importer control issue.', 'Escalate before the deadline expires.'],
       ['File unsupported guesses with no disclosure plan', 'Unsupported declarations create compliance risk.', 'Use available lawful options and document rationale.'],
-      ['Ignore the client until CBP contacts the broker', 'Diligence requires timely correspondence and action.', 'Communicate and escalate proactively.'],
+      ['Treat CBP contact as the first required broker-client communication', 'Diligence requires timely correspondence and action.', 'Communicate and escalate proactively.'],
     ],
   },
   {
@@ -1049,7 +1049,7 @@ const customsCompetencies: CredentialCompetency[] = [
     prompt: 'Brokerage employees prepare entries with minimal review despite high volumes and new clients. What should licensed broker management ensure?',
     correct: 'Maintain responsible supervision and control through training, review, procedures, audit trails, and oversight proportional to risk and volume.',
     wrong: [
-      ['Assume employees never need broker oversight', 'A broker is responsible for proper transaction of customs business.', 'Supervise based on complexity and risk.'],
+      ['Treat employee preparation of entries as outside licensed broker supervision', 'A broker is responsible for proper transaction of customs business.', 'Supervise based on complexity and risk.'],
       ['Review only entries that generate large fees', 'Fee size is not the only risk indicator.', 'Use risk-based quality controls.'],
       ['Outsource supervision to the importer completely', 'Importers have responsibilities, but broker supervision remains a broker duty.', 'Maintain broker controls over brokerage work.'],
     ],
@@ -1073,7 +1073,7 @@ const customsCompetencies: CredentialCompetency[] = [
     wrong: [
       ['File a protest whenever a client dislikes duty costs', 'A protest needs a protestable decision and support.', 'Assess availability and grounds.'],
       ['Wait indefinitely while gathering perfect evidence', 'Protest rights have timing constraints.', 'Manage deadlines while building support.'],
-      ['Assume informal emails replace formal protest procedures', 'Formal protest rules govern the process.', 'Use the proper filing method and content.'],
+      ['Treat informal emails as equivalent to a formal protest filing', 'Formal protest rules govern the process.', 'Use the proper filing method and content.'],
     ],
   },
   {
@@ -1095,7 +1095,7 @@ const customsCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Drawback is automatic whenever goods leave the country', 'Drawback requires eligibility and documentation.', 'Build the import-export-duty support chain.'],
       ['Use estimates when records are missing', 'Unsupported estimates can undermine the claim.', 'Use verifiable records and approved methods.'],
-      ['Ignore prior claims because each claim is isolated', 'Prior claims and records may affect eligibility and audit risk.', 'Maintain consistent claim support.'],
+      ['Treat each drawback claim as unrelated to prior claim support', 'Prior claims and records may affect eligibility and audit risk.', 'Maintain consistent claim support.'],
     ],
   },
   {
@@ -1105,8 +1105,8 @@ const customsCompetencies: CredentialCompetency[] = [
     correct: 'Confirm zone status, admission, manipulation, transfer, and entry requirements before declaring duty treatment.',
     wrong: [
       ['Treat FTZ goods as ordinary domestic goods immediately', 'FTZ status changes customs handling and duty timing.', 'Track zone procedures carefully.'],
-      ['Ignore records because the goods are not yet entered for consumption', 'Zone activity has its own records and controls.', 'Maintain documentation throughout the zone process.'],
-      ['Assume any manipulation changes origin automatically', 'Origin and status changes depend on applicable rules.', 'Analyze the legal effect of the FTZ activity.'],
+      ['Treat FTZ goods as outside record controls before consumption entry', 'Zone activity has its own records and controls.', 'Maintain documentation throughout the zone process.'],
+      ['Treat FTZ manipulation alone as enough to change origin', 'Origin and status changes depend on applicable rules.', 'Analyze the legal effect of the FTZ activity.'],
     ],
   },
   {
@@ -1127,7 +1127,7 @@ const customsCompetencies: CredentialCompetency[] = [
     correct: 'Identify applicable agency requirements and obtain admissibility data before filing or release decisions.',
     wrong: [
       ['File only CBP data and hope other agencies do not apply', 'PGA requirements can determine admissibility.', 'Screen product facts for agency coverage.'],
-      ['Assume tariff classification answers every agency question', 'Classification helps but may not capture all PGA requirements.', 'Review product-specific agency rules.'],
+      ['Treat tariff classification as satisfying every partner agency requirement', 'Classification helps but may not capture all PGA requirements.', 'Review product-specific agency rules.'],
       ['Let the importer resolve PGA holds after release only', 'Admissibility should be addressed before or during entry as required.', 'Collect required data early.'],
     ],
   },
@@ -1137,8 +1137,8 @@ const customsCompetencies: CredentialCompetency[] = [
     prompt: 'A shipment has high duty exposure and potential AD/CVD risk. What should the broker assess?',
     correct: 'Whether the importer bond is sufficient for the transaction risk, duty exposure, and CBP requirements.',
     wrong: [
-      ['Assume any bond amount is always enough', 'Bond sufficiency depends on exposure and requirements.', 'Evaluate risk and coverage.'],
-      ['Ignore bonds because duties are paid later', 'Bonds secure obligations tied to entry.', 'Confirm bond adequacy before filing.'],
+      ['Treat any existing customs bond as sufficient for every exposure', 'Bond sufficiency depends on exposure and requirements.', 'Evaluate risk and coverage.'],
+      ['Treat later duty payment as eliminating bond coverage needs', 'Bonds secure obligations tied to entry.', 'Confirm bond adequacy before filing.'],
       ['Use another importer bond for convenience', 'Bond use must match the correct principal and transaction.', 'Use proper bond authority.'],
     ],
   },
@@ -1148,7 +1148,7 @@ const customsCompetencies: CredentialCompetency[] = [
     prompt: 'The heading language seems broad, but a chapter note excludes the product. What controls?',
     correct: 'Apply the legal notes with the GRIs; section and chapter notes can determine or exclude classification.',
     wrong: [
-      ['Ignore notes if the heading sounds close', 'Legal notes are part of tariff classification.', 'Read heading terms together with notes.'],
+      ['Treat similar heading wording as enough without legal notes', 'Legal notes are part of tariff classification.', 'Read heading terms together with notes.'],
       ['Classify by duty rate alone', 'Duty rate is a consequence, not the classification method.', 'Use legal text and interpretive rules.'],
       ['Use only search results from the importer website', 'Product descriptions help facts but do not replace HTS legal notes.', 'Analyze the tariff schedule.'],
     ],
@@ -1208,7 +1208,7 @@ const aigpCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Measure only the project return on investment', 'ROI does not capture rights, safety, fairness, or compliance risk.', 'Impact assessment is broader than economics.'],
       ['Ask only whether the model is technically impressive', 'Technical quality is one input, not the whole impact question.', 'Assess real-world use and harm.'],
-      ['Skip assessment because a vendor built the model', 'Vendor source does not remove deployer governance duties.', 'Assess the system in its intended context.'],
+      ['Treat vendor-built models as outside deployer impact assessment duties', 'Vendor source does not remove deployer governance duties.', 'Assess the system in its intended context.'],
     ],
   },
   {
@@ -1218,7 +1218,7 @@ const aigpCompetencies: CredentialCompetency[] = [
     correct: 'Review legal basis, purpose compatibility, data quality, representativeness, consent or notice issues, and mitigation for bias or privacy risk.',
     wrong: [
       ['Use all available data because more data is always compliant', 'More data can increase privacy, bias, and quality problems.', 'Use fit-for-purpose and lawful data.'],
-      ['Ignore representation because accuracy is high overall', 'Aggregate accuracy can hide subgroup harm.', 'Evaluate performance across relevant groups.'],
+      ['Treat high aggregate accuracy as proof of representative performance', 'Aggregate accuracy can hide subgroup harm.', 'Evaluate performance across relevant groups.'],
       ['Treat training data as outside governance once stored', 'Data governance applies through collection, training, testing, and maintenance.', 'Track provenance and use restrictions.'],
     ],
   },
@@ -1230,7 +1230,7 @@ const aigpCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Report only aggregate accuracy', 'Aggregate metrics can mask disparate performance.', 'Use subgroup and context-aware evaluation.'],
       ['Suppress subgroup analysis to avoid sensitive findings', 'Avoiding measurement prevents risk management.', 'Measure carefully with privacy and legal controls.'],
-      ['Assume bias disappears after deployment', 'Deployment can amplify or reveal bias.', 'Monitor and mitigate throughout the life cycle.'],
+      ['Treat deployment as resolving pre-release bias concerns', 'Deployment can amplify or reveal bias.', 'Monitor and mitigate throughout the life cycle.'],
     ],
   },
   {
@@ -1261,9 +1261,9 @@ const aigpCompetencies: CredentialCompetency[] = [
     prompt: 'Post-deployment metrics show data drift and declining performance. What should the governance process do?',
     correct: 'Trigger monitoring escalation, assess impact, pause or adjust use if needed, remediate causes, and document changes.',
     wrong: [
-      ['Ignore drift if the model was approved at launch', 'Approval is not permanent assurance.', 'Monitor production behavior continuously.'],
+      ['Treat launch approval as permanent assurance against drift', 'Approval is not permanent assurance.', 'Monitor production behavior continuously.'],
       ['Retrain silently with unreviewed data', 'Uncontrolled retraining can introduce new risks.', 'Use change control and validation.'],
-      ['Blame users without checking data or model changes', 'User behavior may matter, but drift requires technical and process review.', 'Investigate evidence before assigning cause.'],
+      ['Treat user behavior as the sole cause of drift signals', 'User behavior may matter, but drift requires technical and process review.', 'Investigate evidence before assigning cause.'],
     ],
   },
   {
@@ -1274,7 +1274,7 @@ const aigpCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Use only Manage after incidents happen', 'The AI RMF includes proactive governance, mapping, and measurement.', 'Risk management begins before incidents.'],
       ['Treat Map as a marketing inventory only', 'Mapping includes context, intended purpose, stakeholders, and impact.', 'Use Map to understand risk context.'],
-      ['Skip Govern because technical teams own AI', 'Govern establishes policies, roles, and accountability across the organization.', 'Technical work needs governance structure.'],
+      ['Treat AI ownership as purely technical under the NIST AI RMF', 'Govern establishes policies, roles, and accountability across the organization.', 'Technical work needs governance structure.'],
     ],
   },
   {
@@ -1294,8 +1294,8 @@ const aigpCompetencies: CredentialCompetency[] = [
     prompt: 'The company uses a general-purpose model inside a customer-impacting workflow. What should governance examine?',
     correct: 'Clarify provider and deployer roles, downstream use, documentation, limitations, risk controls, monitoring, and regulatory obligations.',
     wrong: [
-      ['Assume all obligations sit only with the model provider', 'Deployers can have obligations based on how the model is used.', 'Map roles and use context.'],
-      ['Ignore provider documentation because the model is popular', 'Popularity does not replace due diligence.', 'Review limitations, data, and usage controls.'],
+      ['Treat provider documentation duties as replacing deployer obligations', 'Deployers can have obligations based on how the model is used.', 'Map roles and use context.'],
+      ['Treat model popularity as sufficient provider due diligence', 'Popularity does not replace due diligence.', 'Review limitations, data, and usage controls.'],
       ['Treat every downstream use as identical', 'Risk depends on context and impact.', 'Assess the actual workflow.'],
     ],
   },
@@ -1317,7 +1317,7 @@ const aigpCompetencies: CredentialCompetency[] = [
     correct: 'Coordinate privacy impact assessment or DPIA analysis with AI impact assessment, data minimization, purpose limits, and mitigation.',
     wrong: [
       ['Run AI review and privacy review in isolation', 'AI and privacy risks often overlap.', 'Coordinate assessments and controls.'],
-      ['Assume anonymization without testing reidentification risk', 'Data may not be truly anonymous in context.', 'Validate de-identification and residual risk.'],
+      ['Treat de-identification labels as proof of no reidentification risk', 'Data may not be truly anonymous in context.', 'Validate de-identification and residual risk.'],
       ['Use personal data first and ask privacy later', 'Privacy obligations should be assessed before processing begins.', 'Build privacy into design and approval.'],
     ],
   },
@@ -1328,7 +1328,7 @@ const aigpCompetencies: CredentialCompetency[] = [
     correct: 'Activate incident response, assess harm and scope, preserve logs, notify required stakeholders, mitigate, and document lessons learned.',
     wrong: [
       ['Delete logs to avoid reputational harm', 'Logs are needed for investigation, accountability, and possible reporting.', 'Preserve evidence.'],
-      ['Assume harm is impossible because the model is automated', 'Automation can create or scale harm.', 'Assess actual impact.'],
+      ['Treat automated outputs as incapable of causing user harm', 'Automation can create or scale harm.', 'Assess actual impact.'],
       ['Wait for social media attention before acting', 'Incident response should be risk-triggered, not publicity-triggered.', 'Escalate promptly based on facts.'],
     ],
   },
@@ -1351,7 +1351,7 @@ const aigpCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Treat all updates as minor by default', 'Some updates materially change risk or performance.', 'Classify changes by impact.'],
       ['Deploy first because governance approved the original version', 'Original approval may not cover material changes.', 'Reassess before release.'],
-      ['Skip documentation if test scores improved', 'Improved scores do not remove accountability requirements.', 'Document what changed and why it is acceptable.'],
+      ['Treat improved test scores as replacing change documentation', 'Improved scores do not remove accountability requirements.', 'Document what changed and why it is acceptable.'],
     ],
   },
   {
@@ -1362,7 +1362,7 @@ const aigpCompetencies: CredentialCompetency[] = [
     wrong: [
       ['Hide AI involvement to increase engagement', 'Concealment can create transparency and deception risk.', 'Tell users when required and appropriate.'],
       ['Label only internal drafts and not public outputs', 'Public-facing synthetic content may need transparency controls.', 'Assess audience and legal obligations.'],
-      ['Assume all synthetic content is prohibited', 'Many synthetic uses are allowed with proper controls.', 'Govern based on risk and requirements.'],
+      ['Treat every synthetic content use as categorically prohibited', 'Many synthetic uses are allowed with proper controls.', 'Govern based on risk and requirements.'],
     ],
   },
   {
@@ -1383,7 +1383,7 @@ const aigpCompetencies: CredentialCompetency[] = [
     correct: 'Review data provenance, license terms, confidentiality duties, use restrictions, retention, and removal or mitigation obligations.',
     wrong: [
       ['Use the data because it was easy to scrape', 'Availability does not prove lawful or permitted use.', 'Check provenance and rights.'],
-      ['Ignore contracts because AI training is technical', 'Contract restrictions can govern data use.', 'Include legal review in data governance.'],
+      ['Treat AI training data as outside contract use restrictions', 'Contract restrictions can govern data use.', 'Include legal review in data governance.'],
       ['Delete provenance records after training', 'Provenance records support accountability and later remediation.', 'Retain appropriate lineage evidence.'],
     ],
   },

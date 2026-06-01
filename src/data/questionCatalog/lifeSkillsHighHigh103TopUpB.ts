@@ -134,8 +134,8 @@ export const lifeSkillsHighHigh103TopUpBQuestions: Question[] = makeQuestionBank
     correct: 'Read each line, ask what each charge is for, and consider a second estimate for a costly job',
     wrong: [
       miss('Approve it immediately so the car gets fixed as fast as possible', 'Approving without understanding the charges can lead to paying for unneeded work or inflated labor; review first.', 'Understand the bill before you commit to it.'),
-      miss('Assume the total is fixed and cannot be questioned', 'Estimates can include optional or negotiable items, and a second opinion can reveal a cheaper fix.', 'An estimate is a starting point, not a final verdict.'),
-      miss('Ignore the labor line because only parts cost real money', 'Labor is often the largest part of a repair bill, so ignoring it misjudges the true cost.', 'Labor frequently outweighs the parts cost.'),
+      miss('Treat the total as fixed even when a line item looks unclear', 'Estimates can include optional or negotiable items, and a second opinion can reveal a cheaper fix.', 'An estimate is a starting point, not a final verdict.'),
+      miss('Treat parts as the only meaningful cost and leave labor out of the estimate', 'Labor is often the largest part of a repair bill, so ignoring it misjudges the true cost.', 'Labor frequently outweighs the parts cost.'),
     ],
     lesson: 'A repair estimate breaks the cost into parts, labor (hours times an hourly rate), and sometimes a diagnostic fee. Reading each line, asking what it covers, and getting a second estimate on expensive jobs protects you from unnecessary or inflated charges. Labor is often the biggest component, so it deserves scrutiny.',
     source,
@@ -620,7 +620,7 @@ export const lifeSkillsHighHigh103TopUpBQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('Light a match to find exactly where the leak is coming from', 'An open flame near a gas leak can cause an explosion; never introduce a spark or flame.', 'A flame near leaking gas is extremely dangerous.'),
       miss('Open the oven and try to tighten the gas line yourself with tools', 'A gas leak is a job for professionals; DIY tinkering risks a worse leak or ignition.', 'Some problems are for experts, not DIY.'),
-      miss('Ignore it, since a faint gas smell near a stove is always normal', 'A strengthening gas smell is a warning sign, not normal, and demands immediate action.', 'A growing gas odor is an emergency signal.'),
+      miss('Treat a faint gas smell near a stove as normal cooking background', 'A strengthening gas smell is a warning sign, not normal, and demands immediate action.', 'A growing gas odor is an emergency signal.'),
     ],
     lesson: 'A key adulting skill is knowing which problems you handle yourself and which require a professional. A gas leak is dangerous and urgent: leave the area, avoid anything that could spark (flames, light switches), and call the gas utility or emergency services from a safe distance. Recognizing when not to DIY can save your life.',
     source,
@@ -650,7 +650,7 @@ export const lifeSkillsHighHigh103TopUpBQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('Cut the salad on the same board right after the chicken without washing it', 'Raw chicken can leave bacteria on the board; using it for ready-to-eat salad spreads those bacteria.', 'Bacteria transfer from the raw board to the salad.'),
       miss('Rinse the raw chicken under running water to wash the bacteria off', 'Rinsing raw poultry can splash bacteria around the sink and counters and does not make it safe; cooking does.', 'Rinsing spreads bacteria; cooking kills it.'),
-      miss('Assume cooking the chicken later will fix any contamination of the salad', 'The salad is not cooked, so any bacteria transferred to it stays; cooking only protects the chicken.', 'Uncooked food carries any bacteria it picked up.'),
+      miss('Treat later cooking of the chicken as enough to protect already-contaminated salad', 'The salad is not cooked, so any bacteria transferred to it stays; cooking only protects the chicken.', 'Uncooked food carries any bacteria it picked up.'),
     ],
     lesson: 'Cross-contamination happens when bacteria from raw foods like poultry reach ready-to-eat foods like salad. Prevent it by using separate cutting boards and utensils for raw meat, and washing hands and surfaces before handling ready-to-eat food. Rinsing raw chicken actually spreads bacteria; proper cooking, not rinsing, makes it safe.',
     source,
@@ -711,7 +711,7 @@ export const lifeSkillsHighHigh103TopUpBQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('Push the feelings down and tough it out alone, since asking for help is weak', 'Persistent hopelessness can be a treatable condition; seeking help is a sign of strength, not weakness.', 'Asking for help is a healthy, capable choice.'),
       miss('Wait until it becomes a full crisis before telling anyone', 'Waiting for a crisis can let symptoms worsen; reaching out early gives more options and better outcomes.', 'Earlier support generally helps more than later.'),
-      miss('Assume it will pass on its own and ignore it indefinitely', 'Symptoms lasting weeks and impairing function may not pass on their own and warrant support.', 'Persistent, function-impairing symptoms deserve attention.'),
+      miss('Wait indefinitely because the symptom might pass on its own', 'Symptoms lasting weeks and impairing function may not pass on their own and warrant support.', 'Persistent, function-impairing symptoms deserve attention.'),
     ],
     lesson: 'Asking for help is a core life skill, including for mental health. Persistent hopelessness, loss of interest, and trouble functioning over weeks can signal a treatable condition like depression. Reaching out to a trusted adult, doctor, counselor, or helpline early is a strong, healthy step. Knowing when and where to seek support is part of taking care of yourself.',
     source,

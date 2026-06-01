@@ -57,8 +57,8 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Use the call to classify the subject and legal task before mining the facts',
       [
         ['Read the answer choices first and pick the most familiar doctrine', 'Reading choices before the call invites familiarity bias toward whichever doctrine the test taker remembers best, which is rarely what the question asks.'],
-        ['Assume every long fact pattern is civil procedure', 'Length is not a subject signal. Item writers vary length deliberately across subjects.'],
-        ['Ignore the call because the story usually contains all the clues', 'The call defines the scoring task. Ignoring it almost guarantees writing a correct answer to the wrong question.'],
+        ['Treat every long fact pattern as if procedure is the tested issue', 'Length is not a subject signal. Item writers vary length deliberately across subjects.'],
+        ['Let the story details drive the answer without anchoring on the call of the question', 'The call defines the scoring task. Ignoring it almost guarantees writing a correct answer to the wrong question.'],
       ],
       'The call of the question is the exam compass. It keeps a long story from dragging the candidate into the wrong subject swamp.'),
     q(4250701, 'Career Skills', 'The Bar Exam Operating System', 'Element shopping list',
@@ -66,7 +66,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Identify formation elements and apply the facts to offer, acceptance, consideration, and any timing problem',
       [
         ['Start with damages because money is usually interesting', 'Damages come after liability. Starting with remedies skips the entire question the call asked.'],
-        ['Assume no contract exists whenever payment has not happened', 'Payment is not a formation element under common law or UCC. Skipping straight to no-contract loses the analysis points.'],
+        ['Treat nonpayment as proof that contract formation never occurred', 'Payment is not a formation element under common law or UCC. Skipping straight to no-contract loses the analysis points.'],
         ['Write a long paragraph about fairness without naming elements', 'Bar essays grade legal structure plus fact application. Fairness alone earns no doctrinal credit.'],
       ],
       'Essay points come from legal structure plus fact use. Formation questions need elements before the answer starts decorating the room.'),
@@ -309,7 +309,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       [
         ['Use outside law from memory because more law is better', 'The MPT is a closed-packet test. Outside law is off-limits and signals the candidate did not follow the task.'],
         ['Write a persuasive brief because all legal writing is interchangeable', 'Objective and persuasive writing are different tasks with different conventions and tones.'],
-        ['Ignore the task memo and summarise the packet chronologically', 'The task memo is the grading rubric. Ignoring it forfeits structural credit.'],
+        ['Organise the answer as a chronology even when the task memo asks for analysis', 'The task memo is the grading rubric. Ignoring it forfeits structural credit.'],
       ],
       'The MPT is an open-packet performance test. The task memo is your boss for 90 minutes — useful, if a little rude.'),
     q(4250728, 'Career Skills', 'MPT - Lawyering in a 90-Minute Box', 'Library synthesis',
@@ -327,7 +327,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       [
         ['Use any format as long as the law appears somewhere', 'Format is part of the graded task. Wrong format loses points regardless of legal accuracy.'],
         ['Write to the supervising attorney instead and hope', 'Audience misdirection is a clear MPT failure mode.'],
-        ['Ignore weak facts so the letter sounds confident', 'Honest risk assessment is the point of a client letter. Cherry-picking facts undermines the task.'],
+        ['Omit weak facts to make the client letter sound more certain', 'Honest risk assessment is the point of a client letter. Cherry-picking facts undermines the task.'],
       ],
       'The MPT grades task performance, not just legal memory. Format, audience, and useful application are part of the work.'),
 
@@ -338,7 +338,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       [
         ['Stop reviewing because wrong answers feel unpleasant', 'Practice only compounds with structured review. Stopping locks in the error.'],
         ['Memorise only the letter choice', 'Letter choice does not generalise to the next question. The rule and trap do.'],
-        ['Assume six misses in one topic are random noise', 'Six misses on one topic is a signal, not noise. Treating it as random forfeits the diagnostic.'],
+        ['Treat repeated misses in one topic as normal variance rather than a learning signal', 'Six misses on one topic is a signal, not noise. Treating it as random forfeits the diagnostic.'],
       ],
       'Practice only compounds if review finds patterns. A good wrong-answer log turns bruises into map pins.'),
     q(4250731, 'Career Skills', 'Memorization, Retrieval, and Attack Outlines', 'Final-week diet',
@@ -356,8 +356,8 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'An MBE answer states a correct general rule but ignores the exception clearly triggered by the facts. How should the examinee treat it?',
       'Reject it if the exception changes the outcome in this scenario',
       [
-        ['Choose it because general rules always beat facts', 'MBE answers are fact-fit contests. Generality is not a tiebreaker.'],
-        ['Choose the longest answer regardless of fit', 'Length is not a correctness signal. Item writers vary length deliberately.'],
+        ['The broad general rule with no exception analysis', 'MBE answers are fact-fit contests. Generality is not a tiebreaker.'],
+        ['A longer answer that does not fit the facts', 'Length is not a correctness signal. Item writers vary length deliberately.'],
         ['Avoid all exceptions because they are rare', 'Exceptions are the most common MBE testing target. Avoiding them ensures wrong answers.'],
       ],
       'MBE distractors often sound like outline headings. The best answer fits the exact facts, including exceptions.'),
@@ -365,8 +365,8 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'An MBE contracts question states a general rule in one answer, but another answer names a narrower exception triggered by the buyer reliance facts. What guides the choice?',
       'Select the answer that applies the exception if the facts satisfy it',
       [
-        ['Pick the broadest rule because it sounds more official', 'Sounding official is not a doctrine. Fit is.'],
-        ['Choose the answer with the most familiar vocabulary', 'Familiarity bias is exactly what the item tests against.'],
+        ['The broadest rule stated in official-sounding language', 'Sounding official is not a doctrine. Fit is.'],
+        ['A familiar doctrine word that is not triggered by the facts', 'Familiarity bias is exactly what the item tests against.'],
         ['Avoid exceptions because exam writers rarely mean them', 'Exam writers test exceptions constantly. Avoiding them is a strategy mistake.'],
       ],
       'MBE answers are fact-fit contests. The correct choice often looks less grand because it is tailored to the exact facts.'),
@@ -384,8 +384,8 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Discuss fraud only if relevant, noting the missing elements rather than inventing them',
       [
         ['Invent reliance because fraud sounds exam-worthy', 'Inventing facts is the surest way to lose credit on a bar essay.'],
-        ['Ignore all elements and write a fairness paragraph', 'Fairness without elements earns no doctrinal credit.'],
-        ['Assume every bad outcome is fraud', 'Bar essays grade element-by-element analysis. Assumed conclusions are not analysis.'],
+        ['Replace element-by-element analysis with a general fairness discussion', 'Fairness without elements earns no doctrinal credit.'],
+        ['Treat every bad outcome as proof of fraudulent intent', 'Bar essays grade element-by-element analysis. Assumed conclusions are not analysis.'],
       ],
       'Issue spotting includes spotting what is absent. Good analysis uses the record you have, not the record you wish for.'),
 
@@ -413,7 +413,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Allocate time across all remaining essays and leave the favourite when planned time expires',
       [
         ['Spend most of the block on the favourite and hope charm carries the rest', 'Polishing one essay while leaving two blank loses more credit than three solid partial answers.'],
-        ['Skip outlines because time plans are decorative', 'Outlines are time savers, not time sinks. Skipping them leads to disorganised drafting.'],
+        ['Treat outlining as wasted time rather than a control on exam structure', 'Outlines are time savers, not time sinks. Skipping them leads to disorganised drafting.'],
         ['Write until the first essay feels perfect', 'Perfection has a steep marginal cost. Time spent there does not transfer to the remaining essays.'],
       ],
       'Exam survival means rationing effort. A strong partial answer on three essays usually beats one polished island and two empty beaches.'),
@@ -449,7 +449,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Facilitate a collaborative discussion focused on facts, interests, and project objectives',
       [
         ['Escalate immediately so executives pick a winner', 'Escalation before facilitation skips the project manager\'s collaboration role and signals weakness.'],
-        ['Ignore the conflict until the schedule slips', 'Suppressed conflict compounds. Schedule slip is the predictable consequence.'],
+        ['Wait for schedule impact before treating the conflict as a project risk', 'Suppressed conflict compounds. Schedule slip is the predictable consequence.'],
         ['Assign blame based on who spoke last', 'Blame ordering is not conflict resolution. It hardens positions.'],
       ],
       'People questions favour listen, facilitate, coach, and remove obstacles before unnecessary escalation.'),
@@ -458,7 +458,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Work with the team to address the skill bottleneck through training, pairing, or staffing adjustments',
       [
         ['Pressure the one expert to work weekends indefinitely', 'Heroics around a single expert worsen the underlying single-point-of-failure risk.'],
-        ['Ignore the pattern because skills are personal', 'Capability gaps that block delivery are project-management issues, not personal ones.'],
+        ['Treat the performance pattern as individual preference rather than a capability gap', 'Capability gaps that block delivery are project-management issues, not personal ones.'],
         ['Remove testing from the definition of done', 'Reducing quality to hide a staffing issue trades short-term relief for downstream defects.'],
       ],
       'Team performance problems often need system fixes. Cross-training and capacity planning beat heroic bottlenecks.'),
@@ -467,7 +467,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Explore the facts, coach respectful collaboration, and facilitate healthier team discussion',
       [
         ['Publicly scold the accused person at the next meeting', 'Public scolding violates psychological safety norms and rarely produces lasting behaviour change.'],
-        ['Ignore interpersonal dynamics because only tasks matter', 'Team dynamics drive delivery. Ignoring them creates persistent drag.'],
+        ['Treat task assignment as sufficient even when relationship friction is visible', 'Team dynamics drive delivery. Ignoring them creates persistent drag.'],
         ['Remove the complaining team member from meetings', 'Removing the reporter punishes the wrong person and chills future feedback.'],
       ],
       'Team leadership includes psychological safety and collaboration. Address behaviour constructively before it becomes project drag.'),
@@ -486,7 +486,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'A project closes soon, but nobody has been assigned to measure benefits after transition to operations. What should the project manager do?',
       'Work with stakeholders to identify benefit ownership, measures, and transition responsibilities',
       [
-        ['Assume benefits prove themselves after cake is served', 'Benefits without owners go unmeasured. Cake does not measure outcomes.'],
+        ['Treat launch enthusiasm as proof that benefits will be adopted', 'Benefits without owners go unmeasured. Cake does not measure outcomes.'],
         ['Keep the project open forever to own operations', 'Project ownership of operations blurs accountability and prevents closure.'],
         ['Delete benefits from the business case', 'Deleting benefits hides the question. The work was justified by them.'],
       ],
@@ -525,7 +525,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Use the reserve according to the risk response plan and update cost and risk records',
       [
         ['Tap management reserve without approval because both reserves are money', 'Management reserve is for unknown unknowns and requires higher authorisation. The two reserves are not interchangeable.'],
-        ['Ignore the reserve and cut random scope', 'Scope cuts without analysis create more problems than they solve.'],
+        ['Cut visible scope without protecting the contingency reserve', 'Scope cuts without analysis create more problems than they solve.'],
         ['Spend the reserve on unrelated enhancements', 'Contingency funds are for the identified risk, not for opportunistic scope expansion.'],
       ],
       'Contingency reserves are for identified risks. Management reserves are controlled differently and usually need higher authorisation.'),
@@ -645,7 +645,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'A vendor deliverable repeatedly misses acceptance criteria. What should the project manager do first?',
       'Review the contract, acceptance criteria, performance data, and issue process before deciding remedies or escalation',
       [
-        ['Terminate immediately without checking contract terms', 'Termination without contract review can create breach exposure for the buyer.'],
+        ['Treat termination as available without first checking the contract process', 'Termination without contract review can create breach exposure for the buyer.'],
         ['Rewrite the criteria after delivery so the vendor passes', 'Rewriting criteria to fit failed delivery undermines the entire contract.'],
         ['Complain informally but keep accepting bad outputs', 'Informal complaint without record loses the formal remedy path.'],
       ],
@@ -703,9 +703,9 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'A PMP scenario asks what the project manager should do next after a conflict, surprise risk, or stakeholder concern. Which exam habit helps most?',
       'Choose the response that assesses facts, engages the right people, and follows the appropriate process before drastic action',
       [
-        ['Pick the most forceful answer because managers should look busy', 'PMP rarely rewards forceful unilateral action over collaborative process.'],
+        ['Choose the most forceful management action to signal decisiveness', 'PMP rarely rewards forceful unilateral action over collaborative process.'],
         ['Escalate every inconvenience immediately', 'Excessive escalation signals weak project management on PMP scenarios.'],
-        ['Ignore process whenever the question sounds urgent', 'Urgency is not a process exemption in PMP scenarios.'],
+        ['Treat urgency as a reason to bypass the required process', 'Urgency is not a process exemption in PMP scenarios.'],
       ],
       'PMP items test judgement under pressure. The best answer is often measured, collaborative, and process-aware.'),
     q(4250829, 'Career Skills', 'Exam Strategy and Simulation', 'Absolute answer smell',
@@ -713,8 +713,8 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Be cautious because extreme absolutes are usually wrong unless the scenario clearly supports them',
       [
         ['Choose it because confidence beats context', 'Confidence is not a PMP scoring criterion. Context-fit is.'],
-        ['Assume absolutes are required by every project plan', 'PMP scenarios reward judgement, not absolute rules.'],
-        ['Ignore the scenario and trust the strongest verb', 'PMP items are scenario-based; the verb without context is not the answer.'],
+        ['Treat absolute promises as normal project-plan discipline', 'PMP scenarios reward judgement, not absolute rules.'],
+        ['Choose the strongest-sounding verb even when the facts point elsewhere', 'PMP items are scenario-based; the verb without context is not the answer.'],
       ],
       'PMP scenario answers usually favour context, process, and judgement. Absolute language is often a warning light.'),
     q(4250830, 'Career Skills', 'Exam Strategy and Simulation', 'Process before heroics',
@@ -757,7 +757,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       [
         ['Approve the termination because the manager is annoyed', 'Annoyance is not a termination criterion. Documented cause and consistent practice are.'],
         ['Promise the employee the job is safe before reviewing facts', 'Premature promises bypass investigation and create their own credibility risk.'],
-        ['Ignore past practice because each manager gets a personal rulebook', 'Inconsistent discipline is the textbook discrimination-risk pattern.'],
+        ['Treat each manager's preference as overriding established past practice', 'Inconsistent discipline is the textbook discrimination-risk pattern.'],
       ],
       'SHRM judgement starts with facts, policy, consistency, and risk. Humane process is the guardrail, not bureaucracy confetti.'),
 
@@ -815,7 +815,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       [
         ['Blame managers and disable every old process overnight', 'Forced cutover without support breaks workflows and increases resistance.'],
         ['Buy another system before diagnosing adoption barriers', 'Replacing software does not address the people side of the change.'],
-        ['Assume technical go-live equals behaviour change', 'Technical readiness is necessary but not sufficient for adoption.'],
+        ['Treat technical launch as proof that users have changed their behaviour', 'Technical readiness is necessary but not sufficient for adoption.'],
       ],
       'Implementation success is not just software availability. People need readiness, support, reinforcement, and reason to use the new path.'),
     q(4250907, 'Career Skills', 'Organization Domain: Strategy, Structure, and Change', 'Strategic headcount ask',
@@ -824,7 +824,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       [
         ['Cut the newest employees automatically', 'Last-in-first-out without analysis can break the launch and create adverse-impact risk.'],
         ['Refuse to discuss cost because HR only handles feelings', 'HR has a strategic role in workforce cost decisions, not just a relational one.'],
-        ['Recommend layoffs without checking business-critical roles', 'Layoffs without role analysis can damage the very capability the business needs.'],
+        ['Recommend headcount cuts before mapping business-critical roles', 'Layoffs without role analysis can damage the very capability the business needs.'],
       ],
       'Strategic HR connects people decisions to business consequences. Cost actions need risk, capability, compliance, and timing analysis.'),
     q(4250908, 'Career Skills', 'Organization Domain: Strategy, Structure, and Change', 'Workforce planning',
@@ -833,7 +833,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       [
         ['Wait until resignations arrive with cake', 'Waiting eliminates the lead time needed to develop replacements.'],
         ['Rename junior employees as experts without preparation', 'Titles without capability do not solve a skills gap.'],
-        ['Assume the labour market will solve timing perfectly', 'External hiring alone is rarely fast enough for critical-role retirements.'],
+        ['Treat external hiring as perfectly timed to the organisation's need', 'External hiring alone is rarely fast enough for critical-role retirements.'],
       ],
       'Workforce planning is forward-looking. Critical skill risk deserves action before farewell emails start lining up.'),
     q(4250909, 'Career Skills', 'Organization Domain: Strategy, Structure, and Change', 'Merger anxiety',
@@ -896,7 +896,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Promotion data shows one group advances at lower rates despite similar tenure and performance ratings. What should HR do first?',
       'Analyse the promotion process, criteria, decision records, and possible barriers before recommending interventions',
       [
-        ['Assume the pattern is meaningless without looking closer', 'Patterns that meet adverse-impact thresholds require analysis, not dismissal.'],
+        ['Treat the visible pattern as a coincidence before checking the data', 'Patterns that meet adverse-impact thresholds require analysis, not dismissal.'],
         ['Announce a quota without understanding the process', 'Quotas without diagnosis can create legal exposure and may not address the cause.'],
         ['Delete the data because it creates questions', 'Deleting data destroys evidence and accountability.'],
       ],
@@ -937,8 +937,8 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Segment and investigate the data to understand timing, role, manager, selection, onboarding, and local factors',
       [
         ['Launch a companywide perk because perks are shiny', 'Companywide responses to local patterns waste resources and miss the cause.'],
-        ['Assume all turnover has the same cause', 'Different segments often have different causes; aggregation hides them.'],
-        ['Ignore the location pattern because averages look fine', 'Averages routinely mask localised problems. Segmentation reveals them.'],
+        ['Treat all turnover as having one shared cause', 'Different segments often have different causes; aggregation hides them.'],
+        ['Rely on the overall average even when one location shows a distinct pattern', 'Averages routinely mask localised problems. Segmentation reveals them.'],
       ],
       'HR metrics are prompts for diagnosis. Segmenting data helps separate hiring from onboarding, manager, pay, or workload problems.'),
     q(4250920, 'Career Skills', 'Data, Metrics, and Evidence-Based HR', 'Engagement hot spot',
@@ -956,7 +956,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       [
         ['Launch a companywide discipline campaign immediately', 'Discipline targeted at the wrong cohort wastes goodwill and does not fix the cause.'],
         ['Average the data until the pattern disappears', 'Averaging hides actionable signal.'],
-        ['Assume all absences have the same motivation', 'Different shifts often have different drivers; aggregation hides them.'],
+        ['Treat every absence as driven by the same motivation', 'Different shifts often have different drivers; aggregation hides them.'],
       ],
       'Metrics become useful when segmented. A targeted diagnosis beats a blanket response to a specific pattern.'),
 
@@ -967,7 +967,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       [
         ['Let each manager invent consequences by mood', 'Mood-based discipline is the textbook discrimination-risk pattern.'],
         ['Terminate both employees without reviewing circumstances', 'Mirror-image termination without facts loses individual context that may matter.'],
-        ['Ignore the prior case because consistency is inconvenient', 'Inconsistent treatment creates legal exposure and erodes trust.'],
+        ['Treat the prior case as irrelevant because it complicates the preferred outcome', 'Inconsistent treatment creates legal exposure and erodes trust.'],
       ],
       'Employee relations judgement rests on facts, consistency, documentation, and fairness. Similar cases should make HR pause and compare.'),
     q(4250923, 'Career Skills', 'Employee Relations Lab', 'Witness protection',
@@ -994,9 +994,9 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'A SHRM answer choice quickly satisfies a frustrated manager but skips facts, policy, employee impact, and legal risk. How should a test taker treat it?',
       'Be skeptical and favour the answer that balances business needs with compliance, fairness, and stakeholder impact',
       [
-        ['Pick it because speed is the only executive language', 'Speed without analysis is not what SHRM scenarios reward.'],
-        ['Assume HR should always say no to managers', 'HR is not the no department; it is the balanced-judgement department.'],
-        ['Choose the answer with the sternest tone', 'Tone is not a SHRM scoring criterion.'],
+        ['A fast manager-pleasing response with no fact check', 'Speed without analysis is not what SHRM scenarios reward.'],
+        ['Treat HR as a blocker rather than a risk-based advisor to managers', 'HR is not the no department; it is the balanced-judgement department.'],
+        ['The sternest-sounding response regardless of balance', 'Tone is not a SHRM scoring criterion.'],
       ],
       'SHRM exam judgement is balanced, not timid. Good HR advice serves the business by being fair, lawful, and practical.'),
   ],

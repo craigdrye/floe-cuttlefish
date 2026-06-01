@@ -99,7 +99,6 @@ export function buildLessonsForChapter(
     // reshuffle.
     const seed = (i + 1) * 2654435761
     const shuffled = shuffledQuestions(slice, seed >>> 0)
-
     const difficulties = shuffled.map((q) => defaultDifficultyFor(q, ageGroup))
     const avgDifficulty = difficulties.length > 0
       ? difficulties.reduce((acc, d) => acc + d, 0) / difficulties.length

@@ -801,7 +801,7 @@ export const philosophyYear3Prim103TopUpQuestions: Question[] = makeQuestionBank
     correct: 'Listen to both ideas and think about which makes sense',
     wrong: [
       miss('Decide both people must be silly', 'Different ideas are not silly; they help us think.', 'Listening helps you understand more.'),
-      miss('Pick the answer from whoever is loudest', 'Being loud does not make an answer correct.', 'Think about which idea makes sense.'),
+      miss('The loudest speaker has the strongest reason', 'Being loud does not make an answer correct.', 'Think about which idea makes sense.'),
       miss('Refuse to think about it at all', 'Thinking about different ideas helps you learn.', 'Consider both and use good reasons.'),
     ],
     lesson: 'People often have different ideas about big questions. Listening to both and thinking about the reasons helps you decide what makes sense. Talking about ideas is a great way to learn together.',

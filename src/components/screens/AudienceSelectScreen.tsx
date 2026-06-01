@@ -47,7 +47,7 @@ function loadFlippedFishSchool() {
 const ITEM_H = 52          // px per row in the drum
 const VISIBLE = 5          // rows visible (must be odd)
 const MIN_AGE = 8
-const MAX_AGE = 30
+const MAX_AGE = 70
 
 function AgeDrumWheel({ value, onChange }: { value: number; onChange: (n: number) => void }) {
   const containerRef = useRef<HTMLDivElement>(null)

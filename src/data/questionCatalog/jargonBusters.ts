@@ -506,7 +506,7 @@ const _defenseBudgetingJargonQuestionsBase: Question[] = makeQuestionBank('Caree
     'Provide a plain recommendation on whether the item is legally and strategically fundable, and why',
     [
       ['Write a longer bureaucracy appreciation essay', 'The colleague wants the opposite of ornamental writing.', 'The task is a concise, grounded recommendation.'],
-      ['Answer only whether we should fund it and ignore legality', 'Both policy judgment and legal authority matter.', 'John should cover can, should, and why.'],
+      ['Only the policy preference, with legal authority left out', 'Both policy judgment and legal authority matter.', 'John should cover can, should, and why.'],
       ['Say maybe to preserve flexibility', 'They asked for a clear adult sentence.', 'Give a direct conclusion with the governing rationale.'],
     ]),
 ])

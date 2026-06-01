@@ -10,13 +10,14 @@ import { inferCourseDepthCategory, type CourseDepthCategory } from '../../lib/co
 import type { AdultFocusOption } from '../../store/useStore'
 
 type LibraryMode = 'courses' | 'games'
-type GameCategory = 'Top' | 'Mystery' | 'Word' | 'Math' | 'Arcade'
+type GameCategory = 'Top' | 'Guess' | 'Mystery' | 'Word' | 'Math' | 'Arcade'
 
 interface Props {
   mode?: LibraryMode
 }
 
 type GameId = 'pong' | 'invaders' | 'present' | 'fight' | 'wordle' | 'quordle' | 'octordle' | 'connections' | 'letterboxed' | 'waffle' | 'g2048' | 'g2248' | 'nerdle' | 'sumplete' | 'sudoku' | 'kakuro' | 'rikudo'
+const SELF_DISCOVERY_TRACK_IDS = new Set(['iqTest', 'bigFivePersonality', 'mbtiPersonality', 'personalityTests', 'iqReasoningTests'])
 
 const STANDALONE_GAMES: Array<{
   id: string
@@ -211,7 +212,21 @@ const STANDALONE_GAMES: Array<{
   },
 ]
 
-const GAME_CATEGORIES: GameCategory[] = ['Top', 'Mystery', 'Word', 'Math', 'Arcade']
+const GAME_CATEGORIES: GameCategory[] = ['Top', 'Guess', 'Mystery', 'Word', 'Math', 'Arcade']
+
+const TOP_GUESS_TRACK_IDS = new Set([
+  'guessTheThing',
+  'guessTheScatMaster',
+  'guessTheTravelBug',
+  'guessTheAnatomy',
+  'guessTheEcologist',
+  'guessThePlants',
+  'guessTheMeme',
+])
+
+function isGuessTrack(track: { id: string }) {
+  return track.id.startsWith('guess')
+}
 
 function courseTierFromAdultFocus(focus: AdultFocusOption[]): CourseDepthCategory {
   if (focus.includes('Interview Prep')) return 'interview'
@@ -384,7 +399,7 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
   const [courseTier, setCourseTier] = useState<CourseDepthCategory>(() => defaultCourseTier)
   const [gameCategory, setGameCategory] = useState<GameCategory>('Top')
 
-  /** 30+ (career) learners with hub topics: streamlined tabs + depth row (Fundamentals / Qualifications / Interview). */
+  /** 23+ (career) learners with hub topics: streamlined tabs + depth row (Fundamentals / Qualifications / Interview). */
   const professionalCourseNav =
     mode === 'courses' && selectedAge === 'career' && selectedInterests.length > 0
 
@@ -416,15 +431,19 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
     setScreen('hub')
   }
 
+  const guessTracks = useMemo(() => allTracks.filter(isGuessTrack), [])
+
   // Filter helper: split tracks by their kind (guess-style = games, otherwise courses)
   const filterByKind = useCallback((tracks: ReturnType<typeof getFilteredTracks>) =>
     tracks.filter((track) => {
-      const isGame = track.id.startsWith('guess')
+      const isGame = isGuessTrack(track)
       return mode === 'games' ? isGame : !isGame
     }), [mode])
 
   const finalDisciplines = useMemo(() => {
-    const ageFilteredTracks = filterByKind(getFilteredTracks(selectedAge, selectedStageDetail, 'All'))
+    const ageFilteredTracks = mode === 'games'
+      ? guessTracks
+      : filterByKind(getFilteredTracks(selectedAge, selectedStageDetail, 'All'))
     const availableTopicIds = new Set(ageFilteredTracks.flatMap((track) => inferTrackTopicIds(track)))
 
     if (mode === 'games') {
@@ -453,18 +472,18 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
       'All',
       ...restrictedTopics.map((topic) => topic.label),
     ]
-  }, [filterByKind, mode, professionalCourseNav, selectedAge, selectedStageDetail, selectedInterests])
+  }, [filterByKind, guessTracks, mode, professionalCourseNav, selectedAge, selectedStageDetail, selectedInterests])
 
   const visibleTracks = useMemo(() => {
     const applyKind = (tracks: ReturnType<typeof getFilteredTracks>) => filterByKind(tracks)
 
     if (mode === 'games') {
       if (selectedDiscipline === 'All') {
-        return applyKind(getFilteredTracks(selectedAge, selectedStageDetail, 'All'))
+        return guessTracks
       }
       const topic = courseTopics.find((item) => item.label === selectedDiscipline)
-      if (topic) return applyKind(getPersonalizedTracks(selectedAge, selectedStageDetail, [topic.id]))
-      return applyKind(getFilteredTracks(selectedAge, selectedStageDetail, selectedDiscipline))
+      if (topic) return guessTracks.filter((track) => inferTrackTopicIds(track).includes(topic.id))
+      return guessTracks.filter((track) => track.discipline === selectedDiscipline)
     }
 
     if (selectedDiscipline === 'For you') {
@@ -498,7 +517,7 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
     if (topic) return applyKind(getPersonalizedTracks(selectedAge, selectedStageDetail, [topic.id]))
 
     return applyKind(getFilteredTracks(selectedAge, selectedStageDetail, selectedDiscipline))
-  }, [bossWins, filterByKind, mode, progress.workedTrackIds, selectedAge, selectedDiscipline, selectedInterests, selectedStageDetail])
+  }, [bossWins, filterByKind, guessTracks, mode, progress.workedTrackIds, selectedAge, selectedDiscipline, selectedInterests, selectedStageDetail])
 
   useEffect(() => {
     const neededCatalogKeys = Array.from(
@@ -540,9 +559,18 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
       .map((track) => {
         const catalogKey = questionCatalogKeyForTrack(track.id, track.ageGroup)
         const loadedCatalog = catalogKey ? loadedQuestionCatalogs[catalogKey] : null
-        const playableQuestionCount = loadedCatalog?.[track.id]
-          ? countPlayableQuestions(loadedCatalog[track.id])
+        const catalogQuestions = loadedCatalog?.[track.id]
+        const playableQuestionCount = catalogQuestions
+          ? countPlayableQuestions(catalogQuestions)
           : track.questionCount
+        const isSelfDiscoveryTrack = SELF_DISCOVERY_TRACK_IDS.has(track.id) || track.discipline === 'Self-discovery'
+
+        if (!isSelfDiscoveryTrack) {
+          if (!catalogKey) return null
+          if (loadedCatalog && !catalogQuestions) return null
+          if ((track.questionCount ?? 0) === 0 && !loadedCatalog) return null
+          if (loadedCatalog && playableQuestionCount === 0) return null
+        }
 
         if (loadedCatalog && catalogKey && playableQuestionCount === 0) return null
 
@@ -555,14 +583,39 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
   ), [loadedQuestionCatalogs, visibleTracks])
 
   const displayTracks = useMemo(() => {
-    if (!showCourseTierRow) return visibleTracksWithCounts
-    return visibleTracksWithCounts.filter((t) => inferCourseDepthCategory(t) === courseTier)
-  }, [visibleTracksWithCounts, showCourseTierRow, courseTier])
+    const tracks = showCourseTierRow
+      ? visibleTracksWithCounts.filter((t) => inferCourseDepthCategory(t) === courseTier)
+      : visibleTracksWithCounts
+
+    if (mode !== 'games') return tracks
+    if (gameCategory === 'Guess') return tracks
+    if (gameCategory === 'Top') return tracks.filter((track) => TOP_GUESS_TRACK_IDS.has(track.id))
+    return []
+  }, [visibleTracksWithCounts, showCourseTierRow, courseTier, mode, gameCategory])
 
   const displayStandaloneGames = useMemo(
     () => STANDALONE_GAMES.filter((game) => game.categories.includes(gameCategory)),
     [gameCategory],
   )
+
+  const playableGuessTracks = useMemo(
+    () => mode === 'games' ? displayTracks.filter((track) => track.status === 'playable') : [],
+    [displayTracks, mode],
+  )
+
+  const launchGuessTrack = useCallback((trackId: string) => {
+    setSelectedTrack(trackId)
+    setIndex(0)
+    setSelectedAnswerId(null)
+    setShowHint(false)
+    setScreen('guessGift')
+  }, [setIndex, setScreen, setSelectedAnswerId, setSelectedTrack, setShowHint])
+
+  const launchSurpriseGuess = useCallback(() => {
+    if (!playableGuessTracks.length) return
+    const pick = playableGuessTracks[Math.floor(Math.random() * playableGuessTracks.length)]
+    launchGuessTrack(pick.id)
+  }, [launchGuessTrack, playableGuessTracks])
 
   useEffect(() => {
     if (mode === 'games') {
@@ -719,7 +772,7 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
             )}
             <span className="track-count">
               {mode === 'games'
-                ? displayStandaloneGames.length
+                ? displayStandaloneGames.length + displayTracks.length
                 : displayTracks.length}{' '}
               available
             </span>
@@ -789,44 +842,71 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
                 </button>
               )
             })}
+            {mode === 'games' && playableGuessTracks.length > 1 && (
+              <button
+                key="guess-surprise"
+                className="track-card compact guess-game-card guess-surprise-card"
+                style={{ '--track': '#2ec4b6' } as React.CSSProperties}
+                onClick={launchSurpriseGuess}
+                type="button"
+              >
+                <span className="track-icon"><Sparkles size={28} /></span>
+                <span className="track-status">Mystery box</span>
+                <strong>Surprise mystery</strong>
+                <span>Let Floe grab a random visual clue from this shelf.</span>
+                <div className="track-meta">
+                  <span className="skill-tags">
+                    <small>Quick guess</small>
+                    <small>Random pick</small>
+                  </span>
+                  <span className="q-count-badge">
+                    <Gift size={10} /> {playableGuessTracks.reduce((sum, track) => sum + (track.questionCount || 0), 0)} mysteries
+                  </span>
+                </div>
+              </button>
+            )}
             {displayTracks.map((track) => (
               <button
                 key={`browse-${track.id}`}
-                className={`track-card compact ${track.status === 'soon' ? 'locked' : ''}`}
+                className={`track-card compact ${mode === 'games' ? 'guess-game-card' : ''} ${track.status === 'soon' ? 'locked' : ''}`}
                 style={{ '--track': disciplineColors[track.discipline] || '#64748b' } as React.CSSProperties}
                 onClick={() => {
                   if (track.status === 'playable') {
-                    // Track that this course has been worked on
-                    if (!progress.workedTrackIds?.includes(track.id)) {
+                    // Guess games are arcade-style one-off loops; course progress should stay with courses.
+                    if (mode !== 'games' && !progress.workedTrackIds?.includes(track.id)) {
                       setProgress((prev) => ({
                         ...prev,
                         workedTrackIds: [...(prev.workedTrackIds || []), track.id],
                       }))
                     }
-                    setSelectedTrack(track.id)
-                    setIndex(0)
-                    setSelectedAnswerId(null)
-                    setShowHint(false)
-                    setScreen('map')
+                    if (mode === 'games') {
+                      launchGuessTrack(track.id)
+                    } else {
+                      setSelectedTrack(track.id)
+                      setIndex(0)
+                      setSelectedAnswerId(null)
+                      setShowHint(false)
+                      setScreen('map')
+                    }
                   }
                 }}
               >
-                <span className="track-icon">{track.icon}</span>
-                <span className="track-status">{track.discipline}</span>
+                <span className="track-icon">{mode === 'games' ? <Gift size={26} /> : track.icon}</span>
+                <span className="track-status">{mode === 'games' ? 'Mystery box' : track.discipline}</span>
                 <strong>{track.title}</strong>
                 <span>{track.subtitle}</span>
                 <div className="track-meta">
                   <span className="skill-tags">
-                    {inferTrackTopicIds(track).slice(0, 2).map((topicId) => (
+                    {mode !== 'games' && inferTrackTopicIds(track).slice(0, 2).map((topicId) => (
                       <small key={`${track.id}-${topicId}`} className="topic-tag">{topicLabelForId(topicId)}</small>
                     ))}
-                    {track.skills.map((skill) => (
+                    {track.skills.slice(0, mode === 'games' ? 2 : track.skills.length).map((skill) => (
                       <small key={`${track.id}-${skill}`}>{skill}</small>
                     ))}
                   </span>
                   {track.questionCount && (
                     <span className="q-count-badge">
-                      <Star size={10} /> {track.questionCount} questions
+                      {mode === 'games' ? <Gift size={10} /> : <Star size={10} />} {track.questionCount} {mode === 'games' ? 'mysteries' : 'questions'}
                     </span>
                   )}
                 </div>

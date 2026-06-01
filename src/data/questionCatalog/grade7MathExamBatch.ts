@@ -1,4 +1,5 @@
 import { makeQuestionBank } from './base'
+import type { Question } from './types'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
@@ -9,6 +10,13 @@ const q = (
   prompt: string,
   correct: string,
   wrong: [string, string, string][],
+  extra: {
+    lesson?: string
+    solution?: string
+    mentorHint?: string
+    alternatePrompts?: Question['alternatePrompts']
+    challengeRating?: Question['challengeRating']
+  } = {},
 ) => ({
   id,
   chapter,
@@ -16,8 +24,12 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
+  lesson: extra.lesson ??
     'Coverage source: NYSED and STAAR Grade 7 math raw collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  solution: extra.solution,
+  mentorHint: extra.mentorHint,
+  alternatePrompts: extra.alternatePrompts,
+  challengeRating: extra.challengeRating,
   source: 'Generated from NYSED/STAAR Grade 7 math coverage',
 })
 
@@ -57,11 +69,20 @@ export const grade7MathExamBatchQuestions = makeQuestionBank('Mathematics', [
     miss('pi d^2', 'That squares the diameter incorrectly.', 'Use diameter times pi, or 2 pi r.'),
     miss('2 r^2', 'That misses pi and squares the radius.', 'The circle constant is pi.'),
   ]),
-  q(432008, 'Probability', 'Simple probability', 'A bag has 3 red marbles and 7 blue marbles. What is the probability of drawing a red marble?', '3/10', [
+  q(432008, 'Probability', 'Simple probability', 'A bag has 3 red marbles and 7 blue marbles mixed together. If every marble is equally likely to be drawn, what is the probability of drawing a red marble on one try?', '3/10', [
     miss('3/7', 'That compares red to blue instead of red to total.', 'Probability uses favorable outcomes over total outcomes.'),
     miss('7/10', 'That is the probability of blue.', 'The question asks for red.'),
     miss('1/3', 'That does not use the 10 total marbles.', 'Add all marbles first.'),
-  ]),
+  ], {
+    lesson: 'Simple probability is favorable outcomes divided by total possible outcomes. Here the favorable outcomes are the 3 red marbles. The total possible outcomes are all 10 marbles in the bag, so the chance of red is 3 out of 10.',
+    solution: 'Add the marbles to get the total: 3 red + 7 blue = 10 marbles. The probability of red is favorable over total, so it is 3/10.',
+    mentorHint: 'Use red marbles over all marbles, not red over blue.',
+    alternatePrompts: {
+      plain: 'There are 3 red marbles and 7 blue marbles in a bag. What fraction of all the marbles are red?',
+      teaching: 'Probability is a fraction: wanted outcomes over all outcomes. Which marbles are wanted, and how many marbles are possible?',
+    },
+    challengeRating: 3,
+  }),
   q(432009, 'Data', 'Median', 'What is the median of 4, 9, 2, 7, and 12?', '7', [
     miss('6.8', 'That is the mean, not the median.', 'Median is the middle value after ordering.'),
     miss('4', 'That is not the middle after sorting.', 'Sort the list first.'),

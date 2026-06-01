@@ -300,6 +300,7 @@ export function makeSimpleQuestion(
   source?: string,
   generated?: boolean,
   mentorHint?: string,
+  extra?: Partial<Pick<Question, 'alternatePrompts' | 'challengeRating' | 'solution'>>,
 ): Question {
   const scaffold = defaultQuestionScaffold(topic, title, prompt)
   return {
@@ -316,11 +317,13 @@ export function makeSimpleQuestion(
     // no signal and clutters the prompt screen. Questions that need a
     // bespoke setup should set it explicitly via the Question literal.
     prompt,
+    alternatePrompts: extra?.alternatePrompts,
     fieldNote: scaffold.fieldNote,
     mentorHint: mentorHint ?? scaffold.mentorHint,
     answers: answerSet(correct, wrong),
-    solution: correct,
+    solution: extra?.solution ?? correct,
     lesson,
+    challengeRating: extra?.challengeRating,
     xp: 10,
   }
 }
@@ -338,6 +341,9 @@ export function makeQuestionBank(
     source?: string
     generated?: boolean
     mentorHint?: string
+    solution?: string
+    alternatePrompts?: Question['alternatePrompts']
+    challengeRating?: Question['challengeRating']
   }>,
 ): Question[] {
   return definitions.map((definition) =>
@@ -353,6 +359,11 @@ export function makeQuestionBank(
       definition.source,
       definition.generated,
       definition.mentorHint,
+      {
+        alternatePrompts: definition.alternatePrompts,
+        challengeRating: definition.challengeRating,
+        solution: definition.solution,
+      },
     ),
   )
 }
@@ -370,6 +381,10 @@ export function buildCycledMathQuiz(
     mentorHint: string
     correct: string
     wrong: [string, string, string][]
+    lesson?: string
+    solution?: string
+    alternatePrompts?: Question['alternatePrompts']
+    challengeRating?: Question['challengeRating']
     source?: string
   }>,
 ) {
@@ -394,8 +409,10 @@ export function buildCycledMathQuiz(
       fieldNote: blueprint.fieldNote,
       mentorHint: blueprint.mentorHint,
       answers: answerSet(blueprint.correct, blueprint.wrong),
-      solution: blueprint.correct,
-      lesson,
+      solution: blueprint.solution ?? blueprint.correct,
+      lesson: blueprint.lesson ?? lesson,
+      alternatePrompts: blueprint.alternatePrompts,
+      challengeRating: blueprint.challengeRating,
       xp: index % 10 === 9 ? 16 : 10,
     }
     return question

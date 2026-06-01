@@ -12,6 +12,9 @@ type Concept = {
   correct: string
   wrong: WrongTuple[]
   lesson: string
+  solution?: string
+  alternatePrompts?: Question['alternatePrompts']
+  challengeRating?: Question['challengeRating']
 }
 
 type ScenarioLead = {
@@ -29,6 +32,7 @@ function q(
   wrong: WrongTuple[],
   lesson: string,
   mentorHint?: string,
+  extra?: Partial<Pick<Question, 'alternatePrompts' | 'challengeRating' | 'solution'>>,
 ): Question {
   return makeSimpleQuestion(
     id,
@@ -42,6 +46,7 @@ function q(
     SOURCE,
     undefined,
     mentorHint,
+    extra,
   )
 }
 
@@ -147,6 +152,11 @@ function expandTrack(startId: number, count: number, concepts: Concept[], leads:
       concept.wrong,
       concept.lesson,
       mentorHintForConcept(concept),
+      {
+        alternatePrompts: concept.alternatePrompts,
+        challengeRating: concept.challengeRating,
+        solution: concept.solution,
+      },
     )
   })
 }
@@ -199,7 +209,7 @@ const cpaConcepts: Concept[] = [
     correct: 'Practice comparing facts, relationships, and evidence rather than only memorizing definitions',
     wrong: [
       ['Memorize only the glossary term and skip scenario practice', 'Analysis tasks require relationships and fact patterns, not definition recall alone.'],
-      ['Ignore the blueprint because every task is tested the same way', 'The blueprint skill level signals how deeply the candidate may need to use the content.'],
+      ['Blueprint skill levels are administrative labels with no effect on study depth', 'The blueprint skill level signals how deeply the candidate may need to use the content.'],
       ['Study only exam logistics because skill levels are administrative', 'Logistics matter, but skill tags describe the professional work being assessed.'],
     ],
     lesson: 'CPA blueprints are not just topic lists. Area, task, item type, and skill level should shape the study drill.',
@@ -222,7 +232,7 @@ const cpaConcepts: Concept[] = [
     prompt: 'a service agreement gives the customer exclusive use of an identified server for three years and the right to direct how it is used. What should be evaluated?',
     correct: 'Whether the arrangement contains a lease because the customer controls an identified asset',
     wrong: [
-      ['Skip lease accounting because the contract title says service agreement', 'Labels do not control when the customer controls an identified asset.'],
+      ['A service-agreement title prevents the arrangement from containing a lease', 'Labels do not control when the customer controls an identified asset.'],
       ['Record revenue because a server is technologically advanced', 'Technology level does not determine lessee accounting.'],
       ['Classify it only by whether the vendor owns the building', 'Ownership of the building is beside the point; control of the identified server matters.'],
     ],
@@ -247,7 +257,7 @@ const cpaConcepts: Concept[] = [
     correct: 'Consider recognizing an adjustment because the event gives evidence about an existing condition',
     wrong: [
       ['Disclose only because all later events are nonrecognized events', 'Later events can require recognition when they confirm year-end conditions.'],
-      ['Ignore it because the financial statements have not been issued', 'The pre-issuance period is exactly when subsequent events are evaluated.'],
+      ['Pre-issuance bankruptcy evidence cannot affect statements until the next reporting period', 'The pre-issuance period is exactly when subsequent events are evaluated.'],
       ['Record a gain contingency for the expected insurance recovery automatically', 'Gain contingencies have more restrictive recognition rules and cannot erase the loss analysis.'],
     ],
     lesson: 'Subsequent events are sorted by whether they illuminate a condition that existed at the reporting date.',
@@ -308,7 +318,7 @@ const cpaConcepts: Concept[] = [
     wrong: [
       ['Rely only on management saying customers usually pay', 'Management representation alone is weaker than external evidence.'],
       ['Test only payroll approvals because payroll is recurring', 'Payroll does not address receivable existence or collectability.'],
-      ['Skip confirmations because customers might be busy', 'Convenience is not an evidence-quality rationale.'],
+      ['Customer inconvenience makes receivable confirmations inappropriate evidence', 'Convenience is not an evidence-quality rationale.'],
     ],
     lesson: 'External evidence is often persuasive for receivables, but exceptions and nonresponses still need audit follow-up.',
   },
@@ -368,7 +378,7 @@ const cpaConcepts: Concept[] = [
     wrong: [
       ['Use the position because the client signs the return', 'Client signature does not eliminate preparer responsibilities.'],
       ['Avoid documenting the issue so it cannot be questioned', 'Lack of documentation increases professional risk.'],
-      ['Assume all aggressive positions are fraud', 'Some positions may be supportable, but they require authority and judgment.'],
+      ['Every aggressive tax position is fraudulent regardless of authority', 'Some positions may be supportable, but they require authority and judgment.'],
     ],
     lesson: 'REG professional responsibility tests authority, support, disclosure, and documentation rather than client pressure.',
   },
@@ -427,8 +437,8 @@ const cpaConcepts: Concept[] = [
     correct: 'Read the requirement, identify relevant exhibits, and build a labeled calculation using only needed facts',
     wrong: [
       ['Use every number in every exhibit so nothing is wasted', 'Simulations include distractors; using every number often creates errors.'],
-      ['Skip the requirement and start calculating immediately', 'The requirement determines which facts matter.'],
-      ['Answer only the first cell because partial credit is impossible', 'Task-based simulations can award partial credit, so organized work matters.'],
+      ['A simulation calculation should start before the requirement is identified', 'The requirement determines which facts matter.'],
+      ['A first-cell-only response with no organized support', 'Task-based simulations can award partial credit, so organized work matters.'],
     ],
     lesson: 'TBS success depends on requirement control, exhibit triage, labeled assumptions, and calm partial-credit execution.',
   },
@@ -440,7 +450,7 @@ const cpaConcepts: Concept[] = [
     wrong: [
       ['Take BAR first solely because it has a shorter acronym', 'Acronym length is not a readiness factor.'],
       ['Never take FAR early because it is important', 'Importance is a reason to plan deliberately, not avoid it.'],
-      ['Ignore prerequisites because all sections test identical content', 'The sections overlap differently; discipline choice can affect sequence.'],
+      ['CPA sections test identical content, so prerequisite knowledge cannot affect sequence', 'The sections overlap differently; discipline choice can affect sequence.'],
     ],
     lesson: 'CPA section order should reflect overlap, personal strengths, deadlines, and the selected Discipline.',
   },
@@ -450,7 +460,7 @@ const cpaConcepts: Concept[] = [
     prompt: 'revenue spiked in the final week and sales staff had unusual override access. What should the audit team do?',
     correct: 'Treat it as a fraud-risk indicator and design procedures responsive to cutoff and override risks',
     wrong: [
-      ['Assume strong sales prove the client is low risk', 'Unexpected spikes near period-end can increase risk rather than reduce it.'],
+      ['Strong period-end sales prove the client is low risk', 'Unexpected spikes near period-end can increase risk rather than reduce it.'],
       ['Wait until the audit report is issued to investigate', 'Risk responses must occur before forming the opinion.'],
       ['Test only petty cash because fraud is always small', 'Fraud risk is not limited to petty cash and often involves revenue or override.'],
     ],
@@ -488,7 +498,7 @@ const cpaConcepts: Concept[] = [
     wrong: [
       ['Accept the explanation because analytical procedures are optional decorations', 'Unexpected analytical results require follow-up when used in audit planning or substantive work.'],
       ['Change the prior-year financial statements without evidence', 'Prior-year changes require support and are not a response to vague current explanations.'],
-      ['Ignore the variance because ratios are not journal entries', 'Analytical procedures are evidence tools even though they are not entries.'],
+      ['Ratio variances are not audit evidence because they are not journal entries', 'Analytical procedures are evidence tools even though they are not entries.'],
     ],
     lesson: 'Analytical procedures are useful only if unexpected relationships are investigated instead of admired from a distance.',
   },
@@ -512,7 +522,7 @@ const cpaConcepts: Concept[] = [
     wrong: [
       ['Elect S status anyway because all small businesses qualify', 'S corporation rules contain specific eligibility limits.'],
       ['Convert automatically to a partnership without legal action', 'Entity classification and legal form do not change automatically.'],
-      ['Ignore shareholders because only revenue determines tax status', 'Ownership is central to S corporation eligibility.'],
+      ['Only revenue determines S corporation tax status, not shareholder eligibility', 'Ownership is central to S corporation eligibility.'],
     ],
     lesson: 'Entity tax questions often start with eligibility before moving to allocations, basis, or distributions.',
   },
@@ -523,7 +533,7 @@ const cpaConcepts: Concept[] = [
     correct: 'Follow the instruction exactly and check signs before submitting',
     wrong: [
       ['Use positive numbers for every answer because that looks cleaner', 'The scoring format may require signs exactly as instructed.'],
-      ['Skip the instruction because journal entries imply direction automatically', 'TBS grids often score signs and formats separately from concepts.'],
+      ['Journal-entry direction makes separate TBS sign instructions unnecessary', 'TBS grids often score signs and formats separately from concepts.'],
       ['Enter text explanations into numeric cells', 'Wrong cell type can lose credit even when the concept is understood.'],
     ],
     lesson: 'Simulation craft includes units, signs, rounding, and answer format. Small mechanics can protect hard-earned knowledge.',
@@ -538,8 +548,8 @@ const barConcepts: Concept[] = [
     correct: 'Use the call to identify the subject and legal task before sorting facts',
     wrong: [
       ['Write about every possible claim because all facts are equally tested', 'The call narrows the scoring task. Extra issue wandering burns time.'],
-      ['Pick the doctrine that appears first chronologically', 'Chronology is not a substitute for the question asked.'],
-      ['Ignore procedural posture because facts are more interesting', 'Procedural posture often decides the answer.'],
+      ['The first doctrine mentioned chronologically controls the objection issue', 'Chronology is not a substitute for the question asked.'],
+      ['Procedural posture rarely affects which objection should be sustained', 'Procedural posture often decides the answer.'],
     ],
     lesson: 'Bar performance starts with the call, then the rule, then the facts that matter to that rule.',
   },
@@ -670,7 +680,7 @@ const barConcepts: Concept[] = [
     correct: 'Analyze each police step chronologically under the relevant Fourth, Fifth, or Sixth Amendment rule',
     wrong: [
       ['Apply only the trial right to counsel to every police action', 'Different constitutional protections attach at different points.'],
-      ['Assume one valid stop validates every later search and statement', 'Each step can require its own justification.'],
+      ['One valid stop validates every later search and statement', 'Each step can require its own justification.'],
       ['Use contract formation rules because officers made requests', 'Police procedure is not contract law.'],
     ],
     lesson: 'Criminal procedure is a timeline subject. Place each government action before choosing the rule.',
@@ -683,7 +693,7 @@ const barConcepts: Concept[] = [
     wrong: [
       ['Give title to whoever paid the higher price', 'Recording acts do not award title by purchase price.'],
       ['Resolve it with hearsay exceptions', 'The dispute is priority in land conveyancing, not evidence.'],
-      ['Assume first in time always wins under every statute', 'Notice and race-notice statutes can alter first-in-time results.'],
+      ['First in time always wins under every recording statute', 'Notice and race-notice statutes can alter first-in-time results.'],
     ],
     lesson: 'Recording-act questions require the statute type, notice status, and recording order.',
   },
@@ -717,8 +727,8 @@ const barConcepts: Concept[] = [
     prompt: 'a July 2026 examinee asks whether legacy MEE subject lists remain unchanged. What is the best study response?',
     correct: 'Check the current NCBE subject outline and jurisdiction adoption status because tested subjects are changing during the transition',
     wrong: [
-      ['Use a 2019 outline without checking updates', 'The 2026 transition changes tested subject expectations.'],
-      ['Ignore NCBE materials because commercial outlines never age', 'Official outlines control the exam scope more directly than stale prep notes.'],
+      ['A 2019 subject outline remains authoritative for July 2026 scope', 'The 2026 transition changes tested subject expectations.'],
+      ['Commercial outlines never become stale during NCBE transition periods', 'Official outlines control the exam scope more directly than stale prep notes.'],
       ['Study only local law and skip multistate subjects', 'Jurisdiction components may matter, but UBE components still test multistate material.'],
     ],
     lesson: 'Bar prep in 2026 needs date-specific scope control because legacy and NextGen materials overlap during transition.',
@@ -742,8 +752,8 @@ const barConcepts: Concept[] = [
     correct: 'Synthesize the controlling rule and apply the relevant File facts to each element',
     wrong: [
       ['Quote both cases at length with no application', 'Rule dumping without fact application leaves points on the table.'],
-      ['Choose the case with the shorter name automatically', 'Case name length is not a legal relevance test.'],
-      ['Ignore the Library and rely on memory', 'MPT tasks are closed-universe; Library authority controls.'],
+      ['The case with the shorter name supplies the controlling rule', 'Case name length is not a legal relevance test.'],
+      ['Outside memorized law overrides the Library in a closed-universe MPT', 'MPT tasks are closed-universe; Library authority controls.'],
     ],
     lesson: 'MPT graders reward usable rule synthesis connected to client facts, not decorative case summaries.',
   },
@@ -765,8 +775,8 @@ const barConcepts: Concept[] = [
     prompt: 'an answer states a correct rule, but it addresses damages when the call asks only formation. How should it be treated?',
     correct: 'Eliminate it as true but irrelevant to the legal task asked',
     wrong: [
-      ['Select it because any true rule is the best answer', 'MBE answers must answer the call, not merely state law.'],
-      ['Select it if it is the longest answer', 'Length is not a reliability cue.'],
+      ['A true rule that answers the wrong legal issue', 'MBE answers must answer the call, not merely state law.'],
+      ['A longer answer that adds detail without answering formation', 'Length is not a reliability cue.'],
       ['Eliminate all answers containing legal rules', 'The right answer usually contains the right legal rule for the call.'],
     ],
     lesson: 'A polished distractor can be legally true and still wrong because it answers a different question.',
@@ -790,7 +800,7 @@ const barConcepts: Concept[] = [
     correct: 'Classify the present estate and future interests before applying any validity rule',
     wrong: [
       ['Treat it as a contract offer because B might graduate', 'This is a conveyance of property interests, not offer acceptance.'],
-      ['Ignore B because future interests never matter', 'Future interests are directly tested in property.'],
+      ['B has no property interest because future interests never matter', 'Future interests are directly tested in property.'],
       ['Apply hearsay because the grant uses words', 'Written conveyance language is not being offered as courtroom hearsay here.'],
     ],
     lesson: 'Real property questions often become easier after drawing the present estate and future interests.',
@@ -861,8 +871,8 @@ const barConcepts: Concept[] = [
     prompt: 'two answer choices state the general rule, but one ignores a fact triggering an exception. What should the examinee do?',
     correct: 'Choose the answer that accounts for the exception triggered by the facts',
     wrong: [
-      ['Choose the broadest rule because broad answers feel safer', 'Broad rules often fail when an exception is the tested point.'],
-      ['Ignore exception facts because they are usually decorative', 'Bar examiners include facts to change legal consequences.'],
+      ['The broadest general rule controls even when an exception fact appears', 'Broad rules often fail when an exception is the tested point.'],
+      ['Exception-triggering facts are usually decorative rather than legally operative', 'Bar examiners include facts to change legal consequences.'],
       ['Select both answers even on single-best items', 'Single-best MBE items require one answer.'],
     ],
     lesson: 'Many MBE traps are correct general rules that fail under the specific exception in the stem.',
@@ -877,7 +887,7 @@ const pmpConcepts: Concept[] = [
     correct: 'Facilitate a collaborative discussion to understand the conflict and seek an agreed resolution',
     wrong: [
       ['Escalate immediately to the CEO before understanding the issue', 'Premature escalation skips the project manager responsibility to facilitate and analyze.'],
-      ['Ignore the conflict because teams should self-correct eventually', 'Unmanaged conflict can damage delivery and stakeholder trust.'],
+      ['Team conflict always self-corrects without project manager facilitation', 'Unmanaged conflict can damage delivery and stakeholder trust.'],
       ['Update the cost baseline to hide the delay', 'Baselines are not used to conceal conflict or performance issues.'],
     ],
     lesson: 'PMP scenarios usually prefer analyze, collaborate, and resolve at the right level before escalating.',
@@ -914,7 +924,7 @@ const pmpConcepts: Concept[] = [
     wrong: [
       ['Remove the stakeholder from the register because they are negative', 'Resistance is a reason to engage, not erase.'],
       ['Send only technical specifications and avoid benefit discussion', 'The concern is value and impact, not just technical design.'],
-      ['Assume the sponsor will force support without communication', 'Sponsor authority does not replace stakeholder engagement.'],
+      ['Sponsor authority alone will create stakeholder support without communication', 'Sponsor authority does not replace stakeholder engagement.'],
     ],
     lesson: 'Stakeholder work connects expectations, value, influence, and communication strategy.',
   },
@@ -1068,7 +1078,7 @@ const pmpConcepts: Concept[] = [
     prompt: 'a new privacy regulation affects data collected by the project. What should the PM do?',
     correct: 'Assess compliance impact, engage appropriate experts, and update plans or backlog items as needed',
     wrong: [
-      ['Ignore the regulation until after release', 'Compliance risks should be addressed while changes are still feasible.'],
+      ['Privacy regulation should be handled only after release', 'Compliance risks should be addressed while changes are still feasible.'],
       ['Ask developers to interpret the law alone', 'Legal or compliance expertise may be needed for regulatory impact.'],
       ['Remove all data features without analysis', 'The response should be proportionate and informed.'],
     ],
@@ -1080,7 +1090,7 @@ const pmpConcepts: Concept[] = [
     prompt: 'a competitor releases a feature that changes customer expectations mid-project. What is the best PM action?',
     correct: 'Assess impact on business value with stakeholders and adapt scope or backlog through governance',
     wrong: [
-      ['Ignore the market because the original plan is approved', 'Business value can change when the external environment changes.'],
+      ['An approved original plan makes market changes irrelevant to business value', 'Business value can change when the external environment changes.'],
       ['Add every competitor feature immediately', 'Reaction without prioritization can destroy focus and value.'],
       ['Cancel all risk management because the issue is external', 'External changes are part of business-environment risk.'],
     ],
@@ -1104,7 +1114,7 @@ const pmpConcepts: Concept[] = [
     prompt: 'team members describe the project goal in conflicting ways during a review. What should the project leader do?',
     correct: 'Reestablish a shared vision with key stakeholders and align team understanding',
     wrong: [
-      ['Assume conflicting descriptions prove the project is complete', 'Misalignment usually means the vision needs clarification.'],
+      ['Conflicting goal descriptions prove the project is complete', 'Misalignment usually means the vision needs clarification.'],
       ['Ask each team member to pursue their own goal independently', 'Independent goals can fragment value delivery.'],
       ['Update only the risk register and avoid conversation', 'Documentation alone does not create shared understanding.'],
     ],
@@ -1180,7 +1190,7 @@ const shrmConcepts: Concept[] = [
     correct: 'Gather relevant facts, review policy and risk, and determine whether investigation or interim action is needed',
     wrong: [
       ['Terminate immediately because the manager is frustrated', 'HR should not support adverse action without facts, policy basis, and risk review.'],
-      ['Ignore the complaint because it is vague', 'A vague complaint may still require fact-finding.'],
+      ['A vague complaint cannot require fact-finding', 'A vague complaint may still require fact-finding.'],
       ['Promise the employee a specific outcome before investigating', 'Predetermining outcomes undermines fairness and credibility.'],
     ],
     lesson: 'SHRM situational judgment often rewards lawful, fair, business-aware fact gathering before action.',
@@ -1217,7 +1227,7 @@ const shrmConcepts: Concept[] = [
     wrong: [
       ['Approve the harsher action for the less popular employee', 'Popularity is not a legitimate discipline factor.'],
       ['Forbid all discipline if perfect consistency is impossible', 'Differences can be justified by relevant facts.'],
-      ['Skip documentation to preserve manager flexibility', 'Documentation is central to fair and defensible employee relations.'],
+      ['Manager flexibility is better protected by leaving discipline undocumented', 'Documentation is central to fair and defensible employee relations.'],
     ],
     lesson: 'Discipline should be proportionate, documented, consistent, and connected to policy and facts.',
   },
@@ -1228,7 +1238,7 @@ const shrmConcepts: Concept[] = [
     correct: 'Retention drivers such as career paths, development, recognition, manager quality, and competitive rewards',
     wrong: [
       ['Increase pay only and ignore exit themes', 'Pay may matter, but the data points to broader retention drivers.'],
-      ['Assume turnover is healthy because all teams change', 'Turnover among scarce roles can threaten strategy.'],
+      ['All turnover among scarce roles is healthy because every team changes', 'Turnover among scarce roles can threaten strategy.'],
       ['Eliminate development programs to reduce cost', 'Development may be part of the retention solution.'],
     ],
     lesson: 'Total rewards and retention require diagnosing the business problem before choosing a lever.',
@@ -1299,7 +1309,7 @@ const shrmConcepts: Concept[] = [
     prompt: 'nonexempt employees answer work messages after hours and do not record the time. What should HR address?',
     correct: 'Off-the-clock work risk, timekeeping expectations, manager practices, and pay correction if needed',
     wrong: [
-      ['Ignore the time because messages were short', 'Short work periods can still be compensable depending on facts and law.'],
+      ['Short after-hours messages are never compensable work time', 'Short work periods can still be compensable depending on facts and law.'],
       ['Reclassify everyone as exempt without duties review', 'Exemption classification requires legal criteria, not convenience.'],
       ['Delete the messages to avoid payroll questions', 'Destroying evidence and avoiding pay obligations increases risk.'],
     ],
@@ -1347,8 +1357,8 @@ const shrmConcepts: Concept[] = [
     prompt: 'turnover is high in one unit, but compensation is market-competitive. What data should HR review next?',
     correct: 'Manager practices, engagement, workload, promotion rates, exit themes, and demographic patterns',
     wrong: [
-      ['Assume pay is always the only turnover cause', 'Turnover has multiple drivers beyond compensation.'],
-      ['Ignore unit-level differences because company turnover is average', 'Localized hotspots can still create business risk.'],
+      ['Pay is always the only cause of employee turnover', 'Turnover has multiple drivers beyond compensation.'],
+      ['Average company turnover means unit-level hotspots are not business risks', 'Localized hotspots can still create business risk.'],
       ['Stop collecting exit data because it is uncomfortable', 'Evidence is needed to diagnose and act.'],
     ],
     lesson: 'Evidence-based HR asks which metric answers the business question and what additional data reduces uncertainty.',
@@ -1372,7 +1382,7 @@ const shrmConcepts: Concept[] = [
     correct: 'Plan a fair investigation with interviews, document review, credibility assessment, and anti-retaliation reminders',
     wrong: [
       ['Close the case because the manager denied the allegation', 'Denial is evidence to consider, not a reason to skip investigation.'],
-      ['Assume the complaint is true without fact-finding', 'Fair process requires assessing evidence.'],
+      ['An allegation is established as true before evidence is assessed', 'Fair process requires assessing evidence.'],
       ['Interview only friends of the manager', 'Biased witness selection undermines reliability.'],
     ],
     lesson: 'Employee relations investigations separate allegations, facts, credibility, policy findings, and recommendations.',
@@ -1383,7 +1393,7 @@ const shrmConcepts: Concept[] = [
     prompt: 'after an employee complains, the manager removes desirable assignments with no documented reason. What should HR assess?',
     correct: 'Potential retaliation and whether there is a legitimate, documented business reason for the change',
     wrong: [
-      ['Ignore it because assignments are always discretionary', 'Discretion can still be used in a retaliatory way.'],
+      ['Discretionary assignments can never become retaliatory', 'Discretion can still be used in a retaliatory way.'],
       ['Tell the employee complaints always reduce opportunities', 'That statement would be direct retaliation risk.'],
       ['Focus only on whether the original complaint was proven', 'Retaliation can occur even if the original complaint is not substantiated.'],
     ],
@@ -1419,7 +1429,7 @@ const shrmConcepts: Concept[] = [
     prompt: 'new hires leave within 45 days and surveys show unclear expectations. What should HR examine?',
     correct: 'Onboarding, role clarity, manager check-ins, realistic job previews, and early support',
     wrong: [
-      ['Assume all early turnover is unavoidable', 'Early turnover often reveals process or expectation gaps.'],
+      ['All early turnover is unavoidable regardless of onboarding quality', 'Early turnover often reveals process or expectation gaps.'],
       ['Increase recruiting volume without fixing onboarding', 'More hiring will not solve early attrition drivers.'],
       ['Delay manager involvement until annual review', 'Early manager support is critical.'],
     ],
@@ -1467,8 +1477,8 @@ const shrmConcepts: Concept[] = [
     prompt: 'selection rates suggest one group is selected at substantially less than four-fifths of the highest group rate. What should HR do?',
     correct: 'Treat it as an adverse-impact flag requiring analysis, validation review, and possible process correction',
     wrong: [
-      ['Assume the process is illegal without further analysis', 'The four-fifths rule is a screening flag, not a final legal conclusion by itself.'],
-      ['Ignore it because the rule is only math', 'The metric points to a possible fairness and legal issue.'],
+      ['A four-fifths flag conclusively proves the process is illegal', 'The four-fifths rule is a screening flag, not a final legal conclusion by itself.'],
+      ['Selection-rate math has no connection to fairness or legal risk', 'The metric points to a possible fairness and legal issue.'],
       ['Fix it by changing scores after selection is complete with no basis', 'Manipulating results is not a defensible validation strategy.'],
     ],
     lesson: 'Adverse-impact metrics are diagnostic tools that should trigger evidence-based review.',
@@ -1480,10 +1490,16 @@ const shrmConcepts: Concept[] = [
     correct: 'Consistency, plausibility, corroboration, motive, opportunity to observe, and documentation',
     wrong: [
       ['Believe the higher-ranking person automatically', 'Rank is not a credibility factor by itself.'],
-      ['Pick the account that is shorter', 'Brevity does not establish reliability.'],
+      ['The shorter witness account is more credible by default', 'Brevity does not establish reliability.'],
       ['Avoid findings whenever accounts conflict', 'Investigations often require reasoned credibility determinations.'],
     ],
-    lesson: 'Investigation findings should explain how evidence and credibility factors support the conclusion.',
+    lesson: 'Credibility assessment is how HR handles conflicting accounts without guessing or just choosing the loudest person. Useful factors include consistency over time, plausibility, corroborating documents or witnesses, motive to shade the story, and each person\'s opportunity to observe the event.\n\nThe output should be a reasoned finding, not a vibe. A strong investigation explains why one account is better supported, or why the evidence is too balanced to make a finding.',
+    solution: 'HR should evaluate consistency, plausibility, corroboration, motive, opportunity to observe, and documentation. Those factors turn a witness conflict into an evidence-based credibility determination.',
+    alternatePrompts: {
+      plain: 'When two workplace witnesses conflict, what credibility factors should HR evaluate before making a finding?',
+      teaching: 'Why is witness rank or confidence less useful than consistency, corroboration, motive, and opportunity to observe?',
+    },
+    challengeRating: 4,
   },
 ]
 
@@ -1566,8 +1582,8 @@ const patentConcepts: Concept[] = [
     prompt: 'a reference date falls between a provisional filing and the nonprovisional filing, and the claim may not be supported by the provisional. What must be analyzed?',
     correct: 'Whether the claim is entitled to the provisional filing date for the relevant subject matter',
     wrong: [
-      ['Assume every later claim automatically gets every provisional date', 'Priority requires support for the claimed subject matter.'],
-      ['Ignore dates because prior art is only about words', 'Effective dates determine whether references qualify.'],
+      ['Every later claim automatically receives every provisional filing date', 'Priority requires support for the claimed subject matter.'],
+      ['Prior art status depends only on words, not effective dates', 'Effective dates determine whether references qualify.'],
       ['Treat the provisional as an issued patent', 'A provisional preserves a filing date but does not issue as a patent.'],
     ],
     lesson: 'Prior-art questions often turn on effective filing dates and whether priority documents support the claim.',
@@ -1592,7 +1608,7 @@ const patentConcepts: Concept[] = [
     wrong: [
       ['Submit it without explaining connection to the claims', 'Objective evidence is strongest when tied to claimed features.'],
       ['Use it only to prove inventorship', 'Unexpected results address nonobviousness, not who invented.'],
-      ['Ignore it because examiners never consider evidence', 'Evidence can matter when properly presented and connected.'],
+      ['Examiners never consider objective evidence of nonobviousness', 'Evidence can matter when properly presented and connected.'],
     ],
     lesson: 'Secondary considerations need a nexus to the claim and should be integrated with the obviousness response.',
   },
@@ -1614,7 +1630,7 @@ const patentConcepts: Concept[] = [
     prompt: 'after a final rejection, the applicant wants continued examination with claim amendments. What procedural path is commonly available?',
     correct: 'File a request for continued examination if appropriate, with the required submission and fee',
     wrong: [
-      ['Assume final rejection means no further USPTO option exists', 'Final rejection limits ordinary amendment practice but does not end all options.'],
+      ['Final rejection means no further USPTO option exists', 'Final rejection limits ordinary amendment practice but does not end all options.'],
       ['Pay the maintenance fee before any patent issues', 'Maintenance fees are post-issuance.'],
       ['Record an assignment to force allowance', 'Ownership recordation does not overcome substantive rejections.'],
     ],
@@ -1626,7 +1642,7 @@ const patentConcepts: Concept[] = [
     prompt: 'the examiner requires election between distinct inventions in one application. What should the applicant do?',
     correct: 'Make an election and preserve rights as appropriate, while considering divisional strategy',
     wrong: [
-      ['Ignore the requirement because restriction is optional for examiners only', 'Restriction requirements demand a response.'],
+      ['A restriction requirement is optional for examiners only and demands no applicant response', 'Restriction requirements demand a response.'],
       ['Cancel all claims automatically without strategy', 'Election can be made while preserving non-elected claims for later practice.'],
       ['Argue copyright law because there are multiple ideas', 'Patent restriction practice is not copyright analysis.'],
     ],
@@ -1650,8 +1666,8 @@ const patentConcepts: Concept[] = [
     prompt: 'a priority claim appears defective and the deadline may still allow correction by petition or proper filing. What should be checked first?',
     correct: 'The specific rule, timing, required statement or petition, and whether the priority benefit can still be restored',
     wrong: [
-      ['Assume all priority defects are incurable forever', 'Some defects can be corrected if requirements and timing are met.'],
-      ['Assume all defects are automatically cured without action', 'Priority claims often require specific timely action.'],
+      ['All priority defects are incurable forever', 'Some defects can be corrected if requirements and timing are met.'],
+      ['Priority defects are automatically cured without applicant action', 'Priority claims often require specific timely action.'],
       ['Change inventorship to fix priority without analysis', 'Inventorship and priority are distinct issues.'],
     ],
     lesson: 'Procedural edge cases require exact timing, required documents, fees, and petition standards.',
@@ -1699,7 +1715,7 @@ const patentConcepts: Concept[] = [
     correct: 'Whether a conflict of interest exists and whether representation is permissible with informed consent or must be declined',
     wrong: [
       ['Represent both secretly to preserve revenue', 'Undisclosed conflicts violate professional duties.'],
-      ['Assume patent matters can never create conflicts', 'Patent prosecution can create direct adversity or material limitation conflicts.'],
+      ['Patent prosecution matters can never create conflicts of interest', 'Patent prosecution can create direct adversity or material limitation conflicts.'],
       ['Let the examiner decide the conflict', 'Conflict analysis is the practitioner responsibility.'],
     ],
     lesson: 'Practitioner judgment includes identifying conflicts before confidential information and claim strategy collide.',
@@ -1734,8 +1750,8 @@ const patentConcepts: Concept[] = [
     prompt: 'an inventor publicly disclosed the invention before filing, then a third party published the same subject matter afterward. What must be checked?',
     correct: 'Whether an AIA grace-period exception applies based on the inventor-originated disclosure and timing',
     wrong: [
-      ['Assume every disclosure by anyone is fatal forever', 'AIA exceptions can protect certain inventor-originated disclosures.'],
-      ['Ignore public disclosures because only patents count as prior art', 'Public disclosures can qualify as prior art.'],
+      ['Every disclosure by anyone is fatal forever under the AIA', 'AIA exceptions can protect certain inventor-originated disclosures.'],
+      ['Only patents count as prior art, not public disclosures', 'Public disclosures can qualify as prior art.'],
       ['Treat the third party as the inventor automatically', 'Publication does not by itself establish inventorship.'],
     ],
     lesson: 'AIA prior-art questions often turn on who disclosed what, when, and whether an exception applies.',
@@ -1770,8 +1786,8 @@ const patentConcepts: Concept[] = [
     prompt: 'an application went abandoned after a missed response deadline, and the client asks whether it can be restored. What should be checked?',
     correct: 'Whether revival is available under the applicable standard, timing, petition, fee, and required response',
     wrong: [
-      ['Assume abandoned applications can never be revived', 'Revival may be available if requirements are met.'],
-      ['Assume revival occurs automatically when the client apologizes', 'Revival requires formal petition practice and compliance.'],
+      ['Abandoned applications can never be revived', 'Revival may be available if requirements are met.'],
+      ['Client apology automatically revives an abandoned application', 'Revival requires formal petition practice and compliance.'],
       ['File only an assignment because ownership revives prosecution', 'Assignment recordation does not revive an abandoned application.'],
     ],
     lesson: 'Revival questions are procedural: standard, delay, petition, fee, and missing response all matter.',

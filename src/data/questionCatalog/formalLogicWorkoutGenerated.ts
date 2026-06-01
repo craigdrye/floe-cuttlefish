@@ -206,7 +206,7 @@ const _baseFormalLogicWorkoutGeneratedQuestions = makeQuestionBank('University',
   q(395036, 'Modal Logic', 'Possible worlds', 'In modal semantics, possible worlds are used to evaluate:', 'Modal claims about necessity and possibility', [
     miss('Only arithmetic addition', 'Modal semantics is not primarily arithmetic.', 'Worlds represent alternative ways things might be.'),
     miss('The number of proof pages', 'Page count is irrelevant.', 'Modal operators range over accessible worlds.'),
-    miss('Only grammar punctuation', 'Possible worlds are semantic tools.', 'Think necessity and possibility.'),
+    miss('Whether a formula is grammatically well-formed', 'That is a syntax question. Possible worlds belong to the semantic side: they help decide where modal claims are true.', 'Separate syntax from semantics.'),
   ]),
   q(395037, 'Modal Logic', 'Necessity', 'Box P is true at a world w when:', 'P is true at every relevant accessible world from w', [
     miss('P is false at every accessible world', 'That would support necessity of not-P.', 'Box means all accessible worlds satisfy P.'),

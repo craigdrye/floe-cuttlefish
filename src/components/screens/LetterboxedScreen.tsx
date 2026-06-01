@@ -182,7 +182,7 @@ export function LetterboxedScreen() {
           <DailyPuzzleBanner daily={daily} />
           {toast && <div className="letterboxed-toast" role="status">{toast}</div>}
 
-          <details className="game-rules" open>
+          <details className="game-rules">
             <summary><HelpCircle size={14} /> How to play Letterboxed</summary>
             <div className="game-rules-body">
               <ol>

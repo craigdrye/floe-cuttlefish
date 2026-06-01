@@ -36,6 +36,7 @@ export const useStore = create<AppState>()(
         achievements: state.achievements,
         misconceptionArtifacts: state.misconceptionArtifacts,
         questionQualityRatings: state.questionQualityRatings,
+        flashcardRatings: state.flashcardRatings,
         petItems: state.petItems,
         equippedPetItems: state.equippedPetItems,
         bossWins: state.bossWins,

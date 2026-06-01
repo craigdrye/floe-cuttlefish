@@ -396,7 +396,7 @@ export const lifeSkillsAndAdultingHighTopUpQuestions: Question[] = makeQuestionB
     wrong: [
       miss('Rely on a verbal handshake and sort out problems as they arise', 'Verbal deals are easy to misremember and hard to enforce; a written agreement prevents disputes.', 'Memory is a weak substitute for a written record.'),
       miss('Have only one roommate’s name on everything and trust them to collect', 'That puts all legal and credit risk on one person and invites conflict if the other does not pay.', 'Shared obligations should be shared clearly, not loaded onto one person.'),
-      miss('Assume the landlord will mediate any money disagreements', 'Landlords typically care that the full rent arrives, not how roommates split it.', 'Internal splits are the roommates’ responsibility, not the landlord’s.'),
+      miss('Treat the landlord as the default mediator for every roommate money disagreement', 'Landlords typically care that the full rent arrives, not how roommates split it.', 'Internal splits are the roommates’ responsibility, not the landlord’s.'),
     ],
     lesson: 'A written roommate agreement spells out each person’s rent and utility share, due dates, guest and chore rules, and what happens if someone moves out early. Putting expectations in writing before move-in prevents most common roommate money conflicts.',
     source,
@@ -549,7 +549,7 @@ export const lifeSkillsAndAdultingHighTopUpQuestions: Question[] = makeQuestionB
     correct: 'Listen, ask clarifying questions, thank them, and adjust your approach',
     wrong: [
       miss('Argue that you were right and they are wrong', 'Becoming defensive shuts down learning and damages the working relationship.', 'Treat feedback as information, not an attack.'),
-      miss('Ignore it entirely and keep doing the same thing', 'Ignoring feedback means the issue recurs and signals you are not coachable.', 'Acting on feedback shows growth.'),
+      miss('Treat the failed attempt as bad luck and repeat the same approach', 'Ignoring feedback means the issue recurs and signals you are not coachable.', 'Acting on feedback shows growth.'),
       miss('Quit the task immediately to avoid more criticism', 'Walking away from a task over feedback is unprofessional and unproductive.', 'Improve the work rather than abandon it.'),
     ],
     lesson: 'Constructive feedback is a chance to improve and to show you are coachable. Listening calmly, asking what success looks like, thanking the person, and adjusting builds trust and competence. Defensiveness or avoidance harms both the work and your reputation.',
@@ -688,7 +688,7 @@ export const lifeSkillsAndAdultingHighTopUpQuestions: Question[] = makeQuestionB
     correct: 'Wash new or bright-colored items separately (or with like colors) in case the dye bleeds',
     wrong: [
       miss('Wash it with your whites on the hottest setting', 'Hot water and mixing with whites is the classic way to turn a white load pink from dye bleeding.', 'New brights and whites do not mix safely.'),
-      miss('Skip washing it and just wear it as is', 'Avoiding laundry is not a care strategy and ignores the actual question of how to wash safely.', 'The task is washing it without damage.'),
+      miss('Wear it immediately because it looks clean enough at first glance', 'Avoiding laundry is not a care strategy and ignores the actual question of how to wash safely.', 'The task is washing it without damage.'),
       miss('Use bleach to keep all the colors bright', 'Bleach removes color and would damage a bright red shirt and any colored items with it.', 'Bleach strips color rather than protecting it.'),
     ],
     lesson: 'Separate laundry by color and read care labels. Wash new or bright items separately or with like colors, often in cooler water, so loose dye does not stain lighter clothes. Following care symbols prevents shrinking, fading, and accidental color disasters.',
@@ -732,8 +732,8 @@ export const lifeSkillsAndAdultingHighTopUpQuestions: Question[] = makeQuestionB
     prompt: 'You feel overwhelmed and your stress is affecting sleep and daily life. What is a healthy, mature response?',
     correct: 'Reach out for support — a trusted person, a counselor, or a help line — rather than toughing it out alone',
     wrong: [
-      miss('Assume needing help means you have failed and hide it', 'Treating help-seeking as failure keeps people stuck; reaching out is a strength, not a weakness.', 'Asking for help is a normal, healthy skill.'),
-      miss('Ignore it and hope it disappears on its own', 'Untended, persistent stress tends to worsen; ignoring it is not a plan.', 'Persistent struggles usually need action.'),
+      miss('Treat needing help as personal failure rather than a normal support need', 'Treating help-seeking as failure keeps people stuck; reaching out is a strength, not a weakness.', 'Asking for help is a normal, healthy skill.'),
+      miss('Wait for the problem to disappear without changing the plan', 'Untended, persistent stress tends to worsen; ignoring it is not a plan.', 'Persistent struggles usually need action.'),
       miss('Cope only by avoiding everything that feels hard', 'Total avoidance can shrink your life and deepen the problem over time.', 'Support helps you face problems, not just dodge them.'),
     ],
     lesson: 'Asking for help is a core adult skill, not a failure. When stress affects sleep, mood, or daily functioning, reaching out to a trusted person, a school or community counselor, or a help line is the mature move. Building a support network is part of running your own life well.',

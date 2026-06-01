@@ -1,4 +1,5 @@
 import { makeQuestionBank } from './base'
+import type { Question } from './types'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
@@ -9,6 +10,13 @@ const q = (
   prompt: string,
   correct: string,
   wrong: [string, string, string][],
+  extra: {
+    lesson?: string
+    solution?: string
+    mentorHint?: string
+    alternatePrompts?: Question['alternatePrompts']
+    challengeRating?: Question['challengeRating']
+  } = {},
 ) => ({
   id,
   chapter,
@@ -16,8 +24,12 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
+  lesson: extra.lesson ??
     'Coverage source: NYSED Algebra II, STAAR advanced algebra-aligned, and OER algebra collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  solution: extra.solution,
+  mentorHint: extra.mentorHint,
+  alternatePrompts: extra.alternatePrompts,
+  challengeRating: extra.challengeRating,
   source: 'Generated from NYSED/STAAR/OER Algebra II coverage',
 })
 
@@ -67,9 +79,18 @@ export const algebra2ExamBatchQuestions = makeQuestionBank('Mathematics', [
     miss('6', 'That is the second term, not the ratio.', 'Use consecutive terms.'),
     miss('4', 'That is not constant between terms.', 'Check 6/3 and 12/6.'),
   ]),
-  q(438010, 'Chapter 8: Probability, Statistics, and Function Modeling Studio', 'Independent events', 'If independent events A and B have P(A)=0.4 and P(B)=0.5, what is P(A and B)?', '0.20', [
+  q(438010, 'Chapter 8: Probability, Statistics, and Function Modeling Studio', 'Independent events', 'Events A and B are independent, so knowing one happened does not change the probability of the other. If P(A)=0.4 and P(B)=0.5, what is P(A and B)?', '0.20', [
     miss('0.90', 'That adds the probabilities instead of multiplying for independent "and".', 'For independent events, multiply.'),
     miss('0.10', 'That subtracts the probabilities.', 'Intersection is not found by subtraction here.'),
     miss('0.45', 'That averages the probabilities.', 'Use the multiplication rule.'),
-  ]),
+  ], {
+    lesson: 'For independent events, the probability of both events happening is found by multiplying their individual probabilities. Independence means one event does not change the chance of the other, so the intersection rule becomes P(A and B) = P(A) x P(B).',
+    solution: 'Multiply the probabilities because the events are independent: 0.4 x 0.5 = 0.20.',
+    mentorHint: 'Independent "and" means multiply; "or" is where addition rules usually appear.',
+    alternatePrompts: {
+      plain: 'If A and B are independent with probabilities 0.4 and 0.5, what is the probability that both happen?',
+      teaching: 'Why do independent events use multiplication for P(A and B), and what does 0.4 x 0.5 equal?',
+    },
+    challengeRating: 3,
+  }),
 ])

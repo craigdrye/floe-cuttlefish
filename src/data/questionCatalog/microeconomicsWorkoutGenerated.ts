@@ -1,5 +1,6 @@
 import { makeQuestionBank } from './base'
 import { polish as runPolish } from './polishPipeline'
+import type { Question } from './types'
 import {
   UNI_SCIECON_WORKOUT_SUB_TOPICS,
   UNI_SCIECON_WORKOUT_MENTOR_HINTS,
@@ -7,6 +8,26 @@ import {
 } from './uniSciEconWorkoutPolish'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
+
+function accessibleMicroPrompt(title: string, prompt: string) {
+  const cleaned = prompt.trim()
+  if (!cleaned.endsWith(':')) return cleaned
+
+  const stem = cleaned.replace(/:$/, '').trim()
+  return `A microeconomics learner is reasoning about a household, firm, or market using "${title}". Which answer best completes this sentence: "${stem}"?`
+}
+
+function microAlternatePrompt(title: string) {
+  return `In plain language, what does "${title}" help explain about choices, prices, costs, competition, or market failure?`
+}
+
+function microLesson(title: string, correct: string) {
+  return `Microeconomics connects terms to choices under scarcity. For "${title}", the key idea is: ${correct}. Ask whether the prompt is about a consumer decision, a producer cost, a market equilibrium, a strategic choice, or a market failure.`
+}
+
+function microChallengeRating(chapter: string): Question['challengeRating'] {
+  return ['Market Structure', 'Market Failure', 'Information', 'Regulation'].includes(chapter) ? 6 : 5
+}
 
 const q = (
   id: number,
@@ -19,12 +40,15 @@ const q = (
   id,
   chapter,
   title,
-  prompt,
+  prompt: accessibleMicroPrompt(title, prompt),
+  alternatePrompts: {
+    plain: microAlternatePrompt(title),
+  },
   correct,
   wrong,
-  lesson:
-    'Coverage source: reviewed OpenStax economics, AP microeconomics, and market-analysis source clusters plus Microeconomics course skill gaps. This is an authored Floe-native drill item, not a direct raw import.',
+  lesson: microLesson(title, correct),
   source: 'Generated from Microeconomics coverage',
+  challengeRating: microChallengeRating(chapter),
 })
 
 const _baseMicroeconomicsWorkoutGeneratedQuestions = makeQuestionBank('University', [

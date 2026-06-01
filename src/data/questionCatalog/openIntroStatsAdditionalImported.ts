@@ -284,10 +284,16 @@ const _baseOpenIntroStatsAdditionalImportedQuestions = makeQuestionBank('Statist
     id: 386028,
     chapter: 'Linear Regression',
     title: 'Predicting from a regression line',
-    prompt: 'In the Rguroo simple regression lab, how would someone use a least-squares regression line to predict a country personal freedom score from a given expression-control rating?',
+    prompt: 'In the Rguroo simple regression lab, the fitted line turns an expression-control rating into a predicted personal-freedom score. If you are given a country\'s expression-control rating, what is the right way to use the line?',
     correct: 'Plug the expression-control rating into the fitted line and read the predicted response',
     wrong: [['Use the response value to predict the explanatory variable without changing the model', 'The fitted line was built to predict the response from the explanatory variable.', 'Keep x and y roles straight.'], ['Choose the country with the highest residual', 'Residuals evaluate fit after prediction; they are not the prediction rule.', 'Use the fitted equation first.'], ['Average the two variables without the fitted line', 'A regression prediction comes from the fitted line, not an unmodeled average.', 'Use the model equation.']],
-    lesson: sourceLesson('openintro-labs-rguroo::08_simple_regression::1', 'The lab asks how to predict a personal freedom score from the least-squares line.'),
+    lesson: sourceLesson('openintro-labs-rguroo::08_simple_regression::1', 'A least-squares line is a prediction recipe: put the explanatory variable into the equation and the output is the predicted response. Here expression control is the x-value and personal freedom is the y-value. Residuals come afterward, when you compare the prediction with the actual country value.'),
+    solution: 'Use the country\'s expression-control rating as x in the fitted regression equation, then read the resulting predicted personal-freedom score. Do not swap x and y, and do not use residuals until after a prediction has been made.',
+    alternatePrompts: {
+      plain: 'A regression line predicts personal freedom from expression control. Given one country\'s expression-control rating, what should you do first to get its predicted personal-freedom score?',
+      teaching: 'Think of the fitted line as a small machine: expression control goes in, predicted personal freedom comes out. Which answer describes that input-output move?',
+    },
+    challengeRating: 4,
     source: 'OpenIntro Labs',
   },
   {

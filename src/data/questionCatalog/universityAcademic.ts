@@ -116,10 +116,290 @@ function buildAcademicMentorHint(trackId: string, question: Question): string {
   return `${opener} In "${question.chapter}", treat "${question.title}" as the topic boundary so you do not drift into a nearby concept. ${promptMove}`
 }
 
+function hasBespokeMentorHint(question: Question): boolean {
+  const hint = question.mentorHint?.trim()
+  if (!hint) return false
+
+  return ![
+    'Translate the question into plain language before evaluating the choices.',
+    'Use the exact wording of the prompt to decide whether it wants a definition, mechanism, comparison, or application.',
+  ].includes(hint)
+}
+
 function enrichUniversityAcademicMentorHints(trackId: string, questions: Question[]): Question[] {
   return questions.map((question) => ({
     ...question,
-    mentorHint: buildAcademicMentorHint(trackId, question),
+    mentorHint: hasBespokeMentorHint(question) ? question.mentorHint : buildAcademicMentorHint(trackId, question),
+  }))
+}
+
+function rewritePhilosophyFragmentPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  if (!prompt.endsWith(':')) return question.prompt
+
+  const stem = prompt.replace(/:$/, '').trim()
+  return `A learner is checking the philosophy idea "${question.title}". Which answer best completes this sentence: "${stem}"?`
+}
+
+function philosophyLesson(question: Question): string {
+  return `In philosophy, "${question.title}" is useful because it names a recurring question, argument pattern, or debate. Here the key idea is: ${question.solution}. Use the wording of the prompt to decide whether it is asking for a definition, an example, or the claim a philosopher is using the term to make.`
+}
+
+function enrichPhilosophyQuestions(questions: Question[]): Question[] {
+  return questions.map((question) => ({
+    ...question,
+    prompt: rewritePhilosophyFragmentPrompt(question),
+    alternatePrompts: {
+      ...question.alternatePrompts,
+      plain:
+        question.alternatePrompts?.plain ??
+        `In plain language, what is the best answer for the philosophy idea "${question.title}"?`,
+    },
+    lesson: question.lesson || philosophyLesson(question),
+    challengeRating: question.challengeRating ?? (question.chapter === 'Stretch Zone' ? 7 : question.chapter === 'Philosophy of Mind' ? 6 : 5),
+  }))
+}
+
+function rewriteResearchMethodsFragmentPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  if (!prompt.endsWith(':')) return question.prompt
+
+  const stem = prompt.replace(/:$/, '').trim()
+  return `A researcher is planning a study and checks the concept "${question.title}". Which answer best completes this sentence: "${stem}"?`
+}
+
+function researchMethodsLesson(question: Question): string {
+  return `Research methods terms are tools for judging how trustworthy a study is. For "${question.title}", the key idea is: ${question.solution}. When you see this term, ask whether the issue is about defining a question, measuring a concept, sampling people, assigning conditions, making a causal claim, protecting participants, or interpreting data.`
+}
+
+function researchMethodsChallengeRating(question: Question): Question['challengeRating'] {
+  if (question.challengeRating) return question.challengeRating
+  if (question.chapter === 'Stretch Zone') return 7
+  if (['Causality', 'Analysis', 'Open Science', 'Data Quality'].includes(question.chapter)) return 6
+  return 5
+}
+
+function enrichResearchMethodsQuestions(questions: Question[]): Question[] {
+  return questions.map((question) => ({
+    ...question,
+    prompt: rewriteResearchMethodsFragmentPrompt(question),
+    alternatePrompts: {
+      ...question.alternatePrompts,
+      plain:
+        question.alternatePrompts?.plain ??
+        `In plain language, what does the research-methods concept "${question.title}" help a researcher decide?`,
+    },
+    lesson: question.lesson || researchMethodsLesson(question),
+    challengeRating: researchMethodsChallengeRating(question),
+  }))
+}
+
+function rewriteOrganicChemistryFragmentPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  if (!prompt.endsWith(':')) return question.prompt
+
+  const stem = prompt.replace(/:$/, '').trim()
+  return `At the lab bench, a learner is using "${question.title}" as a clue about structure or reactivity. Which answer best completes this sentence: "${stem}"?`
+}
+
+function organicChemistryLesson(question: Question): string {
+  return `Organic chemistry is a pattern-spotting game: structure controls reactivity. For "${question.title}", the key idea is: ${question.solution}. Look for the functional group, electron-rich and electron-poor atoms, steric crowding, stereochemistry, and the reaction conditions before choosing an answer.`
+}
+
+function organicChemistryChallengeRating(question: Question): Question['challengeRating'] {
+  if (question.challengeRating) return question.challengeRating
+  if (question.chapter === 'Stretch Zone' || question.id >= 16900) return 7
+  if (['Substitution', 'Elimination', 'Alkenes', 'Spectroscopy', 'Synthesis', 'Carbonyls'].includes(question.chapter)) return 6
+  return 5
+}
+
+function enrichOrganicChemistryQuestions(questions: Question[]): Question[] {
+  return questions.map((question) => ({
+    ...question,
+    prompt: rewriteOrganicChemistryFragmentPrompt(question),
+    alternatePrompts: {
+      ...question.alternatePrompts,
+      plain:
+        question.alternatePrompts?.plain ??
+        `In plain language, what clue does "${question.title}" give about an organic molecule or reaction?`,
+    },
+    lesson: question.lesson || organicChemistryLesson(question),
+    challengeRating: organicChemistryChallengeRating(question),
+  }))
+}
+
+function rewriteNeuroscienceFragmentPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  if (!prompt.endsWith(':')) return question.prompt
+
+  const stem = prompt.replace(/:$/, '').trim()
+  return `A learner is tracing a signal through the nervous system and spots "${question.title}". Which answer best completes this sentence: "${stem}"?`
+}
+
+function neuroscienceLesson(question: Question): string {
+  return `Neuroscience gets easier when you track the level of the story. For "${question.title}", the key idea is: ${question.solution}. Ask whether the clue is about a neuron part, an ion movement, a synapse, a neurotransmitter, a brain region, a measurement method, or a clinical pattern.`
+}
+
+function neuroscienceChallengeRating(question: Question): Question['challengeRating'] {
+  if (question.challengeRating) return question.challengeRating
+  if (question.chapter === 'Stretch Zone' || question.id >= 17000) return 7
+  if (['Methods', 'Clinical Neuroscience', 'Plasticity', 'Action Potentials', 'Synapses'].includes(question.chapter)) return 6
+  return 5
+}
+
+function enrichNeuroscienceQuestions(questions: Question[]): Question[] {
+  return questions.map((question) => ({
+    ...question,
+    prompt: rewriteNeuroscienceFragmentPrompt(question),
+    alternatePrompts: {
+      ...question.alternatePrompts,
+      plain:
+        question.alternatePrompts?.plain ??
+        `In plain language, what does "${question.title}" tell us about how the nervous system sends, changes, or measures signals?`,
+    },
+    lesson: question.lesson || neuroscienceLesson(question),
+    challengeRating: neuroscienceChallengeRating(question),
+  }))
+}
+
+function rewriteMarketingFragmentPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  if (!prompt.endsWith(':')) return question.prompt
+
+  const stem = prompt.replace(/:$/, '').trim()
+  return `A marketer has a tiny budget, a real customer problem, and one smart move to make. For "${question.title}", which answer best completes this idea: "${stem}"?`
+}
+
+function marketingLesson(question: Question): string {
+  return `Marketing is not just making noise; it is choosing the right customer, promise, channel, and proof. For "${question.title}", the key idea is: ${question.solution}. Ask whether the clue is about who the customer is, what value they want, how the brand should be positioned, how the offer is priced, how the message reaches people, or how the result is measured.`
+}
+
+function marketingChallengeRating(question: Question): Question['challengeRating'] {
+  if (question.challengeRating) return question.challengeRating
+  if (question.chapter === 'Stretch Zone' || question.id >= 16900) return 7
+  if (['Analytics', 'Digital', 'Pricing', 'Strategy'].includes(question.chapter)) return 6
+  return 5
+}
+
+function enrichMarketingQuestions(questions: Question[]): Question[] {
+  return questions.map((question) => ({
+    ...question,
+    prompt: rewriteMarketingFragmentPrompt(question),
+    alternatePrompts: {
+      ...question.alternatePrompts,
+      plain:
+        question.alternatePrompts?.plain ??
+        `In plain language, how would "${question.title}" help a marketer choose customers, shape an offer, or measure whether a campaign worked?`,
+    },
+    lesson: question.lesson || marketingLesson(question),
+    challengeRating: marketingChallengeRating(question),
+  }))
+}
+
+function rewriteInternationalRelationsFragmentPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  if (!prompt.endsWith(':')) return question.prompt
+
+  const stem = prompt.replace(/:$/, '').trim()
+  return `Imagine two countries are trying to read each other's next move without a world government to referee the game. For "${question.title}", which answer best completes this idea: "${stem}"?`
+}
+
+function internationalRelationsLesson(question: Question): string {
+  return `International relations often asks how states cooperate, compete, bargain, and stay secure when no single global authority can enforce every rule. For "${question.title}", the key idea is: ${question.solution}. First decide whether the clue is about power, law, institutions, trade, war, domestic politics, shared norms, or a collective-action problem.`
+}
+
+function internationalRelationsChallengeRating(question: Question): Question['challengeRating'] {
+  if (question.challengeRating) return question.challengeRating
+  if (question.chapter === 'Stretch Zone' || question.id >= 16800) return 7
+  if (['Realism', 'Liberalism', 'Constructivism', 'Security', 'Conflict', 'Political Economy'].includes(question.chapter)) return 6
+  return 5
+}
+
+function enrichInternationalRelationsQuestions(questions: Question[]): Question[] {
+  return questions.map((question) => ({
+    ...question,
+    prompt: rewriteInternationalRelationsFragmentPrompt(question),
+    alternatePrompts: {
+      ...question.alternatePrompts,
+      plain:
+        question.alternatePrompts?.plain ??
+        `In plain language, how would "${question.title}" help explain why countries cooperate, clash, trade, threaten, or build institutions?`,
+    },
+    lesson: question.lesson || internationalRelationsLesson(question),
+    challengeRating: internationalRelationsChallengeRating(question),
+  }))
+}
+
+function rewriteDataStructuresFragmentPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  if (!prompt.endsWith(':')) return question.prompt
+
+  const stem = prompt.replace(/:$/, '').trim()
+  return `A programmer is choosing the right tool before the code gets slow or messy. For "${question.title}", which answer best completes this idea: "${stem}"?`
+}
+
+function dataStructuresLesson(question: Question): string {
+  return `Data structures are containers with tradeoffs: each one makes some operations cheap and others expensive. For "${question.title}", the key idea is: ${question.solution}. Ask what operation matters most here: access by index, insert/remove order, lookup by key, preserving priority, walking relationships, sorting, searching, or reusing repeated work.`
+}
+
+function dataStructuresChallengeRating(question: Question): Question['challengeRating'] {
+  if (question.challengeRating) return question.challengeRating
+  if (question.chapter === 'Stretch Zone') return 7
+  if (['Graphs', 'Trees', 'Heaps', 'Sorting', 'Algorithms', 'Union-Find', 'Complexity'].includes(question.chapter)) return 6
+  return 5
+}
+
+function enrichDataStructuresQuestions(questions: Question[]): Question[] {
+  return questions.map((question) => ({
+    ...question,
+    prompt: rewriteDataStructuresFragmentPrompt(question),
+    alternatePrompts: {
+      ...question.alternatePrompts,
+      plain:
+        question.alternatePrompts?.plain ??
+        `In plain language, what job does "${question.title}" do for a programmer choosing a data structure or algorithm?`,
+    },
+    lesson: question.lesson || dataStructuresLesson(question),
+    challengeRating: dataStructuresChallengeRating(question),
+  }))
+}
+
+function rewriteAcademicFragmentPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  if (prompt.endsWith('?')) return question.prompt
+  if (prompt.endsWith(':')) {
+    return `${prompt} Choose the option that makes the concept precise.`
+  }
+  return `${prompt} Use the clue to choose the strongest explanation.`
+}
+
+function academicLesson(trackId: string, question: Question): string {
+  const title = question.title || question.chapter || 'this concept'
+  const answer = question.solution || 'the best answer'
+
+  if (trackId === 'artHistory') {
+    return `Art history questions are about connecting a visual term to the way artists, patrons, and viewers make meaning. For "${title}", the key idea is: ${answer}. Ask whether the clue is about style, technique, period, subject matter, evidence, or museum interpretation.`
+  }
+  if (trackId === 'cosmologyAndAstronomy') {
+    return `Astronomy questions get easier when you locate the scale: planet, small body, star, galaxy, or universe. For "${title}", the key idea is: ${answer}. Look for whether the clue is about light, gravity, motion, distance, composition, or cosmic history.`
+  }
+  if (trackId === 'introToPsychology') {
+    return `Psychology questions usually connect a behavior or mental process to a named mechanism. For "${title}", the key idea is: ${answer}. Ask whether the clue is about learning, memory, development, the brain, social pressure, emotion, or research evidence.`
+  }
+  if (trackId === 'apEnvironmentalScience') {
+    return `Environmental science questions link systems, resources, and human impacts. For "${title}", the key idea is: ${answer}. Track matter, energy, water, populations, feedback loops, pollution, and tradeoffs before choosing an answer.`
+  }
+  if (trackId === 'formalLogic') {
+    return `Logic questions are about structure. For "${title}", the key idea is: ${answer}. Identify the objects being compared, the rule being applied, and whether the issue is syntax, semantics, proof, set membership, or validity.`
+  }
+  return `This question is asking you to connect a term to the idea it explains. For "${title}", the key idea is: ${answer}. Read the exact wording, name the concept, and avoid nearby answers that belong to a different chapter.`
+}
+
+function enrichAcademicQuestionQuality(trackId: string, questions: Question[]): Question[] {
+  return questions.map((question) => ({
+    ...question,
+    prompt: rewriteAcademicFragmentPrompt(question),
+    lesson: question.lesson || academicLesson(trackId, question),
   }))
 }
 
@@ -240,40 +520,535 @@ export function buildUniversityAcademicQuestionCatalog(): Record<string, Questio
     { id: 17110, chapter: "Stretch Zone", title: "Mixed Methods", prompt: "In a 'Sequential Explanatory' mixed methods design:", correct: "Quantitative data is collected and analyzed first, followed by qualitative data to explain the quantitative results.", wrong: [["Qualitative data is collected first to build a survey.", "That is a Sequential Exploratory design.", "The qualitative explains the 'why' behind the quantitative 'what'."], ["Both are collected simultaneously and merged.", "That is a Convergent Parallel design.", "It happens in a specific order."], ["Only quantitative data is used.", "Then it wouldn't be a mixed methods design.", "Numbers first, interviews second."]] },
   ]), ...researchMethodsWorkoutGeneratedQuestions],
   philosophy: [...makeQuestionBank('University', [
-    { id: 16601, chapter: 'Doing Philosophy', title: 'Argument clue', prompt: 'A philosophical argument is mainly:', correct: 'A set of reasons supporting a conclusion', wrong: [['Any loud disagreement', 'Arguments in philosophy are about reasoning, not volume.', 'Focus on premises and conclusion.'], ['A claim with no supporting reasons', 'Mere claims are not arguments — arguments give reasons.', 'Think structured reasoning.'], ['A random question with no support', 'Philosophical arguments involve justification.', 'Reasons matter.']] },
-    { id: 16602, chapter: 'Knowledge and Skepticism', title: 'Knowledge idea', prompt: 'In many traditions, knowledge is often defined as:', correct: 'Justified true belief', wrong: [['A really good guess', 'A guess lacks justification even if true.', 'Think JTB.'], ['A strongly held opinion alone', 'Strength of conviction is not justification.', 'Use the classic tripartite definition.'], ['A colorful dream', 'Dreams are not the standard definition of knowledge.', 'Choose the belief-based clue.']] },
-    { id: 16603, chapter: 'Ethics and Moral Theory', title: 'Ethics focus', prompt: 'Ethics is the branch of philosophy that deals with:', correct: 'Moral values and right conduct', wrong: [['The descriptive study of market prices', 'That is economics, which is descriptive rather than normative.', 'Ethics is about behavior and values.'], ['Empirical questions about engineering systems', 'That is applied science, not the study of right conduct.', 'Focus on moral questions.'], ['Quantitative questions in physics', 'That belongs to natural science.', 'Choose the conduct clue.']] },
-    { id: 16604, chapter: 'Doing Philosophy', title: 'Logic tool', prompt: 'A "premise" in an argument is used to:', correct: 'Provide support or evidence for a conclusion', wrong: [['Restate the conclusion in different words', 'A premise must give independent support, not just restate the conclusion.', 'Think evidence.'], ['Signal the end of an argument', 'Conclusions end arguments; premises support them.', 'Premises build the case.'], ['Express an emotional reaction', 'Philosophical arguments rely on reasons, not feelings.', 'Use the support-for-conclusion idea.']] },
-    { id: 16605, chapter: 'Doing Philosophy', title: 'Logical Validity', prompt: 'In philosophy, a "valid" deductive argument is one where:', correct: 'If the premises are true, the conclusion MUST be true', wrong: [["The conclusion is definitely true in the real world", "An argument can be valid even if the premises are false. Validity is about the structure.", "Validity = logical necessity given the premises."], ["The argument is written in very fancy language", "Logic is about reasoning, not style.", "A valid argument can be simple."], ["Everyone agrees with the conclusion", "Agreement doesn't determine logical validity.", "Think of the \"if... then...\" connection."]] },
-    { id: 16606, chapter: 'Branches of Philosophy', title: 'Metaphysics vs Ethics', prompt: 'Which branch of philosophy studies the ultimate nature of reality, existence, and being?', correct: 'Metaphysics', wrong: [["Ethics", "Ethics studies right and wrong behavior and moral values.", "Metaphysics = \"after physics\"."], ["Epistemology", "Epistemology is the study of knowledge and belief.", "Think of the \"what is\" question."], ["Aesthetics", "Aesthetics studies beauty and art.", "Existence is a metaphysical question."]] },
-    { id: 16607, chapter: 'Epistemology', title: 'Plato\'s Cave', prompt: 'In Plato\'s Allegory of the Cave, what do the shadows on the wall represent?', correct: 'The deceptive world of sensory appearances', wrong: [["The ultimate truth of reality", "The shadows are illusions; the sun outside represents the truth.", "Prisoners see shadows and think they are real."], ["The ghosts of dead philosophers", "The allegory is about knowledge and education, not ghosts.", "The cave is the physical world."], ["Evil demons trying to trick us", "Descartes used the evil demon; Plato used shadows and puppets.", "Think of \"appearance\" vs \"reality\"."]] },
-    { id: 16608, chapter: 'Ethics', title: 'Utilitarianism', prompt: 'The core principle of Utilitarianism is to act in a way that produces:', correct: 'The greatest happiness for the greatest number', wrong: [["The most wealth for the individual", "That is egoism, not utilitarianism.", "Utilitarianism is impartial and altruistic."], ["The most beautiful works of art", "That would be a form of aestheticism.", "Utility is usually defined as pleasure or well-being."], ["Strict adherence to all laws", "Sometimes utility requires breaking a law if it prevents more suffering.", "Maximize the good."]] },
-    { id: 16609, chapter: 'Doing Philosophy', title: 'Ad Hominem Fallacy', prompt: 'An "Ad Hominem" fallacy occurs when someone:', correct: 'Attacks the person making the argument rather than the argument itself', wrong: [["Misrepresents an opponent's position to make it easier to attack", "That is a Straw Man fallacy.", "Ad hominem = \"to the man\"."], ["Assumes the conclusion in one of the premises", "That is \"begging the question\" or circular reasoning.", "Focus on the personal attack."], ["Claims something is true just because a famous person said it", "That is an appeal to authority.", "Attacking the character, not the claim."]] },
-    { id: 16610, chapter: 'Doing Philosophy', title: 'Modus Ponens', prompt: 'Which of the following represents the logical form "Modus Ponens"?', correct: 'If P then Q; P; Therefore Q', wrong: [["If P then Q; Q; Therefore P", "That is the fallacy of \"affirming the consequent\".", "Modus Ponens is the \"mode of putting\"."], ["If P then Q; Not Q; Therefore Not P", "That is \"Modus Tollens\" (the mode of taking).", "Start with P, get Q."], ["Either P or Q; Not P; Therefore Q", "That is a \"disjunctive syllogism\".", "Conditional reasoning."]] },
-    { id: 16611, chapter: 'Epistemology', title: 'JTB Analysis', prompt: 'In the traditional \"JTB\" analysis, knowledge is defined as:', correct: 'Justified True Belief', wrong: [["Just the Truth itself", "You can have truth without knowing it (like a lucky guess).", "Knowledge needs a subject who believes it."], ["Anything you strongly feel is certain", "Feelings of certainty don't guarantee truth or justification.", "Belief is necessary but not sufficient."], ["Any belief that makes you happy", "Pragmatism might value useful beliefs, but JTB requires truth and reason.", "Check the three letters: J, T, B."]] },
-    { id: 16612, chapter: 'Metaphysics', title: 'Ship of Theseus', prompt: 'The \"Ship of Theseus\" thought experiment primarily asks:', correct: 'Whether an object remains the same if all its parts are replaced over time', wrong: [["How much weight a wooden boat can carry", "That is a physics/engineering question.", "The problem is about \"numerical identity\"."], ["Whether ships can have souls", "The problem is usually applied to physical objects and persistence.", "Identity through change."], ["Why the Greeks were so good at sailing", "That is history, not metaphysics.", "If every plank is new, is it the \"same\" ship?"]]},
-    { id: 16613, chapter: 'Ethics', title: 'Categorical Imperative', prompt: 'Immanuel Kant\'s \"Categorical Imperative\" suggests we should only act on rules that:', correct: 'We could consistently will to become a universal law', wrong: [["Make us feel the most satisfied", "Kant rejected feelings (inclinations) as the basis for morality.", "Duty is universal."], ["Our parents and teachers told us to follow", "Kant emphasized autonomy (giving the law to oneself).", "The \"Universal Law\" formulation."], ["Lead to the best consequences for everyone", "That is Utilitarianism, which Kant opposed.", "Focus on the \"form\" of the action, not the results."]] },
-    { id: 16614, chapter: 'Philosophy of Religion', title: 'Problem of Evil', prompt: 'The "logical" problem of evil argues that which three concepts are mutually inconsistent?', correct: 'God is all-powerful, all-good, and evil exists', wrong: [["Evil is real, Hell is real, and people are free", "These could all be true together without a logical contradiction.", "The problem is about the nature of God."], ["God is one, God is three, and God is infinite", "That is a theological puzzle about the Trinity, not the problem of evil.", "Theodicy tries to solve this."], ["Science is true, Religion is true, and Nature is cruel", "While challenging, the \"Problem of Evil\" specifically targets the attributes of a Deity.", "Epicurus framed it as: Is He willing but not able?"]]},
-    { id: 16615, chapter: 'Epistemology', title: 'Gettier Cases', prompt: 'Gettier cases are famous in philosophy because they provide counterexamples that show:', correct: 'Justified True Belief is not SUFFICIENT for knowledge', wrong: [["We can never truly know anything (Skepticism)", "Gettier assumed we have knowledge but showed our \"definition\" was wrong.", "You can have JTB but still only have \"luck\"."], ["Justification is unnecessary if you have the truth", "Gettier cases have truth and justification, but still feel like \"not knowledge\".", "The \"luck\" factor is the issue."], ["All beliefs are actually false", "Gettier's subjects have true beliefs.", "Think of the man who \"knows\" the time from a broken clock that happens to be right."]] },
-    { id: 16616, chapter: 'Metaphysics', title: 'Determinism vs Compatibilism', prompt: 'A "Compatibilist" believes that:', correct: 'Free will and determinism can both be true at the same time', wrong: [["Free will is an illusion and everything is determined", "That is \"Hard Determinism\".", "Compatibilists \"reconcile\" the two."], ["Human actions are completely random", "Randomness is not free will; free will usually requires some intent.", "Determinism doesn't exclude freedom for them."], ["We have no choice because God knows the future", "That is theological fatalism.", "Think of \"Freedom\" as acting according to your own desires."]] },
-    { id: 16617, chapter: 'Philosophy of Mind', title: 'Chinese Room', prompt: 'John Searle\'s \"Chinese Room\" thought experiment is designed to show that:', correct: 'Following a set of rules (syntax) is not the same as understanding (semantics)', wrong: [["Computers will eventually become smarter than humans", "Searle is skeptical that computers \"think\" at all in the human sense.", "Symbols vs Meaning."], ["Translating languages is impossible for machines", "Machines are great at translation, but Searle says they don't \"know\" what the words mean.", "It's a critique of \"Strong AI\"."], ["The brain is just a biological computer", "Searle argues that the brain has \"causal powers\" that simple programs lack.", "A man in a room with a rulebook doesn't speak Chinese."]] },
-    { id: 16618, chapter: 'Philosophy of Mind', title: 'Nagel\'s Bat', prompt: 'In his essay \"What Is It Like to Be a Bat?\", Thomas Nagel argues that:', correct: 'Subjective conscious experience cannot be fully captured by objective physical descriptions', wrong: [["Bats have a more complex moral system than humans", "The essay is about consciousness, not ethics.", "Physicalism leaves something out."], ["We should use sonar technology to understand the brain", "Nagel says even if we knew every physical detail of a bat, we wouldn't know the \"feeling\" of being one.", "The \"explanatory gap\"."], ["Animals do not have conscious minds", "Nagel assumes bats ARE conscious; the problem is our inability to access that \"what it\'s likeness\".", "Qualia are subjective."]] },
-    { id: 16619, chapter: 'Epistemology', title: 'Problem of Induction', prompt: 'David Hume\'s \"Problem of Induction\" argues that our belief that the future will resemble the past:', correct: 'Cannot be rationally justified by either logic or experience', wrong: [["Is a fundamental law of physics", "Hume says it\'s a \"habit of mind\", not a proven law of reason.", "Circular reasoning problem."], ["Is proven every time the sun rises", "Using the past to prove the future is exactly what is at issue; it\'s circular.", "You can\'t use induction to prove induction."], ["Is a direct revelation from God", "Hume was a naturalist/skeptic on this point.", "Custom is the great guide of life, but not Reason."]] },
-    { id: 16620, chapter: 'Political Philosophy', title: 'Veil of Ignorance', prompt: 'John Rawls\' \"Veil of Ignorance\" is a thought experiment where you design a society without knowing:', correct: 'Your own social status, wealth, talents, or identity', wrong: [["What the laws of physics are", "You know general facts about economics and psychology.", "It ensures \"fairness\"."], ["Whether God exists or not", "The veil is about social position and personal \"accidents of birth\".", "Think of a \"neutral\" starting point."], ["How to read or write", "Participants are rational and informed about the world.", "Bias-reduction through ignorance of self."]] },
-    { id: 16621, chapter: 'Ethics', title: 'Euthyphro Dilemma', prompt: 'The "Euthyphro Dilemma" asks whether something is good because God loves it, or:', correct: 'God loves it because it is good', wrong: [["God hates it because it is bad", "That is just the inverse, not the other \"horn\" of the dilemma.", "The dilemma is about the source of morality."], ["Bad people think it is good", "This is about the relationship between Divinity and Morality.", "Is morality arbitrary (God\'s whim) or independent (Standard)?"], ["God is the only thing that is good", "This doesn't address whether the \"goodness\" is defined by God\'s will.", "Socrates vs Euthyphro."]] },
-    { id: 16622, chapter: 'Philosophy of Mind', title: 'Mary\'s Room', prompt: 'Frank Jackson\'s \"Mary\'s Room\" (the Knowledge Argument) aims to prove that:', correct: 'Physicalism is false because there are non-physical facts about experience', wrong: [["Women are better at science than men", "Mary is a scientist, but the point is about \"qualia\".", "Does she learn something new when she sees red?"], ["Isolation leads to insanity", "The experiment assumes Mary is a brilliant, functioning scientist.", "She knows all physical facts, but lacks the experience."], ["Color is a property of objects, not the mind", "It\'s about whether the \"feeling\" of red is a physical fact.", "Knowledge vs Experience."]] },
-    { id: 16623, chapter: 'Metaphysics', title: 'Personal Identity Fission', prompt: 'Derek Parfit\'s \"Fission\" cases (where a person is split into two identical survivors) are used to argue that:', correct: 'Identity is not what matters for survival', wrong: [["We should never use teleporters", "Parfit uses them to challenge our concepts, not to give safety advice.", "Identity is \"all or nothing\", survival can be shared."], ["Souls can be divided like cells", "Parfit is a reductionist/physicalist who doesn't rely on souls.", "The \"self\" is a bundle."], ["You are identical to your brain only", "Fission shows that having \"your\" brain in two bodies makes \"identity\" break down.", "Survival is about psychological continuity."]] },
-    { id: 16624, chapter: 'Ethics', title: 'Error Theory', prompt: 'J.L. Mackie\'s \"Error Theory\" about morality claims that:', correct: 'Moral claims are cognitive (aim for truth) but they are all systematically false', wrong: [["Morality is just a matter of personal opinion", "That is subjectivism. Error theory says we \"try\" to speak about objective facts that don't exist.", "Moral facts would be \"queer\"."], ["We should stop caring about right and wrong", "Mackie explains why we have the error, not necessarily that we should abandon all behavior.", "The \"argument from queerness\"."], ["Only scientific facts are true", "Mackie specifically targets moral properties as being unlike anything else in the universe.", "A \"moral fact\" would be an objective \"must-be-done-ness\"."]] },
-    { id: 17201, chapter: "Stretch Zone", title: "Epistemology: Gettier Problem", prompt: "Edmund Gettier's famous 1963 paper challenged the traditional definition of knowledge as:", correct: "Justified True Belief (JTB), by showing cases where JTB does not constitute knowledge.", wrong: [["Absolute certainty.", "Descartes focused on certainty; Gettier focused on JTB.", "You can have a justified true belief by pure luck."], ["Empirical observation.", "Gettier's critique was logical, not specifically anti-empiricist.", "Think of the 'man who will get the job has 10 coins in his pocket' example."], ["The scientific method.", "It was a critique of philosophical epistemology.", "He showed JTB is necessary but not sufficient."]] },
-    { id: 17202, chapter: "Stretch Zone", title: "Metaphysics: Mind-Body Dualism", prompt: "Descartes' substance dualism asserts that:", correct: "The mind (res cogitans) and the body (res extensa) are fundamentally distinct and separable substances.", wrong: [["The mind is simply an illusion created by the brain.", "That is eliminative materialism.", "Descartes believed the mind was the only thing he could know for certain."], ["The physical universe is all that exists.", "That is physicalism/materialism.", "He posited two realms: thought and extension."], ["Mind and body are two attributes of a single underlying substance.", "That is Spinoza's property dualism/monism.", "Descartes thought they could exist independently."]] },
-    { id: 17203, chapter: "Stretch Zone", title: "Ethics: Kant's Categorical Imperative", prompt: "The first formulation of Kant's Categorical Imperative demands that you act only according to a maxim that you can:", correct: "Will to become a universal law of nature.", wrong: [["Use to maximize the greatest good for the greatest number.", "That is utilitarianism.", "Kant was a deontologist; consequences don't matter, duty does."], ["Defend based on your personal cultural values.", "Kant believed ethics were universal and rational, not relativistic.", "If everyone lied, the concept of truth would collapse."], ["Use to achieve your personal goals.", "That is a hypothetical imperative.", "It must apply unconditionally to all rational beings."]] },
-    { id: 17204, chapter: "Stretch Zone", title: "Ethics: Utilitarianism", prompt: "According to John Stuart Mill's rule utilitarianism, an action is morally right if:", correct: "It conforms to a rule that, if generally followed, would maximize overall societal happiness.", wrong: [["It maximizes happiness in that specific, isolated instance.", "That is act utilitarianism.", "Mill believed rules protected rights and long-term utility."], ["It fulfills a duty commanded by God.", "That is Divine Command Theory.", "It is still based on consequences (happiness)."], ["It ensures perfect equality of outcomes.", "Utilitarianism maximizes the total sum, it does not guarantee equal distribution.", "Focus on the 'rules'."]] },
-    { id: 17205, chapter: "Stretch Zone", title: "Logic: Deductive Validity", prompt: "A deductive argument is considered 'valid' if and only if:", correct: "It is impossible for the premises to be true and the conclusion to be false simultaneously.", wrong: [["The premises are factually true in the real world.", "An argument can be valid with false premises (e.g., 'All pigs fly. I am a pig. I fly.').", "Validity is about the logical structure."], ["The conclusion is likely to be true based on the evidence.", "That describes inductive strength.", "Deduction provides absolute logical guarantees."], ["It is persuasive to a rational audience.", "Rhetoric is about persuasion; logic is about structural truth-preservation.", "Form matters, not content."]] },
-    { id: 17206, chapter: "Stretch Zone", title: "Political Philosophy", prompt: "John Rawls uses the 'Veil of Ignorance' thought experiment to ensure that:", correct: "Principles of justice are chosen without bias regarding one's own social position, wealth, or abilities.", wrong: [["The philosopher king retains absolute power.", "That is Plato's Republic.", "Rawls wanted a fair social contract."], ["Everyone is forced to be strictly equal in outcome.", "Rawls allows inequality if it benefits the least advantaged (Difference Principle).", "You don't know who you will be in the society you design."], ["Property rights are established as absolute.", "That is closer to Robert Nozick's libertarianism.", "Justice as Fairness requires impartial deliberation."]] },
-    { id: 17207, chapter: "Stretch Zone", title: "Existentialism: Bad Faith", prompt: "For Jean-Paul Sartre, 'bad faith' (mauvaise foi) occurs when a person:", correct: "Denies their radical freedom and acts as if they are an object determined by external circumstances.", wrong: [["Lies to another person for personal gain.", "Bad faith is a lie to oneself about one's ontological freedom.", "Think of the waiter who plays the role of a waiter too perfectly."], ["Believes in God without empirical evidence.", "While Sartre was an atheist, bad faith is specifically about freedom, not just religion.", "Existence precedes essence."], ["Fails to follow the categorical imperative.", "That is Kantian ethics.", "You must take absolute responsibility for your choices."]] },
-    { id: 17208, chapter: "Stretch Zone", title: "Philosophy of Science", prompt: "Karl Popper argued that the defining criterion of a scientific theory is its:", correct: "Falsifiability\u2014the capacity to be proven wrong by empirical evidence.", wrong: [["Verifiability\u2014the ability to be proven absolutely true.", "Popper argued you can never prove a universal law true, only false.", "The black swan problem."], ["Consensus\u2014the agreement of the scientific community.", "That is closer to Kuhn's idea of paradigms.", "A theory must make risky predictions."], ["Mathematical elegance.", "Elegance is nice, but empirical testing is the demarcation criterion.", "Psychoanalysis and Marxism failed this test, according to Popper."]] },
-    { id: 17209, chapter: "Stretch Zone", title: "Aesthetics", prompt: "According to Kantian aesthetics, a pure judgment of taste must be 'disinterested,' meaning:", correct: "It is not based on any personal desire, utility, or moral interest in the existence of the object.", wrong: [["The viewer finds the artwork boring.", "It means free from bias, not lacking emotion or engagement.", "You appreciate its form for its own sake."], ["The artwork has no commercial value.", "It's about the viewer's psychological state, not the market.", "You do not want to own or consume the object."], ["It is judged purely by its moral message.", "Kant strictly separated aesthetic judgment from moral judgment.", "It is 'purposiveness without a purpose'."]] },
-    { id: 17210, chapter: "Stretch Zone", title: "Philosophy of Language", prompt: "In Wittgenstein's later philosophy (Philosophical Investigations), the meaning of a word is defined by:", correct: "Its use within a specific 'language-game,' rather than an inherent connection to an object.", wrong: [["Its logical mapping to a state of affairs in the world.", "That was his early philosophy in the Tractatus Logico-Philosophicus.", "Meaning is social and context-dependent."], ["The dictionary definition determined by experts.", "Wittgenstein believed ordinary use determined meaning.", "Words are tools used in forms of life."], ["An eternal Platonic form it represents.", "He rejected essentialist theories of meaning.", "Think of the concept of a 'game'\u2014it has no single essence, only family resemblances."]] },
+    {
+      id: 16601,
+      chapter: 'Doing Philosophy',
+      title: 'Argument clue',
+      prompt: 'A philosophical argument is not a shouting match; it is a little bridge from reasons to a claim. If someone says "we should change this rule because it treats similar people differently," what is the argument mainly made of?',
+      correct: 'A set of reasons supporting a conclusion',
+      wrong: [['Any loud disagreement', 'Arguments in philosophy are about reasoning, not volume.', 'Focus on premises and conclusion.'], ['A claim with no supporting reasons', 'Mere claims are not arguments — arguments give reasons.', 'Think structured reasoning.'], ['A random question with no support', 'Philosophical arguments involve justification.', 'Reasons matter.']],
+      lesson: 'A philosophical argument has at least one premise and a conclusion. The premise gives a reason; the conclusion is the claim the reason is meant to support. You can picture it like a tiny bridge: reasons on one bank, conclusion on the other, and logic holding the planks together.\n\nThe cute trap is thinking "argument" means "fight." In philosophy, a calm sentence can be an argument if it offers support, and a dramatic speech can fail to be one if it never gives a reason.',
+      mentorHint: 'Look for the answer that mentions reasons plus a conclusion. Volume, vibes, and random wondering do not make an argument.',
+      alternatePrompts: {
+        plain: 'When philosophers talk about an argument, they mean a structured piece of reasoning. Which option best describes that structure?',
+        teaching: 'Imagine a friend claims a school rule is unfair and then gives two reasons why. In philosophy, what makes that more than just an opinion?',
+      },
+      challengeRating: 2,
+    },
+    {
+      id: 16602,
+      chapter: 'Knowledge and Skepticism',
+      title: 'Knowledge idea',
+      prompt: 'A lucky guess can land on the truth, but philosophers usually want knowledge to be more than lucky correctness. In the classic three-part JTB model, what must knowledge include?',
+      correct: 'Justified true belief',
+      wrong: [['A really good guess', 'A guess lacks justification even if true.', 'Think JTB.'], ['A strongly held opinion alone', 'Strength of conviction is not justification.', 'Use the classic tripartite definition.'], ['A colorful dream', 'Dreams are not the standard definition of knowledge.', 'Choose the belief-based clue.']],
+      lesson: 'JTB stands for justified true belief. Belief means the person accepts the claim; truth means the claim matches reality; justification means the person has good reasons or evidence.\n\nThe model is useful because it separates knowledge from lucky guessing. If you guess the answer to a locked-box puzzle and happen to be right, you have truth and maybe belief, but not the evidence that would turn the hit into knowledge.',
+      mentorHint: 'Check for all three ingredients: the person believes it, it is true, and they have a good reason for believing it.',
+      alternatePrompts: {
+        plain: 'In the traditional JTB account, what three ingredients are supposed to make a belief count as knowledge?',
+        teaching: 'You guessed the cafe has oat milk and you were right, but you had no evidence. Which classic definition explains why that is not yet knowledge?',
+      },
+      challengeRating: 3,
+    },
+    {
+      id: 16603,
+      chapter: 'Ethics and Moral Theory',
+      title: 'Ethics focus',
+      prompt: 'Ethics asks the "what should we do?" questions, not just the "what happened?" questions. If a class debates whether it is fair to keep a promise that now hurts someone, which branch of philosophy are they using?',
+      correct: 'Moral values and right conduct',
+      wrong: [['The descriptive study of market prices', 'That is economics, which is descriptive rather than normative.', 'Ethics is about behavior and values.'], ['Empirical questions about engineering systems', 'That is applied science, not the study of right conduct.', 'Focus on moral questions.'], ['Quantitative questions in physics', 'That belongs to natural science.', 'Choose the conduct clue.']],
+      lesson: 'Ethics is moral philosophy: the study of right and wrong, good and bad, duty, harm, fairness, and how people ought to live. It is normative, meaning it asks what should be the case, not merely what is the case.\n\nA weather report can tell you that it is raining. Ethics asks whether you should share your umbrella with someone who forgot theirs. Same puddle, much trickier question.',
+      mentorHint: 'Look for the option about right conduct and moral value. Ethics lives in "ought," not just "is."',
+      alternatePrompts: {
+        plain: 'Which branch of philosophy studies questions about right action, moral value, and how we ought to live?',
+        teaching: 'A friend asks whether lying is ever morally allowed. What area of philosophy has just entered the chat, holding a tiny clipboard?',
+      },
+      challengeRating: 2,
+    },
+    {
+      id: 16604,
+      chapter: 'Doing Philosophy',
+      title: 'Logic tool',
+      prompt: 'In an argument, a conclusion is the claim being defended. What job does a premise do for that conclusion?',
+      correct: 'Provide support or evidence for a conclusion',
+      wrong: [['Restate the conclusion in different words', 'A premise must give independent support, not just restate the conclusion.', 'Think evidence.'], ['Signal the end of an argument', 'Conclusions end arguments; premises support them.', 'Premises build the case.'], ['Express an emotional reaction', 'Philosophical arguments rely on reasons, not feelings.', 'Use the support-for-conclusion idea.']],
+      lesson: 'A premise is a reason offered in support of a conclusion. If the conclusion is "this rule is unfair," a premise might be "it punishes two students differently for the same action."\n\nGood premise spotting makes philosophy less foggy. First underline the claim someone wants you to accept, then ask: what reasons are supposed to carry it there?',
+      mentorHint: 'Premises are the support beams. Find the answer that makes them reasons, not endings or feelings.',
+      alternatePrompts: {
+        plain: 'What is the role of a premise in a philosophical or logical argument?',
+        teaching: 'If the conclusion is the treasure chest, what does a premise do on the little reasoning map that leads to it?',
+      },
+      challengeRating: 2,
+    },
+    {
+      id: 16605,
+      chapter: 'Doing Philosophy',
+      title: 'Logical Validity',
+      prompt: 'A deductive argument can be valid even when its premises are silly. What matters is the logical lock: if the premises were true, what would have to happen to the conclusion?',
+      correct: 'If the premises are true, the conclusion MUST be true',
+      wrong: [["The conclusion is definitely true in the real world", "An argument can be valid even if the premises are false. Validity is about the structure.", "Validity = logical necessity given the premises."], ["The argument is written in very fancy language", "Logic is about reasoning, not style.", "A valid argument can be simple."], ["Everyone agrees with the conclusion", "Agreement doesn't determine logical validity.", "Think of the \"if... then...\" connection."]],
+      lesson: 'Validity is about structure, not factual truth. A deductive argument is valid when it is impossible for the premises to be true and the conclusion false at the same time.\n\nThat means a valid argument can still be unsound if its premises are false. "All sandwiches are astronauts; Craig is a sandwich; therefore Craig is an astronaut" has a valid shape but a deeply unwell sandwich premise.',
+      mentorHint: 'Do not ask whether the premises are actually true yet. Ask whether they would force the conclusion if they were true.',
+      alternatePrompts: {
+        plain: 'What does it mean for a deductive argument to be valid?',
+        teaching: 'Suppose an argument has nonsense premises but the conclusion follows perfectly from them. Which answer captures that logical structure?',
+      },
+      challengeRating: 3,
+    },
+    {
+      id: 16606,
+      chapter: 'Branches of Philosophy',
+      title: 'Metaphysics vs Ethics',
+      prompt: 'Some philosophy questions ask what we should do; others ask what reality is made of in the first place. Which branch studies existence, being, identity, time, and the ultimate nature of reality?',
+      correct: 'Metaphysics',
+      wrong: [["Ethics", "Ethics studies right and wrong behavior and moral values.", "Metaphysics = \"after physics\"."], ["Epistemology", "Epistemology is the study of knowledge and belief.", "Think of the \"what is\" question."], ["Aesthetics", "Aesthetics studies beauty and art.", "Existence is a metaphysical question."]],
+      lesson: 'Metaphysics is the branch of philosophy that asks what reality is like at the deepest level. It includes questions about existence, identity, time, causation, possibility, and whether things like minds, numbers, or universals are real.\n\nA quick sorting trick: ethics asks "what should we do?", epistemology asks "how do we know?", and metaphysics asks "what is there, and what is it like?"',
+      mentorHint: 'Listen for the biggest "what exists?" energy. That points to metaphysics, not ethics or aesthetics.',
+      alternatePrompts: {
+        plain: 'Which branch of philosophy studies being, existence, identity, and the basic structure of reality?',
+        teaching: 'If a philosopher asks whether time is real or whether you remain the same person over years of change, which branch are they exploring?',
+      },
+      challengeRating: 3,
+    },
+    {
+      id: 16607,
+      chapter: 'Epistemology',
+      title: 'Plato\'s Cave',
+      prompt: 'In Plato\'s cave story, prisoners see only shadows and mistake them for the whole world. What do those shadows represent in the allegory?',
+      correct: 'The deceptive world of sensory appearances',
+      wrong: [["The ultimate truth of reality", "The shadows are illusions; the sun outside represents the truth.", "Prisoners see shadows and think they are real."], ["The ghosts of dead philosophers", "The allegory is about knowledge and education, not ghosts.", "The cave is the physical world."], ["Evil demons trying to trick us", "Descartes used the evil demon; Plato used shadows and puppets.", "Think of \"appearance\" vs \"reality\"."]],
+      lesson: 'Plato\'s cave is an allegory about mistaking appearances for reality. The prisoners see shadows on a wall and treat them as the truth because they have never turned around or left the cave.\n\nThe story is not about spooky shadows. It is about education: philosophy is the painful but liberating turn from familiar appearances toward deeper understanding.',
+      mentorHint: 'Pair the shadows with appearance and illusion. The sun/outside world is the truth side of the story.',
+      alternatePrompts: {
+        plain: 'In Plato\'s Allegory of the Cave, what are the shadows on the cave wall meant to symbolize?',
+        teaching: 'If someone has only ever seen shadows and thinks they are reality, what philosophical contrast is Plato dramatizing?',
+      },
+      challengeRating: 3,
+    },
+    {
+      id: 16608,
+      chapter: 'Ethics',
+      title: 'Utilitarianism',
+      prompt: 'A utilitarian acts like a moral scorekeeper for overall well-being, not just personal comfort. Which goal best captures the core utilitarian principle?',
+      correct: 'The greatest happiness for the greatest number',
+      wrong: [["The most wealth for the individual", "That is egoism, not utilitarianism.", "Utilitarianism is impartial and altruistic."], ["The most beautiful works of art", "That would be a form of aestheticism.", "Utility is usually defined as pleasure or well-being."], ["Strict adherence to all laws", "Sometimes utility requires breaking a law if it prevents more suffering.", "Maximize the good."]],
+      lesson: 'Utilitarianism is a consequentialist theory: it judges actions by their outcomes. The classic slogan is to promote the greatest happiness, welfare, or utility for the greatest number.\n\nThis can make utilitarianism powerful and awkward. It asks you to count everyone\'s well-being impartially, even when your favorite option is wearing a tiny crown and waving from your own side.',
+      mentorHint: 'Look for consequences and total well-being. If the answer is about duty, law, or personal gain, it is probably not utilitarianism.',
+      alternatePrompts: {
+        plain: 'What outcome does utilitarianism tell us to maximize when deciding what is morally right?',
+        teaching: 'A city has to choose the policy that creates the most overall well-being, even if no option is perfect. Which ethical theory thinks that way?',
+      },
+      challengeRating: 3,
+    },
+    {
+      id: 16609,
+      chapter: 'Doing Philosophy',
+      title: 'Ad Hominem Fallacy',
+      prompt: 'A debate goes off the rails when someone stops answering the claim and starts insulting the person who made it. Which fallacy is that?',
+      correct: 'Attacks the person making the argument rather than the argument itself',
+      wrong: [["Misrepresents an opponent's position to make it easier to attack", "That is a Straw Man fallacy.", "Ad hominem = \"to the man\"."], ["Assumes the conclusion in one of the premises", "That is \"begging the question\" or circular reasoning.", "Focus on the personal attack."], ["Claims something is true just because a famous person said it", "That is an appeal to authority.", "Attacking the character, not the claim."]],
+      lesson: 'Ad hominem means "to the person." The fallacy happens when someone attacks a speaker\'s character, background, or motives instead of dealing with the argument.\n\nSometimes facts about a person matter, such as conflicts of interest or expertise. The fallacy is the lazy move where the personal jab replaces the reasoning. Tiny mud pie, no logic inside.',
+      mentorHint: 'Ask whether the reply engages the claim or swerves into a personal attack.',
+      alternatePrompts: {
+        plain: 'What happens in an ad hominem fallacy?',
+        teaching: 'Someone argues that a policy is unfair, and the reply is "you are annoying." What mistake just happened?',
+      },
+      challengeRating: 2,
+    },
+    {
+      id: 16610,
+      chapter: 'Doing Philosophy',
+      title: 'Modus Ponens',
+      prompt: 'Modus ponens is the clean "if this, then that" move. If P guarantees Q, and P is actually true, which conclusion follows?',
+      correct: 'If P then Q; P; Therefore Q',
+      wrong: [["If P then Q; Q; Therefore P", "That is the fallacy of \"affirming the consequent\".", "Modus Ponens is the \"mode of putting\"."], ["If P then Q; Not Q; Therefore Not P", "That is \"Modus Tollens\" (the mode of taking).", "Start with P, get Q."], ["Either P or Q; Not P; Therefore Q", "That is a \"disjunctive syllogism\".", "Conditional reasoning."]],
+      lesson: 'Modus ponens has the form: if P then Q; P; therefore Q. It is valid because the first premise says P is enough to bring Q along, and the second premise says P happened.\n\nExample: If the kettle is boiling, the water is hot. The kettle is boiling. Therefore the water is hot. Little logic kettle, extremely obedient.',
+      mentorHint: 'Start with P. Modus ponens affirms the antecedent, then takes Q with it.',
+      alternatePrompts: {
+        plain: 'Which symbolic form represents modus ponens?',
+        teaching: 'If a rule says "If P, then Q," and you are told P is true, what valid deductive move can you make?',
+      },
+      challengeRating: 3,
+    },
+    {
+      id: 16611,
+      chapter: 'Epistemology',
+      title: 'JTB Analysis',
+      prompt: 'The JTB model is a classic attempt to define knowledge without counting lucky guesses. What does JTB say knowledge is?',
+      correct: 'Justified True Belief',
+      wrong: [["Just the Truth itself", "You can have truth without knowing it (like a lucky guess).", "Knowledge needs a subject who believes it."], ["Anything you strongly feel is certain", "Feelings of certainty don't guarantee truth or justification.", "Belief is necessary but not sufficient."], ["Any belief that makes you happy", "Pragmatism might value useful beliefs, but JTB requires truth and reason.", "Check the three letters: J, T, B."]],
+      lesson: 'JTB stands for justified true belief. The thought is that knowledge requires a believer, a true claim, and good support for that claim.\n\nEach piece blocks a different fake-out: truth blocks false beliefs, belief blocks facts nobody accepts, and justification blocks lucky guesses. Gettier cases later show that even this tidy trio is not enough by itself.',
+      mentorHint: 'Expand the initials. J is the evidence part, T is the reality part, and B is the person accepting the claim.',
+      alternatePrompts: {
+        plain: 'What do the letters JTB stand for in the traditional analysis of knowledge?',
+        teaching: 'A belief is true and supported by good evidence. Which classic three-part model is trying to call that knowledge?',
+      },
+      challengeRating: 3,
+    },
+    {
+      id: 16612,
+      chapter: 'Metaphysics',
+      title: 'Ship of Theseus',
+      prompt: 'A ship has every plank replaced one by one until none of the original wood remains. What identity question is the Ship of Theseus thought experiment designed to press?',
+      correct: 'Whether an object remains the same if all its parts are replaced over time',
+      wrong: [["How much weight a wooden boat can carry", "That is a physics/engineering question.", "The problem is about \"numerical identity\"."], ["Whether ships can have souls", "The problem is usually applied to physical objects and persistence.", "Identity through change."], ["Why the Greeks were so good at sailing", "That is history, not metaphysics.", "If every plank is new, is it the \"same\" ship?"]],
+      lesson: 'The Ship of Theseus asks about identity through change. If an object loses and replaces all its parts gradually, is it still the same object, or only a very convincing sequel?\n\nThe puzzle matters because people, bodies, cities, teams, and apps all change over time. Metaphysics asks what, if anything, makes the changed thing numerically the same thing.',
+      mentorHint: 'This is not about boats as engineering. It is about sameness over time when the parts change.',
+      alternatePrompts: {
+        plain: 'What philosophical problem does the Ship of Theseus thought experiment raise?',
+        teaching: 'If your favorite ship gets every plank replaced, has the same ship survived or has a new ship quietly taken over in a sailor hat?',
+      },
+      challengeRating: 3,
+    },
+    {
+      id: 16613,
+      chapter: 'Ethics',
+      title: 'Categorical Imperative',
+      prompt: 'Kant wants a moral rule to be fit for everyone, not just convenient for you in this moment. Under the categorical imperative, what kind of rule may you act on?',
+      correct: 'We could consistently will to become a universal law',
+      wrong: [["Make us feel the most satisfied", "Kant rejected feelings (inclinations) as the basis for morality.", "Duty is universal."], ["Our parents and teachers told us to follow", "Kant emphasized autonomy (giving the law to oneself).", "The \"Universal Law\" formulation."], ["Lead to the best consequences for everyone", "That is Utilitarianism, which Kant opposed.", "Focus on the \"form\" of the action, not the results."]],
+      lesson: 'Kant\'s categorical imperative tests maxims, or personal rules of action. The universal-law version asks whether you could rationally will your rule to be followed by everyone.\n\nIf your rule is "lie whenever it helps me," universalizing it breaks the practice of trusting promises. Kant is asking whether your rule can survive being copied by the whole moral neighborhood.',
+      mentorHint: 'Kant is not counting happiness here. Look for universality, consistency, and duty.',
+      alternatePrompts: {
+        plain: 'According to Kant\'s categorical imperative, what test should a personal rule pass before you act on it?',
+        teaching: 'If everyone copied your rule, would the rule still make sense? Which Kantian answer says that is the moral test?',
+      },
+      challengeRating: 4,
+    },
+    {
+      id: 16614,
+      chapter: 'Philosophy of Religion',
+      title: 'Problem of Evil',
+      prompt: 'The logical problem of evil asks whether a certain picture of God can fit with the existence of suffering. Which three claims create the classic tension?',
+      correct: 'God is all-powerful, all-good, and evil exists',
+      wrong: [["Evil is real, Hell is real, and people are free", "These could all be true together without a logical contradiction.", "The problem is about the nature of God."], ["God is one, God is three, and God is infinite", "That is a theological puzzle about the Trinity, not the problem of evil.", "Theodicy tries to solve this."], ["Science is true, Religion is true, and Nature is cruel", "While challenging, the \"Problem of Evil\" specifically targets the attributes of a Deity.", "Epicurus framed it as: Is He willing but not able?"]],
+      lesson: 'The logical problem of evil targets a triad: God is all-powerful, God is all-good, and evil exists. The challenge is to explain how all three can be true together without contradiction.\n\nThe puzzle is not simply "bad things happen." It is sharper: if a perfectly good being wants to prevent evil, and an all-powerful being can prevent evil, why is evil still here?',
+      mentorHint: 'Look for the three-part tension: power, goodness, and evil. Leave other theology puzzles on the shelf.',
+      alternatePrompts: {
+        plain: 'Which three claims are in tension in the logical problem of evil?',
+        teaching: 'A philosopher points at suffering and asks how it fits with a God who is both perfectly good and unlimited in power. Which answer names that pressure point?',
+      },
+      challengeRating: 4,
+    },
+    {
+      id: 16615,
+      chapter: 'Epistemology',
+      title: 'Gettier Cases',
+      prompt: 'Gettier cases are little epistemology traps where someone has evidence, believes a true claim, and still seems lucky rather than knowledgeable. What do these cases show about the classic JTB definition of knowledge?',
+      correct: 'Justified True Belief is not SUFFICIENT for knowledge',
+      wrong: [["We can never truly know anything (Skepticism)", "Gettier assumed we have knowledge but showed our \"definition\" was wrong.", "You can have JTB but still only have \"luck\"."], ["Justification is unnecessary if you have the truth", "Gettier cases have truth and justification, but still feel like \"not knowledge\".", "The \"luck\" factor is the issue."], ["All beliefs are actually false", "Gettier's subjects have true beliefs.", "Think of the man who \"knows\" the time from a broken clock that happens to be right."]],
+      lesson: 'A Gettier case has all three JTB ingredients: the person believes the claim, the claim is true, and the person has justification. The problem is that the truth is connected to the justification by luck rather than by the right kind of reliable link.\n\nImagine glancing at a stopped clock that happens to show the correct time. Your belief is true and normally justified, but you got lucky. Gettier cases show JTB is not sufficient for knowledge; they do not show that knowledge is impossible.',
+      mentorHint: 'Check whether all three JTB ingredients are present, then ask whether luck breaks the connection between the reason and the truth.',
+      alternatePrompts: {
+        plain: 'What lesson do Gettier cases teach about justified true belief as a definition of knowledge?',
+        teaching: 'A stopped clock tells the right time by accident. You believe it, it is true, and you had a normal reason. Why might this still fail to be knowledge?',
+      },
+      challengeRating: 5,
+    },
+    {
+      id: 16616,
+      chapter: 'Metaphysics',
+      title: 'Determinism vs Compatibilism',
+      prompt: 'Imagine every event has prior causes, but you still choose based on your own reasons, desires, and character. What does a compatibilist claim about free will and determinism?',
+      correct: 'Free will and determinism can both be true at the same time',
+      wrong: [["Free will is an illusion and everything is determined", "That is hard determinism, not compatibilism.", "Compatibilists try to reconcile freedom with causal order."], ["Human actions are completely random", "Randomness is not the same as agency or responsibility.", "Compatibilists usually want freedom to involve reasons, not chaos."], ["We have no choice because God knows the future", "That is closer to theological fatalism.", "This question is about determinism and human agency."]],
+      lesson: 'Compatibilism says determinism and free will can fit together. The trick is redefining freedom: you are free when your action flows from your own motives, reasoning, and character rather than from external coercion.\n\nSo the compatibilist does not need actions to be uncaused. They ask whether the causes run through you in the right way. Tiny steering wheel, still attached to a road.',
+      solution: 'The compatibilist answer is that free will and determinism can both be true. Determinism says actions have causes; compatibilism says an action can still be free if it comes from the person\'s own deliberation rather than force, compulsion, or manipulation.',
+      mentorHint: 'Do not equate determinism with hopelessness. Compatibilists look for a version of freedom that works inside a caused world.',
+      alternatePrompts: {
+        plain: 'What does compatibilism say about the relationship between free will and determinism?',
+        teaching: 'If your choices have causes but still come from your own reasons, which view says freedom might survive?',
+      },
+      challengeRating: 4,
+    },
+    {
+      id: 16617,
+      chapter: 'Philosophy of Mind',
+      title: 'Chinese Room',
+      prompt: 'In Searle\'s Chinese Room, a person follows a rulebook to produce convincing Chinese answers without understanding Chinese. What point is the thought experiment trying to make?',
+      correct: 'Following a set of rules (syntax) is not the same as understanding (semantics)',
+      wrong: [["Computers will eventually become smarter than humans", "The argument is not a prediction of computer power.", "It targets whether symbol manipulation is enough for understanding."], ["Translating languages is impossible for machines", "Machine translation can work practically; Searle is asking about understanding.", "The issue is syntax versus meaning."], ["The brain is just a biological computer", "Searle uses the example to resist reducing understanding to a program alone.", "The person can follow rules without grasping meaning."]],
+      lesson: 'The Chinese Room argues against the idea that running the right program automatically equals understanding. Syntax means manipulating symbols by rules; semantics means grasping what those symbols mean.\n\nThe person in the room can output perfect-looking answers by following instructions, but from the inside there is no understanding of the language. That gap is the philosophical pressure point.',
+      solution: 'Searle\'s point is that syntax is not semantics. A system might manipulate symbols correctly and still lack genuine understanding, just as the person in the room can follow a rulebook without knowing what the Chinese sentences mean.',
+      mentorHint: 'Separate rule-following from meaning. The room can produce the right symbols without understanding them.',
+      alternatePrompts: {
+        plain: 'What distinction is Searle drawing with the Chinese Room thought experiment?',
+        teaching: 'If someone can pass notes in a language by using a rulebook but understands none of it, what does that suggest about programs and meaning?',
+      },
+      challengeRating: 5,
+    },
+    {
+      id: 16618,
+      chapter: 'Philosophy of Mind',
+      title: 'Nagel\'s Bat',
+      prompt: 'Nagel asks us to imagine knowing every physical fact about echolocation and winged flight while still missing the inside feel of that life. What is his point about consciousness?',
+      correct: 'Subjective conscious experience cannot be fully captured by objective physical descriptions',
+      wrong: [["Bats have a more complex moral system than humans", "The essay is about consciousness, not ethics.", "The topic is first-person experience."], ["We should use sonar technology to understand the brain", "Technology is not the conclusion of the thought experiment.", "The issue is whether objective facts capture what experience feels like."], ["Animals do not have conscious minds", "Nagel assumes bats have experience; that is what creates the problem.", "The question is whether we can capture that experience objectively."]],
+      lesson: 'Nagel\'s famous question is about subjectivity. You might know all the neuroscience, physics, and behavior involved in another form of life, but still not know what it is like from that creature\'s own point of view.\n\nThe argument challenges purely objective accounts of mind. Conscious experience has a first-person feel, and that feel may not be fully translated into third-person description.',
+      solution: 'Nagel argues that objective physical descriptions leave something out: the subjective character of experience. Knowing all the external facts about a conscious life does not automatically give you the first-person feel of living it.',
+      mentorHint: 'Listen for the contrast between outside facts and inside experience. Nagel is pressing the first-person side.',
+      alternatePrompts: {
+        plain: 'What does Nagel\'s bat example suggest about objective science and subjective experience?',
+        teaching: 'Could you know every physical fact about a form of perception and still not know what it feels like from the inside?',
+      },
+      challengeRating: 5,
+    },
+    {
+      id: 16619,
+      chapter: 'Epistemology',
+      title: 'Problem of Induction',
+      prompt: 'The toaster has worked every morning so far, so you expect it to work tomorrow. What did Hume think is philosophically tricky about that move from past pattern to future expectation?',
+      correct: 'Cannot be rationally justified by either logic or experience',
+      wrong: [["Is a fundamental law of physics", "Hume treats the expectation as habit or custom, not a proven law of reason.", "The issue is justification."], ["Is proven every time the sun rises", "Using more past cases to justify future cases repeats the same inductive move.", "That risks circular reasoning."], ["Is a direct revelation from God", "Hume is analyzing human reasoning and habit here, not appealing to revelation.", "Stay with the past-to-future inference."]],
+      lesson: 'Induction is reasoning from observed patterns to unobserved cases: the sun has risen before, so it will rise tomorrow. Hume\'s problem is that logic alone does not prove the future must resemble the past, and experience only shows that the past has worked so far.\n\nThat does not mean you should stop using toasters or hide from breakfast. It means induction is practically unavoidable but hard to justify without sneaking induction into the proof.',
+      solution: 'Hume argues that our expectation that the future will resemble the past cannot be justified by pure logic or by experience without circularity. Experience tells us past regularities held in the past, but using that to prove future regularities already assumes induction.',
+      mentorHint: 'Watch for circularity: you cannot prove induction by saying induction has worked before.',
+      alternatePrompts: {
+        plain: 'What is Hume\'s problem of induction?',
+        teaching: 'If every sunrise so far makes you expect another one tomorrow, what hard question does Hume ask about that expectation?',
+      },
+      challengeRating: 5,
+    },
+    {
+      id: 16620,
+      chapter: 'Political Philosophy',
+      title: 'Veil of Ignorance',
+      prompt: 'Rawls asks you to design society before you know whether you will be rich or poor, healthy or ill, powerful or ignored. What does the veil of ignorance hide from you?',
+      correct: 'Your own social status, wealth, talents, or identity',
+      wrong: [["What the laws of physics are", "Rawls lets you know general facts about society and human life.", "The veil hides your personal position."], ["Whether God exists or not", "The thought experiment is about fairness in social design, not theology.", "It removes self-serving knowledge."], ["How to read or write", "The parties are imagined as rational and informed.", "They just do not know which social role will be theirs."]],
+      lesson: 'The veil of ignorance is a fairness device. Rawls asks people to choose principles of justice without knowing their own class, talents, identity, wealth, health, or social position.\n\nThat ignorance blocks rigging the rules for yourself. If you might wake up anywhere in the society you design, you have a strong reason to protect basic liberties and care about the worst-off position.',
+      solution: 'The veil hides facts about your own place in society: status, wealth, talents, identity, and similar personal advantages or disadvantages. Rawls uses that ignorance to make the choice of social rules more impartial.',
+      mentorHint: 'The veil does not erase all knowledge. It erases the facts that would let you design society selfishly.',
+      alternatePrompts: {
+        plain: 'What information is hidden behind Rawls\' veil of ignorance?',
+        teaching: 'If you had to choose social rules before knowing which life you would get, what personal information would be missing?',
+      },
+      challengeRating: 4,
+    },
+    {
+      id: 16621,
+      chapter: 'Ethics',
+      title: 'Euthyphro Dilemma',
+      prompt: 'Socrates presses a famous question about divine command: is something good because God loves it, or does God love it for another reason? What is the second horn of the dilemma?',
+      correct: 'God loves it because it is good',
+      wrong: [["God hates it because it is bad", "That reverses the wording but misses the dilemma about the source of goodness.", "The second horn makes goodness independent."], ["Bad people think it is good", "The dilemma is not about human disagreement.", "It is about whether morality depends on divine approval."], ["God is the only thing that is good", "That does not answer whether goodness is created by divine will or recognized by it.", "Focus on the order of explanation."]],
+      lesson: 'The Euthyphro dilemma asks whether moral goodness depends on divine approval. If something is good only because God loves it, morality can look arbitrary. If God loves it because it is good, then goodness seems independent of God\'s approval.\n\nIt is a compact little fork in the road: does authority create value, or recognize value?',
+      solution: 'The second horn is that God loves the good because it is already good. That answer avoids arbitrariness, but it raises the question of whether moral goodness exists independently of divine command.',
+      mentorHint: 'Track the direction: does divine love make the thing good, or respond to goodness already there?',
+      alternatePrompts: {
+        plain: 'What question does the Euthyphro dilemma raise about God and morality?',
+        teaching: 'If a rule is good, is it good because the highest authority commands it, or does the authority command it because it is good?',
+      },
+      challengeRating: 5,
+    },
+    {
+      id: 16622,
+      chapter: 'Philosophy of Mind',
+      title: 'Mary\'s Room',
+      prompt: 'Mary knows every physical fact about color while living in a black-and-white room. When she sees red for the first time, what challenge does the thought experiment raise?',
+      correct: 'Physicalism is false because there are non-physical facts about experience',
+      wrong: [["Women are better at science than men", "Mary being a scientist is just part of the setup, not the philosophical point.", "The issue is experience and physical facts."], ["Isolation leads to insanity", "The room is a thought experiment about knowledge, not a psychology study of isolation.", "Ask what Mary learns."], ["Color is a property of objects, not the mind", "The puzzle is about whether the experience of red is captured by physical description.", "The key word is qualia."]],
+      lesson: 'Mary\'s Room is the knowledge argument against physicalism. Mary knows all the physical science of color vision, but has never experienced color. When she sees red, it seems she learns what red looks like.\n\nIf she learns something new despite knowing all physical facts, then maybe there are facts about conscious experience that are not purely physical facts. That is the challenge.',
+      solution: 'The thought experiment argues that physical facts may not exhaust all facts. If Mary learns what red experience is like after already knowing all the physical information, then subjective experience seems to add something physicalism struggles to capture.',
+      mentorHint: 'Ask what Mary gains when she first sees red. The issue is experience, not whether she studied hard enough.',
+      alternatePrompts: {
+        plain: 'What is Mary\'s Room meant to challenge about physicalism?',
+        teaching: 'If a scientist knows all color physics but learns something when she finally sees red, what kind of fact might physicalism be missing?',
+      },
+      challengeRating: 6,
+    },
+    {
+      id: 16623,
+      chapter: 'Metaphysics',
+      title: 'Personal Identity Fission',
+      prompt: 'In a fission case, one person\'s psychology is copied into two future survivors. Why did Parfit think this makes strict personal identity less important than we assume?',
+      correct: 'Identity is not what matters for survival',
+      wrong: [["We should never use teleporters", "The thought experiment is a tool for analysis, not a simple travel warning.", "Focus on identity and survival."], ["Souls can be divided like cells", "Parfit does not rely on a soul theory to make the puzzle work.", "The issue is psychological continuity."], ["You are identical to your brain only", "The two-survivor case is meant to make one-to-one identity break down.", "Identity cannot simply be copied twice."]],
+      lesson: 'Parfit uses fission cases to separate survival from strict identity. If one person splits into two future people who both remember and continue that life, it cannot be true that the original is numerically identical to both.\n\nBut it still seems that something important survived. Parfit\'s lesson is that psychological continuity and connectedness may matter more than a single all-or-nothing identity label.',
+      solution: 'Parfit argues that strict identity is not what matters most for survival. In fission, one-to-one identity fails because there are two continuers, but psychological continuity can still preserve much of what we care about.',
+      mentorHint: 'If two future people both continue the earlier psychology, strict identity cannot attach to both. Ask what still matters.',
+      alternatePrompts: {
+        plain: 'What do Parfit\'s fission cases suggest about personal identity and survival?',
+        teaching: 'If two future versions of you wake up with your memories, why might survival be about continuity rather than strict one-person identity?',
+      },
+      challengeRating: 6,
+    },
+    {
+      id: 16624,
+      chapter: 'Ethics',
+      title: 'Error Theory',
+      prompt: 'Mackie\'s moral error theory says moral claims try to state objective truths, but the world does not contain the special moral facts they need. What does that imply about moral claims?',
+      correct: 'Moral claims are cognitive (aim for truth) but they are all systematically false',
+      wrong: [["Morality is just a matter of personal opinion", "That is closer to subjectivism; error theory says moral claims aim at objective truth and miss.", "It is more radical than preference talk."], ["We should stop caring about right and wrong", "Error theory is a metaethical claim about moral language and facts, not a full life plan.", "It says the claims are in error."], ["Only scientific facts are true", "Mackie is specifically targeting objective moral properties.", "The view is about moral facts, not every non-scientific statement."]],
+      lesson: 'Moral error theory is a form of moral anti-realism. It says ordinary moral claims behave like truth-claims, but they presuppose objective moral properties that do not exist.\n\nA friendly analogy: "this act has objective wrongness in it" would be like talking as if the universe contains a special wrongness ingredient. Mackie thinks that ingredient is not there, so the claims systematically fail.',
+      solution: 'Error theory says moral statements are cognitive because they aim to describe how things are, but they are systematically false because there are no objective moral facts of the kind they presuppose.',
+      mentorHint: 'Do not reduce it to personal taste. Error theory says moral claims aim at truth, but the truth-making moral facts are missing.',
+      alternatePrompts: {
+        plain: 'What does moral error theory claim about ordinary moral statements?',
+        teaching: 'If moral sentences try to report objective moral facts but those facts are not real, what follows about the sentences?',
+      },
+      challengeRating: 6,
+    },
+    {
+      id: 17201,
+      chapter: "Stretch Zone",
+      title: "Epistemology: Gettier Problem",
+      prompt: "In a Gettier-style case, someone has good evidence, believes a claim, and the claim is true, but luck is doing the secret wiring. What did Gettier challenge?",
+      correct: "Justified True Belief (JTB), by showing cases where JTB does not constitute knowledge.",
+      wrong: [["Absolute certainty.", "Descartes focused on certainty; Gettier focused on justified true belief.", "The target is the JTB definition."], ["Empirical observation.", "Gettier was not rejecting observation itself.", "The issue is lucky truth plus justification."], ["The scientific method.", "This is a problem in epistemology, not a critique of experiments as such.", "Ask what definition of knowledge is under pressure."]],
+      lesson: "Gettier cases challenge the idea that knowledge is simply justified true belief. They describe cases where someone has evidence and a true belief, but the truth arrives partly by luck.\n\nThat means JTB may be necessary, but it is not sufficient. The missing ingredient has to block lucky success from masquerading as knowledge.",
+      solution: "Gettier challenged the JTB definition of knowledge. His cases show that a person can have justification, truth, and belief while still falling short of knowledge because the connection between evidence and truth is too lucky.",
+      mentorHint: "Look for truth, belief, justification, and then the little lightning bolt of luck that ruins the definition.",
+      alternatePrompts: {
+        plain: "What definition of knowledge did Gettier cases put under pressure?",
+        teaching: "If a true belief is justified but lucky, why might it still fail to count as knowledge?",
+      },
+      challengeRating: 6,
+    },
+    {
+      id: 17202,
+      chapter: "Stretch Zone",
+      title: "Metaphysics: Mind-Body Dualism",
+      prompt: "Descartes thinks the thinking mind and the extended body are not just two labels for one stuff. What does substance dualism claim?",
+      correct: "The mind (res cogitans) and the body (res extensa) are fundamentally distinct and separable substances.",
+      wrong: [["The mind is simply an illusion created by the brain.", "That is closer to eliminative materialism.", "Descartes gives the mind its own kind of substance."], ["The physical universe is all that exists.", "That is physicalism or materialism.", "Dualism means two fundamentally different kinds."], ["Mind and body are two attributes of a single underlying substance.", "That is closer to Spinoza than Descartes.", "Descartes separates thinking substance from extended substance."]],
+      lesson: "Substance dualism says mind and body are fundamentally different kinds of thing. For Descartes, mind is thinking substance, while body is extended physical substance.\n\nThe view makes consciousness feel special, but it creates a hard follow-up question: if mind and body are so different, how do they interact when a decision becomes an action?",
+      solution: "Descartes' substance dualism claims that mind and body are distinct substances: the mind is essentially thinking, and the body is essentially extended in space. They are connected in human life but not identical.",
+      mentorHint: "Dualism means two basic kinds. Descartes separates thinking mind from extended body.",
+      alternatePrompts: {
+        plain: "What does Cartesian substance dualism say about mind and body?",
+        teaching: "If thought and physical extension are two different kinds of reality, which mind-body view are you using?",
+      },
+      challengeRating: 5,
+    },
+    {
+      id: 17203,
+      chapter: "Stretch Zone",
+      title: "Ethics: Kant's Categorical Imperative",
+      prompt: "Kant asks whether your personal rule could be copied by everyone without contradiction. Under the first formulation of the categorical imperative, what must your maxim be something you can do?",
+      correct: "Will to become a universal law of nature.",
+      wrong: [["Use to maximize the greatest good for the greatest number.", "That is utilitarian reasoning, not Kant's universal-law test.", "Kant is testing maxims, not summing happiness."], ["Defend based on your personal cultural values.", "Kant wants a rational and universal test, not local preference.", "The rule must apply beyond your convenience."], ["Use to achieve your personal goals.", "That is closer to a hypothetical imperative.", "The categorical imperative is unconditional."]],
+      lesson: "Kant's first formulation asks you to act only on a maxim you can rationally will as a universal law. A maxim is the rule you are really following, such as 'lie when it benefits me.'\n\nIf universalizing the rule breaks the practice it depends on, the rule fails. It is a moral copy-paste test: if everyone used it, would the rule still make sense?",
+      solution: "The maxim must be one you can will to become a universal law. That means the rule behind your action should be rationally fit for everyone, not just convenient for you in one case.",
+      mentorHint: "Ask whether the rule can survive being universalized. Kant is looking for consistency and duty.",
+      alternatePrompts: {
+        plain: "What does the first formulation of Kant's categorical imperative require?",
+        teaching: "If your private rule were copied by everyone, would it still work? Which Kantian test asks that?",
+      },
+      challengeRating: 6,
+    },
+    {
+      id: 17204,
+      chapter: "Stretch Zone",
+      title: "Ethics: Utilitarianism",
+      prompt: "Rule utilitarianism does not ask you to calculate from scratch every second. It asks whether the rule guiding an action would do what if generally followed?",
+      correct: "It conforms to a rule that, if generally followed, would maximize overall societal happiness.",
+      wrong: [["It maximizes happiness in that specific, isolated instance.", "That is act utilitarianism.", "Rule utilitarianism evaluates general rules."], ["It fulfills a duty commanded by God.", "That is divine command theory.", "This view is still consequence-based."], ["It ensures perfect equality of outcomes.", "Utilitarianism maximizes total welfare; equality may matter, but it is not the definition.", "Look for overall utility."]],
+      lesson: "Rule utilitarianism judges actions by asking whether they fit rules whose general adoption would maximize utility. It keeps the consequentialist goal, but it evaluates stable rules rather than every action in isolation.\n\nThat helps explain why a rule against lying can be useful even when one lie looks tempting. A society where trust works may create more total welfare than constant case-by-case cleverness.",
+      solution: "For rule utilitarianism, an action is right when it follows a rule that would maximize overall happiness or welfare if generally adopted. The unit being evaluated is the rule, not only the one isolated act.",
+      mentorHint: "Keep the utilitarian goal, but shift the lens from one act to the general rule.",
+      alternatePrompts: {
+        plain: "How does rule utilitarianism decide whether an action is morally right?",
+        teaching: "Instead of asking whether this one lie helps, which utilitarian view asks whether a general permission to lie would improve society?",
+      },
+      challengeRating: 5,
+    },
+    {
+      id: 17205,
+      chapter: "Stretch Zone",
+      title: "Logic: Deductive Validity",
+      prompt: "A deductive argument is valid when its form preserves truth perfectly. Which test captures validity, even if the example uses silly premises?",
+      correct: "It is impossible for the premises to be true and the conclusion to be false simultaneously.",
+      wrong: [["The premises are factually true in the real world.", "That is needed for soundness, not validity by itself.", "Validity is about truth preservation if the premises were true."], ["The conclusion is likely to be true based on the evidence.", "That describes inductive strength.", "Deduction is stricter than likelihood."], ["It is persuasive to a rational audience.", "Persuasion is rhetoric, not formal validity.", "A valid argument can be unpersuasive if the premises are odd."]],
+      lesson: "Deductive validity is a structural property. An argument is valid if there is no possible situation where the premises are true and the conclusion false.\n\nValidity does not guarantee the premises are actually true. 'All mugs are planets; this cup is a mug; therefore this cup is a planet' has a valid shape but disastrous content.",
+      solution: "The validity test is impossibility: if the premises were true, the conclusion could not be false. Factual truth is a separate issue handled by soundness.",
+      mentorHint: "Do not check real-world truth first. Check whether the conclusion is forced by the premises.",
+      alternatePrompts: {
+        plain: "What does deductive validity require?",
+        teaching: "How can an argument have nonsense premises but still pass the formal logic test?",
+      },
+      challengeRating: 5,
+    },
+    {
+      id: 17206,
+      chapter: "Stretch Zone",
+      title: "Political Philosophy",
+      prompt: "Rawls uses the veil of ignorance to stop people from designing rules that secretly favor their own position. What is the thought experiment meant to ensure?",
+      correct: "Principles of justice are chosen without bias regarding one's own social position, wealth, or abilities.",
+      wrong: [["The philosopher king retains absolute power.", "That belongs to Plato's political philosophy.", "Rawls is building fairness through impartial choice."], ["Everyone is forced to be strictly equal in outcome.", "Rawls allows some inequalities under constraints such as the difference principle.", "The veil is about unbiased rule choice."], ["Property rights are established as absolute.", "That is closer to libertarian theories such as Nozick's.", "Rawls balances liberty and fairness."]],
+      lesson: "Rawls asks people to choose principles of justice without knowing their own place in society. That makes it harder to choose rules that favor your class, talent, identity, or wealth.\n\nThe point is impartiality. You have to design the social game before knowing which starting square you will land on.",
+      solution: "The veil of ignorance is meant to make principles of justice unbiased with respect to your own social position, wealth, abilities, and identity. You choose rules without knowing whether they will personally advantage you.",
+      mentorHint: "The veil removes self-serving information. That is why it supports fairness.",
+      alternatePrompts: {
+        plain: "Why does Rawls put people behind a veil of ignorance?",
+        teaching: "If you do not know whether you will be advantaged or disadvantaged, what kind of social rules are you more likely to choose?",
+      },
+      challengeRating: 5,
+    },
+    {
+      id: 17207,
+      chapter: "Stretch Zone",
+      title: "Existentialism: Bad Faith",
+      prompt: "Sartre thinks people sometimes hide from their freedom by pretending they are only a role, job, label, or circumstance. What is bad faith?",
+      correct: "Denies their radical freedom and acts as if they are an object determined by external circumstances.",
+      wrong: [["Lies to another person for personal gain.", "Ordinary lying can happen, but Sartrean bad faith is self-deception about freedom.", "The target is a lie to oneself."], ["Believes in God without empirical evidence.", "Sartre was an atheist, but bad faith is not simply religious belief.", "It is about fleeing responsibility."], ["Fails to follow the categorical imperative.", "That is Kantian vocabulary.", "Sartre is focused on freedom, choice, and authenticity."]],
+      lesson: "Bad faith is Sartre's name for self-deception about freedom. A person acts as if they are merely a fixed thing, role, or circumstance, rather than a being who must choose and take responsibility.\n\nThe idea can feel intense because Sartre makes freedom hard to dodge. Even refusing to choose becomes a kind of choice.",
+      solution: "Bad faith occurs when someone denies their freedom and treats themselves as if they were only an object, role, or externally determined thing. It is a way of escaping responsibility through self-deception.",
+      mentorHint: "Look for self-deception about freedom. Bad faith is not just any lie.",
+      alternatePrompts: {
+        plain: "What does Sartre mean by bad faith?",
+        teaching: "If someone says 'I had no choice, this role completely defines me,' which existentialist mistake might Sartre diagnose?",
+      },
+      challengeRating: 6,
+    },
+    {
+      id: 17208,
+      chapter: "Stretch Zone",
+      title: "Philosophy of Science",
+      prompt: "Popper thought a scientific theory should make risky contact with evidence. What feature lets a theory be tested by possibly showing it is wrong?",
+      correct: "Falsifiability—the capacity to be proven wrong by empirical evidence.",
+      wrong: [["Verifiability—the ability to be proven absolutely true.", "Popper emphasized that universal theories are not conclusively verified by repeated successes.", "One counterexample can matter."], ["Consensus—the agreement of the scientific community.", "Consensus can be important socially, but it is not Popper's demarcation test.", "The theory must risk failure."], ["Mathematical elegance.", "Elegance can be appealing, but Popper's criterion is empirical testability.", "Ask what evidence could rule it out."]],
+      lesson: "For Popper, falsifiability helps separate scientific theories from claims that can absorb every possible outcome. A theory is scientific when it makes claims that evidence could in principle show to be false.\n\nThe key is risk. A theory that forbids nothing and explains everything after the fact may feel impressive, but it gives evidence no real way to bite.",
+      solution: "Popper's criterion is falsifiability: a scientific theory must be testable in a way that could show it is false. It should make risky predictions or constraints that evidence can challenge.",
+      mentorHint: "Ask what observation would count against the theory. If nothing could, Popper gets suspicious.",
+      alternatePrompts: {
+        plain: "What did Popper mean by falsifiability?",
+        teaching: "Why is a theory stronger, scientifically, when it risks being wrong instead of explaining every possible result?",
+      },
+      challengeRating: 5,
+    },
+    {
+      id: 17209,
+      chapter: "Stretch Zone",
+      title: "Aesthetics",
+      prompt: "Kant's disinterested judgment of beauty is not boredom. It means your appreciation is not driven by wanting to own, use, eat, profit from, or morally approve the object. Which answer captures that?",
+      correct: "It is not based on any personal desire, utility, or moral interest in the existence of the object.",
+      wrong: [["The viewer finds the artwork boring.", "Disinterested does not mean uninterested.", "It means free from desire or use."], ["The artwork has no commercial value.", "The market price is not the point.", "Kant is describing the viewer's stance."], ["It is judged purely by its moral message.", "Kant distinguishes aesthetic judgment from moral judgment.", "Beauty is not simply usefulness or virtue."]],
+      lesson: "In Kantian aesthetics, disinterested pleasure means appreciating beauty without wanting the object for some practical purpose. You are not judging it because it is useful, profitable, edible, morally admirable, or yours.\n\nThat does not make the response cold. It means the pleasure is tied to the form of the experience rather than to a private appetite.",
+      solution: "A disinterested judgment is not based on personal desire, utility, ownership, profit, or moral interest in the object's existence. It is a way of appreciating beauty without using the object as a means to another end.",
+      mentorHint: "Disinterested does not mean bored. It means not driven by desire, usefulness, or ownership.",
+      alternatePrompts: {
+        plain: "What does Kant mean by a disinterested judgment of taste?",
+        teaching: "How can you deeply enjoy a painting without wanting to own it, use it, or turn it into a moral lesson?",
+      },
+      challengeRating: 6,
+    },
+    {
+      id: 17210,
+      chapter: "Stretch Zone",
+      title: "Philosophy of Language",
+      prompt: "Later Wittgenstein treats words less like museum labels and more like tools used in social activities. Where does meaning come from on this view?",
+      correct: "Its use within a specific 'language-game,' rather than an inherent connection to an object.",
+      wrong: [["Its logical mapping to a state of affairs in the world.", "That is closer to Wittgenstein's earlier Tractatus view.", "The later view emphasizes ordinary use."], ["The dictionary definition determined by experts.", "Dictionaries track use; they do not create all meaning from above.", "Meaning lives in practice."], ["An eternal Platonic form it represents.", "The later Wittgenstein resists hidden essences.", "Look for use, context, and form of life."]],
+      lesson: "Later Wittgenstein argues that meaning is use. Words get their life inside language-games: shared practices where people ask, promise, measure, joke, command, explain, and respond.\n\nSo a word is more like a tool in a toolbox than a label glued to one eternal object. To understand it, watch how people use it in context.",
+      solution: "On Wittgenstein's later view, a word's meaning comes from its use within a language-game and a form of life. Meaning is social and practical, not just a hidden link between word and object.",
+      mentorHint: "Think tools, not museum labels. The later Wittgenstein asks how the word is used.",
+      alternatePrompts: {
+        plain: "How does later Wittgenstein explain the meaning of words?",
+        teaching: "If the same word works differently in a joke, a command, and a measurement, what does that suggest about meaning?",
+      },
+      challengeRating: 6,
+    },
   ]), ...openLogicProjectPhilosophyQuestions, ...philosophyWorkoutGeneratedQuestions],
   artHistory: [...artHistoryWorkoutGeneratedQuestions],
   dataStructures: [...makeQuestionBank('University', [
@@ -309,20 +1084,20 @@ export function buildUniversityAcademicQuestionCatalog(): Record<string, Questio
     { id: 16814, chapter: "Contemporary Challenges", title: "Hegemonic Stability", prompt: "According to Hegemonic Stability Theory, a liberal, open international economy is most likely to flourish when:", correct: "A single dominant global power is willing and able to enforce the rules of the system", wrong: [["Power is distributed equally among a dozen regional powers", "The theory claims multipolarity leads to protectionism and instability.", "It requires a 'hegemon'."], ["The United Nations is given absolute control over global trade", "The theory focuses on state power, not international organizations.", "Think of the British Empire in the 19th century or the US post-WWII."], ["All states adopt a strict mercantilist policy", "Mercantilism is the opposite of an open, liberal economy.", "One country bears the costs of keeping the system open."]] },
   ]), ...internationalRelationsWorkoutGeneratedQuestions],
   marketing: [...makeQuestionBank('University', [
-    { id: 16901, chapter: 'Segmentation, Targeting, and Positioning', title: 'Target audience', prompt: 'A target audience is:', correct: 'The group a message or product is mainly aimed at', wrong: [['Every person on Earth equally', 'Marketing without targeting wastes spend; even mass brands define a primary segment.', 'Think specific intended audience.'], ['Whichever customers happen to walk in', 'That is incidental traffic, not a chosen target.', 'Targeting is strategic, not random.'], ['The set of competitors you face', 'Competitors are an environment factor, not the audience.', 'Focus on who the message is for.']] },
-    { id: 16902, chapter: 'Marketing, Value, and Strategy', title: 'Brand role', prompt: 'A brand mainly helps customers:', correct: 'Recognize and form expectations about a product or company', wrong: [['Avoid making any decisions', 'Brands often guide decisions rather than remove them.', 'Recognition and trust are key roles.'], ['Receive a guaranteed lowest price', 'Strong brands often command price premiums rather than discounts.', 'Think identity and expectation.'], ['Turn off all competition', 'Brand strength helps, but does not erase competition.', 'Use the recognition idea.']] },
-    { id: 16903, chapter: 'Marketing, Value, and Strategy', title: 'Value proposition', prompt: 'A value proposition explains:', correct: 'Why a customer should choose a product', wrong: [['Only the production cost of the product', 'Cost is internal; value propositions look outward at the customer.', 'Value propositions state customer benefit.'], ['How much profit the firm makes', 'Profit is a firm-side outcome, not a customer-facing promise.', 'Focus on customer value.'], ['The complete legal terms of the sale', 'Legal terms are contractual fine print, not the buying reason.', 'Use the benefit-and-choice idea.']] },
-    { id: 16904, chapter: 'Metrics, Analytics, and Marketing Performance', title: 'Conversion clue', prompt: 'A conversion usually means:', correct: 'A user took the action you wanted them to take', wrong: [['A page redesign was published', 'A design change is an input, not a conversion outcome.', 'Think desired action like sign-up or purchase.'], ['Every visitor left immediately', 'That is bounce, the opposite of many conversion goals.', 'Use the goal-completion idea.'], ['A new ad creative was launched', 'Launching creative is upstream of measuring conversions.', 'Conversion is about user behavior.']] },
-    { id: 16905, chapter: "Strategy", title: "BCG Matrix", prompt: "In the BCG Growth-Share Matrix, a 'Question Mark' represents a product or business unit with:", correct: "Low market share in a high-growth market", wrong: [["High market share in a low-growth market", "This is a 'Cash Cow'.", "It requires heavy investment to gain share."], ["Low market share in a low-growth market", "This is a 'Dog'.", "The market is growing, but the product isn't keeping up yet."], ["High market share in a high-growth market", "This is a 'Star'.", "Management must decide whether to invest to make it a Star, or phase it out."]] },
-    { id: 16906, chapter: "Strategy", title: "Macroenvironment", prompt: "A PESTLE analysis is a strategic tool primarily used to evaluate:", correct: "External macro-environmental factors (Political, Economic, etc.) that can impact a business", wrong: [["Internal company strengths and weaknesses", "This is part of a SWOT analysis.", "These are factors the company cannot directly control."], ["The effectiveness of a specific advertising campaign", "PESTLE is a high-level strategic tool.", "It looks at the 'big picture' world trends."], ["The individual psychological traits of a target customer", "This is psychographic segmentation.", "Think global forces."]] },
-    { id: 16907, chapter: "Consumer Behavior", title: "Cognitive Dissonance", prompt: "In marketing, post-purchase 'cognitive dissonance' refers to:", correct: "Inner tension or doubt a consumer feels about whether they made the right purchase decision", wrong: [["The feeling of extreme joy after buying a luxury item", "Dissonance means disharmony or discomfort.", "Buyer's remorse."], ["The inability to remember an advertisement", "That's just forgetting.", "It happens *after* the purchase of a high-involvement item."], ["When a product breaks immediately after the warranty expires", "This causes anger, but dissonance is psychological conflict.", "Did I buy the right brand?"]] },
-    { id: 16908, chapter: "Market Research", title: "Primary Data", prompt: "Which of the following is a key advantage of collecting primary data over secondary data?", correct: "It is specifically tailored to answer the exact research problem at hand", wrong: [["It is always much cheaper to collect", "Primary data (like focus groups or surveys) is usually much more expensive.", "You gather it yourself."], ["It is instantly available online", "Secondary data is what you find online; primary data takes time to gather.", "It answers YOUR specific question."], ["It requires no ethical review", "Surveying or observing people often requires ethical considerations.", "It's fresh data."]] },
-    { id: 16909, chapter: "Segmentation", title: "Psychographic Segmentation", prompt: "Psychographic segmentation divides a market based on variables such as:", correct: "Lifestyle, personality traits, values, and interests", wrong: [["Age, gender, income, and education", "These are demographic variables.", "It goes beyond 'who' they are to 'why' they buy."], ["City, climate, and population density", "These are geographic variables.", "Think about a consumer's psychology."], ["Usage rate and brand loyalty", "These are behavioral variables.", "It categorizes people by their attitudes and activities."]] },
-    { id: 16910, chapter: "Segmentation", title: "Perceptual Mapping", prompt: "A perceptual map is a visual tool typically used in marketing to:", correct: "Display the perceptions of customers regarding different brands relative to competitors along key dimensions", wrong: [["Track the physical GPS location of delivery trucks", "It's a map of the mind, not geography.", "It shows how a brand is 'positioned'."], ["Graph the company's revenue over the last decade", "That is a line chart.", "It usually has an X and Y axis for attributes (e.g., Price vs Quality)."], ["Map out the organizational hierarchy of a marketing department", "That is an org chart.", "It helps identify gaps in the market."]] },
-    { id: 16911, chapter: "Product and Pricing", title: "Penetration Pricing", prompt: "The strategy of 'penetration pricing' involves setting an initially low price in order to:", correct: "Rapidly gain market share and achieve high sales volume before competitors react", wrong: [["Maximize short-term profit margins on each unit sold", "That is price skimming.", "Low prices mean low margins, but high volume."], ["Signal to consumers that the product is a luxury, premium item", "Low prices usually signal the opposite of luxury.", "The goal is to 'penetrate' the market deeply."], ["Recover research and development costs immediately", "Skimming is used for quick cost recovery.", "It relies on economies of scale."]] },
-    { id: 16912, chapter: "Promotion", title: "PR vs Advertising", prompt: "A primary difference between advertising and public relations (PR) is that PR is typically:", correct: "Unpaid, earned media coverage focused on building a positive corporate image", wrong: [["Paid media placement with guaranteed messaging control", "That defines advertising.", "PR relies on journalists finding the story interesting."], ["Focused only on short-term sales promotions like coupons", "That is sales promotion.", "PR is about reputation."], ["Only used during a corporate crisis or scandal", "PR is a continuous effort to manage image.", "Think of a press release vs a TV commercial."]] },
-    { id: 16913, chapter: "Metrics", title: "CAC and LTV", prompt: "For a business to be highly profitable and sustainable, its Customer Acquisition Cost (CAC) should ideally be:", correct: "Significantly lower than the Customer Lifetime Value (LTV)", wrong: [["Exactly equal to the Customer Lifetime Value (LTV)", "If they are equal, the company makes zero profit on the customer.", "You want to make more money from them than you spent to get them."], ["Significantly higher than the Customer Lifetime Value (LTV)", "This means the company is losing money on every customer.", "A common ratio target is LTV:CAC = 3:1."], ["Calculated without factoring in marketing expenses", "CAC is literally the calculation of marketing/sales expenses divided by new customers.", "Cost vs Value."]] },
-    { id: 16914, chapter: "Stretch Zone", title: "The Decoy Effect", prompt: "In behavioral economics, the 'decoy effect' in pricing is a strategy where:", correct: "An inferior third option is presented to make one of the other options look like a much better value", wrong: [["Prices are hidden until the customer reaches the checkout", "That is drip pricing or hidden fees.", "Think of the small, medium, and large popcorn pricing at movies."], ["A fake product is advertised that the company never intends to sell", "That is closer to bait-and-switch.", "The decoy is an actual option, just a bad one."], ["The price is set just below a round number (e.g., $9.99 instead of $10.00)", "That is psychological or charm pricing.", "It relies on asymmetric dominance."]] },
+    { id: 420051, chapter: 'Segmentation, Targeting, and Positioning', title: 'Target audience', prompt: 'A target audience is:', correct: 'The group a message or product is mainly aimed at', wrong: [['Every person on Earth equally', 'Marketing without targeting wastes spend; even mass brands define a primary segment.', 'Think specific intended audience.'], ['Whichever customers happen to walk in', 'That is incidental traffic, not a chosen target.', 'Targeting is strategic, not random.'], ['The set of competitors you face', 'Competitors are an environment factor, not the audience.', 'Focus on who the message is for.']] },
+    { id: 420052, chapter: 'Marketing, Value, and Strategy', title: 'Brand role', prompt: 'A brand mainly helps customers:', correct: 'Recognize and form expectations about a product or company', wrong: [['Avoid making any decisions', 'Brands often guide decisions rather than remove them.', 'Recognition and trust are key roles.'], ['Receive a guaranteed lowest price', 'Strong brands often command price premiums rather than discounts.', 'Think identity and expectation.'], ['Turn off all competition', 'Brand strength helps, but does not erase competition.', 'Use the recognition idea.']] },
+    { id: 420053, chapter: 'Marketing, Value, and Strategy', title: 'Value proposition', prompt: 'A value proposition explains:', correct: 'Why a customer should choose a product', wrong: [['Only the production cost of the product', 'Cost is internal; value propositions look outward at the customer.', 'Value propositions state customer benefit.'], ['How much profit the firm makes', 'Profit is a firm-side outcome, not a customer-facing promise.', 'Focus on customer value.'], ['The complete legal terms of the sale', 'Legal terms are contractual fine print, not the buying reason.', 'Use the benefit-and-choice idea.']] },
+    { id: 420054, chapter: 'Metrics, Analytics, and Marketing Performance', title: 'Conversion clue', prompt: 'A conversion usually means:', correct: 'A user took the action you wanted them to take', wrong: [['A page redesign was published', 'A design change is an input, not a conversion outcome.', 'Think desired action like sign-up or purchase.'], ['Every visitor left immediately', 'That is bounce, the opposite of many conversion goals.', 'Use the goal-completion idea.'], ['A new ad creative was launched', 'Launching creative is upstream of measuring conversions.', 'Conversion is about user behavior.']] },
+    { id: 420055, chapter: "Strategy", title: "BCG Matrix", prompt: "In the BCG Growth-Share Matrix, a 'Question Mark' represents a product or business unit with:", correct: "Low market share in a high-growth market", wrong: [["High market share in a low-growth market", "This is a 'Cash Cow'.", "It requires heavy investment to gain share."], ["Low market share in a low-growth market", "This is a 'Dog'.", "The market is growing, but the product isn't keeping up yet."], ["High market share in a high-growth market", "This is a 'Star'.", "Management must decide whether to invest to make it a Star, or phase it out."]] },
+    { id: 420056, chapter: "Strategy", title: "Macroenvironment", prompt: "A PESTLE analysis is a strategic tool primarily used to evaluate:", correct: "External macro-environmental factors (Political, Economic, etc.) that can impact a business", wrong: [["Internal company strengths and weaknesses", "This is part of a SWOT analysis.", "These are factors the company cannot directly control."], ["The effectiveness of a specific advertising campaign", "PESTLE is a high-level strategic tool.", "It looks at the 'big picture' world trends."], ["The individual psychological traits of a target customer", "This is psychographic segmentation.", "Think global forces."]] },
+    { id: 420057, chapter: "Consumer Behavior", title: "Cognitive Dissonance", prompt: "In marketing, post-purchase 'cognitive dissonance' refers to:", correct: "Inner tension or doubt a consumer feels about whether they made the right purchase decision", wrong: [["The feeling of extreme joy after buying a luxury item", "Dissonance means disharmony or discomfort.", "Buyer's remorse."], ["The inability to remember an advertisement", "That's just forgetting.", "It happens *after* the purchase of a high-involvement item."], ["When a product breaks immediately after the warranty expires", "This causes anger, but dissonance is psychological conflict.", "Did I buy the right brand?"]] },
+    { id: 420058, chapter: "Market Research", title: "Primary Data", prompt: "Which of the following is a key advantage of collecting primary data over secondary data?", correct: "It is specifically tailored to answer the exact research problem at hand", wrong: [["It is always much cheaper to collect", "Primary data (like focus groups or surveys) is usually much more expensive.", "You gather it yourself."], ["It is instantly available online", "Secondary data is what you find online; primary data takes time to gather.", "It answers YOUR specific question."], ["It requires no ethical review", "Surveying or observing people often requires ethical considerations.", "It's fresh data."]] },
+    { id: 420059, chapter: "Segmentation", title: "Psychographic Segmentation", prompt: "Psychographic segmentation divides a market based on variables such as:", correct: "Lifestyle, personality traits, values, and interests", wrong: [["Age, gender, income, and education", "These are demographic variables.", "It goes beyond 'who' they are to 'why' they buy."], ["City, climate, and population density", "These are geographic variables.", "Think about a consumer's psychology."], ["Usage rate and brand loyalty", "These are behavioral variables.", "It categorizes people by their attitudes and activities."]] },
+    { id: 420060, chapter: "Segmentation", title: "Perceptual Mapping", prompt: "A perceptual map is a visual tool typically used in marketing to:", correct: "Display the perceptions of customers regarding different brands relative to competitors along key dimensions", wrong: [["Track the physical GPS location of delivery trucks", "It's a map of the mind, not geography.", "It shows how a brand is 'positioned'."], ["Graph the company's revenue over the last decade", "That is a line chart.", "It usually has an X and Y axis for attributes (e.g., Price vs Quality)."], ["Map out the organizational hierarchy of a marketing department", "That is an org chart.", "It helps identify gaps in the market."]] },
+    { id: 420061, chapter: "Product and Pricing", title: "Penetration Pricing", prompt: "The strategy of 'penetration pricing' involves setting an initially low price in order to:", correct: "Rapidly gain market share and achieve high sales volume before competitors react", wrong: [["Maximize short-term profit margins on each unit sold", "That is price skimming.", "Low prices mean low margins, but high volume."], ["Signal to consumers that the product is a luxury, premium item", "Low prices usually signal the opposite of luxury.", "The goal is to 'penetrate' the market deeply."], ["Recover research and development costs immediately", "Skimming is used for quick cost recovery.", "It relies on economies of scale."]] },
+    { id: 420062, chapter: "Promotion", title: "PR vs Advertising", prompt: "A primary difference between advertising and public relations (PR) is that PR is typically:", correct: "Unpaid, earned media coverage focused on building a positive corporate image", wrong: [["Paid media placement with guaranteed messaging control", "That defines advertising.", "PR relies on journalists finding the story interesting."], ["Focused only on short-term sales promotions like coupons", "That is sales promotion.", "PR is about reputation."], ["Only used during a corporate crisis or scandal", "PR is a continuous effort to manage image.", "Think of a press release vs a TV commercial."]] },
+    { id: 420063, chapter: "Metrics", title: "CAC and LTV", prompt: "For a business to be highly profitable and sustainable, its Customer Acquisition Cost (CAC) should ideally be:", correct: "Significantly lower than the Customer Lifetime Value (LTV)", wrong: [["Exactly equal to the Customer Lifetime Value (LTV)", "If they are equal, the company makes zero profit on the customer.", "You want to make more money from them than you spent to get them."], ["Significantly higher than the Customer Lifetime Value (LTV)", "This means the company is losing money on every customer.", "A common ratio target is LTV:CAC = 3:1."], ["Calculated without factoring in marketing expenses", "CAC is literally the calculation of marketing/sales expenses divided by new customers.", "Cost vs Value."]] },
+    { id: 420064, chapter: "Stretch Zone", title: "The Decoy Effect", prompt: "In behavioral economics, the 'decoy effect' in pricing is a strategy where:", correct: "An inferior third option is presented to make one of the other options look like a much better value", wrong: [["Prices are hidden until the customer reaches the checkout", "That is drip pricing or hidden fees.", "Think of the small, medium, and large popcorn pricing at movies."], ["A fake product is advertised that the company never intends to sell", "That is closer to bait-and-switch.", "The decoy is an actual option, just a bad one."], ["The price is set just below a round number (e.g., $9.99 instead of $10.00)", "That is psychological or charm pricing.", "It relies on asymmetric dominance."]] },
   ]), ...marketingWorkoutGeneratedQuestions],
   cosmologyAndAstronomy: [
     ...openTriviaAstronomyQuestions,
@@ -336,6 +1111,17 @@ export function buildUniversityAcademicQuestionCatalog(): Record<string, Questio
     ...apEnvironmentalScienceExamBatch2Questions,
     ...apEnvironmentalScienceWorkoutGeneratedQuestions,
   ],
+  }
+
+  catalog.philosophy = enrichPhilosophyQuestions(catalog.philosophy)
+  catalog.researchMethods = enrichResearchMethodsQuestions(catalog.researchMethods)
+  catalog.organicChemistry = enrichOrganicChemistryQuestions(catalog.organicChemistry)
+  catalog.neuroscience = enrichNeuroscienceQuestions(catalog.neuroscience)
+  catalog.marketing = enrichMarketingQuestions(catalog.marketing)
+  catalog.internationalRelations = enrichInternationalRelationsQuestions(catalog.internationalRelations)
+  catalog.dataStructures = enrichDataStructuresQuestions(catalog.dataStructures)
+  for (const trackId of ['artHistory', 'cosmologyAndAstronomy', 'introToPsychology', 'apEnvironmentalScience'] as const) {
+    catalog[trackId] = enrichAcademicQuestionQuality(trackId, catalog[trackId])
   }
 
   const moralCrossroadsQuestions = catalog.philosophy.filter((question) => moralCrossroadsTitles.has(question.title))
@@ -363,6 +1149,8 @@ export function buildUniversityAcademicQuestionCatalog(): Record<string, Questio
   ]
   catalog.philSenior = moralCrossroadsQuestions
   catalog.comparativePracticalPolitics = universityComparativePoliticsQuestions
+  catalog.formalLogic = enrichAcademicQuestionQuality('formalLogic', catalog.formalLogic)
+  catalog.comparativePracticalPolitics = enrichAcademicQuestionQuality('comparativePracticalPolitics', catalog.comparativePracticalPolitics)
 
   const polished: Record<string, Question[]> = {}
   for (const [trackId, questions] of Object.entries(catalog)) {

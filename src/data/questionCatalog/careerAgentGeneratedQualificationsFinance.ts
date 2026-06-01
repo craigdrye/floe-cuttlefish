@@ -94,9 +94,9 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'A vignette says a client will receive five equal payments at the beginning of each year. The candidate uses an ordinary annuity formula and gets a number close to one answer choice. Best fix?',
       'Treat the cash flows as an annuity due and adjust for payment timing',
       [
-        ['Pick the ordinary-annuity answer because close numbers are usually rounding', 'CFA item writers create plausible distractors at exactly the ordinary-annuity value. Closeness is the trap, not the resolution.'],
+        ['Treat the cash flows as an ordinary annuity because the answer choices look close', 'CFA item writers create plausible distractors at exactly the ordinary-annuity value. Closeness is the trap, not the resolution.'],
         ['Discount each payment by one extra year because beginning payments are riskier', 'Timing changes when cash arrives, not its credit risk. Adjusting the discount period in the wrong direction inflates the error.'],
-        ['Ignore timing because annuity formulas all collapse to the same answer', 'Ordinary annuity and annuity due differ by exactly one period of interest — that is a deliberately testable distinction.'],
+        ['Treat annuity timing as irrelevant once the payment amount is known', 'Ordinary annuity and annuity due differ by exactly one period of interest — that is a deliberately testable distinction.'],
       ],
       'Beginning-of-period cash flows are worth one extra period of compounding compared with end-of-period flows. Time-value questions punish anyone who skips the timing convention.'),
     q(4250005, 'Career Skills', 'Quantitative Methods and the Analyst Calculator', 'Geometric vs arithmetic return',
@@ -104,7 +104,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'Use the geometric return, since compounding makes the ending value lower than the starting value',
       [
         ['Use the arithmetic average because it always represents investor experience', 'Arithmetic mean overstates compounded returns whenever returns vary. Investor wealth follows geometric, not arithmetic, math.'],
-        ['Ignore the negative year because the positive year cancelled it', 'A -20% return applies to a base that was already grown by 20%, so the dollar loss exceeds the dollar gain. Percentages do not cancel.'],
+        ['Treat the positive year as cancelling the earlier loss automatically', 'A -20% return applies to a base that was already grown by 20%, so the dollar loss exceeds the dollar gain. Percentages do not cancel.'],
         ['Take the absolute values and divide by two', 'Absolute-value averaging discards signs and tells you nothing about realised wealth. It would imply a flat 20% return regardless of direction.'],
       ],
       'For multi-period performance, compounding rules. A gain and an equal-percentage loss do not net to zero because the loss applies to a larger base.'),
@@ -131,7 +131,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'Consider the base rate and conditional probabilities before trusting the model output',
       [
         ['Treat every positive signal as certain because the model uses percentages', 'A confident-sounding percentage does not change Bayes\' rule. Low base rates plus high false-positive rates can crush precision.'],
-        ['Ignore false positives if the model name sounds technical', 'The model name has no bearing on its precision. Performance characteristics, not branding, govern reliability.'],
+        ['Treat a technical model name as proof that false positives are not material', 'The model name has no bearing on its precision. Performance characteristics, not branding, govern reliability.'],
         ['Use only the most recent flagged stock as the full sample', 'A single observation cannot reveal the false-positive rate. Inference requires the joint distribution, not one example.'],
       ],
       'When events are rare, a model can have a strong-looking hit rate and still produce mostly false positives. Always anchor on the base rate.'),
@@ -228,7 +228,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       [
         ['Reject it because payback beats NPV as a decision metric', 'Payback ignores time value and cash flows beyond the cutoff. NPV is the value-creation anchor.'],
         ['Accept it only if accounting profit is positive in month one', 'Accounting profit is not the project decision metric. Discounted cash flow is.'],
-        ['Ignore NPV because it has too many letters', 'Avoiding NPV because it feels complex is exactly the trap. NPV directly measures expected wealth change.'],
+        ['Treat payback timing as enough and leave discounted value out of the decision', 'Avoiding NPV because it feels complex is exactly the trap. NPV directly measures expected wealth change.'],
       ],
       'NPV is the value-creation rule. Payback is a screening or liquidity-control tool, not a substitute decision rule.'),
     q(4250019, 'Career Skills', 'Corporate Issuers and Capital Decisions', 'Sunk-cost sideeye',
@@ -244,7 +244,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'A firm plans to issue new equity to fund a project with material flotation costs. Cleanest treatment under typical Level I logic?',
       'Account for flotation costs in the project cash flows rather than inflating the cost of equity',
       [
-        ['Ignore flotation costs because investors absorb them emotionally', 'Flotation costs are real cash outflows to the firm. Ignoring them overstates project NPV.'],
+        ['Treat flotation costs as investor sentiment rather than a financing cash flow', 'Flotation costs are real cash outflows to the firm. Ignoring them overstates project NPV.'],
         ['Add them to terminal salvage value', 'Flotation costs occur up front, not at salvage. Booking them at the end mis-times the cash flow.'],
         ['Treat them as a tax-free coupon payment', 'Flotation costs are issuance expenses, not coupon-type cash flows. They do not amortise like debt issue costs in this framing.'],
       ],
@@ -274,7 +274,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'Assess whether book value is reliable and whether expected losses or low profitability justify the discount',
       [
         ['Buy immediately because any price below book is a bargain', 'P/B below 1 can mean the market expects losses to erode book. The market is often pricing in known information.'],
-        ['Ignore loan quality because book value is always precise', 'Book value depends on loan-loss reserves, which depend on management judgement. Precision is not the same as accuracy.'],
+        ['Treat book value as precise enough without assessing loan collectability', 'Book value depends on loan-loss reserves, which depend on management judgement. Precision is not the same as accuracy.'],
         ['Use only dividend yield because banks do not have hard assets', 'Banks absolutely have assets — loans, securities, real estate. Dividend yield alone misses balance sheet quality.'],
       ],
       'For financial firms, asset quality and expected returns can explain a low P/B without handing the buyer a free lunch.'),
@@ -435,7 +435,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'Discuss rebalancing toward the strategic allocation and the risk exposures now being taken',
       [
         ['Increase equities further because recent winners keep winning', 'Momentum is not a strategic asset allocation. Letting winners run mechanically increases risk without policy approval.'],
-        ['Ignore the policy allocation because client feelings are a benchmark', 'Policy allocation exists precisely to anchor decisions against feelings. Abandoning it defeats the purpose of an IPS.'],
+        ['Treat the client's current comfort as the benchmark instead of the policy allocation', 'Policy allocation exists precisely to anchor decisions against feelings. Abandoning it defeats the purpose of an IPS.'],
         ['Sell all bonds because they failed to celebrate', 'Sector-level conclusions from short-term returns are exactly the bias rebalancing prevents.'],
       ],
       'Rebalancing is risk control, not a prediction that winners are bad. Exam answers favour disciplined alignment with objectives and constraints.'),
@@ -472,17 +472,17 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'A question asks, "All of the following increase bond price sensitivity to yield changes except..." Safest first move?',
       'Restate the exception task mentally and evaluate each choice against duration drivers before computing anything',
       [
-        ['Pick the first true statement, since true statements are reassuring', 'In an except question, true statements are the trap. The correct answer is the one that is false or works the opposite way.'],
-        ['Skip the word "except" because it only affects grammar', '"Except" inverts the entire task. Skipping it produces a correct concept that is exactly the wrong answer.'],
-        ['Choose the longest answer because exam writers like detail', 'Length is not a signal of correctness on the CFA exam. Item writers vary answer lengths deliberately.'],
+        ['A true duration statement that does not answer the exception task', 'In an except question, true statements are the trap. The correct answer is the one that is false or works the opposite way.'],
+        ['A normal-duration answer with the word "except" ignored', '"Except" inverts the entire task. Skipping it produces a correct concept that is exactly the wrong answer.'],
+        ['A long detailed answer that misses the duration driver', 'Length is not a signal of correctness on the CFA exam. Item writers vary answer lengths deliberately.'],
       ],
       'Except questions are attention traps. Restating the task before scanning choices prevents a correct concept from becoming a wrong answer.'),
     q(4250045, 'Career Skills', 'Integrated Practice and Exam Strategy', 'Reasonableness check',
       'On exam day, a candidate computes a required return of 83% for a stable utility stock. The choices include several modest rates. Best immediate move?',
       'Pause for a reasonableness check and look for an input, decimal, or compounding error before choosing',
       [
-        ['Pick 83% because the calculator is never dramatic', 'Calculators reproduce the inputs you give them, including decimal mistakes. Sanity checks catch input errors.'],
-        ['Average all answer choices to calm the situation', 'Averaging answer choices has no theoretical basis. It would never be the correct value.'],
+        ['An 83% required return accepted without a sanity check', 'Calculators reproduce the inputs you give them, including decimal mistakes. Sanity checks catch input errors.'],
+        ['The average of all listed answer choices', 'Averaging answer choices has no theoretical basis. It would never be the correct value.'],
         ['Switch topics because utility stocks cannot be tested', 'Utilities are absolutely testable. Avoiding the topic does not solve the calculation error.'],
       ],
       'Exam survival includes smelling an answer that is wildly off. A quick reasonableness pass can rescue points when math ran ahead of the brain.'),
@@ -491,8 +491,8 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'Use units, direction, and a simple numeric test to eliminate choices before guessing',
       [
         ['Stare at the formula sheet that is not provided', 'No formula sheet is provided on the CFA. Staring wastes time.'],
-        ['Pick the most complicated answer because finance likes drama', 'Complexity is unrelated to correctness. Item writers test concepts, not aesthetics.'],
-        ['Skip all related questions immediately', 'Skipping forfeits points that directional reasoning could have recovered. Triage one question at a time.'],
+        ['Prefer the highly detailed explanation even when it does not match the cash-flow facts', 'Complexity is unrelated to correctness. Item writers test concepts, not aesthetics.'],
+        ['Treat related follow-up questions as outside the answer scope', 'Skipping forfeits points that directional reasoning could have recovered. Triage one question at a time.'],
       ],
       'Exam survival is not only memory. Units and directional logic can rescue points when a formula slips off the mental desk.'),
   ],
@@ -588,7 +588,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       [
         ['Recognise the profit twice because both companies recorded it', 'Consolidated statements report the group as a single economic entity. Double counting is the error consolidation exists to prevent.'],
         ['Treat the sale as a financing cash flow', 'Intercompany sales are not financing transactions. They are eliminated, not reclassified.'],
-        ['Ignore the inventory because consolidated statements use only parent accounts', 'Consolidation combines both entities and then eliminates intercompany items. It does not drop the subsidiary.'],
+        ['Treat parent-only balances as sufficient for consolidation', 'Consolidation combines both entities and then eliminates intercompany items. It does not drop the subsidiary.'],
       ],
       'Consolidation removes transactions within the group. Unsold intercompany profit has not been earned from external parties yet.'),
     q(4250109, 'Career Skills', 'FAR Core - Financial Accounting and Reporting', 'Donor restriction',
@@ -660,7 +660,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'In a controls test, one exception appears in a small sample. The candidate wants to call the control effective immediately because the exception seems minor. Better instinct?',
       'Evaluate the nature and cause of the exception and its effect on planned reliance',
       [
-        ['Ignore the exception because every sample has a flaw', 'Exceptions are not noise to ignore. They are data points requiring evaluation.'],
+        ['Treat a sample exception as normal noise rather than audit evidence', 'Exceptions are not noise to ignore. They are data points requiring evaluation.'],
         ['Conclude fraud occurred without further work', 'Concluding fraud from one exception is premature. Evaluation comes first.'],
         ['Increase detection risk without reconsidering control risk', 'Detection and control risk are linked in the audit risk model. Adjusting one without the other misses the connection.'],
       ],
@@ -679,7 +679,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'Whether disclosures are adequate and whether the report should include appropriate going-concern language',
       [
         ['Issue an adverse opinion automatically', 'Alleviated doubt does not warrant adverse. Disclosure adequacy is the next question.'],
-        ['Ignore the issue because management has a plan', 'Plans do not erase the need to communicate clearly. Disclosure is still required.'],
+        ['Treat management's plan as enough evidence that the issue is resolved', 'Plans do not erase the need to communicate clearly. Disclosure is still required.'],
         ['Switch to a tax engagement after fieldwork', 'Auditors cannot reclassify the engagement mid-stream to escape going-concern obligations.'],
       ],
       'Going concern reporting depends on substantial doubt, management plans, and disclosure adequacy. A plan helps but does not silence the auditor.'),
@@ -714,7 +714,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'Management refuses to record several small audit adjustments. Individually each is below materiality, but together they approach the planning threshold. What should the auditor do?',
       'Evaluate the aggregate uncorrected misstatements and consider qualitative factors',
       [
-        ['Ignore each item because individual size is the only test', 'Aggregation is part of the materiality framework. Individual size alone misses the cumulative effect.'],
+        ['Treat individual item size as the only materiality test', 'Aggregation is part of the materiality framework. Individual size alone misses the cumulative effect.'],
         ['Record the entries directly without management involvement', 'Auditors do not make journal entries unilaterally. They identify and propose; management records.'],
         ['Switch to a review engagement after fieldwork', 'Engagement type is set at acceptance, not at year-end inconvenience.'],
       ],
@@ -732,8 +732,8 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       'An auditor notices several manual journal entries posted late at night near year-end by a senior accountant. Best response?',
       'Evaluate the entries for fraud risk and test whether they are supported, authorised, and properly recorded',
       [
-        ['Ignore them because senior accountants are trusted', 'Seniority is not evidence. Manual late-period entries are exactly what fraud-risk auditing focuses on.'],
-        ['Assume fraud occurred and skip testing', 'Fraud requires evidence. Skipping testing and concluding fraud is as wrong as skipping testing and concluding nothing.'],
+        ['Rely on seniority as a substitute for documentation', 'Seniority is not evidence. Manual late-period entries are exactly what fraud-risk auditing focuses on.'],
+        ['Treat the control issue as confirmed fraud before gathering audit evidence', 'Fraud requires evidence. Skipping testing and concluding fraud is as wrong as skipping testing and concluding nothing.'],
         ['Move them to the tax workpapers because timing matters', 'Workpaper movement does not address the audit-evidence question. The entries need substantive evaluation.'],
       ],
       'Unusual journal entries are a classic fraud-risk focus. Targeted testing with support, authorisation, and business purpose in view is the adult move.'),
@@ -893,7 +893,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       [
         ['Open every tab in order and summarise each one in detail', 'Equal time on every tab is the failure mode the simulation tests for. Triage is the skill.'],
         ['Start typing before reading the requirement, since motion feels productive', 'Typing without reading the requirement guarantees off-topic work. The requirement is the compass.'],
-        ['Assume the longest exhibit is automatically irrelevant', 'Exhibit length is not a relevance signal. Item writers vary it deliberately.'],
+        ['Treat a long exhibit as background noise rather than potential authority', 'Exhibit length is not a relevance signal. Item writers vary it deliberately.'],
       ],
       'CPA simulations reward controlled triage. The requirement tells you which evidence matters, so let it steer the tabs.'),
     q(4250501, 'Career Skills', 'Simulations, Research, and Workpaper Craft', 'Research precision',
@@ -902,7 +902,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       [
         ['Submit the broad section because close enough is fine', 'Research credit requires the exact passage, not a neighbourhood reference.'],
         ['Search random tax terms because they sound official', 'Searching the wrong domain wastes time. Revenue presentation lives in revenue, not tax.'],
-        ['Choose the oldest paragraph because authority ages like cheese', 'Codification updates supersede older guidance. Current authority is required, not vintage.'],
+        ['Treat the oldest paragraph as strongest authority because it has existed longest', 'Codification updates supersede older guidance. Current authority is required, not vintage.'],
       ],
       'Research tasks reward precision. Start broad if needed, then narrow to the exact topic, subtopic, and paragraph.'),
     q(4250502, 'Career Skills', 'Simulations, Research, and Workpaper Craft', 'Simulation tie-out',
@@ -922,7 +922,7 @@ const careerAgentGeneratedQualificationsFinanceBaseQuestionsByTrack: Record<stri
       [
         ['Wait for April and rely on a single annual payment', 'Annual-only payments trigger underpayment penalties through the year.'],
         ['Estimate once in January and never revisit', 'Income changes through the year. Estimates need updates, not set-and-forget.'],
-        ['Ignore safe-harbor rules because they sound legalistic', 'Safe-harbor rules are exactly the mechanic that prevents penalties. Ignoring them defeats the purpose.'],
+        ['Treat safe-harbor language as irrelevant because it sounds like legal boilerplate', 'Safe-harbor rules are exactly the mechanic that prevents penalties. Ignoring them defeats the purpose.'],
       ],
       'Stamina includes administrative cadence. Quarterly estimates plus year-end true-ups keep self-employment tax life predictable.'),
   ],

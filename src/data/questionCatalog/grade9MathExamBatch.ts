@@ -1,4 +1,5 @@
 import { makeQuestionBank } from './base'
+import type { Question } from './types'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
@@ -9,6 +10,13 @@ const q = (
   prompt: string,
   correct: string,
   wrong: [string, string, string][],
+  extra: {
+    lesson?: string
+    solution?: string
+    mentorHint?: string
+    alternatePrompts?: Question['alternatePrompts']
+    challengeRating?: Question['challengeRating']
+  } = {},
 ) => ({
   id,
   chapter,
@@ -16,8 +24,12 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
+  lesson: extra.lesson ??
     'Coverage source: NYSED, STAAR, and OER Grade 9 algebra/geometry collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  solution: extra.solution,
+  mentorHint: extra.mentorHint,
+  alternatePrompts: extra.alternatePrompts,
+  challengeRating: extra.challengeRating,
   source: 'Generated from NYSED/STAAR/OER Grade 9 math coverage',
 })
 
@@ -62,11 +74,20 @@ export const grade9MathExamBatchQuestions = makeQuestionBank('Mathematics', [
     miss('3', 'That uses only the change in x.', 'Include both horizontal and vertical changes.'),
     miss('4', 'That uses only the change in y.', 'Distance uses both legs.'),
   ]),
-  q(434009, 'Statistics', 'Scatter plots', 'A scatter plot slopes upward from left to right. What type of association does it show?', 'Positive association', [
+  q(434009, 'Statistics', 'Scatter plots', 'A scatter plot has points that generally rise as you move from left to right. What type of association does this upward pattern show between the two variables?', 'Positive association', [
     miss('Negative association', 'That would slope downward from left to right.', 'Track how y changes as x increases.'),
     miss('No association', 'A clear upward pattern is an association.', 'Look for the overall trend.'),
     miss('Causal association', 'A scatter plot alone does not prove causation.', 'Association is not the same as cause.'),
-  ]),
+  ], {
+    lesson: 'A scatter plot shows association by the overall pattern of points. If the points tend to rise as x increases, larger x-values are paired with larger y-values, which is a positive association. The plot can show a relationship, but it does not by itself prove one variable causes the other.',
+    solution: 'An upward left-to-right pattern means y tends to increase as x increases, so the association is positive.',
+    mentorHint: 'Trace the cloud from left to right: up means positive, down means negative, and no clear pattern means weak or no association.',
+    alternatePrompts: {
+      plain: 'If points on a scatter plot generally go up as x increases, what kind of association is shown?',
+      teaching: 'Imagine walking along the scatter plot from left to right. If the points climb as you walk, what does that say about the relationship?',
+    },
+    challengeRating: 3,
+  }),
   q(434010, 'Inequalities', 'Graph inequality', 'Which statement describes the graph of x <= 4 on a number line?', 'Closed circle at 4, shaded left', [
     miss('Open circle at 4, shaded left', 'The symbol includes equality, so the endpoint is closed.', 'Less than or equal includes 4.'),
     miss('Closed circle at 4, shaded right', 'That represents x >= 4.', 'Less than values are to the left.'),

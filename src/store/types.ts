@@ -1,7 +1,7 @@
 import type { AgeGroup, StageDetail } from '../data/ageCatalog/types'
 import type { CourseTopicId } from '../lib/coursePersonalization'
 
-export type AppScreen = 'hub' | 'courses' | 'games' | 'map' | 'chapter' | 'lesson' | 'profile' | 'questionnaire' | 'pong' | 'invaders' | 'present' | 'fight' | 'wordle' | 'quordle' | 'octordle' | 'connections' | 'letterboxed' | 'waffle' | 'g2048' | 'g2248' | 'nerdle' | 'sumplete' | 'sudoku' | 'kakuro' | 'rikudo'
+export type AppScreen = 'hub' | 'courses' | 'games' | 'map' | 'chapter' | 'flashcards' | 'lesson' | 'profile' | 'questionnaire' | 'pong' | 'invaders' | 'present' | 'guessGift' | 'fight' | 'wordle' | 'quordle' | 'octordle' | 'connections' | 'letterboxed' | 'waffle' | 'g2048' | 'g2248' | 'nerdle' | 'sumplete' | 'sudoku' | 'kakuro' | 'rikudo'
 export type AppMode = 'daily' | 'practice' | 'doom' | 'podcast' | 'review'
 export type Mood = 'fired' | 'good' | 'cozy' | 'curious' | null
 export type AdultFocusOption = 'Geeky Fun' | 'Work Skills' | 'Technical Qualifications' | 'Interview Prep'
@@ -49,6 +49,11 @@ export interface MisconceptionArtifact {
 export interface QuestionQualityRating {
   goodQuestion: number
   writingIssues: number
+  updatedAt: string
+}
+
+export interface FlashcardRating {
+  status: 'review' | 'known'
   updatedAt: string
 }
 
@@ -169,6 +174,7 @@ export interface QuizSlice {
   flaggedQuestions: number[]
   repeatedQuestions: number[]
   questionQualityRatings: Record<number, QuestionQualityRating>
+  flashcardRatings: Record<string, FlashcardRating>
   showLesson: boolean
   selectedChapter: string | null
   /**
@@ -217,6 +223,8 @@ export interface QuizSlice {
     questionId: number,
     rating: Partial<Pick<QuestionQualityRating, 'goodQuestion' | 'writingIssues'>>
   ) => void
+  setFlashcardRating: (cardKey: string, status: FlashcardRating['status']) => void
+  clearFlashcardDeckRatings: (deckKey: string) => void
   setSelectedChapter: (chapter: string | null) => void
   setSelectedLesson: (lesson: string | null) => void
   resetQuizState: () => void

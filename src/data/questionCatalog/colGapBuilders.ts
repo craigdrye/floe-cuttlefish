@@ -9,6 +9,10 @@ type Definition = {
   correct: string
   wrong: [string, string, string][]
   mentorHint?: string
+  lesson?: string
+  solution?: string
+  alternatePrompts?: Question['alternatePrompts']
+  challengeRating?: Question['challengeRating']
 }
 
 type TemplatePrompt = {
@@ -16,6 +20,10 @@ type TemplatePrompt = {
   correct: string
   wrong: string[][]
   mentorHint?: string
+  lesson?: string
+  solution?: string
+  alternatePrompts?: Question['alternatePrompts']
+  challengeRating?: Question['challengeRating']
 }
 
 function buildCourse(topic: Topic, definitions: Definition[]): Question[] {
@@ -604,6 +612,10 @@ function buildTemplateCourse(
       correct: entry.correct,
       wrong: entry.wrong as [string, string, string][],
       mentorHint: entry.mentorHint,
+      lesson: entry.lesson,
+      solution: entry.solution,
+      alternatePrompts: entry.alternatePrompts,
+      challengeRating: entry.challengeRating,
     })),
   )
 }
@@ -2265,11 +2277,7 @@ export function makeHighSchoolBiologyNGSSQuiz(): Question[] {
 }
 
 export function makeHighSchoolPhysicsNGSSQuiz(): Question[] {
-  const skillBank: Array<{
-    prompt: string
-    correct: string
-    wrong: [string, string, string][]
-  }> = [
+  const skillBank: TemplatePrompt[] = [
     {
       prompt: 'What is speed?',
       correct: 'Distance divided by time',
@@ -2280,13 +2288,21 @@ export function makeHighSchoolPhysicsNGSSQuiz(): Question[] {
       ],
     },
     {
-      prompt: 'If a 2 kg object accelerates at 3 m/s^2, what is the net force?',
+      prompt: 'A tiny physics cart has a mass of 2 kg and accelerates at 3 m/s^2. Using Newton\'s second law, what net force must be acting on it?',
       correct: '6 N',
       wrong: [
         ['5 N', 'That adds mass and acceleration instead of multiplying.', 'Use F = m × a.'],
         ['1.5 N', 'That divides mass by acceleration instead of multiplying.', 'F = ma = 2 × 3 = 6 N.'],
         ['9 N', 'That over-counts — recheck the multiplication.', 'F = 2 × 3 = 6 N.'],
       ],
+      mentorHint: 'Newton\'s second law says net force equals mass times acceleration, so the units should become kg·m/s^2, also called newtons.',
+      lesson: 'Newton\'s second law connects cause and motion: a net force is what changes an object\'s velocity. The formula is F = ma, where mass is in kilograms and acceleration is in meters per second squared. Multiplying those units gives newtons, the unit of force.',
+      solution: 'Use F = ma. The mass is 2 kg and the acceleration is 3 m/s^2, so F = 2 × 3 = 6 N.',
+      alternatePrompts: {
+        plain: 'What net force is needed to make a 2 kg object accelerate at 3 m/s^2?',
+        teaching: 'Newton\'s second law says a force is bigger when either mass or acceleration is bigger. What do you get when you multiply 2 kg by 3 m/s^2?',
+      },
+      challengeRating: 4,
     },
     {
       prompt: 'What happens to kinetic energy when speed increases?',
@@ -2362,7 +2378,7 @@ export function makeHighSchoolPhysicsNGSSQuiz(): Question[] {
     },
   ]
 
-  const prompts: Array<{ prompt: string; correct: string; wrong: string[][] }> = []
+  const prompts: TemplatePrompt[] = []
   skillBank.forEach((entry) => {
     for (let r = 0; r < 5; r++) prompts.push(entry)
   })

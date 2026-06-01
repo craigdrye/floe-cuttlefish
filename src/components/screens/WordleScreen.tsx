@@ -215,7 +215,7 @@ export function WordleScreen() {
           <DailyPuzzleBanner daily={daily} />
           {toast && <div className="wordle-toast" role="status">{toast}</div>}
 
-          <details className="game-rules" open>
+          <details className="game-rules">
             <summary><HelpCircle size={14} /> How to play Floedle</summary>
             <div className="game-rules-body">
               <ol>

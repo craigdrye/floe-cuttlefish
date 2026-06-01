@@ -1,4 +1,5 @@
 import { makeQuestionBank } from './base'
+import type { Question } from './types'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
@@ -9,6 +10,13 @@ const q = (
   prompt: string,
   correct: string,
   wrong: [string, string, string][],
+  extra: {
+    lesson?: string
+    solution?: string
+    mentorHint?: string
+    alternatePrompts?: Question['alternatePrompts']
+    challengeRating?: Question['challengeRating']
+  } = {},
 ) => ({
   id,
   chapter,
@@ -16,8 +24,12 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
+  lesson: extra.lesson ??
     'Coverage source: NYSED and STAAR Grade 8 math raw collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  solution: extra.solution,
+  mentorHint: extra.mentorHint,
+  alternatePrompts: extra.alternatePrompts,
+  challengeRating: extra.challengeRating,
   source: 'Generated from NYSED/STAAR Grade 8 math coverage',
 })
 
@@ -62,11 +74,20 @@ export const grade8MathExamBatchQuestions = makeQuestionBank('Mathematics', [
     miss('8', 'That gives y, not x.', 'Find x.'),
     miss('4', 'That subtracts twice.', 'Only subtract 2 once.'),
   ]),
-  q(431009, 'Statistics', 'Mean', 'The mean of 4, 6, 10, and 12 is:', '8', [
+  q(431009, 'Statistics', 'Mean', 'Four quiz scores are 4, 6, 10, and 12. If the mean is the balance point after every score shares the total equally, what is the mean?', '8', [
     miss('32', 'That is the sum, not the mean.', 'Divide by the number of values.'),
     miss('6', 'That is one data value, not the average.', 'Add all values first.'),
     miss('10', 'That is another data value.', 'Mean balances all values.'),
-  ]),
+  ], {
+    lesson: 'The mean is the fair-share average: add all the values, then split that total evenly across the number of values. For 4, 6, 10, and 12, the total is 32. Sharing 32 across four scores gives 8, so 8 is the balance point of the data set.',
+    solution: 'Add the four scores: 4 + 6 + 10 + 12 = 32. There are four scores, so divide 32 by 4 to get a mean of 8.',
+    mentorHint: 'First find the total, then ask what each of the four scores would get if the total were shared evenly.',
+    alternatePrompts: {
+      plain: 'What is the average of the four numbers 4, 6, 10, and 12?',
+      teaching: 'Imagine the scores 4, 6, 10, and 12 pooling their points and sharing them equally. How many points does each score get?',
+    },
+    challengeRating: 3,
+  }),
   q(431010, 'Geometry', 'Cylinder volume', 'The volume of a cylinder is found with:', 'pi r^2 h', [
     miss('2 pi r', 'That is circumference, not volume.', 'Use base area times height.'),
     miss('pi r h', 'The radius must be squared for circular area.', 'Area of base is pi r^2.'),

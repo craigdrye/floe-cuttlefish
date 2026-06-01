@@ -51,6 +51,45 @@ function enrichUniversityPrepMentorHints(catalog: Record<string, Question[]>): R
   return enriched
 }
 
+function prepLesson(trackId: string, question: Question): string {
+  const title = question.title || question.chapter || 'this prep question'
+  const answer = question.solution || 'the best answer'
+  if (trackId === 'ml') {
+    return `Machine learning prep questions are about matching data, model behavior, and evaluation to the decision. For "${title}", the key idea is: ${answer}. Ask whether the issue is features, labels, metric choice, sampling, drift, deployment, or experiment design.`
+  }
+  if (trackId === 'research') {
+    return `Research prep questions are about the strength of an inference. For "${title}", the key idea is: ${answer}. Identify the claim, the comparison being made, the evidence quality, and the limitation before choosing.`
+  }
+  if (trackId === 'uxResearch') {
+    return `UX research questions are about choosing evidence that improves a product decision. For "${title}", the key idea is: ${answer}. Ask whether the study is discovering needs, evaluating usability, recruiting well, synthesizing patterns, or communicating impact.`
+  }
+  if (trackId === 'introCS' || trackId === 'software' || trackId === 'softwareDesign' || trackId === 'softwareFoundations' || trackId === 'algorithms' || trackId === 'sqlFoundations') {
+    return `Software prep questions are about tracing behavior and tradeoffs. For "${title}", the key idea is: ${answer}. Use a tiny example, name the operation or design responsibility, and check which choice preserves correctness.`
+  }
+  return `University-prep questions test whether you can use a concept in context. For "${title}", the key idea is: ${answer}. Name the concept, then match it to the exact scenario in the prompt.`
+}
+
+function rewritePrepPrompt(question: Question): string {
+  const prompt = question.prompt.trim()
+  if (prompt.endsWith('?')) return question.prompt
+  if (prompt.endsWith(':')) {
+    return `${prompt} Which answer best completes the idea?`
+  }
+  return `${prompt} Which answer is best?`
+}
+
+function enrichUniversityPrepQuestionQuality(catalog: Record<string, Question[]>): Record<string, Question[]> {
+  const enriched: Record<string, Question[]> = {}
+  for (const [trackId, questions] of Object.entries(catalog)) {
+    enriched[trackId] = questions.map((question) => ({
+      ...question,
+      prompt: rewritePrepPrompt(question),
+      lesson: question.lesson || prepLesson(trackId, question),
+    }))
+  }
+  return enriched
+}
+
 export function buildUniversityPrepQuestionCatalog(): Record<string, Question[]> {
   const catalog: Record<string, Question[]> = {
   ml: [
@@ -121,5 +160,5 @@ export function buildUniversityPrepQuestionCatalog(): Record<string, Question[]>
   ],
   }
 
-  return enrichUniversityPrepMentorHints(catalog)
+  return enrichUniversityPrepMentorHints(enrichUniversityPrepQuestionQuality(catalog))
 }

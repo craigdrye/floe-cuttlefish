@@ -651,7 +651,7 @@ export const tenthGradeReadingVocabHighTopUpQuestions: Question[] = makeQuestion
     correct: 'Use the sentence context, which points to "new or original," not the most common dictionary meaning',
     wrong: [
       miss('Pick "a long work of fiction" because that is the most familiar meaning', 'Vocabulary-in-context items often test secondary meanings; the familiar definition is frequently the trap.', 'Plug each option into the sentence and see which fits.'),
-      miss('Choose the longest or most sophisticated-sounding option', 'Word length and sophistication do not determine the right meaning; context does.', 'Let the sentence, not the fanciness, decide.'),
+      miss('The longest or most sophisticated-sounding option', 'Word length and sophistication do not determine the right meaning; context does.', 'Let the sentence, not the fanciness, decide.'),
       miss('Guess randomly since the word has many meanings', 'Context narrows the meaning precisely; guessing ignores the available clue.', 'Read the surrounding words to pin the intended sense.'),
     ],
     lesson: 'Vocabulary-in-context questions ask what a word means in its specific sentence, often a secondary meaning. "Novel" here means new or original, not a book. Substituting each option into the sentence to see which fits is the reliable method; the most common meaning is frequently the trap.',

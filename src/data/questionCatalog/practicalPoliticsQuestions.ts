@@ -103,7 +103,7 @@ const _highPracticalPoliticsBase = makeQuestionBank('AP', [
     correct: 'Respect tradition, social order, individual responsibility, and limits on rapid state intervention',
     wrong: [
       ['Change every institution instantly because old things are always bad', 'That is the opposite of a conservative temperament.', 'Conservatism often values continuity.'],
-      ['Assume markets and families never matter', 'Many conservatives emphasize markets, families, and civil society.', 'Look for non-state institutions.'],
+      ['Treat government action as the only force shaping public outcomes', 'Many conservatives emphasize markets, families, and civil society.', 'Look for non-state institutions.'],
       ['Have no view about authority or change', 'Conservatism often has strong views about both.', 'Think order, continuity, and prudence.'],
     ],
     lesson: 'Conservative views are diverse, but common themes include tradition, order, local institutions, markets, and caution about sweeping change.',
@@ -351,7 +351,7 @@ const _highPracticalPoliticsBase = makeQuestionBank('AP', [
     wrong: [
       ['The exact color of every yard sign', 'That may be campaign detail, but it does not explain governing choices.', 'Look for policy substance.'],
       ['A judicial appointment for the reporter', 'Reporters do not need judgeships to explain policy.', 'This is about coverage focus.'],
-      ['A rule that polls are illegal', 'Polls can be useful; the concern is imbalance in coverage.', 'Strategy should not crowd out policy.'],
+      ['A rule that poll workers can choose which ballots count', 'Polls can be useful; the concern is imbalance in coverage.', 'Strategy should not crowd out policy.'],
     ],
     lesson: 'Media literacy means asking whether coverage explains power, policy, tradeoffs, and evidence, not only the contest narrative.',
   },
@@ -390,7 +390,7 @@ const _highPracticalPoliticsBase = makeQuestionBank('AP', [
     wrong: [
       ['Give up all speech rights before gathering', 'Public assembly is protected, though it can be regulated in neutral ways.', 'Rights and rules can coexist.'],
       ['Let the mayor rewrite every sign in advance', 'Government usually cannot control viewpoints just because it dislikes them.', 'Content neutrality matters.'],
-      ['Assume every gathering has identical permit rules everywhere', 'Permit and notice rules vary by jurisdiction and circumstance.', 'Check the local rule before organizing.'],
+      ["Treat one jurisdiction's permit rule as if it applies to every public gathering", 'Permit and notice rules vary by jurisdiction and circumstance.', 'Check the local rule before organizing.'],
     ],
     lesson: 'Democratic systems protect protest and assembly, while allowing reasonable content-neutral rules for safety, access, and public order.',
   },
@@ -403,7 +403,7 @@ const _highPracticalPoliticsBase = makeQuestionBank('AP', [
     wrong: [
       ['It means citizens can never criticize winners', 'Democracy still protects criticism and opposition.', 'The norm is about lawful transfer of power.'],
       ['It lets losing candidates erase all votes', 'That is the opposite of accepting the result.', 'Votes and legal processes decide outcomes.'],
-      ['It makes courts and recounts illegal', 'Legal challenges can exist within the rules.', 'The key is respecting the lawful final result.'],
+      ['It guarantees that every challenged ballot changes the result', 'Legal challenges can exist within the rules.', 'The key is respecting the lawful final result.'],
     ],
     lesson: 'Democratic norms include losing gracefully, respecting lawful outcomes, and using legal procedures rather than threats or violence.',
   },
@@ -441,7 +441,7 @@ const _highPracticalPoliticsBase = makeQuestionBank('AP', [
     correct: 'Check reliable sources such as official election offices, court records, and credible reporting before sharing',
     wrong: [
       ['Share it immediately because strong emotion proves accuracy', 'Emotion is not evidence.', 'Verify before amplifying.'],
-      ['Assume every official source is always fake', 'Healthy skepticism is not the same as rejecting all evidence.', 'Compare sources and records.'],
+      ['Treat official sources as automatically unreliable even when records and credible reporting line up', 'Healthy skepticism is not the same as rejecting all evidence.', 'Compare sources and records.'],
       ['Edit the claim to sound more dramatic', 'That spreads possible misinformation further.', 'Slow down and verify.'],
     ],
     lesson: 'Misinformation spreads when people share before checking; practical media literacy means tracing claims to evidence and accountable sources.',
@@ -453,7 +453,7 @@ const _highPracticalPoliticsBase = makeQuestionBank('AP', [
     prompt: 'A campaign finance disclosure rule is mainly meant to:',
     correct: 'Let the public see who is giving money and how campaigns or groups are funded',
     wrong: [
-      ['Make every donation automatically illegal', 'Disclosure does not ban all donations.', 'It is about transparency.'],
+      ['Let campaigns avoid disclosure by using informal side groups', 'Disclosure does not ban all donations.', 'It is about transparency.'],
       ['Hide donors from voters until after laws expire', 'That is the opposite of disclosure.', 'The public visibility is the point.'],
       ['Replace elections with fundraising totals', 'Money can influence politics, but votes still decide elections.', 'Disclosure informs voters and watchdogs.'],
     ],
@@ -596,8 +596,8 @@ const _highPracticalPoliticsBase = makeQuestionBank('AP', [
     prompt: 'A voter guide is most useful when a student wants to:',
     correct: 'Compare candidates or ballot measures using reliable information about positions, records, and endorsements',
     wrong: [
-      ['Rely on a guide without checking who produced it or how it chose ratings', 'Voter guides can be useful, but source and method matter.', 'Look for transparency.'],
-      ['Skip checking any other source because one guide is always perfect', 'Guides can have bias or limits, so comparison still matters.', 'Use voter guides as one tool.'],
+      ['Treat a voter guide as neutral even when its sponsor and rating criteria are unclear', 'Voter guides can be useful, but source and method matter.', 'Look for transparency.'],
+      ['Treat one voter guide as sufficient without comparing candidate records or primary sources', 'Guides can have bias or limits, so comparison still matters.', 'Use voter guides as one tool.'],
       ['Learn the final vote count before Election Day', 'Voter guides explain choices before voting; they do not predict official results.', 'Think decision support, not results.'],
     ],
     lesson: 'Good voter guides help voters compare choices, but readers should notice the source, methods, bias, and whether claims are backed by evidence.',
@@ -622,8 +622,8 @@ const _highPracticalPoliticsBase = makeQuestionBank('AP', [
     prompt: 'A city posts open data about bus delays, street repairs, and budget spending. A practical civic use of that data is to:',
     correct: 'Look for patterns, compare claims with evidence, and ask officials informed questions',
     wrong: [
-      ['Assume the data means every problem is already solved', 'Publishing data does not automatically fix the underlying issue.', 'Data is a tool for accountability.'],
-      ['Ignore context such as definitions, dates, and missing records', 'Open data can mislead if readers do not understand what it measures.', 'Check how the data was collected.'],
+      ['Treat improved data as proof that no policy problem remains', 'Publishing data does not automatically fix the underlying issue.', 'Data is a tool for accountability.'],
+      ['Read a statistic at face value even when definitions, time period, and missing records are unclear', 'Open data can mislead if readers do not understand what it measures.', 'Check how the data was collected.'],
       ['Treat one confusing spreadsheet as proof that government should have no records', 'Messy data may need explanation, but records can still support accountability.', 'Focus on careful interpretation.'],
     ],
     lesson: 'Open data can help residents investigate services and spending, but it works best when people check definitions, limits, timing, and context.',
@@ -635,7 +635,7 @@ const _highPracticalPoliticsBase = makeQuestionBank('AP', [
     prompt: 'After speaking during public comment at a school board meeting, what is a smart follow-up step?',
     correct: 'Send a brief follow-up with the request, evidence, contact information, and any promised materials',
     wrong: [
-      ['Assume the issue is finished because one comment was made', 'Public comment may start a conversation, but follow-up often matters.', 'Keep the ask visible and usable.'],
+      ['Treat one public comment as enough to close the feedback process', 'Public comment may start a conversation, but follow-up often matters.', 'Keep the ask visible and usable.'],
       ['Send unrelated insults to every staff member', 'That is unlikely to build support or clarify the issue.', 'Stay respectful and focused.'],
       ['Wait years before checking whether anything changed', 'Accountability requires tracking the next meeting, vote, or response.', 'Follow the process after speaking.'],
     ],
@@ -674,7 +674,7 @@ const _highPracticalPoliticsBase = makeQuestionBank('AP', [
     prompt: 'A candidate promises to cut taxes, increase services, and reduce debt all at once. What is the best civic question?',
     correct: 'What specific tradeoffs, numbers, authority, and timeline make that promise realistic?',
     wrong: [
-      ['Whether the promise sounds exciting enough to ignore the budget', 'Excitement does not remove fiscal or legal constraints.', 'Ask how the promise would work.'],
+      ['Whether the promise has authority, funding, and an implementation path', 'Excitement does not remove fiscal or legal constraints.', 'Ask how the promise would work.'],
       ['Whether the candidate can avoid explaining details until after leaving office', 'Accountability requires enough detail before voters decide.', 'Promises should be measurable.'],
       ['Whether all campaign promises are automatically impossible', 'Some promises can be realistic, but they need evidence and constraints.', 'Evaluate rather than assume.'],
     ],
@@ -728,7 +728,7 @@ const _highPracticalPoliticsBase = makeQuestionBank('AP', [
     wrong: [
       ['Demand every document from every government in the country', 'Overbroad requests can be delayed, denied, or hard to process.', 'Narrow the agency and records.'],
       ['Send a vague request to the wrong agency and hope it gets forwarded', 'Wrong custodian and vague scope can slow or weaken a request.', 'Target the agency and records.'],
-      ['Assume records never exist unless they are already on social media', 'Many public records are not posted publicly until requested.', 'Look for the records office or portal.'],
+      ['Treat social media visibility as the test for whether public records exist', 'Many public records are not posted publicly until requested.', 'Look for the records office or portal.'],
     ],
     lesson: 'Public records laws can help citizens investigate government decisions, but effective requests are specific, lawful, and aimed at the right agency.',
   },
@@ -765,7 +765,7 @@ const _highPracticalPoliticsBase = makeQuestionBank('AP', [
     prompt: 'A club wants to run a voter registration drive at school. What should organizers do first?',
     correct: 'Check eligibility rules, deadlines, required forms, nonpartisan guidelines, and any school or state requirements',
     wrong: [
-      ['Register people without checking whether the forms are valid', 'Invalid or incomplete forms may not help voters get registered.', 'Accuracy and deadlines matter.'],
+      ['Collect registration forms without verifying eligibility, signatures, and submission rules', 'Invalid or incomplete forms may not help voters get registered.', 'Accuracy and deadlines matter.'],
       ['Only help students who promise to support one candidate', 'A voter registration drive should not condition help on a vote choice.', 'Registration is about access, not coercion.'],
       ['Wait until after the registration deadline to start outreach', 'Missing the deadline can prevent eligible people from voting.', 'Work backward from official dates.'],
     ],
@@ -791,7 +791,7 @@ const _highPracticalPoliticsBase = makeQuestionBank('AP', [
     prompt: 'After a candidate wins office, how can residents track whether a campaign promise is being kept?',
     correct: 'Define the promise clearly, follow relevant votes and budgets, check official actions, and compare progress against a realistic timeline',
     wrong: [
-      ['Assume the promise was fulfilled as soon as the candidate was sworn in', 'Winning office does not automatically complete a policy promise.', 'Look for action and results.'],
+      ['Treat taking office as the same thing as delivering the campaign promise', 'Winning office does not automatically complete a policy promise.', 'Look for action and results.'],
       ['Track only social media slogans and ignore votes or budgets', 'Slogans can signal priorities, but governing records show what happened.', 'Check official actions.'],
       ['Decide that no promise can ever be evaluated', 'Some promises are vague, but many can be tracked with clear measures and timelines.', 'Make the promise measurable.'],
     ],
@@ -874,7 +874,7 @@ export const universityComparativePoliticsQuestions = makeQuestionBank('Universi
     wrong: [
       ['Guarantee only two parties can win seats', 'PR often supports more parties, not fewer.', 'Seat share follows vote share more closely.'],
       ['Eliminate coalition governments forever', 'PR can make coalitions more likely.', 'More proportional results can fragment legislatures.'],
-      ['Ignore all votes after the first district reports', 'That is not proportional representation.', 'Think overall vote-seat translation.'],
+      ['Treat early district returns as final before the full count is in', 'That is not proportional representation.', 'Think overall vote-seat translation.'],
     ],
     lesson: 'Electoral systems shape party systems, coalition incentives, and whether small parties can win representation.',
   },
@@ -937,7 +937,7 @@ export const universityComparativePoliticsQuestions = makeQuestionBank('Universi
     prompt: 'The median voter idea is useful because it predicts that, under some conditions, parties may:',
     correct: 'Move toward the center voter to win majorities',
     wrong: [
-      ['Ignore the distribution of voter preferences entirely', 'The theory is specifically about voter preferences.', 'Think electoral competition.'],
+      ['Use only the total vote count without considering how preferences are distributed', 'The theory is specifically about voter preferences.', 'Think electoral competition.'],
       ['Always move to the most extreme position possible', 'That is often the opposite of the median voter prediction.', 'Competition can pull toward the middle.'],
       ['Stop campaigning after one speech', 'The theory is about positioning, not campaign duration.', 'Focus on voter distribution.'],
     ],
@@ -1285,14 +1285,21 @@ export const universityComparativePoliticsQuestions = makeQuestionBank('Universi
     id: 478038,
     chapter: 'Comparative Methods',
     title: 'Measurement validity',
-    prompt: 'In empirical comparison, a measure is valid when it:',
+    prompt: 'A researcher wants to compare "democratic accountability" across countries, so they need an indicator that really matches that concept. In empirical comparison, when is a measure valid?',
     correct: 'Actually captures the concept the researcher claims to study',
     wrong: [
       ['Produces a number even if the concept is unrelated', 'Numbers alone do not guarantee validity.', 'Ask whether the measure fits the concept.'],
       ['Is chosen only because it makes the hypothesis look correct', 'That creates bias rather than valid measurement.', 'Evidence should test the claim.'],
       ['Works in one case only because the researcher likes that country', 'Comparative measures need conceptual justification across cases.', 'Think concept-measure fit.'],
     ],
-    lesson: 'Good comparative research depends on clear concepts, valid measures, reliable evidence, and case selection that matches the explanation being tested.',
+    lesson: 'Validity is about concept-measure fit. A measure can be precise, numerical, and easy to collect while still being invalid if it does not capture the idea the researcher claims to study. In comparative politics, this matters because weak measures can make country comparisons look scientific while quietly changing the question.',
+    solution: 'A valid measure actually captures the concept being studied. If the concept is democratic accountability, the indicator must connect to accountability rather than merely produce a convenient number.',
+    mentorHint: 'Ask whether the indicator measures the real concept, not whether it is convenient, numerical, or flattering to the hypothesis.',
+    alternatePrompts: {
+      plain: 'In comparative research, what makes a measure valid rather than just easy to count?',
+      teaching: 'Suppose a researcher says they are measuring accountability. What has to be true about the indicator for that measurement to be valid?',
+    },
+    challengeRating: 6,
   },
   {
     id: 478039,
@@ -1616,7 +1623,7 @@ const _careerPublicAffairsBase = makeQuestionBank('Career Skills', [
     prompt: 'A cautious approach to political donations at work is to:',
     correct: 'Follow contribution rules, disclosure requirements, approval processes, and conflict-of-interest policies',
     wrong: [
-      ['Assume every donation is secret and rule-free', 'Political finance often has rules and disclosure.', 'Check compliance before acting.'],
+      ['Treat political donations as private gifts with no disclosure or limit rules', 'Political finance often has rules and disclosure.', 'Check compliance before acting.'],
       ['Use company money for any candidate without review', 'Corporate political spending is heavily rule-dependent.', 'Approval and law matter.'],
       ['Treat donations as unrelated to reputation', 'Political activity can create legal and reputational issues.', 'Consider compliance and perception.'],
     ],
@@ -1655,7 +1662,7 @@ const _careerPublicAffairsBase = makeQuestionBank('Career Skills', [
     prompt: 'An agency opens a public comment period on a proposed rule. What is the most useful response?',
     correct: 'Submit evidence-based comments tied to the agency question, legal authority, costs, benefits, and implementation concerns',
     wrong: [
-      ['Ignore the deadline and complain only after the final rule', 'Late complaints may have less effect and may not enter the record.', 'Use the live process.'],
+      ['Wait until after the final rule instead of engaging during the comment deadline', 'Late complaints may have less effect and may not enter the record.', 'Use the live process.'],
       ['Send a slogan with no evidence or specific ask', 'A slogan rarely helps an agency assess a rule.', 'Make the comment substantive.'],
       ['Ask a legislator to pretend the agency does not exist', 'Agencies have rulemaking roles under law.', 'Work the actual process.'],
     ],
@@ -1681,7 +1688,7 @@ const _careerPublicAffairsBase = makeQuestionBank('Career Skills', [
     prompt: 'Before sending a coalition letter, what professional step helps protect trust among member organizations?',
     correct: 'Confirm sign-off, shared wording, spokesperson rules, evidence claims, and any limits on what each member endorses',
     wrong: [
-      ['Assume every member accepts final wording because they joined one earlier call', 'Coalition trust depends on explicit approval for public commitments.', 'Get sign-off.'],
+      ['Treat early participation as consent to the final coalition wording', 'Coalition trust depends on explicit approval for public commitments.', 'Get sign-off.'],
       ['Let one organization add evidence claims without review', 'Unreviewed claims can expose every signer to credibility risk.', 'Check evidence and attribution.'],
       ['Avoid naming who may speak for the coalition', 'Unclear spokesperson rules can create mixed messages.', 'Clarify public roles.'],
     ],
@@ -1694,7 +1701,7 @@ const _careerPublicAffairsBase = makeQuestionBank('Career Skills', [
     prompt: 'For a company exposed to a possible tax change, a useful political-risk monitor would track:',
     correct: 'Election results, committee activity, party positions, fiscal pressures, stakeholder campaigns, and agency guidance',
     wrong: [
-      ['Only whether the company logo is popular', 'Brand perception can matter, but it is not enough for policy risk.', 'Track the decision environment.'],
+      ['Only whether the company is popular with voters right now', 'Brand perception can matter, but it is not enough for policy risk.', 'Track the decision environment.'],
       ['Only yesterday\'s stock price', 'Market data may react to politics, but it does not explain the policy pathway.', 'Watch institutions and incentives.'],
       ['Only rumors with no source or decision link', 'Rumors are weak unless tied to credible actors and processes.', 'Use verifiable signals.'],
     ],
@@ -1916,7 +1923,7 @@ const _careerPublicAffairsBase = makeQuestionBank('Career Skills', [
     correct: 'Use permitted market-engagement channels, document contacts, avoid unfair advantage, and separate advocacy from bid preparation where needed',
     wrong: [
       ['Privately ask officials to write the tender around one company', 'That can undermine fairness and create procurement risk.', 'Protect the integrity of the process.'],
-      ['Ignore all contact rules until the bid is formally posted', 'Pre-tender activity can still be regulated or scrutinized.', 'Check rules early.'],
+      ['Treat procurement contact rules as irrelevant before formal posting', 'Pre-tender activity can still be regulated or scrutinized.', 'Check rules early.'],
       ['Promise future favors if the specifications change', 'That raises serious ethics and legal concerns.', 'Keep engagement lawful and documented.'],
     ],
     lesson: 'Procurement advocacy must respect fairness, transparency, contact limits, documentation, and the boundary between policy education and bid advantage.',
@@ -1930,7 +1937,7 @@ const _careerPublicAffairsBase = makeQuestionBank('Career Skills', [
     wrong: [
       ['Accept immediately because informal access is always harmless', 'Informal access can still create compliance and reputation risk.', 'Check the rules before acting.'],
       ['Use personal email so no one has to track it', 'Avoiding records can make risk worse.', 'Document sensitive contacts properly.'],
-      ['Assume former officials are exempt from all restrictions', 'Post-employment and lobbying rules may apply.', 'Review revolving-door limits.'],
+      ['Treat former officials as free from cooling-off, lobbying, or ethics limits', 'Post-employment and lobbying rules may apply.', 'Review revolving-door limits.'],
     ],
     lesson: 'Edge cases are where compliance discipline matters most: pause, identify applicable rules, document decisions, and escalate before acting.',
   },
@@ -1969,7 +1976,7 @@ const _careerPublicAffairsBase = makeQuestionBank('Career Skills', [
     wrong: [
       ['Only the number of meetings held', 'Meetings are activity, not proof of influence.', 'Connect actions to movement.'],
       ['Only positive anecdotes from the campaign team', 'Anecdotes can help but may be biased or incomplete.', 'Use credible evidence.'],
-      ['Assume success because the preferred outcome happened after the campaign', 'Sequence alone does not prove contribution.', 'Compare rival explanations.'],
+      ['Treat a preferred outcome after the campaign as proof the campaign caused it', 'Sequence alone does not prove contribution.', 'Compare rival explanations.'],
     ],
     lesson: 'Public affairs evaluation should assess contribution by linking objectives, actions, evidence of movement, context, and outcomes.',
   },
@@ -2033,7 +2040,7 @@ const _careerPublicAffairsBase = makeQuestionBank('Career Skills', [
     correct: 'Define the information needed, target the right public body, narrow the scope, plan timing, and anticipate exemptions',
     wrong: [
       ['Ask for every record ever created by government', 'Overbroad requests can be delayed, refused, or hard to use.', 'Narrow the request to the strategy.'],
-      ['Assume exemptions never apply', 'Public records laws usually include exemptions and limits.', 'Plan for redactions or refusals.'],
+      ['Treat the public-records rule as absolute even when statutory exemptions may apply', 'Public records laws usually include exemptions and limits.', 'Plan for redactions or refusals.'],
       ['File requests with no idea how the records will be used', 'FOI work should serve a clear evidence or accountability goal.', 'Start with the information gap.'],
     ],
     lesson: 'FOI strategy works best when requests are precise, timed, directed to the right authority, and connected to a clear campaign or research need.',
@@ -2150,7 +2157,7 @@ const _careerPublicAffairsBase = makeQuestionBank('Career Skills', [
     correct: 'Funding sources, governance, conflicts, legal compliance, reputation, data practices, and alignment with the campaign ask',
     wrong: [
       ['Only whether the partner agrees with the headline goal', 'Alignment on one goal does not remove compliance or reputation risk.', 'Check the whole partnership.'],
-      ['Ignore funding sources because coalitions are always neutral', 'Funding can affect credibility and disclosure needs.', 'Understand who is behind the work.'],
+      ['Treat coalition branding as neutral even when funding and member incentives are opaque', 'Funding can affect credibility and disclosure needs.', 'Understand who is behind the work.'],
       ['Let the partner use any data however they want', 'Data use can create legal and trust issues.', 'Review permissions and safeguards.'],
     ],
     lesson: 'Partner due diligence protects campaigns from hidden conflicts, weak governance, funding surprises, compliance failures, and reputational damage.',
@@ -2176,7 +2183,7 @@ const _careerPublicAffairsBase = makeQuestionBank('Career Skills', [
     correct: 'Coordinate legal, records, communications, and subject experts to preserve documents, verify facts, and meet inquiry deadlines',
     wrong: [
       ['Treat the inquiry as optional because it is inconvenient', 'Public inquiries can carry serious legal and reputational duties.', 'Respect the process.'],
-      ['Send unreviewed files without checking relevance or privilege', 'Disclosure needs careful legal and factual review.', 'Coordinate before submitting.'],
+      ['Produce files before screening for relevance, privilege, or legally protected information', 'Disclosure needs careful legal and factual review.', 'Coordinate before submitting.'],
       ['Delete embarrassing drafts before anyone asks again', 'Destroying relevant records can create serious consequences.', 'Preserve documents.'],
     ],
     lesson: 'Public inquiry responses require disciplined coordination across legal, records, communications, and experts so evidence is accurate, preserved, and timely.',
@@ -2189,7 +2196,7 @@ const _careerPublicAffairsBase = makeQuestionBank('Career Skills', [
     correct: 'Likely governing arrangements, policy priorities, key appointments, legislative math, stakeholder reactions, and business implications',
     wrong: [
       ['Only who gave the most memorable victory speech', 'Speeches are signals, but they are not the whole governing reality.', 'Map power and priorities.'],
-      ['Assume every campaign promise becomes law immediately', 'Promises still face institutions, budgets, coalitions, and timing.', 'Test feasibility.'],
+      ['Treat a campaign promise as law before legislation, implementation, or funding exists', 'Promises still face institutions, budgets, coalitions, and timing.', 'Test feasibility.'],
       ['Wait until all decisions are final before thinking about risk', 'Early planning helps leaders prepare options.', 'Use scenarios before choices harden.'],
     ],
     lesson: 'Post-election scenario planning turns political change into practical options by tracking power, priorities, appointments, constraints, and exposure.',

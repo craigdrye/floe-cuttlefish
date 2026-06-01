@@ -321,7 +321,7 @@ export function PongScreen() {
             onTouchEnd={() => { pointerYRef.current = null }}
           />
 
-          <details className="game-rules pong-rules" open>
+          <details className="game-rules pong-rules">
             <summary><HelpCircle size={14} /> How to play Pong</summary>
             <div className="game-rules-body">
               <ol>

@@ -402,7 +402,7 @@ export function InvadersScreen() {
             onTouchEnd={() => { pointerXRef.current = null }}
           />
 
-          <details className="game-rules" open>
+          <details className="game-rules">
             <summary><HelpCircle size={14} /> How to play Space Invaders</summary>
             <div className="game-rules-body">
               <ol>

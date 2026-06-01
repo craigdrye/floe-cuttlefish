@@ -396,7 +396,7 @@ export const mcatTopUpQuestions: Question[] = makeQuestionBank('University', [
     correct: 'Fill in an answer for every remaining question, since there is no penalty for wrong answers',
     wrong: [
       miss('Leave them blank to avoid lowering your score', 'The MCAT has no penalty for incorrect answers, so a blank scores the same as a wrong answer - zero. Blanks throw away free expected points from guessing.', 'No wrong-answer penalty means a blank can never beat a guess.'),
-      miss('Answer only the questions you are at least 50% sure of', 'Because there is no penalty, even a pure guess has positive expected value (about 25% on a four-choice item). Answer all of them, confident or not.', 'With no penalty, every guess has positive expected value - leave nothing blank.'),
+      miss('Leaving the questions below 50% confidence blank', 'Because there is no penalty, even a pure guess has positive expected value (about 25% on a four-choice item). Answer all of them, confident or not.', 'With no penalty, every guess has positive expected value - leave nothing blank.'),
       miss('Spend the two minutes fully solving one and leave the other two blank', 'Better to guess on all three: solving one perfectly nets at most one point, while three guesses yield more expected points and still leaves none blank.', 'Three guesses beat one solved-plus-two-blank in expected value.'),
     ],
     mentorHint: 'Expected value matters when there is no wrong-answer penalty. A blank guarantees no credit, while even an uninformed four-choice guess has some chance of adding points.',

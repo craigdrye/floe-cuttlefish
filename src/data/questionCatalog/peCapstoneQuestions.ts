@@ -265,7 +265,7 @@ export const peCapstoneQuestions: Question[] = [
     [
       ['Negotiate the QoE findings down by half so the underwriting EBITDA lands at $56M', 'QoE findings are not a negotiation — they are an evidence-based bridge from reported to normalized EBITDA. Splitting the difference without engaging the underlying workpapers is exactly how sponsors talk themselves into overpaying.'],
       ['Use the reported $58M because QoE adjustments are typically reversed in PE underwriting', 'PE underwriting uses adjusted EBITDA, not reported EBITDA — that is the entire purpose of having a QoE provider. Using reported figures because of "convention" is a fabricated convention that does not exist in disciplined funds.'],
-      ['Ignore the $4M because it is less than 10% of EBITDA and within rounding error', 'A $4M adjustment at a 10x multiple is $40M of EV — that is not rounding error, that is the size of the IRR difference between two underwriting cases. Materiality thresholds at 10% of EBITDA on a $600M deal are wrong.'],
+      ['Treat the $4M QoE bridge as immaterial because EBITDA still rounds to the mid-$50M range', 'A $4M adjustment at a 10x multiple is $40M of EV — that is not rounding error, that is the size of the IRR difference between two underwriting cases. Materiality thresholds at 10% of EBITDA on a $600M deal are wrong.'],
     ],
     'QoE adjustments translate directly into EV at the entry multiple. Using the adjusted figure as the underwriting EBITDA is non-negotiable discipline — the only question is whether each adjustment is defended on the workpapers when the seller pushes back. The math is the math.'),
 
@@ -274,7 +274,7 @@ export const peCapstoneQuestions: Question[] = [
     'Phase I environmental assessments at all 8 sites, Phase II at any sites with historical issues, full review of permit status under RCRA and Clean Air Act, and a 28-year compliance history including any consent decrees or NOVs — environmental tail is a real liability in specialty chemicals',
     [
       ['Phase I assessments at the 3 largest sites only, since smaller sites have lower exposure', 'Environmental liability does not scale with revenue contribution — a single small site with a historical spill can carry a $20M+ remediation tail. Skipping Phase I at smaller sites assumes a conclusion the diligence is supposed to test.'],
-      ['Skip environmental diligence on the basis that the seller will provide reps and warranties on environmental matters', 'R&W on environmental matters typically excludes pre-existing conditions or caps them sharply. The diligence has to identify the conditions; R&W is a backstop, not a substitute.'],
+      ['Rely on broad environmental reps to cover historical contamination at the 8 chemicals plants', 'R&W on environmental matters typically excludes pre-existing conditions or caps them sharply. The diligence has to identify the conditions; R&W is a backstop, not a substitute.'],
       ['Run environmental diligence post-signing during the regulatory waiting period to compress the deal timeline', 'Post-signing environmental diligence means the sponsor commits before knowing the liability. Material environmental findings post-signing are extremely difficult to renegotiate — the diligence has to happen before the bid.'],
     ],
     'Environmental and EHS diligence in specialty chemicals is non-negotiable scope. Phase I at all sites, Phase II where flagged, and a full compliance history covering the asset\'s 28-year operating life is the floor. Compressing this workstream is one of the most expensive false economies in industrials PE.'),
@@ -284,7 +284,7 @@ export const peCapstoneQuestions: Question[] = [
     'Request specific procurement and engineering contacts through the seller (clean-team protocol), prepare program-level questions (specification status on F-35, JASSM, etc.), and treat each call as a 45-minute structured interview rather than a friendly chat — defense procurement is formal and rewards prepared questioners',
     [
       ['Cold-call procurement at each prime to get unfiltered feedback outside the seller\'s control', 'Cold-calling defense primes during an active sale process is a confidentiality breach the seller and banker will treat as a serious violation. Customer calls go through the clean-team protocol, not around it.'],
-      ['Skip defense customer calls because primes will not discuss procurement details on an unsigned deal', 'Defense primes will absolutely participate in structured reference calls through the clean-team protocol — this is a routine part of M&A diligence in the sector. Skipping the calls means walking into a $600M bid without testing the largest customer relationships.'],
+      ['Treat Lockheed/Raytheon/Northrop references as unavailable until after signing because programs are sensitive', 'Defense primes will absolutely participate in structured reference calls through the clean-team protocol — this is a routine part of M&A diligence in the sector. Skipping the calls means walking into a $600M bid without testing the largest customer relationships.'],
       ['Combine all defense calls into one group session with the sales team to be efficient', 'Group sessions destroy the per-customer signal. The whole point of customer calls is to triangulate across independent perspectives, which requires separate, structured conversations with each.'],
     ],
     'Customer calls with defense primes are formal, structured, program-specific conversations through clean-team protocol. The discipline is to bring prepared questions tied to the load-bearing risks (specification status, program backlog, supplier replacement difficulty) — that is the version of the call that produces real diligence signal.'),
@@ -305,7 +305,7 @@ export const peCapstoneQuestions: Question[] = [
     [
       ['Accept the $52M peg because that is the most recent and most accurate number', '"Most recent" is irrelevant if working capital is seasonal. A quarter-end snapshot $9M below the 12-month average is exactly the kind of figure sellers select for — accepting it without normalization hands the seller $9M of free EV.'],
       ['Demand a $70M peg to overcompensate for any seasonality risk', 'Demanding a peg materially above the 12-month average without supporting evidence is an unreasonable position the seller will reject and the banker will remember. The right peg is the normalized figure, not an over-correction.'],
-      ['Skip the working capital negotiation and let the closing-date true-up handle it', 'Without a negotiated peg, the closing-date true-up has no reference point. Sellers and buyers fight after close in those situations and lawyers get rich. The peg has to be agreed in the SPA.'],
+      ['Leave the SPA without a working-capital peg and calculate the true-up only from closing-date balances', 'Without a negotiated peg, the closing-date true-up has no reference point. Sellers and buyers fight after close in those situations and lawyers get rich. The peg has to be agreed in the SPA.'],
     ],
     'Working capital pegs are routine purchase-price adjustment mechanics, but the difference between the seller\'s preferred snapshot and the normalized 12-month average can easily be $5–15M. Locking in the right peg in the SPA is one of the highest-ROI hours an associate spends in the second round.'),
 
@@ -419,8 +419,8 @@ export const peCapstoneQuestions: Question[] = [
     'The new TLB or unitranche will include a cash sweep — typically 50% of excess cash flow above a minimum balance. How should this be modeled, and what is the implication for hold-period returns?',
     'Model 50% excess cash sweep with a $15M minimum cash balance, stepping down to 25% sweep once leverage drops below 4.0x — debt paydown accelerates equity-value buildup in years 2–3 and is one of the largest single contributors to base-case IRR',
     [
-      ['Ignore the cash sweep because it does not affect equity value at exit', 'Cash sweep affects net debt at exit by reducing the principal balance — which directly increases equity value at exit. Ignoring it understates equity returns and misrepresents the deal economics.'],
-      ['Assume 100% of free cash flow is used to repay debt to maximize debt paydown', 'A 100% sweep is non-standard in TLB/unitranche structures and operationally impractical (the business needs working cash). Modeling it ignores how the actual debt papers will read.'],
+      ['Model the exit using enterprise value only and leave the debt balance unchanged by the sweep', 'Cash sweep affects net debt at exit by reducing the principal balance — which directly increases equity value at exit. Ignoring it understates equity returns and misrepresents the deal economics.'],
+      ['Model every dollar of free cash flow as mandatory amortization under the lender sweep', 'A 100% sweep is non-standard in TLB/unitranche structures and operationally impractical (the business needs working cash). Modeling it ignores how the actual debt papers will read.'],
       ['Cash sweep is irrelevant because the company will use cash for dividend recaps and add-on acquisitions', 'Using all excess cash for divs and M&A pre-empts the sweep mechanic that the debt papers will require. Lenders will not permit unrestricted cash use during the hold — the model has to respect the actual covenant package.'],
     ],
     'Cash sweep mechanics are one of the most under-modeled features in entry-level LBO templates and one of the most important drivers of hold-period IRR. Getting the sweep percentage, minimum balance, and step-down trigger right turns the model from a textbook into a working underwriting tool.'),
@@ -429,8 +429,8 @@ export const peCapstoneQuestions: Question[] = [
     'The base case exit multiple in year 5 is the single largest assumption driving IRR. What is the disciplined way to set it for BrightSpark?',
     'Anchor the exit multiple at the entry multiple (10.0–10.5x) and explicitly justify any contraction or expansion against expected end-market conditions, comp set evolution, and the platform\'s scaled profile — not on hope or rounding',
     [
-      ['Assume the exit multiple expands by 1.0x because Hawthorne will have improved the business meaningfully', 'Multiple expansion is the most over-claimed source of return in PE underwriting. The IC will discount any 1.0x expansion without specific evidence — usually the case has to be made on EBITDA growth and debt paydown, not multiple.'],
-      ['Assume the exit multiple contracts by 2.0x to be ultra-conservative', '2.0x contraction implies a major sector or rates dislocation that has to be justified separately. Reflexive conservatism on exit multiple under-states returns and loses the deal in the auction.'],
+      ['Set the exit case at 11.5x because a larger BrightSpark should automatically trade above entry', 'Multiple expansion is the most over-claimed source of return in PE underwriting. The IC will discount any 1.0x expansion without specific evidence — usually the case has to be made on EBITDA growth and debt paydown, not multiple.'],
+      ['Set the exit case at 8.0x to build in a blanket downside cushion against the auction price', '2.0x contraction implies a major sector or rates dislocation that has to be justified separately. Reflexive conservatism on exit multiple under-states returns and loses the deal in the auction.'],
       ['Use the historical 10-year average for specialty chemicals exit multiples regardless of the specific situation', 'Historical averages mix in cycles that may not be representative of the exit window. The right move is to use the current comp set and the expected end-market state, not a long-run average.'],
     ],
     'Exit multiple discipline is one of the most-tested judgments in PE underwriting. The right base case is at-entry, with any deviation explicitly justified. ICs trust deals that make their money on EBITDA growth and debt paydown — they discount deals that depend on multiple expansion to clear the hurdle rate.'),
@@ -477,7 +477,7 @@ export const peCapstoneQuestions: Question[] = [
     [
       ['Require 100% rollover of all sale proceeds to maximize alignment', '100% rollover is an unrealistic ask that experienced executives will reject. Founders cash out for legitimate reasons — diversification and tax — and the alignment goal is met with a substantial percentage, not all of it.'],
       ['Offer 5% rollover as a token to keep things simple', '5% rollover is too small to be alignment — the executives feel like they have already cashed out and the new sponsor cannot lean on the rollover for behavior. Token alignment is no alignment.'],
-      ['Skip management rollover entirely and rely on the MIP for forward alignment', 'MIP is forward alignment for the next 4–5 years. Rollover is wealth at risk in the same deal — the two are complementary, not substitutes. Skipping rollover leaves a meaningful alignment tool unused.'],
+      ['Treat the MIP as a full substitute for rollover because it already gives managers upside', 'MIP is forward alignment for the next 4–5 years. Rollover is wealth at risk in the same deal — the two are complementary, not substitutes. Skipping rollover leaves a meaningful alignment tool unused.'],
     ],
     'Management rollover sizing is about real alignment — enough that the executive\'s personal balance sheet moves with the deal, not so much that it forces unhealthy concentration. The 25–40% band is where this typically lands in mid-market PE, calibrated to each executive\'s situation.'),
 
@@ -515,7 +515,7 @@ export const peCapstoneQuestions: Question[] = [
     'For the BrightSpark SPA, how should R&W insurance be structured?',
     'Bind a buyer-side R&W policy at roughly 10% of EV ($60M) in limits, with a 0.5% retention; sellers in mid-market deals increasingly expect the buyer to insure rather than backstop, and R&W replaces most of the indemnity tail for an upfront premium of ~$1.5–2M',
     [
-      ['Skip R&W and require a 12-month indemnity backstop from the founder personally', 'Personal indemnity from a retiring founder is hard to enforce and creates years of post-close friction. R&W is the standard mechanism precisely because it avoids this dynamic.'],
+      ['Use a 12-month personal founder indemnity as the main backstop instead of buyer-side R&W', 'Personal indemnity from a retiring founder is hard to enforce and creates years of post-close friction. R&W is the standard mechanism precisely because it avoids this dynamic.'],
       ['Bind R&W at 50% of EV in limits ($300M) to maximize protection', '50% of EV in R&W limits is well above market and the premium would be prohibitive (typically 5–10% of policy limit). The market standard for limits is 10% of EV, which covers the practical risk envelope.'],
       ['R&W is for international deals and adds no value in US mid-market PE', 'R&W is now standard in US mid-market PE — over 80% of deals carry it. Treating it as international-only is a calibration error from a decade ago.'],
     ],
@@ -623,7 +623,7 @@ export const peCapstoneQuestions: Question[] = [
     [
       ['Aerospace primes (Boeing, Lockheed) as strategic buyers to vertically integrate the coatings supply', 'Aerospace primes systematically do not vertically integrate into specialty chemicals — they buy coatings, they do not own coatings companies. Including them as strategic buyers is a category error.'],
       ['Only the largest coatings player (PPG) because they are the only buyer who can afford the asset', 'A $1B+ specialty chemicals exit has 4–6 plausible strategic buyers in the global coatings universe. Single-name mapping concedes the optionality before the process begins.'],
-      ['Skip strategic mapping because PE secondary buyers will pay the same price', 'PE secondary and strategic price points differ meaningfully — strategics with real synergies typically pay 1–2x multiple premium. Skipping the mapping forfeits the premium before the dual-track is even run.'],
+      ['Treat secondary PE buyers as price-equivalent to strategics because both underwrite the same EBITDA', 'PE secondary and strategic price points differ meaningfully — strategics with real synergies typically pay 1–2x multiple premium. Skipping the mapping forfeits the premium before the dual-track is even run.'],
     ],
     'Strategic buyer universe mapping for an exit is part of the value-creation work that starts in year 3, not year 4. Identifying the 10–15 plausible strategic acquirers, building relationships with them as they evolve, and presenting the platform to them ahead of process is the discipline that captures the strategic premium when it is available.'),
 

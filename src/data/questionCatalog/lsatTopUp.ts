@@ -42,7 +42,7 @@ export const lsatTopUpQuestions: Question[] = makeQuestionBank('University', [
     correct: 'Guess on all five before time expires, because there is no penalty for wrong answers',
     wrong: [
       miss('Leave them blank to avoid lowering the scaled score', 'Blanks and wrong answers cost the same; a blank can never gain a point but a guess might.', 'Consider whether a wrong answer costs more than an omission on the LSAT.'),
-      miss('Answer only the ones that look easy and leave the rest blank', 'Any unanswered item is a guaranteed zero; even random guesses on the hard ones have positive expected value.', 'Every bubble has a one-in-five chance; an empty bubble has zero.'),
+      miss('Leaving the hard-looking questions blank after the easy ones', 'Any unanswered item is a guaranteed zero; even random guesses on the hard ones have positive expected value.', 'Every bubble has a one-in-five chance; an empty bubble has zero.'),
       miss('Erase earlier answers you are unsure of to free up review time', 'Erasing correct work destroys points; the priority is filling empty answers, not second-guessing.', 'Time is best spent securing answers to blank items, not undoing prior work.'),
     ],
     lesson: 'The LSAT is rights-only scored: raw score equals the number correct, with no deduction for wrong answers. Because of this, you should always fill in an answer for every question, even random guesses on items you cannot reach.',
@@ -389,9 +389,9 @@ export const lsatTopUpQuestions: Question[] = makeQuestionBank('University', [
     prompt: 'On an "according to the passage" detail question, how should you select the answer?',
     correct: 'Find the specific line that directly supports the answer, choosing the choice that matches the text',
     wrong: [
-      miss('Pick the answer that best matches your general impression of the passage', 'Detail questions require textual proof, not impressions, which often favor traps.', 'Return to the passage and point to the line, do not rely on memory.'),
-      miss('Choose the answer that is most plausible in the real world', 'Outside plausibility is irrelevant; the answer must be grounded in the passage text.', 'The test is what the passage says, not what is true in general.'),
-      miss('Select the answer with wording closest to the question stem', 'Wording overlap with the stem is a common trap, not evidence of correctness.', 'Match the answer to the passage, not to the stem’s phrasing.'),
+      miss('A passage-memory hunch with no line reference', 'Detail questions require textual proof, not impressions, which often favor traps.', 'Return to the passage and point to the line, do not rely on memory.'),
+      miss('The most realistic claim outside the passage', 'Outside plausibility is irrelevant; the answer must be grounded in the passage text.', 'The test is what the passage says, not what is true in general.'),
+      miss('A choice that echoes the question stem but not the passage', 'Wording overlap with the stem is a common trap, not evidence of correctness.', 'Match the answer to the passage, not to the stem’s phrasing.'),
     ],
     lesson: '"According to the passage" detail questions are answered by locating the supporting line. The credited answer can be proven from specific text; tempting wrong answers rely on impression, outside knowledge, or stem-matching wording.',
     source, generated: true,

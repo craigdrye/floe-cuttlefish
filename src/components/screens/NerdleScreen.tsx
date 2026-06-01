@@ -236,7 +236,7 @@ export function NerdleScreen() {
           <DailyPuzzleBanner daily={daily} />
           {toast && <div className="nerdle-toast" role="status">{toast}</div>}
 
-          <details className="game-rules" open>
+          <details className="game-rules">
             <summary><HelpCircle size={14} /> How to play Nerdle</summary>
             <div className="game-rules-body">
               <ol>

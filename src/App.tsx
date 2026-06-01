@@ -11,6 +11,7 @@ import { QuestionnaireScreen } from './components/screens/QuestionnaireScreen'
 import { TrackSelectScreen } from './components/screens/TrackSelectScreen'
 import { MapScreen } from './components/screens/MapScreen'
 import { ChapterSubMapScreen } from './components/screens/ChapterSubMapScreen'
+import { FlashcardsScreen } from './components/screens/FlashcardsScreen'
 import { TrainerScreen } from './components/screens/TrainerScreen'
 import { PersonalityTestScreen } from './components/screens/PersonalityTestScreen'
 import { isPersonalityTrackId } from './data/personalityTests'
@@ -19,6 +20,7 @@ import { IQ_TEST_TRACK_ID } from './data/iqTest'
 import { PongScreen } from './components/screens/PongScreen'
 import { InvadersScreen } from './components/screens/InvadersScreen'
 import { PresentScreen } from './components/screens/PresentScreen'
+import { GuessGiftScreen } from './components/screens/GuessGiftScreen'
 import { FightScreen } from './components/screens/FightScreen'
 import { WordleScreen } from './components/screens/WordleScreen'
 import { QuordleScreen, OctordleScreen } from './components/screens/MultiWordleScreen'
@@ -50,6 +52,7 @@ function screenKey(showWelcome: boolean, showAudience: boolean, showInterests: b
   if (screen === 'pong') return 'pong'
   if (screen === 'invaders') return 'invaders'
   if (screen === 'present') return 'present'
+  if (screen === 'guessGift') return 'guessGift'
   if (screen === 'fight') return 'fight'
   if (screen === 'wordle') return 'wordle'
   if (screen === 'quordle') return 'quordle'
@@ -67,6 +70,7 @@ function screenKey(showWelcome: boolean, showAudience: boolean, showInterests: b
   if (selectedTrack) {
     if (screen === 'map') return 'map'
     if (screen === 'chapter') return 'chapter'
+    if (screen === 'flashcards') return 'flashcards'
     return 'trainer'
   }
   if (screen === 'courses') return 'courses'
@@ -157,6 +161,7 @@ function App() {
   else if (screen === 'pong') content = <PongScreen />
   else if (screen === 'invaders') content = <InvadersScreen />
   else if (screen === 'present') content = <PresentScreen />
+  else if (screen === 'guessGift') content = <GuessGiftScreen />
   else if (screen === 'fight') content = <FightScreen />
   else if (screen === 'wordle') content = <WordleScreen />
   else if (screen === 'quordle') content = <QuordleScreen />
@@ -175,6 +180,7 @@ function App() {
   else if (selectedTrack === IQ_TEST_TRACK_ID) content = <IqTestScreen />
   else if (selectedTrack && screen === 'map') content = <MapScreen />
   else if (selectedTrack && screen === 'chapter') content = <ChapterSubMapScreen />
+  else if (selectedTrack && screen === 'flashcards') content = <FlashcardsScreen />
   else if (selectedTrack) content = <TrainerScreen />
   else if (screen === 'courses') content = <TrackSelectScreen mode="courses" />
   else if (screen === 'games') content = <TrackSelectScreen mode="games" />

@@ -80,7 +80,7 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       [
         ['Repeat the original claim with warmer adjectives', 'Adjectives do not satisfy data requests.'],
         ['Send unrelated bench data and hope the reviewer is busy', 'Off-target data typically triggers another deficiency.'],
-        ['Ignore the question until the review clock feels friendlier', 'Review clocks favor responsive submissions, not delayed ones.'],
+        ['Treat the review clock as flexible because the question seems minor', 'Review clocks favor responsive submissions, not delayed ones.'],
       ],
       'Deficiency responses should answer the specific question with evidence, rationale, and traceability. Rhetoric does not replace missing support.'),
     q(4260905, 'Regulatory', 'Evidence and Submission Readiness', 'Table of contents rescue',
@@ -186,7 +186,7 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       'A cybersecurity patch must be deployed quickly to reduce patient risk. What should regulatory and quality still ensure?',
       'Documented risk assessment, testing appropriate to urgency, approvals, customer communication, and any reporting or submission review',
       [
-        ['Skip all records because urgent work is exempt from memory', 'Urgency does not exempt quality records.'],
+        ['Treat urgent work as exempt from normal recordkeeping', 'Urgency does not exempt quality records.'],
         ['Delay the patch until the next annual planning cycle', 'Delaying a patient-safety patch creates ongoing exposure.'],
         ['Tell customers only if they notice', 'Customer notification for safety-related changes is usually required.'],
       ],
@@ -196,8 +196,8 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       'Assess whether the comparison is still valid and whether differences require additional evidence or a different pathway',
       [
         ['Use the predicate because the product names sound related', 'Naming similarity is not equivalence.'],
-        ['Ignore patient population because categories matter most', 'Population differences can change risk and required evidence.'],
-        ['Choose the predicate with the shortest summary online', 'Summary brevity is not a comparator criterion.'],
+        ['Classify only by product category while leaving the intended patient population out', 'Population differences can change risk and required evidence.'],
+        ['Choose a predicate device from a brief public summary without comparing key characteristics', 'Summary brevity is not a comparator criterion.'],
       ],
       'Predicate or comparator logic depends on intended use, technology, population, and risk. Meaningful differences can change the evidence plan.'),
     q(4260918, 'Regulatory', 'Labeling, Claims, and Promotional Review', 'Sales deck side quest',
@@ -269,7 +269,7 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       [
         ['Accept the shortcut because distributors know shortcuts', 'Distributor convenience is not legal verification.'],
         ['Ship first and ask questions after revenue arrives', 'Shipping without verified registration creates regulatory exposure.'],
-        ['Assume private clinics are outside all regulation', 'Channel does not generally exempt products from registration.'],
+        ['Treat private clinics as outside the regulated-care framework', 'Channel does not generally exempt products from registration.'],
       ],
       'Local regulatory decisions should rely on verified requirements, not convenience. Distributor input can inform strategy but should not replace due diligence.'),
     q(4260926, 'Regulatory', 'Labeling, Claims, and Promotional Review', 'Indication sentence surgery',
@@ -321,9 +321,9 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       'The formal complaint dashboard looks calm, but support-call notes mention repeated confusion about setup that could affect safe use. What should regulatory ask?',
       'Whether support-call signals should feed complaint handling, trend analysis, labeling review, or risk controls',
       [
-        ['Ignore calls because only official complaint forms count', 'Complaint capture should include relevant signals across channels.'],
+        ['Count only formal complaint forms and leave safety calls out of the review', 'Complaint capture should include relevant signals across channels.'],
         ['Delete support notes after the call is solved', 'Deleting safety-relevant notes creates regulatory exposure.'],
-        ['Assume confusion is user attitude rather than a safety signal', 'Repeated user confusion is often a use-error or labeling signal.'],
+        ['Treat repeated user confusion as training attitude rather than a possible safety signal', 'Repeated user confusion is often a use-error or labeling signal.'],
       ],
       'Post-market surveillance should capture relevant signals from multiple channels. Usability patterns can point to labeling, training, or design-control issues.'),
   ],
@@ -348,7 +348,7 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       [
         ['Pick indigestion because it is common and stop thinking', 'Stopping at the most common diagnosis is premature closure.'],
         ['Order every test available before speaking to the patient', 'Shotgun testing without reasoning wastes resources and may miss the picture.'],
-        ['Choose the rarest diagnosis because it sounds thorough', 'Rarity is not a reasoning principle.'],
+        ['Favor a rare diagnosis because it sounds more thorough than the common explanation', 'Rarity is not a reasoning principle.'],
       ],
       'Diagnostic uncertainty should be managed actively. Good reasoning balances likelihood, severity, and what information will change care.'),
     q(4260934, 'Medical', 'Triage and Red Flags', 'Headache that changed the room',
@@ -373,7 +373,7 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       'A patient says they take blood pressure pills, but the pharmacy list shows two similar medications from different prescribers. What should happen before new orders?',
       'Reconcile the medication list, clarify actual use, dose, prescribers, and duplication risk',
       [
-        ['Assume the newest prescription replaced all others', 'Assumption is the gap that medication errors exploit.'],
+        ['Treat the newest prescription as automatically cancelling earlier medicines', 'Assumption is the gap that medication errors exploit.'],
         ['Add another medication because the chart looks uncertain', 'Adding more medications to an uncertain list compounds risk.'],
         ['Ask the patient to remember brand colors only', 'Color-only recall is unreliable.'],
       ],
@@ -391,7 +391,7 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       'A clinician labels dizziness as anxiety, then ignores new slurred speech reported by family. What error should be avoided?',
       'Premature closure; the new neurologic symptom should reopen the assessment and prompt escalation',
       [
-        ['Confirmation by spreadsheet', 'Not a clinical reasoning concept.'],
+        ['Confirmation by spreadsheet', 'This sounds like checking data, but the problem is a diagnostic bias: the clinician stopped updating after new neurologic evidence appeared.'],
         ['Over-documentation syndrome', 'Not a clinical reasoning concept; the issue is closure, not documentation volume.'],
         ['Therapeutic optimism', 'Not the named bias for premature diagnostic commitment.'],
       ],
@@ -419,7 +419,7 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       'Interpret the lab in clinical context and consider repeat or confirmatory testing before acting on a shaky result',
       [
         ['Treat the number as truth regardless of context', 'Lab numbers are part of the picture, not the whole picture.'],
-        ['Ignore the lab because it is inconvenient', 'Ignoring conflicting data is selective reasoning.'],
+        ['Treat an inconvenient lab result as less important than the working diagnosis', 'Ignoring conflicting data is selective reasoning.'],
         ['Change the history to match the lab', 'Altering history is misconduct.'],
       ],
       'Evidence gains meaning in context. Discordant or borderline results often need confirmation before major decisions.'),
@@ -429,14 +429,14 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       [
         ['Give the usual dose because adult is adult', 'Adult dose without renal adjustment can be toxic in impaired clearance.'],
         ['Hide the kidney result because it complicates the plan', 'Hiding labs is misconduct.'],
-        ['Assume the pharmacy will catch everything later', 'Safety responsibilities are shared, not deferred.'],
+        ['Rely on the pharmacy as the only safety check for medication issues', 'Safety responsibilities are shared, not deferred.'],
       ],
       'Medication safety includes patient-specific factors such as kidney function. Standard doses can be unsafe in impaired clearance.'),
     q(4260943, 'Medical', 'Communication, Documentation, and Handoffs', 'Teach-back moment',
       'A patient nods through discharge instructions for a new blood thinner but seems unsure. What should the clinician do?',
       'Use teach-back to confirm understanding of dose, warning signs, interactions, and follow-up',
       [
-        ['Assume nodding means mastery', 'Nodding is poor confirmation of understanding.'],
+        ['Treat nodding as proof that the patient understands the plan', 'Nodding is poor confirmation of understanding.'],
         ['Give a thicker packet and leave quickly', 'Packet thickness does not produce comprehension.'],
         ['Ask only whether the patient owns a pillbox', 'Pillbox ownership is not understanding.'],
       ],
@@ -508,7 +508,7 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       'A patient starting anticoagulation also takes an over-the-counter supplement that may increase bleeding risk. What should the team do?',
       'Include supplements in medication reconciliation and assess interaction and bleeding-risk counseling',
       [
-        ['Ignore supplements because they are not prescriptions', 'Supplements can have real pharmacologic effects and interactions.'],
+        ['Leave supplements out because they are not prescription medicines', 'Supplements can have real pharmacologic effects and interactions.'],
         ['Tell the patient natural products cannot interact', 'Natural products can and do interact with prescription drugs.'],
         ['Add the supplement to allergies so it disappears', 'Misclassifying a supplement as an allergy hides the interaction risk.'],
       ],
@@ -518,7 +518,7 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       'Escalate urgently for possible neurologic emergency',
       [
         ['Recommend stretching and routine follow-up only', 'Stretching does not address possible cauda equina syndrome.'],
-        ['Assume all back pain is musculoskeletal', 'Neurologic deficits and bladder change are red flags beyond musculoskeletal pain.'],
+        ['Treat back pain as musculoskeletal before checking red flags', 'Neurologic deficits and bladder change are red flags beyond musculoskeletal pain.'],
         ['Ask them to message again after the weekend', 'Weekend delay is unsafe for these red flags.'],
       ],
       'Neurologic deficits and bladder changes with back pain are red flags. They require urgent evaluation rather than routine reassurance.'),
@@ -537,7 +537,7 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       [
         ['Wait until the next routine appointment', 'Critical values do not wait for routine slots.'],
         ['File the result because the visit is over', 'Filing without action is unsafe.'],
-        ['Assume no symptoms means no risk', 'Critical electrolyte abnormalities can be life-threatening without symptoms.'],
+        ['Treat the absence of symptoms as proof that risk is absent', 'Critical electrolyte abnormalities can be life-threatening without symptoms.'],
       ],
       'Critical results require timely follow-up systems. Safety responsibilities continue after the patient leaves the room.'),
     q(4260955, 'Medical', 'Cognitive Bias and Diagnostic Error', 'The old diagnosis shadow',
@@ -572,7 +572,7 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       'Treat it as urgent because immunosuppression can make infection rapidly dangerous',
       [
         ['Recommend routine fluids and call back next month', 'Neutropenic fever is an emergency, not routine.'],
-        ['Assume fever is mild because the patient is at home', 'Setting does not change neutropenic risk.'],
+        ['Treat home location as evidence that the fever is low risk', 'Setting does not change neutropenic risk.'],
         ['Ask them to wait until the oncology office is less busy', 'Wait-for-availability is unsafe for neutropenic fever.'],
       ],
       'Fever during immunosuppression can be an emergency. Triage should escalate based on risk, not location.'),
@@ -581,8 +581,8 @@ const careerAgentGeneratedRegulatoryMedicalTopOffBaseQuestionsByTrack: Record<st
       'Explore cost barriers, safer alternatives, assistance options, and communicate with the care team',
       [
         ['Scold the patient for mentioning money', 'Scolding silences the safety information.'],
-        ['Ignore affordability because the prescription is correct', 'A correct prescription that is not taken is not effective.'],
-        ['Tell them to split doses without checking safety', 'Unverified dose splitting can be unsafe.'],
+        ['Treat clinical correctness as enough even if the patient may not afford the medicine', 'A correct prescription that is not taken is not effective.'],
+        ['Suggest dose splitting before checking whether the medicine can be safely split', 'Unverified dose splitting can be unsafe.'],
       ],
       'Adherence depends on practical barriers. Patient-centered communication can prevent unsafe self-adjustment and support workable treatment plans.'),
     q(4260960, 'Medical', 'Differential Diagnosis and Mechanism', 'Second look after no improvement',

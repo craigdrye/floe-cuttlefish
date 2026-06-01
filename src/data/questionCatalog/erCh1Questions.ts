@@ -296,8 +296,8 @@ export const erCh1Questions: Question[] = [
     'A retailer reports four named segments plus a fifth line called "Other" that is 12% of revenue and 30% of operating income. What is the right analyst response?',
     'Treat "Other" as a high-priority question — a small revenue line carrying disproportionate operating income often hides corporate eliminations, real estate gains, or a high-margin subsegment that is not separately disclosed',
     [
-      ['Ignore the Other line because it is small and unnamed', 'A line that contributes 30% of operating income is not small in profit terms. Ignoring it because of its revenue size misses where the earnings actually come from.'],
-      ['Assume the Other line is just rounding and corporate overhead', 'Corporate overhead reduces operating income; it does not contribute 30% of it. Something specific is generating that profit, and the initiation should know what.'],
+      ['Treat the Other line as immaterial because it is small and unnamed', 'A line that contributes 30% of operating income is not small in profit terms. Ignoring it because of its revenue size misses where the earnings actually come from.'],
+      ['Treat the Other line as rounding or overhead before checking disclosure detail', 'Corporate overhead reduces operating income; it does not contribute 30% of it. Something specific is generating that profit, and the initiation should know what.'],
       ['Pro-rate the Other revenue across the named segments', 'Pro-rating fabricates segment data the company did not disclose. The right move is to ask the IR team and read the footnotes, not to invent allocations.'],
     ],
     'A small revenue line with outsized profit usually hides something — sometimes a high-margin sub-business, sometimes one-time real-estate or licensing gains. The initiation should call out the Other line and flag the question: is this recurring or non-recurring, and what is in it?'),
@@ -307,7 +307,7 @@ export const erCh1Questions: Question[] = [
     'Rebuild the historical model on the restated basis using the new disclosures, and ask management for at least the most recent two years of legacy detail to validate trend continuity',
     [
       ['Use the old segment data going forward because the trend is intact', 'Old segments are not going to be disclosed going forward. The model has to match what the company will report, which is the new structure.'],
-      ['Ignore the restatement and continue forecasting the old segments', 'Forecasting line items the company will not disclose is a dead end — there is no print to compare against and no way to update estimates.'],
+      ['Continue forecasting the old segments as if the restatement did not change comparability', 'Forecasting line items the company will not disclose is a dead end — there is no print to compare against and no way to update estimates.'],
       ['Average the old and new segments together to bridge the periods', 'Averaging unrelated segment definitions creates a number that means nothing. The clean approach is to rebuild on the new basis.'],
     ],
     'Segment restatements are common and they break time-series. The disciplined move is to rebuild the model on the new basis, ask IR for legacy detail to anchor continuity, and warn the reader that comparisons before the restatement should be read carefully.'),
@@ -478,8 +478,8 @@ export const erCh1Questions: Question[] = [
     'A specialty pharma company has a Phase 3 drug with PDUFA action date in six months. How does FDA approval logic shape the initiation\'s margin and revenue framing?',
     'Approval probability times projected peak sales times time-to-genericization sets the franchise value — the initiation has to model the binary outcome (approve / reject / CRL) and the post-approval ramp separately',
     [
-      ['Assume approval because Phase 3 data was positive and proceed to sales forecasting', 'Positive Phase 3 is necessary but not sufficient — manufacturing inspections, labeling negotiations, and panel votes can produce CRLs. The binary outcome needs to be probability-weighted.'],
-      ['Assume rejection and run a downside scenario only', 'One-sided framing misprices the asset. The honest approach is a probability tree across approve, approve-with-restrictions, and CRL/reject.'],
+      ['Treat positive Phase 3 data as enough to assume approval and launch timing', 'Positive Phase 3 is necessary but not sufficient — manufacturing inspections, labeling negotiations, and panel votes can produce CRLs. The binary outcome needs to be probability-weighted.'],
+      ['Treat regulatory rejection as the only scenario worth modelling', 'One-sided framing misprices the asset. The honest approach is a probability tree across approve, approve-with-restrictions, and CRL/reject.'],
       ['FDA approval is irrelevant to financial forecasting because it is regulatory not commercial', 'FDA approval is the gate to all commercial revenue. There is no commercial story without it. Treating regulation as separate from financials is a category error in pharma.'],
     ],
     'Pharma economics is regulation gated. The initiation has to model approval probability, peak sales after launch, the ramp curve, and time to loss-of-exclusivity (LOE) when generics or biosimilars enter. Skipping any of these is how analysts mis-size the franchise.'),
@@ -522,7 +522,7 @@ export const erCh1Questions: Question[] = [
     'Peers overlap on product line, end-market, customer type, size, and geography — the goal is comparability of business mix, not similarity of sector label or headline market cap',
     [
       ['Pick all the largest companies in the same SIC code', 'SIC code is a starting filter but not a peer set. A company with the same code can have wildly different segment mix, end-markets, or geographies. Comparability is about business, not classification.'],
-      ['Pick the smallest companies in the same sector because they grow faster', 'Peer comparability is not about growth speed. Peers should look like the target on operating dimensions; a portfolio of fast-growers is a thematic basket, not a peer set.'],
+      ['Select the smallest same-sector companies as peers because growth rates look higher', 'Peer comparability is not about growth speed. Peers should look like the target on operating dimensions; a portfolio of fast-growers is a thematic basket, not a peer set.'],
       ['Pick whatever competitors the company names in its 10-K and stop there', 'Companies often name aspirational or strategic peers in their filings, not analytic peers. Use it as one input, not the answer.'],
     ],
     'Peer selection is about business overlap, not sector label. The cleanest peer set has products, end-markets, customer profiles, and geographies that look like the target. Size matters too — comparing a $5B company to a $500B megacap or a $200M micro distorts multiples even when the businesses overlap on paper.'),
@@ -565,7 +565,7 @@ export const erCh1Questions: Question[] = [
     'State the specific claim each side makes, the evidence that would prove or disprove it, and where your own view lands — debates are about disagreement on facts and forecasts, not on vibes',
     [
       ['Summarize the consensus view and label everything else as the bear case', 'Consensus is not a debate. The debates section should isolate the specific points where reasonable analysts disagree, not flatten everything against the average.'],
-      ['Pick the most aggressive bull case and the most negative bear case to set the range', 'Extreme cases are not debates — they are anecdotes. The useful debates are the ones reasonable, informed investors actually argue about, with evidence on both sides.'],
+      ['Use extreme bull and bear cases as if they define the realistic valuation range', 'Extreme cases are not debates — they are anecdotes. The useful debates are the ones reasonable, informed investors actually argue about, with evidence on both sides.'],
       ['Write the debates section as a list of risks at the end of the note', 'A risk list is not a debate. Debates have two sides with evidence; risks are downside-only. The two sections serve different purposes.'],
     ],
     'A key-debates section is the most-read part of a research note. It has to articulate the specific claims, the testable evidence, and the analyst\'s landing — that is what makes the note useful to a portfolio manager who has already heard the consensus.'),

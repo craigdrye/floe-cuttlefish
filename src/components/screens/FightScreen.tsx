@@ -397,7 +397,7 @@ export function FightScreen() {
         </article>
 
         <section className="fight-stage">
-          <details className="game-rules" open>
+          <details className="game-rules">
             <summary><HelpCircle size={14} /> How to play Reef Throwdown</summary>
             <div className="game-rules-body">
               <ol>

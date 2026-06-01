@@ -203,7 +203,7 @@ const grade4ReadingBlueprints: Blueprint[] = [
     correct: 'Care and patience can save something valuable.',
     wrong: [
       miss('New things are always better.', 'The child repairs the old object.', 'Choose a message supported by the events.'),
-      miss('Rules are never useful.', 'Rules are not the focus of the tale.', 'Theme is the story message, not any big idea.'),
+      miss('Rules only matter when an adult is watching.', 'Rules are not the focus of the tale.', 'Theme is the story message, not any big idea.'),
       miss('It is best to hide mistakes.', 'Repairing the problem is not hiding it.', 'Look at what the character learns.'),
     ],
     lesson: 'A theme is a message supported by repeated story details.',
@@ -707,8 +707,8 @@ const philosophyBlueprints = (year: 1 | 2 | 3 | 4 | 5 | 6): Blueprint[] => {
         prompt: ({ animal }) => `Someone says a ${animal} visited the classroom at night. What is the best way to check?`,
         correct: 'Look for reliable evidence, such as a camera record or clear tracks.',
         wrong: [
-          miss('Believe it because it sounds exciting.', 'Excitement is not evidence.', 'Ask how we could know.'),
-          miss('Say it is impossible without checking.', 'That is a belief without evidence too.', 'Good thinking investigates.'),
+          miss('Believe it because it sounds exciting and surprising.', 'Excitement is not evidence.', 'Ask how we could know.'),
+          miss('Decide too quickly that it cannot happen.', 'That is a belief without evidence too.', 'Good thinking investigates.'),
           miss('Vote on whether it happened.', 'A vote does not prove an event.', 'Evidence is stronger than popularity.'),
         ],
         lesson: 'Knowledge claims become stronger when they are supported by evidence.',
@@ -806,7 +806,7 @@ const philosophyBlueprints = (year: 1 | 2 | 3 | 4 | 5 | 6): Blueprint[] => {
         correct: 'Try to learn while also letting others learn.',
         wrong: [
           miss('Stop others from asking questions.', 'That blocks their right to learn.', 'Rights often come with duties to others.'),
-          miss('Ignore every lesson on purpose.', 'That rejects the responsibility connected to education.', 'A right is supported by responsible action.'),
+          miss('Repeat the same mistake without thinking about the lesson.', 'That rejects the responsibility connected to education.', 'A right is supported by responsible action.'),
           miss('Take everyone else’s books.', 'That harms others learning.', 'Respect shared rights.'),
         ],
         lesson: 'Rights and responsibilities often fit together in a shared community.',
@@ -889,9 +889,9 @@ const philosophyBlueprints = (year: 1 | 2 | 3 | 4 | 5 | 6): Blueprint[] => {
         prompt: ({ place }) => `Two people describe the same event at the ${place} differently. What should a historian do?`,
         correct: 'Compare the accounts and ask what evidence supports each one.',
         wrong: [
-          miss('Assume the louder person is right.', 'Volume is not evidence.', 'Historians compare sources.'),
+          miss('Trust the louder person because they sound more certain.', 'Volume is not evidence.', 'Historians compare sources.'),
           miss('Throw away both accounts automatically.', 'Different accounts can still contain useful evidence.', 'Evaluate, do not dismiss blindly.'),
-          miss('Choose the account with the prettiest handwriting.', 'Appearance is not reliability.', 'Focus on evidence and perspective.'),
+          miss('Trust the account that looks neatest rather than the one with the best evidence.', 'Appearance is not reliability.', 'Focus on evidence and perspective.'),
         ],
         lesson: 'History includes perspectives, so readers compare sources and evidence.',
       },
@@ -1257,7 +1257,7 @@ const philosophyBlueprints = (year: 1 | 2 | 3 | 4 | 5 | 6): Blueprint[] => {
         wrong: [
           miss('Because other people never behave.', 'People do behave; the issue is inner experience.', 'Separate observation from consciousness.'),
           miss('Because feelings are always visible as text.', 'Feelings are not directly visible like words on a page.', 'This is the problem of other minds.'),
-          miss('Because proof is never useful.', 'Proof and evidence are useful but limited here.', 'Think about what can be directly known.'),
+          miss('Because a strong feeling is enough proof.', 'Proof and evidence are useful but limited here.', 'Think about what can be directly known.'),
         ],
         lesson: 'The problem of other minds asks how we know others have conscious experiences.',
       },
@@ -1434,7 +1434,7 @@ const naplanYear5Blueprints: Blueprint[] = [
     correct: 'Look for blue squares',
     wrong: [
       miss('Count all red circles', 'Red circles represent something else.', 'Use the key symbol exactly.'),
-      miss('Ignore the key', 'The key explains the symbols.', 'Visual texts require reading symbols and labels.'),
+      miss('Use the picture without matching it to the map key.', 'The key explains the symbols.', 'Visual texts require reading symbols and labels.'),
       miss('Read only the title', 'The title will not locate each tap.', 'Use the map key.'),
     ],
     lesson: 'Maps, diagrams, and tables include visual information that must be interpreted alongside words.',

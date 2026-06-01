@@ -817,9 +817,9 @@ const cfaFactories: QuestionFactory[] = [
       `A CFA Level I stem asks for the "least appropriate" action after a manager discovers a ${loss}% allocation breach. What is the best test-taking discipline?`,
       'Circle the qualifier mentally and choose the action that fails the standard or process, not the action that sounds generally prudent',
       [
-        ['Answer the first prudent-sounding action because ethics rewards caution', 'Least appropriate reverses the task; a prudent action is likely a trap.'],
+        ['A prudent-sounding action that does not fail the standard', 'Least appropriate reverses the task; a prudent action is likely a trap.'],
         ['Ignore the word "least" because CFA questions avoid qualifiers', 'Level I questions commonly use qualifiers such as most appropriate or least appropriate.'],
-        ['Choose the longest answer because it probably contains more compliance words', 'Length is not evidence; the qualifier and facts control.'],
+        ['A long compliance-heavy answer that ignores the qualifier', 'Length is not evidence; the qualifier and facts control.'],
       ],
       'Level I is as much reading discipline as memory. Qualifiers such as most likely, least likely, best, and least appropriate define the task.')
   },

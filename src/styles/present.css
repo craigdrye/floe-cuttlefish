@@ -257,6 +257,44 @@
   background: var(--glass-bg-strong);
 }
 
+.guess-gift-shell .present-hero h2 {
+  color: color-mix(in srgb, var(--reef-teal) 72%, var(--ocean-deep));
+}
+
+.guess-gift-hero {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(251, 191, 36, 0.12), transparent 34%),
+    radial-gradient(circle at 88% 10%, rgba(244, 114, 182, 0.1), transparent 34%),
+    rgba(255, 255, 255, 0.62);
+}
+
+.guess-gift-stage {
+  background:
+    radial-gradient(circle at 16% 14%, rgba(251, 191, 36, 0.28), transparent 28%),
+    radial-gradient(circle at 82% 22%, rgba(244, 114, 182, 0.18), transparent 30%),
+    radial-gradient(circle at 52% 92%, rgba(46, 196, 182, 0.12), transparent 36%),
+    linear-gradient(180deg, rgba(255, 253, 248, 0.86), rgba(235, 250, 247, 0.68));
+}
+
+.guess-mystery-box .gift-lid {
+  background: #7dd3fc;
+}
+
+.guess-mystery-box .gift-body {
+  background: linear-gradient(135deg, #a7f3d0, #7dd3fc);
+}
+
+.guess-mystery-box .gift-ribbon {
+  background: #f9a8d4;
+}
+
+.guess-gift-empty {
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+  color: var(--ocean-deep);
+}
+
 @keyframes giftWiggle {
   0%, 100% { transform: rotate(0deg) translateY(0); }
   35% { transform: rotate(-2deg) translateY(-3px); }

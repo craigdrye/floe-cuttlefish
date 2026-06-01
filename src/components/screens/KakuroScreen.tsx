@@ -230,7 +230,7 @@ export function KakuroScreen() {
 
         <section className="kakuro-stage">
           <DailyPuzzleBanner daily={daily} />
-          <details className="game-rules" open>
+          <details className="game-rules">
             <summary><HelpCircle size={14} /> How to play Kakuro</summary>
             <div className="game-rules-body">
               <ol>

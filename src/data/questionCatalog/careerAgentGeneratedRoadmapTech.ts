@@ -49,8 +49,8 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'Whether evidence shows suspicious activity beyond a routine failed authentication event',
       [
         ['Escalate every failed login as a breach', 'Treating every failed auth as a breach floods the queue and trains responders to ignore alerts; failed logins are baseline noise without enrichment.'],
-        ['Ignore all authentication alerts forever', 'Authentication alerts include the credential-stuffing and password-spray patterns analysts most need to catch; blanket suppression discards the signal.'],
-        ['Disable the employee account without checking context', 'Reactive disablement on one failed login causes user-impact and lockouts without evidence; containment should follow triage, not precede it.'],
+        ['Authentication noise is never useful telemetry', 'Authentication alerts include the credential-stuffing and password-spray patterns analysts most need to catch; dismissing the whole signal class discards evidence.'],
+        ['One failed login proves the account is compromised', 'Reactive disablement on one failed login causes user-impact and lockouts without evidence; containment should follow triage, not precede it.'],
       ],
       'Security operations separates noise from incidents by enriching alerts with identity, device, timing, location, and related activity.'),
     q(4107640, 'Career Skills', 'SOC Triage and Alert Quality', 'Reported phishing lure',
@@ -95,7 +95,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'A user logs in from Boston, then Singapore eight minutes later — but the second login used a trusted device token. What is the best interpretation?',
       'Treat it as suspicious but validate context such as token theft, VPN behavior, device history, and user confirmation',
       [
-        ['Ignore it because trusted tokens are always safe', 'Trusted-device tokens are a frequent target of session-token theft (e.g., infostealers); the trust label means nothing if the token was stolen.'],
+        ['Trusted device tokens cannot be stolen', 'Trusted-device tokens are a frequent target of session-token theft (e.g., infostealers); the trust label means nothing if the token was stolen.'],
         ['Declare a breach from geography alone', 'A corporate VPN egress or roaming SIM can produce impossible-travel signals without any compromise; geography needs corroboration.'],
         ['Delete the user account to save time', 'Account deletion destroys identity history needed for the investigation and creates downstream service breakage.'],
       ],
@@ -143,7 +143,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'Restrict access, preserve evidence, assess exposure, rotate any embedded secrets, and document impact',
       [
         ['Rename the bucket only', 'Renaming changes the URL but does not change the access policy; the underlying ACL still permits anonymous read.'],
-        ['Assume nobody accessed it because the bucket name was boring', 'Bucket-name enumeration is automated against entire cloud provider namespaces; obscurity is not access control.'],
+        ['Obscure bucket names prevent discovery', 'Bucket-name enumeration is automated against entire cloud provider namespaces; obscurity is not access control.'],
         ['Move the files to another public bucket', 'Re-uploading to a second public bucket re-exposes the same data under a new URL; the exposure problem moves with the files.'],
       ],
       'Cloud exposure response starts with access control, then determines what data was exposed and what secondary risks exist.'),
@@ -151,7 +151,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'A cloud root account signs in successfully after months of no use. What should security check first?',
       'MFA status, source, actions taken, credential exposure, emergency justification, and whether root should be locked down',
       [
-        ['Assume root wanted a little exercise', 'Root account use is rare by design; unexplained logins are precisely the high-severity case the account exists to flag.'],
+        ['Root logins are normal maintenance activity', 'Root account use is rare by design; unexplained logins are precisely the high-severity case the account exists to flag.'],
         ['Delete the root account', 'Cloud providers require a root account for the tenancy and several recovery operations; deletion is not possible and destroys break-glass capability.'],
         ['Wait for the monthly cloud bill to see if charges look unusual', 'Billing review is a lagging signal — by the time anomalous spend appears, the attacker has had weeks of access.'],
       ],
@@ -162,7 +162,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       [
         ['Delete the task and call the mystery solved', 'Deleting the task without analysis destroys evidence and leaves the original delivery vector — and any other persistence — untouched.'],
         ['Ask the script politely what it wants', 'Anthropomorphising malware is not analysis; binary inspection and sandboxing are.'],
-        ['Ignore it because temp folders are temporary', 'Attackers explicitly stage in user-writable temp paths to bypass AppLocker and similar policies — temp is a feature for them, not a downside.'],
+        ['Temp-folder scripts are harmless by location', 'Attackers explicitly stage in user-writable temp paths to bypass AppLocker and similar policies — temp is a feature for them, not a downside.'],
       ],
       'Persistence clues deserve scoping. Analysts should understand how the task arrived, what it runs, and whether the pattern spread.'),
     q(4107651, 'Career Skills', 'Endpoint, Network, and Cloud Scope', 'Flat network blast radius',
@@ -198,7 +198,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'Leadership says ransomware risk is covered because backups exist, but no one has restored from them in a year. What should security recommend?',
       'Test restores, validate recovery time and data integrity, protect backups, and document recovery roles',
       [
-        ['Assume backups work because files are listed in the catalog', 'Catalog listings show inventory, not restorability; corrupt or partial backups list normally until you try them.'],
+        ['Backup catalog entries prove restore readiness', 'Catalog listings show inventory, not restorability; corrupt or partial backups list normally until you try them.'],
         ['Print backup names for executive confidence', 'A printed list addresses optics, not the actual untested recovery path; the gap remains.'],
         ['Restore only after an attacker asks nicely', 'Discovering an unrestorable backup mid-incident, under recovery pressure, is the worst possible time to learn the gap exists.'],
       ],
@@ -350,7 +350,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'A service meant only for internal jobs is reachable from the public internet after a rushed deployment. What should the engineer review?',
       'Ingress rules, load balancer exposure, private networking, authentication, and deployment guardrails',
       [
-        ['Assume obscurity will provide warmth', 'Internet-scanning bots discover unannotated endpoints within hours; obscurity is not a control plane.'],
+        ['Unlinked public endpoints are effectively private', 'Internet-scanning bots discover unannotated endpoints within hours; obscurity is not a control plane.'],
         ['Rename the URL to something boring', 'URL string changes do not change the routing or ACL; the service is still publicly addressable.'],
         ['Leave it public because no one has complained yet', 'Absence of complaint during the discovery window is silence, not safety; complaints typically arrive after exploitation.'],
       ],
@@ -399,7 +399,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       [
         ['Increase the font size on the dashboard', 'Display changes do not move traffic; the issue is in the LB or instance pool, not the visualization.'],
         ['Restart only the calm instances', 'Restarting healthy instances drops their in-flight requests onto the already-overloaded one and worsens the asymmetry.'],
-        ['Assume users prefer one tired server', 'User affinity is not a default behavior; it only exists when sticky sessions are configured, which is itself the likely cause.'],
+        ['Sticky sessions cannot overload one instance', 'User affinity is not a default behavior; it only exists when sticky sessions are configured, which is itself the likely cause.'],
       ],
       'Traffic distribution depends on configuration and health signals. Uneven load often points to routing, stickiness, or registration issues.'),
 
@@ -465,7 +465,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'Scheduling, tagging, budgets, ownership, and rightsizing controls for nonproduction resources',
       [
         ['Send a stern calendar invite to the instances', 'Instances do not read calendar invites; the fix is automation, not anthropomorphism.'],
-        ['Ignore it because cloud bills enjoy surprises', 'Predictable nonprod waste is the largest cloud-cost lever on most accounts; ignoring it accepts a known recurring loss.'],
+        ['Nonproduction uptime has negligible cloud cost', 'Predictable nonprod waste is the largest cloud-cost lever on most accounts; treating it as negligible accepts a known recurring loss.'],
         ['Move costs to a prettier dashboard only', 'Dashboard restyling moves the line; it does not reduce the spend.'],
       ],
       'Cloud cost management needs ownership and automation. Nonproduction resources are good candidates for schedules and rightsizing.'),
@@ -473,7 +473,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'A batch job fails at month end because it hits an account-level API quota nobody monitored. What should the platform team add?',
       'Quota visibility, alerting, capacity planning, and a process for requesting increases before peak periods',
       [
-        ['Assume quotas are inspirational suggestions', 'Quotas are hard limits enforced at the API layer; they fail closed, not aspirationally.'],
+        ['Cloud API quotas scale automatically with demand', 'Quotas are hard limits enforced at the API layer; they fail closed, not elastically.'],
         ['Retry forever with no backoff', 'Unbounded retry against a quota throttle compounds the throttle and burns budget without progress.'],
         ['Tell finance to avoid month end', 'Calendar-shifting the business to suit an account limit inverts the dependency; the limit should accommodate the workload, not the reverse.'],
       ],
@@ -523,7 +523,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'Map economic, technical, legal, security, and user stakeholders with approval steps and required evidence',
       [
         ['Send the champion more enthusiasm', 'Champion enthusiasm does not substitute for the risk officer\'s sign-off; emotional investment cannot escalate beyond the champion\'s authority.'],
-        ['Assume procurement is simply moody', 'Procurement delays are usually traceable to a specific missing approval; "moody" is the symptom of an unmapped stakeholder.'],
+        ['Procurement delays are only pricing negotiations', 'Procurement delays are often traceable to a specific missing approval; treating every stall as pricing misses the hidden stakeholder.'],
         ['Ask sales to avoid risk people until signature', 'Avoidance defers the same conversation to renewal, when the risk officer will block again with less goodwill.'],
       ],
       'Enterprise SaaS deals involve many buyers. Stakeholder mapping turns hidden approvals into managed work.'),
@@ -589,7 +589,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'One department never adopts the tool even though licenses were purchased for them. What should customer success investigate?',
       'Manager buy-in, workflow fit, enablement gaps, competing tools, and whether users see personal value',
       [
-        ['Assume unused licenses renew themselves', 'Unused licenses are the leading signal of downgrade or churn at renewal; they do not auto-justify.'],
+        ['Purchased licenses prove durable adoption', 'Unused licenses are the leading signal of downgrade or churn at renewal; purchase does not prove ongoing workflow value.'],
         ['Send the same launch email every Friday forever', 'Repeating the failed message does not change the outcome; the problem is in workflow fit, not message volume.'],
         ['Blame users before learning their workflow', 'User blame skips the question of whether the tool actually fits their job — usually the real answer.'],
       ],
@@ -600,8 +600,8 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'A customer approaching renewal has a 40% drop in weekly active use. What should customer success do?',
       'Investigate adoption, value, blockers, and stakeholder changes before renewal risk hardens',
       [
-        ['Assume renewal is safe because the contract exists', 'A signed contract does not bind to a renewal; the second-order purchase is a fresh decision.'],
-        ['Ignore usage because only sales owns revenue', 'Renewal revenue depends on usage health; the org chart does not override the data.'],
+        ['Existing contracts guarantee renewal', 'A signed contract does not bind to a renewal; the second-order purchase is a fresh decision.'],
+        ['Usage health is unrelated to renewal revenue', 'Renewal revenue depends on usage health; the org chart does not override the data.'],
         ['Wait until the renewal date passes', 'Once the renewal date passes, the leverage has moved entirely to the customer; intervention at that point is too late.'],
       ],
       'Usage trends can be early warning signals. Customer health review should connect behavior to value and renewal risk.'),
@@ -610,7 +610,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'Reconfirm stakeholders, new workflows, value metrics, risks, and an adoption recovery plan',
       [
         ['Wait until renewal panic becomes official', 'Six months is enough time to re-earn sponsorship; waiting compresses the same work into the worst possible window.'],
-        ['Assume old champions still control everything', 'Reorgs explicitly redistribute control; assumed continuity is the failure mode here.'],
+        ['Reorgs preserve the same buying authority', 'Reorgs explicitly redistribute control; assumed continuity is the failure mode here.'],
         ['Send swag and hope dashboards recover', 'Swag does not change workflow fit; dashboards recover when users adopt, not when they receive gifts.'],
       ],
       'Renewal health can change long before contract end. Reorganizations require fresh discovery and adoption work.'),
@@ -618,7 +618,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'A new executive sponsor arrives three months before renewal and questions why the tool exists. What should the account team prepare?',
       'A value narrative with outcomes, usage, stakeholder support, risks, and a plan to re-earn sponsorship',
       [
-        ['Assume the old sponsor\'s opinion transferred automatically', 'Sponsor opinions are personal; the new executive starts at zero, not at "previous executive\'s position."'],
+        ['Executive sponsorship transfers with the account', 'Sponsor opinions are personal; the new executive starts at zero, not at "previous executive\'s position."'],
         ['Send only the original contract', 'The contract documents the past commitment; the new executive needs evidence of current value.'],
         ['Wait for procurement to explain the product', 'Procurement evaluates terms, not value; the value narrative is the account team\'s job.'],
       ],
@@ -665,7 +665,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'Sales promises a response time in email that differs from the standard contract SLA. What should the team do?',
       'Reconcile the promise with approved contract terms, pricing, support capacity, and formal approval before commitment',
       [
-        ['Assume email is a contract appendix now', 'Email is enforceable evidence of representation but is not approved against support capacity; honoring it strands the support team.'],
+        ['Email promises automatically match SLA capacity', 'Email is enforceable evidence of representation but is not approved against support capacity; honoring it strands the support team.'],
         ['Let support discover the promise later', 'Surprise commitments are how support burns out and customers feel let down; the discovery happens at the worst possible moment.'],
         ['Offer premium service for free because the thread was friendly', 'Friendly tone is not a pricing strategy; free premium service teaches the customer the standard tier is inflated.'],
       ],
@@ -701,7 +701,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       [
         ['Let the model own itself', 'Models do not own their operational lifecycle; the AIGP role-and-accountability chapter exists specifically because ownership ambiguity is the most common governance failure.'],
         ['Only assign ownership during annual planning', 'Annual cadence cannot respond to mid-year drift, incidents, or complaints; ownership has to be standing.'],
-        ['Assume deployment ends responsibility', 'Deployment opens responsibility — monitoring, incident response, and decommissioning all live downstream.'],
+        ['Deployed models no longer need lifecycle owners', 'Deployment opens responsibility — monitoring, incident response, and decommissioning all live downstream.'],
       ],
       'AI systems need lifecycle owners. Accountability covers operation, monitoring, change, incident response, and affected-user processes.'),
     q(4108012, 'Career Skills', 'AI Governance Roles and Accountability', 'Data owner missing',
@@ -709,7 +709,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'A data owner, approved definition, stewardship process, lineage, and change-control path',
       [
         ['Let every team define "active" with personal flair', 'Plural definitions produce metric drift, irreconcilable reports, and the disagreement the AIGP lineage chapter is designed to prevent.'],
-        ['Choose the metric from the prettiest chart', 'Aesthetic selection has no defensibility; auditors and regulators ask how the number was defined, not how it was rendered.'],
+        ['Dashboard aesthetics define the authoritative metric', 'Aesthetic selection has no defensibility; auditors and regulators ask how the number was defined, not how it was rendered.'],
         ['Avoid definitions because they start meetings', 'Avoiding definitions is how the same meeting recurs every quarter without resolution; one structured definition replaces many recurring debates.'],
       ],
       'Governance turns shared data into shared meaning. Ownership and definitions prevent quiet metric drift.'),
@@ -728,7 +728,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'A business team builds a spreadsheet model that scores customer churn and uses it in retention offers without review. What should governance do?',
       'Bring the model into inventory with purpose, data inputs, owner, risk rating, validation, and monitoring needs',
       [
-        ['Ignore it because spreadsheets feel humble', 'Operational scoring logic is a model regardless of the tool; AIGP triage applies to outcome-affecting logic, not file extensions.'],
+        ['Spreadsheet scoring is not an AI system', 'Operational scoring logic is a model regardless of the tool; AIGP triage applies to outcome-affecting logic, not file extensions.'],
         ['Ban all spreadsheets immediately', 'Bulk prohibition drives the same logic into less visible places (chat bots, browser extensions) and worsens shadow risk.'],
         ['Let the team call it "intuition" instead of a model', 'Re-labeling an algorithm as intuition launders accountability without changing the actual decision-making logic.'],
       ],
@@ -845,7 +845,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'Adversarial testing or red teaming across realistic misuse patterns and indirect prompt styles',
       [
         ['Test only one rude prompt and declare victory', 'Single-prompt evaluations miss the entire space of indirect attacks documented in OWASP LLM Top 10 and similar guidance.'],
-        ['Assume politeness makes requests safe', 'Tone-based classification fails by design; attackers explicitly exploit politeness as a bypass.'],
+        ['Polite prompts are low-risk by design', 'Tone-based classification fails by design; attackers explicitly exploit politeness as a bypass.'],
         ['Remove all refusal messages from evaluation', 'Removing the refusal signal makes the system look safer without changing behavior; evaluation needs adversarial inputs, not censored telemetry.'],
       ],
       'GenAI safety testing must cover creative misuse. Attackers often use indirect, friendly, or multi-step prompts.'),
@@ -864,7 +864,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       [
         ['Tell users to admire vintage policy', 'Outdated policy is wrong policy; user-side disclaimers do not satisfy the obligation to surface current rules.'],
         ['Remove citations so nobody notices', 'Removing citations hides the source while preserving the error; users still act on bad information.'],
-        ['Blame the model without checking sources', 'The model returned what retrieval gave it; the failure is in the corpus, not the generation.'],
+        ['Answer errors always come from generation', 'The model returned what retrieval gave it; the failure is in the corpus, not the generation.'],
       ],
       'Retrieval systems depend on source quality. Governance should cover freshness, authority, and evaluation of retrieved content.'),
 
@@ -895,14 +895,14 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       [
         ['Accept "trust us" as model documentation', '"Trust us" is the textbook unacceptable answer for high-impact systems under every major framework (NIST RMF, EU AI Act vendor chain, IAPP AIGP).'],
         ['Use the model only on "quiet" customers', 'Selective deployment to test on unaware users is the kind of practice that produces enforcement actions and class actions.'],
-        ['Skip governance because the vendor is confident', 'Vendor confidence has no audit value; the buyer remains accountable for outcomes regardless of vendor posture.'],
+        ['Vendor confidence substitutes for governance evidence', 'Vendor confidence has no audit value; the buyer remains accountable for outcomes regardless of vendor posture.'],
       ],
       'Vendor models still create organizational risk. Buyers need enough evidence and rights to govern their use.'),
     q(4107710, 'Career Skills', 'Vendor Controls and Ongoing Monitoring', 'Training on customer data',
       'A vendor contract allows the provider to use customer data to improve its models by default. What should procurement and governance examine?',
       'Data-use rights, opt-out terms, confidentiality, retention, deletion, and alignment with customer commitments',
       [
-        ['Assume vendor defaults match company policy', 'Default training-rights clauses typically grant broader use than buyer policy permits — that is why review exists.'],
+        ['Vendor default terms mirror buyer policy', 'Default training-rights clauses typically grant broader use than buyer policy permits — that is why review exists.'],
         ['Approve it because model improvement sounds helpful', 'Helpful-to-vendor is not the same as compliant-for-buyer; the buyer\'s downstream privacy commitments still apply.'],
         ['Hide the clause in a folder nobody opens', 'Concealment does not avoid the obligation; it produces the breach plus a discovery problem at audit.'],
       ],
@@ -920,7 +920,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'After launch, model inputs shift because customer behavior changes seasonally. What should the governance plan include?',
       'Monitoring for drift, performance changes, and triggers for review or retraining',
       [
-        ['Assume launch performance lasts forever', 'Performance at launch is a snapshot; the world changes underneath it. Static assumptions produce silent degradation.'],
+        ['Launch metrics predict future model performance', 'Performance at launch is a snapshot; the world changes underneath it. Static assumptions produce silent degradation.'],
         ['Delete monitoring to reduce alerts', 'Removing the monitoring removes the signal, not the drift; the model still degrades, just invisibly.'],
         ['Change outputs manually without records', 'Manual interventions without records destroy the audit trail and create deniability problems at incident review.'],
       ],
@@ -1019,7 +1019,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'Batching, idempotency, monitoring, rollback or repair steps, and protection for live traffic',
       [
         ['Run one giant transaction at noon', 'A single transaction across 20M rows holds locks long enough to take the application offline.'],
-        ['Skip monitoring because scripts are confident', 'Script confidence is not telemetry; without monitoring, partial failures complete invisibly.'],
+        ['Backfill scripts succeed invisibly once started', 'Script confidence is not telemetry; without monitoring, partial failures complete invisibly.'],
         ['Ask users not to use the product for a week', 'A week of self-imposed downtime trades a managed backfill for an unmanaged business impact.'],
       ],
       'Large backfills are production changes. Safe plans control load, handle interruption, and verify correctness.'),
@@ -1027,7 +1027,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'An engineer removes a response field because the new frontend no longer uses it, but an external customer integration breaks. What was missed?',
       'API compatibility, consumer discovery, deprecation policy, versioning, and communication',
       [
-        ['Assume only the current frontend matters', 'External integrations are the canonical hidden consumer; "what we ship" is rarely the full consumer set.'],
+        ['Current frontend usage defines the API contract', 'External integrations are the canonical hidden consumer; "what we ship" is rarely the full consumer set.'],
         ['Tell customers to read minds faster', 'Customers cannot anticipate undocumented removals; the failure is on the deprecation path, not the customer.'],
         ['Rename the field and call it innovation', 'Renaming is removal plus addition; existing consumers still break and the audit trail is worse.'],
       ],
@@ -1039,7 +1039,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'Restore or mitigate user impact while preserving enough evidence for later root-cause analysis',
       [
         ['Debate root cause until users recover on their own', 'Users do not recover on their own during a backend outage; the system has to be restored.'],
-        ['Ignore mitigation because analysis is more elegant', 'Elegance is a postmortem virtue; during the incident it is an anti-pattern.'],
+        ['Root-cause certainty is required before mitigation', 'Elegance is a postmortem virtue; during the incident, certainty-first analysis is an anti-pattern.'],
         ['Rewrite the postmortem before fixing service', 'Postmortems describe what was done; the work has to happen first.'],
       ],
       'Incident response first protects users, then explains. Root cause matters, but service restoration is urgent.'),

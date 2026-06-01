@@ -47,7 +47,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       [
         ['Open the account because the customer explained the shortcut', 'Explanation does not satisfy verification; a mailbox-as-residence is a recognized risk indicator.'],
         ['Use the mailbox address and plan to fix it at annual review', 'Deferring verification accepts risk without resolution at onboarding.'],
-        ['Ask the customer to pick a more ordinary-looking address', 'Helping a customer choose a less suspicious address is not KYC; it is coaching evasion.'],
+        ['Customer-coached address substitution', 'Helping a customer choose a less suspicious address is not KYC; it is coaching evasion.'],
       ],
       'KYC is not a paperwork scavenger hunt. The firm needs reliable identifying information and must resolve meaningful discrepancies before accepting the risk.'),
     q(4260101, 'Career Skills', 'Customer Due Diligence and KYC', 'Owner behind the curtain',
@@ -55,7 +55,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Obtain and verify beneficial ownership information according to policy, including control persons when ownership interests are obscured',
       [
         ['Accept the chart because holding companies are customers too', 'Holding companies are not natural-person beneficial owners.'],
-        ['Skip beneficial ownership because the importer has invoices', 'Invoice activity does not satisfy beneficial-ownership rules.'],
+        ['Invoice history as a substitute for beneficial ownership', 'Invoice activity does not satisfy beneficial-ownership rules.'],
         ['Record the salesperson as the owner because they answer emails quickly', 'Responsiveness is not ownership.'],
       ],
       'Beneficial ownership rules look through legal wrappers so compliance can understand who owns or controls the customer.'),
@@ -135,7 +135,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'During periodic review, an analyst finds credible news linking a customer principal to procurement fraud investigations. The customer has no account alerts. What should the analyst do?',
       'Escalate and reassess risk using the adverse information even if transaction monitoring has been quiet',
       [
-        ['Ignore it because only account activity matters', 'AML programs use adverse media, not just transaction alerts.'],
+        ['Transaction-monitoring-only view of customer risk', 'AML programs use adverse media, not just transaction alerts.'],
         ['Close all future alerts because the customer already has bad news', 'Pre-closing alerts ignores active monitoring obligations.'],
         ['Call the principal and ask whether the article is annoying', 'Calling the subject can constitute tipping off.'],
       ],
@@ -145,7 +145,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Resolve and document the discrepancy under customer identification procedures before relying on the identity information',
       [
         ['Use whichever date makes the system accept the file', 'Choosing data to pass system checks is bypassing CIP.'],
-        ['Ignore the mismatch because assistants make typos', 'Identity discrepancies require resolution, not assumption.'],
+        ['Clerical-error treatment for unresolved identity mismatch', 'Identity discrepancies require resolution, not assumption.'],
         ['Ask the customer to sign a promise that both dates are fine', 'A customer promise is not identity verification.'],
       ],
       'Customer identification procedures require reasonable verification and discrepancy resolution. A mismatch is a cue to slow down, not squint harder.'),
@@ -153,8 +153,8 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'A foreign bank customer starts processing payments for smaller respondent banks that were not disclosed during onboarding. What should the AML team consider?',
       'Review the correspondent relationship for nested activity, update due diligence, and apply controls required for the increased risk',
       [
-        ['Assume the foreign bank already handled every AML obligation', 'Reliance without verification is not control.'],
-        ['Ignore nested activity because the direct customer is still the same', 'Nested activity changes the actual risk profile.'],
+        ['Unverified reliance on the respondent bank AML program', 'Reliance without verification is not control.'],
+        ['Direct-customer-only view of correspondent risk', 'Nested activity changes the actual risk profile.'],
         ['Tell the foreign bank to stop using payment descriptions', 'Suppressing descriptions reduces visibility, not risk.'],
       ],
       'Correspondent banking risk can change when undisclosed nested relationships appear. Due diligence must reach the actual risk in the payment chain.'),
@@ -208,7 +208,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Remediate the data quality gap and assess monitoring impact for affected accounts',
       [
         ['Tell analysts to guess occupations from customer names', 'Guessing is not data quality.'],
-        ['Ignore the issue because the alert engine still runs', 'Running with missing data produces missed alerts.'],
+        ['Green-system-status view of incomplete monitoring data', 'Running with missing data produces missed alerts.'],
         ['Disable expected-activity testing until perfect data appears', 'Disabling monitoring removes the control.'],
       ],
       'Monitoring depends on usable data. Data quality issues can weaken detection and require both cleanup and impact assessment.'),
@@ -237,7 +237,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Both the higher net income and the larger diluted share count, because EPS depends on earnings divided by shares',
       [
         ['Use net income growth as EPS growth automatically', 'Net income growth alone ignores the denominator change from new shares.'],
-        ['Ignore share issuance because acquisitions are strategic', 'Strategic intent does not remove the dilutive effect.'],
+        ['Strategic-acquisition narrative without dilution math', 'Strategic intent does not remove the dilutive effect.'],
         ['Use basic shares only when dilution lowers the answer', 'Cherry-picking share count to flatter EPS is misleading.'],
       ],
       'EPS questions love the denominator. Forecasting earnings per share requires attention to diluted shares, not just the income statement headline.'),
@@ -256,7 +256,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       [
         ['Keep gross margin flat because smooth models are calming', 'Calming smoothness without economic basis is wishful.'],
         ['Move cost inflation to a footnote with no forecast impact', 'Footnotes do not absorb actual cost pressure.'],
-        ['Assume the company can always pass through every cost', 'Pass-through ability varies by industry and pricing power; assuming 100% is rarely accurate.'],
+        ['Full cost pass-through treated as automatic pricing power', 'Pass-through ability varies by industry and pricing power; assuming 100% is rarely accurate.'],
       ],
       'Margin assumptions need economic support. Series 86 math often begins by asking whether a forecast makes operating sense.'),
     q(4260203, 'Series 86', 'Valuation Methods', 'Multiple with manners',
@@ -265,7 +265,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       [
         ['Conclude it is cheap because any one-day drop creates value', 'Daily price movement does not change relative valuation logic.'],
         ['Use the highest peer multiple without explanation', 'Highest-peer benchmarking without justification is selection bias.'],
-        ['Ignore peer comparison because valuation is mostly a feeling', 'Relative valuation is a structured comparison, not a feeling.'],
+        ['Price-action shortcut in place of relative valuation', 'Relative valuation is a structured comparison, not a feeling.'],
       ],
       'Relative valuation compares price to fundamentals. A lower stock price does not automatically mean a low valuation multiple.'),
     q(4260204, 'Series 86', 'Valuation Methods', 'Terminal value gravity',
@@ -281,8 +281,8 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Revenue is growing, but receivables are growing much faster and free cash flow is weakening. What should the analyst investigate?',
       'Whether collection issues, channel stuffing, or changed payment terms are affecting working capital and cash conversion',
       [
-        ['Celebrate revenue growth and ignore cash flow', 'Revenue without cash is a quality-of-earnings flag.'],
-        ['Assume receivables always become cash immediately', 'Receivables do not auto-convert.'],
+        ['Revenue-growth-only view of earnings quality', 'Revenue without cash is a quality-of-earnings flag.'],
+        ['Automatic cash conversion view of receivables growth', 'Receivables do not auto-convert.'],
         ['Move receivables below the line so valuation looks cleaner', 'Repositioning a real working-capital issue is not analysis.'],
       ],
       'Equity research connects income statement growth to balance sheet and cash flow quality. Receivables can be a useful smoke signal.'),
@@ -310,7 +310,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       [
         ['Carry forward the lowest historical tax rate because it helps EPS', 'Choosing the lowest rate to flatter EPS is biased forecasting.'],
         ['Set tax expense to zero because settlements are confusing', 'Zero tax without basis is unrealistic.'],
-        ['Ignore tax rate because valuation multiples solve everything', 'Multiples do not paper over tax assumption errors.'],
+        ['Multiple-based valuation used to bury tax-rate normalization', 'Multiples do not paper over tax assumption errors.'],
       ],
       'Forecasts should distinguish temporary items from sustainable economics. One-time tax benefits should not quietly become the future.'),
     q(4260209, 'Series 86', 'Valuation Methods', 'One driver, many outcomes',
@@ -335,7 +335,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'A model shows five years of accelerating growth but includes no capacity, market share, or pricing explanation after year two. What is the best fix?',
       'Extend the forecast with explicit, supportable operating assumptions or moderate the projections',
       [
-        ['Assume acceleration because long forecast periods look sophisticated', 'Forecast horizon is not sophistication.'],
+        ['Extended forecast horizon treated as support for acceleration', 'Forecast horizon is not sophistication.'],
         ['Hard-code year-five revenue to match the target price', 'Reverse-engineering revenue to fit price is biased.'],
         ['Remove years three through five from review materials only', 'Concealing the unsupported portion misleads the reviewer.'],
       ],
@@ -345,17 +345,17 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Possible slowing demand, obsolete inventory, channel stuffing, or temporary build tied to specific business reasons',
       [
         ['Treat inventory growth as always bullish', 'Inventory growth ahead of sales is often a quality flag.'],
-        ['Ignore inventory because it sits on the balance sheet', 'Balance sheet location does not exempt it from analysis.'],
-        ['Assume all inventory converts to revenue next week', 'Conversion assumptions need product-specific basis.'],
+        ['Balance-sheet-only view of inventory risk', 'Balance sheet location does not exempt it from analysis.'],
+        ['Immediate sell-through treatment for all inventory balances', 'Conversion assumptions need product-specific basis.'],
       ],
       'Inventory trends can reveal demand, margin, and accounting risks. The balance sheet often talks before management does.'),
     q(4260213, 'Series 86', 'Forecasting and Earnings Drivers', 'Buyback math check',
       'A company announces a buyback funded with debt. What should the EPS model consider?',
       'Lower share count, incremental interest expense, tax effects, and whether timing changes diluted EPS',
       [
-        ['Reduce shares and ignore financing cost', 'Ignoring interest overstates EPS accretion.'],
+        ['Share-count reduction without debt interest expense', 'Ignoring interest overstates EPS accretion.'],
         ['Increase revenue because buybacks sell more products', 'Buybacks do not sell products.'],
-        ['Assume EPS always rises after any buyback', 'Debt-funded buybacks can be EPS-neutral or dilutive depending on math.'],
+        ['Share-count-only buyback accretion model', 'Debt-funded buybacks can be EPS-neutral or dilutive depending on math.'],
       ],
       'Buybacks affect both numerator and denominator when debt financing is involved. EPS accretion is a calculation, not a slogan.'),
     q(4260214, 'Series 86', 'Valuation Methods', 'Two businesses, one blurry multiple',
@@ -372,7 +372,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'The quality and sustainability of the earnings beat, including revenue trends and future expense timing',
       [
         ['Upgrade automatically because EPS beat consensus', 'Headline beat without quality assessment can mislead.'],
-        ['Ignore guidance because the quarter already happened', 'Guidance is a forward signal that informs the model.'],
+        ['Backward-looking beat analysis without updated guidance', 'Guidance is a forward signal that informs the model.'],
         ['Annualize the delayed expense benefit forever', 'Annualizing a timing benefit overstates ongoing earnings.'],
       ],
       'Not all earnings beats are equal. Research discipline asks whether the surprise improves future cash flows or just moved costs around.'),
@@ -390,7 +390,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Explain selection criteria and adjust or interpret comparisons carefully so multiples are meaningful',
       [
         ['Use every available company because more rows always means more rigor', 'More rows can dilute comparability.'],
-        ['Ignore accounting differences because multiples cancel everything', 'Multiples do not auto-normalize accounting differences.'],
+        ['Multiple comparability without accounting normalization', 'Multiples do not auto-normalize accounting differences.'],
         ['Remove any peer with a lower multiple', 'Removing low-multiple peers biases the comparison upward.'],
       ],
       'Comparable company work depends on comparability. Differences in accounting, currency, geography, and business mix can affect interpretation.'),
@@ -400,7 +400,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       [
         ['Use EBITDA because it politely ignores difficult cash needs', 'EBITDA ignoring capex misrepresents capital-intensive businesses.'],
         ['Subtract capex only in years when it helps the rating', 'Conditional capex treatment is biased.'],
-        ['Assume depreciation and capex are always identical', 'Depreciation and capex diverge in growing or contracting businesses.'],
+        ['Depreciation used as a blanket proxy for capex', 'Depreciation and capex diverge in growing or contracting businesses.'],
       ],
       'EBITDA can miss capital intensity. Equity valuation often needs cash flow discipline, especially when assets require heavy reinvestment.'),
     q(4260219, 'Series 86', 'Exam Practice, Error Review, and Internal Floe Resources', 'Shortcut before the open',
@@ -423,7 +423,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Obtain complete product details and classify based on the article as imported, including the motorized function',
       [
         ['Classify from the marketing name because it sounds harmless', 'Marketing name does not determine classification; the article does.'],
-        ['Ignore the motor because it is small', 'A motor changes the article description regardless of size.'],
+        ['Accessory-motor treatment despite motorized function', 'A motor changes the article description regardless of size.'],
         ['Use the importer\'s preferred code to keep the entry moving', 'Importer preference is not a classification rule.'],
       ],
       'Classification depends on the actual article and its essential characteristics, not the cutest product description on the invoice.'),
@@ -441,7 +441,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Applicable origin rules, including substantial transformation or special program rules, based on the manufacturing facts',
       [
         ['Use the country where the invoice was printed', 'Invoice printing location is not origin.'],
-        ['Choose the country with the lowest duty rate', 'Duty-shopping origin is not a legal rule.'],
+        ['Lowest-duty country treated as origin', 'Duty-shopping origin is not a legal rule.'],
         ['Use the port of export as origin automatically', 'Port of export is not origin.'],
       ],
       'Origin turns on legal rules and production facts. Shipping paperwork alone rarely tells the whole origin story.'),
@@ -450,7 +450,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Whether the discount and related payments affect transaction value or require additional analysis under customs valuation rules',
       [
         ['Deduct every discount automatically', 'Conditional discounts may not be deductible from transaction value.'],
-        ['Ignore side conditions because they happen after entry', 'Post-import payments tied to the sale can affect customs value.'],
+        ['Post-entry payment carveout from transaction value review', 'Post-import payments tied to the sale can affect customs value.'],
         ['Use the resale price in the United States as the invoice value by default', 'Resale price is a separate valuation method with specific conditions.'],
       ],
       'Customs value can be affected by conditions of sale and related payments. The invoice total is important, but it is not the end of thinking.'),
@@ -458,7 +458,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'A U.S. buyer provides molds to the foreign manufacturer at no charge, and the molds are used to produce imported goods. What should the broker ask about?',
       'Whether the value of the molds is an assist that must be added to the customs value',
       [
-        ['Ignore the molds because no invoice changed hands', 'Assists are added even without an invoice transaction.'],
+        ['No-invoice treatment for buyer-supplied assists', 'Assists are added even without an invoice transaction.'],
         ['Classify the molds as separate imports in every shipment', 'Assist treatment usually means value adjustment, not separate entry.'],
         ['Subtract the molds because they made production cheaper', 'Assists are added, not subtracted.'],
       ],
@@ -512,7 +512,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'A novel wearable device could fit several HTS provisions, and prior guidance is thin. What option may give the importer more certainty?',
       'Request a binding ruling with complete product facts before relying on an uncertain classification',
       [
-        ['Pick the lowest rate and hope novelty is charming', 'Hope is not classification.'],
+        ['Lowest-rate classification for an unruled novel device', 'Hope is not classification.'],
         ['Ask the supplier to rename the product', 'Renaming does not change classification.'],
         ['Use a ruling for a different article with no comparison', 'Rulings apply to their specific facts.'],
       ],
@@ -532,16 +532,16 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       [
         ['Use the earliest invoice whenever it is lower', 'First-sale is conditional, not automatic.'],
         ['Use first sale only when the supplier says everyone does it', 'Supplier claims are not first-sale documentation.'],
-        ['Ignore proof because lower value helps the client', 'Lower value with no proof is undervaluation.'],
+        ['Lower first-sale value without required documentation', 'Lower value with no proof is undervaluation.'],
       ],
       'First-sale valuation can be useful, but it requires documentation and legal conditions. It is not a discount button.'),
     q(4260313, 'Regulatory', 'Valuation', 'Freight hiding in plain sight',
       'An invoice uses DDP terms, and the client asks the broker to use the total invoice price as entered value without review. What should the broker examine?',
       'Whether international freight, insurance, duties, or other charges are included and how valuation rules treat them',
       [
-        ['Assume every invoice total is automatically dutiable value', 'Some charges are excludable; review is needed.'],
+        ['Invoice-total-as-dutiable-value default for DDP terms', 'Some charges are excludable; review is needed.'],
         ['Deduct all charges without support', 'Deductions need documentation.'],
-        ['Ignore delivery terms because they are logistics poetry', 'Delivery terms affect what is included in price.'],
+        ['Incoterms treated as logistics notes outside valuation', 'Delivery terms affect what is included in price.'],
       ],
       'Delivery terms can affect what is included in price. Brokers should understand charges before declaring value.'),
     q(4260314, 'Regulatory', 'Country of Origin, Marking, and Trade Programs', 'Origin label oops',
@@ -549,7 +549,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Potential country-of-origin marking noncompliance and any required corrective action before release or sale',
       [
         ['Treat design location as the same as origin', 'Design and origin are distinct.'],
-        ['Ignore marking because the invoice has origin', 'Invoice origin does not satisfy product marking.'],
+        ['Invoice-origin data treated as product marking compliance', 'Invoice origin does not satisfy product marking.'],
         ['Tell the client to add origin only on the website', 'Website addition does not cure product-marking requirements.'],
       ],
       'Country-of-origin marking rules are separate from invoice data. Retail goods often need clear marking for the ultimate purchaser.'),
@@ -558,7 +558,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'The proper entry treatment based on intended use, value, sale plans, and any conditions for samples or temporary importation',
       [
         ['Treat all samples as duty-free forever', 'Sample treatment is conditional.'],
-        ['Ignore resale plans because the label says samples', 'Resale plans change the entry analysis.'],
+        ['Sample label used despite planned commercial resale', 'Resale plans change the entry analysis.'],
         ['Split the shipment description into smaller words', 'Word splitting is not entry treatment.'],
       ],
       'Entry treatment depends on facts and legal requirements. The word sample does not magically erase commercial intent.'),
@@ -566,7 +566,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'A product classification appears routine, but the country and product description may fall under an antidumping duty order. What should the broker do?',
       'Check the scope of applicable antidumping or countervailing duty orders before filing the entry',
       [
-        ['Ignore AD/CVD because HTS duty is enough', 'AD/CVD is in addition to ordinary duty.'],
+        ['Base HTS duty treated as complete duty exposure', 'AD/CVD is in addition to ordinary duty.'],
         ['Ask the supplier whether duties feel fair', 'Supplier opinion is not scope analysis.'],
         ['Use a different description to avoid the order', 'Description manipulation to evade orders is illegal.'],
       ],
@@ -621,7 +621,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Whether drawback may apply and what records, timelines, and matching requirements must be satisfied',
       [
         ['Promise a refund for every export automatically', 'Drawback is conditional, not automatic.'],
-        ['Ignore import records because export paperwork is enough', 'Drawback matches import to export.'],
+        ['Export-only documentation theory for drawback', 'Drawback matches import to export.'],
         ['Classify the exported goods under any convenient code', 'Convenience is not classification.'],
       ],
       'Drawback can recover duties in some cases, but it is record-heavy and deadline-sensitive. Documentation is the job, not decoration.'),
@@ -640,7 +640,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       [
         ['Claim preference because should is a powerful legal word', 'Aspirational claims are not preference claims.'],
         ['Use preference for this entry and collect proof next decade', 'Preference claims require contemporaneous support.'],
-        ['Assume any good from the partner country qualifies', 'Origin rules govern, not geography alone.'],
+        ['Partner-country shipping origin treated as FTA qualification', 'Origin rules govern, not geography alone.'],
       ],
       'Free trade agreement claims need origin support. Preferential duty is earned through rules, not geography alone.'),
     q(4260325, 'Regulatory', 'Classification With the HTSUS', 'Old ruling, new product',
@@ -648,7 +648,7 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'Compare the new product facts to the ruling and seek updated guidance if material differences affect classification',
       [
         ['Apply the old ruling automatically because the brand is the same', 'Rulings apply to their specific product facts.'],
-        ['Ignore wireless features because the old model was simple', 'New features can change classification.'],
+        ['Old-model ruling applied despite added wireless features', 'New features can change classification.'],
         ['Tell the client rulings never become stale', 'Rulings can be superseded or limited.'],
       ],
       'Rulings depend on facts. Product changes can make old guidance unreliable for the new import.'),
@@ -701,9 +701,9 @@ const careerAgentGeneratedLegacyFinanceOpsTopOffBaseQuestionsByTrack: Record<str
       'On a broker exam question, two answers sound possible: one guesses from incomplete facts, and one says to obtain missing product information before classification. Which is the better test-taking choice?',
       'Choose the answer that applies reasonable care by getting the facts needed for accurate classification',
       [
-        ['Choose the faster answer because exams reward speed over accuracy', 'Exams reward defensible compliance, not speed.'],
-        ['Choose the lowest-duty answer because clients like savings', 'Lowest-duty bias is not a test strategy.'],
-        ['Choose the answer with the most dramatic legal words', 'Dramatic vocabulary is not exam strategy.'],
+        ['The faster answer with missing product facts', 'Exams reward defensible compliance, not speed.'],
+        ['The lowest-duty classification before reasonable care is documented', 'Lowest-duty bias is not a test strategy.'],
+        ['The most dramatic legal phrase with no reference support', 'Dramatic vocabulary is not exam strategy.'],
       ],
       'Credential exam survival often means selecting the practical compliance control: get the facts, apply the rule, document the reasoning.'),
   ],

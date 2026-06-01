@@ -15,6 +15,10 @@ type BalanceSeed = {
   correct: string
   traps: Trap[]
   lesson: string
+  mentorHint?: string
+  solution?: string
+  alternatePrompts?: Question['alternatePrompts']
+  challengeRating?: Question['challengeRating']
 }
 
 const contexts = [
@@ -36,6 +40,13 @@ function q(seed: BalanceSeed, index: number): Question {
     seed.traps,
     seed.lesson,
     SOURCE,
+    undefined,
+    seed.mentorHint,
+    {
+      alternatePrompts: seed.alternatePrompts,
+      challengeRating: seed.challengeRating,
+      solution: seed.solution,
+    },
   )
 }
 
@@ -89,10 +100,21 @@ const seeds: BalanceSeed[] = [
     topic: 'Regulatory',
     chapter: 'Research Analyst Role and Exam Map',
     title: 'Series 87 domain triage',
-    prompt: 'A question mentions a research report, a media appearance, a conflict disclosure, and a supervisory approval step. What should the candidate identify first?',
-    correct: 'The regulated communication or conduct obligation being tested before choosing the next action',
-    traps: [commonTraps.shortcut, ['Build a valuation model first', 'Series 87 is primarily about regulated communications and conduct, not model construction.', 'Identify the communication rule.'], ['Assume the analyst can decide alone', 'Many Series 87 issues require supervision, disclosure, or compliance process.', 'Check the role and authority.']],
-    lesson: 'Series 87 questions are easiest when the candidate first names the communication, disclosure, supervision, or MNPI issue.',
+    prompt: 'A Series 87 practice stem mentions a draft research report, a TV interview about a covered issuer, a conflict disclosure, and a supervisor approval step. Before choosing an action, what should the candidate identify first?',
+    correct: 'The controlling communication, disclosure, supervision, or conduct obligation before choosing the next action',
+    traps: [
+      ['Build a valuation model before reading the conduct facts', 'That is a plausible Series 86 habit, but Series 87 is mainly testing research communications and analyst conduct.', 'Classify the regulatory issue first.'],
+      ['Treat the TV interview as casual commentary because it is not a written report', 'Public appearances can still trigger research-analyst communication and disclosure duties.', 'Check the communication channel and rule.'],
+      ['Focus only on whether the recommendation might be profitable', 'Profitability does not answer whether the communication is approved, balanced, disclosed, or supervised.', 'Separate investment merit from conduct controls.'],
+    ],
+    lesson: 'Series 87 mixed stems are triage puzzles. Before solving the facts, identify whether the issue is a research report, public appearance, disclosure, supervision or approval, dissemination, correction, or MNPI boundary.\n\nThat first label keeps you from using the wrong playbook. A valuation move may matter in Series 86, but Series 87 usually asks whether the communication and analyst conduct would survive compliance review.',
+    mentorHint: 'Sort the stem into public appearance, report approval, conflict disclosure, dissemination, correction, MNPI, or supervision before selecting the action.',
+    solution: 'Start by naming the regulated obligation in the stem. Once you know whether the issue is public appearance, report approval, disclosure, MNPI, or supervision, the safest next action becomes much easier to identify.',
+    alternatePrompts: {
+      plain: 'In a mixed Series 87 stem about research reports, media comments, disclosures, and approval, what should you identify before picking an action?',
+      teaching: 'Why should a Series 87 candidate sort the communication or conduct rule before trying to solve the details of a mixed scenario?',
+    },
+    challengeRating: 5,
   },
   {
     trackId: 'series87',
@@ -146,7 +168,7 @@ const seeds: BalanceSeed[] = [
     title: 'Mixed Series 87 scenario',
     prompt: 'A stem combines a draft research report, a pending media appearance, a missing disclosure, and an approval question. What should the candidate do?',
     correct: 'Identify each regulated issue, then choose the answer that handles the highest-risk required action first',
-    traps: [commonTraps.shortcut, ['Answer only the valuation part of the stem', 'Series 87 mixed scenarios usually test conduct and communication controls.', 'Resolve the regulated communication issue.'], ['Ignore sequencing because all issues matter', 'When several issues appear, the best answer often turns on the first required action.', 'Prioritize required action and risk.']],
+    traps: [commonTraps.shortcut, ['A valuation-only response that misses the conduct issue', 'Series 87 mixed scenarios usually test conduct and communication controls.', 'Resolve the regulated communication issue.'], ['All issues treated as equal with no sequencing', 'When several issues appear, the best answer often turns on the first required action.', 'Prioritize required action and risk.']],
     lesson: 'Mixed Series 87 questions require issue sorting across disclosure, supervision, public appearance, dissemination, correction, and MNPI rules.',
   },
   {
@@ -157,7 +179,7 @@ const seeds: BalanceSeed[] = [
     title: 'MBE Core II issue sorting',
     prompt: 'A fact pattern includes a broken promise, a later injury, a police search, and a deed transfer. What is the best first move?',
     correct: 'Separate the facts by subject and apply the elements for the specific doctrine being tested',
-    traps: [commonTraps.shortcut, ['Write one general fairness answer', 'MBE Core II questions turn on elements, defenses, and timing.', 'Sort by doctrine.'], ['Assume every injury is only a tort issue', 'The same stem can test contracts, criminal procedure, or property consequences.', 'Follow the call of the question.']],
+    traps: [commonTraps.shortcut, ['A broad fairness answer with no elements analysis', 'MBE Core II questions turn on elements, defenses, and timing.', 'Sort by doctrine.'], ['Assume every injury is only a tort issue', 'The same stem can test contracts, criminal procedure, or property consequences.', 'Follow the call of the question.']],
     lesson: 'Contracts, torts, criminal law/procedure, and property questions reward subject triage before rule selection.',
   },
   {
@@ -289,7 +311,7 @@ const seeds: BalanceSeed[] = [
     title: 'CBLE reference navigation',
     prompt: 'A customs broker exam question combines broker responsibility, entry timing, and HTSUS classification. What should the candidate do first?',
     correct: 'Identify the controlling reference area and search term before trying to solve from memory',
-    traps: [commonTraps.shortcut, ['Rely on a remembered rule without checking the reference', 'The CBLE rewards precise reference navigation.', 'Use the controlling source.'], ['Start with the longest answer choice', 'Length is not evidence.', 'Start with reference and issue.']],
+    traps: [commonTraps.shortcut, ['A remembered rule that may not match the controlling reference', 'The CBLE rewards precise reference navigation.', 'Use the controlling source.'], ['A long answer choice with no reference support', 'Length is not evidence.', 'Start with reference and issue.']],
     lesson: 'Customs broker preparation depends on knowing where to find the controlling rule quickly and accurately.',
   },
   {

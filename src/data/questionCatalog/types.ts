@@ -38,6 +38,10 @@ export type QuestionReviewStatus = 'playable' | 'recoverable' | 'quarantined'
 
 export type QuestionReviewFlag =
   | 'missing-prompt'
+  | 'prompt-too-short'
+  | 'prompt-term-only'
+  | 'prompt-media-only'
+  | 'prompt-not-sentence-like'
   | 'invalid-correct-answer'
   | 'insufficient-answer-choices'
   | 'placeholder-solution'
@@ -118,6 +122,13 @@ export type Question = {
    */
   difficulty?: 1 | 2 | 3 | 4 | 5
   /**
+   * Human-facing challenge estimate for audit and future sequencing.
+   * 1 = very accessible to an outsider, 10 = expert-level or multi-step.
+   * This intentionally does not replace `difficulty`, which currently drives
+   * adaptive ordering in the trainer.
+   */
+  challengeRating?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+  /**
    * Audience tier marker used mainly by Guess-the-X tracks to set picture/voice
    * register (kids → adults → experts). Distinct from `difficulty`, which captures
    * intra-track progression. Optional.
@@ -133,6 +144,10 @@ export type Question = {
   subTopic?: string
   media?: QuestionMedia | QuestionMedia[]
   prompt: string
+  alternatePrompts?: {
+    plain?: string
+    teaching?: string
+  }
   fieldNote: string
   mentorHint: string
   answers: Answer[]
