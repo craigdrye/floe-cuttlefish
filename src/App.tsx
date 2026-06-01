@@ -112,10 +112,10 @@ function App() {
   }, [darkMode])
 
   useEffect(() => {
-    const active = floeMode && !selectedTrack
+    const active = floeMode && !selectedTrack && !showAudience && !showInterests && screen !== 'hub'
     document.body.classList.toggle('floe-mode-active', active)
     return () => document.body.classList.remove('floe-mode-active')
-  }, [floeMode, selectedTrack])
+  }, [floeMode, screen, selectedTrack, showAudience, showInterests])
 
   useEffect(() => {
     if (!user || user.isGuest || !showWelcome) return

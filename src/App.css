@@ -51,7 +51,6 @@ body.floe-mode-active :is(
   .age-drum-outer,
   .topic-checkbox,
   .adult-focus-option,
-  .floe-mode-toggle,
   .hub-launch-panel,
   .menu-hero-v2,
   .course-browser-v2,
@@ -71,22 +70,22 @@ body.floe-mode-active :is(
   background-image:
     linear-gradient(
       115deg,
-      rgba(255, 214, 245, 0.22),
-      rgba(190, 242, 255, 0.2),
-      rgba(209, 250, 229, 0.2),
-      rgba(254, 240, 138, 0.16),
-      rgba(224, 231, 255, 0.22),
-      rgba(255, 214, 245, 0.22)
+      rgba(255, 214, 245, 0.18),
+      rgba(190, 242, 255, 0.22),
+      rgba(209, 250, 229, 0.18),
+      rgba(254, 240, 138, 0.14),
+      rgba(224, 231, 255, 0.2),
+      rgba(255, 214, 245, 0.18)
     );
-  background-size: 360% 360%;
-  animation: floe-pastel-wave 20s ease-in-out infinite alternate;
+  background-size: 220vw 220vh;
+  background-attachment: fixed;
+  animation: floe-pastel-wave 9s ease-in-out infinite alternate;
 }
 
 body.floe-mode-active :is(
   .audience-panel,
   .topic-checkbox,
   .adult-focus-option,
-  .floe-mode-toggle,
   .hub-launch-panel,
   .menu-hero-v2,
   .course-browser-v2,
@@ -100,14 +99,13 @@ body.floe-mode-active :is(
   .questionnaire-options button
 ):nth-child(3n + 1) {
   animation-delay: -4s;
-  animation-duration: 23s;
+  animation-duration: 10.5s;
 }
 
 body.floe-mode-active :is(
   .audience-panel,
   .topic-checkbox,
   .adult-focus-option,
-  .floe-mode-toggle,
   .hub-launch-panel,
   .menu-hero-v2,
   .course-browser-v2,
@@ -121,7 +119,7 @@ body.floe-mode-active :is(
   .questionnaire-options button
 ):nth-child(3n + 2) {
   animation-delay: -9s;
-  animation-duration: 27s;
+  animation-duration: 12s;
 }
 
 body.floe-mode-active :is(.topic-checkbox.checked, .adult-focus-option.checked, .course-tier-tabs button.active, .discipline-tabs button.active) {
@@ -129,10 +127,10 @@ body.floe-mode-active :is(.topic-checkbox.checked, .adult-focus-option.checked, 
 }
 
 @keyframes floe-pastel-wave {
-  0% { background-position: 0% 45%; }
-  35% { background-position: 55% 65%; }
-  70% { background-position: 100% 35%; }
-  100% { background-position: 12% 85%; }
+  0% { background-position: -85vw -20vh; }
+  32% { background-position: -20vw 55vh; }
+  66% { background-position: 70vw 12vh; }
+  100% { background-position: 118vw 92vh; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -141,7 +139,6 @@ body.floe-mode-active :is(.topic-checkbox.checked, .adult-focus-option.checked, 
     .age-drum-outer,
     .topic-checkbox,
     .adult-focus-option,
-    .floe-mode-toggle,
     .hub-launch-panel,
     .menu-hero-v2,
     .course-browser-v2,
