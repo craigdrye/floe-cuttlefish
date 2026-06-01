@@ -404,7 +404,7 @@ export const nursingFloorOpsRoadmapR2Questions: Question[] = makeQuestionBank('C
     wrong: [
       miss('Remove the mask first while still at the bedside, then gloves and gown', 'Pulling the mask first means touching your face with contaminated hands; the mask comes off last, after leaving the room.', 'The face covering comes off last and outside; do not reach for your face with dirty gloves.'),
       miss('Remove the gown before the gloves to avoid contaminating the gown ties', 'Gloves are the most contaminated and come off first; removing the gown first means handling it with dirty gloves.', 'Start with the dirtiest item: gloves first, then gown.'),
-      miss('Skip hand hygiene entirely as long as gloves were worn the whole time', 'Gloves do not replace hand hygiene; hands can be contaminated during doffing and must be cleaned.', 'Always perform hand hygiene during/after doffing; gloves are not a substitute.'),
+      miss('Rely on the gloves as enough protection and omit hand hygiene', 'Gloves do not replace hand hygiene; hands can be contaminated during doffing and must be cleaned.', 'Always perform hand hygiene during/after doffing; gloves are not a substitute.'),
     ],
     lesson: 'A standard CDC doffing approach removes the most contaminated items first: gloves, then gown, then exit, then mask/respirator outside the room, with hand hygiene at the end (and between steps if hands become contaminated). Removing the mask last and outside avoids self-contaminating the face. Order errors cause self-inoculation.',
     source,
@@ -434,7 +434,7 @@ export const nursingFloorOpsRoadmapR2Questions: Question[] = makeQuestionBank('C
     wrong: [
       miss('Run the unit wide open to finish quickly and reduce bacterial growth risk', 'Starting fast defeats early detection; the slow initial rate exists precisely so a reaction is caught before much blood is in.', 'The opening minutes are run slowly and watched, not rushed; speed comes only after the patient is shown to tolerate it.'),
       miss('Leave the room to free up time, returning to check vitals at the one-hour mark', 'Leaving during the highest-risk window misses the early signs of a hemolytic reaction; the nurse stays initially.', 'The first 15 minutes is exactly when you should be at the bedside, not away.'),
-      miss('Skip the 15-minute vitals because baseline vitals were already taken pre-transfusion', 'A baseline is not enough; the 15-minute recheck is the comparison that detects an evolving reaction.', 'Reassessment at 15 minutes is the point; a single baseline cannot reveal a developing reaction.'),
+      miss('Treat the baseline vitals as enough because they were normal before transfusion', 'A baseline is not enough; the 15-minute recheck is the comparison that detects an evolving reaction.', 'Reassessment at 15 minutes is the point; a single baseline cannot reveal a developing reaction.'),
     ],
     lesson: 'Acute, severe transfusion reactions typically present within the first 15 minutes. The nurse starts the unit slowly, remains with the patient, and rechecks vital signs at the 15-minute mark (and per policy thereafter, at completion, and afterward). This early window is when stopping the unit prevents the most harm.',
     source,
@@ -667,7 +667,7 @@ export const nursingFloorOpsRoadmapR2Questions: Question[] = makeQuestionBank('C
     wrong: [
       miss('Back-date the entry to 1500 so the timeline looks continuous', 'Falsifying the entry time is fraudulent and destroys the record\'s credibility if reviewed.', 'Never back-date; mark it as a late entry with the real time of writing.'),
       miss('Insert the note between existing 1500 entries by editing the prior documentation', 'Altering or squeezing into prior entries tampers with the original record; late entries are appended and labeled.', 'Do not modify existing entries; append a labeled late entry instead.'),
-      miss('Skip it, since charting it now will look suspicious and invite questions', 'Omitting a known relevant finding leaves the record incomplete and is itself indefensible.', 'A properly labeled late entry is appropriate; omission is worse than a transparent late entry.'),
+      miss('Leave it out because a late note might draw attention', 'Omitting a known relevant finding leaves the record incomplete and is itself indefensible.', 'A properly labeled late entry is appropriate; omission is worse than a transparent late entry.'),
     ],
     lesson: 'Missed documentation is corrected with a clearly labeled late entry: chart it at the actual current time, reference the time of the original event, and never alter, back-date, or insert into prior entries. A transparent late entry preserves the record\'s integrity; falsifying timestamps or omitting the finding does not.',
     source,

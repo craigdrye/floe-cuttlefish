@@ -133,7 +133,7 @@ export const lifeSkillsHighHigh103TopUpAQuestions: Question[] = makeQuestionBank
     prompt: 'On a bank statement, you see a recurring $12 charge each month labeled "monthly service charge." What is the most reliable way to stop it?',
     correct: 'Check the account terms for the waiver conditions, such as a minimum balance or direct deposit, and meet one',
     wrong: [
-      miss('Ignore it, since monthly service charges can never be waived', 'Most banks waive maintenance fees if you meet a condition like a minimum balance or recurring direct deposit.', 'Many of these fees have waiver options.'),
+      miss('Accept the charge as permanent because service fees sound unavoidable', 'Most banks waive maintenance fees if you meet a condition like a minimum balance or recurring direct deposit.', 'Many of these fees have waiver options.'),
       miss('Withdraw all your money so the balance is zero', 'A zero balance may actually trigger fees and leaves you with no usable account.', 'Emptying the account does not remove the fee structure.'),
       miss('Dispute it as fraud with your card network', 'A disclosed maintenance fee is not fraud; disputing legitimate fees as fraud is improper.', 'This is a known, disclosed charge, not theft.'),
     ],
@@ -180,7 +180,7 @@ export const lifeSkillsHighHigh103TopUpAQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('Put every spare dollar into stocks before anything else', 'With no cash buffer and a 24% debt, investing first leaves you exposed and losing to high interest.', 'High-interest debt usually beats expected investment returns.'),
       miss('Open three more credit cards to spread out the balance', 'More cards add temptation and do not erase the costly balance you already owe.', 'New credit does not solve an existing expensive debt.'),
-      miss('Ignore the card and save aggressively in a 5-year CD', 'A 24% APR grows the debt faster than a CD earns, and a CD locks your cash away.', 'Costly debt should not be ignored while it compounds.'),
+      miss('Lock extra cash in a 5-year CD while the card balance compounds', 'A 24% APR grows the debt faster than a CD earns, and a CD locks your cash away.', 'Costly debt should not be ignored while it compounds.'),
     ],
     lesson: 'A common priority order is: a small starter emergency fund first, then attack high-interest debt (anything near 20%+ APR typically outruns investment returns), then build a fuller emergency fund and invest. A 24% card balance is an emergency-level cost that should be tackled early.',
     source,
@@ -362,7 +362,7 @@ export const lifeSkillsHighHigh103TopUpAQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('A company that promises to "erase all bad credit" for a large upfront fee', 'Such promises are a classic scam; accurate negative information cannot simply be erased for a fee.', 'Upfront-fee credit-repair promises are red flags.'),
       miss('Whichever social-media account has the most followers offering advice', 'Popularity is not a measure of accuracy or trustworthiness on financial matters.', 'Follower count does not equal reliable guidance.'),
-      miss('Ignore it, since credit reports can never be corrected', 'You have the legal right to dispute and correct errors on your credit report.', 'Errors can and should be disputed.'),
+      miss('Accept the report as permanent because credit files cannot be changed', 'You have the legal right to dispute and correct errors on your credit report.', 'Errors can and should be disputed.'),
     ],
     lesson: 'The CFPB is a federal agency that handles consumer complaints and explains your rights, and you are entitled to free credit reports to check for errors. Legitimate help does not charge large upfront fees or promise to delete accurate negative items. Verify guidance with official sources rather than ads or social media.',
     source,

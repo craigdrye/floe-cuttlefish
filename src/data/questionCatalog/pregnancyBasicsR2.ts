@@ -334,7 +334,7 @@ export const pregnancyBasicsR2Questions: Question[] = makeQuestionBank('Career S
     prompt: 'Sudden nighttime calf cramps are common later in pregnancy. A reasonable, low-risk response is to:',
     correct: 'Stretch and flex the foot, stay hydrated, and mention it at the next visit',
     wrong: [
-      miss('Assume it is a dangerous blood clot every time', 'A brief cramp that eases with stretching differs from a clot; clots usually cause persistent calf pain, swelling, warmth, or redness.', 'A clot tends to linger with swelling and warmth — a quick cramp that eases is different.'),
+      miss('Treat every brief nighttime cramp as a dangerous blood clot', 'A brief cramp that eases with stretching differs from a clot; clots usually cause persistent calf pain, swelling, warmth, or redness.', 'A clot tends to linger with swelling and warmth — a quick cramp that eases is different.'),
       miss('Start a magnesium supplement on your own at any dose', 'Supplements should be cleared with a provider rather than self-dosed; the first steps are stretching and hydration.', 'Do not self-prescribe supplements — ask the provider before adding anything.'),
       miss('Stop walking entirely to avoid triggering cramps', 'Gentle activity and stretching help; immobility is not the answer and can cause other problems.', 'Staying still does not help — gentle movement and stretching do.'),
     ],
@@ -426,7 +426,7 @@ export const pregnancyBasicsR2Questions: Question[] = makeQuestionBank('Career S
     prompt: 'A pregnant person develops a fever of 101°F with chills. The best general step is to:',
     correct: 'Contact the provider, since fever can signal an infection worth evaluating',
     wrong: [
-      miss('Ignore it because fevers are a normal part of pregnancy', 'Fever is not a normal pregnancy symptom; it suggests infection and should be evaluated, not dismissed.', 'Fever is not expected in pregnancy — it warrants a call, not a shrug.'),
+      miss('Treat fever as a normal pregnancy symptom that can wait', 'Fever is not a normal pregnancy symptom; it suggests infection and should be evaluated, not dismissed.', 'Fever is not expected in pregnancy — it warrants a call, not a shrug.'),
       miss('Take a very hot bath to "sweat it out"', 'Overheating can be harmful in pregnancy and will not treat the cause; the fever itself needs assessment.', 'Deliberately overheating is risky — the underlying cause needs proper evaluation.'),
       miss('Wait a week to see if other symptoms appear', 'Infections in pregnancy can progress; waiting a week risks delay when prompt evaluation is safer.', 'Do not wait it out — infections can advance and deserve a timely check.'),
     ],
@@ -719,7 +719,7 @@ export const pregnancyBasicsR2Questions: Question[] = makeQuestionBank('Career S
     wrong: [
       miss('Tell them to "snap out of it" and think positive', 'Dismissing symptoms can deepen shame and isolation; postpartum depression is a medical condition, not a mindset choice.', 'It is not a matter of willpower — dismissing it makes things harder, not better.'),
       miss('Give them space by leaving them alone for a while', 'Isolation can worsen perinatal mood conditions; staying connected and helping them get support is protective.', 'Withdrawing support is risky — connection helps more than distance here.'),
-      miss('Assume it will pass since "everyone feels this way"', 'Persistent symptoms beyond the brief baby blues window deserve evaluation, not waiting it out.', 'Beyond the first couple of weeks, this pattern warrants help, not waiting.'),
+      miss('Treat the symptoms as ordinary new-parent stress that must pass on its own', 'Persistent symptoms beyond the brief baby blues window deserve evaluation, not waiting it out.', 'Beyond the first couple of weeks, this pattern warrants help, not waiting.'),
     ],
     lesson: 'Supporting someone with possible postpartum depression means listening with empathy, taking it seriously, helping with practical tasks and sleep, and gently helping them reach a provider — symptoms lasting beyond about two weeks deserve professional care. Avoid blame or "just cheer up" messaging. If there are thoughts of self-harm or harming the baby, seek help immediately; in the US call or text 988 or call emergency services.',
     source,
