@@ -639,7 +639,7 @@ const _highUsGovernmentCivicsBase = makeQuestionBank('AP', [
     wrong: [
       ['Share it immediately because it sounds urgent', 'Urgency can be a manipulation tactic; verify before spreading.', 'Pause and check.'],
       ['Believe it only if it matches your party preference', 'Accuracy does not depend on whether a claim feels politically convenient.', 'Use evidence, not comfort.'],
-      ['Assume every source is equally reliable', 'Sources vary in expertise, transparency, and evidence.', 'Evaluate credibility.'],
+      ['Treat a widely reposted claim as credible because it includes a confident date and legal-sounding language', 'Specific wording can make misinformation feel official; credibility still depends on traceable evidence and reliable sources.', 'Evaluate credibility.'],
     ],
     lesson: 'Media literacy in civics means checking evidence, identifying source quality, separating fact from opinion, and avoiding the spread of misinformation.',
   },
@@ -858,7 +858,7 @@ const _highUsGovernmentCivicsBase = makeQuestionBank('AP', [
     prompt: 'A city denies a public records request, and the resident believes the denial wrongly applies an exemption. A common next step is to:',
     correct: 'Use the records law appeal process or seek review from an oversight office or court',
     wrong: [
-      ['Assume the government can never withhold any record', 'Public records laws usually include exemptions for privacy, security, investigations, and other protected interests.', 'Appeals test whether an exemption was used properly.'],
+      ['Argue that the exemption should disappear because the request is about a controversial topic', 'Public interest can matter, but exemptions do not vanish automatically; the appeal tests whether the exemption was applied properly.', 'Appeals test whether an exemption was used properly.'],
       ['Rewrite the city budget to punish the records clerk', 'Budgeting is separate from challenging a records denial.', 'Think review of the denial.'],
       ['Declare the requested document automatically public without any legal process', 'Disputes over exemptions are resolved through appeal or review procedures.', 'Look for a formal challenge path.'],
     ],
@@ -949,7 +949,7 @@ const _highUsGovernmentCivicsBase = makeQuestionBank('AP', [
     prompt: 'A planning commission holds a public hearing before deciding whether to allow a new apartment building in a commercial area. The hearing mainly gives residents a chance to:',
     correct: 'Comment on a proposed land-use decision before officials act',
     wrong: [
-      ['Choose the next president directly', 'A zoning hearing concerns local land use, not presidential selection.', 'Look at the local decision being considered.'],
+      ['Vote on the developer\'s financing package rather than the land-use issue', 'Residents may comment on impacts and planning concerns, but the hearing is not a vote on the developer\'s private financing.', 'Look at the local decision being considered.'],
       ['Rewrite the U.S. Constitution', 'Public hearings can inform local decisions, but they do not amend the Constitution.', 'This is about zoning.'],
       ['Serve as jurors in a criminal trial', 'Residents may testify or comment, but a zoning hearing is not a criminal trial.', 'Think public input.'],
     ],
@@ -1709,7 +1709,7 @@ const highApUsGovernmentBaseQuestions = makeQuestionBank('AP', [
     prompt: 'A source-based FRQ includes a chart showing party identification by age group. To earn strong analysis credit, a response should:',
     correct: 'Use specific evidence from the source and explain what the pattern suggests without making unsupported causal claims',
     wrong: [
-      ['Ignore the source and answer only with memorized vocabulary', 'Source-analysis FRQs require using the provided material directly.', 'Use the data or excerpt itself.'],
+      ['Mention the chart once, then pivot to a generic definition of party identification', 'A brief mention is not source analysis; the answer needs specific evidence from the chart and an explanation of the pattern.', 'Use the data or excerpt itself.'],
       ['Claim the chart proves one cause even if it only shows a relationship', 'A pattern in data is not the same as causation; the response should describe and infer carefully.', 'Separate evidence from inference.'],
       ['Copy every number from the chart without explaining a trend', 'Listing data is weaker than describing and interpreting the relevant pattern.', 'Explain what the evidence shows.'],
     ],
@@ -1835,7 +1835,7 @@ const _highPoliticalPhilosophyBase = makeQuestionBank('AP', [
     prompt: 'In political philosophy, a question about legitimacy usually asks:',
     correct: 'Why a government has the right to rule and why people have reason to accept its authority',
     wrong: [
-      ['Which candidate has the best campaign logo', 'That is campaign design, not legitimacy.', 'Ask why authority is justified.'],
+      ['Whether the winning party used the most memorable campaign slogan', 'Campaign messaging can help win support, but legitimacy asks whether authority is justified after power is gained.', 'Ask why authority is justified.'],
       ['Whether a policy is popular for one week only', 'Popularity can matter, but legitimacy asks deeper questions about rightful authority.', 'Think justification.'],
       ['How many pages a law contains', 'Length does not establish legitimacy.', 'Focus on authority and consent.'],
     ],
