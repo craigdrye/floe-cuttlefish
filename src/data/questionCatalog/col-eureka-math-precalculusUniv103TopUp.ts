@@ -105,7 +105,7 @@ export const colEurekaMathPrecalculusUniv103TopUpQuestions: Question[] = makeQue
     prompt: 'If sin(theta) = 3/5 and theta is in the first quadrant, what is cos(theta)?',
     correct: '4/5',
     wrong: [
-      miss('-4/5', 'In the first quadrant cosine is positive, so the negative root is rejected.', 'Use the quadrant to choose the sign of the square root.'),
+      miss('-4/5', 'The square-root step gives plus or minus 4/5, but quadrant I keeps the positive cosine value.', 'Use the quadrant to choose the sign of the square root.'),
       miss('5/3', 'This inverts the ratio; cosine is adjacent over hypotenuse, here 4/5, not a reciprocal.', 'Apply sin^2 + cos^2 = 1 rather than inverting the sine.'),
       miss('2/5', 'This comes from subtracting 3/5 from 1, but the identity uses squares, not the values directly.', 'Square sine before subtracting from 1.'),
     ],

@@ -577,7 +577,7 @@ export const colIntegratedMath3High103TopUpAQuestions: Question[] = makeQuestion
     correct: '4/5',
     wrong: [
       miss('5/4', 'This is the reciprocal-style error; cosine of an acute angle is at most 1.', 'Use sin^2 + cos^2 = 1, so cos must be a fraction ≤ 1.'),
-      miss('−4/5', 'In the first quadrant cosine is positive, so the negative root is rejected.', 'First-quadrant angles have positive cosine.'),
+      miss('−4/5', 'The size 4/5 is right, but the minus sign contradicts the first-quadrant location.', 'First-quadrant angles have positive cosine.'),
       miss('2/5', 'You may have subtracted 3/5 from 1 instead of using the squared identity.', 'Apply cos^2 = 1 − sin^2, then take the square root.'),
     ],
     lesson: 'The Pythagorean identity sin^2θ + cos^2θ = 1 lets you find one ratio from another. With sin θ = 3/5, cos^2θ = 1 − 9/25 = 16/25, so cos θ = ±4/5. Since θ is in the first quadrant, cosine is positive, giving 4/5. This matches the familiar 3-4-5 triangle.',

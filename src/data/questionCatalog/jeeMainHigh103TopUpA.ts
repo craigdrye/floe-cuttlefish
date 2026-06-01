@@ -567,7 +567,7 @@ export const jeeMainHigh103TopUpAQuestions: Question[] = makeQuestionBank('High'
     prompt: 'If sin(theta) = 3/5 and theta lies in the first quadrant, what is cos(theta)?',
     correct: '4/5',
     wrong: [
-      miss('-4/5', 'In the first quadrant cosine is positive, so the negative root is rejected.', 'All trig functions are positive in the first quadrant.'),
+      miss('-4/5', 'Solving the identity gives two algebraic roots, but the first-quadrant condition rules out the negative one.', 'All trig functions are positive in the first quadrant.'),
       miss('5/3', 'This is the reciprocal of sin, not cos; use the Pythagorean identity instead.', 'Use cos^2 theta = 1 - sin^2 theta.'),
       miss('2/5', 'This does not satisfy sin^2 + cos^2 = 1 with sin = 3/5.', 'Check that (3/5)^2 + (your cos)^2 equals 1.'),
     ],

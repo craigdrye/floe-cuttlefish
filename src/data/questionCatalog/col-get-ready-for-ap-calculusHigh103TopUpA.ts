@@ -635,7 +635,7 @@ export const colGetReadyForApCalculusHigh103TopUpAQuestions: Question[] = makeQu
     prompt: 'If sin(theta) = 3/5 and theta is in the first quadrant, what is cos(theta)?',
     correct: '4/5',
     wrong: [
-      miss('-4/5', 'In the first quadrant cosine is positive, so the negative root is rejected.', 'Choose the sign of cosine based on the quadrant.'),
+      miss('-4/5', 'This has the right magnitude from cos^2 = 16/25, but the first-quadrant sign should be positive.', 'Choose the sign of cosine based on the quadrant.'),
       miss('2/5', 'This came from 1 - 3/5 rather than using the identity with squares.', 'Use sin^2 + cos^2 = 1, squaring the sine first.'),
       miss('5/3', 'This inverted a ratio instead of solving the Pythagorean identity.', 'Apply cos^2 = 1 - sin^2 and take the square root.'),
     ],
