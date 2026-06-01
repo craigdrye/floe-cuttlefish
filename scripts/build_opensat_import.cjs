@@ -96,6 +96,17 @@ function variant(seed, options) {
   return options[stableIndex(seed, options.length)]
 }
 
+function articleFor(value) {
+  return /^[aeiou]/i.test(value) ? 'an' : 'a'
+}
+
+function promptCue(item) {
+  const domain = normalizeText(item.domain)
+  const prompt = normalizeText(item.prompt_text)
+  const cue = prompt.length > 68 ? `${prompt.slice(0, 65)}...` : prompt
+  return domain ? `${domain}: ${cue}` : cue
+}
+
 function dedupeItems(items) {
   const seen = new Set()
   const deduped = []
@@ -145,7 +156,7 @@ function mathFeedback(item, label, index) {
         variant(seed, [
           `The value ${display} has the opposite sign from ${correctDisplay}; that usually means the ${signContext} flipped during the work.`,
           `${display} has the right kind of size but the wrong sign. Recheck the ${signContext} before simplifying.`,
-          `Choosing ${display} points to a sign slip: the calculation needs ${correctDisplay}, not the sign-reversed result.`,
+          `Choosing ${display} points to a sign slip: this setup needs ${correctDisplay}, not the sign-reversed result.`,
           `${display} is the sign-mirror trap here. Keep the negative and positive terms separate until the last step.`,
           `This answer changes the direction of the calculation. The ${signContext} should lead to ${correctDisplay}, not ${display}.`,
           `${display} usually appears when the algebra is set up in the opposite direction. Track which side is being subtracted from which.`,
@@ -172,11 +183,11 @@ function mathFeedback(item, label, index) {
         variant(seed, [
           `${targetPhrase} ${display} stops short of the full result ${correctDisplay}; the ${missingStep} is still missing.`,
           `${display} is an intermediate-size answer. It looks like one step of the work, not the final value ${correctDisplay}.`,
-          `The answer ${display} is too small for this setup because it leaves out the ${missingStep}.`,
+          `The answer ${display} is too small for this setup because it leaves out the ${missingStep} needed to reach ${correctDisplay}.`,
           `${display} likely comes from using only part of the given information; finishing the ${missingStep} gets to ${correctDisplay}.`,
           `This undercounts the requested quantity. The setup points past ${display} to ${correctDisplay}.`,
-          `${display} is the "almost there" trap: it captures part of the calculation before the final operation is done.`,
-          `Picking ${display} usually means the calculation used the right direction but stopped before the full quantity was found.`,
+          `${display} is the "almost there" trap: it captures part of the calculation before the final operation that reaches ${correctDisplay}.`,
+          `Picking ${display} usually means the calculation used the right direction but stopped before the full quantity ${correctDisplay} was found.`,
           `${display} fits a partial relationship in the problem, but the question asks for the completed result ${correctDisplay}.`,
         ]),
         variant(`${seed}:tip`, [
@@ -192,16 +203,17 @@ function mathFeedback(item, label, index) {
         ? 'base, rate, or total'
         : /area|volume|circle|rectangle|triangle/.test(context)
           ? 'length, area, or scale factor'
-          : /function|exponent|quadratic/.test(context)
+        : /function|exponent|quadratic/.test(context)
           ? 'coefficient, exponent, or solution'
             : 'operation'
+      const extraStepPhrase = `${articleFor(extraStep)} ${extraStep}`
       return [
         variant(seed, [
           `${display} overshoots ${correctDisplay}; it usually appears when the ${extraStep} is applied one time too many.`,
-          `This answer is too large for the setup. It likely repeats a ${extraStep} step after the final quantity was already found.`,
+          `${display} is too large for this setup; it likely repeats ${extraStepPhrase} step after the final quantity ${correctDisplay} was already found.`,
           `${display} has been inflated past the target ${correctDisplay}, often by double-counting the ${extraStep}.`,
-          `Choosing ${display} points to an extra operation, not a harder version of the same problem.`,
-          `${display} is the overcount trap: it keeps calculating after the requested quantity has already been reached.`,
+          `Choosing ${display} points to an extra operation after the problem should have stopped at ${correctDisplay}.`,
+          `${display} is the overcount trap: it keeps calculating after the requested quantity ${correctDisplay} has already been reached.`,
           `The setup does not support a result as large as ${display}. Recheck whether the ${extraStep} was counted twice.`,
           `${display} usually comes from treating a one-step scale or rate adjustment as if it had to happen again.`,
           `This goes beyond the requested value. The arithmetic should land at ${correctDisplay}, not the larger ${display}.`,
@@ -261,37 +273,38 @@ function mathFeedback(item, label, index) {
 function readingWritingFeedback(item, label, index) {
   const domain = normalizeText(item.domain).toLowerCase()
   const display = shortLabel(label)
+  const cue = promptCue(item)
 
   if (domain.includes('standard english')) {
     const moves = [
-      'keeps the sentence grammatical in one spot while creating a punctuation or agreement problem elsewhere',
-      'sounds polished but does not fit the sentence boundary, modifier, or verb pattern required here',
-      'changes the sentence rhythm without solving the actual convention being tested',
+      `may look grammatical in isolation, but in ${cue} it creates a punctuation, agreement, or modifier problem`,
+      `sounds polished, but it does not fit the sentence boundary or verb pattern in ${cue}`,
+      `changes the rhythm of the sentence without solving the convention being tested in ${cue}`,
     ]
     return [
-      `The choice ${display} ${moves[index % moves.length]}.`,
+      `Choosing "${display}" ${moves[index % moves.length]}.`,
       'Read the whole sentence after inserting the option; grammar traps often break just outside the edited phrase.',
     ]
   }
   if (domain.includes('expression of ideas')) {
     const moves = [
-      'may be clear on its own, but it does not create the transition, emphasis, or organization the paragraph needs',
+      `may be clear on its own, but it does not create the transition, emphasis, or organization needed in ${cue}`,
       'adds a reasonable-sounding idea while missing the writer\'s purpose at this point in the passage',
       'focuses on wording polish instead of the sentence\'s job in the paragraph',
     ]
     return [
-      `The choice ${display} ${moves[index % moves.length]}.`,
+      `Choosing "${display}" ${moves[index % moves.length]}.`,
       'Ask what job the sentence must do for the paragraph before judging style.',
     ]
   }
   if (domain.includes('craft') || domain.includes('structure')) {
     const moves = [
-      'overstates the author\'s purpose beyond what the quoted wording can support',
+      `overstates the author's purpose beyond what the quoted wording in ${cue} can support`,
       'captures a related tone or topic but misses the specific rhetorical function being tested',
       'treats a detail as the main structural move of the passage',
     ]
     return [
-      `The choice ${display} ${moves[index % moves.length]}.`,
+      `Choosing "${display}" ${moves[index % moves.length]}.`,
       'Tie the answer to the author\'s exact word choice, structure, or stated purpose.',
     ]
   }
@@ -302,7 +315,7 @@ function readingWritingFeedback(item, label, index) {
     'answers a nearby idea instead of the specific claim or evidence relationship asked about',
   ]
   return [
-    `The choice ${display} ${moves[index % moves.length]}.`,
+    `Choosing "${display}" ${moves[index % moves.length]} in ${cue}.`,
     'Point to the exact line of support before picking the answer.',
   ]
 }
