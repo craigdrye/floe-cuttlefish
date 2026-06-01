@@ -143,9 +143,9 @@ export const softwareFoundationsUniv103TopUpQuestions: Question[] = makeQuestion
     prompt: 'To prove a statement S by contradiction, what do you assume and what do you derive?',
     correct: 'Assume not S and derive a contradiction (something of the form R and not R).',
     wrong: [
-      miss('Assume S and derive a contradiction.', 'Deriving a contradiction from S would prove not S, the opposite of the goal.', 'You assume the negation of what you want.'),
-      miss('Assume not S and derive S directly.', 'Deriving S from not S without a contradiction is a different (proof by cases on excluded middle) pattern, not the standard contradiction schema.', 'The classic method ends in an explicit contradiction.'),
-      miss('Assume S and derive S again.', 'Re-deriving S proves nothing; it is circular.', 'A proof must add information, not restate the goal.'),
+      miss('Start from S and reach a contradiction.', 'Deriving a contradiction from S would prove not S, the opposite of the goal.', 'You assume the negation of what you want.'),
+      miss('Start from not S and jump directly to S.', 'Deriving S from not S without a contradiction is a different (proof by cases on excluded middle) pattern, not the standard contradiction schema.', 'The classic method ends in an explicit contradiction.'),
+      miss('Start from S and restate S again.', 'Re-deriving S proves nothing; it is circular.', 'A proof must add information, not restate the goal.'),
     ],
     lesson: 'Proof by contradiction (reductio ad absurdum) assumes the negation of the goal and derives a contradiction, concluding the original goal must hold. It relies classically on the principle that not-not-S implies S.',
     source, generated: true,

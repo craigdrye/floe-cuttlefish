@@ -253,7 +253,7 @@ export const stCh3Questions: Question[] = [
     [
       ['Treat it as a trade idea and pitch clients to short mega-cap tech because real-money is selling', 'Color is a flow read, not a thesis. Real-money selling reflects rebalancing or duration management as often as a directional view; pitching it as a short signal misreads what the desk is saying.'],
       ['Forward the color verbatim to clients so they can see what other clients are doing', 'Forwarding flow color to other clients verbatim is a serious problem — it can leak counterparty identity, breach client confidentiality, and damage relationships. Color is for the desk\'s internal use to inform conversations, not for redistribution.'],
-      ['Ignore it because program desk color is not actionable on single-name trades', 'Program color directly affects single-name liquidity and pricing. Ignoring it leaves the sales-trader unaware of why fills are improving or deteriorating in their names.'],
+      ['Treat program desk color as irrelevant to single-name liquidity', 'Program color directly affects single-name liquidity and pricing. Dismissing it leaves the sales-trader unaware of why fills are improving or deteriorating in their names.'],
     ],
     'Morning color is internal context that shapes how the sales-trader frames execution and entry conversations. It informs the desk\'s view of where supply and demand sit; it is not a tradable thesis and not for client redistribution.'),
 
@@ -336,7 +336,7 @@ export const stCh3Questions: Question[] = [
     [
       ['Note the comment in the call summary and send it to other tier-1 clients as part of the post-meeting note', 'Disseminating selective material information to other clients is the worst possible response — it compounds the original selective disclosure problem and likely triggers individual tipping liability.'],
       ['Allow the client to trade on the comment because the disclosure was in a private meeting and Reg FD only applies to broad disclosures', 'Reg FD is explicitly aimed at selective disclosure by issuers to particular market participants, including analysts and major holders. A private meeting is precisely the channel the rule was designed to police.'],
-      ['Ignore the comment because the CFO\'s view is just guidance and guidance is always public information', 'Specific intra-quarter performance information is material non-public information until publicly disclosed by the issuer, regardless of whether full-year guidance is on file.'],
+      ['Treat the CFO comment as ordinary guidance because the company already gives public guidance', 'Specific intra-quarter performance information is material non-public information until publicly disclosed by the issuer, regardless of whether full-year guidance is on file.'],
     ],
     'Corporate access carries real MNPI risk. If a corporate executive makes a selectively disclosed material statement, the right path is immediate escalation, trading freeze for the recipient, and coordination with the issuer on public disclosure. Reg FD treats selective disclosure by issuers as the violation, but the broker can be on the hook for facilitation.'),
 
@@ -573,7 +573,7 @@ export const stCh3Questions: Question[] = [
     [
       ['Tell clients to short the stock because the call-buying indicates a crowded long that will reverse', 'Positioning is not a contrarian thesis on its own. Crowded longs can keep going up; the value is in informing risk management around the event, not in calling a reversal.'],
       ['Tell clients to buy calls because the desk sees momentum building into the print', 'Following the same crowd into expensive short-dated options at peak IV is a textbook way to lose premium even on a beat. The pre-earnings flow informs sizing and hedging, not herd-following.'],
-      ['Ignore positioning data because earnings outcomes are unpredictable and positioning is irrelevant', 'Positioning materially affects post-earnings price reaction, even when the result is itself unpredictable. Ignoring it leaves clients un-prepared for asymmetric outcomes around the print.'],
+      ['Treat positioning data as irrelevant because the earnings result itself is unknowable', 'Positioning materially affects post-earnings price reaction, even when the result is itself unpredictable. Dismissing it leaves clients un-prepared for asymmetric outcomes around the print.'],
     ],
     'Pre-earnings flow data is positioning information, not prediction. The desk\'s job is to make the asymmetric risk visible to the PM — where the crowd sits, what is priced in, and how to size and hedge the event — rather than to call the direction of the print itself.'),
 

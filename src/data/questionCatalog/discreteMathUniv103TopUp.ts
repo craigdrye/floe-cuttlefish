@@ -215,9 +215,9 @@ export const discreteMathUniv103TopUpQuestions: Question[] = makeQuestionBank('U
     prompt: 'In a proof by contradiction of statement S, what do you assume and what do you derive?',
     correct: 'Assume not S, then derive a logical contradiction such as a statement and its negation.',
     wrong: [
-      miss('Assume S, then derive that S is true again.', 'Assuming what you want to prove and reaffirming it is circular, not a contradiction proof.', 'You assume the negation of the goal, not the goal itself.'),
-      miss('Assume not S, then derive S directly with no contradiction.', 'Deriving S from not S without a contradiction is not the contradiction method; that would be vacuous.', 'The hallmark is reaching an impossibility like P and not P.'),
-      miss('Assume a random false statement and show S follows.', 'A proof must start from the negation of S, not an arbitrary falsehood.', 'The assumption is specifically not S.'),
+      miss('Start from S and restate S at the end.', 'Starting from what you want to prove and reaffirming it is circular, not a contradiction proof.', 'You assume the negation of the goal, not the goal itself.'),
+      miss('Start from not S and jump straight to S with no impossibility.', 'Deriving S from not S without a contradiction is not the contradiction method; that would be vacuous.', 'The hallmark is reaching an impossibility like P and not P.'),
+      miss('Begin with an unrelated false claim and make S follow from it.', 'A proof must start from the negation of S, not an arbitrary falsehood.', 'The assumption is specifically not S.'),
     ],
     lesson: 'Proof by contradiction assumes the negation of the claim and derives a contradiction (a proposition that is both true and false), forcing the negation to fail and the original claim to hold. The classic example is the irrationality of the square root of 2.',
     source, generated: true,

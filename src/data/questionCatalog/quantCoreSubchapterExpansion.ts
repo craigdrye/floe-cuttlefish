@@ -133,7 +133,7 @@ const definitions: QuantCoreExpansionDefinition[] = [
     prompt: 'An interviewer hints, "Try conditioning on the first roll." What is the best response?',
     correct: 'Restate the pivot: "Good, I will split on the first roll and write the remaining expectation recursively."',
     wrong: [
-      ['Ignore the hint and keep pushing the original method', 'Hints are information about the intended path.', 'Use them visibly.'],
+      ['Treat the hint as a distraction and keep pushing the original method', 'Hints are information about the intended path.', 'Use them visibly.'],
       ['Say "yes" and continue silently', 'The interviewer cannot tell whether the hint landed.', 'Translate the hint into a concrete next step.'],
       ['Ask for the final formula', 'A hint is not an invitation to outsource the problem.', 'Use the hint to restart the reasoning.'],
     ],
@@ -1069,7 +1069,7 @@ const definitions: QuantCoreExpansionDefinition[] = [
     prompt: 'A price file has duplicate timestamps for the same instrument. What should you do before computing returns?',
     correct: 'Define and document a deduplication rule, such as keeping the last valid quote or aggregating consistently.',
     wrong: [
-      ['Ignore duplicates and let the code decide', 'Silent handling can create unstable or biased returns.', 'State the data rule.'],
+      ['Let the script handle duplicate rows implicitly', 'Silent handling can create unstable or biased returns.', 'State the data rule.'],
       ['Average timestamps as numbers', 'Timestamps identify order, not a value to average meaningfully here.', 'Handle records, not clock arithmetic.'],
       ['Delete the entire instrument automatically', 'That may be too destructive before diagnosis.', 'Choose a consistent rule based on data provenance.'],
     ],
@@ -1206,7 +1206,7 @@ const definitions: QuantCoreExpansionDefinition[] = [
     wrong: [
       ['Spend the first 30 minutes on the hardest-looking problem', 'That risks losing easy points elsewhere.', 'Triage the set.'],
       ['Answer every problem in exactly the listed order no matter what', 'Rigid order can be costly in mixed screens.', 'Use confidence and point value.'],
-      ['Skip all problems that are not instantly obvious', 'Harder problems may be solvable after warm-up.', 'Mark and return.'],
+      ['Abandon every problem that is not instantly obvious', 'Harder problems may be solvable after warm-up.', 'Mark and return.'],
     ],
     lesson: 'Mixed screens reward triage. Secure clean points first, avoid getting trapped, and leave time for review. This is not evasive; it is professional exam strategy.',
   },
