@@ -372,7 +372,7 @@ const _baseApBiologyWorkoutGeneratedQuestions = makeQuestionBank('Science', [
   ]),
   q(460029, 'Biodiversity', 'Keystone predator', 'A keystone predator can maintain biodiversity by:', 'Preventing one prey or competitor species from dominating the community', [
     miss('Removing every species except itself', 'That would reduce biodiversity.', 'Keystone effects can balance communities.'),
-    miss('Turning prey into sunlight', 'No.', 'Trophic control.'),
+    miss('Converting prey directly into abiotic energy', 'Predators regulate populations through feeding interactions; they do not turn prey into sunlight or abiotic energy.', 'Trophic control.'),
     miss('Having no ecological interactions', 'Keystone species have strong interactions.', 'Disproportionate effect.'),
   ]),
 
