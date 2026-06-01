@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-01T07:33:33.205Z",
+  "generatedAt": "2026-06-01T07:36:54.656Z",
   "summary": {
     "filesScanned": 758,
     "questionsScanned": 56989,
     "extractedQuestionRecords": 57146,
     "skippedNonPlayablePlaceholders": 157,
     "distinctQuestionIds": 38778,
-    "totalIssues": 331,
-    "jsonIssuesStored": 331,
-    "duplicateWhyWrongGroups": 48
+    "totalIssues": 322,
+    "jsonIssuesStored": 322,
+    "duplicateWhyWrongGroups": 47
   },
   "flagCounts": {
-    "repeated-why-wrong": 166,
-    "obvious-irrelevant-distractor": 45,
-    "meta-distractor": 120
+    "repeated-why-wrong": 163,
+    "obvious-irrelevant-distractor": 40,
+    "meta-distractor": 119
   },
   "scannedFiles": [
     "src/data/questionCatalog/adultCoursesNew.ts",
@@ -1795,36 +1795,6 @@
       ]
     },
     {
-      "text": "AMLA seat was confirmed as Frankfurt.",
-      "count": 3,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
-          "line": 2174,
-          "questionId": 5110075,
-          "title": "EU AML Authority",
-          "chapter": "Applied Scenario",
-          "snippet": "miss('Brussels, Belgium', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
-          "line": 2175,
-          "questionId": 5110075,
-          "title": "EU AML Authority",
-          "chapter": "Applied Scenario",
-          "snippet": "miss('Paris, France', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),"
-        },
-        {
-          "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
-          "line": 2176,
-          "questionId": 5110075,
-          "title": "EU AML Authority",
-          "chapter": "Applied Scenario",
-          "snippet": "miss('Dublin, Ireland', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),"
-        }
-      ]
-    },
-    {
       "text": "An obtuse angle is bigger than a right angle, not smaller.",
       "count": 3,
       "examples": [
@@ -2181,6 +2151,36 @@
           "title": "Adding fractions with unlike denominators",
           "chapter": "Fractions, decimals, and percentages",
           "snippet": "miss('2/7', 'This adds numerators and denominators directly, which is not how fractions add.', 'Find a common denominator before adding.'),"
+        }
+      ]
+    },
+    {
+      "text": "This adds the numbers instead of multiplying them.",
+      "count": 3,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/col-4th-grade-mathPrim103TopUp.ts",
+          "line": 230,
+          "questionId": 7811014,
+          "title": "Checking division with multiplication",
+          "chapter": "Division",
+          "snippet": "miss('9 + 7 = 16', 'This adds the numbers instead of multiplying them.', 'To check division, multiply the answer by the divisor.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-7th-grade-mathHigh103TopUpA.ts",
+          "line": 124,
+          "questionId": 7947007,
+          "title": "Product of two negatives",
+          "chapter": "Negative Numbers: Multiplication and Division",
+          "snippet": "miss('-13', 'This adds the numbers instead of multiplying them.', 'You need a product, not a sum.'),"
+        },
+        {
+          "file": "src/data/questionCatalog/col-get-ready-for-algebra-1High103TopUpB.ts",
+          "line": 78,
+          "questionId": 7956504,
+          "title": "Product of two negatives",
+          "chapter": "Negative numbers: multiplication and division",
+          "snippet": "miss('-13', 'This adds the numbers instead of multiplying them.', 'The operation is multiplication, not addition.'),"
         }
       ]
     }
@@ -3211,51 +3211,6 @@
         "flag": "repeated-why-wrong",
         "label": "Repeated whyWrong",
         "priority": 87,
-        "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
-        "line": 2174,
-        "questionId": 5110075,
-        "title": "EU AML Authority",
-        "chapter": "Applied Scenario",
-        "field": "whyWrong",
-        "value": "AMLA seat was confirmed as Frankfurt.",
-        "detail": "Same normalized whyWrong appears 3 times.",
-        "snippet": "miss('Brussels, Belgium', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 87,
-        "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
-        "line": 2175,
-        "questionId": 5110075,
-        "title": "EU AML Authority",
-        "chapter": "Applied Scenario",
-        "field": "whyWrong",
-        "value": "AMLA seat was confirmed as Frankfurt.",
-        "detail": "Same normalized whyWrong appears 3 times.",
-        "snippet": "miss('Paris, France', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 87,
-        "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
-        "line": 2176,
-        "questionId": 5110075,
-        "title": "EU AML Authority",
-        "chapter": "Applied Scenario",
-        "field": "whyWrong",
-        "value": "AMLA seat was confirmed as Frankfurt.",
-        "detail": "Same normalized whyWrong appears 3 times.",
-        "snippet": "miss('Dublin, Ireland', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 87,
         "file": "src/data/questionCatalog/class1MathPrim103TopUp.ts",
         "line": 556,
         "questionId": 7800036,
@@ -3986,6 +3941,51 @@
         "detail": "Same normalized whyWrong appears 3 times.",
         "snippet": "miss('(x + 15)(x - 1)', 'These multiply to -15 but add to +14, not +2.', 'Find two numbers that multiply to -15 AND add to +2.'),",
         "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-gcse-maths-ukHigh103TopUpB.ts",
+        "line": 347,
+        "questionId": 7972521,
+        "title": "Adding column vectors",
+        "chapter": "Vectors",
+        "field": "whyWrong",
+        "value": "This multiplies the components rather than adding them.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('(-6, -4)', 'This multiplies the components rather than adding them.', 'Vector addition adds component to component.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
+        "line": 444,
+        "questionId": 7851028,
+        "title": "Counting sides",
+        "chapter": "Shapes and Measurement",
+        "field": "whyWrong",
+        "value": "2 is not enough sides to enclose the shape being described.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('2', '2 is not enough sides to enclose the shape being described.', 'A triangle needs three sides to close.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 87,
+        "file": "src/data/questionCatalog/col-get-ready-for-3rd-gradePrim103TopUp.ts",
+        "line": 793,
+        "questionId": 7851051,
+        "title": "Finding the noun",
+        "chapter": "Grammar and Writing",
+        "field": "whyWrong",
+        "value": "ran is something someone does, so it points to a verb instead of the requested word type.",
+        "detail": "Same normalized whyWrong appears 3 times.",
+        "snippet": "miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),",
+        "extractor": "object"
       }
     ],
     "obvious-irrelevant-distractor": [
@@ -4047,36 +4047,6 @@
         "detail": "Distractor looks unrelated to the prompt context (token overlap 20%).",
         "snippet": "['Authentication noise is never useful telemetry', 'Authentication alerts include the credential-stuffing and password-spray patterns analysts most need to catch; dismissing the whole signal class discards evidence.'],",
         "extractor": "q"
-      },
-      {
-        "flag": "obvious-irrelevant-distractor",
-        "label": "Obvious irrelevant distractor",
-        "priority": 78,
-        "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
-        "line": 86,
-        "questionId": 5100006,
-        "title": "Bid Rigging Variant",
-        "chapter": "Corruption",
-        "field": "distractor",
-        "value": "Illegal gratuities",
-        "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-        "snippet": "miss('Illegal gratuities', 'Gratuities reward past acts; this is forward-looking collusion.', 'Distinguish reward from coordination.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "obvious-irrelevant-distractor",
-        "label": "Obvious irrelevant distractor",
-        "priority": 78,
-        "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
-        "line": 1052,
-        "questionId": 5100075,
-        "title": "Conflict of Interest",
-        "chapter": "Applied Scenario",
-        "field": "distractor",
-        "value": "Illegal gratuity — reward after the fact",
-        "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-        "snippet": "miss('Illegal gratuity — reward after the fact', 'No reward for a past act is described.', 'No reward dynamic.'),",
-        "extractor": "object"
       },
       {
         "flag": "obvious-irrelevant-distractor",
@@ -4231,59 +4201,14 @@
         "label": "Obvious irrelevant distractor",
         "priority": 78,
         "file": "src/data/questionCatalog/englishComposition101TopUp.ts",
-        "line": 18,
-        "questionId": 7420000,
-        "title": "Identifying exigence",
-        "chapter": "English Composition: The Writing Process and the Rhetorical Situation",
-        "field": "distractor",
-        "value": "The thesis of the blog post",
-        "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-        "snippet": "miss('The thesis of the blog post', 'The thesis is the claim the blogger argues; the advisory is the external event that prompted the writing, not the argument itself.', 'Distinguish the event that triggers writing from the claim the writer makes in respons...",
-        "extractor": "object"
-      },
-      {
-        "flag": "obvious-irrelevant-distractor",
-        "label": "Obvious irrelevant distractor",
-        "priority": 78,
-        "file": "src/data/questionCatalog/englishComposition101TopUp.ts",
-        "line": 19,
-        "questionId": 7420000,
-        "title": "Identifying exigence",
-        "chapter": "English Composition: The Writing Process and the Rhetorical Situation",
-        "field": "distractor",
-        "value": "The genre of the blog post",
-        "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-        "snippet": "miss('The genre of the blog post', 'Genre is the type of text (a how-to post); the advisory is the circumstance that called the text into being, not its form.', 'Genre answers \"what kind of text\"; exigence answers \"why write it now.\"'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "obvious-irrelevant-distractor",
-        "label": "Obvious irrelevant distractor",
-        "priority": 78,
-        "file": "src/data/questionCatalog/englishComposition101TopUp.ts",
-        "line": 20,
-        "questionId": 7420000,
-        "title": "Identifying exigence",
-        "chapter": "English Composition: The Writing Process and the Rhetorical Situation",
-        "field": "distractor",
-        "value": "The audience of the blog post",
-        "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-        "snippet": "miss('The audience of the blog post', 'The audience is the readers who need clean water; the advisory is the pressing condition that created their need, not the readers themselves.', 'Audience is who you write to; exigence is the problem or urgency that mak...",
-        "extractor": "object"
-      },
-      {
-        "flag": "obvious-irrelevant-distractor",
-        "label": "Obvious irrelevant distractor",
-        "priority": 78,
-        "file": "src/data/questionCatalog/englishComposition101TopUp.ts",
         "line": 393,
         "questionId": 7420024,
         "title": "Common knowledge",
         "chapter": "English Composition: Source Integration, Citation, and Academic Integrity",
         "field": "distractor",
-        "value": "A 2023 study found that 14% of surveyed students skipped breakfast on exam days",
+        "value": "A recent survey statistic about how many students skipped breakfast before exams",
         "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-        "snippet": "miss('A 2023 study found that 14% of surveyed students skipped breakfast on exam days', 'A specific statistic from a particular study is original research, not common knowledge, and must be cited to its source.', 'Specific data from a study always needs a c...",
+        "snippet": "miss('A recent survey statistic about how many students skipped breakfast before exams', 'A specific statistic from a particular study is original research, not common knowledge, and must be cited to its source.', 'Specific data from a study always needs a ...",
         "extractor": "object"
       },
       {
@@ -4296,9 +4221,9 @@
         "title": "Common knowledge",
         "chapter": "English Composition: Source Integration, Citation, and Academic Integrity",
         "field": "distractor",
-        "value": "One scholar's recent argument that breakfast improves test performance",
+        "value": "A named researcher’s argument that breakfast improves test performance",
         "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-        "snippet": "miss('One scholar\\'s recent argument that breakfast improves test performance', 'An individual scholar\\'s argument is a particular intellectual contribution and must be attributed, not treated as general knowledge.', 'Someone\\'s specific claim or interpreta...",
+        "snippet": "miss('A named researcher’s argument that breakfast improves test performance', 'An individual scholar\\'s argument is a particular intellectual contribution and must be attributed, not treated as general knowledge.', 'Someone\\'s specific claim or interpretat...",
         "extractor": "object"
       },
       {
@@ -5232,21 +5157,6 @@
         "value": "Assume any under-execution is harmless seasonal variation and move on.",
         "detail": "Wrong answer is about answering strategy rather than content.",
         "snippet": "miss('Assume any under-execution is harmless seasonal variation and move on.', 'The boss is asking precisely because it might be structural; dismissing it skips the diagnosis.', 'The question exists because the variance might be real.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "meta-distractor",
-        "label": "Meta distractor",
-        "priority": 66,
-        "file": "src/data/questionCatalog/englishComposition101TopUp.ts",
-        "line": 426,
-        "questionId": 7420026,
-        "title": "Revising a thesis after new evidence",
-        "chapter": "English Composition: Synthesis and the Research Essay",
-        "field": "distractor",
-        "value": "Ignore the contradicting evidence so the original thesis still stands",
-        "detail": "Wrong answer is about answering strategy rather than content.",
-        "snippet": "miss('Ignore the contradicting evidence so the original thesis still stands', 'Suppressing evidence that undercuts a claim is cherry-picking and dishonest; research should reshape the thesis, not be filtered to protect it.', 'Hiding inconvenient evidence is...",
         "extractor": "object"
       },
       {
@@ -7462,51 +7372,6 @@
       "flag": "repeated-why-wrong",
       "label": "Repeated whyWrong",
       "priority": 87,
-      "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
-      "line": 2174,
-      "questionId": 5110075,
-      "title": "EU AML Authority",
-      "chapter": "Applied Scenario",
-      "field": "whyWrong",
-      "value": "AMLA seat was confirmed as Frankfurt.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Brussels, Belgium', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
-      "line": 2175,
-      "questionId": 5110075,
-      "title": "EU AML Authority",
-      "chapter": "Applied Scenario",
-      "field": "whyWrong",
-      "value": "AMLA seat was confirmed as Frankfurt.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Paris, France', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
-      "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
-      "line": 2176,
-      "questionId": 5110075,
-      "title": "EU AML Authority",
-      "chapter": "Applied Scenario",
-      "field": "whyWrong",
-      "value": "AMLA seat was confirmed as Frankfurt.",
-      "detail": "Same normalized whyWrong appears 3 times.",
-      "snippet": "miss('Dublin, Ireland', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 87,
       "file": "src/data/questionCatalog/class1MathPrim103TopUp.ts",
       "line": 556,
       "questionId": 7800036,
@@ -8991,36 +8856,6 @@
       "flag": "obvious-irrelevant-distractor",
       "label": "Obvious irrelevant distractor",
       "priority": 78,
-      "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
-      "line": 86,
-      "questionId": 5100006,
-      "title": "Bid Rigging Variant",
-      "chapter": "Corruption",
-      "field": "distractor",
-      "value": "Illegal gratuities",
-      "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-      "snippet": "miss('Illegal gratuities', 'Gratuities reward past acts; this is forward-looking collusion.', 'Distinguish reward from coordination.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "obvious-irrelevant-distractor",
-      "label": "Obvious irrelevant distractor",
-      "priority": 78,
-      "file": "src/data/questionCatalog/careerCredentialsComplianceFraud.ts",
-      "line": 1052,
-      "questionId": 5100075,
-      "title": "Conflict of Interest",
-      "chapter": "Applied Scenario",
-      "field": "distractor",
-      "value": "Illegal gratuity — reward after the fact",
-      "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-      "snippet": "miss('Illegal gratuity — reward after the fact', 'No reward for a past act is described.', 'No reward dynamic.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "obvious-irrelevant-distractor",
-      "label": "Obvious irrelevant distractor",
-      "priority": 78,
       "file": "src/data/questionCatalog/careerCredentialsFinraBrokerage.ts",
       "line": 3707,
       "questionId": 4830024,
@@ -9170,59 +9005,14 @@
       "label": "Obvious irrelevant distractor",
       "priority": 78,
       "file": "src/data/questionCatalog/englishComposition101TopUp.ts",
-      "line": 18,
-      "questionId": 7420000,
-      "title": "Identifying exigence",
-      "chapter": "English Composition: The Writing Process and the Rhetorical Situation",
-      "field": "distractor",
-      "value": "The thesis of the blog post",
-      "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-      "snippet": "miss('The thesis of the blog post', 'The thesis is the claim the blogger argues; the advisory is the external event that prompted the writing, not the argument itself.', 'Distinguish the event that triggers writing from the claim the writer makes in respons...",
-      "extractor": "object"
-    },
-    {
-      "flag": "obvious-irrelevant-distractor",
-      "label": "Obvious irrelevant distractor",
-      "priority": 78,
-      "file": "src/data/questionCatalog/englishComposition101TopUp.ts",
-      "line": 19,
-      "questionId": 7420000,
-      "title": "Identifying exigence",
-      "chapter": "English Composition: The Writing Process and the Rhetorical Situation",
-      "field": "distractor",
-      "value": "The genre of the blog post",
-      "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-      "snippet": "miss('The genre of the blog post', 'Genre is the type of text (a how-to post); the advisory is the circumstance that called the text into being, not its form.', 'Genre answers \"what kind of text\"; exigence answers \"why write it now.\"'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "obvious-irrelevant-distractor",
-      "label": "Obvious irrelevant distractor",
-      "priority": 78,
-      "file": "src/data/questionCatalog/englishComposition101TopUp.ts",
-      "line": 20,
-      "questionId": 7420000,
-      "title": "Identifying exigence",
-      "chapter": "English Composition: The Writing Process and the Rhetorical Situation",
-      "field": "distractor",
-      "value": "The audience of the blog post",
-      "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-      "snippet": "miss('The audience of the blog post', 'The audience is the readers who need clean water; the advisory is the pressing condition that created their need, not the readers themselves.', 'Audience is who you write to; exigence is the problem or urgency that mak...",
-      "extractor": "object"
-    },
-    {
-      "flag": "obvious-irrelevant-distractor",
-      "label": "Obvious irrelevant distractor",
-      "priority": 78,
-      "file": "src/data/questionCatalog/englishComposition101TopUp.ts",
       "line": 393,
       "questionId": 7420024,
       "title": "Common knowledge",
       "chapter": "English Composition: Source Integration, Citation, and Academic Integrity",
       "field": "distractor",
-      "value": "A 2023 study found that 14% of surveyed students skipped breakfast on exam days",
+      "value": "A recent survey statistic about how many students skipped breakfast before exams",
       "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-      "snippet": "miss('A 2023 study found that 14% of surveyed students skipped breakfast on exam days', 'A specific statistic from a particular study is original research, not common knowledge, and must be cited to its source.', 'Specific data from a study always needs a c...",
+      "snippet": "miss('A recent survey statistic about how many students skipped breakfast before exams', 'A specific statistic from a particular study is original research, not common knowledge, and must be cited to its source.', 'Specific data from a study always needs a ...",
       "extractor": "object"
     },
     {
@@ -9235,9 +9025,9 @@
       "title": "Common knowledge",
       "chapter": "English Composition: Source Integration, Citation, and Academic Integrity",
       "field": "distractor",
-      "value": "One scholar's recent argument that breakfast improves test performance",
+      "value": "A named researcher’s argument that breakfast improves test performance",
       "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-      "snippet": "miss('One scholar\\'s recent argument that breakfast improves test performance', 'An individual scholar\\'s argument is a particular intellectual contribution and must be attributed, not treated as general knowledge.', 'Someone\\'s specific claim or interpreta...",
+      "snippet": "miss('A named researcher’s argument that breakfast improves test performance', 'An individual scholar\\'s argument is a particular intellectual contribution and must be attributed, not treated as general knowledge.', 'Someone\\'s specific claim or interpretat...",
       "extractor": "object"
     },
     {
@@ -10169,21 +9959,6 @@
       "value": "Assume any under-execution is harmless seasonal variation and move on.",
       "detail": "Wrong answer is about answering strategy rather than content.",
       "snippet": "miss('Assume any under-execution is harmless seasonal variation and move on.', 'The boss is asking precisely because it might be structural; dismissing it skips the diagnosis.', 'The question exists because the variance might be real.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "meta-distractor",
-      "label": "Meta distractor",
-      "priority": 66,
-      "file": "src/data/questionCatalog/englishComposition101TopUp.ts",
-      "line": 426,
-      "questionId": 7420026,
-      "title": "Revising a thesis after new evidence",
-      "chapter": "English Composition: Synthesis and the Research Essay",
-      "field": "distractor",
-      "value": "Ignore the contradicting evidence so the original thesis still stands",
-      "detail": "Wrong answer is about answering strategy rather than content.",
-      "snippet": "miss('Ignore the contradicting evidence so the original thesis still stands', 'Suppressing evidence that undercuts a claim is cherry-picking and dishonest; research should reshape the thesis, not be filtered to protect it.', 'Hiding inconvenient evidence is...",
       "extractor": "object"
     },
     {

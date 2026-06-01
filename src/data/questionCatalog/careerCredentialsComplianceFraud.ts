@@ -83,7 +83,7 @@ export const cfeQuestions: Question[] = makeQuestionBank('Career Skills', [
     correct: 'Bid rotation, a form of collusive bid rigging',
     wrong: [
       miss('Need recognition, an internal corruption scheme', 'Need recognition involves an insider creating a sham requirement.', 'No buyer-side insider is described.'),
-      miss('Illegal gratuities', 'Gratuities reward past acts; this is forward-looking collusion.', 'Distinguish reward from coordination.'),
+      miss('A supplier reward for a past purchasing decision', 'A gratuity rewards someone after an official act; here the vendors coordinate future bids with each other.', 'Distinguish a reward from coordinated bidding.'),
       miss('Economic extortion', 'Extortion involves a threatened harm to coerce payment.', 'Here vendors cooperate, not coerce.'),
     ],
     lesson: 'Collusive bidding has several flavors (rotation, suppression, complementary, market division); recognizing each by its mechanics matters on the exam.',
@@ -1049,7 +1049,7 @@ export const cfeQuestions: Question[] = makeQuestionBank('Career Skills', [
     correct: 'A corruption scheme — conflict of interest (undisclosed interest in a transaction the employee influences)',
     wrong: [
       miss('Bribery — payment for an official act', 'Bribery requires a quid pro quo from an external party; here the director benefits via ownership.', 'No external payor.'),
-      miss('Illegal gratuity — reward after the fact', 'No reward for a past act is described.', 'No reward dynamic.'),
+      miss('A thank-you payment after a completed vendor decision', 'A gratuity is a reward after an act; this scenario is about hidden ownership before and during the contract decision.', 'Look for who secretly benefits from the transaction.'),
       miss('Bid rigging — collusive bidding among external vendors', 'No competitive process and no external collusion is described.', 'Different scheme.'),
     ],
     lesson: 'Conflict of interest under ACFE Fraud Tree corruption branch: an employee has an undisclosed economic interest in a transaction they influence on behalf of the employer. The harm is the breach of duty of loyalty; concealment is the fraud. Distinguish from bribery (external payor) and gratuity (external reward).',
@@ -2171,9 +2171,9 @@ export const camsQuestions: Question[] = makeQuestionBank('Career Skills', [
     prompt: 'The new EU Anti-Money Laundering Authority (AMLA), established under the EU AML package, will be based in:',
     correct: 'Frankfurt, Germany — with direct supervision of certain high-risk cross-border financial entities and coordination of national AML supervisors',
     wrong: [
-      miss('Brussels, Belgium', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),
-      miss('Paris, France', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),
-      miss('Dublin, Ireland', 'AMLA seat was confirmed as Frankfurt.', 'Different city.'),
+      miss('Brussels, Belgium', 'Brussels hosts many EU institutions, but the AMLA seat decision placed the authority in Frankfurt.', 'Do not default to the EU institutional hub.'),
+      miss('Paris, France', 'Paris was a candidate city, but it was not selected as AMLA’s headquarters.', 'Candidate city is not the same as final seat.'),
+      miss('Dublin, Ireland', 'Dublin is a major financial centre, but AMLA is based in Frankfurt.', 'Financial-centre plausibility is not enough here.'),
     ],
     lesson: 'The EU AML package (adopted 2024, phased implementation) includes a directly applicable AML Regulation (the "Single Rulebook"), an updated AML Directive (AMLD 6 successor), and the new EU AML Authority (AMLA) based in Frankfurt. AMLA will directly supervise certain high-risk cross-border financial entities and coordinate the network of national supervisors.',
     source,

@@ -15,9 +15,9 @@ export const englishComposition101TopUpQuestions: Question[] = makeQuestionBank(
     prompt: 'A city posts a sudden water-boil advisory and a blogger immediately writes a piece explaining how to purify tap water. In rhetorical terms, what is the advisory functioning as?',
     correct: 'The exigence — the urgent situation that makes the writing necessary right now',
     wrong: [
-      miss('The thesis of the blog post', 'The thesis is the claim the blogger argues; the advisory is the external event that prompted the writing, not the argument itself.', 'Distinguish the event that triggers writing from the claim the writer makes in response to it.'),
-      miss('The genre of the blog post', 'Genre is the type of text (a how-to post); the advisory is the circumstance that called the text into being, not its form.', 'Genre answers "what kind of text"; exigence answers "why write it now."'),
-      miss('The audience of the blog post', 'The audience is the readers who need clean water; the advisory is the pressing condition that created their need, not the readers themselves.', 'Audience is who you write to; exigence is the problem or urgency that makes writing worthwhile.'),
+      miss('The writer’s main claim that people should purify tap water', 'That claim is the thesis the writer may argue; the advisory is the outside event that creates the need to write now.', 'Distinguish the event that triggers writing from the claim the writer makes in response to it.'),
+      miss('The how-to form used to explain the purification steps', 'That describes the genre or form of the text; exigence is the urgent situation that makes the text necessary.', 'Genre answers "what kind of text"; exigence answers "why write it now."'),
+      miss('Residents who need safe drinking water during the advisory', 'Those residents are the audience; the advisory itself is the problem creating the audience’s need.', 'Audience is who you write to; exigence is the problem or urgency that makes writing worthwhile.'),
     ],
     lesson: 'Exigence is the part of the rhetorical situation that makes writing necessary: a problem, gap, or urgency that demands a response. Identifying exigence helps a writer see why a text exists and what it is trying to change, separate from its audience, genre, or thesis.',
     source,
@@ -390,8 +390,8 @@ export const englishComposition101TopUpQuestions: Question[] = makeQuestionBank(
     prompt: 'Which of the following statements counts as "common knowledge" that generally does not require a citation in a college essay?',
     correct: 'Water freezes at 0 degrees Celsius at standard atmospheric pressure',
     wrong: [
-      miss('A 2023 study found that 14% of surveyed students skipped breakfast on exam days', 'A specific statistic from a particular study is original research, not common knowledge, and must be cited to its source.', 'Specific data from a study always needs a citation; only widely known facts do not.'),
-      miss('One scholar\'s recent argument that breakfast improves test performance', 'An individual scholar\'s argument is a particular intellectual contribution and must be attributed, not treated as general knowledge.', 'Someone\'s specific claim or interpretation must be credited to them.'),
+      miss('A recent survey statistic about how many students skipped breakfast before exams', 'A specific statistic from a particular study is original research, not common knowledge, and must be cited to its source.', 'Specific data from a study always needs a citation; only widely known facts do not.'),
+      miss('A named researcher’s argument that breakfast improves test performance', 'An individual scholar\'s argument is a particular intellectual contribution and must be attributed, not treated as general knowledge.', 'Someone\'s specific claim or interpretation must be credited to them.'),
       miss('A little-known historical detail found in only one specialized archive', 'Information available in only one specialized source is the opposite of common knowledge and must be cited to that source.', 'If a fact is hard to find or appears in only one source, cite it.'),
     ],
     lesson: 'Common knowledge is undisputed information widely known and easily found in many sources (basic facts, well-known dates). Specific statistics, individual scholars\' arguments, and obscure findings are not common knowledge and must be cited.',
@@ -423,7 +423,7 @@ export const englishComposition101TopUpQuestions: Question[] = makeQuestionBank(
     prompt: 'Midway through research, a writer finds strong evidence that contradicts her working thesis. What is the most intellectually honest next step?',
     correct: 'Revise the thesis to account for the new evidence, even if that means changing her original position',
     wrong: [
-      miss('Ignore the contradicting evidence so the original thesis still stands', 'Suppressing evidence that undercuts a claim is cherry-picking and dishonest; research should reshape the thesis, not be filtered to protect it.', 'Hiding inconvenient evidence is a research integrity failure, not a fix.'),
+      miss('Mention only the sources that support the original thesis', 'Suppressing evidence that undercuts a claim is cherry-picking and dishonest; research should reshape the thesis, not be filtered to protect it.', 'Hiding inconvenient evidence is a research integrity failure, not a fix.'),
       miss('Keep the thesis but add the contradicting source to the works-cited list without discussing it', 'Listing a source without engaging its argument hides the conflict; honest synthesis must address evidence that complicates the claim.', 'Citing a source you never engage does not resolve the contradiction.'),
       miss('Discredit the new source by criticizing its formatting and font', 'Attacking a source\'s appearance instead of its evidence is irrelevant and evasive; credibility is judged on method and authority, not design.', 'Dismiss a source on its evidence and method, never on superficial traits.'),
     ],
