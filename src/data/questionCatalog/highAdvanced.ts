@@ -61,7 +61,7 @@ import {
 function highAdvancedLesson(question: Question): string {
   const title = question.title || question.chapter || 'this question'
   const answer = question.solution || 'the correct answer'
-  return `This AP-style question is testing whether you can connect a term, fact, or scenario to the underlying concept. For "${title}", the key idea is: ${answer}. Name the concept first, then use the wording of the prompt to avoid picking a nearby but different idea.`
+  return `For "${title}", the useful idea is: ${answer}. Name the concept first, connect it to the scenario, and then use the wording of the prompt to avoid picking a nearby but different idea.`
 }
 
 function rewriteHighAdvancedPrompt(question: Question): string {
@@ -71,7 +71,7 @@ function rewriteHighAdvancedPrompt(question: Question): string {
     return `${prompt} Which answer correctly fills the blank?`
   }
   if (prompt.endsWith(':')) {
-    return `${prompt} Which option makes the idea most precise?`
+    return `${prompt} ___. Which option fits best?`
   }
   return `${prompt} Which option best matches the clue?`
 }
