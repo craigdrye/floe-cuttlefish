@@ -13,6 +13,7 @@ export const createUISlice: StateCreator<AppState, [], [], UISlice> = (set) => (
   mood: null,
   darkMode: false,
   focusMode: false,
+  floeMode: true,
   pendingStageCelebration: null,
 
   setShowWelcome: (show) => set({ showWelcome: show }),
@@ -30,5 +31,6 @@ export const createUISlice: StateCreator<AppState, [], [], UISlice> = (set) => (
   setMood: (mood) => set({ mood }),
   toggleDarkMode: () => set((state) => ({ darkMode: !state.darkMode })),
   toggleFocusMode: () => set((state) => ({ focusMode: !state.focusMode })),
+  setFloeMode: (enabled) => set({ floeMode: enabled }),
   setPendingStageCelebration: (stage) => set({ pendingStageCelebration: stage }),
 })

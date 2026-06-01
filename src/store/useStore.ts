@@ -47,6 +47,7 @@ export const useStore = create<AppState>()(
         mood: state.mood,
         darkMode: state.darkMode,
         focusMode: state.focusMode,
+        floeMode: state.floeMode,
         user: state.user,
         savedUsers: state.savedUsers,
         dailyPuzzles: state.dailyPuzzles,

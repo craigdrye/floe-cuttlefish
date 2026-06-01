@@ -151,6 +151,8 @@ export function AudienceSelectScreen() {
     login,
     loginAsGuest,
     user,
+    floeMode,
+    setFloeMode,
   } = useStore()
 
   const [mounted, setMounted] = useState(false)
@@ -290,6 +292,19 @@ export function AudienceSelectScreen() {
             </div>
           </section>
         )}
+
+        <label className="floe-mode-toggle">
+          <input
+            type="checkbox"
+            checked={floeMode}
+            onChange={(event) => setFloeMode(event.target.checked)}
+          />
+          <span className="floe-mode-toggle-switch" aria-hidden="true" />
+          <span className="floe-mode-toggle-copy">
+            <strong>Floe mode</strong>
+            <small>Soft cuttlefish colors</small>
+          </span>
+        </label>
 
         <div className="audience-actions">
           <button

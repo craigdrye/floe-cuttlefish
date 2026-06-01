@@ -88,6 +88,7 @@ function App() {
     selectedTrack,
     screen,
     darkMode,
+    floeMode,
     user,
     onboardingAge,
     setShowWelcome,
@@ -109,6 +110,12 @@ function App() {
     document.body.classList.toggle('deep-ocean', darkMode)
     return () => document.body.classList.remove('deep-ocean')
   }, [darkMode])
+
+  useEffect(() => {
+    const active = floeMode && !selectedTrack
+    document.body.classList.toggle('floe-mode-active', active)
+    return () => document.body.classList.remove('floe-mode-active')
+  }, [floeMode, selectedTrack])
 
   useEffect(() => {
     if (!user || user.isGuest || !showWelcome) return

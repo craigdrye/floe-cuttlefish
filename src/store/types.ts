@@ -101,6 +101,7 @@ export interface UISlice {
   mood: Mood
   darkMode: boolean
   focusMode: boolean
+  floeMode: boolean
   pendingStageCelebration: number | null
 
   setShowWelcome: (show: boolean) => void
@@ -114,6 +115,7 @@ export interface UISlice {
   setMood: (mood: Mood) => void
   toggleDarkMode: () => void
   toggleFocusMode: () => void
+  setFloeMode: (enabled: boolean) => void
   setPendingStageCelebration: (stage: number | null) => void
 }
 

@@ -44,6 +44,124 @@ main {
   width: 100%;
 }
 
+/* ═══ FLOE MODE: SOFT CUTTLEFISH COLOR WAVE ═══ */
+
+body.floe-mode-active :is(
+  .audience-panel,
+  .age-drum-outer,
+  .topic-checkbox,
+  .adult-focus-option,
+  .floe-mode-toggle,
+  .hub-launch-panel,
+  .menu-hero-v2,
+  .course-browser-v2,
+  .track-card,
+  .game-category-tabs button,
+  .course-tier-tabs button,
+  .discipline-tabs button,
+  .track-count,
+  .profile-personalization,
+  .stat-card,
+  .profile-onboarding,
+  .profile-recommendations,
+  .profile-achievements,
+  .questionnaire-progress,
+  .questionnaire-options button
+) {
+  background-image:
+    linear-gradient(
+      115deg,
+      rgba(255, 214, 245, 0.22),
+      rgba(190, 242, 255, 0.2),
+      rgba(209, 250, 229, 0.2),
+      rgba(254, 240, 138, 0.16),
+      rgba(224, 231, 255, 0.22),
+      rgba(255, 214, 245, 0.22)
+    );
+  background-size: 360% 360%;
+  animation: floe-pastel-wave 20s ease-in-out infinite alternate;
+}
+
+body.floe-mode-active :is(
+  .audience-panel,
+  .topic-checkbox,
+  .adult-focus-option,
+  .floe-mode-toggle,
+  .hub-launch-panel,
+  .menu-hero-v2,
+  .course-browser-v2,
+  .track-card,
+  .profile-personalization,
+  .stat-card,
+  .profile-onboarding,
+  .profile-recommendations,
+  .profile-achievements,
+  .questionnaire-progress,
+  .questionnaire-options button
+):nth-child(3n + 1) {
+  animation-delay: -4s;
+  animation-duration: 23s;
+}
+
+body.floe-mode-active :is(
+  .audience-panel,
+  .topic-checkbox,
+  .adult-focus-option,
+  .floe-mode-toggle,
+  .hub-launch-panel,
+  .menu-hero-v2,
+  .course-browser-v2,
+  .track-card,
+  .profile-personalization,
+  .stat-card,
+  .profile-onboarding,
+  .profile-recommendations,
+  .profile-achievements,
+  .questionnaire-progress,
+  .questionnaire-options button
+):nth-child(3n + 2) {
+  animation-delay: -9s;
+  animation-duration: 27s;
+}
+
+body.floe-mode-active :is(.topic-checkbox.checked, .adult-focus-option.checked, .course-tier-tabs button.active, .discipline-tabs button.active) {
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.35), 0 8px 22px rgba(31,122,98,0.1);
+}
+
+@keyframes floe-pastel-wave {
+  0% { background-position: 0% 45%; }
+  35% { background-position: 55% 65%; }
+  70% { background-position: 100% 35%; }
+  100% { background-position: 12% 85%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.floe-mode-active :is(
+    .audience-panel,
+    .age-drum-outer,
+    .topic-checkbox,
+    .adult-focus-option,
+    .floe-mode-toggle,
+    .hub-launch-panel,
+    .menu-hero-v2,
+    .course-browser-v2,
+    .track-card,
+    .game-category-tabs button,
+    .course-tier-tabs button,
+    .discipline-tabs button,
+    .track-count,
+    .profile-personalization,
+    .stat-card,
+    .profile-onboarding,
+    .profile-recommendations,
+    .profile-achievements,
+    .questionnaire-progress,
+    .questionnaire-options button
+  ) {
+    animation: none;
+  }
+}
+
 /* ═══ RESPONSIVE ═══ */
 
 @media (max-width: 480px) {
