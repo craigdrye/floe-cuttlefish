@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-06-01T06:52:29.358Z",
+  "generatedAt": "2026-06-01T06:56:31.526Z",
   "summary": {
     "filesScanned": 758,
     "questionsScanned": 56987,
     "extractedQuestionRecords": 57144,
     "skippedNonPlayablePlaceholders": 157,
     "distinctQuestionIds": 38776,
-    "totalIssues": 921,
-    "jsonIssuesStored": 921,
-    "duplicateWhyWrongGroups": 194
+    "totalIssues": 911,
+    "jsonIssuesStored": 911,
+    "duplicateWhyWrongGroups": 193
   },
   "flagCounts": {
-    "repeated-why-wrong": 754,
-    "obvious-irrelevant-distractor": 46,
+    "repeated-why-wrong": 745,
+    "obvious-irrelevant-distractor": 45,
     "meta-distractor": 121
   },
   "scannedFiles": [
@@ -776,76 +776,6 @@
     "src/data/questionCatalog/worldHistoryR2.ts"
   ],
   "duplicateWhyWrongGroups": [
-    {
-      "text": "This option does not match the computing concept or programming-history clue in the prompt.",
-      "count": 27,
-      "examples": [
-        {
-          "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-          "line": 20,
-          "questionId": 360001,
-          "title": "Web Cookies",
-          "chapter": "Computer Systems and the Web",
-          "snippet": "wrong: [[\"Something tasty on a web page\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Something mad..."
-        },
-        {
-          "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-          "line": 20,
-          "questionId": 360001,
-          "title": "Web Cookies",
-          "chapter": "Computer Systems and the Web",
-          "snippet": "wrong: [[\"Something tasty on a web page\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Something mad..."
-        },
-        {
-          "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-          "line": 20,
-          "questionId": 360001,
-          "title": "Web Cookies",
-          "chapter": "Computer Systems and the Web",
-          "snippet": "wrong: [[\"Something tasty on a web page\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Something mad..."
-        },
-        {
-          "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-          "line": 30,
-          "questionId": 360002,
-          "title": "Output Devices",
-          "chapter": "Computer Systems and the Web",
-          "snippet": "wrong: [[\"Printer\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Microphone\",\"This option does not m..."
-        },
-        {
-          "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-          "line": 30,
-          "questionId": 360002,
-          "title": "Output Devices",
-          "chapter": "Computer Systems and the Web",
-          "snippet": "wrong: [[\"Printer\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Microphone\",\"This option does not m..."
-        },
-        {
-          "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-          "line": 30,
-          "questionId": 360002,
-          "title": "Output Devices",
-          "chapter": "Computer Systems and the Web",
-          "snippet": "wrong: [[\"Printer\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Microphone\",\"This option does not m..."
-        },
-        {
-          "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-          "line": 40,
-          "questionId": 360003,
-          "title": "Logic Programming",
-          "chapter": "Programming Languages",
-          "snippet": "wrong: [[\"Erlang\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Lisp\",\"This option does not match th..."
-        },
-        {
-          "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-          "line": 40,
-          "questionId": 360003,
-          "title": "Logic Programming",
-          "chapter": "Programming Languages",
-          "snippet": "wrong: [[\"Erlang\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Lisp\",\"This option does not match th..."
-        }
-      ]
-    },
     {
       "text": "This answer is too large for the setup. It likely repeats a operation step after the final quantity was already found.",
       "count": 15,
@@ -2954,6 +2884,44 @@
           "snippet": "wrong: [[\"-2\",\"-2 is tempting if the magnitude looks familiar, but the sign contradicts the setup that gives 2.\",\"Carry the sign through each line instead of fixing it at the end.\"],[\"8\",\"This goes beyond the requested value. The arithmetic should land at 2..."
         }
       ]
+    },
+    {
+      "text": "2 likely comes from using only part of the given information; finishing the required operation gets to 3.",
+      "count": 4,
+      "examples": [
+        {
+          "file": "src/data/questionCatalog/openSatImported.ts",
+          "line": 709,
+          "questionId": 320090,
+          "title": "Algebra 90",
+          "chapter": "Algebra - Medium",
+          "snippet": "wrong: [[\"2\",\"2 likely comes from using only part of the given information; finishing the required operation gets to 3.\",\"Check whether this is only one component of a larger total.\"],[\"4\",\"4 overshoots 3; it usually appears when the operation is applied on..."
+        },
+        {
+          "file": "src/data/questionCatalog/openSatImported.ts",
+          "line": 1409,
+          "questionId": 320177,
+          "title": "Algebra 177",
+          "chapter": "Algebra - Medium",
+          "snippet": "wrong: [[\"1\",\"1 likely comes from using only part of the given information; finishing the required operation gets to 3.\",\"Ask whether you have used every condition in the prompt.\"],[\"2\",\"2 likely comes from using only part of the given information; finishin..."
+        },
+        {
+          "file": "src/data/questionCatalog/openSatImported.ts",
+          "line": 2599,
+          "questionId": 320325,
+          "title": "Algebra 325",
+          "chapter": "Algebra - Medium",
+          "snippet": "wrong: [[\"2\",\"2 likely comes from using only part of the given information; finishing the required operation gets to 3.\",\"Ask whether you have used every condition in the prompt.\"],[\"4\",\"4 has been inflated past the target 3, often by double-counting the op..."
+        },
+        {
+          "file": "src/data/questionCatalog/openSatImported.ts",
+          "line": 3139,
+          "questionId": 320386,
+          "title": "Algebra 386",
+          "chapter": "Algebra - Medium",
+          "snippet": "wrong: [[\"1\",\"1 is the \\\"almost there\\\" trap: it captures part of the calculation before the final operation is done.\",\"Ask whether you have used every condition in the prompt.\"],[\"2\",\"2 likely comes from using only part of the given information; finishing ..."
+        }
+      ]
     }
   ],
   "examplesByFlag": {
@@ -3376,141 +3344,6 @@
         "value": "This answer is too large for the setup. It likely repeats a operation step after the final quantity was already found.",
         "detail": "Same normalized whyWrong appears 15 times.",
         "snippet": "wrong: [[\"4\",\"4 is the \\\"almost there\\\" trap: it captures part of the calculation before the final operation is done.\",\"Check whether this is only one component of a larger total.\"],[\"6\",\"This undercounts the requested quantity. The setup points past 6 to 8...",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 96,
-        "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-        "line": 20,
-        "questionId": 360001,
-        "title": "Web Cookies",
-        "chapter": "Computer Systems and the Web",
-        "field": "whyWrong",
-        "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-        "detail": "Same normalized whyWrong appears 27 times.",
-        "snippet": "wrong: [[\"Something tasty on a web page\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Something mad...",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 96,
-        "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-        "line": 30,
-        "questionId": 360002,
-        "title": "Output Devices",
-        "chapter": "Computer Systems and the Web",
-        "field": "whyWrong",
-        "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-        "detail": "Same normalized whyWrong appears 27 times.",
-        "snippet": "wrong: [[\"Printer\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Microphone\",\"This option does not m...",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 96,
-        "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-        "line": 40,
-        "questionId": 360003,
-        "title": "Logic Programming",
-        "chapter": "Programming Languages",
-        "field": "whyWrong",
-        "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-        "detail": "Same normalized whyWrong appears 27 times.",
-        "snippet": "wrong: [[\"Erlang\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Lisp\",\"This option does not match th...",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 96,
-        "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-        "line": 50,
-        "questionId": 360004,
-        "title": "The C Programming Language",
-        "chapter": "Programming Languages",
-        "field": "whyWrong",
-        "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-        "detail": "Same normalized whyWrong appears 27 times.",
-        "snippet": "wrong: [[\"DRM\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"MDR\",\"This option does not match the co...",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 96,
-        "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-        "line": 60,
-        "questionId": 360005,
-        "title": "Terabits",
-        "chapter": "Data Representation",
-        "field": "whyWrong",
-        "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-        "detail": "Same normalized whyWrong appears 27 times.",
-        "snippet": "wrong: [[\"1,000\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"10\",\"This option does not match the c...",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 96,
-        "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-        "line": 70,
-        "questionId": 360006,
-        "title": "Fortran",
-        "chapter": "Programming Languages",
-        "field": "whyWrong",
-        "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-        "detail": "Same normalized whyWrong appears 27 times.",
-        "snippet": "wrong: [[\"Cobol\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"BASIC\",\"This option does not match th...",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 96,
-        "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-        "line": 80,
-        "questionId": 360007,
-        "title": "Ada",
-        "chapter": "Programming Languages",
-        "field": "whyWrong",
-        "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-        "detail": "Same normalized whyWrong appears 27 times.",
-        "snippet": "wrong: [[\"Amelia\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Anna\",\"This option does not match th...",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 96,
-        "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-        "line": 90,
-        "questionId": 360008,
-        "title": "C",
-        "chapter": "Programming Languages",
-        "field": "whyWrong",
-        "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-        "detail": "Same normalized whyWrong appears 27 times.",
-        "snippet": "wrong: [[\"E\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"B\",\"This option does not match the comput...",
-        "extractor": "object"
-      },
-      {
-        "flag": "repeated-why-wrong",
-        "label": "Repeated whyWrong",
-        "priority": 96,
-        "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-        "line": 100,
-        "questionId": 360009,
-        "title": "Linear Programming",
-        "chapter": "Algorithms and Optimization",
-        "field": "whyWrong",
-        "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-        "detail": "Same normalized whyWrong appears 27 times.",
-        "snippet": "wrong: [[\"Sir Isaac Barrow\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Sir Isaac Newton\",\"This op...",
         "extractor": "object"
       },
       {
@@ -4757,6 +4590,141 @@
         "detail": "Same normalized whyWrong appears 6 times.",
         "snippet": "miss('5/16', 'You added the bottom numbers, but they should stay the same.', 'When denominators match, keep the bottom and add only the tops.'),",
         "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 90,
+        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 684,
+        "questionId": 7852044,
+        "title": "Synonyms",
+        "chapter": "Vocabulary and Word Meaning",
+        "field": "whyWrong",
+        "value": "Sad is the opposite of happy.",
+        "detail": "Same normalized whyWrong appears 6 times.",
+        "snippet": "miss('sad', 'Sad is the opposite of happy.', 'A synonym means almost the same thing.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 90,
+        "file": "src/data/questionCatalog/col-4th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 699,
+        "questionId": 7852045,
+        "title": "Antonyms",
+        "chapter": "Vocabulary and Word Meaning",
+        "field": "whyWrong",
+        "value": "Old means almost the same as ancient, not the opposite.",
+        "detail": "Same normalized whyWrong appears 6 times.",
+        "snippet": "miss('old', 'Old means almost the same as ancient, not the opposite.', 'An antonym means the opposite.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 90,
+        "file": "src/data/questionCatalog/col-5th-grade-ny-next-genPrim103TopUp.ts",
+        "line": 730,
+        "questionId": 7854047,
+        "title": "Finding an antonym",
+        "chapter": "Vocabulary",
+        "field": "whyWrong",
+        "value": "Old means almost the same as ancient, not the opposite.",
+        "detail": "Same normalized whyWrong appears 6 times.",
+        "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is the opposite, so look for new.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 90,
+        "file": "src/data/questionCatalog/col-5th-grade-reading-and-vocabPrim103TopUp.ts",
+        "line": 773,
+        "questionId": 7835050,
+        "title": "Choosing an antonym",
+        "chapter": "Vocabulary",
+        "field": "whyWrong",
+        "value": "Old means almost the same as ancient, not the opposite.",
+        "detail": "Same normalized whyWrong appears 6 times.",
+        "snippet": "miss('Old', 'Old means almost the same as ancient, not the opposite.', 'An antonym is the opposite, so look for new.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 90,
+        "file": "src/data/questionCatalog/col-algebra-1-ny-next-genHigh103TopUpB.ts",
+        "line": 357,
+        "questionId": 7951521,
+        "title": "Factoring a simple trinomial",
+        "chapter": "Quadratics: Multiplying & factoring",
+        "field": "whyWrong",
+        "value": "These multiply to 12 but add to 8, not 7.",
+        "detail": "Same normalized whyWrong appears 6 times.",
+        "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'The two numbers must multiply to 12 AND add to 7.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 90,
+        "file": "src/data/questionCatalog/col-algebra-basicsHigh103TopUpB.ts",
+        "line": 323,
+        "questionId": 7961519,
+        "title": "Factoring a simple trinomial",
+        "chapter": "Quadratics and polynomials",
+        "field": "whyWrong",
+        "value": "These multiply to 12 but add to 8, not 7.",
+        "detail": "Same normalized whyWrong appears 6 times.",
+        "snippet": "miss('(x + 2)(x + 6)', 'These multiply to 12 but add to 8, not 7.', 'Find two numbers that multiply to 12 and add to 7.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 90,
+        "file": "src/data/questionCatalog/col-arithmeticPrim103TopUp.ts",
+        "line": 307,
+        "questionId": 7816019,
+        "title": "Adding same-bottom fractions",
+        "chapter": "Adding Fractions",
+        "field": "whyWrong",
+        "value": "You added the bottom numbers, but they should stay the same.",
+        "detail": "Same normalized whyWrong appears 6 times.",
+        "snippet": "miss('3/10', 'You added the bottom numbers, but they should stay the same.', 'Keep the bottom the same; only add the tops.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 90,
+        "file": "src/data/questionCatalog/col-early-math-reviewPrim103TopUp.ts",
+        "line": 168,
+        "questionId": 7819010,
+        "title": "Add Two and Three",
+        "chapter": "Addition Within 20",
+        "field": "whyWrong",
+        "value": "That is one more than the right answer.",
+        "detail": "Same normalized whyWrong appears 6 times.",
+        "snippet": "miss('6', 'That is one more than the right answer.', 'Count on from 2: 3, 4, 5.'),",
+        "extractor": "object"
+      },
+      {
+        "flag": "repeated-why-wrong",
+        "label": "Repeated whyWrong",
+        "priority": 90,
+        "file": "src/data/questionCatalog/col-early-math-reviewPrim103TopUp.ts",
+        "line": 261,
+        "questionId": 7819016,
+        "title": "Take Away Two",
+        "chapter": "Subtraction Within 20",
+        "field": "whyWrong",
+        "value": "That is one more than the right answer.",
+        "detail": "Same normalized whyWrong appears 6 times.",
+        "snippet": "miss('4', 'That is one more than the right answer.', 'Take away exactly two from five.'),",
+        "extractor": "object"
       }
     ],
     "obvious-irrelevant-distractor": [
@@ -5203,21 +5171,6 @@
         "value": "Ate breakfast",
         "detail": "Distractor looks unrelated to the prompt context (token overlap 100%).",
         "snippet": "miss('Ate breakfast', 'Eating breakfast came after waking up.', 'The first thing happens before everything else.'),",
-        "extractor": "object"
-      },
-      {
-        "flag": "obvious-irrelevant-distractor",
-        "label": "Obvious irrelevant distractor",
-        "priority": 78,
-        "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-        "line": 30,
-        "questionId": 360002,
-        "title": "Output Devices",
-        "chapter": "Computer Systems and the Web",
-        "field": "distractor",
-        "value": "Printer",
-        "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-        "snippet": "wrong: [[\"Printer\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Microphone\",\"This option does not m...",
         "extractor": "object"
       },
       {
@@ -7641,141 +7594,6 @@
       "value": "This answer is too large for the setup. It likely repeats a operation step after the final quantity was already found.",
       "detail": "Same normalized whyWrong appears 15 times.",
       "snippet": "wrong: [[\"4\",\"4 is the \\\"almost there\\\" trap: it captures part of the calculation before the final operation is done.\",\"Check whether this is only one component of a larger total.\"],[\"6\",\"This undercounts the requested quantity. The setup points past 6 to 8...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 96,
-      "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-      "line": 20,
-      "questionId": 360001,
-      "title": "Web Cookies",
-      "chapter": "Computer Systems and the Web",
-      "field": "whyWrong",
-      "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-      "detail": "Same normalized whyWrong appears 27 times.",
-      "snippet": "wrong: [[\"Something tasty on a web page\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Something mad...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 96,
-      "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-      "line": 30,
-      "questionId": 360002,
-      "title": "Output Devices",
-      "chapter": "Computer Systems and the Web",
-      "field": "whyWrong",
-      "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-      "detail": "Same normalized whyWrong appears 27 times.",
-      "snippet": "wrong: [[\"Printer\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Microphone\",\"This option does not m...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 96,
-      "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-      "line": 40,
-      "questionId": 360003,
-      "title": "Logic Programming",
-      "chapter": "Programming Languages",
-      "field": "whyWrong",
-      "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-      "detail": "Same normalized whyWrong appears 27 times.",
-      "snippet": "wrong: [[\"Erlang\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Lisp\",\"This option does not match th...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 96,
-      "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-      "line": 50,
-      "questionId": 360004,
-      "title": "The C Programming Language",
-      "chapter": "Programming Languages",
-      "field": "whyWrong",
-      "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-      "detail": "Same normalized whyWrong appears 27 times.",
-      "snippet": "wrong: [[\"DRM\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"MDR\",\"This option does not match the co...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 96,
-      "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-      "line": 60,
-      "questionId": 360005,
-      "title": "Terabits",
-      "chapter": "Data Representation",
-      "field": "whyWrong",
-      "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-      "detail": "Same normalized whyWrong appears 27 times.",
-      "snippet": "wrong: [[\"1,000\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"10\",\"This option does not match the c...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 96,
-      "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-      "line": 70,
-      "questionId": 360006,
-      "title": "Fortran",
-      "chapter": "Programming Languages",
-      "field": "whyWrong",
-      "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-      "detail": "Same normalized whyWrong appears 27 times.",
-      "snippet": "wrong: [[\"Cobol\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"BASIC\",\"This option does not match th...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 96,
-      "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-      "line": 80,
-      "questionId": 360007,
-      "title": "Ada",
-      "chapter": "Programming Languages",
-      "field": "whyWrong",
-      "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-      "detail": "Same normalized whyWrong appears 27 times.",
-      "snippet": "wrong: [[\"Amelia\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Anna\",\"This option does not match th...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 96,
-      "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-      "line": 90,
-      "questionId": 360008,
-      "title": "C",
-      "chapter": "Programming Languages",
-      "field": "whyWrong",
-      "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-      "detail": "Same normalized whyWrong appears 27 times.",
-      "snippet": "wrong: [[\"E\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"B\",\"This option does not match the comput...",
-      "extractor": "object"
-    },
-    {
-      "flag": "repeated-why-wrong",
-      "label": "Repeated whyWrong",
-      "priority": 96,
-      "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-      "line": 100,
-      "questionId": 360009,
-      "title": "Linear Programming",
-      "chapter": "Algorithms and Optimization",
-      "field": "whyWrong",
-      "value": "This option does not match the computing concept or programming-history clue in the prompt.",
-      "detail": "Same normalized whyWrong appears 27 times.",
-      "snippet": "wrong: [[\"Sir Isaac Barrow\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Sir Isaac Newton\",\"This op...",
       "extractor": "object"
     },
     {
@@ -18946,21 +18764,6 @@
       "value": "Ate breakfast",
       "detail": "Distractor looks unrelated to the prompt context (token overlap 100%).",
       "snippet": "miss('Ate breakfast', 'Eating breakfast came after waking up.', 'The first thing happens before everything else.'),",
-      "extractor": "object"
-    },
-    {
-      "flag": "obvious-irrelevant-distractor",
-      "label": "Obvious irrelevant distractor",
-      "priority": 78,
-      "file": "src/data/questionCatalog/openTriviaApcsExtensionImported.ts",
-      "line": 30,
-      "questionId": 360002,
-      "title": "Output Devices",
-      "chapter": "Computer Systems and the Web",
-      "field": "distractor",
-      "value": "Printer",
-      "detail": "Distractor looks unrelated to the prompt context (token overlap 0%).",
-      "snippet": "wrong: [[\"Printer\",\"This option does not match the computing concept or programming-history clue in the prompt.\",\"Identify whether the question is about web state, devices, programming languages, units, or algorithms.\"],[\"Microphone\",\"This option does not m...",
       "extractor": "object"
     },
     {

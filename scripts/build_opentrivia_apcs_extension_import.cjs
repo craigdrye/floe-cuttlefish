@@ -40,6 +40,15 @@ function normalizeText(value, sourceId) {
   if (sourceId === 'opentriviaqa::science-technology::1057') {
     text = text.replace('by BWK and what other computer scientist?', 'by Brian Kernighan and what other computer scientist?')
   }
+  if (sourceId === 'opentriviaqa::science-technology::1001') {
+    text = text.replace(
+      'Which of these is an output device that produces audible sound?',
+      'Which output device produces audible sound rather than printed pages or visual display?'
+    )
+    if (text === 'Printer') return 'A printer for paper output'
+    if (text === 'Monitor') return 'A monitor for visual output'
+    if (text === 'Microphone') return 'A microphone for audio input'
+  }
   if (sourceId === 'opentriviaqa::science-technology::1296') {
     text = text.replace('Many computer drives have a capacity of a terabit. How many bits are in one terabit?', 'How many bits are in one terabit?')
   }
@@ -52,6 +61,8 @@ function normalizeText(value, sourceId) {
 function wrongChoices(item) {
   const correct = normalizeText(item.correct_answer, item.source_id).toLowerCase()
   const seen = new Set([correct])
+  const chapter = chapterForItem(item)
+  const correctAnswer = normalizeText(item.correct_answer, item.source_id)
   return item.answer_choices
     .map((choice) => normalizeText(choice, item.source_id))
     .filter(Boolean)
@@ -61,11 +72,48 @@ function wrongChoices(item) {
       seen.add(key)
       return true
     })
-    .map((choice) => [
-      choice,
-      'This option does not match the computing concept or programming-history clue in the prompt.',
-      'Identify whether the question is about web state, devices, programming languages, units, or algorithms.',
-    ])
+    .map((choice) => {
+      if (chapter === 'Computer Systems and the Web') {
+        return [
+          choice,
+          `${choice} is a computing-related answer, but the prompt is asking for ${correctAnswer}: ${systemConcept(item, correctAnswer)}.`,
+          'Ask whether the clue is about input, output, stored web state, or how a device/program is used.',
+        ]
+      }
+      if (chapter === 'Programming Languages') {
+        return [
+          choice,
+          `${choice} is near the programming-language world, but this clue points to ${correctAnswer}, not that language or name.`,
+          'Use the historical clue, language feature, or exact naming clue before choosing.',
+        ]
+      }
+      if (chapter === 'Data Representation') {
+        return [
+          choice,
+          `${choice} misses the scale: tera means a trillion in this AP CS-style unit clue.`,
+          'For bits and storage prefixes, check the magnitude before picking a familiar smaller number.',
+        ]
+      }
+      if (chapter === 'Algorithms and Optimization') {
+        return [
+          choice,
+          `${choice} is a famous thinker, but not the optimization figure tied to linear programming here.`,
+          'Match the person to the algorithm or method named in the prompt, not just to mathematics generally.',
+        ]
+      }
+      return [
+        choice,
+        `${choice} is a nearby computing answer, but the clue is specifically asking for ${correctAnswer}.`,
+        'Identify whether the question is about web state, devices, programming languages, units, or algorithms.',
+      ]
+    })
+}
+
+function systemConcept(item, answer) {
+  const context = `${item.prompt_text} ${answer}`.toLowerCase()
+  if (/cookie/i.test(context)) return 'a small bit of client-side state saved by a web page'
+  if (/speaker/i.test(answer)) return 'an output device that turns digital audio into sound'
+  return 'the specific computing concept described by the clue'
 }
 
 function chapterForItem(item) {
@@ -77,14 +125,37 @@ function chapterForItem(item) {
   return 'AP Computer Science Foundations'
 }
 
+function lessonForItem(item) {
+  const chapter = chapterForItem(item)
+  if (chapter === 'Computer Systems and the Web') {
+    return 'Computer-system questions usually ask what role a tool plays: input, output, storage, or web state. A cookie is saved by a site on the client side; a speaker is output because it produces sound.'
+  }
+  if (chapter === 'Programming Languages') {
+    return 'Programming-language history questions hinge on the exact clue: a language paradigm, the people behind a language, or a name shared with a language. Nearby languages can be plausible without matching that clue.'
+  }
+  if (chapter === 'Data Representation') {
+    return 'Data-size questions are place-value questions in computer clothing. A terabit is one trillion bits, so do the prefix scale first before worrying about bytes or devices.'
+  }
+  if (chapter === 'Algorithms and Optimization') {
+    return 'Linear programming is an optimization method for systems of linear constraints. The historical clue points to George Dantzig, whose simplex method made the field practical.'
+  }
+  return 'Use the computing clue to decide whether the question is about a device role, web state, programming-language history, data representation, or optimization.'
+}
+
 function buildOutput(items) {
   const lines = [
     "import { makeQuestionBank } from './base'",
+    "import { polish as runPolish } from './polishPipeline'",
+    "import {",
+    "  OPEN_TRIVIA_WAVE20_SUB_TOPICS,",
+    "  OPEN_TRIVIA_WAVE20_MENTOR_HINTS,",
+    "  OPEN_TRIVIA_WAVE20_CORRECT_SHORTENED,",
+    "} from './openTriviaWave20Polish'",
     '',
     '// Generated by scripts/build_opentrivia_apcs_extension_import.cjs.',
     '// Manual allowlist: durable AP Computer Science concept/history rows only.',
     '',
-    "export const openTriviaApcsExtensionQuestions = makeQuestionBank('AP', [",
+    "const _baseOpenTriviaApcsExtensionQuestions = makeQuestionBank('AP', [",
   ]
 
   items.forEach((item, index) => {
@@ -98,10 +169,19 @@ function buildOutput(items) {
     lines.push(`    prompt: ${JSON.stringify(normalizeText(item.prompt_text, item.source_id))},`)
     lines.push(`    correct: ${JSON.stringify(normalizeText(item.correct_answer, item.source_id))},`)
     lines.push(`    wrong: ${JSON.stringify(wrong)},`)
-    lines.push(`    lesson: ${JSON.stringify(`Source: OpenTriviaQA (${item.source_id}). Included in the reviewed AP Computer Science extension micro-batch.`)},`)
+    lines.push(`    lesson: ${JSON.stringify(lessonForItem(item))},`)
     lines.push('  },')
   })
 
+  lines.push('])')
+  lines.push('')
+  lines.push('export const openTriviaApcsExtensionQuestions = runPolish(_baseOpenTriviaApcsExtensionQuestions, [')
+  lines.push('  {')
+  lines.push('    subTopics: OPEN_TRIVIA_WAVE20_SUB_TOPICS,')
+  lines.push('    mentorHints: OPEN_TRIVIA_WAVE20_MENTOR_HINTS,')
+  lines.push('    correctShortened: OPEN_TRIVIA_WAVE20_CORRECT_SHORTENED,')
+  lines.push("    source: 'openTriviaWave20',")
+  lines.push('  },')
   lines.push('])')
   lines.push('')
   return lines.join('\n')
