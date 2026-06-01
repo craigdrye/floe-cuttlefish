@@ -109,7 +109,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       'A rare disease affects 1 in 1000 people. A screening test is 99% accurate in a broad healthy population. Why should a positive result still be interpreted carefully?',
       'Because low pretest probability can make false positives a large share of positive results',
       [
-        ['Because accuracy numbers are never useful', 'Accuracy is useful but does not eliminate base-rate effects.'],
+        ['Because 99% accuracy guarantees that almost every positive result is a true case', 'High accuracy sounds reassuring, but with a rare disease the false positives from the large healthy group can still outnumber true positives.'],
         ['Because rare diseases become common after one positive test', 'Disease prevalence does not change because of a test result.'],
         ['Because a positive screening result means treatment must start without review', 'Screening positives typically warrant confirmation before treatment.'],
       ],
@@ -254,7 +254,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       'A traceability matrix linking user needs, requirements, tests, risks, and evidence',
       [
         ['A folder named "final_FINAL_really_final"', 'Folder naming does not provide traceability.'],
-        ['A screenshot of a hallway conversation', 'Informal artifacts do not satisfy reviewer evidence needs.'],
+        ['A meeting note saying the team agreed, without linking the requirement to evidence', 'Agreement can explain a decision, but traceability needs a documented link from the requirement to risks, tests, and supporting evidence.'],
         ['A spreadsheet with columns but no source references', 'Columns without source references cannot support reconstruction.'],
       ],
       'Traceability shows how requirements connect to risks, verification, validation, and decisions. It lets another reviewer reconstruct the logic.'),
@@ -309,7 +309,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       [
         ['Argue that documentation is boring', 'Arguing against documentation requirements escalates the finding.'],
         ['Invent a rationale after the fact and pretend it was there', 'Post-hoc fabrication can elevate a finding into a serious enforcement issue.'],
-        ['Blame the printer and sprint away', 'Blame deflection without correction does not satisfy inspectors.'],
+        ['Say the complaint was low-risk, but provide no evidence of the risk assessment', 'A low-risk conclusion still needs a documented rationale; unsupported reassurance does not answer the inspector\'s concern.'],
       ],
       'Inspection responses should be factual, transparent, and corrective. Unsupported excuses can deepen regulatory concern.'),
     q(4260511, 'Regulatory', 'Change Control and Post-Market Duties', 'Complaint signal',
@@ -543,7 +543,7 @@ const careerAgentGeneratedAppliedBaseQuestionsByTrack: Record<string, Question[]
       [
         ['Tell every site to hurry without naming blockers', 'Generic urgency without diagnostics does not unblock startup.'],
         ['Start enrollment before approvals because timelines are itchy', 'Enrollment before required approvals is a serious protocol violation.'],
-        ['Focus only on the site with the nicest logo', 'Logo aesthetics do not predict startup readiness.'],
+        ['Rank sites only by expected enrollment volume and ignore missing approvals or shipments', 'High enrollment potential matters later, but a site cannot start until required approvals, training, contracts, and supplies are ready.'],
       ],
       'Startup bottlenecks are dependency problems. Coordinators need visibility into required steps, blockers, and sequence before enrollment can start.'),
   ],
