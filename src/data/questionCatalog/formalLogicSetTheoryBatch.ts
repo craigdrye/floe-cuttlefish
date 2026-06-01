@@ -2,6 +2,25 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/sets/i.test(chapter)) {
+    return `${title} is a set-language idea. The useful answer is "${correct}"; track membership carefully and ask whether the operation is collecting, overlapping, removing, counting, or taking all subsets.`
+  }
+  if (/relations/i.test(chapter)) {
+    return `${title} is about structure between objects. The useful answer is "${correct}"; relations are sets of ordered pairs, and properties like reflexive, symmetric, and transitive describe how those pairs behave.`
+  }
+  if (/functions/i.test(chapter)) {
+    return `${title} is about mapping inputs to outputs. The useful answer is "${correct}"; first check whether each input has exactly one output, then ask whether outputs collide, are all covered, or can be reversed.`
+  }
+  if (/proof/i.test(chapter)) {
+    return `${title} is a proof-method idea. The useful answer is "${correct}"; choose the proof shape that matches the claim, such as direct proof, contradiction, contrapositive, counterexample, or induction.`
+  }
+  if (/logic and sets/i.test(chapter)) {
+    return `${title} connects logical form with set language. The useful answer is "${correct}"; negating quantifiers swaps all with exists, and De Morgan laws swap union with intersection under complement.`
+  }
+  return `${title} is a formal-logic concept. The useful answer is "${correct}"; translate the notation into plain membership, mapping, relation, or proof language before choosing.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +35,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: Open Logic Project sets/relations/functions and proof-method chapters. This is an authored Floe-native conversion item, not a direct exercise import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Open Logic Project/OER set theory and proof coverage',
 })
 
@@ -134,7 +152,7 @@ export const formalLogicSetTheoryBatchQuestions = makeQuestionBank('University',
   ]),
   q(461023, 'Proof Methods', 'Direct proof', 'A direct proof typically starts from:', 'The assumptions (premises) and derives the conclusion step by step', [
     miss('The negation of the conclusion', 'That is proof by contradiction.', 'Direct proof uses givens directly.'),
-    miss('A random example only', 'Examples can guide, but proof must be general.', 'Derive logically.'),
+    miss('One convenient example treated as if it proves every case', 'Examples can guide, but a proof must cover the general claim.', 'Derive logically.'),
     miss('The conclusion and works backward without justification', 'Working backward can be a strategy, but proof needs justified steps.', 'Use premises to conclusion.'),
   ]),
   q(461024, 'Proof Methods', 'Proof by contradiction', 'A proof by contradiction works by assuming:', 'The negation of the conclusion and deriving a contradiction', [
@@ -149,7 +167,7 @@ export const formalLogicSetTheoryBatchQuestions = makeQuestionBank('University',
   ]),
   q(461026, 'Proof Methods', 'Counterexample', 'To show a universal claim "For all x, P(x)" is false, you need:', 'One counterexample where P(x) fails', [
     miss('A proof that P(x) holds for one x', 'One true instance does not prove a universal.', 'Universals fail by one counterexample.'),
-    miss('A list of 100 random cases', 'A single failing case is enough.', 'One counterexample suffices.'),
+    miss('A long list of cases that all happen to satisfy P(x)', 'Supporting examples do not refute a universal claim; one failing case does.', 'One counterexample suffices.'),
     miss('An argument that the claim sounds wrong', 'Intuition is not a counterexample.', 'Produce a specific x.'),
   ]),
   q(461027, 'Logic and Sets', 'Negating a universal', 'The negation of "For all x, P(x)" is:', 'There exists an x such that not P(x)', [
@@ -170,7 +188,6 @@ export const formalLogicSetTheoryBatchQuestions = makeQuestionBank('University',
   q(461030, 'Proof Methods', 'Induction idea', 'Mathematical induction is typically used to prove statements about:', 'All natural numbers (or all integers from a starting point)', [
     miss('Only one specific number', 'Induction is for infinitely many cases.', 'Base case + step.'),
     miss('Only real numbers with no ordering', 'Induction relies on successor structure.', 'Use N-style progression.'),
-    miss('Only random samples of integers', 'Induction is not sampling.', 'Prove base, then step.'),
+    miss('Only a few sampled integers that look like the pattern continues', 'Induction is proof over a successor chain, not statistical sampling.', 'Prove base, then step.'),
   ]),
 ])
-
