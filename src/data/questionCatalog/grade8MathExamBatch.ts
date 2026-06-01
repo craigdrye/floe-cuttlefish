@@ -3,6 +3,25 @@ import type { Question } from './types'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/linear equations|systems/i.test(chapter)) {
+    return `${title} is about undoing operations in a clean order. The useful answer is "${correct}"; isolate the variable and keep track of which variable the question asks for.`
+  }
+  if (/functions|slope/i.test(chapter)) {
+    return `${title} is about reading a rule or line relationship. The useful answer is "${correct}"; substitute the input carefully or compare rise over run for slope.`
+  }
+  if (/pythagorean|geometry/i.test(chapter)) {
+    return `${title} is about matching a shape to its formula. The useful answer is "${correct}"; square side lengths for right triangles or use base area times height for volume.`
+  }
+  if (/exponents|scientific notation/i.test(chapter)) {
+    return `${title} is about compact ways to write repeated multiplication and large numbers. The useful answer is "${correct}"; keep the base, exponent rule, and normalized coefficient straight.`
+  }
+  if (/statistics/i.test(chapter)) {
+    return `${title} is about summarizing data. The useful answer is "${correct}"; decide whether you need a fair-share average, a spread, or a pattern in the values.`
+  }
+  return `${title} is a Grade 8 math skill. The useful answer is "${correct}"; name the structure, then use the rule that fits it.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -24,8 +43,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson: extra.lesson ??
-    'Coverage source: NYSED and STAAR Grade 8 math raw collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: extra.lesson ?? lessonFor(chapter, title, correct),
   solution: extra.solution,
   mentorHint: extra.mentorHint,
   alternatePrompts: extra.alternatePrompts,

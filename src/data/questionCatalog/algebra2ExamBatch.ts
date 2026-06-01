@@ -3,6 +3,31 @@ import type { Question } from './types'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/function structure|transformation/i.test(chapter)) {
+    return `${title} is about how functions are built and changed. The useful answer is "${correct}"; follow the order of operations, inner-before-outer composition, and shifts outside or inside the function.`
+  }
+  if (/quadratics|complex/i.test(chapter)) {
+    return `${title} is about algebraic structure beyond real-number factoring. The useful answer is "${correct}"; track signs, powers, and definitions like i squared carefully.`
+  }
+  if (/exponential|logarithmic/i.test(chapter)) {
+    return `${title} is about turning multiplication patterns into exponent questions. The useful answer is "${correct}"; ask what power creates the value, or rewrite both sides with the same base.`
+  }
+  if (/rational|radical/i.test(chapter)) {
+    return `${title} is about expression restrictions. The useful answer is "${correct}"; find where a denominator would become zero or where a radical rule changes the allowed values.`
+  }
+  if (/polynomial/i.test(chapter)) {
+    return `${title} is about evaluating or factoring polynomial structure. The useful answer is "${correct}"; use the theorem or identity directly instead of only looking at the constant term.`
+  }
+  if (/sequences|series/i.test(chapter)) {
+    return `${title} is about repeated patterns. The useful answer is "${correct}"; compare consecutive terms to decide whether the pattern is adding or multiplying.`
+  }
+  if (/probability|statistics/i.test(chapter)) {
+    return `${title} is about using the right probability relationship. The useful answer is "${correct}"; decide whether the situation asks for both events, either event, or a conditional change.`
+  }
+  return `${title} is an Algebra 2 skill. The useful answer is "${correct}"; identify the structure first, then use the matching algebra rule.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -24,8 +49,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson: extra.lesson ??
-    'Coverage source: NYSED Algebra II, STAAR advanced algebra-aligned, and OER algebra collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: extra.lesson ?? lessonFor(chapter, title, correct),
   solution: extra.solution,
   mentorHint: extra.mentorHint,
   alternatePrompts: extra.alternatePrompts,
