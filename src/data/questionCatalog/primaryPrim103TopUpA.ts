@@ -213,7 +213,7 @@ export const primaryPrim103TopUpAQuestions: Question[] = makeQuestionBank('Prima
     correct: 'Metres',
     wrong: [
       miss('Litres', 'Litres measure how much liquid fits in something.', 'You need a unit for length, not for liquid.'),
-      miss('Kilograms', 'Kilograms measures mass or weight, not the quantity named in this prompt.', 'Height is about length, not weight.'),
+      miss('Kilograms', 'Kilograms are for weight; a door’s height needs a length unit such as metres.', 'Height is about length, not weight.'),
       miss('Seconds', 'Seconds measure time, not how tall something is.', 'Pick a unit that measures length.'),
     ],
     lesson: 'We measure length and height with units like centimetres and metres. A door is about two metres tall. Litres measure liquid, kilograms measure weight, and seconds measure time.',

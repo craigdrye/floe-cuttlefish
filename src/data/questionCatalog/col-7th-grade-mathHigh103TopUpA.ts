@@ -121,7 +121,7 @@ export const col7thGradeMathHigh103TopUpAQuestions: Question[] = makeQuestionBan
     correct: '42',
     wrong: [
       miss('-42', 'The sign is wrong; a negative times a negative is positive.', 'Two negatives multiplied give a positive.'),
-      miss('-13', 'This adds the numbers instead of multiplying them.', 'You need a product, not a sum.'),
+      miss('-13', 'This combines 6 and 7 by addition; the expression asks for a product and then a sign rule.', 'You need a product, not a sum.'),
       miss('13', 'This adds and also uses the wrong sign.', 'Multiply 6 by 7 and apply the sign rule.'),
     ],
     lesson: 'When two numbers have the same sign, their product is positive. Since 6 x 7 = 42 and both factors are negative, (-6) x (-7) = 42.',

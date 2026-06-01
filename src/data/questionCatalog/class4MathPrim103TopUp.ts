@@ -378,7 +378,7 @@ export const class4MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: 'Even',
     wrong: [
       miss('Odd', 'A number is odd only if it ends in 1, 3, 5, 7, or 9.', 'Look at the last digit to decide.'),
-      miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Check the ones digit of the number.'),
+      miss('Neither', 'Whole numbers are not outside the even/odd system; 46 ends in 6, which is even.', 'Check the ones digit of the number.'),
       miss('Both', 'A number cannot be both even and odd.', 'A number has just one of these two labels.'),
     ],
     lesson: 'A number is even if it ends in 0, 2, 4, 6, or 8. The number 46 ends in 6, so it is even.',

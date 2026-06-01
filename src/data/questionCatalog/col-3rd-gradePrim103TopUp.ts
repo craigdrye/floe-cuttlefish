@@ -364,7 +364,7 @@ export const col3rdGradePrim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'How many minutes are there in one hour?',
     correct: '60',
     wrong: [
-      miss('100', '100 treats time like a base-100 measure, but an hour has 60 minutes.', 'Think about the numbers around a clock face.'),
+      miss('100', 'Money and centimetres often use 100, but clock time uses 60 minutes in an hour.', 'Think about the numbers around a clock face.'),
       miss('24', 'That is how many hours are in a day, not minutes in an hour.', 'Minutes in an hour is a bigger number.'),
       miss('30', 'That is only half an hour.', 'A full hour is twice that many minutes.'),
     ],
@@ -381,7 +381,7 @@ export const col3rdGradePrim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     wrong: [
       miss('Kilometers', 'Kilometers measure long distances, like between towns.', 'A pencil is small, so use a small unit.'),
       miss('Liters', 'Liters measure how much liquid fits in something.', 'You need a unit for length, not for liquid.'),
-      miss('Kilograms', 'Kilograms measures mass or weight, not the quantity named in this prompt.', 'You want to measure length, not weight.'),
+      miss('Kilograms', 'Kilograms tell how heavy something is; a pencil length needs a unit like centimetres.', 'You want to measure length, not weight.'),
     ],
     lesson: 'We pick units that fit the size of the object. A pencil is short, so centimeters work well. Kilometers are for long distances, liters are for liquids, and kilograms are for weight.',
     source,

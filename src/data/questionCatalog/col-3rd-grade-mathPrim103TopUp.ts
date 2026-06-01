@@ -846,7 +846,7 @@ export const col3rdGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     correct: 'Even',
     wrong: [
       miss('Odd', 'An odd number ends in 1, 3, 5, 7, or 9; 14 ends in 4.', 'Numbers that split into two equal groups are even.'),
-      miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'Check if it can split into two equal groups.'),
+      miss('Neither', 'A whole number like 14 must be even or odd; the ending digit 4 tells you it is even.', 'Check if it can split into two equal groups.'),
       miss('Both', 'A number cannot be even and odd at the same time.', 'Look at the last digit to decide.'),
     ],
     lesson: 'An even number can be split into two equal groups and ends in 0, 2, 4, 6, or 8. Since 14 ends in 4, it is even.',

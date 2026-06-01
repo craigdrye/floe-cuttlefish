@@ -247,7 +247,7 @@ export const naplanYear3Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     correct: 'Metres',
     wrong: [
       miss('Litres', 'Litres measure how much liquid fits in something, not length.', 'We need a unit for distance or height.'),
-      miss('Kilograms', 'Kilograms measures mass or weight, not the quantity named in this prompt.', 'Height is about how long, not how heavy.'),
+      miss('Kilograms', 'Kilograms would describe how heavy the door is, not how tall it is.', 'Height is about how long, not how heavy.'),
       miss('Hours', 'Hours measure time, not height.', 'Pick a unit that measures distance.'),
     ],
     lesson: 'A door is about 2 metres tall, so metres are the best unit. We use metres for longer lengths like doors and rooms, and centimetres for shorter ones like pencils.',
@@ -308,7 +308,7 @@ export const naplanYear3Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'How many minutes are in 1 hour?',
     correct: '60',
     wrong: [
-      miss('100', '100 treats time like a base-100 measure, but an hour has 60 minutes.', 'A clock face goes up to 60 minutes.'),
+      miss('100', 'This uses a hundred chart idea, but clocks count minutes in groups of 60.', 'A clock face goes up to 60 minutes.'),
       miss('30', '30 minutes is only half an hour.', 'A whole hour is double 30 minutes.'),
       miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'Count the minute marks around a clock.'),
     ],

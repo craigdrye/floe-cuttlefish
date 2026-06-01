@@ -790,7 +790,7 @@ export const colGetReadyFor3rdGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Which word in this sentence is a noun: The dog ran fast?',
     correct: 'dog',
     wrong: [
-      miss('ran', 'ran is something someone does, so it points to a verb instead of the requested word type.', 'A noun names a person, place, animal, or thing.'),
+      miss('ran', 'Ran is the action word; dog is the word that names an animal.', 'A noun names a person, place, animal, or thing.'),
       miss('fast', 'Fast tells how the dog ran, so it is not a noun.', 'Find the word that names an animal or thing.'),
       miss('the', 'The is a little helper word, not a noun.', 'Look for the word that names something.'),
     ],

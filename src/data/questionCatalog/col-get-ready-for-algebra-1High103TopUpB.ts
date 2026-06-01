@@ -75,7 +75,7 @@ export const colGetReadyForAlgebra1High103TopUpBQuestions: Question[] = makeQues
     correct: '42',
     wrong: [
       miss('-42', 'This applies a single-negative sign rule; two negatives make a positive.', 'A negative times a negative is positive.'),
-      miss('-13', 'This adds the numbers instead of multiplying them.', 'The operation is multiplication, not addition.'),
+      miss('-13', 'This uses 7 + 6 and keeps a negative sign, but multiplication needs 7 x 6 first.', 'The operation is multiplication, not addition.'),
       miss('13', 'This adds the sizes and uses the wrong operation entirely.', 'Multiply 7 by 6, then decide the sign from the two negatives.'),
     ],
     lesson: 'When multiplying, two negative factors produce a positive product. So (−7) × (−6) = +42. A useful pattern: an even number of negative factors gives a positive result, while an odd number gives a negative result.',

@@ -682,7 +682,7 @@ export const class2MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('Odd', 'Eight can be split into two equal groups, so it is even.', 'Even numbers share fairly into two equal groups.'),
       miss('Both even and odd', 'A number is either even or odd, not both.', 'Check if 8 splits into two equal groups.'),
-      miss('Neither', 'Neither is still part of the even-or-odd number family; check the ones digit instead.', 'See if 8 can be shared into two equal groups.'),
+      miss('Neither', 'Every whole number gets one of the two labels; 8 splits into equal groups, so it is even.', 'See if 8 can be shared into two equal groups.'),
     ],
     lesson: 'An even number can be shared into two equal groups with none left over. 8 splits into 4 and 4, so it is even. Even numbers end in 0, 2, 4, 6, or 8.',
     source,

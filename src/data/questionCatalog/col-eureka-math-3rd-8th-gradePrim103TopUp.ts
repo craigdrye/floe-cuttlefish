@@ -45,7 +45,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     wrong: [
       miss('4 remainder 0', 'Four fives make 20, which is more than 17.', 'Five fits into 17 only three full times.'),
       miss('3 remainder 1', 'After taking out 15, you have 2 left, not 1.', 'Count what is left: 17 minus 15 equals 2.'),
-      miss('2 remainder 7', '2 remainder 7 leaves too much behind; a valid remainder must be smaller than the divisor.', 'Keep taking out fives until fewer than 5 are left.'),
+      miss('2 remainder 7', 'Leaving 7 behind means there is still at least one full group of 5 left to remove.', 'Keep taking out fives until fewer than 5 are left.'),
     ],
     lesson: 'Five goes into 17 three times because 5 times 3 equals 15. That leaves 17 minus 15, which is 2. So the answer is 3 remainder 2.',
     source,

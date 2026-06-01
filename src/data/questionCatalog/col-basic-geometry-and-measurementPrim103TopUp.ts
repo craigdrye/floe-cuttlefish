@@ -636,7 +636,7 @@ export const colBasicGeometryAndMeasurementPrim103TopUpQuestions: Question[] = m
     prompt: 'How many minutes are there in 1 hour?',
     correct: '60',
     wrong: [
-      miss('100', '100 treats time like a base-100 measure, but an hour has 60 minutes.', 'Look at a clock face; it goes up to 60.'),
+      miss('100', 'A clock does not reset at 100 minutes; one full hour is 60 minutes.', 'Look at a clock face; it goes up to 60.'),
       miss('30', 'Thirty minutes is only half an hour.', 'A whole hour is twice 30 minutes.'),
       miss('24', '24 belongs to hours in a day; minutes in an hour use 60.', 'A clock face is divided into 60 minutes.'),
     ],

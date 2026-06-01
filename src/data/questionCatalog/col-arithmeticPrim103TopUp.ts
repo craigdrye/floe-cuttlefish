@@ -137,7 +137,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     wrong: [
       miss('82', 'You forgot to carry from 3 x 4.', 'The ones 3 x 4 = 12, so a ten carries over.'),
       miss('812', 'You wrote the parts side by side instead of adding them.', 'Carry the ten from 12 into the tens column.'),
-      miss('27', '27 is 23 plus 4, but the prompt asks for four groups of 23.', 'Four groups of 23, not 23 plus 4.'),
+      miss('27', 'This answers 23 + 4; multiplication asks for 4 equal groups of 23.', 'Four groups of 23, not 23 plus 4.'),
     ],
     lesson: 'Break it up: 23 x 4 means 20 x 4 = 80 and 3 x 4 = 12. Add them: 80 + 12 = 92. Splitting a number into tens and ones makes multiplying much easier.',
     source,
@@ -167,7 +167,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     correct: '3 remainder 2',
     wrong: [
       miss('3 remainder 1', 'The leftover amount is not quite right.', 'After 5 x 3 = 15, count what is left over to 17.'),
-      miss('2 remainder 7', '2 remainder 7 leaves too much behind; a valid remainder must be smaller than the divisor.', 'You can fit another group of 5 before stopping.'),
+      miss('2 remainder 7', 'If 7 is left over, another group of 5 can still fit, so the quotient stopped too soon.', 'You can fit another group of 5 before stopping.'),
       miss('4 remainder 0', 'Four fives make 20, which is too many.', 'Five times 3 is 15, the closest without going over 17.'),
     ],
     lesson: '17 divided by 5 asks how many fives fit into 17. Three fives make 15, and that leaves 2 left over. So the answer is 3 remainder 2. The remainder must be smaller than 5.',
@@ -304,7 +304,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     prompt: 'What is 1/5 + 2/5?',
     correct: '3/5',
     wrong: [
-      miss('3/10', '3/10 changes the denominator; when the bottoms already match, keep that bottom and add only the tops.', 'Keep the bottom the same; only add the tops.'),
+      miss('3/10', 'The numerator 3 is right, but the denominator should stay 5 because both pieces are fifths.', 'Keep the bottom the same; only add the tops.'),
       miss('2/5', 'You only counted one of the parts.', 'Add the tops: 1 + 2 = 3.'),
       miss('3/25', 'You multiplied the bottoms instead of keeping them.', 'The bottom stays 5 when both fractions are fifths.'),
     ],

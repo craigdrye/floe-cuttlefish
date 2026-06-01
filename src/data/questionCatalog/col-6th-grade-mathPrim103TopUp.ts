@@ -522,7 +522,7 @@ export const col6thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('18', 'This is the total, but the mean shares it out.', 'After adding, divide by how many numbers there are.'),
       miss('9', 'You divided by 2 instead of 3.', 'There are 3 numbers, so divide the total by 3.'),
-      miss('8', 'This is the largest number, not the average.', 'Add all three numbers, then divide by 3.'),
+      miss('8', 'Eight is just the largest data point; the mean is where the total lands after being shared equally.', 'Add all three numbers, then divide by 3.'),
     ],
     lesson: 'The mean is found by adding the numbers and then dividing by how many there are. Here 4 + 6 + 8 = 18, and there are 3 numbers, so 18 divided by 3 is 6.',
     source,

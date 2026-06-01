@@ -845,7 +845,7 @@ export const elevenPlusPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     wrong: [
       miss('18', 'This is the total of the numbers, but you must still divide.', 'After adding, divide by how many numbers there are.'),
       miss('9', 'You divided by 2 instead of by 3.', 'There are 3 numbers, so divide the total by 3.'),
-      miss('8', 'This is the largest number, not the average.', 'Add all three and share equally between three.'),
+      miss('8', 'The largest value is not automatically the mean; average means redistribute the total evenly.', 'Add all three and share equally between three.'),
     ],
     lesson: 'To find the mean, add the numbers and divide by how many there are. 4 + 6 + 8 = 18, and 18 divided by 3 is 6.',
     source,

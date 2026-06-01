@@ -227,7 +227,7 @@ export const col4thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'If 63 divided by 9 = 7, which multiplication checks this answer?',
     correct: '9 x 7 = 63',
     wrong: [
-      miss('9 + 7 = 16', 'This adds the numbers instead of multiplying them.', 'To check division, multiply the answer by the divisor.'),
+      miss('9 + 7 = 16', 'Adding 9 and 7 does not rebuild the original 63; the inverse check needs 9 groups of 7.', 'To check division, multiply the answer by the divisor.'),
       miss('63 x 9 = 567', 'You multiplied the wrong two numbers.', 'Multiply the quotient by the divisor, not the dividend.'),
       miss('63 - 9 = 54', 'Subtraction does not check a division answer.', 'Division and multiplication are opposites, so multiply to check.'),
     ],
@@ -413,7 +413,7 @@ export const col4thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'What is 1/5 + 2/5?',
     correct: '3/5',
     wrong: [
-      miss('3/10', '3/10 changes the denominator; when the bottoms already match, keep that bottom and add only the tops.', 'When bottoms match, only add the tops.'),
+      miss('3/10', 'This adds the two 5s on the bottom, but fifths stay fifths when you combine them.', 'When bottoms match, only add the tops.'),
       miss('3/25', 'You multiplied the bottoms instead of keeping 5.', 'Keep the same bottom and add the top numbers.'),
       miss('2/5', 'You forgot to add the first fraction.', 'Add 1 and 2 on top to get the new top number.'),
     ],

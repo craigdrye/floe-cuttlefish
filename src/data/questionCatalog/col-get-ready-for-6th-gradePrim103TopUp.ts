@@ -441,7 +441,7 @@ export const colGetReadyFor6thGradePrim103TopUpQuestions: Question[] = makeQuest
     correct: '92',
     wrong: [
       miss('82', 'You forgot to carry when multiplying the ones.', 'Multiply 3 x 4 = 12, carry the 1 ten.'),
-      miss('27', '27 is 23 plus 4, but the prompt asks for four groups of 23.', 'Times means groups of, so 4 groups of 23.'),
+      miss('27', 'This adds the two numbers once; 23 x 4 means 23 repeated four times.', 'Times means groups of, so 4 groups of 23.'),
       miss('812', 'You wrote the digits side by side instead of carrying.', 'Carry the ten from 3 x 4 into the tens place.'),
     ],
     lesson: 'Multiply the ones first: 3 x 4 = 12, write 2 and carry 1. Then 2 x 4 = 8, plus the carried 1 makes 9. So 23 x 4 = 92.',

@@ -755,7 +755,7 @@ export const col5thGradeReadingAndVocabPrim103TopUpQuestions: Question[] = makeQ
     prompt: 'Which word means almost the same as "happy"?',
     correct: 'Joyful',
     wrong: [
-      miss('Angry', 'Angry names a different mood; a synonym should stay close to happy.', 'A synonym means almost the same thing.'),
+      miss('Angry', 'Angry is an emotion, but it is not the cheerful feeling that happy names.', 'A synonym means almost the same thing.'),
       miss('Tired', 'Tired means sleepy, not happy.', 'Find a word that also means glad.'),
       miss('Hungry', 'Hungry means you want food, not that you are happy.', 'Pick the word closest to happy.'),
     ],

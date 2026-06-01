@@ -658,7 +658,7 @@ export const class6MathPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     correct: '4',
     wrong: [
       miss('12', 'This is the total of the numbers, not the mean.', 'After adding, divide by how many numbers there are.'),
-      miss('6', 'This is the largest number, not the average.', 'The mean shares the total evenly among the numbers.'),
+      miss('6', 'Six is the top value in the list; the mean is the fair-share value after 12 is split three ways.', 'The mean shares the total evenly among the numbers.'),
       miss('3', 'There are 3 numbers, but the mean is not just the count.', 'Add the numbers, then divide by 3.'),
     ],
     lesson: 'The mean, or average, is found by adding the numbers and dividing by how many there are. 2 plus 4 plus 6 is 12, and 12 divided by 3 is 4.',
