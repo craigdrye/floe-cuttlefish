@@ -45,7 +45,7 @@ export const col8thGradeMathHigh103TopUpBQuestions: Question[] = makeQuestionBan
     wrong: [
       miss('y = 2x + 1', 'This is in slope-intercept form with a constant rate of change, so it is linear.', 'Linear functions have x to the first power only.'),
       miss('y = −3x', 'A direct proportion is linear; its graph is a straight line through the origin.', 'Check whether x is squared or otherwise nonlinear.'),
-      miss('y = 7', 'A constant function graphs as a horizontal line, which is still linear.', 'A horizontal line is a straight line, hence linear.'),
+      miss('y = 7', 'Zero change is still a constant rate of change, so the graph is a straight horizontal line.', 'A horizontal line is a straight line, hence linear.'),
     ],
     lesson: 'A linear function can be written as y = mx + b and graphs as a straight line; the variable x appears only to the first power. y = x² has x squared, so its graph is a curved parabola, making it nonlinear. Equal steps in x produce unequal steps in y, the hallmark of a nonlinear function.',
     source,

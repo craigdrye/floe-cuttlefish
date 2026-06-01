@@ -516,7 +516,7 @@ export const colGetReadyForApStatisticsHigh103TopUpBQuestions: Question[] = make
     wrong: [
       miss('1/2', 'This is the chance for one coin; both coins together require multiplying the probabilities.', 'Combine the two independent chances by multiplying.'),
       miss('2/4', 'Adding the chances overcounts; independent events combine by multiplication.', 'Do not add probabilities for "both" events.'),
-      miss('1/3', 'There are four equally likely outcomes (HH, HT, TH, TT), not three.', 'List all outcome combinations of two coins.'),
+      miss('1/3', 'The two-coin sample space has four slots — HH, HT, TH, and TT — so the denominator cannot be 3.', 'List all outcome combinations of two coins.'),
     ],
     lesson: 'For independent events, P(A and B) = P(A) x P(B). Each coin shows heads with probability 1/2, so both heads is 1/2 x 1/2 = 1/4. Listing the four equally likely outcomes (HH, HT, TH, TT) confirms only HH is favorable.',
     source,

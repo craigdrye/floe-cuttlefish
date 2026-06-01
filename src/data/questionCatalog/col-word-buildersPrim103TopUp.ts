@@ -334,7 +334,7 @@ export const colWordBuildersPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'What does the word "helpful" mean?',
     correct: 'Full of help',
     wrong: [
-      miss('Without help', 'The suffix ful means full of, not without.', 'The suffix that means without is less.'),
+      miss('Without help', 'That would be helpless, with -less; helpful uses -ful to show lots of help.', 'The suffix that means without is less.'),
       miss('A little help', 'Ful means full of, so it is more than a little.', 'Think: help + ful = full of help.'),
       miss('To help once', 'Ful describes something, it does not mean to do it once.', 'Ful means full of a thing.'),
     ],
@@ -349,7 +349,7 @@ export const colWordBuildersPrim103TopUpQuestions: Question[] = makeQuestionBank
     prompt: 'What does the word "fearless" mean?',
     correct: 'Without fear',
     wrong: [
-      miss('Full of fear', 'The suffix less means without, not full of.', 'The suffix that means full of is ful.'),
+      miss('Full of fear', 'Full of fear is closer to fearful; fearless means the fear is missing.', 'The suffix that means full of is ful.'),
       miss('A little fear', 'Less means none at all, not a little.', 'Think: fear + less = without fear.'),
       miss('More fear', 'Less means without, so there is no fear.', 'Less takes the thing away.'),
     ],

@@ -355,7 +355,7 @@ export const universityAgentGeneratedQuestionsByTrack: Record<string, Question[]
       'Leo finds a glossy magazine article about study hacks and a journal article reviewed by scholars before publication. Which source is peer-reviewed?',
       'An academic journal article evaluated by experts before publication',
       [['A popular magazine article written for general readers', 'Magazine articles are edited but not peer-reviewed by subject specialists before publication.'],
-       ['A personal blog post with many comments', 'Comment counts indicate engagement, not expert review. Blogs are self-published.'],
+       ['A self-published study-hacks essay with a lively comment thread', 'Comment counts indicate engagement, not expert review. Self-published writing has not been checked by subject specialists.'],
        ['A sponsored webpage selling study supplies', 'Sponsored content is promotional and not evaluated by independent specialists.']],
       'Peer-reviewed sources are checked by specialists in the field before publication.'),
     q(3105008, 'University', 'English Composition: Annotated Bibliography', 'Purpose of an annotation',

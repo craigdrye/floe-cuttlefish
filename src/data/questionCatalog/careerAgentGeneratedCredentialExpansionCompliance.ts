@@ -659,7 +659,7 @@ const amlCompetencies: CredentialCompetency[] = [
     correct: 'Perform risk-based due diligence and enhanced controls appropriate to correspondent banking risk before approving the relationship.',
     wrong: [
       ['Open the account first and review it after a year', 'Correspondent banking risk requires diligence before and during the relationship.', 'Complete required review before approval.'],
-      ['Rely only on the foreign bank logo', 'Branding is not evidence of AML control quality.', 'Review supervision, ownership, controls, and expected activity.'],
+      ['Rely only on the bank’s public reputation and website disclosures', 'Public reputation is not enough evidence of AML control quality.', 'Review supervision, ownership, controls, and expected activity.'],
       ['Treat bank-to-bank relationships as inherently low-risk', 'Bank-to-bank relationships can carry significant AML risk.', 'Correspondent accounts require specialized diligence.'],
     ],
   },

@@ -151,7 +151,7 @@ export const colIntegratedMath2High103TopUpAQuestions: Question[] = makeQuestion
     wrong: [
       miss('(x + 5)(x − 3)', 'This gives a middle term of +2x, not −2x; the signs are swapped.', 'The larger-magnitude number should carry the sign of the middle term.'),
       miss('(x − 5)(x − 3)', 'Two negatives multiply to +15, but the constant here is −15.', 'For a negative constant the two numbers must have opposite signs.'),
-      miss('(x − 15)(x + 1)', 'These multiply to −15 but add to −14, not −2.', 'Check the sum equals the middle coefficient.'),
+      miss('(x − 15)(x + 1)', 'The signs give the right negative product, but -15 + 1 would make the middle term much too negative.', 'Check the sum equals the middle coefficient.'),
     ],
     lesson: 'A negative constant means the two factors have opposite signs. The numbers must multiply to −15 and add to −2, which are −5 and +3, giving (x − 5)(x + 3). The number with the larger absolute value (5) is negative, matching the −2x middle term.',
     source,

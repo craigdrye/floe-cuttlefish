@@ -62,7 +62,7 @@ export const colAlgebraBasicsHigh103TopUpAQuestions: Question[] = makeQuestionBa
     mentorHint: 'Find a common denominator before adding numerators.',
     correct: '11/12',
     wrong: [
-      miss('3/7', 'This adds numerators and denominators directly, which is not how fractions add.', 'Find a common denominator before adding numerators.'),
+      miss('3/7', 'Adding across changes the size of the pieces; thirds and fourths must first become the same-sized twelfths.', 'Find a common denominator before adding numerators.'),
       miss('3/12', 'This uses the denominator 12 but forgets to convert the numerators first.', 'Rewrite each fraction with denominator 12, then add the new numerators.'),
       miss('11/7', 'This finds a correct numerator concept but adds the denominators 3 + 4.', 'The common denominator is the least common multiple of 3 and 4.'),
     ],

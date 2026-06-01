@@ -546,7 +546,7 @@ export const philYear7High103TopUpBQuestions: Question[] = makeQuestionBank('Hig
     wrong: [
       miss('Because anything legal is automatically also ethical', 'This collapses law and ethics, but the course stresses they are distinct; legal does not guarantee ethical.', 'Legal and ethical are not the same thing.'),
       miss('Because tracking data is impossible, so the claim is false', 'Data tracking is clearly possible and common; the ethical worry is about consent and privacy, not feasibility.', 'The concern is whether it is right, not whether it is possible.'),
-      miss('Because only illegal actions can ever be wrong', 'Plenty of legal actions can be ethically wrong; wrongness is not limited to illegality.', 'Legality is not the boundary of right and wrong.'),
+      miss('Because any action allowed by written rules is automatically acceptable', 'Plenty of permitted actions can still be ethically wrong; moral concern is not limited to rule-breaking.', 'Legality is not the boundary of right and wrong.'),
     ],
     lesson: 'A recurring trap is confusing what is legal to do online with what is ethical to do. Data tracking can be perfectly legal yet still raise ethical concerns: users may not have given meaningful consent, and their privacy may be undermined. Distinguishing legality from ethics lets students evaluate such practices critically.',
     source,

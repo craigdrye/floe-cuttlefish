@@ -259,7 +259,7 @@ export const colArithmeticPrim103TopUpQuestions: Question[] = makeQuestionBank('
     correct: '2/4',
     wrong: [
       miss('1/4', 'This is only half of a half, so it is smaller.', 'For halves, the top should be exactly half the bottom.'),
-      miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'Check if the top is half of the bottom.'),
+      miss('2/3', 'Two out of three pieces is past the halfway mark; for one half, the top must be exactly half the bottom.', 'Check if the top is half of the bottom.'),
       miss('3/4', '3/4 covers three quarters of the shape, more than the half being asked for.', 'One half means the top is half the bottom.'),
     ],
     lesson: 'Equivalent fractions look different but show the same amount. In 2/4, the top is exactly half the bottom, just like 1/2. If you cut each half into two, you get 2 pieces out of 4.',

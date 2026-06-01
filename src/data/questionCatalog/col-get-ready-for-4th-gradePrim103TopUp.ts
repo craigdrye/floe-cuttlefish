@@ -453,7 +453,7 @@ export const colGetReadyFor4thGradePrim103TopUpQuestions: Question[] = makeQuest
     prompt: 'Read this: "First Ben woke up. Next he brushed his teeth. Then he ate breakfast." What did Ben do right after he woke up?',
     correct: 'brushed his teeth',
     wrong: [
-      miss('ate breakfast', 'Breakfast came last, not right after waking up.', 'Look for the word next.'),
+      miss('had his morning meal', 'That happened after brushing his teeth, so it was not right after waking up.', 'Look for the word next.'),
       miss('went to school', 'The passage does not mention going to school.', 'Only use what the text says.'),
       miss('went back to sleep', 'The passage never says Ben went back to sleep.', 'Follow the order: first, next, then.'),
     ],

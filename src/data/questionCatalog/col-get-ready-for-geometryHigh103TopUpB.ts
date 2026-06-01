@@ -597,7 +597,7 @@ export const colGetReadyForGeometryHigh103TopUpBQuestions: Question[] = makeQues
     correct: '96 square units',
     wrong: [
       miss('64 square units', 'This is the VOLUME (4 cubed), not the surface area.', 'Surface area sums the areas of the faces.'),
-      miss('16 square units', 'This is the area of just one face, not all six.', 'A cube has six identical faces.'),
+      miss('16 square units', 'This squares the edge correctly for one face, then forgets to multiply by the cube’s six faces.', 'A cube has six identical faces.'),
       miss('24 square units', 'This multiplies edge by the number of faces (4 * 6) without squaring.', 'Each face area is the edge squared.'),
     ],
     lesson: 'A cube has six identical square faces, each with area edge^2. So the surface area is 6 * 4^2 = 6 * 16 = 96 square units.',

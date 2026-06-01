@@ -434,7 +434,7 @@ export const contemporaryEthicsUniv103TopUpQuestions: Question[] = makeQuestionB
     wrong: [
       miss('Whistleblowing, since she is exposing wrongdoing inside the firm', 'Whistleblowing is reporting wrongdoing; here she is the one with the compromised position, not a reporter.', 'No one is reporting wrongdoing; an interest is compromising judgement.'),
       miss('Due diligence, the careful investigation before a transaction', 'Due diligence is a proper investigative process, not the ethical problem of divided loyalty described.', 'Due diligence is the cure, not the disease here.'),
-      miss('Insider trading, the illegal use of nonpublic information to trade', 'Insider trading involves trading on material nonpublic information; the issue here is biased contract selection, not securities trading.', 'The harm is biased decision-making, not trading on secrets.'),
+      miss('Insider trading, using confidential market-moving information to trade securities', 'Insider trading involves trading on material nonpublic information; the issue here is biased contract selection, not securities trading.', 'The harm is biased decision-making, not trading on secrets.'),
     ],
     lesson: 'A conflict of interest arises when a person’s private interests (financial, familial, or personal) could improperly influence the exercise of a professional duty owed to others. The problem exists whether or not the judgement is actually corrupted, because the integrity of the decision is compromised and trust is undermined. Standard remedies are disclosure, recusal, and divestment, which is why undisclosed ownership of a chosen supplier is paradigmatically unethical.',
     source,

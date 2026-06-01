@@ -707,7 +707,7 @@ const philosophyBlueprints = (year: 1 | 2 | 3 | 4 | 5 | 6): Blueprint[] => {
         prompt: ({ animal }) => `Someone says a ${animal} visited the classroom at night. What is the best way to check?`,
         correct: 'Look for reliable evidence, such as a camera record or clear tracks.',
         wrong: [
-          miss('Believe it because it sounds exciting and surprising.', 'Excitement is not evidence.', 'Ask how we could know.'),
+          miss('Believe it because the story is vivid and fun to imagine.', 'A vivid story is not evidence.', 'Ask how we could know.'),
           miss('Decide too quickly that it cannot happen.', 'That is a belief without evidence too.', 'Good thinking investigates.'),
           miss('Vote on whether it happened.', 'A vote does not prove an event.', 'Evidence is stronger than popularity.'),
         ],

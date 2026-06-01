@@ -368,7 +368,7 @@ export const stCh5Questions: Question[] = [
     'This is the canonical spoofing pattern — entering orders with no intent to execute to create a misleading impression of supply or demand, then cancelling once the market moves; spoofing is explicitly prohibited under Dodd-Frank Section 747 and is the subject of repeated DOJ and CFTC enforcement',
     [
       ['Cancelling orders quickly is just normal high-frequency behavior', 'Legitimate HFT cancels orders; the spoof signature is the *combination* of no-intent-to-execute orders with simultaneous executions on the opposite side. Surveillance flags the pattern, not the speed.'],
-      ['Spoofing is only illegal in futures markets, not equities', 'Spoofing is prohibited across markets — Section 747 for futures, and 10b-5 and exchange rules for equities. The conduct is illegal in both.'],
+      ['Spoofing rules apply only to futures markets, not equities', 'Spoofing is prohibited across markets — Section 747 for futures, and 10b-5 and exchange rules for equities. The conduct is illegal in both.'],
       ['It is fine because each individual order was a valid order at entry', 'Intent at entry is the test. Orders entered without intent to execute, used to move price, are not "valid" — they are the actus reus of spoofing.'],
     ],
     'Spoofing is one of the clearest manipulation fact patterns and enforcement is aggressive — DOJ has secured criminal convictions, not just civil fines. Cancelling fast is not the violation; cancelling fast as part of a pattern designed to mislead the market is.'),

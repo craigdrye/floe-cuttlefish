@@ -522,7 +522,7 @@ export const colTrigonometryHigh103TopUpBQuestions: Question[] = makeQuestionBan
     prompt: 'Find all solutions of sin(x) = 1/2 on the interval [0, 2pi).',
     correct: 'x = pi/6 and x = 5pi/6',
     wrong: [
-      miss('x = pi/6 only', 'Sine is also positive in the second quadrant, giving a second solution.', 'There are two angles in [0, 2pi) with the same positive sine.'),
+      miss('x = pi/6 only', 'That gives the first-quadrant angle but leaves out pi - pi/6, where sine is still positive.', 'There are two angles in [0, 2pi) with the same positive sine.'),
       miss('x = pi/6 and x = 7pi/6', '7pi/6 is in quadrant III where sine is negative, so its sine is -1/2.', 'Choose the second quadrant angle, 5pi/6, where sine stays positive.'),
       miss('x = pi/3 and x = 2pi/3', 'Those angles have sine sqrt(3)/2, not 1/2.', 'sin(pi/6) = 1/2; use the reference angle pi/6.'),
     ],

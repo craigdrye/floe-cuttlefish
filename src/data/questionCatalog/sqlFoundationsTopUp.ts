@@ -630,7 +630,7 @@ export const sqlFoundationsTopUpQuestions: Question[] = makeQuestionBank('Univer
     correct: 'Staging the logic into named, version-controlled SQL steps with documented assumptions and validation checks',
     wrong: [
       miss('Writing one giant ad-hoc query and pasting the result into a spreadsheet', 'A monolithic, undocumented query that lands in a spreadsheet cannot be rerun or verified independently.', 'Reproducibility needs rerunnable, inspectable steps.'),
-      miss('Manually editing values in the output until the dashboard looks right', 'Hand-editing outputs breaks the link between source data and result, destroying reproducibility.', 'The pipeline must derive numbers, not patch them.'),
+      miss('Making one-off corrections in the exported spreadsheet after each run', 'Hand-editing outputs breaks the link between source data and result, destroying reproducibility.', 'The pipeline must derive numbers, not patch them.'),
       miss('Using SELECT * everywhere so no columns are ever missed', 'SELECT * makes outputs fragile to schema changes and obscures intent, hurting maintainability.', 'Explicit columns make the contract clear and stable.'),
     ],
     lesson: 'Reproducible analytics treats SQL like code: staged, named transformations (CTEs or modeled tables) under version control, explicit column lists, documented assumptions, and validation checks (row-count and grain reconciliations) between stages. Another analyst should be able to rerun the pipeline from raw tables and get the same dashboard-ready dataset.',

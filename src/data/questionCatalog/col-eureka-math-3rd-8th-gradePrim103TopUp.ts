@@ -165,7 +165,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     prompt: 'Which fraction is equal to 1/2?',
     correct: '4/8',
     wrong: [
-      miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For one half, the top is exactly half the bottom.'),
+      miss('2/3', 'If the whole has 3 parts, taking 2 parts is more than a half; half of 8 is the clue for 4/8.', 'For one half, the top is exactly half the bottom.'),
       miss('1/4', 'With fourths, half the whole is 2/4, so 1/4 is one piece short of a half.', 'A half means the top is half the bottom.'),
       miss('3/8', 'Three eighths is less than four eighths.', 'Half of 8 is 4, so 4/8 equals 1/2.'),
     ],
@@ -608,7 +608,7 @@ export const colEurekaMath3rd8thGradePrim103TopUpQuestions: Question[] = makeQue
     correct: 'Centimeters',
     wrong: [
       miss('Kilometers', 'Kilometers measure long distances like roads.', 'A pencil is small, so pick a small unit.'),
-      miss('Liters', 'Liters is for liquid volume, not measuring how long something is.', 'Length needs a distance unit.'),
+      miss('Liters', 'A liter would help with juice or water, not the distance from one end of a pencil to the other.', 'Length needs a distance unit.'),
       miss('Kilograms', 'Kilograms measure weight, not length.', 'You want a unit for how long something is.'),
     ],
     lesson: 'Centimeters are a small unit of length, perfect for small objects like a pencil. Kilometers are for long distances, and liters and kilograms measure other things.',

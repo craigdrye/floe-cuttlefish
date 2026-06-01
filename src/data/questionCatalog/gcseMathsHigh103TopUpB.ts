@@ -184,7 +184,7 @@ export const gcseMathsHigh103TopUpBQuestions: Question[] = makeQuestionBank('Hig
     wrong: [
       miss('(4, -7)', 'This subtracts b from a instead of adding the two vectors.', 'Add the matching components, do not subtract them.'),
       miss('(2, -7)', 'The x-components were added correctly but the y-components were subtracted.', 'Add both rows: top with top, bottom with bottom.'),
-      miss('(-3, -10)', 'This multiplies the components rather than adding them.', 'Vector addition combines components by adding, not multiplying.'),
+      miss('(-3, -10)', 'That treats the two vector rows like multiplication pairs; addition should combine top with top and bottom with bottom.', 'Vector addition combines components by adding, not multiplying.'),
     ],
     lesson: 'Column vectors are added component by component: add the top numbers together and the bottom numbers together. Here (3 + (-1), -2 + 5) = (2, 3). The same rule applies to subtraction, where you subtract corresponding components instead.',
     source,

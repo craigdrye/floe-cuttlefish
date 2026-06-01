@@ -331,7 +331,7 @@ export const uxResearchR2Questions: Question[] = makeQuestionBank('Career Skills
     prompt: 'Before a usability test, why must you write an explicit, observable success criterion for each task?',
     correct: 'Without a predefined criterion, scoring success becomes subjective and inconsistent across participants and observers.',
     wrong: [
-      miss('Because tasks without criteria are illegal under research ethics.', 'There is no legal requirement; the reason is measurement consistency, not ethics.', 'This is about reliable scoring, not legality.'),
+      miss('Because task criteria are mainly a consent-form requirement.', 'Consent matters, but this criterion is about measurement consistency rather than ethics paperwork.', 'This is about reliable scoring, not legality.'),
       miss('Because success criteria determine the incentive amount.', 'Incentives are unrelated to how you score task completion.', 'Criteria govern scoring, not payment.'),
       miss('Because the criterion tells the participant where to click.', 'A success criterion is for the researcher, not shown to the participant; revealing it would bias the test.', 'It guides scoring, not the user.'),
     ],

@@ -712,7 +712,7 @@ export const naplanYear9HighTopUpQuestions: Question[] = makeQuestionBank('High'
     wrong: [
       miss('1/2', '1/2 is the chance of heads on one toss; two independent tosses multiply to 1/4.', 'Multiply the probabilities of each toss: 1/2 x 1/2.'),
       miss('2/2', 'That equals 1, certainty, which cannot be right for a chance event.', 'A probability cannot be 1 here; two heads are not guaranteed.'),
-      miss('1/3', 'There are four equally likely outcomes (HH, HT, TH, TT), not three.', 'List the outcomes: HH, HT, TH, TT, so the denominator is 4.'),
+      miss('1/3', 'Two tosses make a four-branch tree, and only the HH branch has heads both times.', 'List the outcomes: HH, HT, TH, TT, so the denominator is 4.'),
     ],
     lesson: 'For independent events, multiply probabilities: P(heads then heads) = 1/2 x 1/2 = 1/4. The four equally likely outcomes are HH, HT, TH, TT, and only HH is two heads. Treating events as if they share an outcome is the trap.',
     source,

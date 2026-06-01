@@ -15,7 +15,7 @@ export const colGcseMathsUkHigh103TopUpBQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('(x - 5)(x + 3)', 'This expands to x^2 - 2x - 15, giving the wrong sign on the x term.', 'Check the middle term: the two numbers must add to +2.'),
       miss('(x + 5)(x + 3)', 'This expands to x^2 + 8x + 15; the product of the numbers must be -15, not +15.', 'You need a product of -15, so one number must be negative.'),
-      miss('(x + 15)(x - 1)', 'These multiply to -15 but add to +14, not +2.', 'Find two numbers that multiply to -15 AND add to +2.'),
+      miss('(x + 15)(x - 1)', 'The product is right, but 15 plus -1 would create a +14x middle term.', 'Find two numbers that multiply to -15 AND add to +2.'),
     ],
     lesson: 'To factorise x^2 + bx + c, find two numbers that multiply to c and add to b. Here you need a product of -15 and a sum of +2, which are +5 and -3, giving (x + 5)(x - 3). Expanding back is a quick way to check both the product and the sum are right.',
     source,
@@ -344,7 +344,7 @@ export const colGcseMathsUkHigh103TopUpBQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('(5, -5)', 'This subtracts the vectors instead of adding them.', 'Add the matching components, do not subtract.'),
       miss('(1, 5)', 'The first component is right but -1 + 4 = 3, not 5.', 'Carefully add the second components: -1 and 4.'),
-      miss('(-6, -4)', 'This multiplies the components rather than adding them.', 'Vector addition adds component to component.'),
+      miss('(-6, -4)', 'Those are products, not sums: vector addition keeps each component in its own lane and adds them.', 'Vector addition adds component to component.'),
     ],
     lesson: 'To add column vectors, add the corresponding components separately: the x parts give 3 + (-2) = 1 and the y parts give -1 + 4 = 3, so a + b = (1, 3). Subtraction works the same way using differences. Keeping the components aligned avoids sign errors.',
     source,

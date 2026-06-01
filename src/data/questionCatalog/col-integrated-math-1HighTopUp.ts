@@ -396,7 +396,7 @@ export const colIntegratedMath1HighTopUpQuestions: Question[] = makeQuestionBank
     prompt: 'How many solutions does this system have: y = 2x + 1 and y = 2x − 4?',
     correct: 'No solution (the lines are parallel)',
     wrong: [
-      miss('One solution', 'Lines with equal slopes but different intercepts never intersect.', 'Compare the slopes and intercepts of the two lines.'),
+      miss('One solution', 'Same slope means these lines have the same direction; the different intercepts keep them separated.', 'Compare the slopes and intercepts of the two lines.'),
       miss('Infinitely many solutions', 'That would require the same line; these have different intercepts.', 'Same slope but different intercept means parallel, not identical.'),
       miss('Two solutions', 'Two distinct lines can meet at most once, never twice.', 'Lines cross at one point at most.'),
     ],

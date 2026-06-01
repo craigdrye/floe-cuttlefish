@@ -353,7 +353,7 @@ export const colUsHistoryHigh103TopUpAQuestions: Question[] = makeQuestionBank('
     wrong: [
       miss('It required the United States to go to war with Britain', 'The purchase was a peaceful transaction with France, not a cause of war with Britain.', 'Recall who sold the territory and how it was acquired.'),
       miss('Congress had already banned any expansion west of the Appalachians', 'No such ban existed; the dilemma was about constitutional authority, not a prior prohibition.', 'Think about Jefferson\'s views on interpreting the Constitution.'),
-      miss('The land was already claimed by the United States, making the purchase illegal', 'The territory was claimed by France, which is why the United States had to buy it.', 'Focus on Jefferson\'s strict-construction worries.'),
+      miss('Jefferson believed France had no authority to sell the territory', 'The territory was claimed by France, which is why the United States bought it from Napoleon.', 'Focus on Jefferson\'s strict-construction worries.'),
     ],
     lesson: 'Jefferson believed in interpreting the Constitution strictly, yet it said nothing about acquiring foreign land. Faced with the chance to double the nation\'s size and secure the port of New Orleans, he set aside his scruples and completed the purchase, showing how presidential power could expand through interpretation of implied authority.',
     source,

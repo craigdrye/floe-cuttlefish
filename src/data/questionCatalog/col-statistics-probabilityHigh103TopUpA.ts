@@ -516,7 +516,7 @@ export const colStatisticsProbabilityHigh103TopUpAQuestions: Question[] = makeQu
     wrong: [
       miss('1/2', 'This gives the probability of one head, but two independent heads requires multiplying probabilities.', 'Multiply the probability of each independent flip together.'),
       miss('1', 'A certain outcome would be probability 1, but two heads is far from guaranteed.', 'There are four equally likely two-flip outcomes; only one is HH.'),
-      miss('1/3', 'There are four equally likely outcomes (HH, HT, TH, TT), not three.', 'List all ordered outcomes; HT and TH are different.'),
+      miss('1/3', 'This drops one ordered outcome; HT and TH both count, giving four outcomes in total.', 'List all ordered outcomes; HT and TH are different.'),
     ],
     lesson: 'For independent events, P(A and B) = P(A) x P(B). Each flip has probability 1/2 of heads, so two heads is 1/2 x 1/2 = 1/4. Listing the four equally likely outcomes HH, HT, TH, TT confirms exactly one favorable case.',
     source,

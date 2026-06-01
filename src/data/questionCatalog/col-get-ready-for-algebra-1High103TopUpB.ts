@@ -531,7 +531,7 @@ export const colGetReadyForAlgebra1High103TopUpBQuestions: Question[] = makeQues
     prompt: 'Simplify 3^2 x 3^4.',
     correct: '3^6',
     wrong: [
-      miss('3^8', 'This multiplied the exponents instead of adding them.', 'When multiplying powers with the same base, add the exponents.'),
+      miss('3^8', 'Multiplying the exponents turns 2 and 4 into 8, but same-base products stack the powers as 2 + 4.', 'When multiplying powers with the same base, add the exponents.'),
       miss('9^6', 'This added the exponents correctly but also multiplied the bases.', 'Keep the base the same; only the exponents combine.'),
       miss('6^6', 'This added the bases as well as the exponents.', 'The base stays as 3, not 3 + 3.'),
     ],

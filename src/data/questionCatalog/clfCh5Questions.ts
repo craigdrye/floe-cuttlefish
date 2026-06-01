@@ -389,7 +389,7 @@ export const clfCh5Questions: Question[] = [
     'In Serta Simmons (2020) and Mitel (2022), a majority lender group amended the credit agreement to authorize a new super-priority tranche and exchanged into it at par, leaving non-participating lenders subordinated below them. What did these "uptier" transactions teach the market?',
     'Majority-lender voting provisions and weak sacred-rights protections can let a coordinated lender group prime co-lenders into a junior position through a credit agreement amendment, fragmenting what looked like a pari-passu class into senior and subordinated buckets',
     [
-      ['The transactions are illegal and have been universally rejected by courts', 'Litigation outcomes have been mixed and ongoing. Courts have permitted some uptiers and blocked others; the takeaway is that the legal risk is real, not that the transactions are always void.'],
+      ['The transactions are automatically void whenever non-participating lenders object', 'Litigation outcomes have been mixed and ongoing. Courts have permitted some uptiers and blocked others; the takeaway is that the legal risk is real, not that the transactions are always void.'],
       ['Uptiers always require unanimous lender consent', 'The whole point is that they did not — the majority used standard credit-agreement amendment thresholds (50.1%) to authorize the new tranche, with non-participating lenders unable to block.'],
       ['Uptiers affect only the borrower, not the lenders\' recoveries', 'The opposite — uptiers materially shift recovery between lenders, moving non-participants below the new super-priority tranche. They are precisely a redistribution among the lender class.'],
     ],

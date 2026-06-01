@@ -390,8 +390,8 @@ export const englishComposition101TopUpQuestions: Question[] = makeQuestionBank(
     prompt: 'Which of the following statements counts as "common knowledge" that generally does not require a citation in a college essay?',
     correct: 'Water freezes at 0 degrees Celsius at standard atmospheric pressure',
     wrong: [
-      miss('A recent survey statistic about how many students skipped breakfast before exams', 'A specific statistic from a particular study is original research, not common knowledge, and must be cited to its source.', 'Specific data from a study always needs a citation; only widely known facts do not.'),
-      miss('A named researcher’s argument that breakfast improves test performance', 'An individual scholar\'s argument is a particular intellectual contribution and must be attributed, not treated as general knowledge.', 'Someone\'s specific claim or interpretation must be credited to them.'),
+      miss('A recent survey statistic about how many students commute by bus before exams', 'A specific statistic from a particular study is original research, not common knowledge, and must be cited to its source.', 'Specific data from a study always needs a citation; only widely known facts do not.'),
+      miss('A named researcher’s argument that sleep quality improves test performance', 'An individual scholar\'s argument is a particular intellectual contribution and must be attributed, not treated as general knowledge.', 'Someone\'s specific claim or interpretation must be credited to them.'),
       miss('A little-known historical detail found in only one specialized archive', 'Information available in only one specialized source is the opposite of common knowledge and must be cited to that source.', 'If a fact is hard to find or appears in only one source, cite it.'),
     ],
     lesson: 'Common knowledge is undisputed information widely known and easily found in many sources (basic facts, well-known dates). Specific statistics, individual scholars\' arguments, and obscure findings are not common knowledge and must be cited.',

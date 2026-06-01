@@ -627,7 +627,7 @@ export const elevenPlusPrim103TopUpQuestions: Question[] = makeQuestionBank('Pri
     prompt: 'What does the word "careless" mean?',
     correct: 'without care',
     wrong: [
-      miss('full of care', 'The suffix "less" means without, not full of.', 'Think about what "less" takes away.'),
+      miss('full of care', 'Careful is full of care; careless has -less, so the care has been taken away.', 'Think about what "less" takes away.'),
       miss('caring a lot', 'Caring a lot is the opposite of careless.', 'Less at the end means missing something.'),
       miss('caring again', 'The suffix "less" has nothing to do with again.', 'Less means without.'),
     ],

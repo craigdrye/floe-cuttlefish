@@ -258,7 +258,7 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     wrong: [
       miss('7', 'That looks like you added instead of taking away.', 'Subtracting makes the number smaller.'),
       miss('2', '2 is just one step too low; count the final item as well.', 'Start at 5 and count back 2: 4, 3.'),
-      miss('4', '4 is just one step too high; check the last count carefully.', 'Take away exactly two from five.'),
+      miss('4', 'That only counts back one step from 5; taking away two lands one step lower at 3.', 'Take away exactly two from five.'),
     ],
     lesson: 'Subtracting means taking some away. Start at 5 and count back two to land on 3.',
     source,
@@ -743,7 +743,7 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     wrong: [
       miss('2', 'You only counted the cats and forgot the dog.', 'Count the cats and the dog together.'),
       miss('1', 'You only counted the dog and forgot the cats.', 'Add the dog to the two cats.'),
-      miss('4', '4 is just one step too high; check the last count carefully.', 'Add 2 cats and 1 dog.'),
+      miss('4', 'That sneaks in one extra pet; two cats plus one dog make three animals altogether.', 'Add 2 cats and 1 dog.'),
     ],
     lesson: 'To count all the pets, we add the cats and the dog. Two cats and one dog make 3 pets.',
     source,
@@ -789,7 +789,7 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     wrong: [
       miss('7', 'Seven spots have dots; the empty ones are what is left.', 'Take 7 away from 10 to find the empty spots.'),
       miss('10', 'Not all spots are empty, since 7 have dots.', 'Some spots are filled already.'),
-      miss('4', '4 is just one step too high; check the last count carefully.', 'Count up from 7 to 10: that is three.'),
+      miss('4', 'Counting 7, 8, 9, 10 names four numbers, but the gaps from 7 to 10 are only three empty spots.', 'Count up from 7 to 10: that is three.'),
     ],
     lesson: 'A ten frame has ten spots. If 7 are filled, then 10 take away 7 leaves 3 empty spots.',
     source,
@@ -835,7 +835,7 @@ export const colEarlyMathReviewPrim103TopUpQuestions: Question[] = makeQuestionB
     wrong: [
       miss('5', 'A week has more than just the school days.', 'Remember to count the weekend days too.'),
       miss('10', 'A week has fewer than ten days.', 'Count from Monday all the way to Sunday.'),
-      miss('12', '12 belongs to months in a year, but the week has seven days.', 'A week is shorter than that.'),
+      miss('12', 'Twelve is a year clue, not a week clue; a week only runs through the seven day names once.', 'A week is shorter than that.'),
     ],
     lesson: 'A week has 7 days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and Sunday.',
     source,

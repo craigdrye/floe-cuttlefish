@@ -28,7 +28,7 @@ export const colPreAlgebraHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     prompt: 'What is the value of 2^(-3)?',
     correct: '1/8',
     wrong: [
-      miss('-8', 'A negative exponent does not make the result negative; it means a reciprocal.', 'A negative exponent flips the base into a fraction.'),
+      miss('-8', 'A minus in the exponent sends the power under 1; it does not make the final value negative.', 'A negative exponent flips the base into a fraction.'),
       miss('-6', 'You multiplied the base by the exponent instead of using the reciprocal rule.', 'Exponents are repeated multiplication, not base times exponent.'),
       miss('6', '2 x 3 is not how exponents work; a^(-n) means 1 over a^n.', 'Compute 2^3 first, then take its reciprocal.'),
     ],
@@ -181,7 +181,7 @@ export const colPreAlgebraHigh103TopUpBQuestions: Question[] = makeQuestionBank(
     correct: '$72',
     wrong: [
       miss('$70', 'You subtracted $20 instead of 20% of $90, which is $18.', 'Find 20% of the actual price before subtracting.'),
-      miss('$18', 'That is the discount amount, not the price you pay.', 'Subtract the discount from the original price.'),
+      miss('$18', 'That stops after finding the 20% discount; the question asks for the final price after it is removed.', 'Subtract the discount from the original price.'),
       miss('$108', 'You added the 20% instead of subtracting it; this is a discount.', 'A sale lowers the price, so subtract.'),
     ],
     lesson: 'A 20% discount removes 20% of the original price. 20% of $90 is $18, so the sale price is $90 - $18 = $72. Equivalently, you pay 80% of the price: 0.80 x $90 = $72.',

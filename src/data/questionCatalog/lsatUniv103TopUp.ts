@@ -300,7 +300,7 @@ export const lsatUniv103TopUpQuestions: Question[] = makeQuestionBank('Universit
     correct: 'The company launched a large price-cut promotion the same week the logo changed.',
     wrong: [
       miss('Some customers said they disliked the new logo.', 'Disliking the logo does not show sales rose for another reason.', 'A weakener should offer a competing cause for the sales increase.'),
-      miss('The old logo had been in use for ten years.', 'The age of the old logo is irrelevant to what drove the recent sales rise.', 'Look for an alternative explanation operating during the same period.'),
+      miss('The old brand design had been in use for ten years.', 'The age of the prior design is irrelevant to what drove the recent sales rise.', 'Look for an alternative explanation operating during the same period.'),
       miss('Logo redesigns are common in the industry.', 'Industry norms do not bear on whether this redesign caused these sales.', 'Generic context does not undercut the specific causal claim.'),
     ],
     lesson: 'This argument assumes the logo, not something else, drove sales. Introducing a simultaneous price-cut promotion supplies a strong alternative cause, weakening the inference. Effective weakeners attack the key assumption that no other factor explains the result.',

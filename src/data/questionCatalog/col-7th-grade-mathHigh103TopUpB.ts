@@ -149,7 +149,7 @@ export const col7thGradeMathHigh103TopUpBQuestions: Question[] = makeQuestionBan
     prompt: 'A $80 pair of shoes is on sale at 25% off. What is the sale price?',
     correct: '$60',
     wrong: [
-      miss('$20', 'That is the discount amount, not the price you pay.', 'Subtract the discount from the original price.'),
+      miss('$20', '$20 is only the amount taken off; the sale price is what remains after the discount.', 'Subtract the discount from the original price.'),
       miss('$55', 'That subtracts 25 dollars instead of 25% of 80.', '25% of 80 is 20, not 25.'),
       miss('$100', 'That adds the discount instead of subtracting it.', 'A discount lowers the price.'),
     ],

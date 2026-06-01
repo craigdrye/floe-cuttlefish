@@ -885,7 +885,7 @@ const careerAgentGeneratedQualificationsEthicsOpsBaseQuestionsByTrack: Record<st
       [
         ['Frame the objection as engineering stubbornness rather than a real evaluation', 'Dismissing the technical buyer ends the conversation.'],
         ['Claim buying is always safer without comparing ownership trade-offs', 'Universal-buy claims have no credibility with engineering leaders.'],
-        ['Avoid the topic because it sounds technical', 'Avoiding the build-vs-buy question forfeits the chance to address it credibly.'],
+        ['Promise the engineers that procurement can decide without technical input', 'Avoiding the build-vs-buy substance forfeits the chance to address it credibly.'],
       ],
       'Build-versus-buy objections deserve respect. A credible seller helps the buyer compare total effort, risk, control, and strategic focus.'),
     q(4250235, 'Career Skills', 'Interview Scenarios and Role Plays', 'Pricing too expensive',

@@ -301,7 +301,7 @@ export const colGetReadyForGeometryHigh103TopUpAQuestions: Question[] = makeQues
     prompt: 'What is 3^(-2) as a fraction?',
     correct: '1/9',
     wrong: [
-      miss('-9', 'A negative exponent does not make the value negative; it means take the reciprocal.', 'A negative exponent flips the base into a fraction.'),
+      miss('-9', 'The negative exponent tells you to use a reciprocal; it does not put a minus sign in front of 3 squared.', 'A negative exponent flips the base into a fraction.'),
       miss('-6', 'You multiplied 3 by -2, but exponents are repeated multiplication, not a product.', '3^2 is 9, and the negative sign moves it to the denominator.'),
       miss('1/6', 'You used 3 x 2 in the denominator instead of 3^2.', 'The denominator should be 3 squared, which is 9.'),
     ],

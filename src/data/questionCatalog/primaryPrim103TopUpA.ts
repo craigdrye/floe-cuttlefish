@@ -569,7 +569,7 @@ export const primaryPrim103TopUpAQuestions: Question[] = makeQuestionBank('Prima
     wrong: [
       miss('5', 'Five is the number of school days, but a week has weekend days too.', 'Remember to count Saturday and Sunday as well.'),
       miss('10', 'A week is shorter than ten days.', 'Count from Monday all the way to Sunday.'),
-      miss('12', '12 belongs to months in a year, but the week has seven days.', 'A week has fewer days than that.'),
+      miss('12', 'That mixes up calendar facts: 12 months make a year, while 7 named days make a week.', 'A week has fewer days than that.'),
     ],
     lesson: 'There are 7 days in a week: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, and Sunday. Saturday and Sunday make up the weekend.',
     source,

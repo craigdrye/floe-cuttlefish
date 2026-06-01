@@ -49,7 +49,7 @@ const careerAgentGeneratedRoadmapTechBaseQuestionsByTrack: Record<string, Questi
       'Whether evidence shows suspicious activity beyond a routine failed authentication event',
       [
         ['Escalate every failed login as a breach', 'Treating every failed auth as a breach floods the queue and trains responders to ignore alerts; failed logins are baseline noise without enrichment.'],
-        ['Authentication noise is never useful telemetry', 'Authentication alerts include the credential-stuffing and password-spray patterns analysts most need to catch; dismissing the whole signal class discards evidence.'],
+        ['Authentication failures should be ignored unless the user reports a problem', 'Authentication alerts include the credential-stuffing and password-spray patterns analysts most need to catch; dismissing the whole signal class discards evidence.'],
         ['One failed login proves the account is compromised', 'Reactive disablement on one failed login causes user-impact and lockouts without evidence; containment should follow triage, not precede it.'],
       ],
       'Security operations separates noise from incidents by enriching alerts with identity, device, timing, location, and related activity.'),

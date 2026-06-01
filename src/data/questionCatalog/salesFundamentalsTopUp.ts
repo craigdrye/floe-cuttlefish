@@ -28,7 +28,7 @@ export const salesFundamentalsTopUpQuestions: Question[] = makeQuestionBank('Car
         'Derive the ICP from your own winning, low-churn accounts, not someone else’s pipeline.',
       ),
       miss(
-        'The single biggest logo you could theoretically land',
+        'The largest enterprise account a rep can imagine winning someday',
         'One aspirational logo is a trophy, not a profile; it does not tell a rep which segment to work daily.',
         'An ICP is a repeatable pattern across many good-fit accounts, not one dream deal.',
       ),

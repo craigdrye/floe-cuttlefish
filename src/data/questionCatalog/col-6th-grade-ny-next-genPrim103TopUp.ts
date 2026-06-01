@@ -760,7 +760,7 @@ export const col6thGradeNyNextGenPrim103TopUpQuestions: Question[] = makeQuestio
     prompt: 'Which sentence would make the best topic sentence for a paragraph about dogs being good pets?',
     correct: 'Dogs make wonderful pets for many reasons.',
     wrong: [
-      miss('My dog ate breakfast at 7 a.m.', 'This is one small detail, not a sentence that introduces the whole topic.', 'A topic sentence states the big idea of the paragraph.'),
+      miss('Dogs need a walk every day.', 'This is one supporting detail, not a sentence that introduces the whole pets paragraph.', 'A topic sentence states the big idea of the paragraph.'),
       miss('Cats also like to nap.', 'This is about cats, not the topic of dogs as pets.', 'Keep the topic sentence on the paragraph subject.'),
       miss('There are many breeds of fish.', 'This has nothing to do with dogs as pets.', 'Match the topic sentence to the main idea.'),
     ],

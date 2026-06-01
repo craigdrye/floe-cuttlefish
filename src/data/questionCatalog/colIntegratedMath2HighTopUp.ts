@@ -315,7 +315,7 @@ export const colIntegratedMath2HighTopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('2/3', 'Parallel lines share a slope; perpendicular lines need the negative reciprocal.', 'Perpendicular slopes multiply to -1.'),
       miss('3/2', 'You took the reciprocal but forgot the sign change.', 'Flip the fraction AND change the sign.'),
-      miss('-2/3', 'You changed the sign but did not take the reciprocal.', 'Perpendicular slope is the negative reciprocal, so flip the fraction too.'),
+      miss('-2/3', 'This points in the opposite sign direction, but it is still too shallow because the fraction was not flipped.', 'Perpendicular slope is the negative reciprocal, so flip the fraction too.'),
     ],
     lesson: 'Perpendicular slopes are negative reciprocals. The negative reciprocal of 2/3 is -3/2 (their product is -1).',
     source, generated: true,

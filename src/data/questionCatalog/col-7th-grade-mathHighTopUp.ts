@@ -245,7 +245,7 @@ export const colSeventhGradeMathHighTopUpQuestions: Question[] = makeQuestionBan
     prompt: 'A $60 jacket is 30% off. What is the sale price?',
     correct: '$42',
     wrong: [
-      miss('$18', 'That is the discount amount, not the price you pay.', 'Subtract the discount from $60.'),
+      miss('$18', '$18 is the savings from the discount; the jacket still costs the original price minus those savings.', 'Subtract the discount from $60.'),
       miss('$30', 'That treats 30% as $30 off.', '30% of $60 is $18, not $30.'),
       miss('$57', 'That subtracted only $3, using 5% instead of 30%.', 'Find 30% of 60 first.'),
     ],

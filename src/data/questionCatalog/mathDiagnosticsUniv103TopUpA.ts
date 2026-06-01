@@ -344,7 +344,7 @@ export const mathDiagnosticsUniv103TopUpAQuestions: Question[] = makeQuestionBan
     wrong: [
       miss('2/3', 'Parallel lines share a slope, but perpendicular lines do not.', 'A perpendicular slope is the negative reciprocal.'),
       miss('3/2', 'You took the reciprocal but forgot to negate it.', 'A perpendicular slope must also change sign.'),
-      miss('-2/3', 'You changed the sign but did not take the reciprocal.', 'Both flip and negate are required.'),
+      miss('-2/3', 'Negating alone would make a different parallel-ish slope; perpendicular lines need the negative reciprocal.', 'Both flip and negate are required.'),
     ],
     lesson: 'Perpendicular slopes are negative reciprocals. The reciprocal of 2/3 is 3/2, and negating gives -3/2. The product of perpendicular slopes always equals -1.',
     source,
@@ -387,7 +387,7 @@ export const mathDiagnosticsUniv103TopUpAQuestions: Question[] = makeQuestionBan
     prompt: 'How many solutions does the system y = 2x + 1 and y = 2x - 3 have?',
     correct: 'No solution',
     wrong: [
-      miss('Exactly one solution', 'Lines with equal slopes but different intercepts never intersect.', 'Compare the slopes of the two lines.'),
+      miss('Exactly one solution', 'A single solution would require the lines to cross, but equal slopes make these two lines parallel.', 'Compare the slopes of the two lines.'),
       miss('Infinitely many solutions', 'Coincident lines share both slope and intercept, but these intercepts differ.', 'Check whether the lines are identical or merely parallel.'),
       miss('Exactly two solutions', 'Two straight lines can intersect at most once, never twice.', 'Linear systems have 0, 1, or infinitely many solutions.'),
     ],

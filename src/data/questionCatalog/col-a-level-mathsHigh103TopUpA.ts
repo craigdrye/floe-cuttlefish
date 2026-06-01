@@ -402,7 +402,7 @@ export const colALevelMathsHigh103TopUpAQuestions: Question[] = makeQuestionBank
     mentorHint: 'In 0 to 360 degrees, sin(x) = positive value has two solutions.',
     correct: 'x = 30 degrees or x = 150 degrees',
     wrong: [
-      miss('x = 30 degrees only', 'Sine is also positive in the second quadrant, giving a second solution.', 'In 0 to 360 degrees, sin(x) = positive value has two solutions.'),
+      miss('x = 30 degrees only', 'That finds the reference angle but misses its second-quadrant partner, 180 - 30 = 150 degrees.', 'In 0 to 360 degrees, sin(x) = positive value has two solutions.'),
       miss('x = 30 degrees or x = 210 degrees', '210 degrees has a negative sine, so it does not satisfy sin(x) = 0.5.', 'The second solution is 180 - 30 = 150 degrees, where sine stays positive.'),
       miss('x = 60 degrees or x = 120 degrees', 'sin(60) = sqrt(3)/2, not 0.5; the base angle is 30 degrees.', 'arcsin(0.5) = 30 degrees, not 60 degrees.'),
     ],

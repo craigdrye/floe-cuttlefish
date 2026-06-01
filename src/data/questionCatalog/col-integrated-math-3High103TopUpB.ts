@@ -393,7 +393,7 @@ export const colIntegratedMath3High103TopUpBQuestions: Question[] = makeQuestion
     prompt: 'Add: 2/x + 3/(x + 1). Express as a single fraction.',
     correct: '(5x + 2) / (x(x + 1))',
     wrong: [
-      miss('5 / (2x + 1)', 'This adds numerators and denominators directly, which is not how fractions add.', 'Find a common denominator before combining.'),
+      miss('5 / (2x + 1)', 'This combines the tops and bottoms separately, but rational expressions need a shared denominator before their numerators can merge.', 'Find a common denominator before combining.'),
       miss('(2x + 3) / (x(x + 1))', 'This forgets to distribute when writing each numerator over the common denominator.', 'Rewrite 2/x as 2(x+1) over the common denominator.'),
       miss('(5x + 3) / (x(x + 1))', 'This miscombines the constant terms; 2(x+1) contributes a +2, not +3.', 'Expand 2(x + 1) + 3x carefully.'),
     ],

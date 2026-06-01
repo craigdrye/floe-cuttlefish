@@ -521,7 +521,7 @@ export const col3rdGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
     correct: 'Centimeters',
     wrong: [
       miss('Kilometers', 'Kilometers fits long travel distances, not the smaller measure asked for here.', 'A pencil is small, so use a small unit.'),
-      miss('Liters', 'Liters is for liquid volume, not measuring how long something is.', 'You want to measure how long the pencil is.'),
+      miss('Liters', 'Liters tell how much liquid a container holds; a pencil needs a length unit instead.', 'You want to measure how long the pencil is.'),
       miss('Kilograms', 'Kilograms measure weight, not length.', 'Length is best measured in centimeters here.'),
     ],
     lesson: 'We pick units that fit the size of the object. A pencil is small, so centimeters work well. Kilometers are for long distances, liters are for liquids, and kilograms are for weight.',

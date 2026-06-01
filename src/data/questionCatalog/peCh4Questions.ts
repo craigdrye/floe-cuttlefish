@@ -242,7 +242,7 @@ export const peCh4Questions: Question[] = [
     [
       ['Raise list prices 50% across all customers tomorrow with no segmentation', 'Blanket 50% increases create concentrated churn. Pricing playbooks segment, grandfather, and stage — they do not announce flat increases.'],
       ['Keep prices flat to preserve goodwill and rely on volume growth', 'Flat prices on a product with proven ROI is leaving real EBITDA on the table. The playbook exists because vertical SaaS is consistently under-priced at the time of acquisition.'],
-      ['Cut prices to drive logo growth and worry about monetization later', 'Cutting prices on a software product with strong NRR signals that the sponsor does not understand the asset. The playbook moves the other direction.'],
+      ['Lower prices broadly to maximize customer count before studying monetization', 'Cutting prices on a software product with strong NRR signals that the sponsor does not understand the asset. The playbook moves the other direction.'],
     ],
     'Vertical SaaS playbooks repeat because acquired software companies are typically under-priced relative to value delivered. The discipline is in segmentation and staging — not in the headline price change.'),
 

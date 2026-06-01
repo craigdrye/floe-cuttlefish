@@ -179,7 +179,7 @@ export const colGetReadyForAlgebra2High103TopUpBQuestions: Question[] = makeQues
     prompt: 'What is the value of 2^(-3)?',
     correct: '1/8',
     wrong: [
-      miss('-8', 'A negative exponent does not make the result negative; it means a reciprocal.', 'A negative exponent gives 1 over the positive power.'),
+      miss('-8', 'The negative sign is in the exponent, so it flips 2^3 to 1/8 instead of making the result -8.', 'A negative exponent gives 1 over the positive power.'),
       miss('-6', 'This multiplies the base by the exponent instead of using the exponent as a power.', 'The exponent tells you how many times to multiply, then take the reciprocal.'),
       miss('8', 'This computes 2^3 but ignores the negative sign that calls for a reciprocal.', 'The negative sign flips the power into a fraction.'),
     ],

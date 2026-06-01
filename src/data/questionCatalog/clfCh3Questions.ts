@@ -179,7 +179,7 @@ export const clfCh3Questions: Question[] = [
     'Those accounts had a yield threshold the new terms no longer meet — they were marginal buyers, not core conviction holders',
     [
       ['Accounts must accept the flexed terms or face penalties from the arranger', 'Loan investors retain discretion through the commitment period. Reverse-flexing tighter is a renegotiation; investors can walk if the new terms do not clear their hurdle rate.'],
-      ['The flex was illegal and the arranger has to revert', 'Flex (in either direction) is contractually allowed in the commitment letter within agreed boundaries. Reverse flex is a normal feature, not a violation.'],
+      ['The arranger must revert because pricing can only flex wider', 'Commitment papers typically permit flex within agreed boundaries in either direction. Reverse flex is a normal feature, not a violation.'],
       ['Those accounts are signaling credit concerns about the borrower', 'Credit-driven drops would show up in the original book. Drops after a reverse flex are usually pure yield-threshold drops — the credit was fine at the wider price, not at the tighter one.'],
     ],
     'When reverse flex pushes pricing tighter, the marginal yield-sensitive accounts fall away. The arrangers watch carefully — losing too much of the book at the new terms means the flex went too far and the deal may need to flex back out.'),

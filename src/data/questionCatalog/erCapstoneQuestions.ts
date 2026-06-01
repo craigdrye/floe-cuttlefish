@@ -361,7 +361,7 @@ export const erCapstoneQuestions: Question[] = [
     [
       ['Extrapolate net new logos at the last-year rate and assume the trend continues', 'Trend extrapolation breaks down precisely when the buy-side cares — at the inflection points. Sales capacity grounding lets the model anticipate inflection rather than ride past it.'],
       ['Tie net new logos to addressable market penetration (e.g., assume 10% of remaining addressable logos per year)', 'Penetration-based forecasts are usually too smooth and too aggressive — they assume the sales motion can absorb a constant share each year, which rarely matches the actual hiring and ramping cadence.'],
-      ['Take management\'s long-term logo target and back-solve a smooth path to it', 'Back-solving from management targets is the opposite of independent forecasting. The model should be built from drivers and compared to targets, not constructed to land on them.'],
+      ['Start from management\'s long-term customer target and force a smooth annual path toward it', 'Back-solving from management targets is the opposite of independent forecasting. The model should be built from drivers and compared to targets, not constructed to land on them.'],
     ],
     'Logo additions are bounded by sales capacity, which is a real, modelable constraint — heads × productivity × ramp. Grounding the forecast there is what makes it defensible under buy-side cross-examination and what lets it predict inflections rather than ride past them.'),
 
@@ -370,7 +370,7 @@ export const erCapstoneQuestions: Question[] = [
     'Model ACV at the cohort level — new logos land at ~$300K and ramp toward $500K over 4–6 years through module attach; explicitly separate the new-logo land ACV from the installed-base expansion ACV',
     [
       ['Use a blended ACV that grows at 5% per year to reflect the cross-sell story', 'A blended 5% ACV growth rate hides the cohort dynamics. Cross-sell is unevenly distributed — top-50 health systems attach faster than community hospitals — so blending erases the most useful signal.'],
-      ['Hold ACV flat and let revenue growth come purely from logo additions', 'Holding ACV flat ignores the platform expansion thesis. If the thesis claims cross-sell drives part of the growth, the model has to reflect it.'],
+      ['Hold average contract value flat and let revenue growth come only from new customers', 'Holding ACV flat ignores the platform expansion thesis. If the thesis claims cross-sell drives part of the growth, the model has to reflect it.'],
       ['Model ACV at the long-term steady-state level ($500K) across all customers from year 1', 'Putting all customers at steady-state ACV from year 1 overstates near-term revenue and breaks the cohort logic. The whole point of the ramp is to show how the platform thesis plays out over time.'],
     ],
     'ACV modeling at the cohort level — separating new-logo land ACV from installed-base expansion — is the discipline that makes the cross-sell story testable. The buy-side will probe both numbers separately, so the model has to support that decomposition rather than collapse it.'),

@@ -426,7 +426,7 @@ export const wordBuildersPrim103TopUpQuestions: Question[] = makeQuestionBank('P
     prompt: 'Add the suffix "ful" to "help". What does "helpful" mean?',
     correct: 'full of help',
     wrong: [
-      miss('without help', 'The suffix "ful" means full of, not without.', 'Think about what "ful" adds to a word.'),
+      miss('without help', 'Without help would be helpless; helpful is the opposite little word-build.', 'Think about what "ful" adds to a word.'),
       miss('a little help', 'The suffix "ful" means full of, so plenty of help.', 'Helpful means giving lots of help.'),
       miss('asking for help', 'The suffix "ful" does not mean asking.', 'What does it mean to be full of help?'),
     ],

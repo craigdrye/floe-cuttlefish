@@ -559,7 +559,7 @@ export const col9thGradeReadingVocabHighTopUpQuestions: Question[] = makeQuestio
     correct: 'A peer-reviewed study published in a medical journal.',
     wrong: [
       miss('An anonymous comment on a social media post.', 'Anonymous, unreviewed comments have no accountability or verification, making them unreliable.', 'Ask who wrote it and whether it was checked by experts.'),
-      miss('A blog post by a company selling the vaccine.', 'A seller has a financial interest, creating bias; that conflict undermines credibility.', 'Watch for a financial stake that biases the source.'),
+      miss('A manufacturer webpage summarizing its own vaccine trial.', 'The maker has a financial interest, so its summary should be checked against independent peer-reviewed evidence.', 'Watch for a financial stake that biases the source.'),
       miss('A meme shared widely by friends.', 'Popularity is not accuracy; memes lack sourcing, authorship, and review.', 'Sharing a lot is not the same as being correct.'),
     ],
     lesson: 'Credible sources have identifiable expert authors, verification (such as peer review), and minimal conflicts of interest. A peer-reviewed medical study meets these tests far better than anonymous comments, a seller\'s blog (financial bias), or a popular meme (no sourcing). Judge sources by authority, evidence, and bias, not by popularity.',

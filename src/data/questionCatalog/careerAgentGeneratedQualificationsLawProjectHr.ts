@@ -906,7 +906,7 @@ const careerAgentGeneratedQualificationsLawProjectHrBaseQuestionsByTrack: Record
       'Investigate root causes, reinforce reporting, and implement preventive controls before an injury occurs',
       [
         ['Wait for an injury because near misses are not data', 'Near misses are the highest-value safety data — they precede injuries.'],
-        ['Treat reporters as the problem because the dashboard looks worse after reports rise', 'Punishing reporters destroys reporting culture and hides risk.'],
+        ['Treat the increase in reports as proof that the reporting process is causing the risk', 'Punishing or blaming reporting destroys reporting culture and hides risk.'],
         ['Treat safety as unrelated to HR because equipment is involved', 'Safety is an integrated HR responsibility, including reporting culture and training.'],
       ],
       'Near misses are early warnings. A strong safety culture learns before harm becomes the teacher.'),

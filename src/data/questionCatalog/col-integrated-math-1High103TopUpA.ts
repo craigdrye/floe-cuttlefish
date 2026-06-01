@@ -394,7 +394,7 @@ export const colIntegratedMath1High103TopUpAQuestions: Question[] = makeQuestion
     wrong: [
       miss('1/4', 'That is the same slope, which gives a parallel line, not a perpendicular one.', 'Perpendicular slopes are negative reciprocals.'),
       miss('4', 'You took the reciprocal but did not change the sign.', 'A negative reciprocal also flips the sign.'),
-      miss('−1/4', 'You changed the sign but did not take the reciprocal.', 'Flip 1/4 to 4 and make it negative.'),
+      miss('−1/4', 'That keeps the same fraction size; perpendicular slope needs the flipped fraction as well as the opposite sign.', 'Flip 1/4 to 4 and make it negative.'),
     ],
     lesson: 'Perpendicular lines have slopes that are negative reciprocals, whose product is −1. The negative reciprocal of 1/4 is −4, since (1/4)(−4) = −1.',
     source,

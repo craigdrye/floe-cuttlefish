@@ -118,7 +118,7 @@ export const colGetReadyForAlgebra2High103TopUpAQuestions: Question[] = makeQues
     prompt: 'Simplify x^4 times x^7.',
     correct: 'x^11',
     wrong: [
-      miss('x^28', 'This multiplied the exponents instead of adding them.', 'When multiplying like bases, exponents add, not multiply.'),
+      miss('x^28', 'This treats x^4 times x^7 like (x^4)^7; here you are combining two piles of x factors.', 'When multiplying like bases, exponents add, not multiply.'),
       miss('x^3', 'This subtracted the exponents as if dividing.', 'Subtraction of exponents is for division of like bases.'),
       miss('2x^11', 'This added a coefficient of 2 that does not belong.', 'There is one x raised to a power, not two added together.'),
     ],

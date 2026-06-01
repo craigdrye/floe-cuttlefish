@@ -30,7 +30,7 @@ export const professionalEthicsR2Questions: Question[] = makeQuestionBank('Caree
     correct: 'Legality sets a floor, not a ceiling; conduct can be lawful yet still breach professional and ethical standards',
     wrong: [
       miss('If it is legal, it is automatically ethical, because law encodes society’s morality', 'Law is a minimum enforceable standard that lags behind ethics; many harmful practices stay legal long before they are banned.', 'Treat law as a floor you can rise above, not a complete moral test.'),
-      miss('If it is unethical, it must already be illegal somewhere', 'Plenty of exploitative-but-legal practices exist precisely because regulation has not caught up; unethical does not imply illegal.', 'Ethics often runs ahead of what statutes currently prohibit.'),
+      miss('If it is unethical, regulators must already have banned it', 'Plenty of exploitative-but-legal practices exist precisely because regulation has not caught up; unethical conduct is not always already prohibited.', 'Ethics often runs ahead of what statutes currently prohibit.'),
       miss('Ethics is irrelevant once a lawyer confirms the practice is lawful', 'Legal sign-off answers the legal question only; professional ethics still asks whether the conduct is defensible and fair.', 'A lawyer clears legal risk, not the separate ethical question.'),
     ],
     lesson: 'Legal compliance is the minimum standard, not the goal. Professional ethics asks a further question: even if we can do this without breaking the law, should we, given the harm, the trust involved, and how it would look if disclosed. Many scandals began as practices that were technically legal at the time.',

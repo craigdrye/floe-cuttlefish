@@ -43,7 +43,7 @@ export const colEighthGradeMathHighTopUpQuestions: Question[] = makeQuestionBank
     prompt: 'Evaluate 2⁻³.',
     correct: '1/8',
     wrong: [
-      miss('-8', 'A negative exponent does not make the value negative; it means take the reciprocal.', 'Negative exponent means reciprocal, not negative number.'),
+      miss('-8', 'This treats the negative exponent like a negative coefficient, but it actually flips 2^3 into the denominator.', 'Negative exponent means reciprocal, not negative number.'),
       miss('-6', 'That multiplies 2 by -3 instead of using the exponent rule.', 'An exponent means repeated multiplication, then reciprocal.'),
       miss('6', 'That is 2 × 3; the exponent is not multiplication of the base by the power.', '2³ = 8 first, then apply the negative sign of the exponent.'),
     ],
@@ -348,7 +348,7 @@ export const colEighthGradeMathHighTopUpQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('y = 3x + 1', 'This is in y = mx + b form, so it graphs as a straight line — linear.', 'A first-power x with a constant is linear.'),
       miss('y = -2x', 'This is proportional and linear, graphing as a straight line through the origin.', 'A single x term to the first power is linear.'),
-      miss('y = 7', 'A constant function graphs as a horizontal line, which is still linear.', 'Horizontal lines are linear functions.'),
+      miss('y = 7', 'A constant output still makes a straight line: it is horizontal, with slope 0.', 'Horizontal lines are linear functions.'),
     ],
     lesson: 'A linear function has the form y = mx + b and graphs as a straight line. y = x² has x to the second power, so its graph is a curve (a parabola) and the rate of change is not constant — it is nonlinear.',
     source,

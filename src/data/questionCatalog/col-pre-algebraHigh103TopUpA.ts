@@ -590,7 +590,7 @@ export const colPreAlgebraHigh103TopUpAQuestions: Question[] = makeQuestionBank(
     prompt: 'What is 1/3 + 1/4?',
     correct: '7/12',
     wrong: [
-      miss('2/7', 'This adds numerators and denominators directly, which is not how fractions add.', 'Find a common denominator before adding.'),
+      miss('2/7', 'The denominator names the size of each piece; adding 3 and 4 would invent sevenths instead of matching the pieces.', 'Find a common denominator before adding.'),
       miss('2/12', 'This finds a common denominator but adds the numerators wrong.', 'Convert each fraction to twelfths, then add the numerators.'),
       miss('1/7', 'This adds across in a way that loses both the common denominator and correct numerator.', 'Rewrite as 4/12 + 3/12 first.'),
     ],

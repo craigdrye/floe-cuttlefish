@@ -675,7 +675,7 @@ export const personalFinanceQuestions: Question[] = makeQuestionBank('Career Ski
     prompt: 'Why is keeping all your long-term savings in cash a quiet risk?',
     correct: 'Inflation erodes its buying power over time',
     wrong: [
-      miss('Cash is illegal to hold in large amounts', 'Holding cash savings is perfectly legal; the issue is lost purchasing power, not legality.', 'There is nothing illegal about savings. The hidden cost is inflation eating value.'),
+      miss('Cash keeps the same buying power as long as the dollar amount stays the same', 'The dollar amount can stay fixed while inflation makes each dollar buy less.', 'The hidden cost is inflation eating value.'),
       miss('Banks always lose your money eventually', 'Insured bank deposits are protected; the real risk to idle cash is inflation, not bank loss.', 'Insured deposits are safe from bank failure. Inflation is the slow leak to watch.'),
       miss('Cash earns higher returns than any investment', 'Over the long run cash usually trails investments and barely keeps up with inflation.', 'Cash typically lags investments long term. That underperformance is the point.'),
     ],

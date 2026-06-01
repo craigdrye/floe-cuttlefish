@@ -493,7 +493,7 @@ export const colGetReadyFor8thGradeHigh103TopUpBQuestions: Question[] = makeQues
     correct: '54 square cm',
     wrong: [
       miss('27 square cm', 'This is the volume (3 cubed), not the surface area.', 'Surface area counts the outer faces, not the inside.'),
-      miss('9 square cm', 'This is the area of just one face, not all six.', 'A cube has six identical faces.'),
+      miss('9 square cm', 'One face is 9 square cm, but the cube has six matching faces wrapped around it.', 'A cube has six identical faces.'),
       miss('18 square cm', 'This counted only two faces or doubled one face.', 'Multiply one face\'s area by 6.'),
     ],
     lesson: 'A cube has 6 identical square faces. Each face has area 3 x 3 = 9 square cm, so the total surface area is 6 x 9 = 54 square cm. Surface area (square units) differs from volume (cubic units).',

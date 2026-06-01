@@ -3704,7 +3704,7 @@ export const series79Questions: Question[] = makeQuestionBank('Career Skills', [
     correct: 'Receives priority over pre-petition unsecured creditors, with court approval',
     wrong: [
       miss('Is subordinated to all pre-petition debt', 'DIP financing has super-priority, not subordination.', 'DIP is senior, not junior.'),
-      miss('Is illegal during bankruptcy proceedings', 'DIP is encouraged to keep businesses operating.', 'DIP is a feature of Ch. 11.'),
+      miss('Is available only after the company exits Chapter 11', 'DIP financing is designed for the in-bankruptcy period, when the debtor still needs operating liquidity.', 'DIP is a feature of Ch. 11.'),
       miss('Is provided only by the SBA', 'DIP comes from private lenders, not the SBA.', 'Private lenders provide DIP.'),
     ],
     lesson: 'DIP financing enables continued operations during Chapter 11. Section 364 gives it super-priority and often a lien priming pre-petition creditors, subject to court approval and adequate protection.',

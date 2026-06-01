@@ -406,7 +406,7 @@ export const colClimateProjectHigh103TopUpBQuestions: Question[] = makeQuestionB
     prompt: 'A news segment gives equal airtime to one scientist representing the consensus and one fringe contrarian, presenting them as equally weighty. Why is this "false balance" a problem?',
     correct: 'It implies the evidence is evenly split when the vast majority of evidence supports one side',
     wrong: [
-      miss('Both guests should have been removed because debate is never useful', 'Debate can be useful; the issue is misrepresenting the weight of evidence, not allowing discussion at all.', 'The problem is the misleading 50-50 framing, not debate itself.'),
+      miss('The contrarian view should receive equal time whenever any disagreement exists', 'Debate can be useful, but airtime should not imply equal evidentiary weight where the evidence is not evenly split.', 'The problem is the misleading 50-50 framing, not debate itself.'),
       miss('The segment is balanced as long as both guests sound confident', 'Confidence is not evidentiary weight; the format misleads when it presents fringe and consensus views as equal.', 'The fix is proportion to the evidence, not more time for the minority.'),
       miss('A 50-50 format is always fair because climate policy is controversial', 'Controversy in politics does not mean the scientific evidence is evenly split.', 'The format is a choice, and this choice misleads.'),
     ],

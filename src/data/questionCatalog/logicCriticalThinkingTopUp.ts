@@ -835,7 +835,7 @@ export const logicCriticalThinkingTopUpQuestions: Question[] = makeQuestionBank(
     correct: 'Leave the site and open new tabs to see what independent sources say about it (lateral reading)',
     wrong: [
       miss(
-        'Stay on the page and study its design, logo, and "About" section carefully',
+        'Stay on the page and rely on its design, branding, and "About" section',
         'That is vertical reading — the very approach that fooled professors and students by trusting polished presentation.',
         'Judging a source by its own self-presentation is exactly what failed in the study.',
       ),

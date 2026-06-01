@@ -196,7 +196,7 @@ export const colEurekaMathFoundations3rd8thGradePrim103TopUpQuestions: Question[
     correct: '2/4',
     wrong: [
       miss('1/4', 'If the whole is split into 4 equal parts, one half is 2 parts, not just 1 part.', 'Half of 4 parts is 2 parts.'),
-      miss('2/3', '2/3 covers more than half of the whole, so it is too large for a one-half answer.', 'For halves, the top should be half of the bottom.'),
+      miss('2/3', 'Two thirds is bigger than one half because two parts out of three is more than halfway across the whole.', 'For halves, the top should be half of the bottom.'),
       miss('1/3', 'One third is less than one half.', 'In an equal fraction to 1/2, the top is half the bottom.'),
     ],
     lesson: 'Equivalent fractions name the same amount in different ways. If you cut each half in two, one half becomes 2/4. The top is still half of the bottom, so 2/4 equals 1/2.',
@@ -531,7 +531,7 @@ export const colEurekaMathFoundations3rd8thGradePrim103TopUpQuestions: Question[
     wrong: [
       miss('kilometers', 'kilometers fits long travel distances, not the smaller measure asked for here.', 'A pencil is small, so use a small unit.'),
       miss('meters', 'A meter is much longer than a pencil.', 'Pick a unit closer to the pencil size.'),
-      miss('liters', 'liters is for liquid volume, not measuring how long something is.', 'Length needs a length unit.'),
+      miss('liters', 'liters measure how much liquid fits inside something; they do not measure the pencil’s length.', 'Length needs a length unit.'),
     ],
     lesson: 'We pick units that fit the size of what we measure. A pencil is small, so centimeters fit well. Kilometers are for long distances, and liters measure liquids.',
     source,

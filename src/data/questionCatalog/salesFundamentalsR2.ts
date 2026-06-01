@@ -663,7 +663,7 @@ export const salesFundamentalsR2Questions: Question[] = makeQuestionBank('Career
     wrong: [
       miss('Because a high forecast can never be achieved in practice', 'High forecasts can be achievable; the issue is reliability, not that ambition is impossible.', 'The concern is accuracy, not that big numbers are fake.'),
       miss('Because accuracy is only relevant for the finance team', 'Accurate forecasts inform sales, operations, hiring, and the board, not finance alone.', 'Many teams rely on the forecast, not just finance.'),
-      miss('Because inaccurate forecasts are illegal for public companies', 'Forecast misses are not in themselves illegal; the issue is operational planning reliability.', 'It is about trust and planning, not legality.'),
+      miss('Because one miss automatically invalidates the whole sales process', 'A single miss can happen; the issue is repeated unreliability that damages operational planning.', 'It is about trust and planning, not one bad quarter.'),
     ],
     lesson: 'Companies plan hiring, spending, supply, and guidance based on the sales forecast, so a number that is consistently reliable is worth more than an inflated one that misses. A predictable forecast, even if modest, lets the business plan with confidence. Repeated misses, high or low, erode trust and force costly mid-course corrections.',
     source,

@@ -468,7 +468,7 @@ export const naplanYear5Prim103TopUpQuestions: Question[] = makeQuestionBank('Pr
     prompt: 'Maria woke up, ate breakfast, then walked to school. What did she do first?',
     correct: 'Woke up',
     wrong: [
-      miss('Ate breakfast', 'Eating breakfast came after waking up.', 'The first thing happens before everything else.'),
+      miss('Had her morning meal', 'That came after waking up, so it was not the first event.', 'The first thing happens before everything else.'),
       miss('Walked to school', 'Walking to school was the last thing she did.', 'Look for the event at the start of the sentence.'),
       miss('Went to bed', 'Going to bed is not even mentioned in the sentence.', 'Only pick from the events in the text.'),
     ],

@@ -302,7 +302,7 @@ export const col6thGradeReadingAndVocabPrim103TopUpQuestions: Question[] = makeQ
     prompt: 'The suffix -less means without. What does fearless mean?',
     correct: 'Without fear',
     wrong: [
-      miss('Full of fear', 'The suffix -less means without, not full of.', 'Think about having none of something.'),
+      miss('Full of fear', 'That would be fearful; fearless uses -less to take the fear away.', 'Think about having none of something.'),
       miss('A little bit afraid', 'A little is not the same as without.', 'Fearless means with no fear at all.'),
       miss('Afraid again', 'Again is the meaning of re-, not -less.', 'The suffix -less takes the thing away.'),
     ],

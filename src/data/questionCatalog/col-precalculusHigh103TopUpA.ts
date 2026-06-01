@@ -567,7 +567,7 @@ export const colPrecalculusHigh103TopUpAQuestions: Question[] = makeQuestionBank
     wrong: [
       miss('(4, -7)', 'This subtracts the components instead of adding them.', 'Add matching components: 3 + (-1) and -2 + 5.'),
       miss('(2, 7)', 'The y-component is wrong; -2 + 5 equals 3, not 7.', 'Carefully add the second components: -2 plus 5.'),
-      miss('(-3, -10)', 'This multiplies the components rather than adding them.', 'Vector addition combines components by addition, not multiplication.'),
+      miss('(-3, -10)', 'That multiplies 3 by -1 and -2 by 5, but u + v asks for component-wise sums.', 'Vector addition combines components by addition, not multiplication.'),
     ],
     lesson: 'Vectors are added component by component: u + v = (u1 + v1, u2 + v2). Here (3 + (-1), -2 + 5) = (2, 3). This mirrors placing the vectors tip to tail in the plane.',
     source,

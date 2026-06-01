@@ -305,7 +305,7 @@ export const colEurekaMathAlgebraIHigh103TopUpBQuestions: Question[] = makeQuest
     correct: 'x = 3 or x = -5',
     wrong: [
       miss('x = -3 or x = 5', 'This factors as (x + 3)(x - 5), which gives +2 wrong: that product has middle term -2x.', 'Find numbers multiplying to -15 and adding to +2.'),
-      miss('x = 15 or x = -1', 'These multiply to -15 but add to 14, not 2.', 'The two roots must sum to the opposite of the middle coefficient.'),
+      miss('x = 15 or x = -1', 'Those roots would make the factor numbers -15 and +1, whose sum gives the wrong middle term.', 'The two roots must sum to the opposite of the middle coefficient.'),
       miss('x = 3 or x = 5', 'Both roots positive would multiply to +15, but the constant is -15.', 'A negative constant means the roots have opposite signs.'),
     ],
     lesson: 'Factor x^2 + 2x - 15 by finding numbers that multiply to -15 and add to +2: those are +5 and -3, giving (x + 5)(x - 3) = 0. Setting each factor to zero gives x = -5 or x = 3. A negative constant tells you the two roots have opposite signs.',

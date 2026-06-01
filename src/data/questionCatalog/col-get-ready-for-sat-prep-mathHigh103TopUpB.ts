@@ -510,7 +510,7 @@ export const colGetReadyForSatPrepMathHigh103TopUpBQuestions: Question[] = makeQ
     prompt: 'What is the value of 2^(-3)?',
     correct: '1/8',
     wrong: [
-      miss('-8', 'A negative exponent does not make the result negative; it means a reciprocal.', 'Negative exponents create fractions, not negative values.'),
+      miss('-8', 'This has the right positive power but the wrong role for the minus: it belongs to reciprocal-making, not sign-changing.', 'Negative exponents create fractions, not negative values.'),
       miss('-6', 'This multiplies the base by the exponent (2 times minus 3) instead of using exponent rules.', 'An exponent means repeated multiplication, not multiplication of base and exponent.'),
       miss('1/6', 'This computes 1 over (2 times 3) instead of 1 over 2-cubed.', 'The denominator is 2^3 = 8, not 2 times 3.'),
     ],

@@ -667,7 +667,7 @@ export const understandingLonelinessR2Questions: Question[] = makeQuestionBank('
     wrong: [
       miss('Only practical help, with no emotional component', 'Widowhood strikes hard precisely because it severs a deep emotional bond, not just chores.', 'Ask whether the loss is merely logistical or also deeply emotional.'),
       miss('Nothing significant, since friends easily replace a spouse', 'A spouse is not readily replaceable; the loss commonly brings profound loneliness.', 'Recall whether such a loss is minor or major for connection.'),
-      miss('Only the social network, leaving intimacy untouched', 'It removes the closest intimate bond as well as shared social life, hitting both types.', 'Think about whether intimacy survives the loss of a partner.'),
+      miss('Only the wider friend network, with the closest bond unaffected', 'It removes the closest intimate bond as well as shared social life, hitting both types.', 'Think about whether intimacy survives the loss of a partner.'),
     ],
     lesson: 'Bereavement, especially of a spouse, can trigger both emotional loneliness (the loss of the closest attachment) and social loneliness (the couple’s shared friends and routines fade). That dual blow is why widowhood is one of the highest-risk transitions. Support that acknowledges both layers, the intimate loss and the shrunken network, helps most.',
     source,

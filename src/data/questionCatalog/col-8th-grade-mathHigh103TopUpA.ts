@@ -119,7 +119,7 @@ export const col8thGradeMathHigh103TopUpAQuestions: Question[] = makeQuestionBan
     prompt: 'Evaluate 3⁻².',
     correct: '1/9',
     wrong: [
-      miss('-9', 'A negative exponent does not make the value negative; it means take the reciprocal.', 'Negative exponent means reciprocal, not negative.'),
+      miss('-9', 'The minus sign is attached to the exponent rule, not the answer; 3^-2 means 1 over 3^2.', 'Negative exponent means reciprocal, not negative.'),
       miss('-6', 'That multiplies 3 by -2; an exponent is repeated multiplication, not this.', 'Compute 3² first, then reciprocate.'),
       miss('9', 'That is 3²; the negative exponent should flip it to a reciprocal.', 'A negative exponent puts the power in the denominator.'),
     ],
@@ -454,7 +454,7 @@ export const col8thGradeMathHigh103TopUpAQuestions: Question[] = makeQuestionBan
     wrong: [
       miss('y = 5x - 2', 'This is in y = mx + b form, so it graphs as a straight line — linear.', 'A first-power x with a constant is linear.'),
       miss('y = -4x', 'This is proportional and linear, graphing as a straight line through the origin.', 'A single x term to the first power is linear.'),
-      miss('y = 10', 'A constant function graphs as a horizontal line, which is still linear.', 'Horizontal lines are linear functions.'),
+      miss('y = 10', 'This has slope 0, so its graph is a straight horizontal line rather than a curved nonlinear graph.', 'Horizontal lines are linear functions.'),
     ],
     lesson: 'A linear function has the form y = mx + b and graphs as a straight line. y = x³ has x to the third power, so its graph is a curve and the rate of change is not constant — it is nonlinear.',
     source,

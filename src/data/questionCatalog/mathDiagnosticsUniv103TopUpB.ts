@@ -342,7 +342,7 @@ export const mathDiagnosticsUniv103TopUpBQuestions: Question[] = makeQuestionBan
     prompt: 'Find all solutions of 2*sin(x) - 1 = 0 in the interval [0, 2*pi).',
     correct: 'x = pi/6 and x = 5*pi/6',
     wrong: [
-      miss('x = pi/6 only', 'Sine is also positive in the second quadrant, giving a second solution.', 'Consider every quadrant where sine equals 1/2.'),
+      miss('x = pi/6 only', 'Solving 2*sin(x) - 1 = 0 gives sin(x) = 1/2, which happens in both quadrants I and II.', 'Consider every quadrant where sine equals 1/2.'),
       miss('x = pi/6 and x = 7*pi/6', '7*pi/6 is in quadrant III, where sine is negative, so it does not satisfy sin = 1/2.', 'The supplement of pi/6 is 5*pi/6, not 7*pi/6.'),
       miss('x = pi/3 and x = 2*pi/3', 'These solve sin(x) = the square root of 3 over 2, not sin(x) = 1/2.', 'Solve sin(x) = 1/2 specifically.'),
     ],

@@ -474,7 +474,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     mentorHint: 'Compare the slopes before assuming they cross.',
     correct: 'No solution',
     wrong: [
-      miss('Exactly one solution', 'Lines with equal slopes but different intercepts never intersect.', 'Compare the slopes before assuming they cross.'),
+      miss('Exactly one solution', 'Both equations have slope 3, so the lines run parallel instead of crossing once.', 'Compare the slopes before assuming they cross.'),
       miss('Infinitely many solutions', 'Infinitely many requires identical lines, but the intercepts differ.', 'These lines are parallel, not the same.'),
       miss('Exactly two solutions', 'Two straight lines can meet at most once, never twice.', 'Linear systems do not have two solutions.'),
     ],
@@ -608,7 +608,7 @@ export const colAlgebra1NyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
     mentorHint: 'When multiplying like bases, add the exponents.',
     correct: 'x^8',
     wrong: [
-      miss('x^15', 'This multiplied the exponents instead of adding them.', 'When multiplying like bases, add the exponents.'),
+      miss('x^15', 'That uses the power-of-a-power move; for x^5 times x^3, the five x factors and three x factors make eight total.', 'When multiplying like bases, add the exponents.'),
       miss('x^2', 'This subtracted the exponents, which applies to division.', 'Subtraction of exponents is for quotients.'),
       miss('2x^8', 'There is no coefficient of 2; only the exponents combine.', 'The base stays a single x; just add exponents.'),
     ],

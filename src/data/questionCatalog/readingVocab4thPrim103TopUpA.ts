@@ -285,7 +285,7 @@ export const readingVocab4thPrim103TopUpAQuestions: Question[] = makeQuestionBan
     prompt: 'A suffix is a word part added to the end of a word. The suffix "-ful" means "full of." What does "joyful" mean?',
     correct: 'Full of joy',
     wrong: [
-      miss('Without any joy', 'The suffix "-ful" means full of, not without.', 'Think about what "-ful" adds to the word "joy."'),
+      miss('Without any joy', 'That would point toward joyless; joyful adds -ful, so the word gains joy rather than loses it.', 'Think about what "-ful" adds to the word "joy."'),
       miss('A little bit of joy', 'The suffix "-ful" means full, not a little.', 'Remember "-ful" means full of.'),
       miss('Joy that is gone', 'The suffix "-ful" is about having a lot of something.', 'Add the meaning "full of" to the word "joy."'),
     ],
