@@ -2,6 +2,25 @@ import { makeQuestionBank } from './base'
 
 const miss = (answer: string, why: string, hint: string): [string, string, string] => [answer, why, hint]
 
+function lessonFor(chapter: string, title: string, correct: string) {
+  if (/motion|graphing|momentum/i.test(chapter)) {
+    return `${title} is about describing how motion changes. The useful answer is "${correct}"; track which quantity is changing and whether the relationship uses slope, time, force, or momentum.`
+  }
+  if (/forces/i.test(chapter)) {
+    return `${title} is about interactions, not one-way pushes. The useful answer is "${correct}"; identify the paired forces and remember that equal-and-opposite forces act on different objects.`
+  }
+  if (/energy/i.test(chapter)) {
+    return `${title} is about energy transfer or conservation. The useful answer is "${correct}"; decide whether energy is being multiplied by distance, transformed between forms, or conserved in the ideal model.`
+  }
+  if (/circuits|electric/i.test(chapter)) {
+    return `${title} is about electrical relationships. The useful answer is "${correct}"; follow charge, current, voltage, resistance, and sign rather than treating the numbers as interchangeable.`
+  }
+  if (/waves/i.test(chapter)) {
+    return `${title} is about how a repeating disturbance moves. The useful answer is "${correct}"; connect wave speed, frequency, and wavelength with v = f lambda.`
+  }
+  return `${title} is a physics concept. The useful answer is "${correct}"; name the quantity in the prompt, then choose the relationship or principle that governs it.`
+}
+
 const q = (
   id: number,
   chapter: string,
@@ -16,8 +35,7 @@ const q = (
   prompt,
   correct,
   wrong,
-  lesson:
-    'Coverage source: STAAR physics, NYSED physical science, OpenStax physics, and OER physics collections, adapted into a fixed-choice Floe-native drill. This is not a direct raw import.',
+  lesson: lessonFor(chapter, title, correct),
   source: 'Generated from STAAR/NYSED/OpenStax/OER high-school physics coverage',
 })
 
@@ -63,7 +81,7 @@ export const highSchoolPhysicsNgssExamBatchQuestions = makeQuestionBank('Science
     miss('They become neutral immediately', 'Charges do not automatically cancel at a distance.', 'Use electrostatic force.'),
     miss('They have no force between them', 'Electric charges exert forces on each other.', 'Like positive charges still interact.'),
   ]),
-  q(443009, 'Momentum', 'Impulse meaning', 'Impulse is equal to:', 'Change in momentum', [
+  q(443009, 'Momentum', 'Impulse meaning', 'When a force acts over a time interval, which motion quantity does impulse measure the change in?', 'Change in momentum', [
     miss('Change in temperature', 'Temperature is not the momentum quantity.', 'Impulse connects force over time to motion.'),
     miss('Mass divided by velocity', 'Momentum is mass times velocity; impulse is its change.', 'Recall the impulse-momentum theorem.'),
     miss('Only the distance traveled', 'Distance alone does not describe impulse.', 'Use force-time or momentum change.'),
