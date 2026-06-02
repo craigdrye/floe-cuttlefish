@@ -331,6 +331,8 @@ export function TrainerScreen() {
 
     if (answer.correct) {
       playSuccessSound()
+      // Brief haptic tick on a correct answer (Android/Chrome; iOS Safari ignores it).
+      if (typeof navigator !== 'undefined' && typeof navigator.vibrate === 'function') navigator.vibrate(35)
       incrementCombo()
       updateReview(question.id, showHint ? 3 : 5)
       const newCombo = combo + 1
@@ -606,6 +608,7 @@ export function TrainerScreen() {
                   {armedAnswerId === answer.id && !selectedAnswerId && <span className="commit-hint">Tap again</span>}
                   {selectedAnswerId && answer.correct && <CheckCircle2 size={17} />}
                   {selectedAnswerId === answer.id && !answer.correct && <XCircle size={17} />}
+                  {selectedAnswerId === answer.id && <span className="next-hint">Next →</span>}
                 </button>
               ))}
             </div>

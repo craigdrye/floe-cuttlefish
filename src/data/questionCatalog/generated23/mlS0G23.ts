@@ -1,0 +1,418 @@
+import { makeSimpleQuestion } from '../base'
+import type { Question } from '../types'
+
+// Floe-generated top-up bank for the Data Science / ML Interview Prep track (shard ml#0).
+// These questions top thin chapters up to at least 8 playable items. Every question carries
+// `generated: true` (internal provenance flag, never shown to learners) and is tagged to an
+// EXISTING runtime chapter so it joins that chapter rather than creating a new one.
+export const mlS0G23: Question[] = [
+  // ============================================================
+  // Module 1: SQL  (1 new -> reaches 8)
+  // ============================================================
+  makeSimpleQuestion(
+    8520000,
+    'ML',
+    'Module 1: SQL',
+    'Filtering a LEFT JOIN in the WHERE clause',
+    "You write `SELECT u.id FROM users u LEFT JOIN orders o ON u.id = o.user_id WHERE o.status = 'returned'` to list users alongside their returned orders, but users with no orders at all have vanished from the result. Why, and what is the fix?",
+    "The WHERE predicate on o.status rejects the NULL columns of unmatched users, silently turning the LEFT JOIN into an INNER JOIN; move that condition into the ON clause so unmatched users are still kept.",
+    [
+      ['The LEFT JOIN was written backwards; swap it to a RIGHT JOIN to keep the users.', 'Direction is not the issue. A LEFT JOIN already preserves every users row; the WHERE filter on the right table is what drops the unmatched ones, and a RIGHT JOIN would preserve orders instead.', 'Keep the LEFT JOIN and stop filtering unmatched rows out by moving the status test to ON.'],
+      ['SQL cannot compare NULL to a string, so add `WHERE o.status = \'returned\' OR o.status IS NULL`.', 'That keeps the no-order users but also keeps every other unreturned order as NULL noise, and it patches the symptom rather than the cause of the implicit inner join.', 'Putting o.status into ON filters orders before the join while still emitting one row per user, which is what the requirement actually needs.'],
+      ['Add `GROUP BY u.id` because the duplicate user rows are being collapsed and lost.', 'GROUP BY collapses duplicates but never resurrects rows that the WHERE clause already discarded; the users were filtered out, not merged away.', 'The rows are gone because of a post-join predicate, so fix the predicate placement, not the grouping.'],
+    ],
+    "A predicate on the null-able side of an outer join belongs in the ON clause, not WHERE. Conditions in ON are applied while the join is formed, so unmatched left rows survive with NULLs; conditions in WHERE run after the join and reject those NULL rows, which quietly demotes a LEFT JOIN to an INNER JOIN. The exception is `IS NULL` checks used deliberately to find anti-joins.",
+    'Floe generated',
+    true,
+    'Ask when each filter runs: ON is evaluated as the join is built, WHERE after. Which one can throw away your unmatched left rows?',
+    { challengeRating: 5 },
+  ),
+
+  // ============================================================
+  // Chapter 3: Statistical Inference and Hypothesis Testing  (2 new -> 8)
+  // ============================================================
+  makeSimpleQuestion(
+    8520001,
+    'ML',
+    'Chapter 3: Statistical Inference and Hypothesis Testing',
+    'Paired vs two-sample t-test',
+    "You measure each of 40 users' session length the week before a UI change and again the week after, and want to know whether the change moved session length. Which test is most appropriate, and why?",
+    "A paired t-test on the within-user before/after differences, because the two measurements come from the same users, so pairing removes between-user variability and gives more power.",
+    [
+      ["A two-sample (independent) t-test comparing the before-week mean to the after-week mean.", "That treats the two weeks as independent groups and ignores that each after-value is tied to the same user's before-value, throwing away the pairing and inflating the standard error.", "Test the within-user differences with a paired t-test so each user serves as their own control."],
+      ["A chi-squared test of independence on before vs after.", "Chi-squared is for counts in categorical contingency tables, not for comparing the means of a continuous measure like session length.", "Session length is continuous and paired, so difference-based t-testing fits, not a categorical association test."],
+      ["A one-sample t-test on the after-week values against the historical population mean.", "That compares the after period to an external constant and discards the actual before measurements you collected, so it cannot isolate the effect of the change on these users.", "Use the before measurements you already have by pairing them to each user's after value."],
+    ],
+    "Use a paired t-test when each observation in one condition is naturally matched to one in the other (before/after on the same unit, or matched pairs). It tests whether the mean of the within-pair differences is zero, which cancels stable between-subject variation and typically needs a smaller sample than an independent test. Use a two-sample t-test only when the two groups are genuinely independent.",
+    'Floe generated',
+    true,
+    'Ask whether each value in group A is linked to a specific value in group B. If yes, the pairing is information you should not discard.',
+    { challengeRating: 5 },
+  ),
+  makeSimpleQuestion(
+    8520002,
+    'ML',
+    'Chapter 3: Statistical Inference and Hypothesis Testing',
+    'Statistical power and underpowered tests',
+    "A teammate ran a test that came back non-significant (p = 0.31) and concludes the new feature has no effect. Power analysis afterward shows the test had only 35% power to detect the effect size the product team cares about. What is the correct interpretation?",
+    "The test was underpowered, so a non-significant result is largely uninformative; the data cannot distinguish 'no effect' from 'a real effect we lacked the sample size to detect.'",
+    [
+      ["The conclusion is sound: a high p-value confirms the null hypothesis that the effect is zero.", "A p-value never confirms the null; failing to reject is not the same as proving no effect, and at 35% power a true effect would be missed roughly two-thirds of the time.", "Treat 'not significant' as 'inconclusive,' and ask whether the test could even have detected the effect that matters."],
+      ["Power is irrelevant once the test is over; only the observed p-value matters for the decision.", "Power determines how often a real effect of the relevant size would have produced a significant result, so it directly governs how much weight a null result deserves.", "Use the power and the minimum effect of interest to judge whether the null result is evidence of absence or just absence of evidence."],
+      ["Lower the significance threshold to alpha = 0.10 and rerun the same data so the result becomes significant.", "Moving the threshold after seeing the data is p-hacking and does not add the information a larger sample would; it inflates the false-positive rate instead of fixing power.", "Increase power properly by collecting more data or running longer, not by relaxing alpha post hoc."],
+    ],
+    "Power is the probability of detecting a true effect of a given size, controlled mainly by sample size, effect size, and alpha. A non-significant result from an underpowered test is weak evidence: absence of evidence is not evidence of absence. Before declaring 'no effect,' check whether the test could have detected the smallest effect that would matter (the MDE).",
+    'Floe generated',
+    true,
+    'A high p-value has two explanations: there is no effect, or you could not have seen it anyway. Which one does low power leave on the table?',
+    { challengeRating: 6 },
+  ),
+
+  // ============================================================
+  // Chapter 4: Supervised Learning Fundamentals  (2 new -> 8)
+  // ============================================================
+  makeSimpleQuestion(
+    8520003,
+    'ML',
+    'Chapter 4: Supervised Learning Fundamentals',
+    'Fitting preprocessing before the split',
+    "Before splitting, you call `StandardScaler().fit_transform(X)` on the full dataset, then split into train and test and report a strong test score. A reviewer flags leakage. What exactly leaked, and what is the fix?",
+    "The scaler learned the mean and standard deviation from all rows including the test set, so test-set statistics leaked into training; fit the scaler on the training fold only and apply its parameters to the test set (ideally inside a pipeline).",
+    [
+      ["Nothing leaked, because scaling only rescales features and does not use the labels y.", "Leakage is about information from held-out data reaching training, not about labels specifically; the test rows influenced the mean and variance used to transform the training rows.", "Recognize that any statistic estimated from test data and then applied to training is leakage, even unsupervised feature statistics."],
+      ["The fix is to scale the test set separately with its own mean and standard deviation.", "Refitting on the test set makes train and test live on different scales, so the learned coefficients no longer apply correctly to test inputs.", "Fit on train, then transform test with the training-derived parameters so both sets share one consistent transformation."],
+      ["Switch from StandardScaler to MinMaxScaler so the range, not the mean, is used.", "Changing the scaler type does not address the timing problem; MinMaxScaler fit on all data still leaks the test min and max into training.", "The bug is fitting before the split, not which scaler you chose; move the fit inside the training fold."],
+    ],
+    "Any transformation that learns parameters (scaling, imputation, encoding, feature selection) must be fit only on training data and then applied to validation/test data. Fitting on the full dataset lets held-out statistics leak in, producing optimistic scores that collapse in production. Wrapping preprocessing and the model in one pipeline guarantees the fit happens inside each cross-validation fold.",
+    'Floe generated',
+    true,
+    'Ask what the scaler learned and from which rows. If the test rows shaped that estimate, your test score saw itself.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    8520004,
+    'ML',
+    'Chapter 4: Supervised Learning Fundamentals',
+    'Diagnosing overfitting from the train-validation gap',
+    "A gradient-boosted model scores 0.99 AUC on training data but 0.71 on validation, while a simpler model scores 0.80 on both. The 0.99/0.71 model is currently in the running. What does the gap indicate and what is the better move?",
+    "The large train-validation gap signals overfitting (high variance): the complex model memorized training noise. Regularize it (fewer/shallower trees, more samples, early stopping) or prefer the simpler model that generalizes to 0.80.",
+    [
+      ["Keep the 0.99/0.71 model and report the 0.99 training AUC, since it is the highest score observed.", "Training score measures memorization, not generalization; it is exactly the number that overfitting inflates, so it is the worst basis for a deployment decision.", "Judge models by validation/test performance, where the simpler model's honest 0.80 beats the overfit model's 0.71."],
+      ["The gap means the validation set is too small or mislabeled; trust the training AUC instead.", "A consistent 28-point gap between train and validation is the textbook signature of variance, not a data defect, and the simpler model generalizing cleanly argues against a broken validation set.", "Treat the gap as evidence about the model's complexity, then reduce variance rather than dismissing the validation data."],
+      ["Add more features to the boosted model so it can close the gap and reach 0.99 on validation too.", "Adding features to an already overfit model usually widens the gap by giving it more ways to memorize noise; it increases variance rather than reducing it.", "To close a variance gap, simplify or regularize and get more data, not add capacity."],
+    ],
+    "A small training error with a much larger validation error is the signature of overfitting (high variance): the model fits noise the test distribution does not share. Remedies reduce model complexity or add data: regularization, shallower/fewer trees, early stopping, or simply choosing a model whose train and validation scores agree. The headline training number is the least trustworthy figure here.",
+    'Floe generated',
+    true,
+    'Compare the two scores each model reports, not the single biggest number. Which model keeps its promise on data it has not seen?',
+    { challengeRating: 6 },
+  ),
+
+  // ============================================================
+  // Chapter 5: Classification Metrics and Imbalanced Data  (2 new -> 8)
+  // ============================================================
+  makeSimpleQuestion(
+    8520005,
+    'ML',
+    'Chapter 5: Classification Metrics and Imbalanced Data',
+    'The accuracy paradox on rare positives',
+    "Fraud is 0.3% of transactions. A model reports 99.7% accuracy. Before celebrating, what should you check, and which metrics actually describe its usefulness here?",
+    "Check whether the model is just predicting 'not fraud' for everything, which alone scores 99.7%; evaluate recall, precision, and PR AUC on the fraud class instead, because accuracy is dominated by the majority class.",
+    [
+      ["The 99.7% accuracy is excellent and sufficient evidence to ship the model.", "A constant 'not fraud' classifier hits the same 99.7% while catching zero fraud, so accuracy carries no information about the only outcome that matters here.", "Score the minority class directly with recall and precision before drawing any conclusion."],
+      ["Report ROC AUC, since it is the standard summary and is unaffected by the class balance.", "ROC AUC is heavily influenced by the abundant true negatives, so it can look strong while precision at usable thresholds is poor; under heavy imbalance it paints an optimistic picture.", "Prefer PR AUC, which ignores true negatives and tracks precision against recall on the rare positive class."],
+      ["Compute specificity, because correctly clearing legitimate transactions is the key success measure.", "Specificity is already near 1.0 for free when positives are rare, so it cannot distinguish a useful fraud model from a do-nothing one.", "Focus on how many frauds are caught (recall) and how clean the alerts are (precision), not on rejecting the easy negatives."],
+    ],
+    "On heavily imbalanced data, accuracy is dominated by the majority class and a trivial constant predictor can score near-perfectly. Evaluate the minority class with recall (fraction of positives caught), precision (fraction of alerts that are real), and PR AUC, which unlike ROC AUC ignores the easy true negatives. Always compare against the majority-class baseline.",
+    'Floe generated',
+    true,
+    'Ask what a model that always predicts the majority class would score on this metric. If it ties your model, the metric is useless.',
+    { challengeRating: 5 },
+  ),
+  makeSimpleQuestion(
+    8520006,
+    'ML',
+    'Chapter 5: Classification Metrics and Imbalanced Data',
+    'Mapping a cost structure to the threshold',
+    "For a churn-prevention model, the retention offer is cheap and the cost of losing a customer you failed to flag is high. False positives cost a small discount; false negatives cost a lost customer. How should this shape your operating threshold and metric focus?",
+    "Lower the threshold to favor recall, accepting more false positives, because missing a churner (false negative) is far more expensive than wasting a cheap offer on a non-churner (false positive).",
+    [
+      ["Keep the default 0.5 threshold, since that is the statistically neutral and correct choice.", "0.5 is only optimal when false positives and false negatives cost the same and classes are balanced; here the costs are asymmetric, so 0.5 leaves recall on the table.", "Set the threshold from the cost ratio, not from the default; cheap false positives justify a lower cutoff."],
+      ["Raise the threshold to maximize precision so every flagged customer is almost certainly churning.", "Chasing precision suppresses alerts and increases false negatives, which is exactly the expensive error in this cost structure.", "When misses are costly and offers are cheap, prioritize recall, even at the price of lower precision."],
+      ["Optimize the unweighted F1 score, which balances precision and recall fairly.", "F1 weights precision and recall equally, but this problem explicitly values recall more, so equal weighting does not reflect the business costs.", "Use a cost-weighted objective (or a higher-beta F-measure like F2) that reflects the heavier penalty on false negatives."],
+    ],
+    "The classification threshold should be set from the cost of a false positive versus a false negative, not left at 0.5. When misses are expensive and false alarms are cheap, lower the threshold to raise recall; when false alarms are expensive, raise it for precision. Equal-weight metrics like F1 are only appropriate when the two error types cost about the same.",
+    'Floe generated',
+    true,
+    'Write down the dollar cost of each error type first. The cheaper error is the one you should tolerate more of.',
+    { challengeRating: 6 },
+  ),
+
+  // ============================================================
+  // Chapter 6: Models and Ensembles  (2 new -> 8)
+  // ============================================================
+  makeSimpleQuestion(
+    8520007,
+    'ML',
+    'Chapter 6: Models and Ensembles',
+    'Bagging reduces variance, boosting reduces bias',
+    "A candidate says 'random forests and gradient boosting are basically the same ensemble idea.' What is the key distinction in how each combines trees and what error it primarily reduces?",
+    "Random forests bag many deep, decorrelated trees trained in parallel and average them to reduce variance; gradient boosting trains shallow trees sequentially, each fitting the previous ensemble's residuals, to reduce bias.",
+    [
+      ["Both build trees independently in parallel; boosting just uses more trees than a forest does.", "Boosting is fundamentally sequential, with each tree depending on the errors of the ones before it, so the trees are not independent and tree count is not the real difference.", "The distinction is parallel-and-averaged (bagging) versus sequential-and-corrective (boosting), not the number of trees."],
+      ["Random forests reduce bias by averaging, while boosting reduces variance by adding many learners.", "This reverses the roles: averaging decorrelated trees cuts variance, and sequentially fitting residuals with weak learners cuts bias.", "Match each method to its job: bagging attacks variance, boosting attacks bias."],
+      ["Gradient boosting trains deep trees in parallel and then weights them by accuracy at the end.", "Boosting uses shallow (weak) learners added one at a time with a learning rate, not deep trees combined after the fact, which is closer to how bagging works.", "Picture residual-fitting in sequence: each shallow tree corrects what the current ensemble still gets wrong."],
+    ],
+    "Bagging (random forests) builds many high-variance trees on bootstrap samples with feature subsampling, then averages them; decorrelation drives variance down with little bias cost. Boosting (gradient boosting, XGBoost, LightGBM) adds shallow trees sequentially, each fitting the residual errors of the current ensemble scaled by a learning rate, which drives bias down. The parallel-vs-sequential structure explains most of their practical tradeoffs.",
+    'Floe generated',
+    true,
+    'Ask whether the trees are built independently and averaged, or one after another to fix prior mistakes. That tells you which error each attacks.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    8520008,
+    'ML',
+    'Chapter 6: Models and Ensembles',
+    'Standardizing features before PCA and k-means',
+    "Your dataset has income (range 0-200,000) and age (range 18-90). You run k-means and PCA on the raw columns and the results are dominated by income. Why, and what is the standard fix?",
+    "PCA and k-means rely on Euclidean distance/variance, so the large-scale feature (income) dominates simply because its numbers are bigger; standardize features (z-score) before applying them so each contributes comparably.",
+    [
+      ["The result is correct as-is, because income genuinely matters more than age for segmentation.", "The dominance is an artifact of the measurement scale, not of true importance; if income were measured in thousands, its influence would shrink without any change in meaning.", "Remove the scale artifact by standardizing, then let the analysis or domain knowledge decide what matters."],
+      ["Switch from k-means to k-medoids, which is immune to feature scale.", "Medoids change which points represent clusters but still use a distance metric, so an unscaled income column keeps dominating the distances.", "Standardize the features regardless of the clustering variant; the scale problem lives in the distance computation."],
+      ["Run PCA first to drop the low-variance components, which removes the scale problem automatically.", "PCA on raw data is itself driven by raw variance, so the high-variance income axis becomes the top component; PCA does not neutralize scale, it amplifies it.", "Standardize before PCA so components reflect correlation structure rather than raw units."],
+    ],
+    "Distance- and variance-based methods (k-means, PCA, KNN, SVM with RBF) are not scale-invariant: a feature with a larger numeric range contributes disproportionately to distances and variance. Standardizing (subtract mean, divide by standard deviation) or min-max scaling puts features on comparable footing. Tree-based models, by contrast, are insensitive to monotonic rescaling.",
+    'Floe generated',
+    true,
+    'Ask what units the algorithm is adding up. If one feature is measured in tens of thousands and another in tens, whose distance wins by default?',
+    { challengeRating: 5 },
+  ),
+
+  // ============================================================
+  // Chapter 7: Experimentation and A/B Testing  (1 new -> 8)
+  // ============================================================
+  makeSimpleQuestion(
+    8520009,
+    'ML',
+    'Chapter 7: Experimentation and A/B Testing',
+    'Sample ratio mismatch',
+    "Your 50/50 A/B test was supposed to split traffic evenly, but after a week control has 51,000 users and treatment has 48,500 (a ratio far from 50/50, p < 0.001 on a chi-squared check). The treatment metric looks great. What should you do?",
+    "Treat this as a sample ratio mismatch (SRM): the unexpected imbalance signals a bug in assignment, logging, or filtering, so the results are untrustworthy and you should debug the pipeline before reading any metric.",
+    [
+      ["Ignore the imbalance and ship, since the treatment metric is clearly winning.", "A significant SRM usually means users were assigned or logged non-randomly, which can bias every downstream metric, so the apparent win may be an artifact of the broken split.", "Diagnose and fix the SRM first; a result built on a biased split is not evidence of a real effect."],
+      ["Down-sample control to 48,500 users so the groups match, then read the metric.", "Discarding control users after the fact does not remove the selection bias that caused the imbalance; you would be papering over a randomization defect, not correcting it.", "Find why the split broke (bot filtering, redirect, assignment bug) rather than forcing the counts to match."],
+      ["Conclude the test is fine because a roughly 51k vs 48.5k split is within normal random variation.", "For a 50/50 design at that scale a deviation this large is extraordinarily unlikely by chance (p < 0.001), so it is not normal variation but a red flag.", "Use the SRM check itself as the alarm: a significant ratio test means investigate, not proceed."],
+    ],
+    "Sample ratio mismatch is a guardrail check: compare the observed group sizes against the intended split with a chi-squared test. A significant SRM almost always indicates a problem in randomization, instrumentation, redirect logic, or bot filtering, and it can bias the very metrics you want to read. The correct response is to halt interpretation and debug, not to adjust the data.",
+    'Floe generated',
+    true,
+    'The headline metric is not the first thing to check. Ask whether the experiment even split traffic the way it claimed.',
+    { challengeRating: 6 },
+  ),
+
+  // ============================================================
+  // Chapter 8: ML System Design and the Project Story  (4 new -> 8)
+  // ============================================================
+  makeSimpleQuestion(
+    8520010,
+    'ML',
+    'Chapter 8: ML System Design and the Project Story',
+    'Training-serving skew',
+    "Your model scored 0.88 AUC offline but performs much worse in production. You discover a feature was computed from a fully cleaned historical table during training, but at serving time it is built from a live stream with different null handling and timing. What is this, and how do you prevent it?",
+    "This is training-serving skew: the feature is computed differently (or with different data availability) at train vs serve time. Prevent it by computing features through shared code or a feature store so training and serving use identical logic.",
+    [
+      ["It is ordinary concept drift; retrain on fresh data and the gap will close.", "Concept drift is a change in the input-output relationship over time, but here the model is being fed inconsistently computed features from day one, which retraining alone will not fix.", "Align the feature computation between training and serving; the problem is a pipeline mismatch, not a moving target."],
+      ["It is overfitting; the offline 0.88 was inflated, so add regularization.", "Overfitting shows up as a train-validation gap on the same data pipeline, whereas here the offline validation itself was honest and the drop comes from a different serving pipeline.", "Unify the feature pipelines rather than regularizing a model that was actually fine offline."],
+      ["It is label leakage; remove the leaky feature entirely.", "Leakage means a feature encodes the target or future information, which would inflate offline scores; that is not described here, and dropping a useful feature throws away signal.", "Keep the feature but compute it identically in both environments to remove the skew."],
+    ],
+    "Training-serving skew occurs when a feature is produced differently offline (training) than online (serving): different code paths, null handling, time windows, or data freshness. It often shows as a model that looks strong offline and disappoints in production. The standard remedy is to share feature logic across both paths, commonly via a feature store, and to log served feature values for monitoring.",
+    'Floe generated',
+    true,
+    'The model did not change; the data it sees did. Ask whether the feature is built the same way in both worlds.',
+    { challengeRating: 7 },
+  ),
+  makeSimpleQuestion(
+    8520011,
+    'ML',
+    'Chapter 8: ML System Design and the Project Story',
+    'Offline metric improves but the business metric does not',
+    "You ship a recommender whose offline ranking metric (NDCG) improved by 6%, but the online A/B test shows no lift in the business goal (sessions with a purchase). What is the most likely explanation and the right response?",
+    "The offline metric is a proxy that does not fully align with the business goal; trust the controlled online experiment and investigate the proxy-goal gap (e.g., logged feedback bias, metric measuring relevance the user does not act on).",
+    [
+      ["The A/B test is wrong; deploy on the strength of the 6% NDCG gain.", "Offline metrics are computed on logged data that reflects the old system's choices and is a proxy at best, while a properly run A/B test measures the real outcome causally; overriding it reintroduces the proxy's blind spots.", "Treat the randomized online result as ground truth and ask why the offline proxy disagreed."],
+      ["The experiment was underpowered; rerun it until NDCG and purchases agree.", "Rerunning to force agreement is fishing for the answer you want, and there is no reason a relevance metric must move purchases; an offline-online gap is expected, not a power failure.", "Examine why the proxy and the goal diverge instead of repeating the test until it confirms the proxy."],
+      ["NDCG and purchase rate measure the same thing, so the discrepancy must be a logging bug.", "Ranking quality and purchase conversion are genuinely different objectives; better-ordered results need not change what users buy, so divergence is not evidence of a bug.", "Accept that the proxy and the true objective can legitimately disagree and dig into that mechanism."],
+    ],
+    "Offline metrics (NDCG, AUC, log loss) are proxies for the business objective and are computed on logged data shaped by the existing system. A common system-design failure is optimizing the proxy without moving the goal it stands in for. When a clean online experiment disagrees with an offline gain, trust the experiment and investigate the proxy-objective gap before shipping.",
+    'Floe generated',
+    true,
+    'One number was measured on old logged data, the other in a live randomized test. Which one actually reflects what the business cares about?',
+    { challengeRating: 7 },
+  ),
+  makeSimpleQuestion(
+    8520012,
+    'ML',
+    'Chapter 8: ML System Design and the Project Story',
+    'Designing a post-deployment monitoring plan',
+    "A model has shipped and ground-truth labels arrive with a two-week delay. An interviewer asks how you would know it is still working in the meantime. What does a sound monitoring plan include?",
+    "Monitor input feature distributions and prediction distributions for drift in real time as leading indicators, track delayed performance metrics once labels arrive, and set alert thresholds tied to action, distinguishing data drift from concept drift.",
+    [
+      ["Just rerun the offline test set monthly; if accuracy holds there, the model is fine.", "A fixed offline test set is frozen in the past and cannot reveal that live inputs or the input-output relationship have shifted, which is exactly what production monitoring must catch.", "Watch the live input and prediction distributions now, and the delayed labels later, not a static historical set."],
+      ["Wait for the labels and only check accuracy when they arrive; nothing useful can be monitored before then.", "Label delay does not blind you: input and output distributions are observable immediately and act as early warnings before performance metrics can be computed.", "Use distribution monitoring as a leading indicator during the delay, then confirm with metrics once labels land."],
+      ["Monitor only model latency and uptime, since those are the production SLAs that matter.", "Latency and uptime confirm the service responds, but a fast, available model can still be quietly wrong as data or concepts drift.", "Add data-quality and statistical drift checks on inputs and predictions on top of the operational SLAs."],
+    ],
+    "Production monitoring layers operational health (latency, uptime, errors) with statistical health: input feature drift and prediction drift serve as leading indicators when labels are delayed, and performance metrics confirm once labels arrive. Distinguish data drift (P(X) shifts, decision boundary unchanged) from concept drift (P(y|X) shifts), and tie alert thresholds to a concrete response such as investigation or retraining.",
+    'Floe generated',
+    true,
+    'Labels are late, but the inputs and the predictions are not. Ask what you can watch today that hints the model is going wrong.',
+    { challengeRating: 7 },
+  ),
+  makeSimpleQuestion(
+    8520013,
+    'ML',
+    'Chapter 8: ML System Design and the Project Story',
+    'Structuring the project story with STAR',
+    "In a behavioral round you are asked to 'tell me about a data science project you are proud of.' Which structure makes the strongest answer in two minutes?",
+    "STAR: set the Situation and the specific Task/problem, describe the Actions you personally took and the tradeoffs you weighed, then quantify the Result and what you learned or would change.",
+    [
+      ["List every tool and library you used (pandas, XGBoost, Airflow, Docker) to show technical depth.", "A tool inventory describes activity, not impact or judgment, and leaves the interviewer unable to tell what you decided or what changed because of you.", "Anchor the story on the decision and the measurable outcome, mentioning tools only where a choice mattered."],
+      ["Narrate the project strictly in chronological order from data pull to final slide.", "A blow-by-blow timeline buries the result and your contribution under setup detail and usually runs long without landing the point.", "Lead with the problem and outcome, then explain the few actions and tradeoffs that drove them."],
+      ["Emphasize that it was a great team effort and describe what the team accomplished collectively.", "Crediting 'the team' without owning a specific result makes it impossible to assess your individual contribution, which is what the behavioral round is probing.", "Use 'I' for the actions you owned and reserve 'we' for genuinely shared work, then state your measurable impact."],
+    ],
+    "STAR (Situation, Task, Action, Result) keeps a project story tight and decision-focused: frame the problem, state your specific task, describe the actions and tradeoffs you owned, and close with a quantified result plus a reflection. Interviewers grade for individual contribution, judgment, and impact, so lead with the outcome and use 'I' for what you actually did.",
+    'Floe generated',
+    true,
+    'A strong answer makes your individual decisions and the measurable result obvious. Which structure forces both to the front?',
+    { challengeRating: 5 },
+  ),
+
+  // ============================================================
+  // Stretch Zone  (7 new -> 8)  harder, integrative items
+  // ============================================================
+  makeSimpleQuestion(
+    8520014,
+    'ML',
+    'Stretch Zone',
+    'Default window frame: RANGE vs ROWS',
+    "You compute `SUM(amount) OVER (ORDER BY event_date)` to get a daily running total, but on dates with several transactions the running total jumps by the full day's sum on every row of that day instead of accumulating row by row. Why, and what fixes it?",
+    "With ORDER BY and no explicit frame, the default is RANGE UNBOUNDED PRECEDING AND CURRENT ROW, which treats all rows tied on event_date as one peer group and gives them the same total; specify ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW for a true row-by-row cumulative sum.",
+    [
+      ["The ORDER BY is non-deterministic on ties, so add a tiebreaker column to ORDER BY.", "A tiebreaker changes row order but the default RANGE frame still groups peers by the frame's ORDER BY value, so same-date rows can still share a total unless the frame is row-based.", "Switch the frame to ROWS, which counts physical rows and accumulates one at a time regardless of ties."],
+      ["SUM is double-counting because of a fan-out join upstream; deduplicate the source rows.", "The symptom is the window frame's peer grouping on tied dates, not duplicated source rows; the data can be perfectly clean and still show this with the default RANGE frame.", "Fix the frame specification before suspecting the join; ROWS resolves the tied-date behavior."],
+      ["Window functions cannot do running totals with ties; switch to a correlated subquery.", "Window functions handle running totals fine; you simply need the ROWS frame so the cumulative sum advances per row rather than per ORDER BY peer group.", "Keep the window function and set ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW."],
+    ],
+    "When you specify ORDER BY in a window without a frame clause, SQL defaults to RANGE UNBOUNDED PRECEDING AND CURRENT ROW. RANGE bounds the frame by ORDER BY value, so all rows tied on that value are peers and receive the same aggregate. ROWS bounds the frame by physical row position, giving the row-by-row cumulative behavior people usually intend for running totals.",
+    'Floe generated',
+    true,
+    'You never wrote ROWS or RANGE, so SQL picked one. Ask what the default does when several rows share the same ORDER BY value.',
+    { challengeRating: 7 },
+  ),
+  makeSimpleQuestion(
+    8520015,
+    'ML',
+    'Stretch Zone',
+    'FDR control vs Bonferroni',
+    "An experimentation platform runs 200 metric comparisons per experiment and the team complains that Bonferroni correction is so strict that almost no metric ever reaches significance. They still want false positives controlled. What is a principled alternative and what does it control?",
+    "Use the Benjamini-Hochberg procedure to control the false discovery rate (the expected proportion of false positives among the metrics declared significant); it is less conservative than Bonferroni and recovers power while still bounding error.",
+    [
+      ["Drop all corrections and use raw p < 0.05 per metric, since correction is too punishing.", "With 200 tests at 0.05 you expect about 10 false positives by chance, so abandoning correction guarantees spurious 'significant' metrics rather than controlling error.", "Switch to FDR control, which loosens the bar without giving up error control entirely."],
+      ["Use Bonferroni but raise the per-comparison alpha to 0.05/10 instead of 0.05/200.", "Dividing by an arbitrary 10 rather than the actual number of tests no longer controls the family-wise error rate at all; it is an unprincipled fudge.", "If you keep FWER control, divide by the true count; otherwise move to FDR for a principled gain in power."],
+      ["Run each metric in its own separate experiment so no multiple-comparison problem exists.", "Splitting one experiment into 200 wastes traffic and time and does not change the underlying multiplicity once you look across all of them to make a decision.", "Keep one experiment and apply FDR control across the metrics you actually evaluate together."],
+    ],
+    "Bonferroni controls the family-wise error rate (the chance of even one false positive) and grows very conservative as the number of tests rises. Benjamini-Hochberg instead controls the false discovery rate, the expected fraction of false positives among rejected nulls, which is less stringent and far more powerful when you can tolerate a small share of false leads in a shortlist of many metrics.",
+    'Floe generated',
+    true,
+    'Ask what each correction promises: zero false positives anywhere, or a bounded fraction of false positives among your discoveries? One is far stricter.',
+    { challengeRating: 8 },
+  ),
+  makeSimpleQuestion(
+    8520016,
+    'ML',
+    'Stretch Zone',
+    'CUPED variance reduction',
+    "Your A/B tests on a high-variance revenue metric are chronically underpowered. You have each user's pre-experiment revenue, which correlates about 0.7 with their in-experiment revenue. How can CUPED help, and what assumption must hold?",
+    "CUPED uses the pre-experiment covariate to subtract predictable variance from the metric, cutting variance by roughly the squared correlation (about 49% here) and boosting power without more users; it requires the covariate to be measured before treatment so it is unaffected by it.",
+    [
+      ["CUPED increases the true treatment effect, so the same data now shows a bigger lift.", "CUPED reduces the variance of the estimate, not the effect size itself; the point estimate of the lift is unchanged (in expectation), only its standard error shrinks.", "Frame the benefit as a tighter confidence interval and more power, not a larger effect."],
+      ["CUPED works by adding the pre-experiment metric as a treatment so both periods are compared.", "The pre-experiment metric is a covariate used to de-noise the outcome, not a second treatment arm; treating it as treatment misunderstands the adjustment.", "Use the covariate to regress out predictable variation from the outcome, leaving the treatment contrast cleaner."],
+      ["Any correlated variable works as the covariate, including one measured during the experiment.", "A covariate measured during the experiment can itself be moved by the treatment, which biases the adjusted estimate; CUPED requires a pre-treatment covariate.", "Pick a covariate fixed before randomization, such as the same metric in the pre-period."],
+    ],
+    "CUPED (Controlled-experiment Using Pre-Experiment Data) regresses out variance explained by a pre-treatment covariate, reducing the metric's variance by a factor of roughly the squared covariate-outcome correlation. Lower variance means higher power at the same sample size. The covariate must be measured before treatment so the treatment cannot influence it, otherwise the adjustment introduces bias.",
+    'Floe generated',
+    true,
+    'The lift does not get bigger; the noise gets smaller. Ask what the covariate must NOT be touched by for the adjustment to stay unbiased.',
+    { challengeRating: 8 },
+  ),
+  makeSimpleQuestion(
+    8520017,
+    'ML',
+    'Stretch Zone',
+    'Resampling inside the cross-validation fold',
+    "To handle a 2% positive rate you apply SMOTE to balance the data, then run 5-fold cross-validation, and your reported recall looks excellent. A senior reviewer says the evaluation is leaking. Where is the leak and what is the correct order?",
+    "Applying SMOTE before splitting lets synthetic points derived from validation-fold rows appear in the training folds, leaking information and inflating scores; resample only the training portion inside each fold (e.g., an imbalanced-learn pipeline), never the validation data.",
+    [
+      ["There is no leak: SMOTE only creates synthetic positives, and synthetic data cannot leak real information.", "Synthetic points are interpolated from real neighbors, so a synthetic point built from a validation row carries that row's information into training, which is leakage.", "Generate synthetic samples after the split, using only training-fold rows, so validation stays untouched."],
+      ["The leak is that SMOTE changed the class balance, so just report precision instead of recall.", "Changing the metric does not undo the contamination; with leaked synthetic points every metric, precision included, is optimistically biased.", "Fix the resampling order so it happens inside the fold, then any metric becomes trustworthy."],
+      ["Resample the whole dataset but increase folds to 10 so the validation sets are smaller.", "More folds do not prevent validation-derived synthetic points from landing in training; the leakage is about order of operations, not fold count.", "Move the resampling step inside each training fold regardless of how many folds you use."],
+    ],
+    "Any resampling or transformation that learns from data (SMOTE, scaling, target encoding) must occur strictly inside the training portion of each fold. SMOTE applied to the full dataset before splitting creates synthetic minority points from rows that later sit in the validation fold, so the model effectively trains on its own test data and reports inflated recall. Use a pipeline that resamples per fold.",
+    'Floe generated',
+    true,
+    'Ask which rows the synthetic points were interpolated from. If any of those rows end up in the fold you score on, you trained on the test.',
+    { challengeRating: 8 },
+  ),
+  makeSimpleQuestion(
+    8520018,
+    'ML',
+    'Stretch Zone',
+    'Data drift vs concept drift',
+    "A deployed credit-risk model keeps its input feature distributions roughly stable, yet its accuracy is silently declining after an economic shift changed how the same applicant profiles actually repay. Which kind of drift is this, and why is it the harder one to catch?",
+    "Concept drift: the relationship P(y|X) between inputs and outcome changed while the input distribution P(X) stayed stable, so feature-distribution monitors stay quiet and only delayed performance metrics reveal the decay.",
+    [
+      ["Data drift, because the model's accuracy is what changed and accuracy is an input statistic.", "Accuracy is an output/performance measure, not an input distribution; data drift specifically means P(X) shifted, which the prompt says did not happen.", "Identify the moving piece as the input-output mapping P(y|X), which is concept drift, not a change in P(X)."],
+      ["Label drift only, which is fully captured by watching the predicted-class proportions.", "Watching predicted proportions reflects the model's behavior on stable inputs, not the changed true relationship; predictions can look unchanged while real repayment behavior shifts.", "Recognize that the conditional P(y|X) moved, which requires ground-truth performance tracking, not just prediction monitoring."],
+      ["This is overfitting surfacing late; retrain on the original training data to fix it.", "Overfitting is a train-time generalization gap, not a post-deployment change in the world; retraining on stale data reproduces the now-wrong relationship.", "Address concept drift by retraining on recent labeled data that reflects the new P(y|X)."],
+    ],
+    "Data drift (covariate shift) is a change in the input distribution P(X) with the input-output rule fixed; concept drift is a change in P(y|X), the rule itself. Concept drift is harder to detect because input-distribution monitors can stay flat while accuracy quietly erodes, so it often surfaces only once delayed ground-truth labels arrive. The fix is retraining on data reflecting the new relationship.",
+    'Floe generated',
+    true,
+    'The inputs look the same but the outcomes for those inputs changed. Ask whether P(X) moved or P(y|X) moved.',
+    { challengeRating: 7 },
+  ),
+  makeSimpleQuestion(
+    8520019,
+    'ML',
+    'Stretch Zone',
+    'Variance of a ratio metric under clustering',
+    "Your guardrail metric is clicks-per-session, but randomization is at the user level and users contribute many sessions. A teammate runs a standard two-sample t-test treating each session as an independent observation. Why is the resulting p-value untrustworthy?",
+    "The sessions within a user are correlated, so treating each session as independent understates the variance and overstates significance; the metric is a ratio of two user-level sums, so use clustered/robust standard errors or the delta method at the randomization unit.",
+    [
+      ["It is fine, because more sessions just means a larger sample and more power.", "Counting correlated sessions as independent inflates the effective sample size, shrinking the standard error artificially and producing false significance, not legitimate power.", "Compute variance at the user (randomization) level with clustering or the delta method, not per session."],
+      ["The problem is that clicks-per-session is non-normal, so switch to a Mann-Whitney test on sessions.", "A rank test on sessions still treats correlated sessions as independent units, so it inherits the same understated-variance problem; normality is not the core issue.", "Aggregate or cluster to the user level first, then the standard error reflects the real independence structure."],
+      ["Just compute the ratio per user and average those user-level ratios with a plain t-test.", "Averaging per-user ratios changes the estimand (it weights small and large users equally) and can bias the metric; the delta method estimates the variance of the overall ratio correctly.", "Keep the population ratio estimand and get its variance via the delta method with clustering at the user level."],
+    ],
+    "When the analysis unit (session) is finer than the randomization unit (user), observations within a unit are correlated and naive independence assumptions understate variance, inflating false positives. Ratio metrics like clicks-per-session are a quotient of two correlated user-level sums, so their variance is estimated with the delta method, and standard errors should be clustered at the randomization unit.",
+    'Floe generated',
+    true,
+    'Ask what was actually randomized. If many correlated rows share one randomized unit, treating them as independent fakes precision.',
+    { challengeRating: 8 },
+  ),
+  makeSimpleQuestion(
+    8520020,
+    'ML',
+    'Stretch Zone',
+    'ROC AUC vs PR AUC under heavy imbalance',
+    "Two fraud models score 0.95 and 0.93 ROC AUC, nearly tied. On the same data their PR AUC values are 0.41 and 0.22 with positives at 0.5% prevalence. Which comparison should drive the decision, and why?",
+    "Compare on PR AUC, because with rare positives ROC AUC is dominated by the abundant true negatives and looks flatteringly high; PR AUC ignores true negatives and reflects precision at given recall, which is what matters when false positives are costly.",
+    [
+      ["Use ROC AUC, since it is threshold-independent and therefore the more rigorous metric.", "Both PR AUC and ROC AUC are threshold-independent; rigor is not the dividing issue. The issue is that ROC AUC's reliance on the true-negative-heavy specificity hides large differences on the rare positive class.", "Pick the curve that focuses on the positive class under imbalance, which is PR AUC."],
+      ["Average the two AUCs per model to get a single robust score, then compare.", "Averaging two metrics on different scales that answer different questions yields a number with no clear meaning and obscures the large PR-AUC gap that actually distinguishes the models.", "Report them separately and let PR AUC drive the call when positives are rare and false positives costly."],
+      ["They disagree, so neither is reliable; fall back to comparing raw accuracy.", "Accuracy is the least informative metric here, dominated entirely by the 99.5% negatives, so it cannot break the tie that PR AUC clearly resolves.", "The disagreement is exactly the signal: PR AUC exposes a gap ROC AUC masks under imbalance, so trust PR AUC."],
+    ],
+    "Under heavy class imbalance, ROC AUC can look uniformly high because the false-positive-rate axis is computed against an enormous pool of true negatives, masking poor precision on the rare positive class. PR AUC plots precision against recall and ignores true negatives entirely, so it sharply separates models on exactly the cost (false positives among few real positives) that matters. Prefer PR AUC for rare-positive problems.",
+    'Floe generated',
+    true,
+    'Ask which curve even looks at the huge pile of easy true negatives. The metric that ignores them tells you more when positives are rare.',
+    { challengeRating: 8 },
+  ),
+]

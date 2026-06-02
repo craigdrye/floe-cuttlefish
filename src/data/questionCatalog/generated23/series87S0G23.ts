@@ -1,0 +1,218 @@
+import { makeSimpleQuestion } from '../base'
+import type { Question } from '../types'
+
+export const series87S0G23: Question[] = [
+  // ============================================================
+  // Analyst Ethics and MNPI Boundaries (2 new -> 8)
+  // ============================================================
+  makeSimpleQuestion(
+    8880001,
+    'Career Skills',
+    'Analyst Ethics and MNPI Boundaries',
+    "Mosaic theory versus a single material fact",
+    'Across an earnings season you have built a below-consensus revenue view from publicly disclosed pricing, your own store traffic counts, and several non-material data points from supplier and customer channel checks. Days before you publish, a former employee on an expert-network call tells you the issuer "is about to pre-announce a big miss next week" — clearly material and not yet public. What may you do with the report?',
+    'Stop, do not trade or publish on the pre-announcement tip, escalate the expert-call disclosure to compliance, and only publish a view built from the lawful mosaic that is documented as independent of the MNPI',
+    [
+      ['Publish your below-consensus note now, since the mosaic theory lets you assemble pieces into a material conclusion', 'Mosaic theory protects a material conclusion built from nonmaterial public and nonpublic pieces; it does not launder a single clearly material nonpublic fact you have now received.', 'Wall off the tainted tip, document that the thesis predates and does not rely on it, and escalate before publishing.'],
+      ['Delay the note one week so it follows the public pre-announcement, then publish unchanged', 'Timing the report around MNPI you possess still means you are acting on the inside information, and the contamination is not cured by waiting.', 'Escalate the tip to compliance and let them decide on a restriction; do not self-manage MNPI by adjusting timing.'],
+      ['Treat the tip as usable because it came from a former employee on an expert network, not from the company directly', 'The source channel does not change materiality; MNPI from an expert-network call is just as restricted as a tip from management.', 'Apply the materiality and public/nonpublic test to the information itself, not to where it came from.'],
+    ],
+    'Mosaic theory permits publishing a material conclusion assembled from individually nonmaterial public and nonpublic facts; it does not permit trading or publishing on a single piece of material nonpublic information, regardless of source. A subsequent MNPI tip must be walled off and escalated, and any publication must rest on a documented, independent mosaic. The expert-network or channel-check channel does not make material nonpublic information usable.',
+    'Floe generated',
+    true,
+    "Ask whether the troubling fact is one clearly material nonpublic item or many nonmaterial pieces; the answer decides whether mosaic protection applies.",
+    { challengeRating: 7 },
+  ),
+  makeSimpleQuestion(
+    8880002,
+    'Career Skills',
+    'Analyst Ethics and MNPI Boundaries',
+    "Regulation FD selective disclosure to an analyst",
+    'On a one-on-one call, the CFO of a company you cover lets slip that next quarter\'s gross margin "will land a full two points above the range we guided," which has not been disclosed publicly. You believe the company did not intend to single you out. What is the best response?',
+    'Treat the margin figure as material nonpublic information, do not trade or publish on it, and promptly escalate to compliance — both to wall off the information and to flag a possible Regulation FD selective-disclosure event',
+    [
+      ['Publish the higher-margin view immediately, since Regulation FD obligations fall on the issuer, not on you', 'Reg FD does bind the issuer, but that does not make selectively disclosed MNPI free for you to use; trading or publishing on it raises insider-trading exposure for you and your firm.', 'Stop, wall off the figure, and escalate; the issuer\'s duty does not become your permission.'],
+      ['Use the figure but attribute it vaguely to "channel sources" so it is not traceable to the CFO', 'Obscuring the source does not change that you are acting on material nonpublic information, and the disguise itself looks like consciousness of wrongdoing.', 'Do not use the information at all; escalate it through information-barrier procedures.'],
+      ['Ask the CFO to put the same figure in a public 8-K first, then publish, and otherwise proceed', 'Prompting a cure can be sensible, but you cannot decide unilaterally to proceed; you are still holding MNPI until a proper public disclosure actually occurs.', 'Escalate to compliance and let them coordinate; only a genuine, broad public disclosure removes the restriction.'],
+    ],
+    'Regulation FD prohibits issuers from selectively disclosing material nonpublic information, but when an analyst receives such information the analyst must not trade or publish on it. The correct move is to stop, preserve the information, and escalate so the firm can wall it off and consider whether a Reg FD violation occurred. The issuer\'s obligation never converts the tip into the analyst\'s license to act.',
+    'Floe generated',
+    true,
+    "Whose duty Reg FD enforces is not the same question as what you are now allowed to do with the information you just heard.",
+    { challengeRating: 6 },
+  ),
+
+  // ============================================================
+  // Public Appearances and Other Research Communications (3 new -> 8)
+  // ============================================================
+  makeSimpleQuestion(
+    8880003,
+    'Career Skills',
+    'Public Appearances and Other Research Communications',
+    "Verbal conflict disclosure in a media appearance",
+    'You are booked on a financial news segment to discuss a covered company. Your firm managed the issuer\'s secondary offering and received banking compensation from it within the last 12 months, and you personally hold no position. The producer wants the segment tight. What must you do on air?',
+    'Verbally disclose the material conflicts you know or have reason to know — here, that your firm received investment-banking compensation from the company in the past 12 months — because a public appearance carries the same conflict-disclosure obligation as the written report',
+    [
+      ['Skip the verbal disclosure because the same conflict is already disclosed in your published written reports', 'The disclosure obligation follows the content, not the medium; a written disclosure does not satisfy the separate duty to disclose material conflicts during a public appearance.', 'Make the conflict disclosure verbally during the appearance, regardless of what the report already says.'],
+      ['Only disclose conflicts if the host directly asks whether your firm has a banking relationship', 'The obligation is affirmative; you must disclose known material conflicts whether or not anyone asks.', 'Volunteer the banking-compensation disclosure as part of your prepared remarks.'],
+      ['Provide the full written disclosure boilerplate verbatim on air to be safe', 'Reading dense legal boilerplate is neither required nor effective for a verbal medium; what is required is clear disclosure of the material conflicts you know of.', 'State the material conflict plainly and concisely; the appearance disclosure is about substance, not reciting the fine print.'],
+    ],
+    'In a public appearance an analyst must disclose material conflicts of interest known or reasonably known at the time, including the firm\'s investment-banking compensation relationship with the subject company. The obligation tracks the content of the communication, not its format, so an earlier written disclosure does not excuse the verbal one. The disclosure must be made affirmatively, not only on request.',
+    'Floe generated',
+    true,
+    "A disclosure attaches to the conflict and the moment it is communicated, not to whether the medium is paper or a microphone.",
+    { challengeRating: 5 },
+  ),
+  makeSimpleQuestion(
+    8880004,
+    'Career Skills',
+    'Public Appearances and Other Research Communications',
+    "Previewing an unpublished rating change",
+    'Your firm\'s internal sales desk emails you ahead of a morning call: "Heads up that you\'re upgrading Acme on Thursday — can you give the desk the new target now so we can get ahead of it with our top accounts?" The upgrade and target are approved internally but not yet disseminated. What is the correct response?',
+    'Decline to share the unpublished rating or target with the desk; the change must be fairly disseminated to entitled clients before it is communicated to internal trading or sales personnel or any favored accounts',
+    [
+      ['Give the desk the new target now since they are internal colleagues, not outside clients', 'Tipping the firm\'s own sales or trading personnel before fair dissemination is exactly the selective-distribution abuse the rules guard against; internal does not mean exempt.', 'Hold the change until it is broadly disseminated, then it is available to the desk and clients alike.'],
+      ['Share the direction ("we\'re getting more positive") but withhold the exact target until publication', 'A directional preview of an unpublished change is still a selective disclosure of forthcoming research before fair dissemination.', 'Do not hint at the change at all before it is published to entitled recipients.'],
+      ['Send it to the desk and the firm\'s three largest accounts simultaneously to keep things "fair"', 'Distributing early to a favored subset is selective dissemination, not fair access; the rest of the entitled clients are still being disadvantaged.', 'Disseminate to all entitled clients on a fair basis before anyone trades or acts on it.'],
+    ],
+    'A forthcoming rating, target, or recommendation change must be fairly disseminated to entitled clients before it is shared with the firm\'s sales force, traders, or favored accounts. Previewing an unpublished change — even just its direction — to a select internal or external audience is the selective-distribution abuse the dissemination and public-appearance rules exist to prevent. "Internal" colleagues do not get a head start.',
+    'Floe generated',
+    true,
+    "Ask who has the information before the rest of the entitled audience does; a head start for the desk is the violation, not a courtesy.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    8880005,
+    'Career Skills',
+    'Public Appearances and Other Research Communications',
+    "Promissory language under interviewer pressure",
+    'During a live interview your Buy-rated stock is challenged by a skeptical host. Caught up in the moment, you start to say, "Honestly, I can promise viewers this name doubles within twelve months." What is the problem and the better framing?',
+    'The statement is promissory and unwarranted; an analyst may not guarantee a price outcome, and the fair-and-balanced standard applies in any medium, so you should frame it as an opinion tied to your disclosed price-target basis and its key assumptions and risks',
+    [
+      ['There is no problem, because spoken opinions on TV are not held to the fair-and-balanced standard that governs written reports', 'The prohibition on exaggerated, promissory, and misleading statements applies in any medium, including live appearances, not only in written research.', 'Speak within the same fair-and-balanced limits on air as in the report.'],
+      ['It is acceptable as long as you add the phrase "in my personal opinion" before the guarantee', 'Labeling a guarantee as an opinion does not cure it; a promise of a specific price outcome is still promissory and unwarranted.', 'Replace the guarantee with a price target whose valuation basis and assumptions you can support, plus the risks.'],
+      ['It is fine because your price target already implies roughly that upside, so you are just restating the report', 'A target that implies upside is a reasoned estimate with a disclosed basis; "I can promise it doubles" converts that estimate into a guarantee, which is a different and impermissible claim.', 'State the target and its basis as a supportable estimate, never as a promise.'],
+    ],
+    'Fair-and-balanced and the bar on exaggerated, promissory, or misleading claims apply to spoken communications and public appearances, not just written reports. An analyst may state a price target supported by a disclosed valuation basis and assumptions, but may never guarantee a price outcome. Adding "in my opinion" does not transform a guarantee into a defensible statement.',
+    'Floe generated',
+    true,
+    "The cure for a guarantee is not a disclaimer in front of it; it is converting the claim into a supportable, basis-disclosed estimate.",
+    { challengeRating: 5 },
+  ),
+
+  // ============================================================
+  // Dissemination, Corrections, and Recordkeeping (3 new -> 8)
+  // ============================================================
+  makeSimpleQuestion(
+    8880006,
+    'Career Skills',
+    'Dissemination, Corrections, and Recordkeeping',
+    "Discontinuing coverage with proper notice",
+    'Your firm decides to drop coverage of a company you have rated for years; the analyst is being reassigned and no one will pick it up. A colleague suggests simply letting the existing note "age out" without saying anything further. What does proper handling require?',
+    'Promptly notify customers of the intent to terminate coverage using the firm\'s ordinary means of disseminating research on that company, accompanied by a final research report with a final recommendation or rating — or, if that is impracticable, a disclosure of the reason for terminating coverage',
+    [
+      ['Let the last published note stand and quietly stop updating, since there is no rule against simply ceasing to cover a name', 'Dropping coverage silently leaves clients relying on a stale rating; the rules require an affirmative discontinuation notice rather than a quiet fade-out.', 'Issue a discontinuation notice through the usual dissemination channel, with a final report or rating where practicable.'],
+      ['Send a one-line internal memo to the sales desk noting that coverage has ended', 'An internal memo does not reach the customers who hold the outstanding rating; the notice must go out through the firm\'s ordinary means of disseminating research to those customers.', 'Disseminate the discontinuation notice to entitled customers, not just the internal desk.'],
+      ['Change the published rating to "Not Rated" in the database without any accompanying communication', 'A silent database flag is not the required customer-facing notice and, where practicable, a final report or rating must accompany the discontinuation.', 'Provide a disseminated discontinuation notice with a final recommendation or rating, or state the reason if a final report is impracticable.'],
+    ],
+    'When a firm intends to terminate coverage it must promptly notify customers using its ordinary means of disseminating research on that company, and the notice should be accompanied by a final research report with a final recommendation or rating. If a final report is impracticable, the firm must disclose the reason for terminating coverage. Silently letting a rating go stale is precisely the trap the discontinuation rule prevents.',
+    'Floe generated',
+    true,
+    "Ending coverage is itself an event clients must hear about through the same channel they got the research; silence is the error.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    8880007,
+    'Career Skills',
+    'Dissemination, Corrections, and Recordkeeping',
+    "Audit trail for a published report",
+    'A regulator asks your firm to reconstruct the full history of a research note published six months ago — who drafted it, what changed, who reviewed and approved it, and how a later correction was handled. Your team kept the final published PDF but discarded the drafts, the reviewer\'s comments, and the supervisory sign-off. What is the core failure here?',
+    'The firm failed its books-and-records and audit-trail obligations: it must retain drafts, evidence of supervisory review and approval, communications, the published report, and corrections so a supervisor or examiner can reconstruct who wrote, reviewed, approved, and changed what, and when',
+    [
+      ['No failure, because keeping the final published version is the only record that actually matters', 'The published PDF alone cannot show review, approval, or the correction history; the recordkeeping obligation covers the surrounding evidence, not just the output.', 'Retain the drafts, review evidence, approvals, communications, and corrections that make the report\'s history reconstructable.'],
+      ['The only problem is that the correction was not also filed publicly with the SEC', 'Public re-filing is not the issue; the gap is the missing internal audit trail of drafts, review, and approval that the rules require firms to preserve.', 'Build and retain a complete internal record of the report lifecycle.'],
+      ['The failure is purely a technology problem that a longer email-retention setting would have fixed', 'Email retention is one piece, but the obligation spans drafts, reviewer comments, approval evidence, and corrections — not just messages.', 'Design records retention around the full report lifecycle, not a single channel.'],
+    ],
+    'Books-and-records rules require firms to preserve the evidence that lets a supervisor or examiner reconstruct a report\'s full history: drafts, supervisory review and approval, communications, the published report, and any corrections, with version control. Keeping only the final PDF leaves no audit trail when one is most needed. The obligation is about the lifecycle, not just the output.',
+    'Floe generated',
+    true,
+    "Ask what an examiner would need to prove the report was reviewed and approved — that list, not the PDF, is what must survive.",
+    { challengeRating: 5 },
+  ),
+  makeSimpleQuestion(
+    8880008,
+    'Career Skills',
+    'Dissemination, Corrections, and Recordkeeping',
+    "Sequencing distribution fairly versus tipping the desk",
+    'A rating change is approved and ready. Your firm\'s proprietary trading desk asks for it "a few minutes early" so they can position before the research blast goes to clients. The head trader argues the desk is part of the firm and the gap is tiny. What is the correct call?',
+    'Refuse the early tip; research must reach entitled clients on a fair basis, and giving the firm\'s own traders a head start before clients have a reasonable opportunity to act is improper selective distribution regardless of how brief the gap is',
+    [
+      ['Allow the few-minute head start, since a gap that small cannot meaningfully disadvantage clients', 'Even a brief advance look lets the desk trade ahead of clients on the report\'s content and timing, which is the precise abuse the fair-dissemination rules target; the size of the gap does not legitimize it.', 'Release to entitled clients first and ensure they have a reasonable opportunity to act before the desk trades.'],
+      ['Allow it if the desk signs a written attestation that they will not trade on the early information', 'An attestation not to use information you have just handed over does not cure giving them the head start; the control is to not distribute it early at all.', 'Do not provide early access; sequence dissemination so clients are not disadvantaged.'],
+      ['Allow it because proprietary traders are inside the information barrier and therefore entitled to research first', 'Being inside the firm is not a basis for receiving research ahead of clients; trading personnel must not act before intended recipients have a reasonable opportunity to do so.', 'Treat the desk like everyone else relative to fair client dissemination, and let surveillance, not a head start, govern their access.'],
+    ],
+    'Research must be disseminated to entitled clients on a fair basis, and firms must keep research personnel and traders from acting on the content or timing of a report before its intended recipients have had a reasonable opportunity to act. Tipping the firm\'s own desk — even briefly — is selective distribution, and SEC enforcement (e.g., the Goldman "trading huddles" matter) underscores that internal early access is a real violation. The brevity of the gap is irrelevant.',
+    'Floe generated',
+    true,
+    "The test is whether intended recipients had a reasonable opportunity to act first, not whether the requester sits inside the firm.",
+    { challengeRating: 7 },
+  ),
+
+  // ============================================================
+  // Supervision and Approval Workflow (3 new -> 8)
+  // ============================================================
+  makeSimpleQuestion(
+    8880009,
+    'Career Skills',
+    'Supervision and Approval Workflow',
+    "Pre-use approval cannot be retroactive",
+    'A note went out to clients during a fast market before the supervisory analyst had signed off; the desk argues the firm can "approve it after the fact since nothing was wrong with it." How should the supervisor treat this?',
+    'Treat it as a supervisory breach to document and remediate: required review and approval are pre-use controls that must occur before distribution, and after-the-fact "approval" does not satisfy the requirement no matter how clean the note turns out to be',
+    [
+      ['Grant the approval retroactively, since the review would have passed anyway and the content was fine', 'Approval is a control that must precede distribution; signing off afterward cannot retroactively create the pre-use review the rule requires, and a clean outcome does not cure a missing control.', 'Log the breach, fix the process so approval precedes release, and review the released note now for any needed correction.'],
+      ['Decide no action is needed because the content was accurate and balanced on review', 'A correct outcome does not mean the control worked; the supervisory failure is that the report was distributed without required pre-use approval.', 'Treat the control failure as the issue and document the escalation and remediation.'],
+      ['Quietly tighten the workflow going forward without recording that an unapproved note was distributed', 'Silently fixing the process leaves no record of the breach, which itself undermines the supervisory and recordkeeping obligations.', 'Document what happened, the remediation, and any correction, so the control failure is evidenced and addressed.'],
+    ],
+    'Supervisory review and principal approval of research are pre-use controls: they must happen before a report is distributed, and approval cannot be granted retroactively after release. A favorable after-the-fact review does not convert an uncontrolled distribution into a compliant one. The right response is to document the breach, remediate the workflow, and review the released note for any needed correction.',
+    'Floe generated',
+    true,
+    "Approval is a gate that opens before the door, not a stamp applied after the report has already left the building.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    8880010,
+    'Career Skills',
+    'Supervision and Approval Workflow',
+    "Investment banking out of the approval chain",
+    'To "speed things up," a senior investment banker who has a relationship with the issuer offers to pre-review and approve a research note on that issuer before it goes to the supervisory analyst. The deal team promises to only check facts. What is the correct response?',
+    'Reject it: investment-banking personnel cannot supervise research analysts or sit in the approval chain for research on companies they bank, and review and approval must come from a registered principal or qualified supervisory analyst outside banking',
+    [
+      ['Allow the banker to review for facts only, since fact-checking is harmless and not really an approval', 'Letting banking pre-review research on an issuer it banks is exactly the structural conflict the rules prohibit; even "fact-only" review puts banking influence into the research process.', 'Keep banking entirely out of the review and approval chain; route the note to the supervisory analyst or principal.'],
+      ['Allow it as long as the banker\'s comments are disclosed to readers in the report', 'This is a structural separation that cannot be cured by disclosure; banking involvement in the approval chain is prohibited, not merely disclosable.', 'Remove banking from the chain entirely rather than disclosing their involvement.'],
+      ['Allow it if the supervisory analyst still signs afterward, so there are "two sets of eyes"', 'Adding a proper reviewer afterward does not neutralize banking having already sat in the approval path; the prohibition is on banking being in the chain at all.', 'Have only independent supervisory review and approval, with no banking participation at any stage.'],
+    ],
+    'Rule 2241\'s structural separations bar investment-banking personnel from supervising research analysts or participating in the approval chain for research, and from any pre-publication review of research (the prior fact-checking exception for investment bankers was eliminated); the only narrow factual-review channel runs through non-investment-banking, non-research personnel or the subject company, with the rating, price target, and summary removed and overseen by legal or compliance — never through banking. This is a prohibited structural conflict, not one that disclosure can cure. Review and approval must come from an independent registered principal or qualified supervisory analyst.',
+    'Floe generated',
+    true,
+    "This is a conflict the regime forbids structurally; ask whether disclosure could fix it, and notice that here it cannot.",
+    { challengeRating: 7 },
+  ),
+  makeSimpleQuestion(
+    8880011,
+    'Career Skills',
+    'Supervision and Approval Workflow',
+    "What evidence of review must actually show",
+    'As supervisory analyst you are approving a draft with an aggressive new price target. The analyst assures you "the model supports it." To approve defensibly, what must your review and its documentation actually establish?',
+    'That you checked the substance — the price target has a disclosed reasonable basis and assumptions, required conflict disclosures are present and prominent, and the risk discussion is thesis-specific — and that this review is evidenced, not merely that you signed off',
+    [
+      ['Confirm only that the analyst is a registered, qualified person and then approve on their assurance', 'Supervision is a substantive check on the communication, not a credential check; relying on the analyst\'s assurance defeats the control supervision is supposed to provide.', 'Review the price-target basis, disclosures, and risk discussion yourself and evidence that you did.'],
+      ['Verify the report is formatted correctly and the disclosures section exists, then sign', 'A present disclosures section and clean formatting do not show the target basis was tested or the risks are thesis-specific; presence is not the same as adequacy.', 'Check that the basis is reasonable and the disclosures are not just present but prominent and complete.'],
+      ['Approve quickly and rely on post-publication surveillance to catch any problems', 'Surveillance is a back-end monitoring layer, not a substitute for the pre-use approval that is supposed to catch defects before release.', 'Do the substantive pre-use review first; use surveillance as an additional layer, not a replacement.'],
+    ],
+    'Defensible supervisory approval requires actually checking the substance — that the price target has a disclosed reasonable basis, the required conflict disclosures are present and prominent, and risks are specific to the thesis — and evidencing that the check happened. A signature without that review, or a credential or formatting check, is a rubber stamp. Post-publication surveillance complements but cannot replace pre-use approval.',
+    'Floe generated',
+    true,
+    "Approval is evidence that the price-target basis, disclosures, and risks were examined, not just that a qualified person clicked sign.",
+    { challengeRating: 5 },
+  ),
+]

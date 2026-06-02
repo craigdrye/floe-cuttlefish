@@ -733,9 +733,47 @@
   border-color: var(--error);
   color: #9f1239;
 }
+/* Only the answer the learner actually picked shakes; the highlighted correct
+   answer (when they missed) should stay still. */
+.answer.wrong.selected {
+  animation: answer-shake 0.28s ease-in-out both;
+}
 .answer.selected.correct {
   background: rgba(16,185,129,0.18);
   box-shadow: 0 0 12px rgba(16,185,129,0.2);
+}
+/* "Next →" affordance on the box the learner selected: another tap advances. */
+.next-hint {
+  flex-shrink: 0;
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 9px;
+  border-radius: var(--r-full);
+  background: rgba(8,33,48,0.14);
+  color: inherit;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  animation: next-hint-pop 0.25s ease both;
+}
+@keyframes next-hint-pop {
+  from { opacity: 0; transform: scale(0.82); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes answer-shake {
+  0%, 100% { transform: translateX(0); }
+  16% { transform: translateX(-6px); }
+  32% { transform: translateX(6px); }
+  48% { transform: translateX(-6px); }
+  64% { transform: translateX(6px); }
+  80% { transform: translateX(-4px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .answer.wrong.selected { animation: none; }
+  .next-hint { animation: none; }
 }
 
 /* ── Action Buttons ── */

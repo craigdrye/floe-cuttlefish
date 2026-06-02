@@ -22,6 +22,7 @@ import { openTriviaBrainTeaserQuestions } from './openTriviaBrainTeasersImported
 import { brainBurnersOerBatch2Questions } from './brainBurnersOerBatch2'
 import { brainBurnersWorkoutGeneratedQuestions } from './brainBurnersWorkoutGenerated'
 import { topUpCareerAgentGeneratedCatalog } from './careerAgentGenerated'
+import { CAREER_GENERATED_23 } from './careerGenerated23'
 import {
   careerLabsClinicalResearchQuestions,
   careerLabsMedicalQuestions,
@@ -1982,5 +1983,9 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
     polished[id] = [...(polished[id] ?? []), ...extra]
   }
 
-  return enrichCareerHints(enrichCareerQuestionQuality(topUpCareerAgentGeneratedCatalog(polished)))
+  const toppedUp = topUpCareerAgentGeneratedCatalog(polished)
+  for (const [trackId, generated] of Object.entries(CAREER_GENERATED_23)) {
+    toppedUp[trackId] = [...(toppedUp[trackId] ?? []), ...generated]
+  }
+  return enrichCareerHints(enrichCareerQuestionQuality(toppedUp))
 }

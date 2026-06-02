@@ -1,0 +1,748 @@
+import { makeSimpleQuestion } from '../base'
+import type { Question } from '../types'
+
+export const sqe2S0G23: Question[] = [
+  // ---------------- Client Interview (1 new -> 8) ----------------
+  makeSimpleQuestion(
+    8560000,
+    'Career Skills',
+    'Client Interview',
+    "Open and closed question sequencing in fact-gathering",
+    "You are a trainee taking first instructions from a new client who believes a builder did defective work. Twelve minutes in, you still have only a vague picture of what happened and when. You want a clean chronological account before you advise. Which questioning move best fits this stage of the interview?",
+    "Ask an open question such as \"Tell me, from the beginning, what happened with the building work?\" and let the client narrate before you probe details",
+    [
+      [
+        "Ask \"You signed the contract on 3 March and they breached it by using the wrong materials, didn't you?\" to confirm the key facts quickly",
+        "This is a leading question that imports your assumptions (the date, the breach, the cause) into the client's account. SQE 2 interview stations mark this down because it contaminates the narrative and may produce a story the client did not actually mean to give.",
+        "Use a genuinely open invitation to narrate first; reserve closed and confirmatory questions for clarifying specifics once the client has set out their own version.",
+      ],
+      [
+        "Move straight to closed questions about each individual defect so you can complete a precise checklist of the problems",
+        "Closed questions are useful for pinning detail, but using them first denies you the client's own chronology and structure, and you risk missing facts your checklist never anticipated. The fact-gathering stage should start wide, then narrow.",
+        "Start with an open question to capture the whole story, then deploy closed questions to fill the specific gaps that remain.",
+      ],
+      [
+        "Give your provisional legal advice now so the client can react and correct any factual misunderstanding as you go",
+        "Advising before you have the facts is premature and risky: advice given on an incomplete account can be wrong and is hard to defend later, and it can steer the client's remaining answers toward your theory.",
+        "Gather a full factual account first; advise only once you understand the chronology and have identified any conflict or money-laundering concerns.",
+      ],
+    ],
+    "In the acquiring-information stage of a structured interview (the A in WASP), open questions come first because they let the client narrate without your assumptions shaping the account; closed questions then pin down specific details. Leading questions are marked down on SQE 2 interview stations because they import the interviewer's theory into the client's evidence. Advice belongs after the facts are gathered, not woven through fact-finding.",
+    "Floe generated",
+    true,
+    "Ask which question type lets the client give their own chronology without you steering it, and whether you yet know enough to advise.",
+    { challengeRating: 4 },
+  ),
+
+  // ---------------- Advocacy (1 new -> 8) ----------------
+  makeSimpleQuestion(
+    8560001,
+    'Career Skills',
+    'Advocacy',
+    "Plea in mitigation consistent with the basis of plea",
+    "Your client pleaded guilty to assault occasioning actual bodily harm on a written basis of plea, accepted by the prosecution, that he threw a single punch in a sudden loss of temper. In your plea in mitigation you are tempted to tell the magistrates that, in truth, your client was acting in self-defence and the complainant started it. What is the correct approach to your submission?",
+    "Mitigate within the accepted basis of plea, emphasising the single punch, provocation in a general sense if supported, remorse and personal mitigation, without asserting facts inconsistent with that basis",
+    [
+      [
+        "Run the self-defence account in mitigation, because mitigation is your chance to put the client's full version to the court",
+        "Asserting self-defence contradicts a guilty plea and the accepted basis of plea: if it was truly self-defence there is a defence, not mitigation. Advancing facts inconsistent with the basis of plea breaches your duty not to mislead the court and undermines the plea.",
+        "Keep mitigation strictly within the accepted basis of plea; if the client genuinely has a defence, that is a matter for trial, not a mitigation speech.",
+      ],
+      [
+        "Ask the court to hold a Newton hearing so the self-defence version can be tested before sentence",
+        "A Newton hearing resolves a factual dispute between defence and prosecution that materially affects sentence; it is not a route to reintroduce a full defence after an unequivocal guilty plea on an agreed basis. There is no factual dispute here because the basis was accepted.",
+        "Reserve Newton hearings for genuine sentencing-relevant factual disputes; here there is an agreed basis, so mitigate within it.",
+      ],
+      [
+        "Stay silent on the circumstances and simply ask for the lowest sentence available",
+        "A bare plea for leniency wastes the mitigation opportunity and gives the bench nothing to work with on the Sentencing Council guideline. Effective advocacy structures mitigation around the accepted facts and personal circumstances.",
+        "Build a structured submission around the agreed facts and the relevant guideline steps, rather than offering no content at all.",
+      ],
+    ],
+    "A plea in mitigation must be consistent with the accepted basis of plea; you cannot assert facts that contradict the guilty plea, because doing so would mislead the court contrary to your duty under SRA Principle 1 and Code paragraph 1.4. If the real account amounts to a defence, the answer is a trial, not a mitigation speech. Where defence and prosecution genuinely dispute a sentencing-relevant fact, a Newton hearing resolves it, but that is not a back door to reopen an agreed basis.",
+    "Floe generated",
+    true,
+    "Ask whether the version you want to advance is mitigation or a defence, and whether asserting it would contradict the plea your client already entered.",
+    { challengeRating: 6 },
+  ),
+
+  // ---------------- Legal Research (2 new -> 8) ----------------
+  makeSimpleQuestion(
+    8560002,
+    'Career Skills',
+    'Legal Research',
+    "Anchoring research in primary authority before commentary",
+    "A partner asks you to confirm whether a particular notice can be served by email under a specific statutory regime. With 45 minutes, you find a Practical Law note that says yes and a textbook paragraph that agrees. What is the most defensible next step before you report back?",
+    "Go to the primary source the commentary relies on, read the relevant statutory provision or rule on service, and check it is still in force and current before confirming",
+    [
+      [
+        "Report that email service is permitted, citing the Practical Law note and the textbook as your two supporting sources",
+        "Two pieces of commentary agreeing is not the same as verified primary authority; commentary can be out of date, oversimplified, or addressing a different regime. SQE 2 research stations mark down conclusions that never anchor to the statute or rule.",
+        "Use the commentary as a signpost, then confirm the answer against the primary provision itself and check it remains current law.",
+      ],
+      [
+        "Search for a case where a court accepted email service and rely on that as conclusive",
+        "A single case may turn on its own facts, a different statutory regime, or have been distinguished or superseded; relying on it without checking the governing statute and its subsequent treatment is a research-station failure.",
+        "Start from the statutory rule on service for this regime, then use case law only to interpret it, checking the case is still good law.",
+      ],
+      [
+        "Confirm by analogy with the Civil Procedure Rules service provisions, since those clearly allow email service in many situations",
+        "The CPR governs service in civil proceedings under the rules, not service of a notice under a different statutory regime; reasoning by analogy across regimes can give the wrong answer because each regime sets its own service requirements.",
+        "Identify and read the specific statutory provision that governs service under this regime rather than importing a rule from an unrelated one.",
+      ],
+    ],
+    "A defensible research chain runs statute first, then statutory instruments, then case law, then commentary, with each conclusion anchored to primary authority that you have checked is still in force. Commentary is a fast signpost, not the destination; relying on it without verifying the underlying provision risks repeating an out-of-date or context-specific statement. Always confirm the rule applies to the exact regime in issue and remains current law.",
+    "Floe generated",
+    true,
+    "Ask what the commentary is itself relying on, and whether you have looked at that source and checked it is still current.",
+    { challengeRating: 5 },
+  ),
+  makeSimpleQuestion(
+    8560003,
+    'Career Skills',
+    'Legal Research',
+    "Checking subsequent treatment before relying on a case",
+    "You find a Court of Appeal decision squarely on the point your partner needs and the facts match closely. You are about to cite it in your research note as settling the question. What single step most reduces the risk that your note misleads the partner?",
+    "Run a citator check (such as KeyCite or CaseAnalysis) to confirm the decision has not been overruled, reversed, or doubted, and read how later courts have treated it",
+    [
+      [
+        "Confirm the case has not been formally repealed, since repeal would remove it as authority",
+        "Statutes are repealed; cases are overruled, reversed, distinguished, or doubted. Looking for a repeal misunderstands how case law loses authority and would miss a later decision that has undermined it.",
+        "Use a citator to check judicial treatment of the case, looking specifically for overruling, reversal, or negative comment.",
+      ],
+      [
+        "Check that the case is reported in an official law report rather than only on a transcript service",
+        "Whether a case is in an official report affects its citability and weight in court, but it does not tell you whether the decision is still good law; a fully reported case can still have been overruled.",
+        "Confirm citation status if needed, but the decisive check is subsequent treatment via a citator, not where the report appears.",
+      ],
+      [
+        "Verify that the panel included senior judges, because a strong court makes the precedent more reliable",
+        "The seniority of the judges does not protect a decision from being overruled by a higher court or distinguished by later ones; relying on the constitution of the bench is no substitute for checking how the case has since been treated.",
+        "Check the case's subsequent treatment with a citator; that, not the composition of the original court, tells you whether it still binds.",
+      ],
+    ],
+    "Before relying on a case you must check its subsequent treatment using a citator such as Westlaw's KeyCite or LexisLibrary's CaseAnalysis, because a case can be overruled, reversed on appeal, distinguished, or judicially doubted. A case that fits the facts but is no longer good law is a classic research-station failure. Citing such a case in a note would mislead the partner who relies on it.",
+    "Floe generated",
+    true,
+    "Ask how a case (as opposed to a statute) loses its authority, and which tool tells you whether later courts have undermined it.",
+    { challengeRating: 5 },
+  ),
+
+  // ---------------- Legal Writing (3 new -> 8) ----------------
+  makeSimpleQuestion(
+    8560004,
+    'Career Skills',
+    'Legal Writing',
+    "Correct use of the without prejudice label",
+    "You are drafting your firm's client care and retainer letter to a new client. A colleague suggests heading it \"Without Prejudice\" so that, if the client later complains about fees, the letter cannot be used against the firm. How should you label this letter?",
+    "Do not mark it without prejudice; the client care letter is not a settlement communication, so label it as an ordinary open letter setting out the retainer and costs information",
+    [
+      [
+        "Mark it \"Without Prejudice\" as suggested, to keep the fee terms out of any later dispute",
+        "Without prejudice protection attaches only to communications genuinely aimed at settling an existing dispute; a retainer letter is not such a communication, so the label is wrong and ineffective and may confuse the client about the letter's status.",
+        "Send the client care letter as an open letter; reserve without prejudice for genuine settlement negotiations in an actual dispute.",
+      ],
+      [
+        "Mark it \"Without Prejudice Save as to Costs\" so the firm keeps maximum flexibility",
+        "That label is a Calderbank variant used for settlement offers where the parties want costs consequences preserved; it has no application to a retainer letter and signals that you have misunderstood when the rule operates.",
+        "Use that label only for genuine settlement offers; here the letter simply records retainer terms and should be open.",
+      ],
+      [
+        "Mark it \"Privileged and Confidential\" so it cannot be disclosed in any future proceedings",
+        "Confidentiality and legal advice privilege protect communications in defined circumstances, but slapping a privilege label on a retainer letter does not make it privileged and could not shield it in a fee dispute between the firm and its own client.",
+        "Apply privilege labels only where the substance actually attracts privilege; a client care letter does not need or get such protection.",
+      ],
+    ],
+    "The without prejudice rule makes communications genuinely aimed at settling an existing dispute inadmissible as evidence of admissions; it is the substance of settlement negotiation, not the label, that engages it. A client care and retainer letter is not a settlement communication, so marking it without prejudice is both wrong and pointless. Misapplied privilege or settlement labels signal a misunderstanding and can mislead the recipient about the document's status.",
+    "Floe generated",
+    true,
+    "Ask what the without prejudice rule actually protects, and whether a retainer letter is a settlement communication at all.",
+    { challengeRating: 4 },
+  ),
+  makeSimpleQuestion(
+    8560005,
+    'Career Skills',
+    'Legal Writing',
+    "Placing material deadlines where the client will see them",
+    "You are writing to an anxious litigant client to explain that they must file and serve a witness statement by a fixed date or risk being unable to rely on the evidence. The substantive explanation runs to four paragraphs. Where should the operative deadline appear in your letter?",
+    "State the deadline prominently near the top and repeat it in a clear action point at the end, so the client cannot miss the date and the action required",
+    [
+      [
+        "Place the deadline once, mid-way through the third paragraph where the procedural explanation naturally sits",
+        "Burying a material date inside the body risks the client skimming past it; legal-writing stations penalise letters where the operative deadline is hidden in prose because the whole point is that the client must act on it.",
+        "Lead with the date and close with an action point; the explanation can sit in between, but the date must be unmissable.",
+      ],
+      [
+        "Leave the precise date out and tell the client you will remind them closer to the time, to avoid worrying them now",
+        "Omitting the date leaves the client without the key fact and shifts the entire burden onto your future diary; if the reminder slips, the client has no record of the deadline and the firm carries the risk.",
+        "Give the client the actual date in writing now, and keep your own diary entry as a backstop rather than a substitute.",
+      ],
+      [
+        "Express the deadline only as \"within 14 days\" so it stays accurate even if the trigger date moves",
+        "A relative period forces the client to calculate, increases the chance of error, and is ambiguous about the trigger; clients act more reliably on a concrete calendar date.",
+        "Convert the period to a specific calendar date for the client, while keeping a note of how it was calculated on the file.",
+      ],
+    ],
+    "Material dates are load-bearing in client correspondence: they belong at the top of the letter and in a bulleted action point at the end, not buried mid-paragraph. A worried client reads for what they must do and when, so a concrete calendar date, stated twice, reduces the risk of a missed step. Relative periods and vague promises to remind shift avoidable risk onto the firm.",
+    "Floe generated",
+    true,
+    "Ask what the client most needs to act on, and whether a date hidden in paragraph three will reliably be seen and used.",
+    { challengeRating: 4 },
+  ),
+  makeSimpleQuestion(
+    8560006,
+    'Career Skills',
+    'Legal Writing',
+    "Legal advice privilege boundaries in a client email",
+    "A corporate client asks you to email advice on a proposed restructuring. The client says they intend to forward your email to their commercial bank's relationship manager so the bank understands the plan. Before you send, what is the key risk you should address?",
+    "Forwarding privileged legal advice to a third party such as the bank risks waiving legal advice privilege in it, so you should warn the client and discuss how to share the substance without losing protection",
+    [
+      [
+        "There is no risk because legal advice privilege belongs to the client, who can do as they wish with their own privileged document",
+        "While privilege belongs to the client, voluntarily disclosing the advice to a third party outside any common-interest or confidentiality arrangement can waive it, exposing the advice in later litigation. Treating sharing as risk-free overlooks how privilege is lost.",
+        "Advise the client that onward disclosure can waive privilege, and explore sharing a non-privileged summary or using a confidentiality arrangement instead.",
+      ],
+      [
+        "There is no risk provided the email is marked \"Privileged and Confidential\" before it is forwarded",
+        "A privilege label does not preserve privilege once the substance is voluntarily disclosed to an outside party; the label is not a force field. The waiver flows from the act of disclosure, not from the wording at the top.",
+        "Focus on whether disclosure to the bank waives privilege, and manage the substance accordingly rather than relying on a heading.",
+      ],
+      [
+        "The only risk is litigation privilege, which is lost the moment any document is shared outside the legal team",
+        "This conflates the two privileges: the advice here is given outside litigation, so the relevant head is legal advice privilege, not litigation privilege, and the latter has its own dominant-purpose-of-litigation test. Naming the wrong privilege misdiagnoses the problem.",
+        "Identify that legal advice privilege is engaged and that onward disclosure to the bank is what threatens it.",
+      ],
+    ],
+    "Legal advice privilege protects confidential lawyer-client communications for the dominant purpose of giving or receiving legal advice; voluntarily disclosing that advice to a third party outside a common-interest or confidentiality arrangement can waive the privilege and make it disclosable later. A privilege label does not prevent waiver, and litigation privilege (which requires the dominant purpose of litigation) is a different head. The practical move is to warn the client and find a protected way to share the substance.",
+    "Floe generated",
+    true,
+    "Ask what act actually causes privilege to be lost, and whether a label can stop it once the advice leaves the client's hands.",
+    { challengeRating: 6 },
+  ),
+
+  // ---------------- Legal Drafting (2 new -> 8) ----------------
+  makeSimpleQuestion(
+    8560007,
+    'Career Skills',
+    'Legal Drafting',
+    "Keeping evidence out of particulars of claim",
+    "You are drafting particulars of claim for a breach of contract dispute. A trainee colleague has produced a draft that, alongside the material facts, sets out verbatim quotations from emails and explains why the opponent's likely witnesses are not credible. What should you do with that material before the document is filed?",
+    "Remove the evidence and argument, leaving a concise statement of the material facts relied on; the email contents and credibility points belong in witness evidence, not the statement of case",
+    [
+      [
+        "Keep the email quotations in the particulars because they prove the breach and make the pleading more persuasive",
+        "Particulars of claim must contain a concise statement of the facts relied on, not the evidence by which they are proved; including evidence breaches CPR Part 16 and produces a bloated, non-compliant pleading.",
+        "State the material fact (for example, that a term was agreed and breached) and leave the supporting emails for the witness statements and disclosure.",
+      ],
+      [
+        "Keep the credibility comments but move the email quotations to an appendix to the particulars",
+        "Argument about witness credibility has no place in a statement of case at all, and appending evidence does not cure the breach; the document should plead facts, not anticipate and attack the other side's evidence.",
+        "Strip out credibility argument entirely and confine the pleading to the material facts and the relief sought.",
+      ],
+      [
+        "Leave the draft as it is because a fuller pleading reduces the risk of a strike-out for failing to disclose a cause of action",
+        "A pleading is at risk of strike-out for failing to disclose a cause of action when it omits the required material facts, not when it is concise; padding it with evidence and argument does not protect against strike-out and breaches the rules.",
+        "Ensure each element of the cause of action is pleaded as a material fact; that, not added evidence, is what avoids a strike-out.",
+      ],
+    ],
+    "Under CPR Part 16, particulars of claim contain a concise statement of the material facts relied on, with each element of the cause of action pleaded, but not the evidence used to prove those facts. Email contents, documents, and arguments about witness credibility belong in witness statements and disclosure, not the statement of case. Padding a pleading with evidence breaches the rules and does not protect against strike-out, which turns on whether the material facts disclose a cause of action.",
+    "Floe generated",
+    true,
+    "Ask what a statement of case is meant to contain versus what belongs in witness evidence, and whether credibility argument has any place in a pleading.",
+    { challengeRating: 5 },
+  ),
+  makeSimpleQuestion(
+    8560008,
+    'Career Skills',
+    'Legal Drafting',
+    "Trial witness statements in the witness's own words",
+    "You are drafting a trial witness statement for a claim in the Business and Property Courts. The instructing partner hands you a polished narrative they have written that stitches together the contents of the disclosed documents in elegant legal prose. To comply with PD 57AC, how should the statement be drafted?",
+    "Draft it in the witness's own words and first person, confined to matters of fact within the witness's personal knowledge, avoiding document narrative and argument",
+    [
+      [
+        "Use the partner's polished narrative, since a clear, well-written account assists the court more than a witness's informal phrasing",
+        "PD 57AC requires the statement to be in the witness's own words and to avoid setting out a narrative derived from the documents; a lawyer-drafted document narrative is precisely what the practice direction was introduced to stop.",
+        "Take the evidence from the witness directly and record it in their own words, limited to what they personally recall.",
+      ],
+      [
+        "Keep the document narrative but add a statement of truth and a confirmation that the witness has read and agrees with it",
+        "A statement of truth does not cure a non-compliant statement; the problem is that the content is a lawyer's commentary on documents rather than the witness's own factual recollection, which PD 57AC prohibits regardless of sign-off.",
+        "Rebuild the content as the witness's own first-person account of facts within their knowledge before any statement of truth is added.",
+      ],
+      [
+        "Write it in the third person describing the witness's actions, which reads more objectively",
+        "Trial witness statements must be in the first person and the witness's own language; a third-person account breaches the formality requirements and signals lawyer authorship rather than the witness's own evidence.",
+        "Draft in the first person using the witness's own words, recording how well they recall the matters addressed.",
+      ],
+    ],
+    "Practice Direction 57AC governs trial witness statements in the Business and Property Courts: the statement must be in the witness's own words and first person, limited to matters of fact within their personal knowledge, and must not set out a narrative derived from the documents or argue the case. A lawyer-written document narrative is non-compliant, and a statement of truth does not cure it. The witness should also state how well they recall the matters and whether their recollection was refreshed by documents.",
+    "Floe generated",
+    true,
+    "Ask whose words and whose recollection the statement is supposed to capture, and whether a polished document summary is evidence of fact at all.",
+    { challengeRating: 6 },
+  ),
+
+  // ---------------- Criminal Litigation (1 new -> 8) ----------------
+  makeSimpleQuestion(
+    8560009,
+    'Career Skills',
+    'Criminal Litigation',
+    "Defence statement obligation in the Crown Court",
+    "Your client is committed for trial in the Crown Court and the prosecution has provided initial disclosure under section 3 CPIA 1996. The client is reluctant to commit to a defence in writing. As the defence solicitor, how should you advise on the defence statement?",
+    "Advise that a defence statement is compulsory in the Crown Court and must be served, and that failing to serve it (or running a different defence at trial) can attract adverse inferences under section 11 CPIA 1996",
+    [
+      [
+        "Advise that serving a defence statement is optional and tactically unwise, so the client should stay silent and reveal nothing",
+        "In the Crown Court the defence statement is compulsory, not optional; treating it as a tactical choice to withhold misstates CPIA 1996 and exposes the client to adverse inferences under section 11.",
+        "Explain that the statement must be served within the time limit and draft it carefully to set out the defence without overcommitting.",
+      ],
+      [
+        "Advise that the statement can be served at any time before trial, so there is no urgency",
+        "The defence statement must be served within the prescribed period after the prosecution complies (or purports to comply) with initial disclosure; late service without reasonable excuse can itself attract adverse comment or inference.",
+        "Diarise the statutory time limit from initial disclosure and serve within it to avoid a section 11 inference for lateness.",
+      ],
+      [
+        "Advise that a defence statement is only needed if the client intends to call an alibi witness",
+        "Alibi notice is one specific requirement, but the duty to serve a defence statement in the Crown Court is general and applies regardless of whether there is an alibi; confining it to alibi cases understates the obligation.",
+        "Treat the defence statement as a general Crown Court requirement, including alibi particulars only where relevant.",
+      ],
+    ],
+    "In the Crown Court a defence statement is compulsory under CPIA 1996: it must set out the nature of the defence, matters of fact in issue, and reasons, and be served within the prescribed period after the prosecution's initial disclosure. Failure to serve it, late service, or running a defence at trial that differs from the statement can attract adverse inferences under section 11. It is not a tactical option to withhold, and the duty is not limited to alibi cases.",
+    "Floe generated",
+    true,
+    "Ask whether the defence statement is mandatory in the Crown Court and what section 11 allows the court to do if the defence withholds or changes it.",
+    { challengeRating: 5 },
+  ),
+
+  // ---------------- Dispute Resolution (1 new -> 8) ----------------
+  makeSimpleQuestion(
+    8560010,
+    'Career Skills',
+    'Dispute Resolution',
+    "Part 36 cost consequences when a claimant beats its own offer",
+    "Your claimant client made a valid Part 36 offer to accept 50,000 pounds, with a 21-day relevant period, which the defendant rejected. At trial the claimant is awarded 55,000 pounds. The defendant's solicitor argues that, because the margin over the offer is small, the usual Part 36 consequences should not follow. What is the correct position?",
+    "Because the judgment is at least as advantageous as the claimant's offer, the court must, unless it considers it unjust, order enhanced consequences including indemnity costs and enhanced interest from the end of the relevant period; the small margin does not defeat this",
+    [
+      [
+        "The Part 36 consequences do not apply because the claimant only beat the offer by a small margin",
+        "Beating the offer by a small margin in money terms does not make the consequences unjust; the rule is engaged whenever the judgment is at least as advantageous as the offer, however narrow the difference.",
+        "Recognise that any sum better than the offer triggers the consequences; argue \"unjust\" only on recognised grounds, not on the size of the margin.",
+      ],
+      [
+        "The claimant gets standard-basis costs throughout, because Part 36 enhancements apply only to defendants who fail to beat their own offers",
+        "When a claimant beats its own offer, CPR 36.17(4) provides for enhanced consequences including indemnity costs and enhanced interest from the end of the relevant period; limiting enhancements to defendants misreads the rule.",
+        "Apply CPR 36.17(4): on a claimant beating its own offer the court must, unless unjust, award indemnity costs and enhanced interest from the relevant period's end.",
+      ],
+      [
+        "The enhanced consequences run from the date the offer was typed at the top of the letter",
+        "The consequences run from the end of the relevant period (here 21 days after service), not from the date written on the offer; the relevant period is measured from service.",
+        "Calculate the enhancements from the expiry of the 21-day relevant period, measured from service of the offer.",
+      ],
+    ],
+    "Under CPR 36.17(4), where a claimant obtains a judgment at least as advantageous as its own Part 36 offer, the court must, unless it considers it unjust, award interest on damages, indemnity costs from the end of the relevant period, enhanced interest on those costs, and an additional amount. The size of the margin over the offer is not itself a reason to find it unjust: any sum better in money terms suffices. The enhancements run from the end of the relevant period, measured from service of the offer.",
+    "Floe generated",
+    true,
+    "Ask whether the rule cares how much the offer was beaten by, and from what date the enhanced consequences run.",
+    { challengeRating: 6 },
+  ),
+
+  // ---------------- Property Practice (1 new -> 8) ----------------
+  makeSimpleQuestion(
+    8560011,
+    'Career Skills',
+    'Property Practice',
+    "Risk passing on exchange under the Standard Conditions of Sale",
+    "You act for a residential buyer on a contract incorporating the Standard Conditions of Sale (5th edition) without amendment. The day after exchange but before completion, a fire seriously damages the property. The buyer asks whether they can walk away or reduce the price. What is the correct advice?",
+    "Under standard condition 5.1.1 risk passed to the buyer on exchange, so the buyer must still complete at the full price; the buyer should have insurance in place from exchange and now claims on it",
+    [
+      [
+        "The buyer can rescind because the seller still owns the property until completion and so bears the risk of damage",
+        "Although legal title passes on completion, the Standard Conditions of Sale transfer risk to the buyer on exchange under 5.1.1; ownership of title and incidence of risk are not the same thing, so the buyer cannot rescind on this basis.",
+        "Advise that risk and title separate here: risk is on the buyer from exchange, so the buyer must complete and rely on their own insurance.",
+      ],
+      [
+        "The buyer can require the seller to claim on the seller's insurance and pass the money across",
+        "Under the unamended Standard Conditions the buyer takes the risk and generally cannot require the seller's insurance proceeds; the seller maintaining cover is prudent backstop, not the buyer's entitlement.",
+        "Tell the buyer to claim on their own policy, which they should have arranged from exchange, rather than rely on the seller's insurer.",
+      ],
+      [
+        "The buyer can insist on a price reduction reflecting the cost of repairs as a condition of completing",
+        "There is no right to abate the price for post-exchange damage when risk has passed to the buyer; the buyer must complete at the contract price and look to insurance.",
+        "Complete at the agreed price and pursue an insurance claim; a price reduction would have needed an amendment shifting risk back to the seller.",
+      ],
+    ],
+    "Under standard condition 5.1.1 of the Standard Conditions of Sale (5th edition), risk in the property passes to the buyer on exchange of contracts, even though legal title does not pass until completion and registration. Damage after exchange does not entitle the buyer to rescind, abate the price, or claim the seller's insurance proceeds. This is why a buyer should arrange buildings insurance from exchange; the seller prudently keeps cover in place only as a backstop.",
+    "Floe generated",
+    true,
+    "Ask when risk passes versus when title passes under the Standard Conditions, and whose insurance the buyer should be relying on after exchange.",
+    { challengeRating: 5 },
+  ),
+
+  // ---------------- Wills and Probate (2 new -> 8) ----------------
+  makeSimpleQuestion(
+    8560012,
+    'Career Skills',
+    'Wills and Probate',
+    "Beneficiary as attesting witness under section 15 Wills Act 1837",
+    "A testator's home-made will leaves 20,000 pounds to his neighbour. It is signed and witnessed by two people: the neighbour and the neighbour's adult son. The execution otherwise complies with section 9 Wills Act 1837. What is the effect on the will and the gift to the neighbour?",
+    "The will remains validly executed, but under section 15 Wills Act 1837 the gift to the neighbour fails because the neighbour was an attesting witness",
+    [
+      [
+        "The entire will is invalid because a beneficiary cannot act as a witness",
+        "Section 15 does not invalidate the will; the will is still validly executed and the witness can still prove it. Only the gift to the attesting witness is rendered void, not the whole document.",
+        "Treat the will as valid and apply section 15 narrowly: it voids the gift to the witness, leaving the rest of the will to take effect.",
+      ],
+      [
+        "The gift to the neighbour is valid because there were two witnesses, satisfying section 9",
+        "Having two witnesses satisfies the formality in section 9, but section 15 separately voids a gift to an attesting witness; the gift fails even though the will is properly executed.",
+        "Confirm section 9 is satisfied, then apply section 15 to the gift: a beneficiary who witnessed loses the gift.",
+      ],
+      [
+        "Both the gift to the neighbour and any gift to the neighbour's son fail under section 15",
+        "Section 15 voids gifts to an attesting witness or that witness's spouse or civil partner; an adult son who is merely a witness and not himself a beneficiary, and who is not the witness's spouse, is not caught simply by relationship.",
+        "Void only the gift to the attesting witness (and to a witness's spouse or civil partner if any); do not extend it to a witness's child who is not a beneficiary.",
+      ],
+    ],
+    "Section 9 of the Wills Act 1837 sets the execution formalities; a will that complies is valid. Section 15 separately provides that a gift to a person who attests the will, or to that person's spouse or civil partner, is void, although the witness can still prove the will and the rest of the will stands. So a beneficiary who witnesses keeps the will valid but loses their own gift; the rule does not extend to a witness's adult child who is not a beneficiary.",
+    "Floe generated",
+    true,
+    "Ask whether section 15 attacks the whole will or just a particular gift, and exactly whose gift it voids.",
+    { challengeRating: 5 },
+  ),
+  makeSimpleQuestion(
+    8560013,
+    'Career Skills',
+    'Wills and Probate',
+    "Distribution timing and the I(PFD)A 1975 six-month window",
+    "You act for the personal representatives of an estate. They have obtained the grant and are keen to distribute immediately to the residuary beneficiaries. You are aware the deceased's cohabiting partner of ten years may have a claim. What should you advise the personal representatives about timing?",
+    "Advise waiting until at least six months after the grant before distributing, because an I(PFD)A 1975 claim can be brought within that period and early distribution exposes the personal representatives to personal liability",
+    [
+      [
+        "Advise that they may distribute now because, once the grant issues, the estate is theirs to administer as they see fit",
+        "Distributing within six months of the grant ignores the I(PFD)A 1975 claim window; if a successful claim follows, the personal representatives may be personally liable for having distributed too early.",
+        "Hold distribution until the six-month period from the grant has passed (or take indemnities/insurance), protecting the personal representatives from personal liability.",
+      ],
+      [
+        "Advise that the six-month period runs from the date of death, so if six months have passed since death they can safely distribute",
+        "The I(PFD)A 1975 time limit runs from the date of the grant of representation, not from the date of death; calculating from death can leave the claim window still open and the personal representatives exposed.",
+        "Measure the six months from the grant, not from death, before treating distribution as safe.",
+      ],
+      [
+        "Advise that a cohabitee cannot bring a claim at all, so there is no reason to delay",
+        "A cohabitant who lived with the deceased as if a spouse for the two years immediately before death can be an eligible applicant under the I(PFD)A 1975; assuming no standing is wrong and removes the very protection delay provides.",
+        "Recognise the cohabitant may be eligible, and advise delaying distribution past the six-month window accordingly.",
+      ],
+    ],
+    "Under section 4 of the Inheritance (Provision for Family and Dependants) Act 1975, a claim must generally be brought within six months of the grant of representation. Personal representatives who distribute before that period expires risk personal liability if a successful claim follows, whereas section 20 protects those who wait. The period runs from the grant, not the date of death, and an eligible applicant can include a cohabitant who lived with the deceased as a spouse for the two years before death.",
+    "Floe generated",
+    true,
+    "Ask from what date the six-month clock runs, and what personal exposure the personal representatives face if they distribute before it expires.",
+    { challengeRating: 6 },
+  ),
+
+  // ---------------- Business Organisations (1 new -> 8) ----------------
+  makeSimpleQuestion(
+    8560014,
+    'Career Skills',
+    'Business Organisations',
+    "Threshold for a special resolution by written resolution",
+    "A private company limited by shares wants to change its articles of association by written resolution. The total voting rights of eligible members are 1,000. The proposing director asks you what proportion of those voting rights must be in favour for the resolution to pass, and whether anything special must be stated. What is the correct advice?",
+    "Changing the articles needs a special resolution, so members representing not less than 75% of the total voting rights of eligible members must signify agreement, and the written resolution must state that it is proposed as a special resolution",
+    [
+      [
+        "A simple majority of more than 50% of the voting rights is enough, as with most company decisions",
+        "A simple majority passes an ordinary resolution, but altering the articles requires a special resolution; using the ordinary-resolution threshold would not validly amend the articles.",
+        "Apply the special-resolution threshold of at least 75% of eligible members' voting rights for an article amendment.",
+      ],
+      [
+        "A 75% majority is required, but as a written resolution there is no need to label it as a special resolution",
+        "The 75% threshold is right, but for a private company's written resolution to be a special resolution it must state that it is proposed as a special resolution; without that statement it is not treated as one.",
+        "Require both the 75% threshold and an express statement that the written resolution is proposed as a special resolution.",
+      ],
+      [
+        "Unanimity of all eligible members is required because a written resolution dispenses with a meeting",
+        "A written resolution does not raise the voting threshold to unanimity; it is passed by the same percentage of eligible members' voting rights as at a meeting, here at least 75% for a special resolution.",
+        "Apply the ordinary statutory thresholds (here 75%) to the written resolution; unanimity is not required just because there is no meeting.",
+      ],
+    ],
+    "Under the Companies Act 2006, an ordinary resolution passes on a simple majority and a special resolution requires not less than 75% of the relevant voting rights; a written resolution is passed by the same proportion of the total voting rights of eligible members. Amending the articles requires a special resolution. For a private company's written resolution to count as a special resolution, it must state that it is proposed as a special resolution; otherwise it is not treated as one.",
+    "Floe generated",
+    true,
+    "Ask which type of resolution alters the articles, what percentage it needs, and whether a written special resolution must say so on its face.",
+    { challengeRating: 5 },
+  ),
+
+  // ---------------- Ethics in Practice (5 new -> 8) ----------------
+  makeSimpleQuestion(
+    8560015,
+    'Career Skills',
+    'Ethics in Practice',
+    "Conflict check before acting for two parties together",
+    "Two business partners come to you together wanting you to act for both in setting up a new company and drafting a shareholders' agreement. They say they agree on everything and want to save costs by using one solicitor. Before going further, what does the SRA Code require you to do?",
+    "Assess whether there is a conflict or significant risk of one; you may act only if they have a substantially common interest and each gives informed consent in writing, with safeguards for confidential information where appropriate",
+    [
+      [
+        "Decline outright, because the SRA Code prohibits a solicitor from ever acting for two clients in the same matter",
+        "The Code does not impose an absolute bar; paragraph 6.2 allows acting where there is a substantially common interest (or competing for the same objective) and the conditions, including informed consent in writing, are met. Refusing outright misstates the rule.",
+        "Apply the paragraph 6.2 exception: check for a substantially common interest and obtain informed written consent before acting for both.",
+      ],
+      [
+        "Proceed on their oral assurance that they agree on everything, since they have both confirmed there is no dispute",
+        "Oral assurance is not enough: informed consent must be given or evidenced in writing, and you must yourself assess the conflict risk rather than rely on the clients' say-so, because their interests may diverge as terms are negotiated.",
+        "Carry out your own conflict assessment and obtain informed consent in writing before acting, not merely an oral assurance.",
+      ],
+      [
+        "Act for one partner now and offer to take on the second partner as a client later if a dispute arises",
+        "Acting for one while treating the other as a prospective client misframes the instruction (they came to you jointly) and does nothing to address the conflict rules; if a real conflict later emerges you may have to cease acting for both.",
+        "Decide at the outset whether the substantially-common-interest exception applies with written consent, rather than improvising client roles.",
+      ],
+    ],
+    "SRA Code paragraph 6.2 prohibits acting where there is a conflict or significant risk of one, unless either the clients have a substantially common interest or are competing for the same objective, and all give informed consent evidenced in writing with appropriate confidentiality safeguards. Acting for two clients together is therefore not absolutely barred, but it requires your own conflict assessment and written informed consent, not an oral assurance that they agree.",
+    "Floe generated",
+    true,
+    "Ask whether the Code bars this absolutely or allows it on conditions, and what form the clients' consent must take.",
+    { challengeRating: 5 },
+  ),
+  makeSimpleQuestion(
+    8560016,
+    'Career Skills',
+    'Ethics in Practice',
+    "Tipping off after a suspicious activity report",
+    "Mid-transaction you form a suspicion of money laundering and your firm's MLRO makes a disclosure to the National Crime Agency. The client, unaware of the report, phones and asks why completion is being delayed. You are tempted to explain that there is a reporting issue. What does the law require?",
+    "Do not reveal that a disclosure has been made or that an investigation may follow, because doing so risks the tipping-off offence under section 333A POCA 2002; manage the delay without disclosing the report",
+    [
+      [
+        "Tell the client honestly that a report has been made, because clients are entitled to full information about their matter",
+        "The duty to keep the client informed does not override the criminal tipping-off prohibition; telling a client that a disclosure has been made, where it is likely to prejudice an investigation, can be an offence under section 333A POCA 2002.",
+        "Maintain the delay without disclosing the report, taking care not to say anything that reveals the disclosure or a possible investigation.",
+      ],
+      [
+        "Tell the client only that you cannot proceed for legal reasons and that they should seek independent advice immediately",
+        "Steering the client to take urgent independent advice in a way that signals a report has been made can itself amount to tipping off or prejudicing the investigation; the safe course is to avoid any communication that reveals the disclosure.",
+        "Handle the delay neutrally without hinting at the report; do not nudge the client in a way that telegraphs that a disclosure has occurred.",
+      ],
+      [
+        "Continue the transaction as normal while waiting, since the report has already been made and the duty is discharged",
+        "Proceeding with the transaction before any required consent/defence is in place can expose you to a substantive money-laundering offence; making the report does not automatically clear you to complete.",
+        "Hold the transaction pending the appropriate defence/consent position rather than pressing on simply because a report exists.",
+      ],
+    ],
+    "Section 333A POCA 2002 makes it an offence for someone in the regulated sector to disclose that a money-laundering report has been made where that disclosure is likely to prejudice any resulting investigation. The client's right to information does not displace this criminal prohibition. The solicitor must manage the delay without revealing the report, and must not proceed with the transaction in a way that risks a substantive offence before the appropriate defence/consent position is resolved.",
+    "Floe generated",
+    true,
+    "Ask which offence is triggered by telling the client about the report, and whether the duty to keep clients informed can override a criminal prohibition.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    8560017,
+    'Career Skills',
+    'Ethics in Practice',
+    "Duty not to mislead the court when an error surfaces",
+    "Acting for a defendant in civil proceedings, you realise after filing that a witness statement you served contains a factual assertion your client has now admitted to you is false. The client instructs you to say nothing and let it stand. What must you do?",
+    "You must not mislead the court; you cannot allow the false statement to stand, so you advise the client that the false evidence must be corrected or withdrawn, and if the client refuses you must cease to act and may not rely on it",
+    [
+      [
+        "Follow the client's instruction to stay silent, because your overriding duty is confidentiality to the client",
+        "Confidentiality is important but it does not entitle you to mislead the court; SRA Principle 1 and Code paragraph 1.4 mean you cannot knowingly allow false evidence to stand. The duty to the court prevails here.",
+        "Advise correction or withdrawal of the false evidence; if the client refuses, cease acting rather than perpetuate the misleading statement.",
+      ],
+      [
+        "Immediately disclose the client's admission and the falsity directly to the court and opposing party",
+        "You are not generally free to disclose the client's confidential admission to the court; the correct route is to advise correction/withdrawal and, failing that, to stop acting, not to volunteer the privileged admission.",
+        "Address it by advising the client to correct or withdraw the evidence, and withdraw from acting if they refuse, rather than breaching confidence by disclosing the admission.",
+      ],
+      [
+        "Amend the witness statement yourself to remove the false assertion and re-serve it without telling the client",
+        "You cannot unilaterally alter a witness's signed statement; the statement is the witness's evidence, and changing it without instructions and proper process is improper and does not resolve the duty issue.",
+        "Take the client's instructions on correcting or withdrawing the evidence through proper process; if they refuse, cease acting.",
+      ],
+    ],
+    "A solicitor must never mislead the court, and that duty (SRA Principle 1, Code paragraph 1.4) sits above the duty of confidentiality to the client. Where evidence already before the court is known to be false, the solicitor cannot let it stand: the client must be advised to correct or withdraw it, and if the client refuses the solicitor must cease to act and cannot continue to rely on the false material. The solicitor does not, however, breach confidence by simply disclosing the client's admission to the court.",
+    "Floe generated",
+    true,
+    "Ask which duty ranks higher when confidentiality and not misleading the court collide, and what you do if the client refuses to fix it.",
+    { challengeRating: 7 },
+  ),
+  makeSimpleQuestion(
+    8560018,
+    'Career Skills',
+    'Ethics in Practice',
+    "Acting where the client lacks capacity",
+    "An elderly client attends to give instructions to change her will substantially in favour of the relative who brought her in and is sitting beside her. During the interview she seems confused about her assets and repeatedly looks to the relative before answering. What is the most appropriate professional response?",
+    "Take steps to satisfy yourself about her capacity and that the instructions are her own free wishes, including seeing her alone and, where appropriate, obtaining a medical capacity assessment before acting",
+    [
+      [
+        "Take the instructions as given, since the client is an adult and you must act on her expressed wishes",
+        "Acting on apparently expressed wishes without addressing the capacity and undue-influence red flags risks producing a will that is later challenged and breaches your duty to act in the client's best interests.",
+        "Pause to assess capacity and free will, see the client alone, and obtain a capacity assessment where doubt exists before drafting.",
+      ],
+      [
+        "Refuse to act for her at all, because the presence of an interested relative means there is an unmanageable conflict",
+        "The relative's presence raises concerns to manage, not an automatic bar to acting for the client; the right response is to take protective steps (see her alone, assess capacity), not to abandon a vulnerable client outright.",
+        "Manage the risk by interviewing the client alone and assessing capacity rather than declining without inquiry.",
+      ],
+      [
+        "Proceed but ask the relative to confirm in writing that the instructions reflect the client's wishes",
+        "A confirmation from the very person who benefits and may be influencing the client is worthless as a safeguard and compounds the problem; the assurance must come from the client's own capacitated, uninfluenced instructions.",
+        "Obtain the client's independent instructions in private and a medical capacity assessment, not a confirmation from the interested relative.",
+      ],
+    ],
+    "Where there is doubt about a client's mental capacity or whether instructions are freely given, a solicitor must take steps to satisfy themselves before acting: seeing the client alone, exploring whether the instructions are the client's own, and obtaining a medical capacity assessment in cases of real doubt (the golden rule for the elderly or seriously ill testator). Acting uncritically risks an invalid will and breaches the duty to act in the client's best interests, while refusing outright abandons a potentially vulnerable client.",
+    "Floe generated",
+    true,
+    "Ask what protective steps surface the client's true, capacitated wishes, and whether a benefiting relative can ever supply that assurance.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    8560019,
+    'Career Skills',
+    'Ethics in Practice',
+    "Own interest conflict where you may be at fault",
+    "Reviewing a client's file you realise you missed a limitation deadline, and the client's claim may now be statute-barred because of your error. The client does not yet know. What does the SRA Code require you to do?",
+    "Recognise this is an own interest conflict, inform the client promptly of the position and that they should consider independent advice, and notify your insurers; you cannot continue to advise on the consequences of your own error as if conflict-free",
+    [
+      [
+        "Quietly try to remedy the situation, for example by issuing late and arguing the point, and tell the client only if it fails",
+        "Concealing the error while you attempt a fix is an own interest conflict and breaches your duties of honesty and to act in the client's best interests; the client is entitled to know and to take independent advice now.",
+        "Disclose the error promptly, advise the client to seek independent advice, and notify insurers, rather than concealing it pending a fix.",
+      ],
+      [
+        "Say nothing because telling the client would breach your duty of confidentiality to the firm",
+        "Confidentiality to the firm does not justify withholding from the client information about an error affecting their own matter; there is an own interest conflict, and the client must be informed.",
+        "Inform the client of the position; the conflict is between your interests and theirs, and that triggers disclosure, not silence.",
+      ],
+      [
+        "Continue advising the client on whether to litigate the now time-barred claim, since you know the file best",
+        "Advising the client on the consequences of your own mistake puts your interest in minimising your exposure against the client's interest; you have an own interest conflict and should not be the one advising on it.",
+        "Step back from advising on your own error, ensure the client gets independent advice, and report to insurers.",
+      ],
+    ],
+    "When a solicitor's own error may have harmed the client, an own interest conflict arises: the solicitor's interest in limiting their exposure conflicts with the client's interest in knowing and acting on the position. The Code requires prompt, honest disclosure to the client and a recommendation that they take independent advice, together with notification to the firm's insurers. The solicitor must not conceal the error or continue advising on its consequences as though no conflict existed.",
+    "Floe generated",
+    true,
+    "Ask whose interests are now opposed, and whether the lawyer who made the mistake can be the one who advises the client on its effect.",
+    { challengeRating: 7 },
+  ),
+
+  // ---------------- Ethics (4 new -> 8) ----------------
+  makeSimpleQuestion(
+    8560020,
+    'Career Skills',
+    'Ethics',
+    "Hierarchy of the SRA Principles in conflict",
+    "You are preparing for a hearing when you realise that complying fully with your client's wishes would require you to make a submission you know to be untrue. Under the SRA Standards and Regulations, how do you resolve the tension between your duty to the client and your duty to the court?",
+    "The duty to uphold the rule of law and the proper administration of justice, including not misleading the court, takes precedence over the client's interests, so you must not make the untrue submission",
+    [
+      [
+        "The duty to act in the best interests of the client comes first, so you should make the submission your client wants",
+        "Acting in the client's best interests is a Principle, but it does not authorise misleading the court; where the Principles conflict, the wider public interest in the administration of justice prevails over an individual client's interests.",
+        "Apply the precedence rule: the obligation to the court and the rule of law outranks the client's interests, so the untrue submission cannot be made.",
+      ],
+      [
+        "Whichever duty you sincerely believe is more important in the moment governs, since the Principles are of equal weight",
+        "The SRA's guidance is explicit that the Principles are not all equal: where two or more conflict, those safeguarding the wider public interest (such as the rule of law and administration of justice) take precedence over an individual client's interests. It is not a matter of personal preference.",
+        "Use the SRA's stated order of precedence rather than your own ranking when Principles collide.",
+      ],
+      [
+        "You should withdraw immediately without explanation, because any conflict between duties means you can no longer act",
+        "Withdrawal may sometimes follow, but the first analytical step is recognising that the duty to the court prevails so the untrue submission simply cannot be made; abrupt withdrawal is not the rule whenever duties are in tension.",
+        "Resolve it by declining to mislead the court (the higher duty); withdrawal arises only if the client insists on the improper course.",
+      ],
+    ],
+    "The SRA Principles are not of equal weight: SRA guidance states that where two or more Principles come into conflict, the one that best serves the wider public interest, especially the rule of law and the proper administration of justice, takes precedence over an individual client's interests. So the duty not to mislead the court overrides the client's wish for an untrue submission. The solicitor declines the improper course; withdrawal follows only if the client insists on it.",
+    "Floe generated",
+    true,
+    "Ask whether the Principles are equal, and which one the SRA says wins when the client's interest collides with the administration of justice.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    8560021,
+    'Career Skills',
+    'Ethics',
+    "Confidentiality versus disclosure to a new client",
+    "Your firm holds confidential information from a former client that is material to a new client whose interests are adverse to that former client. You can no longer obtain the former client's consent. Under the SRA Code, can you act for the new client?",
+    "Generally no: you must keep the former client's information confidential and must not act for the new client where you hold confidential information material to that client's matter and adverse to your duty, unless effective safeguards or consent allow it",
+    [
+      [
+        "Yes, because your duty of confidentiality ended when the retainer with the former client ended",
+        "The duty of confidentiality continues after the retainer ends; it does not expire with the matter. Treating it as spent would expose the former client's information improperly.",
+        "Recognise confidentiality survives the retainer, and that it can prevent acting for a new client whose matter it is material to.",
+      ],
+      [
+        "Yes, provided you simply avoid mentioning the confidential information when advising the new client",
+        "The risk is not just deliberate disclosure but the inability to act in the new client's best interests without using or being influenced by the confidential information; mere intention to stay silent does not cure the conflict between confidentiality and disclosure duties.",
+        "Decline to act unless effective information barriers and the requisite consents are genuinely in place, rather than relying on self-restraint.",
+      ],
+      [
+        "Yes, because the duty to act in the new client's best interests requires you to use all information you hold",
+        "Your duty to the new client does not entitle you to use another client's confidential information; the confidentiality duty to the former client constrains, and can prevent, your acting for the new client.",
+        "Treat the former client's confidentiality as a barrier to acting, not as material you may deploy for the new client.",
+      ],
+    ],
+    "A solicitor's duty of confidentiality to a client continues after the retainer ends. Where the firm holds confidential information from a former client that is material to a new client whose interests are adverse, the Code prevents the firm acting for the new client unless effective safeguards (such as information barriers) and any required consents are in place. The new client's interest in disclosure cannot override the former client's confidentiality.",
+    "Floe generated",
+    true,
+    "Ask whether confidentiality survives the end of the retainer, and whether the new client's interests entitle you to use a former client's confidential information.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    8560022,
+    'Career Skills',
+    'Ethics',
+    "Reporting concerns to the SRA under paragraph 7.7",
+    "You become aware of facts suggesting a serious ongoing risk that another firm is mishandling client money, though no loss has yet crystallised. A colleague says there is nothing to report until money actually goes missing. Under the SRA Code, what is the correct view?",
+    "You should report promptly to the SRA any facts or matters that you reasonably believe are capable of amounting to a serious breach of its regulatory arrangements; the duty covers ongoing risk and is not limited to completed losses",
+    [
+      [
+        "Wait until client money is actually lost, because only completed wrongdoing is reportable",
+        "The reporting duty under paragraph 7.7 covers facts or matters capable of amounting to a serious breach, including ongoing risk; waiting for a crystallised loss misreads the obligation and may itself be a failure to report.",
+        "Report the serious risk promptly rather than waiting for an actual loss; the duty is preventive, not purely retrospective.",
+      ],
+      [
+        "Do nothing, because the conduct concerns a different firm and you only report on your own firm",
+        "The duty to report serious breaches is not confined to your own firm; you should report relevant facts about another firm's conduct where they meet the threshold. Limiting it to your own firm is wrong.",
+        "Apply the reporting duty to the serious risk you have identified, regardless of which firm is involved.",
+      ],
+      [
+        "Report it only to your own firm's compliance officer and treat that as discharging your obligation",
+        "Internal reporting may be appropriate, but where the matter is a serious breach you should ensure it reaches the SRA; treating an internal note as the end of the matter can leave the regulatory duty undischarged.",
+        "Make sure the serious matter is reported to the SRA, not just logged internally, to discharge paragraph 7.7.",
+      ],
+    ],
+    "SRA Code paragraph 7.7 requires you to report promptly to the SRA, or another approved regulator as appropriate, any facts or matters that you reasonably believe are capable of amounting to a serious breach of its regulatory arrangements. The duty captures ongoing risk and is not limited to completed wrongdoing or to your own firm. Where the matter is serious, internal reporting alone may not discharge the obligation.",
+    "Floe generated",
+    true,
+    "Ask whether the duty waits for a crystallised loss, and whether it is confined to your own firm.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    8560023,
+    'Career Skills',
+    'Ethics',
+    "Section 175 conflict authorisation by the board",
+    "A director of a private company has an opportunity to take up a contract that the company itself could pursue. He wants the board to clear him to proceed personally. Under the Companies Act 2006, how should this situational conflict be handled?",
+    "This engages the section 175 duty to avoid conflicts; the conflict can be authorised by the non-conflicted directors voting (the conflicted director's vote and presence not counting) where the constitution permits, distinct from a section 177 declaration of interest in a proposed transaction",
+    [
+      [
+        "He need only make a declaration of his interest to the board under section 177 and may then proceed",
+        "Section 177 concerns declaring an interest in a proposed transaction or arrangement with the company; a situational conflict such as exploiting a corporate opportunity engages the section 175 duty to avoid conflicts, which requires authorisation, not merely a declaration.",
+        "Treat this as a section 175 conflict requiring authorisation by the non-conflicted directors, not a section 177 declaration.",
+      ],
+      [
+        "The conflicted director can authorise his own conflict by voting in favour at the board meeting",
+        "Authorisation under section 175 must be given by the directors who are not conflicted; the conflicted director cannot count towards the quorum or vote on his own authorisation. Letting him vote defeats the safeguard.",
+        "Have the non-conflicted directors authorise it, excluding the conflicted director's vote and presence from the count.",
+      ],
+      [
+        "Only the shareholders can ever authorise such a conflict, so a board decision is irrelevant",
+        "For a private company, the directors can authorise a section 175 conflict provided nothing in the constitution invalidates that authorisation; it does not always require a shareholder resolution, so dismissing the board route is wrong.",
+        "Use board authorisation by the non-conflicted directors where the constitution permits, rather than assuming only shareholders can act.",
+      ],
+    ],
+    "Section 175 of the Companies Act 2006 imposes a duty on a director to avoid situations of conflict, including exploiting a corporate opportunity. For a private company, the conflict can be authorised by the directors who are not conflicted, provided nothing in the constitution prevents it, and the conflicted director's vote and presence do not count towards the decision. This is distinct from section 177, which concerns declaring an interest in a proposed transaction with the company.",
+    "Floe generated",
+    true,
+    "Ask whether exploiting a corporate opportunity is a section 175 conflict or a section 177 declaration, and who is allowed to authorise it.",
+    { challengeRating: 7 },
+  ),
+]
