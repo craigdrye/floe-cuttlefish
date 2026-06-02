@@ -421,7 +421,6 @@
   color: var(--ocean-deep);
   line-height: 1.45;
 }
-.challenge-chip,
 .difficulty-chip {
   display: inline-flex;
   width: fit-content;
@@ -434,24 +433,6 @@
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-}
-.challenge-chip {
-  margin-right: 6px;
-  background: rgba(46,196,182,0.16);
-  color: #14584d;
-  border: 1px solid rgba(31,122,98,0.18);
-}
-.challenge-chip.challenge-easy {
-  background: rgba(16,185,129,0.12);
-  color: #047857;
-}
-.challenge-chip.challenge-medium {
-  background: rgba(251,191,36,0.14);
-  color: #92400e;
-}
-.challenge-chip.challenge-hard {
-  background: rgba(244,114,182,0.14);
-  color: #9d174d;
 }
 
 .learn-primer {
