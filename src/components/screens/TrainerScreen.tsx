@@ -238,16 +238,16 @@ export function TrainerScreen() {
     if (!selectedLesson || mode !== 'daily' || index !== 0 || selectedAnswerId) return
 
     const schedule = [
-      { tool: 'ask' as const, delay: 1000 },
-      { tool: 'hint' as const, delay: 1320 },
-      { tool: 'teach' as const, delay: 1640 },
-      { tool: 'ask' as const, delay: 2600 },
-      { tool: 'hint' as const, delay: 2920 },
-      { tool: 'teach' as const, delay: 3240 },
+      { tool: 'ask' as const, delay: 3000 },
+      { tool: 'hint' as const, delay: 3160 },
+      { tool: 'teach' as const, delay: 3320 },
+      { tool: 'ask' as const, delay: 3800 },
+      { tool: 'hint' as const, delay: 3960 },
+      { tool: 'teach' as const, delay: 4120 },
     ]
     const timers = schedule.flatMap(({ tool, delay }) => [
       window.setTimeout(() => setAttentionTool(tool), delay),
-      window.setTimeout(() => setAttentionTool((current) => (current === tool ? null : current)), delay + 280),
+      window.setTimeout(() => setAttentionTool((current) => (current === tool ? null : current)), delay + 140),
     ])
     return () => timers.forEach((timer) => window.clearTimeout(timer))
   }, [baseQuestion.id, index, mode, question.prompt, remixSeed, selectedAnswerId, selectedLesson])
