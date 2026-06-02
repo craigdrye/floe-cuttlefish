@@ -79,7 +79,7 @@ body.floe-mode-active :is(
     );
   background-size: 220vw 220vh;
   background-attachment: fixed;
-  animation: floe-pastel-wave 9s ease-in-out infinite alternate;
+  animation: floe-pastel-wave 18s ease-in-out infinite alternate;
 }
 
 body.floe-mode-active :is(
@@ -99,7 +99,7 @@ body.floe-mode-active :is(
   .questionnaire-options button
 ):nth-child(3n + 1) {
   animation-delay: -4s;
-  animation-duration: 10.5s;
+  animation-duration: 21s;
 }
 
 body.floe-mode-active :is(
@@ -119,7 +119,7 @@ body.floe-mode-active :is(
   .questionnaire-options button
 ):nth-child(3n + 2) {
   animation-delay: -9s;
-  animation-duration: 12s;
+  animation-duration: 24s;
 }
 
 body.floe-mode-active :is(.topic-checkbox.checked, .adult-focus-option.checked, .course-tier-tabs button.active, .discipline-tabs button.active) {
