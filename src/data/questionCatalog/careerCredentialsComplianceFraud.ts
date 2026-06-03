@@ -134,7 +134,7 @@ export const cfeQuestions: Question[] = makeQuestionBank('Career Skills', [
   {
     id: 5100010,
     chapter: 'Law',
-    title: 'Sarbanes-Oxley 802',
+    title: "Destroying records in investigations",
     prompt: 'A controller at a public issuer shreds audit workpapers during an SEC inquiry. The most relevant criminal statute is:',
     correct: 'Sarbanes-Oxley Section 802, criminalizing destruction of records in federal investigations',
     wrong: [
@@ -624,7 +624,7 @@ export const cfeQuestions: Question[] = makeQuestionBank('Career Skills', [
   {
     id: 5100045,
     chapter: 'Law',
-    title: 'Sarbanes-Oxley Section 1107',
+    title: "Whistleblower retaliation protection",
     prompt: 'A controller at a public issuer fires a junior accountant who reported potential revenue recognition fraud to the audit committee. The most directly applicable federal statute providing the accountant with a private right of action is:',
     correct: 'Sarbanes-Oxley Section 806 (codified at 18 USC 1514A) — whistleblower retaliation protection for employees of public companies',
     wrong: [
@@ -1705,7 +1705,7 @@ export const camsQuestions: Question[] = makeQuestionBank('Career Skills', [
   {
     id: 5110042,
     chapter: 'National Regimes',
-    title: 'USA PATRIOT 313',
+    title: "Foreign shell bank accounts",
     prompt: 'A US bank receives a correspondent account application from a foreign bank with no physical presence in any jurisdiction and no affiliation with a regulated banking entity. Under USA PATRIOT Act Section 313:',
     correct: 'The US bank is prohibited from establishing or maintaining a correspondent account for a "foreign shell bank"',
     wrong: [
@@ -2254,7 +2254,7 @@ export const cippEQuestions: Question[] = makeQuestionBank('Career Skills', [
   {
     id: 5120001,
     chapter: 'Origins',
-    title: 'Convention 108',
+    title: "First binding data treaty",
     prompt: 'Council of Europe Convention 108 (1981) is most accurately described as:',
     correct: 'The first binding international treaty on the protection of personal data',
     wrong: [

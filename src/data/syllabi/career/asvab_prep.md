@@ -8,13 +8,15 @@ The tone here is warm and plain-spoken. We assume you may not have touched algeb
 
 By the time you finish, you should be able to walk into the testing center knowing what every subtest measures, how the scoring works, which sections matter most for your goal job, and how to squeeze points out of questions you are not sure about. The goal is not just a passing AFQT. It is a score high enough to qualify for the career you actually want.
 
+A quick note on structure so the rest of the course is clear. The computer-adaptive CAT-ASVAB you will almost certainly take has **ten** separately timed subtests: it splits Auto Information and Shop Information into two and includes Assembling Objects. The older paper-and-pencil version has nine, because it combines Auto and Shop into one "Auto & Shop Information" (AS) subtest and drops Assembling Objects. There is also a third option, the PiCAT, an unproctored at-home version you verify with a short check at the MEPS. This course teaches all of the content either way; we just group Auto and Shop into one chapter for studying.
+
 ## Course Design Notes
-Route questions here when they test ASVAB content review or test-taking strategy: the four AFQT subtests (Arithmetic Reasoning, Mathematics Knowledge, Word Knowledge, Paragraph Comprehension), the technical subtests (General Science, Electronics Information, Auto & Shop Information, Mechanical Comprehension, Assembling Objects), AFQT and line-score mechanics, or pacing on the CAT versus paper versions. Keep explanations beginner-friendly but never wrong: simplify the language, not the facts. Every wrong answer should be a real misconception a test-taker holds, with a specific reason it fails and a forward hint that nudges toward the right method. Favor concrete, military-flavored scenarios (convoys, barracks, rifles, recruits) so the math and science feel grounded rather than abstract.
+Route questions here when they test ASVAB content review or test-taking strategy: the four AFQT subtests (Arithmetic Reasoning, Mathematics Knowledge, Word Knowledge, Paragraph Comprehension), the technical subtests (General Science, Electronics Information, Auto & Shop Information, Mechanical Comprehension, Assembling Objects), AFQT and line-score mechanics, or pacing on the CAT, paper (P&P), and PiCAT versions. Keep explanations beginner-friendly but never wrong: simplify the language, not the facts. Every wrong answer should be a real misconception a test-taker holds, with a specific reason it fails and a forward hint that nudges toward the right method. Favor concrete, military-flavored scenarios (convoys, barracks, rifles, recruits) so the math and science feel grounded rather than abstract.
 
 ## Chapter 1: The ASVAB Game Plan
-**Core questions:** What is the AFQT and which four subtests build it? What does a percentile score actually mean? How should I guess and pace on the adaptive version?
-**Key concepts:** AFQT vs. line scores; percentile scoring (1-99); no penalty for wrong answers; CAT (computer-adaptive) vs. P&P (paper) formats; branch minimum cutoffs.
-**Common traps:** Thinking the AFQT averages all nine subtests; reading a percentile as a percent-correct; leaving questions blank to "avoid a penalty"; assuming you can revisit questions on the CAT.
+**Core questions:** What is the AFQT and which four subtests build it? How is it actually calculated? What does a percentile score actually mean? How should I guess and pace on the adaptive version?
+**Key concepts:** AFQT vs. line scores; the AFQT raw-score formula 2VE + AR + MK, where VE (Verbal Expression) combines Word Knowledge and Paragraph Comprehension; percentile scoring (1-99), normed against the 1997 Profile of American Youth reference group; no penalty for wrong answers; CAT (computer-adaptive), P&P (paper), and PiCAT (verified at-home) formats; branch minimum cutoffs (roughly 31 for the Army, Navy, Air Force, Space Force, and Marines; higher, around 36-40, for the Coast Guard, and typically 50+ for GED holders).
+**Common traps:** Thinking the AFQT averages all the subtests, or that the technical subtests count toward it (only AR, MK, WK, and PC do); reading a percentile as a percent-correct; leaving questions blank to "avoid a penalty"; assuming you can skip ahead or revisit questions on the CAT.
 
 ## Chapter 2: Arithmetic Reasoning
 **Core questions:** How do I set up distance/rate/time, percent, ratio, unit-rate, and interest word problems?
@@ -63,13 +65,20 @@ Route questions here when they test ASVAB content review or test-taking strategy
 
 ## Chapter 11: Test-Taking Strategy and Line Scores
 **Core questions:** How do I use elimination and guessing? What are line scores and how should they shape my study plan? How does pacing differ across formats?
-**Key concepts:** process of elimination and the no-penalty guessing rule; line scores qualify you for specific jobs; targeting study toward a goal job's composite; CAT vs. paper pacing rules; no calculators.
+**Key concepts:** process of elimination and the no-penalty guessing rule; line scores qualify you for specific jobs; targeting study toward a goal job's composite; CAT, paper, and PiCAT pacing rules (the CAT adapts and forbids backtracking, so wild end-of-section guessing can hurt; the paper version lets you skip and return; PiCAT is unproctored but verified at the MEPS); no calculators.
 **Common traps:** Leaving blanks; believing "longest answer" or "first familiar answer" myths; studying only the AFQT four while ignoring the technical subtests your job needs; solving correctly but answering the wrong quantity.
 
 ## Capstone: Your ASVAB Battle Plan
 Pull everything into one concrete plan you could hand a friend who is testing next month:
-- A one-page map of all nine subtests, what each measures, and which feed the AFQT vs. line scores.
+- A one-page map of every subtest (ten on the CAT, nine on paper), what each measures, and which four feed the AFQT vs. which feed your line scores.
 - Your target branch's AFQT cutoff and the specific line-score composite for the job you want, confirmed with a recruiter.
 - A study schedule that secures a strong AFQT first, then doubles down on the technical subtests your goal job weights most.
 - A formula and definition sheet you can rebuild from memory: distance/rate/time, PEMDAS, Pythagorean triples, Ohm's law, simple machines, key science roles, and common roots.
 - A personal trap list and pacing card: no blanks, read the final question, watch the units, and never multiply when Ohm's law wants you to divide.
+
+## Research Notes
+- Official ASVAB subtests (names, abbreviations, content, CAT vs. paper structure, AS combination, AO omitted on paper): https://www.officialasvab.com/counselors-educators/subtests/
+- ASVAB scores explained — AFQT formula 2VE + AR + MK, VE = WK + PC, line scores and composites: https://asvabhero.com/asvab-scores-explained
+- AFQT percentile norming against the 1997 Profile of American Youth (PAY97) reference population: https://www.nlsinfo.org/content/cohorts/nlsy79/topical-guide/education/aptitude-achievement-intelligence-scores
+- CAT-ASVAB vs. P&P vs. PiCAT formats, item counts (~145 CAT / ~225 paper) and timing: https://www.military.com/join-armed-forces/asvab/versions-of-asvab.html
+- Branch minimum AFQT cutoffs (Army/Navy/AF/Space Force ~31, Marines ~31-32, Coast Guard ~36-40, GED holders 50+): https://uniontestprep.com/asvab/resources/minimum-asvab-afqt-score-for-each-branch-of-the-military

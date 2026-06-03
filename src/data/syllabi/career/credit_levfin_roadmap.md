@@ -79,7 +79,7 @@ A credit view is built in layers, and skipping a layer is how analysts get surpr
 - What rating will the agencies assign, and how does that drive pricing and the eligible investor base?
 - Where could a syndication fail, and what levers (flex, structure, sweeteners) fix it?
 
-**Key concepts**: corporate vs issue (instrument) ratings, investment grade vs high yield / "leveraged," the major rating scales and notching for priority and security, recovery ratings, credit spread, coupon vs yield, original issue discount (OID), call protection and non-call periods, the primary syndication process (commitment, bookbuilding, allocation), market flex (price and structure flex), the CLO bid and why it shapes term-loan demand, ratings triggers and the cost of a downgrade, secondary trading levels as a real-time credit verdict.
+**Key concepts**: corporate vs issue (instrument) ratings, investment grade vs high yield / "leveraged," the major rating scales and notching for priority and security, recovery ratings, credit spread, the floating-rate benchmark for institutional loans (SOFR plus a margin, often with a SOFR floor) vs the fixed coupon on high-yield bonds, coupon vs yield, original issue discount (OID), call protection and non-call periods, the primary syndication process (commitment, bookbuilding, allocation), market flex (price and structure flex), the CLO bid and why it shapes term-loan demand, ratings triggers and the cost of a downgrade, secondary trading levels as a real-time credit verdict.
 
 **Applied skills**
 - Write a financing recommendation: tranche sizes, indicative ratings, spread/OID/yield, call protection, and the two or three market risks most likely to force a flex.
@@ -96,7 +96,7 @@ A credit view is built in layers, and skipping a layer is how analysts get surpr
 - Maintenance or incurrence covenants, and how much real protection does that give?
 - Where are the baskets, add-backs, and definitions that a sponsor can use to move value away from existing lenders?
 
-**Key concepts**: maintenance covenants (tested every period) vs incurrence covenants (tested only on an action), "cov-lite" loans and why they dominate the institutional market, the EBITDA definition as the master variable, restricted-payments and investment baskets, debt and lien incurrence capacity, "free and clear"/ratio debt baskets, restricted vs unrestricted subsidiaries, asset-sale and collateral-leakage provisions, the mechanics behind liability-management exercises — drop-down financings (J.Crew/Chewy-style) that move collateral to an unrestricted sub, and uptier exchanges (Serta/Boardriders-style) that prime existing lenders with the consent of a majority.
+**Key concepts**: maintenance covenants (tested every period) vs incurrence covenants (tested only on an action), "cov-lite" loans and why they dominate the institutional market (roughly 90%+ of outstanding US leveraged loans), the EBITDA definition as the master variable, restricted-payments and investment baskets, debt and lien incurrence capacity, "free and clear"/ratio debt baskets, restricted vs unrestricted subsidiaries, asset-sale and collateral-leakage provisions, the mechanics behind liability-management exercises — drop-down financings (J.Crew "trapdoor"/PetSmart-Chewy-style) that move collateral to an unrestricted sub, uptier exchanges (Serta/Boardriders-style) that prime existing lenders with the consent of a majority, and double-dip/pari-plus structures (At Home/Wheel Pros-style) that manufacture a second claim against the same collateral pool; the "sacred rights" and pro-rata-sharing provisions a majority cannot amend away, and how the Fifth Circuit's December 2024 Serta decision narrowed the "open market purchase" exception that earlier uptiers relied on.
 
 **Applied skills**
 - Produce a covenant summary: protections lenders have, flexibility the borrower has, and the two or three terms that most weaken recovery.
@@ -105,7 +105,7 @@ A credit view is built in layers, and skipping a layer is how analysts get surpr
 **Common traps**
 - Reading "there are covenants" as protection without checking whether they are maintenance (real) or incurrence-only (mostly cosmetic in a slow decline).
 - Underweighting the EBITDA definition — generous add-backs in the *definition* inflate every ratio-based basket and covenant simultaneously.
-- Assuming your collateral and your priority are safe; modern liability-management means a cooperative majority can leave a minority lender subordinated and stripped, all within the four corners of the document.
+- Assuming your collateral and your priority are safe; modern liability-management means a cooperative majority can leave a minority lender subordinated and stripped, all within the four corners of the document. The defense is in the document's "sacred rights," pro-rata-sharing, and blocker provisions, and in narrowly drafted basket and "open market purchase" definitions — not in the assumption that courts will rescue you (the post-Serta case law cuts both ways).
 
 ## Chapter 6: Distress, Restructuring, and Recovery
 **Core questions**
@@ -148,6 +148,13 @@ Take one leveraged borrower — a fictional sponsor-owned company or a real high
 ## Research Notes
 - Capital-structure priority, secured/unsecured/subordinated ranking, structural vs contractual subordination, and TLB-vs-high-yield trade-offs aligned with standard leveraged-finance references (Moody's/S&P methodology, LSTA primer concepts).
 - Leverage, coverage, EBITDA-adjustment scrutiny, and the EBITDA-to-FCF walk reflect conventional credit-analysis practice; add-back inflation is a recognized recurring risk in sponsor deals.
-- Cov-lite prevalence in the institutional term-loan market and the EBITDA-definition-as-master-variable point reflect post-2015 leveraged-loan market norms.
-- Liability-management mechanics (drop-down / J.Crew and uptier / Serta exercises) reflect documented post-2020 restructuring developments; specifics of any individual case should be confirmed against current sources before teaching as settled law, as litigation outcomes continue to evolve.
+- Cov-lite prevalence in the institutional term-loan market and the EBITDA-definition-as-master-variable point reflect post-2015 leveraged-loan market norms; cov-lite was ~90%+ of outstanding US leveraged loans as of year-end 2024.
+- Liability-management mechanics (drop-down / J.Crew and PetSmart-Chewy, uptier / Serta, and double-dip / pari-plus / At Home) reflect documented 2016-2025 restructuring developments. As of the Fifth Circuit's December 31, 2024 decision in *In re Serta Simmons*, the court held the 2020 uptier was not a permitted "open market purchase," narrowing that exception; specifics of any individual case should be confirmed against current sources before teaching as settled law, as litigation outcomes and documentation defenses ("blockers," anti-trapdoor protections, sacred rights) continue to evolve.
 - Recovery analysis, fulcrum security, absolute-priority rule, and out-of-court vs Chapter 11 framing follow standard distressed-debt and restructuring practice.
+
+Authoritative sources consulted (2026 audit):
+- https://www.jonesday.com/en/insights/2025/03/fifth-circuit-rules-that-serta-simmons-uptier-violated-credit-agreement-rejects-equitable-mootness-as-bar-to-review-of-c — Fifth Circuit *In re Serta Simmons* (Dec. 31, 2024): uptier was not an "open market purchase," plan indemnity excised; current state of uptier case law.
+- https://www.mayerbrown.com/en/insights/publications/2025/05/serta-and-mitel-the-latest-major-court-decisions-on-uptier-transactions — Serta and Mitel side by side: how contract drafting (pro-rata sharing, "open market purchase") drove opposite outcomes.
+- https://www.kslaw.com/attachments/000/008/523/original/How_did_they_do_it_Petsmart.pdf and https://www.lw.com/admin/upload/SiteAttachments/Taking-Both-Roads-to-Recovery-History-Future-of-Double-Dip-Transactions.pdf — canonical drop-down (PetSmart/Chewy phantom guarantee) and double-dip/pari-plus structures (At Home, Wheel Pros, Sabre).
+- https://www.clearygottlieb.com/news-and-insights/publication-listing/defense-against-the-dark-arts-a-guide-to-liability-management-blockers-in-the-us-loan-market — documentation "blockers," sacred rights, and anti-trapdoor protections used to defend against LMEs.
+- https://www.paulweiss.com/media/fzvn3pet/covenant-lite_loans_overview.pdf — cov-lite definition and market penetration (~90%+ of outstanding US leveraged loans).

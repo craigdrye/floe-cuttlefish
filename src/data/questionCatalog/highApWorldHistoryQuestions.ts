@@ -417,7 +417,7 @@ export const highApWorldHistoryQuestions = makeQuestionBank('AP', [
   {
     id: 4400630,
     chapter: 'Unit 6: Industrialization and Imperialism (1750-1900)',
-    title: 'Indian uprising of 1857',
+    title: "Crown rule replaces Company",
     prompt: 'A direct political consequence of the Indian uprising of 1857 was that:',
     correct: 'Rule of India passed from the East India Company to direct British Crown administration under the Government of India Act of 1858',
     wrong: [

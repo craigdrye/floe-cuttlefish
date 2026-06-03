@@ -1,0 +1,158 @@
+import { makeSimpleQuestion } from '../base'
+import type { Question } from '../types'
+
+export const publicSpeakingGems: Question[] = [
+  // ===========================================================================
+  // Delivery Mechanics
+  // ===========================================================================
+  makeSimpleQuestion(
+    10082000,
+    'Career Skills',
+    'Delivery Mechanics',
+    "The Mehrabian 7-38-55 trap",
+    "A colleague rehearsing a dense technical proposal tells you, 'Don't sweat the wording — studies prove communication is only 7% words, 38% tone, and 55% body language, so just sound confident.' You remember where that 7-38-55 ratio actually came from. What is the honest correction?",
+    "Those numbers came from narrow experiments on how listeners read FEELINGS when the words and the tone conflict — they were never a measure of how much content matters in general.",
+    [
+      ["He's right: the research shows words carry only 7% of any message, so polish your delivery and stop worrying about the script.", "This is the exact misreading Mehrabian himself spent decades correcting; generalizing a study about contradictory emotional cues into 'words are 7% of all communication' is how the myth spreads.", "Treat the ratio as a finding about ambiguous emotional signals, not a budget for how to spend prep time on a technical talk."],
+      ["The percentages are roughly right but apply only to in-person talks; on a phone call words matter far more.", "The fix is not about the channel (phone vs. room) — it is about the topic. The numbers only ever described decoding feelings under mixed signals, regardless of medium.", "The boundary condition is 'communicating attitudes when verbal and nonverbal cues conflict,' not 'whether the audience can see you.'"],
+      ["The study has been fully retracted, so any claim about tone or body language mattering is now baseless.", "It was never retracted; the original finding is valid within its narrow scope. The error is the sweeping generalization, not the underlying experiment.", "Distinguish a real but narrow result from the popular myth built on top of it; tone and body language do matter, just not in that universal ratio."],
+    ],
+    "Mehrabian's 7-38-55 numbers came from 1960s experiments on how people infer a speaker's feelings when the words and the tone say opposite things — and Mehrabian explicitly wrote they do not apply unless someone is communicating feelings or attitudes. The deep point: a true finding can become a lie the moment it is yanked out of its boundary conditions. For a content-heavy talk, the script still does most of the work.",
+    'Floe generated',
+    true,
+    "Ask what the original experiment was actually measuring before you trust a number that flatters the conclusion you already want.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10082001,
+    'Career Skills',
+    'Delivery Mechanics',
+    "The strategic pause",
+    "You are about to reveal the one number your whole talk hinges on: churn dropped 40%. Nerves are pushing you to rush straight through it and fill the silence. A coach says the most powerful move is to do the opposite. What is the principle that makes a deliberate pause before that number work?",
+    "Silence gives the audience a beat to catch up and signals 'this matters' — the pause does cognitive work that more words cannot.",
+    [
+      ["A pause mainly buys you time to remember your next line, so it helps the speaker more than the audience.", "Treating the pause as a private teleprompter misses its real function; its value is what it does to the listener's attention, not to your memory.", "Reframe the pause as a tool aimed at the audience's comprehension, not a crutch for recall."],
+      ["Pausing is risky because any silence reads as a mistake, so you should apologize for it ('sorry, let me think').", "Apologizing converts the strongest tool you have into a liability and teaches the room that the silence was an error rather than a cue.", "Let the pause stand unexplained; a confident silence is read as emphasis, an apologized-for one is read as a stumble."],
+      ["The pause works only because it slows your overall pace, so pausing randomly throughout is just as effective.", "Random pauses dilute the signal; the power comes from placing silence precisely around the point that must land, not from generic slowness.", "Aim the pause at the key sentence or number; scattered pausing trains the audience to ignore it."],
+    ],
+    "A strategic pause is one of the few delivery moves that adds meaning by subtraction. Placed right before or after a key number, it gives listeners a beat to process and marks the moment as important — something extra words actively undercut. The deeper idea: under nerves we instinctively flee silence, yet the discipline of staying in it is precisely what makes a point land. Never apologize for it.",
+    'Floe generated',
+    true,
+    "What can a held silence do for a listener's attention that a faster, fuller delivery cannot?",
+    { challengeRating: 5 },
+  ),
+  // ===========================================================================
+  // Visuals and Presentation Aids
+  // ===========================================================================
+  makeSimpleQuestion(
+    10082010,
+    'Career Skills',
+    'Visuals and Presentation Aids',
+    "Why 30-point type is a discipline, not decoration",
+    "Guy Kawasaki's 10-20-30 rule says use about ten slides, twenty minutes, and no font below 30 point. A teammate shrinks his font to 16 point to fit one more paragraph of detail. Beyond mere readability, what is the real reason the 30-point floor exists?",
+    "A big font physically limits how much text fits, forcing you to cut content from the slide and move it into your spoken delivery — the constraint reshapes the talk, not just the type size.",
+    [
+      ["The only purpose is accessibility: 30 point guarantees the back row and low-vision viewers can read every word.", "Readability is a benefit, but it isn't the mechanism Kawasaki was after; he called the font floor his 'insurance against slide abuse' — its job is to stop you cramming, not just to be legible.", "See the rule as a forcing function on content volume; legibility is a welcome side effect of the cutting it forces."],
+      ["The number 30 is a precise scientific threshold below which human eyes cannot parse text on a projector.", "There is nothing magic or scientific about exactly 30; it is a deliberately blunt rule of thumb chosen to be hard to wriggle out of.", "Treat 10-20-30 as a starting discipline, not a law of optics."],
+      ["It forces you to add more slides, since each slide now holds less, which keeps the audience more engaged.", "More slides is not the goal — 10-20-30 caps slides at about ten too. The point is less total text, with the surplus carried by your voice.", "Pair the font floor with the slide cap: both push content off the screen and onto the speaker."],
+    ],
+    "Kawasaki's 30-point minimum is a forcing function: a large font simply cannot hold an 82-word paragraph, so the rule cuts content for you and pushes it into speech. The deep idea is that a well-chosen constraint can do your editing — by making the bad version physically impossible rather than merely discouraged. It is a starting discipline, not a universal law, but the mechanism is what makes it stick.",
+    'Floe generated',
+    true,
+    "Ask what becomes physically impossible at 30 point that was easy at 16 — that impossibility is the point.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10082011,
+    'Career Skills',
+    'Visuals and Presentation Aids',
+    "The accessible-contrast floor",
+    "You inherit a sleek deck: light-grey body text on a white background, and a chart with pale yellow bars on cream. It looks elegant on your laptop. The WCAG AA standard asks for a contrast ratio of at least 4.5:1 for normal text. Why is meeting that ratio the right call even though your own screen looks fine?",
+    "Your bright laptop in a dim room hides a problem real viewers won't escape: low-vision audience members and a washed-out projector need the 4.5:1 margin to read what you can.",
+    [
+      ["Elegance should win — if it reads clearly on the presenter's screen, the design choice has done its job.", "The presenter's pristine screen is the worst possible test bench; the standard exists precisely because your viewing conditions are not the audience's.", "Design for the harshest realistic condition (projector glare, older eyes, back row), not for your own monitor."],
+      ["Contrast only matters for people who are fully blind, and they rely on screen readers, so visual contrast is moot.", "Screen readers serve blind users; the 4.5:1 ratio targets the much larger group with moderately low vision or reduced contrast sensitivity, who are reading visually.", "Aim contrast at low-vision and aging eyes — the ratio was calibrated to vision loss like that of a typical 80-year-old."],
+      ["A 4.5:1 ratio is overkill; as long as the colors are technically different, any human can tell them apart.", "Technically different is not perceptibly readable under glare or with impaired contrast sensitivity; the ratio quantifies 'enough difference,' not 'any difference.'", "Use a measured ratio rather than 'they look distinct to me' as the pass/fail test."],
+    ],
+    "WCAG AA sets 4.5:1 for normal text (3:1 for large text) because that margin compensates for the contrast loss of moderately low vision — roughly the eyesight of a typical 80-year-old — and survives a washed-out projector. The deeper lesson: accessibility standards encode the conditions you don't experience, so 'it looks fine to me' is exactly the judgment they're designed to override. Designing for the edge serves everyone.",
+    'Floe generated',
+    true,
+    "Whose eyes and whose screen is the 4.5:1 number protecting — and are those yours?",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10082012,
+    'Career Skills',
+    'Visuals and Presentation Aids',
+    "Reading the slide aloud",
+    "Your slide shows three full sentences. In rehearsal you read them out word for word, then click ahead. A reviewer says this is the single most common way speakers make themselves redundant. Why does reading the slide verbatim actively hurt the talk?",
+    "If the slide already says it and you just voice it, you've told the audience you add nothing beyond the deck — so they read ahead, finish before you, and tune you out.",
+    [
+      ["It hurts only because reading aloud is slow; speed-reading the same text faster would fix it.", "Speed isn't the problem — redundancy is. Racing through identical words still signals the speaker is a narrator the deck doesn't need.", "Change the relationship between voice and slide, not the tempo; the slide should hold the anchor while you add what isn't written."],
+      ["Reading slides is fine for the speaker but bored audiences are simply being rude and inattentive.", "The disengagement is a rational response, not rudeness: people read several times faster than you talk, so verbatim narration wastes their time.", "Respect that listeners outrun your voice; give them something the slide can't, or they will (correctly) read ahead."],
+      ["The fix is to put even more text on the slide so your reading at least covers everything thoroughly.", "More text deepens the trap, multiplying the redundancy and shrinking the font until nothing is readable anyway.", "Cut the slide to a single supported point and let your speech supply the reasoning, example, and emphasis."],
+    ],
+    "Reading slides verbatim collapses the two channels — visual and spoken — into one, and the audience reads faster than you speak, so they finish first and disengage. The slide should be support, not script: it holds an anchor while your voice supplies the part that isn't written. The deeper point is that a presenter earns their place only by adding something the deck cannot say on its own.",
+    'Floe generated',
+    true,
+    "If the slide already contains the words, what is left for the speaker to add — and what happens if the answer is 'nothing'?",
+    { challengeRating: 5 },
+  ),
+  // ===========================================================================
+  // Q&A, Panels, and Impromptu Speaking
+  // ===========================================================================
+  makeSimpleQuestion(
+    10082020,
+    'Career Skills',
+    'Q&A, Panels, and Impromptu Speaking',
+    "The question behind the question",
+    "After your launch talk, someone asks a rambling three-part question that ends with '...so anyway, what database are you using?' You sense the database is not really what they care about. Before answering, what is the most skillful first move?",
+    "Restate the tangled question into one answerable version and surface the real concern (e.g. 'It sounds like you're worried this won't scale — is that the heart of it?') before you answer.",
+    [
+      ["Answer the last thing you heard — name the database — since that's literally the question on the table.", "Answering the last noun you heard is the classic Q&A trap; you respond to the surface words and miss the scaling worry that actually drove the question.", "Listen past the final clause to the concern underneath, then answer that."],
+      ["Tell them it was a multi-part question and ask them to pick just one part to keep things efficient.", "Bouncing the cleanup back onto the questioner reads as dismissive and wastes the moment; restating is the speaker's job, not theirs.", "Do the consolidating yourself: collapse the parts into one clear question, then confirm it."],
+      ["Answer all three parts in full, in order, to show you were listening carefully to everything.", "Exhaustively answering every fragment turns one question into a mini-lecture that eats the rest of Q&A and still may never touch the real issue.", "Find the single underlying question and answer that concisely, leaving room for others."],
+    ],
+    "Skilled Q&A starts by finding the real question behind the asked one. Restating a tangled, multi-part question into a single answerable version — and naming the concern you suspect drives it — lets you address what the person actually needs rather than the last noun they happened to say. The deeper point: a question is a clue to a worry, and answering the words while missing the worry only looks like responsiveness.",
+    'Floe generated',
+    true,
+    "What is this person actually afraid of — and is it the same as the literal words they ended on?",
+    { challengeRating: 5 },
+  ),
+  makeSimpleQuestion(
+    10082021,
+    'Career Skills',
+    'Q&A, Panels, and Impromptu Speaking',
+    "Admitting uncertainty with authority",
+    "A senior leader asks, 'What's our exact churn figure for the enterprise segment?' You don't have it to hand. Inventing a confident-sounding number would feel safer in the moment. Why is 'I don't have that figure; I'll confirm it and send the source by end of day' the stronger answer?",
+    "A specific, time-bound commitment shows command of the topic without fabricating, and one invented number that's later wrong can discredit everything else you said.",
+    [
+      ["Guess a plausible number with conviction — confidence reads as competence, and people rarely check.", "This confuses confidence with fabrication; the moment one made-up figure is checked and fails, your whole talk's credibility collapses retroactively.", "Trade the cheap confidence of a guess for the durable credibility of a verifiable commitment."],
+      ["Just say 'I don't know' and move on quickly, since admitting any gap is what protects your honesty.", "A bare 'I don't know' protects honesty but forfeits authority; the strong version pairs the admission with a concrete plan to close the gap.", "Add the bridge — what you'll do, by when, with what source — so the admission signals control rather than helplessness."],
+      ["Deflect by questioning why the figure matters, so you never have to admit you lack it.", "Deflection reads as evasive and erodes trust faster than honesty would; it looks like you're hiding the gap rather than owning it.", "Name the gap openly and commit to filling it; evasion costs more credibility than the missing number ever would."],
+    ],
+    "Saying 'I don't have that, I'll confirm and send the source' beats inventing a figure because credibility is asymmetric: it accrues slowly and collapses instantly. One fabricated number, once caught, makes the audience re-doubt every true thing you said. The deep move is that admitting a gap with a specific, time-bound commitment reads as more authoritative than false certainty — confidence and fabrication are not the same thing.",
+    'Floe generated',
+    true,
+    "Compare the cost of one wrong invented number against the cost of one honest 'I'll confirm' — which damage is recoverable?",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10082022,
+    'Career Skills',
+    'Q&A, Panels, and Impromptu Speaking',
+    "The hostile questioner and the rest of the room",
+    "A questioner stands up and, in a sharp, contemptuous tone, implies your whole approach is naive. Your gut says to push back hard and match their energy. Why is staying calm and answering the substance the better play — and who is it really for?",
+    "You're answering for the whole room, not the one antagonist; if you match their hostility you may 'win' the exchange but lose the audience watching how you handle pressure.",
+    [
+      ["Match their tone forcefully — showing you won't be pushed around is what earns the room's respect.", "Mirroring hostility makes you look reactive and shrinks the conflict to a two-person fight; the silent majority reads escalation as a loss of composure, not strength.", "Stay level and address the point; in the eyes of observers the calmest person wins the room."],
+      ["Concede the point quickly to defuse them, even if you disagree, so the tension ends fastest.", "Caving to aggression to end the discomfort sacrifices your substance and teaches the room that volume beats evidence.", "Acknowledge the concern's legitimacy without surrendering the argument; calm is not the same as capitulation."],
+      ["Ignore the questioner entirely and move to the next hand, since hostile people don't deserve a response.", "Visibly snubbing them makes you look rattled or evasive and leaves their charge hanging unanswered in the room's mind.", "Acknowledge and answer the substance briefly; the answer is for the audience, even when the question was an attack."],
+    ],
+    "In a hostile exchange the audience is the real audience, not the antagonist. Matching their tone may win the duel but loses the watching majority, who judge you on composure under fire. Acknowledge the concern, answer the substance calmly, and offer follow-up. The deeper truth: in a contest of temperaments observers reward the calmer party, so refusing to take the bait is itself the most persuasive move.",
+    'Floe generated',
+    true,
+    "Picture the quiet majority watching: are they judging the questioner's point, or your reaction to it?",
+    { challengeRating: 6 },
+  ),
+]

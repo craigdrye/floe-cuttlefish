@@ -46,9 +46,9 @@ What teams do when production is on fire, and how they keep it from happening ag
 ## Chapter 5: Technical Debt and Team Communication
 How engineers decide what to fix, in what order, and how to make the case for it. Debt earns priority through consequence, not annoyance.
 - **Core questions**: Which debt actually blocks delivery, reliability, security, or cost? How do we frame it so it gets prioritized by people who don't read code?
-- **Key concepts**: technical debt, interest/carrying cost, maintenance burden, ownership, runbook, documentation, work-in-progress (WIP) limits, prioritization, stakeholder update, decision record.
-- **Applied skills**: translate maintenance pain into business risk (slower delivery, outage exposure, audit failure, rising spend); break a deadlocked design debate with explicit criteria and one named owner; limit WIP to actually finish work; write a runbook that survives someone's vacation.
-- **Common traps**: "old code is annoying" as a business case; package age treated as proof of risk; hiding cleanup inside unrelated features so it can't be reviewed; treating every task as top priority; single-person tribal knowledge.
+- **Key concepts**: technical debt, interest/carrying cost, maintenance burden, ownership, runbook, documentation, work-in-progress (WIP) limits, prioritization, stakeholder update, decision record, delivery health metrics (the four DORA metrics: deployment frequency, lead time for changes, change failure rate, failed-deployment recovery time).
+- **Applied skills**: translate maintenance pain into business risk (slower delivery, outage exposure, audit failure, rising spend); cite a delivery metric (e.g. a rising change-failure rate) to make a debt case land with non-engineers; break a deadlocked design debate with explicit criteria and one named owner; limit WIP to actually finish work; write a runbook that survives someone's vacation.
+- **Common traps**: "old code is annoying" as a business case; package age treated as proof of risk; hiding cleanup inside unrelated features so it can't be reviewed; treating every task as top priority; single-person tribal knowledge; gaming a delivery metric (deploying empty changes to lift deployment frequency) instead of improving the underlying flow.
 
 ## Chapter 6: Testing and Observability
 The two ways you know software works: before it ships (tests) and after it ships (telemetry). One without the other is half-blind.
@@ -84,3 +84,11 @@ Turn a messy engineering planning thread — a half-broken feature, an aging and
 The plan must state: scope, and what is explicitly out of scope; the key architecture decision with its tradeoff (as a short ADR); where the source of truth lives and how the migration stays reversible and online; a testing strategy at the right level; a gradual release path with rollback and feature flags; the security action for the leaked-or-stale credential and the vulnerable dependency (rotate, scope, patch — with reasoning, not panic); the reliability signals that would tell you it broke (which SLI/SLO, and what symptom to alert on); and a one-paragraph stakeholder update that frames the debt, risk, and cost in business terms.
 
 Success is a plan a competent team could execute and a manager could approve without a meeting — and that a reviewer six months later could read and understand why each choice was made.
+
+## Research Notes
+The course is a synthesis of established engineering bodies of knowledge rather than a single exam blueprint. Facts were checked against these authoritative sources:
+- https://sre.google/workbook/implementing-slos/ — Google SRE: SLI/SLO/error-budget definitions and the SLA-vs-SLO distinction used in Chapter 4 (error budget = 100% − SLO; 99.9% ≈ 43 min/month).
+- https://sre.google/sre-book/monitoring-distributed-systems/ — Google SRE: the four golden signals (latency, traffic, errors, saturation) cited in Chapter 6.
+- https://semver.org/ — Semantic Versioning 2.0.0: MAJOR for breaking changes, MINOR for backward-compatible additions, PATCH for fixes; confirms the Chapter 3 trap of bumping MINOR for a breaking change.
+- https://martinfowler.com/bliki/ParallelChange.html — Parallel Change / expand-migrate-contract pattern; each step backward-compatible and individually reversible (Chapter 3).
+- https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report — 2025 DORA report: the four delivery metrics and current findings that with AI assistance the bottleneck shifts from writing to review (supports Chapter 1's emphasis on accountability for AI-generated code and the Chapter 5 delivery-metrics framing).

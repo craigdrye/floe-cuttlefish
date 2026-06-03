@@ -63,7 +63,7 @@ The original syllabus had the right tone and core modules, but it needed more pr
 - Design an investigation checklist that protects complainants, respondents, witnesses, records, and decision integrity.
 
 ## Chapter 6: Ethical Culture and Control Design
-**Key concepts**: tone at the top, tone in the middle, normalization of deviance, near misses, speak-up culture, incentives, control ownership, postmortems.
+**Key concepts**: tone at the top, tone in the middle, normalization of deviance, near misses, speak-up culture, incentives, control ownership, postmortems, effective compliance-program elements (standards, oversight, training, monitoring, reporting, enforcement, response).
 
 **Practical questions**
 - What behavior is rewarded, ignored, punished, or quietly admired?
@@ -102,3 +102,4 @@ Students complete a Tiny Crime Audit of a fictional or real workflow, identifyin
 - Markkula Center, business ethics resources and cases: https://www.scu.edu/ethics/focus-areas/business-ethics/resources/
 - OpenStax Business Ethics, "Being a Professional of Integrity": https://openstax.org/books/business-ethics/pages/1-1-being-a-professional-of-integrity
 - Open Textbook Library review of OpenStax Business Ethics: https://open.umn.edu/opentextbooks/textbooks/617
+- U.S. Sentencing Guidelines §8B2.1, "Effective Compliance and Ethics Program" (the canonical seven-element program structure used in Chapter 6): https://guidelines.ussc.gov/apex/r/ussc_apex/guidelinesapp/guidelines?app_gl_id=%C2%A78B2.1

@@ -222,7 +222,7 @@ The MCAT has four scored sections totaling 230 questions across 7 hours 30 minut
 - Sociology: Durkheim (function and anomie), Marx (conflict, class), Weber (rationalization, bureaucracy), symbolic interactionism, Cooley's looking-glass self, Goffman's dramaturgy
 - Demography: transition model, migration patterns, urbanization, aging cohorts
 - Health disparities and social determinants of health; U.S. healthcare insurance models (Medicare, Medicaid, employer-based, ACA marketplaces, single-payer comparisons)
-- Research methods: experimental vs. observational; threats to internal and external validity; reliability vs. validity; sampling (random, stratified, convenience); statistics — mean/median/mode, SD, p-values, confidence intervals; correlation ≠ causation
+- Research methods and biostatistics (a high-yield cross-section skill the AAMC tests in every section's data figures, not just psych/soc): experimental vs. observational vs. quasi-experimental; case-control vs. cohort vs. cross-sectional designs; randomization, blinding, placebo, and control; threats to internal validity (confounding, selection bias, attrition, regression to the mean) and external validity (generalizability); reliability vs. validity (and types of each); sampling (random, stratified, cluster, convenience) and sampling bias; descriptive statistics — mean/median/mode, range, SD, skew; inferential statistics — p-values and the 0.05 threshold, confidence intervals, error bars, type I vs. type II error, statistical vs. clinical significance; correlation coefficients and why correlation ≠ causation
 
 **Applied premed skills**
 - Distinguish association from causation in a described study and name the threat to validity
@@ -248,7 +248,7 @@ The MCAT has four scored sections totaling 230 questions across 7 hours 30 minut
 - CARS strategy. Read the passage once thoroughly — do not skim; do not pre-read questions; do not bring outside knowledge. Eliminate extreme/absolute answers. Find textual support before committing.
 - Mid-day discipline. Two 10-minute breaks (one optional 30-minute lunch). Snacks, water, electrolytes; brief stretching; no review of finished sections. Phones stay in lockers; reading the previous section ruins the next one.
 - Stamina training. Build to two full-lengths per week in the final month under exam timing, including the morning start time and the same caffeine/food protocol planned for test day.
-- Score release timing: scores arrive about 30-35 days after the exam. AAMC offers a percentile table; competitive M.D. application cycles want 510+, top quartile 515+, top decile 520+.
+- Score release timing: scores arrive about 30-35 days after the exam. AAMC publishes an annually-refreshed percentile table (the table in effect May 1, 2025–April 30, 2026 is built on 2022-2024 testing-year data, N ≈ 294,000); on that scale 500 ≈ 50th percentile, 510 ≈ 79th, 515 ≈ 91st, 520 ≈ 97th. Competitive M.D. application cycles want 510+, top quartile 515+, top decile 520+.
 - Retake calculus: most schools see all attempts. Plan a retake only if you can credibly raise the composite by 3-5 points; otherwise let the score stand.
 
 **Applied premed skills**
@@ -267,4 +267,13 @@ The MCAT has four scored sections totaling 230 questions across 7 hours 30 minut
 - Personal error log with a "do-not-repeat" rule for each recurring miss type
 - Two-page exam-day script: arrival, materials, locker policy, break behavior, snack list, mindset cues, post-exam plan
 
-**Authoritative sources.** AAMC Official Guide to the MCAT Exam; AAMC FL Practice Exams 1-5 and Sample Exam; AAMC Section Banks; AAMC Question Packs; the published 2023 MCAT Score Scale and Percentile Tables.
+**Authoritative sources.** AAMC Official Guide to the MCAT Exam; AAMC FL Practice Exams 1-6 and Sample Exam; AAMC Section Banks; AAMC Question Packs; the current AAMC MCAT Total and Section Score Percentile Ranks table (refreshed annually, effective May 1).
+
+## Research Notes
+Authoritative sources consulted for this audit (verified 2026):
+- https://students-residents.aamc.org/whats-mcat-exam/chemical-and-physical-foundations-biological-systems-section-overview — AAMC Chem/Phys discipline weights (gen chem 30%, biochem 25%, physics 25%, org chem 15%, intro bio 5%); FC5 60% / FC4 40% split. Confirms the Exam Map table.
+- https://students-residents.aamc.org/whats-mcat-exam/biological-and-biochemical-foundations-living-systems-overview — Bio/Biochem foundational-concept weights (FC1 55%, FC2 20%, FC3 25%) and discipline mix (biology 65%, biochem 25%, gen chem 5%, org chem 5%). Confirms syllabus weights.
+- https://students-residents.aamc.org/whats-mcat-exam/psychological-social-and-biological-foundations-behavior-section-overview — Psych/Soc discipline mix (psychology 65%, sociology 30%, biology 5%). Confirms syllabus weights.
+- https://students-residents.aamc.org/whats-mcat-exam/critical-analysis-and-reasoning-skills-section-overview — CARS skill weights (Foundations of Comprehension 30%, Reasoning Within 30%, Reasoning Beyond 40%) and 50/50 humanities/social-science passage split.
+- https://students-residents.aamc.org/register-mcat-exam/publication/mcat-essentials-testing-year-2026 — The MCAT Essentials, Testing Year 2026: confirms 230 questions, four sections (59/53/59/59), 95-min science sections / 90-min CARS, total testing day ~7.5 hours.
+- https://students-residents.aamc.org/mcat-research-and-data/percentile-ranks-mcat-exam — Percentile Ranks for the MCAT (table effective May 1, 2025–April 30, 2026, based on 2022-2024 testing years): 500 ≈ 50th, 510 ≈ 79th, 515 ≈ 91st, 520 ≈ 97th percentile. Used to refresh the stale "2023 percentile tables" reference.

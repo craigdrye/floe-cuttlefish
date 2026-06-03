@@ -57,3 +57,14 @@ Questions should reward the learner who names the blocker, the evidence, the own
 
 ## Capstone
 Work a simulated billing queue from patient access through zero balance. For each account: confirm eligibility and the correct payer order (including any MSP or COB question); verify that authorization or referral requirements were met and that the billed service matches the approval; build a clean claim on the right form with correct codes, modifiers, POS, and NPI fields, clearing any NCCI edit; triage each denial by reading its CARC/RARC and deciding whether to correct, appeal (with a focused, policy-matched packet inside the deadline), or escalate; interpret the remittance to separate contractual write-offs from patient responsibility and flag any underpayment or credit balance; and finally prepare an accurate, compliant patient-balance explanation that honors No Surprises Act and ABN obligations. Deliver a queue summary naming, for every account, the blocker, the evidence, the owner, and the next action.
+
+## Research Notes
+The following authoritative sources were used to verify the facts, codes, weights, and deadlines in this syllabus (last verified 2026-06):
+- CMS Medicare appeals process, first level (Redetermination, 120-day filing window): https://www.cms.gov/medicare/appeals-grievances/fee-for-service/first-level-appeal-redetermination-medicare-contractor
+- CMS Medicare appeals process, second level (QIC Reconsideration, 180-day filing window): https://www.cms.gov/medicare/appeals-grievances/fee-for-service/second-level-appeal
+- Medicare.gov appeals overview (Original Medicare; ALJ amount-in-controversy threshold): https://www.medicare.gov/providers-services/claims-appeals-complaints/appeals/original-medicare
+- CMS No Surprises Act good faith estimate and patient-provider dispute resolution ($400 substantially-in-excess threshold, 120-day patient dispute window, $25 administrative fee): https://www.cms.gov/files/document/gfe-and-ppdr-requirements-slides.pdf
+- CMS No Surprises Act fact sheet on the good faith estimate (uninsured/self-pay): https://www.cms.gov/files/document/nosurpriseactfactsheet-whats-good-faith-estimate508c.pdf
+- CMS Place of Service code set (11 office, 21 inpatient, 22 on-campus outpatient hospital, 02 telehealth, 10 telehealth in patient's home; POS reported in CMS-1500 Box 24B): https://www.cms.gov/medicare/coding-billing/place-of-service-codes/code-sets
+- Telehealth.HHS.gov billing and coding for Medicare FFS (POS 02/10, telehealth modifiers 93/95/FQ/FR): https://telehealth.hhs.gov/providers/billing-and-reimbursement/billing-and-coding-medicare-fee-for-service-claims
+- CARC reference confirming CO-45 (charges exceed fee schedule, contractual write-off), CO-50 (not medically necessary per NCD/LCD), and CO-29 (timely filing limit expired): https://www.codingahead.com/complete-list-with-denial-codes-carc-claim-adjustment-reason-codes/

@@ -39,7 +39,7 @@ export const clinicalResearchJargonTopUpQuestions: Question[] = makeQuestionBank
   {
     id: 7305002,
     chapter: 'The Regulatory Scaffold — GCP, ICH, and the Alphabet of Oversight',
-    title: 'Reading Form FDA 1572',
+    title: "Statement of Investigator commitments",
     prompt: 'A PI is about to sign Form FDA 1572 and asks what they are actually committing to. What is the most accurate summary?',
     correct: 'It is the Statement of Investigator: the PI commits to conduct the study per the protocol, follow 21 CFR 312, report AEs, ensure IRB review, and maintain records for inspection',
     wrong: [

@@ -17,13 +17,13 @@ Safety and the limits of the material are non-negotiable, not garnish. At least 
 
 ## Chapter 1: Trimesters & Fetal Development
 - **Core questions**: How is pregnancy dated? What are the three trimesters? When do organs form and when is movement felt? What is "full term"?
-- **Key concepts**: dating from last menstrual period, ~40 weeks, trimesters as roughly equal thirds, embryo vs. fetus, organogenesis (weeks 3-8), quickening, full-term definition.
-- **Common traps**: dating from conception, thinking trimesters are uneven, assuming organs form late, expecting movement in the first weeks.
+- **Key concepts**: dating from last menstrual period, ~40 weeks, trimesters as roughly equal thirds, embryo vs. fetus, organogenesis (weeks 3-8), quickening, the term categories (early term 37w0d-38w6d, full term 39w0d-40w6d, late term 41w0d-41w6d, post-term ≥42w0d — "39 weeks counts").
+- **Common traps**: dating from conception, thinking trimesters are uneven, assuming organs form late, expecting movement in the first weeks, assuming any baby past 37 weeks is equally "done."
 
 ## Chapter 2: Prenatal Care & Checkups
-- **Core questions**: Why does prenatal care matter? How often are visits? What happens at one? OB vs. midwife? Screening vs. diagnostic tests?
-- **Key concepts**: monitoring blood pressure/weight/growth/labs, visit frequency ramping toward term, OB vs. certified midwife scope, screening estimates risk while diagnostic tests confirm.
-- **Common traps**: thinking care is just for dating or photos, believing midwives are untrained, confusing a screen with a diagnosis.
+- **Core questions**: Why does prenatal care matter? How often are visits, and is the schedule changing? What happens at one? OB vs. midwife? Screening vs. diagnostic tests?
+- **Key concepts**: monitoring blood pressure/weight/growth/labs, the traditional ~12-14 visit model (roughly monthly, then biweekly, then weekly) versus ACOG's 2025 shift toward tailored, individualized schedules for average-risk patients (often 6-10 visits, with telehealth, home blood-pressure monitoring, and group care as options) decided through shared decision-making after an early comprehensive assessment by ~10 weeks, OB vs. certified midwife scope, screening estimates risk while diagnostic tests confirm.
+- **Common traps**: thinking care is just for dating or photos, believing fewer visits means worse care (tailored schedules show equivalent outcomes for low-risk pregnancies), believing midwives are untrained, confusing a screen with a diagnosis.
 
 ## Chapter 3: Nutrition & What to Avoid
 - **Core questions**: Why folic acid? Is "eating for two" real? What about fish, alcohol, caffeine, and risky foods?
@@ -36,14 +36,14 @@ Safety and the limits of the material are non-negotiable, not garnish. At least 
 - **Common traps**: panicking over normal symptoms, mistaking Braxton Hicks for true labor, ignoring sudden severe swelling, believing the hairy-baby heartburn myth.
 
 ## Chapter 5: Warning Signs — When to Call a Provider
-- **Core questions**: When is bleeding a concern? What suggests preeclampsia? What about decreased fetal movement, preterm fluid leakage, or feeling unsure?
-- **Key concepts**: report bleeding beyond light spotting, preeclampsia symptom cluster (headache, vision changes, upper-belly pain, severe swelling), the "know your baby's movement pattern" rule, "when in doubt, call."
+- **Core questions**: When is bleeding a concern? What suggests preeclampsia? What about decreased fetal movement, preterm fluid leakage, or feeling unsure? What are the urgent maternal warning signs?
+- **Key concepts**: the CDC "Hear Her" urgent maternal warning signs (severe or worsening headache, vision changes, fever ≥100.4°F, trouble breathing, chest pain or racing heart, severe belly pain, decreased fetal movement, vaginal bleeding or fluid leaking, severe swelling of face/hands, leg pain or swelling, thoughts of self-harm — and that these matter through the whole year after birth), report bleeding beyond light spotting, the preeclampsia symptom cluster, the "know your baby's movement pattern" rule, "when in doubt, call."
 - **Common traps**: waiting on bleeding, dismissing decreased movement as sleeping, self-diagnosing online instead of calling, treating urgent signs as routine.
 
 ## Chapter 6: Stages of Labor
 - **Core questions**: How many stages of labor are there? What is each one? What does dilation mean? When do you head to the hospital?
-- **Key concepts**: three stages (dilation, pushing/birth, placenta), effacement and dilation to ~10 cm, the 5-1-1 rule of thumb, wide variation in pace.
-- **Common traps**: thinking dilation measures the baby or a countdown clock, confusing the second and third stages, misreading the 5-1-1 rule.
+- **Key concepts**: three stages (dilation, pushing/birth, placenta), the first stage's latent then active phase (ACOG marks ~6 cm as the start of active, faster dilation), effacement and dilation to ~10 cm, the 5-1-1 rule of thumb, wide variation in pace.
+- **Common traps**: thinking dilation measures the baby or a countdown clock, expecting steady "1 cm per hour" progress (the early latent phase is normally slow), confusing the second and third stages, misreading the 5-1-1 rule.
 
 ## Chapter 7: Birth Options & Pain Relief
 - **Core questions**: What is a C-section? How does an epidural work? What non-medication options exist? What do doulas and birth plans do?
@@ -51,8 +51,8 @@ Safety and the limits of the material are non-negotiable, not garnish. At least 
 - **Common traps**: thinking an epidural means going to sleep, calling a doula a clinician, treating a birth plan as a binding script, framing one birth method as the only "right" one.
 
 ## Chapter 8: Postpartum Basics
-- **Core questions**: What is the fourth trimester? What is lochia? Baby blues vs. postpartum depression? When to seek help? What are postpartum red flags?
-- **Key concepts**: ~12-week recovery period, normal tapering lochia, baby blues (mild, brief) vs. postpartum depression (intense, lasting, treatable), pelvic-floor recovery, hemorrhage/infection/clot warning signs.
+- **Core questions**: What is the fourth trimester? What is lochia? Baby blues vs. postpartum depression? When to seek help? What does the postpartum visit schedule now look like? What are postpartum red flags?
+- **Key concepts**: ~12-week recovery period, postpartum care as an ongoing process (an early contact within ~3 weeks, then a comprehensive visit by 12 weeks — not just one 6-week checkup), normal tapering lochia, baby blues (mild, brief) vs. postpartum depression (intense, lasting, treatable, affecting ~1 in 7), perinatal mental-health conditions as a leading cause of preventable maternal death, screening across pregnancy and postpartum, pelvic-floor recovery, hemorrhage (soaking a pad an hour)/infection/clot warning signs.
 - **Common traps**: neglecting parent recovery, mistaking heavy bleeding for normal lochia, stigmatizing postpartum depression as a failing, ignoring red flags.
 
 ## Chapter 9: Newborn Care Intro
@@ -71,8 +71,14 @@ Walk through a full pregnancy as an informed, calm participant. Place a scenario
 
 ## Research Notes
 - ACOG (American College of Obstetricians and Gynecologists) patient resources: https://www.acog.org/womens-health
+- ACOG 2025 tailored prenatal care guidance (individualized visit schedules, telehealth, group care): https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2025/04/tailored-prenatal-care-delivery-for-pregnant-individuals
+- ACOG 2024 First and Second Stage Labor Management (6 cm = start of active phase): https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2024/01/first-and-second-stage-labor-management
+- ACOG Committee Opinion 579, Definition of Term Pregnancy (early/full/late/post-term categories): https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/11/definition-of-term-pregnancy
+- ACOG 2023 Screening and Diagnosis of Mental Health Conditions During Pregnancy and Postpartum: https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/screening-and-diagnosis-of-mental-health-conditions-during-pregnancy-and-postpartum
+- ACOG Optimizing Postpartum Care / the "fourth trimester" (contact by ~3 weeks, comprehensive visit by 12 weeks): https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/05/optimizing-postpartum-care
+- CDC "Hear Her" Urgent Maternal Warning Signs: https://www.cdc.gov/hearher/maternal-warning-signs/index.html
 - CDC pregnancy and maternal health: https://www.cdc.gov/pregnancy/
-- CDC infant safe sleep guidance: https://www.cdc.gov/sids/
+- AAP 2022 safe infant sleep recommendations (back to sleep, bare crib, no bedsharing, room-sharing ~6 months): https://publications.aap.org/aapnews/news/20619/New-safe-sleep-recommendations-can-help
 - AAP HealthyChildren newborn care: https://www.healthychildren.org/
 - 988 Suicide & Crisis Lifeline (US): https://988lifeline.org/
 - Note: All content is educational health literacy, not medical advice; medical decisions should be made with a qualified OB-GYN, midwife, or pediatrician.

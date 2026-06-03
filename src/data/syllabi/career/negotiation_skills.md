@@ -17,11 +17,12 @@ The original syllabus had the right building blocks: interests, BATNA, ZOPA, anc
 - What do we want, why do we want it, and what might they actually need?
 - Is there a real zone of possible agreement, or are we wasting our time?
 
-**Key concepts**: interests vs. positions, BATNA (best alternative to a negotiated agreement), reservation point / walkaway, target / aspiration, ZOPA (zone of possible agreement), leverage, relationship vs. substance, process.
+**Key concepts**: interests vs. positions, BATNA (best alternative to a negotiated agreement), reservation point / walkaway, target / aspiration, ZOPA (zone of possible agreement), leverage, relationship vs. substance, process, the Seven Elements (interests, legitimacy, alternatives, options, commitments, communication, relationship — the Harvard Negotiation Project's preparation checklist).
 
 **Applied skills**
 - Build a prep sheet with goal, BATNA, reservation point, target, the counterpart's likely interests, and an opening plan.
 - Estimate a ZOPA from each side's reservation points and decide whether a deal is even possible.
+- Run a deal through the Seven Elements before the first conversation, so no element (especially legitimacy and commitment) is improvised at the table.
 
 **Common traps**
 - Confusing your *position* (the number you state) with your *interest* (why you want it) and arguing the number instead of the need.
@@ -171,6 +172,8 @@ The capstone is assessed on coherence — whether the prep, the value-creation p
 
 ## Research Notes
 - Roger Fisher and William Ury, *Getting to Yes* (1981), Harvard Negotiation Project — origin of BATNA and the four moves of principled negotiation (separate people from problem; interests not positions; invent options for mutual gain; insist on objective criteria).
+- Harvard Program on Negotiation, "The Seven Elements of Negotiation" (interests, legitimacy, alternatives, options, commitments, communication, relationship) — the Harvard Negotiation Project's canonical preparation framework, used to sharpen Chapter 1: https://www.pon.harvard.edu/glossary/seven-elements/
+- David A. Lax and James K. Sebenius, *3-D Negotiation* (setup, deal design, tactics) — informs the "prepare/setup-before-the-table" emphasis and the internal/sequencing coverage in Chapter 6: https://hbr.org/2003/11/3-d-negotiation-playing-the-whole-game
 - Harvard Program on Negotiation, "Value Claiming in Negotiation," informed BATNA, reservation point, ZOPA, and value-claiming coverage: https://www.pon.harvard.edu/daily/negotiation-skills-daily/value-claiming-in-negotiation/
 - Harvard Program on Negotiation on managing the tension between claiming and creating value (the negotiator's dilemma, after Lax and Sebenius): https://www.pon.harvard.edu/daily/batna/manage-the-tension-between-claiming-and-creating-value-nb/
 - Harvard Program on Negotiation on MESO (multiple equivalent simultaneous offers): https://www.pon.harvard.edu/daily/dealmaking-daily/the-benefits-of-multiple-offers/

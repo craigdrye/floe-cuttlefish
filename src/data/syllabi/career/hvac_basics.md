@@ -14,10 +14,10 @@ Underneath the practical tips sits a satisfying chunk of physics: heat moves, it
 Floe routes a learner here when they want to understand home comfort systems as an owner or renter, not as a trade student: people buying a house, replacing a furnace, sizing an AC, fighting a hot back bedroom, deciding whether a heat pump makes sense, or just tired of feeling helpless when something breaks. It pairs well with home-ownership, energy, and building-science interests, and sits beside other practical "how the world works" Career tracks. Scenarios are written around real homeowner moments (water on the floor, ice on the coil, a furnace blowing cold) and every distractor names a specific misconception so a wrong answer teaches something. Safety content (carbon monoxide, gas leaks, the DIY/pro line) is treated as non-negotiable, not optional trivia.
 
 ## Chapter 1: The Refrigeration Cycle
-- **Core questions**: What does an air conditioner physically do? Where does heat go? What are the four stages of the loop?
-- **Key concepts**: cooling as heat removal (not "cold creation"), evaporator, compressor, condenser, expansion valve, the sealed refrigerant loop, condensate as dehumidification.
-- **Applied skills**: trace heat from a room to the outdoors; identify which component does what from a symptom.
-- **Common traps**: thinking AC "makes cold," confusing condensate water with a refrigerant leak, mixing up which coil absorbs vs rejects heat.
+- **Core questions**: What does an air conditioner physically do? Where does heat go? What are the four stages of the loop? What is the refrigerant, and why is it changing?
+- **Key concepts**: cooling as heat removal (not "cold creation"), evaporator, compressor, condenser, expansion valve, the sealed refrigerant loop, condensate as dehumidification, refrigerant types (legacy R-410A vs the 2025 low-GWP A2L refrigerants R-454B and R-32).
+- **Applied skills**: trace heat from a room to the outdoors; identify which component does what from a symptom; recognize which refrigerant a system uses and why new R-410A equipment is no longer manufactured.
+- **Common traps**: thinking AC "makes cold," confusing condensate water with a refrigerant leak, mixing up which coil absorbs vs rejects heat, assuming an old R-410A system can simply be "topped off" with the new refrigerant (they are not cross-compatible).
 
 ## Chapter 2: Heat Pumps and Furnaces
 - **Core questions**: How can one unit both heat and cool? Why is a heat pump efficient? How does a gas furnace heat air without poisoning you?
@@ -39,19 +39,19 @@ Floe routes a learner here when they want to understand home comfort systems as 
 
 ## Chapter 5: Ducts and Distribution
 - **Core questions**: Why does duct leakage cost so much? Why is the far bedroom always uncomfortable? What seals a duct long-term?
-- **Key concepts**: ducts in unconditioned space, leakage and pressure loss, balancing dampers, mastic and UL 181 tape (and why cloth "duct tape" fails).
+- **Key concepts**: ducts in unconditioned space, leakage and pressure loss, balancing dampers, properly sized ductwork (ACCA Manual D), mastic and UL 181 tape (and why cloth "duct tape" fails).
 - **Applied skills**: connect a comfort complaint to a distribution cause; choose the right sealing material; reason about return placement.
 - **Common traps**: assuming a far room needs its own unit, using cloth duct tape, dismissing duct leaks as a noise issue.
 
 ## Chapter 6: Sizing and Capacity
 - **Core questions**: What is a "ton"? Is bigger better? How should a pro size equipment?
-- **Key concepts**: ton = 12,000 BTU/hr, BTU as a rate, oversizing and short cycling, dehumidification vs runtime, Manual J load calculation.
-- **Applied skills**: read a tonnage spec; explain why an oversized AC leaves a clammy house; ask for a Manual J instead of a square-foot guess.
+- **Key concepts**: ton = 12,000 BTU/hr, BTU as a rate, oversizing and short cycling, dehumidification vs runtime, the ACCA design trio (Manual J load calculation, Manual S equipment selection, Manual D duct design).
+- **Applied skills**: read a tonnage spec; explain why an oversized AC leaves a clammy house; ask for a Manual J load calculation (and a matching Manual S selection) instead of a square-foot guess.
 - **Common traps**: confusing tonnage with weight or refrigerant, "bigger to be safe," accepting rule-of-thumb sizing.
 
 ## Chapter 7: Efficiency Ratings
 - **Core questions**: What does SEER measure? AFUE? HSPF? When is a high-efficiency unit worth the premium?
-- **Key concepts**: SEER/SEER2 (cooling efficiency), AFUE (furnace fuel efficiency), HSPF (heat-pump heating efficiency), efficiency vs capacity, payback analysis.
+- **Key concepts**: SEER/SEER2 (cooling efficiency), AFUE (furnace fuel efficiency), HSPF/HSPF2 (heat-pump heating efficiency), the SEER2/HSPF2 test-procedure update and 2023 regional minimums (e.g., 14.3 SEER2 for southern split systems, 7.5 HSPF2 for heat pumps), efficiency vs capacity, payback analysis.
 - **Applied skills**: match the right rating to the right mode; estimate when higher SEER pays back given climate and usage.
 - **Common traps**: confusing SEER with capacity, applying AFUE to a heat pump, assuming highest efficiency always pays off.
 
@@ -92,5 +92,7 @@ Walk through your own (or a hypothetical) home as a smart homeowner. Identify th
 - U.S. Department of Energy, heating and cooling guidance: https://www.energy.gov/energysaver/heating-and-cooling
 - ENERGY STAR HVAC efficiency (SEER2/AFUE/HSPF) resources: https://www.energystar.gov/products/heating_cooling
 - EPA Section 608 refrigerant handling rules: https://www.epa.gov/section608
+- EPA AIM Act / technology transitions (R-410A phase-down to low-GWP A2L refrigerants, effective Jan 2025): https://www.epa.gov/climate-hfcs-reduction/technology-transitions
+- AHRI 2023 energy efficiency standards (SEER2/HSPF2 minimums and regional rules): https://www.ahrinet.org/2023-energy-efficiency-standards
 - CDC carbon monoxide poisoning prevention: https://www.cdc.gov/carbon-monoxide/about/
-- ACCA Manual J residential load calculation overview: https://www.acca.org/standards/technical-manuals
+- ACCA Manual J/S/D residential design standards (load calculation, equipment selection, duct design): https://www.acca.org/standards/technical-manuals

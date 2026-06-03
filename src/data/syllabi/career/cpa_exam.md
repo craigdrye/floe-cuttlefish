@@ -25,6 +25,20 @@ Every section runs **four hours** and is built from **five testlets**: **two MCQ
 | ISC | Discipline | **60 / 40** | IT risk, data, security/privacy, SOC engagements | Pairs with AUD strength |
 | TCP | Discipline | 50 / 50 | Entity and individual tax planning, basis, dispositions | Pairs with REG strength |
 
+### Blueprint content-area weights (effective January 1, 2026)
+Budget study time against the AICPA's published content-area allocations, not against your gut. Each section's score is sampled across these areas at roughly these ranges:
+
+| Section | Content areas (allocation range) |
+|---|---|
+| FAR | Financial Reporting 30-40% · Select Balance Sheet Accounts 30-40% · Select Transactions 25-35% |
+| AUD | Ethics, Professional Responsibilities, and General Principles 15-25% · Assessing Risk and Developing a Planned Response 25-35% · Performing Further Procedures and Obtaining Evidence 30-40% · Forming Conclusions and Reporting 10-20% |
+| REG | Ethics, Professional Responsibilities, and Federal Tax Procedures 10-20% · Business Law 15-25% · Federal Taxation of Property Transactions 5-15% · Federal Taxation of Individuals 22-32% · Federal Taxation of Entities 23-33% |
+| BAR | Business Analysis 40-50% · Technical Accounting and Reporting 35-45% · State and Local Governments 10-20% |
+| ISC | Information Systems and Data Management 35-45% · Security, Confidentiality, and Privacy 35-45% · SOC Engagement Considerations 15-25% |
+| TCP | Tax Compliance: Individual 30-40% · Tax Compliance: Entity 30-40% · Entity Tax Planning 10-20% · Personal Financial Planning / Property Transactions 10-20% |
+
+Note that REG's center of gravity is taxation (individuals plus entities is well over half the section), AUD's is fieldwork (risk plus evidence is the majority), and ISC splits its weight almost evenly between systems/data and security/privacy. Verify the exact ranges against the current blueprint before you build a plan, since the AICPA republishes them with each blueprint cycle.
+
 The credit clock matters as much as the content. Under the current model rules, once you pass your first section you have a **rolling 30-month window** (extended from the old 18 months, with credit measured from score-release date) to pass the remaining three before the first credit expires. State boards adopt the rule on their own timelines, so confirm your jurisdiction's window, the Notice to Schedule mechanics, Prometric scheduling, and your board's education and residency requirements before you lock a calendar.
 
 Suggested cadence: one section every 6-10 weeks, sequenced so each Discipline follows its Core partner (FAR before BAR, AUD before ISC, REG before TCP). Each study week should include new learning, timed mixed MCQ sets, at least one full TBS under the clock, cumulative review, and an error log. The error log is the small, unglamorous room where your mistakes are forced to confess.
@@ -291,3 +305,7 @@ By the end you assemble a working binder, not a pile of good intentions - the sa
 - Journal of Accountancy, "NASBA approves one-year extension to CPA Exam window" - corroborates the 18-to-30-month change and its January 2024 effective framing: https://www.journalofaccountancy.com/news/2023/apr/nasba-approves-one-year-extension-cpa-exam-window/
 - Becker, "Complete Guide to CPA Exam Sections" - prep-oriented summary of Core and Discipline sections, content allocations, five-testlet structure, and CPA Evolution context: https://www.becker.com/cpa-review/exam-content
 - Becker, "How to Prepare for the CPA Exam" - guidance on Discipline choice, section order, and estimated study-hour ranges by section: https://www.becker.com/blog/cpa/cpa-prep-ultimate-guide
+- AICPA, "Uniform CPA Examination Blueprints" (2026, BOE-approved PDF) - source for the per-section content-area allocation ranges added to the Exam Map (FAR/AUD/REG/BAR/ISC/TCP): https://assets.ctfassets.net/rb9cdnjh59cm/71s84dkfo3KEsoLlz4vv6G/f4314469ec5368b5b4dd0d0184f00a71/CPA_Exam_Blueprints_2026.pdf
+- UWorld Roger CPA Review, "CPA Exam Blueprints 2026" - corroborates the 2026 content-area weight ranges and the per-section MCQ/TBS counts (e.g., FAR 50 MCQ / 7 TBS, AUD 78 / 7, REG 72 / 8, ISC 82 / 6): https://accounting.uworld.com/cpa-review/cpa-exam/blueprints/
+- AICPA & CIMA, "Learn more about CPA Exam scoring and pass rates" - confirms the 50% MCQ / 50% TBS weighting for all sections except ISC, which is weighted 60% MCQ / 40% TBS: https://www.aicpa-cima.com/resources/article/learn-more-about-cpa-exam-scoring-and-pass-rates
+- AICPA & CIMA, "CPA Exam credit extension: Deadline in June 2025" - confirms the 30-month conditional-credit window for sections passed from January 2024 onward, with the legacy transition deadline of June 30, 2025 for pre-2024 credits: https://www.aicpa-cima.com/professional-insights/article/cpa-exam-credit-extension-deadline-in-june-2025

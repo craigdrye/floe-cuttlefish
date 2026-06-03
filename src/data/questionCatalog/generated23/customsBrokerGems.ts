@@ -1,0 +1,280 @@
+import { makeSimpleQuestion } from '../base'
+import type { Question } from '../types'
+
+export const customsBrokerGems: Question[] = [
+  // ── Classification With the HTSUS ──────────────────────────────────────────
+  makeSimpleQuestion(
+    10030000,
+    'Career Skills',
+    'Classification With the HTSUS',
+    'The GRIs Run in Order',
+    'A pediatric thermometer is described by a heading for "thermometers" and also, more generally, by a heading for "medical instruments." A classifier skips ahead to GRI 3 and starts debating which component gives the article its "essential character." Why is that the wrong move, and what should decide the case?',
+    'GRI 1 already resolves it: the heading whose terms most specifically describe the goods governs, so you stop there and never reach GRI 3 at all.',
+    [
+      [
+        'GRI 3(b) is correct because any product with two possible headings is a composite good decided by essential character.',
+        'GRI 3 is for goods that GRI 1 cannot resolve (mixtures, composites, sets) — not for a single article that one heading plainly names.',
+        'The trigger for GRI 3 is unresolvability under GRI 1, not the mere existence of two candidate headings.',
+      ],
+      [
+        'GRI 3(c) controls, so you pick whichever of the two headings appears last in numerical order.',
+        'GRI 3(c) is a last-resort tiebreaker reached only after 3(a) and 3(b) both fail — it is not where classification begins.',
+        'The numerical-order rule is the bottom of the ladder, invoked only when specificity and essential character cannot decide.',
+      ],
+      [
+        'Whichever heading the commercial invoice or marketing copy names should win, since that reflects what is actually being sold.',
+        'The tariff is decided by its own legal text, not by the seller\'s product name — the invoice description has no controlling weight.',
+        'Letting the marketing name drive classification is the classic trap; the headings and notes, read in GRI order, govern.',
+      ],
+    ],
+    'Lesson: The General Rules of Interpretation are applied strictly in sequence, and you stop at the first one that resolves the goods — GRI 1 (heading terms plus section/chapter notes) settles most cases before any "essential character" question even arises. The deep point is that classification is not a search for the best vibe or the most natural-sounding category; it is a disciplined cascade where each rung is forbidden until the one above it has demonstrably failed. That ordering is what makes a billion daily classification decisions reproducible by strangers instead of being matters of taste.',
+    'Floe generated',
+    true,
+    'Ask whether GRI 1 (the heading text and the relevant notes) already names the article before you reach for any later rule.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10030001,
+    'Career Skills',
+    'Classification With the HTSUS',
+    'When No Component Has the Soul',
+    'A composite article genuinely has no single material or component that imparts its essential character, and two headings merit equal consideration. GRI 3(a) (most specific) and GRI 3(b) (essential character) have both run out. The tariff still must produce exactly one answer. What does GRI 3(c) tell you to do?',
+    'Classify it under the heading that occurs last in numerical order among those equally meriting consideration.',
+    [
+      [
+        'Classify it under the heading that appears first in numerical order, since the earlier heading takes precedence.',
+        'GRI 3(c) chooses the heading that occurs last, not first — the rule deliberately resolves the deadlock the other direction.',
+        'It is "last in numerical order," a fixed arbitrary tiebreak, not a first-come precedence.',
+      ],
+      [
+        'Classify it under whichever heading carries the lower duty rate, to apply the rule most favorably to the importer.',
+        'GRI 3(c) is indifferent to duty consequences; it picks by numerical order alone, with no "benefit of the doubt" on rate.',
+        'Reading a taxpayer-favorable rule into 3(c) is wishful; the rule is purely mechanical.',
+      ],
+      [
+        'Send the article for a binding ruling because the tariff provides no rule for a true tie.',
+        'The tariff does provide a rule — GRI 3(c) exists precisely to break a genuine tie deterministically, no ruling required.',
+        'The whole purpose of 3(c) is to guarantee an answer when judgment runs out.',
+      ],
+    ],
+    'Lesson: GRI 3(c) is the tariff\'s tiebreaker of last resort — when specificity and essential character cannot decide, you take the heading last in numerical order. What makes it conceptually striking is that a legal system built on reasoned distinctions ends, at its margin, with a frankly arbitrary rule: "the bigger number wins." That is a design choice, not a failure. A coin-flip rule that everyone applies identically is more valuable than an elegant rule that two careful brokers would resolve differently, because in customs, predictability for millions of entries beats case-by-case wisdom.',
+    'Floe generated',
+    true,
+    'GRI 3(c) breaks the tie by numerical order — and only in one direction.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10030002,
+    'Career Skills',
+    'Classification With the HTSUS',
+    'The Note That Kicks You Out',
+    'You have found a heading whose words describe your article beautifully, and you are ready to file. A colleague points out that the chapter note at the front of that chapter explicitly excludes articles of your type and sends them elsewhere. The heading text and the note appear to conflict. Which controls?',
+    'The section and chapter notes control: under GRI 1 they have the same legal force as the heading text, and an exclusionary note removes the article from the heading no matter how well the words fit.',
+    [
+      [
+        'The heading text wins because it is the operative tariff language and notes are merely explanatory commentary.',
+        'Notes are not commentary — GRI 1 makes section and chapter notes legally binding and capable of overriding an apparent textual match.',
+        'Treating notes as soft guidance is the error; they sit at the very top of the hierarchy with the heading terms.',
+      ],
+      [
+        'Whichever provision yields the more specific description wins, applying GRI 3(a) to the heading-versus-note conflict.',
+        'GRI 3 never enters; an exclusionary note operates within GRI 1 itself, so the article simply cannot be classified there.',
+        'You don\'t weigh a note against a heading for specificity — the note flatly excludes, ending the inquiry.',
+      ],
+      [
+        'The Explanatory Notes from the WCO break the tie, since they are the authoritative interpretation of both.',
+        'Explanatory Notes are persuasive guidance only, not binding law, and they cannot override a legally binding chapter note.',
+        'Confusing the binding chapter/section notes with the non-binding Explanatory Notes is a common and costly mix-up.',
+      ],
+    ],
+    'Lesson: Section and chapter notes are not footnotes — GRI 1 gives them the force of law, so a single exclusionary note can override a heading that otherwise fits the goods perfectly. The deeper lesson is about where meaning lives in a legal text: the "obvious" reading of a heading is provisional until you have checked the notes that define, include, and exclude. A broker who classifies from the headings alone is reading half the statute, and the half they skipped is exactly the half written to catch the tempting wrong answer.',
+    'Floe generated',
+    true,
+    'Notes are binding under GRI 1; an exclusion in the note beats a perfect-looking heading match.',
+    { challengeRating: 6 },
+  ),
+
+  // ── Valuation ──────────────────────────────────────────────────────────────
+  makeSimpleQuestion(
+    10030003,
+    'Career Skills',
+    'Valuation',
+    'Whose Agent Are You Paying?',
+    'An importer pays a 5% commission to an agent on a shipment. In one version the agent works for the importer, finding suppliers and placing the buyer\'s orders. In an otherwise identical version the agent works for the foreign seller, drumming up sales on the seller\'s behalf. Same 5%, same goods — is the commission added to customs value?',
+    'It depends entirely on whom the agent serves: a buying commission paid to the buyer\'s own agent is not dutiable, while a selling commission paid for the seller\'s benefit is added to transaction value.',
+    [
+      [
+        'No in both cases — a commission is a service fee, not part of the price of the goods, so it never enters customs value.',
+        'Selling commissions are an express statutory addition to the price actually paid or payable; only genuine buying commissions are excluded.',
+        'The blanket "commissions are services" view ignores that the law specifically pulls selling commissions back into value.',
+      ],
+      [
+        'Yes in both cases — any commission tied to the purchase is dutiable because it is part of the total cost of acquiring the goods.',
+        'A bona fide buying commission, paid to the buyer\'s agent for representing the buyer, is excluded — total acquisition cost is not the test.',
+        'Customs value is not "everything the importer spent"; the buyer\'s own agency cost is carved out.',
+      ],
+      [
+        'It depends on the size of the commission — anything at or below a customary rate is treated as a non-dutiable buying commission.',
+        'The percentage is irrelevant; dutiability turns on whose interest the agent represents, not on whether the rate looks customary.',
+        'There is no "reasonable-rate safe harbor"; the buyer-versus-seller relationship is the whole question.',
+      ],
+    ],
+    'Lesson: Two identical-looking 5% commissions land on opposite sides of the duty line depending on a single relational fact — does the agent represent the buyer or the seller? The conceptual hook is that customs value is not measured by how much money changed hands but by what the payment is *for*: the law tries to capture the true price of the goods sold for export, and a buyer arranging its own purchasing is spending on itself, not adding to the seller\'s price. Economic substance, not the label on the invoice, decides — which is exactly why CBP scrutinizes whether a claimed "buying agent" is genuinely independent of the seller.',
+    'Floe generated',
+    true,
+    'Ask whose agent it is: buyer\'s agent (excluded) versus seller\'s benefit (included). The rate doesn\'t matter.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10030004,
+    'Career Skills',
+    'Valuation',
+    'The Invoice Is Not the Value',
+    'An importer ships molds it owns to a foreign factory for free so the factory can produce its parts, and separately pays the designer a royalty tied to those parts as a condition of buying them. The commercial invoice shows only the per-unit price for the finished parts. Relative to that invoice total, what is the correct customs value?',
+    'Higher than the invoice: the value of the free molds (an assist) and the royalty paid as a condition of sale are statutory additions to the price actually paid or payable, even though they never appear on the invoice.',
+    [
+      [
+        'Exactly the invoice total — the price actually paid or payable is the figure the parties agreed and printed on the invoice.',
+        'The statute adds assists and condition-of-sale royalties to the printed price; the invoice total is the starting point, not the answer.',
+        'Equating "price actually paid or payable" with the invoice number is the central valuation trap.',
+      ],
+      [
+        'Lower than the invoice, because the buyer-supplied molds were furnished free and should be deducted as the importer\'s own cost.',
+        'Free buyer-supplied tooling is an assist that is *added*, not deducted — the importer effectively pre-paid part of the production cost off-invoice.',
+        'An assist increases value; the instinct to subtract the buyer\'s own contribution is exactly backwards.',
+      ],
+      [
+        'Exactly the invoice total, because intangibles like molds and royalties are too uncertain to quantify and so are disregarded.',
+        'Assists and royalties must be quantified and apportioned by reasonable accounting methods, not ignored for being intangible.',
+        'Difficulty of measurement is not an exemption; the law requires you to value and add them.',
+      ],
+    ],
+    'Lesson: Transaction value starts from the price actually paid or payable but the statute then *adds* assists (like buyer-furnished molds) and condition-of-sale royalties — so the true customs value can exceed every number on the invoice. The deep idea is that value is constructed, not copied: a clever importer could otherwise shift cost off the invoice by handing the factory free tooling or splitting payment into "royalties," and the additions exist to reassemble the real economic price the goods carry. The invoice is evidence of value, never a substitute for it.',
+    'Floe generated',
+    true,
+    'Start from the invoice price, then add what the buyer provided off-invoice: assists and condition-of-sale royalties push value up.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10030005,
+    'Career Skills',
+    'Valuation',
+    'Family Discount or Real Price?',
+    'A U.S. company imports from its own parent corporation abroad. A reviewer wants to throw out the related-party invoice price and jump straight to a computed value, on the theory that prices between affiliates can never be trusted. Is the related-party transaction value automatically disqualified?',
+    'No: a related-party price is acceptable as transaction value if the relationship did not influence the price (the "circumstances of sale" test) or the price closely approximates an accepted "test value."',
+    [
+      [
+        'Yes — any sale between related parties is presumed manipulated, so transaction value is unavailable and you move down the hierarchy.',
+        'Relationship alone does not disqualify the price; it must be shown to have *influenced* the price, or the price must fail the test values.',
+        'There is no automatic rejection — the law asks whether the relationship actually distorted the price, not whether one exists.',
+      ],
+      [
+        'No, and you skip straight to computed value anyway because it is the most accurate method for affiliated companies.',
+        'You cannot skip the hierarchy — transaction value is tried first, and computed value is only reached after the prior methods fail in order.',
+        'Reaching for computed value out of sequence violates the strict order of valuation methods.',
+      ],
+      [
+        'Yes, unless the parent and subsidiary file a joint declaration electing to use transaction value despite the relationship.',
+        'No such election exists; acceptability turns on the circumstances-of-sale or test-value analysis, not on a taxpayer election.',
+        'The remedy is an evidentiary test, not a paperwork opt-in.',
+      ],
+    ],
+    'Lesson: A related-party price is not automatically rejected — it survives as transaction value if the relationship did not influence it (circumstances of sale) or it approximates accepted test values, and only then do you descend the method hierarchy. The conceptual tension is between suspicion and proof: affiliates obviously *could* rig a price, yet the law refuses to presume guilt, demanding instead a showing that the price behaves like an arm\'s-length one. It is a small lesson in how a fair system handles conflicts of interest — not by banning the relationship, but by testing whether it actually bent the outcome.',
+    'Floe generated',
+    true,
+    'Relationship is a flag, not a verdict: ask whether it influenced the price, or whether the price matches a test value.',
+    { challengeRating: 6 },
+  ),
+
+  // ── Country of Origin, Marking, and Trade Programs ──────────────────────────
+  makeSimpleQuestion(
+    10030006,
+    'Career Skills',
+    'Country of Origin, Marking, and Trade Programs',
+    'One Good, Two Countries',
+    'Chinese-made electric motors are sent to Mexico, where processing satisfies the tariff-shift rule that determines origin for marking. CBP rules the motors may be marked "Made in Mexico" for the consumer — yet still assesses the Section 301 China tariff on them. How can the same motor be from two different countries at once?',
+    'Origin is purpose-specific: a tariff-shift (Part 102) analysis can make the good "Mexican" for marking while the separate substantial-transformation test keeps it "Chinese" for trade-remedy (Section 301) purposes.',
+    [
+      [
+        'It cannot — CBP made an error, since an article has exactly one country of origin that must govern every customs purpose.',
+        'There is no single all-purpose origin; marking, preference, and trade-remedy scope each run their own legal test and can diverge.',
+        'The "one true origin" assumption is precisely the misconception this scenario breaks.',
+      ],
+      [
+        'Whichever determination CBP made last in time overrides the other, so the most recent ruling sets the single origin.',
+        'The two answers coexist permanently; neither overrides the other because they answer different legal questions, not the same one twice.',
+        'It is not a sequencing conflict — both holdings are simultaneously valid for their respective purposes.',
+      ],
+      [
+        'The marking origin always controls, so once it is "Made in Mexico" the Section 301 China duty cannot attach.',
+        'Marking origin does not govern trade-remedy scope; substantial transformation, not the marking rule, decides whether Section 301 applies.',
+        'Letting the marking label dictate the duty is the trap — the duty follows a different origin test entirely.',
+      ],
+    ],
+    'Lesson: A single article can carry different countries of origin for different purposes — marked "Made in Mexico" for the consumer yet "Chinese" for a Section 301 tariff — because marking origin and trade-remedy origin are decided by separate tests (tariff shift versus substantial transformation). The unsettling implication is that "where is this from?" has no context-free answer; origin is a legal relation between a good and a *question*, not a fixed property of the good. Brokers who collapse the three origins into one either mislabel goods for consumers or underpay duties — and both are penalizable failures of reasonable care.',
+    'Floe generated',
+    true,
+    'Marking origin, preference origin, and trade-remedy origin are separate tests and can land on different countries for the same item.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10030007,
+    'Career Skills',
+    'Country of Origin, Marking, and Trade Programs',
+    'Shipped From Is Not Made In',
+    'An importer wants the USMCA duty-free rate. The goods were assembled in Canada from a mix of components, then shipped directly from a Canadian port to the United States, with a Canadian commercial invoice. The importer argues this clearly qualifies. What is the broker\'s essential objection?',
+    'Shipping from a member country proves nothing about origin — the goods qualify only if they actually satisfy USMCA\'s rule of origin (the applicable tariff shift and any regional value content), which must be analyzed separately.',
+    [
+      [
+        'There is no objection — direct shipment from a USMCA country with a local invoice is exactly what the preference requires.',
+        'Direct shipment and a local invoice are logistics, not origin; the preference turns on whether the rule of origin was met, which routing does not establish.',
+        'Confusing "ships from a member" with "originates in a member" is the canonical free-trade-agreement trap.',
+      ],
+      [
+        'The problem is purely paperwork: they only need the government-issued USMCA Certificate of Origin form to claim the rate.',
+        'USMCA has no government certificate *form* — it uses a data-element certification — and no form can substitute for actually meeting the rule of origin.',
+        'Even perfect certification cannot manufacture origin the goods do not legally have.',
+      ],
+      [
+        'USMCA preference is unavailable to brokers; only the importer of record may ever assert a rule-of-origin claim.',
+        'The objection is substantive, not about who may claim it — under USMCA the importer, exporter, or producer may certify origin.',
+        'The barrier here is the unmet rule of origin, not a restriction on which party can claim the benefit.',
+      ],
+    ],
+    'Lesson: A free-trade-agreement preference depends on satisfying a rule of origin (tariff shift, regional value content), not on where the goods were shipped from or invoiced — "ships from Canada" is not "originates in Canada." The deeper point is that trade agreements reward transformation, not transit: the benefit exists to favor goods genuinely produced within the bloc, so foreign components routed through a member country to launder their origin are exactly what the rules of origin are built to catch. Reasonable care means proving the rule was met before claiming the rate, because an unsupported preference claim is the importer\'s liability, not the agreement\'s gift.',
+    'Floe generated',
+    true,
+    'Routing and invoices are logistics; the preference lives or dies on the rule of origin actually being satisfied.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10030008,
+    'Career Skills',
+    'Country of Origin, Marking, and Trade Programs',
+    'A New Name, Character, or Use',
+    'Raw steel made in Country A is shipped to Country B, where workers cut, bend, weld, and finish it into a distinct finished tool with its own name and function. For non-preferential origin, the broker concludes the tool is a product of Country B. What legal test supports that conclusion?',
+    'Substantial transformation: processing that yields a new article with a different name, character, or use confers origin on the country where that transformation occurred.',
+    [
+      [
+        'The "value-added" test — origin goes to whichever country contributed the largest share of the final value.',
+        'Non-preferential origin turns on substantial transformation (new name, character, or use), not on a bare share-of-value calculation.',
+        'Highest value added is a preference-style metric, not the general common-law origin test.',
+      ],
+      [
+        'The "last country touched" test — origin is simply wherever the most recent processing of any kind took place.',
+        'Mere last-touch processing is not enough; the work must create a genuinely new and different article to shift origin.',
+        'Trivial finishing in the last country does not transform origin — the change must be substantial in name, character, or use.',
+      ],
+      [
+        'The raw-material test — origin always follows the country where the underlying raw material (here the steel) originated.',
+        'If processing substantially transforms the material into a new article, origin shifts to the country of transformation, not the raw-material source.',
+        'Origin is not permanently anchored to the raw material once a real new article emerges.',
+      ],
+    ],
+    'Lesson: Substantial transformation confers non-preferential origin on the country where work produces a new article with a different name, character, or use — not where value is highest, where processing last occurred, or where the raw material came from. The conceptual depth is that origin tracks *identity change*, not effort or money: the question is whether something genuinely new came into being, which forces a near-metaphysical judgment about when a thing stops being steel and starts being a tool. That very subjectivity is why the test is famously hard to apply consistently and why tariff-shift rules were invented to make at least some origin calls mechanical.',
+    'Floe generated',
+    true,
+    'Look for a new name, character, or use — not the biggest value share or merely the last hands to touch it.',
+    { challengeRating: 6 },
+  ),
+]

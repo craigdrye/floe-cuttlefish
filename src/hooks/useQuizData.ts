@@ -185,7 +185,21 @@ export function useQuizData() {
     // questions. Otherwise, fall back to the whole chapter (legacy mode for
     // entry points that haven't been routed through the sub-map yet).
     if (activeLesson) {
-      return shuffledQuestions(activeLesson.questions, chapterShuffleSeed)
+      const shuffled = shuffledQuestions(activeLesson.questions, chapterShuffleSeed)
+      // TEMP (prompt-rating experiment): in the rating lessons, surface the
+      // generated candidate questions at the front so they're easy to reach/rate.
+      const RATING_SUBTOPICS = new Set([
+        'Backward Induction', 'Optimization & Movement',
+        'Lateral & Observability', 'Weighing & Information', 'Counting & Arithmetic',
+        'Invariants & Parity', 'Logic & Constraint',
+        'Speaking Foundations', 'Plumbing Foundations', 'Ethics Reflexes', 'CFA L2 Ethics',
+      ])
+      if (shuffled.some((q) => RATING_SUBTOPICS.has(q.subTopic ?? ''))) {
+        const generated = shuffled.filter((q) => q.generated)
+        const rest = shuffled.filter((q) => !q.generated)
+        if (generated.length > 0 && rest.length > 0) return [...generated, ...rest]
+      }
+      return shuffled
     }
     return shuffledQuestions(chapterAllQuestions, chapterShuffleSeed)
   }, [activeChapterGroup, activeLesson, chapterAllQuestions, chapterShuffleSeed])

@@ -47,7 +47,7 @@ The content follows widely accepted, evidence-based frameworks from sources like
 
 ### Chapter 7: Supporting Someone Else
 - **Core questions**: What is the most helpful first step? What should you avoid saying? How do you encourage professional help?
-- **Key concepts**: nonjudgmental listening, validating responses, bridging to care, caring for the carer.
+- **Key concepts**: nonjudgmental listening, validating responses, bridging to care, caring for the carer; the Mental Health First Aid ALGEE approach as a memorable scaffold (Approach/assess for crisis, Listen nonjudgmentally, Give reassurance and information, Encourage professional help, Encourage self-help and other supports).
 - **Common traps**: rushing to fix; minimizing with "think positive"; trying to diagnose or treat a loved one yourself.
 
 ### Chapter 8: When and How to Seek Help (Safety)
@@ -69,6 +69,7 @@ The content follows widely accepted, evidence-based frameworks from sources like
 Bring it together with a reflective, scenario-based review: distinguish ordinary sadness from clinical depression in everyday examples, separate three common myths from the facts, name evidence-based forms of help (therapy, lifestyle, and the high-level role of medication with a prescriber), describe how you would compassionately support a friend, and identify the warning signs and exact steps for seeking help, including the 988 Lifeline. The aim is not to diagnose but to feel confident, informed, and ready to point yourself or someone else toward real, professional support.
 
 ## Research Notes
-- World Health Organization — Depressive disorder (depression): https://www.who.int/news-room/fact-sheets/detail/depression
-- National Institute of Mental Health — Depression: https://www.nimh.nih.gov/health/topics/depression
+- World Health Organization — Depressive disorder (depression): https://www.who.int/news-room/fact-sheets/detail/depression (last updated Aug 2025; ~280 million people / ~3.8% of the global population; ~50% more common in women; >10% in pregnant/postpartum women — supports Ch1, Ch9)
+- National Institute of Mental Health — Depression: https://www.nimh.nih.gov/health/topics/depression (SSRIs first-line, antidepressants typically take 4–8 weeks, combination therapy + medication often most effective — supports Ch5, Ch6)
 - 988 Suicide & Crisis Lifeline: https://988lifeline.org
+- Mental Health First Aid — ALGEE 5-step action plan: https://mentalhealthfirstaid.org/news/algee-how-mhfa-helps-you-respond-in-crisis-and-non-crisis-situations/ (canonical literacy framework for supporting someone — supports Ch7)

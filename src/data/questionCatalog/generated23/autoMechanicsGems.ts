@@ -1,0 +1,158 @@
+import { makeSimpleQuestion } from '../base'
+import type { Question } from '../types'
+
+export const autoMechanicsGems: Question[] = [
+  // ----------------------------------------------------------------------------
+  // Brakes
+  // ----------------------------------------------------------------------------
+  makeSimpleQuestion(
+    10005000,
+    'Career Skills',
+    'Brakes',
+    "When pumping the brakes only makes them worse",
+    "Descending a long mountain grade with a loaded car, you ride the brakes the whole way. Near the bottom the pedal goes soft and sinks toward the floor. Instinct says pump it harder and faster to build pressure. Why can that instinct fail here, and what is actually happening inside the brake line?",
+    "The fluid has overheated and boiled, and the steam bubbles are compressible, so your foot energy goes into squeezing gas instead of pushing the pads; pumping only churns more vapor, and the real fix is to let the brakes cool (and use engine braking next time)",
+    [
+      ["Pump fast and hard, because rapidly cycling the pedal always rebuilds hydraulic pressure in any failure", "Pumping recovers a pedal when air is trapped or fluid is low, but it cannot help when the fluid itself has boiled: each stroke just compresses the steam again, and the heat that made the vapor is still there.", "Ask first whether you are fighting trapped air or boiling fluid; only the air case responds to pumping."],
+      ["The pads have simply worn out mid-descent, so no amount of pedal effort matters until they are replaced", "Pads do not vanish in one hill; the sudden soft pedal points to heat boiling the fluid, which returns once the brakes cool, unlike worn pads which feel hard and grind.", "A soft, sinking pedal is a hydraulic symptom; worn pads give a hard pedal with noise, not sponginess."],
+      ["A brake line has burst, which is the only way a pedal can ever drop to the floor", "A burst line loses fluid permanently and the pedal stays dead, but a boiled-fluid pedal often firms back up after cooling, which is the tell that no line actually failed.", "Distinguish permanent fluid loss from temporary vapor: only the vapor case recovers on its own."],
+    ],
+    "Hydraulic brakes work because liquids are essentially incompressible: push fluid at the pedal and the same push appears instantly at the pads. Heat breaks that contract. Sustained braking can boil the fluid (especially old fluid that has absorbed water), and the resulting steam IS compressible, so your foot now wastes its force squeezing gas. The deep idea is that the whole system trades on a physical property of liquids, and the moment heat introduces a gas into the line, the pedal stops commanding the pads. Pumping helps only when the enemy is trapped air you can push past, not vapor you keep regenerating.",
+    'Floe generated',
+    true,
+    "Liquids barely compress; gases compress easily. Decide whether the soft pedal is fighting trapped air (pump) or boiled fluid (cool down).",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10005001,
+    'Career Skills',
+    'Brakes',
+    "Why a brake flush matters even with full pads",
+    "A mechanic looks at your three-year-old car, notes the pads are barely worn, yet recommends flushing the brake fluid. You protest that the brakes feel perfect and the fluid 'never gets used up' since it is sealed in lines. What is the real reason aging brake fluid becomes dangerous?",
+    "Brake fluid is hygroscopic: it slowly absorbs moisture from the air through seals and hoses, and that dissolved water sharply lowers the boiling point, so old fluid can boil and go spongy under hard use even though it looks and feels fine cold",
+    [
+      ["There is no real reason; sealed fluid lasts the life of the car and the flush is just upselling", "The fluid is not perfectly sealed: rubber hoses and seals let water vapor in over years, and even a few percent water can drop the boiling point by a hundred-plus degrees, which is a safety issue, not a sales pitch.", "Treat 'sealed' as 'slow', not 'never'; hygroscopic fluid degrades on a timeline regardless of mileage."],
+      ["The fluid physically wears out from friction as it flows back and forth through the calipers", "Fluid does not abrade like a solid part; its problem is chemical, namely absorbed water lowering the boiling point and promoting internal corrosion, not mechanical wear.", "The failure mode is contamination and boiling point, not mechanical wear of a liquid."],
+      ["Cold weather thickens old fluid permanently, so it must be replaced before each winter", "Brake fluid is formulated to stay fluid across normal temperatures; the genuine aging risk is absorbed moisture lowering the boiling point under heat, not permanent cold-thickening.", "The dangerous direction is hot (boiling), not cold; water content is the variable that matters."],
+    ],
+    "Brake fluid quietly absorbs water from the atmosphere over time because it is hygroscopic, and water boils far below the fluid's design temperature. So a car that 'feels perfect' can still hide fluid whose boiling point has crept down toward the temperatures hard braking actually produces, setting up the spongy-pedal failure exactly when you need the brakes most. The deeper lesson is that some safety margins erode invisibly on a calendar, not on the odometer: nothing looks worn, nothing feels wrong, yet the protective buffer has been silently consumed by chemistry.",
+    'Floe generated',
+    true,
+    "The fluid does not wear out, it absorbs water; water lowers the boiling point, and the danger only shows under heat.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10005002,
+    'Career Skills',
+    'Brakes',
+    "What the brake pedal really multiplies",
+    "A friend marvels that a gentle press of your foot can stop two tons of moving steel and assumes the secret is just a very strong spring or motor behind the pedal. In a conventional hydraulic brake system, what actually lets a modest foot force clamp the wheels hard enough to stop the car?",
+    "Hydraulic leverage plus a vacuum booster: the incompressible fluid transmits your force to large-area caliper pistons (pressure acts over more area, so force multiplies), and the booster uses engine vacuum to amplify your push before it even reaches the fluid",
+    [
+      ["A powerful electric motor at each wheel does the clamping, and your foot just flips it on", "Conventional brakes are not motor-driven at each wheel; your foot force is mechanically and hydraulically multiplied, which is why a failed booster makes the pedal hard, not why the brakes refuse to switch on.", "Trace the force path: pedal to booster to master cylinder to fluid to pistons, all analog, no per-wheel motor."],
+      ["A strong return spring stores energy and snaps the pads shut when you press", "Springs in the system mainly retract pads and return the pedal; they do not supply clamping force, which comes from hydraulic pressure over piston area boosted by vacuum.", "Springs release the brakes; pressure times area applies them."],
+      ["The car's momentum is redirected into the pedal, so faster speeds give you more braking force for free", "Momentum is what you are trying to remove, not a power source feeding the pedal; clamping force comes from your boosted foot pressure acting through the fluid, independent of speed.", "Braking force comes from the hydraulic clamp you command, not from the kinetic energy you are shedding."],
+    ],
+    "A light foot stops a heavy car through two stacked multipliers. First a vacuum booster uses the engine's intake vacuum to amplify your push; then the incompressible fluid carries that force to caliper pistons whose larger combined area turns pressure into a much bigger clamping force (the same pressure over more area means more force). The elegant point is that no energy is created: the system is a force amplifier, trading distance and area for force, exactly like a lever or a syringe. That also explains a classic surprise, that with the engine off the pedal goes rock-hard, because the vacuum booster is the part doing the gentle-foot magic.",
+    'Floe generated',
+    true,
+    "Think syringe and lever, not motor: pressure over a larger piston area multiplies force, and a vacuum booster pre-amplifies your foot.",
+    { challengeRating: 6 },
+  ),
+  // ----------------------------------------------------------------------------
+  // Tires & Pressure
+  // ----------------------------------------------------------------------------
+  makeSimpleQuestion(
+    10005003,
+    'Career Skills',
+    'Tires & Pressure',
+    "Why a soft tire fails by heat, not wear",
+    "Two drivers each ignore a tire that is 30 percent underinflated. One worries the tread will simply wear thin over many months. The other suddenly suffers a highway blowout within an hour on a hot day. What mechanism explains how chronic low pressure causes a sudden, violent blowout rather than just slow wear?",
+    "With too little air to carry the load, the sidewalls flex far more on every rotation, and that constant flexing generates heat that builds up until the rubber and internal plies weaken and let go all at once, a thermal-fatigue failure rather than gradual tread loss",
+    [
+      ["The tire slowly loses all its air through a leak and then the bare rim cuts it open", "A blowout from underinflation usually happens with air still in the tire: it is heat from sidewall flexing that destroys the structure, not the rim slicing a flat casing.", "The killer is heat from flex, not a slow leak ending in a rim cut."],
+      ["Lower pressure makes the tire spin faster, and the extra speed alone tears it apart", "A softer tire does not spin faster; if anything its larger contact patch adds drag. The damage comes from repeated flexing heating the rubber, not from increased rotational speed.", "Underinflation adds heat-generating flex, not rotational speed."],
+      ["Low pressure makes the rubber brittle and cold, so it cracks like glass on impact", "The failure mode is the opposite of cold and brittle: the sidewall runs hot from over-flexing until it softens and the plies separate, then rupture under the internal pressure.", "The dangerous direction is hot and weakening, not cold and brittle."],
+    ],
+    "An underinflated tire cannot support the car on air pressure alone, so the casing takes up the slack by flexing further with every revolution. Flexing rubber dissipates energy as heat, and at highway speed those cycles come hundreds of times a second, so heat accumulates faster than it can escape. Eventually the bonds between the internal plies weaken and the tire ruptures, often with air still inside. The lingering insight is that the visible symptom (a slightly low tire) hides an invisible, accelerating thermal process: the danger is not how worn it looks but how hot it is getting, which is why low pressure plus heat plus speed is the classic blowout recipe.",
+    'Floe generated',
+    true,
+    "Ask what flexing rubber does with energy: it makes heat. The failure is thermal fatigue from over-flex, not slow tread wear.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10005004,
+    'Career Skills',
+    'Tires & Pressure',
+    "What actually holds the car up",
+    "Someone insists that the rubber and steel belts of a tire are what bear the weight of the car, so a tougher, thicker tire is the main thing keeping you off the ground. In a normal pneumatic tire, what truly carries the vehicle's load, and why does that reframing matter for tire pressure?",
+    "The compressed air inside carries the load (load capacity is essentially pressure times the contact-patch area); the rubber casing mainly contains that air and grips the road, which is why the right pressure, not just thick rubber, determines how much weight the tire can safely support",
+    [
+      ["The steel belts and tread are the structural support, so pressure barely affects how much load a tire can bear", "Belts and tread provide grip and protect the casing, but the air pressure acting over the contact patch is what actually holds up the corner of the car, so pressure directly sets load capacity.", "Separate the job of gripping and protecting (rubber and belts) from the job of bearing load (air pressure)."],
+      ["The wheel rim bears the weight and the tire is just a cushion wrapped around it", "The rim transmits force but the air column between rim and road is what supports the load; deflate the tire and the rim sits down even though the rim itself never changed.", "Let the air out and the rim drops: proof the air, not the metal, was holding the load."],
+      ["Vehicle weight is held by the suspension springs alone, so tire pressure is only about ride comfort", "Springs manage how the body rides over the wheels, but each wheel still ultimately stands on a column of pressurized air, so pressure governs load capacity, not just comfort.", "Springs handle the body-over-wheel motion; the air still carries the wheel-to-road load."],
+    ],
+    "A pneumatic tire is really a flexible pressure vessel: the load a corner of the car imposes is balanced by the air pushing out over the contact patch, so load capacity is roughly pressure multiplied by that contact area. The rubber and belts contain the air and grip the road, but they are not primarily what holds the car up. This reframing dissolves a lot of confusion: it explains why a thicker tire is not a substitute for correct pressure, why the door-jamb placard specifies a number rather than 'as hard as possible', and why a slow leak is dangerous long before the tire looks flat, because you are quietly removing the very thing bearing the weight.",
+    'Floe generated',
+    true,
+    "Imagine letting the air out: the rim drops even though the rubber is unchanged. The air column, sized by pressure, carries the load.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10005005,
+    'Career Skills',
+    'Tires & Pressure',
+    "Why more pressure can mean less grip",
+    "Hoping for a 'firmer, safer' feel, a driver pumps the tires well above the placard pressure. The ride does feel tighter, but in an emergency stop on a damp road the car takes longer to halt and feels skittish. Why does over-inflation, which sounds like the cautious choice, actually reduce braking grip?",
+    "Too much pressure bows the tread outward so only a smaller central strip touches the road, shrinking the contact patch; less rubber on the ground means less friction, longer braking distances, and worse wet grip, plus accelerated center wear",
+    [
+      ["Higher pressure makes the rubber harder, and harder rubber always grips better, so the result is a measurement error", "Over-inflation does not improve grip; it shrinks the contact patch by crowning the tread, so less rubber meets the road and stopping distances genuinely grow, especially when wet.", "Grip scales with effective contact, and a crowned, over-inflated tread reduces that contact."],
+      ["The extra air makes the tire lighter, so the car floats and that is what lengthens the stop", "Pressure changes the contact-patch shape, not the tire's meaningful weight; the longer stop comes from less rubber touching the road, not from a lighter, floating tire.", "Focus on contact-patch area, not an imagined weight change, to explain the lost grip."],
+      ["Over-inflation only causes a harsh ride and has no real effect on braking or wear", "It does harden the ride, but it also shrinks the contact patch, lengthening stops and wearing the tread center prematurely, so the effects are safety- and cost-relevant, not cosmetic.", "The ride harshness is the obvious symptom; the shrunken contact patch is the consequential one."],
+    ],
+    "Grip depends on how much rubber genuinely meets the road, and the contact patch has an ideal size set by the placard pressure that lets the load spread the tread flat. Pump in too much air and the tread crowns: the center bulges down while the shoulders lift, so a narrower strip carries everything. Less effective contact means less friction, longer stops, and a nervous feel in the wet, with the center wearing out early as a bonus. The counterintuitive lesson is that 'more' is not 'safer' here; the engineers chose a specific pressure to optimize a tradeoff, and pushing past it sacrifices the very grip the driver was trying to gain.",
+    'Floe generated',
+    true,
+    "Grip tracks the contact-patch area. Over-inflation crowns the tread so only a thin center strip touches, shrinking that patch.",
+    { challengeRating: 6 },
+  ),
+  // ----------------------------------------------------------------------------
+  // Battery, Alternator & Starter
+  // ----------------------------------------------------------------------------
+  makeSimpleQuestion(
+    10005006,
+    'Career Skills',
+    'Battery, Alternator & Starter',
+    "The car that dies the moment you unhook the cables",
+    "You jump-start a stranded car. It fires right up while the cables are connected, but the instant you remove the jumper cables the engine sputters and dies. Your friend concludes the battery must be completely dead and just needs replacing. What does this specific symptom most likely reveal instead?",
+    "A failing alternator: once running, the engine should be powered and the battery recharged by the alternator, so a car that runs only while fed external current and dies when unhooked is not generating its own electricity",
+    [
+      ["The battery is simply dead and a new battery alone will fix it", "A merely dead battery lets the car keep running after a jump because the alternator then powers everything; dying the instant the cables come off points at the alternator failing to generate, not the battery.", "Test which part stops working unaided: surviving the unhook implicates the battery, dying implicates the alternator."],
+      ["The starter motor is broken, which is why the engine cannot stay running", "A starter only spins the engine to life and then disengages; it has no role in keeping the engine running, so a stall after disconnect is a charging problem, not a starter problem.", "The starter's job ends once the engine catches; staying alive is the charging system's job."],
+      ["The spark plugs are worn out, so the engine cannot sustain combustion on its own power", "Worn plugs cause rough running or misfires regardless of the cables, but they would not make the engine cleanly die exactly when external electrical power is removed; that timing fingers the alternator.", "Tie the symptom to its trigger: dying on cable removal is an electrical-supply timing clue, not a combustion-quality one."],
+    ],
+    "This symptom is a clean natural experiment. While the cables are attached, the donor car supplies the electricity the engine's ignition and electronics need; remove that supply and the patient must generate its own, which is the alternator's job. If it dies the moment it loses the external feed, the alternator is not producing current. The deep idea is that diagnosis often comes from controlling what you remove and watching exactly when the failure appears: the battery starts the car, but the alternator sustains it, so 'runs when fed, dies when unfed' isolates the generator, not the storage.",
+    'Floe generated',
+    true,
+    "Ask what keeps a running engine alive: the alternator, not the battery. Dying the instant external power is removed points there.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10005007,
+    'Career Skills',
+    'Battery, Alternator & Starter',
+    "Why the battery is a buffer, not a fuel tank",
+    "A driver pictures the car battery like a fuel tank: it stores a fixed charge that slowly drains as you drive until empty, and refilling means plugging in. For an ordinary running gasoline car, why is 'battery as a draining tank' the wrong mental model?",
+    "Once the engine runs, the alternator continuously generates electricity to power the car AND top the battery back up, so the battery acts as a buffer and starting reservoir that is constantly refilled while driving, not a tank that simply depletes",
+    [
+      ["The model is right: the battery steadily drains while driving and only a wall charger refills it", "In a normal running gas car the alternator refills the battery as you drive, so it does not steadily deplete; wall charging is for EVs or for a car whose charging system has failed.", "While the engine runs, the alternator is replenishing the battery, so it is not just draining."],
+      ["The battery never discharges at all because the alternator powers everything and the battery is just dead weight", "The battery is genuinely used to crank the engine and to buffer surges, then recharged; calling it dead weight ignores its starting and stabilizing roles.", "It does discharge to start and to smooth loads, then gets recharged: a buffer, not dead weight."],
+      ["The battery slowly converts gasoline into electricity by itself, so it refills from the fuel tank directly", "The battery stores no fuel and burns nothing; the engine turns the alternator, which generates the electricity, so the fuel-to-electricity path runs through the alternator, not the battery.", "Electricity comes from the engine-driven alternator, not from the battery consuming fuel."],
+    ],
+    "The fuel-tank mental model misleads because a running gas car has its own generator: the engine spins the alternator, which both powers the car's electronics and pushes charge back into the battery. So the battery is really a buffer and a starting reservoir, discharged hard for a few seconds to crank the engine and then steadily refilled, rather than a tank that empties over a trip. This reframes several real situations: short trips can chronically undercharge a battery because the alternator never gets enough time to replenish what starting consumed, and a battery that dies overnight while the car sat may simply have a parasitic drain, not a worn-out 'tank'. The buffer view, not the tank view, predicts how the system actually behaves.",
+    'Floe generated',
+    true,
+    "A running engine generates its own power via the alternator. The battery is a buffer that starts the car and is refilled while driving.",
+    { challengeRating: 6 },
+  ),
+]

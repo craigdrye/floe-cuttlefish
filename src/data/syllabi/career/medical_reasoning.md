@@ -54,7 +54,7 @@ There is no single exam behind this course; it is the reasoning floor under clin
 
 ## Chapter 7: Communicating Uncertainty, Documentation, and Handoffs
 - **Core questions**: What does the next clinician absolutely need to know to keep this patient safe? Which uncertainty must be explicit rather than implied? What follow-up failure could turn a near-miss into harm?
-- **Key concepts**: the assessment-and-plan as reasoning made visible (not a problem list); calibrated uncertainty language (likely / cannot exclude / pending) instead of false confidence or vague hedging; structured handoff (e.g., IPASS-style) carrying problem representation, differential, pending data, contingencies, and explicit if-then escalation triggers; closed-loop communication; safety-net / return-precaution instructions as a documented deliverable.
+- **Key concepts**: the assessment-and-plan as reasoning made visible (not a problem list); calibrated uncertainty language (likely / cannot exclude / pending) instead of false confidence or vague hedging; structured handoff (e.g., I-PASS: illness severity, patient summary, action list, situation awareness/contingency planning, synthesis by receiver) carrying problem representation, differential, pending data, contingencies, and explicit if-then escalation triggers; closed-loop communication; safety-net / return-precaution instructions as a documented deliverable.
 - **Applied skills**: write a handoff note containing the problem representation, prioritized differential, pending data, contingency plan, and a named escalation trigger; convert an overconfident assessment into calibrated uncertainty language without becoming uselessly vague.
 - **Common traps**: a handoff that transmits the conclusion but drops the danger and the pending items; documentation that hides uncertainty to look decisive; "follow up as needed" instead of a specific if-then safety net; assuming a verbal handoff was received without closing the loop.
 
@@ -78,3 +78,5 @@ Work three simulated cases end to end and produce the reasoning record for each.
 - AAMC Core Entrustable Professional Activities for Entering Residency: https://www.aamc.org/about-us/mission-areas/medical-education/cbme/core-epas
 - Society to Improve Diagnosis in Medicine: https://www.improve-dx.org/
 - CDC Core Elements of Hospital Diagnostic Excellence: https://www.cdc.gov/patient-safety/hcp/hospital-dx-excellence/index.html
+- I-PASS handoff bundle (AHRQ PSNet primer on the mnemonic and its five elements): https://psnet.ahrq.gov/issue/i-pass-mnemonic-standardize-verbal-handoffs
+- Diagnosis Error Evaluation and Research (DEER) taxonomy / no-fault vs system vs cognitive error classification (NCBI, Improving Diagnosis ch. 2): https://www.ncbi.nlm.nih.gov/books/NBK338594/

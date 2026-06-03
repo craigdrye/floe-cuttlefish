@@ -2,7 +2,7 @@
 **ID**: `mpre` · **Discipline**: Law (United States)
 
 ## Course Aim
-The Multistate Professional Responsibility Examination is not a vibe check. It is sixty scored multiple-choice questions delivered in two hours by the National Conference of Bar Examiners, scaled 50-150, and almost every U.S. jurisdiction requires a score of 80, 85, or 86 to sit for or be admitted to the bar. The fact pattern will name an attorney, name a client, name a third party, name a tribunal, and quietly bury one dispositive sentence in the middle. The question stem will read "Is the attorney subject to discipline?" or "Was the lawyer's conduct proper?" — and four polished answer choices will compete for your attention while exactly one of them tracks the ABA Model Rules.
+The Multistate Professional Responsibility Examination is not a vibe check. It is sixty multiple-choice questions delivered in two hours by the National Conference of Bar Examiners — fifty of them scored, ten unscored pretest items indistinguishable from the rest, so you answer all sixty — scaled 50-150, and almost every U.S. jurisdiction requires a score of 80, 85, or 86 to sit for or be admitted to the bar. The fact pattern will name an attorney, name a client, name a third party, name a tribunal, and quietly bury one dispositive sentence in the middle. The question stem will read "Is the attorney subject to discipline?" or "Was the lawyer's conduct proper?" — and four polished answer choices will compete for your attention while exactly one of them tracks the ABA Model Rules.
 
 This course trains the rule-and-rules detective. You do not reason from what feels fair, from what your bar-prep professor said in passing, or from what your firm actually does. You reason from the text of the ABA Model Rules of Professional Conduct (Rules 1.0-8.5), the ABA Model Code of Judicial Conduct (Canons 1-4), and the federal practice rules the NCBE explicitly tests — grand-jury secrecy, federal disqualification statutes, agency-specific overlays. When the rule says "shall," "may," "shall not," or "should," that word controls the answer.
 
@@ -66,6 +66,7 @@ Suggested cadence: 3-6 weeks, approximately 50 hours total. Use a BarBri or Them
 - Fees (Rule 1.5): reasonableness factor list (1.5(a)); writing requirement for contingent fees (1.5(c)); prohibited contingencies in criminal and domestic relations matters (1.5(d)); fee-splitting among lawyers in different firms (1.5(e))
 - Diminished-capacity clients (Rule 1.14) — protective action and confidentiality limits
 - Termination (Rule 1.16): mandatory vs. permissive withdrawal; tribunal permission; refund of unearned fees and return of file
+- Inquire-and-assess at intake and during the matter (Rule 1.16(a), as amended by ABA Resolution 100 in 2023): a lawyer must reasonably inquire into the facts and circumstances of a representation and must decline or withdraw if the client seeks to use the lawyer's services to commit or further a crime or fraud (see ABA Formal Opinion 513)
 
 **Applied skills**
 - Identify when Rule 1.18 confidentiality and disqualification attach to a non-client consultation
@@ -304,7 +305,7 @@ Suggested cadence: 3-6 weeks, approximately 50 hours total. Use a BarBri or Them
 **Authoritative sources:** ABA Model Code of Judicial Conduct (2007, as amended); Caperton v. A.T. Massey Coal Co.; 28 U.S.C. § 455 (federal disqualification statute, separately tested).
 
 ## Capstone: Exam-Day Discipline
-**Pacing.** Sixty scored questions in 120 minutes is exactly 2:00 per question. Plan 1:50 per question with a 10-minute buffer for review. Never spend more than 3:00 on any single question on the first pass — flag and return.
+**Pacing.** Sixty questions (fifty scored, ten unscored pretest — answer all of them) in 120 minutes is exactly 2:00 per question. Plan 1:50 per question with a 10-minute buffer for review. Never spend more than 3:00 on any single question on the first pass — flag and return.
 
 **Reading the call.** Underline (mentally) the precise question stem: "Is the attorney subject to discipline?" tests Model Rules violations. "Was the conduct proper?" tests whether the action was permitted, not whether it was discipline-worthy. "Subject to civil liability" tests malpractice/fiduciary-duty doctrine, which is separate. "Subject to disqualification" tests motion-practice consequences, which is separate. Mismatching the call is the most common preventable error.
 
@@ -313,3 +314,9 @@ Suggested cadence: 3-6 weeks, approximately 50 hours total. Use a BarBri or Them
 **Heuristics that work.** "Shall" answers usually win when the rule contains "shall." Permissive "may" answers usually win when the rule contains "may." Answers that name a specific rule (1.6, 1.7, 3.3) and a specific duty almost always beat answers that invoke "common sense" or "fairness." Answers that introduce a fact not in the stem are wrong.
 
 **Heuristics that fail.** "Whichever feels most ethical" is not a rule. "What my firm actually does" is not a rule. Confidentiality (1.6) and privilege are not the same. Discipline (Rules) and disqualification (case law plus 3.7/1.9) are not the same.
+
+## Research Notes
+- NCBE MPRE exam page (https://www.ncbex.org/exams/mpre): confirms 60 multiple-choice questions, 50 scored + 10 unscored pretest, two-hour testing time, scale 50-150.
+- NCBE MPRE Subject Matter Outline (https://www.ncbex.org/sites/default/files/2023-01/MPRE_Subject_Matter_Outline.pdf): the twelve weighted categories and content-weight ranges used in the Exam Map (all current as of 2025-2026).
+- UWorld MPRE Outline overview (https://legal.uworld.com/bar-exam/mpre-outline/): cross-check of all twelve category percentage ranges (Conflicts 12-18%, Client-Lawyer Relationship 10-16%, Litigation 10-16%, etc.).
+- ABA news, guidance on revised Model Rule 1.16 (https://www.americanbar.org/news/abanews/aba-news-archives/2024/08/aba-issues-guidance-lawyers-diligence/): ABA Resolution 100 (2023) inquire-and-assess duty and Formal Opinion 513 (2024) on a lawyer's diligence to avoid assisting client crime/fraud.

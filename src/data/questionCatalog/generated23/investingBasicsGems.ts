@@ -1,0 +1,118 @@
+import { makeSimpleQuestion } from '../base'
+import type { Question } from '../types'
+
+export const investingBasicsGems: Question[] = [
+  // ===== Fees, Costs, and What They Steal =====
+  makeSimpleQuestion(
+    10048000,
+    'Career Skills',
+    'Fees, Costs, and What They Steal',
+    'Why a 1% fee is not a 1% loss',
+    "Two friends each invest $100,000 and never add another dollar. Both portfolios grow at 7% a year before costs for 30 years. Anna pays a fund that charges 0.1% per year; Ben pays one that charges 1.0%. Ben shrugs: 'It's only 0.9% more a year, so over 30 years maybe I lose a few percent of my pot.' When they compare balances at the end, Ben has lost roughly 22% of the wealth Anna ended up with. How can a 0.9% annual difference quietly amount to nearly a quarter of the final pile?",
+    "The fee is charged every year on the whole balance, so each year's fee permanently removes money that would otherwise have compounded for all remaining years; the early fees lose their decades of growth, so the gap widens far faster than the headline percentage suggests",
+    [
+      ["It can't; a 0.9% yearly fee over 30 years is about 0.9% times 30, roughly 27% of his contributions, but only of the original $100,000", "This treats the fee as a flat slice of the starting deposit, but the fee is levied on the growing balance every year and, worse, each dollar taken also forfeits all its future compounding.", "The damage is not fee times years on the deposit; it is the lost compounding on every dollar the fee removed, which is why it reaches ~22% of the much larger final balance."],
+      ["The fund must have underperformed the market by 0.9% in returns; fees alone could never compound into a 22% gap", "Both portfolios earn the same 7% gross here; the entire 22% gap comes from the fee compounding against him, with no difference in skill or returns at all.", "Identical gross returns still produce a vast spread, because a recurring percentage fee is itself a compounding force working in reverse."],
+      ["The 22% figure must include inflation or taxes; the pure fee effect would be tiny on a buy-and-hold account", "No taxes or inflation are involved; the erosion is purely the mechanical result of skimming a percentage of a compounding balance year after year.", "The fee alone does the damage, because money removed early never gets to multiply, and that foregone growth dwarfs the fee itself."],
+    ],
+    "A percentage fee feels small because we compare it to a single year, but compounding runs in both directions: the same engine that multiplies your money also multiplies every dollar a fee removes. A dollar skimmed in year one was not just a dollar lost; it was the 29 years of growth that dollar would have produced. The unsettling implication is that the most expensive thing about a high fee is not what it takes, but the silent, exponential future it quietly cancels.",
+    'Floe generated',
+    true,
+    'Ask what each dollar removed by the fee would have grown into if it had stayed invested.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10048001,
+    'Career Skills',
+    'Fees, Costs, and What They Steal',
+    'The asymmetry of fees and returns',
+    "A salesperson pitches a fund: 'Yes, our 1.5% annual fee is higher, but our managers are excellent — over time the fee is a rounding error next to the returns they generate.' A skeptical investor notices something the pitch glosses over: the fee and the returns are not on equal footing. What is the structural asymmetry that makes a guaranteed 1.5% fee a heavier burden than it sounds against an uncertain return?",
+    "The fee is certain and charged every single year regardless of performance, while the outperformance needed to justify it is uncertain and rare; so the investor pays the fee for sure but only sometimes (if ever) receives the extra return that was supposed to cover it",
+    [
+      ["There is no asymmetry: a 1.5% fee is simply netted against returns, so a good year easily absorbs it and a bad year cancels it out", "The fee is deducted in every year, including losing years where it deepens the loss; it does not 'cancel out' in down markets, so it is not symmetric with returns at all.", "A fee is a fixed certain cost in all states of the world, whereas the return it must beat is variable and frequently absent."],
+      ["The asymmetry favors the investor, because in a strong market the fee shrinks as a fraction of the gains", "Even when gains are large the fee is still a fixed percentage of the whole balance and compounds away future growth; the long-run evidence is that few managers clear that bar at all.", "The certain, recurring fee is the burden; the uncertain extra return that is supposed to offset it usually fails to appear."],
+      ["The fee only matters in the first year; after that it is baked into the price and no longer a drag", "The fee is re-charged on the entire balance every year for as long as you hold the fund, so it is a perpetual recurring drag, not a one-time entry cost.", "It is precisely the every-year recurrence of a certain fee against an uncertain return that creates the imbalance."],
+    ],
+    "Fees and returns look like two sides of the same ledger, but one side is guaranteed and the other is a hope. You pay the fee in good years and bad, in skilled hands and clumsy ones; you only collect the justifying outperformance if it actually materializes, which it usually does not. The deep point is that combining a certain cost with an uncertain benefit is a losing trade by construction, which is why low-cost investing wins not by predicting markets but by refusing to bet on a payoff that rarely arrives.",
+    'Floe generated',
+    true,
+    'Compare what you are guaranteed to pay with what you are merely hoping to receive.',
+    { challengeRating: 6 },
+  ),
+
+  // ===== Index vs Active, ETFs vs Mutual Funds =====
+  makeSimpleQuestion(
+    10048002,
+    'Career Skills',
+    'Index vs Active, ETFs vs Mutual Funds',
+    'Why most professionals lose to a dumb average',
+    "Over the 15 years ending in 2024, roughly 90% of actively managed U.S. large-cap funds — run by well-paid, highly trained professionals — underperformed a simple index fund that just buys the whole market and thinks about nothing. A newcomer is baffled: 'If these are the smartest investors alive, how can a brainless average beat almost all of them over the long run?' What is the core reason the index reliably wins?",
+    "Before fees, all investors together hold the market and so collectively earn exactly the market return; active managers as a group must therefore match the index minus their higher costs, so after fees the average active dollar must underperform — it is arithmetic, not a failure of intelligence",
+    [
+      ["Active managers are simply not as skilled as they claim, and the data shows the profession is mostly incompetent", "Skill is not the issue; even a room full of brilliant managers trading with each other still collectively owns the market, so their average return before costs equals the index, and fees then drag them below it.", "The shortfall is structural arithmetic about who owns the market, not a verdict on any manager's talent."],
+      ["Index funds secretly take less risk, so they win in calm markets but would lose badly in a downturn", "A total-market index carries full market risk and its long-run edge over active funds holds across booms and busts alike; the gap comes from costs, not from dodging risk.", "The index wins on cost arithmetic in all environments, not by quietly reducing exposure."],
+      ["It's survivorship: the index looks good only because the worst active funds get shut down and erased from the data", "Closing weak funds actually flatters the active average by removing losers, yet active funds still trail; the honest accounting makes their underperformance look better than reality, not worse.", "Even after survivorship bias helps the active side, costs still push the typical active dollar below the index."],
+    ],
+    "It feels like talent should beat a mindless average, but the market is a closed system: everyone's holdings sum to the whole market, so the average actively managed dollar must, before costs, earn exactly the market return — and after its higher fees and trading costs, less. The profound twist is that this is true no matter how brilliant the managers are; their collective genius cancels out, and only the cost difference survives. Indexing wins not by being smarter, but by being cheaper in a game where the average player cannot, by definition, beat the average.",
+    'Floe generated',
+    true,
+    'Ask what all investors added together must earn, and what separates the active group from the index after that.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10048003,
+    'Career Skills',
+    'Index vs Active, ETFs vs Mutual Funds',
+    'The tax bill you pay for other people leaving',
+    "Two funds track the exact same index and hold the exact same stocks: one is a mutual fund, the other an ETF. In a year when neither you nor most investors sell, your mutual fund mails you a 'capital gains distribution' you owe taxes on, while your ETF holding sticks you with nothing — in fact in 2024 only about 5% of ETFs paid out capital gains versus 43% of mutual funds. You never sold a share of either. Why does the mutual fund hand you a tax bill the ETF does not?",
+    "When other investors cash out of a mutual fund, the manager must sell underlying stocks for cash, realizing capital gains that get distributed to everyone still holding; an ETF lets departing investors be paid 'in kind' with shares of stock, so no sale happens inside the fund and no gain is triggered for those who stayed",
+    [
+      ["The ETF must simply hold lower-gain stocks, so there is less embedded profit to distribute", "Both funds hold identical stocks with identical embedded gains here; the difference is purely how each fund handles redemptions, not what it owns.", "Same holdings, same gains — the ETF avoids distributions through the in-kind redemption mechanism, not by owning different assets."],
+      ["Mutual funds are taxed more heavily by law, while ETFs enjoy a special legal exemption from capital gains", "There is no blanket tax exemption for ETFs; they fall under the same tax code but use an in-kind creation/redemption process that simply avoids realizing the gain in the first place.", "It is structure, not a legal loophole on rates: no sale inside the fund means no realized gain to pass on."],
+      ["You only get taxed because the mutual fund performed better that year, so the gain reflects superior returns", "Identical holdings mean identical performance; the distribution is triggered by other shareholders redeeming for cash, not by the fund doing anything better.", "The tax bill comes from other investors leaving and forcing sales, not from any difference in how the fund performed."],
+    ],
+    "We assume our own tax bill reflects our own choices, but inside a mutual fund the actions of strangers reach into your account: when they leave, the manager sells stock to pay them, and you inherit the taxable gain. The ETF's quiet genius is the in-kind redemption — departing investors are handed actual shares, so no sale occurs and the gain stays unrealized for those who remain. The deeper lesson is that two funds holding identical assets can produce very different after-tax results purely because of plumbing, reminding us that in investing, structure can matter as much as the securities themselves.",
+    'Floe generated',
+    true,
+    'Ask what physically has to happen inside each fund when a different investor decides to cash out.',
+    { challengeRating: 6 },
+  ),
+
+  // ===== Time, Compounding, and Dollar-Cost Averaging =====
+  makeSimpleQuestion(
+    10048004,
+    'Career Skills',
+    'Time, Compounding, and Dollar-Cost Averaging',
+    'Why slow and steady usually loses the race',
+    "Maria inherits $120,000. Her instinct, drummed in by years of advice praising 'dollar-cost averaging,' is to feed it into the market $10,000 a month over a year to avoid buying at a peak. Yet Vanguard's research across decades and markets found that investing the whole sum at once beat averaging it in roughly two-thirds of the time. If spreading purchases out reduces the risk of bad timing, why does it usually end up with less money?",
+    "Markets rise more often than they fall, so on average the money Maria keeps in cash while waiting to invest misses out on growth it would have captured if invested immediately; the averaging strategy spends much of the year under-exposed to a market that is usually climbing",
+    [
+      ["Dollar-cost averaging fails because it forces you to buy more shares when prices are high", "Averaging actually buys more shares when prices are low and fewer when high; its drawback is not bad share-timing but that it leaves cash uninvested in a market that typically rises.", "The cost is opportunity: cash on the sidelines misses the market's usual upward drift, not any quirk of how shares are bought."],
+      ["Lump-sum wins only because it avoids the transaction fees of making twelve separate purchases", "The advantage is far larger than trading costs and holds even with zero fees; it comes from being fully invested sooner in a market that more often goes up than down.", "It is time in the market, not saved commissions, that drives the lump-sum edge."],
+      ["Averaging in must guarantee a worse average purchase price than buying all at once", "Averaging often secures a lower average price in choppy or falling markets; it still tends to trail simply because, more often than not, prices are higher later, so waiting costs growth.", "The issue is the market's typical rise during the waiting period, not a built-in worse purchase price."],
+    ],
+    "Dollar-cost averaging feels prudent because it tames the fear of buying at the top, and over a single frightening year that comfort is real. But the long-run math is humbling: since markets trend upward more often than not, time out of the market is itself a risk, and the 'safe' choice quietly forfeits expected growth. The lasting insight is that dollar-cost averaging is best understood not as a way to make more money but as a way to sleep better — a deliberate trade of expected return for emotional steadiness, which is a perfectly rational bargain as long as you know that is the trade you are making.",
+    'Floe generated',
+    true,
+    'Ask where the money sits while you wait, and which direction the market moves most of the time.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10048005,
+    'Career Skills',
+    'Time, Compounding, and Dollar-Cost Averaging',
+    'The decade that did almost nothing',
+    "Two siblings each invest $5,000 a year at 7% growth. Ben starts at 25 and stops completely at 35 — ten years of contributions, then he never adds another cent. Anna waits until 35 and then diligently invests $5,000 every year until she retires at 65 — thirty years of contributions. At 65, Ben, who put in far less money over far fewer years, has roughly as much as or more than Anna. How can ten early years beat thirty later ones?",
+    "Ben's early contributions had decades longer to compound, and compounding grows fastest in the final years on the largest balance; the head start let his money double again and again, so the extra time outweighed Anna's much larger total contributions",
+    [
+      ["Ben must have earned a higher rate of return; equal contributions over more years can't lose to fewer years", "Both earn the same 7%; the entire difference is time. Ben's earliest dollars compound for forty years, and most of an investment's final value is growth piled on growth in the last stretch.", "Identical returns still favor Ben because his money started multiplying decades earlier, and late compounding on a big base dwarfs fresh contributions."],
+      ["It's a fluke of the example; over any realistic period the person who invests three times as much money always ends up ahead", "It is not a fluke but a standard result of exponential growth: starting early can permanently beat contributing more later, because each early dollar enjoys the most doublings.", "The early-start advantage is a robust feature of compounding, not a quirk of these particular numbers."],
+      ["Anna falls behind only because she pays more in fees by investing for more years", "No fees are involved; Anna trails purely because she began later, so her dollars have far fewer years to compound despite there being more of them.", "The gap is created by lost time, not by any cost difference between the two."],
+    ],
+    "Compounding is not a straight line; it is a curve that barely lifts off for years and then explodes, which means the dollars invested earliest do almost all the heavy lifting at the end. Ben's ten early years bought him the steepest, most valuable part of the curve, while Anna's larger contributions arrived too late to ride it fully. The disquieting lesson is that in compounding, when you start can matter more than how much you invest — time is the one input you can never buy back, and its absence is the single most expensive mistake a young investor can make.",
+    'Floe generated',
+    true,
+    'Ask how many times each sibling\'s earliest dollar gets to double before age 65.',
+    { challengeRating: 6 },
+  ),
+]

@@ -31,7 +31,7 @@ Suggested cadence: 16-20 weeks, 300+ total hours, 5-6 study blocks per week, and
 **Core questions:** What does a fiduciary-ish professional owe clients, employers, markets, and the profession? When law, firm policy, and CFA Institute Standards disagree, what action best preserves integrity?
 
 **Key concepts**
-- Code of Ethics and Standards I-VII: professionalism, capital market integrity, duties to clients and employers, investment analysis, conflicts, and responsibilities as a CFA Institute member or candidate
+- Code of Ethics and Standards I-VII: professionalism, integrity of capital markets, duties to clients, duties to employers, investment analysis/recommendations and actions, conflicts of interest, and responsibilities as a CFA Institute member or candidate
 - Material nonpublic information, misrepresentation, suitability, loyalty, priority of transactions, referral fees, and performance presentation
 - Ethical decision-making frameworks: identify stakeholders, duties, conflicts, and required disclosures
 
@@ -307,3 +307,4 @@ The capstone is not meant to predict a stock price with cosmic precision. It is 
 - CFA Institute, "CFA Program Level I exam": official exam format, 180 multiple-choice questions, two 135-minute sessions, 90 seconds per question guidance, and current topic weights. https://www.cfainstitute.org/programs/cfa/exam/level-i
 - CFA Institute, "2026 Level I Topic Outlines": official learning outcome outline across Quantitative Methods, Economics, Corporate Issuers, Financial Statement Analysis, Equity, Fixed Income, Derivatives, Alternative Investments, Portfolio Management, and Ethics. https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/2026-l1-topics-combined.pdf
 - CFA Institute, "Candidate Body of Knowledge": official topic-area framework and practice-analysis background. https://www.cfainstitute.org/programs/cfa-program/candidate-resources/cbok
+- CFA Institute, "Code of Ethics and Standards of Professional Conduct": authoritative enumeration of the seven Standards (I Professionalism, II Integrity of Capital Markets, III Duties to Clients, IV Duties to Employers, V Investment Analysis/Recommendations and Actions, VI Conflicts of Interest, VII Responsibilities as a CFA Institute Member or Candidate). https://www.cfainstitute.org/standards/professionals/code-ethics-standards

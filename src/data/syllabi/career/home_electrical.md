@@ -43,7 +43,7 @@ Floe routes a learner here when they want practical, real-world home competence 
 ## Chapter 4: GFCI & AFCI Protection
 **Core questions**: What does a GFCI detect and where is it required? What does an AFCI catch that a regular breaker misses? Why test a GFCI monthly? How can a GFCI protect an ungrounded outlet?
 
-**Key concepts**: ground-fault current imbalance, milliamp shock thresholds, arc-fault detection, wet-location requirements, dual-function breakers, TEST/RESET, GFCI in ungrounded homes.
+**Key concepts**: ground-fault current imbalance, the Class A 4–6 mA trip threshold, arc-fault detection, wet-location requirements, dual-function breakers, TEST/RESET, GFCI in ungrounded homes.
 
 **Applied skills**: Decide which outlets need GFCI protection; explain the distinct jobs of GFCI (shock) vs AFCI (fire); reset a downstream GFCI feeding a dead outlet.
 
@@ -107,6 +107,9 @@ Floe routes a learner here when they want practical, real-world home competence 
 Learners pull the whole course together around a realistic home scenario. Given a house with a labeled (and partly mislabeled) panel, a mix of outlets and circuits, and a punch list of tasks, they: read the panel and identify circuit types (including the 240 V double-pole); run the full de-energize, lock-out, verify-dead ritual; correctly replace a switch and an outlet (right terminals, sound connections, no reversed polarity); choose appropriate GFCI/AFCI protection for the right locations; estimate the running cost of the home’s biggest loads from the meter; and, crucially, triage the punch list into "safe DIY," "needs more learning," and "stop and call a licensed electrician" (new circuit, aluminum wiring, scorched mystery splice). The capstone rewards not just correct wiring but correct judgment, the savvy to know which jobs are theirs and which are a pro’s.
 
 ## Research Notes
-- Course content reflects standard US residential practice: NFPA 70 (National Electrical Code) conventions for GFCI/AFCI placement, breaker-to-wire ampacity matching, and grounding/bonding. Learners are reminded that local code and permitting governs real work.
+- Course content reflects standard US residential practice: NFPA 70 (National Electrical Code) conventions for GFCI/AFCI placement, breaker-to-wire ampacity matching, and grounding/bonding. Learners are reminded that local code and permitting governs real work, and that adopted code editions vary by jurisdiction (states adopt the NEC on different cycles).
+- The trend across recent NEC cycles (2020 → 2023 → 2026) is steadily expanding required GFCI/AFCI coverage: GFCI now reaches a broader set of 125 V–250 V receptacles (e.g., the 2023 expansion to all kitchen and laundry receptacles, and the 2026 expansion to indoor receptacles within 6 ft of any sink and outdoor outlets up to 60 A). The course teaches the durable principle (GFCI guards people from shock; AFCI guards wiring from arc-fault fires) rather than any single edition's exact location list.
+- A Class A GFCI (the residential type, per UL 943) is defined to trip on a ground-fault imbalance of 6 mA or more and to hold below 4 mA — the basis for the "milliamps can kill, that's why GFCIs trip so fast" framing.
 - Safety framing draws on widely taught electrical-safety practice: de-energize at the source, lockout/tagout, verify-dead with a validated tester ("live-dead-live"), and the one-hand rule for working near possibly-live equipment.
 - Hazard chapters reflect commonly documented home fire causes (arc faults, loose/backstab connections, aluminum branch wiring, overloaded circuits, misused extension cords) as emphasized by fire-safety and electrical-safety education resources.
+- Sources consulted: NFPA "Key Changes in the 2026 NEC" (nfpa.org); Legrand and ExpertCE summaries of NEC 2023 §210.8 GFCI rule changes; ExpertCE / electricallicenserenewal.com on NEC §210.12 AFCI dwelling-unit locations; UL 943 Class A 4–6 mA trip definition (ECMag, InterNACHI).

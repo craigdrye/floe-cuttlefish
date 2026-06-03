@@ -11,7 +11,7 @@ By the end, a learner should be able to run a product opportunity from first sig
 ## Course Design Notes
 The prior syllabus had a strong practical spine (discovery, prioritization, metrics, cross-functional decisions) but three weaknesses this rewrite fixes. First, it had **no Common Traps** anywhere — yet the difference between a junior and senior PM is mostly which traps they have learned to smell, so every chapter now names the failure modes explicitly. Second, several chapters listed concepts without the **applied artifact** the learner should be able to produce; each chapter now states a concrete Applied skill. Third, it under-specified the **quantitative literacy** a modern PM needs (funnel math, retention denominators, RICE arithmetic, NPS, experiment significance), which is now distributed across Chapters 4 and 5.
 
-Modern practice is woven in deliberately: continuous discovery and opportunity solution trees (Torres), the Sean Ellis 40% product-market-fit test, the peeking problem and novelty effect in experimentation, staged rollouts via feature flags/canary/dogfooding, and the AI-era reality that "add AI" is now the dominant distraction-disguised-as-strategy. Chapters are scoped so each maps cleanly to a question bank chapter, easing assessment authoring.
+Modern practice is woven in deliberately: continuous discovery and opportunity solution trees (Torres), Cagan's product operating model (empowered teams given problems not solutions), the Sean Ellis 40% product-market-fit test, the peeking problem and novelty effect in experimentation, and staged rollouts via feature flags/canary/dogfooding. Two AI-era realities are kept distinct: "add AI" as the dominant distraction-disguised-as-strategy (Ch.3), and the genuinely new craft of shipping probabilistic features — offline/online evals, dual product-and-model metrics, and trust/guardrails for non-deterministic output (Chs.5-6). Chapters are scoped so each maps cleanly to a question bank chapter, easing assessment authoring.
 
 ## Chapter 1: The PM Role and Product Operating System
 **Core questions**
@@ -67,7 +67,7 @@ Modern practice is woven in deliberately: continuous discovery and opportunity s
 - What could improve the headline metric while harming users or the business?
 - What experiment teaches us fastest and most honestly?
 
-**Key concepts**: north-star vs input vs guardrail metrics; activation and the "aha" moment; conversion and funnel analysis (largest percentage drop between adjacent stages); retention (returning users ÷ original cohort) and cohort curves; leading vs lagging indicators; NPS = %promoters − %detractors; testable hypotheses; A/B testing, statistical significance and sample size, the peeking problem, and the novelty effect.
+**Key concepts**: north-star vs input vs guardrail metrics; activation and the "aha" moment; conversion and funnel analysis (largest percentage drop between adjacent stages); retention (returning users ÷ original cohort) and cohort curves; leading vs lagging indicators; NPS = %promoters − %detractors; testable hypotheses; A/B testing, statistical significance and sample size, the peeking problem, and the novelty effect; for AI/ML features, dual success metrics that pair a product outcome with a model-quality signal, plus offline and online evals (including LLM-as-judge) to decide whether the model is good enough to ship.
 
 **Applied skills**: Build a measurement plan (events, metric definitions, expected movement, guardrails, decision rules). Diagnose a funnel and compute retention/NPS. Write a falsifiable product hypothesis.
 
@@ -79,7 +79,7 @@ Modern practice is woven in deliberately: continuous discovery and opportunity s
 - What can be cut without destroying the learning goal?
 - Which technical constraint actually changes the product decision?
 
-**Key concepts**: lightweight PRD / opportunity brief, problem vs solution framing, user stories and acceptance criteria, non-goals, design critique, technical feasibility and constraints, discovery-to-delivery handoff, backlog refinement, release slices, Wizard-of-Oz and concierge tests.
+**Key concepts**: lightweight PRD / opportunity brief, problem vs solution framing, user stories and acceptance criteria, non-goals, design critique, technical feasibility and constraints, discovery-to-delivery handoff, backlog refinement, release slices, Wizard-of-Oz and concierge tests; for probabilistic (AI) features, acceptance criteria expressed as eval thresholds and failure-mode handling rather than deterministic pass/fail, plus fallback and human-in-the-loop design.
 
 **Applied skills**: Write a PRD with problem, users, scope, non-goals, risks, open questions, analytics, and rollout plan. Define acceptance criteria for a story. Design a Wizard-of-Oz test to de-risk before automation.
 
@@ -141,3 +141,6 @@ Learners produce an end-to-end portfolio for one product opportunity:
 - NPS = %promoters − %detractors (9-10 / 0-6), per Bain/Wikipedia: https://www.netpromotersystem.com/about/measuring-your-net-promoter-score/
 - Staged rollout patterns (dogfooding → beta → canary → ramp) via feature flags, per LaunchDarkly/Unleash: https://launchdarkly.com/blog/what-are-feature-flags/
 - Reforge course catalog informed the modern PM dimensions (strategy, analytics, experimentation, growth, AI, leadership): https://www.reforge.com/courses
+- RICE Impact (3x/2x/1x/0.5x/0.25x) and Confidence (100/80/50%) values verified against ProductPlan's RICE glossary: https://www.productplan.com/glossary/rice-scoring-model
+- Marty Cagan / SVPG "Transformed" (2024) product operating model — empowered teams given problems not solutions, continuous discovery + delivery — informed Ch.1 framing: https://www.svpg.com/inspired-and-empowered/
+- AI product management as a distinct craft (offline/online evals, LLM-as-judge, dual product+model metrics, "does this need AI") informed the AI additions in Chs.5-6: https://www.justanotherpm.com/blog/fundamentals-of-ai-product-management-prompt-engineering-ai-agents-and-eval-frameworks

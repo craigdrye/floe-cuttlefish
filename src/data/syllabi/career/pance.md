@@ -6,45 +6,48 @@ The PANCE is a five-hour, 300-question argument that the candidate is ready to p
 
 The voice here is reassuring on purpose. You finished rotations. You have seen most of what the exam asks. What you need now is consolidation: a confident map of the high-yield diagnoses by system, a confident map of the first-line drugs and the contraindications that flip them to the second-line, and the discipline to keep moving when a vignette is unfamiliar. By the time you sit the exam, your inner monologue should sound less like "I don't know" and more like "the next best step is…"
 
-PANCE differs from USMLE Step 2 CK in three ways worth naming. First, the **breadth is wider but the depth is shallower**: you will see more systems, more screening guidelines, more vaccinations and preventive medicine, with less weight on rare zebras. Second, **pharmacology is heavier**: nearly one in five questions touches pharmaceutical therapeutics, and the test rewards knowing first-line drugs cold, including the ones that get swapped for comorbidities. Third, **professional practice is its own task area**: ethics, informed consent, scope of practice, mandatory reporting, and basic statistics show up as their own items, not just as flavoring.
+PANCE differs from USMLE Step 2 CK in three ways worth naming. First, the **breadth is wider but the depth is shallower**: you will see more systems, more screening guidelines, more vaccinations and preventive medicine, with less weight on rare zebras. Second, **pharmacology is heavier**: nearly one in five questions touches pharmaceutical therapeutics, and the test rewards knowing first-line drugs cold, including the ones that get swapped for comorbidities. Third, **professional practice is its own content category** (6% under the 2025 blueprint, now broken out explicitly rather than folded into the task areas): ethics, informed consent, scope of practice, mandatory reporting, and basic statistics show up as their own items, not just as flavoring.
 
 A word on the test itself: 300 multiple-choice items, five hours, five blocks of 60 items with optional breaks between blocks. You cannot return to a block once submitted, but within a block you can flag, return, and change answers. NCCPA scales scores; the passing score is roughly 350 (with the scale running 200-800), but the cutoff has drifted up over the years. Plan for ~1 minute per item with a small buffer; you will have it.
 
 ## Course Design Notes
-Route questions here when they test NCCPA blueprint content: organ-system pathology across the fifteen system slices, the eight NCCPA task areas (History and PE, Diagnostic Studies, Diagnosis, Health Maintenance/Patient Education/Preventive, Clinical Intervention, Pharmaceutical Therapeutics, Applying Basic Science, Professional Practice), generalist screening guidelines, and vignette-pattern recognition for the "most likely diagnosis" and "next best step" prompts. The voice should make a sprawling generalist exam feel coverable without flattening medicine into trivia.
+Route questions here when they test NCCPA blueprint content: organ-system pathology across the medical content categories, the eight NCCPA task areas (History Taking/Physical Exam, Using Diagnostic and Laboratory Studies, Formulating the Most Likely Diagnosis, Health Maintenance/Patient Education/Preventive Measures, Clinical Intervention, Pharmaceutical Therapeutics, Applying Foundational Scientific Concepts, Professional Practice), generalist screening guidelines, and vignette-pattern recognition for the "most likely diagnosis" and "next best step" prompts. The voice should make a sprawling generalist exam feel coverable without flattening medicine into trivia.
 
 This course differs from the USMLE banks in scope (broader, less deep), from the NCLEX banks in role (provider decisions, not nursing scope/safety judgments), and from specialty board reviews in posture (generalist first, subspecialty only where the generalist must triage). When in doubt, route to PANCE if the item asks for diagnosis, first-line therapy, or next best step in management of a common adult condition; route elsewhere if the item asks about nursing scope, hospital operations, or rare/zebra pathophysiology that only the specialist would manage.
 
 ## Exam Map and Study Rhythm
-NCCPA publishes content blueprint weights by organ system and by task area. Allocate effort by both.
+NCCPA publishes content blueprint weights by organ system and by task area. Allocate effort by both. The weights below reflect the **content blueprint effective January 2025** (the active version for candidates testing in 2026); several categories were re-weighted from the prior (2019) blueprint, and Professional Practice is now an explicit content category (6%) rather than implicit. Note also that surgical content (8-10%) and pediatric content (12-15%) are not separate categories — they are distributed across the systems below.
 
 | Organ System | Blueprint Weight | Study Posture |
 |---|---:|---|
-| Cardiovascular | 13% | Highest-yield; drill ACS, HF, dysrhythmias, valvular disease, HTN, lipids |
-| Pulmonary | 10% | Asthma/COPD/PE/pneumonia/TB; ABG and imaging fluency |
-| Gastrointestinal / Nutrition | 9% | Acute abdomen, IBD vs IBS, hepatobiliary, malabsorption |
+| Cardiovascular | 11% | Highest-yield; drill ACS, HF, dysrhythmias, valvular disease, HTN, lipids |
+| Pulmonary | 9% | Asthma/COPD/PE/pneumonia/TB; ABG and imaging fluency |
+| Gastrointestinal / Nutrition | 8% | Acute abdomen, IBD vs IBS, hepatobiliary, malabsorption |
 | Musculoskeletal | 8% | Fractures, joint exam, rheumatology, sports injuries |
-| EENT | 7% | Red eye, otitis, pharyngitis, ENT emergencies |
-| Reproductive | 7% | OB/GYN, contraception, STIs, prostate, breast |
-| Endocrine | 7% | Diabetes, thyroid, adrenal, pituitary, calcium |
+| Infectious Disease | 7% | Sepsis, HIV, common bugs/drugs, vaccinations |
 | Neurologic | 7% | Stroke, seizure, headache, neuropathy, dementia |
-| Infectious Disease | 6% | Sepsis, HIV, common bugs/drugs, vaccinations |
-| Psychiatry / Behavioral | 6% | Mood, anxiety, psychosis, substance use, DSM basics |
-| Genitourinary | 5% | AKI/CKD, UTI/pyelonephritis, stones, electrolytes |
-| Dermatologic | 5% | Rashes, skin cancers, infections, ulcers |
+| Psychiatry / Behavioral | 7% | Mood, anxiety, psychosis, substance use, DSM basics |
+| Reproductive | 7% | OB/GYN, contraception, STIs, prostate, breast |
+| Endocrine | 6% | Diabetes, thyroid, adrenal, pituitary, calcium |
+| EENT | 6% | Red eye, otitis, pharyngitis, ENT emergencies |
 | Hematologic | 5% | Anemias, coagulopathies, leukemias, transfusion |
-| Professional Practice | 5% | Ethics, evidence, communication, safety, scope |
+| Renal | 5% | AKI/CKD, electrolytes, acid-base, glomerular disease |
+| Dermatologic | 4% | Rashes, skin cancers, infections, ulcers |
+| Genitourinary | 4% | UTI/pyelonephritis, stones, BPH/prostate, male GU |
+| Professional Practice | 6% | Ethics, evidence, communication, safety, scope |
 
-| Task Area | Blueprint Weight |
+(The 2025 blueprint splits the old combined "Genitourinary" slice into a Renal System category and a Genitourinary System category; treat stones/electrolytes under Renal and UTI/BPH/male GU under Genitourinary.)
+
+| Task Area | Blueprint Weight (2025) |
 |---|---:|
-| Formulating Most Likely Diagnosis | 21% |
-| History and Physical | 18% |
-| Pharmaceutical Therapeutics | 17% |
-| Diagnostic Studies | 14% |
-| Clinical Intervention | 12% |
-| Health Maintenance / Patient Education / Preventive | 11% |
-| Applying Basic Science | 8% |
-| Professional Practice | 4% |
+| Formulating the Most Likely Diagnosis | 18% |
+| History Taking and Performing Physical Examination | 16% |
+| Clinical Intervention | 16% |
+| Pharmaceutical Therapeutics | 15% |
+| Health Maintenance, Patient Education, and Preventive Measures | 11% |
+| Using Diagnostic and Laboratory Studies | 10% |
+| Applying Foundational Scientific Concepts | 8% |
+| Professional Practice | 6% |
 
 **Study cadence.** Three to six months of focused preparation starting near the end of rotations. Sixty to eighty vignette questions daily with annotated rationales; one weekly mixed mock of 120 items. Use Rosh Review (or Smarty PANCE, ExamMaster, or Kaplan) as the spine, not the supplement; pair with PANCE Prep Pearls for the content review, and a small flashcard deck for drug-of-choice memorization. In the last month, shift toward full 300-item blocked simulations and refine pacing.
 
@@ -294,7 +297,7 @@ Surviving Sepsis Campaign; IDSA guidelines; CDC HIV guidelines; AAD dermatology;
 - Epistaxis: anterior (Kiesselbach plexus — direct pressure 10-15 min, then silver nitrate or packing); posterior (admit, balloon pack, ENT)
 - Sinusitis: viral most; bacterial if >10 days, biphasic worsening, or severe — amoxicillin-clavulanate first-line
 - USPSTF Grade A/B screening highlights (see also Chapter 9 NCLEX): BP, colorectal 45-75, mammography (updated 2024 to start at 40 q2y), cervical (Pap q3y 21-29, q5y co-test 30-65), AAA one-time 65-75 ever-smoker men, osteoporosis women 65+, lung LDCT 50-80 with 20-pack-year, lipid 40-75, depression/anxiety/PHQ-2 in adults and pregnancy, HCV all adults once, HIV 13-64 once
-- Immunizations: childhood + adult schedules; Tdap q10y; annual flu; COVID per current; pneumococcal — PCV15 + PPSV23 sequence or PCV20 alone for adults ≥65 (and younger high-risk); shingles ≥50 (RZV); HPV through 26 (case-by-case to 45)
+- Immunizations: childhood + adult schedules; Tdap q10y; annual flu; COVID per current; pneumococcal — ACIP (Oct 2024) lowered routine PCV to all PCV-naive adults ≥50 (previously ≥65): single dose of PCV20, PCV21 (newer, Capvaxive), or PCV15 followed by PPSV23 ≥1 year later (8 weeks if immunocompromised); shingles ≥50 (RZV); HPV through 26 (case-by-case to 45)
 - Evidence basics: sensitivity (true positive rate; SnNout); specificity (true negative rate; SpPin); PPV (probability disease given positive — falls with low prevalence); NPV; likelihood ratios (+LR = sens/(1−spec); −LR = (1−sens)/spec); NNT and NNH; absolute vs relative risk reduction; study design (RCT > cohort > case-control > case series), bias (selection, recall, attrition, confounding), confidence intervals
 - Ethics: informed consent (disclosure + capacity + voluntariness); capacity vs competence (capacity is decision-specific and clinically assessed; competence is a legal status); confidentiality and HIPAA exceptions (mandatory reporting — child/elder abuse, certain communicable diseases, gunshot wounds, imminent threat to self/others; subpoena; minors with exceptions for STI, mental health, substance use in many states)
 - Advance directives: living will (specific instructions); durable power of attorney for healthcare (surrogate decision-maker); DNR/POLST; surrogate hierarchy varies by state but commonly spouse → adult children → parents → siblings
@@ -337,3 +340,13 @@ USPSTF recommendations; CDC immunization schedule; AAFP; AOA ophthalmology; PANC
 
 **Authoritative sources**
 NCCPA candidate guide; Rosh Review strategy; UWorld test-taking primers; PANCE Prep Pearls.
+
+## Research Notes
+Blueprint weights and structure in this syllabus reflect the NCCPA content blueprint **effective January 2025** (active for 2026 candidates). When in doubt, candidates should pull the live PDF from NCCPA, since weights are periodically re-balanced.
+
+- https://www.nccpa.net/become-certified/pance-blueprint/ — official NCCPA PANCE blueprint landing page (authoritative source of truth for content categories and task areas).
+- https://www.nccpa.net/wp-content/uploads/PANCE-Blueprint.pdf — official 2025 PANCE content blueprint PDF (full topic outline and percentages).
+- https://www.amboss.com/us/knowledge/pance-nccpa-content-blueprint — AMBOSS reproduction of the 2025 organ-system (CV 11%, Pulm 9%, GI 8%, MSK 8%, ID/Neuro/Psych/Repro 7%, Endo/EENT 6%, Heme/Renal 5%, Derm/GU 4%) and task-area (Diagnosis 18%, Hx/PE 16%, Clinical Intervention 16%, Pharm 15%, Health Maintenance 11%, Diagnostic Studies 10%, Foundational Science 8%, Professional Practice 6%) weights used here.
+- https://smartypance.com/2025-pance-blueprint/ — summary of the 2025 blueprint changes (ID and Psychiatry +1%; CV/Pulm/GI reduced; Professional Practice now an explicit 6% category; surgery 8-10% and pediatrics 12-15% distributed across systems).
+- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11709131/ — ACIP 2024 expanded pneumococcal conjugate vaccine recommendation to adults ≥50 (used to update the immunization note).
+- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11392227/ — ACIP 2024 recommendation introducing 21-valent pneumococcal conjugate vaccine (PCV21 / Capvaxive).

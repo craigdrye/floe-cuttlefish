@@ -93,7 +93,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336009,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 9",
+    title: "Capital of Hawaii",
     prompt: "What is the capital and largest city of Hawaii, the 50th US state?",
     correct: "Honolulu",
     wrong: [["Little Rock","\"Little Rock\" is geographically plausible enough to distract, but the specific clue \"What is the capital and largest city of Hawaii, the 50th US state?\" points to \"Honolulu\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Dover","\"Dover\" is geographically plausible enough to distract, but the specific clue \"What is the capital and largest city of Hawaii, the 50th US state?\" points to \"Honolulu\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Frankfort","\"Frankfort\" is geographically plausible enough to distract, but the specific clue \"What is the capital and largest city of Hawaii, the 50th US state?\" points to \"Honolulu\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -103,7 +103,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336010,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 10",
+    title: "Longest River in Russia",
     prompt: "When the streams Biya and Katun join in Altai Krai, they form this mighty river. It is located in West Siberia, Russia and has many names- the Siberian Tatars call it Omar or Umar, the Samoyedes- Kolta or Kuay and to the Ostiaks it is known as the As, Yag, Kolta and Yema. It joins the Irtysh river, forming the longest river flow in Russia. What is its name?",
     correct: "Ob",
     wrong: [["Ural","\"Ural\" is a nearby-looking geography answer, but the clue \"When the streams Biya and Katun join in Altai Krai, they form this mighty river. It is loc\" points to \"Ob\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Volga","\"Volga\" is a nearby-looking geography answer, but the clue \"When the streams Biya and Katun join in Altai Krai, they form this mighty river. It is loc\" points to \"Ob\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Lena","\"Lena\" is a nearby-looking geography answer, but the clue \"When the streams Biya and Katun join in Altai Krai, they form this mighty river. It is loc\" points to \"Ob\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -113,7 +113,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336011,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 11",
+    title: "Source of the Amazon",
     prompt: "Although the Amazon river is generally regarded as the second-longest in the world, it is the river with greatest total flow, carrying more than the Mississippi, Nile, and Yangtze rivers combined. It ends in the Atlantic Ocean, but it is believed to begin its long journey from this mountain peak.",
     correct: "Nevado Mismi",
     wrong: [["Misti","\"Misti\" is a nearby-looking geography answer, but the clue \"Although the Amazon river is generally regarded as the second-longest in the world, it is \" points to \"Nevado Mismi\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Cotopaxi","\"Cotopaxi\" is a nearby-looking geography answer, but the clue \"Although the Amazon river is generally regarded as the second-longest in the world, it is \" points to \"Nevado Mismi\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Mount Chimborazo","\"Mount Chimborazo\" is a nearby-looking geography answer, but the clue \"Although the Amazon river is generally regarded as the second-longest in the world, it is \" points to \"Nevado Mismi\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -123,7 +123,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336012,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 12",
+    title: "Longest River in Asia",
     prompt: "This is the longest river in Asia and its Chinese name, Chang Jiang, is literally translated to Long River. The critically endangered Chinese River Dolphin and Chinese paddlefish live only in this river. It takes its source in the Qinghai Province, flows for 6,380km (3964miles) and finally empties into the East China Sea. What is the name of this river?",
     correct: "Yangtze",
     wrong: [["Irtysh","\"Irtysh\" is a nearby-looking geography answer, but the clue \"This is the longest river in Asia and its Chinese name, Chang Jiang, is literally translat\" points to \"Yangtze\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Huai River","\"Huai River\" is a nearby-looking geography answer, but the clue \"This is the longest river in Asia and its Chinese name, Chang Jiang, is literally translat\" points to \"Yangtze\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Mekong","\"Mekong\" is a nearby-looking geography answer, but the clue \"This is the longest river in Asia and its Chinese name, Chang Jiang, is literally translat\" points to \"Yangtze\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -133,7 +133,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336013,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 13",
+    title: "Color of the Yellow River",
     prompt: "Huang He is the second-longest river in China. Its source is in the Kunlun Mountains at 4,500m (14,764 feet) above sea level. Due to the silts that the river carries, the color of its waters becomes so unnatural that it gave the name of the river . What is the color of the waters of Huang He?",
     correct: "Yellow",
     wrong: [["Brown","\"Brown\" is a nearby-looking geography answer, but the clue \"Huang He is the second-longest river in China. Its source is in the Kunlun Mountains at 4,\" points to \"Yellow\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Orange","\"Orange\" is a nearby-looking geography answer, but the clue \"Huang He is the second-longest river in China. Its source is in the Kunlun Mountains at 4,\" points to \"Yellow\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Red","\"Red\" is a nearby-looking geography answer, but the clue \"Huang He is the second-longest river in China. Its source is in the Kunlun Mountains at 4,\" points to \"Yellow\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -143,7 +143,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336014,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 14",
+    title: "Source of the Mississippi",
     prompt: "It is the second-longest river in the United States. The longest one, Missouri, joins it to form the longest river flow in North America. This river flows through ten states- Minnesota, Wisconsin, Iowa, Illinois, Missouri, Kentucky, Arkansas, Tennessee, Mississippi and Louisiana and mouths into the Gulf of Mexico. I am not going to ask you about its name, but about its source. What is the origin of the Mississippi river?",
     correct: "Lake Itasca",
     wrong: [["Lake Superior","\"Lake Superior\" is a nearby-looking geography answer, but the clue \"It is the second-longest river in the United States. The longest one, Missouri, joins it t\" points to \"Lake Itasca\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Lake Pepin","\"Lake Pepin\" is a nearby-looking geography answer, but the clue \"It is the second-longest river in the United States. The longest one, Missouri, joins it t\" points to \"Lake Itasca\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Cass Lake","\"Cass Lake\" is a nearby-looking geography answer, but the clue \"It is the second-longest river in the United States. The longest one, Missouri, joins it t\" points to \"Lake Itasca\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -153,7 +153,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336015,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 15",
+    title: "River Through Six Countries",
     prompt: "This is the twelfth-longest river in the world. It runs through China, Myanmar, Thailand, Laos, Cambodia and Vietnam. There are various theories about the source and the exact length of the river because there are several effluents of it that are too difficult to explore. Due to the many rapids and waterfalls, as well as the extreme changes in the flow of the river, sailing is extremely difficult. What is the name of this river?",
     correct: "Mekong",
     wrong: [["Saskatchewan","\"Saskatchewan\" is a nearby-looking geography answer, but the clue \"This is the twelfth-longest river in the world. It runs through China, Myanmar, Thailand, \" points to \"Mekong\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Angara","\"Angara\" is a nearby-looking geography answer, but the clue \"This is the twelfth-longest river in the world. It runs through China, Myanmar, Thailand, \" points to \"Mekong\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Brahmaputra","\"Brahmaputra\" is a nearby-looking geography answer, but the clue \"This is the twelfth-longest river in the world. It runs through China, Myanmar, Thailand, \" points to \"Mekong\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -163,7 +163,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336016,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 16",
+    title: "Second-Longest European River",
     prompt: "The longest river in Europe is Volga. But do you know which is the second longest one? It flows through several major European cities, such as Ulm, Vienna, Bratislava, Budapest and Belgrade. The river empties in the Black Sea on the terrirories of Romania and Ukraine.",
     correct: "Danube",
     wrong: [["Don","\"Don\" is a nearby-looking geography answer, but the clue \"The longest river in Europe is Volga. But do you know which is the second longest one? It \" points to \"Danube\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Dniepr","\"Dniepr\" is a nearby-looking geography answer, but the clue \"The longest river in Europe is Volga. But do you know which is the second longest one? It \" points to \"Danube\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Emba","\"Emba\" is a nearby-looking geography answer, but the clue \"The longest river in Europe is Volga. But do you know which is the second longest one? It \" points to \"Danube\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -173,7 +173,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336017,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 17",
+    title: "Mouth of the Ganges",
     prompt: "The Ganges river is considered to be a holy in India. There is a Hindu legend that the river was created from the sweat of the feet of Vishnu, collected by Brahma. According to Hindu beliefs, if you bathe in the waters of Ganges, it will wash away your sins. However this is not very hygienic, as the river is badly polluted by cremated corpses, carcasses, waste from factories and more. Where does this river empty?",
     correct: "The Bay of Bengal",
     wrong: [["Lop Nur","\"Lop Nur\" is a nearby-looking geography answer, but the clue \"The Ganges river is considered to be a holy in India. There is a Hindu legend that the riv\" points to \"The Bay of Bengal\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Quarry Bay","\"The Quarry Bay\" is a nearby-looking geography answer, but the clue \"The Ganges river is considered to be a holy in India. There is a Hindu legend that the riv\" points to \"The Bay of Bengal\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Kara Sea","\"Kara Sea\" is a nearby-looking geography answer, but the clue \"The Ganges river is considered to be a holy in India. There is a Hindu legend that the riv\" points to \"The Bay of Bengal\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -183,7 +183,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336018,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 18",
+    title: "River of Victoria Falls",
     prompt: "Victoria Falls is one of the most spectacular waterfalls in the world. The falls are named after Queen Victoria by David Livingstone, the explorer who visited them in 1855. The falls are 128 m (420 ft) high and are situated on this river.",
     correct: "Zambezi",
     wrong: [["Congo","\"Congo\" is a nearby-looking geography answer, but the clue \"Victoria Falls is one of the most spectacular waterfalls in the world. The falls are named\" points to \"Zambezi\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Gambia","\"Gambia\" is a nearby-looking geography answer, but the clue \"Victoria Falls is one of the most spectacular waterfalls in the world. The falls are named\" points to \"Zambezi\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Orange","\"Orange\" is a nearby-looking geography answer, but the clue \"Victoria Falls is one of the most spectacular waterfalls in the world. The falls are named\" points to \"Zambezi\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -193,7 +193,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336019,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 19",
+    title: "Countries Around Lake Victoria",
     prompt: "The Nile is generally considered the longest river in the world. The source of this mighty river remained unknown for centuries. Finally Lake Victoria was decided to be its source, although there are other theories. Lake Victoria is located on the territories of these three countries.",
     correct: "Uganda, Kenya and Tanzania",
     wrong: [["Sudan, Ethiopia and Kenya","\"Sudan, Ethiopia and Kenya\" is a nearby-looking geography answer, but the clue \"The Nile is generally considered the longest river in the world. The source of this mighty\" points to \"Uganda, Kenya and Tanzania\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Zambia, Angola and Sudan","\"Zambia, Angola and Sudan\" is a nearby-looking geography answer, but the clue \"The Nile is generally considered the longest river in the world. The source of this mighty\" points to \"Uganda, Kenya and Tanzania\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Egypt, Morocco and Zimbabwe","\"Egypt, Morocco and Zimbabwe\" is a nearby-looking geography answer, but the clue \"The Nile is generally considered the longest river in the world. The source of this mighty\" points to \"Uganda, Kenya and Tanzania\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -203,7 +203,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336020,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 20",
+    title: "Country of the Tagus",
     prompt: "The rivers - the Tajo, the Ebro, the Duero, and the Guadiana, are located in this country.",
     correct: "Spain",
     wrong: [["Columbia","\"Columbia\" is a nearby-looking geography answer, but the clue \"The rivers - the Tajo, the Ebro, the Duero, and the Guadiana, are located in this country.\" points to \"Spain\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Portugal","\"Portugal\" is a nearby-looking geography answer, but the clue \"The rivers - the Tajo, the Ebro, the Duero, and the Guadiana, are located in this country.\" points to \"Spain\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Brazil","\"Brazil\" is a nearby-looking geography answer, but the clue \"The rivers - the Tajo, the Ebro, the Duero, and the Guadiana, are located in this country.\" points to \"Spain\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -213,7 +213,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336021,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 21",
+    title: "Country of Mount Fuji",
     prompt: "The volcanoes - Akan, Aso, Mount Fuji and Rausu are located in this country.",
     correct: "Japan",
     wrong: [["Malaysia","\"Malaysia\" is geographically plausible enough to distract, but the specific clue \"The volcanoes - Akan, Aso, Mount Fuji and Rausu are located in this country.\" points to \"Japan\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["North Korea","\"North Korea\" is geographically plausible enough to distract, but the specific clue \"The volcanoes - Akan, Aso, Mount Fuji and Rausu are located in this country.\" points to \"Japan\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Indonesia","\"Indonesia\" is geographically plausible enough to distract, but the specific clue \"The volcanoes - Akan, Aso, Mount Fuji and Rausu are located in this country.\" points to \"Japan\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -223,7 +223,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336022,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 22",
+    title: "Country of Lake Onega",
     prompt: "Onega, Khanka and Chudskoye are three of the many lakes in this country.",
     correct: "Russia",
     wrong: [["Kazakhstan","\"Kazakhstan\" is geographically plausible enough to distract, but the specific clue \"Onega, Khanka and Chudskoye are three of the many lakes in this country.\" points to \"Russia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Mongolia","\"Mongolia\" is geographically plausible enough to distract, but the specific clue \"Onega, Khanka and Chudskoye are three of the many lakes in this country.\" points to \"Russia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Ukraine","\"Ukraine\" is geographically plausible enough to distract, but the specific clue \"Onega, Khanka and Chudskoye are three of the many lakes in this country.\" points to \"Russia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -233,7 +233,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336023,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 23",
+    title: "Country of the Yellow River",
     prompt: "The valleys of the Yellow River and the Pearl River are two of the seven main national valleys in this country.",
     correct: "China",
     wrong: [["Burma","\"Burma\" is a nearby-looking geography answer, but the clue \"The valleys of the Yellow River and the Pearl River are two of the seven main national val\" points to \"China\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Thailand","\"Thailand\" is a nearby-looking geography answer, but the clue \"The valleys of the Yellow River and the Pearl River are two of the seven main national val\" points to \"China\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["India","\"India\" is a nearby-looking geography answer, but the clue \"The valleys of the Yellow River and the Pearl River are two of the seven main national val\" points to \"China\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -243,7 +243,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336024,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 24",
+    title: "Country of Pico da Bandeira",
     prompt: "Pico da Bandeira, Pico do Cruzeiro and Pedra da Mina are three of the numerous mountains located in this South American country.",
     correct: "Brazil",
     wrong: [["Argentina","\"Argentina\" is geographically plausible enough to distract, but the specific clue \"Pico da Bandeira, Pico do Cruzeiro and Pedra da Mina are three of the numerous mountains l\" points to \"Brazil\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Chili","\"Chili\" is geographically plausible enough to distract, but the specific clue \"Pico da Bandeira, Pico do Cruzeiro and Pedra da Mina are three of the numerous mountains l\" points to \"Brazil\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Peru","\"Peru\" is geographically plausible enough to distract, but the specific clue \"Pico da Bandeira, Pico do Cruzeiro and Pedra da Mina are three of the numerous mountains l\" points to \"Brazil\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -253,7 +253,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336025,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 25",
+    title: "Country of Lake Chad",
     prompt: "Kainji Lake and Lake Chad are considered lakes of this country.",
     correct: "Nigeria",
     wrong: [["Niger","\"Niger\" is geographically plausible enough to distract, but the specific clue \"Kainji Lake and Lake Chad are considered lakes of this country.\" points to \"Nigeria\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Cameroon","\"Cameroon\" is geographically plausible enough to distract, but the specific clue \"Kainji Lake and Lake Chad are considered lakes of this country.\" points to \"Nigeria\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Chad","\"Chad\" is geographically plausible enough to distract, but the specific clue \"Kainji Lake and Lake Chad are considered lakes of this country.\" points to \"Nigeria\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -263,7 +263,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336026,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 26",
+    title: "Country of the Mitchell River",
     prompt: "Mitchell, Jardine, Staaten, Flinders, Leichhardt, and Nicholson are just few of the rivers in this country.",
     correct: "Australia",
     wrong: [["Indonesia","\"Indonesia\" is a nearby-looking geography answer, but the clue \"Mitchell, Jardine, Staaten, Flinders, Leichhardt, and Nicholson are just few of the rivers\" points to \"Australia\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Papua New Guinea","\"Papua New Guinea\" is a nearby-looking geography answer, but the clue \"Mitchell, Jardine, Staaten, Flinders, Leichhardt, and Nicholson are just few of the rivers\" points to \"Australia\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["New Zealand","\"New Zealand\" is a nearby-looking geography answer, but the clue \"Mitchell, Jardine, Staaten, Flinders, Leichhardt, and Nicholson are just few of the rivers\" points to \"Australia\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -273,7 +273,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336027,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 27",
+    title: "Country of Kaskaspakte",
     prompt: "Kaskaspakte, Akka and Sielmmacohkka are three mountains in this country.",
     correct: "Sweden",
     wrong: [["Norway","\"Norway\" is geographically plausible enough to distract, but the specific clue \"Kaskaspakte, Akka and Sielmmacohkka are three mountains in this country.\" points to \"Sweden\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Finland","\"Finland\" is geographically plausible enough to distract, but the specific clue \"Kaskaspakte, Akka and Sielmmacohkka are three mountains in this country.\" points to \"Sweden\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Denmark","\"Denmark\" is geographically plausible enough to distract, but the specific clue \"Kaskaspakte, Akka and Sielmmacohkka are three mountains in this country.\" points to \"Sweden\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -283,7 +283,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336028,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 28",
+    title: "Country of the Lut Desert",
     prompt: "Dasht-e Kavir and Kavir-e Lut are deserts located in this Asian country.",
     correct: "Iran",
     wrong: [["India","\"India\" is geographically plausible enough to distract, but the specific clue \"Dasht-e Kavir and Kavir-e Lut are deserts located in this Asian country.\" points to \"Iran\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Pakistan","\"Pakistan\" is geographically plausible enough to distract, but the specific clue \"Dasht-e Kavir and Kavir-e Lut are deserts located in this Asian country.\" points to \"Iran\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Iraq","\"Iraq\" is geographically plausible enough to distract, but the specific clue \"Dasht-e Kavir and Kavir-e Lut are deserts located in this Asian country.\" points to \"Iran\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -350,7 +350,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336034,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 34",
+    title: "Most TV Watched by Country",
     prompt: "The people of which country watched the most TV per week in 2005?",
     correct: "Thailand",
     wrong: [["The Philippines","\"The Philippines\" is geographically plausible enough to distract, but the specific clue \"The people of which country watched the most TV per week in 2005?\" points to \"Thailand\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["The USA","\"The USA\" is geographically plausible enough to distract, but the specific clue \"The people of which country watched the most TV per week in 2005?\" points to \"Thailand\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Egypt","\"Egypt\" is geographically plausible enough to distract, but the specific clue \"The people of which country watched the most TV per week in 2005?\" points to \"Thailand\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -370,7 +370,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336036,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 36",
+    title: "Second-Tallest US Peak",
     prompt: "The tallest mountain peak in the US is Mount McKinley. This is the second tallest.",
     correct: "Mount Saint Elias",
     wrong: [["Glacier Peak","\"Glacier Peak\" is geographically plausible enough to distract, but the specific clue \"The tallest mountain peak in the US is Mount McKinley. This is the second tallest.\" points to \"Mount Saint Elias\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Mount Washington","\"Mount Washington\" is geographically plausible enough to distract, but the specific clue \"The tallest mountain peak in the US is Mount McKinley. This is the second tallest.\" points to \"Mount Saint Elias\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Gannett Peak","\"Gannett Peak\" is geographically plausible enough to distract, but the specific clue \"The tallest mountain peak in the US is Mount McKinley. This is the second tallest.\" points to \"Mount Saint Elias\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -380,7 +380,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336037,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 37",
+    title: "Edmund Hillary's Home Country",
     prompt: "The highest mountain peak on our planet is Mount Everest. It was first climbed by Edmund Hillary and Tenzing Norgay on May 29, 1953. What is the home country of Sir Edmund Hillary?",
     correct: "New Zealand",
     wrong: [["United Kingdom","\"United Kingdom\" is geographically plausible enough to distract, but the specific clue \"The highest mountain peak on our planet is Mount Everest. It was first climbed by Edmund H\" points to \"New Zealand\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["The United States","\"The United States\" is geographically plausible enough to distract, but the specific clue \"The highest mountain peak on our planet is Mount Everest. It was first climbed by Edmund H\" points to \"New Zealand\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["France","\"France\" is geographically plausible enough to distract, but the specific clue \"The highest mountain peak on our planet is Mount Everest. It was first climbed by Edmund H\" points to \"New Zealand\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -390,7 +390,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336038,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 38",
+    title: "Country of 200,000 Lakes",
     prompt: "This country, situated in North Europe, has almost 200 000 lakes - more than any other country in the world.",
     correct: "Finland",
     wrong: [["Sweden","\"Sweden\" is geographically plausible enough to distract, but the specific clue \"This country, situated in North Europe, has almost 200 000 lakes - more than any other cou\" points to \"Finland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["The Netherlands","\"The Netherlands\" is geographically plausible enough to distract, but the specific clue \"This country, situated in North Europe, has almost 200 000 lakes - more than any other cou\" points to \"Finland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Georgia","\"Georgia\" is geographically plausible enough to distract, but the specific clue \"This country, situated in North Europe, has almost 200 000 lakes - more than any other cou\" points to \"Finland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -400,7 +400,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336039,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 39",
+    title: "Country With Most Lakes",
     prompt: "This country has more than 60% of worlds lakes due to its special drainage system.",
     correct: "Canada",
     wrong: [["Australia","\"Australia\" is geographically plausible enough to distract, but the specific clue \"This country has more than 60% of worlds lakes due to its special drainage system.\" points to \"Canada\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Russia","\"Russia\" is geographically plausible enough to distract, but the specific clue \"This country has more than 60% of worlds lakes due to its special drainage system.\" points to \"Canada\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["The USA","\"The USA\" is geographically plausible enough to distract, but the specific clue \"This country has more than 60% of worlds lakes due to its special drainage system.\" points to \"Canada\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -410,7 +410,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336040,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 40",
+    title: "Largest Freshwater-Lake Island",
     prompt: "This freshwater-lake island, with a surface area of 2,766 km², is the biggest on Earth.",
     correct: "Manitoulin Island",
     wrong: [["Islandlake","\"Islandlake\" is geographically plausible enough to distract, but the specific clue \"This freshwater-lake island, with a surface area of 2,766 km², is the biggest on Earth.\" points to \"Manitoulin Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Ainslie","\"Ainslie\" is geographically plausible enough to distract, but the specific clue \"This freshwater-lake island, with a surface area of 2,766 km², is the biggest on Earth.\" points to \"Manitoulin Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Isle of Wight","\"Isle of Wight\" is geographically plausible enough to distract, but the specific clue \"This freshwater-lake island, with a surface area of 2,766 km², is the biggest on Earth.\" points to \"Manitoulin Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -420,7 +420,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336041,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 41",
+    title: "Largest Lake on an Island",
     prompt: "What Canadian lake is the largest in the world, located on an island?",
     correct: "Nettilling Lake",
     wrong: [["Aral","\"Aral\" is geographically plausible enough to distract, but the specific clue \"What Canadian lake is the largest in the world, located on an island?\" points to \"Nettilling Lake\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Winnipeg","\"Winnipeg\" is geographically plausible enough to distract, but the specific clue \"What Canadian lake is the largest in the world, located on an island?\" points to \"Nettilling Lake\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Michigan","\"Michigan\" is geographically plausible enough to distract, but the specific clue \"What Canadian lake is the largest in the world, located on an island?\" points to \"Nettilling Lake\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -430,7 +430,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336042,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 42",
+    title: "Lowest Lake on Earth",
     prompt: "This is the lowest lake on Earth, situated at about 400 meters below sea level on the border between Israel and Jordan.",
     correct: "Dead Sea",
     wrong: [["Issyk-Kul","\"Issyk-Kul\" is a nearby-looking geography answer, but the clue \"This is the lowest lake on Earth, situated at about 400 meters below sea level on the bord\" points to \"Dead Sea\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Balkhash","\"Balkhash\" is a nearby-looking geography answer, but the clue \"This is the lowest lake on Earth, situated at about 400 meters below sea level on the bord\" points to \"Dead Sea\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Urmia","\"Urmia\" is a nearby-looking geography answer, but the clue \"This is the lowest lake on Earth, situated at about 400 meters below sea level on the bord\" points to \"Dead Sea\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -440,7 +440,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336043,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 43",
+    title: "Southernmost Active Volcano",
     prompt: "Which volcano, located on Ross Island, Antarctica, is the southernmost active volcano on Earth?",
     correct: "Mount Erebus",
     wrong: [["Mayon Volcano","\"Mayon Volcano\" is geographically plausible enough to distract, but the specific clue \"Which volcano, located on Ross Island, Antarctica, is the southernmost active volcano on E\" points to \"Mount Erebus\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Cold Bay Volcano","\"Cold Bay Volcano\" is geographically plausible enough to distract, but the specific clue \"Which volcano, located on Ross Island, Antarctica, is the southernmost active volcano on E\" points to \"Mount Erebus\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Teide","\"Teide\" is geographically plausible enough to distract, but the specific clue \"Which volcano, located on Ross Island, Antarctica, is the southernmost active volcano on E\" points to \"Mount Erebus\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -450,7 +450,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336044,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 44",
+    title: "Largest Volcano in Europe",
     prompt: "This volcano, which is the largest in Europe, is located on the largest island in the Mediterranean Sea.",
     correct: "Mount Etna",
     wrong: [["Hekla","\"Hekla\" is a nearby-looking geography answer, but the clue \"This volcano, which is the largest in Europe, is located on the largest island in the Medi\" points to \"Mount Etna\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["El Misti","\"El Misti\" is a nearby-looking geography answer, but the clue \"This volcano, which is the largest in Europe, is located on the largest island in the Medi\" points to \"Mount Etna\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Santorini","\"Santorini\" is a nearby-looking geography answer, but the clue \"This volcano, which is the largest in Europe, is located on the largest island in the Medi\" points to \"Mount Etna\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -460,7 +460,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336045,
     chapter: "World Capitals",
-    title: "OpenTrivia Geography 45",
+    title: "Country Near Popocatepetl",
     prompt: "Popocatépetl, a volcano whose name means Smoking Mountain, is 70 km away from the capital of which American country?",
     correct: "Mexico",
     wrong: [["Peru","\"Peru\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"Mexico\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."],["Canada","\"Canada\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"Mexico\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."],["Argentina","\"Argentina\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"Mexico\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."]],
@@ -470,7 +470,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336046,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 46",
+    title: "Biggest Extinct Volcano in Ecuador",
     prompt: "What is the biggest extinct volcano in Ecuador, situated in the Andes mountain.",
     correct: "Chimborazo",
     wrong: [["Ojos Del Salado","\"Ojos Del Salado\" is geographically plausible enough to distract, but the specific clue \"What is the biggest extinct volcano in Ecuador, situated in the Andes mountain.\" points to \"Chimborazo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Llullaillaco","\"Llullaillaco\" is geographically plausible enough to distract, but the specific clue \"What is the biggest extinct volcano in Ecuador, situated in the Andes mountain.\" points to \"Chimborazo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Cotopaxi","\"Cotopaxi\" is geographically plausible enough to distract, but the specific clue \"What is the biggest extinct volcano in Ecuador, situated in the Andes mountain.\" points to \"Chimborazo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -480,7 +480,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336047,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 47",
+    title: "Volcano on Hawaii Island",
     prompt: "This active volcano, whose name means long mountain in Hawaiian, is one of the five peaks that form the Island of Hawaii.",
     correct: "Mauna Loa",
     wrong: [["Cotopaxi","\"Cotopaxi\" is geographically plausible enough to distract, but the specific clue \"This active volcano, whose name means long mountain in Hawaiian, is one of the five peaks \" points to \"Mauna Loa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Mount Kea","\"Mount Kea\" is geographically plausible enough to distract, but the specific clue \"This active volcano, whose name means long mountain in Hawaiian, is one of the five peaks \" points to \"Mauna Loa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Hekla","\"Hekla\" is geographically plausible enough to distract, but the specific clue \"This active volcano, whose name means long mountain in Hawaiian, is one of the five peaks \" points to \"Mauna Loa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -490,7 +490,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336048,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 48",
+    title: "Highest Peak of Spain",
     prompt: "What volcano located on the island of Tenerife represents the highest mountain on Spanish territories?",
     correct: "Teide",
     wrong: [["Stromboli","\"Stromboli\" is geographically plausible enough to distract, but the specific clue \"What volcano located on the island of Tenerife represents the highest mountain on Spanish \" points to \"Teide\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Santorini","\"Santorini\" is geographically plausible enough to distract, but the specific clue \"What volcano located on the island of Tenerife represents the highest mountain on Spanish \" points to \"Teide\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Duvalo","\"Duvalo\" is geographically plausible enough to distract, but the specific clue \"What volcano located on the island of Tenerife represents the highest mountain on Spanish \" points to \"Teide\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -510,7 +510,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336050,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 50",
+    title: "Fourth-Largest Island",
     prompt: "This island is well known in scientific fields for being home of five percent of the worlds plant and animal species, with 80% of them unique to it. The island is also the fourth biggest on Earth, with population of about 17,500,000 people.",
     correct: "Madagascar",
     wrong: [["Greenland","\"Greenland\" is geographically plausible enough to distract, but the specific clue \"This island is well known in scientific fields for being home of five percent of the world\" points to \"Madagascar\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["New Guinea","\"New Guinea\" is geographically plausible enough to distract, but the specific clue \"This island is well known in scientific fields for being home of five percent of the world\" points to \"Madagascar\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Tasmania","\"Tasmania\" is geographically plausible enough to distract, but the specific clue \"This island is well known in scientific fields for being home of five percent of the world\" points to \"Madagascar\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -520,7 +520,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336051,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 51",
+    title: "Birthplace of Aphrodite",
     prompt: "In Greek mythology, this island is the legendary birthplace of the goddess of beauty, love, and passion, the charming Aphrodite, where according to the legend, she emerged from the sea foam.",
     correct: "Cyprus",
     wrong: [["Crete","\"Crete\" is a nearby-looking geography answer, but the clue \"In Greek mythology, this island is the legendary birthplace of the goddess of beauty, love\" points to \"Cyprus\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Limnos","\"Limnos\" is a nearby-looking geography answer, but the clue \"In Greek mythology, this island is the legendary birthplace of the goddess of beauty, love\" points to \"Cyprus\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Rhodes","\"Rhodes\" is a nearby-looking geography answer, but the clue \"In Greek mythology, this island is the legendary birthplace of the goddess of beauty, love\" points to \"Cyprus\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -530,7 +530,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336052,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 52",
+    title: "Largest Island on Earth",
     prompt: "Despite being the largest in the world, this island is sparsely populated, due to its unfavourable climate.",
     correct: "Greenland",
     wrong: [["New Guinea","\"New Guinea\" is geographically plausible enough to distract, but the specific clue \"Despite being the largest in the world, this island is sparsely populated, due to its unfa\" points to \"Greenland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Victoria Island","\"Victoria Island\" is geographically plausible enough to distract, but the specific clue \"Despite being the largest in the world, this island is sparsely populated, due to its unfa\" points to \"Greenland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Madagascar","\"Madagascar\" is geographically plausible enough to distract, but the specific clue \"Despite being the largest in the world, this island is sparsely populated, due to its unfa\" points to \"Greenland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -540,7 +540,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336053,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 53",
+    title: "Most Populous Island",
     prompt: "Being the most populous in the world, with bigger population than Australia and Antarctica, the density of this islands inhabitants forced the countrys government to start transmigration programs, aimed at resettling people to other, less-crowded parts of the country.",
     correct: "Java",
     wrong: [["Sumatra","\"Sumatra\" is geographically plausible enough to distract, but the specific clue \"Being the most populous in the world, with bigger population than Australia and Antarctica\" points to \"Java\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Borneo","\"Borneo\" is geographically plausible enough to distract, but the specific clue \"Being the most populous in the world, with bigger population than Australia and Antarctica\" points to \"Java\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Sulawesi","\"Sulawesi\" is geographically plausible enough to distract, but the specific clue \"Being the most populous in the world, with bigger population than Australia and Antarctica\" points to \"Java\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -550,7 +550,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336054,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 54",
+    title: "Largest Mediterranean Island",
     prompt: "This is the largest island in the Mediterranean Sea, famous for one of the worlds most active volcanoes - Etna.",
     correct: "Sicily",
     wrong: [["Crete","\"Crete\" is a nearby-looking geography answer, but the clue \"This is the largest island in the Mediterranean Sea, famous for one of the worlds most act\" points to \"Sicily\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Sardinia","\"Sardinia\" is a nearby-looking geography answer, but the clue \"This is the largest island in the Mediterranean Sea, famous for one of the worlds most act\" points to \"Sicily\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Corse","\"Corse\" is a nearby-looking geography answer, but the clue \"This is the largest island in the Mediterranean Sea, famous for one of the worlds most act\" points to \"Sicily\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -560,7 +560,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336055,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 55",
+    title: "Country of the Gowni Costume",
     prompt: "The gowni is a typical national costume in which African country?",
     correct: "Tanzania",
     wrong: [["Malawi","\"Malawi\" is geographically plausible enough to distract, but the specific clue \"The gowni is a typical national costume in which African country?\" points to \"Tanzania\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Uganda","\"Uganda\" is geographically plausible enough to distract, but the specific clue \"The gowni is a typical national costume in which African country?\" points to \"Tanzania\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Indonesia","\"Indonesia\" is geographically plausible enough to distract, but the specific clue \"The gowni is a typical national costume in which African country?\" points to \"Tanzania\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -570,7 +570,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336056,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 56",
+    title: "Country of the Barong",
     prompt: "Barong is the embroidered formal garment of which country in South-East Asia?",
     correct: "The Philippines",
     wrong: [["Russia","\"Russia\" is geographically plausible enough to distract, but the specific clue \"Barong is the embroidered formal garment of which country in South-East Asia?\" points to \"The Philippines\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Indonesia","\"Indonesia\" is geographically plausible enough to distract, but the specific clue \"Barong is the embroidered formal garment of which country in South-East Asia?\" points to \"The Philippines\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Japan","\"Japan\" is geographically plausible enough to distract, but the specific clue \"Barong is the embroidered formal garment of which country in South-East Asia?\" points to \"The Philippines\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -580,7 +580,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336057,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 57",
+    title: "Three Fortunate Concealments",
     prompt: "According to the legend, which of these is a part of the Three Fortunate Concealments that protect Britain from any danger coming from the sea?",
     correct: "The head of Bran the Blessed",
     wrong: [["Stone of Destiny","\"Stone of Destiny\" is a nearby-looking geography answer, but the clue \"According to the legend, which of these is a part of the Three Fortunate Concealments that\" points to \"The head of Bran the Blessed\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Dragons","\"The Dragons\" is a nearby-looking geography answer, but the clue \"According to the legend, which of these is a part of the Three Fortunate Concealments that\" points to \"The head of Bran the Blessed\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The bones of Gwerthefyr the Blessed","\"The bones of Gwerthefyr the Blessed\" is a nearby-looking geography answer, but the clue \"According to the legend, which of these is a part of the Three Fortunate Concealments that\" points to \"The head of Bran the Blessed\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -590,7 +590,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336058,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 58",
+    title: "Hidden London River",
     prompt: "While driving or walking down Kings Cross Road and Farringdon Road in London few people are aware that unseen beneath them runs which river?",
     correct: "River Fleet",
     wrong: [["River Thames","\"River Thames\" is a nearby-looking geography answer, but the clue \"While driving or walking down Kings Cross Road and Farringdon Road in London few people ar\" points to \"River Fleet\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["River Avon (Shakespeares Avon)","\"River Avon (Shakespeares Avon)\" is a nearby-looking geography answer, but the clue \"While driving or walking down Kings Cross Road and Farringdon Road in London few people ar\" points to \"River Fleet\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["River Rhodda","\"River Rhodda\" is a nearby-looking geography answer, but the clue \"While driving or walking down Kings Cross Road and Farringdon Road in London few people ar\" points to \"River Fleet\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -600,7 +600,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336059,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 59",
+    title: "River of the Grand Valley",
     prompt: "The Grand Valley is an extended populated agricultural valley located along which US river?",
     correct: "Colorado River",
     wrong: [["Alabama River","\"Alabama River\" is a nearby-looking geography answer, but the clue \"The Grand Valley is an extended populated agricultural valley located along which US river\" points to \"Colorado River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Mississippi River","\"Mississippi River\" is a nearby-looking geography answer, but the clue \"The Grand Valley is an extended populated agricultural valley located along which US river\" points to \"Colorado River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Missouri River","\"Missouri River\" is a nearby-looking geography answer, but the clue \"The Grand Valley is an extended populated agricultural valley located along which US river\" points to \"Colorado River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -610,7 +610,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336060,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 60",
+    title: "Shape of Menomonee Valley",
     prompt: "The Menomonee Valley along the Menomonee River in Milwaukee, Wisconsin has what peculiar shape?",
     correct: "U-shape",
     wrong: [["S-shape","\"S-shape\" is a nearby-looking geography answer, but the clue \"The Menomonee Valley along the Menomonee River in Milwaukee, Wisconsin has what peculiar s\" points to \"U-shape\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Y-shape","\"Y-shape\" is a nearby-looking geography answer, but the clue \"The Menomonee Valley along the Menomonee River in Milwaukee, Wisconsin has what peculiar s\" points to \"U-shape\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["V-shape","\"V-shape\" is a nearby-looking geography answer, but the clue \"The Menomonee Valley along the Menomonee River in Milwaukee, Wisconsin has what peculiar s\" points to \"U-shape\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -620,7 +620,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336061,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 61",
+    title: "US State of Owens Valley",
     prompt: "Owens Valley, the arid ranching valley of the Owens River, stretches for approximately 75 miles (120 km) on the territory of which US state?",
     correct: "California",
     wrong: [["Arkansas","\"Arkansas\" is a nearby-looking geography answer, but the clue \"Owens Valley, the arid ranching valley of the Owens River, stretches for approximately 75 \" points to \"California\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Alabama","\"Alabama\" is a nearby-looking geography answer, but the clue \"Owens Valley, the arid ranching valley of the Owens River, stretches for approximately 75 \" points to \"California\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Arizona","\"Arizona\" is a nearby-looking geography answer, but the clue \"Owens Valley, the arid ranching valley of the Owens River, stretches for approximately 75 \" points to \"California\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -630,7 +630,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336062,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 62",
+    title: "Puritan Preacher and Pioneer",
     prompt: "In 1643, a Native American uprising killed this unauthorized Puritan preacher of a dissident church discussion group, and pioneer in Rhode Island and the Bronx.",
     correct: "Anne Hutchinson",
     wrong: [["Peter Cooper","\"Peter Cooper\" is geographically plausible enough to distract, but the specific clue \"In 1643, a Native American uprising killed this unauthorized Puritan preacher of a disside\" points to \"Anne Hutchinson\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Richard Morris","\"Richard Morris\" is geographically plausible enough to distract, but the specific clue \"In 1643, a Native American uprising killed this unauthorized Puritan preacher of a disside\" points to \"Anne Hutchinson\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Roger Williams","\"Roger Williams\" is geographically plausible enough to distract, but the specific clue \"In 1643, a Native American uprising killed this unauthorized Puritan preacher of a disside\" points to \"Anne Hutchinson\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -640,7 +640,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336063,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 63",
+    title: "Capital of Arkansas",
     prompt: "Little Rock is the capital and most populous city of this US state.",
     correct: "Arkansas",
     wrong: [["Wichita","\"Wichita\" is geographically plausible enough to distract, but the specific clue \"Little Rock is the capital and most populous city of this US state.\" points to \"Arkansas\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Kansas","\"Kansas\" is geographically plausible enough to distract, but the specific clue \"Little Rock is the capital and most populous city of this US state.\" points to \"Arkansas\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Topeka","\"Topeka\" is geographically plausible enough to distract, but the specific clue \"Little Rock is the capital and most populous city of this US state.\" points to \"Arkansas\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -650,7 +650,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336064,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 64",
+    title: "US State Capital Trenton",
     prompt: "The capital city of this US state is Trenton, and its largest city is Newark.",
     correct: "New Jersey",
     wrong: [["Montana","\"Montana\" is geographically plausible enough to distract, but the specific clue \"The capital city of this US state is Trenton, and its largest city is Newark.\" points to \"New Jersey\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["New Hampshire","\"New Hampshire\" is geographically plausible enough to distract, but the specific clue \"The capital city of this US state is Trenton, and its largest city is Newark.\" points to \"New Jersey\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["New Mexico","\"New Mexico\" is geographically plausible enough to distract, but the specific clue \"The capital city of this US state is Trenton, and its largest city is Newark.\" points to \"New Jersey\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -660,7 +660,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336065,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 65",
+    title: "River Behind Nebraska's Name",
     prompt: "The name of this US state means flat water and is derived from the name of the Platte River that flows through the state.",
     correct: "Nebraska",
     wrong: [["Montana","\"Montana\" is a nearby-looking geography answer, but the clue \"The name of this US state means flat water and is derived from the name of the Platte Rive\" points to \"Nebraska\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Utah","\"Utah\" is a nearby-looking geography answer, but the clue \"The name of this US state means flat water and is derived from the name of the Platte Rive\" points to \"Nebraska\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Oklahoma","\"Oklahoma\" is a nearby-looking geography answer, but the clue \"The name of this US state means flat water and is derived from the name of the Platte Rive\" points to \"Nebraska\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -670,7 +670,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336066,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 66",
+    title: "Country Called Osterreich",
     prompt: "Which country is known as Österreich in their native language?",
     correct: "Austria",
     wrong: [["Bulgaria","\"Bulgaria\" is geographically plausible enough to distract, but the specific clue \"Which country is known as Österreich in their native language?\" points to \"Austria\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Germany","\"Germany\" is geographically plausible enough to distract, but the specific clue \"Which country is known as Österreich in their native language?\" points to \"Austria\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["The Netherlands","\"The Netherlands\" is geographically plausible enough to distract, but the specific clue \"Which country is known as Österreich in their native language?\" points to \"Austria\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -680,7 +680,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336067,
     chapter: "World Capitals",
-    title: "OpenTrivia Geography 67",
+    title: "De Facto Capital of the EU",
     prompt: "Which countrys capital city is considered de facto capital of the European Union?",
     correct: "Belgiums",
     wrong: [["UKs","\"UKs\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"Belgiums\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."],["Hollands","\"Hollands\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"Belgiums\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."],["Frances","\"Frances\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"Belgiums\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."]],
@@ -690,7 +690,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336068,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 68",
+    title: "Country North of the Danube",
     prompt: "Which country has the river Danube as most of its northern border?",
     correct: "Bulgaria",
     wrong: [["Austria","\"Austria\" is a nearby-looking geography answer, but the clue \"Which country has the river Danube as most of its northern border?\" points to \"Bulgaria\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Hungary","\"Hungary\" is a nearby-looking geography answer, but the clue \"Which country has the river Danube as most of its northern border?\" points to \"Bulgaria\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Romania","\"Romania\" is a nearby-looking geography answer, but the clue \"Which country has the river Danube as most of its northern border?\" points to \"Bulgaria\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -700,7 +700,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336069,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 69",
+    title: "First Nordic EU Member",
     prompt: "Which Nordic country was first to enter the European Union?",
     correct: "Denmark",
     wrong: [["Sweden","\"Sweden\" is geographically plausible enough to distract, but the specific clue \"Which Nordic country was first to enter the European Union?\" points to \"Denmark\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Finland","\"Finland\" is geographically plausible enough to distract, but the specific clue \"Which Nordic country was first to enter the European Union?\" points to \"Denmark\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Norway","\"Norway\" is geographically plausible enough to distract, but the specific clue \"Which Nordic country was first to enter the European Union?\" points to \"Denmark\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -710,7 +710,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336070,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 70",
+    title: "Country of Liberte, Egalite",
     prompt: "Which of the EU founding members is the country of Liberté, Égalité, Fraternité?",
     correct: "France",
     wrong: [["UK","\"UK\" is geographically plausible enough to distract, but the specific clue \"Which of the EU founding members is the country of Liberté, Égalité, Fraternité?\" points to \"France\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Germany","\"Germany\" is geographically plausible enough to distract, but the specific clue \"Which of the EU founding members is the country of Liberté, Égalité, Fraternité?\" points to \"France\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Italy","\"Italy\" is geographically plausible enough to distract, but the specific clue \"Which of the EU founding members is the country of Liberté, Égalité, Fraternité?\" points to \"France\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -720,7 +720,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336071,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 71",
+    title: "EU Member Partly in Africa",
     prompt: "Which country is the only member of the European Union that is partly located in Africa?",
     correct: "Spain",
     wrong: [["France","\"France\" is geographically plausible enough to distract, but the specific clue \"Which country is the only member of the European Union that is partly located in Africa?\" points to \"Spain\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["UK","\"UK\" is geographically plausible enough to distract, but the specific clue \"Which country is the only member of the European Union that is partly located in Africa?\" points to \"Spain\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Malta","\"Malta\" is geographically plausible enough to distract, but the specific clue \"Which country is the only member of the European Union that is partly located in Africa?\" points to \"Spain\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -730,7 +730,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336072,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 72",
+    title: "EU Member Below Sea Level",
     prompt: "Which EU member has a significant part of its territory below sea level?",
     correct: "The Netherlands",
     wrong: [["Belgium","\"Belgium\" is a nearby-looking geography answer, but the clue \"Which EU member has a significant part of its territory below sea level?\" points to \"The Netherlands\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Poland","\"Poland\" is a nearby-looking geography answer, but the clue \"Which EU member has a significant part of its territory below sea level?\" points to \"The Netherlands\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Estonia","\"Estonia\" is a nearby-looking geography answer, but the clue \"Which EU member has a significant part of its territory below sea level?\" points to \"The Netherlands\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -740,7 +740,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336073,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 73",
+    title: "Largest Medieval European Country",
     prompt: "Which EU member was the largest country in Europe in XIV century, but now has land area of just 65 000 sq. km?",
     correct: "Lithuania",
     wrong: [["Denmark","\"Denmark\" is geographically plausible enough to distract, but the specific clue \"Which EU member was the largest country in Europe in XIV century, but now has land area of\" points to \"Lithuania\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Austria","\"Austria\" is geographically plausible enough to distract, but the specific clue \"Which EU member was the largest country in Europe in XIV century, but now has land area of\" points to \"Lithuania\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Netherlands","\"Netherlands\" is geographically plausible enough to distract, but the specific clue \"Which EU member was the largest country in Europe in XIV century, but now has land area of\" points to \"Lithuania\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -750,7 +750,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336074,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 74",
+    title: "Smallest EU Founding Member",
     prompt: "Which mini country was among the European Union founding members?",
     correct: "Luxembourg",
     wrong: [["Malta","\"Malta\" is geographically plausible enough to distract, but the specific clue \"Which mini country was among the European Union founding members?\" points to \"Luxembourg\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Monaco","\"Monaco\" is geographically plausible enough to distract, but the specific clue \"Which mini country was among the European Union founding members?\" points to \"Luxembourg\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Liechtenstien","\"Liechtenstien\" is geographically plausible enough to distract, but the specific clue \"Which mini country was among the European Union founding members?\" points to \"Luxembourg\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -760,7 +760,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336075,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 75",
+    title: "Biggest EU Budget Contributor",
     prompt: "Which country is the biggest contributor to the European Union budget?",
     correct: "Germany",
     wrong: [["UK","\"UK\" is geographically plausible enough to distract, but the specific clue \"Which country is the biggest contributor to the European Union budget?\" points to \"Germany\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Italy","\"Italy\" is geographically plausible enough to distract, but the specific clue \"Which country is the biggest contributor to the European Union budget?\" points to \"Germany\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["France","\"France\" is geographically plausible enough to distract, but the specific clue \"Which country is the biggest contributor to the European Union budget?\" points to \"Germany\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -770,7 +770,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336076,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 76",
+    title: "Country That Rejected the EU",
     prompt: "Which country has twice rejected European Union membership in national referendums?",
     correct: "Norway",
     wrong: [["Poland","\"Poland\" is geographically plausible enough to distract, but the specific clue \"Which country has twice rejected European Union membership in national referendums?\" points to \"Norway\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Turkey","\"Turkey\" is geographically plausible enough to distract, but the specific clue \"Which country has twice rejected European Union membership in national referendums?\" points to \"Norway\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["UK","\"UK\" is geographically plausible enough to distract, but the specific clue \"Which country has twice rejected European Union membership in national referendums?\" points to \"Norway\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -780,7 +780,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336077,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 77",
+    title: "First to Reject Communist Rule",
     prompt: "Which European Union member was the first country to reject communist rule and thus sparkle the liberation of so called Eastern Block?",
     correct: "Poland",
     wrong: [["Czech Republic","\"Czech Republic\" is geographically plausible enough to distract, but the specific clue \"Which European Union member was the first country to reject communist rule and thus sparkl\" points to \"Poland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Romania","\"Romania\" is geographically plausible enough to distract, but the specific clue \"Which European Union member was the first country to reject communist rule and thus sparkl\" points to \"Poland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Germany","\"Germany\" is geographically plausible enough to distract, but the specific clue \"Which European Union member was the first country to reject communist rule and thus sparkl\" points to \"Poland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -790,7 +790,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336078,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 78",
+    title: "Youngest EU Member State",
     prompt: "Which country is the youngest independent state to be a member of the European Union? (It has been an independent country only since 1993.)",
     correct: "Slovakia",
     wrong: [["Montenegro","\"Montenegro\" is geographically plausible enough to distract, but the specific clue \"Which country is the youngest independent state to be a member of the European Union? (It \" points to \"Slovakia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Slovenia","\"Slovenia\" is geographically plausible enough to distract, but the specific clue \"Which country is the youngest independent state to be a member of the European Union? (It \" points to \"Slovakia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Cyprus","\"Cyprus\" is geographically plausible enough to distract, but the specific clue \"Which country is the youngest independent state to be a member of the European Union? (It \" points to \"Slovakia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -800,7 +800,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336079,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 79",
+    title: "Banking Country Outside the EU",
     prompt: "Which country associated with banking is not a member of the European Union?",
     correct: "Switzerland",
     wrong: [["Luxembourg","\"Luxembourg\" is geographically plausible enough to distract, but the specific clue \"Which country associated with banking is not a member of the European Union?\" points to \"Switzerland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["UK","\"UK\" is geographically plausible enough to distract, but the specific clue \"Which country associated with banking is not a member of the European Union?\" points to \"Switzerland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Austria","\"Austria\" is geographically plausible enough to distract, but the specific clue \"Which country associated with banking is not a member of the European Union?\" points to \"Switzerland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -810,7 +810,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336080,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 80",
+    title: "Country of the EU's Biggest Lake",
     prompt: "In which country is the European Union’s biggest lake located?",
     correct: "In Sweden",
     wrong: [["In Finland","\"In Finland\" is geographically plausible enough to distract, but the specific clue \"In which country is the European Union’s biggest lake located?\" points to \"In Sweden\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["In Poland","\"In Poland\" is geographically plausible enough to distract, but the specific clue \"In which country is the European Union’s biggest lake located?\" points to \"In Sweden\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["In Hungary","\"In Hungary\" is geographically plausible enough to distract, but the specific clue \"In which country is the European Union’s biggest lake located?\" points to \"In Sweden\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -820,7 +820,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336081,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 81",
+    title: "Muslim EU Candidate Country",
     prompt: "Which Muslim country was recognized as a candidate for accession in the EU on December 12th, 1999 at the Helsinki summit of the European Council?",
     correct: "Turkey",
     wrong: [["Israel","\"Israel\" is geographically plausible enough to distract, but the specific clue \"Which Muslim country was recognized as a candidate for accession in the EU on December 12t\" points to \"Turkey\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Morocco","\"Morocco\" is geographically plausible enough to distract, but the specific clue \"Which Muslim country was recognized as a candidate for accession in the EU on December 12t\" points to \"Turkey\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Syria","\"Syria\" is geographically plausible enough to distract, but the specific clue \"Which Muslim country was recognized as a candidate for accession in the EU on December 12t\" points to \"Turkey\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -830,7 +830,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336082,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 82",
+    title: "Sacred Temple Animals",
     prompt: "Wat Chiang Man is a temple in Thailand. In it, fifteen of these animals represent a sea of unformed matter upon which the cosmos of the Chedi floats.",
     correct: "Elephants",
     wrong: [["Fish","\"Fish\" is a nearby-looking geography answer, but the clue \"Wat Chiang Man is a temple in Thailand. In it, fifteen of these animals represent a sea of\" points to \"Elephants\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Monkeys","\"Monkeys\" is a nearby-looking geography answer, but the clue \"Wat Chiang Man is a temple in Thailand. In it, fifteen of these animals represent a sea of\" points to \"Elephants\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Birds","\"Birds\" is a nearby-looking geography answer, but the clue \"Wat Chiang Man is a temple in Thailand. In it, fifteen of these animals represent a sea of\" points to \"Elephants\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -840,7 +840,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336083,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 83",
+    title: "Place Not Fully on Islands",
     prompt: "Which EU country or US state is not entirely situated on (an) island(s)?",
     correct: "Rhode Island",
     wrong: [["UK","\"UK\" is geographically plausible enough to distract, but the specific clue \"Which EU country or US state is not entirely situated on (an) island(s)?\" points to \"Rhode Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Hawaii","\"Hawaii\" is geographically plausible enough to distract, but the specific clue \"Which EU country or US state is not entirely situated on (an) island(s)?\" points to \"Rhode Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Cyprus","\"Cyprus\" is geographically plausible enough to distract, but the specific clue \"Which EU country or US state is not entirely situated on (an) island(s)?\" points to \"Rhode Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -850,7 +850,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336084,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 84",
+    title: "First Country Attacked in WWII",
     prompt: "Which country or state was the first to be attacked in WWII?",
     correct: "Poland",
     wrong: [["Denmark","\"Denmark\" is geographically plausible enough to distract, but the specific clue \"Which country or state was the first to be attacked in WWII?\" points to \"Poland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Hawaii","\"Hawaii\" is geographically plausible enough to distract, but the specific clue \"Which country or state was the first to be attacked in WWII?\" points to \"Poland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["US Virgin Islands","\"US Virgin Islands\" is geographically plausible enough to distract, but the specific clue \"Which country or state was the first to be attacked in WWII?\" points to \"Poland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -860,7 +860,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336085,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 85",
+    title: "Longest Single-Country River",
     prompt: "Which river, flowing entirely through a single country or state, is the longest?",
     correct: "Vistula (Poland)",
     wrong: [["Loire (France)","\"Loire (France)\" is a nearby-looking geography answer, but the clue \"Which river, flowing entirely through a single country or state, is the longest?\" points to \"Vistula (Poland)\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Iowa (Iowa)","\"Iowa (Iowa)\" is a nearby-looking geography answer, but the clue \"Which river, flowing entirely through a single country or state, is the longest?\" points to \"Vistula (Poland)\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Illinois (Illinois)","\"Illinois (Illinois)\" is a nearby-looking geography answer, but the clue \"Which river, flowing entirely through a single country or state, is the longest?\" points to \"Vistula (Poland)\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -870,7 +870,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336086,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 86",
+    title: "Country Named for Its Capital",
     prompt: "Which of the following countries and states shares its name with its capital city?",
     correct: "Luxembourg",
     wrong: [["New York","\"New York\" is geographically plausible enough to distract, but the specific clue \"Which of the following countries and states shares its name with its capital city?\" points to \"Luxembourg\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Malta","\"Malta\" is geographically plausible enough to distract, but the specific clue \"Which of the following countries and states shares its name with its capital city?\" points to \"Luxembourg\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Oklahoma","\"Oklahoma\" is geographically plausible enough to distract, but the specific clue \"Which of the following countries and states shares its name with its capital city?\" points to \"Luxembourg\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -880,7 +880,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336087,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 87",
+    title: "US State of Birmingham",
     prompt: "Birmingham is the most populous city of which country or US state?",
     correct: "Alabama",
     wrong: [["Austria","\"Austria\" is geographically plausible enough to distract, but the specific clue \"Birmingham is the most populous city of which country or US state?\" points to \"Alabama\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["the UK","\"the UK\" is geographically plausible enough to distract, but the specific clue \"Birmingham is the most populous city of which country or US state?\" points to \"Alabama\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Utah","\"Utah\" is geographically plausible enough to distract, but the specific clue \"Birmingham is the most populous city of which country or US state?\" points to \"Alabama\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -900,7 +900,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336089,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 89",
+    title: "Colors of the Maltese Flag",
     prompt: "What two colors are featured on the flag and coat of arms of Malta, a country consisting of seven Mediterranean islands?",
     correct: "White and red",
     wrong: [["Green and black","\"Green and black\" is geographically plausible enough to distract, but the specific clue \"What two colors are featured on the flag and coat of arms of Malta, a country consisting o\" points to \"White and red\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Yellow and purple","\"Yellow and purple\" is geographically plausible enough to distract, but the specific clue \"What two colors are featured on the flag and coat of arms of Malta, a country consisting o\" points to \"White and red\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Blue and yellow","\"Blue and yellow\" is geographically plausible enough to distract, but the specific clue \"What two colors are featured on the flag and coat of arms of Malta, a country consisting o\" points to \"White and red\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -910,7 +910,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336090,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 90",
+    title: "Largest Mediterranean Island",
     prompt: "This island, on which the volcano Etna is situated, is the largest Mediterranean island.",
     correct: "Sicily",
     wrong: [["Corsica","\"Corsica\" is geographically plausible enough to distract, but the specific clue \"This island, on which the volcano Etna is situated, is the largest Mediterranean island.\" points to \"Sicily\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Rhodes","\"Rhodes\" is geographically plausible enough to distract, but the specific clue \"This island, on which the volcano Etna is situated, is the largest Mediterranean island.\" points to \"Sicily\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Sardinia","\"Sardinia\" is geographically plausible enough to distract, but the specific clue \"This island, on which the volcano Etna is situated, is the largest Mediterranean island.\" points to \"Sicily\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -920,7 +920,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336091,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 91",
+    title: "Birthplace of Napoleon",
     prompt: "Which French Mediterranean island is the birthplace of Napoléon Bonaparte?",
     correct: "Corsica",
     wrong: [["Cyprus","\"Cyprus\" is geographically plausible enough to distract, but the specific clue \"Which French Mediterranean island is the birthplace of Napoléon Bonaparte?\" points to \"Corsica\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Gozo","\"Gozo\" is geographically plausible enough to distract, but the specific clue \"Which French Mediterranean island is the birthplace of Napoléon Bonaparte?\" points to \"Corsica\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Montecristo","\"Montecristo\" is geographically plausible enough to distract, but the specific clue \"Which French Mediterranean island is the birthplace of Napoléon Bonaparte?\" points to \"Corsica\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -930,7 +930,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336092,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 92",
+    title: "Spanish Island in a Song",
     prompt: "Complete the lyrics of this 1999 hit single by the Vengaboys, referring to a Spanish island:",
     correct: "Ibiza",
     wrong: [["Majorca","\"Majorca\" is geographically plausible enough to distract, but the specific clue \"Complete the lyrics of this 1999 hit single by the Vengaboys, referring to a Spanish islan\" points to \"Ibiza\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Formentera","\"Formentera\" is geographically plausible enough to distract, but the specific clue \"Complete the lyrics of this 1999 hit single by the Vengaboys, referring to a Spanish islan\" points to \"Ibiza\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Cabrera","\"Cabrera\" is geographically plausible enough to distract, but the specific clue \"Complete the lyrics of this 1999 hit single by the Vengaboys, referring to a Spanish islan\" points to \"Ibiza\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -940,7 +940,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336093,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 93",
+    title: "Tunisian Island Attack Site",
     prompt: "On April 11, 2002, Al-Qaeda carried out a terrorist attack near a synagogue on which Tunisian island?",
     correct: "Djerba",
     wrong: [["Yalikavak","\"Yalikavak\" is geographically plausible enough to distract, but the specific clue \"On April 11, 2002, Al-Qaeda carried out a terrorist attack near a synagogue on which Tunis\" points to \"Djerba\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Salih Ada","\"Salih Ada\" is geographically plausible enough to distract, but the specific clue \"On April 11, 2002, Al-Qaeda carried out a terrorist attack near a synagogue on which Tunis\" points to \"Djerba\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Kargi Adasi","\"Kargi Adasi\" is geographically plausible enough to distract, but the specific clue \"On April 11, 2002, Al-Qaeda carried out a terrorist attack near a synagogue on which Tunis\" points to \"Djerba\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -950,7 +950,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336094,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 94",
+    title: "Trail of Tears",
     prompt: "In 1838 the Federal Indian Removal Policy was forced into effect by The Treaty of New Echota. Twenty Cherokee Indians, none elected officials of the Cherokee Nation, signed over all Cherokee Territory east of the Mississippi for five million dollars. The Cherokee Indians were then forced to march from their home in the mountain of North Carolina to Okalahoma. This journey became know by what name?",
     correct: "Trail of Tears",
     wrong: [["Journey of No Return","\"Journey of No Return\" is geographically plausible enough to distract, but the specific clue \"In 1838 the Federal Indian Removal Policy was forced into effect by The Treaty of New Echo\" points to \"Trail of Tears\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Cherokee Death March","\"Cherokee Death March\" is geographically plausible enough to distract, but the specific clue \"In 1838 the Federal Indian Removal Policy was forced into effect by The Treaty of New Echo\" points to \"Trail of Tears\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["March of Sorrow","\"March of Sorrow\" is geographically plausible enough to distract, but the specific clue \"In 1838 the Federal Indian Removal Policy was forced into effect by The Treaty of New Echo\" points to \"Trail of Tears\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -970,7 +970,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336096,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 96",
+    title: "Independence From Palestine Mandate",
     prompt: "What country gained independence from the British Mandate for Palestine in 1948?",
     correct: "Israel",
     wrong: [["Syria","\"Syria\" is geographically plausible enough to distract, but the specific clue \"What country gained independence from the British Mandate for Palestine in 1948?\" points to \"Israel\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Sierra Leone","\"Sierra Leone\" is geographically plausible enough to distract, but the specific clue \"What country gained independence from the British Mandate for Palestine in 1948?\" points to \"Israel\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Jordan","\"Jordan\" is geographically plausible enough to distract, but the specific clue \"What country gained independence from the British Mandate for Palestine in 1948?\" points to \"Israel\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -990,7 +990,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336098,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 98",
+    title: "Lewis and Clark River",
     prompt: "What river encountered during the Lewis and Clark expedition (1804-1806) flows directly into the Pacific Ocean between Washington and Oregon?",
     correct: "Columbia",
     wrong: [["Missouri","\"Missouri\" is a nearby-looking geography answer, but the clue \"What river encountered during the Lewis and Clark expedition (1804-1806) flows directly in\" points to \"Columbia\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Snake","\"Snake\" is a nearby-looking geography answer, but the clue \"What river encountered during the Lewis and Clark expedition (1804-1806) flows directly in\" points to \"Columbia\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Colorado","\"Colorado\" is a nearby-looking geography answer, but the clue \"What river encountered during the Lewis and Clark expedition (1804-1806) flows directly in\" points to \"Columbia\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1000,7 +1000,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336099,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 99",
+    title: "Captain Who Claimed Australia",
     prompt: "What sea captain claimed British possession of the eastern part of Australia in 1770 naming it New South Wales?",
     correct: "James Cook",
     wrong: [["Horatio Nelson","\"Horatio Nelson\" is a nearby-looking geography answer, but the clue \"What sea captain claimed British possession of the eastern part of Australia in 1770 namin\" points to \"James Cook\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Cuthbert Collingwood","\"Cuthbert Collingwood\" is a nearby-looking geography answer, but the clue \"What sea captain claimed British possession of the eastern part of Australia in 1770 namin\" points to \"James Cook\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Arthur Phillip","\"Arthur Phillip\" is a nearby-looking geography answer, but the clue \"What sea captain claimed British possession of the eastern part of Australia in 1770 namin\" points to \"James Cook\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1010,7 +1010,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336100,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 100",
+    title: "Birthplace of Che Guevara",
     prompt: "In what South American country was Che Ernesto Guevara born?",
     correct: "Argentina",
     wrong: [["Paraguay","\"Paraguay\" is geographically plausible enough to distract, but the specific clue \"In what South American country was Che Ernesto Guevara born?\" points to \"Argentina\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Bolivia","\"Bolivia\" is geographically plausible enough to distract, but the specific clue \"In what South American country was Che Ernesto Guevara born?\" points to \"Argentina\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Suriname","\"Suriname\" is geographically plausible enough to distract, but the specific clue \"In what South American country was Che Ernesto Guevara born?\" points to \"Argentina\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1030,7 +1030,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336102,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 102",
+    title: "Country Split After WWII",
     prompt: "After World War II, this country was split into two states which were not reunited until 1990.",
     correct: "Germany",
     wrong: [["France","\"France\" is geographically plausible enough to distract, but the specific clue \"After World War II, this country was split into two states which were not reunited until 1\" points to \"Germany\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Spain","\"Spain\" is geographically plausible enough to distract, but the specific clue \"After World War II, this country was split into two states which were not reunited until 1\" points to \"Germany\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Austria","\"Austria\" is geographically plausible enough to distract, but the specific clue \"After World War II, this country was split into two states which were not reunited until 1\" points to \"Germany\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1050,7 +1050,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336104,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 104",
+    title: "Homeland of Haile Selassie",
     prompt: "Rastafarianism is a religion that venerates Haile Selassie as a god. Haile Selassie was the emperor of the third most populous country in Africa. Name that country.",
     correct: "Ethiopia",
     wrong: [["Libya","\"Libya\" is geographically plausible enough to distract, but the specific clue \"Rastafarianism is a religion that venerates Haile Selassie as a god. Haile Selassie was th\" points to \"Ethiopia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Mozambique","\"Mozambique\" is geographically plausible enough to distract, but the specific clue \"Rastafarianism is a religion that venerates Haile Selassie as a god. Haile Selassie was th\" points to \"Ethiopia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Gabon","\"Gabon\" is geographically plausible enough to distract, but the specific clue \"Rastafarianism is a religion that venerates Haile Selassie as a god. Haile Selassie was th\" points to \"Ethiopia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1060,7 +1060,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336105,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 105",
+    title: "Densest Country in Asia",
     prompt: "Name Asias most densely populated country which has about three million people and an area of less than 250 square miles (402 km²).",
     correct: "Singapore",
     wrong: [["Hokkaido","\"Hokkaido\" is geographically plausible enough to distract, but the specific clue \"Name Asias most densely populated country which has about three million people and an area\" points to \"Singapore\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Taiwan","\"Taiwan\" is geographically plausible enough to distract, but the specific clue \"Name Asias most densely populated country which has about three million people and an area\" points to \"Singapore\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Laos","\"Laos\" is geographically plausible enough to distract, but the specific clue \"Name Asias most densely populated country which has about three million people and an area\" points to \"Singapore\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1070,7 +1070,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336106,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 106",
+    title: "Swiss City With WTO Headquarters",
     prompt: "In what city in Switzerland is the headquarters of the World Trade Organization (WTO) located?",
     correct: "Geneva",
     wrong: [["Berne","\"Berne\" is geographically plausible enough to distract, but the specific clue \"In what city in Switzerland is the headquarters of the World Trade Organization (WTO) loca\" points to \"Geneva\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Born","\"Born\" is geographically plausible enough to distract, but the specific clue \"In what city in Switzerland is the headquarters of the World Trade Organization (WTO) loca\" points to \"Geneva\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Bamako","\"Bamako\" is geographically plausible enough to distract, but the specific clue \"In what city in Switzerland is the headquarters of the World Trade Organization (WTO) loca\" points to \"Geneva\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1090,7 +1090,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336108,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 108",
+    title: "Dead Sea Cosmetics Company",
     prompt: "It has been found that the black mineral soil from the Dead Sea area of Israel helps maintain a good, young complexion. What is the name of the Israeli company that exports beauty products from the Dead Sea area?",
     correct: "Ahava",
     wrong: [["Naot","\"Naot\" is a nearby-looking geography answer, but the clue \"It has been found that the black mineral soil from the Dead Sea area of Israel helps maint\" points to \"Ahava\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Kfar Gideon","\"Kfar Gideon\" is a nearby-looking geography answer, but the clue \"It has been found that the black mineral soil from the Dead Sea area of Israel helps maint\" points to \"Ahava\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Rafaele","\"Rafaele\" is a nearby-looking geography answer, but the clue \"It has been found that the black mineral soil from the Dead Sea area of Israel helps maint\" points to \"Ahava\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1100,7 +1100,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336109,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 109",
+    title: "Makers of the Dead Sea Scrolls",
     prompt: "The Dead Sea Scrolls, found in caves at Qumran, are believed to have been made by a group of people called what?",
     correct: "Essenes",
     wrong: [["BHais","\"BHais\" is a nearby-looking geography answer, but the clue \"The Dead Sea Scrolls, found in caves at Qumran, are believed to have been made by a group \" points to \"Essenes\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Sircurai","\"Sircurai\" is a nearby-looking geography answer, but the clue \"The Dead Sea Scrolls, found in caves at Qumran, are believed to have been made by a group \" points to \"Essenes\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Sarafai","\"Sarafai\" is a nearby-looking geography answer, but the clue \"The Dead Sea Scrolls, found in caves at Qumran, are believed to have been made by a group \" points to \"Essenes\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1140,7 +1140,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336113,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 113",
+    title: "Husband Turned to Salt",
     prompt: "The Bible tells the story of a woman that was turned into a pillar of salt near the Dead Sea. Who was her famous husband?",
     correct: "Lot",
     wrong: [["Issac","\"Issac\" is a nearby-looking geography answer, but the clue \"The Bible tells the story of a woman that was turned into a pillar of salt near the Dead S\" points to \"Lot\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Abraham","\"Abraham\" is a nearby-looking geography answer, but the clue \"The Bible tells the story of a woman that was turned into a pillar of salt near the Dead S\" points to \"Lot\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Pharoah","\"Pharoah\" is a nearby-looking geography answer, but the clue \"The Bible tells the story of a woman that was turned into a pillar of salt near the Dead S\" points to \"Lot\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1150,7 +1150,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336114,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 114",
+    title: "Dead Sea Depth",
     prompt: "The Dead Sea, the lowest point on Earth, is how far below sea level?",
     correct: "418 meters",
     wrong: [["349 meters","\"349 meters\" is a nearby-looking geography answer, but the clue \"The Dead Sea, the lowest point on Earth, is how far below sea level?\" points to \"418 meters\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["517 meters","\"517 meters\" is a nearby-looking geography answer, but the clue \"The Dead Sea, the lowest point on Earth, is how far below sea level?\" points to \"418 meters\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["2608 meters","\"2608 meters\" is a nearby-looking geography answer, but the clue \"The Dead Sea, the lowest point on Earth, is how far below sea level?\" points to \"418 meters\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1160,7 +1160,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336115,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 115",
+    title: "Fortress Above the Dead Sea",
     prompt: "What was the name of the great fortification built in 37-31 BC by Roman king Herod I on a high hill above the Dead Sea?",
     correct: "Masada",
     wrong: [["Kadesh-Barnea","\"Kadesh-Barnea\" is a nearby-looking geography answer, but the clue \"What was the name of the great fortification built in 37-31 BC by Roman king Herod I on a \" points to \"Masada\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Herods Citadel","\"Herods Citadel\" is a nearby-looking geography answer, but the clue \"What was the name of the great fortification built in 37-31 BC by Roman king Herod I on a \" points to \"Masada\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Vespasians Citadel","\"Vespasians Citadel\" is a nearby-looking geography answer, but the clue \"What was the name of the great fortification built in 37-31 BC by Roman king Herod I on a \" points to \"Masada\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1170,7 +1170,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336116,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 116",
+    title: "Length of the Great Rift Valley",
     prompt: "The Dead Sea is part of the Great Rift Valley. How far does this valley extend in length?",
     correct: "3700 miles",
     wrong: [["6700 miles","\"6700 miles\" is a nearby-looking geography answer, but the clue \"The Dead Sea is part of the Great Rift Valley. How far does this valley extend in length?\" points to \"3700 miles\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["697 miles","\"697 miles\" is a nearby-looking geography answer, but the clue \"The Dead Sea is part of the Great Rift Valley. How far does this valley extend in length?\" points to \"3700 miles\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["1697 miles","\"1697 miles\" is a nearby-looking geography answer, but the clue \"The Dead Sea is part of the Great Rift Valley. How far does this valley extend in length?\" points to \"3700 miles\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1180,7 +1180,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336117,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 117",
+    title: "City of Tiananmen Square",
     prompt: "Tiananmen Square, which has been the site of a number of political events and student protests, is located in what Chinese city?",
     correct: "Beijing",
     wrong: [["Shanghai","\"Shanghai\" is geographically plausible enough to distract, but the specific clue \"Tiananmen Square, which has been the site of a number of political events and student prot\" points to \"Beijing\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Guangzhou","\"Guangzhou\" is geographically plausible enough to distract, but the specific clue \"Tiananmen Square, which has been the site of a number of political events and student prot\" points to \"Beijing\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Taipei","\"Taipei\" is geographically plausible enough to distract, but the specific clue \"Tiananmen Square, which has been the site of a number of political events and student prot\" points to \"Beijing\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1190,7 +1190,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336118,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 118",
+    title: "Square in Vatican City",
     prompt: "What famous square is located in Vatican City, the papal enclave within Rome?",
     correct: "St. Peters Square",
     wrong: [["Campo dei Fiori","\"Campo dei Fiori\" is geographically plausible enough to distract, but the specific clue \"What famous square is located in Vatican City, the papal enclave within Rome?\" points to \"St. Peters Square\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["St. Pauls Square","\"St. Pauls Square\" is geographically plausible enough to distract, but the specific clue \"What famous square is located in Vatican City, the papal enclave within Rome?\" points to \"St. Peters Square\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Piazza San Marco","\"Piazza San Marco\" is geographically plausible enough to distract, but the specific clue \"What famous square is located in Vatican City, the papal enclave within Rome?\" points to \"St. Peters Square\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1200,7 +1200,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336119,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 119",
+    title: "City of the Grand Place",
     prompt: "Grand Place, which is known for its large flower carpet, is the main square of this capital European city.",
     correct: "Brussels",
     wrong: [["Berlin","\"Berlin\" is geographically plausible enough to distract, but the specific clue \"Grand Place, which is known for its large flower carpet, is the main square of this capita\" points to \"Brussels\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Paris","\"Paris\" is geographically plausible enough to distract, but the specific clue \"Grand Place, which is known for its large flower carpet, is the main square of this capita\" points to \"Brussels\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Strasbourg","\"Strasbourg\" is geographically plausible enough to distract, but the specific clue \"Grand Place, which is known for its large flower carpet, is the main square of this capita\" points to \"Brussels\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1210,7 +1210,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336120,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 120",
+    title: "Mismatched Capital Square",
     prompt: "Which square is not correctly matched with the capital city in which it is located?",
     correct: "Azadi Square - Karachi",
     wrong: [["Red Square - Moscow","\"Red Square - Moscow\" is geographically plausible enough to distract, but the specific clue \"Which square is not correctly matched with the capital city in which it is located?\" points to \"Azadi Square - Karachi\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Senate Square - Helsinki","\"Senate Square - Helsinki\" is geographically plausible enough to distract, but the specific clue \"Which square is not correctly matched with the capital city in which it is located?\" points to \"Azadi Square - Karachi\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Leicester Square - London","\"Leicester Square - London\" is geographically plausible enough to distract, but the specific clue \"Which square is not correctly matched with the capital city in which it is located?\" points to \"Azadi Square - Karachi\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1220,7 +1220,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336121,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 121",
+    title: "City of St Mark's Square",
     prompt: "Piazza San Marco (St Marks Square), which Napoleon allegedly called The drawing room of Europe, is the principal square of this Italian city.",
     correct: "Venice",
     wrong: [["Florence","\"Florence\" is geographically plausible enough to distract, but the specific clue \"Piazza San Marco (St Marks Square), which Napoleon allegedly called The drawing room of Eu\" points to \"Venice\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Rome","\"Rome\" is geographically plausible enough to distract, but the specific clue \"Piazza San Marco (St Marks Square), which Napoleon allegedly called The drawing room of Eu\" points to \"Venice\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Milan","\"Milan\" is geographically plausible enough to distract, but the specific clue \"Piazza San Marco (St Marks Square), which Napoleon allegedly called The drawing room of Eu\" points to \"Venice\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1230,7 +1230,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336122,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 122",
+    title: "City of Revolution Square",
     prompt: "What city in Eastern Europe, often associated with the story of Dracula, is also famous for Revolution Square, which was the site of a 1989 revolt?",
     correct: "Bucharest",
     wrong: [["Warsaw","\"Warsaw\" is geographically plausible enough to distract, but the specific clue \"What city in Eastern Europe, often associated with the story of Dracula, is also famous fo\" points to \"Bucharest\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Budapest","\"Budapest\" is geographically plausible enough to distract, but the specific clue \"What city in Eastern Europe, often associated with the story of Dracula, is also famous fo\" points to \"Bucharest\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Prague","\"Prague\" is geographically plausible enough to distract, but the specific clue \"What city in Eastern Europe, often associated with the story of Dracula, is also famous fo\" points to \"Bucharest\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1270,7 +1270,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336126,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 126",
+    title: "Second Language of the Netherlands",
     prompt: "Dutch is the official language of the Netherlands. What is the second official language of the country?",
     correct: "Frisian",
     wrong: [["Low Saxon","\"Low Saxon\" is geographically plausible enough to distract, but the specific clue \"Dutch is the official language of the Netherlands. What is the second official language of\" points to \"Frisian\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["French","\"French\" is geographically plausible enough to distract, but the specific clue \"Dutch is the official language of the Netherlands. What is the second official language of\" points to \"Frisian\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["English","\"English\" is geographically plausible enough to distract, but the specific clue \"Dutch is the official language of the Netherlands. What is the second official language of\" points to \"Frisian\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1280,7 +1280,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336127,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 127",
+    title: "Divided Mediterranean Island",
     prompt: "What Mediterranean island is divided between a Greek community and a Turkish community (although the latter is not internationally recognized as a separate entity)?",
     correct: "Cyprus",
     wrong: [["Crete","\"Crete\" is geographically plausible enough to distract, but the specific clue \"What Mediterranean island is divided between a Greek community and a Turkish community (al\" points to \"Cyprus\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Corsica","\"Corsica\" is geographically plausible enough to distract, but the specific clue \"What Mediterranean island is divided between a Greek community and a Turkish community (al\" points to \"Cyprus\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Malta","\"Malta\" is geographically plausible enough to distract, but the specific clue \"What Mediterranean island is divided between a Greek community and a Turkish community (al\" points to \"Cyprus\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1290,7 +1290,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336128,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 128",
+    title: "Island Shared by Chile and Argentina",
     prompt: "What South American island is shared by Chile and Argentina?",
     correct: "Tierra Del Fuego",
     wrong: [["Islas Malvinas","\"Islas Malvinas\" is geographically plausible enough to distract, but the specific clue \"What South American island is shared by Chile and Argentina?\" points to \"Tierra Del Fuego\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Islas Galapagos","\"Islas Galapagos\" is geographically plausible enough to distract, but the specific clue \"What South American island is shared by Chile and Argentina?\" points to \"Tierra Del Fuego\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Isla De Pascua","\"Isla De Pascua\" is geographically plausible enough to distract, but the specific clue \"What South American island is shared by Chile and Argentina?\" points to \"Tierra Del Fuego\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1300,7 +1300,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336129,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 129",
+    title: "Disputed European Island",
     prompt: "What European island is partially occupied by a neighbouring island nation, which has led to centuries of dispute?",
     correct: "Ireland",
     wrong: [["Sardinia","\"Sardinia\" is geographically plausible enough to distract, but the specific clue \"What European island is partially occupied by a neighbouring island nation, which has led \" points to \"Ireland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Sicily","\"Sicily\" is geographically plausible enough to distract, but the specific clue \"What European island is partially occupied by a neighbouring island nation, which has led \" points to \"Ireland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Iceland","\"Iceland\" is geographically plausible enough to distract, but the specific clue \"What European island is partially occupied by a neighbouring island nation, which has led \" points to \"Ireland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1310,7 +1310,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336130,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 130",
+    title: "Island Shared by Haiti and DR",
     prompt: "What is the name of the island shared by Haiti and the Dominican Republic?",
     correct: "Hispaniola",
     wrong: [["Ile dHaiti","\"Ile dHaiti\" is geographically plausible enough to distract, but the specific clue \"What is the name of the island shared by Haiti and the Dominican Republic?\" points to \"Hispaniola\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Isla Dominica","\"Isla Dominica\" is geographically plausible enough to distract, but the specific clue \"What is the name of the island shared by Haiti and the Dominican Republic?\" points to \"Hispaniola\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Carib Island","\"Carib Island\" is geographically plausible enough to distract, but the specific clue \"What is the name of the island shared by Haiti and the Dominican Republic?\" points to \"Hispaniola\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1320,7 +1320,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336131,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 131",
+    title: "Caribbean Island Shared by Two",
     prompt: "This tiny Caribbean island is shared by France and the Netherlands.",
     correct: "St. Martin",
     wrong: [["St. Lucia","\"St. Lucia\" is geographically plausible enough to distract, but the specific clue \"This tiny Caribbean island is shared by France and the Netherlands.\" points to \"St. Martin\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["St. Mark","\"St. Mark\" is geographically plausible enough to distract, but the specific clue \"This tiny Caribbean island is shared by France and the Netherlands.\" points to \"St. Martin\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["St. Bartholomew","\"St. Bartholomew\" is geographically plausible enough to distract, but the specific clue \"This tiny Caribbean island is shared by France and the Netherlands.\" points to \"St. Martin\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1330,7 +1330,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336132,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 132",
+    title: "Nations Sharing Market Island",
     prompt: "The tiny island of Märket / Märketin in the Baltic Sea is shared by these two nations.",
     correct: "Finland and Sweden",
     wrong: [["Sweden and Denmark","\"Sweden and Denmark\" is a nearby-looking geography answer, but the clue \"The tiny island of Märket / Märketin in the Baltic Sea is shared by these two nations.\" points to \"Finland and Sweden\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Finland and Estonia","\"Finland and Estonia\" is a nearby-looking geography answer, but the clue \"The tiny island of Märket / Märketin in the Baltic Sea is shared by these two nations.\" points to \"Finland and Sweden\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Finland and Russia","\"Finland and Russia\" is a nearby-looking geography answer, but the clue \"The tiny island of Märket / Märketin in the Baltic Sea is shared by these two nations.\" points to \"Finland and Sweden\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1340,7 +1340,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336133,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 133",
+    title: "Country Sharing Sebatik Island",
     prompt: "The island of Sebatik, located east of Borneo, is shared by Indonesia and what other nation?",
     correct: "Malaysia",
     wrong: [["The Philippines","\"The Philippines\" is geographically plausible enough to distract, but the specific clue \"The island of Sebatik, located east of Borneo, is shared by Indonesia and what other natio\" points to \"Malaysia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Singapore","\"Singapore\" is geographically plausible enough to distract, but the specific clue \"The island of Sebatik, located east of Borneo, is shared by Indonesia and what other natio\" points to \"Malaysia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Brunei","\"Brunei\" is geographically plausible enough to distract, but the specific clue \"The island of Sebatik, located east of Borneo, is shared by Indonesia and what other natio\" points to \"Malaysia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1360,7 +1360,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336135,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 135",
+    title: "Ocean of the Mariana Trench",
     prompt: "The Marianas Trench, the deepest location on the surface of the Earths crust, lies in this ocean.",
     correct: "The Pacific Ocean",
     wrong: [["The Southern Ocean","\"The Southern Ocean\" is a nearby-looking geography answer, but the clue \"The Marianas Trench, the deepest location on the surface of the Earths crust, lies in this\" points to \"The Pacific Ocean\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Indian Ocean","\"The Indian Ocean\" is a nearby-looking geography answer, but the clue \"The Marianas Trench, the deepest location on the surface of the Earths crust, lies in this\" points to \"The Pacific Ocean\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Atlantic Ocean","\"The Atlantic Ocean\" is a nearby-looking geography answer, but the clue \"The Marianas Trench, the deepest location on the surface of the Earths crust, lies in this\" points to \"The Pacific Ocean\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1370,7 +1370,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336136,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 136",
+    title: "Meaning of Mare Pacificum",
     prompt: "The Pacific Ocean is the largest of the Earths oceanic divisions. Its name is derived from the Latin name Mare Pacificum which has the following meaning.",
     correct: "The Peaceful Sea",
     wrong: [["The Lonely Sea","\"The Lonely Sea\" is a nearby-looking geography answer, but the clue \"The Pacific Ocean is the largest of the Earths oceanic divisions. Its name is derived from\" points to \"The Peaceful Sea\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Smooth Sea","\"The Smooth Sea\" is a nearby-looking geography answer, but the clue \"The Pacific Ocean is the largest of the Earths oceanic divisions. Its name is derived from\" points to \"The Peaceful Sea\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1380,7 +1380,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336137,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 137",
+    title: "River Not in the Indian Ocean",
     prompt: "Which one of these Asian rivers does not flow into the Indian Ocean?",
     correct: "Saigon",
     wrong: [["Zambezi","\"Zambezi\" is a nearby-looking geography answer, but the clue \"Which one of these Asian rivers does not flow into the Indian Ocean?\" points to \"Saigon\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Indus","\"Indus\" is a nearby-looking geography answer, but the clue \"Which one of these Asian rivers does not flow into the Indian Ocean?\" points to \"Saigon\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Ganges","\"Ganges\" is a nearby-looking geography answer, but the clue \"Which one of these Asian rivers does not flow into the Indian Ocean?\" points to \"Saigon\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1410,7 +1410,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336140,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 140",
+    title: "Strait to the Atlantic",
     prompt: "The Mediterranean Sea is connected to the Atlantic Ocean by this strait.",
     correct: "The Strait of Gibraltar",
     wrong: [["The Dardanelles","\"The Dardanelles\" is a nearby-looking geography answer, but the clue \"The Mediterranean Sea is connected to the Atlantic Ocean by this strait.\" points to \"The Strait of Gibraltar\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Strait of Magellan","\"Strait of Magellan\" is a nearby-looking geography answer, but the clue \"The Mediterranean Sea is connected to the Atlantic Ocean by this strait.\" points to \"The Strait of Gibraltar\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Strait of Dover","\"Strait of Dover\" is a nearby-looking geography answer, but the clue \"The Mediterranean Sea is connected to the Atlantic Ocean by this strait.\" points to \"The Strait of Gibraltar\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1420,7 +1420,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336141,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 141",
+    title: "Country of Ile Notre-Dame",
     prompt: "The famous Île Notre-Dame, an artificial island built from earth excavated for a metropolitan railway, is located in which country?",
     correct: "Canada",
     wrong: [["England","\"England\" is geographically plausible enough to distract, but the specific clue \"The famous Île Notre-Dame, an artificial island built from earth excavated for a metropoli\" points to \"Canada\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["France","\"France\" is geographically plausible enough to distract, but the specific clue \"The famous Île Notre-Dame, an artificial island built from earth excavated for a metropoli\" points to \"Canada\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Switzerland","\"Switzerland\" is geographically plausible enough to distract, but the specific clue \"The famous Île Notre-Dame, an artificial island built from earth excavated for a metropoli\" points to \"Canada\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1430,7 +1430,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336142,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 142",
+    title: "Artificial Island in Tokyo Bay",
     prompt: "What is the popular name of the artificial island in Tokyo Bay, whose name is Yume No Shima in Japanese?",
     correct: "Dream Island",
     wrong: [["Water Lilly","\"Water Lilly\" is geographically plausible enough to distract, but the specific clue \"What is the popular name of the artificial island in Tokyo Bay, whose name is Yume No Shim\" points to \"Dream Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Wind Island","\"Wind Island\" is geographically plausible enough to distract, but the specific clue \"What is the popular name of the artificial island in Tokyo Bay, whose name is Yume No Shim\" points to \"Dream Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Sun Island","\"Sun Island\" is geographically plausible enough to distract, but the specific clue \"What is the popular name of the artificial island in Tokyo Bay, whose name is Yume No Shim\" points to \"Dream Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1440,7 +1440,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336143,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 143",
+    title: "Man-Made Island Near Singapore",
     prompt: "Which man-made island, located to the southwest of Singapore, was created by joining several natural islands?",
     correct: "Jurong Island",
     wrong: [["Formoza","\"Formoza\" is geographically plausible enough to distract, but the specific clue \"Which man-made island, located to the southwest of Singapore, was created by joining sever\" points to \"Jurong Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Spiral Island","\"Spiral Island\" is geographically plausible enough to distract, but the specific clue \"Which man-made island, located to the southwest of Singapore, was created by joining sever\" points to \"Jurong Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Neeltje-Jans","\"Neeltje-Jans\" is geographically plausible enough to distract, but the specific clue \"Which man-made island, located to the southwest of Singapore, was created by joining sever\" points to \"Jurong Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1450,7 +1450,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336144,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 144",
+    title: "Artificial Island in Gatun Lake",
     prompt: "What is the name of the artificial island located in the Gatun Lake portion of the Panama Canal?",
     correct: "Barro Colorado Island",
     wrong: [["Thilafushi","\"Thilafushi\" is geographically plausible enough to distract, but the specific clue \"What is the name of the artificial island located in the Gatun Lake portion of the Panama \" points to \"Barro Colorado Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Shui Keng Teng","\"Shui Keng Teng\" is geographically plausible enough to distract, but the specific clue \"What is the name of the artificial island located in the Gatun Lake portion of the Panama \" points to \"Barro Colorado Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Chubu","\"Chubu\" is geographically plausible enough to distract, but the specific clue \"What is the name of the artificial island located in the Gatun Lake portion of the Panama \" points to \"Barro Colorado Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1460,7 +1460,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336145,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 145",
+    title: "Artificial Island in the Danube",
     prompt: "Which 20-kilometre artificial island, situated in the river Danube, was nicknamed the Copa Kagrana?",
     correct: "Donauinsel",
     wrong: [["Peberholm","\"Peberholm\" is a nearby-looking geography answer, but the clue \"Which 20-kilometre artificial island, situated in the river Danube, was nicknamed the Copa\" points to \"Donauinsel\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Burj al-Arab","\"Burj al-Arab\" is a nearby-looking geography answer, but the clue \"Which 20-kilometre artificial island, situated in the river Danube, was nicknamed the Copa\" points to \"Donauinsel\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Odaiba","\"Odaiba\" is a nearby-looking geography answer, but the clue \"Which 20-kilometre artificial island, situated in the river Danube, was nicknamed the Copa\" points to \"Donauinsel\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1470,7 +1470,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336146,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 146",
+    title: "Country of Rokko Island",
     prompt: "Rokko Island is a reclaimed, artificial island built as part of Kobe's waterfront development. If Kobe is the clue, which country is Rokko Island in?",
     correct: "Japan",
     wrong: [["France","\"France\" is geographically plausible enough to distract, but the specific clue \"Rokko Island is a reclaimed, artificial island built as part of Kobe's waterfront developm\" points to \"Japan\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["China","\"China\" is geographically plausible enough to distract, but the specific clue \"Rokko Island is a reclaimed, artificial island built as part of Kobe's waterfront developm\" points to \"Japan\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["The Netherlands","\"The Netherlands\" is geographically plausible enough to distract, but the specific clue \"Rokko Island is a reclaimed, artificial island built as part of Kobe's waterfront developm\" points to \"Japan\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1487,7 +1487,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336147,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 147",
+    title: "Artificial Island in San Francisco Bay",
     prompt: "Which artificial island is situated in San Francisco Bay, between San Francisco and Oakland?",
     correct: "Treasure Island",
     wrong: [["Hulhumalé","\"Hulhumalé\" is geographically plausible enough to distract, but the specific clue \"Which artificial island is situated in San Francisco Bay, between San Francisco and Oaklan\" points to \"Treasure Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Port Island","\"Port Island\" is geographically plausible enough to distract, but the specific clue \"Which artificial island is situated in San Francisco Bay, between San Francisco and Oaklan\" points to \"Treasure Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Flakfortet","\"Flakfortet\" is geographically plausible enough to distract, but the specific clue \"Which artificial island is situated in San Francisco Bay, between San Francisco and Oaklan\" points to \"Treasure Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1497,7 +1497,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336148,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 148",
+    title: "Artificial Island Pepper Islet",
     prompt: "This artificial island, whose name literally means Pepper Islet, is part of the Oresund Bridge, connecting Denmark with Sweden.",
     correct: "Peberholm",
     wrong: [["Kansai","\"Kansai\" is geographically plausible enough to distract, but the specific clue \"This artificial island, whose name literally means Pepper Islet, is part of the Oresund Br\" points to \"Peberholm\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Flakfortet","\"Flakfortet\" is geographically plausible enough to distract, but the specific clue \"This artificial island, whose name literally means Pepper Islet, is part of the Oresund Br\" points to \"Peberholm\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Palm Islands","\"Palm Islands\" is geographically plausible enough to distract, but the specific clue \"This artificial island, whose name literally means Pepper Islet, is part of the Oresund Br\" points to \"Peberholm\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1507,7 +1507,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336149,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 149",
+    title: "Sea of Spiral Island",
     prompt: "Spiral Island, a small Mexican artificial floating island, was situated on the coast of which sea?",
     correct: "The Caribbean Sea",
     wrong: [["The Black Sea","\"The Black Sea\" is a nearby-looking geography answer, but the clue \"Spiral Island, a small Mexican artificial floating island, was situated on the coast of wh\" points to \"The Caribbean Sea\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Aegean Sea","\"The Aegean Sea\" is a nearby-looking geography answer, but the clue \"Spiral Island, a small Mexican artificial floating island, was situated on the coast of wh\" points to \"The Caribbean Sea\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The North Sea","\"The North Sea\" is a nearby-looking geography answer, but the clue \"Spiral Island, a small Mexican artificial floating island, was situated on the coast of wh\" points to \"The Caribbean Sea\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1517,7 +1517,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336150,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 150",
+    title: "Non-Founder of the EEC",
     prompt: "Which country was not among the founding states of the European Economic Community (the European Union predecessor)?",
     correct: "UK",
     wrong: [["Luxembourg","\"Luxembourg\" is geographically plausible enough to distract, but the specific clue \"Which country was not among the founding states of the European Economic Community (the Eu\" points to \"UK\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Italy","\"Italy\" is geographically plausible enough to distract, but the specific clue \"Which country was not among the founding states of the European Economic Community (the Eu\" points to \"UK\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["France","\"France\" is geographically plausible enough to distract, but the specific clue \"Which country was not among the founding states of the European Economic Community (the Eu\" points to \"UK\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1527,7 +1527,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336151,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 151",
+    title: "Country That Rejected the EU",
     prompt: "The citizens of which country rejected the idea of joining the EU in 1972 and again in 1994?",
     correct: "Norway",
     wrong: [["Denmark","\"Denmark\" is geographically plausible enough to distract, but the specific clue \"The citizens of which country rejected the idea of joining the EU in 1972 and again in 199\" points to \"Norway\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Iceland","\"Iceland\" is geographically plausible enough to distract, but the specific clue \"The citizens of which country rejected the idea of joining the EU in 1972 and again in 199\" points to \"Norway\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Finland","\"Finland\" is geographically plausible enough to distract, but the specific clue \"The citizens of which country rejected the idea of joining the EU in 1972 and again in 199\" points to \"Norway\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1537,7 +1537,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336152,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 152",
+    title: "US State With Capital Montgomery",
     prompt: "Montgomery is the capital city of this US state, and its largest city is Birmingham.",
     correct: "Alabama",
     wrong: [["Arizona","\"Arizona\" is geographically plausible enough to distract, but the specific clue \"Montgomery is the capital city of this US state, and its largest city is Birmingham.\" points to \"Alabama\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Alaska","\"Alaska\" is geographically plausible enough to distract, but the specific clue \"Montgomery is the capital city of this US state, and its largest city is Birmingham.\" points to \"Alabama\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Arkansas","\"Arkansas\" is geographically plausible enough to distract, but the specific clue \"Montgomery is the capital city of this US state, and its largest city is Birmingham.\" points to \"Alabama\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1557,7 +1557,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336154,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 154",
+    title: "US State of Summerfest",
     prompt: "The largest city in what US state hosts Summerfest, or The Worlds Largest Music Festival?",
     correct: "Wisconsin",
     wrong: [["New Jersey","\"New Jersey\" is geographically plausible enough to distract, but the specific clue \"The largest city in what US state hosts Summerfest, or The Worlds Largest Music Festival?\" points to \"Wisconsin\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Kentucky","\"Kentucky\" is geographically plausible enough to distract, but the specific clue \"The largest city in what US state hosts Summerfest, or The Worlds Largest Music Festival?\" points to \"Wisconsin\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Maryland","\"Maryland\" is geographically plausible enough to distract, but the specific clue \"The largest city in what US state hosts Summerfest, or The Worlds Largest Music Festival?\" points to \"Wisconsin\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1567,7 +1567,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336155,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 155",
+    title: "US State Meaning Great River",
     prompt: "The name of this US state means great river and its symbol is the magnolia tree.",
     correct: "Mississippi",
     wrong: [["Missouri","\"Missouri\" is a nearby-looking geography answer, but the clue \"The name of this US state means great river and its symbol is the magnolia tree.\" points to \"Mississippi\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Massachusetts","\"Massachusetts\" is a nearby-looking geography answer, but the clue \"The name of this US state means great river and its symbol is the magnolia tree.\" points to \"Mississippi\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Minnesota","\"Minnesota\" is a nearby-looking geography answer, but the clue \"The name of this US state means great river and its symbol is the magnolia tree.\" points to \"Mississippi\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1577,7 +1577,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336156,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 156",
+    title: "US State of Fargo",
     prompt: "The city of Fargo is the largest city in which of these U.S. states?",
     correct: "North Dakota",
     wrong: [["North Carolina","\"North Carolina\" is geographically plausible enough to distract, but the specific clue \"The city of Fargo is the largest city in which of these U.S. states?\" points to \"North Dakota\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["South Dakota","\"South Dakota\" is geographically plausible enough to distract, but the specific clue \"The city of Fargo is the largest city in which of these U.S. states?\" points to \"North Dakota\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["South Carolina","\"South Carolina\" is geographically plausible enough to distract, but the specific clue \"The city of Fargo is the largest city in which of these U.S. states?\" points to \"North Dakota\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1617,7 +1617,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336160,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 160",
+    title: "Sea Linked by the Kerch Strait",
     prompt: "The Black Sea drains into the Atlantic Ocean via the Sea of Marmara and the Mediterranean Sea on the South West. On the other, North East side of the Black Sea, there is a small sea which is connected to the Black Sea via the Strait of Kerch. Name this sea.",
     correct: "The Sea of Azov",
     wrong: [["The White Sea","\"The White Sea\" is a nearby-looking geography answer, but the clue \"The Black Sea drains into the Atlantic Ocean via the Sea of Marmara and the Mediterranean \" points to \"The Sea of Azov\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Caspian Sea","\"The Caspian Sea\" is a nearby-looking geography answer, but the clue \"The Black Sea drains into the Atlantic Ocean via the Sea of Marmara and the Mediterranean \" points to \"The Sea of Azov\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Aral Sea","\"The Aral Sea\" is a nearby-looking geography answer, but the clue \"The Black Sea drains into the Atlantic Ocean via the Sea of Marmara and the Mediterranean \" points to \"The Sea of Azov\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1627,7 +1627,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336161,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 161",
+    title: "Longest Black Sea Coast",
     prompt: "Six countries are located along the Black Sea border. Which one among them has the longest Black Sea coast line (not including the Sea of Azov coast line)?",
     correct: "Turkey",
     wrong: [["Romania","\"Romania\" is a nearby-looking geography answer, but the clue \"Six countries are located along the Black Sea border. Which one among them has the longest\" points to \"Turkey\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Russia","\"Russia\" is a nearby-looking geography answer, but the clue \"Six countries are located along the Black Sea border. Which one among them has the longest\" points to \"Turkey\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Ukraine","\"Ukraine\" is a nearby-looking geography answer, but the clue \"Six countries are located along the Black Sea border. Which one among them has the longest\" points to \"Turkey\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1637,7 +1637,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336162,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 162",
+    title: "Biggest City on the Black Sea",
     prompt: "Not counting Istanbul, which of these cities is located on Bosphorus on the side of the Sea of Marmara and is the biggest city on the coast of the Black Sea?",
     correct: "Odessa, Ukraine",
     wrong: [["Trabzon, Turkey","\"Trabzon, Turkey\" is a nearby-looking geography answer, but the clue \"Not counting Istanbul, which of these cities is located on Bosphorus on the side of the Se\" points to \"Odessa, Ukraine\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Sukhumi, Georgia","\"Sukhumi, Georgia\" is a nearby-looking geography answer, but the clue \"Not counting Istanbul, which of these cities is located on Bosphorus on the side of the Se\" points to \"Odessa, Ukraine\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Varna, Bulgaria","\"Varna, Bulgaria\" is a nearby-looking geography answer, but the clue \"Not counting Istanbul, which of these cities is located on Bosphorus on the side of the Se\" points to \"Odessa, Ukraine\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1647,7 +1647,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336163,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 163",
+    title: "Country of Two D-Rivers",
     prompt: "The names of three large rivers flowing into the Black Sea begin with a letter D. Danube, the largest of the three, flows through ten European countries and enters the Black Sea in Romania. The other two end their flow in this country.",
     correct: "Ukraine",
     wrong: [["Bulgaria","\"Bulgaria\" is a nearby-looking geography answer, but the clue \"The names of three large rivers flowing into the Black Sea begin with a letter D. Danube, \" points to \"Ukraine\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Turkey","\"Turkey\" is a nearby-looking geography answer, but the clue \"The names of three large rivers flowing into the Black Sea begin with a letter D. Danube, \" points to \"Ukraine\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Russia","\"Russia\" is a nearby-looking geography answer, but the clue \"The names of three large rivers flowing into the Black Sea begin with a letter D. Danube, \" points to \"Ukraine\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1657,7 +1657,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336164,
     chapter: "World Capitals",
-    title: "OpenTrivia Geography 164",
+    title: "Republic With Capital Sukhumi",
     prompt: "The Black Sea city of Sukhumi is the capital of this republic that proclaimed its independence from Georgia in the 90s.",
     correct: "Abkhazia",
     wrong: [["Ajaria","\"Ajaria\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"Abkhazia\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."],["Iberia","\"Iberia\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"Abkhazia\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."],["Ossetia","\"Ossetia\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"Abkhazia\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."]],
@@ -1667,7 +1667,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336165,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 165",
+    title: "Gas Missing in the Black Sea",
     prompt: "The Black Sea, whose waters are known to be meromictic, is the largest water basin in the world where water layers do not intermix, and, thus, lack the dissolved form of what?",
     correct: "Oxygen",
     wrong: [["Salt","\"Salt\" is a nearby-looking geography answer, but the clue \"The Black Sea, whose waters are known to be meromictic, is the largest water basin in the \" points to \"Oxygen\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Nitrogen","\"Nitrogen\" is a nearby-looking geography answer, but the clue \"The Black Sea, whose waters are known to be meromictic, is the largest water basin in the \" points to \"Oxygen\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Hydrogen Sulfide","\"Hydrogen Sulfide\" is a nearby-looking geography answer, but the clue \"The Black Sea, whose waters are known to be meromictic, is the largest water basin in the \" points to \"Oxygen\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1677,7 +1677,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336166,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 166",
+    title: "Land North of the Black Sea",
     prompt: "From the viewpoint of physical geography and ecology, the Ukrainian territories to the north of the Black Sea are known to contain what?",
     correct: "Steppes or plains",
     wrong: [["Low hills and forests","\"Low hills and forests\" is a nearby-looking geography answer, but the clue \"From the viewpoint of physical geography and ecology, the Ukrainian territories to the nor\" points to \"Steppes or plains\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Mountains","\"Mountains\" is a nearby-looking geography answer, but the clue \"From the viewpoint of physical geography and ecology, the Ukrainian territories to the nor\" points to \"Steppes or plains\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Sand desert","\"Sand desert\" is a nearby-looking geography answer, but the clue \"From the viewpoint of physical geography and ecology, the Ukrainian territories to the nor\" points to \"Steppes or plains\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1687,7 +1687,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336167,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 167",
+    title: "Why the Sea of Azov Is Unique",
     prompt: "The Black Sea reaches the maximum depth of 2,210 m. Its neighbor, the Sea of Azov, is unique in terms of sea depth for what reason?",
     correct: "It is the shallowest sea in the world.",
     wrong: [["Its floor sinks constantly because it is located on a large basalt plate.","\"Its floor sinks constantly because it is located on a large basalt plate.\" is a nearby-looking geography answer, but the clue \"The Black Sea reaches the maximum depth of 2,210 m. Its neighbor, the Sea of Azov, is uniq\" points to \"It is the shallowest sea in the world.\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["It has almost perfectly flat sea floor with a depth of 1370 m.","\"It has almost perfectly flat sea floor with a depth of 1370 m.\" is a nearby-looking geography answer, but the clue \"The Black Sea reaches the maximum depth of 2,210 m. Its neighbor, the Sea of Azov, is uniq\" points to \"It is the shallowest sea in the world.\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["It has no established sea floor, it changes constantly with currents.","\"It has no established sea floor, it changes constantly with currents.\" is a nearby-looking geography answer, but the clue \"The Black Sea reaches the maximum depth of 2,210 m. Its neighbor, the Sea of Azov, is uniq\" points to \"It is the shallowest sea in the world.\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1697,7 +1697,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336168,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 168",
+    title: "Not Around the Black Sea",
     prompt: "All these entities are located around the Black Sea except for one. Name the exception.",
     correct: "Ural mountains",
     wrong: [["Balkan peninsula","\"Balkan peninsula\" is a nearby-looking geography answer, but the clue \"All these entities are located around the Black Sea except for one. Name the exception.\" points to \"Ural mountains\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Caucasus mountains","\"Caucasus mountains\" is a nearby-looking geography answer, but the clue \"All these entities are located around the Black Sea except for one. Name the exception.\" points to \"Ural mountains\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Anatolia","\"Anatolia\" is a nearby-looking geography answer, but the clue \"All these entities are located around the Black Sea except for one. Name the exception.\" points to \"Ural mountains\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1707,7 +1707,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336169,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 169",
+    title: "Border at Everest's Summit",
     prompt: "The summit ridge of Mount Everest marks the border between which two Asian countries?",
     correct: "China and Nepal",
     wrong: [["India and China","\"India and China\" is geographically plausible enough to distract, but the specific clue \"The summit ridge of Mount Everest marks the border between which two Asian countries?\" points to \"China and Nepal\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Nepal and India","\"Nepal and India\" is geographically plausible enough to distract, but the specific clue \"The summit ridge of Mount Everest marks the border between which two Asian countries?\" points to \"China and Nepal\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["China and Georgia","\"China and Georgia\" is geographically plausible enough to distract, but the specific clue \"The summit ridge of Mount Everest marks the border between which two Asian countries?\" points to \"China and Nepal\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1717,7 +1717,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336170,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 170",
+    title: "Profession of George Everest",
     prompt: "The highest mountain in the world is named after Sir George Everest, a famous Welshman. What was his profession?",
     correct: "Surveyor and geographer",
     wrong: [["Defender of human rights","\"Defender of human rights\" is geographically plausible enough to distract, but the specific clue \"The highest mountain in the world is named after Sir George Everest, a famous Welshman. Wh\" points to \"Surveyor and geographer\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Actor","\"Actor\" is geographically plausible enough to distract, but the specific clue \"The highest mountain in the world is named after Sir George Everest, a famous Welshman. Wh\" points to \"Surveyor and geographer\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["President","\"President\" is geographically plausible enough to distract, but the specific clue \"The highest mountain in the world is named after Sir George Everest, a famous Welshman. Wh\" points to \"Surveyor and geographer\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1727,7 +1727,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336171,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 171",
+    title: "Edmund Hillary's Home Country",
     prompt: "Edmund Hillary, the first mountaineer to reach mount Everest, was from what country?",
     correct: "New Zealand",
     wrong: [["The USA","\"The USA\" is geographically plausible enough to distract, but the specific clue \"Edmund Hillary, the first mountaineer to reach mount Everest, was from what country?\" points to \"New Zealand\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Great Britain","\"Great Britain\" is geographically plausible enough to distract, but the specific clue \"Edmund Hillary, the first mountaineer to reach mount Everest, was from what country?\" points to \"New Zealand\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Norway","\"Norway\" is geographically plausible enough to distract, but the specific clue \"Edmund Hillary, the first mountaineer to reach mount Everest, was from what country?\" points to \"New Zealand\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1754,7 +1754,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336173,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 173",
+    title: "Second-Largest Island",
     prompt: "This island, located north of Australia, is the second-largest island on the planet.",
     correct: "New Guinea",
     wrong: [["Tasmania","\"Tasmania\" is geographically plausible enough to distract, but the specific clue \"This island, located north of Australia, is the second-largest island on the planet.\" points to \"New Guinea\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["South Island","\"South Island\" is geographically plausible enough to distract, but the specific clue \"This island, located north of Australia, is the second-largest island on the planet.\" points to \"New Guinea\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Sri Lanka","\"Sri Lanka\" is geographically plausible enough to distract, but the specific clue \"This island, located north of Australia, is the second-largest island on the planet.\" points to \"New Guinea\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1764,7 +1764,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336174,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 174",
+    title: "Third-Largest Island",
     prompt: "This is the third-largest island on the planet, and it is also known as Kalimantan.",
     correct: "Borneo",
     wrong: [["Bali","\"Bali\" is geographically plausible enough to distract, but the specific clue \"This is the third-largest island on the planet, and it is also known as Kalimantan.\" points to \"Borneo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Taiwan","\"Taiwan\" is geographically plausible enough to distract, but the specific clue \"This is the third-largest island on the planet, and it is also known as Kalimantan.\" points to \"Borneo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Java","\"Java\" is geographically plausible enough to distract, but the specific clue \"This is the third-largest island on the planet, and it is also known as Kalimantan.\" points to \"Borneo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1774,7 +1774,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336175,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 175",
+    title: "Fourth-Largest Island",
     prompt: "This is the fourth-largest island in the world, and it is home to 5% of the plant and animal species on the planet.",
     correct: "Madagascar",
     wrong: [["Jamaica","\"Jamaica\" is geographically plausible enough to distract, but the specific clue \"This is the fourth-largest island in the world, and it is home to 5% of the plant and anim\" points to \"Madagascar\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Tasmania","\"Tasmania\" is geographically plausible enough to distract, but the specific clue \"This is the fourth-largest island in the world, and it is home to 5% of the plant and anim\" points to \"Madagascar\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Cuba","\"Cuba\" is geographically plausible enough to distract, but the specific clue \"This is the fourth-largest island in the world, and it is home to 5% of the plant and anim\" points to \"Madagascar\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1784,7 +1784,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336176,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 176",
+    title: "Largest European Island",
     prompt: "This is the largest European island, and the ninth-largest island on the planet.",
     correct: "None of these",
     wrong: [["Sicily","\"Sicily\" is geographically plausible enough to distract, but the specific clue \"This is the largest European island, and the ninth-largest island on the planet.\" points to \"None of these\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Sardinia","\"Sardinia\" is geographically plausible enough to distract, but the specific clue \"This is the largest European island, and the ninth-largest island on the planet.\" points to \"None of these\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Cyprus","\"Cyprus\" is geographically plausible enough to distract, but the specific clue \"This is the largest European island, and the ninth-largest island on the planet.\" points to \"None of these\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1794,7 +1794,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336177,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 177",
+    title: "Largest Island of Canada",
     prompt: "What is the largest island of Canada, and the fifth-largest island in the world?",
     correct: "Baffin Island",
     wrong: [["Victoria Island","\"Victoria Island\" is geographically plausible enough to distract, but the specific clue \"What is the largest island of Canada, and the fifth-largest island in the world?\" points to \"Baffin Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Banks Island","\"Banks Island\" is geographically plausible enough to distract, but the specific clue \"What is the largest island of Canada, and the fifth-largest island in the world?\" points to \"Baffin Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Devon Island","\"Devon Island\" is geographically plausible enough to distract, but the specific clue \"What is the largest island of Canada, and the fifth-largest island in the world?\" points to \"Baffin Island\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1814,7 +1814,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336179,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 179",
+    title: "Island Also Called Ceylon",
     prompt: "This island is located in the Indian Ocean and is also known as Ceylon.",
     correct: "Sri Lanka",
     wrong: [["Borneo","\"Borneo\" is a nearby-looking geography answer, but the clue \"This island is located in the Indian Ocean and is also known as Ceylon.\" points to \"Sri Lanka\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Taiwan","\"Taiwan\" is a nearby-looking geography answer, but the clue \"This island is located in the Indian Ocean and is also known as Ceylon.\" points to \"Sri Lanka\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Sumatra","\"Sumatra\" is a nearby-looking geography answer, but the clue \"This island is located in the Indian Ocean and is also known as Ceylon.\" points to \"Sri Lanka\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1844,7 +1844,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336182,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 182",
+    title: "First to Reach the Arctic Ocean",
     prompt: "In 1728, he became the first person to sail into the Arctic Ocean and proved that Asia and North America are not joined by land.",
     correct: "Bering",
     wrong: [["Cook","\"Cook\" is a nearby-looking geography answer, but the clue \"In 1728, he became the first person to sail into the Arctic Ocean and proved that Asia and\" points to \"Bering\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Scott","\"Scott\" is a nearby-looking geography answer, but the clue \"In 1728, he became the first person to sail into the Arctic Ocean and proved that Asia and\" points to \"Bering\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Peary","\"Peary\" is a nearby-looking geography answer, but the clue \"In 1728, he became the first person to sail into the Arctic Ocean and proved that Asia and\" points to \"Bering\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1854,7 +1854,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336183,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 183",
+    title: "Longest River in Europe",
     prompt: "What river, draining into the Caspian Sea, is the longest in Europe?",
     correct: "Volga",
     wrong: [["Danube","\"Danube\" is a nearby-looking geography answer, but the clue \"What river, draining into the Caspian Sea, is the longest in Europe?\" points to \"Volga\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Ural","\"Ural\" is a nearby-looking geography answer, but the clue \"What river, draining into the Caspian Sea, is the longest in Europe?\" points to \"Volga\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Dnieper","\"Dnieper\" is a nearby-looking geography answer, but the clue \"What river, draining into the Caspian Sea, is the longest in Europe?\" points to \"Volga\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1874,7 +1874,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336185,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 185",
+    title: "River Into the North Sea",
     prompt: "What river rises in the northwestern Czech Republic, flows through Germany and into the North Sea?",
     correct: "Elbe",
     wrong: [["Viskan","\"Viskan\" is a nearby-looking geography answer, but the clue \"What river rises in the northwestern Czech Republic, flows through Germany and into the No\" points to \"Elbe\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Morava","\"Morava\" is a nearby-looking geography answer, but the clue \"What river rises in the northwestern Czech Republic, flows through Germany and into the No\" points to \"Elbe\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Oste","\"Oste\" is a nearby-looking geography answer, but the clue \"What river rises in the northwestern Czech Republic, flows through Germany and into the No\" points to \"Elbe\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1884,7 +1884,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336186,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 186",
+    title: "Longest River in Great Britain",
     prompt: "What river named after a mythological figure is the longest river of Great Britain?",
     correct: "Severn",
     wrong: [["Trent","\"Trent\" is a nearby-looking geography answer, but the clue \"What river named after a mythological figure is the longest river of Great Britain?\" points to \"Severn\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Great Ouse","\"Great Ouse\" is a nearby-looking geography answer, but the clue \"What river named after a mythological figure is the longest river of Great Britain?\" points to \"Severn\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Thames","\"Thames\" is a nearby-looking geography answer, but the clue \"What river named after a mythological figure is the longest river of Great Britain?\" points to \"Severn\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1894,7 +1894,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336187,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 187",
+    title: "Longest River in the EU",
     prompt: "What river flows through ten European countries and is the longest in the European Union?",
     correct: "Danube",
     wrong: [["Rhine","\"Rhine\" is a nearby-looking geography answer, but the clue \"What river flows through ten European countries and is the longest in the European Union?\" points to \"Danube\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Dnieper","\"Dnieper\" is a nearby-looking geography answer, but the clue \"What river flows through ten European countries and is the longest in the European Union?\" points to \"Danube\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Elbe","\"Elbe\" is a nearby-looking geography answer, but the clue \"What river flows through ten European countries and is the longest in the European Union?\" points to \"Danube\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1904,7 +1904,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336188,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 188",
+    title: "Longest River of Iberia",
     prompt: "What river that flows through Spain and Portugal is the longest river on the Iberian Peninsula?",
     correct: "Tagus",
     wrong: [["Guadiana","\"Guadiana\" is a nearby-looking geography answer, but the clue \"What river that flows through Spain and Portugal is the longest river on the Iberian Penin\" points to \"Tagus\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Duero","\"Duero\" is a nearby-looking geography answer, but the clue \"What river that flows through Spain and Portugal is the longest river on the Iberian Penin\" points to \"Tagus\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Guadalquivir","\"Guadalquivir\" is a nearby-looking geography answer, but the clue \"What river that flows through Spain and Portugal is the longest river on the Iberian Penin\" points to \"Tagus\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1914,7 +1914,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336189,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 189",
+    title: "Longest River in Poland",
     prompt: "What is the longest river in Poland and the ninth longest in Europe?",
     correct: "Vistula",
     wrong: [["Wda","\"Wda\" is a nearby-looking geography answer, but the clue \"What is the longest river in Poland and the ninth longest in Europe?\" points to \"Vistula\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Nogat","\"Nogat\" is a nearby-looking geography answer, but the clue \"What is the longest river in Poland and the ninth longest in Europe?\" points to \"Vistula\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Dunajec","\"Dunajec\" is a nearby-looking geography answer, but the clue \"What is the longest river in Poland and the ninth longest in Europe?\" points to \"Vistula\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1934,7 +1934,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336191,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 191",
+    title: "Longest Bridge in Europe",
     prompt: "This bridge, that spans the Tagus River, is the longest bridge in Europe.",
     correct: "Vasco da Gama Bridge",
     wrong: [["Vizcaya Bridge","\"Vizcaya Bridge\" is a nearby-looking geography answer, but the clue \"This bridge, that spans the Tagus River, is the longest bridge in Europe.\" points to \"Vasco da Gama Bridge\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Guadiana International Bridge","\"Guadiana International Bridge\" is a nearby-looking geography answer, but the clue \"This bridge, that spans the Tagus River, is the longest bridge in Europe.\" points to \"Vasco da Gama Bridge\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Merida Bridge","\"Merida Bridge\" is a nearby-looking geography answer, but the clue \"This bridge, that spans the Tagus River, is the longest bridge in Europe.\" points to \"Vasco da Gama Bridge\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -1944,7 +1944,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336192,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 192",
+    title: "Island Split With Timor-Leste",
     prompt: "This western half of this island is part of Indonesia, while the eastern half is a nation which gained independence in 2002, following hundreds of years of European colonialism and 25 years of Indonesian occupation.",
     correct: "Timor",
     wrong: [["Borneo","\"Borneo\" is geographically plausible enough to distract, but the specific clue \"This western half of this island is part of Indonesia, while the eastern half is a nation \" points to \"Timor\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Sumatra","\"Sumatra\" is geographically plausible enough to distract, but the specific clue \"This western half of this island is part of Indonesia, while the eastern half is a nation \" points to \"Timor\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Celebes","\"Celebes\" is geographically plausible enough to distract, but the specific clue \"This western half of this island is part of Indonesia, while the eastern half is a nation \" points to \"Timor\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1954,7 +1954,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336193,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 193",
+    title: "Island Shared With Malaysia and Brunei",
     prompt: "Which Indonesian island is shared by four Indonesian provinces and two other nations: the eastern half of Malaysia and the tiny oil-rich sultanate of Brunei?",
     correct: "Borneo",
     wrong: [["New Guinea","\"New Guinea\" is geographically plausible enough to distract, but the specific clue \"Which Indonesian island is shared by four Indonesian provinces and two other nations: the \" points to \"Borneo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Sumatra","\"Sumatra\" is geographically plausible enough to distract, but the specific clue \"Which Indonesian island is shared by four Indonesian provinces and two other nations: the \" points to \"Borneo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Flores","\"Flores\" is geographically plausible enough to distract, but the specific clue \"Which Indonesian island is shared by four Indonesian provinces and two other nations: the \" points to \"Borneo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1964,7 +1964,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336194,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 194",
+    title: "Island of the Hobbit Hominids",
     prompt: "Which Indonesian island was in the news in 2003 when the remains of an extinct variety of small hominids (popularly referred to as Hobbits), measuring about 3 feet in height, were found there?",
     correct: "Flores",
     wrong: [["Sumatra","\"Sumatra\" is geographically plausible enough to distract, but the specific clue \"Which Indonesian island was in the news in 2003 when the remains of an extinct variety of \" points to \"Flores\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["New Guinea","\"New Guinea\" is geographically plausible enough to distract, but the specific clue \"Which Indonesian island was in the news in 2003 when the remains of an extinct variety of \" points to \"Flores\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Timor","\"Timor\" is geographically plausible enough to distract, but the specific clue \"Which Indonesian island was in the news in 2003 when the remains of an extinct variety of \" points to \"Flores\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1974,7 +1974,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336195,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 195",
+    title: "Second-Largest Island",
     prompt: "This island, the second largest in the world, is shared by Indonesia and another country. Because of its impenetrable swamps, jungles and towering mountains, it wasnt explored by outsiders until the past 100 years, and new tribes of humans with stone-age societies are still being discovered in the interior.",
     correct: "New Guinea",
     wrong: [["Flores","\"Flores\" is geographically plausible enough to distract, but the specific clue \"This island, the second largest in the world, is shared by Indonesia and another country. \" points to \"New Guinea\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Celebes","\"Celebes\" is geographically plausible enough to distract, but the specific clue \"This island, the second largest in the world, is shared by Indonesia and another country. \" points to \"New Guinea\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Sumatra","\"Sumatra\" is geographically plausible enough to distract, but the specific clue \"This island, the second largest in the world, is shared by Indonesia and another country. \" points to \"New Guinea\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1984,7 +1984,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336196,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 196",
+    title: "Third-Largest Indonesian Island",
     prompt: "This island is the third largest in Indonesia, and is probably known for its coffee. It is also home to unique (and endangered) species of elephants, tigers, and rhinoceroses. It is also one of two islands which have indigenous orangutans.",
     correct: "Sumatra",
     wrong: [["Timor","\"Timor\" is geographically plausible enough to distract, but the specific clue \"This island is the third largest in Indonesia, and is probably known for its coffee. It is\" points to \"Sumatra\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["New Guinea","\"New Guinea\" is geographically plausible enough to distract, but the specific clue \"This island is the third largest in Indonesia, and is probably known for its coffee. It is\" points to \"Sumatra\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Celebes","\"Celebes\" is geographically plausible enough to distract, but the specific clue \"This island is the third largest in Indonesia, and is probably known for its coffee. It is\" points to \"Sumatra\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -1994,7 +1994,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336197,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 197",
+    title: "Location of Krakatoa",
     prompt: "Which of these describes best the location of the volcanic island of Krakatau (sometimes erroneously called Krakatoa), which had a well-known and devastating eruption on August 23, 1883?",
     correct: "Between Java and Sumatra",
     wrong: [["West of New Guinea","\"West of New Guinea\" is geographically plausible enough to distract, but the specific clue \"Which of these describes best the location of the volcanic island of Krakatau (sometimes e\" points to \"Between Java and Sumatra\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["East of Java","\"East of Java\" is geographically plausible enough to distract, but the specific clue \"Which of these describes best the location of the volcanic island of Krakatau (sometimes e\" points to \"Between Java and Sumatra\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Off the coast of Borneo","\"Off the coast of Borneo\" is geographically plausible enough to distract, but the specific clue \"Which of these describes best the location of the volcanic island of Krakatau (sometimes e\" points to \"Between Java and Sumatra\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2004,7 +2004,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336198,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 198",
+    title: "Largest Eruption in History",
     prompt: "This volcano, located on the island of Sumbawa, erupted in 1815, generally regarded as the largest volcanic eruption in recorded history. The eruption killed thousands, and changed global climatic patterns.",
     correct: "Tambora",
     wrong: [["Merapi","\"Merapi\" is geographically plausible enough to distract, but the specific clue \"This volcano, located on the island of Sumbawa, erupted in 1815, generally regarded as the\" points to \"Tambora\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Krakatau","\"Krakatau\" is geographically plausible enough to distract, but the specific clue \"This volcano, located on the island of Sumbawa, erupted in 1815, generally regarded as the\" points to \"Tambora\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Mandiri","\"Mandiri\" is geographically plausible enough to distract, but the specific clue \"This volcano, located on the island of Sumbawa, erupted in 1815, generally regarded as the\" points to \"Tambora\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2024,7 +2024,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336200,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 200",
+    title: "Mountain Range Within Italy",
     prompt: "What large mountain range is located entirely within the territory of Italy?",
     correct: "Apennines",
     wrong: [["Alps","\"Alps\" is geographically plausible enough to distract, but the specific clue \"What large mountain range is located entirely within the territory of Italy?\" points to \"Apennines\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Andes","\"Andes\" is geographically plausible enough to distract, but the specific clue \"What large mountain range is located entirely within the territory of Italy?\" points to \"Apennines\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Carpathians","\"Carpathians\" is geographically plausible enough to distract, but the specific clue \"What large mountain range is located entirely within the territory of Italy?\" points to \"Apennines\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2034,7 +2034,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336201,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 201",
+    title: "Roman City of Lutetia",
     prompt: "During Roman occupation, this city, popular nowadays as the Heaven of Romance, was called Lutetia.",
     correct: "Paris",
     wrong: [["Venice","\"Venice\" is geographically plausible enough to distract, but the specific clue \"During Roman occupation, this city, popular nowadays as the Heaven of Romance, was called \" points to \"Paris\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["London","\"London\" is geographically plausible enough to distract, but the specific clue \"During Roman occupation, this city, popular nowadays as the Heaven of Romance, was called \" points to \"Paris\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Rome","\"Rome\" is geographically plausible enough to distract, but the specific clue \"During Roman occupation, this city, popular nowadays as the Heaven of Romance, was called \" points to \"Paris\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2044,7 +2044,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336202,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 202",
+    title: "City of Piazza San Marco",
     prompt: "In what European city are Piazza San Marco and Canale Grande located?",
     correct: "Venice",
     wrong: [["Lisbon","\"Lisbon\" is geographically plausible enough to distract, but the specific clue \"In what European city are Piazza San Marco and Canale Grande located?\" points to \"Venice\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Madrid","\"Madrid\" is geographically plausible enough to distract, but the specific clue \"In what European city are Piazza San Marco and Canale Grande located?\" points to \"Venice\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Florence","\"Florence\" is geographically plausible enough to distract, but the specific clue \"In what European city are Piazza San Marco and Canale Grande located?\" points to \"Venice\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2054,7 +2054,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336203,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 203",
+    title: "Country of Neuschwanstein Castle",
     prompt: "In what country will you find the impressive Neuschwanstein Castle, which was the inspiration for Sleeping Beauty Castle at Disneyland Park?",
     correct: "Germany",
     wrong: [["Denmark","\"Denmark\" is geographically plausible enough to distract, but the specific clue \"In what country will you find the impressive Neuschwanstein Castle, which was the inspirat\" points to \"Germany\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Austria","\"Austria\" is geographically plausible enough to distract, but the specific clue \"In what country will you find the impressive Neuschwanstein Castle, which was the inspirat\" points to \"Germany\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["England","\"England\" is geographically plausible enough to distract, but the specific clue \"In what country will you find the impressive Neuschwanstein Castle, which was the inspirat\" points to \"Germany\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2064,7 +2064,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336204,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 204",
+    title: "City on the River Vltava",
     prompt: "This city, situated on the River Vltava, is sometimes called the mother of cities, the city of a hundred spires and the golden city.",
     correct: "Prague",
     wrong: [["Athens","\"Athens\" is a nearby-looking geography answer, but the clue \"This city, situated on the River Vltava, is sometimes called the mother of cities, the cit\" points to \"Prague\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Rome","\"Rome\" is a nearby-looking geography answer, but the clue \"This city, situated on the River Vltava, is sometimes called the mother of cities, the cit\" points to \"Prague\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Bucharest","\"Bucharest\" is a nearby-looking geography answer, but the clue \"This city, situated on the River Vltava, is sometimes called the mother of cities, the cit\" points to \"Prague\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2084,7 +2084,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336206,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 206",
+    title: "Lagoon Island in the Pacific",
     prompt: "This island in the Pacific Ocean is surrounded by a lagoon and a barrier reef.",
     correct: "Bora Bora",
     wrong: [["Cyprus","\"Cyprus\" is a nearby-looking geography answer, but the clue \"This island in the Pacific Ocean is surrounded by a lagoon and a barrier reef.\" points to \"Bora Bora\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Thasos","\"Thasos\" is a nearby-looking geography answer, but the clue \"This island in the Pacific Ocean is surrounded by a lagoon and a barrier reef.\" points to \"Bora Bora\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Tupai","\"Tupai\" is a nearby-looking geography answer, but the clue \"This island in the Pacific Ocean is surrounded by a lagoon and a barrier reef.\" points to \"Bora Bora\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2094,7 +2094,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336207,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 207",
+    title: "Garland of the Indian Ocean",
     prompt: "What islands are knows as “The beautiful garland in the Indian Ocean”?",
     correct: "Maldives Islands",
     wrong: [["Aeolian Islands","\"Aeolian Islands\" is a nearby-looking geography answer, but the clue \"What islands are knows as “The beautiful garland in the Indian Ocean”?\" points to \"Maldives Islands\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Pontine Islands","\"Pontine Islands\" is a nearby-looking geography answer, but the clue \"What islands are knows as “The beautiful garland in the Indian Ocean”?\" points to \"Maldives Islands\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Flegrean Islands","\"Flegrean Islands\" is a nearby-looking geography answer, but the clue \"What islands are knows as “The beautiful garland in the Indian Ocean”?\" points to \"Maldives Islands\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2104,7 +2104,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336208,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 208",
+    title: "Largest Island of Greater Antilles",
     prompt: "This island, located in the Caribbean Sea, is the largest island of an archipelago called Greater Antilles. The city of Havana is located on it.",
     correct: "Cuba",
     wrong: [["Hispaniola","\"Hispaniola\" is a nearby-looking geography answer, but the clue \"This island, located in the Caribbean Sea, is the largest island of an archipelago called \" points to \"Cuba\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Haiti","\"Haiti\" is a nearby-looking geography answer, but the clue \"This island, located in the Caribbean Sea, is the largest island of an archipelago called \" points to \"Cuba\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Jamaica","\"Jamaica\" is a nearby-looking geography answer, but the clue \"This island, located in the Caribbean Sea, is the largest island of an archipelago called \" points to \"Cuba\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2114,7 +2114,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336209,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 209",
+    title: "Island Also Called Formosa",
     prompt: "This island, also known as Formosa, is the largest island of the Republic of China.",
     correct: "Taiwan",
     wrong: [["Matsu","\"Matsu\" is geographically plausible enough to distract, but the specific clue \"This island, also known as Formosa, is the largest island of the Republic of China.\" points to \"Taiwan\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Penghu","\"Penghu\" is geographically plausible enough to distract, but the specific clue \"This island, also known as Formosa, is the largest island of the Republic of China.\" points to \"Taiwan\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Honshu","\"Honshu\" is geographically plausible enough to distract, but the specific clue \"This island, also known as Formosa, is the largest island of the Republic of China.\" points to \"Taiwan\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2124,7 +2124,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336210,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 210",
+    title: "Hawaii's Big Island",
     prompt: "What island, located in the North Pacific Ocean, is also known as the Big Island?",
     correct: "Hawaii",
     wrong: [["Cuba","\"Cuba\" is a nearby-looking geography answer, but the clue \"What island, located in the North Pacific Ocean, is also known as the Big Island?\" points to \"Hawaii\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Haiti","\"Haiti\" is a nearby-looking geography answer, but the clue \"What island, located in the North Pacific Ocean, is also known as the Big Island?\" points to \"Hawaii\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Maui","\"Maui\" is a nearby-looking geography answer, but the clue \"What island, located in the North Pacific Ocean, is also known as the Big Island?\" points to \"Hawaii\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2134,7 +2134,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336211,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 211",
+    title: "Island Country of Nicosia",
     prompt: "This island country whose capital is Nicosia is the third-largest Mediterranean island.",
     correct: "Cyprus",
     wrong: [["Crete","\"Crete\" is geographically plausible enough to distract, but the specific clue \"This island country whose capital is Nicosia is the third-largest Mediterranean island.\" points to \"Cyprus\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Malta","\"Malta\" is geographically plausible enough to distract, but the specific clue \"This island country whose capital is Nicosia is the third-largest Mediterranean island.\" points to \"Cyprus\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Lesbos","\"Lesbos\" is geographically plausible enough to distract, but the specific clue \"This island country whose capital is Nicosia is the third-largest Mediterranean island.\" points to \"Cyprus\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2154,7 +2154,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336213,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 213",
+    title: "European Island Near the Arctic",
     prompt: "This European island is situated in the North Atlantic Ocean, south of the Arctic Circle. Its largest city is Reykjavik.",
     correct: "Iceland",
     wrong: [["Ireland","\"Ireland\" is a nearby-looking geography answer, but the clue \"This European island is situated in the North Atlantic Ocean, south of the Arctic Circle. \" points to \"Iceland\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Greenland","\"Greenland\" is a nearby-looking geography answer, but the clue \"This European island is situated in the North Atlantic Ocean, south of the Arctic Circle. \" points to \"Iceland\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["None of these","\"None of these\" is a nearby-looking geography answer, but the clue \"This European island is situated in the North Atlantic Ocean, south of the Arctic Circle. \" points to \"Iceland\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2164,7 +2164,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336214,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 214",
+    title: "Largest Island Fully in Indonesia",
     prompt: "This is the sixth largest island in the world, and the largest island that is entirely in Indonesia.",
     correct: "Sumatra",
     wrong: [["New Guinea","\"New Guinea\" is geographically plausible enough to distract, but the specific clue \"This is the sixth largest island in the world, and the largest island that is entirely in \" points to \"Sumatra\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Java","\"Java\" is geographically plausible enough to distract, but the specific clue \"This is the sixth largest island in the world, and the largest island that is entirely in \" points to \"Sumatra\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Borneo","\"Borneo\" is geographically plausible enough to distract, but the specific clue \"This is the sixth largest island in the world, and the largest island that is entirely in \" points to \"Sumatra\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2174,7 +2174,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336215,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 215",
+    title: "Island of Inspiration",
     prompt: "This island, sometimes called island of inspiration, is part of a very large country, and has a unique fauna.",
     correct: "Tasmania",
     wrong: [["Hawaii","\"Hawaii\" is geographically plausible enough to distract, but the specific clue \"This island, sometimes called island of inspiration, is part of a very large country, and \" points to \"Tasmania\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Madagascar","\"Madagascar\" is geographically plausible enough to distract, but the specific clue \"This island, sometimes called island of inspiration, is part of a very large country, and \" points to \"Tasmania\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Greenland","\"Greenland\" is geographically plausible enough to distract, but the specific clue \"This island, sometimes called island of inspiration, is part of a very large country, and \" points to \"Tasmania\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2184,7 +2184,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336216,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 216",
+    title: "Island Country of Valletta",
     prompt: "Valletta is the capital city of this island country in the Mediterranean.",
     correct: "Malta",
     wrong: [["Majorca","\"Majorca\" is geographically plausible enough to distract, but the specific clue \"Valletta is the capital city of this island country in the Mediterranean.\" points to \"Malta\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Corsica","\"Corsica\" is geographically plausible enough to distract, but the specific clue \"Valletta is the capital city of this island country in the Mediterranean.\" points to \"Malta\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Cyprus","\"Cyprus\" is geographically plausible enough to distract, but the specific clue \"Valletta is the capital city of this island country in the Mediterranean.\" points to \"Malta\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2204,7 +2204,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336218,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 218",
+    title: "Country Spain Does Not Border",
     prompt: "Spain does not share a border with which one of these countries?",
     correct: "Germany",
     wrong: [["Portugal","\"Portugal\" is geographically plausible enough to distract, but the specific clue \"Spain does not share a border with which one of these countries?\" points to \"Germany\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["France","\"France\" is geographically plausible enough to distract, but the specific clue \"Spain does not share a border with which one of these countries?\" points to \"Germany\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Andorra","\"Andorra\" is geographically plausible enough to distract, but the specific clue \"Spain does not share a border with which one of these countries?\" points to \"Germany\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2234,7 +2234,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336221,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 221",
+    title: "Water Over Horseshoe Falls",
     prompt: "Approximately what percentage of the water of the Niagara River flows over the Horseshoe Falls?",
     correct: "90%",
     wrong: [["70%","\"70%\" is a nearby-looking geography answer, but the clue \"Approximately what percentage of the water of the Niagara River flows over the Horseshoe F\" points to \"90%\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["50%","\"50%\" is a nearby-looking geography answer, but the clue \"Approximately what percentage of the water of the Niagara River flows over the Horseshoe F\" points to \"90%\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["10%","\"10%\" is a nearby-looking geography answer, but the clue \"Approximately what percentage of the water of the Niagara River flows over the Horseshoe F\" points to \"90%\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2244,7 +2244,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336222,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 222",
+    title: "Nickname of Rhode Island",
     prompt: "What nickname has been given to the U.S. state of Rhode Island?",
     correct: "Ocean State",
     wrong: [["Marine State","\"Marine State\" is geographically plausible enough to distract, but the specific clue \"What nickname has been given to the U.S. state of Rhode Island?\" points to \"Ocean State\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Island State","\"Island State\" is geographically plausible enough to distract, but the specific clue \"What nickname has been given to the U.S. state of Rhode Island?\" points to \"Ocean State\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["All of these","\"All of these\" is geographically plausible enough to distract, but the specific clue \"What nickname has been given to the U.S. state of Rhode Island?\" points to \"Ocean State\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2284,7 +2284,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336226,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 226",
+    title: "Slovakia and the Danube",
     prompt: "The Danube river flows through many Central European countries. Which of these statements concerning Slovakia and Slovenia is true?",
     correct: "Of the two countries, only Slovakia has Danubian banks.",
     wrong: [["The Danube does not flow through either of the 2 countries.","\"The Danube does not flow through either of the 2 countries.\" is a nearby-looking geography answer, but the clue \"The Danube river flows through many Central European countries. Which of these statements \" points to \"Of the two countries, only Slovakia has Danubian banks.\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Danube originates in Slovakia and then enters Slovenia.","\"The Danube originates in Slovakia and then enters Slovenia.\" is a nearby-looking geography answer, but the clue \"The Danube river flows through many Central European countries. Which of these statements \" points to \"Of the two countries, only Slovakia has Danubian banks.\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Danube originates in Slovenia and then flows through Slovakia.","\"The Danube originates in Slovenia and then flows through Slovakia.\" is a nearby-looking geography answer, but the clue \"The Danube river flows through many Central European countries. Which of these statements \" points to \"Of the two countries, only Slovakia has Danubian banks.\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2294,7 +2294,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336227,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 227",
+    title: "Slovakia or Slovenia EU Borders",
     prompt: "Which country, Slovakia or Slovenia, borders a country that did not join the European Union in the period 1951-2007?",
     correct: "Both share borders with countries that did not became EU members during this period.",
     wrong: [["Only Slovakia borders a country that did not join the EU during this period.","\"Only Slovakia borders a country that did not join the EU during this period.\" is geographically plausible enough to distract, but the specific clue \"Which country, Slovakia or Slovenia, borders a country that did not join the European Unio\" points to \"Both share borders with countries that did not became EU members during this period.\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Both share borders only with countries that became EU members during this period.","\"Both share borders only with countries that became EU members during this period.\" is geographically plausible enough to distract, but the specific clue \"Which country, Slovakia or Slovenia, borders a country that did not join the European Unio\" points to \"Both share borders with countries that did not became EU members during this period.\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Only Slovenia borders a country that did not join the EU during this period.","\"Only Slovenia borders a country that did not join the EU during this period.\" is geographically plausible enough to distract, but the specific clue \"Which country, Slovakia or Slovenia, borders a country that did not join the European Unio\" points to \"Both share borders with countries that did not became EU members during this period.\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2304,7 +2304,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336228,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 228",
+    title: "Swiss Specialty Product",
     prompt: "Switzerland is often associated with this product which is produced at the highest quality in the country.",
     correct: "All of these",
     wrong: [["Chocolate","\"Chocolate\" is geographically plausible enough to distract, but the specific clue \"Switzerland is often associated with this product which is produced at the highest quality\" points to \"All of these\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Watches","\"Watches\" is geographically plausible enough to distract, but the specific clue \"Switzerland is often associated with this product which is produced at the highest quality\" points to \"All of these\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Cheese","\"Cheese\" is geographically plausible enough to distract, but the specific clue \"Switzerland is often associated with this product which is produced at the highest quality\" points to \"All of these\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2324,7 +2324,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336230,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 230",
+    title: "Mountains of Switzerland",
     prompt: "What mountain covers about 65% of the territory of Switzerland?",
     correct: "the Alps",
     wrong: [["the Apennines","\"the Apennines\" is geographically plausible enough to distract, but the specific clue \"What mountain covers about 65% of the territory of Switzerland?\" points to \"the Alps\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["the Andes","\"the Andes\" is geographically plausible enough to distract, but the specific clue \"What mountain covers about 65% of the territory of Switzerland?\" points to \"the Alps\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Ararat","\"Ararat\" is geographically plausible enough to distract, but the specific clue \"What mountain covers about 65% of the territory of Switzerland?\" points to \"the Alps\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2344,7 +2344,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336232,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 232",
+    title: "Capital of North Korea",
     prompt: "Which of these is the capital and the largest city in North Korea?",
     correct: "Pyongyang",
     wrong: [["Nampho","\"Nampho\" is geographically plausible enough to distract, but the specific clue \"Which of these is the capital and the largest city in North Korea?\" points to \"Pyongyang\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Hungnam","\"Hungnam\" is geographically plausible enough to distract, but the specific clue \"Which of these is the capital and the largest city in North Korea?\" points to \"Pyongyang\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Sinuiju","\"Sinuiju\" is geographically plausible enough to distract, but the specific clue \"Which of these is the capital and the largest city in North Korea?\" points to \"Pyongyang\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2354,7 +2354,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336233,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 233",
+    title: "Other Name for the Colorado River",
     prompt: "What other name is commonly used to refer to the Colorado River in North America?",
     correct: "Red River",
     wrong: [["Black River","\"Black River\" is a nearby-looking geography answer, but the clue \"What other name is commonly used to refer to the Colorado River in North America?\" points to \"Red River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Yellow River","\"Yellow River\" is a nearby-looking geography answer, but the clue \"What other name is commonly used to refer to the Colorado River in North America?\" points to \"Red River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Blue River","\"Blue River\" is a nearby-looking geography answer, but the clue \"What other name is commonly used to refer to the Colorado River in North America?\" points to \"Red River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2364,7 +2364,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336234,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 234",
+    title: "Longest River in the US",
     prompt: "What is the name of the longest river in the United States of America?",
     correct: "Missouri",
     wrong: [["Colorado","\"Colorado\" is a nearby-looking geography answer, but the clue \"What is the name of the longest river in the United States of America?\" points to \"Missouri\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Rio Grande","\"Rio Grande\" is a nearby-looking geography answer, but the clue \"What is the name of the longest river in the United States of America?\" points to \"Missouri\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Mississippi","\"Mississippi\" is a nearby-looking geography answer, but the clue \"What is the name of the longest river in the United States of America?\" points to \"Missouri\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2374,7 +2374,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336235,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 235",
+    title: "State Not on the Ohio River",
     prompt: "The Ohio River does not flow though the territory of this American state.",
     correct: "Virginia",
     wrong: [["Illinois","\"Illinois\" is a nearby-looking geography answer, but the clue \"The Ohio River does not flow though the territory of this American state.\" points to \"Virginia\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Kentucky","\"Kentucky\" is a nearby-looking geography answer, but the clue \"The Ohio River does not flow though the territory of this American state.\" points to \"Virginia\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["West Virginia","\"West Virginia\" is a nearby-looking geography answer, but the clue \"The Ohio River does not flow though the territory of this American state.\" points to \"Virginia\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2384,7 +2384,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336236,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 236",
+    title: "Longest River Within California",
     prompt: "What is the longest river located entirely within the territory of the state of California?",
     correct: "Sacramento River",
     wrong: [["Mad River","\"Mad River\" is a nearby-looking geography answer, but the clue \"What is the longest river located entirely within the territory of the state of California\" points to \"Sacramento River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Salmon River","\"Salmon River\" is a nearby-looking geography answer, but the clue \"What is the longest river located entirely within the territory of the state of California\" points to \"Sacramento River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Big River","\"Big River\" is a nearby-looking geography answer, but the clue \"What is the longest river located entirely within the territory of the state of California\" points to \"Sacramento River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2394,7 +2394,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336237,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 237",
+    title: "Meaning of Mississippi",
     prompt: "What is the meaning of the name of the Mississippi River, which originated from the Ojibwe word misi-ziibi?",
     correct: "Great river",
     wrong: [["Holy water","\"Holy water\" is a nearby-looking geography answer, but the clue \"What is the meaning of the name of the Mississippi River, which originated from the Ojibwe\" points to \"Great river\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Fast river","\"Fast river\" is a nearby-looking geography answer, but the clue \"What is the meaning of the name of the Mississippi River, which originated from the Ojibwe\" points to \"Great river\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["River of life","\"River of life\" is a nearby-looking geography answer, but the clue \"What is the meaning of the name of the Mississippi River, which originated from the Ojibwe\" points to \"Great river\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2404,7 +2404,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336238,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 238",
+    title: "Fish of the Columbia River",
     prompt: "What ocean fish migrates from the Pacific Ocean to the Columbia River to spawn at the end of their life cycles?",
     correct: "All of these",
     wrong: [["Steelhead salmon (Rainbow trout)","\"Steelhead salmon (Rainbow trout)\" is a nearby-looking geography answer, but the clue \"What ocean fish migrates from the Pacific Ocean to the Columbia River to spawn at the end \" points to \"All of these\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Coho salmon","\"Coho salmon\" is a nearby-looking geography answer, but the clue \"What ocean fish migrates from the Pacific Ocean to the Columbia River to spawn at the end \" points to \"All of these\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Chinook salmon","\"Chinook salmon\" is a nearby-looking geography answer, but the clue \"What ocean fish migrates from the Pacific Ocean to the Columbia River to spawn at the end \" points to \"All of these\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2424,7 +2424,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336240,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 240",
+    title: "Bald Eagle River",
     prompt: "What river in North America provides food for the largest wintering Bald Eagle population in the continental United States?",
     correct: "Skagit River",
     wrong: [["Fraser","\"Fraser\" is a nearby-looking geography answer, but the clue \"What river in North America provides food for the largest wintering Bald Eagle population \" points to \"Skagit River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Skeena","\"Skeena\" is a nearby-looking geography answer, but the clue \"What river in North America provides food for the largest wintering Bald Eagle population \" points to \"Skagit River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["St. Lawrence","\"St. Lawrence\" is a nearby-looking geography answer, but the clue \"What river in North America provides food for the largest wintering Bald Eagle population \" points to \"Skagit River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2434,7 +2434,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336241,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 241",
+    title: "Mohawk Name for St. Lawrence",
     prompt: "What does the Mohawk name of the Saint Lawrence River, Kaniatarowanenneh, mean?",
     correct: "Big waterway",
     wrong: [["Female river","\"Female river\" is a nearby-looking geography answer, but the clue \"What does the Mohawk name of the Saint Lawrence River, Kaniatarowanenneh, mean?\" points to \"Big waterway\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Murmur of the gods","\"Murmur of the gods\" is a nearby-looking geography answer, but the clue \"What does the Mohawk name of the Saint Lawrence River, Kaniatarowanenneh, mean?\" points to \"Big waterway\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Burning water","\"Burning water\" is a nearby-looking geography answer, but the clue \"What does the Mohawk name of the Saint Lawrence River, Kaniatarowanenneh, mean?\" points to \"Big waterway\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2444,7 +2444,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336242,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 242",
+    title: "State of the Yukon River",
     prompt: "More than half of the Yukon River is located within this American state.",
     correct: "Alaska",
     wrong: [["North Dakota","\"North Dakota\" is a nearby-looking geography answer, but the clue \"More than half of the Yukon River is located within this American state.\" points to \"Alaska\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Kansas","\"Kansas\" is a nearby-looking geography answer, but the clue \"More than half of the Yukon River is located within this American state.\" points to \"Alaska\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Texas","\"Texas\" is a nearby-looking geography answer, but the clue \"More than half of the Yukon River is located within this American state.\" points to \"Alaska\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2454,7 +2454,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336243,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 243",
+    title: "Capital of Norway",
     prompt: "What is the name of the capital and largest city of Norway?",
     correct: "Oslo",
     wrong: [["Reykjavik","\"Reykjavik\" is geographically plausible enough to distract, but the specific clue \"What is the name of the capital and largest city of Norway?\" points to \"Oslo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Bergen","\"Bergen\" is geographically plausible enough to distract, but the specific clue \"What is the name of the capital and largest city of Norway?\" points to \"Oslo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Helsinki","\"Helsinki\" is geographically plausible enough to distract, but the specific clue \"What is the name of the capital and largest city of Norway?\" points to \"Oslo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2464,7 +2464,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336244,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 244",
+    title: "Largest Predator of Madagascar",
     prompt: "What is the largest carnivorous mammal endemic to the island of Madagascar?",
     correct: "Fossa",
     wrong: [["Short-tailed Mongoose","\"Short-tailed Mongoose\" is geographically plausible enough to distract, but the specific clue \"What is the largest carnivorous mammal endemic to the island of Madagascar?\" points to \"Fossa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Fanaloka","\"Fanaloka\" is geographically plausible enough to distract, but the specific clue \"What is the largest carnivorous mammal endemic to the island of Madagascar?\" points to \"Fossa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Meerkat","\"Meerkat\" is geographically plausible enough to distract, but the specific clue \"What is the largest carnivorous mammal endemic to the island of Madagascar?\" points to \"Fossa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2491,7 +2491,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336246,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 246",
+    title: "Madagascar's Endemic Tree",
     prompt: "This tree is a very important part of the Madagascar dry deciduous forests and six species of it are endemic to the island.",
     correct: "All of these",
     wrong: [["Bottle tree","\"Bottle tree\" is geographically plausible enough to distract, but the specific clue \"This tree is a very important part of the Madagascar dry deciduous forests and six species\" points to \"All of these\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Monkey bread tree","\"Monkey bread tree\" is geographically plausible enough to distract, but the specific clue \"This tree is a very important part of the Madagascar dry deciduous forests and six species\" points to \"All of these\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Upside-down tree","\"Upside-down tree\" is geographically plausible enough to distract, but the specific clue \"This tree is a very important part of the Madagascar dry deciduous forests and six species\" points to \"All of these\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2511,7 +2511,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336248,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 248",
+    title: "Greek Island of Navagio Bay",
     prompt: "The Navagio Bay (also known as the Shipwreck) is the most popular beach of which Greek island?",
     correct: "Zakynthos",
     wrong: [["Mykonos","\"Mykonos\" is geographically plausible enough to distract, but the specific clue \"The Navagio Bay (also known as the Shipwreck) is the most popular beach of which Greek isl\" points to \"Zakynthos\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Lefkada","\"Lefkada\" is geographically plausible enough to distract, but the specific clue \"The Navagio Bay (also known as the Shipwreck) is the most popular beach of which Greek isl\" points to \"Zakynthos\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Thasos","\"Thasos\" is geographically plausible enough to distract, but the specific clue \"The Navagio Bay (also known as the Shipwreck) is the most popular beach of which Greek isl\" points to \"Zakynthos\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2521,7 +2521,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336249,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 249",
+    title: "Medieval Monument of Rhodes",
     prompt: "Which medieval monument is an essential part of the archaeological sites of the Greek island Rhodes?",
     correct: "The Palace of the Grand Master",
     wrong: [["The White Tower","\"The White Tower\" is geographically plausible enough to distract, but the specific clue \"Which medieval monument is an essential part of the archaeological sites of the Greek isla\" points to \"The Palace of the Grand Master\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["The Venice Castle of Naoussa","\"The Venice Castle of Naoussa\" is geographically plausible enough to distract, but the specific clue \"Which medieval monument is an essential part of the archaeological sites of the Greek isla\" points to \"The Palace of the Grand Master\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["The Odeon","\"The Odeon\" is geographically plausible enough to distract, but the specific clue \"Which medieval monument is an essential part of the archaeological sites of the Greek isla\" points to \"The Palace of the Grand Master\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2541,7 +2541,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336251,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 251",
+    title: "Greek Island of Melissani Cave",
     prompt: "The Cave of Melissani is among the most popular geological landmarks of which Greek island?",
     correct: "Kefallonia",
     wrong: [["Lefkada","\"Lefkada\" is geographically plausible enough to distract, but the specific clue \"The Cave of Melissani is among the most popular geological landmarks of which Greek island\" points to \"Kefallonia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Mykonos","\"Mykonos\" is geographically plausible enough to distract, but the specific clue \"The Cave of Melissani is among the most popular geological landmarks of which Greek island\" points to \"Kefallonia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Samos","\"Samos\" is geographically plausible enough to distract, but the specific clue \"The Cave of Melissani is among the most popular geological landmarks of which Greek island\" points to \"Kefallonia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2571,7 +2571,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336254,
     chapter: "World Capitals",
-    title: "OpenTrivia Geography 254",
+    title: "River Through London",
     prompt: "This river flows through the southern part of England and passes through the capital of the country.",
     correct: "The Thames",
     wrong: [["The Avon","\"The Avon\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"The Thames\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."],["All of these","\"All of these\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"The Thames\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."],["The Mersey","\"The Mersey\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"The Thames\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."]],
@@ -2601,7 +2601,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336257,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 257",
+    title: "River Through Paris",
     prompt: "What river flows through the central part of the French capital, Paris?",
     correct: "Seine",
     wrong: [["Loire","\"Loire\" is a nearby-looking geography answer, but the clue \"What river flows through the central part of the French capital, Paris?\" points to \"Seine\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Charente","\"Charente\" is a nearby-looking geography answer, but the clue \"What river flows through the central part of the French capital, Paris?\" points to \"Seine\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Rhine","\"Rhine\" is a nearby-looking geography answer, but the clue \"What river flows through the central part of the French capital, Paris?\" points to \"Seine\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2611,7 +2611,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336258,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 258",
+    title: "Longest River in Asia",
     prompt: "What is the name of the longest river in Asia, and the third-longest in the world?",
     correct: "The Yangtze",
     wrong: [["The Mekong-Lancang","\"The Mekong-Lancang\" is a nearby-looking geography answer, but the clue \"What is the name of the longest river in Asia, and the third-longest in the world?\" points to \"The Yangtze\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Tigris","\"The Tigris\" is a nearby-looking geography answer, but the clue \"What is the name of the longest river in Asia, and the third-longest in the world?\" points to \"The Yangtze\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Huang He","\"The Huang He\" is a nearby-looking geography answer, but the clue \"What is the name of the longest river in Asia, and the third-longest in the world?\" points to \"The Yangtze\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2621,7 +2621,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336259,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 259",
+    title: "Longest River in the US",
     prompt: "This river is the longest in the United States, and it gave its name to one of the states.",
     correct: "The Missouri River",
     wrong: [["The Mississippi River","\"The Mississippi River\" is a nearby-looking geography answer, but the clue \"This river is the longest in the United States, and it gave its name to one of the states.\" points to \"The Missouri River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Alabama River","\"The Alabama River\" is a nearby-looking geography answer, but the clue \"This river is the longest in the United States, and it gave its name to one of the states.\" points to \"The Missouri River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Ohio River","\"The Ohio River\" is a nearby-looking geography answer, but the clue \"This river is the longest in the United States, and it gave its name to one of the states.\" points to \"The Missouri River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2641,7 +2641,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336261,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 261",
+    title: "River of Jesus's Baptism",
     prompt: "What is the name of the river in which Jesus Christ was baptized by John the Baptist?",
     correct: "The Jordan",
     wrong: [["The Tigris","\"The Tigris\" is a nearby-looking geography answer, but the clue \"What is the name of the river in which Jesus Christ was baptized by John the Baptist?\" points to \"The Jordan\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Euphrates","\"The Euphrates\" is a nearby-looking geography answer, but the clue \"What is the name of the river in which Jesus Christ was baptized by John the Baptist?\" points to \"The Jordan\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Nile","\"The Nile\" is a nearby-looking geography answer, but the clue \"What is the name of the river in which Jesus Christ was baptized by John the Baptist?\" points to \"The Jordan\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2651,7 +2651,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336262,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 262",
+    title: "River Called Big Waterway",
     prompt: "This North American river is also called Kaniatarowanenneh, which means big waterway in Mohawk.",
     correct: "Saint Lawrence River",
     wrong: [["Rio Grande","\"Rio Grande\" is a nearby-looking geography answer, but the clue \"This North American river is also called Kaniatarowanenneh, which means big waterway in Mo\" points to \"Saint Lawrence River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Colorado","\"Colorado\" is a nearby-looking geography answer, but the clue \"This North American river is also called Kaniatarowanenneh, which means big waterway in Mo\" points to \"Saint Lawrence River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Ohio River","\"Ohio River\" is a nearby-looking geography answer, but the clue \"This North American river is also called Kaniatarowanenneh, which means big waterway in Mo\" points to \"Saint Lawrence River\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2661,7 +2661,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336263,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 263",
+    title: "River From Germany to the Black Sea",
     prompt: "This European river originates in Germany and empties in the Black Sea via a delta.",
     correct: "The Danube",
     wrong: [["The Volga","\"The Volga\" is a nearby-looking geography answer, but the clue \"This European river originates in Germany and empties in the Black Sea via a delta.\" points to \"The Danube\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Rhine","\"The Rhine\" is a nearby-looking geography answer, but the clue \"This European river originates in Germany and empties in the Black Sea via a delta.\" points to \"The Danube\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["All of these","\"All of these\" is a nearby-looking geography answer, but the clue \"This European river originates in Germany and empties in the Black Sea via a delta.\" points to \"The Danube\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2681,7 +2681,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336265,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 265",
+    title: "City of the 1999 Tornado",
     prompt: "During the violent May 3, 1999 Bridge Creek-Moore tornado, Doppler radar measured extraordinary winds about 100 feet above the ground. Which Oklahoma city is tied to that record-setting tornado?",
     correct: "Moore",
     wrong: [["Lawton","\"Lawton\" is geographically plausible enough to distract, but the specific clue \"During the violent May 3, 1999 Bridge Creek-Moore tornado, Doppler radar measured extraord\" points to \"Moore\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Norman","\"Norman\" is geographically plausible enough to distract, but the specific clue \"During the violent May 3, 1999 Bridge Creek-Moore tornado, Doppler radar measured extraord\" points to \"Moore\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Midwest City","\"Midwest City\" is geographically plausible enough to distract, but the specific clue \"During the violent May 3, 1999 Bridge Creek-Moore tornado, Doppler radar measured extraord\" points to \"Moore\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2708,7 +2708,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336267,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 267",
+    title: "Country of Angel Falls",
     prompt: "In what country is the Angel Falls, the highest waterfall on the planet, located?",
     correct: "Venezuela",
     wrong: [["Brazil","\"Brazil\" is geographically plausible enough to distract, but the specific clue \"In what country is the Angel Falls, the highest waterfall on the planet, located?\" points to \"Venezuela\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Argentina","\"Argentina\" is geographically plausible enough to distract, but the specific clue \"In what country is the Angel Falls, the highest waterfall on the planet, located?\" points to \"Venezuela\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Colombia","\"Colombia\" is geographically plausible enough to distract, but the specific clue \"In what country is the Angel Falls, the highest waterfall on the planet, located?\" points to \"Venezuela\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2718,7 +2718,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336268,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 268",
+    title: "Country of Jog Falls",
     prompt: "Jog Falls is the highest plunge waterfall in this Asian country.",
     correct: "India",
     wrong: [["Japan","\"Japan\" is geographically plausible enough to distract, but the specific clue \"Jog Falls is the highest plunge waterfall in this Asian country.\" points to \"India\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["China","\"China\" is geographically plausible enough to distract, but the specific clue \"Jog Falls is the highest plunge waterfall in this Asian country.\" points to \"India\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Thailand","\"Thailand\" is geographically plausible enough to distract, but the specific clue \"Jog Falls is the highest plunge waterfall in this Asian country.\" points to \"India\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2738,7 +2738,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336270,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 270",
+    title: "US State of Waihilau Falls",
     prompt: "In what U.S. state is the tallest waterfall in the country, Waihilau Falls, located?",
     correct: "Hawaii",
     wrong: [["Idaho","\"Idaho\" is geographically plausible enough to distract, but the specific clue \"In what U.S. state is the tallest waterfall in the country, Waihilau Falls, located?\" points to \"Hawaii\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Wyoming","\"Wyoming\" is geographically plausible enough to distract, but the specific clue \"In what U.S. state is the tallest waterfall in the country, Waihilau Falls, located?\" points to \"Hawaii\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Iowa","\"Iowa\" is geographically plausible enough to distract, but the specific clue \"In what U.S. state is the tallest waterfall in the country, Waihilau Falls, located?\" points to \"Hawaii\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2748,7 +2748,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336271,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 271",
+    title: "Country of Jurong Falls",
     prompt: "In what country is Jurong Falls, the tallest artificial waterfall in the world, located?",
     correct: "Singapore",
     wrong: [["Indonesia","\"Indonesia\" is geographically plausible enough to distract, but the specific clue \"In what country is Jurong Falls, the tallest artificial waterfall in the world, located?\" points to \"Singapore\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Vietnam","\"Vietnam\" is geographically plausible enough to distract, but the specific clue \"In what country is Jurong Falls, the tallest artificial waterfall in the world, located?\" points to \"Singapore\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["North Korea","\"North Korea\" is geographically plausible enough to distract, but the specific clue \"In what country is Jurong Falls, the tallest artificial waterfall in the world, located?\" points to \"Singapore\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2778,7 +2778,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336274,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 274",
+    title: "Not in Madagascar",
     prompt: "Which of the following is NOT located in the country of Madagascar?",
     correct: "Bodrum",
     wrong: [["Nosy-Be","\"Nosy-Be\" is geographically plausible enough to distract, but the specific clue \"Which of the following is NOT located in the country of Madagascar?\" points to \"Bodrum\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Antananarivo","\"Antananarivo\" is geographically plausible enough to distract, but the specific clue \"Which of the following is NOT located in the country of Madagascar?\" points to \"Bodrum\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Antsirabe","\"Antsirabe\" is geographically plausible enough to distract, but the specific clue \"Which of the following is NOT located in the country of Madagascar?\" points to \"Bodrum\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2788,7 +2788,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336275,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 275",
+    title: "Discoverer of Madagascar",
     prompt: "What Portuguese explorer was the first to sight the island of Madagascar?",
     correct: "Diego Dias",
     wrong: [["Henry the Navigator","\"Henry the Navigator\" is geographically plausible enough to distract, but the specific clue \"What Portuguese explorer was the first to sight the island of Madagascar?\" points to \"Diego Dias\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Diogo Cao","\"Diogo Cao\" is geographically plausible enough to distract, but the specific clue \"What Portuguese explorer was the first to sight the island of Madagascar?\" points to \"Diego Dias\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Vasco da Gama","\"Vasco da Gama\" is geographically plausible enough to distract, but the specific clue \"What Portuguese explorer was the first to sight the island of Madagascar?\" points to \"Diego Dias\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2798,7 +2798,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336276,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 276",
+    title: "Halves of New Guinea",
     prompt: "New Guinea is an island north of Australia. It is divided into 2 roughly equal halves. What are they?",
     correct: "The western portion is part of Indonesia. The eastern portion is the country called Papua New Guinea.",
     wrong: [["The western portion is part of Australia. The eastern portion is the country called Sumatra.","\"The western portion is part of Australia. The eastern portion is the country called Sumatra.\" is geographically plausible enough to distract, but the specific clue \"New Guinea is an island north of Australia. It is divided into 2 roughly equal halves. Wha\" points to \"The western portion is part of Indonesia. The eastern portion is the country called Papua New Guinea.\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["The western portion is part of Indonesia. The eastern portion is the country called Sumatra.","\"The western portion is part of Indonesia. The eastern portion is the country called Sumatra.\" is geographically plausible enough to distract, but the specific clue \"New Guinea is an island north of Australia. It is divided into 2 roughly equal halves. Wha\" points to \"The western portion is part of Indonesia. The eastern portion is the country called Papua New Guinea.\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["The western portion is part of Australia. The eastern portion is the country called Papua New Guinea.","\"The western portion is part of Australia. The eastern portion is the country called Papua New Guinea.\" is geographically plausible enough to distract, but the specific clue \"New Guinea is an island north of Australia. It is divided into 2 roughly equal halves. Wha\" points to \"The western portion is part of Indonesia. The eastern portion is the country called Papua New Guinea.\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2808,7 +2808,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336277,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 277",
+    title: "Location of Guinea",
     prompt: "The island of New Guinea was named after the country of Guinea. Which is Guinea located?",
     correct: "Africa",
     wrong: [["In the Pacific Ocean","\"In the Pacific Ocean\" is geographically plausible enough to distract, but the specific clue \"The island of New Guinea was named after the country of Guinea. Which is Guinea located?\" points to \"Africa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["South America","\"South America\" is geographically plausible enough to distract, but the specific clue \"The island of New Guinea was named after the country of Guinea. Which is Guinea located?\" points to \"Africa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Asia","\"Asia\" is geographically plausible enough to distract, but the specific clue \"The island of New Guinea was named after the country of Guinea. Which is Guinea located?\" points to \"Africa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2818,7 +2818,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336278,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 278",
+    title: "Papua New Guinea's Former Ruler",
     prompt: "The country of Papua New Guinea gained its independence from this country in 1975.",
     correct: "Australia",
     wrong: [["Mozambique","\"Mozambique\" is geographically plausible enough to distract, but the specific clue \"The country of Papua New Guinea gained its independence from this country in 1975.\" points to \"Australia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Indonesia","\"Indonesia\" is geographically plausible enough to distract, but the specific clue \"The country of Papua New Guinea gained its independence from this country in 1975.\" points to \"Australia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["New Zealand","\"New Zealand\" is geographically plausible enough to distract, but the specific clue \"The country of Papua New Guinea gained its independence from this country in 1975.\" points to \"Australia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2828,7 +2828,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336279,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 279",
+    title: "Islands of Indonesia",
     prompt: "The west half of the island of New Guinea is part of Indonesia, which comprises how many islands?",
     correct: "17,508",
     wrong: [["4","\"4\" is geographically plausible enough to distract, but the specific clue \"The west half of the island of New Guinea is part of Indonesia, which comprises how many i\" points to \"17,508\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["8,407","\"8,407\" is geographically plausible enough to distract, but the specific clue \"The west half of the island of New Guinea is part of Indonesia, which comprises how many i\" points to \"17,508\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["247,542","\"247,542\" is geographically plausible enough to distract, but the specific clue \"The west half of the island of New Guinea is part of Indonesia, which comprises how many i\" points to \"17,508\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2838,7 +2838,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336280,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 280",
+    title: "Rural Share of Papua New Guinea",
     prompt: "Approximately what percentage of the population of the country of Papua New Guinea lives in rural areas?",
     correct: "86%",
     wrong: [["50%","\"50%\" is geographically plausible enough to distract, but the specific clue \"Approximately what percentage of the population of the country of Papua New Guinea lives i\" points to \"86%\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["34%","\"34%\" is geographically plausible enough to distract, but the specific clue \"Approximately what percentage of the population of the country of Papua New Guinea lives i\" points to \"86%\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["97%","\"97%\" is geographically plausible enough to distract, but the specific clue \"Approximately what percentage of the population of the country of Papua New Guinea lives i\" points to \"86%\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2848,7 +2848,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336281,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 281",
+    title: "Papua New Guinea Birth Rate",
     prompt: "In the country of Papua New Guinea, how many children does the average woman give birth to during her lifetime according to 2006 estimates?",
     correct: "4.6",
     wrong: [["1.2","\"1.2\" is geographically plausible enough to distract, but the specific clue \"In the country of Papua New Guinea, how many children does the average woman give birth to\" points to \"4.6\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["2.8","\"2.8\" is geographically plausible enough to distract, but the specific clue \"In the country of Papua New Guinea, how many children does the average woman give birth to\" points to \"4.6\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["3.9","\"3.9\" is geographically plausible enough to distract, but the specific clue \"In the country of Papua New Guinea, how many children does the average woman give birth to\" points to \"4.6\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2858,7 +2858,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336282,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 282",
+    title: "Capital of Papua New Guinea",
     prompt: "What is the capital city of the country of Papua New Guinea?",
     correct: "Port Moresby",
     wrong: [["Madang","\"Madang\" is geographically plausible enough to distract, but the specific clue \"What is the capital city of the country of Papua New Guinea?\" points to \"Port Moresby\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Wau","\"Wau\" is geographically plausible enough to distract, but the specific clue \"What is the capital city of the country of Papua New Guinea?\" points to \"Port Moresby\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Lae","\"Lae\" is geographically plausible enough to distract, but the specific clue \"What is the capital city of the country of Papua New Guinea?\" points to \"Port Moresby\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2878,7 +2878,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336284,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 284",
+    title: "Largest City in Africa",
     prompt: "What Egyptian city is the largest city not only in Africa, but also in the whole Middle East?",
     correct: "Cairo",
     wrong: [["Alexandria","\"Alexandria\" is geographically plausible enough to distract, but the specific clue \"What Egyptian city is the largest city not only in Africa, but also in the whole Middle Ea\" points to \"Cairo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Giza","\"Giza\" is geographically plausible enough to distract, but the specific clue \"What Egyptian city is the largest city not only in Africa, but also in the whole Middle Ea\" points to \"Cairo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Ismailia","\"Ismailia\" is geographically plausible enough to distract, but the specific clue \"What Egyptian city is the largest city not only in Africa, but also in the whole Middle Ea\" points to \"Cairo\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2888,7 +2888,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336285,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 285",
+    title: "European Country Half Egypt's Size",
     prompt: "The Egyptian territory is calculated to be roughly twice as large as the territory of this European country.",
     correct: "Spain",
     wrong: [["Poland","\"Poland\" is geographically plausible enough to distract, but the specific clue \"The Egyptian territory is calculated to be roughly twice as large as the territory of this\" points to \"Spain\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["France","\"France\" is geographically plausible enough to distract, but the specific clue \"The Egyptian territory is calculated to be roughly twice as large as the territory of this\" points to \"Spain\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["United Kingdom","\"United Kingdom\" is geographically plausible enough to distract, but the specific clue \"The Egyptian territory is calculated to be roughly twice as large as the territory of this\" points to \"Spain\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2898,7 +2898,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336286,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 286",
+    title: "Gift of the Nile",
     prompt: "What expression is commonly used in Egypt to refer to the annual flooding of the river Nile, the longest river in the world?",
     correct: "The Gift of the Nile",
     wrong: [["Feeding of the Soil","\"Feeding of the Soil\" is a nearby-looking geography answer, but the clue \"What expression is commonly used in Egypt to refer to the annual flooding of the river Nil\" points to \"The Gift of the Nile\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Blessing of the Nile","\"The Blessing of the Nile\" is a nearby-looking geography answer, but the clue \"What expression is commonly used in Egypt to refer to the annual flooding of the river Nil\" points to \"The Gift of the Nile\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Mother of Abundance","\"The Mother of Abundance\" is a nearby-looking geography answer, but the clue \"What expression is commonly used in Egypt to refer to the annual flooding of the river Nil\" points to \"The Gift of the Nile\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -2908,7 +2908,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336287,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 287",
+    title: "Why Luxembourg City Is Wealthy",
     prompt: "Why is Luxembourg City one of the wealthiest cities in the world?",
     correct: "It is a banking and administrative center.",
     wrong: [["It is the European center of computer and computer related companies.","\"It is the European center of computer and computer related companies.\" is geographically plausible enough to distract, but the specific clue \"Why is Luxembourg City one of the wealthiest cities in the world?\" points to \"It is a banking and administrative center.\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["There is great mineral wealth in the area around the city.","\"There is great mineral wealth in the area around the city.\" is geographically plausible enough to distract, but the specific clue \"Why is Luxembourg City one of the wealthiest cities in the world?\" points to \"It is a banking and administrative center.\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Rich retired people have ranked it as the most desirable place in Europe to live.","\"Rich retired people have ranked it as the most desirable place in Europe to live.\" is geographically plausible enough to distract, but the specific clue \"Why is Luxembourg City one of the wealthiest cities in the world?\" points to \"It is a banking and administrative center.\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2928,7 +2928,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336289,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 289",
+    title: "Country of Eas a Chual Aluinn",
     prompt: "The Eas a Chual Aluinn is the highest waterfall in this country.",
     correct: "Great Britain",
     wrong: [["France","\"France\" is geographically plausible enough to distract, but the specific clue \"The Eas a Chual Aluinn is the highest waterfall in this country.\" points to \"Great Britain\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["China","\"China\" is geographically plausible enough to distract, but the specific clue \"The Eas a Chual Aluinn is the highest waterfall in this country.\" points to \"Great Britain\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Sri Lanka","\"Sri Lanka\" is geographically plausible enough to distract, but the specific clue \"The Eas a Chual Aluinn is the highest waterfall in this country.\" points to \"Great Britain\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2938,7 +2938,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336290,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 290",
+    title: "Country of Yumbilla Falls",
     prompt: "In what country is Yumbilla Falls, the fifth-tallest waterfall on the planet, located?",
     correct: "Peru",
     wrong: [["Chile","\"Chile\" is geographically plausible enough to distract, but the specific clue \"In what country is Yumbilla Falls, the fifth-tallest waterfall on the planet, located?\" points to \"Peru\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Thailand","\"Thailand\" is geographically plausible enough to distract, but the specific clue \"In what country is Yumbilla Falls, the fifth-tallest waterfall on the planet, located?\" points to \"Peru\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Australia","\"Australia\" is geographically plausible enough to distract, but the specific clue \"In what country is Yumbilla Falls, the fifth-tallest waterfall on the planet, located?\" points to \"Peru\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2958,7 +2958,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336292,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 292",
+    title: "Country of Mount Unzen",
     prompt: "In what Asian country is the Mount Unzen volcanic group located?",
     correct: "Japan",
     wrong: [["Vietnam","\"Vietnam\" is geographically plausible enough to distract, but the specific clue \"In what Asian country is the Mount Unzen volcanic group located?\" points to \"Japan\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["China","\"China\" is geographically plausible enough to distract, but the specific clue \"In what Asian country is the Mount Unzen volcanic group located?\" points to \"Japan\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Thailand","\"Thailand\" is geographically plausible enough to distract, but the specific clue \"In what Asian country is the Mount Unzen volcanic group located?\" points to \"Japan\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2968,7 +2968,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336293,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 293",
+    title: "Country of Santorini",
     prompt: "The Santorini volcanic islands are part of what European country?",
     correct: "Greece",
     wrong: [["Denmark","\"Denmark\" is geographically plausible enough to distract, but the specific clue \"The Santorini volcanic islands are part of what European country?\" points to \"Greece\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Spain","\"Spain\" is geographically plausible enough to distract, but the specific clue \"The Santorini volcanic islands are part of what European country?\" points to \"Greece\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Italy","\"Italy\" is geographically plausible enough to distract, but the specific clue \"The Santorini volcanic islands are part of what European country?\" points to \"Greece\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2978,7 +2978,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336294,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 294",
+    title: "State of St. Louis",
     prompt: "The city of Saint Louis, nicknamed Gateway to the West, is located in which state?",
     correct: "Missouri",
     wrong: [["Nebraska","\"Nebraska\" is geographically plausible enough to distract, but the specific clue \"The city of Saint Louis, nicknamed Gateway to the West, is located in which state?\" points to \"Missouri\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Mississippi","\"Mississippi\" is geographically plausible enough to distract, but the specific clue \"The city of Saint Louis, nicknamed Gateway to the West, is located in which state?\" points to \"Missouri\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Ohio","\"Ohio\" is geographically plausible enough to distract, but the specific clue \"The city of Saint Louis, nicknamed Gateway to the West, is located in which state?\" points to \"Missouri\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -2988,7 +2988,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336295,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 295",
+    title: "Birth City of Malcolm X",
     prompt: "Malcolm X, the founder of the Organization of Afro-American Unity, was born in what US city?",
     correct: "Omaha",
     wrong: [["Kansas City","\"Kansas City\" is geographically plausible enough to distract, but the specific clue \"Malcolm X, the founder of the Organization of Afro-American Unity, was born in what US cit\" points to \"Omaha\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Saint Louis","\"Saint Louis\" is geographically plausible enough to distract, but the specific clue \"Malcolm X, the founder of the Organization of Afro-American Unity, was born in what US cit\" points to \"Omaha\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Belleville","\"Belleville\" is geographically plausible enough to distract, but the specific clue \"Malcolm X, the founder of the Organization of Afro-American Unity, was born in what US cit\" points to \"Omaha\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3008,7 +3008,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336297,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 297",
+    title: "Highest City in the US",
     prompt: "This city, located in Colorado, is the highest city in the United States.",
     correct: "Leadville",
     wrong: [["Vail","\"Vail\" is geographically plausible enough to distract, but the specific clue \"This city, located in Colorado, is the highest city in the United States.\" points to \"Leadville\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Colorado Springs","\"Colorado Springs\" is geographically plausible enough to distract, but the specific clue \"This city, located in Colorado, is the highest city in the United States.\" points to \"Leadville\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Denver","\"Denver\" is geographically plausible enough to distract, but the specific clue \"This city, located in Colorado, is the highest city in the United States.\" points to \"Leadville\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3018,7 +3018,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336298,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 298",
+    title: "Birthplace of Amelia Earhart",
     prompt: "Amelia Earhart, the first woman to fly solo across the Atlantic, was born in what city and state?",
     correct: "Atchison, Kansas",
     wrong: [["Omaha, Nebraska","\"Omaha, Nebraska\" is geographically plausible enough to distract, but the specific clue \"Amelia Earhart, the first woman to fly solo across the Atlantic, was born in what city and\" points to \"Atchison, Kansas\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Louisville, Kentucky","\"Louisville, Kentucky\" is geographically plausible enough to distract, but the specific clue \"Amelia Earhart, the first woman to fly solo across the Atlantic, was born in what city and\" points to \"Atchison, Kansas\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["New York City, New York","\"New York City, New York\" is geographically plausible enough to distract, but the specific clue \"Amelia Earhart, the first woman to fly solo across the Atlantic, was born in what city and\" points to \"Atchison, Kansas\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3028,7 +3028,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336299,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 299",
+    title: "Largest Desert on Earth",
     prompt: "In geography, the term desert is used to refer to a region that receives little or no precipitation. Approximately one-third of Earths land surface is desert, with the largest such region being which of these?",
     correct: "Antarctica",
     wrong: [["Sahara","\"Sahara\" is geographically plausible enough to distract, but the specific clue \"In geography, the term desert is used to refer to a region that receives little or no prec\" points to \"Antarctica\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Kalahari","\"Kalahari\" is geographically plausible enough to distract, but the specific clue \"In geography, the term desert is used to refer to a region that receives little or no prec\" points to \"Antarctica\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Greenland","\"Greenland\" is geographically plausible enough to distract, but the specific clue \"In geography, the term desert is used to refer to a region that receives little or no prec\" points to \"Antarctica\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3038,7 +3038,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336300,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 300",
+    title: "Region of the Kalahari",
     prompt: "The Kalahari Desert, meaning great thirst translated from the local language, is a vast area of red-brown sands, taking up a considerable area of which of these regions?",
     correct: "South Africa",
     wrong: [["Central Asia","\"Central Asia\" is geographically plausible enough to distract, but the specific clue \"The Kalahari Desert, meaning great thirst translated from the local language, is a vast ar\" points to \"South Africa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["The Middle East","\"The Middle East\" is geographically plausible enough to distract, but the specific clue \"The Kalahari Desert, meaning great thirst translated from the local language, is a vast ar\" points to \"South Africa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Southwest Asia","\"Southwest Asia\" is geographically plausible enough to distract, but the specific clue \"The Kalahari Desert, meaning great thirst translated from the local language, is a vast ar\" points to \"South Africa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3048,7 +3048,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336301,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 301",
+    title: "Oldest Desert in the World",
     prompt: "This African desert, famous for its enormous sand dunes, is considered the oldest desert in the world, having endured its current arid conditions for at least 80 million years.",
     correct: "Namib Desert",
     wrong: [["Libyan Desert","\"Libyan Desert\" is geographically plausible enough to distract, but the specific clue \"This African desert, famous for its enormous sand dunes, is considered the oldest desert i\" points to \"Namib Desert\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Kalahari Desert","\"Kalahari Desert\" is geographically plausible enough to distract, but the specific clue \"This African desert, famous for its enormous sand dunes, is considered the oldest desert i\" points to \"Namib Desert\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Kara Kum Desert","\"Kara Kum Desert\" is geographically plausible enough to distract, but the specific clue \"This African desert, famous for its enormous sand dunes, is considered the oldest desert i\" points to \"Namib Desert\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3058,7 +3058,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336302,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 302",
+    title: "Cause of Rangipo Desert",
     prompt: "Rangipo Desert in the central part of New Zealands North Island, does not have its barren and lifeless appearance because of the lack of rain, but rather, due to which of these?",
     correct: "Soil structure",
     wrong: [["Intense use of pesticides","\"Intense use of pesticides\" is geographically plausible enough to distract, but the specific clue \"Rangipo Desert in the central part of New Zealands North Island, does not have its barren \" points to \"Soil structure\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Constant powerful winds","\"Constant powerful winds\" is geographically plausible enough to distract, but the specific clue \"Rangipo Desert in the central part of New Zealands North Island, does not have its barren \" points to \"Soil structure\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Frequent destructive storms","\"Frequent destructive storms\" is geographically plausible enough to distract, but the specific clue \"Rangipo Desert in the central part of New Zealands North Island, does not have its barren \" points to \"Soil structure\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3068,7 +3068,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336303,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 303",
+    title: "Substance of the Atacama",
     prompt: "The Atacama Desert of Chile and Peru is one of the driest and most lifeless places on Earth. This virtually rainless plateau is made up of sand, lava flows, and what other substance?",
     correct: "Salt",
     wrong: [["Limestone","\"Limestone\" is geographically plausible enough to distract, but the specific clue \"The Atacama Desert of Chile and Peru is one of the driest and most lifeless places on Eart\" points to \"Salt\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Clay","\"Clay\" is geographically plausible enough to distract, but the specific clue \"The Atacama Desert of Chile and Peru is one of the driest and most lifeless places on Eart\" points to \"Salt\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Ash","\"Ash\" is geographically plausible enough to distract, but the specific clue \"The Atacama Desert of Chile and Peru is one of the driest and most lifeless places on Eart\" points to \"Salt\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3078,7 +3078,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336304,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 304",
+    title: "Australian Desert of Uluru",
     prompt: "This Australian desert of nearly 600,000 square kilometres is famous for its spectacular land and rock formations, such as Uluru and Kata Tjuta, its estimated 1,100 parallel dunes running north-south, and the fresh water lake, Rainbow Valley.",
     correct: "Simpson Desert",
     wrong: [["Tanami Desert","\"Tanami Desert\" is geographically plausible enough to distract, but the specific clue \"This Australian desert of nearly 600,000 square kilometres is famous for its spectacular l\" points to \"Simpson Desert\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Great Victoria Desert","\"Great Victoria Desert\" is geographically plausible enough to distract, but the specific clue \"This Australian desert of nearly 600,000 square kilometres is famous for its spectacular l\" points to \"Simpson Desert\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Great Sandy Desert","\"Great Sandy Desert\" is geographically plausible enough to distract, but the specific clue \"This Australian desert of nearly 600,000 square kilometres is famous for its spectacular l\" points to \"Simpson Desert\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3088,7 +3088,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336305,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 305",
+    title: "Desert of Ramon Crater",
     prompt: "The largest natural karst crater on Earth - Ramon Crater, with a length of 40 km (25 miles) and width of 2 to 10 km (1.5 to 6 miles), is situated in the heart of this Middle East desert.",
     correct: "Negev desert",
     wrong: [["Kyzyl Kum","\"Kyzyl Kum\" is geographically plausible enough to distract, but the specific clue \"The largest natural karst crater on Earth - Ramon Crater, with a length of 40 km (25 miles\" points to \"Negev desert\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Judean Desert","\"Judean Desert\" is geographically plausible enough to distract, but the specific clue \"The largest natural karst crater on Earth - Ramon Crater, with a length of 40 km (25 miles\" points to \"Negev desert\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Mojave desert","\"Mojave desert\" is geographically plausible enough to distract, but the specific clue \"The largest natural karst crater on Earth - Ramon Crater, with a length of 40 km (25 miles\" points to \"Negev desert\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3098,7 +3098,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336306,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 306",
+    title: "Smallest Continent",
     prompt: "Which of the following countries is the worlds smallest continent, and can also be considered an island since it is surrounded by water?",
     correct: "Australia",
     wrong: [["India","\"India\" is geographically plausible enough to distract, but the specific clue \"Which of the following countries is the worlds smallest continent, and can also be conside\" points to \"Australia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Africa","\"Africa\" is geographically plausible enough to distract, but the specific clue \"Which of the following countries is the worlds smallest continent, and can also be conside\" points to \"Australia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Madagascar","\"Madagascar\" is geographically plausible enough to distract, but the specific clue \"Which of the following countries is the worlds smallest continent, and can also be conside\" points to \"Australia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3108,7 +3108,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336307,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 307",
+    title: "Country With Vanished Neighbors",
     prompt: "Which central European countrys all pre-1989 neighbors do not exist any more? The country is now bordered by 7 states.",
     correct: "Poland",
     wrong: [["Austria","\"Austria\" is geographically plausible enough to distract, but the specific clue \"Which central European countrys all pre-1989 neighbors do not exist any more? The country \" points to \"Poland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Hungary","\"Hungary\" is geographically plausible enough to distract, but the specific clue \"Which central European countrys all pre-1989 neighbors do not exist any more? The country \" points to \"Poland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Romania","\"Romania\" is geographically plausible enough to distract, but the specific clue \"Which central European countrys all pre-1989 neighbors do not exist any more? The country \" points to \"Poland\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3118,7 +3118,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336308,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 308",
+    title: "Modern Country of Dahomey",
     prompt: "The African kingdom of Dahomey was powerful in the XVIII century. Which modern day country did it cover?",
     correct: "Benin",
     wrong: [["Burma","\"Burma\" is geographically plausible enough to distract, but the specific clue \"The African kingdom of Dahomey was powerful in the XVIII century. Which modern day country\" points to \"Benin\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Burkina Faso","\"Burkina Faso\" is geographically plausible enough to distract, but the specific clue \"The African kingdom of Dahomey was powerful in the XVIII century. Which modern day country\" points to \"Benin\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["DR Congo","\"DR Congo\" is geographically plausible enough to distract, but the specific clue \"The African kingdom of Dahomey was powerful in the XVIII century. Which modern day country\" points to \"Benin\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3128,7 +3128,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336309,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 309",
+    title: "Country Behind FYROM",
     prompt: "When Yugoslavia collapsed, one of its republics became an independent state known as FYROM. To which country does the acronym refer?",
     correct: "Macedonia",
     wrong: [["Albania","\"Albania\" is geographically plausible enough to distract, but the specific clue \"When Yugoslavia collapsed, one of its republics became an independent state known as FYROM\" points to \"Macedonia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Bosnia and Herzegovina","\"Bosnia and Herzegovina\" is geographically plausible enough to distract, but the specific clue \"When Yugoslavia collapsed, one of its republics became an independent state known as FYROM\" points to \"Macedonia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Montenegro","\"Montenegro\" is geographically plausible enough to distract, but the specific clue \"When Yugoslavia collapsed, one of its republics became an independent state known as FYROM\" points to \"Macedonia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3138,7 +3138,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336310,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 310",
+    title: "Lands of the Commonwealth",
     prompt: "By the end of the 16th century, a country called Commonwealth of Both Nations covered almost 1 million square kilometers of Europe. Which two countries formed it?",
     correct: "Poland and Lithuania",
     wrong: [["Sweden and Denmark","\"Sweden and Denmark\" is geographically plausible enough to distract, but the specific clue \"By the end of the 16th century, a country called Commonwealth of Both Nations covered almo\" points to \"Poland and Lithuania\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Russia and Ukraine","\"Russia and Ukraine\" is geographically plausible enough to distract, but the specific clue \"By the end of the 16th century, a country called Commonwealth of Both Nations covered almo\" points to \"Poland and Lithuania\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Austria and Hungary","\"Austria and Hungary\" is geographically plausible enough to distract, but the specific clue \"By the end of the 16th century, a country called Commonwealth of Both Nations covered almo\" points to \"Poland and Lithuania\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3148,7 +3148,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336311,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 311",
+    title: "Homeland of the Phoenicians",
     prompt: "Phoenicia was an ancient civilization that spread maritime trade over the Mediterranean Sea. From where did the Phoenicians originate?",
     correct: "Modern day Liban (Sidon, Tyre)",
     wrong: [["North Africa (Tunis, Algier)","\"North Africa (Tunis, Algier)\" is a nearby-looking geography answer, but the clue \"Phoenicia was an ancient civilization that spread maritime trade over the Mediterranean Se\" points to \"Modern day Liban (Sidon, Tyre)\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Sicily (Syracuse)","\"Sicily (Syracuse)\" is a nearby-looking geography answer, but the clue \"Phoenicia was an ancient civilization that spread maritime trade over the Mediterranean Se\" points to \"Modern day Liban (Sidon, Tyre)\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Greek islands on the Aegean Sea","\"Greek islands on the Aegean Sea\" is a nearby-looking geography answer, but the clue \"Phoenicia was an ancient civilization that spread maritime trade over the Mediterranean Se\" points to \"Modern day Liban (Sidon, Tyre)\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -3158,7 +3158,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336312,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 312",
+    title: "Former Name of Myanmar",
     prompt: "Myanmar is a south-eastern Asian country. Under which name was it known before a military junta took over?",
     correct: "Burma",
     wrong: [["Siam","\"Siam\" is geographically plausible enough to distract, but the specific clue \"Myanmar is a south-eastern Asian country. Under which name was it known before a military \" points to \"Burma\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Bhutan","\"Bhutan\" is geographically plausible enough to distract, but the specific clue \"Myanmar is a south-eastern Asian country. Under which name was it known before a military \" points to \"Burma\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Noth Vietnam","\"Noth Vietnam\" is geographically plausible enough to distract, but the specific clue \"Myanmar is a south-eastern Asian country. Under which name was it known before a military \" points to \"Burma\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3168,7 +3168,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336313,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 313",
+    title: "Successor of the Ottoman Empire",
     prompt: "The Ottoman Empire used to rule over North Africa, the Middle East and south-eastern Europe. Which modern day country is the successor of the empire?",
     correct: "Turkey",
     wrong: [["Israel","\"Israel\" is geographically plausible enough to distract, but the specific clue \"The Ottoman Empire used to rule over North Africa, the Middle East and south-eastern Europ\" points to \"Turkey\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Saudi Arabia","\"Saudi Arabia\" is geographically plausible enough to distract, but the specific clue \"The Ottoman Empire used to rule over North Africa, the Middle East and south-eastern Europ\" points to \"Turkey\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Egypt","\"Egypt\" is geographically plausible enough to distract, but the specific clue \"The Ottoman Empire used to rule over North Africa, the Middle East and south-eastern Europ\" points to \"Turkey\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3208,7 +3208,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336317,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 317",
+    title: "Country of Tegucigalpa",
     prompt: "Tegucigalpa is the capital and largest city of this country.",
     correct: "Honduras",
     wrong: [["Namibia","\"Namibia\" is geographically plausible enough to distract, but the specific clue \"Tegucigalpa is the capital and largest city of this country.\" points to \"Honduras\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Uzbekistan","\"Uzbekistan\" is geographically plausible enough to distract, but the specific clue \"Tegucigalpa is the capital and largest city of this country.\" points to \"Honduras\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Laos","\"Laos\" is geographically plausible enough to distract, but the specific clue \"Tegucigalpa is the capital and largest city of this country.\" points to \"Honduras\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3288,7 +3288,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336325,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 325",
+    title: "Capital of Zimbabwe",
     prompt: "Name Zimbabwes capital which is an independent city equivalent to a province.",
     correct: "Harare",
     wrong: [["Cairo","\"Cairo\" is geographically plausible enough to distract, but the specific clue \"Name Zimbabwes capital which is an independent city equivalent to a province.\" points to \"Harare\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Rome","\"Rome\" is geographically plausible enough to distract, but the specific clue \"Name Zimbabwes capital which is an independent city equivalent to a province.\" points to \"Harare\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Tunis","\"Tunis\" is geographically plausible enough to distract, but the specific clue \"Name Zimbabwes capital which is an independent city equivalent to a province.\" points to \"Harare\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3298,7 +3298,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336326,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 326",
+    title: "Capital of the Congo Republic",
     prompt: "What is the capital and largest city of the Republic of the Congo?",
     correct: "Brazzaville",
     wrong: [["Lusaka","\"Lusaka\" is geographically plausible enough to distract, but the specific clue \"What is the capital and largest city of the Republic of the Congo?\" points to \"Brazzaville\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Lima","\"Lima\" is geographically plausible enough to distract, but the specific clue \"What is the capital and largest city of the Republic of the Congo?\" points to \"Brazzaville\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Libreville","\"Libreville\" is geographically plausible enough to distract, but the specific clue \"What is the capital and largest city of the Republic of the Congo?\" points to \"Brazzaville\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3308,7 +3308,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336327,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 327",
+    title: "Capital of Guinea",
     prompt: "What port on the Atlantic Ocean is the capital and largest city of Guinea.",
     correct: "Conakry",
     wrong: [["Baku","\"Baku\" is a nearby-looking geography answer, but the clue \"What port on the Atlantic Ocean is the capital and largest city of Guinea.\" points to \"Conakry\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Dhaka","\"Dhaka\" is a nearby-looking geography answer, but the clue \"What port on the Atlantic Ocean is the capital and largest city of Guinea.\" points to \"Conakry\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Bujumbura","\"Bujumbura\" is a nearby-looking geography answer, but the clue \"What port on the Atlantic Ocean is the capital and largest city of Guinea.\" points to \"Conakry\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -3328,7 +3328,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336329,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 329",
+    title: "Capital of Kenya",
     prompt: "This city is Kenyas capital and the most populous city in East Africa.",
     correct: "Nairobi",
     wrong: [["Cape Town","\"Cape Town\" is geographically plausible enough to distract, but the specific clue \"This city is Kenyas capital and the most populous city in East Africa.\" points to \"Nairobi\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Port Louis","\"Port Louis\" is geographically plausible enough to distract, but the specific clue \"This city is Kenyas capital and the most populous city in East Africa.\" points to \"Nairobi\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Tripoli","\"Tripoli\" is geographically plausible enough to distract, but the specific clue \"This city is Kenyas capital and the most populous city in East Africa.\" points to \"Nairobi\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3368,7 +3368,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336333,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 333",
+    title: "State Not Bordering Louisiana",
     prompt: "The state of Louisiana is bordered by the Gulf of Mexico on the south and three states. Which state does NOT border Louisiana?",
     correct: "Oklahoma",
     wrong: [["Texas","\"Texas\" is geographically plausible enough to distract, but the specific clue \"The state of Louisiana is bordered by the Gulf of Mexico on the south and three states. Wh\" points to \"Oklahoma\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Arkansas","\"Arkansas\" is geographically plausible enough to distract, but the specific clue \"The state of Louisiana is bordered by the Gulf of Mexico on the south and three states. Wh\" points to \"Oklahoma\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Mississippi","\"Mississippi\" is geographically plausible enough to distract, but the specific clue \"The state of Louisiana is bordered by the Gulf of Mexico on the south and three states. Wh\" points to \"Oklahoma\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3378,7 +3378,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336334,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 334",
+    title: "Countries of the Beskidy Region",
     prompt: "The Beskidy (Beskydy) Euroregion is located in the west part of the Carpathian mountain range. Which three countries does it span?",
     correct: "Czech Republic, Poland, Slovakia",
     wrong: [["Hungary, Romania, Ukraine","\"Hungary, Romania, Ukraine\" is geographically plausible enough to distract, but the specific clue \"The Beskidy (Beskydy) Euroregion is located in the west part of the Carpathian mountain ra\" points to \"Czech Republic, Poland, Slovakia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Czech Republic, Austria, Slovakia","\"Czech Republic, Austria, Slovakia\" is geographically plausible enough to distract, but the specific clue \"The Beskidy (Beskydy) Euroregion is located in the west part of the Carpathian mountain ra\" points to \"Czech Republic, Poland, Slovakia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Poland, Slovakia, Ukraine","\"Poland, Slovakia, Ukraine\" is geographically plausible enough to distract, but the specific clue \"The Beskidy (Beskydy) Euroregion is located in the west part of the Carpathian mountain ra\" points to \"Czech Republic, Poland, Slovakia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3408,7 +3408,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336337,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 337",
+    title: "Third Cross Channel Country",
     prompt: "The Cross Channel Euroregion includes France, the UK and what other country?",
     correct: "Belgium",
     wrong: [["Ireland","\"Ireland\" is geographically plausible enough to distract, but the specific clue \"The Cross Channel Euroregion includes France, the UK and what other country?\" points to \"Belgium\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Spain","\"Spain\" is geographically plausible enough to distract, but the specific clue \"The Cross Channel Euroregion includes France, the UK and what other country?\" points to \"Belgium\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Netherlands","\"Netherlands\" is geographically plausible enough to distract, but the specific clue \"The Cross Channel Euroregion includes France, the UK and what other country?\" points to \"Belgium\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3418,7 +3418,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336338,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 338",
+    title: "River Dividing Pomerania",
     prompt: "The region of Pomerania (ger.: Pomern, pol.: Pomorze) is located in north Germany and Poland. Which river divides the region into two parts?",
     correct: "Oder (Odra)",
     wrong: [["Vistula","\"Vistula\" is a nearby-looking geography answer, but the clue \"The region of Pomerania (ger.: Pomern, pol.: Pomorze) is located in north Germany and Pola\" points to \"Oder (Odra)\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Danube","\"Danube\" is a nearby-looking geography answer, but the clue \"The region of Pomerania (ger.: Pomern, pol.: Pomorze) is located in north Germany and Pola\" points to \"Oder (Odra)\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Elbe","\"Elbe\" is a nearby-looking geography answer, but the clue \"The region of Pomerania (ger.: Pomern, pol.: Pomorze) is located in north Germany and Pola\" points to \"Oder (Odra)\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -3428,7 +3428,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336339,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 339",
+    title: "Countries of the TriRhena Region",
     prompt: "The TriRhena Euroregion is spans these three countries crossed by the Rhine River.",
     correct: "France, Germany and Switzerland",
     wrong: [["Belgium, Germany and Luxembourg","\"Belgium, Germany and Luxembourg\" is a nearby-looking geography answer, but the clue \"The TriRhena Euroregion is spans these three countries crossed by the Rhine River.\" points to \"France, Germany and Switzerland\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Austria, Germany and Switzerland","\"Austria, Germany and Switzerland\" is a nearby-looking geography answer, but the clue \"The TriRhena Euroregion is spans these three countries crossed by the Rhine River.\" points to \"France, Germany and Switzerland\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["France, Germany and Holland","\"France, Germany and Holland\" is a nearby-looking geography answer, but the clue \"The TriRhena Euroregion is spans these three countries crossed by the Rhine River.\" points to \"France, Germany and Switzerland\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -3438,7 +3438,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336340,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 340",
+    title: "Countries of the Pyrenees Region",
     prompt: "The Pyrenees-Mediterranean region is located along the border of which two countries?",
     correct: "France - Spain",
     wrong: [["France - Italy","\"France - Italy\" is geographically plausible enough to distract, but the specific clue \"The Pyrenees-Mediterranean region is located along the border of which two countries?\" points to \"France - Spain\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Norway - Sweden","\"Norway - Sweden\" is geographically plausible enough to distract, but the specific clue \"The Pyrenees-Mediterranean region is located along the border of which two countries?\" points to \"France - Spain\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Spain - Portugal","\"Spain - Portugal\" is geographically plausible enough to distract, but the specific clue \"The Pyrenees-Mediterranean region is located along the border of which two countries?\" points to \"France - Spain\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3448,7 +3448,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336341,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 341",
+    title: "State Animal of Colorado",
     prompt: "What is the state animal of Colorado and the symbol of Rocky Mountain National Park?",
     correct: "Big Horned Sheep",
     wrong: [["Mustang","\"Mustang\" is geographically plausible enough to distract, but the specific clue \"What is the state animal of Colorado and the symbol of Rocky Mountain National Park?\" points to \"Big Horned Sheep\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["White Tailed Deer","\"White Tailed Deer\" is geographically plausible enough to distract, but the specific clue \"What is the state animal of Colorado and the symbol of Rocky Mountain National Park?\" points to \"Big Horned Sheep\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Buffalo","\"Buffalo\" is geographically plausible enough to distract, but the specific clue \"What is the state animal of Colorado and the symbol of Rocky Mountain National Park?\" points to \"Big Horned Sheep\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3458,7 +3458,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336342,
     chapter: "Rivers and Oceans",
-    title: "OpenTrivia Geography 342",
+    title: "Landmark of the Colorado River",
     prompt: "The Colorado River, the major river of the American southwest, flows through which national landmark?",
     correct: "All of these",
     wrong: [["The Hoover Dam","\"The Hoover Dam\" is a nearby-looking geography answer, but the clue \"The Colorado River, the major river of the American southwest, flows through which nationa\" points to \"All of these\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["The Grand Canyon","\"The Grand Canyon\" is a nearby-looking geography answer, but the clue \"The Colorado River, the major river of the American southwest, flows through which nationa\" points to \"All of these\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."],["Arches National Park","\"Arches National Park\" is a nearby-looking geography answer, but the clue \"The Colorado River, the major river of the American southwest, flows through which nationa\" points to \"All of these\" instead.","Trace the water clue: source, mouth, continent, sea, or neighboring river."]],
@@ -3468,7 +3468,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336343,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 343",
+    title: "Richest Square Mile City",
     prompt: "What city in Colorado is known as the Richest Square Mile on Earth?",
     correct: "Central City, Colorado",
     wrong: [["Denver, Colorado","\"Denver, Colorado\" is geographically plausible enough to distract, but the specific clue \"What city in Colorado is known as the Richest Square Mile on Earth?\" points to \"Central City, Colorado\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Leadville, Colorado","\"Leadville, Colorado\" is geographically plausible enough to distract, but the specific clue \"What city in Colorado is known as the Richest Square Mile on Earth?\" points to \"Central City, Colorado\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Colorado Springs, Colorado","\"Colorado Springs, Colorado\" is geographically plausible enough to distract, but the specific clue \"What city in Colorado is known as the Richest Square Mile on Earth?\" points to \"Central City, Colorado\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3488,7 +3488,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336345,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 345",
+    title: "Continent of Mount Nyiragongo",
     prompt: "On which continent is the famous active volcano Mount Nyiragongo located?",
     correct: "Africa",
     wrong: [["Asia","\"Asia\" is geographically plausible enough to distract, but the specific clue \"On which continent is the famous active volcano Mount Nyiragongo located?\" points to \"Africa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Australia","\"Australia\" is geographically plausible enough to distract, but the specific clue \"On which continent is the famous active volcano Mount Nyiragongo located?\" points to \"Africa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["South America","\"South America\" is geographically plausible enough to distract, but the specific clue \"On which continent is the famous active volcano Mount Nyiragongo located?\" points to \"Africa\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3518,7 +3518,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336348,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 348",
+    title: "State of Fourpeaked Volcano",
     prompt: "In what US state is the Fourpeaked Volcano, also known as Fourpeaked Mountain, situated?",
     correct: "Alaska",
     wrong: [["Colorado","\"Colorado\" is geographically plausible enough to distract, but the specific clue \"In what US state is the Fourpeaked Volcano, also known as Fourpeaked Mountain, situated?\" points to \"Alaska\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Oregon","\"Oregon\" is geographically plausible enough to distract, but the specific clue \"In what US state is the Fourpeaked Volcano, also known as Fourpeaked Mountain, situated?\" points to \"Alaska\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Montana","\"Montana\" is geographically plausible enough to distract, but the specific clue \"In what US state is the Fourpeaked Volcano, also known as Fourpeaked Mountain, situated?\" points to \"Alaska\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3528,7 +3528,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336349,
     chapter: "Physical Geography",
-    title: "OpenTrivia Geography 349",
+    title: "Holy Mountain Decree Year",
     prompt: "The self-governed region of the Holy Mountain is considered part of the Greek state according to a decree",
     correct: "1913",
     wrong: [["1910","\"1910\" is geographically plausible enough to distract, but the specific clue \"The self-governed region of the Holy Mountain is considered part of the Greek state accord\" points to \"1913\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["1925","\"1925\" is geographically plausible enough to distract, but the specific clue \"The self-governed region of the Holy Mountain is considered part of the Greek state accord\" points to \"1913\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["1999","\"1999\" is geographically plausible enough to distract, but the specific clue \"The self-governed region of the Holy Mountain is considered part of the Greek state accord\" points to \"1913\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3538,7 +3538,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336350,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 350",
+    title: "Country Bordering Sweden",
     prompt: "Which of these European countries shares a land border with Sweden?",
     correct: "Norway",
     wrong: [["Switzerland","\"Switzerland\" is geographically plausible enough to distract, but the specific clue \"Which of these European countries shares a land border with Sweden?\" points to \"Norway\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Denmark","\"Denmark\" is geographically plausible enough to distract, but the specific clue \"Which of these European countries shares a land border with Sweden?\" points to \"Norway\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Lithuania","\"Lithuania\" is geographically plausible enough to distract, but the specific clue \"Which of these European countries shares a land border with Sweden?\" points to \"Norway\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],
@@ -3548,7 +3548,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336351,
     chapter: "World Capitals",
-    title: "OpenTrivia Geography 351",
+    title: "Capital of Sweden",
     prompt: "What is the name of the largest city and capital of Sweden?",
     correct: "Stockholm",
     wrong: [["Helsinki","\"Helsinki\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"Stockholm\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."],["Oslo","\"Oslo\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"Stockholm\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."],["Gothenburg","\"Gothenburg\" is a tempting city-name decoy, but the clue asks for the capital whose answer is \"Stockholm\"; check official capital status, not fame or size.","First identify the country or territory, then separate famous cities from official capitals."]],
@@ -3558,7 +3558,7 @@ const _baseOpenTriviaGeographyQuestions = makeQuestionBank('AP', [
   {
     id: 336352,
     chapter: "Countries and Regions",
-    title: "OpenTrivia Geography 352",
+    title: "Capital of Brazil",
     prompt: "What is the capital city of the Federative Republic of Brazil?",
     correct: "Brasilia",
     wrong: [["Sao Paulo","\"Sao Paulo\" is geographically plausible enough to distract, but the specific clue \"What is the capital city of the Federative Republic of Brazil?\" points to \"Brasilia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Bogota","\"Bogota\" is geographically plausible enough to distract, but the specific clue \"What is the capital city of the Federative Republic of Brazil?\" points to \"Brasilia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."],["Rio de Janeiro","\"Rio de Janeiro\" is geographically plausible enough to distract, but the specific clue \"What is the capital city of the Federative Republic of Brazil?\" points to \"Brasilia\".","Anchor on the exact place clue before choosing among familiar-looking geography names."]],

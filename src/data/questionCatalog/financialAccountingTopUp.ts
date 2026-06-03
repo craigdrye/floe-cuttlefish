@@ -437,7 +437,7 @@ export const financialAccountingTopUpQuestions: Question[] = makeQuestionBank('U
   {
     id: 7422028,
     chapter: 'Revenue Recognition Under ASC 606',
-    title: 'The five steps of ASC 606',
+    title: "Five steps of revenue recognition",
     prompt: 'Which sequence correctly states the five steps of the ASC 606 revenue model?',
     correct: 'Identify the contract; identify performance obligations; determine the transaction price; allocate the price to obligations; recognize revenue as obligations are satisfied',
     wrong: [

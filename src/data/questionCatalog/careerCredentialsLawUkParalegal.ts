@@ -65,7 +65,7 @@ export const sqe1Questions: Question[] = makeQuestionBank('Career Skills', [
   {
     id: 4970005,
     chapter: 'Wills and Administration of Estates',
-    title: 'Section 9 Wills Act 1837',
+    title: "Valid Execution of a Will",
     prompt: 'A testator signs a will in the presence of one witness, who then signs. A second witness arrives ten minutes later, sees the testator\'s signature, and signs in the testator\'s presence without the testator re-signing. Is the will validly executed?',
     correct: 'No, because both witnesses must attest or acknowledge the testator\'s signature in the testator\'s presence',
     wrong: [
@@ -149,7 +149,7 @@ export const sqe1Questions: Question[] = makeQuestionBank('Career Skills', [
   {
     id: 4970011,
     chapter: 'Business Law and Practice',
-    title: 'Section 175 CA 2006',
+    title: "Authorising a Director's Conflict",
     prompt: 'A private company director is offered a personal stake in a supplier the company is about to contract with. Under section 175 of the Companies Act 2006, the director\'s safest course is to:',
     correct: 'Seek prior authorisation by the disinterested directors before accepting the personal stake',
     wrong: [
@@ -695,7 +695,7 @@ export const sqe1Questions: Question[] = makeQuestionBank('Career Skills', [
   {
     id: 4970050,
     chapter: 'Criminal Law and Practice',
-    title: 'Adverse Inference Under CJPOA 1994',
+    title: "Adverse Inference From Silence",
     prompt: 'A suspect declines to mention a fact in police interview that he later relies on in his defence at trial. Which of the following best describes the position under section 34 of the Criminal Justice and Public Order Act 1994?',
     correct: 'The jury may draw such inferences as appear proper but a conviction cannot rest solely on the inference',
     wrong: [
@@ -2224,7 +2224,7 @@ export const sqe2Questions: Question[] = makeQuestionBank('Career Skills', [
   {
     id: 4980079,
     chapter: 'Legal Research',
-    title: 'Retained EU Law After REUL Act 2023',
+    title: "Status of Assimilated EU Law",
     prompt: 'A research task considers a provision of retained EU law. After the REUL Act 2023, the position is:',
     correct: 'Retained EU law has been renamed "assimilated law" and key principles of EU supremacy have been disapplied subject to specified savings',
     wrong: [
@@ -3179,7 +3179,7 @@ export const nalaCpQuestions: Question[] = makeQuestionBank('Career Skills', [
   {
     id: 4990067,
     chapter: 'Intellectual Property',
-    title: 'Patent Novelty Section 102',
+    title: "Patent Disclosure Grace Period",
     prompt: 'An inventor publicly discloses an invention at a conference and files a patent application 11 months later. Under 35 USC 102 as amended by the AIA:',
     correct: 'The inventor\'s own disclosure within one year provides a grace period for filing under section 102(b)(1)',
     wrong: [

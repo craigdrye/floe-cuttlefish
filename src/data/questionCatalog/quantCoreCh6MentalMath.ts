@@ -77,7 +77,7 @@ export const ch6MentalMathQuestions: Question[] = makeQuestionBank('Quant Financ
   {
     id: 19904,
     chapter: 'Mental Math and Estimation',
-    title: 'Log Base 2 of 1000',
+    title: "Estimating a base-2 logarithm",
     prompt: 'Estimate log base 2 of 1000 to the nearest integer. No calculator.',
     correct: 'About 10',
     wrong: [

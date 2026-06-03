@@ -502,7 +502,7 @@ export const ib_historyHigh103TopUpBQuestions: Question[] = makeQuestionBank('Hi
   {
     id: 7966532,
     chapter: 'HL Regional Option: History of Africa and the Middle East',
-    title: 'Suez Crisis of 1956',
+    title: "Suez Crisis and imperial decline",
     prompt: 'What event triggered the 1956 Suez Crisis, and what was its outcome for British and French influence?',
     correct: 'Nasser\'s nationalization of the Suez Canal prompted an Anglo-French-Israeli intervention that collapsed under US and Soviet pressure, signalling declining European imperial power',
     wrong: [

@@ -472,7 +472,7 @@ export const apUsGovCh6Questions: Question[] = makeQuestionBank('AP', [
   {
     id: 4360632,
     chapter: 'Chapter 6: Civil Liberties and Civil Rights',
-    title: 'Civil Rights Act of 1964',
+    title: "Title VII employment discrimination",
     prompt: 'Title VII of the Civil Rights Act of 1964 primarily prohibits discrimination on the basis of race, color, religion, sex, or national origin in:',
     correct: 'Employment by employers above a statutory size threshold',
     wrong: [

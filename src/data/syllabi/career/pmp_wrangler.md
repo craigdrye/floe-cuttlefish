@@ -10,11 +10,11 @@ This syllabus treats the PMP as both a career toolkit and an exam. Learners prac
 Keep this course scenario-first and workplace-useful. Route questions here when they test PMI-style judgment, project leadership, predictive/agile/hybrid tailoring, stakeholder engagement, change control, risk, governance, business value, earned value, procurement, quality, or exam pacing. Prompts should account for the 2026 exam-content transition when date or blueprint weight matters.
 
 ## Exam Map and Study Rhythm
-The PMP exam is organized around People, Process, and Business Environment domains. Through July 7, 2026, PMI's current ECO weights are People 42%, Process 50%, and Business Environment 8%, with about half the exam representing predictive approaches and half representing agile or hybrid approaches. Beginning July 8, 2026, PMI's new ECO shifts the weights to People 33%, Process 41%, and Business Environment 26%, with approximately 40% predictive and 60% adaptive/agile or hybrid coverage.
+The PMP exam is organized around People, Process, and Business Environment domains. The current 2021 ECO (aligned with the PMBOK Guide Seventh Edition) is the basis for every exam taken through July 8, 2026: People 42%, Process 50%, and Business Environment 8%, with about half the exam representing predictive approaches and half representing agile or hybrid approaches. The new 2026 ECO launches July 9, 2026 (with no overlap period) and aligns to the PMBOK Guide Eighth Edition. It shifts the weights to People 33%, Process 41%, and Business Environment 26%, with approximately 40% predictive and 60% adaptive/agile or hybrid coverage.
 
-This course is built to survive both blueprints: it trains the 2021 exam shape while increasing attention to business environment, value delivery, visual/case-based questions, governance, sustainability, and strategic outcomes for the 2026 transition.
+This course is built to survive both blueprints: it trains the 2021 exam shape while increasing attention to business environment, value delivery, visual/case-based questions, governance, sustainability, AI in project management, and strategic outcomes for the 2026 transition.
 
-| Domain | Current Weight Through July 7, 2026 | July 2026 ECO Weight | Study Posture |
+| Domain | Current Weight Through July 8, 2026 | July 2026 ECO Weight | Study Posture |
 |---|---:|---:|---|
 | People | 42% | 33% | Lead, coach, negotiate, communicate, resolve conflict, and keep humans from becoming untracked dependencies |
 | Process | 50% | 41% | Plan and manage work across predictive, agile, and hybrid delivery while controlling risk, quality, scope, schedule, cost, and change |
@@ -84,7 +84,7 @@ Suggested cadence: 8-10 weeks for experienced project managers, 12-16 weeks for 
 - Shared vision, product goals, success criteria, acceptance criteria, benefits, outcomes, and value measures
 - Business case, benefits management plan, strategic alignment, organizational culture, and change readiness
 - Governance structures, decision rights, approval thresholds, and sponsor engagement
-- External business environment: regulatory, market, technology, economic, sustainability, and organizational changes
+- External business environment: regulatory, market, technology (including AI in project management), economic, sustainability, and organizational changes
 
 **Applied skills**
 - Build a stakeholder engagement plan for predictive delivery and a stakeholder collaboration rhythm for agile delivery
@@ -262,6 +262,8 @@ By the end, learners assemble a portfolio that proves both exam readiness and wo
 - Full simulated PMP exams with domain analysis and a remediation backlog.
 
 ## Research Notes
-- PMI, "PMP Examination Content Outline - January 2021" - used for the current exam domains through July 7, 2026: People 42%, Process 50%, Business Environment 8%, plus the roughly 50/50 predictive and agile/hybrid coverage: https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/pmp-examination-content-outline.pdf
-- PMI, "PMP Examination Content Outline - July 2026" - used for the July 2026 domain weights, predictive/adaptive/hybrid mix, task emphasis, and new case/graphic-based question types: https://www.pmi.org/-/media/pmi/documents/public/pdf/microsites/announcements/pmp-examination-content-outline-2026.pdf
+- PMI, "PMP Examination Content Outline - January 2021" - used for the current exam domains through July 8, 2026: People 42%, Process 50%, Business Environment 8%, plus the roughly 50/50 predictive and agile/hybrid coverage: https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/pmp-examination-content-outline.pdf
+- PMI, "New PMP Examination Content Outline - 2026" - used for the July 2026 domain weights, predictive/adaptive/hybrid mix, task emphasis, and new case/graphic-based question types: https://www.pmi.org/-/media/pmi/documents/public/pdf/certifications/new-pmp-examination-content-outline-2026.pdf
+- PMI, "Did you know a new PMP exam is coming in July 2026?" - used to confirm the transition dates (current 2021 ECO/PMBOK 7th Edition exam runs through July 8, 2026; new ECO/PMBOK 8th Edition exam launches July 9, 2026 with no overlap), tripled Business Environment weight, and new interactive question types: https://www.pmi.org/certifications/project-management-pmp/new-exam
+- Project Management Academy, "2026 PMP Exam Changes and PMBOK 8 Updates Explained" - corroborated the July 8/July 9 2026 cutover, 33/41/26 domain weights, ~40/60 predictive vs adaptive split, PMBOK Guide Eighth Edition alignment, and new multi-question case/graphic/drag-and-drop item types: https://projectmanagementacademy.net/resources/blog/pmp-exam-update-2026/
 - PMI certification page for PMP eligibility and candidate information: https://www.pmi.org/certifications/project-management-pmp

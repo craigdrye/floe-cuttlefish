@@ -18,21 +18,25 @@ Where SIE is "what is a security under federal law," Series 63 is "what is a sec
 Lean retrieval-heavy and definition-first. Use traps deliberately — for any "exempt security" question, include "exempt transaction" as a wrong answer, and vice versa.
 
 ## Exam Map and Study Rhythm
-The Series 63 has **60 scored questions plus 5 unscored pretest items in 75 minutes**. Passing is 72% (43 of 60 correct). The NASAA current outline:
+The Series 63 has **60 scored questions plus 5 unscored pretest items in 75 minutes**. Passing is 72% (43 of 60 correct). NASAA reorganized the outline effective **June 12, 2023** — the current test specifications break broker-dealers and agents into separate categories, split investment advisers from IARs, and consolidate ethics *and* customer communications into one dominant 45% category. The current weights:
 
-| Topic | Exam Weight | Scored Qs | Study Posture |
+| Topic (NASAA, eff. June 12, 2023) | Exam Weight | Scored Qs | Study Posture |
 |---|---:|---:|---|
-| Regulation of Investment Advisers and IARs (incl. federal covered) | 5% | 3 | Light, but know the $100M/$110M Dodd-Frank line and LATE exclusions |
-| Regulation of Broker-Dealers and Agents | 33% | 20 | Biggest category — BD/agent definitions, registrations, exclusions, multi-state |
-| Regulation of Securities and Issuers | 22% | 13 | Federal covered, exempt securities, exempt transactions, registration methods |
+| Regulation of Investment Advisers (incl. state-registered and federal covered) | 5% | 3 | Light, but know the $100M/$110M Dodd-Frank line and LATE exclusions |
+| Regulation of Investment Adviser Representatives | 5% | 3 | IAR definition, registration, exclusions (clerical, institutional-only) |
+| Regulation of Broker-Dealers | 12% | 7 | BD definition, registration/post-registration, exclusions, agent supervision |
+| Regulation of Agents of Broker-Dealers | 13% | 8 | Agent definition, registration, U4/U5 updates, exclusions |
+| Regulation of Securities and Issuers | 9% | 5 | Definitions, state registration methods, exemptions, antifraud authority |
 | Remedies and Administrative Provisions | 11% | 7 | Administrator powers, civil/criminal penalties, recordkeeping, rescission |
-| Ethical Practices and Fiduciary Obligations | 29% | 17 | NASAA Statement of Policy on Dishonest and Unethical Practices |
+| Communication with Customers and Prospects / Ethical Practices and Fiduciary Obligations | 45% | 27 | The exam's center of gravity — NASAA Statements of Policy on Dishonest/Unethical Practices, plus communications, performance/fee disclosure, advertising |
+
+Note how the post-2023 outline weights ethics-and-communications at nearly half the exam: BD + agent registration together is only 25% (down from the old merged 33%), securities/issuers dropped to 9%, and the single biggest bucket is now conduct toward customers. Study time should follow that gravity.
 
 **Study cadence: 2-3 weeks at 6-8 hours per week** is realistic for a candidate who just passed the Series 7. The exam is short enough that a single intensive weekend can pass it, but the trap-density rewards an extra week of scenario practice.
 
 - **2-week sprint (post-Series 7)**: Week 1 — definitions + BD/agent registration + securities/exempt transactions; Week 2 — NASAA ethics rules + Administrator powers + 2 full-length practice exams. Drill 30 questions/day minimum.
 - **3-week standard**: Week 1 — definitions + IA/IAR; Week 2 — BD/agent registration + securities registration + exempts; Week 3 — ethics + administrator + 2 full-length exams. Use the third week to stress-test edge cases.
-- **4-week deep prep (no Series 7 yet)**: Same as 3-week but add a full week dedicated to NASAA Statement of Policy on Dishonest and Unethical Practices — that single document drives nearly 30% of the exam.
+- **4-week deep prep (no Series 7 yet)**: Same as 3-week but add a full week dedicated to ethics and customer communications — the NASAA Statements of Policy on Dishonest and Unethical Practices plus the communications rules together drive 45% of the exam (27 of 60 scored questions).
 
 Open the question bank in day 1. Do not read first and drill later — Series 63 has too many false-friend definitions to learn passively.
 
@@ -95,7 +99,7 @@ Open the question bank in day 1. Do not read first and drill later — Series 63
 - Federal vs state IA registration: under $100M AUM → state; $100M-$110M AUM → either; over $110M → must register with SEC
 - Switching IARs: must withdraw from state if AUM crosses $110M; must withdraw from SEC if AUM drops below $90M
 - Brochure (ADV Part 2) delivery: initial 48 hours before agreement, or at signing with 5-day rescission right; annual delivery within 120 days of fiscal year end if material changes
-- Performance fees: limited to "qualified clients" — $1.1M AUM with adviser or $2.2M net worth (excluding primary residence), per SEC Rule 205-3 (most recent inflation adjustment 2021)
+- Performance fees: limited to "qualified clients" — $1.4M AUM with adviser or $2.7M net worth (excluding primary residence), per SEC Rule 205-3 (inflation-adjusted thresholds effective June 29, 2026; the prior 2021 figures were $1.1M / $2.2M)
 
 **Applied skills**
 - Categorize an adviser as state, federal-covered, or excluded
@@ -134,8 +138,10 @@ Open the question bank in day 1. Do not read first and drill later — Series 63
 
 **Authoritative sources:** Uniform Securities Act §§301-306, 401-402; NSMIA (Pub. L. 104-290); Regulation D (17 CFR §§230.500-506); NASAA model rule on ULOE.
 
-## Chapter 5: Ethical Practices, Conflicts, and Compensation
-**Core questions:** What conduct counts as fraud, dishonest practice, or unethical behavior under NASAA's Statement of Policy?
+## Chapter 5: Ethical Practices, Conflicts, Compensation, and Customer Communications
+**Core questions:** What conduct counts as fraud, dishonest practice, or unethical behavior under NASAA's Statement of Policy — and what may an agent or IA say (and how) when communicating with customers and prospects?
+
+This is the dominant chapter of the exam. Under the June 2023 NASAA outline, "Communication with Customers and Prospects" and "Ethical Practices and Fiduciary Obligations" are weighted together at 45% (27 of 60 scored questions). Treat the communications material as first-class, not an afterthought to ethics — the question bank carries a separate Communications topic.
 
 **Key concepts**
 - Fraud under USA §501: misrepresentation or omission of material fact, employment of a scheme to defraud
@@ -145,19 +151,22 @@ Open the question bank in day 1. Do not read first and drill later — Series 63
 - Soft dollars under §28(e) of Exchange Act safe harbor: brokerage and research products only; mixed-use disclosure required
 - Agency cross transactions: written disclosure, written consent, annual statement of cross transactions
 - Custody rules for IAs (NASAA Model Custody Rule): qualified custodian, surprise audit, $35K-$50K bond depending on jurisdiction; deemed-custody triggers include directly deducting fees from client accounts (some states deem this custody, some don't)
+- **Communication with customers and prospects** (its own outline subtopic): no misleading or fraudulent advertising; prohibition on guarantees and predictions of specific results; testimonials and past-performance presentations must not be misleading; "report," "analysis," and "recommendation" are regulated terms; correspondence and social media are records; clear, balanced risk disclosure; required delivery items (IA brochure/ADV Part 2, account statements, trade confirmations)
 
 **Applied skills**
 - Identify a dishonest practice from a one-paragraph scenario (sharing without written consent; guaranteeing against loss)
 - Distinguish between permitted and prohibited gifts/entertainment ($100 gift limit per FINRA; NASAA generally aligns)
 - Apply the IA custody rule to a fee-deduction scenario
+- Judge whether a piece of advertising or a client communication is misleading (implied guarantee, cherry-picked performance, omitted material risk, unsubstantiated claim)
 
 **Common traps**
 - "Sharing in customer accounts" is allowed under FINRA Rule 3240 if: (1) the customer consents in writing, (2) the firm consents in writing, (3) sharing is *proportionate* to the agent's capital contribution. Immediate family exception waives proportionality but still requires firm consent.
 - Guaranteeing a customer against loss is *always* prohibited, even with written consent. This is a per se violation.
 - Soft dollars must fall within the §28(e) safe harbor — research and brokerage. Office furniture, salaries, computer hardware (general use): outside safe harbor and must be disclosed.
 - "Selling away" is selling a security not on the BD's approved product list without the BD's knowledge and written approval. It is a per se violation.
+- A communication does not have to be literally false to be a violation. Implying a guarantee, predicting a specific return, or omitting a material risk is a dishonest/unethical practice even if every sentence is technically true.
 
-**Authoritative sources:** USA §501; NASAA Statement of Policy on Dishonest and Unethical Practices of BDs and Agents (1983, amended); NASAA Model Rule on Unethical Business Practices of IAs/IARs; SEC §28(e) Soft Dollars safe harbor.
+**Authoritative sources:** USA §501; NASAA Statement of Policy on Dishonest and Unethical Practices of BDs and Agents (1983, amended); NASAA Model Rule on Unethical Business Practices of IAs/IARs; NASAA Statement of Policy on Use of Advertising and Sales Literature; SEC §28(e) Soft Dollars safe harbor.
 
 ## Chapter 6: Administrator Powers, Remedies, and Recordkeeping
 **Core questions:** What can the state Administrator do, what are the procedural and statutory limits, and what penalties attach to violations?
@@ -195,3 +204,12 @@ Open the question bank in day 1. Do not read first and drill later — Series 63
 - **Day before**: Re-read NASAA's Statement of Policy on Dishonest and Unethical Practices. Re-skim USA §§401-402 definitions. Light review only. Sleep.
 
 If your last two full-length practice exams averaged 80%+, you are ready. The Series 63 is famously variable on exam day because of trap-density — give yourself a 5-point buffer.
+
+## Research Notes
+- NASAA Series 63 Exam Content Outline (overview, format, $147 fee, 65 items / 60 scored / 75 min / 43-to-pass): https://www.nasaa.org/exams/general-exam-information/series-63-exam-content-outline/
+- NASAA Series 63 Test Specifications, Effective June 12, 2023 (authoritative topic weights and question counts used in the Exam Map table — IA 5%/3, IAR 5%/3, BD 12%/7, Agents 13%/8, Securities & Issuers 9%/5, Remedies 11%/7, Communications + Ethics 45%/27): https://www.nasaa.org/wp-content/uploads/2023/02/Series-63-Outline-June-2023.pdf
+- NASAA Series 63 Exam Study Guide PDF: https://www.nasaa.org/wp-content/uploads/2023/09/NASAA-Series-63-Exam-Study-Guide.pdf
+- Uniform Securities Act (2002 revision) full text, used to confirm definitions, exemptions, criminal penalties (5-5-3: 5-yr SOL, $5,000, 3 yrs) and statute of limitations: https://www.nasaa.org/wp-content/uploads/2021/09/2002-Uniform-Securities-Act.pdf
+- SEC Rule 205-3 qualified-client inflation adjustment effective June 29, 2026 ($1.4M AUM / $2.7M net worth), Release IA-6961 / order coverage: https://foleyhoag.com/news-and-insights/publications/alerts-and-updates/2026/may/sec-increases-qualified-client-thresholds-under-rule-205-3-of-the-investment-advisers-act-of-1940/
+- SEC 2021 qualified-client fact sheet (prior $1.1M / $2.2M thresholds for reference): https://www.sec.gov/files/rules/final/2021/ia-5904-fact-sheet.pdf
+- Dodd-Frank mid-sized adviser federal/state thresholds ($100M register, $110M must register, withdraw below $90M), confirmed still current in 2025: https://www.law.cornell.edu/wex/dodd-frank_title_IV

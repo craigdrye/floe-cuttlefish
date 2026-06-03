@@ -16,35 +16,36 @@ Floe routes a question into this course when it tests clinical knowledge the way
 The exam is now the residency-application **filter** that Step 1 used to be. Programs use it to triage hundreds of applications, and many program directors openly cite Step 2 CK as their first numeric screen. That has practical consequences for how you study: do not just chase a pass; chase the same depth that strong residency applicants chase, because the same exam decides both outcomes. The students who score best are not the ones who memorize the most facts. They are the ones who develop a *clinical reflex*: a vignette appears, and the next step appears with it.
 
 ## Exam Map and Study Rhythm
-The exam delivers approximately **318 multiple-choice questions over eight 60-minute blocks of ~40 questions each**, with about 45 minutes of total break time across the day. The full session runs roughly **9 hours**. Pace works out to ~**1.7 minutes per question** — slightly more time per item than Step 1, because vignettes are longer and require more synthesis.
+As of the **May 7, 2026 software/format update**, the exam delivers up to **318 multiple-choice questions over sixteen 30-minute blocks of up to 20 questions each**, with a minimum of **55 minutes of total break time** and a **5-minute optional tutorial**. (Before that date it was eight 60-minute blocks of up to 40 questions with 45 minutes of break time; the total item count and the ~9-hour testing day did not change.) Pace still works out to ~**1.5-1.7 minutes per question** — slightly more time per item than Step 1, because vignettes are longer and require more synthesis. The practical effect of the shorter blocks: more frequent natural break points and a lower per-block stamina demand, but the same total cognitive marathon.
 
 NBME publishes content ranges that shift slightly year to year. Allocate by published range, rotation experience, and personal error log.
 
 ### Discipline Weights
+Per the published NBME Step 2 CK content specifications, items are classified by clinical discipline. Note that family-medicine, ambulatory, and prevention content is distributed across the other disciplines (especially Medicine and Pediatrics) rather than counted separately, and biostatistics/ethics is captured under the task/competency dimension rather than as its own discipline.
 
 | Discipline | Approximate Weight |
 |---|---:|
-| Internal Medicine (all subspecialties) | 50-60% |
-| Surgery | 8-12% |
-| Pediatrics | 8-12% |
-| Obstetrics and Gynecology | 8-12% |
-| Psychiatry | 6-10% |
-| Family Medicine | 6-10% |
-| Biostatistics, Epidemiology, Ethics, Patient Safety, QI, Communication | 10-15% |
+| Medicine (internal medicine and subspecialties) | 55-65% |
+| Pediatrics | 17-27% |
+| Obstetrics and Gynecology | 10-20% |
+| Psychiatry | 10-15% |
+| Surgery | 5-15% |
 
-### Task Area Weights
+### Physician Task / Competency Weights
+These are the NBME-published competency ranges (the "second dimension" of the blueprint). They explain why diagnosis, lab interpretation, and management dominate the exam, and why the next-best-step reflex matters so much.
 
-| Task Area | Approximate Weight |
+| Task / Competency | Approximate Weight |
 |---|---:|
-| Medical Knowledge / Foundational Science Concepts | 8-12% |
-| History and Physical Examination | 8-12% |
-| Lab and Diagnostic Studies | 14-18% |
-| Diagnosis | 14-18% |
-| Prognosis and Outcome | 4-6% |
-| Health Maintenance, Surveillance, and Prevention | 7-12% |
-| Pharmacotherapy, Intervention, and Management | 14-18% |
-| Clinical Sciences (broad) | 10-13% |
-| Professional Practice, Communication, Ethics | 5-10% |
+| Patient Care: Diagnosis | 16-20% |
+| Patient Care: Laboratory and Diagnostic Studies | 13-17% |
+| Patient Care: Mixed Management | 12-16% |
+| Patient Care: Pharmacotherapy | 8-12% |
+| Patient Care: Clinical Interventions | 6-10% |
+| Patient Care: Health Maintenance and Disease Prevention | 5-10% |
+| Patient Care: Prognosis and Outcome | 5-9% |
+| Systems-based Practice and Patient Safety | 5-7% |
+| Professionalism (including legal/ethical issues) | 5-7% |
+| Practice-based Learning and Improvement | 3-5% |
 
 ### Suggested Study Cadence
 The most validated rhythm is a **dedicated 4-6 week block immediately after the major clerkships**, with roughly **12 hours per day** six days per week. A typical day blends:
@@ -252,8 +253,8 @@ Self-assessment: one NBME CCSSA, UWSA, or Free 120 every 7-10 days. Treat every 
 The clinical knowledge is only half the test; the other half is operating under nine hours of cognitive load. This capstone consolidates the test-day execution plan that turns *knowing it* into *getting it right*.
 
 **Pacing**
-- ~1.7 minutes per question, 40 questions per block, 60 minutes per block. Slightly more breathing room than Step 1 — but the vignettes are longer, so it does not feel that way.
-- Build a per-block pacing checkpoint: at minute 20 you should be at question 12, at minute 40 you should be at question 24.
+- ~1.5 minutes per question under the post-May-2026 format (up to 20 questions per 30-minute block). Slightly more breathing room than Step 1 — but the vignettes are longer, so it does not feel that way.
+- Build a per-block pacing checkpoint: in a 30-minute / 20-question block, you should be at roughly question 10 by minute 15. (On the older 60-minute / 40-question form, the equivalent checkpoint was question 12 by minute 20.)
 - **Never skip blindly.** Make your best educated guess on the first pass, flag if uncertain, and only return to flagged questions if time remains. Most question changes on review hurt more than they help.
 
 **Attacking a vignette**
@@ -264,8 +265,8 @@ The clinical knowledge is only half the test; the other half is operating under 
 5. Match the answer choices to the differential; eliminate before you choose.
 
 **Breaks**
-- ~45 minutes total break time across the day, distributed across seven breaks (between the eight blocks). Use them.
-- Plan longer breaks after blocks 3 and 5 with food, water, and a quick walk. Eat what your stomach already tolerates; nothing experimental.
+- A minimum of **55 minutes** of total break time across the day (post-May-2026 format), which you self-distribute between blocks; any time saved by finishing a block or the 5-minute tutorial early is added to your break bank. Use it.
+- With sixteen shorter blocks you have many more natural stopping points — bank break time and plan a couple of longer breaks around the midpoint with food, water, and a quick walk. Eat what your stomach already tolerates; nothing experimental.
 
 **Test-day prep**
 - Sleep in the last 72 hours matters more than any cramming you can do in the same window.
@@ -273,4 +274,11 @@ The clinical knowledge is only half the test; the other half is operating under 
 - Light familiar breakfast, snacks packed, arrive 30 minutes early, bring earplugs.
 - After the exam: do not debrief with peers in the first hour. Walk away, eat, sleep, and let the day be over.
 
-The exam is winnable. It is also designed to feel unwinnable somewhere around blocks 5 and 6, when fatigue and the long vignettes compound. That feeling is universal and not diagnostic. Trust the preparation, work the next question, and finish the day.
+The exam is winnable. It is also designed to feel unwinnable somewhere past the midpoint, when fatigue and the long vignettes compound. That feeling is universal and not diagnostic. Trust the preparation, work the next question, and finish the day.
+
+## Research Notes
+- USMLE Step 2 CK exam page (usmle.org): authoritative format — confirms the **May 7, 2026** change from eight 60-minute blocks (≤40 Q, 45 min break, 15-min tutorial) to **sixteen 30-minute blocks (≤20 Q each), 55 min break, 5-min tutorial**; ≤318 items and ~9-hour day unchanged. https://www.usmle.org/step-exams/step-2-ck
+- USMLE Step 2 CK content outline and specifications: published discipline weights (Medicine 55-65%, Pediatrics 17-27%, OB/GYN 10-20%, Psychiatry 10-15%, Surgery 5-15%) and physician task/competency ranges (Diagnosis 16-20%, Lab/Diagnostic Studies 13-17%, Mixed Management 12-16%, Pharmacotherapy 8-12%, Clinical Interventions 6-10%, Health Maintenance/Prevention 5-10%, Prognosis 5-9%, Systems-based Practice & Patient Safety 5-7%, Professionalism 5-7%, Practice-based Learning & Improvement 3-5%). https://www.usmle.org/exam-resources/step-2-ck-materials/step-2-ck-content-outline-specifications
+- Lecturio summary of 2026 USMLE Step 1/Step 2 CK software and block changes (corroborates the May 2026 format shift). https://www.lecturio.com/blog/2026-usmle-changes-step-1-2-ck-software-block-updates/
+- USPSTF colorectal cancer screening (May 2021): screening from age **45** is Grade B (50-75 remains Grade A) — confirms Chapter 7. https://www.uspreventiveservicestaskforce.org/uspstf/announcements/final-recommendation-statement-screening-colorectal-cancer-0
+- USPSTF lung cancer screening (2021): low-dose CT for adults **50-80** with **≥20 pack-years** who currently smoke or quit within 15 years — confirms Chapter 7. https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/lung-cancer-screening

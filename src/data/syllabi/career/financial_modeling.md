@@ -63,7 +63,7 @@ The course follows the natural build order of a real model: standards first, the
 - Treating deferred revenue as if it were earned revenue.
 
 ## Chapter 4: Three-Statement Integration
-**Key concepts**: depreciation and amortization, capex, the debt schedule, interest on average balances, taxes and NOLs, retained earnings rollforward, revolver and cash sweep, circularity and the iterative-calculation switch, balance-sheet balancing, cash linkage.
+**Key concepts**: depreciation and amortization, capex, the debt schedule, interest on average balances, the tax schedule (effective rate, NOL carryforward, deferred taxes), the equity rollforward (net income less dividends, plus issuance, less buyback) and share-count schedule, retained earnings rollforward, revolver and cash sweep, circularity and the iterative-calculation switch, balance-sheet balancing, cash linkage.
 
 **Core questions**
 - How does one assumption travel through all three statements?
@@ -73,11 +73,13 @@ The course follows the natural build order of a real model: standards first, the
 **Applied skills**
 - Link net income to retained earnings and to the cash flow statement.
 - Build a debt schedule with beginning/borrow/repay/ending and interest on the average balance.
+- Build the supporting schedules that feed the statements: depreciation/capex, tax (with an NOL carryforward), and equity (issuance, buyback, dividends).
 
 **Common traps**
 - Forcing the balance sheet to tie with a plug instead of finding the missing flow.
 - Treating depreciation as a cash outflow rather than a non-cash add-back.
 - Letting a circular reference (interest on debt that depends on cash after interest) silently break or iterate to garbage.
+- Applying a flat statutory tax rate when an NOL carryforward should be shielding taxable income, overstating cash taxes.
 
 ## Chapter 5: Free Cash Flow and DCF Valuation
 **Key concepts**: unlevered free cash flow (EBIT(1-t) + D&A - capex - change in NWC), WACC, cost of equity via CAPM, after-tax cost of debt, discount factors, terminal value via perpetuity growth (Gordon) and exit multiple, mid-year convention, present value, enterprise value.
@@ -176,3 +178,7 @@ Learners build and present a complete model for one company or case:
 - Enterprise-to-equity bridge (less net debt, preferred, minority interest) and EV/EBITDA capital-structure neutrality versus P/E leverage sensitivity confirmed via Wall Street Prep and Macabacus multiples references.
 - DSO/DIO/DPO and cash-conversion-cycle mechanics confirmed via Wall Street Prep and Corporate Finance Institute working-capital references.
 - Curriculum sequencing informed by Institute for Finance, Grant Thornton / NSE Academy, Scenario Academy, and GFMI financial modeling syllabi.
+- AFM blueprint (ten topics; three-statement model plus seven supporting schedules: revenue, cost, depreciation, income tax, working capital, debt, equity) confirmed via the Financial Modeling Institute Advanced Financial Modeler resources (https://fminstitute.com/modeling-resources/advanced-financial-modeler/) and program page (https://fminstitute.com/afm/). This grounds the explicit tax and equity schedules added to Chapter 4.
+- FMVA core-course scope (Operational Modeling, DCF Valuation Modeling, Comparable Valuation Analysis, Scenario & Sensitivity Analysis, Dashboards) confirmed via CFI's FMVA program page (https://corporatefinanceinstitute.com/certifications/financial-modeling-valuation-analyst-fmva-program/).
+- NOL carryforward / deferred-tax modeling treatment confirmed via CFI's NOL tax-loss-carryforward reference (https://corporatefinanceinstitute.com/resources/financial-modeling/nol-tax-loss-carryforward/).
+- Supporting-schedule mechanics (PP&E, working capital, debt, tax, equity rollforward) confirmed via CFI's supporting-schedules-in-financial-modeling reference (https://corporatefinanceinstitute.com/resources/fpa/supporting-schedules-financial-modeling/).

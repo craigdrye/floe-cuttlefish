@@ -62,8 +62,18 @@ Questions are authored to be beginner-friendly multiple-choice items a curious a
 
 ## Chapter 10: Exoplanets and the Search for Life
 - **Core questions**: How do we find planets around other stars, and how do we look for life?
-- **Key concepts**: Exoplanets, the transit method, the habitable (Goldilocks) zone, biosignatures, the Drake equation, the Fermi paradox.
+- **Key concepts**: Exoplanets, the transit method and the radial-velocity (Doppler wobble) method as the two workhorse detection techniques, transit spectroscopy of planet atmospheres (the way telescopes like JWST hunt for biosignatures, e.g. the K2-18b debate), the habitable (Goldilocks) zone, biosignatures, the Drake equation, the Fermi paradox.
 - **Common traps**: Assuming the habitable zone guarantees life; confusing transits with radial-velocity wobbles; reading the Drake equation as a confirmed count.
+
+## Teaching Note on Current Numbers
+Two figures in this course are worth flagging as "best current values," not eternal constants. The 13.8-billion-year age and the roughly 5 / 27 / 68 percent split of ordinary matter, dark matter, and dark energy come from the Planck satellite's measurements of the cosmic microwave background. They are stable and widely quoted, but the precise expansion rate is genuinely contested: the "Hubble tension" is the live disagreement between the slower expansion rate inferred from the early-universe CMB (about 67 km/s/Mpc) and the faster rate measured from nearby supernovae (about 73 km/s/Mpc). An honest intro course should present the headline numbers with confidence while noting that the Hubble constant is an active research frontier, not a settled point.
 
 ## Capstone
 Take a single object you can name, the Sun, a favourite constellation star, the Andromeda Galaxy, or a known exoplanet, and tell its full story using the whole course: how far away it is and how we know, what its light reveals about composition and motion, where it sits in the life of a star or galaxy, and how it fits into an expanding, 13.8-billion-year-old universe shaped by gravity, dark matter, and dark energy. A learner who can narrate that arc accurately, dodging the common traps, has met the aim of the course.
+
+## Research Notes
+- https://openstax.org/books/astronomy-2e/pages/1-introduction — OpenStax Astronomy 2e, the canonical free ASTRO 101 textbook; its Chapter 1 includes "Consequences of Light Travel Time," confirming the syllabus's scale/look-back-time framing and overall conceptual scope.
+- https://sci.esa.int/web/planck/-/51557-planck-new-cosmic-recipe — ESA Planck cosmic recipe: ~4.9% ordinary matter, ~26.8% dark matter, ~68.3% dark energy. Confirms the "about 5 percent ordinary matter" figure in Chapter 8.
+- https://en.wikipedia.org/wiki/Age_of_the_universe — Planck 2018 age of the universe 13.787 ± 0.020 billion years, supporting the 13.8-billion-year figure used throughout.
+- https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-constant-and-tension/ — NASA on the Hubble constant and the ongoing Hubble tension (~67 vs ~73 km/s/Mpc), basis for the Teaching Note on current numbers.
+- https://www.ijsrtjournal.com/article/Recent-Developments-in-Exoplanet-Observation-Techniques — Confirms transit and radial-velocity as the two leading detection methods and JWST transit spectroscopy (e.g. K2-18b) as the current biosignature-search technique, basis for the Chapter 10 strengthening.

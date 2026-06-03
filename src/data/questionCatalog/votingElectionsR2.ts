@@ -529,7 +529,7 @@ export const votingElectionsR2Questions: Question[] = makeQuestionBank('Career S
   {
     id: 7650034,
     chapter: 'Districts, Apportionment, and Gerrymandering',
-    title: 'Apportionment uses a fixed 435',
+    title: "Zero-sum House reapportionment",
     prompt: 'When the census reapportions House seats, why must some states lose a seat whenever others gain one?',
     correct: 'The total number of House seats is fixed at 435, so gains and losses offset',
     wrong: [

@@ -9,7 +9,7 @@ The throughline is the shift from doing the work to owning the outcomes the team
 The voice is adult and pragmatic. We name the real traps: avoiding the hard conversation until it festers, confusing being liked with being trusted, micromanaging in the name of quality, rescuing work instead of building capability, hiring on "vibe," and treating a single incident as a pattern. By the end, a learner should be able to run a humane, high-accountability team and explain *why* each move works using the underlying framework.
 
 ## Course Design Notes
-The prior syllabus had solid practical bones — expectations, feedback, coaching, delegation, hiring, conflict, scale — but it left the frameworks implicit and folded "common traps" into prose. This rewrite makes the canonical models explicit and groundable for assessment: Situational Leadership (Hersey-Blanchard), the SBI feedback model (CCL), the GROW coaching model, Self-Determination Theory (Deci & Ryan), Edmondson's four stages of psychological safety, RACI, OKR-vs-KPI, and the ADKAR change model (Prosci). Each chapter now carries explicit Common Traps so distractors and lessons can target the specific failure mode, and adds coverage the original lacked: performance calibration, fairness in formal action (PIP), remote/hybrid management, and motivation theory. Chapters move from the manager's role outward through individual capability, team conditions, hiring, and finally scale and change.
+The prior syllabus had solid practical bones — expectations, feedback, coaching, delegation, hiring, conflict, scale — but it left the frameworks implicit and folded "common traps" into prose. This rewrite makes the canonical models explicit and groundable for assessment: Situational Leadership (Hersey-Blanchard), the SBI feedback model (CCL), the GROW coaching model, Self-Determination Theory (Deci & Ryan), Edmondson's psychological safety and Clark's four stages of psychological safety, RACI, OKR-vs-KPI, and the ADKAR change model (Prosci). Each chapter now carries explicit Common Traps so distractors and lessons can target the specific failure mode, and adds coverage the original lacked: performance calibration, fairness in formal action (PIP), remote/hybrid management, and motivation theory. Chapters move from the manager's role outward through individual capability, team conditions, hiring, and finally scale and change.
 
 ## Chapter 1: The Manager Job
 **Core questions**
@@ -101,7 +101,7 @@ The prior syllabus had solid practical bones — expectations, feedback, coachin
 - What is actually draining motivation, and is it autonomy, competence, or relatedness?
 - Where does the team need more psychological safety, and where does it need clearer accountability?
 
-**Key concepts**: Self-Determination Theory (Deci & Ryan) — autonomy, competence, relatedness as drivers of intrinsic motivation; Edmondson's psychological safety (shared belief the team is safe for interpersonal risk) and its four stages (inclusion, learner, contributor, challenger); safety is not the opposite of accountability — high-performing teams have both; burnout and workload signals; inclusive meeting design; recognition.
+**Key concepts**: Self-Determination Theory (Deci & Ryan) — autonomy, competence, relatedness as drivers of intrinsic motivation; Edmondson's psychological safety (shared belief the team is safe for interpersonal risk) — note Edmondson is the source of the construct and the team-learning research, while the four progressive stages (inclusion, learner, contributor, challenger) are Timothy R. Clark's model, not Edmondson's; safety is not the opposite of accountability — high-performing teams have both; burnout and workload signals; inclusive meeting design; recognition.
 
 **Applied skills**: build a team-health view (engagement signals, workload risk, inclusion checks, actions); structure participation so hierarchy doesn't silence newer voices; diagnose a motivation drop against the three SDT needs.
 
@@ -133,14 +133,15 @@ Learners assemble and defend a coherent operating system for a real or realistic
 Assessment emphasizes diagnosis before prescription, fair and evidence-based process, and the ability to name *why* each move works.
 
 ## Research Notes
-- Edmondson, psychological safety definition and four stages (inclusion, learner, contributor, challenger): https://www.library.hbs.edu/working-knowledge/four-steps-to-build-the-psychological-safety-that-high-performing-teams-need-today and https://journals.sagepub.com/doi/10.2307/2666999
+- Edmondson, psychological safety construct and team-learning research (the source of the term, not the four-stage progression): https://www.library.hbs.edu/working-knowledge/four-steps-to-build-the-psychological-safety-that-high-performing-teams-need-today and https://journals.sagepub.com/doi/10.2307/2666999
+- Four stages of psychological safety (inclusion, learner, contributor, challenger) — Timothy R. Clark's model, frequently misattributed to Edmondson: https://psychsafety.com/the-four-stages-of-psychological-safety/
 - Hersey-Blanchard Situational Leadership (S1 Directing, S2 Coaching, S3 Supporting, S4 Delegating matched to follower readiness): https://www.business-to-you.com/hersey-blanchard-situational-leadership-model/
 - Self-Determination Theory (Deci & Ryan): autonomy, competence, relatedness: https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf
 - SBI feedback model (Center for Creative Leadership): https://www.ccl.org/articles/leading-effectively-articles/sbi-feedback-model-a-quick-win-to-improve-talent-conversations-development/
 - GROW coaching model (Whitmore, Alexander, Fine): https://www.performanceconsultants.com/resources/the-grow-model/
 - RACI / responsibility assignment matrix, one Accountable per item: https://en.wikipedia.org/wiki/Responsibility_assignment_matrix
 - ADKAR change model (Prosci), barrier point: https://www.prosci.com/methodology/adkar
-- Structured vs. unstructured interview predictive validity (Sackett et al. 2022; Schmidt & Hunter 1998): https://www.testpartnership.com/blog/structured-vs-unstructured-interviews.html
+- Structured vs. unstructured interview predictive validity, roughly 2x (Sackett et al. 2022 ~.42 vs ~.19; Schmidt & Hunter 1998): https://www.testpartnership.com/blog/structured-vs-unstructured-interviews.html — note Sackett et al. (2022) re-corrected validity estimates and now rank structured interviews as among the strongest single predictors of job performance, above general mental ability
 - OKR vs KPI distinction: https://www.whatmatters.com/resources/difference-between-okr-kpi
 - HBS Online Management Essentials syllabus (process view of management, decisions, implementation, learning, change): https://online.hbs.edu/documents/Syllabus_Management_Essentials.pdf
 - SHRM BASK / certification prep (people management linked to HR knowledge, employee relations, workplace risk): https://www.shrm.org/in/credentials/certification/exam-preparation/bask

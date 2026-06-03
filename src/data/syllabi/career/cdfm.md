@@ -9,15 +9,17 @@ This course is built around a single skill: reading a budget or execution scenar
 The aim is emphatically not to memorize acronyms in isolation. A learner who finishes this course should be able to sit in an acronym-dense execution review, separate mission urgency from legal authority, and write finance advice a commander or program manager can act on — advice that is correct on the rule, honest about the risk, and useful by Monday. Acronyms are taught only as handles for the decisions they hide.
 
 ## Course Design Notes
-Route questions here when they test defense financial management: appropriations and the colors of money, PPBE and program execution, fiscal law (purpose, time, amount) and the Antideficiency Act, obligations and the funds-flow lifecycle, internal controls and certifying-officer responsibility, accounting (budgetary vs. proprietary), audit readiness and FIAR-style remediation, earned value, Prompt Payment and improper payments, manpower, and resource-management decision support. Keep the tone clear, operational, and exam-serious, with enough warmth that the material stops feeling punishing.
+Route questions here when they test defense financial management: appropriations and the colors of money, PPBE and program execution, fiscal law (purpose, time, amount) and the Antideficiency Act, obligations and the funds-flow lifecycle, internal controls and certifying-officer responsibility, accounting (budgetary vs. proprietary), audit readiness and FIAR-style remediation, earned value, cost and economic analysis (net present value, payback, life-cycle cost), strategic planning and performance management (GPRA, the DATA Act), Prompt Payment and improper payments, manpower, and resource-management decision support. Keep the tone clear, operational, and exam-serious, with enough warmth that the material stops feeling punishing.
 
 Distractors should be plausible to a beginner and wrong for a nameable reason: confusing obligation with outlay, expired funds with canceled funds, reprogramming with transfer, authorization with appropriation, a healthy obligation rate with healthy execution. Where a fact is dated — specific reprogramming thresholds, the post-2024 rename of ASMC to the Society of Defense Financial Management (SDFM), the recent Department of Defense / Department of War naming — prefer the stable underlying concept over the year-specific number. When two answers both sound responsible, the better one is more complete, better controlled, and more clearly legal.
 
-**Exam map (current SDFM structure).** CDFM is earned by passing three modules, each 80 multiple-choice items, two hours, closed-book, offered year-round, all within a two-year window:
-- **Module 1 — Resource Management Environment:** government resource-management environment, manpower management, enterprise risk management and internal controls, and fiscal law (the largest single block).
-- **Module 2 — Budget and Cost Analysis:** the defense budget process (PPBE and execution), cost and economic analysis, and strategic planning and organizational performance management.
-- **Module 3 — Accounting and Finance:** federal/defense accounting, finance, and audit readiness.
-- **Module 4 (optional) — Acquisition:** passing it adds the **CDFM-A** (Acquisition Specialty), covering business financial management and cost estimating for acquisition programs. This course treats Module 4 topics as an extension, not a requirement.
+**Exam map (current SDFM structure).** CDFM is earned by passing three modules, each 80 multiple-choice items, two hours, closed-book, offered year-round (test center or OnVUE), all within the two-year testing window the application buys. Weights below are from the published SDFM blueprint:
+- **Module 1 — Resource Management Environment:** government resource-management environment (~30%), manpower management (~12%), enterprise risk management and internal controls (~20%), and fiscal law (~37%, the largest single block).
+- **Module 2 — Budget and Cost Analysis:** the defense budget process / PPBE and execution (~34%), cost and economic analysis (~14%), strategic planning and organizational performance management (~17%), and fiscal law again (~35%).
+- **Module 3 — Accounting and Finance:** accounting (~25%), finance (~18%), auditing (~25%), and fiscal law a third time (~31%).
+- **Module 4 (optional) — Acquisition Business Management:** passing it adds the **CDFM-A** (Acquisition Specialty), covering business financial management and cost estimating for acquisition programs. This course treats Module 4 topics as an extension, not a requirement.
+
+Note that fiscal law is weighted heavily in all three core modules — it is roughly a third of every module — so the time you spend on purpose/time/amount and the Antideficiency Act pays off three times over.
 
 **Study rhythm.** Learn the funds-flow lifecycle and the colors of money first; almost every other topic references them. Then layer fiscal law (Module 1), then PPBE and execution math (Module 2), then accounting and audit evidence (Module 3). Drill the high-confusion pairs — obligation/outlay, expired/canceled, reprogramming/transfer, budgetary/proprietary — until they are reflexive, because the exam separates the prepared from the nearly-prepared exactly there. Keep a running error log sorted by the chapter that owns each miss.
 
@@ -81,15 +83,19 @@ Distractors should be plausible to a beginner and wrong for a nameable reason: c
 - PPBE phases and feedback loops; POM, BES, the President's Budget, and execution reviews.
 - Spend plan, phasing, burn rate, obligation rate, under- and over-execution, carryover, unfunded requirements.
 - Earned value mechanics: PV, EV, AC, CPI, SPI, estimate at completion, and plain-English interpretation.
+- Cost and economic analysis: life-cycle cost vs. procurement cost, and benefit techniques — payback period, return on investment, and net present value — that decide between alternatives (Module 2 weights this near 14%).
+- Strategic planning and organizational performance: GPRA and the GPRA Modernization Act, performance metrics, process improvement (Lean Six Sigma), ERP systems, and the DATA Act's transparency requirements (Module 2 weights this near 17%).
 
 **Applied skills**
 - Build a monthly execution dashboard with risk notes.
 - Run an EVM mini-drill and translate the indices into a one-sentence verdict on cost and schedule.
+- Choose between two alternatives using net present value or payback and say why life-cycle cost, not sticker price, is the honest comparison.
 - Write a budget narrative that explains a variance by driver, risk, and corrective action without hiding the problem.
 
 **Common traps**
 - Confusing programming (multi-year resource tradeoffs) with budgeting (next year's defensible estimate).
 - Reading a healthy obligation rate as proof of healthy execution, or a wish-list / unfunded priorities item as an approved requirement.
+- Comparing alternatives on purchase price alone when life-cycle cost (or net present value) tells the opposite story.
 - Mistaking optimism for an executable plan — and a polished issue paper for a meritorious one.
 
 ## Chapter 5: Internal Controls and Stewardship
@@ -148,3 +154,9 @@ Distractors should be plausible to a beginner and wrong for a nameable reason: c
 
 ## Capstone
 You are handed a pressured defense-budget packet: a program is behind on execution, a "must-fund" requirement has appeared late in the fiscal year, the relevant account is near its ceiling, and the team has drafted a fund move to cover it — all under a continuing resolution. Produce a one-page decision memo for a non-financial commander that states: (1) **funding status** — which color of money, where in the funds-flow lifecycle, and whether it is current, expired, or canceled; (2) **legal constraints** — the relevant purpose/time/amount analysis, any bona fide needs issue, what the CR forbids, and any Antideficiency Act exposure; (3) **the fund move** — whether it is reprogramming, a transfer requiring special authority, or barred, and why; (4) **execution reality** — what the obligation rate and variance are actually telling you, separated from optimism; and (5) **evidence and recommendation** — what an auditor would demand that the packet currently lacks, and the single defensible next action you recommend. Defend every conclusion with the rule, not the urgency.
+
+## Research Notes
+- SDFM CDFM Exam Blueprints, Modules 1–3 (PDF, effective Sep 1, 2018): https://sdfm.org/wp-content/uploads/2024/05/CDFM-Exam-Blueprints-Modules-1-to-3_for-Website.pdf — authoritative competency areas and weights used to set the module-weight figures (Module 1: GRME 30.4% / Manpower 12.2% / ERM & Internal Controls 20.3% / Fiscal Law 37.1%; Module 2: Defense Budget Process 33.6% / Cost & Economic Analysis 14.4% / Strategic Planning & Org Performance 17.1% / Fiscal Law 34.9%; Module 3: Accounting 25.3% / Finance 18.1% / Auditing 25.4% / Fiscal Law 31.2%).
+- SDFM CDFM Candidate Handbook v25.05 (PDF): https://sdfm.org/wp-content/uploads/2025/05/CDFM_Candidate_Handbook_v25.05.01_Final.pdf — module names (Module 3 = "Accounting and Finance"; Module 4 = "Acquisition Business Management"), 80 items / two hours / closed-book / year-round (test center or OnVUE), and the testing window. Note: this handbook is internally inconsistent — one section says "Pass Modules 1–3 within a 2-year window" while another says "within a four-year window"; the purchased application testing window is two years, which is the figure used here.
+- SDFM CDFM overview: https://sdfm.org/cdfm/ — current program structure and CDFM-A specialty.
+- Federal News Network, "ASMC becomes SDFM" (2024): https://federalnewsnetwork.com/the-business-of-defense/2024/07/asmc-becomes-sdfm-continues-history-of-evolving-with-defense-financial-management/ — confirms the May 29, 2024 rename of ASMC to the Society of Defense Financial Management (SDFM).

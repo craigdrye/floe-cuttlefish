@@ -11,7 +11,7 @@ The goal is not to turn you into a therapist or a researcher. It is to give a cu
 Each chapter is anchored to a classic study or a core concept you can picture. You will leave able to spot a cognitive bias in the wild, explain why cramming fails, and tell correlation from causation, the kind of everyday-useful psychology that sticks.
 
 ## Course Design Notes
-The scope follows a standard introductory-psychology survey (the kind taught in a first college course or AP Psychology): classic studies, conditioning and learning, memory, cognition and biases, lifespan development, social psychology, personality, biological bases, sensation and perception, motivation and emotion, plus research methods. Chapters are organized so the famous experiments come first as hooks, then the underlying mechanisms.
+The scope follows a standard introductory-psychology survey (the kind taught in a first college course or AP Psychology): classic studies, conditioning and learning, memory, cognition and biases, lifespan development, social psychology, personality, biological bases, sensation and perception, motivation and emotion, intelligence, consciousness, psychological disorders and their treatment, plus research methods. Chapters are organized so the famous experiments come first as hooks, then the underlying mechanisms. The College Board's redesigned AP Psychology framework (effective 2024-25, first exam May 2025) groups the same material into five equally weighted units, biological bases of behavior, cognition, development and learning, social psychology and personality, and mental and physical health, and this course touches all five.
 
 Questions favor recognition of named effects, studies, and structures, then test whether the learner can apply the idea to an everyday scenario. Distractors are built from the most common confusions (mixing up classical and operant conditioning, negative reinforcement vs punishment, sensation vs perception, the bystander effect vs groupthink) so wrong answers teach as much as right ones. Where a classic study is ethically or methodologically dated (Little Albert, Stanford prison), the lesson notes say so honestly.
 
@@ -30,10 +30,10 @@ Questions favor recognition of named effects, studies, and structures, then test
 - **Key concepts**: sensory/short-term/long-term memory, chunking and 7±2, the misinformation effect, the forgetting curve, the spacing effect, retrieval practice.
 - **Common traps**: reversing the memory-stage order; believing memory is a perfect recording; thinking cramming and rereading beat spaced self-testing.
 
-## Chapter 4: Cognition & Biases
-- **Core questions**: What is confirmation bias? Why do plane crashes feel common? Why does a "was $200" tag work? What is System 1 thinking? What is hindsight bias?
-- **Key concepts**: confirmation bias, availability heuristic, anchoring, dual-process (System 1/System 2), hindsight bias.
-- **Common traps**: confusing availability with anchoring; mixing up hindsight bias and confirmation bias; treating System 1 as a brain region rather than a thinking mode.
+## Chapter 4: Cognition, Biases & Intelligence
+- **Core questions**: What is confirmation bias? Why do plane crashes feel common? Why does a "was $200" tag work? What is System 1 thinking? What is hindsight bias? What does an IQ score actually measure, and what is the "g" factor?
+- **Key concepts**: confirmation bias, availability heuristic, anchoring, dual-process (System 1/System 2), hindsight bias; intelligence and general intelligence (g), the normal distribution of IQ, and multiple-intelligences views (Gardner, Sternberg).
+- **Common traps**: confusing availability with anchoring; mixing up hindsight bias and confirmation bias; treating System 1 as a brain region rather than a thinking mode; assuming IQ is a single fixed number that captures all kinds of ability.
 
 ## Chapter 5: Development
 - **Core questions**: What is object permanence? Why does a child think a tall glass holds more? What is the teenage crisis in Erikson's stages? What does a secure attachment look like? What did Harlow's monkeys prefer?
@@ -60,7 +60,12 @@ Questions favor recognition of named effects, studies, and structures, then test
 - **Key concepts**: sensation vs perception, absolute and difference thresholds, sensory adaptation, intrinsic vs extrinsic motivation, James-Lange vs Cannon-Bard, Yerkes-Dodson law.
 - **Common traps**: reversing sensation and perception; confusing absolute and difference thresholds; thinking more arousal always helps; putting the felt emotion before the bodily reaction in James-Lange.
 
-## Chapter 10: Methods & Mind
+## Chapter 10: Disorders & Treatment
+- **Core questions**: What separates a disorder from ordinary distress? What manual do clinicians use to diagnose? How do depression and anxiety differ from everyday sadness and worry? What does cognitive-behavioral therapy actually do? How do antidepressants differ from talk therapy? What was the lesson of Rosenhan's "On Being Sane in Insane Places"?
+- **Key concepts**: the harmful-dysfunction / "abnormal" criteria, the DSM-5-TR classification system, mood disorders (major depression), anxiety disorders, schizophrenia, the biopsychosocial model, psychotherapy vs biomedical treatment, cognitive-behavioral therapy, antidepressants and the diathesis-stress idea.
+- **Common traps**: equating a disorder with simply feeling bad; confusing a diagnosis (the label) with an explanation (the cause); assuming medication and therapy are interchangeable rather than complementary; reading the dated Rosenhan study as proof that diagnosis is meaningless.
+
+## Chapter 11: Methods & Mind
 - **Core questions**: Does correlation prove causation? What is the placebo effect? Why have a control group? Is it nature or nurture? What is psychology, exactly?
 - **Key concepts**: correlation vs causation and confounds, the placebo effect, control groups and blinding, gene-environment interaction, the definition of psychology.
 - **Common traps**: reading causation into a correlation; treating nature and nurture as either/or; thinking psychology means only therapy or mind-reading.
@@ -69,6 +74,8 @@ Questions favor recognition of named effects, studies, and structures, then test
 Pick three everyday situations from your own week, a habit you can't shake, a moment a crowd behaved oddly, a "fact" you were sure of that turned out wrong, and explain each using a named concept from the course (a reinforcement schedule, the bystander effect, a cognitive bias). Then identify one classic study whose conclusions you would now treat with healthy skepticism, and say why. This ties the famous experiments back to your real life and shows you can both apply psychology and think critically about it.
 
 ## Research Notes
-- OpenStax Psychology 2e: https://openstax.org/details/books/psychology-2e
+- OpenStax Psychology 2e (16-chapter intro scope, including Consciousness, Intelligence, Disorders, and Therapy): https://openstax.org/books/psychology-2e/pages/index
 - Noba Project intro psychology modules: https://nobaproject.com/
 - Simply Psychology study summaries: https://www.simplypsychology.org/
+- AP Psychology Course (College Board AP Central) — redesigned 5-unit framework, first exam May 2025: https://apcentral.collegeboard.org/courses/ap-psychology
+- AP Psychology units, topics, and exam weights (5 equally weighted units, incl. Unit 5 Mental and Physical Health): https://collegeprep.uworld.com/ap/ap-psychology/units-topics-and-key-concepts/

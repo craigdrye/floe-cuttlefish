@@ -63,9 +63,9 @@ Floe routes a learner here when they want practical, real-world car literacy: a 
 
 ## Chapter 9: What's That Noise or Smell?
 - **Core questions**: Sweet smell — coolant or oil? Burning rubber — what's touching what? Grinding only when braking — how bad? Tick that rises with RPM? Blue vs white vs black exhaust smoke? Highway steering shimmy?
-- **Key concepts**: symptom-to-system mapping, smell signatures (sweet=coolant, acrid=oil, rotten-egg=battery), exhaust smoke color diagnosis, speed-dependent vibration, valvetrain/oil-starvation ticking.
+- **Key concepts**: symptom-to-system mapping, smell signatures (sweet=coolant, acrid=oil, rotten-egg/sulfur=unburned hydrogen sulfide — most often a failing catalytic converter, secondarily an overcharging/failing battery), exhaust smoke color diagnosis, speed-dependent vibration, valvetrain/oil-starvation ticking.
 - **Applied skills**: translating a sensory symptom into a likely system; checking the cheap cause first (oil level for a tick, balance for a shimmy).
-- **Common traps**: misattributing smells across systems; calling thin white startup vapor a problem; assuming a shimmy is electrical or engine-related rather than wheel balance.
+- **Common traps**: misattributing smells across systems; assuming a rotten-egg smell is always the battery when a failing catalytic converter is the more common cause (use location — tailpipe vs under-hood — to tell them apart); calling thin white startup vapor a problem; assuming a shimmy is electrical or engine-related rather than wheel balance.
 
 ## Chapter 10: DIY Basics & When NOT to DIY
 - **Core questions**: How do you get under a car safely? Why loosen lug nuts before jacking? Which jobs are safe DIY and which are leave-it-to-the-pros? Top up or flush? How do you act as a smart customer? Where's the real maintenance schedule?
@@ -81,3 +81,11 @@ Floe routes a learner here when they want practical, real-world car literacy: a 
 
 ## Capstone
 Pick a real or imagined car and a real or imagined problem, then think it all the way through like a competent owner. Start from the symptom exactly as it presents (the noise, the smell, the light, the gauge), name the most likely system and one or two alternates, and decide your cheapest-first checks. State whether it's a "stop now" or "service soon" situation. Decide what you'd safely do yourself versus take to a shop — and if it's going to the shop, write the three questions you'd ask to avoid being upsold (what symptom or code, what parts and labor, is it safety-critical or can it wait). The goal is not a perfect repair plan; it's demonstrating the judgment this whole course builds: understand the machine, read the symptom, respect the danger lines, and never walk in helpless.
+
+## Research Notes
+This is a consumer/owner-literacy course, not ASE prep, so sources are weighted toward authoritative consumer-safety and manufacturer-aligned guidance rather than technician body-of-knowledge documents. Facts below were spot-checked and confirmed current as of June 2026.
+- https://www.nhtsa.gov/vehicle-safety/tires — NHTSA TireWise: confirms door-jamb placard as the correct cold-inflation source, the 2/32" replacement threshold, and tread-wear indicators (basis for Chapter 4's penny test and "placard not sidewall max").
+- https://www.kbb.com/car-advice/how-often-should-i-change-my-oil/ — Kelley Blue Book: confirms the 3,000-mile rule is obsolete, modern synthetic intervals run ~7,500–10,000+ miles, and oil-life monitoring systems should drive the decision (basis for Chapter 2).
+- https://www.kbb.com/car-advice/how-to-jump-start-battery/ — Kelley Blue Book: confirms the safe jump-start clamp order ending with the final negative on an unpainted metal/engine-block ground of the dead vehicle, not the dead battery terminal (basis for Chapter 5).
+- https://www.autozone.com/diy/diagnostic-trouble-codes/p0301-cylinder-1-misfire — AutoZone: confirms P0301 = cylinder-1 misfire and that a flashing CEL signals a catalytic-converter-damaging misfire (basis for Chapter 8).
+- https://www.autozone.com/diy/symptoms/why-does-my-car-smell-like-rotten-eggs — AutoZone: a rotten-egg/sulfur smell is hydrogen sulfide, MOST commonly from a failing catalytic converter and secondarily from an overcharging/failing battery; tailpipe vs under-hood location distinguishes them (basis for the Chapter 9 smell-signature correction).

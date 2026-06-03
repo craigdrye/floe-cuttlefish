@@ -2,11 +2,11 @@
 **ID**: `nclexPn` · **Discipline**: Nursing
 
 ## Course Aim
-The NCLEX-PN is the National Council Licensure Examination for Practical Nurses, written by the National Council of State Boards of Nursing (NCSBN) and required for LPN/LVN licensure in the United States and parts of Canada. It is a computer-adaptive test that decides whether a candidate is safe to practice at the practical-nurse level. The exam does not reward the candidate who knows the most facts. It rewards the bedside practical nurse who consistently chooses the safest action within PN scope, with the right priority and timing, even when several answer choices look reasonable. The 2023 PN Test Plan reframes that judgment around the NCSBN Clinical Judgment Measurement Model (CJMM): recognize cues, analyze cues, prioritize hypotheses, generate solutions, take action, evaluate outcomes — adapted to the PN's narrower scope.
+The NCLEX-PN is the National Council Licensure Examination for Practical Nurses, written by the National Council of State Boards of Nursing (NCSBN) and required for LPN/LVN licensure in the United States and parts of Canada. It is a computer-adaptive test that decides whether a candidate is safe to practice at the practical-nurse level. The exam does not reward the candidate who knows the most facts. It rewards the bedside practical nurse who consistently chooses the safest action within PN scope, with the right priority and timing, even when several answer choices look reasonable. The current PN Test Plan (effective April 1, 2026, carried forward unchanged in weight from the 2023 plan) reframes that judgment around the NCSBN Clinical Judgment Measurement Model (CJMM): recognize cues, analyze cues, prioritize hypotheses, generate solutions, take action, evaluate outcomes — adapted to the PN's narrower scope.
 
 The PN role is fundamentally about data collection and care-plan execution, not data interpretation and care-plan authoring. PNs collect vital signs, intake and output, signs and symptoms, and patient cues — but the RN performs the comprehensive initial assessment and formulates nursing diagnoses. PNs assist with and execute the plan of care; the RN authors it. PNs administer the bulk of routine medications by oral, intramuscular, subcutaneous, rectal, topical, ophthalmic, otic, vaginal, and basic enteral routes — but in most states do not give IV push medications, blood products, IV vesicants or chemotherapy, or first-time-dose medications without RN witness. PNs reinforce teaching the RN has already initiated and evaluated; PNs do not perform the first round of teaching on a new diagnosis or evaluate teaching outcomes.
 
-The course voice should make a high-stakes licensure exam feel survivable without softening clinical safety. Floe's NCLEX-PN track treats the 2023 NCSBN PN Test Plan as the map and builds four durable habits: (1) a scope-of-practice reflex that instantly identifies which answer stays inside PN authority; (2) prioritization by ABCs → Maslow → unstable-over-stable → acute-over-chronic; (3) safe-medication discipline keyed to the high-risk drugs PNs administer (insulin, warfarin, heparin, digoxin, lithium, opioids, potassium); and (4) therapeutic communication that explores rather than deflects.
+The course voice should make a high-stakes licensure exam feel survivable without softening clinical safety. Floe's NCLEX-PN track treats the current NCSBN PN Test Plan (the 2026 plan, identical in category weights to the 2023 plan it replaced) as the map and builds four durable habits: (1) a scope-of-practice reflex that instantly identifies which answer stays inside PN authority; (2) prioritization by ABCs → Maslow → unstable-over-stable → acute-over-chronic; (3) safe-medication discipline keyed to the high-risk drugs PNs administer (insulin, warfarin, heparin, digoxin, lithium, opioids, potassium); and (4) therapeutic communication that explores rather than deflects.
 
 You will leave with a calm scope reflex, prioritization habits, safe-medication discipline, infection-control fluency, and a therapeutic-communication voice that does not false-reassure, advise, give "why" questions, or redirect away from feelings.
 
@@ -22,12 +22,12 @@ The NCLEX-PN differs from the NCLEX-RN in three load-bearing ways, and Floe rout
 The course differs from a generic AP Biology, Anatomy & Physiology, or pre-nursing program because it is licensure-grade: items reward the safest, scope-correct option even when other options look clinically reasonable.
 
 ## Exam Map and Study Rhythm
-The NCLEX-PN uses a Computerized Adaptive Test (CAT) format. Candidates answer between 85 and 205 scored items in up to 5 hours of testing time. The 2023 PN Test Plan uses the following client-needs categories and percentages.
+The NCLEX-PN uses a Computerized Adaptive Test (CAT) format. Candidates answer between 85 and 205 items in up to 5 hours of testing time (the count includes 25 unscored pretest items). The 2026 PN Test Plan — effective April 1, 2026 through March 31, 2029 — keeps the same eight client-needs categories and percentage ranges as the 2023 plan; the only category-level change is that "Safety & Infection Control" was renamed "Safety & Infection Prevention and Control."
 
 | Client Needs Category | Weight | Study Posture |
 |---|---:|---|
 | Safe & Effective Care Environment — Coordinated Care | 18-24% | Scope, supervision, delegation TO PN and FROM PN, advocacy, informed-consent assistance, hand-off |
-| Safe & Effective Care Environment — Safety & Infection Control | 10-16% | Standard precautions, transmission-based precautions, error prevention, restraints, fall prevention |
+| Safe & Effective Care Environment — Safety & Infection Prevention and Control | 10-16% | Standard precautions, transmission-based precautions, error prevention, restraints, fall prevention |
 | Health Promotion & Maintenance | 6-12% | Growth and development milestones, lifespan needs, screening, immunizations, lifestyle teaching |
 | Psychosocial Integrity | 9-15% | Coping, grief, abuse, therapeutic communication, mental-health basics, end-of-life, cultural care |
 | Physiological Integrity — Basic Care & Comfort | 7-13% | ADLs, mobility, nutrition, elimination, sleep, non-pharm pain management |
@@ -64,9 +64,9 @@ The NCLEX-PN uses a Computerized Adaptive Test (CAT) format. Candidates answer b
 - Delegating a vital signs check on an unstable post-op patient to a UAP. UAPs take vitals on stable patients only; unstable patients require nurse-level assessment.
 - Picking "the PN obtains informed consent" — only the provider obtains; the nurse witnesses the signature.
 
-**Authoritative sources.** NCSBN 2023 PN Test Plan; Saunders Comprehensive Review for the NCLEX-PN (Silvestri); ATI PN Comprehensive Review; the candidate's State Nurse Practice Act.
+**Authoritative sources.** NCSBN 2026 PN Test Plan; Saunders Comprehensive Review for the NCLEX-PN (Silvestri); ATI PN Comprehensive Review; the candidate's State Nurse Practice Act.
 
-## Chapter 2: Safety and Infection Control
+## Chapter 2: Safety and Infection Prevention and Control
 **Core questions:** How do you prevent harm to patients, staff, and yourself? When does a standard precaution upgrade to contact, droplet, or airborne isolation, and what PPE follows? How do you safely use restraints and prevent falls?
 
 **Key concepts**
@@ -94,7 +94,7 @@ The NCLEX-PN uses a Computerized Adaptive Test (CAT) format. Candidates answer b
 - Tying a restraint to the side rail instead of the bed frame. Side-rail attachment can injure the patient when the rail is lowered.
 - Skipping the Q2-hour release for restraints because the patient "is finally calm." The schedule is non-negotiable.
 
-**Authoritative sources.** CDC Isolation Precautions (2007, updated); NCSBN PN Test Plan; Saunders Comprehensive Review for the NCLEX-PN.
+**Authoritative sources.** CDC Isolation Precautions (2007, updated); NCSBN 2026 PN Test Plan; Saunders Comprehensive Review for the NCLEX-PN.
 
 ## Chapter 3: Pharmacology at the Practical-Nurse Level
 **Core questions:** What does a PN safely administer, and what would you stop and ask the RN about? What classes show up most on the NCLEX-PN, and what are their absolute-must-know expected effects, adverse reactions, and hold parameters?
@@ -142,7 +142,7 @@ The NCLEX-PN uses a Computerized Adaptive Test (CAT) format. Candidates answer b
 - Pain management principles: scheduled around-the-clock dosing for chronic pain; PRN for breakthrough; reassess pain 30 minutes after IV/IM, 60 minutes after PO
 - Lifespan milestones: 2 months — social smile, head holds briefly; 4 months — head control, rolls one direction; 6-8 months — sits unsupported, transfers objects; 9-12 months — pulls to stand, pincer grasp, first words; 12-15 months — walks; 2 years — two-word phrases, half-speech intelligible; 3 years — three-word sentences, fully intelligible to strangers
 - Adolescent risk factors: identity vs. role confusion; risk-taking; eating disorders; substance use; safer-sex teaching
-- Adult screening recommendations: blood pressure annual; cholesterol every 4-6 years; mammography (varies by guideline body); colonoscopy starting at 45 (American Cancer Society) or 50 (USPSTF); cervical cancer screening per age cohort
+- Adult screening recommendations: blood pressure annual; cholesterol every 4-6 years; mammography (varies by guideline body); colorectal cancer screening starting at 45 for average-risk adults (both USPSTF, since its 2021 update, and the American Cancer Society now begin at 45); cervical cancer screening per age cohort
 - Older-adult risks: polypharmacy, falls, delirium superimposed on dementia, malnutrition, social isolation
 - U.S. pediatric immunization schedule highlights: at 2 months — DTaP, Hib, IPV, PCV13, RV, Hep B (second dose); at 6 months — first influenza eligibility; at 12-15 months — MMR, varicella, Hep A series
 
@@ -254,4 +254,11 @@ The NCLEX-PN uses a Computerized Adaptive Test (CAT) format. Candidates answer b
 - Personal "trap log" naming which distractor styles fool you most
 - Two-page exam-day script for arrival, identification, breaks, and post-exam behavior
 
-**Authoritative sources.** NCSBN 2023 PN Test Plan; NCSBN Learning Extension NCLEX-PN Review Course; Saunders Comprehensive Review for the NCLEX-PN; ATI PN Comprehensive Predictor.
+**Authoritative sources.** NCSBN 2026 PN Test Plan; NCSBN Learning Extension NCLEX-PN Review Course; Saunders Comprehensive Review for the NCLEX-PN; ATI PN Comprehensive Predictor.
+
+## Research Notes
+- NCSBN 2026 NCLEX-PN Test Plan (effective April 1, 2026): https://www.ncsbn.org/publications/2026-nclex-pn-test-plan and the official PDF https://www.nclex.com/files/2026_PN_Test%20Plan-F.pdf — confirms category weights are unchanged from the 2023 plan and the subcategory rename to "Safety and Infection Prevention and Control."
+- NCSBN 2023 NCLEX-PN Test Plan: https://www.ncsbn.org/publications/2023-nclex-pn-test-plan — prior plan; same eight client-needs categories and percentage ranges.
+- UWorld 2026 NCLEX-PN Test Plan breakdown: https://nursing.uworld.com/nclex-pn/test-plan/ — cross-check of the eight category percentage ranges and effective dates.
+- Pocket Prep 2026 NCLEX RN/PN updates: https://www.pocketprep.com/posts/nclex-2026-updates-rn-pn-exam-changes-test-plans-and-content-breakdown/ — summary of what changed vs. 2023 (rename, weights unchanged).
+- USPSTF final recommendation, colorectal cancer screening (2021): https://www.uspreventiveservicestaskforce.org/uspstf/announcements/final-recommendation-statement-screening-colorectal-cancer-0 — basis for screening now beginning at age 45 for average-risk adults (Grade B for ages 45-49).

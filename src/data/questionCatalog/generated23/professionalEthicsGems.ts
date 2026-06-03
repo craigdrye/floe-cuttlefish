@@ -1,0 +1,118 @@
+import { makeSimpleQuestion } from '../base'
+import type { Question } from '../types'
+
+export const professionalEthicsGems: Question[] = [
+  // ===== Ethical Culture and Control Design =====
+  makeSimpleQuestion(
+    10078000,
+    'Career Skills',
+    'Ethical Culture and Control Design',
+    'Normalization of deviance: how nothing-bad-happened becomes the rule',
+    "On the night before the Challenger launch, engineers warned that the O-ring seals could fail in the cold. But the shuttle had flown with eroded O-rings several times before and nothing catastrophic had happened, so management treated flying with the flaw as an acceptable, expected condition. Sociologist Diane Vaughan named this pattern. What is the core mechanism she identified, and why is it so dangerous?",
+    "Normalization of deviance: each time a rule is broken without disaster, the deviation quietly becomes the new accepted standard, so the group reclassifies an unsafe practice as normal precisely because it has not yet been punished by an accident",
+    [
+      ["Groupthink: the team suppressed dissent to preserve harmony, so the engineers never actually voiced their concern", "Groupthink is about silencing disagreement, but here the engineers did raise the alarm; the failure was that repeated uneventful flights had already redefined the flaw as acceptable, which is a different mechanism.", "The danger was not unspoken dissent but a track record of getting away with it that recalibrated what counted as safe."],
+      ["A one-off cost-cutting decision: management knowingly accepted a danger they understood was unsafe in order to hit a deadline", "The chilling part is that managers did not feel they were accepting a known danger; years of flawless outcomes had made the deviation feel normal, not reckless, which is why intelligent people signed off.", "It was not a single cynical trade-off but a slow drift in which the abnormal came to feel routine."],
+      ["Bad luck: the seals had simply never been tested in cold weather, so no one could have foreseen the risk", "Engineers had explicitly foreseen and documented the cold-weather risk; the problem was not missing information but a culture that had learned to discount warnings because past violations had been survived.", "The risk was known and stated; it was the absence of past consequences, not the absence of data, that lulled the group."],
+    ],
+    "Normalization of deviance explains why disasters are so often preceded by people who did everything 'the way we always do it.' The deep and unsettling part is that the absence of a bad outcome is treated as evidence of safety, when really it is just luck not yet run out, so each survived violation makes the next one easier to wave through. It matters because the cure is not exhorting people to be more careful but redesigning the system so a deviation must be re-justified every time rather than silently inherited.",
+    'Floe generated',
+    true,
+    'Ask what the team concluded from each flight that did NOT end in disaster.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10078001,
+    'Career Skills',
+    'Ethical Culture and Control Design',
+    'When a control depends on heroic honesty',
+    "A clinic's anti-fraud safeguard is a line in the staff handbook asking employees to 'always report any billing they believe is incorrect, even if it implicates a senior colleague.' Audits keep finding the same overbilling. A consultant says the real problem is that the control 'relies on heroic honesty.' What does that diagnosis mean, and what kind of fix does it point to?",
+    "The safeguard only works if a junior person voluntarily absorbs personal and career risk to do the unusually brave thing every single time; a robust control should not require heroism, so the fix is to redesign the process so detection does not depend on individual courage, for example automated billing-anomaly flags or mandatory second-person sign-off",
+    [
+      ["It means staff are not honest enough, so the fix is stronger ethics training and a signed annual integrity pledge", "Blaming individual honesty repeats the original error; if a control fails only when people are not heroically brave, more pledges will not change the incentive, whereas a structural change removes the need for heroism.", "The point is that good design should not hinge on bravery at all, so the answer is a process change, not another appeal to character."],
+      ["It means the handbook wording is too vague, so the fix is a more detailed, legally precise reporting policy", "Sharper wording does not address the core flaw: the policy still loads all the risk onto a lone junior reporter, so detection still depends on rare courage rather than reliable design.", "Precision of language is not the gap; the gap is that catching the problem depends on one person's willingness to take a hit."],
+      ["It means the clinic should punish the overbillers more harshly to deter future fraud", "Harsher penalties act only after detection, and detection is exactly what is failing; without a control that surfaces the problem reliably, tougher punishment has nothing to bite on.", "Deterrence cannot work until the fraud is reliably detected, which is the design problem the consultant is naming."],
+    ],
+    "A control that 'relies on heroic honesty' is one that only succeeds when an individual repeatedly does something costly and brave that most people, most of the time, will not do. The deeper lesson of control design is to engineer ethics into the environment so that the right outcome is the default path rather than an act of courage, because a safeguard that needs a hero will eventually meet a day with no hero available. Good design lowers the price of doing the right thing instead of raising the price of doing wrong.",
+    'Floe generated',
+    true,
+    'Ask whether the safeguard works on a day when nobody feels brave.',
+    { challengeRating: 6 },
+  ),
+
+  // ===== Speaking Up, Escalation, and Documentation =====
+  makeSimpleQuestion(
+    10078010,
+    'Career Skills',
+    'Speaking Up, Escalation, and Documentation',
+    'Why a note written today beats a memory recalled next year',
+    "Two years after raising a safety concern, an employee is in a dispute and must prove what was actually said in a key meeting. She has a dated email she sent to her manager that same afternoon summarizing the conversation. Her manager has only his recollection, reconstructed now. Courts and investigators tend to give the contemporaneous note far more weight. What is the underlying reason this kind of evidence is treated as so credible?",
+    "Because it was written before the dispute existed, the author had no motive to shade the facts to fit a later position, and it captured details while memory was still fresh; that combination of no-incentive-to-lie plus undistorted recall is exactly what makes a record trustworthy",
+    [
+      ["Because written documents are simply always stronger evidence than spoken testimony, regardless of when they were made", "A document written after a dispute begins can be just as self-serving as testimony; the power of the note comes specifically from its timing before any incentive to distort arose, not from being written down per se.", "It is the timing, made before the stakes existed, not the mere fact of being in writing, that carries the weight."],
+      ["Because the note is sworn and therefore legally binding in a way that memory is not", "A contemporaneous email is not a sworn statement and binds no one; its credibility comes from being created without motive to fabricate and while memory was fresh, not from any oath.", "No oath is involved; the trust rests on the absence of a reason to distort at the time of writing."],
+      ["Because email metadata makes it technically impossible to fabricate, so it must be true", "Timestamps can be approximated or notes backdated, so the note is not unfalsifiable; what makes it persuasive is the inference that someone with no stake yet had no reason to misrepresent.", "The strength is an inference about motive, not a claim that the record is technically impossible to fake."],
+    ],
+    "Contemporaneous documentation is powerful because of a subtle point about human nature: we unconsciously rewrite the past to fit our present interests, so a record made before we had a side to take is closer to the truth than honest recollection later. The professional discipline is to write down facts as they happen, without exaggeration or speculation, precisely so that the version you will need to rely on was captured before you had any reason to want it to say something. The note protects you and others not by being dramatic but by being early and plain.",
+    'Floe generated',
+    true,
+    'Ask which version was written before anyone had a reason to want it to say something.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10078011,
+    'Career Skills',
+    'Speaking Up, Escalation, and Documentation',
+    'Concern, breach, near miss, or emergency: why the label sets the response',
+    "An analyst notices that a colleague accessed a customer database he had no business reason to open. No customer data appears to have left the company, and it may have been a careless click. Before deciding who to tell and how fast, a good escalation process asks the analyst to classify the event first. Why does naming whether this is a concern, a breach, a near miss, or an emergency come before choosing a channel?",
+    "Because the classification determines the speed, the audience, and the channel of the response; treating a near miss as an emergency wastes credibility and triggers alarm, while treating a genuine breach as a minor concern loses the time and the formal handling that real harm demands, so misclassifying it produces either panic or dangerous delay",
+    [
+      ["Because labeling it lets the analyst decide whether the event is serious enough to be worth reporting at all", "The purpose of classification is to route a response, not to create an off-ramp; even a near miss is meant to be captured and learned from, so the choice is how to escalate, not whether to.", "Classification chooses the path of escalation, it does not grant permission to stay silent."],
+      ["Because the label assigns blame to the colleague, which is the first step any investigation must establish", "Classification describes the severity and urgency of the event, not the culpability of a person; fixing blame first would prejudge an investigation that has not yet gathered facts.", "The label sizes the event's risk and tempo, not who is at fault, which comes later through fair process."],
+      ["Because only events labeled 'emergency' are protected from retaliation, so the analyst should always choose that label to be safe", "Protection from retaliation does not depend on inflating the severity label, and crying emergency for everything erodes the trust the analyst will need; honest classification serves the response better than defensive escalation.", "Reporting protections do not require the highest label, and over-escalating quietly burns the credibility good escalation depends on."],
+    ],
+    "Escalation is a triage skill before it is a courage skill: the same facts demand wildly different responses depending on whether they describe an emergency, an active breach, a near miss, or a low-level concern. The deep idea is that getting the label right is itself an ethical act, because both over-reaction and under-reaction cause real damage, one by flooding the system with false alarms and the other by letting genuine harm wait. Naming the severity honestly is how you match the urgency of the response to the urgency of the risk, and how you stay credible enough to be heard the next time.",
+    'Floe generated',
+    true,
+    'Ask what goes wrong if you treat a near miss like a five-alarm fire, and a real breach like a shrug.',
+    { challengeRating: 6 },
+  ),
+
+  // ===== Ethical Frameworks That Actually Help =====
+  makeSimpleQuestion(
+    10078020,
+    'Career Skills',
+    'Ethical Frameworks That Actually Help',
+    'Moral residue: when the right choice still leaves a wound',
+    "A manager must lay off one of two valued employees and, after careful, fair deliberation, makes the defensible choice. Afterward she still feels genuine guilt and a sense of having wronged the person she let go, even though she is confident she chose correctly. Philosophers call this lingering feeling 'moral residue.' What does its persistence actually tell us, and why is it not just a sign she chose badly?",
+    "It signals that a real obligation was overridden rather than erased; in a genuine dilemma both duties were legitimate, so choosing the better option still infringes the other, and the residue is the trace of that unmet but valid claim, not evidence that the decision was wrong",
+    [
+      ["The guilt proves she made the wrong call, because a correct ethical decision would leave a clear conscience", "This assumes every right choice feels clean, but in a true dilemma honoring one duty necessarily violates another, so a clear conscience would actually signal she had stopped taking the overridden obligation seriously.", "A right choice in a genuine dilemma can still leave a wound; the residue marks a real duty she could not also keep."],
+      ["The feeling is irrational and should be dismissed, since once the best option is chosen the other obligation simply no longer exists", "The point of moral residue is precisely that the overridden duty does not vanish; its claim persists, which is why a conscientious person rightly still feels its loss rather than treating it as discharged.", "The competing duty is not cancelled by the decision; it lingers as a legitimate claim, which is what the feeling tracks."],
+      ["It shows the deliberation was incomplete, and more analysis would have revealed an option with no downside", "Genuine dilemmas are defined by the absence of a costless option; more analysis can clarify which duty outweighs the other but cannot dissolve the conflict, so residue is not a symptom of lazy thinking.", "Some conflicts have no clean exit; the residue reflects that structure, not a gap in the analysis."],
+    ],
+    "Moral residue overturns a comforting assumption that a good decision should feel good. In real dilemmas you face two genuine obligations and can only honor one, so even the right choice leaves a remainder: the unmet duty still had a claim on you. The deep lesson is that lingering regret can be a mark of moral seriousness rather than of error, and a framework that promises to make hard choices feel clean is often hiding the cost rather than resolving it. Mature ethics learns to act decisively and still carry the weight.",
+    'Floe generated',
+    true,
+    'Ask whether the other duty truly disappeared the moment she chose, or merely went unmet.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10078021,
+    'Career Skills',
+    'Ethical Frameworks That Actually Help',
+    'The publicity test: would it survive the front page?',
+    "Before approving a marketing tactic that technically complies with the rules but quietly relies on customers not reading the fine print, a director asks her team one question: 'Would we be comfortable if this appeared on tomorrow's front page, explained accurately to our customers and a regulator?' This 'publicity test' is a staple of practical ethics. What hidden assumption does it expose so effectively?",
+    "It exposes whether a decision depends on concealment to be acceptable; a choice that only works as long as the affected people do not understand it is one you are unwilling to defend openly, which is a strong signal that you already sense it is wrong",
+    [
+      ["It tests whether the action is legal, since anything that could be reported must by definition break a law", "Legality and the publicity test are different filters; the whole point is that something can be perfectly legal yet still fail the test because it relies on customers not understanding it, which is an ethical gap, not a legal one.", "The test catches choices that are lawful but indefensible in the open, precisely the law/ethics gap legality cannot detect."],
+      ["It measures public relations risk, so the right move is whatever generates the least chance of bad press", "Reframing it as PR turns ethics into reputation management and would bless any harm that stays hidden; the test asks whether you could defend the choice if explained, not merely whether you can avoid getting caught.", "The question is whether the act is defensible when seen clearly, not whether you can keep it from being seen."],
+      ["It checks whether everyone would approve, so a tactic passes as long as a majority of customers would not mind", "The test is about whether the reasoning survives honest disclosure, not about a popularity vote; a tactic can be widely tolerated and still rely on the very misunderstanding the test is designed to surface.", "It asks if the choice withstands full, accurate explanation, not whether it would win a show of hands."],
+    ],
+    "The publicity test, also called the newspaper or sunlight test, works because secrecy is a remarkably honest signal: if a plan only succeeds while the affected people stay in the dark, you have already conceded that you could not justify it to them. The deep connection is to Kant's question 'what if this were openly known and done by everyone?', and the surprising power is how a one-sentence thought experiment cuts straight through elaborate rationalizations. It does not tell you what is right, but it reliably flags choices whose defense is built on no one looking.",
+    'Floe generated',
+    true,
+    'Ask what the tactic needs in order to keep working, and whether that thing is darkness.',
+    { challengeRating: 6 },
+  ),
+]

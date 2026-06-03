@@ -30,7 +30,7 @@ A supply chain view is built in layers, and the most common analyst failure is o
 - Which two or three metrics would tell you first that the system is failing — and who owns them?
 - What is the unit of analysis here: a SKU, a product family, a lane, a node, or the whole network?
 
-**Key concepts**: the plan–source–make–deliver–return model (SCOR), nodes and flows, the three coupled flows (material, information, cash), lead time and its components, throughput and cycle time, the cash-to-cash cycle, service level vs fill rate vs on-time-in-full (OTIF), cost-to-serve, the perfect-order metric, and the service/cost/cash triangle as the master tradeoff.
+**Key concepts**: the SCOR reference model — classically taught as plan–source–make–deliver–return, now restructured in ASCM's SCOR Digital Standard into the Level-1 processes Plan, Order, Source, Transform, Fulfill, and Return, with an overarching Orchestrate process (which absorbed the old "Enable") — nodes and flows, the three coupled flows (material, information, cash), lead time and its components, throughput and cycle time, the cash-to-cash cycle, service level vs fill rate vs on-time-in-full (OTIF), cost-to-serve, the perfect-order metric, and the service/cost/cash triangle as the master tradeoff.
 
 **Applied skills**
 - Draw a supply chain map for a product family: nodes, flows, owners, lead times, governing metrics, and the points most exposed to risk.
@@ -184,7 +184,7 @@ Take one product line — a fictional or real product family — and produce a c
 - Capstone analyst pack and one-page executive memo critique
 
 ## Research Notes
-- Process framing (plan–source–make–deliver–return) follows the ASCM/APICS SCOR model; service/fill/OTIF and perfect-order metric definitions align with standard supply-chain-management references.
+- Process framing follows the ASCM/APICS SCOR model; note that the current SCOR Digital Standard (Version 14.0, 2025) restructured the legacy plan–source–make–deliver–return Level-1 processes into Plan, Order, Source, Transform, Fulfill, Return, plus an Orchestrate process. Service/fill/OTIF and the perfect-order metric (RL.1.1, under the Reliability attribute) align with the SCOR DS performance metrics. SCOR Digital Standard: https://www.ascm.org/corporate-solutions/standards-tools/scor-ds/
 - Forecasting content (accuracy vs bias, MAPE/MAD/tracking signal, forecast value-add, bullwhip effect) reflects conventional demand-planning practice; the bullwhip effect traces to Lee, Padmanabhan, and Whang.
 - Inventory mechanics (reorder point, EOQ, safety stock as a function of demand/lead-time variability and service level, ABC/XYZ segmentation) follow standard operations-management texts (e.g., Chopra & Meindl, Silver/Pyke/Peterson).
 - Capacity and flow concepts (theory of constraints, Little's Law, utilization-vs-variability queueing intuition, takt time) follow standard operations-management and factory-physics treatments.
@@ -192,5 +192,7 @@ Take one product line — a fictional or real product family — and produce a c
 - S&OP / integrated business planning cycle and resilience concepts (time-to-recover/time-to-survive, redundancy vs flexibility vs visibility) reflect ASCM and current supply-chain-risk practice.
 - MITx MicroMasters in Supply Chain Management: https://micromasters.mit.edu/scm/
 - ASCM (APICS) learning and certifications: https://www.ascm.org/learning-development/
+- ASCM CPIM Exam Content Manual (v9.0, effective June 1, 2026): https://www.ascm.org/globalassets/ascm_website_assets/docs/ecm/ecm-cpim9.pdf — confirms current CPIM scope (supply chain strategy, S&OP, demand management, supply management, detailed scheduling, inventory, distribution, continuous improvement, now expanded to technology and sustainability), which the chapter structure here mirrors.
+- ASCM CSCP Exam Content Manual: https://www.ascm.org/globalassets/ascm_website_assets/docs/ecm/ecm-cscp.pdf — supply chain design, planning/execution, and risk/resilience domains align with this course's mapping, sourcing, S&OP, and resilience chapters.
 - Coursera Supply Chain Analytics: https://www.coursera.org/learn/supply-chain-analytics
 - Rutgers Supply Chain Management specialization: https://www.coursera.org/specializations/supply-chain-management

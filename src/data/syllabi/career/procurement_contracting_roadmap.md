@@ -61,6 +61,7 @@ Distractors should be plausible to a beginner and wrong for a nameable reason: c
 - Market structure and its consequences: many suppliers vs. an oligopoly vs. a true market-of-one, and how structure drives leverage and approach.
 - Competition strategy: full and open, limited/qualified competition, framework or blanket agreements, and the high bar a legitimate sole-source justification must clear.
 - Category management and strategic sourcing: looking across many buys to consolidate demand, standardize, and build supplier relationships.
+- Socioeconomic and sustainable-sourcing goals: small/diverse-business and set-aside programs, supplier diversity, and sustainable/green procurement criteria — where policy goals legitimately shape the competition and how the buyer documents them without losing the value rationale.
 
 **Applied skills**
 - Run market research that produces evidence — not just a vendor list — about who can perform and at roughly what price.
@@ -173,6 +174,7 @@ Distractors should be plausible to a beginner and wrong for a nameable reason: c
 **Key concepts**
 - Post-award kickoff, deliverables tracking, milestones, acceptance/inspection, and invoice-to-payment matching.
 - Performance management: surveillance, KPIs/SLAs, vendor scorecards, and the difference between a scorecard (feedback) and a contract remedy (enforceable consequence).
+- Measuring progress on long or cost-type work: earned value and milestone/progress-payment discipline — reading cost and schedule variance so a slipping contract is caught by the numbers, not by the eventual surprise.
 - Change control: in-scope changes, the formal change/modification process, and the cardinal change so large it is effectively a new contract that should have been competed.
 - Constructive changes — when the buyer's direction or acceptance behavior creates a change nobody formally ordered.
 
@@ -226,3 +228,12 @@ You are the buyer for a mid-size organization. A department needs a multi-year m
 8. **Ethics note** — how you identify, disclose, and manage the conflict-of-interest risk created by the personnel tie, and the incumbent preference, so neither contaminates the source selection.
 
 The pack is graded on coherence across the chain — a reviewer should be able to read any one product and trace it back to the requirement, the analysis, and the rule — and on the instinct the whole course is built to install: buying the *need* not the named solution, putting risk where it belongs, defending every decision with the file rather than the deadline, and protecting the integrity of the competition even when the easy path is to skip it.
+
+## Research Notes
+The chapter sequence deliberately mirrors the contract life cycle codified in NCMA's Contract Management Standard™ (CMS™) — Pre-Award (*Develop Solicitation*: plan solicitation, request offers), Award (*Form Contract*: determine reasonable price/cost, negotiate, manage disagreements, award), and Post-Award (*Perform Contract* and *Close Contract*) — so the roadmap stays portable across federal, state/local, and commercial practice. The CMS and its companion CMBOK are the contract-management body of knowledge this course leans on; the 7th-edition CMBOK (2024) additions of category management, earned value, and sustainable procurement are reflected in Chapters 3 and 9.
+
+Authoritative sources consulted:
+- NCMA Contract Management Standard™ (ANSI/NCMA ASD 1-2019 (R2022), 3rd ed.) — canonical domains/competencies for the buy lifecycle: https://ncmahq.org/Web/Web/Standards---Practices/Contract-Management-Standard-Publication.aspx
+- NCMA Contract Management Body of Knowledge™ (CMBOK™, 7th ed., 2024) — adds category management, earned value management, sustainable procurement: https://ncmahq.org/Web/Web/Standards---Practices/Contract-Management-Body-of-Knowledge.aspx
+- FAR Part 16 (Types of Contracts) — fixed-price, cost-reimbursement, T&M/labor-hour, and indefinite-delivery (IDIQ) structures and risk allocation: https://www.acquisition.gov/far/part-16
+- FAR acquisition-related threshold inflation adjustment effective Oct 1, 2025 (micro-purchase $10k→$15k, simplified acquisition $250k→$350k) — why the syllabus deliberately avoids memorizing year-specific dollar figures: https://www.acquisition.gov/threshold-changes

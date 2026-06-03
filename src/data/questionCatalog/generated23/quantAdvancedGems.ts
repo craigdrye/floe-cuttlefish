@@ -1,0 +1,178 @@
+import { makeSimpleQuestion } from '../base'
+import type { Question } from '../types'
+
+export const quantAdvancedGems: Question[] = [
+  // ---------------------------------------------------------------------------
+  // Chapter: Stochastic Calculus
+  // ---------------------------------------------------------------------------
+  makeSimpleQuestion(
+    10084000,
+    'Quant Finance',
+    'Stochastic Calculus',
+    'The drift that vanished',
+    "A stock has a real-world expected return of 12% a year. You sit down to price a one-year call on it and write the price as the discounted expected payoff — but in the formula the 12% is gone, replaced by the 3% risk-free rate. A junior asks: 'Are we predicting the stock will only grow at 3%? That seems absurd.' What is the right answer?",
+    "No — we are not forecasting anything. Pricing by replication forces us to value the option as if the stock drifted at r, because a hedged portfolio earns the risk-free rate by no-arbitrage; the 12% would be double-counting a risk premium the hedge has already cancelled away",
+    [
+      ["Yes, in effect — the model assumes investors are risk-neutral, so under those assumptions the stock really is expected to grow at only the risk-free rate", "Risk-neutral pricing assumes nothing about investors' preferences or the stock's true growth. It is a mathematical change of measure that makes discounted prices martingales; the real-world 12% drift is untouched, it simply does not enter the hedge-replicated price.", "Separate the pricing measure Q from the physical measure P: Q is a device that prices the hedge, not a claim about what the stock will do."],
+      ["The 12% should still appear — using r instead of the true drift systematically underprices call options, an error the Black-Scholes model is known to make", "Using r is exactly right, not an error. The option's price comes from the cost of the replicating hedge, and that hedge is financed at r regardless of the stock's expected return. Plugging in 12% would overprice the call by smuggling in a risk premium twice.", "Two candidates with different views on the stock's drift must agree on the option price, or one of them is offering an arbitrage — that only works if the drift drops out."],
+      ["The drift only disappears for non-dividend stocks; once a dividend yield exists the real-world expected return re-enters through the carry term", "Dividends change the carry (the drift becomes r minus the dividend yield), but they never reintroduce the physical 12%. The risk premium is gone for the same no-arbitrage reason with or without dividends; carry is a separate, observable cost.", "Carry is about cash flows you can observe and trade, not about the unobservable risk premium the hedge removed."],
+    ],
+    "Lesson: the no-arbitrage price of a derivative comes from the cost of replicating it, and a delta-hedged portfolio grows at the risk-free rate r whatever the stock's true expected return is. So under the risk-neutral measure Q the stock is priced as if it drifts at r — Girsanov's theorem shows this change of measure shifts only the drift, leaving the volatility untouched. The deep point: risk-neutral pricing is a pricing device, not a forecast. It does not say the world is risk-neutral or that the stock will grow at r; it says the risk premium cancels in the hedge, so any answer that keeps the real-world drift is double-counting risk that has already been removed.",
+    'Floe generated',
+    true,
+    'Ask what actually finances the replicating hedge. If it grows at r by no-arbitrage, the stock\'s true expected return cannot enter the price.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10084001,
+    'Quant Finance',
+    'Stochastic Calculus',
+    'The extra term ordinary calculus misses',
+    "A stock follows geometric Brownian motion: dS = uS dt + sigma S dW. You want the dynamics of its logarithm, log S, and out of habit you write d(log S) = (1/S) dS, the way you'd differentiate in ordinary calculus. Your answer comes out as (u) dt + sigma dW. The interviewer says one term is wrong. Which correction does Ito's lemma demand?",
+    "The drift must lose half a variance: d(log S) = (u - sigma^2/2) dt + sigma dW. Ito's lemma adds a second-order term because (dW)^2 = dt does not vanish, and for the concave log function that term subtracts sigma^2/2 from the drift",
+    [
+      ["Nothing is wrong with the drift — but the diffusion term should be sigma S dW, not sigma dW, because you must keep the S from the original equation", "The S correctly cancels: dividing dS by S turns sigma S dW into sigma dW. The genuine error is the missing Ito correction in the drift. Naive calculus drops the (dW)^2 = dt term that a function of a diffusion always generates.", "The diffusion scaling is fine; the trap is the second-order term, which lives in the drift, not the volatility."],
+      ["The drift should be u + sigma^2/2; the second-order Ito term is always added to the drift, never subtracted from it", "The sign depends on the curvature of the function. The second derivative of log S is negative, so the Ito term sigma^2/2 enters with a minus sign. A convex function (like S squared) would gain a positive correction instead.", "The Ito term carries the sign of the function's second derivative — log is concave, so the correction is negative."],
+      ["Ordinary calculus is fine here because expectations are linear, so E[d(log S)] still equals (1/S) E[dS] and no correction is needed", "Linearity of expectation does not rescue you: the issue is the pathwise quadratic variation of Brownian motion, where (dW)^2 accumulates like dt rather than vanishing. That is why E[log S] grows slower than log E[S] — a direct consequence of the missing term.", "Brownian motion has nonzero quadratic variation; that single fact is what breaks the ordinary chain rule for any function of S."],
+    ],
+    "Lesson: Ito's lemma is the chain rule corrected for the fact that Brownian motion has nonzero quadratic variation — (dW)^2 behaves like dt, not zero. For any twice-differentiable f, the dynamics gain a second-order term (1/2) f'' sigma^2 S^2 dt that ordinary calculus would miss. For log S, f'' is negative, so the drift drops by sigma^2/2. The deep implication is the gap between log E[S] and E[log S]: a stock that drifts at u in the arithmetic sense grows at only u - sigma^2/2 in the geometric (compounded) sense, which is exactly why volatility is a drag on long-run compounded returns. Dropping the Ito term is the single most common stochastic-calculus interview mistake.",
+    'Floe generated',
+    true,
+    'Brownian motion has (dW)^2 = dt, so a function of S picks up a second-order term scaled by its second derivative. Check the sign of that derivative.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10084002,
+    'Quant Finance',
+    'Stochastic Calculus',
+    'Two routes to the same price',
+    "You can price a European option two ways: solve the Black-Scholes partial differential equation on a grid, or take the discounted expected payoff under the risk-neutral measure Q and estimate it by Monte Carlo. A colleague insists these are 'two different models that happen to agree numerically.' What is the actual relationship between them?",
+    "They are mathematically the same statement seen from two sides: the Feynman-Kac theorem says the solution of that PDE is exactly the discounted risk-neutral expectation of the payoff, so the hedging argument (PDE) and the expectation argument (Q-measure) are two faces of one no-arbitrage price",
+    [
+      ["They are independent models that coincide only under Black-Scholes' special assumptions; under a different volatility model the PDE and the expectation would generally disagree", "The PDE-expectation equivalence is not a Black-Scholes coincidence — Feynman-Kac links a broad class of diffusion PDEs to expectations of the corresponding stochastic process. Change the model and both representations change together; they never split apart.", "Feynman-Kac is a general bridge between parabolic PDEs and diffusion expectations, not a quirk of one model."],
+      ["The PDE gives the true price while Monte Carlo only approximates it, so they agree only in the limit of infinite paths and infinitely fine grids", "Both are approximations of the same exact price; neither is privileged as 'the truth.' The grid has discretization error, Monte Carlo has sampling error, but the quantity they each approximate is identical by Feynman-Kac.", "Distinguish the exact price (one number) from two numerical schemes that each approximate it with different error sources."],
+      ["The PDE comes from a hedging argument and the expectation from a probabilistic one, so they answer different questions: the PDE gives the hedge cost and the expectation gives the fair value", "Hedge cost and fair value are the same number — that is the content of no-arbitrage. The whole point of the equivalence is that the cost of the replicating hedge equals the discounted risk-neutral expected payoff; they cannot diverge without an arbitrage.", "No-arbitrage forces the cost of replication to equal the risk-neutral expectation; if they differed you could lock in riskless profit."],
+    ],
+    "Lesson: the Black-Scholes PDE and risk-neutral expectation are not rival models but the same price viewed through hedging versus probability. The Feynman-Kac theorem makes this precise: the solution of the pricing PDE equals the discounted expected payoff of the underlying diffusion under Q. The hedging route (build a replicating portfolio, eliminate risk, demand it earn r) and the probabilistic route (discount the expected payoff under the measure that makes prices martingales) must give the identical number, because both are just no-arbitrage. The deep lesson is unity: one no-arbitrage principle, expressed as a deterministic PDE or as a stochastic expectation, and the choice between them is a choice of numerical convenience — grids for low dimensions and early exercise, simulation for high dimensions and path-dependence.",
+    'Floe generated',
+    true,
+    'Feynman-Kac ties a pricing PDE to the expectation of the matching diffusion. Ask whether the two routes approximate the same quantity or different ones.',
+    { challengeRating: 6 },
+  ),
+
+  // ---------------------------------------------------------------------------
+  // Chapter: Fixed Income
+  // ---------------------------------------------------------------------------
+  makeSimpleQuestion(
+    10084003,
+    'Quant Finance',
+    'Fixed Income',
+    'The gift hidden in the curve',
+    "Two long bondholders run a quick risk check using duration. The yield then moves by a large 100bp. One bond's yield rises 100bp; the other's falls 100bp. Both used the same duration, so they expected equal-and-opposite price moves. Instead, the bond whose yield fell gained a bit more than duration predicted, and the bond whose yield rose lost a bit less. What property explains this asymmetry, and which side does it favour?",
+    "Positive convexity: the price-yield curve bends, so duration (a straight-line estimate) understates gains when yields fall and overstates losses when yields rise — the curvature always works in the long bondholder's favour for an ordinary bond",
+    [
+      ["This is just rounding error from using duration on a large move; with a precise enough duration figure the two price moves would be exactly equal and opposite", "It is not rounding — it is a structural, repeatable asymmetry called convexity. No single duration number can capture it, because duration is by definition the linear (first-order) term; the curvature is a genuine second-order effect that always points the same way.", "Duration is the slope at one point; the asymmetry is the curvature around it, which a better slope estimate can never remove."],
+      ["The asymmetry comes from different coupons on the two bonds; if they had identical coupons the price moves would be symmetric", "Even a single bond shows the asymmetry against itself: a 100bp fall helps it more than a 100bp rise hurts it. The effect is the convex shape of the price-yield relationship, present regardless of how the two bonds compare to each other.", "Test it on one bond: fall versus rise of the same size are not mirror images — that is convexity, independent of any comparison."],
+      ["Negative convexity is at work, which is why the downside is cushioned; this is the same effect that makes callable bonds attractive to issuers", "An ordinary (non-callable) bond has positive convexity, which helps the holder. Negative convexity is the opposite and bad for the holder — it is precisely what a call feature introduces, capping upside as yields fall. You have the sign reversed.", "Plain bonds curve in the holder's favour (positive convexity); embedded calls bend it the other way against the holder."],
+    ],
+    "Lesson: duration is only the first-order, straight-line sensitivity of price to yield; the true price-yield relationship is curved, and convexity is that second-order curvature. For an ordinary bond convexity is positive, so the linear duration estimate understates price gains when yields fall and overstates price losses when yields rise — the curvature is a one-sided gift to the long holder, worth more the larger the move. The deep point is that ignoring convexity does not just add noise; it biases your P&L estimate in a predictable direction, and it explains why two positions with identical duration are not identical risk. It also flips for instruments with embedded optionality (callable bonds, mortgages), where negative convexity turns the curvature against the holder.",
+    'Floe generated',
+    true,
+    'Duration is the slope; convexity is the curve. Picture the price-yield graph bending and ask which direction of move the bend rewards.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10084004,
+    'Quant Finance',
+    'Fixed Income',
+    'Duration is not DV01',
+    "A trader holds a 10-year bond with a modified duration of 8 and a 30-year bond with a modified duration of 20. A risk system shows the 30-year position has a smaller DV01 than the 10-year position, and the trader protests: 'That's impossible — the 30-year has more than double the duration, so it must be more sensitive to rates.' Who is right, and why?",
+    "The risk system can be right: duration is a percentage sensitivity per unit yield, while DV01 is a dollar sensitivity per basis point — DV01 equals roughly duration times price times 0.0001, so a small or low-priced 30-year position can have a smaller dollar DV01 than a large 10-year position despite higher duration",
+    [
+      ["The trader is right: duration and DV01 measure the same thing in different units, so a bond with more than double the duration must always have more than double the DV01", "They are not the same quantity rescaled — DV01 also depends on the dollar size and price of the position, not just duration. A higher-duration bond held in tiny size has a small DV01. Duration is per-percent of value; DV01 is per-basis-point of dollars.", "Multiply duration by the actual dollar value of the holding to get DV01; the position size is exactly the factor duration alone ignores."],
+      ["The trader is right unless the bonds trade at very different prices; only an unusual price gap could make the higher-duration bond show a lower DV01", "Price is one factor, but the dominant one the trader is omitting is notional/market value of the position. Even at par, a small 30-year holding can have less dollar DV01 than a large 10-year holding. Duration says nothing about how much you own.", "DV01 scales with how much you hold; duration is a property of one bond per unit value, blind to position size."],
+      ["The system is wrong because DV01 should be computed from Macaulay duration, not modified duration, and that conversion would restore the expected ordering", "Swapping Macaulay for modified duration is a small rescaling by (1 + y) and would not reverse a large ordering difference. The real resolution is that DV01 incorporates dollar position size, which neither duration measure contains.", "The Macaulay-versus-modified distinction is a minor factor; the missing ingredient is the dollar amount of the position."],
+    ],
+    "Lesson: duration and DV01 answer different questions. Modified duration is a percentage price change per unit (100%) change in yield — a property of the instrument, expressed in years. DV01 (dollar value of a basis point) is the dollar change in a position's value for a 1bp yield move, roughly duration times market value times 0.0001. Because DV01 carries the dollar size of the actual holding, a high-duration bond held in small size can have a smaller DV01 than a low-duration bond held in large size. The deep point: confusing a normalized sensitivity (duration) with a dollar sensitivity (DV01) is how hedges get mis-sized — you hedge in dollars, so you must match DV01, not duration, when you build a rate-neutral book.",
+    'Floe generated',
+    true,
+    'One is per-percent-of-value, the other is per-basis-point-of-dollars. Ask which one already includes how much of the bond you actually hold.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10084005,
+    'Quant Finance',
+    'Fixed Income',
+    'What the par swap rate is really averaging',
+    "You're asked for the fair fixed rate on a new 5-year swap whose floating leg will pay each year's prevailing short rate. The forward rates implied by today's curve are 2%, 3%, 4%, 5%, 6% for the five years. A candidate answers '4% — just average the forwards.' The interviewer frowns. Why is a simple average wrong, and what is the par swap rate actually?",
+    "The par swap rate is the fixed rate that makes the swap worth zero at inception, which is a discount-factor-weighted average of the forward rates — later cash flows are discounted more heavily, so they get less weight, pulling the fair rate below the plain 4% average of an upward-sloping forward curve",
+    [
+      ["4% is correct — the par rate is the arithmetic mean of the forward rates because each annual period contributes one equal floating payment to the swap", "Each period does contribute a payment, but the payments are not equally valuable today: a cash flow in year 5 is discounted far more than one in year 1. The par rate weights each forward by its discount factor, so equal weighting is wrong whenever the curve is not flat.", "Value each leg in present-value terms: distant payments are worth less now, so they cannot carry equal weight in the fair fixed rate."],
+      ["The par rate should be the final forward, 6%, since that is the most recent market expectation and the swap must clear at the latest rate", "The swap exchanges cash flows across all five years, not just the last one. Its fair fixed rate balances the present value of every floating payment against every fixed payment — it is an average across the whole schedule, not the endpoint.", "A swap is a portfolio of forwards over the full term; pricing it off a single period ignores the other four exchanges."],
+      ["The par rate equals 4% only if you discount at the swap rate itself, but using the risk-free curve gives 5%, the midpoint weighted toward later years", "The weighting runs the other way: discounting puts more weight on earlier, less-discounted cash flows, pulling the rate below 4% for an upward curve, not above it. Later cash flows are discounted more and therefore matter less, not more.", "Heavier discounting of later flows reduces their weight, so an upward-sloping forward curve produces a par rate below the simple mean."],
+    ],
+    "Lesson: a par swap rate is defined as the fixed rate that sets the swap's value to zero at inception, found by equating the present values of the fixed and floating legs. Working that out shows the fixed rate is a discount-factor-weighted average of the forward rates, not a simple arithmetic mean. Because earlier cash flows are discounted less, they receive more weight; on an upward-sloping curve this pulls the par rate below the naive average. The deep point: a swap is economically a portfolio of forward rate agreements, and its 'fair rate' is a present-value-weighted blend of all of them — which is also why, in the post-2008 multi-curve world, the discounting curve (OIS) and the forecasting curve are separated, since the weights themselves come from the discount curve.",
+    'Floe generated',
+    true,
+    'Set the swap value to zero and equate the legs. The weights on each forward are discount factors, so later cash flows count for less.',
+    { challengeRating: 6 },
+  ),
+
+  // ---------------------------------------------------------------------------
+  // Chapter: Risk Management
+  // ---------------------------------------------------------------------------
+  makeSimpleQuestion(
+    10084006,
+    'Quant Finance',
+    'Risk Management',
+    'When diversification looks dangerous',
+    "You hold one risky bond. It defaults with 4% probability, wiping out the position; otherwise it pays in full. Its 95% one-day VaR is reported as zero, because default lives in the 4% tail beyond the 95% cutoff. A risk officer merges your book with a colleague's identical-but-independent bond, expecting diversification to lower risk. Instead the combined 95% VaR jumps from zero to a large loss. What just happened?",
+    "VaR is not sub-additive: the merged book's VaR can exceed the sum of the parts. With two independent 4% bonds the chance that at least one defaults is about 7.84%, which now pokes past the 95% threshold, so a loss that was hidden in each tail becomes visible — diversification genuinely reduced risk, but VaR is blind to it here",
+    [
+      ["The risk officer made an arithmetic error — diversification always lowers VaR, so the combined figure must be wrong and should be recomputed", "No error: this is the textbook demonstration that VaR can fail sub-additivity. For heavy-tailed or default-style risks the VaR of a diversified portfolio can legitimately exceed the sum of the standalone VaRs. The number is correct; the measure is flawed.", "Sub-additivity is a property a coherent risk measure should have, and VaR provably lacks it — so 'diversification always lowers VaR' is simply false."],
+      ["The combined VaR rose because the two bonds are secretly correlated; with truly independent defaults the VaR would have stayed at zero", "The paradox holds even with perfect independence — that is what makes it striking. Independent 4% events combine to a 7.84% chance of at least one default, which crosses the 95% line. Correlation is not needed to break VaR's additivity.", "Run the independent case explicitly: the union of two 4% events is 7.84%, enough to breach the quantile with no correlation at all."],
+      ["This shows VaR working as intended: by exposing the hidden default risk it correctly penalises a concentrated, undiversified book", "It is the opposite — the book is more diversified after the merge, yet VaR rose, which is exactly the perverse signal. VaR isn't 'penalising concentration'; it is failing to credit genuine diversification, the defect that motivated the switch to expected shortfall.", "The merged book is less concentrated, not more, so a sensible risk measure should not have gone up — VaR's increase is the bug, not a feature."],
+    ],
+    "Lesson: Value-at-Risk is a quantile of the loss distribution — the loss you won't exceed with, say, 95% confidence — and it is silent about everything beyond that point. Critically, VaR is not sub-additive: the VaR of a combined portfolio can exceed the sum of its parts, so it can appear to punish diversification, as with two independent defaultable bonds whose individual 95% VaR is zero but whose combined VaR is large. Expected shortfall (CVaR) — the average loss in the tail beyond VaR — is sub-additive and hence coherent, which is exactly why Basel's FRTB moved the regulatory measure from VaR to expected shortfall. The deep point: a risk number is only as trustworthy as its mathematical properties; a measure that can reward concentration over diversification is confidently wrong in a way that matters for capital.",
+    'Floe generated',
+    true,
+    'Ask whether the risk of two positions together can exceed the sum of their separate risks. If the measure allows that, it is not sub-additive.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10084007,
+    'Quant Finance',
+    'Risk Management',
+    'The number that says nothing about the cliff',
+    "Two trading desks each report a 99% one-day VaR of exactly $10m. Desk A's worst 1% of days lose around $11m. Desk B sells deep out-of-the-money options: its worst 1% of days are catastrophic, averaging $200m. Their VaR figures are identical. Which risk measure would distinguish them, and what does that reveal about VaR?",
+    "Expected shortfall would distinguish them: it averages the losses in the tail beyond the VaR cutoff, so Desk B's expected shortfall is enormous while Desk A's is modest. VaR reports only the threshold, not the depth of the tail behind it — two books can share a VaR yet have wildly different catastrophe profiles",
+    [
+      ["Nothing can distinguish them at this confidence level — if both have the same 99% VaR, then by definition their 1% tail risk is identical", "Identical VaR means identical thresholds, not identical tails. VaR is a single point on the loss distribution; everything past it — the shape and severity of the tail — is invisible to VaR but fully captured by expected shortfall.", "VaR pins one quantile; the tail beyond it can be a gentle slope or a cliff, and only a tail-averaging measure can tell them apart."],
+      ["Raising the VaR confidence to 99.9% would reveal the difference and make expected shortfall unnecessary, since a higher quantile captures the tail", "A higher quantile is still just one point further out — it reports a deeper threshold but still says nothing about the average severity beyond it. Expected shortfall integrates over the whole tail; no single VaR quantile reproduces that.", "Pushing the quantile out moves the point but never averages the region past it, which is exactly what tail risk requires."],
+      ["Standard deviation would distinguish them better than either, since it captures the full spread of the loss distribution including the tail", "Standard deviation weights all deviations symmetrically and is dominated by the body of the distribution; it badly understates rare, asymmetric catastrophe risk like short deep-OTM options. Expected shortfall is purpose-built for the tail and is also coherent.", "Variance is a whole-distribution average that drowns out rare disasters; tail risk needs a measure focused on the extreme losses themselves."],
+    ],
+    "Lesson: VaR answers 'how bad is the threshold I'll breach 1% of the time?' but says nothing about how bad things get once you're past it. Two portfolios can have identical VaR and radically different tails — a short-deep-OTM-options book has the same threshold but a far deeper cliff behind it. Expected shortfall (the conditional average loss beyond VaR) sees that cliff, which is why it is the preferred regulatory tail measure and why it is coherent (sub-additive) where VaR is not. The deep point: choosing a risk measure is choosing which question to answer. If the danger is in the extreme tail — gap risk, jump risk, sold optionality — a measure that stops at the quantile will look reassuring right up until the tail event arrives.",
+    'Floe generated',
+    true,
+    'VaR marks the edge of the cliff; ask which measure tells you how far down the cliff goes once you step past it.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10084008,
+    'Quant Finance',
+    'Risk Management',
+    'A model that passed every backtest',
+    "A bank's VaR model is calibrated on the last two years of data — a calm, low-volatility period. It backtests beautifully: almost exactly the expected number of breaches, and risk limits are never troubled. A model-validation reviewer flags it as dangerous anyway. On what grounds, given that the backtest looks clean?",
+    "The model is calibrated to a quiet regime, so it has learned that quiet regime's volatility and correlations — a clean backtest over calm data only confirms it fits calm data; it systematically understates risk because the scenarios that would break it (a volatility spike, a correlation jump) are absent from both the calibration window and the backtest",
+    [
+      ["The backtest being clean proves the model is sound; the reviewer is being overly cautious, since out-of-sample breach counts are the gold standard for validation", "A breach count is only as informative as the period it covers. Backtesting on the same calm regime the model was fit to cannot reveal failure under stress that never appeared in the data — it confirms in-sample comfort, not robustness. Validation must probe regimes the data did not contain.", "Ask what the backtest could not have seen: if the test window holds no stress, a clean result says nothing about stressed performance."],
+      ["The real problem is that two years is too short a sample, so simply extending the calibration window to ten years would fully resolve the reviewer's concern", "More data helps only if it spans different regimes; ten more calm years would not. The defect is regime coverage, not sample length. The fix is stress testing and scenario analysis that deliberately inject conditions the history lacks, not merely a longer quiet sample.", "Length and diversity are different: a long but homogeneous sample still teaches the model only one regime."],
+      ["The reviewer must be objecting to the choice of confidence level; recalibrating the VaR to a higher quantile would address the understatement of risk", "A higher quantile still estimates the tail from calm data, so it inherits the same understated volatility and correlations. Re-quantiling does not import the missing stress scenarios; the problem is the data regime, not where on that distribution you read off the number.", "Reading a more extreme percentile off a too-calm distribution still gives a too-calm answer; the distribution itself is mis-estimated."],
+    ],
+    "Lesson: model risk is the risk that the model itself is wrong, and one of its commonest forms is regime dependence — a model calibrated to recent calm markets learns calm volatilities and correlations and so understates risk precisely when it matters. A clean backtest is necessary but not sufficient: backtesting on the same benign window the model was fit to confirms in-sample fit, not robustness to conditions the data never contained. This is why validation teams lean on stress testing and scenario analysis that deliberately inject crises absent from history, and why they scrutinise calibration stability across regimes. The deep point: the most dangerous models are not the ones that fail loudly but the ones that look perfect right until the regime changes — a number can be confidently, validatedly wrong.",
+    'Floe generated',
+    true,
+    'Ask what regimes the calibration data and the backtest window actually contain. A clean backtest over calm data can only certify calm data.',
+    { challengeRating: 6 },
+  ),
+]

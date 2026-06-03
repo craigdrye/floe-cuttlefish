@@ -114,7 +114,7 @@ The course follows the real arc of initiating and maintaining coverage: business
 - Quietly moving the goalposts — redefining the thesis after the fact so it can never be wrong.
 
 ## Chapter 7: Compliance, Conflicts, and Research Ethics
-**Key concepts**: material non-public information (MNPI) and insider-trading lines, Regulation FD and the level playing field, the research–banking wall and the legacy of the global research settlement, disclosure of conflicts and ownership, expert-network and channel-check boundaries, fair distribution of ratings changes, and CFA Institute standards on research integrity and independence.
+**Key concepts**: material non-public information (MNPI) and insider-trading lines, Regulation FD and the level playing field, the research–banking information barrier under FINRA Rule 2241 (the principles-based regime that now governs equity-research conflicts, quiet periods, and disclosure, and which the SEC affirmed by retiring the remaining 2003 Global Research Analyst Settlement undertakings in December 2025), disclosure of conflicts and ownership, expert-network and channel-check boundaries, fair distribution of ratings changes, and CFA Institute standards on research integrity and independence.
 
 **Core questions**
 - Is this piece of information material and non-public — and if so, how must the analyst handle it?
@@ -155,5 +155,7 @@ Learners initiate coverage on one real or assigned public company and deliver a 
 ## Research Notes
 - Relative-valuation mechanics (P/E vs EV/EBITDA, enterprise-vs-equity matching, leverage sensitivity of P/E) and DCF/target-price construction confirmed via Corporate Finance Institute and Wall Street Prep valuation references.
 - Earnings analysis, GAAP vs non-GAAP adjustments, and guidance interpretation aligned with SEC filing structure (10-K/10-Q, MD&A, Reg G on non-GAAP measures).
-- Compliance content reflects Regulation FD, insider-trading/MNPI law, the 2003 Global Research Analyst Settlement legacy of the research–banking wall, and CFA Institute Standards of Practice on research independence and the mosaic theory.
+- Compliance content reflects Regulation FD, insider-trading/MNPI law, and CFA Institute Standards of Practice on research independence and the mosaic theory. The research–banking conflict regime is now anchored to FINRA Rule 2241 (equity research; debt research is the parallel Rule 2242), which became the controlling framework after the SEC retired the remaining undertakings of the 2003 Global Research Analyst Settlement in December 2025 — the settlement is now historical context, not the live rulebook.
+- FINRA research-analyst rules (Rule 2241 scope: separation of research from banking, analyst-compensation and supervision firewalls, quiet periods, conflict/ownership disclosure) confirmed via FINRA's research-analyst-rules guidance: https://www.finra.org/rules-guidance/key-topics/research-analyst-rules
+- December 2025 retirement of the Global Research Analyst Settlement and the shift to FINRA Rule 2241's principles-based oversight confirmed via Freshfields analysis: https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/sec-retires-global-research-analyst-settlement-more-principles-based-oversight-u-102ly4c
 - Workflow sequencing (coverage initiation, estimate revisions, catalyst-driven calls, variant perception) informed by sell-side and buy-side analyst training materials from CFI, Wall Street Prep, and Breaking Into Wall Street.

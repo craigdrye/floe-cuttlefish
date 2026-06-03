@@ -43,7 +43,7 @@ Chapters move from inside the speaker outward: mindset and audience first, then 
 - What story makes the stakes concrete without manipulating the listener?
 - Which jargon should be translated, which defined, and which simply deleted?
 
-**Key concepts**: evidence types and quality, citation and sourcing, the difference between a statistic and a meaningful comparison, analogy as a translation device, story spine, plain language vs. dumbing down, concrete vs. abstract, the curse of knowledge.
+**Key concepts**: evidence types and quality, citation and sourcing, the difference between a statistic and a meaningful comparison, analogy as a translation device, story spine, plain language vs. dumbing down, concrete vs. abstract, the curse of knowledge. The three classical appeals are named here so learners can balance them deliberately: logos (the reasoning and evidence), pathos (the emotional stakes, used honestly), and ethos (the speaker's credibility, carried over from Chapter 1).
 
 **Applied skills**: translate a dense technical cause into plain impact while keeping the detail available for Q&A; convert a briefing into a five-minute explanation with one example and one number that matters; pressure-test a statistic by asking "compared with what?"
 
@@ -67,7 +67,7 @@ Chapters move from inside the speaker outward: mindset and audience first, then 
 - What belongs on the slide, what belongs in speech, and what should be cut entirely?
 - Can someone in the back row read and understand each visual within a few seconds?
 
-**Key concepts**: slide as support not script, signal-to-noise and visual hierarchy, one idea per slide, chart clarity and honest axes, image and data-ink discipline, speaker notes, handouts vs. live slides, the demo. Named conventions: Guy Kawasaki's 10-20-30 rule (about 10 slides, 20 minutes, no font below 30 point, originally for pitch decks); WCAG AA color-contrast minimums (4.5:1 for normal text, 3:1 for large text) so slides remain readable for low-vision audiences.
+**Key concepts**: slide as support not script, signal-to-noise and visual hierarchy, one idea per slide, chart clarity and honest axes, image and data-ink discipline, speaker notes, handouts vs. live slides, the demo. Named conventions: Guy Kawasaki's 10-20-30 rule (about 10 slides, 20 minutes, no font below 30 point, originally for pitch decks); WCAG AA color-contrast minimums (4.5:1 for normal text, 3:1 for large text; large text is 18pt or 14pt bold) so slides remain readable for low-vision audiences. These thresholds are unchanged in the current WCAG 2.2.
 
 **Applied skills**: cut an 82-word slide down to a single supported point; redesign a cluttered deck for an executive vs. a teaching context; check a slide for contrast and font size against the back-row and accessibility standard; decide what to say aloud rather than display.
 
@@ -79,9 +79,9 @@ Chapters move from inside the speaker outward: mindset and audience first, then 
 - Which objection should I answer before the audience raises it?
 - What single decision does this meeting need to produce?
 
-**Key concepts**: informative vs. persuasive speech, the executive briefing, decision-first structure, the recommendation-evidence-risk-next-step pattern, stakeholder framing, pre-empting objections, the difference between giving information and asking for a decision.
+**Key concepts**: informative vs. persuasive speech, the executive briefing, decision-first structure, the recommendation-evidence-risk-next-step pattern, Monroe's Motivated Sequence (attention, need, satisfaction, visualization, action) as the classic persuasive arc, stakeholder framing, pre-empting objections, the difference between giving information and asking for a decision.
 
-**Applied skills**: deliver a three-minute executive briefing that leads with the decision and the two or three facts that shape it; structure a persuasive ask as recommendation, evidence, risk control, and next step; trim a 35-slide project history into the few facts an executive needs to approve a budget.
+**Applied skills**: deliver a three-minute executive briefing that leads with the decision and the two or three facts that shape it; structure a persuasive ask as recommendation, evidence, risk control, and next step; map a persuasive pitch onto Monroe's Motivated Sequence and notice where most workplace asks skip the "need" and "visualization" steps; trim a 35-slide project history into the few facts an executive needs to approve a budget.
 
 **Common traps**: burying the recommendation so leaders have to hunt for it; opening with origin-story "lore" that burns the time budget before the ask arrives; presenting all risks with no proposed action; withholding a recommendation to "stay flexible," which just makes the audience do the speaker's job.
 
@@ -139,3 +139,6 @@ Learners assemble a portfolio that exercises the whole arc:
 - Guy Kawasaki, "The 10/20/30 Rule of PowerPoint," used for the slide-discipline benchmark: https://guykawasaki.com/the_102030_rule/
 - W3C WCAG 2.1 Understanding SC 1.4.3 Contrast (Minimum), used for the accessibility contrast benchmark (4.5:1 normal text, 3:1 large text): https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html
 - On the Mehrabian "7-38-55" myth (it applies only to communicating feelings/attitudes when words and tone conflict, not to communication in general): https://www.watermarklearning.com/blog/correcting-the-mehrabian-myth-with-words-only/
+- W3C Understanding SC 1.4.3 Contrast (Minimum), confirming the 4.5:1 / 3:1 thresholds and the 18pt / 14pt-bold "large text" definition are unchanged in WCAG 2.2: https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum
+- Grand Valley State University Speech Lab, used to add Monroe's Motivated Sequence (attention, need, satisfaction, visualization, action) as the canonical persuasive-speech arc: https://www.gvsu.edu/speechlab/monroes-motivated-sequence-46.htm
+- Maricopa Open "Public Speaking" chapter on evaluating ethos, pathos, and logos, used to name the three classical appeals in Chapter 3: https://open.maricopa.edu/com22514w/chapter/evaluating-appeals-to-ethos-pathos-and-logos/

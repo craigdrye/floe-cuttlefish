@@ -88,28 +88,34 @@ The middle of the course covers probability and sampling, the two engines behind
 - Comparing a jackpot to a single ticket instead of weighting it by its tiny probability.
 
 ## Chapter 7: Sampling and Bias
-**Key concepts**: random sampling, representativeness, selection bias, survivorship bias, voluntary response bias, sample size, margin of error.
+**Key concepts**: random sampling, representativeness, selection bias, survivorship bias, voluntary response bias, sample size, margin of error, the difference between observing a sample and running an experiment.
 
 **Core questions**
 - Did everyone in the population have a fair chance of being included?
 - Who is missing from this data because they failed, dropped out, or chose not to respond?
 - Does the margin of error make this "lead" a statistical tie?
+- Were people *observed* as they already were, or *assigned* to a treatment?
 
 **Common traps**
 - Believing a bigger sample fixes a biased source.
 - Studying only the survivors and crediting their habits for success.
+- Confusing a representative sample (which lets you generalize) with a controlled experiment (which lets you infer cause).
 
 ## Chapter 8: Relationships and Misuse
-**Key concepts**: correlation vs causation, correlation coefficient, confounding variables, misleading charts, cherry-picking, base-rate neglect, averages that hide a split.
+**Key concepts**: correlation vs causation, correlation coefficient, confounding variables, observational study vs randomized experiment, misleading charts, cherry-picking, base-rate neglect, Simpson's paradox (averages that reverse when a hidden split is revealed).
 
 **Core questions**
 - Could a hidden third factor explain this link?
+- Was this a randomized experiment (which can support cause) or just an observed association?
 - Where does the chart's axis start, and what time window was chosen?
 - How rare is this thing, and does that change what a positive result means?
+- Does the overall trend reverse once the data is broken into subgroups?
 
 **Common traps**
 - Reading correlation as proof of causation.
+- Treating an observational link as if it came from a controlled experiment.
 - Ignoring the base rate so that false positives feel like real ones.
+- Trusting a pooled average when subgroups tell the opposite story (Simpson's paradox).
 
 ## Chapter 9: Confidence, P-Values, and Hypotheses
 **Key concepts**: confidence intervals, confidence level as a property of the method, null and alternative hypotheses, p-values, statistical vs practical significance, multiple comparisons, replication.
@@ -138,4 +144,13 @@ The capstone reframes statistics as a literacy skill: the ability to stay neithe
 - Decide whether mean, median, or mode best answers a given question.
 - Interpret a confidence interval and a margin of error in plain language.
 - Identify the specific bias or chart trick in a set of real-world examples.
+- Decide whether a study was observational or a randomized experiment, and what each licenses you to conclude.
 - Critique a news-style statistical claim end to end.
+
+## Research Notes
+This syllabus targets statistical *literacy* for adults (reading numbers in the wild), not procedural exam prep, so it is benchmarked against literacy-focused frameworks rather than a single exam blueprint.
+
+- ASA GAISE College Report (2016): https://www.amstat.org/asa/files/pdfs/GAISE/GaiseCollege_Full.pdf — endorsed guidelines for intro statistics; emphasizes statistical literacy and thinking, conceptual over procedural understanding, and study design as a first-class topic. Motivated naming the observational-vs-experiment distinction explicitly.
+- HealthNewsReview, "Association vs. causation": https://www.healthnewsreview.org/toolkit/tips-for-understanding-studies/does-the-language-fit-the-evidence-association-versus-causation/ — why only randomized experiments (via random assignment, which neutralizes confounders) license causal language; observational studies show association only.
+- Stanford Encyclopedia of Philosophy, "Simpson's Paradox": https://plato.stanford.edu/entries/paradox-simpson/ — canonical statement of aggregation reversal; supports naming the "averages that hide a split" idea as Simpson's paradox.
+- AP Statistics Course and Exam Description (College Board): https://apcentral.collegeboard.org/courses/ap-statistics — cross-check on the standard intro scope (one-variable data, collecting data/study design, probability and distributions, inference). Confirms the chapter set here is complete for a literacy course; formal procedures (e.g., regression equations, t/chi-square mechanics) are intentionally out of scope.

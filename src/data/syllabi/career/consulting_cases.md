@@ -57,8 +57,8 @@ Each chapter lists Core questions (the diagnostic prompts a learner should be ab
 
 ## Chapter 8: Handling Pushback, New Information, and Interview Readiness
 - **Core questions**: What changes after this new fact? Which assumption should update? How do you recover from a math error gracefully and pace a full case?
-- **Key concepts**: recalibration, integrating new data without abandoning structure, transparent error recovery, scenario pivots, pacing, note and whiteboard hygiene, behavioral/fit alignment, deliberate practice.
-- **Applied skills**: absorb a curveball, update the logic, and keep the frame intact; correct an arithmetic slip openly and state the new implication; manage time across opening, structure, analysis, and synthesis; deliver a tight fit story.
+- **Key concepts**: recalibration, integrating new data without abandoning structure, transparent error recovery, scenario pivots, pacing, note and whiteboard hygiene, behavioral/fit alignment (McKinsey's PEI dimensions — Connection, Drive, Leadership, Growth — assessed with one deep story each), deliberate practice.
+- **Applied skills**: absorb a curveball, update the logic, and keep the frame intact; correct an arithmetic slip openly and state the new implication; manage time across opening, structure, analysis, and synthesis; deliver a tight, single-story fit answer mapped to a named behavioral dimension and probed with follow-ups.
 - **Common traps**: refusing to update when new data arrives; panicking and discarding the structure; disguising or doubling down on an error; running out of time before reaching a recommendation.
 
 ## Capstone
@@ -76,3 +76,7 @@ Run two full mock cases end to end: one profitability or growth case, and one op
 - Bain interview preparation: https://www.bain.com/careers/interview-prep/
 - Harvard consulting career guidance: https://careerservices.fas.harvard.edu/channels/consulting/
 - MECE and the Pyramid Principle (Barbara Minto): https://en.wikipedia.org/wiki/MECE_principle
+- McKinsey case interview — five assessed skills (structured thinking, analytical problem solving, business acumen, communication, fit): https://www.hackingthecaseinterview.com/pages/mckinsey-case-interview
+- McKinsey PEI dimensions renamed in summer 2025 to Connection, Drive, Leadership, Growth: https://strategycase.com/mckinsey-personal-experience-interview-the-only-post-you-need-to-read/
+- Case interview math scope (CAGR, breakeven, NPV, weighted averages; quant ~20-25% of evaluation): https://www.hackingthecaseinterview.com/pages/consulting-case-interview-math
+- Cosentino Ivy Case System and the canonical case types (profitability, market entry, pricing, M&A, market sizing): https://managementconsulted.com/case-in-point-book-review/

@@ -109,7 +109,7 @@ Not a credentialing exam — this is a literacy course. Suggested cadence: 6-10 
 
 **Key concepts**
 - Dominance, Influence, Steadiness, Conscientiousness (sometimes called Compliance)
-- Marston's original framework, descendants (Wiley DiSC, TTI, Wonderscape)
+- Marston's original 1928 framework (*Emotions of Normal People*); descendants (Wiley Everything DiSC, TTI Success Insights, Thomas International)
 - Behavioural style snapshot, not deep personality
 - Common in sales training, team coaching, communication style guides
 
@@ -217,3 +217,11 @@ Not a credentialing exam — this is a literacy course. Suggested cadence: 6-10 
 Take one Big Five test (IPIP-NEO or Big Five Aspects Scale). Take one of the popular ones (MBTI, Enneagram, or DISC). Compare. Write down: which result surprised you, which one is more useful for self-direction, which one is more defensible if you had to justify it to HR. The point of this course is not to dismiss any tool, but to use each for what it can actually do — and to spot the moment you're being sold something dressed up in psychology jargon.
 
 **Authoritative sources:** Saucier & Goldberg; Costa & McCrae NEO-PI-R; Ashton & Lee HEXACO; APA on MBTI; SIOP Principles for the Validation and Use of Personnel Selection Procedures; Furnham *The Psychology of Personnel Selection*; Paulhus & Williams Dark Triad.
+
+## Research Notes
+- HEXACO model and Honesty-Humility / Emotionality factor definitions (Ashton & Lee 2007): https://en.wikipedia.org/wiki/HEXACO_model_of_personality_structure — confirms the six factors and that Emotionality is recalibrated, not identical to Neuroticism.
+- Short Dark Triad (SD3) is Jones & Paulhus 2014; the Dirty Dozen is Jonason & Webster 2010; Dark Triad construct is Paulhus & Williams 2002: https://en.wikipedia.org/wiki/Dark_triad — confirms instruments and authorship cited in Chapter 8.
+- CliftonStrengths 34 themes and four domains (Executing, Influencing, Relationship Building, Strategic Thinking), Gallup: https://www.gallup.com/cliftonstrengths/en/253715/34-cliftonstrengths-themes.aspx — confirms Chapter 7 structure.
+- MBTI test-retest reliability (~50% get a different four-letter type on retest; Pittenger 1993 lineage) vs The Myers-Briggs Company's rebuttal: https://ap.themyersbriggs.com/themyersbriggs-mbti-facts.aspx — supports Chapter 4 reliability framing.
+- DISC vendor lineage — original 1928 Marston framework and modern publishers Wiley (Everything DiSC), TTI Success Insights, Thomas International: https://adam-stamm.medium.com/disc-disc-and-d-i-s-c-why-are-there-so-many-different-assessments-49d2121ed17 — corrected a bogus "Wonderscape" vendor in Chapter 5.
+- EEOC Uniform Guidelines / four-fifths (80%) rule on adverse impact: https://www.eeoc.gov/laws/guidance/questions-and-answers-clarify-and-provide-common-interpretation-uniform-guidelines — the 4/5ths rule and validation requirement remain the operative standard cited in Chapters 1 and 9. (Note: a 2025 federal executive order de-emphasizes disparate-impact enforcement, but the underlying law and the Guidelines are unchanged.)

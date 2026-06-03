@@ -63,9 +63,9 @@ Floe routes a learner here when they want grounded, non-partisan civic literacy:
 
 ## Chapter 9: The Bureaucracy — How Government Runs
 - **Core questions**: Who actually does the work of government? Where do agencies get their power? What is a regulation?
-- **Key concepts**: the federal bureaucracy, enabling statutes and delegation, regulations and notice-and-comment, civil service vs. political appointees (Pendleton Act, the end of the spoils system), independent regulatory agencies.
+- **Key concepts**: the federal bureaucracy, enabling statutes and delegation, regulations and notice-and-comment, civil service vs. political appointees (Pendleton Act, the end of the spoils system), independent regulatory agencies, the limits of agency interpretation (in *Loper Bright v. Raimondo* (2024) the Supreme Court ended "Chevron deference," so courts — not agencies — now decide what an ambiguous statute means).
 - **Applied skills**: Distinguish a statute from a regulation, and a career civil servant from a political appointee.
-- **Common traps**: Thinking agencies invent their own authority; confusing the Cabinet (leadership) with the bureaucracy (workforce); assuming all agencies answer directly to the President.
+- **Common traps**: Thinking agencies invent their own authority; confusing the Cabinet (leadership) with the bureaucracy (workforce); assuming all agencies answer directly to the President; assuming an agency's reading of a vague law automatically binds the courts.
 
 ## Chapter 10: Amendments and How Power Flows
 - **Core questions**: How is the Constitution changed? How is the President really chosen? How has federal power grown over time?
@@ -75,3 +75,9 @@ Floe routes a learner here when they want grounded, non-partisan civic literacy:
 
 ## Capstone
 Take a single real-world episode — a contested bill, a court case, a confirmation fight, or a shutdown — and narrate it end to end using the course vocabulary. Identify which branch and which level of government acted, which checks were triggered, where the money came from, and where the final authority rested. The goal: read any government story in the news and instantly map it onto branches, levels, and checks — turning vague civic anxiety into clear, confident understanding of the machine you live inside.
+
+## Research Notes
+- AP U.S. Government and Politics Course and Exam Description (College Board) — canonical scope for institutional civics; the "Foundations of American Democracy" and "Interactions Among Branches of Government" units map closely onto this course's branch/check/federalism chapters: https://apcentral.collegeboard.org/media/pdf/ap-us-government-and-politics-course-and-exam-description.pdf
+- USCIS 2025 Civics Test, 128 questions (effective Oct. 20, 2025) — standard reference for foundational facts a civically literate adult should know: https://www.uscis.gov/citizenship-resource-center/naturalization-test-and-study-resources/2025-civics-test
+- *Loper Bright Enterprises v. Raimondo*, 603 U.S. 369 (2024) — overruled Chevron deference; courts, not agencies, now interpret ambiguous statutes. Grounds the updated bureaucracy chapter: https://www.supremecourt.gov/opinions/23pdf/22-451_7m58.pdf
+- Nuclear option / Senate cloture history (2013 and 2017) — confirms that legislation still needs 60 votes for cloture while nominations now clear on a simple majority, the distinction behind the Congress chapter's "51 votes" trap: https://en.wikipedia.org/wiki/Nuclear_option

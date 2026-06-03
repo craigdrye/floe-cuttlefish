@@ -47,7 +47,7 @@ Questions test understanding, not self-diagnosis: what loneliness is, myths vers
 
 ## Chapter 7: Loneliness Across Life
 - **Core questions**: What do surveys show about young adults? Which life events raise the risk most? What drives loneliness in older age? Why do new parents feel it? Why can remote or solo work increase it?
-- **Key concepts**: high loneliness among young adults, transitions as high-risk (moving, retiring, divorce, bereavement, new parenthood), lost peers/roles/mobility in older age, hidden parental loneliness, loss of incidental workplace contact.
+- **Key concepts**: high loneliness among young adults (surveys consistently find 18-34s and Gen Z report the highest rates despite being the most digitally connected), transitions as high-risk (moving, retiring, divorce, bereavement, new parenthood), lost peers/roles/mobility in older age, hidden parental loneliness, loss of incidental workplace contact.
 - **Common traps**: assuming loneliness is only an elderly issue; thinking a baby meets a parent’s adult social need; treating older-age loneliness as a natural preference rather than lost opportunity.
 
 ## Chapter 8: When Loneliness Overlaps with Depression and Anxiety
@@ -74,5 +74,6 @@ This course is educational and is not a substitute for professional care. If lon
 - Harvard Study of Adult Development (Waldinger et al.) — informed the finding that warm relationships are among the strongest predictors of long-term health and happiness.
 - Holt-Lunstad et al., meta-analyses on social relationships and mortality — informed the health-risk and "cigarettes a day" scale comparison framing.
 - Robert S. Weiss, *Loneliness: The Experience of Emotional and Social Isolation* — informed the social vs emotional loneliness distinction.
-- US Surgeon General’s Advisory on the healing effects of social connection and community (2023) — informed the public-health framing and prevalence across ages.
+- US Surgeon General’s Advisory, *Our Epidemic of Loneliness and Isolation* (2023) — informed the public-health framing and prevalence across ages; source of the "mortality impact similar to smoking up to 15 cigarettes a day" comparison and the ~26-29% increased premature-death risk figures. https://www.hhs.gov/surgeongeneral/priorities/connection/index.html
+- WHO Commission on Social Connection, *From loneliness to social connection: charting a path to healthier societies* (June 2025) — current global authority; reports that about 1 in 6 people worldwide experience loneliness (highest among adolescents and young adults, ~1 in 5), that loneliness is associated with roughly 871,000 deaths a year, and follows the first World Health Assembly resolution on social connection (May 2025). Reinforces the prevalence, young-adult, and health-stakes framing. https://www.who.int/publications/i/item/978240112360
 - 988 Suicide & Crisis Lifeline (988lifeline.org) — crisis resource referenced throughout the when-to-seek-help material.

@@ -24,6 +24,7 @@ First-round quant screens are short and dense — often 45 to 60 minutes, someti
 | Counting and combinatorics | Clean enumeration without over/undercounting | Drill patterns until they are reflexes |
 | Brainteasers and invariants | Finding structure, not grinding | Solve, then name the reusable move |
 | Mental math and estimation | Speed, plausibility, market numeracy | Timed sets, 60-90 seconds per problem |
+| Quant math and finance | Calculus, linear algebra, no-arbitrage pricing | Re-derive core formulas, not memorize |
 | Coding and data screen | Correct, complexity-aware, tested code | One problem a day, explained aloud |
 | Mock and communication | Composure, hint response, recovery | Weekly, recorded or with a partner |
 
@@ -113,7 +114,21 @@ Suggested cadence: 6 to 10 weeks, 5 to 6 short blocks a week, one weekly timed m
 
 **Practice deliverable**: a timed mental-math and estimation log (60-90 seconds per problem) that records both the answer and the recurring error type, so drills target the actual leak.
 
-## Chapter 7: Coding and the Data Screen
+## Chapter 7: The Quant Math Toolkit — Calculus, Linear Algebra, and Finance
+**Core questions**
+- Can I differentiate, integrate, and Taylor-expand quickly enough to set up an EV or optimization on the spot?
+- What does this matrix do to a vector, and what do its eigenvalues / positive-definiteness tell me?
+- What is the no-arbitrage / risk-neutral price, and why is it not the expected payoff under the real-world probabilities?
+
+**Key concepts**: single-variable derivatives and integrals, the Taylor/Maclaurin expansion and first-order approximation, optimization via first-order conditions, simple ODEs and limits; matrix-vector products, eigenvalues and eigenvectors, the covariance/correlation matrix and why it is positive semi-definite, rank and linear dependence; time value of money and discounting, the no-arbitrage principle, the one-period and binomial option-pricing models, put-call parity, risk-neutral valuation, and the intuition behind the Black-Scholes inputs and the first-order Greeks (delta).
+
+**Applied skills**: Taylor-expand to approximate a function or justify a linearization an interviewer pushes on; maximize/minimize a payoff with a first-order condition; read off what a 2×2 covariance matrix says about correlation and variance of a portfolio; price a one-step binomial option by replication or risk-neutral probabilities and explain why both give the same number; apply put-call parity to recover one instrument's price from the others.
+
+**Common traps**: confusing the real-world probability with the risk-neutral probability when pricing; treating expected discounted payoff under real-world measure as the fair price; forgetting that a valid covariance/correlation matrix must be positive semi-definite (three assets each claimed to be pairwise correlated at -0.6 is impossible, because one eigenvalue turns negative); sign or factor errors in a Taylor expansion under time pressure; quoting Black-Scholes as a black box without naming what each input does.
+
+**Practice deliverable**: a one-page formula-and-intuition sheet covering the Taylor expansion, first-order optimization, eigenvalue/positive-definiteness facts, put-call parity, and the one-step binomial price — each with the one-line reason it is true, not just the formula.
+
+## Chapter 8: Coding and the Data Screen
 **Core questions**
 - Which data structure makes this operation cheap?
 - What is the time and space complexity, and is it worst-case or average-case?
@@ -127,7 +142,7 @@ Suggested cadence: 6 to 10 weeks, 5 to 6 short blocks a week, one weekly timed m
 
 **Practice deliverable**: five interview-style solutions, each with a stated approach, complexity analysis, at least three test cases including edge cases, and a sentence on the tradeoff you chose.
 
-## Chapter 8: Mock Interviews, Communication, and Recovery
+## Chapter 9: Mock Interviews, Communication, and Recovery
 **Core questions**
 - Where exactly did the solution stall, and was it a knowledge gap or a composure gap?
 - Did the hint reveal a pattern I should have seen, and did I use it well?
@@ -148,17 +163,19 @@ Sit a single 60-minute mixed quant screen, ideally with a partner or recorded, c
 - an expected-value game with an optimal-stopping or strategy decision
 - one brainteaser that turns on an invariant, parity, or information argument
 - one market-estimation or mental-math prompt quoted to a sensible precision
+- one quant-math or finance question (a Taylor/optimization setup, an eigenvalue/positive-definiteness check, or a one-step binomial or put-call-parity price)
 - one coding problem solved, complexity-stated, and tested aloud
 
 Submit your answers, the reasoning notes you spoke through, and a correction log that classifies every error by cause and names the fix.
 
-The capstone is not about getting all six exactly right under the clock — nobody does on the first sitting. It is about proving you can move through a real loop while staying organized, vocal, and self-checking: stating assumptions, finding structure, getting a defensible number, and recovering when one problem goes sideways without dragging the rest down with it.
+The capstone is not about getting all seven exactly right under the clock — nobody does on the first sitting. It is about proving you can move through a real loop while staying organized, vocal, and self-checking: stating assumptions, finding structure, getting a defensible number, and recovering when one problem goes sideways without dragging the rest down with it.
 
 ## Assessment Ideas
 - Probability and counting sets graded on setup quality and the presence of a sanity check, not just the final number.
 - Expected-value and game problems graded on whether the strategy and the fair price are justified, not guessed.
 - Puzzle write-ups graded on the transferable reasoning move named, so the skill survives a new puzzle.
 - Mental-math and estimation logs graded on plausibility discipline and shrinking error rate over time.
+- Quant-math and finance problems graded on whether the candidate derives (not just recites) the Taylor approximation, optimization condition, eigenvalue/positive-definiteness fact, or no-arbitrage price, and can explain risk-neutral vs real-world probability.
 - Coding solutions graded on correctness, stated complexity, edge-case handling, and clarity of explanation.
 - Capstone graded on accuracy, pacing, communication, and recovery after hints — the full interview signal, not a problem set.
 
@@ -167,3 +184,6 @@ The capstone is not about getting all six exactly right under the clock — nobo
 - MIT OpenCourseWare, probability and statistics courses (6.041 / 18.05): foundations behind interview probability and EV. https://ocw.mit.edu/search/?q=probability%20statistics
 - Baruch College Pre-MFE Program topics: the math, probability, and programming baseline quant employers expect. https://mfe.baruch.cuny.edu/pre-mfe-program/
 - QuantInsti / Quantra, "Quant Interview Questions Preparation": representative first-round problem types across probability, statistics, and coding. https://quantra.quantinsti.com/course/quant-interview-questions-preparation
+- Xinfeng Zhou, *A Practical Guide to Quantitative Finance Interviews* ("the Green Book"): the canonical 7-section body of knowledge — brain teasers, calculus & linear algebra, probability, stochastic processes/calculus, finance, and programming — which motivates the calculus/linear-algebra/finance coverage in Chapter 7. https://quantprep.io/practical-guide-to-quantitative-finance-interviews
+- Jane Street, "Probability and Markets Guide": official primer on expected value, two-sided markets, and information in market-making games used in first-round trading screens. https://www.janestreet.com/probability-markets/
+- TraderMath, "The Ultimate Guide to Quant Trading Interviews": current (2025-2026) breakdown of the screen structure — timed mental-math/Zetamac, probability, market-making games, and coding. https://www.tradermath.org/knowledge-base/the-ultimate-guide-to-quant-trading-interviews

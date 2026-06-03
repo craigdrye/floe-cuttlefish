@@ -50,9 +50,9 @@ Floe routes a learner here when they want practical, hands-on home maintenance r
 
 ## Chapter 7: Water Heaters and Water Pressure
 **Core questions**: What is the T&P valve and why must it never be plugged? Why does a tank rumble? What temperature is safe? Why is high house pressure a problem, and what fixes it? What is water hammer?
-**Key concepts**: temperature-and-pressure relief valve, sediment buildup and flushing, ~120 F setpoint (scald vs Legionella), 40-80 psi safe range, pressure-reducing valve (PRV), water hammer and arrestors.
-**Applied skills**: identify and respect the T&P; flush a tank's sediment; set a safe temperature; gauge house pressure and diagnose a failing PRV; recognize and address water hammer.
-**Common traps**: confusing the T&P with the drain valve; setting the tank dangerously hot or too cold; treating high pressure as a benefit; blaming bubbles for water hammer.
+**Key concepts**: temperature-and-pressure relief valve (typically rated 150 psi / 210 F) and its downward-pitched discharge tube to a safe location, sediment buildup and flushing, ~120 F setpoint (scald vs Legionella), 40-80 psi safe range, pressure-reducing valve (PRV), water hammer and arrestors.
+**Applied skills**: identify and respect the T&P and confirm its discharge tube runs down to a safe spot (never capped); flush a tank's sediment; set a safe temperature; gauge house pressure and diagnose a failing PRV; recognize and address water hammer.
+**Common traps**: confusing the T&P with the drain valve; plugging or capping the T&P discharge tube; setting the tank dangerously hot or too cold; treating high pressure as a benefit; blaming bubbles for water hammer.
 
 ## Chapter 8: Frozen Pipes and Seasonal Care
 **Core questions**: Why does a frozen pipe burst, and where? How do you prevent freezing in a cold snap? How do you thaw a pipe safely? How do you winterize an empty building?
@@ -74,3 +74,9 @@ Floe routes a learner here when they want practical, hands-on home maintenance r
 
 ## Capstone
 Do a real walk-through of your own home (or a detailed imagined one) and produce a household plumbing readiness brief: (1) a map of the main shutoff and every fixture stop, with each one tested and any seized valve flagged for replacement; (2) a labeled inventory of pipe materials and the water heater's type, temperature, and T&P/drain locations; (3) a measured house water-pressure reading with a verdict on whether a PRV is needed; (4) a written emergency plan covering a burst line, an overflowing toilet, a gas smell, and a sewage backup, each with the correct first move and a clear DIY-or-pro call; and (5) a seasonal checklist for freeze prevention and, if relevant, winterizing. The brief should demonstrate shutoff-first discipline, correct symptom-to-system diagnosis, and sound judgment about where competent DIY ends.
+
+## Research Notes
+- IPC Section 704.1 / Table 704.1 (via up.codes): horizontal DWV slope is min. 1/4 in/ft for pipes 3 in and smaller (1/8 in/ft for 4 in+); trap arms also cap at 1/4 in/ft to avoid self-siphoning — confirms the ~1/4 in/ft figure in Ch. 1. https://up.codes/s/slope-of-horizontal-drainage-piping
+- Watts T&P relief valve reference: residential T&P valves are standardly set to relieve at 150 psi / 210 F, and the discharge line must pitch downward to a safe disposal point with no traps and no cap — grounds the Ch. 7 addition. https://www.watts.com/resources/references-tools/t-and-p-relief-valves
+- Water heater temperature / Legionella vs scald tradeoff (GreenBuildingAdvisor): 120 F is the energy/scald-prevention setpoint but does not kill Legionella (140 F does in ~30 min); the mitigation is hot storage plus a tempering/mixing valve — confirms Ch. 7 framing. https://www.greenbuildingadvisor.com/article/water-temperature-and-legionnaires-disease
+- Residential water pressure (UpCodes excessive-pressures / ASSE 1003): 40-80 psi normal range, code-required max 80 psi at fixtures under no-flow, PRV required above that — confirms Ch. 7 PRV guidance. https://up.codes/s/excessive-pressures

@@ -828,7 +828,7 @@ export const colPracticalPoliticsVotingHigh103TopUpQuestions: Question[] = makeQ
   {
     id: 8001053,
     chapter: 'Foundations of Voting Rights',
-    title: 'The Voting Rights Act of 1965',
+    title: "Purpose of the Voting Rights Act",
     prompt: 'What was the central purpose of the Voting Rights Act of 1965?',
     correct: 'To outlaw discriminatory practices, like literacy tests, that had been used to deny Black Americans the vote',
     wrong: [

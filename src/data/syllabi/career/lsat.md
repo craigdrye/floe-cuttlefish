@@ -2,7 +2,7 @@
 **ID**: `lsat` · **Discipline**: Law School Admissions (United States)
 
 ## Course Aim
-The LSAT is administered by LSAC and, since August 2024, consists of two scored sections of Logical Reasoning, one scored section of Reading Comprehension, and one unscored experimental section (which the test-taker cannot identify), each 35 minutes, plus a separately delivered LSAT Writing sample. Logical Games / Analytical Reasoning was retired in August 2024 and is no longer tested. Scores are scaled 120-180, with approximately 75-76 scored questions across the three scored sections (roughly 52-56 in Logical Reasoning and 26-28 in Reading Comprehension). LSAT-Flex, the pandemic-era short form, has been retired.
+The LSAT is administered by LSAC and, since August 2024, consists of two scored sections of Logical Reasoning, one scored section of Reading Comprehension, and one unscored experimental section — itself either Logical Reasoning or Reading Comprehension, which the test-taker cannot reliably identify — each 35 minutes, plus a separately delivered writing sample. As of July 2024 the writing component was redesigned and renamed LSAT Argumentative Writing: the test-taker is given a debatable issue plus three or four short perspectives, and writes an essay taking a position while engaging those perspectives, across a 15-minute prewriting phase and a 35-minute drafting phase (unscored for the 2025-2026 cycle, but reported to schools). Logical Games / Analytical Reasoning was retired in August 2024 and is no longer tested. Scores are scaled 120-180, with approximately 75-76 scored questions across the three scored sections (roughly 52-56 in Logical Reasoning and 26-28 in Reading Comprehension). LSAT-Flex, the pandemic-era short form, has been retired.
 
 This course teaches the post-2024 LSAT as it is: a measurement of careful reading, structural thinking, and stamina under timed conditions. The test does not require outside knowledge. It does not reward memorized facts about law, science, or literature. It rewards the candidate who can identify the structure of an argument, infer only what the text licenses, and read a 450-word passage closely enough to map its argument and answer detail questions within seven minutes.
 
@@ -12,15 +12,15 @@ The aim of this course is operational fluency in two skills: argument analysis (
 Route questions to this track only when they test the post-August-2024 LSAT format. Logical Reasoning question types covered: Must Be True, Most Strongly Supported, Main Point, Method/Argument Structure, Role of a Statement, Flaw, Strengthen, Weaken, Necessary Assumption, Sufficient Assumption, Principle (justify or apply), Parallel Reasoning, Parallel Flaw, Paradox/Resolve. Reading Comprehension question types covered: main point, primary purpose, author attitude, inference, function of paragraph, application to a new scenario, organization, comparative passage relationship. This track is distinct from MBE: the LSAT tests no law, only reasoning and reading. It is distinct from MPRE: there are no rules to memorize, only argument structure and inference. Every question should reward textual citation over instinct.
 
 ## Exam Map and Study Rhythm
-Current LSAT format (each scored section 35 minutes; total scored time ~105 minutes plus a ~70-minute experimental section and breaks; LSAT Writing delivered separately).
+Current LSAT format (each scored section 35 minutes; total scored time ~105 minutes plus a ~35-minute experimental section and breaks; LSAT Argumentative Writing delivered separately).
 
 | Section | Approximate Questions | Study Posture |
 |---|---:|---|
 | Logical Reasoning (Section 1) | 24-26 | Build the question-type triage in the first three weeks |
 | Logical Reasoning (Section 2) | 24-26 | Identical skill set; stamina matters as much as accuracy |
 | Reading Comprehension | 26-28 across 4 passages (one comparative) | Train passage mapping; resist underlining everything |
-| Unscored Experimental | 24-28 | Treat as scored; you cannot reliably identify it |
-| LSAT Writing | Separately scheduled, take-home | Practiced briefly, not endlessly |
+| Unscored Experimental | 24-28 (an extra LR section) or 26-28 (an extra RC section) | Treat as scored; you cannot reliably identify it |
+| LSAT Argumentative Writing | Separately scheduled, online; 15-min prewriting + 35-min essay | Practiced briefly, not endlessly |
 
 Suggested cadence: 3-6 months, 200+ hours, PowerScore LR Bible + RC Bible as doctrinal scaffold, 7Sage analytics for question-type performance, and 30-50 released PrepTests as drilling material. UWorld supplements with explanations. Weekly timed sections from week 3; biweekly full-length proctored exams from week 8. The error log should categorize misses by question type, time spent on the question, and confidence — not just right or wrong.
 
@@ -212,3 +212,9 @@ Suggested cadence: 3-6 months, 200+ hours, PowerScore LR Bible + RC Bible as doc
 **Heuristics that work.** "Most" means more than half. "Some" means at least one. The contrapositive is logically equivalent; the converse is not. The author is not every voice in the passage. Pre-name the flaw before reading the choices. Anticipate the answer shape on Strengthen/Weaken before reading choices.
 
 **Heuristics that fail.** "Whichever choice sounds smartest." "Whichever choice mentions the same topic as the stimulus." "Whichever choice has the most LSAT-y vocabulary." None of these win points.
+
+## Research Notes
+- LSAC, "Types of LSAT Questions" (https://www.lsac.org/lsat/prepare/types-lsat-questions) — confirms the current four-section multiple-choice format (three scored: two LR + one RC, plus one unscored variable section) and a separately delivered writing component.
+- LSAC, "What to Expect Starting With the August 2024 LSAT" (https://www.lsac.org/blog/what-to-expect-starting-with-august-2024-lsat) — official confirmation that Logical Games / Analytical Reasoning was retired and replaced by a second scored Logical Reasoning section beginning August 2024.
+- LSAC, "LSAT Argumentative Writing" (https://www.lsac.org/lsat/about/lsat-argumentative-writing) — the redesigned writing task (debatable issue + three or four perspectives; 15-minute prewriting phase + 35-minute essay phase; unscored for the 2025-2026 cycle).
+- 7Sage, "The New LSAT Writing and How to Prepare" (https://7sage.com/lessons/lsat-writing/lsat-argumentative-writing/the-new-lsat-writing-and-how-to-prepare) — corroborates the two-phase Argumentative Writing structure that replaced the prior single-essay format in July 2024.

@@ -326,7 +326,7 @@ export const colApUsHistoryHigh103TopUpAQuestions: Question[] = makeQuestionBank
   {
     id: 7929021,
     chapter: 'Unit 3: 1754-1800',
-    title: 'Northwest Ordinance of 1787',
+    title: "Statehood and banning slavery in the Northwest",
     prompt: 'The Northwest Ordinance of 1787 was significant because it established what?',
     correct: 'An orderly process for admitting new states as equals and prohibited slavery in the Northwest Territory',
     wrong: [
@@ -538,7 +538,7 @@ export const colApUsHistoryHigh103TopUpAQuestions: Question[] = makeQuestionBank
   {
     id: 7929035,
     chapter: 'Unit 5: 1844-1877',
-    title: 'The Compromise of 1850',
+    title: "Fugitive Slave Act and Northern anger",
     prompt: 'Which provision of the Compromise of 1850 most angered many Northerners?',
     correct: 'A stronger Fugitive Slave Act requiring Northern citizens and officials to help capture escaped enslaved people',
     wrong: [

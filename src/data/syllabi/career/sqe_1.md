@@ -16,7 +16,7 @@ Route questions here when they test SRA-specified knowledge for FLK1 or FLK2, En
 Floe presents four options per question — one correct, three plausible distractors — rather than the SRA's five. Each distractor must remain a serious trap, not filler: a correct rule applied to wrong facts, a wrong rule applied to correct facts, a confusion of two adjacent doctrines, or an ethical breach hiding inside a tactical recommendation. The course voice should sound like a supervising solicitor: firm about ethics, calm about deadlines, impatient with templated answers. SQE 1 sits in the UK English-law domain on Floe; never import US procedural language into an English question.
 
 ## Exam Map and Study Rhythm
-The SQE 1 in its post-2024 format consists of two papers, FLK1 and FLK2, sat on separate days. Each paper is 180 SBAQs delivered as 2 sessions of 90 questions, each session 2 hours 33 minutes long, for roughly 5 hours of testing per paper. The SRA sets the pass mark per sitting (typically in the 56-60% range) by reference to an Angoff-style standard-setting exercise — there is no fixed cut score across sittings. Ethics is integrated into both papers and is not awarded a separate weighting. Taxation and FSMA appear wherever they are realistic. The SRA does not publish topic weights; the specification is the contract.
+The SQE 1 in its post-2024 format consists of two papers, FLK1 and FLK2, sat on separate days. Each paper is 180 SBAQs delivered as 2 sessions of 90 questions, each session 2 hours 33 minutes long, for roughly 5 hours of testing per paper. The SRA sets the pass mark per sitting (recent sittings have landed around 55-57%) by reference to a modified Angoff standard-setting exercise — there is no fixed cut score across sittings. Ethics and Professional Conduct are examined pervasively rather than as a standalone subject, but the April 2025 FLK review (effective 1 September 2025) added Annex 4 confirming that Professional Conduct and Ethics questions — together with money laundering questions, which are examined in FLK1 only — make up roughly 10-20% of each paper. The SRA does not publish topic weights for the substantive subjects; the specification is the contract. Taxation (income tax, CGT, IHT, VAT) and FSMA appear wherever they are realistic.
 
 | Topic | Paper | Study Posture |
 |---|---|---|
@@ -33,7 +33,7 @@ The SQE 1 in its post-2024 format consists of two papers, FLK1 and FLK2, sat on 
 | Land Law | FLK2 | Easements, covenants, mortgages, co-ownership, LRA 2002 registration |
 | Trusts | FLK2 | Express, resulting, constructive; certainties; Trustee Act 2000 duties |
 | Criminal Law and Practice | FLK2 | Offences, PACE 1984, sentencing, evidence basics |
-| Ethics and Professional Conduct | Both | Woven through every topic; never optional |
+| Ethics and Professional Conduct | Both | Woven through every topic; never optional; roughly 10-20% of each paper per Annex 4 |
 
 Suggested cadence: 24-36 weeks of study, 400-600 hours total, daily retrieval practice, and a weekly 90-question mixed paper that mirrors a real session length. Anchor materials to a recognised provider: QLTS, BPP, The University of Law, BarBri, or Kaplan SQE — and use the official SRA practice questions release for calibration. Read once, retrieve three times; reading a textbook without timed retrieval is wallpaper with a statute citation on it.
 
@@ -44,7 +44,7 @@ Suggested cadence: 24-36 weeks of study, 400-600 hours total, daily retrieval pr
 - SRA Principles 1-7 and the Code of Conduct for Solicitors, RELs and RFLs
 - Conflict of interest under Code paragraphs 6.1-6.2 and the limited consent exception
 - Confidentiality (paragraph 6.3) and disclosure (paragraph 6.4) and where they collide
-- Money laundering, proceeds of crime, source-of-funds checks, tipping off under POCA 2002
+- Money laundering, proceeds of crime, source-of-funds checks, tipping off under POCA 2002 and the Money Laundering Regulations 2017 (note: money laundering is examined in FLK1 only, though the conduct principles are pervasive)
 - Undertakings, duties to third parties, and the overriding duty to the court (paragraph 1.4)
 - Equality, diversity, and inclusion obligations
 
@@ -78,7 +78,7 @@ Suggested cadence: 24-36 weeks of study, 400-600 hours total, daily retrieval pr
 - Share issues, debentures, fixed and floating charges, Companies House registration within 21 days
 - Insolvency Act 1986: administration, CVA, liquidation; preferences (section 239), transactions at undervalue (section 238), floating charge avoidance (section 245), wrongful trading (section 214)
 - Derivative claim under Companies Act 2006 section 260
-- Business taxation: corporation tax, income tax on sole traders and partners, VAT registration threshold £90,000 (2024-25), CGT business asset disposal relief at 10% up to £1m lifetime, stamp duty on shares
+- Business taxation: corporation tax, income tax on sole traders and partners, VAT registration threshold £90,000 (current), CGT business asset disposal relief on gains up to the £1m lifetime limit — note the rate is no longer 10%: it rose to 14% from 6 April 2025 and to 18% from 6 April 2026 (still below the main CGT rates), stamp duty on shares
 
 **Applied legal skills**
 - Choose the right vehicle for a client's commercial goal and tax position
@@ -89,7 +89,7 @@ Suggested cadence: 24-36 weeks of study, 400-600 hours total, daily retrieval pr
 - Calling a section 175 conflict authorisation when the conflict is in fact a section 177 personal interest declaration — different procedure, different threshold
 - Treating a written resolution as available for removing a director under section 168 — section 288(2) excludes it; physical meeting required
 - Confusing administration (Insolvency Act Schedule B1) with CVA (Part I) — different purposes, different moratoria, different stakeholder votes
-- Treating CGT business asset disposal relief as automatic — qualifying conditions (5% holding, officer or employee, 2-year holding) must be met before the 10% rate applies
+- Treating CGT business asset disposal relief as automatic — qualifying conditions (5% holding, officer or employee, 2-year holding) must be met before the reduced rate applies (14% from 6 April 2025, 18% from 6 April 2026; not the old 10%)
 
 **Authoritative sources**
 - Companies Act 2006; Insolvency Act 1986; Partnership Act 1890; LLP Act 2000
@@ -169,7 +169,7 @@ Suggested cadence: 24-36 weeks of study, 400-600 hours total, daily retrieval pr
 **Core questions:** How does a residential or commercial conveyance flow from instructions to completion? How are interests in land created, protected, and registered? How do client account rules prevent disaster?
 
 **Key concepts**
-- Residential conveyancing: instructions, drafting, pre-contract enquiries, official copies, searches (local, water, planning, environmental, chancel), mortgage offer, exchange with 10% deposit, completion using Standard Conditions of Sale 5th edition, transfer (Form TR1), HM Land Registry registration, SDLT (0/£250k/various bands; 5% surcharge for additional dwellings)
+- Residential conveyancing: instructions, drafting, pre-contract enquiries, official copies, searches (local, water, planning, environmental, chancel), mortgage offer, exchange with 10% deposit, completion using Standard Conditions of Sale 5th edition, transfer (Form TR1), HM Land Registry registration, SDLT (residential nil-rate band reverted to £125,000 from 1 April 2025, then progressive 2/5/10/12% bands; 5% higher rate for additional dwellings since 31 October 2024)
 - Commercial conveyancing: FRI leases (full repairing and insuring), alienation, alterations, rent review, break clauses, service charge, dilapidations; Landlord and Tenant Act 1954 Part II security of tenure and contracting-out procedure
 - Land Registration Act 2002 Schedule 3 overriding interests; notices and restrictions on the register
 - Section 2 Law of Property (Miscellaneous Provisions) Act 1989 — contracts for the disposition of an interest in land must be in writing, signed by both parties, and incorporate all expressly agreed terms (or be by exchange of identical signed parts)
@@ -322,3 +322,13 @@ Suggested cadence: 24-36 weeks of study, 400-600 hours total, daily retrieval pr
 **Practice deliverables**
 - Two timed half-papers per fortnight with full postmortems
 - Error log spreadsheet sorted by topic, sub-topic, and distractor family
+
+## Research Notes
+Authoritative sources consulted when auditing and updating this syllabus (current as of June 2026):
+- SRA SQE Assessment topics — the canonical FLK1/FLK2 subject-area list and naming conventions: https://sqe.sra.org.uk/about/sqe-assessment-topics
+- SRA SQE1 Assessment Specification — exam format, five-option SBAQ, structure: https://sqe.sra.org.uk/assessments/sqe1-assessments/sqe1-specification
+- SRA news item, "Updated SQE Assessment Specifications published following FLK review" (effective 1 September 2025) — confirms clarificatory-only FLK changes, Annex 4 Professional Conduct/Ethics and money-laundering percentages, and that money laundering is examined in FLK1 only: https://sqe.sra.org.uk/news-item/2025/04/30/updated-sqe-assessment-specifications-published-following-flk-review
+- Deloitte TaxScape, "CGT rates and BADR and Investors' Relief" (Autumn Budget 2024) — Business Asset Disposal Relief rate rises to 14% from 6 April 2025 and 18% from 6 April 2026: https://taxscape.deloitte.com/measures-autumn-budget-2024/cgt-rates-and-badr-and-investors-relief.aspx
+- Deloitte TaxScape, "SDLT — Residential property thresholds" — residential nil-rate band reverts to £125,000 from 1 April 2025: https://taxscape.deloitte.com/measures-autumn-budget-2024/stamp-duty-land-tax---residential-property-thresholds.aspx
+- Practical Law, "SDLT surcharge for additional dwellings increased to 5%" (from 31 October 2024): https://uk.practicallaw.thomsonreuters.com/w-044-5092
+- House of Commons Library, "The end of REUL?" — retained EU law became "assimilated law" from 1 January 2024 under the REUL Act 2023: https://commonslibrary.parliament.uk/research-briefings/cbp-9957/

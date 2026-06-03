@@ -4,7 +4,7 @@
 ## Course Aim
 A CAMS-certified AML officer is the person sitting between a payment system and the public. The job is risk scoring (who is this customer, how do they make money, why this transaction?), transaction monitoring (which alerts are noise, which are typology hits?), sanctions screening (does this name match an SDN, an SSI, or a generic false positive?), SAR/STR filing (a narrative an FIU can actually use), and program governance (training, audit, the right escalation path) — under the FATF 40 Recommendations and a patchwork of national laws (US BSA + USA PATRIOT Act + AMLA 2020, EU AMLD 4/5/6, UK MLR 2017, and dozens more). The CAMS exam tests the whole stack because the role demands it.
 
-The CAMS exam (ACAMS, 120 multiple-choice items, 3.5 hours, scaled passing score around 75) follows the current Study Guide (6th Edition). The four domains weight roughly: Risks and Methods 25-30%, Compliance Standards 30-35%, AML Compliance Program 30-35%, Investigations 25-30%. Pacing ~1.75 minutes per item — never skip; mark and return only with deliberate triage.
+The CAMS exam (ACAMS, 120 multiple-choice/multiple-select items, 3.5 hours, scaled passing score 75) follows the current ACAMS CAMS Study Guide (7th Edition). The four domains carry official weights: Risks and Methods of ML/TF ~26%, Compliance Standards for AML/CFT ~25%, AML/CFT and Sanctions Compliance Programs ~28%, Conducting or Supporting AML Investigations ~21%. Pacing ~1.75 minutes per item — never skip; mark and return only with deliberate triage.
 
 This syllabus trains the four habits that distinguish a working AML officer from a checklist filler: typology recognition (trade-based, hawala, real estate, virtual assets, NPO abuse, beneficial-ownership obfuscation, sanctions evasion), risk-based-approach thinking (calibrated to customer/product/geography/channel, not blanket de-risking), regulator-fluent communication (writing a SAR an FIU will read, talking to an examiner without panic, sharing information lawfully via 314(b) or Joint Money Laundering Intelligence Taskforces), and the moral steadiness to make a defensible recommendation under commercial pressure.
 
@@ -14,14 +14,14 @@ The goal is a working AML toolkit and a passing score: FATF-fluent risk thinking
 Route questions here when they cover ACAMS exam content specifically — AML/CTF, not fraud (CFE) and not GDPR (CIPP/E). CAMS centers on the financial-crime control framework: stages of laundering, typologies, FATF and national laws, program design, and investigations. When a fact pattern is really about predicate fraud detection (lapping, billing schemes), route to CFE. When it is about personal data handling rather than financial crime control, route to CIPP/E. The voice should respect that AML mistakes hurt real people — both sanctioned victims and wrongly de-banked customers — and that de-risking is itself a risk.
 
 ## Exam Map and Study Rhythm
-120 MCQ, 3.5 hours, ~75 scaled passing. Canonical preparation: ACAMS CAMS Certification Study Guide (6th Ed) plus the ACAMS practice exam. Typical cadence: 100-200 hours over 3-6 months; ACAMSExamProvider and other vendor practice question banks add fact-pattern reps.
+120 MCQ/multi-select, 3.5 hours, 75 scaled passing. Canonical preparation: ACAMS CAMS Certification Study Guide (7th Ed) plus the ACAMS practice exam. Typical cadence: 100-200 hours over 3-6 months; ACAMSExamProvider and other vendor practice question banks add fact-pattern reps.
 
 | Domain | Weight | What It Tests | Study Posture |
 |---|---:|---|---|
-| Risks and Methods of ML/TF | 25-30% | Placement/layering/integration; predicate crimes; typologies — trade-based ML, hawala/IVTS, real estate, shell/shelf companies, beneficial ownership obfuscation, cash-intensive businesses, NPO abuse, virtual assets/crypto, prepaid cards, smurfing/structuring, sanctions evasion, financial inclusion balance, PEP risk | Typology fluency with fact patterns; predicate offense flashcards |
-| Compliance Standards | 30-35% | FATF 40 Recommendations + Immediate Outcomes IO1-IO11, Wolfsberg Principles, Basel CDD Principles, EU AMLD 4/5/6 + AML Regulation/AMLA, US BSA + USA PATRIOT Act + AMLA 2020 incl. Corporate Transparency Act, UK MLR 2017, sanctions (OFAC SDN/SSI, EU restrictive measures, UN Security Council resolutions) | Crosswalk national rules to FATF; statute one-pagers |
-| AML Compliance Program | 30-35% | Risk-Based Approach (RBA), KYC/CDD/EDD with customer risk classifications, beneficial ownership 25% threshold, PEP EDD, sanctions screening (real-time + batch + delta + filter tuning), transaction monitoring (rule-based + behavioral + AI), SAR/STR filing, recordkeeping 5+ years, training, independent audit, Three Lines of Defense | Tier customer book and justify EDD; tune monitoring scenarios |
-| Investigations | 25-30% | Internal investigations, regulator interactions, 314(a)/(b), Joint AML Task Forces, MLAT, FinCEN designations, ACAMS investigation methodology | SAR narrative rubric; mock regulator findings response |
+| Risks and Methods of ML/TF | ~26% | Placement/layering/integration; predicate crimes; typologies — trade-based ML, hawala/IVTS, real estate, shell/shelf companies, beneficial ownership obfuscation, cash-intensive businesses, NPO abuse, virtual assets/crypto, prepaid cards, smurfing/structuring, sanctions evasion, financial inclusion balance, PEP risk | Typology fluency with fact patterns; predicate offense flashcards |
+| Compliance Standards for AML/CFT | ~25% | FATF 40 Recommendations + Immediate Outcomes IO1-IO11, Wolfsberg Principles, Basel CDD Principles, EU AML package (AMLR 2024/1624 + AMLD6 2024/1640 + AMLA), legacy AMLD 4/5, US BSA + USA PATRIOT Act + AMLA 2020, UK MLR 2017, sanctions (OFAC SDN/SSI, EU restrictive measures, UN Security Council resolutions) | Crosswalk national rules to FATF; statute one-pagers |
+| AML/CFT and Sanctions Compliance Programs | ~28% | Risk-Based Approach (RBA), KYC/CDD/EDD with customer risk classifications, beneficial ownership 25% threshold, PEP EDD, sanctions screening (real-time + batch + delta + filter tuning), transaction monitoring (rule-based + behavioral + AI), SAR/STR filing, recordkeeping 5+ years, training, independent audit, Three Lines of Defense | Tier customer book and justify EDD; tune monitoring scenarios |
+| Conducting or Supporting AML Investigations | ~21% | Internal investigations, regulator interactions, 314(a)/(b), Joint AML Task Forces, MLAT, FinCEN designations, ACAMS investigation methodology | SAR narrative rubric; mock regulator findings response |
 
 ## Chapter 1: The Three Stages and the Modern ML Reality
 **Core questions:** What are placement, layering, and integration, and why do practitioners increasingly say "the stages overlap" rather than march in order?
@@ -55,7 +55,7 @@ Route questions here when they cover ACAMS exam content specifically — AML/CTF
 - Hawala/hundi/fei-chien and other Informal Value Transfer Systems (IVTS): no value moves across borders, settlement nets out, regulation varies (US licensed money transmitter; UK FCA EMI; many unlicensed providers globally)
 - Real estate ML: shell-owned all-cash purchases, FinCEN Geographic Targeting Orders (US major metros), broker due diligence, lawyer enabling
 - Shell companies vs shelf companies: shell = no operations; shelf = aged, registered to appear established
-- Beneficial-ownership obfuscation: layered legal entities, nominee directors, bearer shares (mostly abolished but still encountered), complex trusts, US CTA/FinCEN BOI reporting requirements
+- Beneficial-ownership obfuscation: layered legal entities, nominee directors, bearer shares (mostly abolished but still encountered), complex trusts; FATF R.24/R.25 transparency standards and registers (note the US CTA BOI regime was narrowed to foreign reporting companies only by the March 2025 FinCEN interim final rule)
 - NPO/charity abuse: cross-border transfers to conflict zones; FATF recognizes only a subset of NPOs as high-risk; financial inclusion balance
 - Virtual assets: mixers/tumblers, peel chains, chain-hopping (BTC → privacy coin → ETH), DeFi exploits, non-compliant exchanges, FATF Travel Rule for VASPs, US BSA application to VASPs, EU MiCA
 - PEP typologies: foreign vs domestic vs international organization PEPs; family + close associates; senior management approval, EDD
@@ -68,7 +68,7 @@ Route questions here when they cover ACAMS exam content specifically — AML/CTF
 **Common traps**
 - **TBML signals.** Invoice price wildly outside market range, goods/shipment route inconsistent with business purpose, payments from unrelated third parties, structured letter-of-credit terms.
 - **Hawala vs MSB.** Both move value; hawala settles informally and is often unlicensed. Detection signal: customer wires to/from individuals in jurisdictions where banking is impractical.
-- **Beneficial ownership thresholds.** FATF guidance and most national rules use a 25% direct/indirect threshold for ownership, and a separate "control" test. US CTA/FinCEN BOI uses 25% ownership or substantial control.
+- **Beneficial ownership thresholds.** FATF guidance and most national rules use a 25% direct/indirect threshold for ownership, and a separate "control" test. The US CDD Rule (the FI's account-opening obligation) uses a 25% ownership prong plus a substantial-control prong; the CTA reporting regime used the same 25%-or-substantial-control test before being narrowed to foreign reporting companies in March 2025.
 - **NPO risk.** Most NPOs are low risk; FATF criticizes blanket NPO de-risking. Focus on cross-border conflict-zone transfers, opacity of beneficiaries, governance gaps.
 - **Crypto pseudonymity.** Bitcoin is pseudonymous, not anonymous. Mixers and chain-hopping increase opacity; Travel Rule and VASP KYC reduce it.
 
@@ -101,10 +101,11 @@ Route questions here when they cover ACAMS exam content specifically — AML/CTF
 **Core questions:** Where do US, EU, and UK rules align, and where will the exam try to trip you on the differences?
 
 **Key concepts**
-- US Bank Secrecy Act + USA PATRIOT Act: CTR (>$10,000 cash), SAR thresholds ($5,000 for FIs / $2,000 for MSBs) and timing (30 days from initial detection, with 60-day extension), CDD Rule, beneficial ownership reporting under Corporate Transparency Act (effective Jan 2024), USA PATRIOT Act 311 (special measures), 312 (correspondent banking EDD), 313 (prohibition on US correspondent accounts for foreign shell banks), 314(a) (law enforcement → FIs), 314(b) (FI ↔ FI), 319 (forfeiture jurisdiction), Travel Rule (>$3,000)
-- AMLA 2020 (Anti-Money Laundering Act): AML whistleblower program (10-30% bounty, anti-retaliation), expanded penalties, Corporate Transparency Act (BOI to FinCEN), priorities of AML (NPAs)
-- EU AMLD 4/5/6: PEPs, central UBO registers (post-WM/Sovim CJEU access limits), virtual assets (AMLD 5), predicate-offense harmonization (AMLD 6), corporate criminal liability
-- EU AML Single Rulebook: AML Regulation (directly applicable) + AMLA (the new EU AML Authority based in Frankfurt)
+- US Bank Secrecy Act + USA PATRIOT Act: CTR (>$10,000 cash), SAR thresholds ($5,000 for FIs / $2,000 for MSBs) and timing (30 days from initial detection, with 60-day extension), CDD Rule, beneficial ownership reporting under the Corporate Transparency Act (BOI rule effective Jan 2024 — but see the March 2025 FinCEN interim final rule below), USA PATRIOT Act 311 (special measures), 312 (correspondent banking EDD), 313 (prohibition on US correspondent accounts for foreign shell banks), 314(a) (law enforcement → FIs), 314(b) (FI ↔ FI), 319 (forfeiture jurisdiction), Travel Rule (>$3,000)
+- CTA status (current): FinCEN's interim final rule of March 2025 exempts all U.S.-formed entities ("domestic reporting companies") and U.S. persons from BOI reporting; the term "reporting company" now means only foreign entities registered to do business in a U.S. state/tribal jurisdiction, and even those need not report any U.S.-person beneficial owners. Know that BSA CDD-Rule beneficial-ownership collection at account opening is a separate obligation that still applies to financial institutions.
+- AMLA 2020 (Anti-Money Laundering Act): AML whistleblower program (10-30% bounty, anti-retaliation), expanded penalties, Corporate Transparency Act (BOI to FinCEN — now narrowed per the 2025 rule above), national AML/CFT priorities published by FinCEN
+- EU AML package (2024): AMLR — Regulation (EU) 2024/1624, the directly applicable single rulebook — plus AMLD6 (Directive (EU) 2024/1640) and the new AML Authority (AMLA), operational in Frankfurt since 1 July 2025; AMLR and AMLD6 apply from 10 July 2027. Do not confuse the 2024 AMLD6 with the earlier "6AMLD" (Directive (EU) 2018/1673), which harmonized 22 predicate offenses and criminal liability
+- Legacy directives still tested: AMLD4 (risk-based approach, central UBO registers) and AMLD5 (virtual-asset providers, register access, prepaid limits); note the WM/Sovim CJEU ruling restricting general-public UBO-register access
 - UK MLR 2017 (Money Laundering Regulations), OFSI sanctions, FCA expectations, Joint Money Laundering Intelligence Taskforce (JMLIT)
 - Sanctions: OFAC SDN list, 50% Rule (aggregation of indirect ownership), sectoral sanctions (SSI), secondary sanctions, country-based (Iran/Cuba/North Korea/Syria/Russia post-2022 expanded), EU consolidated list, UK OFSI, UN Security Council resolutions (1267 ISIL/Al-Qaida, 1373 terrorism, 1718 DPRK, 2231 Iran)
 
@@ -118,7 +119,8 @@ Route questions here when they cover ACAMS exam content specifically — AML/CTF
 - **SAR filing clock.** 30 days from initial detection of facts that may constitute a basis for filing; 60-day extension if no subject identified. Continuing-activity SARs every 90 days.
 - **OFAC 50% Rule.** A non-SDN entity owned 50% or more (aggregating direct + indirect interests of one or more blocked persons) is itself blocked by operation of law, even without listing.
 - **Secondary sanctions.** Apply to non-US persons engaging in specified conduct with sanctioned parties. Not the same as primary sanctions.
-- **AMLD 6 vs predicate list.** AMLD 6 harmonizes a list of 22 predicate offenses; member states implement nationally.
+- **Two different "AMLD6"s.** The 2018 "6AMLD" (Directive 2018/1673) harmonized 22 predicate offenses and criminal liability. The 2024 AMLD6 (Directive 2024/1640) is part of the new EU AML package (supervision, FIUs, UBO registers) and applies from 10 July 2027. The exam may use either; read the date/context.
+- **CTA domestic exemption.** Since the March 2025 FinCEN interim final rule, U.S.-formed companies and U.S. persons no longer file CTA beneficial-ownership reports; only foreign reporting companies do, and they exclude U.S.-person owners. A FI's own CDD-Rule beneficial-ownership collection is unaffected.
 
 **Authoritative sources:** FinCEN regulations; OFAC SDN/SSI; EU AMLD/AMLR; UK MLR 2017; HM Treasury OFSI guidance.
 
@@ -207,3 +209,10 @@ Pacing target: ~1.75 minutes per item. Strategy: never skip; mark and review onl
 - One 60-item mixed drill across all domains in final 2 weeks
 - Personal exam-day playbook with timing checkpoints
 - Error log review keyed to domain and typology
+
+## Research Notes
+- ACAMS — CAMS Certification page (official exam format, 120 items, 3.5 hours, scaled passing 75; current 7th-edition study guide): https://www.acams.org/en/certifications/cams-certification
+- Current CAMS four-domain weights (~26% Risks & Methods / ~25% Compliance Standards / ~28% Programs / ~21% Investigations), confirmed across prep sources: https://testpreptraining.com/blog/certified-anti-money-laundering-specialist-cams-study-guide/ and https://camsprep.com/how-to-pass-cams-exam/
+- FinCEN news release — March 2025 interim final rule removing BOI reporting for U.S. companies and U.S. persons, redefining "reporting company" to foreign entities only: https://www.fincen.gov/news/news-releases/fincen-removes-beneficial-ownership-reporting-requirements-us-companies-and-us
+- FinCEN BOI program/FAQ landing pages (current CTA status): https://www.fincen.gov/boi and https://www.fincen.gov/boi-faqs
+- EU AML package — AMLA operational since 1 July 2025 (Frankfurt); AMLR (Reg. 2024/1624) and AMLD6 (Dir. 2024/1640) apply from 10 July 2027; distinct from the 2018 "6AMLD" (Dir. 2018/1673) on predicate offenses: https://financialregulations.eu/blog/eu-aml-package-amla-amlr-guide and https://www.amla.europa.eu/about-amla_en

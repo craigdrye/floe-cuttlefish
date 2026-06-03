@@ -23,6 +23,12 @@ import { brainBurnersOerBatch2Questions } from './brainBurnersOerBatch2'
 import { brainBurnersWorkoutGeneratedQuestions } from './brainBurnersWorkoutGenerated'
 import { topUpCareerAgentGeneratedCatalog } from './careerAgentGenerated'
 import { CAREER_GENERATED_23 } from './careerGenerated23'
+import { applyCareerDedupExclusions } from './careerDedupExclusions'
+import { publicSpeakingPromptQuestions } from './publicSpeakingPromptRound'
+import { promptQuestions as plumbingPromptQuestions } from './plumbingPromptRound'
+import { promptQuestions as cfaEthicsPromptQuestions } from './cfaEthicsPromptRound'
+import { promptQuestions as cfaL2EthicsPromptQuestions } from './cfaL2EthicsPromptRound'
+import { CAREER_POPULATE } from './careerPopulateGenerated'
 import {
   careerLabsClinicalResearchQuestions,
   careerLabsMedicalQuestions,
@@ -1987,5 +1993,17 @@ export function buildCareerQuestionCatalog(): Record<string, Question[]> {
   for (const [trackId, generated] of Object.entries(CAREER_GENERATED_23)) {
     toppedUp[trackId] = [...(toppedUp[trackId] ?? []), ...generated]
   }
-  return enrichCareerHints(enrichCareerQuestionQuality(toppedUp))
+  // Prompt-experiment rateable lessons: prepend generated batches so they surface as the
+  // course's first lesson (their own subTopic clusters them into one lesson).
+  toppedUp['publicSpeaking'] = [...publicSpeakingPromptQuestions, ...(toppedUp['publicSpeaking'] ?? [])]
+  toppedUp['plumbingBasics'] = [...plumbingPromptQuestions, ...(toppedUp['plumbingBasics'] ?? [])]
+  toppedUp['cfaLevelOne'] = [...cfaEthicsPromptQuestions, ...(toppedUp['cfaLevelOne'] ?? [])]
+  toppedUp['cfaLevelTwo'] = [...cfaL2EthicsPromptQuestions, ...(toppedUp['cfaLevelTwo'] ?? [])]
+  // Mass-populate: append generated questions to their existing chapters/lessons across adult courses.
+  for (const [populateTrackId, populateQs] of Object.entries(CAREER_POPULATE)) {
+    if (populateQs && populateQs.length) toppedUp[populateTrackId] = [...(toppedUp[populateTrackId] ?? []), ...populateQs]
+  }
+
+  const enriched = enrichCareerHints(enrichCareerQuestionQuality(toppedUp))
+  return applyCareerDedupExclusions(enriched)
 }

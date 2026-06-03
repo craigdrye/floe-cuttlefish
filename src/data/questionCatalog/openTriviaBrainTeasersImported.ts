@@ -10,7 +10,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334001,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 1",
+    title: "Counting surviving animals",
     prompt: "A farmer had 12 sheep and 3 cows. All of the animals except 9 sheep died. How many animals did he have left in his farm?",
     correct: "9 sheep",
     wrong: [["5 cows and 1 sheep","The answer \"5 cows and 1 sheep\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A farmer had 12 sheep and 3 cows. All of the animals except 9 sheep died. How many animals did he ha.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["2 cows","The answer \"2 cows\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A farmer had 12 sheep and 3 cows. All of the animals except 9 sheep died. How many animals did he ha.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["none","The answer \"none\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A farmer had 12 sheep and 3 cows. All of the animals except 9 sheep died. How many animals did he ha.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -30,7 +30,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334003,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 3",
+    title: "Marrying a widow’s sister",
     prompt: "Can a Roman Catholic man from California marry his widows sister who is from Texas?",
     correct: "No",
     wrong: [["Yes","The answer \"Yes\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Can a Roman Catholic man from California marry his widows sister who is from Texas?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -40,7 +40,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334004,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 4",
+    title: "Who is in the photograph",
     prompt: "An old man was looking at a photograph of a young man. Somebody asked him who it was. The mans answer was the following: Brothers and sisters, I have none. But that mans father is my fathers son. Who was in the photograph?",
     correct: "His son",
     wrong: [["His cousin","The answer \"His cousin\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: An old man was looking at a photograph of a young man. Somebody asked him who it was. The mans answe.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["His grandfather","The answer \"His grandfather\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: An old man was looking at a photograph of a young man. Somebody asked him who it was. The mans answe.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["His nephew","The answer \"His nephew\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: An old man was looking at a photograph of a young man. Somebody asked him who it was. The mans answe.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -50,7 +50,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334005,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 5",
+    title: "The shepherd paradox",
     prompt: "A shepherd from a village tended the sheep of those of his fellow villagers who did not tend their own. However, he did not tend the sheep of those villagers who tended their own sheep. In that village, there was only one shepherd and he also had several sheep. Can all this be true?",
     correct: "No",
     wrong: [["Yes","The answer \"Yes\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: A shepherd from a village tended the sheep of those of his fellow villagers who did not tend their o.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -60,7 +60,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334006,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 6",
+    title: "New Year’s in summer",
     prompt: "A famous story begins like that, It was a clear summer day and my family was preparing dinner for the New Years Eve. Can this story be true?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: A famous story begins like that, It was a clear summer day and my family was preparing dinner for th.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -70,7 +70,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334007,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 7",
+    title: "Five apples for five kids",
     prompt: "In a basket there are five apples. We give the five apples to five kids so that each kid receives an apple. However, in the basket there is still one apple. Is this possible?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: In a basket there are five apples. We give the five apples to five kids so that each kid receives an.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -80,7 +80,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334008,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 8",
+    title: "Birthday across two years",
     prompt: "Two days ago my son was three years old and next year he will be 6. This could be a correct statement.",
     correct: "True",
     wrong: [["False","The answer \"False\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Two days ago my son was three years old and next year he will be 6. This could be a correct statemen.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -90,7 +90,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334009,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 9",
+    title: "Question for truth-tellers and liars",
     prompt: "The single difference between the two cities A and B was that the citizens of A always said the truth, while the citizens of B never did. Once, a man who had never been to either city arrived at one of them. Which question should the man have asked in order to identify the city he was in? Have in mind, that people from A often visited their friends in B and vice versa.",
     correct: "Are you a citizen of this city?",
     wrong: [["How old are you?","The answer \"How old are you?\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: The single difference between the two cities A and B was that the citizens of A always said the trut.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Are you married?","The answer \"Are you married?\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: The single difference between the two cities A and B was that the citizens of A always said the trut.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Is this city A ?","The answer \"Is this city A ?\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: The single difference between the two cities A and B was that the citizens of A always said the trut.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -100,7 +100,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334010,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 10",
+    title: "Comparing right-triangle areas",
     prompt: "You have two right triangles. The sides of the first one are 3 m, 4 m and 5 m. The sides of the second are 3 m, 4 m and 7 m. The area of the second triangle is bigger.",
     correct: "False",
     wrong: [["True","The answer \"True\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You have two right triangles. The sides of the first one are 3 m, 4 m and 5 m. The sides of the seco.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -120,7 +120,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334012,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 12",
+    title: "Passing second place in a race",
     prompt: "If you were running a race and passed the person in second place, what place would you be in?",
     correct: "2nd",
     wrong: [["1st","The answer \"1st\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: If you were running a race and passed the person in second place, what place would you be in?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["3rd","The answer \"3rd\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: If you were running a race and passed the person in second place, what place would you be in?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["Out of the race","The answer \"Out of the race\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: If you were running a race and passed the person in second place, what place would you be in?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -130,7 +130,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334013,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 13",
+    title: "Look-and-say sequence",
     prompt: "The sequence is not adding or multiplying in the usual way: 1, 11, 21, 1211, 111221, 312211, 13112221. Read each term aloud as a description of the term before it; what comes next?",
     correct: "1113213211",
     wrong: [["131122211211","This appends a new-looking chunk to the old term instead of replacing the whole term with a spoken description.","Describe every run in 13112221 from left to right."],["11221311","This bundles digits by type instead of preserving the order of the groups as they appear.","The sequence cares about runs: a 1, then a 3, then two 1s, then three 2s, then a 1."],["31221113112221","This repeats earlier material rather than saying what the newest term contains.","Only the immediately previous term matters."],["111312211","This gets the opening idea but loses the run of three 2s near the end.","After the two 1s, the previous term has three 2s in a row."],["3113213211","This starts by counting three 1s, but the previous term begins with a single 1 before the 3.","Keep adjacent groups separate; do not count all 1s at once."]],
@@ -147,7 +147,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334014,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 14",
+    title: "Largest value from three digits",
     prompt: "You may use the digits 1, 2, and 3 once each, and you are allowed to make ordinary exponent notation with them. Which choice is the largest value you can write?",
     correct: "10,460,353,203",
     wrong: [["321","This is the largest plain three-digit arrangement, but the wording allows more than just arranging the digits in a row.","Look for a compact notation that makes a much larger value."],["2,147,483,648","This is 2^31, a clever use of the digits, but it is still smaller than 3^21.","Compare the actual values, not just the height of the exponent."],["1,728","This is 12^3, which uses the digits neatly but is far smaller than billions.","A bigger base and a much bigger exponent win here."],["961","This is 31^2, but squaring a two-digit number is not enough to beat 3 raised to the 21st power.","Try putting the largest digit in the base and the other two digits in the exponent."],["123","This keeps the digits in order, but the teaser is asking for the largest value, not the tidiest-looking number.","The phrase 'write with' leaves room for mathematical notation."]],
@@ -164,7 +164,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334015,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 15",
+    title: "How many girls at the party",
     prompt: "John went to a party one night. The next day he was asked if he met a lot people at the gathering. Figure it out for yourself, John said. Of the girls I spoke to, all but two were blondes, all but two were brunettes, and all but two were redheads. How many girls did he talk to?",
     correct: "3",
     wrong: [["6","The answer \"6\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: John went to a party one night. The next day he was asked if he met a lot people at the gathering. F.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["4","The answer \"4\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: John went to a party one night. The next day he was asked if he met a lot people at the gathering. F.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["2","The answer \"2\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: John went to a party one night. The next day he was asked if he met a lot people at the gathering. F.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -174,7 +174,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334016,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 16",
+    title: "Coins dated before BC labels",
     prompt: "A kid found two old coins. The first coin said it was minted in 43 BC, while the other said it was minted during the reign of Emperor Nicholas I. Which of the coins was fake?",
     correct: "Both",
     wrong: [["Neither one","The answer \"Neither one\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A kid found two old coins. The first coin said it was minted in 43 BC, while the other said it was m.","Before calculating, ask what the question is really counting, ordering, or comparing."],["The one minted during the reign of Emperor Nicholas I","The answer \"The one minted during the reign of Emperor Nicholas I\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A kid found two old coins. The first coin said it was minted in 43 BC, while the other said it was m.","Before calculating, ask what the question is really counting, ordering, or comparing."],["The one minted in 43 BC","The answer \"The one minted in 43 BC\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A kid found two old coins. The first coin said it was minted in 43 BC, while the other said it was m.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -184,7 +184,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334017,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 17",
+    title: "Quiz score reaching zero",
     prompt: "A contestant on a TV show had to answer 26 questions. For each correct answer he received 8 points, while a wrong answer penalized him 5 points. How many answers did the man answer correctly, bearing in mind that he eventually had 0 points?",
     correct: "10",
     wrong: [["12","The answer \"12\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A contestant on a TV show had to answer 26 questions. For each correct answer he received 8 points, .","Before calculating, ask what the question is really counting, ordering, or comparing."],["8","The answer \"8\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A contestant on a TV show had to answer 26 questions. For each correct answer he received 8 points, .","Before calculating, ask what the question is really counting, ordering, or comparing."],["16","The answer \"16\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A contestant on a TV show had to answer 26 questions. For each correct answer he received 8 points, .","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -194,7 +194,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334018,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 18",
+    title: "Spotting a losing bet",
     prompt: "Lets suppose that I offer you a bet under the following conditions: I bet $1 and claim that if you give me $5 I will give you $99 in return. Will you gain something from this bet?",
     correct: "No",
     wrong: [["Yes","The answer \"Yes\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Lets suppose that I offer you a bet under the following conditions: I bet $1 and claim that if you g.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -204,7 +204,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334019,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 19",
+    title: "A number between 2 and 3",
     prompt: "You can put something between the digits 2 and 3 so that the resultant number is bigger than 2 and smaller than 3.",
     correct: "True",
     wrong: [["False","The answer \"False\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You can put something between the digits 2 and 3 so that the resultant number is bigger than 2 and s.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -214,7 +214,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334020,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 20",
+    title: "Letters of the counting numbers",
     prompt: "A row consists of 10 letters. The first six are - Z, O, T, T, F, F. Which is the tenth letter?",
     correct: "N",
     wrong: [["T","The answer \"T\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A row consists of 10 letters. The first six are - Z, O, T, T, F, F. Which is the tenth letter?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["E","The answer \"E\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A row consists of 10 letters. The first six are - Z, O, T, T, F, F. Which is the tenth letter?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["S","The answer \"S\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A row consists of 10 letters. The first six are - Z, O, T, T, F, F. Which is the tenth letter?.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -224,7 +224,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334021,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 21",
+    title: "Square versus circle area",
     prompt: "You have a square and a circle and the perimeter of the square is equal to the circumference of the circle. Which of the two figures covers a bigger area?",
     correct: "The circle",
     wrong: [["The square","The answer \"The square\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You have a square and a circle and the perimeter of the square is equal to the circumference of the .","Before calculating, ask what the question is really counting, ordering, or comparing."],["No conclusion can be drawn from the given information.","The answer \"No conclusion can be drawn from the given information.\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You have a square and a circle and the perimeter of the square is equal to the circumference of the .","Before calculating, ask what the question is really counting, ordering, or comparing."],["Both cover the same are.","The answer \"Both cover the same are.\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You have a square and a circle and the perimeter of the square is equal to the circumference of the .","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -254,7 +254,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334024,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 24",
+    title: "Reading a vanity license plate",
     prompt: "At the beginning of the day, I was behind a car at a stoplight, whose vanity plate read: 4SBWIU. What is the driver of this car most likely a fan of?",
     correct: "Movies",
     wrong: [["NASCAR","The answer \"NASCAR\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: At the beginning of the day, I was behind a car at a stoplight, whose vanity plate read: 4SBWIU. Wha.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Fly Fishing","The answer \"Fly Fishing\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: At the beginning of the day, I was behind a car at a stoplight, whose vanity plate read: 4SBWIU. Wha.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Sports","The answer \"Sports\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: At the beginning of the day, I was behind a car at a stoplight, whose vanity plate read: 4SBWIU. Wha.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -264,7 +264,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334025,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 25",
+    title: "Tennis vanity plate puzzle",
     prompt: "My first stop was the supermarket. When I had completed my shopping and was in the parking lot, I spied this snazzy auto with the following vanity plate: 10S42. What sport is the driver of this vehicle most likely a fan of?",
     correct: "Tennis",
     wrong: [["Golf","The answer \"Golf\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: My first stop was the supermarket. When I had completed my shopping and was in the parking lot, I sp.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Badminton","The answer \"Badminton\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: My first stop was the supermarket. When I had completed my shopping and was in the parking lot, I sp.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Bowling","The answer \"Bowling\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: My first stop was the supermarket. When I had completed my shopping and was in the parking lot, I sp.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -274,7 +274,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334026,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 26",
+    title: "Fortune teller’s vanity plate",
     prompt: "My next errand took me all the way across town. I decided to take a shortcut which put me on a boulevard of small, eclectic businesses. One of these businesses I passed on my way was a fortune tellers shop. A Cadillac was parked out front, which, I assume, belonged to the owner of the shop. What would be the most appropriate vanity plate for this automobile?",
     correct: "N2IT",
     wrong: [["PASS THE CASH","The answer \"PASS THE CASH\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: My next errand took me all the way across town. I decided to take a shortcut which put me on a boule.","Before calculating, ask what the question is really counting, ordering, or comparing."],["N3IT","The answer \"N3IT\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: My next errand took me all the way across town. I decided to take a shortcut which put me on a boule.","Before calculating, ask what the question is really counting, ordering, or comparing."],["N4IT","The answer \"N4IT\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: My next errand took me all the way across town. I decided to take a shortcut which put me on a boule.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -284,7 +284,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334027,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 27",
+    title: "Optometrist vanity plate",
     prompt: "On the on-ramp to the freeway, I was behind an auto with the following plate: 4IS. What is the likely profession of the driver of this car?",
     correct: "Optometrist",
     wrong: [["Zoologist","The answer \"Zoologist\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: On the on-ramp to the freeway, I was behind an auto with the following plate: 4IS. What is the likel.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Biologist","The answer \"Biologist\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: On the on-ramp to the freeway, I was behind an auto with the following plate: 4IS. What is the likel.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Geologist","The answer \"Geologist\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: On the on-ramp to the freeway, I was behind an auto with the following plate: 4IS. What is the likel.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -294,7 +294,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334028,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 28",
+    title: "Decoding a rear-view plate",
     prompt: "Well, I got caught in noon rush hour. As luck would have it, I saw yet another vanity plate. This one told me that the driver at least checks in his / her rear view mirror. What plate did I see?",
     correct: "OICU2",
     wrong: [["OIUC2","The answer \"OIUC2\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Well, I got caught in noon rush hour. As luck would have it, I saw yet another vanity plate. This on.","Before calculating, ask what the question is really counting, ordering, or comparing."],["OIC3","The answer \"OIC3\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Well, I got caught in noon rush hour. As luck would have it, I saw yet another vanity plate. This on.","Before calculating, ask what the question is really counting, ordering, or comparing."],["RU2","The answer \"RU2\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Well, I got caught in noon rush hour. As luck would have it, I saw yet another vanity plate. This on.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -304,7 +304,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334029,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 29",
+    title: "Restaurant vanity plate question",
     prompt: "I went to my favorite restaurant to pick up some carry out for an early dinner. I saw the owners car parked out front. The vanity plate asked a question. What do you suppose the plate read?",
     correct: "E10YET",
     wrong: [["N0TABL42","The answer \"N0TABL42\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: I went to my favorite restaurant to pick up some carry out for an early dinner. I saw the owners car.","Before calculating, ask what the question is really counting, ordering, or comparing."],["RESORV8NS","The answer \"RESORV8NS\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: I went to my favorite restaurant to pick up some carry out for an early dinner. I saw the owners car.","Before calculating, ask what the question is really counting, ordering, or comparing."],["8ISENUF","The answer \"8ISENUF\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: I went to my favorite restaurant to pick up some carry out for an early dinner. I saw the owners car.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -324,7 +324,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334031,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 31",
+    title: "Whose injury hurts most",
     prompt: "If the mother of a boy spanks him and then his father comes and does the same, who hurts the most?",
     correct: "The boy",
     wrong: [["The boys brother","The answer \"The boys brother\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: If the mother of a boy spanks him and then his father comes and does the same, who hurts the most?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["The mother","The answer \"The mother\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: If the mother of a boy spanks him and then his father comes and does the same, who hurts the most?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["The father","The answer \"The father\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: If the mother of a boy spanks him and then his father comes and does the same, who hurts the most?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -354,7 +354,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334034,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 34",
+    title: "Candles left after the wind",
     prompt: "Twelve candles are burning on a table when a gust of wind blows five of them out. Right after the gust, how many candles are still physically left on the table?",
     correct: "12",
     wrong: [["7","This answers a different question: how many candles are still burning after five are blown out.","Check whether the prompt asks about flames or physical candles."],["5","This counts only the candles that went out, not all the candles left on the table.","Blown out does not mean removed."],["0","This assumes the wind somehow removed every candle, but it only put out some flames.","The table still has candles on it."],["17","This adds the original candles and the blown-out candles as if they were separate groups.","The five blown-out candles are part of the original twelve."],["Only the 5 blown-out candles","That would be a later version where the other candles burn away, but this prompt asks right after the gust.","Use the timing clue: right after the wind, none have vanished."]],
@@ -371,7 +371,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334035,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 35",
+    title: "Distance each horse runs",
     prompt: "A team of two horses ran for 3 miles. How many miles did each of the horses run?",
     correct: "3",
     wrong: [["1.5","The answer \"1.5\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A team of two horses ran for 3 miles. How many miles did each of the horses run?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["0","The answer \"0\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A team of two horses ran for 3 miles. How many miles did each of the horses run?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["6","The answer \"6\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A team of two horses ran for 3 miles. How many miles did each of the horses run?.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -381,7 +381,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334036,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 36",
+    title: "Sharing food among more passengers",
     prompt: "Nine passengers carried with them enough food for five days. Several other passengers joined the first group and they all shared the same food, which was now enough for three days. How many passengers joined the first group?",
     correct: "6",
     wrong: [["7","The answer \"7\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Nine passengers carried with them enough food for five days. Several other passengers joined the fir.","Before calculating, ask what the question is really counting, ordering, or comparing."],["8","The answer \"8\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Nine passengers carried with them enough food for five days. Several other passengers joined the fir.","Before calculating, ask what the question is really counting, ordering, or comparing."],["5","The answer \"5\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Nine passengers carried with them enough food for five days. Several other passengers joined the fir.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -391,7 +391,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334037,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 37",
+    title: "Counting the digit three",
     prompt: "A tiny digit is hiding in a written list. From 1 through 50 inclusive, count every time the digit 3 appears, not just the numbers that contain a 3.",
     correct: "15",
     wrong: [["14","This counts the numbers containing a 3 but treats 33 as if it had only one 3.","A number can contribute more than one copy of the digit."],["10","This sees the thirties block, but it misses 3, 13, 23, 43, and the extra 3 in 33.","Split the count by digit position."],["13","This is close, but it drops two appearances from the one-place or the double-count in 33.","Write the ones-place count and tens-place count separately."],["5","This counts only the ones-place 3s: 3, 13, 23, 33, and 43.","The tens digit is also a digit."],["11","This counts the ten thirties plus 3 once, but it misses 13, 23, and 43.","Do not let the 30s block steal all your attention."]],
@@ -408,7 +408,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334038,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 38",
+    title: "Ant climbing a pole",
     prompt: "A pole is 20 m high. An ant is climbing it as follows - every day she ascends 5 m and every night she descends 4 m. In how many days will the ant be on the top of the post?",
     correct: "16",
     wrong: [["19","The answer \"19\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A pole is 20 m high. An ant is climbing it as follows - every day she ascends 5 m and every night sh.","Before calculating, ask what the question is really counting, ordering, or comparing."],["15","The answer \"15\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A pole is 20 m high. An ant is climbing it as follows - every day she ascends 5 m and every night sh.","Before calculating, ask what the question is really counting, ordering, or comparing."],["20","The answer \"20\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A pole is 20 m high. An ant is climbing it as follows - every day she ascends 5 m and every night sh.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -418,7 +418,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334039,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 39",
+    title: "Sheep slaughtered per day",
     prompt: "A butcher had to stick a total number of 50 sheep in a week. Every day he sticked an equal number of sheep and managed to fulfill the task. How many sheep did he kill per day?",
     correct: "10",
     wrong: [["4","The answer \"4\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A butcher had to stick a total number of 50 sheep in a week. Every day he sticked an equal number of.","Before calculating, ask what the question is really counting, ordering, or comparing."],["8","The answer \"8\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A butcher had to stick a total number of 50 sheep in a week. Every day he sticked an equal number of.","Before calculating, ask what the question is really counting, ordering, or comparing."],["7","The answer \"7\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A butcher had to stick a total number of 50 sheep in a week. Every day he sticked an equal number of.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -428,7 +428,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334040,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 40",
+    title: "Pigeonhole apple selection",
     prompt: "In a basket there are three sorts of apples. How many apples do you have to take from the basket to make sure you have at least 2 apples of the same sort?",
     correct: "4",
     wrong: [["5","The answer \"5\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: In a basket there are three sorts of apples. How many apples do you have to take from the basket to .","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["3","The answer \"3\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: In a basket there are three sorts of apples. How many apples do you have to take from the basket to .","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["2","The answer \"2\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: In a basket there are three sorts of apples. How many apples do you have to take from the basket to .","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -438,7 +438,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334041,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 41",
+    title: "Pot priced from its own price",
     prompt: "An old potter was selling pots. Once, a woman came and bought a pot for its sticker price. She had to pay $1 plus half its price. What was the price?",
     correct: "2",
     wrong: [["4","The answer \"4\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: An old potter was selling pots. Once, a woman came and bought a pot for its sticker price. She had t.","Before calculating, ask what the question is really counting, ordering, or comparing."],["3","The answer \"3\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: An old potter was selling pots. Once, a woman came and bought a pot for its sticker price. She had t.","Before calculating, ask what the question is really counting, ordering, or comparing."],["1","The answer \"1\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: An old potter was selling pots. Once, a woman came and bought a pot for its sticker price. She had t.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -448,7 +448,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334042,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 42",
+    title: "Balancing glasses and a jug",
     prompt: "Four glasses and a jug weigh as mush as 17 iron balls do. The jug weighs as much as a glass and 7 balls. How many balls does the jug weigh?",
     correct: "9",
     wrong: [["8","The answer \"8\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Four glasses and a jug weigh as mush as 17 iron balls do. The jug weighs as much as a glass and 7 ba.","Before calculating, ask what the question is really counting, ordering, or comparing."],["10","The answer \"10\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Four glasses and a jug weigh as mush as 17 iron balls do. The jug weighs as much as a glass and 7 ba.","Before calculating, ask what the question is really counting, ordering, or comparing."],["5","The answer \"5\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Four glasses and a jug weigh as mush as 17 iron balls do. The jug weighs as much as a glass and 7 ba.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -458,7 +458,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334043,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 43",
+    title: "Cats eating mice over time",
     prompt: "Three cats can eat 3 mice in 1.5 hours. How long will it take 10 cats to eat 20 mice?",
     correct: "3 hours",
     wrong: [["10 hours","The answer \"10 hours\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Three cats can eat 3 mice in 1.5 hours. How long will it take 10 cats to eat 20 mice?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["6 hours","The answer \"6 hours\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Three cats can eat 3 mice in 1.5 hours. How long will it take 10 cats to eat 20 mice?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["1.5 hour","The answer \"1.5 hour\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Three cats can eat 3 mice in 1.5 hours. How long will it take 10 cats to eat 20 mice?.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -468,7 +468,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334044,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 44",
+    title: "Dividing seven loaves evenly",
     prompt: "Is there a way you can divide 7 identical pieces of bread equally among 12 people?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Is there a way you can divide 7 identical pieces of bread equally among 12 people?.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -478,7 +478,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334045,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 45",
+    title: "Animals eating a sheep together",
     prompt: "A lion can eat a sheep in 2 hours, a wolf - in 3 hours, and a dog - in 6 hours. How long will it take the three animals to eat a sheep if they eat together?",
     correct: "1 hour",
     wrong: [["2 hours","The answer \"2 hours\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A lion can eat a sheep in 2 hours, a wolf - in 3 hours, and a dog - in 6 hours. How long will it tak.","Before calculating, ask what the question is really counting, ordering, or comparing."],["8 hours","The answer \"8 hours\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A lion can eat a sheep in 2 hours, a wolf - in 3 hours, and a dog - in 6 hours. How long will it tak.","Before calculating, ask what the question is really counting, ordering, or comparing."],["1/2 hour","The answer \"1/2 hour\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A lion can eat a sheep in 2 hours, a wolf - in 3 hours, and a dog - in 6 hours. How long will it tak.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -488,7 +488,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334046,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 46",
+    title: "Two men, one-person boat",
     prompt: "Two men were walking towards a river. There was a boat on one of the riverbanks. However, this boat could carry only one man at a time. Nevertheless, both men managed to cross the river with the boat. This is possible.",
     correct: "True",
     wrong: [["False","The answer \"False\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Two men were walking towards a river. There was a boat on one of the riverbanks. However, this boat .","Look for the one assumption that makes the situation possible or impossible."]],
@@ -498,7 +498,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334047,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 47",
+    title: "Relatives much younger than me",
     prompt: "Some of my relatives are 600 times younger than me. Can this be true?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Some of my relatives are 600 times younger than me. Can this be true?.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -508,7 +508,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334048,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 48",
+    title: "Crossing a weight-limited bridge",
     prompt: "A man is carrying three croquet balls across a bridge. The bridge has a sign that says bridge can only hold 200 pounds. The man weighs 195 pounds and the croquet balls weigh 2 pounds each. The man ends up crossing the bridge in one trip and no one else helps him. This is possible.",
     correct: "True",
     wrong: [["False","The answer \"False\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A man is carrying three croquet balls across a bridge. The bridge has a sign that says bridge can on.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -528,7 +528,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334050,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 50",
+    title: "Squirrel carrying ears of corn",
     prompt: "A squirrel finds a hollow log with 9 ears of corn in it. If he can carry out 3 ears every day, how many days will it take him to empty the log?",
     correct: "9",
     wrong: [["6","The answer \"6\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A squirrel finds a hollow log with 9 ears of corn in it. If he can carry out 3 ears every day, how m.","Before calculating, ask what the question is really counting, ordering, or comparing."],["3","The answer \"3\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A squirrel finds a hollow log with 9 ears of corn in it. If he can carry out 3 ears every day, how m.","Before calculating, ask what the question is really counting, ordering, or comparing."],["None of these","The answer \"None of these\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A squirrel finds a hollow log with 9 ears of corn in it. If he can carry out 3 ears every day, how m.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -538,7 +538,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334051,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 51",
+    title: "Switching answers after a hint",
     prompt: "Suppose youre taking a multiple-choice quiz. One question has three choices - A, B, C. You do not know the answer and guess A. The instructor then announces that C is incorrect. Should you switch to B before turning in your paper?",
     correct: "Yes, this should help",
     wrong: [["No, it would be worse","The answer \"No, it would be worse\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Suppose youre taking a multiple-choice quiz. One question has three choices - A, B, C. You do not kn.","Look for the one assumption that makes the situation possible or impossible."],["It depends on when the announcement was made","The answer \"It depends on when the announcement was made\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Suppose youre taking a multiple-choice quiz. One question has three choices - A, B, C. You do not kn.","Look for the one assumption that makes the situation possible or impossible."],["It doesnt matter","The answer \"It doesnt matter\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Suppose youre taking a multiple-choice quiz. One question has three choices - A, B, C. You do not kn.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -548,7 +548,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334052,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 52",
+    title: "Worm gnawing through two volumes",
     prompt: "A worm can gnaw through 1 mm of paper for a single day. On a bookshelf there are two volumes, each 4 cm thick. Each of the covers is 2 mm thick. How long will it take the warm to gnaw from the first page of the first volume to the last page of the second volume?",
     correct: "4 days",
     wrong: [["60 days","The answer \"60 days\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A worm can gnaw through 1 mm of paper for a single day. On a bookshelf there are two volumes, each 4.","Before calculating, ask what the question is really counting, ordering, or comparing."],["80 days","The answer \"80 days\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A worm can gnaw through 1 mm of paper for a single day. On a bookshelf there are two volumes, each 4.","Before calculating, ask what the question is really counting, ordering, or comparing."],["14 days","The answer \"14 days\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A worm can gnaw through 1 mm of paper for a single day. On a bookshelf there are two volumes, each 4.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -558,7 +558,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334053,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 53",
+    title: "Speed to catch the train",
     prompt: "The train leaves in 2 minutes and the distance to the train station is 2 miles. If you drive the first mile at 30 miles/h, at what speed should you drive the second mile?",
     correct: "It does not matter.",
     wrong: [["90 miles/h","The answer \"90 miles/h\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: The train leaves in 2 minutes and the distance to the train station is 2 miles. If you drive the fir.","Before calculating, ask what the question is really counting, ordering, or comparing."],["120 miles/h","The answer \"120 miles/h\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: The train leaves in 2 minutes and the distance to the train station is 2 miles. If you drive the fir.","Before calculating, ask what the question is really counting, ordering, or comparing."],["60 miles/h","The answer \"60 miles/h\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: The train leaves in 2 minutes and the distance to the train station is 2 miles. If you drive the fir.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -568,7 +568,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334054,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 54",
+    title: "Palindromic odometer reading",
     prompt: "A driver noticed that the dashboard showed he had driven a total number of 15951 miles. He thought that this was a strange number because no matter in what direction it was read (from left to right or from right to left) it was the same. However, in two hours, the dashboard showed a number that had that same characteristic. What was the speed of the car?",
     correct: "55",
     wrong: [["110","The answer \"110\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A driver noticed that the dashboard showed he had driven a total number of 15951 miles. He thought t.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["65","The answer \"65\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A driver noticed that the dashboard showed he had driven a total number of 15951 miles. He thought t.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["450","The answer \"450\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A driver noticed that the dashboard showed he had driven a total number of 15951 miles. He thought t.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -578,7 +578,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334055,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 55",
+    title: "Hunters escaping a pit",
     prompt: "Three hunters, different in height, got stuck in a pit. They tried to get out of it and stepped one onto the other. However, the shortest, who was on top, could not reach the edge for just 5 cm. Can these three hunters ever get out of the pit without the help of anyone else or of any additional object?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Three hunters, different in height, got stuck in a pit. They tried to get out of it and stepped one .","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -588,7 +588,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334056,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 56",
+    title: "Flaw in the sleeping thief story",
     prompt: "In the Middle Ages a thief went into a church and fell asleep on a pew. He dreamed about stealing the cross of the minister and being sentenced to execution for that. However, just as he was about to be executed, he was woken by a local lady. Immediately after that the thief died. Modern scientists say it was due to a heart attack. Is everything okay with the story?",
     correct: "No",
     wrong: [["Yes","The answer \"Yes\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: In the Middle Ages a thief went into a church and fell asleep on a pew. He dreamed about stealing th.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -598,7 +598,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334057,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 57",
+    title: "Difference equals quotient",
     prompt: "One of these pairs of numbers has this strange characteristic - when you subtract one of them from the other you get a number equal to what you will get if you divide one by the other. Can you spot it?",
     correct: "25/4 and 5/4",
     wrong: [["24/6 and 24/8","The answer \"24/6 and 24/8\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: One of these pairs of numbers has this strange characteristic - when you subtract one of them from t.","Before calculating, ask what the question is really counting, ordering, or comparing."],["3 and 2/12","The answer \"3 and 2/12\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: One of these pairs of numbers has this strange characteristic - when you subtract one of them from t.","Before calculating, ask what the question is really counting, ordering, or comparing."],["30/6 and 36/6","The answer \"30/6 and 36/6\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: One of these pairs of numbers has this strange characteristic - when you subtract one of them from t.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -608,7 +608,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334058,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 58",
+    title: "Garage space for limos",
     prompt: "The local limo company have recently expanded their inventory and no longer have enough room for all of their limos. Fifteen of the limos have to be stored outside. If they decide to increase their garage space by 50%, this will give them enough room for all of their current limos, plus enough room to store another fifteen in the future. How many limos does the company currently own?",
     correct: "75",
     wrong: [["60","The answer \"60\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: The local limo company have recently expanded their inventory and no longer have enough room for all.","Before calculating, ask what the question is really counting, ordering, or comparing."],["80","The answer \"80\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: The local limo company have recently expanded their inventory and no longer have enough room for all.","Before calculating, ask what the question is really counting, ordering, or comparing."],["85","The answer \"85\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: The local limo company have recently expanded their inventory and no longer have enough room for all.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -618,7 +618,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334059,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 59",
+    title: "Horse reaching the hay",
     prompt: "A horse is tied to a five meter rope in front of an old saloon. Six meters directly behind the horse is a bale of hay. Without breaking his rope, the horse is able to eat the hay whenever he chooses. Assuming the horse is perfectly normal, is this possible?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: A horse is tied to a five meter rope in front of an old saloon. Six meters directly behind the horse.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -628,7 +628,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334060,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 60",
+    title: "Roulette half-bet outcome",
     prompt: "A famous playboy explained to a beautiful woman his system for playing roulette: In each round, I always bet half of the money I have at the time on red. Yesterday, I counted and I had won as many rounds as I had lost. Over the course of the night, did the gambler win, lose or break even?",
     correct: "lose",
     wrong: [["break even","The answer \"break even\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A famous playboy explained to a beautiful woman his system for playing roulette: In each round, I al.","Before calculating, ask what the question is really counting, ordering, or comparing."],["win","The answer \"win\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A famous playboy explained to a beautiful woman his system for playing roulette: In each round, I al.","Before calculating, ask what the question is really counting, ordering, or comparing."],["None of these","The answer \"None of these\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A famous playboy explained to a beautiful woman his system for playing roulette: In each round, I al.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -638,7 +638,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334061,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 61",
+    title: "Horse legs travelling different distances",
     prompt: "A horse travels a certain distance each day. Strangely enough, two of its legs travel 30 miles each day and the other two legs travel nearly 31 miles. Can this be true?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A horse travels a certain distance each day. Strangely enough, two of its legs travel 30 miles each .","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -648,7 +648,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334062,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 62",
+    title: "Delegates by continent",
     prompt: "A total of 15 delegates from Africa, Asia, America, and Europe meet at an international conference.",
     correct: "Asia",
     wrong: [["America","The answer \"America\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A total of 15 delegates from Africa, Asia, America, and Europe meet at an international conference..","Before calculating, ask what the question is really counting, ordering, or comparing."],["Africa","The answer \"Africa\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A total of 15 delegates from Africa, Asia, America, and Europe meet at an international conference..","Before calculating, ask what the question is really counting, ordering, or comparing."],["Europe","The answer \"Europe\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A total of 15 delegates from Africa, Asia, America, and Europe meet at an international conference..","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -658,7 +658,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334063,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 63",
+    title: "Turns to drive the car back",
     prompt: "One kid has a toy car with a strange remote control- it has only one button on it. When the car is switched on, it starts moving forward and doesnt stop until its switched off. When the boy presses the button, the car makes a 60 degree turn clockwise. Considering that this is a very lazy boy, try calculating the smallest number of times he has to press the button so that the car travels back to him.",
     correct: "5",
     wrong: [["4","The answer \"4\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: One kid has a toy car with a strange remote control- it has only one button on it. When the car is s.","Before calculating, ask what the question is really counting, ordering, or comparing."],["7","The answer \"7\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: One kid has a toy car with a strange remote control- it has only one button on it. When the car is s.","Before calculating, ask what the question is really counting, ordering, or comparing."],["3","The answer \"3\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: One kid has a toy car with a strange remote control- it has only one button on it. When the car is s.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -668,7 +668,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334064,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 64",
+    title: "Deducing the race winner",
     prompt: "Here is something like a warm-up before you get to the next one. Three friends, Peter, Nick and Tom were competing in a race. After they finished, a person ,who was late for the race, asked them who was the winner. Tom said I didnt finish first and Peter didnt finish second. Then Nick said Tom didnt finish second either. Who was the winner?",
     correct: "Peter",
     wrong: [["Nick","The answer \"Nick\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Here is something like a warm-up before you get to the next one. Three friends, Peter, Nick and Tom .","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["Its impossible","The answer \"Its impossible\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Here is something like a warm-up before you get to the next one. Three friends, Peter, Nick and Tom .","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["Tom","The answer \"Tom\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Here is something like a warm-up before you get to the next one. Three friends, Peter, Nick and Tom .","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -678,7 +678,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334065,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 65",
+    title: "Watermelon weight equation",
     prompt: "One watermelon weighs 10kg (22 lbs) plus the half of its own weight. How much does it weigh?",
     correct: "20kg (44 lbs)",
     wrong: [["10kg (22 lbs)","The answer \"10kg (22 lbs)\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: One watermelon weighs 10kg (22 lbs) plus the half of its own weight. How much does it weigh?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["25kg (55 lbs)","The answer \"25kg (55 lbs)\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: One watermelon weighs 10kg (22 lbs) plus the half of its own weight. How much does it weigh?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["5kg (11 lbs)","The answer \"5kg (11 lbs)\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: One watermelon weighs 10kg (22 lbs) plus the half of its own weight. How much does it weigh?.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -688,7 +688,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334066,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 66",
+    title: "The 7-11-13 number trick",
     prompt: "Try thinking out a random 3-digit number and writing it twice on a piece of paper, forming a 6-digit number (for example the number is 123, than you will have to put down 123123 on the paper). Now divide this 6-digit number by 7. There will be no remainder, I guarantee. Now divide the result by 11. No remainder again, I guarantee. Now divide the new result by 13. What happened?",
     correct: "The result is your original number",
     wrong: [["The result is zero","The answer \"The result is zero\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Try thinking out a random 3-digit number and writing it twice on a piece of paper, forming a 6-digit.","Before calculating, ask what the question is really counting, ordering, or comparing."],["There is remainder","The answer \"There is remainder\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Try thinking out a random 3-digit number and writing it twice on a piece of paper, forming a 6-digit.","Before calculating, ask what the question is really counting, ordering, or comparing."],["The result is twice your original number","The answer \"The result is twice your original number\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Try thinking out a random 3-digit number and writing it twice on a piece of paper, forming a 6-digit.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -698,7 +698,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334067,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 67",
+    title: "Probability of a prime from dice",
     prompt: "Two dice are randomly thrown. What is the possibility that the number, formed by the two digits that come form the dice, is a prime?",
     correct: "5:12",
     wrong: [["5:18","The answer \"5:18\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Two dice are randomly thrown. What is the possibility that the number, formed by the two digits that.","Before calculating, ask what the question is really counting, ordering, or comparing."],["19:36","The answer \"19:36\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Two dice are randomly thrown. What is the possibility that the number, formed by the two digits that.","Before calculating, ask what the question is really counting, ordering, or comparing."],["35:36","The answer \"35:36\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Two dice are randomly thrown. What is the possibility that the number, formed by the two digits that.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -728,7 +728,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334070,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 70",
+    title: "Profit from buying back a horse",
     prompt: "A man buys a horse for $60. After a while he sells it for 70$. Some time passes and the man regrets his decision and goes to buy the horse again. But now he has to pay $80 for it and he does. After a while he regrets to have bought the horse back and sells it for $90. Now in total, how much loss/profit did the man make from the three transactions?",
     correct: "$10",
     wrong: [["- $20","The answer \"- $20\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A man buys a horse for $60. After a while he sells it for 70$. Some time passes and the man regrets .","Before calculating, ask what the question is really counting, ordering, or comparing."],["$20","The answer \"$20\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A man buys a horse for $60. After a while he sells it for 70$. Some time passes and the man regrets .","Before calculating, ask what the question is really counting, ordering, or comparing."],["0","The answer \"0\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A man buys a horse for $60. After a while he sells it for 70$. Some time passes and the man regrets .","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -738,7 +738,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334071,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 71",
+    title: "The barber paradox",
     prompt: "Somewhere, there is a very interesting village. And whats so interesting about it? Well, in this village there is a barber, a very special barber. He cuts the hair of everybody in the village that doesnt cut his own hair. Who then cuts the barbers hair?",
     correct: "Such village cannot exist, it is a paradox",
     wrong: [["The barber of another village","The answer \"The barber of another village\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Somewhere, there is a very interesting village. And whats so interesting about it? Well, in this vil.","Look for the one assumption that makes the situation possible or impossible."],["Noone","The answer \"Noone\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Somewhere, there is a very interesting village. And whats so interesting about it? Well, in this vil.","Look for the one assumption that makes the situation possible or impossible."],["Himself","The answer \"Himself\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Somewhere, there is a very interesting village. And whats so interesting about it? Well, in this vil.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -748,7 +748,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334072,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 72",
+    title: "Five games, three wins each",
     prompt: "Two men were playing for title of championship of the world for the checkers tournament. They each played five games and they each won three. There were no ties, is this possible?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Two men were playing for title of championship of the world for the checkers tournament. They each p.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -768,7 +768,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334074,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 74",
+    title: "Coin dated before BC existed",
     prompt: "A famous, well respected archaeologist went on a dig in Jerusalem. He found a coin dated 56 B.C. He was so excited, he rushed to the museum so it could be put on display. But the museum wouldnt accept the coin because they said it could not possibly be authentic. They said that the coin had to be a fake.",
     correct: "True",
     wrong: [["False","The answer \"False\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A famous, well respected archaeologist went on a dig in Jerusalem. He found a coin dated 56 B.C. He .","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -778,7 +778,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334075,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 75",
+    title: "Spouse jailed for drunk driving",
     prompt: "In what country can your spouse be jailed along with you if you are caught drinking and driving?",
     correct: "Malaysia",
     wrong: [["Pakistan","The answer \"Pakistan\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: In what country can your spouse be jailed along with you if you are caught drinking and driving?.","Look for the quiet twist before committing to the obvious answer."],["Germany","The answer \"Germany\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: In what country can your spouse be jailed along with you if you are caught drinking and driving?.","Look for the quiet twist before committing to the obvious answer."],["India","The answer \"India\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: In what country can your spouse be jailed along with you if you are caught drinking and driving?.","Look for the quiet twist before committing to the obvious answer."]],
@@ -788,7 +788,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334076,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 76",
+    title: "Cost of a life sentence",
     prompt: "Approximately how much money does the taxpayer spend on a prisoner serving a life sentence in California?",
     correct: "1,550,000",
     wrong: [["750,000","The answer \"750,000\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Approximately how much money does the taxpayer spend on a prisoner serving a life sentence in Califo.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["500,000","The answer \"500,000\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Approximately how much money does the taxpayer spend on a prisoner serving a life sentence in Califo.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["100,000","The answer \"100,000\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Approximately how much money does the taxpayer spend on a prisoner serving a life sentence in Califo.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -818,7 +818,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334079,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 79",
+    title: "Breathalyzer after drinking milk",
     prompt: "Is it possible to test positive on a breathalyzer after drinking only a glass of milk?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Is it possible to test positive on a breathalyzer after drinking only a glass of milk?.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -828,7 +828,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334080,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 80",
+    title: "Riddle of the Sphinx",
     prompt: "I have four legs in the morning, two legs in the afternoon and three legs in the evening. What am I?",
     correct: "A human",
     wrong: [["A tortoise","The answer \"A tortoise\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: I have four legs in the morning, two legs in the afternoon and three legs in the evening. What am I?.","Look for the one assumption that makes the situation possible or impossible."],["A sloth","The answer \"A sloth\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: I have four legs in the morning, two legs in the afternoon and three legs in the evening. What am I?.","Look for the one assumption that makes the situation possible or impossible."],["A raven","The answer \"A raven\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: I have four legs in the morning, two legs in the afternoon and three legs in the evening. What am I?.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -878,7 +878,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334085,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 85",
+    title: "Once a minute, never in years",
     prompt: "This is what you can see once in a minute, twice in a moment, but never in a thousand years.",
     correct: "The letter M",
     wrong: [["The sun","The answer \"The sun\" falls for a truth-teller logic trick. This question does not force truth-tellers and liars into different outcomes, so it cannot identify the situation reliably. The clue to reread is: This is what you can see once in a minute, twice in a moment, but never in a thousand years..","For liar/truth puzzles, ask a question whose answer changes depending on the rule system."],["An eclipse","The answer \"An eclipse\" falls for a truth-teller logic trick. This question does not force truth-tellers and liars into different outcomes, so it cannot identify the situation reliably. The clue to reread is: This is what you can see once in a minute, twice in a moment, but never in a thousand years..","For liar/truth puzzles, ask a question whose answer changes depending on the rule system."],["A Solstice","The answer \"A Solstice\" falls for a truth-teller logic trick. This question does not force truth-tellers and liars into different outcomes, so it cannot identify the situation reliably. The clue to reread is: This is what you can see once in a minute, twice in a moment, but never in a thousand years..","For liar/truth puzzles, ask a question whose answer changes depending on the rule system."]],
@@ -888,7 +888,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334086,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 86",
+    title: "Meaning of hirsute",
     prompt: "With a red beard, gray mustache and black sideburns, the man had a distinct HIRSUTE quality. What does hirsute mean?",
     correct: "hairy, shaggy, covered in hair",
     wrong: [["mysterious, always in disguise","The answer \"mysterious, always in disguise\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: With a red beard, gray mustache and black sideburns, the man had a distinct HIRSUTE quality. What do.","Look for the quiet twist before committing to the obvious answer."],["eccentric","The answer \"eccentric\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: With a red beard, gray mustache and black sideburns, the man had a distinct HIRSUTE quality. What do.","Look for the quiet twist before committing to the obvious answer."],["multicolored","The answer \"multicolored\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: With a red beard, gray mustache and black sideburns, the man had a distinct HIRSUTE quality. What do.","Look for the quiet twist before committing to the obvious answer."]],
@@ -898,7 +898,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334087,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 87",
+    title: "Meaning of peccadillo",
     prompt: "Stacy was extremely annoyed by Jills PECCADILLO. Jill constantly ate food with her mouth open. What does the word peccadillo mean?",
     correct: "a petty fault",
     wrong: [["chewing loudly","The answer \"chewing loudly\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Stacy was extremely annoyed by Jills PECCADILLO. Jill constantly ate food with her mouth open. What .","Look for the one assumption that makes the situation possible or impossible."],["vegetarian","The answer \"vegetarian\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Stacy was extremely annoyed by Jills PECCADILLO. Jill constantly ate food with her mouth open. What .","Look for the one assumption that makes the situation possible or impossible."],["disgusting manners","The answer \"disgusting manners\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Stacy was extremely annoyed by Jills PECCADILLO. Jill constantly ate food with her mouth open. What .","Look for the one assumption that makes the situation possible or impossible."]],
@@ -918,7 +918,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334089,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 89",
+    title: "Meaning of enunciate",
     prompt: "Jerry was worried he would mumble and slur his words, so he had to go slowly and try to ENUNCIATE each word. Words might get lost if you dont enunciate. What does enunciate mean?",
     correct: "pronounce articulately",
     wrong: [["shout and project","The answer \"shout and project\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Jerry was worried he would mumble and slur his words, so he had to go slowly and try to ENUNCIATE ea.","Look for the one assumption that makes the situation possible or impossible."],["mask drunkenness","The answer \"mask drunkenness\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Jerry was worried he would mumble and slur his words, so he had to go slowly and try to ENUNCIATE ea.","Look for the one assumption that makes the situation possible or impossible."],["mime and gesticulate","The answer \"mime and gesticulate\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Jerry was worried he would mumble and slur his words, so he had to go slowly and try to ENUNCIATE ea.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -928,7 +928,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334090,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 90",
+    title: "Meaning of avuncular",
     prompt: "Annas brother took his AVUNCULAR duties very seriously. He taught her children how to read, write and speak German. What does avuncular mean?",
     correct: "Adjective of an uncle",
     wrong: [["Adjective of a mentor","The answer \"Adjective of a mentor\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Annas brother took his AVUNCULAR duties very seriously. He taught her children how to read, write an.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["Qualities of a Germanic monk","The answer \"Qualities of a Germanic monk\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Annas brother took his AVUNCULAR duties very seriously. He taught her children how to read, write an.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["Adjective of a father","The answer \"Adjective of a father\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Annas brother took his AVUNCULAR duties very seriously. He taught her children how to read, write an.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -938,7 +938,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334091,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 91",
+    title: "Meaning of lachrymosity",
     prompt: "When Jack and Jill went to see The Notebook, Jill was surprised at Jacks obvious display of his LACHRYMOSITY. What was Jack doing?",
     correct: "crying",
     wrong: [["talking loudly","The answer \"talking loudly\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: When Jack and Jill went to see The Notebook, Jill was surprised at Jacks obvious display of his LACH.","Look for the one assumption that makes the situation possible or impossible."],["laughing","The answer \"laughing\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: When Jack and Jill went to see The Notebook, Jill was surprised at Jacks obvious display of his LACH.","Look for the one assumption that makes the situation possible or impossible."],["sleeping","The answer \"sleeping\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: When Jack and Jill went to see The Notebook, Jill was surprised at Jacks obvious display of his LACH.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -958,7 +958,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334093,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 93",
+    title: "Meaning of fetid",
     prompt: "The rancid meat attracted flies and maggots and wafting from it was a FETID odor. What is the meaning of fetid?",
     correct: "stinking",
     wrong: [["chemical","The answer \"chemical\" falls for a truth-teller logic trick. This question does not force truth-tellers and liars into different outcomes, so it cannot identify the situation reliably. The clue to reread is: The rancid meat attracted flies and maggots and wafting from it was a FETID odor. What is the meanin.","For liar/truth puzzles, ask a question whose answer changes depending on the rule system."],["sweet","The answer \"sweet\" falls for a truth-teller logic trick. This question does not force truth-tellers and liars into different outcomes, so it cannot identify the situation reliably. The clue to reread is: The rancid meat attracted flies and maggots and wafting from it was a FETID odor. What is the meanin.","For liar/truth puzzles, ask a question whose answer changes depending on the rule system."],["food","The answer \"food\" falls for a truth-teller logic trick. This question does not force truth-tellers and liars into different outcomes, so it cannot identify the situation reliably. The clue to reread is: The rancid meat attracted flies and maggots and wafting from it was a FETID odor. What is the meanin.","For liar/truth puzzles, ask a question whose answer changes depending on the rule system."]],
@@ -968,7 +968,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334094,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 94",
+    title: "Meaning of fealty",
     prompt: "The king required FEALTY from all his vassals. What does the word fealty mean?",
     correct: "allegiance",
     wrong: [["food","The answer \"food\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: The king required FEALTY from all his vassals. What does the word fealty mean?.","Look for the quiet twist before committing to the obvious answer."],["payment, rent","The answer \"payment, rent\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: The king required FEALTY from all his vassals. What does the word fealty mean?.","Look for the quiet twist before committing to the obvious answer."],["livestock","The answer \"livestock\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: The king required FEALTY from all his vassals. What does the word fealty mean?.","Look for the quiet twist before committing to the obvious answer."]],
@@ -978,7 +978,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334095,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 95",
+    title: "Meaning of ludic",
     prompt: "The siblings were complete opposites. Tom was pedantic and read all the time and Lucy was LUDIC. She was always getting mud on her clothes. What is the meaning of ludic?",
     correct: "playful",
     wrong: [["outdoor-loving","The answer \"outdoor-loving\" falls for a truth-teller logic trick. This question does not force truth-tellers and liars into different outcomes, so it cannot identify the situation reliably. The clue to reread is: The siblings were complete opposites. Tom was pedantic and read all the time and Lucy was LUDIC. She.","For liar/truth puzzles, ask a question whose answer changes depending on the rule system."],["clumsy","The answer \"clumsy\" falls for a truth-teller logic trick. This question does not force truth-tellers and liars into different outcomes, so it cannot identify the situation reliably. The clue to reread is: The siblings were complete opposites. Tom was pedantic and read all the time and Lucy was LUDIC. She.","For liar/truth puzzles, ask a question whose answer changes depending on the rule system."],["illiterate","The answer \"illiterate\" falls for a truth-teller logic trick. This question does not force truth-tellers and liars into different outcomes, so it cannot identify the situation reliably. The clue to reread is: The siblings were complete opposites. Tom was pedantic and read all the time and Lucy was LUDIC. She.","For liar/truth puzzles, ask a question whose answer changes depending on the rule system."]],
@@ -988,7 +988,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334096,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 96",
+    title: "Origin of the word rhubarb",
     prompt: "The vegetable rhubarb is delicious but its leaves are poisonous. What did rhubarb originally mean?",
     correct: "root of the barbarian",
     wrong: [["edible poison","The answer \"edible poison\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: The vegetable rhubarb is delicious but its leaves are poisonous. What did rhubarb originally mean?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["beware","The answer \"beware\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: The vegetable rhubarb is delicious but its leaves are poisonous. What did rhubarb originally mean?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["poisoned ruby","The answer \"poisoned ruby\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: The vegetable rhubarb is delicious but its leaves are poisonous. What did rhubarb originally mean?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -998,7 +998,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334097,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 97",
+    title: "Origin of the word geek",
     prompt: "What modern slang term once meant a carnival worker who performed disgusting tasks such as biting off the heads of live chickens?",
     correct: "Geek",
     wrong: [["Nerd","The answer \"Nerd\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: What modern slang term once meant a carnival worker who performed disgusting tasks such as biting of.","Look for the quiet twist before committing to the obvious answer."],["Dork","The answer \"Dork\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: What modern slang term once meant a carnival worker who performed disgusting tasks such as biting of.","Look for the quiet twist before committing to the obvious answer."],["Freak","The answer \"Freak\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: What modern slang term once meant a carnival worker who performed disgusting tasks such as biting of.","Look for the quiet twist before committing to the obvious answer."]],
@@ -1018,7 +1018,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334099,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 99",
+    title: "Sheep left alive",
     prompt: "A farmer had 20 sheep. All but 8 died. How many are still alive?",
     correct: "8",
     wrong: [["0","The answer \"0\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A farmer had 20 sheep. All but 8 died. How many are still alive?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["12","The answer \"12\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A farmer had 20 sheep. All but 8 died. How many are still alive?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["15","The answer \"15\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A farmer had 20 sheep. All but 8 died. How many are still alive?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1028,7 +1028,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334100,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 100",
+    title: "Spotting the false alibi",
     prompt: "On Sunday morning, a homeowner is found dead, and three staff members give quick alibis. The chef says she was making breakfast, the maid says she was cleaning the living room, and the mail receiver says he was getting the regular mail; who should the police suspect first?",
     correct: "The mail receiver",
     wrong: [["The maid","Cleaning the living room sounds close to the scene, but the statement does not contradict the time clue.","Look for the alibi that cannot fit Sunday morning."],["The chef","Making breakfast on a Sunday morning is ordinary, so this alibi is not self-defeating by itself.","Suspicious job vibes are weaker than a direct contradiction."],["All three staff members","The riddle gives one sharp calendar clue rather than three impossible alibis.","Find the single statement that breaks the setup."],["No one from this evidence","In a real investigation you would gather more evidence, but classic riddles use the wording to point to a contradiction.","The day of the week is doing work here."],["The homeowner","The prompt asks who the police arrested among the interviewed people, and the alibi clue points elsewhere.","Do not throw away the suspect list unless the wording forces you to."]],
@@ -1045,7 +1045,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334101,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 101",
+    title: "Birds left after a gunshot",
     prompt: "There is a branch with 10 birds on it. I shot 2 of them and then 1 more. How many birds are left on the branch?",
     correct: "0",
     wrong: [["2","The answer \"2\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: There is a branch with 10 birds on it. I shot 2 of them and then 1 more. How many birds are left on .","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["8","The answer \"8\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: There is a branch with 10 birds on it. I shot 2 of them and then 1 more. How many birds are left on .","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["7","The answer \"7\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: There is a branch with 10 birds on it. I shot 2 of them and then 1 more. How many birds are left on .","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1055,7 +1055,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334102,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 102",
+    title: "Socks needed for a pair",
     prompt: "If you have in your suitcase 6 white socks, 4 red socks, 8 green socks, and 2 brown socks, how many socks would you have to pull out (without looking at them) to be sure you have a matching pair?",
     correct: "5",
     wrong: [["6","The answer \"6\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: If you have in your suitcase 6 white socks, 4 red socks, 8 green socks, and 2 brown socks, how many .","Before calculating, ask what the question is really counting, ordering, or comparing."],["8","The answer \"8\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: If you have in your suitcase 6 white socks, 4 red socks, 8 green socks, and 2 brown socks, how many .","Before calculating, ask what the question is really counting, ordering, or comparing."],["4","The answer \"4\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: If you have in your suitcase 6 white socks, 4 red socks, 8 green socks, and 2 brown socks, how many .","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1075,7 +1075,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334104,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 104",
+    title: "Pictures from three cameras",
     prompt: "One camera could take 350 pictures and Bob bought 3 cameras of the same type. How many pictures could he take?",
     correct: "1050",
     wrong: [["700","The answer \"700\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: One camera could take 350 pictures and Bob bought 3 cameras of the same type. How many pictures coul.","Before calculating, ask what the question is really counting, ordering, or comparing."],["none","The answer \"none\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: One camera could take 350 pictures and Bob bought 3 cameras of the same type. How many pictures coul.","Before calculating, ask what the question is really counting, ordering, or comparing."],["350","The answer \"350\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: One camera could take 350 pictures and Bob bought 3 cameras of the same type. How many pictures coul.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1085,7 +1085,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334105,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 105",
+    title: "iPods for songs and movies",
     prompt: "One iPod can hold 950 songs and 3 movies. How many iPods of this model would one person have to buy to have 27 movies and 8550 songs?",
     correct: "9",
     wrong: [["8","The answer \"8\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: One iPod can hold 950 songs and 3 movies. How many iPods of this model would one person have to buy .","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["10","The answer \"10\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: One iPod can hold 950 songs and 3 movies. How many iPods of this model would one person have to buy .","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["7","The answer \"7\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: One iPod can hold 950 songs and 3 movies. How many iPods of this model would one person have to buy .","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1095,7 +1095,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334106,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 106",
+    title: "Doors across three buildings",
     prompt: "In an office building, there are 350 windows and half as many doors. How many doors are there in 3 office buildings?",
     correct: "525",
     wrong: [["500","The answer \"500\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: In an office building, there are 350 windows and half as many doors. How many doors are there in 3 o.","Before calculating, ask what the question is really counting, ordering, or comparing."],["550","The answer \"550\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: In an office building, there are 350 windows and half as many doors. How many doors are there in 3 o.","Before calculating, ask what the question is really counting, ordering, or comparing."],["575","The answer \"575\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: In an office building, there are 350 windows and half as many doors. How many doors are there in 3 o.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1105,7 +1105,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334107,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 107",
+    title: "Counting a monster’s eyes",
     prompt: "A monster had double the amount of eyes he had ears, triple the amount of ears he had legs, and had six legs. How many eyes did he have?",
     correct: "36",
     wrong: [["34","The answer \"34\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A monster had double the amount of eyes he had ears, triple the amount of ears he had legs, and had .","Before calculating, ask what the question is really counting, ordering, or comparing."],["26","The answer \"26\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A monster had double the amount of eyes he had ears, triple the amount of ears he had legs, and had .","Before calculating, ask what the question is really counting, ordering, or comparing."],["41","The answer \"41\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A monster had double the amount of eyes he had ears, triple the amount of ears he had legs, and had .","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1125,7 +1125,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334109,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 109",
+    title: "Chairs against every wall",
     prompt: "In a rectangular room there are 10 chairs. It is possible to arrange the chairs in such a way so that an equal number of chairs is set against each wall of the room.",
     correct: "True",
     wrong: [["False","The answer \"False\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: In a rectangular room there are 10 chairs. It is possible to arrange the chairs in such a way so tha.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1135,7 +1135,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334110,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 110",
+    title: "Sum of siblings’ ages",
     prompt: "Five years ago the sum of the age of a sister and a brother was 8. What will be the same sum in 5 years?",
     correct: "28",
     wrong: [["It will not change.","The answer \"It will not change.\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Five years ago the sum of the age of a sister and a brother was 8. What will be the same sum in 5 ye.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["18","The answer \"18\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Five years ago the sum of the age of a sister and a brother was 8. What will be the same sum in 5 ye.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["13","The answer \"13\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Five years ago the sum of the age of a sister and a brother was 8. What will be the same sum in 5 ye.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1145,7 +1145,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334111,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 111",
+    title: "Two mothers and two daughters",
     prompt: "In a room, there can be two mothers and two daughters, three women in total.",
     correct: "True",
     wrong: [["False","The answer \"False\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: In a room, there can be two mothers and two daughters, three women in total..","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1155,7 +1155,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334112,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 112",
+    title: "Decoding a family relationship",
     prompt: "A woman once said about a man, I am not his wife but this mans mother is the mother-in-law of my mother. What were the man and the woman?",
     correct: "A daughter and a father",
     wrong: [["A daughter and a grandfather","The answer \"A daughter and a grandfather\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A woman once said about a man, I am not his wife but this mans mother is the mother-in-law of my mot.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["A brother and a sister","The answer \"A brother and a sister\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A woman once said about a man, I am not his wife but this mans mother is the mother-in-law of my mot.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["A mother and a son","The answer \"A mother and a son\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A woman once said about a man, I am not his wife but this mans mother is the mother-in-law of my mot.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1165,7 +1165,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334113,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 113",
+    title: "Oxen, cows, and calves",
     prompt: "A cowboy was looking after 100 animals (oxen, cows and calves). For his job he was paid $100 (for every ox he received $10, for every cow $5 and for every calf $0.5). How many were the oxen, the cows and the calves?",
     correct: "1 ox, 9 cows, 90 calves",
     wrong: [["9 oxen, 1 cow, 10 calves","The answer \"9 oxen, 1 cow, 10 calves\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A cowboy was looking after 100 animals (oxen, cows and calves). For his job he was paid $100 (for ev.","Before calculating, ask what the question is really counting, ordering, or comparing."],["10 oxen, 10 cows, 10 calves","The answer \"10 oxen, 10 cows, 10 calves\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A cowboy was looking after 100 animals (oxen, cows and calves). For his job he was paid $100 (for ev.","Before calculating, ask what the question is really counting, ordering, or comparing."],["3 oxen, 50 cows, 47 calves","The answer \"3 oxen, 50 cows, 47 calves\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A cowboy was looking after 100 animals (oxen, cows and calves). For his job he was paid $100 (for ev.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1175,7 +1175,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334114,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 114",
+    title: "Dividing cows by milk yield",
     prompt: "A farmer had 9 cows. The first one produced 1 gallon of milk, the second one 2 gallons and so on. The ninth cow produced 9 gallons of milk. The farmer had three sons and he wanted to divide the cows in such a way that each of his sons received an equal number of cows and the cows of each produced an equal amount of milk. Is that possible?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A farmer had 9 cows. The first one produced 1 gallon of milk, the second one 2 gallons and so on. Th.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1185,7 +1185,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334115,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 115",
+    title: "Lilies doubling on a lake",
     prompt: "In a lake there were lilies. The strange thing about them was that they doubled their number once per day. If on the 15th day half of the lake was covered with lilies, on which day will the whole lake be covered with them?",
     correct: "16",
     wrong: [["22","The answer \"22\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: In a lake there were lilies. The strange thing about them was that they doubled their number once pe.","Before calculating, ask what the question is really counting, ordering, or comparing."],["7","The answer \"7\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: In a lake there were lilies. The strange thing about them was that they doubled their number once pe.","Before calculating, ask what the question is really counting, ordering, or comparing."],["30","The answer \"30\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: In a lake there were lilies. The strange thing about them was that they doubled their number once pe.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1195,7 +1195,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334116,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 116",
+    title: "Breeding sheep over years",
     prompt: "A peasant buys a pregnant sheep, which gave birth to a lamb. At the age of 3, the lamb gives birth to another lamb. After that it starts bearing a lamb per year. How many sheep will the peasant have 9 years after the birth of the first lamb if all the lambs are female and none of them ever dies?",
     correct: "60",
     wrong: [["54","The answer \"54\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A peasant buys a pregnant sheep, which gave birth to a lamb. At the age of 3, the lamb gives birth t.","Before calculating, ask what the question is really counting, ordering, or comparing."],["78","The answer \"78\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A peasant buys a pregnant sheep, which gave birth to a lamb. At the age of 3, the lamb gives birth t.","Before calculating, ask what the question is really counting, ordering, or comparing."],["97","The answer \"97\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A peasant buys a pregnant sheep, which gave birth to a lamb. At the age of 3, the lamb gives birth t.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1205,7 +1205,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334117,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 117",
+    title: "Doubling a square yard",
     prompt: "A farmer had a yard, whose shape was a square, and in the four corners of this square there were apple trees. Some years later the farmer decided to make his yard twice as big and preserve the square shape. However, after the enlargement the four apple trees were still by the fence.",
     correct: "True",
     wrong: [["False","The answer \"False\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: A farmer had a yard, whose shape was a square, and in the four corners of this square there were app.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1215,7 +1215,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334118,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 118",
+    title: "Meaning of funereal",
     prompt: "Marsha dug her FUNEREAL attire out of the closet. It consisted of a black dress and a black overcoat. What does funereal mean?",
     correct: "having to do with a funeral",
     wrong: [["monotoned","The answer \"monotoned\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: Marsha dug her FUNEREAL attire out of the closet. It consisted of a black dress and a black overcoat.","Look for the quiet twist before committing to the obvious answer."],["frumpy","The answer \"frumpy\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: Marsha dug her FUNEREAL attire out of the closet. It consisted of a black dress and a black overcoat.","Look for the quiet twist before committing to the obvious answer."],["oversized","The answer \"oversized\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: Marsha dug her FUNEREAL attire out of the closet. It consisted of a black dress and a black overcoat.","Look for the quiet twist before committing to the obvious answer."]],
@@ -1225,7 +1225,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334119,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 119",
+    title: "Meaning of harbinger",
     prompt: "The newly blooming lavender was a HARBINGER of spring. It was beautiful and fragrant. What does harbinger mean?",
     correct: "a sign of things to come",
     wrong: [["an ode","The answer \"an ode\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: The newly blooming lavender was a HARBINGER of spring. It was beautiful and fragrant. What does harb.","Look for the quiet twist before committing to the obvious answer."],["rebirth","The answer \"rebirth\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: The newly blooming lavender was a HARBINGER of spring. It was beautiful and fragrant. What does harb.","Look for the quiet twist before committing to the obvious answer."],["pleasant to the senses","The answer \"pleasant to the senses\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: The newly blooming lavender was a HARBINGER of spring. It was beautiful and fragrant. What does harb.","Look for the quiet twist before committing to the obvious answer."]],
@@ -1235,7 +1235,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334120,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 120",
+    title: "Meaning of monomania",
     prompt: "Her passion for art bordered on pathological MONOMANIA. Shes a sculptor, studies medieval art in night classes, frequents galleries and is often caught doodling in a notebook. What does monomania mean?",
     correct: "excessive concentration one one subject",
     wrong: [["excessively busy","The answer \"excessively busy\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Her passion for art bordered on pathological MONOMANIA. Shes a sculptor, studies medieval art in nig.","Look for the one assumption that makes the situation possible or impossible."],["extremely wealthy","The answer \"extremely wealthy\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Her passion for art bordered on pathological MONOMANIA. Shes a sculptor, studies medieval art in nig.","Look for the one assumption that makes the situation possible or impossible."],["patronising culture","The answer \"patronising culture\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Her passion for art bordered on pathological MONOMANIA. Shes a sculptor, studies medieval art in nig.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1245,7 +1245,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334121,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 121",
+    title: "Meaning of kismet",
     prompt: "It wasnt accidental it was pure KISMET that Joey fell in love with Laura. What does kismet mean?",
     correct: "fate, destiny",
     wrong: [["contrived, forced","The answer \"contrived, forced\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: It wasnt accidental it was pure KISMET that Joey fell in love with Laura. What does kismet mean?.","Look for the quiet twist before committing to the obvious answer."],["planned","The answer \"planned\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: It wasnt accidental it was pure KISMET that Joey fell in love with Laura. What does kismet mean?.","Look for the quiet twist before committing to the obvious answer."],["a happy accident","The answer \"a happy accident\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: It wasnt accidental it was pure KISMET that Joey fell in love with Laura. What does kismet mean?.","Look for the quiet twist before committing to the obvious answer."]],
@@ -1255,7 +1255,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334122,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 122",
+    title: "Meaning of polyglot",
     prompt: "Because Ben travels to many countries for business, he has written a POLYGLOT lexicon for himself. It contains quick references on phrases he might need in any given situation. What does polyglot mean?",
     correct: "containing many languages",
     wrong: [["containing many maps","The answer \"containing many maps\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: Because Ben travels to many countries for business, he has written a POLYGLOT lexicon for himself. I.","Look for the quiet twist before committing to the obvious answer."],["containing many words","The answer \"containing many words\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: Because Ben travels to many countries for business, he has written a POLYGLOT lexicon for himself. I.","Look for the quiet twist before committing to the obvious answer."],["pertaining to business ventures","The answer \"pertaining to business ventures\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: Because Ben travels to many countries for business, he has written a POLYGLOT lexicon for himself. I.","Look for the quiet twist before committing to the obvious answer."]],
@@ -1275,7 +1275,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334124,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 124",
+    title: "Meaning of philter",
     prompt: "The fortune teller persuaded Anna that she needed a PHILTER to gain the attention of her beau. She only needed to apply the elixir and think of him. What does PHILTER mean?",
     correct: "love potion",
     wrong: [["medicinal cream","The answer \"medicinal cream\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: The fortune teller persuaded Anna that she needed a PHILTER to gain the attention of her beau. She o.","Look for the quiet twist before committing to the obvious answer."],["makeup","The answer \"makeup\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: The fortune teller persuaded Anna that she needed a PHILTER to gain the attention of her beau. She o.","Look for the quiet twist before committing to the obvious answer."],["alcoholic beverage","The answer \"alcoholic beverage\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: The fortune teller persuaded Anna that she needed a PHILTER to gain the attention of her beau. She o.","Look for the quiet twist before committing to the obvious answer."]],
@@ -1285,7 +1285,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334125,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 125",
+    title: "Meaning of brusque",
     prompt: "Matt and Julie asked their son How was your day at school? and they always received the same BRUSQUE answer-fine. Brusque means habitual, constant, the same.",
     correct: "False",
     wrong: [["True","The answer \"True\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Matt and Julie asked their son How was your day at school? and they always received the same BRUSQUE.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1295,7 +1295,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334126,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 126",
+    title: "Meaning of gambol",
     prompt: "Jack grabbed Janets hand and they began to GAMBOL in the sunshine. They felt like children, not a care in the world. What does gambol mean?",
     correct: "to frolic and leap playfully",
     wrong: [["to wager money on an outcome","The answer \"to wager money on an outcome\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Jack grabbed Janets hand and they began to GAMBOL in the sunshine. They felt like children, not a ca.","Look for the one assumption that makes the situation possible or impossible."],["to sing a duet","The answer \"to sing a duet\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Jack grabbed Janets hand and they began to GAMBOL in the sunshine. They felt like children, not a ca.","Look for the one assumption that makes the situation possible or impossible."],["to have sex","The answer \"to have sex\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Jack grabbed Janets hand and they began to GAMBOL in the sunshine. They felt like children, not a ca.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1315,7 +1315,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334128,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 128",
+    title: "Three generations share apples",
     prompt: "After a long walk, two sons and two fathers find three apples. Each of them has an apple and they all go their way. How is that possible?",
     correct: "they were a boy, his father and his grandfather",
     wrong: [["the sons were cousins","The answer \"the sons were cousins\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: After a long walk, two sons and two fathers find three apples. Each of them has an apple and they al.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["one of them had a hidden apple","The answer \"one of them had a hidden apple\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: After a long walk, two sons and two fathers find three apples. Each of them has an apple and they al.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["the sons were twins","The answer \"the sons were twins\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: After a long walk, two sons and two fathers find three apples. Each of them has an apple and they al.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1335,7 +1335,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334130,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 130",
+    title: "Seating order on a train",
     prompt: "Five girls are sitting next to each other on a train. Ann and Betty are as close to each other as Ann and Kate are. Dana and Ann are sitting as close to each other as Dana and Kate are. Between which two of her friends is the fifth girl, Jane, sitting?",
     correct: "between Ann and Betty",
     wrong: [["between Dana and Betty","The answer \"between Dana and Betty\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Five girls are sitting next to each other on a train. Ann and Betty are as close to each other as An.","Before calculating, ask what the question is really counting, ordering, or comparing."],["between Betty and Kate","The answer \"between Betty and Kate\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Five girls are sitting next to each other on a train. Ann and Betty are as close to each other as An.","Before calculating, ask what the question is really counting, ordering, or comparing."],["between Kate and Dana","The answer \"between Kate and Dana\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Five girls are sitting next to each other on a train. Ann and Betty are as close to each other as An.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1345,7 +1345,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334131,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 131",
+    title: "Solving for the number",
     prompt: "What number multiplied by 10 equals the square of the same number, times 5?",
     correct: "2",
     wrong: [["4","The answer \"4\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: What number multiplied by 10 equals the square of the same number, times 5?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["5","The answer \"5\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: What number multiplied by 10 equals the square of the same number, times 5?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["10","The answer \"10\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: What number multiplied by 10 equals the square of the same number, times 5?.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1355,7 +1355,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334132,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 132",
+    title: "Fastest way to find a page",
     prompt: "Bob has a book of 100 pages and in 10 seconds he can count out 10 pages. What is the shortest time in which Bob can define where the 60th page is?",
     correct: "40 seconds",
     wrong: [["59 seconds","The answer \"59 seconds\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Bob has a book of 100 pages and in 10 seconds he can count out 10 pages. What is the shortest time i.","Before calculating, ask what the question is really counting, ordering, or comparing."],["15 seconds","The answer \"15 seconds\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Bob has a book of 100 pages and in 10 seconds he can count out 10 pages. What is the shortest time i.","Before calculating, ask what the question is really counting, ordering, or comparing."],["60 seconds","The answer \"60 seconds\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Bob has a book of 100 pages and in 10 seconds he can count out 10 pages. What is the shortest time i.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1365,7 +1365,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334133,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 133",
+    title: "Crossing from opposite banks",
     prompt: "Two people get to a river and find a boat capable of accommodating only one person. Using this boat, both of them manage to cross the river. If they crossed without any of the them swiming the river which of the following is true?",
     correct: "They were on different banks of the river.",
     wrong: [["The river was wider than longer.","The answer \"The river was wider than longer.\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Two people get to a river and find a boat capable of accommodating only one person. Using this boat,.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["This is impossible.","The answer \"This is impossible.\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Two people get to a river and find a boat capable of accommodating only one person. Using this boat,.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["There was a bridge on the river.","The answer \"There was a bridge on the river.\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Two people get to a river and find a boat capable of accommodating only one person. Using this boat,.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1385,7 +1385,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334135,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 135",
+    title: "Latin term persona non grata",
     prompt: "Complete the Latin term for an unacceptable person: persona non _____.",
     correct: "grata",
     wrong: [["dedicata","The answer \"dedicata\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Complete the Latin term for an unacceptable person: persona non _____..","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["accepta","The answer \"accepta\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Complete the Latin term for an unacceptable person: persona non _____..","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["ingrata","The answer \"ingrata\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Complete the Latin term for an unacceptable person: persona non _____..","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1395,7 +1395,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334136,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 136",
+    title: "Birds left after shooting",
     prompt: "There are 15 birds sitting on the branches of a tree. A hunter goes by and shoots 3 of them. How many birds are left on the tree?",
     correct: "0",
     wrong: [["12","The answer \"12\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: There are 15 birds sitting on the branches of a tree. A hunter goes by and shoots 3 of them. How man.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["10","The answer \"10\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: There are 15 birds sitting on the branches of a tree. A hunter goes by and shoots 3 of them. How man.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["3","The answer \"3\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: There are 15 birds sitting on the branches of a tree. A hunter goes by and shoots 3 of them. How man.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1405,7 +1405,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334137,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 137",
+    title: "Fisherman’s fish riddle",
     prompt: "A man walked by an old fisherman and asked him how many fish he had caught. The fisherman replied: The half of the eight, the nine without its tail, and the six without its head. How many fish did the fisherman caught?",
     correct: "0",
     wrong: [["9","The answer \"9\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A man walked by an old fisherman and asked him how many fish he had caught. The fisherman replied: T.","Before calculating, ask what the question is really counting, ordering, or comparing."],["19","The answer \"19\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A man walked by an old fisherman and asked him how many fish he had caught. The fisherman replied: T.","Before calculating, ask what the question is really counting, ordering, or comparing."],["6","The answer \"6\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A man walked by an old fisherman and asked him how many fish he had caught. The fisherman replied: T.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1415,7 +1415,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334138,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 138",
+    title: "Ant climbing a tree",
     prompt: "A tree is 20 meters tall. An ant is climbing it. Every day the ant climbs 5 meters, and each night it descends 4 meters. In how many days will the ant reach the top of the tree?",
     correct: "16",
     wrong: [["10","The answer \"10\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A tree is 20 meters tall. An ant is climbing it. Every day the ant climbs 5 meters, and each night i.","Before calculating, ask what the question is really counting, ordering, or comparing."],["13","The answer \"13\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A tree is 20 meters tall. An ant is climbing it. Every day the ant climbs 5 meters, and each night i.","Before calculating, ask what the question is really counting, ordering, or comparing."],["20","The answer \"20\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A tree is 20 meters tall. An ant is climbing it. Every day the ant climbs 5 meters, and each night i.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1425,7 +1425,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334139,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 139",
+    title: "Weighing a bar of soap",
     prompt: "A bar of soap is placed on one of the sides of a pair of scales. On the other side there is 3/4 of a bar of the same soap and а 3/4 kg metal weight. The scales are in balance. How much does a bar of soap weigh?",
     correct: "3 kg",
     wrong: [["2 kg","The answer \"2 kg\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A bar of soap is placed on one of the sides of a pair of scales. On the other side there is 3/4 of a.","Before calculating, ask what the question is really counting, ordering, or comparing."],["1 kg","The answer \"1 kg\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A bar of soap is placed on one of the sides of a pair of scales. On the other side there is 3/4 of a.","Before calculating, ask what the question is really counting, ordering, or comparing."],["4 kg","The answer \"4 kg\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A bar of soap is placed on one of the sides of a pair of scales. On the other side there is 3/4 of a.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1435,7 +1435,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334140,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 140",
+    title: "Apples for a matching pair",
     prompt: "There are three sorts of apples in a basket. How many apples have to be taken from the basket, without looking, to be sure that there are at least 2 apples of the same sort?",
     correct: "4",
     wrong: [["3","The answer \"3\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: There are three sorts of apples in a basket. How many apples have to be taken from the basket, witho.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["10","The answer \"10\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: There are three sorts of apples in a basket. How many apples have to be taken from the basket, witho.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["8","The answer \"8\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: There are three sorts of apples in a basket. How many apples have to be taken from the basket, witho.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1445,7 +1445,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334141,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 141",
+    title: "Cats balancing the boy",
     prompt: "A boy and a pig weigh as much as 5 crates. The pig weighs as much as 4 cats. 2 cats and the pig weigh as much as 3 crates. How many cats weigh as much as the boy?",
     correct: "6 cats",
     wrong: [["5 cats","The answer \"5 cats\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A boy and a pig weigh as much as 5 crates. The pig weighs as much as 4 cats. 2 cats and the pig weig.","Before calculating, ask what the question is really counting, ordering, or comparing."],["8 cats","The answer \"8 cats\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A boy and a pig weigh as much as 5 crates. The pig weighs as much as 4 cats. 2 cats and the pig weig.","Before calculating, ask what the question is really counting, ordering, or comparing."],["9 cats","The answer \"9 cats\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A boy and a pig weigh as much as 5 crates. The pig weighs as much as 4 cats. 2 cats and the pig weig.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1455,7 +1455,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334142,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 142",
+    title: "Price of a fish equation",
     prompt: "A market sign says one fish costs a dollar plus half of a fish. Treat the price of one fish as the unknown, solve the little equation, and then find the cost of five fish.",
     correct: "$10",
     wrong: [["$20","This makes one fish cost $4, which is too high for the equation F = 1 + half of F.","Move the half-fish price to the other side of the equation."],["$15","This treats the wording like each fish costs $3, but the half-fish part depends on the same unknown price.","Do not turn 'half a fish' into a fixed extra dollar amount too early."],["$5","This ignores the half-fish part and prices each fish at only $1.","The sentence says one fish costs more than a dollar."],["$7.50","This assumes the half fish costs 50 cents, which would only be true if a whole fish cost $1.","The half-fish price has to be half of the final fish price."],["$2","This is the cost of one fish, not five fish.","After solving the single-fish price, multiply by 5."]],
@@ -1472,7 +1472,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334143,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 143",
+    title: "Finding the lighter lemon",
     prompt: "There are three lemons. One of them is lighter than the other two, which have the same weight. Can we tell which of the lemons is the lighter one with just one measurement on the scales?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: There are three lemons. One of them is lighter than the other two, which have the same weight. Can w.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1482,7 +1482,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334144,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 144",
+    title: "Counting the father’s children",
     prompt: "A father has seven sons, and each son has one sister. How many children does the father have?",
     correct: "8",
     wrong: [["15","The answer \"15\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A father has seven sons, and each son has one sister. How many children does the father have?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["9","The answer \"9\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A father has seven sons, and each son has one sister. How many children does the father have?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["14","The answer \"14\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A father has seven sons, and each son has one sister. How many children does the father have?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1492,7 +1492,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334145,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 145",
+    title: "Rabbits and hens by legs",
     prompt: "Several rabbits and hens are placed together in a cage. How many rabbits and hens are there, if the total number of their heads is 35, and the combined number of their legs is 94?",
     correct: "12 rabbits and 23 hens",
     wrong: [["10 rabbits and 24 hens","The answer \"10 rabbits and 24 hens\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Several rabbits and hens are placed together in a cage. How many rabbits and hens are there, if the .","Before calculating, ask what the question is really counting, ordering, or comparing."],["13 rabbits and 20 hens","The answer \"13 rabbits and 20 hens\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Several rabbits and hens are placed together in a cage. How many rabbits and hens are there, if the .","Before calculating, ask what the question is really counting, ordering, or comparing."],["20 rabbits and 13 hens","The answer \"20 rabbits and 13 hens\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Several rabbits and hens are placed together in a cage. How many rabbits and hens are there, if the .","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1512,7 +1512,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334147,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 147",
+    title: "Unlisted numbers in a phone book",
     prompt: "10% of all the people living in a certain town in Georgia have unlisted phone numbers. If you selected 100 names at random from the towns phone book, on average, how many of these people would have unlisted phone numbers?",
     correct: "0%",
     wrong: [["15%","The answer \"15%\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: 10% of all the people living in a certain town in Georgia have unlisted phone numbers. If you select.","Before calculating, ask what the question is really counting, ordering, or comparing."],["35%","The answer \"35%\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: 10% of all the people living in a certain town in Georgia have unlisted phone numbers. If you select.","Before calculating, ask what the question is really counting, ordering, or comparing."],["10%","The answer \"10%\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: 10% of all the people living in a certain town in Georgia have unlisted phone numbers. If you select.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1522,7 +1522,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334148,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 148",
+    title: "Dropping a glass without spilling",
     prompt: "A magician had a water glass filled to the top. Holding the glass above his head he let it drop to the floor without spilling a single drop of water. Is this possible?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: A magician had a water glass filled to the top. Holding the glass above his head he let it drop to t.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1542,7 +1542,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334150,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 150",
+    title: "Naming three consecutive days",
     prompt: "Is it possible to name three consecutive days without using the words Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Is it possible to name three consecutive days without using the words Monday, Tuesday, Wednesday, Th.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1552,7 +1552,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334151,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 151",
+    title: "Rope ladder and the tide",
     prompt: "You are on a ship and over the side hangs a rope ladder with one foot rungs. The tide rises a one foot per hour. At the end of five hours, how much of the ladder will remain above the water assuming that 12 rungs were above the water when the tide began to rise?",
     correct: "12 rungs",
     wrong: [["none","The answer \"none\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You are on a ship and over the side hangs a rope ladder with one foot rungs. The tide rises a one fo.","Before calculating, ask what the question is really counting, ordering, or comparing."],["7 rungs","The answer \"7 rungs\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You are on a ship and over the side hangs a rope ladder with one foot rungs. The tide rises a one fo.","Before calculating, ask what the question is really counting, ordering, or comparing."],["5 rungs","The answer \"5 rungs\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You are on a ship and over the side hangs a rope ladder with one foot rungs. The tide rises a one fo.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1562,7 +1562,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334152,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 152",
+    title: "Spaniel gun dog breed",
     prompt: "This is a gun dog breed which is subdivided into Springer, Cocker, Cavalier King Charles, etc.",
     correct: "Spaniel",
     wrong: [["Collie","The answer \"Collie\" falls for a truth-teller logic trick. This question does not force truth-tellers and liars into different outcomes, so it cannot identify the situation reliably. The clue to reread is: This is a gun dog breed which is subdivided into Springer, Cocker, Cavalier King Charles, etc..","For liar/truth puzzles, ask a question whose answer changes depending on the rule system."],["Labrador","The answer \"Labrador\" falls for a truth-teller logic trick. This question does not force truth-tellers and liars into different outcomes, so it cannot identify the situation reliably. The clue to reread is: This is a gun dog breed which is subdivided into Springer, Cocker, Cavalier King Charles, etc..","For liar/truth puzzles, ask a question whose answer changes depending on the rule system."],["Alsatian","The answer \"Alsatian\" falls for a truth-teller logic trick. This question does not force truth-tellers and liars into different outcomes, so it cannot identify the situation reliably. The clue to reread is: This is a gun dog breed which is subdivided into Springer, Cocker, Cavalier King Charles, etc..","For liar/truth puzzles, ask a question whose answer changes depending on the rule system."]],
@@ -1572,7 +1572,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334153,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 153",
+    title: "The antelope family",
     prompt: "What family of animals has species called Oryx, Duiker, Dik-dik and Impala?",
     correct: "Antelope",
     wrong: [["Llamas","The answer \"Llamas\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: What family of animals has species called Oryx, Duiker, Dik-dik and Impala?.","Look for the quiet twist before committing to the obvious answer."],["Deer","The answer \"Deer\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: What family of animals has species called Oryx, Duiker, Dik-dik and Impala?.","Look for the quiet twist before committing to the obvious answer."],["Buffalo","The answer \"Buffalo\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: What family of animals has species called Oryx, Duiker, Dik-dik and Impala?.","Look for the quiet twist before committing to the obvious answer."]],
@@ -1582,7 +1582,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334154,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 154",
+    title: "Only venomous British snake",
     prompt: "What is the only venomous snake native to the British Isles?",
     correct: "Adder",
     wrong: [["Fox Snake","The answer \"Fox Snake\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: What is the only venomous snake native to the British Isles?.","Look for the one assumption that makes the situation possible or impossible."],["Bog Viper","The answer \"Bog Viper\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: What is the only venomous snake native to the British Isles?.","Look for the one assumption that makes the situation possible or impossible."],["Pembrokeshire Whip-snake","The answer \"Pembrokeshire Whip-snake\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: What is the only venomous snake native to the British Isles?.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1592,7 +1592,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334155,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 155",
+    title: "The meerkat",
     prompt: "This animal, also known as Suricate, is a member of the mongoose family. It has a long, thin tail which is used for balance when standing on hind legs. It lives underground in colonies of up to 30 individuals that operate an early warning system where sentries stand guard beside the burrow entrances and warn of approaching danger from predators.",
     correct: "Meerkat",
     wrong: [["Marmoset","The answer \"Marmoset\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: This animal, also known as Suricate, is a member of the mongoose family. It has a long, thin tail wh.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Aye-aye","The answer \"Aye-aye\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: This animal, also known as Suricate, is a member of the mongoose family. It has a long, thin tail wh.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Jackrabbit","The answer \"Jackrabbit\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: This animal, also known as Suricate, is a member of the mongoose family. It has a long, thin tail wh.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1602,7 +1602,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334156,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 156",
+    title: "National bird of America",
     prompt: "This majestic bird can be golden, bald and tawny. One of the species is a symbol of the United States of America.",
     correct: "Eagle",
     wrong: [["Cuckoo","The answer \"Cuckoo\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: This majestic bird can be golden, bald and tawny. One of the species is a symbol of the United State.","Look for the quiet twist before committing to the obvious answer."],["Vulture","The answer \"Vulture\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: This majestic bird can be golden, bald and tawny. One of the species is a symbol of the United State.","Look for the quiet twist before committing to the obvious answer."],["Owl","The answer \"Owl\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: This majestic bird can be golden, bald and tawny. One of the species is a symbol of the United State.","Look for the quiet twist before committing to the obvious answer."]],
@@ -1612,7 +1612,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334157,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 157",
+    title: "X-word for a flammable liquid",
     prompt: "What X-word means a colourless, flammable liquid ingredient used to make synthetic resins, dyes and insecticides?",
     correct: "Xylene",
     wrong: [["Xylose","The answer \"Xylose\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: What X-word means a colourless, flammable liquid ingredient used to make synthetic resins, dyes and .","Look for the one assumption that makes the situation possible or impossible."],["Xylem","The answer \"Xylem\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: What X-word means a colourless, flammable liquid ingredient used to make synthetic resins, dyes and .","Look for the one assumption that makes the situation possible or impossible."],["Xenon","The answer \"Xenon\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: What X-word means a colourless, flammable liquid ingredient used to make synthetic resins, dyes and .","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1632,7 +1632,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334159,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 159",
+    title: "Water-conducting plant tissue",
     prompt: "What plant tissue conducts water and mineral salts from its roots to other parts of the plant and also provides mechanical support?",
     correct: "Xylem",
     wrong: [["Xylose","The answer \"Xylose\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: What plant tissue conducts water and mineral salts from its roots to other parts of the plant and al.","Look for the quiet twist before committing to the obvious answer."],["Xylene","The answer \"Xylene\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: What plant tissue conducts water and mineral salts from its roots to other parts of the plant and al.","Look for the quiet twist before committing to the obvious answer."],["Xebec","The answer \"Xebec\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: What plant tissue conducts water and mineral salts from its roots to other parts of the plant and al.","Look for the quiet twist before committing to the obvious answer."]],
@@ -1642,7 +1642,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334160,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 160",
+    title: "A rare odourless gas",
     prompt: "Which word refers to a colourless, odourless gaseous element that occurs in trace amounts in air?",
     correct: "Xenon",
     wrong: [["Xylose","The answer \"Xylose\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Which word refers to a colourless, odourless gaseous element that occurs in trace amounts in air?.","Look for the one assumption that makes the situation possible or impossible."],["Xanthene","The answer \"Xanthene\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Which word refers to a colourless, odourless gaseous element that occurs in trace amounts in air?.","Look for the one assumption that makes the situation possible or impossible."],["Xylene","The answer \"Xylene\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Which word refers to a colourless, odourless gaseous element that occurs in trace amounts in air?.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1652,7 +1652,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334161,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 161",
+    title: "Original name for X-rays",
     prompt: "Were X-rays at one time proposed to be called Röntgen rays?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Were X-rays at one time proposed to be called Röntgen rays?.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1662,7 +1662,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334162,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 162",
+    title: "Comparing two products",
     prompt: "When you add 55 and 45 the sum is 100. When you add 65 and 35 the sum is also 100. But which is greater: 55 multiplied by 45 or 65 multiplied by 35?",
     correct: "55 multiplied by 45",
     wrong: [["They are equal.","The answer \"They are equal.\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: When you add 55 and 45 the sum is 100. When you add 65 and 35 the sum is also 100. But which is grea.","Before calculating, ask what the question is really counting, ordering, or comparing."],["65 multiplied by 35","The answer \"65 multiplied by 35\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: When you add 55 and 45 the sum is 100. When you add 65 and 35 the sum is also 100. But which is grea.","Before calculating, ask what the question is really counting, ordering, or comparing."],["None of these","The answer \"None of these\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: When you add 55 and 45 the sum is 100. When you add 65 and 35 the sum is also 100. But which is grea.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1672,7 +1672,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334163,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 163",
+    title: "Two doctors and two mothers",
     prompt: "Two doctors and two mothers went to an ice cream shop. Each one of them ordered different flavors. The waiter then gave them one chocolate, one vanilla, and one strawberry and everybody on the table had an ice cream. Is this possible?",
     correct: "Yes",
     wrong: [["No","The answer \"No\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: Two doctors and two mothers went to an ice cream shop. Each one of them ordered different flavors. T.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1682,7 +1682,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334164,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 164",
+    title: "Deducing the day of the week",
     prompt: "Two children were on their way to school, when they began to question what day of the week it was. They were so confused in their reckoning that one of them gave the following riddle to help sort the matter out: When the day after tomorrow is yesterday, then today will be as far from Sunday as that day was which was today when the day before yesterday was tomorrow!",
     correct: "Sunday",
     wrong: [["Saturday","The answer \"Saturday\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Two children were on their way to school, when they began to question what day of the week it was. T.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Friday","The answer \"Friday\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Two children were on their way to school, when they began to question what day of the week it was. T.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Monday","The answer \"Monday\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Two children were on their way to school, when they began to question what day of the week it was. T.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1692,7 +1692,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334165,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 165",
+    title: "Age of Diophantus",
     prompt: "We know very little about the life of the mathematician Diophantus (called the father of algebra) except that he lived around the year 250 B.C. Due to one admirer of his, who described his life by the means of an algebraic riddle, we can at least determine his age at death:",
     correct: "84 years",
     wrong: [["96 years","The answer \"96 years\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: We know very little about the life of the mathematician Diophantus (called the father of algebra) ex.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["90 years","The answer \"90 years\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: We know very little about the life of the mathematician Diophantus (called the father of algebra) ex.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["72 years","The answer \"72 years\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: We know very little about the life of the mathematician Diophantus (called the father of algebra) ex.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1702,7 +1702,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334166,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 166",
+    title: "Identifying the three goddesses",
     prompt: "Three goddesses were sitting in an old Indian temple. Their names were Truth (who always tells the truth), Lie (who is always lying) and Wisdom (who sometimes lies). In order to figure out which goddess was which you posed the following questions to each:",
     correct: "1. Wisdom 2. Lie 3. Truth",
     wrong: [["1. Wisdom 2. Truth 3. Lie","The answer \"1. Wisdom 2. Truth 3. Lie\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Three goddesses were sitting in an old Indian temple. Their names were Truth (who always tells the t.","Before calculating, ask what the question is really counting, ordering, or comparing."],["1. Lie 2.Truth 3. Wisdom","The answer \"1. Lie 2.Truth 3. Wisdom\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Three goddesses were sitting in an old Indian temple. Their names were Truth (who always tells the t.","Before calculating, ask what the question is really counting, ordering, or comparing."],["1. Truth 2. Lie 3. Wisdom","The answer \"1. Truth 2. Lie 3. Wisdom\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Three goddesses were sitting in an old Indian temple. Their names were Truth (who always tells the t.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1712,7 +1712,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334167,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 167",
+    title: "Honestants and Swindlecants",
     prompt: "There are two kinds of people who live on a mysterious island. They are the so-called Honestants, who always speak the truth, and the others are the Swindlecants, who always lie.",
     correct: "No",
     wrong: [["visitor to the island went to a local pub and had a few drinks. When he was ready to leave he asked the bartender how much he owed. The bartender told him the total for his bill. It was quite expensive, so he asked the bartender if he spoke the truth. But the visitor did not hear the whispered answer so he asked a man sitting next to him about it. And the man said: The bartender said yes, but he is a big liar.","The answer \"visitor to the island went to a local pub and had a few drinks. When he was ready to leave he asked the bartender how much he owed. The bartender told him the total for his bill. It was quite expensive, so he asked the bartender if he spoke the truth. But the visitor did not hear the whispered answer so he asked a man sitting next to him about it. And the man said: The bartender said yes, but he is a big liar.\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: There are two kinds of people who live on a mysterious island. They are the so-called Honestants, wh.","Look for the one assumption that makes the situation possible or impossible."],["Yes","The answer \"Yes\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: There are two kinds of people who live on a mysterious island. They are the so-called Honestants, wh.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1722,7 +1722,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334168,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 168",
+    title: "Cakes for Grandma",
     prompt: "You are on your way to visit your Grandma, who lives at the end of the valley. Its her birthday, and you want to give her the cakes youve made.",
     correct: "2",
     wrong: [["14","The answer \"14\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You are on your way to visit your Grandma, who lives at the end of the valley. Its her birthday, and.","Before calculating, ask what the question is really counting, ordering, or comparing."],["5","The answer \"5\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You are on your way to visit your Grandma, who lives at the end of the valley. Its her birthday, and.","Before calculating, ask what the question is really counting, ordering, or comparing."],["24","The answer \"24\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You are on your way to visit your Grandma, who lives at the end of the valley. Its her birthday, and.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1732,7 +1732,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334169,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 169",
+    title: "Ages of three generations",
     prompt: "My grandson is about as many days as my son is weeks, and my grandson is as many months as I am in years. My grandson, my son and I together are 120 years. Can you tell me my age in years?",
     correct: "72",
     wrong: [["65","The answer \"65\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: My grandson is about as many days as my son is weeks, and my grandson is as many months as I am in y.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["78","The answer \"78\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: My grandson is about as many days as my son is weeks, and my grandson is as many months as I am in y.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["84","The answer \"84\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: My grandson is about as many days as my son is weeks, and my grandson is as many months as I am in y.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1742,7 +1742,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334170,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 170",
+    title: "Handshakes in a classroom",
     prompt: "It was Emilys first day at school. The teacher suggested that it would be a good idea for each child to meet every other child in the class. The teacher said, When you meet, please shake hands and introduce yourself by name. If there were 10 children in the class, how many were the total handshakes?",
     correct: "45",
     wrong: [["50","The answer \"50\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: It was Emilys first day at school. The teacher suggested that it would be a good idea for each child.","Before calculating, ask what the question is really counting, ordering, or comparing."],["100","The answer \"100\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: It was Emilys first day at school. The teacher suggested that it would be a good idea for each child.","Before calculating, ask what the question is really counting, ordering, or comparing."],["55","The answer \"55\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: It was Emilys first day at school. The teacher suggested that it would be a good idea for each child.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1762,7 +1762,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334172,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 172",
+    title: "Cans in a square pyramid",
     prompt: "Paul designs food displays for the local Supermarket. For one of his displays, he wants to set up soup cans in the form of a square pyramid. Hes decided to use 10 cans for each side of the square base of the pyramid. If each carton holds 25 soup cans, how many cartons will Paul need to open to build the pyramid?",
     correct: "16",
     wrong: [["10","The answer \"10\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Paul designs food displays for the local Supermarket. For one of his displays, he wants to set up so.","Before calculating, ask what the question is really counting, ordering, or comparing."],["15","The answer \"15\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Paul designs food displays for the local Supermarket. For one of his displays, he wants to set up so.","Before calculating, ask what the question is really counting, ordering, or comparing."],["20","The answer \"20\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Paul designs food displays for the local Supermarket. For one of his displays, he wants to set up so.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1772,7 +1772,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334173,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 173",
+    title: "Rungs on a firefighter’s ladder",
     prompt: "A firefighter stood on the middle rung of a ladder, spraying water on a burning house. He then climbed up 6 rungs before the heat of the flames caused him to come down 10 rungs. After some minutes he was able to climb 18 rungs to the very top of the ladder. How many rungs did the ladder have?",
     correct: "29",
     wrong: [["28","The answer \"28\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A firefighter stood on the middle rung of a ladder, spraying water on a burning house. He then climb.","Before calculating, ask what the question is really counting, ordering, or comparing."],["14","The answer \"14\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A firefighter stood on the middle rung of a ladder, spraying water on a burning house. He then climb.","Before calculating, ask what the question is really counting, ordering, or comparing."],["30","The answer \"30\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A firefighter stood on the middle rung of a ladder, spraying water on a burning house. He then climb.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1782,7 +1782,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334174,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 174",
+    title: "Flaw in the lightning alibi",
     prompt: "A man burst into a police station soaking wet and started screaming My wife has been murdered, my wife has been murdered! A police officer asked what had happened and the man explained that when they were walking along the cliffs of the shore, he heard a big roll of thunder come out of nowhere. No further thunder washeard after the first one. He turned around startled to see what happened and then a huge bolt of lightning struck and he heard his wife scream. He turned around and saw his wife lying mangled on the sharp rocks at the bottom of the cliff, and he saw a man running away. Can the mans story be true?",
     correct: "No",
     wrong: [["Yes","The answer \"Yes\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: A man burst into a police station soaking wet and started screaming My wife has been murdered, my wi.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1792,7 +1792,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334175,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 175",
+    title: "Candles from melted stubs",
     prompt: "The stubs obtained by burning ten candles will yield one extra candle if you melt them all together. If you burned 100 candles, how many extra candles could you make?",
     correct: "11",
     wrong: [["8","The answer \"8\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: The stubs obtained by burning ten candles will yield one extra candle if you melt them all together..","Before calculating, ask what the question is really counting, ordering, or comparing."],["9","The answer \"9\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: The stubs obtained by burning ten candles will yield one extra candle if you melt them all together..","Before calculating, ask what the question is really counting, ordering, or comparing."],["10","The answer \"10\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: The stubs obtained by burning ten candles will yield one extra candle if you melt them all together..","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1822,7 +1822,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334178,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 178",
+    title: "Clock-hand angle at 3:15",
     prompt: "Its quarter past three. Of how many degrees is the angle formed by the hands of the clock at this moment?",
     correct: "7.5",
     wrong: [["180","The answer \"180\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Its quarter past three. Of how many degrees is the angle formed by the hands of the clock at this mo.","Before calculating, ask what the question is really counting, ordering, or comparing."],["15","The answer \"15\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Its quarter past three. Of how many degrees is the angle formed by the hands of the clock at this mo.","Before calculating, ask what the question is really counting, ordering, or comparing."],["0","The answer \"0\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Its quarter past three. Of how many degrees is the angle formed by the hands of the clock at this mo.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1832,7 +1832,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334179,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 179",
+    title: "Solving for Margaret’s age",
     prompt: "Charlie asked Margaret how old she was and she answered him: In two years I will be twice as old as I was five years ago. How old is she?",
     correct: "12",
     wrong: [["6","The answer \"6\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Charlie asked Margaret how old she was and she answered him: In two years I will be twice as old as .","Before calculating, ask what the question is really counting, ordering, or comparing."],["7","The answer \"7\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Charlie asked Margaret how old she was and she answered him: In two years I will be twice as old as .","Before calculating, ask what the question is really counting, ordering, or comparing."],["24","The answer \"24\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Charlie asked Margaret how old she was and she answered him: In two years I will be twice as old as .","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1842,7 +1842,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334180,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 180",
+    title: "Children sharing one brother",
     prompt: "A mother has 6 daughters and each of them has a brother. How many children are there?",
     correct: "7",
     wrong: [["6","The answer \"6\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A mother has 6 daughters and each of them has a brother. How many children are there?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["12","The answer \"12\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A mother has 6 daughters and each of them has a brother. How many children are there?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["10","The answer \"10\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: A mother has 6 daughters and each of them has a brother. How many children are there?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1852,7 +1852,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334181,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 181",
+    title: "Next letter in the sequence",
     prompt: "What is the next letter in the sequence O, T, T, F, F, S, S, E, ?",
     correct: "N",
     wrong: [["O","The answer \"O\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: What is the next letter in the sequence O, T, T, F, F, S, S, E, ?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["T","The answer \"T\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: What is the next letter in the sequence O, T, T, F, F, S, S, E, ?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["E","The answer \"E\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: What is the next letter in the sequence O, T, T, F, F, S, S, E, ?.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1862,7 +1862,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334182,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 182",
+    title: "Day from two liars’ claims",
     prompt: "You meet two men who are playing a game. One of them tells only lies on Monday, Tuesday and Wednesday, and during the rest of the week he speaks the truth. The other one lies only on Thursday Friday and Saturday and says the truth the rest of the time. Today they both say they were lying yesterday. Which day of the week is it?",
     correct: "Thursday",
     wrong: [["Monday","The answer \"Monday\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: You meet two men who are playing a game. One of them tells only lies on Monday, Tuesday and Wednesda.","Look for the one assumption that makes the situation possible or impossible."],["Tuesday","The answer \"Tuesday\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: You meet two men who are playing a game. One of them tells only lies on Monday, Tuesday and Wednesda.","Look for the one assumption that makes the situation possible or impossible."],["Sunday","The answer \"Sunday\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: You meet two men who are playing a game. One of them tells only lies on Monday, Tuesday and Wednesda.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -1872,7 +1872,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334183,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 183",
+    title: "Dessert named for a dancer",
     prompt: "This dessert was created for and named after a famous ballet dancer in 1926.",
     correct: "Pavlova",
     wrong: [["Sara Lee Gateaux","The answer \"Sara Lee Gateaux\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: This dessert was created for and named after a famous ballet dancer in 1926..","Before calculating, ask what the question is really counting, ordering, or comparing."],["Tiramisu","The answer \"Tiramisu\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: This dessert was created for and named after a famous ballet dancer in 1926..","Before calculating, ask what the question is really counting, ordering, or comparing."],["Rocky Road","The answer \"Rocky Road\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: This dessert was created for and named after a famous ballet dancer in 1926..","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1892,7 +1892,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334185,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 185",
+    title: "A versatile cooking food",
     prompt: "This food is one of the most versatile and convenient. You can boil it, fry it, poach it, scramble it, use it in baking. What is it?",
     correct: "Egg",
     wrong: [["Sugar","The answer \"Sugar\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: This food is one of the most versatile and convenient. You can boil it, fry it, poach it, scramble i.","Look for the quiet twist before committing to the obvious answer."],["Fish","The answer \"Fish\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: This food is one of the most versatile and convenient. You can boil it, fry it, poach it, scramble i.","Look for the quiet twist before committing to the obvious answer."],["Wheat","The answer \"Wheat\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: This food is one of the most versatile and convenient. You can boil it, fry it, poach it, scramble i.","Look for the quiet twist before committing to the obvious answer."]],
@@ -1902,7 +1902,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334186,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 186",
+    title: "Take two of three pineapples",
     prompt: "If there are three pineapples and you take two, how many will you have?",
     correct: "2",
     wrong: [["1","The answer \"1\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: If there are three pineapples and you take two, how many will you have?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["0","The answer \"0\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: If there are three pineapples and you take two, how many will you have?.","Before calculating, ask what the question is really counting, ordering, or comparing."],["3","The answer \"3\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: If there are three pineapples and you take two, how many will you have?.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -1912,7 +1912,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334187,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 187",
+    title: "Passing second place",
     prompt: "Imagine you were running a race and you passed the person in 2nd place. What place would you be in?",
     correct: "2nd",
     wrong: [["4th","The answer \"4th\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Imagine you were running a race and you passed the person in 2nd place. What place would you be in?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["1st","The answer \"1st\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Imagine you were running a race and you passed the person in 2nd place. What place would you be in?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["3rd","The answer \"3rd\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: Imagine you were running a race and you passed the person in 2nd place. What place would you be in?.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -1922,7 +1922,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334188,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 188",
+    title: "Letter to complete a blood word",
     prompt: "What letter should be added the group of letters P, N, N, E, S, O, R, H, E, T, and I to form a twelve-letter word that is related to blood?",
     correct: "Y",
     wrong: [["P","The answer \"P\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: What letter should be added the group of letters P, N, N, E, S, O, R, H, E, T, and I to form a twelv.","Look for the quiet twist before committing to the obvious answer."],["S","The answer \"S\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: What letter should be added the group of letters P, N, N, E, S, O, R, H, E, T, and I to form a twelv.","Look for the quiet twist before committing to the obvious answer."],["A","The answer \"A\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: What letter should be added the group of letters P, N, N, E, S, O, R, H, E, T, and I to form a twelv.","Look for the quiet twist before committing to the obvious answer."]],
@@ -1952,7 +1952,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334191,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 191",
+    title: "Delegates by continent",
     prompt: "A total of 15 delegates from Africa, Asia, America, and Europe meet at an international conference.",
     correct: "Asia",
     wrong: [["Europe","The answer \"Europe\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A total of 15 delegates from Africa, Asia, America, and Europe meet at an international conference..","Before calculating, ask what the question is really counting, ordering, or comparing."],["America","The answer \"America\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A total of 15 delegates from Africa, Asia, America, and Europe meet at an international conference..","Before calculating, ask what the question is really counting, ordering, or comparing."],["Africa","The answer \"Africa\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: A total of 15 delegates from Africa, Asia, America, and Europe meet at an international conference..","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -2022,7 +2022,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334198,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 198",
+    title: "Deducing the day of the week",
     prompt: "Two children were on their way to school, when they began to question what day of the week it was. They were so confused in their reckoning that one of them gave the following riddle to help sort the matter out: When the day after tomorrow is yesterday, then today will be as far from Sunday as that day was which was today when the day before yesterday was tomorrow!",
     correct: "Sunday",
     wrong: [["Monday","The answer \"Monday\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Two children were on their way to school, when they began to question what day of the week it was. T.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Friday","The answer \"Friday\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Two children were on their way to school, when they began to question what day of the week it was. T.","Before calculating, ask what the question is really counting, ordering, or comparing."],["Saturday","The answer \"Saturday\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Two children were on their way to school, when they began to question what day of the week it was. T.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -2032,7 +2032,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334199,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 199",
+    title: "Age of Diophantus",
     prompt: "We know very little about the life of the mathematician Diophantus (called the father of algebra) except that he lived around the year 250 B.C. Due to one admirer of his, who described his life by the means of an algebraic riddle, we can at least determine his age at death:",
     correct: "84 years",
     wrong: [["96 years","The answer \"96 years\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: We know very little about the life of the mathematician Diophantus (called the father of algebra) ex.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["72 years","The answer \"72 years\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: We know very little about the life of the mathematician Diophantus (called the father of algebra) ex.","Read every qualifier literally, especially words like except, all but, widow, left, and still."],["90 years","The answer \"90 years\" falls for a literal-wording trick. This misses the literal wording trap; the puzzle is asking you to notice exactly what the sentence says, not the usual story your brain fills in. The clue to reread is: We know very little about the life of the mathematician Diophantus (called the father of algebra) ex.","Read every qualifier literally, especially words like except, all but, widow, left, and still."]],
@@ -2042,7 +2042,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334200,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 200",
+    title: "Identifying the three goddesses",
     prompt: "Three goddesses were sitting in an old Indian temple. Their names were Truth (who always tells the truth), Lie (who is always lying) and Wisdom (who sometimes lies). In order to figure out which goddess was which you posed the following questions to each:",
     correct: "1. Wisdom 2. Lie 3. Truth",
     wrong: [["1. Truth 2. Lie 3. Wisdom","The answer \"1. Truth 2. Lie 3. Wisdom\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Three goddesses were sitting in an old Indian temple. Their names were Truth (who always tells the t.","Before calculating, ask what the question is really counting, ordering, or comparing."],["1. Wisdom 2. Truth 3. Lie","The answer \"1. Wisdom 2. Truth 3. Lie\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Three goddesses were sitting in an old Indian temple. Their names were Truth (who always tells the t.","Before calculating, ask what the question is really counting, ordering, or comparing."],["1. Lie 2.Truth 3. Wisdom","The answer \"1. Lie 2.Truth 3. Wisdom\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: Three goddesses were sitting in an old Indian temple. Their names were Truth (who always tells the t.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -2052,7 +2052,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334201,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 201",
+    title: "Honestants and Swindlecants",
     prompt: "There are two kinds of people who live on a mysterious island. They are the so-called Honestants, who always speak the truth, and the others are the Swindlecants, who always lie.",
     correct: "No",
     wrong: [["visitor to the island went to a local pub and had a few drinks. When he was ready to leave he asked the bartender how much he owed. The bartender told him the total for his bill. It was quite expensive, so he asked the bartender if he spoke the truth. But the visitor did not hear the whispered answer so he asked a man sitting next to him about it. And the man said: The bartender said yes, but he is a big liar.","The answer \"visitor to the island went to a local pub and had a few drinks. When he was ready to leave he asked the bartender how much he owed. The bartender told him the total for his bill. It was quite expensive, so he asked the bartender if he spoke the truth. But the visitor did not hear the whispered answer so he asked a man sitting next to him about it. And the man said: The bartender said yes, but he is a big liar.\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: There are two kinds of people who live on a mysterious island. They are the so-called Honestants, wh.","Look for the one assumption that makes the situation possible or impossible."],["Yes","The answer \"Yes\" falls for a possibility trick. This answers the surface scenario, but the puzzle turns on whether the situation is actually possible under the exact wording. The clue to reread is: There are two kinds of people who live on a mysterious island. They are the so-called Honestants, wh.","Look for the one assumption that makes the situation possible or impossible."]],
@@ -2062,7 +2062,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334202,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 202",
+    title: "Cakes for Grandma",
     prompt: "You are on your way to visit your Grandma, who lives at the end of the valley. Its her birthday, and you want to give her the cakes youve made.",
     correct: "2",
     wrong: [["14","The answer \"14\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You are on your way to visit your Grandma, who lives at the end of the valley. Its her birthday, and.","Before calculating, ask what the question is really counting, ordering, or comparing."],["24","The answer \"24\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You are on your way to visit your Grandma, who lives at the end of the valley. Its her birthday, and.","Before calculating, ask what the question is really counting, ordering, or comparing."],["5","The answer \"5\" falls for a math-or-pattern trick. This follows the tempting quick calculation, but the puzzle needs the hidden constraint, sequence rule, or exact quantity being asked for. The clue to reread is: You are on your way to visit your Grandma, who lives at the end of the valley. Its her birthday, and.","Before calculating, ask what the question is really counting, ordering, or comparing."]],
@@ -2072,7 +2072,7 @@ const _openTriviaBrainTeaserQuestionsBase = makeQuestionBank('Fun', [
   {
     id: 334203,
     chapter: 'Brain Teasers',
-    title: "OpenTrivia Brain Teaser 203",
+    title: "A barnyard pun",
     prompt: "There are these two country farmers milking their cows. While the one farmer is milking, a fly zooms into the cows ear. The cow starts jumping around, shaking its head and mooing. He tries to steady the cow and suddenly it settles down. He looks down and sees the",
     correct: "in one ear and out the udder",
     wrong: [["its a miracle beyond understanding.","The answer \"its a miracle beyond understanding.\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: There are these two country farmers milking their cows. While the one farmer is milking, a fly zooms.","Look for the quiet twist before committing to the obvious answer."],["in one ear and out the other","The answer \"in one ear and out the other\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: There are these two country farmers milking their cows. While the one farmer is milking, a fly zooms.","Look for the quiet twist before committing to the obvious answer."],["ya win a few ya lose a few","The answer \"ya win a few ya lose a few\" falls for a lateral-thinking trick. This is a plausible first guess, but it does not account for the small twist that makes the brain teaser work. The clue to reread is: There are these two country farmers milking their cows. While the one farmer is milking, a fly zooms.","Look for the quiet twist before committing to the obvious answer."]],

@@ -16,7 +16,7 @@ Route questions here when they test the planning process, professional conduct a
 The signature CFP voice is **whole-life planner balancing tax, insurance, investments, estate, retirement, education, and behavioral finance**. Every question should resemble a client situation (one named couple or individual, 1-3 financial facts, then the question) rather than a definition. Distractors should be plausibly good — the right answer is the **best** of three defensible recommendations, not the only legal answer.
 
 ## Exam Map and Study Rhythm
-The CFP Board's current Principal Knowledge Topics weighting (effective for 2022+ exams) is below. The exam is **170 multiple-choice questions** delivered as two 3-hour sessions over two days, including standalone questions and **case-based item sets** (multiple questions tied to a single comprehensive client scenario).
+The CFP Board's current Principal Knowledge Topics weighting (in place since the 2021-22 exam; the 2026 content refresh kept these weights but updated underlying subtopics — e.g., named digital assets and ESG in Investment Planning, expanded behavioral-finance and QBI coverage) is below. The exam is **170 multiple-choice questions** delivered as two 3-hour sessions over two days, including standalone questions and **case-based item sets** (multiple questions tied to a single comprehensive client scenario).
 
 | Topic | Exam Weight | Study Posture |
 |---|---:|---|
@@ -78,7 +78,7 @@ The CFP Board's current Principal Knowledge Topics weighting (effective for 2022
 - **Seven-step planning process**: (1) understand circumstances, (2) identify goals, (3) analyze, (4) develop recommendations, (5) present recommendations, (6) implement, (7) monitor and update
 - Financial statements: personal balance sheet (use **fair market value** for assets, not cost basis), cash flow statement, net worth
 - Cash management, budgeting, emergency reserve (typically 3-6 months expenses; longer for variable income), debt management (consumer, student, mortgage)
-- Education planning: **529 plans** (federal income tax-free growth and distributions for qualified education expenses; recent SECURE 2.0 expansion allows $35K lifetime rollover to a Roth IRA for the beneficiary), Coverdell ESAs ($2K/yr limit), UTMA/UGMA (custodial, includes financial aid impact), prepaid tuition; federal aid impact (parental assets weighted at 5.64% in EFC, student assets at 20%)
+- Education planning: **529 plans** (federal income tax-free growth and distributions for qualified education expenses; SECURE 2.0 expansion allows $35K lifetime rollover to a Roth IRA for the beneficiary), Coverdell ESAs ($2K/yr limit), UTMA/UGMA (custodial, includes financial aid impact), prepaid tuition; aid impact under FAFSA Simplification (parental assets assessed at up to 5.64% in the Student Aid Index, student assets at 20%; the SAI replaced the EFC beginning with the 2024-25 award year)
 - Economic concepts: time value of money (PV, FV, annuities, perpetuities), monetary and fiscal policy basics, business cycle, inflation
 - Education tax credits: AOTC (40% refundable, up to $2,500/yr for first 4 years), LLC (nonrefundable, up to $2,000/yr, lifetime)
 
@@ -90,7 +90,7 @@ The CFP Board's current Principal Knowledge Topics weighting (effective for 2022
 **Common traps**
 - Listing assets at cost on the balance sheet — use FMV
 - Forgetting that AOTC is **partially refundable** (up to 40%) and LLC is not refundable
-- Recommending UTMA for college savings without warning about the kiddie tax (unearned income above ~$2,500 in 2024 taxed at parent rate) and the loss of control at majority
+- Recommending UTMA for college savings without warning about the kiddie tax (unearned income above the annual floor — $2,700 in 2026 — taxed at the parent's rate) and the loss of control at majority
 - Confusing 529 owner = parent (asset of parent, low aid impact) with 529 owner = grandparent (distribution counted as student income in older FAFSA rules — now relaxed under FAFSA Simplification)
 - Forgetting the 529-to-Roth IRA rollover requires a 15-year-old account and is capped at $35K lifetime
 
@@ -128,7 +128,7 @@ The CFP Board's current Principal Knowledge Topics weighting (effective for 2022
 - **Life insurance**: term (level, decreasing, renewable, convertible), whole, universal (UL), variable, variable-universal; policy provisions (incontestability, suicide clause, dividend options); **1035 exchange** (tax-free swap of like-kind insurance/annuity contracts, no recognition of gain); **MEC** (modified endowment contract — taxed LIFO with 10% penalty before 59.5); life insurance need calculation (human-life value vs needs analysis vs capital-retention)
 - **Disability income**: definition of disability (own-occ vs any-occ vs modified); elimination period; benefit period; partial vs residual disability; tax treatment (employer-paid premiums = taxable benefits; employee-paid = tax-free benefits)
 - **Long-term care (LTC)**: stand-alone vs hybrid (life+LTC); LTC Partnership Programs (asset protection equal to benefits received when applying for Medicaid); ADL triggers (2 of 6) and cognitive impairment trigger
-- **Health insurance**: Medicare Part A (hospital, premium-free if 40 quarters), Part B (medical, means-tested premium), Part C (Medicare Advantage), Part D (drug); Medigap (Plans G, N most common after 2020 elimination of Plan F for new enrollees); ACA premium tax credits (income 100-400% FPL, modified by IRA Inflation Reduction Act through 2025)
+- **Health insurance**: Medicare Part A (hospital, premium-free if 40 quarters), Part B (medical, means-tested premium), Part C (Medicare Advantage), Part D (drug); Medigap (Plans G, N most common after 2020 elimination of Plan F for new enrollees); ACA premium tax credits (the Inflation Reduction Act's enhanced subsidies that removed the 400% FPL cliff expired at the end of 2025, so confirm the rule in effect for the exam year)
 - Business insurance: key person, buy-sell funding (cross-purchase vs entity-purchase), business overhead expense
 
 **Applied skills**
@@ -183,12 +183,12 @@ The CFP Board's current Principal Knowledge Topics weighting (effective for 2022
 - Business entity taxation: sole proprietorship (Schedule C), partnership/LLC (pass-through), S-corp (pass-through with reasonable salary requirement), C-corp (double taxation)
 - Charitable contributions: cash (up to 60% AGI), appreciated long-term securities (FMV up to 30% AGI), DAF, CRT (income beneficiary first, charity at termination), CLT (charity first, family at termination)
 - Tax credits: child tax credit, dependent care credit, retirement savers credit, education credits (AOTC, LLC), foreign tax credit
-- **2024 thresholds (key numbers candidates should know):**
-  - Gift tax annual exclusion: **$18,000** per donee per year (2024)
-  - Estate/gift lifetime exemption: **$13.61M** per person (2024)
-  - Kiddie tax unearned-income threshold: $2,600 (2024)
-  - 401(k) elective deferral limit: $23,000 (2024); catch-up at 50+: additional $7,500
-  - IRA contribution limit: $7,000 (2024); catch-up at 50+: $1,000
+- **2026 thresholds (key numbers candidates should know — verify the indexed figure for the exam year):**
+  - Gift tax annual exclusion: **$19,000** per donee per year (2025 and 2026)
+  - Estate/gift lifetime exemption: **$15M** per person (2026), made **permanent** (with inflation indexing, no scheduled sunset) by the One Big Beautiful Bill Act of July 2025
+  - Kiddie tax unearned-income threshold: $2,700 (2026)
+  - 401(k) elective deferral limit: $24,500 (2026); catch-up at 50+: additional $8,000; age 60-63 "super catch-up": $11,250
+  - IRA contribution limit: $7,500 (2026); catch-up at 50+: $1,100
 
 **Applied skills**
 - Project a multi-year tax picture to find Roth-conversion or harvesting windows (low-income gap years before SS or RMDs)
@@ -200,7 +200,7 @@ The CFP Board's current Principal Knowledge Topics weighting (effective for 2022
 - Confusing the **wash-sale rule** (capital loss disallowed) with the **constructive sale rule** (mark-to-market on a hedged appreciated position)
 - Treating NIIT and AMT as the same — NIIT is a 3.8% surtax on investment income above MAGI thresholds; AMT is a parallel tax system
 - Recommending S-corp election without flagging the **reasonable salary** requirement (the IRS scrutinizes too-low salaries)
-- Confusing the gift-tax **annual exclusion** ($18K per donee) with the **lifetime exemption** ($13.61M per donor) — exclusion is per-recipient per-year and is **not** counted against the lifetime exemption
+- Confusing the gift-tax **annual exclusion** ($19K per donee) with the **lifetime exemption** ($15M per donor) — exclusion is per-recipient per-year and is **not** counted against the lifetime exemption
 
 **Authoritative sources:** CFP Board Tax Planning Domain; Dalton/Keir tax modules; IRS Pub 17.
 
@@ -212,9 +212,9 @@ The CFP Board's current Principal Knowledge Topics weighting (effective for 2022
 - IRAs: traditional (deductible if no workplace plan, or limited based on income), Roth (income limits for direct contributions; back-door Roth via non-deductible traditional + conversion), SEP-IRA, SIMPLE IRA
 - **SECURE Act 2.0 (signed Dec 2022) key changes:**
   - **RMD age 73** for those reaching 72 after 2022; rises to **75 in 2033**
-  - **Catch-up contributions** for high earners ($145K+ wages, indexed) must be **Roth** starting 2026 (originally 2024, delayed)
-  - IRA catch-up at 50+ indexed for inflation starting 2024 ($1,000 indexed)
-  - 401(k) "super catch-up" at ages 60-63: greater of $10K or 150% of regular catch-up, starting 2025
+  - **Catch-up contributions** for high earners (prior-year wages above $145K, indexed — $150K for 2026) must be **Roth**, effective 2026 (originally 2024, delayed by IRS to 2026)
+  - IRA catch-up at 50+ indexed for inflation since 2024 ($1,100 for 2026)
+  - 401(k) "super catch-up" at ages 60-63: greater of $10K or 150% of the regular catch-up, since 2025 ($11,250 for 2026)
   - 529-to-Roth IRA rollover (up to $35K lifetime, 15-year-old account)
   - 10-year rule for non-spouse beneficiaries (most must drain inherited IRA in 10 years)
 - Social Security: PIA based on top 35 years of indexed earnings, FRA 66-67 depending on birth year, early claim at 62 (permanently reduces benefit ~30%), delayed retirement credits to 70 (~8%/yr), taxation of benefits (up to 85% taxable based on provisional income)
@@ -245,8 +245,8 @@ The CFP Board's current Principal Knowledge Topics weighting (effective for 2022
   - Revocable living trust (probate avoidance, no creditor protection or estate tax benefit)
   - Irrevocable trusts: bypass (credit-shelter), marital, **QTIP** (qualified terminable interest property — surviving spouse income for life, remainder to specified beneficiaries), **ILIT** (irrevocable life insurance trust — removes death benefit from estate), **Crummey trust** (permits annual-exclusion gifts to be present-interest via withdrawal right), dynasty trust, **QPRT** (qualified personal residence trust — gifts a residence at discounted value), GRAT, special-needs trust (preserves SSI/Medicaid eligibility)
 - Gifting and transfer taxes:
-  - **Annual exclusion: $18,000 per donee per year (2024)**, indexed
-  - **Lifetime exemption: $13.61M per person (2024)**, scheduled to sunset to ~$7M (inflation-adjusted) after 2025 unless Congress acts
+  - **Annual exclusion: $19,000 per donee per year (2025 and 2026)**, indexed
+  - **Lifetime exemption: $15M per person (2026)**, made **permanent** with inflation indexing by the One Big Beautiful Bill Act (OBBBA, July 2025); this **removed** the TCJA sunset to ~$7M that was previously scheduled after 2025, so older prep materials warning of that sunset are now stale
   - Portability (DSUE — deceased spouse unused exemption — must be elected on a timely Form 706)
   - **GST tax** (40% on transfers skipping a generation; GST exemption tracks the lifetime exemption)
 - **Step-up in basis at death** (carried over for inherited assets at FMV on date of death — converts unrealized gain to zero for income tax)
@@ -259,7 +259,7 @@ The CFP Board's current Principal Knowledge Topics weighting (effective for 2022
 
 **Common traps**
 - Believing a will controls IRA or life insurance disposition — beneficiary designations control
-- Confusing the **annual exclusion** ($18K per donee per year) with the **lifetime exemption** ($13.61M per donor) — they are separate; gifts within the annual exclusion don't reduce the lifetime exemption
+- Confusing the **annual exclusion** ($19K per donee per year) with the **lifetime exemption** ($15M per donor) — they are separate; gifts within the annual exclusion don't reduce the lifetime exemption
 - Forgetting that **ILIT** life insurance proceeds remain in the **gross estate** if the insured had any incidents of ownership in the prior 3 years (3-year lookback)
 - Treating a revocable living trust as creditor-protection or estate-tax-shelter — neither; it only avoids probate
 - Forgetting **step-up in basis** when planning appreciated-asset gifts — gifting an appreciated stock during life **carries over** the donor's basis to the donee, while inheritance **steps up** to FMV at death
@@ -279,3 +279,11 @@ The CFP exam loves integrated cases. A retirement question is often actually a t
 - **Ethics last hour:** Save the Professional Conduct and Regulation questions for late in the exam, when fatigue is highest but judgment can still recall the Code.
 
 Strong CFP candidates leave the exam having reasoned like planners, not like product specialists. Practice integrated case studies, write down the assumption you are using before answering, read every fact pattern twice, and remember the fiduciary duty governs every recommendation, not just the conclusion.
+
+## Research Notes
+Dollar figures and rule references in this syllabus are indexed annually — always reconfirm the numbers in effect for the exam year. Sources used for the most recent currency pass:
+- CFP Board, *What You'll Be Tested On* (Principal Knowledge Topics and exam weights): https://www.cfp.net/certification-process/exam-requirement/about-the-cfp-exam/what-youll-be-tested-on — confirms 2026 weights unchanged (Professional Conduct 8%, General Principles 15%, Psychology 7%, Risk/Insurance 11%, Investment 17%, Tax 14%, Retirement 18%, Estate 10%).
+- CFP Board, *Exam Candidate Handbook* (Nov 2025): https://www.cfp.net/-/media/files/cfp-board/cfp-certification/exam/2025-candidate-handbook-november-2025.pdf — 170 items, two 3-hour sessions, case-based item sets.
+- IRS, *401(k) limit increases to $24,500 for 2026* (Notice 2025 COLA): https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026 — 2026 401(k) $24,500, 50+ catch-up $8,000, 60-63 super catch-up $11,250, IRA $7,500, IRA catch-up $1,100, Roth IRA phase-outs.
+- Morgan Lewis, *Estate Tax Alert: New $15 Million Federal Exemption Becomes Law*: https://www.morganlewis.com/pubs/2025/08/estate-tax-alert-new-15-million-federal-exemption-becomes-law — OBBBA (signed July 2025) sets the unified estate/gift/GST exemption permanently at $15M for 2026, inflation-indexed, no sunset.
+- IRS, *What's new — Estate and gift tax*: https://www.irs.gov/businesses/small-businesses-self-employed/whats-new-estate-and-gift-tax — annual gift exclusion $19,000 (2025-2026); 2026 exemption figures.

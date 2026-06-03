@@ -11,7 +11,7 @@ The voice is that of a senior quant across the table who has shipped models that
 By the end you should be able to: replicate a payoff and price it by no-arbitrage; apply Ito's lemma and a change of measure without losing the drift term; explain why risk-neutral pricing works and what it does not claim about the real world; reason about every first- and second-order Greek and what a hedge does and does not protect against; build curves, compute DV01 and convexity, and find the par swap rate; design a simulation with the right variance control and an honest error bar; and discuss VaR, expected shortfall, and model risk like someone who knows the number can be confidently wrong. Above all, you should be able to state your assumptions, show your derivation, and say what would make you distrust your own answer.
 
 ## Course Design Notes
-Chapters mirror the real interview loop so a learner can drill the round they have coming up. Chapter 1 maps the roles (researcher, trader, developer, model validator) and the rigor each round expects. Chapters 2 and 3 cover the derivatives core — no-arbitrage replication, then the Greeks and the volatility surface. Chapters 4 and 5 cover the mathematical engine: stochastic calculus and risk-neutral pricing, then numerical methods and simulation. Chapter 6 covers rates and fixed income. Chapter 7 covers risk, model risk, and the XVA vocabulary that comes up on derivatives desks. Chapter 8 is the mixed mock-desk round where topics collide and communication is graded as hard as the math.
+Chapters mirror the real interview loop so a learner can drill the round they have coming up. Chapter 1 maps the roles (researcher, trader, developer, model validator) and the rigor each round expects. Chapter 2 is the mathematical toolkit — calculus and linear algebra — that every later round assumes and that a quant round will test directly. Chapters 3 and 4 cover the derivatives core — no-arbitrage replication, then the Greeks and the volatility surface. Chapters 5 and 6 cover the mathematical engine: stochastic calculus and risk-neutral pricing, then numerical methods and simulation. Chapter 7 covers the coding round — data structures, algorithmic complexity, and writing production-grade quant code. Chapter 8 covers rates and fixed income. Chapter 9 covers risk, model risk, and the XVA vocabulary that comes up on derivatives desks. Chapter 10 is the mixed mock-desk round where topics collide and communication is graded as hard as the math. (The standard interview canon — Zhou's "green book" — runs brain teasers, calculus and linear algebra, probability, stochastic calculus, finance, algorithms, and programming; this course assumes the brain-teaser and pure-probability drilling happens alongside and concentrates on the desk-facing math, pricing, coding, and risk rounds.)
 
 Questions are scenario-first and demand a judgment, not a recall. Where a precise result or formula is the point — put-call parity, the risk-neutral drift, Ito's lemma applied to a function of a diffusion, the Monte Carlo error shrinking like 1/√N, DV01 — the lesson states it exactly so the learner leaves with the correct version rather than folk memory. Wrong answers are themselves common interview mistakes, each with a bespoke explanation of the distinction it blurs, so the learner can separate look-alikes: physical vs risk-neutral measure, price vs expected payoff, delta vs delta-hedged risk, local vs stochastic volatility, duration vs DV01, VaR vs expected shortfall, bias vs variance in an estimator. Numbers stay round so the learner reasons about mechanics, not arithmetic.
 
@@ -30,7 +30,19 @@ Quant interview readiness is built by deriving things with your own hand, not by
 
 **Common traps**: over-deriving a question that wanted a one-line intuition (burning the clock); giving a hand-wavy answer to a question that wanted the actual math; assuming every firm wants the same thing (a market maker prizes fast mental math and Greeks; a research role prizes derivations and stats); freezing on a hint instead of using it as the intended scaffold.
 
-## Chapter 2: No-Arbitrage and Replication
+## Chapter 2: The Mathematical Toolkit — Calculus and Linear Algebra
+**Core questions**
+- What is the limit, derivative, integral, or series the problem actually reduces to, and can I do it cleanly under time pressure?
+- When does this matrix have an inverse, and what do its eigenvalues tell me about the system it represents?
+- Why is a covariance matrix positive semi-definite, and what breaks when it is not?
+
+**Key concepts**: limits, L'Hopital, Taylor/Maclaurin expansion and its use in approximating a payoff or a Greek; differentiation and integration including integration by parts and substitution; common series (geometric, exponential) and convergence; partial derivatives and the gradient/Hessian; optimization with and without constraints (Lagrange multipliers); ODEs that appear in pricing; vectors, matrices, rank, and the conditions for invertibility; eigenvalues, eigenvectors, and diagonalization; positive (semi-)definiteness; the Cholesky decomposition for correlating Gaussian draws; least squares and the normal equations; the covariance matrix as the bridge from linear algebra to risk and PCA.
+
+**Applied skills**: Taylor-expand a function to second order and read off the delta/gamma analogue; evaluate a definite integral that shows up in an expectation; find and interpret the eigenvalues of a 2×2 or 3×3 matrix; use Cholesky to generate correlated normals for a simulation; set up and solve a constrained optimization (e.g. minimum-variance portfolio) with Lagrange multipliers; recognize a covariance matrix and check it is positive semi-definite.
+
+**Common traps**: misapplying L'Hopital to a limit that is not indeterminate; dropping the constant of integration or a Jacobian on a change of variables; assuming a matrix is invertible without checking the determinant/rank; forgetting that a valid covariance/correlation matrix must be positive semi-definite (a calibration that produces a negative eigenvalue is broken); confusing eigenvalues with singular values; treating the first-order Taylor term as the whole story when convexity (the second-order term) is the point.
+
+## Chapter 3: No-Arbitrage and Replication
 **Core questions**
 - What portfolio of traded instruments replicates this payoff?
 - If the quoted price is wrong, what is the exact arbitrage trade, and what does it earn?
@@ -42,7 +54,7 @@ Quant interview readiness is built by deriving things with your own hand, not by
 
 **Common traps**: pricing a derivative as the expected payoff discounted at the riskless rate under the *physical* probabilities (replication, not expectation, sets the no-arb price); forgetting the dividend/carry yield in the forward; assuming futures and forwards have identical prices when rates and the underlying are correlated; treating put-call parity as model-dependent (it is pure arbitrage and holds regardless of Black-Scholes); ignoring funding/borrow costs that make the "free" arbitrage cost real money.
 
-## Chapter 3: Options, Greeks, and the Volatility Surface
+## Chapter 4: Options, Greeks, and the Volatility Surface
 **Core questions**
 - After a large move, why is my delta hedge suddenly wrong, and what does gamma cost me?
 - Why does implied volatility smile or skew, and what is the market saying when it does?
@@ -54,7 +66,7 @@ Quant interview readiness is built by deriving things with your own hand, not by
 
 **Common traps**: calling a delta-hedged option "risk-free" (it is short gamma/vega and exposed to realized vol and the rebalancing frequency); confusing implied volatility (a price quoted in vol units) with a forecast of realized volatility; thinking a single Black-Scholes volatility can fit the whole surface; conflating local volatility with stochastic volatility; forgetting that gamma and vega are largest near the money and near expiry, so the hedge that was cheap yesterday is dangerous today.
 
-## Chapter 4: Stochastic Calculus and Risk-Neutral Pricing
+## Chapter 5: Stochastic Calculus and Risk-Neutral Pricing
 **Core questions**
 - What process is being assumed, and what term does Ito's lemma add that ordinary calculus would miss?
 - What does "risk-neutral" actually mean, and why are we allowed to price by expectation under it?
@@ -66,7 +78,7 @@ Quant interview readiness is built by deriving things with your own hand, not by
 
 **Common traps**: dropping the second-order Ito term and treating dS like an ordinary differential; believing risk-neutral pricing assumes investors are risk-neutral or that the stock will actually grow at r (it is a pricing device, not a forecast); thinking the change of measure alters volatility (Girsanov shifts the drift; σ is invariant); confusing the real-world expected payoff with the price; assuming risk-neutral pricing still works cleanly when the market is incomplete (then the measure is not unique).
 
-## Chapter 5: Numerical Methods and Simulation
+## Chapter 6: Numerical Methods and Simulation
 **Core questions**
 - Will this Monte Carlo estimate converge, and how fast — and is it biased before it is noisy?
 - Which numerical scheme fits this problem: simulation, a PDE grid, or a tree?
@@ -78,7 +90,19 @@ Quant interview readiness is built by deriving things with your own hand, not by
 
 **Common traps**: thinking more paths fix a *biased* estimator (they shrink variance, not bias — fix the discretization or the estimator instead); claiming doubling the paths halves the error (it cuts it by √2); using an explicit finite-difference scheme past its stability limit and watching the grid explode; using Monte Carlo for a low-dimensional American option where a tree or PDE handles early exercise better; reporting a price with no standard error or convergence check.
 
-## Chapter 6: Rates and Fixed Income
+## Chapter 7: Programming and Algorithms
+**Core questions**
+- What is the time and space complexity of this approach, and is there a cheaper one?
+- Which data structure makes this operation O(1) or O(log n) instead of O(n)?
+- Will this code be correct, numerically stable, and fast enough on the size of data the desk actually runs?
+
+**Key concepts**: Big-O time and space complexity and amortized analysis; arrays, hash maps, stacks, queues, heaps/priority queues, trees, and graphs and when each is the right tool; sorting and searching (binary search, quicksort/mergesort tradeoffs); recursion vs iteration and dynamic programming (memoization, the optimal-substructure pattern that prices American options on a lattice); numerical pitfalls in code (floating-point error, catastrophic cancellation, overflow, off-by-one); the languages of the desk (Python/NumPy for research, C++ for latency-critical production); vectorization vs loops; basic concurrency and the cost of data movement.
+
+**Applied skills**: state the complexity of an algorithm and justify it; pick the data structure that turns an O(n²) scan into O(n log n) or O(n); write a clean recursion or dynamic program for a path-dependent payoff; spot and fix a floating-point or overflow bug in a pricing snippet; reason about why a vectorized NumPy implementation beats a Python loop and when C++ is worth the cost.
+
+**Common traps**: optimizing constants while ignoring the dominant Big-O term; choosing a list where a hash map or heap was the point; reaching for recursion that blows the stack instead of an iterative DP; comparing floats with `==` or summing in an order that loses precision; assuming the textbook algorithm is the production answer when memory layout, cache, or latency actually decide it; quoting average-case complexity when the interviewer asked about the worst case.
+
+## Chapter 8: Rates and Fixed Income
 **Core questions**
 - How does this bond or swap respond to a curve move, and is the move parallel or a twist?
 - What is the par swap rate, and what is it really an average of?
@@ -90,7 +114,7 @@ Quant interview readiness is built by deriving things with your own hand, not by
 
 **Common traps**: confusing duration (a percentage sensitivity, in years) with DV01 (a dollar/price sensitivity per basis point); ignoring convexity so a large yield move's P&L is mis-estimated (and missing that convexity helps the long bondholder); assuming a single curve for both discounting and projecting cash flows (OIS-discounting changed this); treating a parallel shift as the only risk when the position is really a curve-shape bet; forgetting that the par rate is forward-weighted, not a simple average.
 
-## Chapter 7: Risk, Model Risk, and XVA
+## Chapter 9: Risk, Model Risk, and XVA
 **Core questions**
 - Which risk measure actually answers the question being asked?
 - What scenario or assumption breaks this model, and would I know before it cost money?
@@ -98,11 +122,11 @@ Quant interview readiness is built by deriving things with your own hand, not by
 
 **Key concepts**: Value-at-Risk (a quantile of the loss distribution) vs expected shortfall / CVaR (the average loss in the tail, and a coherent, sub-additive measure); historical vs parametric vs Monte Carlo VaR; stress testing and scenario analysis; the limits of VaR (says nothing about the tail beyond the quantile, and is not sub-additive); counterparty credit risk; the XVA family — CVA (counterparty default), DVA (own default), FVA (funding); model risk as the risk the model itself is wrong; backtesting.
 
-**Applied skills**: pick VaR vs expected shortfall for a given question and justify it; describe a stress scenario that a normal-distribution VaR would miss; explain why expected shortfall is preferred under Basel and what coherence (sub-additivity) buys you; sketch what a validation team checks (assumptions, calibration stability, backtest exceptions, P&L explain).
+**Applied skills**: pick VaR vs expected shortfall for a given question and justify it; describe a stress scenario that a normal-distribution VaR would miss; explain why expected shortfall is preferred under Basel — the FRTB internal-models approach replaced 99% VaR with 97.5% expected shortfall as the regulatory tail measure — and what coherence (sub-additivity) buys you; sketch what a validation team checks (assumptions, calibration stability, backtest exceptions, P&L explain).
 
 **Common traps**: treating VaR as a maximum loss ("we won't lose more than this") rather than a quantile that is silently breached in the tail; using VaR where you need the tail and forgetting it can fail sub-additivity (diversification can look like it *increases* VaR); assuming returns are normal and undercounting fat tails; ignoring that a model calibrated to recently calm markets understates risk; confusing CVA (their default) with DVA (your own), and double-counting funding.
 
-## Chapter 8: The Mixed Mock-Desk Round
+## Chapter 10: The Mixed Mock-Desk Round
 **Core questions**
 - When a prompt spans pricing, math, and risk at once, what result actually matters to the desk?
 - Can this model be implemented reliably under real production constraints?
@@ -137,4 +161,6 @@ Submit the worked artifacts plus a short reflection naming the assumption you we
 - CFA Institute derivatives refresher readings (swaps, forwards, futures, no-arbitrage pricing): https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/swaps-forwards-futures-strategies
 - Hull, *Options, Futures, and Other Derivatives* (the desk standard for Greeks, no-arbitrage, and rates) — referenced for put-call parity, DV01/convexity, and VaR vs expected shortfall.
 - Shreve, *Stochastic Calculus for Finance II* (Ito's lemma, Girsanov change of measure, risk-neutral pricing, Feynman-Kac).
-- Basel Committee FRTB move from VaR to expected shortfall as the regulatory tail-risk measure (coherence / sub-additivity rationale).
+- Basel Committee FRTB move from 99% VaR to 97.5% expected shortfall as the regulatory tail-risk measure (coherence / sub-additivity rationale): https://www.bis.org/bcbs/publ/d457.htm and AnalystPrep FRTB study notes https://analystprep.com/study-notes/frm/part-2/operational-and-integrated-risk-management/fundamental-review-of-the-trading-book-frtb/
+- Xinfeng Zhou, *A Practical Guide to Quantitative Finance Interviews* (the "green book") — the canonical interview-prep structure: brain teasers, calculus and linear algebra, probability, stochastic processes/calculus, finance, algorithms and numerical methods, programming; used to align this course's chapters with the standard interview canon and the question bank's Calculus, Linear Algebra, Algorithms, and Programming sections. Chapter map: https://quantprep.io/practical-guide-to-quantitative-finance-interviews
+- OpenQuant quant interview question taxonomy (math/stats, probability, programming/data-structures, finance) confirming the standard round breakdown: https://openquant.co/questions

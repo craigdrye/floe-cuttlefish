@@ -15,7 +15,7 @@ Questions are written for adult learners and reward operational judgment over sl
 
 ## Chapter 1: What Selling Is For
 - **Core questions**: What problem does this product solve, and for whom is it a poor fit? What does a trustworthy sales motion feel like from the buyer's side? When is "no" the right outcome?
-- **Key concepts**: buyer problem, ideal-customer fit, consultative vs transactional selling, commercial ethics, the trust ledger, honest disqualification, customer lifetime value over single-deal value.
+- **Key concepts**: buyer problem, ideal-customer fit, consultative vs transactional selling, commercial ethics, the trust ledger, rapport and credibility as earned (relevance, competence, and follow-through, not small talk or flattery), honest disqualification, customer lifetime value over single-deal value.
 - **Applied skills**: write a buyer-fit statement (ideal customer, poor-fit customer, pain, value, proof); decide when to walk away from a poor-fit deal.
 - **Common traps**: treating every lead as winnable; overpromising on roadmap to ease a call; confusing buyer politeness with buying intent; optimizing for the close instead of the renewal.
 
@@ -43,11 +43,11 @@ Questions are written for adult learners and reward operational judgment over sl
 - **Applied skills**: build a value narrative linking pain, impact, solution, proof, and expected result; do clean ROI math (gross savings minus cost equals net) without inflating assumptions.
 - **Common traps**: feature-dumping instead of translating to outcomes; self-declared "innovative/synergy" language; irrelevant or anonymous references; ROI models that quietly double-count or ignore cost.
 
-## Chapter 6: Objections and Negotiation
-- **Core questions**: Is this objection a real blocker or a request for confidence? What question should come before the answer? What am I getting in return for every concession?
-- **Key concepts**: objection types (price, timing, authority, competition, status quo); clarify-before-answering; reframing; the negotiation toolkit (BATNA, reservation price, ZOPA, anchoring); tradeable concessions ("every concession buys something"); the difference between price and value objections; the cost of reflexive discounting on margin.
-- **Applied skills**: build an objection playbook (listen, clarify, respond, confirm, next step); plan a negotiation by writing your BATNA, reservation price, and a list of low-cost/high-value tradeables.
-- **Common traps**: discounting on the first "too expensive"; arguing with the buyer; giving concessions for free; conceding without re-anchoring on value; mistaking a stall for a real objection.
+## Chapter 6: Objections, Negotiation, and Closing
+- **Core questions**: Is this objection a real blocker or a request for confidence? What question should come before the answer? What am I getting in return for every concession? When is the deal actually ready to ask for, and what is the right ask?
+- **Key concepts**: objection types (price, timing, authority, competition, status quo); clarify-before-answering; reframing; the negotiation toolkit (BATNA, reservation price, ZOPA, anchoring); tradeable concessions ("every concession buys something"); the difference between price and value objections; the cost of reflexive discounting on margin; commitment and closing as the natural end of value (trial close to test readiness, summary close to confirm agreed value, asking directly for the business once buying signals appear) rather than a pressure tactic; reading buying signals.
+- **Applied skills**: build an objection playbook (listen, clarify, respond, confirm, next step); plan a negotiation by writing your BATNA, reservation price, and a list of low-cost/high-value tradeables; run a trial close mid-cycle and a summary close before asking for commitment.
+- **Common traps**: discounting on the first "too expensive"; arguing with the buyer; giving concessions for free; conceding without re-anchoring on value; mistaking a stall for a real objection; never actually asking for the business (or asking with high-pressure gimmicks instead of a clean ask); closing before the value case and decision process are real.
 
 ## Chapter 7: Pipeline and Forecast Hygiene
 - **Core questions**: What evidence supports calling this deal Stage 3 (or 90%)? What must happen before it can advance? Which deals are real and which are comforting clutter?
@@ -55,14 +55,20 @@ Questions are written for adult learners and reward operational judgment over sl
 - **Applied skills**: build a pipeline-review template that separates optimism from evidence; convert "send me info" into a specific next meeting with owner, date, and purpose.
 - **Common traps**: forecasting on enthusiasm or a champion's smile; hoarding stale deals because a big number feels good; vague "check in someday" next steps; renaming dead deals to avoid disqualifying them.
 
-## Chapter 8: Learning From Wins and Losses
+## Chapter 8: Sales Metrics
+- **Core questions**: Does the math behind the quota actually work — does pipeline coverage times win rate reach the target? Which metric is the constraint right now, and what input moves it? What does a number tell me versus what it hides?
+- **Key concepts**: win rate, pipeline coverage (typically ~3x, more when win rate is low), sales velocity (opportunities x deal size x win rate / cycle length), average deal size, sales-cycle length, conversion rate by stage, quota attainment, forecast accuracy, ramp time, and customer-side metrics like net revenue retention; leading vs lagging indicators; activity metrics as inputs, not goals.
+- **Applied skills**: compute pipeline coverage needed from a given win rate and quota, and identify the binding constraint; calculate sales velocity and forecast accuracy from a deal set and explain what each implies for action.
+- **Common traps**: celebrating activity volume that does not convert; chasing more pipeline when the real problem is win rate or cycle length; reading a single metric without its denominator; assuming a forecasting tool fixes what is really a qualification or CRM-hygiene problem.
+
+## Chapter 9: Learning From Wins and Losses
 - **Core questions**: Why did the buyer actually choose (or not)? What did we learn about fit, message, and process? What should change in the next cycle?
 - **Key concepts**: structured win/loss review, separating facts from assumptions, the real (often quiet) reasons buyers decide, churn and expansion signals, clean handoff to customer success, controllable vs uncontrollable lessons, continuous improvement.
 - **Applied skills**: run a win/loss review that yields product, buyer, process, and message lessons; design an expansion discovery for an existing account.
 - **Common traps**: reflex-blaming procurement or "silly" buyers; inventing a heroic story that prevents learning; skipping reviews on wins (which hides lucky deals); treating expansion as a re-run of the original pitch.
 
 ## Capstone
-Run a simulated sales cycle end to end on a fictional but realistic account: select the target and a trigger, draft outreach, run discovery (with named SPIN question types), qualify against MEDDIC and name the weakest letter, build a quantified value narrative, handle a price objection and one negotiation round with explicit BATNA and tradeables, and produce a forecast entry with stage evidence and a mutual next step. Then write the win/loss review you would run after the deal closes either way. Submit: outreach messages, discovery call notes, opportunity brief, value story, objection/negotiation plan, forecast entry, and win/loss template.
+Run a simulated sales cycle end to end on a fictional but realistic account: select the target and a trigger, draft outreach, run discovery (with named SPIN question types), qualify against MEDDIC and name the weakest letter, build a quantified value narrative, handle a price objection and one negotiation round with explicit BATNA and tradeables, and produce a forecast entry with stage evidence and a mutual next step. State the close you would use and the buying signals that would trigger it. Compute the pipeline coverage this rep needs given an assumed win rate and quota, and name the binding metric. Then write the win/loss review you would run after the deal closes either way. Submit: outreach messages, discovery call notes, opportunity brief, value story, objection/negotiation plan, forecast entry, and win/loss template.
 
 ## Assessment Ideas
 - Discovery graded on question quality (especially Implication/Need-payoff), listening, and problem diagnosis.
@@ -79,3 +85,7 @@ Run a simulated sales cycle end to end on a fictional but realistic account: sel
 - SPIN Selling (Rackham) overview: https://blog.hubspot.com/sales/spin-selling
 - Challenger Sale (teach-tailor-take control): https://challengerinc.com/what-is-challenger-sales-methodology/
 - Negotiation concepts (BATNA, ZOPA, reservation price): https://corporatefinanceinstitute.com/resources/valuation/what-is-batna/
+- MEDDPICC full definition (Metrics, Economic Buyer, Decision Criteria, Decision Process, Paper Process, Identify Pain, Champion, Competition): https://meddpicc.net/meddpicc-sales-definition/
+- SPIN question types deep dive (Implication and Need-payoff usage): https://blog.hubspot.com/sales/spin-selling-the-ultimate-guide
+- Sales closing techniques (trial close, summary close, assumptive close, asking for commitment): https://www.outreach.ai/resources/blog/sales-closing-techniques
+- Sales metrics and KPIs (win rate, pipeline coverage, sales velocity, forecast accuracy, quota attainment): https://forecastio.ai/blog/sales-kpis

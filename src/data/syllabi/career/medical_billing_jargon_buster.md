@@ -38,7 +38,7 @@ Keep facts current and US-centric: CARC/RARC are X12 code sets, NCCI/PTP edits a
 - **Common traps**: posting everything as paid to clear the queue; billing the patient for a contractual (CO) adjustment; ignoring the RARC that names the actual fix.
 
 ## Chapter 5: Modifiers, Bundling, and NCCI Edits
-- **Key concepts**: modifier logic, NCCI PTP (procedure-to-procedure) edits, Column One/Column Two, modifier indicator (0 = never unbundle, 1 = bypass allowed), modifier 59 and the X{EPSU} subset, modifier 25 vs. 57, medically unlikely edits (MUE), laterality (RT/LT).
+- **Key concepts**: modifier logic, NCCI PTP (procedure-to-procedure) edits, Column One/Column Two, the Correct Coding Modifier Indicator (0 = never unbundle, 1 = bypass allowed with a clinically appropriate modifier, 9 = edit deleted/not applicable), modifier 59 and the X{EPSU} subset, modifier 25 vs. 57, medically unlikely edits (MUE), laterality (RT/LT).
 - **Core questions**: Does the modifier describe a real clinical distinction or is it being used to force payment? Is this edit bypassable? What documentation supports the override?
 - **Applied skills**: decide when 59/XE/XS/XP/XU applies (separate encounter, site, practitioner, or unrelated service); choose modifier 25 (significant separate E/M, minor procedure) vs. 57 (decision for major surgery, 90-day global); respect a modifier-indicator-0 edit.
 - **Common traps**: stacking modifiers "for safety"; using 59 when a more specific X modifier exists; appending 25 to an E/M that was really the decision for surgery (should be 57).
@@ -63,3 +63,10 @@ Keep facts current and US-centric: CARC/RARC are X12 code sets, NCCI/PTP edits a
 
 ## Capstone
 Take a denial-and-AR work queue of mixed items. For each, classify it: rejection or denial; root cause (eligibility, coding/modifier, medical necessity, authorization, COB, contract/underpayment, or front-end data); the owner; the evidence needed; the controlling deadline; and the single next action (correct-and-resubmit, appeal at the right level, rebill secondary, query the provider, write off, or escalate). Produce a one-line operational diagnosis of where the revenue cycle is leaking and what to fix first.
+
+## Research Notes
+- CMS, Medicare NCCI Procedure-to-Procedure (PTP) Edits — Correct Coding Modifier Indicator definitions (0 = never bypass; 1 = bypass with appropriate modifier; 9 = deleted edit) and Column One/Column Two logic: https://www.cms.gov/medicare/coding-billing/national-correct-coding-initiative-ncci-edits/medicare-ncci-procedure-procedure-ptp-edits
+- CMS, First Level of Appeal: Redetermination (120 days to file; MAC decides within 60 days): https://www.cms.gov/medicare/appeals-grievances/fee-for-service/first-level-appeal-redetermination-medicare-contractor
+- CMS, Second Level of Appeal: Reconsideration by a QIC (180 days to file; QIC decides within 60 days; ALJ request within 60 days). The 2026 ALJ amount-in-controversy is $200 and judicial-review threshold is $1,960 — values change yearly, so teach the mechanism, not the figure: https://www.cms.gov/medicare/appeals-grievances/fee-for-service/second-level-appeal
+- CMS, Acknowledgement Transactions (TA1, 999, 277CA) — confirms the 837 → 999 (syntax/functional ack) → 277CA (claim-level accept/reject) → 835 (remittance) pipeline and that rejections occur pre-adjudication: https://www.cms.gov/Regulations-and-Guidance/Administrative-Simplification/Versions5010andD0/Downloads/Acknowledgements_National_Presentation_9-29-10_final.pdf
+- X12, Claim Adjustment Reason Codes — CARC list and group-code usage (CO/PR/OA/PI); CARC 23 is restricted to Group Code OA ("impact of prior payer adjudication"): https://x12.org/codes/claim-adjustment-reason-codes

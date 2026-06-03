@@ -21,9 +21,9 @@ Chapters move from research strategy and method selection, through recruiting an
 - Where does the method sit on attitudinal-vs-behavioral and qualitative-vs-quantitative?
 - What is the lightest method that can credibly inform this specific decision?
 
-**Key concepts**: generative vs evaluative (formative vs summative) research, the NN/g method landscape (attitudinal/behavioral × qualitative/quantitative × context of use), "what users say vs what users do," matching method to research question and decision, research questions vs interview questions.
+**Key concepts**: generative vs evaluative (formative vs summative) research, the NN/g method landscape (attitudinal/behavioral × qualitative/quantitative × context of use), "what users say vs what users do," matching method to research question and decision, research questions vs interview questions, when (and when not) to substitute AI "synthetic users" for real participants.
 
-**Common traps**: running evaluative tests before you know what to build; treating a survey as a discovery tool for unknown-unknowns; choosing a method by what is available rather than what the decision needs; confusing attitudinal self-report with behavioral evidence.
+**Common traps**: running evaluative tests before you know what to build; treating a survey as a discovery tool for unknown-unknowns; choosing a method by what is available rather than what the decision needs; confusing attitudinal self-report with behavioral evidence; treating synthetic-user output as behavioral evidence when it is a model's plausible guess about attitudes, not an observation of a real person.
 
 ## Chapter 2: Recruiting, Sampling, and Screeners
 **Core questions**
@@ -81,9 +81,9 @@ Chapters move from research strategy and method selection, through recruiting an
 - Have I reached saturation, or just stopped early?
 - Is this persona built on behavior or on demographics and wishful thinking?
 
-**Key concepts**: affinity mapping (bottom-up, organic themes), thematic analysis and coding, thematic saturation, behavior-based personas, empathy/journey maps, jobs-to-be-done framing, separating observation from interpretation, triangulating across methods.
+**Key concepts**: affinity mapping (bottom-up, organic themes), thematic analysis and coding, thematic saturation, behavior-based personas, empathy/journey maps, jobs-to-be-done framing, separating observation from interpretation, triangulating across methods, using AI-assisted analysis (auto-transcription, tagging, first-pass theming) as a draft to verify rather than a conclusion to trust.
 
-**Common traps**: grouping by interview-guide question or demographics instead of emergent behavior; discarding disconfirming data to fit the PM's hypothesis; building demographic personas ("35-year-old soccer mom") that do not predict behavior; reporting interpretation as if it were raw observation.
+**Common traps**: grouping by interview-guide question or demographics instead of emergent behavior; discarding disconfirming data to fit the PM's hypothesis; building demographic personas ("35-year-old soccer mom") that do not predict behavior; reporting interpretation as if it were raw observation; accepting AI-generated themes without checking them against the transcripts (the model can invent or smooth over patterns).
 
 ## Chapter 8: Research Ethics and Inclusive Practice
 **Core questions**
@@ -111,7 +111,7 @@ Chapters move from research strategy and method selection, through recruiting an
 - What makes a UXR portfolio case study strong?
 - How do I show influence rather than just activity?
 
-**Key concepts**: ResearchOps (recruiting pipelines, participant databases, repositories, governance), democratization with guardrails, the Problem → Approach → Impact case-study arc, demonstrating influence on shipped decisions, whiteboard/study-design interview challenges, collaborating with PM/design/data, knowing the limits of your own study.
+**Key concepts**: ResearchOps (recruiting pipelines, participant databases, repositories, governance), democratization with guardrails, AI-assisted ops (auto-transcription/tagging and AI-searchable repositories) with the researcher as quality steward, the Problem → Approach → Impact case-study arc, demonstrating influence on shipped decisions, whiteboard/study-design interview challenges, collaborating with PM/design/data, knowing the limits of your own study.
 
 **Common traps**: portfolios that narrate process (20 minutes on the affinity map) with no outcome; complaining that stakeholders ignored findings (signals weak influence); presenting research as a solo handoff rather than a collaboration; no repository, so insights are re-discovered every quarter.
 
@@ -125,3 +125,10 @@ Learners run an end-to-end mini-study and defend every choice:
 - a one-slide executive readout: the decision it changes, severity/effort prioritization, and an honest statement of limitations
 
 The goal is not a perfect study — it is a *useful, honest* one: the right question, a defensible method, clean and ethical execution, synthesis that does not fool the researcher, and a finding a team will actually act on.
+
+## Research Notes
+- [When to Use Which User-Experience Research Methods (NN/g)](https://www.nngroup.com/articles/which-ux-research-methods/) — canonical 3-dimension method landscape (attitudinal vs behavioral, qualitative vs quantitative, context of use); grounds Chapter 1.
+- [Why You Only Need to Test with 5 Users (NN/g)](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/) and the underlying Nielsen & Landauer (1993) model — confirms L ≈ 31% per-user discovery rate and ~85% of issues found with 5 users; grounds Chapter 4.
+- [Measuring Usability with the System Usability Scale (MeasuringU)](https://measuringu.com/sus/) — confirms SUS average ≈ 68 and that the 0–100 score is a percentile-anchored scale, not a percentage; grounds Chapter 5.
+- [Net Promoter Score: What a Customer-Relations Metric Can Tell You (NN/g)](https://www.nngroup.com/articles/nps-ux/) — confirms NPS = %promoters (9–10) − %detractors (0–6), passives (7–8) excluded, range −100 to +100; grounds Chapter 5.
+- [UX research trends 2026 (Lyssna)](https://www.lyssna.com/blog/ux-research-trends/) and the [Great Question 2025 Democratization Report](https://greatquestion.co/ux-research/2025-democratization-report) — current adoption of AI-assisted analysis, synthetic users, AI-searchable repositories, and the "researcher as quality steward" governance shift; grounds the AI additions in Chapters 1, 7, and 10.

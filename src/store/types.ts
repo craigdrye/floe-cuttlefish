@@ -49,6 +49,9 @@ export interface MisconceptionArtifact {
 export interface QuestionQualityRating {
   goodQuestion: number
   writingIssues: number
+  // Learner-facing "rate this question" slider (1-5). Optional so older saved
+  // ratings stay valid; used for in-app rating of candidate questions.
+  learnerRating?: number
   updatedAt: string
 }
 
@@ -225,7 +228,7 @@ export interface QuizSlice {
   toggleRepeatQuestion: (questionId: number) => void
   setQuestionQualityRating: (
     questionId: number,
-    rating: Partial<Pick<QuestionQualityRating, 'goodQuestion' | 'writingIssues'>>
+    rating: Partial<Pick<QuestionQualityRating, 'goodQuestion' | 'writingIssues' | 'learnerRating'>>
   ) => void
   setFlashcardRating: (cardKey: string, status: FlashcardRating['status']) => void
   clearFlashcardDeckRatings: (deckKey: string) => void

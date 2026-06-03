@@ -101,7 +101,7 @@ export const col6thGradeMathPrim103TopUpQuestions: Question[] = makeQuestionBank
   {
     id: 7813006,
     chapter: 'Percentages',
-    title: 'Percent as out of 100',
+    title: "Meaning of percent",
     prompt: 'What does 25% mean?',
     correct: '25 out of 100',
     wrong: [

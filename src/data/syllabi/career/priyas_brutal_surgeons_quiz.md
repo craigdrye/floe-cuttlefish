@@ -14,7 +14,8 @@ Priya is the course voice: exacting, brilliant, clinically serious, and funny. T
 - "Common traps" per chapter are the heart of the course. They name the specific false reassurance, the specific overconfident shortcut, and the specific sequencing error that the chapter exists to punish.
 - Difficulty must come from multi-step reasoning, colliding constraints, and misleading clues — never from longer wording, rarer vocabulary, or hidden facts. The prompt must contain enough information to solve the case without guessing.
 - The generation scaffolding at the end (Difficulty Standard, Course Voice, Assessment Design Rules, Coverage Goals, Capstone) governs how individual items are written and balanced. Treat chapter "Core questions" as the syllabus anchors and the scaffolding as the style guide.
-- Cancer judgment is deliberately split across one focused oncology chapter plus oncology threads inside the anatomy, HPB, and head-and-neck chapters, so the quiz does not collapse into a pure-oncology or pure-sepsis exam.
+- Cancer judgment is deliberately split across one focused oncology chapter plus oncology threads inside the anatomy, HPB, and head-and-neck chapters, so the quiz does not collapse into a pure-oncology or pure-sepsis exam. In practice, oncologic surgical judgment is the single largest theme in the question bank (margin/biology/nodal-basin/sequencing decisions across colorectal, HPB, endocrine, head-and-neck, breast, melanoma, and sarcoma), so Chapter 7 is intentionally broad and is the most heavily sampled chapter.
+- A cross-cutting "operative-safety fundamentals" thread also runs through the bank — WHO surgical-safety-checklist discipline, sterile-field and asepsis rules, instrument and sponge counts, informed consent under pressure, tissue-handling/hemostasis principles, and named-danger-zone awareness. These are folded into Chapters 1, 2, and 6 rather than given a standalone chapter, but item writers should treat them as first-class decision hinges, not background.
 
 ## Chapter 1: Hostile Operative Anatomy
 Anatomy that punishes overconfidence, and the discipline of operating from proven landmarks rather than assumption.
@@ -31,6 +32,7 @@ Anatomy that punishes overconfidence, and the discipline of operating from prove
 - Facial nerve trunk landmarks in parotid surgery and the mimics that lead to wrong-plane dissection.
 - Obturator fossa contents and traction hazards; pelvic autonomic nerves, ureter, lateral ligament, and internal iliac branches.
 - Retroperitoneal vascular zones; SMA/SMV/portal vein/uncinate process and pancreaticoduodenal branch hazards — and what not to open.
+- Operative-safety fundamentals that gate the cutting: WHO surgical-safety-checklist time-out, sterile-field and asepsis discipline, correct instrument/sponge counts, atraumatic tissue handling, and consent that names the real risks (e.g., bile-duct injury, nerve loss) before the case starts.
 
 **Applied skills**
 - Convert partial visual cues into a stop-or-proceed decision with an explicit safety rationale.
@@ -233,9 +235,9 @@ Across a mature 100-item version, aim for approximate balance:
 - Endocrine/head-and-neck/airway traps: 10–15%
 - Surgical critical care and postoperative collapse: 10–15%
 - Anticoagulation/coagulopathy tradeoffs across domains: 10–15%
-- Broader surgical oncology and MDT sequencing: 10–15%
+- Broader surgical oncology and MDT sequencing: 15–25% (in the current bank this is the largest single theme; oncologic judgment also accounts for much of the HPB, endocrine, and head-and-neck weighting above, so total oncology exposure across domains is higher still)
 
-One item may count toward several domains, but the quiz must not collapse into only-HPB or only-sepsis.
+One item may count toward several domains, but the quiz must not collapse into only-HPB or only-sepsis. Because oncologic judgment is both its own chapter and a thread through several others, balance it deliberately: keep margin/biology/sequencing reasoning spread across organ systems rather than concentrated in colorectal or HPB alone.
 
 ## Capstone
 A consultant-level oral-board gauntlet: a linked sequence of cases threading operative anatomy, postoperative collapse, anticoagulation, oncology, and false reassurance. At each stage the learner must state three things explicitly — the unsafe assumption hiding in the case, the next safest action, and the principle that generalizes. The gauntlet should escalate: a hostile cholecystectomy with an unproven pulsatile vessel; the same patient returning with bile leak and suspected right-liver ischemia; a Whipple neighbour with a pancreatic fistula and a small sentinel bleed who is also on anticoagulation for a mechanical valve; and a final oncologic-sequencing dilemma where the technically impressive operation is the wrong one. Passing requires never being lured by transient stability, quiet drains, preserved pulses, normal saturations, or a single negative scan.
@@ -260,3 +262,9 @@ Use as syllabus anchors, not as exact prompt text.
 - ACS Fundamentals of Surgery Curriculum: https://www.facs.org/for-medical-professionals/education/programs/acs-fundamentals-of-surgery-curriculum/
 - WSES intra-abdominal infection guidelines: https://wjes.biomedcentral.com/articles/10.1186/s13017-017-0141-6
 - ESSO core curricula in surgical oncology: https://www.essoweb.org/education/core-curricula/
+- SAGES Safe Cholecystectomy Program (critical view of safety, intraoperative time-out, subtotal fenestrating vs reconstituting cholecystectomy as bailout): https://www.sages.org/safe-cholecystectomy-program/
+- ISGPS definition of postpancreatectomy hemorrhage — grades A/B/C, early/late, sentinel bleed, pseudoaneurysm as the dominant cause of delayed PPH (PubMed): https://pubmed.ncbi.nlm.nih.gov/17629996/
+- WSES updated guidelines on acute mesenteric ischemia — "pain out of proportion is AMI until proven otherwise," non-occlusive/low-flow mesenteric ischemia (PMC): https://pmc.ncbi.nlm.nih.gov/articles/PMC9580452/
+- WSES pelvic trauma classification and guidelines — retroperitoneal Zone I/II/III logic, preperitoneal packing, role and limits of REBOA in unstable pelvic fracture (PMC): https://pmc.ncbi.nlm.nih.gov/articles/PMC5241998/
+- NCCN Rectal Cancer guideline insights — total neoadjuvant therapy as preferred for stage II–III, watch-and-wait for clinical complete responders (JNCCN): https://jnccn.org/view/journals/jnccn/22/6/article-p366.xml
+- APSF / case literature on post-thyroidectomy (anterior neck) hematoma — bedside suture-line decompression before transfer to theatre: https://www.apsf.org/article/postoperative-anterior-neck-hematoma-anh-timely-intervention-is-vital/

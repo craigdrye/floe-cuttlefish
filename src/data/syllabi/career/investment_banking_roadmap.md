@@ -85,11 +85,11 @@ A deal is built in layers and on other people's deadlines, and the analyst's rep
 - Selling the rationale while burying integration and execution risk that the buyer's board will ask about first.
 
 ## Chapter 5: Capital Markets — Financing, Sources and Uses, and the Investor Story
-**Key concepts**: equity (IPO, follow-on) versus debt financing, sources and uses, debt capacity and leverage limits, the equity story and the IPO narrative, the league-table and underwriting context, the relevant investor audience for each instrument, and the objections each financing must pre-empt.
+**Key concepts**: equity (IPO, follow-on) versus debt financing, the debt sources themselves (syndicated bank loans, high-yield bonds, and increasingly private credit / direct lenders, who now fund a large share of acquisition leverage), sources and uses, debt capacity and leverage limits, the equity story and the IPO narrative, the league-table and underwriting context, the relevant investor audience for each instrument, and the objections each financing must pre-empt.
 
 **Core questions**
 - How is this transaction or company funded — what are the sources, the uses, and does the structure balance?
-- How much debt can this business actually carry before the structure stops working, and who buys the rest?
+- How much debt can this business actually carry before the structure stops working, and who buys the rest — a bank syndicate, the high-yield market, or a private-credit direct lender?
 - What is the equity story, and what is the single objection the financing materials must answer to get the deal done?
 
 **Applied skills**
@@ -179,3 +179,6 @@ Learners take one fictional sell-side mandate and produce the full analyst packe
 - Valuation framing (trading comps, precedent transactions with control premia, DCF, enterprise-to-equity bridge, the football field) is treated as a tool applied in deal context; method mechanics are owned by the Financial Modeling course and aligned to CFI and Wall Street Prep references.
 - Accretion/dilution, sources and uses, debt capacity, and synergy categorization follow standard M&A and LBO/financing analysis; the lender's structuring and recovery view is owned by the Credit and LevFin course.
 - Materials and execution content (pitch-book versus CIM versus board/fairness materials, tie-outs, version control, diligence trackers, QoE) reflects buy-side and sell-side diligence and document-control practice; live-deal terminology and tone are owned by the IB Jargon Buster course.
+- Sell-side process stages and deliverable chain cross-checked against Mergers & Inquisitions (https://mergersandinquisitions.com/confidential-information-memorandum/) on CIM scope/length and against sell-side process walkthroughs (e.g. https://auxocapitaladvisors.com/sell-side-m-a-process/) for IOI→LOI→exclusivity→signing→closing sequencing.
+- Accretion/dilution framing (cash-versus-stock financing, relative P/E, foregone interest, PPA-driven D&A, synergies as drivers) verified against Wall Street Prep (https://www.wallstreetprep.com/knowledge/financial-modeling-quick-lesson-accretion-dilution-model/).
+- Financing-sources content updated to reflect the post-2023 shift toward private credit / direct lending as a primary acquisition-leverage source alongside syndicated bank loans and high-yield bonds (per industry coverage such as https://www.abfjournal.com/leverage-limits-stress-testing-middle-market-debt-capacity-in-a-volatile-2025-economy/ and FSB private-credit reporting, https://www.fsb.org/uploads/P060526.pdf).

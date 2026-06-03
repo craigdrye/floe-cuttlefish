@@ -63,7 +63,7 @@ Suggested cadence: **6-10 weeks** of focused study for most candidates, more if 
 **Core questions:** Is the claimed thing the kind of thing the patent system protects, and does the disclosure actually support the claims?
 
 **Key concepts**
-- 35 U.S.C. 101 eligibility: the Alice/Mayo two-step framework, judicial exceptions (abstract ideas, laws of nature, natural phenomena), and the 2024 subject-matter-eligibility guidance including the AI eligibility examples
+- 35 U.S.C. 101 eligibility: the Alice/Mayo two-step framework, judicial exceptions (abstract ideas, laws of nature, natural phenomena), the 2024 subject-matter-eligibility guidance including the AI eligibility examples (47-49), and the technological-improvement emphasis reinforced by the *Ex Parte Desjardins* line (Step 2A Prong Two: a claim that integrates a mathematical concept into a practical application improving how a machine, data structure, or process operates is not abstract)
 - 35 U.S.C. 112(a): written description and enablement as distinct requirements, and the undue-experimentation (Wands) factors
 - 35 U.S.C. 112(b): definiteness, and 112(f) means-plus-function claiming and its construction consequences
 - Utility under 101 and where each requirement lives in MPEP 2100
@@ -78,6 +78,7 @@ Suggested cadence: **6-10 weeks** of focused study for most candidates, more if 
 - Collapsing written description and enablement into one undifferentiated "112" objection
 - Declaring a claim ineligible the moment an abstract idea appears, skipping the integration and inventive-concept steps
 - Treating the AI eligibility examples as a separate regime rather than an application of the existing framework
+- Dismissing a recited improvement as a "generic computer component" instead of asking, per the post-*Desjardins* Step 2A Prong Two analysis, whether the claim as a whole reflects a concrete technological improvement
 - Forgetting that definiteness is judged from the perspective of a person of ordinary skill reading the claim in light of the specification
 
 **Deliverables**
@@ -271,4 +272,6 @@ Second, a **prosecution packet for a fictional invention**: a patentability memo
 - USPTO, "Manual of Patent Examining Procedure" - the open-book reference the exam is built on; chapters 700, 1200, 1800, 2100, 2200, 2700 and the rule/statute appendices: https://www.uspto.gov/web/offices/pac/mpep/index.html
 - USPTO, "Subject matter eligibility" and the 2024 guidance including AI examples - the current 101 framework tested on the exam: https://www.uspto.gov/patents/laws/examination-policy/subject-matter-eligibility
 - USPTO, "USPTO issues AI subject matter eligibility guidance" - the July 17, 2024 update and AI eligibility Examples 47-49 now within scope: https://www.uspto.gov/about-us/news-updates/uspto-issues-ai-subject-matter-eligibility-guidance
+- USPTO, "Advance notice of change to the MPEP in light of *Ex Parte Desjardins*" - the December 5, 2025 memo updating MPEP 2106.04(d) and 2106.05 to codify the technological-improvement reading of Step 2A Prong Two for machine-learning and computer-implemented claims (decision designated precedential November 4, 2025): https://www.uspto.gov/sites/default/files/documents/memo-desjardins.pdf
+- USPTO, "Registration examination update" - note that a scheduled examination update takes effect September 23, 2026 (no exam administered September 17-22, 2026); confirm the controlling MPEP revision and source list on the registration page before testing on or after that date: https://www.uspto.gov/learning-and-resources/patent-and-trademark-practitioners/becoming-patent-practitioner/registration
 - USPTO, "USPTO Rules of Professional Conduct / OED guidance" - the practitioner ethics rules and the duty of candor under 37 CFR 1.56: https://www.uspto.gov/learning-and-resources/patent-and-trademark-practitioners/oed-guidance

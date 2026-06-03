@@ -154,7 +154,7 @@ Open the question bank in week 1 — do not "read first, drill later." Retrieval
 
 **Key concepts**
 - Account types: individual, joint (JTWROS, TIC, TBE), custodial (UGMA/UTMA), trust, corporate, partnership
-- Retirement vehicles: Traditional IRA, Roth IRA (income phase-outs, contribution limits — 2024 $7K under 50, $8K 50+), SEP, SIMPLE, 401(k), Roth 401(k), 403(b), 457
+- Retirement vehicles: Traditional IRA, Roth IRA (income phase-outs, contribution limits — 2026 $7,500 under 50, $8,600 with the 50+ catch-up; the $1,000 catch-up is now inflation-indexed), SEP, SIMPLE, 401(k), Roth 401(k), 403(b), 457
 - RMD age 73 (rising to 75 in 2033) per SECURE 2.0; 10% early-withdrawal penalty and exceptions
 - Education accounts: 529 (state plan, owner controls, no income limits) vs Coverdell ESA ($2K/year cap, age 30 spend-down)
 - ABLE accounts (529A) for individuals with disabilities; SSI/Medicaid asset shielding
@@ -172,9 +172,9 @@ Open the question bank in week 1 — do not "read first, drill later." Retrieval
 - **Reg BI applies to broker-dealers; the Investment Advisers Act fiduciary standard applies to IAs.** A dual-registered firm may switch hats by transaction. Reg BI is not a fiduciary standard.
 - A Roth IRA contribution can be withdrawn anytime tax- and penalty-free (basis). Earnings withdrawn before 59½ and before 5-year clock are taxable plus 10% penalty.
 - 529 owner is typically the parent, not the beneficiary; assets are reported on FAFSA as parent assets (small impact). UGMA/UTMA are reported as student assets (heavier hit).
-- ABLE account contributions are gift-tax-free up to the annual exclusion ($18K in 2024); balances up to $100K do not count against SSI's $2K asset limit.
+- ABLE contributions track an annual cap ($20K for 2026 — the cap was decoupled from the gift-tax exclusion, which is $19K, under the 2025 OBBBA), plus an ABLE-to-Work add-on for working beneficiaries; balances up to $100K do not count against SSI's $2K asset limit.
 
-**Authoritative sources:** SEC Reg BI Adopting Release (2019); FINRA Rule 2090 (KYC) and Rule 2111 (Suitability); IRS Pub 590-A/B; SECURE 2.0 Act of 2022.
+**Authoritative sources:** SEC Reg BI Adopting Release (2019); FINRA Rule 2090 (KYC) and Rule 2111 (Suitability); IRS Pub 590-A/B and the annual IRS COLA release for current contribution limits; SECURE 2.0 Act of 2022.
 
 ## Chapter 7: Trading, Prohibited Practices, and AML
 **Core questions:** What conduct is forbidden by federal law and FINRA rules, and what reporting is mandatory when red flags appear?
@@ -232,3 +232,10 @@ You have 105 minutes for 75 scored items — 84 seconds per question with a smal
 - **The day before**: light review only — your error log, two short product taxonomies, and 25 mixed questions. No marathon cramming. Sleep is the highest-yield prep on day-minus-one.
 
 Trust the process: the SIE rewards consistent retrieval practice, not bravado. If your last three full-length exams averaged 78%+, you are ready.
+
+## Research Notes
+- FINRA SIE Content Outline, 2025 edition (https://www.finra.org/sites/default/files/2025-10/SIE_Content_Outline.pdf) — authoritative four-section structure, weights, and subtopics.
+- FINRA SIE exam landing page (https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam) — confirms 75 scored items, 1 hr 45 min, 70% pass; section weights 16% / 44% / 31% / 9%.
+- IRS, "401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500" (https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) — 2026 IRA limit $7,500 base, $1,100 inflation-indexed catch-up ($8,600 for 50+).
+- ABLE National Resource Center / 2026 ABLE updates (https://www.specialneeds.com/articles/financial/financial-planning/able-accounts-in-2026-who-now-qualifies-contribution-limits-and-how-to-open-one/) — 2026 ABLE cap $20,000 (decoupled from the $19,000 gift-tax exclusion under the 2025 OBBBA), $100K SSI shield unchanged.
+- SEC, "Accredited Investors" (https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/accredited-investors) — confirms $200K/$300K income, $1M net worth, and Series 7/65/82 license pathway as currently in effect.

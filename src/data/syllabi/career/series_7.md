@@ -179,10 +179,11 @@ Open the question bank in week 1 and never close it. Options strategies and bond
 **Core questions:** Which retirement vehicle matches the client's employment status, income, and tax goals?
 
 **Key concepts**
-- Traditional IRA, Roth IRA: 2024 contribution limit $7,000 ($8,000 catch-up for 50+)
-- Roth IRA income phase-outs (2024 single $146-$161K, MFJ $230-$240K)
-- SEP IRA (employer-only, 25% of compensation up to $69K 2024), SIMPLE IRA ($16K + $3.5K catch-up)
-- 401(k) limits: $23K + $7.5K catch-up 2024; Roth 401(k) no income limit
+- Traditional IRA, Roth IRA: 2025 contribution limit $7,000 ($8,000 with catch-up for 50+; limit unchanged from 2024)
+- Roth IRA income phase-outs (2025 single $150-$165K, MFJ $236-$246K)
+- SEP IRA (employer-only, 25% of compensation up to $70K 2025), SIMPLE IRA ($16,500 + $3,500 catch-up 2025)
+- 401(k) limits: $23,500 + $7,500 catch-up 2025; Roth 401(k) no income limit
+- SECURE 2.0 "super catch-up": ages 60-63 get an enhanced 401(k)/403(b)/governmental 457(b) catch-up ($11,250 for 2025) — greater of $10,000 or 150% of the standard 50+ catch-up; optional for plan sponsors
 - RMDs at age 73 (rising to 75 in 2033 under SECURE 2.0); 25% excise tax on missed RMD (reduced from 50%, can drop to 10% if corrected timely)
 - 60-day rollover rule (one per 12-month period across all IRAs), direct transfer (unlimited)
 - 10% early-withdrawal penalty and exceptions: SEPP/72(t), first-time home ($10K), higher ed, $1K emergency (SECURE 2.0), birth/adoption ($5K)
@@ -245,7 +246,7 @@ Open the question bank in week 1 and never close it. Options strategies and bond
 
 **Common traps**
 - A *stop* order becomes a *market* order when triggered. A *stop-limit* becomes a *limit* order — and may not execute if it gaps past the limit.
-- TRACE reporting is **15 minutes** from execution for most corporate bonds. Late reports trigger MSRB / FINRA fines.
+- TRACE reporting is **15 minutes** from execution for most corporate bonds. Late reports trigger MSRB / FINRA fines. (A one-minute reporting amendment was SEC-approved in 2024, but FINRA reversed course in June 2025 and is *maintaining* the 15-minute standard — so 15 minutes remains the exam answer.)
 - Reg NMS Order Protection prohibits *trade-throughs* — executing at a price worse than the NBBO when a protected quote is displayed at the better price. Internal routing must respect this.
 - T+1 since May 28, 2024 — most prep materials published before then say T+2. Cash trades are same-day; T-bill auctions settle next-business-day.
 
@@ -262,3 +263,12 @@ Open the question bank in week 1 and never close it. Options strategies and bond
 - **Day-before discipline**: review your error log + options payoff cheat sheet + bond math formulas + 20-question mixed quiz. Sleep. No marathon study.
 
 If your last three full-length exams average 75%+ across all four job functions, you are ready. If any single job function trails by more than 10 points, spend the day-before window on that one area.
+
+## Research Notes
+Authoritative sources consulted for this map (verified current as of 2026):
+- FINRA Series 7 Content Outline (2025 revision): https://www.finra.org/sites/default/files/2025-10/Series_7_Content_Outline.pdf — confirms 125 scored + 10 pretest items (135 total), 225 minutes / two sessions, 72% pass, and the four job-function weights (7% / 9% / 73% / 11%) used in the Exam Map above.
+- FINRA Series 7 exam page: https://www.finra.org/registration-exams-ce/qualification-exams/series7 — overview, eligibility (SIE co-requisite), and scheduling.
+- IRS Notice 2024-80 / IRS 2025 limits: https://www.irs.gov/pub/irs-drop/n-24-80.pdf — 2025 retirement contribution limits and phase-outs used in Chapter 7.
+- SECURE 2.0 ages 60-63 "super catch-up" (effective 2025, $11,250): https://www.irs.gov/newsroom/treasury-irs-issue-final-regulations-on-new-roth-catch-up-rule-other-secure-2point0-act-provisions and https://www.kiplinger.com/taxes/super-catch-up-contribution-for-age-60-63 — basis for the new Chapter 7 bullet.
+- FINRA Rule 6730 / MSRB Rule G-14 one-minute reporting status: https://www.finra.org/rules-guidance/notices/25-17 and https://www.federalregister.gov/documents/2024/09/26/2024-22027 — the one-minute amendment was approved (2024) but FINRA is maintaining the 15-minute standard (June 2025), so Chapter 9 keeps 15 minutes.
+- FINRA Rule 2342 ("Breakpoint" Sales): https://www.finra.org/rules-guidance/rulebooks/finra-rules/2342 — confirms the rule cited in Chapter 6.

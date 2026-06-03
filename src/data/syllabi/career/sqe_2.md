@@ -4,7 +4,7 @@
 ## Course Aim
 SQE 2 is where the SRA stops asking "do you know the rule?" and starts asking "would a competent newly qualified solicitor actually act on it?" The exam is structured around the SRA's Statement of Solicitor Competence and tests the six practical legal skills — client interview and attendance note, advocacy, case and matter analysis, legal research, legal writing, legal drafting — across five practice areas: criminal litigation, dispute resolution, property practice, wills and intestacy with probate administration, and business organisations including rules and procedures. Ethics under the SRA Standards and Regulations are interlaced through every station; there is no separate ethics paper.
 
-The assessment runs over three-and-a-half days: 16 written tasks taken across approximately three days at a Pearson VUE-style centre (legal research, legal writing, legal drafting, case and matter analysis), plus four oral tasks (two client interviews each followed by an attendance note, and two advocacy submissions) on the remaining day. Each task is graded against both legal skill (technique, structure, professional conduct) and application of law (correct rules, appropriate citations, accurate procedure) on a comparative judgment basis. Marks are aggregated across all 20 stations; you cannot specialise into a corner.
+The assessment runs over five half-days as 16 stations in total: 12 written tasks taken over three half-days at a Pearson VUE centre (case and matter analysis, legal research, legal writing, legal drafting — three of each), plus four oral tasks taken over two half-days (two client interviews each followed by an attendance note/legal analysis, and two advocacy submissions). Each task is graded against both legal skill (technique, structure, professional conduct) and application of law (correct rules, appropriate citations, accurate procedure), with the two weighted equally to produce a single mark. There is one pass mark for SQE 2 as a whole; marks are aggregated across all 16 stations and you cannot specialise into a corner.
 
 Floe presents SQE 2 material as single-best-answer multiple-choice scenarios that compress the oral and written stations into one decision per question. Every prompt should read like a real piece of practice in disguise: a trainee in a high street firm interviewing a worried client; a duty solicitor at the police station deciding whether to advise comment in interview; a property solicitor in a commercial conveyance choosing between exchanging and synchronising. The wrong options must feel like things a tired trainee might genuinely do. The course voice is a supervising solicitor who is firm about ethics, calm about deadlines, and unimpressed by templated answers.
 
@@ -16,24 +16,24 @@ Route questions here when they test applied legal skills under SRA SQE 2 conditi
 Floe presents four options per question — one correct, three plausible distractors — and the right answer is the one a competent newly qualified solicitor would actually take, not the cleverest legal argument available. Use English procedural and substantive terminology throughout: claimant, particulars of claim, without prejudice, Crown Court, magistrates' court, Form TR1, IHT400. Where a statutory citation is needed, cite by short name and section.
 
 ## Exam Map and Study Rhythm
-The SQE 2 assessment is 16 written tasks plus 4 oral tasks delivered over approximately 3.5 days, all booked at SRA-approved venues. There is no published topic weighting between practice areas; the SRA randomises tasks across the five areas so that the candidate cannot specialise into a corner. Each task tests at least one legal skill plus at least one practice area; ethics weaves through both axes.
+The SQE 2 assessment is 16 stations — 12 written tasks plus 4 oral tasks — delivered over five half-days, all booked at SRA-approved venues. There is no published topic weighting between practice areas; the SRA samples tasks across the five areas so that the candidate cannot specialise into a corner. Each task tests one legal skill in one practice context; ethics weaves through both axes. Note the skill-to-practice-area pairings for the four oral stations are fixed by the SRA specification: Advocacy is set in Dispute Resolution and in Criminal Litigation; Interview and attendance note/legal analysis is set in Property Practice and in Wills and Intestacy, Probate Administration and Practice.
 
 | Skill | Number of Stations | Study Posture |
 |---|---:|---|
-| Client Interview and Attendance Note | 2 oral + note | Listen first, structure second, never lead the client |
-| Advocacy | 2 oral | Submissions that land in under 5 minutes, with authority |
-| Case and Matter Analysis | 4 written | Read fast, plan visibly, recommend clearly |
-| Legal Research | 4 written | From statute to commentary to case in a defensible chain |
-| Legal Writing | 4 written | Letters and emails that explain without lecturing |
-| Legal Drafting | 4 written | Particulars, witness statements, clauses, attendance notes |
+| Client Interview and Attendance Note/Legal Analysis | 2 oral (+ note) | Listen first, structure second, never lead the client |
+| Advocacy | 2 oral | A structured 15-minute submission grounded in authority |
+| Case and Matter Analysis | 3 written | Read fast, plan visibly, recommend clearly |
+| Legal Research | 3 written | From statute to commentary to case in a defensible chain |
+| Legal Writing | 3 written | Letters and emails that explain without lecturing |
+| Legal Drafting | 3 written | Particulars, witness statements, clauses, attendance notes |
 
-| Practice Area | Stations Across All Skills | Focus |
+| Practice Area | Indicative Stations Across All Skills | Focus |
 |---|---:|---|
-| Criminal Litigation | ~4 | CrimPR 2020, sentencing, disclosure under CPIA 1996, custody time limits |
-| Dispute Resolution | ~4 | CPR Parts 1-72, Part 36 offers, costs management, disclosure |
-| Property Practice | ~4 | Residential and commercial conveyancing; leases |
-| Wills and Intestacy / Probate Administration | ~4 | Grants, IHT400, distribution priorities |
-| Business Organisations | ~4 | Resolutions, written resolutions, share allotment, dividends, CS01 filings |
+| Criminal Litigation | ~3 | CrimPR 2020, sentencing, disclosure under CPIA 1996, custody time limits |
+| Dispute Resolution | ~3 | CPR Parts 1-72, Part 36 offers, costs management, disclosure |
+| Property Practice | ~3 | Residential and commercial conveyancing; leases |
+| Wills and Intestacy, Probate Administration and Practice | ~3 | Grants, IHT400 and excepted-estates declarations, distribution priorities |
+| Business Organisations, Rules and Procedures | ~3 | Resolutions, written resolutions, share allotment, dividends, CS01 filings |
 
 Suggested cadence: roughly 300 hours of focused skills practice typically following SQE 1 by at least two weeks (often run in parallel with the SRA's Qualifying Work Experience). Weekly mock interviews recorded on phone audio, weekly drafting timed to 60 minutes per task, standing case analysis rotations through the five practice areas, and at least two full mock oral submissions per fortnight with peer review against the SRA's published criteria.
 
@@ -76,10 +76,10 @@ Suggested cadence: roughly 300 hours of focused skills practice typically follow
 - Interim applications under CPR 23: structure, evidence, order sought
 - Court etiquette, modes of address (your Worships, your Honour, my Lord/Lady), duty to the court under SRA Principle 1 and Code paragraph 1.4
 - Skeleton arguments and authority bundles
-- Oral advocacy timing: roughly 45 minutes per advocacy oral including 15-20 minutes' reading time plus a 4-5 minute submission
+- Oral advocacy timing: 45 minutes' preparation from the materials, then a 15-minute oral submission to a judge present in the room (use the full window — open, develop, answer interventions, and conclude)
 
 **Applied legal skills**
-- Open and close a bail application within 4-5 minutes
+- Structure a bail application to fill the 15-minute oral window with a clear opening, the Bail Act grounds answered in turn, and a crisp conclusion
 - Use a Sentencing Council guideline step by step in a real mitigation
 - Recover gracefully from a judge's intervention that changes your case theory
 
@@ -87,7 +87,7 @@ Suggested cadence: roughly 300 hours of focused skills practice typically follow
 - Treating the right to comment on a defendant's character as automatic — a plea in mitigation cannot contradict the basis of plea
 - Citing authority you have not read — the SRA marks down advocacy stations where the candidate cannot answer a clarifying question
 - Failing to address the specific Bail Act 1976 schedule 1 grounds being relied on by the prosecution
-- Reading rather than presenting — advocacy oral stations award structure and authority, not eloquence
+- Reading rather than presenting — advocacy oral stations award structure and authority, not eloquence, and the assessor expects you to use the full 15 minutes rather than racing to sit down
 
 **Authoritative sources**
 - Bail Act 1976; Sentencing Code (Sentencing Act 2020); Criminal Procedure Rules 2020
@@ -106,10 +106,10 @@ Suggested cadence: roughly 300 hours of focused skills practice typically follow
 - Reading a case for ratio, obiter, and subsequent treatment
 - Updating: KeyCite, CaseAnalysis, and "is it still good law?"
 - Research notes that record query, sources, reasoning, and a defensible conclusion
-- Time budget: a legal research task on SQE 2 runs about 45 minutes including reading the instructions
+- Time budget: a legal research task on SQE 2 is allowed 60 minutes including reading the instructions
 
 **Applied legal skills**
-- Build a research trail in 45 minutes that withstands a partner review
+- Build a research trail in 60 minutes that withstands a partner review
 - Recognise when a question is about jurisdiction, not substance
 - Decline to give advice outside a solicitor's competence
 
@@ -251,7 +251,7 @@ Suggested cadence: roughly 300 hours of focused skills practice typically follow
 **Key concepts**
 - Pre-action protocols, letter of claim, ADR options
 - Issue, service, statements of case, default judgments, summary judgment
-- Disclosure under CPR 31 and PD 51U Disclosure Pilot; witness evidence under PD 57AC; expert evidence under CPR 35
+- Disclosure under CPR 31, and under PD 57AD (Disclosure in the Business and Property Courts — the permanent successor to the PD 51U Disclosure Pilot since 1 October 2022); witness evidence under PD 57AC; expert evidence under CPR 35
 - Costs management under CPR 3, Precedent H, costs budgets and budget discussion reports
 - Part 36 offers: mechanics, cost consequences under CPR 36.17
 - Residential conveyancing: searches, enquiries, exchange, completion, SDLT, registration with HM Land Registry
@@ -280,7 +280,7 @@ Suggested cadence: roughly 300 hours of focused skills practice typically follow
 
 **Key concepts**
 - Validity of wills, intestacy rules, family provision claims under the I(PFD)A 1975
-- Grant of probate, letters of administration, IHT400 and IHT205 successors; PA1P and PA1A applications
+- Grant of probate, letters of administration, IHT400 versus the excepted-estates route (IHT205 was abolished for deaths on or after 1 January 2022 — excepted estates now make the value declaration within the PA1P/PA1A probate application rather than filing a short-form IHT account); PA1P and PA1A applications
 - Estate administration: collecting assets, paying debts, distributing per Administration of Estates Act 1925
 - Company incorporation, shareholders agreements, share transfers via stock transfer form
 - Board and shareholder decision-making, written resolutions under CA 2006 sections 288-300; conflicts under section 175
@@ -292,7 +292,7 @@ Suggested cadence: roughly 300 hours of focused skills practice typically follow
 - Spot a section 175 conflict and structure the authorisation properly
 
 **Common traps**
-- Treating IHT400 as required on every estate — the excepted estates regime (IHT205 successor procedures) covers low-value or fully spouse-exempt estates
+- Treating IHT400 as required on every estate — the excepted estates regime covers many low-value or fully spouse/charity-exempt estates, which (for deaths on or after 1 January 2022) report by declaration within the probate application rather than on the now-abolished IHT205
 - Confusing section 175 authorisation (positive vote excluding the conflicted director) with section 177 declaration (interest in a proposed transaction)
 - Forgetting that a stock transfer form for shares over £1,000 attracts 0.5% stamp duty before HMRC will stamp for Companies House registration
 - Distributing an estate before the six-month I(PFD)A 1975 claim window has expired — personal representatives risk personal liability
@@ -305,7 +305,7 @@ Suggested cadence: roughly 300 hours of focused skills practice typically follow
 - Share sale completion agenda with board minutes and stock transfer forms
 
 ## Chapter 10: Ethics Under Pressure and Capstone Exam-Day Discipline
-**Core questions:** When the file is messy, the client is anxious, and the deadline is tomorrow, how do you keep the SRA Principles intact and still deliver? How do you pace the 3.5-day assessment without your judgment fraying?
+**Core questions:** When the file is messy, the client is anxious, and the deadline is tomorrow, how do you keep the SRA Principles intact and still deliver? How do you pace the 16 stations across five half-days without your judgment fraying?
 
 **Key concepts**
 - Hierarchy of obligations: court, public interest, client, firm
@@ -313,7 +313,7 @@ Suggested cadence: roughly 300 hours of focused skills practice typically follow
 - Money laundering reports under POCA 2002 section 330 and tipping-off offences under section 333A
 - Acting for both sides: substantially common interest exception and informed consent in writing (Code 6.2)
 - Reporting concerns under the SRA Code paragraph 7.7
-- SQE 2 pacing: legal research task ~45 minutes; legal writing ~45 minutes; drafting ~45 minutes; case analysis ~60 minutes; advocacy oral ~45 minutes including reading time and a 4-5 minute submission (e.g. plea in mitigation or bail application); interview ~25 minutes followed by a 25-minute attendance note
+- SQE 2 pacing (official station times): legal research 60 minutes; legal writing 30 minutes; legal drafting 45 minutes; case and matter analysis 60 minutes; advocacy 45 minutes' preparation then a 15-minute oral submission (e.g. plea in mitigation or bail application); client interview 25 minutes followed by a 25-minute handwritten attendance note/legal analysis
 
 **Applied legal skills**
 - Identify the exact Principle or paragraph engaged within 20 seconds of reading the stem
@@ -322,7 +322,7 @@ Suggested cadence: roughly 300 hours of focused skills practice typically follow
 
 **Common traps**
 - Spending more than the budgeted time on a single written task — the SRA does not reward heroics on one station at the expense of another
-- Letting an oral advocacy submission drift past 5 minutes — the assessor scores brevity, not endurance
+- Misjudging the 15-minute advocacy submission — neither racing to finish in five minutes nor rambling without structure; the assessor scores a complete, organised submission that uses the time deliberately
 - Treating an attendance note as a transcript — it is a record of advice given, decisions taken, and next steps, not every word said
 - Reporting only on completed wrongdoing — Code 7.7 covers "any facts or matters" the SRA should investigate, including ongoing risk
 
@@ -333,3 +333,9 @@ Suggested cadence: roughly 300 hours of focused skills practice typically follow
 **Practice deliverables**
 - 40-card conduct trap deck mapped to SQE 2 stations
 - Weekly hot-seat drills with a study partner reading scenarios aloud
+
+## Research Notes
+- SQE2 Assessment Specification (SRA): https://sqe.sra.org.uk/assessments/sqe2-assessments/sqe2-specification — confirms 16 stations total (12 written + 4 oral) over five half-days, the six legal skills, the five practice areas, and the fixed oral skill-to-practice-area pairings (Advocacy in Dispute Resolution and Criminal Litigation; Interview/attendance note in Property Practice and in Wills and Intestacy, Probate Administration and Practice).
+- SRA SQE2 assessment detail page: https://sqe.sra.org.uk/assessments/sqe2-assessments/sqe2-specification/sqe2-assessments — source for official per-station times (legal research 60 min; legal writing 30 min; legal drafting 45 min; case and matter analysis 60 min; advocacy 45 min preparation + 15 min oral submission; interview 25 min + attendance note 25 min) and the equal weighting of skills and application of law with a single SQE2 pass mark.
+- PD 57AD (Disclosure in the Business and Property Courts), Bevan Brittan: https://www.bevanbrittan.com/insights/articles/2022/from-51u-to-57ad-the-disclosure-pilot-scheme-becomes-permanent/ — confirms PD 51U Disclosure Pilot became permanent as PD 57AD from 1 October 2022.
+- IHT reporting changes (STEP): https://blog.step.org/2022/01/04/reminder-uk-iht-reporting-changes-from-january-2022/ — confirms IHT205 was abolished for deaths on or after 1 January 2022; excepted estates now report by declaration within the probate application rather than filing a short-form IHT account.

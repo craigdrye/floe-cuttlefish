@@ -23,9 +23,9 @@ Floe routes a learner here when they want foundational investing literacy as a c
 **Common traps**: thinking active managers are simply better; believing ETFs are riskier because they trade more; assuming mutual funds are always free; mistaking one sector for diversification.
 
 ## Chapter 3: Diversification and Risk
-**Core questions**: What is diversification actually for? Why is one beloved stock dangerous? How are risk and return linked? Why mix stocks and bonds?
-**Key concepts**: spreading risk, single-stock failure, the risk-return tradeoff, blending assets to smooth the ride, paper (unrealized) vs realized losses.
-**Common traps**: expecting diversification to guarantee no loss; thinking careful research removes single-stock risk; believing higher returns can come risk-free; treating a price dip as a locked-in loss.
+**Core questions**: What is diversification actually for? Why is one beloved stock dangerous? How are risk and return linked? Why mix stocks and bonds? Why hold companies outside your own country?
+**Key concepts**: spreading risk, single-stock failure, the risk-return tradeoff, blending assets to smooth the ride, diversifying across geographies (domestic vs international/global exposure), paper (unrealized) vs realized losses.
+**Common traps**: expecting diversification to guarantee no loss; thinking careful research removes single-stock risk; believing higher returns can come risk-free; assuming a home-country index is "the whole market"; treating a price dip as a locked-in loss.
 
 ## Chapter 4: Time, Compounding, and Dollar-Cost Averaging
 **Core questions**: What is compounding really? Why does starting early matter so much? How fast does money double? What is dollar-cost averaging and why automate it?
@@ -59,3 +59,10 @@ Floe routes a learner here when they want foundational investing literacy as a c
 
 ## Capstone
 Build a one-page personal investing starter brief (for yourself or a detailed imagined person) that demonstrates the course's whole arc: (1) a short foundation check — emergency fund status and any high-interest debt to clear first; (2) the correct account order for the situation, including capturing any employer 401(k) match and a clear Roth-vs-traditional reasoning; (3) a target asset allocation justified by time horizon, with a separate, lower-risk plan for any money needed within a few years; (4) a specific, simple, low-cost holding (a broad index or target-date fund) with its expense ratio noted and compared against a pricier alternative; (5) a written "rules of the road" pledge covering automatic contributions, a rebalancing cadence, and exactly how you will respond to the next crash headline. The brief should show plain-language understanding of ownership vs lending, diversification, compounding, fees, and the discipline to ignore noise — and should explicitly note that it is a personal education exercise, not formal financial advice.
+
+## Research Notes
+- SEC / Investor.gov, *Beginners' Guide to Asset Allocation, Diversification, and Rebalancing* (https://www.investor.gov/additional-resources/general-resources/publications-research/info-sheets/beginners-guide-asset) — canonical beginner framework; confirms the syllabus's core spine (asset categories, diversification, rebalancing) and underpins the added international/geographic-diversification note in Chapter 3.
+- FINRA, *Investing Basics* (https://www.finra.org/investors/investing/investing-basics) — independent investor-education benchmark for beginner scope; aligns with the course's goals-first, low-cost, anti-hype emphasis.
+- Bogleheads investing start-up kit and three-fund portfolio (https://www.bogleheads.org/wiki/Bogleheads%C2%AE_investing_start-up_kit) — supports including a total *international* stock fund as core beginner diversification, not an advanced add-on.
+- S&P Dow Jones Indices, *SPIVA U.S. Scorecard* (https://www.spglobal.com/spdji/en/spiva/article/spiva-us/) — empirical backing for Chapter 2's "most active funds lose to the index": ~65% of active large-cap funds trailed the S&P 500 in 2024 and ~85%+ over 10–15 year horizons; long-run underperformance is the durable result the course should teach.
+- IRS, *2026 contribution limits* (https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) — checked for currency; the syllabus deliberately teaches account *types and tax treatment* without citing specific dollar limits, so no figures needed updating.

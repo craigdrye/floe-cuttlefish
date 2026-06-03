@@ -11,6 +11,15 @@ import { calculateExpression } from '../../lib/mathUtils'
 import { playComboSound, playRewardVoiceSound, playSuccessSound, playWrongSound } from '../../lib/audio'
 import { bossRewardFor, bossTitleFor } from '../../lib/rewardSystem'
 import { buildLearningSupport } from '../../lib/learningSupport'
+import { LESSON_INTROS } from '../../data/questionCatalog/lessonIntros'
+// Lessons used for the in-app prompt-rating experiment: they show a per-question
+// rating slider and surface ALL their questions in one session (no 8-cap).
+const RATING_LESSON_SUBTOPICS = new Set([
+  'Backward Induction', 'Optimization & Movement',
+  'Lateral & Observability', 'Weighing & Information', 'Counting & Arithmetic',
+  'Invariants & Parity', 'Logic & Constraint',
+  'Speaking Foundations', 'Plumbing Foundations', 'Ethics Reflexes', 'CFA L2 Ethics',
+])
 import type { Answer, Misconception, Question } from '../../data/questionCatalog/types'
 
 function questionRarity(question: { kind: string; xp: number }): string {
@@ -263,7 +272,10 @@ export function TrainerScreen() {
   //   <4           -> no boss, just answer what's there
   // (Lessons longer than 8 aren't re-chunked; the remaining questions surface on a
   // later visit. The aim is ~8 questions per lesson, i.e. two clean rounds.)
-  const lessonLength = Math.min(activeSet.length, 8)
+  // Exception: the in-app rating lesson surfaces ALL its questions in one session so
+  // every candidate question is reachable to rate (other lessons keep the 8 cap).
+  const isRatingLesson = activeSet.length > 0 && activeSet.every((q) => q.subTopic && RATING_LESSON_SUBTOPICS.has(q.subTopic))
+  const lessonLength = isRatingLesson ? activeSet.length : Math.min(activeSet.length, 8)
   const roundPlan = useMemo(() => {
     const n = lessonLength
     const roundCount = Math.floor(n / 4)
@@ -296,6 +308,23 @@ export function TrainerScreen() {
   const learningSupport = useMemo(() => buildLearningSupport(question, selectedAnswer), [question, selectedAnswer])
   const learnPrimerText = learningSupport.lessonParagraphs[0]
   const showLearnPrimer = teachBeforeQuestion && mode === 'daily' && index === 0 && !selectedAnswerId && Boolean(learnPrimerText)
+  const lessonIntro = question.subTopic ? LESSON_INTROS[question.subTopic] : undefined
+  // Candidate questions being rated in-app carry a learner "rate me" slider; the
+  // ratings persist in questionQualityRatings.learnerRating and can be copied out.
+  const showRateMe = Boolean(question.subTopic && RATING_LESSON_SUBTOPICS.has(question.subTopic))
+  const ratedCount = Object.values(questionQualityRatings).filter((r) => typeof r.learnerRating === 'number').length
+  const copyLessonRatings = () => {
+    const rated = Object.entries(questionQualityRatings)
+      .filter(([, r]) => typeof r.learnerRating === 'number')
+      .map(([id, r]) => ({ id: Number(id), rating: r.learnerRating, updatedAt: r.updatedAt }))
+      .sort((a, b) => a.id - b.id)
+    const text = JSON.stringify(rated, null, 2)
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(text).catch(() => undefined)
+    }
+    // Also log so the scores are recoverable even if clipboard is blocked.
+    console.log('[Floe] lesson question ratings', rated)
+  }
 
   useEffect(() => {
     if (!showBossIntro) return
@@ -556,6 +585,15 @@ export function TrainerScreen() {
               </div>
             </div>
 
+            {showLearnPrimer && lessonIntro && (
+              <div className="lesson-intro-card" style={{ marginBottom: '12px', padding: '14px 16px', background: 'rgba(255,255,255,0.5)', borderRadius: '14px', border: '1px solid rgba(255,255,255,0.45)' }}>
+                <strong style={{ display: 'block', marginBottom: '6px', color: 'var(--ocean-deep)' }}>{lessonIntro.heading}</strong>
+                {lessonIntro.paragraphs.map((para, i) => (
+                  <p key={i} style={{ margin: i === 0 ? 0 : '8px 0 0', fontSize: '13.5px', lineHeight: 1.5 }}>{para}</p>
+                ))}
+              </div>
+            )}
+
             {showLearnPrimer && (
               <div className="learn-primer">
                 <div>
@@ -796,6 +834,35 @@ export function TrainerScreen() {
           <div style={{ minHeight: '21px' }} aria-hidden="true" />
         </div>
       )}
+
+      {showRateMe && (
+        <div className="rate-me" style={{ marginTop: '24px', padding: '16px', background: 'rgba(255,255,255,0.4)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.3)', display: 'grid', gap: '12px' }}>
+          <label style={{ display: 'grid', gap: '6px', fontSize: '13px', fontWeight: 700, color: 'var(--ocean-deep)' }}>
+            <span>Rate this question{typeof qualityRating.learnerRating === 'number' ? ` · ${qualityRating.learnerRating}/5` : ''}</span>
+            <input
+              type="range"
+              min="1"
+              max="5"
+              value={qualityRating.learnerRating ?? 3}
+              onChange={(event) => setQuestionQualityRating(question.id, { learnerRating: Number(event.target.value) })}
+            />
+            <span style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', fontWeight: 700, opacity: 0.7 }}>
+              <span>Poor</span>
+              <span>Excellent</span>
+            </span>
+          </label>
+          <button
+            type="button"
+            onClick={copyLessonRatings}
+            style={{ justifySelf: 'start', fontSize: '12px', fontWeight: 700, color: 'var(--ocean-deep)', background: 'rgba(255,255,255,0.6)', border: '1px solid rgba(255,255,255,0.5)', borderRadius: '10px', padding: '8px 12px', cursor: 'pointer' }}
+          >
+            Copy my ratings{ratedCount ? ` (${ratedCount})` : ''}
+          </button>
+        </div>
+      )}
+
+      {/* Breathing room so the rating sits slightly above the bottom, above the back button. */}
+      {showRateMe && <div style={{ minHeight: '40px' }} aria-hidden="true" />}
 
       <button className="back-btn" onClick={goBackFromTrainer} type="button">
         <ArrowLeft size={16} /> Back to map

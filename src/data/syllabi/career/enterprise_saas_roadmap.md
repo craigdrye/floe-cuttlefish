@@ -21,7 +21,7 @@ Each question should reward the move a competent operator would make over the mo
 
 ## Chapter 2: Discovery and Value Framing
 - **Core questions**: What problem is actually real, what outcome would justify buying, and how urgent is it?
-- **Key concepts**: pain (identified, indicated, implicated), use case, workflow vs. complaint, success criteria, business case, ROI, cost of inaction, value hypothesis; outcome metrics vs. vanity/activity metrics.
+- **Key concepts**: pain (identified, indicated, implicated), use case, workflow vs. complaint, success criteria, business case, ROI, cost of inaction, value hypothesis; outcome metrics vs. vanity/activity metrics; MEDDICC/MEDDPICC qualification (Metrics, Economic buyer, Decision criteria, Decision process, [Paper process], Implicate the pain, Champion, Competition) as a checklist for what discovery must surface.
 - **Applied skills**: turn a broad complaint ("reporting is broken") into workflows, decisions, data sources, and per-group success criteria; write a discovery summary with a defensible value hypothesis.
 - **Common traps**: demoing before discovery; treating a complaint as a complete spec; measuring logins when the buyer bought a business outcome; letting the loudest department scope the deal.
 
@@ -63,3 +63,9 @@ Each question should reward the move a competent operator would make over the mo
 
 ## Capstone
 Build a complete customer journey pack for one named account, prospect to expansion: (1) a stakeholder map with authorities and required evidence; (2) a discovery summary with a value hypothesis and outcome metrics; (3) the GTM motion and pricing model that fits the segment; (4) an implementation plan with dependencies, owners, acceptance criteria, and a target time-to-value; (5) the security/procurement artifacts the review will demand and when to start them; (6) a customer-health read with the leading churn indicators you will watch; (7) a renewal-and-expansion strategy with the NRR/GRR consequences of each path; and (8) the handoff checklist that connects every step. Defend each piece to the team that owns the next one.
+
+## Research Notes
+- MEDDICC / MEDDPICC qualification (Metrics, Economic Buyer, Decision Criteria, Decision Process, Paper Process, Implicate the Pain, Champion, Competition): https://meddicc.com/meddpicc-sales-methodology-and-process — canonical component list; MEDDPICC adds Paper Process and shifts "Identify" to "Implicate" the pain.
+- SOC 2 Type I vs Type II observation period: https://linfordco.com/blog/period-covered-type-ii-soc-examination/ — Type II covers operating effectiveness over a period (commonly 6–12 months; 3-month minimum acceptable for first reports), vs. Type I point-in-time design.
+- 2025 SaaS metric benchmarks (NRR/GRR, Rule of 40, CAC payback, Magic Number): https://www.benchmarkit.ai/2025benchmarks and https://www.thesaascfo.com/cac-payback-period/ — confirms NRR can exceed 100% while GRR cannot, ~3:1 LTV:CAC and sub-12-month CAC payback as "strong" with enterprise tolerating longer (2025 median payback ~20 months).
+- B2B buying committee size: https://www.gartner.com/en/digital-markets/insights/5-key-insights-about-the-software-buying-team — complex deals involve ~6–10+ decision makers (Forrester ~13), supporting multi-threading over single-threading.

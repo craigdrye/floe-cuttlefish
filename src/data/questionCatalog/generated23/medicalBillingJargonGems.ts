@@ -1,0 +1,118 @@
+import { makeSimpleQuestion } from '../base'
+import type { Question } from '../types'
+
+export const medicalBillingJargonGems: Question[] = [
+  // ===== Remittance — Reading EOB, ERA, CARC, and RARC =====
+  makeSimpleQuestion(
+    10052000,
+    'Career Skills',
+    'Remittance — Reading EOB, ERA, CARC, and RARC',
+    'The same dollar, two opposite meanings',
+    "A $200 office visit comes back on the 835. The payer's allowed amount is $120. The remittance shows two adjustments: $80 with group code CO and $40 with group code PR, and the payer sent you $80. A new biller, eager to clear the account, mails the patient a bill for $120 — the whole gap between your charge and the payment. What is wrong with that, and what may you actually collect from the patient?",
+    "You may bill the patient only the $40 marked PR (patient responsibility, e.g. deductible or coinsurance); the $80 marked CO is a contractual write-off you agreed to in your payer contract and are prohibited from billing to the patient",
+    [
+      ["Bill the patient the full $120, since that is simply the part of your charge the payer did not pay", "The unpaid balance is not automatically patient-billable; the CO portion is a contractual write-off you accepted by joining the network, and only the PR portion shifts to the patient.", "Split the gap by its group codes: CO is yours to absorb, PR is the patient's, so only $40 is collectible."],
+      ["Bill the patient $80, because the CO code marks the amount the contract leaves for the patient to cover", "CO means Contractual Obligation owed by the provider, not the patient; it is precisely the amount you must write off, while PR is the patient's share.", "CO assigns the balance to you, not the patient; the patient owes only the PR-coded $40."],
+      ["Bill the patient nothing, because once the payer pays anything the remaining balance is always a write-off", "Not every remainder is a write-off; the PR group code explicitly assigns the deductible or coinsurance to the patient, and that amount is owed.", "Read the group codes: PR-coded dollars are genuinely the patient's responsibility and should be billed."],
+    ],
+    "A remittance does not just tell you how much was paid; it tells you whose money the unpaid part is, and that is encoded in two letters. CO (Contractual Obligation) is the discount you sold the payer in exchange for being in-network, and billing it to the patient is balance billing — often a contract violation and, for Medicare, flatly prohibited. PR (Patient Responsibility) is the patient's deductible, copay, or coinsurance. The deep idea is that the same gap between charge and payment can be either a write-off or a receivable, and only the group code decides which; reading remittance is really reading the allocation of liability, not the arithmetic.",
+    'Floe generated',
+    true,
+    'Ask whose obligation each adjustment names — CO is yours, PR is the patient\'s — before you mail anything.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10052001,
+    'Career Skills',
+    'Remittance — Reading EOB, ERA, CARC, and RARC',
+    'The reason code and the fix-it note',
+    "A line on the 835 denies with CARC 16 (\"claim/service lacks information needed for adjudication\") and is accompanied by RARC N382 (\"missing/incomplete/invalid patient identifier\"). A biller reads only the CARC, sees \"lacks information,\" and resubmits the same claim after re-attaching the clinical notes — which were never the problem. Why did reading only the CARC send the work in the wrong direction?",
+    "The CARC states the category of problem (information is missing) but not which information; the RARC is the supplemental code that names the actual defect — here an invalid patient identifier — so ignoring it means fixing the wrong field and earning the identical denial again",
+    [
+      ["Reading the CARC was sufficient; the RARC only repeats the CARC in different words and adds nothing actionable", "RARCs are not restatements; they exist precisely to supply the specific detail a generic CARC omits, which is the field a biller must change.", "The CARC names the genre of the problem and the RARC names the exact defect, so the RARC is where the fix lives."],
+      ["The real error is that a CARC 16 denial cannot be corrected at all and must always be formally appealed", "CARC 16 flags missing or invalid data, which is corrected and resubmitted, not appealed; an appeal would be the wrong remedy entirely.", "Missing-information denials are fixed by supplying the right data, identified by the RARC, then resubmitting."],
+      ["The biller was right to add clinical notes; the denial simply needs that documentation to also reach the patient's plan", "The notes were never the missing element; the RARC points to the patient identifier, so adding documentation cannot resolve an identifier defect.", "Let the RARC, not a guess, choose what to fix — here a corrected patient identifier, not added notes."],
+    ],
+    "Payers speak in two layers on purpose. The CARC tells you the reason in broad strokes, and the RARC supplies the remark that pins down what specifically to do. Treating the CARC as the whole message is the classic way to resubmit a claim that fails for the exact same cause, because the generic reason rarely names the broken field. The lasting lesson is that the actionable instruction often hides in the supplemental code, not the headline one — the system rewards the reader who follows the detail down to the field, and quietly punishes the one who stops at the category.",
+    'Floe generated',
+    true,
+    'Treat the CARC as the topic sentence and the RARC as the instruction; act on the instruction.',
+    { challengeRating: 6 },
+  ),
+
+  // ===== Modifiers, Bundling, and NCCI Edits =====
+  makeSimpleQuestion(
+    10052002,
+    'Career Skills',
+    'Modifiers, Bundling, and NCCI Edits',
+    'The edit a modifier cannot open',
+    "Two CPT codes you billed together hit an NCCI procedure-to-procedure (PTP) edit: the second code is denied as bundled into the first. You check the edit and the modifier indicator is 0. A colleague says, \"Just append modifier 59 to the second code with a note that the services were distinct — that overrides any bundling edit.\" Why is that wrong here, and what does the indicator actually tell you?",
+    "A modifier indicator of 0 means the edit can never be bypassed by any modifier, because the second (Column Two) code is considered an inherent part of the first; appending 59 will not unbundle it, so the only honest options are to bill the comprehensive code alone or, if a genuine error, dispute the pairing",
+    [
+      ["Modifier 59 always overrides an NCCI bundling edit, so adding it with documentation is the correct fix", "Modifier 59 only works on edits with indicator 1; an indicator of 0 declares the edit unbypassable regardless of documentation, so 59 will be ignored or flagged as misuse.", "Check the indicator first: 0 means no modifier opens the edit, while 1 means a modifier may, under genuine clinical separation."],
+      ["The indicator 0 means a modifier is required on every claim for this pair, so 59 is in fact mandatory", "Indicator 0 means the opposite — no modifier is permitted to split the pair; it is 1 that signals a modifier may be allowed when services are truly separate.", "Read 0 as 'never unbundle' and 1 as 'may unbundle with justification,' not as a requirement to add a modifier."],
+      ["Indicator 0 simply means no edit applies, so both codes will pay and no modifier is needed at all", "An indicator of 0 attaches to an active edit; it is not the absence of an edit but a declaration that the edit is locked and cannot be bypassed.", "The edit is real and firm; 0 tells you it cannot be opened, so the second code will not pay alongside the first."],
+    ],
+    "The modifier indicator is the small integer that decides whether a bundling rule is a wall or a door. A 1 says: these codes usually shouldn't be billed together, but if they were genuinely a separate site, session, or service, a modifier may unbundle them. A 0 says: this pairing is never separately payable, because one procedure is clinically inseparable from the other — no documentation can change that. The deeper point is that a modifier is a claim about clinical reality, not a magic key; using 59 to force payment past an indicator-0 edit isn't aggressive coding, it's asserting something the rule has already declared impossible, and that is how unbundling becomes fraud.",
+    'Floe generated',
+    true,
+    'Read the modifier indicator first: 0 is a wall no modifier opens, 1 is a door a true distinction can open.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10052003,
+    'Career Skills',
+    'Modifiers, Bundling, and NCCI Edits',
+    'Two ways to bill the same-day visit',
+    "A surgeon sees a patient and, on the same day, performs a procedure. The E/M visit and the procedure are both billed, and the E/M needs a modifier to show it was a separately payable service. Your software offers modifier 25 and modifier 57, and a biller picks 25 by habit. To choose correctly, what single fact about the procedure must you check, and how does it decide between 25 and 57?",
+    "Check the procedure's global period: modifier 57 applies when the E/M was the decision for a major surgery (a 90-day global procedure) on the day of or before it, while modifier 25 applies when the E/M is significant and separate from a minor procedure (0- or 10-day global); the global period, not habit, picks the modifier",
+    [
+      ["It does not matter which you pick, since 25 and 57 are interchangeable ways to flag a separate E/M on a procedure day", "They are not interchangeable; 57 marks the decision for major (90-day global) surgery and 25 marks a separate E/M with a minor procedure, and using the wrong one misstates what happened.", "The global period distinguishes them: 57 for the 90-day major-surgery decision, 25 for a separate E/M alongside a minor procedure."],
+      ["Check the place of service: use 57 in the hospital and 25 in the office, since that is what separates the two", "Place of service does not drive this choice; the procedure's global period does, and a major-surgery decision earns 57 regardless of where the visit happened.", "Look to the global period of the procedure, not the location, to choose between 25 and 57."],
+      ["Check the dollar value of the procedure: use 57 for expensive surgeries and 25 for cheap ones", "Cost is not the criterion; the formal global period (90 days = major) is, and many factors besides price determine that classification.", "It is the assigned global period that defines 'major' for modifier 57, not the charge amount."],
+    ],
+    "Modifiers 25 and 57 look like cousins — both say 'this office visit was its own service, not swallowed by the procedure' — but they answer different questions, and the dividing line is a date range you can look up. A 90-day global period defines a major surgery, and the visit that triggered the decision to do it carries 57; a minor procedure (0- or 10-day global) gets 25 for a significant, separate E/M. The lesson worth keeping is that the correct modifier is not a matter of style or habit but a factual claim about the procedure's global period, and the system is built so that the right code tells a true story about which kind of decision the visit really was.",
+    'Floe generated',
+    true,
+    'Look up the procedure\'s global period: 90 days means a major surgery and modifier 57; a short global means a minor procedure and modifier 25.',
+    { challengeRating: 6 },
+  ),
+
+  // ===== Rejection vs. Denial — The EDI Pipeline =====
+  makeSimpleQuestion(
+    10052004,
+    'Career Skills',
+    'Rejection vs. Denial — The EDI Pipeline',
+    'Appealing a claim that was never judged',
+    "A claim comes back rejected on the clearinghouse 277CA report for an invalid subscriber ID. A biller, treating it like any unfavorable result, spends an afternoon drafting a formal appeal arguing the service was medically necessary and mails it to the payer. The appeal goes nowhere. Why is an appeal the wrong instrument for a rejection, and what should have happened instead?",
+    "A rejection means the claim was stopped before adjudication and never reached the payer's decision engine, so there is no determination to appeal; the fix is to correct the invalid subscriber ID and resubmit the claim, not to argue medical necessity about a claim the payer never actually decided",
+    [
+      ["An appeal is correct, because any time a payer returns a claim unpaid you must formally contest the decision", "A rejection is not a decision; the payer never adjudicated, so there is nothing to contest — only data to correct and resend.", "Distinguish the stage: a rejection is pre-adjudication and is resubmitted, while only an actual denial is appealed."],
+      ["The appeal failed only because it argued medical necessity; the same appeal citing the subscriber ID would have worked", "No appeal works on a rejection regardless of its argument, because appeals act on adjudicated determinations and a rejected claim has none; the remedy is correction and resubmission.", "Fix the subscriber ID and resubmit; an appeal of any flavor cannot attach to a claim that never adjudicated."],
+      ["The rejection should simply be ignored, since a claim that never reached the payer creates no obligation to act", "Ignoring it lets the claim silently die and the encounter go unpaid; a rejection must be actively corrected and resubmitted within timely-filing limits.", "A rejection demands prompt correction and resubmission, not inaction, or the revenue quietly disappears."],
+    ],
+    "The whole pipeline turns on one question: did the claim ever get judged? A rejection is a turnstile that stops the claim before the payer's adjudication engine — usually a clearinghouse or front-end edit catching bad data — so there is literally no decision in existence to appeal; you fix and resend. A denial happens after adjudication, when the payer reviewed the claim and decided against paying, and that is what an appeal contests. The deep and easily-missed idea is that an appeal is a tool that operates on decisions, so aiming it at a rejection is a category error: you cannot overturn a verdict that was never rendered.",
+    'Floe generated',
+    true,
+    'Ask whether the payer ever decided: no decision means correct-and-resubmit, a real decision means appeal.',
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10052005,
+    'Career Skills',
+    'Rejection vs. Denial — The EDI Pipeline',
+    'The silence that is not consent',
+    "You transmit a batch of claims through the clearinghouse on Monday. By Friday you have received a 999 functional acknowledgment confirming the file was accepted, but no 835 remittance and no payment. A biller concludes, \"The file was accepted and nothing bounced back, so these claims are fine and on their way to being paid.\" Why is that conclusion dangerous, and what does the 999 actually confirm?",
+    "The 999 only confirms the file was structurally well-formed and received — not that any individual claim was accepted for adjudication or will be paid; individual claims can still be rejected on the 277CA, so treating 'no bad news yet' as acceptance lets rejected claims silently age past timely filing",
+    [
+      ["The conclusion is sound, because a 999 acceptance is the payer's confirmation that the claims will be adjudicated and paid", "The 999 is a functional acknowledgment of file structure only; it says nothing about whether each claim passed the payer's front-end edits, which the 277CA reports.", "A 999 validates the envelope, not the contents; claim-level acceptance comes from the 277CA, and payment from the 835."],
+      ["It is sound as long as the 999 reported zero errors, since a clean 999 guarantees every claim inside was accepted", "A clean 999 only means the file met X12 structural rules; individual claims inside a structurally valid file can still be rejected at the claim level.", "Even a flawless 999 leaves claim-level acceptance unconfirmed; you must read the 277CA to know what got through."],
+      ["The conclusion is fine because in EDI no news is good news: if a claim had failed, the payer would have paid it anyway", "Silence is not acceptance; unresolved rejections do not get paid, they expire, so absence of feedback is a reason to investigate, not relax.", "Missing acknowledgments mean a claim may be stuck or rejected, so silence should trigger follow-up, never reassurance."],
+    ],
+    "The EDI pipeline hands back a sequence of acknowledgments, and each one confirms only its own narrow thing: the 999 says the file was structurally valid and received, the 277CA says which individual claims were accepted or rejected by the payer's front end, and the 835 says what was actually paid. The trap is to read an early, generic acknowledgment as a promise about a later, specific outcome. The enduring lesson is that in a multi-stage pipeline, silence is not consent — claims that quietly rejected don't announce themselves, they simply fail to get paid and then age out of timely filing, so the discipline is to chase every stage to its own confirmation rather than infer success from the absence of complaint.",
+    'Floe generated',
+    true,
+    'Match each acknowledgment to what it actually confirms: 999 = file received, 277CA = claim accepted, 835 = claim paid.',
+    { challengeRating: 6 },
+  ),
+]

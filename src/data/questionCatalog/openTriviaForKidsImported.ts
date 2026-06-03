@@ -15,7 +15,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337001,
       chapter: "Arithmetic Practice",
-      title: "OpenTrivia For Kids 1",
+      title: "Continuing a growing pattern",
       prompt: "What would be next in this pattern: XX, XXXX, XXXXXX, ________?",
       correct: "XXXXXXXX",
       wrong: [["XXXXXXX","XXXXXXX continues the pattern by the wrong jump size.","Look at how each term changes before choosing the next one."],["XXXXXXXXX","XXXXXXXXX continues the pattern by the wrong jump size.","Look at how each term changes before choosing the next one."],["XXXXXXXXXX","XXXXXXXXXX continues the pattern by the wrong jump size.","Look at how each term changes before choosing the next one."]],
@@ -25,7 +25,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337002,
       chapter: "Arithmetic Practice",
-      title: "OpenTrivia For Kids 2",
+      title: "Finding the missing part",
       prompt: "Chad and Jason have a collection of comic books. Chad has 23 books. Together, Chad and Jason have a total of 59 books. How many books does Jason have?",
       correct: "36",
       wrong: [["26","26 is too small for \"Chad and Jason have a collection of comic books. Chad has 23 books....\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["35","35 is too small for \"Chad and Jason have a collection of comic books. Chad has 23 books....\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["82","82 is too large for \"Chad and Jason have a collection of comic books. Chad has 23 books....\"; it likely adds something twice or misses a take-away step.","Check whether the story says add, take away, share, or multiply."]],
@@ -35,7 +35,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337003,
       chapter: "Arithmetic Practice",
-      title: "OpenTrivia For Kids 3",
+      title: "Equal groups of five",
       prompt: "Leah is making chocolate chip cookies. She has 6 groups of 5 chocolate chips each. If she adds one more group of 5 chocolate chips, how many chocolate chips will she have?",
       correct: "35",
       wrong: [["30","30 is too small for \"Leah is making chocolate chip cookies. She has 6 groups of 5 chocol...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["45","45 is too large for \"Leah is making chocolate chip cookies. She has 6 groups of 5 chocol...\"; it likely adds something twice or misses a take-away step.","Check whether the story says add, take away, share, or multiply."],["40","40 is too large for \"Leah is making chocolate chip cookies. She has 6 groups of 5 chocol...\"; it likely adds something twice or misses a take-away step.","Check whether the story says add, take away, share, or multiply."]],
@@ -55,7 +55,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337005,
       chapter: "Arithmetic Practice",
-      title: "OpenTrivia For Kids 5",
+      title: "Giving everything away",
       prompt: "If I have ten apples and I give them all to another person, how many do I have left?",
       correct: "0",
       wrong: [["9","9 misses the zero rule or the step that makes the total become 0.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["10","10 misses the zero rule or the step that makes the total become 0.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["7","7 misses the zero rule or the step that makes the total become 0.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."]],
@@ -65,7 +65,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337006,
       chapter: "Arithmetic Practice",
-      title: "OpenTrivia For Kids 6",
+      title: "Apples after two take-aways",
       prompt: "Joe has 20 apples. He gave 2 away to a friend and then he ate one. How many apples did he have after that?",
       correct: "17",
       wrong: [["20","20 misses the zero rule or the step that makes the total become 17.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["19","19 misses the zero rule or the step that makes the total become 17.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["16","16 misses the zero rule or the step that makes the total become 17.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."]],
@@ -85,7 +85,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337008,
       chapter: "Arithmetic Practice",
-      title: "OpenTrivia For Kids 8",
+      title: "Mixed add and subtract",
       prompt: "What is the correct solution to this problem: 16 - 4 + 3 =?",
       correct: "15",
       wrong: [["14","14 is too small for \"What is the correct solution to this problem: 16 - 4 + 3 =?\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["13","13 is too small for \"What is the correct solution to this problem: 16 - 4 + 3 =?\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["16","16 is too large for \"What is the correct solution to this problem: 16 - 4 + 3 =?\"; it likely adds something twice or misses a take-away step.","Check whether the story says add, take away, share, or multiply."]],
@@ -95,7 +95,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337009,
       chapter: "Arithmetic Practice",
-      title: "OpenTrivia For Kids 9",
+      title: "Lollipops given to a friend",
       prompt: "If Donna bought 5 blowpop lollipops from the candy store and gave her friend 2 of them, how many blowpops would Donna then have?",
       correct: "3",
       wrong: [["4","4 is too large for \"If Donna bought 5 blowpop lollipops from the candy store and gave h...\"; it likely adds something twice or misses a take-away step.","Check whether the story says add, take away, share, or multiply."],["2","2 is too small for \"If Donna bought 5 blowpop lollipops from the candy store and gave h...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["1","1 is too small for \"If Donna bought 5 blowpop lollipops from the candy store and gave h...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."]],
@@ -105,7 +105,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337010,
       chapter: "Arithmetic Practice",
-      title: "OpenTrivia For Kids 10",
+      title: "Adding three kinds of fruit",
       prompt: "If Anthony had 8 apples, 2 oranges and 3 pears, how many pieces of fruit does Anthony have altogether?",
       correct: "13",
       wrong: [["14","14 is too large for \"If Anthony had 8 apples, 2 oranges and 3 pears, how many pieces of ...\"; it likely adds something twice or misses a take-away step.","Check whether the story says add, take away, share, or multiply."],["12","12 is too small for \"If Anthony had 8 apples, 2 oranges and 3 pears, how many pieces of ...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["11","11 is too small for \"If Anthony had 8 apples, 2 oranges and 3 pears, how many pieces of ...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."]],
@@ -125,7 +125,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337012,
       chapter: "Arithmetic Practice",
-      title: "OpenTrivia For Kids 12",
+      title: "Number breaking the sequence",
       prompt: "Which one of these numbers does not fit in the sequence: 2 4 6 7 9 12 11?",
       correct: "12",
       wrong: [["11","11 is too small for \"Which one of these numbers does not fit in the sequence: 2 4 6 7 9 ...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["9","9 is too small for \"Which one of these numbers does not fit in the sequence: 2 4 6 7 9 ...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["6","6 is too small for \"Which one of these numbers does not fit in the sequence: 2 4 6 7 9 ...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."]],
@@ -135,7 +135,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337013,
       chapter: "Arithmetic Practice",
-      title: "OpenTrivia For Kids 13",
+      title: "Number not a multiple",
       prompt: "Which of the following numbers doesnt belong to the others: 3, 9, 15, 20?",
       correct: "20",
       wrong: [["3","3 misses the zero rule or the step that makes the total become 20.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["9","9 misses the zero rule or the step that makes the total become 20.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["15","15 misses the zero rule or the step that makes the total become 20.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."]],
@@ -145,7 +145,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337014,
       chapter: "Arithmetic Practice",
-      title: "OpenTrivia For Kids 14",
+      title: "As many cats as dogs",
       prompt: "A person owned 8 dogs and as many cats. What is the total amount of pets owned by that somebody?",
       correct: "16",
       wrong: [["32","32 is too large for \"A person owned 8 dogs and as many cats. What is the total amount of...\"; it likely adds something twice or misses a take-away step.","Check whether the story says add, take away, share, or multiply."],["8","8 is too small for \"A person owned 8 dogs and as many cats. What is the total amount of...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["4","4 is too small for \"A person owned 8 dogs and as many cats. What is the total amount of...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."]],
@@ -157,7 +157,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337015,
       chapter: "Measurement and Geometry",
-      title: "OpenTrivia For Kids 1",
+      title: "Working out a start time",
       prompt: "Mike has to be to school at 8:00 a.m. If it takes him 25 minutes to walk to school, what time should he leave?",
       correct: "7:35 a.m.",
       wrong: [["7:45 a.m.","7:45 a.m. uses a nearby time but not the elapsed-time move in the story.","Count forward or backward on the clock in small chunks."],["8:25 a.m","8:25 a.m uses a nearby time but not the elapsed-time move in the story.","Count forward or backward on the clock in small chunks."],["7:25 a.m.","7:25 a.m. uses a nearby time but not the elapsed-time move in the story.","Count forward or backward on the clock in small chunks."]],
@@ -167,7 +167,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337016,
       chapter: "Measurement and Geometry",
-      title: "OpenTrivia For Kids 2",
+      title: "Gram of steel vs feathers",
       prompt: "If you put 1 gram of steel on one scale and 1 gram of feathers on another one, which one would weigh more?",
       correct: "They would be equal",
       wrong: [["The steel","The steel uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."],["The feathers","The feathers uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."],["None of these","None of these uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."]],
@@ -219,7 +219,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337021,
       chapter: "Class 5 Mixed Maths",
-      title: "OpenTrivia For Kids 4",
+      title: "Building a digit puzzle number",
       prompt: "There are three digits in this number. The first digit (of the hundreds) is 8. Divide it by two, that is your second digit, divide the result again by two, that is your third digit. What is the number?",
       correct: "842",
       wrong: [["284","284 is too small for \"There are three digits in this number. The first digit (of the hund...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["824","824 is too small for \"There are three digits in this number. The first digit (of the hund...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["428","428 is too small for \"There are three digits in this number. The first digit (of the hund...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."]],
@@ -241,7 +241,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337023,
       chapter: "Class 6 Mixed Maths",
-      title: "OpenTrivia For Kids 1",
+      title: "Third angle of a triangle",
       prompt: "One angle in a triangle is 47 degrees and the second angle is 106 degrees. How many degrees are in the third angle?",
       correct: "27",
       wrong: [["37","37 misses the zero rule or the step that makes the total become 27.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["207","207 misses the zero rule or the step that makes the total become 27.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["17","17 misses the zero rule or the step that makes the total become 27.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."]],
@@ -251,7 +251,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337024,
       chapter: "Class 6 Mixed Maths",
-      title: "OpenTrivia For Kids 2",
+      title: "Hypotenuse of a right triangle",
       prompt: "You have a right-angled triangle. You know that one leg is 3 cm long and the second leg is 4 cm long. What is the length of the hypotenuse of that triangle?",
       correct: "5",
       wrong: [["4","4 is too small for \"You have a right-angled triangle. You know that one leg is 3 cm lon...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["7","7 is too large for \"You have a right-angled triangle. You know that one leg is 3 cm lon...\"; it likely adds something twice or misses a take-away step.","Check whether the story says add, take away, share, or multiply."],["6","6 is too large for \"You have a right-angled triangle. You know that one leg is 3 cm lon...\"; it likely adds something twice or misses a take-away step.","Check whether the story says add, take away, share, or multiply."]],
@@ -263,7 +263,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337025,
       chapter: "Money Word Problems",
-      title: "OpenTrivia For Kids 1",
+      title: "Adding up dollar bills",
       prompt: "Casey has 2 ten dollar bills, 3 five dollar bills, and 4 one dollar bills. How much money does Casey have altogether?",
       correct: "$39",
       wrong: [["$44","$44 is too large for \"Casey has 2 ten dollar bills, 3 five dollar bills, and 4 one dollar...\"; it likely adds something twice or misses a take-away step.","Check whether the story says add, take away, share, or multiply."],["$35","$35 is too small for \"Casey has 2 ten dollar bills, 3 five dollar bills, and 4 one dollar...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."],["$37","$37 is too small for \"Casey has 2 ten dollar bills, 3 five dollar bills, and 4 one dollar...\"; one group, coin, unit, or step is still missing.","Read the story once for the action, then count every group or change."]],
@@ -273,7 +273,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337026,
       chapter: "Money Word Problems",
-      title: "OpenTrivia For Kids 2",
+      title: "Spending exactly your money",
       prompt: "Reeses Pieces cost $0.60. Nerds cost $0.35. Pepsi costs $0.90. Gum costs $0.45. I have $1.25, and want to spend all of my money. What should I buy?",
       correct: "Pepsi and Nerds",
       wrong: [["Reeses Pieces, Nerds, and Gum","Reeses Pieces, Nerds, and Gum uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."],["Pepsi and Gum","Pepsi and Gum uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."],["Reeses Pieces and Gum","Reeses Pieces and Gum uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."]],
@@ -283,7 +283,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337027,
       chapter: "Money Word Problems",
-      title: "OpenTrivia For Kids 3",
+      title: "Trading a quarter for a dime",
       prompt: "Stephanie has $0.85. She gives a quarter to Jennifer. In return, Jennifer gives Stephanie a dime. How much money does Stephanie have now?",
       correct: "$0.70",
       wrong: [["$0.60","$0.60 misses the zero rule or the step that makes the total become $0.70.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["$0.65","$0.65 misses the zero rule or the step that makes the total become $0.70.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["$0.75","$0.75 misses the zero rule or the step that makes the total become $0.70.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."]],
@@ -293,7 +293,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337028,
       chapter: "Money Word Problems",
-      title: "OpenTrivia For Kids 4",
+      title: "Money left after a purchase",
       prompt: "If Joe had $900 dollars in life savings and he bought a refrigerator for $600 dollars, how much money would he have left?",
       correct: "$300",
       wrong: [["$200","$200 misses the zero rule or the step that makes the total become $300.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["$350","$350 misses the zero rule or the step that makes the total become $300.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["$400","$400 misses the zero rule or the step that makes the total become $300.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."]],
@@ -303,7 +303,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337029,
       chapter: "Money Word Problems",
-      title: "OpenTrivia For Kids 5",
+      title: "Change after buying a toy",
       prompt: "If Jane had $3.00 and went to the store and bought a yo yo for $1.00, how much would Jane have left?",
       correct: "$2.00",
       wrong: [["$2.25","$2.25 misses the zero rule or the step that makes the total become $2.00.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["$1.50","$1.50 misses the zero rule or the step that makes the total become $2.00.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["$1.00","$1.00 misses the zero rule or the step that makes the total become $2.00.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."]],
@@ -313,7 +313,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337030,
       chapter: "Money Word Problems",
-      title: "OpenTrivia For Kids 6",
+      title: "Money left at the circus",
       prompt: "If T.J. went to the circus with 10 dollars and bought some fruit snacks for 3 dollars, how much money would T. J. then have left over?",
       correct: "7 dollars",
       wrong: [["8 dollars","8 dollars uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."],["3 dollars","3 dollars uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."],["5 dollars","5 dollars uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."]],
@@ -323,7 +323,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337031,
       chapter: "Money Word Problems",
-      title: "OpenTrivia For Kids 7",
+      title: "Cost of multiple tickets",
       prompt: "If Lindsay had $20.00 and bought 3 tickets to the Mets game, how much money would Lindsay have left if each ticket cost 5 dollars?",
       correct: "5 dollars",
       wrong: [["10 dollars","10 dollars uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."],["8 dollars","8 dollars uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."],["15 dollars","15 dollars uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."]],
@@ -333,7 +333,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337032,
       chapter: "Money Word Problems",
-      title: "OpenTrivia For Kids 8",
+      title: "Change from a ten dollars",
       prompt: "Amanda went to the book store to buy some books. Her mom gave her a $10 bill. She bought two books that cost $2.00 each and a bookmark that cost $1.00. How much change did Amanda give her mother when she got home?",
       correct: "5 dollars",
       wrong: [["40 dollars","40 dollars uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."],["6 dollars","6 dollars uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."],["4 dollars","4 dollars uses a nearby quantity, but it does not match the operation the word problem is asking for.","Work through the quantities step by step before choosing."]],
@@ -343,7 +343,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337033,
       chapter: "Money Word Problems",
-      title: "OpenTrivia For Kids 9",
+      title: "Adding four people's money",
       prompt: "Sam had $3.00, Bob had $9.50, Joe had $5.25, and Jim had $7.25. How much is all of their money together worth?",
       correct: "$25.00",
       wrong: [["$2.50","$2.50 misses the zero rule or the step that makes the total become $25.00.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["$250.00","$250.00 misses the zero rule or the step that makes the total become $25.00.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["$25.50","$25.50 misses the zero rule or the step that makes the total become $25.00.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."]],
@@ -355,7 +355,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337034,
       chapter: "Ocean Animals",
-      title: "OpenTrivia For Kids 1",
+      title: "Friendly sea mammals",
       prompt: "These animals live in the sea. They are very friendly to humans. Although they resemble fish, they will drown if kept underwater for too long.",
       correct: "Dolphins",
       wrong: [["Mackerel","Mackerel names something real, but not the feature asked about in the clue.","Use the observable feature, habitat, or basic science fact named in the question."],["Salmon","Salmon mixes up what the animal, plant, or object does with where it lives.","Use the observable feature, habitat, or basic science fact named in the question."],["Tuna fish","Tuna fish answers a nearby science idea instead of the observable clue in the question.","Use the observable feature, habitat, or basic science fact named in the question."]],
@@ -437,7 +437,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337042,
       chapter: "Antonyms and Vocabulary",
-      title: "OpenTrivia For Kids 8",
+      title: "Correct use of a hyphen",
       prompt: "Two words can be brought together as a compound word. They can be written together (one way), written as one word (hairstylist) or written with a hyphen (forty-two). Which of the following sentences is a correct usage of a hyphen?",
       correct: "Josh was driving down a one-way street.",
       wrong: [["Josh could only go one-way.","Josh could only go one-way. has a related feeling, but not the exact opposite or meaning the prompt asks for.","Check whether the prompt asks for an opposite, grammar role, or word meaning."],["The cherries were chocolate-covered.","The cherries were chocolate-covered. fits a different sentence role than the one being tested.","Check whether the prompt asks for an opposite, grammar role, or word meaning."],["Edgar Allen Poe is well-known.","Edgar Allen Poe is well-known. sounds familiar, but it does not match the clue word closely enough.","Check whether the prompt asks for an opposite, grammar role, or word meaning."]],
@@ -447,7 +447,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337043,
       chapter: "Antonyms and Vocabulary",
-      title: "OpenTrivia For Kids 9",
+      title: "Is effect a noun here",
       prompt: "The word effect is used as what part of speech in the following sentence? Will lack of sleep have an effect on your performance at work?",
       correct: "noun",
       wrong: [["adjective","adjective has a related feeling, but not the exact opposite or meaning the prompt asks for.","Check whether the prompt asks for an opposite, grammar role, or word meaning."],["adverb","adverb fits a different sentence role than the one being tested.","Check whether the prompt asks for an opposite, grammar role, or word meaning."],["verb","verb sounds familiar, but it does not match the clue word closely enough.","Check whether the prompt asks for an opposite, grammar role, or word meaning."]],
@@ -469,7 +469,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337045,
       chapter: "Grammar and Vocabulary",
-      title: "OpenTrivia For Kids 1",
+      title: "Spotting the participle",
       prompt: "What is the participle in the following sentence? Jane noticed her father walking along the shoreline.",
       correct: "walking",
       wrong: [["her","her has a related feeling, but not the exact opposite or meaning the prompt asks for.","Check whether the prompt asks for an opposite, grammar role, or word meaning."],["along","along fits a different sentence role than the one being tested.","Check whether the prompt asks for an opposite, grammar role, or word meaning."],["Jane","Jane sounds familiar, but it does not match the clue word closely enough.","Check whether the prompt asks for an opposite, grammar role, or word meaning."]],
@@ -481,7 +481,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337046,
       chapter: "Primary Science",
-      title: "OpenTrivia For Kids 1",
+      title: "Long-tongued ant eater",
       prompt: "You can see this animal around ant-hill. It is almost 6 feet long and it likes to eat ants.",
       correct: "Anteater",
       wrong: [["Dolphin","Dolphin names something real, but not the feature asked about in the clue.","Use the observable feature, habitat, or basic science fact named in the question."],["Seal","Seal mixes up what the animal, plant, or object does with where it lives.","Use the observable feature, habitat, or basic science fact named in the question."],["Kangaroo","Kangaroo answers a nearby science idea instead of the observable clue in the question.","Use the observable feature, habitat, or basic science fact named in the question."]],
@@ -491,7 +491,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337047,
       chapter: "Primary Science",
-      title: "OpenTrivia For Kids 2",
+      title: "Brown fish-eating animal",
       prompt: "It is a big animal with brown fur and it likes eating fish and honey. It has 42 teeth.",
       correct: "Bear",
       wrong: [["Fox","Fox names something real, but not the feature asked about in the clue.","Use the observable feature, habitat, or basic science fact named in the question."],["Cheetah","Cheetah mixes up what the animal, plant, or object does with where it lives.","Use the observable feature, habitat, or basic science fact named in the question."],["Horse","Horse answers a nearby science idea instead of the observable clue in the question.","Use the observable feature, habitat, or basic science fact named in the question."]],
@@ -501,7 +501,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337048,
       chapter: "Primary Science",
-      title: "OpenTrivia For Kids 3",
+      title: "Grey animal with a trunk",
       prompt: "This is a big and grey animal with wide ears and a trunk. It cannot hop.",
       correct: "Elephant",
       wrong: [["Rabbit","Rabbit names something real, but not the feature asked about in the clue.","Use the observable feature, habitat, or basic science fact named in the question."],["Bear","Bear mixes up what the animal, plant, or object does with where it lives.","Use the observable feature, habitat, or basic science fact named in the question."],["Horse","Horse answers a nearby science idea instead of the observable clue in the question.","Use the observable feature, habitat, or basic science fact named in the question."]],
@@ -511,7 +511,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337049,
       chapter: "Primary Science",
-      title: "OpenTrivia For Kids 4",
+      title: "Dog with a purple tongue",
       prompt: "This is a fluffy dog. It has a black-black or purple tongue.",
       correct: "Chow Chow",
       wrong: [["Pitbull","Pitbull names something real, but not the feature asked about in the clue.","Use the observable feature, habitat, or basic science fact named in the question."],["Hound","Hound mixes up what the animal, plant, or object does with where it lives.","Use the observable feature, habitat, or basic science fact named in the question."],["Setter","Setter answers a nearby science idea instead of the observable clue in the question.","Use the observable feature, habitat, or basic science fact named in the question."]],
@@ -521,7 +521,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337050,
       chapter: "Primary Science",
-      title: "OpenTrivia For Kids 5",
+      title: "Long-necked African animal",
       prompt: "This animal lives in Africa. It has a really long neck and eats leaves. It produces almost no sounds.",
       correct: "Giraffe",
       wrong: [["Elephant","Elephant names something real, but not the feature asked about in the clue.","Use the observable feature, habitat, or basic science fact named in the question."],["Zebra","Zebra mixes up what the animal, plant, or object does with where it lives.","Use the observable feature, habitat, or basic science fact named in the question."],["Camel","Camel answers a nearby science idea instead of the observable clue in the question.","Use the observable feature, habitat, or basic science fact named in the question."]],
@@ -531,7 +531,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337051,
       chapter: "Primary Science",
-      title: "OpenTrivia For Kids 6",
+      title: "Fast-breeding rodent",
       prompt: "This animal is similar to a mouse but it is bigger. It can give birth to more than 160 babies in a year.",
       correct: "Rat",
       wrong: [["Cat","Cat names something real, but not the feature asked about in the clue.","Use the observable feature, habitat, or basic science fact named in the question."],["Anteater","Anteater mixes up what the animal, plant, or object does with where it lives.","Use the observable feature, habitat, or basic science fact named in the question."],["Weasel","Weasel answers a nearby science idea instead of the observable clue in the question.","Use the observable feature, habitat, or basic science fact named in the question."]],
@@ -541,7 +541,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337052,
       chapter: "Primary Science",
-      title: "OpenTrivia For Kids 7",
+      title: "Long slim creeping animals",
       prompt: "These animals are long and slim. They creep. Most of them can go an entire year without eating at all!",
       correct: "Snakes",
       wrong: [["Frogs","Frogs names something real, but not the feature asked about in the clue.","Use the observable feature, habitat, or basic science fact named in the question."],["Fish","Fish mixes up what the animal, plant, or object does with where it lives.","Use the observable feature, habitat, or basic science fact named in the question."],["Eel","Eel answers a nearby science idea instead of the observable clue in the question.","Use the observable feature, habitat, or basic science fact named in the question."]],
@@ -551,7 +551,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337053,
       chapter: "Primary Science",
-      title: "OpenTrivia For Kids 8",
+      title: "Animal with a smelly defense",
       prompt: "When this animal wants to defend itself, it throws a nasty smell toward its aggressor. This smell can be detected by a human a mile away.",
       correct: "Skunk",
       wrong: [["Turbot","Turbot names something real, but not the feature asked about in the clue.","Use the observable feature, habitat, or basic science fact named in the question."],["Horse","Horse mixes up what the animal, plant, or object does with where it lives.","Use the observable feature, habitat, or basic science fact named in the question."],["Deer","Deer answers a nearby science idea instead of the observable clue in the question.","Use the observable feature, habitat, or basic science fact named in the question."]],
@@ -561,7 +561,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337054,
       chapter: "Primary Science",
-      title: "OpenTrivia For Kids 9",
+      title: "Why a dog licks itself",
       prompt: "If your dog is licking him/herself, he/she is actually doing this.",
       correct: "Taking a bath",
       wrong: [["Scratching him/herself","Scratching him/herself names something real, but not the feature asked about in the clue.","Use the observable feature, habitat, or basic science fact named in the question."],["Trying to get attention","Trying to get attention mixes up what the animal, plant, or object does with where it lives.","Use the observable feature, habitat, or basic science fact named in the question."],["Playing around","Playing around answers a nearby science idea instead of the observable clue in the question.","Use the observable feature, habitat, or basic science fact named in the question."]],
@@ -595,7 +595,7 @@ const _baseOpenTriviaForKidsQuestionsByTrack = {
     {
       id: 337057,
       chapter: "Multiplication Facts",
-      title: "OpenTrivia For Kids 1",
+      title: "Multiplying by zero",
       prompt: "What is the final result of the following equation: 3 X 6 X 9 X 0 X 12 X 32 X 2 = ?",
       correct: "0",
       wrong: [["124,416","124,416 misses the zero rule or the step that makes the total become 0.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["9999999","9999999 misses the zero rule or the step that makes the total become 0.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."],["124,934","124,934 misses the zero rule or the step that makes the total become 0.","Watch for zero in multiplication and for “gave away” wording in subtraction stories."]],

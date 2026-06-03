@@ -4,7 +4,7 @@
 **ID**: `ml` · **Discipline**: Technology · **Level**: Career
 
 ## Course Aim
-Data science and machine-learning interviews do not reward people who can recite definitions. They reward people who can take a vague business question, turn it into a measurable problem, pick a defensible model and metric, reason about what could go wrong, and explain all of it clearly. This course trains that reasoning. It is built for the take-home-and-onsite loop most companies use: a SQL screen, a statistics and probability round, a modeling or ML-fundamentals round, an A/B testing and experimentation round, and an ML system design or case round.
+Data science and machine-learning interviews do not reward people who can recite definitions. They reward people who can take a vague business question, turn it into a measurable problem, pick a defensible model and metric, reason about what could go wrong, and explain all of it clearly. This course trains that reasoning. It is built for the take-home-and-onsite loop most companies use: a SQL screen, a statistics and probability round, a modeling or ML-fundamentals round, an A/B testing and experimentation round, and an ML system design or case round — which for ML-leaning roles increasingly includes a generative-AI / LLM system-design component.
 
 The voice is that of a calm senior practitioner sitting across the table. Every question hands you a concrete scenario — an imbalanced fraud dataset, a ride-sharing experiment, a recommender with no history for new items — and asks for the move a good candidate would make, not the textbook label. Distractors are the plausible-but-wrong answers real candidates give: optimizing accuracy on a 1%-positive dataset, treating correlated users as independent samples, peeking at a test until it turns significant. Knowing why each trap is wrong is most of the signal interviewers are listening for.
 
@@ -105,11 +105,11 @@ Questions are scenario-first and demand a judgment, not a recall. Where a precis
 - What breaks after the model ships, and how would I know?
 - Can I tell a clear story about a project: problem, decisions, tradeoffs, impact?
 
-**Key concepts**: problem framing and objective/metric selection, offline vs online metrics, training-serving skew, data drift vs concept drift, monitoring and retraining triggers, the cold-start problem (content-based features for new items/users), latency and cost tradeoffs, feedback loops, communicating tradeoffs to non-technical stakeholders.
+**Key concepts**: problem framing and objective/metric selection, offline vs online metrics, training-serving skew, data drift vs concept drift, monitoring and retraining triggers, the cold-start problem (content-based features for new items/users), latency and cost tradeoffs, feedback loops, communicating tradeoffs to non-technical stakeholders. For LLM-leaning roles (now a common 2025-2026 round): when retrieval-augmented generation (RAG) fits over fine-tuning, evaluating generative output (hallucination, groundedness), and the cost/latency of large models in production.
 
-**Applied skills**: design a recommender that handles cold start; specify what to monitor in production and when to retrain; turn a real project into a STAR-style narrative that names the decision and the tradeoff.
+**Applied skills**: design a recommender that handles cold start; specify what to monitor in production and when to retrain; turn a real project into a STAR-style narrative that names the decision and the tradeoff; for a GenAI prompt, argue whether RAG, fine-tuning, or prompt engineering is the right lever and how you would measure quality.
 
-**Common traps**: confusing data drift (P(X) shifts) with concept drift (P(Y|X) shifts); optimizing an offline metric that diverges from the business outcome; ignoring training-serving skew; using pure collaborative filtering for brand-new items that have no interaction history; narrating only what you did, never why.
+**Common traps**: confusing data drift (P(X) shifts) with concept drift (P(Y|X) shifts); optimizing an offline metric that diverges from the business outcome; ignoring training-serving skew; using pure collaborative filtering for brand-new items that have no interaction history; narrating only what you did, never why; reaching for fine-tuning when RAG (grounding the model in retrieved context) would solve a knowledge-currency or hallucination problem more cheaply.
 
 ## Capstone
 Run a 75-minute mixed interview loop on a single business case (for example, "reduce fraudulent transactions" or "increase content engagement"):
@@ -134,3 +134,6 @@ Submit the artifacts plus a short reflection naming the assumption you were leas
 - Wikipedia, F-score (harmonic mean of precision and recall): https://en.wikipedia.org/wiki/F-score
 - StatPearls, Type I and Type II Errors and Statistical Power: https://www.ncbi.nlm.nih.gov/books/NBK557530/
 - Kohavi, Tang, Xu, "Trustworthy Online Controlled Experiments" (interference, peeking, novelty, Simpson's paradox).
+- Exponent, "Data Science Interview Prep (2026 Guide)" — confirms the SQL / stats / ML / product-case / system-design / behavioral loop structure: https://www.tryexponent.com/blog/data-science-interview-guide
+- DataCamp, "Top 36 LLM Interview Questions and Answers for 2026" — RAG vs fine-tuning, hallucination, evaluation, now a standard ML-interview round: https://www.datacamp.com/blog/llm-interview-questions
+- Google ML Crash Course — ROC and AUC (ranking interpretation, threshold-independence): https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc

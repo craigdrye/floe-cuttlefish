@@ -2,7 +2,9 @@
 **ID**: `mbe` · **Discipline**: Law (United States)
 
 ## Course Aim
-The Multistate Bar Examination is 200 multiple-choice questions across two 3-hour sessions, with 175 scored items distributed equally — 25 each — across Civil Procedure, Constitutional Law, Contracts (including UCC Article 2), Criminal Law and Procedure, Evidence, Real Property, and Torts, plus 25 unscored pretest items the candidate cannot identify. Average pace is approximately 1 minute 48 seconds per question. The MBE is scaled jointly with the rest of the Uniform Bar Examination to a 400-point total (or counted per-jurisdiction); a scaled score near 140 is roughly the passing threshold in most UBE jurisdictions, and a 125 corresponds to the long-term 70th percentile of test-takers.
+The Multistate Bar Examination is 200 multiple-choice questions across two 3-hour sessions, with 175 scored items distributed equally — 25 each — across Civil Procedure, Constitutional Law, Contracts (including UCC Article 2), Criminal Law and Procedure, Evidence, Real Property, and Torts, plus 25 unscored pretest items the candidate cannot identify. Average pace is approximately 1 minute 48 seconds per question. The MBE is scaled jointly with the rest of the Uniform Bar Examination to a 400-point total (or counted per-jurisdiction); a scaled MBE score around 135 (roughly 125 of 175 scored items correct) is a common benchmark in UBE jurisdictions, though jurisdictions set passing on the combined UBE total, not on the MBE alone — minimum UBE totals range from 260 to 270 across states.
+
+**Transition note (2026).** The NextGen UBE first administers in a limited set of jurisdictions on July 28–29, 2026, with a phased national rollout; the legacy MBE/UBE described here is scheduled for its last administration in February 2028. All seven subjects below are retained on the NextGen exam, so the doctrine in this course transfers directly — but NextGen reweights and reformats delivery (integrated question sets, performance tasks, and some provided legal resources), so candidates sitting a NextGen jurisdiction should confirm their format and the foundational-skills components in addition to this doctrinal map.
 
 This course trains the bar-level analyst. The MBE will not ask you what the law should be. It will ask you, given a fact pattern with named parties, a jurisdictional anchor, and four polished answer choices, which choice states the legal outcome — and which choice states it for the right reason. Each answer choice on a real MBE contains both a result and a rationale. The wrong answers fail on the rationale even when they accidentally reach the right result, and the right answer states a rationale grounded in black-letter doctrine that controls.
 
@@ -260,3 +262,11 @@ Suggested cadence: 8-12 weeks of dedicated bar prep, post-graduation, roughly 6 
 **Heuristics that work.** Look for the jurisdictional anchor in the stem ("modern majority," "common law," "UCC," "in this jurisdiction, the recording act provides..."). Answers that ignore the anchor are usually wrong. Answers that introduce a fact not in the stem are wrong.
 
 **Heuristics that fail.** "Whichever feels fair." "Policy reasons." "What the law should be." None of these win MBE points.
+
+## Research Notes
+- https://www.ncbex.org/exams/mbe — NCBE MBE overview: 200 items, 175 scored (25 per subject across the seven subjects), 25 unscored pretest items; subject-matter outlines.
+- https://www.ncbex.org/exams/nextgen — NCBE NextGen Bar Exam: first administered July 28–29, 2026 in a limited set of jurisdictions; phased rollout.
+- https://www.ncbex.org/exams/nextgen/about-nextgen — NextGen foundational concepts confirm all seven legacy subjects are retained; transition period accepts both current and NextGen scores.
+- https://www.ncbex.org/news-resources/new-ncbe-report-confirms-nextgen-uniform-bar-exam-ready-launch — NextGen launch readiness; legacy UBE (MBE/MEE/MPT) last administered February 2028.
+- https://www.ncbex.org/exams/ube/ube-scores — UBE 400-point scaling and weighting (MBE 50%, MEE 30%, MPT 20%); jurisdictions set a combined-total passing score, not a standalone MBE cut score.
+- https://legal.uworld.com/bar-exam/passing-scores-by-state/ — UBE passing-score table by jurisdiction (range 260–270); context for the scaled-score benchmark.

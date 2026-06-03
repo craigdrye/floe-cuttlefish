@@ -4,7 +4,7 @@
 ## Course Aim
 CFA Level III is not a third pile of formulas. It is the exam where the candidate stops being an analyst and starts being a portfolio manager. The question is no longer "what is this worth" but "what should this client own, how much, in what wrapper, with what risk budget, and how will you explain the next bad quarter without losing the relationship?" Roughly half the exam is constructed-response (essay), and the grading rewards clear thinking, specific answers, and writing that names the right concept without dressing it up. The other half is item-set vignettes that look like Level II in structure but with judgment, suitability, and integration as the dominant axis rather than pure valuation.
 
-Beginning with the 2025 administration, Level III offers **three pathways**: (a) Portfolio Management, (b) Private Wealth, and (c) Private Markets. All three share a common core covering Ethics, Asset Allocation, and Performance Evaluation; each pathway then deepens in a specific direction. This syllabus is anchored on the **Portfolio Management pathway** (the default and historically most common choice) and notes where Private Wealth and Private Markets diverge. The format remains 11 essay (constructed-response) vignettes + 11 item-set vignettes across two sessions, with 44 item-set questions and a variable number of essay subparts.
+Beginning with the 2025 administration, Level III offers **three pathways**: (a) Portfolio Management, (b) Private Wealth, and (c) Private Markets. The **common core** (65-70% of the exam) covers Ethical and Professional Standards, Asset Allocation (including Capital Market Expectations), Portfolio Construction, Performance Measurement, and Derivatives and Risk Management; the chosen **pathway** is the remaining 30-35%. This syllabus is anchored on the **Portfolio Management pathway** (the default and historically most common choice) and notes where Private Wealth and Private Markets diverge. The format is **11 item-set vignettes + 11 essay (constructed-response) vignettes** across two sessions of 2h12m each, every set worth 12 points. Of the 22 sets, **20 are scored and two are unscored pilots** (one item set, one essay set). Item sets carry four multiple-choice items at 3 points each; essay sets carry constructed-response subparts whose point allocations are printed in the prompt and sum to 12. The 2025 curriculum (core and all three pathways) carries forward **unchanged for 2026**.
 
 The credential gates senior buy-side roles, allocator and CIO career tracks, asset-management leadership seats, and most private-wealth principal roles that expect more than securities licensing. Passing all three levels is a multi-year commitment and the L3 pass rate (typically 50-58%) reflects that the candidates who reach this exam are already strong. What separates passers is not knowledge — it is the discipline to write specific, complete answers in the right place on the answer sheet, with the right verb, against the clock.
 
@@ -19,26 +19,31 @@ Mix item-set and essay-style prompts. Essay-style prompts on Floe should mimic e
 
 ## Exam Map and Study Rhythm
 
-**Portfolio Management pathway (default — this syllabus tracks this pathway):**
+**Common core (65-70% of the exam — studied by every candidate regardless of pathway):**
 
-| Topic | Exam Weight | Study Posture |
+| Core Topic | Exam Weight | Study Posture |
 |---|---:|---|
 | Ethical and Professional Standards | 10-15% | Essay-style Ethics; many candidates lose easy points |
-| Asset Allocation | 15-20% | Strategic, tactical, liability-relative, goals-based, factor-based |
-| Portfolio Construction | 15-20% | Equity, fixed-income, alts construction at strategy level |
+| Asset Allocation (incl. Capital Market Expectations) | 15-20% | Strategic, tactical, liability-relative, goals-based, factor-based |
+| Portfolio Construction | 15-20% | Overview-level equity, fixed-income, and alternatives construction; institutional cases; trading |
 | Performance Measurement | 5-10% | Attribution, appraisal, GIPS |
 | Derivatives & Risk Management | 10-15% | Overlays, currency, tail risk, swap and option hedges |
-| Fixed Income | 15-20% | LDI, immunization, active strategies, credit |
-| Equity | 10-15% | Active, passive, factor, completion portfolios |
-| Alternative Investments | 5-10% | Sizing in real portfolios, illiquidity premium, due diligence |
-| Private Wealth (touchpoints) | 5-10% | IPS for individuals, taxes, behavioral |
-| Pension/Institutional | 5-10% | DB, endowments, foundations, insurance, SWF |
+
+**Chosen pathway (30-35% of the exam):**
+
+| Pathway | Study Posture |
+|---|---|
+| **Portfolio Management** (this syllabus's anchor) | Index-based and active equity, Active Share and risk budgeting; LDI, yield-curve, and credit fixed-income strategies; an institutional case study; trade strategy and execution |
+| **Private Wealth** | Wealth-management industry and business models; UHNW profiling and family dynamics; goals-based planning, tax, and liquidity management |
+| **Private Markets** | Private vs public markets; PE/private debt/real estate/infrastructure structures, costs, and performance metrics; valuation in illiquid markets |
+
+> Note: Behavioral Finance, Private Wealth IPS, and Institutional topics covered in Chapters 2-4 below sit inside the broader core curriculum (and overlap the Private Wealth pathway); the deep equity, fixed-income, and alternatives **strategy** material in Chapters 6-8 maps largely to the **Portfolio Management pathway** rather than to a standalone core weight.
 
 **Other pathways (high-level differences):**
 - **Private Wealth pathway:** Deeper coverage of individual IPS, after-tax investment planning, multigenerational wealth transfer, concentrated-holding strategies, behavioral diagnosis. Lighter on institutional and pension-specific material.
 - **Private Markets pathway:** Deeper coverage of private equity (LBO modeling, fund structures, secondaries), private debt, real estate, infrastructure, valuation in illiquid markets. Lighter on traditional fixed income and equity portfolio management.
 
-All three share the **common core**: Ethics, Asset Allocation, Performance Evaluation, and (largely) Capital Market Expectations.
+All three share the **common core**: Ethics, Asset Allocation (including Capital Market Expectations), Portfolio Construction, Performance Measurement, and Derivatives and Risk Management.
 
 **Realistic prep:** 300-400 hours over 4-6 months, plus essay technique drilling that most candidates underweight. The combination of essay writing under time pressure and the breadth of judgment topics is what makes L3 hard, not formula density.
 
@@ -306,10 +311,16 @@ Level III is graded by humans (essay) plus a scoring engine (item-set). The huma
 - **Answer the verb:** "Justify" requires a recommendation + specific reasons tied to case facts. "State" requires a short specific answer with no derivation. "Calculate" requires showing work. "Recommend and justify" requires both. Bullet points are **fine** — graders prefer them.
 - **Show the work briefly:** For calculations, show formula → substitution → answer with units. If your answer is wrong but the formula is right, you keep formula credit.
 - **Don't write essays — answer questions:** Long flowing paragraphs are penalized in practice because they hide the specific answer. Use labeled bullets ("• Reason 1: [specific reason from case]") and short sentences.
-- **Item-set timing:** ~3 minutes per item-set question (44 questions over ~132 minutes), but item-sets are usually easier than essays; bank time here.
+- **Item-set timing:** Each item set is four multiple-choice items at 3 points each (12 points/set); budget roughly **3 minutes per item**. Item sets are usually easier than essays, so bank time here for the constructed-response work.
 - **Read vignettes efficiently:** Skim first, read questions, then re-read with the questions in mind — same protocol as L2.
 - **Worst-section discipline:** If a subpart is going badly, write **something** that targets the verb (any plausible answer); zero is much worse than partial credit. Move on within budget.
 - **Calculator (BA II Plus):** **DEC = 9**, **P/Y = 1, C/Y = 1**, clear TVM between problems, verify settings before exam start.
 - **Ethics last hour:** As at L2, save Ethics for when your judgment is freshest.
 
 The best L3 candidates write like a senior partner closing a long meeting: clear, brief, labeled, and specific. A confident, well-organized final answer to a constructed-response prompt is worth more on exam day than a memorized formula you never write down.
+
+## Research Notes
+- [CFA Institute — Level III Exam](https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-iii-exam) — authoritative exam format: 11 item sets + 11 essay sets, 20 scored and 2 unscored pilots, 12 points/set, two 2h12m sessions; core 65-70% / pathway 30-35%.
+- [CFA Institute — Level III Specialized Pathways](https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-iii-exam/specialized-pathways) — the three pathways and the Portfolio Management pathway reading list (index/active equity, LDI and yield-curve/credit fixed income, institutional case study, trade strategy and execution).
+- [uWorld — CFA Level 3 Topics 2026](https://finance.uworld.com/cfa/level-3-topics/) — core topic weights and the contents of the "Portfolio Construction" core topic (equity/fixed-income overviews, alternatives, institutional, trading).
+- [300hours — CFA Curriculum Changes 2026](https://300hours.com/cfa-curriculum-changes-2026/) — confirmation that 2025 core and all three pathway curricula and topic weights carry forward unchanged for 2026.

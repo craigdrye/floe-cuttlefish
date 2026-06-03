@@ -4,7 +4,7 @@
 ## Course Aim
 A CIPP/E credential signals you can navigate the European data-protection framework as a working privacy professional, not as someone who has memorized the GDPR table of contents. The role is concrete: map data flows across business functions, draft a Records of Processing Activities (ROPA) under Article 30 and the DPIA (Article 35) for high-risk processing, choose a lawful basis under Article 6 before drafting the notice (not after), advise on Article 9 special-category data and Article 22 automated decision-making with safeguards, execute data-subject rights under Articles 12-22 within the one-month clock, and manage international transfers under Articles 44-49 in a post-Schrems II world that did not get easier.
 
-The CIPP/E exam (IAPP, 90 multiple-choice items, 2.5 hours, scaled passing 300 on a 100-500 scale, roughly 70% correct in raw terms) covers the current Body of Knowledge across three domains: Introduction to European Data Protection (~10-15%), European Data Protection Law and Regulation (~50-55%, the GDPR engine room), and Compliance with European Data Protection Law (~35-45%, applied scenarios). Pacing ~1.7 minutes per item rewards conservative reading and article-grounded answers over instinct.
+The CIPP/E exam (IAPP, 90 multiple-choice items of which 75 are scored and 15 are unscored pilot items, 2.5 hours, scaled passing 300 on a 100-500 scale — note 300 is not 60%) covers the current Body of Knowledge (v1.3.3, effective 1 September 2025). That 2025 revision reorganized the old three-domain layout into FIVE domains, splitting the large "Law and Regulation" domain apart: Domain I Introduction to European Data Protection (~7-13 scored items), Domain II European Data Protection Law and Regulation (~18-28, the GDPR engine room and the heaviest weighting), Domain III European Data Processing (~13-21: principles, lawful bases, transparency, transfers), Domain IV European Data Protection: Scope and Accountability (~8-18: territorial scope, accountability, DPIA/DPO, supervision and enforcement), and Domain V Compliance with European Data Protection Law and Regulation (~8-16: employment, surveillance, marketing, internet technology, AI). The split is organizational — sub-topic coverage and per-topic question counts were unchanged — but it added explicit references to the EU AI Act, NIS2, and the broader digital regulatory landscape. Pacing ~1.7 minutes per item rewards conservative reading and article-grounded answers over instinct.
 
 This syllabus trains the four habits of a CIPP/E-grade privacy practitioner: article-citation fluency (Articles 5, 6, 9, 13/14, 15-22, 25, 28, 30, 32, 33/34, 35, 37-39, 44-49, 51-59, 68-76, 83), CJEU-caselaw literacy (Schrems I, Schrems II, Google Spain, Bara, Lindqvist, Fashion ID, Digital Rights Ireland, La Quadrature du Net), regulator-fluent thinking (EDPB guidelines, lead supervisory authority cooperation, national DPA variations — CNIL, ICO, BfDI, Garante, DPC), and applied scenario judgment across employment, marketing, surveillance, outsourcing, and breach response. The voice should respect the rights at stake — Articles 7 and 8 of the EU Charter, Article 8 of the ECHR — without making the law sound mystical.
 
@@ -14,13 +14,15 @@ The goal is a working privacy toolkit and a passing scaled score: confident cita
 Route questions here when they cover IAPP CIPP/E content specifically — the European framework. CIPP/E differs from CIPP/US (US sectoral and state law) and CIPM (privacy program management). When a question is really about a US privacy law (CCPA/CPRA, HIPAA, GLBA, FERPA), route to CIPP/US. When it is about how to operationalize a privacy program (metrics, vendor management process), route to CIPM. When it is about AI governance or AI Act details beyond GDPR interplay, route to AIGP. The voice should respect rights at stake while keeping the law accessible.
 
 ## Exam Map and Study Rhythm
-90 MCQ, 2.5 hours, scaled passing 300. Canonical preparation: IAPP textbook European Data Protection (current edition) + IAPP Practice Test + online prep. Typical cadence: 80-120 hours over 2-4 months.
+90 MCQ (75 scored + 15 pilot), 2.5 hours, scaled passing 300. Canonical preparation: IAPP textbook European Data Protection (current edition) + IAPP Practice Test + online prep. Typical cadence: 80-120 hours over 2-4 months. The table below reflects the five-domain layout of BoK v1.3.3 (effective 1 September 2025); scored-item ranges are approximate.
 
-| Domain | Weight | What It Tests | Study Posture |
+| Domain | Scored items | What It Tests | Study Posture |
 |---|---:|---|---|
-| Introduction to European Data Protection | 10-15% | History — Convention 108, EU Directive 95/46, Charter Articles 7 and 8; institutions — Commission, Council, Parliament, EDPB, EDPS, CJEU; Council of Europe + ECHR Article 8 | Institutions map; instrument typology |
-| European Data Protection Law and Regulation | 50-55% | GDPR articles cluster by cluster — scope, definitions, principles, lawful bases, special categories, rights, controller/processor obligations, security, breach notification, DPO/DPIA, transfers, supervisory authorities, sanctions; ePrivacy 2002/58; NIS2; DSA/DMA; AI Act interplay | Article-by-article notes; EDPB guidelines list |
-| Compliance with European Data Protection Law | 35-45% | Employment, marketing/profiling, surveillance (CCTV, biometrics), outsourcing (Art 28), cross-border transfers post-Schrems II + TIAs, breach response operational, member-state variations | Scenario practice with article + recital citation |
+| I. Introduction to European Data Protection | 7-13 | History — Convention 108, EU Directive 95/46, Charter Articles 7 and 8; institutions — Commission, Council, Parliament, EDPB, EDPS, CJEU; Council of Europe + ECHR Article 8 | Institutions map; instrument typology |
+| II. European Data Protection Law and Regulation | 18-28 | GDPR core — personal-data concepts, security obligations, data-subject rights, controller/processor structure, EDPB guidance; ePrivacy 2002/58; NIS2; DSA/DMA; AI Act interplay | Article-by-article notes; EDPB guidelines list |
+| III. European Data Processing | 13-21 | Processing principles (Art 5), lawful bases (Arts 6/9/10), transparency (Arts 13/14), and international transfers (Chapter V) post-Schrems II | Lawful-basis decision tree; transfer-mechanism map |
+| IV. European Data Protection: Scope and Accountability | 8-18 | Territorial/material scope (Arts 2-3), accountability (Arts 24-30), DPIA/DPO (Arts 35-39), supervision, cooperation, and enforcement/sanctions (Arts 51-84) | Accountability checklist; LSA + one-stop-shop logic |
+| V. Compliance with European Data Protection Law and Regulation | 8-16 | Employment, marketing/profiling, surveillance (CCTV, biometrics), outsourcing (Art 28), internet technology, AI issues, breach response, member-state variations | Scenario practice with article + recital citation |
 
 ## Chapter 1: Origins, Instruments, Institutions
 **Core questions:** Where does European data protection come from, and which body does what?
@@ -78,7 +80,7 @@ Route questions here when they cover IAPP CIPP/E content specifically — the Eu
 - Article 7 conditions for consent: freely given, specific, informed, unambiguous; demonstrable; withdrawable as easily as given; not bundled with services
 - Article 9(2) exceptions for special categories: explicit consent, employment/social-security/social-protection, vital interests where data subject incapable, foundation/association legitimate activities, manifestly made public by data subject, legal claims, substantial public interest, preventive/occupational medicine, public health, archiving/research
 - Article 10 criminal-conviction data: only under EU/MS law authority
-- Legitimate-interests three-step test: purpose test (legitimate?), necessity test (necessary?), balancing test (does data subject's interest override?); Recital 47 recognizes direct marketing as a legitimate interest; data subject can object absolutely under Art 21(3) for direct marketing
+- Legitimate-interests three-step test: purpose test (legitimate?), necessity test (necessary?), balancing test (does data subject's interest override?); Recital 47 recognizes direct marketing as a legitimate interest; data subject can object absolutely under Art 21(3) for direct marketing. EDPB Guidelines 1/2024 on Art 6(1)(f) (adopted October 2024, updating WP29 Opinion 06/2014) restate this three-part test and confirm — following CJEU case law — that a purely commercial interest can qualify as a "legitimate interest," provided the necessity and balancing limbs are met
 
 **Applied skills**
 - Pick the lawful basis before drafting any notice
@@ -91,7 +93,7 @@ Route questions here when they cover IAPP CIPP/E content specifically — the Eu
 - **Children's consent.** Art 8 sets a default age of 16 for information-society services, member states may lower to as low as 13.
 - **LIA documentation.** Failure to document a Legitimate Interests Assessment is itself an accountability failure under Art 5(2).
 
-**Authoritative sources:** GDPR Articles 5-10, Recitals 39-50; EDPB Guidelines 5/2020 consent; EDPB Guidelines 2/2019 contract performance.
+**Authoritative sources:** GDPR Articles 5-10, Recitals 39-50; EDPB Guidelines 5/2020 consent; EDPB Guidelines 2/2019 contract performance; EDPB Guidelines 1/2024 on Art 6(1)(f) legitimate interest.
 
 ## Chapter 4: Data Subject Rights (Articles 12-22)
 **Core questions:** What rights apply, what limits apply, and how do you operationalize them under a one-month clock?
@@ -127,7 +129,7 @@ Route questions here when they cover IAPP CIPP/E content specifically — the Eu
 - Article 24 controller responsibility; Article 25 data protection by design and by default
 - Article 26 joint controllers (arrangement + essence to data subjects); Art 27 representative for non-EU controllers/processors
 - Article 28 processor obligations + eight mandatory contract terms (subject matter, duration, nature/purpose, type of data, categories of data subjects, controller obligations and rights, and detailed processor duties — process on documented instructions; confidentiality; security; sub-processor authorization; assistance with rights; assistance with breach/DPIA/consultation; deletion/return; audit cooperation)
-- Sub-processor authorization (Art 28(2)): prior specific or general written authorization; controller may object
+- Sub-processor authorization (Art 28(2)): prior specific or general written authorization; controller may object. EDPB Opinion 22/2024 (October 2024) clarifies the "sufficient guarantees" duty: a controller must be able to identify all processors and sub-processors in the chain and keep that information readily available, and the duty to verify guarantees flows down the entire sub-processing chain
 - Article 30 Records of Processing Activities: required of controllers and processors; exemption for <250 employees IF processing is occasional AND not high-risk AND no special categories — narrow exemption
 - Article 32 security: state of the art + costs vs risk; pseudonymization, encryption, confidentiality/integrity/availability/resilience, restore capability, regular testing
 - Article 33 breach notification to SA: without undue delay, where feasible within 72 hours; content per Art 33(3) — nature, categories and approximate numbers, DPO contact, likely consequences, measures
@@ -148,21 +150,21 @@ Route questions here when they cover IAPP CIPP/E content specifically — the Eu
 - **Joint-controller Art 26 arrangement.** Must allocate respective responsibilities AND essence available to data subjects. Both controllers remain jointly and severally liable to data subjects (Art 82(4)).
 - **Article 28 vs Article 26.** Processor contracts (Art 28) and joint-controller arrangements (Art 26) are different instruments with different obligations.
 
-**Authoritative sources:** GDPR Arts 24-39; EDPB Guidelines 9/2022 personal data breach notification; EDPB Guidelines on DPIA WP248 rev.01; EDPB Guidelines on DPO WP243.
+**Authoritative sources:** GDPR Arts 24-39; EDPB Guidelines 9/2022 personal data breach notification; EDPB Guidelines on DPIA WP248 rev.01; EDPB Guidelines on DPO WP243; EDPB Opinion 22/2024 on processor/sub-processor obligations.
 
 ## Chapter 6: International Transfers (Articles 44-49) — Post-Schrems II
 **Core questions:** How do you move personal data outside the EEA after Schrems II without pretending nothing happened?
 
 **Key concepts**
 - General principle (Art 44): no transfer unless conditions of Chapter V are met
-- Article 45 adequacy decisions: current adequacy countries include Andorra, Argentina, Canada (commercial), Faroe Islands, Guernsey, Isle of Man, Israel, Japan, Jersey, New Zealand, Republic of Korea, Switzerland, United Kingdom, Uruguay, and EU-US Data Privacy Framework (July 2023)
+- Article 45 adequacy decisions: current adequacy partners include Andorra, Argentina, Brazil (mutual adequacy, January 2026 — the first reciprocal arrangement), Canada (commercial), Faroe Islands, Guernsey, Isle of Man, Israel, Japan, Jersey, New Zealand, Republic of Korea, Switzerland, United Kingdom (renewed December 2025, valid to December 2031), Uruguay, the European Patent Organisation (July 2025 — first adequacy for an international organisation), and the EU-US Data Privacy Framework (July 2023)
 - Article 46 appropriate safeguards: SCCs (new 2021 modular set — C2C, C2P, P2P, P2C; review every 18 months for material changes); BCRs (Art 47, lengthy approval process via lead SA + EDPB); approved codes of conduct (Art 40); approved certifications (Art 42)
 - Article 49 derogations: explicit consent, contract performance, important public interest, legal claims, vital interests, public register; narrowly construed (one-off, not systematic)
 - Schrems I (CJEU C-362/14, 2015): invalidated Safe Harbor
 - Schrems II (CJEU C-311/18, 2020): invalidated Privacy Shield; held SCCs valid only if accompanied by supplementary measures sufficient to ensure essentially equivalent protection where the importer's local law (especially government access) undermines them
 - EDPB Recommendations 1/2020 on supplementary measures: technical (encryption + key control, pseudonymization), contractual, organizational
 - Transfer Impact Assessment (TIA): assess importer's local law, third-country government access, safeguards, supplementary measures
-- EU-US Data Privacy Framework (July 2023): adequacy decision; new redress mechanism (Data Protection Review Court); Executive Order 14086 limitations on US intelligence; self-certification by US importers via Department of Commerce
+- EU-US Data Privacy Framework (July 2023): adequacy decision; new redress mechanism (Data Protection Review Court); Executive Order 14086 limitations on US intelligence; self-certification by US importers via Department of Commerce. The DPF survived its first annulment challenge: in Latombe v Commission (T-553/23, 3 September 2025) the General Court dismissed the action and held US protection "essentially equivalent" — though an appeal was lodged in October 2025, so treat the DPF as valid but not immune from a "Schrems III" risk
 
 **Applied skills**
 - Run a TIA for a US processor and pick supplementary measures with eyes open
@@ -256,3 +258,13 @@ Pacing target: ~1.7 minutes per item. Strategy: identify the relevant GDPR artic
 - One mixed 45-item drill across all domains
 - Personal exam-day playbook with timing checkpoints
 - Error log review keyed to GDPR article cluster
+
+## Research Notes
+- IAPP CIPP/E Body of Knowledge and Exam Blueprint, v1.3.3, effective 1 Sept 2025 (official PDF): https://prod.iapp.org/media/pdf/certification/IAPP_Training-CIPPE_BOK_V5_28August2025.pdf — authoritative source for the five-domain reorganization and AI Act/NIS2 additions.
+- IAPP CIPP/E certification page: https://iapp.org/certify/cippe — exam format and current edition.
+- IAPP Certification FAQs: https://iapp.org/certify/faqs — confirms 90 items (75 scored + 15 pilot), scaled passing 300 on 100-500 (300 is not 60%), no per-section requirement.
+- European Commission adequacy decisions (international dimension): https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en — current adequacy list.
+- European Commission, EU-Brazil mutual adequacy (Jan 2026): https://ec.europa.eu/commission/presscorner/detail/en/ip_26_229 — first reciprocal adequacy arrangement.
+- CJEU General Court press release, Latombe v Commission (T-553/23, 3 Sept 2025): https://curia.europa.eu/site/upload/docs/application/pdf/2025-09/cp250106en.pdf — DPF upheld; appeal lodged Oct 2025.
+- EDPB Guidelines 1/2024 on Art 6(1)(f) legitimate interest: https://www.edpb.europa.eu/system/files/2024-10/edpb_guidelines_202401_legitimateinterest_en.pdf — updates WP29 Opinion 06/2014.
+- EDPB news on Opinion 22/2024 (processors/sub-processors) and Guidelines 1/2024: https://www.edpb.europa.eu/news/news/2024/edpb-adopts-opinion-processors-guidelines-legitimate-interest-statement-draft_en — both explicitly referenced in the 2025 BoK.

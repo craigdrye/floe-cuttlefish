@@ -43,7 +43,7 @@ Route questions here when they test payer operations: plan design and funding, c
 
 ## Chapter 6: Utilization Management and Medical Policy
 - **Core questions**: Does this request meet medical-necessity policy, what evidence is missing, and what is the member risk if it is delayed or denied?
-- **Key concepts**: prior authorization, concurrent and retrospective review, step therapy, medical necessity, clinical criteria (e.g., MCG/InterQual), medical policy and coverage determinations, peer-to-peer review; the CMS interoperability and prior-authorization final rule (electronic PA, decision-timeliness, and reason-transparency requirements).
+- **Key concepts**: prior authorization, concurrent and retrospective review, step therapy, medical necessity, clinical criteria (e.g., MCG/InterQual), medical policy and coverage determinations, peer-to-peer review; the CMS Interoperability and Prior Authorization final rule (CMS-0057-F): specific denial reasons and decision timeframes (standard 7 calendar days, expedited 72 hours) plus public PA metric reporting effective 2026, with the Prior Authorization and Patient/Provider/Payer-to-Payer APIs required by 2027.
 - **Applied skills**: Apply clinical criteria to a request and document the decision; write an appeal-ready denial rationale that cites the criterion and the missing evidence; identify when a delay creates clinical or regulatory risk.
 - **Common traps**: Denying for "not medically necessary" without naming the unmet criterion; confusing a benefit exclusion with a medical-necessity denial (different appeal paths); blowing decision-timeliness deadlines; forgetting that an expedited/urgent request has a shorter clock.
 
@@ -55,15 +55,15 @@ Route questions here when they test payer operations: plan design and funding, c
 
 ## Chapter 8: Risk Adjustment and Plan Revenue
 - **Core questions**: How does the plan get paid more for sicker members, and is the documentation accurate and compliant?
-- **Key concepts**: risk adjustment, HCC (hierarchical condition categories) and the v28 model transition, RAF score, MA bid and benchmark, Medicaid and ACA risk-adjustment programs; RADV audits; the difference between coding accuracy and coding intensity; chart review and supplemental data.
+- **Key concepts**: risk adjustment, HCC (hierarchical condition categories) and the CMS-HCC v28 model (phased in 33/67/100 percent over payment years 2024-2026 and now fully operative for PY2026, with fewer mapped ICD-10 codes and more clinically specific documentation required), RAF score, MA bid and benchmark, Medicaid and ACA risk-adjustment programs; RADV audits; the difference between coding accuracy and coding intensity; chart review and supplemental data.
 - **Applied skills**: Explain how a documented chronic condition changes plan revenue; distinguish legitimate gap-closure from non-compliant upcoding; reason about RADV audit exposure.
-- **Common traps**: Treating risk adjustment as billing (it is revenue from CMS/state, not from claims); chasing codes without supporting documentation (RADV/False Claims exposure); ignoring the v28 model changes that dropped or reweighted conditions; conflating diagnosis capture with quality care.
+- **Common traps**: Treating risk adjustment as billing (it is revenue from CMS/state, not from claims); chasing codes without supporting documentation (RADV/False Claims exposure); assuming v24 weights still apply when v28 (which dropped or reweighted conditions) governs PY2026 payment; conflating diagnosis capture with quality care.
 
 ## Chapter 9: Quality, Star Ratings, and Value-Based Care
 - **Core questions**: Which quality or cost gap matters most, how is it measured, and what dollars ride on it?
 - **Key concepts**: HEDIS measures, CAHPS and member-experience weighting, Medicare Advantage Star Ratings and the quality-bonus payment, care gaps, value-based and shared-savings contracts, capitation and downside risk, population health and total cost of care, attribution.
 - **Applied skills**: Identify the highest-leverage care gap given Star weights; design an incentive that changes provider behavior without gaming the measure; explain how a Star rating change moves plan revenue.
-- **Common traps**: Optimizing a measure instead of the outcome it proxies; ignoring that CAHPS/member-experience measures are heavily weighted and slow to move; assuming shared savings means no downside; confusing attribution (which patients count) with performance.
+- **Common traps**: Optimizing a measure instead of the outcome it proxies; misjudging the live weight of CAHPS/patient-experience measures (CMS cut their weight from 4x back to 2x starting with the 2026 Star year, but they remain slow to move and still gate access/coordination outcomes); assuming shared savings means no downside; confusing attribution (which patients count) with performance.
 
 ## Chapter 10: Appeals, Grievances, and Member Experience
 - **Core questions**: What does the member need now, which deadline applies, and what documentation proves the plan handled it fairly?
@@ -79,3 +79,10 @@ Route questions here when they test payer operations: plan design and funding, c
 
 ## Capstone
 Work a fictional payer operations case end to end and produce a leadership-ready packet. You are handed a member, a plan, a provider, and a problem: classify the line of business and who bears risk; verify eligibility and coordinate benefits; adjudicate a disputed claim against the contract and edits; resolve a prior-authorization and a pharmacy denial with appeal-ready rationale; assess one risk-adjustment and one Star/quality gap and the dollars attached; route and document a member appeal under the correct deadline; and flag the governing regulatory obligations (including any No Surprises Act, parity, or PA-reform issues). Close with a one-page executive summary that states the decision, the member impact, the financial and compliance tradeoffs, the owner, and the follow-up metric. The packet is graded on whether each decision names the right line of business, the controlling rule or contract term, and the member sitting on the other end.
+
+## Research Notes
+- CMS 2026 Star Ratings (fact sheet and measures/weights): https://www.cms.gov/files/document/2026-star-ratings-fact-sheet.pdf and https://www.cms.gov/files/document/2026-star-ratings-measures.pdf — confirms CAHPS/patient-experience and access measures dropped from 4x to 2x weight starting with the 2026 Star year.
+- CMS Risk Adjustment (CMS-HCC model overview): https://www.cms.gov/medicare/payment/medicare-advantage-rates-statistics/risk-adjustment — basis for the v28 phase-in (33/67/100 percent across PY2024-2026; v28 fully operative for PY2026).
+- CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F): https://www.cms.gov/cms-interoperability-and-prior-authorization-final-rule-cms-0057-f — denial-reason and decision-timeframe requirements (standard 7 days, expedited 72 hours), public PA metrics effective 2026, APIs by 2027.
+- CMS Final CY2026 Part D Redesign Program Instructions: https://www.cms.gov/newsroom/fact-sheets/final-cy-2026-part-d-redesign-program-instructions — IRA Part D out-of-pocket cap ($2,000 in 2025, $2,100 in 2026), elimination of the coverage gap, and negotiated-price effective dates (first 10 drugs 1/1/2026).
+- CMS Contract Year 2027 MA and Part D Final Rule: https://www.cms.gov/newsroom/fact-sheets/contract-year-2027-medicare-advantage-part-d-final-rule — CMS is not implementing the Health Equity Index ("Excellent Health Outcomes for All") reward for 2027 Stars; the historical reward factor continues.

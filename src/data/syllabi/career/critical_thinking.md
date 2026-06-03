@@ -61,9 +61,9 @@ Chapters move from structure (what an argument is) to validity and soundness, th
 - Is a first number or vivid memory secretly steering my estimate?
 - Am I making a decision based on money or effort I can never get back?
 
-**Key concepts**: confirmation bias, anchoring, availability heuristic, sunk cost fallacy, hindsight bias, survivorship bias.
+**Key concepts**: confirmation bias, anchoring, availability heuristic, framing effect, sunk cost fallacy, hindsight bias, survivorship bias, overconfidence (the Dunning-Kruger pattern).
 
-**Common traps**: mistaking confirmation bias (filtering evidence) for availability (ease of recall); letting an anchor price define "a good deal"; honoring sunk costs; learning only from the visible survivors.
+**Common traps**: mistaking confirmation bias (filtering evidence) for availability (ease of recall); letting an anchor price define "a good deal"; being swayed by how a number is framed ("90% survive" vs "10% die"); honoring sunk costs; learning only from the visible survivors; trusting confidence as a proxy for competence.
 
 ## Chapter 6: Correlation, Causation, and Statistics Traps
 **Core questions**
@@ -125,3 +125,10 @@ Learners assemble a personal, reusable toolkit and demonstrate it on a real clai
 - a short written reflection: "What is one belief I updated during this course, and what evidence moved me?"
 
 The goal is not to win arguments but to think clearly under pressure — to ask the right question first, weigh the evidence honestly, and change your mind for the right reasons.
+
+## Research Notes
+- The Delphi Report (Facione, 1990), APA expert-consensus statement defining critical thinking and its six core cognitive skills — interpretation, analysis, evaluation, inference, explanation, self-regulation — which this applied course exercises implicitly rather than naming: https://www.qcc.cuny.edu/socialSciences/ppecorino/CT-Expert-Report.pdf
+- Insight Assessment summary of the Delphi Report and the "purposeful, self-regulatory judgment" definition: https://insightassessment.com/iaresource/the-delphi-report-a-statement-of-expert-consensus-on-the-definition-of-critical-thinking/
+- Wikipedia "List of fallacies" — used to cross-check the canonical informal-fallacy set (relevance, unacceptable-premise, and structural fallacies) covered in Chapters 3-4: https://en.wikipedia.org/wiki/List_of_fallacies
+- Wikipedia "List of cognitive biases" — used to confirm the high-frequency biases in Chapter 5 (confirmation, anchoring, availability, framing effect, sunk cost, hindsight, survivorship, overconfidence/Dunning-Kruger): https://en.wikipedia.org/wiki/List_of_cognitive_biases
+- Wineburg & McGrew, "Lateral Reading and the Nature of Expertise" (Stanford History Education Group / SHEG) — authoritative source for the lateral-reading method used by professional fact-checkers, taught in Chapter 7 and the capstone: https://stacks.stanford.edu/file/druid:yk133ht8603/Wineburg%20McGrew_Lateral%20Reading%20and%20the%20Nature%20of%20Expertise.pdf

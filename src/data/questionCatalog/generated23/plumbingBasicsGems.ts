@@ -1,0 +1,158 @@
+import { makeSimpleQuestion } from '../base'
+import type { Question } from '../types'
+
+export const plumbingBasicsGems: Question[] = [
+  // ----------------------------------------------------------------------------
+  // Shutoff Valves and Safety First
+  // ----------------------------------------------------------------------------
+  makeSimpleQuestion(
+    10071000,
+    'Career Skills',
+    'Shutoff Valves and Safety First',
+    "The safety device that fails because you never used it",
+    "A pipe bursts under your kitchen sink and water is spraying. You sprint to the main shutoff valve you have never touched in eight years of living here, grab the round handle, and twist with all your strength. It will not budge. How can a valve whose entire job is to stop water in an emergency be the very thing most likely to fail in one?",
+    "Gate valves seize precisely because they sit untouched: mineral scale and corrosion slowly cement the gate to its seat over years of disuse, so the valve you 'saved' for emergencies is the one most likely to be frozen solid when the emergency finally arrives",
+    [
+      ["A valve that is never used stays in perfect factory condition, so disuse cannot possibly cause failure; it must have been defective from the day it was installed", "Mechanical things wear out from use, but valves are an inversion of that intuition: still water leaves dissolved minerals and corrosion that build up over years and bond the gate to its seat, so doing nothing is exactly what breaks it.", "Ask what slowly accumulates in standing water; the failure is from neglect, not a hidden factory defect."],
+      ["Valves only seize from being turned too often, so the homeowner caused this by opening and closing it too many times", "It is the opposite: opening and closing a valve once or twice a year scrubs away the scale that would otherwise weld it shut, which is why plumbers tell you to 'exercise' valves rather than leave them alone.", "Periodic motion prevents seizing; the problem here is too little movement, not too much."],
+      ["Modern shutoff valves are sealed for life and require no attention, so any failure means the city's water was contaminated", "There is no maintenance-free 'sealed for life' valve in a normal home; gate valves in particular accumulate mineral deposits internally and need occasional exercising regardless of water quality.", "Reframe the issue as ordinary scale buildup inside the valve, not exotic contamination from outside."],
+    ],
+    "A shutoff valve is a promise you make to your future self in a crisis, and the cruel twist is that the promise quietly rots while you ignore it. Standing water deposits minerals and breeds corrosion, slowly cementing a gate valve's internals together, so the very valve you reserve for emergencies becomes the one most likely to be immovable when you finally need it. The deep idea is a general one about reliability engineering: a backup component that is never tested silently drifts toward failure, and trust in an untested safeguard is often misplaced. The fix is counterintuitive but profound, namely that you keep an emergency tool alive by deliberately using it on a calm day. Knowing where your main valve is and turning it once or twice a year is not fussiness; it is the only way to convert a hopeful assumption into a verified capability.",
+    'Floe generated',
+    true,
+    "Think about what accumulates in water that never moves, and why a plumber would tell you to deliberately operate a valve you hope never to need.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10071001,
+    'Career Skills',
+    'Shutoff Valves and Safety First',
+    "Why you back off a fully open valve a quarter turn",
+    "An experienced plumber opens your main gate valve all the way until the handle stops hard, and then, oddly, turns it back about a quarter turn so it is no longer fully tight. You would have left it cranked firmly open. What problem is that small backward turn protecting against?",
+    "Cranking the stem hard against its stop lets thermal expansion wedge the metal parts together, so on a warm day the valve can jam 'stuck open'; backing off a quarter turn leaves slack so the parts can expand without binding and the valve stays free to operate",
+    [
+      ["Backing off a quarter turn lets a trickle of water through on purpose, which keeps the pipes from going completely stagnant", "The valve is still fully open for flow; the quarter turn is not about letting water past but about not jamming the stem hard against its seat, so flow is unchanged either way.", "The backward turn changes how tightly the metal is wedged, not how much water passes a wide-open valve."],
+      ["Leaving it cranked tight is best because maximum tightness guarantees maximum flow through the valve", "A gate valve is either open or closed for flow purposes; muscling the handle past 'fully open' adds zero flow and only risks wedging the parts so tightly that heat expansion locks them.", "Extra force past the stop buys no extra flow and creates a jamming risk; 'tighter' is not 'more open' here."],
+      ["The quarter turn is just a habit with no real function; any plumber who skips it gets identical results", "It has a concrete purpose: it relieves stem pressure so differential thermal expansion does not bind the components, and skipping it is exactly how valves end up immovably stuck open after a hot day.", "Reframe it as deliberate slack against thermal binding, not an empty ritual."],
+    ],
+    "This question quietly teaches that metal is not rigid, it breathes with temperature, and good design leaves room for that breathing. A gate valve cranked hard against its stop has its stem and body wedged tight; when the day warms and the parts expand at different rates, they bind against each other and the handle will not move, leaving you with a valve that is open but frozen open. Backing off a quarter turn restores a sliver of slack so the metal can expand harmlessly. The deeper lesson reaches far beyond plumbing: countless engineered systems leave intentional play (expansion joints in bridges, gaps in railway tracks, the quarter turn here) because absolute tightness is brittle. A little deliberate looseness is what keeps a mechanism operable across the temperatures it must actually survive.",
+    'Floe generated',
+    true,
+    "Ask what happens to tightly clamped metal when it warms up, and why 'as tight as possible' can be worse than 'fully open with a little slack.'",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10071002,
+    'Career Skills',
+    'Shutoff Valves and Safety First',
+    "Why one house has dozens of shutoffs, not just one",
+    "Your dishwasher hose starts leaking. You could run downstairs and kill the main valve that feeds the whole house, but a plumber would instead reach for the small valve right behind the appliance. Beyond convenience, what is the real design principle behind giving each fixture its own local shutoff in addition to the single main?",
+    "It is isolation by zone: a local valve lets you cut water to exactly the failing part while the rest of the house keeps working, which both limits the damage radius and means a repair on one fixture does not shut down everyone's toilets, sinks, and showers",
+    [
+      ["The local valves exist only as backups for when the main valve is broken; if the main worked, you would never need them", "Local valves are not understudies for the main; they exist so you can isolate one fixture without depriving the whole household of water, which is a different and routine purpose, not a fallback.", "Their job is scoped isolation during normal repairs, not standing in for a failed main."],
+      ["More valves simply mean more places that can leak, so they add risk without any real benefit over a single main", "Each valve is a potential leak point, but the benefit dominates: isolating one fixture contains damage and keeps the rest of the home running, which a single main can never do.", "Weigh the containment and continuity benefit, not just the count of components."],
+      ["The only reason for local valves is to save the few seconds it takes to walk to the main valve", "Time saved is minor; the substantive reason is the ability to confine a shutdown to one zone so a single repair does not knock out the entire household's water.", "The principle is zonal isolation and damage containment, not merely walking distance."],
+    ],
+    "A plumbing system is a small lesson in fault isolation, the same principle that runs through electrical circuits, software services, and ship bulkheads. A single main shutoff is a blunt instrument: it protects against catastrophe but at the cost of taking everything offline at once. Distributing local shutoffs at each fixture turns one big failure domain into many small ones, so a leaking dishwasher can be sealed off while the rest of the house keeps flowing, and the blast radius of any single fault shrinks to one appliance. The deep idea is that resilient systems are layered, with a coarse global control for true emergencies and fine-grained local controls for everyday faults, and that the ability to contain a problem to its smallest possible zone is often worth far more than the few extra components it costs.",
+    'Floe generated',
+    true,
+    "Compare the cost of taking the whole house offline versus sealing off only the broken fixture; think 'blast radius', not 'walking distance.'",
+    { challengeRating: 6 },
+  ),
+  // ----------------------------------------------------------------------------
+  // Fixing a Running Toilet
+  // ----------------------------------------------------------------------------
+  makeSimpleQuestion(
+    10071003,
+    'Career Skills',
+    'Fixing a Running Toilet',
+    "The silent leak that empties a reservoir",
+    "Your water bill jumps, but you never hear a toilet running and the bowl looks still. A plumber drops a few drops of food coloring into the tank, waits, and color seeps into the bowl without a flush. Why does a worn flapper at the bottom of the tank create a leak that can run all day yet make almost no sound?",
+    "A worn flapper lets tank water trickle silently straight down into the bowl; because the bowl never overflows (it drains through the trap), the tank slowly empties, the float drops, and the fill valve quietly tops the tank back up over and over, wasting water with no obvious noise",
+    [
+      ["A silent leak is impossible, because any water leaving the tank must produce the loud hiss of the fill valve that everyone associates with a running toilet", "The fill valve does hiss when it runs, but a slow flapper leak can keep the tank near full so the valve only sips occasionally and briefly, which is why a real leak can hide for months without the telltale roar.", "A small enough leak triggers the valve only intermittently; absence of a loud hiss does not mean absence of a leak."],
+      ["The leak is loud water flowing out of the overflow tube and down the drain, which is why the bill rises", "Flapper leaks pass under the flapper directly into the bowl, not over the overflow tube; the path is quiet and the bowl simply drains it away through the trap, so there is no splashing sound.", "Trace the water's actual path: under a bad flapper into the bowl, silently, not over the overflow tube."],
+      ["The bowl is overflowing onto the floor, and the wasted water is what you are mopping up", "The bowl does not overflow; its built-in trap drains the leaked water away as fast as it dribbles in, so the loss is invisible, going down the drain rather than onto the floor.", "The bowl self-drains through the trap, so the loss is hidden in the sewer line, not on the floor."],
+    ],
+    "This question reveals how a small, continuous fault can dwarf a dramatic one precisely because it is quiet. The flapper is just a rubber seal; when it stiffens or warps, it lets a thin film of water slip from tank to bowl, and since the bowl drains through its trap the water never piles up to announce itself. The tank level inches down, the float follows, and the fill valve wakes to top it off, again and again, a slow heartbeat that can waste hundreds of gallons unseen. The deeper idea is that we instinctively rank problems by how loud or visible they are, yet a tiny defect that operates continuously can cost far more than a loud one that happens rarely. The food-coloring test is a small triumph of diagnosis: it makes an invisible flow visible, turning a mystery on the water bill into something you can literally watch.",
+    'Floe generated',
+    true,
+    "Follow the water: a bad flapper lets it slip into the bowl, the bowl drains it away, and the fill valve quietly refills the tank to compensate.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10071004,
+    'Career Skills',
+    'Fixing a Running Toilet',
+    "The float that turns a faucet into a self-stopping fill",
+    "A toilet tank refills itself after every flush and shuts off at exactly the right level with no one watching. There is no electronics, no sensor, no timer inside, just a floating ball or cup on the fill valve. How does this purely mechanical contraption 'know' when to stop the water?",
+    "The float rides on the rising water and is physically linked to the valve, so as the water lifts the float it gradually pushes the valve closed; the water level itself is doing the sensing and the shutting, a feedback loop where the thing being controlled (the level) directly drives its own controller",
+    [
+      ["A small timer inside the valve runs the water for a fixed number of seconds calibrated to fill the tank, then cuts it off", "There is no timer: if it ran for a fixed time it could not adapt to changing water pressure or a partially full tank, yet the float-valve always stops at the same level because the water itself, not a clock, closes the valve.", "A fixed timer cannot self-correct for pressure or starting level, but a float that follows the water can; the level is the signal."],
+      ["A pressure sensor at the bottom of the tank measures the weight of the water and electronically signals the valve to close", "Standard toilets have no electronics or sensors at all; the float is a purely mechanical link, and the elegance is that buoyancy and a lever do the entire job without measuring pressure.", "Reframe it as buoyancy plus a lever, not electronic pressure sensing."],
+      ["The incoming water pressure naturally drops as the tank fills, and the valve closes itself once pressure falls enough", "Supply pressure does not meaningfully fall as a small tank fills; the shutoff comes from the float physically rising and pushing the valve shut, which is why bending the float arm changes the fill level.", "The closing force is the float rising, not a drop in supply pressure; adjusting the float proves it."],
+    ],
+    "The toilet fill valve is a tiny, beautiful instance of negative feedback control, the same principle behind a thermostat, a cruise control, and the governor on a steam engine. The output being regulated, the water level, is mechanically coupled to the device that regulates it, so as the level approaches its target the float closes the valve and the system settles itself with no external intelligence required. The reason this is deep is that it dissolves the apparent need for a 'brain': the contraption appears to sense and decide, yet it only floats and pushes. Feedback lets a dumb mechanism behave as if it had a goal. Recognizing the float as a feedback loop also explains every adjustment a plumber makes, because bending or sliding the float simply moves the setpoint at which the loop chooses to stop.",
+    'Floe generated',
+    true,
+    "Ask what is physically connected to what: the water lifts the float, and the float is what pushes the valve shut. Where is the 'sensor'?",
+    { challengeRating: 6 },
+  ),
+  // ----------------------------------------------------------------------------
+  // Frozen Pipes and Seasonal Care
+  // ----------------------------------------------------------------------------
+  makeSimpleQuestion(
+    10071005,
+    'Career Skills',
+    'Frozen Pipes and Seasonal Care',
+    "Why a frozen pipe bursts where the ice is not",
+    "After a deep freeze a pipe splits open, but a plumber points out the crack is on a section that still holds liquid water, while the solid plug of ice sits a foot away on an intact stretch. If ice expanding inside the pipe is the culprit, why does the pipe so often rupture at a spot with little or no ice in it?",
+    "The ice forms a plug, and as it keeps growing it shoves the still-liquid water ahead of it toward a closed faucet; with nowhere to go, that trapped water's pressure skyrockets and bursts the pipe at its weakest point downstream, not at the ice itself",
+    [
+      ["The expanding ice simply pushes outward on the pipe walls where it sits, so the burst must occur exactly at the ice plug; the plumber misread the location", "Ice does press outward, but a pipe is strong and ice can also relieve itself by extruding along the pipe; the lethal effect is the pressure it builds in the trapped liquid downstream, which is why the burst lands away from the ice.", "The damage comes from hydraulic pressure in trapped liquid, not ice pressing the wall where it froze."],
+      ["The pipe bursts at the ice because frozen pipe is brittle and cold metal cracks first wherever it is coldest", "Cold can embrittle metal, but copper and plastic pipes burst from internal pressure, and that pressure peaks in the liquid column between the ice and a closed tap, which is often not the coldest spot.", "The failure is overpressure of trapped water, not the metal simply being coldest at the ice."],
+      ["Water that freezes expands by about 9 percent and that volume change alone tears open the pipe right at the ice", "The 9 percent expansion starts the trouble by forming a plug, but a single plug rarely splits a pipe by itself; the real damage is the immense pressure it then drives into the trapped water beyond it, bursting the pipe elsewhere.", "Expansion creates the plug, but it is the resulting trapped-water pressure that does the bursting, and downstream."],
+    ],
+    "The startling fact that a pipe ruptures away from the ice teaches that water transmits pressure, and that this is the mechanism of the damage, not the freezing alone. Once an ice plug seals the pipe and keeps growing, it acts like a piston, driving the liquid water ahead of it against a dead end such as a closed faucet. Liquids barely compress, so the pressure in that trapped column climbs to thousands of pounds per square inch and the pipe lets go at its weakest point, which is frequently nowhere near the ice. The deep payoff is in prevention: it explains why simply letting a faucet drip on a frigid night protects the pipe. The drip is not about warmth, it is an escape route that prevents the trapped column from ever forming, so the pressure has somewhere to go and never reaches the bursting point.",
+    'Floe generated',
+    true,
+    "Think of the growing ice as a piston. What happens to the liquid water trapped between that piston and a shut faucet?",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10071006,
+    'Career Skills',
+    'Frozen Pipes and Seasonal Care',
+    "Why a dripping faucet beats a warmer thermostat on a brutal night",
+    "Forecast says a record cold snap overnight. One neighbor cranks the heat a couple of degrees and goes to bed; another leaves the heat normal but opens a far faucet to a slow drip. Why is the trickle of water often the more reliable protection against a burst pipe, even though it does nothing to warm the pipe?",
+    "The drip works on the pressure mechanism, not temperature: by keeping the line open at one end it both keeps water moving (harder to freeze) and, crucially, gives any trapped water an escape route so an ice plug can never seal off a column and build the pressure that bursts pipes",
+    [
+      ["The dripping water is warmer than the pipe and physically heats the metal enough to keep it above freezing along its whole length", "A thin trickle carries almost no heat and cannot warm a long cold run; its protection is mechanical, namely relieving pressure and keeping water moving, not delivering warmth.", "The drip's defense is pressure relief and motion, not heating the pipe."],
+      ["Raising the thermostat is always strictly better, since warmer air guarantees no pipe anywhere can freeze", "Warm room air often fails to reach pipes hidden in exterior walls, crawlspaces, or cabinets, so those runs can still freeze; the drip protects them by preventing the pressure buildup regardless of where the cold reaches.", "Thermostat heat may never reach the vulnerable pipe; the drip defends pipes the warm air cannot."],
+      ["The open faucet lowers the water pressure in the whole system so there is simply less water to freeze in the pipes", "It does not drain the system or reduce how much water is present; it keeps a path open so a forming ice plug cannot trap and pressurize a sealed column, which is what actually ruptures pipes.", "It is about leaving an open escape path, not removing water or globally dropping pressure."],
+    ],
+    "This question rewards understanding the real failure mechanism over the obvious instinct to just add heat. Pipes do not burst from being cold, they burst when a growing ice plug traps liquid water against a closed end and drives its pressure to the breaking point. A dripping faucet attacks that chain directly: moving water resists freezing, and an open tap means there is never a sealed, dead-ended column to pressurize, so even if ice does form the pressure has an exit. The deeper lesson is diagnostic humility, because the most intuitive fix (turn up the heat) targets a symptom that warm air may never even reach behind a wall, while the unglamorous trick of a slow drip neutralizes the actual cause for pennies. Solving the right problem beats throwing energy at the apparent one.",
+    'Floe generated',
+    true,
+    "The drip carries almost no heat. So its benefit cannot be warming the pipe; what does an open faucet do to a forming ice plug and the water behind it?",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10071007,
+    'Career Skills',
+    'Frozen Pipes and Seasonal Care',
+    "The relief of a burst pipe you do not discover until spring",
+    "A pipe in an unheated vacation cabin freezes and splits in January, but you do not learn about it until you arrive in April. The plumber says the smartest pre-winter move would have been to drain the system and leave a faucet open. Given that the pipe is going to get cold regardless, how does emptying the pipes prevent a freeze burst?",
+    "If there is essentially no water in the pipe, there is nothing to freeze into a plug and nothing to trap and pressurize, so even at the deepest cold the pipe simply has no water to expand against its walls; you remove the cause rather than fighting the temperature",
+    [
+      ["Draining only helps if you also keep the heat on, because empty pipes still crack from thermal contraction in extreme cold", "Empty pipes survive freezing fine on their own; the burst mechanism needs water to form a plug and build pressure, so removing the water removes the danger without any heating.", "The burst requires water; with the pipes empty there is no pressure to build and no heat is needed."],
+      ["Draining works by lowering the freezing point of the small amount of water left behind so it never turns to ice", "Draining does not change any freezing point; it simply removes the water, and the tiny residue that may remain has no trapped column to pressurize, so there is nothing to burst.", "The mechanism is removing water, not chemically depressing its freezing point."],
+      ["An empty pipe fills with cold air that contracts and creates a vacuum, and that vacuum is what actually protects the pipe", "No protective vacuum forms; the pipe is open to the air through the faucet you left open, and the protection is simply that there is no water present to freeze, expand, and rupture the pipe.", "Protection comes from the absence of water, not from any vacuum effect inside the pipe."],
+    ],
+    "Draining the system is the purest expression of the whole frozen-pipe lesson, because it does not fight the cold at all, it removes the ingredient the cold needs. Every freeze burst depends on water present to form a plug, get trapped, and build pressure; take the water away and the temperature can plunge as far as it likes with nothing to act on. Leaving a faucet open ensures the line stays at atmospheric pressure and any stray drops have an exit. The deep idea, which recurs across engineering and risk management, is that the most robust defense is often not to resist a hazard with more force (more heat, stronger pipes) but to eliminate its precondition entirely. A problem that cannot occur needs no monitoring, no energy, and no luck.",
+    'Floe generated',
+    true,
+    "The pipe will get just as cold either way. What single ingredient does a freeze burst absolutely require, and what happens if you simply remove it?",
+    { challengeRating: 6 },
+  ),
+]

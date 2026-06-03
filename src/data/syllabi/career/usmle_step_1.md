@@ -2,7 +2,7 @@
 **ID**: `usmleStep1` · **Discipline**: Medicine
 
 ## Course Aim
-Step 1 stopped reporting a three-digit score in January 2022, but the exam itself did not get any kinder. It became a one-day, seven-block, pass-or-fail gate that asks one question over and over in two hundred and eighty different costumes: *can you reason from a molecule to a person?* The vignettes are tight, the distractors are mean, and the right answer is almost always the one that names a mechanism, an organism, a pathway, or a single high-yield buzzword the rest of the stem was built around.
+Step 1 stopped reporting a three-digit score in January 2022, but the exam itself did not get any kinder. It is a one-day, pass-or-fail gate that asks one question over and over in roughly two hundred and eighty different costumes: *can you reason from a molecule to a person?* The vignettes are tight, the distractors are mean, and the right answer is almost always the one that names a mechanism, an organism, a pathway, or a single high-yield buzzword the rest of the stem was built around.
 
 The temperament this exam rewards is that of a basic-scientist-detective. You read the four-line vignette and your eye lands on one detail — *bite cells*, *bullous myringitis*, *non-bilious projectile vomiting*, *rust-colored sputum*, *cherry-red macula without hepatosplenomegaly* — and your brain already knows the enzyme, the organism, the inheritance, the cofactor, and the textbook treatment. Step 1 is not really a clinical exam; it is a *recognition* exam dressed up in clinical clothing, and the best preparation builds dense, fluent, retrievable knowledge of the mechanisms that hold the rest of medicine up.
 
@@ -16,44 +16,48 @@ Floe routes a question into this course when it tests preclinical content the NB
 Step 1 has been pass/fail since January 2022, which shifted the consequences of failure but not the depth required to pass. The exam still tests the same conceptual range; the change simply moved the residency-application weight onto Step 2 CK. Treat the new format as freedom from chasing a single number, not as permission to study shallowly. Pass-level questions still ask for the rate-limiting enzyme of gluconeogenesis, the toxin that causes gas gangrene, the inheritance pattern of OTC deficiency, and the one drug that lyses fresh thrombus. The fastest route to a comfortable pass is the same as the fastest route to a strong Step 2 score: build the mechanisms deeply, the first time.
 
 ## Exam Map and Study Rhythm
-The exam delivers approximately 280 multiple-choice questions over seven 60-minute blocks of around 40 questions each, with a total of 45 minutes of break time across the day. The full session runs about 7 hours. Pace works out to roughly **1.5 minutes per question** — enough time to read carefully, not enough time to spiral.
+The exam delivers up to 280 multiple-choice questions in one 8-hour testing session. **As of May 14, 2026 the session is split into fourteen 30-minute blocks of up to 20 questions each** (the prior format was seven 60-minute blocks of up to 40 questions; the total item count and 8-hour day did not change). There is a minimum of 55 minutes of break time and a 5-minute optional tutorial; finishing a block or the tutorial early rolls the leftover minutes into your break bank. Pace still works out to roughly **1.5 minutes per question** — enough time to read carefully, not enough time to spiral. The shorter blocks mean more frequent natural reset points; use them.
 
-NBME publishes content ranges rather than fixed weights; the table below reflects the current published blueprint. Allocate by published range, personal weakness, and high-yield density.
+NBME publishes content ranges rather than fixed weights, and recategorized the outline in January 2024 (foundational-science topics that once sat under a standalone "General Principles" heading were folded into the organ systems and a new "Human Development" category — the proportion of foundational science did not change, only its labeling). The tables below reflect that current published blueprint. Allocate by published range, personal weakness, and high-yield density.
 
 ### Organ System and Content Area Weights
 
 | Area | Approximate Weight |
 |---|---:|
-| General Principles (biochem, genetics, micro, immuno basics) | 12-16% |
-| Cardiovascular System | 7-9% |
-| Respiratory System | 5-7% |
-| Gastrointestinal System | 5-7% |
-| Renal and Urinary System | 5-7% |
-| Reproductive System | 5-7% |
-| Endocrine System | 5-7% |
-| Musculoskeletal, Skin, and Connective Tissue | 6-8% |
-| Nervous System and Special Senses | 9-11% |
-| Blood and Lymphoreticular System | 5-7% |
-| Behavioral Health | 5-7% |
-| Multisystem Processes, Genetics, and Aging | 4-6% |
-| Biostatistics, Epidemiology, Population Health | 11-13% |
-| Social Sciences, Communication, Ethics | 7-9% |
+| Human Development | 1-3% |
+| Blood & Lymphoreticular / Immune Systems | 9-13% |
+| Behavioral Health & Nervous Systems / Special Senses | 10-14% |
+| Musculoskeletal, Skin & Subcutaneous Tissue | 8-12% |
+| Cardiovascular System | 7-11% |
+| Respiratory & Renal/Urinary Systems | 11-15% |
+| Gastrointestinal System | 6-10% |
+| Reproductive & Endocrine Systems | 12-16% |
+| Multisystem Processes & Disorders | 8-12% |
+| Biostatistics & Epidemiology / Population Health | 4-6% |
+| Social Sciences (Communication & Interpersonal Skills) | 6-9% |
 
 ### Discipline Weights
 
 | Discipline | Approximate Weight |
 |---|---:|
-| Pathology | 44-52% |
-| Physiology | 25-35% |
-| Pharmacology | 15-22% |
-| Biochemistry and Molecular Biology | 14-24% |
-| Microbiology | 10-15% |
-| Immunology | 6-11% |
-| Behavioral Sciences | 8-13% |
-| Anatomy and Embryology | 11-15% |
-| Genetics | 4-9% |
-| Histology and Cell Biology | 4-7% |
-| Nutrition | 1-4% |
+| Pathology | 45-55% |
+| Physiology | 30-40% |
+| Pharmacology | 10-20% |
+| Microbiology | 10-20% |
+| Gross Anatomy & Embryology | 10-20% |
+| Biochemistry & Nutrition | 5-15% |
+| Immunology | 5-15% |
+| Histology & Cell Biology | 5-15% |
+| Behavioral Sciences | 10-15% |
+| Genetics | 5-10% |
+
+### Physician Tasks / Competencies (how items are framed)
+| Competency | Approximate Weight |
+|---|---:|
+| Medical Knowledge: Applying Foundational Science Concepts | 60-70% |
+| Patient Care: Diagnosis | 20-25% |
+| Communication and Interpersonal Skills | 6-9% |
+| Practice-based Learning & Improvement (incl. biostatistics) | 4-6% |
 
 ### Suggested Study Cadence
 The single most validated rhythm is a **dedicated study block of 4-8 weeks immediately after preclinical coursework**, layered on top of a strong M1-M2 foundation. During the dedicated period, plan on roughly **12 hours per day**, six days per week, with one full day off for sleep and life. A typical day blends:
@@ -281,8 +285,8 @@ Self-assessment rhythm: one NBME or UWSA self-assessment every 7-10 days, with a
 The basic sciences are only half the test; the other half is operating under time pressure for seven hours. This capstone consolidates the test-day execution plan that turns *knowing it* into *getting it right*.
 
 **Pacing**
-- ~1.5 minutes per question, 40 questions per block, 60 minutes per block. Build a per-block pacing checkpoint: at minute 20 you should be at question 13-14; at minute 40 you should be at question 26-27.
-- **Never skip blindly.** Make your best educated guess on the first pass, flag if uncertain, and only return to flagged questions if time remains at the end of the block. Most question changes on review hurt rather than help.
+- ~1.5 minutes per question. Under the format effective May 14, 2026 that is up to 20 questions per 30-minute block: a halfway checkpoint of question 10 at minute 15 keeps you on rhythm. (On the prior seven-block, 60-minute format the math was identical — 40 questions per hour.)
+- **Never skip blindly.** Make your best educated guess on the first pass, flag if uncertain, and only return to flagged questions if time remains at the end of the block. Most question changes on review hurt rather than help. Note that flags and review are scoped to the *current* block only — you cannot revisit a block once you leave it.
 
 **Attacking a vignette**
 1. Read the **last line** first — that tells you what the question is actually asking.
@@ -292,8 +296,8 @@ The basic sciences are only half the test; the other half is operating under tim
 5. Match the answer choices to the differential; eliminate before you choose.
 
 **Breaks**
-- ~45 minutes total break time across the day, distributed across six breaks. Use them.
-- Plan a long break after blocks 3 and 4 with food, water, and a quick walk. Sugar and caffeine in moderation; nothing experimental on test day.
+- A minimum of 55 minutes of total break time across the day, plus any minutes you bank by finishing blocks or the tutorial early. Use them — the break clock only runs when you choose to break between blocks.
+- Plan a longer break around the middle of the day with food, water, and a quick walk. Sugar and caffeine in moderation; nothing experimental on test day.
 
 **Test-day prep**
 - Sleep is the single most under-rated study tool the last 72 hours before the exam.
@@ -301,4 +305,10 @@ The basic sciences are only half the test; the other half is operating under tim
 - Light, familiar breakfast. Pack snacks. Arrive 30 minutes early. Bring earplugs.
 - After the exam: do not debrief with peers within the first hour. Walk away, eat, sleep, and let the day be over.
 
-The exam is winnable. It is also designed to feel unwinnable around questions 25-32 of the third block. That feeling is universal and not diagnostic. Trust the preparation, work the next question, and finish the day.
+The exam is winnable. It is also designed to feel unwinnable somewhere in the back third of the day, when fatigue and a run of brutal stems collide. That feeling is universal and not diagnostic. Trust the preparation, work the next question, and finish the day.
+
+## Research Notes
+- [USMLE Step 1 Exam Content (official)](https://www.usmle.org/step-exams/step-1/step-1-exam-content) — confirms the format change effective May 14, 2026: fourteen 30-minute blocks of up to 20 questions, one 8-hour session, minimum 55 minutes of break time, 5-minute tutorial (prior format: seven 60-minute blocks, up to 40 q each, 45-minute break). Total of up to 280 items unchanged.
+- [USMLE Step 1 Content Outline & Specifications (official)](https://www.usmle.org/exam-resources/step-1-materials/step-1-content-outline-and-specifications) — current system, discipline, and physician-task/competency weight ranges used to rebuild the tables above.
+- [USMLE program updates content outlines for all Step exams](https://www.usmle.org/usmle-program-updates-content-outlines-all-step-exams) — January 29, 2024 recategorization: "General Principles of Foundational Science" topics redistributed into organ systems and a new "Human Development" category; proportion of foundational science unchanged.
+- [2026 Bulletin of Information (PDF)](https://www.usmle.org/sites/default/files/2025-08/2026Bulletin.pdf) — primary source for 2026 testing-day rules, block structure, and break allotment.

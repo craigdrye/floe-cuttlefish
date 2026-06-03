@@ -170,8 +170,9 @@ Not a single credential — this is a literacy + drilling course for aptitude as
 **Core questions:** What is the modern Wechsler structure? When is Stanford-Binet preferred?
 
 **Key concepts**
-- WAIS-IV / WAIS-5: Verbal Comprehension Index, Perceptual Reasoning, Working Memory, Processing Speed → Full Scale IQ (FSIQ)
-- WAIS used age 16+; WISC for ages 6-16; WPPSI for 2:6-7:7
+- WAIS-IV (2008): four indices — Verbal Comprehension, Perceptual Reasoning, Working Memory, Processing Speed → Full Scale IQ (FSIQ)
+- WAIS-5 (2024): five indices — the old Perceptual Reasoning Index is split into Visual Spatial Ability (Block Design, Visual Puzzles) and Fluid Reasoning (Matrix Reasoning, Figure Weights), alongside Verbal Comprehension, Working Memory, and Processing Speed; new subtests include Running Digits, Set Relations, Spatial Addition, Symbol Span, Naming Speed Quantity
+- WAIS used age 16-90; WISC for ages 6-16; WPPSI for 2:6-7:7
 - Stanford-Binet 5 (SB5): fluid + knowledge + quantitative + visual-spatial + working memory
 - Norming and cultural adaptation
 - Clinical use: ADHD profiles, learning disability identification, cognitive impairment
@@ -188,8 +189,8 @@ Not a single credential — this is a literacy + drilling course for aptitude as
 **Core questions:** Which tests do employers actually use? How are they validated?
 
 **Key concepts**
-- Wonderlic Personnel Test (50 items, 12 min) — famously short, broad g
-- SHL Verify Numerical / Verbal / Inductive
+- Wonderlic Personnel Test (50 items, 12 min) — famously short, broad g; the shorter Quicktest runs 30 items in 8 min
+- SHL Verify Numerical / Verbal / Inductive; SHL's flagship general-ability test is now Verify G+ (Deductive, Inductive, Numerical), ~30 items / 36 min with an adaptive interactive variant (~24 items)
 - Kenexa / IBM
 - Talent Q Elements
 - Cubiks Logiks
@@ -213,7 +214,7 @@ Not a single credential — this is a literacy + drilling course for aptitude as
 - IQ as standardized score (M=100, SD=15)
 - Percentile rank vs standard score (130 = 98th percentile)
 - Standard error of measurement (SEM ~3-5 points on WAIS) — a single score is a range, not a point
-- Flynn effect (~3 IQ points per decade gain through 20th century in industrialized countries; recent reversal in some samples)
+- Flynn effect (~3 IQ points per decade gain through 20th century in industrialized countries) — but a "reverse Flynn effect" is now documented in several developed nations (e.g. Norway, Denmark, Finland, UK, and US samples from ~2006 onward), with declines concentrated in verbal, numerical and matrix reasoning while spatial scores hold or rise; WAIS-5 norming saw only ~1.2 points/decade vs the expected 3
 - Ceiling effects on standard instruments above ~135-140
 - Practice effects on retest (5-10 point inflation common)
 - Test bias controversies and modern psychometrics responses
@@ -232,3 +233,10 @@ Not a single credential — this is a literacy + drilling course for aptitude as
 Drill timed Raven's-style and number series for 20 minutes per day for 2 weeks. Take one full SHL Verify or Wonderlic to calibrate. Note your error patterns — most candidates have one weak subtype (commonly inductive or spatial). The goal is fluency, not perfection; on most employer tests, 80-85% accuracy at speed beats 100% at half-speed.
 
 **Authoritative sources:** Carroll *Human Cognitive Abilities*; Deary *Looking Down on Human Intelligence*; SIOP Principles; Wechsler test manuals; Raven's Progressive Matrices technical manual; Flynn *Are We Getting Smarter?*; APA Task Force on Intelligence reports.
+
+## Research Notes
+- Pearson Assessments — "What's new with the WAIS-5?" (https://www.pearsonassessments.com/professional-assessments/blog-webinars/blog/2024/04/whats-new-with-the-wais-5.html): WAIS-5 (2024) new subtests (Set Relations, Running Digits, Naming Speed Quantity, Spatial Addition, Symbol Span) and expanded construct coverage.
+- Wikipedia — Wechsler Adult Intelligence Scale (https://en.wikipedia.org/wiki/Wechsler_Adult_Intelligence_Scale): confirms WAIS-5 moved from four indices to five, splitting Perceptual Reasoning into Visual Spatial Ability and Fluid Reasoning; age ranges for WAIS/WISC/WPPSI.
+- SHL product catalog — Verify G+ (https://www.shl.com/products/product-catalog/view/verify-g/): current SHL general-ability test measuring Deductive, Inductive and Numerical reasoning (multiple-choice ~30 items / 36 min; adaptive interactive variant).
+- Wikipedia — Flynn effect (https://en.wikipedia.org/wiki/Flynn_effect): documents the reverse Flynn effect in developed nations and domain-specific declines.
+- ScienceDaily — "Americans' IQ scores are lower in three domains, higher in one" (https://www.sciencedaily.com/releases/2023/03/230320102056.htm): 2023 US data showing declines in verbal/matrix/number reasoning, rise in 3D spatial.

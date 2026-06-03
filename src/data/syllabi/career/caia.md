@@ -11,44 +11,53 @@ The voice of this credential is the alternative-investments practitioner — the
 Compared with the CFA's alternative investments section, CAIA goes much deeper on each alt class (full chapters on real estate types, commodity term-structure mechanics, HF strategy taxonomy, PE waterfall and clawback math, structured product tranching), on manager selection (ODD vs IDD, factor analysis, fraud detection, smoothing diagnostics), and on the practical machinery of accessing alternatives (master/feeder, BDC, interval fund, '40 Act, UCITS, listed PE, '34 Act registered alts, separately managed accounts, co-investments, secondaries). CFA touches these; CAIA lives in them.
 
 ## Course Design Notes
-Keep this course curious, careful, and concrete. Route questions here when they test CAIA Level I or Level II topics: professional standards and ethics, introduction to alternative investments, real assets, hedge funds, private equity, private debt and structured products, asset allocation and institutional investors, risk and manager selection, methods for alternative investing, accessing alternatives, and current/integrated topics. Favour realistic prompts with named structures (a Cayman master/feeder with a US onshore feeder; a Delaware-domiciled BDC; a closed-end PE fund of vintage 2019; a continuation vehicle for a single trophy asset), specific numbers (preferred return 8%, carry 20%, catch-up 100%, hurdle hard vs soft), and the kind of distractor a candidate would actually pick at minute 80 of a four-hour sitting.
+Keep this course curious, careful, and concrete. Route questions here when they test CAIA Level I or Level II topics: professional standards and ethics (the 2026 **CAIA Ethical Principles**), introduction to alternative investments, real assets, hedge funds, private equity, private debt and structured products, digital assets / crypto allocation, asset allocation and institutional investors, risk and manager selection, methods for alternative investing, accessing alternatives, and current/emerging topics. Favour realistic prompts with named structures (a Cayman master/feeder with a US onshore feeder; a Delaware-domiciled BDC; a closed-end PE fund of vintage 2019; a continuation vehicle for a single trophy asset), specific numbers (preferred return 8%, carry 20%, catch-up 100%, hurdle hard vs soft), and the kind of distractor a candidate would actually pick at minute 80 of a four-hour sitting.
 
 Where CAIA overlaps the CFA alternatives chapter, prefer the deeper, more practical treatment — not "PE has J-curves" but the specific contributions/distributions pattern and how to translate a vintage-year cash flow stream into IRR, MOIC, DPI, RVPI, TVPI and KS-PME. Where it touches FRM on hedge fund risk, lean into the allocator's lens (manager selection, ODD, smoothing, fees) rather than the bank's lens (capital, VaR, FRTB).
 
 ## Exam Map and Study Rhythm
-CAIA publishes weighted topic areas for each level. Allocate hours by weight, but spend extra time wherever the vocabulary is least familiar. Current outline (verify against the latest CAIA candidate handbook each cycle):
+CAIA publishes weighted topic areas for each level and revises both the topics and the weights roughly 10-20% per cycle. Allocate hours by weight, but spend extra time wherever the vocabulary is least familiar. The table below reflects the **2026 curriculum** (verify against the latest CAIA Curriculum Companion / candidate handbook each cycle — weights are published as ranges and shift annually):
 
-| Level | Topic | Exam Weight | Study Posture |
+| Level | Topic (2026 name) | Exam Weight | Study Posture |
 |---|---|---:|---|
-| I (200 MCQ, 4h) | Professional Standards and Ethics | 15-20% | Practice the CAIA Member Code and CFA Asset Manager Code weekly |
-| I | Intro to Alternative Investments | 10-15% | Taxonomy, structures, fee mechanics, return decomposition |
-| I | Real Assets | 10-15% | Real estate, infrastructure, commodities, natural resources |
-| I | Hedge Funds | 25-30% | Strategy mechanics, fees, leverage, replication, risk |
-| I | Private Equity | 10-15% | Buyouts, growth, VC, secondaries, fund mechanics, waterfalls |
-| I | Private Debt and Structured Products | 10-15% | Direct lending, mezz, CLOs, securitisation, credit derivatives |
-| II (100 MCQ + 3 essay sets, 4h) | Asset Allocation and Institutional Investors | 10-15% | Endowments, pensions, SWFs, OCIO; MVO, risk parity, LDI |
-| II | Risk and Manager Selection | 15-20% | ODD/IDD, factor analysis, fraud detection, smoothing |
-| II | Methods for Alternative Investments | 10-15% | IRR/PME, smoothing adjustments, statistical methods |
-| II | Accessing Alternative Investments | 5-10% | Liquid alts, BDCs, interval funds, co-invest, secondaries |
-| II | Current and Integrated Topics | ~10% | ESG, crypto, climate, AI in alts, regulatory shifts |
+| I (200 MCQ, 4h) | CAIA Ethical Principles | ~10% | Drill the **CAIA Ethical Principles** (professional/fiduciary responsibilities, value creation, fiduciary duty, sustainability) — note CAIA *retired* the CFA Code/Standards for 2026 |
+| I | Introduction to Alternative Investments | 20-28% | Taxonomy, structures, fee mechanics, return decomposition |
+| I | Real Assets | 14-20% | Real estate, infrastructure, commodities, natural resources |
+| I | Hedge Funds | 14-20% | Strategy mechanics, fees, leverage, replication, risk |
+| I | Private Equity & Private Debt | 8-12% | Buyouts, growth, VC, secondaries, waterfalls; direct lending, mezz |
+| I | Structured Products / Funds of Funds / Digital Assets | balance | Securitisation, CLOs, credit derivatives; FoF; crypto allocation |
+| II (100 MCQ + 3 essay sets, 4h) | CAIA Ethical Principles | ~10% | CR1 essay set draws exclusively from ethics |
+| II | Institutional Asset Owners | 0-10% | Endowments, pensions, SWFs, OCIO; investment policy |
+| II | Asset Allocation | 0-10% | MVO, Black-Litterman, risk parity, LDI; rebalancing illiquid assets |
+| II | Risk and Risk Management | 0-10% | Risk aggregation, look-through, stress testing |
+| II | Methods and Models | 0-10% | IRR/PME, smoothing adjustments, statistical methods |
+| II | Accessing Alternative Investments | 0-10% | Liquid alts, BDCs, interval funds, co-invest, secondaries |
+| II | Due Diligence & Selecting Managers | 0-10% | ODD/IDD, factor analysis, fraud detection |
+| II | Volatility and Complex Strategies / Universal Investment Considerations | 0-10% | Vol strategies; cross-cutting ESG, tax, fees |
+| II | Emerging Topics | ~10% | Crypto (advanced), AI, climate; CR2 essay set draws from here |
+
+**2026 watch-outs.** (1) CAIA discontinued use of the CFA Institute Code of Ethics and Standards and now examines its own **CAIA Ethical Principles** at both levels — do not study the CFA Standards of Practice Handbook for CAIA ethics. (2) **Digital assets** are now first-class: a standalone Level I reading on allocating to cryptocurrencies (Digital Assets, Foundations) and an advanced Level II Digital Assets reading, not just a "current topic." (3) Level II essay structure is now fixed: CR set 1 = Ethics, CR set 2 = Emerging Topics, CR set 3 = a wildcard from any topic between Institutional Asset Owners and Universal Investment Considerations.
 
 **Cadence.** Plan ~200 hours for Level I across 10-14 weeks and ~250 hours for Level II across 12-16 weeks. The official curriculum is delivered in the CAIA Association readings (printed by Wiley as the *Alternative Investments* CAIA Level I/II books); supplement with the CAIA Curriculum and Exam Prep Provider materials (e.g., UpperMark, Schweser) for drilling. Build a structures cheat sheet (LP/GP, master/feeder, UCITS, '40 Act, BDC, REIT, interval fund) and a performance metrics card (IRR, MOIC, DPI, RVPI, TVPI, PME Kaplan-Schoar, direct alpha, TWR vs MWR) and rewrite them from memory weekly.
 
 **Rhythm.** Three weekly retrieval blocks plus one Saturday timed mixed quiz; two full mock exams in the final fortnight. Level I rewards pace — at 200 questions in 240 minutes, you have ~1.2 minutes per question, so you move faster than CFA L1. Level II rewards judgment and structured essay writing across the three constructed-response sets.
 
 ## Chapter 1: Ethics and the CAIA Professional Standards
-**Core questions.** How do the CAIA Member Code, the CFA Institute Asset Manager Code (AMC), and local regulation interact when a manager markets a private fund across jurisdictions? When does a side letter become a fair-dealing problem?
+**Core questions.** How do the CAIA Ethical Principles, the fiduciary obligations they impose, and local regulation interact when a manager markets a private fund across jurisdictions? When does a side letter become a fair-dealing problem?
 
-**Key concepts.** CAIA Member Code (integrity, professionalism, duties to clients, market integrity, communications); CFA AMC for asset managers; material nonpublic information, fair dealing, suitability, performance presentation; marketing rules — GIPS for alternative strategies, SEC Marketing Rule, hypothetical/projected performance, side letters and MFN clauses; conflicts of interest in funds-of-funds, capital introduction, placement agents, GP-led continuation vehicles; gift, entertainment, and political contribution policies.
+**2026 note.** CAIA *retired* the CFA Institute Code of Ethics and Standards of Professional Conduct (and the CFA Asset Manager Code) as its examined ethics framework. Both levels now examine the proprietary **CAIA Ethical Principles**, framed around professional and fiduciary responsibilities, value creation and the investment industry, fiduciary duty and professionalism, and sustainability / the "social license to operate." Study CAIA's own materials, not the CFA Standards of Practice Handbook.
 
-**Applied skills.** Spot the standard violated in a marketing deck that quotes a hypothetical IRR without disclosure; resolve a side-letter clause that contradicts the master LPA; write a fair-allocation policy for an oversubscribed deal.
+**Key concepts.** CAIA Ethical Principles (the participants in and purpose of the investment industry; how value is created; the four areas of fiduciary obligation; professionalism; sustainable finance and stewardship); material nonpublic information, fair dealing, suitability, performance presentation; marketing rules — GIPS for alternative strategies, SEC Marketing Rule, hypothetical/projected performance, side letters and MFN clauses; conflicts of interest in funds-of-funds, capital introduction, placement agents, GP-led continuation vehicles; gift, entertainment, and political contribution policies.
+
+**Applied skills.** Spot the principle violated in a marketing deck that quotes a hypothetical IRR without disclosure; resolve a side-letter clause that contradicts the master LPA; write a fair-allocation policy for an oversubscribed deal.
 
 **Common traps.**
 - "Confidential" side letters do not cure unequal treatment; MFN procedures or disclosure do.
 - Hypothetical/backtested performance has its own disclosure standard; presenting it as actual is a violation regardless of footnotes.
 - GP-led continuation vehicles are not banned — but disclosure, valuation, and the LPAC process matter.
+- Do not answer CAIA ethics questions from the CFA framework — the 2026 exam is on CAIA Ethical Principles, with the Level II CR1 essay set drawn exclusively from ethics.
 
-**Authoritative sources.** CAIA Association *Standards of Practice Handbook*; CFA Institute *Asset Manager Code*; SEC Marketing Rule (206(4)-1).
+**Authoritative sources.** CAIA Association **CAIA Ethical Principles** curriculum readings (2026); SEC Marketing Rule (206(4)-1); CFA Institute GIPS (for performance presentation only).
 
 ## Chapter 2: Introduction to Alternatives and the Taxonomy
 **Core questions.** What actually makes an alternative alternative? Where does the premium come from — illiquidity, complexity, manager skill, or expensive beta repackaging?
@@ -177,9 +186,11 @@ CAIA publishes weighted topic areas for each level. Allocate hours by weight, bu
 **Authoritative sources.** CAIA Level II *Accessing Alternatives*; ICI on '40 Act structures; CAIA Association *Liquid Alts* white papers.
 
 ## Chapter 11: Current and Integrated Topics (Level II)
+*(CAIA's 2026 Level II curriculum names this topic **Emerging Topics**; it supplies the CR2 essay set and recently emphasised private-market fund performance measurement and pension-plan direct investments. Digital assets are now examined in their own right — a standalone Level I reading on allocating to cryptocurrencies and an advanced Level II Digital Assets reading — so treat crypto as a core asset class, not a footnote.)*
+
 **Core questions.** What integrated themes will appear in this cycle's exam, and how do they cut across the asset-class chapters?
 
-**Key concepts.** ESG integration in alts — UN PRI, SFDR Article 8/9, materiality vs values, greenwashing risk; climate transition risk in real assets and PE portfolio companies; impact investing and blended finance; crypto as an alt allocation — custody (qualified custodian, MPC, cold storage), staking yields, ETF wrappers (spot BTC/ETH ETFs); AI in alts — manager selection ML models, LLMs in deal sourcing, model risk governance; fee innovation — fee-on-deployed-capital, fee waivers, founder share classes, GP commitment expectations.
+**Key concepts.** Digital assets as a portfolio allocation — risk factors and return drivers of crypto, custody (qualified custodian, MPC, cold storage), staking yields, tokenisation, ETF wrappers (spot BTC/ETH ETFs), sizing within an alternatives sleeve; ESG integration in alts — UN PRI, SFDR Article 8/9, materiality vs values, greenwashing risk; climate transition risk in real assets and PE portfolio companies; impact investing and blended finance; private-market fund performance measurement debates; pension-plan direct and co-investment programmes; AI in alts — manager selection ML models, LLMs in deal sourcing, model risk governance; fee innovation — fee-on-deployed-capital, fee waivers, founder share classes, GP commitment expectations.
 
 **Applied skills.** Build an ESG overlay on a PE portfolio company review; size a 1-3% crypto allocation with operational due diligence; critique an AI-based manager selection model for survivorship and look-ahead bias.
 
@@ -194,3 +205,12 @@ CAIA publishes weighted topic areas for each level. Allocate hours by weight, bu
 CAIA exams reward candidates who recognise structures quickly and resist the lure of the most technical-sounding answer. Level I gives you 200 questions in 240 minutes — roughly 1.2 minutes per question — so pace is critical; do not deep-think Level I prompts past 90 seconds without flagging and moving. Level II combines 100 MCQs with 3 essay sets across the same 240 minutes; budget approximately 120 minutes for MCQs (~1.2 min each) and 120 minutes for the constructed-response sections, planning your essay outline in the first 5 minutes of each set. Permitted calculators are the TI BA II Plus (including Professional) and the HP 12C; bring a fresh battery.
 
 Read every prompt for the fund type, the role you are playing (LP, GP, allocator, consultant, ODD officer), and the metric being requested. Practice translating between IRR and MOIC, gross and net, TWR and MWR, until conversions are automatic. Build a one-page performance metrics card (IRR, MOIC, DPI, RVPI, TVPI, KS-PME, direct alpha) and a one-page structures card (LP/GP, master/feeder, '40 Act, BDC, REIT, interval fund) and rewrite each weekly. On exam day, the disciplined candidate spends the first thirty seconds naming the structure and the role, the next two minutes choosing the answer, and the last thirty seconds checking the answer matches the question that was actually asked.
+
+## Research Notes
+Authoritative sources consulted for the 2026 curriculum update of this syllabus:
+- https://caia.org/2026-caia-exam-curriculum — CAIA "An In-Depth Look" page summarising 2026 curriculum changes (CAIA Ethical Principles replacing the CFA Code/Standards; new Growth Equity, Digital Assets Foundations [L1] and Advanced [L2], Rebalancing Strategies, expanded Emerging Topics readings).
+- https://caia.org/caia-exam-overview — CAIA exam overview listing the 2026 Level I and Level II named topic areas (incl. Digital Assets, Funds of Funds at L1; Volatility and Complex Strategies, Universal Investment Considerations at L2).
+- https://caia.org/sites/default/files/2025-10/Level%20I%20Curriculum%20Companion_FINAL_with_cover.pdf — 2026 Level I Curriculum Companion (Topic 1 confirmed as "CAIA Ethical Principles": professional/fiduciary responsibilities, value creation, fiduciary duty, sustainability).
+- https://caia.org/sites/default/files/2026-02/2026%20L2%20Companion%20Final_with_cover.pdf — 2026 Level II Curriculum Companion.
+- CAIA L1 2026 weight ranges (Ethics ~10%; Introduction 20-28%; Real Assets 14-20%; Hedge Funds 14-20%; Private Equity 8-12%) and L2 essay-set mapping (CR1 Ethics, CR2 Emerging Topics, CR3 wildcard from Topics 2-8) corroborated via prep-provider analyses, e.g. https://www.futuregreenworld.com/post/caia-level-1-curriculum-changes-2026-what-s-new-and-how-to-prepare and https://www.futuregreenworld.com/post/caia-level-2-curriculum-changes-2026-new-topics-and-updated-learning-outcomes
+- https://en.wikipedia.org/wiki/Chartered_Alternative_Investment_Analyst — confirms exam structure: L1 = 200 MCQ; L2 = 100 MCQ + three sets of constructed-response questions.

@@ -69,9 +69,9 @@ This is a multiple-choice quiz bank a learner returns to, organized so that each
 - Can free will survive in a universe where everything is caused?
 - Could you ever prove you are not a brain in a vat?
 
-**Key concepts**: Ship of Theseus, personal identity and memory, hard determinism, libertarian free will, compatibilism, brain-in-a-vat, the hard problem of consciousness.
+**Key concepts**: Ship of Theseus, personal identity and memory, hard determinism, libertarian free will, compatibilism, brain-in-a-vat, the hard problem of consciousness, arguments for God's existence (cosmological, design/teleological, ontological), the problem of evil.
 
-**Common traps**: treating identity puzzles as questions about materials or law; confusing compatibilism with hard determinism; conflating the "easy" and "hard" problems of consciousness.
+**Common traps**: treating identity puzzles as questions about materials or law; confusing compatibilism with hard determinism; conflating the "easy" and "hard" problems of consciousness; thinking the design argument is settled by complexity alone, or that the problem of evil disproves God rather than challenging a specific set of divine attributes.
 
 ## Chapter 7: Justice and the State
 **Core questions**
@@ -95,3 +95,9 @@ This is a multiple-choice quiz bank a learner returns to, organized so that each
 
 ## Capstone
 Bring it all together: take a real-world claim you care about — a moral stance, a political argument, a confident "everybody knows" belief — and run it through the philosopher's toolkit. Identify which branch the question lives in, name your hidden assumptions, check the argument for validity and common fallacies (is-ought, begging the question, necessary-vs-sufficient), and locate where a Hume, a Kant, a Mill, or a Rawls would push back. The capstone is not about reaching the "correct" answer; it is about demonstrating that you can think the question through clearly, charitably, and on your own.
+
+## Research Notes
+- Thomas Nagel, *What Does It All Mean?* (Oxford UP) — canonical short intro; its nine problems (knowledge of the external world, other minds, mind-body, meaning of words, free will, right and wrong, justice, death, meaning of life) closely mirror this syllabus's arc and confirm its core coverage: https://global.oup.com/academic/product/what-does-it-all-mean-9780195052923
+- Stanford Encyclopedia of Philosophy, "The Problem of Evil" — used to frame the philosophy-of-religion addition (the argument from evil targets specific divine attributes rather than simply disproving God): https://plato.stanford.edu/entries/evil/
+- *Introduction to Philosophy: Philosophy of Religion* (Rebus Community open text) — standard intro treatment of arguments for God's existence (cosmological, design/teleological, ontological) informing the Chapter 6 additions: https://press.rebus.community/intro-to-phil-of-religion/
+- Representative university intro-philosophy syllabi (e.g., Notre Dame PHIL 201) confirming the standard scope: metaphysics & epistemology core, plus ethics, social/political philosophy, philosophy of religion, and logic/argument analysis: https://www3.nd.edu/~jspeaks/courses/mcgill/201/syllabus.pdf

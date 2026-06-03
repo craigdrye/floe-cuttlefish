@@ -57,7 +57,7 @@ export const openTriviaChemistryQuestions = makeQuestionBank('AP', [
   {
     id: 338006,
     chapter: "Atoms and the Periodic Table",
-    title: "OpenTrivia Chemistry 338006",
+    title: "Symbol for Einsteinium",
     prompt: "What is the chemical symbol of Einsteinium, a rare earth metal named after Albert Einstein.",
     correct: "Es",
     wrong: [["Et","Et treats the clue as a general element question, but the prompt needs the specific identifier for Es.","Use the element symbol, atomic number, group, or particle count named in the prompt."],["Ei","Ei may look element-like, but it is not the symbol, number, or particle count asked for here.","Use the element symbol, atomic number, group, or particle count named in the prompt."],["E","E treats the clue as a general element question, but the prompt needs the specific identifier for Es.","Use the element symbol, atomic number, group, or particle count named in the prompt."]],
@@ -117,7 +117,7 @@ export const openTriviaChemistryQuestions = makeQuestionBank('AP', [
   {
     id: 338012,
     chapter: "Atoms and the Periodic Table",
-    title: "OpenTrivia Chemistry 338012",
+    title: "Noble gas with atomic number 54",
     prompt: "Inert gases are found in Group 18 of the Periodic Table. Which is the inert gas with atomic number 54?",
     correct: "Xe",
     wrong: [["Rn","Rn treats the clue as a general element question, but the prompt needs the specific identifier for Xe.","Use the element symbol, atomic number, group, or particle count named in the prompt."],["Kr","Kr treats the clue as a general element question, but the prompt needs the specific identifier for Xe.","Use the element symbol, atomic number, group, or particle count named in the prompt."],["Ar","Ar drifts to a nearby chemistry fact instead of the exact periodic-table fact in the prompt.","Use the element symbol, atomic number, group, or particle count named in the prompt."]],
@@ -127,7 +127,7 @@ export const openTriviaChemistryQuestions = makeQuestionBank('AP', [
   {
     id: 338013,
     chapter: "Atoms and the Periodic Table",
-    title: "OpenTrivia Chemistry 338013",
+    title: "Atomic number of chlorine",
     prompt: "What is the atomic number of the chemical element chlorine?",
     correct: "17",
     wrong: [["28","28 treats the clue as a general element question, but the prompt needs the specific identifier for 17.","Use the element symbol, atomic number, group, or particle count named in the prompt."],["83","83 may look element-like, but it is not the symbol, number, or particle count asked for here.","Use the element symbol, atomic number, group, or particle count named in the prompt."],["9","9 drifts to a nearby chemistry fact instead of the exact periodic-table fact in the prompt.","Use the element symbol, atomic number, group, or particle count named in the prompt."]],
@@ -137,7 +137,7 @@ export const openTriviaChemistryQuestions = makeQuestionBank('AP', [
   {
     id: 338014,
     chapter: "Acids and Bases",
-    title: "OpenTrivia Chemistry 338014",
+    title: "Acid-base neutralization",
     prompt: "What is the reaction called when an acid and a base are mixed together?",
     correct: "neutralization",
     wrong: [["single replacement","single replacement points to a different kind of reaction than the one described by the reaction called when an acid and a base are mixed together.","Anchor the choice to pH, acid/base behavior, or the named reagent."],["double replacement","double replacement sounds chemical, but it does not fit the pH, reagent, or indicator behavior being tested.","Anchor the choice to pH, acid/base behavior, or the named reagent."],["synthesis","synthesis sounds chemical, but it does not fit the pH, reagent, or indicator behavior being tested.","Anchor the choice to pH, acid/base behavior, or the named reagent."]],
@@ -147,7 +147,7 @@ export const openTriviaChemistryQuestions = makeQuestionBank('AP', [
   {
     id: 338015,
     chapter: "Acids and Bases",
-    title: "OpenTrivia Chemistry 338015",
+    title: "Products of neutralization",
     prompt: "Which two of these are produced when an acid and a base are mixed together?",
     correct: "water and a salt",
     wrong: [["water and another base","water and another base reverses or blurs the acid-base relationship in this reaction clue.","Anchor the choice to pH, acid/base behavior, or the named reagent."],["HCl and NaOH","HCl and NaOH sounds chemical, but it does not fit the pH, reagent, or indicator behavior being tested.","Anchor the choice to pH, acid/base behavior, or the named reagent."],["water and another acid","water and another acid mixes up the products or roles in an acid-base situation.","Anchor the choice to pH, acid/base behavior, or the named reagent."]],
@@ -157,7 +157,7 @@ export const openTriviaChemistryQuestions = makeQuestionBank('AP', [
   {
     id: 338016,
     chapter: "Acids and Bases",
-    title: "OpenTrivia Chemistry 338016",
+    title: "How indicators respond to pH",
     prompt: "What happens to an indicator when touched by an acid or a base?",
     correct: "the color changes",
     wrong: [["it vibrates","it vibrates reverses or blurs the acid-base relationship in this reaction clue.","Anchor the choice to pH, acid/base behavior, or the named reagent."],["it dissolves","it dissolves points to a different kind of reaction than the one described by What happens to an indicator when touched by an acid or a base.","Anchor the choice to pH, acid/base behavior, or the named reagent."],["it corrodes","it corrodes sounds chemical, but it does not fit the pH, reagent, or indicator behavior being tested.","Anchor the choice to pH, acid/base behavior, or the named reagent."]],
@@ -167,7 +167,7 @@ export const openTriviaChemistryQuestions = makeQuestionBank('AP', [
   {
     id: 338017,
     chapter: "Acids and Bases",
-    title: "OpenTrivia Chemistry 338017",
+    title: "Salt from HCl and NaOH",
     prompt: "If HCl and NaOH are combined, what compound is produced other than water?",
     correct: "NaCl",
     wrong: [["HNa","HNa points to a different kind of reaction than the one described by If HCl and NaOH are combined, what compound is produced other than water.","Anchor the choice to pH, acid/base behavior, or the named reagent."],["HOH","HOH mixes up the products or roles in an acid-base situation.","Anchor the choice to pH, acid/base behavior, or the named reagent."],["ClOH","ClOH reverses or blurs the acid-base relationship in this reaction clue.","Anchor the choice to pH, acid/base behavior, or the named reagent."]],
@@ -177,7 +177,7 @@ export const openTriviaChemistryQuestions = makeQuestionBank('AP', [
   {
     id: 338018,
     chapter: "Chemical Formulas and Compounds",
-    title: "OpenTrivia Chemistry 338018",
+    title: "Hydrogen-leading ionic compounds",
     prompt: "A ionic compound with H (hydrogen) in the front is most likely to be which of the following?",
     correct: "acid",
     wrong: [["base","base points to a different kind of reaction than the one described by A ionic compound with H (hydrogen) in the front is most likely to be wh....","Anchor the choice to pH, acid/base behavior, or the named reagent."],["water","water mixes up the products or roles in an acid-base situation.","Anchor the choice to pH, acid/base behavior, or the named reagent."],["indicator","indicator points to a different kind of reaction than the one described by A ionic compound with H (hydrogen) in the front is most likely to be wh....","Anchor the choice to pH, acid/base behavior, or the named reagent."]],
@@ -217,7 +217,7 @@ export const openTriviaChemistryQuestions = makeQuestionBank('AP', [
   {
     id: 338022,
     chapter: "Atoms and the Periodic Table",
-    title: "OpenTrivia Chemistry 338022",
+    title: "What neutron count determines",
     prompt: "What does the number of neutrons in the nucleus of an atom determine?",
     correct: "The isotope of the element",
     wrong: [["The bonds the element forms","The bonds the element forms treats the clue as a general element question, but the prompt needs the specific identifier for The isotope of the element.","Use the element symbol, atomic number, group, or particle count named in the prompt."],["The charge of the ions of the element","The charge of the ions of the element may look element-like, but it is not the symbol, number, or particle count asked for here.","Use the element symbol, atomic number, group, or particle count named in the prompt."],["The element itself","The element itself drifts to a nearby chemistry fact instead of the exact periodic-table fact in the prompt.","Use the element symbol, atomic number, group, or particle count named in the prompt."]],
@@ -227,7 +227,7 @@ export const openTriviaChemistryQuestions = makeQuestionBank('AP', [
   {
     id: 338023,
     chapter: "Chemical Formulas and Compounds",
-    title: "OpenTrivia Chemistry 338023",
+    title: "What defines an element",
     prompt: "Which of the following determines to which chemical element a certain atom belongs?",
     correct: "The number of protons",
     wrong: [["The number of electrons","The number of electrons treats the clue as a general element question, but the prompt needs the specific identifier for The number of protons.","Use the element symbol, atomic number, group, or particle count named in the prompt."],["The number of neutrons","The number of neutrons treats the clue as a general element question, but the prompt needs the specific identifier for The number of protons.","Use the element symbol, atomic number, group, or particle count named in the prompt."],["None of these","None of these treats the clue as a general element question, but the prompt needs the specific identifier for The number of protons.","Use the element symbol, atomic number, group, or particle count named in the prompt."]],
@@ -237,7 +237,7 @@ export const openTriviaChemistryQuestions = makeQuestionBank('AP', [
   {
     id: 338024,
     chapter: "Atoms and the Periodic Table",
-    title: "OpenTrivia Chemistry 338024",
+    title: "Full valence shell elements",
     prompt: "The atoms of which type of chemical elements have a complete set of valence electrons - 8?",
     correct: "Noble gases",
     wrong: [["Chlorides","Chlorides is the wrong periodic-table identifier for this clue about The atoms of which type of chemical elements have a complete set of val....","Use the element symbol, atomic number, group, or particle count named in the prompt."],["Salts","Salts treats the clue as a general element question, but the prompt needs the specific identifier for Noble gases.","Use the element symbol, atomic number, group, or particle count named in the prompt."],["Alkali metals","Alkali metals may look element-like, but it is not the symbol, number, or particle count asked for here.","Use the element symbol, atomic number, group, or particle count named in the prompt."]],
@@ -247,7 +247,7 @@ export const openTriviaChemistryQuestions = makeQuestionBank('AP', [
   {
     id: 338025,
     chapter: "Atoms and the Periodic Table",
-    title: "OpenTrivia Chemistry 338025",
+    title: "What valence describes",
     prompt: "Valence is a characteristics of atoms which defines their ability to do which of the following?",
     correct: "Bind with other atoms",
     wrong: [["Be subject to radioactive decay","Be subject to radioactive decay may look element-like, but it is not the symbol, number, or particle count asked for here.","Use the element symbol, atomic number, group, or particle count named in the prompt."],["Move from one molecule to another","Move from one molecule to another drifts to a nearby chemistry fact instead of the exact periodic-table fact in the prompt.","Use the element symbol, atomic number, group, or particle count named in the prompt."],["Fall apart","Fall apart treats the clue as a general element question, but the prompt needs the specific identifier for Bind with other atoms.","Use the element symbol, atomic number, group, or particle count named in the prompt."]],
@@ -260,7 +260,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338026,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338026",
+    title: "Leftovers of Solar System formation",
     prompt: "These small bodies are considered left overs from the formation of the Solar system some 4.6 billion years ago.",
     correct: "Asteroids",
     wrong: [["Comets","Comets would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Stars","Stars matches the neighborhood, not the specific Solar System relationship that points to Asteroids.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Planets","Planets is a Solar System answer, but this clue points to Asteroids instead.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -270,7 +270,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338027,
     chapter: "Astronomy Foundations",
-    title: "OpenTrivia Astronomy 338027",
+    title: "Ice and dust with tails",
     prompt: "These are lumps of ice and dust. When they get close enough to the Sun they gradually evaporate. Jets of gas and dust create long tails that people can see from Earth.",
     correct: "Comets",
     wrong: [["Asteroids","Asteroids confuses the planet, moon, orbit, or scale in this clue about These are lumps of ice and dust. When they get close enough to the Sun ....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["UFOs","UFOs confuses the planet, moon, orbit, or scale in this clue about These are lumps of ice and dust. When they get close enough to the Sun ....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Stars","Stars is plausible space vocabulary, but it misses the exact object described by These are lumps of ice and dust. When they get close enough to the Sun ....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -280,7 +280,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338028,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338028",
+    title: "Earth's closest planetary neighbor",
     prompt: "This planet is slightly smaller than Earth and its closest neighbor (excluding the Moon).",
     correct: "Venus",
     wrong: [["Uranus","Uranus is plausible space vocabulary, but it misses the exact object described by This planet is slightly smaller than Earth and its closest neighbor (ex....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Mars","Mars is a Solar System answer, but this clue points to Venus instead.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Saturn","Saturn is a Solar System answer, but this clue points to Venus instead.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -290,7 +290,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338029,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338029",
+    title: "Planet named for the sea god",
     prompt: "This planet of the Solar System was named after a Greek god of the sea and earthquakes. The name is actually the Roman translation of the gods name.",
     correct: "Neptune",
     wrong: [["Mercury","Mercury is plausible space vocabulary, but it misses the exact object described by This planet of the Solar System was named after a Greek god of the sea ....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Pluto","Pluto is plausible space vocabulary, but it misses the exact object described by This planet of the Solar System was named after a Greek god of the sea ....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Uranus","Uranus is a Solar System answer, but this clue points to Neptune instead.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -300,7 +300,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338030,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338030",
+    title: "Closest planet to the Sun",
     prompt: "As this is the closest planet to the Sun, its temperatures at the surface range between -300 and 800 F (hot enough for lead to melt).",
     correct: "Mercury",
     wrong: [["Neptune","Neptune is plausible space vocabulary, but it misses the exact object described by As this is the closest planet to the Sun, its temperatures at the surfa....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Pluto","Pluto would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Venus","Venus confuses the planet, moon, orbit, or scale in this clue about As this is the closest planet to the Sun, its temperatures at the surfa....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -310,7 +310,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338031,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338031",
+    title: "Planet with abundant water",
     prompt: "The surface of this planet is unique, it is the only one which has water in large quantities.",
     correct: "Earth",
     wrong: [["Saturn","Saturn would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Pluto","Pluto is plausible space vocabulary, but it misses the exact object described by The surface of this planet is unique, it is the only one which has wate....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Mars","Mars confuses the planet, moon, orbit, or scale in this clue about The surface of this planet is unique, it is the only one which has wate....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -320,7 +320,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338032,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338032",
+    title: "Planet with icy moons Titania and Oberon",
     prompt: "Miranda, Ariel, Umbriel, Titania, Oberon, Caliban, and Sycorax are names of the icy moons of this planet.",
     correct: "Uranus",
     wrong: [["Jupiter","Jupiter would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Saturn","Saturn is a Solar System answer, but this clue points to Uranus instead.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Venus","Venus confuses the planet, moon, orbit, or scale in this clue about Miranda, Ariel, Umbriel, Titania, Oberon, Caliban, and Sycorax are name....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -330,7 +330,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338033,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338033",
+    title: "Location of the asteroid belt",
     prompt: "Where can an asteroid belt, a region of greatest concentration of orbiting asteroids, be found nearest to Earth?",
     correct: "Between Mars and Jupiter",
     wrong: [["Between Jupiter and Saturn","Between Jupiter and Saturn would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Between Uranus and Neptune","Between Uranus and Neptune is a Solar System answer, but this clue points to Between Mars and Jupiter instead.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Beyond Pluto","Beyond Pluto confuses the planet, moon, orbit, or scale in this clue about Where can an asteroid belt, a region of greatest concentration of orbit....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -340,7 +340,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338034,
     chapter: "Stars and Galaxies",
-    title: "OpenTrivia Astronomy 338034",
+    title: "Body behind a shooting star",
     prompt: "Which of these is a celestial body, which produces the effect known as shooting star?",
     correct: "Meteoroid",
     wrong: [["Asteroid","Asteroid sounds astronomical, but it is not at the scale the question is asking about.","Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation."],["Comet","Comet sounds astronomical, but it is not at the scale the question is asking about.","Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation."],["Another planets satellite","Another planets satellite matches the broad sky category, but not the star, galaxy, or celestial structure in this clue.","Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation."]],
@@ -350,7 +350,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338035,
     chapter: "Stars and Galaxies",
-    title: "OpenTrivia Astronomy 338035",
+    title: "What a binary star is",
     prompt: "In astronomy, the term binary star refers to which of these?",
     correct: "A system of two stars both orbiting around their centers of mass",
     wrong: [["A large star which has drawn smaller star to orbit","A large star which has drawn smaller star to orbit confuses the planet, moon, orbit, or scale in this clue about In astronomy, the term binary star refers to which of these.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["A star made up from both matter and antimatter","A star made up from both matter and antimatter would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["A star emitting electromagnetic waves at two different frequencies","A star emitting electromagnetic waves at two different freque... is plausible space vocabulary, but it misses the exact object described by In astronomy, the term binary star refers to which of these.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -360,7 +360,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338036,
     chapter: "Stars and Galaxies",
-    title: "OpenTrivia Astronomy 338036",
+    title: "Birthplaces of stars",
     prompt: "What celestial formations are considered to be the birthplaces of stars?",
     correct: "Nebulae",
     wrong: [["Galactic halos","Galactic halos sounds astronomical, but it is not at the scale the question is asking about.","Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation."],["Spiral galaxies","Spiral galaxies confuses one kind of astronomical object with another.","Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation."],["Galaxy cluster clouds","Galaxy cluster clouds confuses one kind of astronomical object with another.","Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation."]],
@@ -370,7 +370,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338037,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338037",
+    title: "Earth's sister planet",
     prompt: "Which planet has been described as a sister planet to Earth?",
     correct: "Venus",
     wrong: [["Mercury","Mercury would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Saturn","Saturn is plausible space vocabulary, but it misses the exact object described by which planet has been described as a sister planet to Earth.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Mars","Mars would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -380,7 +380,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338038,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338038",
+    title: "Planet named for the king of gods",
     prompt: "Which planet was named after the ancient Romans’ king of the gods?",
     correct: "Jupiter",
     wrong: [["Mars","Mars confuses the planet, moon, orbit, or scale in this clue about which planet was named after the ancient Romans’ king of the gods.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Neptune","Neptune is plausible space vocabulary, but it misses the exact object described by which planet was named after the ancient Romans’ king of the gods.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Saturn","Saturn matches the neighborhood, not the specific Solar System relationship that points to Jupiter.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -390,7 +390,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338039,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338039",
+    title: "The Red Planet",
     prompt: "Which planet of the Solar System has been nicknamed The Red Planet?",
     correct: "Mars",
     wrong: [["Mercury","Mercury would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Neptune","Neptune matches the neighborhood, not the specific Solar System relationship that points to Mars.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Venus","Venus confuses the planet, moon, orbit, or scale in this clue about which planet of the Solar System has been nicknamed The Red Planet.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -400,7 +400,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338040,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338040",
+    title: "Planet with moons Io and Europa",
     prompt: "Io and Europa are two of the larger satellites of which Solar System planet?",
     correct: "Jupiter",
     wrong: [["Pluto","Pluto matches the neighborhood, not the specific Solar System relationship that points to Jupiter.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Venus","Venus is a Solar System answer, but this clue points to Jupiter instead.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Saturn","Saturn matches the neighborhood, not the specific Solar System relationship that points to Jupiter.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -410,7 +410,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338041,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338041",
+    title: "The Blue Planet",
     prompt: "Which planet of the Solar System is nicknamed the Blue Planet?",
     correct: "Earth",
     wrong: [["Neptune","Neptune is plausible space vocabulary, but it misses the exact object described by which planet of the Solar System is nicknamed the Blue Planet.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Venus","Venus is plausible space vocabulary, but it misses the exact object described by which planet of the Solar System is nicknamed the Blue Planet.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Saturn","Saturn matches the neighborhood, not the specific Solar System relationship that points to Earth.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -430,7 +430,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338043,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338043",
+    title: "Saturn's distinctive feature",
     prompt: "What is the distinctive feature of the sixth planet of the Solar System (counted from the Sun)?",
     correct: "Its equatorial rings",
     wrong: [["Its gigantic craters","Its gigantic craters matches the neighborhood, not the specific Solar System relationship that points to Its equatorial rings.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Its active volcanoes","Its active volcanoes is a Solar System answer, but this clue points to Its equatorial rings instead.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Its silver coloring","Its silver coloring is plausible space vocabulary, but it misses the exact object described by the distinctive feature of the sixth planet of the Solar System (counte....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -440,7 +440,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338044,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338044",
+    title: "The Evening Star",
     prompt: "Which planet of the Solar System is also known as The Evening Star?",
     correct: "Venus",
     wrong: [["Mars","Mars would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Earth","Earth is plausible space vocabulary, but it misses the exact object described by which planet of the Solar System is also known as The Evening Star.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Uranus","Uranus would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -450,7 +450,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338045,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338045",
+    title: "Planet not named for a god",
     prompt: "Which of the following Solar System planets was not named after a Greek or Roman God?",
     correct: "Earth",
     wrong: [["Mercury","Mercury is a Solar System answer, but this clue points to Earth instead.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Saturn","Saturn matches the neighborhood, not the specific Solar System relationship that points to Earth.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Uranus","Uranus would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -470,7 +470,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338047,
     chapter: "Stars and Galaxies",
-    title: "OpenTrivia Astronomy 338047",
+    title: "Star too small to ignite fusion",
     prompt: "This term refers to a celestial body that resembles a star but does not emit light, because it is too small to ignite internal nuclear fusion.",
     correct: "Brown Dwarf",
     wrong: [["Neutron Star","Neutron Star answers a nearby space question rather than the one cued by This term refers to a celestial body that resembles a star but does not....","Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation."],["White Dwarf","White Dwarf matches the broad sky category, but not the star, galaxy, or celestial structure in this clue.","Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation."],["Protostar","Protostar matches the broad sky category, but not the star, galaxy, or celestial structure in this clue.","Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation."]],
@@ -480,7 +480,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338048,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338048",
+    title: "Length of Earth's orbit",
     prompt: "How long does it take for the planet Earth to orbit the Sun once?",
     correct: "365 Days",
     wrong: [["2 Years","2 Years is plausible space vocabulary, but it misses the exact object described by How long does it take for the planet Earth to orbit the Sun once.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["8 Months","8 Months would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["24 Hours","24 Hours is plausible space vocabulary, but it misses the exact object described by How long does it take for the planet Earth to orbit the Sun once.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -500,7 +500,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338050,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338050",
+    title: "Age of the Solar System",
     prompt: "Scientists estimate that the Earth and the Solar System were formed how long ago?",
     correct: "4.5 billion years",
     wrong: [["100 million years","100 million years is plausible space vocabulary, but it misses the exact object described by Scientists estimate that the Earth and the Solar System were formed how....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["10 billion years","10 billion years matches the neighborhood, not the specific Solar System relationship that points to 4.5 billion years.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["3.5 billion years","3.5 billion years confuses the planet, moon, orbit, or scale in this clue about Scientists estimate that the Earth and the Solar System were formed how....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -510,7 +510,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338051,
     chapter: "Astronomy Foundations",
-    title: "OpenTrivia Astronomy 338051",
+    title: "Apparent path of the Sun",
     prompt: "What is the apparent path of the sun around the sky called?",
     correct: "Ecliptic",
     wrong: [["Revolution","Revolution is a Solar System answer, but this clue points to Ecliptic instead.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Zodiac","Zodiac is plausible space vocabulary, but it misses the exact object described by the apparent path of the sun around the sky called.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Corona","Corona would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -520,7 +520,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338052,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338052",
+    title: "Where an orbit crosses Earth's plane",
     prompt: "Name the point where an objects orbit passes through the plane of Earths orbit.",
     correct: "Node",
     wrong: [["Apogee","Apogee matches the neighborhood, not the specific Solar System relationship that points to Node.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Prominence","Prominence would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Perigee","Perigee matches the neighborhood, not the specific Solar System relationship that points to Node.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -530,7 +530,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338053,
     chapter: "Stars and Galaxies",
-    title: "OpenTrivia Astronomy 338053",
+    title: "Band of sky around the ecliptic",
     prompt: "What is the name for a band of the celestial sphere centered on the ecliptic and encircling the sky?",
     correct: "Zodiac",
     wrong: [["Vernal Equinox","Vernal Equinox sounds astronomical, but it is not at the scale the question is asking about.","Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation."],["Photosphere","Photosphere answers a nearby space question rather than the one cued by the name for a band of the celestial sphere centered on the ecliptic an....","Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation."],["Corona","Corona answers a nearby space question rather than the one cued by the name for a band of the celestial sphere centered on the ecliptic an....","Check whether the clue points to a star, galaxy, nebula, orbit path, or constellation."]],
@@ -540,7 +540,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338054,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338054",
+    title: "What makes Titan unique",
     prompt: "Which of these characteristics makes Saturns moon Titan unique among all moons in the solar system?",
     correct: "It is the only moon to have a dense atmosphere.",
     wrong: [["It is the only moon that is considered a captured object.","It is the only moon that is considered a captured object. is plausible space vocabulary, but it misses the exact object described by which of these characteristics makes Saturns moon Titan unique among al....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["It is the only moon with active volcanoes on its surface.","It is the only moon with active volcanoes on its surface. is a Solar System answer, but this clue points to It is the only moon to have a dense atmosphere. instead.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["It is the only moon to have a retrograde orbit.","It is the only moon to have a retrograde orbit. matches the neighborhood, not the specific Solar System relationship that points to It is the only moon to have a dense atmosphere..","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -550,7 +550,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338055,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338055",
+    title: "Most volcanically active moon",
     prompt: "Which of the four Galilean moons of Jupiter is noted as the most volcanically active body in the solar system?",
     correct: "Io",
     wrong: [["Europa","Europa would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Callisto","Callisto matches the neighborhood, not the specific Solar System relationship that points to Io.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Ganymede","Ganymede matches the neighborhood, not the specific Solar System relationship that points to Io.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -560,7 +560,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338056,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338056",
+    title: "Earth's closest point to the Sun",
     prompt: "What is the closest point to the sun in the Earths orbit called?",
     correct: "Perihelion",
     wrong: [["Aphelion","Aphelion confuses the planet, moon, orbit, or scale in this clue about the closest point to the sun in the Earths orbit called.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Summer Solstice","Summer Solstice matches the neighborhood, not the specific Solar System relationship that points to Perihelion.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Autumnal Equinox","Autumnal Equinox is a Solar System answer, but this clue points to Perihelion instead.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -570,7 +570,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338057,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338057",
+    title: "First four planets in order",
     prompt: "Name the first four planets of the Solar System in order of their distance from the Sun?",
     correct: "Mercury, Venus, Earth, Mars",
     wrong: [["Mars, Venus, Earth, Mercury","Mars, Venus, Earth, Mercury matches the neighborhood, not the specific Solar System relationship that points to Mercury, Venus, Earth, Mars.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Jupiter, Venus, Mars, Earth","Jupiter, Venus, Mars, Earth is plausible space vocabulary, but it misses the exact object described by Name the first four planets of the Solar System in order of their dista....","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Saturn, Pluto, Jupiter, Earth","Saturn, Pluto, Jupiter, Earth matches the neighborhood, not the specific Solar System relationship that points to Mercury, Venus, Earth, Mars.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],
@@ -590,7 +590,7 @@ export const openTriviaAstronomyQuestions = makeQuestionBank('University', [
   {
     id: 338059,
     chapter: "Solar System",
-    title: "OpenTrivia Astronomy 338059",
+    title: "Our home galaxy",
     prompt: "What is the name of the Galaxy that our Solar System is a part of?",
     correct: "Milky Way",
     wrong: [["The Large Magellanic Cloud","The Large Magellanic Cloud matches the neighborhood, not the specific Solar System relationship that points to Milky Way.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Andromeda","Andromeda would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."],["Hollywood","Hollywood would fit a different planet clue; this one hinges on the detail in the prompt.","Match the clue to the exact planet, moon, orbit, or Solar System relationship."]],

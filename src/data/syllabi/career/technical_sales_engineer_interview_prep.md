@@ -45,7 +45,7 @@ Questions are scenario-first and demand a judgment, not a recall. Where a precis
 - What should you deliberately skip, and how do you keep a 30-minute demo from becoming a feature tour?
 - What is your fallback when the live environment fails in front of the customer?
 
-**Key concepts**: discovery-led ("tell-show-tell") demo design; persona alignment (what the admin, the end user, and the executive each need to see); the value moment / "wow" tied to a named pain; demo agenda and pacing; "demo to win" vs. "demo to inform"; live-demo risk, sandbox vs. production data, recorded fallback; handling the off-script question without derailing.
+**Key concepts**: discovery-led demo design (the "tell-show-tell" pattern only works once discovery has confirmed the buyer actually wants the capability — otherwise it becomes another feature dump); persona alignment (what the admin, the end user, and the executive each need to see); the value moment / "wow" tied to a named pain; demo agenda and pacing; "demo to win" vs. "demo to inform"; live-demo risk, sandbox vs. production data, recorded fallback; handling the off-script question without derailing.
 
 **Applied skills**: build a 15-minute demo plan with an opening hook tied to discovery, one workflow, a proof moment, a deliberate objection pause, and a clear next step; rehearse a graceful recovery from a broken demo; tailor the same product to two different personas.
 
@@ -71,7 +71,7 @@ Questions are scenario-first and demand a judgment, not a recall. Where a precis
 
 **Key concepts**: SOC 2 Type I (design at a point in time) vs. Type II (operating effectiveness over 6–12 months); ISO 27001; encryption in transit and at rest; SSO/MFA; data retention and deletion; audit logs; DPA, sub-processors, and data residency; GDPR controller/processor roles; the shared-responsibility model; security questionnaires (e.g., SIG, CAIQ) and the trust center.
 
-**Applied skills**: map a reviewer's concern to the right evidence (point them to the SOC 2 Type II, the trust center, the DPA) instead of an adjective; build a security-objection response sheet with evidence, boundary, and escalation language; sequence security review early so it is not a quarter-end surprise.
+**Applied skills**: map a reviewer's concern to the right evidence (point them to the SOC 2 Type II, the trust center, the DPA) instead of an adjective; build a security-objection response sheet with evidence, boundary, and escalation language; sequence security review early so it is not a quarter-end surprise; use a populated trust center and a current SOC 2 Type II / ISO 27001 to pre-answer the bulk of a SIG or CAIQ questionnaire (a current SOC 2 Type II plus ISO 27001 typically pre-answer roughly three-quarters of CAIQ items) instead of starting from a blank spreadsheet.
 
 **Common traps**: answering "is it secure?" with "yes, very" instead of evidence; offering a Type I when the buyer's standard is Type II; committing to a control the company does not have; treating a friendly email as an approved contract term; deferring the security reviewer until signature; pretending to be the legal/security authority instead of escalating.
 
@@ -148,3 +148,6 @@ Finish with a short debrief: name the one thing in this deal that would make the
 - AICPA SOC 2 (Type I vs. Type II, trust services criteria): https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services
 - HubSpot Academy Inbound Sales: https://academy.hubspot.com/courses/inbound-sales
 - Salesforce Trailhead, Solution Engineer / Sales Representative paths: https://trailhead.salesforce.com/
+- MEDDICC official methodology (canonical MEDDIC/MEDDPICC components and process): https://meddicc.com/meddpicc-sales-methodology-and-process
+- Great Demo! on "Tell Show Tell" risks (why demo structure depends on confirmed discovery): https://greatdemo.com/tell-show-tell-risks/
+- Shared Assessments / vendor security questionnaires (SIG, CAIQ) and how trust-center artifacts pre-answer them: https://secureframe.com/blog/soc-2-vs-security-questionnaires

@@ -43,7 +43,7 @@ The syllabus tracks the pillars common to Google's UX certificate, Nielsen Norma
 
 ## Chapter 6: Accessibility and Inclusive Design
 - **Core questions**: Can someone complete this with a keyboard alone? Does the interface communicate state without relying on color? Which user is currently locked out?
-- **Key concepts**: the POUR principles (Perceivable, Operable, Understandable, Robust); WCAG conformance levels A/AA/AAA; contrast minimums (4.5:1 normal text, 3:1 large text at AA); target size minimum (24×24 CSS px, SC 2.5.8); keyboard operability and focus management; keyboard traps; semantic structure and labels; not using color as the only signal; readable copy and cognitive load.
+- **Key concepts**: the POUR principles (Perceivable, Operable, Understandable, Robust); WCAG conformance levels A/AA/AAA; contrast minimums (4.5:1 normal text, 3:1 large text at AA; AAA raises these to 7:1 and 4.5:1); target size minimum (24×24 CSS px, SC 2.5.8); keyboard operability and focus management — including the WCAG 2.2 additions Focus Not Obscured (SC 2.4.11) and Focus Appearance (SC 2.4.13); keyboard traps; semantic structure and labels; not using color as the only signal; readable copy and cognitive load.
 - **Applied skills**: run an accessibility review against POUR; check a color pair against the AA contrast threshold; verify focus order and an escape path through a modal; flag a color-only status indicator; specify accessible names for controls.
 - **Common traps**: treating accessibility as "add alt text and pick nicer colors"; modals that trap or lose keyboard focus; conveying errors with red alone; assuming visible size equals the hit target; chasing AAA everywhere when AA is the legal/practical bar.
 
@@ -73,5 +73,8 @@ Redesign a flawed product workflow end to end. Deliver: a problem brief with a m
 - Nielsen Norman Group UX training and articles: https://www.nngroup.com/
 - W3C WAI accessibility fundamentals: https://www.w3.org/WAI/fundamentals/
 - WCAG 2.2 Understanding SC 2.5.8 Target Size (Minimum): https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html
+- WCAG 2.2 Understanding SC 1.4.3 Contrast (Minimum) — 4.5:1 / 3:1 at AA: https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html
+- What's New in WCAG 2.2 (current W3C Recommendation; adds Focus Not Obscured 2.4.11 and Focus Appearance 2.4.13; WCAG 3.0 still a working draft): https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/
+- NN/g — Why You Only Need to Test with 5 Users (and its limits): https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/
 - Laws of UX (Fitts, Hick, and others): https://lawsofux.com/
 - CareerFoundry UX Design Program: https://careerfoundry.com/en/courses/become-a-ux-designer/

@@ -192,7 +192,7 @@ export const ib_historyHigh103TopUpAQuestions: Question[] = makeQuestionBank('Hi
   {
     id: 7966012,
     chapter: 'Rights and Protest: US Civil Rights Movement',
-    title: 'The Civil Rights Act of 1964',
+    title: "The Civil Rights Act",
     prompt: 'What did the US Civil Rights Act of 1964 achieve?',
     correct: 'It outlawed discrimination based on race, colour, religion, sex or national origin and ended segregation in public places',
     wrong: [

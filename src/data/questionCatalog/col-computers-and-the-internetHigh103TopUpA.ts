@@ -54,7 +54,7 @@ export const colComputersAndTheInternetHigh103TopUpAQuestions: Question[] = make
   {
     id: 7917003,
     chapter: 'How the Web Works',
-    title: 'Reading a 404',
+    title: "Page not found status",
     prompt: 'A browser receives an HTTP 404 status code. What does this most directly mean?',
     correct: 'The requested resource could not be found on the server',
     wrong: [

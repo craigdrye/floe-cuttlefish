@@ -292,6 +292,7 @@ const recoveredCredentialTracks: TrackSeed[] = [
     ageGroup: 'career',
     icon: 'brain',
     skills: ['Traits', 'Validity', 'Reflection'],
+    questionCount: 30,
   },
   {
     id: 'iqReasoningTests',
@@ -303,6 +304,7 @@ const recoveredCredentialTracks: TrackSeed[] = [
     ageGroup: 'career',
     icon: 'target',
     skills: ['Patterns', 'Analogies', 'Logic'],
+    questionCount: 30,
   },
 ]
 

@@ -4,7 +4,7 @@
 ## Course Aim
 The Series 79 is FINRA's investment banking representative qualification — the narrowly-scoped license that lets a registered person advise on debt and equity capital raising, mergers and acquisitions, tender offers, financial restructurings, and Rule 144A/Reg S private placements. Unlike the Series 7, which sprawls across the retail product universe, the Series 79 deliberately *excludes* retail products and goes deep on the work IB analysts and associates actually do: pitching, modeling, drafting, underwriting, executing. Pass it and you can sign the offer letter to a bulge-bracket or middle-market IB; fail it and you cannot. Most firms put new analysts on a clock — usually 120 days from start date to passing this exam.
 
-The Series 79 has 75 scored questions over 2 hours 30 minutes, divided among three job functions: data analysis (27%), underwriting and offerings (37%), and M&A/restructuring (36%). The arithmetic is harder than the SIE or 63 — DCF, accretion/dilution, EV-to-equity bridge, LBO returns, control premium math — but the exam is also less about recall than the others and more about deal-execution literacy. It expects you to think like a junior banker: walking a fact pattern from initial pitch through fairness opinion, identifying which underwriting structure fits which issuer, distinguishing a 144A from a Reg S placement on instinct, knowing when a tax-free reorganization changes the deal.
+The Series 79 has 75 scored questions over 2 hours 30 minutes, divided among three job functions: collection/analysis/evaluation of data (49%), underwriting and offerings (27%), and M&A/tender offers/restructuring (24%). Note how front-loaded the data-and-valuation function is — nearly half the exam — which is why this course spends its first two chapters there. The arithmetic is harder than the SIE or 63 — DCF, accretion/dilution, EV-to-equity bridge, LBO returns, control premium math — but the exam is also less about recall than the others and more about deal-execution literacy. It expects you to think like a junior banker: walking a fact pattern from initial pitch through fairness opinion, identifying which underwriting structure fits which issuer, distinguishing a 144A from a Reg S placement on instinct, knowing when a tax-free reorganization changes the deal.
 
 What you leave with is the working vocabulary of a deal team. You will recognize the rhythm of a sell-side process (teaser → CIM → IOI → LOI → DD → SPA → close), know which document gets signed at which step, understand which fairness opinion methodologies a board will rely on, and read a covenant package well enough to spot a maintenance covenant from an incurrence one. The exam will not make you a banker — your first staffing will do that — but it will close the gap between "finance major" and "billable hour 1."
 
@@ -18,13 +18,15 @@ Where SIE is "what is a security," Series 79 is "what is the right offering stru
 Use named sponsors ("TPG-backed Falcon Industries, $620M revenue, 18% EBITDA margin"), specific multiples ("10.5x LTM EBITDA"), and full deal mechanics. Distractors should mirror the kind of green-analyst errors that show up in modeling tests (forgetting to add minority interest in the EV bridge, mis-timing terminal value to year 6 instead of year 5).
 
 ## Exam Map and Study Rhythm
-The Series 79 has **75 scored questions plus 10 unscored pretest items in 2 hours 30 minutes (150 minutes)**. Passing is 73%. FINRA's outline divides the exam into three job functions:
+The Series 79 has **75 scored questions plus 10 unscored pretest items in 2 hours 30 minutes (150 minutes)**. Passing is 73%. FINRA's current content outline divides the exam into three job functions:
 
 | Topic | Exam Weight | Scored Qs | Study Posture |
 |---|---:|---:|---|
-| Collection, Analysis, and Evaluation of Data | 27% | 20 | Financial statements, three-statement linkages, accounting policy, valuation math |
-| Underwriting/New Financing Transactions, Types of Offerings, Registration | 37% | 28 | The largest unit — IPO, follow-on, debt, 144A/Reg S, Reg D, Reg A+, registration timeline |
-| M&A, Tender Offers, Financial Restructuring | 36% | 27 | M&A process, fairness opinions, Williams Act, defenses, Chapter 11 |
+| (F1) Collection, Analysis, and Evaluation of Data | 49% | 37 | The largest unit by far — financial statements, three-statement linkages, accounting policy, valuation math (DCF, comps, LBO, accretion/dilution) |
+| (F2) Underwriting/New Financing Transactions, Types of Offerings, Registration | 27% | 20 | IPO, follow-on, debt, 144A/Reg S, Reg D, Reg A+, registration timeline |
+| (F3) M&A, Tender Offers, Financial Restructuring | 24% | 18 | M&A process, fairness opinions, Williams Act, defenses, Chapter 11 |
+
+The single most important planning fact: **Function 1 (data and valuation) is nearly half the exam.** Candidates who treat Series 79 as primarily an M&A/offerings test mis-allocate prep. Chapters 1 and 2 here carry the most exam weight.
 
 **Study cadence: 6-8 weeks at 8-12 hours per week** is realistic for a candidate already at an IB firm. The most common pace is 6 weeks because the start-date clock is usually 90-120 days from hire.
 
@@ -171,7 +173,7 @@ Open the question bank in week 1. Drill valuation math *daily* — accretion/dil
 - Indications of interest (IOIs): preliminary, non-binding, valuation range based on CIM
 - Letters of intent (LOIs): often include exclusivity (30-60 days), valuation, structure, key conditions
 - Definitive agreement: representations and warranties, indemnification baskets and caps, escrow, **MAC clause** (material adverse change/effect), reverse termination fee, breakup fee, go-shop period, no-shop with fiduciary out
-- Antitrust: **HSR Act** filing if size-of-transaction ≥ $119.5M (2024) and size-of-person tests met; initial 30-day waiting period (15 days for cash tender offers); second request extends period until 30 days after substantial compliance
+- Antitrust: **HSR Act** filing if size-of-transaction ≥ $133.9M (2026 threshold, effective Feb 17, 2026) and, for deals up to $535.5M, size-of-person tests met; initial 30-day waiting period (15 days for cash tender offers); second request extends period until 30 days after substantial compliance
 
 **Applied skills**
 - Sequence the documents in a sell-side process from teaser to closing
@@ -182,7 +184,7 @@ Open the question bank in week 1. Drill valuation math *daily* — accretion/dil
 - **MAC clauses** are rarely successfully invoked. Most US courts require the change to be (1) durationally significant, (2) substantial in magnitude, and (3) outside the buyer's knowledge or risk allocation at signing. Akorn v. Fresenius is the major case where a MAC was upheld.
 - A **go-shop** allows the target to solicit competing offers for a window (typically 30-50 days) after signing. Different from a no-shop (forbids solicitation but allows responses to unsolicited bids under fiduciary out).
 - Reverse termination fee = buyer pays if buyer walks (or financing fails). Breakup fee = target pays if it accepts a superior proposal. Different parties, different triggers.
-- HSR size-of-transaction threshold adjusts annually for GDP. The 2024 figure is **$119.5M**.
+- HSR size-of-transaction threshold adjusts annually for GDP. The 2026 figure is **$133.9M** (it was $126.4M in 2025). The exam tests the *concept* of an annually-indexed threshold, not the exact number, so reason from "is this deal big enough to trigger a filing" rather than memorizing the current figure.
 
 **Authoritative sources:** Hart-Scott-Rodino Act (15 USC §18a); Delaware General Corporation Law §251; Revlon v. MacAndrews & Forbes (1986); Akorn v. Fresenius (Delaware Chancery 2018).
 
@@ -243,8 +245,13 @@ Open the question bank in week 1. Drill valuation math *daily* — accretion/dil
 
 - **Use scratch paper for every valuation question.** Do not try to compute WACC, accretion/dilution, or EV-to-equity in your head. The most common Series 79 failure mode is rushed arithmetic, not weak conceptual understanding.
 - **When two answers look equally correct**, choose the one a senior banker would defend to a client. The exam rewards judgment, not just recall. If one answer is technically right but "the banker would never say that to a client," pick the other one.
-- **The 27/37/36 split**: Data analysis questions cluster early; offerings in the middle; M&A and restructuring at the end. If you are running long on data analysis, flag a question and move — momentum compounds across 75 questions.
+- **The 49/27/24 split**: Data analysis and valuation is nearly half the exam — do not let it become your weak area. Offerings sit in the middle weight; M&A/tender/restructuring is the smallest function at 24%. If you are running long on a data-analysis item, flag it and move — momentum compounds across 75 questions, and there are more of these than any other type.
 - **The accretion/dilution trap**: a stock-for-stock deal at a P/E above your own = accretion if the target's earnings yield (E/P) > the cost of issuing your stock; dilution otherwise. Mixed cash/stock deals require allocating financing cost across components.
 - **Day before**: review the EV bridge, WACC formula, Rule 144 volume formula, 506(b)/506(c) distinction, Williams Act timeline, absolute priority order. Light review only. Sleep.
 
-If your last two full-length practice exams averaged 78%+ across all three job functions, you are ready. If valuation/data analysis is your weak area, dedicate the day-before window to drilling 25 valuation items only.
+If your last two full-length practice exams averaged 78%+ across all three job functions, you are ready. If valuation/data analysis is your weak area, dedicate the day-before window to drilling 25 valuation items only — and remember this is the function that decides the exam, at 49% of scored items.
+
+## Research Notes
+- FINRA Series 79 exam page — https://www.finra.org/registration-exams-ce/qualification-exams/series79 — authoritative source for exam structure: 75 scored + 10 pretest items, 2h30m, 73% pass, and the three-function weights (F1 Data 49%/37 items, F2 Underwriting 27%/20 items, F3 M&A 24%/18 items). Used to correct the prior 27/37/36 split.
+- FINRA Series 79 Content Outline (2025) — https://www.finra.org/sites/default/files/2025-10/Series_79_Content_Outline.pdf — official topic outline and task statements behind each function.
+- FTC 2026 HSR thresholds and filing fees — https://www.ftc.gov/enforcement/competition-matters/2026/01/new-hsr-thresholds-filing-fees-2026 — size-of-transaction threshold $133.9M effective Feb 17, 2026 (2025 was $126.4M). Used to update Chapter 6.

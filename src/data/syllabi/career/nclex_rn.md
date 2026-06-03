@@ -8,22 +8,22 @@ What you are building here is the clinical mind of a brand-new RN ready for entr
 
 The Clinical Judgment Measurement Model is the spine of the Next Generation NCLEX, and it is also the spine of this syllabus. You will practice recognizing cues (which finding in this chart actually matters?), analyzing cues (does this cluster point to fluid overload, sepsis, or anaphylaxis?), prioritizing hypotheses, generating solutions, taking action, and evaluating outcomes. Every question is an opportunity to rehearse that loop. By exam day, the loop should feel less like a checklist and more like a habit.
 
-A word on the test itself before the syllabus begins: the NCLEX-RN computerized adaptive test asks between 75 and 145 items over up to five hours, calibrating difficulty to your demonstrated ability and stopping the moment the algorithm is statistically confident — passing or failing — within a small margin of error. You cannot tell from the screen whether you are winning or losing, and that is the design. Trust the algorithm, answer each item as if it matters (because it does), and let the machine do the deciding. Floe will get you ready for that moment.
+A word on the test itself before the syllabus begins: under the 2026 Test Plan (effective April 1, 2026), the NCLEX-RN computerized adaptive test asks between 85 and 150 items over up to five hours, calibrating difficulty to your demonstrated ability and stopping the moment the algorithm is statistically confident — passing or failing — within a small margin of error. You cannot tell from the screen whether you are winning or losing, and that is the design. Trust the algorithm, answer each item as if it matters (because it does), and let the machine do the deciding. Floe will get you ready for that moment.
 
 ## Course Design Notes
-Route questions here when they test the NCSBN 2023 Test Plan: prioritization and delegation, safe medication administration, infection control, clinical assessment across the lifespan, therapeutic communication, and the six-step Clinical Judgment Measurement Model (recognize cues, analyze cues, prioritize hypotheses, generate solutions, take action, evaluate outcomes). The voice should make a high-stakes exam feel survivable without softening the patient-safety bar.
+Route questions here when they test the NCSBN 2026 Test Plan (effective April 2026, replacing the 2023 plan): prioritization and delegation, safe medication administration, infection prevention and control, clinical assessment across the lifespan, therapeutic communication, and the six-step Clinical Judgment Measurement Model (recognize cues, analyze cues, prioritize hypotheses, generate solutions, take action, evaluate outcomes). The voice should make a high-stakes exam feel survivable without softening the patient-safety bar.
 
 This course differs from a straight content-review app on three axes. First, **priority beats recall**: knowing that magnesium toxicity causes loss of deep tendon reflexes is necessary but not sufficient; the exam wants to know whether you would check reflexes before the next infusion. Second, **delegation logic is fair game on every item**: every shift has tasks that belong to the RN, tasks for the LPN/LVN, and tasks for the UAP, and the test rewards candidates who hold initial assessment, IV push, blood, and teaching at the RN level while letting stable ADLs, vitals on stable patients, and ambulation flow to the UAP. Third, **safety outranks comfort, and acute outranks chronic**: when in doubt, the unstable patient with an ABC threat is the first patient you see, even if a more stable patient is louder.
 
 Floe will pull NCLEX-RN questions when the candidate is preparing for licensure, when the topic is squarely nursing scope of practice, or when the prompt invokes priority/delegation/safety framing. Adjacent banks (NCLEX-PN for practical-nurse scope, USMLE/PANCE for the provider role, hospital floor ops for non-licensure operational judgment) carry their own logic; mixing them dilutes the licensure signal.
 
 ## Exam Map and Study Rhythm
-The NCSBN 2023 Test Plan publishes ranges, not promises. Allocate effort by blueprint weight, by error-log frequency, and by your personal weak organ systems and weak cognitive steps.
+The NCSBN 2026 Test Plan publishes ranges, not promises. The eight Client Needs weights below are unchanged from the 2023 plan; what changed for 2026 is the exam length (now 85-150 items) and one subcategory rename (Safety and Infection Control became Safety and Infection Prevention and Control). Allocate effort by blueprint weight, by error-log frequency, and by your personal weak organ systems and weak cognitive steps.
 
 | Client Needs Category | Exam Weight | Study Posture |
 |---|---:|---|
 | Management of Care | 15-21% | Highest single slice; drill delegation, scope, advocacy, informed consent, case management |
-| Safety and Infection Control | 10-16% | Drill isolation precautions, error prevention, equipment safety, emergency response |
+| Safety and Infection Prevention and Control | 10-16% | Drill isolation precautions, error prevention, equipment safety, emergency response |
 | Health Promotion and Maintenance | 6-12% | Span the life cycle: prenatal, peds, adult, geriatric screening, immunizations |
 | Psychosocial Integrity | 6-12% | Therapeutic communication, mental health, grief, end-of-life, abuse, substance withdrawal |
 | Basic Care and Comfort | 6-12% | ADLs, mobility, nutrition, elimination, rest, non-pharm pain, palliation |
@@ -31,9 +31,9 @@ The NCSBN 2023 Test Plan publishes ranges, not promises. Allocate effort by blue
 | Reduction of Risk Potential | 9-15% | Lab values, diagnostic prep, complication recognition, monitoring after procedures |
 | Physiological Adaptation | 11-17% | Acute, chronic, and emergent pathophysiology with high-acuity interventions |
 
-**Test format (April 2023 onward).** The Next Generation NCLEX integrates traditional multiple-choice items with six new NGN item types: extended drag-and-drop (rank or order interventions), extended multiple response (Select N of M with partial credit), matrix/grid (rate each option as expected/unexpected or appropriate/contraindicated), highlight in text (click the relevant findings in a chart note), Select All That Apply (legacy SATA with no partial credit), and bow-tie (one action in the middle, supporting cues on the left, anticipated outcomes on the right). NGN case studies present a chart of cues that evolves across six linked questions, one per step of the Clinical Judgment Measurement Model. Stand-alone items still appear and still matter.
+**Test format (Next Generation NCLEX, April 2023 onward; carried forward in the 2026 plan).** The Next Generation NCLEX integrates traditional multiple-choice items with six new NGN item types: extended drag-and-drop (rank or order interventions), extended multiple response (Select N of M with partial credit), matrix/grid (rate each option as expected/unexpected or appropriate/contraindicated), highlight in text (click the relevant findings in a chart note), Select All That Apply (legacy SATA with no partial credit), and bow-tie (one action in the middle, supporting cues on the left, anticipated outcomes on the right). NGN case studies present a chart of cues that evolves across six linked questions, one per step of the Clinical Judgment Measurement Model. A minimum-length exam now includes three NGN case studies (18 scored items) plus 15 unscored pretest items; the balance is stand-alone items, which still appear and still matter.
 
-**The CAT mechanics, in plain language.** The first item is calibrated below the passing standard; if you answer correctly, the next item is harder, if not, easier. The algorithm scores continuously and stops when your ability estimate is reliably above or below the passing standard, or at 145 items, or at the 5-hour limit. The number of items you get is not a signal — short tests pass and short tests fail; long tests pass and long tests fail. You cannot skip items and you cannot return to earlier items.
+**The CAT mechanics, in plain language.** The first item is calibrated below the passing standard; if you answer correctly, the next item is harder, if not, easier. The algorithm scores continuously and stops when your ability estimate is reliably above or below the passing standard, or at 150 items, or at the 5-hour limit (under the 2026 plan the minimum is 85 items). The number of items you get is not a signal — short tests pass and short tests fail; long tests pass and long tests fail. You cannot skip items and you cannot return to earlier items.
 
 **Study cadence.** Six to twelve weeks of focused preparation, four to six hours of work per day, with roughly 75 mixed-format items completed daily and full written rationales on every miss. Use UWorld (or Saunders/Lippincott) as the spine, not the supplement. Maintain a miss matrix tagged by client need, organ system, and CJMM step. Reading without questions is wallpaper; questions without rationale review is gambling. In the last two weeks shift toward two timed 85-item simulations per week with a strict break protocol that mimics test day.
 
@@ -61,9 +61,9 @@ The NCSBN 2023 Test Plan publishes ranges, not promises. Allocate effort by blue
 - UAP can do stable, expected, and unchanging; the moment a task involves judgment, education, or initial data, it returns to the RN.
 
 **Authoritative sources**
-NCSBN 2023 Test Plan; ANA Scope and Standards of Practice; state Nurse Practice Acts; The Joint Commission National Patient Safety Goals; Saunders Comprehensive Review.
+NCSBN 2026 Test Plan; ANA Scope and Standards of Practice; state Nurse Practice Acts; The Joint Commission National Patient Safety Goals; Saunders Comprehensive Review.
 
-## Chapter 2: Safety, Infection Control, and Error Prevention
+## Chapter 2: Safety, Infection Prevention and Control, and Error Prevention
 **Core questions:** Which precaution does this organism require? What is the single most effective intervention to prevent this hospital-acquired infection? When does this near-miss require a safety event report?
 
 **Key concepts**
@@ -85,7 +85,7 @@ NCSBN 2023 Test Plan; ANA Scope and Standards of Practice; state Nurse Practice 
 - Triage in mass-casualty events uses START: Red immediate (life-threat, salvageable), Yellow delayed, Green minor/walking, Black expectant.
 
 **Authoritative sources**
-CDC Isolation Precautions Guidelines; The Joint Commission NPSGs; OSHA bloodborne pathogen standard; NCSBN test plan; AHRQ patient safety primers.
+CDC Isolation Precautions Guidelines; The Joint Commission NPSGs; OSHA bloodborne pathogen standard; NCSBN 2026 Test Plan; AHRQ patient safety primers.
 
 ## Chapter 3: Pharmacology and Parenteral Therapies
 **Core questions:** Is the dose safe? What labs do I check before giving this drug? Which adverse effect requires holding the next dose and calling the provider?
@@ -139,7 +139,7 @@ Lehne/Burchum Pharmacology for Nursing Care; ISMP high-alert medication list; UW
 - HIT is a clotting problem, not a bleeding problem; the platelet drop is paradoxical and demands stopping all heparin (including flushes) and starting argatroban or bivalirudin.
 
 **Authoritative sources**
-ACLS Provider Manual (current cycle); AHA/ACC guidelines; UWorld cardiology; Saunders cardiovascular review; NCSBN test plan.
+ACLS Provider Manual (current cycle); AHA/ACC guidelines; UWorld cardiology; Saunders cardiovascular review; NCSBN 2026 Test Plan.
 
 ## Chapter 5: Respiratory, Renal, and Acid-Base
 **Core questions:** Is this hypoxia or hypercapnia? Which ABG picture is this, and is compensation underway? When does this AKI need dialysis now?
@@ -279,7 +279,7 @@ USPSTF; CDC immunization schedule; AGS Beers criteria; Bright Futures; Joint Com
 **Key concepts**
 - NGN item types in detail: extended drag-and-drop (order interventions), extended multiple response (Select N of M, partial credit possible), matrix/grid (rate each option as expected/unexpected or appropriate/contraindicated), highlight in text, bow-tie, traditional SATA (no partial credit)
 - Clinical Judgment Measurement Model in practice: read the chart, recognize cues (highlight what is abnormal), analyze cues (cluster into hypotheses), prioritize hypotheses (which one will kill the patient first?), generate solutions (what would I do?), take action (which is the safest least-escalation first move?), evaluate outcomes (did it work, and what is the next signal?)
-- CAT mechanics: first item is below passing standard, ability estimate ± standard error updates after each response, exam stops when the estimate is reliably on one side of the passing standard or at 145 items or 5 hours. Cannot skip; cannot return
+- CAT mechanics: first item is below passing standard, ability estimate ± standard error updates after each response, exam stops when the estimate is reliably on one side of the passing standard or at 150 items or 5 hours (minimum 85 items under the 2026 plan). Cannot skip; cannot return
 - Pacing: ~1 minute average, but spend up to 2-3 minutes on NGN case studies; abandon spirals; trust your first read on safety items unless a second reading reveals a missed cue
 
 **Applied clinical skills**
@@ -295,3 +295,10 @@ USPSTF; CDC immunization schedule; AGS Beers criteria; Bright Futures; Joint Com
 
 **Authoritative sources**
 NCSBN Next Generation NCLEX Project; NCSBN Clinical Judgment Measurement Model whitepaper; UWorld NGN content; Saunders strategy chapters.
+
+## Research Notes
+- https://www.nclex.com/files/2026_RN_Test%20Plan_English-F.pdf — Official NCLEX-RN Test Plan effective April 1, 2026 (replaces the 2023 plan); confirms the eight Client Needs categories and percentage ranges and the renamed "Safety and Infection Prevention and Control" subcategory.
+- https://www.ncsbn.org/publications/2026-nclex-rn-test-plan — NCSBN landing page for the 2026 RN Test Plan (effective April 2026 through March 2029).
+- https://www.atitesting.com/educator/blog/knowledge/2026/02/23/what-nursing-faculty-need-to-know-about-the-2026-nclex-test-plan — Summary of 2026 changes vs 2023: weights unchanged, two new/two modified activity statements, subcategory rename; describes the plan as a minor alignment, not a 2023-style overhaul.
+- https://nursing.uworld.com/nclex-rn/test-plan/ — UWorld breakdown confirming exact Client Needs percentage ranges (e.g., Pharmacological and Parenteral Therapies 13-19%, Management of Care 15-21%).
+- https://www.archerreview.com/blog/how-many-questions-are-on-the-nclex and https://goodnurse.com/article/26/how-many-questions-are-on-the-nclex-in-2026-minimum-maximum-and-what-it-means-for-your-pass-rate — Confirm the 2026 item-count change to minimum 85 / maximum 150 items in a 5-hour window, with three NGN case studies (18 scored items) and 15 unscored pretest items on a minimum-length exam.

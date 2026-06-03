@@ -95,16 +95,19 @@ Route questions here when they test the mechanics of US elections: voter registr
 - The canvass, certification, and the order before inauguration
 - Recount triggers (margin thresholds, requests) and risk-limiting audits
 - Voter-verifiable paper trails
+- The joint session of Congress and the Electoral Count Reform Act of 2022 (governor's certificate conclusive; Vice President's role is ministerial; objection threshold raised to one-fifth of each chamber)
 
 **Applied skills**
 - Explain the gap between election-night calls and certified totals
 - Identify when an automatic recount kicks in
 - Describe how a risk-limiting audit confirms a winner by sampling
+- Explain what the Electoral Count Reform Act changed about objections and the Vice President's role
 
 **Common traps**
 - Believing the FEC certifies results or that concessions are required
 - Assuming full hand recounts are routine
 - Thinking paper records slow things down rather than enabling audits
+- Believing the Vice President can accept, reject, or adjudicate electoral votes
 
 ## Chapter 6: Districts, Apportionment, and Gerrymandering
 **Core questions:** How are the lines that decide your representation drawn, and how can the same votes produce very different seat outcomes?
@@ -113,12 +116,12 @@ Route questions here when they test the mechanics of US elections: voter registr
 - Census-driven apportionment of 435 House seats vs within-state redistricting
 - Gerrymandering; packing and cracking
 - Independent/bipartisan commissions
-- Rucho v. Common Cause and state-court challenges
+- Rucho v. Common Cause (federal courts won't hear partisan-gerrymandering claims) and Moore v. Harper (state courts and constitutions still constrain the maps)
 
 **Applied skills**
 - Distinguish apportionment (how many seats) from redistricting (where lines go)
 - Spot packing and cracking in a described map
-- Identify where partisan gerrymandering can still be challenged
+- Identify where partisan gerrymandering can still be challenged (state courts, after Rucho and Moore v. Harper)
 
 **Common traps**
 - Confusing apportionment with redistricting
@@ -209,4 +212,6 @@ Trace one full election cycle for a hypothetical voter. Start by registering the
 - U.S. Election Assistance Commission: https://www.eac.gov/
 - National Conference of State Legislatures, Elections and Campaigns: https://www.ncsl.org/elections-and-campaigns
 - Federal Election Commission: https://www.fec.gov/
-- Chiafalo v. Washington (2020) and Rucho v. Common Cause (2019), U.S. Supreme Court opinions
+- FEC contribution limits for 2025-2026 ($3,500 per election to a candidate): https://www.fec.gov/updates/contribution-limits-for-2025-2026/
+- Chiafalo v. Washington (2020), Rucho v. Common Cause (2019), and Moore v. Harper (2023), U.S. Supreme Court opinions: https://www.supremecourt.gov/opinions/22pdf/21-1271_3f14.pdf
+- Electoral Count Reform and Presidential Transition Improvement Act of 2022 (clarifies joint-session count, VP ministerial role, one-fifth objection threshold): https://www.congress.gov/bill/117th-congress/senate-bill/4573

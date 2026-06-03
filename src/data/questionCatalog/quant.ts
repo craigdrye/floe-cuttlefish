@@ -10,6 +10,10 @@ import { ch6MentalMathQuestions, CH6_MENTAL_MATH_SUB_TOPICS, CH6_MENTAL_MATH_MEN
 import { ch7CodingQuestions, CH7_CODING_SUB_TOPICS, CH7_CODING_MENTOR_HINTS } from './quantCoreCh7Coding'
 import { ch8MockInterviewQuestions, CH8_MOCK_INTERVIEW_SUB_TOPICS, CH8_MOCK_INTERVIEW_MENTOR_HINTS } from './quantCoreCh8MockInterview'
 import { quantCapstoneQuestions, QUANT_CAPSTONE_SUB_TOPICS, QUANT_CAPSTONE_MENTOR_HINTS } from './quantCoreCapstone'
+import { backwardInductionGemQuestions, BACKWARD_INDUCTION_GEM_IDS, BACKWARD_INDUCTION_GEM_MENTOR_HINTS } from './quantBackwardInductionGems'
+import { round3Questions, ROUND3_L1_IDS, ROUND3_L2_IDS, ROUND3_MENTOR_HINTS } from './quantPromptExpRound3'
+import { round4Questions, ROUND4_ALL_IDS, ROUND4_MENTOR_HINTS, ROUND4_LATERAL_IDS, ROUND4_WEIGHING_IDS, ROUND4_COUNTING_IDS, ROUND4_INVARIANTS_IDS, ROUND4_LOGIC_IDS } from './quantPromptExpRound4'
+import { quantPopulateQuestions, QUANT_POPULATE_MENTOR_HINTS, QUANT_POPULATE_CORE_IDS } from './quantPopulateGenerated'
 import {
   quantCoreSubchapterExpansionQuestions,
   QUANT_CORE_SUBCHAPTER_EXPANSION_MENTOR_HINTS,
@@ -62,6 +66,14 @@ const CORE_QUESTION_IDS = new Set<number>([
   20050, 20051, 20052, 20053, 20054, 20055, 20056, 20057, 20058, 20059,
   20060, 20061, 20062, 20063, 20064, 20065, 20066, 20067, 20068, 20069,
   20070, 20071, 20072, 20073, 20074, 20075, 20076, 20077, 20078, 20079,
+  // Process-Coach backward-induction candidates (generated; for in-app rating).
+  ...BACKWARD_INDUCTION_GEM_IDS,
+  // Prompt-experiment round 3 (Lessons 1 & 2 candidates).
+  ...ROUND3_L1_IDS, ...ROUND3_L2_IDS,
+  // Prompt-experiment round 4 (5 Brain-Teaser lessons, 10 each).
+  ...ROUND4_ALL_IDS,
+  // Mass-populate generated quant-core questions.
+  ...QUANT_POPULATE_CORE_IDS,
 ])
 
 function isQuantInterviewCoreQuestion(question: Question) {
@@ -79,13 +91,13 @@ function isQuantInterviewCoreQuestion(question: Question) {
 // Source: docs/audit/career/quant_phase3_subtopics.md (approved 2026-05-19)
 const QUANT_SUB_TOPICS: Record<string, number[]> = {
   // Brain Teasers (37)
-  'Backward Induction': [19001, 19006, 19023, 19028],
-  'Lateral & Observability': [19003, 19009, 19012, 19016, 19026],
-  'Weighing & Information': [19004, 19014, 19019, 19029, 19407],
-  'Invariants & Parity': [19007, 19011, 19018, 19025, 19818],
-  'Counting & Arithmetic': [19005, 19010, 19013, 19024, 19027, 19404, 19408, 19409],
-  'Logic & Constraint': [19008, 19020, 19030, 19819],
-  'Optimization & Movement': [19002, 19015, 19017, 19021, 19022, 19406],
+  'Backward Induction': [19001, 19006, 19023, 19028, ...BACKWARD_INDUCTION_GEM_IDS, ...ROUND3_L1_IDS],
+  'Lateral & Observability': [19003, 19009, 19012, 19016, 19026, ...ROUND4_LATERAL_IDS],
+  'Weighing & Information': [19004, 19014, 19019, 19029, 19407, ...ROUND4_WEIGHING_IDS],
+  'Invariants & Parity': [19007, 19011, 19018, 19025, 19818, ...ROUND4_INVARIANTS_IDS],
+  'Counting & Arithmetic': [19005, 19010, 19013, 19024, 19027, 19404, 19408, 19409, ...ROUND4_COUNTING_IDS],
+  'Logic & Constraint': [19008, 19020, 19030, 19819, ...ROUND4_LOGIC_IDS],
+  'Optimization & Movement': [19002, 19015, 19017, 19021, 19022, 19406, ...ROUND3_L2_IDS],
 
   // Probability (59)
   'Conditional & Bayes': [19101, 19102, 19107, 19111, 19123, 19153, 19812, 19816],
@@ -202,6 +214,10 @@ const MENTOR_HINTS: Record<number, string> = {
   ...CH8_MOCK_INTERVIEW_MENTOR_HINTS,
   ...QUANT_CAPSTONE_MENTOR_HINTS,
   ...QUANT_CORE_SUBCHAPTER_EXPANSION_MENTOR_HINTS,
+  ...BACKWARD_INDUCTION_GEM_MENTOR_HINTS,
+  ...ROUND3_MENTOR_HINTS,
+  ...ROUND4_MENTOR_HINTS,
+  ...QUANT_POPULATE_MENTOR_HINTS,
 }
 
 const CORRECT_SHORTENED: Record<number, { newCorrect?: string; lessonAddendum?: string }> = {
@@ -570,12 +586,16 @@ export function buildQuantQuestionCatalog(): Record<string, Question[]> {
   // they share the same polish pipeline (subTopic, mentorHint, correct-shortening).
   const combined = [
     ...questions,
+    ...backwardInductionGemQuestions,
+    ...round3Questions,
+    ...round4Questions,
     ...ch1InterviewMapQuestions,
     ...ch6MentalMathQuestions,
     ...ch7CodingQuestions,
     ...ch8MockInterviewQuestions,
     ...quantCapstoneQuestions,
     ...quantCoreSubchapterExpansionQuestions,
+    ...quantPopulateQuestions,
   ]
   const polished = applyCorrectShortening(tagMentorHint(tagSubTopic(combined)))
   return {

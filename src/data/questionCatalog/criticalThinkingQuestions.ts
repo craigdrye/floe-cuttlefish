@@ -127,7 +127,7 @@ export const criticalThinkingQuestions: Question[] = makeQuestionBank('Career Sk
     prompt: 'Which argument is logically valid?',
     correct: '"If the alarm sounds, evacuate. The alarm sounded. So evacuate."',
     wrong: [
-      miss('"If the alarm sounds, evacuate. We did not evacuate. So no alarm sounded."', 'This denies that we evacuated, but people can fail to evacuate even when the alarm sounds — invalid.', 'Valid backward moves deny the consequent to deny the antecedent. Here the consequent is "evacuate"; was it properly denied?'),
+      miss('"If the alarm sounds, evacuate. The alarm did not sound. So do not evacuate."', 'This denies the antecedent: ruling out one trigger does not rule out the action, since we might evacuate for some other reason — invalid.', 'Denying the "if" part does not settle the "then" part. Could the action still be required even when this particular trigger is absent?'),
       miss('"If the alarm sounds, evacuate. We evacuated. So the alarm sounded."', 'We might evacuate for a drill, a fire seen directly, or a request — affirming the consequent.', 'Could the second part be true for some other reason? If so, the conclusion is not forced.'),
       miss('"The alarm sometimes sounds. So we should always evacuate."', '"Sometimes" cannot support "always"; the premise is far weaker than the conclusion.', 'Check whether the strength of the conclusion outruns the strength of the premise.'),
     ],
@@ -289,7 +289,7 @@ export const criticalThinkingQuestions: Question[] = makeQuestionBank('Career Sk
       miss('Circular reasoning', 'The conclusion is not restated as its premise; popularity is offered as the evidence.', 'Is the evidence "lots of people do it", or just the conclusion reworded?'),
       miss('Straw man', 'No position is distorted; popularity is treated as proof of effectiveness.', 'Straw man misrepresents a view. Here a crowd size is treated as evidence.'),
     ],
-    lesson: 'The bandwagon fallacy treats popularity as proof. Lots of people once believed the earth was flat; numbers track what is appealing or well-marketed, not what is true. Popularity can be weak indirect evidence (many users might mean some benefit), but it never substitutes for actual evidence of effectiveness.',
+    lesson: 'The bandwagon fallacy treats popularity as proof. For centuries nearly everyone believed the sun orbited the earth (geocentrism); numbers track what is appealing or well-marketed, not what is true. Popularity can be weak indirect evidence (many users might mean some benefit), but it never substitutes for actual evidence of effectiveness.',
     source,
   },
 

@@ -16,7 +16,7 @@ Route questions here when they test item-set reasoning, mid-depth valuation, int
 If a question is purely definitional or single-formula, it belongs in Level I, not here. If a question is judgment-heavy ("recommend an allocation given the client's constraints") or essay-style, it belongs in Level III. Level II lives in the middle: enough application to be challenging, enough specificity to have a single defensible right answer.
 
 ## Exam Map and Study Rhythm
-The 2024+ Level II exam uses 22 vignettes with 4 item-set questions each (88 questions total) across two sessions of 2 hours 12 minutes. CFA Institute publishes topic weights as **ranges** that may shift between administrations; the table below gives current bands and a working study posture.
+The Level II exam uses 22 vignettes with 4 item-set questions each (88 total; 20 vignettes scored, 2 unscored pretest sets) across two sessions of 2 hours 12 minutes. CFA Institute publishes topic weights as **ranges** that may shift between administrations; the table below gives the current 2025-2026 bands (unchanged year-over-year — five topics at 10-15%, five at 5-10%) and a working study posture.
 
 | Topic | Exam Weight | Study Posture |
 |---|---:|---|
@@ -25,7 +25,7 @@ The 2024+ Level II exam uses 22 vignettes with 4 item-set questions each (88 que
 | Economics | 5-10% | Currencies, growth models, regulation, neutral rates |
 | Financial Statement Analysis | 10-15% | Intercorp investments, pensions, multinational, quality of earnings |
 | Corporate Issuers | 5-10% | Capital structure, ESG, M&A, restructurings, cost of capital |
-| Equity Investments | 10-15% | DDM, FCFE/FCFF, residual income, market-based, private company |
+| Equity Valuation | 10-15% | DDM, FCFE/FCFF, residual income, market-based, private company |
 | Fixed Income | 10-15% | Term structure, arbitrage-free pricing, OAS, MBS, credit |
 | Derivatives | 5-10% | Forwards/futures, swaps, BSM and binomial trees, hedging |
 | Alternative Investments | 5-10% | PE, real estate, hedge funds, commodities, infrastructure |
@@ -292,3 +292,13 @@ Level II rewards the candidate who reads each vignette once carefully, annotates
 - **Ethics last hour:** Ethics is anti-fatigue. Save 20 minutes for the Ethics vignettes when your judgment is freshest, not last when you are tired.
 
 Build a one-page checklist for FSA adjustments and equity-valuation pivots, train the habit of walking past a question you cannot solve in 90 seconds, and accept that 65-70% raw is a passing exam. You do not need to be a genius. You need to be steady.
+
+## Research Notes
+Verified against authoritative and current sources (2025-2026):
+- CFA Institute — Level II exam page (format: 22 item sets / 88 questions, two 2h12m sessions, 20 scored + 2 pretest): https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-ii-exam
+- CFA Institute — CFA Program curriculum overview (official topic names, including "Equity Valuation" and "Derivative Investments"): https://www.cfainstitute.org/programs/cfa-program/curriculum
+- UWorld — CFA Level 2 Topics 2026 (10 topics, 2026 weight ranges, 45 learning modules): https://finance.uworld.com/cfa/level-2-topics/
+- Soleadea — 2026 Level 2 CFA Exam Topic Weights (confirms weights unchanged from 2025: five topics 10-15%, five 5-10%): https://soleadea.org/cfa-level-2/topic-weights
+- 300Hours — CFA Curriculum Changes 2026 (only L2 change: one LOS removed from the Quant "Machine Learning" module; weights identical to 2025): https://300hours.com/cfa-curriculum-changes-2026/
+
+Notes: Topic weights and exam structure in this file are accurate for 2025-2026. The exam-map table topic label was changed from "Equity Investments" to the official "Equity Valuation" (also matching the question-bank chapter). No core topic is missing; all ten official topics plus Ethics map directly to the question-bank chapters.

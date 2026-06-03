@@ -91,7 +91,7 @@ export const apUsGovCh8Questions: Question[] = makeQuestionBank('AP', [
   {
     id: 4360806,
     chapter: CHAPTER,
-    title: 'Voting Rights Act of 1965',
+    title: "Voting Rights Act ban on literacy tests",
     prompt: 'A central and enduring feature of the Voting Rights Act of 1965 was that it:',
     correct: 'Banned literacy tests and other discriminatory voting practices in covered jurisdictions',
     wrong: [
@@ -520,7 +520,7 @@ export const apUsGovCh8Questions: Question[] = makeQuestionBank('AP', [
   {
     id: 4360839,
     chapter: CHAPTER,
-    title: 'Telecommunications Act 1996',
+    title: "Media ownership deregulation act",
     prompt: 'The Telecommunications Act of 1996 is most significant in AP US Gov for:',
     correct: 'Substantially deregulating ownership rules across broadcast, cable, and telephone industries',
     wrong: [
@@ -533,7 +533,7 @@ export const apUsGovCh8Questions: Question[] = makeQuestionBank('AP', [
   {
     id: 4360840,
     chapter: CHAPTER,
-    title: 'Section 230',
+    title: "Platform liability shield for user content",
     prompt: 'Section 230 of the Communications Decency Act (1996) generally provides that:',
     correct: 'Interactive computer service providers are not treated as the publisher of most user-generated content',
     wrong: [

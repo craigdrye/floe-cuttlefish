@@ -1,0 +1,158 @@
+import { makeSimpleQuestion } from '../base'
+import type { Question } from '../types'
+
+export const peopleManagementGems: Question[] = [
+  // ----------------------------------------------------------------------------
+  // The Manager Job
+  // ----------------------------------------------------------------------------
+  makeSimpleQuestion(
+    10066000,
+    'Career Skills',
+    'The Manager Job',
+    "Why two owners is the same as none",
+    "A launch slips. Reviewing the project board, you find the release was marked 'Accountable: Sara AND Tom' so neither would feel sidelined. Both assumed the other was watching the integration step, and it fell through the gap. Drafting a RACI for the next launch, what does the model demand for the Accountable role on each deliverable, and why?",
+    "Exactly one Accountable person per deliverable, because a single named owner has nowhere to hide: when the buck stops with one person, the integration step has a guaranteed watcher and a clear escalation point",
+    [
+      ["Two or more Accountable people, so the workload and the pressure of ownership are shared fairly between capable peers", "Sharing accountability feels fair but reproduces the exact failure that sank the launch: each owner can rationally assume the other has it, so the gap nobody owns is the gap that breaks.", "Distribute the work (Responsible) widely, but keep the single neck on the line (Accountable) undivided."],
+      ["No fixed Accountable owner, since a healthy self-organizing team should collectively hold the outcome without singling anyone out", "Collective ownership sounds mature but diffuses responsibility until it evaporates; with no named owner there is no one whose job it is to notice the silence and pull the alarm.", "A team can share the doing; someone must still own the answering."],
+      ["One Accountable person, but only for the final sign-off, leaving every intermediate step deliberately unassigned to preserve flexibility", "Confining accountability to the last signature is how the integration step stayed orphaned; ownership of the outcome includes owning the seams between steps, not just the closing approval.", "Accountable means owning the result end to end, including the handoffs nobody enjoys."],
+    ],
+    "RACI's hardest rule is the most counterintuitive one: every deliverable gets exactly one Accountable owner. The instinct to share accountability 'fairly' quietly produces the bystander effect at the organizational level, where each owner assumes the other is responsible and the work falls into the seam between them. The deep point is that accountability is not the same as workload. You can and should spread the doing across many Responsible people, but the single named owner is what guarantees a watcher for every gap and one unambiguous place the buck stops. The lingering tension: the arrangement that feels most equitable, two co-owners, is precisely the one that manufactures the orphaned task.",
+    'Floe generated',
+    true,
+    "Think about who is guaranteed to notice when a step between two people goes silent.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10066001,
+    'Career Skills',
+    'The Manager Job',
+    "When helping quietly becomes the bottleneck",
+    "You were the strongest engineer on the team, so when a tricky bug appears you naturally grab it and fix it fast, the way you always have. The team praises you, and the bug is gone by lunch. Six months in, you notice you are reviewing everything, fixing the hard parts yourself, and the team waits for you before deciding anything. What core shift does the manager job actually require, and what did the fast fix cost?",
+    "The job is to multiply the team's capability, so the manager succeeds through other people; fixing it yourself produced a faster bug fix but a slower team, because every rescue teaches them to wait for you instead of building the skill themselves",
+    [
+      ["Keep personally handling the hardest problems, since using your strongest skill where it has the most impact is the highest-leverage thing a manager can do", "This confuses individual output with managerial leverage; the manager's leverage is the team's growing capability, and a leader who hoards the hard problems caps the team's ceiling at their own.", "Your leverage is no longer what you produce, but what the team can produce without you."],
+      ["Stop touching the work entirely and only track outcomes, because any involvement in the technical details is now micromanagement", "Total withdrawal overcorrects into abandonment; the point is to build capability through coaching and review, not to vanish, and a coach who never engages is as useless as one who never lets go.", "Move from doing the work to growing the people who do it, which still requires presence."],
+      ["Hire more senior people so there are no hard problems left that only you can solve, removing the dependency at the source", "More senior hires can help, but the dependency lives in your habit of rescuing, not in the team's seniority; you will find new things to grab and the bottleneck will reappear at a higher level.", "The bottleneck is a behavior to change, not a staffing gap to buy your way out of."],
+    ],
+    "The promotion from individual contributor to manager is a change of job, not a reward for the old one. An IC is measured by what they produce; a manager is measured by what the team produces, which means their real leverage is the team's growing capability. The trap is seductive because the rescue genuinely works in the moment: the bug dies by lunch and everyone is grateful. But each heroic fix is a withdrawal from the team's growth account, and over months it trains people to escalate rather than own, making the manager the permanent single point of failure. The deep tension: the behavior that earned the promotion is the very one that, continued, makes you a bottleneck and your team smaller than it should be.",
+    'Floe generated',
+    true,
+    "Ask what the team learns to do every time you step in and solve it for them.",
+    { challengeRating: 6 },
+  ),
+  // ----------------------------------------------------------------------------
+  // Feedback, Coaching, and Performance Diagnosis
+  // ----------------------------------------------------------------------------
+  makeSimpleQuestion(
+    10066002,
+    'Career Skills',
+    'Feedback, Coaching, and Performance Diagnosis',
+    "Skill gap wearing an attitude costume",
+    "A reliable, eager analyst who has always hit deadlines suddenly starts missing them after the team migrates to a new analytics tool. Her work is late and full of errors she never used to make. A colleague says she has 'checked out' and needs a motivation talk. Before choosing a response, what is the most disciplined diagnosis, and why does it change what you do?",
+    "Diagnose this as a likely skill gap, not a will gap: a previously motivated, capable person failing right after a new tool was introduced points to missing capability, which calls for training and support rather than a motivation talk or discipline",
+    [
+      ["Treat it as a will (motivation) problem and have a frank conversation about her commitment and engagement, since the drop is sudden and visible", "This is the classic misdiagnosis: reading a capability gap as an attitude problem. A motivation talk aimed at a skill gap is both ineffective and unfair, and it teaches her that asking for help looks like weakness.", "Ask what changed in the world around her before concluding what changed inside her."],
+      ["Treat it as a clarity gap and re-explain the goals and the definition of done, on the theory that she no longer knows what good looks like", "Clarity is worth checking, but the goals did not change, the tool did; re-stating expectations she already understands wastes the conversation and still leaves the actual barrier, the unfamiliar tool, untouched.", "The timing fingerprints the cause: nothing about the target moved, only the instrument."],
+      ["Treat it as a system gap and assume the tool itself is broken for everyone, escalating to revert the migration", "It may be partly systemic, but if peers are coping while she struggles, the binding constraint is her unfamiliarity with the tool, not a defect in it; reverting hides an individual capability need behind an infrastructure claim.", "Distinguish a tool that fails everyone from a tool one person has not yet learned."],
+    ],
+    "Performance diagnosis insists you ask whether a problem is a skill gap, a will gap, a clarity gap, or a system gap before you intervene, because the wrong diagnosis produces the wrong and often unfair fix. The instinct to read declining output as 'checked out' is fundamental attribution error in management dress: we explain others' failures by their character and our own by our circumstances. Here the timeline is the tell. A capable, motivated person who breaks exactly when a new tool arrives is almost certainly facing a skill gap, and the humane, effective response is training, not a commitment lecture. The deep point: the same observable behavior, late and sloppy work, has four different causes and four different cures, and treating a skill gap as an attitude problem is how managers lose good people while believing they are holding the line.",
+    'Floe generated',
+    true,
+    "Notice exactly when the performance dropped, and ask what changed in the toolkit at that moment.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10066003,
+    'Career Skills',
+    'Feedback, Coaching, and Performance Diagnosis',
+    "The feedback that lands versus the feedback that wounds",
+    "You want to tell a team member that their behavior in yesterday's client call was a problem. One draft says: 'You were really unprofessional and kind of arrogant in that meeting.' Using the SBI model (Situation, Behavior, Impact), how should you reframe it, and what makes the reframe both fairer and more useful?",
+    "Name the Situation, the observable Behavior, and its Impact: 'In yesterday's 2pm client call (Situation), when the client raised a concern you interrupted and said we'd already covered it (Behavior); the client went quiet and emailed afterward unsure we were listening (Impact)' — because it points to changeable behavior and concrete consequences instead of judging character",
+    [
+      ["Keep the honest character read but soften it: 'You came across as a little arrogant, no offense, you're great otherwise' — so they get the real message wrapped kindly", "Padding a character label is still a character label; 'arrogant' describes who they are, not what they did, so it invites defensiveness and gives them nothing specific to change. Kindness in the wrapper does not fix the judgment inside.", "Describe the action on the tape, not the personality you inferred from it."],
+      ["Lead with the impact and your feelings first: 'I felt embarrassed and let down by how that call went' — so they understand the emotional stakes before anything else", "Opening with diffuse feelings and no anchoring behavior leaves them guessing what they actually did; without the specific Situation and Behavior, your emotion reads as mood, not as feedback they can act on.", "Anchor the emotion to the observable moment that caused it, or it floats free."],
+      ["Generalize so it doesn't feel like an attack: 'Some people felt the call could've gone better, we should all be more careful' — spreading it across the team", "Vague, group-aimed hints are the cowardly cousin of feedback: the person who needs to hear it can dodge it, and everyone who didn't do it feels unfairly implicated. Indirection protects your comfort at the cost of their growth.", "Give direct private feedback to the one person, not coded hints to the room."],
+    ],
+    "The SBI model works because it forces feedback onto the one thing a person can actually change: their behavior. 'You were arrogant' is a verdict on identity, and identity is not on the table; people defend it rather than adjust it. By naming the specific Situation, the observable Behavior, and the concrete Impact, you replace a character trial with a factual account that the person can recognize and act on. The deep idea is that good feedback separates the deed from the doer, and in doing so it is simultaneously kinder and more demanding. It treats the person as capable of change (kinder than declaring them arrogant) while refusing to let the actual behavior slide (more demanding than a soft generality). The lingering tension: the labels that feel most honest and direct, 'unprofessional,' 'arrogant', are exactly the ones that teach nothing and harden defenses.",
+    'Floe generated',
+    true,
+    "Could the person play back the exact moment on a recording, or are you describing their character?",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10066004,
+    'Career Skills',
+    'Feedback, Coaching, and Performance Diagnosis',
+    "When the best answer is the question you don't ask",
+    "A capable engineer keeps bringing you the same kind of design decision and asking, 'What should I do?' You know the answer and could give it in thirty seconds, ending the meeting early. There is no deadline emergency and the risk is low. Coaching frameworks like GROW would have you mostly ask questions here instead of answering. What is the real reason to hold back the answer you already have?",
+    "Because the goal is to build the engineer's judgment, not just to resolve this one decision; when skill is present, risk is low, and time allows, asking questions develops the capability so they stop needing you, whereas handing over the answer trains continued dependence",
+    [
+      ["Give the answer immediately, since you know it and withholding a correct answer just to make them work for it is inefficient and a little manipulative", "This optimizes the single decision at the expense of the engineer's growth; the thirty-second answer is cheap now and expensive forever, because it guarantees they return with the next near-identical question.", "Weigh the cost of this decision against the cost of them never learning to make it."],
+      ["Always coach rather than direct, because asking questions is the more respectful and modern leadership style in every situation", "Coaching is not a universal default; when skill is low, risk is high, or the building is on fire, Socratic questioning is negligent. The choice between asking and telling depends on the situation, not on which feels more enlightened.", "Match the move to skill, urgency, and risk, not to a blanket preference for questions."],
+      ["Give the answer but ask them to write it down so they remember it next time, turning your direction into a quick reference", "Documenting your answer captures the conclusion but not the reasoning; they can recite what you decided without being able to decide the next, slightly different case, so the dependence survives in note form.", "Transfer the method of deciding, not just the verdict to look up later."],
+    ],
+    "Coaching versus directing is a deliberate choice governed by three variables: skill, urgency, and risk. Directing (giving the answer) is right when skill is low, time is short, or the stakes are high. Coaching (asking questions) is right when the person has enough skill, there is time, and the risk is survivable, because the aim shifts from solving today's problem to building tomorrow's capacity. The hard discipline is resisting the answer you already have. Telling is faster, feels helpful, and is quietly addictive for both sides, but each handed-over answer reinforces a loop where they keep asking and you keep being needed. The deep point: a manager who always answers builds a team that cannot think without them, and the most generous thing you can do for a capable person is to withhold a cheap answer so they earn an expensive skill.",
+    'Floe generated',
+    true,
+    "Ask whether solving this one decision or building their ability to solve the next one matters more here.",
+    { challengeRating: 6 },
+  ),
+  // ----------------------------------------------------------------------------
+  // Inclusion, Motivation, and Team Health
+  // ----------------------------------------------------------------------------
+  makeSimpleQuestion(
+    10066005,
+    'Career Skills',
+    'Inclusion, Motivation, and Team Health',
+    "Why the safer team admitted more mistakes",
+    "Two hospital nursing units are studied. Unit A reports noticeably more medication errors than Unit B. A naive reading concludes Unit A is sloppier and should be reprimanded. Edmondson's actual finding, which launched the research on psychological safety, reversed that conclusion. What was really going on, and what does it reveal about measuring a team by its error count?",
+    "The higher-reporting unit was the higher-performing one: it had more psychological safety, so people felt safe enough to surface and discuss errors rather than hide them — meaning a low error count can signal fear and concealment, not excellence",
+    [
+      ["Unit A genuinely makes more errors and Unit B's training is simply better, so the right move is to study Unit B's practices and impose them on Unit A", "This takes the report count at face value and inverts reality; the unit reporting more was learning faster precisely because nothing was being buried, while Unit B's silence likely hid the very errors you'd want to study.", "Ask whether a number measures the events or only the willingness to report them."],
+      ["The two units are basically equivalent and the difference is statistical noise, so no managerial conclusion should be drawn either way", "Dismissing it as noise misses the signal Edmondson actually found: the gap tracked a real, measurable difference in how safe people felt to speak up, which is one of the most consequential variables in team performance.", "A systematic gap in what gets reported is data about the climate, not random scatter."],
+      ["Unit A has weaker accountability, since a team that tolerates so many reported errors clearly isn't holding people to high standards", "This is the misconception that safety and accountability trade off; in fact the strongest teams pair high safety with high standards, and reported errors are how a high-accountability team catches and fixes problems instead of repeating them in silence.", "Safety is what makes honest accountability possible, not its opposite."],
+    ],
+    "Amy Edmondson set out to show that better teams make fewer errors and found the opposite: the better-performing hospital units reported MORE errors. The errors weren't more frequent, they were more visible, because higher psychological safety let people admit and discuss mistakes instead of concealing them to protect themselves. The lesson cuts two ways. First, a metric can measure fear rather than performance: a suspiciously clean error log may mean people are hiding, not that they are flawless. Second, psychological safety is not the soft opposite of accountability; the highest-performing teams sit in the 'learning zone' where high safety and high standards coexist, because only a team safe enough to surface problems can be held genuinely accountable for fixing them. The lingering tension: punishing the team that reports errors is the surest way to stop hearing about them, right up until one becomes a catastrophe.",
+    'Floe generated',
+    true,
+    "Ask whether a low error count means fewer mistakes or fewer admissions.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10066006,
+    'Career Skills',
+    'Inclusion, Motivation, and Team Health',
+    "The bonus that made the work less fun",
+    "A developer used to spend weekends on a beloved open-source side project for the sheer joy of it. The company starts paying a per-feature bonus for those contributions. For a while output rises, then the bonus program ends. To everyone's surprise, she now contributes less than she did before any money was involved. Through Self-Determination Theory, why did paying for an intrinsically motivated activity backfire?",
+    "Tying a controlling reward to work she did for its own sake reframed it from 'something I choose because I love it' to 'something I do for pay'; when the pay stopped, the autonomy-driven intrinsic motivation had been crowded out and didn't simply return",
+    [
+      ["She was always really in it for the money and the bonus merely revealed her true incentives; ending it just exposed her genuine, lower level of interest", "This rewrites her history to fit the outcome; she demonstrably contributed for free before any money existed. SDT's point is that the reward changed her motivation, it didn't uncover a pre-existing mercenary one.", "Remember she did the work for free first, so the reward altered her, it didn't reveal her."],
+      ["The bonus amount was simply too small to sustain effort, so the fix is to pay a larger per-feature bonus that properly reflects the work's value", "Bigger controlling rewards deepen the very problem; the more the activity becomes about the payment, the more its intrinsic appeal erodes, so escalating the bonus accelerates the crowding-out rather than curing it.", "The damage is in making it transactional at all, not in the size of the transaction."],
+      ["Her competence dropped once the deadline pressure of the bonus disappeared, so reinstating a deadline would restore her old output", "This misreads the SDT need at play; what eroded was autonomy, the sense that the work was freely chosen, not competence. Adding external pressure substitutes one controlling lever for another and won't rebuild the intrinsic drive.", "Diagnose which need was undermined, autonomy, before prescribing more external control."],
+    ],
+    "Self-Determination Theory holds that intrinsic motivation feeds on three needs: autonomy, competence, and relatedness. The overjustification or 'crowding-out' effect shows what happens when a controlling external reward is bolted onto an activity someone already loves: it shifts the felt reason for doing it from internal ('I choose this') to external ('I'm paid for this'), undermining autonomy. Remove the reward and the original intrinsic spark does not automatically reignite, because the meaning of the activity has been rewritten. The practical edge for managers is sharp: money is not a neutral motivational additive. Rewards experienced as controlling can erode the drive you most wanted to harness, while rewards experienced as recognition of competence can support it. The lingering tension: the most well-intentioned move, paying people for the work they already love, can quietly purchase away the very passion you were trying to reward.",
+    'Floe generated',
+    true,
+    "Ask what the reward changed about WHY she did the work, not how much she was paid.",
+    { challengeRating: 6 },
+  ),
+  makeSimpleQuestion(
+    10066007,
+    'Career Skills',
+    'Inclusion, Motivation, and Team Health',
+    "Telling the quiet ones to speak up louder",
+    "In your team meetings, two confident voices dominate while a thoughtful new hire rarely gets a word in; when she starts, she's talked over. A peer manager advises you to tell her to 'be more assertive and just jump in.' Why is that advice a misfire, and what does inclusive meeting design do instead?",
+    "It puts the cost of a structural problem on the person least able to fix it; the fix is to redesign how participation happens — for example round-robin input, asking for written thoughts first, or explicitly inviting her view — so the format, not her volume, determines who is heard",
+    [
+      ["The advice is basically sound; assertiveness is a learnable professional skill, and coaching her to interrupt more effectively is the most direct path to her being heard", "This accepts a meeting designed to reward interruption and asks the quietest person to win at it; even if she learns to barge in, you've optimized for the loud rather than for the best ideas, and you've taxed the wrong person.", "Change the rules of the room before asking someone to get better at a broken game."],
+      ["Read her silence as agreement; if she had a strong objection she would raise it, so a quiet meeting means the team is genuinely aligned", "Mistaking politeness or fear for consensus is exactly how bad decisions sail through unopposed; her silence is a product of the dynamic, not a signal of agreement, and treating it as endorsement buries the dissent you most need.", "Don't confuse who spoke with who agreed; absence of objection isn't presence of buy-in."],
+      ["Have a private word with the two dominant voices telling them to stop talking so much, since suppressing the loud is the cleanest way to make room", "Clamping down on the talkers may briefly quiet the room but it manages personalities instead of building structure, and it can read as punishing engagement; a designed process surfaces everyone without anyone needing to be silenced or scolded.", "Engineer fair turns through the format, rather than policing individuals' volume."],
+    ],
+    "Inclusion is an engineering problem, not a personality problem. Telling a quieter or newer person to 'interrupt better' loads the cost of a structural failure onto the individual who has the least power to change it, and it quietly defines the ideal contributor as whoever is loudest. Inclusive meeting design moves the lever to the system: round-robins, written-first input, and direct invitations distribute airtime by structure so the meeting surfaces the best thinking rather than the most aggressive. Underneath sits a subtle trap, reading quiet as consent. Politeness and hierarchy routinely silence real disagreement, and a manager who treats silence as alignment will keep mistaking an unsafe room for a unified one. The deep point: who gets heard is a design choice the manager is already making, and the only question is whether they make it on purpose.",
+    'Floe generated',
+    true,
+    "Ask whether the person or the meeting format is the thing that actually needs to change.",
+    { challengeRating: 6 },
+  ),
+]

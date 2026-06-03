@@ -31,7 +31,7 @@ By the end, a learner should be able to reason about risk in plain language, tri
 
 ## Chapter 3: Identity and Access
 - **Core questions**: Which accounts deserve the strongest protection? Who has access they no longer need? What happens when a factor or recovery path is lost or abused?
-- **Key concepts**: password managers, unique long passphrases, MFA and the differences between factor types (SMS code, authenticator app, push, hardware key/passkey), phishing-resistant MFA (FIDO2/WebAuthn, passkeys), MFA fatigue / push bombing, recovery codes, least privilege, role-based access control, the joiner-mover-leaver lifecycle.
+- **Key concepts**: password managers, unique long passphrases, MFA and the differences between factor types (SMS code, authenticator app, push, hardware key/passkey), phishing-resistant MFA (FIDO2/WebAuthn, passkeys) — now the option NIST formally calls for in the updated digital-identity guidance (SP 800-63-4, 2025); MFA fatigue / push bombing and the defenses that blunt it (number matching, rate limiting); recovery codes, least privilege, role-based access control, the joiner-mover-leaver lifecycle.
 - **Applied skills**: pick the strongest practical factor for a given account; explain why a shared admin password destroys accountability; close the recovery-path gap that quietly bypasses strong login; promptly deprovision a leaver.
 - **Common traps**: thinking any MFA is equally strong (SMS and push are phishable/fatigable; passkeys are not); approving an unexpected push to "make it stop"; leaving leavers' accounts active "just in case"; protecting the front door while leaving a weak password-reset back door.
 - **Work product**: an access-hygiene checklist for a small team, including factor choices and an offboarding step.
@@ -84,7 +84,8 @@ Audit a small organization or fictional startup. Deliver a connected package tha
 - NIST Cybersecurity Framework 2.0 (Feb 2024): https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf
 - NIST NICE Framework Resource Center: https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center
 - CISA Secure Our World: https://www.cisa.gov/secure-our-world
-- CISA Implementing Phishing-Resistant MFA: https://www.cisa.gov/sites/default/files/publications/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf
+- CISA Implementing Phishing-Resistant MFA (names FIDO2/WebAuthn and PKI as the gold standard): https://www.cisa.gov/sites/default/files/publications/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf
+- NIST SP 800-63 Digital Identity Guidelines (revision 4, finalized 2025; requires a phishing-resistant authentication option): https://pages.nist.gov/800-63-4/
 - CISA Incident Response Playbook: https://www.cisa.gov/resources-tools/resources/incident-response-playbook
 - FBI IC3 2025 Annual Report (BEC losses): https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf
 - Google Cybersecurity Professional Certificate: https://www.coursera.org/professional-certificates/google-cybersecurity

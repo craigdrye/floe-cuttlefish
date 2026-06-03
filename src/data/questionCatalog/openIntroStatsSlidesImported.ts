@@ -30,7 +30,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332002,
     chapter: "Data Basics and Study Design",
-    title: "OpenIntro Statistics Slide Question 2",
+    title: "Nonresponse bias in surveys",
     prompt: "A school district is considering whether it will no longer allow high school students to park at school after two recent accidents where students were severely injured. As a first step, they survey parents by mail, asking them whether or not the parents would object to this policy change. Of 6,000 surveys that go out, 1,200 are returned. Of these 1,200 surveys that were completed, 960 agreed with the policy change and 240 disagreed. Which of the following statements are true?",
     correct: "The returned surveys show support among respondents, but nonresponse could still hide majority opposition among all parents.",
     wrong: [["The district has strong support from all parents because 960 of 1,200 returned surveys agreed.","That treats respondents as if they represent every parent, ignoring the 4,800 nonresponses.","Separate respondent opinion from population opinion."],["The results are unlikely to be biased because every parent was mailed a survey.","Mailing everyone helps coverage, but it does not force everyone to respond.","Nonresponse can bias a survey even after broad contact."],["The policy is definitely opposed by most parents because only 960 of 6,000 mailed surveys agreed.","That assumes every nonresponse is opposition, which the survey did not observe.","Do not convert silence into a measured opinion."]],
@@ -47,7 +47,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332003,
     chapter: "Data Basics and Study Design",
-    title: "OpenIntro Statistics Slide Question 3",
+    title: "Least effective sampling method",
     prompt: "A city council wants a household survey in a suburb made of very different neighborhoods, including large-home areas and apartment-heavy areas. Which sampling approach would likely be least effective?",
     correct: "Cluster sampling",
     wrong: [["Simple random sampling","A simple random sample can still spread across the whole suburb if the sampling frame is good.","It is not tailored, but it is not the weakest choice here."],["Stratified sampling","Stratifying by neighborhood type is useful when neighborhoods differ a lot.","Strata help force representation of important subgroups."],["Blocked sampling","Blocking is experiment language, not the usual survey-sampling choice, but the main sampling trap here is selecting whole clusters from very different neighborhoods.","Keep survey sampling and experiment design vocabulary separate."]],
@@ -64,7 +64,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332004,
     chapter: "Data Basics and Study Design",
-    title: "OpenIntro Statistics Slide Question 4",
+    title: "Explanatory and blocking variables",
     prompt: "A study is designed to test the effect of light level and noise level on exam performance of students. The researcher also believes that light and noise levels might have different effects on males and females, so wants to make sure both genders are equally represented in each group. Which of the below is correct?",
     correct: "There are 2 explanatory variables (light and noise), 1 blocking variable (gender), and 1 response variable (exam performance)",
     wrong: [["There are 3 explanatory variables (light, noise, gender) and 1 response variable (exam performance)","Gender is being used to balance groups, not as a treatment being manipulated.","Blocking variables organize the experiment; explanatory variables are the factors being tested."],["There is 1 explanatory variable (gender) and 3 response variables (light, noise, exam performance)","Exam performance is the outcome; light and noise are treatment factors, not outcomes.","Ask what gets manipulated and what gets measured."],["There are 2 blocking variables (light and noise), 1 explanatory variable (gender), and 1 response variable (exam performance)","Light and noise are the experimental factors being tested, not blocking variables.","A block is used to control a background difference."]],
@@ -81,7 +81,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332005,
     chapter: "Data Basics and Study Design",
-    title: "OpenIntro Statistics Slide Question 5",
+    title: "Observational study vs experiment",
     prompt: "Observational studies watch what people or units already do, while experiments impose treatments. What is the main design difference between them?",
     correct: "Most experiments use random assignment while observational studies do not.",
     wrong: [["Experiments take place in a lab while observational studies do not need to.","Experiments can happen outside labs, and observational studies can happen in controlled settings.","Location is not the defining feature."],["In an observational study we only look at what happened in the past.","Observational studies can be retrospective or prospective.","The key is whether treatments are assigned."],["Observational studies are completely useless since no causal inference can be made based on their findings.","Observational studies can be useful, but they usually need more caution about causation.","Do not turn “less causal power” into “useless.”"]],
@@ -98,7 +98,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332006,
     chapter: "Exploring Data",
-    title: "OpenIntro Statistics Slide Question 6",
+    title: "Closest to uniform distribution",
     prompt: "A uniform distribution spreads outcomes roughly evenly across possible values. Which variable would you most expect to be close to uniformly distributed?",
     correct: "birthdays of classmates (day of the month)",
     wrong: [["weights of adult females","Weights cluster around typical values rather than spreading evenly across all possible weights.","Uniform means roughly flat, not bell-shaped."],["salaries of a random sample of people from North Carolina","Salaries are usually right-skewed, with many moderate values and fewer very high values.","Income data rarely spread evenly."],["house prices","House prices tend to cluster and skew, not distribute evenly over all prices.","Markets create piles and tails, not a flat spread."]],
@@ -132,7 +132,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332008,
     chapter: "Probability",
-    title: "OpenIntro Statistics Slide Question 8",
+    title: "Complement is not Republican",
     prompt: "In a survey, 52% of respondents said they are Democrats. What is the probability that a randomly selected respondent from this sample is a Republican?",
     correct: "cannot calculate using only the information given",
     wrong: [["0.48","That assumes everyone who is not a Democrat is Republican.","There may be independents or other parties."],["more than 0.48","The information given does not tell how the non-Democrat group splits.","Do not invent missing categories."],["less than 0.48","This might be true, but it cannot be determined from only the Democrat percentage.","Unknown is not the same as less."]],
@@ -149,7 +149,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332009,
     chapter: "Probability",
-    title: "OpenIntro Statistics Slide Question 9",
+    title: "Dependent or independent variables",
     prompt: "Between January 9-12, 2013, SurveyUSA interviewed a random sample of 500 NC residents asking them whether they think widespread gun ownership protects law abiding citizens from crime, or makes society more dangerous. 58% of all respondents said it protects citizens. 67% of White respondents, 28% of Black respondents, and 64% of Hispanic respondents shared this view. Which of the below is true?",
     correct: "dependent",
     wrong: [["complementary","The categories are not simply one event and its not-event.","Complementary events must fill all possibilities together."],["mutually exclusive","Race/ethnicity and opinion can happen together for the same respondent.","Mutually exclusive means two events cannot both occur."],["independent","The percentages differ sharply by group, which suggests the opinion depends on group membership.","If independent, the conditional percentages would be similar."],["disjoint","A respondent can be in a demographic group and hold the opinion at the same time.","Disjoint events cannot overlap."]],
@@ -166,7 +166,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332010,
     chapter: "Probability",
-    title: "OpenIntro Statistics Slide Question 10",
+    title: "Drawing cards without replacement",
     prompt: "In most card games cards are dealt without replacement. What is the probability of being dealt an ace and then a 3? Choose the closest answer.",
     correct: "0.0060",
     wrong: [["0.0045","This is too low for four aces followed by four 3s without replacement.","Use 4/52 for the ace, then 4/51 for the 3."],["0.0059","This is very close, but it usually comes from rounding or using a replacement shortcut.","Use the exact second denominator after one card is gone."],["0.1553","This is far too large; it treats the two-card sequence as much more common than it is.","Multiply the two stage probabilities."]],
@@ -183,7 +183,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332011,
     chapter: "Probability",
-    title: "OpenIntro Statistics Slide Question 11",
+    title: "Expected value of a game",
     prompt: "A casino game costs \\$5 to play. If the first card you draw is red, then you get to draw a second card (without replacement). If the second card is the ace of clubs, you win \\$500. If not, you don't win anything, i.e. lose your \\$5. What is your expected profits/losses from playing this game? Remember: profit/loss = winnings - cost.",
     correct: "A loss of about $0.10 per play",
     wrong: [["A profit of about $5 per play","That ignores the low probability of reaching the winning card.","Expected value weights the rare win by its probability."],["A loss of about $0.25 per play","This overstates the loss from the weighted calculation.","Keep the win profit and loss branch in the same units."],["A loss of about $30 per play","That is far too large for a $5 entry cost and rare $500 prize in this setup.","Expected loss per play is small, not dozens of dollars."]],
@@ -217,7 +217,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332013,
     chapter: "Distributions",
-    title: "OpenIntro Statistics Slide Question 13",
+    title: "Binomial distribution conditions",
     prompt: "A binomial model needs fixed trials, independent trials, two outcomes per trial, and the same success probability each time. Which statement is not required?",
     correct: "the number of desired successes, k, must be greater than the number of trials",
     wrong: [["the trials must be independent","Independence is one of the standard binomial conditions.","Binomial trials should not change each other."],["the number of trials, n, must be fixed","A fixed number of trials is required for a binomial random variable.","If n is not fixed, you may be in geometric or negative-binomial territory."],["each trial outcome must be classified as a success or a failure","Two outcome categories are required: success and failure.","Binomial means each trial is yes/no."],["the probability of success, p, must be the same for each trial","Constant success probability is one of the binomial conditions.","If p changes, the simple binomial model breaks."]],
@@ -234,7 +234,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332014,
     chapter: "Distributions",
-    title: "OpenIntro Statistics Slide Question 14",
+    title: "Normal approximation to binomial",
     prompt: "A binomial distribution is usually safe to approximate with a normal model when both np and n(1 - p) are large enough. Which parameter pair best meets that rule?",
     correct: "n = 25, p = 0.45",
     wrong: [["n = 100, p = 0.95","Here n(1 - p) = 5, so the failure side is too small for the usual normal-approximation rule.","Check both expected successes and expected failures."],["n = 150, p = 0.05","Here np = 7.5, so the success side is still too small for the usual cutoff.","A large n alone does not fix an extreme p."],["n = 500, p = 0.015","Here np = 7.5, so the success count is too sparse even though n is large.","Tiny p can make the distribution skewed."]],
@@ -251,7 +251,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332015,
     chapter: "Distributions",
-    title: "OpenIntro Statistics Slide Question 15",
+    title: "Continuous vs discrete distributions",
     prompt: "Some distributions only count events, while others can describe measurements with decimals. Which distribution can take values other than positive integers?",
     correct: "Normal",
     wrong: [["Poisson","A Poisson random variable counts events, so its values are whole-number counts like 0, 1, 2, and so on.","Counts cannot take decimal values."],["Negative binomial","A negative binomial random variable counts trials until a target number of successes, so it is discrete.","Trial counts are whole numbers."],["Binomial","A binomial random variable counts successes in a fixed number of trials, so it is discrete.","Success counts cannot be 2.7."],["Geometric","A geometric random variable counts trials until the first success, so it is a positive whole-number count.","It counts trial number, not a continuous measurement."]],
@@ -295,7 +295,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332018,
     chapter: "Inference for Numerical Data",
-    title: "OpenIntro Statistics Slide Question 18",
+    title: "Interpreting a p-value",
     prompt: "Which of the following is the correct interpretation of the p-value?",
     correct: "Probability of obtaining a random sample of 200 students where the average difference between the reading and writing scores is at least 0.545 (in either direction), if in fact the true average difference between the scores is 0.",
     wrong: [["Probability that the average scores on the reading and writing exams are equal.","A p-value assumes the null value for the calculation; it is not the probability that the null hypothesis is true.","Name the variable type, sampling issue, distribution, or inference rule being tested first."],["Probability that the average scores on the reading and writing exams are different.","This turns the p-value into the probability of the alternative hypothesis, which p-values do not provide.","Name the variable type, sampling issue, distribution, or inference rule being tested first."],["Probability of incorrectly rejecting the null hypothesis if in fact the null hypothesis is true.","That describes a Type I error rate or significance level, not this sample’s p-value.","Name the variable type, sampling issue, distribution, or inference rule being tested first."]],
@@ -305,7 +305,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332019,
     chapter: "Linear Regression",
-    title: "OpenIntro Statistics Slide Question 19",
+    title: "Strength of negative correlation",
     prompt: "States with higher high-school graduation percentages tend to have lower poverty percentages. Which correlation best matches that fairly strong downward relationship?",
     correct: "-0.75",
     wrong: [["0.6","A positive correlation would mean poverty tends to rise as graduation rate rises, which is the opposite direction.","Use the sign for direction first."],["-0.1","This has the right negative direction, but it is too close to zero for a fairly strong downward pattern.","Magnitude near 0 means weak association."],["0.02","This is almost no linear relationship and it has the wrong positive sign.","A downward trend should have a negative r."],["-1.5","Correlation cannot be less than -1 or greater than 1.","Stay inside the possible correlation range."]],
@@ -322,7 +322,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332020,
     chapter: "Linear Regression",
-    title: "OpenIntro Statistics Slide Question 20",
+    title: "Moderate positive correlation",
     prompt: "A scatterplot suggests that states with more female householders with no husband present tend to have somewhat higher poverty rates. Which correlation best matches a moderate positive relationship?",
     correct: "0.5",
     wrong: [["0.1","This is positive, but it is too weak for a visible moderate trend.","Values near 0 mean weak linear association."],["-0.6","This is a moderate negative relationship, which has the wrong direction.","Positive trends need positive r."],["-0.4","This has the wrong negative sign.","Use the sign to capture direction."],["0.9","This is very strong, stronger than a moderate relationship.","Magnitude near 1 means very tight linear association."]],
@@ -339,7 +339,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332021,
     chapter: "Linear Regression",
-    title: "OpenIntro Statistics Slide Question 21",
+    title: "Interpreting a regression intercept",
     prompt: "In a regression predicting poverty rate from high-school graduation rate, the intercept is 64.68. Which interpretation of that intercept is correct?",
     correct: "States with no HS graduates are expected on average to have 64.68% of residents living below the poverty line.",
     wrong: [["For each percentage-point increase in HS graduate rate, poverty is expected to increase on average by 64.68 percentage points.","That describes a slope interpretation, not an intercept.","Intercept is the prediction when x = 0."],["For each percentage-point decrease in HS graduate rate, poverty is expected to increase on average by 64.68 percentage points.","This still treats the intercept like a slope.","Slopes describe change; intercepts describe a starting prediction."],["Having no HS graduates causes 64.68% of residents to live below the poverty line.","Regression wording should say expected or predicted, not prove cause.","Association is not automatic causation."],["In states with no HS graduates, poverty is expected to increase on average by 64.68 percentage points.","Increase is slope language; the intercept is a predicted level.","Use predicted value at x = 0."]],
@@ -356,7 +356,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332022,
     chapter: "Linear Regression",
-    title: "OpenIntro Statistics Slide Question 22",
+    title: "Interpreting R-squared",
     prompt: "A regression model relating high-school graduation rate to poverty rate has r = -0.75 and R-squared = 0.56. What does R-squared mean here?",
     correct: "56% of the variability in the % of residents living in poverty among the 51 states is explained by the model.",
     wrong: [["56% of the variability in the % of high-school graduates among the 51 states is explained by the model.","R-squared describes variation in the response variable, not the explanatory variable.","Ask which variable the model is trying to predict."],["56% of the time % HS graduates predict % living in poverty correctly.","R-squared is not a percent-correct score; regression predictions are not classified as simply right or wrong.","Think explained variation, not accuracy count."],["75% of the variability in the % of residents living in poverty among the 51 states is explained by the model.","The 0.75 is r's magnitude, not R-squared. R-squared is 0.56 here.","Do not swap r and R-squared."]],
@@ -407,7 +407,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332025,
     chapter: "Multiple Regression",
-    title: "OpenIntro Statistics Slide Question 25",
+    title: "Indicator variables for regions",
     prompt: "In the OpenIntro state-poverty example, regions are compared using a regression model with region indicators. Which region has the lowest poverty percentage in that model summary?",
     correct: "northeast",
     wrong: [["midwest","In this model summary, Midwest is not the lowest-poverty region.","Compare the region effects, not just familiar stereotypes."],["west","West is a plausible distractor, but the model points lower for the Northeast.","Use the coded regression comparison."],["south","South is not the lowest in this model summary.","Do not answer from vibes; use the model output."],["cannot tell","The model summary contains enough information to identify the lowest region.","Indicator variables can compare categories."]],
@@ -424,7 +424,7 @@ const _baseOpenIntroStatsSlidesQuestions = makeQuestionBank('Statistics', [
   {
     id: 332026,
     chapter: "Multiple Regression",
-    title: "OpenIntro Statistics Slide Question 26",
+    title: "Using an indicator variable",
     prompt: "A multiple regression model predicts book weight from volume and format. For a paperback book with volume 600 cubic centimeters, which calculation uses the paperback indicator correctly?",
     correct: "197.96 + 0.72 * 600 - 184.05 * 1",
     wrong: [["184.05 + 0.72 * 600 - 197.96 * 1","This swaps the intercept and the paperback coefficient.","Keep the intercept as the starting value."],["197.96 + 0.72 * 600 - 184.05 * 0","This treats the paperback indicator as 0, but the book is paperback.","Use 1 when the indicator condition is present."],["197.96 + 0.72 * 1 - 184.05 * 600","This swaps the volume and indicator inputs.","Volume gets 600; the paperback indicator gets 1."]],

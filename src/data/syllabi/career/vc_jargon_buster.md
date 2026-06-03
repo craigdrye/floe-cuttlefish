@@ -51,15 +51,24 @@ Two question styles work well: (1) "translate the partner-speak" — a colleague
 
 ## Chapter 7: Fund Economics and Portfolio Strategy
 - **Core questions**: Why does my partner care about ownership, reserves, and "the fund returner"? How is the fund actually judged?
-- **Key concepts**: LP/GP, committed capital, 2-and-20 (management fee and carry), hurdle rate, reserves and follow-on, ownership targets, power law and the "fund returner," signaling risk.
+- **Key concepts**: LP/GP, committed capital, 2-and-20 (management fee and carry), the hurdle rate / preferred return (standard in PE, but often absent in VC), reserves and follow-on, ownership targets, power law and the "fund returner," signaling risk.
 - **Applied skills**: Explain why a fund sizes a check to an ownership target; reason about whether to deploy reserves (pro rata) into a weak company; explain why an insider passing on its pro rata is a negative signal.
-- **Common traps**: Thinking the management fee is the GP's payday; ignoring reserves when judging an initial check; missing that insider follow-on behavior signals information to the market.
+- **Common traps**: Thinking the management fee is the GP's payday; assuming every VC fund carries an 8% hurdle (most traditional venture funds have none — that is a PE convention); ignoring reserves when judging an initial check; missing that insider follow-on behavior signals information to the market.
 
 ## Chapter 8: Reading Performance — Fund and Deal Metrics
 - **Core questions**: Is this return real cash or a paper markup? Is the partner's number realized or unrealized?
 - **Key concepts**: MOIC, IRR, DPI, TVPI, RVPI (TVPI = DPI + RVPI); realized vs unrealized value; markups; J-curve; gross vs net returns.
 - **Applied skills**: Translate a TVPI into its realized (DPI) and unrealized (RVPI) parts; explain why a great IRR with low DPI may be a markup mirage; separate gross-of-fees from net-to-LP performance.
 - **Common traps**: Celebrating TVPI as if it were cash; trusting IRR early in a fund's life (J-curve); ignoring that markups are self-reported.
+
+## Research Notes
+Authoritative sources consulted for the 2024-2026 market norms used in this course:
+- Y Combinator Standard Deal and SAFE documents (https://www.ycombinator.com/deal, https://www.ycombinator.com/documents) — post-money SAFE is the market default; YC's $125k converts to a fixed 7% post-money.
+- Carta, "Pre-money vs. post-money SAFEs" (https://carta.com/learn/startups/fundraising/convertible-securities/pre-money-vs-post-money-safes/) — post-money SAFE fixes ownership at investment, governs the dilution mechanics in Chapter 5.
+- Bessemer / 2025 SaaS benchmarks (https://www.growthunhinged.com/p/2025-saas-benchmarks-report) — best-in-class NDR is 120%+ (100% good, 110% better, 120%+ best); supports the NDR bar in Chapter 1.
+- NVCA Model Term Sheet (https://nvca.org/model-legal-documents/) and Pillar Legal liquidation-preference guide (https://www.pillarlegalpc.com/series-a-term-sheet-liquidation-preference/) — 1x non-participating preferred is the 2025-2026 standard (80%+ of Series A/B); broad-based weighted-average anti-dilution is standard. Supports Chapter 6.
+- Carta fund-performance metrics (https://carta.com/learn/private-funds/management/fund-performance/, https://carta.com/data/vc-fund-performance-q4-2025/) — TVPI = DPI + RVPI; J-curve; DPI is the metric LPs weight most in 2025-2026. Supports Chapter 8.
+- Carta hurdle-rate explainer (https://carta.com/learn/private-funds/management/carried-interest/hurdle-rate/) and Goodwin private-funds survey — hurdle/preferred return (~8%) is standard in PE but frequently absent in traditional VC; supports the Chapter 7 caveat.
 
 ## Capstone
 Take a messy, jargon-stuffed partner request — for example: "The ARR looks soft and one whale is wearing a fake mustache, the SAFE stack is doing something rude to the founders, the preference stack scares me below a celestial exit, and I'm not sure our reserves justify the signaling we'd send by passing." Translate it into a one-page diligence workplan: the real questions to answer, the evidence to gather, the model tabs to build (revenue bridge, cohort retention, runway base/downside, cap-table conversion, exit waterfall), and the three risks to flag for the investment committee — each stated in plain English with a recommended next action.

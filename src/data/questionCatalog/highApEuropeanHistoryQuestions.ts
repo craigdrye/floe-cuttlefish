@@ -127,7 +127,7 @@ export const highApEuropeanHistoryQuestions: Question[] = makeQuestionBank('AP',
   {
     id: 4400958,
     chapter: 'Chapter 2: Reformation, Religious Conflict, and State Power',
-    title: 'Spanish Armada 1588',
+    title: "Defeat of the Spanish Armada",
     prompt: 'The defeat of the Spanish Armada in 1588 is significant in AP Euro narratives because it:',
     correct: 'Checked Habsburg Spain\'s bid to invade Elizabethan England and signaled the limits of Philip II\'s ability to project power across the Channel against a Protestant state',
     wrong: [
@@ -326,7 +326,7 @@ export const highApEuropeanHistoryQuestions: Question[] = makeQuestionBank('AP',
   {
     id: 4400973,
     chapter: 'Chapter 4: Enlightenment, Revolution, and Napoleon',
-    title: 'Causes of 1789',
+    title: "Causes of the French Revolution",
     prompt: 'The most defensible AP-level explanation of why the French Revolution broke out in 1789 combines:',
     correct: 'Fiscal crisis from debts (including American war), structural inequality of the three estates, bad harvests, and Enlightenment ideas legitimizing reform',
     wrong: [
@@ -502,7 +502,7 @@ export const highApEuropeanHistoryQuestions: Question[] = makeQuestionBank('AP',
   {
     id: 4400986,
     chapter: 'Chapter 7: Global Conflict, Cold War, and Contemporary Europe',
-    title: 'Versailles 1919',
+    title: "Treaty of Versailles critique",
     prompt: 'The Treaty of Versailles (1919) is conventionally criticized in AP Euro narratives because it:',
     correct: 'Combined reparations, the war-guilt clause, and territorial losses in ways that destabilized Weimar Germany while failing to genuinely contain German revisionist potential',
     wrong: [
@@ -515,7 +515,7 @@ export const highApEuropeanHistoryQuestions: Question[] = makeQuestionBank('AP',
   {
     id: 4400987,
     chapter: 'Chapter 7: Global Conflict, Cold War, and Contemporary Europe',
-    title: 'Russian Revolution 1917',
+    title: "Two phases of the Russian Revolution",
     prompt: 'The two phases of the 1917 Russian Revolution are best described as:',
     correct: 'A February revolution that toppled the tsar and produced a Provisional Government, and an October Bolshevik seizure of power under Lenin',
     wrong: [

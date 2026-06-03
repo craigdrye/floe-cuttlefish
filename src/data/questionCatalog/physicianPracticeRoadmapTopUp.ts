@@ -401,7 +401,7 @@ export const physicianPracticeRoadmapTopUpQuestions: Question[] = makeQuestionBa
   {
     id: 7318012,
     chapter: 'Documentation and Coding Compliance',
-    title: 'E/M leveling after 2021',
+    title: "Selecting an E/M level",
     prompt:
       'Under the 2021 office-visit E/M rules (CPT 99202-99215), a clinician can select the code level using either total time or medical decision making. For a given visit, which level should be reported?',
     correct:

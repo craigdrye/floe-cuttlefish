@@ -30,9 +30,10 @@ Distractors should be *plausible to a beginner and wrong for a nameable reason* 
 - **Core questions**: Which PPBE phase is this conversation in — strategic, programmatic, budgetary, or execution? Which document carries this decision?
 - **Applied skills**: translate acronym-laden meeting notes into the actual decision being made; identify whether a request belongs in the POM, the BES, or execution.
 - **Common traps**: confusing programming (multi-year resource tradeoffs) with budgeting (the next year's defensible estimate); assuming the PB is the final number Congress will enact; treating an issue paper's polish as evidence of merit.
+- **Currency note**: the March 2024 Commission on PPBE Reform recommended replacing PPBE with a leaner "Defense Resourcing System (DRS)" to better link strategy to resources and give execution more flexibility; learners should recognize the term but anchor on the durable four-phase logic, which remains the working vocabulary.
 
 ## Chapter 4: Fiscal Law — Purpose, Time, Amount, and the ADA
-- **Key concepts**: the three pillars (purpose, time, amount); bona fide needs rule (severable vs. nonseverable services); the Antideficiency Act and what triggers a violation; continuing resolutions and their limits (no new starts, rate-for-operations, no production-rate increases).
+- **Key concepts**: the three pillars (purpose, time, amount); bona fide needs rule (severable vs. nonseverable services); the Antideficiency Act and what triggers a violation; continuing resolutions and their limits (no new starts, rate-for-operations, no production-rate increases, no new multiyear contracts) and the narrow "anomaly" exception that funds rarely get.
 - **Core questions**: Which fiscal-law pillar does this request stress? Could this create an ADA violation? What does the CR forbid right now?
 - **Applied skills**: build a fiscal-risk checklist for a pressured request; apply the bona fide needs rule to a service contract crossing fiscal years; recognize when a CR blocks an otherwise-sound plan.
 - **Common traps**: assuming any unspent money is fair game (purpose violation); funding next year's need with this year's money (time/bona fide needs); over-obligating an account (amount/ADA); forgetting that a CR bars new starts no matter how urgent.
@@ -51,3 +52,11 @@ Distractors should be *plausible to a beginner and wrong for a nameable reason* 
 
 ## Capstone
 You are handed a defense budget review packet thick with acronyms. Produce a one-page plain-language brief that states: (1) **funding status** — which color of money, current/expired/canceled, where in the funds-flow lifecycle; (2) **legal constraints** — the relevant purpose/time/amount or CR limits and any ADA risk; (3) **execution risks** — what the variance and obligation rate are really telling you; (4) **decisions needed** — what is being asked and whether the requested fund move is legally available; and (5) **evidence gaps** — what an auditor would demand that the packet currently lacks. Defend each conclusion with the actual rule, not the slide.
+
+## Research Notes
+- DAU Acquipedia, "Appropriation Lifecycle" (https://www.dau.edu/acquipedia-article/appropriation-lifecycle) — confirms periods of availability (1-yr O&M/MILPERS, 2-yr RDT&E, 3-yr Procurement, 5-yr MILCON and Navy shipbuilding) and the current/expired (5-yr)/canceled phases.
+- GAO Appropriations Law (Red Book) resources and Antideficiency Act page (https://www.gao.gov/legal/appropriations-law/resources) — authority for the purpose/time/amount pillars, the bona fide needs rule, and ADA triggers.
+- CRS, "Defense Primer: DOD Transfer and Reprogramming Authorities" (https://www.congress.gov/crs-product/IF11243) — confirms BTR vs. prior-approval (ATR) reprogramming, transfer vs. reprogramming, and the DD 1415 process.
+- GAO-26-107065, "Effects of Continuing Resolutions on Selected Activities and Programs" (https://www.gao.gov/products/gao-26-107065) — current source on CR limits (no new starts, no new multiyear contracts, no production-rate increases) and the rarely granted anomaly exception.
+- Commission on PPBE Reform, Final Report, March 2024 (https://ppbereform.senate.gov/finalreport/) — 28 recommendations including replacing PPBE with a "Defense Resourcing System (DRS)"; used for the PPBE currency note.
+- White House EO 14347, "Restoring the United States Department of War" (Sept. 2025) (https://www.whitehouse.gov/presidential-actions/2025/09/restoring-the-united-states-department-of-war/) — the "Department of War" secondary title is non-statutory; the department is still legally the Department of Defense, supporting the design note to anchor on the stable concept.

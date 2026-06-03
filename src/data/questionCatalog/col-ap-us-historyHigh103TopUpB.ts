@@ -24,7 +24,7 @@ export const colApUsHistoryHigh103TopUpBQuestions: Question[] = makeQuestionBank
   {
     id: 7929501,
     chapter: 'Unit 5: Reconstruction',
-    title: 'The Compromise of 1877',
+    title: "Bargain that ended Reconstruction",
     prompt: 'The disputed 1876 presidential election was resolved by an informal bargain in which Republicans gained the presidency in exchange for what concession?',
     correct: 'The withdrawal of remaining federal troops from the South, effectively ending Reconstruction',
     wrong: [

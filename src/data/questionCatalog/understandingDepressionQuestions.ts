@@ -513,7 +513,7 @@ export const understandingDepressionQuestions: Question[] = makeQuestionBank('Ca
   {
     id: 7227036,
     chapter: 'When and How to Seek Help',
-    title: 'Crisis support: 988',
+    title: "The crisis and suicide lifeline",
     prompt: 'In the US, what can someone in immediate emotional crisis or with thoughts of suicide do right now?',
     correct: 'Call or text 988, the Suicide and Crisis Lifeline',
     wrong: [

@@ -17,7 +17,7 @@ export const openTriviaEarthSystemsQuestions = makeQuestionBank('University', [
   {
     id: 342002,
     chapter: "Earth Science Foundations",
-    title: "OpenTrivia Earth Science 342002",
+    title: "How volcanoes form",
     prompt: "This formation is a conical hill or mountain. It is formed by mantle material being pressed through an opening in the Earth's crust.",
     correct: "A volcano",
     wrong: [["A hill","A hill is Earth-science vocabulary, but not the geology process or material in the clue.","Match the clue to the geology process, rock material, or Earth-system feature."],["An earthquake","An earthquake mixes up surface features with the rock, magma, or earthquake fact being tested.","Match the clue to the geology process, rock material, or Earth-system feature."],["A geyser","A geyser answers a nearby geology idea rather than the exact Earth-system relationship.","Match the clue to the geology process, rock material, or Earth-system feature."]],
@@ -27,7 +27,7 @@ export const openTriviaEarthSystemsQuestions = makeQuestionBank('University', [
   {
     id: 342003,
     chapter: "Earth Science Foundations",
-    title: "OpenTrivia Earth Science 342003",
+    title: "What an earthquake is",
     prompt: "Japan suffers from this event very often. It is the sudden, light or violent movement of the earths surface caused by the release of energy in the earths crust.",
     correct: "Earthquake",
     wrong: [["Volcano","Volcano is Earth-science vocabulary, but not the geology process or material in the clue.","Match the clue to the geology process, rock material, or Earth-system feature."],["Tide","Tide mixes up surface features with the rock, magma, or earthquake fact being tested.","Match the clue to the geology process, rock material, or Earth-system feature."],["Tsunami","Tsunami answers a nearby geology idea rather than the exact Earth-system relationship.","Match the clue to the geology process, rock material, or Earth-system feature."]],
@@ -37,7 +37,7 @@ export const openTriviaEarthSystemsQuestions = makeQuestionBank('University', [
   {
     id: 342004,
     chapter: "Atmosphere and Weather",
-    title: "OpenTrivia Earth Science 342004",
+    title: "The greenhouse effect",
     prompt: "What term do scientists use to denote the gradual warming of the planet due to absorption of infrared radiation by the atmosphere?",
     correct: "Greenhouse effect",
     wrong: [["Ozone depletion","Ozone depletion sounds weather-related, but it does not match the cloud, atmosphere, or precipitation clue.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["Atmospheric termoincrease","Atmospheric termoincrease confuses one atmospheric layer, cloud type, or weather process with another.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["Global dimming","Global dimming answers a nearby sky idea rather than the specific weather process being tested.","Anchor the answer to the named cloud, atmospheric layer, or weather process."]],
@@ -47,7 +47,7 @@ export const openTriviaEarthSystemsQuestions = makeQuestionBank('University', [
   {
     id: 342005,
     chapter: "Geology and Earth Systems",
-    title: "OpenTrivia Earth Science 342005",
+    title: "Volcanic versus plutonic rock",
     prompt: "When magma cools and becomes solid below Earth's surface, the resultant rocks are called Plutonic, but when when magma reaches the surface and crystallizes there, formed rocks are called this.",
     correct: "Volcanic",
     wrong: [["Mercuric","Mercuric is Earth-science vocabulary, but not the geology process or material in the clue.","Match the clue to the geology process, rock material, or Earth-system feature."],["Surfaced","Surfaced mixes up surface features with the rock, magma, or earthquake fact being tested.","Match the clue to the geology process, rock material, or Earth-system feature."],["Veneric","Veneric answers a nearby geology idea rather than the exact Earth-system relationship.","Match the clue to the geology process, rock material, or Earth-system feature."]],
@@ -57,7 +57,7 @@ export const openTriviaEarthSystemsQuestions = makeQuestionBank('University', [
   {
     id: 342006,
     chapter: "Atmosphere and Weather",
-    title: "OpenTrivia Earth Science 342006",
+    title: "Virga precipitation",
     prompt: "In meteorology, virga, a weather phenomenon typical for desert regions, is what form of precipitation?",
     correct: "Precipitation that evaporates before reaching the ground",
     wrong: [["Highly condensed type of precipitation","Highly condensed type of precipitation sounds weather-related, but it does not match the cloud, atmosphere, or precipitation clue.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["Precipitation that freezes before reaching the ground","Precipitation that freezes before reaching the ground confuses one atmospheric layer, cloud type, or weather process with another.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["Precipitation that has not undergone condensation","Precipitation that has not undergone condensation answers a nearby sky idea rather than the specific weather process being tested.","Anchor the answer to the named cloud, atmospheric layer, or weather process."]],
@@ -67,7 +67,7 @@ export const openTriviaEarthSystemsQuestions = makeQuestionBank('University', [
   {
     id: 342007,
     chapter: "Atmosphere and Weather",
-    title: "OpenTrivia Earth Science 342007",
+    title: "Main atmospheric gases",
     prompt: "The Earth's atmosphere comprises of which two main elements?",
     correct: "Oxygen and Nitrogen",
     wrong: [["Oxygen and Hydrogen","Oxygen and Hydrogen sounds weather-related, but it does not match the cloud, atmosphere, or precipitation clue.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["Hydrogen and Oxone","Hydrogen and Oxone confuses one atmospheric layer, cloud type, or weather process with another.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["Nitrogen and Hydrogen","Nitrogen and Hydrogen answers a nearby sky idea rather than the specific weather process being tested.","Anchor the answer to the named cloud, atmospheric layer, or weather process."]],
@@ -77,7 +77,7 @@ export const openTriviaEarthSystemsQuestions = makeQuestionBank('University', [
   {
     id: 342008,
     chapter: "Atmosphere and Weather",
-    title: "OpenTrivia Earth Science 342008",
+    title: "The eyewall of a cyclone",
     prompt: "In a tropical cyclone, this area is characterized with the strongest winds, the tallest clouds, and the heaviest rain.",
     correct: "Eyewall",
     wrong: [["Eye","Eye sounds weather-related, but it does not match the cloud, atmosphere, or precipitation clue.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["Warm core","Warm core confuses one atmospheric layer, cloud type, or weather process with another.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["Outflow","Outflow answers a nearby sky idea rather than the specific weather process being tested.","Anchor the answer to the named cloud, atmospheric layer, or weather process."]],
@@ -87,7 +87,7 @@ export const openTriviaEarthSystemsQuestions = makeQuestionBank('University', [
   {
     id: 342009,
     chapter: "Environmental Systems",
-    title: "OpenTrivia Earth Science 342009",
+    title: "Another name for the water cycle",
     prompt: "The water cycle is the continuous movement of water above and below the surface of the planet. What is this process also known as?",
     correct: "Hydrologic cycle",
     wrong: [["Hydroscopic cycle","Hydroscopic cycle is Earth-science adjacent, but it does not fit the environmental process or system named in the prompt.","Use the named process or system: atmosphere, weather, geology, pollution, or water cycle."],["Hydrographic cycle","Hydrographic cycle is Earth-science adjacent, but it does not fit the environmental process or system named in the prompt.","Use the named process or system: atmosphere, weather, geology, pollution, or water cycle."],["Hydrodynamic cycle","Hydrodynamic cycle is Earth-science adjacent, but it does not fit the environmental process or system named in the prompt.","Use the named process or system: atmosphere, weather, geology, pollution, or water cycle."]],
@@ -97,7 +97,7 @@ export const openTriviaEarthSystemsQuestions = makeQuestionBank('University', [
   {
     id: 342010,
     chapter: "Environmental Systems",
-    title: "OpenTrivia Earth Science 342010",
+    title: "What drives the water cycle",
     prompt: "Which of effect of these is the main reason for the existence of the water cycle on Earth?",
     correct: "The Sun",
     wrong: [["Thermal energy in the Earth's core","Thermal energy in the Earth's core is Earth-science adjacent, but it does not fit the environmental process or system named in the prompt.","Use the named process or system: atmosphere, weather, geology, pollution, or water cycle."],["Gravitational forces","Gravitational forces is Earth-science adjacent, but it does not fit the environmental process or system named in the prompt.","Use the named process or system: atmosphere, weather, geology, pollution, or water cycle."],["The Moon","The Moon is Earth-science adjacent, but it does not fit the environmental process or system named in the prompt.","Use the named process or system: atmosphere, weather, geology, pollution, or water cycle."]],
@@ -107,7 +107,7 @@ export const openTriviaEarthSystemsQuestions = makeQuestionBank('University', [
   {
     id: 342011,
     chapter: "Environmental Systems",
-    title: "OpenTrivia Earth Science 342011",
+    title: "Black carbon pollution",
     prompt: "When burning fuel for energy, small particles are thrown into the air that are visible in the form of smoke. It is called this type of pollution.",
     correct: "Black carbon pollution",
     wrong: [["Outdoor pollution","Outdoor pollution is Earth-science adjacent, but it does not fit the environmental process or system named in the prompt.","Use the named process or system: atmosphere, weather, geology, pollution, or water cycle."],["Water pollution","Water pollution is Earth-science adjacent, but it does not fit the environmental process or system named in the prompt.","Use the named process or system: atmosphere, weather, geology, pollution, or water cycle."],["Indoor pollution","Indoor pollution is Earth-science adjacent, but it does not fit the environmental process or system named in the prompt.","Use the named process or system: atmosphere, weather, geology, pollution, or water cycle."]],
@@ -117,7 +117,7 @@ export const openTriviaEarthSystemsQuestions = makeQuestionBank('University', [
   {
     id: 342012,
     chapter: "Atmosphere and Weather",
-    title: "OpenTrivia Earth Science 342012",
+    title: "The ozone hole",
     prompt: "This defect of Earth's atmosphere, caused by industrial pollution, lets more radiation reach the surface of our planet.",
     correct: "The Ozone Hole",
     wrong: [["The Greenhouse Hole","The Greenhouse Hole sounds weather-related, but it does not match the cloud, atmosphere, or precipitation clue.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["The Smoke Hole","The Smoke Hole confuses one atmospheric layer, cloud type, or weather process with another.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["Smog Tear","Smog Tear answers a nearby sky idea rather than the specific weather process being tested.","Anchor the answer to the named cloud, atmospheric layer, or weather process."]],
@@ -127,7 +127,7 @@ export const openTriviaEarthSystemsQuestions = makeQuestionBank('University', [
   {
     id: 342013,
     chapter: "Atmosphere and Weather",
-    title: "OpenTrivia Earth Science 342013",
+    title: "Third most abundant atmospheric gas",
     prompt: "The Earth's atmosphere is about 78.8 % nitrogen and almost 21 % oxygen. This element is the third most abundant comprising about 0.93 % of the atmosphere.",
     correct: "Argon",
     wrong: [["Helium","Helium sounds weather-related, but it does not match the cloud, atmosphere, or precipitation clue.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["Krypton","Krypton confuses one atmospheric layer, cloud type, or weather process with another.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["Phosphorous","Phosphorous answers a nearby sky idea rather than the specific weather process being tested.","Anchor the answer to the named cloud, atmospheric layer, or weather process."]],
@@ -147,7 +147,7 @@ export const openTriviaEarthSystemsQuestions = makeQuestionBank('University', [
   {
     id: 342015,
     chapter: "Atmosphere and Weather",
-    title: "OpenTrivia Earth Science 342015",
+    title: "Rain-bearing clouds",
     prompt: "Which of the following terms describes a dark layer of clouds that bring rain or snow?",
     correct: "Nimbostratus",
     wrong: [["Stratocumulus","Stratocumulus sounds weather-related, but it does not match the cloud, atmosphere, or precipitation clue.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["Cirrus","Cirrus confuses one atmospheric layer, cloud type, or weather process with another.","Anchor the answer to the named cloud, atmospheric layer, or weather process."],["Altocumulus","Altocumulus answers a nearby sky idea rather than the specific weather process being tested.","Anchor the answer to the named cloud, atmospheric layer, or weather process."]],
@@ -160,7 +160,7 @@ export const openTriviaPhysicsQuestions = makeQuestionBank('AP', [
   {
     id: 342016,
     chapter: "Motion and Gravity",
-    title: "OpenTrivia Physics 342016",
+    title: "Acceleration from velocity",
     prompt: "To find the acceleration of a particle what would we do to the velocity ?",
     correct: "Differentiate once",
     wrong: [["Integrate twice","Integrate twice confuses the motion quantity with a different speed, force, or gravity idea.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["Differentiate twice","Differentiate twice uses physics vocabulary, but not the relationship between motion and force in the clue.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["Integrate once","Integrate once answers a nearby mechanics concept instead of the exact quantity being asked for.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."]],
@@ -170,7 +170,7 @@ export const openTriviaPhysicsQuestions = makeQuestionBank('AP', [
   {
     id: 342017,
     chapter: "Physics Foundations",
-    title: "OpenTrivia Physics 342017",
+    title: "Force that stops motion",
     prompt: "What do you call the force which slows down and stops a moving object?",
     correct: "Friction",
     wrong: [["Gravitational force","Gravitational force confuses the motion quantity with a different speed, force, or gravity idea.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["Magnetic force","Magnetic force uses physics vocabulary, but not the relationship between motion and force in the clue.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["Molecular force","Molecular force answers a nearby mechanics concept instead of the exact quantity being asked for.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."]],
@@ -180,7 +180,7 @@ export const openTriviaPhysicsQuestions = makeQuestionBank('AP', [
   {
     id: 342018,
     chapter: "Physics Foundations",
-    title: "OpenTrivia Physics 342018",
+    title: "Unit of electric current",
     prompt: "This unit, named after one of the main discoverers of electromagnetism, is the base unit of electrical current.",
     correct: "Ampere",
     wrong: [["OHM","OHM belongs to electricity or modern physics, but not the unit, particle, or field clue here.","Tie the answer to the named unit, particle, field, or electrical relationship."],["Frequency","Frequency mixes up a physics unit with a different quantity.","Tie the answer to the named unit, particle, field, or electrical relationship."],["Capacitor","Capacitor sounds technical, but it does not match the electrical or quantum relationship in the prompt.","Tie the answer to the named unit, particle, field, or electrical relationship."]],
@@ -190,7 +190,7 @@ export const openTriviaPhysicsQuestions = makeQuestionBank('AP', [
   {
     id: 342019,
     chapter: "Physics Foundations",
-    title: "OpenTrivia Physics 342019",
+    title: "Unit of electrical resistance",
     prompt: "This unit, named after the German physicist who discovered the relation between voltage and current, is the basic unit of electrical resistance.",
     correct: "Ohm",
     wrong: [["Watt","Watt belongs to electricity or modern physics, but not the unit, particle, or field clue here.","Tie the answer to the named unit, particle, field, or electrical relationship."],["Frequency","Frequency mixes up a physics unit with a different quantity.","Tie the answer to the named unit, particle, field, or electrical relationship."],["Resistor","Resistor sounds technical, but it does not match the electrical or quantum relationship in the prompt.","Tie the answer to the named unit, particle, field, or electrical relationship."]],
@@ -200,7 +200,7 @@ export const openTriviaPhysicsQuestions = makeQuestionBank('AP', [
   {
     id: 342020,
     chapter: "Motion and Gravity",
-    title: "OpenTrivia Physics 342020",
+    title: "Identifying free-fall",
     prompt: "Free-fall is defined as a condition in which a falling object experiences acceleration due only to gravity. Therefore, in this case, the only weight acting on an object is its own weight. Which of the following is not an example of an object in free-fall?",
     correct: "A skydiver with an open parachute",
     wrong: [["A feather falling through a vacuum tube","A feather falling through a vacuum tube confuses the motion quantity with a different speed, force, or gravity idea.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["The Earth's orbit around the Sun","The Earth's orbit around the Sun uses physics vocabulary, but not the relationship between motion and force in the clue.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["A space shuttle with the rockets off","A space shuttle with the rockets off answers a nearby mechanics concept instead of the exact quantity being asked for.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."]],
@@ -210,7 +210,7 @@ export const openTriviaPhysicsQuestions = makeQuestionBank('AP', [
   {
     id: 342021,
     chapter: "Motion and Gravity",
-    title: "OpenTrivia Physics 342021",
+    title: "Acceleration due to gravity",
     prompt: "An object in free fall towards the Earth experiences acceleration in velocity due to gravity. This acceleration has what approximate value?",
     correct: "9.8 meters per a second squared (32 feet per a second squared)",
     wrong: [["8.1 meters per a second squared (26.6 feet per a second squared)","8.1 meters per a second squared (26.6 feet per a second squared) confuses the motion quantity with a different speed, force, or gravity idea.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["32 meters per a second squared (9.8 meters per a second squared)","32 meters per a second squared (9.8 meters per a second squared) uses physics vocabulary, but not the relationship between motion and force in the clue.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["26.6 meters per a second squared (8.1 feet per a second squared)","26.6 meters per a second squared (8.1 feet per a second squared) answers a nearby mechanics concept instead of the exact quantity being asked for.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."]],
@@ -220,7 +220,7 @@ export const openTriviaPhysicsQuestions = makeQuestionBank('AP', [
   {
     id: 342022,
     chapter: "Motion and Gravity",
-    title: "OpenTrivia Physics 342022",
+    title: "Velocity versus speed",
     prompt: "A plane travels at 176 miles per hour for 4 hours from Chicago due East. What is the planes velocity?",
     correct: "176 mph East",
     wrong: [["176 mph","176 mph confuses the motion quantity with a different speed, force, or gravity idea.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["44 mph East","44 mph East uses physics vocabulary, but not the relationship between motion and force in the clue.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["5.5","5.5 answers a nearby mechanics concept instead of the exact quantity being asked for.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."]],
@@ -230,7 +230,7 @@ export const openTriviaPhysicsQuestions = makeQuestionBank('AP', [
   {
     id: 342023,
     chapter: "Electricity and Modern Physics",
-    title: "OpenTrivia Physics 342023",
+    title: "Photon energy and frequency",
     prompt: "Albert Einstein asserted that the energy of a photon is proportional to what in his study of the photoelectronic effects?",
     correct: "Its frequency",
     wrong: [["Its mass","Its mass belongs to electricity or modern physics, but not the unit, particle, or field clue here.","Tie the answer to the named unit, particle, field, or electrical relationship."],["Its speed","Its speed mixes up a physics unit with a different quantity.","Tie the answer to the named unit, particle, field, or electrical relationship."],["Its volume","Its volume sounds technical, but it does not match the electrical or quantum relationship in the prompt.","Tie the answer to the named unit, particle, field, or electrical relationship."]],
@@ -240,7 +240,7 @@ export const openTriviaPhysicsQuestions = makeQuestionBank('AP', [
   {
     id: 342024,
     chapter: "Electricity and Modern Physics",
-    title: "OpenTrivia Physics 342024",
+    title: "Atomic magnetic moment",
     prompt: "In atomic physics what does the term magnetic moment refer to?",
     correct: "The magnetic field produced by an atom",
     wrong: [["The moment in which an atom enters a magnetic field","The moment in which an atom enters a magnetic field belongs to electricity or modern physics, but not the unit, particle, or field clue here.","Tie the answer to the named unit, particle, field, or electrical relationship."],["A miniature slice of time in an atoms magnetic interaction with other particles","A miniature slice of time in an atoms magnetic interaction wi... mixes up a physics unit with a different quantity.","Tie the answer to the named unit, particle, field, or electrical relationship."],["The moment in which an atom becomes magnetized","The moment in which an atom becomes magnetized sounds technical, but it does not match the electrical or quantum relationship in the prompt.","Tie the answer to the named unit, particle, field, or electrical relationship."]],
@@ -250,7 +250,7 @@ export const openTriviaPhysicsQuestions = makeQuestionBank('AP', [
   {
     id: 342025,
     chapter: "Motion and Gravity",
-    title: "OpenTrivia Physics 342025",
+    title: "Orbital period from velocity",
     prompt: "If an orbiting body is revolving around its parent body in a perfectly circular path at a distance of 1,000,000,000 kilometers with an orbital velocity of 15 km/s, how long is its year in Earth years?",
     correct: "13.28",
     wrong: [["11.39","11.39 confuses the motion quantity with a different speed, force, or gravity idea.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["27.42","27.42 uses physics vocabulary, but not the relationship between motion and force in the clue.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["7.23","7.23 answers a nearby mechanics concept instead of the exact quantity being asked for.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."]],
@@ -260,7 +260,7 @@ export const openTriviaPhysicsQuestions = makeQuestionBank('AP', [
   {
     id: 342026,
     chapter: "Physics Foundations",
-    title: "OpenTrivia Physics 342026",
+    title: "Surface gravity of a body",
     prompt: "If a mass of 1 kilogram has a gravitational force of approximately 6.8x10^-12 at 1 meter (Earth = 1), what would the surface gravitational force be on a body with a mass of 5x10^18 kilograms and a diameter of 100 kilometers?",
     correct: "0.0136",
     wrong: [["0.00863","0.00863 confuses the motion quantity with a different speed, force, or gravity idea.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["0.0034","0.0034 uses physics vocabulary, but not the relationship between motion and force in the clue.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."],["0.129","0.129 answers a nearby mechanics concept instead of the exact quantity being asked for.","Name the motion quantity first: speed, velocity, acceleration, force, gravity, or orbit."]],

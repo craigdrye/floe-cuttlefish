@@ -535,7 +535,7 @@ export const col7thGradeNyNextGenHigh103TopUpAQuestions: Question[] = makeQuesti
   {
     id: 7976032,
     chapter: 'Fractions, decimals, and percentages',
-    title: 'Percent greater than 100',
+    title: "Decimal above one as a percent",
     prompt: 'Write 1.5 as a percent.',
     mentorHint: 'Multiply by 100, which moves the decimal two places.',
     correct: '150%',

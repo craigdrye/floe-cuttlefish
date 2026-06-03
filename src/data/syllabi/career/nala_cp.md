@@ -2,11 +2,11 @@
 **ID**: `nalaCp` · **Discipline**: Law
 
 ## Course Aim
-The NALA Certified Paralegal credential is the American paralegal generalist's calling card and a serious test of scope-of-practice awareness. The exam, delivered through Prometric on a rolling-administration basis, consists of approximately 120 multiple-choice questions plus a Skills Section assessing five critical thinking competencies, sat across four hours. The passing standard is 70%. NALA tests both substantive legal knowledge and the daily reflexes of a working paralegal — knowing what a paralegal does competently, and knowing, just as firmly, what a paralegal must never do.
+The NALA Certified Paralegal credential is the American paralegal generalist's calling card and a serious test of scope-of-practice awareness. The credential has two separate, sequential parts. The Knowledge Exam is a 120-question multiple-choice test (100 scored items plus 20 unscored pretest items) delivered year-round through Prometric in a 3-hour window. The Skills Exam is a separate two-hour written essay, offered in fixed windows (February, April, July, and October), in which you read a fact pattern and write a response that spots issues, applies legal authority, and communicates clearly. Both must be passed; you must clear the Knowledge Exam first. Scoring is criterion-referenced (NALA sets the cut score by the Angoff method and reports only pass/fail — there is no published numeric percentage). NALA tests both substantive legal knowledge and the daily reflexes of a working paralegal — knowing what a paralegal does competently, and knowing, just as firmly, what a paralegal must never do.
 
 Paralegals can do almost everything an attorney can do EXCEPT (1) give legal advice, (2) set fees, (3) accept cases, and (4) represent clients in court (with the narrow exception of certain administrative agencies such as the Social Security Administration). This unauthorized-practice-of-law boundary is the spine of the NALA exam. It is tested explicitly in the ethics questions and implicitly throughout — a question that asks "what should the paralegal do?" almost always rewards the answer that routes substantive legal judgment to the supervising attorney.
 
-This syllabus treats the NALA exam content outline as the map and trains the habits a working American paralegal actually needs: clean client communications, precise terminology, rigorous Bluebook citation, defensible legal research using primary then secondary sources, and quick recognition of the UPL trap. The substantive coverage is broad — administrative law, bankruptcy, business organizations and commercial law, civil litigation, contracts, criminal law, family law, intellectual property, real estate, tort law, plus estate planning and probate — and the questions punish the candidate who specialises into a corner.
+This syllabus treats the NALA exam content outline as the map and trains the habits a working American paralegal actually needs: clean client communications, precise terminology, rigorous Bluebook citation, defensible legal research using primary then secondary sources, and quick recognition of the UPL trap. Underpinning everything is the United States Legal System category — sources of law, the dual federal/state court structure, federalism, stare decisis, and the three branches — which is tied for the heaviest weight on the Knowledge Exam and is the framework into which every other subject slots. The substantive coverage is broad — administrative law, bankruptcy, business organizations and commercial law, civil litigation, contracts, criminal law, family law, intellectual property, real estate, tort law, plus estate planning and probate — and the questions punish the candidate who specialises into a corner.
 
 The voice of this course is a senior paralegal who is firm about ethics, calm under deadline pressure, intolerant of guesswork, and unimpressed by paralegals who drift into giving legal advice when an attorney is unreachable. Use US terminology and citation styles throughout: plaintiff not claimant, complaint not particulars of claim, motion for summary judgment under FRCP 56, demand for jury trial, Bluebook citation form for cases and statutes. If you cannot cite the rule by name and number, you cannot rely on it.
 
@@ -16,28 +16,30 @@ Route questions here when they test NALA exam content: paralegal ethics under NA
 Floe presents four options per question — one correct, three plausible distractors — and the right answer is the one a competent paralegal under attorney supervision would actually take. Each distractor should map to a real workplace mistake: giving advice when none was sought, missing a Bluebook signal, drafting in the attorney's name without supervision, citing secondary authority where primary controls.
 
 ## Exam Map and Study Rhythm
-The NALA CP exam is delivered year-round through Prometric, with a 4-hour testing window covering the 120-MCQ knowledge section and the Skills Section. Passing the credential requires a scaled score equivalent to 70%. NALA publishes content categories rather than precise weights; allocate time by topic breadth, your error log, and how often the topic appears in actual paralegal work.
+The Knowledge Exam is delivered year-round through Prometric in a 3-hour window: 120 multiple-choice items, of which 100 are scored and 20 are unscored pretest items. The Skills Exam is a separate two-hour written essay offered only in the February, April, July, and October windows. NALA does publish point weights for the ten Knowledge Exam content categories (effective 2024 specifications), and they are worth knowing: the heaviest are the United States Legal System and Civil Litigation (15 points each), then Professional and Ethical Responsibility (12), then Contracts, Corporate/Commercial Law, and Torts (10 each), Real Estate and Property (8), Criminal Law and Procedure and Estate Planning and Probate (7 each), and Debtor/Creditor and Bankruptcy (6). Allocate time by those weights first, then by your error log and how often the topic appears in actual paralegal work.
 
-| Topic | Category | Study Posture |
+Note that Communications, Legal Research, and Judgment/Analytical Ability are not standalone scored MCQ categories on the Knowledge Exam — they are skills folded into every category and assessed directly on the Skills essay. They are taught here as their own chapters because they are the load-bearing habits behind every correct answer.
+
+| Topic | Category (weight) | Study Posture |
 |---|---|---|
-| Communications | Knowledge | Plain English, audience-aware, never legal advice |
-| Ethics | Knowledge | NALA Code, Model Standards, ABA Model Rules 5.3 and 5.5 supervisory limits |
-| Legal Research | Knowledge | Primary first, then secondary; Bluebook citation |
-| Judgment and Analytical Ability | Skill | Reading comprehension under time pressure |
-| Critical Thinking | Skills Section | Five competencies tested through applied scenarios |
-| Administrative Law | Discipline | APA, agency rulemaking, administrative hearings |
-| Bankruptcy | Discipline | Chapters 7, 11, 13; automatic stay; trustee role |
-| Business Organizations & Commercial Law | Discipline | Sole prop, partnership, LLC, S-corp vs C-corp, choice of entity |
-| Civil Litigation | Discipline | FRCP basics, state court parallels, e-discovery |
-| Contracts | Discipline | Formation, performance, breach, remedies, UCC Article 2 |
-| Criminal Law | Discipline | Elements, defenses, procedure, suppression motions |
-| Family Law | Discipline | Marriage, dissolution, custody, support, adoption, UCCJEA |
-| Intellectual Property | Discipline | Patents, copyrights, trademarks, trade secrets |
-| Real Estate | Discipline | Conveyancing, recording, title, financing, closing |
-| Tort Law | Discipline | Intentional, negligence, strict liability, products, vicarious |
-| Estate Planning and Probate | Discipline | Wills, trusts, intestacy, probate administration |
+| United States Legal System | Knowledge (15) | Sources of law, court structure, federalism, stare decisis, branches of government |
+| Civil Litigation | Knowledge (15) | FRCP basics, state court parallels, e-discovery |
+| Professional and Ethical Responsibility | Knowledge (12) | NALA Code, Model Standards, ABA Model Rules 5.3 and 5.5 supervisory limits |
+| Contracts | Knowledge (10) | Formation, performance, breach, remedies, UCC Article 2 |
+| Corporate / Commercial Law | Knowledge (10) | Sole prop, partnership, LLC, S-corp vs C-corp, choice of entity |
+| Torts | Knowledge (10) | Intentional, negligence, strict liability, products, vicarious |
+| Real Estate and Property | Knowledge (8) | Conveyancing, recording, title, financing, closing |
+| Criminal Law and Procedure | Knowledge (7) | Elements, defenses, procedure, suppression motions |
+| Estate Planning and Probate | Knowledge (7) | Wills, trusts, intestacy, probate administration |
+| Debtor/Creditor and Bankruptcy | Knowledge (6) | Chapters 7, 11, 13; automatic stay; trustee role |
+| Communications | Skill / cross-cutting | Plain English, audience-aware, never legal advice |
+| Legal Research | Skill / cross-cutting | Primary first, then secondary; Bluebook citation |
+| Judgment and Analytical Ability | Skill / cross-cutting | Reading comprehension and issue spotting under time pressure |
+| Skills Essay | Skills Exam | One fact pattern; identify facts and issues, apply authority, write a persuasive conclusion |
 
-Suggested cadence: 12-24 weeks (3-6 months) of self-study, 200-300 hours, daily terminology drills, weekly timed multiple-choice sets, and at least one full NALA practice exam, plus the NALA Manual for Paralegals (West) and the West Paralegal Series for substantive depth. Two weeks before test day, run one full simulated four-hour exam.
+Administrative law, family law, and intellectual property are tested within the broader categories above (chiefly the United States Legal System, Civil Litigation, and Corporate/Commercial Law) rather than as separately weighted Knowledge categories; they are taught here as their own units because they recur in real paralegal work and in the question bank.
+
+Suggested cadence: 12-24 weeks (3-6 months) of self-study, 200-300 hours, daily terminology drills, weekly timed multiple-choice sets, and at least one full NALA practice exam, plus the NALA Manual for Paralegals (West) and the West Paralegal Series for substantive depth. Two weeks before test day, run one full timed 3-hour Knowledge simulation, and draft at least one full Skills essay against a fact pattern under the two-hour clock.
 
 ## Chapter 1: Paralegal Ethics and the Scope of Practice
 **Core questions:** Where exactly is the line between competent paralegal assistance and the unauthorized practice of law? When the supervising attorney is unavailable, what may a paralegal do?
@@ -137,7 +139,7 @@ Suggested cadence: 12-24 weeks (3-6 months) of self-study, 200-300 hours, daily 
 - Issue spotting frameworks: who, what, when, where, why, how
 - Inference from indirect evidence
 - Eliminating distractors that are technically true but not responsive
-- Tracking time on long reading passages — roughly 2 minutes per MCQ
+- Tracking time on long reading passages — 120 items in 3 hours is about 90 seconds per MCQ on average
 - Recognizing trap patterns: wrong jurisdiction, wrong era, wrong party
 
 **Applied paralegal skills**
@@ -269,7 +271,7 @@ Suggested cadence: 12-24 weeks (3-6 months) of self-study, 200-300 hours, daily 
 - Estate planning: wills, revocable and irrevocable trusts, durable powers of attorney, healthcare proxies, advance directives
 - Probate administration: opening the estate, notice to creditors, inventory, accounting, distribution
 - Intestate succession variations across community property (e.g. CA, TX, WA) and common-law states
-- Federal estate tax exemption (currently $13.61 million per individual for 2024, scheduled to sunset)
+- Federal estate tax exemption ($15 million per individual for 2026, indexed for inflation; made permanent by the One Big Beautiful Bill Act signed July 4, 2025, which repealed the prior TCJA sunset that would have cut it to roughly $7 million)
 - Patents under 35 USC 101 (utility), 102 (novelty), 103 (nonobviousness), 112 (specification); design and plant patents
 - Copyrights under 17 USC; original works of authorship fixed in a tangible medium; fair use four factors under 17 USC 107
 - Trademarks under the Lanham Act (15 USC 1051 et seq.); distinctiveness spectrum (generic, descriptive with secondary meaning, suggestive, arbitrary, fanciful)
@@ -327,27 +329,30 @@ Suggested cadence: 12-24 weeks (3-6 months) of self-study, 200-300 hours, daily 
 - Personal injury intake template with medical authorization release
 - Damages chart with general, special, and projected categories
 
-## Chapter 10: Capstone — Exam Day Strategy and Skills Section
-**Core questions:** How do you pace four hours, 120 MCQs, and the Skills Section across multiple practice areas in one sitting without your judgment fraying? How do you apply the five critical thinking competencies under exam pressure?
+## Chapter 10: Capstone — Exam Day Strategy and the Skills Essay
+**Core questions:** How do you pace the 3-hour, 120-MCQ Knowledge Exam across ten content categories without your judgment fraying? And how, in a separate sitting, do you write the two-hour Skills essay so it spots the issues, applies the right authority, and reads cleanly under the clock?
 
 **Key concepts**
-- MCQ pacing target of roughly 2 minutes per question
-- Skills Section: assesses critical thinking, communications, ethics, legal research, and judgment through applied scenarios
-- Two-pass strategy: answer easy items first, then return to flagged ones
+- Knowledge Exam pacing: 120 items in 3 hours is roughly 90 seconds per question; budget a buffer for long fact patterns and a review pass
+- Two separate exams: the Knowledge Exam is year-round and must be passed first; the Skills essay runs only in the February, April, July, and October windows
+- Skills Exam format: one fact pattern, written response — identify relevant facts, recognize main and secondary issues, apply legal authority, and reach a persuasive conclusion in clear, correct prose (grammar, spelling, punctuation count)
+- Two-pass strategy on the MCQs: answer easy items first, then return to flagged ones
 - Distractor pattern recognition: right rule wrong facts, right facts wrong rule, secondary authority masquerading as primary
 - Ethics override: when scope-of-practice quietly changes the answer
-- Test-day logistics: ID, breaks, snacks, sleep, travel timing, Prometric-specific procedures
+- Test-day logistics: ID, breaks, sleep, travel timing, Prometric-specific procedures
 
 **Applied paralegal skills**
 - Build a personal pacing plan based on practice-test data
 - Convert each practice miss into a one-sentence rule on a flashcard
 - Decide when to guess and move versus flag and return
+- Outline a Skills essay in five minutes: facts, issues, rule, application, conclusion
 
 **Common traps**
 - Spending more than 3 minutes on a single MCQ — net negative across the section
 - Changing first-instinct answers without specific contrary reasoning — research consistently shows this lowers scores
-- Reading the Skills Section as factual recall — it tests the application of skills, not raw knowledge
+- Treating the Skills essay as a recall test — it tests issue spotting, application, and written communication, not memorized rules
 - Ignoring the ethics overlay in non-ethics questions — UPL traps appear inside civil litigation, family law, and real estate questions
+- Assuming a numeric "70%" cutoff — NALA reports only pass/fail and does not publish a percentage; aim for mastery, not a number
 
 **Authoritative sources**
 - NALA published practice exams and content outline
@@ -357,3 +362,10 @@ Suggested cadence: 12-24 weeks (3-6 months) of self-study, 200-300 hours, daily 
 **Practice deliverables**
 - One full simulated exam two weeks before test day
 - Error log sorted by topic and distractor family
+
+## Research Notes
+- https://nala.org/about-the-cp-exam/ — official CP exam structure: 120-item Knowledge Exam (100 scored + 20 unscored pretest), 3-hour limit; separate 2-hour Skills written essay offered Feb/Apr/Jul/Oct; year-round Knowledge testing
+- https://nala.org/wp-content/uploads/2023/01/Certified-Paralegal-Exam-Specifications-2024.pdf — NALA's official 2024 exam specifications (the document NALA publishes with the ten Knowledge content categories and their point values)
+- https://www.testprepreview.com/certified-paralegal-cla-legal-assistant-cp-exam — itemized 2024 category weights used here: US Legal System 15, Civil Litigation 15, Professional/Ethical Responsibility 12, Contracts 10, Corporate/Commercial 10, Torts 10, Real Estate/Property 8, Criminal Law/Procedure 7, Estate Planning/Probate 7, Debtor/Creditor & Bankruptcy 6
+- https://www.paralegaledu.org/blog/nala-skills-exam-prep/ — Skills Exam is a two-hour written essay; scoring is criterion-referenced (Angoff), reported pass/fail with no published numeric cutoff
+- https://www.morganlewis.com/pubs/2025/10/irs-announces-increased-gift-and-estate-tax-exemption-amounts-for-2026 — 2026 federal estate/gift tax exemption of $15 million per individual, made permanent (TCJA sunset repealed) by the One Big Beautiful Bill Act signed July 4, 2025
