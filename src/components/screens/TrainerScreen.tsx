@@ -266,14 +266,9 @@ export function TrainerScreen() {
   const rarity = questionRarity(question)
   const activeMuseumItem = misconceptionArtifacts.find((item) => item.questionId === question.id && !item.clearedAt)
   // Lessons play in rounds of "3 questions + a boss" (the round's last question),
-  // capped at 2 rounds / 8 questions per lesson:
-  //   8+ questions -> two rounds of 4 (3 + boss, 3 + boss), then back to the map
-  //   4-7          -> one round (all of them, boss is the last)
-  //   <4           -> no boss, just answer what's there
-  // (Lessons longer than 8 aren't re-chunked; the remaining questions surface on a
-  // later visit. The aim is ~8 questions per lesson, i.e. two clean rounds.)
-  // Exception: the in-app rating lesson surfaces ALL its questions in one session so
-  // every candidate question is reachable to rate (other lessons keep the 8 cap).
+  // capped at 2 rounds / 8 questions per run. Long lesson buckets can keep all
+  // their questions, but one play-through still moves on after the familiar
+  // short session length.
   const isRatingLesson = activeSet.length > 0 && activeSet.every((q) => q.subTopic && RATING_LESSON_SUBTOPICS.has(q.subTopic))
   const lessonLength = isRatingLesson ? activeSet.length : Math.min(activeSet.length, 8)
   const roundPlan = useMemo(() => {

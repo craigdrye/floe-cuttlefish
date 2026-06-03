@@ -18,7 +18,6 @@ type TrackLike = {
   skills: string[]
 }
 
-const QUIZ_LENGTH = 300
 const MIN_LEARNER_PROMPT_WORDS = 15
 
 const ALWAYS_DROP_SETUP_PATTERNS = [
@@ -161,7 +160,7 @@ export function buildTrackQuiz(
       `No playable questions found for track "${track.id}". ${summary.recoverable} need cleanup and ${summary.quarantined} are quarantined.`,
     )
   }
-  return playable.slice(0, QUIZ_LENGTH).map((question) => ensureSixAnswerChoices(prepareQuestionForPlay(question)))
+  return playable.map((question) => ensureSixAnswerChoices(prepareQuestionForPlay(question)))
 }
 
 

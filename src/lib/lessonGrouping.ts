@@ -20,7 +20,6 @@ export type Lesson = {
   avgDifficulty: number
 }
 
-const MAX_LESSONS_PER_CHAPTER = 8
 const TARGET_LESSON_SIZE = 10
 
 /**
@@ -29,8 +28,7 @@ const TARGET_LESSON_SIZE = 10
  * Algorithm:
  *  1. Sort the chapter's questions by difficulty (using `defaultDifficultyFor`
  *     when an explicit `Question.difficulty` is missing).
- *  2. Bucket into N lessons of <= 10 questions each, where
- *     `N = clamp(ceil(total / 10), 1, MAX_LESSONS_PER_CHAPTER)`.
+ *  2. Bucket into N lessons of roughly 10 questions each.
  *  3. Distribute difficulty across lessons: Lesson i (1-indexed) is centered
  *     around difficulty `1 + ((i - 1) * 4) / max(N - 1, 1)`. With a sorted
  *     pool and ascending bucket boundaries, this falls out naturally: the
@@ -39,8 +37,7 @@ const TARGET_LESSON_SIZE = 10
  *     at trainer level still sees a varied order. The adaptive picker takes
  *     care of per-session ramping.
  *  5. If a chapter has <10 questions, render 1 lesson; if it has 11-20, 2
- *     lessons; etc., up to the 8-lesson cap (chapters with >80 questions
- *     pack the overflow into the last lesson).
+ *     lessons; etc.
  *
  * The function is pure and deterministic — same input → same output.
  */
@@ -69,12 +66,11 @@ export function buildLessonsForChapter(
   })
 
   const total = sorted.length
-  const naturalCount = Math.max(1, Math.ceil(total / TARGET_LESSON_SIZE))
-  const lessonCount = Math.min(MAX_LESSONS_PER_CHAPTER, naturalCount)
+  const lessonCount = Math.max(1, Math.ceil(total / TARGET_LESSON_SIZE))
 
   // Compute slice boundaries. Spread questions as evenly as possible across
-  // the N lessons; if total > MAX_LESSONS_PER_CHAPTER * 10, the last lesson
-  // soaks up the leftovers.
+  // the N lessons so the learner sees every question as part of a reachable
+  // lesson rather than a hidden overflow bucket.
   const lessons: Lesson[] = []
   const baseSize = Math.floor(total / lessonCount)
   const remainder = total % lessonCount
@@ -82,8 +78,7 @@ export function buildLessonsForChapter(
   let cursor = 0
   for (let i = 0; i < lessonCount; i += 1) {
     // Distribute remainder across the earliest lessons so the easier lessons
-    // (which players actually finish) feel slightly fuller; the last lesson
-    // absorbs any catalog overflow above MAX_LESSONS_PER_CHAPTER * 10.
+    // (which players actually finish) feel slightly fuller.
     let size = baseSize + (i < remainder ? 1 : 0)
     if (i === lessonCount - 1) {
       // Final lesson: absorb anything left over (defensive against rounding).
@@ -122,11 +117,8 @@ export function buildLessonsForChapter(
  * driven by first-appearance of each subTopic in the input array (so the
  * catalog file's order matters). Within a lesson questions are sorted by
  * difficulty ascending then seeded-shuffled, matching the difficulty-slice
- * lesson behaviour.
- *
- * Cluster names with more than `MAX_LESSONS_PER_CHAPTER` entries cap at the
- * limit by merging extras into the last lesson; this should be rare since
- * sub-topic taxonomies are hand-curated.
+ * lesson behaviour. A lesson may be long; the trainer should expose every
+ * question in that lesson rather than hiding the tail.
  */
 function buildSubTopicLessons(questions: Question[], ageGroup: AgeGroup): Lesson[] {
   const groups = new Map<string, Question[]>()
@@ -142,24 +134,8 @@ function buildSubTopicLessons(questions: Question[], ageGroup: AgeGroup): Lesson
     bucket.push(q)
   }
 
-  // Soft cap on lesson count. If a chapter has more than 8 distinct
-  // sub-topics, merge the tail into the last lesson rather than dropping any.
-  let lessonNames = order
-  if (order.length > MAX_LESSONS_PER_CHAPTER) {
-    const head = order.slice(0, MAX_LESSONS_PER_CHAPTER - 1)
-    const tailKeys = order.slice(MAX_LESSONS_PER_CHAPTER - 1)
-    const mergedKey = tailKeys.join(' / ')
-    const merged: Question[] = []
-    for (const k of tailKeys) {
-      const bucket = groups.get(k)
-      if (bucket) merged.push(...bucket)
-    }
-    groups.set(mergedKey, merged)
-    lessonNames = [...head, mergedKey]
-  }
-
   const lessons: Lesson[] = []
-  lessonNames.forEach((name, i) => {
+  order.forEach((name, i) => {
     const bucket = groups.get(name) ?? []
     if (bucket.length === 0) return
 
