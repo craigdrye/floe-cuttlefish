@@ -333,3 +333,11 @@ So the lens powerfully shaped the *voice*, the *story*, the *distractors*, and *
 
 ## Verdict on the experiment
 The **Process Coach** and **Sensei Cuttle** lenses produced the most distinctive, on-brand questions (judgement-testing; charming-but-rigorous). The **Desk Quant** was the most interview-authentic. **First Principles** was the most rigorous but the least differentiated — its content overlapped the others, and it had the one execution slip. If I had to pick one approach to scale, I'd combine the best two: a **Sensei Cuttle voice wrapped around a Process-Coach structure** — cute on the surface, testing real judgement underneath.
+
+
+
+
+
+
+
+

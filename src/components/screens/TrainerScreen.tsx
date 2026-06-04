@@ -1,7 +1,7 @@
 import { useMemo, useEffect, useCallback, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
-import { Brain, BookOpen, Calculator, CheckCircle2, XCircle, Sparkles, ShieldQuestion, Repeat2, Trophy, ArrowLeft } from 'lucide-react'
+import { Brain, BookOpen, Calculator, CheckCircle2, XCircle, Sparkles, ShieldQuestion, Repeat2, Trophy, ArrowLeft, Star } from 'lucide-react'
 import { useStore } from '../../store/useStore'
 import { useQuizData } from '../../hooks/useQuizData'
 import { TopBar } from '../layout/TopBar'
@@ -12,14 +12,6 @@ import { playComboSound, playRewardVoiceSound, playSuccessSound, playWrongSound 
 import { bossRewardFor, bossTitleFor } from '../../lib/rewardSystem'
 import { buildLearningSupport } from '../../lib/learningSupport'
 import { LESSON_INTROS } from '../../data/questionCatalog/lessonIntros'
-// Lessons used for the in-app prompt-rating experiment: they show a per-question
-// rating slider and surface ALL their questions in one session (no 8-cap).
-const RATING_LESSON_SUBTOPICS = new Set([
-  'Backward Induction', 'Optimization & Movement',
-  'Lateral & Observability', 'Weighing & Information', 'Counting & Arithmetic',
-  'Invariants & Parity', 'Logic & Constraint',
-  'Speaking Foundations', 'Plumbing Foundations', 'Ethics Reflexes', 'CFA L2 Ethics',
-])
 import type { Answer, Misconception, Question } from '../../data/questionCatalog/types'
 
 function questionRarity(question: { kind: string; xp: number }): string {
@@ -54,6 +46,21 @@ const successHeadlines = [
 function showQuestionQualityControls() {
   if (typeof window === 'undefined') return false
   return window.localStorage.getItem('floe:showQualityControls') === 'true'
+}
+
+function anonymousRatingClientId() {
+  if (typeof window === 'undefined') return 'server'
+
+  const key = 'floe:question-rating-client-id'
+  const existing = window.localStorage.getItem(key)
+  if (existing) return existing
+
+  const generated =
+    typeof crypto !== 'undefined' && 'randomUUID' in crypto
+      ? crypto.randomUUID()
+      : `anon-${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`
+  window.localStorage.setItem(key, generated)
+  return generated
 }
 
 function firstSentence(value?: string) {
@@ -201,6 +208,7 @@ function pickSuccessHeadline(questionId: number, remixSeed: number) {
 export function TrainerScreen() {
   const {
     progress, setProgress, mode, index, setIndex,
+    selectedAge,
     selectedAnswerId, setSelectedAnswerId, showHint, setShowHint,
     incrementAnswerShuffleSeed, calculatorInput, setCalculatorInput,
     thoughts, setThought, wrongAnswerFeedback, setWrongAnswerFeedback,
@@ -235,6 +243,7 @@ export function TrainerScreen() {
   const [showCalculator, setShowCalculator] = useState(false)
   const [showThoughts, setShowThoughts] = useState(false)
   const [attentionTool, setAttentionTool] = useState<'ask' | 'hint' | 'teach' | null>(null)
+  const [ratingSyncState, setRatingSyncState] = useState<'idle' | 'saving' | 'saved' | 'local' | 'failed'>('idle')
 
   useEffect(() => {
     setCalculatorInput('')
@@ -269,8 +278,7 @@ export function TrainerScreen() {
   // capped at 2 rounds / 8 questions per run. Long lesson buckets can keep all
   // their questions, but one play-through still moves on after the familiar
   // short session length.
-  const isRatingLesson = activeSet.length > 0 && activeSet.every((q) => q.subTopic && RATING_LESSON_SUBTOPICS.has(q.subTopic))
-  const lessonLength = isRatingLesson ? activeSet.length : Math.min(activeSet.length, 8)
+  const lessonLength = Math.min(activeSet.length, 8)
   const roundPlan = useMemo(() => {
     const n = lessonLength
     const roundCount = Math.floor(n / 4)
@@ -300,26 +308,58 @@ export function TrainerScreen() {
   const qualityRating = questionQualityRatings[question.id] ?? { goodQuestion: 5, writingIssues: 5 }
   const showQualityControls = showQuestionQualityControls()
   const selectedMisconceptions = answerMisconceptions(question, selectedAnswer)
-  const learningSupport = useMemo(() => buildLearningSupport(question, selectedAnswer), [question, selectedAnswer])
+  const learningSupport = buildLearningSupport(question, selectedAnswer)
   const learnPrimerText = learningSupport.lessonParagraphs[0]
   const showLearnPrimer = teachBeforeQuestion && mode === 'daily' && index === 0 && !selectedAnswerId && Boolean(learnPrimerText)
   const lessonIntro = question.subTopic ? LESSON_INTROS[question.subTopic] : undefined
-  // Candidate questions being rated in-app carry a learner "rate me" slider; the
-  // ratings persist in questionQualityRatings.learnerRating and can be copied out.
-  const showRateMe = Boolean(question.subTopic && RATING_LESSON_SUBTOPICS.has(question.subTopic))
-  const ratedCount = Object.values(questionQualityRatings).filter((r) => typeof r.learnerRating === 'number').length
-  const copyLessonRatings = () => {
-    const rated = Object.entries(questionQualityRatings)
-      .filter(([, r]) => typeof r.learnerRating === 'number')
-      .map(([id, r]) => ({ id: Number(id), rating: r.learnerRating, updatedAt: r.updatedAt }))
-      .sort((a, b) => a.id - b.id)
-    const text = JSON.stringify(rated, null, 2)
-    if (typeof navigator !== 'undefined' && navigator.clipboard) {
-      navigator.clipboard.writeText(text).catch(() => undefined)
+  useEffect(() => {
+    setRatingSyncState('idle')
+  }, [question.id, remixSeed])
+
+  const rateQuestion = useCallback(async (rating: number) => {
+    setQuestionQualityRating(question.id, { learnerRating: rating })
+    setRatingSyncState('saving')
+
+    if (
+      import.meta.env.DEV &&
+      typeof window !== 'undefined' &&
+      (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+    ) {
+      setRatingSyncState('local')
+      return
     }
-    // Also log so the scores are recoverable even if clipboard is blocked.
-    console.log('[Floe] lesson question ratings', rated)
-  }
+
+    try {
+      const response = await fetch('/api/question-rating', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          rating,
+          questionId: question.id,
+          questionTitle: question.title,
+          chapter: question.chapter,
+          subTopic: question.subTopic ?? null,
+          trackId: selectedTrackInfo.id,
+          trackTitle: selectedTrackInfo.title,
+          ageGroup: selectedAge,
+          mode,
+          selectedLesson,
+          difficulty: question.difficulty ?? null,
+          challengeRating: question.challengeRating ?? null,
+          generated: Boolean(question.generated),
+          prompt: question.prompt,
+          clientId: anonymousRatingClientId(),
+        }),
+      })
+
+      if (!response.ok) throw new Error(`Rating API returned ${response.status}`)
+      const payload = await response.json().catch(() => null) as { stored?: boolean } | null
+      setRatingSyncState(payload?.stored === false ? 'local' : 'saved')
+    } catch (error) {
+      console.warn('[Floe] question rating saved locally only', error)
+      setRatingSyncState('failed')
+    }
+  }, [mode, question, selectedAge, selectedLesson, selectedTrackInfo, setQuestionQualityRating])
 
   useEffect(() => {
     if (!showBossIntro) return
@@ -738,6 +778,46 @@ export function TrainerScreen() {
               </button>
             </div>
 
+            <div className="question-rating" aria-label="Rate this question">
+              <div>
+                <strong>Rate this question</strong>
+                <span>
+                  {typeof qualityRating.learnerRating === 'number'
+                    ? `${qualityRating.learnerRating}/5`
+                    : 'Tap a star'}
+                </span>
+              </div>
+              <div className="question-rating-stars" role="radiogroup" aria-label="Question rating">
+                {[1, 2, 3, 4, 5].map((rating) => {
+                  const active = typeof qualityRating.learnerRating === 'number' && rating <= qualityRating.learnerRating
+                  return (
+                    <button
+                      key={rating}
+                      type="button"
+                      className={active ? 'active' : ''}
+                      onClick={() => rateQuestion(rating)}
+                      role="radio"
+                      aria-checked={qualityRating.learnerRating === rating}
+                      aria-label={`${rating} star${rating === 1 ? '' : 's'}`}
+                    >
+                      <Star size={19} fill={active ? 'currentColor' : 'none'} />
+                    </button>
+                  )
+                })}
+              </div>
+              <small>
+                {ratingSyncState === 'saving'
+                  ? 'Saving...'
+                  : ratingSyncState === 'saved'
+                    ? 'Saved'
+                    : ratingSyncState === 'local'
+                      ? 'Saved on this device'
+                      : ratingSyncState === 'failed'
+                        ? 'Saved here; internet sync failed'
+                        : 'Anonymous feedback helps Floe improve'}
+              </small>
+            </div>
+
             <AnimatePresence>
               {selectedAnswer && (
                 <motion.div className={`feedback ${isCorrect ? 'good' : 'bad'}`} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
@@ -829,35 +909,6 @@ export function TrainerScreen() {
           <div style={{ minHeight: '21px' }} aria-hidden="true" />
         </div>
       )}
-
-      {showRateMe && (
-        <div className="rate-me" style={{ marginTop: '24px', padding: '16px', background: 'rgba(255,255,255,0.4)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.3)', display: 'grid', gap: '12px' }}>
-          <label style={{ display: 'grid', gap: '6px', fontSize: '13px', fontWeight: 700, color: 'var(--ocean-deep)' }}>
-            <span>Rate this question{typeof qualityRating.learnerRating === 'number' ? ` · ${qualityRating.learnerRating}/5` : ''}</span>
-            <input
-              type="range"
-              min="1"
-              max="5"
-              value={qualityRating.learnerRating ?? 3}
-              onChange={(event) => setQuestionQualityRating(question.id, { learnerRating: Number(event.target.value) })}
-            />
-            <span style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11px', fontWeight: 700, opacity: 0.7 }}>
-              <span>Poor</span>
-              <span>Excellent</span>
-            </span>
-          </label>
-          <button
-            type="button"
-            onClick={copyLessonRatings}
-            style={{ justifySelf: 'start', fontSize: '12px', fontWeight: 700, color: 'var(--ocean-deep)', background: 'rgba(255,255,255,0.6)', border: '1px solid rgba(255,255,255,0.5)', borderRadius: '10px', padding: '8px 12px', cursor: 'pointer' }}
-          >
-            Copy my ratings{ratedCount ? ` (${ratedCount})` : ''}
-          </button>
-        </div>
-      )}
-
-      {/* Breathing room so the rating sits slightly above the bottom, above the back button. */}
-      {showRateMe && <div style={{ minHeight: '40px' }} aria-hidden="true" />}
 
       <button className="back-btn" onClick={goBackFromTrainer} type="button">
         <ArrowLeft size={16} /> Back to map
