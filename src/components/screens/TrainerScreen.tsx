@@ -14,6 +14,158 @@ import { buildLearningSupport } from '../../lib/learningSupport'
 import { LESSON_INTROS } from '../../data/questionCatalog/lessonIntros'
 import type { Answer, Misconception, Question } from '../../data/questionCatalog/types'
 
+const ADAPTIVE_STATISTICS_TRACK_ID = 'adaptiveStatistics'
+const ADAPTIVE_STATISTICS_WARMUP_COUNT = 6
+const ADAPTIVE_STATISTICS_CALIBRATION_ID_MIN = 881000001
+const ADAPTIVE_STATISTICS_CALIBRATION_ID_MAX = 881000020
+
+const CLIMBER_TRAP_DOMAINS: Record<string, string> = {
+  'total-vs-average trap': 'Averages as fair-share balance',
+  'outlier-pulls-the-mean trap': 'Typical values in skewed worlds',
+  'average-hides-spread trap': 'Spread, reliability, and risk',
+  'percent-without-a-base trap': 'Percentages with their hidden base',
+  'randomness-as-vibe trap': 'Randomness as a method, not a mood',
+  'warped-mirror sample trap': 'Samples as mirrors for populations',
+  'correlation-story trap': 'Correlation as clue, not confession',
+  'causation-without-fair-groups trap': 'Fair comparison before causal claims',
+  'base-rate blindness trap': 'Base rates behind alarms and tests',
+  'next-play prediction trap': 'Long-run expectation vs one outcome',
+  'chart-scale illusion trap': 'Graphs as visual arguments',
+  'outlier panic trap': 'Outliers as mysteries to investigate',
+  'tiny-sample confidence trap': 'Sample size and statistical wobble',
+  'exact-looking poll trap': 'Intervals as honest uncertainty',
+  'significant-means-important trap': 'Statistical signal vs real-world meaning',
+  'line-as-proof trap': 'Regression lines without overclaiming',
+  'prediction-is-reality trap': 'Residuals and model humility',
+  'one-trial-is-enough trap': 'Simulation through repetition',
+  'sparkly-noise trap': 'False discovery and hidden searching',
+  'certainty-as-strength trap': 'Careful humility as a strength',
+}
+
+const CLIMBER_AHA_INSIGHTS: Record<string, string> = {
+  'total-vs-average trap': 'A mean is a rebalancing story: everyone pours their values into one bowl, then the pile is shared back equally.',
+  'outlier-pulls-the-mean trap': 'One extreme value can tug the mean like a moon pulling the tide; the median often stays calmer.',
+  'average-hides-spread trap': 'Two groups can share the same average while living in totally different worlds of risk, wobble, and surprise.',
+  'percent-without-a-base trap': 'A percentage is never alone. It always whispers, "percent of what?"',
+  'randomness-as-vibe trap': 'Random is not messy. Random is a disciplined way to stop our preferences from choosing the evidence.',
+  'warped-mirror sample trap': 'A sample is a mirror for a population. If the mirror is warped, the answer can look precise and still be wrong.',
+  'correlation-story trap': 'Correlation is a clue that two things move together, not a confession that one caused the other.',
+  'causation-without-fair-groups trap': 'To talk about cause, you need a fair comparison: groups that differ in the treatment, not in every other useful thing.',
+  'base-rate blindness trap': 'A test result changes your odds, but the starting odds still matter. Rare things remain rare unless the evidence is very strong.',
+  'next-play prediction trap': 'Expected value describes the long-run center of gravity, not a promise about the very next try.',
+  'chart-scale illusion trap': 'Graphs are arguments made with space. Always check what the axes are doing before trusting the picture.',
+  'outlier panic trap': 'An outlier is not automatically junk. It is a mystery: measurement error, rare event, or important clue?',
+  'tiny-sample confidence trap': 'Small samples wobble. A handful of observations can feel like a pattern while still mostly being weather.',
+  'exact-looking poll trap': 'Intervals are honest uncertainty. They say, "Here is the range my sample can responsibly defend."',
+  'significant-means-important trap': 'Statistical significance asks whether a signal is likely real. Importance asks whether it matters in the world.',
+  'line-as-proof trap': 'A regression line is a useful summary, not a magic spell. It can describe a trend without proving a cause.',
+  'prediction-is-reality trap': 'A model prediction is a best guess with leftover error around it. Residuals are the humility tax.',
+  'one-trial-is-enough trap': 'Simulation teaches by repetition. One run is a story; many runs reveal the pattern underneath.',
+  'sparkly-noise trap': 'If you search enough patterns, some sparkle by accident. Good statistics asks what was planned before the looking began.',
+  'certainty-as-strength trap': 'The strongest statistical thinkers sound careful because they are tracking what the evidence can and cannot carry.',
+}
+
+function adaptiveStatisticsDifficulty(question: Question): number {
+  if (question.difficulty) return question.difficulty
+  if (question.challengeRating) return Math.max(1, Math.min(5, Math.ceil(question.challengeRating / 2)))
+  return question.kind === 'deep' ? 4 : 2
+}
+
+function adaptiveStatisticsLevelLabel(courseQuestions: Question[], solvedIds: Set<number>, attemptedIds: Set<number>) {
+  const attempted = courseQuestions.filter((item) => attemptedIds.has(item.id))
+  if (attempted.length === 0) return null
+  const correct = attempted.filter((item) => solvedIds.has(item.id))
+  const accuracy = correct.length / Math.max(1, attempted.length)
+  const correctDifficulty = correct.length
+    ? correct.reduce((sum, item) => sum + adaptiveStatisticsDifficulty(item), 0) / correct.length
+    : 1
+  const climbLevel = Math.max(1, Math.min(5, Math.round(correctDifficulty + (accuracy >= 0.75 ? 0.5 : 0))))
+  const names = ['Gentle foundations', 'Building the lens', 'Pattern spotter', 'Evidence climber', 'Inference explorer']
+  return names[climbLevel - 1]
+}
+
+function adaptiveStatisticsCoachNote({
+  attemptedCount,
+  accuracy,
+  activeTrapCount,
+  level,
+}: {
+  attemptedCount: number
+  accuracy: number | null
+  activeTrapCount: number
+  level: string | null
+}) {
+  if (attemptedCount === 0) {
+    return {
+      title: 'Floe is finding your level',
+      body: 'Just play. Every answer helps Floe tune the next few questions toward the edge of your comfort zone.',
+    }
+  }
+
+  if (attemptedCount < ADAPTIVE_STATISTICS_WARMUP_COUNT) {
+    const remaining = ADAPTIVE_STATISTICS_WARMUP_COUNT - attemptedCount
+    return {
+      title: `${remaining} level-finding question${remaining === 1 ? '' : 's'} left`,
+      body: activeTrapCount > 0
+        ? `I have caught ${activeTrapCount} thinking trap${activeTrapCount === 1 ? '' : 's'} for later. Wrong answers are not a verdict; they help tune the stream.`
+        : 'I am still sampling broadly before I settle into your flow band.',
+    }
+  }
+
+  if (activeTrapCount > 0) {
+    return {
+      title: 'Trap-aware climb active',
+      body: `You are calibrated${level ? ` around ${level.toLowerCase()}` : ''}. I will mix nearby difficulty with cousin questions for the traps on your shelf.`,
+    }
+  }
+
+  return {
+    title: level ? `${level} path` : 'Adaptive path',
+    body: accuracy === null
+      ? 'The climb is now choosing questions near your current level, then gently stretching upward.'
+      : `You are running at ${Math.round(accuracy * 100)}% accuracy so far. I will keep the water just choppy enough to grow in.`,
+  }
+}
+
+function trapKeyFromTempting(value: string) {
+  return value.match(/^This is the ([^.]+)\./i)?.[1]?.toLowerCase() ?? null
+}
+
+function trapNameFromKey(value: string) {
+  return value
+    .split('-')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ')
+}
+
+function trapDomainName(key: string | null) {
+  if (!key) return 'Statistical thinking'
+  return CLIMBER_TRAP_DOMAINS[key] ?? trapNameFromKey(key)
+}
+
+function firstQuestionTrapKey(question: Question) {
+  for (const answer of question.answers) {
+    if (answer.correct) continue
+    for (const misconception of answer.misconceptions ?? []) {
+      const key = trapKeyFromTempting(misconception.tempting)
+      if (key) return key
+    }
+  }
+  return null
+}
+
+function questionTrapKeys(question: Question) {
+  const keys = new Set<string>()
+  for (const answer of question.answers) {
+    if (answer.correct) continue
+    for (const misconception of answer.misconceptions ?? []) {
+      const key = trapKeyFromTempting(misconception.tempting)
+      if (key) keys.add(key)
+    }
+  }
+  return keys
+}
+
 function questionRarity(question: { kind: string; xp: number }): string {
   if (question.kind === 'deep' && question.xp >= 18) return 'legendary'
   if (question.kind === 'deep') return 'epic'
@@ -235,7 +387,7 @@ export function TrainerScreen() {
   }
 
   const {
-    selectedTrackInfo, isSelectedCatalogReady, activeSet, baseQuestion, question, visibleAnswers, remixSeed, catalogError,
+    selectedTrackInfo, isSelectedCatalogReady, courseQuestions, activeSet, baseQuestion, question, visibleAnswers, remixSeed, catalogError,
   } = useQuizData()
 
   const [armedAnswerId, setArmedAnswerId] = useState<string | null>(null)
@@ -244,6 +396,7 @@ export function TrainerScreen() {
   const [showThoughts, setShowThoughts] = useState(false)
   const [attentionTool, setAttentionTool] = useState<'ask' | 'hint' | 'teach' | null>(null)
   const [ratingSyncState, setRatingSyncState] = useState<'idle' | 'saving' | 'saved' | 'local' | 'failed'>('idle')
+  const [retiredTrapName, setRetiredTrapName] = useState<string | null>(null)
 
   useEffect(() => {
     setCalculatorInput('')
@@ -278,6 +431,44 @@ export function TrainerScreen() {
   // capped at 2 rounds / 8 questions per run. Long lesson buckets can keep all
   // their questions, but one play-through still moves on after the familiar
   // short session length.
+  const adaptiveStatisticsAttemptedCount = selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID
+    ? courseQuestions.filter((item) => progress.reviews[item.id]).length
+    : 0
+  const adaptiveStatisticsAttemptedIds = useMemo(
+    () => new Set(Object.keys(progress.reviews).map((key) => Number(key))),
+    [progress.reviews],
+  )
+  const adaptiveStatisticsSolvedIds = useMemo(
+    () => new Set(progress.solved),
+    [progress.solved],
+  )
+  const adaptiveStatisticsCourseQuestionIds = useMemo(
+    () => new Set(courseQuestions.map((item) => item.id)),
+    [courseQuestions],
+  )
+  const adaptiveStatisticsActiveTrapCount = selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID
+    ? misconceptionArtifacts.filter((item) => adaptiveStatisticsCourseQuestionIds.has(item.questionId) && !item.clearedAt).length
+    : 0
+  const adaptiveStatisticsAccuracy = selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID && adaptiveStatisticsAttemptedCount > 0
+    ? courseQuestions.filter((item) => adaptiveStatisticsAttemptedIds.has(item.id) && adaptiveStatisticsSolvedIds.has(item.id)).length / adaptiveStatisticsAttemptedCount
+    : null
+  const adaptiveStatisticsLevel = selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID
+    ? adaptiveStatisticsLevelLabel(courseQuestions, adaptiveStatisticsSolvedIds, adaptiveStatisticsAttemptedIds)
+    : null
+  const adaptiveStatisticsCurrentAhaKey = selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID &&
+    question.id >= ADAPTIVE_STATISTICS_CALIBRATION_ID_MIN &&
+    question.id <= ADAPTIVE_STATISTICS_CALIBRATION_ID_MAX
+    ? firstQuestionTrapKey(question)
+    : null
+  const adaptiveStatisticsAhaMoment = selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID &&
+    Boolean(selectedAnswerId) &&
+    isCorrect &&
+    adaptiveStatisticsCurrentAhaKey
+    ? {
+      title: trapDomainName(adaptiveStatisticsCurrentAhaKey),
+      insight: CLIMBER_AHA_INSIGHTS[adaptiveStatisticsCurrentAhaKey] ?? 'A new statistics lens just joined your climb map.',
+    }
+    : null
   const lessonLength = Math.min(activeSet.length, 8)
   const roundPlan = useMemo(() => {
     const n = lessonLength
@@ -310,10 +501,31 @@ export function TrainerScreen() {
   const selectedMisconceptions = answerMisconceptions(question, selectedAnswer)
   const learningSupport = buildLearningSupport(question, selectedAnswer)
   const learnPrimerText = learningSupport.lessonParagraphs[0]
-  const showLearnPrimer = teachBeforeQuestion && mode === 'daily' && index === 0 && !selectedAnswerId && Boolean(learnPrimerText)
+  const showLearnPrimer = selectedTrackInfo.id !== ADAPTIVE_STATISTICS_TRACK_ID &&
+    teachBeforeQuestion &&
+    mode === 'daily' &&
+    index === 0 &&
+    !selectedAnswerId &&
+    Boolean(learnPrimerText)
   const lessonIntro = question.subTopic ? LESSON_INTROS[question.subTopic] : undefined
+  const adaptiveStatisticsStatusLabel = selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID
+    ? adaptiveStatisticsAttemptedCount < ADAPTIVE_STATISTICS_WARMUP_COUNT
+      ? selectedAnswerId
+        ? 'Level signal saved'
+        : 'Finding your level'
+      : adaptiveStatisticsLevel ? `Flow: ${adaptiveStatisticsLevel}` : 'Adaptive flow'
+    : null
+  const adaptiveStatisticsCoach = selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID
+    ? adaptiveStatisticsCoachNote({
+      attemptedCount: adaptiveStatisticsAttemptedCount,
+      accuracy: adaptiveStatisticsAccuracy,
+      activeTrapCount: adaptiveStatisticsActiveTrapCount,
+      level: adaptiveStatisticsLevel,
+    })
+    : null
   useEffect(() => {
     setRatingSyncState('idle')
+    setRetiredTrapName(null)
   }, [question.id, remixSeed])
 
   const rateQuestion = useCallback(async (rating: number) => {
@@ -403,6 +615,19 @@ export function TrainerScreen() {
       playComboSound(newCombo)
       playRewardVoiceSound(newCombo >= 3 ? 'combo' : 'success')
       clearMisconception(question.id)
+      if (selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID) {
+        const currentTrapKeys = questionTrapKeys(question)
+        const matchingTrap = misconceptionArtifacts.find((item) => {
+          if (item.clearedAt || item.questionId === question.id) return false
+          const key = trapKeyFromTempting(item.tempting)
+          return Boolean(key && currentTrapKeys.has(key))
+        })
+        if (matchingTrap) {
+          const key = trapKeyFromTempting(matchingTrap.tempting)
+          clearMisconception(matchingTrap.questionId)
+          setRetiredTrapName(key ? trapNameFromKey(key) : 'Thinking Trap')
+        }
+      }
       const firstSolve = !progress.solved.includes(question.id)
       const bossBonus = isBossBattle && firstSolve && !bossAlreadyWon ? bossRewardFor(stageNumber, progress.streak) : 0
       const baseXpGain = question.xp + (newCombo >= 5 ? 5 : newCombo >= 3 ? 2 : 0)
@@ -483,6 +708,16 @@ export function TrainerScreen() {
 
   const nextQuestion = () => {
     setLastXpGain(null)
+    if (selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID) {
+      setIndex(0)
+      incrementAnswerShuffleSeed()
+      setSelectedAnswerId(null)
+      setArmedAnswerId(null)
+      setShowHint(false)
+      setShowLesson(false)
+      return
+    }
+
     const nextIndex = index + 1
     const lessonComplete = nextIndex >= lessonLength
 
@@ -611,6 +846,10 @@ export function TrainerScreen() {
             transition={{ duration: 0.22 }}
           >
             <span className={`rarity-badge rarity-${rarity}`}>{isBossBattle ? (isSecretBoss ? 'Secret Boss' : 'Boss Battle') : rarityLabels[rarity]}</span>
+            {' '}
+            {adaptiveStatisticsStatusLabel && (
+              <span className="adaptive-climber-status">{adaptiveStatisticsStatusLabel}</span>
+            )}
 
             <div className="question-heading">
               <Brain />
@@ -639,6 +878,17 @@ export function TrainerScreen() {
                 <button type="button" onClick={() => setShowLesson(true)}>
                   <BookOpen size={15} /> Deep dive
                 </button>
+              </div>
+            )}
+
+            {adaptiveStatisticsCoach && (
+              <div className="climber-coach-note">
+                <Sparkles size={17} />
+                <div>
+                  <span>Climber coach</span>
+                  <strong>{adaptiveStatisticsCoach.title}</strong>
+                  <p>{adaptiveStatisticsCoach.body}</p>
+                </div>
               </div>
             )}
 
@@ -828,13 +1078,29 @@ export function TrainerScreen() {
                     </div>
                   </div>
 
+                  {adaptiveStatisticsAhaMoment && (
+                    <motion.div
+                      className="climber-aha-lit"
+                      initial={{ opacity: 0, y: 10, scale: 0.98 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      transition={{ delay: 0.04, type: 'spring', stiffness: 260, damping: 20 }}
+                    >
+                      <div>
+                        <span>Aha lit</span>
+                        <strong>{adaptiveStatisticsAhaMoment.title}</strong>
+                      </div>
+                      <p>{adaptiveStatisticsAhaMoment.insight}</p>
+                      <small>Saved to your Aha Library. Floe will build from this ledge.</small>
+                    </motion.div>
+                  )}
+
                   {isCorrect && !focusMode && <XpPopup xp={lastXpGain} onDone={() => setLastXpGain(null)} />}
 
                   {!isCorrect && selectedMisconceptions.length > 0 && (
                     <motion.div className="misconceptions" initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }}>
                       <div className="museum-capture">
-                        <span>Captured for review</span>
-                        <strong>This misconception is now on your shelf.</strong>
+                        <span>{selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID ? 'Caught trap' : 'Captured for review'}</span>
+                        <strong>{selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID ? 'You caught a pattern in your thinking.' : 'This misconception is now on your shelf.'}</strong>
                         <small>
                           You chose {selectedAnswer.label}. Correct path: {question.answers.find((answer) => answer.correct)?.label ?? 'the best-matching answer'}.
                         </small>
@@ -853,6 +1119,14 @@ export function TrainerScreen() {
                     <motion.div className="museum-capture cleared" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}>
                       <span>Museum cleared</span>
                       <strong>You retired a misconception from the shelf.</strong>
+                    </motion.div>
+                  )}
+
+                  {isCorrect && retiredTrapName && (
+                    <motion.div className="museum-capture cleared climber-trap-retired" initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}>
+                      <span>Lens sharpened</span>
+                      <strong>{retiredTrapName} retired.</strong>
+                      <small>You met the same idea in a new costume and saw through it.</small>
                     </motion.div>
                   )}
 

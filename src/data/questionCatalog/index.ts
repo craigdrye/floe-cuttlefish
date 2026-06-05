@@ -1,4 +1,5 @@
 import type { AgeGroup } from '../ageCatalog'
+import { adaptiveStatisticsCalibrationQuestions } from './adaptiveStatisticsCalibration'
 import { defaultQuestionScaffold } from './base'
 import type { Question, Topic } from './types'
 
@@ -132,7 +133,11 @@ const universityPrepTrackIds = new Set([
   'uxResearch',
 ])
 
+const ADAPTIVE_STATISTICS_TRACK_ID = 'adaptiveStatistics'
+
 export function questionCatalogKeyForTrack(trackId: string, ageGroup: AgeGroup): string | null {
+  if (trackId === ADAPTIVE_STATISTICS_TRACK_ID) return 'adaptive-statistics'
+
   if (ageGroup === 'high') {
     if (highMathTrackIds.has(trackId)) return 'high-math'
     if (highAdvancedTrackIds.has(trackId)) return 'high-advanced'
@@ -180,6 +185,101 @@ export async function loadQuestionCatalog(catalogKey: string) {
     }
   }
   return enrichLoadedCatalogHints(catalogKey, catalog)
+}
+
+const STATISTICS_SOURCE_CATALOGS = [
+  'primary',
+  'high-math',
+  'high-advanced',
+  'high-generated',
+  'university-college',
+  'university-academic',
+  'university-generated',
+  'career',
+] as const
+
+const STATISTICS_TRACK_HINTS = [
+  'statistics',
+  'apstatistics',
+  'col-high-school-statistics',
+  'researchmethods',
+  'introDataScience',
+  'mathDiagnostics',
+  'statisticsIntro',
+]
+
+const STATISTICS_TEXT_RE = /\b(statistics?|probability|probabilities|random variable|random variables|random sample|randomized trial|sampling distribution|sampling bias|survey design|observational study|normal distribution|z-score|percentile|median|iqr|interquartile|quartile|variance|standard deviation|correlation|regression|residual|p-value|hypothesis test|confidence interval|statistical inference|chi-square|expected value|bayes|sensitivity|specificity|false positive|false negative|auc)\b/i
+
+function looksLikeStatisticsQuestion(trackId: string, question: Question) {
+  const track = trackId.toLowerCase()
+  if (STATISTICS_TRACK_HINTS.some((hint) => track.includes(hint.toLowerCase()))) return true
+  if (question.topic === 'Statistics' || question.topic === 'Probability' || question.topic === 'Expected value') return true
+
+  const text = [
+    question.topic,
+    question.chapter,
+    question.title,
+    question.prompt,
+    question.fieldNote,
+    question.mentorHint,
+    question.lesson,
+    question.setup?.join(' '),
+  ].filter(Boolean).join(' ')
+
+  return STATISTICS_TEXT_RE.test(text)
+}
+
+async function buildAdaptiveStatisticsCatalog(): Promise<Record<string, Question[]>> {
+  const entries: Array<{ sourceCatalog: string; sourceTrack: string; question: Question }> = []
+
+  for (const catalogKey of STATISTICS_SOURCE_CATALOGS) {
+    const catalog = await loadQuestionCatalog(catalogKey)
+    for (const [trackId, questions] of Object.entries(catalog)) {
+      for (const question of questions) {
+        if (looksLikeStatisticsQuestion(trackId, question)) {
+          entries.push({ sourceCatalog: catalogKey, sourceTrack: trackId, question })
+        }
+      }
+    }
+  }
+
+  const seen = new Set<string>()
+  for (const question of adaptiveStatisticsCalibrationQuestions) {
+    const correct = question.answers.find((answer) => answer.correct)?.label.toLowerCase() ?? ''
+    seen.add(`${question.prompt.replace(/\s+/g, ' ').trim().toLowerCase()}::${correct}`)
+  }
+
+  const pooledQuestions = entries
+    .sort((a, b) => (
+      `${a.sourceCatalog}:${a.sourceTrack}:${a.question.id}`.localeCompare(`${b.sourceCatalog}:${b.sourceTrack}:${b.question.id}`)
+    ))
+    .filter(({ question }) => {
+      const correct = question.answers.find((answer) => answer.correct)?.label.toLowerCase() ?? ''
+      const key = `${question.prompt.replace(/\s+/g, ' ').trim().toLowerCase()}::${correct}`
+      if (seen.has(key)) return false
+      seen.add(key)
+      return true
+    })
+    .map(({ sourceCatalog, sourceTrack, question }, index) => ({
+      ...question,
+      id: 880000000 + index,
+      chapter: 'Adaptive Statistics Lab',
+      subTopic: undefined,
+      source: `${question.source ?? sourceTrack} · ${sourceCatalog}`,
+      collection: question.collection ?? {
+        collectionId: 'adaptive-statistics',
+        collectionLabel: 'Adaptive Statistics Lab',
+        sourceName: 'Floe statistics aggregate',
+        sourceLicense: 'platform-mixed' as const,
+        sourceTrackId: sourceTrack,
+        sourceChapter: question.chapter,
+        ingestionStage: 'mapped' as const,
+        candidateTrackIds: [ADAPTIVE_STATISTICS_TRACK_ID],
+        topicTags: ['statistics', sourceCatalog, sourceTrack],
+      },
+    }))
+
+  return { [ADAPTIVE_STATISTICS_TRACK_ID]: [...adaptiveStatisticsCalibrationQuestions, ...pooledQuestions] }
 }
 
 const TOPICS_WITH_SCAFFOLD_HINTS: Topic[] = [
@@ -317,6 +417,8 @@ async function loadQuestionCatalogRaw(catalogKey: string): Promise<Record<string
       const module = await import('./career')
       return module.buildCareerQuestionCatalog()
     }
+    case 'adaptive-statistics':
+      return buildAdaptiveStatisticsCatalog()
     case 'kolibri': {
       const module = await import('./kolibri')
       return module.buildKolibriQuestionCatalog()

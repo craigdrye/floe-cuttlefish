@@ -23,6 +23,7 @@ const LESSON_MASTERY_ACCURACY = 0.8
 // the current lesson's questions (regardless of accuracy), matching the
 // brief's "80% accuracy OR 8 of 10 answered" rule.
 const LESSON_UNLOCK_ANSWERED_MIN = 8
+const ADAPTIVE_STATISTICS_TRACK_ID = 'adaptiveStatistics'
 
 function computeStarScore(correct: number, answered: number, total: number): number {
   if (total <= 0) return 0
@@ -247,6 +248,23 @@ export function ChapterSubMapScreen() {
           <p>
             {totalAnswered}/{totalQuestions} answered &middot; {overallPct}% answered &middot; {chapterLessons.length} lesson{chapterLessons.length === 1 ? '' : 's'}
           </p>
+          {selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID && (
+            <>
+              <p>
+                Start anywhere: Floe uses the whole statistics pool and keeps tuning the next questions as you play.
+              </p>
+              <div className="adaptive-ideas-card" aria-label="Adaptive statistics learning goals">
+                <div>
+                  <span>Climb toward</span>
+                  <strong>Seeing evidence clearly: signal, noise, risk, bias, and the shape hidden inside uncertainty.</strong>
+                </div>
+                <div>
+                  <span>Watch for</span>
+                  <strong>Percent traps, average traps, cherry-picked samples, and patterns that feel real before they are tested.</strong>
+                </div>
+              </div>
+            </>
+          )}
           {showFlashcards && (
             <button className="chapter-flashcard-button" onClick={openFlashcards} type="button">
               <BookOpenCheck size={16} /> {flashcards.length} flashcards

@@ -19,6 +19,7 @@ import {
 } from '../lib/quizRuntime'
 import { buildLessonsForChapter } from '../lib/lessonGrouping'
 import type { Question } from '../data/questionCatalog/types'
+import type { MisconceptionArtifact } from '../store/types'
 
 const MAP_BACKGROUNDS = [
   '/assets/reef/reef-world-scroll_long1.png',
@@ -38,6 +39,10 @@ const MAP_BACKGROUNDS = [
 
 const MAX_VISIBLE_CHAPTER_GROUPS = 10
 const MAP_STAGE_COUNT = 4
+const ADAPTIVE_STATISTICS_TRACK_ID = 'adaptiveStatistics'
+const ADAPTIVE_STATISTICS_WARMUP_COUNT = 6
+const ADAPTIVE_STATISTICS_CALIBRATION_ID_MIN = 881000001
+const ADAPTIVE_STATISTICS_CALIBRATION_ID_MAX = 881000020
 
 type ChapterGroup = {
   label: string
@@ -83,12 +88,175 @@ function buildChapterGroups(courseQuestions: ReturnType<typeof buildTrackQuiz>):
   return groups
 }
 
+function adaptiveStatsDifficulty(question: Question, selectedAge: ReturnType<typeof useStore.getState>['selectedAge']) {
+  return question.difficulty ?? defaultDifficultyFor(question, selectedAge)
+}
+
+function trapKeyFromTempting(value: string) {
+  return value.match(/^This is the ([^.]+)\./i)?.[1]?.toLowerCase() ?? null
+}
+
+function questionTrapKeys(question: Question) {
+  const keys = new Set<string>()
+  for (const answer of question.answers) {
+    if (answer.correct) continue
+    for (const misconception of answer.misconceptions ?? []) {
+      const key = trapKeyFromTempting(misconception.tempting)
+      if (key) keys.add(key)
+    }
+  }
+  return keys
+}
+
+function warmupStatisticsOrder(questions: Question[], seed: number, selectedAge: ReturnType<typeof useStore.getState>['selectedAge']) {
+  const authoredCalibration = questions
+    .filter((question) => (
+      question.id >= ADAPTIVE_STATISTICS_CALIBRATION_ID_MIN &&
+      question.id <= ADAPTIVE_STATISTICS_CALIBRATION_ID_MAX
+    ))
+    .sort((a, b) => a.id - b.id)
+    .slice(0, ADAPTIVE_STATISTICS_WARMUP_COUNT)
+  const authoredIds = new Set(authoredCalibration.map((question) => question.id))
+  if (authoredCalibration.length >= ADAPTIVE_STATISTICS_WARMUP_COUNT) {
+    const rest = shuffledQuestions(
+      questions.filter((question) => !authoredIds.has(question.id)),
+      (seed ^ 0x6d2b79f5) >>> 0,
+    )
+    return [...authoredCalibration, ...rest]
+  }
+
+  const buckets = new Map<number, Question[]>()
+  for (const question of questions) {
+    if (authoredIds.has(question.id)) continue
+    const difficulty = adaptiveStatsDifficulty(question, selectedAge)
+    buckets.set(difficulty, [...(buckets.get(difficulty) ?? []), question])
+  }
+
+  const shuffledBuckets = [1, 2, 3, 4, 5].map((difficulty) => ({
+    difficulty,
+    questions: shuffledQuestions(buckets.get(difficulty) ?? [], (seed ^ (difficulty * 0x45d9f3b)) >>> 0),
+  }))
+
+  const diagnostic: Question[] = [...authoredCalibration]
+  for (let round = 0; diagnostic.length < ADAPTIVE_STATISTICS_WARMUP_COUNT; round += 1) {
+    let addedThisRound = false
+    for (const bucket of shuffledBuckets) {
+      const next = bucket.questions[round]
+      if (!next) continue
+      diagnostic.push(next)
+      addedThisRound = true
+      if (diagnostic.length >= ADAPTIVE_STATISTICS_WARMUP_COUNT) break
+    }
+    if (!addedThisRound) break
+  }
+
+  const diagnosticIds = new Set(diagnostic.map((question) => question.id))
+  const rest = shuffledQuestions(
+    questions.filter((question) => !diagnosticIds.has(question.id)),
+    (seed ^ 0x6d2b79f5) >>> 0,
+  )
+
+  return [...diagnostic, ...rest]
+}
+
+function adaptiveQuestionRating(question: Question, selectedAge: ReturnType<typeof useStore.getState>['selectedAge']) {
+  return adaptiveStatsDifficulty(question, selectedAge)
+}
+
+function expectedAdaptiveSuccess(playerRating: number, questionRating: number) {
+  return 1 / (1 + Math.pow(10, (questionRating - playerRating) / 1.2))
+}
+
+function adaptiveStatisticsPlayerRating(
+  questions: Question[],
+  selectedAge: ReturnType<typeof useStore.getState>['selectedAge'],
+  solvedIds: Set<number>,
+  attemptedIds: Set<number>,
+) {
+  const attempted = questions.filter((question) => attemptedIds.has(question.id))
+  if (!attempted.length) return 2.4
+
+  let rating = 2.4
+  const ordered = attempted.slice().sort((a, b) => a.id - b.id)
+  ordered.forEach((question, index) => {
+    const itemRating = adaptiveQuestionRating(question, selectedAge)
+    const expected = expectedAdaptiveSuccess(rating, itemRating)
+    const actual = solvedIds.has(question.id) ? 1 : 0
+    const speed = Math.max(0.16, 0.62 - index * 0.025)
+    rating += speed * (actual - expected)
+    rating = Math.max(1, Math.min(5, rating))
+  })
+  return rating
+}
+
+function buildAdaptiveStatisticsOrder(
+  questions: Question[],
+  seed: number,
+  selectedAge: ReturnType<typeof useStore.getState>['selectedAge'],
+  solvedIds: Set<number>,
+  attemptedIds: Set<number>,
+  misconceptionArtifacts: MisconceptionArtifact[],
+) {
+  const attempted = questions.filter((question) => attemptedIds.has(question.id))
+  if (attempted.length < ADAPTIVE_STATISTICS_WARMUP_COUNT) {
+    const warmup = warmupStatisticsOrder(questions, seed, selectedAge)
+    return [
+      ...warmup.filter((question) => !attemptedIds.has(question.id)),
+      ...warmup.filter((question) => attemptedIds.has(question.id)),
+    ]
+  }
+  const target = adaptiveStatisticsPlayerRating(questions, selectedAge, solvedIds, attemptedIds)
+  const activeTrapKeys = new Set(
+    misconceptionArtifacts
+      .filter((item) => !item.clearedAt)
+      .map((item) => trapKeyFromTempting(item.tempting))
+      .filter((key): key is string => Boolean(key)),
+  )
+
+  const unseen = questions.filter((question) => !attemptedIds.has(question.id))
+  const seen = questions.filter((question) => attemptedIds.has(question.id))
+  const candidatePool = unseen.length >= 12 ? unseen : [...unseen, ...seen]
+  const ordered = shuffledQuestions(candidatePool, seed)
+    .map((question, orderIndex) => {
+      const questionRating = adaptiveQuestionRating(question, selectedAge)
+      const fitDistance = Math.abs(questionRating - target)
+      const stretchBonus = questionRating > target && questionRating <= target + 0.9 ? -0.08 : 0
+      const easePenalty = questionRating < target - 1.2 ? 0.16 : 0
+      const repeatPenalty = attemptedIds.has(question.id) ? 1.35 : 0
+      return {
+        question,
+        score: fitDistance + stretchBonus + easePenalty + repeatPenalty + orderIndex * 0.0001,
+      }
+    })
+    .sort((a, b) => a.score - b.score)
+    .map((item) => item.question)
+  const trapPractice = activeTrapKeys.size > 0
+    ? ordered.filter((question) => {
+      const keys = questionTrapKeys(question)
+      return [...activeTrapKeys].some((key) => keys.has(key))
+    })
+    : []
+  const trapPracticeIds = new Set(trapPractice.map((question) => question.id))
+  const trapAwareOrdered = trapPractice.length > 0
+    ? [...trapPractice, ...ordered.filter((question) => !trapPracticeIds.has(question.id))]
+    : ordered
+
+  const remainingIds = new Set(trapAwareOrdered.map((question) => question.id))
+  const remaining = shuffledQuestions(
+    questions.filter((question) => !remainingIds.has(question.id)),
+    (seed ^ 0x51ed270b) >>> 0,
+  )
+
+  return [...trapAwareOrdered, ...remaining]
+}
+
 export function useQuizData() {
   const {
     selectedTrack,
     selectedAge,
     mode,
     index,
+    selectedAnswerId,
     remixSeeds,
     wordingModes,
     answerShuffleSeed,
@@ -222,7 +390,9 @@ export function useQuizData() {
     return hard.length >= 4 ? hard : courseQuestions
   }, [courseQuestions, selectedAge])
 
-  const rawActiveSet = chapterQuestions
+  const rawActiveSet = selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID
+    ? courseQuestions
+    : chapterQuestions
     ?? (mode === 'review' && reviewQuestions.length > 0
       ? reviewQuestions
       : mode === 'doom'
@@ -236,12 +406,28 @@ export function useQuizData() {
   // Keyed on identity of rawActiveSet, sessionToken, and selectedAge so the
   // sequence stays stable while the player is mid-session and only changes
   // when they start a new one (track switch / reset / etc).
-  const activeSet = useMemo(() => {
+  const computedActiveSet = useMemo(() => {
     if (!rawActiveSet.length) return rawActiveSet
     // Mix a hash of the session token + a track-id hash into a numeric seed.
     const seed = (hashForAnswerCount(sessionToken) ^ hashForAnswerCount(selectedTrackInfo.id)) >>> 0
+    if (selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID) {
+      const solvedIds = new Set(progress.solved)
+      const attemptedIds = new Set(Object.keys(progress.reviews).map((key) => Number(key)))
+      return buildAdaptiveStatisticsOrder(rawActiveSet, seed, selectedAge, solvedIds, attemptedIds, misconceptionArtifacts)
+    }
     return buildAdaptiveOrder(rawActiveSet, seed, selectedAge)
-  }, [rawActiveSet, sessionToken, selectedAge, selectedTrackInfo.id])
+  }, [misconceptionArtifacts, progress.reviews, progress.solved, rawActiveSet, sessionToken, selectedAge, selectedTrackInfo.id])
+  const [adaptiveOrderSnapshot, setAdaptiveOrderSnapshot] = useState<Question[] | null>(null)
+
+  useEffect(() => {
+    if (selectedTrackInfo.id !== ADAPTIVE_STATISTICS_TRACK_ID) return
+    if (selectedAnswerId) return
+    setAdaptiveOrderSnapshot(computedActiveSet)
+  }, [computedActiveSet, selectedAnswerId, selectedTrackInfo.id])
+
+  const activeSet = selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID && selectedAnswerId && adaptiveOrderSnapshot
+    ? adaptiveOrderSnapshot
+    : computedActiveSet
 
   // Pick the safety-net bank by the user's age group so the fallback voice
   // matches the audience (8-yr-old vs career-changer). Falls back to the

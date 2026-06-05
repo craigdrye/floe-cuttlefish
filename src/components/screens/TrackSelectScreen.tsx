@@ -10,7 +10,7 @@ import { inferCourseDepthCategory, type CourseDepthCategory } from '../../lib/co
 import type { AdultFocusOption } from '../../store/useStore'
 
 type LibraryMode = 'courses' | 'games'
-type GameCategory = 'Top' | 'Guess' | 'Mystery' | 'Word' | 'Math' | 'Arcade'
+type GameCategory = 'Top' | 'Climber' | 'Guess' | 'Mystery' | 'Word' | 'Math' | 'Arcade'
 
 interface Props {
   mode?: LibraryMode
@@ -212,7 +212,9 @@ const STANDALONE_GAMES: Array<{
   },
 ]
 
-const GAME_CATEGORIES: GameCategory[] = ['Top', 'Guess', 'Mystery', 'Word', 'Math', 'Arcade']
+const GAME_CATEGORIES: GameCategory[] = ['Top', 'Climber', 'Guess', 'Mystery', 'Word', 'Math', 'Arcade']
+const LAZY_COUNT_CATALOG_KEYS = new Set(['adaptive-statistics'])
+const ADAPTIVE_STATISTICS_TRACK_ID = 'adaptiveStatistics'
 
 const TOP_GUESS_TRACK_IDS = new Set([
   'guessTheThing',
@@ -226,6 +228,10 @@ const TOP_GUESS_TRACK_IDS = new Set([
 
 function isGuessTrack(track: { id: string }) {
   return track.id.startsWith('guess')
+}
+
+function isClimberTrack(track: { id: string }) {
+  return track.id === ADAPTIVE_STATISTICS_TRACK_ID
 }
 
 function guessShelfTitle(title: string) {
@@ -444,17 +450,18 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
   }
 
   const guessTracks = useMemo(() => allTracks.filter(isGuessTrack), [])
+  const climberTracks = useMemo(() => allTracks.filter(isClimberTrack), [])
 
   // Filter helper: split tracks by their kind (guess-style = games, otherwise courses)
   const filterByKind = useCallback((tracks: ReturnType<typeof getFilteredTracks>) =>
     tracks.filter((track) => {
-      const isGame = isGuessTrack(track)
+      const isGame = isGuessTrack(track) || isClimberTrack(track)
       return mode === 'games' ? isGame : !isGame
     }), [mode])
 
   const finalDisciplines = useMemo(() => {
     const ageFilteredTracks = mode === 'games'
-      ? guessTracks
+      ? [...guessTracks, ...climberTracks]
       : filterByKind(getFilteredTracks(selectedAge, selectedStageDetail, 'All'))
     const availableTopicIds = new Set(ageFilteredTracks.flatMap((track) => inferTrackTopicIds(track)))
 
@@ -484,18 +491,19 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
       'All',
       ...restrictedTopics.map((topic) => topic.label),
     ]
-  }, [filterByKind, guessTracks, mode, professionalCourseNav, selectedAge, selectedStageDetail, selectedInterests])
+  }, [climberTracks, filterByKind, guessTracks, mode, professionalCourseNav, selectedAge, selectedStageDetail, selectedInterests])
 
   const visibleTracks = useMemo(() => {
     const applyKind = (tracks: ReturnType<typeof getFilteredTracks>) => filterByKind(tracks)
 
     if (mode === 'games') {
+      const gameTracks = [...guessTracks, ...climberTracks]
       if (selectedDiscipline === 'All') {
-        return guessTracks
+        return gameTracks
       }
       const topic = courseTopics.find((item) => item.label === selectedDiscipline)
-      if (topic) return guessTracks.filter((track) => inferTrackTopicIds(track).includes(topic.id))
-      return guessTracks.filter((track) => track.discipline === selectedDiscipline)
+      if (topic) return gameTracks.filter((track) => inferTrackTopicIds(track).includes(topic.id))
+      return gameTracks.filter((track) => track.discipline === selectedDiscipline)
     }
 
     if (selectedDiscipline === 'For you') {
@@ -529,13 +537,14 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
     if (topic) return applyKind(getPersonalizedTracks(selectedAge, selectedStageDetail, [topic.id]))
 
     return applyKind(getFilteredTracks(selectedAge, selectedStageDetail, selectedDiscipline))
-  }, [bossWins, filterByKind, guessTracks, mode, progress.workedTrackIds, selectedAge, selectedDiscipline, selectedInterests, selectedStageDetail])
+  }, [bossWins, climberTracks, filterByKind, guessTracks, mode, progress.workedTrackIds, selectedAge, selectedDiscipline, selectedInterests, selectedStageDetail])
 
   useEffect(() => {
     const neededCatalogKeys = Array.from(
       new Set(
         visibleTracks
           .map((track) => questionCatalogKeyForTrack(track.id, track.ageGroup))
+          .filter((catalogKey) => !catalogKey || !LAZY_COUNT_CATALOG_KEYS.has(catalogKey))
           .filter((catalogKey): catalogKey is string => Boolean(catalogKey)),
       ),
     )
@@ -600,7 +609,8 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
       : visibleTracksWithCounts
 
     if (mode !== 'games') return tracks
-    if (gameCategory === 'Guess') return tracks
+    if (gameCategory === 'Climber') return tracks.filter(isClimberTrack)
+    if (gameCategory === 'Guess') return tracks.filter(isGuessTrack)
     if (gameCategory === 'Top') return tracks.filter((track) => TOP_GUESS_TRACK_IDS.has(track.id))
     return []
   }, [visibleTracksWithCounts, showCourseTierRow, courseTier, mode, gameCategory])
@@ -611,7 +621,7 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
   )
 
   const playableGuessTracks = useMemo(
-    () => mode === 'games' ? displayTracks.filter((track) => track.status === 'playable') : [],
+    () => mode === 'games' ? displayTracks.filter((track) => isGuessTrack(track) && track.status === 'playable') : [],
     [displayTracks, mode],
   )
 
@@ -621,6 +631,14 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
     setSelectedAnswerId(null)
     setShowHint(false)
     setScreen('guessGift')
+  }, [setIndex, setScreen, setSelectedAnswerId, setSelectedTrack, setShowHint])
+
+  const launchCourseTrack = useCallback((trackId: string) => {
+    setSelectedTrack(trackId)
+    setIndex(0)
+    setSelectedAnswerId(null)
+    setShowHint(false)
+    setScreen('map')
   }, [setIndex, setScreen, setSelectedAnswerId, setSelectedTrack, setShowHint])
 
   const launchSurpriseGuess = useCallback(() => {
@@ -877,58 +895,67 @@ export function TrackSelectScreen({ mode = 'courses' }: Props = {}) {
                 </div>
               </button>
             )}
-            {displayTracks.map((track) => (
-              <button
-                key={`browse-${track.id}`}
-                className={`track-card compact ${mode === 'games' ? 'guess-game-card' : ''} ${track.status === 'soon' ? 'locked' : ''}`}
-                style={{ '--track': disciplineColors[track.discipline] || '#64748b' } as React.CSSProperties}
-                onClick={() => {
-                  if (track.status === 'playable') {
-                    // Guess games are arcade-style one-off loops; course progress should stay with courses.
-                    if (mode !== 'games' && !progress.workedTrackIds?.includes(track.id)) {
-                      setProgress((prev) => ({
-                        ...prev,
-                        workedTrackIds: [...(prev.workedTrackIds || []), track.id],
-                      }))
+            {displayTracks.map((track) => {
+              const isClimber = isClimberTrack(track)
+              const trackAccent = isClimber ? '#38bdf8' : disciplineColors[track.discipline] || '#64748b'
+              return (
+                <button
+                  key={`browse-${track.id}`}
+                  className={`track-card compact ${mode === 'games' ? isClimber ? 'climber-game-card' : 'guess-game-card' : ''} ${track.status === 'soon' ? 'locked' : ''}`}
+                  style={{ '--track': trackAccent } as React.CSSProperties}
+                  onClick={() => {
+                    if (track.status === 'playable') {
+                      // Guess games are arcade-style one-off loops; course progress should stay with courses.
+                      if (mode !== 'games' && !progress.workedTrackIds?.includes(track.id)) {
+                        setProgress((prev) => ({
+                          ...prev,
+                          workedTrackIds: [...(prev.workedTrackIds || []), track.id],
+                        }))
+                      }
+                      if (mode === 'games') {
+                        if (isClimber) {
+                          launchCourseTrack(track.id)
+                        } else {
+                          launchGuessTrack(track.id)
+                        }
+                      } else {
+                        launchCourseTrack(track.id)
+                      }
                     }
-                    if (mode === 'games') {
-                      launchGuessTrack(track.id)
-                    } else {
-                      setSelectedTrack(track.id)
-                      setIndex(0)
-                      setSelectedAnswerId(null)
-                      setShowHint(false)
-                      setScreen('map')
-                    }
-                  }
-                }}
-                >
-                <span className="track-icon">{mode === 'games' ? <Gift size={26} /> : track.icon}</span>
-                <span className="track-status">{mode === 'games' ? 'Mystery box' : track.discipline}</span>
-                <strong>{mode === 'games' ? guessShelfTitle(track.title) : track.title}</strong>
-                <span>{mode === 'games' ? guessShelfSubtitle(track) : track.subtitle}</span>
-                <div className="track-meta">
-                  <span className="skill-tags">
-                    {mode !== 'games' && inferTrackTopicIds(track).slice(0, 2).map((topicId) => (
-                      <small key={`${track.id}-${topicId}`} className="topic-tag">{topicLabelForId(topicId)}</small>
-                    ))}
-                    {mode === 'games' ? (
-                      <>
-                        <small>Open box</small>
-                        <small>Visual clue</small>
-                      </>
-                    ) : track.skills.map((skill) => (
-                      <small key={`${track.id}-${skill}`}>{skill}</small>
-                    ))}
-                  </span>
-                  {track.questionCount && (
-                    <span className="q-count-badge">
-                      {mode === 'games' ? <Gift size={10} /> : <Star size={10} />} {track.questionCount} {mode === 'games' ? 'mysteries' : 'questions'}
+                  }}
+                  >
+                  <span className="track-icon">{mode === 'games' ? isClimber ? <Flame size={26} /> : <Gift size={26} /> : track.icon}</span>
+                  <span className="track-status">{mode === 'games' ? isClimber ? 'Climber' : 'Mystery box' : track.discipline}</span>
+                  <strong>{mode === 'games' ? isClimber ? track.title : guessShelfTitle(track.title) : track.title}</strong>
+                  <span>{mode === 'games' ? isClimber ? track.subtitle : guessShelfSubtitle(track) : track.subtitle}</span>
+                  <div className="track-meta">
+                    <span className="skill-tags">
+                      {mode !== 'games' && inferTrackTopicIds(track).slice(0, 2).map((topicId) => (
+                        <small key={`${track.id}-${topicId}`} className="topic-tag">{topicLabelForId(topicId)}</small>
+                      ))}
+                      {mode === 'games' ? isClimber ? (
+                        <>
+                          <small>Finds your level</small>
+                          <small>Adaptive stream</small>
+                        </>
+                      ) : (
+                        <>
+                          <small>Open box</small>
+                          <small>Visual clue</small>
+                        </>
+                      ) : track.skills.map((skill) => (
+                        <small key={`${track.id}-${skill}`}>{skill}</small>
+                      ))}
                     </span>
-                  )}
-                </div>
-              </button>
-            ))}
+                    {track.questionCount && (
+                      <span className="q-count-badge">
+                        {mode === 'games' ? isClimber ? <Flame size={10} /> : <Gift size={10} /> : <Star size={10} />} {track.questionCount} {mode === 'games' ? isClimber ? 'questions' : 'mysteries' : 'questions'}
+                      </span>
+                    )}
+                  </div>
+                </button>
+              )
+            })}
           </div>
 
           {!displayTracks.length && mode === 'courses' && (

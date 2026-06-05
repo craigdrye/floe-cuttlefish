@@ -128,6 +128,32 @@
   font-size: 12px;
   line-height: 1.35;
 }
+
+.adaptive-climber-status {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: -2px 0 12px;
+  padding: 5px 9px;
+  border-radius: var(--r-full);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  background: rgba(224, 242, 254, 0.72);
+  color: #0369a1;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.adaptive-climber-status::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.14);
+}
 .sprint-chip {
   min-width: 88px;
   display: inline-flex;
@@ -485,6 +511,46 @@
   font-weight: 900;
   cursor: pointer;
   flex-shrink: 0;
+}
+
+.climber-coach-note {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  margin: 0 0 12px;
+  padding: 12px 14px;
+  border-radius: var(--r-md);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(167, 243, 208, 0.2), transparent 44%),
+    linear-gradient(135deg, rgba(240, 249, 255, 0.8), rgba(255, 255, 255, 0.55));
+  box-shadow: 0 10px 24px rgba(8, 33, 48, 0.06);
+}
+.climber-coach-note > svg {
+  margin-top: 2px;
+  color: #0284c7;
+}
+.climber-coach-note div {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+.climber-coach-note span {
+  color: #0284c7;
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.climber-coach-note strong {
+  color: var(--ocean-deep);
+  font-size: 13px;
+}
+.climber-coach-note p {
+  margin: 0;
+  color: #496b62;
+  font-size: 12.5px;
+  line-height: 1.42;
 }
 .question-media-grid {
   display: grid;
@@ -1042,6 +1108,165 @@
 .feedback-character-sad { animation: none; opacity: 0.8; }
 .feedback-title h3 { margin: 0; font-size: 15px; font-weight: 800; color: var(--ocean-deep); }
 
+.climber-aha-lit {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0;
+  padding: 13px 14px;
+  border-radius: var(--r-lg);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(253, 224, 71, 0.25), transparent 40%),
+    radial-gradient(circle at 94% 20%, rgba(45, 212, 191, 0.18), transparent 36%),
+    linear-gradient(135deg, rgba(255,255,255,0.82), rgba(255,251,235,0.68));
+  box-shadow: 0 12px 26px rgba(146, 64, 14, 0.08);
+}
+.climber-aha-lit div {
+  display: grid;
+  gap: 3px;
+}
+.climber-aha-lit span {
+  width: fit-content;
+  padding: 3px 8px;
+  border-radius: var(--r-full);
+  background: rgba(14, 116, 144, 0.09);
+  color: #0e7490;
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.climber-aha-lit strong {
+  color: var(--ocean-deep);
+  font-size: 15px;
+  line-height: 1.24;
+}
+.climber-aha-lit p {
+  margin: 0;
+  color: #3d6058;
+  font-size: 13.5px;
+  line-height: 1.48;
+}
+.climber-aha-lit small {
+  color: #55716d;
+  font-size: 11.5px;
+  font-weight: 850;
+}
+
+.climber-calibration-reveal {
+  display: grid;
+  gap: 12px;
+  margin: 12px 0;
+  padding: 14px;
+  border-radius: var(--r-lg);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  background:
+    radial-gradient(circle at 8% 0%, rgba(125, 211, 252, 0.2), transparent 42%),
+    radial-gradient(circle at 88% 12%, rgba(251, 191, 36, 0.14), transparent 38%),
+    linear-gradient(135deg, rgba(255,255,255,0.78), rgba(240,249,255,0.62));
+  box-shadow: 0 12px 30px rgba(8, 33, 48, 0.08);
+}
+.climber-calibration-reveal-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+.climber-calibration-reveal-header div:first-child {
+  display: grid;
+  gap: 3px;
+}
+.climber-calibration-reveal span,
+.climber-calibration-grid span {
+  color: #0284c7;
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.climber-calibration-reveal strong {
+  color: var(--ocean-deep);
+  font-size: 14px;
+  line-height: 1.24;
+}
+.climber-calibration-score {
+  min-width: 54px;
+  min-height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-md);
+  background: rgba(8, 33, 48, 0.82);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 950;
+  box-shadow: inset 0 -10px 18px rgba(0,0,0,0.12);
+}
+.climber-calibration-reveal p {
+  margin: 0;
+  color: #496b62;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.climber-calibration-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.climber-calibration-grid article {
+  min-height: 104px;
+  padding: 11px;
+  border: 1px solid rgba(31,122,98,0.12);
+  border-radius: var(--r-md);
+  background: rgba(255,255,255,0.6);
+}
+.climber-calibration-grid ul {
+  display: grid;
+  gap: 6px;
+  margin: 7px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.climber-calibration-grid li {
+  position: relative;
+  padding-left: 14px;
+  color: #355f5d;
+  font-size: 12px;
+  font-weight: 850;
+  line-height: 1.34;
+}
+.climber-calibration-grid li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #2ec4b6;
+  box-shadow: 0 0 0 3px rgba(46,196,182,0.12);
+}
+.climber-calibration-grid article > strong {
+  display: block;
+  margin-top: 7px;
+  color: #355f5d;
+  font-size: 12px;
+  line-height: 1.34;
+}
+.climber-calibration-reveal button {
+  min-height: 38px;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 13px;
+  border-radius: var(--r-full);
+  background: #1f7a62;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 950;
+  box-shadow: 0 8px 18px rgba(31, 122, 98, 0.22);
+}
+
 .solution {
   margin: 10px 0 0;
   padding: 10px 14px;
@@ -1067,6 +1292,15 @@
 }
 .museum-capture.cleared span {
   color: #047857;
+}
+.museum-capture.climber-trap-retired {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(56,189,248,0.16), transparent 42%),
+    rgba(16,185,129,0.12);
+  border-color: rgba(56,189,248,0.24);
+}
+.museum-capture.climber-trap-retired span {
+  color: #0369a1;
 }
 .museum-capture small {
   display: block;
@@ -1110,6 +1344,9 @@
   .adaptive-strip { align-items: stretch; flex-direction: column; }
   .learn-primer { align-items: stretch; flex-direction: column; }
   .learn-primer button { justify-content: center; }
+  .climber-calibration-reveal-header { align-items: stretch; flex-direction: column; }
+  .climber-calibration-score { width: fit-content; }
+  .climber-calibration-grid { grid-template-columns: 1fr; }
   .actions-toolbar .secondary { justify-content: flex-start; }
   .calculator-keypad { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .calculator-key { min-height: 30px; font-size: 13px; }

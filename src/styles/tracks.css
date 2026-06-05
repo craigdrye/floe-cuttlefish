@@ -590,6 +590,62 @@ body.deep-ocean .course-tier-tabs button.active {
     radial-gradient(circle at 30% 24%, rgba(251, 191, 36, 0.28), transparent 34%),
     linear-gradient(145deg, #fffdf8, #ccfbf1);
 }
+
+.track-card.climber-game-card {
+  min-height: 178px;
+  border-color: rgba(125, 211, 252, 0.42);
+  background:
+    radial-gradient(circle at 18% 4%, rgba(125, 211, 252, 0.24), transparent 32%),
+    radial-gradient(circle at 88% 12%, rgba(244, 114, 182, 0.14), transparent 38%),
+    linear-gradient(150deg, rgba(255,255,255,0.82), rgba(236,253,245,0.56));
+  box-shadow: 0 6px 18px rgba(8, 33, 48, 0.06);
+}
+
+.track-card.climber-game-card::before {
+  height: 0;
+}
+
+.track-card.climber-game-card:hover {
+  transform: translateY(-3px) rotate(0.25deg);
+  box-shadow: 0 10px 24px rgba(8, 33, 48, 0.09), 0 0 14px rgba(56, 189, 248, 0.14);
+}
+
+.track-card.climber-game-card .track-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 15px;
+  color: #0369a1;
+  background:
+    linear-gradient(145deg, #fffdf8, rgba(125, 211, 252, 0.18));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.72), 0 3px 8px rgba(8,33,48,0.06);
+}
+
+.track-card.climber-game-card .track-status {
+  width: fit-content;
+  padding: 3px 8px;
+  border-radius: var(--r-full);
+  background: rgba(255, 255, 255, 0.66);
+  color: #0369a1;
+  letter-spacing: 0.06em;
+}
+
+.track-card.climber-game-card strong {
+  font-size: 17px;
+}
+
+.track-card.climber-game-card .q-count-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: fit-content;
+  margin-top: 6px;
+  padding: 3px 8px;
+  border-radius: var(--r-full);
+  background: rgba(255,255,255,0.68);
+  color: #0369a1;
+  font-size: 11px;
+  font-weight: 800;
+}
 body.deep-ocean .track-card.standalone-game {
   background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
 }

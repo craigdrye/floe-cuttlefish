@@ -23,6 +23,7 @@ const CHAPTER_TARGET_CAP = 50
 const UNLOCK_QUESTIONS_THRESHOLD = 20
 // Accuracy threshold for "mastered" (also unlocks capstone).
 const MASTERY_ACCURACY = 0.8
+const ADAPTIVE_STATISTICS_TRACK_ID = 'adaptiveStatistics'
 
 type ChapterStats = {
   name: string
@@ -62,8 +63,8 @@ export function MapScreen() {
   const {
     progress, mode, setMode, setIndex, setSelectedAnswerId,
     setShowHint, setScreen, setSelectedTrack, pendingStageCelebration, setPendingStageCelebration,
-    selectedChapter, setSelectedChapter,
-    misconceptionArtifacts, bossWins,
+    selectedChapter, setSelectedChapter, setSelectedLesson,
+    bossWins,
   } = useStore()
 
   const {
@@ -197,8 +198,6 @@ export function MapScreen() {
   const totalAnswered = chapterStats.reduce((sum, c) => sum + c.attempted, 0)
   const totalQuestions = chapterStats.reduce((sum, c) => sum + c.totalQuestions, 0)
   const overallPct = totalQuestions > 0 ? Math.round((totalAnswered / totalQuestions) * 100) : 0
-  const activeMisconceptions = misconceptionArtifacts.filter((item) => !item.clearedAt).length
-  const retiredMisconceptions = misconceptionArtifacts.filter((item) => item.clearedAt).length
   const trackBossWins = bossWins.filter((boss) => boss.trackId === selectedTrackInfo.id).length
 
   const goBack = () => {
@@ -208,10 +207,16 @@ export function MapScreen() {
 
   const enterChapter = (name: string) => {
     setSelectedChapter(name)
+    setSelectedLesson(null)
     setMode('daily')
     setIndex(0)
     setSelectedAnswerId(null)
     setShowHint(false)
+    if (selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID) {
+      setScreen('lesson')
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      return
+    }
     // Drill into the chapter's sub-map (lesson path) instead of jumping
     // straight to the trainer. The sub-map will route the player into a
     // specific lesson, which then enters the trainer.
@@ -270,12 +275,17 @@ export function MapScreen() {
           <p className="eyebrow">Season 1 &middot; {selectedTrackInfo.title}</p>
           <h2>{selectedTrackInfo.id === 'quant' ? 'Survive the interview reef' : 'Chapter path'}</h2>
           <p>{totalAnswered}/{totalQuestions} answered &middot; {overallPct}% answered</p>
-          <div className="reef-status-row" aria-label="Reef learning status">
-            <span className="reef-status-pill">{activeMisconceptions} traps shelved</span>
-            <span className="reef-status-pill">{retiredMisconceptions} retired</span>
-            <span className="reef-status-pill">{reviewQuestions.length} due review</span>
-            <span className="reef-status-pill">{trackBossWins} bosses</span>
-          </div>
+          {selectedTrackInfo.id === ADAPTIVE_STATISTICS_TRACK_ID && (
+            <p>
+              Press Continue and Floe will find your level as you play.
+            </p>
+          )}
+          {selectedTrackInfo.id !== ADAPTIVE_STATISTICS_TRACK_ID && (
+            <div className="reef-status-row" aria-label="Reef learning status">
+              <span className="reef-status-pill">{reviewQuestions.length} due review</span>
+              <span className="reef-status-pill">{trackBossWins} bosses</span>
+            </div>
+          )}
         </div>
         <div className="chapter-path-header-ring">
           <div className="ring" style={{ '--score': `${overallPct}%` } as React.CSSProperties}>
